@@ -57,7 +57,22 @@ try {
     const work = git(['show', ':PROMPT_WORK.md']);
     const oldWork = base ? trackedAt(base, 'PROMPT_WORK.md') : '';
     let lines;
-    if (!args.length) {
+    const merging = !args.length && spawnSync('git', ['rev-parse', '--verify', 'MERGE_HEAD'], {stdio:'ignore'}).status === 0;
+    const inherited = new Set(oldWork.split('\n').filter(Boolean));
+    if (merging) {
+      const otherPrompt = trackedAt('MERGE_HEAD', 'PROMPTS.md');
+      if (!staged.startsWith(otherPrompt)) fail('Preserve merging prompt history byte for byte.');
+      const parents = [oldWork, trackedAt('MERGE_HEAD', 'PROMPT_WORK.md')];
+      for (const parent of parents) {
+        const prior = parent.split('\n').filter(Boolean); let cursor = 0;
+        for (const line of work.split('\n').filter(Boolean)) if (line === prior[cursor]) cursor++;
+        if (cursor !== prior.length) fail('Preserve both merging continuation histories.');
+        for (const line of prior) inherited.add(line);
+      }
+      const all = work.split('\n').filter(Boolean);
+      if (new Set(all).size !== all.length) fail('Do not duplicate continuation records.');
+      lines = all.filter(line => !inherited.has(line));
+    } else if (!args.length) {
       if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
       lines = work.slice(oldWork.length).trim().split('\n').filter(Boolean);
     } else {
