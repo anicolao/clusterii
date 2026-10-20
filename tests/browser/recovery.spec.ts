@@ -9,7 +9,7 @@ async function save(page: Page, name: string) {
 }
 test("two devices preserve a conflicting draft and explicitly replace the saved identity", async ({
   browser,
-}) => {
+}, info) => {
   const one = await browser.newContext();
   const two = await browser.newContext();
   const a = await one.newPage();
