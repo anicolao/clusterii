@@ -447,6 +447,10 @@
     border-color: #9ee9ff;
     color: #9ee9ff;
   }
+  .list-body :global(:focus-visible) {
+    outline: 2px solid #9ee9ff;
+    outline-offset: -2px;
+  }
   .list-body > label {
     display: block;
     margin-bottom: 12px;

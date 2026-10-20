@@ -10,6 +10,8 @@ Review branches remain unmerged. Rule data marked `review` is not owner-approved
 
 | Campaign recovery and chart navigation | [#7](https://github.com/anicolao/clusterii/pull/7), `feat/campaign-admission` | [Campaigns](https://anicolao.github.io/clusterii/pr7/campaigns/) · [Gallery](https://anicolao.github.io/clusterii/pr7/gallery/) | [Scope and evidence](NAVIGATION_REVIEW.md). Private membership directory, direct URL recovery, class filtering and keyboard camera controls. Six unit, three service and nine affected browser tests pass locally. Backend/rules deployed. Publication is live; full CI and independent expanded-controls/keyboard review remain pending. Supervisor preliminarily reviewed collapsed phone/short panels and independently passed type checks. |
 
+| Campaign entry and invitation recovery | [#8](https://github.com/anicolao/clusterii/pull/8), `feat/campaign-navigation` | [Entry](https://anicolao.github.io/clusterii/pr8/) · [Campaigns](https://anicolao.github.io/clusterii/pr8/campaigns/) | [Scope and evidence](ENTRY_RECOVERY_REVIEW.md). Membership-backed Continue and signed-out invitation return. Seven unit tests and affected browser journeys pass locally; expanded keyboard panels captured at all sizes. Full CI and independent rendered review pending. |
+
 ## Open decisions
 
 The selections in STEP_0_REVIEW.md remain review proposals: public roster sizes, affinities, starting economy, map fairness/visibility, speculation formula, queues, combat normalization, alliance timing, victory threshold, repeated-partner penalty and end conditions. Implementing a development scenario does not approve these rules. Public release requires explicit owner acceptance and associated simulations/security evidence.
