@@ -14,7 +14,7 @@ Expand across star systems, develop their resources, research new capabilities, 
 
 See [VISION.md](VISION.md) for the game’s design and experience.
 
-[CLUSTER_II_DESIGN.md](CLUSTER_II_DESIGN.md) records the predecessor’s architecture, interface, implementation gaps, and decisions for review.
+[CLUSTER_II_MVP.md](CLUSTER_II_MVP.md) defines the game and application design. [CLUSTER_I_DESIGN_REVIEW.md](CLUSTER_I_DESIGN_REVIEW.md) records the predecessor’s architecture, interface, and implementation gaps.
 
 [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) lays out the milestones, dependencies, and acceptance criteria for the complete game.
 

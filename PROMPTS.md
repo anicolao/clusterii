@@ -193,3 +193,7 @@ You are going to be in charge of artistic and UX direction for this project. You
 ## Prompt 8: Plan Full Implementation
 
 We are reviewign this summary. Write an IMPLEMENTATION_PLAN.md to lay out the steps to implement this game in full.
+
+## Prompt 9: Refine Forward Design
+
+OK also review the design and implementation of ../pantheon for its ideas regardign deployment (github pages) and UX (app-focused design aesthetic). Update the implementation plan accordingly. Let's rename the CLUSTER_II_DESIGN.md to CLUSTER_I_DESIGN_REVIEW.md as it is almost fully a backwards lookign document and instead have a CLUSTER_II_MVP.md that defines our forward looking design decisions without reference to the past or external artifacts. let's preserve the fake encryption as a means to testing the system, with the intent that when it is replaced with proper encryption the system will actually be secure; this should be something we can turn on and off on a per-game basis during development. Update teh PR accordingly.
