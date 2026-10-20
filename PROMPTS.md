@@ -225,3 +225,7 @@ list other projects linked to this and I'll tell you what to unlink
 ## Prompt 16: Unlink Project
 
 mbgames-478115
+
+## Prompt 17: CLI Only
+
+don't use the browser, use the CLI only

@@ -66,7 +66,7 @@ Publish builds to GitHub Pages through a retained `gh-pages` tree. Serialize sha
 
 Deploy Firebase functions, rules, indexes, and schedules separately. Use canonical game IDs and compatible schemas across production and preview clients; authorize development games through server policy. Keep service credentials out of static bundles. Separate versioning from deployment side effects.
 
-**Acceptance:** A clean checkout builds and starts from documented commands; two browser sessions sign in through emulators; direct links and reload work; production and nested preview URLs load assets, accept direct game links, and survive refresh. A hosted preview identifies its exact source revision and is published while long verification runs proceed independently. Compatible production/preview clients reopen the same authorized game. Local tests cannot accidentally write to production.
+**Acceptance:** A clean checkout builds and starts from documented commands; two browser sessions sign in through emulators; direct links and reload work; production and nested preview builds load assets and diagnostics directly and survive refresh. Game-link acceptance joins the campaign interaction in milestone 3. A hosted preview identifies its exact source revision and is published while long verification runs proceed independently. Compatible production/preview clients recover the same authorized identity. Local tests cannot accidentally write to production.
 
 ## 2. Build the authoritative game service
 
@@ -76,7 +76,7 @@ Implement serialized or transactionally protected transitions per game. Commit s
 
 Preserve patch replay with bounded blocks, snapshots, retention, schema migration, and gap recovery. Supply time, IDs, and random draws explicitly to transition logic so fixtures are reproducible; persist authoritative outcomes. The server retains complete state; object content is encrypted and access keys are granted only to permitted recipients. Public metadata and ciphertext transport do not grant access to hidden content. Do not expose secret state through plaintext snapshots, command results, logs, or replay helpers.
 
-Implement the shared crypto-provider interface and versioned envelopes first, retaining the fake cipher in `mock` mode. Select `mock` or `real` from server-owned game configuration, never a client/global bypass. Both modes follow identical validation, grants, serialization, and replay paths. Implement the real provider with authenticated encryption and reviewed key lifecycle before public campaigns; unavailable real mode fails closed.
+Extend the identity tracer’s shared crypto-provider interface and versioned envelopes to campaign objects, retaining the fake cipher in `mock` mode. Select `mock` or `real` from server-owned game configuration, never a client/global bypass. Both modes follow identical validation, grants, serialization, and replay paths. Implement the real provider with authenticated encryption and reviewed key lifecycle before public campaigns; unavailable real mode fails closed.
 
 Provide developer-only per-game mode controls. For an existing development game, pause processing, migrate retained objects, key grants, and snapshots into a new epoch, verify authorized replay, and atomically switch. Resume only after validation; recover failures to the old epoch. Preserve the fact that mock-mode data was exposed and prohibit conversion of that history into a supposedly confidential public campaign. Public games reject mock mode and unauthorized mode changes.
 

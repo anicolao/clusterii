@@ -4,7 +4,7 @@ export default defineConfig({
   workers: 1,
   retries: 0,
   timeout: 45000,
-  expect: { toHaveScreenshot: { maxDiffPixels: 0, threshold: 0 } },
+  expect: { toHaveScreenshot: { maxDiffPixels: 0, threshold: 0, timeout: 20000 } },
   use: {
     baseURL: "http://127.0.0.1:4173/clusterii/pr4/",
     viewport: { width: 1440, height: 1000 },

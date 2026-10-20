@@ -21,7 +21,7 @@ initializeApp();
 setGlobalOptions({ region: "us-central1", maxInstances: 3 });
 const db = getFirestore();
 // Mock key material remains server-only. Real mode requires the reviewed KMS service.
-export const profileKey = onCall(async (request) => {
+export const profileKey = onCall({ invoker: "public" }, async (request) => {
   if (!request.auth)
     throw new HttpsError("unauthenticated", "Sign in to continue.");
   const ref = db.doc(`profileKeys/${request.auth.uid}`);
@@ -35,7 +35,7 @@ export const profileKey = onCall(async (request) => {
   return { kek, mode: "mock", epoch: 1 };
 });
 export const processProfile = onValueCreated(
-  "/profileCommands/{uid}/{commandId}",
+  { ref: "/profileCommands/{uid}/{commandId}", retry: true },
   async (event) => {
     const { uid, commandId } = event.params;
     const incoming = event.data.val() as Envelope;
