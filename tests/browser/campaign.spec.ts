@@ -94,7 +94,8 @@ for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k
     expect(await page.locator('.chart').evaluate(el=>getComputedStyle(el).overflow)).toBe('hidden');
     // Use the actual orbit controller to pan a rendered label to the inspector boundary.
     if(label==='phone') {
-      const marker=page.locator('.star-label');const markerBox=await marker.boundingBox();const panelBox=await inspectorPanel.boundingBox();
+      const marker=page.locator('.star-label');await expect(marker).toBeVisible();const markerBox=await marker.boundingBox();const panelBox=await inspectorPanel.boundingBox();
+      expect(markerBox).not.toBeNull();expect(panelBox).not.toBeNull();
       if(markerBox && panelBox) {
         const x=markerBox.x+markerBox.width/2,y=markerBox.y+markerBox.height/2;
         await page.mouse.move(x,y);await page.mouse.down({button:'right'});await page.mouse.move(x,panelBox.y+30,{steps:8});await page.mouse.up({button:'right'});
