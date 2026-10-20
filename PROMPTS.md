@@ -181,3 +181,11 @@ this repo should be shared with AndrewBlackledge, same as my TODO repo, he shoul
 ## Prompt 5: Clarify Continuation Log
 
 OK we can't figure out what PROMPT_WORK.md is about. IT isn't referenced, is empty, and appears to serve no purpose. this is blocking landing the PR
+
+## Prompt 6: Preserve Prior Design
+
+We had a prior partial implementation in ../cluster. We probably want to preserve almost all if not all of the technical and design decisions in that project. Write CLUSTER_II_DESIGN.md that captures all you can learn from that project for us to review in case there are things we want to do differently. Put that up as PR2 (PR1 is merged)
+
+## Prompt 7: Art Direction
+
+You are going to be in charge of artistic and UX direction for this project. You'll need a new worktree to design in. Review the art style and overall plan in the old cluster project, but don't be constrained by it. For starters, let's make an art board of faction leaders, in at least 4 different art styles for us to choose between. Also generate some space ship and planetary space art in these art styles. Our goal is to choose an artistic direction before we start in on UX design. The old cluster project is in ../cluster, let's put our new art direction stuff in docs/art/ART_DIRECTION_OPTIONS.md and choose any logical location for generated images.
