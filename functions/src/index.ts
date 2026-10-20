@@ -96,7 +96,9 @@ export const processProfile = onValueCreated(
 );
 
 export {
+  campaignCommandKey,
   campaignKey,
+  campaignSecurity,
   processCampaign,
   startScheduledCampaigns,
 } from "./campaigns.js";

@@ -47,7 +47,7 @@ test("wrong keys, modified bodies, game, recipient, epoch and revision fail clos
   await expect(
     unwrap(grant, newKey(), "alice", context, "mock"),
   ).rejects.toThrow();
-  expect(() => provider("real")).toThrow("No fallback");
+  await expect(provider("real").open(envelope,key,context)).rejects.toThrow();
 });
 test("profile reducer validates data and rejects lost updates", () => {
   const action = {
@@ -91,4 +91,27 @@ test('Continue uses accessible active metadata and the remembered selection only
   expect(resumableCampaign([activeA,activeB],['one'],'two')?.id).toBe('one');
   expect(resumableCampaign([activeA],[],'one')).toBeNull();
   expect(resumableCampaign([{...activeA,phase:'completed'} as unknown as typeof a],['one'],'one')).toBeNull();
+});
+
+import {crc32c} from '../functions/src/key-protection';
+test('AES-GCM reads an independent OpenSSL vector with authenticated Cluster metadata',async()=>{
+  const ctx={gameId:'fixture-game',objectId:'fixture-object',revision:7,epoch:2,keyVersion:1};
+  const envelope={...ctx,format:1 as const,mode:'real' as const,algorithm:'AES-256-GCM' as const,nonce:'0'.repeat(24),ciphertext:'tYUtWD4TCglibP/x/ZLxeREUaqkXRLL3898=',tag:'1797af5ce1bb72848993b8b0520bd6dc'};
+  expect(await provider('real').open<{message:string}>(envelope,'0'.repeat(64),ctx)).toEqual({message:'Galactic ☃'});
+  expect(crc32c(new TextEncoder().encode('123456789'))).toBe(0xe3069283);
+});
+test('real envelopes and recipient grants reject substitution and never accept mock data',async()=>{
+  const key=newKey(),kek=newKey(),real=provider('real');
+  const value={secret:'hidden fleet',unicode:'银河 🌌',nested:[null,true,17]};
+  const a=await real.seal(value,key,context),b=await real.seal(value,key,context);
+  expect(a.nonce).not.toBe(b.nonce);expect(a.ciphertext).not.toContain('hidden fleet');expect(a.ciphertext).not.toContain(key);
+  expect(await real.open<typeof value>(a,key,context)).toEqual(value);
+  const grant=await wrap(key,kek,'alice',context,'real');
+  expect(await unwrap(grant,kek,'alice',context,'real')).toBe(key);
+  await expect(unwrap(grant,kek,'bob',context,'real')).rejects.toThrow();
+  await expect(real.open(a,newKey(),context)).rejects.toThrow();
+  for(const field of ['nonce','tag','ciphertext'] as const){const bytes=a[field];const changed=(bytes[0]==='a'?'b':'a')+bytes.slice(1);await expect(real.open({...a,[field]:changed},key,context)).rejects.toThrow();}
+  for(const other of [{...context,gameId:'another'},{...context,objectId:'another'},{...context,epoch:2},{...context,revision:2},{...context,keyVersion:2}]) await expect(real.open({...a,...other},key,other)).rejects.toThrow();
+  await expect(real.open(await provider('mock').seal(value,key,context),key,context)).rejects.toThrow();
+  await expect(provider('mock').open(a,key,context)).rejects.toThrow();
 });

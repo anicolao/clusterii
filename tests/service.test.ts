@@ -178,9 +178,14 @@ async function saveIdentity(c: Awaited<ReturnType<typeof client>>) {
   await set(ref(c.database,`profileCommands/${c.uid}/${id}`),await provider('mock').seal({kind:'profile.set',expectedRevision:0,profile:{alias:'Commander',portrait:'G1'}},c.kek,commandContext(c.uid,id)));
   expect((await receipt(c,id)).status).toBe('accepted');
 }
-async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:string,action:CampaignAction) {
+async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:string,action:CampaignAction,mode:"mock"|"real"=action.kind==='campaign.create'?action.mode:'mock') {
   const id=crypto.randomUUID();
-  const payload={kind:action.kind,envelope:await provider('mock').seal(action,c.kek,{gameId,objectId:`command:${id}`,revision:0,epoch:1,keyVersion:1})};
+  const commandKey=mode==='real'?(await httpsCallable<undefined,{kek:string}>(c.functions,'campaignCommandKey')()).data.kek:c.kek;
+  const payload={kind:action.kind,envelope:await provider(mode).seal(action,commandKey,{gameId,objectId:`command:${id}`,revision:0,epoch:1,keyVersion:1})};
+  if(mode==='real'){
+    expect(payload.envelope.algorithm).toBe('AES-256-GCM');expect(payload.envelope.nonce).toHaveLength(24);expect(payload.envelope.tag).toHaveLength(32);
+    expect((await c.user.getIdTokenResult()).claims.developer).toBe(true);
+  }
   const ingress=ref(c.database,`commands/${gameId}/${c.uid}/${id}`);
   await set(ingress,payload);
   const deadline=Date.now()+20000;
@@ -193,12 +198,20 @@ async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:strin
 }
 test('campaign authorization, create/join/CAS/recover/revocation use persisted private envelopes',async()=>{
   const a=await client(`captain${Date.now()}`), b=await client(`rival${Date.now()}`), outsider=await client(`visitor${Date.now()}`);
-  await Promise.all([developer(a),developer(b),saveIdentity(a),saveIdentity(b)]);
+  await Promise.all([developer(a),developer(b)]);
+  await Promise.all([saveIdentity(a),saveIdentity(b)]);
   const gameId=crypto.randomUUID();
   const create:CampaignAction={kind:'campaign.create',expectedRevision:0,name:'Real service galaxy',capacity:4,mode:'mock',development:true};
   await expect(campaignCommand(outsider,gameId,create)).rejects.toThrow();
   const made=await campaignCommand(a,gameId,create);
   expect(made.receipt.status).toBe('accepted');
+  // A real envelope may not borrow the inspectable profile key when no real ingress key exists.
+  const forgedId=crypto.randomUUID();
+  await set(ref(b.database,`commands/${gameId}/${b.uid}/${forgedId}`),{kind:'campaign.join',envelope:await provider('real').seal({kind:'campaign.join',expectedRevision:1,faction:'pelagic'},b.kek,{gameId,objectId:`command:${forgedId}`,revision:0,epoch:1,keyVersion:1})});
+  let forgedReceipt;
+  for(let attempt=0;attempt<100;attempt++){const snap=await getDoc(doc(b.firestore,'campaignReceipts',b.uid,'results',forgedId));if(snap.exists()){forgedReceipt=snap.data();break;}await new Promise(resolve=>setTimeout(resolve,100));}
+  expect(forgedReceipt?.status).toBe('rejected');
+  expect(forgedReceipt?.revision).toBe(1);
   await expect(set(made.ingress,made.payload)).rejects.toThrow();
   await expect(getDocs(collection(outsider.firestore,'developmentCampaigns'))).rejects.toThrow();
   expect((await httpsCallable(b.functions,'campaignKey')({gameId})).data).toEqual({joined:false});
@@ -232,7 +245,7 @@ test('campaign authorization, create/join/CAS/recover/revocation use persisted p
   expect((await httpsCallable(winner.functions,'campaignKey')({gameId})).data).toEqual({joined:false});
 },60000);
 
-test('full roster starts atomically once with recipient-only home assignments',async()=>{
+for (const mode of ['mock','real'] as const) test.skipIf(mode==='real' && process.env.CLUSTER_KMS_TEST!=='true')(`${mode} full roster starts atomically once with recipient-only home assignments`,async()=>{
   const { createRequire } = await import('node:module');
   const require = createRequire(new URL('../functions/package.json',import.meta.url));
   const admin = require('firebase-admin/app');
@@ -243,8 +256,8 @@ test('full roster starts atomically once with recipient-only home assignments',a
     const c=await client(`start-${faction}-${Date.now()}`);await developer(c);await saveIdentity(c);return c;
   }));
   const gameId=crypto.randomUUID();
-  await campaignCommand(players[0],gameId,{kind:'campaign.create',expectedRevision:0,name:'Scheduled galaxy',capacity:4,development:true,mode:'mock'});
-  for(let i=0;i<4;i++)expect((await campaignCommand(players[i],gameId,{kind:'campaign.join',expectedRevision:i+1,faction:['heliac','pelagic','vesper','dracon'][i] as 'heliac'})).receipt.status).toBe('accepted');
+  await campaignCommand(players[0],gameId,{kind:'campaign.create',expectedRevision:0,name:'Scheduled galaxy',capacity:4,development:true,mode});
+  for(let i=0;i<4;i++)expect((await campaignCommand(players[i],gameId,{kind:'campaign.join',expectedRevision:i+1,faction:['heliac','pelagic','vesper','dracon'][i] as 'heliac'},mode)).receipt.status).toBe('accepted');
   const scheduled=await db.doc(`campaignStates/${gameId}`).get();
   expect(scheduled.get('phase')).toBe('scheduled');
   const now=scheduled.get('startAt');
@@ -258,10 +271,67 @@ test('full roster starts atomically once with recipient-only home assignments',a
     const stored=(await getDoc(doc(c.firestore,'campaignViews',gameId,'members',c.uid))).data()!;
     const access=(await httpsCallable<{gameId:string},{kek:string}>(c.functions,'campaignKey')({gameId})).data;
     const ctx={gameId,objectId:`member:${c.uid}`,revision:6,epoch:1,keyVersion:1};
-    const key=await unwrap(stored.grant,access.kek,c.uid,ctx,'mock');
-    const view=await provider('mock').open<CampaignView>(stored.envelope,key,ctx);
+    const key=await unwrap(stored.grant,access.kek,c.uid,ctx,mode);
+    const view=await provider(mode).open<CampaignView>(stored.envelope,key,ctx);
     expect(view.holdings).toHaveLength(1);expect(view.holdings[0].orbit).toBe('You');
     expect(view.own.home).toBe(view.holdings[0].starId);homes.push(view.own.home!);
   }
   expect(new Set(homes).size).toBe(4);
+},120000);
+
+
+test.skipIf(process.env.CLUSTER_KMS_TEST!=='true')('live KMS campaign creation, encrypted canonical history, recipient recovery and mode rejection',async()=>{
+  const a=await client(`secure-${Date.now()}`),b=await client(`secure-other-${Date.now()}`);
+  await Promise.all([developer(a),developer(b)]);
+  await Promise.all([saveIdentity(a),saveIdentity(b)]);
+  expect((await httpsCallable(a.functions,'campaignSecurity')()).data).toEqual({realAvailable:true});
+  const gameId=crypto.randomUUID();
+  const created=await campaignCommand(a,gameId,{kind:'campaign.create',expectedRevision:0,name:'Managed encryption',capacity:4,development:true,mode:'real'});
+  expect(created.receipt.status).toBe('accepted');
+  expect(created.payload.envelope.mode).toBe('real');
+  const bad=await campaignCommand(a,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'},'mock');
+  expect(bad.receipt.status).toBe('rejected');expect(bad.receipt.reason).toBe('invalid');
+  const joined=await campaignCommand(a,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'},'real');
+  expect(joined.receipt.status).toBe('accepted');
+  const access=(await httpsCallable<{gameId:string},{joined:true,kek:string,mode:string}>(a.functions,'campaignKey')({gameId})).data;
+  expect(access.mode).toBe('real');
+  const stored=(await getDoc(doc(a.firestore,'campaignViews',gameId,'members',a.uid))).data()!;
+  const ctx={gameId,objectId:`member:${a.uid}`,revision:2,epoch:1,keyVersion:1};
+  const key=await unwrap(stored.grant,access.kek,a.uid,ctx,'real');
+  const view=await provider('real').open<CampaignView>(stored.envelope,key,ctx);
+  expect(view.name).toBe('Managed encryption');expect(view.stars).toHaveLength(128);
+  const {createRequire}=await import('node:module');
+  const require=createRequire(new URL('../functions/package.json',import.meta.url));
+  const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});
+  const db=require('firebase-admin/firestore').getFirestore();
+  const versions=await db.collection(`campaignStates/${gameId}/versions`).get();
+  expect(versions.size).toBe(2);
+  for(const version of versions.docs){const data=version.data();expect(data.mode).toBe('real');expect(data.canonicalKey).toBeUndefined();expect(data.protectedKey.algorithm).toBe('GCP-KMS');expect(JSON.stringify(data)).not.toContain('Managed encryption');}
+  expect(versions.docs[0].get('protectedKey.ciphertext')).not.toBe(versions.docs[1].get('protectedKey.ciphertext'));
+  const recipient=await db.doc(`campaignKeys/${gameId}/members/${a.uid}`).get();expect(recipient.get('kek')).toBeUndefined();expect(recipient.get('protectedKey.algorithm')).toBe('GCP-KMS');
+  await expect(getDoc(doc(b.firestore,'campaignViews',gameId,'members',a.uid))).rejects.toThrow();
+  await expect(getDoc(doc(a.firestore,'campaignCommandKeys',a.uid))).rejects.toThrow();
+  await expect(set(joined.ingress,joined.payload)).rejects.toThrow();
+  const left=await campaignCommand(a,gameId,{kind:'campaign.leave',expectedRevision:2},'real');expect(left.receipt.status).toBe('accepted');
+  await expect(getDoc(doc(a.firestore,'campaignViews',gameId,'members',a.uid,'versions','2'))).rejects.toThrow();
+  expect((await httpsCallable(a.functions,'campaignKey')({gameId})).data).toEqual({joined:false});
+},90000);
+
+test('upgrading a legacy mock campaign retains its historical canonical key',async()=>{
+  const c=await client(`legacy-key-${Date.now()}`);await developer(c);await saveIdentity(c);
+  const gameId=crypto.randomUUID();
+  await campaignCommand(c,gameId,{kind:'campaign.create',expectedRevision:0,name:'Legacy history',capacity:4,development:true,mode:'mock'});
+  const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));
+  const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});
+  const {getFirestore,FieldValue}=require('firebase-admin/firestore');const db=getFirestore();
+  const head=db.doc(`campaignStates/${gameId}`),version=head.collection('versions').doc('1');
+  const before=await head.get(),legacyKey=before.get('canonicalKey');
+  // Reproduce the deployed pre-per-version-key record shape, not fabricated gameplay.
+  await head.update({canonicalKey:FieldValue.delete()});await version.update({canonicalKey:FieldValue.delete()});
+  expect((await campaignCommand(c,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'})).receipt.status).toBe('accepted');
+  const retained=await db.doc(`campaignKeys/${gameId}`).get();expect(retained.get('legacyCanonicalKey')).toBe(legacyKey);
+  expect(retained.get('key')).not.toBe(legacyKey);
+  const history=await provider('mock').open<{name:string}>(before.get('envelope'),retained.get('legacyCanonicalKey'),{gameId,objectId:'canonical',revision:1,epoch:1,keyVersion:1});expect(history.name).toBe('Legacy history');
+  await campaignCommand(c,gameId,{kind:'campaign.leave',expectedRevision:2});
+  expect((await db.doc(`campaignKeys/${gameId}`).get()).get('legacyCanonicalKey')).toBe(legacyKey);
 },60000);

@@ -29,3 +29,9 @@ Prompt 22 | 5d514f16bca7a3fabdfdd317feeacf910a59b2db8afe5365468d1eb4684c2bcc | R
 Prompt 22 | 5d514f16bca7a3fabdfdd317feeacf910a59b2db8afe5365468d1eb4684c2bcc | Keep keyboard focus outlines inside bounded chart controls and publish entry-recovery preview dependencies
 Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Integrate semantic retry validation and reviewer handoffs into the entry-recovery stack
 Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Correct named active-campaign continuation and returning invitations with two-roster browser evidence
+
+Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Add selectable managed campaign encryption, live KMS lifecycle evidence and persistent creation action; carry supervisory review through 18:06
+
+Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Link managed encryption PR 9 and its pending preview in the dependency and acceptance table
+
+Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Preserve legacy mock canonical keys across per-version-key publication and verify historical recovery

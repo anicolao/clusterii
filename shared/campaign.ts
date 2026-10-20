@@ -31,8 +31,8 @@ export interface Campaign {
   schemaVersion: 1;
   commandProtocolVersion: 1;
   development: true;
-  mode: "mock";
-  mockExposed: true;
+  mode: "mock" | "real";
+  mockExposed: boolean;
   encryptionEpoch: 1;
   createdAt: number;
   startAt: number | null;
@@ -49,7 +49,7 @@ export type CampaignAction =
       expectedRevision: 0;
       name: string;
       capacity: number;
-      mode: "mock";
+      mode: "mock" | "real";
       development: true;
     }
   | {
@@ -80,7 +80,7 @@ export function parseCampaignAction(input: unknown): CampaignAction {
       [...a.name.trim()].length > 40 ||
       /[\p{C}]/u.test(a.name) ||
       !rules.playerCounts.includes(a.capacity) ||
-      a.mode !== "mock" ||
+      (a.mode !== "mock" && a.mode !== "real") ||
       a.development !== true
     )
       throw new Error("invalid");
@@ -110,8 +110,8 @@ export function createCampaign(
     schemaVersion: 1,
     commandProtocolVersion: 1,
     development: true,
-    mode: "mock",
-    mockExposed: true,
+    mode: action.mode,
+    mockExposed: action.mode === "mock",
     encryptionEpoch: 1,
     createdAt: now,
     startAt: null,

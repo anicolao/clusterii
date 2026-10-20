@@ -61,10 +61,10 @@
                 ".validate": "newData.val() === 1"
               },
               "mode": {
-                ".validate": "newData.val() === 'mock'"
+                ".validate": "newData.val() === 'mock' || newData.val() === 'real'"
               },
               "algorithm": {
-                ".validate": "newData.val() === 'MOCK-PREFIX-SHA256'"
+                ".validate": "newData.val() === (newData.parent().child('mode').val() === 'real' ? 'AES-256-GCM' : 'MOCK-PREFIX-SHA256')"
               },
               "gameId": {
                 ".validate": "newData.val() === $gameId"
@@ -82,13 +82,13 @@
                 ".validate": "newData.val() === 1"
               },
               "nonce": {
-                ".validate": "newData.isString() && newData.val().length === 64"
+                ".validate": "newData.isString() && newData.val().length === (newData.parent().child('mode').val() === 'real' ? 24 : 64)"
               },
               "ciphertext": {
                 ".validate": "newData.isString() && newData.val().length < 4096"
               },
               "tag": {
-                ".validate": "newData.isString() && newData.val().length === 64"
+                ".validate": "newData.isString() && newData.val().length === (newData.parent().child('mode').val() === 'real' ? 32 : 64)"
               },
               "$other": {
                 ".validate": false
