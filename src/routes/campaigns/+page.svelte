@@ -16,6 +16,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import Feedback from "$lib/components/Feedback.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
+  import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
   import type { Portrait } from "@shared/profile";
   let portrait = $state<Portrait>("G1");
@@ -33,6 +34,7 @@
   let name = $state("");
   let capacity = $state(4);
   let faction = $state<FactionId>("heliac");
+  let joinTab = $state<"faction" | "portrait" | "briefing">("faction");
   let pending = $state<PendingCampaign | null>(null);
   let busy = $state(false);
   let message = $state("");
@@ -80,7 +82,8 @@
       }
     }
     await tick();
-    title?.focus();
+    if (view) document.getElementById("galaxy-heading")?.focus();
+    else title?.focus();
   }
   async function recover() {
     if (!account || !service) return;
@@ -204,219 +207,254 @@
 </script>
 
 <svelte:head><title>Campaigns — Cluster</title></svelte:head>
-<main class="campaign-shell">
-  <header>
-    <a href={`${base}/`}>CLUSTER</a><span class="overline"
-      >Campaign command</span
-    ><a href={`${base}/`}>Your identity</a>
-  </header>
-  <div class="development-banner">
-    Development campaigns · Mock encryption · Rules under review
-  </div>
-  <div class="campaign-body">
-    {#if access !== "developer"}
-      <section class="briefing">
-        <h1 bind:this={title} tabindex="-1">
-          {access === "loading"
-            ? "Opening your campaigns…"
-            : access === "signed-out"
-              ? "Your command awaits"
-              : "Development access"}
-        </h1>
-        <p>
-          {access === "signed-out"
-            ? "Sign in and save your identity to continue."
-            : access === "restricted"
-              ? "Campaign testing is limited to developer accounts. Public campaigns open with secure encryption and approved rules."
-              : "Checking your account’s campaign access."}
-        </p>
-        <a class="return" href={`${base}/`}>Return to entry</a>
-      </section>
-    {:else}
-      <div class="page-heading">
-        <h1 bind:this={title} tabindex="-1">
-          {game?.name ??
-            (creating ? "Assemble a galaxy" : "Your next alliance")}
-        </h1>
-        {#if selected || creating}<ActionButton
-            class="quiet"
-            onclick={back}
-            disabled={!!pending || busy}>All campaigns</ActionButton
-          >{:else}<ActionButton
-            class="primary"
-            onclick={() => {
-              creating = true;
-              void tick().then(() => title?.focus());
-            }}>Create campaign</ActionButton
-          >{/if}
-      </div>
-      <Feedback
-        {message}
-        {error}
-        reconnect={remedy === "network" && !pending ? recover : undefined}
-      />
-      {#if pending}<ActionButton
-          class="primary retry"
-          disabled={busy}
-          onclick={dispatch}
-          >{busy ? "Awaiting acknowledgement…" : "Retry order"}</ActionButton
-        >{/if}
-      {#if creating}
-        <form
-          class="briefing"
-          onsubmit={(event) => {
-            event.preventDefault();
-            void send(crypto.randomUUID(), {
-              kind: "campaign.create",
-              expectedRevision: 0,
-              name,
-              capacity,
-              mode: "mock",
-              development: true,
-            });
-          }}
-        >
-          <p class="overline gold">A shared beginning</p>
+<main class="campaign-shell" class:commanding={!!view}>
+  {#if view}<Galaxy
+      {view}
+      {message}
+      {error}
+      {busy}
+      pending={!!pending}
+      onback={back}
+      onleave={() =>
+        send(view!.id, {
+          kind: "campaign.leave",
+          expectedRevision: game?.revision ?? view!.revision,
+        })}
+      onretry={pending ? dispatch : remedy === "network" ? recover : undefined}
+    />
+  {:else}
+    <header>
+      <a href={`${base}/`}>CLUSTER</a><span class="overline"
+        >Campaign command</span
+      ><a href={`${base}/`}>Your identity</a>
+    </header>
+    <div class="development-banner">
+      Development campaign · Rules under review
+    </div>
+    <div class="campaign-body">
+      {#if access !== "developer"}
+        <section class="briefing">
+          <h1 bind:this={title} tabindex="-1">
+            {access === "loading"
+              ? "Opening your campaigns…"
+              : access === "signed-out"
+                ? "Your command awaits"
+                : "Development access"}
+          </h1>
           <p>
-            Choose a name and roster size. Each faction receives an equal share
-            of seats. A full roster begins at the next quarter-hour boundary.
+            {access === "signed-out"
+              ? "Sign in and save your identity to continue."
+              : access === "restricted"
+                ? "Campaign testing is limited to developer accounts. Public campaigns open with secure encryption and approved rules."
+                : "Checking your account’s campaign access."}
           </p>
-          <label for="campaign-name">Campaign name</label><input
-            id="campaign-name"
-            bind:value={name}
-            minlength="2"
-            maxlength="40"
-            required
-            disabled={busy || !!pending}
-          />
-          <fieldset disabled={busy || !!pending}>
-            <legend>Empires</legend>
-            <div class="capacity">
-              {#each rules.playerCounts as count}<label
-                  ><input
-                    type="radio"
-                    name="capacity"
-                    value={count}
-                    bind:group={capacity}
-                  />{count}</label
-                >{/each}
-            </div>
-          </fieldset>
-          <p class="scope">
-            This development game uses mock encryption. It is available only to
-            developer accounts and is not a private or public competitive
-            campaign.
-          </p>
-          <ActionButton
-            class="primary"
-            type="submit"
-            disabled={busy || !!pending}>Create galaxy</ActionButton
+          <a class="return" href={`${base}/`}>Return to entry</a>
+        </section>
+      {:else}
+        <div class="page-heading">
+          <h1 bind:this={title} tabindex="-1">
+            {game?.name ??
+              (creating ? "Assemble a galaxy" : "Your next alliance")}
+          </h1>
+          {#if selected || creating}<ActionButton
+              class="quiet"
+              onclick={back}
+              disabled={!!pending || busy}>All campaigns</ActionButton
+            >{:else}<ActionButton
+              class="primary"
+              onclick={() => {
+                creating = true;
+                void tick().then(() => title?.focus());
+              }}>Create campaign</ActionButton
+            >{/if}
+        </div>
+        {#if !game || loading || creating}<Feedback
+            {message}
+            {error}
+            reconnect={remedy === "network" && !pending ? recover : undefined}
+          />{/if}
+        {#if pending && (!game || loading || creating)}<ActionButton
+            class="primary retry"
+            disabled={busy}
+            onclick={dispatch}
+            >{busy ? "Awaiting acknowledgement…" : "Retry order"}</ActionButton
+          >{/if}
+        {#if creating}
+          <form
+            class="briefing"
+            onsubmit={(event) => {
+              event.preventDefault();
+              void send(crypto.randomUUID(), {
+                kind: "campaign.create",
+                expectedRevision: 0,
+                name,
+                capacity,
+                mode: "mock",
+                development: true,
+              });
+            }}
           >
-        </form>
-      {:else if selected}
-        {#if loading}<p role="status">Recovering your campaign…</p>
-        {:else if view}<Galaxy {view} />
-          <section class="roster">
-            <h2>Your alliance begins here</h2>
+            <p class="overline gold">A shared beginning</p>
             <p>
-              {game?.startAt
-                ? `Scheduled for ${new Date(game.startAt).toLocaleString()}.`
-                : "Waiting for every empire to take its seat."}
+              Choose a name and roster size. Each faction receives an equal
+              share of seats. A full roster begins at the next quarter-hour
+              boundary.
             </p>
-            {#if view.phase !== "active"}<ActionButton
-                class="secondary"
-                disabled={busy || !!pending}
-                onclick={() =>
-                  send(view!.id, {
-                    kind: "campaign.leave",
-                    expectedRevision: game?.revision ?? view!.revision,
-                  })}>Leave campaign</ActionButton
-              >{/if}
-          </section>
-        {:else if game}<FactionPicker
-            bind:value={faction}
-            {game}
-            disabled={busy || !!pending || game.phase !== "waiting"}
-          />
-          <section class="roster">
-            <h2>Campaign briefing</h2>
-            <p>
-              {game.capacity} empires · {game.capacity / 4} seats per faction · a
-              full roster starts at the next quarter-hour. You may leave until the
-              scheduled start.
+            <label for="campaign-name">Campaign name</label><input
+              id="campaign-name"
+              bind:value={name}
+              minlength="2"
+              maxlength="40"
+              required
+              disabled={busy || !!pending}
+            />
+            <fieldset disabled={busy || !!pending}>
+              <legend>Empires</legend>
+              <div class="capacity">
+                {#each rules.playerCounts as count}<label
+                    ><input
+                      type="radio"
+                      name="capacity"
+                      value={count}
+                      bind:group={capacity}
+                    />{count}</label
+                  >{/each}
+              </div>
+            </fieldset>
+            <p class="scope">
+              This development game uses mock encryption. It is available only
+              to developer accounts and is not a private or public competitive
+              campaign.
             </p>
-            <p>
-              The design objective is shared victory: an eligible alliance holds {rules.victoryStarFraction *
-                100}% of stars for {rules.victoryHoldTicks} ticks. This development
-              slice supports admission and galaxy inspection; economy, conquest and
-              victory do not run yet.
-            </p>
-            <details>
-              <summary>Review this campaign’s rules</summary>
-              <p>
-                {game.rulesetVersion} · Review status. A tick lasts {rules.tickSeconds /
-                  60} minutes. Starting holdings: {rules.startingAssets.credits} credits,
-                {rules.startingAssets.fighters} fighters, {rules.startingAssets
-                  .infantry} infantry; {rules.startingAssets.markets} markets, {rules
-                  .startingAssets.camps} camp, {rules.startingAssets.bases} base and
-                {rules.startingAssets.stations} station. Home systems match faction
-                affinity. The faction selector shows the applicable production matrix.
-              </p>
-            </details>
-            <h2>Your face in this galaxy</h2>
-            <p>
-              Portrait changes appearance. Your faction determines affinity.
-            </p>
-            <div class="portrait-choice">
-              <PortraitPicker
-                bind:value={portrait}
-                disabled={busy || !!pending}
-              />
-            </div>
-            <h2>{game.roster.length} / {game.capacity} empires assembled</h2>
-            <ul>
-              {#each game.roster as seat}<li>
-                  {seat.alias} · {rules.factions.find(
-                    (f) => f.id === seat.faction,
-                  )?.name}
-                </li>{/each}
-            </ul>
             <ActionButton
               class="primary"
-              disabled={busy ||
-                !!pending ||
-                game.phase !== "waiting" ||
-                game.roster.filter((s) => s.faction === faction).length >=
-                  game.capacity / 4}
-              onclick={() =>
-                send(game!.id, {
-                  kind: "campaign.join",
-                  expectedRevision: game!.revision,
-                  faction,
-                  portrait,
-                })}>Claim your seat</ActionButton
+              type="submit"
+              disabled={busy || !!pending}>Create galaxy</ActionButton
             >
+          </form>
+        {:else if selected}
+          {#if loading}<p role="status">Recovering your campaign…</p>
+          {:else if game}<div
+              class="join-tabs"
+              role="group"
+              aria-label="Join campaign details"
+            >
+              {#each ["faction", "portrait", "briefing"] as tab}<ActionButton
+                  class="quiet"
+                  aria-pressed={joinTab === tab}
+                  onclick={() => (joinTab = tab as typeof joinTab)}
+                  >{tab === "faction"
+                    ? "Faction"
+                    : tab === "portrait"
+                      ? "Portrait"
+                      : "Briefing & roster"}</ActionButton
+                >{/each}
+            </div>
+            {#if joinTab === "faction"}<FactionPicker
+                bind:value={faction}
+                {game}
+                disabled={busy || !!pending || game.phase !== "waiting"}
+              />
+            {:else if joinTab === "portrait"}<section
+                class="roster portrait-task"
+              >
+                <h2>Your face in this galaxy</h2>
+                <p>
+                  Portrait changes appearance. Your faction determines affinity.
+                </p>
+                <div class="portrait-choice">
+                  <PortraitPicker
+                    bind:value={portrait}
+                    disabled={busy || !!pending}
+                  />
+                </div>
+              </section>
+            {:else}<section class="roster">
+                <h2>Campaign briefing</h2>
+                <p>
+                  {game.capacity} empires · {game.capacity / 4} seats per faction
+                  · a full roster starts at the next quarter-hour. You may leave until
+                  the scheduled start.
+                </p>
+                <p>
+                  The design objective is shared victory: an eligible alliance
+                  holds {rules.victoryStarFraction * 100}% of stars for {rules.victoryHoldTicks}
+                  ticks. This development slice supports admission and galaxy inspection;
+                  economy, conquest and victory do not run yet.
+                </p>
+                <details>
+                  <summary>Review this campaign’s rules</summary>
+                  <p>
+                    {game.rulesetVersion} · Review status. A tick lasts {rules.tickSeconds /
+                      60} minutes. Starting holdings: {rules.startingAssets
+                      .credits} credits,
+                    {rules.startingAssets.fighters} fighters, {rules
+                      .startingAssets.infantry} infantry; {rules.startingAssets
+                      .markets} markets, {rules.startingAssets.camps} camp, {rules
+                      .startingAssets.bases} base and
+                    {rules.startingAssets.stations} station. Home systems match faction
+                    affinity. The faction selector shows the applicable production
+                    matrix.
+                  </p>
+                </details>
+                <CampaignRoster {game} />
+              </section>{/if}
+          {/if}
+        {:else}<section class="campaign-list" aria-label="Campaign directory">
+            {#if games.length === 0}<p>
+                No development campaigns have been created. Assemble the first
+                galaxy.
+              </p>{/if}
+            {#each games as item}<ActionButton
+                class="campaign-card"
+                onclick={() => select(item.id)}
+                ><span class="overline">{item.phase}</span><strong
+                  >{item.name}</strong
+                ><span
+                  >{item.roster.length} / {item.capacity} empires · {item.capacity *
+                    32} stars</span
+                ><span>Open campaign →</span></ActionButton
+              >{/each}
           </section>
         {/if}
-      {:else}<section class="campaign-list" aria-label="Campaign directory">
-          {#if games.length === 0}<p>
-              No development campaigns have been created. Assemble the first
-              galaxy.
-            </p>{/if}
-          {#each games as item}<ActionButton
-              class="campaign-card"
-              onclick={() => select(item.id)}
-              ><span class="overline">{item.phase}</span><strong
-                >{item.name}</strong
-              ><span
-                >{item.roster.length} / {item.capacity} empires · {item.capacity *
-                  32} stars</span
-              ><span>Open campaign →</span></ActionButton
-            >{/each}
-        </section>
       {/if}
-    {/if}
-  </div>
+    </div>
+    {#if game && !loading && !creating}<footer class="commit-rail">
+        <div class="rail-feedback">
+          <Feedback
+            {message}
+            {error}
+            reconnect={remedy === "network" && !pending ? recover : undefined}
+          />
+        </div>
+        <span
+          >{rules.factions.find((f) => f.id === faction)?.name}<small
+            >{game.roster.length}/{game.capacity} empires · Development</small
+          ></span
+        ><ActionButton
+          class="primary"
+          disabled={busy ||
+            (!pending &&
+              (game.phase !== "waiting" ||
+                game.roster.filter((s) => s.faction === faction).length >=
+                  game.capacity / 4))}
+          onclick={() =>
+            pending
+              ? dispatch()
+              : send(game.id, {
+                  kind: "campaign.join",
+                  expectedRevision: game.revision,
+                  faction,
+                  portrait,
+                })}
+          >{busy
+            ? "Awaiting acknowledgement…"
+            : pending
+              ? "Retry order"
+              : "Claim your seat"}</ActionButton
+        >
+      </footer>{/if}
+  {/if}
 </main>
 
 <style>
@@ -433,7 +471,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 18px 28px;
+    padding: 6px 24px;
     border-bottom: 1px solid #827354;
     flex-shrink: 0;
   }
@@ -451,11 +489,67 @@
     letter-spacing: 0.16em;
   }
   .development-banner {
-    padding: 10px 28px;
+    padding: 5px 24px;
     background: #372d1c;
     color: #f5d29b;
     font-size: 14px;
     flex-shrink: 0;
+  }
+  .join-tabs {
+    display: flex;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: #07121ef8;
+    padding: 4px 16px;
+    border-bottom: 1px solid #64747d;
+  }
+  .join-tabs :global(button) {
+    flex: 1;
+    min-height: 44px;
+  }
+  .join-tabs :global([aria-pressed="true"]) {
+    color: #b3f2ff;
+    border-bottom-color: #8fdbeb;
+  }
+  .commit-rail :global(.primary) {
+    background: linear-gradient(#214a59, #0d2736);
+    color: #effdff;
+    border-color: #99e7f5;
+    box-shadow:
+      inset 0 0 12px #67dfff33,
+      0 0 12px #53d8f522;
+  }
+  .commit-rail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px max(12px, env(safe-area-inset-bottom));
+    background: #07121ef5;
+    border-top: 1px solid #9b8b69;
+    flex-shrink: 0;
+    z-index: 5;
+  }
+  .rail-feedback {
+    width: 100%;
+  }
+  .rail-feedback :global(.notice) {
+    margin: 0;
+  }
+  .rail-feedback:empty {
+    display: none;
+  }
+  .commit-rail small {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .commanding {
+    display: block;
   }
   .campaign-body {
     overflow: auto;
@@ -467,11 +561,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 20px 28px;
+    padding: 10px 24px;
   }
   h1 {
     font:
-      500 42px "Cormorant Garamond",
+      500 30px "Cormorant Garamond",
       serif;
     margin: 0;
   }
@@ -586,6 +680,19 @@
     margin: 0 28px;
   }
   @media (max-width: 700px) {
+    .commit-rail {
+      padding: 10px 12px max(10px, env(safe-area-inset-bottom));
+      gap: 8px;
+    }
+    .commit-rail > span {
+      font-size: 13px;
+      max-width: 130px;
+    }
+    .commit-rail :global(button) {
+      padding: 12px 16px;
+      flex: 1;
+    }
+
     header {
       padding: 8px 16px;
     }
@@ -593,15 +700,15 @@
       display: none;
     }
     .development-banner {
-      padding: 10px 16px;
-      font-size: 12px;
+      padding: 4px 16px;
+      font-size: 11px;
     }
     .page-heading {
-      padding: 20px 16px;
-      align-items: flex-start;
+      padding: 8px 16px;
+      align-items: center;
     }
     h1 {
-      font-size: 32px;
+      font-size: 26px;
     }
     .briefing {
       margin: 0 12px 20px;

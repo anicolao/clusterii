@@ -1,4 +1,6 @@
 <script lang="ts">
+  import StellarArt from "$lib/components/StellarArt.svelte";
+  import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
   import {
     createCampaign,
@@ -154,6 +156,17 @@
       <FactionPicker bind:value={faction} game={roster} />
       <h3>Pending selection</h3>
       <FactionPicker value="heliac" game={roster} disabled />
+    </section>
+    <section>
+      <h2>Campaign roster</h2>
+      <CampaignRoster game={roster} />
+    </section>
+    <section>
+      <h2>Stellar class illustrations</h2>
+      {#each ["M", "G", "A", "O"] as stellarClass}<StellarArt
+          stellarClass={stellarClass as "M" | "G" | "A" | "O"}
+        />{/each}
+      <p>Decorative class illustrations carry no system intelligence.</p>
     </section>
     <section>
       <h2>Icon inventory</h2>

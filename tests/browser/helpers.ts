@@ -57,3 +57,11 @@ export async function geometry(page: Page) {
     ),
   ).toBe(false);
 }
+
+export async function grantDeveloper(email: string) {
+  const list = await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:batchGet',{headers:{Authorization:'Bearer owner'}});
+  const data = await list.json() as {users:{localId:string,email:string}[]};
+  const uid = data.users.find(u=>u.email===email)!.localId;
+  const result=await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:update',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({localId:uid,customAttributes:JSON.stringify({developer:true})})});
+  expect(result.ok).toBe(true);
+}

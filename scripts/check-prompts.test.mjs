@@ -142,3 +142,17 @@ test('merge commit preserves both parent histories and adds exactly one new cont
   f.write(value,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check()===0,ok);
  }
 });
+
+test('PR continuations retain their exact committed prompt hash after a newer base prompt arrives', t=>{
+ const f=fixture(t);f.seed();const firstHash=createHash('sha256').update(initial).digest('hex');
+ const step=`Prompt 1 | ${firstHash} | Complete the original requested work\n`;
+ f.write(step,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Original work');
+ f.write(initial+next);f.git('add','PROMPTS.md');f.git('commit','-qm','New reviewer prompt');
+ const head=f.git('rev-parse','HEAD').trim();
+ // A base containing the new prompt but not the feature's prior continuation.
+ f.git('checkout','--orphan','new-base');f.git('rm','-f','PROMPT_WORK.md');f.git('add','PROMPTS.md');f.git('commit','-qm','New base prompt');const base=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',head);
+ assert.equal(f.check('--base',base),0);
+ // Local commits still require the latest prompt, not an old valid hash.
+ f.write(step+`Prompt 1 | ${firstHash} | Incorrect reuse of an older request\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check(),0);
+});

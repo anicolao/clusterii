@@ -181,38 +181,48 @@
   @media (max-width: 700px) {
     .hero {
       inset: 0 0 auto;
-      height: 350px;
+      height: 250px;
       opacity: 1;
     }
     .faction-picker:before {
       background: linear-gradient(0deg, #07131c 55%, transparent 95%);
     }
     .faction-content {
-      padding: 270px 20px 24px;
+      padding: 190px 16px 16px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 28px;
+      margin: 8px 0 14px;
     }
     .faction-options {
       gap: 8px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     label {
       display: block;
       padding: 5px;
-      font-size: 14px;
+      font-size: 11px;
     }
     .thumbnail {
       display: block;
-      width: 70px;
-      height: 70px;
+      width: 100%;
+      height: 58px;
       margin-bottom: 6px;
     }
     article {
-      margin-top: 24px;
+      margin-top: 18px;
     }
     dl {
       gap: 18px;
+    }
+    small {
+      font-size: 11px;
+    }
+    article p {
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 28px;
     }
     .overline {
       font-size: 11px;

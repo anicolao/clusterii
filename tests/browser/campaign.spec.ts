@@ -1,16 +1,10 @@
 import { expect, test } from '@playwright/test';
-import { login, geometry } from './helpers';
-async function grantDeveloper(email: string) {
-  const list = await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:batchGet',{headers:{Authorization:'Bearer owner'}});
-  const data = await list.json() as {users:{localId:string,email:string}[]};
-  const uid = data.users.find(u=>u.email===email)!.localId;
-  const result=await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:update',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({localId:uid,customAttributes:JSON.stringify({developer:true})})});
-  expect(result.ok).toBe(true);
-}
+import { login, geometry, grantDeveloper } from './helpers';
 for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k',3840,2160],['short',1280,720]] as const) {
   test(`campaign create, join, select and recover: ${label}`,async({page},info)=>{
     await page.setViewportSize({width,height});
     const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+    const campaignName=`Review ${label} ${Date.now()}`;
     const email=`campaign-${label}-${Date.now()}@example.test`;
     await login(page,email);
     await page.getByLabel('Commander name').fill('Star envoy');
@@ -20,11 +14,18 @@ for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k
     await page.getByRole('button',{name:'Close',exact:true}).click();
     await page.getByRole('link',{name:'Open campaigns'}).click();
     await page.getByRole('button',{name:'Create campaign',exact:true}).click();
-    await page.getByLabel('Campaign name').fill(`Review ${label}`);
+    await page.getByLabel('Campaign name').fill(campaignName);
     await geometry(page);
     await page.getByRole('button',{name:'Create galaxy',exact:true}).click();
     await expect(page.getByRole('heading',{name:'Choose your faction'})).toBeVisible();
     await expect(page.getByText('Campaign created. Choose your faction.')).toBeVisible();
+    const commitment = page.getByRole('button',{name:'Claim your seat'});
+    const assertRail = async () => {const box=await commitment.boundingBox();expect(box).not.toBeNull();expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(height);};
+    await assertRail();
+    await page.getByRole('button',{name:'Portrait',exact:true}).click();
+    await page.getByRole('radio').last().check();
+    await assertRail();
+    await page.getByRole('button',{name:'Faction',exact:true}).click();
     await geometry(page);
     await page.locator('.campaign-body').evaluate(el=>el.scrollTop=0);
     const factionPath=info.outputPath(`factions-${label}.png`);
@@ -38,12 +39,14 @@ for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k
     await item.click();
     await expect(page.getByRole('complementary',{name:'Selected system'})).toContainText(accessible!.split(',')[0].replace('Select ',''));
     await geometry(page);
-    await page.locator('.campaign-body').evaluate(el=>el.scrollTop=0);
+    const surface=await page.locator('.galaxy-surface').boundingBox();expect(surface!.height).toBe(height);
+    expect((await page.locator('.command-rail').boundingBox())!.height).toBeLessThanOrEqual(width >= 2400 ? 100 : 70);
     const galaxyPath=info.outputPath(`galaxy-${label}.png`);
     await page.screenshot({path:galaxyPath});await info.attach(`galaxy-${label}`,{path:galaxyPath,contentType:'image/png'});
     await page.reload();
-    await page.getByRole('button',{name:new RegExp(`Review ${label}`)}).click();
+    await page.getByRole('button',{name:new RegExp(campaignName)}).click();
     await expect(page.locator('canvas')).toBeVisible();
+    await page.getByRole('button',{name:'Roster',exact:true}).click();
     await expect(page.getByRole('button',{name:'Leave campaign'})).toBeVisible();
     await page.getByRole('button',{name:'Leave campaign'}).click();
     await expect(page.getByText('Your seat has been released.')).toBeVisible();
