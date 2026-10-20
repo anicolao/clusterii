@@ -89,6 +89,11 @@ async function publish(
     campaignDirectory(state),
   );
   for (const seat of state.seats) {
+    tx.set(db().doc(`campaignMemberships/${seat.uid}/games/${state.id}`), {
+      gameId: state.id,
+      phase: state.phase,
+      revision: state.revision,
+    });
     const kek = keys.get(seat.uid);
     if (!kek) throw new Error("Missing recipient key");
     const key = newKey();
@@ -228,6 +233,13 @@ export const processCampaign = onValueCreated(
           mode: "mock",
           epoch: 1,
         });
+      for (const priorUid of (head.exists
+        ? head.get("memberUids")
+        : []) as string[])
+        if (!next.seats.some((seat) => seat.uid === priorUid))
+          tx.delete(
+            db().doc(`campaignMemberships/${priorUid}/games/${gameId}`),
+          );
       if (next.revision !== revision)
         await publish(
           tx,

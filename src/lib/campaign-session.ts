@@ -53,6 +53,17 @@ export function observeDirectory(
     fail,
   );
 }
+export function observeMemberships(
+  uid: string,
+  next: (ids: string[]) => void,
+  fail: (error: Error) => void,
+) {
+  return onSnapshot(
+    collection(firestore, "campaignMemberships", uid, "games"),
+    (snapshot) => next(snapshot.docs.map((doc) => doc.id)),
+    fail,
+  );
+}
 export async function prepareCampaign(
   gameId: string,
   action: CampaignAction,
@@ -130,7 +141,10 @@ export async function observeCampaign(
         });
     },
     (error) => {
-      if (active) fail(error);
+      if (active) {
+        if (error.code === "permission-denied") next(null);
+        else fail(error);
+      }
     },
   );
   return () => {

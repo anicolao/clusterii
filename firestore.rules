@@ -12,6 +12,7 @@ service cloud.firestore {
     }
     function developer() { return request.auth != null && request.auth.token.developer == true; }
     function member(gameId, uid) { return owner(uid) && developer() && uid in get(/databases/$(database)/documents/campaignStates/$(gameId)).data.memberUids; }
+    match /campaignMemberships/{uid}/games/{gameId} { allow read: if owner(uid) && developer(); allow write: if false; }
     match /developmentCampaigns/{gameId} { allow read: if developer(); allow write: if false; }
     match /campaignViews/{gameId}/members/{uid} {
       allow read: if member(gameId, uid);

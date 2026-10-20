@@ -220,8 +220,13 @@ test('campaign authorization, create/join/CAS/recover/revocation use persisted p
   await expect(getDoc(doc(winner.firestore,'campaignStates',gameId))).rejects.toThrow();
   await expect(getDoc(doc(winner.firestore,'campaignKeys',gameId))).rejects.toThrow();
   await expect(setDoc(head,{revision:999})).rejects.toThrow();
+  const membership=doc(winner.firestore,'campaignMemberships',winner.uid,'games',gameId);
+  expect((await getDoc(membership)).data()).toEqual({gameId,phase:'waiting',revision:2});
+  await expect(getDocs(collection(loser.firestore,'campaignMemberships',winner.uid,'games'))).rejects.toThrow();
+  await expect(setDoc(membership,{gameId,phase:'active',revision:999})).rejects.toThrow();
   const left=await campaignCommand(winner,gameId,{kind:'campaign.leave',expectedRevision:2});
   expect(left.receipt.status).toBe('accepted');
+  expect((await getDoc(membership)).exists()).toBe(false);
   await expect(getDoc(head)).rejects.toThrow();
   await expect(getDoc(doc(winner.firestore,'campaignViews',gameId,'members',winner.uid,'versions','2'))).rejects.toThrow();
   expect((await httpsCallable(winner.functions,'campaignKey')({gameId})).data).toEqual({joined:false});
