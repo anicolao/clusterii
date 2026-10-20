@@ -45,5 +45,16 @@
       "port": 19499
     },
     "singleProjectMode": true
+  },
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "Cluster II",
+        "supportEmail": "alex@boardgamescafe.org",
+        "authorizedRedirectUris": [
+          "https://clusterii-20261020.firebaseapp.com/__/auth/handler"
+        ]
+      }
+    }
   }
 }

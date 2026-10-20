@@ -2,7 +2,7 @@
 
 [Open the preview](https://anicolao.github.io/clusterii/pr4/). Select **Learn the game** to read the four chapters. **Play** opens Google sign-in and the commander identity. Save a name and portrait, reload, and reopen Play to recover that identity.
 
-The hosted Google provider requires a project OAuth web-client ID and secret. The CLI account can configure Firebase but is denied access to Google’s client-management service. No alternate login, simulated account, or fallback storage replaces this dependency. The complete sign-in/save/reload journey passes against the Firebase emulators.
+The hosted Google provider is enabled through `firebase deploy --only auth`. Firebase provisions its managed OAuth client from the brand, support email, and callback URI in `firebase.json`. Live API checks confirm the enabled provider, authorized Pages domain, and Google authorization URL with the correct client and callback. The complete sign-in/save/reload journey passes against the Firebase emulators; a real Google account session has not been exercised on the hosted preview.
 
 ## Implementation
 
@@ -18,6 +18,6 @@ Firebase project `clusterii-20261020` runs Node 22 functions in `us-central1`. F
 - Codec/reducer tests cover Unicode, escaping, wrong keys, changed metadata, recipient/version isolation, unsupported real mode, alias validation, and stale revisions.
 - Firebase emulator tests exercise real command delivery, cross-user denial, direct key/state-write denial, immutable commands, concurrent compare-and-swap, and invalid-key rejection.
 - Chromium journeys exercise entry/guide, Google emulator sign-in, profile save, reload recovery, and sign-out clearing. Viewport checks cover 393×852, 1440×1000, 3840×2160, and 1280×720; exact screenshot comparisons use zero pixel tolerance and no retries. Linux CI and local macOS have separate reviewed baselines.
-- Hosted HTTP checks verify the preview revision, static assets, diagnostics route, anonymous database denial, and unauthenticated key-service rejection. Hosted authenticated persistence remains gated on Google provider configuration.
+- Hosted HTTP checks verify the preview revision, static assets, diagnostics route, anonymous database denial, and unauthenticated key-service rejection. Hosted authenticated persistence awaits a real Google account session; provider configuration is deployed and verified.
 
 The step 0 rule examples and prompt-history checks remain required. Safari/Firefox device coverage, real cryptography/KMS, game roles, per-game mode controls, and campaign mechanics remain delivery gates for their associated interactions; this increment does not certify them.

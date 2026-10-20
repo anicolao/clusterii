@@ -229,3 +229,7 @@ mbgames-478115
 ## Prompt 17: CLI Only
 
 don't use the browser, use the CLI only
+
+## Prompt 18: Autonomous Authentication
+
+Can't you set up authentication without my help?
