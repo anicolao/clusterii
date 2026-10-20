@@ -1,0 +1,77 @@
+import { expect, test } from '@playwright/test';
+import { login, geometry, grantDeveloper } from './helpers';
+for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k',3840,2160],['short',1280,720]] as const) {
+  test(`campaign create, join, select and recover: ${label}`,async({page},info)=>{
+    await page.setViewportSize({width,height});
+    const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+    const campaignName=`Review ${label} ${Date.now()}`;
+    const email=`campaign-${label}-${Date.now()}@example.test`;
+    await login(page,email);
+    await page.getByLabel('Commander name').fill('Star envoy');
+    await page.getByRole('button',{name:'Save identity'}).click();
+    await expect(page.getByText('Identity saved.',{exact:false})).toBeVisible();
+    await grantDeveloper(email);
+    await page.getByRole('button',{name:'Close',exact:true}).click();
+    await page.getByRole('link',{name:'Open campaigns'}).click();
+    await page.getByRole('button',{name:'Create campaign',exact:true}).click();
+    await page.getByLabel('Campaign name').fill(campaignName);
+    await geometry(page);
+    await page.getByRole('button',{name:'Create galaxy',exact:true}).click();
+    await expect(page.getByRole('heading',{name:'Choose your faction'})).toBeVisible();
+    await expect(page.getByText('Campaign created. Choose your faction.')).toBeVisible();
+    const commitment = page.getByRole('button',{name:'Claim your seat'});
+    const assertRail = async () => {const box=await commitment.boundingBox();expect(box).not.toBeNull();expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(height);};
+    await assertRail();
+    const scrollPanel=page.locator('.campaign-body');
+    expect(await scrollPanel.evaluate(el=>getComputedStyle(el).overflowY)).toBe('auto');
+    if(label==='phone'||label==='short')expect(await scrollPanel.evaluate(el=>el.scrollHeight>el.clientHeight)).toBe(true);
+    await page.getByRole('button',{name:'Portrait',exact:true}).click();
+    await page.getByRole('radio').last().check();
+    await assertRail();
+    await page.getByRole('button',{name:'Faction',exact:true}).click();
+    await geometry(page);
+    await page.locator('.campaign-body').evaluate(el=>el.scrollTop=0);
+    const factionPath=info.outputPath(`factions-${label}.png`);
+    await page.screenshot({path:factionPath});await info.attach(`factions-${label}`,{path:factionPath,contentType:'image/png'});
+    await page.getByRole('button',{name:'Claim your seat'}).click();
+    await expect(page.getByText('Your seat is confirmed.')).toBeVisible();
+    await expect(page.locator('canvas')).toBeVisible();
+    await page.getByRole('button',{name:'Systems list',exact:true}).click();
+    const item=page.getByRole('button',{name:/Select .* class/}).nth(5);
+    const accessible=await item.getAttribute('aria-label');
+    await item.click();
+    await expect(page.getByRole('complementary',{name:'Selected system'})).toContainText(accessible!.split(',')[0].replace('Select ',''));
+    await geometry(page);
+    const inspectorPanel=page.getByRole('complementary',{name:'Selected system'});
+    expect(await inspectorPanel.evaluate(el=>getComputedStyle(el).backgroundColor)).toBe('rgb(7, 19, 28)');
+    expect(await page.locator('.chart').evaluate(el=>getComputedStyle(el).overflow)).toBe('hidden');
+    // Use the actual orbit controller to pan a rendered label to the inspector boundary.
+    if(label==='phone') {
+      const marker=page.locator('.star-label');const markerBox=await marker.boundingBox();const panelBox=await inspectorPanel.boundingBox();
+      if(markerBox && panelBox) {
+        const x=markerBox.x+markerBox.width/2,y=markerBox.y+markerBox.height/2;
+        await page.mouse.move(x,y);await page.mouse.down({button:'right'});await page.mouse.move(x,panelBox.y+30,{steps:8});await page.mouse.up({button:'right'});
+        const covered=await inspectorPanel.evaluate(el=>{const b=el.getBoundingClientRect();return el.contains(document.elementFromPoint(b.x+b.width/2,b.y+30));});
+        expect(covered).toBe(true);
+        const boundaryPath=info.outputPath('labels-at-inspector-boundary.png');await page.screenshot({path:boundaryPath});await info.attach('Map label clipping at inspector',{path:boundaryPath,contentType:'image/png'});
+        await page.mouse.move(x,y);await page.mouse.down({button:'right'});await page.mouse.move(x,2*y-(panelBox.y+30),{steps:8});await page.mouse.up({button:'right'});
+      }
+    }
+    const surface=await page.locator('.galaxy-surface').boundingBox();expect(surface!.height).toBe(height);
+    expect((await page.locator('.command-rail').boundingBox())!.height).toBeLessThanOrEqual(width >= 2400 ? 100 : 70);
+    const galaxyPath=info.outputPath(`galaxy-${label}.png`);
+    await page.screenshot({path:galaxyPath});await info.attach(`galaxy-${label}`,{path:galaxyPath,contentType:'image/png'});
+    await page.reload();
+    await page.getByRole('button',{name:new RegExp(campaignName)}).click();
+    await expect(page.locator('canvas')).toBeVisible();
+    await page.getByRole('button',{name:'Roster',exact:true}).click();
+    await expect(page.getByRole('button',{name:'Leave campaign'})).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(page.getByRole('button',{name:'Roster',exact:true})).toBeFocused();
+    await page.keyboard.press('Enter');
+    await page.getByRole('button',{name:'Leave campaign'}).click();
+    await expect(page.getByText('Your seat has been released.')).toBeVisible();
+    await expect(page.locator('canvas')).toHaveCount(0);
+    expect(errors).toEqual([]);
+  });
+}

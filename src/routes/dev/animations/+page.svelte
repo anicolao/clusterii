@@ -47,11 +47,11 @@
 <div class="lab">
   <header>
     <p class="overline gold">Developer review</p>
-    <h1>Identity feedback lab</h1>
+    <h1>Command feedback lab</h1>
     <p>
-      Deterministic production-component scenarios. Shared profile validation
-      produces the accepted/rejected outcomes. Playback changes presentation
-      time only; no service or game state is fabricated.
+      Deterministic production-component scenarios. Shared profile and campaign
+      validation produces the accepted/rejected outcomes. Playback changes
+      presentation time only; no service or game state is fabricated.
     </p>
     <nav>
       <a href={`${base}/gallery/`}>Component gallery</a><a href={`${base}/`}
@@ -100,15 +100,15 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        <NameField
-          id={reduced ? "reduced-name" : "standard-name"}
-          value="Preserved draft"
-          disabled={frame.feedback.message === "Sending your identity…"}
-        /><PortraitPicker
-          value="M2"
-          disabled
-          group={reduced ? "reduced-portraits" : "standard-portraits"}
-        /><Feedback
+        {#if !selected.startsWith("campaign-")}<NameField
+            id={reduced ? "reduced-name" : "standard-name"}
+            value="Preserved draft"
+            disabled={frame.feedback.message === "Sending your identity…"}
+          /><PortraitPicker
+            value="M2"
+            disabled
+            group={reduced ? "reduced-portraits" : "standard-portraits"}
+          />{/if}<Feedback
           message={frame.feedback.message}
           error={frame.feedback.error}
           errorId={reduced ? "reduced-error" : "standard-error"}

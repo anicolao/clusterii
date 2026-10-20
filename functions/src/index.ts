@@ -94,3 +94,9 @@ export const processProfile = onValueCreated(
     });
   },
 );
+
+export {
+  campaignKey,
+  processCampaign,
+  startScheduledCampaigns,
+} from "./campaigns.js";

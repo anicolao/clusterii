@@ -20,8 +20,13 @@ export interface Grant {
   object: Context;
   wrappedKey: Envelope;
 }
-const encode = (s: string) =>
-  btoa(String.fromCharCode(...new TextEncoder().encode(s)));
+const encode = (s: string) => {
+  const bytes = new TextEncoder().encode(s);
+  let binary = "";
+  for (let offset = 0; offset < bytes.length; offset += 4096)
+    binary += String.fromCharCode(...bytes.subarray(offset, offset + 4096));
+  return btoa(binary);
+};
 const decode = (s: string) =>
   new TextDecoder("utf-8", { fatal: true }).decode(
     Uint8Array.from(atob(s), (c) => c.charCodeAt(0)),

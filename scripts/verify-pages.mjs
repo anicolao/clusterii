@@ -32,6 +32,8 @@ const assets = new Set(
 for (const path of [
   "diagnostics/",
   "gallery/",
+  "campaigns/",
+  "art/faction-envoys.webp",
   "dev/animations/",
   "art/entry-phone.webp",
   "art/portraits.webp",
