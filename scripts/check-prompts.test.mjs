@@ -1,0 +1,131 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { chmodSync, cpSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { resolve, join } from 'node:path';
+import { execFileSync, spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+
+const checker = resolve(import.meta.dirname, 'check-prompts.mjs');
+const initial = '# Project prompts\n\n## Prompt 1: Initial Request\n\nFirst user request.\n';
+const next = '\n## Prompt 2: Followup Request\n\nSecond user request.\n';
+
+function fixture(t) {
+  const cwd = mkdtempSync(join(tmpdir(), 'cluster-prompts-'));
+  t.after(() => rmSync(cwd, { recursive: true, force: true }));
+  const git = (...args) => execFileSync('git', args, { cwd, stdio: 'pipe', encoding: 'utf8' });
+  git('init', '-q');
+  git('config', 'user.name', 'Prompt Test');
+  git('config', 'user.email', 'test@example.invalid');
+  git('config', 'core.hooksPath', '/dev/null');
+  git('config', 'commit.gpgsign', 'false');
+  const write = (text, path = 'PROMPTS.md') => writeFileSync(join(cwd, path), text);
+  const check = (...args) => spawnSync(process.execPath, [checker, ...args], { cwd, encoding: 'utf8' }).status;
+  const seed = () => { write(initial); git('add', 'PROMPTS.md'); git('commit', '-qm', 'Record first prompt'); };
+  return { git, write, check, seed };
+}
+
+test('requires a staged prompt log, including on the initial commit', (t) => {
+  const f = fixture(t);
+  assert.notEqual(f.check(), 0);
+  f.write(initial);
+  assert.notEqual(f.check(), 0);
+  f.git('add', 'PROMPTS.md');
+  assert.equal(f.check(), 0);
+});
+
+test('accepts a staged append and rejects an unstaged append', (t) => {
+  const f = fixture(t); f.seed(); f.write(initial + next);
+  assert.notEqual(f.check(), 0);
+  f.git('add', 'PROMPTS.md');
+  assert.equal(f.check(), 0);
+});
+
+test('rejects rewritten or deleted historical prompts', (t) => {
+  const f = fixture(t); f.seed(); f.write(initial.replace('First user', 'Changed user') + next);
+  f.git('add', 'PROMPTS.md');
+  assert.notEqual(f.check(), 0);
+  f.git('rm', '-f', 'PROMPTS.md');
+  assert.notEqual(f.check(), 0);
+});
+
+test('rejects empty bodies, invalid summaries, numbering gaps, and bare append text', (t) => {
+  const f = fixture(t); f.seed();
+  for (const added of [
+    '\n## Prompt 2: Empty Request\n\n  \n',
+    '\n## Prompt 2: Single\n\nRequest.\n',
+    '\n## Prompt 2: Too Many Summary Words\n\nRequest.\n',
+    '\n## Prompt 3: Wrong Number\n\nRequest.\n',
+    '\nUnheaded text.\n',
+  ]) {
+    f.write(initial + added); f.git('add', 'PROMPTS.md');
+    assert.notEqual(f.check(), 0, added);
+  }
+});
+
+test('accepts a unique continuation bound to the latest exact prompt log', (t) => {
+  const f = fixture(t); f.seed();
+  const hash = createHash('sha256').update(initial).digest('hex');
+  f.write(`Prompt 1 | ${hash} | Implement the second logical step\n`, 'PROMPT_WORK.md');
+  f.git('add', 'PROMPT_WORK.md');
+  assert.equal(f.check(), 0);
+  f.git('commit', '-qm', 'Record continuation');
+  assert.notEqual(f.check(), 0);
+  f.write(`Prompt 1 | ${'0'.repeat(64)} | Implement another logical step\n`, 'PROMPT_WORK.md');
+  f.git('add', 'PROMPT_WORK.md');
+  assert.notEqual(f.check(), 0);
+});
+
+test('checks a PR against its base, including a base with no prompt log', (t) => {
+  const f = fixture(t);
+  f.git('commit', '--allow-empty', '-qm', 'Repository foundation');
+  const base = f.git('rev-parse', 'HEAD').trim();
+  f.write(initial); f.git('add', 'PROMPTS.md'); f.git('commit', '-qm', 'Record first prompt');
+  assert.equal(f.check('--base', base), 0);
+  assert.notEqual(f.check('--base', 'HEAD'), 0);
+});
+
+test('the installed pre-commit hook blocks commits without a staged prompt', (t) => {
+  const f = fixture(t);
+  const cwd = f.git('rev-parse', '--show-toplevel').trim();
+  mkdirSync(join(cwd, '.githooks'));
+  mkdirSync(join(cwd, 'scripts'));
+  cpSync(resolve(import.meta.dirname, '../.githooks/pre-commit'), join(cwd, '.githooks/pre-commit'));
+  cpSync(checker, join(cwd, 'scripts/check-prompts.mjs'));
+  chmodSync(join(cwd, '.githooks/pre-commit'), 0o755);
+  f.git('config', 'core.hooksPath', '.githooks');
+  f.git('add', '.');
+  const commit = () => spawnSync('git', ['commit', '--allow-empty', '-qm', 'Check real hook'], { cwd }).status;
+  assert.notEqual(commit(), 0);
+  f.write(initial); f.git('add', 'PROMPTS.md');
+  assert.equal(commit(), 0);
+  f.write(initial + next);
+  assert.notEqual(commit(), 0);
+});
+
+
+test('explicit PR-base validation accepts multiple valid commits while the local hook requires one step',t=>{
+ const f=fixture(t);f.seed();const base=f.git('rev-parse','HEAD').trim();
+ const digest=createHash('sha256').update(initial).digest('hex');
+ f.write(`Prompt 1 | ${digest} | First distinct logical continuation\n\nPrompt 1 | ${digest} | Second distinct logical continuation\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');
+ assert.notEqual(f.check(),0);assert.equal(f.check('--base',base),0);
+});
+test('PR-base continuation validation rejects a bad or duplicate later entry',t=>{
+ const f=fixture(t);f.seed();const base=f.git('rev-parse','HEAD').trim();const digest=createHash('sha256').update(initial).digest('hex');
+ const first=`Prompt 1 | ${digest} | First distinct logical continuation`;
+ for(const bad of [first,`Prompt 1 | ${'0'.repeat(64)} | Incorrect digest continuation`,`Prompt 2 | ${digest} | Incorrect latest prompt continuation`]){
+  f.write(`${first}\n\n${bad}\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);
+ }
+});
+
+test('stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks',t=>{
+ const f=fixture(t);f.seed();const digest=createHash('sha256').update(initial).digest('hex');
+ const first=`Prompt 1 | ${digest} | Common logical continuation\n`;
+ const parent=`Prompt 1 | ${digest} | Parent logical continuation\n`;
+ const child=`Prompt 1 | ${digest} | Child logical continuation\n`;
+ f.write(first,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Common step');const common=f.git('rev-parse','HEAD').trim();
+ f.write(first+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Parent step');const base=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);f.write(first+child,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Child step');
+ f.write(first+child+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check(),0);assert.equal(f.check('--base',base),0);
+ for(const invalid of [first+child,child+parent,first+child+parent+child]){f.write(invalid,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);}
+});
