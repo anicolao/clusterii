@@ -1,1 +1,0 @@
-import"./BXqM2f3r.js";function e(e){let t=new URLSearchParams(e).get(`campaign`);return t&&/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/.test(t)?t:null}function t(e,t=null){return`${e}/campaigns/${t?`?campaign=${encodeURIComponent(t)}`:``}`}export{e as n,t};
