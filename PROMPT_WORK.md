@@ -25,3 +25,7 @@ Prompt 21 | 9fb2d2a159e38ad218c8287ac87b81244c02f272ec78034e1065684052fd4270 | I
 
 Prompt 22 | 5d514f16bca7a3fabdfdd317feeacf910a59b2db8afe5365468d1eb4684c2bcc | Add private campaign recovery and accessible chart navigation while preserving reviewed full-screen composition
 Prompt 22 | 5d514f16bca7a3fabdfdd317feeacf910a59b2db8afe5365468d1eb4684c2bcc | Record navigation PR dependency, preview destinations and deployed membership index backend
+Prompt 22 | 5d514f16bca7a3fabdfdd317feeacf910a59b2db8afe5365468d1eb4684c2bcc | Restore campaign invitations through sign-in and show Continue from persisted membership with keyboard evidence
+Prompt 22 | 5d514f16bca7a3fabdfdd317feeacf910a59b2db8afe5365468d1eb4684c2bcc | Keep keyboard focus outlines inside bounded chart controls and publish entry-recovery preview dependencies
+Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Integrate semantic retry validation and reviewer handoffs into the entry-recovery stack
+Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Correct named active-campaign continuation and returning invitations with two-roster browser evidence

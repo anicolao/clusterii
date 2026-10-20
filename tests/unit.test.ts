@@ -68,3 +68,27 @@ test("profile reducer validates data and rejects lost updates", () => {
     }),
   ).toThrow();
 });
+
+import {requestedCampaign, campaignHref} from '../src/lib/campaign-navigation';
+test('campaign sign-in return accepts only canonical IDs and retains the preview base',()=>{
+  const id='12345678-1234-4321-9876-123456789abc';
+  expect(requestedCampaign(`?campaign=${id}`)).toBe(id);
+  expect(campaignHref('/clusterii/pr8',id)).toBe(`/clusterii/pr8/campaigns/?campaign=${id}`);
+  for(const unsafe of ['https://example.test','//example.test','../admin','-'.repeat(36),'123',''])expect(requestedCampaign(`?campaign=${encodeURIComponent(unsafe)}`)).toBe(null);
+});
+
+import {resumableCampaign} from '../src/lib/campaign-navigation';
+import {createCampaign,campaignDirectory} from '../shared/campaign';
+test('Continue uses accessible active metadata and the remembered selection only',()=>{
+  const a=campaignDirectory(createCampaign('one',{kind:'campaign.create',expectedRevision:0,name:'One',capacity:4,mode:'mock',development:true},'a'.repeat(64),0));
+  const b={...a,id:'two',name:'Two'};
+  const activeA={...a,phase:'active' as const},activeB={...b,phase:'active' as const};
+  expect(resumableCampaign([],[],null)).toBeNull();
+  expect(resumableCampaign([a],['one'],'one')).toBeNull();
+  expect(resumableCampaign([activeA],['one'],null)?.id).toBe('one');
+  expect(resumableCampaign([activeA,activeB],['one','two'],'two')?.id).toBe('two');
+  expect(resumableCampaign([activeA,activeB],['one','two'],null)).toBeNull();
+  expect(resumableCampaign([activeA,activeB],['one'],'two')?.id).toBe('one');
+  expect(resumableCampaign([activeA],[],'one')).toBeNull();
+  expect(resumableCampaign([{...activeA,phase:'completed'} as unknown as typeof a],['one'],'one')).toBeNull();
+});

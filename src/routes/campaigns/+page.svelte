@@ -4,6 +4,10 @@
     campaignPendingMessage,
     campaignNetworkMessage,
   } from "$lib/campaign-feedback";
+  import {
+    requestedCampaign,
+    rememberCampaign,
+  } from "$lib/campaign-navigation";
   import { goto } from "$app/navigation";
   import { onMount, tick } from "svelte";
   import { base } from "$app/paths";
@@ -85,6 +89,8 @@
         (next) => {
           if (session !== generation || current !== selection) return;
           view = next;
+          if (next?.phase === "active" && account)
+            rememberCampaign(account, next.id);
           loading = false;
         },
         failed,
@@ -158,9 +164,7 @@
           stopMemberships();
           games = [];
           view = null;
-          const requested = new URL(location.href).searchParams.get("campaign");
-          selected =
-            requested && /^[a-f0-9-]{36}$/.test(requested) ? requested : null;
+          selected = requestedCampaign(location.search);
           pending = null;
           busy = false;
           error = "";
@@ -244,6 +248,8 @@
     });
     creating = false;
     loading = false;
+    error = "";
+    remedy = null;
     await tick();
     title?.focus();
   }
@@ -291,7 +297,13 @@
                 ? "Campaign testing is limited to developer accounts. Public campaigns open with secure encryption and approved rules."
                 : "Checking your account’s campaign access."}
           </p>
-          <a class="return" href={`${base}/`}>Return to entry</a>
+          <a
+            class="return"
+            href={`${base}/${access === "signed-out" && selected ? `?campaign=${encodeURIComponent(selected)}` : ""}`}
+            >{access === "signed-out"
+              ? "Sign in to continue"
+              : "Return to entry"}</a
+          >
         </section>
       {:else}
         <div class="page-heading">

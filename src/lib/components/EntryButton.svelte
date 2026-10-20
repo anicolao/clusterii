@@ -3,12 +3,14 @@
   import { base } from "$app/paths";
   let {
     label,
+    detail,
     illustration,
     onclick,
     disabled = false,
     focusId,
   }: {
     label: string;
+    detail?: string;
     illustration: "planet" | "observatory";
     onclick: () => void;
     disabled?: boolean;
@@ -24,9 +26,9 @@
       alt=""
     /></span
   >
-  <span class="label">{label}</span><span class="chevron" aria-hidden="true"
-    >›</span
-  >
+  <span class="label"
+    >{label}{#if detail}<small>{detail}</small>{/if}</span
+  ><span class="chevron" aria-hidden="true">›</span>
 </button>
 
 <style>
@@ -72,6 +74,15 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 1.1;
+  }
+  .label small {
+    display: block;
+    font:
+      16px "Atkinson Hyperlegible",
+      sans-serif;
+    line-height: 1.2;
+    margin-top: 4px;
+    overflow-wrap: anywhere;
   }
   .chevron {
     font-size: 32px;

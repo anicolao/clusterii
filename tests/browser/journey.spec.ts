@@ -78,7 +78,7 @@ test("Google sign-in, encrypted profile acknowledgement and reload", async ({
   // reuse a desktop-sized image raster while resizing the phone capture.
   await page.setViewportSize({ width: 393, height: 852 });
   await page.reload();
-  await page.getByRole("button", { name: "Play", exact: true }).click();
+  await page.getByRole("button", { name: "Your identity", exact: true }).click();
   await expect(page.getByLabel("Commander name")).toHaveValue("Étoile 🌌");
   await expect(page.getByRole("radio", { name: "The deepseer" })).toBeChecked();
   await capture(page, "identity-phone");

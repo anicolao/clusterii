@@ -1,4 +1,11 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
+  import {
+    requestedCampaign,
+    campaignHref,
+    resumableCampaign,
+    lastCampaign,
+  } from "$lib/campaign-navigation";
   import { onMount, tick } from "svelte";
   import {
     receiptFeedback,
@@ -20,6 +27,24 @@
   let account = $state<string | null>(null);
   let alias = $state("");
   let portrait = $state<Portrait>("G1");
+  let invitedCampaign = $state<string | null>(null);
+  let memberships = $state<string[]>([]);
+  let campaignError = $state("");
+  let stopCampaigns = () => {};
+  let campaignMetadata = $state<import("@shared/campaign").CampaignDirectory[]>(
+    [],
+  );
+  let lastSelection = $state<string | null>(null);
+  let stopDirectory = () => {};
+  const continued = $derived(
+    resumableCampaign(campaignMetadata, memberships, lastSelection),
+  );
+  const activeCount = $derived(
+    campaignMetadata.filter(
+      (game) => game.phase === "active" && memberships.includes(game.id),
+    ).length,
+  );
+  const destination = $derived(campaignHref(base, invitedCampaign));
   let saved = $state<Profile | null>(null);
   let revision = 0;
   let kek = "";
@@ -107,6 +132,7 @@
             portrait !== (saved?.portrait ?? "G1");
           saved = profile;
           ready = true;
+          if (first && profile && invitedCampaign) void goto(destination);
           if (first || (!busy && !pending && !dirty)) {
             revision = version;
             alias = profile?.alias ?? "";
@@ -127,7 +153,46 @@
       remedy = "network";
     }
   }
+  async function recoverCampaigns() {
+    if (!account) return;
+    const uid = account,
+      session = generation;
+    stopCampaigns();
+    stopDirectory();
+    campaignError = "";
+    try {
+      const campaigns = await import("$lib/campaign-session");
+      const allowed = await campaigns.developerAccess();
+      if (session !== generation || !allowed) return;
+      stopDirectory = campaigns.observeDirectory(
+        (games) => {
+          if (session === generation) campaignMetadata = games;
+        },
+        () => {
+          if (session === generation)
+            campaignError =
+              "Your campaigns could not be recovered. Reconnect to try again.";
+        },
+      );
+      stopCampaigns = campaigns.observeMemberships(
+        uid,
+        (ids) => {
+          if (session === generation) memberships = ids;
+        },
+        () => {
+          if (session === generation)
+            campaignError =
+              "Your campaigns could not be recovered. Reconnect to try again.";
+        },
+      );
+    } catch {
+      if (session === generation)
+        campaignError =
+          "Your campaigns could not be recovered. Reconnect to try again.";
+    }
+  }
   onMount(() => {
+    invitedCampaign = requestedCampaign(location.search);
     let disposed = false;
     let stopAuth = () => {};
     void import("$lib/session")
@@ -141,6 +206,12 @@
           error = "";
           remedy = "none";
           stopProfile();
+          stopCampaigns();
+          stopDirectory();
+          campaignMetadata = [];
+          lastSelection = user ? lastCampaign(user.uid) : null;
+          memberships = [];
+          campaignError = "";
           stopReceipt();
           clearTimeout(timeout);
           kek = "";
@@ -153,6 +224,7 @@
           revision = 0;
           account = user?.uid ?? null;
           if (!user) return;
+          void recoverCampaigns();
           await recover();
         });
       })
@@ -163,12 +235,18 @@
       disposed = true;
       generation++;
       stopAuth();
+      stopCampaigns();
+      stopDirectory();
       stopProfile();
       stopReceipt();
       clearTimeout(timeout);
     };
   });
   async function play() {
+    if (saved) {
+      await goto(destination);
+      return;
+    }
     if (account) {
       open("profile");
       return;
@@ -178,7 +256,8 @@
     error = "";
     try {
       await service.login();
-      open("profile");
+      if (saved && invitedCampaign) await goto(destination);
+      else open("profile");
     } catch (reason) {
       const code =
         reason && typeof reason === "object" && "code" in reason
@@ -245,6 +324,8 @@
           message = feedback.message;
           error = feedback.error;
           remedy = feedback.remedy;
+          if (receipt.status === "accepted" && invitedCampaign)
+            void goto(destination);
         },
         () => {
           if (session !== generation) return;
@@ -299,7 +380,11 @@
   >
   <div class="shade" aria-hidden="true"></div>
   {#if scene === "entry"}
-    <section class="entry" aria-label="Welcome to Cluster">
+    <section
+      class="entry"
+      class:resuming={!!continued}
+      aria-label="Welcome to Cluster"
+    >
       <div class="brand">
         <p class="overline">A galaxy won together</p>
         <h1 bind:this={focusTitle} tabindex="-1">CLUSTER</h1>
@@ -316,22 +401,43 @@
           onclick={play}
           disabled={!connected || busy}
         />
+        {#if continued}<EntryButton
+            label="Continue"
+            detail={continued.name}
+            illustration="planet"
+            focusId="continue"
+            onclick={() => goto(campaignHref(base, continued.id))}
+          />{/if}
         <EntryButton
           label="Learn the game"
           illustration="observatory"
           focusId="learn"
           onclick={() => open("learn")}
         />
-        {#if saved && !busy && !pending}<a
-            class="campaign-link"
-            href={`${base}/campaigns/`}>Open campaigns <Icon kind="arrow" /></a
-          >{/if}
+        {#if saved && !busy && !pending}<div class="entry-secondary">
+            {#if activeCount > 1}<a
+                class="campaign-link"
+                href={campaignHref(base)}>Change campaign</a
+              >{:else}<a class="campaign-link" href={destination}
+                >{invitedCampaign
+                  ? "Open invited campaign"
+                  : "Open campaigns"}</a
+              >{/if}<ActionButton
+              class="quiet"
+              data-focus="identity"
+              onclick={() => open("profile")}>Your identity</ActionButton
+            >
+          </div>{/if}
         {#if account}<p class="signed">
             {saved ? `Welcome back, ${saved.alias}` : "Your command awaits"}
           </p>{:else}<p class="signed">
             Conquest · Diplomacy · Shared victory
           </p>{/if}
       </div>
+      {#if campaignError}<Feedback
+          error={campaignError}
+          reconnect={recoverCampaigns}
+        />{/if}
       {#if error}<p class="notice error" role="alert">{error}</p>{/if}
     </section>
     <p class="world-caption" aria-hidden="true">
@@ -444,6 +550,54 @@
 </main>
 
 <style>
+  .entry-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .entry-secondary .campaign-link {
+    margin: 0;
+    padding: 0 8px;
+    font-size: 14px;
+  }
+  .entry-secondary :global(button) {
+    font-size: 14px;
+    padding: 8px;
+  }
+  @media (max-width: 700px) {
+    .resuming :global(.entry-actions) {
+      margin-top: 20px;
+    }
+    .resuming .brand h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+    .resuming .invitation {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    .resuming .rule {
+      margin: 12px auto;
+    }
+  }
+  @media (min-width: 701px) and (max-height: 780px) {
+    .resuming .brand h1 {
+      font-size: 68px;
+      margin: 8px 0;
+    }
+    .resuming .invitation {
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .resuming .rule {
+      margin: 8px auto;
+    }
+    .resuming :global(.entry-actions) {
+      margin-top: 20px;
+    }
+  }
+
   .campaign-link {
     display: flex;
     align-items: center;

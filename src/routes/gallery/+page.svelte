@@ -90,6 +90,12 @@
         focusId="gallery-learn"
         onclick={() => clicks++}
       /><EntryButton
+        label="Continue"
+        detail="The Cygnus Compact"
+        illustration="planet"
+        focusId="gallery-continue"
+        onclick={() => clicks++}
+      /><EntryButton
         label="Opening the gates…"
         illustration="planet"
         focusId="gallery-pending"
