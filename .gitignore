@@ -1,0 +1,12 @@
+node_modules/
+.svelte-kit/
+build/
+functions/lib/
+*-debug.log*
+.firebase/
+.env*
+!.env.example
+test-results/
+playwright-report/
+.pages-publish/
+.pages-publication.json

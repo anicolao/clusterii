@@ -1,0 +1,60 @@
+{
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "runtime": "nodejs22",
+      "predeploy": [
+        "bun run --cwd functions build"
+      ]
+    }
+  ],
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "emulators": {
+    "auth": {
+      "port": 19099
+    },
+    "database": {
+      "port": 19000
+    },
+    "firestore": {
+      "port": 18080
+    },
+    "functions": {
+      "port": 15001
+    },
+    "ui": {
+      "enabled": true,
+      "port": 14000
+    },
+    "hub": {
+      "port": 14400
+    },
+    "logging": {
+      "port": 14500
+    },
+    "eventarc": {
+      "port": 19299
+    },
+    "tasks": {
+      "port": 19499
+    },
+    "singleProjectMode": true
+  },
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "Cluster II",
+        "supportEmail": "alex@boardgamescafe.org",
+        "authorizedRedirectUris": [
+          "https://clusterii-20261020.firebaseapp.com/__/auth/handler"
+        ]
+      }
+    }
+  }
+}
