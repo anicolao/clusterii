@@ -17,7 +17,8 @@ service cloud.firestore {
     match /campaignViews/{gameId}/members/{uid} {
       allow read: if member(gameId, uid);
       allow write: if false;
-      match /versions/{version} { allow read: if member(gameId, uid); allow write: if false; }
+      match /versions/{version} { allow read: if member(gameId, uid) && get(/databases/$(database)/documents/campaignStates/$(gameId)).data.envelope.epoch == 1; allow write: if false; }
+      match /epochs/{epoch}/versions/{version} { allow read: if member(gameId, uid) && epoch == string(get(/databases/$(database)/documents/campaignStates/$(gameId)).data.envelope.epoch); allow write: if false; }
     }
     match /campaignReceipts/{uid}/results/{id} { allow read: if owner(uid); allow write: if false; }
     match /{document=**} { allow read, write: if false; }

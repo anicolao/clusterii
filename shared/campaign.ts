@@ -33,7 +33,7 @@ export interface Campaign {
   development: true;
   mode: "mock" | "real";
   mockExposed: boolean;
-  encryptionEpoch: 1;
+  encryptionEpoch: number;
   createdAt: number;
   startAt: number | null;
   pausedAt?: number | null;
@@ -44,7 +44,13 @@ export interface Campaign {
   systems: Record<string, SystemState>;
   empires: Record<string, EmpireState>;
 }
+export type MigrationAction = {
+  kind: "campaign.migrate";
+  expectedRevision: number;
+  targetMode: "mock" | "real";
+};
 export type CampaignAction =
+  | MigrationAction
   | {
       kind: "campaign.create";
       expectedRevision: 0;
@@ -71,9 +77,11 @@ export function parseCampaignAction(input: unknown): CampaignAction {
   const fields =
     a.kind === "campaign.create"
       ? ["kind", "expectedRevision", "name", "capacity", "mode", "development"]
-      : a.kind === "campaign.join"
-        ? ["kind", "expectedRevision", "faction", "portrait"]
-        : ["kind", "expectedRevision"];
+      : a.kind === "campaign.migrate"
+        ? ["kind", "expectedRevision", "targetMode"]
+        : a.kind === "campaign.join"
+          ? ["kind", "expectedRevision", "faction", "portrait"]
+          : ["kind", "expectedRevision"];
   if (Object.keys(a).some((key) => !fields.includes(key)))
     throw new Error("invalid");
   if (a.kind === "campaign.create") {
@@ -87,6 +95,9 @@ export function parseCampaignAction(input: unknown): CampaignAction {
       (a.mode !== "mock" && a.mode !== "real") ||
       a.development !== true
     )
+      throw new Error("invalid");
+  } else if (a.kind === "campaign.migrate") {
+    if (a.targetMode !== "mock" && a.targetMode !== "real")
       throw new Error("invalid");
   } else if (a.kind === "campaign.join") {
     if (
@@ -215,6 +226,35 @@ export function maintainCampaign(
         : current.startAt,
   };
 }
+export function activateEncryptionEpoch(
+  current: Campaign,
+  targetMode: "mock" | "real",
+  targetEpoch: number,
+  uid: string,
+  now: number,
+): Campaign {
+  if (current.pausedAt == null) throw new Error("pause-required");
+  if (
+    !Number.isSafeInteger(targetEpoch) ||
+    targetEpoch <= current.encryptionEpoch ||
+    targetMode === current.mode ||
+    (targetMode !== "mock" && targetMode !== "real")
+  )
+    throw new Error("invalid");
+  const resumed = maintainCampaign(
+    current,
+    { kind: "campaign.resume", expectedRevision: current.revision },
+    uid,
+    now,
+  );
+  return {
+    ...resumed,
+    mode: targetMode,
+    encryptionEpoch: targetEpoch,
+    mockExposed:
+      current.mockExposed || current.mode === "mock" || targetMode === "mock",
+  };
+}
 export function startCampaign(current: Campaign, now: number): Campaign {
   if (
     current.pausedAt != null ||
@@ -287,6 +327,13 @@ export function campaignDirectory(state: Campaign) {
     rulesetVersion: state.rulesetVersion,
     development: true,
     mode: state.mode,
+    encryptionEpoch: state.encryptionEpoch,
+    mockExposed: state.mockExposed,
+    migration: null as null | {
+      state: string;
+      verified: number;
+      targetMode: "mock" | "real";
+    },
     roster: state.seats.map((seat) => ({
       alias: seat.profile.alias,
       portrait: seat.profile.portrait,

@@ -5,6 +5,14 @@ const reasons: Record<string, string> = {
   conflict:
     "The roster changed. Review the current seats and submit your choice again.",
   full: "That faction has no seats remaining. Choose an available faction.",
+  migrating:
+    "Encryption maintenance is in progress. Wait for verification before submitting another order.",
+  "pause-required":
+    "Pause this development campaign before changing encryption.",
+  unavailable:
+    "Managed encryption is unavailable. The campaign has not changed.",
+  "migration-failed":
+    "Encryption verification failed. The previous game is preserved and remains paused. Resume it or retry the change.",
   paused:
     "This campaign is paused for development maintenance. Your choice is preserved.",
   started: "This campaign has begun. Its roster is closed.",
@@ -29,15 +37,17 @@ export function campaignFeedback(
     };
   return {
     message:
-      kind === "campaign.pause"
-        ? "Campaign paused. Admissions and scheduled start are stopped."
-        : kind === "campaign.resume"
-          ? "Campaign resumed."
-          : kind === "campaign.create"
-            ? "Campaign created. Choose your faction."
-            : kind === "campaign.leave"
-              ? "Your seat has been released."
-              : "Your seat is confirmed.",
+      kind === "campaign.migrate"
+        ? "Encryption changed and verified. Campaign resumed."
+        : kind === "campaign.pause"
+          ? "Campaign paused. Admissions and scheduled start are stopped."
+          : kind === "campaign.resume"
+            ? "Campaign resumed."
+            : kind === "campaign.create"
+              ? "Campaign created. Choose your faction."
+              : kind === "campaign.leave"
+                ? "Your seat has been released."
+                : "Your seat is confirmed.",
     error: "",
     remedy: null,
   };

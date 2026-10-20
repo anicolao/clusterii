@@ -16,7 +16,7 @@ const invalid = receiptFeedback(receipt(1, 1, 'A'.repeat(25)));
 const pending = { message: pendingMessage, error: '', remedy: 'none' };
 const reconnect = { message: '', error: networkMessage, remedy: 'network' };
 import { campaignFeedback, campaignPendingMessage, campaignNetworkMessage } from '$lib/campaign-feedback';
-import { createCampaign, joinOrLeave, maintainCampaign } from '@shared/campaign';
+import { createCampaign, joinOrLeave, maintainCampaign, activateEncryptionEpoch } from '@shared/campaign';
 const campaign = createCampaign('lab', {kind:'campaign.create',expectedRevision:0,name:'Lab scenario',capacity:4,mode:'mock',development:true},'d'.repeat(64),0);
 function joinReceipt(revision:number) {
   try {joinOrLeave(campaign,{kind:'campaign.join',expectedRevision:revision,faction:'heliac'},'lab',{alias:'Envoy',portrait:'G1'},0);return campaignFeedback('campaign.join',{status:'accepted'});}
@@ -29,7 +29,12 @@ function maintenanceReceipt(kind:'campaign.pause'|'campaign.resume', revision:nu
   try { maintainCampaign(kind==='campaign.pause'?seated:paused,{kind,expectedRevision:revision},'lab',200);return campaignFeedback(kind,{status:'accepted'}); }
   catch(error){return campaignFeedback(kind,{status:'rejected',reason:error instanceof Error?error.message:'invalid'});}
 }
+const migrationSource=maintainCampaign(seated,{kind:'campaign.pause',expectedRevision:2},'lab',100);
+const migrationResult=activateEncryptionEpoch(migrationSource,'real',2,'lab',200);
+const migrationAccepted=campaignFeedback('campaign.migrate',{status:migrationResult.encryptionEpoch===2&&migrationResult.pausedAt===null?'accepted':'rejected'});
 export const scenarios = [
+  {id:'campaign-migrated',label:'Encryption: verified → resumed',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:migrationAccepted}]},
+
   {id:'campaign-paused',label:'Maintenance: pending → paused',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:maintenanceReceipt('campaign.pause',2)}]},
   {id:'campaign-resumed',label:'Maintenance: reconnect → resumed',frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:'',error:campaignNetworkMessage,remedy:'network'}},{at:2200,feedback:campaignPending},{at:3200,feedback:maintenanceReceipt('campaign.resume',3)}]},
 

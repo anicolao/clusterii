@@ -1,0 +1,16 @@
+{
+  "test": "expired migration lease recovery fences stale workers and isolates delayed cleanup from a successful epoch",
+  "result": "passed",
+  "durationSeconds": 23.093,
+  "assertions": 86,
+  "sourceCanonicalHistory": "More than ten versions; every retained version compared",
+  "recipientSet": "Exact match, including the former member",
+  "staleWrite": "Lost migration fence",
+  "staleActivation": "Lost activation fence",
+  "staleAbort": "No replacement lease, state or receipt change",
+  "activation": "One acknowledged epoch activation",
+  "delayedCleanup": "Failed epoch 3 removed after successful epoch 4; epoch 4 head and history unchanged",
+  "services": "Firestore/Auth emulators and actual Cloud KMS",
+  "faultControl": "Test-local task delivery redirection and explicit lease expiry; production transaction and worker code unchanged",
+  "limits": "Not a hosted process-kill or Eventarc redelivery certification"
+}

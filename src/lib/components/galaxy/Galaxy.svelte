@@ -16,6 +16,9 @@
     onback,
     onleave,
     onmaintenance,
+    onmigrate,
+    realAvailable = false,
+    migration = null,
     onretry,
     message = "",
     error = "",
@@ -26,6 +29,9 @@
     onback: () => void;
     onleave?: () => void;
     onmaintenance?: () => void;
+    onmigrate?: (mode: "mock" | "real") => void;
+    realAvailable?: boolean;
+    migration?: CampaignView["migration"];
     onretry?: () => void;
     message?: string;
     error?: string;
@@ -257,6 +263,11 @@
           {busy}
           {pending}
           onchange={onmaintenance}
+          {onmigrate}
+          {realAvailable}
+          {migration}
+          mode={view.mode}
+          exposed={view.mockExposed}
         />{/if}
     </div>{/if}
   {#if listing}<div

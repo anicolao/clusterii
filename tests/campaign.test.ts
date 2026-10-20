@@ -60,3 +60,17 @@ test('maintenance freezes scheduled time and rejects admissions without changing
   expect(startCampaign(resumed,resumed.startAt!-1)).toBe(resumed);
   expect(startCampaign(resumed,resumed.startAt!).phase).toBe('active');
 });
+
+test('epoch activation resumes only paused members and permanently records mock exposure',async()=>{
+ const {createCampaign,joinOrLeave,maintainCampaign,activateEncryptionEpoch}=await import('../shared/campaign');
+ let state=createCampaign('epochs',{kind:'campaign.create',expectedRevision:0,name:'Epoch rules',capacity:4,development:true,mode:'real'},'d'.repeat(64),0);
+ state=joinOrLeave(state,{kind:'campaign.join',expectedRevision:1,faction:'heliac'},'owner',{alias:'Envoy',portrait:'G1'},0);
+ expect(()=>activateEncryptionEpoch(state,'mock',2,'owner',200)).toThrow('pause-required');
+ state=maintainCampaign(state,{kind:'campaign.pause',expectedRevision:2},'owner',100);
+ expect(()=>activateEncryptionEpoch(state,'mock',1,'owner',200)).toThrow('invalid');
+ expect(()=>activateEncryptionEpoch(state,'real',2,'owner',200)).toThrow('invalid');
+ expect(()=>activateEncryptionEpoch(state,'mock',2,'outsider',200)).toThrow('permission');
+ const mock=activateEncryptionEpoch(state,'mock',2,'owner',200);expect(mock.mockExposed).toBe(true);expect(mock.pausedAt).toBeNull();expect(mock.revision).toBe(4);
+ const paused=maintainCampaign(mock,{kind:'campaign.pause',expectedRevision:4},'owner',300);
+ const real=activateEncryptionEpoch(paused,'real',4,'owner',400);expect(real.mockExposed).toBe(true);expect(real.mode).toBe('real');expect(real.seats).toEqual(state.seats);expect(real.systems).toEqual(state.systems);
+});

@@ -32,7 +32,8 @@ const context = (
   gameId: string,
   revision: number,
   objectId: string,
-): Context => ({ gameId, revision, objectId, epoch: 1, keyVersion: 1 });
+  epoch = 1,
+): Context => ({ gameId, revision, objectId, epoch, keyVersion: 1 });
 export async function developerAccess() {
   return (
     !!auth.currentUser &&
@@ -76,6 +77,7 @@ export async function prepareCampaign(
   gameId: string,
   action: CampaignAction,
   mode: Mode,
+  epoch = 1,
 ): Promise<PendingCampaign> {
   const id = crypto.randomUUID();
   const kek =
@@ -94,7 +96,7 @@ export async function prepareCampaign(
     envelope: await provider(mode).seal(
       action,
       kek,
-      context(gameId, 0, `command:${id}`),
+      context(gameId, 0, `command:${id}`, epoch),
     ),
   };
 }
@@ -107,7 +109,7 @@ export function sendCampaign(
   return submitCommand(
     pending,
     { kind: pending.kind, envelope: pending.envelope },
-    `${["campaign.pause", "campaign.resume"].includes(pending.kind) ? "maintenanceCommands" : "commands"}/${pending.gameId}/${uid}/${pending.id}`,
+    `${pending.kind === "campaign.migrate" ? "migrationCommands" : ["campaign.pause", "campaign.resume"].includes(pending.kind) ? "maintenanceCommands" : "commands"}/${pending.gameId}/${uid}/${pending.id}`,
     ["campaignReceipts", uid, "results", pending.id],
     next,
     fail,
@@ -121,7 +123,8 @@ export async function observeCampaign(
 ) {
   const result = await httpsCallable<
     { gameId: string },
-    { joined: false } | { joined: true; kek: string; mode: string }
+    | { joined: false }
+    | { joined: true; kek: string; mode: string; epoch: number }
   >(
     functions,
     "campaignKey",
@@ -130,14 +133,15 @@ export async function observeCampaign(
     next(null);
     return () => {};
   }
-  const access = result.data;
+  let access = result.data;
   if (access.mode !== "mock" && access.mode !== "real")
     throw new Error("Unsupported campaign encryption");
-  const mode = access.mode;
+
   let active = true;
   let serial = 0;
   const stop = onSnapshot(
     doc(firestore, "campaignViews", gameId, "members", uid),
+    { includeMetadataChanges: true },
     (snapshot) => {
       const version = ++serial;
       if (!snapshot.exists()) return;
@@ -146,17 +150,59 @@ export async function observeCampaign(
         grant: Grant;
         envelope: Envelope;
       };
-      const ctx = context(gameId, data.revision, `member:${uid}`);
-      void unwrap(data.grant, access.kek, uid, ctx, mode)
-        .then((key) =>
-          provider(mode).open<CampaignView>(data.envelope, key, ctx),
+      // An initial cached version can precede the freshly recovered server epoch.
+      // Wait for its server snapshot instead of attempting to decrypt across epochs.
+      if (
+        snapshot.metadata.fromCache &&
+        (data.envelope.epoch !== access.epoch ||
+          data.envelope.mode !== access.mode)
+      )
+        return;
+      void (async () => {
+        if (
+          data.envelope.epoch !== access.epoch ||
+          data.envelope.mode !== access.mode
+        ) {
+          const refreshed = await httpsCallable<
+            { gameId: string },
+            | { joined: false }
+            | { joined: true; kek: string; mode: string; epoch: number }
+          >(
+            functions,
+            "campaignKey",
+          )({ gameId });
+          if (!refreshed.data.joined) {
+            if (active && serial === version) next(null);
+            return;
+          }
+          if (!active || serial !== version) return;
+          access = refreshed.data;
+        }
+        if (access.mode !== "mock" && access.mode !== "real")
+          throw new Error("Unsupported campaign encryption");
+        if (
+          data.envelope.epoch !== access.epoch ||
+          data.envelope.mode !== access.mode
         )
-        .then((view) => {
-          if (active && serial === version) next(view);
-        })
-        .catch((error) => {
-          if (active) fail(error);
-        });
+          throw new Error(
+            "Campaign encryption changed; reconnect to recover its current keys.",
+          );
+        const ctx = context(
+          gameId,
+          data.revision,
+          `member:${uid}`,
+          access.epoch,
+        );
+        const key = await unwrap(data.grant, access.kek, uid, ctx, access.mode);
+        const view = await provider(access.mode).open<CampaignView>(
+          data.envelope,
+          key,
+          ctx,
+        );
+        if (active && serial === version) next(view);
+      })().catch((error) => {
+        if (active && serial === version) fail(error);
+      });
     },
     (error) => {
       if (active) {
