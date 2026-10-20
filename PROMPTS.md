@@ -189,3 +189,7 @@ We had a prior partial implementation in ../cluster. We probably want to preserv
 ## Prompt 7: Art Direction
 
 You are going to be in charge of artistic and UX direction for this project. You'll need a new worktree to design in. Review the art style and overall plan in the old cluster project, but don't be constrained by it. For starters, let's make an art board of faction leaders, in at least 4 different art styles for us to choose between. Also generate some space ship and planetary space art in these art styles. Our goal is to choose an artistic direction before we start in on UX design. The old cluster project is in ../cluster, let's put our new art direction stuff in docs/art/ART_DIRECTION_OPTIONS.md and choose any logical location for generated images.
+
+## Prompt 8: Plan Full Implementation
+
+We are reviewign this summary. Write an IMPLEMENTATION_PLAN.md to lay out the steps to implement this game in full.
