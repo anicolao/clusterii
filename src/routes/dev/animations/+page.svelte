@@ -1,0 +1,219 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+  import { base } from "$app/paths";
+  import Feedback from "$lib/components/Feedback.svelte";
+  import ActionButton from "$lib/components/ActionButton.svelte";
+  import NameField from "$lib/components/NameField.svelte";
+  import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import { scenarios, duration } from "./scenarios";
+  let selected = $state("accepted");
+  let time = $state(0);
+  let speed = $state(1);
+  let playing = $state(false);
+  const scenario = $derived(scenarios.find((s) => s.id === selected)!);
+  const frame = $derived(
+    [...scenario.frames].reverse().find((f) => f.at <= time)!,
+  );
+  function reset() {
+    time = 0;
+    playing = false;
+  }
+  function replay() {
+    time = 0;
+    playing = true;
+  }
+  onMount(() => {
+    let id = 0;
+    let previous = performance.now();
+    function update(now: number) {
+      if (playing) {
+        time = Math.min(duration, time + (now - previous) * speed);
+        if (time === duration) playing = false;
+      }
+      previous = now;
+      id = requestAnimationFrame(update);
+    }
+    id = requestAnimationFrame(update);
+    return () => cancelAnimationFrame(id);
+  });
+</script>
+
+<svelte:head
+  ><title>Animation lab — Cluster</title><meta
+    name="robots"
+    content="noindex"
+  /></svelte:head
+>
+<div class="lab">
+  <header>
+    <p class="overline gold">Developer review</p>
+    <h1>Identity feedback lab</h1>
+    <p>
+      Deterministic production-component scenarios. Shared profile validation
+      produces the accepted/rejected outcomes. Playback changes presentation
+      time only; no service or game state is fabricated.
+    </p>
+    <nav>
+      <a href={`${base}/gallery/`}>Component gallery</a><a href={`${base}/`}
+        >Player entry</a
+      >
+    </nav>
+  </header>
+  <section class="controls" aria-label="Playback controls">
+    <label
+      >Scenario<select
+        aria-label="Scenario"
+        bind:value={selected}
+        onchange={reset}
+        >{#each scenarios as item}<option value={item.id}>{item.label}</option
+          >{/each}</select
+      ></label
+    >
+    <label
+      >Playback speed<select bind:value={speed}
+        ><option value={0.25}>¼×</option><option value={0.5}>½×</option><option
+          value={1}>1×</option
+        ><option value={2}>2×</option></select
+      ></label
+    >
+    <ActionButton class="primary" onclick={replay}>Replay</ActionButton
+    ><ActionButton class="secondary" onclick={() => (playing = !playing)}
+      >{playing ? "Pause" : "Resume"}</ActionButton
+    ><ActionButton class="secondary" onclick={reset}>Reset</ActionButton>
+    <label class="seek"
+      >Inspect frame: {Math.round(time)} ms<input
+        type="range"
+        min="0"
+        max={duration}
+        step="1"
+        bind:value={time}
+        oninput={() => (playing = false)}
+      /></label
+    >
+  </section>
+  <div class="comparison">
+    {#each [false, true] as reduced}<section
+        class="specimen"
+        aria-label={reduced
+          ? "Reduced motion comparison"
+          : "Standard motion comparison"}
+      >
+        <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
+        <p class="overline">Same outcome · {frame.feedback.remedy}</p>
+        <NameField
+          id={reduced ? "reduced-name" : "standard-name"}
+          value="Preserved draft"
+          disabled={frame.feedback.message === "Sending your identity…"}
+        /><PortraitPicker
+          value="M2"
+          disabled
+          group={reduced ? "reduced-portraits" : "standard-portraits"}
+        /><Feedback
+          message={frame.feedback.message}
+          error={frame.feedback.error}
+          errorId={reduced ? "reduced-error" : "standard-error"}
+          reconnect={frame.feedback.remedy === "network"
+            ? () => {
+                time = 2200;
+                playing = true;
+              }
+            : undefined}
+          inspect={{ time: time - frame.at, reduced }}
+        />
+      </section>{/each}
+  </div>
+  <p class="explanation">
+    The 180 ms feedback reveal uses the exact animation action shipped in
+    identity. Reduced motion displays the same result immediately. Seek to a
+    transition boundary and step milliseconds to inspect opacity and movement.
+    Reconnect advances the deterministic receipt sequence; live networking is
+    tested in the emulator browser journey.
+  </p>
+</div>
+
+<style>
+  .lab {
+    max-width: 1200px;
+    margin: auto;
+    padding: 32px;
+  }
+  header {
+    max-width: 760px;
+  }
+  h1 {
+    font:
+      500 48px "Cormorant Garamond",
+      serif;
+  }
+  h2 {
+    font:
+      500 32px "Cormorant Garamond",
+      serif;
+  }
+  p {
+    line-height: 1.6;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+  a {
+    color: var(--gold);
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 16px;
+    margin: 24px 0;
+    padding: 20px;
+    border: 1px solid #6b716f;
+  }
+  .controls label {
+    display: grid;
+    gap: 8px;
+  }
+  select {
+    min-height: 48px;
+    background: #13232f;
+    color: inherit;
+    font: inherit;
+    padding: 8px;
+    border: 1px solid #6b716f;
+  }
+  .seek {
+    flex-basis: 100%;
+  }
+  .seek input {
+    min-height: 44px;
+    width: 100%;
+  }
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .specimen {
+    padding: 24px;
+    background: #091722;
+    border: 1px solid #6b716f;
+    min-width: 0;
+  }
+  .explanation {
+    max-width: 760px;
+  }
+  @media (max-width: 700px) {
+    .lab {
+      padding: 16px;
+    }
+    .comparison {
+      grid-template-columns: 1fr;
+    }
+    .specimen {
+      padding: 16px;
+    }
+    h1 {
+      font-size: 38px;
+    }
+  }
+</style>
