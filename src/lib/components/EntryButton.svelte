@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Icon from "./Icon.svelte";
   import { base } from "$app/paths";
   let {
     label,

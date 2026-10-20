@@ -1,13 +1,19 @@
 <script lang="ts">
   import { onMount, tick } from "svelte";
+  import {
+    receiptFeedback,
+    pendingMessage,
+    networkMessage,
+  } from "$lib/identity-feedback";
+  import ChapterNav from "$lib/components/ChapterNav.svelte";
+  import ActionButton from "$lib/components/ActionButton.svelte";
+  import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import NameField from "$lib/components/NameField.svelte";
+  import Feedback from "$lib/components/Feedback.svelte";
+  import Icon from "$lib/components/Icon.svelte";
   import EntryButton from "$lib/components/EntryButton.svelte";
   import { base } from "$app/paths";
-  import {
-    portraits,
-    reduceProfile,
-    type Portrait,
-    type Profile,
-  } from "@shared/profile";
+  import { reduceProfile, type Portrait, type Profile } from "@shared/profile";
   import type { Envelope } from "@shared/crypto";
   let scene = $state<"entry" | "learn" | "profile">("entry");
   let chapter = $state(0);
@@ -32,16 +38,6 @@
   let timeout: ReturnType<typeof setTimeout>;
   let generation = 0;
   let focusTitle = $state<HTMLHeadingElement>();
-  const names = [
-    "The envoy",
-    "The navigator",
-    "The tidekeeper",
-    "The deepseer",
-    "The architect",
-    "The scholar",
-    "The marshal",
-    "The emissary",
-  ];
   const chapters = [
     {
       title: "No empire wins alone",
@@ -119,8 +115,7 @@
         },
         () => {
           if (session !== generation || watch !== profileWatch) return;
-          error =
-            "Your connection was interrupted. Reconnect to recover updates; your draft is preserved.";
+          error = networkMessage;
           remedy = "network";
         },
       );
@@ -225,7 +220,7 @@
     busy = true;
     error = "";
     remedy = "none";
-    message = "Sending your identity…";
+    message = pendingMessage;
     try {
       pending ??= await service.prepareProfile(
         account,
@@ -246,17 +241,10 @@
           pending = null;
           revision = receipt.revision;
           stopReceipt();
-          if (receipt.status === "accepted")
-            message =
-              "Identity saved. Your next campaign will know you by this name.";
-          else {
-            message = "";
-            remedy = receipt.reason === "conflict" ? "conflict" : "validation";
-            error =
-              receipt.reason === "conflict"
-                ? "Another device changed your identity. Your draft is preserved. Save again to replace that version."
-                : "Choose a name of 2–24 characters and a portrait.";
-          }
+          const feedback = receiptFeedback(receipt);
+          message = feedback.message;
+          error = feedback.error;
+          remedy = feedback.remedy;
         },
         () => {
           if (session !== generation) return;
@@ -315,7 +303,7 @@
       <div class="brand">
         <p class="overline">A galaxy won together</p>
         <h1 bind:this={focusTitle} tabindex="-1">CLUSTER</h1>
-        <div class="rule" aria-hidden="true"><span>✦</span></div>
+        <div class="rule" aria-hidden="true"><Icon kind="star" /></div>
         <p class="invitation">
           The stars are vast.<br />Your empire cannot stand alone.
         </p>
@@ -348,11 +336,10 @@
   {:else if scene === "learn"}
     <section class="instrument learn" aria-label="Learn the game">
       <div class="instrument-top">
-        <span class="overline">Field guide</span><button
+        <span class="overline">Field guide</span><ActionButton
           class="quiet"
           onclick={close}
-          aria-label="Return to entry"
-          >Close <span aria-hidden="true">×</span></button
+          aria-label="Return to entry">Close <Icon kind="close" /></ActionButton
         >
       </div>
       <div class="reading">
@@ -360,38 +347,35 @@
         <h1 bind:this={focusTitle} tabindex="-1">{chapters[chapter].title}</h1>
         <p class="lead">{chapters[chapter].text}</p>
         <p>{chapters[chapter].detail}</p>
-        <div class="chapter-dots" aria-label="Chapters">
-          {#each chapters as ch, i}<button
-              class:current={i === chapter}
-              aria-label={ch.title}
-              aria-current={i === chapter ? "step" : undefined}
-              onclick={() => {
-                chapter = i;
-                focusTitle?.focus();
-              }}><span></span></button
-            >{/each}
-        </div>
+        <ChapterNav
+          labels={chapters.map((ch) => ch.title)}
+          selected={chapter}
+          onselect={(i) => {
+            chapter = i;
+            focusTitle?.focus();
+          }}
+        />
       </div>
       <div class="instrument-bottom">
-        <button
+        <ActionButton
           class="secondary"
           disabled={chapter === 0}
           onclick={() => {
             chapter--;
             focusTitle?.focus();
-          }}>Previous</button
-        >{#if chapter < 3}<button
+          }}>Previous</ActionButton
+        >{#if chapter < 3}<ActionButton
             class="primary"
             onclick={() => {
               chapter++;
               focusTitle?.focus();
-            }}>Next chapter <span aria-hidden="true">→</span></button
-          >{:else}<button
+            }}>Next chapter <Icon kind="arrow" /></ActionButton
+          >{:else}<ActionButton
             class="primary"
             data-focus="enter"
             onclick={play}
             disabled={!connected || busy}
-            >Enter the galaxy <span aria-hidden="true">↗</span></button
+            >Enter the galaxy <Icon kind="launch" /></ActionButton
           >{/if}
       </div>
       {#if error}<p role="alert" class="notice error">{error}</p>{/if}
@@ -399,9 +383,9 @@
   {:else}
     <section class="instrument identity" aria-label="Your identity">
       <div class="instrument-top">
-        <span class="overline">Your command</span><button
+        <span class="overline">Your command</span><ActionButton
           class="quiet"
-          onclick={close}>Close <span aria-hidden="true">×</span></button
+          onclick={close}>Close <Icon kind="close" /></ActionButton
         >
       </div>
       <div class="reading">
@@ -417,53 +401,27 @@
               void save();
             }}
           >
-            <label for="alias">Commander name</label><input
-              id="alias"
-              aria-invalid={remedy === "validation"}
-              aria-describedby={error ? "identity-error" : undefined}
+            <NameField
               bind:value={alias}
-              minlength="2"
-              maxlength="48"
-              required
-              autocomplete="nickname"
+              disabled={busy || pending !== null}
+              invalid={remedy === "validation"}
+              errorId={error ? "identity-error" : undefined}
+            />
+            <PortraitPicker
+              bind:value={portrait}
               disabled={busy || pending !== null}
             />
-            <fieldset disabled={busy || pending !== null}>
-              <legend>Choose your portrait</legend>
-              <div class="portraits">
-                {#each portraits as id, i}<label
-                    class:selected={portrait === id}
-                    title={names[i]}
-                    ><input
-                      type="radio"
-                      name="portrait"
-                      value={id}
-                      bind:group={portrait}
-                    /><span
-                      class="portrait-art"
-                      style={`--column:${i % 4};--row:${Math.floor(i / 4)}`}
-                      aria-hidden="true"
-                      ><img src={`${base}/art/portraits.webp`} alt="" /></span
-                    ><span class="sr-only">{names[i]}</span><span
-                      class="portrait-mark"
-                      aria-hidden="true">{portrait === id ? "✓" : ""}</span
-                    ></label
-                  >{/each}
-              </div>
-            </fieldset>
           </form>{:else}<p role="status">Retrieving your identity…</p>{/if}
-        <p class="notice" role="status">{message}</p>
-        {#if error}<p id="identity-error" class="notice error" role="alert">
-            {error}
-          </p>
-          {#if remedy === "network" && !pending}<button
-              class="secondary"
-              onclick={recover}>Reconnect</button
-            >{/if}{/if}
+        <Feedback
+          {message}
+          {error}
+          reconnect={remedy === "network" && !pending ? recover : undefined}
+        />
       </div>
       <div class="instrument-bottom">
-        <button class="quiet" onclick={leave} disabled={busy}>Sign out</button
-        ><button
+        <ActionButton class="quiet" onclick={leave} disabled={busy}
+          >Sign out</ActionButton
+        ><ActionButton
           class="primary"
           form="identity"
           type="submit"
@@ -474,7 +432,7 @@
               ? "Retry save"
               : remedy === "conflict"
                 ? "Replace saved identity"
-                : "Save identity"}<span aria-hidden="true">→</span></button
+                : "Save identity"}<Icon kind="arrow" /></ActionButton
         >
       </div>
     </section>

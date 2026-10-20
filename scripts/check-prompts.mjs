@@ -57,7 +57,22 @@ try {
     const work = git(['show', ':PROMPT_WORK.md']);
     const oldWork = base ? trackedAt(base, 'PROMPT_WORK.md') : '';
     let lines;
-    if (!args.length) {
+    const merging = !args.length && spawnSync('git', ['rev-parse', '--verify', 'MERGE_HEAD'], {stdio:'ignore'}).status === 0;
+    const inherited = new Set(oldWork.split('\n').filter(Boolean));
+    if (merging) {
+      const otherPrompt = trackedAt('MERGE_HEAD', 'PROMPTS.md');
+      if (!staged.startsWith(otherPrompt)) fail('Preserve merging prompt history byte for byte.');
+      const parents = [oldWork, trackedAt('MERGE_HEAD', 'PROMPT_WORK.md')];
+      for (const parent of parents) {
+        const prior = parent.split('\n').filter(Boolean); let cursor = 0;
+        for (const line of work.split('\n').filter(Boolean)) if (line === prior[cursor]) cursor++;
+        if (cursor !== prior.length) fail('Preserve both merging continuation histories.');
+        for (const line of prior) inherited.add(line);
+      }
+      const all = work.split('\n').filter(Boolean);
+      if (new Set(all).size !== all.length) fail('Do not duplicate continuation records.');
+      lines = all.filter(line => !inherited.has(line));
+    } else if (!args.length) {
       if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
       lines = work.slice(oldWork.length).trim().split('\n').filter(Boolean);
     } else {
@@ -72,10 +87,19 @@ try {
     // A commit appends one step; CI's explicit PR base can span several commits.
     if (!lines.length || (!args.length && lines.length !== 1)) fail('Append one unique continuation per commit.');
     const digest = createHash('sha256').update(staged).digest('hex');
+    const historical = new Set([`Prompt ${latest} | ${digest}`]);
+    if (args.length) {
+      // A PR can include continuations committed before a newer prompt arrived
+      // on its base. Accept only exact logs from its own committed ancestry.
+      for (const revision of git(['rev-list', 'HEAD', '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean)) {
+        const log = trackedAt(revision, 'PROMPTS.md');
+        if (log && staged.startsWith(log)) historical.add(`Prompt ${validateLog(log)} | ${createHash('sha256').update(log).digest('hex')}`);
+      }
+    }
     const seen = new Set(oldWork.split('\n'));
     for (const line of lines) {
       const parts = line.split(' | ');
-      if (parts.length !== 3 || parts[0] !== `Prompt ${latest}` || parts[1] !== digest
+      if (parts.length !== 3 || !historical.has(`${parts[0]} | ${parts[1]}`)
           || !/^[^\r\n]{10,200}$/.test(parts[2]) || seen.has(line)) {
         fail('Append a unique continuation for the latest prompt and exact staged log SHA-256.');
       }

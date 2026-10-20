@@ -11,7 +11,11 @@ Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | R
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Pass test metadata to the retained two-device conflict screenshot and verify its typed attachment path.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Write identity validation captures to disk before attaching them to retained browser evidence.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Preserve supervisor checkpoints and their limited independent composition and tooling acceptance.
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Extract shipped controls and feedback into a production gallery and deterministic animation inspection lab.
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Publish the stacked gallery/lab dependency and preview links with explicit remaining acceptance gates.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Retain independent hosted gallery and animation-lab review and green CI checkpoint.
 
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Record campaign privacy review and projection correction checkpoints
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Carry supervisory acceptance and privacy findings through the gallery stack
 Prompt 21 | 9fb2d2a159e38ad218c8287ac87b81244c02f272ec78034e1065684052fd4270 | Preserve supervisory composition hold and browser acceptance checkpoint
+Prompt 21 | 9fb2d2a159e38ad218c8287ac87b81244c02f272ec78034e1065684052fd4270 | Preserve exact historical prompt hashes while integrating supervisory review across stacked branches

@@ -129,3 +129,30 @@ test('stacked PR-base comparison preserves both append-only branch histories wit
  f.write(first+child+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check(),0);assert.equal(f.check('--base',base),0);
  for(const invalid of [first+child,child+parent,first+child+parent+child]){f.write(invalid,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);}
 });
+
+test('merge commit preserves both parent histories and adds exactly one new continuation', t=>{
+ const f=fixture(t);f.seed();const digest=createHash('sha256').update(initial).digest('hex');
+ const step=description=>`Prompt 1 | ${digest} | ${description}\n`;
+ const a=step('Parent first logical continuation'),b=step('Parent second logical continuation'),c=step('Child logical continuation'),d=step('Merge independent review checkpoints');
+ const common=f.git('rev-parse','HEAD').trim();
+ f.write(a+b,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Parent records');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);f.write(c,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Child record');
+ f.write(parent+'\n','.git/MERGE_HEAD');
+ for(const [value,ok] of [[c+a+b+d,true],[c+a+b,false],[c+b+a+d,false],[c+a+b+d+d,false]]){
+  f.write(value,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check()===0,ok);
+ }
+});
+
+test('PR continuations retain their exact committed prompt hash after a newer base prompt arrives', t=>{
+ const f=fixture(t);f.seed();const firstHash=createHash('sha256').update(initial).digest('hex');
+ const step=`Prompt 1 | ${firstHash} | Complete the original requested work\n`;
+ f.write(step,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Original work');
+ f.write(initial+next);f.git('add','PROMPTS.md');f.git('commit','-qm','New reviewer prompt');
+ const head=f.git('rev-parse','HEAD').trim();
+ // A base containing the new prompt but not the feature's prior continuation.
+ f.git('checkout','--orphan','new-base');f.git('rm','-f','PROMPT_WORK.md');f.git('add','PROMPTS.md');f.git('commit','-qm','New base prompt');const base=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',head);
+ assert.equal(f.check('--base',base),0);
+ // Local commits still require the latest prompt, not an old valid hash.
+ f.write(step+`Prompt 1 | ${firstHash} | Incorrect reuse of an older request\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check(),0);
+});

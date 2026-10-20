@@ -31,6 +31,8 @@ const assets = new Set(
 );
 for (const path of [
   "diagnostics/",
+  "gallery/",
+  "dev/animations/",
   "art/entry-phone.webp",
   "art/portraits.webp",
 ])
@@ -41,5 +43,5 @@ for (const url of assets) {
   if (!response.ok) throw new Error(`Missing published asset: ${url}`);
 }
 console.log(
-  `Verified ${expected}: entry, diagnostics, and ${assets.size} static asset references at ${base}`,
+  `Verified ${expected}: entry, diagnostics, gallery, animation lab, and ${assets.size} static asset references at ${base}`,
 );
