@@ -201,3 +201,7 @@ OK also review the design and implementation of ../pantheon for its ideas regard
 ## Prompt 10: Cinematic UX
 
 OK we like cinematic realism. In a level of detail and overall flow style similar to the design of ../pantheon, but without referencing it, write UX_DESIGN.md with mockups in this style.
+
+## Prompt 11: Prepare Approval
+
+this looks good, let;s make sure it is rebased on current main and ready for us to approve
