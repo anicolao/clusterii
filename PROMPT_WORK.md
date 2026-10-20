@@ -45,3 +45,5 @@ Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | L
 Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | Bind authoritative receipts to exact requests and preserve drafts when command identities collide.
 
 Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | Link the receipt review preview and record the CLI OAuth audience boundary without claiming hosted acceptance.
+
+Prompt 26 | ed9dbefdb1f53e3c8d56179a3068c9bcec7ec953741e99b43731e0f9fc736892 | Clarify that independent lint evidence belongs to the foundation checkpoint, not the receipt review.
