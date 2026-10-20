@@ -87,10 +87,19 @@ try {
     // A commit appends one step; CI's explicit PR base can span several commits.
     if (!lines.length || (!args.length && lines.length !== 1)) fail('Append one unique continuation per commit.');
     const digest = createHash('sha256').update(staged).digest('hex');
+    const historical = new Set([`Prompt ${latest} | ${digest}`]);
+    if (args.length) {
+      // A PR can include continuations committed before a newer prompt arrived
+      // on its base. Accept only exact logs from its own committed ancestry.
+      for (const revision of git(['rev-list', 'HEAD', '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean)) {
+        const log = trackedAt(revision, 'PROMPTS.md');
+        if (log && staged.startsWith(log)) historical.add(`Prompt ${validateLog(log)} | ${createHash('sha256').update(log).digest('hex')}`);
+      }
+    }
     const seen = new Set(oldWork.split('\n'));
     for (const line of lines) {
       const parts = line.split(' | ');
-      if (parts.length !== 3 || parts[0] !== `Prompt ${latest}` || parts[1] !== digest
+      if (parts.length !== 3 || !historical.has(`${parts[0]} | ${parts[1]}`)
           || !/^[^\r\n]{10,200}$/.test(parts[2]) || seen.has(line)) {
         fail('Append a unique continuation for the latest prompt and exact staged log SHA-256.');
       }
