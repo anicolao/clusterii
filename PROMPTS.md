@@ -173,3 +173,7 @@ remove verbiage like "initial" "tentative" "provisional" etc from these document
 ## Prompt 3: Adopt Prompt Hygiene
 
 let's adopt the prompt hygeine of ../beyond for this project. Review that, create PROMPTS.md and put up PR#1 for this project, which also needs a new GPLv3 public github repo created by gh
+
+## Prompt 4: Share Repository
+
+this repo should be shared with AndrewBlackledge, same as my TODO repo, he should have maximum permissions. please fix
