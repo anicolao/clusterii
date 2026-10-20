@@ -1,0 +1,22 @@
+import {test,expect} from '@playwright/test';
+import {login,geometry,grantDeveloper} from './helpers';
+for(const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['short',1280,720],['4k',3840,2160]] as const) test(`reused command identity cannot acknowledge another draft: ${label}`,async({page},info)=>{
+ await page.setViewportSize({width,height});
+ // Controlled UUID collision exercises production submission, persistence and recovery.
+ await page.addInitScript(()=>{const original=crypto.randomUUID.bind(crypto);const id=original();crypto.randomUUID=()=>id;Object.assign(window,{restoreCommandIds:()=>{crypto.randomUUID=original;}});});
+ await login(page,`receipt-${label}-${Date.now()}@example.test`);
+ await page.getByLabel('Commander name').fill('Accepted identity');await page.getByRole('button',{name:'Save identity',exact:true}).click();await expect(page.getByRole('status')).toContainText('Identity saved');
+ await page.getByLabel('Commander name').fill('Preserved new draft');await page.getByRole('button',{name:'Save identity',exact:true}).click();
+ await expect(page.getByRole('alert')).toContainText('does not match your order');await expect(page.getByLabel('Commander name')).toHaveValue('Preserved new draft');await expect(page.getByRole('button',{name:'Retry save'})).toHaveCount(0);
+ await expect(page.getByRole('alert')).toBeFocused();await expect(page.getByLabel('Commander name')).not.toHaveAttribute('aria-invalid','true');await geometry(page);const path=info.outputPath(`receipt-mismatch-${label}.png`);await page.screenshot({path});await info.attach(label,{path,contentType:'image/png'});
+ await page.evaluate(()=>{(window as unknown as {restoreCommandIds:()=>void}).restoreCommandIds();});
+ await page.getByRole('button',{name:'Save identity',exact:true}).click();await expect(page.getByRole('status')).toContainText('Identity saved');await page.reload();await page.getByRole('button',{name:'Your identity',exact:true}).click();await expect(page.getByLabel('Commander name')).toHaveValue('Preserved new draft');
+});
+
+for(const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['short',1280,720],['4k',3840,2160]] as const) test(`campaign collision preserves the proposed galaxy: ${label}`,async({page},info)=>{
+ await page.setViewportSize({width,height});const email=`campaign-receipt-${label}-${Date.now()}@example.test`;await login(page,email);await page.getByLabel('Commander name').fill('Receipt envoy');await page.getByRole('button',{name:'Save identity',exact:true}).click();await expect(page.getByRole('status')).toContainText('Identity saved');await grantDeveloper(email);await page.getByRole('button',{name:'Close',exact:true}).click();await page.getByRole('link',{name:'Open campaigns'}).click();
+ await page.evaluate(()=>{const original=crypto.randomUUID.bind(crypto);const id=original();crypto.randomUUID=()=>id;Object.assign(window,{restoreCommandIds:()=>{crypto.randomUUID=original;}});});
+ await page.getByRole('button',{name:'Create campaign',exact:true}).click();await page.getByLabel('Campaign name').fill('Original galaxy');await page.getByRole('button',{name:'Create galaxy',exact:true}).click();await expect(page.getByRole('heading',{name:'Choose your faction'})).toBeVisible();await page.getByRole('button',{name:'All campaigns',exact:true}).click();await page.getByRole('button',{name:'Create campaign',exact:true}).click();await page.getByLabel('Campaign name').fill('Preserved galaxy');await page.getByRole('button',{name:'Create galaxy',exact:true}).click();
+ await expect(page.getByRole('alert')).toContainText('does not match your order');await expect(page.getByRole('alert')).toBeFocused();await expect(page.getByLabel('Campaign name')).toHaveValue('Preserved galaxy');await expect(page.getByRole('button',{name:'Create galaxy',exact:true})).toBeEnabled();await geometry(page);await page.getByRole('alert').scrollIntoViewIfNeeded();const path=info.outputPath(`campaign-receipt-${label}.png`);await page.screenshot({path});await info.attach(label,{path,contentType:'image/png'});
+ await page.evaluate(()=>{(window as unknown as {restoreCommandIds:()=>void}).restoreCommandIds();});await page.getByRole('button',{name:'Create galaxy',exact:true}).click();await expect(page.getByRole('heading',{name:'Choose your faction'})).toBeVisible();await expect(page.getByRole('heading',{name:'Preserved galaxy',exact:true})).toBeVisible();await page.reload();await expect(page.getByRole('heading',{name:'Preserved galaxy',exact:true})).toBeVisible();
+});

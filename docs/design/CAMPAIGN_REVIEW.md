@@ -33,3 +33,9 @@ Use `node scripts/developer-access.mjs grant EMAIL` or `revoke EMAIL` from a Fir
 ## Supervisory composition correction
 
 The bfc7520 render was not visually accepted. [Exact before/after evidence](../ux/reviews/CAMPAIGN_COMPOSITION.md) records the full-screen command surface, focused join panels, persistent commitment rail and stellar presentation correction. The four-player start journey uses UI admission and a real-time scheduler event in the emulator; hosted scheduling remains separately unverified. The supervisor lifted the specific composition hold at 2ff8864; this does not approve proposed rules or certify hosted authentication/scheduling. Navigation continues in a stacked successor.
+
+## Layer privacy follow-up
+
+The Prompt 20 finding is corrected by explicit field projection: orbital control grants fighters, camps and stations; surface control grants infantry, markets and bases. Escrow is disclosed only under unified control. Systems with neither layer controlled by the recipient have no holdings record. Unknown ownership labels do not substitute for redaction. Sensor intelligence is not implemented and grants no additional fields.
+
+The serialized split-owner fixture is supplemented by all nine ownership combinations for both recipients. Changing opposing-layer values, hidden escrow or another empire's balance leaves the entire serialized recipient view unchanged. These tests establish projection non-disclosure for current fields; they do not certify database rules, key delivery, future intelligence, combat capture or the complete authorization lifecycle. Those require their own service and browser evidence. Later encryption and recovery slices are tracked in DELIVERY_REVIEW.md.

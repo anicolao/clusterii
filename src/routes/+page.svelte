@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { ReceiptMismatch } from "@shared/command-receipt";
   import { goto } from "$app/navigation";
   import {
     requestedCampaign,
@@ -54,7 +55,9 @@
   let connected = $state(false);
   let message = $state("");
   let error = $state("");
-  let remedy = $state<"none" | "network" | "conflict" | "validation">("none");
+  let remedy = $state<
+    "none" | "network" | "conflict" | "validation" | "receipt"
+  >("none");
   let profileWatch = 0;
   let history: { scene: typeof scene; control: string | null }[] = [];
   let service: typeof import("$lib/session");
@@ -327,8 +330,21 @@
           if (receipt.status === "accepted" && invitedCampaign)
             void goto(destination);
         },
-        () => {
+        (failure) => {
           if (session !== generation) return;
+          if (failure instanceof ReceiptMismatch) {
+            clearTimeout(timeout);
+            stopReceipt();
+            pending = null;
+            busy = false;
+            message = "";
+            error = failure.message;
+            remedy = "receipt";
+            void tick().then(() =>
+              document.getElementById("identity-error")?.focus(),
+            );
+            return;
+          }
           remedy = "network";
           clearTimeout(timeout);
           busy = false;

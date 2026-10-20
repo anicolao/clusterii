@@ -3,6 +3,7 @@ import { getFirestore } from "firebase-admin/firestore";
 import { setGlobalOptions } from "firebase-functions/v2";
 import { onValueCreated } from "firebase-functions/v2/database";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
+import { commandDigest } from "../../shared/command-receipt.js";
 import {
   type Envelope,
   newKey,
@@ -39,6 +40,10 @@ export const processProfile = onValueCreated(
   async (event) => {
     const { uid, commandId } = event.params;
     const incoming = event.data.val() as Envelope;
+    const requestDigest = await commandDigest(
+      `profileCommands/${uid}/${commandId}`,
+      event.data.val(),
+    );
     const receiptRef = db.doc(`profiles/${uid}/receipts/${commandId}`);
     const headRef = db.doc(`profiles/${uid}`);
     const keyRef = db.doc(`profileKeys/${uid}`);
@@ -66,6 +71,7 @@ export const processProfile = onValueCreated(
         profile = reduceProfile(revision, action);
       } catch (error) {
         tx.create(receiptRef, {
+          requestDigest,
           status: "rejected",
           revision,
           reason:
@@ -90,7 +96,11 @@ export const processProfile = onValueCreated(
       };
       tx.create(db.doc(`profiles/${uid}/versions/${revision + 1}`), view);
       tx.set(headRef, view);
-      tx.create(receiptRef, { status: "accepted", revision: revision + 1 });
+      tx.create(receiptRef, {
+        requestDigest,
+        status: "accepted",
+        revision: revision + 1,
+      });
     });
   },
 );

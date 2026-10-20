@@ -1,3 +1,4 @@
+import { commandDigest, verifyReceipt } from "../shared/command-receipt";
 import { afterAll, expect, test, spyOn } from "bun:test";
 import { initializeApp, deleteApp } from "firebase/app";
 import {
@@ -101,7 +102,10 @@ test("authenticated ingress, owner grants, replay, concurrent CAS and direct acc
     set(ref(bob.database, `profileCommands/${alice.uid}/${id}`), body),
   ).rejects.toThrow();
   await set(command, body);
-  expect((await receipt(alice, id)).status).toBe("accepted");
+  const acceptedReceipt = await receipt(alice,id);
+  expect(acceptedReceipt.status).toBe("accepted");
+  expect(acceptedReceipt.requestDigest).toBe(await commandDigest(`profileCommands/${alice.uid}/${id}`,body));
+  expect(()=>verifyReceipt(acceptedReceipt, "changed-body")).toThrow("does not match");
   await expect(set(command, body)).rejects.toThrow();
   await expect(get(command)).rejects.toThrow();
   const head = doc(alice.firestore, "profiles", alice.uid);
@@ -191,7 +195,7 @@ async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:strin
   const deadline=Date.now()+(action.kind==='campaign.migrate'?120000:20000);
   while(Date.now()<deadline){
     const result=await getDoc(doc(c.firestore,'campaignReceipts',c.uid,'results',id));
-    if(result.exists())return {receipt:result.data(),ingress,payload};
+    if(result.exists()){ const path=`${action.kind==='campaign.migrate'?'migrationCommands':['campaign.pause','campaign.resume'].includes(action.kind)?'maintenanceCommands':'commands'}/${gameId}/${c.uid}/${id}`;expect(result.get('requestDigest')).toBe(await commandDigest(path,payload));return {receipt:result.data(),ingress,payload};}
     await new Promise(r=>setTimeout(r,100));
   }
   throw new Error('No campaign receipt');
@@ -205,6 +209,7 @@ test('campaign authorization, create/join/CAS/recover/revocation use persisted p
   await expect(campaignCommand(outsider,gameId,create)).rejects.toThrow();
   const made=await campaignCommand(a,gameId,create);
   expect(made.receipt.status).toBe('accepted');
+  expect(made.receipt.requestDigest).toBe(await commandDigest(`commands/${gameId}/${a.uid}/${made.ingress.key}`,made.payload));
   // A real envelope may not borrow the inspectable profile key when no real ingress key exists.
   const forgedId=crypto.randomUUID();
   await set(ref(b.database,`commands/${gameId}/${b.uid}/${forgedId}`),{kind:'campaign.join',envelope:await provider('real').seal({kind:'campaign.join',expectedRevision:1,faction:'pelagic'},b.kek,{gameId,objectId:`command:${forgedId}`,revision:0,epoch:1,keyVersion:1})});
@@ -490,4 +495,21 @@ test.skipIf(process.env.CLUSTER_KMS_TEST==='true')('unconfigured real migration 
  expect((await campaignCommand(c,id,{kind:'campaign.migrate',expectedRevision:3,targetMode:'real'})).receipt.reason).toBe('unavailable');
  expect((await campaignCommand(c,id,{kind:'campaign.migrate',expectedRevision:3,targetMode:'mock'})).receipt.reason).toBe('invalid');
  expect((await getDoc(doc(c.firestore,'developmentCampaigns',id))).data()).toEqual(before);
+},30000);
+
+test('a command ID reused across campaigns retains its original bound receipt and cannot mutate the other campaign',async()=>{
+ const c=await client(`collision${Date.now()}`);await developer(c);await saveIdentity(c);
+ const first=crypto.randomUUID(), second=crypto.randomUUID();
+ const action:CampaignAction={kind:'campaign.create',expectedRevision:0,name:'Original request',capacity:4,mode:'mock',development:true};
+ const made=await campaignCommand(c,first,action),id=made.ingress.key!;
+ const payload={kind:action.kind,envelope:await provider('mock').seal({...action,name:'Different request'},c.kek,{gameId:second,objectId:`command:${id}`,revision:0,epoch:1,keyVersion:1})};
+ const ingress=`commands/${second}/${c.uid}/${id}`;await set(ref(c.database,ingress),payload);
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});
+ const {processCampaign}=await import('../functions/src/campaigns');
+ await processCampaign.run({params:{gameId:second,uid:c.uid,commandId:id},data:{val:()=>payload}} as never);
+ const retained=(await getDoc(doc(c.firestore,'campaignReceipts',c.uid,'results',id))).data()!;
+ expect(retained).toEqual(made.receipt);expect(()=>verifyReceipt(retained,'not-original')).toThrow('does not match');
+ const digest=await commandDigest(ingress,payload);expect(retained.requestDigest).not.toBe(digest);expect(()=>verifyReceipt(retained,digest)).toThrow('does not match');
+ expect((await getDoc(doc(c.firestore,'developmentCampaigns',second))).exists()).toBe(false);
+ expect((await getDoc(doc(c.firestore,'developmentCampaigns',first))).get('revision')).toBe(1);
 },30000);

@@ -300,3 +300,31 @@ Reviewer checkpoint 17:36 Toronto: PR #7 verification failed in run 39498918915,
 Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. Finding recorded under “Reviewer progress — 2026-10-20 18:36 Toronto”.
 
 Reviewer migration validation request: source review sees a 120-second lease, sequence/lease fencing, paged history and cleanup. Current service coverage exercises concurrent initiation, completed-task replay and corrupted-history rollback, but does not demonstrate a worker dying after claim or an expired lease being reclaimed while the old worker later returns. Before accepting migration, add targeted fault/recovery coverage for that boundary: replacement worker completes, stale worker cannot write/activate/abort the replacement, exactly one receipt/epoch activation occurs, and staged failed-attempt cleanup cannot delete a later successful epoch. Exercise history beyond the 10-record page boundary and compare complete authorized history/recipient sets after migration. Use test-level fault control with real service semantics; no production fallback or weakened fencing. Keep this in the migration slice, document precise evidence and remaining limits, and retain reviewer attribution plus latest meta-prompts.md in committed/pushed logs. No interruption of healthy current work needed; never merge.
+
+
+## Prompt 26: Reviewer Checkpoint
+
+Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. This delivered checkpoint refers to the 2026-10-20 15:46 review of ce79813; subsequent progress is recorded separately.
+
+Reviewer checkpoint: healthy progress confirmed at ce79813; independent type checks and lint pass. Updated desktop/phone entry baseline composition reviewed favorably, with remaining viewport/error/motion and hosted acceptance still open; latest CI pending. I appended the detailed checkpoint to meta-prompts.md; include it in your next related commit with the required attributed prompt/continuation record. Continue the existing plan; no need to stop current work.
+
+
+## Prompt 27: Delivered Layering
+
+Delegated instruction from the reviewer; authority is recorded in meta-prompts.md under “Supervisory takeover” and the 16:56 checkpoint. This preserves the delivered wording exactly; the earlier transcription in Prompt 22 omits the space after “captures:”. That historical entry remains unchanged.
+
+Follow-up visual review of /tmp/cluster-composition-final3 captures: full-height galaxy, slim rail and fixed Claim your seat are substantially improved. One remaining concrete issue: galaxy-phone.png renders the map label “Taiyangshou · O” over the inspector near its stellar-class/title area. Clip map HTML labels to the map viewport or layer inspector/sheets above every map label (and keep decorative layers noninteractive); test labels at the inspector boundary. Full visual acceptance remains pending that correction and final captures. The four viewport failures in cluster-composition-final3.log are duplicate campaign-name selectors after reused emulator data: give each journey a unique campaign name/ID and recover that exact campaign; do not weaken to first() or last(). The current four-player test is legitimately waiting for the next quarter-hour; no restart needed. Independent prompt-hook suite passed all 12 tests, including historical continuation validation. Preserve this review in PROMPTS.md and the next related commit.
+
+
+## Prompt 28: Composition Acceptance
+
+Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. This scoped acceptance is recorded under the 2026-10-20 17:06 checkpoint.
+
+Reviewer checkpoint at 2ff8864: inspected committed after-captures for phone galaxy/faction, map-label boundary, short desktop galaxy/faction, 4K galaxy and assigned-home desktop. The identified map-label overlap is corrected; galaxy rail and persistent join control satisfy the specific composition corrections reviewed. The composition hold for those findings is lifted. This is scoped acceptance of this development admission slice, not approval of proposed rules/map geometry, hosted scheduler/authentication, full milestones 2/3 or release. Independent npm run check and lint pass. The recorded four-player UI admission/start run passed in 6.1 minutes with distinct homes after real-time boundary and emulator scheduler HTTP delivery; this is observed run evidence, not supervisor rerun or hosted Scheduler certification. Exact latest-head CI is pending; preserve that gate. Continue the stacked navigation work and remaining plan, retaining these fixes and all prompt histories; never merge without human instruction.
+
+
+## Prompt 29: Entry Acceptance
+
+Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. This scoped acceptance refers to the 2026-10-20 17:56 checkpoint.
+
+Reviewer checkpoint at 3ab9165: independently inspected corrected active-entry captures at phone, desktop, short and 4K. Distinct Play/Continue/Learn, readable named campaign and Change campaign are present and contained; source restricts Continue to active accessible memberships and persists account-scoped selection. Returning-invitation source/test covers preserved identity revision and denied/missing recovery. Final affected logs show 8 tests passed and returning-invitation rerun 1 passed; the earlier broad run had a fixture account-lookup failure, now corrected. Independent npm run check passes. The specific PR #8 entry design hold is lifted for these reviewed corrections, while latest-head CI and hosted Google acceptance remain gates. PR #7 replacement CI is green. This is scoped acceptance, not completion of full milestones or release. Continue diagnosing secure-campaign ingress without relaxing authorization/envelope validation; no need to restart healthy work. Carry this checkpoint into the next related committed/pushed log with required attribution/continuation. Never merge.

@@ -1,0 +1,13 @@
+# Exact command acknowledgements
+
+An acknowledgement applies only to the encrypted request and admission path that produced it. Identity, campaign, maintenance and migration receipts carry a SHA-256 digest of canonical JSON containing that path and payload. Property ordering does not change the digest; command contents, recipient, game, command ID and admission channel do.
+
+The client verifies this binding before treating a receipt as accepted or rejected. A reused ID cannot acknowledge another draft or another campaign. The original receipt remains immutable and the second request has no effect. A mismatch stops that submission, preserves its draft, explains the problem and permits a fresh submission. Identity recovery focuses the explanation without marking a valid commander name invalid. Ordinary reconnect retries retain their original ID and exact encrypted payload.
+
+This extends the existing server receipt contract; it does not authenticate client-written receipts or replace database authorization. Receipts remain server-written and owner-readable. Historical receipts without a digest cannot acknowledge a new pending request. Existing clients continue to read the additional field. In-flight migration jobs from an older deployment retain their original receipt shape rather than inventing an unverifiable binding.
+
+The gallery uses the actual feedback component and the animation lab exercises the shared receipt validator. Retained captures show the production mismatch state at phone, desktop, short desktop and 4K. A controlled browser UUID collision exercises the real UI, encrypted ingress and persisted receipts; restoring UUID generation lets the player save the preserved draft and recover it after reload. Service tests cover cross-campaign ID reuse without another game mutation. The existing two-device conflict and offline retransmission journeys remain required checks.
+
+Independent rendered review and hosted real-account acceptance remain separate gates. This change does not implement reauthentication or compromise recovery; those require the account/key lifecycle defined in TECHNICAL_CONTRACT.md.
+
+Validation: 13 unit tests (155 assertions), seven default service cases (130 assertions; four live-key skips), ten live-KMS service cases (411 assertions; one unconfigured-environment skip), and four live-key migration browser journeys pass. The default recovery/gallery/lab cohort passes twelve browser tests. Type and lint checks pass. Receipt-producing backend functions are deployed. All eight final identity/campaign collision journeys pass at four sizes. Rendered inspection corrected edge-aligned error copy before retaining final captures. Independent rendered acceptance remains pending.

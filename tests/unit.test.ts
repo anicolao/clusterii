@@ -115,3 +115,14 @@ test('real envelopes and recipient grants reject substitution and never accept m
   await expect(real.open(await provider('mock').seal(value,key,context),key,context)).rejects.toThrow();
   await expect(provider('mock').open(a,key,context)).rejects.toThrow();
 });
+
+import { commandDigest, verifyReceipt } from '../shared/command-receipt';
+test('acknowledgements bind exact payload and admission path independently of JSON property order', async () => {
+ const path='commands/game/alice/id', body={kind:'campaign.join',envelope:{ciphertext:'opaque',epoch:1}};
+ const digest=await commandDigest(path,body);
+ expect(digest).toMatch(/^[a-f0-9]{64}$/);
+ expect(await commandDigest(path,{envelope:{epoch:1,ciphertext:'opaque'},kind:'campaign.join'})).toBe(digest);
+ expect(()=>verifyReceipt({requestDigest:digest},digest)).not.toThrow();
+ for(const changed of [await commandDigest('commands/other/alice/id',body),await commandDigest('maintenanceCommands/game/alice/id',body),await commandDigest(path,{...body,kind:'campaign.leave'}),await commandDigest(path,{...body,envelope:{...body.envelope,ciphertext:'changed'}})]) expect(()=>verifyReceipt({requestDigest:changed},digest)).toThrow('does not match');
+ expect(()=>verifyReceipt({},digest)).toThrow('does not match');
+});

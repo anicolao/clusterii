@@ -1,3 +1,4 @@
+import { verifyReceipt } from "@shared/command-receipt";
 import { reduceProfile, type Receipt } from '@shared/profile';
 import { receiptFeedback, pendingMessage, networkMessage } from '$lib/identity-feedback';
 // Deterministic presentation fixtures, using the production validation/reducer and receipt copy.
@@ -32,7 +33,9 @@ function maintenanceReceipt(kind:'campaign.pause'|'campaign.resume', revision:nu
 const migrationSource=maintainCampaign(seated,{kind:'campaign.pause',expectedRevision:2},'lab',100);
 const migrationResult=activateEncryptionEpoch(migrationSource,'real',2,'lab',200);
 const migrationAccepted=campaignFeedback('campaign.migrate',{status:migrationResult.encryptionEpoch===2&&migrationResult.pausedAt===null?'accepted':'rejected'});
+const mismatchedReceipt = (()=>{try {verifyReceipt({requestDigest:"original"},"different");throw new Error("Expected mismatch");} catch(error) {return {message:"",error:(error as Error).message,remedy:"receipt"};}})();
 export const scenarios = [
+ {id:"receipt-mismatch",label:"Order: mismatched acknowledgement",frames:[{at:0,feedback:pending},{at:1200,feedback:mismatchedReceipt}]},
   {id:'campaign-migrated',label:'Encryption: verified → resumed',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:migrationAccepted}]},
 
   {id:'campaign-paused',label:'Maintenance: pending → paused',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:maintenanceReceipt('campaign.pause',2)}]},

@@ -12,6 +12,7 @@ import {
   type Campaign,
   campaignDirectory,
 } from "../../shared/campaign.js";
+import { commandDigest } from "../../shared/command-receipt.js";
 import {
   type Envelope,
   type Grant,
@@ -42,6 +43,7 @@ import {
 const db = () => getFirestore();
 const pageSize = 10;
 interface Job {
+  requestDigest?: string;
   id: string;
   gameId: string;
   uid: string;
@@ -140,6 +142,10 @@ export const processCampaignMigration = onValueCreated(
   { ref: "/migrationCommands/{gameId}/{uid}/{commandId}", retry: true },
   async (event) => {
     const { gameId, uid, commandId } = event.params;
+    const requestDigest = await commandDigest(
+      `migrationCommands/${gameId}/${uid}/${commandId}`,
+      event.data.val(),
+    );
     const receipt = db().doc(`campaignReceipts/${uid}/results/${commandId}`);
     if ((await receipt.get()).exists) return;
     try {
@@ -214,6 +220,7 @@ export const processCampaignMigration = onValueCreated(
         const targetEpoch =
           Math.max(sourceEpoch, Number(counter.get("allocated") ?? 0)) + 1;
         const job: Job = {
+          requestDigest,
           id: commandId,
           gameId,
           uid,
@@ -252,6 +259,7 @@ export const processCampaignMigration = onValueCreated(
       await db().runTransaction(async (tx) => {
         if (!(await tx.get(receipt)).exists)
           tx.create(receipt, {
+            requestDigest,
             gameId,
             status: "rejected",
             reason,
@@ -541,6 +549,7 @@ export async function activate(job: Job) {
       completedAt: activatedAt,
     });
     tx.create(db().doc(`campaignReceipts/${job.uid}/results/${job.id}`), {
+      ...(job.requestDigest ? { requestDigest: job.requestDigest } : {}),
       gameId: job.gameId,
       revision: next.revision,
       status: "accepted",
@@ -572,6 +581,7 @@ export async function abort(job: Job) {
     );
     if (!receipt.exists)
       tx.create(receipt.ref, {
+        ...(job.requestDigest ? { requestDigest: job.requestDigest } : {}),
         gameId: job.gameId,
         revision: job.revision,
         status: "rejected",

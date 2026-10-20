@@ -46,6 +46,32 @@ test('split ownership omits opposing layer values from serialized views', () => 
   expect(JSON.stringify(view)).not.toMatch(/:987(?:6[5-9]|7[0-2])[,}]/);
 });
 
+test('private projections are independent of opposing-layer values for every control combination', () => {
+  let state=createCampaign('entitlements',{kind:'campaign.create',expectedRevision:0,name:'Private layers',capacity:4,mode:'mock',development:true},'e'.repeat(64),0);
+  for(const [uid,faction] of [['a','heliac'],['b','pelagic']] as const)
+    state=joinOrLeave(state,{kind:'campaign.join',expectedRevision:state.revision,faction},uid,{alias:uid,portrait:'G1'},0);
+  for(const orbit of ['a','b',null])for(const surface of ['a','b',null]) {
+    state.systems={s0000:{orbit,surface,fighters:11,camps:12,stations:13,infantry:21,markets:22,bases:23,escrowMilli:31}};
+    for(const uid of ['a','b']) {
+      const original=JSON.stringify(campaignView(state,uid));
+      const serialized=JSON.parse(original);
+      if(orbit!==uid && surface!==uid) expect(serialized.holdings).toEqual([]);
+      else {
+        const holding=serialized.holdings[0];
+        for(const field of ['fighters','camps','stations']) expect(Object.hasOwn(holding,field)).toBe(orbit===uid);
+        for(const field of ['infantry','markets','bases']) expect(Object.hasOwn(holding,field)).toBe(surface===uid);
+        expect(Object.hasOwn(holding,'escrowMilli')).toBe(orbit===uid && surface===uid);
+      }
+      const changed=structuredClone(state),system=changed.systems.s0000;
+      if(orbit!==uid) {system.fighters=99101;system.camps=99102;system.stations=99103;}
+      if(surface!==uid) {system.infantry=99201;system.markets=99202;system.bases=99203;}
+      if(orbit!==uid || surface!==uid)system.escrowMilli=99301;
+      changed.empires[uid==='a'?'b':'a']={creditsMilli:99401};
+      expect(JSON.stringify(campaignView(changed,uid))).toBe(original);
+    }
+  }
+});
+
 test('maintenance freezes scheduled time and rejects admissions without changing holdings',async()=>{
   const {createCampaign,joinOrLeave,maintainCampaign,startCampaign}=await import('../shared/campaign');
   let state=createCampaign('maintenance',{kind:'campaign.create',expectedRevision:0,name:'Maintenance',capacity:4,development:true,mode:'mock'},'c'.repeat(64),0);

@@ -41,3 +41,15 @@ Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | A
 Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Record maintenance deployment, PR 10 preview dependency and verified PR 9 publication/CI status
 
 Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | Link the migration review PR and its pending preview in the dependency table.
+
+Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | Bind authoritative receipts to exact requests and preserve drafts when command identities collide.
+
+Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | Link the receipt review preview and record the CLI OAuth audience boundary without claiming hosted acceptance.
+
+Prompt 26 | ed9dbefdb1f53e3c8d56179a3068c9bcec7ec953741e99b43731e0f9fc736892 | Clarify that independent lint evidence belongs to the foundation checkpoint, not the receipt review.
+
+Prompt 26 | ed9dbefdb1f53e3c8d56179a3068c9bcec7ec953741e99b43731e0f9fc736892 | Revalidate the already logged Prompt 20 privacy finding across both recipients and all control combinations.
+
+Prompt 28 | 778c7e1a496a181ded68e6116ad1b756a34d87e40774e85b5a7fa0486410cd53 | Recheck the already logged Prompt 23 entry corrections and reconcile their scoped acceptance status.
+
+Prompt 28 | 778c7e1a496a181ded68e6116ad1b756a34d87e40774e85b5a7fa0486410cd53 | Reconcile the already logged Prompt 24 retransmission finding with green PR 7 CI and propagated semantic coverage.
