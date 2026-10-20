@@ -209,3 +209,19 @@ this looks good, let;s make sure it is rebased on current main and ready for us 
 ## Prompt 12: Define Step Zero
 
 pull hte latest main. Review the UX_DESIGN and IMPLEMENTATION_PLAN and put up a PR for step 0 of the implementation plan for us to review.
+
+## Prompt 13: Build Production Tracer
+
+let's put step 1 on the same PR. In general, we want to always implement "tracer-bullet" style; that is, do not implement anything that isn't visible in the UI, and always implement things that are meant to survive to prdouction, never temporary scaffolding or fallbacks or mocks. the UI should be final - matching in fidelity with the mockups as closely as possible - and reducers/actions/database code should implement the full mock encryption system. I'd like to see a pr preview on setp 1 that we can click on and interact with.
+
+## Prompt 14: Link Billing
+
+Link Firebase Payment
+
+## Prompt 15: List Projects
+
+list other projects linked to this and I'll tell you what to unlink
+
+## Prompt 16: Unlink Project
+
+mbgames-478115

@@ -1,6 +1,6 @@
 # Cluster II implementation plan
 
-Build the complete slow real-time conquest game defined in [VISION.md](VISION.md) and [CLUSTER_II_MVP.md](CLUSTER_II_MVP.md). Deliver each milestone as a playable, tested increment. [CLUSTER_I_DESIGN_REVIEW.md](CLUSTER_I_DESIGN_REVIEW.md) supplies historical evidence and reuse candidates. Retain mock encryption as a per-game development provider; replace the random winner, single-owner stars, and display-only routes with the full rules.
+Build the complete slow real-time conquest game defined in [VISION.md](VISION.md) and [CLUSTER_II_MVP.md](CLUSTER_II_MVP.md). Deliver each milestone as a tested tracer bullet: a final-quality UI interaction backed by real actions, reducers, authorization, and persistence. Every implementation serves a visible interaction. Do not ship temporary scaffolding, service mocks, fabricated game state, fallback implementations, or unused infrastructure. Mock encryption remains the explicit development codec. [CLUSTER_I_DESIGN_REVIEW.md](CLUSTER_I_DESIGN_REVIEW.md) supplies historical evidence and reuse candidates. Retain mock encryption as a per-game development provider; replace the random winner, single-owner stars, and display-only routes with the full rules.
 
 This plan defines work and acceptance criteria. It does not claim that the application exists or resolve gameplay choices still under review.
 
@@ -9,7 +9,7 @@ This plan defines work and acceptance criteria. It does not claim that the appli
 | Milestone | Player-visible outcome | Depends on |
 | --- | --- | --- |
 | 0. Rules and design contract | A complete, consistent description of how to play and win | Current design review |
-| 1. Application foundation | Open a versioned browser build and sign in | Infrastructure decisions from 0 |
+| 1. Application foundation | Open the cinematic entry, learn the game, sign in, save an encrypted identity | Infrastructure decisions from 0 |
 | 2. Authoritative game service | Submit actions and recover the same game after reconnecting | 1 |
 | 3. Lobby and galaxy | Join a faction, start a game, inspect a fair generated galaxy | 0–2; selected art direction |
 | 4. Economy and construction | Develop systems, produce resources, and direct market focus | 3 |
@@ -56,11 +56,11 @@ Cinematic realism is selected. Follow [UX_DESIGN.md](UX_DESIGN.md) for the map, 
 
 ## 1. Restore the application foundation
 
-Port the static SvelteKit/TypeScript client, Threlte/three.js scene foundation, Firebase integration, and shared TypeScript modules. Inventory reused code/assets against the reviewed predecessor commit and preserve authorship and license notices. Pin compatible dependencies and declare each package's dependencies explicitly.
+Build the static SvelteKit/TypeScript client, Firebase integration, and shared TypeScript modules through the identity interaction. Add Threlte/three.js with the interactive galaxy in milestone 3. Inventory reused code/assets against the reviewed predecessor commit and preserve authorship and license notices. Pin compatible dependencies and declare each package's dependencies explicitly.
 
 Provide reproducible Bun development commands, strict type checking, Biome, unit tests, and an emulator launcher for Auth, Realtime Database, Firestore, and Functions, plus a local static server that reproduces Pages subpaths and routing. Connect all development services to their emulators. Make normal and watch builds use the same module/alias contract. Integrate checks into the existing prompt hook rather than replacing it.
 
-Restore Google sign-in and a full-screen Play/Continue/Learn entry scene. Keep version identification and operational diagnostics outside normal player copy. Build with an injected base path: `/clusterii` for production and `/clusterii/prN` for each PR. Use prerendered trailing-slash routes with query-string game IDs; make assets, links, invitations, authentication return flows, and recovery base-path aware. Do not depend on Firebase Hosting rewrites.
+Restore Google sign-in and a full-screen Play/Learn entry scene. Play opens a persistent commander identity with alias and eight portraits. Implement encrypted commands, pure validation/reduction, authoritative receipts, immutable encrypted revisions, recipient grants, authenticated key delivery, retries, and concurrent-edit rejection through this interaction. Continue appears when real campaigns exist in milestone 3. Keep version identification and operational diagnostics outside normal player copy. Build with an injected base path: `/clusterii` for production and `/clusterii/prN` for each PR. Use prerendered trailing-slash routes with query-string game IDs; make assets, links, invitations, authentication return flows, and recovery base-path aware. Do not depend on Firebase Hosting rewrites.
 
 Publish builds to GitHub Pages through a retained `gh-pages` tree. Serialize shared publishing writes, preserve unrelated destinations, and reject stale publication for a destination. Post/update the preview link and record exact commit/workflow provenance after deployment. Run publication independently of full verification, including for stacked PRs; deploy main only through the reviewed merge workflow. Define preview retention and cleanup without deleting production or other active previews.
 
@@ -86,7 +86,7 @@ Implement scheduler leases, catch-up boundaries, repeat-safe ticks, and recovery
 
 ## 3. Deliver profiles, lobby, factions, and galaxy
 
-Restore aliases and the eight avatar choices, then add mechanical faction selection. Implement authorized game creation, capacity limits, join/leave rules, start scheduling, soft archival, and exactly-once autospawn. Provide active/completed/joinable lists with clear start and next-tick information.
+Reuse the persistent alias and eight portrait choices from milestone 1, then add mechanical faction selection. Implement authorized game creation, capacity limits, join/leave rules, start scheduling, soft archival, and exactly-once autospawn. Provide active/completed/joinable lists with clear start and next-tick information.
 
 Port the spiral generator and naming data. Add a stored seed, configurable player count, sufficient home stars, legal starting assets, and checks for separation, connectivity, and equivalent access to useful stars. Extend entities to represent orbital owner, surface owner, local forces, developments, and escrow independently from the outset.
 

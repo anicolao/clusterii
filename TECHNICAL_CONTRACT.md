@@ -1,12 +1,12 @@
 # Cluster II technical contract
 
-This step 0 contract defines deployment, identity, state, encryption, and client boundaries for the MVP. It is design for review; it provisions no services and imports no predecessor data. Gameplay is specified in [RULES_SPEC.md](RULES_SPEC.md); screen and input behavior remain in [UX_DESIGN.md](UX_DESIGN.md).
+This step 0 contract defines deployment, identity, state, encryption, and client boundaries for the MVP. It defines the reviewed architecture; implementation status is recorded in README.md. No predecessor data is imported. Gameplay is specified in [RULES_SPEC.md](RULES_SPEC.md); screen and input behavior remain in [UX_DESIGN.md](UX_DESIGN.md).
 
 ## 1. Runtime and environments
 
 Use Node.js 22 for Cloud Functions, TypeScript for shared/server/client code, Bun for installation and developer commands, SvelteKit static output, and Threlte/three.js for the galaxy. Node 22 is a supported Firebase function runtime in the current [official runtime configuration](https://firebase.google.com/docs/functions/manage-functions). Exact Bun, frontend, Firebase SDK, and emulator patch versions are locked together by milestone 1's clean-install/build/emulator compatibility check; no unresolved package version is allowed into a deployment.
 
-Use a **new Firebase project for Cluster II**, distinct from `cluster-7c384`. Its repository alias is `clusterii`; the globally unique project ID is assigned and recorded during milestone 1 provisioning. Region is `us-central1` for Functions and Firestore; locate the Realtime Database in the corresponding supported US location. Production and retained previews use this project and the same canonical `/games/{id}` identity. Do not use PR number or URL base path in storage keys. A developer-only game flag and membership/roles separate test games from public campaigns. Mock games are never publicly joinable.
+Use a **new Firebase project for Cluster II**, distinct from `cluster-7c384`. Its repository alias is `clusterii`; the project ID is `clusterii-20261020`. Region is `us-central1` for Functions and Firestore; locate the Realtime Database in the corresponding supported US location. Production and retained previews use this project and the same canonical `/games/{id}` identity. Do not use PR number or URL base path in storage keys. A developer-only game flag and membership/roles separate test games from public campaigns. Mock games are never publicly joinable.
 
 Do not migrate live Cluster I games, keys, users' game history, or test fixtures. Preserve that project untouched as an archive. Reuse selected source/art with provenance. Google account authentication supplies a fresh identity in the new Firebase project; no cross-project UID continuity is assumed.
 
@@ -29,6 +29,8 @@ Use Google sign-in; gameplay has no anonymous seats. Profile contains alias and 
 Roles are `player`, `operator`, and `developer`, stored as server-controlled claims and checked again on privileged operations. Operators create/archive/pause public games and mark a corrupt game no-contest. Developers create dev games, seed fixtures in emulator environments, and migrate dev encryption modes. Neither role silently bypasses membership to read player messages through the ordinary client. Support tools are separate, access-audited server operations. The backend is trusted and technically able to process private state; this is not end-to-end secrecy from operators.
 
 A public lobby exposes its supported configuration, faction slots, alias/portrait roster, objective and fixed pair-history penalty table. Members can access public star catalogue and entitled game objects. Nonmembers cannot read gameplay objects, snapshots or activity by guessing a game ID. Former players retain only their previously authorized observations and reports, plus public results. An invitation conveys game/room choice, never another player's authentication or seat.
+
+The account identity tracer uses a separate `profile:{uid}` namespace before campaign membership exists. `/profileCommands/{uid}/{commandId}` accepts encrypted create-only commands. A transaction publishes the encrypted profile, immutable version, owner grant and receipt together. The authenticated `profileKey` endpoint recovers its mock KEK; all key documents are server-only. Account namespaces use mock mode during development. They do not create games, migrate modes, or claim real encryption. Campaign modes and migrations ship with their visible developer controls.
 
 ## 4. State, ingestion, and ordering
 
@@ -90,7 +92,7 @@ Support desktop Chrome, Firefox, and Safari, Android Chrome, and iOS Safari in t
 
 | Decision remaining | Owner and deadline | Evidence needed |
 | --- | --- | --- |
-| Unique Firebase project ID, billing, KMS binding, role bootstrap | Repository owners + milestone 1 | Recorded project metadata and least-privilege deployment identity; no provisioning in this PR. |
+| Unique Firebase project ID, billing, KMS binding, role bootstrap | Repository owners + milestone 1 | Project `clusterii-20261020` is provisioned. Local authenticated owner deploys the backend; Pages Actions holds no backend credentials. KMS and game role bootstrap remain gates for the interactions requiring them. |
 | Exact compatible package/runtime patch pins | Milestone 1 | Frozen lockfile and reproducible clean build, Pages routing, sign-in/emulator smoke checks. Node runtime family is 22. |
 | Storage chunk sizes, bounded replay budgets and rate limits | Milestone 2 | Concurrent command/recovery tests and maximum-map measurements; reject oversize input before staging. |
 | Real provider/key service correctness | Milestone 2 | Known-answer crypto tests, unauthorized/tamper/replay/substitution cases, rotation/recovery/migration review. Mock does not satisfy this gate. |

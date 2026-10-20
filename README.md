@@ -31,3 +31,15 @@ Each commit includes a new prompt or a continuation record. If one request needs
 ## License
 
 Cluster is licensed under [GNU GPL v3.0 only](LICENSE) (`GPL-3.0-only`).
+
+## Application status and development
+
+Step 1 delivers the cinematic entry, four-chapter field guide, Google sign-in, and persistent commander identity. Saving an alias and portrait sends an encrypted command through Realtime Database and a Cloud Function reducer into encrypted Firestore revisions and owner grants. The browser waits for the server receipt. Mock encryption is inspectable and provides no confidentiality; real mode fails closed. Campaigns and the galaxy follow in later milestones.
+
+The [PR #4 preview](https://anicolao.github.io/clusterii/pr4/) uses the same Firebase project as the production build: `clusterii-20261020`. Public Firebase configuration is included in the client; deployment credentials are not.
+
+Use Bun 1.3.10, Node 22, and Java 21. Run `bun install --frozen-lockfile`, `bun install --cwd functions --frozen-lockfile`, and `bun run check`. Start `bun run emulators` in one terminal and `PUBLIC_EMULATORS=true bun run dev` in another. Emulator endpoints use ports 19099/19000/18080/15001; the UI runs on 14000. Hosted mode never falls back to local state or emulators.
+
+Run `bun run test`, `bun test tests/service.test.ts` with emulators running, and `bun run test:browser`. Browser tests build `/clusterii/pr4/` and serve actual static files, exercise Google emulator sign-in and profile persistence, and compare exact screenshots. Baselines are specific to the pinned browser and operating system; review changed images before updating them.
+
+Build with `PUBLIC_BASE_PATH=/clusterii bun run build`. `node scripts/serve-pages.mjs /clusterii 4173` serves the same subpath locally. Pages publication runs independently of verification and retains sibling previews. Deploy backend changes first with `bunx firebase deploy --only firestore:rules,database,functions --project clusterii-20261020`; backend support remains compatible with retained clients.
