@@ -1,0 +1,26 @@
+name: Documentation checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  documentation:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Test prompt enforcement
+        run: node --test scripts/check-prompts.test.mjs
+      - name: Check PR prompt history
+        if: github.event_name == 'pull_request'
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/check-prompts.mjs --base "$PR_BASE_SHA"
+      - name: Check whitespace
+        run: git diff-tree --check HEAD
