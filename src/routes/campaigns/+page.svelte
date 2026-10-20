@@ -4,6 +4,7 @@
     campaignPendingMessage,
     campaignNetworkMessage,
   } from "$lib/campaign-feedback";
+  import { requestedCampaign } from "$lib/campaign-navigation";
   import { goto } from "$app/navigation";
   import { onMount, tick } from "svelte";
   import { base } from "$app/paths";
@@ -158,9 +159,7 @@
           stopMemberships();
           games = [];
           view = null;
-          const requested = new URL(location.href).searchParams.get("campaign");
-          selected =
-            requested && /^[a-f0-9-]{36}$/.test(requested) ? requested : null;
+          selected = requestedCampaign(location.search);
           pending = null;
           busy = false;
           error = "";
@@ -291,7 +290,13 @@
                 ? "Campaign testing is limited to developer accounts. Public campaigns open with secure encryption and approved rules."
                 : "Checking your account’s campaign access."}
           </p>
-          <a class="return" href={`${base}/`}>Return to entry</a>
+          <a
+            class="return"
+            href={`${base}/${selected ? `?campaign=${encodeURIComponent(selected)}` : ""}`}
+            >{access === "signed-out"
+              ? "Sign in to continue"
+              : "Return to entry"}</a
+          >
         </section>
       {:else}
         <div class="page-heading">

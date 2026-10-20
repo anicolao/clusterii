@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
+  import { requestedCampaign, campaignHref } from "$lib/campaign-navigation";
   import { onMount, tick } from "svelte";
   import {
     receiptFeedback,
@@ -20,6 +22,16 @@
   let account = $state<string | null>(null);
   let alias = $state("");
   let portrait = $state<Portrait>("G1");
+  let invitedCampaign = $state<string | null>(null);
+  let memberships = $state<string[]>([]);
+  let campaignError = $state("");
+  let stopCampaigns = () => {};
+  const destination = $derived(
+    campaignHref(
+      base,
+      invitedCampaign ?? (memberships.length === 1 ? memberships[0] : null),
+    ),
+  );
   let saved = $state<Profile | null>(null);
   let revision = 0;
   let kek = "";
@@ -127,7 +139,35 @@
       remedy = "network";
     }
   }
+  async function recoverCampaigns() {
+    if (!account) return;
+    const uid = account,
+      session = generation;
+    stopCampaigns();
+    campaignError = "";
+    try {
+      const campaigns = await import("$lib/campaign-session");
+      const allowed = await campaigns.developerAccess();
+      if (session !== generation || !allowed) return;
+      stopCampaigns = campaigns.observeMemberships(
+        uid,
+        (ids) => {
+          if (session === generation) memberships = ids;
+        },
+        () => {
+          if (session === generation)
+            campaignError =
+              "Your campaigns could not be recovered. Reconnect to try again.";
+        },
+      );
+    } catch {
+      if (session === generation)
+        campaignError =
+          "Your campaigns could not be recovered. Reconnect to try again.";
+    }
+  }
   onMount(() => {
+    invitedCampaign = requestedCampaign(location.search);
     let disposed = false;
     let stopAuth = () => {};
     void import("$lib/session")
@@ -141,6 +181,9 @@
           error = "";
           remedy = "none";
           stopProfile();
+          stopCampaigns();
+          memberships = [];
+          campaignError = "";
           stopReceipt();
           clearTimeout(timeout);
           kek = "";
@@ -153,6 +196,7 @@
           revision = 0;
           account = user?.uid ?? null;
           if (!user) return;
+          void recoverCampaigns();
           await recover();
         });
       })
@@ -163,12 +207,20 @@
       disposed = true;
       generation++;
       stopAuth();
+      stopCampaigns();
       stopProfile();
       stopReceipt();
       clearTimeout(timeout);
     };
   });
   async function play() {
+    if (
+      saved &&
+      (invitedCampaign || (scene === "entry" && memberships.length))
+    ) {
+      await goto(destination);
+      return;
+    }
     if (account) {
       open("profile");
       return;
@@ -245,6 +297,8 @@
           message = feedback.message;
           error = feedback.error;
           remedy = feedback.remedy;
+          if (receipt.status === "accepted" && invitedCampaign)
+            void goto(destination);
         },
         () => {
           if (session !== generation) return;
@@ -310,7 +364,13 @@
       </div>
       <div class="entry-actions">
         <EntryButton
-          label={busy ? "Opening the gates…" : "Play"}
+          label={busy
+            ? "Opening the gates…"
+            : saved && invitedCampaign
+              ? "Open campaign"
+              : saved && memberships.length
+                ? "Continue"
+                : "Play"}
           illustration="planet"
           focusId="play"
           onclick={play}
@@ -324,7 +384,14 @@
         />
         {#if saved && !busy && !pending}<a
             class="campaign-link"
-            href={`${base}/campaigns/`}>Open campaigns <Icon kind="arrow" /></a
+            href={campaignHref(base, invitedCampaign)}
+            >{invitedCampaign ? "Open invited campaign" : "Open campaigns"}
+            <Icon kind="arrow" /></a
+          >{/if}
+        {#if saved && (memberships.length || invitedCampaign)}<ActionButton
+            class="quiet"
+            data-focus="identity"
+            onclick={() => open("profile")}>Your identity</ActionButton
           >{/if}
         {#if account}<p class="signed">
             {saved ? `Welcome back, ${saved.alias}` : "Your command awaits"}
@@ -332,6 +399,10 @@
             Conquest · Diplomacy · Shared victory
           </p>{/if}
       </div>
+      {#if campaignError}<Feedback
+          error={campaignError}
+          reconnect={recoverCampaigns}
+        />{/if}
       {#if error}<p class="notice error" role="alert">{error}</p>{/if}
     </section>
     <p class="world-caption" aria-hidden="true">

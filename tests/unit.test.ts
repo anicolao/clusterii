@@ -68,3 +68,11 @@ test("profile reducer validates data and rejects lost updates", () => {
     }),
   ).toThrow();
 });
+
+import {requestedCampaign, campaignHref} from '../src/lib/campaign-navigation';
+test('campaign sign-in return accepts only canonical IDs and retains the preview base',()=>{
+  const id='12345678-1234-4321-9876-123456789abc';
+  expect(requestedCampaign(`?campaign=${id}`)).toBe(id);
+  expect(campaignHref('/clusterii/pr8',id)).toBe(`/clusterii/pr8/campaigns/?campaign=${id}`);
+  for(const unsafe of ['https://example.test','//example.test','../admin','-'.repeat(36),'123',''])expect(requestedCampaign(`?campaign=${encodeURIComponent(unsafe)}`)).toBe(null);
+});

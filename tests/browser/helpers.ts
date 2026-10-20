@@ -1,6 +1,6 @@
 import { expect, type Page } from "@playwright/test";
-export async function login(page: Page, email: string) {
-  await page.goto("./");
+export async function login(page: Page, email: string, destination = "./") {
+  await page.goto(destination);
   const opening = page.waitForEvent("popup");
   await page.getByRole("button", { name: "Play", exact: true }).click();
   const popup = await opening;
