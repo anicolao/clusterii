@@ -9,7 +9,8 @@ async function capture(page: Page, name: string) {
   await settled(page);
   const play = page.getByRole("button", { name: "Play", exact: true });
   if (await play.count()) await expect(play).toBeEnabled();
-  await expect(page).toHaveScreenshot(`${name}.png`, {
+  // Collect every changed screen; any mismatch still fails the journey.
+  await expect.soft(page).toHaveScreenshot(`${name}.png`, {
     animations: "disabled",
   });
   const overflow = await page.evaluate(

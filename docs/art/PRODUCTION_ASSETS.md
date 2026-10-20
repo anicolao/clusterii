@@ -1,6 +1,6 @@
 # Production asset provenance
 
-The entry and identity artwork was generated for Cluster on 2026-10-20 with OpenAI image generation. The approved [entry composition](../ux/concepts/01-entry.png) supplied the desktop and phone reference. The original generated PNGs are retained in [source](source/); lossless composition is preserved in the quality-88/90 WebP encodings under `static/art/`. Portraits use a four-by-two CSS atlas with semantic radio controls. Text, buttons, focus, selection, and state are rendered by the application.
+The entry and identity artwork was generated for Cluster on 2026-10-20 with OpenAI image generation. The approved [entry composition](../ux/concepts/01-entry.png) supplied the desktop and phone reference. The original generated PNGs are retained in [source](source/); composition is preserved in the quality-88/90 WebP encodings under `static/art/`. Portraits use a four-by-two CSS atlas with semantic radio controls. Text, buttons, focus, selection, and state are rendered by the application.
 
 No predecessor application code or portrait artwork is copied. The eight portrait IDs preserve the existing identity vocabulary. Cormorant Garamond and Atkinson Hyperlegible are distributed by the pinned Fontsource packages under their included SIL Open Font Licenses.
 
