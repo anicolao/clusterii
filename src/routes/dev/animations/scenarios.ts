@@ -17,7 +17,7 @@ const invalid = receiptFeedback(receipt(1, 1, 'A'.repeat(25)));
 const pending = { message: pendingMessage, error: '', remedy: 'none' };
 const reconnect = { message: '', error: networkMessage, remedy: 'network' };
 import { campaignFeedback, campaignPendingMessage, campaignNetworkMessage } from '$lib/campaign-feedback';
-import { createCampaign, joinOrLeave, maintainCampaign, activateEncryptionEpoch } from '@shared/campaign';
+import { createCampaign, joinOrLeave, maintainCampaign, activateEncryptionEpoch, startCampaign, campaignDirectory } from '@shared/campaign';
 const campaign = createCampaign('lab', {kind:'campaign.create',expectedRevision:0,name:'Lab scenario',capacity:4,mode:'mock',development:true},'d'.repeat(64),0);
 function joinReceipt(revision:number) {
   try {joinOrLeave(campaign,{kind:'campaign.join',expectedRevision:revision,faction:'heliac'},'lab',{alias:'Envoy',portrait:'G1'},0);return campaignFeedback('campaign.join',{status:'accepted'});}
@@ -34,7 +34,14 @@ const migrationSource=maintainCampaign(seated,{kind:'campaign.pause',expectedRev
 const migrationResult=activateEncryptionEpoch(migrationSource,'real',2,'lab',200);
 const migrationAccepted=campaignFeedback('campaign.migrate',{status:migrationResult.encryptionEpoch===2&&migrationResult.pausedAt===null?'accepted':'rejected'});
 const mismatchedReceipt = (()=>{try {verifyReceipt({requestDigest:"original"},"different");throw new Error("Expected mismatch");} catch(error) {return {message:"",error:(error as Error).message,remedy:"receipt"};}})();
+let fullRoster=campaign;
+for (const [index,faction] of (['heliac','pelagic','vesper','dracon'] as const).entries()) fullRoster=joinOrLeave(fullRoster,{kind:'campaign.join',expectedRevision:fullRoster.revision,faction},`scheduled-${index}`,{alias:`Envoy ${index+1}`,portrait:'G1'},0);
+export function scheduledFrame(time:number) {
+  const clock=fullRoster.startAt! - 1000 + time;
+  return {game:campaignDirectory(time>=3200?startCampaign(fullRoster,clock):fullRoster),clock};
+}
 export const scenarios = [
+ {id:'campaign-start',label:'Scheduled start: delayed → assigned',frames:[{at:0,feedback:campaignPending}]},
  {id:"receipt-mismatch",label:"Order: mismatched acknowledgement",frames:[{at:0,feedback:pending},{at:1200,feedback:mismatchedReceipt}]},
   {id:'campaign-migrated',label:'Encryption: verified → resumed',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:migrationAccepted}]},
 

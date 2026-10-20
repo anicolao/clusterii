@@ -50,6 +50,16 @@ test('independent commanders start two campaigns and resume the last accessible 
     const remaining=900000-(Date.now()%900000)+100;
     console.log(`Waiting ${Math.ceil(remaining/1000)} seconds for the real campaign boundary.`);
     await new Promise(resolve=>setTimeout(resolve,remaining));
+    // Withhold delivery after the real boundary; keep the authoritative roster visible.
+    for (const page of pages) await expect(page.getByRole('region',{name:'Campaign roster',exact:true})).toContainText('Awaiting home assignment. Your seat is saved; this view updates automatically.');
+    for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k',3840,2160],['short',1280,720]] as const) {
+      await pages[0].setViewportSize({width,height});
+      const status=pages[0].getByRole('region',{name:'Campaign roster',exact:true}).getByRole('status');
+      await expect(status).toBeVisible();
+      const box=await status.boundingBox();expect(box).not.toBeNull();expect(box!.x).toBeGreaterThanOrEqual(0);expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(height);
+      expect(await pages[0].evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight)).toBe(true);
+      const path=info.outputPath(`awaiting-start-${label}.png`);await pages[0].screenshot({path});await info.attach(`Awaiting start ${label}`,{path,contentType:'image/png'});
+    }
     const response=await request.post('http://127.0.0.1:15001/demo-clusterii/us-central1/startScheduledCampaigns-0',{headers:{'X-CloudScheduler-JobName':'emulator-browser-clock','X-CloudScheduler-ScheduleTime':new Date().toISOString()}});
     expect(response.ok()).toBe(true);
     const homes=[];

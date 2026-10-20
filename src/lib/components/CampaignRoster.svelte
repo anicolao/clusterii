@@ -1,23 +1,13 @@
 <script lang="ts">
   import type { CampaignDirectory } from "@shared/campaign";
+  import CampaignStartStatus from "./CampaignStartStatus.svelte";
   import { rules } from "@shared/rules";
   let { game }: { game: CampaignDirectory } = $props();
 </script>
 
 <section class="campaign-roster" aria-label="Campaign roster">
   <h2>{game.roster.length} / {game.capacity} empires assembled</h2>
-  {#if game.pausedAt != null}<p>
-      Paused for development maintenance. Admissions and scheduled start are
-      stopped.
-    </p>{:else if game.startAt}<p>
-      {game.phase === "active" ? "Began" : "Starts"}
-      {new Date(game.startAt).toLocaleString()}. {game.phase === "scheduled"
-        ? "The server assigns home systems at the scheduled start."
-        : ""}
-    </p>{:else}<p>
-      Waiting for players. Every faction has {game.capacity / 4} seats; a full roster
-      begins at the next quarter-hour.
-    </p>{/if}
+  <CampaignStartStatus {game} />
   <ul>
     {#each rules.factions as faction}<li>
         <span class="overline gold">{faction.name}</span
@@ -38,10 +28,6 @@
       500 30px "Cormorant Garamond",
       serif;
     margin: 12px 0;
-  }
-  p {
-    line-height: 1.5;
-    color: var(--muted);
   }
   ul {
     display: grid;

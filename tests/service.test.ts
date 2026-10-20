@@ -513,3 +513,63 @@ test('a command ID reused across campaigns retains its original bound receipt an
  expect((await getDoc(doc(c.firestore,'developmentCampaigns',second))).exists()).toBe(false);
  expect((await getDoc(doc(c.firestore,'developmentCampaigns',first))).get('revision')).toBe(1);
 },30000);
+
+test('scheduled start isolates a corrupt campaign and recovers after lost completion acknowledgement',async()=>{
+  const { createRequire }=await import('node:module');
+  const require=createRequire(new URL('../functions/package.json',import.meta.url));
+  const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});
+  const db=require('firebase-admin/firestore').getFirestore();
+  const {sweepScheduledCampaigns,startDueCampaign}=await import('../functions/src/campaigns');
+  const players=await Promise.all(['heliac','pelagic','vesper','dracon'].map(async faction=>{const c=await client(`recovery-${faction}-${Date.now()}`);await developer(c);await saveIdentity(c);return c;}));
+  const ids=Array.from({length:26},()=>crypto.randomUUID()).sort();
+  for(const id of ids){
+    expect((await campaignCommand(players[0],id,{kind:'campaign.create',expectedRevision:0,name:'Recovery constellation',capacity:4,development:true,mode:'mock'})).receipt.status).toBe('accepted');
+    for(let i=0;i<4;i++)expect((await campaignCommand(players[i],id,{kind:'campaign.join',expectedRevision:i+1,faction:['heliac','pelagic','vesper','dracon'][i] as 'heliac'})).receipt.status).toBe('accepted');
+  }
+  const first=db.doc(`campaignStates/${ids[0]}`),second=db.doc(`campaignStates/${ids[1]}`);
+  const saved=(await first.get()).data();
+  const now=Math.max(saved.startAt,(await second.get()).get('startAt'))+3*900000;
+  // Storage fault, not an alternate service: all commands, transitions and publications are real.
+  await first.update({envelope:{...saved.envelope,ciphertext:'corrupted'}});
+  try {
+    const sweep=await sweepScheduledCampaigns(now);
+    expect(sweep.failed).toContain(ids[0]);
+    expect((await first.get()).get('revision')).toBe(5);
+    expect((await second.get()).get('revision')).toBe(6);
+    expect((await second.get()).get('phase')).toBe('active');
+    expect((await db.doc(`campaignStates/${ids[25]}`).get()).get('phase')).toBe('active');
+    expect(sweep.inspected).toBeGreaterThanOrEqual(26);
+  }finally{await first.set(saved);}
+  // The transaction commits, then its caller dies before acknowledging completion.
+  // Retry must observe the committed phase/revision, not assign homes again.
+  const original=db.runTransaction.bind(db);
+  let lost=false;
+  const fault=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{
+    const result=await original(...args);
+    if(!lost){lost=true;throw new Error('Lost scheduler completion');}
+    return result;
+  });
+  try {
+    let failure:unknown;try{await startDueCampaign(ids[0],now);}catch(error){failure=error;}
+    expect(failure).toBeInstanceOf(Error);expect((failure as Error).message).toBe('Lost scheduler completion');
+  }finally{fault.mockRestore();}
+  const committed=(await first.get()).data();
+  expect(committed.phase).toBe('active');expect(committed.revision).toBe(6);
+  await Promise.all([sweepScheduledCampaigns(now+900000),startDueCampaign(ids[0],now+900000)]);
+  expect((await first.get()).data()).toEqual(committed);
+  for(const id of ids){
+    const history=await db.collection(`campaignStates/${id}/versions`).get();
+    expect(history.size).toBe(6);
+    const homes:string[]=[];
+    for(const c of players){
+      const stored=(await getDoc(doc(c.firestore,'campaignViews',id,'members',c.uid))).data()!;
+      const access=(await httpsCallable<{gameId:string},{kek:string}>(c.functions,'campaignKey')({gameId:id})).data;
+      const ctx={gameId:id,objectId:`member:${c.uid}`,revision:6,epoch:1,keyVersion:1};
+      const key=await unwrap(stored.grant,access.kek,c.uid,ctx,'mock');
+      const view=await provider('mock').open<CampaignView>(stored.envelope,key,ctx);
+      expect(view.phase).toBe('active');expect(view.holdings).toHaveLength(1);homes.push(view.own.home!);
+      expect((await getDoc(doc(c.firestore,'campaignMemberships',c.uid,'games',id))).get('revision')).toBe(6);
+    }
+    expect(new Set(homes).size).toBe(4);
+  }
+},120000);

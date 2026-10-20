@@ -8,6 +8,7 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
   import {
@@ -178,6 +179,20 @@
     <section>
       <h2>Campaign roster</h2>
       <CampaignRoster game={roster} />
+      <h3>Scheduled start</h3>
+      <CampaignStartStatus
+        game={{ ...roster, phase: "scheduled", startAt: 4102444800000 }}
+      />
+      <h3>Awaiting assignment</h3>
+      <CampaignStartStatus
+        game={{ ...roster, phase: "scheduled", startAt: 1 }}
+      />
+      <h3>Paused start</h3>
+      <CampaignStartStatus
+        game={{ ...roster, phase: "scheduled", startAt: 1, pausedAt: 1 }}
+      />
+      <h3>Started</h3>
+      <CampaignStartStatus game={{ ...roster, phase: "active", startAt: 1 }} />
     </section>
     <section>
       <h2>Galaxy view controls</h2>
