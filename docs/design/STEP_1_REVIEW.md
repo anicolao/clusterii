@@ -21,3 +21,11 @@ Firebase project `clusterii-20261020` runs Node 22 functions in `us-central1`. F
 - Hosted HTTP checks verify the preview revision, static assets, diagnostics route, anonymous database denial, and unauthenticated key-service rejection. Hosted authenticated persistence awaits a real Google account session; provider configuration is deployed and verified.
 
 The step 0 rule examples and prompt-history checks remain required. Safari/Firefox device coverage, real cryptography/KMS, game roles, per-game mode controls, and campaign mechanics remain delivery gates for their associated interactions; this increment does not certify them.
+
+## Supervisory foundation corrections
+
+Profile recovery resubscribes in place and retains drafts and pending command identity. Validation focuses the name field; a conflict requires an explicit **Replace saved identity** action; network recovery reconnects or reattaches the existing receipt. A pending command is dispatched once per live session, including offline retry. Returning from the field guide or identity restores focus to its opening control.
+
+Browser evidence covers two independent sessions conflicting on the same identity, an offline save/retry/reconnect with exactly one observed transport write, keyboard restoration, explicit reduced-motion preference, and phone/desktop/4K/short identity and validation states. Geometry checks include radio targets, overlap, viewport containment, occlusion and bounded document scroll. Fresh entry captures show illustrated planet/observatory controls with real labels; phone identity rendering is unchanged. Implementer visual inspection is complete; independent supervisor review remains outstanding. Baselines alone do not establish that acceptance.
+
+[Delivery dependencies and acceptance](DELIVERY_REVIEW.md) tracks the stacked successors and unresolved rule decisions.

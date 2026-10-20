@@ -126,7 +126,7 @@ export async function prepareProfile(
 }
 export function submitProfile(
   uid: string,
-  pending: { id: string; envelope: Envelope },
+  pending: { id: string; envelope: Envelope; dispatched?: boolean },
   next: (receipt: Receipt) => void,
   fail: (error: Error) => void,
 ) {
@@ -139,13 +139,19 @@ export function submitProfile(
     },
     fail,
   );
-  void set(
-    ref(database, `profileCommands/${uid}/${pending.id}`),
-    pending.envelope,
-  ).catch((error) => {
-    // A retry can be denied because the original was accepted. Keep listening for its receipt.
-    if (active && error.code !== "PERMISSION_DENIED") fail(error);
-  });
+  if (!pending.dispatched) {
+    pending.dispatched = true;
+    void set(
+      ref(database, `profileCommands/${uid}/${pending.id}`),
+      pending.envelope,
+    ).catch((error) => {
+      // A retry can be denied because the original was accepted. Keep listening for its receipt.
+      if (error.code !== "PERMISSION_DENIED") {
+        pending.dispatched = false;
+        if (active) fail(error);
+      }
+    });
+  }
   return () => {
     active = false;
     stop();

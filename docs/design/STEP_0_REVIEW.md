@@ -1,6 +1,6 @@
 # Step 0 review — rules and design contract
 
-Based on main `90704dd` and the selected cinematic UX. This PR completes the written rules/design deliverables for step 0 and leaves them open for owner review. It does not start step 1, provision Firebase, deploy Pages, import old games, or claim balance/security validation of an implementation.
+Based on main `90704dd` and the selected cinematic UX. This PR completes the written rules/design deliverables for step 0 and leaves them open for owner review. PR #4 also implements step 1, provisions Firebase, and publishes a Pages preview; see [step 1 review](STEP_1_REVIEW.md) for implementation evidence and outstanding acceptance. No old games are imported. The rules remain proposed, and neither balance nor full hosted security acceptance is claimed.
 
 ## Read in this order
 

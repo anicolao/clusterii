@@ -1,7 +1,13 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
+  import EntryButton from "$lib/components/EntryButton.svelte";
   import { base } from "$app/paths";
-  import { portraits, type Portrait, type Profile } from "@shared/profile";
+  import {
+    portraits,
+    reduceProfile,
+    type Portrait,
+    type Profile,
+  } from "@shared/profile";
   import type { Envelope } from "@shared/crypto";
   let scene = $state<"entry" | "learn" | "profile">("entry");
   let chapter = $state(0);
@@ -17,6 +23,9 @@
   let connected = $state(false);
   let message = $state("");
   let error = $state("");
+  let remedy = $state<"none" | "network" | "conflict" | "validation">("none");
+  let profileWatch = 0;
+  let history: { scene: typeof scene; control: string | null }[] = [];
   let service: typeof import("$lib/session");
   let stopProfile = () => {};
   let stopReceipt = () => {};
@@ -63,11 +72,65 @@
         "An alliance is a commitment between players, not an automatic exchange of every secret. Shared victory rewards cooperation; the next campaign rewards finding new partners.",
     },
   ];
-  function open(next: typeof scene) {
+  async function open(next: typeof scene) {
+    history.push({
+      scene,
+      control: document.activeElement?.getAttribute("data-focus") ?? null,
+    });
     scene = next;
+    await tick();
+    focusTitle?.focus();
+  }
+  async function close() {
+    const previous = history.pop();
+    scene = previous?.scene ?? "entry";
+    await tick();
+    const control = previous?.control ?? "play";
+    document.querySelector<HTMLElement>(`[data-focus="${control}"]`)?.focus();
+  }
+  async function recover() {
+    if (!account || !service) return;
+    const uid = account;
+    const session = generation;
+    const watch = ++profileWatch;
+    stopProfile();
     error = "";
-    message = "";
-    requestAnimationFrame(() => focusTitle?.focus());
+    remedy = "none";
+    try {
+      const key = kek || (await service.loadKey());
+      if (session !== generation || watch !== profileWatch) return;
+      kek = key;
+      stopProfile = service.observeProfile(
+        uid,
+        key,
+        (profile, version) => {
+          if (session !== generation || watch !== profileWatch) return;
+          const first = !ready;
+          const dirty =
+            alias !== (saved?.alias ?? "") ||
+            portrait !== (saved?.portrait ?? "G1");
+          saved = profile;
+          ready = true;
+          if (first || (!busy && !pending && !dirty)) {
+            revision = version;
+            alias = profile?.alias ?? "";
+            portrait = profile?.portrait ?? "G1";
+          }
+        },
+        () => {
+          if (session !== generation || watch !== profileWatch) return;
+          error =
+            "Your connection was interrupted. Reconnect to recover updates; your draft is preserved.";
+          remedy = "network";
+        },
+      );
+      if (pending) await save();
+    } catch {
+      if (session !== generation || watch !== profileWatch) return;
+      error =
+        "Your identity could not be loaded. Check your connection, then reconnect. Your draft is preserved.";
+      remedy = "network";
+    }
   }
   onMount(() => {
     let disposed = false;
@@ -78,7 +141,10 @@
         service = s;
         stopAuth = s.observeAccount(async (user) => {
           connected = true;
-          const session = ++generation;
+          ++generation;
+          ++profileWatch;
+          error = "";
+          remedy = "none";
           stopProfile();
           stopReceipt();
           clearTimeout(timeout);
@@ -92,37 +158,7 @@
           revision = 0;
           account = user?.uid ?? null;
           if (!user) return;
-          try {
-            const key = await s.loadKey();
-            if (disposed || session !== generation) return;
-            kek = key;
-            stopProfile = s.observeProfile(
-              user.uid,
-              key,
-              (profile, version) => {
-                const first = !ready;
-                const dirty =
-                  alias !== (saved?.alias ?? "") ||
-                  portrait !== (saved?.portrait ?? "G1");
-                saved = profile;
-                ready = true;
-                if (first || (!busy && !dirty)) {
-                  revision = version;
-                  alias = profile?.alias ?? "";
-                  portrait = profile?.portrait ?? "G1";
-                }
-              },
-              () => {
-                error =
-                  "Your identity could not be loaded. Check your connection, then reconnect.";
-                ready = false;
-              },
-            );
-          } catch {
-            if (session === generation)
-              error =
-                "Your identity could not be loaded. Check your connection, then reconnect.";
-          }
+          await recover();
         });
       })
       .catch(() => {
@@ -171,8 +207,24 @@
   }
   async function save() {
     if (!account || !ready || busy) return;
+    if (!pending) {
+      try {
+        reduceProfile(revision, {
+          kind: "profile.set",
+          expectedRevision: revision,
+          profile: { alias, portrait },
+        });
+      } catch {
+        error = "Choose a name of 2–24 characters and a portrait.";
+        remedy = "validation";
+        document.getElementById("alias")?.focus();
+        return;
+      }
+    }
+    const session = generation;
     busy = true;
     error = "";
+    remedy = "none";
     message = "Sending your identity…";
     try {
       pending ??= await service.prepareProfile(
@@ -181,11 +233,14 @@
         { alias, portrait },
         revision,
       );
+      if (session !== generation) return;
       stopReceipt();
+      clearTimeout(timeout);
       stopReceipt = service.submitProfile(
         account,
         pending,
         (receipt) => {
+          if (session !== generation) return;
           clearTimeout(timeout);
           busy = false;
           pending = null;
@@ -196,6 +251,7 @@
               "Identity saved. Your next campaign will know you by this name.";
           else {
             message = "";
+            remedy = receipt.reason === "conflict" ? "conflict" : "validation";
             error =
               receipt.reason === "conflict"
                 ? "Another device changed your identity. Your draft is preserved. Save again to replace that version."
@@ -203,6 +259,8 @@
           }
         },
         () => {
+          if (session !== generation) return;
+          remedy = "network";
           clearTimeout(timeout);
           busy = false;
           message = "";
@@ -211,6 +269,7 @@
         },
       );
       timeout = setTimeout(() => {
+        remedy = "network";
         busy = false;
         message = "";
         error =
@@ -220,11 +279,15 @@
       busy = false;
       message = "";
       error = "Your identity could not be sent. Try again.";
+      remedy = "network";
     }
   }
   async function leave() {
     await service.logout();
-    open("entry");
+    history = [];
+    scene = "entry";
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="play"]')?.focus();
   }
 </script>
 
@@ -258,13 +321,20 @@
         </p>
       </div>
       <div class="entry-actions">
-        <button class="primary" onclick={play} disabled={!connected || busy}
-          >{busy ? "Opening the gates…" : "Play"}<span aria-hidden="true"
-            >↗</span
-          ></button
-        ><button class="secondary" onclick={() => open("learn")}
-          >Learn the game</button
-        >{#if account}<p class="signed">
+        <EntryButton
+          label={busy ? "Opening the gates…" : "Play"}
+          illustration="planet"
+          focusId="play"
+          onclick={play}
+          disabled={!connected || busy}
+        />
+        <EntryButton
+          label="Learn the game"
+          illustration="observatory"
+          focusId="learn"
+          onclick={() => open("learn")}
+        />
+        {#if account}<p class="signed">
             {saved ? `Welcome back, ${saved.alias}` : "Your command awaits"}
           </p>{:else}<p class="signed">
             Conquest · Diplomacy · Shared victory
@@ -280,7 +350,7 @@
       <div class="instrument-top">
         <span class="overline">Field guide</span><button
           class="quiet"
-          onclick={() => open("entry")}
+          onclick={close}
           aria-label="Return to entry"
           >Close <span aria-hidden="true">×</span></button
         >
@@ -318,6 +388,7 @@
             }}>Next chapter <span aria-hidden="true">→</span></button
           >{:else}<button
             class="primary"
+            data-focus="enter"
             onclick={play}
             disabled={!connected || busy}
             >Enter the galaxy <span aria-hidden="true">↗</span></button
@@ -330,8 +401,7 @@
       <div class="instrument-top">
         <span class="overline">Your command</span><button
           class="quiet"
-          onclick={() => open("entry")}
-          >Close <span aria-hidden="true">×</span></button
+          onclick={close}>Close <span aria-hidden="true">×</span></button
         >
       </div>
       <div class="reading">
@@ -349,6 +419,8 @@
           >
             <label for="alias">Commander name</label><input
               id="alias"
+              aria-invalid={remedy === "validation"}
+              aria-describedby={error ? "identity-error" : undefined}
               bind:value={alias}
               minlength="2"
               maxlength="48"
@@ -381,10 +453,13 @@
             </fieldset>
           </form>{:else}<p role="status">Retrieving your identity…</p>{/if}
         <p class="notice" role="status">{message}</p>
-        {#if error}<p class="notice error" role="alert">{error}</p>
-          <button class="secondary" onclick={() => location.reload()}
-            >Reconnect</button
-          >{/if}
+        {#if error}<p id="identity-error" class="notice error" role="alert">
+            {error}
+          </p>
+          {#if remedy === "network" && !pending}<button
+              class="secondary"
+              onclick={recover}>Reconnect</button
+            >{/if}{/if}
       </div>
       <div class="instrument-bottom">
         <button class="quiet" onclick={leave} disabled={busy}>Sign out</button
@@ -397,7 +472,9 @@
             ? "Awaiting acknowledgement…"
             : pending
               ? "Retry save"
-              : "Save identity"}<span aria-hidden="true">→</span></button
+              : remedy === "conflict"
+                ? "Replace saved identity"
+                : "Save identity"}<span aria-hidden="true">→</span></button
         >
       </div>
     </section>
