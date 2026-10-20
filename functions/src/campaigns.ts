@@ -466,7 +466,13 @@ export async function startDueCampaign(id: string, now: number) {
       tx.get(db().doc(`campaignStates/${id}`)),
       tx.get(db().doc(`campaignKeys/${id}`)),
     ]);
-    if (!head.exists || head.get("migration")) return;
+    if (
+      !head.exists ||
+      head.get("phase") !== "scheduled" ||
+      head.get("startAt") > now ||
+      head.get("migration")
+    )
+      return;
     const epoch = Number(head.get("envelope.epoch"));
     const revision = Number(head.get("revision"));
     const mode = head.get("mode") as Mode;

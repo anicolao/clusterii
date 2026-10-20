@@ -1,0 +1,25 @@
+{
+  "environment": "Auth, RTDB, Firestore and Functions emulators; explicit mock provider",
+  "campaigns": 26,
+  "queryPageSize": 25,
+  "assertions": 647,
+  "passed": 1,
+  "failed": 0,
+  "durationSeconds": 19.52,
+  "faults": [
+    "Corrupt canonical envelope isolates the first campaign while later pages start",
+    "Exception after staging transaction writes preserves revision 5 and all recipient heads",
+    "Exception after committed transaction preserves exactly revision 6 on concurrent retry"
+  ],
+  "invariants": [
+    "Six canonical versions per campaign",
+    "Four distinct homes per campaign",
+    "Authorized recipient heads and membership summaries at revision 6",
+    "Original scheduled start timestamp retained"
+  ],
+  "limits": [
+    "Controlled in-process faults, not an operating-system process kill",
+    "No hosted Cloud Scheduler redelivery certification",
+    "New sweep fault fixture uses mock mode; prior real-mode start coverage is separate"
+  ]
+}

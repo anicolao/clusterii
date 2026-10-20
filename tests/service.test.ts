@@ -540,6 +540,18 @@ test('scheduled start isolates a corrupt campaign and recovers after lost comple
     expect((await db.doc(`campaignStates/${ids[25]}`).get()).get('phase')).toBe('active');
     expect(sweep.inspected).toBeGreaterThanOrEqual(26);
   }finally{await first.set(saved);}
+  // A worker stops after staging every write but before Firestore commits any of them.
+  const transaction=db.runTransaction.bind(db);
+  const beforeCommit=spyOn(db,'runTransaction').mockImplementation((callback: (tx:unknown)=>Promise<unknown>)=>transaction(async(tx:unknown)=>{
+    await callback(tx);throw new Error('Stopped before commit');
+  }));
+  try {
+    let failure:unknown;try{await startDueCampaign(ids[0],now);}catch(error){failure=error;}
+    expect((failure as Error).message).toBe('Stopped before commit');
+  }finally{beforeCommit.mockRestore();}
+  expect((await first.get()).data()).toEqual(saved);
+  expect((await db.collection(`campaignStates/${ids[0]}/versions`).get()).size).toBe(5);
+  for(const c of players)expect((await getDoc(doc(c.firestore,'campaignViews',ids[0],'members',c.uid))).get('envelope.revision')).toBe(5);
   // The transaction commits, then its caller dies before acknowledging completion.
   // Retry must observe the committed phase/revision, not assign homes again.
   const original=db.runTransaction.bind(db);
@@ -554,7 +566,7 @@ test('scheduled start isolates a corrupt campaign and recovers after lost comple
     expect(failure).toBeInstanceOf(Error);expect((failure as Error).message).toBe('Lost scheduler completion');
   }finally{fault.mockRestore();}
   const committed=(await first.get()).data();
-  expect(committed.phase).toBe('active');expect(committed.revision).toBe(6);
+  expect(committed.phase).toBe('active');expect(committed.revision).toBe(6);expect(committed.startAt).toBe(saved.startAt);
   await Promise.all([sweepScheduledCampaigns(now+900000),startDueCampaign(ids[0],now+900000)]);
   expect((await first.get()).data()).toEqual(committed);
   for(const id of ids){
