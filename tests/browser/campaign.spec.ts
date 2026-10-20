@@ -22,6 +22,9 @@ for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k
     const commitment = page.getByRole('button',{name:'Claim your seat'});
     const assertRail = async () => {const box=await commitment.boundingBox();expect(box).not.toBeNull();expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(height);};
     await assertRail();
+    const scrollPanel=page.locator('.campaign-body');
+    expect(await scrollPanel.evaluate(el=>getComputedStyle(el).overflowY)).toBe('auto');
+    if(label==='phone'||label==='short')expect(await scrollPanel.evaluate(el=>el.scrollHeight>el.clientHeight)).toBe(true);
     await page.getByRole('button',{name:'Portrait',exact:true}).click();
     await page.getByRole('radio').last().check();
     await assertRail();
@@ -39,6 +42,21 @@ for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k
     await item.click();
     await expect(page.getByRole('complementary',{name:'Selected system'})).toContainText(accessible!.split(',')[0].replace('Select ',''));
     await geometry(page);
+    const inspectorPanel=page.getByRole('complementary',{name:'Selected system'});
+    expect(await inspectorPanel.evaluate(el=>getComputedStyle(el).backgroundColor)).toBe('rgb(7, 19, 28)');
+    expect(await page.locator('.chart').evaluate(el=>getComputedStyle(el).overflow)).toBe('hidden');
+    // Use the actual orbit controller to pan a rendered label to the inspector boundary.
+    if(label==='phone') {
+      const marker=page.locator('.star-label');const markerBox=await marker.boundingBox();const panelBox=await inspectorPanel.boundingBox();
+      if(markerBox && panelBox) {
+        const x=markerBox.x+markerBox.width/2,y=markerBox.y+markerBox.height/2;
+        await page.mouse.move(x,y);await page.mouse.down({button:'right'});await page.mouse.move(x,panelBox.y+30,{steps:8});await page.mouse.up({button:'right'});
+        const covered=await inspectorPanel.evaluate(el=>{const b=el.getBoundingClientRect();return el.contains(document.elementFromPoint(b.x+b.width/2,b.y+30));});
+        expect(covered).toBe(true);
+        const boundaryPath=info.outputPath('labels-at-inspector-boundary.png');await page.screenshot({path:boundaryPath});await info.attach('Map label clipping at inspector',{path:boundaryPath,contentType:'image/png'});
+        await page.mouse.move(x,y);await page.mouse.down({button:'right'});await page.mouse.move(x,2*y-(panelBox.y+30),{steps:8});await page.mouse.up({button:'right'});
+      }
+    }
     const surface=await page.locator('.galaxy-surface').boundingBox();expect(surface!.height).toBe(height);
     expect((await page.locator('.command-rail').boundingBox())!.height).toBeLessThanOrEqual(width >= 2400 ? 100 : 70);
     const galaxyPath=info.outputPath(`galaxy-${label}.png`);
@@ -48,6 +66,9 @@ for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k
     await expect(page.locator('canvas')).toBeVisible();
     await page.getByRole('button',{name:'Roster',exact:true}).click();
     await expect(page.getByRole('button',{name:'Leave campaign'})).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(page.getByRole('button',{name:'Roster',exact:true})).toBeFocused();
+    await page.keyboard.press('Enter');
     await page.getByRole('button',{name:'Leave campaign'}).click();
     await expect(page.getByText('Your seat has been released.')).toBeVisible();
     await expect(page.locator('canvas')).toHaveCount(0);

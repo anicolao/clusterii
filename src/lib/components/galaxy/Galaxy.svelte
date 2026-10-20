@@ -31,6 +31,44 @@
   let selected = $state("");
   let query = $state("");
   let listing = $state(false);
+  async function openPanel(kind: "roster" | "systems") {
+    roster = kind === "roster";
+    listing = kind === "systems";
+    await tick();
+    if (listing) document.getElementById("system-search")?.focus();
+    else document.querySelector<HTMLElement>(".roster-panel")?.focus();
+  }
+  async function closeRoster() {
+    roster = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="roster"]')?.focus();
+  }
+  function panelKeys(event: KeyboardEvent) {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      void (roster ? closeRoster() : closeList());
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const controls = [
+      ...(event.currentTarget as HTMLElement).querySelectorAll<HTMLElement>(
+        "button:not(:disabled),input,select,a[href]",
+      ),
+    ].filter((el) => el.getClientRects().length);
+    const first = controls[0],
+      last = controls.at(-1);
+    if (
+      event.shiftKey &&
+      (document.activeElement === first ||
+        document.activeElement === event.currentTarget)
+    ) {
+      event.preventDefault();
+      last?.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first?.focus();
+    }
+  }
   async function closeList(id?: string) {
     if (id) selected = id;
     listing = false;
@@ -53,7 +91,7 @@
 </script>
 
 <div class="galaxy-surface">
-  <header class="command-rail">
+  <header class="command-rail" inert={roster || listing}>
     <div>
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
       <span>Development · Rules under review</span>
@@ -69,11 +107,12 @@
     </div>
     <ActionButton
       class="quiet"
-      onclick={() => (roster = !roster)}
+      onclick={() => openPanel("roster")}
+      data-focus="roster"
       aria-expanded={roster}>Roster</ActionButton
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
   </header>
-  <div class="acknowledgement">
+  <div class="acknowledgement" inert={roster || listing}>
     <Feedback {message} {error} />{#if onretry}<ActionButton
         disabled={busy}
         class="secondary"
@@ -82,6 +121,7 @@
   </div>
   <div
     class="chart"
+    inert={roster || listing}
     aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
   >
     <Canvas renderMode="on-demand"
@@ -93,10 +133,20 @@
       /></Canvas
     >
   </div>
-  <aside class="system-inspector" aria-label="Selected system">
+  <aside
+    inert={roster || listing}
+    class="system-inspector"
+    aria-label="Selected system"
+  >
     <p class="overline gold">{star.class}-class star</p>
     <h2><Icon kind="star" /> {star.name}</h2>
-    <div class="system-details">
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (This bounded intelligence panel needs keyboard scrolling.) -->
+    <div
+      class="system-details"
+      role="region"
+      aria-label="System details"
+      tabindex="0"
+    >
       <StellarArt stellarClass={star.class} />
       <p>
         {view.phase === "active"
@@ -144,15 +194,22 @@
     </div>
     <ActionButton
       class="secondary"
-      onclick={() => (listing = !listing)}
+      onclick={() => openPanel("systems")}
       data-focus="systems-list"
       aria-expanded={listing}>Systems list</ActionButton
     >
   </aside>
-  {#if roster}<section class="roster-panel" aria-label="Campaign roster panel">
+  {#if roster}<div
+      class="roster-panel"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      onkeydown={panelKeys}
+      aria-label="Campaign roster panel"
+    >
       <CampaignRoster game={view} />
       <div class="roster-actions">
-        <ActionButton class="secondary" onclick={() => (roster = false)}
+        <ActionButton class="secondary" onclick={closeRoster}
           >Close roster</ActionButton
         >{#if view.phase !== "active" && onleave}<ActionButton
             class="quiet"
@@ -160,8 +217,15 @@
             onclick={onleave}>Leave campaign</ActionButton
           >{/if}
       </div>
-    </section>{/if}
-  {#if listing}<section class="systems-list" aria-label="Systems list">
+    </div>{/if}
+  {#if listing}<div
+      class="systems-list"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      onkeydown={panelKeys}
+      aria-label="Systems list"
+    >
       <label for="system-search">Find a system</label><input
         id="system-search"
         type="search"
@@ -178,7 +242,7 @@
       <ActionButton class="secondary" onclick={() => closeList()}
         >Close list</ActionButton
       >
-    </section>{/if}
+    </div>{/if}
 </div>
 
 <style>
@@ -193,6 +257,7 @@
   }
   .chart {
     isolation: isolate;
+    overflow: hidden;
     z-index: 0;
     position: absolute;
     inset: 58px 20% 0 0;
@@ -204,7 +269,7 @@
     align-items: center;
     gap: 20px;
     padding: 6px 20px;
-    background: #07131ce8;
+    background: #07131c;
     border-bottom: 1px solid #627d89;
     z-index: 4;
     min-height: 58px;
@@ -259,6 +324,10 @@
     background: #07131c;
     padding: 12px 0;
   }
+  .system-details:focus-visible {
+    outline: 2px solid #91dcec;
+    outline-offset: 2px;
+  }
   .system-details {
     overflow: auto;
     min-height: 0;
@@ -274,7 +343,7 @@
     width: 310px;
     max-height: calc(100% - 120px);
     overflow: hidden;
-    background: #07131ce8;
+    background: #07131c;
     border: 1px solid #b29e78;
     padding: 24px;
     box-shadow: 0 10px 36px #0008;
@@ -433,6 +502,10 @@
       width: auto;
       padding: 16px;
       max-height: none;
+    }
+    .system-details:focus-visible {
+      outline: 2px solid #91dcec;
+      outline-offset: 2px;
     }
     .system-details {
       overflow: auto;
