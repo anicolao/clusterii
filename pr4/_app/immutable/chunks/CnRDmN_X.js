@@ -1,0 +1,1 @@
+var e=[`G1`,`G2`,`M1`,`M2`,`A1`,`A2`,`O1`,`O2`],t=(e,t)=>({gameId:`profile:${e}`,objectId:`profile`,revision:t,epoch:1,keyVersion:1}),n=(e,n)=>({...t(e,0),objectId:`command:${n}`});export{e as n,t as r,n as t};
