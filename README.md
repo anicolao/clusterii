@@ -18,6 +18,8 @@ See [VISION.md](VISION.md) for the game’s design and experience.
 
 [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) lays out the milestones, dependencies, and acceptance criteria for the complete game.
 
+Compare faction leaders, ships and worlds in [Art direction options](docs/art/ART_DIRECTION_OPTIONS.md) before selecting the visual direction.
+
 ## Contributing
 
 Use Node.js 22 or later for the prompt checks. Install the commit hook with `git config core.hooksPath .githooks`, and run `node --test scripts/check-prompts.test.mjs` to verify enforcement. Follow [AGENTS.md](AGENTS.md) and record requests verbatim in [PROMPTS.md](PROMPTS.md).
