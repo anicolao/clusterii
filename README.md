@@ -18,6 +18,8 @@ See [VISION.md](VISION.md) for the game’s design and experience.
 
 Use Node.js 22 or later for the prompt checks. Install the commit hook with `git config core.hooksPath .githooks`, and run `node --test scripts/check-prompts.test.mjs` to verify enforcement. Follow [AGENTS.md](AGENTS.md) and record requests verbatim in [PROMPTS.md](PROMPTS.md).
 
+Each commit includes a new prompt or a continuation record. If one request needs multiple commits, create `PROMPT_WORK.md` to record the additional steps without repeating the prompt. [AGENTS.md](AGENTS.md) defines the format; the file is absent until needed.
+
 ## License
 
 Cluster is licensed under [GNU GPL v3.0 only](LICENSE) (`GPL-3.0-only`).
