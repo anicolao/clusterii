@@ -45,3 +45,18 @@ test('split ownership omits opposing layer values from serialized views', () => 
   expect(view.holdings[1]).toEqual({starId:'s0001',orbit:'Unknown',surface:'You',infantry:21,markets:22,bases:23});
   expect(JSON.stringify(view)).not.toMatch(/:987(?:6[5-9]|7[0-2])[,}]/);
 });
+
+test('maintenance freezes scheduled time and rejects admissions without changing holdings',async()=>{
+  const {createCampaign,joinOrLeave,maintainCampaign,startCampaign}=await import('../shared/campaign');
+  let state=createCampaign('maintenance',{kind:'campaign.create',expectedRevision:0,name:'Maintenance',capacity:4,development:true,mode:'mock'},'c'.repeat(64),0);
+  for(const [i,faction] of ['heliac','pelagic','vesper','dracon'].entries())state=joinOrLeave(state,{kind:'campaign.join',expectedRevision:state.revision,faction},`p${i}`,{alias:`Envoy ${i}`,portrait:'G1'},0);
+  const pause={kind:'campaign.pause',expectedRevision:state.revision};
+  expect(()=>maintainCampaign(state,pause,'outsider',100)).toThrow('permission');
+  const paused=maintainCampaign(state,pause,'p0',100);
+  expect(startCampaign(paused,10_000_000)).toBe(paused);
+  expect(()=>joinOrLeave(paused,{kind:'campaign.leave',expectedRevision:paused.revision},'p0',{alias:'Envoy',portrait:'G1'},200)).toThrow('paused');
+  const resumed=maintainCampaign(paused,{kind:'campaign.resume',expectedRevision:paused.revision},'p0',1100);
+  expect(resumed.startAt).toBe(state.startAt!+1000);expect(resumed.systems).toEqual(state.systems);
+  expect(startCampaign(resumed,resumed.startAt!-1)).toBe(resumed);
+  expect(startCampaign(resumed,resumed.startAt!).phase).toBe('active');
+});

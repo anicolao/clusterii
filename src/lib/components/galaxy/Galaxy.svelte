@@ -6,6 +6,7 @@
   import ChartControls from "./ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
   import StellarArt from "../StellarArt.svelte";
+  import CampaignMaintenance from "../CampaignMaintenance.svelte";
   import CampaignRoster from "../CampaignRoster.svelte";
   import Feedback from "../Feedback.svelte";
   import ActionButton from "../ActionButton.svelte";
@@ -14,6 +15,7 @@
     view,
     onback,
     onleave,
+    onmaintenance,
     onretry,
     message = "",
     error = "",
@@ -23,6 +25,7 @@
     view: CampaignView;
     onback: () => void;
     onleave?: () => void;
+    onmaintenance?: () => void;
     onretry?: () => void;
     message?: string;
     error?: string;
@@ -112,7 +115,11 @@
   <header class="command-rail" inert={roster || listing}>
     <div>
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
-      <span>Development · Rules under review</span>
+      <span
+        >{view.pausedAt != null
+          ? "Paused · Development maintenance"
+          : "Development · Rules under review"}</span
+      >
     </div>
     <div class="campaign-facts">
       {#if view.empire}<span
@@ -130,13 +137,14 @@
       aria-expanded={roster}>Roster</ActionButton
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
   </header>
-  <div class="acknowledgement" inert={roster || listing}>
-    <Feedback {message} {error} />{#if onretry}<ActionButton
-        disabled={busy}
-        class="secondary"
-        onclick={onretry}>{pending ? "Retry order" : "Reconnect"}</ActionButton
-      >{/if}
-  </div>
+  {#if !roster}<div class="acknowledgement" inert={listing}>
+      <Feedback {message} {error} />{#if onretry}<ActionButton
+          disabled={busy}
+          class="secondary"
+          onclick={onretry}
+          >{pending ? "Retry order" : "Reconnect"}</ActionButton
+        >{/if}
+    </div>{/if}
   <div
     class="chart"
     inert={roster || listing}
@@ -228,15 +236,28 @@
       aria-label="Campaign roster panel"
     >
       <CampaignRoster game={view} />
+      <Feedback {message} {error} />
+      {#if onretry}<ActionButton
+          disabled={busy}
+          class="secondary"
+          onclick={onretry}
+          >{pending ? "Retry order" : "Reconnect"}</ActionButton
+        >{/if}
       <div class="roster-actions">
         <ActionButton class="secondary" onclick={closeRoster}
           >Close roster</ActionButton
         >{#if view.phase !== "active" && onleave}<ActionButton
             class="quiet"
-            disabled={busy || pending}
+            disabled={busy || pending || view.pausedAt != null}
             onclick={onleave}>Leave campaign</ActionButton
           >{/if}
       </div>
+      {#if onmaintenance}<CampaignMaintenance
+          paused={view.pausedAt != null}
+          {busy}
+          {pending}
+          onchange={onmaintenance}
+        />{/if}
     </div>{/if}
   {#if listing}<div
       class="systems-list"
@@ -345,7 +366,7 @@
     max-width: 860px;
     width: calc(100% - 48px);
     padding: 24px;
-    background: #07131cf8;
+    background: #07131c;
     border: 1px solid #9f8d66;
     z-index: 6;
     box-shadow: 0 20px 80px #000;

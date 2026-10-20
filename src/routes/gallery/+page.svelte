@@ -1,4 +1,6 @@
 <script lang="ts">
+  import CampaignMaintenance from "$lib/components/CampaignMaintenance.svelte";
+  let maintenancePaused = $state(false);
   import ChartControls from "$lib/components/galaxy/ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
   let chartClass = $state<StarClass | "all">("all");
@@ -201,6 +203,14 @@
             <Icon kind={kind as keyof typeof icons} /><code>{kind}</code>
           </div>{/each}
       </div>
+    </section>
+    <section aria-label="Campaign maintenance controls">
+      <h2>Development maintenance</h2>
+      <CampaignMaintenance
+        paused={maintenancePaused}
+        onchange={() => (maintenancePaused = !maintenancePaused)}
+      />
+      <CampaignMaintenance busy onchange={() => {}} />
     </section>
     <section>
       <h2>Asset provenance</h2>

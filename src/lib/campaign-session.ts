@@ -107,7 +107,7 @@ export function sendCampaign(
   return submitCommand(
     pending,
     { kind: pending.kind, envelope: pending.envelope },
-    `commands/${pending.gameId}/${uid}/${pending.id}`,
+    `${["campaign.pause", "campaign.resume"].includes(pending.kind) ? "maintenanceCommands" : "commands"}/${pending.gameId}/${uid}/${pending.id}`,
     ["campaignReceipts", uid, "results", pending.id],
     next,
     fail,

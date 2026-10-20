@@ -100,5 +100,6 @@ export {
   campaignKey,
   campaignSecurity,
   processCampaign,
+  processCampaignMaintenance,
   startScheduledCampaigns,
 } from "./campaigns.js";

@@ -6,7 +6,10 @@
 
 <section class="campaign-roster" aria-label="Campaign roster">
   <h2>{game.roster.length} / {game.capacity} empires assembled</h2>
-  {#if game.startAt}<p>
+  {#if game.pausedAt != null}<p>
+      Paused for development maintenance. Admissions and scheduled start are
+      stopped.
+    </p>{:else if game.startAt}<p>
       {game.phase === "active" ? "Began" : "Starts"}
       {new Date(game.startAt).toLocaleString()}. {game.phase === "scheduled"
         ? "The server assigns home systems at the scheduled start."

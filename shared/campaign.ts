@@ -36,6 +36,7 @@ export interface Campaign {
   encryptionEpoch: 1;
   createdAt: number;
   startAt: number | null;
+  pausedAt?: number | null;
   phase: "waiting" | "scheduled" | "active";
   seed: string;
   galaxy: Galaxy;
@@ -58,7 +59,10 @@ export type CampaignAction =
       faction: FactionId;
       portrait?: Portrait;
     }
-  | { kind: "campaign.leave"; expectedRevision: number };
+  | {
+      kind: "campaign.leave" | "campaign.pause" | "campaign.resume";
+      expectedRevision: number;
+    };
 export function parseCampaignAction(input: unknown): CampaignAction {
   if (!input || typeof input !== "object") throw new Error("invalid");
   const a = input as CampaignAction;
@@ -90,7 +94,10 @@ export function parseCampaignAction(input: unknown): CampaignAction {
       !rules.factions.some((f) => f.id === a.faction)
     )
       throw new Error("invalid");
-  } else if (a.kind !== "campaign.leave") throw new Error("invalid");
+  } else if (
+    !["campaign.leave", "campaign.pause", "campaign.resume"].includes(a.kind)
+  )
+    throw new Error("invalid");
   return a;
 }
 export function createCampaign(
@@ -113,6 +120,7 @@ export function createCampaign(
     mode: action.mode,
     mockExposed: action.mode === "mock",
     encryptionEpoch: 1,
+    pausedAt: null,
     createdAt: now,
     startAt: null,
     phase: "waiting",
@@ -132,6 +140,9 @@ export function joinOrLeave(
 ): Campaign {
   const a = parseCampaignAction(input);
   if (a.kind === "campaign.create") throw new Error("exists");
+  if (a.kind !== "campaign.join" && a.kind !== "campaign.leave")
+    throw new Error("invalid");
+  if (current.pausedAt != null) throw new Error("paused");
   if (
     current.phase === "active" ||
     (current.startAt !== null && now >= current.startAt)
@@ -177,8 +188,36 @@ export function joinOrLeave(
       : null,
   };
 }
+export function maintainCampaign(
+  current: Campaign,
+  input: unknown,
+  uid: string,
+  now: number,
+): Campaign {
+  const action = parseCampaignAction(input);
+  if (action.kind !== "campaign.pause" && action.kind !== "campaign.resume")
+    throw new Error("invalid");
+  if (!current.development || !current.seats.some((seat) => seat.uid === uid))
+    throw new Error("permission");
+  if (action.expectedRevision !== current.revision) throw new Error("conflict");
+  const paused = current.pausedAt != null;
+  if ((action.kind === "campaign.pause") === paused) return current;
+  if (action.kind === "campaign.pause")
+    return { ...current, pausedAt: now, revision: current.revision + 1 };
+  const delay = Math.max(0, now - (current.pausedAt ?? now));
+  return {
+    ...current,
+    pausedAt: null,
+    revision: current.revision + 1,
+    startAt:
+      current.phase === "scheduled" && current.startAt != null
+        ? current.startAt + delay
+        : current.startAt,
+  };
+}
 export function startCampaign(current: Campaign, now: number): Campaign {
   if (
+    current.pausedAt != null ||
     current.phase !== "scheduled" ||
     current.startAt === null ||
     now < current.startAt
@@ -244,6 +283,7 @@ export function campaignDirectory(state: Campaign) {
     revision: state.revision,
     phase: state.phase,
     startAt: state.startAt,
+    pausedAt: state.pausedAt ?? null,
     rulesetVersion: state.rulesetVersion,
     development: true,
     mode: state.mode,

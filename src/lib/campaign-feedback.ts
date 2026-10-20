@@ -5,6 +5,8 @@ const reasons: Record<string, string> = {
   conflict:
     "The roster changed. Review the current seats and submit your choice again.",
   full: "That faction has no seats remaining. Choose an available faction.",
+  paused:
+    "This campaign is paused for development maintenance. Your choice is preserved.",
   started: "This campaign has begun. Its roster is closed.",
   "already-joined": "You already have a seat in this campaign.",
   "profile-required": "Save your identity before joining a campaign.",
@@ -27,11 +29,15 @@ export function campaignFeedback(
     };
   return {
     message:
-      kind === "campaign.create"
-        ? "Campaign created. Choose your faction."
-        : kind === "campaign.leave"
-          ? "Your seat has been released."
-          : "Your seat is confirmed.",
+      kind === "campaign.pause"
+        ? "Campaign paused. Admissions and scheduled start are stopped."
+        : kind === "campaign.resume"
+          ? "Campaign resumed."
+          : kind === "campaign.create"
+            ? "Campaign created. Choose your faction."
+            : kind === "campaign.leave"
+              ? "Your seat has been released."
+              : "Your seat is confirmed.",
     error: "",
     remedy: null,
   };

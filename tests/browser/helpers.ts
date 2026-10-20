@@ -1,4 +1,4 @@
-import { expect, type Page } from "@playwright/test";
+import { expect, type Page, type Locator } from "@playwright/test";
 export async function login(page: Page, email: string, destination = "./") {
   await page.goto(destination);
   await authenticate(page,email);
@@ -14,8 +14,8 @@ export async function authenticate(page: Page, email: string) {
   await popup.getByLabel("Display name", { exact: true }).fill("Commander");
   await popup.getByRole("button", { name: /Sign in with/ }).click();
 }
-export async function geometry(page: Page) {
-  const targets = page.locator(
+export async function geometry(page: Page, scope: Page | Locator = page) {
+  const targets = scope.locator(
     'button, input[type="radio"], input[type="text"], input:not([type])',
   );
   for (const target of await targets.all()) {

@@ -165,13 +165,13 @@ test("authenticated ingress, owner grants, replay, concurrent CAS and direct acc
 
 import type { CampaignAction, CampaignView } from '../shared/campaign';
 import { collection, getDocs } from 'firebase/firestore';
-async function developer(c: Awaited<ReturnType<typeof client>>) {
+async function developer(c: Awaited<ReturnType<typeof client>>, enabled=true, refresh=true) {
   const result = await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:update', {
     method:'POST', headers:{'Content-Type':'application/json', Authorization:'Bearer owner'},
-    body:JSON.stringify({localId:c.uid,customAttributes:JSON.stringify({developer:true})}),
+    body:JSON.stringify({localId:c.uid,customAttributes:JSON.stringify({developer:enabled})}),
   });
   if(!result.ok)throw new Error(await result.text());
-  await c.user.getIdToken(true);
+  if(refresh) await c.user.getIdToken(true);
 }
 async function saveIdentity(c: Awaited<ReturnType<typeof client>>) {
   const id=crypto.randomUUID();
@@ -186,7 +186,7 @@ async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:strin
     expect(payload.envelope.algorithm).toBe('AES-256-GCM');expect(payload.envelope.nonce).toHaveLength(24);expect(payload.envelope.tag).toHaveLength(32);
     expect((await c.user.getIdTokenResult()).claims.developer).toBe(true);
   }
-  const ingress=ref(c.database,`commands/${gameId}/${c.uid}/${id}`);
+  const ingress=ref(c.database,`${["campaign.pause","campaign.resume"].includes(action.kind)?"maintenanceCommands":"commands"}/${gameId}/${c.uid}/${id}`);
   await set(ingress,payload);
   const deadline=Date.now()+20000;
   while(Date.now()<deadline){
@@ -260,17 +260,21 @@ for (const mode of ['mock','real'] as const) test.skipIf(mode==='real' && proces
   for(let i=0;i<4;i++)expect((await campaignCommand(players[i],gameId,{kind:'campaign.join',expectedRevision:i+1,faction:['heliac','pelagic','vesper','dracon'][i] as 'heliac'},mode)).receipt.status).toBe('accepted');
   const scheduled=await db.doc(`campaignStates/${gameId}`).get();
   expect(scheduled.get('phase')).toBe('scheduled');
-  const now=scheduled.get('startAt');
+  expect((await campaignCommand(players[0],gameId,{kind:'campaign.pause',expectedRevision:5},mode)).receipt.status).toBe('accepted');
+  await startDueCampaign(gameId,scheduled.get('startAt')+1000000);
+  expect((await db.doc(`campaignStates/${gameId}`).get()).get('revision')).toBe(6);
+  expect((await campaignCommand(players[0],gameId,{kind:'campaign.resume',expectedRevision:6},mode)).receipt.status).toBe('accepted');
+  const now=(await db.doc(`campaignStates/${gameId}`).get()).get('startAt');
   await startDueCampaign(gameId,now-1);
-  expect((await db.doc(`campaignStates/${gameId}`).get()).get('revision')).toBe(5);
+  expect((await db.doc(`campaignStates/${gameId}`).get()).get('revision')).toBe(7);
   await Promise.all([startDueCampaign(gameId,now),startDueCampaign(gameId,now)]);
   const active=await db.doc(`campaignStates/${gameId}`).get();
-  expect(active.get('revision')).toBe(6);expect(active.get('phase')).toBe('active');
+  expect(active.get('revision')).toBe(8);expect(active.get('phase')).toBe('active');
   const homes:string[]=[];
   for(const c of players){
     const stored=(await getDoc(doc(c.firestore,'campaignViews',gameId,'members',c.uid))).data()!;
     const access=(await httpsCallable<{gameId:string},{kek:string}>(c.functions,'campaignKey')({gameId})).data;
-    const ctx={gameId,objectId:`member:${c.uid}`,revision:6,epoch:1,keyVersion:1};
+    const ctx={gameId,objectId:`member:${c.uid}`,revision:8,epoch:1,keyVersion:1};
     const key=await unwrap(stored.grant,access.kek,c.uid,ctx,mode);
     const view=await provider(mode).open<CampaignView>(stored.envelope,key,ctx);
     expect(view.holdings).toHaveLength(1);expect(view.holdings[0].orbit).toBe('You');
@@ -334,4 +338,25 @@ test('upgrading a legacy mock campaign retains its historical canonical key',asy
   const history=await provider('mock').open<{name:string}>(before.get('envelope'),retained.get('legacyCanonicalKey'),{gameId,objectId:'canonical',revision:1,epoch:1,keyVersion:1});expect(history.name).toBe('Legacy history');
   await campaignCommand(c,gameId,{kind:'campaign.leave',expectedRevision:2});
   expect((await db.doc(`campaignKeys/${gameId}`).get()).get('legacyCanonicalKey')).toBe(legacyKey);
+},60000);
+
+test('maintenance admission is member/developer-only, atomic, replay-safe and persistent',async()=>{
+ const a=await client(`maintenance-${Date.now()}`),b=await client(`maintenance-outsider-${Date.now()}`);
+ await Promise.all([developer(a),developer(b)]);await Promise.all([saveIdentity(a),saveIdentity(b)]);
+ const gameId=crypto.randomUUID();await campaignCommand(a,gameId,{kind:'campaign.create',expectedRevision:0,name:'Paused service',capacity:4,mode:'mock',development:true});
+ await campaignCommand(a,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'});
+ expect((await campaignCommand(b,gameId,{kind:'campaign.pause',expectedRevision:2})).receipt.reason).toBe('permission');
+ const pair=await Promise.all([campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:2}),campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:2})]);
+ expect(pair.map(x=>x.receipt.status).sort()).toEqual(['accepted','rejected']);
+ const accepted=pair.find(x=>x.receipt.status==='accepted')!;
+ await expect(set(accepted.ingress,accepted.payload)).rejects.toThrow();
+ const directory=doc(a.firestore,'developmentCampaigns',gameId);expect((await getDoc(directory)).get('pausedAt')).toBeGreaterThan(0);expect((await getDoc(directory)).get('revision')).toBe(3);
+ expect((await campaignCommand(b,gameId,{kind:'campaign.join',expectedRevision:3,faction:'pelagic'})).receipt.reason).toBe('paused');
+ expect((await campaignCommand(a,gameId,{kind:'campaign.resume',expectedRevision:3})).receipt.status).toBe('accepted');
+ expect((await getDoc(directory)).get('pausedAt')).toBeNull();
+ expect((await campaignCommand(b,gameId,{kind:'campaign.join',expectedRevision:4,faction:'pelagic'})).receipt.status).toBe('accepted');
+ await developer(a,false,false);
+ expect((await campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:5})).receipt.reason).toBe('permission');
+ await a.user.getIdToken(true);
+ await expect(campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:5})).rejects.toThrow();
 },60000);
