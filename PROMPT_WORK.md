@@ -9,3 +9,4 @@ Prompt 17 | 61811ab2760342556138a3047ec607ba0c60c827f82b04f09ed3a9d944c29859 | R
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Keep shared Svelte components under Prettier and reserve Biome checks for TypeScript.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Record reviewed Linux entry captures and retain identity error and conflict screenshots as CI artifacts.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Pass test metadata to the retained two-device conflict screenshot and verify its typed attachment path.
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Write identity validation captures to disk before attaching them to retained browser evidence.

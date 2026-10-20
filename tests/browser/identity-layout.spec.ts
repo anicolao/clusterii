@@ -28,6 +28,9 @@ for (const [name, width, height] of [
       await document.fonts.ready;
       await Promise.all([...document.images].map((img) => img.decode()));
     });
+    await page.screenshot({
+      path: info.outputPath(`identity-${name}-validation.png`),
+    });
     await info.attach(`identity-${name}-validation`, {
       path: info.outputPath(`identity-${name}-validation.png`),
       contentType: "image/png",
