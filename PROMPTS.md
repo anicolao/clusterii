@@ -300,3 +300,10 @@ Reviewer checkpoint 17:36 Toronto: PR #7 verification failed in run 39498918915,
 Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. Finding recorded under “Reviewer progress — 2026-10-20 18:36 Toronto”.
 
 Reviewer migration validation request: source review sees a 120-second lease, sequence/lease fencing, paged history and cleanup. Current service coverage exercises concurrent initiation, completed-task replay and corrupted-history rollback, but does not demonstrate a worker dying after claim or an expired lease being reclaimed while the old worker later returns. Before accepting migration, add targeted fault/recovery coverage for that boundary: replacement worker completes, stale worker cannot write/activate/abort the replacement, exactly one receipt/epoch activation occurs, and staged failed-attempt cleanup cannot delete a later successful epoch. Exercise history beyond the 10-record page boundary and compare complete authorized history/recipient sets after migration. Use test-level fault control with real service semantics; no production fallback or weakened fencing. Keep this in the migration slice, document precise evidence and remaining limits, and retain reviewer attribution plus latest meta-prompts.md in committed/pushed logs. No interruption of healthy current work needed; never merge.
+
+
+## Prompt 26: Reviewer Checkpoint
+
+Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. This delivered checkpoint refers to the 2026-10-20 15:46 review of ce79813; subsequent progress is recorded separately.
+
+Reviewer checkpoint: healthy progress confirmed at ce79813; independent type checks and lint pass. Updated desktop/phone entry baseline composition reviewed favorably, with remaining viewport/error/motion and hosted acceptance still open; latest CI pending. I appended the detailed checkpoint to meta-prompts.md; include it in your next related commit with the required attributed prompt/continuation record. Continue the existing plan; no need to stop current work.
