@@ -16,14 +16,23 @@ const invalid = receiptFeedback(receipt(1, 1, 'A'.repeat(25)));
 const pending = { message: pendingMessage, error: '', remedy: 'none' };
 const reconnect = { message: '', error: networkMessage, remedy: 'network' };
 import { campaignFeedback, campaignPendingMessage, campaignNetworkMessage } from '$lib/campaign-feedback';
-import { createCampaign, joinOrLeave } from '@shared/campaign';
+import { createCampaign, joinOrLeave, maintainCampaign } from '@shared/campaign';
 const campaign = createCampaign('lab', {kind:'campaign.create',expectedRevision:0,name:'Lab scenario',capacity:4,mode:'mock',development:true},'d'.repeat(64),0);
 function joinReceipt(revision:number) {
   try {joinOrLeave(campaign,{kind:'campaign.join',expectedRevision:revision,faction:'heliac'},'lab',{alias:'Envoy',portrait:'G1'},0);return campaignFeedback('campaign.join',{status:'accepted'});}
   catch(error) {return campaignFeedback('campaign.join',{status:'rejected',reason:error instanceof Error ? error.message : 'invalid'});}
 }
 const campaignPending={message:campaignPendingMessage,error:'',remedy:'none'};
+const seated=joinOrLeave(campaign,{kind:'campaign.join',expectedRevision:1,faction:'heliac'},'lab',{alias:'Envoy',portrait:'G1'},0);
+function maintenanceReceipt(kind:'campaign.pause'|'campaign.resume', revision:number) {
+  const paused=maintainCampaign(seated,{kind:'campaign.pause',expectedRevision:2},'lab',100);
+  try { maintainCampaign(kind==='campaign.pause'?seated:paused,{kind,expectedRevision:revision},'lab',200);return campaignFeedback(kind,{status:'accepted'}); }
+  catch(error){return campaignFeedback(kind,{status:'rejected',reason:error instanceof Error?error.message:'invalid'});}
+}
 export const scenarios = [
+  {id:'campaign-paused',label:'Maintenance: pending → paused',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:maintenanceReceipt('campaign.pause',2)}]},
+  {id:'campaign-resumed',label:'Maintenance: reconnect → resumed',frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:'',error:campaignNetworkMessage,remedy:'network'}},{at:2200,feedback:campaignPending},{at:3200,feedback:maintenanceReceipt('campaign.resume',3)}]},
+
   {id:'campaign-joined',label:'Campaign: pending → seat confirmed',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:joinReceipt(1)}]},
   {id:'campaign-conflict',label:'Campaign: stale roster → rejected',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:joinReceipt(0)}]},
   {id:'campaign-reconnect',label:'Campaign: reconnect → seat confirmed',frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:'',error:campaignNetworkMessage,remedy:'network'}},{at:2200,feedback:campaignPending},{at:3200,feedback:joinReceipt(1)}]},

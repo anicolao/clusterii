@@ -215,7 +215,11 @@
         message = feedback.message;
         error = feedback.error;
         remedy = feedback.remedy;
-        if (receipt.status === "accepted") void select(receipt.gameId);
+        if (
+          receipt.status === "accepted" &&
+          !["campaign.pause", "campaign.resume"].includes(command.kind)
+        )
+          void select(receipt.gameId);
       },
       failed,
     );
@@ -273,6 +277,11 @@
       {busy}
       pending={!!pending}
       onback={back}
+      onmaintenance={() =>
+        send(view!.id, {
+          kind: view!.pausedAt != null ? "campaign.resume" : "campaign.pause",
+          expectedRevision: game?.revision ?? view!.revision,
+        })}
       onleave={() =>
         send(view!.id, {
           kind: "campaign.leave",
@@ -554,7 +563,8 @@
           class="primary"
           disabled={busy ||
             (!pending &&
-              (game.phase !== "waiting" ||
+              (game.pausedAt != null ||
+                game.phase !== "waiting" ||
                 game.roster.filter((s) => s.faction === faction).length >=
                   game.capacity / 4))}
           onclick={() =>

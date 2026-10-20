@@ -1,6 +1,10 @@
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore, type Transaction } from "firebase-admin/firestore";
-import { onValueCreated } from "firebase-functions/v2/database";
+import {
+  type DatabaseEvent,
+  type DataSnapshot,
+  onValueCreated,
+} from "firebase-functions/v2/database";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
 import { onSchedule } from "firebase-functions/v2/scheduler";
 import {
@@ -9,6 +13,7 @@ import {
   campaignView,
   createCampaign,
   joinOrLeave,
+  maintainCampaign,
   startCampaign,
 } from "../../shared/campaign.js";
 import {
@@ -231,176 +236,186 @@ async function readRecipientKeys(
       );
   return keys;
 }
+async function handleCampaign(
+  event: DatabaseEvent<DataSnapshot>,
+  maintenance: boolean,
+) {
+  const { gameId, uid, commandId } = event.params;
+  const incoming = event.data.val() as { kind: string; envelope: Envelope };
+  const receiptRef = db().doc(`campaignReceipts/${uid}/results/${commandId}`);
+  // Authority is rechecked at processing time, independent of client-supplied fields.
+  let developer = true;
+  try {
+    await requireDeveloper(uid);
+  } catch (error) {
+    if (
+      !(error instanceof HttpsError && error.code === "permission-denied") &&
+      !(
+        error instanceof Error &&
+        "code" in error &&
+        error.code === "auth/user-not-found"
+      )
+    )
+      throw error;
+    developer = false;
+  }
+  const now = Date.now();
+  const seed = newKey();
+  const prepared = new Map<string, Promise<Record<string, unknown>>>();
+  const recipientKey = newKey();
+  let protectedRecipient: Awaited<ReturnType<typeof protect>> | undefined;
+  await db().runTransaction(async (tx) => {
+    const [
+      receipt,
+      head,
+      serverKeyRecord,
+      accountKey,
+      profileRecord,
+      ingressRecord,
+    ] = await Promise.all([
+      tx.get(receiptRef),
+      tx.get(db().doc(`campaignStates/${gameId}`)),
+      tx.get(db().doc(`campaignKeys/${gameId}`)),
+      tx.get(db().doc(`profileKeys/${uid}`)),
+      tx.get(db().doc(`profiles/${uid}`)),
+      tx.get(db().doc(`campaignCommandKeys/${uid}`)),
+    ]);
+    if (receipt.exists) return;
+    const revision = head.exists ? Number(head.get("revision")) : 0;
+    let next: Campaign;
+    const mode = incoming.envelope.mode;
+    if (mode !== "mock" && mode !== "real")
+      throw new Error("Unsupported command codec");
+    const ingressKey =
+      developer && mode === "real" && ingressRecord.exists
+        ? await unprotect(ingressRecord.get("protectedKey"), `ingress:${uid}:1`)
+        : mode === "real"
+          ? null
+          : accountKey.get("kek");
+    const canonicalKey = head.exists
+      ? head.get("mode") === "real"
+        ? await unprotect(
+            head.get("protectedKey"),
+            `canonical:${gameId}:${revision}:1`,
+          )
+        : (head.get("canonicalKey") ?? serverKeyRecord.get("key"))
+      : null;
+    try {
+      if (!developer) throw new Error("permission");
+      if (!accountKey.exists || !profileRecord.exists || !ingressKey)
+        throw new Error("profile-required");
+      if (
+        maintenance !==
+        ["campaign.pause", "campaign.resume"].includes(incoming.kind)
+      )
+        throw new Error("invalid");
+      const action = await provider(mode).open<{ kind: string; mode?: Mode }>(
+        incoming.envelope,
+        ingressKey,
+        context(gameId, 0, `command:${commandId}`),
+      );
+      if (action.kind !== incoming.kind) throw new Error("invalid");
+      const view = profileRecord.data() as ProfileView;
+      const ctx = profileContext(uid, view.revision);
+      const key = await unwrap(
+        view.grant,
+        accountKey.get("kek"),
+        uid,
+        ctx,
+        "mock",
+      );
+      const profile = await provider("mock").open<Profile>(
+        view.envelope,
+        key,
+        ctx,
+      );
+      if ((head.exists ? head.get("mode") : action.mode) !== mode)
+        throw new Error("invalid");
+      if (!head.exists) next = createCampaign(gameId, action, seed, now);
+      else {
+        const current = await provider(mode).open<Campaign>(
+          head.get("envelope"),
+          canonicalKey,
+          context(gameId, revision, "canonical"),
+        );
+        next = maintenance
+          ? maintainCampaign(current, action, uid, now)
+          : joinOrLeave(current, action, uid, profile, now);
+      }
+    } catch (error) {
+      if (error instanceof KeyServiceError) throw error;
+      const reason =
+        error instanceof Error &&
+        [
+          "permission",
+          "profile-required",
+          "invalid",
+          "exists",
+          "started",
+          "paused",
+          "already-joined",
+          "full",
+          "conflict",
+        ].includes(error.message)
+          ? error.message
+          : "invalid";
+      tx.create(receiptRef, { gameId, revision, status: "rejected", reason });
+      return;
+    }
+    const keys = await readRecipientKeys(
+      tx,
+      gameId,
+      next.seats.map((s) => s.uid),
+      next.mode,
+    );
+    if (next.seats.some((s) => s.uid === uid) && !keys.has(uid)) {
+      keys.set(uid, recipientKey);
+      if (next.mode === "real" && !protectedRecipient)
+        protectedRecipient = await protect(
+          recipientKey,
+          `recipient:${gameId}:${uid}:1`,
+        );
+      tx.create(db().doc(`campaignKeys/${gameId}/members/${uid}`), {
+        ...(next.mode === "real"
+          ? {
+              protectedKey: protectedRecipient,
+            }
+          : { kek: recipientKey }),
+        mode: next.mode,
+        epoch: 1,
+      });
+    }
+    for (const priorUid of (head.exists
+      ? head.get("memberUids")
+      : []) as string[])
+      if (!next.seats.some((seat) => seat.uid === priorUid))
+        tx.delete(db().doc(`campaignMemberships/${priorUid}/games/${gameId}`));
+    if (next.revision !== revision)
+      await publish(
+        tx,
+        next,
+        keys,
+        prepared,
+        head.exists && !head.get("canonicalKey") && head.get("mode") === "mock"
+          ? serverKeyRecord.get("key")
+          : undefined,
+      );
+    tx.create(receiptRef, {
+      gameId,
+      revision: next.revision,
+      status: "accepted",
+    });
+  });
+}
 export const processCampaign = onValueCreated(
   { ref: "/commands/{gameId}/{uid}/{commandId}", retry: true },
-  async (event) => {
-    const { gameId, uid, commandId } = event.params;
-    const incoming = event.data.val() as { kind: string; envelope: Envelope };
-    const receiptRef = db().doc(`campaignReceipts/${uid}/results/${commandId}`);
-    // Authority is rechecked at processing time, independent of client-supplied fields.
-    let developer = true;
-    try {
-      await requireDeveloper(uid);
-    } catch (error) {
-      if (
-        !(error instanceof HttpsError && error.code === "permission-denied") &&
-        !(
-          error instanceof Error &&
-          "code" in error &&
-          error.code === "auth/user-not-found"
-        )
-      )
-        throw error;
-      developer = false;
-    }
-    const now = Date.now();
-    const seed = newKey();
-    const prepared = new Map<string, Promise<Record<string, unknown>>>();
-    const recipientKey = newKey();
-    let protectedRecipient: Awaited<ReturnType<typeof protect>> | undefined;
-    await db().runTransaction(async (tx) => {
-      const [
-        receipt,
-        head,
-        serverKeyRecord,
-        accountKey,
-        profileRecord,
-        ingressRecord,
-      ] = await Promise.all([
-        tx.get(receiptRef),
-        tx.get(db().doc(`campaignStates/${gameId}`)),
-        tx.get(db().doc(`campaignKeys/${gameId}`)),
-        tx.get(db().doc(`profileKeys/${uid}`)),
-        tx.get(db().doc(`profiles/${uid}`)),
-        tx.get(db().doc(`campaignCommandKeys/${uid}`)),
-      ]);
-      if (receipt.exists) return;
-      const revision = head.exists ? Number(head.get("revision")) : 0;
-      let next: Campaign;
-      const mode = incoming.envelope.mode;
-      if (mode !== "mock" && mode !== "real")
-        throw new Error("Unsupported command codec");
-      const ingressKey =
-        developer && mode === "real" && ingressRecord.exists
-          ? await unprotect(
-              ingressRecord.get("protectedKey"),
-              `ingress:${uid}:1`,
-            )
-          : mode === "real"
-            ? null
-            : accountKey.get("kek");
-      const canonicalKey = head.exists
-        ? head.get("mode") === "real"
-          ? await unprotect(
-              head.get("protectedKey"),
-              `canonical:${gameId}:${revision}:1`,
-            )
-          : (head.get("canonicalKey") ?? serverKeyRecord.get("key"))
-        : null;
-      try {
-        if (!developer) throw new Error("permission");
-        if (!accountKey.exists || !profileRecord.exists || !ingressKey)
-          throw new Error("profile-required");
-        const action = await provider(mode).open<{ kind: string; mode?: Mode }>(
-          incoming.envelope,
-          ingressKey,
-          context(gameId, 0, `command:${commandId}`),
-        );
-        if (action.kind !== incoming.kind) throw new Error("invalid");
-        const view = profileRecord.data() as ProfileView;
-        const ctx = profileContext(uid, view.revision);
-        const key = await unwrap(
-          view.grant,
-          accountKey.get("kek"),
-          uid,
-          ctx,
-          "mock",
-        );
-        const profile = await provider("mock").open<Profile>(
-          view.envelope,
-          key,
-          ctx,
-        );
-        if ((head.exists ? head.get("mode") : action.mode) !== mode)
-          throw new Error("invalid");
-        if (!head.exists) next = createCampaign(gameId, action, seed, now);
-        else {
-          const current = await provider(mode).open<Campaign>(
-            head.get("envelope"),
-            canonicalKey,
-            context(gameId, revision, "canonical"),
-          );
-          next = joinOrLeave(current, action, uid, profile, now);
-        }
-      } catch (error) {
-        if (error instanceof KeyServiceError) throw error;
-        const reason =
-          error instanceof Error &&
-          [
-            "permission",
-            "profile-required",
-            "invalid",
-            "exists",
-            "started",
-            "already-joined",
-            "full",
-            "conflict",
-          ].includes(error.message)
-            ? error.message
-            : "invalid";
-        tx.create(receiptRef, { gameId, revision, status: "rejected", reason });
-        return;
-      }
-      const keys = await readRecipientKeys(
-        tx,
-        gameId,
-        next.seats.map((s) => s.uid),
-        next.mode,
-      );
-      if (next.seats.some((s) => s.uid === uid) && !keys.has(uid)) {
-        keys.set(uid, recipientKey);
-        if (next.mode === "real" && !protectedRecipient)
-          protectedRecipient = await protect(
-            recipientKey,
-            `recipient:${gameId}:${uid}:1`,
-          );
-        tx.create(db().doc(`campaignKeys/${gameId}/members/${uid}`), {
-          ...(next.mode === "real"
-            ? {
-                protectedKey: protectedRecipient,
-              }
-            : { kek: recipientKey }),
-          mode: next.mode,
-          epoch: 1,
-        });
-      }
-      for (const priorUid of (head.exists
-        ? head.get("memberUids")
-        : []) as string[])
-        if (!next.seats.some((seat) => seat.uid === priorUid))
-          tx.delete(
-            db().doc(`campaignMemberships/${priorUid}/games/${gameId}`),
-          );
-      if (next.revision !== revision)
-        await publish(
-          tx,
-          next,
-          keys,
-          prepared,
-          head.exists &&
-            !head.get("canonicalKey") &&
-            head.get("mode") === "mock"
-            ? serverKeyRecord.get("key")
-            : undefined,
-        );
-      tx.create(receiptRef, {
-        gameId,
-        revision: next.revision,
-        status: "accepted",
-      });
-    });
-  },
+  (event) => handleCampaign(event, false),
 );
+export const processCampaignMaintenance = onValueCreated(
+  { ref: "/maintenanceCommands/{gameId}/{uid}/{commandId}", retry: true },
+  (event) => handleCampaign(event, true),
+);
+
 export async function startDueCampaign(id: string, now: number) {
   const prepared = new Map<string, Promise<Record<string, unknown>>>();
   await db().runTransaction(async (tx) => {

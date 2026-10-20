@@ -32,6 +32,10 @@ test("lab replay, pause, seek and reduced motion preserve production outcomes", 
   await seek.fill("1250");
   await expect(standard.getByRole("status")).toContainText("seat is confirmed");
   await expect(reduced.getByRole("status")).toHaveText(await standard.getByRole("status").innerText());
+  await page.getByLabel("Scenario", {exact:true}).selectOption("campaign-paused");
+  await seek.fill("1250");await expect(standard.getByRole("status")).toContainText("Campaign paused");await expect(reduced.getByRole("status")).toHaveText(await standard.getByRole("status").innerText());
+  await page.getByLabel("Scenario", {exact:true}).selectOption("campaign-resumed");
+  await seek.fill("3300");await expect(standard.getByRole("status")).toContainText("Campaign resumed");await expect(reduced.getByRole("status")).toHaveText(await standard.getByRole("status").innerText());
   await page.getByLabel("Playback speed").selectOption("0.25");
   await page.getByRole("button", { name: "Replay", exact: true }).click();
   await page.getByRole("button", { name: "Pause", exact: true }).click();
