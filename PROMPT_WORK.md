@@ -41,3 +41,5 @@ Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | A
 Prompt 24 | 1ed64874e8a45bef366d7958a3af9f80b2a62cd4465d5f2f75a841f63be3f9ec | Record maintenance deployment, PR 10 preview dependency and verified PR 9 publication/CI status
 
 Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | Link the migration review PR and its pending preview in the dependency table.
+
+Prompt 25 | 8008146a7806c5c75ec67a4bf1c0f2f3533b703bbae14ef6f66d5053d9fb33ad | Bind authoritative receipts to exact requests and preserve drafts when command identities collide.

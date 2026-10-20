@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { ReceiptMismatch } from "@shared/command-receipt";
   import CampaignMaintenance from "$lib/components/CampaignMaintenance.svelte";
   let maintenancePaused = $state(false);
   let galleryMode = $state<"mock" | "real">("mock");
@@ -149,6 +150,10 @@
     </section>
     <section>
       <h2>Feedback and recovery</h2>
+      <Feedback
+        error={new ReceiptMismatch().message}
+        errorId="gallery-receipt"
+      />
       <Feedback message="Sending your identity…" /><Feedback
         message="Identity saved. Your next campaign will know you by this name."
       /><Feedback

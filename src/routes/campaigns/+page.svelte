@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { ReceiptMismatch } from "@shared/command-receipt";
   import {
     campaignFeedback,
     campaignPendingMessage,
@@ -72,7 +73,20 @@
         "Encryption change is in progress. The campaign remains paused during verification.";
     }
   });
-  function failed() {
+  function failed(failure?: unknown) {
+    if (failure instanceof ReceiptMismatch) {
+      stopReceipt();
+      clearTimeout(timer);
+      pending = null;
+      busy = false;
+      message = "";
+      error = failure.message;
+      remedy = "validation";
+      void tick().then(() =>
+        document.querySelector<HTMLElement>('[role="alert"]')?.focus(),
+      );
+      return;
+    }
     error = campaignNetworkMessage;
     remedy = "network";
     busy = false;
@@ -372,17 +386,21 @@
               }}>Create campaign</ActionButton
             >{/if}
         </div>
-        {#if !game || loading || creating}<Feedback
-            {message}
-            {error}
-            reconnect={remedy === "network" && !pending ? recover : undefined}
-          />{/if}
-        {#if pending && (!game || loading || creating)}<ActionButton
-            class="primary retry"
-            disabled={busy}
-            onclick={dispatch}
-            >{busy ? "Awaiting acknowledgement…" : "Retry order"}</ActionButton
-          >{/if}
+        {#if !game || loading || creating}<div class="directory-feedback">
+            <Feedback
+              {message}
+              {error}
+              reconnect={remedy === "network" && !pending ? recover : undefined}
+            />
+            {#if pending}<ActionButton
+                class="primary retry"
+                disabled={busy}
+                onclick={dispatch}
+                >{busy
+                  ? "Awaiting acknowledgement…"
+                  : "Retry order"}</ActionButton
+              >{/if}
+          </div>{/if}
         {#if creating}
           <form
             id="create-campaign"
@@ -618,6 +636,10 @@
 </main>
 
 <style>
+  .directory-feedback {
+    width: min(720px, calc(100% - 24px));
+    margin: 0 auto;
+  }
   .campaign-shell {
     align-items: stretch;
     height: 100svh;

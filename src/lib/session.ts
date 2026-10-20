@@ -1,3 +1,4 @@
+import { commandDigest, verifyReceipt } from "@shared/command-receipt";
 import { type Envelope, provider, unwrap } from "@shared/crypto";
 import {
   commandContext,
@@ -148,11 +149,22 @@ export function submitCommand<T>(
   fail: (error: Error) => void,
 ) {
   let active = true;
+  const expected = commandDigest(ingress, payload);
   // Subscribe before write. Receipt remains authoritative even when retrying a create-only command.
   const stop = onSnapshot(
     doc(firestore, receipt[0], ...receipt.slice(1)),
     (snapshot) => {
-      if (active && snapshot.exists()) next(snapshot.data() as T);
+      if (active && snapshot.exists()) {
+        void expected
+          .then((digest) => {
+            if (!active) return;
+            verifyReceipt(snapshot.data(), digest);
+            next(snapshot.data() as T);
+          })
+          .catch((error: Error) => {
+            if (active) fail(error);
+          });
+      }
     },
     fail,
   );

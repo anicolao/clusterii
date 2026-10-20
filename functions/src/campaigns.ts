@@ -16,6 +16,7 @@ import {
   maintainCampaign,
   startCampaign,
 } from "../../shared/campaign.js";
+import { commandDigest } from "../../shared/command-receipt.js";
 import {
   type Context,
   type Envelope,
@@ -265,6 +266,10 @@ async function handleCampaign(
 ) {
   const { gameId, uid, commandId } = event.params;
   const incoming = event.data.val() as { kind: string; envelope: Envelope };
+  const requestDigest = await commandDigest(
+    `${maintenance ? "maintenanceCommands" : "commands"}/${gameId}/${uid}/${commandId}`,
+    incoming,
+  );
   const receiptRef = db().doc(`campaignReceipts/${uid}/results/${commandId}`);
   // Authority is rechecked at processing time, independent of client-supplied fields.
   let developer = true;
@@ -385,7 +390,13 @@ async function handleCampaign(
         ].includes(error.message)
           ? error.message
           : "invalid";
-      tx.create(receiptRef, { gameId, revision, status: "rejected", reason });
+      tx.create(receiptRef, {
+        requestDigest,
+        gameId,
+        revision,
+        status: "rejected",
+        reason,
+      });
       return;
     }
     const keys = await readRecipientKeys(
@@ -428,6 +439,7 @@ async function handleCampaign(
           : undefined,
       );
     tx.create(receiptRef, {
+      requestDigest,
       gameId,
       revision: next.revision,
       status: "accepted",

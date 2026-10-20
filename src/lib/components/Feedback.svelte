@@ -18,7 +18,9 @@
 
 <div use:feedbackMotion={{ key: message + error, inspect }}>
   <p class="notice" role="status">{message}</p>
-  {#if error}<p id={errorId} class="notice error" role="alert">{error}</p>
+  {#if error}<p id={errorId} class="notice error" role="alert" tabindex="-1">
+      {error}
+    </p>
     {#if reconnect}<ActionButton class="secondary" onclick={reconnect}
         >Reconnect</ActionButton
       >{/if}
