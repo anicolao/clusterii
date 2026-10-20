@@ -29,7 +29,7 @@ for (const [name, width, height] of [
       await Promise.all([...document.images].map((img) => img.decode()));
     });
     await info.attach(`identity-${name}-validation`, {
-      body: await page.screenshot(),
+      path: info.outputPath(`identity-${name}-validation.png`),
       contentType: "image/png",
     });
   });

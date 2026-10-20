@@ -7,3 +7,4 @@ Prompt 17 | 61811ab2760342556138a3047ec607ba0c60c827f82b04f09ed3a9d944c29859 | F
 Prompt 17 | 61811ab2760342556138a3047ec607ba0c60c827f82b04f09ed3a9d944c29859 | Load recovered identity at phone dimensions before capture to avoid reusing desktop image rasters.
 Prompt 17 | 61811ab2760342556138a3047ec607ba0c60c827f82b04f09ed3a9d944c29859 | Record independently reviewed native-phone captures on Linux and macOS after stable reload verification.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Keep shared Svelte components under Prettier and reserve Biome checks for TypeScript.
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Record reviewed Linux entry captures and retain identity error and conflict screenshots as CI artifacts.

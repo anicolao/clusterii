@@ -26,6 +26,9 @@ test("two devices preserve a conflicting draft and explicitly replace the saved 
   await expect(
     b.getByRole("button", { name: "Reconnect", exact: true }),
   ).toHaveCount(0);
+  await b.screenshot({
+    path: info.outputPath("conflicting-draft-preserved.png"),
+  });
   await b.getByRole("button", { name: "Replace saved identity" }).click();
   await expect(b.getByRole("status")).toContainText("Identity saved");
   await expect(a.getByLabel("Commander name")).toHaveValue("Preserved draft");
