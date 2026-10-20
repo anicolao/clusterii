@@ -2,13 +2,13 @@
 
 Cluster’s art makes diplomacy personal and galactic territory desirable. Leaders express intelligence and agency; ships express distinct cultures; planets show the value of controlling a world and its orbit.
 
-**Decision:** choose one of four visual directions below before UX design begins. **Implementation status:** these are generated comparison boards, not integrated game assets. No direction is selected. [README](../../README.md) and [VISION](../../VISION.md) remain the design contract; the costume, architecture and ship motifs here are art proposals, not new mechanics or faction lore.
+**Decision:** B, cinematic realism, is selected. [UX_DESIGN.md](../../UX_DESIGN.md) defines its application to the game. **Implementation status:** these are generated comparison boards, not integrated game assets. The other directions remain as the exploration record. [README](../../README.md) and [VISION](../../VISION.md) remain the design contract; the costume, architecture and ship motifs here are art proposals, not new mechanics or faction lore.
 
 ## What carries forward
 
 The old project in `../cluster` establishes a game about slow real-time conquest, cooperation and shifting alliances. Its `cluster/README.md` makes interdependence central. Its `cluster/static/images/{M,G,A,O}{1,2}.webp` collection contains eight character options; `cluster/src/routes/(game)/profile/+page.svelte` exposes their 128-pixel versions as profile avatars and displays player images at 64 pixels. The reviewed M1, G1, A1 and O1 originals use detailed ink contours, watercolor washes, jewel colors and armed science-fiction characters. The humanoid wears a closed helmet; the other silhouettes expose recognizable alien faces.
 
-`cluster/src/lib/components/Galaxy.svelte` supplies a separate visual language: a Three.js/Threlte starfield, spectral star colors, procedural star shading, orbit controls and spatial guides. These are existing implementation details, not a requirement to imitate that rendering style in every illustration. The old `static/images/ship1.svg` contribution is attributed to Andrew in its commit history and is not wired into the reviewed renderer; these new ship concepts do not reuse it. The broader inheritance review is in [CLUSTER_II_DESIGN.md](../../CLUSTER_II_DESIGN.md). Source paths here are relative to the old project and document local review; no legacy images are copied into this repository.
+`cluster/src/lib/components/Galaxy.svelte` supplies a separate visual language: a Three.js/Threlte starfield, spectral star colors, procedural star shading, orbit controls and spatial guides. These are existing implementation details, not a requirement to imitate that rendering style in every illustration. The old `static/images/ship1.svg` contribution is attributed to Andrew in its commit history and is not wired into the reviewed renderer; these new ship concepts do not reuse it. The broader inheritance review is in [CLUSTER_I_DESIGN_REVIEW.md](../../CLUSTER_I_DESIGN_REVIEW.md). Source paths here are relative to the old project and document local review; no legacy images are copied into this repository.
 
 Carry forward species variety, readable silhouettes, a sense of cosmic scale and the warmth of illustrated characters. Explore visible faces, diplomatic authority and a consistent medium across people, ships and worlds. The current vision fixes the M/aquatic, G/humanoid, A/insectoid and O/reptilian correspondence. In particular, the new aquatic portrait has unmistakable fin anatomy to distinguish it from the reptilian leader.
 
@@ -59,7 +59,7 @@ Handmade clay and ceramic forms, simplified faces and soft studio lighting make 
 
 ## Choosing the direction
 
-My recommendation is **C, graphic screenprint**, for its cohesive silhouettes and potential to remain legible alongside a dense strategy view. Choose **A** if warmth and continuity with the original illustrations matter more. **B** favors cinematic gravity; **D** favors approachable, dimensional characters. This is an art-direction judgment, not a measured usability result.
+**B, cinematic realism, is the accepted direction.** Its emotional presence and convincing scale govern the UX mockups. The exploration favored C for compact graphic clarity; that tradeoff remains useful when simplifying cinematic portraits and ship silhouettes for small displays. A offers illustrated warmth and D offers sculpted expression; neither supplies the production rendering language.
 
 | Criterion | A · Watercolor | B · Cinematic | C · Screenprint | D · Sculpted |
 | --- | --- | --- | --- | --- |
@@ -69,9 +69,9 @@ My recommendation is **C, graphic screenprint**, for its cohesive silhouettes an
 | Production pressure | Brush consistency | Anatomy and lighting | Shape discipline | Model/style consistency |
 | Link to old art | Strongest | Limited | Selective | Selective |
 
-Choose a primary rendering language across leaders, ships and worlds. Record any desired borrowing precisely—such as A’s warmer palette applied to C’s shapes—then generate a focused confirmation board before treating the combination as settled.
+Use cinematic realism consistently across leaders, ships and worlds. Preserve legible silhouettes and quiet backgrounds as the art moves into small portraits and contextual instruments.
 
-After selection, validate the chosen art at 64- and 128-pixel portrait sizes, in grayscale, and with all four silhouettes side by side. Confirm that faction identity survives without color, that facial expressions remain readable, and that space backgrounds leave room for later information layers. Then define a production style sheet covering palette, contours, materials, lighting, portrait crops and asset export rules. UX design follows that decision.
+Validate the chosen art at 64- and 128-pixel portrait sizes, in grayscale, and with all four silhouettes side by side. Confirm that faction identity survives without color, that facial expressions remain readable, and that space backgrounds leave room for later information layers. Then define a production style sheet covering palette, contours, materials, lighting, portrait crops and asset export rules. The detailed UX contract and mockups follow in [UX_DESIGN.md](../../UX_DESIGN.md).
 
 ## Assets and generation provenance
 
