@@ -27,3 +27,5 @@ The default environment also passes three service tests (65 assertions) and the 
 The five campaign functions and Realtime Database envelope rules are deployed to `clusterii-20261020`. Both new callable endpoints return HTTP 401 without authentication. This checks deployment and unauthenticated denial; it does not certify a hosted Google sign-in, hosted user key delivery or hosted scheduled start.
 
 The final creation control uses the existing fixed commitment rail. Four-size `encryption-settings-*.png` captures record that final layout with the default emulator; the earlier live-key capture records the real-mode selection before that layout correction. Browser geometry checks require Create galaxy to remain in the viewport before scrolling.
+
+Legacy-upgrade regression: the first per-version-key publication retains the old shared mock canonical key in a server-only record; later publications preserve it. The default service suite passes four cases (71 assertions), with two live-key cases explicitly skipped.

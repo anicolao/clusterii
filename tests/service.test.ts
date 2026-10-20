@@ -316,3 +316,22 @@ test.skipIf(process.env.CLUSTER_KMS_TEST!=='true')('live KMS campaign creation, 
   await expect(getDoc(doc(a.firestore,'campaignViews',gameId,'members',a.uid,'versions','2'))).rejects.toThrow();
   expect((await httpsCallable(a.functions,'campaignKey')({gameId})).data).toEqual({joined:false});
 },90000);
+
+test('upgrading a legacy mock campaign retains its historical canonical key',async()=>{
+  const c=await client(`legacy-key-${Date.now()}`);await developer(c);await saveIdentity(c);
+  const gameId=crypto.randomUUID();
+  await campaignCommand(c,gameId,{kind:'campaign.create',expectedRevision:0,name:'Legacy history',capacity:4,development:true,mode:'mock'});
+  const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));
+  const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});
+  const {getFirestore,FieldValue}=require('firebase-admin/firestore');const db=getFirestore();
+  const head=db.doc(`campaignStates/${gameId}`),version=head.collection('versions').doc('1');
+  const before=await head.get(),legacyKey=before.get('canonicalKey');
+  // Reproduce the deployed pre-per-version-key record shape, not fabricated gameplay.
+  await head.update({canonicalKey:FieldValue.delete()});await version.update({canonicalKey:FieldValue.delete()});
+  expect((await campaignCommand(c,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'})).receipt.status).toBe('accepted');
+  const retained=await db.doc(`campaignKeys/${gameId}`).get();expect(retained.get('legacyCanonicalKey')).toBe(legacyKey);
+  expect(retained.get('key')).not.toBe(legacyKey);
+  const history=await provider('mock').open<{name:string}>(before.get('envelope'),retained.get('legacyCanonicalKey'),{gameId,objectId:'canonical',revision:1,epoch:1,keyVersion:1});expect(history.name).toBe('Legacy history');
+  await campaignCommand(c,gameId,{kind:'campaign.leave',expectedRevision:2});
+  expect((await db.doc(`campaignKeys/${gameId}`).get()).get('legacyCanonicalKey')).toBe(legacyKey);
+},60000);

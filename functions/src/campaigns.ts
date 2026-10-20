@@ -115,6 +115,7 @@ async function publish(
   state: Campaign,
   keys: Map<string, string>,
   prepared: Map<string, Promise<Record<string, unknown>>>,
+  legacyCanonicalKey?: string,
 ) {
   // Reuse the complete ciphertext and wrapping result when Firestore retries this transition.
   const signature = JSON.stringify(state);
@@ -153,11 +154,16 @@ async function publish(
   // Keep the prior mock processor's current-key lookup compatible during rollout.
   // Real mode never writes an unprotected key into this record.
   if (state.mode === "mock")
-    tx.set(db().doc(`campaignKeys/${state.id}`), {
-      key: sealed.canonicalKey,
-      mode: "mock",
-      epoch: 1,
-    });
+    tx.set(
+      db().doc(`campaignKeys/${state.id}`),
+      {
+        key: sealed.canonicalKey,
+        mode: "mock",
+        epoch: 1,
+        ...(legacyCanonicalKey ? { legacyCanonicalKey } : {}),
+      },
+      { merge: true },
+    );
   tx.create(
     db().doc(`campaignStates/${state.id}/versions/${state.revision}`),
     head,
@@ -375,7 +381,18 @@ export const processCampaign = onValueCreated(
           tx.delete(
             db().doc(`campaignMemberships/${priorUid}/games/${gameId}`),
           );
-      if (next.revision !== revision) await publish(tx, next, keys, prepared);
+      if (next.revision !== revision)
+        await publish(
+          tx,
+          next,
+          keys,
+          prepared,
+          head.exists &&
+            !head.get("canonicalKey") &&
+            head.get("mode") === "mock"
+            ? serverKeyRecord.get("key")
+            : undefined,
+        );
       tx.create(receiptRef, {
         gameId,
         revision: next.revision,
@@ -414,7 +431,15 @@ export async function startDueCampaign(id: string, now: number) {
       next.seats.map((s) => s.uid),
       next.mode,
     );
-    await publish(tx, next, keys, prepared);
+    await publish(
+      tx,
+      next,
+      keys,
+      prepared,
+      !head.get("canonicalKey") && mode === "mock"
+        ? keyRecord.get("key")
+        : undefined,
+    );
   });
 }
 export const startScheduledCampaigns = onSchedule(
