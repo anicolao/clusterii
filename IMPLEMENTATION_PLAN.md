@@ -26,6 +26,8 @@ Keep PRs small enough to review by behavior. Each milestone may span several PRs
 
 ## 0. Complete the rules and design contract
 
+Step 0 review deliverables: [RULES_SPEC.md](RULES_SPEC.md), [cluster-v0.1.0.json](rules/cluster-v0.1.0.json), [TECHNICAL_CONTRACT.md](TECHNICAL_CONTRACT.md), and the [coverage/decision guide](docs/design/STEP_0_REVIEW.md). These select the rules and technical boundaries below for review; they do not claim implementation or balance validation. Remaining provisioning, dependency pins, measured budgets and real-provider validation have explicit milestone gates in the technical contract.
+
 Translate the recorded ruleset into a rules specification, worked examples, and versioned balance tables. Preserve the existing concepts; settle missing parameters before the affected mechanic is implemented.
 
 | Topic | Decisions and examples required |

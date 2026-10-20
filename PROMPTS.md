@@ -205,3 +205,7 @@ OK we like cinematic realism. In a level of detail and overall flow style simila
 ## Prompt 11: Prepare Approval
 
 this looks good, let;s make sure it is rebased on current main and ready for us to approve
+
+## Prompt 12: Define Step Zero
+
+pull hte latest main. Review the UX_DESIGN and IMPLEMENTATION_PLAN and put up a PR for step 0 of the implementation plan for us to review.

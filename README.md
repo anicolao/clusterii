@@ -20,6 +20,8 @@ See [VISION.md](VISION.md) for the game’s design and experience.
 
 Cinematic realism is the selected visual direction. [UX_DESIGN.md](UX_DESIGN.md) defines the game experience, desktop/phone mockups and interaction acceptance criteria. [Art direction options](docs/art/ART_DIRECTION_OPTIONS.md) retains the visual exploration.
 
+Step 0’s [review guide](docs/design/STEP_0_REVIEW.md) covers the [rules](RULES_SPEC.md), [versioned balance data](rules/cluster-v0.1.0.json), and [technical contract](TECHNICAL_CONTRACT.md).
+
 ## Contributing
 
 Use Node.js 22 or later for the prompt checks. Install the commit hook with `git config core.hooksPath .githooks`, and run `node --test scripts/check-prompts.test.mjs` to verify enforcement. Follow [AGENTS.md](AGENTS.md) and record requests verbatim in [PROMPTS.md](PROMPTS.md).
