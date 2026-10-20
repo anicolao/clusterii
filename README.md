@@ -34,7 +34,7 @@ Cluster is licensed under [GNU GPL v3.0 only](LICENSE) (`GPL-3.0-only`).
 
 ## Application status and development
 
-Step 1 delivers the cinematic entry, four-chapter field guide, Google sign-in, and persistent commander identity. Saving an alias and portrait sends an encrypted command through Realtime Database and a Cloud Function reducer into encrypted Firestore revisions and owner grants. The browser waits for the server receipt. Mock encryption is inspectable and provides no confidentiality; real mode fails closed. Campaigns and the galaxy follow in later milestones.
+Step 1 delivers the cinematic entry, four-chapter field guide, Google sign-in, and persistent commander identity. Saving an alias and portrait sends an encrypted command through Realtime Database and a Cloud Function reducer into encrypted Firestore revisions and owner grants. The browser waits for the server receipt. Mock encryption is inspectable and provides no confidentiality; real mode fails closed. Campaigns and the galaxy follow in later milestones. Hosted Google sign-in requires the project’s OAuth web-client configuration; sign-in and persistence are verified against the Firebase emulators.
 
 The [PR #4 preview](https://anicolao.github.io/clusterii/pr4/) uses the same Firebase project as the production build: `clusterii-20261020`. Public Firebase configuration is included in the client; deployment credentials are not.
 

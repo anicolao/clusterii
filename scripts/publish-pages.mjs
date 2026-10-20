@@ -1,11 +1,5 @@
 import { execFileSync } from "node:child_process";
-import {
-  cpSync,
-  mkdirSync,
-  readdirSync,
-  rmSync,
-  writeFileSync,
-} from "node:fs";
+import { cpSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 const {
   GITHUB_REPOSITORY: repo,
@@ -76,3 +70,5 @@ if (git("-C", root, "status", "--porcelain")) {
   );
   git("-C", root, "push", "origin", "HEAD:gh-pages");
 }
+
+writeFileSync(".pages-publication.json", JSON.stringify({ sourceSha: sha }));

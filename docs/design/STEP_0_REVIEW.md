@@ -60,13 +60,13 @@ Reviewed the full written UX flow and the galaxy and split-control concept plate
 
 The step 0 rules resolve conditional controls: no manual start/readiness, no manual scan, no mid-flight reroute, and no extra Attack action for automatic assaults. Research switches retain track progress. Conversation admission chooses future-only or selected earlier history. Results show shared territorial winners or a deadline draw; the generic UX's individual-winner variant is unreachable under this ruleset and needs no invented test game.
 
-UX-01 through UX-16 remain acceptance IDs. Their exact screenshot policy, four viewport sizes, input equivalence, privacy boundaries and ordinary-player full campaign journey remain unchanged. Production implementation must compare rendered screens with the concepts as well as checking rules; this PR's document review is not visual acceptance of an application.
+UX-01 through UX-16 remain acceptance IDs. Their exact screenshot policy, four viewport sizes, input equivalence, privacy boundaries and ordinary-player full campaign journey remain unchanged. Production implementation must compare rendered screens with the concepts as well as checking rules; step 0's document review is not visual acceptance of the application.
 
-## Verification performed for this PR
+## Step 0 verification
 
 - Parsed the configuration; checked supported player counts, full affinity rows, equal faction strength totals, starting technologies, focus sum, and thirty-day tick duration.
 - Recomputed production/cost/victory examples independently with decimal arithmetic.
 - Compared the ground closed form against explicit defender-first rounds in 168,100 cases: each force count 0–40 and each coefficient 1–10.
 - Checked 50 local document links, prompt history and whitespace; all ten existing prompt-enforcement tests pass. Reproduce configuration/arithmetic/link checks with `python3 scripts/check-step-zero.py`; CI runs the same check.
 
-No balance simulation, browser implementation, crypto provider, deployed service, or playable campaign exists as a result of this PR. Approval selects the written contract; milestone 1 then builds the foundation, and later milestones supply their required implementation evidence.
+Step 0 selects the written contract. Step 1 adds the application and encrypted identity tracer on the same PR; [its review guide](STEP_1_REVIEW.md) records implementation evidence and deployment dependencies. Balance simulation and playable campaigns remain later milestones.

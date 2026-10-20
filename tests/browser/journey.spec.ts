@@ -71,6 +71,7 @@ test("Google sign-in, encrypted profile acknowledgement and reload", async ({
   await page.getByRole("radio", { name: "The deepseer" }).check();
   await page.getByRole("button", { name: "Save identity" }).click();
   await expect(page.getByRole("status")).toContainText("Identity saved");
+  await expect(page.locator(".portrait-art img")).toHaveCount(8);
   await capture(page, "identity-desktop");
   await page.reload();
   await page.getByRole("button", { name: "Play", exact: true }).click();

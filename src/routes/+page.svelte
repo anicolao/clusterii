@@ -221,10 +221,7 @@
   /></svelte:head
 >
 
-<main
-  style={`--portraits:url("${base}/art/portraits.webp")`}
-  class:instruments={scene !== "entry"}
->
+<main class:instruments={scene !== "entry"}>
   <picture class="vista" aria-hidden="true"
     ><source
       media="(max-width: 700px)"
@@ -360,7 +357,8 @@
                       class="portrait-art"
                       style={`--column:${i % 4};--row:${Math.floor(i / 4)}`}
                       aria-hidden="true"
-                    ></span><span class="sr-only">{names[i]}</span><span
+                      ><img src={`${base}/art/portraits.webp`} alt="" /></span
+                    ><span class="sr-only">{names[i]}</span><span
                       class="portrait-mark"
                       aria-hidden="true">{portrait === id ? "✓" : ""}</span
                     ></label
