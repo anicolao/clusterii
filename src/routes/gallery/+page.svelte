@@ -1,4 +1,34 @@
 <script lang="ts">
+  import FactionPicker from "$lib/components/FactionPicker.svelte";
+  import {
+    createCampaign,
+    campaignDirectory,
+    joinOrLeave,
+  } from "@shared/campaign";
+  import type { FactionId } from "@shared/rules";
+  let faction = $state<FactionId>("heliac");
+  const empty = createCampaign(
+    "gallery",
+    {
+      kind: "campaign.create",
+      expectedRevision: 0,
+      name: "Gallery specimen",
+      capacity: 4,
+      mode: "mock",
+      development: true,
+    },
+    "c".repeat(64),
+    0,
+  );
+  const roster = campaignDirectory(
+    joinOrLeave(
+      empty,
+      { kind: "campaign.join", expectedRevision: 1, faction: "pelagic" },
+      "specimen",
+      { alias: "Envoy", portrait: "M1" },
+      0,
+    ),
+  );
   import { base } from "$app/paths";
   import ChapterNav from "$lib/components/ChapterNav.svelte";
   import ActionButton from "$lib/components/ActionButton.svelte";
@@ -115,6 +145,16 @@
         reconnect={() => clicks++}
       />
     </section>
+    <section class="faction-specimens">
+      <h2>Faction selection</h2>
+      <p>
+        Production faction art, selected radios and quota-disabled seats. These
+        deterministic reducer specimens never enter a live campaign.
+      </p>
+      <FactionPicker bind:value={faction} game={roster} />
+      <h3>Pending selection</h3>
+      <FactionPicker value="heliac" game={roster} disabled />
+    </section>
     <section>
       <h2>Icon inventory</h2>
       <p>
@@ -136,7 +176,7 @@
         supplied OFL licences. No generated lettering is used.
       </p>
       <a
-        href="https://github.com/anicolao/clusterii/blob/feat/production-lab/docs/art/PRODUCTION_ASSETS.md"
+        href="https://github.com/anicolao/clusterii/blob/feat/campaign-admission/docs/art/PRODUCTION_ASSETS.md"
         >Exact prompts and source assets</a
       >
       <p>
@@ -184,6 +224,9 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr));
     gap: 24px;
     margin-top: 24px;
+  }
+  .faction-specimens {
+    grid-column: 1 / -1;
   }
   .samples.narrow {
     grid-template-columns: minmax(0, 393px);

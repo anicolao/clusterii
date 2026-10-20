@@ -13,3 +13,8 @@ Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | W
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Preserve supervisor checkpoints and their limited independent composition and tooling acceptance.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Extract shipped controls and feedback into a production gallery and deterministic animation inspection lab.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Publish the stacked gallery/lab dependency and preview links with explicit remaining acceptance gates.
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Retain independent hosted gallery and animation-lab review and green CI checkpoint.
+
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Record campaign privacy review and projection correction checkpoints
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Carry supervisory acceptance and privacy findings through the gallery stack
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Connect development campaign admission and private galaxy inspection to authoritative persistence

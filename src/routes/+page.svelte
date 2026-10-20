@@ -322,6 +322,10 @@
           focusId="learn"
           onclick={() => open("learn")}
         />
+        {#if saved && !busy && !pending}<a
+            class="campaign-link"
+            href={`${base}/campaigns/`}>Open campaigns <Icon kind="arrow" /></a
+          >{/if}
         {#if account}<p class="signed">
             {saved ? `Welcome back, ${saved.alias}` : "Your command awaits"}
           </p>{:else}<p class="signed">
@@ -438,3 +442,15 @@
     </section>
   {/if}
 </main>
+
+<style>
+  .campaign-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 48px;
+    color: var(--gold);
+    margin: 0 28px 12px;
+  }
+</style>

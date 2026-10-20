@@ -10,6 +10,15 @@ service cloud.firestore {
         allow write: if false;
       }
     }
+    function developer() { return request.auth != null && request.auth.token.developer == true; }
+    function member(gameId, uid) { return owner(uid) && developer() && uid in get(/databases/$(database)/documents/campaignStates/$(gameId)).data.memberUids; }
+    match /developmentCampaigns/{gameId} { allow read: if developer(); allow write: if false; }
+    match /campaignViews/{gameId}/members/{uid} {
+      allow read: if member(gameId, uid);
+      allow write: if false;
+      match /versions/{version} { allow read: if member(gameId, uid); allow write: if false; }
+    }
+    match /campaignReceipts/{uid}/results/{id} { allow read: if owner(uid); allow write: if false; }
     match /{document=**} { allow read, write: if false; }
   }
 }

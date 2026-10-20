@@ -48,9 +48,9 @@ const app = initializeApp({
     : "https://clusterii-20261020-default-rtdb.firebaseio.com",
 });
 export const auth = getAuth(app);
-const database = getDatabase(app);
-const firestore = getFirestore(app);
-const functions = getFunctions(app, "us-central1");
+export const database = getDatabase(app);
+export const firestore = getFirestore(app);
+export const functions = getFunctions(app, "us-central1");
 if (emulator) {
   if (!["localhost", "127.0.0.1"].includes(location.hostname))
     throw new Error("Emulators require a local origin");
@@ -130,21 +130,35 @@ export function submitProfile(
   next: (receipt: Receipt) => void,
   fail: (error: Error) => void,
 ) {
+  return submitCommand(
+    pending,
+    pending.envelope,
+    `profileCommands/${uid}/${pending.id}`,
+    ["profiles", uid, "receipts", pending.id],
+    next,
+    fail,
+  );
+}
+export function submitCommand<T>(
+  pending: { dispatched?: boolean },
+  payload: unknown,
+  ingress: string,
+  receipt: string[],
+  next: (value: T) => void,
+  fail: (error: Error) => void,
+) {
   let active = true;
   // Subscribe before write. Receipt remains authoritative even when retrying a create-only command.
   const stop = onSnapshot(
-    doc(firestore, "profiles", uid, "receipts", pending.id),
+    doc(firestore, receipt[0], ...receipt.slice(1)),
     (snapshot) => {
-      if (active && snapshot.exists()) next(snapshot.data() as Receipt);
+      if (active && snapshot.exists()) next(snapshot.data() as T);
     },
     fail,
   );
   if (!pending.dispatched) {
     pending.dispatched = true;
-    void set(
-      ref(database, `profileCommands/${uid}/${pending.id}`),
-      pending.envelope,
-    ).catch((error) => {
+    void set(ref(database, ingress), payload).catch((error) => {
       // A retry can be denied because the original was accepted. Keep listening for its receipt.
       if (error.code !== "PERMISSION_DENIED") {
         pending.dispatched = false;

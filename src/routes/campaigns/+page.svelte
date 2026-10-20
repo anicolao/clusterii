@@ -1,0 +1,618 @@
+<script lang="ts">
+  import {
+    campaignFeedback,
+    campaignPendingMessage,
+    campaignNetworkMessage,
+  } from "$lib/campaign-feedback";
+  import { onMount, tick } from "svelte";
+  import { base } from "$app/paths";
+  import type {
+    CampaignAction,
+    CampaignDirectory,
+    CampaignView,
+  } from "@shared/campaign";
+  import { rules, type FactionId } from "@shared/rules";
+  import type { PendingCampaign } from "$lib/campaign-session";
+  import ActionButton from "$lib/components/ActionButton.svelte";
+  import Feedback from "$lib/components/Feedback.svelte";
+  import FactionPicker from "$lib/components/FactionPicker.svelte";
+  import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import type { Portrait } from "@shared/profile";
+  let portrait = $state<Portrait>("G1");
+  import Galaxy from "$lib/components/galaxy/Galaxy.svelte";
+  let service: typeof import("$lib/campaign-session");
+  let account = $state<string | null>(null);
+  let access = $state<"loading" | "signed-out" | "restricted" | "developer">(
+    "loading",
+  );
+  let games = $state<CampaignDirectory[]>([]);
+  let selected = $state<string | null>(null);
+  let view = $state<CampaignView | null>(null);
+  let loading = $state(false);
+  let creating = $state(false);
+  let name = $state("");
+  let capacity = $state(4);
+  let faction = $state<FactionId>("heliac");
+  let pending = $state<PendingCampaign | null>(null);
+  let busy = $state(false);
+  let message = $state("");
+  let error = $state("");
+  let remedy = $state<"network" | "validation" | "conflict" | null>(null);
+  let title = $state<HTMLHeadingElement>();
+  let generation = 0;
+  let selection = 0;
+  let stopDirectory = () => {};
+  let stopView = () => {};
+  let stopReceipt = () => {};
+  let timer: ReturnType<typeof setTimeout>;
+  const game = $derived(games.find((g) => g.id === selected));
+  function failed() {
+    error = campaignNetworkMessage;
+    remedy = "network";
+    busy = false;
+    clearTimeout(timer);
+  }
+  async function select(id: string) {
+    const current = ++selection;
+    const session = generation;
+    stopView();
+    selected = id;
+    view = null;
+    loading = true;
+    creating = false;
+    try {
+      const stop = await service.observeCampaign(
+        id,
+        account!,
+        (next) => {
+          if (session !== generation || current !== selection) return;
+          view = next;
+          loading = false;
+        },
+        failed,
+      );
+      if (session !== generation || current !== selection) stop();
+      else stopView = stop;
+    } catch {
+      if (session === generation && current === selection) {
+        loading = false;
+        failed();
+      }
+    }
+    await tick();
+    title?.focus();
+  }
+  async function recover() {
+    if (!account || !service) return;
+    error = "";
+    remedy = null;
+    const session = generation;
+    try {
+      if (!(await service.developerAccess())) {
+        access = "restricted";
+        return;
+      }
+      if (session !== generation) return;
+      access = "developer";
+      stopDirectory();
+      stopDirectory = service.observeDirectory((next) => {
+        if (session === generation) games = next;
+      }, failed);
+      if (selected) await select(selected);
+      if (pending) dispatch();
+    } catch {
+      if (session === generation) failed();
+    }
+  }
+  onMount(() => {
+    let disposed = false;
+    let stopAuth = () => {};
+    void Promise.all([import("$lib/session"), import("$lib/campaign-session")])
+      .then(([auth, campaigns]) => {
+        if (disposed) return;
+        service = campaigns;
+        stopAuth = auth.observeAccount((user) => {
+          generation++;
+          selection++;
+          stopDirectory();
+          stopView();
+          stopReceipt();
+          clearTimeout(timer);
+          games = [];
+          view = null;
+          selected = null;
+          pending = null;
+          busy = false;
+          error = "";
+          message = "";
+          remedy = null;
+          account = user?.uid ?? null;
+          access = user ? "loading" : "signed-out";
+          if (user) void recover();
+        });
+      })
+      .catch(failed);
+    return () => {
+      disposed = true;
+      generation++;
+      selection++;
+      stopAuth();
+      stopDirectory();
+      stopView();
+      stopReceipt();
+      clearTimeout(timer);
+    };
+  });
+  function dispatch() {
+    if (!pending || !account) return;
+    const command = pending;
+    const session = generation;
+    busy = true;
+    error = "";
+    remedy = null;
+    message = campaignPendingMessage;
+    stopReceipt();
+    clearTimeout(timer);
+    stopReceipt = service.sendCampaign(
+      account,
+      command,
+      (receipt) => {
+        if (session !== generation) return;
+        stopReceipt();
+        clearTimeout(timer);
+        busy = false;
+        pending = null;
+        const feedback = campaignFeedback(command.kind, receipt);
+        message = feedback.message;
+        error = feedback.error;
+        remedy = feedback.remedy;
+        if (receipt.status === "accepted") void select(receipt.gameId);
+      },
+      failed,
+    );
+    timer = setTimeout(() => {
+      busy = false;
+      message = "";
+      error = "Still waiting for acknowledgement. Retry checks the same order.";
+      remedy = "network";
+    }, 20000);
+  }
+  async function send(id: string, action: CampaignAction) {
+    if (busy || pending) return;
+    busy = true;
+    error = "";
+    const session = generation;
+    try {
+      const command = await service.prepareCampaign(id, action);
+      if (session !== generation) return;
+      pending = command;
+      dispatch();
+    } catch {
+      if (session === generation) failed();
+    }
+  }
+  async function back() {
+    stopView();
+    selection++;
+    view = null;
+    selected = null;
+    creating = false;
+    loading = false;
+    await tick();
+    title?.focus();
+  }
+</script>
+
+<svelte:head><title>Campaigns — Cluster</title></svelte:head>
+<main class="campaign-shell">
+  <header>
+    <a href={`${base}/`}>CLUSTER</a><span class="overline"
+      >Campaign command</span
+    ><a href={`${base}/`}>Your identity</a>
+  </header>
+  <div class="development-banner">
+    Development campaigns · Mock encryption · Rules under review
+  </div>
+  <div class="campaign-body">
+    {#if access !== "developer"}
+      <section class="briefing">
+        <h1 bind:this={title} tabindex="-1">
+          {access === "loading"
+            ? "Opening your campaigns…"
+            : access === "signed-out"
+              ? "Your command awaits"
+              : "Development access"}
+        </h1>
+        <p>
+          {access === "signed-out"
+            ? "Sign in and save your identity to continue."
+            : access === "restricted"
+              ? "Campaign testing is limited to developer accounts. Public campaigns open with secure encryption and approved rules."
+              : "Checking your account’s campaign access."}
+        </p>
+        <a class="return" href={`${base}/`}>Return to entry</a>
+      </section>
+    {:else}
+      <div class="page-heading">
+        <h1 bind:this={title} tabindex="-1">
+          {game?.name ??
+            (creating ? "Assemble a galaxy" : "Your next alliance")}
+        </h1>
+        {#if selected || creating}<ActionButton
+            class="quiet"
+            onclick={back}
+            disabled={!!pending || busy}>All campaigns</ActionButton
+          >{:else}<ActionButton
+            class="primary"
+            onclick={() => {
+              creating = true;
+              void tick().then(() => title?.focus());
+            }}>Create campaign</ActionButton
+          >{/if}
+      </div>
+      <Feedback
+        {message}
+        {error}
+        reconnect={remedy === "network" && !pending ? recover : undefined}
+      />
+      {#if pending}<ActionButton
+          class="primary retry"
+          disabled={busy}
+          onclick={dispatch}
+          >{busy ? "Awaiting acknowledgement…" : "Retry order"}</ActionButton
+        >{/if}
+      {#if creating}
+        <form
+          class="briefing"
+          onsubmit={(event) => {
+            event.preventDefault();
+            void send(crypto.randomUUID(), {
+              kind: "campaign.create",
+              expectedRevision: 0,
+              name,
+              capacity,
+              mode: "mock",
+              development: true,
+            });
+          }}
+        >
+          <p class="overline gold">A shared beginning</p>
+          <p>
+            Choose a name and roster size. Each faction receives an equal share
+            of seats. A full roster begins at the next quarter-hour boundary.
+          </p>
+          <label for="campaign-name">Campaign name</label><input
+            id="campaign-name"
+            bind:value={name}
+            minlength="2"
+            maxlength="40"
+            required
+            disabled={busy || !!pending}
+          />
+          <fieldset disabled={busy || !!pending}>
+            <legend>Empires</legend>
+            <div class="capacity">
+              {#each rules.playerCounts as count}<label
+                  ><input
+                    type="radio"
+                    name="capacity"
+                    value={count}
+                    bind:group={capacity}
+                  />{count}</label
+                >{/each}
+            </div>
+          </fieldset>
+          <p class="scope">
+            This development game uses mock encryption. It is available only to
+            developer accounts and is not a private or public competitive
+            campaign.
+          </p>
+          <ActionButton
+            class="primary"
+            type="submit"
+            disabled={busy || !!pending}>Create galaxy</ActionButton
+          >
+        </form>
+      {:else if selected}
+        {#if loading}<p role="status">Recovering your campaign…</p>
+        {:else if view}<Galaxy {view} />
+          <section class="roster">
+            <h2>Your alliance begins here</h2>
+            <p>
+              {game?.startAt
+                ? `Scheduled for ${new Date(game.startAt).toLocaleString()}.`
+                : "Waiting for every empire to take its seat."}
+            </p>
+            {#if view.phase !== "active"}<ActionButton
+                class="secondary"
+                disabled={busy || !!pending}
+                onclick={() =>
+                  send(view!.id, {
+                    kind: "campaign.leave",
+                    expectedRevision: game?.revision ?? view!.revision,
+                  })}>Leave campaign</ActionButton
+              >{/if}
+          </section>
+        {:else if game}<FactionPicker
+            bind:value={faction}
+            {game}
+            disabled={busy || !!pending || game.phase !== "waiting"}
+          />
+          <section class="roster">
+            <h2>Campaign briefing</h2>
+            <p>
+              {game.capacity} empires · {game.capacity / 4} seats per faction · a
+              full roster starts at the next quarter-hour. You may leave until the
+              scheduled start.
+            </p>
+            <p>
+              The design objective is shared victory: an eligible alliance holds {rules.victoryStarFraction *
+                100}% of stars for {rules.victoryHoldTicks} ticks. This development
+              slice supports admission and galaxy inspection; economy, conquest and
+              victory do not run yet.
+            </p>
+            <details>
+              <summary>Review this campaign’s rules</summary>
+              <p>
+                {game.rulesetVersion} · Review status. A tick lasts {rules.tickSeconds /
+                  60} minutes. Starting holdings: {rules.startingAssets.credits} credits,
+                {rules.startingAssets.fighters} fighters, {rules.startingAssets
+                  .infantry} infantry; {rules.startingAssets.markets} markets, {rules
+                  .startingAssets.camps} camp, {rules.startingAssets.bases} base and
+                {rules.startingAssets.stations} station. Home systems match faction
+                affinity. The faction selector shows the applicable production matrix.
+              </p>
+            </details>
+            <h2>Your face in this galaxy</h2>
+            <p>
+              Portrait changes appearance. Your faction determines affinity.
+            </p>
+            <div class="portrait-choice">
+              <PortraitPicker
+                bind:value={portrait}
+                disabled={busy || !!pending}
+              />
+            </div>
+            <h2>{game.roster.length} / {game.capacity} empires assembled</h2>
+            <ul>
+              {#each game.roster as seat}<li>
+                  {seat.alias} · {rules.factions.find(
+                    (f) => f.id === seat.faction,
+                  )?.name}
+                </li>{/each}
+            </ul>
+            <ActionButton
+              class="primary"
+              disabled={busy ||
+                !!pending ||
+                game.phase !== "waiting" ||
+                game.roster.filter((s) => s.faction === faction).length >=
+                  game.capacity / 4}
+              onclick={() =>
+                send(game!.id, {
+                  kind: "campaign.join",
+                  expectedRevision: game!.revision,
+                  faction,
+                  portrait,
+                })}>Claim your seat</ActionButton
+            >
+          </section>
+        {/if}
+      {:else}<section class="campaign-list" aria-label="Campaign directory">
+          {#if games.length === 0}<p>
+              No development campaigns have been created. Assemble the first
+              galaxy.
+            </p>{/if}
+          {#each games as item}<ActionButton
+              class="campaign-card"
+              onclick={() => select(item.id)}
+              ><span class="overline">{item.phase}</span><strong
+                >{item.name}</strong
+              ><span
+                >{item.roster.length} / {item.capacity} empires · {item.capacity *
+                  32} stars</span
+              ><span>Open campaign →</span></ActionButton
+            >{/each}
+        </section>
+      {/if}
+    {/if}
+  </div>
+</main>
+
+<style>
+  .campaign-shell {
+    align-items: stretch;
+    height: 100svh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(ellipse at top right, #233548, #07121d 70%);
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 28px;
+    border-bottom: 1px solid #827354;
+    flex-shrink: 0;
+  }
+  header a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    color: var(--gold);
+    text-decoration: none;
+  }
+  header a:first-child {
+    font:
+      500 28px "Cormorant Garamond",
+      serif;
+    letter-spacing: 0.16em;
+  }
+  .development-banner {
+    padding: 10px 28px;
+    background: #372d1c;
+    color: #f5d29b;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .campaign-body {
+    overflow: auto;
+    min-height: 0;
+    flex: 1;
+  }
+  .page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 28px;
+  }
+  h1 {
+    font:
+      500 42px "Cormorant Garamond",
+      serif;
+    margin: 0;
+  }
+  h2 {
+    font:
+      500 30px "Cormorant Garamond",
+      serif;
+  }
+  .briefing {
+    max-width: 720px;
+    padding: 36px;
+    margin: 20px auto;
+    background: #091725e8;
+    border: 1px solid #8e7c59;
+  }
+  p {
+    line-height: 1.6;
+  }
+  .briefing > label {
+    display: block;
+    margin: 24px 0 8px;
+  }
+  #campaign-name {
+    width: 100%;
+    min-height: 52px;
+    background: #07111c;
+    color: inherit;
+    padding: 12px;
+    border: 1px solid #ad9a76;
+    font: inherit;
+  }
+  fieldset {
+    margin: 24px 0;
+  }
+  .capacity {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  .capacity label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 52px;
+    flex: 1;
+    border: 1px solid #9b8765;
+    position: relative;
+  }
+  .capacity label:has(:checked) {
+    background: #80623555;
+    border-color: #f5d29b;
+  }
+  .capacity input {
+    width: 44px;
+    height: 44px;
+  }
+  .scope {
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .return {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    color: var(--gold);
+  }
+  .campaign-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 16px 28px 40px;
+  }
+  .campaign-list :global(.campaign-card) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    min-height: 100px;
+    background:
+      radial-gradient(ellipse at top right, #53607966, transparent), #091725;
+    border: 1px solid #a08c66;
+    text-align: left;
+  }
+  .campaign-list strong {
+    font:
+      500 36px "Cormorant Garamond",
+      serif;
+  }
+  .roster {
+    padding: 24px 28px;
+    background: #091725;
+  }
+  .portrait-choice {
+    max-width: 600px;
+    margin: 20px 0;
+  }
+  summary {
+    min-height: 48px;
+    cursor: pointer;
+    padding: 14px 0;
+    color: var(--gold);
+  }
+  .roster li {
+    padding: 8px 0;
+  }
+  :global(.retry) {
+    margin: 0 28px 20px;
+  }
+  .campaign-body :global(.feedback) {
+    margin: 0 28px;
+  }
+  @media (max-width: 700px) {
+    header {
+      padding: 8px 16px;
+    }
+    header .overline {
+      display: none;
+    }
+    .development-banner {
+      padding: 10px 16px;
+      font-size: 12px;
+    }
+    .page-heading {
+      padding: 20px 16px;
+      align-items: flex-start;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    .briefing {
+      margin: 0 12px 20px;
+      padding: 24px;
+    }
+    .campaign-list {
+      padding: 12px 16px 24px;
+      grid-template-columns: 1fr;
+    }
+    .roster {
+      padding: 20px 16px;
+    }
+  }
+</style>
