@@ -177,3 +177,7 @@ let's adopt the prompt hygeine of ../beyond for this project. Review that, creat
 ## Prompt 4: Share Repository
 
 this repo should be shared with AndrewBlackledge, same as my TODO repo, he should have maximum permissions. please fix
+
+## Prompt 5: Clarify Continuation Log
+
+OK we can't figure out what PROMPT_WORK.md is about. IT isn't referenced, is empty, and appears to serve no purpose. this is blocking landing the PR

@@ -8,7 +8,9 @@ Update the log before other project work. Never rewrite or remove entries, and n
 
 Install the versioned pre-commit hook with `git config core.hooksPath .githooks`. It checks the staged index for a new prompt or an explicit continuation. It cannot verify the conversation; the agent is responsible for the verbatim copy.
 
-For multiple commits responding to the same prompt, append one unique logical step to PROMPT_WORK.md:
+PROMPTS.md records user requests. PROMPT_WORK.md records additional commits for an already logged request, so the hook can accept follow-up work without duplicating the user's prompt. Create it only when a request needs a second commit; do not keep an empty placeholder.
+
+For each additional commit responding to the same prompt, append one unique logical step to PROMPT_WORK.md and stage it with the work:
 
 ```text
 Prompt N | SHA256 | Description of this continuation
