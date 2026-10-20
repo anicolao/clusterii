@@ -17,3 +17,5 @@ Hosted Google and hosted scheduler execution, independent rendered acceptance, r
 Local evidence: 11 unit/reducer tests (136 assertions), seven live-KMS service tests (183 assertions), and nine maintenance/gallery/lab browser tests pass. The service start worker is invoked directly against emulated state; this is not hosted Scheduler certification. Type and lint checks pass. Actual four-size paused captures are retained under `docs/ux/reviews/maintenance/`. Independent review is pending.
 
 The targeted revocation test also passes (13 assertions): a stale client token cannot bypass the backend developer recheck, and refreshed revoked credentials are denied by ingress rules.
+
+The maintenance trigger, updated campaign/scheduled-start workers and ingress rules are deployed to `clusterii-20261020`. PR #10 stacks on #9. Preview publication and full CI remain separate gates.
