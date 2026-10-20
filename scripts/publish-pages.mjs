@@ -1,7 +1,6 @@
 import { execFileSync } from "node:child_process";
 import {
   cpSync,
-  existsSync,
   mkdirSync,
   readdirSync,
   rmSync,
@@ -47,17 +46,8 @@ if (git("ls-remote", "--heads", "origin", "gh-pages")) {
   git("fetch", "origin", "gh-pages");
   git("worktree", "add", "--detach", root, "origin/gh-pages");
 } else {
-  mkdirSync(root);
-  git("-C", root, "init");
-  git("-C", root, "checkout", "--orphan", "gh-pages");
-  git(
-    "-C",
-    root,
-    "remote",
-    "add",
-    "origin",
-    git("remote", "get-url", "origin"),
-  );
+  git("worktree", "add", "--detach", root, "HEAD");
+  git("-C", root, "switch", "--orphan", "gh-pages");
 }
 const destination = pr ? join(root, `pr${pr}`) : root;
 mkdirSync(destination, { recursive: true });
