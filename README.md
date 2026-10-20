@@ -18,7 +18,7 @@ See [VISION.md](VISION.md) for the game’s design and experience.
 
 [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) lays out the milestones, dependencies, and acceptance criteria for the complete game.
 
-Compare faction leaders, ships and worlds in [Art direction options](docs/art/ART_DIRECTION_OPTIONS.md) before selecting the visual direction.
+Cinematic realism is the selected visual direction. [UX_DESIGN.md](UX_DESIGN.md) defines the game experience, desktop/phone mockups and interaction acceptance criteria. [Art direction options](docs/art/ART_DIRECTION_OPTIONS.md) retains the visual exploration.
 
 ## Contributing
 

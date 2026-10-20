@@ -55,7 +55,7 @@ Selected and legal states use labels and symbols as well as colour. Touch target
 
 Motion explains actions without controlling them. Pending commands show acknowledgement status before their effects appear as confirmed. Reduced motion removes travel flourishes, camera transitions, and particles while retaining the same outcomes. Returning players see a concise activity history, pending orders, intelligence changes, and the next tick.
 
-Artwork uses a coherent faction, ship, and planetary visual language. Decorative images never replace semantic controls or authoritative text and values. Desktop and mobile art are composed for their respective spaces. Final art selection precedes detailed screen composition.
+Artwork uses a coherent faction, ship, and planetary visual language. Decorative images never replace semantic controls or authoritative text and values. Desktop and mobile art are composed for their respective spaces. Cinematic realism is the selected art direction. [UX_DESIGN.md](UX_DESIGN.md) specifies screen composition, player flows, motion and interaction acceptance.
 
 ## Client and backend
 
