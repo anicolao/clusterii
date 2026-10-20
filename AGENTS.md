@@ -1,6 +1,6 @@
 # Project instructions
 
-README.md and VISION.md are the plan of record. Describe the design directly and assertively. Distinguish the design contract from implementation status.
+README.md, VISION.md, and CLUSTER_II_MVP.md are the design contract. IMPLEMENTATION_PLAN.md defines delivery. CLUSTER_I_DESIGN_REVIEW.md is historical evidence, not a forward requirement. Describe the design directly and assertively. Distinguish the design contract from implementation status.
 
 Record every user prompt concerning this project verbatim in PROMPTS.md, including corrections and follow-up requests. Append each prompt once, in conversation order, under the next `## Prompt N: Summary` heading. Use a 2–3 word summary, a blank line, and the verbatim prompt. Preserve spelling, punctuation, capitalization, and line breaks. Exclude assistant messages and automatically supplied environment context.
 

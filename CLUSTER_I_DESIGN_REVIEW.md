@@ -1,6 +1,6 @@
-# Cluster II design inheritance
+# Cluster I design review
 
-Cluster II carries forward Cluster’s slow real-time conquest game, diplomatic focus, browser-based 3D galaxy, and Firebase architecture. This document records the inherited decisions, the code that implements them, and the choices that need review before implementation resumes. [VISION.md](VISION.md) remains the gameplay contract; incomplete predecessor code does not override it.
+This document records Cluster I’s design, implementation, experiments, and gaps. It is a historical review, not the forward implementation contract. [CLUSTER_II_MVP.md](CLUSTER_II_MVP.md) defines Cluster II’s design; [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) defines delivery.
 
 ## Sources and scope
 

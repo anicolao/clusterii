@@ -1,6 +1,6 @@
 # Cluster II implementation plan
 
-Build the complete slow real-time conquest game defined in [VISION.md](VISION.md), preserving the architecture and interaction decisions recorded in [CLUSTER_II_DESIGN.md](CLUSTER_II_DESIGN.md). Deliver each milestone as a playable, tested increment. The predecessor supplies reusable code and assets; its mock encryption, random winner, single-owner stars, and display-only routes do not become game rules.
+Build the complete slow real-time conquest game defined in [VISION.md](VISION.md) and [CLUSTER_II_MVP.md](CLUSTER_II_MVP.md). Deliver each milestone as a playable, tested increment. [CLUSTER_I_DESIGN_REVIEW.md](CLUSTER_I_DESIGN_REVIEW.md) supplies historical evidence and reuse candidates. Retain mock encryption as a per-game development provider; replace the random winner, single-owner stars, and display-only routes with the full rules.
 
 This plan defines work and acceptance criteria. It does not claim that the application exists or resolve gameplay choices still under review.
 
@@ -46,9 +46,9 @@ Translate the recorded ruleset into a rules specification, worked examples, and 
 
 Give each game an immutable ruleset version and starting configuration. Record the tick pipeline explicitly: command application, construction, travel/arrivals, combat, ownership changes, production/escrow, research, intelligence, and victory. Determine the order in this milestone rather than allowing module implementation order to decide it.
 
-Resolve the technical review choices alongside the rules: Firebase project and preview-data policy; object encryption versus server-filtered visibility; authentication/admin roles; supported browsers/devices; runtime versions; and migration or archival of predecessor data. Preserve selective object access whichever privacy implementation is chosen.
+Implement the selected architecture: GitHub Pages for the static client, Firebase for authoritative processing and persistence, deployment-independent game identity, and per-object encryption with per-game mock/real providers. Settle the Firebase project identity, authentication/admin roles, supported browsers/devices, runtime versions, and migration/archive policy. Define recipient grants, key provisioning/recovery/rotation, encrypted history, and paused per-game mode migration before the service implementation.
 
-Choose the art direction before detailed UX design. Use the separate faction-leader, ship, and planetary-art exploration; then specify the map, system inspector, fleet planner, economy/research panels, diplomacy, and results screens. Keep the 3D galaxy, named stars, animated stellar surfaces, and sliding information panels as the inherited interaction baseline.
+Choose the art direction before detailed UX design. Use the separate faction-leader, ship, and planetary-art exploration; then specify the map, system inspector, fleet planner, economy/research panels, diplomacy, and results screens. Compose a full-screen game application around the 3D galaxy, named stars, animated stellar surfaces, and contextual instruments. Design desktop and portrait mobile separately. Use semantic controls integrated with the selected artwork, bounded inspectors, concrete game language, and no persistent website chrome or generic dashboard grid.
 
 **Acceptance:** Every gameplay formula has examples and boundary cases; every review decision has a recorded outcome or an explicit dependency on the milestone it blocks. No unresolved rule is silently encoded as a default. Infrastructure work can proceed while unrelated balance values are reviewed.
 
@@ -56,11 +56,15 @@ Choose the art direction before detailed UX design. Use the separate faction-lea
 
 Port the static SvelteKit/TypeScript client, Threlte/three.js scene foundation, Firebase integration, and shared TypeScript modules. Inventory reused code/assets against the reviewed predecessor commit and preserve authorship and license notices. Pin compatible dependencies and declare each package's dependencies explicitly.
 
-Provide reproducible Bun development commands, strict type checking, Biome, unit tests, and an emulator launcher for Auth, Realtime Database, Firestore, Functions, and Hosting. Connect all development services to their emulators. Make normal and watch builds use the same module/alias contract. Integrate checks into the existing prompt hook rather than replacing it.
+Provide reproducible Bun development commands, strict type checking, Biome, unit tests, and an emulator launcher for Auth, Realtime Database, Firestore, and Functions, plus a local static server that reproduces Pages subpaths and routing. Connect all development services to their emulators. Make normal and watch builds use the same module/alias contract. Integrate checks into the existing prompt hook rather than replacing it.
 
-Restore Google sign-in, loading/signed-out states, version identification, and a small application shell. Establish CI builds and hosted previews under the selected backend policy. Separate versioning from deployment side effects.
+Restore Google sign-in and a full-screen Play/Continue/Learn entry scene. Keep version identification and operational diagnostics outside normal player copy. Build with an injected base path: `/clusterii` for production and `/clusterii/prN` for each PR. Use prerendered trailing-slash routes with query-string game IDs; make assets, links, invitations, authentication return flows, and recovery base-path aware. Do not depend on Firebase Hosting rewrites.
 
-**Acceptance:** A clean checkout builds and starts from documented commands; two browser sessions sign in through emulators; direct links and reload work; the hosted preview identifies its exact source revision. Local tests cannot accidentally write to production.
+Publish builds to GitHub Pages through a retained `gh-pages` tree. Serialize shared publishing writes, preserve unrelated destinations, and reject stale publication for a destination. Post/update the preview link and record exact commit/workflow provenance after deployment. Run publication independently of full verification, including for stacked PRs; deploy main only through the reviewed merge workflow. Define preview retention and cleanup without deleting production or other active previews.
+
+Deploy Firebase functions, rules, indexes, and schedules separately. Use canonical game IDs and compatible schemas across production and preview clients; authorize development games through server policy. Keep service credentials out of static bundles. Separate versioning from deployment side effects.
+
+**Acceptance:** A clean checkout builds and starts from documented commands; two browser sessions sign in through emulators; direct links and reload work; production and nested preview URLs load assets, accept direct game links, and survive refresh. A hosted preview identifies its exact source revision and is published while long verification runs proceed independently. Compatible production/preview clients reopen the same authorized game. Local tests cannot accidentally write to production.
 
 ## 2. Build the authoritative game service
 
@@ -68,11 +72,15 @@ Keep the command → server transition → persisted changes → subscribed clie
 
 Implement serialized or transactionally protected transitions per game. Commit state, ordered history, command result, and relevant summaries consistently. Deduplicate retries, reject stale/illegal actions, and expose pending/accepted/rejected status to the client. Use monotonic revisions rather than millisecond timestamps as the ordering authority.
 
-Preserve patch replay with bounded blocks, snapshots, retention, schema migration, and gap recovery. Supply time, IDs, and random draws explicitly to transition logic so fixtures are reproducible; persist authoritative outcomes. The server retains complete state while clients receive only their permitted view or encrypted objects under the chosen privacy contract.
+Preserve patch replay with bounded blocks, snapshots, retention, schema migration, and gap recovery. Supply time, IDs, and random draws explicitly to transition logic so fixtures are reproducible; persist authoritative outcomes. The server retains complete state; object content is encrypted and access keys are granted only to permitted recipients. Public metadata and ciphertext transport do not grant access to hidden content. Do not expose secret state through plaintext snapshots, command results, logs, or replay helpers.
+
+Implement the shared crypto-provider interface and versioned envelopes first, retaining the fake cipher in `mock` mode. Select `mock` or `real` from server-owned game configuration, never a client/global bypass. Both modes follow identical validation, grants, serialization, and replay paths. Implement the real provider with authenticated encryption and reviewed key lifecycle before public campaigns; unavailable real mode fails closed.
+
+Provide developer-only per-game mode controls. For an existing development game, pause processing, migrate retained objects, key grants, and snapshots into a new epoch, verify authorized replay, and atomically switch. Resume only after validation; recover failures to the old epoch. Preserve the fact that mock-mode data was exposed and prohibit conversion of that history into a supposedly confidential public campaign. Public games reject mock mode and unauthorized mode changes.
 
 Implement scheduler leases, catch-up boundaries, repeat-safe ticks, and recovery after failure. Add authorization tests for direct database access as well as commands. Test wrong actors, forged payload identities, unauthorized administration, hidden objects, and replay/history leakage.
 
-**Acceptance:** Concurrent commands cannot overspend or overwrite each other; retries and duplicate ticks have one effect; snapshot plus replay reproduces authoritative state; reconnect and game switching cannot mix games or expose another player's information. A restart midway through processing neither loses nor duplicates an accepted action.
+**Acceptance:** Concurrent commands cannot overspend or overwrite each other; retries and duplicate ticks have one effect; snapshot plus replay reproduces authoritative state; reconnect and game switching cannot mix games or authorized views. Run gameplay/access-grant tests in both modes; real mode additionally proves wrong-key rejection, tamper/substitution rejection, and absence of plaintext secrets. Mock mode is explicitly non-confidential. Switching one development game leaves others unchanged, and failed migrations preserve recoverable state. A restart midway through processing neither loses nor duplicates an accepted action.
 
 ## 3. Deliver profiles, lobby, factions, and galaxy
 
@@ -111,7 +119,7 @@ Build research selection, costs, progress, level completion, and effective-tick 
 
 Use `output^(1 + level/100)` where specified, with defined precision, overflow limits, and rounding. Handle scanning probabilities at zero distance, certainty, and long range. Persist acquisition outcomes so retries do not reroll intelligence. Feed research effects into economy immediately and expose navigation/combat effects for the following milestones.
 
-**Acceptance:** Every level produces the reviewed effect; switching research cannot duplicate progress; research completion affects the correct tick. Unknown information is absent from unauthorized responses and histories, not merely hidden by the UI. Replayed intelligence matches the original acquisition.
+**Acceptance:** Every level produces the reviewed effect; switching research cannot duplicate progress; research completion affects the correct tick. Unknown plaintext is absent from unauthorized responses and histories, not merely hidden by the UI; real-mode ciphertext cannot be decrypted without the corresponding grant. Mock fixtures validate grants and rendered views without claiming secrecy from data inspection. Replayed intelligence matches the original acquisition.
 
 ## 6. Implement fleets and travel
 
@@ -131,11 +139,11 @@ Resolve orbital and surface control separately. Apply casualties, control change
 
 ## 8. Implement diplomacy and cooperation
 
-Deliver private rooms with explicit invitations, membership, message ordering, unread state, and recovery. Preserve the predecessor's ability to share prior conversation history, governed by the reviewed admission/revocation policy. Replace raw `@UID` access commands with clear membership controls. Enforce visibility on the server or through the selected real key-distribution implementation.
+Deliver private rooms with explicit invitations, membership, message ordering, unread state, and recovery. Preserve the predecessor's ability to share prior conversation history, governed by the reviewed admission/revocation policy. Replace raw `@UID` access commands with clear membership controls. Use the same object/key-grant interface in mock and real games, with server-enforced membership and real-mode confidentiality. Test admission, key rotation, revocation, and retained-history disclosure against both providers.
 
 Add alliance creation, invitations, acceptance, membership changes, withdrawal, and the effects defined in the rules contract. Implement permitted resource transfers/trades with offers, expiry/cancellation, atomic settlement, and an audit trail. Define what intelligence and military access allies share; do not automatically expose every private object upon joining an alliance.
 
-**Acceptance:** Invited participants can negotiate and cooperate; outsiders cannot retrieve messages or intelligence through direct requests or old patches. Concurrent trade acceptance settles once. Withdrawal changes future permissions without pretending to erase information already seen. Membership changes cannot evade combat or victory rules.
+**Acceptance:** Invited participants can negotiate and cooperate; unauthorized clients receive no plaintext messages or usable key grants through direct requests or old patches in real mode. Mock mode exercises the same membership behavior without a confidentiality claim. Concurrent trade acceptance settles once. Withdrawal changes future permissions without pretending to erase information already seen. Membership changes cannot evade combat or victory rules.
 
 ## 9. Implement victory and the repeated-game loop
 
@@ -151,11 +159,13 @@ Implement the chosen cross-game incentives for different alliances. Store only t
 
 Develop this work alongside milestones 3–9. Apply the selected art direction to faction portraits, ships, star/system views, panels, icons, and reports, preserving asset provenance. Complete the full information hierarchy: galaxy, systems, fleets, economy, research, diplomacy, activity, and victory.
 
-Support the selected desktop and phone viewports, touch and keyboard navigation, readable ownership/production displays, focus management, reduced motion, and useful loading/error states. Bound label density and rendering cost for the maximum supported galaxy. Provide textual access to all gameplay actions represented in the canvas.
+Compose the galaxy as the application surface. Keep selected-system context and committing controls visible on desktop; put one focal task and a safe-area-aware action rail on portrait mobile. Do not shrink desktop or replace the scene with website panels. Use reusable semantic controls, themed inspectors/trays, and decorative art layers with no pointer interception. Provide textual access to every canvas action.
+
+Require 44 × 44 CSS pixel targets, nonoverlapping active regions, visible keyboard focus, focus containment/restoration, and bounded scrolling with visible continuation. Show gameplay facts and remedies in copy; keep backend, revision, and encryption details in developer diagnostics. Pending orders wait for acknowledgement before appearing committed. Catch-up restores state without a burst of historical animations; reduced motion preserves all outcomes. Bound label density and rendering cost for the largest supported galaxy.
 
 Add first-game guidance and an in-game rules reference. A returning player sees what changed, pending orders, relevant messages, resource changes, and next scheduled events. Decide notification channels during UX review; notifications supplement the authoritative in-game activity history.
 
-**Acceptance:** Representative players complete the entire loop without developer assistance. Every action is usable through the supported input methods; private information remains private in reports and notifications. Errors and stale views explain recovery without requiring a refresh or losing unsent work silently.
+**Acceptance:** Review actual phone, desktop, and large-display compositions against the selected art/UX direction, then verify them with deterministic browser captures and geometry assertions. Representative players complete the entire loop without developer assistance. Every action is usable through the supported input methods; private information remains private in reports and notifications. Errors and stale views explain recovery without requiring a refresh or losing unsent work silently.
 
 ## 11. Verify balance, scale, and long-running play
 
@@ -169,21 +179,33 @@ Run accelerated full campaigns and real-cadence multiplayer soak sessions. Exerc
 
 Document deployment, compatible client/server/schema rollout, rollback, backup/restore, incident response, game administration, and retention. Establish alerts for overdue ticks, command failures, authorization violations, abnormal resource growth, and storage/cost limits without logging private chat content or keys.
 
-Rehearse the selected predecessor-data migration or archive policy; do not silently replace existing games. Verify production authentication, roles, security rules, scheduler, indexes, secrets, and hosting against the reviewed environment policy. Publish player-facing rules, help, and support/reporting routes.
+Rehearse the selected predecessor-data migration or archive policy; do not silently replace existing games. Verify Pages production/preview subpaths, static route refresh, Google sign-in return flows, canonical game recovery, and matching revision metadata. Rehearse compatible Firebase rollout before publishing dependent clients. Verify production roles, security rules, scheduler, indexes, and secrets. Require real encryption for public campaigns and exercise per-game mode migration only on explicitly designated development games. Publish player-facing rules, help, and support/reporting routes.
 
 **Acceptance:** Restore a campaign into a clean environment, deploy and roll back a compatible change, and complete a hosted multiplayer smoke campaign. Release only after the full game loop, privacy checks, operating limits, and recovery procedures have evidence.
 
 ## Verification and completion standard
 
-Each feature includes shared-rule tests, applicable Firebase emulator tests, and browser journeys through ordinary player controls. Add visual checks for changed screens using reproducible states. Use independent players/sessions for concurrency, diplomacy, and visibility tests; do not substitute admin-injected state for the main end-to-end journey.
+Each feature includes shared-rule tests, applicable Firebase emulator tests, and browser journeys through ordinary player controls. Use illustrated browser journeys and a shared step helper for changed screens. Capture acknowledged outcomes with loaded fonts/images and settled motion; assert behavior and geometry as well as pixels. Pin renderer/browser/font environments and review baseline changes separately from verification. Exercise phone 393×852, desktop 1440×1000, large display 3840×2160, and short-desktop layouts; large-display coverage does not add a shared-table game mode. Use independent players/sessions for concurrency, diplomacy, and visibility tests; do not substitute admin-injected state for the main end-to-end journey.
 
 | Layer | Required evidence |
 | --- | --- |
 | Rules | Worked examples, rounding/boundary cases, conservation invariants, seeded results. |
 | Service | Authorization, validation, atomicity, retry safety, tick recovery, replay and migration. |
 | Browser | Sign-in → join → build → research → travel → conquer → negotiate → win, with reload/reconnect throughout. |
-| Privacy | Direct API/database attempts, unauthorized history access, alliance changes, and stale intelligence. |
+| Privacy | Both crypto-provider contracts, developer mode authorization/migration, real-mode tampering and wrong keys, direct database/history access, alliance changes, and stale intelligence. |
 | Presentation | Supported viewport/input coverage, readable state, no placeholder labels or fake values. |
-| Operations | Hosted revision verification, scale measurements, backup restoration, and rollout/rollback rehearsal. |
+| Operations | Pages root/nested preview smoke checks, canonical game recovery, independent publication/verification, backend compatibility, revision verification, scale measurements, restoration, and rollback. |
 
 The game is complete when all four factions, four developments, eight technologies, market speculation, fleets, both combat layers, credit escrow, diplomacy, alliance victory, and repeated-game incentives operate together in a sustained multiplayer campaign. Documentation, accessible controls, provenance, security, and operational recovery are part of that completion—not a separate follow-up project.
+
+
+## Deployment and UX review evidence
+
+Reviewed Pantheon’s local implementation at `4a14001a352d2ccdc2a1e5883bca9414284b21ca`. These references explain the adopted delivery and interaction patterns; the forward contract is self-contained in CLUSTER_II_MVP.md.
+
+- [Publishing workflow](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/.github/workflows/deploy.yml): production and retained `/prN/` Pages builds, base-path injection, serialized publication, and immediate preview links. [Verification](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/.github/workflows/ci-and-deploy.yml) is a separate workflow. Cluster applies verification to stacked PRs too and adds stale-publication protection.
+- [Svelte configuration](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/svelte.config.js) and [route layout](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/src/routes/+layout.ts): static builds, configurable base path, prerendering, and trailing slashes. The application uses query-string room IDs and base-aware asset/navigation paths.
+- [UX specification](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/UX_DESIGN.md) and [entry implementation](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/src/routes/+page.svelte): game-world composition, separate desktop/mobile layouts and assets, Play/Continue/Learn, restrained motion, and player-language recovery.
+- [GameButton](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/src/lib/components/GameButton.svelte) and [DialogFrame](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/src/lib/components/DialogFrame.svelte): semantic controls with themed artwork, noninteractive decorative layers, visible focus, and composition-aware sizing.
+
+This review covers local source and design, not a certification of Pantheon’s hosted behavior. Cluster retains authoritative server processing and encrypted object access; it does not adopt Pantheon’s trusted-client replay privacy model, card-game mechanics, or shared-table scope.
