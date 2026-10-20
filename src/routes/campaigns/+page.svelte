@@ -4,6 +4,7 @@
     campaignPendingMessage,
     campaignNetworkMessage,
   } from "$lib/campaign-feedback";
+  import { goto } from "$app/navigation";
   import { onMount, tick } from "svelte";
   import { base } from "$app/paths";
   import type {
@@ -27,6 +28,16 @@
     "loading",
   );
   let games = $state<CampaignDirectory[]>([]);
+  let memberships = $state<string[]>([]);
+  let section = $state<"joined" | "joinable">("joined");
+  const listed = $derived(
+    games.filter((game) =>
+      section === "joined"
+        ? memberships.includes(game.id)
+        : game.phase === "waiting" && !memberships.includes(game.id),
+    ),
+  );
+  let stopMemberships = () => {};
   let selected = $state<string | null>(null);
   let view = $state<CampaignView | null>(null);
   let loading = $state(false);
@@ -59,6 +70,11 @@
     const session = generation;
     stopView();
     selected = id;
+    void goto(`${base}/campaigns/?campaign=${encodeURIComponent(id)}`, {
+      replaceState: true,
+      noScroll: true,
+      keepFocus: true,
+    });
     view = null;
     loading = true;
     creating = false;
@@ -75,10 +91,19 @@
       );
       if (session !== generation || current !== selection) stop();
       else stopView = stop;
-    } catch {
+    } catch (reason) {
       if (session === generation && current === selection) {
         loading = false;
-        failed();
+        if (
+          reason &&
+          typeof reason === "object" &&
+          "code" in reason &&
+          reason.code === "functions/not-found"
+        ) {
+          error =
+            "This campaign is no longer available. Return to all campaigns to choose another.";
+          remedy = "validation";
+        } else failed();
       }
     }
     await tick();
@@ -98,6 +123,14 @@
       if (session !== generation) return;
       access = "developer";
       stopDirectory();
+      stopMemberships();
+      stopMemberships = service.observeMemberships(
+        account,
+        (ids) => {
+          if (session === generation) memberships = ids;
+        },
+        failed,
+      );
       stopDirectory = service.observeDirectory((next) => {
         if (session === generation) games = next;
       }, failed);
@@ -121,9 +154,13 @@
           stopView();
           stopReceipt();
           clearTimeout(timer);
+          memberships = [];
+          stopMemberships();
           games = [];
           view = null;
-          selected = null;
+          const requested = new URL(location.href).searchParams.get("campaign");
+          selected =
+            requested && /^[a-f0-9-]{36}$/.test(requested) ? requested : null;
           pending = null;
           busy = false;
           error = "";
@@ -140,6 +177,7 @@
       generation++;
       selection++;
       stopAuth();
+      stopMemberships();
       stopDirectory();
       stopView();
       stopReceipt();
@@ -199,6 +237,11 @@
     selection++;
     view = null;
     selected = null;
+    void goto(`${base}/campaigns/`, {
+      replaceState: true,
+      noScroll: true,
+      keepFocus: true,
+    });
     creating = false;
     loading = false;
     await tick();
@@ -401,11 +444,28 @@
               </section>{/if}
           {/if}
         {:else}<section class="campaign-list" aria-label="Campaign directory">
-            {#if games.length === 0}<p>
-                No development campaigns have been created. Assemble the first
-                galaxy.
+            <div
+              class="directory-tabs"
+              role="group"
+              aria-label="Campaign sections"
+            >
+              <ActionButton
+                class="secondary"
+                aria-pressed={section === "joined"}
+                onclick={() => (section = "joined")}
+                >Your campaigns ({memberships.length})</ActionButton
+              ><ActionButton
+                class="secondary"
+                aria-pressed={section === "joinable"}
+                onclick={() => (section = "joinable")}
+                >Joinable campaigns</ActionButton
+              >
+            </div>
+            {#if listed.length === 0}<p>
+                No campaigns in this section. Create a galaxy or browse joinable
+                campaigns.
               </p>{/if}
-            {#each games as item}<ActionButton
+            {#each listed as item}<ActionButton
                 class="campaign-card"
                 onclick={() => select(item.id)}
                 ><span class="overline">{item.phase}</span><strong
@@ -633,6 +693,16 @@
     min-height: 48px;
     color: var(--gold);
   }
+  .directory-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .directory-tabs :global([aria-pressed="true"]) {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: #5b482944;
+  }
   .campaign-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -710,6 +780,16 @@
     .briefing {
       margin: 0 12px 20px;
       padding: 24px;
+    }
+    .directory-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .directory-tabs :global([aria-pressed="true"]) {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: #5b482944;
     }
     .campaign-list {
       padding: 12px 16px 24px;

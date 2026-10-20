@@ -23,7 +23,10 @@ test('four independent commanders fill a roster and receive distinct homes at th
         await page.getByRole('button',{name:'Create campaign',exact:true}).click();
         await page.getByLabel('Campaign name').fill(name);
         await page.getByRole('button',{name:'Create galaxy'}).click();
-      }else await page.getByRole('button',{name:new RegExp(name)}).click();
+      }else {
+        await page.getByRole('button',{name:'Joinable campaigns',exact:true}).click();
+        await page.getByRole('button',{name:new RegExp(name)}).click();
+      }
       await page.getByRole('radio',{name:new RegExp(factions[index])}).check();
       await page.getByRole('button',{name:'Claim your seat'}).click();
       await expect(page.getByText('Your seat is confirmed.')).toBeVisible();

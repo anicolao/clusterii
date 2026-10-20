@@ -1,7 +1,11 @@
 <script lang="ts">
-  import { T } from "@threlte/core";
+  import { T, useThrelte } from "@threlte/core";
   import { OrbitControls, interactivity, HTML } from "@threlte/extras";
   import { AdditiveBlending, DataTexture, RGBAFormat, DoubleSide } from "three";
+  import { PerspectiveCamera, Spherical, Vector3 } from "three";
+  import type { OrbitControls as OrbitControlsType } from "three/examples/jsm/controls/OrbitControls.js";
+  import type { StarClass } from "@shared/rules";
+  import { untrack } from "svelte";
   import { onDestroy, onMount } from "svelte";
   import { base } from "$app/paths";
   import { TextureLoader, SRGBColorSpace, type Texture } from "three";
@@ -27,13 +31,62 @@
     selected,
     onselect,
     owned = [],
+    stellarClass,
+    cameraRequest,
   }: {
     stars: Star[];
     selected: string;
     onselect: (id: string) => void;
     owned?: string[];
+    stellarClass: StarClass | "all";
+    cameraRequest: { action: string; starId: string; sequence: number };
   } = $props();
   interactivity();
+  const { invalidate } = useThrelte();
+  let camera = $state<PerspectiveCamera>();
+  let controls = $state<OrbitControlsType>();
+  $effect(() => {
+    const request = cameraRequest;
+    const activeCamera = camera,
+      activeControls = controls;
+    if (!activeCamera || !activeControls) return;
+    untrack(() => {
+      const offset = activeCamera.position.clone().sub(activeControls.target);
+      if (request.action === "overview") {
+        activeControls.target.set(0, 0, 0);
+        activeCamera.position.set(0, 19, 15);
+      } else if (request.action === "in" || request.action === "out") {
+        offset.setLength(
+          Math.max(
+            5,
+            Math.min(
+              40,
+              offset.length() * (request.action === "in" ? 0.8 : 1.25),
+            ),
+          ),
+        );
+        activeCamera.position.copy(activeControls.target).add(offset);
+      } else if (request.action === "left" || request.action === "right") {
+        const spherical = new Spherical().setFromVector3(offset);
+        spherical.theta += request.action === "left" ? -0.25 : 0.25;
+        activeCamera.position
+          .copy(activeControls.target)
+          .add(new Vector3().setFromSpherical(spherical));
+      } else {
+        const destination = stars.find((s) => s.id === request.starId);
+        if (destination) {
+          activeControls.target.set(
+            destination.x / 10,
+            destination.y / 10,
+            destination.z / 10,
+          );
+          activeCamera.position.copy(activeControls.target).add(offset);
+        }
+      }
+      activeControls.update();
+      invalidate();
+    });
+  });
   const colors = { M: "#ff8b55", G: "#ffd580", A: "#eef4ff", O: "#79d9ff" };
   const bytes = new Uint8Array(64 * 64 * 4);
   for (let y = 0; y < 64; y++)
@@ -51,8 +104,13 @@
   const target = $derived(stars.find((s) => s.id === selected));
 </script>
 
-<T.PerspectiveCamera makeDefault position={[0, 19, 15]} fov={48}
+<T.PerspectiveCamera
+  bind:ref={camera}
+  makeDefault
+  position={[0, 19, 15]}
+  fov={48}
   ><OrbitControls
+    bind:ref={controls}
     enableDamping={false}
     minDistance={5}
     maxDistance={40}
@@ -77,7 +135,8 @@
       side={DoubleSide}
     /></T.Mesh
   >{/each}
-{#each stars as star, index}
+{#each stars.filter((s) => stellarClass === "all" || s.class === stellarClass || s.id === selected) as star (star.id)}
+  {@const index = stars.indexOf(star)}
   <T.Group position={[star.x / 10, star.y / 10, star.z / 10]}>
     <T.Sprite
       scale={star.id === selected

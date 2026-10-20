@@ -3,6 +3,8 @@
   import { Canvas } from "@threlte/core";
   import Scene from "./Scene.svelte";
   import type { CampaignView } from "@shared/campaign";
+  import ChartControls from "./ChartControls.svelte";
+  import type { StarClass } from "@shared/rules";
   import StellarArt from "../StellarArt.svelte";
   import CampaignRoster from "../CampaignRoster.svelte";
   import Feedback from "../Feedback.svelte";
@@ -29,6 +31,24 @@
   } = $props();
   let roster = $state(false);
   let selected = $state("");
+  let stellarClass = $state<StarClass | "all">("all");
+  let cameraRequest = $state({ action: "overview", starId: "", sequence: 0 });
+  function move(
+    action: "selected" | "home" | "overview" | "in" | "out" | "left" | "right",
+  ) {
+    if (action === "home" && view.own.home) selected = view.own.home;
+    cameraRequest = {
+      action,
+      starId: action === "home" ? (view.own.home ?? "") : star.id,
+      sequence: cameraRequest.sequence + 1,
+    };
+    void closeList();
+  }
+  const filtered = $derived(
+    view.stars.filter(
+      (s) => stellarClass === "all" || s.class === stellarClass,
+    ),
+  );
   let query = $state("");
   let listing = $state(false);
   async function openPanel(kind: "roster" | "systems") {
@@ -52,7 +72,7 @@
     if (event.key !== "Tab") return;
     const controls = [
       ...(event.currentTarget as HTMLElement).querySelectorAll<HTMLElement>(
-        "button:not(:disabled),input,select,a[href]",
+        "button:not(:disabled),input,select,summary,a[href]",
       ),
     ].filter((el) => el.getClientRects().length);
     const first = controls[0],
@@ -84,9 +104,7 @@
   );
   const holding = $derived(view.holdings.find((h) => h.starId === star?.id));
   const visible = $derived(
-    view.stars.filter((s) =>
-      s.name.toLowerCase().includes(query.toLowerCase()),
-    ),
+    filtered.filter((s) => s.name.toLowerCase().includes(query.toLowerCase())),
   );
 </script>
 
@@ -129,6 +147,8 @@
         stars={view.stars}
         owned={view.holdings.map((h) => h.starId)}
         selected={star.id}
+        {stellarClass}
+        {cameraRequest}
         onselect={(id) => (selected = id)}
       /></Canvas
     >
@@ -226,18 +246,33 @@
       onkeydown={panelKeys}
       aria-label="Systems list"
     >
-      <label for="system-search">Find a system</label><input
-        id="system-search"
-        type="search"
-        bind:value={query}
-      />
-      <div class="system-results">
-        {#each visible as item}<ActionButton
-            class={item.id === star.id ? "current-system" : ""}
-            onclick={() => closeList(item.id)}
-            aria-label={`Select ${item.name}, ${item.class} class`}
-            >{item.name}<span>{item.class}</span></ActionButton
-          >{/each}
+      <div class="list-body">
+        <ChartControls
+          bind:stellarClass
+          onmove={move}
+          homeAvailable={!!view.own.home}
+        />
+        <p>
+          {filtered.length} systems · {stellarClass === "all"
+            ? "All classes"
+            : `${stellarClass} class`}
+        </p>
+        {#if stellarClass !== "all" && star.class !== stellarClass}<p>
+            The selected system remains visible on the chart.
+          </p>{/if}
+        <label for="system-search">Find a system</label><input
+          id="system-search"
+          type="search"
+          bind:value={query}
+        />
+        <div class="system-results">
+          {#each visible as item}<ActionButton
+              class={item.id === star.id ? "current-system" : ""}
+              onclick={() => closeList(item.id)}
+              aria-label={`Select ${item.name}, ${item.class} class`}
+              >{item.name}<span>{item.class}</span></ActionButton
+            >{/each}
+        </div>
       </div>
       <ActionButton class="secondary" onclick={() => closeList()}
         >Close list</ActionButton
@@ -380,18 +415,25 @@
     position: absolute;
     left: 24px;
     bottom: 24px;
-    width: 300px;
-    max-height: 75%;
+    width: 360px;
+    max-height: calc(100% - 110px);
+    z-index: 6;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background: #07131cf5;
+    background: #07131c;
     padding: 20px;
     border: 1px solid #b29e78;
   }
-  .system-results {
+  .list-body {
     overflow: auto;
     min-height: 0;
+  }
+  .systems-list > :global(button) {
+    flex-shrink: 0;
+  }
+  .system-results {
+    margin-top: 12px;
   }
   .system-results :global(button) {
     display: flex;
@@ -405,6 +447,10 @@
     border-color: #9ee9ff;
     color: #9ee9ff;
   }
+  .list-body > label {
+    display: block;
+    margin-bottom: 12px;
+  }
   input {
     min-height: 48px;
     padding: 10px;
@@ -414,6 +460,10 @@
     border: 1px solid #87919a;
   }
   @media (min-width: 2400px) {
+    .systems-list {
+      width: 560px;
+      font-size: 24px;
+    }
     .command-rail {
       min-height: 90px;
       padding: 10px 32px;
@@ -542,10 +592,10 @@
       padding: 8px 0;
     }
     .systems-list {
-      inset: 12px;
+      inset: 66px 12px 12px;
       width: auto;
       max-height: none;
-      z-index: 2;
+      z-index: 6;
     }
     .system-results {
       flex: 1;

@@ -1,4 +1,8 @@
 <script lang="ts">
+  import ChartControls from "$lib/components/galaxy/ChartControls.svelte";
+  import type { StarClass } from "@shared/rules";
+  let chartClass = $state<StarClass | "all">("all");
+  let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
@@ -160,6 +164,18 @@
     <section>
       <h2>Campaign roster</h2>
       <CampaignRoster game={roster} />
+    </section>
+    <section>
+      <h2>Galaxy view controls</h2>
+      <ChartControls
+        bind:stellarClass={chartClass}
+        onmove={(action) => (cameraAction = action)}
+      />
+      <p role="status">{cameraAction} · {chartClass}</p>
+      <p>
+        Home centering is disabled until the server assigns a home system. These
+        controls use the production camera interaction.
+      </p>
     </section>
     <section>
       <h2>Stellar class illustrations</h2>

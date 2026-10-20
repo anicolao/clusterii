@@ -1,3 +1,4 @@
+import {writeFile} from "node:fs/promises";
 import { test, expect, type Page } from "@playwright/test";
 import { login } from "./helpers";
 async function save(page: Page, name: string) {
@@ -38,7 +39,7 @@ test("two devices preserve a conflicting draft and explicitly replace the saved 
 test("offline pending command survives retry and reconnect without losing its draft", async ({
   page,
   context,
-}) => {
+}, info) => {
   test.setTimeout(65000);
   const writes: string[] = [];
   // Observe actual transport commands, without injecting application state.
@@ -64,6 +65,14 @@ test("offline pending command survives retry and reconnect without losing its dr
   });
   await login(page, `offline-${Date.now()}@example.test`);
   await save(page, "Before network loss");
+  expect(writes.length).toBeGreaterThan(0);
+  const originalPath=JSON.parse(writes.at(-1)!).d.b.p as string;
+  const uid=originalPath.split('/')[2];
+  const root=`http://127.0.0.1:18080/v1/projects/demo-clusterii/databases/(default)/documents/profiles/${uid}`;
+  async function read(path='') { const response=await page.request.get(root+path,{headers:{Authorization:'Bearer owner'}});expect(response.ok()).toBe(true);return response.json(); }
+  const before=Number((await read()).fields.revision.integerValue);
+  const beforeVersions=(await read('/versions')).documents.length;
+  const beforeReceipts=(await read('/receipts')).documents.length;
   writes.length = 0;
   await context.setOffline(true);
   await page.getByLabel("Commander name").fill("Pending draft");
@@ -80,7 +89,26 @@ test("offline pending command survives retry and reconnect without losing its dr
     timeout: 25000,
   });
   await expect(page.getByLabel("Commander name")).toBeEnabled();
-  expect(writes).toHaveLength(1);
+  expect(writes.length).toBeGreaterThan(0);
+  const logical=writes.map(frame=>JSON.parse(frame).d.b as {p:string,d:Record<string,unknown>});
+  expect(new Set(logical.map(write=>write.p)).size).toBe(1);
+  for(const write of logical) expect(write.d).toEqual(logical[0].d);
+  const commandId=logical[0].p.split('/')[3];
+  expect(logical[0].p).toBe(`/profileCommands/${uid}/${commandId}`);
+  expect(logical[0].d.objectId).toBe(`command:${commandId}`);
+  const after=Number((await read()).fields.revision.integerValue);
+  expect(after).toBe(before+1);
+  const versions=(await read('/versions')).documents;
+  expect(versions).toHaveLength(beforeVersions+1);
+  expect(versions.map((document:{name:string})=>document.name.split('/').at(-1)).sort()).toEqual(['1','2']);
+  const receipts=(await read('/receipts')).documents;
+  expect(receipts).toHaveLength(beforeReceipts+1);
+  const accepted=await read(`/receipts/${commandId}`);
+  expect(accepted.fields.status.stringValue).toBe('accepted');
+  expect(Number(accepted.fields.revision.integerValue)).toBe(after);
+  const evidencePath=info.outputPath('idempotent-reconnect.json');
+  await writeFile(evidencePath,JSON.stringify({transportFrames:writes.length,logicalCommands:1,commandId,beforeRevision:before,afterRevision:after,versionCount:versions.length,receiptCount:receipts.length}));
+  await info.attach('Idempotent reconnect evidence',{path:evidencePath,contentType:'application/json'});
   await page.reload();
   await page.getByRole("button", { name: "Play", exact: true }).click();
   await expect(page.getByLabel("Commander name")).toHaveValue("Pending draft");

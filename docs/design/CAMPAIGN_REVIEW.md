@@ -32,4 +32,4 @@ Use `node scripts/developer-access.mjs grant EMAIL` or `revoke EMAIL` from a Fir
 
 ## Supervisory composition correction
 
-The bfc7520 render was not visually accepted. [Exact before/after evidence](../ux/reviews/CAMPAIGN_COMPOSITION.md) records the full-screen command surface, focused join panels, persistent commitment rail and stellar presentation correction. The four-player start journey uses UI admission and a real-time scheduler event in the emulator; hosted scheduling remains separately unverified. Navigation successor work is held until this correction is reviewed.
+The bfc7520 render was not visually accepted. [Exact before/after evidence](../ux/reviews/CAMPAIGN_COMPOSITION.md) records the full-screen command surface, focused join panels, persistent commitment rail and stellar presentation correction. The four-player start journey uses UI admission and a real-time scheduler event in the emulator; hosted scheduling remains separately unverified. The supervisor lifted the specific composition hold at 2ff8864; this does not approve proposed rules or certify hosted authentication/scheduling. Navigation continues in a stacked successor.
