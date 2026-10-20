@@ -4,7 +4,10 @@
     campaignPendingMessage,
     campaignNetworkMessage,
   } from "$lib/campaign-feedback";
-  import { requestedCampaign } from "$lib/campaign-navigation";
+  import {
+    requestedCampaign,
+    rememberCampaign,
+  } from "$lib/campaign-navigation";
   import { goto } from "$app/navigation";
   import { onMount, tick } from "svelte";
   import { base } from "$app/paths";
@@ -86,6 +89,8 @@
         (next) => {
           if (session !== generation || current !== selection) return;
           view = next;
+          if (next?.phase === "active" && account)
+            rememberCampaign(account, next.id);
           loading = false;
         },
         failed,
@@ -243,6 +248,8 @@
     });
     creating = false;
     loading = false;
+    error = "";
+    remedy = null;
     await tick();
     title?.focus();
   }
@@ -292,7 +299,7 @@
           </p>
           <a
             class="return"
-            href={`${base}/${selected ? `?campaign=${encodeURIComponent(selected)}` : ""}`}
+            href={`${base}/${access === "signed-out" && selected ? `?campaign=${encodeURIComponent(selected)}` : ""}`}
             >{access === "signed-out"
               ? "Sign in to continue"
               : "Return to entry"}</a

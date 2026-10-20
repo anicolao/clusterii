@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-import {login, grantDeveloper} from './helpers';
+import {login, grantDeveloper, authenticate} from './helpers';
 test('signed-out invitation preserves its campaign through Google sign-in and saved identity',async({browser,page},info)=>{
   const owner=`invite-owner-${Date.now()}@example.test`;
   await login(page,owner);
@@ -35,5 +35,37 @@ test('signed-out invitation preserves its campaign through Google sign-in and sa
     const path=info.outputPath('invited-seat-phone.png');await guest.screenshot({path});await info.attach('Invited commander seat confirmed',{path,contentType:'image/png'});
     await guest.reload();
     await expect(guest.locator('canvas')).toBeVisible();
+    const uidResponse=await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:lookup',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({email:[email]})});
+    const users=await uidResponse.json() as {users:{email:string,localId:string}[]};
+    const uid=users.users.find(user=>user.email===email)!.localId;
+    const profileUrl=`http://127.0.0.1:18080/v1/projects/demo-clusterii/databases/(default)/documents/profiles/${uid}`;
+    const revision=async()=>{const response=await fetch(profileUrl,{headers:{Authorization:'Bearer owner'}});return (await response.json()).fields.revision.integerValue;};
+    const before=await revision();
+    await guest.goto('./');
+    await guest.getByRole('button',{name:'Your identity',exact:true}).click();
+    await guest.getByRole('button',{name:'Sign out',exact:true}).click();
+    await expect(guest.getByRole('button',{name:'Play',exact:true})).toBeVisible();
+    await guest.goto(invitation);
+    await guest.getByRole('link',{name:'Sign in to continue'}).click();
+    await expect(guest.getByRole('button',{name:'Play',exact:true})).toBeVisible();
+    await authenticate(guest,email);
+    await expect(guest).toHaveURL(invitation);
+    await expect(guest.locator('canvas')).toBeVisible();
+    expect(await revision()).toBe(before);
+    await expect(guest.getByLabel('Commander name')).toHaveCount(0);
+    const returningPath=info.outputPath('returning-invitation-phone.png');await guest.screenshot({path:returningPath});await info.attach('Returning commander resumes without identity write',{path:returningPath,contentType:'image/png'});
+    const missing=new URL(invitation);missing.searchParams.set('campaign',crypto.randomUUID());
+    await guest.goto(missing.href);
+    await expect(guest.getByRole('alert')).toContainText('no longer available');
+    await guest.getByRole('button',{name:'All campaigns'}).click();
+    await expect(guest.getByRole('region',{name:'Campaign directory'})).toBeVisible();
+    await expect(guest.getByRole('alert')).toHaveCount(0);
+    await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:update',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({localId:uid,customAttributes:'{}'})});
+    await guest.goto(invitation);
+    await expect(guest.getByRole('heading',{name:'Development access'})).toBeVisible();
+    await guest.getByRole('link',{name:'Return to entry'}).click();
+    await expect(guest.getByRole('heading',{name:'CLUSTER',exact:true})).toBeVisible();
+    expect(new URL(guest.url()).searchParams.get('campaign')).toBe(null);
+    expect(await revision()).toBe(before);
   }finally{await other.close();}
 });

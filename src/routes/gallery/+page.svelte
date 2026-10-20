@@ -91,6 +91,7 @@
         onclick={() => clicks++}
       /><EntryButton
         label="Continue"
+        detail="The Cygnus Compact"
         illustration="planet"
         focusId="gallery-continue"
         onclick={() => clicks++}

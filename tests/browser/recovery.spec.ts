@@ -110,7 +110,7 @@ test("offline pending command survives retry and reconnect without losing its dr
   await writeFile(evidencePath,JSON.stringify({transportFrames:writes.length,logicalCommands:1,commandId,beforeRevision:before,afterRevision:after,versionCount:versions.length,receiptCount:receipts.length}));
   await info.attach('Idempotent reconnect evidence',{path:evidencePath,contentType:'application/json'});
   await page.reload();
-  await page.getByRole("button", { name: "Play", exact: true }).click();
+  await page.getByRole("button", { name: "Your identity", exact: true }).click();
   await expect(page.getByLabel("Commander name")).toHaveValue("Pending draft");
 });
 test("keyboard returns to the opening control and reduced motion removes transitions", async ({

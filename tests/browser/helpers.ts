@@ -1,6 +1,10 @@
 import { expect, type Page } from "@playwright/test";
 export async function login(page: Page, email: string, destination = "./") {
   await page.goto(destination);
+  await authenticate(page,email);
+  await expect(page.getByLabel("Commander name")).toBeVisible();
+}
+export async function authenticate(page: Page, email: string) {
   const opening = page.waitForEvent("popup");
   await page.getByRole("button", { name: "Play", exact: true }).click();
   const popup = await opening;
@@ -9,7 +13,6 @@ export async function login(page: Page, email: string, destination = "./") {
   await popup.getByLabel("Email", { exact: true }).fill(email);
   await popup.getByLabel("Display name", { exact: true }).fill("Commander");
   await popup.getByRole("button", { name: /Sign in with/ }).click();
-  await expect(page.getByLabel("Commander name")).toBeVisible();
 }
 export async function geometry(page: Page) {
   const targets = page.locator(
@@ -59,7 +62,7 @@ export async function geometry(page: Page) {
 }
 
 export async function grantDeveloper(email: string) {
-  const list = await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:batchGet',{headers:{Authorization:'Bearer owner'}});
+  const list = await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:lookup',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({email:[email]})});
   const data = await list.json() as {users:{localId:string,email:string}[]};
   const uid = data.users.find(u=>u.email===email)!.localId;
   const result=await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:update',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({localId:uid,customAttributes:JSON.stringify({developer:true})})});
