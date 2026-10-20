@@ -15,7 +15,12 @@ for (const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['4k
     await page.getByRole('link',{name:'Open campaigns'}).click();
     await page.getByRole('button',{name:'Create campaign',exact:true}).click();
     await page.getByLabel('Campaign name').fill(campaignName);
+    const createBox=await page.getByRole('button',{name:'Create galaxy',exact:true}).boundingBox();
+    expect(createBox).not.toBeNull();expect(createBox!.y).toBeGreaterThanOrEqual(0);expect(createBox!.y+createBox!.height).toBeLessThanOrEqual(height);
     await geometry(page);
+    await page.locator('.campaign-body').evaluate(el=>el.scrollTop=0);
+    const settingsPath=info.outputPath(`encryption-settings-${label}.png`);
+    await page.screenshot({path:settingsPath});await info.attach(`encryption-settings-${label}`,{path:settingsPath,contentType:'image/png'});
     await page.getByRole('button',{name:'Create galaxy',exact:true}).click();
     await expect(page.getByRole('heading',{name:'Choose your faction'})).toBeVisible();
     await expect(page.getByText('Campaign created. Choose your faction.')).toBeVisible();

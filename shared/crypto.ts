@@ -1,4 +1,4 @@
-/** Development codec. Inspectable and forgeable: never cryptographic security. */
+/** Versioned object codecs. Mock is inspectable and forgeable; real uses Web Crypto AES-GCM. */
 export type Mode = "mock" | "real";
 export interface Context {
   gameId: string;
@@ -10,7 +10,7 @@ export interface Context {
 export interface Envelope extends Context {
   format: 1;
   mode: Mode;
-  algorithm: "MOCK-PREFIX-SHA256";
+  algorithm: "MOCK-PREFIX-SHA256" | "AES-256-GCM";
   nonce: string;
   ciphertext: string;
   tag: string;
@@ -59,11 +59,109 @@ function checkContext(c: Context) {
   )
     throw new Error("Invalid encryption context");
 }
-export function provider(mode: Mode) {
-  if (mode !== "mock")
-    throw new Error(
-      "Real encryption is unavailable. No fallback is permitted.",
+const hex = (bytes: Uint8Array) =>
+  Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+function unhex(value: string, length: number) {
+  if (
+    typeof value !== "string" ||
+    value.length !== length * 2 ||
+    !/^[a-f0-9]+$/.test(value)
+  )
+    throw new Error("Invalid encoded key or nonce");
+  return Uint8Array.from(value.match(/../g) ?? [], (pair) =>
+    Number.parseInt(pair, 16),
+  );
+}
+const authenticated = (context: Context) =>
+  new TextEncoder().encode(
+    JSON.stringify([
+      "cluster-envelope",
+      1,
+      "real",
+      "AES-256-GCM",
+      canonical(context),
+    ]),
+  );
+async function aesKey(key: string) {
+  return crypto.subtle.importKey(
+    "raw",
+    unhex(key, 32),
+    { name: "AES-GCM" },
+    false,
+    ["encrypt", "decrypt"],
+  );
+}
+const realProvider = {
+  async seal(value: unknown, key: string, context: Context): Promise<Envelope> {
+    checkContext(context);
+    const nonce = crypto.getRandomValues(new Uint8Array(12));
+    const encrypted = new Uint8Array(
+      await crypto.subtle.encrypt(
+        {
+          name: "AES-GCM",
+          iv: nonce,
+          additionalData: authenticated(context),
+          tagLength: 128,
+        },
+        await aesKey(key),
+        new TextEncoder().encode(JSON.stringify(value)),
+      ),
     );
+    let binary = "";
+    for (let offset = 0; offset < encrypted.length - 16; offset += 4096)
+      binary += String.fromCharCode(
+        ...encrypted.subarray(
+          offset,
+          Math.min(offset + 4096, encrypted.length - 16),
+        ),
+      );
+    return {
+      ...context,
+      format: 1,
+      mode: "real",
+      algorithm: "AES-256-GCM",
+      nonce: hex(nonce),
+      ciphertext: btoa(binary),
+      tag: hex(encrypted.slice(-16)),
+    };
+  },
+  async open<T>(
+    envelope: Envelope,
+    key: string,
+    expected: Context,
+  ): Promise<T> {
+    checkContext(expected);
+    if (
+      envelope.format !== 1 ||
+      envelope.mode !== "real" ||
+      envelope.algorithm !== "AES-256-GCM" ||
+      canonical(envelope) !== canonical(expected)
+    )
+      throw new Error("Envelope context mismatch");
+    const ciphertext = Uint8Array.from(atob(envelope.ciphertext), (c) =>
+      c.charCodeAt(0),
+    );
+    const bytes = new Uint8Array(ciphertext.length + 16);
+    bytes.set(ciphertext);
+    bytes.set(unhex(envelope.tag, 16), ciphertext.length);
+    const plaintext = await crypto.subtle.decrypt(
+      {
+        name: "AES-GCM",
+        iv: unhex(envelope.nonce, 12),
+        additionalData: authenticated(expected),
+        tagLength: 128,
+      },
+      await aesKey(key),
+      bytes,
+    );
+    return JSON.parse(
+      new TextDecoder("utf-8", { fatal: true }).decode(plaintext),
+    ) as T;
+  },
+};
+export function provider(mode: Mode) {
+  if (mode === "real") return realProvider;
+  if (mode !== "mock") throw new Error("Unsupported encryption provider");
   return {
     async seal(
       value: unknown,

@@ -48,6 +48,8 @@
   let creating = $state(false);
   let name = $state("");
   let capacity = $state(4);
+  let encryption = $state<"mock" | "real">("mock");
+  let realAvailable = $state(false);
   let faction = $state<FactionId>("heliac");
   let joinTab = $state<"faction" | "portrait" | "briefing">("faction");
   let pending = $state<PendingCampaign | null>(null);
@@ -128,6 +130,8 @@
       }
       if (session !== generation) return;
       access = "developer";
+      realAvailable = await service.encryptionAvailable();
+      if (session !== generation) return;
       stopDirectory();
       stopMemberships();
       stopMemberships = service.observeMemberships(
@@ -228,7 +232,12 @@
     error = "";
     const session = generation;
     try {
-      const command = await service.prepareCampaign(id, action);
+      const mode =
+        action.kind === "campaign.create"
+          ? action.mode
+          : (game?.mode ?? view?.mode);
+      if (!mode) throw new Error("Campaign encryption has not been recovered");
+      const command = await service.prepareCampaign(id, action, mode);
       if (session !== generation) return;
       pending = command;
       dispatch();
@@ -336,6 +345,7 @@
           >{/if}
         {#if creating}
           <form
+            id="create-campaign"
             class="briefing"
             onsubmit={(event) => {
               event.preventDefault();
@@ -344,7 +354,7 @@
                 expectedRevision: 0,
                 name,
                 capacity,
-                mode: "mock",
+                mode: encryption,
                 development: true,
               });
             }}
@@ -377,15 +387,34 @@
               </div>
             </fieldset>
             <p class="scope">
-              This development game uses mock encryption. It is available only
-              to developer accounts and is not a private or public competitive
-              campaign.
+              Development campaigns are available only to developer accounts.
+              Public competitive play remains closed during review.
             </p>
-            <ActionButton
-              class="primary"
-              type="submit"
-              disabled={busy || !!pending}>Create galaxy</ActionButton
-            >
+            <fieldset class="encryption-settings">
+              <legend>Development encryption</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="encryption"
+                  value="mock"
+                  bind:group={encryption}
+                /> Mock codec · inspectable data</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="encryption"
+                  value="real"
+                  bind:group={encryption}
+                  disabled={!realAvailable}
+                /> Real encryption · managed keys</label
+              >
+              <p>
+                {realAvailable
+                  ? "Real mode encrypts campaign commands, canonical history and member views. Public admission remains closed during review."
+                  : "Managed encryption is not configured for this emulator. Real mode never falls back to the mock codec."}
+              </p>
+            </fieldset>
           </form>
         {:else if selected}
           {#if loading}<p role="status">Recovering your campaign…</p>
@@ -491,6 +520,24 @@
         {/if}
       {/if}
     </div>
+    {#if creating && access === "developer"}<footer class="commit-rail">
+        <span
+          >{capacity} empires<small
+            >{encryption === "real"
+              ? "Managed encryption"
+              : "Inspectable development data"}</small
+          ></span
+        >
+        <ActionButton
+          class="primary"
+          type="submit"
+          form="create-campaign"
+          disabled={busy ||
+            !!pending ||
+            (encryption === "real" && !realAvailable)}
+          >Create galaxy</ActionButton
+        >
+      </footer>{/if}
     {#if game && !loading && !creating}<footer class="commit-rail">
         <div class="rail-feedback">
           <Feedback
@@ -671,6 +718,22 @@
   }
   fieldset {
     margin: 24px 0;
+  }
+  .encryption-settings {
+    margin: 24px 0;
+    border: 1px solid #87919a;
+    padding: 16px;
+  }
+  .encryption-settings label {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    min-height: 52px;
+  }
+  .encryption-settings input {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
   }
   .capacity {
     display: flex;

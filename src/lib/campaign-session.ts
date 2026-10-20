@@ -7,6 +7,7 @@ import {
   type Context,
   type Envelope,
   type Grant,
+  type Mode,
   provider,
   unwrap,
 } from "@shared/crypto";
@@ -64,17 +65,33 @@ export function observeMemberships(
     fail,
   );
 }
+export async function encryptionAvailable() {
+  const result = await httpsCallable<undefined, { realAvailable: boolean }>(
+    functions,
+    "campaignSecurity",
+  )();
+  return result.data.realAvailable;
+}
 export async function prepareCampaign(
   gameId: string,
   action: CampaignAction,
+  mode: Mode,
 ): Promise<PendingCampaign> {
   const id = crypto.randomUUID();
-  const kek = await loadKey();
+  const kek =
+    mode === "real"
+      ? (
+          await httpsCallable<undefined, { kek: string }>(
+            functions,
+            "campaignCommandKey",
+          )()
+        ).data.kek
+      : await loadKey();
   return {
     id,
     gameId,
     kind: action.kind,
-    envelope: await provider("mock").seal(
+    envelope: await provider(mode).seal(
       action,
       kek,
       context(gameId, 0, `command:${id}`),
@@ -114,8 +131,9 @@ export async function observeCampaign(
     return () => {};
   }
   const access = result.data;
-  if (access.mode !== "mock")
+  if (access.mode !== "mock" && access.mode !== "real")
     throw new Error("Unsupported campaign encryption");
+  const mode = access.mode;
   let active = true;
   let serial = 0;
   const stop = onSnapshot(
@@ -129,9 +147,9 @@ export async function observeCampaign(
         envelope: Envelope;
       };
       const ctx = context(gameId, data.revision, `member:${uid}`);
-      void unwrap(data.grant, access.kek, uid, ctx, "mock")
+      void unwrap(data.grant, access.kek, uid, ctx, mode)
         .then((key) =>
-          provider("mock").open<CampaignView>(data.envelope, key, ctx),
+          provider(mode).open<CampaignView>(data.envelope, key, ctx),
         )
         .then((view) => {
           if (active && serial === version) next(view);
