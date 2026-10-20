@@ -74,11 +74,13 @@ test("Google sign-in, encrypted profile acknowledgement and reload", async ({
   await expect(page.getByRole("status")).toContainText("Identity saved");
   await expect(page.locator(".portrait-art img")).toHaveCount(8);
   await capture(page, "identity-desktop");
+  // Load the recovered identity at its target viewport so Chromium does not
+  // reuse a desktop-sized image raster while resizing the phone capture.
+  await page.setViewportSize({ width: 393, height: 852 });
   await page.reload();
   await page.getByRole("button", { name: "Play", exact: true }).click();
   await expect(page.getByLabel("Commander name")).toHaveValue("Étoile 🌌");
   await expect(page.getByRole("radio", { name: "The deepseer" })).toBeChecked();
-  await page.setViewportSize({ width: 393, height: 852 });
   await capture(page, "identity-phone");
   await page.getByRole("button", { name: "Sign out" }).click();
   await expect(
