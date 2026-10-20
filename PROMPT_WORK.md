@@ -51,3 +51,5 @@ Prompt 26 | ed9dbefdb1f53e3c8d56179a3068c9bcec7ec953741e99b43731e0f9fc736892 | C
 Prompt 26 | ed9dbefdb1f53e3c8d56179a3068c9bcec7ec953741e99b43731e0f9fc736892 | Revalidate the already logged Prompt 20 privacy finding across both recipients and all control combinations.
 
 Prompt 28 | 778c7e1a496a181ded68e6116ad1b756a34d87e40774e85b5a7fa0486410cd53 | Recheck the already logged Prompt 23 entry corrections and reconcile their scoped acceptance status.
+
+Prompt 28 | 778c7e1a496a181ded68e6116ad1b756a34d87e40774e85b5a7fa0486410cd53 | Reconcile the already logged Prompt 24 retransmission finding with green PR 7 CI and propagated semantic coverage.
