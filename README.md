@@ -14,6 +14,8 @@ Expand across star systems, develop their resources, research new capabilities, 
 
 See [VISION.md](VISION.md) for the game’s design and experience.
 
+[CLUSTER_II_DESIGN.md](CLUSTER_II_DESIGN.md) records the predecessor’s architecture, interface, implementation gaps, and decisions for review.
+
 ## Contributing
 
 Use Node.js 22 or later for the prompt checks. Install the commit hook with `git config core.hooksPath .githooks`, and run `node --test scripts/check-prompts.test.mjs` to verify enforcement. Follow [AGENTS.md](AGENTS.md) and record requests verbatim in [PROMPTS.md](PROMPTS.md).
