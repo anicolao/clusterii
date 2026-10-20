@@ -12,3 +12,4 @@ Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | P
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Write identity validation captures to disk before attaching them to retained browser evidence.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Preserve supervisor checkpoints and their limited independent composition and tooling acceptance.
 Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Extract shipped controls and feedback into a production gallery and deterministic animation inspection lab.
+Prompt 19 | 9256fa2b4508e9095e66681998371ca893e545950f04741a35018adf7d5285d3 | Publish the stacked gallery/lab dependency and preview links with explicit remaining acceptance gates.
