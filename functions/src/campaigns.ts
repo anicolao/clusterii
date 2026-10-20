@@ -31,6 +31,11 @@ import {
   profileContext,
 } from "../../shared/profile.js";
 import {
+  canonicalVersions,
+  memberVersions,
+  recipientKeyPath,
+} from "./campaign-paths.js";
+import {
   KeyServiceError,
   protect,
   realAvailable,
@@ -38,12 +43,13 @@ import {
 } from "./key-protection.js";
 
 const db = () => getFirestore();
-const context = (
+export const context = (
   gameId: string,
   revision: number,
   objectId: string,
-): Context => ({ gameId, revision, objectId, epoch: 1, keyVersion: 1 });
-async function requireDeveloper(uid: string) {
+  epoch = 1,
+): Context => ({ gameId, revision, objectId, epoch, keyVersion: 1 });
+export async function requireDeveloper(uid: string) {
   const user = await getAuth().getUser(uid);
   if (user.disabled || user.customClaims?.developer !== true)
     throw new HttpsError(
@@ -97,8 +103,9 @@ export const campaignKey = onCall({ invoker: "public" }, async (request) => {
   if (!head.exists) throw new HttpsError("not-found", "Campaign not found.");
   if (!head.get("memberUids").includes(request.auth.uid))
     return { joined: false };
+  const epoch = Number(head.get("envelope.epoch"));
   const key = await db()
-    .doc(`campaignKeys/${id}/members/${request.auth.uid}`)
+    .doc(recipientKeyPath(id, request.auth.uid, epoch))
     .get();
   if (!key.exists)
     throw new HttpsError(
@@ -110,12 +117,12 @@ export const campaignKey = onCall({ invoker: "public" }, async (request) => {
     mode === "real"
       ? await unprotect(
           key.get("protectedKey"),
-          `recipient:${id}:${request.auth.uid}:1`,
+          `recipient:${id}:${request.auth.uid}:${epoch}`,
         )
       : key.get("kek");
-  return { joined: true, kek, mode, epoch: 1 };
+  return { joined: true, kek, mode, epoch };
 });
-async function publish(
+export async function publish(
   tx: Transaction,
   state: Campaign,
   keys: Map<string, string>,
@@ -132,13 +139,13 @@ async function publish(
         envelope: await provider(state.mode).seal(
           state,
           key,
-          context(state.id, state.revision, "canonical"),
+          context(state.id, state.revision, "canonical", state.encryptionEpoch),
         ),
         ...(state.mode === "real"
           ? {
               protectedKey: await protect(
                 key,
-                `canonical:${state.id}:${state.revision}:1`,
+                `canonical:${state.id}:${state.revision}:${state.encryptionEpoch}`,
               ),
             }
           : { canonicalKey: key }),
@@ -153,12 +160,13 @@ async function publish(
     startAt: state.startAt,
     memberUids: state.seats.map((s) => s.uid),
     mode: state.mode,
+    encryptionEpoch: state.encryptionEpoch,
     ...sealed,
   };
   tx.set(db().doc(`campaignStates/${state.id}`), head);
   // Keep the prior mock processor's current-key lookup compatible during rollout.
   // Real mode never writes an unprotected key into this record.
-  if (state.mode === "mock")
+  if (state.mode === "mock" && state.encryptionEpoch === 1)
     tx.set(
       db().doc(`campaignKeys/${state.id}`),
       {
@@ -170,7 +178,9 @@ async function publish(
       { merge: true },
     );
   tx.create(
-    db().doc(`campaignStates/${state.id}/versions/${state.revision}`),
+    db().doc(
+      `${canonicalVersions(state.id, state.encryptionEpoch)}/${state.revision}`,
+    ),
     head,
   );
   tx.set(
@@ -185,7 +195,12 @@ async function publish(
     });
     const kek = keys.get(seat.uid);
     if (!kek) throw new Error("Missing recipient key");
-    const ctx = context(state.id, state.revision, `member:${seat.uid}`);
+    const ctx = context(
+      state.id,
+      state.revision,
+      `member:${seat.uid}`,
+      state.encryptionEpoch,
+    );
     const viewSignature = JSON.stringify([signature, seat.uid, kek]);
     let viewPreparation = prepared.get(viewSignature);
     if (!viewPreparation) {
@@ -205,23 +220,31 @@ async function publish(
     }
     const view = await viewPreparation;
     tx.set(db().doc(`campaignViews/${state.id}/members/${seat.uid}`), view);
+    if (state.encryptionEpoch > 1)
+      tx.set(
+        db().doc(
+          `campaignViews/${state.id}/members/${seat.uid}/epochs/${state.encryptionEpoch}`,
+        ),
+        view,
+      );
     tx.create(
       db().doc(
-        `campaignViews/${state.id}/members/${seat.uid}/versions/${state.revision}`,
+        `${memberVersions(state.id, seat.uid, state.encryptionEpoch)}/${state.revision}`,
       ),
       view,
     );
   }
 }
-async function readRecipientKeys(
+export async function readRecipientKeys(
   tx: Transaction,
   id: string,
   uids: string[],
   mode: Mode,
+  epoch = 1,
 ) {
   const keys = new Map<string, string>();
   const records = await Promise.all(
-    uids.map((uid) => tx.get(db().doc(`campaignKeys/${id}/members/${uid}`))),
+    uids.map((uid) => tx.get(db().doc(recipientKeyPath(id, uid, epoch)))),
   );
   for (let i = 0; i < uids.length; i++)
     if (records[i].exists)
@@ -230,7 +253,7 @@ async function readRecipientKeys(
         mode === "real"
           ? await unprotect(
               records[i].get("protectedKey"),
-              `recipient:${id}:${uids[i]}:1`,
+              `recipient:${id}:${uids[i]}:${epoch}`,
             )
           : records[i].get("kek"),
       );
@@ -282,6 +305,7 @@ async function handleCampaign(
     ]);
     if (receipt.exists) return;
     const revision = head.exists ? Number(head.get("revision")) : 0;
+    const epoch = head.exists ? Number(head.get("envelope.epoch")) : 1;
     let next: Campaign;
     const mode = incoming.envelope.mode;
     if (mode !== "mock" && mode !== "real")
@@ -296,12 +320,13 @@ async function handleCampaign(
       ? head.get("mode") === "real"
         ? await unprotect(
             head.get("protectedKey"),
-            `canonical:${gameId}:${revision}:1`,
+            `canonical:${gameId}:${revision}:${epoch}`,
           )
         : (head.get("canonicalKey") ?? serverKeyRecord.get("key"))
       : null;
     try {
       if (!developer) throw new Error("permission");
+      if (head.exists && head.get("migration")) throw new Error("migrating");
       if (!accountKey.exists || !profileRecord.exists || !ingressKey)
         throw new Error("profile-required");
       if (
@@ -312,7 +337,7 @@ async function handleCampaign(
       const action = await provider(mode).open<{ kind: string; mode?: Mode }>(
         incoming.envelope,
         ingressKey,
-        context(gameId, 0, `command:${commandId}`),
+        context(gameId, 0, `command:${commandId}`, epoch),
       );
       if (action.kind !== incoming.kind) throw new Error("invalid");
       const view = profileRecord.data() as ProfileView;
@@ -336,7 +361,7 @@ async function handleCampaign(
         const current = await provider(mode).open<Campaign>(
           head.get("envelope"),
           canonicalKey,
-          context(gameId, revision, "canonical"),
+          context(gameId, revision, "canonical", epoch),
         );
         next = maintenance
           ? maintainCampaign(current, action, uid, now)
@@ -353,6 +378,7 @@ async function handleCampaign(
           "exists",
           "started",
           "paused",
+          "migrating",
           "already-joined",
           "full",
           "conflict",
@@ -367,22 +393,23 @@ async function handleCampaign(
       gameId,
       next.seats.map((s) => s.uid),
       next.mode,
+      next.encryptionEpoch,
     );
     if (next.seats.some((s) => s.uid === uid) && !keys.has(uid)) {
       keys.set(uid, recipientKey);
       if (next.mode === "real" && !protectedRecipient)
         protectedRecipient = await protect(
           recipientKey,
-          `recipient:${gameId}:${uid}:1`,
+          `recipient:${gameId}:${uid}:${epoch}`,
         );
-      tx.create(db().doc(`campaignKeys/${gameId}/members/${uid}`), {
+      tx.create(db().doc(recipientKeyPath(gameId, uid, epoch)), {
         ...(next.mode === "real"
           ? {
               protectedKey: protectedRecipient,
             }
           : { kek: recipientKey }),
         mode: next.mode,
-        epoch: 1,
+        epoch,
       });
     }
     for (const priorUid of (head.exists
@@ -423,20 +450,21 @@ export async function startDueCampaign(id: string, now: number) {
       tx.get(db().doc(`campaignStates/${id}`)),
       tx.get(db().doc(`campaignKeys/${id}`)),
     ]);
-    if (!head.exists) return;
+    if (!head.exists || head.get("migration")) return;
+    const epoch = Number(head.get("envelope.epoch"));
     const revision = Number(head.get("revision"));
     const mode = head.get("mode") as Mode;
     const key =
       mode === "real"
         ? await unprotect(
             head.get("protectedKey"),
-            `canonical:${id}:${revision}:1`,
+            `canonical:${id}:${revision}:${epoch}`,
           )
         : (head.get("canonicalKey") ?? keyRecord.get("key"));
     const current = await provider(mode).open<Campaign>(
       head.get("envelope"),
       key,
-      context(id, revision, "canonical"),
+      context(id, revision, "canonical", epoch),
     );
     const next = startCampaign(current, now);
     if (next === current) return;
@@ -445,6 +473,7 @@ export async function startDueCampaign(id: string, now: number) {
       id,
       next.seats.map((s) => s.uid),
       next.mode,
+      next.encryptionEpoch,
     );
     await publish(
       tx,

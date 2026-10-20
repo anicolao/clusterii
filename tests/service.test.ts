@@ -1,4 +1,4 @@
-import { afterAll, expect, test } from "bun:test";
+import { afterAll, expect, test, spyOn } from "bun:test";
 import { initializeApp, deleteApp } from "firebase/app";
 import {
   getAuth,
@@ -178,17 +178,17 @@ async function saveIdentity(c: Awaited<ReturnType<typeof client>>) {
   await set(ref(c.database,`profileCommands/${c.uid}/${id}`),await provider('mock').seal({kind:'profile.set',expectedRevision:0,profile:{alias:'Commander',portrait:'G1'}},c.kek,commandContext(c.uid,id)));
   expect((await receipt(c,id)).status).toBe('accepted');
 }
-async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:string,action:CampaignAction,mode:"mock"|"real"=action.kind==='campaign.create'?action.mode:'mock') {
+async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:string,action:CampaignAction,mode:"mock"|"real"=action.kind==='campaign.create'?action.mode:'mock',epoch=1) {
   const id=crypto.randomUUID();
   const commandKey=mode==='real'?(await httpsCallable<undefined,{kek:string}>(c.functions,'campaignCommandKey')()).data.kek:c.kek;
-  const payload={kind:action.kind,envelope:await provider(mode).seal(action,commandKey,{gameId,objectId:`command:${id}`,revision:0,epoch:1,keyVersion:1})};
+  const payload={kind:action.kind,envelope:await provider(mode).seal(action,commandKey,{gameId,objectId:`command:${id}`,revision:0,epoch,keyVersion:1})};
   if(mode==='real'){
     expect(payload.envelope.algorithm).toBe('AES-256-GCM');expect(payload.envelope.nonce).toHaveLength(24);expect(payload.envelope.tag).toHaveLength(32);
     expect((await c.user.getIdTokenResult()).claims.developer).toBe(true);
   }
-  const ingress=ref(c.database,`${["campaign.pause","campaign.resume"].includes(action.kind)?"maintenanceCommands":"commands"}/${gameId}/${c.uid}/${id}`);
+  const ingress=ref(c.database,`${action.kind==="campaign.migrate"?"migrationCommands":["campaign.pause","campaign.resume"].includes(action.kind)?"maintenanceCommands":"commands"}/${gameId}/${c.uid}/${id}`);
   await set(ingress,payload);
-  const deadline=Date.now()+20000;
+  const deadline=Date.now()+(action.kind==='campaign.migrate'?120000:20000);
   while(Date.now()<deadline){
     const result=await getDoc(doc(c.firestore,'campaignReceipts',c.uid,'results',id));
     if(result.exists())return {receipt:result.data(),ingress,payload};
@@ -360,3 +360,134 @@ test('maintenance admission is member/developer-only, atomic, replay-safe and pe
  await a.user.getIdToken(true);
  await expect(campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:5})).rejects.toThrow();
 },60000);
+
+test.skipIf(process.env.CLUSTER_KMS_TEST!=='true')('migration fences history, preserves recipients across repeated switches, and rolls back failed verification',async()=>{
+ const a=await client(`migrate-${Date.now()}`),b=await client(`migration-former-${Date.now()}`);
+ await Promise.all([developer(a),developer(b)]);await Promise.all([saveIdentity(a),saveIdentity(b)]);
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();
+ const gameId=crypto.randomUUID(),untouched=crypto.randomUUID();
+ for(const id of [gameId,untouched])await campaignCommand(a,id,{kind:'campaign.create',expectedRevision:0,name:'Retained migration',capacity:4,mode:'mock',development:true});
+ await campaignCommand(a,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'});
+ await campaignCommand(b,gameId,{kind:'campaign.join',expectedRevision:2,faction:'pelagic'});
+ await campaignCommand(b,gameId,{kind:'campaign.leave',expectedRevision:3});
+ await campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:4});
+ const oldAccess=(await httpsCallable<{gameId:string},{kek:string}>(a.functions,'campaignKey')({gameId})).data;
+ const head=db.doc(`campaignStates/${gameId}`);
+ const pending=Promise.all([campaignCommand(a,gameId,{kind:'campaign.migrate',expectedRevision:5,targetMode:'real'}),campaignCommand(a,gameId,{kind:'campaign.migrate',expectedRevision:5,targetMode:'real'})]);
+ const deadline=Date.now()+20000;while(!(await head.get()).get('migration')&&Date.now()<deadline)await new Promise(r=>setTimeout(r,50));
+ expect((await head.get()).get('migration')).toBeString();
+ await expect(getDocs(collection(a.firestore,'campaignViews',gameId,'members',a.uid,'epochs','2','versions'))).rejects.toThrow();
+ await expect(setDoc(doc(a.firestore,'campaignMigrationTasks','forged'),{jobId:'forged',sequence:0})).rejects.toThrow();
+ expect((await campaignCommand(a,gameId,{kind:'campaign.resume',expectedRevision:5})).receipt.reason).toBe('migrating');
+ const results=await pending;expect(results.map(r=>r.receipt.status).sort()).toEqual(['accepted','rejected']);
+ expect(results.find(r=>r.receipt.status==='rejected')!.receipt.reason).toBe('conflict');
+ const active=await head.get();expect(active.get('envelope.epoch')).toBe(2);expect(active.get('mode')).toBe('real');expect(active.get('revision')).toBe(6);expect(active.get('migration')).toBeUndefined();
+ expect((await db.doc(`campaignStates/${untouched}`).get()).get('revision')).toBe(1);
+ expect((await head.collection('epochs').doc('2').collection('versions').get()).size).toBe(6);
+ const access=(await httpsCallable<{gameId:string},{kek:string;mode:string;epoch:number}>(a.functions,'campaignKey')({gameId})).data;expect(access.mode).toBe('real');expect(access.epoch).toBe(2);
+ expect((await getDocs(collection(a.firestore,'campaignViews',gameId,'members',a.uid,'epochs','2','versions'))).size).toBe(5);
+ const view=(await getDoc(doc(a.firestore,'campaignViews',gameId,'members',a.uid))).data()!;const ctx={gameId,objectId:`member:${a.uid}`,revision:6,epoch:2,keyVersion:1};
+ const key=await unwrap(view.grant,access.kek,a.uid,ctx,'real');expect((await provider('real').open<CampaignView>(view.envelope,key,ctx)).name).toBe('Retained migration');
+ await expect(unwrap(view.grant,oldAccess.kek,a.uid,ctx,'real')).rejects.toThrow();
+ await expect(getDoc(doc(a.firestore,'campaignViews',gameId,'members',a.uid,'versions','5'))).rejects.toThrow();
+ await expect(getDoc(doc(b.firestore,'campaignViews',gameId,'members',b.uid,'epochs','2','versions','3'))).rejects.toThrow();
+ expect((await campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:6},'real',1)).receipt.status).toBe('rejected');
+ await campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:6},'real',2);
+ expect((await campaignCommand(a,gameId,{kind:'campaign.migrate',expectedRevision:7,targetMode:'mock'},'real',2)).receipt.status).toBe('accepted');
+ expect((await head.get()).get('envelope.epoch')).toBe(3);expect((await head.get()).get('mode')).toBe('mock');
+ expect((await campaignCommand(b,gameId,{kind:'campaign.join',expectedRevision:8,faction:'pelagic'},'mock',3)).receipt.status).toBe('accepted');
+ let failureRevision=9;
+ for(let cycle=0;cycle<6;cycle++){await campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:failureRevision++},'mock',3);await campaignCommand(a,gameId,{kind:'campaign.resume',expectedRevision:failureRevision++},'mock',3);}
+ await campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:failureRevision++},'mock',3);
+ const historical=head.collection('epochs').doc('3').collection('versions').doc('9'),original=(await historical.get()).get('envelope.tag');await historical.update({'envelope.tag':'0'.repeat(64)});
+ const failed=await campaignCommand(a,gameId,{kind:'campaign.migrate',expectedRevision:failureRevision,targetMode:'real'},'mock',3);expect(failed.receipt.reason).toBe('migration-failed');
+ expect((await head.get()).get('mode')).toBe('mock');expect((await head.get()).get('envelope.epoch')).toBe(3);expect((await head.get()).get('revision')).toBe(failureRevision);expect((await head.get()).get('migration')).toBeUndefined();
+ expect((await getDoc(doc(a.firestore,'developmentCampaigns',gameId))).get('pausedAt')).toBeGreaterThan(0);
+ const failedJob=db.doc(`campaignMigrations/${failed.ingress.key}`);const cleanupDeadline=Date.now()+20000;while((await failedJob.get()).get('phase')!=='failed'&&Date.now()<cleanupDeadline)await new Promise(r=>setTimeout(r,100));
+ expect((await failedJob.get()).get('phase')).toBe('failed');expect((await failedJob.get()).get('verified')).toBeGreaterThanOrEqual(10);expect((await head.collection('epochs').doc('4').collection('versions').get()).empty).toBe(true);
+ await historical.update({'envelope.tag':original});
+ const retry=await campaignCommand(a,gameId,{kind:'campaign.migrate',expectedRevision:failureRevision,targetMode:'real'},'mock',3);expect(retry.receipt.status).toBe('accepted');expect((await head.get()).get('envelope.epoch')).toBe(5);
+ const accepted=results.find(r=>r.receipt.status==='accepted')!;const jobId=accepted.ingress.key!;
+ await db.doc(`campaignMigrationTasks/replayed-${crypto.randomUUID()}`).set({jobId,sequence:0});await new Promise(r=>setTimeout(r,300));expect((await head.get()).get('revision')).toBe(failureRevision+1);
+},240000);
+
+test.skipIf(process.env.CLUSTER_KMS_TEST!=='true')('expired migration lease recovery fences stale workers and isolates delayed cleanup from a successful epoch',async()=>{
+ const a=await client(`fault-owner-${Date.now()}`),b=await client(`fault-former-${Date.now()}`);
+ await Promise.all([developer(a),developer(b)]);await Promise.all([saveIdentity(a),saveIdentity(b)]);
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();
+ const migration=await import('../functions/src/campaign-migration');const {unprotect}=await import('../functions/src/key-protection');
+ const id=crypto.randomUUID(),head=db.doc(`campaignStates/${id}`);
+ await campaignCommand(a,id,{kind:'campaign.create',expectedRevision:0,name:'Lease recovery',capacity:4,mode:'mock',development:true});
+ await campaignCommand(a,id,{kind:'campaign.join',expectedRevision:1,faction:'heliac'});await campaignCommand(b,id,{kind:'campaign.join',expectedRevision:2,faction:'pelagic'});await campaignCommand(b,id,{kind:'campaign.leave',expectedRevision:3});
+ let revision=4;for(let i=0;i<6;i++){await campaignCommand(a,id,{kind:'campaign.pause',expectedRevision:revision++});await campaignCommand(a,id,{kind:'campaign.resume',expectedRevision:revision++});}await campaignCommand(a,id,{kind:'campaign.pause',expectedRevision:revision++});
+ const sourceCanonical=await head.collection('versions').get();expect(sourceCanonical.size).toBeGreaterThan(10);
+ const memberIds=(await db.collection(`campaignViews/${id}/members`).get()).docs.map((d:any)=>d.id).sort();expect(memberIds).toEqual([a.uid,b.uid].sort());
+ const sourceHistories=new Map<string,{key:string;records:any[]}>();for(const uid of memberIds)sourceHistories.set(uid,{key:(await db.doc(`campaignKeys/${id}/members/${uid}`).get()).get('kek'),records:(await db.collection(`campaignViews/${id}/members/${uid}/versions`).get()).docs});
+ // Fault control affects only event delivery in this test process. All reads, writes,
+ // lease checks and transactions still execute against the real Firestore emulator.
+ const original=db.runTransaction.bind(db);
+ const delivery=spyOn(db,'runTransaction').mockImplementation((update:any,options:any)=>original((tx:any)=>update(new Proxy(tx,{get(target,property){
+  if(property==='create')return (ref:any,data:any)=>target.create(ref.path.startsWith('campaignMigrationTasks/')?db.doc(`campaignMigrationFaultTasks/${ref.id}`):ref,data);
+  const value=Reflect.get(target,property);return typeof value==='function'?value.bind(target):value;
+ }})),options));
+ const begin=async(targetMode:'mock'|'real')=>{
+  const state=await head.get(),mode=state.get('mode') as 'mock'|'real',epoch=state.get('envelope.epoch'),commandId=crypto.randomUUID();
+  const kek=mode==='mock'?a.kek:(await httpsCallable<undefined,{kek:string}>(a.functions,'campaignCommandKey')()).data.kek;
+  const payload={kind:'campaign.migrate',envelope:await provider(mode).seal({kind:'campaign.migrate',expectedRevision:state.get('revision'),targetMode},kek,{gameId:id,objectId:`command:${commandId}`,revision:0,epoch,keyVersion:1})};
+  await migration.processCampaignMigration.run({params:{gameId:id,uid:a.uid,commandId},data:{val:()=>payload}} as never);
+  return db.doc(`campaignMigrations/${commandId}`);
+ };
+ const drive=async(ref:any,stopAtCleanup=false)=>{
+  for(let n=0;n<100;n++){const job=(await ref.get()).data();if(['complete','failed'].includes(job.phase)||(stopAtCleanup&&job.phase==='cleanup'))return job;
+   const claimed=await migration.claim(ref.id,job.sequence);expect(claimed).not.toBeNull();await migration.executeClaimedMigration(claimed!);
+  }throw new Error('Migration failed to reach its terminal phase');
+ };
+ const gameplay=(value:any)=>{const {mode,encryptionEpoch,mockExposed,...rest}=value;return rest;};
+ try{
+  console.info('Fault test: admission');
+  const first=await begin('real');const stale=await migration.claim(first.id,0);expect(stale).not.toBeNull();
+  // The first worker dies after claiming. Advancing lease time replaces a two-minute wait.
+  console.info('Fault test: expire and reclaim');
+  await first.update({'lease.until':Date.now()-1});const replacement=await migration.claim(first.id,0);expect(replacement!.lease!.id).not.toBe(stale!.lease!.id);
+  console.info('Fault test: stale page must be fenced');
+  let staleWrite:unknown;try{await migration.canonicalPage(stale!);}catch(error){staleWrite=error;}expect(staleWrite).toBeInstanceOf(Error);expect((staleWrite as Error).message).toBe('Lost migration fence');
+  console.info('Fault test: stale activation and abort');
+  let staleActivation:unknown;try{await migration.activate(stale!);}catch(error){staleActivation=error;}expect(staleActivation).toBeInstanceOf(Error);expect((staleActivation as Error).message).toBe('Lost activation fence');await migration.abort(stale!);
+  expect((await first.get()).get('lease.id')).toBe(replacement!.lease!.id);expect((await db.doc(`campaignReceipts/${a.uid}/results/${first.id}`).get()).exists).toBe(false);
+  expect((await head.collection('epochs').doc('2').collection('versions').get()).empty).toBe(true);
+  console.info('Fault test: replacement progress');
+  await migration.executeClaimedMigration(replacement!);expect((await first.get()).get('verified')).toBe(10);
+  console.info('Fault test: finish replacement');
+  await drive(first);expect((await head.get()).get('revision')).toBe(revision+1);expect((await head.get()).get('envelope.epoch')).toBe(2);
+  await migration.activate(stale!);await migration.abort(stale!);expect(await migration.claim(first.id,0)).toBeNull();expect((await head.get()).get('revision')).toBe(revision+1);
+  expect((await db.collection(`campaignReceipts/${a.uid}/results`).where('gameId','==',id).where('epoch','==',2).get()).size).toBe(1);
+  const targetCanonical=await head.collection('epochs').doc('2').collection('versions').get();expect(targetCanonical.size).toBe(sourceCanonical.size+1);
+  console.info('Fault test: compare complete history');
+  for(const source of sourceCanonical.docs){const old=source.data(),next=targetCanonical.docs.find((d:any)=>d.id===source.id).data(),rev=old.revision;
+   const oldState=await provider('mock').open(old.envelope,old.canonicalKey,{gameId:id,objectId:'canonical',revision:rev,epoch:1,keyVersion:1});
+   const newKey=await unprotect(next.protectedKey,`canonical:${id}:${rev}:2`);const newState=await provider('real').open(next.envelope,newKey,{gameId:id,objectId:'canonical',revision:rev,epoch:2,keyVersion:1});expect(gameplay(newState)).toEqual(gameplay(oldState));
+  }
+  expect((await db.collection(`campaignKeys/${id}/epochs/2/members`).get()).docs.map((d:any)=>d.id).sort()).toEqual(memberIds);
+  for(const uid of memberIds){const original=sourceHistories.get(uid)!;const records=await db.collection(`campaignViews/${id}/members/${uid}/epochs/2/versions`).get();expect(records.size).toBe(original.records.length+(uid===a.uid?1:0));const protectedKey=(await db.doc(`campaignKeys/${id}/epochs/2/members/${uid}`).get()).get('protectedKey');const kek=await unprotect(protectedKey,`recipient:${id}:${uid}:2`);
+   for(const oldRecord of original.records){const old=oldRecord.data(),next=records.docs.find((d:any)=>d.id===oldRecord.id).data(),oldCtx={gameId:id,objectId:`member:${uid}`,revision:old.revision,epoch:1,keyVersion:1},newCtx={...oldCtx,epoch:2};
+    const oldKey=await unwrap(old.grant,original.key,uid,oldCtx,'mock'),newKey=await unwrap(next.grant,kek,uid,newCtx,'real');expect(gameplay(await provider('real').open(next.envelope,newKey,newCtx))).toEqual(gameplay(await provider('mock').open(old.envelope,oldKey,oldCtx)));
+   }
+  }
+  await campaignCommand(a,id,{kind:'campaign.pause',expectedRevision:revision+1},'real',2);
+  const damaged=head.collection('epochs').doc('2').collection('versions').doc('9'),tag=(await damaged.get()).get('envelope.tag');await damaged.update({'envelope.tag':'0'.repeat(32)});
+  console.info('Fault test: failed attempt before later epoch');
+  const failed=await begin('mock');const failedJob=await drive(failed,true);expect(failedJob.phase).toBe('cleanup');expect(failedJob.verified).toBeGreaterThanOrEqual(10);expect((await head.collection('epochs').doc('3').collection('versions').get()).size).toBeGreaterThanOrEqual(10);
+  await damaged.update({'envelope.tag':tag});const successful=await begin('mock');await drive(successful);const beforeCleanup=(await head.get()).data();expect(beforeCleanup.envelope.epoch).toBe(4);
+  const successfulHistory=await head.collection('epochs').doc('4').collection('versions').get();await drive(failed);expect((await head.get()).data()).toEqual(beforeCleanup);expect((await head.collection('epochs').doc('4').collection('versions').get()).size).toBe(successfulHistory.size);expect((await head.collection('epochs').doc('3').collection('versions').get()).empty).toBe(true);
+  expect((await db.doc(`campaignReceipts/${a.uid}/results/${successful.id}`).get()).get('status')).toBe('accepted');expect((await db.doc(`campaignReceipts/${a.uid}/results/${failed.id}`).get()).get('reason')).toBe('migration-failed');
+ }finally{delivery.mockRestore();}
+},240000);
+
+test.skipIf(process.env.CLUSTER_KMS_TEST==='true')('unconfigured real migration fails explicitly without changing the paused campaign',async()=>{
+ const c=await client(`unconfigured-migration-${Date.now()}`);await developer(c);await saveIdentity(c);const id=crypto.randomUUID();
+ await campaignCommand(c,id,{kind:'campaign.create',expectedRevision:0,name:'Explicit unavailable',capacity:4,mode:'mock',development:true});await campaignCommand(c,id,{kind:'campaign.join',expectedRevision:1,faction:'heliac'});await campaignCommand(c,id,{kind:'campaign.pause',expectedRevision:2});
+ const before=(await getDoc(doc(c.firestore,'developmentCampaigns',id))).data();
+ expect((await campaignCommand(c,id,{kind:'campaign.migrate',expectedRevision:3,targetMode:'real'})).receipt.reason).toBe('unavailable');
+ expect((await campaignCommand(c,id,{kind:'campaign.migrate',expectedRevision:3,targetMode:'mock'})).receipt.reason).toBe('invalid');
+ expect((await getDoc(doc(c.firestore,'developmentCampaigns',id))).data()).toEqual(before);
+},30000);

@@ -65,6 +65,13 @@
   let stopReceipt = () => {};
   let timer: ReturnType<typeof setTimeout>;
   const game = $derived(games.find((g) => g.id === selected));
+  $effect(() => {
+    if (game?.migration && pending?.kind === "campaign.migrate") {
+      clearTimeout(timer);
+      message =
+        "Encryption change is in progress. The campaign remains paused during verification.";
+    }
+  });
   function failed() {
     error = campaignNetworkMessage;
     remedy = "network";
@@ -74,6 +81,7 @@
   async function select(id: string) {
     const current = ++selection;
     const session = generation;
+    let focused = false;
     stopView();
     selected = id;
     void goto(`${base}/campaigns/?campaign=${encodeURIComponent(id)}`, {
@@ -94,6 +102,14 @@
           if (next?.phase === "active" && account)
             rememberCampaign(account, next.id);
           loading = false;
+          if (!focused) {
+            focused = true;
+            void tick().then(() => {
+              if (session !== generation || current !== selection) return;
+              if (next) document.getElementById("galaxy-heading")?.focus();
+              else title?.focus();
+            });
+          }
         },
         failed,
       );
@@ -241,7 +257,14 @@
           ? action.mode
           : (game?.mode ?? view?.mode);
       if (!mode) throw new Error("Campaign encryption has not been recovered");
-      const command = await service.prepareCampaign(id, action, mode);
+      const command = await service.prepareCampaign(
+        id,
+        action,
+        mode,
+        action.kind === "campaign.create"
+          ? 1
+          : (game?.encryptionEpoch ?? view?.encryptionEpoch ?? 1),
+      );
       if (session !== generation) return;
       pending = command;
       dispatch();
@@ -277,6 +300,14 @@
       {busy}
       pending={!!pending}
       onback={back}
+      {realAvailable}
+      migration={game?.migration ?? null}
+      onmigrate={(targetMode) =>
+        send(view!.id, {
+          kind: "campaign.migrate",
+          expectedRevision: game?.revision ?? view!.revision,
+          targetMode,
+        })}
       onmaintenance={() =>
         send(view!.id, {
           kind: view!.pausedAt != null ? "campaign.resume" : "campaign.pause",

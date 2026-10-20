@@ -76,7 +76,7 @@
                 ".validate": "newData.val() === 0"
               },
               "epoch": {
-                ".validate": "newData.val() === 1"
+                ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() % 1 === 0"
               },
               "keyVersion": {
                 ".validate": "newData.val() === 1"
@@ -131,7 +131,62 @@
                 ".validate": "newData.val() === 0"
               },
               "epoch": {
+                ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() % 1 === 0"
+              },
+              "keyVersion": {
                 ".validate": "newData.val() === 1"
+              },
+              "nonce": {
+                ".validate": "newData.isString() && newData.val().length === (newData.parent().child('mode').val() === 'real' ? 24 : 64)"
+              },
+              "ciphertext": {
+                ".validate": "newData.isString() && newData.val().length < 4096"
+              },
+              "tag": {
+                ".validate": "newData.isString() && newData.val().length === (newData.parent().child('mode').val() === 'real' ? 32 : 64)"
+              },
+              "$other": {
+                ".validate": false
+              }
+            },
+            "$other": {
+              ".validate": false
+            }
+          }
+        }
+      }
+    },
+    "migrationCommands": {
+      "$gameId": {
+        "$uid": {
+          "$commandId": {
+            ".write": "auth != null && auth.uid === $uid && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
+            ".validate": "newData.hasChildren(['kind', 'envelope'])",
+            "kind": {
+              ".validate": "newData.val() === 'campaign.migrate'"
+            },
+            "envelope": {
+              ".validate": "newData.hasChildren(['format','mode','algorithm','gameId','objectId','revision','epoch','keyVersion','nonce','ciphertext','tag'])",
+              "format": {
+                ".validate": "newData.val() === 1"
+              },
+              "mode": {
+                ".validate": "newData.val() === 'mock' || newData.val() === 'real'"
+              },
+              "algorithm": {
+                ".validate": "newData.val() === (newData.parent().child('mode').val() === 'real' ? 'AES-256-GCM' : 'MOCK-PREFIX-SHA256')"
+              },
+              "gameId": {
+                ".validate": "newData.val() === $gameId"
+              },
+              "objectId": {
+                ".validate": "newData.val() === 'command:' + $commandId"
+              },
+              "revision": {
+                ".validate": "newData.val() === 0"
+              },
+              "epoch": {
+                ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() % 1 === 0"
               },
               "keyVersion": {
                 ".validate": "newData.val() === 1"

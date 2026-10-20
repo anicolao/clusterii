@@ -96,6 +96,10 @@ export const processProfile = onValueCreated(
 );
 
 export {
+  processCampaignMigration,
+  runCampaignMigration,
+} from "./campaign-migration.js";
+export {
   campaignCommandKey,
   campaignKey,
   campaignSecurity,

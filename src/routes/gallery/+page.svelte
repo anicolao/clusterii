@@ -1,6 +1,7 @@
 <script lang="ts">
   import CampaignMaintenance from "$lib/components/CampaignMaintenance.svelte";
   let maintenancePaused = $state(false);
+  let galleryMode = $state<"mock" | "real">("mock");
   import ChartControls from "$lib/components/galaxy/ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
   let chartClass = $state<StarClass | "all">("all");
@@ -208,6 +209,12 @@
       <h2>Development maintenance</h2>
       <CampaignMaintenance
         paused={maintenancePaused}
+        mode={galleryMode}
+        realAvailable
+        onmigrate={(mode) => {
+          galleryMode = mode;
+          maintenancePaused = false;
+        }}
         onchange={() => (maintenancePaused = !maintenancePaused)}
       />
       <CampaignMaintenance busy onchange={() => {}} />
