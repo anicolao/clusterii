@@ -3,3 +3,4 @@ Prompt 10 | 1399791b2974bb7d38fa51a5a1f9add3a2c56abee54a3efe375cbd78f3c13960 | O
 Prompt 16 | fea8d37f29403079bd8a991c37debc33f80c41d27f97291180537e6c7d4e1cfa | Complete step 1 publication bootstrap using the authenticated repository worktree.
 Prompt 17 | 61811ab2760342556138a3047ec607ba0c60c827f82b04f09ed3a9d944c29859 | Review large-display CI captures and make portrait loading deterministic for exact visual checks.
 Prompt 17 | 61811ab2760342556138a3047ec607ba0c60c827f82b04f09ed3a9d944c29859 | Accept the reviewed Linux portrait rendering and collect all changed screens without weakening visual failures.
+Prompt 17 | 61811ab2760342556138a3047ec607ba0c60c827f82b04f09ed3a9d944c29859 | Finalize the reviewed Linux phone portrait baseline and distinguish actionable Google sign-in errors.

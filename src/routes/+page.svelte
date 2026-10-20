@@ -148,9 +148,23 @@
     try {
       await service.login();
       open("profile");
-    } catch {
-      error =
-        "Sign-in did not finish. Allow the Google sign-in window and try again.";
+    } catch (reason) {
+      const code =
+        reason && typeof reason === "object" && "code" in reason
+          ? reason.code
+          : "";
+      if (code === "auth/popup-blocked")
+        error = "Allow the Google sign-in window, then try again.";
+      else if (code === "auth/network-request-failed")
+        error =
+          "Sign-in could not connect. Check your connection and try again.";
+      else if (
+        code === "auth/operation-not-allowed" ||
+        code === "auth/configuration-not-found" ||
+        code === "auth/unauthorized-domain"
+      )
+        error = "Sign-in is unavailable right now. Please try again later.";
+      else error = "Sign-in did not finish. Please try again.";
     } finally {
       busy = false;
     }
