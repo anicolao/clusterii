@@ -9,3 +9,7 @@ These are existing production compositions. The large faction/directory surfaces
 The first admission attempt exposed inactive closed-disclosure controls in the geometry helper. Native visibility and painted-region overlap corrections, with failing-before/passing-after tool regressions and unchanged history exact images, are carried from #35. The admission rerun passes all four sizes without bypassing roster geometry. Original failure details remain in `/tmp/cluster-invitation-generation.log`.
 
 Exact local comparison passes all eight invitation journeys/72 captures in 1.3 minutes (`/tmp/cluster-invitation-verification.log`). Generated passing narratives are archived; the procedural predecessor is removed only after preserving its identity revision and denied/missing recovery assertions. Linux comparison and independent full review remain open.
+
+## Pinned Linux candidates
+
+Run 39625624861 generated all 36 stories. Its separate comparison passed the 28 parent stories and failed the eight new invitation journeys only on absent reviewed Linux baselines. The implementer inspected both complete Linux invitation contact sheets (72 captures), plus the full-size phone host roster after admission. The invited and returning identities, host membership view, preserved destination and missing/denied remedies remain readable. These candidates are promoted for a fresh exact run; compact 4K composition and full independent review remain open.
