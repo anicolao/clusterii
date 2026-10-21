@@ -27,7 +27,7 @@ export interface ProfileView {
 export interface Receipt {
   status: "accepted" | "rejected";
   revision: number;
-  reason?: "conflict" | "invalid";
+  reason?: "conflict" | "invalid" | "session";
 }
 export const profileContext = (uid: string, revision: number): Context => ({
   gameId: `profile:${uid}`,

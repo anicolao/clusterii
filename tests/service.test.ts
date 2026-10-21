@@ -585,3 +585,78 @@ test('scheduled start isolates a corrupt campaign and recovers after lost comple
     expect(new Set(homes).size).toBe(4);
   }
 },120000);
+
+for (const mode of ['mock','real'] as const) test.skipIf(mode==='real' && process.env.CLUSTER_KMS_TEST!=='true')(`${mode} session revocation denies old tokens and refreshes across reads, ingress and key delivery`,async()=>{
+  const name=`sessions-${mode}-${Date.now()}`;
+  const a=await client(name),b=await client(name),other=await client(`unaffected-${Date.now()}`);
+  expect(b.uid).toBe(a.uid);await developer(a);await b.user.getIdToken(true);await saveIdentity(a);
+  const gameId=crypto.randomUUID();
+  await campaignCommand(a,gameId,{kind:'campaign.create',expectedRevision:0,name:'Session continuity',capacity:4,development:true,mode});
+  await campaignCommand(a,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'},mode);
+  const priorAccess=(await httpsCallable(a.functions,'campaignKey')({gameId})).data as {kek:string};
+  const ingressKey=mode==='real'?(await httpsCallable(b.functions,'campaignCommandKey')()).data as {kek:string}:{kek:b.kek};
+  const operationId=crypto.randomUUID();
+  const results=await Promise.all([a,b].map(c=>httpsCallable(c.functions,'revokeSessions')({operationId})));
+  for(const result of results)expect(result.data).toEqual({status:'complete'});
+  const fence=(await getDoc(doc(a.firestore,'sessionFences',a.uid))).data()!;
+  expect(fence.status).toBe('complete');
+  for(const endpoint of ['profileKey','campaignSecurity','campaignCommandKey','campaignKey'])await expect(httpsCallable(b.functions,endpoint)({gameId})).rejects.toThrow();
+  for(const path of [`profiles/${a.uid}`,`profiles/${a.uid}/versions/1`,`campaignViews/${gameId}/members/${a.uid}`,`campaignViews/${gameId}/members/${a.uid}/versions/2`,`campaignMemberships/${a.uid}/games/${gameId}`,`developmentCampaigns/${gameId}`])await expect(getDoc(doc(b.firestore,path))).rejects.toThrow();
+  await expect(getDocs(collection(b.firestore,'developmentCampaigns'))).rejects.toThrow();
+  await expect(setDoc(doc(b.firestore,'sessionFences',b.uid),{cutoff:0,status:'complete'})).rejects.toThrow();
+  await expect(set(ref(b.database,`sessionFences/${b.uid}`),null)).rejects.toThrow();
+  await expect(getDoc(doc(other.firestore,'sessionFences',a.uid))).rejects.toThrow();
+  for(const channel of ['commands','maintenanceCommands','migrationCommands']){
+    const id=crypto.randomUUID();const kind=channel==='commands'?'campaign.leave':channel==='maintenanceCommands'?'campaign.pause':'campaign.migrate';
+    const payload={kind,envelope:await provider(mode).seal({kind,expectedRevision:2},ingressKey.kek,{gameId,objectId:`command:${id}`,revision:0,epoch:1,keyVersion:1})};
+    await expect(set(ref(b.database,`${channel}/${gameId}/${b.uid}/${id}`),payload)).rejects.toThrow();
+  }
+  const id=crypto.randomUUID();const payload=await provider('mock').seal({kind:'profile.set',expectedRevision:1,profile:{alias:'Stale writer',portrait:'G1'}},b.kek,commandContext(b.uid,id));
+  await expect(set(ref(b.database,`profileCommands/${b.uid}/${id}`),payload)).rejects.toThrow();
+  // Refreshing an ID token preserves auth_time and cannot bypass application revocation.
+  const oldAuthTime=(await b.user.getIdTokenResult()).claims.auth_time;
+  await b.user.getIdToken(true);
+  expect((await b.user.getIdTokenResult()).claims.auth_time).toBe(oldAuthTime);
+  await expect(httpsCallable(b.functions,'profileKey')()).rejects.toThrow();
+  await expect(httpsCallable(b.functions,'revokeSessions')({operationId:crypto.randomUUID()})).rejects.toThrow();
+  expect((await httpsCallable(other.functions,'profileKey')()).data).toEqual({kek:other.kek,mode:'mock',epoch:1});
+  await new Promise(r=>setTimeout(r,Math.max(0,(fence.cutoff+1)*1000-Date.now()+25)));
+  const recovered=await client(name);await recovered.user.getIdToken(true);
+  expect(recovered.kek).toBe(a.kek);expect((await getDoc(doc(recovered.firestore,'profiles',a.uid))).get('revision')).toBe(1);
+  expect((await httpsCallable(recovered.functions,'campaignKey')({gameId})).data).toHaveProperty('joined',true);
+  expect((await httpsCallable(recovered.functions,'campaignKey')({gameId})).data).toHaveProperty('kek',priorAccess.kek);
+  expect((await httpsCallable(recovered.functions,'revokeSessions')({operationId})).data).toEqual({status:'complete'});
+  expect((await getDoc(doc(recovered.firestore,'sessionFences',a.uid))).data()).toEqual(fence);
+  expect((await httpsCallable(recovered.functions,'profileKey')()).data).toHaveProperty('kek',a.kek);
+},60000);
+
+test('interrupted session fence stays closed and the same operation resumes without duplicate effects',async()=>{
+  const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));
+  const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});
+  const db=require('firebase-admin/firestore').getFirestore();
+  const a=await client(`session-fault-${Date.now()}`);await saveIdentity(a);
+  const operationId=crypto.randomUUID();const token=await require('firebase-admin/auth').getAuth().verifyIdToken(await a.user.getIdToken());
+  const {revokeSessions}=await import('../functions/src/session-security');
+  await expect(revokeSessions.run({data:{operationId}} as never)).rejects.toThrow('Sign in');
+  await expect(revokeSessions.run({auth:{uid:a.uid,token:{...token,auth_time:Math.floor(Date.now()/1000)-301}},data:{operationId}} as never)).rejects.toThrow('Confirm your Google identity');
+  await expect(httpsCallable(a.functions,'revokeSessions')({operationId,uid:'forged-owner'})).rejects.toThrow();
+  expect((await db.doc(`sessionFences/${a.uid}`).get()).exists).toBe(false);
+  const original=db.runTransaction.bind(db);let interrupted=false;
+  const fault=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const result=await original(...args);if(!interrupted){interrupted=true;throw new Error('Stopped before mirror');}return result;});
+  try {let error:unknown;try{await revokeSessions.run({auth:{uid:a.uid,token},data:{operationId}} as never);}catch(e){error=e;}expect((error as Error).message).toBe('Stopped before mirror');}finally{fault.mockRestore();}
+  expect((await db.doc(`sessionFences/${a.uid}`).get()).get('status')).toBe('pending');
+  await expect(httpsCallable(a.functions,'profileKey')()).rejects.toThrow();
+  await expect(getDoc(doc(a.firestore,'profiles',a.uid))).rejects.toThrow();
+  // The RTDB mirror has not been written yet. Its admitted command must still
+  // be rejected by the transaction's Firestore fence, not mutate the profile.
+  const id=crypto.randomUUID();await set(ref(a.database,`profileCommands/${a.uid}/${id}`),await provider('mock').seal({kind:'profile.set',expectedRevision:1,profile:{alias:'Must not commit',portrait:'G1'}},a.kek,commandContext(a.uid,id)));
+  const receiptRef=db.doc(`profiles/${a.uid}/receipts/${id}`);const deadline=Date.now()+15000;
+  while(!(await receiptRef.get()).exists&&Date.now()<deadline)await new Promise(r=>setTimeout(r,100));
+  expect((await receiptRef.get()).get('reason')).toBe('session');expect((await db.doc(`profiles/${a.uid}`).get()).get('revision')).toBe(1);
+  expect((await httpsCallable(a.functions,'revokeSessions')({operationId})).data).toEqual({status:'complete'});
+  expect((await db.doc(`sessionFences/${a.uid}`).get()).get('status')).toBe('complete');
+  expect((await db.collection(`sessionRevocations/${a.uid}/operations`).get()).size).toBe(1);
+  const current=(await db.doc(`sessionFences/${a.uid}`).get()).data();
+  await httpsCallable(a.functions,'revokeSessions')({operationId});
+  expect((await db.doc(`sessionFences/${a.uid}`).get()).data()).toEqual(current);
+},60000);

@@ -46,6 +46,11 @@ import {
   realAvailable,
   unprotect,
 } from "./key-protection.js";
+import {
+  admissionAllowed,
+  requireCurrentSession,
+  type SessionFence,
+} from "./session-security.js";
 
 const db = () => getFirestore();
 export const context = (
@@ -67,6 +72,7 @@ export const campaignSecurity = onCall(
   async (request) => {
     if (!request.auth)
       throw new HttpsError("unauthenticated", "Sign in to continue.");
+    await requireCurrentSession(request.auth);
     await requireDeveloper(request.auth.uid);
     return { realAvailable: realAvailable() };
   },
@@ -77,6 +83,7 @@ export const campaignCommandKey = onCall(
     if (!request.auth)
       throw new HttpsError("unauthenticated", "Sign in to continue.");
     const uid = request.auth.uid;
+    await requireCurrentSession(request.auth);
     await requireDeveloper(uid);
     const ref = db().doc(`campaignCommandKeys/${uid}`),
       purpose = `ingress:${uid}:1`;
@@ -100,6 +107,7 @@ export const campaignCommandKey = onCall(
 export const campaignKey = onCall({ invoker: "public" }, async (request) => {
   if (!request.auth)
     throw new HttpsError("unauthenticated", "Sign in to continue.");
+  await requireCurrentSession(request.auth);
   await requireDeveloper(request.auth.uid);
   const id = request.data?.gameId;
   if (typeof id !== "string" || !/^[a-f0-9-]{36}$/.test(id))
@@ -304,6 +312,7 @@ async function handleCampaign(
       accountKey,
       profileRecord,
       ingressRecord,
+      session,
     ] = await Promise.all([
       tx.get(receiptRef),
       tx.get(db().doc(`campaignStates/${gameId}`)),
@@ -311,8 +320,21 @@ async function handleCampaign(
       tx.get(db().doc(`profileKeys/${uid}`)),
       tx.get(db().doc(`profiles/${uid}`)),
       tx.get(db().doc(`campaignCommandKeys/${uid}`)),
+      tx.get(db().doc(`sessionFences/${uid}`)),
     ]);
     if (receipt.exists) return;
+    if (
+      !admissionAllowed(session.data() as SessionFence | undefined, event.time)
+    ) {
+      tx.create(receiptRef, {
+        requestDigest,
+        gameId,
+        revision: head.exists ? Number(head.get("revision")) : 0,
+        status: "rejected",
+        reason: "session",
+      });
+      return;
+    }
     const revision = head.exists ? Number(head.get("revision")) : 0;
     const epoch = head.exists ? Number(head.get("envelope.epoch")) : 1;
     let next: Campaign;

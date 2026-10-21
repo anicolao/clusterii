@@ -18,12 +18,33 @@
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import Feedback from "$lib/components/Feedback.svelte";
+  import {
+    sessionEndedMessage,
+    sessionFailedMessage,
+  } from "$lib/session-feedback";
+  import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import EntryButton from "$lib/components/EntryButton.svelte";
   import { base } from "$app/paths";
   import { reduceProfile, type Portrait, type Profile } from "@shared/profile";
   import type { Envelope } from "@shared/crypto";
-  let scene = $state<"entry" | "learn" | "profile">("entry");
+  let scene = $state<"entry" | "learn" | "profile" | "security">("entry");
+  let endingSessions = $state(false);
+  let sessionError = $state("");
+  let sessionNotice = $state("");
+  async function endSessions() {
+    endingSessions = true;
+    sessionError = "";
+    try {
+      await service.signOutAllDevices();
+    } catch {
+      sessionError = sessionFailedMessage;
+      await tick();
+      document.getElementById("session-error")?.focus();
+    } finally {
+      endingSessions = false;
+    }
+  }
   let chapter = $state(0);
   let account = $state<string | null>(null);
   let alias = $state("");
@@ -56,7 +77,7 @@
   let message = $state("");
   let error = $state("");
   let remedy = $state<
-    "none" | "network" | "conflict" | "validation" | "receipt"
+    "none" | "network" | "conflict" | "validation" | "receipt" | "session"
   >("none");
   let profileWatch = 0;
   let history: { scene: typeof scene; control: string | null }[] = [];
@@ -202,34 +223,51 @@
       .then((s) => {
         if (disposed) return;
         service = s;
-        stopAuth = s.observeAccount(async (user) => {
-          connected = true;
-          ++generation;
-          ++profileWatch;
-          error = "";
-          remedy = "none";
-          stopProfile();
-          stopCampaigns();
-          stopDirectory();
-          campaignMetadata = [];
-          lastSelection = user ? lastCampaign(user.uid) : null;
-          memberships = [];
-          campaignError = "";
-          stopReceipt();
-          clearTimeout(timeout);
-          kek = "";
-          pending = null;
-          saved = null;
-          alias = "";
-          portrait = "G1";
-          ready = false;
-          busy = false;
-          revision = 0;
-          account = user?.uid ?? null;
-          if (!user) return;
-          void recoverCampaigns();
-          await recover();
-        });
+        stopAuth = s.observeAccount(
+          async (user) => {
+            connected = true;
+            ++generation;
+            ++profileWatch;
+            error = "";
+            remedy = "none";
+            stopProfile();
+            stopCampaigns();
+            stopDirectory();
+            campaignMetadata = [];
+            lastSelection = user ? lastCampaign(user.uid) : null;
+            memberships = [];
+            campaignError = "";
+            stopReceipt();
+            clearTimeout(timeout);
+            kek = "";
+            pending = null;
+            saved = null;
+            alias = "";
+            portrait = "G1";
+            ready = false;
+            busy = false;
+            revision = 0;
+            account = user?.uid ?? null;
+            if (!user) {
+              if (s.sessionEnded()) {
+                scene = "entry";
+                history = [];
+                sessionNotice = sessionEndedMessage;
+                await tick();
+                document
+                  .querySelector<HTMLElement>('[data-focus="play"]')
+                  ?.focus();
+              }
+              return;
+            }
+            sessionNotice = "";
+            void recoverCampaigns();
+            await recover();
+          },
+          () => {
+            if (!endingSessions && scene !== "security") void open("security");
+          },
+        );
       })
       .catch(() => {
         error = "The connection could not be opened. Reload to try again.";
@@ -430,18 +468,23 @@
           focusId="learn"
           onclick={() => open("learn")}
         />
-        {#if saved && !busy && !pending}<div class="entry-secondary">
-            {#if activeCount > 1}<a
-                class="campaign-link"
-                href={campaignHref(base)}>Change campaign</a
-              >{:else}<a class="campaign-link" href={destination}
-                >{invitedCampaign
-                  ? "Open invited campaign"
-                  : "Open campaigns"}</a
+        {#if account}<div class="entry-secondary">
+            {#if saved && !busy && !pending}
+              {#if activeCount > 1}<a
+                  class="campaign-link"
+                  href={campaignHref(base)}>Change campaign</a
+                >{:else}<a class="campaign-link" href={destination}
+                  >{invitedCampaign
+                    ? "Open invited campaign"
+                    : "Open campaigns"}</a
+                >{/if}<ActionButton
+                class="quiet"
+                data-focus="identity"
+                onclick={() => open("profile")}>Your identity</ActionButton
               >{/if}<ActionButton
               class="quiet"
-              data-focus="identity"
-              onclick={() => open("profile")}>Your identity</ActionButton
+              data-focus="sessions"
+              onclick={() => open("security")}>Your devices</ActionButton
             >
           </div>{/if}
         {#if account}<p class="signed">
@@ -450,6 +493,9 @@
             Conquest · Diplomacy · Shared victory
           </p>{/if}
       </div>
+      {#if sessionNotice}<p class="notice" role="status">
+          {sessionNotice}
+        </p>{/if}
       {#if campaignError}<Feedback
           error={campaignError}
           reconnect={recoverCampaigns}
@@ -505,6 +551,24 @@
           >{/if}
       </div>
       {#if error}<p role="alert" class="notice error">{error}</p>{/if}
+    </section>
+  {:else if scene === "security"}
+    <section class="instrument identity" aria-label="Account sessions">
+      <div class="instrument-top">
+        <span class="overline">Your account</span><ActionButton
+          class="quiet"
+          disabled={endingSessions}
+          onclick={close}>Close <Icon kind="close" /></ActionButton
+        >
+      </div>
+      <div class="reading">
+        <h1 bind:this={focusTitle} tabindex="-1">Your devices.</h1>
+        <SessionSecurity
+          pending={endingSessions}
+          error={sessionError}
+          onconfirm={endSessions}
+        />
+      </div>
     </section>
   {:else}
     <section class="instrument identity" aria-label="Your identity">

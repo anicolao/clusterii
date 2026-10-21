@@ -1,3 +1,4 @@
+import {sessionEndedMessage} from "$lib/session-feedback";
 import { verifyReceipt } from "@shared/command-receipt";
 import { reduceProfile, type Receipt } from '@shared/profile';
 import { receiptFeedback, pendingMessage, networkMessage } from '$lib/identity-feedback';
@@ -41,6 +42,7 @@ export function scheduledFrame(time:number) {
   return {game:campaignDirectory(time>=3200?startCampaign(fullRoster,clock):fullRoster),clock};
 }
 export const scenarios = [
+ {id:"session-ended",label:"Account: ending → signed out",frames:[{at:0,feedback:{message:"Keep this window open while your sessions end.",error:"",remedy:"none"}},{at:1200,feedback:{message:sessionEndedMessage,error:"",remedy:"none"}}]},
  {id:'campaign-start',label:'Scheduled start: delayed → assigned',frames:[{at:0,feedback:campaignPending}]},
  {id:"receipt-mismatch",label:"Order: mismatched acknowledgement",frames:[{at:0,feedback:pending},{at:1200,feedback:mismatchedReceipt}]},
   {id:'campaign-migrated',label:'Encryption: verified → resumed',frames:[{at:0,feedback:campaignPending},{at:1200,feedback:migrationAccepted}]},

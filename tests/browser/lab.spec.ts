@@ -43,6 +43,9 @@ test("lab replay, pause, seek and reduced motion preserve production outcomes", 
     await seek.fill(String(time));await expect(standard.getByRole("status")).toContainText(text);
     await expect(reduced.getByRole("status")).toHaveText(await standard.getByRole("status").innerText());
   }
+  await page.getByLabel("Scenario",{exact:true}).selectOption("session-ended");
+  await seek.fill("100");await expect(standard.getByRole("button",{name:"Ending sessions…"})).toBeDisabled();
+  await seek.fill("1400");await expect(standard.getByRole("status")).toHaveText("Your session ended. Sign in to continue.");await expect(reduced.getByRole("status")).toHaveText(await standard.getByRole("status").innerText());
   await page.getByLabel("Playback speed").selectOption("0.25");
   await page.getByRole("button", { name: "Replay", exact: true }).click();
   await page.getByRole("button", { name: "Pause", exact: true }).click();

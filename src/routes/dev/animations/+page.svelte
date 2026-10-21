@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import { scheduledFrame, scenarios, duration } from "./scenarios";
   let selected = $state("accepted");
@@ -101,7 +102,15 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "campaign-start"}
+        {#if selected === "session-ended"}
+          {#if time < 1200}<SessionSecurity
+              pending
+              onconfirm={() => {}}
+            />{:else}<Feedback
+              message={frame.feedback.message}
+              inspect={{ time: time - frame.at, reduced }}
+            />{/if}
+        {:else if selected === "campaign-start"}
           <CampaignStartStatus
             game={scheduledFrame(time).game}
             inspectTime={scheduledFrame(time).clock}

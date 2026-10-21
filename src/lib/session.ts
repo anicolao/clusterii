@@ -13,6 +13,7 @@ import {
   GoogleAuthProvider,
   getAuth,
   onAuthStateChanged,
+  reauthenticateWithPopup,
   signInWithPopup,
   signOut,
   type User,
@@ -26,6 +27,7 @@ import {
 import {
   connectFirestoreEmulator,
   doc,
+  getDoc,
   getFirestore,
   onSnapshot,
 } from "firebase/firestore";
@@ -62,8 +64,81 @@ if (emulator) {
   connectFirestoreEmulator(firestore, "127.0.0.1", 18080);
   connectFunctionsEmulator(functions, "127.0.0.1", 15001);
 }
-export const observeAccount = (next: (user: User | null) => void) =>
-  onAuthStateChanged(auth, next);
+export const observeAccount = (
+  next: (user: User | null) => void,
+  resumeSignOut?: () => void,
+) => {
+  let stopFence = () => {};
+  let generation = 0;
+  const stopAuth = onAuthStateChanged(auth, (user) => {
+    const current = ++generation;
+    stopFence();
+    next(user);
+    if (!user) return;
+    stopFence = onSnapshot(
+      doc(firestore, "sessionFences", user.uid),
+      (snapshot) => {
+        if (!snapshot.exists()) return;
+        const slot = `cluster-signout:${user.uid}`;
+        if (snapshot.get("status") !== "complete") {
+          if (sessionStorage.getItem(slot) === snapshot.get("operationId"))
+            resumeSignOut?.();
+          return;
+        }
+        if (sessionStorage.getItem(slot) === snapshot.get("operationId"))
+          sessionStorage.removeItem(slot);
+        void user
+          .getIdTokenResult()
+          .then((token) => {
+            if (
+              current === generation &&
+              Number(token.claims.auth_time) <= snapshot.get("cutoff")
+            ) {
+              sessionStorage.setItem("cluster-session-ended", "true");
+              void signOut(auth);
+            }
+          })
+          .catch(() => {});
+      },
+      () => {},
+    );
+  });
+  return () => {
+    ++generation;
+    stopFence();
+    stopAuth();
+  };
+};
+export function sessionEnded() {
+  const ended = sessionStorage.getItem("cluster-session-ended") === "true";
+  sessionStorage.removeItem("cluster-session-ended");
+  return ended;
+}
+export async function signOutAllDevices() {
+  const user = auth.currentUser;
+  if (!user) throw new Error("Sign in to continue.");
+  // Store only a retry identity, never credentials or keys.
+  const slot = `cluster-signout:${user.uid}`;
+  await reauthenticateWithPopup(user, new GoogleAuthProvider());
+  const fence = await getDoc(doc(firestore, "sessionFences", user.uid));
+  const operationId =
+    fence.exists() && fence.get("status") === "pending"
+      ? (fence.get("operationId") as string)
+      : (sessionStorage.getItem(slot) ?? crypto.randomUUID());
+  sessionStorage.setItem(slot, operationId);
+  const result = await httpsCallable<
+    { operationId: string },
+    { status: string }
+  >(
+    functions,
+    "revokeSessions",
+  )({ operationId });
+  if (result.data.status !== "complete")
+    throw new Error("Sign-out is not complete. Try again.");
+  sessionStorage.removeItem(slot);
+  if (auth.currentUser) sessionStorage.setItem("cluster-session-ended", "true");
+  await signOut(auth);
+}
 export const login = () => signInWithPopup(auth, new GoogleAuthProvider());
 export const logout = () => signOut(auth);
 export async function loadKey() {

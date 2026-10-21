@@ -2,6 +2,7 @@ export const campaignPendingMessage = "Awaiting acknowledgement…";
 export const campaignNetworkMessage =
   "The connection was interrupted. Your selection and pending order are preserved.";
 const reasons: Record<string, string> = {
+  session: "Your session ended. Sign in again.",
   conflict:
     "The roster changed. Review the current seats and submit your choice again.",
   full: "That faction has no seats remaining. Choose an available faction.",
