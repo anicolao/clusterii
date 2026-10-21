@@ -120,3 +120,9 @@ Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | C
 Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | Continue Prompt 37 private conversations with explicit invitations, recipient-scoped messages and acknowledged history recovery.
 
 Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | Continue Prompt 37 with account-scoped encrypted command and conversation-draft recovery across reloads.
+
+Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Propagate the short-desktop observation correction into command recovery with all prior prompt histories intact.
+
+Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | Continue Prompt 37 with explicit selection and acceptance of earlier private conversation history.
+
+Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Complete selected-history sharing evidence and carry the verified inspector correction while preserving resource-failure traces.

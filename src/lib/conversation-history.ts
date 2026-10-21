@@ -10,7 +10,12 @@ export interface ConversationReceipt {
   body: string;
 }
 export interface MessageRecord {
-  conversations?: { id: string; message?: MessageView | null }[];
+  revision?: number;
+  conversations?: {
+    id: string;
+    message?: MessageView | null;
+    sharedMessages?: MessageView[];
+  }[];
 }
 export function conversationMessages(
   records: MessageRecord[],
@@ -18,10 +23,14 @@ export function conversationMessages(
 ): MessageView[] {
   const messages = new Map<string, MessageView>();
   for (const record of records) {
-    const message = record.conversations?.find(
-      (room) => room.id === roomId,
-    )?.message;
-    if (message) messages.set(message.id, message);
+    const room = record.conversations?.find((room) => room.id === roomId);
+    for (const message of [room?.message, ...(room?.sharedMessages ?? [])]) {
+      if (message)
+        messages.set(message.id, {
+          ...message,
+          sourceRevision: message.sourceRevision ?? record.revision,
+        });
+    }
   }
   return [...messages.values()].sort((a, b) => a.sequence - b.sequence);
 }

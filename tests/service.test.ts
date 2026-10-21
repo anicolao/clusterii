@@ -5581,6 +5581,45 @@ for (const mode of ["mock", "real"] as const)
       expect(JSON.stringify(await history(invitee))).not.toContain(
         "Not shared before invitation",
       );
+      const selectedMessage = (await room()).message!;
+      const selectedRevision = (await read()).revision;
+      await post(owner, "Unselected after chosen history");
+      const selection = async (history: unknown[]) => command(owner, {
+        kind: "conversation.invite", roomId, roomRevision: (await room()).revision,
+        seat: 2, scope: "selected", history,
+      });
+      const stableRevision = (await read()).revision;
+      expect((await selection([{id: "wrong-message", revision: selectedRevision}])).receipt.reason).toBe("conversation-history");
+      expect((await read()).revision).toBe(stableRevision);
+      const otherRoomResult = await command(owner, {kind:"conversation.create",title:"Separate private channel"});
+      expect(otherRoomResult.receipt.status).toBe("accepted");
+      const otherRoom = (await read()).conversations.find(r => r.id !== roomId)!;
+      await command(owner, {kind:"conversation.send",roomId:otherRoom.id,keyVersion:otherRoom.keyVersion,body:"Other room secret"});
+      const otherView = await read();
+      const otherMessage = otherView.conversations.find(r => r.id === otherRoom.id)!.message!;
+      expect((await selection([{id:otherMessage.id,revision:otherView.revision}])).receipt.reason).toBe("conversation-history");
+      const selectedInvite = await selection([{id: selectedMessage.id, revision: selectedRevision}]);
+      expect(selectedInvite.receipt.status).toBe("accepted");
+      const review = await room(outsider);
+      expect(review.invitation?.scope).toBe("selected");
+      expect(review.invitation?.messages.map(m => m.id)).toEqual([selectedMessage.id]);
+      expect(JSON.stringify(await history(outsider))).not.toContain(selectedMessage.body);
+      expect(JSON.stringify(await history(outsider))).not.toContain("Unselected after chosen history");
+      const unconsented = await command(outsider, {kind: "conversation.accept", roomId, roomRevision: review.revision});
+      expect(unconsented.receipt.reason).toBe("conversation-history-consent");
+      expect((await room(outsider)).member).toBe(false);
+      const consented = await command(outsider, {kind: "conversation.accept", roomId,
+        roomRevision: review.revision, historyConsent: review.invitation!.id});
+      expect(consented.receipt.status).toBe("accepted");
+      const once = await read(outsider);
+      const onceHistory = await history(outsider);
+      await processCampaign.run({params:{gameId:id,uid:outsider.uid,commandId:consented.ingress.key},time:new Date().toISOString(),data:{val:()=>consented.payload}} as never);
+      expect(await read(outsider)).toEqual(once);
+      expect(await history(outsider)).toEqual(onceHistory);
+      expect((await room(outsider)).sharedMessages.map(m => m.body)).toEqual([selectedMessage.body]);
+      expect(JSON.stringify(await history(outsider))).not.toContain("Unselected after chosen history");
+      expect(JSON.stringify(await history(outsider))).not.toContain("Not shared before invitation");
+      expect((await read(players[3].c)).conversations).toEqual([]);
       const after = await read();
       expect(after.holdings).toEqual(initial.holdings);
       expect(after.empire).toEqual(initial.empire);
@@ -5617,6 +5656,13 @@ for (const mode of ["mock", "real"] as const)
         expect((await room(invitee)).message!.body).toBe(
           "After epoch migration",
         );
+        const migratedInvite = await command(owner, {kind:"conversation.invite",roomId,roomRevision:(await room()).revision,seat:3,scope:"selected",history:[{id:selectedMessage.id,revision:selectedRevision}]});
+        expect(migratedInvite.receipt.status).toBe("accepted");
+        const lastPlayer=players[3].c, migratedReview=await room(lastPlayer);
+        expect((await command(lastPlayer,{kind:"conversation.accept",roomId,roomRevision:migratedReview.revision,historyConsent:migratedReview.invitation!.id})).receipt.status).toBe("accepted");
+        expect((await room(lastPlayer)).sharedMessages.map(m=>m.body)).toEqual([selectedMessage.body]);
+        expect(JSON.stringify(await history(lastPlayer))).not.toContain("Other room secret");
+        expect(JSON.stringify(await history(lastPlayer))).not.toContain("Unselected after chosen history");
       }
     },
     240000,

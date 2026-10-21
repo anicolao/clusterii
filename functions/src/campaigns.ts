@@ -24,7 +24,11 @@ import {
   startCampaign,
 } from "../../shared/campaign.js";
 import { commandDigest } from "../../shared/command-receipt.js";
-import { converse } from "../../shared/conversations.js";
+import {
+  converse,
+  type SharedHistoryMessage,
+  selectedHistoryReferences,
+} from "../../shared/conversations.js";
 import {
   type Context,
   type Envelope,
@@ -403,8 +407,55 @@ async function handleCampaign(
           canonicalKey,
           context(gameId, revision, "canonical", epoch),
         );
+        let sharedHistory: SharedHistoryMessage[] = [];
+        if (
+          action.kind === "conversation.invite" &&
+          "scope" in action &&
+          action.scope === "selected" &&
+          "roomId" in action &&
+          typeof action.roomId === "string"
+        ) {
+          const refs = selectedHistoryReferences(current, action, uid);
+          const roomId = action.roomId;
+          const snapshots = await Promise.all(
+            refs.map((ref) =>
+              tx.get(
+                db().doc(`${canonicalVersions(gameId, epoch)}/${ref.revision}`),
+              ),
+            ),
+          );
+          sharedHistory = await Promise.all(
+            snapshots.map(async (snapshot, index) => {
+              const ref = refs[index];
+              if (!snapshot.exists) throw new Error("conversation-history");
+              const sourceKey =
+                mode === "real"
+                  ? await unprotect(
+                      snapshot.get("protectedKey"),
+                      `canonical:${gameId}:${ref.revision}:${epoch}`,
+                    )
+                  : snapshot.get("canonicalKey");
+              if (!sourceKey) throw new Error("conversation-history");
+              const source = await provider(mode).open<Campaign>(
+                snapshot.get("envelope"),
+                sourceKey,
+                context(gameId, ref.revision, "canonical", epoch),
+              );
+              const room = source.diplomacy?.rooms[roomId];
+              const message = room?.message;
+              if (
+                !room?.members.includes(uid) ||
+                !message ||
+                message.id !== ref.id ||
+                !message.recipients.includes(uid)
+              )
+                throw new Error("conversation-history");
+              return { ...message, sourceRevision: ref.revision };
+            }),
+          );
+        }
         next = action.kind.startsWith("conversation.")
-          ? converse(current, action, uid, commandId, now)
+          ? converse(current, action, uid, commandId, now, sharedHistory)
           : action.kind === "fleet.route"
             ? orderRoute(current, action, uid, commandId, Date.now())
             : action.kind === "fleet.cancel"
@@ -456,6 +507,9 @@ async function handleCampaign(
       const reason =
         error instanceof Error &&
         [
+          "conversation-history",
+          "conversation-history-consent",
+          "conversation-sharing-unavailable",
           "conversation-invalid",
           "conversation-unavailable",
           "conversation-limit",

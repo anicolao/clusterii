@@ -287,10 +287,12 @@
       const retained = new Map<string, MessageRecord>();
       for (const record of [...receivedConversationViews, current])
         for (const room of record.conversations ?? [])
-          if (room.message)
-            retained.set(room.message.id, {
-              conversations: [{ id: room.id, message: room.message }],
-            });
+          for (const message of [room.message, ...(room.sharedMessages ?? [])])
+            if (message)
+              retained.set(message.id, {
+                revision: record.revision,
+                conversations: [{ id: room.id, message }],
+              });
       receivedConversationViews = [...new Set(retained.values())];
     });
   });
@@ -863,6 +865,7 @@
       onkeydown={panelKeys}
     >
       <Conversations
+        feedbackKind={commandKind}
         {view}
         {messages}
         bind:selected={selectedRoom}
@@ -1261,8 +1264,11 @@
     padding: 12px 0;
   }
   .system-actions {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding-top: 12px;
+    flex-shrink: 0;
   }
   .system-details:focus-visible {
     outline: 2px solid #91dcec;
@@ -1293,7 +1299,9 @@
     border-color: #8bd8e7;
     color: #effdff;
     flex-shrink: 0;
-    margin-top: 12px;
+    min-width: 0;
+    padding: 10px 8px;
+    margin-top: 0;
   }
   h2 {
     font:

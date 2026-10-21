@@ -22,6 +22,7 @@
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import {
     conversationFrame,
+    sharingFrame,
     draftRecoveryFrame,
     arrivalFrame,
     contactsFrame,
@@ -159,13 +160,15 @@
                 onuseSavedDraft={() => (time = 4800)}
                 onreplaceDraft={() => (time = 3200)}
               />{/key}
-          </div>{:else if selected === "conversations"}<div
+          </div>{:else if selected === "conversations" || selected === "conversation-sharing"}<div
             style="height:min(900px,90svh);min-height:550px"
           >
             {#key frame.at}<Conversations
-                {...conversationFrame(time)}
+                {...selected === "conversation-sharing"
+                  ? sharingFrame(time)
+                  : conversationFrame(time)}
                 pending={(time >= 500 && time < 1200) ||
-                  (time >= 3200 && time < 4800)}
+                  (selected === "conversations" && time >= 3200 && time < 4800)}
                 message={frame.feedback.message}
                 error={frame.feedback.error}
                 inspect={{ time: time - frame.at, reduced }}
