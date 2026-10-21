@@ -16,3 +16,7 @@ The roster shows “Awaiting home assignment” after its scheduled time until t
 - Scheduler deployed and verified ACTIVE with authenticated HTTP delivery, three retries and 10–60 second backoff; no test KMS flag is deployed. This verifies configuration, not hosted failure recovery.
 
 These are development scenarios under proposed rules. Fault injection models storage failure and a lost completion acknowledgement; it does not certify hosted process termination, Cloud Scheduler redelivery or production scale. Independent visual review and exact-head CI remain gates. Public campaigns remain closed.
+
+## Maintenance acknowledgement regression
+
+CI at 76ec04b found four ambiguous maintenance status selectors after adding the separate roster live region. The maintenance cohort now selects the exact accepted pause/resume acknowledgement text, retaining both live regions and all state, focus, reload and geometry assertions. Other status locators were reviewed: identity checks occur before opening a roster; lab checks scope a single specimen; the start journey scopes the roster itself. All four affected viewport journeys pass in 19.8 seconds. Replacement full CI remains a gate.
