@@ -11,3 +11,5 @@ The guarded emulator-only domain clock is described in E2E_GUIDE.md. It changes 
 Base: #53 (`feat/live-sharing-stories`). Local execution, four-viewport visual review, pinned Linux verification and independent acceptance are pending.
 
 First generation passed eight journeys in 4.0 minutes (`/tmp/cluster-credit-generation.log`). Phone inspection found that the captured reading position hid outcome details, and the pending button's long acknowledgement word exceeded its narrow content width. The next generation adds keyboard reading with explicit outcome containment and a scoped commitment-button wrap rule. The full first candidate set is retained at `/tmp/cluster-credit-reading-before`; none was promoted. Types, lint and eleven story-policy guards pass. Final candidate review and exact comparison remain pending.
+
+Final generation passes eight journeys/212 captures in 4.0 minutes. Separate visual review is recorded in [LIVE_CREDIT_BASELINE_REVIEW.md](../testing/LIVE_CREDIT_BASELINE_REVIEW.md); only the two new macOS sets are promoted. Exact comparison is running. Both previous review sets remain retained, and no inherited baseline changed.
