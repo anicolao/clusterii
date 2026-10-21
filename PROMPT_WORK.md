@@ -219,3 +219,5 @@ Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | C
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into lifecycle-lab-stories, preserving exact comparisons.
 
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into research-lab-stories, preserving exact comparisons.
+
+Prompt 48 | 19717bdb7dd404d5198f254feeecf62ce4af2ee3eb8a00f1f6718d5901ce2870 | Register history lab PR50 dependency, preview and scoped exact evidence while retaining inherited Linux gates.
