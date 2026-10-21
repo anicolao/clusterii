@@ -10,10 +10,10 @@
   ],
   "description": "Five independent saved commanders join two real campaigns through ordinary controls. Explicit test-only domain/browser clocks expose scheduled and overdue states before the real scheduler endpoint assigns distinct homes. Single and multiple memberships then recover the named last campaign through Continue. No roster, home, balance or receipt is injected; accelerated evidence does not certify hosted cadence.",
   "source": {
-    "commit": "0c3a9f9cbd0f6934611e9dd8da0d8f3a66a04abf",
+    "commit": "4cfaebfbd9030c7e280e142d32b0ba94efe6c1b7",
     "dirty": true,
     "spec": "tests/browser/campaign-start.story.spec.ts",
-    "specSha256": "ee6af85506c8c85d936a9025ac06cb680b66644f1bf4a67a87de45c56bf50b8f"
+    "specSha256": "d2ec1e18f96d25005c3b2b2e95e70ed921371b1c39ed88558a6c0e716eff0cc2"
   },
   "mode": "verify",
   "status": "passed",
@@ -531,27 +531,37 @@
         {
           "player": "Dawn envoy 1",
           "image": "026-started-rosters-1-dawn-envoy-1.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         },
         {
           "player": "Dawn envoy 2",
           "image": "026-started-rosters-2-dawn-envoy-2.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         },
         {
           "player": "Dawn envoy 3",
           "image": "026-started-rosters-3-dawn-envoy-3.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         },
         {
           "player": "Dawn envoy 4",
           "image": "026-started-rosters-4-dawn-envoy-4.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         },
         {
           "player": "Dawn envoy 5",
           "image": "026-started-rosters-5-dawn-envoy-5.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         }
       ]
     },
@@ -568,22 +578,30 @@
         {
           "player": "Dawn envoy 1",
           "image": "027-homes-assigned-1-dawn-envoy-1.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         },
         {
           "player": "Dawn envoy 2",
           "image": "027-homes-assigned-2-dawn-envoy-2.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         },
         {
           "player": "Dawn envoy 3",
           "image": "027-homes-assigned-3-dawn-envoy-3.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         },
         {
           "player": "Dawn envoy 4",
           "image": "027-homes-assigned-4-dawn-envoy-4.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         }
       ]
     },
@@ -617,7 +635,9 @@
         {
           "player": "Dawn envoy 1",
           "image": "029-choose-last-campaign-1-dawn-envoy-1.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         }
       ]
     },
@@ -668,7 +688,9 @@
         {
           "player": "Dawn envoy 1",
           "image": "032-continue-exact-campaign-1-dawn-envoy-1.png",
-          "verifications": []
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
         }
       ]
     }

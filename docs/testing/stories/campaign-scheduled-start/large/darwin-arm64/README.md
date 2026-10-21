@@ -353,21 +353,31 @@ Acknowledged outcome: Every independent roster visibly acknowledges that its cam
 
 ### Viewpoint: Dawn envoy 1
 
+- [x] The active chart acknowledges that authorized contact records finished loading.
+
 [![Read the authoritative begun schedule in each visible roster after scheduler delivery. — Dawn envoy 1](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-1-dawn-envoy-1.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-1-dawn-envoy-1.png)
 
 ### Viewpoint: Dawn envoy 2
+
+- [x] The active chart acknowledges that authorized contact records finished loading.
 
 [![Read the authoritative begun schedule in each visible roster after scheduler delivery. — Dawn envoy 2](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-2-dawn-envoy-2.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-2-dawn-envoy-2.png)
 
 ### Viewpoint: Dawn envoy 3
 
+- [x] The active chart acknowledges that authorized contact records finished loading.
+
 [![Read the authoritative begun schedule in each visible roster after scheduler delivery. — Dawn envoy 3](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-3-dawn-envoy-3.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-3-dawn-envoy-3.png)
 
 ### Viewpoint: Dawn envoy 4
 
+- [x] The active chart acknowledges that authorized contact records finished loading.
+
 [![Read the authoritative begun schedule in each visible roster after scheduler delivery. — Dawn envoy 4](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-4-dawn-envoy-4.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-4-dawn-envoy-4.png)
 
 ### Viewpoint: Dawn envoy 5
+
+- [x] The active chart acknowledges that authorized contact records finished loading.
 
 [![Read the authoritative begun schedule in each visible roster after scheduler delivery. — Dawn envoy 5](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-5-dawn-envoy-5.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/026-started-rosters-5-dawn-envoy-5.png)
 
@@ -381,17 +391,25 @@ Acknowledged outcome: Four distinct homes show ownership of both layers and the 
 
 ### Viewpoint: Dawn envoy 1
 
+- [x] The active chart acknowledges that authorized contact records finished loading.
+
 [![Open the first campaign and inspect each commander's own authoritative home system. — Dawn envoy 1](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-1-dawn-envoy-1.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-1-dawn-envoy-1.png)
 
 ### Viewpoint: Dawn envoy 2
+
+- [x] The active chart acknowledges that authorized contact records finished loading.
 
 [![Open the first campaign and inspect each commander's own authoritative home system. — Dawn envoy 2](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-2-dawn-envoy-2.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-2-dawn-envoy-2.png)
 
 ### Viewpoint: Dawn envoy 3
 
+- [x] The active chart acknowledges that authorized contact records finished loading.
+
 [![Open the first campaign and inspect each commander's own authoritative home system. — Dawn envoy 3](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-3-dawn-envoy-3.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-3-dawn-envoy-3.png)
 
 ### Viewpoint: Dawn envoy 4
+
+- [x] The active chart acknowledges that authorized contact records finished loading.
 
 [![Open the first campaign and inspect each commander's own authoritative home system. — Dawn envoy 4](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-4-dawn-envoy-4.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/027-homes-assigned-4-dawn-envoy-4.png)
 
@@ -416,6 +434,8 @@ Acknowledged outcome: The second authoritative galaxy has begun.
 - [x] No commander has an uncaught application error.
 
 ### Viewpoint: Dawn envoy 1
+
+- [x] The active chart acknowledges that authorized contact records finished loading.
 
 [![Visit the second active campaign so it becomes the last accessible selection. — Dawn envoy 1](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/029-choose-last-campaign-1-dawn-envoy-1.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/029-choose-last-campaign-1-dawn-envoy-1.png)
 
@@ -452,5 +472,7 @@ Acknowledged outcome: Continue opens the exact recorded campaign ID and live gal
 - [x] No commander has an uncaught application error.
 
 ### Viewpoint: Dawn envoy 1
+
+- [x] The active chart acknowledges that authorized contact records finished loading.
 
 [![Commit Continue and return to that exact active campaign. — Dawn envoy 1](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/032-continue-exact-campaign-1-dawn-envoy-1.png)](../../../../../../tests/browser/story-baselines/campaign-scheduled-start/large/darwin-arm64/032-continue-exact-campaign-1-dawn-envoy-1.png)
