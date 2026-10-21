@@ -1,5 +1,10 @@
 import { createRequire } from "node:module";
-import type { Page, BrowserContext, WebSocketRoute } from "@playwright/test";
+import type {
+  Page,
+  BrowserContext,
+  WebSocketRoute,
+  Locator,
+} from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
@@ -22,7 +27,7 @@ const open = async (page: Page) => {
   await button(page, "Economy").click();
   await button(page, "Credit offers").click();
 };
-const readStatus = async (page: Page, name: string) => {
+const readTarget = async (page: Page, status: Locator) => {
   // Prove commitment remains available before moving the bounded reading pane.
   const footer = await panel(page).locator("footer").boundingBox();
   expect(footer).not.toBeNull();
@@ -35,8 +40,7 @@ const readStatus = async (page: Page, name: string) => {
     exact: true,
   });
   await reading.focus();
-  await page.keyboard.press("End");
-  const status = panel(page).getByRole("status", { name, exact: true });
+
   await status.scrollIntoViewIfNeeded();
   await expect
     .poll(async () => {
@@ -50,6 +54,12 @@ const readStatus = async (page: Page, name: string) => {
       );
     })
     .toBe(true);
+};
+const readStatus = async (page: Page, name: string) => {
+  await readTarget(
+    page,
+    panel(page).getByRole("status", { name, exact: true }),
+  );
 };
 const credits = (n: number) =>
   (n / 1000).toLocaleString("en-US", { maximumFractionDigits: 3 });
@@ -353,6 +363,23 @@ for (const interrupted of [false, true])
               await expect(
                 button(sender, "Awaiting acknowledgement…"),
               ).toBeDisabled();
+              expect(
+                await button(sender, "Awaiting acknowledgement…").evaluate(
+                  (element) => {
+                    const bounds = element.getBoundingClientRect();
+                    const range = document.createRange();
+                    range.selectNodeContents(element);
+                    return [...range.getClientRects()].every(
+                      (rect) =>
+                        rect.left >= bounds.left &&
+                        rect.right <= bounds.right &&
+                        rect.top >= bounds.top &&
+                        rect.bottom <= bounds.bottom,
+                    );
+                  },
+                ),
+                "Pending commitment lettering stays inside its button",
+              ).toBe(true);
             },
           },
           verifications: [
@@ -388,7 +415,28 @@ for (const interrupted of [false, true])
               await expect(
                 button(sender, "Awaiting acknowledgement…"),
               ).toBeDisabled();
+              expect(
+                await button(sender, "Awaiting acknowledgement…").evaluate(
+                  (element) => {
+                    const bounds = element.getBoundingClientRect();
+                    const range = document.createRange();
+                    range.selectNodeContents(element);
+                    return [...range.getClientRects()].every(
+                      (rect) =>
+                        rect.left >= bounds.left &&
+                        rect.right <= bounds.right &&
+                        rect.top >= bounds.top &&
+                        rect.bottom <= bounds.bottom,
+                    );
+                  },
+                ),
+                "Pending commitment lettering stays inside its button",
+              ).toBe(true);
               await expect.poll(() => writes.length).toBeGreaterThanOrEqual(2);
+              await readTarget(
+                sender,
+                panel(sender).getByLabel("Credits you request"),
+              );
             },
           },
           verifications: [
@@ -479,6 +527,12 @@ for (const interrupted of [false, true])
               panel(recipient).getByRole("region", { name: "Offer review" }),
             ).toContainText("10.001 credits");
             await expect(panel(recipient)).toContainText("2.002 credits");
+            await readTarget(
+              recipient,
+              panel(recipient)
+                .getByRole("region", { name: "Offer review" })
+                .locator("dl"),
+            );
           },
         },
         verifications: checks(),
