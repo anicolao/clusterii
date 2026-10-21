@@ -698,3 +698,77 @@ Reviewer CI finding at 08:07 Toronto: #29 2f446ab is green; #30 67244aa run39587
 #30/#31 failures unchanged; #32/#33 verification pending, publish/documentation green. Pane confirms08:07 handoff is queued and agent actively diagnosing durable outbox, receipt matching and campaign-collision fixture; no duplicate prompt or stall intervention. Credit-offer successor remains early/uncommitted alongside diagnosis.
 
 Preliminary offer-source inspection finds issuer funds reserved on offer, counterpart funds reserved on acceptance, bound counterpart authorization, tick settlement/withdrawal/expiry and participant-only projections. These are implementation observations, not approved policy or completed validation; expiry/cutoff, overflow/refund conservation, concurrency/replay and private recovery need dedicated evidence before acceptance. No new PR or rendered offer evidence yet. Disk6.3GiB. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 08:27 Toronto
+
+Collision repair pushed #30 aac1d04 and propagated #31 19e896c; propagation through #32/#33 actively underway. Independent code review confirms server-confirmed mismatched immutable receipt retires only the exact encrypted outbox record, cached mismatch waits for server confirmation, full-command comparison protects same-UUID replacement, and metadata receipt delivery is guarded once. Strict digest validation remains. Independent npm run check on clean #30 passes zero Svelte errors/warnings and backend TypeScript; retained browser log confirms13passed1.5min.
+
+Root cause documented: mismatched receipt cleared in-memory pending state but left durable record, blocking the preserved draft's fresh submission. Extended evidence covers original campaign unchanged and replacement payload preservation. Replacement full CI remains required; no acceptance. Agent actively propagating with credit-offer work safely stashed, no duplicate handoff. Disk5.9GiB. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 08:37 Toronto
+
+Receipt repair now propagated through #32 46307c6 and #33 8a9ae26, following #30 aac1d04/#31 19e896c; replacement verification running. #31 publication check absent from returned rollup, so not claimed green; other current publication/documentation checks green. Credit-offer work resumed on corrected stack, active/uncommitted with no new PR.
+
+Independent service log confirms two both-provider credit-exchange cases202 assertions,0fail covering reserved balances, authorization, replay, expiry and migration. Unit source includes acceptance/withdrawal ordering, cancellation conservation, catch-up expiry and overflow returning reservations; passing service evidence does not establish all boundary/recovery/rendered gates. Browser/gallery/lab work active, no stall or duplicate handoff. Disk6.1GiB. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 08:47 Toronto
+
+#30–33 replacement verification remains running; #31 publication rerun is now active after shared deployment-queue cancellation, other publish/documentation checks green. Credit offers active/uncommitted, no new PR. Agent reports final three affected browser/lab cases58.6s after settled-feedback and expanded-history corrections; full documented evidence88units/1510, both-provider202 and earlier nine browser/lab cases1.4min. Compatible-consumer deployment underway; no rollout completion claimed.
+
+Independent settled-phone capture shows both parties' exact10.001/2.002-credit terms, available194.801, confirmed tick1 settlement and contained Return action. It supports sampled settled-state readability, not full visual acceptance of every negotiation/recovery state. Review note explicitly separates eight-tick/phase/ordering proposals and64-offer storage bound from owner approval, and leaves observation exchange/alliance scope open. Agent healthy, no duplicate handoff. Disk5.9GiB. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 08:57 Toronto
+
+New #34 f3ab848 correctly stacks on #33 and is attached; publish/documentation green, verification pending with #30–33. Agent already on dirty observation-offers successor, so no independent exact-head type check claimed. Final documented evidence89units/1516, both-provider202, nine browser/lab1.4min and final three58.6s; compatible consumers/admission/rules readback complete per agent. Independent final settlement source checks preflight both balances including refund reservations before transfer. Prior settled-phone review remains scoped. New actionable finding:
+
+Reviewer identity finding at 08:57 Toronto: src/lib/return-briefing.ts:175 finds own commander by first roster faction match. The new co-faction trade test proves multiple commanders may share a faction. For a later same-faction seat this suppresses messages from the first commander and includes its own messages as incoming activity. Use authoritative seat identity (now projected in #34) with an explicit safe policy for historical records lacking that field; do not infer identity from faction. Add an eight-seat same-faction briefing regression for own-message exclusion and other-commander inclusion. Fix and propagate on the appropriate stack branch, retain attributed logs and latest meta-prompts.md, commit/push without merge.
+
+
+## Human request — E2E story conventions — 2026-10-21
+
+What are our e2e guidelines for this project? I had thought that we demanded user story style tests with TestStepHelper like in the sample projects, but I am not seeing that style of testing.
+
+## Reviewer finding and handoff — E2E story contract
+
+Reviewer acceptance correction prompted by the user: UX_DESIGN.md:349 explicitly requires a shared illustrated-story helper, normal player action -> authoritative acknowledgement -> named game-fact and geometry assertions -> settled capture, plus an illustrated story document. IMPLEMENTATION_PLAN.md:190 repeats this. Current tests/browser/helpers.ts is login/geometry utilities, not that story helper; monolithic specs and loose captures do not satisfy the requirement. After the current co-faction correctness repair, prioritize closing this testing-contract gap before another gameplay PR: inspect the actual TestStepHelper implementations in /Users/anicolao/projects/todo/tests/e2e/helpers/test-step-helper.ts and /Users/anicolao/projects/games/pantheon/tests/e2e/helpers/test-step-helper.ts; adapt a Cluster TestStepHelper with named narrative steps, named verifications, acknowledged outcomes, explicit font/image/finite-motion readiness, viewport captures and generated ordered story documents covering all player viewpoints. Preserve existing privacy/conservation/recovery assertions and real service journeys; keep admin clock/fault controls explicitly separated. Map existing journeys to UX-01 through UX-15 inventory (and any remaining inventory IDs), make gaps explicit, and migrate existing coverage in reviewable commits rather than merely wrapping an entire long test as one step. Enforce exact pinned visual comparisons and separately reviewed baseline generation per UX_DESIGN, not screenshot attachment alone. Do not blindly inherit sample-project masks or unrelated tabletop behavior. Document the mandatory convention in AGENTS/testing guidance, record this attributed instruction and human source in meta-prompts.md, commit/push evidence and carry latest supervisory log. No merge. This is an acceptance gap previously missed by supervision, not new approval of gameplay rules.
+
+
+## Human request — Dedicated E2E guide — 2026-10-21
+
+maybe get it to specifically write an e2e guide similar to that int he other projects as well to amke this ahrder to miss
+
+## Reviewer handoff — Dedicated E2E guide
+
+Reviewer follow-up explicitly requested by the user: write a root E2E_GUIDE.md for Cluster II, reading /Users/anicolao/projects/todo/E2E_GUIDE.md and /Users/anicolao/projects/games/pantheon/E2E_GUIDE.md as references. Make the illustrated user-story/TestStepHelper convention mandatory and hard to miss: link the guide from AGENTS.md, README.md and IMPLEMENTATION_PLAN.md, and require reading it before writing/changing browser tests. Include a concrete runnable-style Cluster story example with named steps/assertions and generated story output, helper/artifact locations, real service/player setup versus explicitly labeled fault/clock controls, deterministic capture readiness, exact visual verification versus separate baseline review, viewport/keyboard/motion requirements, commands, and a PR acceptance checklist. Separate required convention from migration status honestly; document existing gaps rather than claiming procedural tests already comply. Implement this alongside the previously requested helper/story migration before another gameplay PR. Record this delegated instruction with reviewer attribution and carry the latest supervisory log; commit/push without merging.
+
+
+## Reviewer progress — 2026-10-21 09:07 Toronto
+
+Agent explicitly acknowledged user-requested E2E contract correction, pushed co-faction fix on #34 dd7c251, then switched to feat/illustrated-e2e and read both sample guides/helpers. No further gameplay PR is being advanced; observation-offer work is deferred. Root guide/helper implementation has not yet appeared at inspection, so not claimed complete. Prompts42–43 and review note explicitly mark procedural coverage as incomplete illustrated-story acceptance.
+
+Independent identity diff uses a shared authoritative commander-seat reader and neutral author attribution for historical records without seat identity; equivalent conversation/arrival faction-inference bugs are also corrected. Reported91units/1536 and two focused browser/lab cases8.4s; source review is scoped, not full acceptance. #30–34 verification pending; #34 publication running, prior publications/docs green. Agent active, no duplicate handoff. Disk5.4GiB. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 09:19 Toronto
+
+Agent healthy on feat/illustrated-e2e, with root E2E_GUIDE.md, mandatory links in AGENTS/README/IMPLEMENTATION_PLAN, shared TestStepHelper/readiness/fixture, isolated story config/runner and entry/identity story migration actively being written. Independently read guide and helper: named player actions, acknowledgements, assertions and per-player captures; separate harness controls; exact decoded RGBA comparison; generation explicitly not verification; four viewports and honest migration gaps. No completed run, generated narrative, reviewed baseline or new PR yet; not accepted. An initial stale passed-document concern was raised in commentary, then inspection found the configured Playwright outputDir owns test-results/stories and normal run cleanup addresses cross-run stale artifacts; no defect handoff sent on that unconfirmed concern. Review generated evidence and failure behavior when ready.
+
+#30–34 verification still in progress; publication/documentation green. #29 green. No duplicate queued prompt or interruption. Carry this checkpoint into the related committed/pushed supervisory logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 09:28 Toronto
+
+Agent remains active on uncommitted feat/illustrated-e2e. First generation run reportedly passed all four Learn journeys and two identity journeys; two identity failures are being repaired with explicit emulator-page readiness, failure traces retained. Independently read generated six-step phone Learn narrative: separate entry, keyboard opening, each subsequent chapter, and focus-restoring return, with named checks and linked captures. Document clearly says baseline candidates/generation, not verification. Sampled chapter-four phone image is readable, bounded, and matches its narrative with visible Previous/Enter controls. This is scoped candidate review, not approval of all baselines or exact verification.
+
+UX-01–16 migration inventory explicitly lists remaining gameplay, input and hosted gaps. New policy script freezes legacy procedural spec hashes and requires new/changed specs to migrate, with mandatory guide links and basic bypass checks; this static guard is supplementary, not proof of story semantics. No new PR or completed acceptance run yet. #30–34 verification still running; publish/docs green; #29 green. Existing agent is diagnosing its failures without intervention, so no duplicate handoff. Carry latest meta log into related commit/push, preserve failures, and retain independent baseline review before acceptance; no merge.
+
+
+## Reviewer progress and CI handoff — 2026-10-21 09:38 Toronto
+
+Story slice committed locally b661987; clean checkout at inspection, PR creation underway. Read baseline review: generation failures and compositor-related exact mismatches retained, rendering flags pinned, final local comparison reportedly eight journeys/44 captures35.6s. No independent full baseline approval or Linux acceptance claimed.
+
+Reviewer CI finding at 09:38 Toronto: #30 aac1d04 and #31 19e896c are now green. #32 46307c6 run39599629028 and #33 8a9ae26 run39600113448 fail history.spec.ts:20 in all four viewports: focusing Saved campaign records then Shift+Tab no longer focuses Return to galaxy. Logs retained /tmp/cluster32-review-failure.log and /tmp/cluster33-review-failure.log. Diagnose actual keyboard order after briefing changes, distinguish stale expected order from accessibility regression, preserve meaningful keyboard/focus/containment assertions, and propagate the appropriate fix through the stack. Do not simply drop the check or raise timeout. If changing legacy specs on the story branch, honor the new migration policy rather than silently refreshing exceptions. Record attributed instruction and continuation, carry latest meta-prompts, commit/push without merge. Entry/identity local exact comparison is useful progress, but Linux and independent full visual acceptance remain pending.
