@@ -1,5 +1,11 @@
 <script lang="ts">
-  import { tick } from "svelte";
+  import { tick, onDestroy } from "svelte";
+  import CampaignHistory from "../CampaignHistory.svelte";
+  import {
+    HistoryEpochChanged,
+    type HistoryCursor,
+    type HistoryPage,
+  } from "$lib/campaign-history";
   import { Canvas } from "@threlte/core";
   import Scene from "./Scene.svelte";
   import type { CampaignView } from "@shared/campaign";
@@ -13,6 +19,7 @@
   import Icon from "../Icon.svelte";
   let {
     view,
+    loadHistory,
     onback,
     onleave,
     onmaintenance,
@@ -26,6 +33,7 @@
     pending = false,
   }: {
     view: CampaignView;
+    loadHistory?: (cursor: HistoryCursor | null) => Promise<HistoryPage>;
     onback: () => void;
     onleave?: () => void;
     onmaintenance?: () => void;
@@ -38,6 +46,73 @@
     busy?: boolean;
     pending?: boolean;
   } = $props();
+  let history = $state(false);
+  let records = $state<CampaignView[]>([]);
+  let cursor = $state<HistoryCursor | null>(null);
+  let historyLoading = $state(false);
+  let historyError = $state("");
+  let historySerial = 0;
+  let retryCursor: HistoryCursor | null = null;
+  onDestroy(() => {
+    historySerial++;
+  });
+  async function readHistory(after: HistoryCursor | null = null) {
+    if (!loadHistory) return;
+    const serial = ++historySerial;
+    const openingControl =
+      document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null;
+    retryCursor = after;
+    historyLoading = true;
+    historyError = "";
+    await tick();
+    if (serial !== historySerial) return;
+    if (history && document.activeElement === document.body)
+      document.querySelector<HTMLElement>(".history-panel")?.focus();
+    try {
+      const page = await loadHistory(after);
+      if (serial !== historySerial) return;
+      records = after ? [...records, ...page.records] : page.records;
+      cursor = page.cursor;
+      if (!after) {
+        await tick();
+        document
+          .querySelector(".history-panel .history-scroll")
+          ?.scrollTo(0, 0);
+      }
+    } catch (error) {
+      if (serial !== historySerial) return;
+      historyError =
+        error instanceof HistoryEpochChanged
+          ? error.message
+          : "History could not be recovered. Check your connection and retry. Your current records remain in place.";
+    } finally {
+      if (serial === historySerial) {
+        historyLoading = false;
+        await tick();
+        if (
+          history &&
+          serial === historySerial &&
+          document.activeElement === document.body
+        ) {
+          if (
+            openingControl?.isConnected &&
+            openingControl.closest(".history-panel")
+          )
+            openingControl.focus();
+          else document.querySelector<HTMLElement>(".history-panel")?.focus();
+        }
+      }
+    }
+  }
+  async function closeHistory() {
+    history = false;
+    historySerial++;
+    historyLoading = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="history"]')?.focus();
+  }
   let roster = $state(false);
   let selected = $state("");
   let stellarClass = $state<StarClass | "all">("all");
@@ -60,11 +135,14 @@
   );
   let query = $state("");
   let listing = $state(false);
-  async function openPanel(kind: "roster" | "systems") {
+  async function openPanel(kind: "roster" | "systems" | "history") {
+    history = kind === "history";
+    if (history && !records.length) void readHistory();
     roster = kind === "roster";
     listing = kind === "systems";
     await tick();
-    if (listing) document.getElementById("system-search")?.focus();
+    if (history) document.querySelector<HTMLElement>(".history-panel")?.focus();
+    else if (listing) document.getElementById("system-search")?.focus();
     else document.querySelector<HTMLElement>(".roster-panel")?.focus();
   }
   async function closeRoster() {
@@ -75,13 +153,13 @@
   function panelKeys(event: KeyboardEvent) {
     if (event.key === "Escape") {
       event.preventDefault();
-      void (roster ? closeRoster() : closeList());
+      void (history ? closeHistory() : roster ? closeRoster() : closeList());
       return;
     }
     if (event.key !== "Tab") return;
     const controls = [
       ...(event.currentTarget as HTMLElement).querySelectorAll<HTMLElement>(
-        "button:not(:disabled),input,select,summary,a[href]",
+        'button:not(:disabled),input,select,summary,a[href],[tabindex="0"]',
       ),
     ].filter((el) => el.getClientRects().length);
     const first = controls[0],
@@ -118,7 +196,7 @@
 </script>
 
 <div class="galaxy-surface">
-  <header class="command-rail" inert={roster || listing}>
+  <header class="command-rail" inert={roster || listing || history}>
     <div>
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
       <span
@@ -143,7 +221,7 @@
       aria-expanded={roster}>Roster</ActionButton
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
   </header>
-  {#if !roster}<div class="acknowledgement" inert={listing}>
+  {#if !roster}<div class="acknowledgement" inert={listing || history}>
       <Feedback {message} {error} />{#if onretry}<ActionButton
           disabled={busy}
           class="secondary"
@@ -153,7 +231,7 @@
     </div>{/if}
   <div
     class="chart"
-    inert={roster || listing}
+    inert={roster || listing || history}
     aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
   >
     <Canvas renderMode="on-demand"
@@ -168,7 +246,7 @@
     >
   </div>
   <aside
-    inert={roster || listing}
+    inert={roster || listing || history}
     class="system-inspector"
     aria-label="Selected system"
   >
@@ -232,7 +310,33 @@
       data-focus="systems-list"
       aria-expanded={listing}>Systems list</ActionButton
     >
+    {#if loadHistory}<ActionButton
+        class="secondary"
+        data-focus="history"
+        aria-expanded={history}
+        onclick={() => openPanel("history")}>History</ActionButton
+      >{/if}
   </aside>
+  {#if history}<div
+      class="history-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Campaign history panel"
+      tabindex="-1"
+      onkeydown={panelKeys}
+    >
+      <CampaignHistory
+        {records}
+        loading={historyLoading}
+        error={historyError}
+        earlier={!!cursor}
+        newer={!!records.length && view.revision > records[0].revision}
+        onearlier={() => readHistory(cursor)}
+        onlatest={() => readHistory()}
+        onretry={() => readHistory(retryCursor)}
+        onclose={closeHistory}
+      />
+    </div>{/if}
   {#if roster}<div
       class="roster-panel"
       role="dialog"
@@ -369,6 +473,16 @@
   .acknowledgement :global(button) {
     pointer-events: auto;
   }
+  .history-panel {
+    position: absolute;
+    inset: 80px auto 24px 24px;
+    width: min(620px, calc(100% - 48px));
+    padding: 24px;
+    z-index: 6;
+    background: #07131c;
+    border: 1px solid #b29e78;
+    box-shadow: 0 20px 80px #000;
+  }
   .roster-panel {
     position: absolute;
     inset: 80px 24px auto auto;
@@ -496,6 +610,11 @@
     border: 1px solid #87919a;
   }
   @media (min-width: 2400px) {
+    .history-panel {
+      inset: 130px auto 40px 40px;
+      width: 900px;
+      padding: 32px;
+    }
     .systems-list {
       width: 560px;
       font-size: 24px;
@@ -582,6 +701,11 @@
       left: 12px;
       max-width: calc(100% - 24px);
       font-size: 14px;
+    }
+    .history-panel {
+      inset: 66px 12px 12px;
+      width: auto;
+      padding: 16px;
     }
     .roster-panel {
       inset: 66px 12px 12px;

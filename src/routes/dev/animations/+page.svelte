@@ -5,9 +5,15 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
-  import { scheduledFrame, scenarios, duration } from "./scenarios";
+  import {
+    scheduledFrame,
+    scenarios,
+    duration,
+    historyRecords,
+  } from "./scenarios";
   let selected = $state("accepted");
   let time = $state(0);
   let speed = $state(1);
@@ -102,7 +108,28 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "session-ended"}
+        {#if selected === "history-recovery"}<div style="height: 540px">
+            <CampaignHistory
+              records={time >= 3200 ? historyRecords : []}
+              inspect={{ time: time - frame.at, reduced }}
+              errorId={reduced
+                ? "reduced-history-error"
+                : "standard-history-error"}
+              loading={time < 1000 || (time >= 2200 && time < 3200)}
+              error={frame.feedback.error}
+              onearlier={() => {}}
+              onlatest={() => {
+                time = 0;
+                playing = true;
+              }}
+              onretry={() => {
+                time = 2200;
+                playing = true;
+              }}
+              onclose={reset}
+            />
+          </div>
+        {:else if selected === "session-ended"}
           {#if time < 1200}<SessionSecurity
               pending
               onconfirm={() => {}}
