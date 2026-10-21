@@ -1,0 +1,170 @@
+{
+  "id": "identity-receipt-recovery",
+  "title": "Recover an identity draft after a mismatched acknowledgement",
+  "inventory": [
+    "UX-01",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A commander submits a second identity with a deliberately reused command UUID. The real encrypted ingress rejects the mismatched acknowledgement without losing the draft; a new command saves it and reload recovers the accepted identity.",
+  "source": {
+    "commit": "c38eb029e5e704c82fafcac48767a827a363780b",
+    "dirty": false,
+    "spec": "tests/browser/receipt-recovery.story.spec.ts",
+    "specSha256": "fb976979fba3aacc57bfe6e43b4c4db19ad9393dd97beec00ffbaca809709f3c"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "reused-command-id",
+      "description": "Deliberately reuse the browser command UUID while preserving real encryption entropy, authenticated ingress, persistence and receipt validation. Sign in through the ordinary Google emulator UI.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "first-draft",
+      "description": "Choose the identity to save first.",
+      "actor": "Receipt commander",
+      "kind": "player",
+      "acknowledgement": "The identity draft is ready to save.",
+      "verifications": [
+        "The alias is visible before commitment."
+      ],
+      "views": [
+        {
+          "player": "Receipt commander",
+          "image": "002-first-draft-1-receipt-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "accepted-identity",
+      "description": "Save the first identity and wait for its authoritative acknowledgement.",
+      "actor": "Receipt commander",
+      "kind": "player",
+      "acknowledgement": "The identity save is acknowledged.",
+      "verifications": [
+        "Canonical identity remains at revision 1 with 1 versions and receipts."
+      ],
+      "views": [
+        {
+          "player": "Receipt commander",
+          "image": "003-accepted-identity-1-receipt-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "replacement-draft",
+      "description": "Prepare a different identity while the original stays saved.",
+      "actor": "Receipt commander",
+      "kind": "player",
+      "acknowledgement": "The replacement text remains editable.",
+      "verifications": [
+        "Canonical identity remains at revision 1 with 1 versions and receipts.",
+        "The unsaved replacement does not inherit the prior save acknowledgement."
+      ],
+      "views": [
+        {
+          "player": "Receipt commander",
+          "image": "004-replacement-draft-1-receipt-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "mismatched-acknowledgement",
+      "description": "Submit the replacement with the reused command ID. The acknowledgement belongs to different content, so the draft is retained for a fresh save.",
+      "actor": "Receipt commander",
+      "kind": "player",
+      "acknowledgement": "The mismatched-order alert is focused.",
+      "verifications": [
+        "Canonical identity remains at revision 1 with 1 versions and receipts.",
+        "The draft survives without a misleading validation error or retry of the colliding command."
+      ],
+      "views": [
+        {
+          "player": "Receipt commander",
+          "image": "005-mismatched-acknowledgement-1-receipt-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-command-identity",
+      "description": "Restore ordinary random command UUIDs; do not change the retained draft, receipt or persisted identity.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "fresh-save",
+      "description": "Save the retained draft as a new command and receive its matching acknowledgement.",
+      "actor": "Receipt commander",
+      "kind": "player",
+      "acknowledgement": "The fresh identity command is acknowledged.",
+      "verifications": [
+        "Canonical identity remains at revision 2 with 2 versions and receipts."
+      ],
+      "views": [
+        {
+          "player": "Receipt commander",
+          "image": "007-fresh-save-1-receipt-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-accepted-draft",
+      "description": "Reload and reopen the identity saved by the fresh command.",
+      "actor": "Receipt commander",
+      "kind": "player",
+      "acknowledgement": "The accepted replacement survives reload.",
+      "verifications": [
+        "Canonical identity remains at revision 2 with 2 versions and receipts."
+      ],
+      "views": [
+        {
+          "player": "Receipt commander",
+          "image": "008-reload-accepted-draft-1-receipt-commander.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

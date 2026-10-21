@@ -914,3 +914,31 @@ Independent pending source review: entry Play and Learn Enter now disable while 
 Agent resumed normally and independently confirmed retained /tmp/cluster-navigation-exact.log reports28 passed2.9min. New navigation/readiness candidate review documents12 journeys97 captures, existing images unchanged; full independent composition (particularly compact4K), Linux and motion gates explicit. Held-profile harness forwards real request rather than fabricating saved identity; prior source review of readiness guard stands. No successor PR yet, work remains uncommitted.
 
 #40 c8e0415 Linux story comparison now green; application pending, publication status not returned at inspection. #41 775e6ad generation green, verify failure independently retained /tmp/cluster41-story-review-failure.log shows missing new receipt-recovery Linux baselines; separate candidate review/promotion required. #38–39 story checks green/application pending; #37 fully green. No new blocker or duplicate handoff. Carry checkpoint into related committed/pushed logs; no full acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 13:08 Toronto
+
+#42 0c3a9f9 navigation/readiness is open correctly stacked on #41 and attached; checks running/queued. #38 now fully green. #39 stories green/application pending; #40–41 fresh checks running after delivery-table evidence attribution correction (40-story maintenance versus48-story session); no weakening of verification.
+
+Agent started campaign-start story migration. Independently read test-only admission clock/loader: exact reducer module/signature instrumentation guarded to demo Functions Emulator; explicitly named Scheduled story campaigns get fixed domain admission/start times while unrelated campaigns retain caller time. Starting preserves earlier not-due inputs via minimum boundary; auth/encryption not modified. Independently ran node --test scripts/check-admission-clock.test.mjs:3 passed0failed. This validates narrow harness guards, not forthcoming end-to-end start/recovery semantics or hosted scheduler. No blocker or duplicate handoff. Carry checkpoint into related committed/pushed logs; current-head/full visual/motion/hosted gates remain, no merge.
+
+
+## Reviewer progress — 2026-10-21 13:18 Toronto
+
+Campaign-start migration remains healthy and active. Agent caught premature creation capture and insufficient active-phone inspector space during candidate inspection. Independently reviewed the pending Galaxy change: active campaigns receive the existing bounded70% observation-sheet treatment within the mobile rule; waiting layout retains its prior compact treatment. Creation step now awaits explicit Campaign created/choose-faction acknowledgement. Generation4 has passed phone and desktop so far; no completed exact-run or full visual acceptance claimed. Retained pre-change evidence remains /tmp/cluster-start-phone-status-before.
+
+#38 fully green; #39 story checks green/application pending; #40–42 latest story/application checks running at inspection, no new actionable failure. No duplicate prompt sent while agent resolves its own findings. Carry this checkpoint into related committed/pushed logs under standing attribution/continuation instructions. Normal-motion, hosted services, remaining story migration and full independent release evidence remain open; no merge.
+
+
+## Reviewer progress — 2026-10-21 13:28 Toronto
+
+#40 a8cbe13 and #41 6c2ea95 now have green Linux story comparison; application checks remain pending. #42 0c3a9f9 first comparison fails twelve new navigation/readiness cases for missing reviewed Linux baselines, with56 existing cases passing13.7min. Independently downloaded completed job119362090935 log via API to /tmp/cluster42-story-review-failure.log (run-level log unavailable while generation runs). Agent already retaining failure and awaiting candidate generation; no duplicate prompt.
+
+Independently viewed current phone campaign-start home capture: both Orbit/Surface ownership and Fighters/Infantry20 are visible above eight bounded action buttons. This supports scoped phone evidence only. Reviewed pending short-desktop CSS: active inspector380px wide, compact typography/artwork/row spacing and three-column actions within <=800px height; geometry checks remain unchanged. Agent caught12px short clipping and is verifying correction, not stalled. Campaign-start remains uncommitted and exact/full-size acceptance incomplete. Carry checkpoint into related committed/pushed logs; preserve failure captures, independent full visual/motion/hosted gates, no merge.
+
+
+## Reviewer progress — 2026-10-21 13:38 Toronto
+
+#39 894f79f is now fully green. #40–41 story comparison green/application pending. #42 generation now successful; agent actively reviews Linux navigation candidate sheets before promotion. Prior missing-baseline verification failure remains understood and retained; no duplicate handoff.
+
+Campaign-start local review records four journeys200 candidate captures; combined exact comparison is still running, independently observed13 passing cases through large navigation, so no completed-run claim. Independently inspected short1280x720 home candidate: both ownership rows and both starting-force counts are visible, with all eight action buttons contained above the bottom edge. This supports the scoped short-layout fix alongside prior phone sampling, not full motion/keyboard/text-enlargement/large-screen acceptance. Agent healthy, candidate/exact work uncommitted; carry checkpoint into related committed/pushed logs. Full release evidence and implementation remain incomplete; no merge.
