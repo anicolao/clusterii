@@ -15,6 +15,19 @@ const panel = (page: Page) =>
   page.getByRole("region", { name: "Private conversations", exact: true });
 const open = (page: Page) =>
   page.getByRole("button", { name: /^Conversations(?: · New)?$/ }).click();
+const chooseRoom = async (page: Page) => {
+  const directory = panel(page).getByRole("complementary", {
+    name: "Conversations list",
+    exact: true,
+  });
+  if (!(await directory.isVisible()))
+    await panel(page)
+      .getByRole("button", { name: "Conversations", exact: true })
+      .click();
+  await panel(page)
+    .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
+    .click();
+};
 const aliases = [
   "Nacre envoy",
   "Dawn listener",
@@ -316,9 +329,7 @@ test("Selected history reaches only a consenting commander and survives reload",
         await panel(owner)
           .getByRole("button", { name: /Invite Dawn listener/ })
           .click();
-        await panel(guest)
-          .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
-          .click();
+        await chooseRoom(guest);
       },
       acknowledgement: {
         spec: "The independently authenticated recipient receives the one-message invitation.",
@@ -388,9 +399,7 @@ test("Selected history reaches only a consenting commander and survives reload",
       action: async () => {
         await guest.reload();
         await open(guest);
-        await panel(guest)
-          .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
-          .click();
+        await chooseRoom(guest);
       },
       acknowledgement: {
         spec: "The recovered authorized messages still contain the selected rendezvous note.",
