@@ -33,6 +33,7 @@ import {
   unwrap,
   wrap,
 } from "../../shared/crypto.js";
+import { orderFleet } from "../../shared/fleets.js";
 import { assertObservationBudget } from "../../shared/observations.js";
 import {
   type Profile,
@@ -400,24 +401,44 @@ async function handleCampaign(
           canonicalKey,
           context(gameId, revision, "canonical", epoch),
         );
-        next = maintenance
-          ? maintainCampaign(current, action, uid, now)
-          : action.kind === "construction.build" ||
-              action.kind === "construction.cancel"
-            ? orderConstruction(current, action, uid, commandId, Date.now())
-            : action.kind === "market.focus"
-              ? selectMarketFocus(current, action, uid, commandId, Date.now())
-              : action.kind === "research.select"
-                ? selectResearch(current, action, uid, commandId, Date.now())
-                : joinOrLeave(current, action, uid, profile, now);
+        next =
+          action.kind === "fleet.form" || action.kind === "fleet.disband"
+            ? orderFleet(current, action, uid, commandId, Date.now())
+            : maintenance
+              ? maintainCampaign(current, action, uid, now)
+              : action.kind === "construction.build" ||
+                  action.kind === "construction.cancel"
+                ? orderConstruction(current, action, uid, commandId, Date.now())
+                : action.kind === "market.focus"
+                  ? selectMarketFocus(
+                      current,
+                      action,
+                      uid,
+                      commandId,
+                      Date.now(),
+                    )
+                  : action.kind === "research.select"
+                    ? selectResearch(
+                        current,
+                        action,
+                        uid,
+                        commandId,
+                        Date.now(),
+                      )
+                    : joinOrLeave(current, action, uid, profile, now);
       }
-      assertObservationBudget(next);
+      assertObservationBudget(next, action.kind === "fleet.disband");
     } catch (error) {
       if (error instanceof KeyServiceError) throw error;
       const reason =
         error instanceof Error &&
         [
           "pending-work-capacity",
+          "fleet-unavailable",
+          "fleet-capacity",
+          "insufficient-forces",
+          "fleet-limit",
+          "fleet-order-pending",
           "permission",
           "profile-required",
           "construction-unavailable",

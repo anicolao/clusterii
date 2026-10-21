@@ -25,12 +25,14 @@
       dust?.dispose();
     };
   });
+  import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
   let {
     stars,
     selected,
     onselect,
     owned = [],
+    fleets = {},
     stellarClass,
     cameraRequest,
   }: {
@@ -38,6 +40,7 @@
     selected: string;
     onselect: (id: string) => void;
     owned?: string[];
+    fleets?: Record<string, number>;
     stellarClass: StarClass | "all";
     cameraRequest: { action: string; starId: string; sequence: number };
   } = $props();
@@ -180,6 +183,13 @@
             : ""}</span
         ></HTML
       >{/if}
+    {#if fleets[star.id]}<HTML position={[0, -0.5, 0]} center
+        ><span
+          class="fleet-label"
+          aria-label={`${fleets[star.id]} of your fleets stationed at ${star.name}`}
+          ><FleetSymbol /> {fleets[star.id]}</span
+        ></HTML
+      >{/if}
     {#if owned.includes(star.id)}<T.Mesh rotation.x={-Math.PI / 2}
         ><T.RingGeometry args={[0.2, 0.23, 48]} /><T.MeshBasicMaterial
           color="#7ee7ff"
@@ -200,6 +210,15 @@
   >{/if}
 
 <style>
+  .fleet-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #9cebf1;
+    font-size: 14px;
+    pointer-events: none;
+    text-shadow: 0 2px 4px #000;
+  }
   .quiet-label {
     font-size: 12px;
     color: #e7dfce;

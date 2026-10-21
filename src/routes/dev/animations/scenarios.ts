@@ -1,3 +1,4 @@
+import {orderFleet} from "@shared/fleets";
 import { acquireObservations, drawRange } from "@shared/observations";
 import { produce } from "@shared/production";
 import {sessionEndedMessage} from "$lib/session-feedback";
@@ -62,7 +63,11 @@ const observationCurrent={...firstProduction.campaign,economy:firstProduction.ec
 const observationNext=produce(observationCurrent,observationCurrent.economy!);const observationStale={...observationNext.campaign,economy:observationNext.economy};acquireObservations(observationCurrent,observationStale,()=>drawRange-1);
 export const observedTarget=productionStart.seats[1].home!;
 export function observationFrame(time:number){return campaignView(time>=3200?observationStale:time>=1200?observationCurrent:productionStart,"scheduled-0");}
+const fleetQueued=orderFleet(productionStart,{kind:'fleet.form',expectedRevision:productionStart.revision,starId:productionStart.seats[0].home!,fighters:2,infantry:10},'scheduled-0','fleet-demo',productionStart.economy!.nextTickAt-1);
+const fleetFormed=produce(fleetQueued,fleetQueued.economy!);
+export function fleetFrame(time:number){return campaignView(time>=3200?{...fleetFormed.campaign,economy:fleetFormed.economy}:time>=2200?fleetQueued:productionStart,'scheduled-0');}
 export const scenarios = [
+ {id:'fleet',label:'Fleet: pending → reconnect → reserved → formed',frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:'',error:campaignNetworkMessage,remedy:'network'}},{at:2200,feedback:campaignFeedback('fleet.form',{status:'accepted'})},{at:3200,feedback:{message:'Fleet formed. Forces remain conserved.',error:'',remedy:'none'}}]},
  {id:"observation",label:"Observation: unknown → current → stale",frames:[{at:0,feedback:{message:"No observation acquired.",error:"",remedy:"none"}},{at:1200,feedback:{message:"Observation acquired at tick 1.",error:"",remedy:"none"}},{at:3200,feedback:{message:"Scan missed. Prior observation remains historical.",error:"",remedy:"none"}}]},
  {id:"market-focus",label:"Market focus: pending → reconnect → accepted → applied",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("market.focus",{status:"accepted"})},{at:3200,feedback:{message:"Focus applied. New dividend weights begin next tick.",error:"",remedy:"none"}}]},
  {id:"construction",label:"Construction: pending → reconnect → reserved → completed",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("construction.build",{status:"accepted"})},{at:3200,feedback:{message:"Market completed. Production and dividends settled.",error:"",remedy:"none"}}]},

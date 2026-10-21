@@ -8,6 +8,8 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import SystemFleets from "$lib/components/SystemFleets.svelte";
+  import FleetSymbol from "$lib/components/FleetSymbol.svelte";
   import SystemObservation from "$lib/components/SystemObservation.svelte";
   import MarketFocus from "$lib/components/MarketFocus.svelte";
   import DevelopmentIcon from "$lib/components/DevelopmentIcon.svelte";
@@ -21,6 +23,7 @@
     researchFrame,
     constructionFrame,
     focusFrame,
+    fleetFrame,
     observationFrame,
     observedTarget,
     legacyProductionView,
@@ -195,6 +198,27 @@
       <FactionPicker value="heliac" game={roster} disabled />
     </section>
     <section>
+      <h2>Stationed fleets · shared manifest and icon</h2>
+      <FleetSymbol /><span>Fleet</span>
+      {#each ["ready", "pending", "error", "paused", "formed"] as state}{@const sample =
+          fleetFrame(state === "formed" ? 3400 : state === "ready" ? 0 : 2400)}
+        <div
+          style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <SystemFleets
+            view={state === "paused" ? { ...sample, pausedAt: 1 } : sample}
+            starId={sample.own.home!}
+            pending={state === "pending" || state === "error"}
+            message={state === "pending" ? "Awaiting acknowledgement…" : ""}
+            error={state === "error"
+              ? "The connection was interrupted. Your manifest and pending order are preserved."
+              : ""}
+            onform={() => {}}
+            ondisband={() => {}}
+            onclose={() => {}}
+            onretry={() => {}}
+          />
+        </div>{/each}
       <h2>Stellar observations · entitled report states</h2>
       {#each [0, 1200, 3400] as time}<div
           style="max-width:420px;padding:20px;border:1px solid #42616d;margin-bottom:20px"

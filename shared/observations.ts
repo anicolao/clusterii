@@ -1,4 +1,5 @@
 import type { Campaign } from "./campaign.js";
+import { stationedForces } from "./fleets.js";
 import { distance, type Star } from "./galaxy.js";
 import { rules } from "./rules.js";
 // The tuple layout is versioned canonical storage, not a client data contract.
@@ -116,19 +117,21 @@ export function acquireObservations(
           roll / drawRange <
           detectionProbability(research.levels.scanning, nearest.distanceLy);
       }
-      if (acquired)
+      if (acquired) {
+        const forces = stationedForces(next, star.id);
         reports[star.id] = [
           tick,
           nearest.index,
           ownerIndex(system.orbit),
           ownerIndex(system.surface),
-          system.fighters,
-          system.infantry,
+          forces.fighters,
+          forces.infantry,
           system.markets,
           system.camps,
           system.bases,
           system.stations,
         ];
+      }
     }
   }
 }
@@ -183,7 +186,10 @@ export function observationView(state: Campaign, uid: string) {
 // Reserve a complete future report table before admitting more queued work.
 // 600 KB of canonical UTF-8 leaves room for base64/envelope metadata and tick
 // ledger growth below Firestore's document limit. This does not truncate reports.
-export function assertObservationBudget(state: Campaign) {
+export function assertObservationBudget(
+  state: Campaign,
+  releasingForces = false,
+) {
   if (state.intelligenceVersion !== 1) return;
   const reports: Intelligence["reports"] = {},
     draws: Intelligence["draws"] = {};
@@ -208,6 +214,12 @@ export function assertObservationBudget(state: Campaign) {
     ...state,
     intelligence: { format: 1, tick: Number.MAX_SAFE_INTEGER, reports, draws },
   };
-  if (new TextEncoder().encode(JSON.stringify(reserved)).byteLength > 600000)
+  // Disbanding must remain admissible at the ordinary state budget. Its orders
+  // become smaller outcomes and remove persistent fleets at settlement. The
+  // higher bound still fits the encrypted document and cannot admit new forces.
+  if (
+    new TextEncoder().encode(JSON.stringify(reserved)).byteLength >
+    (releasingForces ? 700000 : 600000)
+  )
     throw new Error("pending-work-capacity");
 }

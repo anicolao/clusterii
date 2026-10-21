@@ -183,8 +183,8 @@ async function saveIdentity(c: Awaited<ReturnType<typeof client>>) {
   await set(ref(c.database,`profileCommands/${c.uid}/${id}`),await provider('mock').seal({kind:'profile.set',expectedRevision:0,profile:{alias:'Commander',portrait:'G1'}},c.kek,commandContext(c.uid,id)));
   expect((await receipt(c,id)).status).toBe('accepted');
 }
-async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:string,action:CampaignAction,mode:"mock"|"real"=action.kind==='campaign.create'?action.mode:'mock',epoch=1) {
-  const id=crypto.randomUUID();
+async function campaignCommand(c:Awaited<ReturnType<typeof client>>,gameId:string,action:CampaignAction,mode:"mock"|"real"=action.kind==='campaign.create'?action.mode:'mock',epoch=1,commandId:string=crypto.randomUUID()) {
+  const id=commandId;
   const commandKey=mode==='real'?(await httpsCallable<undefined,{kek:string}>(c.functions,'campaignCommandKey')()).data.kek:c.kek;
   const payload={kind:action.kind,envelope:await provider(mode).seal(action,commandKey,{gameId,objectId:`command:${id}`,revision:0,epoch,keyVersion:1})};
   if(mode==='real'){
@@ -935,3 +935,272 @@ for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER
  expect((await campaignCommand(owner,id,{kind:'campaign.pause',expectedRevision:queued.revision},mode)).receipt.status).toBe('accepted');expect(await settleCampaignTicks(id,()=>start+10*900000)).toBe(0);
  if(process.env.CLUSTER_KMS_TEST==='true'){const priorIntelligence=(await canonical()).intelligence;const history=async(c:typeof owner)=>{let page=await readCampaignHistory(c.firestore,c.functions,id,c.uid);const records=[...page.records];while(page.cursor){page=await readCampaignHistory(c.firestore,c.functions,id,c.uid,page.cursor);records.push(...page.records);}return records;};const before=await Promise.all(players.map(({c})=>history(c)));expect(before.every(records=>records.length>10)).toBe(true);expect((await campaignCommand(owner,id,{kind:'campaign.migrate',expectedRevision:queued.revision+1,targetMode:mode==='real'?'mock':'real'},mode)).receipt.status).toBe('accepted');const normalize=(record:CampaignView)=>{const {mode,encryptionEpoch,mockExposed,...rest}=record;return rest;};for(let i=0;i<players.length;i++){const after=await history(players[i].c);expect(after.filter(record=>record.revision<=queued.revision+1).map(normalize)).toEqual(before[i].map(normalize));}expect((await canonical()).intelligence).toEqual(priorIntelligence);}
 },120000);
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true"
+    ? test.skip
+    : test)(
+    `stationed fleets ${mode}: reserved admission, repeat-safe settlement, private grants and retained migration`,
+    async () => {
+      const { createRequire } = await import("node:module");
+      const require = createRequire(
+        new URL("../functions/package.json", import.meta.url),
+      );
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({ projectId });
+      const db = require("firebase-admin/firestore").getFirestore();
+      const { startDueCampaign, processCampaign } =
+        await import("../functions/src/campaigns");
+      const { settleCampaignTicks } =
+        await import("../functions/src/production");
+      const players = await Promise.all(
+        (["heliac", "pelagic", "vesper", "dracon"] as const).map(
+          async (faction) => {
+            const c = await client(`fleet-${faction}-${crypto.randomUUID()}`);
+            await developer(c);
+            await saveIdentity(c);
+            return { c, faction };
+          },
+        ),
+      );
+      const owner = players[0].c,
+        id = crypto.randomUUID();
+      await campaignCommand(owner, id, {
+        kind: "campaign.create",
+        expectedRevision: 0,
+        name: "Stationed fleet service",
+        capacity: 4,
+        mode,
+        development: true,
+      });
+      for (let i = 0; i < 4; i++)
+        await campaignCommand(
+          players[i].c,
+          id,
+          {
+            kind: "campaign.join",
+            expectedRevision: i + 1,
+            faction: players[i].faction,
+          },
+          mode,
+        );
+      const head = db.doc(`campaignStates/${id}`),
+        start = (await head.get()).get("startAt");
+      await startDueCampaign(id, start);
+      const read = async (c = owner) =>
+        (await readCampaignHistory(c.firestore, c.functions, id, c.uid))
+          .records[0];
+      const initial = await read(),
+        home = initial.own.home!;
+      expect(
+        (
+          await campaignCommand(
+            players[1].c,
+            id,
+            {
+              kind: "fleet.form",
+              expectedRevision: initial.revision,
+              starId: home,
+              fighters: 2,
+              infantry: 10,
+            },
+            mode,
+          )
+        ).receipt.reason,
+      ).toBe("permission");
+      const action = {
+        kind: "fleet.form" as const,
+        expectedRevision: initial.revision,
+        starId: home,
+        fighters: 2,
+        infantry: 20,
+      };
+      const raced = await Promise.all([
+        campaignCommand(owner, id, action, mode),
+        campaignCommand(owner, id, action, mode),
+      ]);
+      expect(raced.map((r) => r.receipt.status).sort()).toEqual([
+        "accepted",
+        "rejected",
+      ]);
+      expect(
+        raced.find((r) => r.receipt.status === "rejected")!.receipt.reason,
+      ).toBe("conflict");
+      const accepted = raced.find((r) => r.receipt.status === "accepted")!;
+      const queued = await read();
+      expect(queued.military!.orders).toHaveLength(1);
+      expect(queued.holdings.find((h) => h.starId === home)).toMatchObject({
+        fighters: 20,
+        infantry: 20,
+      });
+      expect(
+        (
+          await campaignCommand(
+            owner,
+            id,
+            { ...action, expectedRevision: queued.revision },
+            mode,
+          )
+        ).receipt.reason,
+      ).toBe("insufficient-forces");
+      await processCampaign.run({
+        params: { gameId: id, uid: owner.uid, commandId: accepted.ingress.key },
+        time: new Date().toISOString(),
+        data: { val: () => accepted.payload },
+      } as never);
+      expect((await read()).military).toEqual(queued.military);
+      expect((await head.get()).get("revision")).toBe(queued.revision);
+      expect(await settleCampaignTicks(id, () => start + 900000)).toBe(1);
+      const formed = await read();
+      expect(formed.military!.fleets).toHaveLength(1);
+      expect(formed.military!.fleets[0]).toMatchObject({
+        fighters: 2,
+        infantry: 20,
+      });
+      expect(formed.holdings.find((h) => h.starId === home)).toMatchObject({
+        fighters: 19,
+        infantry: 1,
+      });
+      expect(formed.observations![home]).toMatchObject({
+        fighters: 21,
+        infantry: 21,
+      });
+      expect(await settleCampaignTicks(id, () => start + 900000)).toBe(0);
+      expect(await read()).toEqual(formed);
+      for (const { c } of players.slice(1)) {
+        expect((await read(c)).military).toEqual({
+          fleets: [],
+          orders: [],
+          ledger: [],
+        });
+        await expect(
+          getDoc(doc(c.firestore, "campaignViews", id, "members", owner.uid)),
+        ).rejects.toThrow();
+      }
+      const peer = players[1].c,
+        peerHome = (await read(peer)).own.home!;
+      expect(
+        (
+          await campaignCommand(
+            peer,
+            id,
+            {
+              kind: "fleet.form",
+              expectedRevision: formed.revision,
+              starId: peerHome,
+              fighters: 1,
+              infantry: 0,
+            },
+            mode,
+            1,
+            accepted.ingress.key!,
+          )
+        ).receipt.status,
+      ).toBe("accepted");
+      expect(await settleCampaignTicks(id, () => start + 8 * 900000)).toBe(7);
+      expect((await read()).military!.fleets).toEqual(formed.military!.fleets);
+      expect((await read(peer)).military!.fleets).toHaveLength(1);
+      expect((await read(peer)).military!.fleets[0].id).not.toBe(
+        formed.military!.fleets[0].id,
+      );
+      const beforeDisband = await read();
+      const fleetId = formed.military!.fleets[0].id;
+      expect(
+        (
+          await campaignCommand(
+            owner,
+            id,
+            {
+              kind: "fleet.disband",
+              expectedRevision: beforeDisband.revision,
+              fleetId,
+            },
+            mode,
+          )
+        ).receipt.status,
+      ).toBe("accepted");
+      const disband = await read();
+      expect(
+        (
+          await campaignCommand(
+            owner,
+            id,
+            {
+              kind: "fleet.disband",
+              expectedRevision: disband.revision,
+              fleetId,
+            },
+            mode,
+          )
+        ).receipt.reason,
+      ).toBe("fleet-order-pending");
+      if (process.env.CLUSTER_KMS_TEST === "true") {
+        await campaignCommand(
+          owner,
+          id,
+          { kind: "campaign.pause", expectedRevision: disband.revision },
+          mode,
+        );
+        const history = async (c: typeof owner) => {
+          let page = await readCampaignHistory(
+            c.firestore,
+            c.functions,
+            id,
+            c.uid,
+          );
+          const records = [...page.records];
+          while (page.cursor) {
+            page = await readCampaignHistory(
+              c.firestore,
+              c.functions,
+              id,
+              c.uid,
+              page.cursor,
+            );
+            records.push(...page.records);
+          }
+          return records;
+        };
+        const before = await Promise.all(players.map(({ c }) => history(c)));
+        expect(before.every((h) => h.length > 10)).toBe(true);
+        expect(
+          (
+            await campaignCommand(
+              owner,
+              id,
+              {
+                kind: "campaign.migrate",
+                expectedRevision: disband.revision + 1,
+                targetMode: mode === "real" ? "mock" : "real",
+              },
+              mode,
+            )
+          ).receipt.status,
+        ).toBe("accepted");
+        const normalize = (v: CampaignView) => {
+          const { mode, encryptionEpoch, mockExposed, ...rest } = v;
+          return rest;
+        };
+        for (let i = 0; i < 4; i++)
+          expect(
+            (await history(players[i].c))
+              .filter((v) => v.revision <= disband.revision + 1)
+              .map(normalize),
+          ).toEqual(before[i].map(normalize));
+        expect((await read()).military).toEqual(disband.military);
+      }
+      const due = (await head.get()).get("nextTickAt");
+      expect(await settleCampaignTicks(id, () => due)).toBe(1);
+      const returned = await read();
+      expect(returned.military!.fleets).toEqual([]);
+      expect(returned.military!.orders).toEqual([]);
+      expect(returned.military!.ledger[0].result).toBe("disbanded");
+      expect(returned.holdings.find((h) => h.starId === home)).toMatchObject({
+        fighters: 32,
+        infantry: 32,
+      });
+      expect(await settleCampaignTicks(id, () => due)).toBe(0);
+      expect(await read()).toEqual(returned);
+    },
+    120000,
+  );
