@@ -1016,3 +1016,26 @@ Reviewer finding 2026-10-21 15:08 Toronto: #43 job119405166506 now fails two sna
 Agent actively investigates identity layout and tests separate campaign contact-readiness repair; not stalled. Independently reviewed pending campaign-start changes: active chart viewpoints require loaded-contact acknowledgement and absence of Recovering contact records before capture; no state injection, baseline edit or tolerance change. Local verification remains running. Both recent reviewer handoffs are recorded in working PROMPTS.md and checkpoints carried.
 
 #43 ordinary application CI and publication now green but story comparison remains blocked. #44 63e2d24 comparison failed one1994-pixel mismatch,75 passed26.9min; independently retained log /tmp/cluster44-story-review-failure.log. This matches the already-investigated raster symptom; no duplicate prompt. #41 stories green/application pending; #45–46 checks running. Carry checkpoint into related committed/pushed logs; exact-current-head, full visual/motion/hosted and remaining implementation gates remain open. No merge.
+
+
+## Reviewer progress — 2026-10-21 15:28 Toronto
+
+Independently confirmed contact-readiness exact log4 passed3.3min; review records all200 images unchanged. #43 d3e34c4 carries the specific authorized-contact acknowledgement and #44–46 propagate it; replacement CI running. #42 short identity raster mismatch remains explicitly unresolved: local DOM lifecycle probes did not reproduce it, so no cause or acceptance inferred.
+
+Agent healthy on identity-gallery stories. Independently reviewed pending shared component fixes: PortraitPicker four-column layout follows <=400px container width rather than page viewport, and CampaignResearch disclosure receives44px target plus visible keyboard focus. Gallery review documents separately found spacing/containment defects and preserved failures; identity paragraph and its existing baselines remain unchanged. Candidate generation/independent full visual/exact checks remain open. No duplicate prompt. Carry checkpoint into related committed/pushed logs with reviewer attribution; remaining implementation, Linux and full visual/motion/hosted gates stay open. No merge.
+
+
+## Reviewer progress — 2026-10-21 15:38 Toronto
+
+#47 2a4b53d identity-gallery is open correctly stacked on #46 and attached. Review records16 exact local journeys1.6min,84 new captures and unchanged feedback/identity comparisons. Agent healthy beginning lifecycle lab stories; independent full visual/Linux gates open. #42 ordinary application now green, inherited identity raster failure still blocks story acceptance; no false closure.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed expected d3e34c4 versus hosted4cfaebf; #46 publish39660570655 failed revision fetch with ECONNRESET. Logs retained /tmp/cluster43-publish-latest-review.log and /tmp/cluster46-publish-latest-review.log. Coordinate retries after shared publication queue clears and retain exact-head checks; do not describe current previews as verified until those checks pass. Log reviewer attribution/continuation and carry latest checkpoint. No merge.
+
+
+## Reviewer progress — 2026-10-21 15:48 Toronto
+
+#48 90b0561 lifecycle-lab stories is open correctly stacked on #47 and attached. Read baseline review: eight local exact journeys64 captures11.7sec, standard50ms versus reduced180ms and settled outcomes explicitly classified as component specimens, not wall-clock service evidence. No production component/existing image changes. Independent full visual/Linux acceptance remains open.
+
+Agent healthy reviewing Linux feedback-lab candidates on #46; prior publication handoff recorded in PROMPTS.md. #43/#46 publication failures remain pending coordination; no fresh failure or need to duplicate the queued instructions. #43–48 replacement tests queued/running, #42 identity raster gate unresolved. Carry checkpoint into related committed/pushed logs. No release completion or merge.
