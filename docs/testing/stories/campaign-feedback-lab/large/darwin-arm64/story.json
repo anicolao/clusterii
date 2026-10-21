@@ -1,0 +1,258 @@
+{
+  "id": "campaign-feedback-lab",
+  "title": "Compare campaign receipt presentation in the production lab",
+  "inventory": [
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer reviews deterministic campaign feedback produced by the shipped validation, receipt-copy and animation code. These component scenarios exercise presentation parity, not live campaign commands, authorization or migration workers. Each paused animation is declared explicitly; all images retain exact comparison.",
+  "source": {
+    "commit": "bbab3666f55053897ed9c32a7ff3d438637396b9",
+    "dirty": true,
+    "spec": "tests/browser/feedback-lab.story.spec.ts",
+    "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "pending",
+      "description": "Select campaign-joined and inspect the acknowledged pending presentation in both motion modes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The selected component scenario reports “Awaiting acknowledgement”.",
+      "verifications": [
+        "Reduced motion retains identical outcome text and the selected scenario remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard campaign motion",
+          "image": "001-pending-1-developer-standard-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced campaign motion",
+          "image": "001-pending-2-developer-reduced-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stale-roster",
+      "description": "Select campaign-conflict and inspect the acknowledged stale-roster presentation in both motion modes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The selected component scenario reports “roster changed”.",
+      "verifications": [
+        "Reduced motion retains identical outcome text and the selected scenario remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard campaign motion",
+          "image": "002-stale-roster-1-developer-standard-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced campaign motion",
+          "image": "002-stale-roster-2-developer-reduced-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat-confirmed",
+      "description": "Select campaign-joined and inspect the acknowledged seat-confirmed presentation in both motion modes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The selected component scenario reports “seat is confirmed”.",
+      "verifications": [
+        "Reduced motion retains identical outcome text and the selected scenario remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard campaign motion",
+          "image": "003-seat-confirmed-1-developer-standard-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced campaign motion",
+          "image": "003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paused",
+      "description": "Select campaign-paused and inspect the acknowledged paused presentation in both motion modes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The selected component scenario reports “Campaign paused”.",
+      "verifications": [
+        "Reduced motion retains identical outcome text and the selected scenario remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard campaign motion",
+          "image": "004-paused-1-developer-standard-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced campaign motion",
+          "image": "004-paused-2-developer-reduced-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resume-interrupted",
+      "description": "Select campaign-resumed and inspect the acknowledged resume-interrupted presentation in both motion modes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The selected component scenario reports “connection was interrupted”.",
+      "verifications": [
+        "Reduced motion retains identical outcome text and the selected scenario remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard campaign motion",
+          "image": "005-resume-interrupted-1-developer-standard-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced campaign motion",
+          "image": "005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resumed",
+      "description": "Select campaign-resumed and inspect the acknowledged resumed presentation in both motion modes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The selected component scenario reports “Campaign resumed”.",
+      "verifications": [
+        "Reduced motion retains identical outcome text and the selected scenario remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard campaign motion",
+          "image": "006-resumed-1-developer-standard-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced campaign motion",
+          "image": "006-resumed-2-developer-reduced-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "migration-verified",
+      "description": "Select campaign-migrated and inspect the acknowledged migration-verified presentation in both motion modes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The selected component scenario reports “Encryption changed and verified”.",
+      "verifications": [
+        "Reduced motion retains identical outcome text and the selected scenario remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard campaign motion",
+          "image": "007-migration-verified-1-developer-standard-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced campaign motion",
+          "image": "007-migration-verified-2-developer-reduced-campaign-motion.png",
+          "verifications": [
+            "The labeled comparison and its full receipt are visible in the reference page.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}
