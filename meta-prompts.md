@@ -1009,3 +1009,10 @@ Independent pending lab source review: explicit paused-frame inspection requires
 Exact handoff:
 
 Reviewer finding 2026-10-21 15:08 Toronto: #43 job119405166506 now fails two snapshots with70 passing26.1min. In addition to known1994-pixel short session fresh-sign-in text difference, desktop campaign-scheduled-start/026-started-rosters-1-dawn-envoy-1.png differs5688 pixels. Retained log /tmp/cluster43-repeat-review-failure.log. Inspect and retain the distinct roster actual/expected/diff before deciding whether it shares the text cause; do not regenerate baselines or relax comparison to pass. #43 publication retry now succeeded. Log this reviewer-attributed finding and carry checkpoint; no merge.
+
+
+## Reviewer progress — 2026-10-21 15:18 Toronto
+
+Agent actively investigates identity layout and tests separate campaign contact-readiness repair; not stalled. Independently reviewed pending campaign-start changes: active chart viewpoints require loaded-contact acknowledgement and absence of Recovering contact records before capture; no state injection, baseline edit or tolerance change. Local verification remains running. Both recent reviewer handoffs are recorded in working PROMPTS.md and checkpoints carried.
+
+#43 ordinary application CI and publication now green but story comparison remains blocked. #44 63e2d24 comparison failed one1994-pixel mismatch,75 passed26.9min; independently retained log /tmp/cluster44-story-review-failure.log. This matches the already-investigated raster symptom; no duplicate prompt. #41 stories green/application pending; #45–46 checks running. Carry checkpoint into related committed/pushed logs; exact-current-head, full visual/motion/hosted and remaining implementation gates remain open. No merge.

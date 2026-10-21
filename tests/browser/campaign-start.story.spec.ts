@@ -15,6 +15,25 @@ const view = (page: Page, player: string) => ({
   player,
   surface: "game" as const,
 });
+const activeView = (page: Page, player: string) => ({
+  ...view(page, player),
+  verifications: [
+    {
+      spec: "The active chart acknowledges that authorized contact records finished loading.",
+      check: async () => {
+        await expect(
+          page.getByText(
+            "Contact markers show acquired positions from loaded records.",
+            { exact: true },
+          ),
+        ).toBeVisible();
+        await expect(
+          page.getByText("Recovering contact records…", { exact: true }),
+        ).toHaveCount(0);
+      },
+    },
+  ],
+});
 const factions = [
   "Heliac Assembly",
   "Pelagic Concord",
@@ -303,7 +322,7 @@ test("Five commanders start two campaigns and recover their named active campaig
         },
       },
       verifications: [noErrors],
-      views: pages.map((page, i) => view(page, aliases[i])),
+      views: pages.map((page, i) => activeView(page, aliases[i])),
     });
     const homes: string[] = [];
     await story.step("homes-assigned", {
@@ -355,7 +374,7 @@ test("Five commanders start two campaigns and recover their named active campaig
         },
       },
       verifications: [noErrors],
-      views: pages.slice(0, 4).map((page, i) => view(page, aliases[i])),
+      views: pages.slice(0, 4).map((page, i) => activeView(page, aliases[i])),
     });
     await story.step("single-membership-entry", {
       actor: aliases[3],
@@ -395,7 +414,7 @@ test("Five commanders start two campaigns and recover their named active campaig
         },
       },
       verifications: [noErrors],
-      views: [view(pages[0], aliases[0])],
+      views: [activeView(pages[0], aliases[0])],
     });
     await story.step("multiple-membership-entry", {
       actor: aliases[0],
@@ -443,7 +462,7 @@ test("Five commanders start two campaigns and recover their named active campaig
         },
       },
       verifications: [noErrors],
-      views: [view(pages[0], aliases[0])],
+      views: [activeView(pages[0], aliases[0])],
     });
   } finally {
     for (const context of contexts) await context.close();
