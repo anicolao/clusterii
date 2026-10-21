@@ -545,3 +545,33 @@ Agent reports ordinary four-player occupation/conquest journey passed58.3s with 
 #25–27 verification still running, publication/documentation green; no new PR. Arrival-report work active/uncommitted during compatible rollout and final losing-player privacy checks. Agent reports both-provider212 assertions including report histories across migration and repeat-safe settlement; final ordinary journey refreshed with two-action footer and visible split-control summary. This remains implementer evidence pending final head.
 
 Independent refreshed occupation-phone inspection confirms separate orbit/surface control and recorded outcome with historical-state caveat in the production report. Asset and shared-component review remain scoped, not release approval. Agent actively tests victor escrow omission for losing recipient, so no redundant prompt or interruption. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 04:57 Toronto
+
+#25 19b7bd8 and #26 fd019dd now fully green. New #28 c72a99d correctly stacks on fleet-contacts and is attached to supervisor chat; clean arrival-report worktree, publication/documentation green and verification pending alongside #27. Independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Prior source/privacy and sampled occupation/conquest review remain scoped. Final documented evidence records68 units/1309, both-provider212, default28/1584 and seven browser/gallery/lab cases; hosted and full release acceptance remain open.
+
+Agent actively starts private-conversations successor with membership/history scope explicitly under review; no new handoff or stall. This introduces a new privacy boundary requiring direct authorization, invitation/revocation/history/recovery and both-provider review. Checkpoint through04:47 carried in arrival commit; carry this checkpoint into next related committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-21 05:07 Toronto
+
+#27/#28 verification remains running with publication/documentation green. Private conversations active/uncommitted; no new PR. Preliminary source/doc review confirms captured recipient sets on messages, explicit future-only acceptance, room revision checks on membership changes, removal/leave excluding future projections and member-only message projection. Selective older-message sharing remains explicitly incomplete. Design note accurately describes trusted-server encryption and fresh per-revision data keys rather than claiming end-to-end secrecy.
+
+This is a new privacy boundary: old-grant future-decryption denial, concurrent removal/send, rejoin gap, complete authorized history migration and ordinary-player recovery evidence remain required before acceptance. Agent actively wiring production UI and consulting approved diplomacy concept; no stall or actionable new defect established, no duplicate prompt. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 05:17 Toronto
+
+#27/#28 verification still running with publication/documentation green. #27 job remains in combined emulator/service/browser step; no reported failure at inspection. Conversations active/uncommitted, no new PR. Independently inspected unit log:73pass,0fail,1358assertions. Authorized message-history helper filters by room, deduplicates IDs and orders by server sequence; it does not synthesize missing messages.
+
+Agent actively tightening draft/receipt scoping and live-message retention before shared gallery/lab, multiplayer and rendered checks. Passing unit cases do not close membership/key/history privacy gates. No stall or new actionable finding; no duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 05:27 Toronto
+
+#27 verification failed at09:18UTC; #28 pending. Independent failed-log inspection identifies gallery/lab timeout during sequential bounding-box checks over hundreds of controls. Agent currently compacting after conversation service/test work, not stalled. New actionable handoff:
+
+Reviewer CI finding: #27 a1fb904 verification run 39567435352 failed. Retained log /tmp/cluster27-review-failure.log shows gallery/lab viewport cases timing out at 45 seconds while iterating hundreds of button/input/select bounding boxes (lab.spec.ts:102; short case nth459). Diagnose trace and preserve all geometry/accessibility assertions; consider batching DOM measurements rather than weakening coverage or blindly increasing timeouts. Fix on #27 and propagate through successors, retain failure/pass evidence and attributed logs, carry latest main meta-prompts.md, commit/push without merging. Continue conversation work around this diagnosis; no need to repeat resolved earlier handoffs.
+
+No acceptance or merge. Conversation privacy/service/rendered evidence remains incomplete.

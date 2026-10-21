@@ -112,3 +112,5 @@ Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | P
 Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Add private last-observed fleet contacts with authoritative scans and a shared player-facing contact instrument.
 
 Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Add private arrival reports and validate split occupation, resource entitlement and one-time escrow release through real combat.
+
+Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | Propagate batched gallery geometry checks into arrival reports, preserving all target-size assertions.

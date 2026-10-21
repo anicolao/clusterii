@@ -98,11 +98,17 @@ for (const [name, width, height] of [
           () => document.documentElement.scrollWidth > innerWidth,
         ),
       ).toBe(false);
-      for (const control of await page.locator("button,input,select").all()) {
-        const b = await control.boundingBox();
-        if (!b) continue;
-        expect(b.width).toBeGreaterThanOrEqual(44);
-        expect(b.height).toBeGreaterThanOrEqual(44);
+      const controls = await page.locator("button,input,select").evaluateAll((elements) =>
+        elements.flatMap((element) => {
+          // Match boundingBox visibility: hidden layout has no box; offscreen controls still count.
+          if (!element.getClientRects().length || getComputedStyle(element).visibility !== "visible") return [];
+          const { width, height } = element.getBoundingClientRect();
+          return [{ label: element.getAttribute("aria-label") || element.textContent || element.tagName, width, height }];
+        }),
+      );
+      for (const control of controls) {
+        expect(control.width, control.label).toBeGreaterThanOrEqual(44);
+        expect(control.height, control.label).toBeGreaterThanOrEqual(44);
       }
       const path = info.outputPath(`${route.replace("/", "-")}-${name}.png`);
       await page.screenshot({ fullPage: true, path });
