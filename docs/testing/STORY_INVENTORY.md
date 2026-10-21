@@ -145,3 +145,12 @@ Four maintenance journeys/52 captures pass within the 40-story Linux run 3963201
 - [desktop](stories/maintenance-admission-recovery/desktop/linux-arm64/README.md).
 - [large](stories/maintenance-admission-recovery/large/linux-arm64/README.md).
 - [short](stories/maintenance-admission-recovery/short/linux-arm64/README.md).
+
+## Verified Linux device narratives
+
+All 48 stories pass in run39635580827; the eight device journeys contribute 104 exact captures. Independent visual/motion and hosted gates remain open.
+
+- phone: [Cancelled confirmation](stories/session-cancelled-confirmation/phone/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/phone/linux-arm64/README.md).
+- desktop: [Cancelled confirmation](stories/session-cancelled-confirmation/desktop/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/desktop/linux-arm64/README.md).
+- large: [Cancelled confirmation](stories/session-cancelled-confirmation/large/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/large/linux-arm64/README.md).
+- short: [Cancelled confirmation](stories/session-cancelled-confirmation/short/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/short/linux-arm64/README.md).

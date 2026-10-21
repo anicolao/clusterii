@@ -11,3 +11,5 @@ Candidate inspection also exposed prior-session “Identity saved” feedback af
 Base: `feat/maintenance-stories` (#39). Pinned Linux generation/comparison, current-head application CI, independent composition/motion review and hosted Google acceptance remain open. This migration does not approve proposed gameplay rules or certify production provider revocation. No PR is merged.
 
 Exact local verification passes 12 journeys/124 captures: eight device journeys/104 captures and four unchanged identity journeys/20 captures. See the [generated stories](../testing/STORY_INVENTORY.md#device-recovery-narratives). Type checks, lint and story policy pass; pinned Linux/current-head CI remain separate gates.
+
+Pinned Linux exact comparison at c8e0415/run39635580827 passes all 48 journeys in 12.3 minutes. The eight device narratives/104 captures are archived with decoded pixels checked against the reviewed Linux baselines. This is emulator evidence; current-head application CI, independent full visual review, normal-motion parity and hosted Google revocation remain separate gates.
