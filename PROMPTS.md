@@ -389,3 +389,9 @@ Reviewer continuation: the old construction and cargo feedback findings are reso
 Delegated instruction from the reviewer, referring to meta-prompts.md “Reviewer progress — 2026-10-21 05:27 Toronto”:
 
 Reviewer CI finding: #27 a1fb904 verification run 39567435352 failed. Retained log /tmp/cluster27-review-failure.log shows gallery/lab viewport cases timing out at 45 seconds while iterating hundreds of button/input/select bounding boxes (lab.spec.ts:102; short case nth459). Diagnose trace and preserve all geometry/accessibility assertions; consider batching DOM measurements rather than weakening coverage or blindly increasing timeouts. Fix on #27 and propagate through successors, retain failure/pass evidence and attributed logs, carry latest main meta-prompts.md, commit/push without merging. Continue conversation work around this diagnosis; no need to repeat resolved earlier handoffs.
+
+## Prompt 39: Resource Headroom
+
+Delegated instruction from the reviewer, referring to the 2026-10-21 06:46 Toronto resource finding in meta-prompts.md:
+
+Reviewer resource finding: independently confirmed only 855 MiB free on the Data volume at 06:46 Toronto. Before further large test/deploy output, inspect task-owned disposable build/test caches and avoid exhausting disk. Preserve failure traces, review captures, source, worktrees and credentials; do not broadly delete user files. If safe task-owned cleanup cannot restore headroom, report the exact blocker. Continue fixing the observed browser geometry failure without weakening assertions. Record this attributed handoff and carry latest main meta-prompts.md into related committed/pushed logs; no merge.
