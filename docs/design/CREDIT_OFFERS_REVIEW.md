@@ -35,3 +35,9 @@ Reviewer Prompt 41 exposed faction-based identity in return briefings. The share
 91 unit cases / 1,536 assertions, type checks and lint pass. Two focused browser/lab cases pass in 8.4 seconds, including rendered co-faction membership controls and historical disclosure with equal reduced-motion outcomes. [Four-size component captures](../ux/reviews/commander-identity/) are retained. No backend redeployment is needed: #34 already projects the authoritative seat.
 
 Reviewer Prompts 42–43 identify a separate unmet acceptance contract: these procedural tests and loose captures are not the required illustrated user stories. The shared TestStepHelper, mandatory E2E guide, exact visual workflow and existing-journey migration take priority before another gameplay PR. Current checks remain regression evidence, not completion of that contract or independent release acceptance.
+
+## Conversation containment correction
+
+Replacement application run 39610963338 exposed horizontal gallery overflow in the co-faction membership and phone gallery checks. The retained Linux trace and local bounds identify intrinsic conversation grid/commitment widths reaching beyond the narrow specimen. The component now chooses layout from its own container width, bounds its single-column grid and wraps actions without reducing target size or hiding overflow. The first partial patch's desktop target-size failures are retained in `/tmp/cluster34-gallery-fix.log`; the completed correction passes all five unchanged co-faction and phone/desktop/large/short gallery/lab checks in 24.4 seconds (`/tmp/cluster34-gallery-container.log`).
+
+Phone and short specimens were visually inspected; four-size captures are retained under `docs/ux/reviews/conversation-containment/`. This is component regression evidence, not a migrated illustrated player story. Current-head Linux/application CI and independent review remain gates. No assertion was relaxed and no baseline was regenerated.

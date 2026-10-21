@@ -807,3 +807,24 @@ Independently inspected full-size Linux phone saved-identity frame: all eight po
 #35 29fd306 pinned Linux run39615653957 Exact verification step independently confirmed SUCCESS; parent job still uploading artifacts/in progress at inspection. Independently parsed downloaded verified story.json artifacts: all12 entry/Learn, identity and history viewport journeys status passed/mode verify. This is Linux exact-comparison evidence, not blanket visual/product acceptance. Full application checks #32–35 still pending; #30–31 green.
 
 Agent is archiving verified Linux narratives on #35 before resuming feat/profile-recovery-stories, a successor migration rather than new gameplay. Profile recovery candidate generation reportedly12 cases2.6min, not yet independently reviewed or exact-verified. Existing drafts safely stashed while parent evidence is archived. No new blocker or duplicate handoff. Preserve remaining UX inventory gaps and independent review requirement; carry latest meta checkpoint into related committed/pushed work. No merge.
+
+
+## Reviewer progress — 2026-10-21 10:38 Toronto
+
+#35 f2eee49 archives verified Linux stories; current story verify/generate, documentation and publication checks green, application verification pending. #32–34 application verification remains pending, docs/publication green; #30–31 green. Agent healthy on profile-recovery successor, reviewing candidate sheets/full-size images and continuing exact comparison; no new PR yet.
+
+Independently read profile-observer helper and story step inventory: captures actual encrypted transport, read-only emulator canonical/version/receipt facts corroborate revision/one-effect assertions; no write injection in helper. Stories separate both-device draft conflict and explicit replacement, offline harness, retry same order, accepted once, reload persistence and keyboard focus return. Agent reports12 candidate journeys92 captures2.6min; candidate review explicitly leaves exact comparison/Linux/normal-motion/independent full acceptance open. No new actionable finding or duplicate handoff. Carry supervisory checkpoint in related committed/pushed logs and preserve remaining migration inventory. No merge.
+
+
+## Reviewer progress — 2026-10-21 10:48 Toronto
+
+Profile-recovery migration committed6e8995d and push in progress (pack-objects active about86s, not a demonstrated stall); no successor PR yet. Independently confirmed /tmp/cluster-profile-story-verification.log reports12 passed2.6min; review documents92 exact local captures. Sampled full-size phone conflict frame preserves draft and selected portrait, explains other-device conflict and contains explicit Replace saved identity and sign-out controls. This is scoped visual evidence, not complete acceptance. Pending follow-up writes reconnect evidence JSON as an actual artifact file rather than only in-memory attachment; agent is validating it.
+
+#35 f2eee49 story jobs/docs/publish green with ordinary verification pending; #32–34 ordinary verification still pending, docs/publish green. #30–31 green. Agent actively checking run logs and continuing migration, no duplicate handoff or interruption. Linux recovery-story comparison/current-head CI/normal-motion and full independent review remain gates. Carry latest supervisory checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 10:58 Toronto
+
+#36 a63b38e is open, correctly stacked on feat/illustrated-e2e, and attached. Linux generation/docs/publish green; comparison fails missing new recovery baselines, independently confirmed from job119290940387 retained /tmp/cluster36-story-review-failure.log. Baseline review/promotion and separate comparison remain required. #32–33 now fully green; #34 5a71179 failed application verification, #35 application verification pending with story checks green.
+
+Independently retained #34 failure /tmp/cluster34-review-failure.log: co-faction membership gallery briefing.spec.ts379 and lab.spec.ts100 detect document horizontal overflow. Agent already repairing Conversations layout on appropriate parent branch, no duplicate handoff. Independent pending diff uses named inline-size container queries rather than viewport breakpoints for gallery-contained component, wrap-enabled header actions, shrinkable grid/commitment controls; no geometry assertion removed. Focused log reports5 passed24.4s, type-check log zero errors/warnings. Final code/render review and propagation remain pending. Agent healthy; latest logs must accompany committed/pushed fix. No acceptance or merge.
