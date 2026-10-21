@@ -2,6 +2,7 @@ import type { Campaign } from "./campaign.js";
 import { stationedForces } from "./fleets.js";
 import { distance, type Star } from "./galaxy.js";
 import { rules } from "./rules.js";
+import { fleetPosition } from "./travel.js";
 // The tuple layout is versioned canonical storage, not a client data contract.
 // tick, source star index, orbit seat index, surface seat index, fighters,
 // infantry, markets, camps, bases, stations. -1 means an unclaimed layer.
@@ -99,9 +100,22 @@ export function acquireObservations(
       const star = stars[index],
         system = next.systems[star.id],
         own = system.orbit === uid && system.surface === uid;
-      const nearest = own
+      let nearest = own
         ? { index, distanceLy: 0 }
         : nearestSensor(stars, sources, star);
+      if (!own && next.travelVersion === 1) {
+        for (const fleet of Object.values(next.military?.fleets ?? {}).filter(
+          (f) => f.uid === uid,
+        )) {
+          const point = fleetPosition(fleet, stars, tick);
+          const d = Math.hypot(
+            point.x - star.x,
+            point.y - star.y,
+            point.z - star.z,
+          );
+          if (d < nearest.distanceLy) nearest = { index: -2, distanceLy: d };
+        }
+      }
       if (nearest.index === null) {
         draws.push(null);
         continue;
@@ -161,13 +175,13 @@ export function observationView(state: Campaign, uid: string) {
           bases,
           stations,
         ] = record;
-        if (!state.galaxy.stars[source])
+        if (source !== -2 && !state.galaxy.stars[source])
           throw new Error("Invalid observation source");
         return [
           starId,
           {
             observedTick,
-            sourceStarId: state.galaxy.stars[source].id,
+            sourceStarId: source === -2 ? null : state.galaxy.stars[source].id,
             orbit: owner(orbit),
             surface: owner(surface),
             fighters,
@@ -214,11 +228,36 @@ export function assertObservationBudget(
     ...state,
     intelligence: { format: 1, tick: Number.MAX_SAFE_INTEGER, reports, draws },
   };
+  // Route admission also reserves future departure/arrival reports. Traveling
+  // fleets may encounter owners at their destination before the next command.
+  let travelBytes = 0;
+  if (state.travelVersion === 1) {
+    const moving = Object.values(state.military?.fleets ?? {}).filter(
+      (f) => f.travel,
+    );
+    const queued = (state.military?.orders ?? []).filter((o) => o.waypoints);
+    const count = moving.length + queued.length;
+    const encoder = new TextEncoder();
+    for (const f of moving)
+      travelBytes += 1024 + encoder.encode(JSON.stringify(f.id)).length;
+    for (const o of queued)
+      travelBytes += 1024 + encoder.encode(JSON.stringify(o.fleetId)).length;
+    for (const seat of state.seats) {
+      const owned = Object.values(state.systems).filter(
+        (s) => s.orbit === seat.uid || s.surface === seat.uid,
+      ).length;
+      const ownRoutes =
+        moving.filter((f) => f.uid === seat.uid).length +
+        queued.filter((o) => o.uid === seat.uid).length;
+      travelBytes += Math.min(count, owned + ownRoutes) * 512;
+    }
+  }
   // Merging and disbanding must remain admissible at the ordinary state budget. Its orders
   // become smaller outcomes and remove persistent fleets at settlement. The
   // higher bound still fits the encrypted document and cannot admit new forces.
   if (
-    new TextEncoder().encode(JSON.stringify(reserved)).byteLength >
+    new TextEncoder().encode(JSON.stringify(reserved)).byteLength +
+      travelBytes >
     (releasingFleetStorage ? 700000 : 600000)
   )
     throw new Error("pending-work-capacity");

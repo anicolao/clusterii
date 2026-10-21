@@ -26,6 +26,11 @@ export function fleetSettlementFeedback(
       Exclude<FleetOutcome["result"], "invalid">,
       string
     > = {
+      departed: "Fleet departed. Its route and arrival tick are confirmed.",
+      arrived: "Fleet arrived. Review its surviving forces and system control.",
+      destroyed: "Fleet lost on arrival. Review the recorded outcome.",
+      halted:
+        "Route stopped before departure. Review navigation and system control.",
       formed: "Fleet formed.",
       disbanded: "Fleet disbanded. Forces returned to the system.",
       loaded: `${outcome.infantry} infantry loaded.`,
@@ -38,6 +43,18 @@ export function fleetSettlementFeedback(
   }
   if (view.military?.orders.some((order) => order.id === command.id))
     return null;
+  const traveling = view.military?.fleets.find(
+    (f) => f.travel?.commandId === command.id,
+  );
+  if (traveling?.travel)
+    return {
+      message:
+        traveling.travel.status === "traveling"
+          ? `Fleet traveling. Arrival tick ${traveling.travel.arrivalTick}.`
+          : "Fleet at waypoint. Onward departure is scheduled for the next tick.",
+      error: "",
+      remedy: null,
+    };
   // A late receipt may arrive after the one-tick outcome ledger has advanced.
   // Acceptance does not prove that a transfer is still waiting to execute.
   return {

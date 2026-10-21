@@ -4739,3 +4739,278 @@ for (const mode of ["mock", "real"] as const)
       expect(local.infantry!+settled.military!.fleets.reduce((n,f)=>n+f.infantry,0)).toBe(22);
     },120000,
   );
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true"
+    ? test.skip
+    : test)(
+    `fleet travel ${mode}: private acknowledged routes, pause, migration and repeat-safe arrivals`,
+    async () => {
+      const { createRequire } = await import("node:module"),
+        require = createRequire(
+          new URL("../functions/package.json", import.meta.url),
+        );
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({ projectId });
+      const db = require("firebase-admin/firestore").getFirestore();
+      const { startDueCampaign, processCampaign } =
+        await import("../functions/src/campaigns");
+      const { settleCampaignTicks } =
+        await import("../functions/src/production");
+      const players = await Promise.all(
+        (["heliac", "pelagic", "vesper", "dracon"] as const).map(
+          async (faction) => {
+            const c = await client(`travel-${faction}-${crypto.randomUUID()}`);
+            await developer(c);
+            await saveIdentity(c);
+            return { c, faction };
+          },
+        ),
+      );
+      const owner = players[0].c,
+        id = crypto.randomUUID();
+      expect(
+        (
+          await campaignCommand(owner, id, {
+            kind: "campaign.create",
+            expectedRevision: 0,
+            name: "Travel service",
+            capacity: 4,
+            mode,
+            development: true,
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      for (let i = 0; i < 4; i++)
+        await campaignCommand(
+          players[i].c,
+          id,
+          {
+            kind: "campaign.join",
+            expectedRevision: i + 1,
+            faction: players[i].faction,
+          },
+          mode,
+        );
+      const head = db.doc(`campaignStates/${id}`),
+        start = (await head.get()).get("startAt");
+      await startDueCampaign(id, start);
+      const read = async (c = owner) =>
+        (await readCampaignHistory(c.firestore, c.functions, id, c.uid))
+          .records[0];
+      const initial = await read(),
+        home = initial.own.home!;
+      let activeMode = mode,
+        epoch = 1;
+      const command = async (action: CampaignAction) =>
+        campaignCommand(owner, id, action, activeMode, epoch);
+      const origin = initial.stars.find((s) => s.id === home)!;
+      const destination = initial.stars
+        .filter((s) => s.id !== home)
+        .sort(
+          (a, b) =>
+            Math.hypot(a.x - origin.x, a.y - origin.y, a.z - origin.z) -
+            Math.hypot(b.x - origin.x, b.y - origin.y, b.z - origin.z),
+        )[0];
+      await command({
+        kind: "fleet.form",
+        expectedRevision: initial.revision,
+        starId: home,
+        fighters: 4,
+        infantry: 6,
+      });
+      expect(await settleCampaignTicks(id, () => start + 900000)).toBe(1);
+      const formed = await read(),
+        fleet = formed.military!.fleets[0];
+      const route = {
+        kind: "fleet.route" as const,
+        expectedRevision: formed.revision,
+        fleetId: fleet.id,
+        waypoints: [destination.id],
+      };
+      expect(
+        (await campaignCommand(players[1].c, id, route, mode)).receipt.reason,
+      ).toBe("permission");
+      expect((await command({ ...route, waypoints: [] })).receipt.reason).toBe(
+        "route-invalid",
+      );
+      const accepted = await command(route);
+      expect(accepted.receipt.status).toBe("accepted");
+      const queued = await read();
+      expect(queued.military!.fleets).toEqual(formed.military!.fleets);
+      expect(queued.holdings).toEqual(formed.holdings);
+      await processCampaign.run({
+        params: { gameId: id, uid: owner.uid, commandId: accepted.ingress.key },
+        time: new Date().toISOString(),
+        data: { val: () => accepted.payload },
+      } as never);
+      expect(await read()).toEqual(queued);
+      for (const { c } of players.slice(1)) {
+        expect((await read(c)).military).toEqual({
+          fleets: [],
+          orders: [],
+          ledger: [],
+        });
+        await expect(
+          getDoc(doc(c.firestore, "campaignViews", id, "members", owner.uid)),
+        ).rejects.toThrow();
+      }
+      await command({
+        kind: "campaign.pause",
+        expectedRevision: queued.revision,
+      });
+      expect(await settleCampaignTicks(id, () => start + 10 * 900000)).toBe(0);
+      expect((await read()).military!.orders).toEqual(queued.military!.orders);
+      await command({
+        kind: "campaign.resume",
+        expectedRevision: (await read()).revision,
+      });
+      let due = (await head.get()).get("nextTickAt");
+      expect(await settleCampaignTicks(id, () => due)).toBe(1);
+      const moving = await read();
+      expect(moving.military!.fleets[0].travel).toMatchObject({
+        status: "traveling",
+        departureTick: 2,
+        to: destination.id,
+      });
+      expect(
+        (
+          await command({
+            kind: "fleet.disband",
+            expectedRevision: moving.revision,
+            fleetId: fleet.id,
+          })
+        ).receipt.reason,
+      ).toBe("fleet-traveling");
+      await command({
+        kind: "campaign.pause",
+        expectedRevision: moving.revision,
+      });
+      expect(await settleCampaignTicks(id, () => due + 10 * 900000)).toBe(0);
+      expect((await read()).military!.fleets).toEqual(moving.military!.fleets);
+      const history = async (c: typeof owner) => {
+        let page = await readCampaignHistory(
+          c.firestore,
+          c.functions,
+          id,
+          c.uid,
+        );
+        const records = [...page.records];
+        while (page.cursor) {
+          page = await readCampaignHistory(
+            c.firestore,
+            c.functions,
+            id,
+            c.uid,
+            page.cursor,
+          );
+          records.push(...page.records);
+        }
+        return records;
+      };
+      if (process.env.CLUSTER_KMS_TEST === "true") {
+        const before = await Promise.all(players.map(({ c }) => history(c)));
+        expect(before[0].length).toBeGreaterThan(10);
+        const paused = await read();
+        expect(
+          (
+            await command({
+              kind: "campaign.migrate",
+              expectedRevision: paused.revision,
+              targetMode: activeMode === "real" ? "mock" : "real",
+            })
+          ).receipt.status,
+        ).toBe("accepted");
+        activeMode = activeMode === "real" ? "mock" : "real";
+        epoch++;
+        const normalize = (v: CampaignView) => {
+          const { mode, encryptionEpoch, mockExposed, ...rest } = v;
+          return rest;
+        };
+        for (let i = 0; i < players.length; i++)
+          expect(
+            (await history(players[i].c))
+              .filter((v) => v.revision <= paused.revision)
+              .map(normalize),
+          ).toEqual(before[i].map(normalize));
+        expect((await read()).military!.fleets).toEqual(
+          moving.military!.fleets,
+        );
+      } else
+        await command({
+          kind: "campaign.resume",
+          expectedRevision: (await read()).revision,
+        });
+      due = (await head.get()).get("nextTickAt");
+      const remaining =
+        moving.military!.fleets[0].travel!.arrivalTick -
+        moving.production!.tick;
+      const transaction = Object.getPrototypeOf(db).runTransaction.bind(db);
+      let calls = 0;
+      const interrupted = spyOn(db, "runTransaction").mockImplementation(
+        async (...args: unknown[]) => {
+          const result = await transaction(...args);
+          if (++calls === 2) throw new Error("Lost travel settlement reply");
+          return result;
+        },
+      );
+      try {
+        let failure: unknown;
+        try {
+          await settleCampaignTicks(id, () => due + (remaining - 1) * 900000);
+        } catch (error) {
+          failure = error;
+        }
+        expect(failure).toBeInstanceOf(Error);
+        expect((failure as Error).message).toBe("Lost travel settlement reply");
+      } finally {
+        interrupted.mockRestore();
+      }
+      expect(
+        await settleCampaignTicks(id, () => due + (remaining - 1) * 900000),
+      ).toBe(remaining - 1);
+      const arrived = await read();
+      expect(arrived.military!.fleets[0]).toMatchObject({
+        id: fleet.id,
+        starId: destination.id,
+        fighters: 4,
+        infantry: 0,
+      });
+      expect(arrived.military!.fleets[0].travel).toBeUndefined();
+      expect(arrived.military!.orders).toEqual([]);
+      const destinationHolding = arrived.holdings.find(
+        (h) => h.starId === destination.id,
+      )!;
+      expect(destinationHolding).toMatchObject({
+        orbit: "You",
+        surface: "You",
+        infantry: 6,
+      });
+      const oldHome = arrived.holdings.find((h) => h.starId === home)!;
+      const produced = Math.floor(arrived.production!.tick * 1.4);
+      expect(oldHome.fighters! + 4).toBe(20 + produced);
+      expect(oldHome.infantry! + destinationHolding.infantry!).toBe(
+        20 + produced,
+      );
+      expect(
+        await settleCampaignTicks(id, () => due + (remaining - 1) * 900000),
+      ).toBe(0);
+      expect(await read()).toEqual(arrived);
+      for (const { c } of players.slice(1)) {
+        expect((await read(c)).military).toEqual({
+          fleets: [],
+          orders: [],
+          ledger: [],
+        });
+        expect(
+          (await history(c)).every(
+            (v) => !v.military?.orders.some((o) => o.waypoints),
+          ),
+        ).toBe(true);
+      }
+      expect(
+        (await history(owner)).filter((v) => v.revision === arrived.revision),
+      ).toHaveLength(1);
+    },
+    240000,
+  );

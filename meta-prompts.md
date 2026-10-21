@@ -459,3 +459,33 @@ Agent active on cancellation successor. Initial service replay invocation correc
 New #25 7364fe9 correctly stacks on fleet-reorganization and is attached to supervisor chat. Independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Reviewed cancellation strict actor/order matching, exact futureTick cutoff and removal without inventory mutation; reviewed phone confirmation showing targeted order/tick, release effect, server cutoff and Keep/Cancel controls. Source/sample review is scoped, not full security acceptance. Earlier expected24/received22 is documented as incorrect fixture arithmetic: two 1.4-unit ticks produce two whole units and retained fraction; production unchanged. Agent records both-provider124 assertions, default26/1503 and four browser passes.
 
 #24 verification failed in cargo lost-reply asynchronous matcher, with transaction spy remaining installed on timeout and contaminating next test. Agent actively fixing original #23 and propagating. Independently inspected 24a5af1: explicit awaited catch retains exact error type/message and finally restores spy; committed-state assertions retained. Replacement full CI still required; no acceptance based on diagnosis alone. No duplicate handoff/stall. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 02:57 Toronto
+
+Recovery assertion fix propagated: #23 24a5af1, #24 550d7c5, #25 70938de. Publication/documentation green; replacement verification pending. Independently checked merge correction retains exact error and committed-state/replay assertions. Cancellation worktree clean. Agent finished queued already-resolved handoffs and is idle; no new work underway. Resume authorized plan with one continuation, exact handoff:
+
+Reviewer continuation: the old construction and cargo feedback findings are resolved and recorded; do not duplicate them. Resume the authorized implementation plan from clean feat/fleet-cancellation (70938de), creating the next small stacked PR on that branch for milestone 6 travel/routing. Read the approved design and distinguish unresolved gameplay choices from approvals. Deliver a real route-preview/commit/acknowledgement/settlement tracer bullet with range separate from speed, conservation, privacy, reload/pause/catch-up and ordinary-player evidence, shared gallery/interactive lab and phone/desktop/large/short keyboard/reduced-motion review. Continue monitoring replacement CI for #23–25 and repair actual failures without weakening assertions. Record this attributed handoff in PROMPTS.md, continuations in PROMPT_WORK.md, and carry main meta-prompts.md into the next commit/push. Continue through the plan without waiting after each completed slice; never merge.
+
+No expanded acceptance or merge; release/security/hosted gates remain.
+
+
+## Reviewer progress — 2026-10-21 03:07 Toronto
+
+Agent resumed sustained travel work on feat/fleet-travel from #25 70938de; reviewer continuation recorded with attribution as Prompt37. Work remains uncommitted, no new PR. #23–25 replacement verification pending; publication/documentation green. Preliminary route source separates exact-distance navigation range from speed-derived duration, checks strict command keys/ownership/revision, locks participants and distinguishes traveling forces from stationed totals. New travel capability preserves legacy behavior. Arrival encounters and sensor privacy are still under active implementation and require independent review; no gameplay-choice approval implied.
+
+No stall or actionable new defect established in this early changing code. Final ordinary UI, conservation/recovery/privacy evidence and rendered review remain pending. Carry checkpoint into next related committed/pushed logs; no merge or acceptance expansion.
+
+
+## Reviewer progress — 2026-10-21 03:17 Toronto
+
+#23–25 verification remains running; publication/documentation green. Travel work progressing through real planner/3D route integration and tests, no new PR. Preliminary privacy review finds military projection filters fleets/orders/arrival reports by member before exposing routes; fleet sensor acquisitions expose a generic fleet source rather than private waypoint data. In-flight positions drive sensors and stationary totals exclude traveling fleets. Source also reserves future report storage at route admission; worst-case adequacy and actual service/privacy behavior still need completed evidence.
+
+Agent reports 57 unit cases/1175 assertions and is correcting integration/accessibility diagnostics while building ordinary journey coverage. No stall or actionable new defect established in changing implementation; no duplicate handoff. Final source, rendered, conservation/recovery and hosted/security review remain gates. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 03:27 Toronto
+
+#23–25 replacement verification remains running, publication/documentation green. Travel remains active/uncommitted without new PR. Independently inspected unit log:58 pass,0 fail,1180 assertions, including hostile surface ending onward travel. Review document distinguishes approved design concepts from development range/speed/timing/combat choices and acknowledges moving-enemy observations, alliances and full battle presentation still incomplete. Arrival resolver is now part of this larger slice and requires dedicated independent correctness/privacy review before acceptance.
+
+Agent actively resolves browser geometry findings, including a route marker rendered as a button without an action; local route marker changed to noninteractive label while galaxy selection remains actionable. Final browser/evidence run not yet verified. No stall or duplicate intervention. Carry checkpoint into next related committed/pushed logs; no merge or release acceptance.

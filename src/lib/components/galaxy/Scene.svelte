@@ -25,10 +25,15 @@
       dust?.dispose();
     };
   });
+  import RouteLine from "./RouteLine.svelte";
   import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
   let {
     stars,
+    paths = [],
+    routeFocus = false,
+    travelers = [],
+    onfleet,
     selected,
     onselect,
     owned = [],
@@ -37,6 +42,16 @@
     cameraRequest,
   }: {
     stars: Star[];
+    routeFocus?: boolean;
+    paths?: { from: Star; to: Star; draft?: boolean }[];
+    travelers?: {
+      id: string;
+      number: number;
+      x: number;
+      y: number;
+      z: number;
+    }[];
+    onfleet?: (id: string) => void;
     selected: string;
     onselect: (id: string) => void;
     owned?: string[];
@@ -50,12 +65,37 @@
   let controls = $state<OrbitControlsType>();
   $effect(() => {
     const request = cameraRequest;
+    const routePoints = routeFocus ? paths.flatMap((p) => [p.from, p.to]) : [];
     const activeCamera = camera,
       activeControls = controls;
     if (!activeCamera || !activeControls) return;
     untrack(() => {
       const offset = activeCamera.position.clone().sub(activeControls.target);
-      if (request.action === "overview") {
+      if (routeFocus) {
+        const points = routePoints.length
+          ? routePoints
+          : stars.filter((s) => s.id === request.starId);
+        if (points.length) {
+          const low = new Vector3(Infinity, Infinity, Infinity),
+            high = new Vector3(-Infinity, -Infinity, -Infinity);
+          for (const p of points) {
+            const v = new Vector3(p.x / 10, p.y / 10, p.z / 10);
+            low.min(v);
+            high.max(v);
+          }
+          activeControls.target.copy(low).add(high).multiplyScalar(0.5);
+          const span = high.clone().sub(low);
+          const distance = Math.max(
+            1.2,
+            span.z * 2.5,
+            (span.x * 2.5) / activeCamera.aspect,
+            span.y * 2.5,
+          );
+          activeCamera.position
+            .copy(activeControls.target)
+            .add(new Vector3(0, distance, distance * 0.15));
+        }
+      } else if (request.action === "overview") {
         activeControls.target.set(0, 0, 0);
         activeCamera.position.set(0, 19, 15);
       } else if (request.action === "in" || request.action === "out") {
@@ -104,8 +144,28 @@
   const glow = new DataTexture(bytes, 64, 64, RGBAFormat);
   glow.needsUpdate = true;
   onDestroy(() => glow.dispose());
+  const routeIds = $derived(
+    paths.length
+      ? [paths[0].from.id, ...paths.map((p) => p.to.id)]
+      : [selected],
+  );
   const target = $derived(stars.find((s) => s.id === selected));
 </script>
+
+{#each paths as path}<RouteLine {...path} />{/each}
+{#each travelers as fleet}<T.Group
+    position={[fleet.x / 10, fleet.y / 10 + 0.08, fleet.z / 10]}
+    ><HTML
+      >{#if onfleet}<button
+          class="travel-marker"
+          aria-label={`Traveling fleet ${fleet.number}`}
+          onclick={() => onfleet?.(fleet.id)}
+          ><FleetSymbol /> Fleet {fleet.number} · Traveling</button
+        >{:else}<span class="travel-label"
+          ><FleetSymbol /> Fleet {fleet.number}</span
+        >{/if}</HTML
+    ></T.Group
+  >{/each}
 
 <T.PerspectiveCamera
   bind:ref={camera}
@@ -115,7 +175,7 @@
   ><OrbitControls
     bind:ref={controls}
     enableDamping={false}
-    minDistance={5}
+    minDistance={routeFocus ? 0.6 : 5}
     maxDistance={40}
     maxPolarAngle={Math.PI / 2.1}
   /></T.PerspectiveCamera
@@ -142,13 +202,17 @@
   {@const index = stars.indexOf(star)}
   <T.Group position={[star.x / 10, star.y / 10, star.z / 10]}>
     <T.Sprite
-      scale={star.id === selected
-        ? 1.5
-        : index % 11 === 0
-          ? 0.95
-          : star.class === "O"
-            ? 0.5
-            : 0.3}
+      scale={routeFocus
+        ? routeIds.includes(star.id)
+          ? 0.15
+          : 0.05
+        : star.id === selected
+          ? 1.5
+          : index % 11 === 0
+            ? 0.95
+            : star.class === "O"
+              ? 0.5
+              : 0.3}
       onclick={(event: { stopPropagation(): void }) => {
         event.stopPropagation();
         onselect(star.id);
@@ -168,13 +232,19 @@
       }}
       ><T.SphereGeometry
         args={[
-          star.id === selected ? 0.08 : index % 11 === 0 ? 0.06 : 0.025,
+          routeFocus
+            ? 0.008
+            : star.id === selected
+              ? 0.08
+              : index % 11 === 0
+                ? 0.06
+                : 0.025,
           16,
           16,
         ]}
       /><T.MeshBasicMaterial color={colors[star.class]} /></T.Mesh
     >
-    {#if star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
+    {#if !routeFocus && star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
         position={[0, 0.25, 0]}
         center
         ><span class="quiet-label"
@@ -190,7 +260,17 @@
           ><FleetSymbol /> {fleets[star.id]}</span
         ></HTML
       >{/if}
-    {#if owned.includes(star.id)}<T.Mesh rotation.x={-Math.PI / 2}
+    {#if routeFocus && routeIds.includes(star.id)}<HTML
+        position={[0, 0.015, 0]}
+        center
+        ><span class="route-node"
+          >{routeIds.indexOf(star.id) === 0
+            ? "Origin"
+            : routeIds.indexOf(star.id)} · {star.name}</span
+        ></HTML
+      >{/if}
+    {#if !routeFocus && owned.includes(star.id)}<T.Mesh
+        rotation.x={-Math.PI / 2}
         ><T.RingGeometry args={[0.2, 0.23, 48]} /><T.MeshBasicMaterial
           color="#7ee7ff"
           side={DoubleSide}
@@ -198,7 +278,8 @@
       >{/if}
   </T.Group>
 {/each}
-{#if target}<T.Group position={[target.x / 10, target.y / 10, target.z / 10]}
+{#if target && !routeFocus}<T.Group
+    position={[target.x / 10, target.y / 10, target.z / 10]}
     ><T.Mesh rotation.x={-Math.PI / 2}
       ><T.RingGeometry args={[0.28, 0.3, 64]} /><T.MeshBasicMaterial
         color="#7ee7ff"
@@ -210,6 +291,17 @@
   >{/if}
 
 <style>
+  .route-node {
+    display: block;
+    transform: translateY(22px);
+    border-left: 2px solid #82e3ef;
+    padding: 3px 6px;
+    background: #06121be8;
+    color: #d9fcff;
+    font-size: 13px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
   .fleet-label {
     display: flex;
     align-items: center;
@@ -229,6 +321,10 @@
     pointer-events: none;
   }
   @media (min-width: 2400px) {
+    .route-node,
+    .travel-label {
+      font-size: 22px;
+    }
     .quiet-label {
       font-size: 18px !important;
     }
@@ -242,5 +338,29 @@
     text-shadow: 0 2px 8px #000;
     white-space: nowrap;
     pointer-events: none;
+  }
+
+  .travel-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #c6f8ff;
+    background: #081e2de6;
+    padding: 4px;
+    transform: translateY(-24px);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .travel-marker {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 44px;
+    background: #081e2de6;
+    color: #c6f8ff;
+    border: 1px solid #7bd3e0;
+    padding: 8px;
+    white-space: nowrap;
+    font: inherit;
   }
 </style>

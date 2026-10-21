@@ -4,15 +4,20 @@
   import type { CampaignView } from "@shared/campaign";
   import { canSplit } from "@shared/fleets";
   import { rules } from "@shared/rules";
+  import FleetRoute from "./FleetRoute.svelte";
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
   import FleetSymbol from "./FleetSymbol.svelte";
   let {
+    selected = $bindable<string | null>(null),
+    routeDrafts = $bindable<Record<string, string[]>>({}),
     view,
     starId,
     pending = false,
     busy = false,
     message = "",
+    commandKind = "",
+    commandFleetId = "",
     error = "",
     onform,
     ondisband,
@@ -20,14 +25,19 @@
     onsplit,
     onmerge,
     oncancel,
+    onroute,
     onclose,
     onretry,
   }: {
+    selected?: string | null;
+    routeDrafts?: Record<string, string[]>;
     view: CampaignView;
     starId: string;
     pending?: boolean;
     busy?: boolean;
     message?: string;
+    commandKind?: string;
+    commandFleetId?: string;
     error?: string;
     onform: (fighters: number, infantry: number) => void;
     ondisband: (id: string) => void;
@@ -37,6 +47,7 @@
       infantry: number,
     ) => void;
     onsplit: (id: string, fighters: number, infantry: number) => void;
+    onroute: (fleetId: string, waypoints: string[]) => void;
     oncancel: (orderId: string) => void;
     onmerge: (id: string, targetId: string) => void;
     onclose: () => void;
@@ -44,8 +55,7 @@
   } = $props();
   const cargoAvailabilityId = $props.id();
   let fighters = $state<number | undefined>(1),
-    infantry = $state<number | undefined>(0),
-    selected = $state<string | null>(null);
+    infantry = $state<number | undefined>(0);
   let operation = $state<"load" | "unload" | "split" | "merge" | "disband">(
     "disband",
   );
@@ -53,13 +63,21 @@
   let splitFighters = $state<number | undefined>(1),
     splitInfantry = $state<number | undefined>(0),
     targetId = $state("");
-  const star = $derived(view.stars.find((s) => s.id === starId)!);
-  const holding = $derived(view.holdings.find((s) => s.starId === starId));
-  const fleets = $derived(
-    view.military?.fleets.filter((f) => f.starId === starId) ?? [],
+  let routing = $state(false);
+  let routeButton = $state<HTMLButtonElement>();
+  const currentStarId = $derived(
+    view.military?.fleets.find((f) => f.id === selected)?.starId ?? starId,
+  );
+  const star = $derived(view.stars.find((s) => s.id === currentStarId)!);
+  const holding = $derived(
+    view.holdings.find((s) => s.starId === currentStarId),
+  );
+  const fleets = $derived(view.military?.fleets ?? []);
+  const localFleets = $derived(
+    fleets.filter((f) => f.starId === currentStarId && !f.travel),
   );
   const orders = $derived(
-    view.military?.orders.filter((o) => o.starId === starId) ?? [],
+    view.military?.orders.filter((o) => o.starId === currentStarId) ?? [],
   );
   const reserved = $derived(
     orders
@@ -111,7 +129,7 @@
     }
   });
   const target = $derived(
-    fleets.find((f) => f.id === targetId && f.id !== selected),
+    localFleets.find((f) => f.id === targetId && f.id !== selected),
   );
   const reorganizationInvalid = $derived(
     operation === "split" && fleet
@@ -122,7 +140,7 @@
           : ""
       : operation === "merge"
         ? !target
-          ? fleets.length < 2
+          ? localFleets.length < 2
             ? "No other fleet is stationed here."
             : "Choose another stationed fleet to receive these forces."
           : orders.some(
@@ -166,30 +184,36 @@
             : selected
               ? !fleet
                 ? "This fleet is no longer stationed here."
-                : orders.some(
-                      (o) =>
-                        o.fleetId === selected || o.targetFleetId === selected,
-                    )
-                  ? "A fleet order is already scheduled."
-                  : reorganizationInvalid
-                    ? reorganizationInvalid
-                    : (operation === "load" ||
-                          operation === "unload" ||
-                          (operation === "disband" && fleet.infantry > 0)) &&
-                        !unified
-                      ? "Unified control is required to transfer infantry."
-                      : (operation === "load" || operation === "unload") &&
-                          (!Number.isSafeInteger(cargo) || cargo! < 1)
-                        ? "Choose a positive whole number of infantry."
-                        : operation === "load" &&
-                            cargo! + fleet.infantry >
-                              fleet.fighters * rules.infantryCapacityPerFighter
-                          ? "The next load exceeds the remaining transport capacity."
-                          : operation === "load" && cargo! > available.infantry
-                            ? "Choose infantry that are available and not reserved."
-                            : operation === "unload" && cargo! > fleet.infantry
-                              ? "Choose infantry already aboard this fleet."
-                              : ""
+                : fleet.travel
+                  ? "This fleet has an active route. Open its route to inspect progress."
+                  : orders.some(
+                        (o) =>
+                          o.fleetId === selected ||
+                          o.targetFleetId === selected,
+                      )
+                    ? "A fleet order is already scheduled."
+                    : reorganizationInvalid
+                      ? reorganizationInvalid
+                      : (operation === "load" ||
+                            operation === "unload" ||
+                            (operation === "disband" && fleet.infantry > 0)) &&
+                          !unified
+                        ? "Unified control is required to transfer infantry."
+                        : (operation === "load" || operation === "unload") &&
+                            (!Number.isSafeInteger(cargo) || cargo! < 1)
+                          ? "Choose a positive whole number of infantry."
+                          : operation === "load" &&
+                              cargo! + fleet.infantry >
+                                fleet.fighters *
+                                  rules.infantryCapacityPerFighter
+                            ? "The next load exceeds the remaining transport capacity."
+                            : operation === "load" &&
+                                cargo! > available.infantry
+                              ? "Choose infantry that are available and not reserved."
+                              : operation === "unload" &&
+                                  cargo! > fleet.infantry
+                                ? "Choose infantry already aboard this fleet."
+                                : ""
               : !Number.isSafeInteger(fighters) ||
                   !Number.isSafeInteger(infantry) ||
                   fighters! < 1 ||
@@ -208,265 +232,318 @@
   );
 </script>
 
-<section class="fleet-instrument" aria-label="Fleet preparation">
-  <header>
-    <img
-      src={`${base}/art/fleet-preparation.webp`}
-      alt="Fighter transport stationed at an orbital hangar above a planet"
-    />
-    <div class="title">
-      <p class="overline">{star.name} · Orbital forces</p>
-      <h2><FleetSymbol /> Fleet preparation</h2>
-    </div>
-  </header>
-  <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded manifest supports keyboard scrolling.) -->
-  <div
-    class="fleet-content"
-    tabindex="0"
-    role="region"
-    aria-label="Fleet manifest and orders"
-  >
-    <nav aria-label="Stationed fleets">
-      <ActionButton
-        class="secondary"
-        aria-pressed={selected === null}
-        onclick={() => (selected = null)}>New fleet</ActionButton
-      >{#each fleets as f}<ActionButton
-          class="secondary"
-          aria-pressed={selected === f.id}
-          onclick={() => (selected = f.id)}>Fleet {f.number}</ActionButton
-        >{/each}
-    </nav>
-    {#each view.military?.ledger.filter((e) => e.starId === starId) ?? [] as e}<p
-        class="outcome"
-        role="status"
-      >
-        {e.result === "split"
-          ? "Fleet split"
-          : e.result === "merged"
-            ? "Fleets merged"
-            : e.result === "formed"
-              ? "Fleet formed"
-              : e.result === "loaded"
-                ? "Infantry loaded"
-                : e.result === "unloaded"
-                  ? "Infantry unloaded"
-                  : e.result === "disbanded"
-                    ? "Fleet disbanded"
-                    : "Fleet order could not execute; its reservation was released"}
-        ·
-        {e.result === "loaded" || e.result === "unloaded"
-          ? `${e.infantry} infantry`
-          : `${e.fighters} fighters · ${e.infantry} infantry`}.
-      </p>{/each}
-    {#if selected}<h3 bind:this={fleetHeading} tabindex="-1">
-        {fleet ? `Fleet ${fleet.number}` : "Fleet no longer stationed here"}
-      </h3>
-      {#if fleet}<dl>
-          <div>
-            <dt>Fighters</dt>
-            <dd>{fleet.fighters}</dd>
-          </div>
-          <div>
-            <dt>Embarked infantry</dt>
-            <dd>{fleet.infantry}</dd>
-          </div>
-          <div>
-            <dt>Transport capacity</dt>
-            <dd>{fleet.fighters * rules.infantryCapacityPerFighter}</dd>
-          </div>
-        </dl>
-        <nav aria-label="Fleet orders">
-          {#each ["load", "unload", "split", "merge", "disband"] as choice}<ActionButton
-              class="secondary"
-              aria-pressed={operation === choice}
-              onclick={() => (operation = choice as typeof operation)}
-              >{choice === "load"
-                ? "Load"
-                : choice === "unload"
-                  ? "Unload"
-                  : choice === "split"
-                    ? "Split"
-                    : choice === "merge"
-                      ? "Merge"
-                      : "Disband"}</ActionButton
-            >{/each}
-        </nav>
-        {#if operation === "load" || operation === "unload"}<div class="counts">
-            <label
-              >Infantry to {operation}<input
-                aria-label={`Infantry to ${operation}`}
-                aria-describedby={cargoAvailabilityId}
-                type="number"
-                min="1"
-                max={operation === "load"
-                  ? Math.min(
-                      available.infantry,
-                      fleet.fighters * rules.infantryCapacityPerFighter -
-                        fleet.infantry,
-                    )
-                  : fleet.infantry}
-                step="1"
-                bind:value={cargo}
-              /><span id={cargoAvailabilityId}
-                >{operation === "load"
-                  ? `${available.infantry} available · ${reserved.infantry} reserved on surface`
-                  : `${fleet.infantry} aboard`}</span
-              ></label
-            >
-          </div>
-          <p>
-            {operation === "load"
-              ? "Reserve surface infantry for embarkation."
-              : "Return embarked infantry to this system’s surface."} The transfer
-            settles at its scheduled tick. Orbit and surface must remain yours.
-          </p>
-        {:else if operation === "split"}<div class="counts">
-            <label
-              >Fighters to split<input
-                aria-label="Fighters to split"
-                type="number"
-                min="1"
-                max={fleet.fighters - 1}
-                step="1"
-                bind:value={splitFighters}
-              /></label
-            >
-            <label
-              >Infantry to split<input
-                aria-label="Infantry to split"
-                type="number"
-                min="0"
-                max={fleet.infantry}
-                step="1"
-                bind:value={splitInfantry}
-              /></label
-            >
-          </div>
-          {#if canSplit(fleet, splitFighters!, splitInfantry!)}<p
-              class="preview"
-            >
-              New fleet: {splitFighters} fighters · {splitInfantry} infantry. Fleet
-              {fleet.number} retains {fleet.fighters - splitFighters!} fighters ·
-              {fleet.infantry - splitInfantry!} infantry.
-            </p>{/if}
-          <p>
-            These forces form a new fleet at the scheduled tick. Both fleets
-            retain fighters and enough transport capacity; no forces return to
-            the system.
-          </p>
-        {:else if operation === "merge"}<label class="merge-target"
-            >Receiving fleet<select
-              aria-label="Receiving fleet"
-              bind:value={targetId}
-              ><option value="">Choose a fleet</option
-              >{#each fleets.filter((f) => f.id !== selected) as candidate}<option
-                  value={candidate.id}
-                  >Fleet {candidate.number} · {candidate.fighters} fighters · {candidate.infantry}
-                  infantry</option
-                >{/each}</select
-            ></label
-          >
-          {#if target}<p class="preview">
-              Fleet {target.number} after merge: {fleet.fighters +
-                target.fighters} fighters · {fleet.infantry + target.infantry} infantry.
-            </p>{/if}
-          <p>
-            The receiving fleet keeps its identity. This fleet joins it at the
-            scheduled tick; neither force returns to the system.
-          </p>
-        {:else}<p>
-            Stationed at {star.name}. Disbanding returns these forces to the
-            system at its scheduled tick.
-          </p>{/if}{/if}
-    {:else}<h3>Assemble a fleet</h3>
-      <p>
-        Reserve local forces now. They assemble at the order’s scheduled tick.
-      </p>
-      <div class="counts">
-        <label
-          >Fighters<input
-            aria-label="Fighters"
-            aria-describedby="fighter-availability"
-            type="number"
-            min="1"
-            max={available.fighters}
-            step="1"
-            bind:value={fighters}
-          /><span id="fighter-availability"
-            >{available.fighters} available · {reserved.fighters} reserved</span
-          ></label
-        ><label
-          >Infantry<input
-            aria-label="Infantry"
-            aria-describedby="infantry-availability"
-            type="number"
-            min="0"
-            max={unified ? available.infantry : 0}
-            step="1"
-            bind:value={infantry}
-          /><span id="infantry-availability"
-            >{unified ? available.infantry : 0} available · {reserved.infantry} reserved</span
-          ></label
-        >
+{#if routing && selected}
+  <FleetRoute
+    {view}
+    fleetId={selected}
+    bind:waypoints={routeDrafts[selected]}
+    {pending}
+    {busy}
+    message={commandKind === "fleet.route" && commandFleetId === selected
+      ? message
+      : ""}
+    error={commandKind === "fleet.route" && commandFleetId === selected
+      ? error
+      : ""}
+    {onretry}
+    oncommit={(waypoints) => onroute(selected!, waypoints)}
+    onclose={async () => {
+      routing = false;
+      await tick();
+      routeButton?.focus();
+    }}
+  />
+{:else}
+  <section class="fleet-instrument" aria-label="Fleet preparation">
+    <header>
+      <img
+        src={`${base}/art/fleet-preparation.webp`}
+        alt="Fighter transport stationed at an orbital hangar above a planet"
+      />
+      <div class="title">
+        <p class="overline">{star.name} · Orbital forces</p>
+        <h2><FleetSymbol /> Fleet preparation</h2>
       </div>
-      <p>
-        Each fighter carries ten infantry. Embarkation requires your control of
-        orbit and surface.
-      </p>{/if}
-    <section aria-label="Accepted fleet orders">
-      <h3 tabindex="-1" bind:this={ordersHeading}>Accepted orders</h3>
-      {#if !orders.length}<p>No fleet orders are waiting.</p>{/if}
-      {#each orders as o, index}<p>
-          {o.reorganization === "split"
-            ? "Split"
-            : o.reorganization === "merge"
-              ? "Merge"
-              : o.cargo === "load"
-                ? "Load"
-                : o.cargo === "unload"
-                  ? "Unload"
-                  : o.fleetId
-                    ? "Disband"
-                    : "Form"} · {o.cargo
-            ? `${o.infantry} infantry`
-            : `${o.fighters} fighters · ${o.infantry} infantry`} · tick {o.effectiveTick}
-        </p>
+    </header>
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded manifest supports keyboard scrolling.) -->
+    <div
+      class="fleet-content"
+      tabindex="0"
+      role="region"
+      aria-label="Fleet manifest and orders"
+    >
+      <nav aria-label="Stationed fleets">
         <ActionButton
           class="secondary"
-          aria-pressed={cancelling === o.id}
-          onclick={() => (cancelling = o.id)}
-          >Review cancellation · order {index + 1}</ActionButton
-        >{/each}
-    </section>
-  </div>
-  <footer>
-    <div class="feedback">
-      {#if cancelOrder}<p>
-          Cancel the {cancelOrder.reorganization ??
-            cancelOrder.cargo ??
-            (cancelOrder.fleetId ? "disband" : "formation")} order for tick {cancelOrder.effectiveTick}?
-          Release its reservations without moving forces. The server must accept
-          cancellation before the execution cutoff.
+          aria-pressed={selected === null}
+          onclick={() => (selected = null)}>New fleet</ActionButton
+        >{#each fleets as f}<ActionButton
+            class="secondary"
+            aria-pressed={selected === f.id}
+            onclick={() => (selected = f.id)}>Fleet {f.number}</ActionButton
+          >{/each}
+      </nav>
+      {#each view.military?.ledger.filter((e) => e.starId === starId) ?? [] as e}<p
+          class="outcome"
+          role="status"
+        >
+          {e.result === "departed"
+            ? "Fleet departed"
+            : e.result === "arrived"
+              ? "Fleet arrived"
+              : e.result === "destroyed"
+                ? "Fleet destroyed"
+                : e.result === "halted"
+                  ? "Route halted"
+                  : e.result === "split"
+                    ? "Fleet split"
+                    : e.result === "merged"
+                      ? "Fleets merged"
+                      : e.result === "formed"
+                        ? "Fleet formed"
+                        : e.result === "loaded"
+                          ? "Infantry loaded"
+                          : e.result === "unloaded"
+                            ? "Infantry unloaded"
+                            : e.result === "disbanded"
+                              ? "Fleet disbanded"
+                              : "Fleet order could not execute; its reservation was released"}
+          ·
+          {e.result === "loaded" || e.result === "unloaded"
+            ? `${e.infantry} infantry`
+            : `${e.fighters} fighters · ${e.infantry} infantry`}.
+        </p>{/each}
+      {#if selected}<h3 bind:this={fleetHeading} tabindex="-1">
+          {fleet ? `Fleet ${fleet.number}` : "Fleet no longer stationed here"}
+        </h3>
+        {#if fleet}<button
+            class="secondary"
+            bind:this={routeButton}
+            onclick={async () => {
+              routeDrafts[fleet.id] ??= [];
+              routing = true;
+              await tick();
+              document.querySelector<HTMLElement>(".route-details")?.focus();
+            }}>Plot route</button
+          >
+          <p>
+            {fleet.travel?.status === "traveling"
+              ? "Traveling from"
+              : "Stationed at"}
+            {star.name}.
+          </p>
+          <dl>
+            <div>
+              <dt>Fighters</dt>
+              <dd>{fleet.fighters}</dd>
+            </div>
+            <div>
+              <dt>Embarked infantry</dt>
+              <dd>{fleet.infantry}</dd>
+            </div>
+            <div>
+              <dt>Transport capacity</dt>
+              <dd>{fleet.fighters * rules.infantryCapacityPerFighter}</dd>
+            </div>
+          </dl>
+          <nav aria-label="Fleet orders">
+            {#each ["load", "unload", "split", "merge", "disband"] as choice}<ActionButton
+                class="secondary"
+                aria-pressed={operation === choice}
+                onclick={() => (operation = choice as typeof operation)}
+                >{choice === "load"
+                  ? "Load"
+                  : choice === "unload"
+                    ? "Unload"
+                    : choice === "split"
+                      ? "Split"
+                      : choice === "merge"
+                        ? "Merge"
+                        : "Disband"}</ActionButton
+              >{/each}
+          </nav>
+          {#if operation === "load" || operation === "unload"}<div
+              class="counts"
+            >
+              <label
+                >Infantry to {operation}<input
+                  aria-label={`Infantry to ${operation}`}
+                  aria-describedby={cargoAvailabilityId}
+                  type="number"
+                  min="1"
+                  max={operation === "load"
+                    ? Math.min(
+                        available.infantry,
+                        fleet.fighters * rules.infantryCapacityPerFighter -
+                          fleet.infantry,
+                      )
+                    : fleet.infantry}
+                  step="1"
+                  bind:value={cargo}
+                /><span id={cargoAvailabilityId}
+                  >{operation === "load"
+                    ? `${available.infantry} available · ${reserved.infantry} reserved on surface`
+                    : `${fleet.infantry} aboard`}</span
+                ></label
+              >
+            </div>
+            <p>
+              {operation === "load"
+                ? "Reserve surface infantry for embarkation."
+                : "Return embarked infantry to this system’s surface."} The transfer
+              settles at its scheduled tick. Orbit and surface must remain yours.
+            </p>
+          {:else if operation === "split"}<div class="counts">
+              <label
+                >Fighters to split<input
+                  aria-label="Fighters to split"
+                  type="number"
+                  min="1"
+                  max={fleet.fighters - 1}
+                  step="1"
+                  bind:value={splitFighters}
+                /></label
+              >
+              <label
+                >Infantry to split<input
+                  aria-label="Infantry to split"
+                  type="number"
+                  min="0"
+                  max={fleet.infantry}
+                  step="1"
+                  bind:value={splitInfantry}
+                /></label
+              >
+            </div>
+            {#if canSplit(fleet, splitFighters!, splitInfantry!)}<p
+                class="preview"
+              >
+                New fleet: {splitFighters} fighters · {splitInfantry} infantry. Fleet
+                {fleet.number} retains {fleet.fighters - splitFighters!} fighters
+                ·
+                {fleet.infantry - splitInfantry!} infantry.
+              </p>{/if}
+            <p>
+              These forces form a new fleet at the scheduled tick. Both fleets
+              retain fighters and enough transport capacity; no forces return to
+              the system.
+            </p>
+          {:else if operation === "merge"}<label class="merge-target"
+              >Receiving fleet<select
+                aria-label="Receiving fleet"
+                bind:value={targetId}
+                ><option value="">Choose a fleet</option
+                >{#each localFleets.filter((f) => f.id !== selected) as candidate}<option
+                    value={candidate.id}
+                    >Fleet {candidate.number} · {candidate.fighters} fighters · {candidate.infantry}
+                    infantry</option
+                  >{/each}</select
+              ></label
+            >
+            {#if target}<p class="preview">
+                Fleet {target.number} after merge: {fleet.fighters +
+                  target.fighters} fighters · {fleet.infantry + target.infantry} infantry.
+              </p>{/if}
+            <p>
+              The receiving fleet keeps its identity. This fleet joins it at the
+              scheduled tick; neither force returns to the system.
+            </p>
+          {:else}<p>
+              Stationed at {star.name}. Disbanding returns these forces to the
+              system at its scheduled tick.
+            </p>{/if}{/if}
+      {:else}<h3>Assemble a fleet</h3>
+        <p>
+          Reserve local forces now. They assemble at the order’s scheduled tick.
+        </p>
+        <div class="counts">
+          <label
+            >Fighters<input
+              aria-label="Fighters"
+              aria-describedby="fighter-availability"
+              type="number"
+              min="1"
+              max={available.fighters}
+              step="1"
+              bind:value={fighters}
+            /><span id="fighter-availability"
+              >{available.fighters} available · {reserved.fighters} reserved</span
+            ></label
+          ><label
+            >Infantry<input
+              aria-label="Infantry"
+              aria-describedby="infantry-availability"
+              type="number"
+              min="0"
+              max={unified ? available.infantry : 0}
+              step="1"
+              bind:value={infantry}
+            /><span id="infantry-availability"
+              >{unified ? available.infantry : 0} available · {reserved.infantry}
+              reserved</span
+            ></label
+          >
+        </div>
+        <p>
+          Each fighter carries ten infantry. Embarkation requires your control
+          of orbit and surface.
         </p>{/if}
-      <Feedback {message} {error} />{#if invalid}<p>{invalid}</p>{/if}
+      <section aria-label="Accepted fleet orders">
+        <h3 tabindex="-1" bind:this={ordersHeading}>Accepted orders</h3>
+        {#if !orders.length}<p>No fleet orders are waiting.</p>{/if}
+        {#each orders as o, index}<p>
+            {o.waypoints
+              ? "Route"
+              : o.reorganization === "split"
+                ? "Split"
+                : o.reorganization === "merge"
+                  ? "Merge"
+                  : o.cargo === "load"
+                    ? "Load"
+                    : o.cargo === "unload"
+                      ? "Unload"
+                      : o.fleetId
+                        ? "Disband"
+                        : "Form"} · {o.cargo
+              ? `${o.infantry} infantry`
+              : `${o.fighters} fighters · ${o.infantry} infantry`} · tick {o.effectiveTick}
+          </p>
+          <ActionButton
+            class="secondary"
+            aria-pressed={cancelling === o.id}
+            onclick={() => (cancelling = o.id)}
+            >Review cancellation · order {index + 1}</ActionButton
+          >{/each}
+      </section>
     </div>
-    <div class="actions">
-      <ActionButton class="secondary" onclick={onclose}
-        >Back to system</ActionButton
-      >{#if cancelOrder}<ActionButton
-          class="secondary"
-          disabled={pending}
-          onclick={() => (cancelling = null)}>Keep order</ActionButton
-        >{/if}{#if error && pending && onretry}<ActionButton
-          disabled={busy}
-          onclick={onretry}>Check fleet order</ActionButton
-        >{:else}<ActionButton disabled={pending || !!invalid} onclick={commit}
-          >{actionLabel}</ActionButton
-        >{/if}
-    </div>
-  </footer>
-</section>
+    <footer>
+      <div class="feedback">
+        {#if cancelOrder}<p>
+            Cancel the {cancelOrder.reorganization ??
+              cancelOrder.cargo ??
+              (cancelOrder.fleetId ? "disband" : "formation")} order for tick {cancelOrder.effectiveTick}?
+            Release its reservations without moving forces. The server must
+            accept cancellation before the execution cutoff.
+          </p>{/if}
+        <Feedback {message} {error} />{#if invalid}<p>{invalid}</p>{/if}
+      </div>
+      <div class="actions">
+        <ActionButton class="secondary" onclick={onclose}
+          >Back to system</ActionButton
+        >{#if cancelOrder}<ActionButton
+            class="secondary"
+            disabled={pending}
+            onclick={() => (cancelling = null)}>Keep order</ActionButton
+          >{/if}{#if error && pending && onretry}<ActionButton
+            disabled={busy}
+            onclick={onretry}>Check fleet order</ActionButton
+          >{:else}<ActionButton disabled={pending || !!invalid} onclick={commit}
+            >{actionLabel}</ActionButton
+          >{/if}
+      </div>
+    </footer>
+  </section>
+{/if}
 
 <style>
   .fleet-instrument {

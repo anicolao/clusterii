@@ -62,6 +62,7 @@
   let busy = $state(false);
   let message = $state("");
   let commandKind = $state("");
+  let commandFleetId = $state("");
   let error = $state("");
   let remedy = $state<"network" | "validation" | "conflict" | null>(null);
   let title = $state<HTMLHeadingElement>();
@@ -79,7 +80,12 @@
     message = feedback.message;
     error = feedback.error;
     remedy = feedback.remedy;
-    acceptedFleetCommand = null;
+    if (
+      !view.military?.fleets.some(
+        (f) => f.travel?.commandId === acceptedFleetCommand?.id,
+      )
+    )
+      acceptedFleetCommand = null;
   });
   $effect(() => {
     if (game?.migration && pending?.kind === "campaign.migrate") {
@@ -290,6 +296,7 @@
             "fleet.split",
             "fleet.merge",
             "fleet.cancel",
+            "fleet.route",
             "construction.build",
             "construction.cancel",
           ].includes(command.kind)
@@ -309,6 +316,7 @@
     if (busy || pending) return;
     acceptedFleetCommand = null;
     commandKind = action.kind;
+    commandFleetId = "fleetId" in action ? action.fleetId : "";
     message = "";
     busy = true;
     error = "";
@@ -363,6 +371,7 @@
   {#if view}<Galaxy
       {view}
       {commandKind}
+      {commandFleetId}
       loadHistory={(cursor) =>
         service.campaignHistory(view!.id, account!, cursor)}
       {message}
@@ -400,6 +409,13 @@
           fleetId,
           fighters,
           infantry,
+        })}
+      onroute={(fleetId, waypoints) =>
+        send(view!.id, {
+          kind: "fleet.route",
+          expectedRevision: view!.revision,
+          fleetId,
+          waypoints,
         })}
       oncancelFleet={(orderId) =>
         send(view!.id, {

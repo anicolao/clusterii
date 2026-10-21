@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { CampaignView } from "@shared/campaign";
+  import { fleetPosition } from "@shared/travel";
   import { distance } from "@shared/galaxy";
   import { detectionProbability } from "@shared/observations";
   let { view, starId }: { view: CampaignView; starId: string } = $props();
@@ -14,8 +15,20 @@
     ),
   );
   const range = $derived(
-    sources.length
-      ? Math.min(...sources.map((source) => distance(source, star)))
+    sources.length || (view.travelEnabled && view.military?.fleets.length)
+      ? Math.min(
+          ...sources.map((source) => distance(source, star)),
+          ...(view.travelEnabled
+            ? (view.military?.fleets ?? []).map((f) => {
+                const p = fleetPosition(
+                  f,
+                  view.stars,
+                  view.production?.tick ?? 0,
+                );
+                return Math.hypot(p.x - star.x, p.y - star.y, p.z - star.z);
+              })
+            : []),
+        )
       : null,
   );
   const chance = $derived(
@@ -49,7 +62,11 @@
           : `Last observed ${age} ${age === 1 ? "tick" : "ticks"} ago · tick ${report.observedTick}`
         : "— Unknown · no observation acquired"}
     </p>
-    {#if report}<p class="source">Observed from {source?.name}.</p>
+    {#if report}<p class="source">
+        Observed from {report.sourceStarId === null
+          ? "your fleet sensors"
+          : source?.name}.
+      </p>
       <dl>
         <div>
           <dt>Orbit owner</dt>
@@ -102,8 +119,8 @@
             maximumFractionDigits: 1,
           })}% acquisition probability each tick.
         </p>{:else}<p>
-          No orbital sensor source is available. Surface control alone does not
-          provide scanning.
+          No orbital or fleet sensor source is available. Surface control alone
+          does not provide scanning.
         </p>{/if}
       <p>
         Scans happen automatically. A missed scan preserves the last report; it

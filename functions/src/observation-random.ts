@@ -17,3 +17,18 @@ export function observationDraw(
     .digest()
     .readUIntBE(0, 6);
 }
+
+export function arrivalRank(
+  seed: string,
+  gameId: string,
+  uid: string,
+  starId: string,
+  tick: number,
+) {
+  if (!/^[a-f0-9]{64}$/.test(seed) || !Number.isSafeInteger(tick) || tick < 1)
+    throw new Error("Invalid arrival context");
+  return createHmac("sha256", Buffer.from(seed, "hex"))
+    .update(JSON.stringify(["cluster-arrival-v1", gameId, starId, tick, uid]))
+    .digest()
+    .readUIntBE(0, 6);
+}

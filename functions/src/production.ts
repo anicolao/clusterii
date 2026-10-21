@@ -11,7 +11,7 @@ import { acquireObservations } from "../../shared/observations.js";
 import { produce } from "../../shared/production.js";
 import { context, publish, readRecipientKeys } from "./campaigns.js";
 import { unprotect } from "./key-protection.js";
-import { observationDraw } from "./observation-random.js";
+import { arrivalRank, observationDraw } from "./observation-random.js";
 
 const leaseMillis = 120000;
 export async function settleCampaignTicks(
@@ -83,7 +83,9 @@ export async function settleCampaignTicks(
           current.economy.nextTickAt > now
         )
           throw new Error("Invalid production schedule");
-        const result = produce(current, current.economy),
+        const result = produce(current, current.economy, (starId, uid, tick) =>
+            arrivalRank(current.seed, id, uid, starId, tick),
+          ),
           next = { ...result.campaign, economy: result.economy };
         acquireObservations(current, next, (uid, starId, tick) =>
           observationDraw(current.seed, id, uid, starId, tick),

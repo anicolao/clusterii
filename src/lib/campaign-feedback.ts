@@ -2,6 +2,14 @@ export const campaignPendingMessage = "Awaiting acknowledgement…";
 export const campaignNetworkMessage =
   "The connection was interrupted. Your selection and pending order are preserved.";
 const reasons: Record<string, string> = {
+  "route-invalid":
+    "Choose distinct adjacent systems and a final destination different from the origin.",
+  "route-range":
+    "A leg exceeds navigation range. Choose a closer waypoint or research navigation.",
+  "fleet-traveling":
+    "This fleet has an active route. It cannot transfer or reorganize forces while traveling.",
+  "travel-unavailable":
+    "This older development campaign does not support travel. Create a new development campaign; your history and forces remain accessible.",
   "fleet-unavailable":
     "Fleet preparation begins after home assignment in a production-enabled campaign.",
   "fleet-capacity":
@@ -95,33 +103,35 @@ export function campaignFeedback(
     };
   return {
     message:
-      kind === "fleet.cancel"
-        ? "Fleet order cancelled. Reservations released; no forces moved."
-        : kind === "fleet.split" || kind === "fleet.merge"
-          ? "Reorganization accepted. Execution scheduled."
-          : kind === "fleet.load" || kind === "fleet.unload"
-            ? "Cargo order accepted. Transfer scheduled."
-            : kind.startsWith("fleet.")
-              ? "Fleet order accepted. Reserved forces and its execution tick are listed in the manifest."
-              : kind === "market.focus"
-                ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
-                : kind === "construction.build"
-                  ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
-                  : kind === "construction.cancel"
-                    ? "Cancellation accepted. The refund settles at its scheduled tick."
-                    : kind === "research.select"
-                      ? "Research order accepted. It will apply at its scheduled tick."
-                      : kind === "campaign.migrate"
-                        ? "Encryption changed and verified. Campaign resumed."
-                        : kind === "campaign.pause"
-                          ? "Campaign paused. Admissions and scheduled start are stopped."
-                          : kind === "campaign.resume"
-                            ? "Campaign resumed."
-                            : kind === "campaign.create"
-                              ? "Campaign created. Choose your faction."
-                              : kind === "campaign.leave"
-                                ? "Your seat has been released."
-                                : "Your seat is confirmed.",
+      kind === "fleet.route"
+        ? "Route accepted. Departure scheduled."
+        : kind === "fleet.cancel"
+          ? "Fleet order cancelled. Reservations released; no forces moved."
+          : kind === "fleet.split" || kind === "fleet.merge"
+            ? "Reorganization accepted. Execution scheduled."
+            : kind === "fleet.load" || kind === "fleet.unload"
+              ? "Cargo order accepted. Transfer scheduled."
+              : kind.startsWith("fleet.")
+                ? "Fleet order accepted. Reserved forces and its execution tick are listed in the manifest."
+                : kind === "market.focus"
+                  ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
+                  : kind === "construction.build"
+                    ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
+                    : kind === "construction.cancel"
+                      ? "Cancellation accepted. The refund settles at its scheduled tick."
+                      : kind === "research.select"
+                        ? "Research order accepted. It will apply at its scheduled tick."
+                        : kind === "campaign.migrate"
+                          ? "Encryption changed and verified. Campaign resumed."
+                          : kind === "campaign.pause"
+                            ? "Campaign paused. Admissions and scheduled start are stopped."
+                            : kind === "campaign.resume"
+                              ? "Campaign resumed."
+                              : kind === "campaign.create"
+                                ? "Campaign created. Choose your faction."
+                                : kind === "campaign.leave"
+                                  ? "Your seat has been released."
+                                  : "Your seat is confirmed.",
     error: "",
     remedy: null,
   };

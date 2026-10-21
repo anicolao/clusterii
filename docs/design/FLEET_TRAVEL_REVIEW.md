@@ -1,0 +1,31 @@
+# Fleet travel review
+
+A commander selects a real fleet, plots catalogue waypoints, reviews exact-leg range and tick duration, sends an encrypted route command, and follows its acknowledged departure and authoritative arrival. Map selection alone never sends forces. Drafts, accepted orders and traveling fleets remain distinct. Navigation changes range; it does not change speed.
+
+## Design contract and review choices
+
+The cinematic application, independent orbital/surface ownership, private orders, real authoritative settlement and separate navigation/speed concepts are design requirements. The existing `cluster-v0.1.0` rules remain marked `review`: ten light years per navigation level, two light years per tick, sixteen waypoints, ten infantry per fighter and the combat coefficients are not new owner approvals.
+
+Each leg uses unrounded Euclidean distance and `max(1, ceil(distance / speed))`. Submission validates all legs; departure revalidates the next leg against the then-current navigation level and orbital control. Departures precede arrivals. A waypoint arrival waits until the next tick before onward departure; no instantaneous multi-leg travel occurs. Pauses preserve tick-based routes and catch-up settles each tick once.
+
+Only new development campaigns record `travelVersion: 1`. Earlier campaigns retain stationed-fleet behavior and history, with an explanation in the route instrument. They receive no retroactive movement, occupation or resource award. A future explicit migration is separate review work.
+
+A neutral-looking destination can become hostile before arrival. Real travel therefore includes the necessary arrival resolver: simultaneous forces group by owner, the incumbent defends first, and other participants follow domain-separated server-private ordering. Square-law orbit and defender-first ground use the recorded review formulas. Surviving fighters determine transport capacity; lost fighters can lose carried infantry. Surviving infantry land for unclaimed/hostile surface occupation, but stay aboard on a friendly surface. Ownership settles before production and escrow release. Private arrival summaries retain participant ordering, own before/after forces and resulting owners. Full battle presentation, alliances and military passage remain later delivery; no alliance is implicitly created.
+
+A material development choice: a hostile encounter stops the remaining route for a new review. Friendly/neutral waypoints continue next tick. Routes can be replaced while stationed at a waypoint before its next departure cutoff; there is no mid-flight cancellation or reroute. Queued first departure uses the existing acknowledged cancellation path. An invalidated departure stops without inventing movement or returning forces twice.
+
+## Privacy and compatibility
+
+Private route destinations, commands, complements and arrival summaries are projected only to their owner/participants. Unknown opponents have no invented marker. In-flight fleets are excluded from system garrisons; confirmed positions provide their owner's scanning origin without publishing private waypoints. Intelligence stores a compact fleet-source sentinel, not a destination or private fleet identifier. Opposing moving-fleet observations and richer battle reports remain incomplete.
+
+Deploy every tick/view/migration consumer before command admission and additive ingress rules. Old writers cannot process new routes safely; keep compatible readers/writers on rollback. No test flag or fallback service is part of production. Shared components, actual catalogue coordinates, fleet icon and provenance-recorded galaxy art drive the planner, gallery and animation lab.
+
+## Acceptance evidence
+
+- 59 unit cases / 1,193 assertions pass. Travel coverage includes unrounded range separate from speed, strict private admission, cancellation, waypoint timing, force conservation, hostile orbital and surface arrivals, permutation-stable ordering and private fleet sensors.
+- The capacity fixture starts with 512 fleets, admits 240 sixteen-leg orders, then rejects further work with `pending-work-capacity`. Queued, departed and arrived canonical states remain below 600 KB and both sealed formats below 950 KB. This is a measured adversarial fixture, not an exhaustive proof of all legal state combinations.
+- Both provider service journeys pass 184 assertions with live Cloud KMS protection. They cover denied cross-player commands/private reads, exact command replay, pause before departure and while traveling, complete recipient histories beyond the ten-record page boundary across both-direction migration, lost settlement reply and exactly one arrival effect.
+- Ordinary browser admission uses four independent players and real create/join commands. Start and production use explicit test clocks through the actual services; this is not hosted Scheduler certification. Preview/commit/acknowledgement, accepted reload, departure, arrival and destination reload pass, alongside the shared deterministic lab's standard/reduced-motion comparison.
+- Before/after rendered evidence is retained under `docs/ux/reviews/fleet-travel`. The planner fits actual route coordinates, labels route nodes, keeps commitment actions visible, scopes feedback to the selected route and presents settled arrival separately from replanning. The ship inset reuses the provenance-recorded production fleet artwork. Final keyboard checks add an out-of-range waypoint, reorder it, remove it and preserve the valid draft. The mounted second route proves acceptance → departure → matching arrival feedback without reload. All four viewport captures and bounded-control geometry pass; the lab compares actual reducer outcomes under standard/reduced motion. Final route cohort: two tests, 25.0 seconds. Full default service regression: 27 pass, 17 live-only skips, 1,551 assertions. Four affected cancellation/reorganization/gallery checks pass. Types and lint pass.
+
+Compatible consumers deployed before admission, then additive ingress rules; hosted readback includes `fleet.route`. All six affected functions report ACTIVE on Node22 without `CLUSTER_KMS_TEST`. Independent source/rendered review, exact-head CI and preview verification remain pending. Hosted Google/Scheduler, public admission and release remain separate gates.
