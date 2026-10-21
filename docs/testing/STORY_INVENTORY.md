@@ -127,3 +127,12 @@ Eight session journeys/104 exact local captures cover both devices during cancel
 - desktop: [Cancelled confirmation](stories/session-cancelled-confirmation/desktop/darwin-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/desktop/darwin-arm64/README.md).
 - large: [Cancelled confirmation](stories/session-cancelled-confirmation/large/darwin-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/large/darwin-arm64/README.md).
 - short: [Cancelled confirmation](stories/session-cancelled-confirmation/short/darwin-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/short/darwin-arm64/README.md).
+
+## Verified Linux maintenance narratives
+
+Four maintenance journeys/52 captures pass within the 40-story Linux run 39632014899.
+
+- [phone](stories/maintenance-admission-recovery/phone/linux-arm64/README.md).
+- [desktop](stories/maintenance-admission-recovery/desktop/linux-arm64/README.md).
+- [large](stories/maintenance-admission-recovery/large/linux-arm64/README.md).
+- [short](stories/maintenance-admission-recovery/short/linux-arm64/README.md).
