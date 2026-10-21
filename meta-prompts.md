@@ -856,3 +856,17 @@ Independent geometry diff review: adds native summary targets/checkVisibility, c
 #38 Linux generation green; independently retained verification failure /tmp/cluster38-story-review-failure.log, missing reviewed invitation Linux baselines (not comparison success). #37 verified evidence archived b16897e and fresh run pending; #35–36 story checks green; application #34–38 still pending. Local invitation dependency carry f2e381d is ahead of remote observed d4e5d6c while agent works.
 
 Agent on feat/maintenance-stories is actively diagnosing keyboard failure before altering behavior/assertions. Independently inspected generation log: Close roster expected focused but inactive; new story traverses with real Tab/Shift+Tab rather than directly focusing disclosure, so preserve this stronger coverage. No confirmed root cause or duplicate handoff; agent retaining traces. Disk reported2GiB and agent already monitoring resource use under prior safe-cleanup instruction. Carry checkpoint into related committed/pushed logs and keep invitation baseline review separate from verification; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 11:48 Toronto
+
+Maintenance story exposed a production keyboard trap bug: closed disclosure children retained layout boxes and were counted as tabbable. Independently reviewed4b03b78 Galaxy.svelte change: native checkVisibility, excludes disabled inputs/selects/textareas as well as buttons, includes visible textareas; preserves actual Tab/Shift+Tab assertions. Retained log independently confirms8 combined maintenance/history cases passed1.3min, documented94 exact captures including unchanged history images. Local successor03e123e carries reviewed invitation dependencies; no maintenance PR yet at inspection. Full independent visual/Linux/current-head gates remain.
+
+#38 a1004e4 reviewed Linux invitation candidates pushed, comparison underway. #35–37 story checks green at previously verified heads; application #34–38 still pending. Agent already identified shared Pages queue cancellation for #36 and requested publication rerun39623849372 after active preview; no duplicate intervention. Disk2.3GiB. Agent healthy; carry latest supervisory log into related committed/pushed work, preserve all failure evidence, no merge.
+
+
+## Reviewer progress — 2026-10-21 11:58 Toronto
+
+#39 03e123e maintenance/focus correction is open correctly stacked on #38 and attached. Publish/docs green, story generation green, replacement comparison running after redundant job cancellation. #38 a1004e4 Linux story comparison now green; #35–37 story checks green, #36 preview rerun now successful. Application verification #34–39 remains pending (latest #34 run39621325241 began14:56UTC, no completed result).
+
+Agent actively migrating session recovery on successor. Read proposed review/source inventory: cancellation and interrupted account-wide sign-out are distinct two-device journeys, profile revision/version/receipt preserved; fault harness targets real revocation boundary/lease with explicit recovery, procedural predecessor remains until replacement passes. Candidate/exact/hosted/independent full review gates remain open; no completion claimed. Agent healthy, no duplicate handoff. Carry latest supervisory log into related committed/pushed changes and preserve all review evidence; no merge.

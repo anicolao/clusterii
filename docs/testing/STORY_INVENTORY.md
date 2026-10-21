@@ -109,3 +109,12 @@ Pinned Linux comparison at b3def4c passes 28 combined stories/202 captures in 6.
 Four local maintenance journeys/52 exact captures cover acknowledged pause/resume, independent admission views, reload persistence and real keyboard wrap/Escape restoration. Combined history regression passes unchanged. Linux, independent full visual review and hosted acceptance remain open.
 
 [phone](stories/maintenance-admission-recovery/phone/darwin-arm64/README.md) · [desktop](stories/maintenance-admission-recovery/desktop/darwin-arm64/README.md) · [large](stories/maintenance-admission-recovery/large/darwin-arm64/README.md) · [short](stories/maintenance-admission-recovery/short/darwin-arm64/README.md)
+
+## Verified Linux invitation narratives
+
+Eight invitation journeys/72 captures pass within the 36-story pinned Linux run 39628471834.
+
+- phone: [First admission](stories/invitation-first-admission/phone/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/phone/linux-arm64/README.md).
+- desktop: [First admission](stories/invitation-first-admission/desktop/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/desktop/linux-arm64/README.md).
+- large: [First admission](stories/invitation-first-admission/large/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/large/linux-arm64/README.md).
+- short: [First admission](stories/invitation-first-admission/short/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/short/linux-arm64/README.md).
