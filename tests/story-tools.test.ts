@@ -1,5 +1,7 @@
 import { test, expect, beforeAll, afterAll } from "bun:test";
 import { chromium, type Browser, type Page } from "@playwright/test";
+import { emulatorAsset } from "./browser/story-helpers/emulator-auth-assets";
+import { stableImage } from "./browser/story-helpers/stable-image";
 import { captureReady } from "./browser/story-helpers/capture-ready";
 import { assertScreenFit } from "./browser/story-helpers/screen-fit";
 // Isolated tests of the browser-test tooling, not player/service acceptance.
@@ -136,4 +138,48 @@ test("overlap compares painted portions inside a bounded reading panel", async (
       expect(await page.locator("div").evaluate((e) => e.scrollTop)).toBe(0);
     },
   );
+});
+
+test("actual-frame stability never selects pixels using a baseline", async () => {
+  const expected = Buffer.from("expected"),
+    wrong = Buffer.from("stable-wrong");
+  const frames = [expected, wrong, wrong];
+  let count = 0;
+  const image = await stableImage(
+    async () => frames[count++],
+    async (a, b) => a.equals(b),
+  );
+  expect(count).toBe(3);
+  expect(image.equals(wrong)).toBe(true);
+  expect(image.equals(expected)).toBe(false);
+});
+test("actual-frame stability rejects oscillation after its bounded frame budget", async () => {
+  let count = 0;
+  await expect(
+    stableImage(
+      async () => Buffer.from(String(count++ % 2)),
+      async (a, b) => a.equals(b),
+    ),
+  ).rejects.toThrow("six consecutive frames");
+  expect(count).toBe(6);
+});
+
+test("pinned emulator UI assets never replace provider responses or production assets", () => {
+  const asset =
+      "https://unpkg.com/material-components-web@10/dist/material-components-web.min.js",
+    frame =
+      "http://127.0.0.1:19099/emulator/auth/handler?providerId=google.com";
+  expect(emulatorAsset(asset, frame)?.contentType).toBe(
+    "application/javascript",
+  );
+  for (const [url, page] of [
+    [asset, "https://clusterii-20261020.firebaseapp.com/__/auth/handler"],
+    [asset, "http://127.0.0.1:4173/clusterii/pr4/"],
+    [asset.replace("@10/", "@11/"), frame],
+    [
+      "http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/accounts:signInWithIdp",
+      frame,
+    ],
+  ])
+    expect(emulatorAsset(url, page)).toBeUndefined();
 });

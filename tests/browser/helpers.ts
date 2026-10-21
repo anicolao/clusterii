@@ -1,3 +1,4 @@
+import { useEmulatorAuthAssets } from "./story-helpers/emulator-auth-assets";
 import { expect, type Page, type Locator } from "@playwright/test";
 export async function login(page: Page, email: string, destination = "./") {
   await page.goto(destination);
@@ -5,10 +6,14 @@ export async function login(page: Page, email: string, destination = "./") {
   await expect(page.getByLabel("Commander name")).toBeVisible();
 }
 export async function authenticate(page: Page, email: string) {
+  await useEmulatorAuthAssets(page.context());
   const opening = page.waitForEvent("popup");
   await page.getByRole("button", { name: "Play", exact: true }).click();
   const popup = await opening;
-  await popup.waitForLoadState("load");
+  await expect(popup.locator("#title .provider-name")).toHaveText("Google.com");
+  await expect(
+    popup.getByRole("button", { name: "Add new account" }),
+  ).toBeVisible();
   await popup.getByRole("button", { name: "Add new account" }).click();
   await popup.getByLabel("Email", { exact: true }).fill(email);
   await popup.getByLabel("Display name", { exact: true }).fill("Commander");
