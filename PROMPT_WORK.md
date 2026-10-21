@@ -223,3 +223,14 @@ Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | C
 Prompt 48 | 19717bdb7dd404d5198f254feeecf62ce4af2ee3eb8a00f1f6718d5901ce2870 | Register history lab PR50 dependency, preview and scoped exact evidence while retaining inherited Linux gates.
 
 Prompt 50 | 45c98506864f979aad39223cc6d78e677d97f5f29cb8ea8a344aa5000e2a7fc1 | Register production lab PR 51 dependency and preview with exact local evidence and open Linux gates
+
+Prompt 50 | 45c98506864f979aad39223cc6d78e677d97f5f29cb8ea8a344aa5000e2a7fc1 | Migrate selected-history lab consent and disclosure with exact reviewed motion captures and preserved service assertions
+
+Prompt 50 | 45c98506864f979aad39223cc6d78e677d97f5f29cb8ea8a344aa5000e2a7fc1 | Register selected-history lab PR 52 dependency and preview while preserving unresolved Linux and raster gates
+Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | Correct responsive room-directory navigation from retained traces and carry the 17:18 reviewer checkpoint.
+Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | Assert complete consent-message containment and promote the separately reviewed four-viewport local candidate set.
+Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | Archive all four passing live consent stories, register PR 53 and record exact local evidence with remaining acceptance gates.
+Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Propagate reviewed Linux identity-gallery baselines and preserved reviewer histories into lifecycle lab PR 48.
+Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 49.
+Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 50.
+Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 51.

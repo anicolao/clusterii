@@ -1087,3 +1087,35 @@ Agent resumed healthy renderer diagnosis, retaining negative replay/probe result
 Exact handoff:
 
 Reviewer continuation 2026-10-21 16:48 Toronto: diagnostics e350e11 are pushed and pane is idle since16:39. Continue authorized implementation while Linux evidence queues: take the next unmigrated production/sharing lab or live player journey in STORY_INVENTORY.md as a small successor to #50, preserving real shared components, named acknowledgements, exact candidate review and predecessor assertions. Keep identity-raster diagnosis open and inspect its new Linux layout artifacts when available; do not claim a fix from negative local probes. Coordinate current-head preview retries as the shared queue clears. Carry latest main meta-prompts checkpoints, log reviewer attribution and continuations, commit/push; no merge. Continue useful independent work rather than ending solely because CI is pending.
+
+
+## Reviewer progress — 2026-10-21 16:58 Toronto
+
+#51 a636bff production-lab stories is open on #50 and attached. Read review: four local exact journeys48 captures15.3sec; balances/science/ledger tied to existing reducer-derived specimens and not approval of proposed economy rules. Independent full visual/Linux/current-head gates remain open.
+
+Agent healthy continuing selected-history lab. Independently reviewed description and view checks: timeline is explicitly presentation harness with inert command callbacks, not authenticated acceptance; hidden pre-consent contents and bounded conversation/footer checks are separate from unchanged live service privacy evidence. No new completed CI failure observed; current checks largely queued/running, inherited identity-raster/preview gates unchanged. No duplicate intervention. Carry checkpoint into related committed/pushed logs; no release completion or merge.
+
+
+## Reviewer progress — 2026-10-21 17:08 Toronto
+
+#52 1786254 sharing-lab stories is open correctly on #51 and attached. Independently read source and candidate review: four local journeys40 exact captures; inert callbacks/timeline accurately scoped as component evidence, with pre-consent absence and full authorized message/provenance containment. No independent visual acceptance claimed. Checkout clean; agent idle since17:03. #43 current story CI now green; #46 story CI green. #45 latest failure independently inspected: two known1994-pixel short identity mismatches, no campaign timeout. Linux raster and current-head previews remain open.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-21 17:08 Toronto: pane idle after #52; continue authorized work with the next live multiplayer illustrated journey, preferably UX-10 selected-history consent through actual authenticated commands and recipient/outsider viewpoints, as a small successor to #52. Preserve procedural assertions until replaced, use TestStepHelper and named authoritative acknowledgements, exact captures across four viewports, privacy/recovery and keyboard/motion evidence. Component lab completion is not live acceptance. Current #43 6d6b005 story CI is green; #45 41d28ef fails two short identity captures by exactly1994 pixels (identity-validation and profile-recovery), retained /tmp/cluster45-1708-review-failure.log, no campaign timeout in this failure. Keep raster diagnosis open; compare new Linux layout artifacts when available without baseline/tolerance changes. Coordinate exact-head previews after queue clears. Carry main meta checkpoints through17:08, attribute this handoff in PROMPTS.md and continuations per AGENTS.md, commit/push logs. Continue useful independent work while CI is pending; never merge.
+
+
+## Reviewer progress — 2026-10-21 17:18 Toronto
+
+Agent healthy implementing live selected-history consent; generation running with actual campaign functions. Pending source independently inspected: separate creator/recipient/outsider contexts, ordinary authenticated commands, explicit emulator scheduler harness, canonical and authorized member-view reads for privacy assertions. Existing negotiation coverage remains unchanged. No duplicate handoff while active.
+
+Independently viewed #52 phone reduced-motion accepted-history capture: selected note, author/sharing provenance, composer and acceptance footer are readable and contained. This is a single captured component state, not full visual/motion/live-service approval. #46 current application checks now green alongside story checks; #47 application green, story still running. No newly actionable failure; #42/#45 raster and current-head preview gates remain open. Carry checkpoint into related committed/pushed logs under the standing handoff. No merge or full-release completion.
+
+
+## Reviewer progress — 2026-10-21 17:28 Toronto
+
+Agent healthy at e4b66cc, live consent candidates four journeys60 captures reviewed locally, exact comparison running; no production changes or legacy assertion removal. Independently viewed phone accepted-recipient capture: full selected note, author/provenance, bounded reading and acceptance/footer controls fit. This sample is not full visual approval. Newly completed #47 verification fails solely missing four Linux gallery baselines; generation succeeded. Queue actionable review without interrupting current work. Raster diagnostics and #52 publication remain queued.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 17:28 Toronto: #47 current story verification completed with four missing Linux identity-component-gallery baseline failures, not pixel mismatches; generation succeeded. Log retained /tmp/cluster47-1728-review-failure.log. After current consent verification, review the separately generated Linux candidates and provenance, promote only approved new gallery images, then propagate through successors and verify strictly. Do not regenerate inherited baselines or weaken exact comparison. Carry latest meta checkpoints and attributed logs in committed/pushed changes; no merge.
