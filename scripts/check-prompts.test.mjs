@@ -156,3 +156,21 @@ test('PR continuations retain their exact committed prompt hash after a newer ba
  // Local commits still require the latest prompt, not an old valid hash.
  f.write(step+`Prompt 1 | ${firstHash} | Incorrect reuse of an older request\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check(),0);
 });
+
+test('synthetic PR merge retains historical prompt hashes from both parent ancestries',t=>{
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const second=initial+next;
+ const third=second+'\n## Prompt 3: Reviewer Followup\n\nThird reviewer request.\n';
+ f.write(second);f.git('add','PROMPTS.md');f.git('commit','-qm','Second prompt on feature');
+ const digest=createHash('sha256').update(second).digest('hex');
+ const step=`Prompt 2 | ${digest} | Complete the illustrated feature work\n`;
+ f.write(step,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Feature continuation');
+ f.write(third);f.git('add','PROMPTS.md');f.git('commit','-qm','Third prompt on feature');
+ const feature=f.git('rev-parse','HEAD').trim(),tree=f.git('rev-parse','HEAD^{tree}').trim();
+ f.git('checkout','--detach',common);f.write(third);f.git('add','PROMPTS.md');f.git('commit','-qm','Backport all later prompts at once');
+ const base=f.git('rev-parse','HEAD').trim();
+ const merge=f.git('commit-tree',tree,'-p',base,'-p',feature,'-m','Synthetic PR merge').trim();
+ f.git('checkout','--detach',merge);
+ assert.equal(f.check('--base',base),0);
+ f.write(step.replace(digest,'0'.repeat(64)),'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);
+});

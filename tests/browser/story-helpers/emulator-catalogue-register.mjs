@@ -1,9 +1,16 @@
 import { register } from "node:module";
-register("./emulator-catalogue-loader.mjs", import.meta.url, {
-  data: {
-    target: new URL(
-      "../../../functions/lib/shared/campaign.js",
-      import.meta.url,
-    ).href,
-  },
-});
+// NODE_OPTIONS reaches Firebase's CLI and its Playwright child too. Register
+// only in the demo Functions runtime; never interfere with their module hooks.
+if (
+  process.env.FUNCTIONS_EMULATOR === "true" &&
+  process.env.GCLOUD_PROJECT === "demo-clusterii"
+) {
+  register("./emulator-catalogue-loader.mjs", import.meta.url, {
+    data: {
+      target: new URL(
+        "../../../functions/lib/shared/campaign.js",
+        import.meta.url,
+      ).href,
+    },
+  });
+}

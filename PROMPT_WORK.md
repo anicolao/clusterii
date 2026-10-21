@@ -143,3 +143,4 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | P
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Resolve the supervisory log merge markers against the main-worktree superset without removing either parent’s checkpoint entries.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the verified history focus cycle into private credit offers, preserving all supervisor and prompt histories.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Merge the predecessor history correction and replace its legacy regression with guarded, multi-viewpoint illustrated recovery stories.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Correct synthetic-merge prompt ancestry validation and isolate catalogue instrumentation to the demo Functions runtime after reproduced CI failures.
