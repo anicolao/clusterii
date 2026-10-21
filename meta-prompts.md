@@ -907,3 +907,10 @@ Independently inspected new step inventory: campaign proposal, faction/portrait/
 Agent is actively compacting after campaign navigation work, not stalled; no duplicate prompt. #37 fully green; #38–39 stories green/application pending; #40–41 current story/application checks pending, no new completed failure at inspection.
 
 Independent pending source review: entry Play and Learn Enter now disable while authenticated saved profile is unresolved, preventing premature identity editor navigation after reload. New story/review identifies four-size returning-player race and retains immediate-click directory expectation rather than introducing sleeps. Procedural predecessor remains until replacement passes; catalogue class fixture correction explicitly recorded separately. No full validation or visual acceptance yet. Carry latest checkpoint into related committed/pushed logs; current-head/normal-motion/hosted/full composition gates remain, no merge.
+
+
+## Reviewer progress — 2026-10-21 12:58 Toronto
+
+Agent resumed normally and independently confirmed retained /tmp/cluster-navigation-exact.log reports28 passed2.9min. New navigation/readiness candidate review documents12 journeys97 captures, existing images unchanged; full independent composition (particularly compact4K), Linux and motion gates explicit. Held-profile harness forwards real request rather than fabricating saved identity; prior source review of readiness guard stands. No successor PR yet, work remains uncommitted.
+
+#40 c8e0415 Linux story comparison now green; application pending, publication status not returned at inspection. #41 775e6ad generation green, verify failure independently retained /tmp/cluster41-story-review-failure.log shows missing new receipt-recovery Linux baselines; separate candidate review/promotion required. #38–39 story checks green/application pending; #37 fully green. No new blocker or duplicate handoff. Carry checkpoint into related committed/pushed logs; no full acceptance or merge.

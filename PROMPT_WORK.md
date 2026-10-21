@@ -177,3 +177,6 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | R
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote reviewed Linux session cancellation and interrupted-worker recovery candidates for exact comparison.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate reviewed Linux device recovery baselines into receipt recovery without changing its verified behavior.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Migrate campaign admission and chart navigation with persistent commitment, keyboard camera, clipping and seat-release evidence.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive verified Linux device recovery narratives and carry the latest scoped supervisory checkpoints.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified session narratives and promote separately reviewed Linux receipt recovery candidates.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry session Linux verification, receipt candidates and supervisory checkpoints into navigation stories.
