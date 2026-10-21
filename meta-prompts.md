@@ -335,3 +335,18 @@ Retained evidence reports completion journey pass in 7.3 minutes: ordinary UI ad
 #19 f442132 verification remains running; publication/documentation green. Market-focus successor still uncommitted with no new PR. Agent reports four live-KMS construction/focus cases passing 390 assertions and final default service cohort 1150 assertions, while final browser checks and compatible rollout proceed. Review doc clearly distinguishes ordinary UI admission with explicit service test clock from real-time/hosted scheduling.
 
 Independently inspected focus-draft-phone capture: all four allocation rows, full three-digit 100 value, current allocation labels, 100/100 total, remaining count and Apply/Back controls are readable and contained. This sample supports the repaired layout; it does not certify all states, keyboard behavior or final committed head. No actionable new finding or stall, so no duplicate prompt. Carry this checkpoint into related committed/pushed logs; full CI/security/rendered and release gates remain. No merge.
+
+
+## Reviewer progress — 2026-10-20 23:57 Toronto
+
+New #20 bc0aea5 correctly stacks on system-construction and is attached to supervisor chat. Clean market-focus worktree; documentation/publication green, verification pending. #19 verification also pending. Independent npm run check passes with zero Svelte errors/warnings and backend TypeScript success. Prior allocation/tick source review, retained evidence and phone sample remain scoped; no complete live/security/visual acceptance. Agent is actively inspecting approved scanning/intelligence requirements for the next gameplay slice, including authoritative acquisitions and stale information, rather than stalled. No new finding or duplicate handoff needed. Carry this checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 00:07 Toronto
+
+#19/#20 verification still running with documentation/publication green. Agent actively implementing stellar observations on successor based on #20; no new PR. Preliminary source review finds explicit new-campaign intelligence capability, beginning-of-tick research, nearest orbital sensor, server-only HMAC draws bound to campaign/observer/target/tick, and stored previous reports retained on failed scans. Explicit member projection excludes canonical seed/draws and private queues/wallets/research. This is in-progress source review, not full privacy/cryptographic acceptance; fleet sensors and eventual capture semantics need their own later slices and current service/rendered evidence remains pending. Agent reports 35 unit cases/879 assertions and is extending envelope-budget/privacy tests. No stall or actionable new defect established, no duplicate handoff. Carry this checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 00:17 Toronto
+
+#19/#20 unchanged, verification running and publication/documentation green. Agent progressed through stellar-observation tests and is compacting context, not demonstrably stalled. Independently inspected retained logs: mock observation service 156 assertions in 4.58 seconds; seven browser/gallery/lab tests pass in 31.8 seconds, including unknown/current/historical states and reduced-motion retention. Reviewed production observation copy explicitly marking acquired tick, historical age and unknown state, plus legacy campaign explanation. These are agent-run test results and source inspection, not independent final rendered approval or live-provider security acceptance. Worktree still dirty, no observation PR yet. No new actionable finding/duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.
