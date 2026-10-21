@@ -19,6 +19,7 @@
     oncargo,
     onsplit,
     onmerge,
+    oncancel,
     onclose,
     onretry,
   }: {
@@ -36,6 +37,7 @@
       infantry: number,
     ) => void;
     onsplit: (id: string, fighters: number, infantry: number) => void;
+    oncancel: (orderId: string) => void;
     onmerge: (id: string, targetId: string) => void;
     onclose: () => void;
     onretry?: () => void;
@@ -84,6 +86,15 @@
         (o) => o.fleetId === null || o.reorganization === "split",
       ).length ?? 0),
   );
+  let cancelling = $state<string | null>(null);
+  const cancelOrder = $derived(orders.find((o) => o.id === cancelling));
+  let ordersHeading = $state<HTMLHeadingElement>();
+  $effect(() => {
+    if (cancelling && !cancelOrder && !pending) {
+      cancelling = null;
+      void tick().then(() => ordersHeading?.focus());
+    }
+  });
   let fleetHeading = $state<HTMLHeadingElement>();
   $effect(() => {
     if (!selected || fleet) return;
@@ -122,18 +133,21 @@
         : "",
   );
   const actionLabel = $derived(
-    selected
-      ? {
-          load: "Load infantry",
-          unload: "Unload infantry",
-          split: "Split fleet",
-          merge: "Merge fleets",
-          disband: "Disband fleet",
-        }[operation]
-      : "Form fleet",
+    cancelOrder
+      ? "Cancel fleet order"
+      : selected
+        ? {
+            load: "Load infantry",
+            unload: "Unload infantry",
+            split: "Split fleet",
+            merge: "Merge fleets",
+            disband: "Disband fleet",
+          }[operation]
+        : "Form fleet",
   );
   function commit() {
-    if (!selected) onform(fighters!, infantry!);
+    if (cancelOrder) oncancel(cancelOrder.id);
+    else if (!selected) onform(fighters!, infantry!);
     else if (operation === "disband") ondisband(selected);
     else if (operation === "split")
       onsplit(selected, splitFighters!, splitInfantry!);
@@ -145,50 +159,52 @@
       ? "Fleet preparation requires a production-enabled campaign."
       : view.pausedAt != null
         ? "Paused for development maintenance."
-        : holding?.orbit !== "You"
-          ? "Orbital control is required."
-          : selected
-            ? !fleet
-              ? "This fleet is no longer stationed here."
-              : orders.some(
-                    (o) =>
-                      o.fleetId === selected || o.targetFleetId === selected,
-                  )
-                ? "A fleet order is already scheduled."
-                : reorganizationInvalid
-                  ? reorganizationInvalid
-                  : (operation === "load" ||
-                        operation === "unload" ||
-                        (operation === "disband" && fleet.infantry > 0)) &&
-                      !unified
-                    ? "Unified control is required to transfer infantry."
-                    : (operation === "load" || operation === "unload") &&
-                        (!Number.isSafeInteger(cargo) || cargo! < 1)
-                      ? "Choose a positive whole number of infantry."
-                      : operation === "load" &&
-                          cargo! + fleet.infantry >
-                            fleet.fighters * rules.infantryCapacityPerFighter
-                        ? "The next load exceeds the remaining transport capacity."
-                        : operation === "load" && cargo! > available.infantry
-                          ? "Choose infantry that are available and not reserved."
-                          : operation === "unload" && cargo! > fleet.infantry
-                            ? "Choose infantry already aboard this fleet."
-                            : ""
-            : !Number.isSafeInteger(fighters) ||
-                !Number.isSafeInteger(infantry) ||
-                fighters! < 1 ||
-                infantry! < 0
-              ? "Choose whole force counts with at least one fighter."
-              : infantry! > fighters! * rules.infantryCapacityPerFighter
-                ? "Each fighter carries up to ten infantry."
-                : infantry! > 0 && !unified
-                  ? "Unified control is required to embark infantry."
-                  : fighters! > available.fighters ||
-                      infantry! > available.infantry
-                    ? "Choose forces that are available and not reserved."
-                    : count >= rules.maximumFleetsPerPlayer
-                      ? "Your empire has reached its fleet limit."
-                      : "",
+        : cancelOrder
+          ? ""
+          : holding?.orbit !== "You"
+            ? "Orbital control is required."
+            : selected
+              ? !fleet
+                ? "This fleet is no longer stationed here."
+                : orders.some(
+                      (o) =>
+                        o.fleetId === selected || o.targetFleetId === selected,
+                    )
+                  ? "A fleet order is already scheduled."
+                  : reorganizationInvalid
+                    ? reorganizationInvalid
+                    : (operation === "load" ||
+                          operation === "unload" ||
+                          (operation === "disband" && fleet.infantry > 0)) &&
+                        !unified
+                      ? "Unified control is required to transfer infantry."
+                      : (operation === "load" || operation === "unload") &&
+                          (!Number.isSafeInteger(cargo) || cargo! < 1)
+                        ? "Choose a positive whole number of infantry."
+                        : operation === "load" &&
+                            cargo! + fleet.infantry >
+                              fleet.fighters * rules.infantryCapacityPerFighter
+                          ? "The next load exceeds the remaining transport capacity."
+                          : operation === "load" && cargo! > available.infantry
+                            ? "Choose infantry that are available and not reserved."
+                            : operation === "unload" && cargo! > fleet.infantry
+                              ? "Choose infantry already aboard this fleet."
+                              : ""
+              : !Number.isSafeInteger(fighters) ||
+                  !Number.isSafeInteger(infantry) ||
+                  fighters! < 1 ||
+                  infantry! < 0
+                ? "Choose whole force counts with at least one fighter."
+                : infantry! > fighters! * rules.infantryCapacityPerFighter
+                  ? "Each fighter carries up to ten infantry."
+                  : infantry! > 0 && !unified
+                    ? "Unified control is required to embark infantry."
+                    : fighters! > available.fighters ||
+                        infantry! > available.infantry
+                      ? "Choose forces that are available and not reserved."
+                      : count >= rules.maximumFleetsPerPlayer
+                        ? "Your empire has reached its fleet limit."
+                        : "",
   );
 </script>
 
@@ -398,33 +414,51 @@
         Each fighter carries ten infantry. Embarkation requires your control of
         orbit and surface.
       </p>{/if}
-    {#if orders.length}<section aria-label="Accepted fleet orders">
-        <h3>Accepted orders</h3>
-        {#each orders as o}<p>
-            {o.reorganization === "split"
-              ? "Split"
-              : o.reorganization === "merge"
-                ? "Merge"
-                : o.cargo === "load"
-                  ? "Load"
-                  : o.cargo === "unload"
-                    ? "Unload"
-                    : o.fleetId
-                      ? "Disband"
-                      : "Form"} · {o.cargo
-              ? `${o.infantry} infantry`
-              : `${o.fighters} fighters · ${o.infantry} infantry`} · tick {o.effectiveTick}
-          </p>{/each}
-      </section>{/if}
+    <section aria-label="Accepted fleet orders">
+      <h3 tabindex="-1" bind:this={ordersHeading}>Accepted orders</h3>
+      {#if !orders.length}<p>No fleet orders are waiting.</p>{/if}
+      {#each orders as o, index}<p>
+          {o.reorganization === "split"
+            ? "Split"
+            : o.reorganization === "merge"
+              ? "Merge"
+              : o.cargo === "load"
+                ? "Load"
+                : o.cargo === "unload"
+                  ? "Unload"
+                  : o.fleetId
+                    ? "Disband"
+                    : "Form"} · {o.cargo
+            ? `${o.infantry} infantry`
+            : `${o.fighters} fighters · ${o.infantry} infantry`} · tick {o.effectiveTick}
+        </p>
+        <ActionButton
+          class="secondary"
+          aria-pressed={cancelling === o.id}
+          onclick={() => (cancelling = o.id)}
+          >Review cancellation · order {index + 1}</ActionButton
+        >{/each}
+    </section>
   </div>
   <footer>
     <div class="feedback">
+      {#if cancelOrder}<p>
+          Cancel the {cancelOrder.reorganization ??
+            cancelOrder.cargo ??
+            (cancelOrder.fleetId ? "disband" : "formation")} order for tick {cancelOrder.effectiveTick}?
+          Release its reservations without moving forces. The server must accept
+          cancellation before the execution cutoff.
+        </p>{/if}
       <Feedback {message} {error} />{#if invalid}<p>{invalid}</p>{/if}
     </div>
     <div class="actions">
       <ActionButton class="secondary" onclick={onclose}
         >Back to system</ActionButton
-      >{#if error && pending && onretry}<ActionButton
+      >{#if cancelOrder}<ActionButton
+          class="secondary"
+          disabled={pending}
+          onclick={() => (cancelling = null)}>Keep order</ActionButton
+        >{/if}{#if error && pending && onretry}<ActionButton
           disabled={busy}
           onclick={onretry}>Check fleet order</ActionButton
         >{:else}<ActionButton disabled={pending || !!invalid} onclick={commit}

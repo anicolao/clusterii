@@ -438,3 +438,17 @@ Independently inspected refreshed completed-phone capture: manifest and footer b
 #20–23 verification remains running; publication/documentation green, no new PR. Split/merge work is active and uncommitted. Preliminary independent source review confirms both merge participants are locked against overlapping commands, split slot reservations include pending formations/splits, both resulting complements require valid capacity, and execution revalidates fleet ownership/location. Review document explicitly identifies orbital-only reorganization and capacity/timing as development choices, not owner approvals; surface forces are not transferred.
 
 Agent reports 49 unit tests/1063 assertions, first browser journey and both live-provider cases passing; final evidence remains pending while before/after complement previews are added to ordinary controls. No new actionable defect established in this in-progress review, no duplicate handoff or stall. Carry checkpoint into next related committed/pushed logs. Full independent rendered/security/release gates remain; no merge.
+
+
+## Reviewer progress — 2026-10-21 02:27 Toronto
+
+#20–23 verification still running with publication/documentation green. Reorganization rollout/evidence prepared; no new PR at inspection. Agent's commit encountered prompt-hook rejection from two pending continuation entries after cargo correction was carried forward; work remains staged and agent active, so no redundant interruption. Must resolve with accurate continuation bookkeeping before commit, without bypassing hook or inventing prompts.
+
+Independent split-phone capture review finds both complements explicitly previewed (new 1 fighter/8 infantry; remaining 3/10), legible inputs and visible fixed Split fleet action. This supports the sampled ready state, not all viewport/outcome acceptance. Review doc reports live both-provider 208 assertions, full default 25 tests/1455 assertions and ten browser/gallery/lab passes; these remain implementer controlled-clock evidence. Shared production component/art provenance, reduced-motion outcomes and receiver focus are documented. Final independent security/hosted/CI gates remain. Carry checkpoint into next committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 02:37 Toronto
+
+#20 6c42699, #21 57a6cf5 and #22 f22586a now fully green. New #24 f36ed4b correctly stacks on fleet-cargo, attached to supervisor chat; reorganization worktree clean, publication/documentation green and verification pending. #23 verification also pending. Independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Prompt-hook issue resolved with one accurate Prompt 36 continuation; historical entries preserved and checkpoint through 02:27 committed. Prior sampled split/source review remains scoped, not full release acceptance.
+
+Agent active on cancellation successor. Initial service replay invocation corrected; next run exposes force-total assertion expected24/received22. Agent is inspecting production settlement and test timing rather than stalled; no acceptance of cancellation or duplicate diagnostic prompt. Require actual conservation explanation/fix and passing evidence before its PR acceptance. Carry checkpoint into next related committed/pushed logs; no merge.

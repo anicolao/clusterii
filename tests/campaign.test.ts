@@ -289,6 +289,7 @@ test('the largest stellar catalogue retains complete reports within the canonica
 test('observation storage reserves complete reports before admitting excess pending work',()=>{const state=productionFixture();assertObservationBudget(state);state.construction={orders:Array.from({length:4000},(_,i)=>({id:`${i}`.padStart(36,'0'),uid:'p0',starId:state.seats[0].home!,type:'market' as const,sequence:i,effectiveTick:1,paidMilli:100000,executedTick:null,startedTick:null,progress:0})),cancellations:[],ledger:{}};const before=structuredClone(state);expect(()=>assertObservationBudget(state)).toThrow('pending-work-capacity');expect(state).toEqual(before);});
 
 import {
+  cancelFleet,
   fleetIdentity,
   orderFleet,
   reservedForces,
@@ -1180,4 +1181,43 @@ test("pending splits reserve the shared fleet limit against formation and other 
   expect(Object.keys(nextProduction(queued).military!.fleets)).toHaveLength(
     128,
   );
+});
+
+
+test("fleet cancellation releases only owned reservations before the exact cutoff", () => {
+ const original=productionFixture(),home=original.seats[0].home!, cutoff=original.economy!.nextTickAt;
+ const queued=orderFleet(original,{kind:"fleet.form",expectedRevision:original.revision,starId:home,fighters:2,infantry:10},"p0","cancel-me",cutoff-1);
+ const action={kind:"fleet.cancel",expectedRevision:queued.revision,orderId:"cancel-me"};
+ const cancelled=cancelFleet(queued,action,"p0",cutoff-1);
+ expect(cancelled.revision).toBe(queued.revision+1);
+ expect(cancelled.military!.orders).toEqual([]);
+ expect(cancelled.systems).toEqual(queued.systems);
+ expect(cancelled.military!.fleets).toEqual(queued.military!.fleets);
+ expect(reservedForces(cancelled,"p0",home)).toEqual({fighters:0,infantry:0});
+ expect(nextProduction(cancelled).military!.fleets).toEqual({});
+ expect(queued.military!.orders).toHaveLength(1);
+ for(const now of [cutoff,cutoff+1,cutoff+9000000]) expect(()=>cancelFleet(queued,action,"p0",now)).toThrow("fleet-order-closed");
+ for(const patch of [{extra:true},{orderId:1},{kind:"fleet.form"}]) expect(()=>cancelFleet(queued,{...action,...patch},"p0",0)).toThrow("invalid");
+ expect(()=>cancelFleet(queued,action,"p1",0)).toThrow("fleet-order-unavailable");
+ expect(()=>cancelFleet(queued,{...action,orderId:"missing"},"p1",0)).toThrow("fleet-order-unavailable");
+ expect(()=>cancelFleet(queued,action,"outsider",0)).toThrow("permission");
+ expect(()=>cancelFleet(queued,{...action,expectedRevision:0},"p0",0)).toThrow("conflict");
+ expect(()=>cancelFleet({...queued,pausedAt:1},action,"p0",0)).toThrow("paused");
+ expect(()=>cancelFleet(cancelled,{...action,expectedRevision:cancelled.revision},"p0",0)).toThrow("fleet-order-unavailable");
+ const future=orderFleet(original,{kind:"fleet.form",expectedRevision:original.revision,starId:home,fighters:1,infantry:0},"p0","after-boundary",cutoff);
+ expect(cancelFleet(future,{...action,expectedRevision:future.revision,orderId:"after-boundary"},"p0",cutoff).military!.orders).toEqual([]);
+});
+
+test("cancelling all stationed operations preserves forces and releases both merge participants",()=>{
+ let state=productionFixture();const home=state.seats[0].home!;
+ for(const id of ["one","two"])state=orderFleet(state,{kind:"fleet.form",expectedRevision:state.revision,starId:home,fighters:4,infantry:5},"p0",id,0);
+ state=nextProduction(state);const [fleetId,targetFleetId]=Object.keys(state.military!.fleets);
+ for(const operation of [{kind:"fleet.load",infantry:2},{kind:"fleet.unload",infantry:2},{kind:"fleet.split",fighters:1,infantry:2},{kind:"fleet.merge",targetFleetId},{kind:"fleet.disband"}]){
+  const queued=orderFleet(state,{...operation,expectedRevision:state.revision,fleetId},"p0","cancel-operation",0);
+  const changed=structuredClone(queued);changed.systems[home].orbit="p1"; // loss of control must not trap an owned reservation
+  const done=cancelFleet(changed,{kind:"fleet.cancel",expectedRevision:changed.revision,orderId:"cancel-operation"},"p0",0);
+  expect(done.military!.orders).toEqual([]);expect(done.military!.fleets).toEqual(state.military!.fleets);expect(done.systems).toEqual(changed.systems);
+  done.systems[home].orbit="p0";
+  for(const id of [fleetId,targetFleetId]) expect(orderFleet(done,{kind:"fleet.disband",expectedRevision:done.revision,fleetId:id},"p0","new-order",0).military!.orders).toHaveLength(1);
+ }
 });

@@ -263,7 +263,9 @@
         busy = false;
         pending = null;
         acceptedFleetCommand =
-          receipt.status === "accepted" && command.kind.startsWith("fleet.")
+          receipt.status === "accepted" &&
+          command.kind.startsWith("fleet.") &&
+          command.kind !== "fleet.cancel"
             ? {
                 id: command.id,
                 gameId: command.gameId,
@@ -287,6 +289,7 @@
             "fleet.unload",
             "fleet.split",
             "fleet.merge",
+            "fleet.cancel",
             "construction.build",
             "construction.cancel",
           ].includes(command.kind)
@@ -397,6 +400,12 @@
           fleetId,
           fighters,
           infantry,
+        })}
+      oncancelFleet={(orderId) =>
+        send(view!.id, {
+          kind: "fleet.cancel",
+          expectedRevision: view!.revision,
+          orderId,
         })}
       onmerge={(fleetId, targetFleetId) =>
         send(view!.id, {

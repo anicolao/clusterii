@@ -4628,3 +4628,104 @@ for (const mode of ["mock", "real"] as const)
     },
     120000,
   );
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true"
+    ? test.skip
+    : test)(
+    `fleet cancellation ${mode}: one acknowledged effect, owned reservations and settlement race`,
+    async () => {
+      const { createRequire } = await import("node:module"),
+        require = createRequire(
+          new URL("../functions/package.json", import.meta.url),
+        );
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({ projectId });
+      const db = require("firebase-admin/firestore").getFirestore();
+      const { startDueCampaign, processCampaign } =
+        await import("../functions/src/campaigns");
+      const { settleCampaignTicks } =
+        await import("../functions/src/production");
+      const players = await Promise.all(
+        (["heliac", "pelagic", "vesper", "dracon"] as const).map(
+          async (faction) => {
+            const c = await client(
+              `cancel-${faction}-${crypto.randomUUID()}`,
+            );
+            await developer(c);
+            await saveIdentity(c);
+            return { c, faction };
+          },
+        ),
+      );
+      const owner = players[0].c,
+        id = crypto.randomUUID();
+      expect(
+        (
+          await campaignCommand(owner, id, {
+            kind: "campaign.create",
+            expectedRevision: 0,
+            name: "Cancellation service",
+            capacity: 4,
+            mode,
+            development: true,
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      for (let i = 0; i < 4; i++)
+        await campaignCommand(
+          players[i].c,
+          id,
+          {
+            kind: "campaign.join",
+            expectedRevision: i + 1,
+            faction: players[i].faction,
+          },
+          mode,
+        );
+      const head = db.doc(`campaignStates/${id}`),
+        start = (await head.get()).get("startAt");
+      await startDueCampaign(id, start);
+      const read = async (c = owner) =>
+        (await readCampaignHistory(c.firestore, c.functions, id, c.uid))
+          .records[0];
+      const initial = await read(),
+        home = initial.own.home!;
+      const queued = await campaignCommand(owner,id,{kind:"fleet.form",expectedRevision:initial.revision,starId:home,fighters:4,infantry:18},mode);
+      const formation=(await read()).military!.orders[0];
+      const action={kind:"fleet.cancel" as const,expectedRevision:queued.receipt.revision,orderId:formation.id};
+      expect((await campaignCommand(players[1].c,id,action,mode)).receipt.reason).toBe("fleet-order-unavailable");
+      const results=await Promise.all([campaignCommand(owner,id,action,mode),campaignCommand(owner,id,action,mode)]);
+      expect(results.map(r=>r.receipt.status).sort()).toEqual(["accepted","rejected"]);
+      expect(results.find(r=>r.receipt.status==="rejected")!.receipt.reason).toBe("conflict");
+      const accepted=results.find(r=>r.receipt.status==="accepted")!;
+      const commandId=accepted.ingress.key!;
+      await processCampaign.run({params:{gameId:id,uid:owner.uid,commandId},time:new Date().toISOString(),data:{val:()=>accepted.payload}} as never);
+      const cancelled=await read();
+      expect(cancelled.revision).toBe(queued.receipt.revision+1);
+      expect(cancelled.military!.orders).toEqual([]);
+      expect(cancelled.military!.fleets).toEqual([]);
+      expect(cancelled.holdings).toEqual(initial.holdings);
+      expect((await campaignCommand(owner,id,{...action,expectedRevision:cancelled.revision},mode)).receipt.reason).toBe("fleet-order-unavailable");
+      for(const {c} of players.slice(1)){
+       expect((await read(c)).military).toEqual({fleets:[],orders:[],ledger:[]});
+       await expect(getDoc(doc(c.firestore,"campaignViews",id,"members",owner.uid))).rejects.toThrow();
+      }
+      const history=await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid);
+      expect(history.records.filter(v=>v.revision===cancelled.revision)).toHaveLength(1);
+      expect(await settleCampaignTicks(id,()=>start+900000)).toBe(1);
+      const after=await read();expect(after.military!.fleets).toEqual([]);
+      await campaignCommand(owner,id,{kind:"fleet.form",expectedRevision:after.revision,starId:home,fighters:2,infantry:5},mode);
+      const racing=await read(),order=racing.military!.orders[0];
+      const [attempt]=await Promise.all([
+       campaignCommand(owner,id,{kind:"fleet.cancel",expectedRevision:racing.revision,orderId:order.id},mode),
+       settleCampaignTicks(id,()=>start+1800000),
+      ]);
+      const settled=await read();expect(settled.military!.orders).toEqual([]);
+      if(attempt.receipt.status==="accepted") expect(settled.military!.fleets).toEqual([]);
+      else {expect(attempt.receipt.reason).toBe("conflict");expect(settled.military!.fleets).toHaveLength(1);}
+      const local=settled.holdings.find(h=>h.starId===home)!;
+      expect(local.fighters!+settled.military!.fleets.reduce((n,f)=>n+f.fighters,0)).toBe(22);
+      expect(local.infantry!+settled.military!.fleets.reduce((n,f)=>n+f.infantry,0)).toBe(22);
+    },120000,
+  );

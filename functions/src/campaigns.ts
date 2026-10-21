@@ -33,7 +33,7 @@ import {
   unwrap,
   wrap,
 } from "../../shared/crypto.js";
-import { orderFleet } from "../../shared/fleets.js";
+import { cancelFleet, orderFleet } from "../../shared/fleets.js";
 import { assertObservationBudget } from "../../shared/observations.js";
 import {
   type Profile,
@@ -402,39 +402,49 @@ async function handleCampaign(
           context(gameId, revision, "canonical", epoch),
         );
         next =
-          action.kind === "fleet.form" ||
-          action.kind === "fleet.disband" ||
-          action.kind === "fleet.load" ||
-          action.kind === "fleet.unload" ||
-          action.kind === "fleet.split" ||
-          action.kind === "fleet.merge"
-            ? orderFleet(current, action, uid, commandId, Date.now())
-            : maintenance
-              ? maintainCampaign(current, action, uid, now)
-              : action.kind === "construction.build" ||
-                  action.kind === "construction.cancel"
-                ? orderConstruction(current, action, uid, commandId, Date.now())
-                : action.kind === "market.focus"
-                  ? selectMarketFocus(
+          action.kind === "fleet.cancel"
+            ? cancelFleet(current, action, uid, Date.now())
+            : action.kind === "fleet.form" ||
+                action.kind === "fleet.disband" ||
+                action.kind === "fleet.load" ||
+                action.kind === "fleet.unload" ||
+                action.kind === "fleet.split" ||
+                action.kind === "fleet.merge"
+              ? orderFleet(current, action, uid, commandId, Date.now())
+              : maintenance
+                ? maintainCampaign(current, action, uid, now)
+                : action.kind === "construction.build" ||
+                    action.kind === "construction.cancel"
+                  ? orderConstruction(
                       current,
                       action,
                       uid,
                       commandId,
                       Date.now(),
                     )
-                  : action.kind === "research.select"
-                    ? selectResearch(
+                  : action.kind === "market.focus"
+                    ? selectMarketFocus(
                         current,
                         action,
                         uid,
                         commandId,
                         Date.now(),
                       )
-                    : joinOrLeave(current, action, uid, profile, now);
+                    : action.kind === "research.select"
+                      ? selectResearch(
+                          current,
+                          action,
+                          uid,
+                          commandId,
+                          Date.now(),
+                        )
+                      : joinOrLeave(current, action, uid, profile, now);
       }
       assertObservationBudget(
         next,
-        action.kind === "fleet.disband" || action.kind === "fleet.merge",
+        action.kind === "fleet.disband" ||
+          action.kind === "fleet.merge" ||
+          action.kind === "fleet.cancel",
       );
     } catch (error) {
       if (error instanceof KeyServiceError) throw error;
@@ -447,6 +457,8 @@ async function handleCampaign(
           "insufficient-forces",
           "fleet-limit",
           "fleet-order-pending",
+          "fleet-order-unavailable",
+          "fleet-order-closed",
           "permission",
           "profile-required",
           "construction-unavailable",

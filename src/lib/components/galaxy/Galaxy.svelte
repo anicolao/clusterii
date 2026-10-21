@@ -37,6 +37,7 @@
     oncargo,
     onsplit,
     onmerge,
+    oncancelFleet,
     onbuild,
     oncancel,
     onmigrate,
@@ -59,6 +60,7 @@
     onform?: (starId: string, fighters: number, infantry: number) => void;
     ondisband?: (id: string) => void;
     onsplit?: (id: string, fighters: number, infantry: number) => void;
+    oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
     oncargo?: (
       id: string,
@@ -460,6 +462,7 @@
         onform={(fighters, infantry) => onform?.(star.id, fighters, infantry)}
         ondisband={(id) => ondisband?.(id)}
         onsplit={(id, fighters, infantry) => onsplit?.(id, fighters, infantry)}
+        oncancel={(id) => oncancelFleet?.(id)}
         onmerge={(id, targetId) => onmerge?.(id, targetId)}
         oncargo={(id, operation, infantry) =>
           oncargo?.(id, operation, infantry)}
