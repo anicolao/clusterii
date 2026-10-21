@@ -574,6 +574,15 @@ test("state capacity cannot block disbanding that frees persistent fleet storage
   }
   expect(full).toBe(true);
   assertObservationBudget(state);
+  let merging = structuredClone(state);
+  for(let i=0;i<40;i+=2) {
+    merging=orderFleet(merging,{kind:"fleet.merge",expectedRevision:merging.revision,fleetId:String(i).padStart(36,"0"),targetFleetId:String(i+1).padStart(36,"0")},"player-0",`merge-release-${i}`,merging.economy!.nextTickAt-1);
+    expect(()=>assertObservationBudget(merging,true)).not.toThrow();
+  }
+  expect(()=>assertObservationBudget(merging)).toThrow("pending-work-capacity");
+  merging=nextProduction(nextProduction(merging));
+  expect(()=>assertObservationBudget(merging)).not.toThrow();
+  expect(merging.military!.fleets["1".padStart(36,"0")].fighters).toBe(2);
   const queued = orderFleet(
     state,
     {
@@ -870,4 +879,305 @@ test("fleet acknowledgement reconciles only its authoritative outcome and never 
   expect(fleetSettlementFeedback(aged,command)?.message).toBe("Fleet order accepted. Open history to inspect its outcome.");
   const changed=structuredClone(queued);changed.systems[home].surface="p1";
   expect(fleetSettlementFeedback(campaignView(nextProduction(changed),"p0"),command)).toEqual({message:"",error:"Fleet order could not execute. No forces were transferred.",remedy:"validation"});
+});
+
+test("split and merge conserve stationed complements, reserve slots and lock every participant", () => {
+  let state = productionFixture();
+  const home = state.seats[0].home!;
+  state = nextProduction(
+    orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId: home,
+        fighters: 4,
+        infantry: 18,
+      },
+      "p0",
+      "source",
+      0,
+    ),
+  );
+  const source = fleetIdentity("p0", "source"),
+    initial = structuredClone(state.military!.fleets[source]);
+  const queued = orderFleet(
+    state,
+    {
+      kind: "fleet.split",
+      expectedRevision: state.revision,
+      fleetId: source,
+      fighters: 1,
+      infantry: 8,
+    },
+    "p0",
+    "detached",
+    0,
+  );
+  expect(queued.military!.fleets).toEqual(state.military!.fleets);
+  expect(reservedForces(queued, "p0", home)).toEqual({
+    fighters: 0,
+    infantry: 0,
+  });
+  expect(() =>
+    orderFleet(
+      queued,
+      {
+        kind: "fleet.disband",
+        expectedRevision: queued.revision,
+        fleetId: source,
+      },
+      "p0",
+      "blocked",
+      0,
+    ),
+  ).toThrow("fleet-order-pending");
+  const split = nextProduction(queued),
+    child = fleetIdentity("p0", "detached");
+  expect(split.military!.fleets[source]).toMatchObject({
+    fighters: 3,
+    infantry: 10,
+    formedTick: initial.formedTick,
+    number: initial.number,
+  });
+  expect(split.military!.fleets[child]).toMatchObject({
+    fighters: 1,
+    infantry: 8,
+    formedTick: 2,
+    number: queued.revision,
+  });
+  expect(
+    fleetSettlementFeedback(campaignView(split, "p0"), {
+      gameId: split.id,
+      id: "detached",
+      revision: queued.revision,
+    })?.message,
+  ).toBe("Fleet split. Both complements are stationed here.");
+  const merging = orderFleet(
+    split,
+    {
+      kind: "fleet.merge",
+      expectedRevision: split.revision,
+      fleetId: child,
+      targetFleetId: source,
+    },
+    "p0",
+    "merged",
+    0,
+  );
+  for (const fleetId of [child, source])
+    expect(() =>
+      orderFleet(
+        merging,
+        {
+          kind: "fleet.unload",
+          expectedRevision: merging.revision,
+          fleetId,
+          infantry: 1,
+        },
+        "p0",
+        "blocked",
+        0,
+      ),
+    ).toThrow("fleet-order-pending");
+  const merged = nextProduction(merging);
+  expect(Object.keys(merged.military!.fleets)).toEqual([source]);
+  expect(merged.military!.fleets[source]).toEqual(initial);
+  expect(merged.military!.ledger.p0[0]).toMatchObject({
+    result: "merged",
+    fleetId: child,
+    targetFleetId: source,
+  });
+  expect(
+    fleetSettlementFeedback(campaignView(merged, "p0"), {
+      gameId: merged.id,
+      id: "merged",
+      revision: merging.revision,
+    })?.message,
+  ).toBe("Fleets merged. The receiving fleet retains all forces.");
+  expect(campaignView(merging, "p0").military!.orders[0]).toMatchObject({
+    reorganization: "merge",
+    targetFleetId: source,
+  });
+  expect(JSON.stringify(campaignView(merging, "p1").military)).not.toContain(
+    source,
+  );
+  expect(stationedForces(merged, home)).toEqual({ fighters: 24, infantry: 24 });
+});
+
+test("reorganization rejects forged or incompatible fleets and preserves orthogonal surface control", () => {
+  let state = productionFixture();
+  const home = state.seats[0].home!;
+  state = nextProduction(
+    orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId: home,
+        fighters: 4,
+        infantry: 18,
+      },
+      "p0",
+      "reorganize",
+      0,
+    ),
+  );
+  const fleetId = fleetIdentity("p0", "reorganize"),
+    action = {
+      kind: "fleet.split",
+      expectedRevision: state.revision,
+      fleetId,
+      fighters: 1,
+      infantry: 8,
+    };
+  for (const patch of [
+    { fighters: 0 },
+    { fighters: 4 },
+    { fighters: 1.5 },
+    { infantry: -1 },
+    { infantry: 11 },
+    { fighters: 3, infantry: 0 },
+  ])
+    expect(() =>
+      orderFleet(state, { ...action, ...patch }, "p0", "invalid", 0),
+    ).toThrow();
+  for (const patch of [
+    { uid: "p0" },
+    { reorganization: "split" },
+    { targetFleetId: "forged" },
+  ])
+    expect(() =>
+      orderFleet(state, { ...action, ...patch }, "p0", "forged", 0),
+    ).toThrow("invalid");
+  expect(() => orderFleet(state, action, "p1", "wrong", 0)).toThrow(
+    "permission",
+  );
+  state.systems[home].surface = "p1";
+  const split = nextProduction(
+    orderFleet(state, action, "p0", "orthogonal", 0),
+  );
+  expect(Object.keys(split.military!.fleets)).toHaveLength(2);
+  const child = fleetIdentity("p0", "orthogonal"),
+    merge = {
+      kind: "fleet.merge",
+      expectedRevision: split.revision,
+      fleetId: child,
+      targetFleetId: fleetId,
+    };
+  expect(() =>
+    orderFleet(split, { ...merge, targetFleetId: child }, "p0", "self", 0),
+  ).toThrow("invalid");
+  for (const mutate of [
+    (s: typeof split) => {
+      s.military!.fleets[fleetId].uid = "p1";
+    },
+    (s: typeof split) => {
+      s.military!.fleets[fleetId].starId = s.seats[1].home!;
+    },
+  ]) {
+    const changed = structuredClone(split);
+    mutate(changed);
+    expect(() => orderFleet(changed, merge, "p0", "wrong", 0)).toThrow(
+      "permission",
+    );
+  }
+  const queued = orderFleet(split, merge, "p0", "merge-orthogonal", 0);
+  expect(nextProduction(queued).military!.ledger.p0[0].result).toBe("merged");
+  for (const mutate of [
+    (s: typeof queued) => {
+      s.systems[home].orbit = "p1";
+    },
+    (s: typeof queued) => {
+      delete s.military!.fleets[fleetId];
+    },
+    (s: typeof queued) => {
+      s.military!.fleets[child].fighters = 2;
+    },
+  ]) {
+    const changed = structuredClone(queued);
+    mutate(changed);
+    const before = structuredClone(changed.military!.fleets),
+      after = nextProduction(changed);
+    expect(after.military!.ledger.p0[0].result).toBe("invalid");
+    expect(after.military!.fleets).toEqual(before);
+  }
+  const queuedSplit = orderFleet(state, action, "p0", "lost-capacity", 0);
+  queuedSplit.military!.fleets[fleetId].fighters = 1;
+  expect(nextProduction(queuedSplit).military!.ledger.p0[0].result).toBe(
+    "invalid",
+  );
+});
+
+test("pending splits reserve the shared fleet limit against formation and other splits", () => {
+  let state = productionFixture();
+  const home = state.seats[0].home!;
+  state = nextProduction(
+    orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId: home,
+        fighters: 4,
+        infantry: 0,
+      },
+      "p0",
+      "limit-source",
+      0,
+    ),
+  );
+  const source = fleetIdentity("p0", "limit-source");
+  for (let i = 0; i < 126; i++)
+    state.military!.fleets[`existing-${i}`] = {
+      ...state.military!.fleets[source],
+      id: `existing-${i}`,
+      number: i + 100,
+    };
+  const queued = orderFleet(
+    state,
+    {
+      kind: "fleet.split",
+      expectedRevision: state.revision,
+      fleetId: source,
+      fighters: 1,
+      infantry: 0,
+    },
+    "p0",
+    "last-slot",
+    0,
+  );
+  expect(() =>
+    orderFleet(
+      queued,
+      {
+        kind: "fleet.form",
+        expectedRevision: queued.revision,
+        starId: home,
+        fighters: 1,
+        infantry: 0,
+      },
+      "p0",
+      "form-over",
+      0,
+    ),
+  ).toThrow("fleet-limit");
+  expect(() =>
+    orderFleet(
+      queued,
+      {
+        kind: "fleet.split",
+        expectedRevision: queued.revision,
+        fleetId: "existing-0",
+        fighters: 1,
+        infantry: 0,
+      },
+      "p0",
+      "split-over",
+      0,
+    ),
+  ).toThrow("fleet-limit");
+  expect(Object.keys(nextProduction(queued).military!.fleets)).toHaveLength(
+    128,
+  );
 });

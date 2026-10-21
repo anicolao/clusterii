@@ -424,3 +424,17 @@ Independent completed-phone review confirms visible loaded outcome and next-load
 Reviewer finding for cargo PR #23 e167364: docs/ux/reviews/fleet-cargo/fleet-cargo-loaded-phone.png shows completed “Infantry loaded · 3 infantry.” while the commitment rail still says “Cargo order accepted. Transfer scheduled.” Reconcile the acknowledgement with the matching authoritative outcome so settled orders no longer claim a future transfer; preserve genuine pending/accepted/retry states and the separate next-load capacity message. Add a focused regression and refresh affected captures, carry through the stack, log reviewer attribution and current meta checkpoint, and commit/push without merging.
 
 Agent actively implementing split/merge successor, not stalled; broader security/release gates remain open.
+
+
+## Reviewer progress — 2026-10-21 02:07 Toronto
+
+#23 advanced to c00d336 with attributed Prompt 36 and checkpoint committed/pushed; cargo worktree clean. Independently reviewed acknowledgement reconciliation keyed by campaign, command ID and minimum accepted revision against private outcomes; still-pending orders preserve scheduled copy, expired ledger directs to history without falsely claiming future execution. New command/account/navigation resets avoid stale cross-command feedback. Focused browser regression explicitly requires scheduled text before settlement and completed text afterwards; retained log reports three passes in 28.2 seconds.
+
+Independently inspected refreshed completed-phone capture: manifest and footer both show the completed three-infantry load; separate next-load capacity message remains clear. This resolves the specific 01:57 finding at scoped source/rendered level. Full #20–23 verification remains running and final hosted/security acceptance remains open. Agent carried fix into active split/merge successor and is extending outcome labels there; no duplicate prompt or stall. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 02:17 Toronto
+
+#20–23 verification remains running; publication/documentation green, no new PR. Split/merge work is active and uncommitted. Preliminary independent source review confirms both merge participants are locked against overlapping commands, split slot reservations include pending formations/splits, both resulting complements require valid capacity, and execution revalidates fleet ownership/location. Review document explicitly identifies orbital-only reorganization and capacity/timing as development choices, not owner approvals; surface forces are not transferred.
+
+Agent reports 49 unit tests/1063 assertions, first browser journey and both live-provider cases passing; final evidence remains pending while before/after complement previews are added to ordinary controls. No new actionable defect established in this in-progress review, no duplicate handoff or stall. Carry checkpoint into next related committed/pushed logs. Full independent rendered/security/release gates remain; no merge.

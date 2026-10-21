@@ -25,6 +25,7 @@
     focusFrame,
     fleetFrame,
     cargoFrame,
+    reorganizationFrame,
     observationFrame,
     observedTarget,
   } from "./scenarios";
@@ -122,13 +123,15 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "fleet" || selected === "cargo"}<div
+        {#if selected === "fleet" || selected === "cargo" || selected === "split" || selected === "merge"}<div
             style="height:min(850px,90svh);min-height:550px"
           >
             {#key frame.at}{@const sample =
-                selected === "cargo"
-                  ? cargoFrame(time)
-                  : fleetFrame(time)}<SystemFleets
+                selected === "split" || selected === "merge"
+                  ? reorganizationFrame(time, selected === "merge")
+                  : selected === "cargo"
+                    ? cargoFrame(time)
+                    : fleetFrame(time)}<SystemFleets
                 view={sample}
                 starId={sample.own.home!}
                 pending={time < 2200}
@@ -137,6 +140,8 @@
                 onform={() => {}}
                 ondisband={() => {}}
                 oncargo={() => {}}
+                onsplit={() => {}}
+                onmerge={() => {}}
                 onclose={() => {}}
                 onretry={() => {}}
               />{/key}

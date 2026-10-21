@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { tick } from "svelte";
   import { base } from "$app/paths";
   import type { CampaignView } from "@shared/campaign";
+  import { canSplit } from "@shared/fleets";
   import { rules } from "@shared/rules";
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
@@ -15,6 +17,8 @@
     onform,
     ondisband,
     oncargo,
+    onsplit,
+    onmerge,
     onclose,
     onretry,
   }: {
@@ -31,6 +35,8 @@
       operation: "load" | "unload",
       infantry: number,
     ) => void;
+    onsplit: (id: string, fighters: number, infantry: number) => void;
+    onmerge: (id: string, targetId: string) => void;
     onclose: () => void;
     onretry?: () => void;
   } = $props();
@@ -38,8 +44,13 @@
   let fighters = $state<number | undefined>(1),
     infantry = $state<number | undefined>(0),
     selected = $state<string | null>(null);
-  let operation = $state<"load" | "unload" | "disband">("disband");
+  let operation = $state<"load" | "unload" | "split" | "merge" | "disband">(
+    "disband",
+  );
   let cargo = $state<number | undefined>(1);
+  let splitFighters = $state<number | undefined>(1),
+    splitInfantry = $state<number | undefined>(0),
+    targetId = $state("");
   const star = $derived(view.stars.find((s) => s.id === starId)!);
   const holding = $derived(view.holdings.find((s) => s.starId === starId));
   const fleets = $derived(
@@ -69,8 +80,66 @@
   );
   const count = $derived(
     (view.military?.fleets.length ?? 0) +
-      (view.military?.orders.filter((o) => o.fleetId === null).length ?? 0),
+      (view.military?.orders.filter(
+        (o) => o.fleetId === null || o.reorganization === "split",
+      ).length ?? 0),
   );
+  let fleetHeading = $state<HTMLHeadingElement>();
+  $effect(() => {
+    if (!selected || fleet) return;
+    const outcome = view.military?.ledger.find(
+      (e) => e.fleetId === selected && e.result === "merged",
+    );
+    if (
+      outcome?.targetFleetId &&
+      fleets.some((f) => f.id === outcome.targetFleetId)
+    ) {
+      selected = outcome.targetFleetId;
+      targetId = "";
+      void tick().then(() => fleetHeading?.focus());
+    }
+  });
+  const target = $derived(
+    fleets.find((f) => f.id === targetId && f.id !== selected),
+  );
+  const reorganizationInvalid = $derived(
+    operation === "split" && fleet
+      ? !canSplit(fleet, splitFighters!, splitInfantry!)
+        ? "Both fleets need a fighter and enough transport capacity for their infantry."
+        : count >= rules.maximumFleetsPerPlayer
+          ? "Your empire has reached its fleet limit."
+          : ""
+      : operation === "merge"
+        ? !target
+          ? fleets.length < 2
+            ? "No other fleet is stationed here."
+            : "Choose another stationed fleet to receive these forces."
+          : orders.some(
+                (o) => o.fleetId === target.id || o.targetFleetId === target.id,
+              )
+            ? "The receiving fleet already has an order."
+            : ""
+        : "",
+  );
+  const actionLabel = $derived(
+    selected
+      ? {
+          load: "Load infantry",
+          unload: "Unload infantry",
+          split: "Split fleet",
+          merge: "Merge fleets",
+          disband: "Disband fleet",
+        }[operation]
+      : "Form fleet",
+  );
+  function commit() {
+    if (!selected) onform(fighters!, infantry!);
+    else if (operation === "disband") ondisband(selected);
+    else if (operation === "split")
+      onsplit(selected, splitFighters!, splitInfantry!);
+    else if (operation === "merge") onmerge(selected, targetId);
+    else oncargo(selected, operation, cargo!);
+  }
   const invalid = $derived(
     !view.military
       ? "Fleet preparation requires a production-enabled campaign."
@@ -81,22 +150,30 @@
           : selected
             ? !fleet
               ? "This fleet is no longer stationed here."
-              : orders.some((o) => o.fleetId === selected)
+              : orders.some(
+                    (o) =>
+                      o.fleetId === selected || o.targetFleetId === selected,
+                  )
                 ? "A fleet order is already scheduled."
-                : (operation !== "disband" || fleet.infantry > 0) && !unified
-                  ? "Unified control is required to transfer infantry."
-                  : operation !== "disband" &&
-                      (!Number.isSafeInteger(cargo) || cargo! < 1)
-                    ? "Choose a positive whole number of infantry."
-                    : operation === "load" &&
-                        cargo! + fleet.infantry >
-                          fleet.fighters * rules.infantryCapacityPerFighter
-                      ? "The next load exceeds the remaining transport capacity."
-                      : operation === "load" && cargo! > available.infantry
-                        ? "Choose infantry that are available and not reserved."
-                        : operation === "unload" && cargo! > fleet.infantry
-                          ? "Choose infantry already aboard this fleet."
-                          : ""
+                : reorganizationInvalid
+                  ? reorganizationInvalid
+                  : (operation === "load" ||
+                        operation === "unload" ||
+                        (operation === "disband" && fleet.infantry > 0)) &&
+                      !unified
+                    ? "Unified control is required to transfer infantry."
+                    : (operation === "load" || operation === "unload") &&
+                        (!Number.isSafeInteger(cargo) || cargo! < 1)
+                      ? "Choose a positive whole number of infantry."
+                      : operation === "load" &&
+                          cargo! + fleet.infantry >
+                            fleet.fighters * rules.infantryCapacityPerFighter
+                        ? "The next load exceeds the remaining transport capacity."
+                        : operation === "load" && cargo! > available.infantry
+                          ? "Choose infantry that are available and not reserved."
+                          : operation === "unload" && cargo! > fleet.infantry
+                            ? "Choose infantry already aboard this fleet."
+                            : ""
             : !Number.isSafeInteger(fighters) ||
                 !Number.isSafeInteger(infantry) ||
                 fighters! < 1 ||
@@ -148,20 +225,27 @@
         class="outcome"
         role="status"
       >
-        {e.result === "formed"
-          ? "Fleet formed"
-          : e.result === "loaded"
-            ? "Infantry loaded"
-            : e.result === "unloaded"
-              ? "Infantry unloaded"
-              : e.result === "disbanded"
-                ? "Fleet disbanded"
-                : "Fleet order could not execute; its reservation was released"} ·
+        {e.result === "split"
+          ? "Fleet split"
+          : e.result === "merged"
+            ? "Fleets merged"
+            : e.result === "formed"
+              ? "Fleet formed"
+              : e.result === "loaded"
+                ? "Infantry loaded"
+                : e.result === "unloaded"
+                  ? "Infantry unloaded"
+                  : e.result === "disbanded"
+                    ? "Fleet disbanded"
+                    : "Fleet order could not execute; its reservation was released"}
+        ·
         {e.result === "loaded" || e.result === "unloaded"
           ? `${e.infantry} infantry`
           : `${e.fighters} fighters · ${e.infantry} infantry`}.
       </p>{/each}
-    {#if selected}<h3>{fleet ? `Fleet ${fleet.number}` : "Fleet returned"}</h3>
+    {#if selected}<h3 bind:this={fleetHeading} tabindex="-1">
+        {fleet ? `Fleet ${fleet.number}` : "Fleet no longer stationed here"}
+      </h3>
       {#if fleet}<dl>
           <div>
             <dt>Fighters</dt>
@@ -177,7 +261,7 @@
           </div>
         </dl>
         <nav aria-label="Fleet orders">
-          {#each ["load", "unload", "disband"] as choice}<ActionButton
+          {#each ["load", "unload", "split", "merge", "disband"] as choice}<ActionButton
               class="secondary"
               aria-pressed={operation === choice}
               onclick={() => (operation = choice as typeof operation)}
@@ -185,10 +269,14 @@
                 ? "Load"
                 : choice === "unload"
                   ? "Unload"
-                  : "Disband"}</ActionButton
+                  : choice === "split"
+                    ? "Split"
+                    : choice === "merge"
+                      ? "Merge"
+                      : "Disband"}</ActionButton
             >{/each}
         </nav>
-        {#if operation !== "disband"}<div class="counts">
+        {#if operation === "load" || operation === "unload"}<div class="counts">
             <label
               >Infantry to {operation}<input
                 aria-label={`Infantry to ${operation}`}
@@ -216,6 +304,60 @@
               ? "Reserve surface infantry for embarkation."
               : "Return embarked infantry to this system’s surface."} The transfer
             settles at its scheduled tick. Orbit and surface must remain yours.
+          </p>
+        {:else if operation === "split"}<div class="counts">
+            <label
+              >Fighters to split<input
+                aria-label="Fighters to split"
+                type="number"
+                min="1"
+                max={fleet.fighters - 1}
+                step="1"
+                bind:value={splitFighters}
+              /></label
+            >
+            <label
+              >Infantry to split<input
+                aria-label="Infantry to split"
+                type="number"
+                min="0"
+                max={fleet.infantry}
+                step="1"
+                bind:value={splitInfantry}
+              /></label
+            >
+          </div>
+          {#if canSplit(fleet, splitFighters!, splitInfantry!)}<p
+              class="preview"
+            >
+              New fleet: {splitFighters} fighters · {splitInfantry} infantry. Fleet
+              {fleet.number} retains {fleet.fighters - splitFighters!} fighters ·
+              {fleet.infantry - splitInfantry!} infantry.
+            </p>{/if}
+          <p>
+            These forces form a new fleet at the scheduled tick. Both fleets
+            retain fighters and enough transport capacity; no forces return to
+            the system.
+          </p>
+        {:else if operation === "merge"}<label class="merge-target"
+            >Receiving fleet<select
+              aria-label="Receiving fleet"
+              bind:value={targetId}
+              ><option value="">Choose a fleet</option
+              >{#each fleets.filter((f) => f.id !== selected) as candidate}<option
+                  value={candidate.id}
+                  >Fleet {candidate.number} · {candidate.fighters} fighters · {candidate.infantry}
+                  infantry</option
+                >{/each}</select
+            ></label
+          >
+          {#if target}<p class="preview">
+              Fleet {target.number} after merge: {fleet.fighters +
+                target.fighters} fighters · {fleet.infantry + target.infantry} infantry.
+            </p>{/if}
+          <p>
+            The receiving fleet keeps its identity. This fleet joins it at the
+            scheduled tick; neither force returns to the system.
           </p>
         {:else}<p>
             Stationed at {star.name}. Disbanding returns these forces to the
@@ -259,13 +401,17 @@
     {#if orders.length}<section aria-label="Accepted fleet orders">
         <h3>Accepted orders</h3>
         {#each orders as o}<p>
-            {o.cargo === "load"
-              ? "Load"
-              : o.cargo === "unload"
-                ? "Unload"
-                : o.fleetId
-                  ? "Disband"
-                  : "Form"} · {o.cargo
+            {o.reorganization === "split"
+              ? "Split"
+              : o.reorganization === "merge"
+                ? "Merge"
+                : o.cargo === "load"
+                  ? "Load"
+                  : o.cargo === "unload"
+                    ? "Unload"
+                    : o.fleetId
+                      ? "Disband"
+                      : "Form"} · {o.cargo
               ? `${o.infantry} infantry`
               : `${o.fighters} fighters · ${o.infantry} infantry`} · tick {o.effectiveTick}
           </p>{/each}
@@ -281,21 +427,8 @@
       >{#if error && pending && onretry}<ActionButton
           disabled={busy}
           onclick={onretry}>Check fleet order</ActionButton
-        >{:else}<ActionButton
-          disabled={pending || !!invalid}
-          onclick={() =>
-            selected
-              ? operation === "disband"
-                ? ondisband(selected)
-                : oncargo(selected, operation, cargo!)
-              : onform(fighters!, infantry!)}
-          >{selected
-            ? operation === "load"
-              ? "Load infantry"
-              : operation === "unload"
-                ? "Unload infantry"
-                : "Disband fleet"
-            : "Form fleet"}</ActionButton
+        >{:else}<ActionButton disabled={pending || !!invalid} onclick={commit}
+          >{actionLabel}</ActionButton
         >{/if}
     </div>
   </footer>
@@ -379,7 +512,8 @@
     font-size: 14px;
     color: #c2d0d5;
   }
-  .counts input {
+  .counts input,
+  .merge-target select {
     min-width: 0;
     width: 100%;
     min-height: 48px;
@@ -391,6 +525,12 @@
     border: 1px solid #6b858b;
     padding: 8px;
   }
+  .merge-target {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+  }
   dl div {
     display: flex;
     justify-content: space-between;
@@ -400,6 +540,11 @@
   dd {
     margin: 0;
     font-weight: 700;
+  }
+  .preview {
+    color: #d3e8ec;
+    border-left: 2px solid #80bec5;
+    padding-left: 12px;
   }
   .outcome {
     color: #9becdd;
@@ -505,7 +650,8 @@
     .counts span {
       font-size: 20px;
     }
-    .counts input {
+    .counts input,
+    .merge-target select {
       font-size: 30px;
       min-height: 64px;
     }

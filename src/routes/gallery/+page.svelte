@@ -25,6 +25,7 @@
     focusFrame,
     fleetFrame,
     cargoFrame,
+    reorganizationFrame,
     observationFrame,
     observedTarget,
     legacyProductionView,
@@ -217,6 +218,8 @@
             onform={() => {}}
             ondisband={() => {}}
             oncargo={() => {}}
+            onsplit={() => {}}
+            onmerge={() => {}}
             onclose={() => {}}
             onretry={() => {}}
           />
@@ -243,11 +246,36 @@
             onform={() => {}}
             ondisband={() => {}}
             oncargo={() => {}}
+            onsplit={() => {}}
+            onmerge={() => {}}
             onclose={() => {}}
             onretry={() => {}}
           />
         </div>
       {/each}
+      <h2>Fleet reorganization · shared split and merge controls</h2>
+      {#each [false, true] as merge}{#each [2400, 3400] as time}{@const sample =
+            reorganizationFrame(time, merge)}
+          <h3>
+            {merge ? "Merge" : "Split"} · {time < 3200
+              ? "accepted"
+              : "complete"}
+          </h3>
+          <div
+            style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"
+          >
+            <SystemFleets
+              view={sample}
+              starId={sample.own.home!}
+              onform={() => {}}
+              ondisband={() => {}}
+              oncargo={() => {}}
+              onsplit={() => {}}
+              onmerge={() => {}}
+              onclose={() => {}}
+            />
+          </div>
+        {/each}{/each}
       <h2>Stellar observations · entitled report states</h2>
       {#each [0, 1200, 3400] as time}<div
           style="max-width:420px;padding:20px;border:1px solid #42616d;margin-bottom:20px"
