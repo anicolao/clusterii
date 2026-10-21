@@ -1,0 +1,209 @@
+{
+  "id": "selected-history-lab",
+  "title": "Inspect selected-history consent before and after acceptance",
+  "inventory": [
+    "UX-10",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer inspects the recipient's invitation and accepted projections in the shipped Conversations component. The existing lab scenario derives these views through shared conversation reducers. Timeline seeking is explicitly a presentation harness, not a delivered accept command, authenticated recipient grant or end-to-end encryption proof. Its command callbacks remain inert; the live privacy/service assertions remain separate and unchanged.",
+  "source": {
+    "commit": "a636bffb739ac15d1830a0f9d5ec715e78285619",
+    "dirty": true,
+    "spec": "tests/browser/sharing-lab.story.spec.ts",
+    "specSha256": "da75c94ab03635ab464653095d5c820f029f73754e812228e65702fd763e4397"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "presentation-clock",
+      "description": "Freeze browser playback only. Shared reducers derive the existing selected-history views; no authenticated account, live command, service clock or stored grants are replaced.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "review-scope",
+      "description": "Select the recipient's sharing scenario and focus each real Accept invitation control without committing consent through an inert lab callback.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both invitation views disclose one selected earlier message and explain that acceptance grants neither alliance nor military access.",
+      "verifications": [
+        "Before consent, only the selected message identifier is disclosed; the earlier private contents and authorized message list are absent."
+      ],
+      "views": [
+        {
+          "player": "Developer · recipient in standard motion",
+          "image": "002-review-scope-1-developer-recipient-in-standard-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · recipient in reduced motion",
+          "image": "002-review-scope-2-developer-recipient-in-reduced-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pending",
+      "description": "Seek to the existing pending-acceptance specimen. This timeline action is not a live acceptance request.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both panes report the same pending campaign acknowledgement.",
+      "verifications": [
+        "Before consent, only the selected message identifier is disclosed; the earlier private contents and authorized message list are absent.",
+        "Pending disables both consent and decline without exposing the selected contents."
+      ],
+      "views": [
+        {
+          "player": "Developer · recipient in standard motion",
+          "image": "003-pending-1-developer-recipient-in-standard-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · recipient in reduced motion",
+          "image": "003-pending-2-developer-recipient-in-reduced-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acceptance-motion",
+      "description": "Inspect the actual acceptance feedback at 50 ms in standard motion and its settled 180 ms reduced-motion counterpart; use Home to read the same authorized message from its beginning.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion panes report the exact accepted-membership outcome despite different presentation times.",
+      "verifications": [
+        "The same single selected message and sharing disclosure exist in each motion mode."
+      ],
+      "views": [
+        {
+          "player": "Developer · recipient in standard motion",
+          "image": "004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 2 animation(s), 50/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · recipient in reduced motion",
+          "image": "004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 2 animation(s), 50/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accepted-history",
+      "description": "Seek to the reducer-accepted recipient projection and use keyboard Home to read the complete selected message and its sharing provenance.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both panes show the same accepted membership feedback and selected earlier private note.",
+      "verifications": [
+        "Acceptance removes the invitation controls and exposes no extra messages or unselected history."
+      ],
+      "views": [
+        {
+          "player": "Developer · recipient in standard motion",
+          "image": "005-accepted-history-1-developer-recipient-in-standard-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · recipient in reduced motion",
+          "image": "005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reset-scope",
+      "description": "Reset the lab by keyboard and recover the unaccepted scope without retaining previously displayed message contents.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both panes return to enabled invitation controls with no prior acknowledgement text.",
+      "verifications": [
+        "Before consent, only the selected message identifier is disclosed; the earlier private contents and authorized message list are absent.",
+        "Reset restores the initial scenario rather than preserving accepted membership."
+      ],
+      "views": [
+        {
+          "player": "Developer · recipient in standard motion",
+          "image": "006-reset-scope-1-developer-recipient-in-standard-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · recipient in reduced motion",
+          "image": "006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+          "verifications": [
+            "The actual conversation surface and commitment footer remain contained; conversation details use their bounded scroll region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}

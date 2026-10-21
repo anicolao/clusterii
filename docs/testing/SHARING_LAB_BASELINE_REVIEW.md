@@ -1,0 +1,13 @@
+# Selected-history lab candidate review
+
+Mode: separate generation, not verification. Source: `sharing-lab.story.spec.ts`, the shipped Conversations component and existing shared-reducer scenario. Local renderer: darwin-arm64, pinned Playwright Chromium and shared renderer arguments. No existing baselines are replaced.
+
+The first generation rejected an incomplete motion declaration: accepted membership mounts two real Feedback animations, including the history feedback, while invitation/pending mounts one. The declaration now requires the exact count and finite 180 ms duration. Failure evidence remains at `/tmp/cluster-sharing-lab-motion-before` and `/tmp/cluster-sharing-lab-generation.log`. Nothing was suppressed or loosened.
+
+The next candidate review found automatic following clipped the beginning of the authorized message in phone/short views. Those candidates remain at `/tmp/cluster-sharing-lab-scroll-before`. The final story reads from keyboard Home and asserts containment of the entire message list, including original author and sharing provenance. This changes sixteen candidate captures; twenty-four are byte-identical.
+
+Final generation passes four viewport journeys in 12.4 seconds (`/tmp/cluster-sharing-lab-generation3.log`). All forty ordered candidates, comprising twenty-three distinct images, were inspected using phone/desktop/short sheets and magnified 4K component crops. Before consent only Message 1 and the inviter are disclosed. Pending feedback leaves contents absent and consent controls disabled. Accepted views show exactly the selected earlier note and “Selected earlier history · shared by Envoy 1”; they do not show unselected later messages. Keyboard focus, full commitment footer and the bounded message region remain visible. The 50 ms standard reveal and 180 ms reduced-motion view have identical message facts; settled feedback remains unchanged. Reset restores invitation scope and removes contents.
+
+Promote these new candidates only for separate exact verification. The command callbacks are inert in this component lab; timeline inspection is not authenticated acceptance or recipient-access certification. This implementer review is not independent visual acceptance. Linux/current-head, exact preview revision and the inherited identity-raster diagnosis remain open.
+
+Exact local comparison passes four viewport journeys and all 40 reviewed captures in 12.7 seconds (`/tmp/cluster-sharing-lab-exact.log`); four generated narratives are archived. Type checks report zero errors/warnings; lint and nine policy/clock/catalogue guards pass. Linux/current-head and independent acceptance remain open.
