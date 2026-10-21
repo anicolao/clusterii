@@ -17,7 +17,14 @@ for(const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['sho
  const tray=page.getByRole('dialog',{name:'Campaign history panel'});
  await expect(tray.locator('summary')).toHaveCount(10);
  const back=tray.getByRole('button',{name:'Return to galaxy'});
- await tray.getByRole('region',{name:'Saved campaign records'}).focus();await page.keyboard.press('Shift+Tab');await expect(back).toBeFocused();await page.keyboard.press('Tab');await expect(tray.getByRole('region',{name:'Saved campaign records'})).toBeFocused();
+ // The briefing entry precedes the bounded records. Verify both directions
+ // and the modal wrap, rather than assuming records are the first control.
+ const briefing=tray.getByRole('button',{name:'Since your last visit',exact:true});
+ const records=tray.getByRole('region',{name:'Saved campaign records'});
+ await records.focus();await page.keyboard.press('Shift+Tab');await expect(briefing).toBeFocused();
+ await page.keyboard.press('Shift+Tab');await expect(back).toBeFocused();
+ await page.keyboard.press('Tab');await expect(briefing).toBeFocused();
+ await page.keyboard.press('Tab');await expect(records).toBeFocused();
  const rail=await back.boundingBox();expect(rail!.y+rail!.height).toBeLessThanOrEqual(height);expect(rail!.y).toBeGreaterThan(0);
  await tray.getByRole('group',{name:'Campaign record 14',exact:true}).locator('summary').click();
  await expect(tray.getByRole('group',{name:'Campaign record 14',exact:true}).getByText('History envoy',{exact:true})).toBeVisible();
