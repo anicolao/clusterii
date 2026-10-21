@@ -172,3 +172,10 @@ Five independent accounts admit through ordinary UI to two campaigns, observe sc
 - [desktop multiplayer start and Continue](stories/campaign-scheduled-start/desktop/darwin-arm64/README.md).
 - [large multiplayer start and Continue](stories/campaign-scheduled-start/large/darwin-arm64/README.md).
 - [short multiplayer start and Continue](stories/campaign-scheduled-start/short/darwin-arm64/README.md).
+
+Pinned Linux receipt comparison passes eight new journeys within the 56-story cohort:
+
+- phone: [Identity mismatch](stories/identity-receipt-recovery/phone/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/phone/linux-arm64/README.md).
+- desktop: [Identity mismatch](stories/identity-receipt-recovery/desktop/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/desktop/linux-arm64/README.md).
+- large: [Identity mismatch](stories/identity-receipt-recovery/large/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/large/linux-arm64/README.md).
+- short: [Identity mismatch](stories/identity-receipt-recovery/short/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/short/linux-arm64/README.md).

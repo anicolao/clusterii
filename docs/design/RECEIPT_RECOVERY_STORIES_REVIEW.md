@@ -11,3 +11,5 @@ The procedural suite's encrypted IndexedDB cleanup regression is preserved as an
 Base: #40, `feat/session-recovery-stories`. Local exact comparison, pinned Linux review/comparison, current-head application CI, independent composition/motion review and hosted-provider acceptance remain gates. Proposed rules remain under review. No PR is merged.
 
 Exact local receipt comparison passes eight journeys/48 captures. All 20 existing identity, validation, conflict, pending/retry and keyboard-return stories pass against unchanged baselines; no existing image was regenerated. The predecessor procedural spec is removed only after these checks and the isolated IndexedDB regression pass.
+
+Pinned Linux exact comparison at 6c2ea95/run39640350712 passes all 56 journeys in 13.1 minutes. The eight receipt stories/48 captures are archived with decoded pixels checked again against reviewed Linux baselines. Current-head application CI, independent full visual/motion review and hosted Google acceptance remain separate gates.
