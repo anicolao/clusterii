@@ -294,3 +294,10 @@ Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | C
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Review new fleet formation candidates across four viewports before strict comparison; preserve all procedural and inherited pixel assertions.
 
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Archive four exact fleet formation/disband walkthroughs with private reservations, repeat-safe conservation and scoped remaining gates.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-sharing-stories.
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-credit-stories.
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-briefing-stories.
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-construction-stories.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-fleet-formation-stories.
