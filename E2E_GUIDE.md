@@ -24,6 +24,7 @@ The helper owns counters, filenames, assertions, captures and Markdown links. Di
 - `tests/recovery-store.test.ts`: isolated production IndexedDB integration (`bun run test:browser-storage`); this preserves storage semantics without presenting a non-player harness as an illustrated journey.
 - `tests/browser/story-baselines/<story>/<viewport>/<platform>/`: reviewed PNGs and renderer manifests.
 - `test-results/stories/<story>/<viewport>/<platform>/`: the current run's captures, manifest and generated `README.md`/JSON sequence. Failed runs never produce a passed story document.
+- Each settled PNG also has a `.layout.json` sidecar containing read-only visible text/font/ancestor geometry evidence. It is captured after the PNG and never changes visual acceptance or baselines; retain it with failed artifacts when diagnosing renderer differences.
 - `docs/testing/stories/`: committed passing illustrated documents selected for review, retaining their generated provenance. The archive verifies decoded pixels again and links the corresponding reviewed baseline images, recording actual capture hashes without duplicating image files.
 - [STORY_INVENTORY.md](docs/testing/STORY_INVENTORY.md): UX-01–16 mapping, migrated coverage and remaining gaps.
 

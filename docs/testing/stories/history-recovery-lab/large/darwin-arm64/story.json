@@ -1,0 +1,241 @@
+{
+  "id": "history-recovery-lab",
+  "title": "Inspect history loading, recovery and bounded record reading",
+  "inventory": [
+    "UX-12",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer uses the actual CampaignHistory component with the existing reducer-derived lab records. Browser time controls presentation only; these deterministic specimens are not network recovery, recipient authorization, pagination or hosted service evidence. The live history story remains separate.",
+  "source": {
+    "commit": "39ad70bd7d2939ff62e974411311dbf823945d34",
+    "dirty": true,
+    "spec": "tests/browser/history-lab.story.spec.ts",
+    "specSha256": "bf77182039838400bcb62ab688d49c86b462ddc46ef39af23374d72b942e4766"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "presentation-clock",
+      "description": "Freeze browser playback only; no authenticated campaign, remote reads or service clock are replaced.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "loading",
+      "description": "Open the history scenario and inspect pending loading without invented records.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion panes report “Loading campaign records…” identically.",
+      "verifications": [
+        "No records are presented as recovered while loading or interrupted.",
+        "Latest is disabled while the return control remains available."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard history presentation",
+          "image": "002-loading-1-developer-standard-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced history presentation",
+          "image": "002-loading-2-developer-reduced-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interrupted",
+      "description": "Seek to interrupted recovery and read the retry remedy in both panes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion panes report “History could not be recovered. Retry keeps your place.” identically.",
+      "verifications": [
+        "No records are presented as recovered while loading or interrupted.",
+        "Retry is a named enabled control and records are not replaced with a false empty-history result."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard history presentation",
+          "image": "003-interrupted-1-developer-standard-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced history presentation",
+          "image": "003-interrupted-2-developer-reduced-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retry",
+      "description": "Activate the standard pane's real retry callback by keyboard and inspect its loading frame.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion panes report “Loading campaign records…” identically.",
+      "verifications": [
+        "No records are presented as recovered while loading or interrupted.",
+        "The callback advances the lab to retry time and removes the stale error while latest remains disabled."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard history presentation",
+          "image": "004-retry-1-developer-standard-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced history presentation",
+          "image": "004-retry-2-developer-reduced-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recovered",
+      "description": "Seek to the recovered frame and inspect both original record identities and distinct paused/assembling descriptions.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both panes expose record three and record two, with no loading or error.",
+      "verifications": [
+        "Recovery enables latest and identifies the beginning of available history without inventing earlier records."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard history presentation",
+          "image": "005-recovered-1-developer-standard-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced history presentation",
+          "image": "005-recovered-2-developer-reduced-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-records",
+      "description": "Open both actual record disclosures with Enter and use the bounded record region's keyboard scrolling.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both records retain their campaign name, one commander and original revision identities.",
+      "verifications": [
+        "The focused record region is bounded and reading never changes the scenario time or adds records."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard history presentation",
+          "image": "006-read-records-1-developer-standard-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced history presentation",
+          "image": "006-read-records-2-developer-reduced-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latest",
+      "description": "Request latest through the real component callback and recover the declared lab loading state.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion panes report “Loading campaign records…” identically.",
+      "verifications": [
+        "No records are presented as recovered while loading or interrupted.",
+        "Latest resets playback to zero and disables repeat loading while leaving return available."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard history presentation",
+          "image": "007-latest-1-developer-standard-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced history presentation",
+          "image": "007-latest-2-developer-reduced-history-presentation.png",
+          "verifications": [
+            "The labeled history specimen and footer remain contained while records scroll in their own bounded region.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}

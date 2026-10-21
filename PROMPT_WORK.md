@@ -232,5 +232,11 @@ Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | A
 Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | Archive all four passing live consent stories, register PR 53 and record exact local evidence with remaining acceptance gates.
 Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Propagate reviewed Linux identity-gallery baselines and preserved reviewer histories into lifecycle lab PR 48.
 Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 49.
-
+Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 50.
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/research-lab-stories.
+
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/history-lab-stories.
+
+Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Carry reviewed Linux research candidates and supervisory checkpoints into feat/history-lab-stories.
+
+Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Review and promote only new Linux history lab candidates from the completed instrumented run.
