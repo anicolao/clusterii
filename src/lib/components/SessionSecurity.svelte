@@ -12,8 +12,10 @@
   <h2>End every session</h2>
   <p>
     Confirm your Google identity to sign out here and on your other devices.
-    Your saved identity and campaigns remain. Unacknowledged orders may be
-    cancelled; unsaved drafts on those devices will be cleared.
+    Existing sign-ins lose access and cannot refresh it after confirmation. Wait
+    for completion before signing in again. Your saved identity and campaigns
+    remain. Unacknowledged orders may be cancelled; unsaved drafts on those
+    devices will be cleared.
   </p>
   <ActionButton class="secondary" disabled={pending} onclick={onconfirm}
     >{pending ? "Ending sessions…" : "Confirm with Google"}</ActionButton

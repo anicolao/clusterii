@@ -5,6 +5,7 @@ import {
   getAuth,
   connectAuthEmulator,
   signInWithCredential,
+  reauthenticateWithCredential,
   GoogleAuthProvider,
 } from "firebase/auth";
 import {
@@ -802,3 +803,65 @@ for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER
   expect(after[0].economy!.research.lastApplied).toEqual(order);expect(after[0].encryptionEpoch).toBe(2);
  }
 },120000);
+
+for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER_KMS_TEST!=='true'?test.skip:test)(`native credential revocation ${mode} rejects prior credentials, preserves campaign keys and keeps completed replay inert`,async()=>{
+ const name=`native-${mode}-${crypto.randomUUID()}`,a=await client(name),b=await client(name);await developer(a);await b.user.getIdToken(true);await saveIdentity(a);
+ const id=crypto.randomUUID();await campaignCommand(a,id,{kind:'campaign.create',expectedRevision:0,name:'Credential continuity',capacity:4,mode,development:true});await campaignCommand(a,id,{kind:'campaign.join',expectedRevision:1,faction:'heliac'},mode);
+ const before=(await httpsCallable(a.functions,'campaignKey')({gameId:id})).data as {kek:string};
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore(),identity=require('firebase-admin/auth').getAuth();
+ const originalToken=await b.user.getIdToken(),originalClaims=await identity.verifyIdToken(originalToken);
+ const operationId=crypto.randomUUID(),results=await Promise.all([a,b].map(c=>httpsCallable(c.functions,'revokeCredentials')({operationId})));
+ expect(results.some(r=>(r.data as {status:string}).status==='complete')).toBe(true);expect(results.every(r=>['pending','complete'].includes((r.data as {status:string}).status))).toBe(true);
+ const fence=(await db.doc(`sessionFences/${a.uid}`).get()).data(),record=(await db.doc(`sessionRevocations/${a.uid}/operations/${operationId}`).get()).data();expect(fence.status).toBe('complete');expect(record.protocol).toBe(2);expect(record.providerRevokedAfter).toBeGreaterThan(record.requestedCutoff);expect(fence.cutoff).toBe(record.providerRevokedAfter);
+ // Auth emulator grantToken does not consult validSince. Assert native revocation
+ // through Admin verification and the real service, without simulating refresh rejection.
+ let failure:unknown;try{await identity.verifyIdToken(originalToken,true);}catch(error){failure=error;}expect((failure as {code:string}).code).toBe('auth/id-token-revoked');
+ const {endCredentialSessions}=await import('../functions/src/credential-revocation');
+ let denied:unknown;try{await endCredentialSessions({auth:{uid:a.uid,token:originalClaims},data:{operationId}} as never);}catch(error){denied=error;}expect((denied as {code:string}).code).toBe('unauthenticated');
+ const validSince=(await identity.getUser(a.uid)).tokensValidAfterTime;
+ await new Promise(r=>setTimeout(r,Math.max(0,(fence.cutoff+1)*1000-Date.now()+25)));
+ const recovered=await client(name);await recovered.user.getIdToken(true);expect(recovered.kek).toBe(a.kek);expect((await getDoc(doc(recovered.firestore,'profiles',a.uid))).get('revision')).toBe(1);expect((await httpsCallable(recovered.functions,'campaignKey')({gameId:id})).data).toHaveProperty('kek',before.kek);
+ expect((await httpsCallable(recovered.functions,'revokeCredentials')({operationId})).data).toEqual({status:'complete'});expect((await identity.getUser(a.uid)).tokensValidAfterTime).toBe(validSince);expect((await db.doc(`sessionFences/${a.uid}`).get()).data()).toEqual(fence);expect((await db.collection(`sessionRevocations/${a.uid}/operations`).get()).size).toBe(1);
+},60000);
+
+test('native credential recovery recognizes a committed provider revocation after a worker dies before checkpoint',async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore(),identity=require('firebase-admin/auth').getAuth();
+ const {endCredentialSessions}=await import('../functions/src/credential-revocation');const name=`native-fault-${crypto.randomUUID()}`,a=await client(name);await saveIdentity(a);const operationId=crypto.randomUUID(),token=await identity.verifyIdToken(await a.user.getIdToken()),operation=db.doc(`sessionRevocations/${a.uid}/operations/${operationId}`);
+ const transaction=Object.getPrototypeOf(db).runTransaction.bind(db);let calls=0;
+ const stopped=spyOn(db,'runTransaction').mockImplementation(async(callback:(tx:unknown)=>Promise<unknown>,options:unknown)=>{const call=++calls;return transaction(async(tx:unknown)=>{const result=await callback(tx);if(call===2)throw new Error('Stopped after native revocation');return result;},options);});
+ try{let failure:unknown;try{await endCredentialSessions({auth:{uid:a.uid,token},data:{operationId}} as never);}catch(error){failure=error;}expect((failure as Error).message).toBe('Stopped after native revocation');}finally{stopped.mockRestore();}
+ const before=(await identity.getUser(a.uid)).tokensValidAfterTime;const pending=(await operation.get()).data();expect(pending.status).toBe('pending');expect(pending.providerRevokedAfter).toBeUndefined();expect(Date.parse(before)/1000).toBeGreaterThan(pending.requestedCutoff);
+ await operation.update({leaseUntil:0});await new Promise(r=>setTimeout(r,Math.max(0,Date.parse(before)+1000-Date.now()+25)));
+ const fresh=await reauthenticateWithCredential(a.user,GoogleAuthProvider.credential(JSON.stringify({sub:name,email:`${name}@example.test`,email_verified:true})));const recoveredToken=await identity.verifyIdToken(await fresh.user.getIdToken());
+ expect(await endCredentialSessions({auth:{uid:a.uid,token:recoveredToken},data:{operationId}} as never)).toEqual({status:'complete'});expect((await identity.getUser(a.uid)).tokensValidAfterTime).toBe(before);expect((await operation.get()).get('status')).toBe('complete');expect((await db.collection(`sessionRevocations/${a.uid}/operations`).get()).size).toBe(1);expect((await db.doc(`profiles/${a.uid}`).get()).get('revision')).toBe(1);
+},60000);
+
+
+test('native credential expired worker cannot resume provider mutation or complete its replacement',async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore(),identity=require('firebase-admin/auth').getAuth();
+ const {endCredentialSessions}=await import('../functions/src/credential-revocation');const a=await client(`native-stale-${crypto.randomUUID()}`);await saveIdentity(a);const operationId=crypto.randomUUID(),token=await identity.verifyIdToken(await a.user.getIdToken()),request={auth:{uid:a.uid,token},data:{operationId}} as never,operation=db.doc(`sessionRevocations/${a.uid}/operations/${operationId}`);
+ const getUser=identity.getUser.bind(identity);let calls=0,release!:()=>void,reached!:()=>void;const held=new Promise<void>(r=>release=r),ready=new Promise<void>(r=>reached=r);
+ const paused=spyOn(identity,'getUser').mockImplementation(async(uid:string)=>{const result=await getUser(uid);if(++calls===2){reached();await held;}return result;});
+ const old=endCredentialSessions(request).then(value=>({value,error:undefined}),error=>({value:undefined,error}));
+ try{
+  await ready;const first=(await operation.get()).data();expect(first.status).toBe('pending');await operation.update({leaseUntil:0});
+  expect(await endCredentialSessions(request)).toEqual({status:'complete'});const completed=(await operation.get()).data(),fence=(await db.doc(`sessionFences/${a.uid}`).get()).data(),providerTime=(await getUser(a.uid)).tokensValidAfterTime;
+  expect(completed.leaseToken).not.toBe(first.leaseToken);expect(completed.providerRevokedAfter).toBeGreaterThan(completed.requestedCutoff);
+  release();const stale=await old;expect(stale.error.code).toBe('aborted');expect(stale.value).toBeUndefined();
+  expect((await operation.get()).data()).toEqual(completed);expect((await db.doc(`sessionFences/${a.uid}`).get()).data()).toEqual(fence);expect((await getUser(a.uid)).tokensValidAfterTime).toBe(providerTime);expect((await db.collection(`sessionRevocations/${a.uid}/operations`).get()).size).toBe(1);
+ }finally{release();await old;paused.mockRestore();}
+},60000);
+
+
+test('native credential completion interrupted after its mirror remains fenced and recovers without revoking a later sign-in',async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore(),identity=require('firebase-admin/auth').getAuth();
+ const {endCredentialSessions}=await import('../functions/src/credential-revocation');const {requireCurrentSession}=await import('../functions/src/session-security');const name=`native-mirror-${crypto.randomUUID()}`,a=await client(name);await saveIdentity(a);const operationId=crypto.randomUUID(),token=await identity.verifyIdToken(await a.user.getIdToken()),operation=db.doc(`sessionRevocations/${a.uid}/operations/${operationId}`);
+ const transaction=Object.getPrototypeOf(db).runTransaction.bind(db);let calls=0;
+ const stopped=spyOn(db,'runTransaction').mockImplementation(async(callback:(tx:unknown)=>Promise<unknown>,options:unknown)=>{const call=++calls;return transaction(async(tx:unknown)=>{const result=await callback(tx);if(call===3)throw new Error('Stopped after complete mirror');return result;},options);});
+ try{let failure:unknown;try{await endCredentialSessions({auth:{uid:a.uid,token},data:{operationId}} as never);}catch(error){failure=error;}expect((failure as Error).message).toBe('Stopped after complete mirror');}finally{stopped.mockRestore();}
+ const pending=(await operation.get()).data(),before=(await identity.getUser(a.uid)).tokensValidAfterTime;expect(pending.status).toBe('pending');expect(pending.providerRevokedAfter).toBeGreaterThan(pending.requestedCutoff);
+ const mirror=require('firebase-admin/database').getDatabaseWithUrl(`https://${projectId}-default-rtdb.firebaseio.com`).ref(`sessionFences/${a.uid}`);expect((await mirror.get()).val()).toEqual({cutoff:pending.cutoff,status:'complete'});
+ await new Promise(r=>setTimeout(r,Math.max(0,(pending.cutoff+1)*1000-Date.now()+25)));const fresh=await reauthenticateWithCredential(a.user,GoogleAuthProvider.credential(JSON.stringify({sub:name,email:`${name}@example.test`,email_verified:true})));const claims=await identity.verifyIdToken(await fresh.user.getIdToken());
+ let denied:unknown;try{await requireCurrentSession({uid:a.uid,token:claims});}catch(error){denied=error;}expect((denied as {code:string}).code).toBe('unauthenticated');
+ await operation.update({leaseUntil:0});expect(await endCredentialSessions({auth:{uid:a.uid,token:claims},data:{operationId}} as never)).toEqual({status:'complete'});expect((await identity.getUser(a.uid)).tokensValidAfterTime).toBe(before);await requireCurrentSession({uid:a.uid,token:claims});expect((await operation.get()).get('status')).toBe('complete');expect((await db.doc(`profiles/${a.uid}`).get()).get('revision')).toBe(1);
+},60000);

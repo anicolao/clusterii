@@ -14,7 +14,7 @@ The client retains only the operation UUID in sessionStorage. After an interrupt
 
 ## Scope and remaining gates
 
-This slice revokes **Cluster access**, not Firebase or Google account credentials. Firebase refresh credentials remain issued; their unchanged auth_time is rejected at Cluster data, command and key boundaries. Native provider credential revocation and full compromise recovery remain account-lifecycle gates. Current KEKs and authorized history are unchanged: key rotation and history rewrapping are still required by TECHNICAL_CONTRACT.md. Previously downloaded information remains disclosed. Public campaigns stay closed.
+This PR #14 slice revokes **Cluster access**, not Firebase or Google account credentials. The [native credential successor](PROVIDER_SESSION_REVIEW.md) adds Firebase revocation to the current client. Firebase refresh credentials remain issued; their unchanged auth_time is rejected at Cluster data, command and key boundaries. Native provider credential revocation and full compromise recovery remain account-lifecycle gates. Current KEKs and authorized history are unchanged: key rotation and history rewrapping are still required by TECHNICAL_CONTRACT.md. Previously downloaded information remains disclosed. Public campaigns stay closed.
 
 Older retained clients receive access denials after revocation and must sign out and sign in again; this client observes the fence and clears its session automatically. Hosted real-account Google reauthentication, independent security/visual review and exact-head CI remain unverified. Operation-retention/account-deletion policy remains milestone 12 work.
 

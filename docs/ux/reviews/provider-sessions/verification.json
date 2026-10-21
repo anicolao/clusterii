@@ -1,0 +1,74 @@
+{
+  "types": "pass",
+  "lint": "pass",
+  "units": {
+    "passed": 22,
+    "assertions": 345
+  },
+  "service": {
+    "passed": 7,
+    "assertions": 155,
+    "seconds": 34.85,
+    "providers": [
+      "mock",
+      "AES-256-GCM with live Cloud KMS"
+    ],
+    "log": "/tmp/cluster-provider-live.log",
+    "faults": [
+      "concurrent initiation",
+      "lost provider checkpoint",
+      "expired worker resumes after replacement",
+      "interrupted completion after RTDB mirror",
+      "completed replay preserves later sign-in"
+    ]
+  },
+  "browser": {
+    "twoDevicePassed": 1,
+    "seconds": 22.8,
+    "log": "/tmp/cluster-provider-test3.log",
+    "galleryLabPassed": 5,
+    "galleryLabSeconds": 8.5,
+    "galleryLabLog": "/tmp/cluster-provider-live.log",
+    "viewports": [
+      "393x852",
+      "1440x1000",
+      "1280x720",
+      "3840x2160"
+    ],
+    "checks": [
+      "actual Google emulator confirmation and cancellation",
+      "persisted operation reload and retry",
+      "two-device session clearing",
+      "saved identity recovery",
+      "focus restoration",
+      "target overlap and containment",
+      "bounded document",
+      "reduced motion in shared lab"
+    ]
+  },
+  "visualReview": "Implementation agent inspected four-size controls and phone error/recovery; independent review pending",
+  "limits": [
+    "Auth emulator refresh handler does not enforce validSince; hosted refresh rejection unverified",
+    "hosted Google acceptance pending",
+    "external Auth API has no transactional Firestore fence token",
+    "account key rotation and history rewrapping remain open",
+    "latest-head CI pending"
+  ],
+  "defaultService": {
+    "passed": 19,
+    "skippedLiveOnly": 9,
+    "assertions": 1043,
+    "seconds": 55.56,
+    "log": "/tmp/cluster-provider-default.log"
+  },
+  "deployment": {
+    "project": "clusterii-20261020",
+    "functions": [
+      "revokeCredentials",
+      "revokeSessions"
+    ],
+    "status": "deployed before preview",
+    "log": "/tmp/cluster-provider-deploy.log",
+    "humanSessionsRevoked": false
+  }
+}

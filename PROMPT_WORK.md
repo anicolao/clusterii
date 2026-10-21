@@ -70,3 +70,5 @@ Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | R
 Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Await faulted Firestore operations before exact error assertions and retain full-cohort plus renewed live-KMS recovery evidence.
 
 Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Continue Prompt 30 with private research orders, tick-time settlement, retained progress, real-provider migration and four-size UI evidence.
+
+Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Continue Prompt 30 with native Firebase credential revocation, fenced interruption recovery and two-device production UI evidence.

@@ -98,7 +98,19 @@ export const observeAccount = (
               void signOut(auth);
             }
           })
-          .catch(() => {});
+          .catch((error) => {
+            if (
+              current === generation &&
+              [
+                "auth/user-token-expired",
+                "auth/invalid-user-token",
+                "auth/user-disabled",
+              ].includes(error?.code)
+            ) {
+              sessionStorage.setItem("cluster-session-ended", "true");
+              void signOut(auth);
+            }
+          });
       },
       () => {},
     );
@@ -131,10 +143,12 @@ export async function signOutAllDevices() {
     { status: string }
   >(
     functions,
-    "revokeSessions",
+    "revokeCredentials",
   )({ operationId });
   if (result.data.status !== "complete")
-    throw new Error("Sign-out is not complete. Try again.");
+    throw new Error(
+      "Sign-out is still running. Confirm your identity and retry the same request.",
+    );
   sessionStorage.removeItem(slot);
   if (auth.currentUser) sessionStorage.setItem("cluster-session-ended", "true");
   await signOut(auth);
