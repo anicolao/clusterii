@@ -677,3 +677,31 @@ Independent phone capture reviewed against UX return-briefing requirements: expl
 New #32 c70bbe2 correctly stacks on conversation-history, attached to supervisor chat; publication/documentation green, verification pending with #29–31. Logs through07:37 carried. Agent already works on dirty feat/return-entry successor in same checkout, so no claim of an independent exact-head type run this checkpoint. Independent committed-source inspection confirms contiguous revisions are now required across the entire baseline-to-snapshot period before summarizing; missing-middle issue is addressed in source.
 
 Final #32 documented evidence:80 units/1430, default service30/1684, both-provider130, nine ordinary-player/lab cases1.3min and expanded seven-case lab23.3s. Consumers before admission/rules, six ACTIVE Node22 and exact rule readback reported. Sampled portrait composition previously reviewed; denser illustrated mixed-category composition and automatic entry explicitly remain incomplete in #32. Agent actively closes those gaps in successor, diagnosing a lab failure while ordinary journeys pass. No stall/duplicate handoff or release acceptance. Disk861MiB; existing resource constraint remains. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 07:57 Toronto
+
+New #33 c0ee1ed correctly stacks on return-briefing, attached to supervisor chat. Clean committed checkout independently passed npm run check: zero Svelte errors/warnings and backend TypeScript. #29–32 verification remains running with publish/documentation green. Logs through07:47 carried. Final implementer evidence reports81 units/1437, nine both-provider browser/lab cases1.4min and final seven affected lab cases23.7s after container typography correction; no new backend protocol.
+
+Independent entry diff preserves pending-command precedence and consumes explicit Continue/directory return intent; same-tick/reconnect/plain-link behavior is distinguished in review notes. Independent mixed-phone lab capture shows actual shared illustrated control reports, bounded scrolling and persistent save/back controls. It is a component scenario, not proof of all live mixed outcomes. Loss priority, other report categories and complete hosted/release acceptance remain scoped review gates. Disk432MiB; existing resource direction applies, agent active with no duplicate handoff. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 08:07 Toronto
+
+#29 replacement verification green. #30/#31 fail four identical campaign-collision browser cases (62/63 others passed,6skipped); #32/#33 pending with publish/documentation green. Independent failed-log inspection retained both logs. Agent actively scoped next milestone8 slice to credit offers, leaving coupled alliance/coalition combat for later; no stall. Disk6.5GiB. New handoff:
+
+Reviewer CI finding at 08:07 Toronto: #29 2f446ab is green; #30 67244aa run39587974767 and #31 30fb0ff run39589188027 both fail all four campaign-collision viewport cases in receipt-binding.spec.ts:16. Logs retained at /tmp/cluster30-review-failure.log and /tmp/cluster31-review-failure.log. Choose your faction never appears after the preserved-galaxy collision recovery flow; diagnose the actual trace/state and whether durable outbox recovery or the fixture violates command identity. Preserve original proposed payload and retry identity/conservation assertions; do not just weaken the assertion or extend timeout. Fix first on #30 and propagate through successors, retaining failure/pass evidence and attributed logs; carry latest meta-prompts.md, commit/push, no merge. Continue other work around the diagnosis without duplicating prior resolved handoffs.
+
+
+## Reviewer progress — 2026-10-21 08:17 Toronto
+
+#30/#31 failures unchanged; #32/#33 verification pending, publish/documentation green. Pane confirms08:07 handoff is queued and agent actively diagnosing durable outbox, receipt matching and campaign-collision fixture; no duplicate prompt or stall intervention. Credit-offer successor remains early/uncommitted alongside diagnosis.
+
+Preliminary offer-source inspection finds issuer funds reserved on offer, counterpart funds reserved on acceptance, bound counterpart authorization, tick settlement/withdrawal/expiry and participant-only projections. These are implementation observations, not approved policy or completed validation; expiry/cutoff, overflow/refund conservation, concurrency/replay and private recovery need dedicated evidence before acceptance. No new PR or rendered offer evidence yet. Disk6.3GiB. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 08:27 Toronto
+
+Collision repair pushed #30 aac1d04 and propagated #31 19e896c; propagation through #32/#33 actively underway. Independent code review confirms server-confirmed mismatched immutable receipt retires only the exact encrypted outbox record, cached mismatch waits for server confirmation, full-command comparison protects same-UUID replacement, and metadata receipt delivery is guarded once. Strict digest validation remains. Independent npm run check on clean #30 passes zero Svelte errors/warnings and backend TypeScript; retained browser log confirms13passed1.5min.
+
+Root cause documented: mismatched receipt cleared in-memory pending state but left durable record, blocking the preserved draft's fresh submission. Extended evidence covers original campaign unchanged and replacement payload preservation. Replacement full CI remains required; no acceptance. Agent actively propagating with credit-offer work safely stashed, no duplicate handoff. Disk5.9GiB. Carry checkpoint into related committed/pushed logs; no merge.
