@@ -270,3 +270,49 @@ Agent has progressed to feat/provider-session-revocation based on research, addr
 ## Reviewer progress — 2026-10-20 22:17 Toronto
 
 #16 ba18bd7 and #17 b2c0c0c unchanged with publication/documentation green and verification still running in combined emulator-service/browser step. No new failure observed. Agent continues provider-session work normally; uncommitted source/tests and retained captures, no new PR. Inspected added lease recheck immediately before provider mutation and fault-test coverage for committed provider revocation before checkpoint, expired worker takeover and mirror-completion interruption. Retained provider-test3 log reports 39 assertions and a two-device browser pass in 22.8 seconds; final cross-store test is newly added and not yet accepted. These are controlled emulator boundaries, not hosted account/provider certification. No independent full security acceptance or new actionable defect established. Avoided duplicate queued instructions and interruption. Carry this checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-20 22:28 Toronto
+
+New PR #18 774ecc8 correctly stacks on research-selection and is attached to supervisor chat. Provider-session worktree clean, publication/documentation green, verification pending; #16/#17 verification also still pending. Independently ran npm run check successfully, zero Svelte errors/warnings and backend TypeScript success. Reviewed final provider-session evidence/scope: seven combined mock/live-KMS tests with 155 assertions and default service cohort 19 passes/1043 assertions are implementer-run evidence. Documentation explicitly retains Auth emulator refresh-token limitation and nontransactional external-provider fencing limitation, plus hosted Google/refresh rejection and account-key rotation gates. Inspected phone session control: consequence copy, wait-for-completion instruction, confirmation and Close are readable and contained. Scoped sample, not full security or visual acceptance.
+
+Agent has progressed to feat/system-construction based on #18 and is generating dedicated market/camp/base/station art while building the actual construction control. Source/art are in progress, no construction acceptance or new PR yet. No stall or duplicate intervention. Existing instructions require asset provenance, shared gallery/lab, authoritative queue/cost/cancel/settlement/privacy evidence and committed/pushed logs; carry this checkpoint with related work. No merge.
+
+
+## Reviewer progress — 2026-10-20 22:37 Toronto
+
+#16 ba18bd7 verification now passes, closing the previously reported full-suite CI regression. #17/#18 verification remains running; documentation/publication green. Agent actively implementing construction in successor worktree with ordinary four-player browser journey legitimately waiting for real start. No new PR or stall.
+
+Preliminary construction source review against RULES_SPEC: exact rational quote rounding, reservation at admission, bounded per-layer serial queues, future tick admission, first advance after start, cancellation refund distinction and ownership checks are explicit. This is in-progress source review, not complete gameplay acceptance; capture/combat integration and dividend privacy/rounding require final evidence. Dedicated market/camp/base/station WebPs and provenance with generation prompts are present; production component is shared with gallery/lab. Agent reports mock service 59 assertions and four-size lab pass. Actual production UI completion, both-provider recovery and final rendered comparison remain pending. Carry this checkpoint with related committed/pushed logs under existing instructions. No duplicate handoff, merge or release acceptance.
+
+
+## Reviewer progress — 2026-10-20 22:47 Toronto
+
+#16 remains green; #17/#18 verification still running with publication/documentation green. Construction remains uncommitted in successor, no new PR. Agent is diagnosing a completion-browser failure: explicit test-clock settlement returned zero rather than five ticks after ordinary UI admission. No completion pass is claimed, and active investigation is not a stall. Ordinary timed build/cancel journey and independent completion journey remain distinct.
+
+Reviewed dividend source: uses beginning-of-tick markets, excludes builder, validates retained surface ownership, apportions one 10-percent paid-cost pool and routes shares through wallet/escrow with checked arithmetic. Editable focus and actual capture interactions remain explicitly outside this slice. RULES_SPEC change only replaces obsolete implementation-status prose with delivery-table link, retaining proposal status. Six gallery/lab checks are reported passing; documented geometry-helper correction separates scrollable developer documents from bounded player UI without removing player assertions. Final both-provider/service, actual completion renders and acceptance remain pending. No duplicate handoff while diagnosis is active; carry this checkpoint into related committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-20 22:57 Toronto
+
+#17 b2c0c0c now fully green; #18 verification pending. Agent stopped after context compaction with two explicit selected-model-capacity errors, not a code stall. Old queued handoffs have drained and are already resolved. Sent one recovery continuation on the same configured model, preserving existing work and background journey. Exact handoff:
+
+Reviewer recovery checkpoint: the model-capacity error stopped this turn. Retry the current construction work from its existing state; do not repeat historical handoffs. The old schema rollout instruction is already implemented and logged. PR #17 is now green; #18 verification remains pending. Resume diagnosing construction completion settlement (zero instead of five ticks), inspect existing background journey output first, preserve tests and drafts, then complete review evidence and stacked PR. Record this attributed continuation and current main meta-prompts.md in the related commit/push; never merge.
+
+Recovery prompt was delivered and immediately received the same selected-model-capacity error. Agent remains stopped, with one background terminal and uncommitted construction work preserved. No further prompt queued this checkpoint. Monitoring can retry availability on a later heartbeat; progress requires model capacity returning or a model switch. Logs cannot be claimed committed/pushed while the implementer is stopped. No merge.
+
+
+## Reviewer progress — 2026-10-20 23:07 Toronto
+
+#18 774ecc8 now fully green; #16/#17 previously green. Agent still stopped by capacity. Background browser cohort ended: production journey passes in 29.0 minutes, older lab geometry helper failure remains in that run; newer lab correction was separately reported passing. Construction completion remains unverified and edits preserved. Sent one availability retry with new evidence, exact handoff:
+
+Reviewer availability retry: resume the existing construction work and 22:57 recovery checkpoint if capacity has returned. PR #18 is now green. Background construction-browser.log finished with the production journey passing in 29.0 minutes and one lab geometry failure (the previously corrected document-scroll helper); reconcile against the newer passing lab run rather than repeating resolved work. Construction completion settlement remains unverified. Preserve current edits, carry main meta-prompts.md into the next commit, and continue without merging.
+
+Availability retry entered Working state on the existing model at inspection, with no immediate capacity error. This confirms request processing resumed, not completion of implementation. Logs remain pending implementer commit/push; no merge.
+
+
+## Reviewer progress — 2026-10-20 23:17 Toronto
+
+Agent has resumed sustained healthy work. #17/#18 green. Construction completion failure was traced to test URL parameter id instead of campaign; corrected test now validates identity/active state/start timestamp and is running. This is not yet a completion pass. Ordinary build/cancel journey passed in 29 minutes; earlier lab-helper failure remains accurately disclosed separately. Independently inspected phone construction capture and found stale join acknowledgement in construction footer. Exact handoff:
+
+Reviewer visual finding: retained docs/ux/reviews/construction/construction-phone.png shows “Your seat is confirmed.” in the construction commitment footer. Scope feedback to the relevant action/panel so a previous join/research acknowledgement cannot appear as construction feedback. Preserve actual build/cancel pending, acceptance and error messages; refresh the affected captures after fixing. The composition/art and fixed cost/balance/actions otherwise look readable in this phone sample. Log this attributed finding and carry latest meta-prompts.md into the related commit/push; continue completion validation, no merge.

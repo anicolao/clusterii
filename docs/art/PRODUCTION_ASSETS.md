@@ -47,3 +47,19 @@ Source: `docs/art/source/stellar-classes.png`; served atlas: `static/art/stellar
 Exact generation prompt:
 
 > Production stellar illustration atlas for a cinematic realistic space strategy game, Cluster. ONE square image with an exact 2 by 2 grid of equal square panels, no gutters, no borders, no text. Each panel is a different close-up photographically realistic luminous star floating in very dark navy space with delicate atmospheric plasma and faint dust. Top left: small deep coral-red M-class star with low red prominences. Top right: warm golden-white G-class sun with turbulent granular luminous surface and graceful corona. Bottom left: brilliant pearl-white A-class star with pale violet corona. Bottom right: intense electric blue O-class star with expansive blue-white corona. Each entire stellar disc centered and fully contained in its own panel, filling about 55 percent of panel diameter, different believable surface textures, physically inspired cinematic science illustration. NO planets, ships, maps, labels, letters, figures, UI, symbols or watermarks. Exactly four independent square star illustrations. Midnight blue, ivory, bronze gold palette.
+
+## Construction environments
+
+Generated on 2026-10-20 with the built-in imagegen tool. Production selection uses four distinct full-bleed illustrations, encoded as WebP quality 90 in `static/art/construction-{market,camp,base,station}.webp`. The shared SystemConstruction component uses the same assets in the player interface, gallery and animation lab. Architectural imagery conveys development type; it is not sensor intelligence, authoritative geography, or a claim about hidden structures. All labels, prices and actions are semantic UI, never generated lettering.
+
+Market prompt:
+
+> Use case: stylized-concept. Production game asset for Cluster, cinematic sophisticated space conquest strategy. Generate a wide landscape illustration of a futuristic planetary MARKET: elegant circular white limestone and brushed brass trade pavilion, sweeping shade canopies, tiny diverse fully clothed merchants, terraces and sunlit mountains, lush but restrained greenery, huge orbital arc faintly visible in blue sky. Realistic painterly premium game key art, navy shadows, pale gold sunlight, tangible architectural detail. Focal pavilion centered, readable silhouette at thumbnail size, full bleed. No lettering, logos, symbols, captions, interface, borders or watermarks. This is artwork only, not a UI mockup.
+
+Other three exact prompts use this template with the subjects below:
+
+> Use case: stylized-concept. Production game asset for Cluster, cinematic sophisticated space conquest strategy. Generate a wide landscape illustration of SUBJECT. Realistic painterly premium game key art, navy shadows, restrained pale gold sunlight, tangible architectural detail, optimistic grandeur. Focal structure centered, readable silhouette at thumbnail size, full bleed. No lettering, logos, captions, interface, borders or watermarks. This is artwork only, not a UI mockup.
+
+- Camp SUBJECT: a fighter pilot TRAINING CAMP in orbit: long sweeping training station and hangars, several small distinct sleek fighter craft departing in formation, blue-white atmospheric planet beneath, dark space beyond
+- Base SUBJECT: a planetary infantry BASE: monumental grounded military academy and fortified landing apron, low pale-stone and dark-metal architecture, tiny fully armored infantry formations, rugged mountain valley, no combat or explosions
+- Station SUBJECT: a SCIENCE SPACE STATION: graceful concentric laboratory rings and long delicate telescope instruments, blue-glowing observatory dome, sophisticated white-metal and brass structure above a luminous curved planet

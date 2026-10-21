@@ -1,6 +1,6 @@
 # Cluster rules — v0.1.0
 
-This is the step 0 rules contract for review. Its numeric configuration is [cluster-v0.1.0.json](rules/cluster-v0.1.0.json). Approval fixes a version; balance changes create a new version for new campaigns. Existing games retain their original rules. The game is not yet implemented.
+This is the step 0 rules contract for review. Its numeric configuration is [cluster-v0.1.0.json](rules/cluster-v0.1.0.json). Approval fixes a version; balance changes create a new version for new campaigns. Existing games retain their original rules. The [delivery table](docs/design/DELIVERY_REVIEW.md) records implemented slices and their acceptance limits.
 
 ## 1. Campaigns, factions, and the galaxy
 

@@ -56,6 +56,7 @@
   let pending = $state<PendingCampaign | null>(null);
   let busy = $state(false);
   let message = $state("");
+  let commandKind = $state("");
   let error = $state("");
   let remedy = $state<"network" | "validation" | "conflict" | null>(null);
   let title = $state<HTMLHeadingElement>();
@@ -247,9 +248,13 @@
         remedy = feedback.remedy;
         if (
           receipt.status === "accepted" &&
-          !["campaign.pause", "campaign.resume", "research.select"].includes(
-            command.kind,
-          )
+          ![
+            "campaign.pause",
+            "campaign.resume",
+            "research.select",
+            "construction.build",
+            "construction.cancel",
+          ].includes(command.kind)
         )
           void select(receipt.gameId);
       },
@@ -264,6 +269,8 @@
   }
   async function send(id: string, action: CampaignAction) {
     if (busy || pending) return;
+    commandKind = action.kind;
+    message = "";
     busy = true;
     error = "";
     const session = generation;
@@ -311,6 +318,7 @@
 <main class="campaign-shell" class:commanding={!!view}>
   {#if view}<Galaxy
       {view}
+      {commandKind}
       loadHistory={(cursor) =>
         service.campaignHistory(view!.id, account!, cursor)}
       {message}
@@ -325,6 +333,19 @@
           kind: "campaign.migrate",
           expectedRevision: game?.revision ?? view!.revision,
           targetMode,
+        })}
+      onbuild={(starId, type) =>
+        send(view!.id, {
+          kind: "construction.build",
+          expectedRevision: view!.revision,
+          starId,
+          type,
+        })}
+      oncancel={(orderId) =>
+        send(view!.id, {
+          kind: "construction.cancel",
+          expectedRevision: view!.revision,
+          orderId,
         })}
       onresearch={(target) =>
         send(view!.id, {

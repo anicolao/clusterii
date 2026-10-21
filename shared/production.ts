@@ -1,4 +1,5 @@
 import type { Campaign } from "./campaign.js";
+import { settleConstruction } from "./construction.js";
 import { faction, rules } from "./rules.js";
 export type Technology = keyof typeof rules.startingResearch;
 export interface ResearchOrder {
@@ -17,6 +18,8 @@ export interface ResearchState {
 }
 export interface ProductionLedger {
   creditsMilli: number;
+  marketDividendsMilli?: number;
+  marketEscrowMilli?: number;
   releasedEscrowMilli: number;
   escrowMilli: number;
   scienceMilli: number;
@@ -122,6 +125,7 @@ export function produce(campaign: Campaign, economy: Economy) {
   clock.tick++;
   clock.nextTickAt += rules.tickSeconds * 1000;
   clock.ledger = {};
+  const completions = settleConstruction(next, clock.tick);
   for (const research of Object.values(clock.research)) {
     const due = (research.orders ?? [])
       .filter((order) => order.effectiveTick <= clock.tick)
@@ -264,6 +268,50 @@ export function produce(campaign: Campaign, economy: Economy) {
       if (target.progressMilli[target.target] < cost) break;
       target.progressMilli[target.target] -= cost;
       target.levels[target.target]++;
+    }
+  }
+  // Completion dividends use beginning-of-tick markets and focus; new markets
+  // produce normally now, but only join the dividend weights next tick.
+  for (const completion of completions) {
+    const weights = Object.entries(campaign.systems)
+      .filter(
+        ([id, system]) =>
+          system.surface &&
+          system.surface !== completion.uid &&
+          system.surface === next.systems[id].surface &&
+          system.markets > 0,
+      )
+      .map(([id, system]) => ({
+        id,
+        milli: system.markets * rules.defaultFocus[completion.type],
+      }));
+    const pool = Math.floor(completion.paidMilli / 10);
+    for (const [id, amount] of apportionMilli(pool, weights)) {
+      const system = next.systems[id],
+        uid = system.surface;
+      if (!uid) throw new Error("Missing dividend recipient");
+      const ledger = clock.ledger[uid];
+      if (system.orbit === uid) {
+        next.empires[uid].creditsMilli = checked(
+          BigInt(next.empires[uid].creditsMilli) + BigInt(amount),
+        );
+        ledger.creditsMilli = checked(
+          BigInt(ledger.creditsMilli) + BigInt(amount),
+        );
+        ledger.marketDividendsMilli = checked(
+          BigInt(ledger.marketDividendsMilli ?? 0) + BigInt(amount),
+        );
+      } else {
+        system.escrowMilli = checked(
+          BigInt(system.escrowMilli) + BigInt(amount),
+        );
+        ledger.escrowMilli = checked(
+          BigInt(ledger.escrowMilli) + BigInt(amount),
+        );
+        ledger.marketEscrowMilli = checked(
+          BigInt(ledger.marketEscrowMilli ?? 0) + BigInt(amount),
+        );
+      }
     }
   }
   next.revision++;

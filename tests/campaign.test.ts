@@ -186,3 +186,48 @@ test('research selections settle in admitted order, retain unfinished progress a
  const next=produce(first.campaign,first.economy);expect(next.economy.research.p0.target).toBe('innovation');expect(next.economy.research.p0.progressMilli.investing).toBe(8000);expect(next.economy.research.p0.progressMilli.innovation).toBe(1400);expect(next.economy.research.p0.orders).toEqual([]);
  const repeated=produce(first.campaign,first.economy);expect(repeated).toEqual(next);
 });
+
+
+import {orderConstruction} from '../shared/campaign';
+import {buildCost} from '../shared/construction';
+function nextProduction(state:ReturnType<typeof productionFixture>){const result=produce(state,state.economy!);return {...result.campaign,economy:result.economy};}
+test('construction reserves exact escalating prices, serial layer capacity and future cutoffs without overspending',()=>{
+ let state=productionFixture();const home=state.seats[0].home!,due=state.economy!.nextTickAt;const action={kind:'construction.build',expectedRevision:state.revision,starId:home,type:'market'};
+ expect(buildCost('market',2)).toBe(106000);state=orderConstruction(state,action,'p0',crypto.randomUUID(),due-1);expect(state.empires.p0.creditsMilli).toBe(94000);expect(state.construction!.orders[0]).toMatchObject({effectiveTick:1,paidMilli:106000,progress:0,startedTick:null});
+ expect(()=>orderConstruction(state,{...action,expectedRevision:state.revision},'p0','x',due)).toThrow('insufficient-credits');
+ expect(()=>orderConstruction(state,action,'p0','x',due)).toThrow('conflict');
+ expect(()=>orderConstruction(state,{...action,expectedRevision:state.revision},'p1','x',due)).toThrow('permission');
+ const cheap={...action,type:'camp',expectedRevision:state.revision};const at=orderConstruction(state,cheap,'p0',crypto.randomUUID(),due);expect(at.construction!.orders[1].effectiveTick).toBe(2);expect(at.empires.p0.creditsMilli).toBe(25000);
+ expect(()=>parseCampaignAction({...cheap,uid:'p1'})).toThrow('invalid');expect(()=>parseCampaignAction({...cheap,type:'unknown'})).toThrow('invalid');
+ const rich=structuredClone(state);rich.empires.p0.creditsMilli=10000000;let queued=rich;for(let i=0;i<3;i++)queued=orderConstruction(queued,{...action,expectedRevision:queued.revision,type:'base'},'p0',crypto.randomUUID(),due-1);
+ expect(()=>orderConstruction(queued,{...action,expectedRevision:queued.revision,type:'base'},'p0','x',due-1)).toThrow('construction-queue-full');
+ rich.systems[home].stations=8;expect(()=>orderConstruction(rich,{...action,expectedRevision:rich.revision,type:'station'},'p0','x',due-1)).toThrow('construction-capacity');
+ expect(()=>orderConstruction({...state,pausedAt:1},{...action,expectedRevision:state.revision},'p0','x',due)).toThrow('paused');
+ expect(()=>orderConstruction({...state,schemaVersion:1,economy:undefined},{...action,expectedRevision:state.revision},'p0','x',due)).toThrow('construction-unavailable');
+});
+test('four construction advances produce on completion and distribute one bounded dividend from frozen markets',()=>{
+ let state=productionFixture();const home=state.seats[0].home!,id=crypto.randomUUID();state=orderConstruction(state,{kind:'construction.build',expectedRevision:state.revision,starId:home,type:'market'},'p0',id,state.economy!.nextTickAt-1);
+ for(let t=1;t<=4;t++){state=nextProduction(state);expect(state.systems[home].markets).toBe(2);expect(state.construction!.orders[0].progress).toBe(t-1);expect(state.economy!.ledger.p0.marketDividendsMilli??0).toBe(0);}
+ state=nextProduction(state);expect(state.systems[home].markets).toBe(3);expect(state.construction!.orders).toEqual([]);expect(state.construction!.ledger.p0).toEqual([{id,starId:home,type:'market',result:'completed',paidMilli:106000,refundMilli:0}]);expect(state.economy!.ledger.p0.creditsMilli).toBe(4200);
+ expect(['p1','p2','p3'].reduce((sum,uid)=>sum+(state.economy!.ledger[uid].marketDividendsMilli??0),0)).toBe(10600);expect(state.empires.p0.creditsMilli).toBe(94000+4*2800+4200);
+ state=nextProduction(state);expect(state.construction!.ledger).toEqual({});expect(state.economy!.ledger.p1.marketDividendsMilli??0).toBe(0);
+});
+test('cancellation settles at its assigned tick with full or half refund and cannot repeat',()=>{
+ for(const advances of [0,1]){let state=productionFixture();const home=state.seats[0].home!,id=crypto.randomUUID();state=orderConstruction(state,{kind:'construction.build',expectedRevision:state.revision,starId:home,type:'market'},'p0',id,state.economy!.nextTickAt-1);state=nextProduction(state);if(advances)state=nextProduction(state);
+ const prior=state.empires.p0.creditsMilli;const action={kind:'construction.cancel',expectedRevision:state.revision,orderId:id};state=orderConstruction(state,action,'p0',crypto.randomUUID(),state.economy!.nextTickAt-1);expect(state.empires.p0.creditsMilli).toBe(prior);expect(()=>orderConstruction(state,{...action,expectedRevision:state.revision},'p0','x',state.economy!.nextTickAt-1)).toThrow('cancellation-pending');state=nextProduction(state);expect(state.empires.p0.creditsMilli).toBe(prior+2800+(advances?53000:106000));expect(state.construction!.orders).toEqual([]);expect(state.construction!.cancellations).toEqual([]);expect(state.construction!.ledger.p0[0].result).toBe('cancelled');expect(state.economy!.ledger.p1.marketDividendsMilli??0).toBe(0);}
+});
+test('split-layer construction privacy, pre-execution invalidation and capture cancellation preserve exact refunds',()=>{
+ let state=productionFixture();const home=state.seats[0].home!;state.empires.p0.creditsMilli=1000000;const market=crypto.randomUUID(),camp=crypto.randomUUID();for(const [id,type] of [[market,'market'],[camp,'camp']] as const)state=orderConstruction(state,{kind:'construction.build',expectedRevision:state.revision,starId:home,type},'p0',id,state.economy!.nextTickAt-1);
+ state=nextProduction(state);const balance=state.empires.p0.creditsMilli;state.systems[home].surface='p1';const other=JSON.stringify(campaignView(state,'p1'));expect(other).not.toContain(market);expect(other).not.toContain(camp);expect(JSON.stringify(campaignView(state,'p0'))).not.toContain(market);state=nextProduction(state);expect(state.construction!.orders.map(o=>o.id)).toEqual([camp]);expect(state.construction!.ledger.p0[0]).toMatchObject({id:market,result:'captured',refundMilli:0});expect(state.empires.p0.creditsMilli).toBe(balance);
+ let invalid=productionFixture();const target=invalid.seats[0].home!;invalid=orderConstruction(invalid,{kind:'construction.build',expectedRevision:invalid.revision,starId:target,type:'market'},'p0',crypto.randomUUID(),invalid.economy!.nextTickAt-1);invalid.systems[target].surface='p1';invalid=nextProduction(invalid);expect(invalid.empires.p0.creditsMilli).toBe(200000);expect(invalid.construction!.ledger.p0[0]).toMatchObject({result:'invalid',refundMilli:106000});
+});
+
+test('construction layer queues start successors without an immediate advance and dividend escrow conserves its pool',()=>{
+ let state=productionFixture();const home=state.seats[0].home!,peer=state.seats[1].home!;state.empires.p0.creditsMilli=1000000;
+ for(const type of ['market','base'] as const)state=orderConstruction(state,{kind:'construction.build',expectedRevision:state.revision,starId:home,type},'p0',crypto.randomUUID(),state.economy!.nextTickAt-1);
+ state.systems[peer].orbit='p2';
+ for(let n=0;n<5;n++)state=nextProduction(state);
+ expect(state.construction!.orders).toHaveLength(1);expect(state.construction!.orders[0]).toMatchObject({type:'base',startedTick:5,progress:0});expect(state.systems[home].bases).toBe(1);
+ const ledger=state.economy!.ledger;expect(ledger.p1.marketDividendsMilli??0).toBe(0);expect(ledger.p1.marketEscrowMilli).toBeGreaterThan(0);expect((ledger.p1.marketEscrowMilli??0)+(ledger.p2.marketDividendsMilli??0)+(ledger.p3.marketDividendsMilli??0)).toBe(10600);
+ for(let n=0;n<4;n++)state=nextProduction(state);expect(state.systems[home].bases).toBe(2);expect(state.construction!.orders).toEqual([]);expect(state.economy!.ledger.p0.infantry).toBeGreaterThanOrEqual(2);
+});
