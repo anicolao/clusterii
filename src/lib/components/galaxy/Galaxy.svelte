@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick, onDestroy } from "svelte";
   import type { Technology } from "@shared/production";
+  import type { Allocation } from "@shared/market-focus";
   import SystemConstruction from "../SystemConstruction.svelte";
   import type { Development } from "@shared/construction";
   import CampaignEconomy from "../CampaignEconomy.svelte";
@@ -28,6 +29,7 @@
     onleave,
     onmaintenance,
     onresearch,
+    onfocus,
     onbuild,
     oncancel,
     onmigrate,
@@ -45,6 +47,7 @@
     onback: () => void;
     onleave?: () => void;
     onmaintenance?: () => void;
+    onfocus?: (allocation: Allocation) => void;
     onresearch?: (target: Technology) => void;
     onbuild?: (starId: string, type: Development) => void;
     oncancel?: (orderId: string) => void;
@@ -411,6 +414,8 @@
         {view}
         onclose={closeEconomy}
         {onresearch}
+        {onfocus}
+        {commandKind}
         {message}
         {error}
         {busy}

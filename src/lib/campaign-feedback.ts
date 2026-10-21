@@ -2,6 +2,10 @@ export const campaignPendingMessage = "Awaiting acknowledgement…";
 export const campaignNetworkMessage =
   "The connection was interrupted. Your selection and pending order are preserved.";
 const reasons: Record<string, string> = {
+  "focus-unavailable":
+    "Market focus begins after home assignment in a production-enabled campaign.",
+  "focus-queue-full":
+    "Your focus queue is full. Wait for settlement before submitting another allocation.",
   "construction-unavailable":
     "Construction begins after home assignment in a production-enabled campaign.",
   "construction-capacity":
@@ -43,19 +47,26 @@ export function campaignFeedback(
   if (receipt.status === "rejected")
     return {
       message: "",
-      error: kind.startsWith("construction.")
-        ? receipt.reason === "conflict"
-          ? "The campaign changed. Your development choice is preserved. Review the current quote and submit again."
-          : receipt.reason === "permission"
-            ? "You must control the development’s layer to change its queue."
+      error:
+        kind === "market.focus"
+          ? receipt.reason === "conflict"
+            ? "The campaign changed. Your allocation is preserved. Review it and submit again."
             : receipt.reason === "invalid"
-              ? "Choose an available development or queued order."
+              ? "Allocate exactly 100 whole points across the four developments."
               : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
-        : kind === "research.select" && receipt.reason === "conflict"
-          ? "The campaign changed. Your research choice is preserved. Review the current progress and submit again."
-          : kind === "research.select" && receipt.reason === "invalid"
-            ? "Choose one of the eight research tracks."
-            : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid),
+          : kind.startsWith("construction.")
+            ? receipt.reason === "conflict"
+              ? "The campaign changed. Your development choice is preserved. Review the current quote and submit again."
+              : receipt.reason === "permission"
+                ? "You must control the development’s layer to change its queue."
+                : receipt.reason === "invalid"
+                  ? "Choose an available development or queued order."
+                  : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
+            : kind === "research.select" && receipt.reason === "conflict"
+              ? "The campaign changed. Your research choice is preserved. Review the current progress and submit again."
+              : kind === "research.select" && receipt.reason === "invalid"
+                ? "Choose one of the eight research tracks."
+                : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid),
       remedy:
         receipt.reason === "conflict"
           ? ("conflict" as const)
@@ -63,23 +74,25 @@ export function campaignFeedback(
     };
   return {
     message:
-      kind === "construction.build"
-        ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
-        : kind === "construction.cancel"
-          ? "Cancellation accepted. The refund settles at its scheduled tick."
-          : kind === "research.select"
-            ? "Research order accepted. It will apply at its scheduled tick."
-            : kind === "campaign.migrate"
-              ? "Encryption changed and verified. Campaign resumed."
-              : kind === "campaign.pause"
-                ? "Campaign paused. Admissions and scheduled start are stopped."
-                : kind === "campaign.resume"
-                  ? "Campaign resumed."
-                  : kind === "campaign.create"
-                    ? "Campaign created. Choose your faction."
-                    : kind === "campaign.leave"
-                      ? "Your seat has been released."
-                      : "Your seat is confirmed.",
+      kind === "market.focus"
+        ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
+        : kind === "construction.build"
+          ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
+          : kind === "construction.cancel"
+            ? "Cancellation accepted. The refund settles at its scheduled tick."
+            : kind === "research.select"
+              ? "Research order accepted. It will apply at its scheduled tick."
+              : kind === "campaign.migrate"
+                ? "Encryption changed and verified. Campaign resumed."
+                : kind === "campaign.pause"
+                  ? "Campaign paused. Admissions and scheduled start are stopped."
+                  : kind === "campaign.resume"
+                    ? "Campaign resumed."
+                    : kind === "campaign.create"
+                      ? "Campaign created. Choose your faction."
+                      : kind === "campaign.leave"
+                        ? "Your seat has been released."
+                        : "Your seat is confirmed.",
     error: "",
     remedy: null,
   };

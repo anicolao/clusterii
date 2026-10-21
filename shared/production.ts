@@ -1,5 +1,6 @@
 import type { Campaign } from "./campaign.js";
 import { settleConstruction } from "./construction.js";
+import { initialFocus, type MarketFocus, settleFocus } from "./market-focus.js";
 import { faction, rules } from "./rules.js";
 export type Technology = keyof typeof rules.startingResearch;
 export interface ResearchOrder {
@@ -29,6 +30,7 @@ export interface ProductionLedger {
   discardedInfantry: number;
 }
 export interface Economy {
+  marketFocus?: Record<string, MarketFocus>;
   tick: number;
   nextTickAt: number;
   research: Record<string, ResearchState>;
@@ -54,6 +56,9 @@ export function initialEconomy(
           ) as Record<Technology, number>,
         },
       ]),
+    ),
+    marketFocus: Object.fromEntries(
+      campaign.seats.map((seat) => [seat.uid, initialFocus()]),
     ),
     remainders: {},
     ledger: {},
@@ -125,6 +130,8 @@ export function produce(campaign: Campaign, economy: Economy) {
   clock.tick++;
   clock.nextTickAt += rules.tickSeconds * 1000;
   clock.ledger = {};
+  next.economy = clock;
+  settleFocus(next);
   const completions = settleConstruction(next, clock.tick);
   for (const research of Object.values(clock.research)) {
     const due = (research.orders ?? [])
@@ -283,7 +290,10 @@ export function produce(campaign: Campaign, economy: Economy) {
       )
       .map(([id, system]) => ({
         id,
-        milli: system.markets * rules.defaultFocus[completion.type],
+        milli:
+          system.markets *
+          (campaign.economy?.marketFocus?.[system.surface ?? ""]?.allocation ??
+            rules.defaultFocus)[completion.type],
       }));
     const pool = Math.floor(completion.paidMilli / 10);
     for (const [id, amount] of apportionMilli(pool, weights)) {

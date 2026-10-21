@@ -19,6 +19,7 @@ import {
   joinOrLeave,
   maintainCampaign,
   orderConstruction,
+  selectMarketFocus,
   selectResearch,
   startCampaign,
 } from "../../shared/campaign.js";
@@ -403,9 +404,11 @@ async function handleCampaign(
           : action.kind === "construction.build" ||
               action.kind === "construction.cancel"
             ? orderConstruction(current, action, uid, commandId, Date.now())
-            : action.kind === "research.select"
-              ? selectResearch(current, action, uid, commandId, Date.now())
-              : joinOrLeave(current, action, uid, profile, now);
+            : action.kind === "market.focus"
+              ? selectMarketFocus(current, action, uid, commandId, Date.now())
+              : action.kind === "research.select"
+                ? selectResearch(current, action, uid, commandId, Date.now())
+                : joinOrLeave(current, action, uid, profile, now);
       }
     } catch (error) {
       if (error instanceof KeyServiceError) throw error;
@@ -421,6 +424,8 @@ async function handleCampaign(
           "cancellation-pending",
           "research-unavailable",
           "research-queue-full",
+          "focus-unavailable",
+          "focus-queue-full",
           "invalid",
           "exists",
           "started",

@@ -7,6 +7,12 @@ import {
 } from "./construction.js";
 import { type Galaxy, generateGalaxy } from "./galaxy.js";
 import {
+  type Allocation,
+  admitFocus,
+  initialFocus,
+  validAllocation,
+} from "./market-focus.js";
+import {
   type Economy,
   initialEconomy,
   type Technology,
@@ -66,6 +72,7 @@ export type MigrationAction = {
 };
 export type CampaignAction =
   | MigrationAction
+  | { kind: "market.focus"; expectedRevision: number; allocation: Allocation }
   | {
       kind: "construction.build";
       expectedRevision: number;
@@ -98,26 +105,28 @@ export function parseCampaignAction(input: unknown): CampaignAction {
   if (!Number.isSafeInteger(a.expectedRevision) || a.expectedRevision < 0)
     throw new Error("invalid");
   const fields =
-    a.kind === "construction.build"
-      ? ["kind", "expectedRevision", "starId", "type"]
-      : a.kind === "construction.cancel"
-        ? ["kind", "expectedRevision", "orderId"]
-        : a.kind === "campaign.create"
-          ? [
-              "kind",
-              "expectedRevision",
-              "name",
-              "capacity",
-              "mode",
-              "development",
-            ]
-          : a.kind === "research.select"
-            ? ["kind", "expectedRevision", "target"]
-            : a.kind === "campaign.migrate"
-              ? ["kind", "expectedRevision", "targetMode"]
-              : a.kind === "campaign.join"
-                ? ["kind", "expectedRevision", "faction", "portrait"]
-                : ["kind", "expectedRevision"];
+    a.kind === "market.focus"
+      ? ["kind", "expectedRevision", "allocation"]
+      : a.kind === "construction.build"
+        ? ["kind", "expectedRevision", "starId", "type"]
+        : a.kind === "construction.cancel"
+          ? ["kind", "expectedRevision", "orderId"]
+          : a.kind === "campaign.create"
+            ? [
+                "kind",
+                "expectedRevision",
+                "name",
+                "capacity",
+                "mode",
+                "development",
+              ]
+            : a.kind === "research.select"
+              ? ["kind", "expectedRevision", "target"]
+              : a.kind === "campaign.migrate"
+                ? ["kind", "expectedRevision", "targetMode"]
+                : a.kind === "campaign.join"
+                  ? ["kind", "expectedRevision", "faction", "portrait"]
+                  : ["kind", "expectedRevision"];
   if (Object.keys(a).some((key) => !fields.includes(key)))
     throw new Error("invalid");
   if (a.kind === "campaign.create") {
@@ -132,6 +141,8 @@ export function parseCampaignAction(input: unknown): CampaignAction {
       a.development !== true
     )
       throw new Error("invalid");
+  } else if (a.kind === "market.focus") {
+    if (!validAllocation(a.allocation)) throw new Error("invalid");
   } else if (a.kind === "construction.build") {
     if (
       typeof a.starId !== "string" ||
@@ -418,6 +429,7 @@ export function campaignView(state: Campaign, uid: string) {
     economy: state.economy
       ? {
           research: state.economy.research[uid],
+          marketFocus: state.economy.marketFocus?.[uid] ?? initialFocus(),
           ledger: state.economy.ledger[uid] ?? null,
         }
       : null,
@@ -549,5 +561,30 @@ export function orderConstruction(
     );
   else
     admitCancellation(next, uid, commandId, next.revision, now, action.orderId);
+  return next;
+}
+
+export function selectMarketFocus(
+  current: Campaign,
+  input: unknown,
+  uid: string,
+  commandId: string,
+  now: number,
+): Campaign {
+  const action = parseCampaignAction(input);
+  if (action.kind !== "market.focus") throw new Error("invalid");
+  if (!current.seats.some((seat) => seat.uid === uid))
+    throw new Error("permission");
+  if (current.revision !== action.expectedRevision) throw new Error("conflict");
+  if (current.pausedAt != null) throw new Error("paused");
+  if (
+    current.phase !== "active" ||
+    current.schemaVersion !== 2 ||
+    !current.economy
+  )
+    throw new Error("focus-unavailable");
+  const next = structuredClone(current);
+  next.revision++;
+  admitFocus(next, uid, commandId, action.allocation, now);
   return next;
 }
