@@ -1179,3 +1179,10 @@ Agent continues independently with live UX-12 return briefing after #54, preserv
 Exact handoff:
 
 Reviewer finding 2026-10-21 18:48 Toronto: #51 current4f8cb6a story run39680090423 completed with20 missing Linux baseline failures across history/lifecycle/production/research and one known1994-pixel mismatch. Retained /tmp/cluster51-1848-review-failure.log. This successor includes the layout instrumentation, so inspect its completed failure artifacts now for passing/failing identity layout comparison rather than waiting only for #50. Continue your active Linux candidate review with provenance checks and unchanged inherited baselines. Record the diagnosis separately; green runs do not establish a raster fix. Carry latest main checkpoint and attributed logs, commit/push; no merge.
+
+
+## Reviewer progress — 2026-10-21 18:58 Toronto
+
+Agent healthy promoting reviewed Linux lifecycle64/research96 candidates through successors, now reviewing history/production from #51. Read provenance reviews: source tree equivalence/spec hashes/pinned renderer recorded, inherited images unchanged; strict reruns pending. No duplicate handoff.
+
+Read6312e2f instrumented Linux diagnosis: failing short fresh-sign-in and matching generated frame have identical recorded post-capture geometry/typography/fonts/ancestors; generated frame exactly matches existing baseline. This narrows recorded evidence but neither excludes transient premeasurement state nor establishes a reproducible raster cause/fix. Raw2231 versus comparator1994 differences are correctly distinguished. Source artifacts retained; independent reproduction still open. Carry checkpoint into committed/pushed logs; current previews and full-release acceptance remain open, no merge.
