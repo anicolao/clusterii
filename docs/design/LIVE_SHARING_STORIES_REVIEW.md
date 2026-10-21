@@ -1,0 +1,9 @@
+# Illustrated live selected-history consent
+
+The UX-10 story creates a real development campaign through four independent authenticated players, then follows a room creator, invited recipient and outsider. Two earlier messages are sent through encrypted command ingress. The creator selects one, the recipient reviews its scope without its body, and keyboard acceptance publishes only that message. Reload retains the grant without another command revision; Escape restores focus to Conversations.
+
+Named checks inspect both rendered content and decrypted actual persisted member projections. Before consent neither body is present in the recipient projection; the outsider never receives the private title or either body. Acceptance advances the canonical revision exactly once and preserves the unselected message's privacy. These are real mock-provider service semantics, not the inert lab callbacks. Existing procedural negotiation, both-provider authorization and fault/retry assertions remain unchanged.
+
+Admission uses labelled emulator catalogue/domain clocks and the actual Scheduler HTTP endpoint. No roster, message, result or projection is injected. The new ordinary consent journey does not yet illustrate withheld/retried acceptance; that remains separate migration work, alongside managed-key story evidence. #52 supplies separate shared-component normal/reduced-motion inspection; this live story captures reduced-motion outcomes and keyboard consent/recovery. It does not claim complete UX-10, hosted authorization, Linux or independent visual acceptance.
+
+Base: `feat/sharing-lab-stories` (#52). Candidate generation and exact comparison are separate review gates. The inherited 1,994-pixel short identity failure remains open; queued Linux layout diagnostics are not evidence of a fix. Publication readiness requires exact current-head verification after the shared queue clears.
