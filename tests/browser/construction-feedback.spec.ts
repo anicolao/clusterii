@@ -111,6 +111,84 @@ test("construction feedback stays scoped after join and research acknowledgement
       .getByRole("button", { name: "Queue investing", exact: true })
       .click();
     await expect(economy).toContainText("Research order accepted.");
+    const {
+      settleCampaignTicks,
+    } = require("./lib/functions/src/production.js");
+    expect(await settleCampaignTicks(id, () => start + 900000)).toBe(1);
+    await expect(
+      economy.getByRole("status", { name: "Applied research order" }),
+    ).toContainText("investing applied at tick 1");
+    for (const [label, width, height] of [
+      ["phone", 393, 852],
+      ["desktop", 1440, 1000],
+      ["short", 1280, 720],
+      ["4k", 3840, 2160],
+    ] as const) {
+      await page.setViewportSize({ width, height });
+      await economy
+        .getByRole("radio", { name: /investing/ })
+        .scrollIntoViewIfNeeded();
+      await economy.getByRole("radio", { name: /investing/ }).focus();
+      const tracks = [
+        "scanning",
+        "navigation",
+        "terraforming",
+        "investing",
+        "formations",
+        "melee",
+        "recruiting",
+        "innovation",
+      ];
+      for (let step = 1; step <= 8; step++) {
+        await page.keyboard.press("ArrowDown");
+        const track = tracks[(3 + step) % 8];
+        await expect(
+          economy.getByRole("radio", { name: new RegExp(track) }),
+        ).toBeChecked();
+        const box = await economy
+          .getByRole("button", { name: `Queue ${track}`, exact: true })
+          .boundingBox();
+        expect(box!.y).toBeGreaterThanOrEqual(0);
+        expect(box!.y + box!.height).toBeLessThanOrEqual(height);
+        const radio = economy.getByRole("radio", { name: new RegExp(track) });
+        expect(
+          await radio.evaluate((el) => {
+            const r = el.getBoundingClientRect();
+            return [
+              [r.left + 1, r.top + 1],
+              [r.right - 1, r.bottom - 1],
+            ].every(([x, y]) => {
+              const top = document.elementFromPoint(x, y);
+              return top === el || (!!top && el.contains(top));
+            });
+          }),
+        ).toBe(true);
+        const action = economy.getByRole("button", {
+          name: `Queue ${track}`,
+          exact: true,
+        });
+        expect(
+          await action.evaluate((el) => {
+            const r = el.getBoundingClientRect();
+            return [
+              [r.left + 1, r.top + 1],
+              [r.right - 1, r.bottom - 1],
+            ].every(([x, y]) => {
+              const top = document.elementFromPoint(x, y);
+              return top === el || (!!top && el.contains(top));
+            });
+          }),
+        ).toBe(true);
+      }
+      await page.screenshot({
+        path: info.outputPath(`economy-settled-${label}.png`),
+      });
+      await geometry(page, economy);
+      await economy
+        .getByRole("region", { name: "Production ledger" })
+        .evaluate((el) => el.scrollTo(0, 0));
+      await geometry(page, economy);
+    }
     await page.keyboard.press("Escape");
     await page.getByRole("button", { name: "Develop", exact: true }).click();
     await expect(panel).not.toContainText("Research order accepted.");
@@ -118,7 +196,7 @@ test("construction feedback stays scoped after join and research acknowledgement
       .getByRole("button", { name: "Build market", exact: true })
       .click();
     await expect(panel).toContainText("Construction order accepted.");
-    await expect(panel.locator("header")).toContainText("94");
+    await expect(panel.locator("header")).toContainText("96.8");
     await panel.getByRole("button", { name: /Cancel Market/i }).click();
     await expect(panel).toContainText("Cancellation accepted.");
   } finally {

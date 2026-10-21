@@ -80,3 +80,5 @@ Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | C
 Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Follow each recorded campaign start in the real-time admission journey when setup crosses a quarter-hour.
 
 Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Propagate the recorded-start admission recovery into the market-focus successor without rewriting its history.
+
+Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Diagnose retained market-focus CI geometry at 4K and propagate the verified correction through its successors.

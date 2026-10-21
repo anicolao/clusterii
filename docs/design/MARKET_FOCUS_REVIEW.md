@@ -33,3 +33,15 @@ The full default suite passes 21 service tests/1,150 assertions in 62.68 seconds
 Update every bundled canonical/view writer first: maintenance, migration admission/worker, scheduled start and production. Then update `processCampaign`, the additive ingress rule and the preview client. Once focus orders exist, rollback must preserve their application and frozen-weight semantics; use authoritative pause and a compatible forward fix. Old clients can keep reading their supported fields. Hosted Google/Scheduler, exact-head CI and independent security/rendered acceptance remain gates.
 
 The compatible deployment completed on 2026-10-21 UTC: all five consumers/view writers, then command admission, then additive database rules. Hosted acceptance remains separate.
+
+## Economy geometry correction
+
+Run 39543627680 at 220916e passed 46 browser tests but failed the production journey's 4K overlap check. The retained trace shows the sticky Queue investing action painting over the Innovation radio row. The original CI frame and local before captures are retained in `docs/ux/reviews/economy-geometry/before/`.
+
+Research choices now scroll within a bounded fieldset; the commitment follows outside that scroller. Keyboard focus reveals the complete choice row and its form. The former 80px sticky-action scroll margin is removed. The production component is unchanged across campaign, gallery and lab.
+
+The focused ordinary-UI journey now submits research, settles one authoritative tick with an explicit service clock, and checks all eight keyboard selections at phone, desktop, short and 4K sizes. Both selected radio and action corners must be unobscured before automatic geometry scrolling. The general overlap helper intersects target bounds with ancestor scroll clips; it still rejects overlapping visible edges, demonstrated by a negative regression whose target centres remain reachable. It retains minimum target size, viewport, hit-testing and document-overflow checks.
+
+Intermediate rendered review caught a short-screen commitment clipped despite passing viewport bounds, followed by a partly clipped selected radio. Both prompted stricter hit-target assertions and layout/focus corrections; intermediate passing tests were not treated as acceptance. Final captures live in `docs/ux/reviews/economy-geometry/after/`. The focused service-clock journey does not certify hosted Scheduler behavior or replace the real-time production CI journey. Exact-head CI and independent visual acceptance remain pending.
+
+Final focused verification passes seven browser/gallery/lab tests in 34.3 seconds (`/tmp/cluster20-geometry-verified.log`), including the 18.0-second four-commander service-clock journey. Type checks and lint pass. The implementer inspected all four final captures; independent rendered acceptance remains open.
