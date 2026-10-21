@@ -44,7 +44,11 @@ test("Five commanders start two campaigns and recover their named active campaig
   browser,
   request,
 }, info) => {
-  test.setTimeout(180000);
+  // Fifty viewpoints require at least 100 stable-frame screenshots. The pinned
+  // 4K trace spent 115 seconds in screenshots alone and reached final capture
+  // before the former 180-second whole-story deadline. Keep each action and
+  // capture deadline unchanged; budget the complete multi-player narrative.
+  test.setTimeout(300000);
   const story = new TestStepHelper(info, {
     id: "campaign-scheduled-start",
     title:

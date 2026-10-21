@@ -204,3 +204,7 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | R
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Carry contact-subscription readiness and four exact verified narratives into the feedback lab stack.
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Migrate production identity and navigation gallery interactions into explicit illustrated component stories.
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Register stacked PR47 and its gallery preview and exact-evidence acceptance gates.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into feedback-lab-stories, preserving exact comparisons.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into identity-gallery-stories, preserving exact comparisons.

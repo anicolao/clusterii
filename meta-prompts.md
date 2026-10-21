@@ -1039,3 +1039,12 @@ Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed
 #48 90b0561 lifecycle-lab stories is open correctly stacked on #47 and attached. Read baseline review: eight local exact journeys64 captures11.7sec, standard50ms versus reduced180ms and settled outcomes explicitly classified as component specimens, not wall-clock service evidence. No production component/existing image changes. Independent full visual/Linux acceptance remains open.
 
 Agent healthy reviewing Linux feedback-lab candidates on #46; prior publication handoff recorded in PROMPTS.md. #43/#46 publication failures remain pending coordination; no fresh failure or need to duplicate the queued instructions. #43–48 replacement tests queued/running, #42 identity raster gate unresolved. Carry checkpoint into related committed/pushed logs. No release completion or merge.
+
+
+## Reviewer progress — 2026-10-21 15:58 Toronto
+
+#46 7671e31 promotes separately reviewed Linux feedback candidates; #47 f4a58ca/#48 5394322 carry them, fresh checks queued. Agent healthy starting research-lab component stories. Inherited acceptance failures persist; no completion claimed.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 15:58 Toronto: current #43 d3e34c4 story job119431708321 fails large campaign-start at the180000ms total test deadline,71 pass27min; no pixel failure in this run. #44/#45 also have campaign-start deadline failures plus known1994-pixel mismatches. Retained logs /tmp/cluster43-current-review-failure.log through cluster45-current-review-failure.log. Diagnose retained trace timing and current CI resource contention before changing any deadline; keep named readiness checks and exact pixels. Prioritize closing inherited failures alongside migration, and record root cause/evidence separately. Log reviewer attribution and carry latest checkpoint; no merge.
