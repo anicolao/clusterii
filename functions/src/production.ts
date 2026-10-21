@@ -21,10 +21,8 @@ export async function settleCampaignTicks(
     leaseRef = db.doc(`campaignTickLeases/${id}`),
     token = randomUUID();
   const claimed = await db.runTransaction(async (tx) => {
-    const [head, lease] = await Promise.all([
-      tx.get(headRef),
-      tx.get(leaseRef),
-    ]);
+    // Read the scheduling boundary and its fence in one transaction request.
+    const [head, lease] = await tx.getAll(headRef, leaseRef);
     const now = clock();
     if (
       !head.exists ||
@@ -45,10 +43,7 @@ export async function settleCampaignTicks(
     for (; settled < 96; settled++) {
       const prepared = new Map<string, Promise<Record<string, unknown>>>();
       const advanced = await db.runTransaction(async (tx) => {
-        const [head, lease] = await Promise.all([
-          tx.get(headRef),
-          tx.get(leaseRef),
-        ]);
+        const [head, lease] = await tx.getAll(headRef, leaseRef);
         const now = clock();
         if (
           !lease.exists ||
