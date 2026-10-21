@@ -977,3 +977,42 @@ Independently retained #43 job119386226716 log at /tmp/cluster43-story-review-fa
 Agent remains healthy, resolving append-only continuation conflicts while carrying readiness fixes through the stack. #41 79fa1f2 eliminates the original identity story's duplicate broad popup-load wait; independently reviewed replacement with shared authenticate helper, preserving existing named action/acknowledgement. Review records four unchanged-baseline identity passes. #42 7302236 and #43 4cfaebf carry this correction; fresh CI queued/running. #44 propagation underway; no new completed actionable failure. #40 remains fully green.
 
 Campaign-start Linux200 candidates were separately inspected and promoted in a9951bd; replacement exact comparison still required. Existing image baselines remain unchanged by readiness corrections. No duplicate prompt or concurrent implementation edits during active conflict resolution. Carry checkpoint into related committed/pushed logs with attribution; full independent composition/motion/keyboard/text-enlargement/hosted gates and remaining implementation stay open. No merge.
+
+
+## Reviewer progress — 2026-10-21 14:38 Toronto
+
+#44 63e2d24 carries separately reviewed Linux provider candidates and completed shared-login repair propagation. #41–44 replacement comparisons/application checks remain queued or running, with no new completed actionable failure. Agent healthy on encryption-migration stories; no duplicate handoff.
+
+Independently read new review and assertion inventory: one authenticated recipient on two devices exercises pause, uncommitted selection isolation, actual managed/inspectable migration, revision/epoch/algorithm checks and reload. Scope explicitly excludes multi-recipient/worker-fault certification and default CI skips actual-provider execution without credentials; historical worker-fencing coverage is referenced rather than overstated. Candidate generation still running at inspection, no completed exact result claimed. Carry checkpoint into related committed/pushed logs; retain full independent visual/motion/keyboard/text-enlargement/hosted and remaining implementation gates. No merge.
+
+
+## Reviewer progress — 2026-10-21 14:48 Toronto
+
+#45 bbab366 is open correctly stacked on #44 and attached. Independently confirmed retained migration exact log:4 passed1.8min; review documents72 actual-KMS captures and explicit default-CI skip, not hosted/full cryptographic acceptance. Agent healthy starting shared animation-lab component stories, distinct from service evidence. #41–44 replacement checks remain running.
+
+Exact handoff to existing agent:
+
+Reviewer finding 2026-10-21 14:48 Toronto: #43 publication run39652784195/job119406158620 failed hosted-revision verification: expected4cfaebf but observed source/build a9951bd. Log retained /tmp/cluster43-publish-review-failure.log. Coordinate a publication retry after the shared Pages queue clears, then verify the exact current head before claiming preview readiness. Preserve the revision assertion. Log this reviewer-attributed handoff in PROMPTS.md and continuations per AGENTS.md; carry latest meta-prompts checkpoint. No merge.
+
+
+## Reviewer progress — 2026-10-21 14:58 Toronto
+
+#41 79fa1f2 replacement story comparison is green; application pending. #42 7302236 still fails a single1994-pixel short identity-text comparison despite frame settling; independently retained job119404921165 log /tmp/cluster42-repeat-review-failure.log confirms67 passed20.4min/1failed. Agent acknowledges unresolved cause and retains baseline/trace/diff unchanged, so no duplicate handoff. #43 publication retry119420786184 is running in response to prior finding; #44–45 publication succeeded.
+
+Independent pending lab source review: explicit paused-frame inspection requires declared selector/count/time/duration, finite one-iteration animations, paused matching state, no duplicate matches; undeclared paused and infinite active animations remain rejected. Narratives record the motion inspection, exact baseline comparison unchanged. Lab navigation now has44px minimum targets. This supports explicit component animation inspection, not normal gameplay/service acceptance; verification still pending. Agent healthy and prior handoff logged in PROMPTS.md. Carry checkpoint into related committed/pushed work; remaining visual/motion/hosted and implementation gates open, no merge.
+
+
+## Reviewer progress — 2026-10-21 15:08 Toronto
+
+#46 69f7a27 feedback-lab stories is open correctly stacked on #45 and attached. Review records12 local exact journeys47.7sec, including108 new component captures and unchanged identity images; independent full visual and Linux gates remain. Sampled expected/actual identity crops independently show text raster/vertical placement difference; cause not established. Agent healthy investigating, baseline unchanged.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 15:08 Toronto: #43 job119405166506 now fails two snapshots with70 passing26.1min. In addition to known1994-pixel short session fresh-sign-in text difference, desktop campaign-scheduled-start/026-started-rosters-1-dawn-envoy-1.png differs5688 pixels. Retained log /tmp/cluster43-repeat-review-failure.log. Inspect and retain the distinct roster actual/expected/diff before deciding whether it shares the text cause; do not regenerate baselines or relax comparison to pass. #43 publication retry now succeeded. Log this reviewer-attributed finding and carry checkpoint; no merge.
+
+
+## Reviewer progress — 2026-10-21 15:18 Toronto
+
+Agent actively investigates identity layout and tests separate campaign contact-readiness repair; not stalled. Independently reviewed pending campaign-start changes: active chart viewpoints require loaded-contact acknowledgement and absence of Recovering contact records before capture; no state injection, baseline edit or tolerance change. Local verification remains running. Both recent reviewer handoffs are recorded in working PROMPTS.md and checkpoints carried.
+
+#43 ordinary application CI and publication now green but story comparison remains blocked. #44 63e2d24 comparison failed one1994-pixel mismatch,75 passed26.9min; independently retained log /tmp/cluster44-story-review-failure.log. This matches the already-investigated raster symptom; no duplicate prompt. #41 stories green/application pending; #45–46 checks running. Carry checkpoint into related committed/pushed logs; exact-current-head, full visual/motion/hosted and remaining implementation gates remain open. No merge.
