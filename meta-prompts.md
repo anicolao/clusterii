@@ -772,3 +772,52 @@ UX-01–16 migration inventory explicitly lists remaining gameplay, input and ho
 Story slice committed locally b661987; clean checkout at inspection, PR creation underway. Read baseline review: generation failures and compositor-related exact mismatches retained, rendering flags pinned, final local comparison reportedly eight journeys/44 captures35.6s. No independent full baseline approval or Linux acceptance claimed.
 
 Reviewer CI finding at 09:38 Toronto: #30 aac1d04 and #31 19e896c are now green. #32 46307c6 run39599629028 and #33 8a9ae26 run39600113448 fail history.spec.ts:20 in all four viewports: focusing Saved campaign records then Shift+Tab no longer focuses Return to galaxy. Logs retained /tmp/cluster32-review-failure.log and /tmp/cluster33-review-failure.log. Diagnose actual keyboard order after briefing changes, distinguish stale expected order from accessibility regression, preserve meaningful keyboard/focus/containment assertions, and propagate the appropriate fix through the stack. Do not simply drop the check or raise timeout. If changing legacy specs on the story branch, honor the new migration policy rather than silently refreshing exceptions. Record attributed instruction and continuation, carry latest meta-prompts, commit/push without merge. Entry/identity local exact comparison is useful progress, but Linux and independent full visual acceptance remain pending.
+
+
+## Reviewer progress — 2026-10-21 09:48 Toronto
+
+#35 d4376b8 is open, correctly based on feat/credit-offers, and attached to supervisory chat. Guide/story work publication and documentation green; ordinary verification pending; Linux generation and comparison failed. Independently inspected Linux generation log: finishStory git rev-parse HEAD fails container dubious repository ownership at /__w/clusterii/clusterii. Agent already reading this exact failure and repairing workflow; no duplicate handoff. Linux baseline review/comparison remains unfulfilled.
+
+History keyboard correction is propagated to #32 a3a3430 and #33 f417359, with #34/#35 propagation in progress. Independently reviewed test diff: the newly introduced Since your last visit control precedes Saved campaign records, so old immediate Return expectation was stale; replacement tests reverse/forward traversal including modal wrap, preserving other geometry/history/recovery assertions. Retained log independently confirms four cases passed33.3s. Sampled short capture shows briefing entry, readable bounded records and visible fixed footer; not full story acceptance. Review note explicitly requires changed history journey migration on successor story branch instead of silently changing the legacy exception hash. Agent healthy, resolving log merge conflicts and Linux failure. Carry this checkpoint in related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 09:58 Toronto
+
+#35 now7594cc2 explicitly trusts only GITHUB_WORKSPACE for Git provenance in container; independent diff confirms scoped ownership fix. No checks returned at this head during inspection; no Linux success claimed. #32 a3a3430/#33 f417359/#34 5a71179 replacement verification pending; #30–31 green. Agent actively migrating history story and resolving inherited log merge; no duplicate intervention.
+
+Independent source review of in-progress history story finds explicit real-UI setup, named keyboard traversal and both-device captures, plus labelled harness controls. Catalogue loader is test-only, exact-module scoped, rejects non-demo/non-emulator execution and signature drift, and changes catalogue seed input only; production source is unchanged. Candidate generation reportedly four cases46.0s, exact comparison still underway. Sampled phone offline-history capture for bounded recovery controls; acceptance remains scoped and pending final narrative, baseline review, exact comparison and CI. Retain all prior failure evidence, complete changed-history migration without legacy-hash bypass, and carry latest supervisory log in related committed/pushed work. No merge.
+
+
+## Reviewer progress — 2026-10-21 10:08 Toronto
+
+#35 3a3af88 includes migrated history story, removed procedural predecessor/legacy hash and propagated keyboard repair. Independently confirmed retained combined run reports12 passed1.2min; agent documents86 exact captures. Read final phone narrative: explicit network harness controls, retained-history failure, player retry, Escape focus restoration, reload persistence and Return closure are separate named steps. Prior sampled offline capture remains scoped visual evidence; not full baseline approval.
+
+Current #35 documentation and Linux story jobs failed; agent has diagnosed both and is actively repairing, with no duplicate prompt needed. Independently reviewed pending prompt checker fix: --full-history includes both synthetic merge ancestries while retaining exact hash/prefix checks. Ran all13 prompt checker tests independently (13pass0fail, /tmp/cluster-reviewer-prompt-tests.log). Pending loader registration now confines Node instrumentation to demo Functions runtime, avoiding Playwright/Firebase CLI hook interference. Linux remains unverified. #32–34 verification pending, publication/docs green; #30–31 green. Agent healthy; carry latest supervisory checkpoint into related committed/pushed logs, no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 10:18 Toronto
+
+#35 remote d45789f documentation/publish and Linux generation now pass; application verification remains pending. Linux run39613924633 generated12 stories/86 captures; comparison still fails because Linux baselines were absent, preserving fail-closed verification. Agent reviewed candidate contact sheets and committed separate baseline promotion locally as29fd306; push/new exact run not yet visible at inspection. Working tree clean. No Linux exact success or full independent acceptance claimed.
+
+Independently inspected full-size Linux phone saved-identity frame: all eight portraits visible, Deepseer selection clear, alias/emoji and explicit Identity saved acknowledgement readable, Save/sign-out footer contained. This supports only sampled frame review. Platform manifest and baseline review keep generation distinct from comparison. #32–34 application verification pending, docs/publication green; #30–31 green. Agent healthy with no new blocker or duplicate handoff; disk5.3GiB. Carry checkpoint into next related committed/pushed log update, retain independent full review/remaining gameplay story gaps, no merge.
+
+
+## Reviewer progress — 2026-10-21 10:28 Toronto
+
+#35 29fd306 pinned Linux run39615653957 Exact verification step independently confirmed SUCCESS; parent job still uploading artifacts/in progress at inspection. Independently parsed downloaded verified story.json artifacts: all12 entry/Learn, identity and history viewport journeys status passed/mode verify. This is Linux exact-comparison evidence, not blanket visual/product acceptance. Full application checks #32–35 still pending; #30–31 green.
+
+Agent is archiving verified Linux narratives on #35 before resuming feat/profile-recovery-stories, a successor migration rather than new gameplay. Profile recovery candidate generation reportedly12 cases2.6min, not yet independently reviewed or exact-verified. Existing drafts safely stashed while parent evidence is archived. No new blocker or duplicate handoff. Preserve remaining UX inventory gaps and independent review requirement; carry latest meta checkpoint into related committed/pushed work. No merge.
+
+
+## Reviewer progress — 2026-10-21 10:38 Toronto
+
+#35 f2eee49 archives verified Linux stories; current story verify/generate, documentation and publication checks green, application verification pending. #32–34 application verification remains pending, docs/publication green; #30–31 green. Agent healthy on profile-recovery successor, reviewing candidate sheets/full-size images and continuing exact comparison; no new PR yet.
+
+Independently read profile-observer helper and story step inventory: captures actual encrypted transport, read-only emulator canonical/version/receipt facts corroborate revision/one-effect assertions; no write injection in helper. Stories separate both-device draft conflict and explicit replacement, offline harness, retry same order, accepted once, reload persistence and keyboard focus return. Agent reports12 candidate journeys92 captures2.6min; candidate review explicitly leaves exact comparison/Linux/normal-motion/independent full acceptance open. No new actionable finding or duplicate handoff. Carry supervisory checkpoint in related committed/pushed logs and preserve remaining migration inventory. No merge.
+
+
+## Reviewer progress — 2026-10-21 10:48 Toronto
+
+Profile-recovery migration committed6e8995d and push in progress (pack-objects active about86s, not a demonstrated stall); no successor PR yet. Independently confirmed /tmp/cluster-profile-story-verification.log reports12 passed2.6min; review documents92 exact local captures. Sampled full-size phone conflict frame preserves draft and selected portrait, explains other-device conflict and contains explicit Replace saved identity and sign-out controls. This is scoped visual evidence, not complete acceptance. Pending follow-up writes reconnect evidence JSON as an actual artifact file rather than only in-memory attachment; agent is validating it.
+
+#35 f2eee49 story jobs/docs/publish green with ordinary verification pending; #32–34 ordinary verification still pending, docs/publish green. #30–31 green. Agent actively checking run logs and continuing migration, no duplicate handoff or interruption. Linux recovery-story comparison/current-head CI/normal-motion and full independent review remain gates. Carry latest supervisory checkpoint into related committed/pushed logs; no merge.
