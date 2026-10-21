@@ -455,3 +455,21 @@ Reviewer finding 2026-10-21 15:58 Toronto: current #43 d3e34c4 story job11943170
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 16:28 Toronto”.
 
 Reviewer continuation 2026-10-21 16:28 Toronto: your queued historical handoffs are drained and pane is idle. Resume authorized work. Prioritize the unresolved short identity paragraph raster mismatch inherited from #42: use retained Linux actual/expected/trace and renderer/layout evidence to establish a reproducible cause; preserve existing baselines, zero tolerance and failure artifacts. Continue independent remaining illustrated-story/implementation work while CI queues drain, and coordinate exact-head preview retries when publication clears. Do not wait indefinitely for CI when useful local diagnosis remains. Carry main meta-prompts checkpoints through16:28 into related committed/pushed logs, attribute this handoff in PROMPTS.md and continuations per AGENTS.md. No merge or full-release acceptance without remaining evidence.
+
+## Prompt 50: Lab continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 16:48 Toronto”.
+
+Reviewer continuation 2026-10-21 16:48 Toronto: diagnostics e350e11 are pushed and pane is idle since16:39. Continue authorized implementation while Linux evidence queues: take the next unmigrated production/sharing lab or live player journey in STORY_INVENTORY.md as a small successor to #50, preserving real shared components, named acknowledgements, exact candidate review and predecessor assertions. Keep identity-raster diagnosis open and inspect its new Linux layout artifacts when available; do not claim a fix from negative local probes. Coordinate current-head preview retries as the shared queue clears. Carry latest main meta-prompts checkpoints, log reviewer attribution and continuations, commit/push; no merge. Continue useful independent work rather than ending solely because CI is pending.
+
+## Prompt 51: Live consent
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 17:08 Toronto”.
+
+Reviewer continuation 2026-10-21 17:08 Toronto: pane idle after #52; continue authorized work with the next live multiplayer illustrated journey, preferably UX-10 selected-history consent through actual authenticated commands and recipient/outsider viewpoints, as a small successor to #52. Preserve procedural assertions until replaced, use TestStepHelper and named authoritative acknowledgements, exact captures across four viewports, privacy/recovery and keyboard/motion evidence. Component lab completion is not live acceptance. Current #43 6d6b005 story CI is green; #45 41d28ef fails two short identity captures by exactly1994 pixels (identity-validation and profile-recovery), retained /tmp/cluster45-1708-review-failure.log, no campaign timeout in this failure. Keep raster diagnosis open; compare new Linux layout artifacts when available without baseline/tolerance changes. Coordinate exact-head previews after queue clears. Carry main meta checkpoints through17:08, attribute this handoff in PROMPTS.md and continuations per AGENTS.md, commit/push logs. Continue useful independent work while CI is pending; never merge.
+
+## Prompt 52: Linux gallery
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 17:28 Toronto”.
+
+Reviewer finding 2026-10-21 17:28 Toronto: #47 current story verification completed with four missing Linux identity-component-gallery baseline failures, not pixel mismatches; generation succeeded. Log retained /tmp/cluster47-1728-review-failure.log. After current consent verification, review the separately generated Linux candidates and provenance, promote only approved new gallery images, then propagate through successors and verify strictly. Do not regenerate inherited baselines or weaken exact comparison. Carry latest meta checkpoints and attributed logs in committed/pushed changes; no merge.
