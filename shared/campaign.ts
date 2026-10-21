@@ -1,3 +1,4 @@
+import type { VisitAction, VisitCheckpoint } from "./briefing.js";
 import {
   admitBuild,
   admitCancellation,
@@ -60,6 +61,8 @@ export interface Campaign {
   economy?: Economy;
   construction?: Construction;
   military?: Military;
+  briefingVersion?: 1;
+  visits?: Record<string, VisitCheckpoint>;
   conversationsVersion?: 1;
   conversationSharingVersion?: 1;
   diplomacy?: Diplomacy;
@@ -89,6 +92,7 @@ export type MigrationAction = {
   targetMode: "mock" | "real";
 };
 export type CampaignAction =
+  | VisitAction
   | ConversationAction
   | TravelAction
   | FleetAction
@@ -206,6 +210,7 @@ export function createCampaign(
     revision: 1,
     rulesetVersion: rules.id,
     schemaVersion: 2,
+    briefingVersion: 1,
     conversationsVersion: 1,
     conversationSharingVersion: 1,
     diplomacy: { rooms: {} },
@@ -413,6 +418,13 @@ export function startCampaign(current: Campaign, now: number): Campaign {
       active,
       current.startAt + rules.tickSeconds * 1000,
     );
+  if (active.briefingVersion === 1)
+    active.visits = Object.fromEntries(
+      active.seats.map((seat) => [
+        seat.uid,
+        { revision: active.revision, tick: 0, at: now },
+      ]),
+    );
   return active;
 }
 export function campaignDirectory(state: Campaign) {
@@ -461,6 +473,8 @@ export function campaignView(state: Campaign, uid: string) {
         }
       : null,
     military: militaryView(state, uid),
+    briefingEnabled: state.briefingVersion === 1,
+    lastVisit: state.visits?.[uid] ?? null,
     conversationsEnabled: state.conversationsVersion === 1,
     conversations: conversationView(state, uid),
     travelEnabled: state.travelVersion === 1,

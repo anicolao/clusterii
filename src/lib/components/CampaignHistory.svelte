@@ -16,6 +16,7 @@
     onlatest,
     onretry,
     onclose,
+    onbriefing,
   }: {
     records: CampaignView[];
     inspect?: MotionInspection;
@@ -28,6 +29,7 @@
     onlatest: () => void;
     onretry: () => void;
     onclose: () => void;
+    onbriefing?: () => void;
   } = $props();
 </script>
 
@@ -35,6 +37,9 @@
   <header>
     <p class="overline gold">Your campaign record</p>
     <h2>Campaign history</h2>
+    {#if onbriefing}<ActionButton class="secondary" onclick={onbriefing}
+        >Since your last visit</ActionButton
+      >{/if}
     <p>
       Saved knowledge from your time in this campaign. Earlier records keep the
       information you could see then.

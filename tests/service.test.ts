@@ -5667,3 +5667,59 @@ for (const mode of ["mock", "real"] as const)
     },
     240000,
   );
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true" ? test.skip : test)(
+    `private visit checkpoint ${mode}: authorized baseline, paused acknowledgement, monotonic replay and migration`,
+    async () => {
+      const { createRequire } = await import("node:module"), require = createRequire(new URL("../functions/package.json", import.meta.url));
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({projectId});
+      const db = require("firebase-admin/firestore").getFirestore();
+      const {startDueCampaign,processCampaign} = await import("../functions/src/campaigns");
+      const {settleCampaignTicks} = await import("../functions/src/production");
+      const players = await Promise.all((["heliac","pelagic","vesper","dracon"] as const).map(async faction => {
+        const c=await client(`visit-${faction}-${crypto.randomUUID()}`);await developer(c);await saveIdentity(c);return {c,faction};
+      }));
+      const owner=players[0].c, other=players[1].c, id=crypto.randomUUID();
+      await campaignCommand(owner,id,{kind:"campaign.create",expectedRevision:0,name:"Visit recovery",capacity:4,mode,development:true});
+      for(let i=0;i<players.length;i++) await campaignCommand(players[i].c,id,{kind:"campaign.join",expectedRevision:i+1,faction:players[i].faction},mode);
+      const head=db.doc(`campaignStates/${id}`), startAt=(await head.get()).get("startAt");
+      await startDueCampaign(id,startAt);
+      let activeMode=mode, epoch=1;
+      const read=async(c=owner)=>(await readCampaignHistory(c.firestore,c.functions,id,c.uid)).records[0];
+      const baseline=await read(), otherBaseline=await read(other);
+      expect(baseline.lastVisit!.revision).toBe(baseline.revision);
+      expect(await settleCampaignTicks(id,()=>startAt+900000)).toBe(1);
+      const through=await read();
+      const command=async(action:Record<string,unknown>)=>campaignCommand(owner,id,{expectedRevision:(await read()).revision,...action} as CampaignAction,activeMode,epoch);
+      const invalid=await command({kind:"campaign.visit",throughRevision:through.revision+100});
+      expect(invalid.receipt.reason).toBe("visit-invalid");expect((await read()).revision).toBe(through.revision);
+      await command({kind:"campaign.pause"});
+      const paused=await read();
+      const saved=await command({kind:"campaign.visit",throughRevision:through.revision});
+      expect(saved.receipt.status).toBe("accepted");
+      const accepted=await read();
+      expect(accepted.lastVisit).toMatchObject({revision:through.revision,tick:1});
+      expect(accepted.pausedAt).toBe(paused.pausedAt);
+      expect(accepted.revision).toBe(paused.revision+1);
+      for(const field of ["holdings","economy","empire","military","conversations"] as const) expect(accepted[field]).toEqual(paused[field]);
+      expect((await read(other)).lastVisit).toEqual(otherBaseline.lastVisit);
+      const priorHistory=(await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records;
+      await processCampaign.run({params:{gameId:id,uid:owner.uid,commandId:saved.ingress.key},time:new Date().toISOString(),data:{val:()=>saved.payload}} as never);
+      expect(await read()).toEqual(accepted);
+      expect((await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records).toEqual(priorHistory);
+      const older=await command({kind:"campaign.visit",throughRevision:baseline.revision});
+      expect(older.receipt.status).toBe("accepted");expect(await read()).toEqual(accepted);
+      const forged=await command({kind:"campaign.visit",throughRevision:through.revision,uid:other.uid});
+      expect(forged.receipt.reason).toBe("visit-invalid");expect(await read()).toEqual(accepted);
+      if(process.env.CLUSTER_KMS_TEST==="true") {
+        const migration=await command({kind:"campaign.migrate",targetMode:activeMode==="real"?"mock":"real"});expect(migration.receipt.status).toBe("accepted");
+        activeMode=activeMode==="real"?"mock":"real";epoch++;
+        expect((await read()).lastVisit).toEqual(accepted.lastVisit);
+        expect((await command({kind:"campaign.visit",throughRevision:paused.revision})).receipt.status).toBe("accepted");
+        expect((await read()).lastVisit!.revision).toBe(paused.revision);
+        expect((await read(other)).lastVisit).toEqual(otherBaseline.lastVisit);
+      }
+    },240000,
+  );

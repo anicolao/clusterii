@@ -11,6 +11,7 @@ import {
 } from "firebase-functions/v2/database";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
 import { onSchedule } from "firebase-functions/v2/scheduler";
+import { acknowledgeVisit, visitReference } from "../../shared/briefing.js";
 import {
   type Campaign,
   campaignDirectory,
@@ -407,6 +408,27 @@ async function handleCampaign(
           canonicalKey,
           context(gameId, revision, "canonical", epoch),
         );
+        let visitSource: Campaign | null = null;
+        if (action.kind === "campaign.visit") {
+          const sourceRevision = visitReference(current, action, uid);
+          const sourceRecord = await tx.get(
+            db().doc(`${canonicalVersions(gameId, epoch)}/${sourceRevision}`),
+          );
+          if (!sourceRecord.exists) throw new Error("visit-invalid");
+          const sourceKey =
+            mode === "real"
+              ? await unprotect(
+                  sourceRecord.get("protectedKey"),
+                  `canonical:${gameId}:${sourceRevision}:${epoch}`,
+                )
+              : sourceRecord.get("canonicalKey");
+          if (!sourceKey) throw new Error("visit-invalid");
+          visitSource = await provider(mode).open<Campaign>(
+            sourceRecord.get("envelope"),
+            sourceKey,
+            context(gameId, sourceRevision, "canonical", epoch),
+          );
+        }
         let sharedHistory: SharedHistoryMessage[] = [];
         if (
           action.kind === "conversation.invite" &&
@@ -454,47 +476,49 @@ async function handleCampaign(
             }),
           );
         }
-        next = action.kind.startsWith("conversation.")
-          ? converse(current, action, uid, commandId, now, sharedHistory)
-          : action.kind === "fleet.route"
-            ? orderRoute(current, action, uid, commandId, Date.now())
-            : action.kind === "fleet.cancel"
-              ? cancelFleet(current, action, uid, Date.now())
-              : action.kind === "fleet.form" ||
-                  action.kind === "fleet.disband" ||
-                  action.kind === "fleet.load" ||
-                  action.kind === "fleet.unload" ||
-                  action.kind === "fleet.split" ||
-                  action.kind === "fleet.merge"
-                ? orderFleet(current, action, uid, commandId, Date.now())
-                : maintenance
-                  ? maintainCampaign(current, action, uid, now)
-                  : action.kind === "construction.build" ||
-                      action.kind === "construction.cancel"
-                    ? orderConstruction(
-                        current,
-                        action,
-                        uid,
-                        commandId,
-                        Date.now(),
-                      )
-                    : action.kind === "market.focus"
-                      ? selectMarketFocus(
+        next = visitSource
+          ? acknowledgeVisit(current, action, uid, now, visitSource)
+          : action.kind.startsWith("conversation.")
+            ? converse(current, action, uid, commandId, now, sharedHistory)
+            : action.kind === "fleet.route"
+              ? orderRoute(current, action, uid, commandId, Date.now())
+              : action.kind === "fleet.cancel"
+                ? cancelFleet(current, action, uid, Date.now())
+                : action.kind === "fleet.form" ||
+                    action.kind === "fleet.disband" ||
+                    action.kind === "fleet.load" ||
+                    action.kind === "fleet.unload" ||
+                    action.kind === "fleet.split" ||
+                    action.kind === "fleet.merge"
+                  ? orderFleet(current, action, uid, commandId, Date.now())
+                  : maintenance
+                    ? maintainCampaign(current, action, uid, now)
+                    : action.kind === "construction.build" ||
+                        action.kind === "construction.cancel"
+                      ? orderConstruction(
                           current,
                           action,
                           uid,
                           commandId,
                           Date.now(),
                         )
-                      : action.kind === "research.select"
-                        ? selectResearch(
+                      : action.kind === "market.focus"
+                        ? selectMarketFocus(
                             current,
                             action,
                             uid,
                             commandId,
                             Date.now(),
                           )
-                        : joinOrLeave(current, action, uid, profile, now);
+                        : action.kind === "research.select"
+                          ? selectResearch(
+                              current,
+                              action,
+                              uid,
+                              commandId,
+                              Date.now(),
+                            )
+                          : joinOrLeave(current, action, uid, profile, now);
       }
       assertObservationBudget(
         next,
@@ -507,6 +531,8 @@ async function handleCampaign(
       const reason =
         error instanceof Error &&
         [
+          "visit-invalid",
+          "briefing-unavailable",
           "conversation-history",
           "conversation-history-consent",
           "conversation-sharing-unavailable",

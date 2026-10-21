@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
   import { RecoveryValidation } from "$lib/recovery-store";
   import { onMount } from "svelte";
@@ -22,6 +23,7 @@
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import {
     conversationFrame,
+    briefingFrame,
     sharingFrame,
     draftRecoveryFrame,
     arrivalFrame,
@@ -160,6 +162,21 @@
                 onuseSavedDraft={() => (time = 4800)}
                 onreplaceDraft={() => (time = 3200)}
               />{/key}
+          </div>{:else if selected === "return-briefing"}<div
+            style="height:min(900px,90svh);min-height:550px"
+          >
+            <ReturnBriefing
+              {...briefingFrame(time)}
+              message={frame.feedback.message}
+              error={frame.feedback.error}
+              inspect={{ time: time - frame.at, reduced }}
+              onearlier={() => (time = 1200)}
+              onlatest={() => (time = 1200)}
+              onretry={() => (time = 1200)}
+              oninspect={() => {}}
+              onconfirm={() => (time = 3200)}
+              onclose={() => (time = 0)}
+            />
           </div>{:else if selected === "conversations" || selected === "conversation-sharing"}<div
             style="height:min(900px,90svh);min-height:550px"
           >

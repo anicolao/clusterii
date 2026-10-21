@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json",
-    "test": "bun test tests/unit.test.ts tests/campaign.test.ts tests/travel.test.ts tests/fleet-contacts.test.ts tests/conversations.test.ts",
+    "test": "bun test tests/unit.test.ts tests/campaign.test.ts tests/travel.test.ts tests/fleet-contacts.test.ts tests/conversations.test.ts tests/briefing.test.ts",
     "test:browser": "playwright test",
     "emulators": "bun run --cwd functions build && firebase emulators:start --project demo-clusterii",
     "format": "biome check --write shared functions/src src/lib",

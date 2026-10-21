@@ -73,6 +73,7 @@
   let commandKind = $state("");
   let commandFleetId = $state("");
   let commandRoomId = $state("");
+  let commandVisitRevision = $state(0);
   let conversationBody = "";
   let commandSharedMessages = 0;
   let recoveredConversation = $state<{
@@ -277,6 +278,10 @@
                 body: conversationBody,
               }
             : null;
+          commandVisitRevision =
+            restored.action.kind === "campaign.visit"
+              ? restored.action.throughRevision
+              : 0;
           commandSharedMessages =
             restored.action.kind === "conversation.invite" &&
             restored.action.scope === "selected"
@@ -418,22 +423,11 @@
         remedy = feedback.remedy;
         if (
           receipt.status === "accepted" &&
-          !command.kind.startsWith("conversation.") &&
-          ![
-            "campaign.pause",
-            "campaign.resume",
-            "research.select",
-            "market.focus",
-            "fleet.form",
-            "fleet.disband",
-            "fleet.load",
-            "fleet.unload",
-            "fleet.split",
-            "fleet.merge",
-            "fleet.cancel",
-            "fleet.route",
-            "construction.build",
-            "construction.cancel",
+          [
+            "campaign.create",
+            "campaign.join",
+            "campaign.leave",
+            "campaign.migrate",
           ].includes(command.kind)
         )
           void select(receipt.gameId);
@@ -480,6 +474,8 @@
         : action.kind === "conversation.create"
           ? action.title
           : "";
+    commandVisitRevision =
+      action.kind === "campaign.visit" ? action.throughRevision : 0;
     commandSharedMessages =
       action.kind === "conversation.invite" && action.scope === "selected"
         ? (action.history?.length ?? 0)
@@ -564,9 +560,16 @@
       {commandKind}
       {commandFleetId}
       {commandRoomId}
+      {commandVisitRevision}
       {conversationReceipt}
       {recoveredConversation}
       accountId={account ?? undefined}
+      onvisit={(throughRevision) =>
+        send(view!.id, {
+          kind: "campaign.visit",
+          expectedRevision: view!.revision,
+          throughRevision,
+        })}
       onconversation={(action) => send(view!.id, action)}
       loadHistory={(cursor) =>
         service.campaignHistory(view!.id, account!, cursor)}
