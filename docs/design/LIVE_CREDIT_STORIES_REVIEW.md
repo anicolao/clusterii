@@ -13,3 +13,19 @@ Base: #53 (`feat/live-sharing-stories`). Local execution, four-viewport visual r
 First generation passed eight journeys in 4.0 minutes (`/tmp/cluster-credit-generation.log`). Phone inspection found that the captured reading position hid outcome details, and the pending button's long acknowledgement word exceeded its narrow content width. The next generation adds keyboard reading with explicit outcome containment and a scoped commitment-button wrap rule. The full first candidate set is retained at `/tmp/cluster-credit-reading-before`; none was promoted. Types, lint and eleven story-policy guards pass. Final candidate review and exact comparison remain pending.
 
 Final generation passes eight journeys/212 captures in 4.0 minutes. Separate visual review is recorded in [LIVE_CREDIT_BASELINE_REVIEW.md](../testing/LIVE_CREDIT_BASELINE_REVIEW.md); only the two new macOS sets are promoted. Exact comparison is running. Both previous review sets remain retained, and no inherited baseline changed.
+
+| Dependency / acceptance | Evidence / remaining gate |
+| --- | --- |
+| Base | #53 `feat/live-sharing-stories` |
+| PR | [#54](https://github.com/anicolao/clusterii/pull/54) |
+| Local exact comparison | Eight journeys / 212 captures, four viewports, 4.1 minutes; `/tmp/cluster-credit-exact.log` |
+| Financial/privacy/recovery | Actual encrypted service ingress and member projections; exact original command/payload; one receipt/revision/reservation; conserved balances; repeat settlement and reload without effects |
+| Keyboard/geometry | Enter commit/accept/withdraw, focused acknowledgement, bounded terms/outcomes, Escape restoration, pending text containment and persistent footer |
+| Static/guard checks | Types and lint pass; 11 story-policy and 13 prompt-history tests pass |
+| Linux / independent review | Pending; generation and local review do not complete either gate |
+| Preview | [PR54](https://anicolao.github.io/clusterii/pr54/) — current-head verification pending |
+| Remaining scope | Managed-key illustrated journey, normal-motion parity, expiry/cutoff branches, hosted OAuth/Scheduler and inherited identity-raster diagnosis remain open. Existing procedural/service assertions remain. |
+
+Eight generated walkthroughs are linked from STORY_INVENTORY.md. This completes the local illustrated subjourney, not all UX-11, milestone 8 or release. The only production edit is scoped pending-button wrapping; no resolver, authorization, command or proposed rule changes.
+
+Publication follow-up: predecessor #53 run 39680103580 failed exact-head verification after observing HTTP 404 for expected `53e53873b836a95e03b7cf5381e7f2280bdea38e`. Failure log retained at `/tmp/cluster53-publication-implementation-failure.log`. The shared Pages queue still contains #54 publications, so a predecessor retry remains queued for coordination after it clears; no preview is described as verified. Linux layout diagnostics run 39672128592 remains queued, and the inherited raster diagnosis remains unresolved.
