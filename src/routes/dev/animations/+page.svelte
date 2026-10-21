@@ -1,4 +1,5 @@
 <script lang="ts">
+  import CreditOffers from "$lib/components/CreditOffers.svelte";
   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
   import { RecoveryValidation } from "$lib/recovery-store";
@@ -24,6 +25,7 @@
   import {
     conversationFrame,
     briefingFrame,
+    creditFrame,
     sharingFrame,
     draftRecoveryFrame,
     arrivalFrame,
@@ -161,6 +163,17 @@
                 onretryDraft={() => (time = 1200)}
                 onuseSavedDraft={() => (time = 4800)}
                 onreplaceDraft={() => (time = 3200)}
+              />{/key}
+          </div>{:else if selected === "credit-offers"}<div
+            style="height:min(900px,90svh);min-height:550px"
+          >
+            {#key frame.at}<CreditOffers
+                {...creditFrame(time)}
+                inspect={{ time: time - frame.at, reduced }}
+                oncommand={() => (time = 500)}
+                onclose={() => (time = 0)}
+                onretry={() => (time = 500)}
+                onhistory={() => {}}
               />{/key}
           </div>{:else if selected === "return-briefing"}<div
             style="height:min(900px,90svh);min-height:550px"

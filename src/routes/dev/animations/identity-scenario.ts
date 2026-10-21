@@ -1,0 +1,16 @@
+import {createCampaign,joinOrLeave,startCampaign,campaignView} from "@shared/campaign";
+import {converse} from "@shared/conversations";
+import {conversationMessages} from "$lib/conversation-history";
+const factions=["heliac","pelagic","vesper","dracon"] as const;
+let state=createCampaign("identity-lab",{kind:"campaign.create",expectedRevision:0,name:"Eight commanders",capacity:8,mode:"mock",development:true},"d".repeat(64),0);
+for(let i=0;i<8;i++)state=joinOrLeave(state,{kind:"campaign.join",expectedRevision:state.revision,faction:factions[i%4]},`seat-${i}`,{alias:`Envoy ${i}`,portrait:"G1"},0);
+state=startCampaign(state,state.startAt!);
+const records=[campaignView(state,"seat-4")];
+const apply=(uid:string,id:string,action:Record<string,unknown>)=>{state=converse(state,{expectedRevision:state.revision,...action},uid,id,1000);records.push(campaignView(state,"seat-4"));};
+apply("seat-4","identity-room",{kind:"conversation.create",title:"Co-faction commanders"});
+const roomId="room:identity-room";
+apply("seat-4","identity-invite",{kind:"conversation.invite",roomId,roomRevision:state.diplomacy!.rooms[roomId].revision,seat:0,scope:"future"});
+apply("seat-0","identity-accept",{kind:"conversation.accept",roomId,roomRevision:state.diplomacy!.rooms[roomId].revision});
+apply("seat-0","identity-other",{kind:"conversation.send",roomId,keyVersion:2,body:"Another commander with the same faction."});
+apply("seat-4","identity-own",{kind:"conversation.send",roomId,keyVersion:2,body:"My own reply remains mine."});
+export const identityConversation={view:campaignView(state,"seat-4"),selected:roomId,messages:conversationMessages(records,roomId)};

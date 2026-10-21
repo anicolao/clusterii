@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { commanderSeat } from "$lib/commander-seat";
   import { base } from "$app/paths";
   import type { ArrivalRecord } from "$lib/arrival-reports";
   import { feedbackMotion, type MotionInspection } from "$lib/motion";
@@ -39,10 +40,7 @@
   const item = $derived(records.find((r) => r.id === selected) ?? records[0]);
   const report = $derived(item?.report);
   const detail = $derived(report?.detail);
-  const own = $derived(
-    item?.view.roster.findIndex((s) => s.faction === item.view.own.faction) ??
-      -2,
-  );
+  const own = $derived(commanderSeat(item?.view) ?? -2);
   const title = $derived(
     !report
       ? "Arrival reports"

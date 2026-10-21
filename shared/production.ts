@@ -3,6 +3,7 @@ import { settleConstruction } from "./construction.js";
 import { settleFleets } from "./fleets.js";
 import { initialFocus, type MarketFocus, settleFocus } from "./market-focus.js";
 import { faction, rules } from "./rules.js";
+import { assertTradeBalances, settleTrades } from "./trades.js";
 import { type ArrivalRank, settleTravel } from "./travel.js";
 export type Technology = keyof typeof rules.startingResearch;
 export interface ResearchOrder {
@@ -138,6 +139,7 @@ export function produce(
   clock.ledger = {};
   next.economy = clock;
   settleFocus(next);
+  settleTrades(next, clock.tick);
   settleFleets(next, clock.tick);
   const completions = settleConstruction(next, clock.tick);
   settleTravel(next, clock.tick, arrivalRank);
@@ -346,5 +348,6 @@ export function produce(
     }
   }
   next.revision++;
+  assertTradeBalances(next);
   return { campaign: next, economy: clock };
 }

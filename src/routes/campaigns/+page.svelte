@@ -1,4 +1,6 @@
 <script lang="ts">
+  import type { RecoveredTrade } from "$lib/credit-offers";
+  import type { TradeAction } from "@shared/trades";
   import {
     fleetSettlementFeedback,
     type AcceptedFleetCommand,
@@ -75,6 +77,10 @@
   let commandFleetId = $state("");
   let commandRoomId = $state("");
   let commandVisitRevision = $state(0);
+  let commandId = $state("");
+  let commandOfferId = $state("");
+  let recoveredTrade = $state<RecoveredTrade | null>(null);
+  let acceptedTrade = $state<{ gameId: string; offerId: string } | null>(null);
   let conversationBody = "";
   let commandSharedMessages = 0;
   let recoveredConversation = $state<{
@@ -117,6 +123,18 @@
       )
     )
       acceptedFleetCommand = null;
+  });
+  $effect(() => {
+    if (!view || !acceptedTrade || pending || view.id !== acceptedTrade.gameId)
+      return;
+    const outcome = view.trades?.ledger.find(
+      (item) => item.id === acceptedTrade?.offerId,
+    );
+    if (!outcome) return;
+    message = `Offer ${outcome.result} · confirmed tick ${outcome.settledTick}.`;
+    error = "";
+    remedy = null;
+    acceptedTrade = null;
   });
   $effect(() => {
     if (game?.migration && pending?.kind === "campaign.migrate") {
@@ -176,6 +194,7 @@
     stopView();
     if (selected !== id && !pending && commandKind.startsWith("fleet.")) {
       acceptedFleetCommand = null;
+      acceptedTrade = null;
       commandKind = "";
       message = "";
     }
@@ -283,6 +302,16 @@
                 body: conversationBody,
               }
             : null;
+          recoveredTrade = pending.kind.startsWith("trade.")
+            ? {
+                id: pending.id,
+                gameId: pending.gameId,
+                action: restored.action as TradeAction,
+              }
+            : null;
+          commandId = pending.id;
+          commandOfferId =
+            "offerId" in restored.action ? restored.action.offerId : "";
           commandVisitRevision =
             restored.action.kind === "campaign.visit"
               ? restored.action.throughRevision
@@ -326,9 +355,11 @@
             new URLSearchParams(location.search).get("briefing") === "return";
           pending = null;
           acceptedFleetCommand = null;
+          acceptedTrade = null;
           commandKind = "";
           conversationReceipt = null;
           recoveredConversation = null;
+          recoveredTrade = null;
           recoveryProblem = null;
           commandRoomId = "";
           conversationBody = "";
@@ -422,6 +453,16 @@
               body: conversationBody,
             }
           : null;
+        acceptedTrade =
+          receipt.status === "accepted" && command.kind.startsWith("trade.")
+            ? {
+                gameId: command.gameId,
+                offerId:
+                  command.kind === "trade.offer"
+                    ? `offer:${view?.own.seat}:${command.id}`
+                    : commandOfferId,
+              }
+            : null;
         const feedback = campaignFeedback(command.kind, receipt, {
           sharedMessages: commandSharedMessages,
         });
@@ -472,7 +513,10 @@
   async function send(id: string, action: CampaignAction) {
     if (busy || pending) return;
     acceptedFleetCommand = null;
+    acceptedTrade = null;
     commandKind = action.kind;
+    commandId = "";
+    commandOfferId = "offerId" in action ? action.offerId : "";
     commandFleetId = "fleetId" in action ? action.fleetId : "";
     commandRoomId = "roomId" in action ? action.roomId : "";
     conversationBody =
@@ -510,6 +554,7 @@
       await claimOrder(account, command);
       if (session !== generation) return;
       pending = command;
+      commandId = command.id;
       dispatch();
     } catch (failure) {
       if (session === generation) failed(failure);
@@ -535,6 +580,7 @@
   async function back() {
     if (!pending && commandKind.startsWith("fleet.")) {
       acceptedFleetCommand = null;
+      acceptedTrade = null;
       commandKind = "";
       message = "";
     }
@@ -568,10 +614,14 @@
       {commandFleetId}
       {commandRoomId}
       {commandVisitRevision}
+      {commandId}
+      {commandOfferId}
+      ontrade={(action) => send(view!.id, action)}
       {returnIntent}
       onreturnHandled={() => (returnIntent = false)}
       {conversationReceipt}
       {recoveredConversation}
+      {recoveredTrade}
       accountId={account ?? undefined}
       onvisit={(throughRevision) =>
         send(view!.id, {

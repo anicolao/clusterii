@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { RecoveredTrade } from "$lib/credit-offers";
   import { tick, onDestroy, untrack } from "svelte";
   import type { Technology } from "@shared/production";
   import { fleetPosition } from "@shared/travel";
@@ -7,6 +8,8 @@
   import type { Allocation } from "@shared/market-focus";
   import SystemConstruction from "../SystemConstruction.svelte";
   import type { Development } from "@shared/construction";
+  import type { TradeAction } from "@shared/trades";
+  import type { CreditDraft } from "$lib/credit-offers";
   import CampaignEconomy from "../CampaignEconomy.svelte";
   import Conversations from "../Conversations.svelte";
   import type { ConversationAction } from "@shared/conversations";
@@ -56,12 +59,16 @@
     onroute,
     onconversation,
     onvisit,
+    ontrade,
+    commandId = "",
+    commandOfferId = "",
     commandRoomId = "",
     commandVisitRevision = 0,
     returnIntent = false,
     onreturnHandled,
     conversationReceipt = null,
     recoveredConversation = null,
+    recoveredTrade = null,
     accountId,
     onbuild,
     oncancel,
@@ -78,6 +85,9 @@
   }: {
     view: CampaignView;
     onvisit?: (revision: number) => void;
+    ontrade?: (action: TradeAction) => void;
+    commandId?: string;
+    commandOfferId?: string;
     loadHistory?: (cursor: HistoryCursor | null) => Promise<HistoryPage>;
     onback: () => void;
     onleave?: () => void;
@@ -100,6 +110,7 @@
       roomId: string;
       body: string;
     } | null;
+    recoveredTrade?: RecoveredTrade | null;
     accountId?: string;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
@@ -127,6 +138,37 @@
   let observation = $state(false);
   let construction = $state(false);
   let economy = $state(false);
+  let exchanging = $state(false),
+    tradeSelection = $state("");
+  let resumedTrade = "";
+  let receivedTradeViews = $state<CampaignView[]>([]);
+  $effect(() => {
+    if (
+      view.trades?.ledger.length &&
+      !receivedTradeViews.some((record) => record.revision === view.revision)
+    )
+      receivedTradeViews = [...receivedTradeViews, view];
+  });
+  $effect(() => {
+    if (
+      !recoveredTrade ||
+      recoveredTrade.gameId !== view.id ||
+      resumedTrade === recoveredTrade.id
+    )
+      return;
+    resumedTrade = recoveredTrade.id;
+    const action = recoveredTrade.action;
+    if (action.kind === "trade.offer")
+      tradeDraft = {
+        seat: String(action.seat),
+        give: String(action.giveMilli / 1000),
+        request: String(action.requestMilli / 1000),
+      };
+    tradeSelection = action.kind === "trade.offer" ? "" : action.offerId;
+    exchanging = true;
+    void openPanel("economy");
+  });
+  let tradeDraft = $state<CreditDraft>({ seat: "", give: "10", request: "0" });
   let history = $state(false);
   let briefingOpen = $state(false);
   $effect(() => {
@@ -1166,6 +1208,14 @@
     >
       <CampaignEconomy
         {view}
+        {ontrade}
+        records={[...records, ...receivedTradeViews]}
+        bind:exchanging
+        bind:tradeSelection
+        bind:tradeDraft
+        {commandId}
+        {commandOfferId}
+        onhistory={() => openPanel("history")}
         onclose={closeEconomy}
         {onresearch}
         {onfocus}

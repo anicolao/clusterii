@@ -1,4 +1,5 @@
 import type { CampaignView } from "@shared/campaign";
+import { commanderSeat } from "./commander-seat";
 export type BriefingCategory =
   | "Control"
   | "Arrivals and losses"
@@ -172,9 +173,7 @@ export function returnBriefing(
             destination: "economy",
           });
       }
-      const own = record.roster.findIndex(
-        (r) => r.faction === record.own.faction,
-      );
+      const own = commanderSeat(record);
       for (const room of record.conversations ?? [])
         for (const message of [room.message, ...(room.sharedMessages ?? [])])
           if (message && !knownMessages.has(message.id)) {
@@ -185,7 +184,10 @@ export function returnBriefing(
               id,
               category: "Messages",
               title: `${room.title} · Message ${message.sequence}`,
-              detail: `Received from ${record.roster[message.author]?.alias}. Message contents remain in your authorized conversation history.`,
+              detail:
+                own === null
+                  ? `Message by ${record.roster[message.author]?.alias}. This historical record does not identify your commander seat, so incoming activity is not inferred. Contents remain in your authorized conversation history.`
+                  : `Received from ${record.roster[message.author]?.alias}. Message contents remain in your authorized conversation history.`,
               tick,
               destination: "conversations",
               roomId: room.id,
