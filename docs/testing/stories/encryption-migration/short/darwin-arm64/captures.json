@@ -1,0 +1,92 @@
+[
+  {
+    "image": "002-connected-devices-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/002-connected-devices-1-epoch-envoy.png",
+    "actualSha256": "252c26881ecec5825d4e7ed7ece3363edb7ac0f7c25d8fe4c0aba63453124124"
+  },
+  {
+    "image": "002-connected-devices-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/002-connected-devices-2-epoch-envoy-second-device.png",
+    "actualSha256": "252c26881ecec5825d4e7ed7ece3363edb7ac0f7c25d8fe4c0aba63453124124"
+  },
+  {
+    "image": "003-pause-for-real-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/003-pause-for-real-1-epoch-envoy.png",
+    "actualSha256": "e394e04dff3ef2aedf8b5cb4909ff7896fb12179ade6025cd2ef2833984c5d1b"
+  },
+  {
+    "image": "003-pause-for-real-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/003-pause-for-real-2-epoch-envoy-second-device.png",
+    "actualSha256": "eac4c7bbd7267f42357af8459984f3da8bbdebe2b0f7bd1783b234a1162da658"
+  },
+  {
+    "image": "004-choose-real-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/004-choose-real-1-epoch-envoy.png",
+    "actualSha256": "0b12c9108a5156c279ed0ca80ba809fb7a2391b2e92af915f879c3b15ee52a54"
+  },
+  {
+    "image": "004-choose-real-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/004-choose-real-2-epoch-envoy-second-device.png",
+    "actualSha256": "eac4c7bbd7267f42357af8459984f3da8bbdebe2b0f7bd1783b234a1162da658"
+  },
+  {
+    "image": "005-verified-real-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/005-verified-real-1-epoch-envoy.png",
+    "actualSha256": "339b0ab969f8ce866c9b3d0842f6b48f0166f99057fea9ee3a905bee28161e80"
+  },
+  {
+    "image": "005-verified-real-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/005-verified-real-2-epoch-envoy-second-device.png",
+    "actualSha256": "5783b7ab32e6dc5cfd7cc318436d8ddb274f550bc0fe1f41cabdcd2ae2bd17bf"
+  },
+  {
+    "image": "006-recover-real-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/006-recover-real-1-epoch-envoy.png",
+    "actualSha256": "5783b7ab32e6dc5cfd7cc318436d8ddb274f550bc0fe1f41cabdcd2ae2bd17bf"
+  },
+  {
+    "image": "006-recover-real-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/006-recover-real-2-epoch-envoy-second-device.png",
+    "actualSha256": "5783b7ab32e6dc5cfd7cc318436d8ddb274f550bc0fe1f41cabdcd2ae2bd17bf"
+  },
+  {
+    "image": "007-pause-for-mock-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/007-pause-for-mock-1-epoch-envoy.png",
+    "actualSha256": "40e4b6f164bfc46bf0ddc9c85886565ce0303f3cb85512e5dd97f78623d2bb9c"
+  },
+  {
+    "image": "007-pause-for-mock-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/007-pause-for-mock-2-epoch-envoy-second-device.png",
+    "actualSha256": "90f0883fca1cac30e2298a3f09a4918991bc9929ef09f935b8ff257c1e5bee2d"
+  },
+  {
+    "image": "008-choose-mock-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/008-choose-mock-1-epoch-envoy.png",
+    "actualSha256": "a8fa03d18b13eb10a8f79c97924844dcfd41c434bc7676a481f44ba35fda36b4"
+  },
+  {
+    "image": "008-choose-mock-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/008-choose-mock-2-epoch-envoy-second-device.png",
+    "actualSha256": "90f0883fca1cac30e2298a3f09a4918991bc9929ef09f935b8ff257c1e5bee2d"
+  },
+  {
+    "image": "009-verified-mock-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/009-verified-mock-1-epoch-envoy.png",
+    "actualSha256": "339b0ab969f8ce866c9b3d0842f6b48f0166f99057fea9ee3a905bee28161e80"
+  },
+  {
+    "image": "009-verified-mock-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/009-verified-mock-2-epoch-envoy-second-device.png",
+    "actualSha256": "252c26881ecec5825d4e7ed7ece3363edb7ac0f7c25d8fe4c0aba63453124124"
+  },
+  {
+    "image": "010-recover-mock-1-epoch-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/010-recover-mock-1-epoch-envoy.png",
+    "actualSha256": "252c26881ecec5825d4e7ed7ece3363edb7ac0f7c25d8fe4c0aba63453124124"
+  },
+  {
+    "image": "010-recover-mock-2-epoch-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-migration/short/darwin-arm64/010-recover-mock-2-epoch-envoy-second-device.png",
+    "actualSha256": "252c26881ecec5825d4e7ed7ece3363edb7ac0f7c25d8fe4c0aba63453124124"
+  }
+]
