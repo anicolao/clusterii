@@ -170,3 +170,12 @@ Pinned Linux receipt comparison passes eight new journeys within the 56-story co
 - desktop: [Identity mismatch](stories/identity-receipt-recovery/desktop/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/desktop/linux-arm64/README.md).
 - large: [Identity mismatch](stories/identity-receipt-recovery/large/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/large/linux-arm64/README.md).
 - short: [Identity mismatch](stories/identity-receipt-recovery/short/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/short/linux-arm64/README.md).
+
+## Verified Linux navigation narratives
+
+All68 stories pass at f9efa01; these twelve narratives contribute97 captures. Replacement readiness-repair CI and independent visual/motion/hosted gates remain open.
+
+- phone: [Admission](stories/campaign-admission-navigation/phone/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/phone/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/phone/linux-arm64/README.md).
+- desktop: [Admission](stories/campaign-admission-navigation/desktop/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/desktop/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/desktop/linux-arm64/README.md).
+- large: [Admission](stories/campaign-admission-navigation/large/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/large/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/large/linux-arm64/README.md).
+- short: [Admission](stories/campaign-admission-navigation/short/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/short/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/short/linux-arm64/README.md).

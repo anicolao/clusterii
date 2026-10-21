@@ -186,3 +186,5 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Preserve corrected parent verification counts in the navigation dependency table.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive eight verified Linux receipt narratives after the 56-story strict comparison passes.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified receipt narratives and promote reviewed Linux navigation candidates for strict comparison.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Diagnose retained Linux popup readiness and unstable identity text pixels without weakening exact comparison.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry bounded login and actual-frame readiness repairs into navigation with verified predecessor evidence.
