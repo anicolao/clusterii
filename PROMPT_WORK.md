@@ -213,3 +213,9 @@ Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | A
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Register research lab PR49 dependency, preview and scoped evidence in the acceptance table.
 
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Place the research lab dependency row inside the acceptance table without changing its scoped review gates.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into feedback-lab-stories, preserving exact comparisons.
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into identity-gallery-stories, preserving exact comparisons.
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into lifecycle-lab-stories, preserving exact comparisons.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into research-lab-stories, preserving exact comparisons.
