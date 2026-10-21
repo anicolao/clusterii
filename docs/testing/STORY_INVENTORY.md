@@ -17,8 +17,8 @@ The UX inventory is required coverage, not a completion claim. “Procedural” 
 | UX-11 Cooperate and exchange | credit-offers                                                                                                   | Procedural credit offer/accept/withdraw/settle/privacy. Illustrated normal and interrupted exchange stories remain open. Report exchange, alliances and departure gameplay are incomplete.                            |
 | UX-12 Return informed        | briefing, history                                                                                               | Paged history is migrated through two devices, explicit latest recovery and reload; private visit, entry prompting and co-faction regressions remain procedural.                                                      |
 | UX-13 Finish and begin again | none                                                                                                            | Victory, final settlement and repeated-game loop are not implemented.                                                                                                                                                 |
-| UX-14 Recover commitments    | profile-recovery.story, receipt-binding, migration, maintenance.story, session-security, construction, conversations, credit-offers | Identity conflict, repeat-safe pending/retry and keyboard return have 12 exact local journeys/92 captures; history recovery also has local and Linux evidence. Other fault journeys remain procedural; hosted OAuth/Scheduler and compromise-key lifecycle gaps remain explicit. |
-| UX-15 Navigate and learn     | entry.story / identity.story, invitation, session-security                                                      | Entry and all four Learn chapters now have exact local illustrated evidence. Full contextual rules/settings/safe-departure story remains open.                                                                        |
+| UX-14 Recover commitments    | profile-recovery.story, receipt-binding, migration, maintenance.story, session-recovery.story, construction, conversations, credit-offers | Identity conflict, repeat-safe pending/retry and keyboard return have 12 exact local journeys/92 captures; history recovery also has local and Linux evidence. Other fault journeys remain procedural; hosted OAuth/Scheduler and compromise-key lifecycle gaps remain explicit. |
+| UX-15 Navigate and learn     | entry.story / identity.story, invitation, session-recovery.story                                                      | Entry and all four Learn chapters now have exact local illustrated evidence. Full contextual rules/settings/safe-departure story remains open.                                                                        |
 | UX-16 Every input            | geometry, identity-validation.story, lab, profile-recovery.story                                                                        | Existing keyboard/geometry/motion checks remain. The first stories cover keyboard Learn/focus and four viewports; complete text enlargement, native-keyboard, contrast and motion story coverage remains open.        |
 
 ## Enforcement and evidence
@@ -119,6 +119,15 @@ Eight invitation journeys/72 captures pass within the 36-story pinned Linux run 
 - large: [First admission](stories/invitation-first-admission/large/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/large/linux-arm64/README.md).
 - short: [First admission](stories/invitation-first-admission/short/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/short/linux-arm64/README.md).
 
+## Device recovery narratives
+
+Eight session journeys/104 exact local captures cover both devices during cancelled confirmation, persisted worker interruption, reload recovery, acknowledged sign-out and saved-identity restoration. Four unchanged identity stories also pass: 12 combined journeys/124 captures. Linux, independent composition/motion review and hosted Google acceptance remain open.
+
+- phone: [Cancelled confirmation](stories/session-cancelled-confirmation/phone/darwin-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/phone/darwin-arm64/README.md).
+- desktop: [Cancelled confirmation](stories/session-cancelled-confirmation/desktop/darwin-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/desktop/darwin-arm64/README.md).
+- large: [Cancelled confirmation](stories/session-cancelled-confirmation/large/darwin-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/large/darwin-arm64/README.md).
+- short: [Cancelled confirmation](stories/session-cancelled-confirmation/short/darwin-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/short/darwin-arm64/README.md).
+
 ## Verified Linux maintenance narratives
 
 Four maintenance journeys/52 captures pass within the 40-story Linux run 39632014899.
@@ -127,3 +136,12 @@ Four maintenance journeys/52 captures pass within the 40-story Linux run 3963201
 - [desktop](stories/maintenance-admission-recovery/desktop/linux-arm64/README.md).
 - [large](stories/maintenance-admission-recovery/large/linux-arm64/README.md).
 - [short](stories/maintenance-admission-recovery/short/linux-arm64/README.md).
+
+## Verified Linux device narratives
+
+All 48 stories pass in run39635580827; the eight device journeys contribute 104 exact captures. Independent visual/motion and hosted gates remain open.
+
+- phone: [Cancelled confirmation](stories/session-cancelled-confirmation/phone/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/phone/linux-arm64/README.md).
+- desktop: [Cancelled confirmation](stories/session-cancelled-confirmation/desktop/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/desktop/linux-arm64/README.md).
+- large: [Cancelled confirmation](stories/session-cancelled-confirmation/large/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/large/linux-arm64/README.md).
+- short: [Cancelled confirmation](stories/session-cancelled-confirmation/short/linux-arm64/README.md), [Interrupted recovery](stories/session-interrupted-recovery/short/linux-arm64/README.md).

@@ -229,6 +229,7 @@
             ++generation;
             ++profileWatch;
             error = "";
+            message = "";
             remedy = "none";
             stopProfile();
             stopCampaigns();

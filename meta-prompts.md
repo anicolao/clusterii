@@ -886,3 +886,31 @@ Independently reviewed one-line production fix clearing account-scoped profile f
 Agent now migrating receipt recovery, independently identifies stale completed feedback on new identity/campaign drafts and retains pre-fix screenshots. Reviewed pending changes: identity form input and new campaign draft clear message only when neither busy nor pending; errors separate and pending states preserved. Baselines must be separately reviewed for this visible change, not silently refreshed. Sampled final phone interrupted-session capture from #40: recoverable error with explicit sign-out action and inspectable-development disclosure, supporting only scoped visual review. Agent healthy, no duplicate intervention. Carry latest checkpoint in related committed/pushed logs; current-head/full-visual/hosted gates remain, no merge.
 
 Capture clarification: the sampled interrupted-session screen shows Confirm with Google and retry guidance; no inspectable-development disclosure is visible in that particular frame. The preceding wording overstated that sampled evidence.
+
+
+## Reviewer progress — 2026-10-21 12:28 Toronto
+
+#35 133a5bc and #36 a32e231 now fully green including ordinary application CI. #37–38 ordinary checks pending, stories green. Maintenance review records Linux40 stories326 captures8.7min at b26396c/run39632014899, archived in #39 894f79f; fresh-head checks pending. #40 prior verify failure independently retained /tmp/cluster40-story-review-failure.log: missing new session Linux baselines; generation succeeds, separate review/promotion required.
+
+#41 receipt-recovery stories opened correctly on #40 and attached; local6f488c3 carries maintenance review evidence. Read final review: eight receipt journeys48 exact captures plus20 existing identity-related comparisons unchanged; isolated production IndexedDB cleanup regression preserved as browser integration, not mislabeled story. Pending/error behavior preserved while stale completed feedback cleared on new drafts. Source review from prior checkpoint stands; current-head Linux/application/full visual gates remain. Agent healthy, no duplicate handoff. Carry latest supervisory log into related committed/pushed work; no merge.
+
+
+## Reviewer progress — 2026-10-21 12:38 Toronto
+
+#37 b16897e now fully green including ordinary application CI. #39 894f79f story checks green, application pending; #38 same status. #40 c8e0415 reviewed Linux session candidates promoted with comparison pending; #41 775e6ad carries dependency and tests running. Agent healthy on campaign-navigation story migration, no new PR or blocker.
+
+Independently inspected new step inventory: campaign proposal, faction/portrait/rules review, acknowledged seat, waiting entry, directory recovery/reload, focus restoration, released membership and map filters are separately named. Pending production copy correction removes obsolete claim that economy/conquest do not run and retains explicit disabled victory evaluation, consistent with current implementation scope; no rule approval implied. Session baseline review remains explicit that new104 Linux captures are candidates, not exact comparison/independent acceptance. No duplicate handoff. Carry latest checkpoint into related committed/pushed work; current-head/full-visual/motion/hosted gates remain, no merge.
+
+
+## Reviewer progress — 2026-10-21 12:48 Toronto
+
+Agent is actively compacting after campaign navigation work, not stalled; no duplicate prompt. #37 fully green; #38–39 stories green/application pending; #40–41 current story/application checks pending, no new completed failure at inspection.
+
+Independent pending source review: entry Play and Learn Enter now disable while authenticated saved profile is unresolved, preventing premature identity editor navigation after reload. New story/review identifies four-size returning-player race and retains immediate-click directory expectation rather than introducing sleeps. Procedural predecessor remains until replacement passes; catalogue class fixture correction explicitly recorded separately. No full validation or visual acceptance yet. Carry latest checkpoint into related committed/pushed logs; current-head/normal-motion/hosted/full composition gates remain, no merge.
+
+
+## Reviewer progress — 2026-10-21 12:58 Toronto
+
+Agent resumed normally and independently confirmed retained /tmp/cluster-navigation-exact.log reports28 passed2.9min. New navigation/readiness candidate review documents12 journeys97 captures, existing images unchanged; full independent composition (particularly compact4K), Linux and motion gates explicit. Held-profile harness forwards real request rather than fabricating saved identity; prior source review of readiness guard stands. No successor PR yet, work remains uncommitted.
+
+#40 c8e0415 Linux story comparison now green; application pending, publication status not returned at inspection. #41 775e6ad generation green, verify failure independently retained /tmp/cluster41-story-review-failure.log shows missing new receipt-recovery Linux baselines; separate candidate review/promotion required. #38–39 story checks green/application pending; #37 fully green. No new blocker or duplicate handoff. Carry checkpoint into related committed/pushed logs; no full acceptance or merge.
