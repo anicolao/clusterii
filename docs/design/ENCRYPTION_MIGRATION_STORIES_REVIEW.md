@@ -1,0 +1,13 @@
+# Illustrated encryption migration
+
+A developer pauses a waiting campaign, chooses managed encryption, commits the migration and recovers the new epoch after reload. A second authenticated device observes the authoritative pause and mode change. The same sequence returns to inspectable encryption while preserving the explicit warning that real encryption cannot undo prior mock exposure.
+
+The story uses actual Cloud KMS, real encrypted ingress, migration workers, persistence and recipient delivery. Read-only canonical checks require each recorded revision, epoch and envelope algorithm; managed epochs require KMS wrapping without a plaintext canonical key. The uncommitted selection must not alter the other device. Intermediate progress must receive focus; verified completion restores chart focus. Variable worker progress counts are asserted during the action rather than promoted as deterministic screenshots.
+
+This is one recipient on two devices, not multi-recipient or worker-fault coverage. Existing lease fencing, abandoned-worker recovery, paged-history and cleanup evidence remains in [Mode migration review](MODE_MIGRATION_REVIEW.md). No gameplay rules or production behavior change. Default CI explicitly skips this actual-provider story; managed execution and exact visual comparison require credentials. Hosted authentication, complete cryptographic review, independent composition/motion/keyboard/text-enlargement acceptance and full milestone completion remain separate gates.
+
+Base: `feat/encryption-choice-stories` (#44). The procedural predecessor remains until the illustrated replacement passes exact comparison. Candidate generation is not acceptance.
+
+First generation passes all four journeys in1.8 minutes, but implementer inspection found the short-viewport pause receipt clipped above its scroll boundary. Original candidates are retained at `/tmp/cluster-migration-pause-before`. The pause review now scrolls the actual receipt into view and asserts full panel containment before capture. No pixels or production content are hidden. Fresh candidates and exact comparison are required.
+
+Exact local comparison passes all four actual-KMS journeys and72 captures in1.8 minutes (`/tmp/cluster-migration-story-exact.log`). Verified narratives are archived; the procedural predecessor is removed only after this replacement passes. Type checks, lint, nine story-policy/clock/catalogue checks and13 prompt-hook checks pass. Default CI remains explicitly unconfigured for managed execution; current-head CI and independent/hosted acceptance remain open.
