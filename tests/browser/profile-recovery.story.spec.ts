@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { writeFile } from "node:fs/promises";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import {
@@ -369,25 +370,28 @@ test("Retry a pending identity command without duplicate effects or draft loss",
           expect(Number(accepted.fields.revision.integerValue)).toBe(
             after.revision,
           );
-          await info.attach("Idempotent reconnect evidence", {
-            body: Buffer.from(
-              JSON.stringify(
-                {
-                  transportFrames: writes.length,
-                  logicalCommands: 1,
-                  commandId,
-                  payloadSha256: createHash("sha256")
-                    .update(JSON.stringify(logical[0].d))
-                    .digest("hex"),
-                  beforeRevision: before.revision,
-                  afterRevision: after.revision,
-                  versionCount: after.versions.length,
-                  receiptCount: after.receipts.length,
-                },
-                null,
-                2,
-              ),
+          const evidencePath = info.outputPath("idempotent-reconnect.json");
+          await writeFile(
+            evidencePath,
+            JSON.stringify(
+              {
+                transportFrames: writes.length,
+                logicalCommands: 1,
+                commandId,
+                payloadSha256: createHash("sha256")
+                  .update(JSON.stringify(logical[0].d))
+                  .digest("hex"),
+                beforeRevision: before.revision,
+                afterRevision: after.revision,
+                versionCount: after.versions.length,
+                receiptCount: after.receipts.length,
+              },
+              null,
+              2,
             ),
+          );
+          await info.attach("Idempotent reconnect evidence", {
+            path: evidencePath,
             contentType: "application/json",
           });
           await expect(page.getByLabel("Commander name")).toBeEnabled();

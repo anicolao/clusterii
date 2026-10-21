@@ -15,3 +15,5 @@ Type checking reports zero errors/warnings and all six story-policy/catalogue gu
 ## Remaining gates
 
 Pinned Linux generation/review/exact comparison, current-head CI and independent full visual review remain pending. Emulator Google authentication does not certify hosted Google login. Normal-motion parity, native keyboard, text enlargement, other session/key recovery and remaining gameplay story migrations are explicitly incomplete. No gameplay proposal is approved by this test migration. No PR is merged.
+
+The final file-attachment rerun also passes all four sizes; all four `idempotent-reconnect.json` files are retained in the story artifact with command UUID, payload digest, frame count and canonical counts. In-memory attachments alone are not relied on for passing list-reporter runs.

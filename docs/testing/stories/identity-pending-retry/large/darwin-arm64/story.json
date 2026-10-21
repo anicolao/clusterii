@@ -7,10 +7,10 @@
   ],
   "description": "A commander saves an identity, loses the network, preserves a pending draft through an explicit retry and reconnect, and recovers it after reload. Actual transport frames and read-only canonical receipts distinguish retransmission from duplicate logical commands.",
   "source": {
-    "commit": "f2eee49082a1ce8b38e37bd0fe3d42aaaf6d0545",
+    "commit": "6e8995d0c81d9769bbfb95b3b5f1a6e0af723986",
     "dirty": true,
     "spec": "tests/browser/profile-recovery.story.spec.ts",
-    "specSha256": "182f222b36536edea5b116c0778d2530a1c36affe04771a85ec142e0ef98c012"
+    "specSha256": "2aaf2f70959a4efa7569b20895d1cd76dabe0479766580392688ca54ca3c8ac8"
   },
   "mode": "verify",
   "status": "passed",
