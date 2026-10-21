@@ -128,3 +128,5 @@ Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | C
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Complete selected-history sharing evidence and carry the verified inspector correction while preserving resource-failure traces.
 
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Render selected-history grants in the retained campaign archive and verify a removed recipient can still read previously granted messages.
+
+Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Continue Prompt 37 with a private persisted visit checkpoint and returning-player briefing, reusing the clean checkout to conserve disk.

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
   import { RecoveryValidation } from "$lib/recovery-store";
   import { ReceiptMismatch } from "@shared/command-receipt";
@@ -25,6 +26,7 @@
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import {
     conversationFrame,
+    briefingFrame,
     sharingFrame,
     draftRecoveryFrame,
     arrivalFrame,
@@ -318,6 +320,20 @@
             onretryDraft={() => {}}
             onuseSavedDraft={() => {}}
             onreplaceDraft={() => {}}
+          />
+        </div>{/each}
+      <h2>Return briefing · recovery and visit acknowledgement</h2>
+      {#each [0, 1200, 1600, 1800, 2200, 3200, 3800, 4200] as time}<div
+          style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <ReturnBriefing
+            {...briefingFrame(time)}
+            onearlier={() => {}}
+            onlatest={() => {}}
+            onretry={() => {}}
+            oninspect={() => {}}
+            onconfirm={() => {}}
+            onclose={() => {}}
           />
         </div>{/each}
       <h2>Selected earlier history · scope and acceptance</h2>

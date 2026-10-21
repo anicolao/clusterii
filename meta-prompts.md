@@ -640,3 +640,33 @@ Reviewer resource finding: independently confirmed only 855 MiB free on the Data
 Sharing work has reported both-provider328 assertions, nine mock/browser/lab cases and managed-key ordinary journey; no new PR yet. Independently reviewed invitation-phone capture: explicit one-message selection, metadata without body before acceptance, no-alliance/military-access caveat and contained Accept/Decline/Back controls. Current index/worktree diff checks show no remaining conflict markers after propagation. Agent deploying compatible consumers then admission and preserving source/prompt history.
 
 Disk remains constrained at638MiB despite documented removal of ignored reproducible prior builds; source/captures/failure traces retained. Existing resource handoff remains queued/recorded, no duplicate prompt. Agent active, no stall. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 07:07 Toronto
+
+New #31 30fb0ff correctly stacks on command-recovery and is attached to supervisor chat. Publication/documentation green; verification pending with #29/#30. Agent reused the history worktree on feat/return-briefing at #31 HEAD; only continuation/doc work was dirty during independent npm run check, which passed zero Svelte errors/warnings and backend TypeScript. Logs through06:57 carried in sharing work.
+
+Independent final archive diff uses the same authorized conversation-message projection in Campaign History, preserving selected grants after removal without synthesizing other messages. Retained phone capture shows original author/message identity and historical-access caveat, with readable body and contained footer. Implementer final evidence reports ten both-provider browser/gallery/lab cases2.6min, both-provider service328, units75/1387 and six ACTIVE Node22 consumers/admission. These do not grant full privacy/hosted/release acceptance.
+
+Return briefing now active as next slice, proposing private monotonic acknowledged-visit checkpoints and explicitly incomplete loaded-history summaries. No new handoff/stall. Disk remains limited at482MiB; existing resource instruction remains applicable. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 07:17 Toronto
+
+#29–31 heads unchanged, verification running, publication/documentation green. Return briefing active/uncommitted; agent reports79 units/1424 and is adding both-provider service/gallery/lab coverage while addressing a current type error. No new PR or demonstrated stall.
+
+Preliminary independent source review confirms visit references are bounded to an authorized active-campaign canonical record, checkpoints cannot regress on an older device, and only the requesting account's visit is projected. Briefing summary requires its exact baseline before claiming changes, deduplicates authorized message/arrival events and keeps message bodies in existing history. Full paged-range continuity, concurrent refresh/checkpoint/reload, both-provider and rendered evidence remain required; automatic entry prompting explicitly remains incomplete. Disk419MiB, existing resource handoff remains applicable without duplication. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 07:27 Toronto
+
+#29–31 heads unchanged with verification running and publication/documentation green. Return briefing active/uncommitted. Independent service-log inspection confirms two both-provider visit cases,130 assertions,0fail covering baseline authorization, paused acknowledgement, monotonic replay and migration. Browser journey remains under repair/rerun; seven gallery/lab passes do not establish the ordinary journey.
+
+Agent identified acknowledgement-triggered subscription restart/focus loss. Independent routing diff now explicitly restarts only create/join/leave/migrate, preserving visit UI state; final browser evidence still required. Paging/baseline corrections likewise remain under validation. Disk headroom has improved to2.6GiB, independently checked; no additional resource handoff needed. Agent healthy and working, no duplicate prompt. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 07:37 Toronto
+
+#29–31 verification still running with publication/documentation green; no new PR. Briefing active/uncommitted, agent running broader service regression and completing lab recovery states. Independent unit log confirms80pass/1430 assertions. Earlier browser3 log still records one failed ordinary journey with eight passes; do not promote those partial results to final browser approval.
+
+Independent phone capture reviewed against UX return-briefing requirements: explicit confirmed tick range, grouped economy events, bounded readable cards, visible save/back controls and clear notice that reading does not mark messages read. This supports the sampled economy state only; mixed-category priorities, pending/recovery and all navigation states remain review gates. Automatic entry prompting remains disclosed as incomplete. Disk1.7GiB; no stall or duplicate handoff. Carry checkpoint into related committed/pushed logs; no acceptance or merge.

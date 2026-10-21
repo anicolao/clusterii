@@ -19,6 +19,8 @@
   import { arrivalRecords } from "$lib/arrival-reports";
   import FleetContacts from "../FleetContacts.svelte";
   import { type FleetContact, lastFleetContacts } from "@shared/fleet-contacts";
+  import ReturnBriefing from "../ReturnBriefing.svelte";
+  import type { BriefingEvent } from "$lib/return-briefing";
   import CampaignHistory from "../CampaignHistory.svelte";
   import {
     HistoryEpochChanged,
@@ -53,7 +55,9 @@
     oncancelFleet,
     onroute,
     onconversation,
+    onvisit,
     commandRoomId = "",
+    commandVisitRevision = 0,
     conversationReceipt = null,
     recoveredConversation = null,
     accountId,
@@ -71,6 +75,7 @@
     pending = false,
   }: {
     view: CampaignView;
+    onvisit?: (revision: number) => void;
     loadHistory?: (cursor: HistoryCursor | null) => Promise<HistoryPage>;
     onback: () => void;
     onleave?: () => void;
@@ -83,6 +88,7 @@
     onroute?: (fleetId: string, waypoints: string[]) => void;
     onconversation?: (action: ConversationAction) => void;
     commandRoomId?: string;
+    commandVisitRevision?: number;
     conversationReceipt?: ConversationReceipt | null;
     recoveredConversation?: {
       id: string;
@@ -118,6 +124,89 @@
   let construction = $state(false);
   let economy = $state(false);
   let history = $state(false);
+  let briefingOpen = $state(false);
+  let briefingSnapshot = $state<CampaignView | null>(null);
+  let visitRequested = $state(false);
+  let visitRecoveryRevision = $state<number | null>(null);
+  $effect(() => {
+    if (
+      briefingOpen &&
+      pending &&
+      commandKind === "campaign.visit" &&
+      commandVisitRevision > 0 &&
+      visitRecoveryRevision !== commandVisitRevision
+    ) {
+      visitRecoveryRevision = commandVisitRevision;
+      visitRequested = true;
+    }
+  });
+  $effect(() => {
+    if (briefingOpen && visitRecoveryRevision != null) {
+      const recovered = records.find(
+        (record) => record.revision === visitRecoveryRevision,
+      );
+      if (recovered && briefingSnapshot?.revision !== recovered.revision)
+        briefingSnapshot = recovered;
+    }
+  });
+  $effect(() => {
+    if (
+      visitRequested &&
+      !pending &&
+      !busy &&
+      commandKind === "campaign.visit" &&
+      message === "Visit saved. No messages were marked read."
+    ) {
+      visitRequested = false;
+      void closeBriefing();
+    }
+  });
+  async function closeBriefing() {
+    briefingOpen = false;
+    historySerial++;
+    historyLoading = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="history"]')?.focus();
+  }
+  async function inspectBriefing(event: BriefingEvent) {
+    briefingOpen = false;
+    if (event.destination === "system" && event.starId) {
+      selected = event.starId;
+      observation = true;
+      await tick();
+      document.querySelector<HTMLElement>(".system-details")?.focus();
+    } else {
+      if (event.destination === "arrivals" && event.starId)
+        selectedArrival = `${event.tick}:${event.starId}`;
+      if (
+        event.roomId &&
+        !view.conversations.some((room) => room.id === event.roomId)
+      ) {
+        await openPanel("history");
+        const record = records.find((record) =>
+          conversationMessages([record], event.roomId!).some(
+            (message) => `message:${message.id}` === event.id,
+          ),
+        );
+        if (record) {
+          await tick();
+          const details = document.querySelector<HTMLDetailsElement>(
+            `details[aria-label="Campaign record ${record.revision}"]`,
+          );
+          if (details) {
+            details.open = true;
+            details.scrollIntoView({ block: "nearest" });
+            details.querySelector<HTMLElement>("summary")?.focus();
+          }
+        }
+        return;
+      }
+      if (event.roomId) selectedRoom = event.roomId;
+      await openPanel(
+        event.destination === "system" ? "history" : event.destination,
+      );
+    }
+  }
   let contactsOpen = $state(false);
   let records = $state<CampaignView[]>([]);
   let arrivalsOpen = $state(false);
@@ -383,7 +472,11 @@
     await tick();
     if (serial !== historySerial) return;
     if (
-      (history || contactsOpen || arrivalsOpen || conversationsOpen) &&
+      (briefingOpen ||
+        history ||
+        contactsOpen ||
+        arrivalsOpen ||
+        conversationsOpen) &&
       document.activeElement === document.body
     )
       document.querySelector<HTMLElement>(".history-panel")?.focus();
@@ -421,7 +514,11 @@
         historyLoading = false;
         await tick();
         if (
-          (history || contactsOpen || arrivalsOpen || conversationsOpen) &&
+          (briefingOpen ||
+            history ||
+            contactsOpen ||
+            arrivalsOpen ||
+            conversationsOpen) &&
           serial === historySerial &&
           document.activeElement === document.body
         ) {
@@ -506,6 +603,7 @@
       | "conversations"
       | "arrivals"
       | "contacts"
+      | "briefing"
       | "history"
       | "economy"
       | "construction"
@@ -515,11 +613,27 @@
     construction = kind === "construction";
     economy = kind === "economy";
     history = kind === "history";
+    briefingOpen = kind === "briefing";
+    if (briefingOpen) {
+      briefingSnapshot = structuredClone($state.snapshot(view));
+      visitRequested = commandKind === "campaign.visit" && pending;
+      visitRecoveryRevision = visitRequested ? commandVisitRevision : null;
+      const recovered =
+        visitRecoveryRevision == null
+          ? null
+          : records.find((record) => record.revision === visitRecoveryRevision);
+      if (recovered) briefingSnapshot = recovered;
+      void readHistory();
+    }
     contactsOpen = kind === "contacts";
     arrivalsOpen = kind === "arrivals";
     conversationsOpen = kind === "conversations";
     if (
-      (history || contactsOpen || arrivalsOpen || conversationsOpen) &&
+      (briefingOpen ||
+        history ||
+        contactsOpen ||
+        arrivalsOpen ||
+        conversationsOpen) &&
       !records.length &&
       !historyLoading
     )
@@ -532,7 +646,13 @@
       document.querySelector<HTMLElement>(".construction-panel")?.focus();
     else if (economy)
       document.querySelector<HTMLElement>(".economy-panel")?.focus();
-    else if (history || contactsOpen || arrivalsOpen || conversationsOpen)
+    else if (
+      briefingOpen ||
+      history ||
+      contactsOpen ||
+      arrivalsOpen ||
+      conversationsOpen
+    )
       document.querySelector<HTMLElement>(".history-panel")?.focus();
     else if (listing) document.getElementById("system-search")?.focus();
     else document.querySelector<HTMLElement>(".roster-panel")?.focus();
@@ -560,23 +680,25 @@
   function panelKeys(event: KeyboardEvent) {
     if (event.key === "Escape") {
       event.preventDefault();
-      void (military
-        ? closeMilitary()
-        : construction
-          ? closeConstruction()
-          : economy
-            ? closeEconomy()
-            : conversationsOpen
-              ? closeConversations()
-              : arrivalsOpen
-                ? closeArrivals()
-                : contactsOpen
-                  ? closeContacts()
-                  : history
-                    ? closeHistory()
-                    : roster
-                      ? closeRoster()
-                      : closeList());
+      void (briefingOpen
+        ? closeBriefing()
+        : military
+          ? closeMilitary()
+          : construction
+            ? closeConstruction()
+            : economy
+              ? closeEconomy()
+              : conversationsOpen
+                ? closeConversations()
+                : arrivalsOpen
+                  ? closeArrivals()
+                  : contactsOpen
+                    ? closeContacts()
+                    : history
+                      ? closeHistory()
+                      : roster
+                        ? closeRoster()
+                        : closeList());
       return;
     }
     if (event.key !== "Tab") return;
@@ -623,6 +745,7 @@
     class="command-rail"
     inert={roster ||
       listing ||
+      briefingOpen ||
       history ||
       contactsOpen ||
       arrivalsOpen ||
@@ -658,6 +781,7 @@
   {#if !roster && !commandKind.startsWith("conversation.")}<div
       class="acknowledgement"
       inert={listing ||
+        briefingOpen ||
         history ||
         contactsOpen ||
         arrivalsOpen ||
@@ -677,6 +801,7 @@
     class="chart"
     inert={roster ||
       listing ||
+      briefingOpen ||
       history ||
       contactsOpen ||
       arrivalsOpen ||
@@ -725,6 +850,7 @@
   <aside
     inert={roster ||
       listing ||
+      briefingOpen ||
       history ||
       contactsOpen ||
       arrivalsOpen ||
@@ -1031,6 +1157,47 @@
         {onretry}
       />
     </div>{/if}
+  {#if briefingOpen && briefingSnapshot}<div
+      class="construction-panel contact-panel history-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Return briefing panel"
+      tabindex="-1"
+      onkeydown={panelKeys}
+    >
+      <ReturnBriefing
+        snapshot={briefingSnapshot}
+        {records}
+        loading={historyLoading}
+        earlier={!!cursor}
+        newer={view.revision > briefingSnapshot.revision &&
+          !(pending && commandKind === "campaign.visit")}
+        pending={pending && commandKind === "campaign.visit"}
+        preparing={busy && !pending && commandKind === "campaign.visit"}
+        blocked={(pending || busy) && commandKind !== "campaign.visit"}
+        recovering={visitRecoveryRevision != null &&
+          briefingSnapshot.revision !== visitRecoveryRevision}
+        message={commandKind === "campaign.visit" && (visitRequested || pending)
+          ? message
+          : ""}
+        error={historyError ||
+          (commandKind === "campaign.visit" && (visitRequested || pending)
+            ? error
+            : "")}
+        onearlier={() => readHistory(cursor)}
+        onlatest={() => {
+          briefingSnapshot = structuredClone($state.snapshot(view));
+          void readHistory();
+        }}
+        onretry={() => (historyError ? readHistory(retryCursor) : onretry?.())}
+        oninspect={inspectBriefing}
+        onconfirm={(revision) => {
+          visitRequested = true;
+          onvisit?.(revision);
+        }}
+        onclose={closeBriefing}
+      />
+    </div>{/if}
   {#if history}<div
       class="history-panel"
       role="dialog"
@@ -1048,6 +1215,9 @@
         onearlier={() => readHistory(cursor)}
         onlatest={() => readHistory()}
         onretry={() => readHistory(retryCursor)}
+        onbriefing={view.briefingEnabled && onvisit
+          ? () => openPanel("briefing")
+          : undefined}
         onclose={closeHistory}
       />
     </div>{/if}
