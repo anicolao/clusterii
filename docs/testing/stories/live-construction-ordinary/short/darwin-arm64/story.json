@@ -1,0 +1,368 @@
+{
+  "id": "live-construction-ordinary",
+  "title": "Reserve, complete and cancel developments",
+  "inventory": [
+    "UX-05",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
+  "source": {
+    "commit": "c13dce5e71022b0a58ee2b32721cb246e7bacb2c",
+    "dirty": false,
+    "spec": "tests/browser/construction.story.spec.ts",
+    "specSha256": "0e71ff1069ed41b3d9a3449d8cecbabbe2bc0c551f4f5988b9e967d4150f654d"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "short",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-development",
+      "description": "Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The development quote shows69 credits and131 after reservation, with one completed training camp.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "010-inspect-development-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "010-inspect-development-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-build",
+      "description": "Read the authoritative construction acknowledgement and credit reservation.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Construction order accepted accompanies a queued camp eligible at tick1.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Exactly one command revision reserves69 credits; the orbital count and every other wallet are unchanged."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "011-reserve-build-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "011-reserve-build-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-reservation",
+      "description": "Reload the accepted work and reopen Develop to recover the same queue and balance.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The persisted queue remains eligible at tick1 with131 credits available.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reload creates no command, revision or additional debit."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "012-reload-reservation-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "012-reload-reservation-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "advance-to-completion",
+      "description": "Deliver five explicit production boundaries through the actual leased tick service. The first starts the build, four subsequent advances finish it; repeat delivery must change nothing.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "completed-build",
+      "description": "Inspect the settled training camp and the other commander's unchanged private queue.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative completion appears and the camp count is two.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Five ticks produce the exact reserved-owner and dividend-recipient balances, with one completed camp and no queued work."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "014-completed-build-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "014-completed-build-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-cancellable-base",
+      "description": "Choose a surface base and reserve its quoted cost using the keyboard.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "A new accepted base order enters the surface queue for tick6.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "The displayed base reservation is the sole wallet debit and neither completed development count changes."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "015-reserve-cancellable-base-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "015-reserve-cancellable-base-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "cancel-base",
+      "description": "Request cancellation of the queued surface base. The refund waits for authoritative settlement.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Cancellation is acknowledged for tick6 and the cancel action is disabled.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Cancellation admission adds one revision without an early refund or a second build."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "016-cancel-base-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "016-cancel-base-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "settle-cancellation",
+      "description": "Deliver tick6 through the real production service and repeat it to prove no second refund or production effect.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "cancelled-base",
+      "description": "Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The base cancellation states its returned credits and no construction remains queued.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "The unstarted base refunds its entire reservation exactly once; only tick6 production changes each wallet and the base count is unchanged."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "018-cancelled-base-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "018-cancelled-base-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-settled-outcome",
+      "description": "Reload and reopen the construction panel to inspect the persisted refund without replaying an action.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The same settled cancellation and returned credits are recovered.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "The complete canonical result survives reload without another revision, build or refund."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "019-recover-settled-outcome-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "019-recover-settled-outcome-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keyboard-return",
+      "description": "Return to the galaxy with Escape and recover the Develop control's focus.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The panel closes and Develop receives keyboard focus.",
+      "verifications": [
+        "Leaving the instrument has no authoritative side effect."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "020-keyboard-return-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "020-keyboard-return-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
