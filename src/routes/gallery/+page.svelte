@@ -323,7 +323,7 @@
           />
         </div>{/each}
       <h2>Return briefing · recovery and visit acknowledgement</h2>
-      {#each [0, 1200, 1600, 1800, 2200, 3200, 3800, 4200] as time}<div
+      {#each [0, 1200, 1600, 1800, 2200, 3200, 3800, 4200, 4800] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
         >
           <ReturnBriefing

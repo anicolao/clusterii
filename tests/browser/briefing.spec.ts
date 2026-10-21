@@ -13,6 +13,7 @@ for (const mode of ["mock", "real"] as const)
     test.setTimeout(180000);
     const contexts = [],
       pages = [];
+    const campaignName = `Briefing horizon ${mode} ${Date.now()}`;
     let url = "",
       holding = false;
     const writes: { p: string; d: Record<string, unknown> }[] = [];
@@ -68,7 +69,7 @@ for (const mode of ["mock", "real"] as const)
             .click();
           await page
             .getByLabel("Campaign name")
-            .fill(`Briefing horizon ${Date.now()}`);
+            .fill(campaignName);
           if (mode === "real")
             await page
               .getByRole("radio", { name: "Real encryption · managed keys" })
@@ -139,12 +140,20 @@ for (const mode of ["mock", "real"] as const)
           .getByRole("button", { name: "Since your last visit", exact: true })
           .click();
       };
-      await open();
+      // A deliberate campaign return opens the reviewed briefing without a manual history detour.
+      await page.getByRole("button", { name: "Campaigns", exact: true }).click();
+      await page.getByRole("button").filter({ has: page.getByText(campaignName, { exact: true }) }).click();
       const panel = page.getByRole("region", {
         name: "Return briefing",
         exact: true,
       });
       await expect(panel).toContainText("through confirmed tick 12");
+      await expect(page.getByRole("dialog", { name: "Return briefing panel", exact: true })).toBeFocused();
+      await panel.getByRole("button", { name: "Back without saving", exact: true }).click();
+      await page.goto("./");
+      await page.getByRole("button", { name: `Continue ${campaignName}`, exact: true }).click();
+      await expect(panel).toContainText("through confirmed tick 12");
+
       const save = panel.getByRole("button", {
         name: "Save visit and return to galaxy",
         exact: true,
@@ -177,6 +186,7 @@ for (const mode of ["mock", "real"] as const)
           path: info.outputPath(`briefing-${label}.png`),
         });
       }
+      await page.setViewportSize({ width: 1280, height: 600 });
       const reading = panel.getByRole("region", {
         name: "Briefing details",
         exact: true,
@@ -248,6 +258,18 @@ for (const mode of ["mock", "real"] as const)
       expect((await db.doc(`campaignStates/${id}`).get()).get("revision")).toBe(
         before + 1,
       );
+      await open();
+      await panel.getByRole("button", {name:"Inspect Tick 13 production",exact:true}).click();
+      await expect(page.getByRole("region", {name:"Empire economy",exact:true})).toBeVisible();
+      await page.getByRole("button", {name:"Return to galaxy",exact:true}).click();
+      await open();
+      await save.click();
+      await expect(panel).toHaveCount(0);
+      await page.goto("./");
+      await page.getByRole("button", {name:`Continue ${campaignName}`,exact:true}).click();
+      await expect(page.getByText("Campaign begun", {exact:true})).toBeVisible();
+      await expect(panel).toHaveCount(0);
+      await expect(page.locator("#galaxy-heading")).toBeFocused();
       const other = pages[1];
       await other.getByRole("button", { name: "History", exact: true }).click();
       await other
@@ -292,6 +314,7 @@ test("return briefing lab preserves period and visit outcomes with reduced motio
     await reduced
       .getByRole("region", { name: "Economy", exact: true })
       .innerText(),
+    { useInnerText: true },
   );
   await standard
     .getByRole("button", {
@@ -315,6 +338,19 @@ test("return briefing lab preserves period and visit outcomes with reduced motio
   await expect(standard.getByRole("alert")).toContainText("Your visit has not changed");
   await seek.fill("4200");
   await expect(standard).toContainText("Recovering the period of your saved visit");
+  await seek.fill("4800");
+  for (const name of ["Control", "Arrivals and losses", "Economy", "Messages", "Upcoming orders"]) {
+    await expect(standard.getByRole("region", { name, exact: true })).toHaveText(await reduced.getByRole("region", { name, exact: true }).innerText(), { useInnerText: true });
+  }
+  await expect(standard.getByRole("region", { name: "Upcoming orders", exact: true })).toContainText("1 accepted order");
+  for (const [label, width, height] of [["phone",393,852],["desktop",1440,1000],["short",1280,600],["4k",3840,2160]] as const) {
+    await page.setViewportSize({width,height});
+    await standard.scrollIntoViewIfNeeded();
+    const widths = await standard.locator(".briefing-report .copy").evaluateAll(elements => elements.map(element => element.getBoundingClientRect().width / Number.parseFloat(getComputedStyle(element.querySelector("strong")!).fontSize)));
+    expect(widths.length).toBeGreaterThan(0);
+    expect(widths.every(width => width >= 8)).toBe(true);
+    await standard.screenshot({path: `test-results/briefing-mixed-${label}.png`});
+  }
   await page.getByRole("button", { name: "Reset", exact: true }).click();
   await expect(seek).toHaveValue("0");
 });

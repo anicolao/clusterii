@@ -1,4 +1,5 @@
 import { expect, test } from "bun:test";
+import { mixedBriefing } from "../src/routes/dev/animations/briefing-scenario";
 import {
   createCampaign,
   orderConstruction,
@@ -138,6 +139,7 @@ test("briefing requires an exact baseline, deduplicates production and reports l
   expect(result.events.find((e) => e.category === "Control")!.title).toContain(
     "orbit lost",
   );
+  expect(result.events.find((event) => event.category === "Control")!.urgent).toBe(true);
   expect(JSON.stringify(result.events)).not.toContain('"u1"');
 });
 test("briefing includes only received message metadata and does not mark messages read", () => {
@@ -251,4 +253,16 @@ test("briefing retains construction completion once and excludes outcomes before
   );
   records.push(campaignView(c, "u0"));
   expect(returnBriefing(campaignView(c, "u0"), records).events).toEqual([]);
+});
+
+
+test("illustrated briefing derives mixed control, arrivals, construction and received-message reports from production reducers", () => {
+  const period = mixedBriefing(fixture());
+  const summary = returnBriefing(period.snapshot, period.records);
+  expect(summary.complete).toBe(true);
+  expect(new Set(summary.events.map(event => event.category))).toEqual(new Set(["Control", "Arrivals and losses", "Economy", "Messages"]));
+  expect(period.snapshot.construction!.orders).toHaveLength(1);
+  expect(summary.events.some(event => event.title.includes("market completed"))).toBe(true);
+  expect(summary.events.find(event => event.category === "Messages")!.authorSeat).toBe(1);
+  expect(JSON.stringify(summary.events)).not.toContain("Let us discuss the border");
 });

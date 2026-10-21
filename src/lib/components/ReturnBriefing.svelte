@@ -7,7 +7,8 @@
   } from "$lib/return-briefing";
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
-  import FactionArt from "./FactionArt.svelte";
+  import { base } from "$app/paths";
+  import BriefingReport from "./BriefingReport.svelte";
   import type { MotionInspection } from "$lib/motion";
   let {
     snapshot,
@@ -65,10 +66,11 @@
   );
 </script>
 
-<section class="return-briefing" aria-label="Return briefing">
-  <aside aria-hidden="true">
-    <FactionArt faction={snapshot.own.faction} />
-  </aside>
+<section
+  class="return-briefing"
+  aria-label="Return briefing"
+  style={`--briefing-scene:url(${base}/art/galaxy-dust.webp)`}
+>
   <header>
     <p class="overline gold">Your empire · {snapshot.name}</p>
     <h2>Since your last visit</h2>
@@ -91,45 +93,54 @@
     aria-label="Briefing details"
     tabindex="0"
   >
-    {#if loading}<p role="status">Recovering your authorized activity…</p>{/if}
-    {#if recovering || !summary.complete}<p>
-        {summary.loaded} authorized records loaded. Recover earlier records to complete
-        this period before saving your visit.
-      </p>
-      {#if earlier}<ActionButton
-          class="secondary"
-          onclick={onearlier}
-          disabled={loading}>Recover earlier activity</ActionButton
-        >{:else if !loading}<ActionButton class="secondary" onclick={onlatest}
-          >Recover complete period</ActionButton
-        >
-        <p>
-          The full reviewed period is not available in these records. Your visit
-          has not changed.
+    <div class="completed-events">
+      {#if loading}<p role="status">
+          Recovering your authorized activity…
         </p>{/if}
-    {:else}
-      {#if !summary.events.length}<p>
-          No new completed activity in this period.
-        </p>{/if}
-      {#each categories as category}{@const events = summary.events.filter(
-          (event) => event.category === category,
-        )}
-        {#if events.length}<section aria-label={category}>
-            <h3>{category}</h3>
-            {#each events as event (event.id)}<article>
-                <div>
-                  <strong>{event.title}</strong>
-                  <p>{event.detail}</p>
-                  <small>Confirmed tick {event.tick}</small>
-                </div>
-                <ActionButton class="secondary" onclick={() => oninspect(event)}
-                  >Inspect {event.title}</ActionButton
-                >
-              </article>{/each}
+      {#if recovering || !summary.complete}<p>
+          {summary.loaded} authorized records loaded. Recover earlier records to complete
+          this period before saving your visit.
+        </p>
+        {#if earlier}<ActionButton
+            class="secondary"
+            onclick={onearlier}
+            disabled={loading}>Recover earlier activity</ActionButton
+          >{:else if !loading}<ActionButton class="secondary" onclick={onlatest}
+            >Recover complete period</ActionButton
+          >
+          <p>
+            The full reviewed period is not available in these records. Your
+            visit has not changed.
+          </p>{/if}
+      {:else}
+        {#if !summary.events.length}<p>
+            No new completed activity in this period.
+          </p>{/if}
+        {#if summary.events.some((event) => event.urgent)}<section
+            aria-label="Losses and interrupted orders"
+          >
+            <h3>Losses and interrupted orders</h3>
+            {#each summary.events.filter((event) => event.urgent) as event (event.id)}<BriefingReport
+                {event}
+                {snapshot}
+                onclick={() => oninspect(event)}
+              />{/each}
           </section>{/if}
-      {/each}
-    {/if}
-    <section aria-label="Upcoming orders">
+        {#each categories as category}{@const events = summary.events.filter(
+            (event) => event.category === category && !event.urgent,
+          )}
+          {#if events.length}<section aria-label={category}>
+              <h3>{category}</h3>
+              {#each events as event (event.id)}<BriefingReport
+                  {event}
+                  {snapshot}
+                  onclick={() => oninspect(event)}
+                />{/each}
+            </section>{/if}
+        {/each}
+      {/if}
+    </div>
+    <section class="upcoming" aria-label="Upcoming orders">
       <h3>Upcoming orders</h3>
       <p>
         {queued} accepted {queued === 1 ? "order" : "orders"} awaiting settlement.
@@ -163,7 +174,7 @@
           )?.name} on tick {fleet.travel?.arrivalTick}
         </p>{/each}
     </section>
-    <p>
+    <p class="disclosure">
       Only your authorized records are summarized. Inspecting a report changes
       no orders or permissions.
     </p>
@@ -203,34 +214,30 @@
 
 <style>
   .return-briefing {
+    container-type: inline-size;
     height: 100%;
     min-height: 0;
     display: grid;
-    grid-template-columns: minmax(220px, 30%) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto minmax(0, 1fr) auto;
-    background: #071820;
+    background:
+      linear-gradient(#07182044, #071820ee),
+      var(--briefing-scene) center/cover;
     color: #f6eedf;
     overflow: hidden;
-  }
-  aside {
-    grid-row: 1/-1;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(#193e4d, #07131c);
-    display: flex;
-    align-items: center;
-  }
-  aside :global(.faction-art) {
-    height: auto;
-    width: 100%;
-    aspect-ratio: 1;
   }
   header,
   footer {
     padding: 24px 32px;
-    background: #071820;
+    background: #071820cc;
     border-bottom: 1px solid #536b70;
     z-index: 1;
+  }
+  header {
+    min-height: clamp(140px, 18vh, 260px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   }
   header h2 {
     font:
@@ -247,6 +254,10 @@
     padding: 0 32px 24px;
     min-height: 0;
     scrollbar-gutter: stable;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+    gap: 0 32px;
+    align-content: start;
   }
   h3 {
     font:
@@ -257,24 +268,16 @@
   p {
     line-height: 1.5;
   }
-  article {
-    padding: 18px;
-    margin: 12px 0;
-    border: 1px solid #537781;
-    background: #102c37;
-    display: grid;
-    gap: 16px;
+  .completed-events,
+  .upcoming {
+    min-width: 0;
   }
-  article strong {
-    font-size: 20px;
+  .upcoming {
+    border-left: 1px solid #536b70;
+    padding-left: 24px;
   }
-  small {
-    color: #d8c598;
-  }
-  article :global(button) {
-    justify-self: start;
-    max-width: 100%;
-    overflow-wrap: anywhere;
+  .disclosure {
+    grid-column: 1/-1;
   }
   footer {
     border-top: 1px solid #536b70;
@@ -311,17 +314,12 @@
     h3 {
       font-size: 42px;
     }
-    article strong {
-      font-size: 28px;
-    }
   }
   @media (max-width: 700px) {
     .return-briefing {
       grid-template-columns: 1fr;
     }
-    aside {
-      display: none;
-    }
+
     header,
     footer {
       padding: 16px;
@@ -331,12 +329,16 @@
     }
     .briefing-reading {
       padding: 0 16px 16px;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
     }
     h3 {
       font-size: 28px;
     }
-    article strong {
-      font-size: 18px;
+    .upcoming {
+      border-left: 0;
+      border-top: 1px solid #536b70;
+      padding-left: 0;
     }
     .commitment {
       gap: 8px;
@@ -346,6 +348,9 @@
     }
   }
   @media (max-height: 700px) and (min-width: 701px) {
+    header {
+      min-height: 0;
+    }
     header,
     footer {
       padding: 12px 24px;
@@ -355,6 +360,32 @@
     }
     header p {
       margin: 4px 0;
+    }
+  }
+  @container (max-width: 850px) {
+    .briefing-reading {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+    }
+    .upcoming {
+      border-left: 0;
+      border-top: 1px solid #536b70;
+      padding-left: 0;
+    }
+    header,
+    .briefing-reading,
+    footer {
+      font-size: 16px;
+      padding: 16px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    header h2 {
+      font-size: 34px;
+    }
+    .briefing-reading {
+      padding: 0 16px 16px;
     }
   }
 </style>

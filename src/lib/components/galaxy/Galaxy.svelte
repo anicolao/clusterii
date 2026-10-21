@@ -58,6 +58,8 @@
     onvisit,
     commandRoomId = "",
     commandVisitRevision = 0,
+    returnIntent = false,
+    onreturnHandled,
     conversationReceipt = null,
     recoveredConversation = null,
     accountId,
@@ -89,6 +91,8 @@
     onconversation?: (action: ConversationAction) => void;
     commandRoomId?: string;
     commandVisitRevision?: number;
+    returnIntent?: boolean;
+    onreturnHandled?: () => void;
     conversationReceipt?: ConversationReceipt | null;
     recoveredConversation?: {
       id: string;
@@ -125,6 +129,22 @@
   let economy = $state(false);
   let history = $state(false);
   let briefingOpen = $state(false);
+  $effect(() => {
+    if (!returnIntent) return;
+    const show =
+      view.briefingEnabled &&
+      view.phase === "active" &&
+      !!view.lastVisit &&
+      (view.production?.tick ?? 0) > view.lastVisit.tick &&
+      !pending &&
+      !busy;
+    onreturnHandled?.();
+    if (show) void openPanel("briefing");
+    else
+      void tick().then(() =>
+        document.getElementById("galaxy-heading")?.focus(),
+      );
+  });
   let briefingSnapshot = $state<CampaignView | null>(null);
   let visitRequested = $state(false);
   let visitRecoveryRevision = $state<number | null>(null);

@@ -131,8 +131,10 @@ Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | R
 
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Continue Prompt 37 with a private persisted visit checkpoint and returning-player briefing, reusing the clean checkout to conserve disk.
 
+Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Continue Prompt 37 with deliberate campaign-return briefing entry and illustrated reports, preserving interrupted command recovery.
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Repair the confirmed receipt-mismatch outbox blockage with exact-record reconciliation, draft preservation and semantic collision regressions.
-
 Prompt 40 | ad557472f028f0cac1f24d552aaab6df96cafb62fa170697ae941d1916f3e648 | Propagate exact-record receipt recovery into selected conversation history without altering either branch’s prior prompt records.
-
 Prompt 40 | ad557472f028f0cac1f24d552aaab6df96cafb62fa170697ae941d1916f3e648 | Carry exact-record receipt recovery into private visit acknowledgement while retaining the briefing and predecessor histories.
+Prompt 40 | ad557472f028f0cac1f24d552aaab6df96cafb62fa170697ae941d1916f3e648 | Propagate exact-record receipt recovery into illustrated return entry while preserving both predecessor prompt histories.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the explicit briefing and history focus cycle into return entry while preserving recovery and predecessor history.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Resolve the supervisory log merge markers against the main-worktree superset without removing either parent’s checkpoint entries.

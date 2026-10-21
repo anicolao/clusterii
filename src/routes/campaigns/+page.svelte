@@ -57,6 +57,7 @@
   );
   let stopMemberships = () => {};
   let selected = $state<string | null>(null);
+  let returnIntent = $state(false);
   let view = $state<CampaignView | null>(null);
   let loading = $state(false);
   let creating = $state(false);
@@ -166,7 +167,9 @@
     busy = false;
     clearTimeout(timer);
   }
-  async function select(id: string) {
+  async function select(id: string, returning = false) {
+    const showBriefing = returning && !pending;
+    returnIntent = showBriefing;
     const current = ++selection;
     const session = generation;
     let focused = false;
@@ -199,7 +202,8 @@
             focused = true;
             void tick().then(() => {
               if (session !== generation || current !== selection) return;
-              if (next) document.getElementById("galaxy-heading")?.focus();
+              if (next && !showBriefing)
+                document.getElementById("galaxy-heading")?.focus();
               else title?.focus();
             });
           }
@@ -224,7 +228,8 @@
       }
     }
     await tick();
-    if (view) document.getElementById("galaxy-heading")?.focus();
+    if (view && !showBriefing)
+      document.getElementById("galaxy-heading")?.focus();
     else title?.focus();
   }
   async function recover() {
@@ -292,7 +297,7 @@
         }
       }
       if (selected && pending?.kind !== "campaign.create")
-        await select(selected);
+        await select(selected, returnIntent);
       if (pending) dispatch();
     } catch (failure) {
       if (session === generation) failed(failure);
@@ -317,6 +322,8 @@
           games = [];
           view = null;
           selected = requestedCampaign(location.search);
+          returnIntent =
+            new URLSearchParams(location.search).get("briefing") === "return";
           pending = null;
           acceptedFleetCommand = null;
           commandKind = "";
@@ -561,6 +568,8 @@
       {commandFleetId}
       {commandRoomId}
       {commandVisitRevision}
+      {returnIntent}
+      onreturnHandled={() => (returnIntent = false)}
       {conversationReceipt}
       {recoveredConversation}
       accountId={account ?? undefined}
@@ -904,7 +913,7 @@
               </p>{/if}
             {#each listed as item}<ActionButton
                 class="campaign-card"
-                onclick={() => select(item.id)}
+                onclick={() => select(item.id, item.phase === "active")}
                 ><span class="overline">{item.phase}</span><strong
                   >{item.name}</strong
                 ><span
