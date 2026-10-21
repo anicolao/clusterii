@@ -1,3 +1,4 @@
+import { RecoveryConflict } from "$lib/recovery-store";
 import {historyRecoveryMessage} from "$lib/campaign-history";
 import { acquireFleetScans, lastFleetContacts } from "@shared/fleet-contacts";
 import { orderRoute } from "@shared/travel";
@@ -117,7 +118,13 @@ const conversationJoined=converse(conversationInvited,{kind:"conversation.accept
 const conversationGreeting=converse(conversationJoined,{kind:"conversation.send",expectedRevision:conversationJoined.revision,roomId:conversationId,keyVersion:2,body:"Can we discuss the systems near Nacre?"},"scheduled-0","lab-greeting",5000);
 const conversationReply=converse(conversationGreeting,{kind:"conversation.send",expectedRevision:conversationGreeting.revision,roomId:conversationId,keyVersion:2,body:"Yes. Let’s discuss our plans before making an agreement."},"scheduled-1","lab-reply",6000);
 export function conversationFrame(time:number){const state=time>=4800?conversationReply:time>=2200?conversationGreeting:time>=1200?conversationJoined:conversationInvited;const view=campaignView(state,"scheduled-1");return {view,selected:conversationId,messages:conversationMessages([campaignView(conversationGreeting,"scheduled-1"),view].filter(v=>v.revision<=view.revision),conversationId),drafts:{[conversationId]:time>=3200&&time<4800?"Yes. Let’s discuss our plans before making an agreement.":""}};}
+export function draftRecoveryFrame(time: number) {
+  const conflict = time >= 2200 && time < 3200;
+  return { ...conversationFrame(2200), drafts: {[conversationId]: "My text remains available while the saved draft is reviewed."}, draftReady: time >= 1200, draftSaving: time >= 3200 && time < 4800, draftSaved: time >= 1200 && !conflict && !(time >= 3200 && time < 4800), draftConflict: conflict, draftError: conflict ? new RecoveryConflict("draft").message : "" };
+}
 export const scenarios = [
+ {id:"invalid-recovery",label:"Invalid order: review → explicit local discard confirmation",frames:[0,1200].map(at=>({at,feedback:{message:"",error:"",remedy:"validation"}}))},
+ {id:"draft-recovery",label:"Draft recovery: reload → saved → other tab conflict → saved",frames:[0,1200,2200,3200,4800].map(at=>({at,feedback:{message:"",error:"",remedy:"none"}}))},
  {id:"conversations",label:"Conversation: invitation → accepted → message → reconnect → sent",frames:[{at:0,feedback:{message:"",error:"",remedy:"none"}},{at:500,feedback:campaignPending},{at:1200,feedback:campaignFeedback("conversation.accept",{status:"accepted"})},{at:2200,feedback:{message:"",error:"",remedy:"none"}},{at:3200,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:4800,feedback:campaignFeedback("conversation.send",{status:"accepted"})}]},
  {id:"arrivals",label:"Arrivals: loading → orbit secured → reconnect → conquest",frames:[{at:0,feedback:{message:"No reports loaded.",error:"",remedy:"none"}},{at:500,feedback:campaignPending},{at:1200,feedback:{message:"Orbit secured; surface remains rival-held.",error:"",remedy:"none"}},{at:2200,feedback:{message:"",error:historyRecoveryMessage,remedy:"network"}},{at:3200,feedback:{message:"System secured; held credits released.",error:"",remedy:"none"}}]},
  {id:"contacts",label:"Fleet contacts: unknown → loading → acquired → retry → last seen",frames:[{at:0,feedback:{message:"No fleet observation acquired.",error:"",remedy:"none"}},{at:500,feedback:{message:"Loading authorized contact records…",error:"",remedy:"none"}},{at:1200,feedback:{message:"Fleet observation acquired.",error:"",remedy:"none"}},{at:2200,feedback:{message:"",error:historyRecoveryMessage,remedy:"network"}},{at:3200,feedback:{message:"Current position unknown; last acquired position retained in history.",error:"",remedy:"none"}}]},

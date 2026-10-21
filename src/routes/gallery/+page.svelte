@@ -1,4 +1,6 @@
 <script lang="ts">
+  import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
+  import { RecoveryValidation } from "$lib/recovery-store";
   import { ReceiptMismatch } from "@shared/command-receipt";
   import CampaignMaintenance from "$lib/components/CampaignMaintenance.svelte";
   let maintenancePaused = $state(false);
@@ -23,6 +25,7 @@
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import {
     conversationFrame,
+    draftRecoveryFrame,
     arrivalFrame,
     contactsFrame,
     travelFrame,
@@ -293,6 +296,29 @@
             />
           </div>
         {/each}{/each}
+      <h2>Invalid saved order · retry and explicit local discard</h2>
+      {#each [false, true] as confirming}<RecoveryRecord
+          reason={new RecoveryValidation("").message}
+          {confirming}
+          onretry={() => {}}
+          onforget={() => {}}
+        />{/each}
+      <h2>Browser drafts · recovery, conflict and saved</h2>
+      {#each [0, 1200, 2200, 3200, 4800] as time}<div
+          style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <Conversations
+            {...draftRecoveryFrame(time)}
+            oncommand={() => {}}
+            onearlier={() => {}}
+            onlatest={() => {}}
+            onretryHistory={() => {}}
+            onclose={() => {}}
+            onretryDraft={() => {}}
+            onuseSavedDraft={() => {}}
+            onreplaceDraft={() => {}}
+          />
+        </div>{/each}
       <h2>Private conversations · invitation and recipient history</h2>
       {#each [0, 1200, 2200, 4800] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"

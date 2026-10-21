@@ -55,6 +55,8 @@
     onconversation,
     commandRoomId = "",
     conversationReceipt = null,
+    recoveredConversation = null,
+    accountId,
     onbuild,
     oncancel,
     onmigrate,
@@ -82,6 +84,13 @@
     onconversation?: (action: ConversationAction) => void;
     commandRoomId?: string;
     conversationReceipt?: ConversationReceipt | null;
+    recoveredConversation?: {
+      id: string;
+      gameId: string;
+      roomId: string;
+      body: string;
+    } | null;
+    accountId?: string;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
     oncargo?: (
@@ -117,6 +126,154 @@
   let conversationDrafts = $state<Record<string, string>>({});
   let conversationTitle = $state("");
   let acknowledgedConversation = "";
+  let resumedConversation = "";
+  $effect(() => {
+    const recovered = recoveredConversation;
+    if (
+      recovered &&
+      recovered.gameId === view.id &&
+      recovered.id !== resumedConversation
+    ) {
+      resumedConversation = recovered.id;
+      selectedRoom = recovered.roomId;
+      if (recovered.body && !conversationDrafts[recovered.roomId])
+        conversationDrafts = {
+          ...conversationDrafts,
+          [recovered.roomId]: recovered.body,
+        };
+      void openPanel("conversations");
+    }
+  });
+  let draftReadyRoom = $state<string | null>(null),
+    draftRevision = 0;
+  let draftSaving = $state(false),
+    draftSavedText = $state(""),
+    draftError = $state("");
+  let draftConflict = $state(false),
+    savedAlternative = "",
+    draftLoad = 0;
+  const draftRoom = $derived(selectedRoom || "$new");
+  const draftText = $derived(
+    selectedRoom ? (conversationDrafts[selectedRoom] ?? "") : conversationTitle,
+  );
+  const draftAllowed = $derived(
+    !selectedRoom ||
+      view.conversations?.some((r) => r.id === selectedRoom && r.member),
+  );
+  function setDraftText(text: string) {
+    if (selectedRoom)
+      conversationDrafts = { ...conversationDrafts, [selectedRoom]: text };
+    else conversationTitle = text;
+  }
+  async function loadDraft() {
+    if (!accountId || !draftAllowed) return;
+    const token = ++draftLoad,
+      room = draftRoom,
+      uid = accountId;
+    draftReadyRoom = null;
+    draftError = "";
+    draftConflict = false;
+    try {
+      const { recoverDraft } = await import("$lib/conversation-drafts");
+      const saved = await recoverDraft(uid, view.id, room);
+      if (token !== draftLoad || room !== draftRoom) return;
+      draftRevision = saved.revision;
+      savedAlternative = saved.text;
+      draftSavedText = saved.text;
+      const local = selectedRoom
+        ? conversationDrafts[selectedRoom]
+        : conversationTitle || undefined;
+      if (local !== undefined && local !== saved.text && saved.revision) {
+        draftConflict = true;
+        draftError =
+          "This browser has a different saved draft. Your text is preserved; choose which version to keep.";
+      } else if (local === undefined) setDraftText(saved.text);
+      draftReadyRoom = room;
+    } catch (error) {
+      if (token === draftLoad) draftError = (error as Error).message;
+    }
+  }
+  $effect(() => {
+    if (
+      accountId &&
+      conversationsOpen &&
+      draftAllowed &&
+      draftReadyRoom !== draftRoom
+    )
+      untrack(() => void loadDraft());
+  });
+  async function storeDraft() {
+    if (
+      !accountId ||
+      draftReadyRoom !== draftRoom ||
+      draftSaving ||
+      draftConflict ||
+      !draftAllowed
+    )
+      return;
+    const room = draftRoom,
+      text = draftText,
+      revision = draftRevision,
+      token = draftLoad;
+    draftSaving = true;
+    try {
+      const { persistDraft } = await import("$lib/conversation-drafts");
+      const saved = await persistDraft(
+        accountId,
+        view.id,
+        room,
+        view.mode,
+        revision,
+        text,
+      );
+      if (token === draftLoad && room === draftRoom) {
+        draftRevision = saved;
+        draftSavedText = text;
+        draftError = "";
+      }
+    } catch (error) {
+      if (token === draftLoad) {
+        draftError = (error as Error).message;
+        draftConflict =
+          (error as Error).name === "RecoveryConflict" ||
+          (error as Error).message.includes("another tab");
+      }
+    } finally {
+      draftSaving = false;
+    }
+  }
+  $effect(() => {
+    if (
+      !accountId ||
+      !conversationsOpen ||
+      draftReadyRoom !== draftRoom ||
+      draftSaving ||
+      draftError ||
+      !draftAllowed ||
+      draftText === draftSavedText
+    )
+      return;
+    const timer = setTimeout(() => void storeDraft(), 250);
+    return () => clearTimeout(timer);
+  });
+  async function resolveDraft(replace: boolean) {
+    if (!accountId) return;
+    const room = draftRoom;
+    try {
+      const { recoverDraft } = await import("$lib/conversation-drafts");
+      const latest = await recoverDraft(accountId, view.id, room);
+      if (room !== draftRoom) return;
+      draftRevision = latest.revision;
+      savedAlternative = latest.text;
+      draftSavedText = latest.text;
+      draftConflict = false;
+      draftError = "";
+      if (!replace) setDraftText(savedAlternative);
+      else await storeDraft();
+    } catch (error) {
+      draftError = (error as Error).message;
+    }
+  }
   let receivedConversationViews = $state<MessageRecord[]>([]);
   const messages = $derived(
     conversationMessages(
@@ -150,8 +307,10 @@
           receipt.status === "accepted" &&
           receipt.kind === "conversation.send" &&
           conversationDrafts[receipt.roomId]?.trim() === receipt.body.trim()
-        )
+        ) {
           conversationDrafts = { ...conversationDrafts, [receipt.roomId]: "" };
+          if (selectedRoom === receipt.roomId) draftReadyRoom = null;
+        }
         if (
           receipt.status === "accepted" &&
           receipt.kind === "conversation.create"
@@ -709,6 +868,23 @@
         bind:selected={selectedRoom}
         bind:drafts={conversationDrafts}
         bind:title={conversationTitle}
+        draftReady={!accountId || draftReadyRoom === draftRoom || !draftAllowed}
+        draftSaving={draftSaving ||
+          (!!accountId &&
+            draftReadyRoom === draftRoom &&
+            draftText !== draftSavedText &&
+            !draftError)}
+        {draftError}
+        {draftConflict}
+        draftSaved={!!accountId &&
+          draftReadyRoom === draftRoom &&
+          draftText === draftSavedText &&
+          !!draftText}
+        onretryDraft={accountId
+          ? () => (draftReadyRoom === draftRoom ? storeDraft() : loadDraft())
+          : undefined}
+        onuseSavedDraft={() => resolveDraft(false)}
+        onreplaceDraft={() => resolveDraft(true)}
         pending={pending && commandKind.startsWith("conversation.")}
         {busy}
         message={commandKind.startsWith("conversation.") &&

@@ -1,4 +1,8 @@
-import { commandDigest, verifyReceipt } from "@shared/command-receipt";
+import {
+  commandDigest,
+  ReceiptMismatch,
+  verifyReceipt,
+} from "@shared/command-receipt";
 import { type Envelope, provider, unwrap } from "@shared/crypto";
 import {
   commandContext,
@@ -238,19 +242,26 @@ export function submitCommand<T>(
   fail: (error: Error) => void,
 ) {
   let active = true;
+  let delivered = false;
   const expected = commandDigest(ingress, payload);
   // Subscribe before write. Receipt remains authoritative even when retrying a create-only command.
   const stop = onSnapshot(
     doc(firestore, receipt[0], ...receipt.slice(1)),
+    { includeMetadataChanges: true },
     (snapshot) => {
-      if (active && snapshot.exists()) {
+      if (active && !delivered && snapshot.exists()) {
         void expected
           .then((digest) => {
-            if (!active) return;
+            if (!active || delivered) return;
             verifyReceipt(snapshot.data(), digest);
+            delivered = true;
             next(snapshot.data() as T);
           })
           .catch((error: Error) => {
+            // A mismatched cached receipt cannot retire a durable order. Wait for
+            // confirmation from the trusted server's immutable receipt path.
+            if (error instanceof ReceiptMismatch && snapshot.metadata.fromCache)
+              return;
             if (active) fail(error);
           });
       }
