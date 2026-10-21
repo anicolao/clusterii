@@ -33,3 +33,9 @@ The full default service cohort passes 24 tests and 1,392 assertions in 74.36 se
 The final accessible-label cohort passes all three fleet/browser/lab journeys in 28.2 seconds (`/tmp/cluster-cargo-accessibility-final.log`). Cargo inputs expose the visible operation name and available-force description. Ready and completed-transfer captures, retained before images and checksums are in `docs/ux/reviews/fleet-cargo/`.
 
 Compatible deployment completed on 2026-10-21 UTC: all five consumers/view writers, then processCampaign, then additive database rules. Readback confirms all six functions ACTIVE on Node.js 22 without CLUSTER_KMS_TEST and both cargo kinds in hosted ingress rules. Hosted end-to-end acceptance remains separate.
+
+## Receipt-to-outcome reconciliation
+
+The 01:57 reviewer found that the completed-phone capture still showed a future scheduled-transfer acknowledgement. The client now retains the accepted command identity and reconciles only its matching private outcome in the same campaign at or beyond the acknowledged revision. A different order's outcome leaves acceptance unchanged. Pending retries remain pending. Failed execution reports no transfer; a late receipt whose outcome has aged out points to authorized history rather than claiming future work. Starting another command or changing accounts clears the previous acknowledgement identity. Leaving a campaign clears its completed fleet feedback.
+
+The focused regression checks scheduled acknowledgement before the tick and completed acknowledgement after it, separately from the manifest's execution status. All 46 unit tests/1,000 assertions and all three fleet/browser/lab tests pass in 28.2 seconds. Type checks and lint pass. Four affected captures are refreshed, with the stale acknowledgement images preserved as `before-acknowledgement-*`. This is a client correction; deployed settlement semantics are unchanged. Exact-head CI and independent acceptance remain pending.

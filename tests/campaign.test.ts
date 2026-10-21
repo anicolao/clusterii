@@ -852,3 +852,22 @@ test("cargo fails closed on forged fields, lost layer ownership, capacity change
     orderFleet({ ...state, pausedAt: 1 }, action, "p0", "paused", 0),
   ).toThrow("paused");
 });
+
+import { fleetSettlementFeedback } from "../src/lib/fleet-feedback";
+test("fleet acknowledgement reconciles only its authoritative outcome and never invents a future transfer", () => {
+  let state = productionFixture();
+  const home = state.seats[0].home!;
+  state = nextProduction(orderFleet(state, {kind:"fleet.form",expectedRevision:state.revision,starId:home,fighters:1,infantry:0}, "p0", "receipt-fleet", 0));
+  const queued = orderFleet(state, {kind:"fleet.load",expectedRevision:state.revision,fleetId:fleetIdentity("p0","receipt-fleet"),infantry:3}, "p0", "receipt-load", 0);
+  const command={gameId:queued.id,id:"receipt-load",revision:queued.revision};
+  expect(fleetSettlementFeedback(campaignView(state,"p0"),command)).toBeNull();
+  // The previous formation outcome does not replace this load's scheduled receipt.
+  expect(fleetSettlementFeedback(campaignView(queued,"p0"),command)).toBeNull();
+  const settled=nextProduction(queued), view=campaignView(settled,"p0");
+  expect(fleetSettlementFeedback(view,command)).toEqual({message:"3 infantry loaded.",error:"",remedy:null});
+  expect(fleetSettlementFeedback(view,{...command,gameId:"another-campaign"})).toBeNull();
+  const aged=campaignView(nextProduction(settled),"p0");
+  expect(fleetSettlementFeedback(aged,command)?.message).toBe("Fleet order accepted. Open history to inspect its outcome.");
+  const changed=structuredClone(queued);changed.systems[home].surface="p1";
+  expect(fleetSettlementFeedback(campaignView(nextProduction(changed),"p0"),command)).toEqual({message:"",error:"Fleet order could not execute. No forces were transferred.",remedy:"validation"});
+});

@@ -413,3 +413,14 @@ Independently inspected corrected short and 4K captures: selected Investing row 
 #20/#21/#22 replacement verification still running; #20/#22 publication green and #21 publication rerun active. No new PR. Cargo successor remains uncommitted and active. Preliminary independent source review confirms shared loading/formation reservations, positive integer transfer bounds, one outstanding operation per fleet, ownership/location/capacity revalidation and exact opposite inventory deltas at settlement. Existing orders retain behavior without cargo discriminator; private member projection remains explicit. This is in-progress review, not complete security/concurrency acceptance.
 
 Agent reports eight browser tests passing and is correcting a rendered phone clarity issue: completed cargo outcome below scroll boundary alongside a next-load restriction. Active correction moves outcome before manifest and labels the restriction for the next action. No redundant handoff or interruption of healthy self-review. Final captures and exact-head checks remain pending. Carry this checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:57 Toronto
+
+New #23 e167364 correctly stacks on stationed-fleets and is attached to supervisor chat. Cargo worktree clean; independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Publication/documentation green, full verification pending along with #20–22. Implementer evidence records both-provider 184 assertions, default 24 tests/1392 assertions, eight browser/gallery/lab passes and final accessible-label three-case pass. These remain controlled service-clock evidence, not hosted acceptance. Prior checkpoint through 01:47 committed with cargo.
+
+Independent completed-phone review confirms visible loaded outcome and next-load restriction but finds stale scheduled acknowledgement in footer. Exact handoff:
+
+Reviewer finding for cargo PR #23 e167364: docs/ux/reviews/fleet-cargo/fleet-cargo-loaded-phone.png shows completed “Infantry loaded · 3 infantry.” while the commitment rail still says “Cargo order accepted. Transfer scheduled.” Reconcile the acknowledgement with the matching authoritative outcome so settled orders no longer claim a future transfer; preserve genuine pending/accepted/retry states and the separate next-load capacity message. Add a focused regression and refresh affected captures, carry through the stack, log reviewer attribution and current meta checkpoint, and commit/push without merging.
+
+Agent actively implementing split/merge successor, not stalled; broader security/release gates remain open.

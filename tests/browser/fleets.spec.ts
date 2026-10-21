@@ -156,7 +156,10 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
     } = require("./lib/functions/src/production.js");
     expect(await settleCampaignTicks(id, () => start + 900000)).toBe(1);
     await expect(
-      panel.getByRole("status").filter({ hasText: "Fleet formed" }),
+      panel
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .getByRole("status")
+        .filter({ hasText: "Fleet formed" }),
     ).toBeVisible();
     await panel.getByRole("button", { name: /^Fleet [0-9]+$/ }).click();
     await expect(panel.getByRole("heading", { level: 3 })).toContainText(
@@ -266,7 +269,10 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
     ).toContainText("Unload · 5 infantry");
     expect(await settleCampaignTicks(id, () => start + 2 * 900000)).toBe(1);
     await expect(
-      panel.getByRole("status").filter({ hasText: "Infantry unloaded" }),
+      panel
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .getByRole("status")
+        .filter({ hasText: "Infantry unloaded" }),
     ).toBeVisible();
     await panel.getByRole("button", { name: /^Fleet [0-9]+$/ }).click();
     await panel.getByRole("button", { name: "Load", exact: true }).click();
@@ -285,11 +291,21 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
     await expect(
       panel.getByRole("region", { name: "Accepted fleet orders" }),
     ).toContainText("Load · 3 infantry");
+    await expect(panel.locator("footer").getByRole("status")).toHaveText(
+      "Cargo order accepted. Transfer scheduled.",
+    );
     expect(await settleCampaignTicks(id, () => start + 3 * 900000)).toBe(1);
     await expect(
-      panel.getByRole("status").filter({ hasText: "Infantry loaded" }),
+      panel
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .getByRole("status")
+        .filter({ hasText: "Infantry loaded" }),
     ).toBeVisible();
     await expect(panel.locator("dl")).toContainText("18");
+    await expect(panel.locator("footer").getByRole("status")).toHaveText(
+      "3 infantry loaded.",
+    );
+    await expect(panel).not.toContainText("Transfer scheduled.");
     for (const [label, width, height] of [
       ["phone", 393, 852],
       ["desktop", 1440, 1000],
@@ -309,6 +325,7 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
         .getByRole("region", { name: "Fleet manifest and orders" })
         .evaluate((el) => el.scrollTo(0, 0));
       const outcome = panel
+        .getByRole("region", { name: "Fleet manifest and orders" })
         .getByRole("status")
         .filter({ hasText: "Infantry loaded" });
       expect(
@@ -336,7 +353,10 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
     const next = (await db.doc(`campaignStates/${id}`).get()).get("nextTickAt");
     expect(await settleCampaignTicks(id, () => next)).toBe(1);
     await expect(
-      panel.getByRole("status").filter({ hasText: "Fleet disbanded" }),
+      panel
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .getByRole("status")
+        .filter({ hasText: "Fleet disbanded" }),
     ).toBeVisible();
     await panel.getByRole("button", { name: "Back to system" }).click();
     await expect(

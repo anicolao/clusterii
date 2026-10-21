@@ -370,3 +370,9 @@ Reviewer availability retry: resume the existing construction work and 22:57 rec
 Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and the 2026-10-20 23:17 checkpoint in meta-prompts.md.
 
 Reviewer visual finding: retained docs/ux/reviews/construction/construction-phone.png shows “Your seat is confirmed.” in the construction commitment footer. Scope feedback to the relevant action/panel so a previous join/research acknowledgement cannot appear as construction feedback. Preserve actual build/cancel pending, acceptance and error messages; refresh the affected captures after fixing. The composition/art and fixed cost/balance/actions otherwise look readable in this phone sample. Log this attributed finding and carry latest meta-prompts.md into the related commit/push; continue completion validation, no merge.
+
+## Prompt 36: Cargo Acknowledgement
+
+Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and “Reviewer progress — 2026-10-21 01:57 Toronto” in meta-prompts.md.
+
+Reviewer finding for cargo PR #23 e167364: docs/ux/reviews/fleet-cargo/fleet-cargo-loaded-phone.png shows completed “Infantry loaded · 3 infantry.” while the commitment rail still says “Cargo order accepted. Transfer scheduled.” Reconcile the acknowledgement with the matching authoritative outcome so settled orders no longer claim a future transfer; preserve genuine pending/accepted/retry states and the separate next-load capacity message. Add a focused regression and refresh affected captures, carry through the stack, log reviewer attribution and current meta checkpoint, and commit/push without merging.
