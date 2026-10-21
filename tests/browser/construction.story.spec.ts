@@ -73,13 +73,11 @@ for (const interrupted of [false, true])
       }[] = [];
     const campaignName = `${constructionStoryPrefix}${interrupted ? "recovery" : "ordinary"} ${info.project.name}`;
     const views = () =>
-      pages
-        .slice(0, 2)
-        .map((page, i) => ({
-          page,
-          player: aliases[i],
-          surface: "game" as const,
-        }));
+      pages.slice(0, 2).map((page, i) => ({
+        page,
+        player: aliases[i],
+        surface: "game" as const,
+      }));
     const require = createRequire(
       new URL("../../functions/package.json", import.meta.url),
     );
@@ -131,9 +129,9 @@ for (const interrupted of [false, true])
             expect(v.construction?.ledger ?? []).toEqual([]);
             const serialized = JSON.stringify(v);
             for (const o of [
-              ...state.construction!.orders,
-              ...Object.values(state.construction!.ledger).flat(),
-              ...state.construction!.cancellations,
+              ...(state.construction?.orders ?? []),
+              ...Object.values(state.construction?.ledger ?? {}).flat(),
+              ...(state.construction?.cancellations ?? []),
             ])
               expect(serialized).not.toContain(o.id);
             expect(serialized).not.toContain('"paidMilli"');
