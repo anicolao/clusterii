@@ -94,11 +94,15 @@ The story runner installs `emulator-catalogue-register.mjs`/`emulator-catalogue-
 
 Scheduled admission stories additionally register the test-only `emulator-admission-clock-loader.mjs`. Only campaigns whose names start with `Scheduled story ` receive fixed create/join time (2026-01-01 12:01 UTC) and bounded start time (12:15 UTC). Earlier explicit start inputs retain the not-due guard. Authentication, tokens, encryption and unrelated campaigns keep real time. The loader validates reducer signatures and refuses non-demo/non-emulator runtimes. Player pages explicitly follow the same browser clock; the actual scheduler HTTP endpoint delivers start. This is accelerated domain-clock evidence, not real-time or hosted Scheduler certification. No state or result is injected.
 
+The login helper serves lockfile-pinned `material-components-web@10.0.0` JS/CSS bytes for the Auth Emulator’s own external UI dependency, only within `http://127.0.0.1:19099/emulator/auth/handler`. It awaits the initialized provider label before clicking. This avoids a mutable CDN redirect without replacing authentication documents, APIs, credentials or results; production origins are excluded. These are test-only asset deliveries, not hosted Google evidence.
+
 Only one local emulator cohort may own the configured ports. The story runner starts and stops its own emulator process. It must fail clearly on occupied ports, never kill unrelated processes or reset another worktree's data. Do not run destructive service cleanup alongside browser stories.
 
 ## Readiness, geometry and motion
 
 Wait on named conditions, never fixed sleeps or `networkidle`. Pending/offline stories declare the expected pending/offline outcome; do not always wait for acceptance and skip the recovery experience. Every wait is bounded. Cluster's helper uses a bounded capture budget and explicit action/acknowledgement budgets; Pantheon's project-specific two-second rule is not silently imported.
+
+The helper requires two consecutive actual frames with identical decoded pixels within six captures and the existing capture deadline. This settling step has no expected-image input: stable incorrect pixels still fail exact baseline comparison, and oscillating pixels fail readiness. It never searches for a frame that matches the baseline.
 
 The helper checks fonts, visible `<img>` and CSS background decoding, and all finite animation completion before capture. Decode requests are renewed for each capture. Cancelled finite animations are rechecked for successor effects. Stable screenshots use reduced motion; intentionally paused animation inspection is a distinct lab/motion case. No screenshot option may fast-forward an unacknowledged gameplay effect.
 
