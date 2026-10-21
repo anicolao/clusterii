@@ -1,0 +1,698 @@
+{
+  "id": "campaign-scheduled-start",
+  "title": "Admit independent commanders, assign homes and resume a chosen campaign",
+  "inventory": [
+    "UX-01",
+    "UX-02",
+    "UX-03",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Five independent saved commanders join two real campaigns through ordinary controls. Explicit test-only domain/browser clocks expose scheduled and overdue states before the real scheduler endpoint assigns distinct homes. Single and multiple memberships then recover the named last campaign through Continue. No roster, home, balance or receipt is injected; accelerated evidence does not certify hosted cadence.",
+  "source": {
+    "commit": "4cfaebfbd9030c7e280e142d32b0ba94efe6c1b7",
+    "dirty": true,
+    "spec": "tests/browser/campaign-start.story.spec.ts",
+    "specSha256": "d2ec1e18f96d25005c3b2b2e95e70ed921371b1c39ed88558a6c0e716eff0cc2"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "independent-identities-and-clock",
+      "description": "Create five independent authenticated contexts and saved identities through ordinary UI; grant emulator development access. The loader fixes only the designated campaign catalogue/domain time; browser Date follows 12:01 UTC without stopping timers or fabricating responses.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "propose-1",
+      "description": "Propose Scheduled story dawn large with four empires.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The four-empire proposal is ready to commit.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "002-propose-1-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "create-1",
+      "description": "Create the real waiting galaxy before choosing a faction.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "Creation is acknowledged with faction selection.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "003-create-1-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-1-1",
+      "description": "Review the available Heliac Assembly seat in Scheduled story dawn large.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "004-choose-1-1-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-1-1",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "005-join-1-1-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-1-2",
+      "description": "Review the available Pelagic Concord seat in Scheduled story dawn large.",
+      "actor": "Dawn envoy 2",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 2",
+          "image": "006-choose-1-2-1-dawn-envoy-2.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-1-2",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 2",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 2",
+          "image": "007-join-1-2-1-dawn-envoy-2.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 1",
+          "image": "007-join-1-2-2-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-1-3",
+      "description": "Review the available Vesper Synod seat in Scheduled story dawn large.",
+      "actor": "Dawn envoy 3",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 3",
+          "image": "008-choose-1-3-1-dawn-envoy-3.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-1-3",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 3",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 3",
+          "image": "009-join-1-3-1-dawn-envoy-3.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 1",
+          "image": "009-join-1-3-2-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-1-4",
+      "description": "Review the available Dracon League seat in Scheduled story dawn large.",
+      "actor": "Dawn envoy 4",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 4",
+          "image": "010-choose-1-4-1-dawn-envoy-4.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-1-4",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 4",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 4",
+          "image": "011-join-1-4-1-dawn-envoy-4.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 1",
+          "image": "011-join-1-4-2-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "propose-2",
+      "description": "Propose Scheduled story dusk large with four empires.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The four-empire proposal is ready to commit.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "012-propose-2-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "create-2",
+      "description": "Create the real waiting galaxy before choosing a faction.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "Creation is acknowledged with faction selection.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "013-create-2-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-2-1",
+      "description": "Review the available Heliac Assembly seat in Scheduled story dusk large.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "014-choose-2-1-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-2-1",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "015-join-2-1-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-2-2",
+      "description": "Review the available Pelagic Concord seat in Scheduled story dusk large.",
+      "actor": "Dawn envoy 2",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 2",
+          "image": "016-choose-2-2-1-dawn-envoy-2.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-2-2",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 2",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 2",
+          "image": "017-join-2-2-1-dawn-envoy-2.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 1",
+          "image": "017-join-2-2-2-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-2-3",
+      "description": "Review the available Vesper Synod seat in Scheduled story dusk large.",
+      "actor": "Dawn envoy 3",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 3",
+          "image": "018-choose-2-3-1-dawn-envoy-3.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-2-3",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 3",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 3",
+          "image": "019-join-2-3-1-dawn-envoy-3.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 1",
+          "image": "019-join-2-3-2-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-2-4",
+      "description": "Review the available Dracon League seat in Scheduled story dusk large.",
+      "actor": "Dawn envoy 5",
+      "kind": "player",
+      "acknowledgement": "The named faction is selected and commitment is available.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 5",
+          "image": "020-choose-2-4-1-dawn-envoy-5.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "join-2-4",
+      "description": "Claim the reviewed seat and inspect the authoritative roster acknowledgement.",
+      "actor": "Dawn envoy 5",
+      "kind": "player",
+      "acknowledgement": "The joining commander and host observe the acknowledged roster count.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 5",
+          "image": "021-join-2-4-1-dawn-envoy-5.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 1",
+          "image": "021-join-2-4-2-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "scheduled-rosters",
+      "description": "Review the full rosters and the same recorded quarter-hour start from each independent account.",
+      "actor": "All five commanders",
+      "kind": "player",
+      "acknowledgement": "All five views show four seats and the recorded start schedule.",
+      "verifications": [
+        "No commander has an uncaught application error.",
+        "Both authoritative heads are scheduled at the derived quarter-hour, without assigned homes."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "022-scheduled-rosters-1-dawn-envoy-1.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 2",
+          "image": "022-scheduled-rosters-2-dawn-envoy-2.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 3",
+          "image": "022-scheduled-rosters-3-dawn-envoy-3.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 4",
+          "image": "022-scheduled-rosters-4-dawn-envoy-4.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 5",
+          "image": "022-scheduled-rosters-5-dawn-envoy-5.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "overdue-browser-clock",
+      "description": "Advance only browser Date to the recorded start while withholding scheduler delivery. Real service state remains scheduled; no home or clock result is written to persistence.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "awaiting-assignment",
+      "description": "Keep the saved seats visible while the scheduled boundary has passed and home assignment is still outstanding.",
+      "actor": "All five commanders",
+      "kind": "player",
+      "acknowledgement": "Every account sees awaiting-home guidance instead of an invented started state.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "024-awaiting-assignment-1-dawn-envoy-1.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 2",
+          "image": "024-awaiting-assignment-2-dawn-envoy-2.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 3",
+          "image": "024-awaiting-assignment-3-dawn-envoy-3.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 4",
+          "image": "024-awaiting-assignment-4-dawn-envoy-4.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn envoy 5",
+          "image": "024-awaiting-assignment-5-dawn-envoy-5.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "deliver-scheduler",
+      "description": "Deliver the actual startScheduledCampaigns emulator HTTP endpoint. Its real transaction/reducer assigns homes and publishes authorized views; only designated domain time inputs are fixed. This does not certify hosted Scheduler delivery or real elapsed cadence.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "started-rosters",
+      "description": "Read the authoritative begun schedule in each visible roster after scheduler delivery.",
+      "actor": "All five commanders",
+      "kind": "player",
+      "acknowledgement": "Every independent roster visibly acknowledges that its campaign began.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "026-started-rosters-1-dawn-envoy-1.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        },
+        {
+          "player": "Dawn envoy 2",
+          "image": "026-started-rosters-2-dawn-envoy-2.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        },
+        {
+          "player": "Dawn envoy 3",
+          "image": "026-started-rosters-3-dawn-envoy-3.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        },
+        {
+          "player": "Dawn envoy 4",
+          "image": "026-started-rosters-4-dawn-envoy-4.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        },
+        {
+          "player": "Dawn envoy 5",
+          "image": "026-started-rosters-5-dawn-envoy-5.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homes-assigned",
+      "description": "Open the first campaign and inspect each commander's own authoritative home system.",
+      "actor": "Four independent commanders",
+      "kind": "player",
+      "acknowledgement": "Four distinct homes show ownership of both layers and the recorded starting forces.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "027-homes-assigned-1-dawn-envoy-1.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        },
+        {
+          "player": "Dawn envoy 2",
+          "image": "027-homes-assigned-2-dawn-envoy-2.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        },
+        {
+          "player": "Dawn envoy 3",
+          "image": "027-homes-assigned-3-dawn-envoy-3.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        },
+        {
+          "player": "Dawn envoy 4",
+          "image": "027-homes-assigned-4-dawn-envoy-4.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "single-membership-entry",
+      "description": "Return to entry with one accessible active campaign.",
+      "actor": "Dawn envoy 4",
+      "kind": "player",
+      "acknowledgement": "Continue names the one active campaign alongside Play and Learn.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 4",
+          "image": "028-single-membership-entry-1-dawn-envoy-4.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-last-campaign",
+      "description": "Visit the second active campaign so it becomes the last accessible selection.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The second authoritative galaxy has begun.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "029-choose-last-campaign-1-dawn-envoy-1.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multiple-membership-entry",
+      "description": "Return to entry and review the named last campaign and Change campaign option.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "Continue names the second campaign while Play, Learn and Change campaign remain distinct.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "030-multiple-membership-entry-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-last-selection",
+      "description": "Reload entry without losing the account-scoped last campaign selection.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "The named second-campaign Continue survives reload.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "031-reload-last-selection-1-dawn-envoy-1.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "continue-exact-campaign",
+      "description": "Commit Continue and return to that exact active campaign.",
+      "actor": "Dawn envoy 1",
+      "kind": "player",
+      "acknowledgement": "Continue opens the exact recorded campaign ID and live galaxy.",
+      "verifications": [
+        "No commander has an uncaught application error."
+      ],
+      "views": [
+        {
+          "player": "Dawn envoy 1",
+          "image": "032-continue-exact-campaign-1-dawn-envoy-1.png",
+          "verifications": [
+            "The active chart acknowledges that authorized contact records finished loading."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -929,6 +929,7 @@
       military}
     class="system-inspector"
     class:observing={observation}
+    class:active={view.phase === "active"}
     aria-label="Selected system"
   >
     <p class="overline gold">{star.class}-class star</p>
@@ -1685,6 +1686,35 @@
       min-height: 68px;
     }
   }
+  @media (min-width: 701px) and (max-height: 800px) {
+    .system-inspector.active {
+      width: 380px;
+      top: 80px;
+      max-height: calc(100% - 96px);
+      padding: 16px;
+    }
+    .system-inspector.active h2 {
+      font-size: 28px;
+      margin: 6px 0;
+    }
+    .system-inspector.active > p {
+      font-size: 12px;
+      margin: 6px 0;
+    }
+    .system-inspector.active .system-details :global(.stellar-art) {
+      height: 68px;
+    }
+    .system-inspector.active dl div {
+      padding: 8px 0;
+    }
+    .system-inspector.active .system-actions {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .system-inspector.active .system-actions :global(button) {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
   @media (max-width: 700px) {
     .system-actions {
       display: grid;
@@ -1768,6 +1798,7 @@
       padding-bottom: max(16px, env(safe-area-inset-bottom));
       padding: 16px;
     }
+    .system-inspector.active,
     .system-inspector.observing {
       height: 70%;
       max-height: 70%;
