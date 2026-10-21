@@ -1,0 +1,38 @@
+{
+  "units": {
+    "passed": 36,
+    "assertions": 881
+  },
+  "liveService": {
+    "passed": 4,
+    "assertions": 361,
+    "seconds": 56.94,
+    "log": "/tmp/cluster-observations-live.log",
+    "coverage": "Both-provider acquisition, private projection, lost-ack replay, complete four-recipient paged history across both migration directions; production lease replacement and fenced cleanup."
+  },
+  "defaultService": {
+    "passed": 22,
+    "assertions": 1284,
+    "skippedLiveOnly": 12,
+    "seconds": 65.86,
+    "log": "/tmp/cluster-observations-verified.log"
+  },
+  "browser": {
+    "passed": 7,
+    "seconds": 33.4,
+    "log": "/tmp/cluster-observations-verified.log",
+    "coverage": "Ordinary four-player UI admission; real services with explicit test clock; actual unknown/current/stale reports; reload; pre-scroll age/tab geometry, sticky age within bounded panels, no document overflow; gallery/lab replay/reset/seek and equal reduced-motion outcomes at phone/desktop/short/4K."
+  },
+  "inheritedAdmission": {
+    "passed": 1,
+    "minutes": 11.6,
+    "log": "/tmp/cluster-start-boundary.log",
+    "coverage": "Recorded real-time boundaries, scheduler HTTP delivery, distinct homes and retained active campaign selection."
+  },
+  "types": "pass",
+  "lint": "pass",
+  "promptHookTests": 12,
+  "renderedReview": "Implementer inspected phone/desktop/short/4K current and historical compositions; independent final rendered approval remains pending. Before captures retained; no existing baselines regenerated. Supervisor independently sampled current-phone at 00:37; broader acceptance remains open.",
+  "deployment": "Complete: all five bundled consumers/view writers then processCampaign; Node 22, no emulator test flags.",
+  "limits": "Proposed rules, fleet sensors, sharing, hosted Google/Scheduler, key rotation, exact-head CI and full independent security/milestone/release acceptance remain open."
+}

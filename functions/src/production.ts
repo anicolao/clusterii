@@ -7,9 +7,11 @@ import {
 import { onSchedule } from "firebase-functions/v2/scheduler";
 import type { Campaign } from "../../shared/campaign.js";
 import { type Mode, provider } from "../../shared/crypto.js";
+import { acquireObservations } from "../../shared/observations.js";
 import { produce } from "../../shared/production.js";
 import { context, publish, readRecipientKeys } from "./campaigns.js";
 import { unprotect } from "./key-protection.js";
+import { observationDraw } from "./observation-random.js";
 
 const leaseMillis = 120000;
 export async function settleCampaignTicks(
@@ -83,6 +85,9 @@ export async function settleCampaignTicks(
           throw new Error("Invalid production schedule");
         const result = produce(current, current.economy),
           next = { ...result.campaign, economy: result.economy };
+        acquireObservations(current, next, (uid, starId, tick) =>
+          observationDraw(current.seed, id, uid, starId, tick),
+        );
         const keys = await readRecipientKeys(
           tx,
           id,

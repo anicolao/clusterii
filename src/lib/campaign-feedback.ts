@@ -2,6 +2,8 @@ export const campaignPendingMessage = "Awaiting acknowledgement…";
 export const campaignNetworkMessage =
   "The connection was interrupted. Your selection and pending order are preserved.";
 const reasons: Record<string, string> = {
+  "pending-work-capacity":
+    "This campaign’s pending work is at capacity. Wait for a tick to settle before submitting another order.",
   "focus-unavailable":
     "Market focus begins after home assignment in a production-enabled campaign.",
   "focus-queue-full":

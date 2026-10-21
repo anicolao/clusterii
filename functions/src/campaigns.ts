@@ -33,6 +33,7 @@ import {
   unwrap,
   wrap,
 } from "../../shared/crypto.js";
+import { assertObservationBudget } from "../../shared/observations.js";
 import {
   type Profile,
   type ProfileView,
@@ -410,11 +411,13 @@ async function handleCampaign(
                 ? selectResearch(current, action, uid, commandId, Date.now())
                 : joinOrLeave(current, action, uid, profile, now);
       }
+      assertObservationBudget(next);
     } catch (error) {
       if (error instanceof KeyServiceError) throw error;
       const reason =
         error instanceof Error &&
         [
+          "pending-work-capacity",
           "permission",
           "profile-required",
           "construction-unavailable",

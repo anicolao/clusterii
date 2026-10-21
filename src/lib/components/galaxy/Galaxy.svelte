@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick, onDestroy } from "svelte";
   import type { Technology } from "@shared/production";
+  import SystemObservation from "../SystemObservation.svelte";
   import type { Allocation } from "@shared/market-focus";
   import SystemConstruction from "../SystemConstruction.svelte";
   import type { Development } from "@shared/construction";
@@ -61,6 +62,7 @@
     busy?: boolean;
     pending?: boolean;
   } = $props();
+  let observation = $state(false);
   let construction = $state(false);
   let economy = $state(false);
   let history = $state(false);
@@ -298,10 +300,22 @@
   <aside
     inert={roster || listing || history || economy || construction}
     class="system-inspector"
+    class:observing={observation}
     aria-label="Selected system"
   >
     <p class="overline gold">{star.class}-class star</p>
     <h2><Icon kind="star" /> {star.name}</h2>
+    <div class="knowledge-tabs" role="group" aria-label="System information">
+      <ActionButton
+        class="secondary"
+        aria-pressed={!observation}
+        onclick={() => (observation = false)}>System</ActionButton
+      ><ActionButton
+        class="secondary"
+        aria-pressed={observation}
+        onclick={() => (observation = true)}>Observation</ActionButton
+      >
+    </div>
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (This bounded intelligence panel needs keyboard scrolling.) -->
     <div
       class="system-details"
@@ -309,50 +323,52 @@
       aria-label="System details"
       tabindex="0"
     >
-      <StellarArt stellarClass={star.class} />
-      <p>
-        {view.phase === "active"
-          ? "Your knowledge of this system"
-          : "Awaiting home assignment."}
-      </p>
-      <dl>
-        <div>
-          <dt>Orbit</dt>
-          <dd>{holding?.orbit ?? "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Surface</dt>
-          <dd>{holding?.surface ?? "Unknown"}</dd>
-        </div>
-        {#if holding}<div>
-            <dt>Fighters</dt>
-            <dd>{holding.fighters ?? "Unknown"}</dd>
+      {#if observation}<SystemObservation {view} starId={star.id} />{:else}
+        <StellarArt stellarClass={star.class} />
+        <p>
+          {view.phase === "active"
+            ? "Your knowledge of this system"
+            : "Awaiting home assignment."}
+        </p>
+        <dl>
+          <div>
+            <dt>Orbit</dt>
+            <dd>{holding?.orbit ?? "Unknown"}</dd>
           </div>
           <div>
-            <dt>Infantry</dt>
-            <dd>{holding.infantry ?? "Unknown"}</dd>
+            <dt>Surface</dt>
+            <dd>{holding?.surface ?? "Unknown"}</dd>
           </div>
-          <div>
-            <dt>Markets / Camps</dt>
-            <dd>
-              {holding.markets ?? "Unknown"} / {holding.camps ?? "Unknown"}
-            </dd>
-          </div>
-          <div>
-            <dt>Bases / Stations</dt>
-            <dd>
-              {holding.bases ?? "Unknown"} / {holding.stations ?? "Unknown"}
-            </dd>
-          </div>
-          <div>
-            <dt>Held credits</dt>
-            <dd>
-              {holding.escrowMilli === undefined
-                ? "Unknown"
-                : holding.escrowMilli / 1000}
-            </dd>
-          </div>{/if}
-      </dl>
+          {#if holding}<div>
+              <dt>Fighters</dt>
+              <dd>{holding.fighters ?? "Unknown"}</dd>
+            </div>
+            <div>
+              <dt>Infantry</dt>
+              <dd>{holding.infantry ?? "Unknown"}</dd>
+            </div>
+            <div>
+              <dt>Markets / Camps</dt>
+              <dd>
+                {holding.markets ?? "Unknown"} / {holding.camps ?? "Unknown"}
+              </dd>
+            </div>
+            <div>
+              <dt>Bases / Stations</dt>
+              <dd>
+                {holding.bases ?? "Unknown"} / {holding.stations ?? "Unknown"}
+              </dd>
+            </div>
+            <div>
+              <dt>Held credits</dt>
+              <dd>
+                {holding.escrowMilli === undefined
+                  ? "Unknown"
+                  : holding.escrowMilli / 1000}
+              </dd>
+            </div>{/if}
+        </dl>
+      {/if}
     </div>
     <div class="system-actions">
       {#if holding && view.productionEnabled && onbuild}<ActionButton
@@ -523,6 +539,20 @@
 </div>
 
 <style>
+  .knowledge-tabs {
+    display: flex;
+    gap: 8px;
+    flex: none;
+  }
+  .knowledge-tabs :global(button) {
+    min-height: 44px;
+    flex: 1;
+    padding: 8px;
+  }
+  .knowledge-tabs :global([aria-pressed="true"]) {
+    border-color: #7ce9fa;
+    background: #143944;
+  }
   .construction-panel {
     position: absolute;
     inset: 58px 0 0;
@@ -862,6 +892,10 @@
       max-height: 44%;
       padding-bottom: max(16px, env(safe-area-inset-bottom));
       padding: 16px;
+    }
+    .system-inspector.observing {
+      height: 70%;
+      max-height: 70%;
     }
     .system-inspector > p {
       font-size: 12px;
