@@ -195,3 +195,7 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | D
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry bounded login and actual-frame readiness repairs into navigation with verified predecessor evidence.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry tested login and frame readiness repairs and review new Linux multiplayer-start candidates.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry reviewed Linux start candidates and verify both encryption environments after parent readiness repairs.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Reuse initialized emulator authentication in the remaining identity story and preserve its exact player sequence.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry the verified original-identity authentication correction into the navigation successor.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Preserve shared initialized identity login through the multiplayer-start review stack.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry the original identity login correction and review Linux encryption-choice candidates for exact comparison.
