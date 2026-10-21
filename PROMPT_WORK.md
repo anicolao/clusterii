@@ -280,3 +280,5 @@ Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | R
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Check absent initial construction state before the first actual build creates its queues.
 
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Restore pending construction selection and reconcile settled completion/refund feedback with matching authoritative outcomes.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Contain pending construction lettering beside Retry order and assert actual text bounds at every commitment view.

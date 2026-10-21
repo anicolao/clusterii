@@ -418,6 +418,7 @@
     margin-top: 12px;
   }
   .actions :global(button[type="submit"]) {
+    overflow-wrap: anywhere;
     min-width: 220px;
     background: #79e3f1;
     border-color: #b4f8ff;

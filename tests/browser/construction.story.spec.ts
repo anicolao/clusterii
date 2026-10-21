@@ -28,6 +28,25 @@ const rail = async (page: Page) => {
   expect(b).not.toBeNull();
   expect(b!.y).toBeGreaterThanOrEqual(0);
   expect(b!.y + b!.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+  expect(
+    await commitment(page)
+      .locator("button")
+      .evaluateAll((elements) =>
+        elements.every((element) => {
+          const bounds = element.getBoundingClientRect();
+          const range = document.createRange();
+          range.selectNodeContents(element);
+          return [...range.getClientRects()].every(
+            (r) =>
+              r.left >= bounds.left &&
+              r.right <= bounds.right &&
+              r.top >= bounds.top &&
+              r.bottom <= bounds.bottom,
+          );
+        }),
+      ),
+    "Commitment action lettering stays inside its actual button",
+  ).toBe(true);
 };
 const read = async (page: Page, target: Locator) => {
   await rail(page);
