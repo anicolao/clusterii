@@ -719,8 +719,10 @@ for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER
  for(const {c} of players){const view=(await readCampaignHistory(c.firestore,c.functions,id,c.uid)).records[0];expect(view.production?.tick).toBe(1);expect(view.empire?.creditsMilli).toBe(202800);expect(view.holdings[0].fighters).toBe(21);expect(view.economy?.ledger?.scienceMilli).toBe(1400);expect(JSON.stringify(view.economy)).not.toContain(players.find(p=>p.c.uid!==c.uid)!.c.uid);}
  // A lost worker reply after commit must not produce the same tick twice.
  const transaction=Object.getPrototypeOf(db).runTransaction.bind(db);let calls=0;
- const lost=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const call=++calls;const result=await transaction(...args);if(call===2)throw new Error('Lost production acknowledgement');return result;});
- try{await expect(settleCampaignTicks(id,()=>due+900000)).rejects.toThrow('Lost production acknowledgement');}finally{lost.mockRestore();}
+ const diagnostic=setTimeout(async()=>{const [h,l]=await Promise.all([head.get(),lease.get()]);console.info('Production recovery still pending',{mode,calls,revision:h.get('revision'),nextTickAt:h.get('nextTickAt'),leaseExists:l.exists,leaseExpiry:l.get('expiresAt')});},30000);
+ diagnostic.unref();
+ const lost=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const call=++calls;console.log('production fault',mode,call,'begin',Date.now());const result=await transaction(...args);console.log('production fault',mode,call,'committed',Date.now());if(call===2)throw new Error('Lost production acknowledgement');return result;});
+ try{await expect(settleCampaignTicks(id,()=>due+900000)).rejects.toThrow('Lost production acknowledgement');}finally{clearTimeout(diagnostic);lost.mockRestore();}
  expect((await head.get()).get('revision')).toBe(8);expect(await settleCampaignTicks(id,()=>due+900000)).toBe(0);
  // Catch up in ordered bounded batches. The ledger is the last confirmed tick,
  // while the retained history contains every intervening authorized balance.
