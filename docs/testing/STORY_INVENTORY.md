@@ -103,3 +103,12 @@ Eight local journeys verify 72 exact captures in 1.3 minutes. Host and invitee v
 Pinned Linux comparison at b3def4c passes 28 combined stories/202 captures in 6.0 minutes, including these four validation stories/24 images. Hosted Google and independent full visual review remain separate gates.
 
 [phone](stories/identity-validation/phone/linux-arm64/README.md) · [desktop](stories/identity-validation/desktop/linux-arm64/README.md) · [large](stories/identity-validation/large/linux-arm64/README.md) · [short](stories/identity-validation/short/linux-arm64/README.md)
+
+## Verified Linux invitation narratives
+
+Eight invitation journeys/72 captures pass within the 36-story pinned Linux run 39628471834.
+
+- phone: [First admission](stories/invitation-first-admission/phone/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/phone/linux-arm64/README.md).
+- desktop: [First admission](stories/invitation-first-admission/desktop/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/desktop/linux-arm64/README.md).
+- large: [First admission](stories/invitation-first-admission/large/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/large/linux-arm64/README.md).
+- short: [First admission](stories/invitation-first-admission/short/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/short/linux-arm64/README.md).

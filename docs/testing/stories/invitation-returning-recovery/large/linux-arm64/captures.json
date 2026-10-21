@@ -1,0 +1,47 @@
+[
+  {
+    "image": "002-return-to-invitation-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "actualSha256": "b1f86413b9f8758e62da7364d0c0913660077cd82f452fe95f08ae522a946ddb"
+  },
+  {
+    "image": "003-preserve-return-link-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+    "actualSha256": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca"
+  },
+  {
+    "image": "004-authenticate-and-resume-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+    "actualSha256": "38e8e6d277022be7e040b5fef704cda18c6de704960b0c3110c6e3e29e0ea8ce"
+  },
+  {
+    "image": "004-authenticate-and-resume-2-invitation-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+    "actualSha256": "b4da9438140b45db44e3c698d655734da8fe8e1dee646af4fa511e82ae07f18f"
+  },
+  {
+    "image": "005-reload-return-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/005-reload-return-1-returning-envoy.png",
+    "actualSha256": "38e8e6d277022be7e040b5fef704cda18c6de704960b0c3110c6e3e29e0ea8ce"
+  },
+  {
+    "image": "006-missing-invitation-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+    "actualSha256": "66ed9e76b98dbfc2aada2c7db6aa5cc9b19ff3d1dcf7deb322dab59b83e16257"
+  },
+  {
+    "image": "007-recover-directory-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/007-recover-directory-1-returning-envoy.png",
+    "actualSha256": "7c20bf98896ae8c98200a5267ab76eb771c97c7b03fd3ac27883e0749d30a327"
+  },
+  {
+    "image": "009-denied-invitation-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+    "actualSha256": "a9a4f482bdc432e098babf670565ba8a02a1ba99aedf819c4936bf52bc6ea934"
+  },
+  {
+    "image": "010-recover-entry-1-returning-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/010-recover-entry-1-returning-envoy.png",
+    "actualSha256": "bbb45fec5257ea2fea07dd521df2adf1e8403378bd37fbc428724981daf1c4b0"
+  }
+]

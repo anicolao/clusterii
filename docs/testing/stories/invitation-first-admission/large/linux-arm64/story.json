@@ -1,0 +1,208 @@
+{
+  "id": "invitation-first-admission",
+  "title": "Follow an invitation into a waiting campaign",
+  "inventory": [
+    "UX-01",
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "An independent new commander follows an invitation through authentication and saved identity, reviews a faction and claims a real seat. The host observes the acknowledged roster change. The starting host campaign is prepared through ordinary UI with fixed catalogue entropy and explicit development access.",
+  "source": {
+    "commit": "52c25543e10c5071e4c7a4b9d5f92d0ccac24f83",
+    "dirty": false,
+    "spec": "tests/browser/invitation.story.spec.ts",
+    "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "existing-host",
+      "description": "Prepare the host's saved identity and one-seat waiting campaign through real sign-in/create/join UI. Grant emulator development access; the test-only loader fixes catalogue entropy, not keys, commands or persistence.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "open-invitation",
+      "description": "Open the invitation while signed out.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "Sign-in is required before campaign access.",
+      "verifications": [
+        "The private galaxy is not exposed before authentication."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "002-open-invitation-1-invited-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "preserve-destination",
+      "description": "Continue to entry with the invitation preserved.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "Play is available for sign-in.",
+      "verifications": [
+        "Entry preserves the exact invited campaign ID."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "003-preserve-destination-1-invited-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "sign-in",
+      "description": "Authenticate and reach first-time identity editing.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "The commander name field is ready.",
+      "verifications": [
+        "No identity command is submitted by sign-in alone."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "004-sign-in-1-invited-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "development-access",
+      "description": "Grant this authenticated emulator account development access so it can enter the explicitly development-only campaign; this is not public admission approval.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "draft-identity",
+      "description": "Choose the identity used for this campaign.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "The local identity choice is retained.",
+      "verifications": [
+        "The draft remains unsent until Save."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "006-draft-identity-1-invited-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-and-resume",
+      "description": "Save the identity and resume the exact invitation automatically.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "The invited campaign opens faction selection after identity acceptance.",
+      "verifications": [
+        "Exactly one saved identity revision exists and the editor has closed."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "007-save-and-resume-1-invited-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-faction",
+      "description": "Review the Pelagic faction before claiming the seat.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "Pelagic is selected and the commitment stays available.",
+      "verifications": [
+        "Claim your seat remains enabled."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "008-choose-faction-1-invited-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "claim-seat",
+      "description": "Commit the selected seat and wait for the host's authoritative roster update.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "The server confirms the new seat and the host sees the invited commander.",
+      "verifications": [
+        "The guest sees the actual galaxy without creating another identity revision."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "009-claim-seat-1-invited-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Invitation host",
+          "image": "009-claim-seat-2-invitation-host.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-seat",
+      "description": "Reload and recover the admitted campaign without re-saving identity.",
+      "actor": "Invited envoy",
+      "kind": "player",
+      "acknowledgement": "The invited galaxy is restored.",
+      "verifications": [
+        "The campaign URL and original identity revision are unchanged."
+      ],
+      "views": [
+        {
+          "player": "Invited envoy",
+          "image": "010-recover-seat-1-invited-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

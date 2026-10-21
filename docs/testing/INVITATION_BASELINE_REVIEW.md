@@ -13,3 +13,5 @@ Exact local comparison passes all eight invitation journeys/72 captures in 1.3 m
 ## Pinned Linux candidates
 
 Run 39625624861 generated all 36 stories. Its separate comparison passed the 28 parent stories and failed the eight new invitation journeys only on absent reviewed Linux baselines. The implementer inspected both complete Linux invitation contact sheets (72 captures), plus the full-size phone host roster after admission. The invited and returning identities, host membership view, preserved destination and missing/denied remedies remain readable. These candidates are promoted for a fresh exact run; compact 4K composition and full independent review remain open.
+
+Pinned Linux verification at a1004e4 passed all 36 combined stories in run [39628471834](https://github.com/anicolao/clusterii/actions/runs/39628471834). The eight invitation narratives/72 captures are archived with exact decoded-pixel comparison and original provenance. Application CI, independent full composition/motion review and hosted acceptance remain open.

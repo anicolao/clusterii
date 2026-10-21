@@ -1,0 +1,208 @@
+{
+  "id": "invitation-returning-recovery",
+  "title": "Return through an invitation without rewriting identity",
+  "inventory": [
+    "UX-01",
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A signed-out commander with a saved identity and an admitted seat returns through the original invitation. Authentication resumes the campaign directly, with no identity resave. Missing and development-access-denied invitations provide explicit recovery routes without changing the saved identity.",
+  "source": {
+    "commit": "52c25543e10c5071e4c7a4b9d5f92d0ccac24f83",
+    "dirty": false,
+    "spec": "tests/browser/invitation.story.spec.ts",
+    "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "existing-campaign-and-identity",
+      "description": "Prepare two independently authenticated commanders and two admitted seats through real UI, with fixed catalogue input and explicit emulator development access. Save the returning identity once, then sign out through the identity editor. This establishes an existing campaign; it does not claim illustrated admission or hosted Google acceptance.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "return-to-invitation",
+      "description": "Open the original invitation while signed out.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The campaign asks for sign-in before exposing private information.",
+      "verifications": [
+        "The private galaxy is absent while signed out."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "002-return-to-invitation-1-returning-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "preserve-return-link",
+      "description": "Continue to entry while retaining the exact campaign destination.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "Play is ready for authentication.",
+      "verifications": [
+        "The campaign ID is preserved across the entry redirect."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "003-preserve-return-link-1-returning-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "authenticate-and-resume",
+      "description": "Authenticate with the saved account and resume the campaign directly.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The invited galaxy opens without an identity-editor round trip.",
+      "verifications": [
+        "No identity resave or duplicate seat is required."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "004-authenticate-and-resume-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Invitation host",
+          "image": "004-authenticate-and-resume-2-invitation-host.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-return",
+      "description": "Reload the resumed campaign with the same saved identity.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The authorized galaxy is recovered again.",
+      "verifications": [
+        "Recovery leaves the original identity revision and receipt intact."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "005-reload-return-1-returning-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "missing-invitation",
+      "description": "Follow an invitation whose campaign is no longer available.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The unavailable-campaign error explains the missing destination.",
+      "verifications": [
+        "All campaigns offers a usable remedy and identity is unchanged."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "006-missing-invitation-1-returning-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-directory",
+      "description": "Return to the campaign directory after the missing invitation.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The campaign directory loads and clears the missing-link error.",
+      "verifications": [
+        "The existing saved identity remains unchanged."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "007-recover-directory-1-returning-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "remove-development-access",
+      "description": "Remove this test account's emulator development claim to exercise a real authorization denial. The campaign, membership, history and identity records are not edited.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "denied-invitation",
+      "description": "Follow the original invitation after development access is removed.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The development-access boundary denies campaign entry.",
+      "verifications": [
+        "The denied view exposes no galaxy and leaves saved identity intact."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "009-denied-invitation-1-returning-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-entry",
+      "description": "Return to entry and clear the inaccessible invitation.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The entry surface is available again.",
+      "verifications": [
+        "The denied campaign query is cleared without rewriting identity."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "010-recover-entry-1-returning-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
