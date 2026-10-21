@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
@@ -13,6 +14,7 @@
     scenarios,
     duration,
     historyRecords,
+    productionFrame,
   } from "./scenarios";
   let selected = $state("accepted");
   let time = $state(0);
@@ -108,7 +110,14 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "history-recovery"}<div style="height: 540px">
+        {#if selected === "production"}<div style="height:650px">
+            <CampaignEconomy
+              view={productionFrame(time).view}
+              inspectTime={productionFrame(time).clock}
+              onclose={reset}
+            />
+          </div>
+        {:else if selected === "history-recovery"}<div style="height: 540px">
             <CampaignHistory
               records={time >= 3200 ? historyRecords : []}
               inspect={{ time: time - frame.at, reduced }}

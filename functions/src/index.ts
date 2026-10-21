@@ -132,5 +132,5 @@ export {
   processCampaignMaintenance,
   startScheduledCampaigns,
 } from "./campaigns.js";
-
+export { runProduction } from "./production.js";
 export { revokeSessions } from "./session-security.js";

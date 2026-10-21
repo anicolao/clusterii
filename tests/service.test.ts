@@ -704,3 +704,55 @@ for (const mode of ['mock','real'] as const) (mode==='real' && process.env.CLUST
  await expect(readCampaignHistory(a.firestore,a.functions,gameId,a.uid)).rejects.toThrow();
  await expect(getDocs(collection(a.firestore,`campaignViews/${gameId}/members/${a.uid}/${mode==='real'?'epochs/2/versions':'versions'}`))).rejects.toThrow();
 },120000);
+
+for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER_KMS_TEST!=='true'?test.skip:test)(`production ticks ${mode}: authoritative balances, concurrent recovery, pause and private history`,async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();
+ const {startDueCampaign}=await import('../functions/src/campaigns');const {settleCampaignTicks}=await import('../functions/src/production');
+ const players=await Promise.all((['heliac','pelagic','vesper','dracon'] as const).map(async faction=>{const c=await client(`production-${faction}-${crypto.randomUUID()}`);await developer(c);await saveIdentity(c);return {c,faction};}));
+ const id=crypto.randomUUID();await campaignCommand(players[0].c,id,{kind:'campaign.create',expectedRevision:0,name:'Production service',capacity:4,mode,development:true});
+ for(let i=0;i<4;i++)await campaignCommand(players[i].c,id,{kind:'campaign.join',expectedRevision:i+1,faction:players[i].faction},mode);
+ const head=db.doc(`campaignStates/${id}`),lease=db.doc(`campaignTickLeases/${id}`);const start=(await head.get()).get('startAt');await startDueCampaign(id,start);
+ expect(await settleCampaignTicks(id,()=>start+899999)).toBe(0);
+ const due=start+900000;
+ await Promise.all([settleCampaignTicks(id,()=>due),settleCampaignTicks(id,()=>due)]);
+ expect((await head.get()).get('revision')).toBe(7);expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(7);
+ for(const {c} of players){const view=(await readCampaignHistory(c.firestore,c.functions,id,c.uid)).records[0];expect(view.production?.tick).toBe(1);expect(view.empire?.creditsMilli).toBe(202800);expect(view.holdings[0].fighters).toBe(21);expect(view.economy?.ledger?.scienceMilli).toBe(1400);expect(JSON.stringify(view.economy)).not.toContain(players.find(p=>p.c.uid!==c.uid)!.c.uid);}
+ // A lost worker reply after commit must not produce the same tick twice.
+ const transaction=db.runTransaction.bind(db);let calls=0;
+ const lost=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const call=++calls;const result=await transaction(...args);if(call===2)throw new Error('Lost production acknowledgement');return result;});
+ try{await expect(settleCampaignTicks(id,()=>due+900000)).rejects.toThrow('Lost production acknowledgement');}finally{lost.mockRestore();}
+ expect((await head.get()).get('revision')).toBe(8);expect(await settleCampaignTicks(id,()=>due+900000)).toBe(0);
+ // Catch up in ordered bounded batches. The ledger is the last confirmed tick,
+ // while the retained history contains every intervening authorized balance.
+ expect(await settleCampaignTicks(id,()=>due+5*900000)).toBe(4);
+ const view=(await readCampaignHistory(players[0].c.firestore,players[0].c.functions,id,players[0].c.uid)).records[0];expect(view.production?.tick).toBe(6);expect(view.empire?.creditsMilli).toBe(216800);expect(view.holdings[0].fighters).toBe(28);expect(view.economy?.research.progressMilli.navigation).toBe(8400);
+ const paused=await campaignCommand(players[0].c,id,{kind:'campaign.pause',expectedRevision:view.revision},mode);expect(paused.receipt.status).toBe('accepted');expect(await settleCampaignTicks(id,()=>due+10*900000)).toBe(0);expect((await head.get()).get('revision')).toBe(view.revision+1);
+ await expect(getDoc(doc(players[1].c.firestore,'campaignViews',id,'members',players[0].c.uid))).rejects.toThrow();await expect(setDoc(doc(players[0].c.firestore,'campaignTickLeases',id),{token:'forged',expiresAt:0})).rejects.toThrow();
+ expect((await lease.get()).exists).toBe(false);
+},120000);
+
+test('expired production claim is reclaimed; returning stale worker cannot write or release its replacement lease',async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();
+ const {startDueCampaign}=await import('../functions/src/campaigns');const {settleCampaignTicks}=await import('../functions/src/production');
+ const players=await Promise.all((['heliac','pelagic','vesper','dracon'] as const).map(async faction=>{const c=await client(`lease-${faction}-${crypto.randomUUID()}`);await developer(c);await saveIdentity(c);return {c,faction};}));
+ const id=crypto.randomUUID();await campaignCommand(players[0].c,id,{kind:'campaign.create',expectedRevision:0,name:'Lease recovery',capacity:4,mode:'mock',development:true});for(let i=0;i<4;i++)await campaignCommand(players[i].c,id,{kind:'campaign.join',expectedRevision:i+1,faction:players[i].faction});
+ const head=db.doc(`campaignStates/${id}`),lease=db.doc(`campaignTickLeases/${id}`);const start=(await head.get()).get('startAt');await startDueCampaign(id,start);const due=start+900000;
+ let releaseOld!:()=>void,releaseNew!:()=>void,oldClaimed!:()=>void,newClaimed!:()=>void;
+ const oldGate=new Promise<void>(r=>releaseOld=r),newGate=new Promise<void>(r=>releaseNew=r),oldReady=new Promise<void>(r=>oldClaimed=r),newReady=new Promise<void>(r=>newClaimed=r);
+ const transaction=db.runTransaction.bind(db);let calls=0;
+ const stopped=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const call=++calls;const result=await transaction(...args);if(call===1){oldClaimed();await oldGate;}if(call===2){newClaimed();await newGate;}return result;});
+ try{
+  const oldWorker=settleCampaignTicks(id,()=>due);await oldReady;const oldToken=(await lease.get()).get('token');
+  const replacement=settleCampaignTicks(id,()=>due+120001);await newReady;const replacementToken=(await lease.get()).get('token');expect(replacementToken).not.toBe(oldToken);
+  releaseOld();expect(await oldWorker).toBe(0);expect((await lease.get()).get('token')).toBe(replacementToken);expect((await head.get()).get('revision')).toBe(6);
+  releaseNew();expect(await replacement).toBe(1);expect((await head.get()).get('revision')).toBe(7);expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(7);expect((await lease.get()).exists).toBe(false);
+ }finally{releaseOld();releaseNew();stopped.mockRestore();}
+ const saved=(await head.get()).data();let attempts=0;
+ const abort=spyOn(db,'runTransaction').mockImplementation(async(callback:(tx:unknown)=>Promise<unknown>)=>{const attempt=++attempts;return transaction(async(tx:unknown)=>{const result=await callback(tx);if(attempt===2)throw new Error('Stopped before production commit');return result;});});
+ try{await expect(settleCampaignTicks(id,()=>due+900000)).rejects.toThrow('Stopped before production commit');}finally{abort.mockRestore();}
+ expect((await head.get()).data()).toEqual(saved);expect((await lease.get()).exists).toBe(false);
+ expect(await settleCampaignTicks(id,()=>due+97*900000)).toBe(96);
+ expect(await settleCampaignTicks(id,()=>due+97*900000)).toBe(1);
+ expect(await settleCampaignTicks(id,()=>due+97*900000)).toBe(0);
+ const final=(await readCampaignHistory(players[0].c.firestore,players[0].c.functions,id,players[0].c.uid)).records[0];expect(final.production?.tick).toBe(98);expect(final.empire?.creditsMilli).toBe(474400);expect(final.holdings[0].fighters).toBe(157);expect(final.economy?.research.levels.navigation).toBe(3);expect(final.economy?.research.progressMilli.navigation).toBe(17200);expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(104);
+},120000);

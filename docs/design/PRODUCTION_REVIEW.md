@@ -1,0 +1,19 @@
+# Scheduled production and empire ledger
+
+New development campaigns store schema capability 2. Home assignment initializes a production clock whose first tick is fifteen minutes after the scheduled start. Schema-1 campaigns retain their recorded behavior, access and history. They do not accrue retroactive earnings, infer missing pause intervals or silently upgrade. Their Economy tray explains the difference and the existing campaign directory still creates new games. A future migration requires separate review.
+
+This compatibility choice follows the reviewer's 20:36 checkpoint; it does not approve the review rules. Public campaigns remain closed. Production uses the versioned affinity, extraction, investing, recruiting and innovation formulas. Integer exponent comparisons compute exact milliunit floors without floating-point rounding; largest-remainder credit allocation uses stable system IDs. Fractional forces remain local. Orbit receives fighters/science, surface receives infantry, contested credits enter escrow and unified escrow pays once. Force limits record discarded units. Science advances the default Navigation track, preserves overflow and applies new levels from the following tick. Research selection, construction, market dividends, fleets and combat remain later slices.
+
+Each campaign has a leased production worker. A tick transaction validates the current lease token, phase, maintenance barrier, epoch and due time, then commits the encrypted canonical revision, recipient views/history, directory summary and next boundary together. Transactions retry against concurrent changes. A worker stops after 96 ticks, allowing the next delivery to continue catch-up. The minute sweep isolates failed campaigns and pages by stable document ID. Pausing stops settlement and resuming shifts the remaining interval; migration uses that same barrier. No client clock credits a wallet.
+
+The galaxy's Economy control opens a bounded instrument with available credits, confirmed tick, last production, science progress and the next scheduled event. When overdue, it says Awaiting next tick until authoritative data arrives. Phone controls share a compact row, keeping system details scrollable and the commitment visible. The gallery/lab render the production component with reducer-derived records, old-campaign explanation and deterministic pending/confirmed frames. No new bitmap assets are introduced; existing galaxy/star illustrations retain their provenance.
+
+## Evidence and remaining gates
+
+- Type checks pass. Eighteen unit tests pass with 311 assertions, including exact exponents, fractional conservation, split control/escrow, science timing and caps.
+- Mock service production/concurrency/acknowledgement and expired-lease tests pass (64 assertions). Extended recovery passes 29 assertions: before-commit rollback, old worker fencing, a 96-tick batch plus the remaining tick, 98 total settled ticks and exact retained revision count.
+- Thirteen affected campaign/history/gallery/lab browser tests pass in one minute, including phone, desktop, short and 4K geometry.
+- Four independent UI players filled a roster through ordinary controls and reached the real UTC start boundary. The first production-boundary journey is still running; its balances/captures are not yet acceptance evidence.
+- Live-KMS production validation, backend deployment, exact-head CI, final production captures and independent rendered/security review remain pending. Existing hosted Google and account/key lifecycle gates remain open.
+
+This implements the production phase of the tick pipeline, not absent construction/travel/combat/diplomacy/victory phases. It does not claim completion of milestones 2–5 or public release. Current forces are stationed units; fleet conservation and aggregate force limits must include fleets when that interaction ships.

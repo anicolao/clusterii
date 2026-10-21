@@ -1,0 +1,29 @@
+import {test,expect} from '@playwright/test';
+import {login,grantDeveloper,geometry} from './helpers';
+test('four commanders receive authoritative production after the real scheduled tick',async({browser,request},info)=>{
+ test.setTimeout(33*60*1000);const contexts=[],pages=[];let url='';
+ try {
+  for(let i=0;i<4;i++) {
+   const context=await browser.newContext();contexts.push(context);const page=await context.newPage();pages.push(page);const email=`production-ui-${i}-${Date.now()}@example.test`;
+   await login(page,email);await page.getByLabel('Commander name').fill(`Production envoy ${i+1}`);await page.getByRole('button',{name:'Save identity'}).click();await expect(page.getByRole('status')).toContainText('Identity saved');await grantDeveloper(email);await page.getByRole('button',{name:'Close',exact:true}).click();await page.getByRole('button',{name:'Play',exact:true}).click();
+  }
+  for(let i=0;i<4;i++) {
+   const page=pages[i];if(i===0){await page.getByRole('button',{name:'Create campaign',exact:true}).click();await page.getByLabel('Campaign name').fill(`Production dawn ${Date.now()}`);await page.getByRole('button',{name:'Create galaxy'}).click();await expect(page.getByRole('heading',{name:'Choose your faction'})).toBeVisible();url=page.url();}else await page.goto(url);
+   await page.getByRole('radio',{name:new RegExp(['Heliac Assembly','Pelagic Concord','Vesper Synod','Dracon League'][i])}).check();await page.getByRole('button',{name:'Claim your seat'}).click();await expect(page.getByText('Your seat is confirmed.')).toBeVisible();
+  }
+  await pages[0].getByRole('button',{name:'Economy',exact:true}).click();await expect(pages[0].getByRole('dialog',{name:'Empire economy panel'})).toContainText('Production begins fifteen minutes after home assignment.');
+  let remaining=900000-Date.now()%900000+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for actual campaign start.`);await new Promise(r=>setTimeout(r,remaining));
+  const deliver=async(name:string)=>{const response=await request.post(`http://127.0.0.1:15001/demo-clusterii/us-central1/${name}-0`,{headers:{'X-CloudScheduler-JobName':'emulator-production-journey','X-CloudScheduler-ScheduleTime':new Date().toISOString()}});expect(response.ok()).toBe(true);};
+  await deliver('startScheduledCampaigns');
+  for(const page of pages){await expect(page.getByText('Campaign begun',{exact:true})).toBeVisible();if(page!==pages[0])await page.getByRole('button',{name:'Economy',exact:true}).click();await expect(page.getByRole('dialog',{name:'Empire economy panel'})).toContainText('First production pending');}
+  remaining=900000-Date.now()%900000+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for actual first production.`);await new Promise(r=>setTimeout(r,remaining));
+  const tray=pages[0].getByRole('dialog',{name:'Empire economy panel'});await expect(tray.getByRole('status')).toContainText('Awaiting next tick.');
+  await deliver('runProduction');await deliver('runProduction');
+  for(const page of pages){const panel=page.getByRole('dialog',{name:'Empire economy panel'});await expect(panel).toContainText('Confirmed tick 1');await expect(panel.locator('.balance strong')).toHaveText('202.8');await expect(panel.getByRole('progressbar',{name:'Science towards next level'})).toHaveAttribute('value','1400');}
+  for(const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['short',1280,720],['4k',3840,2160]] as const) {
+   const page=pages[0];await page.setViewportSize({width,height});const back=tray.getByRole('button',{name:'Return to galaxy'});const box=await back.boundingBox();expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(height);await geometry(page,tray);await tray.getByRole('region',{name:'Production ledger'}).evaluate(el=>el.scrollTo(0,0));
+   const path=info.outputPath(`production-${label}.png`);await page.screenshot({path});await info.attach(`Production ${label}`,{path,contentType:'image/png'});
+  }
+  await pages[0].keyboard.press('Escape');await expect(pages[0].getByRole('button',{name:'Economy',exact:true})).toBeFocused();await pages[0].reload();await pages[0].getByRole('button',{name:'Economy',exact:true}).click();await expect(tray.locator('.balance strong')).toHaveText('202.8');await expect(tray).toContainText('Confirmed tick 1');
+ }finally{for(const context of contexts)await context.close();}
+});

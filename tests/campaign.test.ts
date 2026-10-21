@@ -100,3 +100,39 @@ test('epoch activation resumes only paused members and permanently records mock 
  const paused=maintainCampaign(mock,{kind:'campaign.pause',expectedRevision:4},'owner',300);
  const real=activateEncryptionEpoch(paused,'real',4,'owner',400);expect(real.mockExposed).toBe(true);expect(real.mode).toBe('real');expect(real.seats).toEqual(state.seats);expect(real.systems).toEqual(state.systems);
 });
+
+import {powerMilli,produce,apportionMilli} from '../shared/production';
+function productionFixture(){
+ let campaign=createCampaign('production',{kind:'campaign.create',expectedRevision:0,name:'Production fixtures',capacity:4,mode:'mock',development:true},'e'.repeat(64),0);
+ for(const [i,faction] of (['heliac','pelagic','vesper','dracon'] as const).entries())campaign=joinOrLeave(campaign,{kind:'campaign.join',expectedRevision:campaign.revision,faction},`p${i}`,{alias:`Envoy ${i}`,portrait:'G1'},0);
+ return startCampaign(campaign,900000);
+}
+test('exact production floors review exponents, preserves milliunits and apportions stable ties',()=>{
+ expect(powerMilli(2800,5)).toBe(2947);expect(powerMilli(1000000,5)).toBe(1412537);
+ for(let level=0;level<=10;level++){expect(powerMilli(0,level)).toBe(0);expect(powerMilli(1000,level)).toBe(1000);}
+ expect(powerMilli(999,10)).toBe(998);expect(()=>powerMilli(-1,0)).toThrow();expect(()=>powerMilli(Number.MAX_SAFE_INTEGER,10)).toThrow();
+ expect([...apportionMilli(5,[{id:'b',milli:1},{id:'a',milli:1}])]).toEqual([['a',3],['b',2]]);
+});
+test('home production conserves credits, whole forces and fractional remainders; science advances only after output',()=>{
+ let state=productionFixture();const home=state.seats[0].home!;
+ expect(state.economy!.nextTickAt).toBe(1800000);expect(state.economy!.tick).toBe(0);
+ for(let n=1;n<=5;n++) {const result=produce(state,state.economy!);state={...result.campaign,economy:result.economy};expect(state.empires.p0.creditsMilli).toBe(200000+2800*n);}
+ expect(state.systems[home].fighters).toBe(27);expect(state.systems[home].infantry).toBe(27);expect(state.economy!.remainders[home]).toEqual({fightersMilli:0,infantryMilli:0});expect(state.economy!.research.p0.progressMilli.navigation).toBe(7000);
+ state.economy!.research.p0.target='innovation';state.economy!.research.p0.progressMilli.innovation=19999;
+ const result=produce(state,state.economy!);expect(result.economy.ledger.p0.scienceMilli).toBe(1400);expect(result.economy.research.p0.levels.innovation).toBe(1);expect(result.economy.research.p0.progressMilli.innovation).toBe(1399);
+ const following=produce(result.campaign,result.economy);expect(following.economy.ledger.p0.scienceMilli).toBe(powerMilli(1400,1));
+});
+test('split control routes production by layer, releases escrow once and hides opposing ledgers',()=>{
+ let state=productionFixture();const home=state.seats[0].home!;
+ state.systems[home].orbit='p1';state.systems[home].escrowMilli=60000;
+ const split=produce(state,state.economy!);state={...split.campaign,economy:split.economy};
+ expect(state.empires.p0.creditsMilli).toBe(200000);expect(state.systems[home].escrowMilli).toBe(62800);expect(split.economy.ledger.p0.fighters).toBe(0);expect(split.economy.ledger.p0.scienceMilli).toBe(0);expect(split.economy.ledger.p0.infantry).toBe(1);
+ state.systems[home].orbit='p0';const unified=produce(state,state.economy!);expect(unified.campaign.empires.p0.creditsMilli).toBe(265600);expect(unified.campaign.systems[home].escrowMilli).toBe(0);expect(unified.economy.ledger.p0.releasedEscrowMilli).toBe(62800);
+ const again=produce(unified.campaign,unified.economy);expect(again.campaign.empires.p0.creditsMilli).toBe(268400);expect(again.economy.ledger.p0.releasedEscrowMilli).toBe(0);
+ const view=campaignView({...unified.campaign,economy:unified.economy},'p0');expect(view.economy?.research).toEqual(unified.economy.research.p0);expect(JSON.stringify(view.economy)).not.toContain('p1');
+});
+test('production force caps record discarded units and legacy campaigns retain their stored capability',()=>{
+ const state=productionFixture(),home=state.seats[0].home!;state.systems[home].fighters=rules.maximumUnitsPerPlayerPerType;state.systems[home].infantry=rules.maximumUnitsPerPlayerPerType;
+ const result=produce(state,state.economy!);expect(result.campaign.systems[home].fighters).toBe(rules.maximumUnitsPerPlayerPerType);expect(result.economy.ledger.p0.discardedFighters).toBe(1);expect(result.economy.ledger.p0.discardedInfantry).toBe(1);
+ const legacy={...state,schemaVersion:1 as const};delete legacy.economy;expect(campaignView(legacy,'p0').productionEnabled).toBe(false);expect(campaignView(legacy,'p0').production).toBeNull();
+});

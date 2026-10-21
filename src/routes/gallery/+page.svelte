@@ -8,8 +8,13 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
-  import { historyRecords } from "../dev/animations/scenarios";
+  import {
+    historyRecords,
+    productionFrame,
+    legacyProductionView,
+  } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
@@ -181,6 +186,16 @@
     </section>
     <section>
       <h2>Account sessions</h2>
+      <h2>Economy · shared production ledger</h2>
+      {#each [productionFrame(0).view, productionFrame(1200).view, productionFrame(2400).view, legacyProductionView] as sample}<div
+          style="height:650px;max-width:620px;margin-bottom:32px"
+        >
+          <CampaignEconomy
+            view={sample}
+            inspectTime={productionFrame(1200).clock}
+            onclose={() => {}}
+          />
+        </div>{/each}
       <h2>Campaign history · shared instrument</h2>
       {#each ["ready", "loading", "error"] as state}<div
           style="height: 540px; max-width: 620px; margin-bottom: 32px;"

@@ -170,6 +170,8 @@ export async function publish(
   const head = {
     revision: state.revision,
     phase: state.phase,
+    pausedAt: state.pausedAt ?? null,
+    nextTickAt: state.economy?.nextTickAt ?? null,
     startAt: state.startAt,
     memberUids: state.seats.map((s) => s.uid),
     mode: state.mode,
