@@ -1000,3 +1000,12 @@ Reviewer finding 2026-10-21 14:48 Toronto: #43 publication run39652784195/job119
 #41 79fa1f2 replacement story comparison is green; application pending. #42 7302236 still fails a single1994-pixel short identity-text comparison despite frame settling; independently retained job119404921165 log /tmp/cluster42-repeat-review-failure.log confirms67 passed20.4min/1failed. Agent acknowledges unresolved cause and retains baseline/trace/diff unchanged, so no duplicate handoff. #43 publication retry119420786184 is running in response to prior finding; #44–45 publication succeeded.
 
 Independent pending lab source review: explicit paused-frame inspection requires declared selector/count/time/duration, finite one-iteration animations, paused matching state, no duplicate matches; undeclared paused and infinite active animations remain rejected. Narratives record the motion inspection, exact baseline comparison unchanged. Lab navigation now has44px minimum targets. This supports explicit component animation inspection, not normal gameplay/service acceptance; verification still pending. Agent healthy and prior handoff logged in PROMPTS.md. Carry checkpoint into related committed/pushed work; remaining visual/motion/hosted and implementation gates open, no merge.
+
+
+## Reviewer progress — 2026-10-21 15:08 Toronto
+
+#46 69f7a27 feedback-lab stories is open correctly stacked on #45 and attached. Review records12 local exact journeys47.7sec, including108 new component captures and unchanged identity images; independent full visual and Linux gates remain. Sampled expected/actual identity crops independently show text raster/vertical placement difference; cause not established. Agent healthy investigating, baseline unchanged.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 15:08 Toronto: #43 job119405166506 now fails two snapshots with70 passing26.1min. In addition to known1994-pixel short session fresh-sign-in text difference, desktop campaign-scheduled-start/026-started-rosters-1-dawn-envoy-1.png differs5688 pixels. Retained log /tmp/cluster43-repeat-review-failure.log. Inspect and retain the distinct roster actual/expected/diff before deciding whether it shares the text cause; do not regenerate baselines or relax comparison to pass. #43 publication retry now succeeded. Log this reviewer-attributed finding and carry checkpoint; no merge.
