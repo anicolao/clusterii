@@ -156,6 +156,15 @@
 </section>
 
 <style>
+  summary {
+    min-height: 44px;
+    padding: 12px 0;
+    cursor: pointer;
+  }
+  summary:focus-visible {
+    outline: 2px solid #7ce9fa;
+    outline-offset: 3px;
+  }
   h3 {
     font:
       500 26px "Cormorant Garamond",

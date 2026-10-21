@@ -55,3 +55,5 @@ The selections in STEP_0_REVIEW.md remain review proposals: public roster sizes,
 ## Review protocol
 
 Capture real rendered states at 393×852, 1440×1000, 3840×2160 and short desktop. Compare composition to approved concepts and retain readable phone identity. Screenshot updates record reviewed changes; matching a regenerated image alone is not visual acceptance. The supervisor independently reviews the produced artifacts and records findings in meta-prompts.md. Hosted OAuth URL checks certify configuration only, not real Google login or persistence.
+
+Identity-gallery story work is stacked on #46: [scope and evidence](IDENTITY_GALLERY_STORIES_REVIEW.md). New illustrated component coverage retains the older broad gallery/lab predecessor; local candidate generation is not exact or hosted acceptance. The inherited short identity-text Linux comparison remains an open gate, distinct from the contact-readiness correction.

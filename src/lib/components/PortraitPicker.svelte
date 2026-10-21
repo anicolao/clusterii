@@ -31,3 +31,14 @@
     {/each}
   </div>
 </fieldset>
+
+<style>
+  fieldset {
+    container-type: inline-size;
+  }
+  @container (max-width: 400px) {
+    .portraits {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+</style>

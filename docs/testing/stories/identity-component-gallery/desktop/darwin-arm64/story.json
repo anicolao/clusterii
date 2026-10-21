@@ -1,0 +1,412 @@
+{
+  "id": "identity-component-gallery",
+  "title": "Inspect the shipped identity and navigation components",
+  "inventory": [
+    "UX-01",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer uses the production gallery's actual shared components. Explicit local specimens expose keyboard focus, selected, disabled, pending, invalid and recovery states. Local activation counts are component callbacks, not service receipts or authentication acceptance. The reference page deliberately scrolls; these captures do not certify remaining gameplay specimens.",
+  "source": {
+    "commit": "c965aed36bc2980691c5e542ecf9848bc9658926",
+    "dirty": true,
+    "spec": "tests/browser/identity-gallery.story.spec.ts",
+    "specSha256": "c2bfba40911bb5c3def4047566eb5466de8e7cfcbbc6d0270acda341cd8da039"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "open-gallery",
+      "description": "Open the developer-only gallery and read its scope before inspecting controls.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Production component gallery is named and the animation lab is reachable.",
+      "verifications": [
+        "The developer page explicitly says samples do not submit game commands.",
+        "The real component callback acknowledges 0 activations."
+      ],
+      "views": [
+        {
+          "player": "Developer · gallery scope",
+          "image": "001-open-gallery-1-developer-gallery-scope.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navigation-0",
+      "description": "Focus and activate Play with the keyboard.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 1 activations.",
+      "verifications": [
+        "The illustrated control retains its real keyboard focus and pending navigation remains disabled."
+      ],
+      "views": [
+        {
+          "player": "Developer · Play keyboard focus",
+          "image": "002-navigation-0-1-developer-play-keyboard-focus.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navigation-1",
+      "description": "Focus and activate Learn the game with the keyboard.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 2 activations.",
+      "verifications": [
+        "The illustrated control retains its real keyboard focus and pending navigation remains disabled."
+      ],
+      "views": [
+        {
+          "player": "Developer · Learn the game keyboard focus",
+          "image": "003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navigation-2",
+      "description": "Focus and activate Continue The Cygnus Compact with the keyboard.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 3 activations.",
+      "verifications": [
+        "The illustrated control retains its real keyboard focus and pending navigation remains disabled."
+      ],
+      "views": [
+        {
+          "player": "Developer · Continue The Cygnus Compact keyboard focus",
+          "image": "004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navigation-pending",
+      "description": "Inspect the disabled opening state without triggering another callback.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 3 activations.",
+      "verifications": [
+        "Pending navigation exposes its readable label and native disabled state."
+      ],
+      "views": [
+        {
+          "player": "Developer · pending navigation",
+          "image": "005-navigation-pending-1-developer-pending-navigation.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "action-primary",
+      "description": "Activate the shared primary button with Space and inspect its disabled counterpart.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 4 activations.",
+      "verifications": [
+        "The active action keeps focus; disabled and awaiting-acknowledgement controls remain unavailable."
+      ],
+      "views": [
+        {
+          "player": "Developer · primary action states",
+          "image": "006-action-primary-1-developer-primary-action-states.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "action-secondary",
+      "description": "Activate the shared secondary button with Space and inspect its disabled counterpart.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 5 activations.",
+      "verifications": [
+        "The active action keeps focus; disabled and awaiting-acknowledgement controls remain unavailable."
+      ],
+      "views": [
+        {
+          "player": "Developer · secondary action states",
+          "image": "007-action-secondary-1-developer-secondary-action-states.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "action-quiet",
+      "description": "Activate the shared quiet button with Space and inspect its disabled counterpart.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 6 activations.",
+      "verifications": [
+        "The active action keeps focus; disabled and awaiting-acknowledgement controls remain unavailable."
+      ],
+      "views": [
+        {
+          "player": "Developer · quiet action states",
+          "image": "008-action-quiet-1-developer-quiet-action-states.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-selected",
+      "description": "Select Diplomacy using the real chapter navigation.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Diplomacy alone is the current chapter.",
+      "verifications": [
+        "The real component callback acknowledges 6 activations."
+      ],
+      "views": [
+        {
+          "player": "Developer · selected chapter",
+          "image": "009-chapter-selected-1-developer-selected-chapter.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identity-fields",
+      "description": "Edit the enabled identity specimen while retaining separate invalid and pending fields.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The enabled field retains the exact edited value.",
+      "verifications": [
+        "Field labels clear the focus ring; invalid input names its validation alert and the pending draft stays disabled."
+      ],
+      "views": [
+        {
+          "player": "Developer · editable identity",
+          "image": "010-identity-fields-1-developer-editable-identity.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        },
+        {
+          "player": "Developer · validation and pending draft",
+          "image": "010-identity-fields-2-developer-validation-and-pending-draft.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portrait-selected",
+      "description": "Select the navigator through its native radio and inspect the entire named portrait set.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The navigator is the only selected enabled portrait.",
+      "verifications": [
+        "All eight shared portraits expose their production accessible names."
+      ],
+      "views": [
+        {
+          "player": "Developer · selected and focused portrait",
+          "image": "011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portraits-pending",
+      "description": "Inspect the disabled portrait set independently of the editable selection.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The disabled set preserves its envoy selection.",
+      "verifications": [
+        "Every radio in the pending set is disabled."
+      ],
+      "views": [
+        {
+          "player": "Developer · disabled portraits",
+          "image": "012-portraits-pending-1-developer-disabled-portraits.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feedback-recovery",
+      "description": "Read the shared pending, accepted and conflict feedback and invoke its reconnect callback.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The real component callback acknowledges 7 activations.",
+      "verifications": [
+        "Pending and accepted copy remain distinct; conflict and network errors explicitly preserve the draft."
+      ],
+      "views": [
+        {
+          "player": "Developer · identity acknowledgement",
+          "image": "013-feedback-recovery-1-developer-identity-acknowledgement.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        },
+        {
+          "player": "Developer · conflict recovery",
+          "image": "013-feedback-recovery-2-developer-conflict-recovery.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        },
+        {
+          "player": "Developer · network remedy",
+          "image": "013-feedback-recovery-3-developer-network-remedy.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research-disclosure",
+      "description": "Open the shared applied-research disclosure with Enter and read its recorded selection.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The native disclosure opens and shows the applied investing selection.",
+      "verifications": [
+        "The disclosure retains keyboard focus and a minimum 44px hit target."
+      ],
+      "views": [
+        {
+          "player": "Developer · applied research disclosure",
+          "image": "014-research-disclosure-1-developer-applied-research-disclosure.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research-disclosure-close",
+      "description": "Close the research disclosure with Space without changing its recorded outcome.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The native disclosure closes with its label and focus preserved.",
+      "verifications": [
+        "The real component callback acknowledges 7 activations."
+      ],
+      "views": [
+        {
+          "player": "Developer · closed research disclosure",
+          "image": "015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narrow-specimens",
+      "description": "Switch to phone-width specimens without losing the edited identity or selected portrait.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The gallery acknowledges narrow specimens and offers the wide layout again.",
+      "verifications": [
+        "The identity specimen is at most 393px wide, contains every portrait target and preserves its editable state."
+      ],
+      "views": [
+        {
+          "player": "Developer · phone-width portrait specimen",
+          "image": "016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icon-inventory",
+      "description": "Inspect every entry/identity glyph with its visible identifier and decorative semantics.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The gallery lists the complete shared glyph registry.",
+      "verifications": [
+        "Each decorative glyph is hidden from assistive technology; real controls supply their names."
+      ],
+      "views": [
+        {
+          "player": "Developer · shared glyph inventory",
+          "image": "017-icon-inventory-1-developer-shared-glyph-inventory.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asset-provenance",
+      "description": "Read the real artwork and font provenance and source link.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The source link identifies the recorded production asset prompts.",
+      "verifications": [
+        "Artwork, bundled font licences and the absence of generated lettering are disclosed."
+      ],
+      "views": [
+        {
+          "player": "Developer · asset provenance",
+          "image": "018-asset-provenance-1-developer-asset-provenance.png",
+          "verifications": [
+            "The named specimen is wholly visible after deliberate reference-page scrolling."
+          ]
+        }
+      ]
+    }
+  ]
+}
