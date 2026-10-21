@@ -47,3 +47,14 @@ History migration uses a guarded emulator-only catalogue seed at the real reduce
 Combined local comparison: 12 journeys/86 captures, 1.2 minutes. The history subjourney preserves keyboard wrapping, two device viewpoints, paging and recovery; other return branches remain open.
 
 [phone](stories/campaign-history/phone/darwin-arm64/README.md) · [desktop](stories/campaign-history/desktop/darwin-arm64/README.md) · [large](stories/campaign-history/large/darwin-arm64/README.md) · [short](stories/campaign-history/short/darwin-arm64/README.md)
+
+## Verified pinned Linux narratives
+
+[Exact run 39615653957](https://github.com/anicolao/clusterii/actions/runs/39615653957): all 12 journeys/86 captures passed in 2.2 minutes at 29fd306. This compares separately reviewed Linux candidates; it does not complete the other UX branches or hosted acceptance.
+
+| Viewport | Learn | Identity | History recovery |
+| --- | --- | --- | --- |
+| phone | [Six steps](stories/learn-and-return/phone/linux-arm64/README.md) | [Five steps](stories/commander-identity/phone/linux-arm64/README.md) | [Two-device story](stories/campaign-history/phone/linux-arm64/README.md) |
+| desktop | [Six steps](stories/learn-and-return/desktop/linux-arm64/README.md) | [Five steps](stories/commander-identity/desktop/linux-arm64/README.md) | [Two-device story](stories/campaign-history/desktop/linux-arm64/README.md) |
+| large | [Six steps](stories/learn-and-return/large/linux-arm64/README.md) | [Five steps](stories/commander-identity/large/linux-arm64/README.md) | [Two-device story](stories/campaign-history/large/linux-arm64/README.md) |
+| short | [Six steps](stories/learn-and-return/short/linux-arm64/README.md) | [Five steps](stories/commander-identity/short/linux-arm64/README.md) | [Two-device story](stories/campaign-history/short/linux-arm64/README.md) |

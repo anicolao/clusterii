@@ -793,3 +793,17 @@ Independent source review of in-progress history story finds explicit real-UI se
 #35 3a3af88 includes migrated history story, removed procedural predecessor/legacy hash and propagated keyboard repair. Independently confirmed retained combined run reports12 passed1.2min; agent documents86 exact captures. Read final phone narrative: explicit network harness controls, retained-history failure, player retry, Escape focus restoration, reload persistence and Return closure are separate named steps. Prior sampled offline capture remains scoped visual evidence; not full baseline approval.
 
 Current #35 documentation and Linux story jobs failed; agent has diagnosed both and is actively repairing, with no duplicate prompt needed. Independently reviewed pending prompt checker fix: --full-history includes both synthetic merge ancestries while retaining exact hash/prefix checks. Ran all13 prompt checker tests independently (13pass0fail, /tmp/cluster-reviewer-prompt-tests.log). Pending loader registration now confines Node instrumentation to demo Functions runtime, avoiding Playwright/Firebase CLI hook interference. Linux remains unverified. #32–34 verification pending, publication/docs green; #30–31 green. Agent healthy; carry latest supervisory checkpoint into related committed/pushed logs, no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 10:18 Toronto
+
+#35 remote d45789f documentation/publish and Linux generation now pass; application verification remains pending. Linux run39613924633 generated12 stories/86 captures; comparison still fails because Linux baselines were absent, preserving fail-closed verification. Agent reviewed candidate contact sheets and committed separate baseline promotion locally as29fd306; push/new exact run not yet visible at inspection. Working tree clean. No Linux exact success or full independent acceptance claimed.
+
+Independently inspected full-size Linux phone saved-identity frame: all eight portraits visible, Deepseer selection clear, alias/emoji and explicit Identity saved acknowledgement readable, Save/sign-out footer contained. This supports only sampled frame review. Platform manifest and baseline review keep generation distinct from comparison. #32–34 application verification pending, docs/publication green; #30–31 green. Agent healthy with no new blocker or duplicate handoff; disk5.3GiB. Carry checkpoint into next related committed/pushed log update, retain independent full review/remaining gameplay story gaps, no merge.
+
+
+## Reviewer progress — 2026-10-21 10:28 Toronto
+
+#35 29fd306 pinned Linux run39615653957 Exact verification step independently confirmed SUCCESS; parent job still uploading artifacts/in progress at inspection. Independently parsed downloaded verified story.json artifacts: all12 entry/Learn, identity and history viewport journeys status passed/mode verify. This is Linux exact-comparison evidence, not blanket visual/product acceptance. Full application checks #32–35 still pending; #30–31 green.
+
+Agent is archiving verified Linux narratives on #35 before resuming feat/profile-recovery-stories, a successor migration rather than new gameplay. Profile recovery candidate generation reportedly12 cases2.6min, not yet independently reviewed or exact-verified. Existing drafts safely stashed while parent evidence is archived. No new blocker or duplicate handoff. Preserve remaining UX inventory gaps and independent review requirement; carry latest meta checkpoint into related committed/pushed work. No merge.

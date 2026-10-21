@@ -29,3 +29,5 @@ Linux Node 22 also exposed loader interference with Playwright before story exec
 After runtime scoping, all four history journeys still pass exact comparison in 43.9 seconds against the existing reviewed images (`/tmp/cluster-history-runtime-isolation.log`). No baselines were regenerated for this fix. Six story policy/catalogue guards pass.
 
 Pinned Linux generation now passes 12 stories/86 captures in 2.2 minutes (run 39613924633). The implementer reviewed and promoted its distinct linux-arm64 candidates; a separate exact comparison remains pending. The missing-baseline verification failure is retained and no thresholds, masks or retries were relaxed.
+
+Pinned Linux exact comparison passed all 12 stories/86 captures in 2.2 minutes at 29fd306 (run 39615653957); generated verified narratives are archived and linked from the UX inventory. The hosted preview readback verifies that exact revision for entry, diagnostics, gallery, lab and 25 assets. Full application CI, independent full visual acceptance, remaining procedural migrations and hosted OAuth/Scheduler remain gates.

@@ -1,0 +1,224 @@
+{
+  "id": "campaign-history",
+  "title": "Recover saved campaign records without losing your place",
+  "inventory": [
+    "UX-12",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "History envoy returns to a waiting development campaign, reads beyond the first page, receives another device’s changes without forced scrolling, explicitly recovers latest records, and restores the same selected system. Setup uses real UI and services with a test-only fixed catalogue input; keys, commands and persistence remain real.",
+  "source": {
+    "commit": "19a2dd21d2c19a40913befdc69ae259381ac47e0",
+    "dirty": false,
+    "spec": "tests/browser/history.story.spec.ts",
+    "specSha256": "72c82b04db5cb6bbcfb8487444f6fd1d5502094a9a6b8ac27b14486140d8c9eb"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "prepare-history",
+      "description": "Prepare a fixed-catalogue waiting campaign through ordinary sign-in/create/join UI, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "open-records",
+      "description": "Open ten saved records with the return control visible.",
+      "actor": "History envoy",
+      "kind": "player",
+      "acknowledgement": "Ten authorized records finish loading.",
+      "verifications": [
+        "The history dialog offers briefing and an always-visible return control."
+      ],
+      "views": [
+        {
+          "player": "History envoy — reading device",
+          "image": "002-open-records-1-history-envoy-reading-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keyboard-cycle",
+      "description": "Traverse the briefing, return control and bounded records with the keyboard.",
+      "actor": "History envoy",
+      "kind": "player",
+      "acknowledgement": "Focus returns to the bounded records after both modal wrap directions.",
+      "verifications": [
+        "The return rail is still visible before any scrolling."
+      ],
+      "views": [
+        {
+          "player": "History envoy — reading device",
+          "image": "003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-record",
+      "description": "Expand record 14 to read the saved roster.",
+      "actor": "History envoy",
+      "kind": "player",
+      "acknowledgement": "The selected record reveals the saved commander.",
+      "verifications": [
+        "Expanding a record preserves all ten loaded revisions."
+      ],
+      "views": [
+        {
+          "player": "History envoy — reading device",
+          "image": "004-inspect-record-1-history-envoy-reading-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earlier-records",
+      "description": "Load earlier records beyond the ten-record page boundary.",
+      "actor": "History envoy",
+      "kind": "player",
+      "acknowledgement": "Thirteen member-accessible records are available.",
+      "verifications": [
+        "The beginning of authorized history is reached."
+      ],
+      "views": [
+        {
+          "player": "History envoy — reading device",
+          "image": "005-earlier-records-1-history-envoy-reading-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "open-second-device",
+      "description": "Open the same commander’s second authenticated device through its campaign URL; no account or game state is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "other-device-change",
+      "description": "Pause the campaign on another device while preserving the reading device’s place.",
+      "actor": "History envoy — second device",
+      "kind": "player",
+      "acknowledgement": "The host command is acknowledged as paused.",
+      "verifications": [
+        "The reading device signals new records without replacing its thirteen records or scrolling."
+      ],
+      "views": [
+        {
+          "player": "History envoy — second device",
+          "image": "007-other-device-change-1-history-envoy-second-device.png",
+          "verifications": []
+        },
+        {
+          "player": "History envoy — reading device",
+          "image": "007-other-device-change-2-history-envoy-reading-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-latest",
+      "description": "Choose latest records and recover acknowledged revision 15.",
+      "actor": "History envoy — reading device",
+      "kind": "player",
+      "acknowledgement": "Record 15 is present from persisted campaign history.",
+      "verifications": [
+        "The current history page contains ten records."
+      ],
+      "views": [
+        {
+          "player": "History envoy — reading device",
+          "image": "008-recover-latest-1-history-envoy-reading-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-galaxy",
+      "description": "Close history with Escape and return to the same selected system.",
+      "actor": "History envoy",
+      "kind": "player",
+      "acknowledgement": "The opening History control receives focus.",
+      "verifications": [
+        "System selection survives reading history."
+      ],
+      "views": [
+        {
+          "player": "History envoy",
+          "image": "009-return-to-galaxy-1-history-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-history",
+      "description": "Reload and recover the same saved latest record.",
+      "actor": "History envoy",
+      "kind": "player",
+      "acknowledgement": "Persisted record 15 is recovered after reload.",
+      "verifications": [
+        "Return to galaxy remains usable."
+      ],
+      "views": [
+        {
+          "player": "History envoy — reading device",
+          "image": "010-reload-history-1-history-envoy-reading-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "finish-reading",
+      "description": "Use Return to galaxy to finish reading after reload.",
+      "actor": "History envoy",
+      "kind": "player",
+      "acknowledgement": "The history dialog closes and returns focus to its opening control.",
+      "verifications": [
+        "The selected system still matches the previous visit."
+      ],
+      "views": [
+        {
+          "player": "History envoy",
+          "image": "011-finish-reading-1-history-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
