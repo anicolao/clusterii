@@ -20,7 +20,8 @@
     "test:stories:generate": "node scripts/run-stories.mjs generate",
     "test:story-policy": "node --test scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs && node scripts/check-story-policy.mjs",
     "test:stories:promote": "node scripts/promote-story-baselines.mjs",
-    "test:story-tools": "bun test tests/story-tools.test.ts"
+    "test:story-tools": "bun test tests/story-tools.test.ts",
+    "test:browser-storage": "bun test tests/recovery-store.test.ts"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "5.2.8",

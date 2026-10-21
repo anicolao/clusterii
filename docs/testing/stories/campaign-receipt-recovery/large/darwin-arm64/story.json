@@ -1,0 +1,176 @@
+{
+  "id": "campaign-receipt-recovery",
+  "title": "Recover a galaxy proposal after a mismatched acknowledgement",
+  "inventory": [
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer creates one real waiting galaxy, then deliberately reuses its command UUID for a different proposal. The original remains unchanged, the proposal is retained and a fresh acknowledged command creates a distinct campaign. The fixed-catalogue harness supplies map entropy only; rules remain under review.",
+  "source": {
+    "commit": "df9d00ebfa6d25fb980bb1140a826fdb2c308b69",
+    "dirty": true,
+    "spec": "tests/browser/receipt-recovery.story.spec.ts",
+    "specSha256": "fb976979fba3aacc57bfe6e43b4c4db19ad9393dd97beec00ffbaca809709f3c"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "developer-and-collision",
+      "description": "Prepare a saved identity and developer access through ordinary sign-in/save UI and explicit emulator authorization. The test loader fixes catalogue entropy. Reuse one command UUID only after identity setup; actual encryption, service authorization and persistence remain active.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "original-proposal",
+      "description": "Name the first development galaxy before committing.",
+      "actor": "Receipt envoy",
+      "kind": "player",
+      "acknowledgement": "The first proposal is ready for creation.",
+      "verifications": [
+        "The proposed name is retained."
+      ],
+      "views": [
+        {
+          "player": "Receipt envoy",
+          "image": "002-original-proposal-1-receipt-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "original-created",
+      "description": "Create the original galaxy and reach its faction selection.",
+      "actor": "Receipt envoy",
+      "kind": "player",
+      "acknowledgement": "The original galaxy is acknowledged by name.",
+      "verifications": [
+        "The acknowledged campaign Original receipt large retains its recorded name and revision one.",
+        "No completed or mismatched order remains in durable recovery storage."
+      ],
+      "views": [
+        {
+          "player": "Receipt envoy",
+          "image": "003-original-created-1-receipt-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "replacement-proposal",
+      "description": "Return to campaigns and prepare a differently named galaxy.",
+      "actor": "Receipt envoy",
+      "kind": "player",
+      "acknowledgement": "The replacement proposal is ready without changing the original.",
+      "verifications": [
+        "The acknowledged campaign Original receipt large retains its recorded name and revision one.",
+        "The uncommitted proposal does not claim an already-created campaign."
+      ],
+      "views": [
+        {
+          "player": "Receipt envoy",
+          "image": "004-replacement-proposal-1-receipt-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "mismatched-campaign-order",
+      "description": "The reused command ID cannot acknowledge this different galaxy. Preserve its name for a fresh creation.",
+      "actor": "Receipt envoy",
+      "kind": "player",
+      "acknowledgement": "The mismatched-order alert is visible and focused.",
+      "verifications": [
+        "The acknowledged campaign Original receipt large retains its recorded name and revision one.",
+        "No completed or mismatched order remains in durable recovery storage.",
+        "The proposal remains intact and can be committed as a fresh command."
+      ],
+      "views": [
+        {
+          "player": "Receipt envoy",
+          "image": "005-mismatched-campaign-order-1-receipt-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-campaign-command-id",
+      "description": "Restore ordinary random command UUIDs without changing the proposal or either receipt.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "fresh-galaxy-created",
+      "description": "Commit the retained proposal with a fresh command ID and open the distinct acknowledged galaxy.",
+      "actor": "Receipt envoy",
+      "kind": "player",
+      "acknowledgement": "The new galaxy is acknowledged by its retained name.",
+      "verifications": [
+        "The acknowledged campaign Original receipt large retains its recorded name and revision one.",
+        "The acknowledged campaign Preserved receipt large retains its recorded name and revision one.",
+        "No completed or mismatched order remains in durable recovery storage.",
+        "The new galaxy has a distinct authoritative identity."
+      ],
+      "views": [
+        {
+          "player": "Receipt envoy",
+          "image": "007-fresh-galaxy-created-1-receipt-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-new-galaxy",
+      "description": "Reload the exact newly created campaign without selecting another directory match.",
+      "actor": "Receipt envoy",
+      "kind": "player",
+      "acknowledgement": "The exact acknowledged galaxy recovers after reload.",
+      "verifications": [
+        "The acknowledged campaign Preserved receipt large retains its recorded name and revision one.",
+        "No completed or mismatched order remains in durable recovery storage."
+      ],
+      "views": [
+        {
+          "player": "Receipt envoy",
+          "image": "008-reload-new-galaxy-1-receipt-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

@@ -779,6 +779,7 @@
               class="primary"
               onclick={() => {
                 creating = true;
+                if (!busy && !pending) message = "";
                 void tick().then(() => title?.focus());
               }}>Create campaign</ActionButton
             >{/if}

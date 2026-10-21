@@ -21,6 +21,7 @@ The helper owns counters, filenames, assertions, captures and Markdown links. Di
 
 - `tests/browser/*.story.spec.ts`: illustrated journeys; import the shared story fixture.
 - `tests/browser/story-helpers/`: step helper, readiness, layout, exact comparison and fixture.
+- `tests/recovery-store.test.ts`: isolated production IndexedDB integration (`bun run test:browser-storage`); this preserves storage semantics without presenting a non-player harness as an illustrated journey.
 - `tests/browser/story-baselines/<story>/<viewport>/<platform>/`: reviewed PNGs and renderer manifests.
 - `test-results/stories/<story>/<viewport>/<platform>/`: the current run's captures, manifest and generated `README.md`/JSON sequence. Failed runs never produce a passed story document.
 - `docs/testing/stories/`: committed passing illustrated documents selected for review, retaining their generated provenance. The archive verifies decoded pixels again and links the corresponding reviewed baseline images, recording actual capture hashes without duplicating image files.

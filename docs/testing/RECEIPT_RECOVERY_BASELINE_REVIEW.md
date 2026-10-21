@@ -1,0 +1,9 @@
+# Receipt recovery baseline review
+
+Implementer review, 2026-10-21. Eight local journeys generated 48 captures in 36.1 seconds after feedback scoping was corrected. All eight contact sheets were reviewed at phone, desktop, large and short sizes. Each sequence shows the first draft, acknowledged first commit, retained replacement proposal, focused mismatch remedy, fresh acknowledged commit and reload recovery. The phone campaign commitment rail remains visible while the bounded form scrolls; the mismatch message is readable without scrolling it into view. The compact 4K composition remains an independent full visual-review gap.
+
+Pre-fix captures are retained at `/tmp/cluster-receipt-feedback-before`. They showed “Identity saved” under a changed alias and “Campaign created” above a new uncommitted proposal. The final candidates remove those completed messages when the new draft begins and retain the mismatch error and subsequent matching acknowledgement. No pending/error assertion is weakened. Existing identity stories are compared against their current baselines before deciding whether any reviewed image requires a change.
+
+The deliberate UUID collision and its restoration are labeled harness controls. Real encrypted commands, authorization, canonical state, receipts and IndexedDB recovery remain active. Generation is not exact comparison or hosted-provider acceptance. Pinned Linux comparison, current-head CI, normal-motion parity and independent composition review remain open.
+
+Exact local receipt comparison passes eight journeys/48 captures. All 20 existing identity, validation, conflict, pending/retry and keyboard-return stories pass against unchanged baselines; no existing image was regenerated. The predecessor procedural spec is removed only after these checks and the isolated IndexedDB regression pass.
