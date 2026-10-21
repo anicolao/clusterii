@@ -4,9 +4,9 @@ The UX inventory is required coverage, not a completion claim. “Procedural” 
 
 | ID                           | Existing regression sources                                                                                     | Illustrated status and gaps                                                                                                                                                                                           |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| UX-01 Enter and return       | entry.story / identity.story, invitation, campaign, briefing                                                    | Entry/Learn and identity are the first story migration. Invitation admission and returning/missing/denied recovery now have illustrated local evidence. Named Continue and multiple/waiting membership branches remain procedural.                                                                       |
-| UX-02 Join a campaign        | campaign, campaign-start, secure-campaign                                                                       | First-time invitation admission includes the host roster viewpoint. Four-player start, all roster/faction/portrait variants and simultaneous final-seat illustrated stories remain open.                                                                         |
-| UX-03 Read the galaxy        | campaign, geometry, observations                                                                                | Procedural galaxy/list/selection checks; fixed-seed exact illustrated navigation remains open.                                                                                                                        |
+| UX-01 Enter and return       | entry.story / identity.story, invitation.story, campaign-navigation.story, briefing                                                    | Entry/Learn and identity are the first story migration. Invitation admission and returning/missing/denied recovery now have illustrated local evidence. Waiting membership and delayed-profile readiness are illustrated; named Continue and multiple active memberships remain procedural.                                                                       |
+| UX-02 Join a campaign        | campaign-navigation.story, campaign-start, secure-campaign                                                                       | First-time invitation admission includes the host roster viewpoint. Four-player start, all roster/faction/portrait variants and simultaneous final-seat illustrated stories remain open.                                                                         |
+| UX-03 Read the galaxy        | campaign-navigation.story, geometry, observations                                                                                | Fixed-seed list/filter/keyboard orbit/selection, label clipping and reload have exact local stories. Full authorized observation and active-map branches remain open.                                                                                                                        |
 | UX-04 Split control          | production, arrival-reports, observations                                                                       | Procedural ownership/output/privacy checks; complete illustrated ownership matrix remains open.                                                                                                                       |
 | UX-05 Develop an empire      | construction, construction-completion, construction-feedback                                                    | Procedural reservation, completion, cancellation and scoped feedback. All development/layer illustrated branches remain open.                                                                                         |
 | UX-06 Economy and science    | production, market-focus                                                                                        | Procedural tick/research/focus checks; full eight-technology and other-player-dividend stories remain open.                                                                                                           |
@@ -146,6 +146,15 @@ Four maintenance journeys/52 captures pass within the 40-story Linux run 3963201
 - [large](stories/maintenance-admission-recovery/large/linux-arm64/README.md).
 - [short](stories/maintenance-admission-recovery/short/linux-arm64/README.md).
 
+## Campaign navigation narratives
+
+Twelve admission/chart/readiness journeys preserve the procedural campaign assertions and add the returning-profile race regression. All 97 new captures pass exact local comparison; sixteen existing entry/invitation/keyboard journeys remain unchanged. Linux, independent full visual/motion and hosted gates remain open.
+
+- phone: [Admission and release](stories/campaign-admission-navigation/phone/darwin-arm64/README.md), [Chart navigation](stories/campaign-chart-navigation/phone/darwin-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/phone/darwin-arm64/README.md).
+- desktop: [Admission and release](stories/campaign-admission-navigation/desktop/darwin-arm64/README.md), [Chart navigation](stories/campaign-chart-navigation/desktop/darwin-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/desktop/darwin-arm64/README.md).
+- large: [Admission and release](stories/campaign-admission-navigation/large/darwin-arm64/README.md), [Chart navigation](stories/campaign-chart-navigation/large/darwin-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/large/darwin-arm64/README.md).
+- short: [Admission and release](stories/campaign-admission-navigation/short/darwin-arm64/README.md), [Chart navigation](stories/campaign-chart-navigation/short/darwin-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/short/darwin-arm64/README.md).
+
 ## Verified Linux device narratives
 
 All 48 stories pass in run39635580827; the eight device journeys contribute 104 exact captures. Independent visual/motion and hosted gates remain open.
@@ -161,3 +170,12 @@ Pinned Linux receipt comparison passes eight new journeys within the 56-story co
 - desktop: [Identity mismatch](stories/identity-receipt-recovery/desktop/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/desktop/linux-arm64/README.md).
 - large: [Identity mismatch](stories/identity-receipt-recovery/large/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/large/linux-arm64/README.md).
 - short: [Identity mismatch](stories/identity-receipt-recovery/short/linux-arm64/README.md), [Campaign mismatch](stories/campaign-receipt-recovery/short/linux-arm64/README.md).
+
+## Verified Linux navigation narratives
+
+All68 stories pass at f9efa01; these twelve narratives contribute97 captures. Replacement readiness-repair CI and independent visual/motion/hosted gates remain open.
+
+- phone: [Admission](stories/campaign-admission-navigation/phone/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/phone/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/phone/linux-arm64/README.md).
+- desktop: [Admission](stories/campaign-admission-navigation/desktop/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/desktop/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/desktop/linux-arm64/README.md).
+- large: [Admission](stories/campaign-admission-navigation/large/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/large/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/large/linux-arm64/README.md).
+- short: [Admission](stories/campaign-admission-navigation/short/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/short/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/short/linux-arm64/README.md).

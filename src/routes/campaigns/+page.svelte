@@ -919,8 +919,7 @@
                 <p>
                   The design objective is shared victory: an eligible alliance
                   holds {rules.victoryStarFraction * 100}% of stars for {rules.victoryHoldTicks}
-                  ticks. This development slice supports admission and galaxy inspection;
-                  economy, conquest and victory do not run yet.
+                  ticks. Victory evaluation is not enabled in this development campaign.
                 </p>
                 <details>
                   <summary>Review this campaign’s rules</summary>

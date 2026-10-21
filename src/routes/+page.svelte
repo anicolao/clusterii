@@ -454,7 +454,7 @@
           illustration="planet"
           focusId="play"
           onclick={play}
-          disabled={!connected || busy}
+          disabled={!connected || busy || (!!account && !ready)}
         />
         {#if continued}<EntryButton
             label="Continue"
@@ -548,7 +548,7 @@
             class="primary"
             data-focus="enter"
             onclick={play}
-            disabled={!connected || busy}
+            disabled={!connected || busy || (!!account && !ready)}
             >Enter the galaxy <Icon kind="launch" /></ActionButton
           >{/if}
       </div>

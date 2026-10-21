@@ -176,10 +176,17 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register receipt recovery PR 41 and its preview with exact local evidence and outstanding Linux gates.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote reviewed Linux session cancellation and interrupted-worker recovery candidates for exact comparison.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate reviewed Linux device recovery baselines into receipt recovery without changing its verified behavior.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Migrate campaign admission and chart navigation with persistent commitment, keyboard camera, clipping and seat-release evidence.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive verified Linux device recovery narratives and carry the latest scoped supervisory checkpoints.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified session narratives and promote separately reviewed Linux receipt recovery candidates.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry session Linux verification, receipt candidates and supervisory checkpoints into navigation stories.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register stacked navigation PR 42, its preview and exact local acceptance limits.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Correct delivery-table attribution of the 40-story maintenance and 48-story session Linux results.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry corrected Linux verification attribution into the receipt recovery review.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Preserve corrected parent verification counts in the navigation dependency table.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive eight verified Linux receipt narratives after the 56-story strict comparison passes.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified receipt narratives and promote reviewed Linux navigation candidates for strict comparison.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Diagnose retained Linux popup readiness and unstable identity text pixels without weakening exact comparison.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry bounded login and actual-frame readiness repairs into navigation with verified predecessor evidence.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Reuse initialized emulator authentication in the remaining identity story and preserve its exact player sequence.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry the verified original-identity authentication correction into the navigation successor.
