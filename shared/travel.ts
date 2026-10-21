@@ -15,6 +15,20 @@ export interface ArrivalReport {
   infantryAfter: number;
   orbit: number;
   surface: number;
+  detail?: {
+    format: 1;
+    orbitBefore: number;
+    surfaceBefore: number;
+    formations: number;
+    melee: number;
+    carriedBefore: number;
+    transportLosses: number;
+    landed: number;
+    groundLosses: number;
+    groundBefore: number;
+    groundAfter: number;
+    releasedEscrowMilli?: number;
+  };
 }
 export interface TravelPlan {
   commandId: string;
@@ -348,6 +362,19 @@ export function settleTravel(
     const participants = [
       ...new Set([...uids, ...(system.surface ? [system.surface] : [])]),
     ];
+    const orbitBefore = state.seats.findIndex((s) => s.uid === system.orbit);
+    const surfaceBefore = state.seats.findIndex(
+      (s) => s.uid === system.surface,
+    );
+    const groundBefore = system.infantry;
+    const carriedBefore = new Map(
+      participants.map((uid) => [
+        uid,
+        fleets.filter((f) => f.uid === uid).reduce((n, f) => n + f.infantry, 0),
+      ]),
+    );
+    const transportLosses = new Map<string, number>();
+    let landed = 0;
     const beforeInfantry = new Map(
       participants.map((uid) => [
         uid,
@@ -425,11 +452,20 @@ export function settleTravel(
         );
       }
     }
+    for (const uid of participants)
+      transportLosses.set(
+        uid,
+        (carriedBefore.get(uid) ?? 0) -
+          fleets
+            .filter((f) => f.uid === uid)
+            .reduce((n, f) => n + f.infantry, 0),
+      );
     system.orbit = survivors > 0 ? winner : null;
     if (winner && survivors > 0 && system.surface !== winner) {
       const landers = fleets.filter((f) => f.uid === winner && f.fighters > 0),
         infantry = landers.reduce((n, f) => n + f.infantry, 0);
       if (infantry) {
+        landed = infantry;
         const [a, d] = groundSurvivors(
           infantry,
           system.infantry,
@@ -487,6 +523,25 @@ export function settleTravel(
         ),
         orbit: state.seats.findIndex((s) => s.uid === system.orbit),
         surface: state.seats.findIndex((s) => s.uid === system.surface),
+        detail: {
+          format: 1,
+          orbitBefore,
+          surfaceBefore,
+          formations: economy.research[uid].levels.formations,
+          melee: economy.research[uid].levels.melee,
+          carriedBefore: carriedBefore.get(uid) ?? 0,
+          transportLosses: transportLosses.get(uid) ?? 0,
+          landed: uid === winner ? landed : 0,
+          groundBefore:
+            state.seats[surfaceBefore]?.uid === uid ? groundBefore : 0,
+          groundAfter: system.surface === uid ? system.infantry : 0,
+          groundLosses:
+            state.seats[surfaceBefore]?.uid === uid
+              ? groundBefore - (system.surface === uid ? system.infantry : 0)
+              : uid === winner
+                ? landed - (system.surface === uid ? system.infantry : 0)
+                : 0,
+        },
       };
       military.arrivals[uid] ??= [];
       military.arrivals[uid].push(report);

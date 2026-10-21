@@ -334,6 +334,12 @@ test("simultaneous hostile arrival is permutation-stable, capacity-safe and repo
     infantryBefore: 20,
     infantryAfter: 0,
     contested: true,
+    detail: {
+      carriedBefore: 20,
+      transportLosses: 20,
+      landed: 0,
+      groundLosses: 0,
+    },
   });
 });
 test("fleet sensors use confirmed in-flight positions without disclosing the private route", () => {
@@ -432,4 +438,115 @@ test("route admission reserves multi-fleet departure and arrival growth within b
     }
   }
   console.info("Route capacity fixture", { admitted, refused });
+});
+
+test("split occupation routes each output by layer and releases escrow once with recipient-only loss reports", () => {
+  const { c, home, first, id } = formed();
+  const ship = c.military!.fleets[id];
+  ship.infantry = 0;
+  Object.assign(c.systems[first.id], {
+    orbit: "p1",
+    surface: "p1",
+    fighters: 2,
+    infantry: 3,
+    markets: 1,
+    camps: 0,
+    bases: 1,
+    stations: 1,
+  });
+  let occupied = advance(route(c, id, [first.id]), 4);
+  const initial = occupied.military!.arrivals!.p0[0];
+  expect(initial).toMatchObject({
+    fightersBefore: 4,
+    fightersAfter: 3,
+    orbit: 0,
+    surface: 1,
+    detail: {
+      format: 1,
+      transportLosses: 0,
+      groundLosses: 0,
+      landed: 0,
+      orbitBefore: 1,
+      surfaceBefore: 1,
+    },
+  });
+  expect(initial.detail).not.toHaveProperty("releasedEscrowMilli");
+  const invader = campaignView(occupied, "p0"),
+    defender = campaignView(occupied, "p1");
+  const orbitHolding = invader.holdings.find((h) => h.starId === first.id)!;
+  expect(orbitHolding).not.toHaveProperty("infantry");
+  expect(orbitHolding).not.toHaveProperty("markets");
+  expect(orbitHolding).not.toHaveProperty("escrowMilli");
+  expect(
+    defender.holdings.find((h) => h.starId === first.id),
+  ).not.toHaveProperty("fighters");
+  expect(occupied.economy!.ledger.p0.scienceMilli).toBeGreaterThan(0);
+  expect(occupied.economy!.ledger.p1.infantry).toBeGreaterThan(0);
+  expect(occupied.economy!.ledger.p1.creditsMilli).toBe(0);
+  expect(occupied.systems[first.id].escrowMilli).toBeGreaterThan(0);
+  const prior = structuredClone(occupied);
+  occupied = advance(occupied);
+  expect(occupied.systems[first.id].escrowMilli).toBeGreaterThan(
+    prior.systems[first.id].escrowMilli,
+  );
+  expect(occupied.economy!.ledger.p0.releasedEscrowMilli).toBe(0);
+  // An ordinary second formation transports the available infantry; high own
+  // melee is a declared unit fixture, not an opposing value in the report.
+  occupied.economy!.research.p0.levels.melee = 10;
+  occupied.systems[home.id].infantry = 20;
+  occupied = advance(
+    orderFleet(
+      occupied,
+      {
+        kind: "fleet.form",
+        expectedRevision: occupied.revision,
+        starId: home.id,
+        fighters: 2,
+        infantry: 20,
+      },
+      "p0",
+      "second-wave",
+      0,
+    ),
+  );
+  const secondId = fleetIdentity("p0", "second-wave");
+  const beforeArrival = advance(route(occupied, secondId, [first.id]), 3);
+  const escrow = beforeArrival.systems[first.id].escrowMilli;
+  const conquered = advance(beforeArrival);
+  expect(conquered.systems[first.id]).toMatchObject({
+    orbit: "p0",
+    surface: "p0",
+    escrowMilli: 0,
+  });
+  const report = conquered.military!.arrivals!.p0[0];
+  expect(report.detail!.releasedEscrowMilli).toBe(escrow);
+  expect(report.detail!.landed).toBe(20);
+  expect(report.detail!.groundLosses).toBe(
+    report.infantryBefore - report.infantryAfter,
+  );
+  expect(conquered.economy!.ledger.p0.releasedEscrowMilli).toBe(escrow);
+  const opposing = conquered.military!.arrivals!.p1[0];
+  expect(opposing.detail).not.toHaveProperty("releasedEscrowMilli");
+  expect(opposing.detail!.melee).toBe(1);
+  expect(opposing.detail!.groundAfter).toBe(0);
+  expect(campaignView(conquered, "p2").military).not.toHaveProperty("arrivals");
+  expect(advance(conquered).economy!.ledger.p0.releasedEscrowMilli).toBe(0);
+  expect(advance(JSON.parse(JSON.stringify(beforeArrival)))).toEqual(conquered);
+});
+
+test("arrival history deduplicates repeated snapshots while retaining older recorded details", async () => {
+  const { arrivalRecords } = await import("../src/lib/arrival-reports");
+  const { c, first, id } = formed();
+  const arrived = advance(route(c, id, [first.id]), 4);
+  const view = campaignView(arrived, "p0");
+  const legacy = structuredClone(view);
+  delete legacy.military!.arrivals![0].detail;
+  expect(arrivalRecords([legacy])[0].report.detail).toBeUndefined();
+  expect(
+    arrivalRecords([view, { ...view, revision: view.revision + 1 }, view]),
+  ).toHaveLength(1);
+  expect(
+    arrivalRecords([campaignView(advance(arrived), "p0"), view])[0].report,
+  ).toEqual(view.military!.arrivals![0]);
+  expect(arrivalRecords([campaignView(arrived, "p2")])).toEqual([]);
 });

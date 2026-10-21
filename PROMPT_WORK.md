@@ -110,3 +110,5 @@ Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | C
 Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Propagate the formation journey selector correction into the fleet-contact successor before its browser validation.
 
 Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Add private last-observed fleet contacts with authoritative scans and a shared player-facing contact instrument.
+
+Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Add private arrival reports and validate split occupation, resource entitlement and one-time escrow release through real combat.

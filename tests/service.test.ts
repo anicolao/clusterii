@@ -4977,6 +4977,20 @@ for (const mode of ["mock", "real"] as const)
         infantry: 0,
       });
       expect(arrived.military!.fleets[0].travel).toBeUndefined();
+      expect(arrived.military!.arrivals).toHaveLength(1);
+      expect(arrived.military!.arrivals![0].detail).toEqual({
+        format: 1,
+        orbitBefore: -1,
+        surfaceBefore: -1,
+        formations: 1,
+        melee: 1,
+        carriedBefore: 6,
+        transportLosses: 0,
+        landed: 6,
+        groundLosses: 0,
+        groundBefore: 0,
+        groundAfter: 6,
+      });
       expect(arrived.military!.orders).toEqual([]);
       const destinationHolding = arrived.holdings.find(
         (h) => h.starId === destination.id,
@@ -5011,6 +5025,38 @@ for (const mode of ["mock", "real"] as const)
       expect(
         (await history(owner)).filter((v) => v.revision === arrived.revision),
       ).toHaveLength(1);
+      if (process.env.CLUSTER_KMS_TEST === "true") {
+        await command({
+          kind: "campaign.pause",
+          expectedRevision: arrived.revision,
+        });
+        const paused = await read();
+        const before = await Promise.all(players.map(({ c }) => history(c)));
+        expect(
+          (
+            await command({
+              kind: "campaign.migrate",
+              expectedRevision: paused.revision,
+              targetMode: activeMode === "real" ? "mock" : "real",
+            })
+          ).receipt.status,
+        ).toBe("accepted");
+        activeMode = activeMode === "real" ? "mock" : "real";
+        epoch++;
+        const normalize = (v: CampaignView) => {
+          const { mode, encryptionEpoch, mockExposed, ...rest } = v;
+          return rest;
+        };
+        for (let i = 0; i < players.length; i++)
+          expect(
+            (await history(players[i].c))
+              .filter((v) => v.revision <= paused.revision)
+              .map(normalize),
+          ).toEqual(before[i].map(normalize));
+        expect((await read()).military!.arrivals).toEqual(
+          arrived.military!.arrivals,
+        );
+      }
     },
     240000,
   );

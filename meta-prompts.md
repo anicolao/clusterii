@@ -517,3 +517,31 @@ Contacts work active/uncommitted; no new PR. Preliminary source review confirms 
 #25/#26 replacement verification remains running, publication/documentation green. Contacts work remains active/uncommitted, no new PR. Independent current-phone capture review finds observed tick, explicitly limited knowledge, observed complement and fixed Refresh/Back controls readable; remaining coordinates are within scrollable details. This supports current-state composition only, not complete stale/recovery/privacy approval.
 
 Source now retains observations received live when subsequent scans miss, while authorized history remains pageable. Checked campaign selection clears view before new subscription and account generation guards remain in place. Evidence reports both-provider102 assertions and final four-contact/travel cohort39.1s, with final copy/large-label capture pass still underway. No stall or actionable new finding, no duplicate handoff. Carry checkpoint into next committed/pushed logs; no merge or release acceptance.
+
+
+## Reviewer progress — 2026-10-21 04:17 Toronto
+
+New #27 a1fb904 correctly stacks on fleet-travel and is attached to supervisor chat; contacts worktree clean, publication/documentation green, verification pending. Independent npm run check passes zero Svelte errors/warnings and backend TypeScript. #25/#26 verification still running. Prior source and sampled current-phone review remain scoped; final evidence now records66 units/1282 assertions, final copy/large-label cohort passing and exact UTF-8 worst-case scan-matrix reservation. Hosted/security/release acceptance remains separate.
+
+Agent has begun arrival-reports successor to expose own losses, split occupation and one-time escrow release against approved combat concept; currently compacting after design/art inspection, not demonstrably stalled. No duplicate handoff. Checkpoints carried through04:07; carry this checkpoint into next related committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-21 04:27 Toronto
+
+Agent resumed after compaction and is actively implementing arrival-report UI/shared lab with new orbital-aftermath artwork; work remains uncommitted, no new PR. #25–27 verification still running with publication/documentation green. Independently inspected unit log:67 pass,0fail,1305 assertions. Preliminary report-source review scopes detailed formations/melee, transport/ground losses and carried forces to the recipient; escrow release detail is attached only to the receiving owner's arrival report in production. Report archive deduplicates immutable recipient history by tick/system, without reconstructing missing older detail.
+
+Split-occupation/one-time escrow regression now exists; ordinary player journey and final rendered/service evidence remain underway. Asset provenance, full recipient privacy and release acceptance remain review gates. No stall or actionable new defect established, no duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 04:37 Toronto
+
+#25–27 verification still running, publication/documentation green. Arrival-report successor active/uncommitted. Independently inspected conquest-phone capture: recorded tick and historical-control caveat are clear, own losses/survivors and landing amount readable, persistent report/history/back/inspect controls visible. Lower occupation details remain in scrolling content. New atmospheric artwork has source, generation prompt and encoding provenance in PRODUCTION_ASSETS.md. This supports sampled composition, not all-state approval.
+
+Agent reports ordinary four-player occupation/conquest journey passed58.3s with explicit service clock, reload/focus and one-time escrow checks;68 units/1309 assertions and reduced-motion comparison pass. Gallery cohort/live-encryption migration validation still completing. No stall or actionable new finding requiring duplicate handoff. Carry checkpoint into next related committed/pushed logs; full security/hosted/CI acceptance remains open. No merge.
+
+
+## Reviewer progress — 2026-10-21 04:47 Toronto
+
+#25–27 verification still running, publication/documentation green; no new PR. Arrival-report work active/uncommitted during compatible rollout and final losing-player privacy checks. Agent reports both-provider212 assertions including report histories across migration and repeat-safe settlement; final ordinary journey refreshed with two-action footer and visible split-control summary. This remains implementer evidence pending final head.
+
+Independent refreshed occupation-phone inspection confirms separate orbit/surface control and recorded outcome with historical-state caveat in the production report. Asset and shared-component review remain scoped, not release approval. Agent actively tests victor escrow omission for losing recipient, so no redundant prompt or interruption. Carry checkpoint into next related committed/pushed logs; no merge.
