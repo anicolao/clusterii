@@ -118,3 +118,12 @@ Eight invitation journeys/72 captures pass within the 36-story pinned Linux run 
 - desktop: [First admission](stories/invitation-first-admission/desktop/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/desktop/linux-arm64/README.md).
 - large: [First admission](stories/invitation-first-admission/large/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/large/linux-arm64/README.md).
 - short: [First admission](stories/invitation-first-admission/short/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/short/linux-arm64/README.md).
+
+## Verified Linux maintenance narratives
+
+Four maintenance journeys/52 captures pass within the 40-story Linux run 39632014899.
+
+- [phone](stories/maintenance-admission-recovery/phone/linux-arm64/README.md).
+- [desktop](stories/maintenance-admission-recovery/desktop/linux-arm64/README.md).
+- [large](stories/maintenance-admission-recovery/large/linux-arm64/README.md).
+- [short](stories/maintenance-admission-recovery/short/linux-arm64/README.md).
