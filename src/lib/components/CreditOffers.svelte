@@ -420,6 +420,7 @@
   .commitment :global(button) {
     flex: 1;
     min-width: 0;
+    overflow-wrap: anywhere;
     white-space: normal;
     min-height: 48px;
   }
