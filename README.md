@@ -38,7 +38,7 @@ Step 1 delivers the cinematic entry, four-chapter field guide, Google sign-in, a
 
 New development campaigns produce resources on authoritative fifteen-minute ticks. Economy shows confirmed credits, local forces and science, and queues private research selections for authoritative ticks. History retains authorized encrypted records. Earlier campaigns preserve their recorded behavior without retroactive production. Follow the [ordered production rollout](docs/design/PRODUCTION_REVIEW.md#compatible-backend-rollout) when deploying these changes.
 
-Your devices provides reauthenticated Cluster session revocation and interrupted-request recovery. Compromise key rotation and provider credential revocation remain open. The [delivery table](docs/design/DELIVERY_REVIEW.md) records the stacked previews, evidence and remaining acceptance gates.
+Your devices provides reauthenticated Firebase credential revocation, Cluster access fences and interrupted-request recovery. Compromise key rotation and hosted provider acceptance remain open. The [delivery table](docs/design/DELIVERY_REVIEW.md) records the stacked previews, evidence and remaining acceptance gates.
 
 The [PR #4 preview](https://anicolao.github.io/clusterii/pr4/) uses the same Firebase project as the production build: `clusterii-20261020`. Public Firebase configuration is included in the client; deployment credentials are not. Deploy the Google provider and its managed OAuth client with `bunx firebase deploy --only auth --project clusterii-20261020`. The versioned `firebase.json` records the brand, support email, and callback URI; Firebase manages the OAuth secret.
 

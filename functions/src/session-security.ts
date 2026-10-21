@@ -3,6 +3,7 @@ import { getAuth } from "firebase-admin/auth";
 import { getDatabaseWithUrl } from "firebase-admin/database";
 import { getFirestore } from "firebase-admin/firestore";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
+import { endCredentialSessions } from "./credential-revocation.js";
 
 type Authentication = {
   uid: string;
@@ -13,6 +14,7 @@ export interface SessionFence {
   operationId: string;
   status: "pending" | "complete";
   blockedThrough?: number;
+  protocol?: 2;
 }
 export async function requireCurrentSession(auth: Authentication | undefined) {
   if (!auth) throw new HttpsError("unauthenticated", "Sign in to continue.");
@@ -100,6 +102,7 @@ export const revokeSessions = onCall({ invoker: "public" }, async (request) => {
     tx.create(operation, next);
     return next;
   });
+  if (fence.protocol === 2) return endCredentialSessions(request);
   if (fence.status === "complete") return { status: "complete" };
   // These stores cannot share a transaction. The Firestore pending fence denies
   // reads/key delivery and command effects until every revocation step succeeds.
@@ -126,6 +129,11 @@ export const revokeSessions = onCall({ invoker: "public" }, async (request) => {
     const current = await tx.get(ref);
     if (current.get("operationId") !== operationId)
       throw new HttpsError("aborted", "Sign-out request changed.");
+    if (current.get("protocol") === 2)
+      throw new HttpsError(
+        "aborted",
+        "Credential sign-out is in progress. Retry this request.",
+      );
     if (current.get("status") === "complete") return;
     const completed = { status: "complete", blockedThrough: Date.now() };
     tx.update(ref, completed);
