@@ -1,4 +1,5 @@
 import type { CampaignView } from "@shared/campaign";
+import type { FleetOutcome } from "@shared/fleets";
 export interface AcceptedFleetCommand {
   gameId: string;
   id: string;
@@ -21,14 +22,18 @@ export function fleetSettlementFeedback(
         error: "Fleet order could not execute. No forces were transferred.",
         remedy: "validation" as const,
       };
-    const message =
-      outcome.result === "loaded"
-        ? `${outcome.infantry} infantry loaded.`
-        : outcome.result === "unloaded"
-          ? `${outcome.infantry} infantry unloaded.`
-          : outcome.result === "formed"
-            ? "Fleet formed."
-            : "Fleet disbanded. Forces returned to the system.";
+    const messages: Record<
+      Exclude<FleetOutcome["result"], "invalid">,
+      string
+    > = {
+      formed: "Fleet formed.",
+      disbanded: "Fleet disbanded. Forces returned to the system.",
+      loaded: `${outcome.infantry} infantry loaded.`,
+      unloaded: `${outcome.infantry} infantry unloaded.`,
+      split: "Fleet split. Both complements are stationed here.",
+      merged: "Fleets merged. The receiving fleet retains all forces.",
+    };
+    const message = messages[outcome.result];
     return { message, error: "", remedy: null };
   }
   if (view.military?.orders.some((order) => order.id === command.id))

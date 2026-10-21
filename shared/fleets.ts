@@ -20,6 +20,19 @@ export type FleetAction =
     }
   | { kind: "fleet.disband"; expectedRevision: number; fleetId: string }
   | {
+      kind: "fleet.split";
+      expectedRevision: number;
+      fleetId: string;
+      fighters: number;
+      infantry: number;
+    }
+  | {
+      kind: "fleet.merge";
+      expectedRevision: number;
+      fleetId: string;
+      targetFleetId: string;
+    }
+  | {
       kind: "fleet.load" | "fleet.unload";
       expectedRevision: number;
       fleetId: string;
@@ -35,14 +48,24 @@ export interface FleetOrder {
   infantry: number;
   fleetId: string | null;
   cargo?: "load" | "unload";
+  reorganization?: "split" | "merge";
+  targetFleetId?: string;
 }
 export interface FleetOutcome {
   id: string;
   starId: string;
   fleetId: string;
-  result: "formed" | "disbanded" | "loaded" | "unloaded" | "invalid";
+  result:
+    | "formed"
+    | "disbanded"
+    | "loaded"
+    | "unloaded"
+    | "split"
+    | "merged"
+    | "invalid";
   fighters: number;
   infantry: number;
+  targetFleetId?: string;
 }
 export interface Military {
   fleets: Record<string, Fleet>;
@@ -80,6 +103,31 @@ export function stationedForces(state: Campaign, starId: string) {
       { fighters: local.fighters, infantry: local.infantry },
     );
 }
+export function canSplit(
+  fleet: Pick<Fleet, "fighters" | "infantry">,
+  fighters: number,
+  infantry: number,
+) {
+  return (
+    Number.isSafeInteger(fighters) &&
+    Number.isSafeInteger(infantry) &&
+    fighters >= 1 &&
+    fighters < fleet.fighters &&
+    infantry >= 0 &&
+    infantry <= fleet.infantry &&
+    infantry <= fighters * rules.infantryCapacityPerFighter &&
+    fleet.infantry - infantry <=
+      (fleet.fighters - fighters) * rules.infantryCapacityPerFighter
+  );
+}
+function canMerge(source: Fleet, target: Fleet) {
+  return (
+    source.fighters + target.fighters <= rules.maximumUnitsPerPlayerPerType &&
+    source.infantry + target.infantry <= rules.maximumUnitsPerPlayerPerType &&
+    source.infantry + target.infantry <=
+      (source.fighters + target.fighters) * rules.infantryCapacityPerFighter
+  );
+}
 export function orderFleet(
   current: Campaign,
   raw: unknown,
@@ -97,7 +145,11 @@ export function orderFleet(
         ? ["kind", "expectedRevision", "fleetId"]
         : a.kind === "fleet.load" || a.kind === "fleet.unload"
           ? ["kind", "expectedRevision", "fleetId", "infantry"]
-          : [];
+          : a.kind === "fleet.split"
+            ? ["kind", "expectedRevision", "fleetId", "fighters", "infantry"]
+            : a.kind === "fleet.merge"
+              ? ["kind", "expectedRevision", "fleetId", "targetFleetId"]
+              : [];
   if (
     !keys.length ||
     Object.keys(a).length !== keys.length ||
@@ -121,6 +173,13 @@ export function orderFleet(
       : a.kind === "fleet.unload"
         ? "unload"
         : undefined;
+  const reorganization =
+    a.kind === "fleet.split"
+      ? "split"
+      : a.kind === "fleet.merge"
+        ? "merge"
+        : undefined;
+  let targetFleetId: string | undefined;
   let starId: string,
     fighters: number,
     infantry: number,
@@ -158,8 +217,10 @@ export function orderFleet(
       throw new Error("insufficient-forces");
     const count =
       Object.values(next.military.fleets).filter((f) => f.uid === uid).length +
-      next.military.orders.filter((o) => o.uid === uid && o.fleetId === null)
-        .length;
+      next.military.orders.filter(
+        (o) =>
+          o.uid === uid && (o.fleetId === null || o.reorganization === "split"),
+      ).length;
     if (count >= rules.maximumFleetsPerPlayer) throw new Error("fleet-limit");
   } else {
     if (typeof a.fleetId !== "string") throw new Error("invalid");
@@ -170,7 +231,7 @@ export function orderFleet(
     const system = next.systems[starId];
     if (
       system.orbit !== uid ||
-      ((cargo || infantry > 0) && system.surface !== uid)
+      (!reorganization && (cargo || infantry > 0) && system.surface !== uid)
     )
       throw new Error("permission");
     if (cargo) {
@@ -196,8 +257,41 @@ export function orderFleet(
       } else if (infantry > fleet.infantry)
         throw new Error("insufficient-forces");
     }
-    if (next.military.orders.some((o) => o.fleetId === fleetId))
-      throw new Error("fleet-order-pending");
+    const { orders } = next.military;
+    const pending = (candidate: string) =>
+      orders.some(
+        (o) => o.fleetId === candidate || o.targetFleetId === candidate,
+      );
+    if (pending(fleetId)) throw new Error("fleet-order-pending");
+    if (reorganization === "split") {
+      if (
+        !Number.isSafeInteger(a.fighters) ||
+        !Number.isSafeInteger(a.infantry)
+      )
+        throw new Error("invalid");
+      fighters = a.fighters as number;
+      infantry = a.infantry as number;
+      if (!canSplit(fleet, fighters, infantry))
+        throw new Error("fleet-capacity");
+      const count =
+        Object.values(next.military.fleets).filter((f) => f.uid === uid)
+          .length +
+        next.military.orders.filter(
+          (o) =>
+            o.uid === uid &&
+            (o.fleetId === null || o.reorganization === "split"),
+        ).length;
+      if (count >= rules.maximumFleetsPerPlayer) throw new Error("fleet-limit");
+    } else if (reorganization === "merge") {
+      if (typeof a.targetFleetId !== "string" || a.targetFleetId === fleetId)
+        throw new Error("invalid");
+      const target = next.military.fleets[a.targetFleetId];
+      if (!target || target.uid !== uid || target.starId !== starId)
+        throw new Error("permission");
+      if (pending(target.id)) throw new Error("fleet-order-pending");
+      if (!canMerge(fleet, target)) throw new Error("fleet-capacity");
+      targetFleetId = target.id;
+    }
   }
   next.revision++;
   next.military.orders.push({
@@ -210,6 +304,8 @@ export function orderFleet(
     infantry,
     fleetId,
     ...(cargo ? { cargo } : {}),
+    ...(reorganization ? { reorganization } : {}),
+    ...(targetFleetId ? { targetFleetId } : {}),
   });
   return next;
 }
@@ -224,7 +320,9 @@ export function settleFleets(state: Campaign, tick: number) {
     const system = state.systems[order.starId];
     let valid =
       system.orbit === order.uid &&
-      (order.infantry === 0 || system.surface === order.uid);
+      (!!order.reorganization ||
+        order.infantry === 0 ||
+        system.surface === order.uid);
     if (order.fleetId === null) {
       valid =
         valid &&
@@ -250,7 +348,45 @@ export function settleFleets(state: Campaign, tick: number) {
         !!fleet &&
         fleet.uid === order.uid &&
         fleet.starId === order.starId;
-      if (order.cargo) {
+      if (order.reorganization === "split") {
+        valid =
+          valid &&
+          canSplit(fleet, order.fighters, order.infantry) &&
+          Object.values(military.fleets).filter((f) => f.uid === order.uid)
+            .length < rules.maximumFleetsPerPlayer;
+        if (valid) {
+          fleet.fighters -= order.fighters;
+          fleet.infantry -= order.infantry;
+          const id = fleetIdentity(order.uid, order.id);
+          military.fleets[id] = {
+            id,
+            uid: order.uid,
+            starId: order.starId,
+            fighters: order.fighters,
+            infantry: order.infantry,
+            formedTick: tick,
+            number: order.sequence,
+          };
+        }
+      } else if (order.reorganization === "merge") {
+        const target = order.targetFleetId
+          ? military.fleets[order.targetFleetId]
+          : undefined;
+        valid =
+          valid &&
+          !!target &&
+          target.id !== fleet.id &&
+          target.uid === order.uid &&
+          target.starId === order.starId &&
+          fleet.fighters === order.fighters &&
+          fleet.infantry === order.infantry &&
+          canMerge(fleet, target);
+        if (valid && target) {
+          target.fighters += fleet.fighters;
+          target.infantry += fleet.infantry;
+          delete military.fleets[fleet.id];
+        }
+      } else if (order.cargo) {
         valid =
           valid &&
           (order.cargo === "load"
@@ -282,16 +418,25 @@ export function settleFleets(state: Campaign, tick: number) {
       starId: order.starId,
       fleetId: order.fleetId ?? fleetIdentity(order.uid, order.id),
       result: valid
-        ? order.cargo === "load"
-          ? "loaded"
-          : order.cargo === "unload"
-            ? "unloaded"
-            : order.fleetId === null
-              ? "formed"
-              : "disbanded"
+        ? order.reorganization === "split"
+          ? "split"
+          : order.reorganization === "merge"
+            ? "merged"
+            : order.cargo === "load"
+              ? "loaded"
+              : order.cargo === "unload"
+                ? "unloaded"
+                : order.fleetId === null
+                  ? "formed"
+                  : "disbanded"
         : "invalid",
       fighters: order.fighters,
       infantry: order.infantry,
+      ...(order.reorganization === "split"
+        ? { targetFleetId: fleetIdentity(order.uid, order.id) }
+        : order.targetFleetId
+          ? { targetFleetId: order.targetFleetId }
+          : {}),
     });
   }
   military.orders = military.orders.filter((o) => o.effectiveTick > tick);
@@ -320,6 +465,8 @@ export function militaryView(state: Campaign, uid: string) {
           fleetId,
           effectiveTick,
           cargo,
+          reorganization,
+          targetFleetId,
         }) => ({
           id,
           starId,
@@ -328,6 +475,8 @@ export function militaryView(state: Campaign, uid: string) {
           fleetId,
           effectiveTick,
           ...(cargo ? { cargo } : {}),
+          ...(reorganization ? { reorganization } : {}),
+          ...(targetFleetId ? { targetFleetId } : {}),
         }),
       ),
     ledger: structuredClone(state.military?.ledger[uid] ?? []),

@@ -188,7 +188,7 @@ export function observationView(state: Campaign, uid: string) {
 // ledger growth below Firestore's document limit. This does not truncate reports.
 export function assertObservationBudget(
   state: Campaign,
-  releasingForces = false,
+  releasingFleetStorage = false,
 ) {
   if (state.intelligenceVersion !== 1) return;
   const reports: Intelligence["reports"] = {},
@@ -214,12 +214,12 @@ export function assertObservationBudget(
     ...state,
     intelligence: { format: 1, tick: Number.MAX_SAFE_INTEGER, reports, draws },
   };
-  // Disbanding must remain admissible at the ordinary state budget. Its orders
+  // Merging and disbanding must remain admissible at the ordinary state budget. Its orders
   // become smaller outcomes and remove persistent fleets at settlement. The
   // higher bound still fits the encrypted document and cannot admit new forces.
   if (
     new TextEncoder().encode(JSON.stringify(reserved)).byteLength >
-    (releasingForces ? 700000 : 600000)
+    (releasingFleetStorage ? 700000 : 600000)
   )
     throw new Error("pending-work-capacity");
 }

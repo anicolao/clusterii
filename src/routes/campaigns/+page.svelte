@@ -285,6 +285,8 @@
             "fleet.disband",
             "fleet.load",
             "fleet.unload",
+            "fleet.split",
+            "fleet.merge",
             "construction.build",
             "construction.cancel",
           ].includes(command.kind)
@@ -387,6 +389,21 @@
           expectedRevision: view!.revision,
           fleetId,
           infantry,
+        })}
+      onsplit={(fleetId, fighters, infantry) =>
+        send(view!.id, {
+          kind: "fleet.split",
+          expectedRevision: view!.revision,
+          fleetId,
+          fighters,
+          infantry,
+        })}
+      onmerge={(fleetId, targetFleetId) =>
+        send(view!.id, {
+          kind: "fleet.merge",
+          expectedRevision: view!.revision,
+          fleetId,
+          targetFleetId,
         })}
       ondisband={(fleetId) =>
         send(view!.id, {

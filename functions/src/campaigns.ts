@@ -405,7 +405,9 @@ async function handleCampaign(
           action.kind === "fleet.form" ||
           action.kind === "fleet.disband" ||
           action.kind === "fleet.load" ||
-          action.kind === "fleet.unload"
+          action.kind === "fleet.unload" ||
+          action.kind === "fleet.split" ||
+          action.kind === "fleet.merge"
             ? orderFleet(current, action, uid, commandId, Date.now())
             : maintenance
               ? maintainCampaign(current, action, uid, now)
@@ -430,7 +432,10 @@ async function handleCampaign(
                       )
                     : joinOrLeave(current, action, uid, profile, now);
       }
-      assertObservationBudget(next, action.kind === "fleet.disband");
+      assertObservationBudget(
+        next,
+        action.kind === "fleet.disband" || action.kind === "fleet.merge",
+      );
     } catch (error) {
       if (error instanceof KeyServiceError) throw error;
       const reason =

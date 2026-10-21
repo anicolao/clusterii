@@ -35,6 +35,8 @@
     onform,
     ondisband,
     oncargo,
+    onsplit,
+    onmerge,
     onbuild,
     oncancel,
     onmigrate,
@@ -56,6 +58,8 @@
     onresearch?: (target: Technology) => void;
     onform?: (starId: string, fighters: number, infantry: number) => void;
     ondisband?: (id: string) => void;
+    onsplit?: (id: string, fighters: number, infantry: number) => void;
+    onmerge?: (id: string, targetId: string) => void;
     oncargo?: (
       id: string,
       operation: "load" | "unload",
@@ -455,6 +459,8 @@
         error={commandKind.startsWith("fleet.") ? error : ""}
         onform={(fighters, infantry) => onform?.(star.id, fighters, infantry)}
         ondisband={(id) => ondisband?.(id)}
+        onsplit={(id, fighters, infantry) => onsplit?.(id, fighters, infantry)}
+        onmerge={(id, targetId) => onmerge?.(id, targetId)}
         oncargo={(id, operation, infantry) =>
           oncargo?.(id, operation, infantry)}
         onclose={closeMilitary}
