@@ -575,3 +575,10 @@ Agent actively tightening draft/receipt scoping and live-message retention befor
 Reviewer CI finding: #27 a1fb904 verification run 39567435352 failed. Retained log /tmp/cluster27-review-failure.log shows gallery/lab viewport cases timing out at 45 seconds while iterating hundreds of button/input/select bounding boxes (lab.spec.ts:102; short case nth459). Diagnose trace and preserve all geometry/accessibility assertions; consider batching DOM measurements rather than weakening coverage or blindly increasing timeouts. Fix on #27 and propagate through successors, retain failure/pass evidence and attributed logs, carry latest main meta-prompts.md, commit/push without merging. Continue conversation work around this diagnosis; no need to repeat resolved earlier handoffs.
 
 No acceptance or merge. Conversation privacy/service/rendered evidence remains incomplete.
+
+
+## Reviewer progress — 2026-10-21 05:37 Toronto
+
+Gallery timeout correction pushed on #27 dee7ace and propagated #28 c29586b; replacement verification running, publication/documentation green. Independently reviewed batched DOM measurement: all layout-visible controls including offscreen controls still receive44px width/height assertions; only hidden layout/visibility is excluded. No timeout increase or removed target-size assertion. Full CI remains necessary.
+
+Conversation work active/uncommitted; agent reports seven browser/gallery/lab cases including held transport, same-command retry, single message effect, removal/rejoin and reload. Independent phone capture review finds legible participant/message attribution, scoped sent acknowledgement, bounded composer and explicit authorized-history limits. This supports one rendered state only; live-encryption/privacy/service final evidence remains pending. No stall/duplicate handoff. Carry checkpoint into next committed/pushed logs; no merge.

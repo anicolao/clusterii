@@ -24,6 +24,7 @@ import {
   startCampaign,
 } from "../../shared/campaign.js";
 import { commandDigest } from "../../shared/command-receipt.js";
+import { converse } from "../../shared/conversations.js";
 import {
   type Context,
   type Envelope,
@@ -402,8 +403,9 @@ async function handleCampaign(
           canonicalKey,
           context(gameId, revision, "canonical", epoch),
         );
-        next =
-          action.kind === "fleet.route"
+        next = action.kind.startsWith("conversation.")
+          ? converse(current, action, uid, commandId, now)
+          : action.kind === "fleet.route"
             ? orderRoute(current, action, uid, commandId, Date.now())
             : action.kind === "fleet.cancel"
               ? cancelFleet(current, action, uid, Date.now())
@@ -454,6 +456,10 @@ async function handleCampaign(
       const reason =
         error instanceof Error &&
         [
+          "conversation-invalid",
+          "conversation-unavailable",
+          "conversation-limit",
+          "conversation-closed",
           "pending-work-capacity",
           "fleet-unavailable",
           "fleet-capacity",

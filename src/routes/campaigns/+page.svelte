@@ -63,6 +63,16 @@
   let message = $state("");
   let commandKind = $state("");
   let commandFleetId = $state("");
+  let commandRoomId = $state("");
+  let conversationBody = "";
+  let conversationReceipt = $state<{
+    id: string;
+    gameId: string;
+    kind: string;
+    roomId: string;
+    status: string;
+    body: string;
+  } | null>(null);
   let error = $state("");
   let remedy = $state<"network" | "validation" | "conflict" | null>(null);
   let title = $state<HTMLHeadingElement>();
@@ -227,6 +237,10 @@
           selected = requestedCampaign(location.search);
           pending = null;
           acceptedFleetCommand = null;
+          commandKind = "";
+          conversationReceipt = null;
+          commandRoomId = "";
+          conversationBody = "";
           busy = false;
           error = "";
           message = "";
@@ -278,12 +292,26 @@
                 revision: receipt.revision,
               }
             : null;
+        conversationReceipt = command.kind.startsWith("conversation.")
+          ? {
+              id: command.id,
+              gameId: command.gameId,
+              kind: command.kind,
+              roomId:
+                command.kind === "conversation.create"
+                  ? `room:${command.id}`
+                  : commandRoomId,
+              status: receipt.status,
+              body: conversationBody,
+            }
+          : null;
         const feedback = campaignFeedback(command.kind, receipt);
         message = feedback.message;
         error = feedback.error;
         remedy = feedback.remedy;
         if (
           receipt.status === "accepted" &&
+          !command.kind.startsWith("conversation.") &&
           ![
             "campaign.pause",
             "campaign.resume",
@@ -317,6 +345,9 @@
     acceptedFleetCommand = null;
     commandKind = action.kind;
     commandFleetId = "fleetId" in action ? action.fleetId : "";
+    commandRoomId = "roomId" in action ? action.roomId : "";
+    conversationBody = action.kind === "conversation.send" ? action.body : "";
+    conversationReceipt = null;
     message = "";
     busy = true;
     error = "";
@@ -372,6 +403,9 @@
       {view}
       {commandKind}
       {commandFleetId}
+      {commandRoomId}
+      {conversationReceipt}
+      onconversation={(action) => send(view!.id, action)}
       loadHistory={(cursor) =>
         service.campaignHistory(view!.id, account!, cursor)}
       {message}

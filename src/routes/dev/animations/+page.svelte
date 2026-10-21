@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import Conversations from "$lib/components/Conversations.svelte";
   import ArrivalReports from "$lib/components/ArrivalReports.svelte";
   import FleetContacts from "$lib/components/FleetContacts.svelte";
   import FleetRoute from "$lib/components/FleetRoute.svelte";
@@ -18,6 +19,7 @@
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import {
+    conversationFrame,
     arrivalFrame,
     contactsFrame,
     travelFrame,
@@ -132,7 +134,24 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "arrivals"}<div
+        {#if selected === "conversations"}<div
+            style="height:min(900px,90svh);min-height:550px"
+          >
+            {#key frame.at}<Conversations
+                {...conversationFrame(time)}
+                pending={(time >= 500 && time < 1200) ||
+                  (time >= 3200 && time < 4800)}
+                message={frame.feedback.message}
+                error={frame.feedback.error}
+                inspect={{ time: time - frame.at, reduced }}
+                oncommand={() => {}}
+                onearlier={() => {}}
+                onlatest={() => {}}
+                onretryHistory={() => {}}
+                onretry={() => {}}
+                onclose={() => {}}
+              />{/key}
+          </div>{:else if selected === "arrivals"}<div
             style="height:min(850px,90svh);min-height:550px"
           >
             {#key frame.at}<ArrivalReports

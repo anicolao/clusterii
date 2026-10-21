@@ -15,8 +15,10 @@ export async function authenticate(page: Page, email: string) {
   await popup.getByRole("button", { name: /Sign in with/ }).click();
 }
 export async function geometry(page: Page, scope: Page | Locator = page) {
+  // Responsive panels keep alternate navigation hidden. Test every rendered
+  // target, including offscreen targets in bounded scrolling panels.
   const targets = scope.locator(
-    'button, input[type="radio"], input[type="text"], input:not([type])',
+    ':is(button, input[type="radio"], input[type="text"], input:not([type])):visible',
   );
   for (const target of await targets.all()) {
     await target.scrollIntoViewIfNeeded();
