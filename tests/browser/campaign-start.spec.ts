@@ -1,3 +1,4 @@
+import { createRequire } from 'node:module';
 import { test, expect } from '@playwright/test';
 import { login, grantDeveloper, geometry } from './helpers';
 
@@ -39,15 +40,33 @@ test('independent commanders start two campaigns and resume the last accessible 
         await expect(page.getByText('Your seat is confirmed.')).toBeVisible();
       }
     }
+    // Read recorded schedule metadata; admission may itself cross a real quarter-hour.
+    const require=createRequire(new URL('../../functions/package.json',import.meta.url));
+    const admin=require('firebase-admin/app');
+    if(!admin.getApps().length)admin.initializeApp({projectId:'demo-clusterii'});
+    const db=require('firebase-admin/firestore').getFirestore();
+    const starts=await Promise.all(urls.map(async url=>{
+      const head=await db.doc(`campaignStates/${new URL(url).searchParams.get('campaign')}`).get();
+      expect(head.get('phase')).toBe('scheduled');
+      const start=head.get('startAt');expect(Number.isSafeInteger(start)).toBe(true);
+      expect(start%900000).toBe(0);return start as number;
+    }));
     for(const page of pages){
       await page.getByRole('button',{name:'Roster',exact:true}).click();
       await expect(page.getByRole('heading',{name:'4 / 4 empires assembled'})).toBeVisible();
-      await expect(page.getByRole('region',{name:'Campaign roster',exact:true})).toContainText('The server assigns home systems at the scheduled start.');
+      const start=starts[urls.indexOf(page.url())];expect(start).toBeDefined();
+      const status=page.getByRole('region',{name:'Campaign roster',exact:true}).getByRole('status');
+      await expect.poll(async()=>{
+        const text=await status.innerText();
+        return Date.now()>=start
+          ? text.includes('Awaiting home assignment. Your seat is saved; this view updates automatically.')
+          : text.includes('The server assigns home systems at the scheduled start.');
+      }).toBe(true);
     }
     const scheduledCapture=info.outputPath('four-player-scheduled.png');
     await pages[0].screenshot({path:scheduledCapture});await info.attach('Four-player scheduled roster',{path:scheduledCapture,contentType:'image/png'});
     // Real UTC boundary and actual scheduler endpoint; no injected campaign state or fake clock.
-    const remaining=900000-(Date.now()%900000)+100;
+    const remaining=Math.max(0,Math.max(...starts)-Date.now()+1100);
     console.log(`Waiting ${Math.ceil(remaining/1000)} seconds for the real campaign boundary.`);
     await new Promise(resolve=>setTimeout(resolve,remaining));
     // Withhold delivery after the real boundary; keep the authoritative roster visible.

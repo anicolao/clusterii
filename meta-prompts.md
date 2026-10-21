@@ -316,3 +316,37 @@ Availability retry entered Working state on the existing model at inspection, wi
 Agent has resumed sustained healthy work. #17/#18 green. Construction completion failure was traced to test URL parameter id instead of campaign; corrected test now validates identity/active state/start timestamp and is running. This is not yet a completion pass. Ordinary build/cancel journey passed in 29 minutes; earlier lab-helper failure remains accurately disclosed separately. Independently inspected phone construction capture and found stale join acknowledgement in construction footer. Exact handoff:
 
 Reviewer visual finding: retained docs/ux/reviews/construction/construction-phone.png shows “Your seat is confirmed.” in the construction commitment footer. Scope feedback to the relevant action/panel so a previous join/research acknowledgement cannot appear as construction feedback. Preserve actual build/cancel pending, acceptance and error messages; refresh the affected captures after fixing. The composition/art and fixed cost/balance/actions otherwise look readable in this phone sample. Log this attributed finding and carry latest meta-prompts.md into the related commit/push; continue completion validation, no merge.
+
+
+## Reviewer progress — 2026-10-20 23:28 Toronto
+
+New #19 f442132 correctly stacks on provider-session-revocation and is attached to supervisor chat; construction committed/pushed with clean worktree and attributed finding/logs. Independently inspected command-kind scoping of construction feedback and refreshed ready-phone capture: stale join acknowledgement is absent, artwork/quotes/actions remain readable. This resolves the specific 23:17 visual finding, not full UI acceptance. Independent npm run check passes, zero Svelte errors/warnings and backend TypeScript success.
+
+Retained evidence reports completion journey pass in 7.3 minutes: ordinary UI admission/actual start, then five ticks through real service with explicit test clock. Both-provider construction/migration/recovery cohort has 386 assertions with zero failures; final scoped-feedback regression passes in 17.5 seconds. These are implementer runs and controlled emulator settlement, not hosted Scheduler certification. Agent reports compatible backend/rules rollout completed. Full #19 CI, broader independent security/rendered review and release gates remain open; no merge. Carry this checkpoint into next related committed/pushed logs.
+
+
+## Reviewer progress — 2026-10-20 23:37 Toronto
+
+#19 f442132 publication/documentation green, verification running; earlier stack through #18 green. Agent actively implementing market-focus successor based on #19, with real command integration and shared icons/control/gallery/lab; no new PR. Preliminary source review confirms exact integer allocation sum validation, bounded ordered future-tick admission and settlement; dividend weights read the original beginning-of-tick allocation while the new allocation is applied to the next state, matching proposed T+1 dividend timing. Source is still changing; privacy, recovery, actual renders and complete service evidence remain pending. No new actionable finding or stall, and no duplicate construction handoff (already fixed and logged) needed. Existing instructions require current checkpoint in next related committed/pushed logs. No merge or acceptance expansion.
+
+
+## Reviewer progress — 2026-10-20 23:47 Toronto
+
+#19 f442132 verification remains running; publication/documentation green. Market-focus successor still uncommitted with no new PR. Agent reports four live-KMS construction/focus cases passing 390 assertions and final default service cohort 1150 assertions, while final browser checks and compatible rollout proceed. Review doc clearly distinguishes ordinary UI admission with explicit service test clock from real-time/hosted scheduling.
+
+Independently inspected focus-draft-phone capture: all four allocation rows, full three-digit 100 value, current allocation labels, 100/100 total, remaining count and Apply/Back controls are readable and contained. This sample supports the repaired layout; it does not certify all states, keyboard behavior or final committed head. No actionable new finding or stall, so no duplicate prompt. Carry this checkpoint into related committed/pushed logs; full CI/security/rendered and release gates remain. No merge.
+
+
+## Reviewer progress — 2026-10-20 23:57 Toronto
+
+New #20 bc0aea5 correctly stacks on system-construction and is attached to supervisor chat. Clean market-focus worktree; documentation/publication green, verification pending. #19 verification also pending. Independent npm run check passes with zero Svelte errors/warnings and backend TypeScript success. Prior allocation/tick source review, retained evidence and phone sample remain scoped; no complete live/security/visual acceptance. Agent is actively inspecting approved scanning/intelligence requirements for the next gameplay slice, including authoritative acquisitions and stale information, rather than stalled. No new finding or duplicate handoff needed. Carry this checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 00:07 Toronto
+
+#19/#20 verification still running with documentation/publication green. Agent actively implementing stellar observations on successor based on #20; no new PR. Preliminary source review finds explicit new-campaign intelligence capability, beginning-of-tick research, nearest orbital sensor, server-only HMAC draws bound to campaign/observer/target/tick, and stored previous reports retained on failed scans. Explicit member projection excludes canonical seed/draws and private queues/wallets/research. This is in-progress source review, not full privacy/cryptographic acceptance; fleet sensors and eventual capture semantics need their own later slices and current service/rendered evidence remains pending. Agent reports 35 unit cases/879 assertions and is extending envelope-budget/privacy tests. No stall or actionable new defect established, no duplicate handoff. Carry this checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 00:17 Toronto
+
+#19/#20 unchanged, verification running and publication/documentation green. Agent progressed through stellar-observation tests and is compacting context, not demonstrably stalled. Independently inspected retained logs: mock observation service 156 assertions in 4.58 seconds; seven browser/gallery/lab tests pass in 31.8 seconds, including unknown/current/historical states and reduced-motion retention. Reviewed production observation copy explicitly marking acquired tick, historical age and unknown state, plus legacy campaign explanation. These are agent-run test results and source inspection, not independent final rendered approval or live-provider security acceptance. Worktree still dirty, no observation PR yet. No new actionable finding/duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.
