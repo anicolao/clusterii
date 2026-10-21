@@ -1,7 +1,7 @@
 import { expect, type Page, type Locator } from "@playwright/test";
 export async function login(page: Page, email: string, destination = "./") {
   await page.goto(destination);
-  await authenticate(page,email);
+  await authenticate(page, email);
   await expect(page.getByLabel("Commander name")).toBeVisible();
 }
 export async function authenticate(page: Page, email: string) {
@@ -41,7 +41,40 @@ export async function geometry(page: Page, scope: Page | Locator = page) {
     expect(obscured).toBe(false);
   }
   const overlap = await targets.evaluateAll((elements) => {
-    const boxes = elements.map((el) => el.getBoundingClientRect());
+    const boxes = elements.map((el) => {
+      const rect = el.getBoundingClientRect();
+      const box = {
+        left: Math.max(0, rect.left),
+        top: Math.max(0, rect.top),
+        right: Math.min(innerWidth, rect.right),
+        bottom: Math.min(innerHeight, rect.bottom),
+      };
+      // Compare rendered target portions, not offscreen content behind a bounded
+      // scroll container. Sticky controls still count wherever they are painted.
+      for (
+        let ancestor = el.parentElement;
+        ancestor;
+        ancestor = ancestor.parentElement
+      ) {
+        const style = getComputedStyle(ancestor),
+          clip = ancestor.getBoundingClientRect();
+        if (/(auto|scroll|hidden|clip)/.test(style.overflowX)) {
+          box.left = Math.max(box.left, clip.left + ancestor.clientLeft);
+          box.right = Math.min(
+            box.right,
+            clip.left + ancestor.clientLeft + ancestor.clientWidth,
+          );
+        }
+        if (/(auto|scroll|hidden|clip)/.test(style.overflowY)) {
+          box.top = Math.max(box.top, clip.top + ancestor.clientTop);
+          box.bottom = Math.min(
+            box.bottom,
+            clip.top + ancestor.clientTop + ancestor.clientHeight,
+          );
+        }
+      }
+      return box;
+    });
     return boxes.some((a, i) =>
       boxes.some(
         (b, j) =>
@@ -62,9 +95,34 @@ export async function geometry(page: Page, scope: Page | Locator = page) {
 }
 
 export async function grantDeveloper(email: string) {
-  const list = await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:lookup',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({email:[email]})});
-  const data = await list.json() as {users:{localId:string,email:string}[]};
-  const uid = data.users.find(u=>u.email===email)!.localId;
-  const result=await fetch('http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:update',{method:'POST',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({localId:uid,customAttributes:JSON.stringify({developer:true})})});
+  const list = await fetch(
+    "http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:lookup",
+    {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer owner",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: [email] }),
+    },
+  );
+  const data = (await list.json()) as {
+    users: { localId: string; email: string }[];
+  };
+  const uid = data.users.find((u) => u.email === email)!.localId;
+  const result = await fetch(
+    "http://127.0.0.1:19099/identitytoolkit.googleapis.com/v1/projects/demo-clusterii/accounts:update",
+    {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer owner",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        localId: uid,
+        customAttributes: JSON.stringify({ developer: true }),
+      }),
+    },
+  );
   expect(result.ok).toBe(true);
 }

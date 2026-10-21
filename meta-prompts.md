@@ -364,3 +364,38 @@ Observation work continues actively with privacy/envelope-budget tests and visua
 #19/#20 replacement verification remains running, publication/documentation green. Independently inspected focused admission log: corrected ordinary two-campaign journey passes in 11.6 minutes at real recorded boundary. This closes the focused timing reproduction, not replacement full CI. Observation evidence now records both-provider recovery/migration 361 assertions, default service 1284 assertions and seven final browser/lab passes; these remain implementer runs.
 
 Inspected current-phone observation capture: age/tick, source, explicit unclaimed owners and observed forces/developments are legible in bounded inspector with persistent navigation; final row may require internal scrolling. No false certainty inferred for historical states from this current-state sample. Broader visual/security acceptance remains open. Agent actively completing compatible backend rollout and preparing PR; source remains uncommitted, no stall or duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 00:47 Toronto
+
+New #21 d9dd66a correctly stacks on market-focus and is attached to supervisor chat. Observation worktree clean; publication/documentation pass, verification pending. #19/#20 replacement verification also pending. Independent npm run check passes with zero Svelte errors/warnings and backend TypeScript success. Prior observation source/privacy-evidence and sampled phone composition review remain scoped, not final security/hosted acceptance.
+
+Agent actively building stationed-fleets successor based on #21 with dedicated ship artwork and shared symbol/control. Preliminary production integration now includes fleet fighters/carried infantry in empire force-cap totals; final conservation/reservation/concurrency/privacy and sensor integration tests remain essential and pending. No completed fleet acceptance or actionable new defect established in this in-progress source. No stall or duplicate handoff. Carry this checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 00:57 Toronto
+
+#19/#20/#21 verification remains running; publication/documentation green, no new PR. Fleet work active and uncommitted. Agent caught and corrected poor primary-button contrast from rendered review, preserving before-captures; refreshed final verification pending. Inspected failed both-provider fleet log: retained-history depth assertion failed because final joiner had fewer than eleven records, not an established migration mismatch. Agent expanded fixture to eight actual settled ticks and retained the history-size assertion; rerun active. No acceptance until results return.
+
+Preliminary fleet admission review confirms local owner checks, carried-infantry capacity, reservations preventing concurrent over-allocation, fleet limit accounting including pending formations, and duplicate disband admission rejection. Full conservation/privacy/live-provider and final rendered checks remain gates. Agent is diagnosing concretely rather than stalled; no duplicate intervention. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:07 Toronto
+
+#19/#20/#21 verification still running, publication/documentation green. Agent actively completing fleet rollout and evidence, no new PR. Independently inspected final fleet live log: both provider cases pass, zero failures, 162 assertions. This resolves the short-history fixture issue at retained test-evidence level, not full security acceptance. Agent added a disband-only recovery allowance so ordinary state capacity cannot trap fleets; source retains lower bound for other admissions and measures reserved worst-case reports. Final encrypted-size/regression claims remain implementer evidence.
+
+Inspected refreshed fleet-ready-phone capture: primary Form fleet is now readable, reservation counts/carrying constraint and both inputs fit, and Back/Form remain fixed and contained. This resolves the sampled contrast concern; complete state/viewport/security review and exact-head CI remain pending. Worktree remains uncommitted while deployment proceeds. No stall or duplicate handoff. Carry checkpoint with related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:17 Toronto
+
+#19/#20/#21 verification remains running; no new fleet PR yet. Agent source review found cross-commander UUID collision before fleet ingress opened and changed fleet identity to JSON encoding of [uid, commandId]. Independently inspected that unambiguous composite identity and retained full cohort log (23 pass, zero failures, 1342 assertions). Review notes report intentional same-UUID two-commander coverage in both providers, 176 assertions, plus nine browser tests. Corrected consumer rollout is active before admission/rules; prior rule state was checked as closed by implementer. This is scoped source/evidence review, not full hosted/security acceptance.
+
+Agent is progressing on a concrete correctness fix, not stalled. Work remains dirty pending deployment and commit; no duplicate handoff. Carry this checkpoint with related committed/pushed logs. All final CI/independent acceptance gates remain; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:27 Toronto
+
+New #22 3ef70c9 correctly stacks on stellar-observations and is attached to supervisor chat. Fleet worktree was clean at inspection; independent npm run check passes with zero Svelte errors/warnings and backend TypeScript success. Publication/documentation pass, verification pending. Prior fleet source/evidence and sampled phone review remain scoped, not full hosted/security/visual acceptance.
+
+#19 191d7e7 now fully green. #20 220916e verification failed: retained 4K browser overlap assertion finds sticky Queue investing action covering part of Innovation radio row. Agent independently diagnosed the trace and is actively reproducing before bounding the research-choice scroll area with commitment outside it, retaining keyboard/action checks at all four sizes. #21 verification remains pending. This is a concrete unresolved UI defect blocking #20 acceptance; no redundant handoff or interruption of healthy diagnosis. Carry this checkpoint into next related committed/pushed logs. No merge.

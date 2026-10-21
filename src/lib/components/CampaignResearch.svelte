@@ -28,6 +28,13 @@
     inspect?: MotionInspection;
   } = $props();
   let commitment: HTMLDivElement;
+  let form: HTMLFormElement;
+  function showChoice(event?: Event) {
+    const target = event?.currentTarget;
+    if (target instanceof HTMLInputElement)
+      target.closest("label")?.scrollIntoView({ block: "nearest" });
+    form?.scrollIntoView({ block: "nearest" });
+  }
   const errorId = $props.id();
   let choice = $state<Technology | null>(null);
   const selected = $derived(
@@ -57,6 +64,7 @@
     target.
   </p>
   <form
+    bind:this={form}
     onsubmit={async (event) => {
       event.preventDefault();
       choice = selected;
@@ -74,7 +82,11 @@
             name="research-target"
             value={technology}
             checked={selected === technology}
-            onchange={() => (choice = technology)}
+            onfocus={showChoice}
+            onchange={(event) => {
+              choice = technology;
+              showChoice(event);
+            }}
           />
           <span
             ><strong>{technology}</strong><small
@@ -158,6 +170,9 @@
     margin: 16px 0;
     display: grid;
     gap: 8px;
+    max-height: min(320px, 20dvh);
+    overflow: auto;
+    overscroll-behavior: contain;
   }
   legend {
     padding: 0 0 10px;
@@ -194,7 +209,7 @@
       transparent 12px
     );
     flex-shrink: 0;
-    scroll-margin-block: 80px;
+    scroll-margin-block: 8px;
   }
   input:checked {
     background: radial-gradient(
@@ -210,11 +225,8 @@
     outline-offset: -2px;
   }
   .research-commit {
-    position: sticky;
-    bottom: 0;
     padding-block: 12px;
     background: #091722;
-    z-index: 2;
   }
   strong,
   .track {
