@@ -258,3 +258,5 @@ Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | C
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/live-credit-stories.
 
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/live-briefing-stories.
+
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Compare instrumented Linux failing and matching identity geometry without changing inherited pixels or acceptance.
