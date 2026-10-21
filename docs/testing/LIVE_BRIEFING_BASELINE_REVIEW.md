@@ -7,3 +7,5 @@ Third generation passes four journeys in 2.4 minutes (`/tmp/cluster-briefing-gen
 The initial scrolling-target and disabled-keyboard-save failures remain in `/tmp/cluster-briefing-first-failure` and `/tmp/cluster-briefing-disabled-save-failure`; their causes and preserved assertions are documented in LIVE_BRIEFING_STORIES_REVIEW.md. No production component or resolver was changed. The story uses real shared components, authenticated commands and authoritative history. Explicit domain/service clocks do not certify hosted scheduling.
 
 Approve only this new local candidate set for exact comparison. This does not close interrupted-visit, managed-key, co-faction message, normal-motion or full UX-12 acceptance.
+
+Exact local comparison passes four journeys/108 captures in 2.4 minutes (`/tmp/cluster-briefing-exact.log`). Four generated narratives are archived with actual hashes and reviewed baseline links. This remains macOS/arm64 evidence; Linux, independent visual review, normal-motion and hosted gates remain open.
