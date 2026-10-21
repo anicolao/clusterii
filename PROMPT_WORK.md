@@ -72,3 +72,5 @@ Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | A
 Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Continue Prompt 30 with private research orders, tick-time settlement, retained progress, real-provider migration and four-size UI evidence.
 
 Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Continue Prompt 30 with native Firebase credential revocation, fenced interruption recovery and two-device production UI evidence.
+
+Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Include the four provenance-recorded production construction scenes in the published static asset bundle.
