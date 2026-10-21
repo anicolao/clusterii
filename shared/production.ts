@@ -3,6 +3,7 @@ import { settleConstruction } from "./construction.js";
 import { settleFleets } from "./fleets.js";
 import { initialFocus, type MarketFocus, settleFocus } from "./market-focus.js";
 import { faction, rules } from "./rules.js";
+import { type ArrivalRank, settleTravel } from "./travel.js";
 export type Technology = keyof typeof rules.startingResearch;
 export interface ResearchOrder {
   id: string;
@@ -125,7 +126,11 @@ export function apportionMilli(
     }
   return new Map(shares.map((item) => [item.id, checked(item.amount)]));
 }
-export function produce(campaign: Campaign, economy: Economy) {
+export function produce(
+  campaign: Campaign,
+  economy: Economy,
+  arrivalRank?: ArrivalRank,
+) {
   const next = structuredClone(campaign),
     clock = structuredClone(economy);
   clock.tick++;
@@ -135,6 +140,7 @@ export function produce(campaign: Campaign, economy: Economy) {
   settleFocus(next);
   settleFleets(next, clock.tick);
   const completions = settleConstruction(next, clock.tick);
+  settleTravel(next, clock.tick, arrivalRank);
   for (const research of Object.values(clock.research)) {
     const due = (research.orders ?? [])
       .filter((order) => order.effectiveTick <= clock.tick)

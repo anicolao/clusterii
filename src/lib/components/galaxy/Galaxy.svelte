@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick, onDestroy } from "svelte";
   import type { Technology } from "@shared/production";
+  import { fleetPosition } from "@shared/travel";
   import SystemFleets from "../SystemFleets.svelte";
   import SystemObservation from "../SystemObservation.svelte";
   import type { Allocation } from "@shared/market-focus";
@@ -38,6 +39,7 @@
     onsplit,
     onmerge,
     oncancelFleet,
+    onroute,
     onbuild,
     oncancel,
     onmigrate,
@@ -46,6 +48,7 @@
     onretry,
     message = "",
     commandKind = "",
+    commandFleetId = "",
     error = "",
     busy = false,
     pending = false,
@@ -60,6 +63,7 @@
     onform?: (starId: string, fighters: number, infantry: number) => void;
     ondisband?: (id: string) => void;
     onsplit?: (id: string, fighters: number, infantry: number) => void;
+    onroute?: (fleetId: string, waypoints: string[]) => void;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
     oncargo?: (
@@ -75,11 +79,14 @@
     onretry?: () => void;
     message?: string;
     commandKind?: string;
+    commandFleetId?: string;
     error?: string;
     busy?: boolean;
     pending?: boolean;
   } = $props();
   let military = $state(false);
+  let selectedFleet = $state<string | null>(null),
+    routeDrafts = $state<Record<string, string[]>>({});
   let observation = $state(false);
   let construction = $state(false);
   let economy = $state(false);
@@ -324,9 +331,22 @@
         fleets={Object.fromEntries(
           view.stars.map((s) => [
             s.id,
-            view.military?.fleets.filter((f) => f.starId === s.id).length ?? 0,
+            view.military?.fleets.filter(
+              (f) => f.starId === s.id && f.travel?.status !== "traveling",
+            ).length ?? 0,
           ]),
         )}
+        travelers={(view.military?.fleets ?? [])
+          .filter((f) => f.travel?.status === "traveling")
+          .map((f) => ({
+            id: f.id,
+            number: f.number,
+            ...fleetPosition(f, view.stars, view.production?.tick ?? 0),
+          }))}
+        onfleet={(id) => {
+          selectedFleet = id;
+          void openPanel("military");
+        }}
         stars={view.stars}
         owned={view.holdings.map((h) => h.starId)}
         selected={star.id}
@@ -410,13 +430,14 @@
       {/if}
     </div>
     <div class="system-actions">
-      {#if view.military && holding?.orbit === "You" && onform}<ActionButton
+      {#if view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
           class="secondary"
           data-focus="military"
           aria-expanded={military}
           onclick={() => openPanel("military")}
-          >Fleets · {view.military.fleets.filter((f) => f.starId === star.id)
-            .length}</ActionButton
+          >Fleets · {view.military.fleets.filter(
+            (f) => f.starId === star.id && f.travel?.status !== "traveling",
+          ).length}</ActionButton
         >{/if}
       {#if holding && view.productionEnabled && onbuild}<ActionButton
           class="secondary"
@@ -453,6 +474,10 @@
       onkeydown={panelKeys}
     >
       <SystemFleets
+        bind:selected={selectedFleet}
+        bind:routeDrafts
+        {commandKind}
+        {commandFleetId}
         {view}
         starId={star.id}
         {busy}
@@ -462,6 +487,7 @@
         onform={(fighters, infantry) => onform?.(star.id, fighters, infantry)}
         ondisband={(id) => ondisband?.(id)}
         onsplit={(id, fighters, infantry) => onsplit?.(id, fighters, infantry)}
+        onroute={(id, waypoints) => onroute?.(id, waypoints)}
         oncancel={(id) => oncancelFleet?.(id)}
         onmerge={(id, targetId) => onmerge?.(id, targetId)}
         oncargo={(id, operation, infantry) =>

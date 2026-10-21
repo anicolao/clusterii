@@ -1,6 +1,7 @@
 import type { Campaign } from "./campaign.js";
 import { futureTick } from "./construction.js";
 import { rules } from "./rules.js";
+import type { ArrivalReport, TravelPlan } from "./travel.js";
 export interface Fleet {
   id: string;
   uid: string;
@@ -9,6 +10,7 @@ export interface Fleet {
   infantry: number;
   formedTick: number;
   number: number;
+  travel?: TravelPlan;
 }
 export type FleetAction =
   | { kind: "fleet.cancel"; expectedRevision: number; orderId: string }
@@ -51,6 +53,7 @@ export interface FleetOrder {
   cargo?: "load" | "unload";
   reorganization?: "split" | "merge";
   targetFleetId?: string;
+  waypoints?: string[];
 }
 export interface FleetOutcome {
   id: string;
@@ -63,7 +66,11 @@ export interface FleetOutcome {
     | "unloaded"
     | "split"
     | "merged"
-    | "invalid";
+    | "invalid"
+    | "departed"
+    | "arrived"
+    | "destroyed"
+    | "halted";
   fighters: number;
   infantry: number;
   targetFleetId?: string;
@@ -72,6 +79,7 @@ export interface Military {
   fleets: Record<string, Fleet>;
   orders: FleetOrder[];
   ledger: Record<string, FleetOutcome[]>;
+  arrivals?: Record<string, ArrivalReport[]>;
 }
 export function fleetIdentity(uid: string, commandId: string) {
   return JSON.stringify([uid, commandId]);
@@ -95,7 +103,7 @@ export function reservedForces(state: Campaign, uid: string, starId: string) {
 export function stationedForces(state: Campaign, starId: string) {
   const local = state.systems[starId];
   return Object.values(state.military?.fleets ?? {})
-    .filter((f) => f.starId === starId)
+    .filter((f) => f.starId === starId && f.travel?.status !== "traveling")
     .reduce(
       (sum, f) => ({
         fighters: sum.fighters + f.fighters,
@@ -227,6 +235,7 @@ export function orderFleet(
     if (typeof a.fleetId !== "string") throw new Error("invalid");
     const fleet = next.military.fleets[a.fleetId];
     if (!fleet || fleet.uid !== uid) throw new Error("permission");
+    if (fleet.travel) throw new Error("fleet-traveling");
     ({ starId, fighters, infantry } = fleet);
     fleetId = fleet.id;
     const system = next.systems[starId];
@@ -289,6 +298,7 @@ export function orderFleet(
       const target = next.military.fleets[a.targetFleetId];
       if (!target || target.uid !== uid || target.starId !== starId)
         throw new Error("permission");
+      if (target.travel) throw new Error("fleet-traveling");
       if (pending(target.id)) throw new Error("fleet-order-pending");
       if (!canMerge(fleet, target)) throw new Error("fleet-capacity");
       targetFleetId = target.id;
@@ -315,7 +325,7 @@ export function settleFleets(state: Campaign, tick: number) {
   if (!military) return;
   military.ledger = {};
   const due = military.orders
-    .filter((o) => o.effectiveTick <= tick)
+    .filter((o) => !o.waypoints && o.effectiveTick <= tick)
     .sort((a, b) => a.sequence - b.sequence || a.id.localeCompare(b.id));
   for (const order of due) {
     const system = state.systems[order.starId];
@@ -440,21 +450,26 @@ export function settleFleets(state: Campaign, tick: number) {
           : {}),
     });
   }
-  military.orders = military.orders.filter((o) => o.effectiveTick > tick);
+  military.orders = military.orders.filter(
+    (o) => !!o.waypoints || o.effectiveTick > tick,
+  );
 }
 export function militaryView(state: Campaign, uid: string) {
   if (state.schemaVersion !== 2 || !state.economy) return null;
   return {
     fleets: Object.values(state.military?.fleets ?? {})
       .filter((f) => f.uid === uid)
-      .map(({ id, starId, fighters, infantry, formedTick, number }) => ({
-        id,
-        starId,
-        fighters,
-        infantry,
-        formedTick,
-        number,
-      })),
+      .map(
+        ({ id, starId, fighters, infantry, formedTick, number, travel }) => ({
+          id,
+          starId,
+          fighters,
+          infantry,
+          formedTick,
+          number,
+          ...(travel ? { travel: structuredClone(travel) } : {}),
+        }),
+      ),
     orders: (state.military?.orders ?? [])
       .filter((o) => o.uid === uid)
       .map(
@@ -468,6 +483,7 @@ export function militaryView(state: Campaign, uid: string) {
           cargo,
           reorganization,
           targetFleetId,
+          waypoints,
         }) => ({
           id,
           starId,
@@ -478,9 +494,13 @@ export function militaryView(state: Campaign, uid: string) {
           ...(cargo ? { cargo } : {}),
           ...(reorganization ? { reorganization } : {}),
           ...(targetFleetId ? { targetFleetId } : {}),
+          ...(waypoints ? { waypoints: [...waypoints] } : {}),
         }),
       ),
     ledger: structuredClone(state.military?.ledger[uid] ?? []),
+    ...(state.military?.arrivals?.[uid]?.length
+      ? { arrivals: structuredClone(state.military.arrivals[uid]) }
+      : {}),
   };
 }
 

@@ -22,6 +22,7 @@ import {
 } from "./production.js";
 import { type Portrait, type Profile, portraits } from "./profile.js";
 import { type FactionId, faction, rules } from "./rules.js";
+import type { TravelAction } from "./travel.js";
 export interface Seat {
   uid: string;
   profile: Profile;
@@ -53,6 +54,7 @@ export interface Campaign {
   economy?: Economy;
   construction?: Construction;
   military?: Military;
+  travelVersion?: 1;
   intelligenceVersion?: 1;
   intelligence?: Intelligence;
   commandProtocolVersion: 1;
@@ -76,6 +78,7 @@ export type MigrationAction = {
   targetMode: "mock" | "real";
 };
 export type CampaignAction =
+  | TravelAction
   | FleetAction
   | MigrationAction
   | { kind: "market.focus"; expectedRevision: number; allocation: Allocation }
@@ -191,6 +194,7 @@ export function createCampaign(
     revision: 1,
     rulesetVersion: rules.id,
     schemaVersion: 2,
+    travelVersion: 1,
     intelligenceVersion: 1,
     commandProtocolVersion: 1,
     development: true,
@@ -441,6 +445,7 @@ export function campaignView(state: Campaign, uid: string) {
         }
       : null,
     military: militaryView(state, uid),
+    travelEnabled: state.travelVersion === 1,
     observations: observationView(state, uid),
     scanningEnabled:
       state.schemaVersion === 2 && state.intelligenceVersion === 1,
