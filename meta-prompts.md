@@ -392,3 +392,10 @@ Inspected refreshed fleet-ready-phone capture: primary Form fleet is now readabl
 #19/#20/#21 verification remains running; no new fleet PR yet. Agent source review found cross-commander UUID collision before fleet ingress opened and changed fleet identity to JSON encoding of [uid, commandId]. Independently inspected that unambiguous composite identity and retained full cohort log (23 pass, zero failures, 1342 assertions). Review notes report intentional same-UUID two-commander coverage in both providers, 176 assertions, plus nine browser tests. Corrected consumer rollout is active before admission/rules; prior rule state was checked as closed by implementer. This is scoped source/evidence review, not full hosted/security acceptance.
 
 Agent is progressing on a concrete correctness fix, not stalled. Work remains dirty pending deployment and commit; no duplicate handoff. Carry this checkpoint with related committed/pushed logs. All final CI/independent acceptance gates remain; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:27 Toronto
+
+New #22 3ef70c9 correctly stacks on stellar-observations and is attached to supervisor chat. Fleet worktree was clean at inspection; independent npm run check passes with zero Svelte errors/warnings and backend TypeScript success. Publication/documentation pass, verification pending. Prior fleet source/evidence and sampled phone review remain scoped, not full hosted/security/visual acceptance.
+
+#19 191d7e7 now fully green. #20 220916e verification failed: retained 4K browser overlap assertion finds sticky Queue investing action covering part of Innovation radio row. Agent independently diagnosed the trace and is actively reproducing before bounding the research-choice scroll area with commitment outside it, retaining keyboard/action checks at all four sizes. #21 verification remains pending. This is a concrete unresolved UI defect blocking #20 acceptance; no redundant handoff or interruption of healthy diagnosis. Carry this checkpoint into next related committed/pushed logs. No merge.

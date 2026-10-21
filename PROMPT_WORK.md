@@ -84,3 +84,9 @@ Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | P
 Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Continue Prompt 30 with capability-scoped private stellar observations, repeat-safe acquisition and explicit report age in the galaxy.
 
 Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Continue Prompt 30 with acknowledged stationed fleet formation and disbanding, conserved forces and the visible production manifest.
+
+Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Diagnose retained market-focus CI geometry at 4K and propagate the verified correction through its successors.
+
+Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Carry the verified bounded research geometry correction into stellar observations, retaining both branch histories.
+
+Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Preserve the research geometry fix and its regression evidence in the stationed-fleets successor.
