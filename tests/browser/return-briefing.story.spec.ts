@@ -397,7 +397,9 @@ test("Live return briefing recovers authorized activity and saves only the revie
       description:
         "Save the reviewed period with Enter. Confirmation returns to the galaxy; other commanders retain their independent periods.",
       action: async () => {
+        await expect(save(page)).toBeEnabled();
         await save(page).focus();
+        await expect(save(page)).toBeFocused();
         await page.keyboard.press("Enter");
       },
       acknowledgement: {
@@ -500,7 +502,9 @@ test("Live return briefing recovers authorized activity and saves only the revie
       action: async () => {
         await button(page, "Return to galaxy").click();
         await open(page);
+        await expect(save(page)).toBeEnabled();
         await save(page).focus();
+        await expect(save(page)).toBeFocused();
         await page.keyboard.press("Enter");
       },
       acknowledgement: {
