@@ -148,3 +148,6 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | P
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive verified pinned Linux exact story narratives and preserve the remaining application, visual and hosted acceptance gates.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Continue the required illustrated-story migration with preserved profile conflicts, repeat-safe reconnect and keyboard recovery.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Persist successful retry command evidence as an artifact and publish the profile-recovery dependency and review links.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Repair the actual narrow conversation overflow exposed by replacement CI without relaxing either geometry assertion.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry the verified conversation containment repair into the illustrated-story foundation with both prompt histories preserved.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the conversation container correction into profile recovery while retaining the reviewed local story evidence.
