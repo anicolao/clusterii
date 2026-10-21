@@ -202,3 +202,5 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Verify illustrated two-device KMS epoch recovery and carry reviewer 14:38 scoped checkpoint.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register stacked migration PR45 and its preview gate, preserving verified actual-provider scope.
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Carry contact-subscription readiness and four exact verified narratives into the feedback lab stack.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into feedback-lab-stories, preserving exact comparisons.
