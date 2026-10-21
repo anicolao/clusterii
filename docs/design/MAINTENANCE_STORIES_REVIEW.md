@@ -1,0 +1,9 @@
+# Illustrated maintenance recovery and keyboard containment
+
+The roster's modal focus trap used retained layout rectangles to count controls inside a closed disclosure, so Tab from Development controls could escape the roster instead of wrapping to Close roster. The production trap now uses native visibility, excludes disabled form controls and includes textareas in its tab sequence. Four real keyboard journeys fail before the correction and pass afterward; no focus assertion or timeout is relaxed.
+
+The illustrated replacement for the procedural maintenance regression shows a host pausing a waiting campaign while an independent applicant reviews a faction. Accepted pause disables admission and leaving, keeps background controls inert and survives reload. Accepted resume enables admission; Escape restores Roster focus and the applicant's committed seat appears to the host. Exact status assertions distinguish the acknowledged command from the separate campaign-start live region.
+
+Eight combined local journeys/94 captures pass in 1.3 minutes: four maintenance journeys/52 captures and four unchanged history journeys/42 captures. [Generated narratives](../testing/STORY_INVENTORY.md#maintenance-recovery-narratives) and [candidate review](../testing/MAINTENANCE_BASELINE_REVIEW.md) retain phone, desktop, large and short evidence. Failure artifacts remain at `/tmp/cluster-maintenance-keyboard-before`. Starting accounts/campaigns are prepared through real UI with explicitly labeled development access and fixed catalogue; no active ticks or pause history are fabricated.
+
+The base is `feat/invitation-stories` (#38). Pinned Linux comparison, current-head application CI, independent full composition/motion review and hosted authentication/Scheduler acceptance remain open. Inspectable development encryption is disclosed; this slice does not approve proposed gameplay rules or public release. No PR is merged.

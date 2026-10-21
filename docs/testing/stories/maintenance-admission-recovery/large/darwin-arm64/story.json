@@ -1,0 +1,218 @@
+{
+  "id": "maintenance-admission-recovery",
+  "title": "Pause, recover and resume campaign admission",
+  "inventory": [
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A host pauses a real waiting development campaign while an independent commander is reviewing a faction. The pause fences admission and survives reload; acknowledged resume permits the waiting commander to join. Keyboard traversal wraps within the roster and Escape restores its opening control. Starting state uses real UI with explicit development access and fixed catalogue input.",
+  "source": {
+    "commit": "f2e381de8c21cfb33f4927a80a0136dbb951af0a",
+    "dirty": true,
+    "spec": "tests/browser/maintenance.story.spec.ts",
+    "specSha256": "825e5effebcb5a6b820786c7788c6f81d136b1ffd1f4f6a3c715d5e95334aac5"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "waiting-commanders",
+      "description": "Prepare a host's admitted Heliac seat and an independently authenticated Pelagic applicant through ordinary UI. Emulator development claims and fixed catalogue entropy are explicit controls; no production state, pause interval or tick is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "open-roster",
+      "description": "Open the roster while the other commander can still claim a seat.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "The roster panel receives focus.",
+      "verifications": [
+        "The waiting commander can still commit admission before a pause."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "002-open-roster-1-maintenance-host.png",
+          "verifications": []
+        },
+        {
+          "player": "Waiting envoy",
+          "image": "002-open-roster-2-waiting-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keyboard-controls",
+      "description": "Traverse the closed roster controls in both wrap directions, then open development controls with the keyboard.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "Pause campaign is focused after opening the disclosure.",
+      "verifications": [
+        "The same authoritative campaign remains ready for admission."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "003-keyboard-controls-1-maintenance-host.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "pause-admission",
+      "description": "Commit the pause and observe the waiting player's admission control become disabled.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "The server acknowledges the pause and explicitly stops admissions and scheduled start.",
+      "verifications": [
+        "Resume is available, leaving is disabled, the background command rail is inert and the applicant cannot claim a seat."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "004-pause-admission-1-maintenance-host.png",
+          "verifications": []
+        },
+        {
+          "player": "Waiting envoy",
+          "image": "004-pause-admission-2-waiting-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-pause",
+      "description": "Reload and recover the persisted maintenance pause.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "The recovered galaxy discloses the development maintenance pause.",
+      "verifications": [
+        "The independent applicant remains unable to join after the host reloads."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "005-recover-pause-1-maintenance-host.png",
+          "verifications": []
+        },
+        {
+          "player": "Waiting envoy",
+          "image": "005-recover-pause-2-waiting-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reopen-controls",
+      "description": "Reopen the roster and reach Resume with the keyboard, skipping disabled Leave.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "Resume campaign is focused and ready.",
+      "verifications": [
+        "Leaving remains disabled until the server accepts resume."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "006-reopen-controls-1-maintenance-host.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "resume-admission",
+      "description": "Resume the campaign and wait for the applicant's admission control to reopen.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "The authoritative receipt confirms Campaign resumed.",
+      "verifications": [
+        "Leaving and claiming a seat become available after acceptance."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "007-resume-admission-1-maintenance-host.png",
+          "verifications": []
+        },
+        {
+          "player": "Waiting envoy",
+          "image": "007-resume-admission-2-waiting-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-focus",
+      "description": "Close the roster with Escape and return focus to its opening control.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "Roster is focused on the galaxy surface.",
+      "verifications": [
+        "The modal is closed and normal galaxy controls are no longer inert."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "008-return-focus-1-maintenance-host.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "admit-waiting-envoy",
+      "description": "Claim the reopened seat and inspect its acknowledged roster entry.",
+      "actor": "Waiting envoy and Maintenance host",
+      "kind": "player",
+      "acknowledgement": "The applicant receives seat confirmation and the host sees Waiting envoy.",
+      "verifications": [
+        "Both commanders see the real persisted campaign; it remains waiting for a full roster."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "009-admit-waiting-envoy-1-maintenance-host.png",
+          "verifications": []
+        },
+        {
+          "player": "Waiting envoy",
+          "image": "009-admit-waiting-envoy-2-waiting-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

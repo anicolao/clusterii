@@ -766,9 +766,16 @@
     if (event.key !== "Tab") return;
     const controls = [
       ...(event.currentTarget as HTMLElement).querySelectorAll<HTMLElement>(
-        'button:not(:disabled),input,select,summary,a[href],[tabindex="0"]',
+        'button:not(:disabled),input:not(:disabled),select:not(:disabled),textarea:not(:disabled),summary,a[href],[tabindex="0"]',
       ),
-    ].filter((el) => el.getClientRects().length);
+    ].filter(
+      (el) =>
+        !el.matches(":disabled") &&
+        el.checkVisibility({
+          visibilityProperty: true,
+          contentVisibilityAuto: true,
+        }),
+    );
     const first = controls[0],
       last = controls.at(-1);
     if (
