@@ -718,7 +718,7 @@ for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER
  expect((await head.get()).get('revision')).toBe(7);expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(7);
  for(const {c} of players){const view=(await readCampaignHistory(c.firestore,c.functions,id,c.uid)).records[0];expect(view.production?.tick).toBe(1);expect(view.empire?.creditsMilli).toBe(202800);expect(view.holdings[0].fighters).toBe(21);expect(view.economy?.ledger?.scienceMilli).toBe(1400);expect(JSON.stringify(view.economy)).not.toContain(players.find(p=>p.c.uid!==c.uid)!.c.uid);}
  // A lost worker reply after commit must not produce the same tick twice.
- const transaction=db.runTransaction.bind(db);let calls=0;
+ const transaction=Object.getPrototypeOf(db).runTransaction.bind(db);let calls=0;
  const lost=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const call=++calls;const result=await transaction(...args);if(call===2)throw new Error('Lost production acknowledgement');return result;});
  try{await expect(settleCampaignTicks(id,()=>due+900000)).rejects.toThrow('Lost production acknowledgement');}finally{lost.mockRestore();}
  expect((await head.get()).get('revision')).toBe(8);expect(await settleCampaignTicks(id,()=>due+900000)).toBe(0);
@@ -739,7 +739,7 @@ test('expired production claim is reclaimed; returning stale worker cannot write
  const head=db.doc(`campaignStates/${id}`),lease=db.doc(`campaignTickLeases/${id}`);const start=(await head.get()).get('startAt');await startDueCampaign(id,start);const due=start+900000;
  let releaseOld!:()=>void,releaseNew!:()=>void,oldClaimed!:()=>void,newClaimed!:()=>void;
  const oldGate=new Promise<void>(r=>releaseOld=r),newGate=new Promise<void>(r=>releaseNew=r),oldReady=new Promise<void>(r=>oldClaimed=r),newReady=new Promise<void>(r=>newClaimed=r);
- const transaction=db.runTransaction.bind(db);let calls=0;
+ const transaction=Object.getPrototypeOf(db).runTransaction.bind(db);let calls=0;
  const stopped=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const call=++calls;const result=await transaction(...args);if(call===1){oldClaimed();await oldGate;}if(call===2){newClaimed();await newGate;}return result;});
  try{
   const oldWorker=settleCampaignTicks(id,()=>due);await oldReady;const oldToken=(await lease.get()).get('token');
@@ -756,3 +756,12 @@ test('expired production claim is reclaimed; returning stale worker cannot write
  expect(await settleCampaignTicks(id,()=>due+97*900000)).toBe(0);
  const final=(await readCampaignHistory(players[0].c.firestore,players[0].c.functions,id,players[0].c.uid)).records[0];expect(final.production?.tick).toBe(98);expect(final.empire?.creditsMilli).toBe(474400);expect(final.holdings[0].fighters).toBe(157);expect(final.economy?.research.levels.navigation).toBe(3);expect(final.economy?.research.progressMilli.navigation).toBe(17200);expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(104);
 },120000);
+
+test('production lease cleanup cannot delete a replacement after observing the old token',async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();const {releaseProductionLease}=await import('../functions/src/production');
+ const lease=db.doc(`campaignTickLeases/${crypto.randomUUID()}`);await lease.set({token:'old-worker',expiresAt:1});
+ let release!:()=>void,observed!:()=>void;const gate=new Promise<void>(r=>release=r),ready=new Promise<void>(r=>observed=r);
+ const original=lease.get.bind(lease);const delayed=spyOn(lease,'get').mockImplementation(async()=>{const record=await original();observed();await gate;return record;});
+ try {const cleanup=releaseProductionLease(lease,'old-worker');await ready;await lease.set({token:'replacement',expiresAt:Date.now()+120000});release();await cleanup;}finally{release();delayed.mockRestore();}
+ expect((await lease.get()).get('token')).toBe('replacement');await releaseProductionLease(lease,'replacement');expect((await lease.get()).exists).toBe(false);
+});

@@ -2,13 +2,17 @@ const [base, expected] = process.argv.slice(2);
 if (!base || !/^[a-f0-9]{40}$/.test(expected ?? ""))
   throw new Error("Preview URL and source SHA required");
 let matched = false;
-for (let attempt = 0; attempt < 90; attempt++) {
+let observed = "No response";
+// Pages queues can outlive a successful build by several minutes. Keep the exact
+// source check, but allow the asynchronous deployment to finish before failing.
+for (let attempt = 0; attempt < 300; attempt++) {
   const response = await fetch(
     new URL(`revision.json?source=${expected}`, base),
     { cache: "no-store" },
   );
   if (response.ok) {
     const revision = await response.json();
+    observed = `source ${revision.sourceSha}, build ${revision.buildSourceSha}`;
     if (
       revision.sourceSha === expected &&
       revision.buildSourceSha === expected
@@ -16,11 +20,11 @@ for (let attempt = 0; attempt < 90; attempt++) {
       matched = true;
       break;
     }
-  }
+  } else observed = `HTTP ${response.status}`;
   await new Promise((resolve) => setTimeout(resolve, 2000));
 }
 if (!matched)
-  throw new Error("Hosted revision did not match the published source");
+  throw new Error(`Hosted revision did not match ${expected}; last observed ${observed}`);
 const entry = await fetch(base);
 if (!entry.ok) throw new Error("Entry route unavailable");
 const html = await entry.text();

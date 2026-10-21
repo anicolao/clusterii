@@ -1,5 +1,9 @@
 import { randomUUID } from "node:crypto";
-import { FieldPath, getFirestore } from "firebase-admin/firestore";
+import {
+  type DocumentReference,
+  FieldPath,
+  getFirestore,
+} from "firebase-admin/firestore";
 import { onSchedule } from "firebase-functions/v2/scheduler";
 import type { Campaign } from "../../shared/campaign.js";
 import { type Mode, provider } from "../../shared/crypto.js";
@@ -103,10 +107,31 @@ export async function settleCampaignTicks(
     }
     return settled;
   } finally {
-    await db.runTransaction(async (tx) => {
-      const lease = await tx.get(leaseRef);
-      if (lease.exists && lease.get("token") === token) tx.delete(leaseRef);
-    });
+    await releaseProductionLease(leaseRef, token);
+  }
+}
+export async function releaseProductionLease(
+  leaseRef: DocumentReference,
+  token: string,
+) {
+  const lease = await leaseRef.get();
+  if (lease.exists && lease.get("token") === token) {
+    if (!lease.updateTime) throw new Error("Missing lease update fence");
+    try {
+      // Compare-and-delete needs no second read/write transaction. The update
+      // precondition also fences a replacement claimed after this read.
+      await leaseRef.delete({ lastUpdateTime: lease.updateTime });
+    } catch (error) {
+      if (
+        !(
+          error &&
+          typeof error === "object" &&
+          "code" in error &&
+          error.code === 9
+        )
+      )
+        throw error;
+    }
   }
 }
 export async function sweepProduction() {
@@ -144,6 +169,7 @@ export async function sweepProduction() {
 export const runProduction = onSchedule(
   {
     schedule: "every 1 minutes",
+    timeoutSeconds: 540,
     retryCount: 3,
     minBackoffSeconds: 10,
     maxBackoffSeconds: 60,

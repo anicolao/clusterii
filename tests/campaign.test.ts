@@ -10,7 +10,7 @@ test('review rules generate persisted, reproducible, fair connected galaxies for
     expect(galaxy).toEqual(generateGalaxy(seats,seed));
   }
 });
-import {createCampaign,joinOrLeave,startCampaign,campaignView} from '../shared/campaign';
+import {createCampaign,joinOrLeave,startCampaign,campaignView,maintainCampaign} from '../shared/campaign';
 import type {FactionId} from '../shared/rules';
 test('development admission enforces quota, idempotency, stale claims, scheduled start and private views',()=>{
   const now=1000;
@@ -135,4 +135,22 @@ test('production force caps record discarded units and legacy campaigns retain t
  const state=productionFixture(),home=state.seats[0].home!;state.systems[home].fighters=rules.maximumUnitsPerPlayerPerType;state.systems[home].infantry=rules.maximumUnitsPerPlayerPerType;
  const result=produce(state,state.economy!);expect(result.campaign.systems[home].fighters).toBe(rules.maximumUnitsPerPlayerPerType);expect(result.economy.ledger.p0.discardedFighters).toBe(1);expect(result.economy.ledger.p0.discardedInfantry).toBe(1);
  const legacy={...state,schemaVersion:1 as const};delete legacy.economy;expect(campaignView(legacy,'p0').productionEnabled).toBe(false);expect(campaignView(legacy,'p0').production).toBeNull();
+});
+
+test('production pause preserves the remaining interval and legacy starts never gain an economy',()=>{
+ const state=productionFixture();
+ const paused=maintainCampaign(state,{kind:'campaign.pause',expectedRevision:state.revision},'p0',1200000);
+ const resumed=maintainCampaign(paused,{kind:'campaign.resume',expectedRevision:paused.revision},'p0',1500000);
+ expect(resumed.economy!.nextTickAt).toBe(2100000);expect(resumed.economy!.tick).toBe(0);expect(resumed.empires).toEqual(state.empires);expect(resumed.economy!.research).toEqual(state.economy!.research);
+ const legacy={...state,phase:'scheduled' as const,schemaVersion:1 as const};delete legacy.economy;
+ const began=startCampaign(legacy,900000);expect(began.economy).toBeUndefined();expect(campaignView(began,'p0').productionEnabled).toBe(false);
+});
+
+test('investing is applied once before wallet/escrow apportionment and neutral developments produce nothing',()=>{
+ const state=productionFixture(),unfavored=state.galaxy.stars.find(s=>s.class==='O'&&!state.seats.some(seat=>seat.home===s.id))!.id;
+ state.systems[unfavored]={orbit:'p1',surface:'p0',fighters:0,infantry:0,markets:1,camps:0,bases:0,stations:0,escrowMilli:0};state.economy!.research.p0.levels.investing=5;
+ const neutral=state.galaxy.stars.find(s=>!state.seats.some(seat=>seat.home===s.id)&&s.id!==unfavored)!.id;state.systems[neutral].markets=100;state.systems[neutral].camps=100;state.systems[neutral].bases=100;state.systems[neutral].stations=100;
+ const result=produce(state,state.economy!);const ledger=result.economy.ledger.p0;
+ // Independent Decimal(precision=60) reference: floorMilli(3.6^1.05)=3.838.
+ expect(ledger.creditsMilli+ledger.escrowMilli).toBe(3838);expect(result.campaign.systems[neutral]).toEqual(state.systems[neutral]);expect(result.campaign.empires.p0.creditsMilli-200000).toBe(ledger.creditsMilli);expect(result.campaign.systems[unfavored].escrowMilli).toBe(ledger.escrowMilli);
 });
