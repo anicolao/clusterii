@@ -216,3 +216,12 @@ export async function observeCampaign(
     stop();
   };
 }
+
+export async function campaignHistory(
+  gameId: string,
+  uid: string,
+  cursor: import("./campaign-history").HistoryCursor | null = null,
+) {
+  const { readCampaignHistory } = await import("./campaign-history");
+  return readCampaignHistory(firestore, functions, gameId, uid, cursor);
+}

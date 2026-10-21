@@ -660,3 +660,47 @@ test('interrupted session fence stays closed and the same operation resumes with
   await httpsCallable(a.functions,'revokeSessions')({operationId});
   expect((await db.doc(`sessionFences/${a.uid}`).get()).data()).toEqual(current);
 },60000);
+
+import {readCampaignHistory, HistoryEpochChanged} from '../src/lib/campaign-history';
+for (const mode of ['mock','real'] as const) (mode==='real' && process.env.CLUSTER_KMS_TEST!=='true' ? test.skip : test)(`authorized history reader pages retained ${mode} records without shifting, leaking or mixing epochs`,async()=>{
+ const a=await client(`history-a-${crypto.randomUUID()}`), b=await client(`history-b-${crypto.randomUUID()}`);
+ await Promise.all([developer(a),developer(b)]);
+ await Promise.all([saveIdentity(a),saveIdentity(b)]);
+ const gameId=crypto.randomUUID();
+ await campaignCommand(a,gameId,{kind:'campaign.create',expectedRevision:0,name:'Retained private history',capacity:4,mode,development:true});
+ await campaignCommand(a,gameId,{kind:'campaign.join',expectedRevision:1,faction:'heliac'},mode);
+ let revision=2;
+ for(let i=0;i<12;i++) {const result=await campaignCommand(a,gameId,{kind:i%2===0?'campaign.pause':'campaign.resume',expectedRevision:revision},mode);expect(result.receipt.status).toBe('accepted');revision++;}
+ const first=await readCampaignHistory(a.firestore,a.functions,gameId,a.uid);
+ expect(first.records.map(v=>v.revision)).toEqual([14,13,12,11,10,9,8,7,6,5]);expect(first.cursor?.ceiling).toBe(14);
+ expect(first.records.every(v=>v.own.profile.alias==='Commander' && v.holdings.length===0)).toBe(true);
+ await campaignCommand(a,gameId,{kind:'campaign.pause',expectedRevision:revision++},mode);
+ const older=await readCampaignHistory(a.firestore,a.functions,gameId,a.uid,first.cursor);
+ expect(older.records.map(v=>v.revision)).toEqual([4,3,2]);expect(older.cursor).toBeNull();
+ const complete=[...first.records,...older.records];expect(new Set(complete.map(v=>v.revision)).size).toBe(13);
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();
+ const damaged=db.doc(`campaignViews/${gameId}/members/${a.uid}/versions/14`), saved=(await damaged.get()).data();
+ const other=(await db.doc(`campaignViews/${gameId}/members/${a.uid}/versions/13`).get()).data();
+ await damaged.update({envelope:other.envelope,grant:other.grant});
+ await expect(readCampaignHistory(a.firestore,a.functions,gameId,a.uid)).rejects.toThrow();
+ await damaged.set(saved);
+ expect((await readCampaignHistory(a.firestore,a.functions,gameId,a.uid,{epoch:1,before:15,ceiling:14})).records).toEqual(first.records);
+
+ const latest=await readCampaignHistory(a.firestore,a.functions,gameId,a.uid);expect(latest.records[0].revision).toBe(15);
+ await expect(readCampaignHistory(b.firestore,b.functions,gameId,a.uid)).rejects.toThrow();
+ await expect(readCampaignHistory(a.firestore,a.functions,gameId,b.uid)).rejects.toThrow();
+ await expect(readCampaignHistory(a.firestore,a.functions,gameId,a.uid,{...first.cursor!,epoch:9})).rejects.toBeInstanceOf(HistoryEpochChanged);
+ if(mode==='real') {
+   const migration=await campaignCommand(a,gameId,{kind:'campaign.migrate',expectedRevision:revision,targetMode:'mock'},mode);
+   expect(migration.receipt.status).toBe('accepted');revision++;
+   await expect(readCampaignHistory(a.firestore,a.functions,gameId,a.uid,first.cursor)).rejects.toBeInstanceOf(HistoryEpochChanged);
+   const after=await readCampaignHistory(a.firestore,a.functions,gameId,a.uid);
+   const tail=await readCampaignHistory(a.firestore,a.functions,gameId,a.uid,after.cursor);
+   const normalize=(v:CampaignView)=>{const {mode,encryptionEpoch,mockExposed,...rest}=v;return rest;};
+   expect([...after.records,...tail.records].filter(v=>v.revision<=14).map(normalize)).toEqual(complete.map(normalize));
+   expect([...after.records,...tail.records].every(v=>v.encryptionEpoch===2)).toBe(true);
+ } else {await campaignCommand(a,gameId,{kind:'campaign.resume',expectedRevision:revision++},mode);}
+ const left=await campaignCommand(a,gameId,{kind:'campaign.leave',expectedRevision:revision},'mock',mode==='real'?2:1);expect(left.receipt.status).toBe('accepted');
+ await expect(readCampaignHistory(a.firestore,a.functions,gameId,a.uid)).rejects.toThrow();
+ await expect(getDocs(collection(a.firestore,`campaignViews/${gameId}/members/${a.uid}/${mode==='real'?'epochs/2/versions':'versions'}`))).rejects.toThrow();
+},120000);

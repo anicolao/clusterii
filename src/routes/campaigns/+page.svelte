@@ -309,6 +309,8 @@
 <main class="campaign-shell" class:commanding={!!view}>
   {#if view}<Galaxy
       {view}
+      loadHistory={(cursor) =>
+        service.campaignHistory(view!.id, account!, cursor)}
       {message}
       {error}
       {busy}

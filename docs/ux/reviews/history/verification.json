@@ -1,0 +1,28 @@
+{
+  "service": {
+    "providers": [
+      "mock",
+      "real AES-256-GCM with live Cloud KMS"
+    ],
+    "passed": 2,
+    "assertions": 160,
+    "log": "/tmp/cluster-history-live.log"
+  },
+  "browser": {
+    "combinedPassed": 9,
+    "combinedSeconds": 35.2,
+    "focusFinalPassed": 4,
+    "focusFinalSeconds": 28.9,
+    "logs": [
+      "/tmp/cluster-history-final-browser.log",
+      "/tmp/cluster-history-focus.log"
+    ]
+  },
+  "types": "pass",
+  "lint": "pass",
+  "unit": {
+    "passed": 14,
+    "assertions": 251
+  },
+  "scope": "Emulator journeys and live KMS; independent review and hosted Google acceptance pending"
+}

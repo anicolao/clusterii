@@ -8,6 +8,8 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import CampaignHistory from "$lib/components/CampaignHistory.svelte";
+  import { historyRecords } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
@@ -179,6 +181,24 @@
     </section>
     <section>
       <h2>Account sessions</h2>
+      <h2>Campaign history · shared instrument</h2>
+      {#each ["ready", "loading", "error"] as state}<div
+          style="height: 540px; max-width: 620px; margin-bottom: 32px;"
+        >
+          <CampaignHistory
+            records={historyRecords}
+            loading={state === "loading"}
+            error={state === "error"
+              ? "History could not be recovered. Retry keeps your place."
+              : ""}
+            earlier
+            newer
+            onearlier={() => {}}
+            onlatest={() => {}}
+            onretry={() => {}}
+            onclose={() => {}}
+          />
+        </div>{/each}
       <SessionSecurity onconfirm={() => {}} />
       <SessionSecurity pending onconfirm={() => {}} />
       <SessionSecurity
