@@ -91,7 +91,7 @@ try {
     if (args.length) {
       // A PR can include continuations committed before a newer prompt arrived
       // on its base. Accept only exact logs from its own committed ancestry.
-      for (const revision of git(['rev-list', 'HEAD', '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean)) {
+      for (const revision of git(['rev-list', '--full-history', 'HEAD', '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean)) {
         const log = trackedAt(revision, 'PROMPTS.md');
         if (log && staged.startsWith(log)) historical.add(`Prompt ${validateLog(log)} | ${createHash('sha256').update(log).digest('hex')}`);
       }

@@ -1,5 +1,7 @@
 # Project instructions
 
+Read [E2E_GUIDE.md](E2E_GUIDE.md) before writing or changing browser tests. Illustrated user stories use the shared TestStepHelper, named acknowledged outcomes and assertions, generated ordered walkthroughs, and exact separately reviewed visual baselines. Procedural tests and loose captures do not satisfy this contract.
+
 README.md, VISION.md, and CLUSTER_II_MVP.md are the design contract. IMPLEMENTATION_PLAN.md defines delivery. CLUSTER_I_DESIGN_REVIEW.md is historical evidence, not a forward requirement. Describe the design directly and assertively. Distinguish the design contract from implementation status.
 
 Implement tracer bullets: every increment connects a final-quality player-visible interaction to its real actions, reducers, persistence, and authorization. Match the approved mockups closely. Do not add temporary scaffolding, fallback implementations, fabricated state, or unused infrastructure. Mock encryption is the explicit development provider, exercised through the same complete interfaces as real encryption; it is not permission to mock services. Add the 3D renderer, campaign services, and their dependencies when their visible interaction ships.

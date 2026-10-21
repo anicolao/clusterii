@@ -1,6 +1,7 @@
 import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "tests/browser",
+  testIgnore: "**/*.story.spec.ts",
   workers: 1,
   retries: 0,
   timeout: 45000,
