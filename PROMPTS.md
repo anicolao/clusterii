@@ -425,3 +425,9 @@ Reviewer follow-up explicitly requested by the user: write a root E2E_GUIDE.md f
 Delegated instruction from the reviewer, referring to meta-prompts.md “Reviewer progress and CI handoff — 2026-10-21 09:38 Toronto”:
 
 Reviewer CI finding at 09:38 Toronto: #30 aac1d04 and #31 19e896c are now green. #32 46307c6 run39599629028 and #33 8a9ae26 run39600113448 fail history.spec.ts:20 in all four viewports: focusing Saved campaign records then Shift+Tab no longer focuses Return to galaxy. Logs retained /tmp/cluster32-review-failure.log and /tmp/cluster33-review-failure.log. Diagnose actual keyboard order after briefing changes, distinguish stale expected order from accessibility regression, preserve meaningful keyboard/focus/containment assertions, and propagate the appropriate fix through the stack. Do not simply drop the check or raise timeout. If changing legacy specs on the story branch, honor the new migration policy rather than silently refreshing exceptions. Record attributed instruction and continuation, carry latest meta-prompts, commit/push without merge. Entry/identity local exact comparison is useful progress, but Linux and independent full visual acceptance remain pending.
+
+## Prompt 45: Preview revision
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 14:48 Toronto”.
+
+Reviewer finding 2026-10-21 14:48 Toronto: #43 publication run39652784195/job119406158620 failed hosted-revision verification: expected4cfaebf but observed source/build a9951bd. Log retained /tmp/cluster43-publish-review-failure.log. Coordinate a publication retry after the shared Pages queue clears, then verify the exact current head before claiming preview readiness. Preserve the revision assertion. Log this reviewer-attributed handoff in PROMPTS.md and continuations per AGENTS.md; carry latest meta-prompts checkpoint. No merge.

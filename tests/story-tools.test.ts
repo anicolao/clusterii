@@ -33,7 +33,7 @@ test("capture waits for the finite effect and its final outcome", async () => {
           button.textContent = "Accepted";
         });
     });
-    await page.evaluate(captureReady);
+    await page.evaluate(captureReady, []);
     expect(await page.locator("button").textContent()).toBe("Accepted");
   });
 });
@@ -49,7 +49,7 @@ test("stable capture rejects infinite and paused motion instead of hiding it", a
           });
         if (paused) effect.pause();
       }, paused);
-      await expect(page.evaluate(captureReady)).rejects.toThrow(
+      await expect(page.evaluate(captureReady, [])).rejects.toThrow(
         paused ? "paused animation" : "infinite animation",
       );
     });
@@ -58,7 +58,7 @@ test("undecodable visible images fail readiness", async () => {
   await fixture(
     '<img width="50" height="50" src="data:image/png;base64,YmFk">',
     async (page) => {
-      await expect(page.evaluate(captureReady)).rejects.toThrow();
+      await expect(page.evaluate(captureReady, [])).rejects.toThrow();
     },
   );
 });
@@ -182,4 +182,40 @@ test("pinned emulator UI assets never replace provider responses or production a
     ],
   ])
     expect(emulatorAsset(url, page)).toBeUndefined();
+});
+
+test("explicit animation inspection validates exact paused count, time and duration", async () => {
+  await fixture('<button id="sample">Inspect</button>', async (page) => {
+    await page.evaluate(() => {
+      const animation = document
+        .querySelector("button")!
+        .animate([{ opacity: 0.5 }, { opacity: 1 }], {
+          duration: 180,
+          fill: "both",
+        });
+      animation.pause();
+      animation.currentTime = 90;
+    });
+    const frame = { selector: "#sample", count: 1, time: 90, duration: 180 };
+    await page.evaluate(captureReady, [frame]);
+    for (const change of [
+      { time: 91 },
+      { duration: 181 },
+      { count: 2 },
+      { selector: "#missing" },
+    ])
+      await expect(
+        page.evaluate(captureReady, [{ ...frame, ...change }]),
+      ).rejects.toThrow("Explicit motion");
+    await page.evaluate(() => {
+      const extra = document.body.animate([{ opacity: 0.5 }, { opacity: 1 }], {
+        duration: 180,
+      });
+      extra.pause();
+      extra.currentTime = 90;
+    });
+    await expect(page.evaluate(captureReady, [frame])).rejects.toThrow(
+      "undeclared paused animation",
+    );
+  });
 });

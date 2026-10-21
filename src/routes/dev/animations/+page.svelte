@@ -141,7 +141,7 @@
           : "Standard motion comparison"}
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
-        <p class="overline">Same outcome · {frame.feedback.remedy}</p>
+        <p class="overline">Same outcome · {frame.feedback.remedy ?? "none"}</p>
         {#if selected === "invalid-recovery"}{#key frame.at}<RecoveryRecord
               reason={new RecoveryValidation("").message}
               confirming={time >= 1200}
@@ -395,6 +395,12 @@
   }
   header {
     max-width: 760px;
+  }
+  nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 12px;
   }
   h1 {
     font:

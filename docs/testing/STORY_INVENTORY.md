@@ -206,3 +206,12 @@ Four local exact journeys/72 captures exercise actual Cloud KMS activation, expl
 - desktop: [Two-device migration](stories/encryption-migration/desktop/darwin-arm64/README.md).
 - large: [Two-device migration](stories/encryption-migration/large/darwin-arm64/README.md).
 - short: [Two-device migration](stories/encryption-migration/short/darwin-arm64/README.md).
+
+## Shared feedback lab narratives
+
+Eight component journeys/108 exact local captures cover identity pending/reconnect/conflict/acceptance, quarter-speed replay/pause/reset and campaign receipt parity. Each paused production animation has an exact count/time/duration declaration. Four ordinary identity journeys also pass unchanged with the extended helper. These are component fixtures, not service acceptance. Remaining lab/gameplay/gallery assertions retain their unchanged procedural predecessor. Linux/current-head and independent review remain open.
+
+- phone: [Identity feedback and playback](stories/feedback-motion-lab/phone/darwin-arm64/README.md), [Campaign receipts](stories/campaign-feedback-lab/phone/darwin-arm64/README.md).
+- desktop: [Identity feedback and playback](stories/feedback-motion-lab/desktop/darwin-arm64/README.md), [Campaign receipts](stories/campaign-feedback-lab/desktop/darwin-arm64/README.md).
+- large: [Identity feedback and playback](stories/feedback-motion-lab/large/darwin-arm64/README.md), [Campaign receipts](stories/campaign-feedback-lab/large/darwin-arm64/README.md).
+- short: [Identity feedback and playback](stories/feedback-motion-lab/short/darwin-arm64/README.md), [Campaign receipts](stories/campaign-feedback-lab/short/darwin-arm64/README.md).

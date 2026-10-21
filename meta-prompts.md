@@ -984,3 +984,19 @@ Campaign-start Linux200 candidates were separately inspected and promoted in a99
 #44 63e2d24 carries separately reviewed Linux provider candidates and completed shared-login repair propagation. #41–44 replacement comparisons/application checks remain queued or running, with no new completed actionable failure. Agent healthy on encryption-migration stories; no duplicate handoff.
 
 Independently read new review and assertion inventory: one authenticated recipient on two devices exercises pause, uncommitted selection isolation, actual managed/inspectable migration, revision/epoch/algorithm checks and reload. Scope explicitly excludes multi-recipient/worker-fault certification and default CI skips actual-provider execution without credentials; historical worker-fencing coverage is referenced rather than overstated. Candidate generation still running at inspection, no completed exact result claimed. Carry checkpoint into related committed/pushed logs; retain full independent visual/motion/keyboard/text-enlargement/hosted and remaining implementation gates. No merge.
+
+
+## Reviewer progress — 2026-10-21 14:48 Toronto
+
+#45 bbab366 is open correctly stacked on #44 and attached. Independently confirmed retained migration exact log:4 passed1.8min; review documents72 actual-KMS captures and explicit default-CI skip, not hosted/full cryptographic acceptance. Agent healthy starting shared animation-lab component stories, distinct from service evidence. #41–44 replacement checks remain running.
+
+Exact handoff to existing agent:
+
+Reviewer finding 2026-10-21 14:48 Toronto: #43 publication run39652784195/job119406158620 failed hosted-revision verification: expected4cfaebf but observed source/build a9951bd. Log retained /tmp/cluster43-publish-review-failure.log. Coordinate a publication retry after the shared Pages queue clears, then verify the exact current head before claiming preview readiness. Preserve the revision assertion. Log this reviewer-attributed handoff in PROMPTS.md and continuations per AGENTS.md; carry latest meta-prompts checkpoint. No merge.
+
+
+## Reviewer progress — 2026-10-21 14:58 Toronto
+
+#41 79fa1f2 replacement story comparison is green; application pending. #42 7302236 still fails a single1994-pixel short identity-text comparison despite frame settling; independently retained job119404921165 log /tmp/cluster42-repeat-review-failure.log confirms67 passed20.4min/1failed. Agent acknowledges unresolved cause and retains baseline/trace/diff unchanged, so no duplicate handoff. #43 publication retry119420786184 is running in response to prior finding; #44–45 publication succeeded.
+
+Independent pending lab source review: explicit paused-frame inspection requires declared selector/count/time/duration, finite one-iteration animations, paused matching state, no duplicate matches; undeclared paused and infinite active animations remain rejected. Narratives record the motion inspection, exact baseline comparison unchanged. Lab navigation now has44px minimum targets. This supports explicit component animation inspection, not normal gameplay/service acceptance; verification still pending. Agent healthy and prior handoff logged in PROMPTS.md. Carry checkpoint into related committed/pushed work; remaining visual/motion/hosted and implementation gates open, no merge.
