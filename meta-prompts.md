@@ -870,3 +870,19 @@ Maintenance story exposed a production keyboard trap bug: closed disclosure chil
 #39 03e123e maintenance/focus correction is open correctly stacked on #38 and attached. Publish/docs green, story generation green, replacement comparison running after redundant job cancellation. #38 a1004e4 Linux story comparison now green; #35–37 story checks green, #36 preview rerun now successful. Application verification #34–39 remains pending (latest #34 run39621325241 began14:56UTC, no completed result).
 
 Agent actively migrating session recovery on successor. Read proposed review/source inventory: cancellation and interrupted account-wide sign-out are distinct two-device journeys, profile revision/version/receipt preserved; fault harness targets real revocation boundary/lease with explicit recovery, procedural predecessor remains until replacement passes. Candidate/exact/hosted/independent full review gates remain open; no completion claimed. Agent healthy, no duplicate handoff. Carry latest supervisory log into related committed/pushed changes and preserve all review evidence; no merge.
+
+
+## Reviewer progress — 2026-10-21 12:08 Toronto
+
+#34 1c4cf9c now fully green after conversation containment correction. #35–37 story/docs/publish green, ordinary application verification pending. #38 03e6411/#39 20a7cff carry archived evidence with fresh story/application runs pending. Session slice locally committed03b433e, clean at initial inspection; no successor PR yet.
+
+Independently reviewed one-line production fix clearing account-scoped profile feedback with account observer reset, addressing stale Identity saved on fresh authentication. Review records new fresh-sign-in assertion plus original two-device cancel/interrupted-revocation/reload/session-end/profile facts. Independently confirmed retained run12 passed3.2min (documented124 exact captures including4 unchanged identity stories). Attempted image inspection could not load the file after agent switched checkout; no visual approval claimed. Agent archiving parent Linux baselines before successor publication, healthy; no duplicate handoff. Carry latest checkpoint into related committed/pushed logs, retain hosted/motion/full-visual gates, no merge.
+
+
+## Reviewer progress — 2026-10-21 12:18 Toronto
+
+#40 df9d00e device/session recovery is open correctly based on #39 and attached; docs/publish green, story/application checks pending. #39 b26396c reviewed maintenance baselines awaiting exact comparison. #35–38 story checks green; ordinary application checks still pending.
+
+Agent now migrating receipt recovery, independently identifies stale completed feedback on new identity/campaign drafts and retains pre-fix screenshots. Reviewed pending changes: identity form input and new campaign draft clear message only when neither busy nor pending; errors separate and pending states preserved. Baselines must be separately reviewed for this visible change, not silently refreshed. Sampled final phone interrupted-session capture from #40: recoverable error with explicit sign-out action and inspectable-development disclosure, supporting only scoped visual review. Agent healthy, no duplicate intervention. Carry latest checkpoint in related committed/pushed logs; current-head/full-visual/hosted gates remain, no merge.
+
+Capture clarification: the sampled interrupted-session screen shows Confirm with Google and retry guidance; no inspectable-development disclosure is visible in that particular frame. The preceding wording overstated that sampled evidence.

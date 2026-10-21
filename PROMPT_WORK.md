@@ -160,5 +160,10 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | P
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Migrate invitation admission and returning-identity recovery with independent player viewpoints and denied or missing campaign remedies.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive passing pinned Linux identity-validation narratives and preserve exact preview, current-head and independent-review limits.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified Linux validation narratives and the latest supervisory checkpoint into invitation recovery.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Migrate host pause and resume recovery with acknowledged outcomes, independent admission views and real modal keyboard traversal.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote separately inspected Linux invitation candidates and retain generation, exact comparison and independent visual gates.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry reviewed Linux invitation candidates and supervisory records into the maintenance keyboard-recovery slice.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive eight verified Linux invitation narratives and carry the 11:58 supervisory checkpoint.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified Linux invitation evidence into the maintenance recovery dependency.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote independently generated and reviewed Linux maintenance candidates for strict comparison.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive verified Linux maintenance narratives after all 40 strict comparison stories pass.

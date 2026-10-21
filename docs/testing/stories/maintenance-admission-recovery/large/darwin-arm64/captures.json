@@ -1,0 +1,67 @@
+[
+  {
+    "image": "002-open-roster-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/002-open-roster-1-maintenance-host.png",
+    "actualSha256": "534c5909ac1eef62020d13cf2299966cb84bbf0b17f4c021d10149f24dae5fad"
+  },
+  {
+    "image": "002-open-roster-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/002-open-roster-2-waiting-envoy.png",
+    "actualSha256": "01a2ce433efa91f05a977b912193c93b067525b5ef7b65d8e50430b533c83d1b"
+  },
+  {
+    "image": "003-keyboard-controls-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/003-keyboard-controls-1-maintenance-host.png",
+    "actualSha256": "825fe65117888564b47289be968613d10c1750a0bb5c8aa39bc646a6fb1e20dd"
+  },
+  {
+    "image": "004-pause-admission-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/004-pause-admission-1-maintenance-host.png",
+    "actualSha256": "ef6a0e4fd37083f22fca6a1d24677d6d6886d252d0326547532dc87806fd260e"
+  },
+  {
+    "image": "004-pause-admission-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/004-pause-admission-2-waiting-envoy.png",
+    "actualSha256": "eb3560409c70e097a4a80866deb999478917adba9d3d01dcf1e47b9fe45d9354"
+  },
+  {
+    "image": "005-recover-pause-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/005-recover-pause-1-maintenance-host.png",
+    "actualSha256": "dc11c2bdc3fe376e9baf74aca2211a8e52a8805c402072ad2a437d0e136ebcce"
+  },
+  {
+    "image": "005-recover-pause-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/005-recover-pause-2-waiting-envoy.png",
+    "actualSha256": "eb3560409c70e097a4a80866deb999478917adba9d3d01dcf1e47b9fe45d9354"
+  },
+  {
+    "image": "006-reopen-controls-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/006-reopen-controls-1-maintenance-host.png",
+    "actualSha256": "d2a8ac6900fe7f8252cfd444f3d420d1a01220f96566901c09f2705fefea2050"
+  },
+  {
+    "image": "007-resume-admission-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/007-resume-admission-1-maintenance-host.png",
+    "actualSha256": "c7264ed2c6aa65589de86514868aa3a18dad41a276053d28aad3e3931d577732"
+  },
+  {
+    "image": "007-resume-admission-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/007-resume-admission-2-waiting-envoy.png",
+    "actualSha256": "01a2ce433efa91f05a977b912193c93b067525b5ef7b65d8e50430b533c83d1b"
+  },
+  {
+    "image": "008-return-focus-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/008-return-focus-1-maintenance-host.png",
+    "actualSha256": "ffd36ebbd6ce708d8d5a8ff054e0307eb1cdd50921c5e5169033114057ae9d29"
+  },
+  {
+    "image": "009-admit-waiting-envoy-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+    "actualSha256": "29c0ee7e633339c06be794aed70ee6cd50adeb6cd767b2c054b78b320f9c2dd4"
+  },
+  {
+    "image": "009-admit-waiting-envoy-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/large/darwin-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+    "actualSha256": "3a80bb0cecd6083e97c2e6dbe553f718627dd2b8a272269f7e8b2cf3da08d598"
+  }
+]
