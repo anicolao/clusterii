@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { RecoveredConstruction } from "$lib/construction-feedback";
   import type { RecoveredTrade } from "$lib/credit-offers";
   import { tick, onDestroy, untrack } from "svelte";
   import type { Technology } from "@shared/production";
@@ -69,6 +70,7 @@
     conversationReceipt = null,
     recoveredConversation = null,
     recoveredTrade = null,
+    recoveredConstruction = null,
     accountId,
     onbuild,
     oncancel,
@@ -111,6 +113,7 @@
       body: string;
     } | null;
     recoveredTrade?: RecoveredTrade | null;
+    recoveredConstruction?: RecoveredConstruction | null;
     accountId?: string;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
@@ -137,6 +140,30 @@
     routeDrafts = $state<Record<string, string[]>>({});
   let observation = $state(false);
   let construction = $state(false);
+  let constructionChoice = $state<Development>("market");
+  let resumedConstruction = "";
+  $effect(() => {
+    const recovered = recoveredConstruction;
+    if (
+      !recovered ||
+      recovered.gameId !== view.id ||
+      resumedConstruction === recovered.id
+    )
+      return;
+    const action = recovered.action;
+    const order =
+      action.kind === "construction.cancel"
+        ? view.construction?.orders.find((o) => o.id === action.orderId)
+        : null;
+    const starId =
+      action.kind === "construction.build" ? action.starId : order?.starId;
+    if (!starId || !view.stars.some((s) => s.id === starId)) return;
+    resumedConstruction = recovered.id;
+    selected = starId;
+    constructionChoice =
+      action.kind === "construction.build" ? action.type : order!.type;
+    void openPanel("construction");
+  });
   let economy = $state(false);
   let exchanging = $state(false),
     tradeSelection = $state("");
@@ -1194,6 +1221,7 @@
       onkeydown={panelKeys}
     >
       <SystemConstruction
+        bind:chosen={constructionChoice}
         {view}
         starId={star.id}
         onbuild={(type) => onbuild?.(star.id, type)}
@@ -1203,7 +1231,7 @@
         {busy}
         {pending}
         message={commandKind.startsWith("construction.") ? message : ""}
-        {error}
+        error={commandKind.startsWith("construction.") ? error : ""}
       />
     </div>{/if}
   {#if economy}<div

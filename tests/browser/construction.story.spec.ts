@@ -354,9 +354,12 @@ for (const interrupted of [false, true])
             await owner.reload();
           },
           acknowledgement: {
-            spec: "The construction panel returns with the pending commitment disabled.",
+            spec: "The construction panel returns with the original training camp selected and pending commitment disabled.",
             check: async () => {
               await expect(panel(owner)).toBeVisible();
+              await expect(
+                panel(owner).getByRole("radio", { name: /Training camp/ }),
+              ).toBeChecked();
               await expect(
                 button(owner, "Awaiting acknowledgement…"),
               ).toBeDisabled();
@@ -428,6 +431,17 @@ for (const interrupted of [false, true])
               });
               expect(wallets(s)).toEqual([131000, 200000, 200000, 200000]);
               expect(s.systems).toEqual(initial.systems);
+              const original = writes[0];
+              const commandId = original.p.split("/").at(-1)!;
+              expect(s.construction!.orders[0].id).toBe(commandId);
+              const receipt = await db
+                .doc(`campaignReceipts/${uid}/results/${commandId}`)
+                .get();
+              expect(receipt.get("status")).toBe("accepted");
+              for (const write of writes) {
+                expect(write.p).toBe(original.p);
+                expect(write.d).toEqual(original.d);
+              }
             },
           },
         ],
@@ -503,6 +517,7 @@ for (const interrupted of [false, true])
             await expect(panel(owner)).toContainText(
               "Training camp · completed",
             );
+            await expect(commitment(owner)).not.toContainText("queue advances");
             await expect(
               panel(owner).getByRole("radio", { name: /Training camp/ }),
             ).toHaveAccessibleName(/2 completed · 0 queued/);
@@ -648,6 +663,7 @@ for (const interrupted of [false, true])
               `Base · cancelled · ${baseOrder.paidMilli / 1000} credits returned`,
             );
             await expect(panel(owner)).toContainText("No construction queued.");
+            await expect(commitment(owner)).not.toContainText("refund settles");
           },
         },
         verifications: [
