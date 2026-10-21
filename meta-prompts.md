@@ -1202,3 +1202,10 @@ Reviewer continuation 2026-10-21 19:08 Toronto: pane idle since19:00 after succe
 #56 9021d7d construction stories is open correctly on #55 and attached. Agent healthy running ordinary/interrupted generation and inspecting construction recovery routing. Independently reviewed initial privacy-check repair: absent pre-build construction collections treated as empty while outsider ledger/identifier/paid-value absence assertions retained. No final candidate or acceptance claim yet.
 
 Current successors remain queued; no newly completed actionable CI failure. Avoid duplicate handoff during active recovery diagnosis. Carry checkpoint into committed/pushed logs; raster, current-head previews and full visual acceptance remain open. No merge or release completion.
+
+
+## Reviewer progress — 2026-10-21 19:28 Toronto
+
+#56 1b130f3 now includes an actual recovery fix: interrupted saved construction reopens its recorded system/development; matching authoritative ledger outcomes replace stale scheduled feedback. Independently reviewed dd89626 production diff: campaign/revision guards, matching order identity, late-ledger uncertainty copy and construction-scoped errors; no gameplay rule changes. Pending-button lettering wraps on narrow panels. Agent healthy reviewing fresh candidates; final exact comparisons and independent visual review still pending.
+
+No new completed CI failure; successors remain queued. Avoid interruption or duplicate handoff during active verification. Carry checkpoint into committed/pushed logs. Raster/current-head previews/full acceptance remain open; no merge or release completion.
