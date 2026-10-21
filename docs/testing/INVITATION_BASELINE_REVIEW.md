@@ -1,0 +1,11 @@
+# Invitation baseline review
+
+Implementer candidate review, 2026-10-21. First-time admission passes four local journeys in 36.8 seconds; returning/missing/denied recovery passes four in 44.4 seconds. Two ordered contact sheets cover 72 captures across phone, desktop, large and short, including independent host roster views. The full-size phone Pelagic selection was inspected: faction artwork and selected radio are clear, briefing remains in its bounded reading area, and Claim your seat stays in the fixed rail.
+
+First-time identity save resumes the exact invited campaign. The host observes the accepted second seat. Returning authentication opens the actual galaxy directly; missing and denied links show distinct remedies, and recovery preserves the saved identity. The scenarios use real authentication, encrypted commands, membership projections and persistence. Starting accounts/campaigns are prepared through ordinary UI, with explicit test-only fixed catalogue and development-claim controls; no active tick or hosted scheduler is simulated.
+
+These are existing production compositions. The large faction/directory surfaces retain their relatively compact content within the 4K viewport; full independent composition review, including that scale, remains open. Generation is not exact comparison or visual acceptance. Stable reduced-motion captures do not establish normal-motion parity or native software-keyboard behavior. Public gameplay/rule approval and hosted Google acceptance remain separate gates.
+
+The first admission attempt exposed inactive closed-disclosure controls in the geometry helper. Native visibility and painted-region overlap corrections, with failing-before/passing-after tool regressions and unchanged history exact images, are carried from #35. The admission rerun passes all four sizes without bypassing roster geometry. Original failure details remain in `/tmp/cluster-invitation-generation.log`.
+
+Exact local comparison passes all eight invitation journeys/72 captures in 1.3 minutes (`/tmp/cluster-invitation-verification.log`). Generated passing narratives are archived; the procedural predecessor is removed only after preserving its identity revision and denied/missing recovery assertions. Linux comparison and independent full review remain open.
