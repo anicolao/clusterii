@@ -1110,3 +1110,12 @@ Reviewer continuation 2026-10-21 17:08 Toronto: pane idle after #52; continue au
 Agent healthy implementing live selected-history consent; generation running with actual campaign functions. Pending source independently inspected: separate creator/recipient/outsider contexts, ordinary authenticated commands, explicit emulator scheduler harness, canonical and authorized member-view reads for privacy assertions. Existing negotiation coverage remains unchanged. No duplicate handoff while active.
 
 Independently viewed #52 phone reduced-motion accepted-history capture: selected note, author/sharing provenance, composer and acceptance footer are readable and contained. This is a single captured component state, not full visual/motion/live-service approval. #46 current application checks now green alongside story checks; #47 application green, story still running. No newly actionable failure; #42/#45 raster and current-head preview gates remain open. Carry checkpoint into related committed/pushed logs under the standing handoff. No merge or full-release completion.
+
+
+## Reviewer progress — 2026-10-21 17:28 Toronto
+
+Agent healthy at e4b66cc, live consent candidates four journeys60 captures reviewed locally, exact comparison running; no production changes or legacy assertion removal. Independently viewed phone accepted-recipient capture: full selected note, author/provenance, bounded reading and acceptance/footer controls fit. This sample is not full visual approval. Newly completed #47 verification fails solely missing four Linux gallery baselines; generation succeeded. Queue actionable review without interrupting current work. Raster diagnostics and #52 publication remain queued.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 17:28 Toronto: #47 current story verification completed with four missing Linux identity-component-gallery baseline failures, not pixel mismatches; generation succeeded. Log retained /tmp/cluster47-1728-review-failure.log. After current consent verification, review the separately generated Linux candidates and provenance, promote only approved new gallery images, then propagate through successors and verify strictly. Do not regenerate inherited baselines or weaken exact comparison. Carry latest meta checkpoints and attributed logs in committed/pushed changes; no merge.
