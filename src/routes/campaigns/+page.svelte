@@ -3,6 +3,14 @@
     fleetSettlementFeedback,
     type AcceptedFleetCommand,
   } from "$lib/fleet-feedback";
+  import {
+    claimOrder,
+    clearOrder,
+    RecoveryStorageError,
+    RecoveryConflict,
+    RecoveryValidation,
+    discardInvalidOrder,
+  } from "$lib/recovery-store";
   import { ReceiptMismatch } from "@shared/command-receipt";
   import {
     campaignFeedback,
@@ -24,6 +32,7 @@
   import { rules, type FactionId } from "@shared/rules";
   import type { PendingCampaign } from "$lib/campaign-session";
   import ActionButton from "$lib/components/ActionButton.svelte";
+  import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
   import Feedback from "$lib/components/Feedback.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
@@ -65,6 +74,12 @@
   let commandFleetId = $state("");
   let commandRoomId = $state("");
   let conversationBody = "";
+  let recoveredConversation = $state<{
+    id: string;
+    gameId: string;
+    roomId: string;
+    body: string;
+  } | null>(null);
   let conversationReceipt = $state<{
     id: string;
     gameId: string;
@@ -73,6 +88,9 @@
     status: string;
     body: string;
   } | null>(null);
+  let recoveryProblem = $state<{ fingerprint: string; reason: string } | null>(
+    null,
+  );
   let error = $state("");
   let remedy = $state<"network" | "validation" | "conflict" | null>(null);
   let title = $state<HTMLHeadingElement>();
@@ -105,6 +123,24 @@
     }
   });
   function failed(failure?: unknown) {
+    if (failure instanceof RecoveryValidation) {
+      recoveryProblem = {
+        fingerprint: failure.fingerprint,
+        reason: failure.message,
+      };
+      busy = false;
+      return;
+    }
+    if (
+      failure instanceof RecoveryStorageError ||
+      failure instanceof RecoveryConflict
+    ) {
+      busy = false;
+      message = "";
+      error = failure.message;
+      remedy = "network";
+      return;
+    }
     if (failure instanceof ReceiptMismatch) {
       stopReceipt();
       clearTimeout(timer);
@@ -210,10 +246,40 @@
       stopDirectory = service.observeDirectory((next) => {
         if (session === generation) games = next;
       }, failed);
-      if (selected) await select(selected);
+      if (!pending) {
+        const restored = await service.recoverOrder(account);
+        if (session !== generation) return;
+        recoveryProblem = null;
+        if (restored) {
+          pending = restored.command;
+          commandKind = pending.kind;
+          commandFleetId =
+            "fleetId" in restored.action ? restored.action.fleetId : "";
+          commandRoomId =
+            "roomId" in restored.action ? restored.action.roomId : "";
+          conversationBody =
+            restored.action.kind === "conversation.send"
+              ? restored.action.body
+              : restored.action.kind === "conversation.create"
+                ? restored.action.title
+                : "";
+          recoveredConversation = pending.kind.startsWith("conversation.")
+            ? {
+                id: pending.id,
+                gameId: pending.gameId,
+                roomId: commandRoomId,
+                body: conversationBody,
+              }
+            : null;
+          selected = pending.gameId;
+          message = "Recovering your saved order and its acknowledgement…";
+        }
+      }
+      if (selected && pending?.kind !== "campaign.create")
+        await select(selected);
       if (pending) dispatch();
-    } catch {
-      if (session === generation) failed();
+    } catch (failure) {
+      if (session === generation) failed(failure);
     }
   }
   onMount(() => {
@@ -239,6 +305,8 @@
           acceptedFleetCommand = null;
           commandKind = "";
           conversationReceipt = null;
+          recoveredConversation = null;
+          recoveryProblem = null;
           commandRoomId = "";
           conversationBody = "";
           busy = false;
@@ -267,6 +335,8 @@
     if (!pending || !account) return;
     const command = pending;
     const session = generation;
+    const uid = account;
+    let settling = false;
     busy = true;
     error = "";
     remedy = null;
@@ -276,7 +346,31 @@
     stopReceipt = service.sendCampaign(
       account,
       command,
-      (receipt) => {
+      async (receipt) => {
+        if (session !== generation || settling) return;
+        settling = true;
+        message = "Order acknowledged. Saving recovery state…";
+        try {
+          if (
+            receipt.status === "accepted" &&
+            (command.kind === "conversation.send" ||
+              command.kind === "conversation.create")
+          ) {
+            const { clearAcceptedDraft } =
+              await import("$lib/conversation-drafts");
+            await clearAcceptedDraft(
+              uid,
+              command.gameId,
+              command.kind === "conversation.create" ? "$new" : commandRoomId,
+              conversationBody,
+            );
+          }
+          await clearOrder(uid, command.id);
+        } catch (failure) {
+          settling = false;
+          if (session === generation) failed(failure);
+          return;
+        }
         if (session !== generation) return;
         stopReceipt();
         clearTimeout(timer);
@@ -346,7 +440,12 @@
     commandKind = action.kind;
     commandFleetId = "fleetId" in action ? action.fleetId : "";
     commandRoomId = "roomId" in action ? action.roomId : "";
-    conversationBody = action.kind === "conversation.send" ? action.body : "";
+    conversationBody =
+      action.kind === "conversation.send"
+        ? action.body
+        : action.kind === "conversation.create"
+          ? action.title
+          : "";
     conversationReceipt = null;
     message = "";
     busy = true;
@@ -366,11 +465,30 @@
           ? 1
           : (game?.encryptionEpoch ?? view?.encryptionEpoch ?? 1),
       );
+      if (session !== generation || !account) return;
+      await claimOrder(account, command);
       if (session !== generation) return;
       pending = command;
       dispatch();
-    } catch {
-      if (session === generation) failed();
+    } catch (failure) {
+      if (session === generation) failed(failure);
+    }
+  }
+  async function forgetRecovery() {
+    if (!account || !recoveryProblem) return;
+    const session = generation;
+    try {
+      await discardInvalidOrder(account, recoveryProblem.fingerprint);
+      if (session !== generation) return;
+      recoveryProblem = null;
+      pending = null;
+      await recover();
+    } catch (failure) {
+      if (session === generation && recoveryProblem)
+        recoveryProblem = {
+          ...recoveryProblem,
+          reason: (failure as Error).message,
+        };
     }
   }
   async function back() {
@@ -399,12 +517,18 @@
 
 <svelte:head><title>Campaigns — Cluster</title></svelte:head>
 <main class="campaign-shell" class:commanding={!!view}>
-  {#if view}<Galaxy
+  {#if recoveryProblem}<RecoveryRecord
+      reason={recoveryProblem.reason}
+      onretry={recover}
+      onforget={forgetRecovery}
+    />{:else if view}<Galaxy
       {view}
       {commandKind}
       {commandFleetId}
       {commandRoomId}
       {conversationReceipt}
+      {recoveredConversation}
+      accountId={account ?? undefined}
       onconversation={(action) => send(view!.id, action)}
       loadHistory={(cursor) =>
         service.campaignHistory(view!.id, account!, cursor)}

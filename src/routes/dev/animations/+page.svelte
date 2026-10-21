@@ -1,4 +1,6 @@
 <script lang="ts">
+  import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
+  import { RecoveryValidation } from "$lib/recovery-store";
   import { onMount } from "svelte";
   import { base } from "$app/paths";
   import Feedback from "$lib/components/Feedback.svelte";
@@ -20,6 +22,7 @@
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import {
     conversationFrame,
+    draftRecoveryFrame,
     arrivalFrame,
     contactsFrame,
     travelFrame,
@@ -134,7 +137,29 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "conversations"}<div
+        {#if selected === "invalid-recovery"}{#key frame.at}<RecoveryRecord
+              reason={new RecoveryValidation("").message}
+              confirming={time >= 1200}
+              onretry={() => {
+                time = 0;
+              }}
+              onforget={() => {}}
+            />{/key}{:else if selected === "draft-recovery"}<div
+            style="height:min(900px,90svh);min-height:550px"
+          >
+            {#key frame.at}<Conversations
+                {...draftRecoveryFrame(time)}
+                inspect={{ time: time - frame.at, reduced }}
+                oncommand={() => {}}
+                onearlier={() => {}}
+                onlatest={() => {}}
+                onretryHistory={() => {}}
+                onclose={() => {}}
+                onretryDraft={() => (time = 1200)}
+                onuseSavedDraft={() => (time = 4800)}
+                onreplaceDraft={() => (time = 3200)}
+              />{/key}
+          </div>{:else if selected === "conversations"}<div
             style="height:min(900px,90svh);min-height:550px"
           >
             {#key frame.at}<Conversations

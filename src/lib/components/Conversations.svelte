@@ -21,6 +21,14 @@
     historyError = "",
     earlier = false,
     newer = false,
+    draftReady = true,
+    draftSaving = false,
+    draftError = "",
+    draftConflict = false,
+    draftSaved = false,
+    onretryDraft,
+    onuseSavedDraft,
+    onreplaceDraft,
     inspect,
     oncommand,
     onearlier,
@@ -42,6 +50,14 @@
     historyError?: string;
     earlier?: boolean;
     newer?: boolean;
+    draftReady?: boolean;
+    draftSaving?: boolean;
+    draftError?: string;
+    draftConflict?: boolean;
+    draftSaved?: boolean;
+    onretryDraft?: () => void;
+    onuseSavedDraft?: () => void;
+    onreplaceDraft?: () => void;
     inspect?: MotionInspection;
     oncommand: (action: ConversationAction) => void;
     onearlier: () => Promise<void> | void;
@@ -209,7 +225,7 @@
           >Conversation title<input
             maxlength="120"
             bind:value={title}
-            disabled={disabled || !view.conversationsEnabled}
+            disabled={disabled || !view.conversationsEnabled || !draftReady}
           /></label
         >
         <p>
@@ -419,12 +435,35 @@
       {/if}
     </div>
     <footer>
+      {#if onretryDraft && (!selected || room?.member)}
+        <div class="draft-recovery" aria-label="Draft recovery">
+          {#if draftError}<p role="alert">{draftError}</p>
+            {#if draftConflict}<ActionButton
+                class="secondary"
+                onclick={onuseSavedDraft}>Use saved draft</ActionButton
+              ><ActionButton class="secondary" onclick={onreplaceDraft}
+                >Replace saved draft with my text</ActionButton
+              >
+            {:else}<ActionButton class="secondary" onclick={onretryDraft}
+                >Retry draft storage</ActionButton
+              >{/if}
+          {:else}<p role="status" aria-label="Browser draft status">
+              {!draftReady
+                ? "Recovering this browser’s draft…"
+                : draftSaving
+                  ? "Saving draft on this browser…"
+                  : draftSaved
+                    ? "Draft saved on this browser."
+                    : ""}
+            </p>{/if}
+        </div>
+      {/if}
       {#if room?.member && !participants && !room.closed}<label
           >Message<textarea
             rows="2"
             value={body}
             maxlength="4000"
-            {disabled}
+            disabled={disabled || !draftReady}
             oninput={(event) =>
               (drafts = { ...drafts, [selected]: event.currentTarget.value })}
           ></textarea></label
@@ -437,20 +476,29 @@
             reading?.scrollTo(0, reading.scrollHeight);
           }}>New messages</ActionButton
         >{/if}
-      <Feedback {message} {error} {inspect} />{#if view.pausedAt != null}<p>
+      <div role="group" aria-label="Conversation acknowledgement">
+        <Feedback {message} {error} {inspect} />
+      </div>
+      {#if view.pausedAt != null}<p>
           Campaign maintenance is paused. Your draft is preserved.
         </p>{/if}
       <div class="commitment">
         <ActionButton class="secondary" onclick={onclose}
           >Back to galaxy</ActionButton
-        >{#if pending && error && onretry}<ActionButton
+        >{#if error && onretry}<ActionButton
             class="primary"
             disabled={busy}
-            onclick={onretry}>Retry same command</ActionButton
+            onclick={onretry}
+            >{pending
+              ? "Retry same command"
+              : "Recover pending order"}</ActionButton
           >{:else if !selected}<ActionButton
             class="primary"
             disabled={disabled ||
               !view.conversationsEnabled ||
+              !draftReady ||
+              draftSaving ||
+              !!draftError ||
               !title.trim() ||
               [...title.trim()].length > 60}
             onclick={() =>
@@ -470,7 +518,11 @@
             >Accept invitation</ActionButton
           >{:else if room?.member && !participants && !room.closed}<ActionButton
             class="primary"
-            disabled={disabled || !validBody}
+            disabled={disabled ||
+              !validBody ||
+              !draftReady ||
+              draftSaving ||
+              !!draftError}
             onclick={() =>
               oncommand({
                 kind: "conversation.send",

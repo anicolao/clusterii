@@ -14,6 +14,7 @@ import {
 import { getIdTokenResult } from "firebase/auth";
 import { collection, doc, onSnapshot } from "firebase/firestore";
 import { httpsCallable } from "firebase/functions";
+import { RecoveryValidation } from "./recovery-store";
 import { auth, firestore, functions, loadKey, submitCommand } from "./session";
 export interface CampaignReceipt {
   gameId: string;
@@ -73,6 +74,42 @@ export async function encryptionAvailable() {
   )();
   return result.data.realAvailable;
 }
+export async function commandKey(mode: Mode) {
+  return mode === "real"
+    ? (
+        await httpsCallable<undefined, { kek: string }>(
+          functions,
+          "campaignCommandKey",
+        )()
+      ).data.kek
+    : await loadKey();
+}
+export async function recoverOrder(uid: string) {
+  const { readOrder } = await import("./recovery-store");
+  const stored = await readOrder(uid);
+  if (!stored) return null;
+  if (auth.currentUser?.uid !== uid)
+    throw new Error("Account changed while recovering the order.");
+  const fingerprint = JSON.stringify(stored);
+  if (!stored.envelope || !["mock", "real"].includes(stored.envelope.mode))
+    throw new RecoveryValidation(fingerprint);
+  const mode = stored.envelope.mode;
+  const key = await commandKey(mode);
+  let action: CampaignAction;
+  try {
+    action = await provider(mode).open<CampaignAction>(
+      stored.envelope,
+      key,
+      context(stored.gameId, 0, `command:${stored.id}`, stored.envelope.epoch),
+    );
+    if (action.kind !== stored.kind) throw new Error("Mismatched command kind");
+  } catch {
+    throw new RecoveryValidation(fingerprint);
+  }
+  if (auth.currentUser?.uid !== uid)
+    throw new Error("Account changed while recovering the order.");
+  return { command: { ...stored, dispatched: false }, action };
+}
 export async function prepareCampaign(
   gameId: string,
   action: CampaignAction,
@@ -80,15 +117,7 @@ export async function prepareCampaign(
   epoch = 1,
 ): Promise<PendingCampaign> {
   const id = crypto.randomUUID();
-  const kek =
-    mode === "real"
-      ? (
-          await httpsCallable<undefined, { kek: string }>(
-            functions,
-            "campaignCommandKey",
-          )()
-        ).data.kek
-      : await loadKey();
+  const kek = await commandKey(mode);
   return {
     id,
     gameId,

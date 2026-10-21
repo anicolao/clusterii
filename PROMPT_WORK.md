@@ -118,3 +118,5 @@ Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | P
 Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | Carry the gallery measurement correction into the private-conversation successor before completing its evidence.
 
 Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | Continue Prompt 37 private conversations with explicit invitations, recipient-scoped messages and acknowledged history recovery.
+
+Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | Continue Prompt 37 with account-scoped encrypted command and conversation-draft recovery across reloads.
