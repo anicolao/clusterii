@@ -1023,3 +1023,12 @@ Agent actively investigates identity layout and tests separate campaign contact-
 Independently confirmed contact-readiness exact log4 passed3.3min; review records all200 images unchanged. #43 d3e34c4 carries the specific authorized-contact acknowledgement and #44–46 propagate it; replacement CI running. #42 short identity raster mismatch remains explicitly unresolved: local DOM lifecycle probes did not reproduce it, so no cause or acceptance inferred.
 
 Agent healthy on identity-gallery stories. Independently reviewed pending shared component fixes: PortraitPicker four-column layout follows <=400px container width rather than page viewport, and CampaignResearch disclosure receives44px target plus visible keyboard focus. Gallery review documents separately found spacing/containment defects and preserved failures; identity paragraph and its existing baselines remain unchanged. Candidate generation/independent full visual/exact checks remain open. No duplicate prompt. Carry checkpoint into related committed/pushed logs with reviewer attribution; remaining implementation, Linux and full visual/motion/hosted gates stay open. No merge.
+
+
+## Reviewer progress — 2026-10-21 15:38 Toronto
+
+#47 2a4b53d identity-gallery is open correctly stacked on #46 and attached. Review records16 exact local journeys1.6min,84 new captures and unchanged feedback/identity comparisons. Agent healthy beginning lifecycle lab stories; independent full visual/Linux gates open. #42 ordinary application now green, inherited identity raster failure still blocks story acceptance; no false closure.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed expected d3e34c4 versus hosted4cfaebf; #46 publish39660570655 failed revision fetch with ECONNRESET. Logs retained /tmp/cluster43-publish-latest-review.log and /tmp/cluster46-publish-latest-review.log. Coordinate retries after shared publication queue clears and retain exact-head checks; do not describe current previews as verified until those checks pass. Log reviewer attribution/continuation and carry latest checkpoint. No merge.

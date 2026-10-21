@@ -224,3 +224,12 @@ The production identity/navigation gallery now has a separately scoped component
 - desktop: [Identity and navigation gallery](stories/identity-component-gallery/desktop/darwin-arm64/README.md).
 - large: [Identity and navigation gallery](stories/identity-component-gallery/large/darwin-arm64/README.md).
 - short: [Identity and navigation gallery](stories/identity-component-gallery/short/darwin-arm64/README.md).
+
+## Lifecycle lab narratives
+
+Eight local exact component stories/64 captures inspect scheduled/delayed/begun status and pending/ended/reset session presentation. Ended feedback has an explicit50ms standard/180ms reduced-motion inspection and a settled180ms view. These fixtures do not certify scheduler delivery or account revocation. Remaining research/history/production/sharing and gameplay lab checks retain their procedural predecessor. Linux/current-head and independent gates remain open.
+
+- phone: [Scheduled start](stories/scheduled-start-lab/phone/darwin-arm64/README.md), [Session ending](stories/session-ending-lab/phone/darwin-arm64/README.md).
+- desktop: [Scheduled start](stories/scheduled-start-lab/desktop/darwin-arm64/README.md), [Session ending](stories/session-ending-lab/desktop/darwin-arm64/README.md).
+- large: [Scheduled start](stories/scheduled-start-lab/large/darwin-arm64/README.md), [Session ending](stories/session-ending-lab/large/darwin-arm64/README.md).
+- short: [Scheduled start](stories/scheduled-start-lab/short/darwin-arm64/README.md), [Session ending](stories/session-ending-lab/short/darwin-arm64/README.md).
