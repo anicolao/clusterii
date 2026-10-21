@@ -13,3 +13,5 @@ Policy checks reject new or changed procedural specs, direct capture bypasses, f
 Validation: 91 unit tests/1,536 assertions, five isolated browser-tool tests/nine assertions, three policy tests and the 12-test prompt-hook suite pass. Final type checks and lint pass; the isolated helper suite also passes after final type refinements. [Baseline review and retained failures](../testing/BASELINE_REVIEW.md) distinguish inspected candidates from verification. Linux exact comparison, current-head CI, independent visual acceptance, remaining story migration and hosted OAuth/Scheduler remain gates. No rules or release approval is implied.
 
 Exact local verification passed all eight journeys/44 captures in 35.6 seconds; generated narratives and capture hashes are archived in `docs/testing/stories/`. The UI is unchanged. Linux candidates and comparisons remain pending.
+
+The first Linux workflow stopped before tests because the pinned Playwright image lacks `unzip`, which Bun setup requires. The workflow now installs that archive utility explicitly; no browser or font package is changed. Baseline generation and exact verification remain pending.
