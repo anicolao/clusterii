@@ -574,6 +574,139 @@ for (const mode of ["mock", "real"] as const)
       await expect(
         guest.getByText("Message sent.", { exact: true }),
       ).not.toBeVisible();
+      // Creator explicitly shares one earlier message, never the surrounding archive.
+      const newcomer = pages[2];
+      await expect(panel(newcomer)).toBeVisible();
+      await own
+        .getByRole("button", { name: "Participants", exact: true })
+        .click();
+      await own
+        .getByRole("combobox", { name: "Commander", exact: true })
+        .selectOption({ label: "Fleet envoy 3" });
+      await own
+        .getByRole("radio", {
+          name: "Selected earlier messages and future messages",
+        })
+        .check();
+      await expect(
+        own.getByRole("group", { name: "Conversation acknowledgement" }),
+      ).not.toContainText("Message sent.");
+      const chosen = own
+        .locator("label.history-choice")
+        .filter({ hasText: "Welcome back. This is a new message." });
+      await chosen.getByRole("checkbox").check();
+      for (const [name, width, height] of [
+        ["phone", 390, 844],
+        ["desktop", 1440, 1000],
+        ["short", 1280, 600],
+        ["large", 3840, 2160],
+      ] as const) {
+        await owner.setViewportSize({ width, height });
+        const commit = own.getByRole("button", {
+          name: /Invite Fleet envoy 3/,
+        });
+        const box = await commit.boundingBox();
+        expect(box).not.toBeNull();
+        expect(box!.y).toBeGreaterThanOrEqual(0);
+        expect(box!.y + box!.height).toBeLessThanOrEqual(height);
+        expect(
+          await owner.evaluate(
+            () => document.documentElement.scrollHeight <= innerHeight + 1,
+          ),
+        ).toBe(true);
+        const details = own.getByRole("region", {
+          name: "Conversation details",
+          exact: true,
+        });
+        expect(
+          await details.evaluate(
+            (el) =>
+              el.clientHeight > 0 &&
+              el.getBoundingClientRect().bottom <= innerHeight,
+          ),
+        ).toBe(true);
+        await geometry(owner, own);
+        await owner.screenshot({
+          path: `test-results/conversation-sharing-${name}.png`,
+        });
+      }
+      await own.getByRole("button", { name: /Invite Fleet envoy 3/ }).click();
+      await panel(newcomer)
+        .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
+        .click();
+      await expect(panel(newcomer)).toContainText(
+        "You will receive 1 selected earlier message",
+      );
+      await expect(panel(newcomer)).not.toContainText(
+        "Welcome back. This is a new message.",
+      );
+      await newcomer.setViewportSize({ width: 390, height: 844 });
+      await newcomer.screenshot({
+        path: "test-results/conversation-sharing-invitation-phone.png",
+      });
+      await panel(newcomer)
+        .getByRole("button", { name: "Accept invitation", exact: true })
+        .click();
+      await expect(
+        panel(newcomer).getByRole("list", { name: "Authorized messages" }),
+      ).toContainText("Welcome back. This is a new message.");
+      await expect(panel(newcomer)).not.toContainText(
+        "Private during absence.",
+      );
+      await expect(panel(newcomer)).not.toContainText(
+        "Private note before inviting anyone.",
+      );
+      await newcomer.reload();
+      await open(newcomer);
+      await panel(newcomer)
+        .getByRole("button", { name: "Conversations", exact: true })
+        .click();
+      await panel(newcomer)
+        .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
+        .click();
+      await expect(
+        panel(newcomer).getByRole("list", { name: "Authorized messages" }),
+      ).toContainText("Welcome back. This is a new message.");
+      await newcomer.screenshot({
+        path: "test-results/conversation-sharing-accepted-phone.png",
+      });
+      await own
+        .getByRole("button", { name: "Remove Fleet envoy 3", exact: true })
+        .click();
+      await own
+        .getByRole("button", { name: "Confirm remove", exact: true })
+        .click();
+      await expect(panel(newcomer)).toContainText(
+        "access to this conversation has ended",
+      );
+      await newcomer.keyboard.press("Escape");
+      await newcomer
+        .getByRole("button", { name: "History", exact: true })
+        .click();
+      const retainedHistory = newcomer.getByRole("region", {
+        name: "Campaign history",
+        exact: true,
+      });
+      const grantedRecord = retainedHistory
+        .locator("details")
+        .filter({ hasText: "Welcome back. This is a new message." });
+      await expect(grantedRecord).not.toHaveCount(0);
+      for (const record of await grantedRecord.all())
+        await record.locator("summary").click();
+      await expect(
+        retainedHistory
+          .locator("article:visible")
+          .filter({ hasText: "Welcome back. This is a new message." }),
+      ).not.toHaveCount(0);
+      await newcomer.screenshot({
+        path: "test-results/conversation-sharing-retained-phone.png",
+      });
+      await expect(retainedHistory).not.toContainText(
+        "Private during absence.",
+      );
+      await expect(retainedHistory).not.toContainText(
+        "Private note before inviting anyone.",
+      );
       const broken = await contexts[1].newPage();
       let blockedWrites = 0;
       await broken.routeWebSocket(/127\.0\.0\.1:19000/, (ws) => {

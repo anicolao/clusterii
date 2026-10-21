@@ -287,10 +287,12 @@
       const retained = new Map<string, MessageRecord>();
       for (const record of [...receivedConversationViews, current])
         for (const room of record.conversations ?? [])
-          if (room.message)
-            retained.set(room.message.id, {
-              conversations: [{ id: room.id, message: room.message }],
-            });
+          for (const message of [room.message, ...(room.sharedMessages ?? [])])
+            if (message)
+              retained.set(message.id, {
+                revision: record.revision,
+                conversations: [{ id: room.id, message }],
+              });
       receivedConversationViews = [...new Set(retained.values())];
     });
   });
@@ -863,6 +865,7 @@
       onkeydown={panelKeys}
     >
       <Conversations
+        feedbackKind={commandKind}
         {view}
         {messages}
         bind:selected={selectedRoom}

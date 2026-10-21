@@ -61,6 +61,7 @@ export interface Campaign {
   construction?: Construction;
   military?: Military;
   conversationsVersion?: 1;
+  conversationSharingVersion?: 1;
   diplomacy?: Diplomacy;
   travelVersion?: 1;
   fleetContactsVersion?: 1;
@@ -206,6 +207,7 @@ export function createCampaign(
     rulesetVersion: rules.id,
     schemaVersion: 2,
     conversationsVersion: 1,
+    conversationSharingVersion: 1,
     diplomacy: { rooms: {} },
     travelVersion: 1,
     fleetContactsVersion: 1,

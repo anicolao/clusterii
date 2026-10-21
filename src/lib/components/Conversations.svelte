@@ -1,7 +1,10 @@
 <script lang="ts">
   import { tick } from "svelte";
   import type { CampaignView } from "@shared/campaign";
-  import type { ConversationAction } from "@shared/conversations";
+  import {
+    maximumSharedMessages,
+    type ConversationAction,
+  } from "@shared/conversations";
   import type { MessageView } from "$lib/conversation-history";
   import type { MotionInspection } from "$lib/motion";
   import ActionButton from "./ActionButton.svelte";
@@ -16,6 +19,7 @@
     pending = false,
     busy = false,
     message = "",
+    feedbackKind = "",
     error = "",
     loading = false,
     historyError = "",
@@ -45,6 +49,7 @@
     pending?: boolean;
     busy?: boolean;
     message?: string;
+    feedbackKind?: string;
     error?: string;
     loading?: boolean;
     historyError?: string;
@@ -80,6 +85,48 @@
     invitee = $state<number | undefined>(),
     confirmation = $state<"remove" | "leave" | "close" | null>(null),
     removal = $state<number | undefined>();
+  const scopeId = $props.id();
+  let historyScope = $state<"future" | "selected">("future");
+  let selectedMessages = $state<string[]>([]);
+  let lastInvitee: number | undefined;
+  $effect(() => {
+    if (invitee !== lastInvitee) {
+      lastInvitee = invitee;
+      historyScope = "future";
+      selectedMessages = [];
+    }
+  });
+  const chosenMessages = $derived(
+    messages.filter(
+      (message) =>
+        selectedMessages.includes(message.id) && message.sourceRevision,
+    ),
+  );
+  const validInvitee = $derived(
+    invitee !== undefined &&
+      !!view.roster[invitee] &&
+      !room?.members.includes(invitee) &&
+      !room?.invitations.includes(invitee),
+  );
+  function invite() {
+    if (!room || invitee === undefined) return;
+    oncommand({
+      kind: "conversation.invite",
+      expectedRevision: view.revision,
+      roomId: room.id,
+      roomRevision: room.revision,
+      seat: invitee,
+      scope: historyScope,
+      ...(historyScope === "selected"
+        ? {
+            history: chosenMessages.map((message) => ({
+              id: message.id,
+              revision: message.sourceRevision!,
+            })),
+          }
+        : {}),
+    });
+  }
   let reading = $state<HTMLDivElement>(),
     following = $state(true),
     newMessage = $state(false);
@@ -116,6 +163,11 @@
         expectedRevision: view.revision,
         roomId: room.id,
         roomRevision: room.revision,
+        ...(kind === "conversation.accept" &&
+        room.invitation?.scope === "selected" &&
+        room.invitation.id
+          ? { historyConsent: room.invitation.id }
+          : {}),
       });
     confirmation = null;
   }
@@ -240,10 +292,25 @@
       {:else if room.invited}
         <h3>{view.roster[room.creator]?.alias} invites you</h3>
         <p>
-          You will receive messages sent after you accept. Earlier messages are
-          not shared. Accepting does not form an alliance or grant military
-          access.
+          {#if room.invitation?.scope === "selected"}You will receive {room
+              .invitation.messages.length} selected earlier {room.invitation
+              .messages.length === 1
+              ? "message"
+              : "messages"} and messages sent after you accept. Other earlier messages
+            are not shared.{:else}You will receive messages sent after you
+            accept. Earlier messages are not shared.{/if}
+          Accepting does not form an alliance or grant military access.
         </p>
+        {#if room.invitation?.scope === "selected"}<h3>
+            Earlier history included
+          </h3>
+          <ul aria-label="Selected earlier history">
+            {#each room.invitation.messages as message}<li>
+                Message {message.sequence} · {view.roster[message.author].alias}
+              </li>{/each}
+          </ul>
+          <p>Message contents become available after you accept this scope.</p>
+        {/if}
         <h3>Participants</h3>
         <ul>
           {#each room.members as seat}<li>{view.roster[seat]?.alias}</li>{/each}
@@ -284,38 +351,83 @@
             ></label
           >
           <fieldset>
-            <legend>History scope</legend><label class="scope"
+            <legend>History scope</legend>
+            <label class="scope"
               ><input
                 type="radio"
-                checked
-                name={`history-scope-${room.id}`}
+                bind:group={historyScope}
+                name={`${scopeId}-history-scope`}
                 value="future"
+                disabled={disabled || !validInvitee}
               />Future messages only — sent after acceptance</label
             >
+            <label class="scope"
+              ><input
+                type="radio"
+                bind:group={historyScope}
+                name={`${scopeId}-history-scope`}
+                value="selected"
+                disabled={disabled || !validInvitee || !room.sharingEnabled}
+              />Selected earlier messages and future messages</label
+            >
           </fieldset>
-          <p>Sharing earlier messages is not available.</p>
-          <ActionButton
-            class="primary"
-            disabled={disabled || invitee === undefined}
-            onclick={() => {
-              if (room && invitee !== undefined)
-                oncommand({
-                  kind: "conversation.invite",
-                  expectedRevision: view.revision,
-                  roomId: room.id,
-                  roomRevision: room.revision,
-                  seat: invitee,
-                  scope: "future",
-                });
-            }}
-            >Invite {invitee === undefined
-              ? "commander"
-              : view.roster[invitee]?.alias}</ActionButton
-          >
+          {#if !room.sharingEnabled}<p>
+              This campaign supports future-only invitations. Selected history
+              is available in new development campaigns.
+            </p>{/if}
+          {#if historyScope === "selected"}
+            <h3>Select earlier messages</h3>
+            <p>
+              {chosenMessages.length} of {maximumSharedMessages} selected. Only checked
+              messages are shared after acceptance.
+            </p>
+            {#if earlier}<ActionButton
+                class="secondary"
+                disabled={loading}
+                onclick={older}>Load earlier messages to select</ActionButton
+              >{/if}
+            {#if historyError}<p role="alert">{historyError}</p>
+              <ActionButton class="secondary" onclick={onretryHistory}
+                >Retry message history</ActionButton
+              >{/if}
+            <div
+              class="history-selection"
+              aria-label="Earlier message selection"
+            >
+              {#each messages.filter((message) => message.sourceRevision) as message (message.id)}<label
+                  class="history-choice"
+                >
+                  <input
+                    type="checkbox"
+                    checked={selectedMessages.includes(message.id)}
+                    disabled={disabled ||
+                      (!selectedMessages.includes(message.id) &&
+                        chosenMessages.length >= maximumSharedMessages)}
+                    onchange={(event) => {
+                      selectedMessages = event.currentTarget.checked
+                        ? [...selectedMessages, message.id]
+                        : selectedMessages.filter((id) => id !== message.id);
+                    }}
+                    aria-label={`Share message ${message.sequence} from ${view.roster[message.author].alias}`}
+                  />
+                  <span
+                    ><strong
+                      >Message {message.sequence} · {view.roster[message.author]
+                        .alias}</strong
+                    ><span class="message-body">{message.body}</span></span
+                  >
+                </label>{/each}
+            </div>
+            <p>This selection does not share any other earlier messages.</p>
+          {/if}
           {#if room.invitations.length}<h3>Invitations awaiting a reply</h3>
             <ul>
               {#each room.invitations as seat}<li>
-                  {view.roster[seat].alias} · future messages only
+                  {view.roster[seat].alias} · {(room.invitationScopes?.find(
+                    (scope) => scope.seat === seat,
+                  )?.count ?? 0) > 0
+                    ? `${room.invitationScopes.find((scope) => scope.seat === seat)!.count} selected earlier messages and future messages`
+                    : "future messages only"}
                 </li>{/each}
             </ul>{/if}
         {/if}
@@ -411,6 +523,11 @@
                     : view.roster[entry.author].alias}</strong
                 ><span>Message {entry.sequence}</span>
               </div>
+              {#if entry.sharedAt !== undefined}<p class="sharing-note">
+                  Selected earlier history · shared by {view.roster[
+                    entry.sharedBy!
+                  ].alias}
+                </p>{/if}
               <p>{entry.body}</p>
             </li>{/each}
         </ol>
@@ -477,7 +594,19 @@
           }}>New messages</ActionButton
         >{/if}
       <div role="group" aria-label="Conversation acknowledgement">
-        <Feedback {message} {error} {inspect} />
+        <Feedback
+          message={participants &&
+          feedbackKind &&
+          ![
+            "conversation.invite",
+            "conversation.remove",
+            "conversation.close",
+          ].includes(feedbackKind)
+            ? ""
+            : message}
+          {error}
+          {inspect}
+        />
       </div>
       {#if view.pausedAt != null}<p>
           Campaign maintenance is paused. Your draft is preserved.
@@ -516,7 +645,19 @@
             {disabled}
             onclick={() => action("conversation.accept")}
             >Accept invitation</ActionButton
-          >{:else if room?.member && !participants && !room.closed}<ActionButton
+          >{:else if room?.member && participants && room.creator === own && !room.closed}<ActionButton
+            class="primary"
+            disabled={disabled ||
+              !validInvitee ||
+              (historyScope === "selected" && !chosenMessages.length)}
+            onclick={invite}
+            >Invite {invitee === undefined
+              ? "commander"
+              : view.roster[invitee]?.alias}{historyScope === "selected"
+              ? ` · ${chosenMessages.length} earlier ${chosenMessages.length === 1 ? "message" : "messages"}`
+              : ""}</ActionButton
+          >
+        {:else if room?.member && !participants && !room.closed}<ActionButton
             class="primary"
             disabled={disabled ||
               !validBody ||
@@ -662,10 +803,32 @@
     margin: 20px 0;
     border: 1px solid #4d6b76;
   }
-  input[type="radio"] {
+  input[type="radio"],
+  input[type="checkbox"] {
     width: 44px;
     height: 44px;
     flex: none;
+  }
+  .history-choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border: 1px solid #4d6b76;
+    padding: 12px;
+    margin: 12px 0;
+  }
+  .history-choice > span {
+    min-width: 0;
+  }
+  .message-body {
+    display: block;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    margin-top: 8px;
+  }
+  .sharing-note {
+    color: #d4c4a5;
+    font-size: 0.9rem;
   }
   .scope {
     display: flex;
@@ -896,7 +1059,8 @@
     textarea {
       min-height: 66px;
     }
-    input[type="radio"] {
+    input[type="radio"],
+    input[type="checkbox"] {
       margin: 0;
     }
     .conversation-list.show {

@@ -25,6 +25,7 @@
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import {
     conversationFrame,
+    sharingFrame,
     draftRecoveryFrame,
     arrivalFrame,
     contactsFrame,
@@ -317,6 +318,19 @@
             onretryDraft={() => {}}
             onuseSavedDraft={() => {}}
             onreplaceDraft={() => {}}
+          />
+        </div>{/each}
+      <h2>Selected earlier history · scope and acceptance</h2>
+      {#each [-1, 0, 1200] as time}<div
+          style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <Conversations
+            {...sharingFrame(time)}
+            oncommand={() => {}}
+            onearlier={() => {}}
+            onlatest={() => {}}
+            onretryHistory={() => {}}
+            onclose={() => {}}
           />
         </div>{/each}
       <h2>Private conversations · invitation and recipient history</h2>

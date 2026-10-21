@@ -119,3 +119,24 @@ for (const [name, width, height] of [
     }
   });
 }
+
+test("selected history has identical consent and disclosure in both motion modes", async ({page}) => {
+  await page.goto("./dev/animations/");
+  await page.getByLabel("Scenario", {exact:true}).selectOption("conversation-sharing");
+  const seek = page.getByLabel(/Inspect frame/);
+  for (const name of ["Standard motion comparison", "Reduced motion comparison"]) {
+    const surface = page.getByRole("region", {name, exact:true});
+    await expect(surface.getByRole("list", {name:"Selected earlier history"})).toContainText("Message 1");
+    await expect(surface).not.toContainText("Creator's earlier private note.");
+    await surface.getByRole("button", {name:"Accept invitation",exact:true}).focus();
+    await expect(surface.getByRole("button", {name:"Accept invitation",exact:true})).toBeFocused();
+  }
+  await seek.fill("1300");
+  for (const name of ["Standard motion comparison", "Reduced motion comparison"]) {
+    const surface = page.getByRole("region", {name, exact:true});
+    await expect(surface.getByRole("list", {name:"Authorized messages"})).toContainText("Creator's earlier private note.");
+    await expect(surface).toContainText("Selected earlier history · shared by");
+  }
+  await page.getByRole("button",{name:"Reset",exact:true}).click();
+  await expect(page.getByRole("list",{name:"Authorized messages"})).toHaveCount(0);
+});

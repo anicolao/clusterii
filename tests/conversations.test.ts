@@ -9,6 +9,7 @@ import {
 import {
   converse,
   conversationView,
+  selectedHistoryReferences,
   type ConversationAction,
 } from "../shared/conversations";
 import { conversationMessages } from "../src/lib/conversation-history";
@@ -128,6 +129,7 @@ test("future-only admission never grants an invited player earlier message plain
     "id",
     "keyVersion",
     "sequence",
+    "sourceRevision",
   ]);
   expect(JSON.stringify(conversationView(c, "u1"))).not.toContain('"u0"');
   expect(before.diplomacy!.rooms[id].message!.body).toBe("Earlier secret");
@@ -339,4 +341,152 @@ test("validation and room conflicts preserve authoritative state and never alter
       id,
     ),
   ).toEqual([]);
+});
+
+test("selected history requires explicit acceptance and projects only granted bodies", () => {
+  let { c, id } = created();
+  c = send(c, id, "Chosen earlier message");
+  const chosen = {
+    ...c.diplomacy!.rooms[id].message!,
+    sourceRevision: c.revision,
+  };
+  c = send(c, id, "Unselected private message");
+  const before = structuredClone(c);
+  const invitation = {
+    kind: "conversation.invite",
+    expectedRevision: c.revision,
+    roomId: id,
+    roomRevision: c.diplomacy!.rooms[id].revision,
+    seat: 1,
+    scope: "selected",
+    history: [{ id: chosen.id, revision: chosen.sourceRevision }],
+  };
+  c = converse(c, invitation, "u0", "selection-invitation", 2000, [chosen]);
+  const invited = conversationView(c, "u1")[0];
+  expect(invited.invitation).toMatchObject({
+    id: "selection-invitation",
+    scope: "selected",
+    messages: [{ id: chosen.id, author: 0 }],
+  });
+  expect(invited.sharedMessages).toEqual([]);
+  expect(JSON.stringify(invited)).not.toContain(chosen.body);
+  expect(JSON.stringify(invited)).not.toContain("Unselected private message");
+  const snapshot = structuredClone(c);
+  for (const historyConsent of [undefined, "older-invitation"]) {
+    expect(() =>
+      apply(
+        c,
+        {
+          kind: "conversation.accept",
+          roomId: id,
+          roomRevision: c.diplomacy!.rooms[id].revision,
+          historyConsent,
+        },
+        "u1",
+      ),
+    ).toThrow("conversation-history-consent");
+    expect(c).toEqual(snapshot);
+  }
+  c = apply(
+    c,
+    {
+      kind: "conversation.accept",
+      roomId: id,
+      roomRevision: c.diplomacy!.rooms[id].revision,
+      historyConsent: "selection-invitation",
+    },
+    "u1",
+  );
+  const accepted = campaignView(c, "u1");
+  expect(conversationMessages([accepted], id).map((m) => m.body)).toEqual([
+    chosen.body,
+  ]);
+  expect(JSON.stringify(accepted.conversations)).not.toContain(
+    "Unselected private message",
+  );
+  expect(JSON.stringify(accepted.conversations)).not.toContain('"u0"');
+  expect(conversationView(c, "u2")).toEqual([]);
+  expect(conversationView(c, "u0")[0].sharedMessages).toEqual([]);
+  expect(accepted.conversations[0].unread).toBe(true);
+  c = apply(
+    c,
+    {
+      kind: "conversation.read",
+      roomId: id,
+      keyVersion: c.diplomacy!.rooms[id].keyVersion,
+      sequence: chosen.sequence,
+    },
+    "u1",
+  );
+  expect(conversationView(c, "u1")[0].unread).toBe(false);
+  for (const key of ["systems", "military", "empires", "economy"] as const)
+    expect(c[key]).toEqual(before[key]);
+  c = apply(c, {
+    kind: "conversation.remove",
+    roomId: id,
+    roomRevision: c.diplomacy!.rooms[id].revision,
+    seat: 1,
+  });
+  c = send(c, id, "Absence secret");
+  c = accept(invite(c, id), id);
+  expect(
+    conversationMessages([accepted, campaignView(c, "u1")], id).map(
+      (m) => m.body,
+    ),
+  ).toEqual([chosen.body]);
+});
+
+test("selected references reject invalid scopes, stale membership and unbounded or duplicate history", () => {
+  let { c, id } = created();
+  c = send(c, id, "Historical");
+  const message = {
+    ...c.diplomacy!.rooms[id].message!,
+    sourceRevision: c.revision,
+  };
+  const action = {
+    kind: "conversation.invite",
+    expectedRevision: c.revision,
+    roomId: id,
+    roomRevision: c.diplomacy!.rooms[id].revision,
+    seat: 1,
+    scope: "selected",
+    history: [{ id: message.id, revision: c.revision }],
+  };
+  for (const history of [
+    [],
+    [...action.history, ...action.history],
+    [{ id: "x", revision: c.revision + 1 }],
+    Array.from({ length: 9 }, (_, i) => ({
+      id: String(i),
+      revision: c.revision,
+    })),
+  ])
+    expect(() =>
+      selectedHistoryReferences(c, { ...action, history }, "u0"),
+    ).toThrow("conversation-history");
+  expect(() => selectedHistoryReferences(c, action, "u1")).toThrow(
+    "permission",
+  );
+  expect(() =>
+    selectedHistoryReferences({ ...c, pausedAt: 1 }, action, "u0"),
+  ).toThrow("paused");
+  expect(() =>
+    selectedHistoryReferences(c, { ...action, roomRevision: 0 }, "u0"),
+  ).toThrow("conflict");
+  expect(() =>
+    selectedHistoryReferences(
+      { ...c, conversationSharingVersion: undefined },
+      action,
+      "u0",
+    ),
+  ).toThrow("conversation-sharing-unavailable");
+  expect(() =>
+    converse(c, action, "u0", "bad", 1, [{ ...message, id: "wrong" }]),
+  ).toThrow("conversation-history");
+  expect(() =>
+    converse(c, action, "u0", "bad", 1, [{ ...message, recipients: ["u2"] }]),
+  ).toThrow("conversation-history");
+  expect(() =>
+    converse(c, { ...action, scope: "future" }, "u0", "bad", 1, [message]),
+  ).toThrow("conversation-history");
 });

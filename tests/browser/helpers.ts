@@ -18,7 +18,7 @@ export async function geometry(page: Page, scope: Page | Locator = page) {
   // Responsive panels keep alternate navigation hidden. Test every rendered
   // target, including offscreen targets in bounded scrolling panels.
   const targets = scope.locator(
-    ':is(button, input[type="radio"], input[type="text"], input:not([type])):visible',
+    ':is(button, input[type="radio"], input[type="checkbox"], input[type="text"], input:not([type])):visible',
   );
   for (const target of await targets.all()) {
     await target.scrollIntoViewIfNeeded();

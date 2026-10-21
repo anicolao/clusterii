@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { conversationMessages } from "$lib/conversation-history";
   import type { CampaignView } from "@shared/campaign";
   import ActionButton from "./ActionButton.svelte";
   import type { MotionInspection } from "$lib/motion";
@@ -81,19 +82,19 @@
         <ul>
           {#each record.roster as seat}<li>{seat.alias}</li>{/each}
         </ul>
-        {#each record.conversations ?? [] as room}{#if room.message}<article
+        {#each record.conversations ?? [] as room}{#each conversationMessages([record], room.id) as message (message.id)}<article
               aria-label="Previously received message"
             >
-              <h3>{room.title} · Message {room.message.sequence}</h3>
-              <p>{record.roster[room.message.author]?.alias}</p>
+              <h3>{room.title} · Message {message.sequence}</h3>
+              <p>{record.roster[message.author]?.alias}</p>
               <p style="white-space:pre-wrap;overflow-wrap:anywhere">
-                {room.message.body}
+                {message.body}
               </p>
               <p>
                 Received through your access at this record. Current membership
                 may differ.
               </p>
-            </article>{/if}{/each}
+            </article>{/each}{/each}
         {#if record.empire}<p>
             Credits: {record.empire.creditsMilli / 1000}
           </p>{/if}

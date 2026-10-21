@@ -74,6 +74,7 @@
   let commandFleetId = $state("");
   let commandRoomId = $state("");
   let conversationBody = "";
+  let commandSharedMessages = 0;
   let recoveredConversation = $state<{
     id: string;
     gameId: string;
@@ -276,6 +277,11 @@
                 body: conversationBody,
               }
             : null;
+          commandSharedMessages =
+            restored.action.kind === "conversation.invite" &&
+            restored.action.scope === "selected"
+              ? (restored.action.history?.length ?? 0)
+              : 0;
           selected = pending.gameId;
           message = "Recovering your saved order and its acknowledgement…";
         }
@@ -404,7 +410,9 @@
               body: conversationBody,
             }
           : null;
-        const feedback = campaignFeedback(command.kind, receipt);
+        const feedback = campaignFeedback(command.kind, receipt, {
+          sharedMessages: commandSharedMessages,
+        });
         message = feedback.message;
         error = feedback.error;
         remedy = feedback.remedy;
@@ -472,6 +480,10 @@
         : action.kind === "conversation.create"
           ? action.title
           : "";
+    commandSharedMessages =
+      action.kind === "conversation.invite" && action.scope === "selected"
+        ? (action.history?.length ?? 0)
+        : 0;
     conversationReceipt = null;
     message = "";
     busy = true;

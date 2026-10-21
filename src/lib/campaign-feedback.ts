@@ -5,7 +5,7 @@ const conversationMessages: Record<string, string> = {
   "conversation.create": "Conversation created.",
   "conversation.invite": "Invitation sent. Earlier messages are not shared.",
   "conversation.accept":
-    "Invitation accepted. Future messages are available to you.",
+    "Invitation accepted. Your authorized history and future messages are available.",
   "conversation.decline": "Invitation declined.",
   "conversation.remove": "Participant removed. Future access has ended.",
   "conversation.leave": "You left the conversation. Future access has ended.",
@@ -15,6 +15,12 @@ const conversationMessages: Record<string, string> = {
   "conversation.read": "Reading position saved.",
 };
 const reasons: Record<string, string> = {
+  "conversation-history":
+    "Choose up to eight distinct messages from this conversation’s authorized history, then review the invitation again.",
+  "conversation-history-consent":
+    "Review the invitation’s selected history before accepting. This client must support that scope.",
+  "conversation-sharing-unavailable":
+    "This campaign supports future-only invitations. Selected history is available in new development campaigns.",
   "conversation-invalid":
     "Check the title, message or participant and try again.",
   "conversation-unavailable":
@@ -86,6 +92,7 @@ const reasons: Record<string, string> = {
 export function campaignFeedback(
   kind: string,
   receipt: { status: "accepted" | "rejected"; reason?: string },
+  scope: { sharedMessages?: number } = {},
 ) {
   if (receipt.status === "rejected")
     return {
@@ -131,7 +138,9 @@ export function campaignFeedback(
     };
   return {
     message:
-      conversationMessages[kind] ??
+      (kind === "conversation.invite" && (scope.sharedMessages ?? 0) > 0
+        ? `Invitation sent. ${scope.sharedMessages} selected earlier messages will be shared after acceptance.`
+        : conversationMessages[kind]) ??
       (kind === "fleet.route"
         ? "Route accepted. Departure scheduled."
         : kind === "fleet.cancel"
