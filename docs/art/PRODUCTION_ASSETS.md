@@ -83,3 +83,7 @@ Exact generation prompt:
 Exact generation prompt:
 
 > Use case: stylized-concept. Asset type: production background illustration for Cluster II space strategy combat report. Wide landscape 3:2 composition, cinematic realistic science fiction matte painting. A vast detailed dark metallic orbital ring station with slender vertical towers floats above a blue-white planet's curved horizon, several sleek compact fighter spacecraft in escort formations, subtle amber navigation lights, deep navy star field. Station occupies upper right two thirds; lower left is dark atmospheric negative space for real UI overlay. Planetary cities and mountains far below, distant moon. Restrained aftermath of a battle, no explosion spectacle. Luxurious mature strategy game art, finely detailed metal, dramatic cool rim lighting and warm dawn. No lettering, numbers, labels, logos, UI, borders, watermark, or implied numerical unit counts. This is atmospheric art, not a diagram or interface mockup.
+
+## Return reports
+
+`BriefingReport.svelte` reuses the existing `galaxy-dust.webp`, stellar atlas, construction market/station illustrations and faction atlas. Artwork is decorative: star class and message-author faction come from the authorized record; all event labels, quantities and inspection actions are semantic HTML. FleetSymbol and DevelopmentIcon remain the shared production marks. No new raster generation or asset provenance is introduced.

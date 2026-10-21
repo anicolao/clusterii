@@ -130,3 +130,5 @@ Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | C
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Render selected-history grants in the retained campaign archive and verify a removed recipient can still read previously granted messages.
 
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Continue Prompt 37 with a private persisted visit checkpoint and returning-player briefing, reusing the clean checkout to conserve disk.
+
+Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Continue Prompt 37 with deliberate campaign-return briefing entry and illustrated reports, preserving interrupted command recovery.

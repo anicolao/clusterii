@@ -460,7 +460,8 @@
             detail={continued.name}
             illustration="planet"
             focusId="continue"
-            onclick={() => goto(campaignHref(base, continued.id))}
+            onclick={() =>
+              goto(`${campaignHref(base, continued.id)}&briefing=return`)}
           />{/if}
         <EntryButton
           label="Learn the game"

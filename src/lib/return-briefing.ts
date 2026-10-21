@@ -14,6 +14,8 @@ export interface BriefingEvent {
   destination: "system" | "arrivals" | "economy" | "conversations";
   starId?: string;
   roomId?: string;
+  authorSeat?: number;
+  urgent?: boolean;
 }
 export function returnBriefing(
   snapshot: CampaignView,
@@ -70,6 +72,7 @@ export function returnBriefing(
             events.set(id, {
               id,
               category: "Control",
+              urgent: !now,
               title: `${name(starId)} · ${layer} ${now ? "gained" : "lost"}`,
               detail:
                 "Recorded control change. Inspect your current authorized knowledge.",
@@ -86,6 +89,9 @@ export function returnBriefing(
             events.set(id, {
               id,
               category: "Arrivals and losses",
+              urgent:
+                arrival.fightersAfter < arrival.fightersBefore ||
+                arrival.infantryAfter < arrival.infantryBefore,
               title: `${name(arrival.starId)} · ${arrival.contested ? "combat settled" : "arrival settled"}`,
               detail: `${arrival.fightersBefore - arrival.fightersAfter} fighter losses · ${arrival.infantryBefore - arrival.infantryAfter} infantry losses. Open the authorized report for combat and control details.`,
               tick: arrival.tick,
@@ -100,6 +106,8 @@ export function returnBriefing(
           events.set(id, {
             id,
             category: outcome.result === "captured" ? "Control" : "Economy",
+            urgent:
+              outcome.result === "captured" || outcome.result === "invalid",
             title: `${name(outcome.starId)} · ${outcome.type} ${outcome.result === "invalid" ? "could not complete" : outcome.result}`,
             detail: `${outcome.refundMilli / 1000} credits refunded. Inspect the system’s current development state.`,
             tick,
@@ -107,6 +115,30 @@ export function returnBriefing(
             starId: outcome.starId,
           });
         }
+      for (const outcome of record.military?.ledger ?? []) {
+        if (outcome.result !== "invalid" && outcome.result !== "halted")
+          continue;
+        if (
+          (baseline.military?.ledger ?? []).some(
+            (prior) =>
+              prior.id === outcome.id && prior.result === outcome.result,
+          )
+        )
+          continue;
+        const id = `fleet-order:${outcome.id}:${outcome.result}`;
+        if (!events.has(id))
+          events.set(id, {
+            id,
+            category: "Arrivals and losses",
+            urgent: true,
+            title: `${name(outcome.starId)} · ${outcome.result === "halted" ? "route halted" : "fleet order could not execute"}`,
+            detail:
+              "The authoritative settlement did not execute the planned order. Inspect the current system and fleet state before issuing another order.",
+            tick,
+            destination: "system",
+            starId: outcome.starId,
+          });
+      }
       if (previous?.economy && record.economy)
         for (const [technology, level] of Object.entries(
           record.economy.research.levels,
@@ -157,6 +189,7 @@ export function returnBriefing(
               tick,
               destination: "conversations",
               roomId: room.id,
+              authorSeat: message.author,
             });
           }
       previous = record;
