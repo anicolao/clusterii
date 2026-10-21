@@ -1,0 +1,167 @@
+{
+  "id": "identity-pending-retry",
+  "title": "Retry a pending identity command without duplicate effects or draft loss",
+  "inventory": [
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A commander saves an identity, loses the network, preserves a pending draft through an explicit retry and reconnect, and recovers it after reload. Actual transport frames and read-only canonical receipts distinguish retransmission from duplicate logical commands.",
+  "source": {
+    "commit": "6e8995d0c81d9769bbfb95b3b5f1a6e0af723986",
+    "dirty": true,
+    "spec": "tests/browser/profile-recovery.story.spec.ts",
+    "specSha256": "2aaf2f70959a4efa7569b20895d1cd76dabe0479766580392688ca54ca3c8ac8"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "sign-in",
+      "description": "Sign in and reach the real identity editor.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "Identity editing is ready after authentication.",
+      "verifications": [
+        "Save is available."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "001-sign-in-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-before-loss",
+      "description": "Save Before network loss before disconnecting.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The initial save is acknowledged.",
+      "verifications": [
+        "The accepted name is visible."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "002-save-before-loss-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "disconnect",
+      "description": "Disconnect this browser context to exercise the actual pending-command recovery protocol.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "pending-draft",
+      "description": "Submit Pending draft offline and receive a retry remedy without losing it.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The acknowledgement deadline exposes Retry save.",
+      "verifications": [
+        "The pending draft remains visible and locked to its original command payload."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "004-pending-draft-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "retry-same-order",
+      "description": "Retry the same pending save while preserving its draft.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The same order is awaiting acknowledgement again.",
+      "verifications": [
+        "Retry does not clear or change the draft."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "005-retry-same-order-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-network",
+      "description": "Restore the network so the queued command and any transport retransmission can receive the authoritative receipt.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "accept-once",
+      "description": "Receive the accepted save after reconnecting.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The authoritative receipt confirms the saved draft.",
+      "verifications": [
+        "Every transport transmission uses one unchanged logical command, with exactly one acknowledged revision and saved effect."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "007-accept-once-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-saved-draft",
+      "description": "Reload and recover the saved draft without submitting another command.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The saved Pending draft returns after reload.",
+      "verifications": [
+        "Reload preserves the acknowledged revision and version count."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "008-reload-saved-draft-1-commander.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

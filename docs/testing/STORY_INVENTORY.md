@@ -17,9 +17,9 @@ The UX inventory is required coverage, not a completion claim. “Procedural” 
 | UX-11 Cooperate and exchange | credit-offers                                                                                                   | Procedural credit offer/accept/withdraw/settle/privacy. Illustrated normal and interrupted exchange stories remain open. Report exchange, alliances and departure gameplay are incomplete.                            |
 | UX-12 Return informed        | briefing, history                                                                                               | Paged history is migrated through two devices, explicit latest recovery and reload; private visit, entry prompting and co-faction regressions remain procedural.                                                      |
 | UX-13 Finish and begin again | none                                                                                                            | Victory, final settlement and repeated-game loop are not implemented.                                                                                                                                                 |
-| UX-14 Recover commitments    | recovery, receipt-binding, migration, maintenance, session-security, construction, conversations, credit-offers | Identity persistence has exact local evidence; history recovery now has exact local evidence. Other fault journeys retain assertions but remain procedural; hosted OAuth/Scheduler and compromise-key lifecycle gaps remain explicit. |
+| UX-14 Recover commitments    | profile-recovery.story, receipt-binding, migration, maintenance, session-security, construction, conversations, credit-offers | Identity conflict, repeat-safe pending/retry and keyboard return have 12 exact local journeys/92 captures; history recovery also has local and Linux evidence. Other fault journeys remain procedural; hosted OAuth/Scheduler and compromise-key lifecycle gaps remain explicit. |
 | UX-15 Navigate and learn     | entry.story / identity.story, invitation, session-security                                                      | Entry and all four Learn chapters now have exact local illustrated evidence. Full contextual rules/settings/safe-departure story remains open.                                                                        |
-| UX-16 Every input            | geometry, identity-layout, lab, recovery                                                                        | Existing keyboard/geometry/motion checks remain. The first stories cover keyboard Learn/focus and four viewports; complete text enlargement, native-keyboard, contrast and motion story coverage remains open.        |
+| UX-16 Every input            | geometry, identity-layout, lab, profile-recovery.story                                                                        | Existing keyboard/geometry/motion checks remain. The first stories cover keyboard Learn/focus and four viewports; complete text enlargement, native-keyboard, contrast and motion story coverage remains open.        |
 
 ## Enforcement and evidence
 
@@ -58,3 +58,25 @@ Combined local comparison: 12 journeys/86 captures, 1.2 minutes. The history sub
 | desktop | [Six steps](stories/learn-and-return/desktop/linux-arm64/README.md) | [Five steps](stories/commander-identity/desktop/linux-arm64/README.md) | [Two-device story](stories/campaign-history/desktop/linux-arm64/README.md) |
 | large | [Six steps](stories/learn-and-return/large/linux-arm64/README.md) | [Five steps](stories/commander-identity/large/linux-arm64/README.md) | [Two-device story](stories/campaign-history/large/linux-arm64/README.md) |
 | short | [Six steps](stories/learn-and-return/short/linux-arm64/README.md) | [Five steps](stories/commander-identity/short/linux-arm64/README.md) | [Two-device story](stories/campaign-history/short/linux-arm64/README.md) |
+
+## Profile recovery narratives
+
+Twelve darwin-arm64 journeys verify 92 exact captures in 2.6 minutes. These replace the procedural recovery spec while preserving conflict revisions, transport identity/payload and single-effect assertions. Linux comparison, normal-motion parity, text enlargement and independent full review remain open.
+
+| Viewport | Two-device conflict | Pending retry | Keyboard return |
+| --- | --- | --- | --- |
+| phone | [Both devices](stories/identity-conflict/phone/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/phone/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/phone/darwin-arm64/README.md) |
+| desktop | [Both devices](stories/identity-conflict/desktop/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/desktop/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/desktop/darwin-arm64/README.md) |
+| large | [Both devices](stories/identity-conflict/large/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/large/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/large/darwin-arm64/README.md) |
+| short | [Both devices](stories/identity-conflict/short/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/short/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/short/darwin-arm64/README.md) |
+
+### Verified Linux profile recovery
+
+Pinned Linux exact comparison at 295ae43 passes all 24 combined stories in 5.4 minutes, including these 12 recovery journeys/92 captures. This is emulator evidence, not hosted or independent full visual acceptance.
+
+| Viewport | Conflict | Retry | Keyboard |
+| --- | --- | --- | --- |
+| phone | [Both devices](stories/identity-conflict/phone/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/phone/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/phone/linux-arm64/README.md) |
+| desktop | [Both devices](stories/identity-conflict/desktop/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/desktop/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/desktop/linux-arm64/README.md) |
+| large | [Both devices](stories/identity-conflict/large/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/large/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/large/linux-arm64/README.md) |
+| short | [Both devices](stories/identity-conflict/short/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/short/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/short/linux-arm64/README.md) |

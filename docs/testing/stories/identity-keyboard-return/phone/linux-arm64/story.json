@@ -1,0 +1,133 @@
+{
+  "id": "identity-keyboard-return",
+  "title": "Restore entry focus after keyboard learning and identity editing",
+  "inventory": [
+    "UX-01",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "A visitor opens and closes Learn with the keyboard, signs in, closes identity editing, and checks that the entry controls remain focused and reduced-motion transitions are removed.",
+  "source": {
+    "commit": "27560ed0192e6ef2fca5b55918f92aa012abd5a1",
+    "dirty": false,
+    "spec": "tests/browser/profile-recovery.story.spec.ts",
+    "specSha256": "2aaf2f70959a4efa7569b20895d1cd76dabe0479766580392688ca54ca3c8ac8"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "phone",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "arrive",
+      "description": "Open entry with Play and Learn available.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "Play is ready.",
+      "verifications": [
+        "Learn is available."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "001-arrive-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keyboard-learn",
+      "description": "Open Learn with Enter and focus the first chapter.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "The chapter heading receives focus.",
+      "verifications": [
+        "The return control remains reachable."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "002-keyboard-learn-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-from-learn",
+      "description": "Use the keyboard to return to the opening Learn control.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "Focus returns to Learn.",
+      "verifications": [
+        "Play remains enabled."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "003-return-from-learn-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "sign-in",
+      "description": "Sign in through Play and open identity editing.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The identity editor is ready.",
+      "verifications": [
+        "Close and Save remain available."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "004-sign-in-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-identity",
+      "description": "Close identity editing and restore focus to Play with reduced motion.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "Focus returns to the Play control that opened identity.",
+      "verifications": [
+        "Reduced motion is active and the entry control has no transition duration."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "005-close-identity-1-commander.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
