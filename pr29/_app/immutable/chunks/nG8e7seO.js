@@ -1,0 +1,1 @@
+import{Ot as e}from"./BDNWo1Pa.js";e();
