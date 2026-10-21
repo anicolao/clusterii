@@ -435,8 +435,9 @@
           data-focus="military"
           aria-expanded={military}
           onclick={() => openPanel("military")}
-          >Fleets · {view.military.fleets.filter((f) => f.starId === star.id)
-            .length}</ActionButton
+          >Fleets · {view.military.fleets.filter(
+            (f) => f.starId === star.id && f.travel?.status !== "traveling",
+          ).length}</ActionButton
         >{/if}
       {#if holding && view.productionEnabled && onbuild}<ActionButton
           class="secondary"
