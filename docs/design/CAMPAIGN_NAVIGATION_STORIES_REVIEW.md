@@ -1,0 +1,13 @@
+# Illustrated campaign admission and chart navigation
+
+Two ordinary stories replace the procedural campaign tour; a third isolates profile-readiness recovery. Admission shows creation, portrait/faction/briefing review with a persistent commitment, acknowledged seat assignment, waiting-only entry semantics, exact membership recovery and acknowledged release. Chart navigation shows class filtering, an unavailable home before start, keyboard camera controls, named-star selection, opaque bounded panels, map-label clipping and reload.
+
+Both use a real saved developer identity, actual create/join/leave commands, canonical persistence and the shared versioned catalogue. The emulator-only loader fixes map entropy; no home, campaign membership, star or clock result is injected. The portrait and destination have explicit accessible names rather than positional last/nth selection. Primary commitments are checked before scrolling. Uncaught page errors remain failures throughout the journeys.
+
+The campaign briefing previously said economy did not run. That obsolete implementation-status claim is removed; the briefing now states the actual remaining limit that victory evaluation is not enabled. Shared-victory rule values remain explicitly under review, not newly approved.
+
+The procedural predecessor is removed after replacement verification. Pinned Linux comparison, current-head CI, normal-motion parity and independent full visual/hosted acceptance remain open. Base: #41, `feat/receipt-recovery-stories`. No PR is merged.
+
+The new release/reload step exposed a returning-player race at all four sizes: Play was enabled before the saved profile resolved, so a fast click opened identity rather than campaign selection. Entry and Learn play controls now remain disabled while an authenticated profile is still loading. The unchanged immediate-click journey must reach the directory after readiness. Initial traces also record a corrected fixture error: the authoritative fixed catalogue identifies Rana as A-class, not K-class.
+
+The explicit recovery harness holds the actual profile-key request, captures disabled Play, releases the original request and confirms direct campaign selection. Opening identity afterward confirms the original name and one revision/version/receipt. The first harness teardown unregistered an in-flight route before forwarding completed; awaiting the original handlers corrects test cleanup without weakening the product assertions. Twelve final generation journeys/97 captures pass. Exact local comparison passes all 28 combined journeys in 2.9 minutes: twelve navigation/readiness journeys and sixteen unchanged entry, keyboard-return and invitation journeys. Type checks, lint and story policy pass.
