@@ -137,6 +137,11 @@
       failure instanceof RecoveryStorageError ||
       failure instanceof RecoveryConflict
     ) {
+      if (failure instanceof RecoveryConflict && failure.area === "order") {
+        stopReceipt();
+        clearTimeout(timer);
+        pending = null;
+      }
       busy = false;
       message = "";
       error = failure.message;
@@ -376,7 +381,7 @@
               conversationBody,
             );
           }
-          await clearOrder(uid, command.id);
+          await clearOrder(uid, command);
         } catch (failure) {
           settling = false;
           if (session === generation) failed(failure);
@@ -427,7 +432,28 @@
         )
           void select(receipt.gameId);
       },
-      failed,
+      async (failure) => {
+        if (session !== generation || settling) return;
+        if (!(failure instanceof ReceiptMismatch)) {
+          failed(failure);
+          return;
+        }
+        settling = true;
+        stopReceipt();
+        clearTimeout(timer);
+        busy = true;
+        message = "Reconciling this browser’s saved order…";
+        try {
+          // This server-confirmed immutable receipt belongs to another request.
+          // Retire only our exact encrypted record before allowing a fresh draft.
+          await clearOrder(uid, command);
+        } catch (storageFailure) {
+          settling = false;
+          if (session === generation) failed(storageFailure);
+          return;
+        }
+        if (session === generation) failed(failure);
+      },
     );
     timer = setTimeout(() => {
       busy = false;

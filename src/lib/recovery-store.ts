@@ -88,10 +88,13 @@ export async function claimOrder(uid: string, command: PendingCampaign) {
     return immutable;
   });
 }
-export async function clearOrder(uid: string, commandId: string) {
-  await access<PendingCampaign>("orders", uid, (prior) =>
-    prior?.id === commandId ? undefined : prior,
-  );
+export async function clearOrder(uid: string, command: PendingCampaign) {
+  const { dispatched: _, ...immutable } = command;
+  await access<PendingCampaign>("orders", uid, (prior) => {
+    if (prior && JSON.stringify(prior) !== JSON.stringify(immutable))
+      throw new RecoveryConflict("order");
+    return undefined;
+  });
 }
 const draftKey = (uid: string, gameId: string, roomId: string) =>
   JSON.stringify([uid, gameId, roomId]);
