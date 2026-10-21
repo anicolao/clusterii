@@ -1,0 +1,11 @@
+# Illustrated production lab
+
+The shared CampaignEconomy component has an illustrated story for scheduled production, an overdue but unconfirmed tick, confirmed output, science progress, keyboard ledger reading and the lab's return/reset callback. Both motion panes retain the same balances and ledger facts. Reaching the deadline alone keeps 200 credits; the reducer-confirmed first tick produces 202.8 total credits, with 2.8 received, zero escrow, one fighter, one infantry and 1.4 science. Navigation remains level one with 1400 milli-science progress.
+
+This is explicitly component evidence using the existing reducer-derived scenario. It does not certify live delivery, scheduler recovery, authorization, repeat-safe catch-up or conservation across players. The live production story remains unmigrated, and all predecessor procedural assertions remain unchanged. Production rules retain their review status. No production code, renderer configuration or existing baseline changes.
+
+The long developer specimen uses named upper summary, science and lower reading views. Keyboard End scrolls the bounded ledger while the return control stays available. These are document captures, not proof of full-screen player composition. The first candidate run rejected an incorrect two-fighter test expectation; the real reducer and UI produce one. The failure remains at `/tmp/cluster-production-lab-fighter-before` with `/tmp/cluster-production-lab-generation.log`. The initial summary-only candidates are retained at `/tmp/cluster-production-lab-summary-candidates`; visual review requested an additional contained science view before promotion.
+
+Base: `feat/history-lab-stories` (#50). Current-head Linux, preview revision and independent visual acceptance remain open. The inherited identity-raster diagnosis remains unresolved; read-only layout diagnostics are inherited without changing exact comparison.
+
+Exact local comparison passes all four viewport journeys and 48 captures in 15.3 seconds (`/tmp/cluster-production-lab-exact.log`), with four generated narratives archived. Type checks report zero errors/warnings; lint and nine policy/clock/catalogue guards pass. Linux/current-head and independent acceptance remain open.

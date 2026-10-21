@@ -1071,3 +1071,19 @@ Agent drained historical queue and is idle since16:22, working tree clean at30a3
 Exact handoff:
 
 Reviewer continuation 2026-10-21 16:28 Toronto: your queued historical handoffs are drained and pane is idle. Resume authorized work. Prioritize the unresolved short identity paragraph raster mismatch inherited from #42: use retained Linux actual/expected/trace and renderer/layout evidence to establish a reproducible cause; preserve existing baselines, zero tolerance and failure artifacts. Continue independent remaining illustrated-story/implementation work while CI queues drain, and coordinate exact-head preview retries when publication clears. Do not wait indefinitely for CI when useful local diagnosis remains. Carry main meta-prompts checkpoints through16:28 into related committed/pushed logs, attribute this handoff in PROMPTS.md and continuations per AGENTS.md. No merge or full-release acceptance without remaining evidence.
+
+
+## Reviewer progress — 2026-10-21 16:38 Toronto
+
+Agent resumed healthy renderer diagnosis, retaining negative replay/probe results without claiming a cause. Independently reviewed pending textLayout instrumentation: read-only visible text ranges, computed font and ancestor paint/layout properties, recorded after settled PNG and never used for image acceptance. No production styles, renderer flags, baseline or tolerance changes. Recovery verification still running; useful Linux layout evidence is the intended result, not an asserted fix.
+
+#49 publication failed expected39ad70b with HTTP404; independently retained job119458487263 log /tmp/cluster49-publish-review-failure.log. Agent is already checking these missing previews and shared queue; do not duplicate active publication coordination. #43–50 current checks predominantly queued/running; inherited #42 mismatch stays open. Carry checkpoint into related committed/pushed logs, including current preview failures; no release completion or merge.
+
+
+## Reviewer progress — 2026-10-21 16:48 Toronto
+
+#50 e350e11 diagnostics and logs pushed, clean checkout. Agent reports eight unchanged-image recovery comparisons; no Linux cause claimed. Current CI mostly queued/running and preview gates open. Pane idle since16:39 with independent migration work remaining, so resumed once.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-21 16:48 Toronto: diagnostics e350e11 are pushed and pane is idle since16:39. Continue authorized implementation while Linux evidence queues: take the next unmigrated production/sharing lab or live player journey in STORY_INVENTORY.md as a small successor to #50, preserving real shared components, named acknowledgements, exact candidate review and predecessor assertions. Keep identity-raster diagnosis open and inspect its new Linux layout artifacts when available; do not claim a fix from negative local probes. Coordinate current-head preview retries as the shared queue clears. Carry latest main meta-prompts checkpoints, log reviewer attribution and continuations, commit/push; no merge. Continue useful independent work rather than ending solely because CI is pending.

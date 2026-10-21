@@ -53,6 +53,7 @@ Review branches remain unmerged. Rule data marked `review` is not owner-approved
 | Illustrated research lab | [#49](https://github.com/anicolao/clusterii/pull/49), `feat/lifecycle-lab-stories` | [Lab](https://anicolao.github.io/clusterii/pr49/dev/animations/) (publication pending) | [Scope and evidence](RESEARCH_LAB_STORIES_REVIEW.md). Four local exact viewport stories/96 reviewed captures, keyboard submission/disclosure, pending/reconnect/scheduled/applied distinctions. Component fixtures only; Linux/current-head CI, hosted revision and independent review remain open. |
 
 | Illustrated history lab | [#50](https://github.com/anicolao/clusterii/pull/50), `feat/research-lab-stories` | [Lab](https://anicolao.github.io/clusterii/pr50/dev/animations/) (publication pending) | [Scope and evidence](HISTORY_LAB_STORIES_REVIEW.md). Four local exact component stories/48 reviewed captures; loading/retry/recovered records, native keyboard scrolling and latest request. No remote-service claim; Linux/current-head CI, preview and independent review remain open. |
+| Illustrated production lab | `feat/production-lab-stories`, base `feat/history-lab-stories` (#50) | Publication pending | [Scope and evidence](PRODUCTION_LAB_STORIES_REVIEW.md). Four local exact journeys/48 reviewed captures; scheduled/due/confirmed ledger, science, keyboard reading and reset. Component evidence only; live production, Linux, identity raster and independent acceptance remain open. |
 
 ## Open decisions
 

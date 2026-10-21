@@ -1,0 +1,11 @@
+# Production lab candidate review
+
+Mode: separate generation, not verification. Source: `production-lab.story.spec.ts`, existing CampaignEconomy component and productionFrame reducer scenario. Local renderer: darwin-arm64, pinned Playwright Chromium and shared renderer arguments. No existing baselines are replaced.
+
+The first generation failed its incorrect two-fighter assertion; the actual reducer produces one, as confirmed by both the scenario output and displayed ledger. Retained failure: `/tmp/cluster-production-lab-fighter-before` and `/tmp/cluster-production-lab-generation.log`. Correcting the expectation yielded four passing candidate journeys. Review then required an additional explicit science view because the upper summary and keyboard End captures did not always show the science paragraph. Those first candidates remain at `/tmp/cluster-production-lab-summary-candidates`.
+
+Final candidate generation passes four journeys in 15.0 seconds (`/tmp/cluster-production-lab-generation3.log`). All 48 ordered captures were reviewed through full phone/desktop/short sheets and magnified 4K specimen crops. There are 32 distinct images. Forty images remain byte-identical to the preceding candidates; eight new science views were separately inspected. Both motion panes show the same tick facts. The balance stays at 200 while awaiting confirmation and changes to 202.8 only at the confirmed frame. Ledger labels, fractional science progress, bounded scrolling, review disclosure and return-control focus remain readable. Explicit upper/lower document views do not claim that the entire long specimen fits the short viewport at once.
+
+Promote only these new candidates for exact verification. This implementer review is not independent visual acceptance. Pinned Linux, current-head CI, hosted preview revision and the inherited identity-raster diagnosis remain open. No gameplay rules are approved by these component specimens.
+
+Exact local comparison passes all four viewport journeys and 48 captures in 15.3 seconds (`/tmp/cluster-production-lab-exact.log`), with four generated narratives archived. Type checks report zero errors/warnings; lint and nine policy/clock/catalogue guards pass. Linux/current-head and independent acceptance remain open.
