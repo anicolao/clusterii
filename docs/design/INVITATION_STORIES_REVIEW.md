@@ -1,0 +1,11 @@
+# Illustrated invitation recovery
+
+This slice replaces the procedural invitation regression with two illustrated journeys on `feat/identity-validation-stories` (#37). First-time admission shows signed-out access, preserved destination, authentication, identity draft/save, faction review, acknowledged seat, the host's roster update and reload. Returning recovery shows authentication going directly to the invited galaxy without reopening/resaving identity, followed by explicit missing/denied invitation remedies.
+
+Both journeys use independent real accounts and production controls, encrypted commands, membership projections and persistence. Read-only profile facts prove one unchanged identity revision/version/receipt. Starting campaigns are prepared through real UI; fixed catalogue entropy and development-claim changes are explicit test harness controls. Two seats remain waiting, so these stories do not assert start scheduling, active ticks or hosted authentication.
+
+Eight local journeys pass 72 exact captures in 1.3 minutes after separate candidate review. [Generated narratives](../testing/STORY_INVENTORY.md#invitation-recovery-narratives) and [baseline review](../testing/INVITATION_BASELINE_REVIEW.md) retain all four viewports and both relevant players. The first run exposed a geometry-helper closed-disclosure issue; the independently reproduced native visibility and painted-overlap correction is carried from #35. No roster assertion was bypassed and the procedural test is removed only after replacement verification.
+
+Linux generation/review/comparison, current-head CI, independent composition review (including 4K faction/directory scale), normal-motion parity and hosted Google acceptance remain open. Public admission and proposed gameplay rules are not approved by these development tests. No PR is merged.
+
+Pinned Linux verification at a1004e4 passed all 36 combined stories in run [39628471834](https://github.com/anicolao/clusterii/actions/runs/39628471834). The eight invitation narratives/72 captures are archived with exact decoded-pixel comparison and original provenance. Application CI, independent full composition/motion review and hosted acceptance remain open.

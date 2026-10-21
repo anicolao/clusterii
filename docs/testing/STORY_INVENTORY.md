@@ -4,8 +4,8 @@ The UX inventory is required coverage, not a completion claim. “Procedural” 
 
 | ID                           | Existing regression sources                                                                                     | Illustrated status and gaps                                                                                                                                                                                           |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| UX-01 Enter and return       | entry.story / identity.story, invitation, campaign, briefing                                                    | Entry/Learn and identity are the first story migration. Named Continue, multiple/waiting memberships and invitation recovery remain procedural.                                                                       |
-| UX-02 Join a campaign        | campaign, campaign-start, secure-campaign                                                                       | Procedural four-player admission and start; all roster/faction/portrait variants and simultaneous final-seat illustrated stories remain open.                                                                         |
+| UX-01 Enter and return       | entry.story / identity.story, invitation, campaign, briefing                                                    | Entry/Learn and identity are the first story migration. Invitation admission and returning/missing/denied recovery now have illustrated local evidence. Named Continue and multiple/waiting membership branches remain procedural.                                                                       |
+| UX-02 Join a campaign        | campaign, campaign-start, secure-campaign                                                                       | First-time invitation admission includes the host roster viewpoint. Four-player start, all roster/faction/portrait variants and simultaneous final-seat illustrated stories remain open.                                                                         |
 | UX-03 Read the galaxy        | campaign, geometry, observations                                                                                | Procedural galaxy/list/selection checks; fixed-seed exact illustrated navigation remains open.                                                                                                                        |
 | UX-04 Split control          | production, arrival-reports, observations                                                                       | Procedural ownership/output/privacy checks; complete illustrated ownership matrix remains open.                                                                                                                       |
 | UX-05 Develop an empire      | construction, construction-completion, construction-feedback                                                    | Procedural reservation, completion, cancellation and scoped feedback. All development/layer illustrated branches remain open.                                                                                         |
@@ -87,8 +87,28 @@ Pinned Linux exact comparison at 295ae43 passes all 24 combined stories in 5.4 m
 | large | [Both devices](stories/identity-conflict/large/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/large/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/large/linux-arm64/README.md) |
 | short | [Both devices](stories/identity-conflict/short/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/short/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/short/linux-arm64/README.md) |
 
+## Invitation recovery narratives
+
+Eight local journeys verify 72 exact captures in 1.3 minutes. Host and invitee views show admitted membership; returning authentication preserves the original saved identity, and missing/denied links have explicit remedies. Fixed catalogue and development-claim setup are named harness controls. This is not full admission/start, Linux, hosted or independent visual acceptance.
+
+| Viewport | First-time admission | Returning and inaccessible links |
+| --- | --- | --- |
+| phone | [Invitee and host](stories/invitation-first-admission/phone/darwin-arm64/README.md) | [Return and recover](stories/invitation-returning-recovery/phone/darwin-arm64/README.md) |
+| desktop | [Invitee and host](stories/invitation-first-admission/desktop/darwin-arm64/README.md) | [Return and recover](stories/invitation-returning-recovery/desktop/darwin-arm64/README.md) |
+| large | [Invitee and host](stories/invitation-first-admission/large/darwin-arm64/README.md) | [Return and recover](stories/invitation-returning-recovery/large/darwin-arm64/README.md) |
+| short | [Invitee and host](stories/invitation-first-admission/short/darwin-arm64/README.md) | [Return and recover](stories/invitation-returning-recovery/short/darwin-arm64/README.md) |
+
 ### Verified Linux validation
 
 Pinned Linux comparison at b3def4c passes 28 combined stories/202 captures in 6.0 minutes, including these four validation stories/24 images. Hosted Google and independent full visual review remain separate gates.
 
 [phone](stories/identity-validation/phone/linux-arm64/README.md) · [desktop](stories/identity-validation/desktop/linux-arm64/README.md) · [large](stories/identity-validation/large/linux-arm64/README.md) · [short](stories/identity-validation/short/linux-arm64/README.md)
+
+## Verified Linux invitation narratives
+
+Eight invitation journeys/72 captures pass within the 36-story pinned Linux run 39628471834.
+
+- phone: [First admission](stories/invitation-first-admission/phone/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/phone/linux-arm64/README.md).
+- desktop: [First admission](stories/invitation-first-admission/desktop/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/desktop/linux-arm64/README.md).
+- large: [First admission](stories/invitation-first-admission/large/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/large/linux-arm64/README.md).
+- short: [First admission](stories/invitation-first-admission/short/linux-arm64/README.md), [Returning recovery](stories/invitation-returning-recovery/short/linux-arm64/README.md).
