@@ -1,0 +1,77 @@
+[
+  {
+    "image": "002-account-entry-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/002-account-entry-1-commander-first-device.png",
+    "actualSha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730"
+  },
+  {
+    "image": "002-account-entry-2-commander-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+    "actualSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6"
+  },
+  {
+    "image": "003-open-devices-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/003-open-devices-1-commander-first-device.png",
+    "actualSha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db"
+  },
+  {
+    "image": "004-close-devices-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/004-close-devices-1-commander-first-device.png",
+    "actualSha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730"
+  },
+  {
+    "image": "005-cancel-confirmation-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/005-cancel-confirmation-1-commander-first-device.png",
+    "actualSha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0"
+  },
+  {
+    "image": "005-cancel-confirmation-2-commander-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+    "actualSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6"
+  },
+  {
+    "image": "007-interrupted-confirmation-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/007-interrupted-confirmation-1-commander-first-device.png",
+    "actualSha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0"
+  },
+  {
+    "image": "007-interrupted-confirmation-2-commander-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/007-interrupted-confirmation-2-commander-second-device.png",
+    "actualSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6"
+  },
+  {
+    "image": "009-reload-recovery-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/009-reload-recovery-1-commander-first-device.png",
+    "actualSha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db"
+  },
+  {
+    "image": "009-reload-recovery-2-commander-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/009-reload-recovery-2-commander-second-device.png",
+    "actualSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6"
+  },
+  {
+    "image": "010-end-both-sessions-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-1-commander-first-device.png",
+    "actualSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173"
+  },
+  {
+    "image": "010-end-both-sessions-2-commander-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-2-commander-second-device.png",
+    "actualSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173"
+  },
+  {
+    "image": "012-fresh-sign-in-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+    "actualSha256": "9cdb1311edad45ad79c206c6120ee1448d2e13192762864a99785221bfbd1842"
+  },
+  {
+    "image": "012-fresh-sign-in-2-commander-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-2-commander-second-device.png",
+    "actualSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173"
+  },
+  {
+    "image": "013-reload-identity-1-commander-first-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/013-reload-identity-1-commander-first-device.png",
+    "actualSha256": "07073d1d72d4351d4e1ec23280ca009c8dfee62f80c2487692bd3dae7ae62f39"
+  }
+]
