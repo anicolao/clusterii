@@ -582,3 +582,52 @@ No acceptance or merge. Conversation privacy/service/rendered evidence remains i
 Gallery timeout correction pushed on #27 dee7ace and propagated #28 c29586b; replacement verification running, publication/documentation green. Independently reviewed batched DOM measurement: all layout-visible controls including offscreen controls still receive44px width/height assertions; only hidden layout/visibility is excluded. No timeout increase or removed target-size assertion. Full CI remains necessary.
 
 Conversation work active/uncommitted; agent reports seven browser/gallery/lab cases including held transport, same-command retry, single message effect, removal/rejoin and reload. Independent phone capture review finds legible participant/message attribution, scoped sent acknowledgement, bounded composer and explicit authorized-history limits. This supports one rendered state only; live-encryption/privacy/service final evidence remains pending. No stall/duplicate handoff. Carry checkpoint into next committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 05:47 Toronto
+
+New #29 a410bb7 correctly stacks on arrival-reports, attached to supervisor chat. Clean conversations worktree; publication/documentation green and verification pending with #27/#28. Independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Final documented implementer evidence:73 units/1358, both-provider228 (membership race/replay/old-data-key denial/history migration), default29/1634, seven browser/gallery/lab cases56.5s and final scoped-acknowledgement rerun. Prior phone/source review remains scoped; no full privacy/hosted/release approval.
+
+Review explicitly discloses unsent drafts and pending outbox are not reload-durable. Agent actively begins command-recovery successor to close that gap, inspecting existing keys/session and authorization before storage implementation. No stall or duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 05:57 Toronto
+
+#27 dee7ace, #28 c29586b and #29 a410bb7 verification remain running; publication/documentation green. Command-recovery successor active/uncommitted, no new PR. Preliminary source review finds transactional IndexedDB command-slot claims, matching-ID removal and revision-checked draft writes; storage-before-send and privacy/recovery claims still require complete evidence review.
+
+Independent log inspection now confirms recovery mock browser run two passed/one skipped44.9s and real-provider ordinary-commanders invitation/retry/revocation/recovery case passed1.2m. Agent reports fixing a saved-draft revision self-conflict discovered during this journey and actively extends shared gallery/lab coverage. These focused results do not establish all storage-failure, reload/race or account-isolation gates. No stall or duplicate handoff; previously queued gallery finding already fixed in current heads. Carry checkpoint into next related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 06:07 Toronto
+
+#27–29 heads unchanged; verification running, publication/documentation green. Command-recovery work remains active/uncommitted. Independent source review confirms recovery validates encrypted command context/kind with account checks before and after decryption; invalid-record forgetting uses the saved fingerprint and a confirmation explaining that accepted orders are not cancelled. Shared gallery/lab now includes recovery states. Latest observed lab callback type error is already corrected in source; final checks still required.
+
+Independently viewed real-provider conversation-phone capture: readable participant/message attribution, authorized-history caveat, empty composer and scoped Message sent acknowledgement, with contained footer controls. This is one completed-message state, not visual approval of every recovery/error state. Agent actively tests corrupted records and storage failure, correcting fault injection to target only the recovery database rather than Firebase authentication storage. No stall or new handoff; retain failed and final passing evidence, carry checkpoint with related logs, commit/push without merging.
+
+
+## Reviewer progress — 2026-10-21 06:17 Toronto
+
+#27–29 heads/base branches unchanged, verification pending and publish/documentation green. #27 is still in combined emulator/service/browser step, not a reported failure. Recovery successor remains active/uncommitted with no new PR. Independent log inspection confirms expanded mock journey44.7s (runner48.0s) passed; agent now runs expanded managed-key journey and gallery/lab cohort. Earlier live pass does not substitute for this expanded coverage.
+
+Independent invalid-recovery phone capture is readable and contained, clearly says validation failed without replacement/resend and explains forgetting local state does not cancel accepted orders; Retry and Forget controls are distinct. Preliminary draft source review confirms HKDF separation, account-scoped memory cache clearing, envelope context binding and optimistic revision preservation. Full account/membership race and rendered confirmation acceptance remain open. Agent actively addressing test feedback; no stall, duplicate queued prompt or new handoff. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 06:27 Toronto
+
+New #30 52a3b83 correctly stacks on #29 and is attached to supervisor chat; command-recovery checkout clean, logs through06:17 carried and pushed. Publication/documentation green, verification pending with #27–29. Independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Final implementer evidence records expanded mock44.7s, managed-key1.4min plus seven gallery/lab cases (eight total1.8min), and73 units/1358. This does not replace full CI or hosted/security acceptance.
+
+Independent phone conflict and pending-recovery captures show preserved competing text with explicit use/replace choices, bounded composer/actions, and awaiting-acknowledgement state distinct from sent history. Prior invalid-record/source reviews remain scoped. Agent actively begins selective earlier conversation sharing successor, preserving future-only default and explicit selection; new authorization/history boundary requires its own review. No stall or duplicate handoff. Carry checkpoint into next related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 06:37 Toronto
+
+#27 dee7ace and #28 c29586b replacement verification now green, closing the observed gallery timeout CI failure. #29/#30 verification remains running; publication/documentation green. Selective conversation-history successor is active/uncommitted; agent compacting after implementation progress, not a demonstrated stall.
+
+Preliminary independent diff review finds server resolution of bounded unique message references from immutable canonical history in the current epoch, matching room/message and original recipient authorization. Invitation projection exposes metadata without bodies; acceptance checks the specific invitation consent token before recipient-specific disclosure. Future-only remains default; creator-only and eight-message policy explicitly proposed, not owner-approved rules. These source observations require adversarial, migration, both-provider and rendered evidence before acceptance. No new defect or duplicate handoff; carry checkpoint into next related committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-21 06:47 Toronto
+
+#29/#30 verification pending, publication/documentation green; history-sharing successor active/uncommitted. Agent reports final both-provider328 assertions including wrong-room, acceptance replay and migration checks. Independent browser log confirms geometry failure at conversations.spec.ts:625/helpers.ts:43; agent already diagnosing, not stalled. Expanded gallery test checks metadata-only preacceptance and disclosed selected body after acceptance in both motion modes. No acceptance. New resource handoff:
+
+Reviewer resource finding: independently confirmed only 855 MiB free on the Data volume at 06:46 Toronto. Before further large test/deploy output, inspect task-owned disposable build/test caches and avoid exhausting disk. Preserve failure traces, review captures, source, worktrees and credentials; do not broadly delete user files. If safe task-owned cleanup cannot restore headroom, report the exact blocker. Continue fixing the observed browser geometry failure without weakening assertions. Record this attributed handoff and carry latest main meta-prompts.md into related committed/pushed logs; no merge.

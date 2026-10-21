@@ -166,6 +166,8 @@ test("ordinary commanders inspect current, unknown and historical stellar observ
         ),
       ).toBe(true);
       const bounds = await details.boundingBox();
+      // Navigation must leave enough room for the pinned age and readable detail.
+      expect(bounds!.height).toBeGreaterThanOrEqual(ageBox!.height * 2);
       expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(height);
       await details.evaluate((el) => el.scrollTo(0, el.scrollHeight));
       const pinned = await observation
