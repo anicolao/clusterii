@@ -128,3 +128,7 @@ Prompt 38 | c7f7b684859d37813066cea2bdb7acd60fc6cbfbf8f71351615a0098b8302ff8 | C
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Complete selected-history sharing evidence and carry the verified inspector correction while preserving resource-failure traces.
 
 Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Render selected-history grants in the retained campaign archive and verify a removed recipient can still read previously granted messages.
+
+Prompt 39 | 34b340e5c1ec774d6514b88964ae59ff804be97e0ba79b73d0bd2805612517b5 | Repair the confirmed receipt-mismatch outbox blockage with exact-record reconciliation, draft preservation and semantic collision regressions.
+
+Prompt 40 | ad557472f028f0cac1f24d552aaab6df96cafb62fa170697ae941d1916f3e648 | Propagate exact-record receipt recovery into selected conversation history without altering either branch’s prior prompt records.

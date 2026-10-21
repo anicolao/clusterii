@@ -395,3 +395,9 @@ Reviewer CI finding: #27 a1fb904 verification run 39567435352 failed. Retained l
 Delegated instruction from the reviewer, referring to the 2026-10-21 06:46 Toronto resource finding in meta-prompts.md:
 
 Reviewer resource finding: independently confirmed only 855 MiB free on the Data volume at 06:46 Toronto. Before further large test/deploy output, inspect task-owned disposable build/test caches and avoid exhausting disk. Preserve failure traces, review captures, source, worktrees and credentials; do not broadly delete user files. If safe task-owned cleanup cannot restore headroom, report the exact blocker. Continue fixing the observed browser geometry failure without weakening assertions. Record this attributed handoff and carry latest main meta-prompts.md into related committed/pushed logs; no merge.
+
+## Prompt 40: Receipt Recovery
+
+Delegated instruction from the reviewer, referring to meta-prompts.md “Reviewer progress — 2026-10-21 08:07 Toronto”:
+
+Reviewer CI finding at 08:07 Toronto: #29 2f446ab is green; #30 67244aa run39587974767 and #31 30fb0ff run39589188027 both fail all four campaign-collision viewport cases in receipt-binding.spec.ts:16. Logs retained at /tmp/cluster30-review-failure.log and /tmp/cluster31-review-failure.log. Choose your faction never appears after the preserved-galaxy collision recovery flow; diagnose the actual trace/state and whether durable outbox recovery or the fixture violates command identity. Preserve original proposed payload and retry identity/conservation assertions; do not just weaken the assertion or extend timeout. Fix first on #30 and propagate through successors, retaining failure/pass evidence and attributed logs; carry latest meta-prompts.md, commit/push, no merge. Continue other work around the diagnosis without duplicating prior resolved handoffs.
