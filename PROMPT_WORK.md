@@ -173,3 +173,4 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | A
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry exact Linux maintenance evidence into the device recovery review stack.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote reviewed Linux session cancellation and interrupted-worker recovery candidates for exact comparison.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive verified Linux device recovery narratives and carry the latest scoped supervisory checkpoints.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Correct delivery-table attribution of the 40-story maintenance and 48-story session Linux results.
