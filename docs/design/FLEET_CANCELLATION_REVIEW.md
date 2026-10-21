@@ -30,3 +30,7 @@ The browser start/settlement uses an explicit clock with the real service. It do
 ## Compatible rollout
 
 Command admission was deployed before the additive RTDB ingress rule. Hosted readback confirms `fleet.cancel` and an ACTIVE Node.js 22 admission function without test flags. No scheduler or persisted-schema update is required. Deployment is separate from hosted player-journey acceptance.
+
+## Replacement CI correction
+
+Run 39557785293 passed 56 browser cases and failed the inherited formation journey: its unnamed level-three heading matched both the selected fleet and the newly persistent Accepted orders heading. The test now uses the exact selected fleet name and asserts the matching visible heading plus selected-control pressed state and retained focus; conservation, acknowledged settlement and accepted-order assertions remain intact. The retained trace/log establish selector ambiguity, not a duplicate fleet or settlement failure. The focused formation/disbanding, cargo and lab cohort passes all three cases in 29.1 seconds. Replacement full CI remains a gate.
