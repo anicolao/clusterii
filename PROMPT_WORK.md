@@ -242,3 +242,10 @@ Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | V
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Promote only reviewed new credit-story candidates across four viewports for strict comparison
 
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Archive eight exact credit stories and reconcile local evidence, review limits and latest supervisory checkpoint
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/research-lab-stories.
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/history-lab-stories.
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/production-lab-stories.
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/sharing-lab-stories.
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/live-sharing-stories.
+
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/live-credit-stories.
