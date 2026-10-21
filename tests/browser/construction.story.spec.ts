@@ -350,9 +350,7 @@ for (const interrupted of [false, true])
             spec: "The original command awaits acknowledgement and repeat submission is disabled.",
             check: async () => {
               await expect.poll(() => writes.length).toBeGreaterThan(0);
-              await expect(
-                button(owner, "Awaiting acknowledgement…"),
-              ).toBeDisabled();
+              await expect(button(owner, "Awaiting receipt…")).toBeDisabled();
               await expect(commitment(owner)).toBeFocused();
             },
           },
@@ -379,9 +377,7 @@ for (const interrupted of [false, true])
               await expect(
                 panel(owner).getByRole("radio", { name: /Training camp/ }),
               ).toBeChecked();
-              await expect(
-                button(owner, "Awaiting acknowledgement…"),
-              ).toBeDisabled();
+              await expect(button(owner, "Awaiting receipt…")).toBeDisabled();
               await expect.poll(() => writes.length).toBeGreaterThanOrEqual(2);
             },
           },

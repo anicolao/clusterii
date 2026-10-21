@@ -241,7 +241,9 @@
           type="submit"
           disabled={!onbuild || !!constraint || busy || pending}
           >{busy || pending
-            ? "Awaiting acknowledgement…"
+            ? onretry
+              ? "Awaiting receipt…"
+              : "Awaiting acknowledgement…"
             : `Build ${names[chosen].toLowerCase()}`}</ActionButton
         >{#if onretry}<ActionButton
             type="button"

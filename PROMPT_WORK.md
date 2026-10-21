@@ -282,3 +282,5 @@ Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | C
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Restore pending construction selection and reconcile settled completion/refund feedback with matching authoritative outcomes.
 
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Contain pending construction lettering beside Retry order and assert actual text bounds at every commitment view.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Use concise pending receipt lettering in the three-action construction rail while retaining full status and text containment checks.
