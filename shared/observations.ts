@@ -284,7 +284,8 @@ export function assertObservationBudget(
   // higher bound still fits the encrypted document and cannot admit new forces.
   if (
     new TextEncoder().encode(JSON.stringify(reserved)).byteLength +
-      travelBytes >
+      travelBytes +
+      (state.trades?.offers.length ?? 0) * 256 >
     (releasingFleetStorage ? 700000 : 600000)
   )
     throw new Error("pending-work-capacity");

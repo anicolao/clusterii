@@ -87,6 +87,21 @@
         <ul>
           {#each record.roster as seat}<li>{seat.alias}</li>{/each}
         </ul>
+        {#each record.trades?.ledger ?? [] as offer}<article
+            aria-label="Recorded credit exchange"
+          >
+            <h3>Offer {offer.result} · tick {offer.settledTick}</h3>
+            <p>
+              {record.roster[offer.issuer]?.alias} offered {offer.giveMilli /
+                1000} credits for {offer.requestMilli / 1000} credits from {record
+                .roster[offer.counterpart]?.alias}.
+            </p>
+            <p>
+              {offer.result === "settled"
+                ? "Both sides transferred once."
+                : "Reserved credits returned to their owners."}
+            </p>
+          </article>{/each}
         {#each record.conversations ?? [] as room}{#each conversationMessages([record], room.id) as message (message.id)}<article
               aria-label="Previously received message"
             >

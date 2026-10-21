@@ -705,3 +705,17 @@ Preliminary offer-source inspection finds issuer funds reserved on offer, counte
 Collision repair pushed #30 aac1d04 and propagated #31 19e896c; propagation through #32/#33 actively underway. Independent code review confirms server-confirmed mismatched immutable receipt retires only the exact encrypted outbox record, cached mismatch waits for server confirmation, full-command comparison protects same-UUID replacement, and metadata receipt delivery is guarded once. Strict digest validation remains. Independent npm run check on clean #30 passes zero Svelte errors/warnings and backend TypeScript; retained browser log confirms13passed1.5min.
 
 Root cause documented: mismatched receipt cleared in-memory pending state but left durable record, blocking the preserved draft's fresh submission. Extended evidence covers original campaign unchanged and replacement payload preservation. Replacement full CI remains required; no acceptance. Agent actively propagating with credit-offer work safely stashed, no duplicate handoff. Disk5.9GiB. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 08:37 Toronto
+
+Receipt repair now propagated through #32 46307c6 and #33 8a9ae26, following #30 aac1d04/#31 19e896c; replacement verification running. #31 publication check absent from returned rollup, so not claimed green; other current publication/documentation checks green. Credit-offer work resumed on corrected stack, active/uncommitted with no new PR.
+
+Independent service log confirms two both-provider credit-exchange cases202 assertions,0fail covering reserved balances, authorization, replay, expiry and migration. Unit source includes acceptance/withdrawal ordering, cancellation conservation, catch-up expiry and overflow returning reservations; passing service evidence does not establish all boundary/recovery/rendered gates. Browser/gallery/lab work active, no stall or duplicate handoff. Disk6.1GiB. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
+
+
+## Reviewer progress — 2026-10-21 08:47 Toronto
+
+#30–33 replacement verification remains running; #31 publication rerun is now active after shared deployment-queue cancellation, other publish/documentation checks green. Credit offers active/uncommitted, no new PR. Agent reports final three affected browser/lab cases58.6s after settled-feedback and expanded-history corrections; full documented evidence88units/1510, both-provider202 and earlier nine browser/lab cases1.4min. Compatible-consumer deployment underway; no rollout completion claimed.
+
+Independent settled-phone capture shows both parties' exact10.001/2.002-credit terms, available194.801, confirmed tick1 settlement and contained Return action. It supports sampled settled-state readability, not full visual acceptance of every negotiation/recovery state. Review note explicitly separates eight-tick/phase/ordering proposals and64-offer storage bound from owner approval, and leaves observation exchange/alliance scope open. Agent healthy, no duplicate handoff. Disk5.9GiB. Carry checkpoint into related committed/pushed logs; no acceptance or merge.

@@ -29,6 +29,7 @@ import {
 } from "./production.js";
 import { type Portrait, type Profile, portraits } from "./profile.js";
 import { type FactionId, faction, rules } from "./rules.js";
+import { type TradeAction, type Trades, tradeView } from "./trades.js";
 import type { TravelAction } from "./travel.js";
 export interface Seat {
   uid: string;
@@ -61,6 +62,8 @@ export interface Campaign {
   economy?: Economy;
   construction?: Construction;
   military?: Military;
+  creditOffersVersion?: 1;
+  trades?: Trades;
   briefingVersion?: 1;
   visits?: Record<string, VisitCheckpoint>;
   conversationsVersion?: 1;
@@ -92,6 +95,7 @@ export type MigrationAction = {
   targetMode: "mock" | "real";
 };
 export type CampaignAction =
+  | TradeAction
   | VisitAction
   | ConversationAction
   | TravelAction
@@ -210,6 +214,8 @@ export function createCampaign(
     revision: 1,
     rulesetVersion: rules.id,
     schemaVersion: 2,
+    creditOffersVersion: 1,
+    trades: { offers: [], ledger: [] },
     briefingVersion: 1,
     conversationsVersion: 1,
     conversationSharingVersion: 1,
@@ -463,7 +469,12 @@ export function campaignView(state: Campaign, uid: string) {
   return {
     ...campaignDirectory(state),
     stars: state.galaxy.stars,
-    own: { faction: own.faction, home: own.home, profile: own.profile },
+    own: {
+      seat: state.seats.findIndex((seat) => seat.uid === uid),
+      faction: own.faction,
+      home: own.home,
+      profile: own.profile,
+    },
     empire: state.empires[uid] ?? null,
     economy: state.economy
       ? {
@@ -473,6 +484,7 @@ export function campaignView(state: Campaign, uid: string) {
         }
       : null,
     military: militaryView(state, uid),
+    trades: tradeView(state, uid),
     briefingEnabled: state.briefingVersion === 1,
     lastVisit: state.visits?.[uid] ?? null,
     conversationsEnabled: state.conversationsVersion === 1,

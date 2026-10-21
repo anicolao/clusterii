@@ -1,4 +1,5 @@
 <script lang="ts">
+  import CreditOffers from "$lib/components/CreditOffers.svelte";
   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
   import { RecoveryValidation } from "$lib/recovery-store";
@@ -27,6 +28,7 @@
   import {
     conversationFrame,
     briefingFrame,
+    creditFrame,
     sharingFrame,
     draftRecoveryFrame,
     arrivalFrame,
@@ -320,6 +322,18 @@
             onretryDraft={() => {}}
             onuseSavedDraft={() => {}}
             onreplaceDraft={() => {}}
+          />
+        </div>{/each}
+      <h2>Credit offers · exact terms and atomic settlement</h2>
+      {#each [0, 500, 1200, 2200, 3200, 4800] as time}<div
+          style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <CreditOffers
+            {...creditFrame(time)}
+            oncommand={() => {}}
+            onclose={() => {}}
+            onretry={() => {}}
+            onhistory={() => {}}
           />
         </div>{/each}
       <h2>Return briefing · recovery and visit acknowledgement</h2>

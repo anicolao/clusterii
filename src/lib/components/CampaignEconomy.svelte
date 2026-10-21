@@ -1,4 +1,7 @@
 <script lang="ts">
+  import CreditOffers from "./CreditOffers.svelte";
+  import type { TradeAction } from "@shared/trades";
+  import type { CreditDraft } from "$lib/credit-offers";
   import MarketFocus from "./MarketFocus.svelte";
   import { initialFocus, type Allocation } from "@shared/market-focus";
   import { tick } from "svelte";
@@ -10,7 +13,15 @@
   import ActionButton from "./ActionButton.svelte";
   let {
     view,
+    records = [],
+    exchanging = $bindable(false),
+    tradeSelection = $bindable(""),
     onclose,
+    ontrade,
+    onhistory,
+    tradeDraft = $bindable({ seat: "", give: "10", request: "0" }),
+    commandId = "",
+    commandOfferId = "",
     inspectTime,
     onresearch,
     onfocus,
@@ -22,7 +33,15 @@
     onretry,
   }: {
     view: CampaignView;
+    records?: CampaignView[];
+    exchanging?: boolean;
+    tradeSelection?: string;
     onclose: () => void;
+    ontrade?: (action: TradeAction) => void;
+    onhistory?: () => void;
+    tradeDraft?: CreditDraft;
+    commandId?: string;
+    commandOfferId?: string;
     inspectTime?: number;
     onfocus?: (allocation: Allocation) => void;
     commandKind?: string;
@@ -34,6 +53,18 @@
     onretry?: () => void;
   } = $props();
   let editingFocus = $state(false);
+  let exchangeHost = $state<HTMLDivElement>();
+  let exchangeButton = $state<HTMLButtonElement>();
+  async function openExchange() {
+    exchanging = true;
+    await tick();
+    exchangeHost?.querySelector<HTMLHeadingElement>("h2")?.focus();
+  }
+  async function closeExchange() {
+    exchanging = false;
+    await tick();
+    exchangeButton?.focus();
+  }
   let focusHost = $state<HTMLDivElement>();
   async function openFocus() {
     editingFocus = true;
@@ -66,7 +97,28 @@
   }
 </script>
 
-{#if editingFocus && view.economy}<div bind:this={focusHost} class="focus-host">
+{#if exchanging && ontrade}<div class="focus-host" bind:this={exchangeHost}>
+    <CreditOffers
+      {view}
+      {records}
+      bind:selected={tradeSelection}
+      bind:draft={tradeDraft}
+      {commandId}
+      {commandOfferId}
+      {commandKind}
+      {message}
+      {error}
+      {pending}
+      {busy}
+      oncommand={ontrade}
+      onclose={closeExchange}
+      onretry={() => onretry?.()}
+      onhistory={() => onhistory?.()}
+    />
+  </div>{:else if editingFocus && view.economy}<div
+    bind:this={focusHost}
+    class="focus-host"
+  >
     <MarketFocus
       focus={view.economy.marketFocus ?? initialFocus()}
       ledger={view.economy.ledger}
@@ -180,6 +232,11 @@
           onselect={onresearch}
           {onretry}
         />{/if}
+      {#if !view.trades?.enabled && ontrade}<p class="review-note">
+          This campaign retains its recorded economy. Credit offers are
+          available in new development campaigns; its access and history remain
+          available.
+        </p>{/if}
       {#if view.productionEnabled}<section>
           <h3>Where production goes</h3>
           <p>
@@ -198,6 +255,11 @@
         </section>{/if}
     </div>
     <footer>
+      {#if view.trades?.enabled && ontrade}<button
+          bind:this={exchangeButton}
+          class="focus-button"
+          onclick={openExchange}>Credit offers</button
+        >{/if}
       {#if view.economy && onfocus}<button
           bind:this={focusButton}
           class="focus-button"
@@ -302,11 +364,16 @@
     color: #c6b28a;
   }
   footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
     flex-shrink: 0;
     padding-bottom: env(safe-area-inset-bottom);
   }
   footer :global(button) {
     width: 100%;
+    min-width: 0;
+    white-space: normal;
   }
   @media (min-width: 2400px) {
     .economy-instrument {

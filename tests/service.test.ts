@@ -5723,3 +5723,90 @@ for (const mode of ["mock", "real"] as const)
       }
     },240000,
   );
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true" ? test.skip : test)(
+    `private credit exchange ${mode}: reserved balances, authorization, replay, expiry and migration`,
+    async () => {
+      const { createRequire } = await import("node:module"), require = createRequire(new URL("../functions/package.json", import.meta.url));
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({projectId});
+      const db = require("firebase-admin/firestore").getFirestore();
+      const {startDueCampaign,processCampaign} = await import("../functions/src/campaigns");
+      const {settleCampaignTicks} = await import("../functions/src/production");
+      const players = await Promise.all((["heliac","pelagic","vesper","dracon"] as const).map(async faction => {
+        const c=await client(`exchange-${faction}-${crypto.randomUUID()}`);await developer(c);await saveIdentity(c);return {c,faction};
+      }));
+      const owner=players[0].c, other=players[1].c, third=players[2].c, id=crypto.randomUUID();
+      await campaignCommand(owner,id,{kind:"campaign.create",expectedRevision:0,name:"Private exchange",capacity:4,mode,development:true});
+      for(let i=0;i<players.length;i++) await campaignCommand(players[i].c,id,{kind:"campaign.join",expectedRevision:i+1,faction:players[i].faction},mode);
+      const head=db.doc(`campaignStates/${id}`), startAt=(await head.get()).get("startAt");
+      await startDueCampaign(id,startAt);
+      let activeMode=mode, epoch=1;
+      const read=async(c=owner)=>(await readCampaignHistory(c.firestore,c.functions,id,c.uid)).records[0];
+      const command=async(c:typeof owner,action:Record<string,unknown>)=>campaignCommand(c,id,{expectedRevision:(await read(c)).revision,...action} as CampaignAction,activeMode,epoch);
+      const initial=await read(), initialOther=await read(other);
+      const offered=await command(owner,{kind:"trade.offer",seat:1,giveMilli:12345,requestMilli:5432});expect(offered.receipt.status).toBe("accepted");
+      let view=await read();const offerId=view.trades.offers[0].id;
+      expect(view.empire!.creditsMilli).toBe(initial.empire!.creditsMilli-12345);
+      expect((await read(other)).empire!.creditsMilli).toBe(initialOther.empire!.creditsMilli);
+      expect((await read(third)).trades).toEqual({enabled:true,offers:[],ledger:[]});
+      const before=await read();
+      expect((await command(third,{kind:"trade.accept",offerId})).receipt.reason).toBe("permission");
+      expect((await command(owner,{kind:"trade.accept",offerId})).receipt.reason).toBe("permission");
+      expect(await read()).toEqual(before);
+      await expect(getDoc(doc(third.firestore,"campaignViews",id,"members",owner.uid,"versions",String(view.revision)))).rejects.toThrow();
+      const accepted=await command(other,{kind:"trade.accept",offerId});expect(accepted.receipt.status).toBe("accepted");
+      const reserved=await read(other);expect(reserved.empire!.creditsMilli).toBe(initialOther.empire!.creditsMilli-5432);
+      const historyBefore=(await readCampaignHistory(other.firestore,other.functions,id,other.uid)).records;
+      await processCampaign.run({params:{gameId:id,uid:other.uid,commandId:accepted.ingress.key},time:new Date().toISOString(),data:{val:()=>accepted.payload}} as never);
+      expect(await read(other)).toEqual(reserved);
+      expect((await readCampaignHistory(other.firestore,other.functions,id,other.uid)).records).toEqual(historyBefore);
+      expect((await command(owner,{kind:"trade.withdraw",offerId})).receipt.reason).toBe("trade-pending");
+      const parallel=await Promise.all([settleCampaignTicks(id,()=>startAt+900000),settleCampaignTicks(id,()=>startAt+900000)]);
+      expect(parallel.reduce((a,b)=>a+b,0)).toBe(1);
+      view=await read();const otherSettled=await read(other);
+      expect(view.trades.offers).toEqual([]);expect(view.trades.ledger).toHaveLength(1);
+      expect(view.trades.ledger[0]).toMatchObject({id:offerId,result:"settled",settledTick:1});
+      expect(view.empire!.creditsMilli).toBe(initial.empire!.creditsMilli-12345+5432+view.economy!.ledger!.creditsMilli);
+      expect(otherSettled.empire!.creditsMilli).toBe(initialOther.empire!.creditsMilli-5432+12345+otherSettled.economy!.ledger!.creditsMilli);
+      expect(view.economy!.ledger!.marketDividendsMilli??0).toBe(0);
+      expect((await read(third)).trades.ledger).toEqual([]);
+      expect(await settleCampaignTicks(id,()=>startAt+900000)).toBe(0);expect(await read()).toEqual(view);
+      // New exact terms; concurrent acceptance admits only one reservation.
+      await command(owner,{kind:"trade.offer",seat:1,giveMilli:1000,requestMilli:2000});
+      const next=(await read()).trades.offers[0], revision=(await read(other)).revision;
+      const race=await Promise.all([0,1].map(()=>campaignCommand(other,id,{kind:"trade.accept",expectedRevision:revision,offerId:next.id},activeMode,epoch)));
+      expect(race.filter(r=>r.receipt.status==="accepted")).toHaveLength(1);
+      expect(race.filter(r=>r.receipt.status==="rejected")).toHaveLength(1);
+      expect((await read(other)).empire!.creditsMilli).toBe(otherSettled.empire!.creditsMilli-2000);
+      await command(owner,{kind:"campaign.pause"});
+      const paused=await read();expect(await settleCampaignTicks(id,()=>startAt+20*900000)).toBe(0);
+      expect((await command(owner,{kind:"trade.offer",seat:1,giveMilli:1,requestMilli:0})).receipt.reason).toBe("paused");
+      expect(await read()).toEqual(paused);
+      if(process.env.CLUSTER_KMS_TEST==="true") {
+        const migration=await command(owner,{kind:"campaign.migrate",targetMode:activeMode==="real"?"mock":"real"});expect(migration.receipt.status).toBe("accepted");
+        activeMode=activeMode==="real"?"mock":"real";epoch++;
+        expect((await read()).trades).toEqual(paused.trades);
+        expect((await read(other)).trades.offers[0].id).toBe(next.id);
+      } else await command(owner,{kind:"campaign.resume"});
+      // Catch-up executes each intermediate tick: the already accepted offer
+      // settles at tick two, not as an expired offer at the catch-up horizon.
+      let settled=0;
+      while((await read()).production!.tick<10) settled+=await settleCampaignTicks(id,()=>startAt+10*900000+10000);
+      expect(settled).toBe(9);
+      const history=(await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records;
+      expect(history.flatMap(v=>v.trades?.ledger??[]).some(o=>o.id===next.id&&o.result==="settled"&&o.settledTick===2)).toBe(true);
+      expect((await read()).trades.offers).toEqual([]);
+      await command(owner,{kind:"trade.offer",seat:1,giveMilli:1000,requestMilli:0});
+      const expires=(await read()).trades.offers[0], available=(await read()).empire!.creditsMilli;
+      let income=0;
+      while((await read()).production!.tick<expires.expiresTick) {
+        const current=await read();expect(await settleCampaignTicks(id,()=>current.production!.nextTickAt)).toBe(1);
+        income+=(await read()).economy!.ledger!.creditsMilli;
+      }
+      const expired=await read();expect(expired.trades.ledger[0]).toMatchObject({id:expires.id,result:"expired"});
+      expect(expired.empire!.creditsMilli).toBe(available+1000+income);
+      expect((await read(third)).trades).toEqual({enabled:true,offers:[],ledger:[]});
+    },240000,
+  );

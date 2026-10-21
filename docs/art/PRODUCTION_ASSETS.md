@@ -87,3 +87,7 @@ Exact generation prompt:
 ## Return reports
 
 `BriefingReport.svelte` reuses the existing `galaxy-dust.webp`, stellar atlas, construction market/station illustrations and faction atlas. Artwork is decorative: star class and message-author faction come from the authorized record; all event labels, quantities and inspection actions are semantic HTML. FleetSymbol and DevelopmentIcon remain the shared production marks. No new raster generation or asset provenance is introduced.
+
+## Credit offers
+
+`CreditOffers.svelte` reuses `construction-market.webp` as decorative exchange scenery. Exact terms, participants, balances and outcomes remain semantic HTML text and controls. No generated lettering or new raster asset conveys game state.

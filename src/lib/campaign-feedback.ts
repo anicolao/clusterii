@@ -15,6 +15,18 @@ const conversationMessages: Record<string, string> = {
   "conversation.read": "Reading position saved.",
 };
 const reasons: Record<string, string> = {
+  "trade-invalid":
+    "Choose another commander and exact, nonnegative credit amounts with at most three decimal places.",
+  "trade-unavailable":
+    "Credit offers are available in new development campaigns after home assignment.",
+  "trade-balance":
+    "This exchange exceeds the supported balance. Review the amounts before trying again.",
+  "trade-limit":
+    "The campaign has reached its open-offer limit. Withdraw an offer or wait for settlement or expiry.",
+  "trade-pending":
+    "This offer already has an acknowledged acceptance or withdrawal. Check its confirmed outcome.",
+  "trade-expired":
+    "This offer cannot settle before its expiry. The reserved credits return when expiry is confirmed.",
   "visit-invalid":
     "This briefing no longer matches an accessible record. Recover the latest authorized history and review it again.",
   "briefing-unavailable":
@@ -145,37 +157,43 @@ export function campaignFeedback(
       (kind === "conversation.invite" && (scope.sharedMessages ?? 0) > 0
         ? `Invitation sent. ${scope.sharedMessages} selected earlier messages will be shared after acceptance.`
         : conversationMessages[kind]) ??
-      (kind === "campaign.visit"
-        ? "Visit saved. No messages were marked read."
-        : kind === "fleet.route"
-          ? "Route accepted. Departure scheduled."
-          : kind === "fleet.cancel"
-            ? "Fleet order cancelled. Reservations released; no forces moved."
-            : kind === "fleet.split" || kind === "fleet.merge"
-              ? "Reorganization accepted. Execution scheduled."
-              : kind === "fleet.load" || kind === "fleet.unload"
-                ? "Cargo order accepted. Transfer scheduled."
-                : kind.startsWith("fleet.")
-                  ? "Fleet order accepted. Reserved forces and its execution tick are listed in the manifest."
-                  : kind === "market.focus"
-                    ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
-                    : kind === "construction.build"
-                      ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
-                      : kind === "construction.cancel"
-                        ? "Cancellation accepted. The refund settles at its scheduled tick."
-                        : kind === "research.select"
-                          ? "Research order accepted. It will apply at its scheduled tick."
-                          : kind === "campaign.migrate"
-                            ? "Encryption changed and verified. Campaign resumed."
-                            : kind === "campaign.pause"
-                              ? "Campaign paused. Admissions and scheduled start are stopped."
-                              : kind === "campaign.resume"
-                                ? "Campaign resumed."
-                                : kind === "campaign.create"
-                                  ? "Campaign created. Choose your faction."
-                                  : kind === "campaign.leave"
-                                    ? "Your seat has been released."
-                                    : "Your seat is confirmed."),
+      (kind === "trade.offer"
+        ? "Offer shared. Your offered credits are reserved."
+        : kind === "trade.accept"
+          ? "Acceptance acknowledged. Both sides are reserved until settlement."
+          : kind === "trade.withdraw"
+            ? "Withdrawal acknowledged. Reserved credits return at settlement."
+            : kind === "campaign.visit"
+              ? "Visit saved. No messages were marked read."
+              : kind === "fleet.route"
+                ? "Route accepted. Departure scheduled."
+                : kind === "fleet.cancel"
+                  ? "Fleet order cancelled. Reservations released; no forces moved."
+                  : kind === "fleet.split" || kind === "fleet.merge"
+                    ? "Reorganization accepted. Execution scheduled."
+                    : kind === "fleet.load" || kind === "fleet.unload"
+                      ? "Cargo order accepted. Transfer scheduled."
+                      : kind.startsWith("fleet.")
+                        ? "Fleet order accepted. Reserved forces and its execution tick are listed in the manifest."
+                        : kind === "market.focus"
+                          ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
+                          : kind === "construction.build"
+                            ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
+                            : kind === "construction.cancel"
+                              ? "Cancellation accepted. The refund settles at its scheduled tick."
+                              : kind === "research.select"
+                                ? "Research order accepted. It will apply at its scheduled tick."
+                                : kind === "campaign.migrate"
+                                  ? "Encryption changed and verified. Campaign resumed."
+                                  : kind === "campaign.pause"
+                                    ? "Campaign paused. Admissions and scheduled start are stopped."
+                                    : kind === "campaign.resume"
+                                      ? "Campaign resumed."
+                                      : kind === "campaign.create"
+                                        ? "Campaign created. Choose your faction."
+                                        : kind === "campaign.leave"
+                                          ? "Your seat has been released."
+                                          : "Your seat is confirmed."),
     error: "",
     remedy: null,
   };

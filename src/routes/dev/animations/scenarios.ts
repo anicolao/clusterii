@@ -1,3 +1,4 @@
+import { exchange } from "@shared/trades";
 import { mixedBriefing } from "./briefing-scenario";
 import { RecoveryConflict } from "$lib/recovery-store";
 import {historyRecoveryMessage} from "$lib/campaign-history";
@@ -54,6 +55,14 @@ export function scheduledFrame(time:number) {
 export const historyRecords = [campaignView(migrationSource,"lab"), campaignView(seated,"lab")];
 const productionStart = startCampaign(fullRoster,fullRoster.startAt!);
 const firstProduction = produce(productionStart,productionStart.economy!);
+const tradeIssued = exchange(productionStart,{kind:"trade.offer",expectedRevision:productionStart.revision,seat:1,giveMilli:10001,requestMilli:2002},"scheduled-0","lab-credit",productionStart.economy!.nextTickAt-1);
+const tradeAccepted = exchange(tradeIssued,{kind:"trade.accept",expectedRevision:tradeIssued.revision,offerId:tradeIssued.trades!.offers[0].id},"scheduled-1","lab-credit-accept",productionStart.economy!.nextTickAt-1);
+const tradeSettled = produce(tradeAccepted,tradeAccepted.economy!);
+export function creditFrame(time:number) {
+ const state=time>=4800?tradeSettled.campaign:time>=3200?tradeAccepted:time>=2200?tradeIssued:productionStart;
+ return {view:campaignView(state,"scheduled-0"),draft:{seat:"1",give:"10.001",request:"2.002"},commandId:"lab-credit",commandKind:"trade.offer",selected:time>=2200?tradeIssued.trades!.offers[0].id:"",pending:time>=500&&time<1200,busy:false,message:time>=2200?campaignFeedback("trade.offer",{status:"accepted"}).message:time>=500&&time<1200?campaignPendingMessage:"",error:time>=1200&&time<2200?campaignNetworkMessage:""};
+}
+
 const mixedBriefingPeriod = mixedBriefing(productionStart);
 export function briefingFrame(time:number){if(time>=4800)return mixedBriefingPeriod;const snapshot=campaignView(firstProduction.campaign,"scheduled-0");return {snapshot,records:time<1200?[]:[campaignView(productionStart,"scheduled-0"),snapshot],earlier:time<1200,loading:time>=500&&time<1200,pending:(time>=2200&&time<3200)||time>=4200,preparing:time>=1800&&time<2200,blocked:time>=1600&&time<1800,recovering:time>=4200,message:time>=3200&&time<3800?campaignFeedback("campaign.visit",{status:"accepted"}).message:"",error:time>=3800&&time<4200?"Connection interrupted. Your visit has not changed. Retry when connected.":""};}
 export function productionFrame(time:number) {return {view:campaignView(time>=2200?{...firstProduction.campaign,economy:firstProduction.economy}:productionStart,"scheduled-0"),clock:productionStart.economy!.nextTickAt-1000+time};}
@@ -130,6 +139,7 @@ export function draftRecoveryFrame(time: number) {
   return { ...conversationFrame(2200), drafts: {[conversationId]: "My text remains available while the saved draft is reviewed."}, draftReady: time >= 1200, draftSaving: time >= 3200 && time < 4800, draftSaved: time >= 1200 && !conflict && !(time >= 3200 && time < 4800), draftConflict: conflict, draftError: conflict ? new RecoveryConflict("draft").message : "" };
 }
 export const scenarios = [
+ {id:"credit-offers",label:"Credit offers: exact terms → pending → reconnect → reserved → settled",frames:[0,500,1200,2200,3200,4800].map(at=>({at,feedback:{message:"",error:"",remedy:at===1200?"network":"none"}}))},
  {id:"invalid-recovery",label:"Invalid order: review → explicit local discard confirmation",frames:[0,1200].map(at=>({at,feedback:{message:"",error:"",remedy:"validation"}}))},
  {id:"draft-recovery",label:"Draft recovery: reload → saved → other tab conflict → saved",frames:[0,1200,2200,3200,4800].map(at=>({at,feedback:{message:"",error:"",remedy:"none"}}))},
  {id:"conversation-sharing",label:"Selected history: scope review → acceptance → authorized messages",frames:[{at:0,feedback:{message:"",error:"",remedy:"none"}},{at:500,feedback:campaignPending},{at:1200,feedback:campaignFeedback("conversation.accept",{status:"accepted"})}]},
