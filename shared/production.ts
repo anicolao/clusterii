@@ -203,6 +203,11 @@ export function produce(
         system.surface === seat.uid &&
         system.escrowMilli > 0
       ) {
+        const report = next.military?.arrivals?.[seat.uid]?.find(
+          (r) => r.starId === id,
+        );
+        if (report?.detail)
+          report.detail.releasedEscrowMilli = system.escrowMilli;
         ledger.releasedEscrowMilli = checked(
           BigInt(ledger.releasedEscrowMilli) + BigInt(system.escrowMilli),
         );

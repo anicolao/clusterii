@@ -249,7 +249,7 @@ export function assertObservationBudget(
       const ownRoutes =
         moving.filter((f) => f.uid === seat.uid).length +
         queued.filter((o) => o.uid === seat.uid).length;
-      travelBytes += Math.min(count, owned + ownRoutes) * 512;
+      travelBytes += Math.min(count, owned + ownRoutes) * 1536;
     }
   }
   // Reserve the complete next-tick fleet draw matrix, including queued new

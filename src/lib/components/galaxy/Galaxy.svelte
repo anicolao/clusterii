@@ -8,6 +8,8 @@
   import SystemConstruction from "../SystemConstruction.svelte";
   import type { Development } from "@shared/construction";
   import CampaignEconomy from "../CampaignEconomy.svelte";
+  import ArrivalReports from "../ArrivalReports.svelte";
+  import { arrivalRecords } from "$lib/arrival-reports";
   import FleetContacts from "../FleetContacts.svelte";
   import { type FleetContact, lastFleetContacts } from "@shared/fleet-contacts";
   import CampaignHistory from "../CampaignHistory.svelte";
@@ -95,8 +97,24 @@
   let economy = $state(false);
   let history = $state(false);
   let contactsOpen = $state(false);
-  let selectedContact = $state("");
   let records = $state<CampaignView[]>([]);
+  let arrivalsOpen = $state(false);
+  let selectedArrival = $state("");
+  let receivedArrivals = $state<CampaignView[]>([]);
+  const arrivals = $derived(
+    arrivalRecords([view, ...receivedArrivals, ...records]),
+  );
+  $effect(() => {
+    const current = view;
+    untrack(() => {
+      if (current.military?.arrivals?.length)
+        receivedArrivals = arrivalRecords([...receivedArrivals, current]).map(
+          (r) => r.view,
+        );
+    });
+  });
+  let selectedContact = $state("");
+
   let receivedContacts = $state<FleetContact[]>([]);
   const contacts = $derived(
     lastFleetContacts([view, { fleetContacts: receivedContacts }, ...records]),
@@ -140,23 +158,27 @@
     historyError = "";
     await tick();
     if (serial !== historySerial) return;
-    if ((history || contactsOpen) && document.activeElement === document.body)
+    if (
+      (history || contactsOpen || arrivalsOpen) &&
+      document.activeElement === document.body
+    )
       document.querySelector<HTMLElement>(".history-panel")?.focus();
     try {
       const page = await loadHistory(after);
       if (serial !== historySerial) return;
-      records = contactsOpen
-        ? [
-            ...new Map(
-              [...records, ...page.records].map((record) => [
-                record.revision,
-                record,
-              ]),
-            ).values(),
-          ].sort((a, b) => b.revision - a.revision)
-        : after
-          ? [...records, ...page.records]
-          : page.records;
+      records =
+        contactsOpen || arrivalsOpen
+          ? [
+              ...new Map(
+                [...records, ...page.records].map((record) => [
+                  record.revision,
+                  record,
+                ]),
+              ).values(),
+            ].sort((a, b) => b.revision - a.revision)
+          : after
+            ? [...records, ...page.records]
+            : page.records;
       cursor = page.cursor;
       if (!after) {
         await tick();
@@ -175,7 +197,7 @@
         historyLoading = false;
         await tick();
         if (
-          (history || contactsOpen) &&
+          (history || contactsOpen || arrivalsOpen) &&
           serial === historySerial &&
           document.activeElement === document.body
         ) {
@@ -188,6 +210,25 @@
         }
       }
     }
+  }
+  async function closeArrivals() {
+    arrivalsOpen = false;
+    historySerial++;
+    historyLoading = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="arrivals"]')?.focus();
+  }
+  async function inspectArrival(starId: string) {
+    arrivalsOpen = false;
+    selected = starId;
+    cameraRequest = {
+      action: "selected",
+      starId,
+      sequence: cameraRequest.sequence + 1,
+    };
+    observation = false;
+    await tick();
+    document.querySelector<HTMLElement>(".system-details")?.focus();
   }
   async function closeContacts() {
     contactsOpen = false;
@@ -229,6 +270,7 @@
     kind:
       | "roster"
       | "systems"
+      | "arrivals"
       | "contacts"
       | "history"
       | "economy"
@@ -240,7 +282,12 @@
     economy = kind === "economy";
     history = kind === "history";
     contactsOpen = kind === "contacts";
-    if ((history || contactsOpen) && !records.length && !historyLoading)
+    arrivalsOpen = kind === "arrivals";
+    if (
+      (history || contactsOpen || arrivalsOpen) &&
+      !records.length &&
+      !historyLoading
+    )
       void readHistory();
     roster = kind === "roster";
     listing = kind === "systems";
@@ -250,7 +297,7 @@
       document.querySelector<HTMLElement>(".construction-panel")?.focus();
     else if (economy)
       document.querySelector<HTMLElement>(".economy-panel")?.focus();
-    else if (history || contactsOpen)
+    else if (history || contactsOpen || arrivalsOpen)
       document.querySelector<HTMLElement>(".history-panel")?.focus();
     else if (listing) document.getElementById("system-search")?.focus();
     else document.querySelector<HTMLElement>(".roster-panel")?.focus();
@@ -284,13 +331,15 @@
           ? closeConstruction()
           : economy
             ? closeEconomy()
-            : contactsOpen
-              ? closeContacts()
-              : history
-                ? closeHistory()
-                : roster
-                  ? closeRoster()
-                  : closeList());
+            : arrivalsOpen
+              ? closeArrivals()
+              : contactsOpen
+                ? closeContacts()
+                : history
+                  ? closeHistory()
+                  : roster
+                    ? closeRoster()
+                    : closeList());
       return;
     }
     if (event.key !== "Tab") return;
@@ -339,6 +388,7 @@
       listing ||
       history ||
       contactsOpen ||
+      arrivalsOpen ||
       economy ||
       construction ||
       military}
@@ -384,6 +434,7 @@
       listing ||
       history ||
       contactsOpen ||
+      arrivalsOpen ||
       economy ||
       construction ||
       military}
@@ -430,6 +481,7 @@
       listing ||
       history ||
       contactsOpen ||
+      arrivalsOpen ||
       economy ||
       construction ||
       military}
@@ -528,6 +580,11 @@
       >
       {#if loadHistory}<ActionButton
           class="secondary"
+          data-focus="arrivals"
+          aria-expanded={arrivalsOpen}
+          onclick={() => openPanel("arrivals")}>Arrival reports</ActionButton
+        ><ActionButton
+          class="secondary"
           data-focus="contacts"
           aria-expanded={contactsOpen}
           onclick={() => openPanel("contacts")}>Fleet contacts</ActionButton
@@ -545,6 +602,28 @@
       >
     </div>
   </aside>
+  {#if arrivalsOpen}<div
+      class="construction-panel contact-panel history-panel"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      aria-label="Arrival reports panel"
+      onkeydown={panelKeys}
+    >
+      <ArrivalReports
+        records={arrivals}
+        bind:selected={selectedArrival}
+        loading={historyLoading}
+        error={historyError}
+        earlier={!!cursor}
+        newer={!!records.length && records[0].revision < view.revision}
+        onearlier={() => readHistory(cursor)}
+        onlatest={() => readHistory()}
+        onretry={() => readHistory(retryCursor)}
+        onclose={closeArrivals}
+        oninspect={inspectArrival}
+      />
+    </div>{/if}
   {#if contactsOpen}<div
       class="construction-panel contact-panel history-panel"
       role="dialog"
