@@ -1170,3 +1170,12 @@ Agent continues independently with live UX-12 return briefing after #54, preserv
 #55 e118a0e return-briefing story is open correctly on #54 and attached. Agent healthy reviewing candidates and resolving readiness using retained traces. Independently reviewed latest change: waits for Save enabled and focused before Enter; authoritative acknowledgement/revision assertions unchanged, no sleep or production change. Final generation/exact/visual acceptance pending.
 
 #47 e2d5cce now passes application and strict Linux story checks with reviewed gallery images; #48 application green. Later checks mostly queued/running. Current #54 preview remains queued and #53 HTTP404 unresolved; inherited raster is not declared fixed by #47 green run. No duplicate intervention. Carry checkpoint into committed/pushed logs; no merge or release completion.
+
+
+## Reviewer progress — 2026-10-21 18:48 Toronto
+
+#55 1d48ca3 pushed four local exact briefing journeys108 captures2.4min and archived narratives; agent healthy reviewing Linux lifecycle candidates. Independent full visual/Linux acceptance remains open. #51 current failure inspected:20 missing new Linux baseline cases plus1994-pixel identity mismatch; instrumented successor artifacts now useful for diagnosis. No interruption; queue evidence handoff.
+
+Exact handoff:
+
+Reviewer finding 2026-10-21 18:48 Toronto: #51 current4f8cb6a story run39680090423 completed with20 missing Linux baseline failures across history/lifecycle/production/research and one known1994-pixel mismatch. Retained /tmp/cluster51-1848-review-failure.log. This successor includes the layout instrumentation, so inspect its completed failure artifacts now for passing/failing identity layout comparison rather than waiting only for #50. Continue your active Linux candidate review with provenance checks and unchanged inherited baselines. Record the diagnosis separately; green runs do not establish a raster fix. Carry latest main checkpoint and attributed logs, commit/push; no merge.
