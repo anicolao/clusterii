@@ -152,3 +152,5 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | R
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry the verified conversation containment repair into the illustrated-story foundation with both prompt histories preserved.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the conversation container correction into profile recovery while retaining the reviewed local story evidence.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote separately inspected pinned Linux profile-recovery candidates for exact comparison without accepting generation as verification.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Correct closed-disclosure geometry using native visibility while retaining open-control rejection and auditing summary targets.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive passing pinned Linux recovery stories and carry native-visibility geometry corrections without changing reviewed pixels.

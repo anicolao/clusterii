@@ -69,3 +69,14 @@ Twelve darwin-arm64 journeys verify 92 exact captures in 2.6 minutes. These repl
 | desktop | [Both devices](stories/identity-conflict/desktop/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/desktop/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/desktop/darwin-arm64/README.md) |
 | large | [Both devices](stories/identity-conflict/large/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/large/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/large/darwin-arm64/README.md) |
 | short | [Both devices](stories/identity-conflict/short/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/short/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/short/darwin-arm64/README.md) |
+
+### Verified Linux profile recovery
+
+Pinned Linux exact comparison at 295ae43 passes all 24 combined stories in 5.4 minutes, including these 12 recovery journeys/92 captures. This is emulator evidence, not hosted or independent full visual acceptance.
+
+| Viewport | Conflict | Retry | Keyboard |
+| --- | --- | --- | --- |
+| phone | [Both devices](stories/identity-conflict/phone/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/phone/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/phone/linux-arm64/README.md) |
+| desktop | [Both devices](stories/identity-conflict/desktop/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/desktop/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/desktop/linux-arm64/README.md) |
+| large | [Both devices](stories/identity-conflict/large/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/large/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/large/linux-arm64/README.md) |
+| short | [Both devices](stories/identity-conflict/short/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/short/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/short/linux-arm64/README.md) |
