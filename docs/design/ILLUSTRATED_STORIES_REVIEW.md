@@ -1,0 +1,15 @@
+# Illustrated entry and identity stories
+
+Base: `feat/credit-offers` (#34). This slice closes the missing shared-story tooling and starts migration; it does not complete the full UX inventory.
+
+[E2E_GUIDE.md](../../E2E_GUIDE.md) is mandatory from AGENTS, README and the implementation plan. Each production player step declares its action, acknowledged outcome, named facts and player viewpoints. The shared helper audits visible geometry without scrolling, waits for fonts/images/finite motion, compares exact decoded RGBA against reviewed platform baselines, then generates its ordered narrative. Harness faults/clocks are explicitly distinct steps. A failed journey writes failure metadata, never a passed story document.
+
+Entry/Learn has six steps, including every chapter and keyboard focus restoration. Identity has five steps through real Google emulator login, encrypted save acknowledgement, reload persistence and private-DOM removal on sign-out. Both run at phone/desktop/4K/short sizes. The exact replacements pass and replace `journey.spec.ts`; its historical baseline images are retained.
+
+The pinned Linux workflow always verifies and generates candidates only when the PR has the explicit `baseline-candidates` label. Generation cannot update expected images; explicit promotion requires a written review. Exact verification fails missing baselines and renderer drift. The fixture records browser, fonts, OS/container, architecture, rendering flags and actual page settings, with source/spec provenance. The archive verifies pixels again and links the identical baseline files without duplicating PNGs.
+
+Policy checks reject new or changed procedural specs, direct capture bypasses, fixed sleeps, masks, ambiguous first/last selectors and snapshot-update mode. Existing procedural hashes freeze migration scope; these static checks supplement review rather than proving semantic coverage. [The UX-01–16 inventory](../testing/STORY_INVENTORY.md) identifies incomplete branches, including deterministic campaign setup and multiplayer viewpoints. Production services and random map generation remain unchanged.
+
+Validation: 91 unit tests/1,536 assertions, five isolated browser-tool tests/nine assertions, three policy tests and the 12-test prompt-hook suite pass. Final type checks and lint pass; the isolated helper suite also passes after final type refinements. [Baseline review and retained failures](../testing/BASELINE_REVIEW.md) distinguish inspected candidates from verification. Linux exact comparison, current-head CI, independent visual acceptance, remaining story migration and hosted OAuth/Scheduler remain gates. No rules or release approval is implied.
+
+Exact local verification passed all eight journeys/44 captures in 35.6 seconds; generated narratives and capture hashes are archived in `docs/testing/stories/`. The UI is unchanged. Linux candidates and comparisons remain pending.

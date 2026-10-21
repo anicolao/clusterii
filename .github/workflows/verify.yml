@@ -21,7 +21,7 @@ jobs:
         with:
           bun-version: 1.3.10
       - run: bun install --frozen-lockfile && bun install --cwd functions --frozen-lockfile
-      - run: bun run check && bun run lint && bun run test
+      - run: bun run check && bun run lint && bun run test && bun run test:story-policy
       - run: bunx playwright install --with-deps chromium
       - run: bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'
       - uses: actions/upload-artifact@v4

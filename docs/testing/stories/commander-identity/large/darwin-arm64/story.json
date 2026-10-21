@@ -1,0 +1,133 @@
+{
+  "id": "commander-identity",
+  "title": "Save and recover a commander identity",
+  "description": "Étoile signs in through the real Google emulator UI, chooses an alias and portrait, waits for an encrypted profile command receipt, reloads to recover the saved identity, and signs out. No campaign state is injected.",
+  "inventory": [
+    "UX-01",
+    "UX-14",
+    "UX-16"
+  ],
+  "source": {
+    "commit": "dd7c2510195d2637b38cc929c1d24d964733c07c",
+    "dirty": true,
+    "spec": "tests/browser/identity.story.spec.ts",
+    "specSha256": "98606795262fadc270369c9ad82531bcea96fff6f4cff960a63da758268d38d0"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "arrive",
+      "description": "Étoile arrives signed out, with no private preview.",
+      "actor": "Étoile",
+      "kind": "player",
+      "acknowledgement": "Play is available on the entry surface.",
+      "verifications": [
+        "No commander identity is displayed before authentication."
+      ],
+      "views": [
+        {
+          "player": "Étoile",
+          "image": "001-arrive-1-toile.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "sign-in",
+      "description": "Étoile signs in with Google and reaches the identity editor.",
+      "actor": "Étoile",
+      "kind": "player",
+      "acknowledgement": "Authentication completes and the commander name field is available.",
+      "verifications": [
+        "The actual portrait picker exposes eight choices and Save is available."
+      ],
+      "views": [
+        {
+          "player": "Étoile",
+          "image": "002-sign-in-1-toile.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-identity",
+      "description": "Étoile selects the Deepseer and saves the chosen identity.",
+      "actor": "Étoile",
+      "kind": "player",
+      "acknowledgement": "The authoritative encrypted profile command is acknowledged as saved.",
+      "verifications": [
+        "The exact alias and Deepseer remain selected after acknowledgement."
+      ],
+      "views": [
+        {
+          "player": "Étoile",
+          "image": "003-save-identity-1-toile.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload",
+      "description": "Étoile reloads and recovers the same saved commander.",
+      "actor": "Étoile",
+      "kind": "player",
+      "acknowledgement": "The saved alias and portrait return from persisted encrypted profile history.",
+      "verifications": [
+        "The recovered identity editor offers sign out and editing without a duplicate save."
+      ],
+      "views": [
+        {
+          "player": "Étoile",
+          "image": "004-reload-1-toile.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "sign-out",
+      "description": "Étoile signs out and the entry surface removes private identity details.",
+      "actor": "Étoile",
+      "kind": "player",
+      "acknowledgement": "Play returns after sign-out.",
+      "verifications": [
+        "The alias and identity control are absent from the signed-out DOM."
+      ],
+      "views": [
+        {
+          "player": "Étoile",
+          "image": "005-sign-out-1-toile.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

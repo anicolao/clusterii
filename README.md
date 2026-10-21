@@ -24,6 +24,8 @@ Step 0’s [review guide](docs/design/STEP_0_REVIEW.md) covers the [rules](RULES
 
 ## Contributing
 
+Read [E2E_GUIDE.md](E2E_GUIDE.md) before writing or changing browser tests. Illustrated user stories use the shared TestStepHelper, named acknowledged outcomes and assertions, generated ordered walkthroughs, and exact separately reviewed visual baselines. Procedural tests and loose captures do not satisfy this contract.
+
 Use Node.js 22 or later for the prompt checks. Install the commit hook with `git config core.hooksPath .githooks`, and run `node --test scripts/check-prompts.test.mjs` to verify enforcement. Follow [AGENTS.md](AGENTS.md) and record requests verbatim in [PROMPTS.md](PROMPTS.md).
 
 Each commit includes a new prompt or a continuation record. If one request needs multiple commits, create `PROMPT_WORK.md` to record the additional steps without repeating the prompt. [AGENTS.md](AGENTS.md) defines the format; the file is absent until needed.

@@ -1,0 +1,150 @@
+{
+  "id": "learn-and-return",
+  "title": "Learn the campaign and return to entry",
+  "description": "A new visitor reads each field-guide chapter, keeps keyboard focus through navigation, and returns without signing in or changing a campaign.",
+  "inventory": [
+    "UX-01",
+    "UX-15",
+    "UX-16"
+  ],
+  "source": {
+    "commit": "dd7c2510195d2637b38cc929c1d24d964733c07c",
+    "dirty": true,
+    "spec": "tests/browser/entry.story.spec.ts",
+    "specSha256": "0e855287319234fd50d58104e4928ca5159e0e5a05ef652918a2ced81c3ed052"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "enter",
+      "description": "The visitor arrives at Cluster and can choose Play or Learn.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "The production entry surface is ready for input.",
+      "verifications": [
+        "Learn is available and no private campaign or commander is shown."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "001-enter-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "open-guide",
+      "description": "The visitor opens Learn with the keyboard and reads the purpose of alliances.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "The first chapter heading receives focus.",
+      "verifications": [
+        "The next chapter and return controls are available."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "002-open-guide-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "chapter-2",
+      "description": "The visitor reads “Two fronts. One system.”.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "The chapter “Two fronts. One system.” is visible and focused.",
+      "verifications": [
+        "The guide remains a readable bounded surface with a return control."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "003-chapter-2-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "chapter-3",
+      "description": "The visitor reads “Build the means to prevail”.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "The chapter “Build the means to prevail” is visible and focused.",
+      "verifications": [
+        "The guide remains a readable bounded surface with a return control."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "004-chapter-3-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "chapter-4",
+      "description": "The visitor reads “Information is influence”.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "The chapter “Information is influence” is visible and focused.",
+      "verifications": [
+        "The guide remains a readable bounded surface with a return control."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "005-chapter-4-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return",
+      "description": "The visitor closes Learn and returns to its opening control.",
+      "actor": "Visitor",
+      "kind": "player",
+      "acknowledgement": "Focus returns to Learn.",
+      "verifications": [
+        "Play is still available; learning did not sign in or create a campaign."
+      ],
+      "views": [
+        {
+          "player": "Visitor",
+          "image": "006-return-1-visitor.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

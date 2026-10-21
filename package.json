@@ -15,7 +15,12 @@
     "format": "biome check --write shared functions/src src/lib",
     "lint": "biome check shared functions/src src/lib && prettier --check \"src/**/*.svelte\" \"src/**/*.css\"",
     "test:service": "bun test tests/service.test.ts",
-    "format:ui": "prettier --write \"src/**/*.svelte\" \"src/**/*.css\""
+    "format:ui": "prettier --write \"src/**/*.svelte\" \"src/**/*.css\"",
+    "test:stories": "node scripts/run-stories.mjs verify",
+    "test:stories:generate": "node scripts/run-stories.mjs generate",
+    "test:story-policy": "node --test scripts/check-story-policy.test.mjs && node scripts/check-story-policy.mjs",
+    "test:stories:promote": "node scripts/promote-story-baselines.mjs",
+    "test:story-tools": "bun test tests/story-tools.test.ts"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "5.2.8",

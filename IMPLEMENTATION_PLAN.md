@@ -187,6 +187,8 @@ Rehearse the selected predecessor-data migration or archive policy; do not silen
 
 ## Verification and completion standard
 
+Read [E2E_GUIDE.md](E2E_GUIDE.md) before writing or changing browser tests. Illustrated user stories use the shared TestStepHelper, named acknowledged outcomes and assertions, generated ordered walkthroughs, and exact separately reviewed visual baselines. Procedural tests and loose captures do not satisfy this contract.
+
 Each feature includes shared-rule tests, applicable Firebase emulator tests, and browser journeys through ordinary player controls. Use illustrated browser journeys and a shared step helper for changed screens. Capture acknowledged outcomes with loaded fonts/images and settled motion; assert behavior and geometry as well as pixels. Pin renderer/browser/font environments and review baseline changes separately from verification. Exercise phone 393×852, desktop 1440×1000, large display 3840×2160, and short-desktop layouts; large-display coverage does not add a shared-table game mode. Use independent players/sessions for concurrency, diplomacy, and visibility tests; do not substitute admin-injected state for the main end-to-end journey.
 
 | Layer | Required evidence |
