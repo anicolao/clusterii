@@ -209,3 +209,5 @@ Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | M
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Propagate reviewed Linux feedback baselines and the 15:48 supervisory checkpoint into lifecycle stories.
 
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Add reviewed research lab stories and exact four-viewport evidence while retaining publication and inherited CI gates.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Register research lab PR49 dependency, preview and scoped evidence in the acceptance table.

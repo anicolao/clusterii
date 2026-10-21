@@ -54,6 +54,8 @@ Review branches remain unmerged. Rule data marked `review` is not owner-approved
 
 The selections in STEP_0_REVIEW.md remain review proposals: public roster sizes, affinities, starting economy, map fairness/visibility, speculation formula, queues, combat normalization, force-cap allocation priority, alliance timing, victory threshold, repeated-partner penalty and end conditions. Implementing a development scenario does not approve these rules. Public release requires explicit owner acceptance and associated simulations/security evidence.
 
+| Illustrated research lab | [#49](https://github.com/anicolao/clusterii/pull/49), `feat/lifecycle-lab-stories` | [Lab](https://anicolao.github.io/clusterii/pr49/dev/animations/) (publication pending) | [Scope and evidence](RESEARCH_LAB_STORIES_REVIEW.md). Four local exact viewport stories/96 reviewed captures, keyboard submission/disclosure, pending/reconnect/scheduled/applied distinctions. Component fixtures only; Linux/current-head CI, hosted revision and independent review remain open. |
+
 ## Review protocol
 
 Capture real rendered states at 393×852, 1440×1000, 3840×2160 and short desktop. Compare composition to approved concepts and retain readable phone identity. Screenshot updates record reviewed changes; matching a regenerated image alone is not visual acceptance. The supervisor independently reviews the produced artifacts and records findings in meta-prompts.md. Hosted OAuth URL checks certify configuration only, not real Google login or persistence.
