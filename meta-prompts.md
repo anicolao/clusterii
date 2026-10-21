@@ -1032,3 +1032,10 @@ Agent healthy on identity-gallery stories. Independently reviewed pending shared
 Exact handoff:
 
 Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed expected d3e34c4 versus hosted4cfaebf; #46 publish39660570655 failed revision fetch with ECONNRESET. Logs retained /tmp/cluster43-publish-latest-review.log and /tmp/cluster46-publish-latest-review.log. Coordinate retries after shared publication queue clears and retain exact-head checks; do not describe current previews as verified until those checks pass. Log reviewer attribution/continuation and carry latest checkpoint. No merge.
+
+
+## Reviewer progress — 2026-10-21 15:48 Toronto
+
+#48 90b0561 lifecycle-lab stories is open correctly stacked on #47 and attached. Read baseline review: eight local exact journeys64 captures11.7sec, standard50ms versus reduced180ms and settled outcomes explicitly classified as component specimens, not wall-clock service evidence. No production component/existing image changes. Independent full visual/Linux acceptance remains open.
+
+Agent healthy reviewing Linux feedback-lab candidates on #46; prior publication handoff recorded in PROMPTS.md. #43/#46 publication failures remain pending coordination; no fresh failure or need to duplicate the queued instructions. #43–48 replacement tests queued/running, #42 identity raster gate unresolved. Carry checkpoint into related committed/pushed logs. No release completion or merge.
