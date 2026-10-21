@@ -9,3 +9,5 @@ Exact local comparison passed all four journeys/24 captures. The procedural iden
 ## Pinned Linux candidates
 
 Run 39622366347 generated all 28 stories. Its separate comparison passed the 24 parent stories and failed only the four new validation stories on missing reviewed Linux baselines. The implementer inspected all 24 Linux validation frames in sequence across four sizes, plus the full-size phone rejection frame. The focused invalid name, retained portrait, specific error and fixed Save control are readable; correction and accepted-save states remain distinct. These candidates are promoted for a fresh exact run, not accepted on generation alone. The native-disclosure geometry correction and verified parent recovery narratives are carried from #36.
+
+Pinned Linux exact run 39624058015 at b3def4c passes all 28 combined stories/202 captures in 6.0 minutes, including the four validation stories/24 images. The verified narratives are archived separately from candidate generation. Current-head application CI, independent visual review and hosted acceptance remain open.

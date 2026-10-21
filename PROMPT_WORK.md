@@ -158,3 +158,5 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive passing pinned Linux recovery stories and carry native-visibility geometry corrections without changing reviewed pixels.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote reviewed Linux validation candidates and carry verified recovery evidence and geometry corrections through the stack.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Migrate invitation admission and returning-identity recovery with independent player viewpoints and denied or missing campaign remedies.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive passing pinned Linux identity-validation narratives and preserve exact preview, current-head and independent-review limits.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified Linux validation narratives and the latest supervisory checkpoint into invitation recovery.

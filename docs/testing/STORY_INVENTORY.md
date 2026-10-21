@@ -97,3 +97,9 @@ Eight local journeys verify 72 exact captures in 1.3 minutes. Host and invitee v
 | desktop | [Invitee and host](stories/invitation-first-admission/desktop/darwin-arm64/README.md) | [Return and recover](stories/invitation-returning-recovery/desktop/darwin-arm64/README.md) |
 | large | [Invitee and host](stories/invitation-first-admission/large/darwin-arm64/README.md) | [Return and recover](stories/invitation-returning-recovery/large/darwin-arm64/README.md) |
 | short | [Invitee and host](stories/invitation-first-admission/short/darwin-arm64/README.md) | [Return and recover](stories/invitation-returning-recovery/short/darwin-arm64/README.md) |
+
+### Verified Linux validation
+
+Pinned Linux comparison at b3def4c passes 28 combined stories/202 captures in 6.0 minutes, including these four validation stories/24 images. Hosted Google and independent full visual review remain separate gates.
+
+[phone](stories/identity-validation/phone/linux-arm64/README.md) · [desktop](stories/identity-validation/desktop/linux-arm64/README.md) · [large](stories/identity-validation/large/linux-arm64/README.md) · [short](stories/identity-validation/short/linux-arm64/README.md)

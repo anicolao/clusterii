@@ -1,0 +1,149 @@
+{
+  "id": "identity-validation",
+  "title": "Correct an invalid commander identity",
+  "description": "A commander enters a name, receives a focused validation remedy for an overlong draft, corrects it and receives the real encrypted-save acknowledgement before recovering it after reload.",
+  "inventory": [
+    "UX-14",
+    "UX-16"
+  ],
+  "source": {
+    "commit": "78d569a6768182d207673a86eab56672113415f8",
+    "dirty": false,
+    "spec": "tests/browser/identity-validation.story.spec.ts",
+    "specSha256": "cf1d117ee9e2e0f3c68a6043db622cdfae7bc7fd2ff9695b42ec65beb9282953"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "short",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "sign-in",
+      "description": "Sign in and open the production identity editor.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The authenticated identity editor is ready.",
+      "verifications": [
+        "Save is available and no profile command has been submitted."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "001-sign-in-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "draft",
+      "description": "Draft a valid name and select the Deepseer portrait.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The name and portrait remain selected locally.",
+      "verifications": [
+        "Editing has not written a profile."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "002-draft-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reject-invalid-name",
+      "description": "Attempt to save a 25-character name and read the specific validation remedy.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The editor explains the 2–24 character requirement.",
+      "verifications": [
+        "The invalid draft and portrait are retained, focus returns to the name, and reconnect is not offered."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "003-reject-invalid-name-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "correct-draft",
+      "description": "Correct the name in the preserved draft.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The corrected draft is ready to save.",
+      "verifications": [
+        "The portrait remains selected and no command was sent before commitment."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "004-correct-draft-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-correction",
+      "description": "Save the corrected identity and wait for authoritative acceptance.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "Identity saved confirms the accepted command.",
+      "verifications": [
+        "The validation error clears and exactly one canonical revision, version and receipt exist."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "005-save-correction-1-commander.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-correction",
+      "description": "Reload and recover the accepted correction without another write.",
+      "actor": "Commander",
+      "kind": "player",
+      "acknowledgement": "The saved name and portrait are recovered.",
+      "verifications": [
+        "Recovery keeps the original saved revision and no validation error."
+      ],
+      "views": [
+        {
+          "player": "Commander",
+          "image": "006-recover-correction-1-commander.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
