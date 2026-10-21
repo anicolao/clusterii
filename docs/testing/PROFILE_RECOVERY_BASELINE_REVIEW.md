@@ -11,3 +11,5 @@ Exact local comparison passed all 12 recovery journeys/92 captures in 2.6 minute
 ## Pinned Linux candidates
 
 Run 39620094426 at a63b38e generated all 24 stories. Its verification retained 12 existing passing stories and failed the 12 new recovery stories solely on missing reviewed Linux baselines. The implementer inspected the three complete Linux contact sheets (48 conflict, 24 retry, 20 keyboard captures), plus full-size phone conflict and short pending frames. Draft/error text, selected portraits, replacement/retry controls and focus outlines remain legible and contained. Four file-backed reconnect evidence records are present in the downloaded generation artifact. These 92 new Linux candidates are promoted for a separate exact run; this is not comparison success or independent full visual approval.
+
+Pinned Linux exact run 39622027521 at 295ae43 passes all 24 stories/178 captures in 5.4 minutes, including all 12 recovery stories/92 images. Verified narratives are archived separately from generation. The propagated native-disclosure geometry correction requires fresh current-head checks; independent full visual and hosted acceptance remain open.

@@ -75,3 +75,14 @@ Twelve darwin-arm64 journeys verify 92 exact captures in 2.6 minutes. These repl
 Four local journeys verify 24 exact captures after separate candidate review. The invalid draft sends no command, retains its portrait and focused name, and receives a validation remedy; correction saves one canonical revision and survives reload. Linux, independent full review and native keyboard acceptance remain open.
 
 [phone](stories/identity-validation/phone/darwin-arm64/README.md) · [desktop](stories/identity-validation/desktop/darwin-arm64/README.md) · [large](stories/identity-validation/large/darwin-arm64/README.md) · [short](stories/identity-validation/short/darwin-arm64/README.md)
+
+### Verified Linux profile recovery
+
+Pinned Linux exact comparison at 295ae43 passes all 24 combined stories in 5.4 minutes, including these 12 recovery journeys/92 captures. This is emulator evidence, not hosted or independent full visual acceptance.
+
+| Viewport | Conflict | Retry | Keyboard |
+| --- | --- | --- | --- |
+| phone | [Both devices](stories/identity-conflict/phone/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/phone/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/phone/linux-arm64/README.md) |
+| desktop | [Both devices](stories/identity-conflict/desktop/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/desktop/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/desktop/linux-arm64/README.md) |
+| large | [Both devices](stories/identity-conflict/large/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/large/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/large/linux-arm64/README.md) |
+| short | [Both devices](stories/identity-conflict/short/linux-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/short/linux-arm64/README.md) | [Focus return](stories/identity-keyboard-return/short/linux-arm64/README.md) |

@@ -154,3 +154,6 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the conversation container correction into profile recovery while retaining the reviewed local story evidence.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote separately inspected pinned Linux profile-recovery candidates for exact comparison without accepting generation as verification.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry reviewed profile Linux candidates and conversation containment into the identity-validation successor.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Correct closed-disclosure geometry using native visibility while retaining open-control rejection and auditing summary targets.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Archive passing pinned Linux recovery stories and carry native-visibility geometry corrections without changing reviewed pixels.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote reviewed Linux validation candidates and carry verified recovery evidence and geometry corrections through the stack.
