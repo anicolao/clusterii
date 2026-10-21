@@ -8,11 +8,13 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import CampaignResearch from "$lib/components/CampaignResearch.svelte";
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import {
     historyRecords,
     productionFrame,
+    researchFrame,
     legacyProductionView,
   } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
@@ -186,6 +188,20 @@
     </section>
     <section>
       <h2>Account sessions</h2>
+      <h2>Research · shared selection and acknowledgement</h2>
+      {#each ["ready", "pending", "error", "disabled", "applied"] as state}<div
+          style="max-width:620px;margin-bottom:32px"
+        >
+          <CampaignResearch
+            research={researchFrame(state === "applied" ? 3400 : 2400)}
+            pending={state === "pending"}
+            paused={state === "disabled"}
+            error={state === "error"
+              ? "The connection was interrupted. Your selection and pending order are preserved."
+              : ""}
+            onselect={() => {}}
+          />
+        </div>{/each}
       <h2>Economy · shared production ledger</h2>
       {#each [productionFrame(0).view, productionFrame(1200).view, productionFrame(2400).view, legacyProductionView] as sample}<div
           style="height:650px;max-width:620px;margin-bottom:32px"

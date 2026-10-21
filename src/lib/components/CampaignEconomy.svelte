@@ -1,4 +1,6 @@
 <script lang="ts">
+  import CampaignResearch from "./CampaignResearch.svelte";
+  import type { Technology } from "@shared/production";
   import { onMount } from "svelte";
   import type { CampaignView } from "@shared/campaign";
   import { rules } from "@shared/rules";
@@ -7,8 +9,23 @@
     view,
     onclose,
     inspectTime,
-  }: { view: CampaignView; onclose: () => void; inspectTime?: number } =
-    $props();
+    onresearch,
+    message = "",
+    error = "",
+    busy = false,
+    pending = false,
+    onretry,
+  }: {
+    view: CampaignView;
+    onclose: () => void;
+    inspectTime?: number;
+    onresearch?: (target: Technology) => void;
+    message?: string;
+    error?: string;
+    busy?: boolean;
+    pending?: boolean;
+    onretry?: () => void;
+  } = $props();
   let now = $state(Date.now());
   onMount(() => {
     const timer = setInterval(() => (now = Date.now()), 1000);
@@ -33,7 +50,7 @@
   <header>
     <p class="overline gold">Your empire</p>
     <h2>Economy</h2>
-    <p role="status">
+    <p role="status" aria-label="Production schedule">
       {#if !view.productionEnabled}This campaign preserves its earlier behavior
         and does not produce resources. Create a new development campaign to
         play with production.{:else if view.pausedAt != null}Production is
@@ -111,6 +128,16 @@
           ></progress>{/if}
         <p>New levels apply to production from the following tick.</p>
       </section>{/if}
+    {#if research && onresearch}<CampaignResearch
+        {research}
+        paused={view.pausedAt != null}
+        {busy}
+        {pending}
+        {message}
+        {error}
+        onselect={onresearch}
+        {onretry}
+      />{/if}
     {#if view.productionEnabled}<section>
         <h3>Where production goes</h3>
         <p>

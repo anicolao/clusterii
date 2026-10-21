@@ -53,6 +53,17 @@ test("lab replay, pause, seek and reduced motion preserve production outcomes", 
   await page.getByLabel("Scenario",{exact:true}).selectOption("production");
   await seek.fill("1200");await expect(standard.getByRole("status")).toContainText("Awaiting next tick");await expect(reduced.getByRole("status")).toHaveText(await standard.getByRole("status").innerText());
   await seek.fill("2400");await expect(standard.locator(".balance strong")).toHaveText("202.8");await expect(reduced.locator(".balance strong")).toHaveText("202.8");await expect(standard.getByRole("progressbar")).toHaveAttribute("value","1400");
+  await page.getByLabel("Scenario",{exact:true}).selectOption("research");
+  await seek.fill("100");await expect(standard.getByRole("button",{name:"Awaiting acknowledgement…"})).toBeDisabled();
+  await seek.fill("1400");await expect(standard.getByRole("alert")).toContainText("preserved");await expect(reduced.getByRole("alert")).toHaveText(await standard.getByRole("alert").innerText());
+  await seek.fill("2400");await expect(standard.getByRole("region",{name:"Accepted research orders"})).toContainText("Tick 1 · investing");
+  await seek.fill("3400");await expect(standard.getByRole("status",{name:"Applied research order"})).toHaveText((await reduced.getByRole("status",{name:"Applied research order"}).textContent())!);
+  await standard.getByRole("radio",{name:/investing/}).check();
+  await standard.getByRole("button",{name:"Queue investing",exact:true}).click();
+  await expect(standard.getByRole("radio",{name:/investing/})).toBeChecked();
+  await expect(standard.getByRole("button",{name:"Awaiting acknowledgement…"})).toBeDisabled();
+  await expect(standard.getByRole("group",{name:"Research acknowledgement"})).toBeFocused();
+  await seek.fill("1400");await expect(standard.getByRole("radio",{name:/investing/})).toBeChecked();
   await page.getByLabel("Playback speed").selectOption("0.25");
   await page.getByRole("button", { name: "Replay", exact: true }).click();
   await page.getByRole("button", { name: "Pause", exact: true }).click();

@@ -18,6 +18,7 @@ import {
   createCampaign,
   joinOrLeave,
   maintainCampaign,
+  selectResearch,
   startCampaign,
 } from "../../shared/campaign.js";
 import { commandDigest } from "../../shared/command-receipt.js";
@@ -398,7 +399,9 @@ async function handleCampaign(
         );
         next = maintenance
           ? maintainCampaign(current, action, uid, now)
-          : joinOrLeave(current, action, uid, profile, now);
+          : action.kind === "research.select"
+            ? selectResearch(current, action, uid, commandId, Date.now())
+            : joinOrLeave(current, action, uid, profile, now);
       }
     } catch (error) {
       if (error instanceof KeyServiceError) throw error;
@@ -407,6 +410,8 @@ async function handleCampaign(
         [
           "permission",
           "profile-required",
+          "research-unavailable",
+          "research-queue-full",
           "invalid",
           "exists",
           "started",

@@ -19,7 +19,7 @@ const invalid = receiptFeedback(receipt(1, 1, 'A'.repeat(25)));
 const pending = { message: pendingMessage, error: '', remedy: 'none' };
 const reconnect = { message: '', error: networkMessage, remedy: 'network' };
 import { campaignFeedback, campaignPendingMessage, campaignNetworkMessage } from '$lib/campaign-feedback';
-import { createCampaign, joinOrLeave, maintainCampaign, activateEncryptionEpoch, startCampaign, campaignDirectory, campaignView } from '@shared/campaign';
+import { selectResearch, createCampaign, joinOrLeave, maintainCampaign, activateEncryptionEpoch, startCampaign, campaignDirectory, campaignView } from '@shared/campaign';
 const campaign = createCampaign('lab', {kind:'campaign.create',expectedRevision:0,name:'Lab scenario',capacity:4,mode:'mock',development:true},'d'.repeat(64),0);
 function joinReceipt(revision:number) {
   try {joinOrLeave(campaign,{kind:'campaign.join',expectedRevision:revision,faction:'heliac'},'lab',{alias:'Envoy',portrait:'G1'},0);return campaignFeedback('campaign.join',{status:'accepted'});}
@@ -47,7 +47,11 @@ const productionStart = startCampaign(fullRoster,fullRoster.startAt!);
 const firstProduction = produce(productionStart,productionStart.economy!);
 export function productionFrame(time:number) {return {view:campaignView(time>=2200?{...firstProduction.campaign,economy:firstProduction.economy}:productionStart,"scheduled-0"),clock:productionStart.economy!.nextTickAt-1000+time};}
 export const legacyProductionView = campaignView({...productionStart,schemaVersion:1,economy:undefined},"scheduled-0");
+const researchQueued=selectResearch(productionStart,{kind:"research.select",expectedRevision:productionStart.revision,target:"investing"},"scheduled-0","lab-research",productionStart.economy!.nextTickAt-1);
+const researchSettled=produce(researchQueued,researchQueued.economy!);
+export function researchFrame(time:number) {return campaignView(time>=3200?{...researchSettled.campaign,economy:researchSettled.economy}:time>=2200?researchQueued:productionStart,"scheduled-0").economy!.research;}
 export const scenarios = [
+ {id:"research",label:"Research: pending → reconnect → scheduled → applied",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("research.select",{status:"accepted"})},{at:3200,feedback:{message:"Research applied at tick 1.",error:"",remedy:"none"}}]},
  {id:"production",label:"Production: due → confirmed ledger",frames:[{at:0,feedback:campaignPending},{at:2200,feedback:{message:"Production confirmed.",error:"",remedy:"none"}}]},
  {id:"history-recovery",label:"History: loading → reconnect → recovered",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:"History could not be recovered. Retry keeps your place.",remedy:"network"}},{at:2200,feedback:campaignPending},{at:3200,feedback:{message:"Campaign records recovered.",error:"",remedy:"none"}}]},
  {id:"session-ended",label:"Account: ending → signed out",frames:[{at:0,feedback:{message:"Keep this window open while your sessions end.",error:"",remedy:"none"}},{at:1200,feedback:{message:sessionEndedMessage,error:"",remedy:"none"}}]},

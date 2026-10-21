@@ -1,7 +1,16 @@
 import type { Campaign } from "./campaign.js";
 import { faction, rules } from "./rules.js";
 export type Technology = keyof typeof rules.startingResearch;
+export interface ResearchOrder {
+  id: string;
+  sequence: number;
+  effectiveTick: number;
+  target: Technology;
+}
 export interface ResearchState {
+  orders?: ResearchOrder[];
+  lastApplied?: ResearchOrder;
+  appliedOrders?: ResearchOrder[];
   target: Technology;
   levels: Record<Technology, number>;
   progressMilli: Record<Technology, number>;
@@ -23,7 +32,7 @@ export interface Economy {
   remainders: Record<string, { fightersMilli: number; infantryMilli: number }>;
   ledger: Record<string, ProductionLedger>;
 }
-const technologies = Object.keys(rules.startingResearch) as Technology[];
+export const technologies = Object.keys(rules.startingResearch) as Technology[];
 export function initialEconomy(
   campaign: Campaign,
   firstTickAt: number,
@@ -113,6 +122,28 @@ export function produce(campaign: Campaign, economy: Economy) {
   clock.tick++;
   clock.nextTickAt += rules.tickSeconds * 1000;
   clock.ledger = {};
+  for (const research of Object.values(clock.research)) {
+    const due = (research.orders ?? [])
+      .filter((order) => order.effectiveTick <= clock.tick)
+      .sort((a, b) => a.sequence - b.sequence || a.id.localeCompare(b.id));
+    if (due.length) research.appliedOrders = due;
+    for (const order of due) {
+      if (order.target !== research.target) {
+        if (research.levels[research.target] === rules.maximumResearchLevel) {
+          research.progressMilli[order.target] = checked(
+            BigInt(research.progressMilli[order.target]) +
+              BigInt(research.progressMilli[research.target]),
+          );
+          research.progressMilli[research.target] = 0;
+        }
+        research.target = order.target;
+      }
+      research.lastApplied = order;
+    }
+    research.orders = (research.orders ?? []).filter(
+      (order) => order.effectiveTick > clock.tick,
+    );
+  }
   const stars = new Map(campaign.galaxy.stars.map((star) => [star.id, star]));
   for (const seat of campaign.seats) {
     const research = economy.research[seat.uid];

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { tick, onDestroy } from "svelte";
+  import type { Technology } from "@shared/production";
   import CampaignEconomy from "../CampaignEconomy.svelte";
   import CampaignHistory from "../CampaignHistory.svelte";
   import {
@@ -24,6 +25,7 @@
     onback,
     onleave,
     onmaintenance,
+    onresearch,
     onmigrate,
     realAvailable = false,
     migration = null,
@@ -38,6 +40,7 @@
     onback: () => void;
     onleave?: () => void;
     onmaintenance?: () => void;
+    onresearch?: (target: Technology) => void;
     onmigrate?: (mode: "mock" | "real") => void;
     realAvailable?: boolean;
     migration?: CampaignView["migration"];
@@ -352,7 +355,16 @@
       aria-label="Empire economy panel"
       onkeydown={panelKeys}
     >
-      <CampaignEconomy {view} onclose={closeEconomy} />
+      <CampaignEconomy
+        {view}
+        onclose={closeEconomy}
+        {onresearch}
+        {message}
+        {error}
+        {busy}
+        {pending}
+        {onretry}
+      />
     </div>{/if}
   {#if history}<div
       class="history-panel"
