@@ -377,7 +377,10 @@ export async function finishStory(info: TestInfo) {
   }
   writeFileSync(
     join(story.folder, "README.md"),
-    parts.filter(Boolean).join("\n\n") + "\n",
+    parts
+      .filter(Boolean)
+      .map((part) => part.trimEnd())
+      .join("\n\n") + "\n",
   );
   await info.attach("Illustrated story", {
     path: join(story.folder, "README.md"),

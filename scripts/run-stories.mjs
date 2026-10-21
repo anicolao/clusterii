@@ -1,3 +1,5 @@
+import { resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 import { spawn } from "node:child_process";
 import { createConnection } from "node:net";
 const mode = process.argv[2] ?? "verify";
@@ -55,5 +57,12 @@ await run(
     "auth,database,firestore,functions",
     "bunx playwright test --config playwright.stories.config.ts",
   ],
-  { ...process.env, CLUSTER_STORY_MODE: mode },
+  {
+    ...process.env,
+    CLUSTER_STORY_MODE: mode,
+    NODE_OPTIONS: [
+      process.env.NODE_OPTIONS ?? "",
+      `--import=${pathToFileURL(resolve("tests/browser/story-helpers/emulator-catalogue-register.mjs")).href}`,
+    ].join(" "),
+  },
 );

@@ -139,3 +139,7 @@ Prompt 40 | ad557472f028f0cac1f24d552aaab6df96cafb62fa170697ae941d1916f3e648 | P
 Prompt 40 | ad557472f028f0cac1f24d552aaab6df96cafb62fa170697ae941d1916f3e648 | Resume authorized private credit offers after propagating exact-record receipt recovery through the complete successor stack.
 Prompt 43 | e3466f57ffecd0515af38f4d1a80710d6492b1cedbed1ecd4b70a974b0332e90 | Establish the required illustrated story helper, root E2E guide and explicit migration inventory before further gameplay.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Repair pinned-container Git ownership for source provenance while the reviewed history correction propagates through predecessor branches.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the explicit briefing and history focus cycle into return entry while preserving recovery and predecessor history.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Resolve the supervisory log merge markers against the main-worktree superset without removing either parent’s checkpoint entries.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the verified history focus cycle into private credit offers, preserving all supervisor and prompt histories.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Merge the predecessor history correction and replace its legacy regression with guarded, multi-viewpoint illustrated recovery stories.

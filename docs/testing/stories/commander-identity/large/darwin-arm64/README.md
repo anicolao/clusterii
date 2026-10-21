@@ -6,7 +6,7 @@
 
 ## 1. Étoile arrives signed out, with no private preview.
 
-Actor: **Étoile**. 
+Actor: **Étoile**.
 
 Acknowledged outcome: Play is available on the entry surface.
 
@@ -18,7 +18,7 @@ Acknowledged outcome: Play is available on the entry surface.
 
 ## 2. Étoile signs in with Google and reaches the identity editor.
 
-Actor: **Étoile**. 
+Actor: **Étoile**.
 
 Acknowledged outcome: Authentication completes and the commander name field is available.
 
@@ -30,7 +30,7 @@ Acknowledged outcome: Authentication completes and the commander name field is a
 
 ## 3. Étoile selects the Deepseer and saves the chosen identity.
 
-Actor: **Étoile**. 
+Actor: **Étoile**.
 
 Acknowledged outcome: The authoritative encrypted profile command is acknowledged as saved.
 
@@ -42,7 +42,7 @@ Acknowledged outcome: The authoritative encrypted profile command is acknowledge
 
 ## 4. Étoile reloads and recovers the same saved commander.
 
-Actor: **Étoile**. 
+Actor: **Étoile**.
 
 Acknowledged outcome: The saved alias and portrait return from persisted encrypted profile history.
 
@@ -54,7 +54,7 @@ Acknowledged outcome: The saved alias and portrait return from persisted encrypt
 
 ## 5. Étoile signs out and the entry surface removes private identity details.
 
-Actor: **Étoile**. 
+Actor: **Étoile**.
 
 Acknowledged outcome: Play returns after sign-out.
 

@@ -6,7 +6,7 @@ A new visitor reads each field-guide chapter, keeps keyboard focus through navig
 
 ## 1. The visitor arrives at Cluster and can choose Play or Learn.
 
-Actor: **Visitor**. 
+Actor: **Visitor**.
 
 Acknowledged outcome: The production entry surface is ready for input.
 
@@ -18,7 +18,7 @@ Acknowledged outcome: The production entry surface is ready for input.
 
 ## 2. The visitor opens Learn with the keyboard and reads the purpose of alliances.
 
-Actor: **Visitor**. 
+Actor: **Visitor**.
 
 Acknowledged outcome: The first chapter heading receives focus.
 
@@ -30,7 +30,7 @@ Acknowledged outcome: The first chapter heading receives focus.
 
 ## 3. The visitor reads “Two fronts. One system.”.
 
-Actor: **Visitor**. 
+Actor: **Visitor**.
 
 Acknowledged outcome: The chapter “Two fronts. One system.” is visible and focused.
 
@@ -42,7 +42,7 @@ Acknowledged outcome: The chapter “Two fronts. One system.” is visible and f
 
 ## 4. The visitor reads “Build the means to prevail”.
 
-Actor: **Visitor**. 
+Actor: **Visitor**.
 
 Acknowledged outcome: The chapter “Build the means to prevail” is visible and focused.
 
@@ -54,7 +54,7 @@ Acknowledged outcome: The chapter “Build the means to prevail” is visible an
 
 ## 5. The visitor reads “Information is influence”.
 
-Actor: **Visitor**. 
+Actor: **Visitor**.
 
 Acknowledged outcome: The chapter “Information is influence” is visible and focused.
 
@@ -66,7 +66,7 @@ Acknowledged outcome: The chapter “Information is influence” is visible and 
 
 ## 6. The visitor closes Learn and returns to its opening control.
 
-Actor: **Visitor**. 
+Actor: **Visitor**.
 
 Acknowledged outcome: Focus returns to Learn.
 

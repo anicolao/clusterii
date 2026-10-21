@@ -100,7 +100,10 @@ for (const file of stories(source)) {
     join(destination, "renderer.json"),
   );
   if (archive) {
-    writeFileSync(join(destination, "README.md"), markdown);
+    writeFileSync(
+      join(destination, "README.md"),
+      markdown.replace(/[ \t]+$/gm, ""),
+    );
     copyFileSync(file, join(destination, "story.json"));
     writeFileSync(
       join(destination, "captures.json"),
