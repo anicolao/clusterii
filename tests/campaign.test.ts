@@ -154,3 +154,35 @@ test('investing is applied once before wallet/escrow apportionment and neutral d
  // Independent Decimal(precision=60) reference: floorMilli(3.6^1.05)=3.838.
  expect(ledger.creditsMilli+ledger.escrowMilli).toBe(3838);expect(result.campaign.systems[neutral]).toEqual(state.systems[neutral]);expect(result.campaign.empires.p0.creditsMilli-200000).toBe(ledger.creditsMilli);expect(result.campaign.systems[unfavored].escrowMilli).toBe(ledger.escrowMilli);
 });
+
+import {selectResearch,parseCampaignAction} from '../shared/campaign';
+test('research admission assigns future cutoff, rejects foreign/stale/paused/legacy orders and keeps queues private',()=>{
+ const initial=productionFixture(),due=initial.economy!.nextTickAt;
+ const action={kind:'research.select',expectedRevision:initial.revision,target:'investing'};
+ const queued=selectResearch(initial,action,'p0','before',due-1);
+ expect(queued.economy!.research.p0.orders![0]).toMatchObject({id:'before',effectiveTick:1,sequence:7,target:'investing'});
+ expect(selectResearch(initial,action,'p0','at',due).economy!.research.p0.orders![0].effectiveTick).toBe(2);
+ expect(selectResearch(initial,action,'p0','late',due+3*900000).economy!.research.p0.orders![0].effectiveTick).toBe(5);
+ expect(()=>selectResearch(initial,action,'foreign','x',0)).toThrow('permission');
+ expect(()=>selectResearch(queued,action,'p0','x',0)).toThrow('conflict');
+ expect(()=>selectResearch({...initial,pausedAt:1},action,'p0','x',0)).toThrow('paused');
+ expect(()=>selectResearch({...initial,schemaVersion:1,economy:undefined},action,'p0','x',0)).toThrow('research-unavailable');
+ expect(()=>parseCampaignAction({...action,target:'missing'})).toThrow('invalid');
+ expect(()=>parseCampaignAction({...action,uid:'p1'})).toThrow('invalid');
+ expect(JSON.stringify(campaignView(queued,'p1'))).not.toContain('before');
+ const filled=structuredClone(queued);filled.economy!.research.p0.orders=Array.from({length:64},()=>queued.economy!.research.p0.orders![0]);
+ expect(()=>selectResearch(filled,{...action,expectedRevision:filled.revision},'p0','overflow',0)).toThrow('research-queue-full');
+ expect(initial.economy!.research.p0.orders).toBeUndefined();
+});
+test('research selections settle in admitted order, retain unfinished progress and transfer capped bank exactly once',()=>{
+ let state=productionFixture();const due=state.economy!.nextTickAt;
+ state.economy!.research.p0.levels.navigation=10;state.economy!.research.p0.progressMilli.navigation=6000;
+ state.economy!.research.p0.progressMilli.investing=2000;
+ state=selectResearch(state,{kind:'research.select',expectedRevision:state.revision,target:'investing'},'p0','first',due-1);
+ state=selectResearch(state,{kind:'research.select',expectedRevision:state.revision,target:'recruiting'},'p0','second',due-1);
+ state=selectResearch(state,{kind:'research.select',expectedRevision:state.revision,target:'innovation'},'p0','late',due);
+ const first=produce(state,state.economy!);const research=first.economy.research.p0;
+ expect(research.target).toBe('recruiting');expect(research.progressMilli.navigation).toBe(0);expect(research.progressMilli.investing).toBe(8000);expect(research.progressMilli.recruiting).toBe(1400);expect(research.orders?.map(o=>o.id)).toEqual(['late']);expect(research.lastApplied?.id).toBe('second');expect(research.appliedOrders?.map(o=>o.id)).toEqual(['first','second']);
+ const next=produce(first.campaign,first.economy);expect(next.economy.research.p0.target).toBe('innovation');expect(next.economy.research.p0.progressMilli.investing).toBe(8000);expect(next.economy.research.p0.progressMilli.innovation).toBe(1400);expect(next.economy.research.p0.orders).toEqual([]);
+ const repeated=produce(first.campaign,first.economy);expect(repeated).toEqual(next);
+});

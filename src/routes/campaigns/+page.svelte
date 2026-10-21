@@ -247,7 +247,9 @@
         remedy = feedback.remedy;
         if (
           receipt.status === "accepted" &&
-          !["campaign.pause", "campaign.resume"].includes(command.kind)
+          !["campaign.pause", "campaign.resume", "research.select"].includes(
+            command.kind,
+          )
         )
           void select(receipt.gameId);
       },
@@ -323,6 +325,12 @@
           kind: "campaign.migrate",
           expectedRevision: game?.revision ?? view!.revision,
           targetMode,
+        })}
+      onresearch={(target) =>
+        send(view!.id, {
+          kind: "research.select",
+          expectedRevision: view!.revision,
+          target,
         })}
       onmaintenance={() =>
         send(view!.id, {

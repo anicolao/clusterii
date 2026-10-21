@@ -1,0 +1,32 @@
+{
+  "units": {
+    "passed": 22,
+    "assertions": 345
+  },
+  "service": {
+    "combinedProductionResearchPassed": 6,
+    "assertions": 285,
+    "seconds": 56.39,
+    "providers": [
+      "mock",
+      "AES-256-GCM with live Cloud KMS"
+    ],
+    "log": "/tmp/cluster-research-live-awaited.log",
+    "includes": "admission, actor forgery, duplicate handler delivery, private queue/history, tick settlement, production recovery and research-history migration"
+  },
+  "browser": {
+    "ordinaryJourneyPassed": 1,
+    "minutes": 27.6,
+    "log": "/tmp/cluster-research-browser.log",
+    "galleryLabPassed": 5,
+    "galleryLabSeconds": 8.2,
+    "galleryLabLog": "/tmp/cluster-research-lab-focus.log",
+    "keyboard": "All eight tracks, commitment visible before scrolling, target overlap/containment and Escape focus restoration at four sizes in the actual UI campaign",
+    "keyboardLog": "/tmp/cluster-research-keyboard.log",
+    "submissionFocus": "Pending submission moves focus to its visible commitment group; draft remains selected through retry."
+  },
+  "types": "pass",
+  "lint": "pass",
+  "limits": "Emulator Scheduler delivery; final-head CI, hosted Google, hosted recovery and full independent rendered/security review remain gates. Reviewer sampled phone/short composition.",
+  "deployment": "Consumer, producer, additive ingress rule deployed in order; ACTIVE Node 22, emulator KMS flag absent. Hosted user acceptance remains separate."
+}

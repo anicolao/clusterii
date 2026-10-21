@@ -2,6 +2,10 @@ export const campaignPendingMessage = "Awaiting acknowledgement…";
 export const campaignNetworkMessage =
   "The connection was interrupted. Your selection and pending order are preserved.";
 const reasons: Record<string, string> = {
+  "research-unavailable":
+    "Research selection begins after home assignment in a production-enabled campaign.",
+  "research-queue-full":
+    "Your research queue is full. Wait for the next confirmed tick before submitting another selection.",
   session: "Your session ended. Sign in again.",
   conflict:
     "The roster changed. Review the current seats and submit your choice again.",
@@ -30,7 +34,12 @@ export function campaignFeedback(
   if (receipt.status === "rejected")
     return {
       message: "",
-      error: reasons[receipt.reason ?? "invalid"] ?? reasons.invalid,
+      error:
+        kind === "research.select" && receipt.reason === "conflict"
+          ? "The campaign changed. Your research choice is preserved. Review the current progress and submit again."
+          : kind === "research.select" && receipt.reason === "invalid"
+            ? "Choose one of the eight research tracks."
+            : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid),
       remedy:
         receipt.reason === "conflict"
           ? ("conflict" as const)
@@ -38,17 +47,19 @@ export function campaignFeedback(
     };
   return {
     message:
-      kind === "campaign.migrate"
-        ? "Encryption changed and verified. Campaign resumed."
-        : kind === "campaign.pause"
-          ? "Campaign paused. Admissions and scheduled start are stopped."
-          : kind === "campaign.resume"
-            ? "Campaign resumed."
-            : kind === "campaign.create"
-              ? "Campaign created. Choose your faction."
-              : kind === "campaign.leave"
-                ? "Your seat has been released."
-                : "Your seat is confirmed.",
+      kind === "research.select"
+        ? "Research order accepted. It will apply at its scheduled tick."
+        : kind === "campaign.migrate"
+          ? "Encryption changed and verified. Campaign resumed."
+          : kind === "campaign.pause"
+            ? "Campaign paused. Admissions and scheduled start are stopped."
+            : kind === "campaign.resume"
+              ? "Campaign resumed."
+              : kind === "campaign.create"
+                ? "Campaign created. Choose your faction."
+                : kind === "campaign.leave"
+                  ? "Your seat has been released."
+                  : "Your seat is confirmed.",
     error: "",
     remedy: null,
   };

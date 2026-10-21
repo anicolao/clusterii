@@ -769,3 +769,36 @@ test('production lease cleanup cannot delete a replacement after observing the o
  try {const cleanup=releaseProductionLease(lease,'old-worker');await ready;await lease.set({token:'replacement',expiresAt:Date.now()+120000});release();await cleanup;}finally{release();delayed.mockRestore();}
  expect((await lease.get()).get('token')).toBe('replacement');await releaseProductionLease(lease,'replacement');expect((await lease.get()).exists).toBe(false);
 });
+
+for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER_KMS_TEST!=='true'?test.skip:test)(`research selection ${mode}: authorized admission, private queue, conflict, repeat-safe tick and history`,async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();
+ const {startDueCampaign}=await import('../functions/src/campaigns');const {settleCampaignTicks}=await import('../functions/src/production');
+ const players=await Promise.all((['heliac','pelagic','vesper','dracon'] as const).map(async faction=>{const c=await client(`research-${faction}-${crypto.randomUUID()}`);await developer(c);await saveIdentity(c);return {c,faction};}));
+ const owner=players[0].c,other=players[1].c,id=crypto.randomUUID();
+ await campaignCommand(owner,id,{kind:'campaign.create',expectedRevision:0,name:'Research service',capacity:4,mode,development:true});for(let i=0;i<4;i++)await campaignCommand(players[i].c,id,{kind:'campaign.join',expectedRevision:i+1,faction:players[i].faction},mode);
+ const head=db.doc(`campaignStates/${id}`);const start=(await head.get()).get('startAt');await startDueCampaign(id,start);
+ const outsider=await client(`research-foreign-${crypto.randomUUID()}`);await developer(outsider);await saveIdentity(outsider);
+ const denied=await campaignCommand(outsider,id,{kind:'research.select',expectedRevision:6,target:'investing'},mode);expect(denied.receipt.reason).toBe('permission');
+ const admitted=await campaignCommand(owner,id,{kind:'research.select',expectedRevision:6,target:'investing'},mode);expect(admitted.receipt.status).toBe('accepted');expect(admitted.receipt.revision).toBe(7);
+ const view=(await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records[0],order=view.economy!.research.orders![0];expect(order.target).toBe('investing');expect(order.effectiveTick).toBe(1);expect(view.economy!.research.target).toBe('navigation');
+ const peer=(await readCampaignHistory(other.firestore,other.functions,id,other.uid)).records[0];expect(JSON.stringify(peer)).not.toContain(order.id);expect(peer.economy!.research.orders??[]).toEqual([]);
+ const {processCampaign}=await import('../functions/src/campaigns');
+ await processCampaign.run({params:{gameId:id,uid:owner.uid,commandId:admitted.ingress.key},time:new Date().toISOString(),data:{val:()=>admitted.payload}} as never);
+ expect((await head.get()).get('revision')).toBe(7);
+ expect((await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records[0].economy!.research.orders).toEqual([order]);
+ const forged=await campaignCommand(owner,id,{kind:'research.select',expectedRevision:7,target:'investing',uid:other.uid} as CampaignAction,mode);expect(forged.receipt.reason).toBe('invalid');
+ const stale=await campaignCommand(owner,id,{kind:'research.select',expectedRevision:6,target:'recruiting'},mode);expect(stale.receipt.reason).toBe('conflict');
+ await expect(set(admitted.ingress,admitted.payload)).rejects.toThrow();
+ await expect(getDoc(doc(other.firestore,'campaignViews',id,'members',owner.uid))).rejects.toThrow();
+ expect(await settleCampaignTicks(id,()=>start+900000)).toBe(1);expect(await settleCampaignTicks(id,()=>start+900000)).toBe(0);
+ const settled=(await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records[0];expect(settled.economy!.research.target).toBe('investing');expect(settled.economy!.research.progressMilli.investing).toBe(1400);expect(settled.economy!.research.progressMilli.navigation).toBe(0);expect(settled.economy!.research.lastApplied).toEqual(order);expect(settled.economy!.research.orders).toEqual([]);expect(settled.revision).toBe(8);expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(8);
+ await campaignCommand(owner,id,{kind:'campaign.pause',expectedRevision:8},mode);const paused=await campaignCommand(owner,id,{kind:'research.select',expectedRevision:9,target:'innovation'},mode);expect(paused.receipt.reason).toBe('paused');
+ if(mode==='real') {
+  const before=(await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records;
+  const migration=await campaignCommand(owner,id,{kind:'campaign.migrate',expectedRevision:9,targetMode:'mock'},mode);expect(migration.receipt.status).toBe('accepted');
+  const after=(await readCampaignHistory(owner.firestore,owner.functions,id,owner.uid)).records;
+  const normalize=(record:CampaignView)=>{const {mode,encryptionEpoch,mockExposed,...rest}=record;return rest;};
+  expect(after.filter(record=>record.revision<=9).map(normalize)).toEqual(before.map(normalize));
+  expect(after[0].economy!.research.lastApplied).toEqual(order);expect(after[0].encryptionEpoch).toBe(2);
+ }
+},120000);

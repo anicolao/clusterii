@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import CampaignResearch from "$lib/components/CampaignResearch.svelte";
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
@@ -15,6 +16,7 @@
     duration,
     historyRecords,
     productionFrame,
+    researchFrame,
   } from "./scenarios";
   let selected = $state("accepted");
   let time = $state(0);
@@ -110,7 +112,16 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "production"}<div style="height:650px">
+        {#if selected === "research"}<CampaignResearch
+            research={researchFrame(time)}
+            inspect={{ time: time - frame.at, reduced }}
+            pending={time < 1000}
+            message={frame.feedback.message}
+            error={frame.feedback.error}
+            onselect={reset}
+            onretry={frame.feedback.remedy === "network" ? reset : undefined}
+          />
+        {:else if selected === "production"}<div style="height:650px">
             <CampaignEconomy
               view={productionFrame(time).view}
               inspectTime={productionFrame(time).clock}
@@ -223,10 +234,14 @@
     border: 1px solid #6b716f;
   }
   .controls label {
+    min-width: 0;
+    max-width: 100%;
     display: grid;
     gap: 8px;
   }
   select {
+    width: 100%;
+    min-width: 0;
     min-height: 48px;
     background: #13232f;
     color: inherit;

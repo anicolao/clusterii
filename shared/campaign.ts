@@ -1,5 +1,10 @@
 import { type Galaxy, generateGalaxy } from "./galaxy.js";
-import { type Economy, initialEconomy } from "./production.js";
+import {
+  type Economy,
+  initialEconomy,
+  type Technology,
+  technologies,
+} from "./production.js";
 import { type Portrait, type Profile, portraits } from "./profile.js";
 import { type FactionId, faction, rules } from "./rules.js";
 export interface Seat {
@@ -53,6 +58,7 @@ export type MigrationAction = {
 };
 export type CampaignAction =
   | MigrationAction
+  | { kind: "research.select"; expectedRevision: number; target: Technology }
   | {
       kind: "campaign.create";
       expectedRevision: 0;
@@ -79,11 +85,13 @@ export function parseCampaignAction(input: unknown): CampaignAction {
   const fields =
     a.kind === "campaign.create"
       ? ["kind", "expectedRevision", "name", "capacity", "mode", "development"]
-      : a.kind === "campaign.migrate"
-        ? ["kind", "expectedRevision", "targetMode"]
-        : a.kind === "campaign.join"
-          ? ["kind", "expectedRevision", "faction", "portrait"]
-          : ["kind", "expectedRevision"];
+      : a.kind === "research.select"
+        ? ["kind", "expectedRevision", "target"]
+        : a.kind === "campaign.migrate"
+          ? ["kind", "expectedRevision", "targetMode"]
+          : a.kind === "campaign.join"
+            ? ["kind", "expectedRevision", "faction", "portrait"]
+            : ["kind", "expectedRevision"];
   if (Object.keys(a).some((key) => !fields.includes(key)))
     throw new Error("invalid");
   if (a.kind === "campaign.create") {
@@ -98,6 +106,8 @@ export function parseCampaignAction(input: unknown): CampaignAction {
       a.development !== true
     )
       throw new Error("invalid");
+  } else if (a.kind === "research.select") {
+    if (!technologies.includes(a.target)) throw new Error("invalid");
   } else if (a.kind === "campaign.migrate") {
     if (a.targetMode !== "mock" && a.targetMode !== "real")
       throw new Error("invalid");
@@ -405,3 +415,49 @@ export function campaignView(state: Campaign, uid: string) {
 }
 export type CampaignDirectory = ReturnType<typeof campaignDirectory>;
 export type CampaignView = ReturnType<typeof campaignView>;
+
+export function selectResearch(
+  current: Campaign,
+  input: unknown,
+  uid: string,
+  commandId: string,
+  now: number,
+): Campaign {
+  const action = parseCampaignAction(input);
+  if (action.kind !== "research.select") throw new Error("invalid");
+  if (!current.seats.some((seat) => seat.uid === uid))
+    throw new Error("permission");
+  if (current.revision !== action.expectedRevision) throw new Error("conflict");
+  if (current.pausedAt != null) throw new Error("paused");
+  if (
+    current.phase !== "active" ||
+    current.schemaVersion !== 2 ||
+    !current.economy
+  )
+    throw new Error("research-unavailable");
+  const next = structuredClone(current),
+    economy = next.economy;
+  if (!economy) throw new Error("research-unavailable");
+  const research = economy.research[uid];
+  if (!research) throw new Error("research-unavailable");
+  // A bounded admission budget protects the encrypted state document. It does
+  // not drop or replace previously accepted orders; retry after settlement.
+  if ((research.orders?.length ?? 0) >= 64)
+    throw new Error("research-queue-full");
+  const effectiveTick =
+    economy.tick +
+    1 +
+    (now < economy.nextTickAt
+      ? 0
+      : Math.floor((now - economy.nextTickAt) / (rules.tickSeconds * 1000)) +
+        1);
+  next.revision++;
+  research.orders ??= [];
+  research.orders.push({
+    id: commandId,
+    sequence: next.revision,
+    effectiveTick,
+    target: action.target,
+  });
+  return next;
+}
