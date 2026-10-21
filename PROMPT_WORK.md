@@ -191,3 +191,7 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register multiplayer start PR 43 and its preview with scoped layout acceptance and remaining verification gates.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Migrate encryption availability and real managed-key campaign admission into separately acknowledged illustrated stories.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register encryption-choice PR 44 with both-provider exact evidence and carry scoped reviewer checkpoints.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Diagnose retained Linux popup readiness and unstable identity text pixels without weakening exact comparison.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry bounded login and actual-frame readiness repairs into navigation with verified predecessor evidence.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry tested login and frame readiness repairs and review new Linux multiplayer-start candidates.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry reviewed Linux start candidates and verify both encryption environments after parent readiness repairs.

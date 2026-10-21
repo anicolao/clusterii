@@ -188,3 +188,12 @@ Eight local journeys/44 exact captures cover unavailable-provider disclosure and
 - desktop: [Unavailable provider](stories/encryption-unavailable/desktop/darwin-arm64/README.md), [Actual managed keys](stories/managed-campaign-admission/desktop/darwin-arm64/README.md).
 - large: [Unavailable provider](stories/encryption-unavailable/large/darwin-arm64/README.md), [Actual managed keys](stories/managed-campaign-admission/large/darwin-arm64/README.md).
 - short: [Unavailable provider](stories/encryption-unavailable/short/darwin-arm64/README.md), [Actual managed keys](stories/managed-campaign-admission/short/darwin-arm64/README.md).
+
+## Verified Linux navigation narratives
+
+All68 stories pass at f9efa01; these twelve narratives contribute97 captures. Replacement readiness-repair CI and independent visual/motion/hosted gates remain open.
+
+- phone: [Admission](stories/campaign-admission-navigation/phone/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/phone/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/phone/linux-arm64/README.md).
+- desktop: [Admission](stories/campaign-admission-navigation/desktop/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/desktop/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/desktop/linux-arm64/README.md).
+- large: [Admission](stories/campaign-admission-navigation/large/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/large/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/large/linux-arm64/README.md).
+- short: [Admission](stories/campaign-admission-navigation/short/linux-arm64/README.md), [Chart](stories/campaign-chart-navigation/short/linux-arm64/README.md), [Profile readiness](stories/entry-profile-readiness/short/linux-arm64/README.md).

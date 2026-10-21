@@ -21,6 +21,7 @@ import {
   pinnedRenderer,
   rendererArgs,
 } from "../../../playwright.stories.config";
+import { stableImage } from "./stable-image";
 import { captureReady } from "./capture-ready";
 import { assertScreenFit } from "./screen-fit";
 export const CAPTURE_BUDGET = 10000;
@@ -253,11 +254,15 @@ export class TestStepHelper {
                   "Pinned renderer must match the reviewed baseline",
                 ).toEqual(JSON.parse(readFileSync(manifest, "utf8")));
               }
-              const image = await page.screenshot({
-                animations: "allow",
-                caret: "hide",
-                fullPage: false,
-              });
+              const image = await stableImage(
+                () =>
+                  page.screenshot({
+                    animations: "allow",
+                    caret: "hide",
+                    fullPage: false,
+                  }),
+                exactPixels,
+              );
               writeFileSync(join(this.story.folder, stem), image);
               await this.info.attach(`${id} — ${view.player}`, {
                 body: image,
