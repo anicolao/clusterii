@@ -357,6 +357,40 @@ test("Selected history reaches only a consenting commander and survives reload",
         view(2),
       ],
     });
+    const readSharedMessage = {
+      spec: "Keyboard Home and bounded reading reveal the complete shared message, author and provenance while the commitment rail stays visible.",
+      check: async () => {
+        const reading = panel(guest).getByRole("region", {
+          name: "Conversation details",
+          exact: true,
+        });
+        await reading.focus();
+        await guest.keyboard.press("Home");
+        const entry = panel(guest)
+          .getByRole("list", { name: "Authorized messages" })
+          .getByRole("listitem")
+          .filter({ hasText: selected });
+        const rail = await button(guest, "Back to galaxy").boundingBox();
+        expect(rail).not.toBeNull();
+        expect(rail!.y).toBeGreaterThanOrEqual(0);
+        expect(rail!.y + rail!.height).toBeLessThanOrEqual(
+          guest.viewportSize()!.height,
+        );
+        await entry.scrollIntoViewIfNeeded();
+        await expect
+          .poll(async () => {
+            const outer = await reading.boundingBox(),
+              inner = await entry.boundingBox();
+            return (
+              !!outer &&
+              !!inner &&
+              inner.y >= outer.y &&
+              inner.y + inner.height <= outer.y + outer.height
+            );
+          })
+          .toBe(true);
+      },
+    };
     const before = await canonical();
     await story.step("consent", {
       actor: aliases[1],
@@ -376,6 +410,7 @@ test("Selected history reaches only a consenting commander and survives reload",
       verifications: [
         noErrors,
         outsiderPrivate,
+        readSharedMessage,
         {
           spec: "Acceptance makes exactly one authoritative revision, excludes the reserve message, and names the sharing commander.",
           check: async () => {
@@ -411,6 +446,7 @@ test("Selected history reaches only a consenting commander and survives reload",
       verifications: [
         noErrors,
         outsiderPrivate,
+        readSharedMessage,
         {
           spec: "Recovery causes no extra revision and never exposes the unselected message.",
           check: async () => {
