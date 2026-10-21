@@ -722,7 +722,9 @@ for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER
  const diagnostic=setTimeout(async()=>{const [h,l]=await Promise.all([head.get(),lease.get()]);console.info('Production recovery still pending',{mode,calls,revision:h.get('revision'),nextTickAt:h.get('nextTickAt'),leaseExists:l.exists,leaseExpiry:l.get('expiresAt')});},30000);
  diagnostic.unref();
  const lost=spyOn(db,'runTransaction').mockImplementation(async(...args:unknown[])=>{const call=++calls;console.log('production fault',mode,call,'begin',Date.now());const result=await transaction(...args);console.log('production fault',mode,call,'committed',Date.now());if(call===2)throw new Error('Lost production acknowledgement');return result;});
- try{await expect(settleCampaignTicks(id,()=>due+900000)).rejects.toThrow('Lost production acknowledgement');}finally{clearTimeout(diagnostic);lost.mockRestore();}
+ // Await Firestore I/O normally before asserting the error. The promise matcher
+ // stalled the gRPC read path in this fault test; exact failure/effect checks remain.
+ try{let failure:unknown;try{await settleCampaignTicks(id,()=>due+900000);}catch(error){failure=error;}expect(failure).toBeInstanceOf(Error);expect((failure as Error).message).toBe('Lost production acknowledgement');}finally{clearTimeout(diagnostic);lost.mockRestore();}
  expect((await head.get()).get('revision')).toBe(8);expect(await settleCampaignTicks(id,()=>due+900000)).toBe(0);
  // Catch up in ordered bounded batches. The ledger is the last confirmed tick,
  // while the retained history contains every intervening authorized balance.
@@ -751,7 +753,7 @@ test('expired production claim is reclaimed; returning stale worker cannot write
  }finally{releaseOld();releaseNew();stopped.mockRestore();}
  const saved=(await head.get()).data();let attempts=0;
  const abort=spyOn(db,'runTransaction').mockImplementation(async(callback:(tx:unknown)=>Promise<unknown>)=>{const attempt=++attempts;return transaction(async(tx:unknown)=>{const result=await callback(tx);if(attempt===2)throw new Error('Stopped before production commit');return result;});});
- try{await expect(settleCampaignTicks(id,()=>due+900000)).rejects.toThrow('Stopped before production commit');}finally{abort.mockRestore();}
+ try{let failure:unknown;try{await settleCampaignTicks(id,()=>due+900000);}catch(error){failure=error;}expect(failure).toBeInstanceOf(Error);expect((failure as Error).message).toBe('Stopped before production commit');}finally{abort.mockRestore();}
  expect((await head.get()).data()).toEqual(saved);expect((await lease.get()).exists).toBe(false);
  expect(await settleCampaignTicks(id,()=>due+97*900000)).toBe(96);
  expect(await settleCampaignTicks(id,()=>due+97*900000)).toBe(1);

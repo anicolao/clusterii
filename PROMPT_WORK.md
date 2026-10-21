@@ -66,3 +66,5 @@ Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | F
 Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Retain transaction timing and emulator diagnostics for the Linux lost-ack timeout without weakening recovery assertions.
 
 Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Read the production boundary and lease in one transaction request and retain the reproduced full-cohort recovery evidence.
+
+Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Await faulted Firestore operations before exact error assertions and retain full-cohort plus renewed live-KMS recovery evidence.
