@@ -5289,3 +5289,335 @@ for (const mode of ["mock", "real"] as const)
     },
     240000,
   );
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true"
+    ? test.skip
+    : test)(
+    `private conversations ${mode}: future-only access, concurrent removal, old grants and complete migrated history`,
+    async () => {
+      const { createRequire } = await import("node:module"),
+        require = createRequire(
+          new URL("../functions/package.json", import.meta.url),
+        );
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({ projectId });
+      const db = require("firebase-admin/firestore").getFirestore();
+      const { startDueCampaign, processCampaign, context } =
+        await import("../functions/src/campaigns");
+      const players = await Promise.all(
+        (["heliac", "pelagic", "vesper", "dracon"] as const).map(
+          async (faction) => {
+            const c = await client(`talks-${faction}-${crypto.randomUUID()}`);
+            await developer(c);
+            await saveIdentity(c);
+            return { c, faction };
+          },
+        ),
+      );
+      const owner = players[0].c,
+        invitee = players[1].c,
+        outsider = players[2].c,
+        id = crypto.randomUUID();
+      await campaignCommand(owner, id, {
+        kind: "campaign.create",
+        expectedRevision: 0,
+        name: "Diplomatic channel",
+        capacity: 4,
+        mode,
+        development: true,
+      });
+      for (let i = 0; i < players.length; i++)
+        await campaignCommand(
+          players[i].c,
+          id,
+          {
+            kind: "campaign.join",
+            expectedRevision: i + 1,
+            faction: players[i].faction,
+          },
+          mode,
+        );
+      const head = db.doc(`campaignStates/${id}`);
+      await startDueCampaign(id, (await head.get()).get("startAt"));
+      let activeMode = mode,
+        epoch = 1;
+      const read = async (c = owner) =>
+        (await readCampaignHistory(c.firestore, c.functions, id, c.uid))
+          .records[0];
+      const history = async (c: typeof owner) => {
+        let page = await readCampaignHistory(
+          c.firestore,
+          c.functions,
+          id,
+          c.uid,
+        );
+        const records = [...page.records];
+        while (page.cursor) {
+          page = await readCampaignHistory(
+            c.firestore,
+            c.functions,
+            id,
+            c.uid,
+            page.cursor,
+          );
+          records.push(...page.records);
+        }
+        return records;
+      };
+      const command = async (
+        c: typeof owner,
+        action: Record<string, unknown>,
+      ) =>
+        campaignCommand(
+          c,
+          id,
+          {
+            expectedRevision: (await read(c)).revision,
+            ...action,
+          } as CampaignAction,
+          activeMode,
+          epoch,
+        );
+      const initial = await read();
+      expect(
+        (
+          await command(owner, {
+            kind: "conversation.create",
+            title: "Nacre talks",
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      const roomId = (await read()).conversations[0].id;
+      const room = async (c = owner) =>
+        (await read(c)).conversations.find((r) => r.id === roomId)!;
+      const post = async (c: typeof owner, body: string) =>
+        command(c, {
+          kind: "conversation.send",
+          roomId,
+          keyVersion: (await room(c)).keyVersion,
+          body,
+        });
+      const prior = await post(owner, "Not shared before invitation");
+      expect(prior.receipt.status).toBe("accepted");
+      expect(
+        (
+          await command(owner, {
+            kind: "conversation.invite",
+            roomId,
+            roomRevision: (await room()).revision,
+            seat: 1,
+            scope: "future",
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      expect((await room(invitee)).message).toBeNull();
+      expect(JSON.stringify(await history(invitee))).not.toContain(
+        "Not shared before invitation",
+      );
+      expect((await read(outsider)).conversations).toEqual([]);
+      await expect(
+        getDoc(
+          doc(outsider.firestore, "campaignViews", id, "members", owner.uid),
+        ),
+      ).rejects.toThrow();
+      const oldView = (
+        await getDoc(
+          doc(invitee.firestore, "campaignViews", id, "members", invitee.uid),
+        )
+      ).data()!;
+      const { data: keyAccess } = await httpsCallable<
+        { gameId: string },
+        { kek: string }
+      >(
+        invitee.functions,
+        "campaignKey",
+      )({ gameId: id });
+      const oldContext = context(
+        id,
+        oldView.revision,
+        `member:${invitee.uid}`,
+        epoch,
+      );
+      const oldDataKey = await unwrap(
+        oldView.grant,
+        keyAccess.kek,
+        invitee.uid,
+        oldContext,
+        activeMode,
+      );
+      expect(
+        (
+          await command(invitee, {
+            kind: "conversation.accept",
+            roomId,
+            roomRevision: (await room(invitee)).revision,
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      expect((await room(invitee)).message).toBeNull();
+      const sent = await post(owner, "Visible after acceptance");
+      expect(sent.receipt.status).toBe("accepted");
+      expect((await room(invitee)).message!.body).toBe(
+        "Visible after acceptance",
+      );
+      expect((await room(invitee)).unread).toBe(true);
+      const newView = (
+        await getDoc(
+          doc(invitee.firestore, "campaignViews", id, "members", invitee.uid),
+        )
+      ).data()!;
+      await expect(
+        provider(activeMode).open(
+          newView.envelope,
+          oldDataKey,
+          context(id, newView.revision, `member:${invitee.uid}`, epoch),
+        ),
+      ).rejects.toThrow();
+      const acknowledged = await read();
+      await processCampaign.run({
+        params: { gameId: id, uid: owner.uid, commandId: sent.ingress.key },
+        time: new Date().toISOString(),
+        data: { val: () => sent.payload },
+      } as never);
+      expect(await read()).toEqual(acknowledged);
+      expect(
+        (
+          await command(invitee, {
+            kind: "conversation.read",
+            roomId,
+            keyVersion: (await room(invitee)).keyVersion,
+            sequence: (await room(invitee)).sequence,
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      expect((await room(invitee)).unread).toBe(false);
+      const beforeRace = await room(),
+        oldVersion = beforeRace.keyVersion;
+      const [removeResult, racingMessage] = await Promise.all([
+        command(owner, {
+          kind: "conversation.remove",
+          roomId,
+          roomRevision: beforeRace.revision,
+          seat: 1,
+        }),
+        command(invitee, {
+          kind: "conversation.send",
+          roomId,
+          keyVersion: oldVersion,
+          body: "Concurrent message",
+        }),
+      ]);
+      if (removeResult.receipt.status === "rejected") {
+        expect(removeResult.receipt.reason).toBe("conflict");
+        expect(racingMessage.receipt.status).toBe("accepted");
+        expect(
+          (
+            await command(owner, {
+              kind: "conversation.remove",
+              roomId,
+              roomRevision: (await room()).revision,
+              seat: 1,
+            })
+          ).receipt.status,
+        ).toBe("accepted");
+      } else {
+        expect(racingMessage.receipt.status).toBe("rejected");
+        expect(racingMessage.receipt.reason).toBe("permission");
+      }
+      expect((await read(invitee)).conversations).toEqual([]);
+      expect(
+        (
+          await command(invitee, {
+            kind: "conversation.send",
+            roomId,
+            keyVersion: oldVersion,
+            body: "Denied after removal",
+          })
+        ).receipt.reason,
+      ).toBe("permission");
+      await post(owner, "Private during absence");
+      expect(JSON.stringify(await history(invitee))).not.toContain(
+        "Private during absence",
+      );
+      expect(
+        (
+          await command(owner, {
+            kind: "conversation.invite",
+            roomId,
+            roomRevision: (await room()).revision,
+            seat: 1,
+            scope: "future",
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      expect(
+        (
+          await command(invitee, {
+            kind: "conversation.accept",
+            roomId,
+            roomRevision: (await room(invitee)).revision,
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      expect((await room(invitee)).message).toBeNull();
+      expect(
+        (
+          await command(invitee, {
+            kind: "conversation.send",
+            roomId,
+            keyVersion: oldVersion,
+            body: "Stale membership generation",
+          })
+        ).receipt.reason,
+      ).toBe("conflict");
+      expect(
+        (await post(invitee, "Available after rejoining")).receipt.status,
+      ).toBe("accepted");
+      expect((await room()).message!.body).toBe("Available after rejoining");
+      expect(JSON.stringify(await history(outsider))).not.toContain(
+        "Nacre talks",
+      );
+      expect(JSON.stringify(await history(invitee))).not.toContain(
+        "Not shared before invitation",
+      );
+      const after = await read();
+      expect(after.holdings).toEqual(initial.holdings);
+      expect(after.empire).toEqual(initial.empire);
+      expect(after.economy).toEqual(initial.economy);
+      expect(after.military).toEqual(initial.military);
+      if (process.env.CLUSTER_KMS_TEST === "true") {
+        await command(owner, { kind: "campaign.pause" });
+        const paused = await read(),
+          before = await Promise.all(players.map(({ c }) => history(c)));
+        expect(before[0].length).toBeGreaterThan(10);
+        expect(
+          (
+            await command(owner, {
+              kind: "campaign.migrate",
+              targetMode: activeMode === "real" ? "mock" : "real",
+            })
+          ).receipt.status,
+        ).toBe("accepted");
+        activeMode = activeMode === "real" ? "mock" : "real";
+        epoch++;
+        const normalize = (v: CampaignView) => {
+          const { mode, encryptionEpoch, mockExposed, ...rest } = v;
+          return rest;
+        };
+        for (let i = 0; i < players.length; i++)
+          expect(
+            (await history(players[i].c))
+              .filter((v) => v.revision <= paused.revision)
+              .map(normalize),
+          ).toEqual(before[i].map(normalize));
+        expect(
+          (await post(owner, "After epoch migration")).receipt.status,
+        ).toBe("accepted");
+        expect((await room(invitee)).message!.body).toBe(
+          "After epoch migration",
+        );
+      }
+    },
+    240000,
+  );

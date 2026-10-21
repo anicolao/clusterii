@@ -8,6 +8,13 @@
   import SystemConstruction from "../SystemConstruction.svelte";
   import type { Development } from "@shared/construction";
   import CampaignEconomy from "../CampaignEconomy.svelte";
+  import Conversations from "../Conversations.svelte";
+  import type { ConversationAction } from "@shared/conversations";
+  import {
+    conversationMessages,
+    type ConversationReceipt,
+    type MessageRecord,
+  } from "$lib/conversation-history";
   import ArrivalReports from "../ArrivalReports.svelte";
   import { arrivalRecords } from "$lib/arrival-reports";
   import FleetContacts from "../FleetContacts.svelte";
@@ -45,6 +52,9 @@
     onmerge,
     oncancelFleet,
     onroute,
+    onconversation,
+    commandRoomId = "",
+    conversationReceipt = null,
     onbuild,
     oncancel,
     onmigrate,
@@ -69,6 +79,9 @@
     ondisband?: (id: string) => void;
     onsplit?: (id: string, fighters: number, infantry: number) => void;
     onroute?: (fleetId: string, waypoints: string[]) => void;
+    onconversation?: (action: ConversationAction) => void;
+    commandRoomId?: string;
+    conversationReceipt?: ConversationReceipt | null;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
     oncargo?: (
@@ -99,6 +112,56 @@
   let contactsOpen = $state(false);
   let records = $state<CampaignView[]>([]);
   let arrivalsOpen = $state(false);
+  let conversationsOpen = $state(false);
+  let selectedRoom = $state("");
+  let conversationDrafts = $state<Record<string, string>>({});
+  let conversationTitle = $state("");
+  let acknowledgedConversation = "";
+  let receivedConversationViews = $state<MessageRecord[]>([]);
+  const messages = $derived(
+    conversationMessages(
+      [view, ...receivedConversationViews, ...records],
+      selectedRoom,
+    ),
+  );
+  $effect(() => {
+    const current = view;
+    untrack(() => {
+      const retained = new Map<string, MessageRecord>();
+      for (const record of [...receivedConversationViews, current])
+        for (const room of record.conversations ?? [])
+          if (room.message)
+            retained.set(room.message.id, {
+              conversations: [{ id: room.id, message: room.message }],
+            });
+      receivedConversationViews = [...new Set(retained.values())];
+    });
+  });
+  $effect(() => {
+    const receipt = conversationReceipt;
+    if (
+      receipt &&
+      receipt.gameId === view.id &&
+      receipt.id !== acknowledgedConversation
+    ) {
+      acknowledgedConversation = receipt.id;
+      untrack(() => {
+        if (
+          receipt.status === "accepted" &&
+          receipt.kind === "conversation.send" &&
+          conversationDrafts[receipt.roomId]?.trim() === receipt.body.trim()
+        )
+          conversationDrafts = { ...conversationDrafts, [receipt.roomId]: "" };
+        if (
+          receipt.status === "accepted" &&
+          receipt.kind === "conversation.create"
+        ) {
+          selectedRoom = receipt.roomId;
+          conversationTitle = "";
+        }
+      });
+    }
+  });
   let selectedArrival = $state("");
   let receivedArrivals = $state<CampaignView[]>([]);
   const arrivals = $derived(
@@ -159,7 +222,7 @@
     await tick();
     if (serial !== historySerial) return;
     if (
-      (history || contactsOpen || arrivalsOpen) &&
+      (history || contactsOpen || arrivalsOpen || conversationsOpen) &&
       document.activeElement === document.body
     )
       document.querySelector<HTMLElement>(".history-panel")?.focus();
@@ -167,7 +230,7 @@
       const page = await loadHistory(after);
       if (serial !== historySerial) return;
       records =
-        contactsOpen || arrivalsOpen
+        contactsOpen || arrivalsOpen || conversationsOpen
           ? [
               ...new Map(
                 [...records, ...page.records].map((record) => [
@@ -197,7 +260,7 @@
         historyLoading = false;
         await tick();
         if (
-          (history || contactsOpen || arrivalsOpen) &&
+          (history || contactsOpen || arrivalsOpen || conversationsOpen) &&
           serial === historySerial &&
           document.activeElement === document.body
         ) {
@@ -210,6 +273,15 @@
         }
       }
     }
+  }
+  async function closeConversations() {
+    conversationsOpen = false;
+    historySerial++;
+    historyLoading = false;
+    await tick();
+    document
+      .querySelector<HTMLElement>('[data-focus="conversations"]')
+      ?.focus();
   }
   async function closeArrivals() {
     arrivalsOpen = false;
@@ -270,6 +342,7 @@
     kind:
       | "roster"
       | "systems"
+      | "conversations"
       | "arrivals"
       | "contacts"
       | "history"
@@ -283,8 +356,9 @@
     history = kind === "history";
     contactsOpen = kind === "contacts";
     arrivalsOpen = kind === "arrivals";
+    conversationsOpen = kind === "conversations";
     if (
-      (history || contactsOpen || arrivalsOpen) &&
+      (history || contactsOpen || arrivalsOpen || conversationsOpen) &&
       !records.length &&
       !historyLoading
     )
@@ -297,7 +371,7 @@
       document.querySelector<HTMLElement>(".construction-panel")?.focus();
     else if (economy)
       document.querySelector<HTMLElement>(".economy-panel")?.focus();
-    else if (history || contactsOpen || arrivalsOpen)
+    else if (history || contactsOpen || arrivalsOpen || conversationsOpen)
       document.querySelector<HTMLElement>(".history-panel")?.focus();
     else if (listing) document.getElementById("system-search")?.focus();
     else document.querySelector<HTMLElement>(".roster-panel")?.focus();
@@ -331,15 +405,17 @@
           ? closeConstruction()
           : economy
             ? closeEconomy()
-            : arrivalsOpen
-              ? closeArrivals()
-              : contactsOpen
-                ? closeContacts()
-                : history
-                  ? closeHistory()
-                  : roster
-                    ? closeRoster()
-                    : closeList());
+            : conversationsOpen
+              ? closeConversations()
+              : arrivalsOpen
+                ? closeArrivals()
+                : contactsOpen
+                  ? closeContacts()
+                  : history
+                    ? closeHistory()
+                    : roster
+                      ? closeRoster()
+                      : closeList());
       return;
     }
     if (event.key !== "Tab") return;
@@ -389,6 +465,7 @@
       history ||
       contactsOpen ||
       arrivalsOpen ||
+      conversationsOpen ||
       economy ||
       construction ||
       military}
@@ -417,9 +494,16 @@
       aria-expanded={roster}>Roster</ActionButton
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
   </header>
-  {#if !roster}<div
+  {#if !roster && !commandKind.startsWith("conversation.")}<div
       class="acknowledgement"
-      inert={listing || history || economy || construction || military}
+      inert={listing ||
+        history ||
+        contactsOpen ||
+        arrivalsOpen ||
+        conversationsOpen ||
+        economy ||
+        construction ||
+        military}
     >
       <Feedback {message} {error} />{#if onretry}<ActionButton
           disabled={busy}
@@ -435,6 +519,7 @@
       history ||
       contactsOpen ||
       arrivalsOpen ||
+      conversationsOpen ||
       economy ||
       construction ||
       military}
@@ -482,6 +567,7 @@
       history ||
       contactsOpen ||
       arrivalsOpen ||
+      conversationsOpen ||
       economy ||
       construction ||
       military}
@@ -578,6 +664,13 @@
         data-focus="systems-list"
         aria-expanded={listing}>Systems list</ActionButton
       >
+      {#if loadHistory && onconversation}<ActionButton
+          class="secondary"
+          data-focus="conversations"
+          aria-expanded={conversationsOpen}
+          onclick={() => openPanel("conversations")}
+          >Conversations{#if view.conversations?.some((r) => r.invited || r.unread)}{" · New"}{/if}</ActionButton
+        >{/if}
       {#if loadHistory}<ActionButton
           class="secondary"
           data-focus="arrivals"
@@ -602,6 +695,46 @@
       >
     </div>
   </aside>
+  {#if conversationsOpen && onconversation}<div
+      class="construction-panel contact-panel history-panel"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      aria-label="Conversations panel"
+      onkeydown={panelKeys}
+    >
+      <Conversations
+        {view}
+        {messages}
+        bind:selected={selectedRoom}
+        bind:drafts={conversationDrafts}
+        bind:title={conversationTitle}
+        pending={pending && commandKind.startsWith("conversation.")}
+        {busy}
+        message={commandKind.startsWith("conversation.") &&
+        (commandRoomId === selectedRoom ||
+          (commandKind === "conversation.create" &&
+            conversationReceipt?.roomId === selectedRoom))
+          ? message
+          : ""}
+        error={commandKind.startsWith("conversation.") &&
+        (commandRoomId === selectedRoom ||
+          (commandKind === "conversation.create" &&
+            conversationReceipt?.roomId === selectedRoom))
+          ? error
+          : ""}
+        loading={historyLoading}
+        {historyError}
+        earlier={!!cursor}
+        newer={!!records.length && records[0].revision < view.revision}
+        oncommand={onconversation}
+        onearlier={() => readHistory(cursor)}
+        onlatest={() => readHistory()}
+        onretryHistory={() => readHistory(retryCursor)}
+        {onretry}
+        onclose={closeConversations}
+      />
+    </div>{/if}
   {#if arrivalsOpen}<div
       class="construction-panel contact-panel history-panel"
       role="dialog"
@@ -952,8 +1085,11 @@
     padding: 12px 0;
   }
   .system-actions {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding-top: 12px;
+    flex-shrink: 0;
   }
   .system-details:focus-visible {
     outline: 2px solid #91dcec;
@@ -984,7 +1120,9 @@
     border-color: #8bd8e7;
     color: #effdff;
     flex-shrink: 0;
-    margin-top: 12px;
+    min-width: 0;
+    padding: 10px 8px;
+    margin-top: 0;
   }
   h2 {
     font:

@@ -5,6 +5,11 @@ import {
   type Development,
   developments,
 } from "./construction.js";
+import {
+  type ConversationAction,
+  conversationView,
+  type Diplomacy,
+} from "./conversations.js";
 import { type FleetScans, fleetContactView } from "./fleet-contacts.js";
 import { type FleetAction, type Military, militaryView } from "./fleets.js";
 import { type Galaxy, generateGalaxy } from "./galaxy.js";
@@ -55,6 +60,8 @@ export interface Campaign {
   economy?: Economy;
   construction?: Construction;
   military?: Military;
+  conversationsVersion?: 1;
+  diplomacy?: Diplomacy;
   travelVersion?: 1;
   fleetContactsVersion?: 1;
   fleetScans?: FleetScans;
@@ -81,6 +88,7 @@ export type MigrationAction = {
   targetMode: "mock" | "real";
 };
 export type CampaignAction =
+  | ConversationAction
   | TravelAction
   | FleetAction
   | MigrationAction
@@ -197,6 +205,8 @@ export function createCampaign(
     revision: 1,
     rulesetVersion: rules.id,
     schemaVersion: 2,
+    conversationsVersion: 1,
+    diplomacy: { rooms: {} },
     travelVersion: 1,
     fleetContactsVersion: 1,
     intelligenceVersion: 1,
@@ -449,6 +459,8 @@ export function campaignView(state: Campaign, uid: string) {
         }
       : null,
     military: militaryView(state, uid),
+    conversationsEnabled: state.conversationsVersion === 1,
+    conversations: conversationView(state, uid),
     travelEnabled: state.travelVersion === 1,
     fleetContactsEnabled: state.fleetContactsVersion === 1,
     fleetContacts: fleetContactView(state, uid),

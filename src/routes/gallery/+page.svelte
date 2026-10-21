@@ -8,6 +8,7 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import Conversations from "$lib/components/Conversations.svelte";
   import ArrivalReports from "$lib/components/ArrivalReports.svelte";
   import FleetContacts from "$lib/components/FleetContacts.svelte";
   import FleetRoute from "$lib/components/FleetRoute.svelte";
@@ -21,6 +22,7 @@
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import {
+    conversationFrame,
     arrivalFrame,
     contactsFrame,
     travelFrame,
@@ -291,6 +293,19 @@
             />
           </div>
         {/each}{/each}
+      <h2>Private conversations · invitation and recipient history</h2>
+      {#each [0, 1200, 2200, 4800] as time}<div
+          style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <Conversations
+            {...conversationFrame(time)}
+            oncommand={() => {}}
+            onearlier={() => {}}
+            onlatest={() => {}}
+            onretryHistory={() => {}}
+            onclose={() => {}}
+          />
+        </div>{/each}
       <h2>Arrival reports · split occupation and conquest</h2>
       {#each [0, 700, 1200, 2200, 3200] as time}<div
           style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"

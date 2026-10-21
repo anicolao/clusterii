@@ -1,7 +1,28 @@
 export const campaignPendingMessage = "Awaiting acknowledgement…";
 export const campaignNetworkMessage =
   "The connection was interrupted. Your selection and pending order are preserved.";
+const conversationMessages: Record<string, string> = {
+  "conversation.create": "Conversation created.",
+  "conversation.invite": "Invitation sent. Earlier messages are not shared.",
+  "conversation.accept":
+    "Invitation accepted. Future messages are available to you.",
+  "conversation.decline": "Invitation declined.",
+  "conversation.remove": "Participant removed. Future access has ended.",
+  "conversation.leave": "You left the conversation. Future access has ended.",
+  "conversation.close":
+    "Conversation closed. Its authorized history remains available.",
+  "conversation.send": "Message sent.",
+  "conversation.read": "Reading position saved.",
+};
 const reasons: Record<string, string> = {
+  "conversation-invalid":
+    "Check the title, message or participant and try again.",
+  "conversation-unavailable":
+    "This older campaign has no conversations. Create a new development campaign; its existing history remains available.",
+  "conversation-limit":
+    "Each commander can create four conversations in this development campaign.",
+  "conversation-closed":
+    "This conversation is closed. Its authorized history remains available.",
   "route-invalid":
     "Choose distinct adjacent systems and a final destination different from the origin.",
   "route-range":
@@ -69,33 +90,40 @@ export function campaignFeedback(
   if (receipt.status === "rejected")
     return {
       message: "",
-      error: kind.startsWith("fleet.")
+      error: kind.startsWith("conversation.")
         ? receipt.reason === "conflict"
-          ? "The campaign changed. Your manifest is preserved. Review available forces and submit again."
+          ? "The conversation changed. Your draft is preserved. Review its participants before sending again."
           : receipt.reason === "permission"
-            ? "You must control orbit, and surface when embarking or returning infantry."
-            : receipt.reason === "invalid"
-              ? "Choose whole force counts or a stationed fleet."
-              : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
-        : kind === "market.focus"
+            ? "Conversation access has ended or this action is not permitted. Your draft is preserved."
+            : (reasons[receipt.reason ?? "conversation-invalid"] ??
+              reasons["conversation-invalid"])
+        : kind.startsWith("fleet.")
           ? receipt.reason === "conflict"
-            ? "The campaign changed. Your allocation is preserved. Review it and submit again."
-            : receipt.reason === "invalid"
-              ? "Allocate exactly 100 whole points across the four developments."
-              : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
-          : kind.startsWith("construction.")
+            ? "The campaign changed. Your manifest is preserved. Review available forces and submit again."
+            : receipt.reason === "permission"
+              ? "You must control orbit, and surface when embarking or returning infantry."
+              : receipt.reason === "invalid"
+                ? "Choose whole force counts or a stationed fleet."
+                : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
+          : kind === "market.focus"
             ? receipt.reason === "conflict"
-              ? "The campaign changed. Your development choice is preserved. Review the current quote and submit again."
-              : receipt.reason === "permission"
-                ? "You must control the development’s layer to change its queue."
-                : receipt.reason === "invalid"
-                  ? "Choose an available development or queued order."
-                  : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
-            : kind === "research.select" && receipt.reason === "conflict"
-              ? "The campaign changed. Your research choice is preserved. Review the current progress and submit again."
-              : kind === "research.select" && receipt.reason === "invalid"
-                ? "Choose one of the eight research tracks."
-                : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid),
+              ? "The campaign changed. Your allocation is preserved. Review it and submit again."
+              : receipt.reason === "invalid"
+                ? "Allocate exactly 100 whole points across the four developments."
+                : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
+            : kind.startsWith("construction.")
+              ? receipt.reason === "conflict"
+                ? "The campaign changed. Your development choice is preserved. Review the current quote and submit again."
+                : receipt.reason === "permission"
+                  ? "You must control the development’s layer to change its queue."
+                  : receipt.reason === "invalid"
+                    ? "Choose an available development or queued order."
+                    : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
+              : kind === "research.select" && receipt.reason === "conflict"
+                ? "The campaign changed. Your research choice is preserved. Review the current progress and submit again."
+                : kind === "research.select" && receipt.reason === "invalid"
+                  ? "Choose one of the eight research tracks."
+                  : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid),
       remedy:
         receipt.reason === "conflict"
           ? ("conflict" as const)
@@ -103,7 +131,8 @@ export function campaignFeedback(
     };
   return {
     message:
-      kind === "fleet.route"
+      conversationMessages[kind] ??
+      (kind === "fleet.route"
         ? "Route accepted. Departure scheduled."
         : kind === "fleet.cancel"
           ? "Fleet order cancelled. Reservations released; no forces moved."
@@ -131,7 +160,7 @@ export function campaignFeedback(
                                 ? "Campaign created. Choose your faction."
                                 : kind === "campaign.leave"
                                   ? "Your seat has been released."
-                                  : "Your seat is confirmed.",
+                                  : "Your seat is confirmed."),
     error: "",
     remedy: null,
   };
