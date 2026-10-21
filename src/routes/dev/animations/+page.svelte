@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import SystemObservation from "$lib/components/SystemObservation.svelte";
   import MarketFocus from "$lib/components/MarketFocus.svelte";
   import SystemConstruction from "$lib/components/SystemConstruction.svelte";
   import CampaignResearch from "$lib/components/CampaignResearch.svelte";
@@ -21,6 +22,8 @@
     researchFrame,
     constructionFrame,
     focusFrame,
+    observationFrame,
+    observedTarget,
   } from "./scenarios";
   let selected = $state("accepted");
   let time = $state(0);
@@ -116,7 +119,10 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "market-focus"}<div
+        {#if selected === "observation"}<SystemObservation
+            view={observationFrame(time)}
+            starId={observedTarget}
+          />{:else if selected === "market-focus"}<div
             style="height: min(850px,90svh);min-height:550px"
           >
             {#key frame.at}

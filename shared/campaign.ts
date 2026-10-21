@@ -12,6 +12,7 @@ import {
   initialFocus,
   validAllocation,
 } from "./market-focus.js";
+import { type Intelligence, observationView } from "./observations.js";
 import {
   type Economy,
   initialEconomy,
@@ -50,6 +51,8 @@ export interface Campaign {
   schemaVersion: 1 | 2;
   economy?: Economy;
   construction?: Construction;
+  intelligenceVersion?: 1;
+  intelligence?: Intelligence;
   commandProtocolVersion: 1;
   development: true;
   mode: "mock" | "real";
@@ -185,6 +188,7 @@ export function createCampaign(
     revision: 1,
     rulesetVersion: rules.id,
     schemaVersion: 2,
+    intelligenceVersion: 1,
     commandProtocolVersion: 1,
     development: true,
     mode: action.mode,
@@ -433,6 +437,9 @@ export function campaignView(state: Campaign, uid: string) {
           ledger: state.economy.ledger[uid] ?? null,
         }
       : null,
+    observations: observationView(state, uid),
+    scanningEnabled:
+      state.schemaVersion === 2 && state.intelligenceVersion === 1,
     construction: state.construction
       ? {
           orders: state.construction.orders.filter(

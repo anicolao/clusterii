@@ -8,6 +8,7 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import SystemObservation from "$lib/components/SystemObservation.svelte";
   import MarketFocus from "$lib/components/MarketFocus.svelte";
   import DevelopmentIcon from "$lib/components/DevelopmentIcon.svelte";
   import SystemConstruction from "$lib/components/SystemConstruction.svelte";
@@ -20,6 +21,8 @@
     researchFrame,
     constructionFrame,
     focusFrame,
+    observationFrame,
+    observedTarget,
     legacyProductionView,
   } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
@@ -192,7 +195,21 @@
       <FactionPicker value="heliac" game={roster} disabled />
     </section>
     <section>
-      <h2>Account sessions</h2>
+      <h2>Stellar observations · entitled report states</h2>
+      {#each [0, 1200, 3400] as time}<div
+          style="max-width:420px;padding:20px;border:1px solid #42616d;margin-bottom:20px"
+        >
+          <SystemObservation
+            view={observationFrame(time)}
+            starId={observedTarget}
+          />
+        </div>{/each}
+      <div style="max-width:420px;padding:20px">
+        <SystemObservation
+          view={{ ...observationFrame(0), scanningEnabled: false }}
+          starId={observedTarget}
+        />
+      </div>
       <h2>Market focus · production allocation and icons</h2>
       {#each ["market", "camp", "base", "station"] as type}<DevelopmentIcon
           type={type as "market" | "camp" | "base" | "station"}
@@ -277,6 +294,7 @@
             onclose={() => {}}
           />
         </div>{/each}
+      <h2>Account sessions</h2>
       <SessionSecurity onconfirm={() => {}} />
       <SessionSecurity pending onconfirm={() => {}} />
       <SessionSecurity

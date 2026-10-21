@@ -1,3 +1,4 @@
+import { acquireObservations, drawRange } from "@shared/observations";
 import { produce } from "@shared/production";
 import {sessionEndedMessage} from "$lib/session-feedback";
 import { verifyReceipt } from "@shared/command-receipt";
@@ -57,7 +58,12 @@ export function constructionFrame(time:number){return campaignView(time>=3200?co
 const focusQueued=selectMarketFocus(productionStart,{kind:"market.focus",expectedRevision:productionStart.revision,allocation:{market:40,camp:20,base:20,station:20}},"scheduled-0","focus-demo",productionStart.economy!.nextTickAt-1);
 const focusSettled=produce(focusQueued,focusQueued.economy!);
 export function focusFrame(time:number){return campaignView(time>=3200?{...focusSettled.campaign,economy:focusSettled.economy}:time>=2200?focusQueued:productionStart,"scheduled-0").economy!.marketFocus;}
+const observationCurrent={...firstProduction.campaign,economy:firstProduction.economy};acquireObservations(productionStart,observationCurrent,()=>0);
+const observationNext=produce(observationCurrent,observationCurrent.economy!);const observationStale={...observationNext.campaign,economy:observationNext.economy};acquireObservations(observationCurrent,observationStale,()=>drawRange-1);
+export const observedTarget=productionStart.seats[1].home!;
+export function observationFrame(time:number){return campaignView(time>=3200?observationStale:time>=1200?observationCurrent:productionStart,"scheduled-0");}
 export const scenarios = [
+ {id:"observation",label:"Observation: unknown → current → stale",frames:[{at:0,feedback:{message:"No observation acquired.",error:"",remedy:"none"}},{at:1200,feedback:{message:"Observation acquired at tick 1.",error:"",remedy:"none"}},{at:3200,feedback:{message:"Scan missed. Prior observation remains historical.",error:"",remedy:"none"}}]},
  {id:"market-focus",label:"Market focus: pending → reconnect → accepted → applied",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("market.focus",{status:"accepted"})},{at:3200,feedback:{message:"Focus applied. New dividend weights begin next tick.",error:"",remedy:"none"}}]},
  {id:"construction",label:"Construction: pending → reconnect → reserved → completed",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("construction.build",{status:"accepted"})},{at:3200,feedback:{message:"Market completed. Production and dividends settled.",error:"",remedy:"none"}}]},
  {id:"research",label:"Research: pending → reconnect → scheduled → applied",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("research.select",{status:"accepted"})},{at:3200,feedback:{message:"Research applied at tick 1.",error:"",remedy:"none"}}]},

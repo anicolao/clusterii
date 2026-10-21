@@ -350,3 +350,17 @@ New #20 bc0aea5 correctly stacks on system-construction and is attached to super
 ## Reviewer progress — 2026-10-21 00:17 Toronto
 
 #19/#20 unchanged, verification running and publication/documentation green. Agent progressed through stellar-observation tests and is compacting context, not demonstrably stalled. Independently inspected retained logs: mock observation service 156 assertions in 4.58 seconds; seven browser/gallery/lab tests pass in 31.8 seconds, including unknown/current/historical states and reduced-motion retention. Reviewed production observation copy explicitly marking acquired tick, historical age and unknown state, plus legacy campaign explanation. These are agent-run test results and source inspection, not independent final rendered approval or live-provider security acceptance. Worktree still dirty, no observation PR yet. No new actionable finding/duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 00:27 Toronto
+
+#19 advanced to 191d7e7 and #20 to 220916e after admission-browser timing correction, with publication/documentation green and replacement verification pending. Previous #19 run passed construction completion/production but failed two-campaign setup crossing a quarter-hour. Independently reviewed correction: reads recorded scheduled start metadata, validates scheduled phase/aligned timestamps, asserts matching future/overdue UI status, waits until latest recorded boundary, and preserves real scheduler/home/entry assertions. No fabricated campaign state or weakened completion checks observed. Focused rerun is legitimately waiting for the real boundary; pass still pending.
+
+Observation work continues actively with privacy/envelope-budget tests and visual refinement. Worktree modifications preserved after stash propagation; no unresolved merge markers reported or new PR. No new actionable finding or duplicate handoff. Prior supervisory checkpoints carried in correction commit; carry this checkpoint into next related committed/pushed logs. No merge or acceptance expansion.
+
+
+## Reviewer progress — 2026-10-21 00:37 Toronto
+
+#19/#20 replacement verification remains running, publication/documentation green. Independently inspected focused admission log: corrected ordinary two-campaign journey passes in 11.6 minutes at real recorded boundary. This closes the focused timing reproduction, not replacement full CI. Observation evidence now records both-provider recovery/migration 361 assertions, default service 1284 assertions and seven final browser/lab passes; these remain implementer runs.
+
+Inspected current-phone observation capture: age/tick, source, explicit unclaimed owners and observed forces/developments are legible in bounded inspector with persistent navigation; final row may require internal scrolling. No false certainty inferred for historical states from this current-state sample. Broader visual/security acceptance remains open. Agent actively completing compatible backend rollout and preparing PR; source remains uncommitted, no stall or duplicate handoff. Carry checkpoint into next related committed/pushed logs; no merge.

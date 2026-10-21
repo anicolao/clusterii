@@ -10,7 +10,7 @@ test('review rules generate persisted, reproducible, fair connected galaxies for
     expect(galaxy).toEqual(generateGalaxy(seats,seed));
   }
 });
-import {createCampaign,joinOrLeave,startCampaign,campaignView,maintainCampaign} from '../shared/campaign';
+import {type Campaign,createCampaign,joinOrLeave,startCampaign,campaignView,maintainCampaign} from '../shared/campaign';
 import type {FactionId} from '../shared/rules';
 test('development admission enforces quota, idempotency, stale claims, scheduled start and private views',()=>{
   const now=1000;
@@ -254,3 +254,36 @@ test('focus admission is bounded, ordered and zero-weight completion pools pay n
  let state=productionFixture();const allocation={market:100,camp:0,base:0,station:0},due=state.economy!.nextTickAt;for(let i=0;i<64;i++)state=selectMarketFocus(state,{kind:'market.focus',expectedRevision:state.revision,allocation:i===63?{market:0,camp:100,base:0,station:0}:allocation},'p1',`order-${i}`,due-1);expect(()=>selectMarketFocus(state,{kind:'market.focus',expectedRevision:state.revision,allocation},'p1','overflow',due-1)).toThrow('focus-queue-full');state=nextProduction(state);expect(state.economy!.marketFocus!.p1.appliedOrders).toHaveLength(64);expect(state.economy!.marketFocus!.p1.allocation.camp).toBe(100);expect(state.economy!.marketFocus!.p1.orders).toEqual([]);
  let zero=productionFixture();delete zero.economy!.marketFocus;expect(campaignView(zero,'p0').economy!.marketFocus.allocation).toEqual(initialFocus().allocation);for(const uid of ['p1','p2','p3'])zero=selectMarketFocus(zero,{kind:'market.focus',expectedRevision:zero.revision,allocation},uid,`zero-${uid}`,zero.economy!.nextTickAt-1);zero=orderConstruction(zero,{kind:'construction.build',expectedRevision:zero.revision,starId:zero.seats[0].home!,type:'camp'},'p0','zero-pool',zero.economy!.nextTickAt-1);for(let i=0;i<5;i++)zero=nextProduction(zero);for(const ledger of Object.values(zero.economy!.ledger))expect(ledger.marketDividendsMilli??0).toBe(0);
 });
+
+import {assertObservationBudget,acquireObservations,detectionProbability,drawRange} from '../shared/observations';
+import {observationDraw} from '../functions/src/observation-random';
+function observedTick(state:Campaign,draw:(uid:string,starId:string,tick:number)=>number){const next=nextProduction(state);acquireObservations(state,next,draw);return next;}
+test('scans use one private draw per target, frozen levels and nearest orbital source',()=>{
+ expect(detectionProbability(1,10)).toBe(1);expect(detectionProbability(1,100)).toBe(.1);expect(detectionProbability(2,100)).toBe(.4);expect(detectionProbability(0,0)).toBe(1);expect(()=>detectionProbability(1,-1)).toThrow();
+ let state=productionFixture(),calls=0;const next=observedTick(state,()=>{calls++;return 0;});expect(calls).toBe(4*(state.galaxy.stars.length-1));expect(Object.keys(next.intelligence!.reports.p0)).toHaveLength(state.galaxy.stars.length);expect(next.intelligence!.draws.p0).toHaveLength(state.galaxy.stars.length);expect(state.intelligence).toBeUndefined();
+ const own=state.galaxy.stars.find(star=>star.id===state.seats[0].home)!,target=state.galaxy.stars.find(star=>star.id===state.seats[1].home)!;target.x=own.x+100;target.y=own.y;target.z=own.z;state.economy!.research.p0.target='scanning';state.economy!.research.p0.progressMilli.scanning=39999;
+ state=observedTick(state,()=>Math.floor(drawRange*.2));expect(state.economy!.research.p0.levels.scanning).toBe(2);expect(state.intelligence!.reports.p0[target.id]).toBeUndefined();state=observedTick(state,()=>Math.floor(drawRange*.2));expect(state.intelligence!.reports.p0[target.id][0]).toBe(2);
+});
+test('stale observations preserve old permitted facts and never expose current enemy secrets or draws',()=>{
+ let state=observedTick(productionFixture(),()=>0);const target=state.seats[1].home!,first=campaignView(state,'p0').observations![target];expect(first.observedTick).toBe(1);const next=nextProduction(state);next.systems[target].fighters=987654;next.systems[target].escrowMilli=87654321;next.empires.p1.creditsMilli=76543210;acquireObservations(state,next,()=>drawRange-1);const view=campaignView(next,'p0');expect(view.observations![target]).toEqual(first);expect(view.production!.tick).toBe(2);const serialized=JSON.stringify(view);for(const secret of ['987654','87654321','76543210',state.seed,'"draws"','"intelligence"'])expect(serialized).not.toContain(secret);expect(Object.keys(view.observations![target]).sort()).toEqual(['observedTick','sourceStarId','orbit','surface','fighters','infantry','markets','camps','bases','stations'].sort());
+ const replay=nextProduction(state);replay.systems[target].fighters=987654;replay.systems[target].escrowMilli=87654321;replay.empires.p1.creditsMilli=76543210;acquireObservations(state,replay,()=>drawRange-1);expect(replay.intelligence).toEqual(next.intelligence);
+});
+test('split ownership grants only observed fields; no sensor means stale and legacy capability remains unchanged',()=>{
+ let state=productionFixture();const own=state.seats[0].home!,foreign=state.seats[1].home!;state.systems[own].surface='p1';state.systems[own].infantry=861234;state.systems[own].escrowMilli=55667788;const next=observedTick(state,()=>drawRange-1);const ownView=campaignView(next,'p0'),otherView=campaignView(next,'p2');expect(ownView.holdings.find(h=>h.starId===own)!.infantry).toBeUndefined();expect(ownView.observations![own].infantry).toBeGreaterThanOrEqual(861234);expect(ownView.observations![own].surface).not.toBe('You');expect(JSON.stringify(otherView)).not.toContain('861234');expect(JSON.stringify(ownView.observations)).not.toContain('55667788');
+ const observed=observedTick(productionFixture(),()=>0);observed.systems[observed.seats[0].home!].orbit='p1';const noSensor=observedTick(observed,(uid)=>{expect(uid).not.toBe('p0');return drawRange-1;});expect(noSensor.intelligence!.reports.p0).toEqual(observed.intelligence!.reports.p0);expect(noSensor.intelligence!.draws.p0.every(value=>value===null)).toBe(true);
+ const legacy=productionFixture();delete legacy.intelligenceVersion;const unchanged=observedTick(legacy,()=>{throw new Error('Legacy must not scan');});expect(unchanged.intelligence).toBeUndefined();expect(campaignView(unchanged,'p0').scanningEnabled).toBe(false);expect(campaignView(unchanged,'p0').observations).toBeNull();
+},10000);
+
+test('server observation draws are stable and domain-separated without public replay secrets',()=>{
+ const seed='a'.repeat(64),value=observationDraw(seed,'game','p0','s1',1);expect(value).toBe(observationDraw(seed,'game','p0','s1',1));expect(value).toBeGreaterThanOrEqual(0);expect(value).toBeLessThan(drawRange);for(const changed of [observationDraw('b'.repeat(64),'game','p0','s1',1),observationDraw(seed,'game2','p0','s1',1),observationDraw(seed,'game','p1','s1',1),observationDraw(seed,'game','p0','s2',1),observationDraw(seed,'game','p0','s1',2)])expect(changed).not.toBe(value);
+});
+
+test('the largest stellar catalogue retains complete reports within the canonical envelope budget',async()=>{
+ let state=createCampaign('observation-budget',{kind:'campaign.create',expectedRevision:0,name:'Observation budget',capacity:12,mode:'mock',development:true},'c'.repeat(64),0);
+ for(let i=0;i<12;i++)state=joinOrLeave(state,{kind:'campaign.join',expectedRevision:state.revision,faction:rules.factions[i%4].id},`player-${i}`,{alias:`Envoy ${i}`,portrait:'G1'},0);state=startCampaign(state,900000);
+ for(let i=0;i<state.galaxy.stars.length;i++){const system=state.systems[state.galaxy.stars[i].id];system.orbit=system.surface=state.seats[i%12].uid;system.fighters=system.infantry=1000000;system.markets=system.camps=system.bases=system.stations=18;}for(const research of Object.values(state.economy!.research))research.levels.scanning=10;
+ assertObservationBudget(state);state=observedTick(state,()=>drawRange-1);assertObservationBudget(state);for(const seat of state.seats)expect(Object.keys(state.intelligence!.reports[seat.uid])).toHaveLength(384);
+ const {provider,newKey}=await import('../shared/crypto');for(const mode of ['mock','real'] as const){const envelope=await provider(mode).seal(state,newKey(),{gameId:state.id,objectId:'canonical',revision:state.revision,epoch:1,keyVersion:1});const bytes=new TextEncoder().encode(JSON.stringify(envelope)).byteLength;console.info('Stellar observation envelope budget',{mode,bytes,players:12,stars:384});expect(bytes).toBeLessThan(900000);}
+});
+
+test('observation storage reserves complete reports before admitting excess pending work',()=>{const state=productionFixture();assertObservationBudget(state);state.construction={orders:Array.from({length:4000},(_,i)=>({id:`${i}`.padStart(36,'0'),uid:'p0',starId:state.seats[0].home!,type:'market' as const,sequence:i,effectiveTick:1,paidMilli:100000,executedTick:null,startedTick:null,progress:0})),cancellations:[],ledger:{}};const before=structuredClone(state);expect(()=>assertObservationBudget(state)).toThrow('pending-work-capacity');expect(state).toEqual(before);});
