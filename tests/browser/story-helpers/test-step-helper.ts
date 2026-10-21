@@ -22,6 +22,7 @@ import {
   rendererArgs,
 } from "../../../playwright.stories.config";
 import { stableImage } from "./stable-image";
+import { textLayout } from "./text-layout";
 import { captureReady, type MotionFrame } from "./capture-ready";
 import { assertScreenFit } from "./screen-fit";
 export const CAPTURE_BUDGET = 10000;
@@ -265,6 +266,12 @@ export class TestStepHelper {
                 exactPixels,
               );
               writeFileSync(join(this.story.folder, stem), image);
+              // Observe after capture: diagnostics cannot change the captured pixels.
+              // Preserve this for passing and failing views, independently of baselines.
+              writeFileSync(
+                join(this.story.folder, stem.replace(/\.png$/, ".layout.json")),
+                JSON.stringify(await page.evaluate(textLayout), null, 2),
+              );
               await this.info.attach(`${id} — ${view.player}`, {
                 body: image,
                 contentType: "image/png",

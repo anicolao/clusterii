@@ -1055,3 +1055,19 @@ Reviewer finding 2026-10-21 15:58 Toronto: current #43 d3e34c4 story job11943170
 #49 3ff3783 research-lab stories is open correctly stacked on #48 and attached. Review records four local exact journeys96 captures15.7sec, scoped shared-component evidence; Linux/full independent acceptance open.
 
 Independently reviewed #43 6d6b005 deadline change: only whole-story180s->300s, individual readiness/capture deadlines and all50 viewpoints/exact baselines unchanged. Implementer trace analysis records100 screenshots114.95sec and final service/Continue assertions complete before overall deadline; this is documented capture cost, not evidence of a service timeout. Local unchanged-image comparison passes; replacement Linux remains required. Agent actively propagating fix #44–49. Separate identity-text mismatch remains unresolved; no duplicate handoff while verification proceeds. Carry checkpoint into related committed/pushed logs. No release completion or merge.
+
+
+## Reviewer progress — 2026-10-21 16:18 Toronto
+
+#50 30a33d0 history-lab stories is open correctly stacked on #49 and attached. Review records four local exact journeys48 captures13.2sec; callback/reducer-derived specimen evidence explicitly excludes authenticated service recovery. Native keyboard scroll outcome now awaited before capture, without baseline-guided retry. Independent full visual/Linux gates remain open.
+
+#43–50 latest checks mostly queued; no newly completed actionable failure. Agent has completed its long turn and is now consuming previously queued handoffs, correctly recognizing resolved historical findings without duplicate logging or reruns. Avoid adding duplicate prompts while it drains this queue. Current unresolved identity-raster and preview/exact-current-head gates remain as recorded; no release completion. Carry checkpoint into related committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-21 16:28 Toronto
+
+Agent drained historical queue and is idle since16:22, working tree clean at30a33d0. #41 current application/story checks now all green; #42 inherited raster failure persists; #43–50 mostly queued. No additional failure seen. Resume warranted because useful local diagnosis/implementation remains independently of CI.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-21 16:28 Toronto: your queued historical handoffs are drained and pane is idle. Resume authorized work. Prioritize the unresolved short identity paragraph raster mismatch inherited from #42: use retained Linux actual/expected/trace and renderer/layout evidence to establish a reproducible cause; preserve existing baselines, zero tolerance and failure artifacts. Continue independent remaining illustrated-story/implementation work while CI queues drain, and coordinate exact-head preview retries when publication clears. Do not wait indefinitely for CI when useful local diagnosis remains. Carry main meta-prompts checkpoints through16:28 into related committed/pushed logs, attribute this handoff in PROMPTS.md and continuations per AGENTS.md. No merge or full-release acceptance without remaining evidence.

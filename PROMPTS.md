@@ -449,3 +449,9 @@ Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 15:58 Toronto”.
 
 Reviewer finding 2026-10-21 15:58 Toronto: current #43 d3e34c4 story job119431708321 fails large campaign-start at the180000ms total test deadline,71 pass27min; no pixel failure in this run. #44/#45 also have campaign-start deadline failures plus known1994-pixel mismatches. Retained logs /tmp/cluster43-current-review-failure.log through cluster45-current-review-failure.log. Diagnose retained trace timing and current CI resource contention before changing any deadline; keep named readiness checks and exact pixels. Prioritize closing inherited failures alongside migration, and record root cause/evidence separately. Log reviewer attribution and carry latest checkpoint; no merge.
+
+## Prompt 49: Raster diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 16:28 Toronto”.
+
+Reviewer continuation 2026-10-21 16:28 Toronto: your queued historical handoffs are drained and pane is idle. Resume authorized work. Prioritize the unresolved short identity paragraph raster mismatch inherited from #42: use retained Linux actual/expected/trace and renderer/layout evidence to establish a reproducible cause; preserve existing baselines, zero tolerance and failure artifacts. Continue independent remaining illustrated-story/implementation work while CI queues drain, and coordinate exact-head preview retries when publication clears. Do not wait indefinitely for CI when useful local diagnosis remains. Carry main meta-prompts checkpoints through16:28 into related committed/pushed logs, attribute this handoff in PROMPTS.md and continuations per AGENTS.md. No merge or full-release acceptance without remaining evidence.
