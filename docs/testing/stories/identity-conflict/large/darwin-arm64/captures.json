@@ -1,0 +1,62 @@
+[
+  {
+    "image": "001-first-device-sign-in-1-commander-device-one.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/001-first-device-sign-in-1-commander-device-one.png",
+    "actualSha256": "8b514b4a3aef45f625b623ab1d04d5498f6b0345b09b51d01dd3303dd5fd2388"
+  },
+  {
+    "image": "002-save-original-1-commander-device-one.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/002-save-original-1-commander-device-one.png",
+    "actualSha256": "929d4cc670dc7322792d22e7a434688bd05f201f8da5d0addf74ec1336a14490"
+  },
+  {
+    "image": "003-second-device-sign-in-1-commander-device-one.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/003-second-device-sign-in-1-commander-device-one.png",
+    "actualSha256": "929d4cc670dc7322792d22e7a434688bd05f201f8da5d0addf74ec1336a14490"
+  },
+  {
+    "image": "003-second-device-sign-in-2-commander-device-two.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/003-second-device-sign-in-2-commander-device-two.png",
+    "actualSha256": "f8b17844c817e67768ee100d234223517a36440466afe95d74226522a5edff54"
+  },
+  {
+    "image": "004-preserve-local-draft-1-commander-device-one.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/004-preserve-local-draft-1-commander-device-one.png",
+    "actualSha256": "929d4cc670dc7322792d22e7a434688bd05f201f8da5d0addf74ec1336a14490"
+  },
+  {
+    "image": "004-preserve-local-draft-2-commander-device-two.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/004-preserve-local-draft-2-commander-device-two.png",
+    "actualSha256": "59ff6a24eb20aacb62372a40089073231a8e9939af183c99f5c6f1e7a9188a3f"
+  },
+  {
+    "image": "005-other-device-save-1-commander-device-one.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/005-other-device-save-1-commander-device-one.png",
+    "actualSha256": "d0b3d3d940a42aa80156e018e3539b94b2dd493019d0c5535151c6531fe2679f"
+  },
+  {
+    "image": "005-other-device-save-2-commander-device-two.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/005-other-device-save-2-commander-device-two.png",
+    "actualSha256": "59ff6a24eb20aacb62372a40089073231a8e9939af183c99f5c6f1e7a9188a3f"
+  },
+  {
+    "image": "006-reject-conflicting-save-1-commander-device-one.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/006-reject-conflicting-save-1-commander-device-one.png",
+    "actualSha256": "d0b3d3d940a42aa80156e018e3539b94b2dd493019d0c5535151c6531fe2679f"
+  },
+  {
+    "image": "006-reject-conflicting-save-2-commander-device-two.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/006-reject-conflicting-save-2-commander-device-two.png",
+    "actualSha256": "a7424e7cd41adb8752bf1ab217a6445a08e688ef03fe76140ba2b20bc785d6bf"
+  },
+  {
+    "image": "007-replace-explicitly-1-commander-device-one.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/007-replace-explicitly-1-commander-device-one.png",
+    "actualSha256": "6e9bd1f42de609e90601d08798277c5b298252d1e3fca51eb0ca6011eb61bec2"
+  },
+  {
+    "image": "007-replace-explicitly-2-commander-device-two.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-conflict/large/darwin-arm64/007-replace-explicitly-2-commander-device-two.png",
+    "actualSha256": "6e9bd1f42de609e90601d08798277c5b298252d1e3fca51eb0ca6011eb61bec2"
+  }
+]

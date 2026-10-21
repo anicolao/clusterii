@@ -1,0 +1,191 @@
+{
+  "id": "identity-conflict",
+  "title": "Resolve two-device identity conflict without losing either draft",
+  "inventory": [
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "The same commander edits an identity on two independent authenticated devices. One save wins; the other draft survives conflict and requires an explicit replacement. Read-only emulator records corroborate revisions without choosing or injecting player actions.",
+  "source": {
+    "commit": "f2eee49082a1ce8b38e37bd0fe3d42aaaf6d0545",
+    "dirty": true,
+    "spec": "tests/browser/profile-recovery.story.spec.ts",
+    "specSha256": "d433da60b31f0590b52b3ad249fbfbc284ac902f4a4024a48b311ecac365d90e"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "short",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "first-device-sign-in",
+      "description": "Sign in on the first device and reach the identity editor.",
+      "actor": "Commander — device one",
+      "kind": "player",
+      "acknowledgement": "The commander name field is ready after real provider login.",
+      "verifications": [
+        "Eight production portraits and Save are available."
+      ],
+      "views": [
+        {
+          "player": "Commander — device one",
+          "image": "001-first-device-sign-in-1-commander-device-one.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-original",
+      "description": "Save Original as the shared identity.",
+      "actor": "Commander — device one",
+      "kind": "player",
+      "acknowledgement": "The encrypted save receives an authoritative accepted receipt.",
+      "verifications": [
+        "The acknowledged name remains Original."
+      ],
+      "views": [
+        {
+          "player": "Commander — device one",
+          "image": "002-save-original-1-commander-device-one.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "second-device-sign-in",
+      "description": "Sign in independently on a second device and recover Original.",
+      "actor": "Commander — device two",
+      "kind": "player",
+      "acknowledgement": "The second device recovers the saved identity.",
+      "verifications": [
+        "Both authenticated devices show the same saved name."
+      ],
+      "views": [
+        {
+          "player": "Commander — device one",
+          "image": "003-second-device-sign-in-1-commander-device-one.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander — device two",
+          "image": "003-second-device-sign-in-2-commander-device-two.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "preserve-local-draft",
+      "description": "Edit a local Preserved draft without submitting it.",
+      "actor": "Commander — device two",
+      "kind": "player",
+      "acknowledgement": "The editor displays the local draft.",
+      "verifications": [
+        "The first device still shows the saved Original identity."
+      ],
+      "views": [
+        {
+          "player": "Commander — device one",
+          "image": "004-preserve-local-draft-1-commander-device-one.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander — device two",
+          "image": "004-preserve-local-draft-2-commander-device-two.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "other-device-save",
+      "description": "Save Other device while the second device keeps its unsent draft.",
+      "actor": "Commander — device one",
+      "kind": "player",
+      "acknowledgement": "The first device receives accepted save acknowledgement.",
+      "verifications": [
+        "The remote save does not overwrite the second device draft and produces revision two once."
+      ],
+      "views": [
+        {
+          "player": "Commander — device one",
+          "image": "005-other-device-save-1-commander-device-one.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander — device two",
+          "image": "005-other-device-save-2-commander-device-two.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reject-conflicting-save",
+      "description": "Submit the stale draft and receive a conflict remedy.",
+      "actor": "Commander — device two",
+      "kind": "player",
+      "acknowledgement": "The conflict identifies another device and offers explicit replacement.",
+      "verifications": [
+        "The draft remains intact, no reconnect remedy is substituted, and the conflicting command has no saved effect."
+      ],
+      "views": [
+        {
+          "player": "Commander — device one",
+          "image": "006-reject-conflicting-save-1-commander-device-one.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander — device two",
+          "image": "006-reject-conflicting-save-2-commander-device-two.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "replace-explicitly",
+      "description": "Explicitly replace the saved identity with the preserved draft.",
+      "actor": "Commander — device two",
+      "kind": "player",
+      "acknowledgement": "Replacement is acknowledged and reaches the other device.",
+      "verifications": [
+        "Both devices retain the chosen draft, with exactly one additional saved revision."
+      ],
+      "views": [
+        {
+          "player": "Commander — device one",
+          "image": "007-replace-explicitly-1-commander-device-one.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander — device two",
+          "image": "007-replace-explicitly-2-commander-device-two.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
