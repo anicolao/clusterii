@@ -698,16 +698,6 @@ Reviewer CI finding at 08:07 Toronto: #29 2f446ab is green; #30 67244aa run39587
 #30/#31 failures unchanged; #32/#33 verification pending, publish/documentation green. Pane confirms08:07 handoff is queued and agent actively diagnosing durable outbox, receipt matching and campaign-collision fixture; no duplicate prompt or stall intervention. Credit-offer successor remains early/uncommitted alongside diagnosis.
 
 Preliminary offer-source inspection finds issuer funds reserved on offer, counterpart funds reserved on acceptance, bound counterpart authorization, tick settlement/withdrawal/expiry and participant-only projections. These are implementation observations, not approved policy or completed validation; expiry/cutoff, overflow/refund conservation, concurrency/replay and private recovery need dedicated evidence before acceptance. No new PR or rendered offer evidence yet. Disk6.3GiB. Carry checkpoint into related committed/pushed logs; no acceptance or merge.
-<<<<<<< HEAD
-
-
-## Reviewer progress — 2026-10-21 08:27 Toronto
-
-Collision repair pushed #30 aac1d04 and propagated #31 19e896c; propagation through #32/#33 actively underway. Independent code review confirms server-confirmed mismatched immutable receipt retires only the exact encrypted outbox record, cached mismatch waits for server confirmation, full-command comparison protects same-UUID replacement, and metadata receipt delivery is guarded once. Strict digest validation remains. Independent npm run check on clean #30 passes zero Svelte errors/warnings and backend TypeScript; retained browser log confirms13passed1.5min.
-
-Root cause documented: mismatched receipt cleared in-memory pending state but left durable record, blocking the preserved draft's fresh submission. Extended evidence covers original campaign unchanged and replacement payload preservation. Replacement full CI remains required; no acceptance. Agent actively propagating with credit-offer work safely stashed, no duplicate handoff. Disk5.9GiB. Carry checkpoint into related committed/pushed logs; no merge.
-||||||| 46307c6
-=======
 
 
 ## Reviewer progress — 2026-10-21 08:27 Toronto
@@ -782,4 +772,3 @@ UX-01–16 migration inventory explicitly lists remaining gameplay, input and ho
 Story slice committed locally b661987; clean checkout at inspection, PR creation underway. Read baseline review: generation failures and compositor-related exact mismatches retained, rendering flags pinned, final local comparison reportedly eight journeys/44 captures35.6s. No independent full baseline approval or Linux acceptance claimed.
 
 Reviewer CI finding at 09:38 Toronto: #30 aac1d04 and #31 19e896c are now green. #32 46307c6 run39599629028 and #33 8a9ae26 run39600113448 fail history.spec.ts:20 in all four viewports: focusing Saved campaign records then Shift+Tab no longer focuses Return to galaxy. Logs retained /tmp/cluster32-review-failure.log and /tmp/cluster33-review-failure.log. Diagnose actual keyboard order after briefing changes, distinguish stale expected order from accessibility regression, preserve meaningful keyboard/focus/containment assertions, and propagate the appropriate fix through the stack. Do not simply drop the check or raise timeout. If changing legacy specs on the story branch, honor the new migration policy rather than silently refreshing exceptions. Record attributed instruction and continuation, carry latest meta-prompts, commit/push without merge. Entry/identity local exact comparison is useful progress, but Linux and independent full visual acceptance remain pending.
->>>>>>> feat/return-briefing
