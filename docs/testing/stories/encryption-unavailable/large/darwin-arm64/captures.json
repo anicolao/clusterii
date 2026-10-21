@@ -1,0 +1,27 @@
+[
+  {
+    "image": "002-review-provider-1-cipher-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-unavailable/large/darwin-arm64/002-review-provider-1-cipher-envoy.png",
+    "actualSha256": "afb8af4c50a4c1cf802477ed4f006e013880195239186e2205283a387a835a8e"
+  },
+  {
+    "image": "003-created-campaign-1-cipher-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-unavailable/large/darwin-arm64/003-created-campaign-1-cipher-envoy.png",
+    "actualSha256": "99b37168cea55f163ecc37c07159c900e57896d1ac32e4a18c20c8943bf35681"
+  },
+  {
+    "image": "004-claimed-seat-1-cipher-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-unavailable/large/darwin-arm64/004-claimed-seat-1-cipher-envoy.png",
+    "actualSha256": "f753ca96e273c8a3c21010565b9fcced4b58433d42fb3f52605460d13d0c9f11"
+  },
+  {
+    "image": "005-recovered-seat-1-cipher-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-unavailable/large/darwin-arm64/005-recovered-seat-1-cipher-envoy.png",
+    "actualSha256": "0827a84049b8e9a4b49b545db391b54bc490d63af22e36321127c3d2bbbbb3a0"
+  },
+  {
+    "image": "006-released-seat-1-cipher-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/encryption-unavailable/large/darwin-arm64/006-released-seat-1-cipher-envoy.png",
+    "actualSha256": "3e5d802d4d58995ce8d7bb77021a0f94d18d4594049398547933973148b38b84"
+  }
+]

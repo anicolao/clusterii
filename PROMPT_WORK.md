@@ -189,3 +189,4 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | A
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified receipt narratives and promote reviewed Linux navigation candidates for strict comparison.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry verified receipt evidence and reviewed Linux navigation baselines into multiplayer campaign start.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register multiplayer start PR 43 and its preview with scoped layout acceptance and remaining verification gates.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Migrate encryption availability and real managed-key campaign admission into separately acknowledged illustrated stories.

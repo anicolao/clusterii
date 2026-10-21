@@ -1,0 +1,143 @@
+{
+  "id": "encryption-unavailable",
+  "title": "Understand unavailable encryption before creating a development campaign",
+  "inventory": [
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A saved developer reviews the actual provider availability, chooses the disclosed encryption mode, creates and joins a campaign, reloads its acknowledged seat and leaves. Fixed catalogue entropy is test-only; commands, authorization, encryption, persistence and recipient delivery remain real. Managed runs use actual Cloud KMS and are separate from default CI; emulated login does not certify hosted Google authentication.",
+  "source": {
+    "commit": "fdb1779e0e5e51458737fda2a042c5dac089391d",
+    "dirty": true,
+    "spec": "tests/browser/encryption-choice.story.spec.ts",
+    "specSha256": "b767de61a2cd3ea9c1598732935d596e7c6306c21b595ad7fa7063c394f6187c"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "saved-developer",
+      "description": "Save an identity through ordinary UI and grant explicit developer access in the emulator. No campaign state or result is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "review-provider",
+      "description": "Open the proposal and review the available encryption choices before committing.",
+      "actor": "Cipher envoy",
+      "kind": "player",
+      "acknowledgement": "The proposal shows the actual configured provider availability.",
+      "verifications": [
+        "Inspectable development data is explicit and selected; unavailable real mode explains that it cannot fall back."
+      ],
+      "views": [
+        {
+          "player": "Cipher envoy",
+          "image": "002-review-provider-1-cipher-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "created-campaign",
+      "description": "Commit the disclosed encryption choice and wait for authoritative campaign creation.",
+      "actor": "Cipher envoy",
+      "kind": "player",
+      "acknowledgement": "Campaign creation is acknowledged before faction admission.",
+      "verifications": [
+        "Read-only authoritative metadata retains the chosen mock mode and revision 1."
+      ],
+      "views": [
+        {
+          "player": "Cipher envoy",
+          "image": "003-created-campaign-1-cipher-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "claimed-seat",
+      "description": "Claim a seat through the selected provider and wait for confirmation.",
+      "actor": "Cipher envoy",
+      "kind": "player",
+      "acknowledgement": "The service confirms this seat.",
+      "verifications": [
+        "Read-only authoritative metadata retains the chosen mock mode and revision 2."
+      ],
+      "views": [
+        {
+          "player": "Cipher envoy",
+          "image": "004-claimed-seat-1-cipher-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recovered-seat",
+      "description": "Reload the exact campaign and open its roster using recovered authenticated member delivery.",
+      "actor": "Cipher envoy",
+      "kind": "player",
+      "acknowledgement": "The recovered roster identifies the saved commander and offers seat release.",
+      "verifications": [
+        "Read-only authoritative metadata retains the chosen mock mode and revision 2.",
+        "Reload retains the exact campaign URL."
+      ],
+      "views": [
+        {
+          "player": "Cipher envoy",
+          "image": "005-recovered-seat-1-cipher-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "released-seat",
+      "description": "Leave the waiting campaign and wait for the matching authoritative acknowledgement.",
+      "actor": "Cipher envoy",
+      "kind": "player",
+      "acknowledgement": "The service acknowledges seat release.",
+      "verifications": [
+        "Read-only authoritative metadata retains the chosen mock mode and revision 3."
+      ],
+      "views": [
+        {
+          "player": "Cipher envoy",
+          "image": "006-released-seat-1-cipher-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
