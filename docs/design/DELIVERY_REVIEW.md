@@ -50,11 +50,11 @@ Review branches remain unmerged. Rule data marked `review` is not owner-approved
 | Illustrated identity gallery | [#47](https://github.com/anicolao/clusterii/pull/47), `feat/feedback-lab-stories` | [Gallery](https://anicolao.github.io/clusterii/pr47/gallery/) publication pending | [Scope and evidence](IDENTITY_GALLERY_STORIES_REVIEW.md). Four new component journeys/84 reviewed exact captures; twelve unchanged identity/lab journeys also pass. Native keyboard state, field clearance, narrow-container portraits and44px research disclosure. Linux/current-head, inherited identity raster and independent acceptance remain open. |
 | Illustrated lifecycle lab | [#48](https://github.com/anicolao/clusterii/pull/48), `feat/identity-gallery-stories` | [Lab](https://anicolao.github.io/clusterii/pr48/dev/animations/) publication pending | [Scope and evidence](LIFECYCLE_LAB_STORIES_REVIEW.md). Eight local exact component journeys/64 captures; explicit schedule/session states, complete pending disclosure and50ms/180ms feedback inspection. No service or production change; Linux/current-head and independent gates open. |
 
+| Illustrated research lab | [#49](https://github.com/anicolao/clusterii/pull/49), `feat/lifecycle-lab-stories` | [Lab](https://anicolao.github.io/clusterii/pr49/dev/animations/) (publication pending) | [Scope and evidence](RESEARCH_LAB_STORIES_REVIEW.md). Four local exact viewport stories/96 reviewed captures, keyboard submission/disclosure, pending/reconnect/scheduled/applied distinctions. Component fixtures only; Linux/current-head CI, hosted revision and independent review remain open. |
+
 ## Open decisions
 
 The selections in STEP_0_REVIEW.md remain review proposals: public roster sizes, affinities, starting economy, map fairness/visibility, speculation formula, queues, combat normalization, force-cap allocation priority, alliance timing, victory threshold, repeated-partner penalty and end conditions. Implementing a development scenario does not approve these rules. Public release requires explicit owner acceptance and associated simulations/security evidence.
-
-| Illustrated research lab | [#49](https://github.com/anicolao/clusterii/pull/49), `feat/lifecycle-lab-stories` | [Lab](https://anicolao.github.io/clusterii/pr49/dev/animations/) (publication pending) | [Scope and evidence](RESEARCH_LAB_STORIES_REVIEW.md). Four local exact viewport stories/96 reviewed captures, keyboard submission/disclosure, pending/reconnect/scheduled/applied distinctions. Component fixtures only; Linux/current-head CI, hosted revision and independent review remain open. |
 
 ## Review protocol
 
