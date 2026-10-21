@@ -1,7 +1,13 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    function owner(uid) { return request.auth != null && request.auth.uid == uid; }
+    function session() {
+      return request.auth != null && (!exists(/databases/$(database)/documents/sessionFences/$(request.auth.uid)) ||
+        (get(/databases/$(database)/documents/sessionFences/$(request.auth.uid)).data.status == 'complete' &&
+        request.auth.token.auth_time > get(/databases/$(database)/documents/sessionFences/$(request.auth.uid)).data.cutoff));
+    }
+    function owner(uid) { return session() && request.auth.uid == uid; }
+    match /sessionFences/{uid} { allow read: if request.auth != null && request.auth.uid == uid; allow write: if false; }
     match /profiles/{uid} {
       allow read: if owner(uid);
       allow write: if false;
@@ -10,7 +16,7 @@ service cloud.firestore {
         allow write: if false;
       }
     }
-    function developer() { return request.auth != null && request.auth.token.developer == true; }
+    function developer() { return session() && request.auth.token.developer == true; }
     function member(gameId, uid) { return owner(uid) && developer() && uid in get(/databases/$(database)/documents/campaignStates/$(gameId)).data.memberUids; }
     match /campaignMemberships/{uid}/games/{gameId} { allow read: if owner(uid) && developer(); allow write: if false; }
     match /developmentCampaigns/{gameId} { allow read: if developer(); allow write: if false; }

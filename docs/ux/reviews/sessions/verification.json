@@ -1,0 +1,54 @@
+{
+  "service": {
+    "defaultFullSuite": {
+      "passed": 10,
+      "assertions": 822,
+      "note": "Before adding the second codec variant; live-only cases skipped"
+    },
+    "finalLiveKmsCohort": {
+      "passed": 3,
+      "assertions": 95,
+      "providers": [
+        "mock",
+        "real"
+      ],
+      "fault": "Interrupted after the persisted Firestore fence, before the RTDB mirror"
+    }
+  },
+  "browser": {
+    "finalCombinedCohort": {
+      "passed": 10,
+      "seconds": 42.1,
+      "coverage": [
+        "gallery and animation lab",
+        "four-size maintenance acknowledgements",
+        "two-device session revocation with cancelled reauthentication, actual service interruption, reload and retry"
+      ]
+    },
+    "savedIdentityRevisionPreserved": true,
+    "viewports": [
+      [
+        393,
+        852
+      ],
+      [
+        1440,
+        1000
+      ],
+      [
+        1280,
+        720
+      ],
+      [
+        3840,
+        2160
+      ]
+    ]
+  },
+  "limitations": [
+    "Emulator Google accounts; hosted Google reauthentication unverified",
+    "Live KMS protects actual real-mode service fixtures; no hosted user account was revoked",
+    "Cluster session access fences do not invalidate Firebase refresh credentials or Google sessions",
+    "Independent visual/security review and latest-head CI remain gates"
+  ]
+}

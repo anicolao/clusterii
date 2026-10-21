@@ -5,7 +5,7 @@
     "profileCommands": {
       "$uid": {
         "$commandId": {
-          ".write": "auth != null && auth.uid === $uid && !data.exists() && newData.exists() && $commandId.matches(/^[a-f0-9-]{36}$/)",
+          ".write": "auth != null && auth.uid === $uid && (!root.child('sessionFences').child($uid).exists() || (root.child('sessionFences').child($uid).child('status').val() === 'complete' && auth.token.auth_time > root.child('sessionFences').child($uid).child('cutoff').val())) && !data.exists() && newData.exists() && $commandId.matches(/^[a-f0-9-]{36}$/)",
           ".validate": "newData.hasChildren(['format','mode','algorithm','gameId','objectId','revision','epoch','keyVersion','nonce','ciphertext','tag'])",
           "format": {
             ".validate": "newData.val() === 1"
@@ -50,7 +50,7 @@
       "$gameId": {
         "$uid": {
           "$commandId": {
-            ".write": "auth != null && auth.uid === $uid && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
+            ".write": "auth != null && auth.uid === $uid && (!root.child('sessionFences').child($uid).exists() || (root.child('sessionFences').child($uid).child('status').val() === 'complete' && auth.token.auth_time > root.child('sessionFences').child($uid).child('cutoff').val())) && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
             ".validate": "newData.hasChildren(['kind', 'envelope'])",
             "kind": {
               ".validate": "newData.val() === 'campaign.create' || newData.val() === 'campaign.join' || newData.val() === 'campaign.leave'"
@@ -105,7 +105,7 @@
       "$gameId": {
         "$uid": {
           "$commandId": {
-            ".write": "auth != null && auth.uid === $uid && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
+            ".write": "auth != null && auth.uid === $uid && (!root.child('sessionFences').child($uid).exists() || (root.child('sessionFences').child($uid).child('status').val() === 'complete' && auth.token.auth_time > root.child('sessionFences').child($uid).child('cutoff').val())) && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
             ".validate": "newData.hasChildren(['kind', 'envelope'])",
             "kind": {
               ".validate": "newData.val() === 'campaign.pause' || newData.val() === 'campaign.resume'"
@@ -160,7 +160,7 @@
       "$gameId": {
         "$uid": {
           "$commandId": {
-            ".write": "auth != null && auth.uid === $uid && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
+            ".write": "auth != null && auth.uid === $uid && (!root.child('sessionFences').child($uid).exists() || (root.child('sessionFences').child($uid).child('status').val() === 'complete' && auth.token.auth_time > root.child('sessionFences').child($uid).child('cutoff').val())) && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
             ".validate": "newData.hasChildren(['kind', 'envelope'])",
             "kind": {
               ".validate": "newData.val() === 'campaign.migrate'"

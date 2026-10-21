@@ -6,6 +6,12 @@ export function receiptFeedback(receipt: Receipt) {
       error: "",
       remedy: "none" as const,
     };
+  if (receipt.reason === "session")
+    return {
+      message: "",
+      error: "Your session ended. Sign in again.",
+      remedy: "session" as const,
+    };
   return {
     message: "",
     error:

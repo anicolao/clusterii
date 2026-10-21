@@ -54,3 +54,7 @@ Prompt 28 | 778c7e1a496a181ded68e6116ad1b756a34d87e40774e85b5a7fa0486410cd53 | R
 
 Prompt 28 | 778c7e1a496a181ded68e6116ad1b756a34d87e40774e85b5a7fa0486410cd53 | Reconcile the already logged Prompt 24 retransmission finding with green PR 7 CI and propagated semantic coverage.
 Prompt 30 | 4d9c07c6682937a2db8ec9495d4db914d442c9ec8a6c8fc7eca02651deb95ebe | Verify paged start recovery before and after commit; retain real-boundary captures and deployment evidence
+Prompt 30 | 4d9c07c6682937a2db8ec9495d4db914d442c9ec8a6c8fc7eca02651deb95ebe | Implement reauthenticated all-device session revocation with database and key-delivery enforcement
+Prompt 31 | ade16b0cb378ed963235cfa4366bf69e7d5f63d2ca8ea6716648ff92d986c042 | Carry the maintenance fix into session revocation and retain integrated live-key and browser acceptance evidence
+
+Prompt 31 | ade16b0cb378ed963235cfa4366bf69e7d5f63d2ca8ea6716648ff92d986c042 | Reconcile published session preview links, green scheduler CI and the 20:16 scoped supervisory checkpoint.

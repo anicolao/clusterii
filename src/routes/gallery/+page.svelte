@@ -8,6 +8,7 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
@@ -177,6 +178,13 @@
       <FactionPicker value="heliac" game={roster} disabled />
     </section>
     <section>
+      <h2>Account sessions</h2>
+      <SessionSecurity onconfirm={() => {}} />
+      <SessionSecurity pending onconfirm={() => {}} />
+      <SessionSecurity
+        error="Sessions could not be ended. Confirm your identity and retry the same request."
+        onconfirm={() => {}}
+      />
       <h2>Campaign roster</h2>
       <CampaignRoster game={roster} />
       <h3>Scheduled start</h3>

@@ -39,6 +39,7 @@ import {
   realAvailable,
   unprotect,
 } from "./key-protection.js";
+import { admissionAllowed, type SessionFence } from "./session-security.js";
 
 const db = () => getFirestore();
 const pageSize = 10;
@@ -196,12 +197,14 @@ export const processCampaignMigration = onValueCreated(
         throw new Error("permission");
       if (state.pausedAt == null) throw new Error("pause-required");
       await db().runTransaction(async (tx) => {
-        const [current, prior, counter, existingJob] = await Promise.all([
-          tx.get(head.ref),
-          tx.get(receipt),
-          tx.get(db().doc(`campaignEpochCounters/${gameId}`)),
-          tx.get(jobRef(commandId)),
-        ]);
+        const [current, prior, counter, existingJob, session] =
+          await Promise.all([
+            tx.get(head.ref),
+            tx.get(receipt),
+            tx.get(db().doc(`campaignEpochCounters/${gameId}`)),
+            tx.get(jobRef(commandId)),
+            tx.get(db().doc(`sessionFences/${uid}`)),
+          ]);
         if (prior.exists) return;
         if (existingJob.exists) {
           if (
@@ -211,6 +214,13 @@ export const processCampaignMigration = onValueCreated(
             throw new Error("invalid");
           return;
         }
+        if (
+          !admissionAllowed(
+            session.data() as SessionFence | undefined,
+            event.time,
+          )
+        )
+          throw new Error("session");
         if (
           current.get("revision") !== action.expectedRevision ||
           current.get("revision") !== state.revision ||
@@ -251,9 +261,13 @@ export const processCampaignMigration = onValueCreated(
       if (error instanceof KeyServiceError) throw error;
       const reason =
         error instanceof Error &&
-        ["permission", "conflict", "pause-required", "unavailable"].includes(
-          error.message,
-        )
+        [
+          "permission",
+          "conflict",
+          "pause-required",
+          "unavailable",
+          "session",
+        ].includes(error.message)
           ? error.message
           : "invalid";
       await db().runTransaction(async (tx) => {

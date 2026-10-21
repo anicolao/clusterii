@@ -17,6 +17,11 @@ import {
   profileContext,
   reduceProfile,
 } from "../../shared/profile.js";
+import {
+  admissionAllowed,
+  requireCurrentSession,
+  type SessionFence,
+} from "./session-security.js";
 
 initializeApp();
 setGlobalOptions({ region: "us-central1", maxInstances: 3 });
@@ -25,6 +30,7 @@ const db = getFirestore();
 export const profileKey = onCall({ invoker: "public" }, async (request) => {
   if (!request.auth)
     throw new HttpsError("unauthenticated", "Sign in to continue.");
+  await requireCurrentSession(request.auth);
   const ref = db.doc(`profileKeys/${request.auth.uid}`);
   const key = newKey();
   const kek = await db.runTransaction(async (tx) => {
@@ -50,10 +56,11 @@ export const processProfile = onValueCreated(
     // Random inputs are stable across transaction retries; no committed object is re-encrypted.
     const objectKey = newKey();
     await db.runTransaction(async (tx) => {
-      const [receipt, head, key] = await Promise.all([
+      const [receipt, head, key, session] = await Promise.all([
         tx.get(receiptRef),
         tx.get(headRef),
         tx.get(keyRef),
+        tx.get(db.doc(`sessionFences/${uid}`)),
       ]);
       if (receipt.exists) return;
       const revision = head.exists ? Number(head.get("revision")) : 0;
@@ -61,6 +68,13 @@ export const processProfile = onValueCreated(
       let profile: ReturnType<typeof reduceProfile>;
       const kek = key.get("kek") as string;
       try {
+        if (
+          !admissionAllowed(
+            session.data() as SessionFence | undefined,
+            event.time,
+          )
+        )
+          throw new Error("session");
         if (!key.exists || key.get("mode") !== "mock")
           throw new Error("invalid");
         action = await provider("mock").open(
@@ -75,8 +89,9 @@ export const processProfile = onValueCreated(
           status: "rejected",
           revision,
           reason:
-            error instanceof Error && error.message === "conflict"
-              ? "conflict"
+            error instanceof Error &&
+            ["conflict", "session"].includes(error.message)
+              ? error.message
               : "invalid",
         });
         return;
@@ -117,3 +132,5 @@ export {
   processCampaignMaintenance,
   startScheduledCampaigns,
 } from "./campaigns.js";
+
+export { revokeSessions } from "./session-security.js";
