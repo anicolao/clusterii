@@ -21,6 +21,8 @@ export interface HistoryPage {
   cursor: HistoryCursor | null;
 }
 export const historyPageSize = 10;
+export const historyRecoveryMessage =
+  "History could not be recovered. Check your connection and retry. Your current records remain in place.";
 export class HistoryEpochChanged extends Error {
   constructor() {
     super("Campaign protection changed. Open the latest records to continue.");

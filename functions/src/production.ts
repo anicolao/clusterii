@@ -7,6 +7,7 @@ import {
 import { onSchedule } from "firebase-functions/v2/scheduler";
 import type { Campaign } from "../../shared/campaign.js";
 import { type Mode, provider } from "../../shared/crypto.js";
+import { acquireFleetScans } from "../../shared/fleet-contacts.js";
 import { acquireObservations } from "../../shared/observations.js";
 import { produce } from "../../shared/production.js";
 import { context, publish, readRecipientKeys } from "./campaigns.js";
@@ -89,6 +90,9 @@ export async function settleCampaignTicks(
           next = { ...result.campaign, economy: result.economy };
         acquireObservations(current, next, (uid, starId, tick) =>
           observationDraw(current.seed, id, uid, starId, tick),
+        );
+        acquireFleetScans(current, next, (uid, target, tick) =>
+          observationDraw(current.seed, id, uid, target, tick),
         );
         const keys = await readRecipientKeys(
           tx,

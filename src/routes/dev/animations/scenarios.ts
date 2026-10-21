@@ -1,3 +1,5 @@
+import {historyRecoveryMessage} from "$lib/campaign-history";
+import { acquireFleetScans, lastFleetContacts } from "@shared/fleet-contacts";
 import { orderRoute } from "@shared/travel";
 import { distance } from "@shared/galaxy";
 import { cancelFleet } from "@shared/fleets";
@@ -89,7 +91,11 @@ const travelDeparture=produce(travelQueued,travelQueued.economy!);const travelMo
 let travelArrived=travelMoving;
 while(travelArrived.military!.fleets[travelFleetId].travel){const next=produce(travelArrived,travelArrived.economy!,()=>0);travelArrived={...next.campaign,economy:next.economy};}
 export function travelFrame(time:number){return campaignView(time>=4800?travelArrived:time>=3200?travelMoving:time>=2200?travelQueued:cargoSource,"scheduled-0");}
+const contactsCurrent=structuredClone(cargoSource);acquireFleetScans(fleetQueued,contactsCurrent,()=>0);
+const contactTick=produce(contactsCurrent,contactsCurrent.economy!);const contactsStale={...contactTick.campaign,economy:contactTick.economy};acquireFleetScans(contactsCurrent,contactsStale,()=>drawRange-1);
+export function contactsFrame(time:number){const view=campaignView(time>=3200?contactsStale:time>=1200?contactsCurrent:productionStart,"scheduled-1");return {view,contacts:lastFleetContacts(time>=1200?[view,campaignView(contactsCurrent,"scheduled-1")]:[view]),loading:time>=500&&time<1200,error:time>=2200&&time<3200?historyRecoveryMessage:""};}
 export const scenarios = [
+ {id:"contacts",label:"Fleet contacts: unknown → loading → acquired → retry → last seen",frames:[{at:0,feedback:{message:"No fleet observation acquired.",error:"",remedy:"none"}},{at:500,feedback:{message:"Loading authorized contact records…",error:"",remedy:"none"}},{at:1200,feedback:{message:"Fleet observation acquired.",error:"",remedy:"none"}},{at:2200,feedback:{message:"",error:historyRecoveryMessage,remedy:"network"}},{at:3200,feedback:{message:"Current position unknown; last acquired position retained in history.",error:"",remedy:"none"}}]},
  {id:"travel",label:"Fleet route: pending → reconnect → accepted → traveling → arrived",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("fleet.route",{status:"accepted"})},{at:3200,feedback:{message:"Fleet departed. Arrival tick confirmed.",error:"",remedy:"none"}},{at:4800,feedback:{message:"Fleet arrived. Review forces and ownership.",error:"",remedy:"none"}}]},
  {id:"fleet-cancel",label:"Fleet cancellation: pending → reconnect → released",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("fleet.cancel",{status:"accepted"})}]},
  ...(["split","merge"] as const).map(kind=>({id:kind,label:`Fleet ${kind}: pending → reconnect → accepted → complete`,frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback(`fleet.${kind}`,{status:"accepted"})},{at:3200,feedback:{message:kind === "split" ? "Fleet split. Both complements remain stationed here." : "Fleets merged. The receiving identity is preserved.",error:"",remedy:"none"}}]})),

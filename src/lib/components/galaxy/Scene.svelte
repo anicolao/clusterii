@@ -32,6 +32,8 @@
     stars,
     paths = [],
     routeFocus = false,
+    contacts = [],
+    selectedContact = "",
     travelers = [],
     onfleet,
     selected,
@@ -43,6 +45,8 @@
   }: {
     stars: Star[];
     routeFocus?: boolean;
+    contacts?: import("@shared/fleet-contacts").FleetContact[];
+    selectedContact?: string;
     paths?: { from: Star; to: Star; draft?: boolean }[];
     travelers?: {
       id: string;
@@ -53,7 +57,7 @@
     }[];
     onfleet?: (id: string) => void;
     selected: string;
-    onselect: (id: string) => void;
+    onselect?: (id: string) => void;
     owned?: string[];
     fleets?: Record<string, number>;
     stellarClass: StarClass | "all";
@@ -65,13 +69,23 @@
   let controls = $state<OrbitControlsType>();
   $effect(() => {
     const request = cameraRequest;
+    const contact = contacts.find((c) => c.id === selectedContact);
     const routePoints = routeFocus ? paths.flatMap((p) => [p.from, p.to]) : [];
     const activeCamera = camera,
       activeControls = controls;
     if (!activeCamera || !activeControls) return;
     untrack(() => {
       const offset = activeCamera.position.clone().sub(activeControls.target);
-      if (routeFocus) {
+      if (contact) {
+        activeControls.target.set(
+          contact.x / 10,
+          contact.y / 10,
+          contact.z / 10,
+        );
+        activeCamera.position
+          .copy(activeControls.target)
+          .add(new Vector3(0, 6, 3));
+      } else if (routeFocus) {
         const points = routePoints.length
           ? routePoints
           : stars.filter((s) => s.id === request.starId);
@@ -152,6 +166,18 @@
   const target = $derived(stars.find((s) => s.id === selected));
 </script>
 
+{#each contacts as contact}<T.Group
+    position={[contact.x / 10, contact.y / 10, contact.z / 10]}
+    ><T.Mesh
+      ><T.OctahedronGeometry
+        args={[contact.id === selectedContact ? 0.12 : 0.06]}
+      /><T.MeshBasicMaterial color="#e0b08c" /></T.Mesh
+    >{#if contact.id === selectedContact}<HTML position={[0, 0.3, 0]} center
+        ><span class="contact-label"
+          >{contact.owner} · Fleet {contact.number} · observed tick {contact.observedTick}</span
+        ></HTML
+      >{/if}</T.Group
+  >{/each}
 {#each paths as path}<RouteLine {...path} />{/each}
 {#each travelers as fleet}<T.Group
     position={[fleet.x / 10, fleet.y / 10 + 0.08, fleet.z / 10]}
@@ -215,7 +241,7 @@
               : 0.3}
       onclick={(event: { stopPropagation(): void }) => {
         event.stopPropagation();
-        onselect(star.id);
+        onselect?.(star.id);
       }}
       ><T.SpriteMaterial
         map={glow}
@@ -228,7 +254,7 @@
     <T.Mesh
       onclick={(event: { stopPropagation(): void }) => {
         event.stopPropagation();
-        onselect(star.id);
+        onselect?.(star.id);
       }}
       ><T.SphereGeometry
         args={[
@@ -244,7 +270,7 @@
         ]}
       /><T.MeshBasicMaterial color={colors[star.class]} /></T.Mesh
     >
-    {#if !routeFocus && star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
+    {#if !routeFocus && !selectedContact && star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
         position={[0, 0.25, 0]}
         center
         ><span class="quiet-label"
@@ -291,6 +317,16 @@
   >{/if}
 
 <style>
+  .contact-label {
+    display: block;
+    width: max-content;
+    max-width: 240px;
+    color: #ffe1c2;
+    background: #20170fde;
+    padding: 6px;
+    font-size: 14px;
+    pointer-events: none;
+  }
   .route-node {
     display: block;
     transform: translateY(22px);
@@ -321,6 +357,10 @@
     pointer-events: none;
   }
   @media (min-width: 2400px) {
+    .contact-label {
+      font-size: 22px;
+      max-width: 360px;
+    }
     .route-node,
     .travel-label {
       font-size: 22px;

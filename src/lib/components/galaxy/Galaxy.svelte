@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { tick, onDestroy } from "svelte";
+  import { tick, onDestroy, untrack } from "svelte";
   import type { Technology } from "@shared/production";
   import { fleetPosition } from "@shared/travel";
   import SystemFleets from "../SystemFleets.svelte";
@@ -8,9 +8,12 @@
   import SystemConstruction from "../SystemConstruction.svelte";
   import type { Development } from "@shared/construction";
   import CampaignEconomy from "../CampaignEconomy.svelte";
+  import FleetContacts from "../FleetContacts.svelte";
+  import { type FleetContact, lastFleetContacts } from "@shared/fleet-contacts";
   import CampaignHistory from "../CampaignHistory.svelte";
   import {
     HistoryEpochChanged,
+    historyRecoveryMessage,
     type HistoryCursor,
     type HistoryPage,
   } from "$lib/campaign-history";
@@ -91,12 +94,37 @@
   let construction = $state(false);
   let economy = $state(false);
   let history = $state(false);
+  let contactsOpen = $state(false);
+  let selectedContact = $state("");
   let records = $state<CampaignView[]>([]);
+  let receivedContacts = $state<FleetContact[]>([]);
+  const contacts = $derived(
+    lastFleetContacts([view, { fleetContacts: receivedContacts }, ...records]),
+  );
+  $effect(() => {
+    const acquired = view.fleetContacts;
+    untrack(() => {
+      receivedContacts = lastFleetContacts([
+        { fleetContacts: receivedContacts },
+        { fleetContacts: acquired },
+      ]);
+    });
+  });
   let cursor = $state<HistoryCursor | null>(null);
   let historyLoading = $state(false);
   let historyError = $state("");
   let historySerial = 0;
   let retryCursor: HistoryCursor | null = null;
+  $effect(() => {
+    if (
+      view.fleetContactsEnabled &&
+      view.phase === "active" &&
+      !records.length &&
+      !historyLoading &&
+      !historyError
+    )
+      void readHistory();
+  });
   onDestroy(() => {
     historySerial++;
   });
@@ -112,12 +140,23 @@
     historyError = "";
     await tick();
     if (serial !== historySerial) return;
-    if (history && document.activeElement === document.body)
+    if ((history || contactsOpen) && document.activeElement === document.body)
       document.querySelector<HTMLElement>(".history-panel")?.focus();
     try {
       const page = await loadHistory(after);
       if (serial !== historySerial) return;
-      records = after ? [...records, ...page.records] : page.records;
+      records = contactsOpen
+        ? [
+            ...new Map(
+              [...records, ...page.records].map((record) => [
+                record.revision,
+                record,
+              ]),
+            ).values(),
+          ].sort((a, b) => b.revision - a.revision)
+        : after
+          ? [...records, ...page.records]
+          : page.records;
       cursor = page.cursor;
       if (!after) {
         await tick();
@@ -130,13 +169,13 @@
       historyError =
         error instanceof HistoryEpochChanged
           ? error.message
-          : "History could not be recovered. Check your connection and retry. Your current records remain in place.";
+          : historyRecoveryMessage;
     } finally {
       if (serial === historySerial) {
         historyLoading = false;
         await tick();
         if (
-          history &&
+          (history || contactsOpen) &&
           serial === historySerial &&
           document.activeElement === document.body
         ) {
@@ -149,6 +188,13 @@
         }
       }
     }
+  }
+  async function closeContacts() {
+    contactsOpen = false;
+    historySerial++;
+    historyLoading = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="contacts"]')?.focus();
   }
   async function closeHistory() {
     history = false;
@@ -183,6 +229,7 @@
     kind:
       | "roster"
       | "systems"
+      | "contacts"
       | "history"
       | "economy"
       | "construction"
@@ -192,7 +239,9 @@
     construction = kind === "construction";
     economy = kind === "economy";
     history = kind === "history";
-    if (history && !records.length) void readHistory();
+    contactsOpen = kind === "contacts";
+    if ((history || contactsOpen) && !records.length && !historyLoading)
+      void readHistory();
     roster = kind === "roster";
     listing = kind === "systems";
     await tick();
@@ -201,7 +250,7 @@
       document.querySelector<HTMLElement>(".construction-panel")?.focus();
     else if (economy)
       document.querySelector<HTMLElement>(".economy-panel")?.focus();
-    else if (history)
+    else if (history || contactsOpen)
       document.querySelector<HTMLElement>(".history-panel")?.focus();
     else if (listing) document.getElementById("system-search")?.focus();
     else document.querySelector<HTMLElement>(".roster-panel")?.focus();
@@ -235,11 +284,13 @@
           ? closeConstruction()
           : economy
             ? closeEconomy()
-            : history
-              ? closeHistory()
-              : roster
-                ? closeRoster()
-                : closeList());
+            : contactsOpen
+              ? closeContacts()
+              : history
+                ? closeHistory()
+                : roster
+                  ? closeRoster()
+                  : closeList());
       return;
     }
     if (event.key !== "Tab") return;
@@ -284,7 +335,13 @@
 <div class="galaxy-surface">
   <header
     class="command-rail"
-    inert={roster || listing || history || economy || construction || military}
+    inert={roster ||
+      listing ||
+      history ||
+      contactsOpen ||
+      economy ||
+      construction ||
+      military}
   >
     <div>
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
@@ -323,9 +380,20 @@
     </div>{/if}
   <div
     class="chart"
-    inert={roster || listing || history || economy || construction || military}
+    inert={roster ||
+      listing ||
+      history ||
+      contactsOpen ||
+      economy ||
+      construction ||
+      military}
     aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
   >
+    {#if view.fleetContactsEnabled}<p class="contact-legend">
+        {historyLoading
+          ? "Recovering contact records…"
+          : "Contact markers show acquired positions from loaded records."}
+      </p>{/if}
     <Canvas renderMode="on-demand"
       ><Scene
         fleets={Object.fromEntries(
@@ -347,6 +415,7 @@
           selectedFleet = id;
           void openPanel("military");
         }}
+        {contacts}
         stars={view.stars}
         owned={view.holdings.map((h) => h.starId)}
         selected={star.id}
@@ -357,7 +426,13 @@
     >
   </div>
   <aside
-    inert={roster || listing || history || economy || construction || military}
+    inert={roster ||
+      listing ||
+      history ||
+      contactsOpen ||
+      economy ||
+      construction ||
+      military}
     class="system-inspector"
     class:observing={observation}
     aria-label="Selected system"
@@ -453,6 +528,11 @@
       >
       {#if loadHistory}<ActionButton
           class="secondary"
+          data-focus="contacts"
+          aria-expanded={contactsOpen}
+          onclick={() => openPanel("contacts")}>Fleet contacts</ActionButton
+        ><ActionButton
+          class="secondary"
           data-focus="history"
           aria-expanded={history}
           onclick={() => openPanel("history")}>History</ActionButton
@@ -465,6 +545,28 @@
       >
     </div>
   </aside>
+  {#if contactsOpen}<div
+      class="construction-panel contact-panel history-panel"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      aria-label="Fleet contacts panel"
+      onkeydown={panelKeys}
+    >
+      <FleetContacts
+        {view}
+        {contacts}
+        bind:selected={selectedContact}
+        loading={historyLoading}
+        error={historyError}
+        earlier={!!cursor}
+        newer={!!records.length && records[0].revision < view.revision}
+        onearlier={() => readHistory(cursor)}
+        onlatest={() => readHistory()}
+        onretry={() => readHistory(retryCursor)}
+        onclose={closeContacts}
+      />
+    </div>{/if}
   {#if military}<div
       class="construction-panel fleet-panel"
       role="dialog"
@@ -673,6 +775,18 @@
       radial-gradient(ellipse at 40% 45%, #73563833, transparent 45%),
       radial-gradient(ellipse at 50% 55%, #16385788, transparent 70%), #050c14;
   }
+  .contact-legend {
+    position: absolute;
+    left: 16px;
+    bottom: 12px;
+    z-index: 1;
+    max-width: calc(100% - 32px);
+    color: #dccbb5;
+    background: #07131cd9;
+    padding: 6px;
+    font-size: 13px;
+    pointer-events: none;
+  }
   .chart {
     isolation: isolate;
     overflow: hidden;
@@ -729,6 +843,12 @@
     background: #07131c;
     border: 1px solid #b29e78;
     box-shadow: 0 20px 80px #000;
+  }
+  .contact-panel.history-panel {
+    inset: 58px 0 0;
+    width: auto;
+    padding: 0;
+    border: 0;
   }
   .roster-panel {
     position: absolute;
@@ -861,6 +981,11 @@
     border: 1px solid #87919a;
   }
   @media (min-width: 2400px) {
+    .contact-panel.history-panel {
+      inset: 90px 0 0;
+      width: auto;
+      padding: 0;
+    }
     .history-panel {
       inset: 130px auto 40px 40px;
       width: 900px;
@@ -965,6 +1090,11 @@
       left: 12px;
       max-width: calc(100% - 24px);
       font-size: 14px;
+    }
+    .contact-panel.history-panel {
+      inset: 58px 0 0;
+      width: auto;
+      padding: 0;
     }
     .history-panel {
       inset: 66px 12px 12px;

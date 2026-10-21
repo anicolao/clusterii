@@ -503,3 +503,17 @@ Inspected traveling-phone capture: actual route nodes, fleet complement, destina
 #26 advanced to dbc957f; independently inspected system Fleets count now excludes traveling fleets, matching existing stationed totals. Replacement verification/publication running. #23–25 verification remains pending. Agent actively implementing observed fleet contacts successor, no new PR. Stash propagation briefly conflicted in continuation bookkeeping; current inspection finds no remaining conflict markers in PROMPT_WORK.md and contacts edits preserved.
 
 Agent reports projection/failed-scan/stale-history tests passing, with service/browser work still pending. Contacts must remain last-observed information rather than exposing hidden current positions/routes; final source/evidence and rendered inspection remain required. No established new defect or stall needing duplicate prompt. Carry checkpoint into next related committed/pushed logs; no merge or acceptance expansion.
+
+
+## Reviewer progress — 2026-10-21 03:57 Toronto
+
+#23 24a5af1 and #24 550d7c5 now fully green. #25 advanced to19b7bd8 after ambiguous formation heading selector, propagated to #26 fd019dd; replacement verification running. Independent diff review confirms test now matches exact selected fleet name and asserts visible heading, pressed state and focus rather than weakening selection expectations.
+
+Contacts work active/uncommitted; no new PR. Preliminary source review confirms frozen scanning level/persisted draws, explicit successful-contact fields and public contact identity rather than underlying command-derived fleet ID. Last-seen merge uses only authorized loaded historical records. Agent reports both-provider services passing and ordinary browser/gallery/lab running; final evidence/rendered/security review remains pending. Transient propagation conflicts resolved with edits retained, no stall or duplicate handoff. Carry checkpoint into next committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 04:07 Toronto
+
+#25/#26 replacement verification remains running, publication/documentation green. Contacts work remains active/uncommitted, no new PR. Independent current-phone capture review finds observed tick, explicitly limited knowledge, observed complement and fixed Refresh/Back controls readable; remaining coordinates are within scrollable details. This supports current-state composition only, not complete stale/recovery/privacy approval.
+
+Source now retains observations received live when subsequent scans miss, while authorized history remains pageable. Checked campaign selection clears view before new subscription and account generation guards remain in place. Evidence reports both-provider102 assertions and final four-contact/travel cohort39.1s, with final copy/large-label capture pass still underway. No stall or actionable new finding, no duplicate handoff. Carry checkpoint into next committed/pushed logs; no merge or release acceptance.

@@ -5014,3 +5014,232 @@ for (const mode of ["mock", "real"] as const)
     },
     240000,
   );
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true"
+    ? test.skip
+    : test)(
+    `fleet contacts ${mode}: acquired private facts, missed scans, history and epoch preservation`,
+    async () => {
+      const { createRequire } = await import("node:module"),
+        require = createRequire(
+          new URL("../functions/package.json", import.meta.url),
+        );
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({ projectId });
+      const db = require("firebase-admin/firestore").getFirestore();
+      const { startDueCampaign, context } =
+        await import("../functions/src/campaigns");
+      const { settleCampaignTicks } =
+        await import("../functions/src/production");
+      const { unprotect } = await import("../functions/src/key-protection");
+      const { observationDraw } =
+        await import("../functions/src/observation-random");
+      const { detectionProbability, drawRange } =
+        await import("../shared/observations");
+      const { distance } = await import("../shared/galaxy");
+      const { lastFleetContacts } = await import("../shared/fleet-contacts");
+      const players = await Promise.all(
+        (["heliac", "pelagic", "vesper", "dracon"] as const).map(
+          async (faction) => {
+            const c = await client(`contact-${faction}-${crypto.randomUUID()}`);
+            await developer(c);
+            await saveIdentity(c);
+            return { c, faction };
+          },
+        ),
+      );
+      const owner = players[0].c,
+        observer = players[1].c,
+        id = crypto.randomUUID();
+      expect(
+        (
+          await campaignCommand(owner, id, {
+            kind: "campaign.create",
+            expectedRevision: 0,
+            name: "Contact service",
+            capacity: 4,
+            mode,
+            development: true,
+          })
+        ).receipt.status,
+      ).toBe("accepted");
+      for (let i = 0; i < 4; i++)
+        await campaignCommand(
+          players[i].c,
+          id,
+          {
+            kind: "campaign.join",
+            expectedRevision: i + 1,
+            faction: players[i].faction,
+          },
+          mode,
+        );
+      const head = db.doc(`campaignStates/${id}`),
+        start = (await head.get()).get("startAt");
+      await startDueCampaign(id, start);
+      const read = async (c = observer) =>
+        (await readCampaignHistory(c.firestore, c.functions, id, c.uid))
+          .records[0];
+      const initial = await read(owner);
+      expect(
+        (
+          await campaignCommand(
+            owner,
+            id,
+            {
+              kind: "fleet.form",
+              expectedRevision: initial.revision,
+              starId: initial.own.home!,
+              fighters: 4,
+              infantry: 6,
+            },
+            mode,
+          )
+        ).receipt.status,
+      ).toBe("accepted");
+      expect(await settleCampaignTicks(id, () => start + 900000)).toBe(1);
+      // Choose known hit/miss ticks from the real server-private draw stream.
+      // Only the test driver reads the canonical key; player clients remain ordinary.
+      const snap = await head.get(),
+        revision = snap.get("revision"),
+        epoch = snap.get("encryptionEpoch");
+      const key =
+        mode === "real"
+          ? await unprotect(
+              snap.get("protectedKey"),
+              `canonical:${id}:${revision}:${epoch}`,
+            )
+          : snap.get("canonicalKey");
+      const canonical = await provider(mode).open<
+        import("../shared/campaign").Campaign
+      >(snap.get("envelope"), key, context(id, revision, "canonical", epoch));
+      const fleet = Object.values(canonical.military!.fleets)[0],
+        source = canonical.galaxy.stars.find(
+          (s) => s.id === canonical.seats[1].home,
+        )!,
+        target = canonical.galaxy.stars.find((s) => s.id === fleet.starId)!;
+      const probability = detectionProbability(
+        canonical.economy!.research[observer.uid].levels.scanning,
+        distance(source, target),
+      );
+      const hit = (tick: number) =>
+        observationDraw(
+          canonical.seed,
+          id,
+          observer.uid,
+          `fleet:${fleet.id}`,
+          tick,
+        ) /
+          drawRange <
+        probability;
+      const acquiredTick = Array.from({ length: 94 }, (_, i) => i + 2).find(
+        hit,
+      );
+      expect(acquiredTick).toBeDefined();
+      expect(
+        await settleCampaignTicks(id, () => start + acquiredTick! * 900000),
+      ).toBe(acquiredTick! - 1);
+      const acquired = await read();
+      expect(acquired.fleetContacts).toHaveLength(1);
+      expect(acquired.fleetContacts![0]).toMatchObject({
+        observedTick: acquiredTick,
+        fighters: 4,
+        infantry: 6,
+        x: target.x,
+        y: target.y,
+        z: target.z,
+      });
+      expect(Object.keys(acquired.fleetContacts![0]).sort()).toEqual([
+        "fighters",
+        "id",
+        "infantry",
+        "number",
+        "observedTick",
+        "owner",
+        "x",
+        "y",
+        "z",
+      ]);
+      expect(JSON.stringify(acquired)).not.toContain(fleet.id);
+      expect(acquired.military).toEqual({ fleets: [], orders: [], ledger: [] });
+      await expect(
+        getDoc(
+          doc(observer.firestore, "campaignViews", id, "members", owner.uid),
+        ),
+      ).rejects.toThrow();
+      const missedTick = Array.from(
+        { length: 94 },
+        (_, i) => i + acquiredTick! + 1,
+      ).find((t) => !hit(t));
+      expect(missedTick).toBeDefined();
+      expect(
+        await settleCampaignTicks(id, () => start + missedTick! * 900000),
+      ).toBe(missedTick! - acquiredTick!);
+      const missed = await read();
+      expect(missed.fleetContacts).toEqual([]);
+      expect(
+        await settleCampaignTicks(id, () => start + missedTick! * 900000),
+      ).toBe(0);
+      expect(await read()).toEqual(missed);
+      const history = async (c: typeof owner) => {
+        let page = await readCampaignHistory(
+          c.firestore,
+          c.functions,
+          id,
+          c.uid,
+        );
+        const records = [...page.records];
+        while (page.cursor) {
+          page = await readCampaignHistory(
+            c.firestore,
+            c.functions,
+            id,
+            c.uid,
+            page.cursor,
+          );
+          records.push(...page.records);
+        }
+        return records;
+      };
+      expect(lastFleetContacts(await history(observer))).toHaveLength(1);
+      if (process.env.CLUSTER_KMS_TEST === "true") {
+        await campaignCommand(
+          owner,
+          id,
+          { kind: "campaign.pause", expectedRevision: missed.revision },
+          mode,
+        );
+        const before = await Promise.all(players.map(({ c }) => history(c))),
+          paused = await read();
+        expect(
+          (
+            await campaignCommand(
+              owner,
+              id,
+              {
+                kind: "campaign.migrate",
+                expectedRevision: paused.revision,
+                targetMode: mode === "mock" ? "real" : "mock",
+              },
+              mode,
+            )
+          ).receipt.status,
+        ).toBe("accepted");
+        const normalize = (v: CampaignView) => {
+          const { mode, encryptionEpoch, mockExposed, ...rest } = v;
+          return rest;
+        };
+        for (let i = 0; i < players.length; i++)
+          expect(
+            (await history(players[i].c))
+              .filter((v) => v.revision <= paused.revision)
+              .map(normalize),
+          ).toEqual(before[i].map(normalize));
+        expect(lastFleetContacts(await history(observer))).toEqual(
+          lastFleetContacts(before[1]),
+        );
+      }
+    },
+    240000,
+  );
