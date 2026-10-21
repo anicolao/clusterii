@@ -658,7 +658,9 @@ for (const mode of ["mock", "real"] as const)
       );
       await newcomer.reload();
       await open(newcomer);
-      await panel(newcomer).getByRole("button", {name:"Conversations",exact:true}).click();
+      await panel(newcomer)
+        .getByRole("button", { name: "Conversations", exact: true })
+        .click();
       await panel(newcomer)
         .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
         .click();
@@ -668,6 +670,43 @@ for (const mode of ["mock", "real"] as const)
       await newcomer.screenshot({
         path: "test-results/conversation-sharing-accepted-phone.png",
       });
+      await own
+        .getByRole("button", { name: "Remove Fleet envoy 3", exact: true })
+        .click();
+      await own
+        .getByRole("button", { name: "Confirm remove", exact: true })
+        .click();
+      await expect(panel(newcomer)).toContainText(
+        "access to this conversation has ended",
+      );
+      await newcomer.keyboard.press("Escape");
+      await newcomer
+        .getByRole("button", { name: "History", exact: true })
+        .click();
+      const retainedHistory = newcomer.getByRole("region", {
+        name: "Campaign history",
+        exact: true,
+      });
+      const grantedRecord = retainedHistory
+        .locator("details")
+        .filter({ hasText: "Welcome back. This is a new message." });
+      await expect(grantedRecord).not.toHaveCount(0);
+      for (const record of await grantedRecord.all())
+        await record.locator("summary").click();
+      await expect(
+        retainedHistory
+          .locator("article:visible")
+          .filter({ hasText: "Welcome back. This is a new message." }),
+      ).not.toHaveCount(0);
+      await newcomer.screenshot({
+        path: "test-results/conversation-sharing-retained-phone.png",
+      });
+      await expect(retainedHistory).not.toContainText(
+        "Private during absence.",
+      );
+      await expect(retainedHistory).not.toContainText(
+        "Private note before inviting anyone.",
+      );
       const broken = await contexts[1].newPage();
       let blockedWrites = 0;
       await broken.routeWebSocket(/127\.0\.0\.1:19000/, (ws) => {
