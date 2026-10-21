@@ -1,5 +1,9 @@
 import { getAuth } from "firebase-admin/auth";
-import { getFirestore, type Transaction } from "firebase-admin/firestore";
+import {
+  FieldPath,
+  getFirestore,
+  type Transaction,
+} from "firebase-admin/firestore";
 import {
   type DatabaseEvent,
   type DataSnapshot,
@@ -462,7 +466,13 @@ export async function startDueCampaign(id: string, now: number) {
       tx.get(db().doc(`campaignStates/${id}`)),
       tx.get(db().doc(`campaignKeys/${id}`)),
     ]);
-    if (!head.exists || head.get("migration")) return;
+    if (
+      !head.exists ||
+      head.get("phase") !== "scheduled" ||
+      head.get("startAt") > now ||
+      head.get("migration")
+    )
+      return;
     const epoch = Number(head.get("envelope.epoch"));
     const revision = Number(head.get("revision"));
     const mode = head.get("mode") as Mode;
@@ -498,15 +508,52 @@ export async function startDueCampaign(id: string, now: number) {
     );
   });
 }
-export const startScheduledCampaigns = onSchedule(
-  "every 1 minutes",
-  async () => {
-    const now = Date.now();
-    const queued = await db()
+// A failed campaign must not prevent later campaigns from receiving their start.
+// Stable document-ID paging remains valid while successful starts leave the query.
+export async function sweepScheduledCampaigns(now: number) {
+  const failed: string[] = [];
+  let after: string | undefined;
+  let inspected = 0;
+  for (;;) {
+    let query = db()
       .collection("campaignStates")
       .where("phase", "==", "scheduled")
-      .get();
-    for (const head of queued.docs)
-      if (head.get("startAt") <= now) await startDueCampaign(head.id, now);
+      .orderBy(FieldPath.documentId())
+      .limit(25);
+    if (after) query = query.startAfter(after);
+    const queued = await query.get();
+    for (const head of queued.docs) {
+      inspected++;
+      if (
+        head.get("startAt") > now ||
+        head.get("pausedAt") != null ||
+        head.get("migration")
+      )
+        continue;
+      try {
+        await startDueCampaign(head.id, now);
+      } catch {
+        // Do not log decrypted state, envelopes, keys or provider error payloads.
+        failed.push(head.id);
+      }
+    }
+    if (queued.size < 25) break;
+    after = queued.docs[queued.size - 1].id;
+  }
+  return { inspected, failed };
+}
+export const startScheduledCampaigns = onSchedule(
+  {
+    schedule: "every 1 minutes",
+    retryCount: 3,
+    minBackoffSeconds: 10,
+    maxBackoffSeconds: 60,
+  },
+  async () => {
+    const result = await sweepScheduledCampaigns(Date.now());
+    if (result.failed.length)
+      throw new Error(
+        `Campaign start failed for ${result.failed.length} campaign(s); retry required.`,
+      );
   },
 );

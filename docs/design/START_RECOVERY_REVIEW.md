@@ -1,0 +1,22 @@
+# Scheduled start recovery
+
+A failed campaign no longer blocks the other campaigns in a scheduler delivery. The worker scans scheduled heads in document-ID pages of 25, attempts every due campaign, and requests a retry after collecting failures. The error reports only a count, never private state or provider error payloads. The next minute also discovers still-scheduled campaigns.
+
+Start remains a single Firestore transaction: canonical history, private recipient views, membership summaries and phase change commit together. Concurrent deliveries and a lost completion acknowledgement observe the committed revision on retry. There is no separate claim to abandon for this one-transaction transition. Multi-step gameplay tick leases, bounded catch-up and account/key compromise recovery remain incomplete milestone 2 work.
+
+The roster shows “Awaiting home assignment” after its scheduled time until the authoritative active view arrives. The saved seat and subscription remain intact. This display uses the device clock only to explain the wait; it cannot start a game or assign a home. Pause takes precedence. The gallery covers waiting, scheduled, overdue, paused and active states; the animation lab uses the same component and production start reducer for seekable scheduled → overdue → assigned playback with identical reduced-motion outcomes.
+
+## Evidence
+
+- Type checks and lint pass; 14 unit tests pass with 251 assertions.
+- The expanded service fixture passes **647 assertions in 19.52 seconds**. It creates 26 campaigns through authenticated commands, crossing the 25-record query boundary. A corrupt canonical envelope blocks only its own campaign. A test-local wrapper interrupts after staging all transaction writes but before commit: canonical history and every recipient head stay unchanged. A second interruption occurs after the real transaction commits: concurrent repeat delivery preserves the exact committed head, six canonical versions, original scheduled timestamp, distinct homes and each recipient's revision. [Retained result](../ux/reviews/start-recovery/fault-recovery.json).
+- Five gallery/lab browser tests pass, including deterministic start playback, pause/seek/reset and four-size component captures. The same replay/seek journey also passes on the hosted PR #13 lab at e1fafaa. [Hosted phone capture](../ux/reviews/start-recovery/hosted-lab-phone.png).
+- The ordinary UI journey passes in **14.5 minutes**: five independent commanders fill two campaigns, wait for the real UTC boundary, inspect overdue rosters at four sizes, then receive the actual emulator scheduler HTTP delivery and recover distinct assigned homes. No fake campaign state or accelerated clock is used in this browser journey. Geometry checks assert the overdue message is inside each viewport and the document does not overflow before any automatic scrolling.
+- Retained captures: [scheduled](../ux/reviews/start-recovery/four-player-scheduled.png), overdue [phone](../ux/reviews/start-recovery/awaiting-start-phone.png), [desktop](../ux/reviews/start-recovery/awaiting-start-desktop.png), [short](../ux/reviews/start-recovery/awaiting-start-short.png), [4K](../ux/reviews/start-recovery/awaiting-start-4k.png), and [assigned home](../ux/reviews/start-recovery/four-player-home-assigned.png). Implementation-agent visual inspection finds the message readable and contained; independent review remains pending. Existing baselines are preserved.
+- Scheduler deployed and verified ACTIVE with authenticated HTTP delivery, three retries and 10–60 second backoff; no test KMS flag is deployed. This verifies configuration, not hosted failure recovery.
+
+These are development scenarios under proposed rules. Fault injection models storage failure and a lost completion acknowledgement; it does not certify hosted process termination, Cloud Scheduler redelivery or production scale. Independent visual review and exact-head CI remain gates. Public campaigns remain closed.
+
+## Maintenance acknowledgement regression
+
+CI at 76ec04b found four ambiguous maintenance status selectors after adding the separate roster live region. The maintenance cohort now selects the exact accepted pause/resume acknowledgement text, retaining both live regions and all state, focus, reload and geometry assertions. Other status locators were reviewed: identity checks occur before opening a roster; lab checks scope a single specimen; the start journey scopes the roster itself. All four affected viewport journeys pass in 19.8 seconds. Replacement full CI remains a gate.

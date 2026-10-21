@@ -5,7 +5,8 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
-  import { scenarios, duration } from "./scenarios";
+  import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
+  import { scheduledFrame, scenarios, duration } from "./scenarios";
   let selected = $state("accepted");
   let time = $state(0);
   let speed = $state(1);
@@ -100,26 +101,33 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if !selected.startsWith("campaign-")}<NameField
-            id={reduced ? "reduced-name" : "standard-name"}
-            value="Preserved draft"
-            disabled={frame.feedback.message === "Sending your identity…"}
-          /><PortraitPicker
-            value="M2"
-            disabled
-            group={reduced ? "reduced-portraits" : "standard-portraits"}
-          />{/if}<Feedback
-          message={frame.feedback.message}
-          error={frame.feedback.error}
-          errorId={reduced ? "reduced-error" : "standard-error"}
-          reconnect={frame.feedback.remedy === "network"
-            ? () => {
-                time = 2200;
-                playing = true;
-              }
-            : undefined}
-          inspect={{ time: time - frame.at, reduced }}
-        />
+        {#if selected === "campaign-start"}
+          <CampaignStartStatus
+            game={scheduledFrame(time).game}
+            inspectTime={scheduledFrame(time).clock}
+          />
+        {:else}
+          {#if !selected.startsWith("campaign-")}<NameField
+              id={reduced ? "reduced-name" : "standard-name"}
+              value="Preserved draft"
+              disabled={frame.feedback.message === "Sending your identity…"}
+            /><PortraitPicker
+              value="M2"
+              disabled
+              group={reduced ? "reduced-portraits" : "standard-portraits"}
+            />{/if}<Feedback
+            message={frame.feedback.message}
+            error={frame.feedback.error}
+            errorId={reduced ? "reduced-error" : "standard-error"}
+            reconnect={frame.feedback.remedy === "network"
+              ? () => {
+                  time = 2200;
+                  playing = true;
+                }
+              : undefined}
+            inspect={{ time: time - frame.at, reduced }}
+          />
+        {/if}
       </section>{/each}
   </div>
   <p class="explanation">
