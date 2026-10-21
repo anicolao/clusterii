@@ -21,3 +21,7 @@ The production instrument previews both resulting complements and preserves the 
 Type checks and lint pass. Compatible rollout updates all five canonical/view consumers before command admission and then additive ingress rules. Old orders without reorganization fields keep their recorded interpretation; older preview clients cannot describe the new operations and should use this compatible preview. Once these orders exist, rollback must preserve split/merge settlement and participant locks.
 
 Compatible deployment and readback completed on 2026-10-21 UTC: five consumers/view writers, then processCampaign, then additive database rules. All six functions are ACTIVE on Node.js 22 without test flags; hosted rules admit both new kinds. All 12 prompt-hook checks pass. Independent rendered/security and hosted acceptance remain separate.
+
+## CI fault-test correction
+
+Run 39555761170 failed before browser execution: the inherited cargo lost-reply matcher timed out and its still-installed transaction spy contaminated the next test. The cargo correction is preserved from #23. Merge fault coverage now also explicitly awaits settlement, catches and asserts the exact injected error before restoring the spy. All committed-state, conserved inventory and retry assertions remain. The affected cargo/reorganization mock cohort passes locally; replacement full CI remains required. Production code, screenshots and hosted deployment are unchanged.

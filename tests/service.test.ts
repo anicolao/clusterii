@@ -4228,9 +4228,14 @@ for (const mode of ["mock", "real"] as const)
         },
       );
       try {
-        await expect(
-          settleCampaignTicks(id, () => start + 2 * 900000),
-        ).rejects.toThrow("Lost cargo settlement reply");
+        let failure: unknown;
+        try {
+          await settleCampaignTicks(id, () => start + 2 * 900000);
+        } catch (error) {
+          failure = error;
+        }
+        expect(failure).toBeInstanceOf(Error);
+        expect((failure as Error).message).toBe("Lost cargo settlement reply");
       } finally {
         interrupted.mockRestore();
       }
@@ -4606,9 +4611,14 @@ for (const mode of ["mock", "real"] as const)
         },
       );
       try {
-        await expect(settleCampaignTicks(id, () => due)).rejects.toThrow(
-          "Lost merge settlement reply",
-        );
+        let failure: unknown;
+        try {
+          await settleCampaignTicks(id, () => due);
+        } catch (error) {
+          failure = error;
+        }
+        expect(failure).toBeInstanceOf(Error);
+        expect((failure as Error).message).toBe("Lost merge settlement reply");
       } finally {
         interrupted.mockRestore();
       }
