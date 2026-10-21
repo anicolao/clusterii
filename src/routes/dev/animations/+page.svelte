@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import SystemFleets from "$lib/components/SystemFleets.svelte";
   import SystemObservation from "$lib/components/SystemObservation.svelte";
   import MarketFocus from "$lib/components/MarketFocus.svelte";
   import SystemConstruction from "$lib/components/SystemConstruction.svelte";
@@ -22,6 +23,7 @@
     researchFrame,
     constructionFrame,
     focusFrame,
+    fleetFrame,
     observationFrame,
     observedTarget,
   } from "./scenarios";
@@ -119,7 +121,21 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "observation"}<SystemObservation
+        {#if selected === "fleet"}<div
+            style="height:min(850px,90svh);min-height:550px"
+          >
+            {#key frame.at}{@const sample = fleetFrame(time)}<SystemFleets
+                view={sample}
+                starId={sample.own.home!}
+                pending={time < 2200}
+                message={frame.feedback.message}
+                error={frame.feedback.error}
+                onform={() => {}}
+                ondisband={() => {}}
+                onclose={() => {}}
+                onretry={() => {}}
+              />{/key}
+          </div>{:else if selected === "observation"}<SystemObservation
             view={observationFrame(time)}
             starId={observedTarget}
           />{:else if selected === "market-focus"}<div

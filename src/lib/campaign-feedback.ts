@@ -2,8 +2,16 @@ export const campaignPendingMessage = "Awaiting acknowledgement…";
 export const campaignNetworkMessage =
   "The connection was interrupted. Your selection and pending order are preserved.";
 const reasons: Record<string, string> = {
+  "fleet-unavailable":
+    "Fleet preparation begins after home assignment in a production-enabled campaign.",
+  "fleet-capacity":
+    "Choose whole force counts with at least one fighter and at most ten infantry per fighter.",
+  "insufficient-forces":
+    "Some forces are unavailable or already reserved. Review the current manifest.",
+  "fleet-limit": "Your empire has reached its fleet limit.",
+  "fleet-order-pending": "This fleet already has a pending order.",
   "pending-work-capacity":
-    "This campaign’s pending work is at capacity. Wait for a tick to settle before submitting another order.",
+    "This campaign is at its state capacity. Wait for pending work to settle or disband stationed fleets before adding more orders.",
   "focus-unavailable":
     "Market focus begins after home assignment in a production-enabled campaign.",
   "focus-queue-full":
@@ -49,8 +57,15 @@ export function campaignFeedback(
   if (receipt.status === "rejected")
     return {
       message: "",
-      error:
-        kind === "market.focus"
+      error: kind.startsWith("fleet.")
+        ? receipt.reason === "conflict"
+          ? "The campaign changed. Your manifest is preserved. Review available forces and submit again."
+          : receipt.reason === "permission"
+            ? "You must control orbit, and surface when embarking or returning infantry."
+            : receipt.reason === "invalid"
+              ? "Choose whole force counts or a stationed fleet."
+              : (reasons[receipt.reason ?? "invalid"] ?? reasons.invalid)
+        : kind === "market.focus"
           ? receipt.reason === "conflict"
             ? "The campaign changed. Your allocation is preserved. Review it and submit again."
             : receipt.reason === "invalid"
@@ -75,8 +90,9 @@ export function campaignFeedback(
           : ("validation" as const),
     };
   return {
-    message:
-      kind === "market.focus"
+    message: kind.startsWith("fleet.")
+      ? "Fleet order accepted. Reserved forces and its execution tick are listed in the manifest."
+      : kind === "market.focus"
         ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
         : kind === "construction.build"
           ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."

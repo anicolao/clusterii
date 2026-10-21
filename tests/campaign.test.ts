@@ -287,3 +287,369 @@ test('the largest stellar catalogue retains complete reports within the canonica
 });
 
 test('observation storage reserves complete reports before admitting excess pending work',()=>{const state=productionFixture();assertObservationBudget(state);state.construction={orders:Array.from({length:4000},(_,i)=>({id:`${i}`.padStart(36,'0'),uid:'p0',starId:state.seats[0].home!,type:'market' as const,sequence:i,effectiveTick:1,paidMilli:100000,executedTick:null,startedTick:null,progress:0})),cancellations:[],ledger:{}};const before=structuredClone(state);expect(()=>assertObservationBudget(state)).toThrow('pending-work-capacity');expect(state).toEqual(before);});
+
+import {
+  fleetIdentity,
+  orderFleet,
+  reservedForces,
+  stationedForces,
+} from "../shared/fleets";
+test("fleet admission reserves without moving forces; boundary settlement conserves units and rejects duplicate reservations", () => {
+  const state = productionFixture(),
+    home = state.seats[0].home!,
+    action = {
+      kind: "fleet.form",
+      expectedRevision: state.revision,
+      starId: home,
+      fighters: 2,
+      infantry: 20,
+    };
+  const queued = orderFleet(
+    state,
+    action,
+    "p0",
+    "formed",
+    state.economy!.nextTickAt - 1,
+  );
+  expect(queued.systems[home]).toEqual(state.systems[home]);
+  expect(reservedForces(queued, "p0", home)).toEqual({
+    fighters: 2,
+    infantry: 20,
+  });
+  expect(queued.military!.orders[0].effectiveTick).toBe(1);
+  expect(() =>
+    orderFleet(
+      queued,
+      { ...action, expectedRevision: queued.revision },
+      "p0",
+      "over",
+      0,
+    ),
+  ).toThrow("insufficient-forces");
+  const settled = observedTick(queued, () => 0);
+  expect(settled.military!.fleets[fleetIdentity("p0", "formed")]).toMatchObject(
+    { fighters: 2, infantry: 20, starId: home, formedTick: 1 },
+  );
+  expect(settled.systems[home]).toMatchObject({ fighters: 19, infantry: 1 });
+  expect(stationedForces(settled, home)).toEqual({
+    fighters: 21,
+    infantry: 21,
+  });
+  expect(settled.intelligence!.reports.p1[home].slice(4, 6)).toEqual([21, 21]);
+  expect(reservedForces(settled, "p0", home)).toEqual({
+    fighters: 0,
+    infantry: 0,
+  });
+  expect(settled.military!.ledger.p0[0].result).toBe("formed");
+  const disband = orderFleet(
+    settled,
+    {
+      kind: "fleet.disband",
+      expectedRevision: settled.revision,
+      fleetId: fleetIdentity("p0", "formed"),
+    },
+    "p0",
+    "returned",
+    settled.economy!.nextTickAt - 1,
+  );
+  expect(() =>
+    orderFleet(
+      disband,
+      {
+        kind: "fleet.disband",
+        expectedRevision: disband.revision,
+        fleetId: fleetIdentity("p0", "formed"),
+      },
+      "p0",
+      "twice",
+      0,
+    ),
+  ).toThrow("fleet-order-pending");
+  const returned = nextProduction(disband);
+  expect(returned.military!.fleets).toEqual({});
+  expect(returned.systems[home]).toMatchObject({ fighters: 22, infantry: 22 });
+  expect(returned.military!.ledger.p0[0].result).toBe("disbanded");
+  expect(nextProduction(returned).systems[home]).toMatchObject({
+    fighters: 24,
+    infantry: 24,
+  });
+  const late = orderFleet(
+    state,
+    action,
+    "p0",
+    "late",
+    state.economy!.nextTickAt,
+  );
+  expect(late.military!.orders[0].effectiveTick).toBe(2);
+  expect(nextProduction(late).military!.fleets).toEqual({});
+});
+test("fleet validation, layer entitlement and private views fail closed", () => {
+  const state = productionFixture(),
+    home = state.seats[0].home!,
+    a = {
+      kind: "fleet.form",
+      expectedRevision: state.revision,
+      starId: home,
+      fighters: 1,
+      infantry: 10,
+    };
+  for (const patch of [
+    { fighters: 0 },
+    { fighters: 1.5 },
+    { infantry: 11 },
+    { infantry: -1 },
+    { actor: "p1" },
+  ])
+    expect(() => orderFleet(state, { ...a, ...patch }, "p0", "x", 0)).toThrow();
+  expect(() => orderFleet(state, a, "p1", "x", 0)).toThrow("permission");
+  expect(() =>
+    orderFleet(state, { ...a, expectedRevision: 999 }, "p0", "x", 0),
+  ).toThrow("conflict");
+  const split = structuredClone(state);
+  split.systems[home].surface = "p1";
+  expect(() => orderFleet(split, a, "p0", "x", 0)).toThrow("permission");
+  expect(
+    orderFleet(split, { ...a, infantry: 0 }, "p0", "x", 0).military!.orders,
+  ).toHaveLength(1);
+  const queued = orderFleet(state, a, "p0", "private-fleet", 0);
+  expect(campaignView(queued, "p1").military).toEqual({
+    fleets: [],
+    orders: [],
+    ledger: [],
+  });
+  expect(JSON.stringify(campaignView(queued, "p1"))).not.toContain(
+    "private-fleet",
+  );
+  const formed = nextProduction(queued);
+  expect(JSON.stringify(campaignView(formed, "p1"))).not.toContain(
+    "private-fleet",
+  );
+  expect(() =>
+    orderFleet(
+      formed,
+      {
+        kind: "fleet.disband",
+        expectedRevision: formed.revision,
+        fleetId: fleetIdentity("p0", "private-fleet"),
+      },
+      "p1",
+      "x",
+      0,
+    ),
+  ).toThrow("permission");
+  queued.systems[home].orbit = "p1";
+  const lost = nextProduction(queued);
+  expect(lost.military!.fleets).toEqual({});
+  expect(lost.military!.orders).toEqual([]);
+  expect(lost.military!.ledger.p0[0].result).toBe("invalid");
+});
+test("formed and reserved fleet units count toward the empire production ceiling", () => {
+  let state = productionFixture();
+  const home = state.seats[0].home!;
+  state.systems[home].fighters = state.systems[home].infantry =
+    rules.maximumUnitsPerPlayerPerType;
+  state = orderFleet(
+    state,
+    {
+      kind: "fleet.form",
+      expectedRevision: state.revision,
+      starId: home,
+      fighters: 1,
+      infantry: 10,
+    },
+    "p0",
+    "cap",
+    0,
+  );
+  state = nextProduction(state);
+  expect(stationedForces(state, home)).toEqual({
+    fighters: 1000000,
+    infantry: 1000000,
+  });
+  expect(state.economy!.ledger.p0.fighters).toBe(0);
+  expect(state.economy!.ledger.p0.infantry).toBe(0);
+  state = orderFleet(
+    state,
+    {
+      kind: "fleet.disband",
+      expectedRevision: state.revision,
+      fleetId: fleetIdentity("p0", "cap"),
+    },
+    "p0",
+    "uncap",
+    state.economy!.nextTickAt - 1,
+  );
+  state = nextProduction(state);
+  expect(state.systems[home]).toMatchObject({
+    fighters: 1000000,
+    infantry: 1000000,
+  });
+  expect(state.economy!.ledger.p0.fighters).toBe(0);
+});
+test("fleet slots include reservations and enforce the recorded empire limit", () => {
+  let state = productionFixture();
+  const starId = state.seats[0].home!;
+  state.systems[starId].fighters = 200;
+  for (let i = 0; i < rules.maximumFleetsPerPlayer; i++)
+    state = orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId,
+        fighters: 1,
+        infantry: 0,
+      },
+      "p0",
+      `slot-${i}`,
+      0,
+    );
+  expect(() =>
+    orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId,
+        fighters: 1,
+        infantry: 0,
+      },
+      "p0",
+      "overflow",
+      0,
+    ),
+  ).toThrow("fleet-limit");
+  const formed = nextProduction(state);
+  expect(Object.keys(formed.military!.fleets)).toHaveLength(128);
+  expect(stationedForces(formed, starId).fighters).toBe(201);
+});
+test("state capacity cannot block disbanding that frees persistent fleet storage", () => {
+  let state = createCampaign(
+    "fleet-budget",
+    {
+      kind: "campaign.create",
+      expectedRevision: 0,
+      name: "Fleet budget",
+      capacity: 12,
+      mode: "mock",
+      development: true,
+    },
+    "c".repeat(64),
+    0,
+  );
+  for (let i = 0; i < 12; i++)
+    state = joinOrLeave(
+      state,
+      {
+        kind: "campaign.join",
+        expectedRevision: state.revision,
+        faction: rules.factions[i % 4].id,
+      },
+      `player-${i}`,
+      { alias: `Envoy ${i}`, portrait: "G1" },
+      0,
+    );
+  state = startCampaign(state, 900000);
+  state.military = { fleets: {}, orders: [], ledger: {} };
+  let full = false;
+  for (let i = 0; i < 1536; i++) {
+    const seat = state.seats[Math.floor(i / 128)],
+      id = String(i).padStart(36, "0");
+    state.military.fleets[id] = {
+      id,
+      uid: seat.uid,
+      starId: seat.home!,
+      fighters: 1,
+      infantry: 0,
+      formedTick: 1,
+      number: i,
+    };
+    try {
+      assertObservationBudget(state);
+    } catch {
+      delete state.military.fleets[id];
+      full = true;
+      break;
+    }
+  }
+  expect(full).toBe(true);
+  assertObservationBudget(state);
+  const queued = orderFleet(
+    state,
+    {
+      kind: "fleet.disband",
+      expectedRevision: state.revision,
+      fleetId: "0".repeat(36),
+    },
+    "player-0",
+    "release".padStart(36, "0"),
+    state.economy!.nextTickAt - 1,
+  );
+  expect(() => assertObservationBudget(queued)).toThrow(
+    "pending-work-capacity",
+  );
+  expect(() => assertObservationBudget(queued, true)).not.toThrow();
+  state = nextProduction(nextProduction(queued));
+  expect(state.military!.fleets["0".repeat(36)]).toBeUndefined();
+  for (let i = 1; i <= 20; i++) {
+    state = orderFleet(
+      state,
+      {
+        kind: "fleet.disband",
+        expectedRevision: state.revision,
+        fleetId: String(i).padStart(36, "0"),
+      },
+      "player-0",
+      `release-${i}`,
+      state.economy!.nextTickAt - 1,
+    );
+    expect(() => assertObservationBudget(state, true)).not.toThrow();
+  }
+  state = nextProduction(nextProduction(state));
+  expect(() => assertObservationBudget(state)).not.toThrow();
+});
+test("the disbanding recovery budget fits both encrypted envelope formats", async () => {
+  const { provider, newKey } = await import("../shared/crypto");
+  const value = { payload: "x".repeat(699986) };
+  expect(new TextEncoder().encode(JSON.stringify(value)).byteLength).toBe(
+    700000,
+  );
+  for (const mode of ["mock", "real"] as const) {
+    const envelope = await provider(mode).seal(value, newKey(), {
+      gameId: "recovery-budget",
+      objectId: "canonical",
+      revision: 1,
+      epoch: 1,
+      keyVersion: 1,
+    });
+    const bytes = new TextEncoder().encode(JSON.stringify(envelope)).byteLength;
+    console.info("Disband recovery envelope budget", { mode, bytes });
+    expect(bytes).toBeLessThan(950000);
+  }
+});
+test("two commanders using one command UUID retain independent fleet identities and forces", () => {
+  let state = productionFixture();
+  for (const uid of ["p0", "p1"])
+    state = orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId: state.seats.find((s) => s.uid === uid)!.home!,
+        fighters: 2,
+        infantry: 10,
+      },
+      uid,
+      "shared-command-uuid",
+      0,
+    );
+  state = nextProduction(state);
+  expect(Object.keys(state.military!.fleets)).toHaveLength(2);
+  for (const uid of ["p0", "p1"]) {
+    expect(
+      state.military!.fleets[fleetIdentity(uid, "shared-command-uuid")],
+    ).toMatchObject({ uid, fighters: 2, infantry: 10 });
+    expect(campaignView(state, uid).military!.fleets).toHaveLength(1);
+  }
+  expect(fleetIdentity("a:b", "c")).not.toBe(fleetIdentity("a", "b:c"));
+});

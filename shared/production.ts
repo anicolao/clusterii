@@ -1,5 +1,6 @@
 import type { Campaign } from "./campaign.js";
 import { settleConstruction } from "./construction.js";
+import { settleFleets } from "./fleets.js";
 import { initialFocus, type MarketFocus, settleFocus } from "./market-focus.js";
 import { faction, rules } from "./rules.js";
 export type Technology = keyof typeof rules.startingResearch;
@@ -132,6 +133,7 @@ export function produce(campaign: Campaign, economy: Economy) {
   clock.ledger = {};
   next.economy = clock;
   settleFocus(next);
+  settleFleets(next, clock.tick);
   const completions = settleConstruction(next, clock.tick);
   for (const research of Object.values(clock.research)) {
     const due = (research.orders ?? [])
@@ -171,8 +173,16 @@ export function produce(campaign: Campaign, economy: Economy) {
       discardedInfantry: 0,
     };
     clock.ledger[seat.uid] = ledger;
-    const totals = { fighters: 0, infantry: 0 };
-    for (const system of Object.values(campaign.systems)) {
+    const totals = Object.values(next.military?.fleets ?? {})
+      .filter((f) => f.uid === seat.uid)
+      .reduce(
+        (sum, f) => ({
+          fighters: sum.fighters + f.fighters,
+          infantry: sum.infantry + f.infantry,
+        }),
+        { fighters: 0, infantry: 0 },
+      );
+    for (const system of Object.values(next.systems)) {
       if (system.orbit === seat.uid) totals.fighters += system.fighters;
       if (system.surface === seat.uid) totals.infantry += system.infantry;
     }

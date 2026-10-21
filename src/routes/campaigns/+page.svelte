@@ -253,6 +253,8 @@
             "campaign.resume",
             "research.select",
             "market.focus",
+            "fleet.form",
+            "fleet.disband",
             "construction.build",
             "construction.cancel",
           ].includes(command.kind)
@@ -334,6 +336,20 @@
           kind: "campaign.migrate",
           expectedRevision: game?.revision ?? view!.revision,
           targetMode,
+        })}
+      onform={(starId, fighters, infantry) =>
+        send(view!.id, {
+          kind: "fleet.form",
+          expectedRevision: view!.revision,
+          starId,
+          fighters,
+          infantry,
+        })}
+      ondisband={(fleetId) =>
+        send(view!.id, {
+          kind: "fleet.disband",
+          expectedRevision: view!.revision,
+          fleetId,
         })}
       onbuild={(starId, type) =>
         send(view!.id, {

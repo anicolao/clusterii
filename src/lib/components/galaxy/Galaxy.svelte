@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick, onDestroy } from "svelte";
   import type { Technology } from "@shared/production";
+  import SystemFleets from "../SystemFleets.svelte";
   import SystemObservation from "../SystemObservation.svelte";
   import type { Allocation } from "@shared/market-focus";
   import SystemConstruction from "../SystemConstruction.svelte";
@@ -31,6 +32,8 @@
     onmaintenance,
     onresearch,
     onfocus,
+    onform,
+    ondisband,
     onbuild,
     oncancel,
     onmigrate,
@@ -50,6 +53,8 @@
     onmaintenance?: () => void;
     onfocus?: (allocation: Allocation) => void;
     onresearch?: (target: Technology) => void;
+    onform?: (starId: string, fighters: number, infantry: number) => void;
+    ondisband?: (id: string) => void;
     onbuild?: (starId: string, type: Development) => void;
     oncancel?: (orderId: string) => void;
     onmigrate?: (mode: "mock" | "real") => void;
@@ -62,6 +67,7 @@
     busy?: boolean;
     pending?: boolean;
   } = $props();
+  let military = $state(false);
   let observation = $state(false);
   let construction = $state(false);
   let economy = $state(false);
@@ -155,8 +161,15 @@
   let query = $state("");
   let listing = $state(false);
   async function openPanel(
-    kind: "roster" | "systems" | "history" | "economy" | "construction",
+    kind:
+      | "roster"
+      | "systems"
+      | "history"
+      | "economy"
+      | "construction"
+      | "military",
   ) {
+    military = kind === "military";
     construction = kind === "construction";
     economy = kind === "economy";
     history = kind === "history";
@@ -164,7 +177,8 @@
     roster = kind === "roster";
     listing = kind === "systems";
     await tick();
-    if (construction)
+    if (military) document.querySelector<HTMLElement>(".fleet-panel")?.focus();
+    else if (construction)
       document.querySelector<HTMLElement>(".construction-panel")?.focus();
     else if (economy)
       document.querySelector<HTMLElement>(".economy-panel")?.focus();
@@ -188,18 +202,25 @@
     await tick();
     document.querySelector<HTMLElement>('[data-focus="construction"]')?.focus();
   }
+  async function closeMilitary() {
+    military = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="military"]')?.focus();
+  }
   function panelKeys(event: KeyboardEvent) {
     if (event.key === "Escape") {
       event.preventDefault();
-      void (construction
-        ? closeConstruction()
-        : economy
-          ? closeEconomy()
-          : history
-            ? closeHistory()
-            : roster
-              ? closeRoster()
-              : closeList());
+      void (military
+        ? closeMilitary()
+        : construction
+          ? closeConstruction()
+          : economy
+            ? closeEconomy()
+            : history
+              ? closeHistory()
+              : roster
+                ? closeRoster()
+                : closeList());
       return;
     }
     if (event.key !== "Tab") return;
@@ -244,7 +265,7 @@
 <div class="galaxy-surface">
   <header
     class="command-rail"
-    inert={roster || listing || history || economy || construction}
+    inert={roster || listing || history || economy || construction || military}
   >
     <div>
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
@@ -272,7 +293,7 @@
   </header>
   {#if !roster}<div
       class="acknowledgement"
-      inert={listing || history || economy || construction}
+      inert={listing || history || economy || construction || military}
     >
       <Feedback {message} {error} />{#if onretry}<ActionButton
           disabled={busy}
@@ -283,11 +304,17 @@
     </div>{/if}
   <div
     class="chart"
-    inert={roster || listing || history || economy || construction}
+    inert={roster || listing || history || economy || construction || military}
     aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
   >
     <Canvas renderMode="on-demand"
       ><Scene
+        fleets={Object.fromEntries(
+          view.stars.map((s) => [
+            s.id,
+            view.military?.fleets.filter((f) => f.starId === s.id).length ?? 0,
+          ]),
+        )}
         stars={view.stars}
         owned={view.holdings.map((h) => h.starId)}
         selected={star.id}
@@ -298,7 +325,7 @@
     >
   </div>
   <aside
-    inert={roster || listing || history || economy || construction}
+    inert={roster || listing || history || economy || construction || military}
     class="system-inspector"
     class:observing={observation}
     aria-label="Selected system"
@@ -371,6 +398,14 @@
       {/if}
     </div>
     <div class="system-actions">
+      {#if view.military && holding?.orbit === "You" && onform}<ActionButton
+          class="secondary"
+          data-focus="military"
+          aria-expanded={military}
+          onclick={() => openPanel("military")}
+          >Fleets · {view.military.fleets.filter((f) => f.starId === star.id)
+            .length}</ActionButton
+        >{/if}
       {#if holding && view.productionEnabled && onbuild}<ActionButton
           class="secondary"
           data-focus="construction"
@@ -397,6 +432,27 @@
       >
     </div>
   </aside>
+  {#if military}<div
+      class="construction-panel fleet-panel"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      aria-label="Fleet preparation panel"
+      onkeydown={panelKeys}
+    >
+      <SystemFleets
+        {view}
+        starId={star.id}
+        {busy}
+        {pending}
+        message={commandKind.startsWith("fleet.") ? message : ""}
+        error={commandKind.startsWith("fleet.") ? error : ""}
+        onform={(fighters, infantry) => onform?.(star.id, fighters, infantry)}
+        ondisband={(id) => ondisband?.(id)}
+        onclose={closeMilitary}
+        {onretry}
+      />
+    </div>{/if}
   {#if construction}<div
       class="construction-panel"
       role="dialog"
@@ -820,14 +876,17 @@
   }
   @media (max-width: 700px) {
     .system-actions {
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 8px;
+      padding-top: 12px;
     }
     .system-actions :global(button) {
       flex: 1;
       min-width: 0;
       padding: 8px;
-      font-size: 13px;
+      font-size: 14px;
+      margin-top: 0;
     }
     .galaxy-surface {
       height: 100svh;
@@ -908,7 +967,7 @@
       border-color: #8bd8e7;
       color: #effdff;
       flex-shrink: 0;
-      margin-top: 12px;
+      margin-top: 0;
     }
     h2 {
       font-size: 28px;

@@ -5,6 +5,7 @@ import {
   type Development,
   developments,
 } from "./construction.js";
+import { type FleetAction, type Military, militaryView } from "./fleets.js";
 import { type Galaxy, generateGalaxy } from "./galaxy.js";
 import {
   type Allocation,
@@ -51,6 +52,7 @@ export interface Campaign {
   schemaVersion: 1 | 2;
   economy?: Economy;
   construction?: Construction;
+  military?: Military;
   intelligenceVersion?: 1;
   intelligence?: Intelligence;
   commandProtocolVersion: 1;
@@ -74,6 +76,7 @@ export type MigrationAction = {
   targetMode: "mock" | "real";
 };
 export type CampaignAction =
+  | FleetAction
   | MigrationAction
   | { kind: "market.focus"; expectedRevision: number; allocation: Allocation }
   | {
@@ -437,6 +440,7 @@ export function campaignView(state: Campaign, uid: string) {
           ledger: state.economy.ledger[uid] ?? null,
         }
       : null,
+    military: militaryView(state, uid),
     observations: observationView(state, uid),
     scanningEnabled:
       state.schemaVersion === 2 && state.intelligenceVersion === 1,

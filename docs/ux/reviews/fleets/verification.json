@@ -1,0 +1,32 @@
+{
+  "units": {
+    "passed": 43,
+    "assertions": 956,
+    "log": "/tmp/cluster-fleets-unit-final.log"
+  },
+  "liveService": {
+    "passed": 2,
+    "assertions": 176,
+    "seconds": 59.24,
+    "log": "/tmp/cluster-fleets-identity-live.log",
+    "coverage": "Both encryption providers; concurrent reservations; same command UUID across two commanders produces independent fleet IDs; replayed handler/ticks; private grants; complete four-recipient history beyond ten records; pending disband survives both-direction migration."
+  },
+  "defaultService": {
+    "passed": 23,
+    "assertions": 1342,
+    "liveOnlySkipped": 13,
+    "seconds": 69.85,
+    "log": "/tmp/cluster-fleets-identity-final.log"
+  },
+  "browser": {
+    "passed": 9,
+    "seconds": 50.0,
+    "log": "/tmp/cluster-fleets-identity-final.log",
+    "coverage": "Ordinary four-player admission; explicit service clocks for formation/disband; reload; real map count; scoped acknowledgements; heading/Back focus; pre-scroll commitment geometry; primary contrast; text containment; bounded scrolling; final phone/desktop/short/4K captures; real production gallery/lab replay and reduced-motion equality."
+  },
+  "types": "pass",
+  "lint": "pass",
+  "renderedReview": "Implementer inspected all sizes; corrected primary contrast and crowded phone action rail, preserving before-captures. Supervisor sampled corrected ready-phone at 01:07; full independent rendered/security acceptance remains open.",
+  "deployment": "Corrected rollout complete: five consumers/view writers, processCampaign, additive database rules. Six writers ACTIVE on Node 22 without emulator flags; rules read back through CLI.",
+  "limits": "Stationed formation/disband only. Proposed rules, fleet travel/split/merge/loading/combat, individual hostile fleet observations, hosted Google/Scheduler, compromise key rotation, exact-head CI and full milestone/release acceptance remain open."
+}

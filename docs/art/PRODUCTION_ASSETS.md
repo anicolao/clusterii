@@ -67,3 +67,11 @@ Other three exact prompts use this template with the subjects below:
 ## Development icons
 
 `src/lib/components/DevelopmentIcon.svelte` supplies the production market coin stack, training chevrons, surface base and orbital station symbols. These are original hand-authored SVG paths, licensed with this project under GPL-3.0-only; no external artwork or generated lettering is used. They accompany real labels and expose no intelligence. The gallery enumerates all four symbols, and the market-focus control shares them across production, gallery and animation lab. Its header reuses the provenance-recorded construction market scene.
+
+## Fleet preparation
+
+`static/art/fleet-preparation.webp` is final production hangar/fighter-transport artwork generated with the built-in imagegen tool on 2026-10-21, then encoded as WebP with Sharp at quality 88. Source: `01a15929-99b0-7603-a932-6dda979c98ff/exec-319c506a-5d66-41ec-b36a-999a70247bed.png` under the imagegen output directory. It is shared by the real fleet instrument, gallery and lab; all labels and counts are semantic HTML. `FleetSymbol.svelte` is an original hand-authored SVG mark, licensed GPL-3.0-only with the code. Neither asset implies an additional ship type or combat ability.
+
+Exact generation prompt:
+
+> Use case: stylized-concept. Asset type: final production artwork for Cluster II's fleet preparation instrument, a cinematic space strategy game. Create a wide landscape illustration: a sophisticated fighter spacecraft with integrated infantry transport compartment moored outside an immense orbital hangar, a few companion fighters receding into depth, a luminous blue planetary horizon below. Close three-quarter view of the lead ship; clear readable silhouette, credible layered titanium hull panels and docking structure, restrained cyan engines and warm amber windows. Cinematic realism, richly detailed physically plausible materials, deep midnight navy and bronze/gold palette, atmospheric depth and dramatic rim lighting. Keep primary ship in central two-thirds so the scene crops well to a phone header. This is artwork only, not an interface. Absolutely no text, lettering, numerals, logos, watermark, borders, UI panels, labels or diagrams.
