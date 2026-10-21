@@ -11,6 +11,7 @@ export interface Fleet {
   number: number;
 }
 export type FleetAction =
+  | { kind: "fleet.cancel"; expectedRevision: number; orderId: string }
   | {
       kind: "fleet.form";
       expectedRevision: number;
@@ -481,4 +482,48 @@ export function militaryView(state: Campaign, uid: string) {
       ),
     ledger: structuredClone(state.military?.ledger[uid] ?? []),
   };
+}
+
+/** Cancel only an owned order whose authoritative admission cutoff is still open. */
+export function cancelFleet(
+  current: Campaign,
+  raw: unknown,
+  uid: string,
+  now: number,
+): Campaign {
+  if (!raw || typeof raw !== "object" || Array.isArray(raw))
+    throw new Error("invalid");
+  const a = raw as Record<string, unknown>;
+  const keys = ["kind", "expectedRevision", "orderId"];
+  if (
+    a.kind !== "fleet.cancel" ||
+    Object.keys(a).length !== keys.length ||
+    Object.keys(a).some((k) => !keys.includes(k)) ||
+    typeof a.orderId !== "string"
+  )
+    throw new Error("invalid");
+  if (a.expectedRevision !== current.revision) throw new Error("conflict");
+  if (!current.seats.some((s) => s.uid === uid)) throw new Error("permission");
+  if (
+    current.phase !== "active" ||
+    current.schemaVersion !== 2 ||
+    !current.economy
+  )
+    throw new Error("fleet-unavailable");
+  if (current.pausedAt != null) throw new Error("paused");
+  const order = current.military?.orders.find(
+    (o) => o.uid === uid && o.id === a.orderId,
+  );
+  if (!order) throw new Error("fleet-order-unavailable");
+  // A delayed scheduler does not extend the cancellation window. At the exact
+  // cutoff futureTick advances past this order, even before settlement runs.
+  if (order.effectiveTick < futureTick(current, now))
+    throw new Error("fleet-order-closed");
+  const next = structuredClone(current);
+  if (!next.military) throw new Error("fleet-order-unavailable");
+  next.military.orders = next.military.orders.filter(
+    (o) => !(o.uid === uid && o.id === a.orderId),
+  );
+  next.revision++;
+  return next;
 }

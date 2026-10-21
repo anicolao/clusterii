@@ -26,6 +26,7 @@
     fleetFrame,
     cargoFrame,
     reorganizationFrame,
+    cancellationFrame,
     observationFrame,
     observedTarget,
     legacyProductionView,
@@ -220,6 +221,7 @@
             oncargo={() => {}}
             onsplit={() => {}}
             onmerge={() => {}}
+            oncancel={() => {}}
             onclose={() => {}}
             onretry={() => {}}
           />
@@ -248,6 +250,7 @@
             oncargo={() => {}}
             onsplit={() => {}}
             onmerge={() => {}}
+            oncancel={() => {}}
             onclose={() => {}}
             onretry={() => {}}
           />
@@ -272,10 +275,32 @@
               oncargo={() => {}}
               onsplit={() => {}}
               onmerge={() => {}}
+              oncancel={() => {}}
               onclose={() => {}}
             />
           </div>
         {/each}{/each}
+      <h2>Fleet cancellation · reservations released</h2>
+      {#each [0, 2400] as time}{@const sample = cancellationFrame(time)}
+        <div
+          style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <SystemFleets
+            view={sample}
+            starId={sample.own.home!}
+            message={time
+              ? "Fleet order cancelled. Reservations released; no forces moved."
+              : ""}
+            onform={() => {}}
+            ondisband={() => {}}
+            oncargo={() => {}}
+            onsplit={() => {}}
+            onmerge={() => {}}
+            oncancel={() => {}}
+            onclose={() => {}}
+          />
+        </div>
+      {/each}
       <h2>Stellar observations · entitled report states</h2>
       {#each [0, 1200, 3400] as time}<div
           style="max-width:420px;padding:20px;border:1px solid #42616d;margin-bottom:20px"

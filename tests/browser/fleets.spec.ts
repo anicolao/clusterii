@@ -161,10 +161,17 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
         .getByRole("status")
         .filter({ hasText: "Fleet formed" }),
     ).toBeVisible();
-    await panel.getByRole("button", { name: /^Fleet [0-9]+$/ }).click();
-    await expect(panel.getByRole("heading", { level: 3 })).toContainText(
-      "Fleet",
-    );
+    const formedFleet = panel.getByRole("button", { name: /^Fleet [0-9]+$/ });
+    const formedFleetName = await formedFleet.innerText();
+    await formedFleet.click();
+    const formedHeading = panel.getByRole("heading", {
+      level: 3,
+      name: formedFleetName,
+      exact: true,
+    });
+    await expect(formedHeading).toBeVisible();
+    await expect(formedFleet).toHaveAttribute("aria-pressed", "true");
+    await expect(formedFleet).toBeFocused();
     for (const [label, width, height] of [
       ["phone", 393, 852],
       ["desktop", 1440, 1000],

@@ -1,3 +1,4 @@
+import { cancelFleet } from "@shared/fleets";
 import {orderFleet} from "@shared/fleets";
 import { acquireObservations, drawRange } from "@shared/observations";
 import { produce } from "@shared/production";
@@ -76,7 +77,10 @@ const splitChild=Object.keys(splitDone.military!.fleets).find(id=>!cargoSource.m
 const mergeQueued=orderFleet(splitDone,{kind:"fleet.merge",expectedRevision:splitDone.revision,fleetId:splitChild,targetFleetId:Object.keys(cargoSource.military!.fleets)[0]},"scheduled-0","merge-demo",splitDone.economy!.nextTickAt-1);
 const mergeResult=produce(mergeQueued,mergeQueued.economy!);
 export function reorganizationFrame(time:number, merge=false){return campaignView(merge ? time>=3200?{...mergeResult.campaign,economy:mergeResult.economy}:time>=2200?mergeQueued:splitDone : time>=3200?splitDone:time>=2200?splitQueued:cargoSource,"scheduled-0");}
+const cancellationDone=cancelFleet(fleetQueued,{kind:"fleet.cancel",expectedRevision:fleetQueued.revision,orderId:"fleet-demo"},"scheduled-0",fleetQueued.economy!.nextTickAt-1);
+export function cancellationFrame(time:number){return campaignView(time>=2200?cancellationDone:fleetQueued,"scheduled-0");}
 export const scenarios = [
+ {id:"fleet-cancel",label:"Fleet cancellation: pending → reconnect → released",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("fleet.cancel",{status:"accepted"})}]},
  ...(["split","merge"] as const).map(kind=>({id:kind,label:`Fleet ${kind}: pending → reconnect → accepted → complete`,frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback(`fleet.${kind}`,{status:"accepted"})},{at:3200,feedback:{message:kind === "split" ? "Fleet split. Both complements remain stationed here." : "Fleets merged. The receiving identity is preserved.",error:"",remedy:"none"}}]})),
  {id:"cargo",label:"Fleet cargo: pending → reconnect → reserved → loaded",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("fleet.load",{status:"accepted"})},{at:3200,feedback:{message:"Infantry loaded. Forces remain conserved.",error:"",remedy:"none"}}]},
  {id:'fleet',label:'Fleet: pending → reconnect → reserved → formed',frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:'',error:campaignNetworkMessage,remedy:'network'}},{at:2200,feedback:campaignFeedback('fleet.form',{status:'accepted'})},{at:3200,feedback:{message:'Fleet formed. Forces remain conserved.',error:'',remedy:'none'}}]},
