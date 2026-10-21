@@ -1,0 +1,67 @@
+[
+  {
+    "image": "002-open-roster-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/002-open-roster-1-maintenance-host.png",
+    "actualSha256": "6cc347535cb194d47f11fa61e1b3359277610d780453e9c19ccbb9918331da59"
+  },
+  {
+    "image": "002-open-roster-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/002-open-roster-2-waiting-envoy.png",
+    "actualSha256": "28bee18085719e6b1c42a0112797434e33959b5a36ff1216d41ff51a2fc43bfa"
+  },
+  {
+    "image": "003-keyboard-controls-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+    "actualSha256": "8ea66df8dec746e90bffe21943b45468ccb4ebf94ea0b17ef3fbaa31e97fab56"
+  },
+  {
+    "image": "004-pause-admission-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/004-pause-admission-1-maintenance-host.png",
+    "actualSha256": "d93a73580909c6f39ce88f6e8b567a70ca755fbb0a82dea2cae082a627180e75"
+  },
+  {
+    "image": "004-pause-admission-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+    "actualSha256": "e8d61226223ccbff425be853dba34519fa717b4d2d5a1cd728c88fa8036d5803"
+  },
+  {
+    "image": "005-recover-pause-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/005-recover-pause-1-maintenance-host.png",
+    "actualSha256": "31e84aeb03e609e418e67eaa2c6fad65dc4c0ec637b03f5ce16cbac6b45e1c10"
+  },
+  {
+    "image": "005-recover-pause-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+    "actualSha256": "e8d61226223ccbff425be853dba34519fa717b4d2d5a1cd728c88fa8036d5803"
+  },
+  {
+    "image": "006-reopen-controls-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+    "actualSha256": "8578da48f1d6c71eae5f77834ce63207fb96554059e359ba95360753e64a238d"
+  },
+  {
+    "image": "007-resume-admission-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/007-resume-admission-1-maintenance-host.png",
+    "actualSha256": "1425628776976012d0c1aea41687c2b7677eae6b2bc59db75416640792d8f21a"
+  },
+  {
+    "image": "007-resume-admission-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+    "actualSha256": "28bee18085719e6b1c42a0112797434e33959b5a36ff1216d41ff51a2fc43bfa"
+  },
+  {
+    "image": "008-return-focus-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/008-return-focus-1-maintenance-host.png",
+    "actualSha256": "804a9dc588baf5fe9f4097cc662d7b56b25c9557193b8f4b3b069085ac6a96a8"
+  },
+  {
+    "image": "009-admit-waiting-envoy-1-maintenance-host.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+    "actualSha256": "9e7731f5177f2147650a2972216e3603b489c7b52f9a048ff16de70626029914"
+  },
+  {
+    "image": "009-admit-waiting-envoy-2-waiting-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+    "actualSha256": "9732d447d70d83100efbb2111421d9d4afdeba25ae842bd226a6d5e567806dbd"
+  }
+]
