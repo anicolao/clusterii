@@ -6,10 +6,42 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
   if (surface === "game" && document.documentElement.scrollHeight > innerHeight)
     failures.push("Game document scrolls vertically");
   const rect = (e: Element) => e.getBoundingClientRect();
+  const painted = (e: HTMLElement) => {
+    const r = rect(e);
+    const box = {
+      left: Math.max(0, r.left),
+      top: Math.max(0, r.top),
+      right: Math.min(innerWidth, r.right),
+      bottom: Math.min(innerHeight, r.bottom),
+    };
+    for (let parent = e.parentElement; parent; parent = parent.parentElement) {
+      const style = getComputedStyle(parent),
+        clip = rect(parent);
+      if (/(auto|scroll|hidden|clip)/.test(style.overflowX)) {
+        box.left = Math.max(box.left, clip.left + parent.clientLeft);
+        box.right = Math.min(
+          box.right,
+          clip.left + parent.clientLeft + parent.clientWidth,
+        );
+      }
+      if (/(auto|scroll|hidden|clip)/.test(style.overflowY)) {
+        box.top = Math.max(box.top, clip.top + parent.clientTop);
+        box.bottom = Math.min(
+          box.bottom,
+          clip.top + parent.clientTop + parent.clientHeight,
+        );
+      }
+    }
+    return box;
+  };
   const visible = (e: Element) => {
     const b = rect(e),
       s = getComputedStyle(e);
     return (
+      e.checkVisibility({
+        visibilityProperty: true,
+        contentVisibilityAuto: true,
+      }) &&
       b.width > 0 &&
       b.height > 0 &&
       s.visibility === "visible" &&
@@ -22,7 +54,7 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
     e.tagName;
   const targets = [
     ...document.querySelectorAll<HTMLElement>(
-      'button,a[href],input:not([type="hidden"]),select,textarea,[role="button"]',
+      'button,summary,a[href],input:not([type="hidden"]),select,textarea,[role="button"]',
     ),
   ].filter(visible);
   const audited: HTMLElement[] = [];
@@ -102,8 +134,8 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
       const a = audited[i],
         b = audited[j];
       if (a.contains(b) || b.contains(a)) continue;
-      const x = rect(a),
-        y = rect(b),
+      const x = painted(a),
+        y = painted(b),
         width = Math.min(x.right, y.right) - Math.max(x.left, y.left),
         height = Math.min(x.bottom, y.bottom) - Math.max(x.top, y.top);
       if (width > 1 && height > 1)

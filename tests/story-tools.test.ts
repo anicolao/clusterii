@@ -90,3 +90,50 @@ test("bounded scroll is allowed without moving the primary action or document", 
     },
   );
 });
+
+test("closed disclosure contents are inactive despite retained layout, but opened controls are audited", async () => {
+  await fixture(
+    '<details open><summary style="height:48px">Development controls</summary><button style="width:20px">Invalid target</button></details>',
+    async (page) => {
+      const retained = await page.evaluate(() => {
+        const control = document.querySelector("button")!;
+        control.getBoundingClientRect();
+        document.querySelector("details")!.open = false;
+        return {
+          width: control.getBoundingClientRect().width,
+          visible: control.checkVisibility({
+            visibilityProperty: true,
+            contentVisibilityAuto: true,
+          }),
+        };
+      });
+      expect(retained.width).toBe(20);
+      expect(retained.visible).toBe(false);
+      await page.evaluate(assertScreenFit, { surface: "game" as const });
+      await page.locator("summary").click();
+      await expect(
+        page.evaluate(assertScreenFit, { surface: "game" as const }),
+      ).rejects.toThrow("under 44px");
+    },
+  );
+});
+test("disclosure summaries are audited as real keyboard controls", async () => {
+  await fixture(
+    '<details><summary style="width:20px;height:20px">Open</summary><button>Hidden</button></details>',
+    async (page) => {
+      await expect(
+        page.evaluate(assertScreenFit, { surface: "game" as const }),
+      ).rejects.toThrow("under 44px");
+    },
+  );
+});
+
+test("overlap compares painted portions inside a bounded reading panel", async () => {
+  await fixture(
+    '<div style="height:60px;overflow:auto"><button style="height:80px">Record</button></div><button>Latest</button>',
+    async (page) => {
+      await page.evaluate(assertScreenFit, { surface: "game" as const });
+      expect(await page.locator("div").evaluate((e) => e.scrollTop)).toBe(0);
+    },
+  );
+});
