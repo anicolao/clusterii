@@ -351,6 +351,32 @@ test("return briefing lab preserves period and visit outcomes with reduced motio
     expect(widths.every(width => width >= 8)).toBe(true);
     await standard.screenshot({path: `test-results/briefing-mixed-${label}.png`});
   }
+  await seek.fill("5300");
+  const legacyMessages=standard.getByRole("region",{name:"Messages",exact:true});
+  await expect(legacyMessages).toContainText("incoming activity is not inferred");
+  await expect(legacyMessages).not.toContainText("Received from");
+  await expect(reduced.getByRole("region",{name:"Messages",exact:true})).toHaveText(await legacyMessages.innerText(),{useInnerText:true});
+  for(const [label,width,height] of [["phone",393,852],["desktop",1440,1000],["short",1280,600],["4k",3840,2160]] as const) {
+    await page.setViewportSize({width,height});await legacyMessages.scrollIntoViewIfNeeded();
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await legacyMessages.screenshot({path:`test-results/briefing-legacy-identity-${label}.png`});
+  }
   await page.getByRole("button", { name: "Reset", exact: true }).click();
   await expect(seek).toHaveValue("0");
+});
+
+test("co-faction conversation gallery labels the actual commander and exposes only their membership controls",async({page},info)=>{
+ await page.goto("./gallery/");
+ const specimen=page.getByRole("region",{name:"Eight-seat commander identity",exact:true});
+ const own=specimen.locator("li").filter({hasText:"My own reply remains mine."});
+ const other=specimen.locator("li").filter({hasText:"Another commander with the same faction."});
+ await expect(own.locator("strong")).toHaveText("You");await expect(other.locator("strong")).toHaveText("Envoy 0");
+ await specimen.getByRole("button",{name:"Participants",exact:true}).click();
+ await expect(specimen.getByRole("button",{name:"Close conversation",exact:true})).toBeVisible();
+ await expect(specimen.getByRole("button",{name:"Leave conversation",exact:true})).toHaveCount(0);
+ for(const [label,width,height] of [["phone",393,852],["desktop",1440,1000],["short",1280,600],["4k",3840,2160]] as const) {
+  await page.setViewportSize({width,height});await specimen.scrollIntoViewIfNeeded();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  await specimen.screenshot({path:info.outputPath(`identity-membership-${label}.png`)});
+ }
 });

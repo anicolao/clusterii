@@ -1,3 +1,4 @@
+import { commanderSeat } from "../src/lib/commander-seat";
 import { expect, test } from "bun:test";
 import { mixedBriefing } from "../src/routes/dev/animations/briefing-scenario";
 import {
@@ -13,22 +14,24 @@ import { converse } from "../shared/conversations";
 import { rules } from "../shared/rules";
 import { produce } from "../shared/production";
 import { returnBriefing } from "../src/lib/return-briefing";
-function fixture() {
+function fixture(capacity: 4 | 8 = 4) {
   let c = createCampaign(
     "briefing",
     {
       kind: "campaign.create",
       expectedRevision: 0,
       name: "Return journey",
-      capacity: 4,
+      capacity,
       mode: "mock",
       development: true,
     },
     "b".repeat(64),
     0,
   );
-  for (const [i, faction] of (
-    ["heliac", "pelagic", "vesper", "dracon"] as const
+  const factions = ["heliac", "pelagic", "vesper", "dracon"] as const;
+  for (const [i, faction] of Array.from(
+    { length: capacity },
+    (_, i) => factions[i % 4],
   ).entries())
     c = joinOrLeave(
       c,
@@ -139,7 +142,9 @@ test("briefing requires an exact baseline, deduplicates production and reports l
   expect(result.events.find((e) => e.category === "Control")!.title).toContain(
     "orbit lost",
   );
-  expect(result.events.find((event) => event.category === "Control")!.urgent).toBe(true);
+  expect(
+    result.events.find((event) => event.category === "Control")!.urgent,
+  ).toBe(true);
   expect(JSON.stringify(result.events)).not.toContain('"u1"');
 });
 test("briefing includes only received message metadata and does not mark messages read", () => {
@@ -255,14 +260,102 @@ test("briefing retains construction completion once and excludes outcomes before
   expect(returnBriefing(campaignView(c, "u0"), records).events).toEqual([]);
 });
 
-
 test("illustrated briefing derives mixed control, arrivals, construction and received-message reports from production reducers", () => {
   const period = mixedBriefing(fixture());
   const summary = returnBriefing(period.snapshot, period.records);
   expect(summary.complete).toBe(true);
-  expect(new Set(summary.events.map(event => event.category))).toEqual(new Set(["Control", "Arrivals and losses", "Economy", "Messages"]));
+  expect(new Set(summary.events.map((event) => event.category))).toEqual(
+    new Set(["Control", "Arrivals and losses", "Economy", "Messages"]),
+  );
   expect(period.snapshot.construction!.orders).toHaveLength(1);
-  expect(summary.events.some(event => event.title.includes("market completed"))).toBe(true);
-  expect(summary.events.find(event => event.category === "Messages")!.authorSeat).toBe(1);
-  expect(JSON.stringify(summary.events)).not.toContain("Let us discuss the border");
+  expect(
+    summary.events.some((event) => event.title.includes("market completed")),
+  ).toBe(true);
+  expect(
+    summary.events.find((event) => event.category === "Messages")!.authorSeat,
+  ).toBe(1);
+  expect(JSON.stringify(summary.events)).not.toContain(
+    "Let us discuss the border",
+  );
+});
+
+test("eight-seat briefings distinguish co-faction authors and safely label legacy identity", () => {
+  let c = fixture(8);
+  const records = [campaignView(c, "u4")];
+  const apply = (uid: string, id: string, action: Record<string, unknown>) => {
+    c = converse(c, { expectedRevision: c.revision, ...action }, uid, id, 1000);
+    records.push(campaignView(c, "u4"));
+  };
+  apply("u0", "co-faction-room", {
+    kind: "conversation.create",
+    title: "Co-faction talks",
+  });
+  const roomId = "room:co-faction-room";
+  apply("u0", "invite-fourth", {
+    kind: "conversation.invite",
+    roomId,
+    roomRevision: c.diplomacy!.rooms[roomId].revision,
+    seat: 4,
+    scope: "future",
+  });
+  apply("u4", "accept-fourth", {
+    kind: "conversation.accept",
+    roomId,
+    roomRevision: c.diplomacy!.rooms[roomId].revision,
+  });
+  apply("u0", "other-commander-message", {
+    kind: "conversation.send",
+    roomId,
+    keyVersion: 2,
+    body: "Other commander confidential text",
+  });
+  apply("u4", "own-message", {
+    kind: "conversation.send",
+    roomId,
+    keyVersion: 2,
+    body: "My confidential text",
+  });
+  const snapshot = campaignView(c, "u4"),
+    before = structuredClone(c);
+  expect(snapshot.own.seat).toBe(4);
+  expect(snapshot.roster[0].faction).toBe(snapshot.own.faction);
+  const summary = returnBriefing(snapshot, records),
+    messages = summary.events.filter((event) => event.category === "Messages");
+  expect(summary.complete).toBe(true);
+  expect(messages).toHaveLength(1);
+  expect(messages[0]).toMatchObject({
+    id: "message:other-commander-message",
+    authorSeat: 0,
+  });
+  expect(messages[0].detail).toContain("Received from Envoy 0");
+  expect(JSON.stringify(summary)).not.toContain("confidential text");
+  expect(c).toEqual(before);
+  const legacy = structuredClone(records);
+  for (const record of legacy) delete (record.own as { seat?: number }).seat;
+  const historical = returnBriefing(
+    legacy[legacy.length - 1],
+    legacy,
+  ).events.filter((event) => event.category === "Messages");
+  expect(historical).toHaveLength(2);
+  expect(historical.map((event) => event.authorSeat)).toEqual([0, 4]);
+  expect(
+    historical.every((event) =>
+      event.detail.includes("incoming activity is not inferred"),
+    ),
+  ).toBe(true);
+  expect(
+    historical.some((event) => event.detail.includes("Received from")),
+  ).toBe(false);
+  expect(JSON.stringify(historical)).not.toContain("confidential text");
+});
+
+test("commander identity rejects missing or invalid seat indices without faction inference", () => {
+  const view = campaignView(fixture(8), "u4");
+  expect(commanderSeat(view)).toBe(4);
+  for (const seat of [undefined, -1, 8, 0.5, NaN]) {
+    const old = structuredClone(view);
+    (old.own as { seat?: number }).seat = seat;
+    expect(commanderSeat(old)).toBeNull();
+  }
+  expect(commanderSeat(undefined)).toBeNull();
 });

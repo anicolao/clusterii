@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { commanderSeat } from "$lib/commander-seat";
   import { tick } from "svelte";
   import type { CampaignView } from "@shared/campaign";
   import {
@@ -73,9 +74,7 @@
   } = $props();
   const rooms = $derived(view.conversations ?? []),
     room = $derived(rooms.find((r) => r.id === selected));
-  const own = $derived(
-    view.roster.findIndex((s) => s.faction === view.own.faction),
-  );
+  const own = $derived(commanderSeat(view) ?? -2);
   const other = $derived(room?.members.find((s) => s !== own) ?? own);
   const disabled = $derived(
     busy || pending || view.pausedAt != null || view.phase !== "active",
@@ -431,7 +430,12 @@
                 </li>{/each}
             </ul>{/if}
         {/if}
-        {#if !room.closed}<ActionButton
+        {#if own < 0}<p>
+            This older view does not identify your commander seat. Message
+            authors retain their recorded names; membership controls require a
+            newer authoritative view.
+          </p>{/if}
+        {#if !room.closed && own >= 0}<ActionButton
             class="secondary"
             {disabled}
             onclick={() =>

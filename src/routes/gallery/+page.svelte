@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { identityConversation } from "../dev/animations/identity-scenario";
   import CreditOffers from "$lib/components/CreditOffers.svelte";
   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
@@ -324,6 +325,20 @@
             onreplaceDraft={() => {}}
           />
         </div>{/each}
+      <h2>Commander identity · distinct seats in the same faction</h2>
+      <section
+        aria-label="Eight-seat commander identity"
+        style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
+      >
+        <Conversations
+          {...identityConversation}
+          oncommand={() => {}}
+          onearlier={() => {}}
+          onlatest={() => {}}
+          onretryHistory={() => {}}
+          onclose={() => {}}
+        />
+      </section>
       <h2>Credit offers · exact terms and atomic settlement</h2>
       {#each [0, 500, 1200, 2200, 3200, 4800] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
@@ -337,7 +352,7 @@
           />
         </div>{/each}
       <h2>Return briefing · recovery and visit acknowledgement</h2>
-      {#each [0, 1200, 1600, 1800, 2200, 3200, 3800, 4200, 4800] as time}<div
+      {#each [0, 1200, 1600, 1800, 2200, 3200, 3800, 4200, 4800, 5300] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
         >
           <ReturnBriefing
