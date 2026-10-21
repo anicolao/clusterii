@@ -1,4 +1,5 @@
 import { type Galaxy, generateGalaxy } from "./galaxy.js";
+import { type Economy, initialEconomy } from "./production.js";
 import { type Portrait, type Profile, portraits } from "./profile.js";
 import { type FactionId, faction, rules } from "./rules.js";
 export interface Seat {
@@ -28,7 +29,8 @@ export interface Campaign {
   capacity: number;
   revision: number;
   rulesetVersion: string;
-  schemaVersion: 1;
+  schemaVersion: 1 | 2;
+  economy?: Economy;
   commandProtocolVersion: 1;
   development: true;
   mode: "mock" | "real";
@@ -125,7 +127,7 @@ export function createCampaign(
     capacity: action.capacity,
     revision: 1,
     rulesetVersion: rules.id,
-    schemaVersion: 1,
+    schemaVersion: 2,
     commandProtocolVersion: 1,
     development: true,
     mode: action.mode,
@@ -219,6 +221,14 @@ export function maintainCampaign(
   return {
     ...current,
     pausedAt: null,
+    ...(current.economy
+      ? {
+          economy: {
+            ...current.economy,
+            nextTickAt: current.economy.nextTickAt + delay,
+          },
+        }
+      : {}),
     revision: current.revision + 1,
     startAt:
       current.phase === "scheduled" && current.startAt != null
@@ -306,7 +316,7 @@ export function startCampaign(current: Campaign, now: number): Campaign {
     };
     empires[seat.uid] = { creditsMilli: rules.startingAssets.credits * 1000 };
   }
-  return {
+  const active: Campaign = {
     ...current,
     seats,
     systems,
@@ -314,6 +324,12 @@ export function startCampaign(current: Campaign, now: number): Campaign {
     phase: "active",
     revision: current.revision + 1,
   };
+  if (active.schemaVersion === 2)
+    active.economy = initialEconomy(
+      active,
+      current.startAt + rules.tickSeconds * 1000,
+    );
+  return active;
 }
 export function campaignDirectory(state: Campaign) {
   return {
@@ -329,6 +345,10 @@ export function campaignDirectory(state: Campaign) {
     mode: state.mode,
     encryptionEpoch: state.encryptionEpoch,
     mockExposed: state.mockExposed,
+    productionEnabled: state.schemaVersion === 2,
+    production: state.economy
+      ? { tick: state.economy.tick, nextTickAt: state.economy.nextTickAt }
+      : null,
     migration: null as null | {
       state: string;
       verified: number;
@@ -349,6 +369,12 @@ export function campaignView(state: Campaign, uid: string) {
     stars: state.galaxy.stars,
     own: { faction: own.faction, home: own.home, profile: own.profile },
     empire: state.empires[uid] ?? null,
+    economy: state.economy
+      ? {
+          research: state.economy.research[uid],
+          ledger: state.economy.ledger[uid] ?? null,
+        }
+      : null,
     holdings: Object.entries(state.systems)
       .filter(([, system]) => system.orbit === uid || system.surface === uid)
       .map(([starId, system]) => ({

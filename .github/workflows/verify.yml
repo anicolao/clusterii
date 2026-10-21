@@ -29,5 +29,6 @@ jobs:
         with:
           name: browser-evidence
           path: |
+            firestore-debug.log
             test-results/
             tests/browser/journey.spec.ts-snapshots/

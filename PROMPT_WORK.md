@@ -60,3 +60,11 @@ Prompt 31 | ade16b0cb378ed963235cfa4366bf69e7d5f63d2ca8ea6716648ff92d986c042 | C
 Prompt 31 | ade16b0cb378ed963235cfa4366bf69e7d5f63d2ca8ea6716648ff92d986c042 | Reconcile published session preview links, green scheduler CI and the 20:16 scoped supervisory checkpoint.
 
 Prompt 31 | ade16b0cb378ed963235cfa4366bf69e7d5f63d2ca8ea6716648ff92d986c042 | Continue Prompt 30 with authorized encrypted history paging, stable recovery, live-key evidence and bounded four-size instruments.
+
+Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Fence production cleanup with conditional deletion, validate live-key recovery and timed UI, and deploy consumers before the schema-2 producer.
+
+Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Retain transaction timing and emulator diagnostics for the Linux lost-ack timeout without weakening recovery assertions.
+
+Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Read the production boundary and lease in one transaction request and retain the reproduced full-cohort recovery evidence.
+
+Prompt 32 | 6a7827464f2c8df2feaa226d0ca086b1a7df9c6d23f4f8610dddb7753c59ec18 | Await faulted Firestore operations before exact error assertions and retain full-cohort plus renewed live-KMS recovery evidence.

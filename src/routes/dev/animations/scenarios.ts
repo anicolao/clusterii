@@ -1,3 +1,4 @@
+import { produce } from "@shared/production";
 import {sessionEndedMessage} from "$lib/session-feedback";
 import { verifyReceipt } from "@shared/command-receipt";
 import { reduceProfile, type Receipt } from '@shared/profile';
@@ -42,7 +43,12 @@ export function scheduledFrame(time:number) {
   return {game:campaignDirectory(time>=3200?startCampaign(fullRoster,clock):fullRoster),clock};
 }
 export const historyRecords = [campaignView(migrationSource,"lab"), campaignView(seated,"lab")];
+const productionStart = startCampaign(fullRoster,fullRoster.startAt!);
+const firstProduction = produce(productionStart,productionStart.economy!);
+export function productionFrame(time:number) {return {view:campaignView(time>=2200?{...firstProduction.campaign,economy:firstProduction.economy}:productionStart,"scheduled-0"),clock:productionStart.economy!.nextTickAt-1000+time};}
+export const legacyProductionView = campaignView({...productionStart,schemaVersion:1,economy:undefined},"scheduled-0");
 export const scenarios = [
+ {id:"production",label:"Production: due → confirmed ledger",frames:[{at:0,feedback:campaignPending},{at:2200,feedback:{message:"Production confirmed.",error:"",remedy:"none"}}]},
  {id:"history-recovery",label:"History: loading → reconnect → recovered",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:"History could not be recovered. Retry keeps your place.",remedy:"network"}},{at:2200,feedback:campaignPending},{at:3200,feedback:{message:"Campaign records recovered.",error:"",remedy:"none"}}]},
  {id:"session-ended",label:"Account: ending → signed out",frames:[{at:0,feedback:{message:"Keep this window open while your sessions end.",error:"",remedy:"none"}},{at:1200,feedback:{message:sessionEndedMessage,error:"",remedy:"none"}}]},
  {id:'campaign-start',label:'Scheduled start: delayed → assigned',frames:[{at:0,feedback:campaignPending}]},

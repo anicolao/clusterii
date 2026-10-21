@@ -1,0 +1,32 @@
+{
+  "unit": {
+    "passed": 20,
+    "assertions": 321
+  },
+  "service": {
+    "providers": [
+      "mock",
+      "real AES-256-GCM with live Cloud KMS"
+    ],
+    "passed": 3,
+    "assertions": 147,
+    "log": "/tmp/cluster-production-live-fenced.log"
+  },
+  "leaseCleanupRace": {
+    "passed": 1,
+    "assertions": 2,
+    "log": "/tmp/cluster-production-cleanup.log"
+  },
+  "browser": {
+    "affectedPassed": 13,
+    "productionPassed": 1,
+    "productionMinutes": 18.2,
+    "logs": [
+      "/tmp/cluster-production-short-tests.log",
+      "/tmp/cluster-production-browser.log"
+    ]
+  },
+  "types": "pass",
+  "lint": "pass",
+  "scope": "Actual timed ordinary UI roster/start/production; emulator Scheduler delivery. Reviewer sampled phone/short captures. Hosted Google, hosted recovery, full independent acceptance and exact-head CI remain separate gates."
+}

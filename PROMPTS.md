@@ -342,3 +342,10 @@ Reviewer continuation checkpoint: the remaining queued historical handoffs (17:5
 Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and the 2026-10-20 20:06 checkpoint in meta-prompts.md.
 
 Reviewer CI finding: PR #13 at 76ec04b failed verification run 39517211446. All four maintenance viewport tests fail because getByRole('status') now matches both CampaignStartStatus and the acknowledgement notice; 32 other browser tests pass and 5 live tests skip. Correct the maintenance test to target the specific acknowledged pause/resume status (prefer meaningful accessible naming/scoping or text-filtered status), preserving assertions that the actual command was accepted. Do not use first()/last() or remove the start-status live region to hide ambiguity. Check other affected broad status selectors, rerun the maintenance cohort, fix #13 itself and propagate to session-revocation, then let full CI validate. Log this attributed reviewer finding and carry latest main meta-prompts.md into the related commit/push. Continue healthy session work; no merge.
+
+
+## Prompt 32: Production Compatibility
+
+Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and the 2026-10-20 20:36 checkpoint in meta-prompts.md.
+
+Reviewer rollout direction within the existing implementation authorization: preserve existing development campaigns on their recorded behavior; implement production for newly created campaigns with an explicit stored rules/schema capability boundary. Do not reconstruct unrecorded historical pause intervals or retroactively award production. Document the compatibility policy and show a clear explanation when an older campaign lacks production; retain its history/access and allow normal creation of new development campaigns. This is a conservative reviewer implementation choice, not new human approval of game rules. Continue the production tracer bullet and both-mode authorization/repeat-safe tick/catch-up/ledger verification; a future explicit migration can be reviewed separately. Log this attributed instruction and latest meta-prompts.md, commit/push, and never merge.

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { tick, onDestroy } from "svelte";
+  import CampaignEconomy from "../CampaignEconomy.svelte";
   import CampaignHistory from "../CampaignHistory.svelte";
   import {
     HistoryEpochChanged,
@@ -46,6 +47,7 @@
     busy?: boolean;
     pending?: boolean;
   } = $props();
+  let economy = $state(false);
   let history = $state(false);
   let records = $state<CampaignView[]>([]);
   let cursor = $state<HistoryCursor | null>(null);
@@ -135,13 +137,16 @@
   );
   let query = $state("");
   let listing = $state(false);
-  async function openPanel(kind: "roster" | "systems" | "history") {
+  async function openPanel(kind: "roster" | "systems" | "history" | "economy") {
+    economy = kind === "economy";
     history = kind === "history";
     if (history && !records.length) void readHistory();
     roster = kind === "roster";
     listing = kind === "systems";
     await tick();
-    if (history) document.querySelector<HTMLElement>(".history-panel")?.focus();
+    if (economy) document.querySelector<HTMLElement>(".economy-panel")?.focus();
+    else if (history)
+      document.querySelector<HTMLElement>(".history-panel")?.focus();
     else if (listing) document.getElementById("system-search")?.focus();
     else document.querySelector<HTMLElement>(".roster-panel")?.focus();
   }
@@ -150,10 +155,21 @@
     await tick();
     document.querySelector<HTMLElement>('[data-focus="roster"]')?.focus();
   }
+  async function closeEconomy() {
+    economy = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="economy"]')?.focus();
+  }
   function panelKeys(event: KeyboardEvent) {
     if (event.key === "Escape") {
       event.preventDefault();
-      void (history ? closeHistory() : roster ? closeRoster() : closeList());
+      void (economy
+        ? closeEconomy()
+        : history
+          ? closeHistory()
+          : roster
+            ? closeRoster()
+            : closeList());
       return;
     }
     if (event.key !== "Tab") return;
@@ -196,7 +212,7 @@
 </script>
 
 <div class="galaxy-surface">
-  <header class="command-rail" inert={roster || listing || history}>
+  <header class="command-rail" inert={roster || listing || history || economy}>
     <div>
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
       <span
@@ -221,7 +237,10 @@
       aria-expanded={roster}>Roster</ActionButton
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
   </header>
-  {#if !roster}<div class="acknowledgement" inert={listing || history}>
+  {#if !roster}<div
+      class="acknowledgement"
+      inert={listing || history || economy}
+    >
       <Feedback {message} {error} />{#if onretry}<ActionButton
           disabled={busy}
           class="secondary"
@@ -231,7 +250,7 @@
     </div>{/if}
   <div
     class="chart"
-    inert={roster || listing || history}
+    inert={roster || listing || history || economy}
     aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
   >
     <Canvas renderMode="on-demand"
@@ -246,7 +265,7 @@
     >
   </div>
   <aside
-    inert={roster || listing || history}
+    inert={roster || listing || history || economy}
     class="system-inspector"
     aria-label="Selected system"
   >
@@ -304,19 +323,37 @@
           </div>{/if}
       </dl>
     </div>
-    <ActionButton
-      class="secondary"
-      onclick={() => openPanel("systems")}
-      data-focus="systems-list"
-      aria-expanded={listing}>Systems list</ActionButton
-    >
-    {#if loadHistory}<ActionButton
+    <div class="system-actions">
+      <ActionButton
         class="secondary"
-        data-focus="history"
-        aria-expanded={history}
-        onclick={() => openPanel("history")}>History</ActionButton
-      >{/if}
+        onclick={() => openPanel("systems")}
+        data-focus="systems-list"
+        aria-expanded={listing}>Systems list</ActionButton
+      >
+      {#if loadHistory}<ActionButton
+          class="secondary"
+          data-focus="history"
+          aria-expanded={history}
+          onclick={() => openPanel("history")}>History</ActionButton
+        >{/if}
+      <ActionButton
+        class="secondary"
+        data-focus="economy"
+        aria-expanded={economy}
+        onclick={() => openPanel("economy")}>Economy</ActionButton
+      >
+    </div>
   </aside>
+  {#if economy}<div
+      class="history-panel economy-panel"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      aria-label="Empire economy panel"
+      onkeydown={panelKeys}
+    >
+      <CampaignEconomy {view} onclose={closeEconomy} />
+    </div>{/if}
   {#if history}<div
       class="history-panel"
       role="dialog"
@@ -505,6 +542,10 @@
     background: #07131c;
     padding: 12px 0;
   }
+  .system-actions {
+    display: flex;
+    flex-direction: column;
+  }
   .system-details:focus-visible {
     outline: 2px solid #91dcec;
     outline-offset: 2px;
@@ -529,7 +570,7 @@
     padding: 24px;
     box-shadow: 0 10px 36px #0008;
   }
-  .system-inspector > :global(button) {
+  .system-actions :global(button) {
     background: linear-gradient(#163b4a, #0b2431);
     border-color: #8bd8e7;
     color: #effdff;
@@ -661,12 +702,22 @@
     h2 {
       font-size: 48px;
     }
-    .system-inspector > :global(button) {
+    .system-actions :global(button) {
       font-size: 24px;
       min-height: 68px;
     }
   }
   @media (max-width: 700px) {
+    .system-actions {
+      flex-direction: row;
+      gap: 8px;
+    }
+    .system-actions :global(button) {
+      flex: 1;
+      min-width: 0;
+      padding: 8px;
+      font-size: 13px;
+    }
     .galaxy-surface {
       height: 100svh;
       min-height: 0;
@@ -737,7 +788,7 @@
     .system-inspector p {
       margin: 6px 0;
     }
-    .system-inspector > :global(button) {
+    .system-actions :global(button) {
       background: linear-gradient(#163b4a, #0b2431);
       border-color: #8bd8e7;
       color: #effdff;
