@@ -24,6 +24,7 @@
     constructionFrame,
     focusFrame,
     fleetFrame,
+    cargoFrame,
     observationFrame,
     observedTarget,
   } from "./scenarios";
@@ -121,10 +122,13 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "fleet"}<div
+        {#if selected === "fleet" || selected === "cargo"}<div
             style="height:min(850px,90svh);min-height:550px"
           >
-            {#key frame.at}{@const sample = fleetFrame(time)}<SystemFleets
+            {#key frame.at}{@const sample =
+                selected === "cargo"
+                  ? cargoFrame(time)
+                  : fleetFrame(time)}<SystemFleets
                 view={sample}
                 starId={sample.own.home!}
                 pending={time < 2200}
@@ -132,6 +136,7 @@
                 error={frame.feedback.error}
                 onform={() => {}}
                 ondisband={() => {}}
+                oncargo={() => {}}
                 onclose={() => {}}
                 onretry={() => {}}
               />{/key}

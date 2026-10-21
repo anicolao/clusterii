@@ -14,6 +14,7 @@
     error = "",
     onform,
     ondisband,
+    oncargo,
     onclose,
     onretry,
   }: {
@@ -25,12 +26,20 @@
     error?: string;
     onform: (fighters: number, infantry: number) => void;
     ondisband: (id: string) => void;
+    oncargo: (
+      id: string,
+      operation: "load" | "unload",
+      infantry: number,
+    ) => void;
     onclose: () => void;
     onretry?: () => void;
   } = $props();
+  const cargoAvailabilityId = $props.id();
   let fighters = $state<number | undefined>(1),
     infantry = $state<number | undefined>(0),
     selected = $state<string | null>(null);
+  let operation = $state<"load" | "unload" | "disband">("disband");
+  let cargo = $state<number | undefined>(1);
   const star = $derived(view.stars.find((s) => s.id === starId)!);
   const holding = $derived(view.holdings.find((s) => s.starId === starId));
   const fleets = $derived(
@@ -41,7 +50,7 @@
   );
   const reserved = $derived(
     orders
-      .filter((o) => o.fleetId === null)
+      .filter((o) => o.fleetId === null || o.cargo === "load")
       .reduce(
         (sum, o) => ({
           fighters: sum.fighters + o.fighters,
@@ -73,10 +82,21 @@
             ? !fleet
               ? "This fleet is no longer stationed here."
               : orders.some((o) => o.fleetId === selected)
-                ? "Disbanding is already scheduled."
-                : fleet.infantry > 0 && !unified
-                  ? "Unified control is required to return infantry."
-                  : ""
+                ? "A fleet order is already scheduled."
+                : (operation !== "disband" || fleet.infantry > 0) && !unified
+                  ? "Unified control is required to transfer infantry."
+                  : operation !== "disband" &&
+                      (!Number.isSafeInteger(cargo) || cargo! < 1)
+                    ? "Choose a positive whole number of infantry."
+                    : operation === "load" &&
+                        cargo! + fleet.infantry >
+                          fleet.fighters * rules.infantryCapacityPerFighter
+                      ? "The next load exceeds the remaining transport capacity."
+                      : operation === "load" && cargo! > available.infantry
+                        ? "Choose infantry that are available and not reserved."
+                        : operation === "unload" && cargo! > fleet.infantry
+                          ? "Choose infantry already aboard this fleet."
+                          : ""
             : !Number.isSafeInteger(fighters) ||
                 !Number.isSafeInteger(infantry) ||
                 fighters! < 1 ||
@@ -124,6 +144,23 @@
           onclick={() => (selected = f.id)}>Fleet {f.number}</ActionButton
         >{/each}
     </nav>
+    {#each view.military?.ledger.filter((e) => e.starId === starId) ?? [] as e}<p
+        class="outcome"
+        role="status"
+      >
+        {e.result === "formed"
+          ? "Fleet formed"
+          : e.result === "loaded"
+            ? "Infantry loaded"
+            : e.result === "unloaded"
+              ? "Infantry unloaded"
+              : e.result === "disbanded"
+                ? "Fleet disbanded"
+                : "Fleet order could not execute; its reservation was released"} ·
+        {e.result === "loaded" || e.result === "unloaded"
+          ? `${e.infantry} infantry`
+          : `${e.fighters} fighters · ${e.infantry} infantry`}.
+      </p>{/each}
     {#if selected}<h3>{fleet ? `Fleet ${fleet.number}` : "Fleet returned"}</h3>
       {#if fleet}<dl>
           <div>
@@ -139,10 +176,51 @@
             <dd>{fleet.fighters * rules.infantryCapacityPerFighter}</dd>
           </div>
         </dl>
-        <p>
-          Stationed at {star.name}. Disbanding returns these forces to the
-          system at its scheduled tick.
-        </p>{/if}
+        <nav aria-label="Fleet orders">
+          {#each ["load", "unload", "disband"] as choice}<ActionButton
+              class="secondary"
+              aria-pressed={operation === choice}
+              onclick={() => (operation = choice as typeof operation)}
+              >{choice === "load"
+                ? "Load"
+                : choice === "unload"
+                  ? "Unload"
+                  : "Disband"}</ActionButton
+            >{/each}
+        </nav>
+        {#if operation !== "disband"}<div class="counts">
+            <label
+              >Infantry to {operation}<input
+                aria-label={`Infantry to ${operation}`}
+                aria-describedby={cargoAvailabilityId}
+                type="number"
+                min="1"
+                max={operation === "load"
+                  ? Math.min(
+                      available.infantry,
+                      fleet.fighters * rules.infantryCapacityPerFighter -
+                        fleet.infantry,
+                    )
+                  : fleet.infantry}
+                step="1"
+                bind:value={cargo}
+              /><span id={cargoAvailabilityId}
+                >{operation === "load"
+                  ? `${available.infantry} available · ${reserved.infantry} reserved on surface`
+                  : `${fleet.infantry} aboard`}</span
+              ></label
+            >
+          </div>
+          <p>
+            {operation === "load"
+              ? "Reserve surface infantry for embarkation."
+              : "Return embarked infantry to this system’s surface."} The transfer
+            settles at its scheduled tick. Orbit and surface must remain yours.
+          </p>
+        {:else}<p>
+            Stationed at {star.name}. Disbanding returns these forces to the
+            system at its scheduled tick.
+          </p>{/if}{/if}
     {:else}<h3>Assemble a fleet</h3>
       <p>
         Reserve local forces now. They assemble at the order’s scheduled tick.
@@ -181,21 +259,17 @@
     {#if orders.length}<section aria-label="Accepted fleet orders">
         <h3>Accepted orders</h3>
         {#each orders as o}<p>
-            {o.fleetId ? "Disband" : "Form"} · {o.fighters} fighters · {o.infantry}
-            infantry · tick {o.effectiveTick}
+            {o.cargo === "load"
+              ? "Load"
+              : o.cargo === "unload"
+                ? "Unload"
+                : o.fleetId
+                  ? "Disband"
+                  : "Form"} · {o.cargo
+              ? `${o.infantry} infantry`
+              : `${o.fighters} fighters · ${o.infantry} infantry`} · tick {o.effectiveTick}
           </p>{/each}
       </section>{/if}
-    {#each view.military?.ledger.filter((e) => e.starId === starId) ?? [] as e}<p
-        class="outcome"
-        role="status"
-      >
-        {e.result === "formed"
-          ? "Fleet formed"
-          : e.result === "disbanded"
-            ? "Fleet disbanded"
-            : "Fleet order could not execute; its reservation was released"} · {e.fighters}
-        fighters · {e.infantry} infantry.
-      </p>{/each}
   </div>
   <footer>
     <div class="feedback">
@@ -210,8 +284,18 @@
         >{:else}<ActionButton
           disabled={pending || !!invalid}
           onclick={() =>
-            selected ? ondisband(selected) : onform(fighters!, infantry!)}
-          >{selected ? "Disband fleet" : "Form fleet"}</ActionButton
+            selected
+              ? operation === "disband"
+                ? ondisband(selected)
+                : oncargo(selected, operation, cargo!)
+              : onform(fighters!, infantry!)}
+          >{selected
+            ? operation === "load"
+              ? "Load infantry"
+              : operation === "unload"
+                ? "Unload infantry"
+                : "Disband fleet"
+            : "Form fleet"}</ActionButton
         >{/if}
     </div>
   </footer>

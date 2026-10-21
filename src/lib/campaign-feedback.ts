@@ -90,27 +90,30 @@ export function campaignFeedback(
           : ("validation" as const),
     };
   return {
-    message: kind.startsWith("fleet.")
-      ? "Fleet order accepted. Reserved forces and its execution tick are listed in the manifest."
-      : kind === "market.focus"
-        ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
-        : kind === "construction.build"
-          ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
-          : kind === "construction.cancel"
-            ? "Cancellation accepted. The refund settles at its scheduled tick."
-            : kind === "research.select"
-              ? "Research order accepted. It will apply at its scheduled tick."
-              : kind === "campaign.migrate"
-                ? "Encryption changed and verified. Campaign resumed."
-                : kind === "campaign.pause"
-                  ? "Campaign paused. Admissions and scheduled start are stopped."
-                  : kind === "campaign.resume"
-                    ? "Campaign resumed."
-                    : kind === "campaign.create"
-                      ? "Campaign created. Choose your faction."
-                      : kind === "campaign.leave"
-                        ? "Your seat has been released."
-                        : "Your seat is confirmed.",
+    message:
+      kind === "fleet.load" || kind === "fleet.unload"
+        ? "Cargo order accepted. Transfer scheduled."
+        : kind.startsWith("fleet.")
+          ? "Fleet order accepted. Reserved forces and its execution tick are listed in the manifest."
+          : kind === "market.focus"
+            ? "Focus order accepted. Its application and dividend ticks are listed with your accepted orders."
+            : kind === "construction.build"
+              ? "Construction order accepted. Credits reserved; the queue advances at its scheduled ticks."
+              : kind === "construction.cancel"
+                ? "Cancellation accepted. The refund settles at its scheduled tick."
+                : kind === "research.select"
+                  ? "Research order accepted. It will apply at its scheduled tick."
+                  : kind === "campaign.migrate"
+                    ? "Encryption changed and verified. Campaign resumed."
+                    : kind === "campaign.pause"
+                      ? "Campaign paused. Admissions and scheduled start are stopped."
+                      : kind === "campaign.resume"
+                        ? "Campaign resumed."
+                        : kind === "campaign.create"
+                          ? "Campaign created. Choose your faction."
+                          : kind === "campaign.leave"
+                            ? "Your seat has been released."
+                            : "Your seat is confirmed.",
     error: "",
     remedy: null,
   };

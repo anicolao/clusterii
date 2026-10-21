@@ -255,6 +255,8 @@
             "market.focus",
             "fleet.form",
             "fleet.disband",
+            "fleet.load",
+            "fleet.unload",
             "construction.build",
             "construction.cancel",
           ].includes(command.kind)
@@ -343,6 +345,13 @@
           expectedRevision: view!.revision,
           starId,
           fighters,
+          infantry,
+        })}
+      oncargo={(fleetId, operation, infantry) =>
+        send(view!.id, {
+          kind: operation === "load" ? "fleet.load" : "fleet.unload",
+          expectedRevision: view!.revision,
+          fleetId,
           infantry,
         })}
       ondisband={(fleetId) =>

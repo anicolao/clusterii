@@ -53,7 +53,7 @@
             ".write": "auth != null && auth.uid === $uid && (!root.child('sessionFences').child($uid).exists() || (root.child('sessionFences').child($uid).child('status').val() === 'complete' && auth.token.auth_time > root.child('sessionFences').child($uid).child('cutoff').val())) && auth.token.developer === true && !data.exists() && newData.exists() && $gameId.matches(/^[a-f0-9-]{36}$/) && $commandId.matches(/^[a-f0-9-]{36}$/)",
             ".validate": "newData.hasChildren(['kind', 'envelope'])",
             "kind": {
-              ".validate": "newData.val() === 'campaign.create' || newData.val() === 'campaign.join' || newData.val() === 'campaign.leave' || newData.val() === 'fleet.form' || newData.val() === 'fleet.disband' || newData.val() === 'market.focus' || newData.val() === 'research.select' || newData.val() === 'construction.build' || newData.val() === 'construction.cancel'"
+              ".validate": "newData.val() === 'campaign.create' || newData.val() === 'campaign.join' || newData.val() === 'campaign.leave' || newData.val() === 'fleet.form' || newData.val() === 'fleet.disband' || newData.val() === 'fleet.load' || newData.val() === 'fleet.unload' || newData.val() === 'market.focus' || newData.val() === 'research.select' || newData.val() === 'construction.build' || newData.val() === 'construction.cancel'"
             },
             "envelope": {
               ".validate": "newData.hasChildren(['format','mode','algorithm','gameId','objectId','revision','epoch','keyVersion','nonce','ciphertext','tag'])",

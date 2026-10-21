@@ -653,3 +653,202 @@ test("two commanders using one command UUID retain independent fleet identities 
   }
   expect(fleetIdentity("a:b", "c")).not.toBe(fleetIdentity("a", "b:c"));
 });
+
+test("cargo reservations share surface inventory and conserve fleet/system forces across load and unload", () => {
+  let state = productionFixture();
+  const home = state.seats[0].home!;
+  state = nextProduction(
+    orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId: home,
+        fighters: 2,
+        infantry: 5,
+      },
+      "p0",
+      "cargo-fleet",
+      0,
+    ),
+  );
+  const fleetId = fleetIdentity("p0", "cargo-fleet"),
+    before = stationedForces(state, home);
+  const load = {
+    kind: "fleet.load",
+    expectedRevision: state.revision,
+    fleetId,
+    infantry: 10,
+  };
+  const queued = orderFleet(
+    state,
+    load,
+    "p0",
+    "load",
+    state.economy!.nextTickAt - 1,
+  );
+  expect(queued.systems).toEqual(state.systems);
+  expect(queued.military!.fleets).toEqual(state.military!.fleets);
+  expect(reservedForces(queued, "p0", home)).toEqual({
+    fighters: 0,
+    infantry: 10,
+  });
+  expect(() =>
+    orderFleet(
+      queued,
+      {
+        kind: "fleet.form",
+        expectedRevision: queued.revision,
+        starId: home,
+        fighters: 1,
+        infantry: 7,
+      },
+      "p0",
+      "competing",
+      0,
+    ),
+  ).toThrow("insufficient-forces");
+  expect(() =>
+    orderFleet(
+      queued,
+      { kind: "fleet.disband", expectedRevision: queued.revision, fleetId },
+      "p0",
+      "disband",
+      0,
+    ),
+  ).toThrow("fleet-order-pending");
+  const loaded = nextProduction(queued);
+  expect(loaded.military!.fleets[fleetId].infantry).toBe(15);
+  expect(loaded.military!.ledger.p0[0]).toMatchObject({
+    result: "loaded",
+    fighters: 0,
+    infantry: 10,
+  });
+  expect(stationedForces(loaded, home)).toEqual({
+    fighters: before.fighters + 1,
+    infantry: before.infantry + 1,
+  });
+  const unload = orderFleet(
+    loaded,
+    {
+      kind: "fleet.unload",
+      expectedRevision: loaded.revision,
+      fleetId,
+      infantry: 4,
+    },
+    "p0",
+    "unload",
+    loaded.economy!.nextTickAt - 1,
+  );
+  expect(reservedForces(unload, "p0", home)).toEqual({
+    fighters: 0,
+    infantry: 0,
+  });
+  const returned = nextProduction(unload);
+  expect(returned.military!.fleets[fleetId].infantry).toBe(11);
+  expect(returned.military!.ledger.p0[0].result).toBe("unloaded");
+  expect(campaignView(queued, "p0").military!.orders[0]).toMatchObject({
+    cargo: "load",
+    infantry: 10,
+  });
+  expect(JSON.stringify(campaignView(queued, "p1").military)).not.toContain(
+    fleetId,
+  );
+});
+
+test("cargo fails closed on forged fields, lost layer ownership, capacity changes and absent fleets", () => {
+  let state = productionFixture();
+  const home = state.seats[0].home!;
+  state = nextProduction(
+    orderFleet(
+      state,
+      {
+        kind: "fleet.form",
+        expectedRevision: state.revision,
+        starId: home,
+        fighters: 1,
+        infantry: 5,
+      },
+      "p0",
+      "cargo-guard",
+      0,
+    ),
+  );
+  const fleetId = fleetIdentity("p0", "cargo-guard"),
+    action = {
+      kind: "fleet.load",
+      expectedRevision: state.revision,
+      fleetId,
+      infantry: 3,
+    };
+  for (const patch of [
+    { infantry: 0 },
+    { infantry: -1 },
+    { infantry: 1.5 },
+    { infantry: "3" },
+    { uid: "p0" },
+    { fighters: 1 },
+    { cargo: "load" },
+  ])
+    expect(() =>
+      orderFleet(state, { ...action, ...patch }, "p0", "bad", 0),
+    ).toThrow("invalid");
+  expect(() =>
+    orderFleet(state, { ...action, infantry: 6 }, "p0", "over", 0),
+  ).toThrow("fleet-capacity");
+  expect(() =>
+    orderFleet(
+      state,
+      { ...action, kind: "fleet.unload", infantry: 6 },
+      "p0",
+      "over",
+      0,
+    ),
+  ).toThrow("insufficient-forces");
+  expect(() => orderFleet(state, action, "p1", "forged-owner", 0)).toThrow(
+    "permission",
+  );
+  for (const kind of ["fleet.load", "fleet.unload"]) {
+    for (const layer of ["orbit", "surface"] as const) {
+      const split = structuredClone(state);
+      split.systems[home][layer] = "p1";
+      expect(() =>
+        orderFleet(split, { ...action, kind }, "p0", "split", 0),
+      ).toThrow("permission");
+    }
+    const queued = orderFleet(state, { ...action, kind }, "p0", "pending", 0);
+    queued.systems[home].surface = "p1";
+    const settled = nextProduction(queued);
+    expect(settled.military!.fleets).toEqual(queued.military!.fleets);
+    expect(settled.military!.ledger.p0[0].result).toBe("invalid");
+    expect(settled.military!.orders).toEqual([]);
+  }
+  for (const mutate of [
+    (s: typeof state) => {
+      s.military!.fleets[fleetId].fighters = 0;
+    },
+    (s: typeof state) => {
+      delete s.military!.fleets[fleetId];
+    },
+    (s: typeof state) => {
+      s.systems[home].infantry = 0;
+    },
+  ]) {
+    const queued = orderFleet(state, action, "p0", "changed", 0);
+    mutate(queued);
+    expect(nextProduction(queued).military!.ledger.p0[0].result).toBe(
+      "invalid",
+    );
+  }
+  const late = orderFleet(
+    state,
+    action,
+    "p0",
+    "late",
+    state.economy!.nextTickAt,
+  );
+  expect(late.military!.orders[0].effectiveTick).toBe(state.economy!.tick + 2);
+  expect(() =>
+    orderFleet({ ...state, pausedAt: 1 }, action, "p0", "paused", 0),
+  ).toThrow("paused");
+});

@@ -206,6 +206,127 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
     }
     await inspector.getByRole("button", { name: /Fleets · 1/ }).click();
     await panel.getByRole("button", { name: /^Fleet [0-9]+$/ }).click();
+    await panel.getByRole("button", { name: "Unload", exact: true }).click();
+    await panel
+      .getByRole("spinbutton", { name: /^Infantry to (load|unload)$/ })
+      .fill("21");
+    await expect(
+      panel.getByRole("button", { name: "Unload infantry", exact: true }),
+    ).toBeDisabled();
+    await panel
+      .getByRole("spinbutton", { name: /^Infantry to (load|unload)$/ })
+      .fill("5");
+    for (const [label, width, height] of [
+      ["phone", 393, 852],
+      ["desktop", 1440, 1000],
+      ["short", 1280, 720],
+      ["4k", 3840, 2160],
+    ] as const) {
+      await page.setViewportSize({ width, height });
+      const action = panel.getByRole("button", {
+        name: "Unload infantry",
+        exact: true,
+      });
+      const box = await action.boundingBox();
+      expect(box!.y).toBeGreaterThanOrEqual(0);
+      expect(box!.y + box!.height).toBeLessThanOrEqual(height);
+      expect(
+        await action.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          return (
+            document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2) ===
+            el
+          );
+        }),
+      ).toBe(true);
+      await panel
+        .getByRole("spinbutton", { name: /^Infantry to (load|unload)$/ })
+        .scrollIntoViewIfNeeded();
+      await expect(
+        panel.getByRole("spinbutton", { name: /^Infantry to (load|unload)$/ }),
+      ).toHaveValue("5");
+      await geometry(page, panel);
+      await panel
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .evaluate((el) => el.scrollTo(0, 0));
+      await page.screenshot({
+        path: info.outputPath(`fleet-cargo-${label}.png`),
+      });
+    }
+    await panel
+      .getByRole("button", { name: "Unload infantry", exact: true })
+      .click();
+    await expect(
+      panel.getByRole("region", { name: "Accepted fleet orders" }),
+    ).toContainText("Unload · 5 infantry");
+    await page.reload();
+    await inspector.getByRole("button", { name: /Fleets · 1/ }).click();
+    await expect(
+      panel.getByRole("region", { name: "Accepted fleet orders" }),
+    ).toContainText("Unload · 5 infantry");
+    expect(await settleCampaignTicks(id, () => start + 2 * 900000)).toBe(1);
+    await expect(
+      panel.getByRole("status").filter({ hasText: "Infantry unloaded" }),
+    ).toBeVisible();
+    await panel.getByRole("button", { name: /^Fleet [0-9]+$/ }).click();
+    await panel.getByRole("button", { name: "Load", exact: true }).click();
+    await panel
+      .getByRole("spinbutton", { name: /^Infantry to (load|unload)$/ })
+      .fill("6");
+    await expect(
+      panel.getByRole("button", { name: "Load infantry", exact: true }),
+    ).toBeDisabled();
+    await panel
+      .getByRole("spinbutton", { name: /^Infantry to (load|unload)$/ })
+      .fill("3");
+    await panel
+      .getByRole("button", { name: "Load infantry", exact: true })
+      .click();
+    await expect(
+      panel.getByRole("region", { name: "Accepted fleet orders" }),
+    ).toContainText("Load · 3 infantry");
+    expect(await settleCampaignTicks(id, () => start + 3 * 900000)).toBe(1);
+    await expect(
+      panel.getByRole("status").filter({ hasText: "Infantry loaded" }),
+    ).toBeVisible();
+    await expect(panel.locator("dl")).toContainText("18");
+    for (const [label, width, height] of [
+      ["phone", 393, 852],
+      ["desktop", 1440, 1000],
+      ["short", 1280, 720],
+      ["4k", 3840, 2160],
+    ] as const) {
+      await page.setViewportSize({ width, height });
+      const action = panel.getByRole("button", {
+        name: "Load infantry",
+        exact: true,
+      });
+      const box = await action.boundingBox();
+      expect(box!.y).toBeGreaterThanOrEqual(0);
+      expect(box!.y + box!.height).toBeLessThanOrEqual(height);
+      await geometry(page, panel);
+      await panel
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .evaluate((el) => el.scrollTo(0, 0));
+      const outcome = panel
+        .getByRole("status")
+        .filter({ hasText: "Infantry loaded" });
+      expect(
+        await outcome.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          const top = document.elementFromPoint(
+            r.x + r.width / 2,
+            r.y + r.height / 2,
+          );
+          return top === el || (!!top && el.contains(top));
+        }),
+      ).toBe(true);
+      await page.screenshot({
+        path: info.outputPath(`fleet-cargo-loaded-${label}.png`),
+      });
+    }
+
+    await panel.getByRole("button", { name: "Disband", exact: true }).click();
     await panel
       .getByRole("button", { name: "Disband fleet", exact: true })
       .click();
@@ -221,7 +342,7 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
     await expect(
       inspector.getByRole("button", { name: /Fleets · 0/ }),
     ).toBeFocused();
-    await expect(inspector.getByText("22", { exact: true })).toHaveCount(2);
+    await expect(inspector.getByText("25", { exact: true })).toHaveCount(2);
   } finally {
     for (const context of contexts) await context.close();
   }
@@ -277,4 +398,35 @@ test("fleet lab replays reservations and outcomes with reduced-motion equality",
   await expect(
     standard.getByRole("button", { name: /^Fleet [0-9]+$/ }),
   ).toHaveCount(0);
+});
+
+test("cargo lab preserves acknowledged outcomes through seeking and reduced motion", async ({
+  page,
+}) => {
+  await page.goto("dev/animations/");
+  await page.getByLabel("Scenario", { exact: true }).selectOption("cargo");
+  const seek = page.getByLabel(/Inspect frame/),
+    standard = page.getByRole("region", { name: "Standard motion comparison" }),
+    reduced = page.getByRole("region", { name: "Reduced motion comparison" });
+  for (const [time, copy] of [
+    ["0", "Awaiting acknowledgement"],
+    ["1200", "connection was interrupted"],
+    ["2400", "Load · 3 infantry"],
+    ["3400", "Infantry loaded"],
+  ]) {
+    await seek.fill(time);
+    await expect(standard).toContainText(copy);
+    await expect(reduced).toContainText(copy);
+    expect(
+      await standard
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .innerText(),
+    ).toBe(
+      await reduced
+        .getByRole("region", { name: "Fleet manifest and orders" })
+        .innerText(),
+    );
+  }
+  await page.getByRole("button", { name: "Reset", exact: true }).click();
+  await expect(seek).toHaveValue("0");
 });

@@ -34,6 +34,7 @@
     onfocus,
     onform,
     ondisband,
+    oncargo,
     onbuild,
     oncancel,
     onmigrate,
@@ -55,6 +56,11 @@
     onresearch?: (target: Technology) => void;
     onform?: (starId: string, fighters: number, infantry: number) => void;
     ondisband?: (id: string) => void;
+    oncargo?: (
+      id: string,
+      operation: "load" | "unload",
+      infantry: number,
+    ) => void;
     onbuild?: (starId: string, type: Development) => void;
     oncancel?: (orderId: string) => void;
     onmigrate?: (mode: "mock" | "real") => void;
@@ -449,6 +455,8 @@
         error={commandKind.startsWith("fleet.") ? error : ""}
         onform={(fighters, infantry) => onform?.(star.id, fighters, infantry)}
         ondisband={(id) => ondisband?.(id)}
+        oncargo={(id, operation, infantry) =>
+          oncargo?.(id, operation, infantry)}
         onclose={closeMilitary}
         {onretry}
       />

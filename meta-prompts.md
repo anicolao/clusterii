@@ -399,3 +399,17 @@ Agent is progressing on a concrete correctness fix, not stalled. Work remains di
 New #22 3ef70c9 correctly stacks on stellar-observations and is attached to supervisor chat. Fleet worktree was clean at inspection; independent npm run check passes with zero Svelte errors/warnings and backend TypeScript success. Publication/documentation pass, verification pending. Prior fleet source/evidence and sampled phone review remain scoped, not full hosted/security/visual acceptance.
 
 #19 191d7e7 now fully green. #20 220916e verification failed: retained 4K browser overlap assertion finds sticky Queue investing action covering part of Innovation radio row. Agent independently diagnosed the trace and is actively reproducing before bounding the research-choice scroll area with commitment outside it, retaining keyboard/action checks at all four sizes. #21 verification remains pending. This is a concrete unresolved UI defect blocking #20 acceptance; no redundant handoff or interruption of healthy diagnosis. Carry this checkpoint into next related committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-21 01:37 Toronto
+
+Research geometry correction committed/pushed as #20 6c42699 and propagated to #21 57a6cf5 / #22 f22586a; full replacement verification running. #19 remains green. Independently reviewed bounded research fieldset, commitment outside scroller and keyboard reveal behavior. Overlap helper now intersects actual ancestor clips; negative regression retains detection of overlapping visible edges despite reachable centres. Retained focused evidence reports seven browser/gallery/lab passes in 34.3 seconds with explicit service clock, not hosted scheduling.
+
+Independently inspected corrected short and 4K captures: selected Investing row and Queue investing action are contained and separated; short view retains Market focus and Return controls. This supports resolution of the sampled overlap, not full state/viewport acceptance. Main supervisory checkpoints through 01:27 were carried into correction commit. Agent is actively implementing cargo load/unload on successor of fleets; new code remains uncommitted with no PR and conservation/privacy/concurrency/visual evidence pending. No stall or duplicate handoff. Carry this checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:47 Toronto
+
+#20/#21/#22 replacement verification still running; #20/#22 publication green and #21 publication rerun active. No new PR. Cargo successor remains uncommitted and active. Preliminary independent source review confirms shared loading/formation reservations, positive integer transfer bounds, one outstanding operation per fleet, ownership/location/capacity revalidation and exact opposite inventory deltas at settlement. Existing orders retain behavior without cargo discriminator; private member projection remains explicit. This is in-progress review, not complete security/concurrency acceptance.
+
+Agent reports eight browser tests passing and is correcting a rendered phone clarity issue: completed cargo outcome below scroll boundary alongside a next-load restriction. Active correction moves outcome before manifest and labels the restriction for the next action. No redundant handoff or interruption of healthy self-review. Final captures and exact-head checks remain pending. Carry this checkpoint into related committed/pushed logs; no merge.
