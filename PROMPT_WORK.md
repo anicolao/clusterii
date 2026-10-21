@@ -203,3 +203,4 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | V
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register stacked migration PR45 and its preview gate, preserving verified actual-provider scope.
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Carry contact-subscription readiness and four exact verified narratives into the feedback lab stack.
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Migrate production identity and navigation gallery interactions into explicit illustrated component stories.
+Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Register stacked PR47 and its gallery preview and exact-evidence acceptance gates.
