@@ -588,6 +588,9 @@
         </p>
         {#if ready}<form
             id="identity"
+            oninput={() => {
+              if (!busy && !pending) message = "";
+            }}
             onsubmit={(e) => {
               e.preventDefault();
               void save();

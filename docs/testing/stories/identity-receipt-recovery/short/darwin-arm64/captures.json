@@ -1,0 +1,32 @@
+[
+  {
+    "image": "002-first-draft-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/short/darwin-arm64/002-first-draft-1-receipt-commander.png",
+    "actualSha256": "261747fdf5871b3f2efa1c609fb3695454bbac0beceffc1ff80bd41093c6b9d9"
+  },
+  {
+    "image": "003-accepted-identity-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/short/darwin-arm64/003-accepted-identity-1-receipt-commander.png",
+    "actualSha256": "fd02308eb429e7966e8dda164f133039e118ba7110509a702b3715c1c916a097"
+  },
+  {
+    "image": "004-replacement-draft-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/short/darwin-arm64/004-replacement-draft-1-receipt-commander.png",
+    "actualSha256": "cd2cc8bf9104e9937130f1685f1f6e87e554b97b6b0b4af4b01223683a71879a"
+  },
+  {
+    "image": "005-mismatched-acknowledgement-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/short/darwin-arm64/005-mismatched-acknowledgement-1-receipt-commander.png",
+    "actualSha256": "b989ced5e635723c4335abd484af9ca97cf5e74a84fef4092d96137230ef1ba5"
+  },
+  {
+    "image": "007-fresh-save-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/short/darwin-arm64/007-fresh-save-1-receipt-commander.png",
+    "actualSha256": "3ec6b54d1545846f921eadb596b7c457c45ade46ad23b536a4ed07262649b4dc"
+  },
+  {
+    "image": "008-reload-accepted-draft-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/short/darwin-arm64/008-reload-accepted-draft-1-receipt-commander.png",
+    "actualSha256": "e73e4891493aa9677c15a3edf4e26c4ef2ba0226b4f2d3f49b46a705795f22c2"
+  }
+]

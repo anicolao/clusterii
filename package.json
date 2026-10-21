@@ -20,7 +20,8 @@
     "test:stories:generate": "node scripts/run-stories.mjs generate",
     "test:story-policy": "node --test scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs && node scripts/check-story-policy.mjs",
     "test:stories:promote": "node scripts/promote-story-baselines.mjs",
-    "test:story-tools": "bun test tests/story-tools.test.ts"
+    "test:story-tools": "bun test tests/story-tools.test.ts",
+    "test:browser-storage": "bun test tests/recovery-store.test.ts"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "5.2.8",
@@ -41,6 +42,7 @@
     "@types/node": "26.1.1",
     "@types/three": "0.183.1",
     "firebase-tools": "15.25.0",
+    "material-components-web": "10.0.0",
     "prettier": "3.9.10",
     "prettier-plugin-svelte": "4.1.1",
     "sharp": "0.34.5",

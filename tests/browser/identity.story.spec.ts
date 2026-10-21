@@ -1,4 +1,5 @@
 import { test, expect } from "./story-helpers/fixtures";
+import { authenticate } from "./helpers";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 
 test("Save and recover a commander identity", async ({ page }, info) => {
@@ -32,20 +33,8 @@ test("Save and recover a commander identity", async ({ page }, info) => {
   await story.step("sign-in", {
     description: "Étoile signs in with Google and reaches the identity editor.",
     actor: "Étoile",
-    action: async () => {
-      const opening = page.waitForEvent("popup");
-      await play.click();
-      const popup = await opening;
-      await popup.waitForLoadState("load");
-      await popup
-        .getByRole("button", { name: "Add new account", exact: true })
-        .click();
-      await popup
-        .getByLabel("Email", { exact: true })
-        .fill(`story-identity-${info.project.name}@example.test`);
-      await popup.getByLabel("Display name", { exact: true }).fill("Commander");
-      await popup.getByRole("button", { name: /Sign in with/ }).click();
-    },
+    action: async () =>
+      authenticate(page, `story-identity-${info.project.name}@example.test`),
     acknowledgement: {
       spec: "Authentication completes and the commander name field is available.",
       check: async () =>

@@ -1,0 +1,32 @@
+[
+  {
+    "image": "002-original-proposal-1-receipt-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/002-original-proposal-1-receipt-envoy.png",
+    "actualSha256": "855fe4103723a430c348ef0cd9b3cd2c1bf05002f7e546f901179418ea371dce"
+  },
+  {
+    "image": "003-original-created-1-receipt-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/003-original-created-1-receipt-envoy.png",
+    "actualSha256": "fb133060656a262c6f13381d471207752881fc1ef0437c110cf41b3ad76ab32f"
+  },
+  {
+    "image": "004-replacement-proposal-1-receipt-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/004-replacement-proposal-1-receipt-envoy.png",
+    "actualSha256": "eb781db5d6c3a416842db3355ea890a8285dfccd307d383014e75e370bc19bee"
+  },
+  {
+    "image": "005-mismatched-campaign-order-1-receipt-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/005-mismatched-campaign-order-1-receipt-envoy.png",
+    "actualSha256": "4e71d20688423387b890ad0f73cf33f71661ea7c0fee21288bcc9cbe941961d0"
+  },
+  {
+    "image": "007-fresh-galaxy-created-1-receipt-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+    "actualSha256": "46918540031e8da8d49ebc4e9830a260547bc40f7dc6f0bbeb02a26015468dc3"
+  },
+  {
+    "image": "008-reload-new-galaxy-1-receipt-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+    "actualSha256": "76eda2d789ca216f081d5e01df7aafeb540ac34084ca793ee36bbc9d965377ac"
+  }
+]

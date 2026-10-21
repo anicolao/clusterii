@@ -1,0 +1,32 @@
+[
+  {
+    "image": "002-first-draft-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/desktop/linux-arm64/002-first-draft-1-receipt-commander.png",
+    "actualSha256": "c0e6c296ada6cd31773c7cfcd8ea6c1c324df64a802286465afa58385cfff499"
+  },
+  {
+    "image": "003-accepted-identity-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/desktop/linux-arm64/003-accepted-identity-1-receipt-commander.png",
+    "actualSha256": "61e1a0416f998c75f265b1040cccd9c16a3ff96cba66c8cefb99ff5864ce9081"
+  },
+  {
+    "image": "004-replacement-draft-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/desktop/linux-arm64/004-replacement-draft-1-receipt-commander.png",
+    "actualSha256": "631c74101b2ab46526cad026f2bc25ff50b79e37e0bfdfe4d5a21423ee2ab3d9"
+  },
+  {
+    "image": "005-mismatched-acknowledgement-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/desktop/linux-arm64/005-mismatched-acknowledgement-1-receipt-commander.png",
+    "actualSha256": "7ea935465bb35044f2117a98b6939181af76143cb55dfd1a6300c1731752b821"
+  },
+  {
+    "image": "007-fresh-save-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/desktop/linux-arm64/007-fresh-save-1-receipt-commander.png",
+    "actualSha256": "0a9b82d77f7d16053c6b25cc5dba038f5ab41812bacbce9ab27f521d3515fe1e"
+  },
+  {
+    "image": "008-reload-accepted-draft-1-receipt-commander.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/identity-receipt-recovery/desktop/linux-arm64/008-reload-accepted-draft-1-receipt-commander.png",
+    "actualSha256": "273aa4f46491fbcccdd1cd4a8f1c0c12762e4e68bc55d6c5ba628df027a63244"
+  }
+]
