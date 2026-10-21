@@ -399,3 +399,56 @@ Agent is progressing on a concrete correctness fix, not stalled. Work remains di
 New #22 3ef70c9 correctly stacks on stellar-observations and is attached to supervisor chat. Fleet worktree was clean at inspection; independent npm run check passes with zero Svelte errors/warnings and backend TypeScript success. Publication/documentation pass, verification pending. Prior fleet source/evidence and sampled phone review remain scoped, not full hosted/security/visual acceptance.
 
 #19 191d7e7 now fully green. #20 220916e verification failed: retained 4K browser overlap assertion finds sticky Queue investing action covering part of Innovation radio row. Agent independently diagnosed the trace and is actively reproducing before bounding the research-choice scroll area with commitment outside it, retaining keyboard/action checks at all four sizes. #21 verification remains pending. This is a concrete unresolved UI defect blocking #20 acceptance; no redundant handoff or interruption of healthy diagnosis. Carry this checkpoint into next related committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-21 01:37 Toronto
+
+Research geometry correction committed/pushed as #20 6c42699 and propagated to #21 57a6cf5 / #22 f22586a; full replacement verification running. #19 remains green. Independently reviewed bounded research fieldset, commitment outside scroller and keyboard reveal behavior. Overlap helper now intersects actual ancestor clips; negative regression retains detection of overlapping visible edges despite reachable centres. Retained focused evidence reports seven browser/gallery/lab passes in 34.3 seconds with explicit service clock, not hosted scheduling.
+
+Independently inspected corrected short and 4K captures: selected Investing row and Queue investing action are contained and separated; short view retains Market focus and Return controls. This supports resolution of the sampled overlap, not full state/viewport acceptance. Main supervisory checkpoints through 01:27 were carried into correction commit. Agent is actively implementing cargo load/unload on successor of fleets; new code remains uncommitted with no PR and conservation/privacy/concurrency/visual evidence pending. No stall or duplicate handoff. Carry this checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:47 Toronto
+
+#20/#21/#22 replacement verification still running; #20/#22 publication green and #21 publication rerun active. No new PR. Cargo successor remains uncommitted and active. Preliminary independent source review confirms shared loading/formation reservations, positive integer transfer bounds, one outstanding operation per fleet, ownership/location/capacity revalidation and exact opposite inventory deltas at settlement. Existing orders retain behavior without cargo discriminator; private member projection remains explicit. This is in-progress review, not complete security/concurrency acceptance.
+
+Agent reports eight browser tests passing and is correcting a rendered phone clarity issue: completed cargo outcome below scroll boundary alongside a next-load restriction. Active correction moves outcome before manifest and labels the restriction for the next action. No redundant handoff or interruption of healthy self-review. Final captures and exact-head checks remain pending. Carry this checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 01:57 Toronto
+
+New #23 e167364 correctly stacks on stationed-fleets and is attached to supervisor chat. Cargo worktree clean; independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Publication/documentation green, full verification pending along with #20–22. Implementer evidence records both-provider 184 assertions, default 24 tests/1392 assertions, eight browser/gallery/lab passes and final accessible-label three-case pass. These remain controlled service-clock evidence, not hosted acceptance. Prior checkpoint through 01:47 committed with cargo.
+
+Independent completed-phone review confirms visible loaded outcome and next-load restriction but finds stale scheduled acknowledgement in footer. Exact handoff:
+
+Reviewer finding for cargo PR #23 e167364: docs/ux/reviews/fleet-cargo/fleet-cargo-loaded-phone.png shows completed “Infantry loaded · 3 infantry.” while the commitment rail still says “Cargo order accepted. Transfer scheduled.” Reconcile the acknowledgement with the matching authoritative outcome so settled orders no longer claim a future transfer; preserve genuine pending/accepted/retry states and the separate next-load capacity message. Add a focused regression and refresh affected captures, carry through the stack, log reviewer attribution and current meta checkpoint, and commit/push without merging.
+
+Agent actively implementing split/merge successor, not stalled; broader security/release gates remain open.
+
+
+## Reviewer progress — 2026-10-21 02:07 Toronto
+
+#23 advanced to c00d336 with attributed Prompt 36 and checkpoint committed/pushed; cargo worktree clean. Independently reviewed acknowledgement reconciliation keyed by campaign, command ID and minimum accepted revision against private outcomes; still-pending orders preserve scheduled copy, expired ledger directs to history without falsely claiming future execution. New command/account/navigation resets avoid stale cross-command feedback. Focused browser regression explicitly requires scheduled text before settlement and completed text afterwards; retained log reports three passes in 28.2 seconds.
+
+Independently inspected refreshed completed-phone capture: manifest and footer both show the completed three-infantry load; separate next-load capacity message remains clear. This resolves the specific 01:57 finding at scoped source/rendered level. Full #20–23 verification remains running and final hosted/security acceptance remains open. Agent carried fix into active split/merge successor and is extending outcome labels there; no duplicate prompt or stall. Carry checkpoint into next related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 02:17 Toronto
+
+#20–23 verification remains running; publication/documentation green, no new PR. Split/merge work is active and uncommitted. Preliminary independent source review confirms both merge participants are locked against overlapping commands, split slot reservations include pending formations/splits, both resulting complements require valid capacity, and execution revalidates fleet ownership/location. Review document explicitly identifies orbital-only reorganization and capacity/timing as development choices, not owner approvals; surface forces are not transferred.
+
+Agent reports 49 unit tests/1063 assertions, first browser journey and both live-provider cases passing; final evidence remains pending while before/after complement previews are added to ordinary controls. No new actionable defect established in this in-progress review, no duplicate handoff or stall. Carry checkpoint into next related committed/pushed logs. Full independent rendered/security/release gates remain; no merge.
+
+
+## Reviewer progress — 2026-10-21 02:27 Toronto
+
+#20–23 verification still running with publication/documentation green. Reorganization rollout/evidence prepared; no new PR at inspection. Agent's commit encountered prompt-hook rejection from two pending continuation entries after cargo correction was carried forward; work remains staged and agent active, so no redundant interruption. Must resolve with accurate continuation bookkeeping before commit, without bypassing hook or inventing prompts.
+
+Independent split-phone capture review finds both complements explicitly previewed (new 1 fighter/8 infantry; remaining 3/10), legible inputs and visible fixed Split fleet action. This supports the sampled ready state, not all viewport/outcome acceptance. Review doc reports live both-provider 208 assertions, full default 25 tests/1455 assertions and ten browser/gallery/lab passes; these remain implementer controlled-clock evidence. Shared production component/art provenance, reduced-motion outcomes and receiver focus are documented. Final independent security/hosted/CI gates remain. Carry checkpoint into next committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 02:37 Toronto
+
+#20 6c42699, #21 57a6cf5 and #22 f22586a now fully green. New #24 f36ed4b correctly stacks on fleet-cargo, attached to supervisor chat; reorganization worktree clean, publication/documentation green and verification pending. #23 verification also pending. Independent npm run check passes zero Svelte errors/warnings and backend TypeScript. Prompt-hook issue resolved with one accurate Prompt 36 continuation; historical entries preserved and checkpoint through 02:27 committed. Prior sampled split/source review remains scoped, not full release acceptance.
+
+Agent active on cancellation successor. Initial service replay invocation corrected; next run exposes force-total assertion expected24/received22. Agent is inspecting production settlement and test timing rather than stalled; no acceptance of cancellation or duplicate diagnostic prompt. Require actual conservation explanation/fix and passing evidence before its PR acceptance. Carry checkpoint into next related committed/pushed logs; no merge.

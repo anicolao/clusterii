@@ -90,3 +90,7 @@ Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | D
 Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Carry the verified bounded research geometry correction into stellar observations, retaining both branch histories.
 
 Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Preserve the research geometry fix and its regression evidence in the stationed-fleets successor.
+
+Prompt 35 | 4d218ac50f93b353f25daea13060f9569846d53913a7ef8ad6d20e3fea6c1cd8 | Continue authorized fleet delivery with private infantry cargo orders, authoritative settlement and real player interactions.
+
+Prompt 36 | fc460be8acdfe26be3d69936f0d79a805081ae785de1d77ea0c361acb67aaf39 | Correct cargo fault-test rejection handling after CI timeout so the injected lost reply is awaited and the transaction spy is restored.

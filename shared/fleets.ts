@@ -18,7 +18,13 @@ export type FleetAction =
       fighters: number;
       infantry: number;
     }
-  | { kind: "fleet.disband"; expectedRevision: number; fleetId: string };
+  | { kind: "fleet.disband"; expectedRevision: number; fleetId: string }
+  | {
+      kind: "fleet.load" | "fleet.unload";
+      expectedRevision: number;
+      fleetId: string;
+      infantry: number;
+    };
 export interface FleetOrder {
   id: string;
   uid: string;
@@ -28,12 +34,13 @@ export interface FleetOrder {
   fighters: number;
   infantry: number;
   fleetId: string | null;
+  cargo?: "load" | "unload";
 }
 export interface FleetOutcome {
   id: string;
   starId: string;
   fleetId: string;
-  result: "formed" | "disbanded" | "invalid";
+  result: "formed" | "disbanded" | "loaded" | "unloaded" | "invalid";
   fighters: number;
   infantry: number;
 }
@@ -48,7 +55,10 @@ export function fleetIdentity(uid: string, commandId: string) {
 export function reservedForces(state: Campaign, uid: string, starId: string) {
   const orders =
     state.military?.orders.filter(
-      (o) => o.uid === uid && o.starId === starId && o.fleetId === null,
+      (o) =>
+        o.uid === uid &&
+        o.starId === starId &&
+        (o.fleetId === null || o.cargo === "load"),
     ) ?? [];
   return orders.reduce(
     (sum, o) => ({
@@ -85,7 +95,9 @@ export function orderFleet(
       ? ["kind", "expectedRevision", "starId", "fighters", "infantry"]
       : a.kind === "fleet.disband"
         ? ["kind", "expectedRevision", "fleetId"]
-        : [];
+        : a.kind === "fleet.load" || a.kind === "fleet.unload"
+          ? ["kind", "expectedRevision", "fleetId", "infantry"]
+          : [];
   if (
     !keys.length ||
     Object.keys(a).length !== keys.length ||
@@ -103,6 +115,12 @@ export function orderFleet(
   if (current.pausedAt != null) throw new Error("paused");
   const next = structuredClone(current);
   next.military ??= { fleets: {}, orders: [], ledger: {} };
+  const cargo =
+    a.kind === "fleet.load"
+      ? "load"
+      : a.kind === "fleet.unload"
+        ? "unload"
+        : undefined;
   let starId: string,
     fighters: number,
     infantry: number,
@@ -150,8 +168,34 @@ export function orderFleet(
     ({ starId, fighters, infantry } = fleet);
     fleetId = fleet.id;
     const system = next.systems[starId];
-    if (system.orbit !== uid || (infantry > 0 && system.surface !== uid))
+    if (
+      system.orbit !== uid ||
+      ((cargo || infantry > 0) && system.surface !== uid)
+    )
       throw new Error("permission");
+    if (cargo) {
+      if (
+        !Number.isSafeInteger(a.infantry) ||
+        (a.infantry as number) < 1 ||
+        (a.infantry as number) > rules.maximumUnitsPerPlayerPerType
+      )
+        throw new Error("invalid");
+      fighters = 0;
+      infantry = a.infantry as number;
+      if (cargo === "load") {
+        if (
+          fleet.infantry + infantry >
+          fleet.fighters * rules.infantryCapacityPerFighter
+        )
+          throw new Error("fleet-capacity");
+        if (
+          infantry >
+          system.infantry - reservedForces(next, uid, starId).infantry
+        )
+          throw new Error("insufficient-forces");
+      } else if (infantry > fleet.infantry)
+        throw new Error("insufficient-forces");
+    }
     if (next.military.orders.some((o) => o.fleetId === fleetId))
       throw new Error("fleet-order-pending");
   }
@@ -165,6 +209,7 @@ export function orderFleet(
     fighters,
     infantry,
     fleetId,
+    ...(cargo ? { cargo } : {}),
   });
   return next;
 }
@@ -204,13 +249,31 @@ export function settleFleets(state: Campaign, tick: number) {
         valid &&
         !!fleet &&
         fleet.uid === order.uid &&
-        fleet.starId === order.starId &&
-        fleet.fighters === order.fighters &&
-        fleet.infantry === order.infantry;
-      if (valid) {
-        system.fighters += fleet.fighters;
-        system.infantry += fleet.infantry;
-        delete military.fleets[fleet.id];
+        fleet.starId === order.starId;
+      if (order.cargo) {
+        valid =
+          valid &&
+          (order.cargo === "load"
+            ? system.infantry >= order.infantry &&
+              fleet.infantry + order.infantry <=
+                fleet.fighters * rules.infantryCapacityPerFighter
+            : fleet.infantry >= order.infantry);
+        if (valid) {
+          const delta =
+            order.cargo === "load" ? order.infantry : -order.infantry;
+          fleet.infantry += delta;
+          system.infantry -= delta;
+        }
+      } else {
+        valid =
+          valid &&
+          fleet.fighters === order.fighters &&
+          fleet.infantry === order.infantry;
+        if (valid) {
+          system.fighters += fleet.fighters;
+          system.infantry += fleet.infantry;
+          delete military.fleets[fleet.id];
+        }
       }
     }
     military.ledger[order.uid] ??= [];
@@ -219,9 +282,13 @@ export function settleFleets(state: Campaign, tick: number) {
       starId: order.starId,
       fleetId: order.fleetId ?? fleetIdentity(order.uid, order.id),
       result: valid
-        ? order.fleetId === null
-          ? "formed"
-          : "disbanded"
+        ? order.cargo === "load"
+          ? "loaded"
+          : order.cargo === "unload"
+            ? "unloaded"
+            : order.fleetId === null
+              ? "formed"
+              : "disbanded"
         : "invalid",
       fighters: order.fighters,
       infantry: order.infantry,
@@ -244,14 +311,25 @@ export function militaryView(state: Campaign, uid: string) {
       })),
     orders: (state.military?.orders ?? [])
       .filter((o) => o.uid === uid)
-      .map(({ id, starId, fighters, infantry, fleetId, effectiveTick }) => ({
-        id,
-        starId,
-        fighters,
-        infantry,
-        fleetId,
-        effectiveTick,
-      })),
+      .map(
+        ({
+          id,
+          starId,
+          fighters,
+          infantry,
+          fleetId,
+          effectiveTick,
+          cargo,
+        }) => ({
+          id,
+          starId,
+          fighters,
+          infantry,
+          fleetId,
+          effectiveTick,
+          ...(cargo ? { cargo } : {}),
+        }),
+      ),
     ledger: structuredClone(state.military?.ledger[uid] ?? []),
   };
 }

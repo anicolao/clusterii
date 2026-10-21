@@ -402,7 +402,10 @@ async function handleCampaign(
           context(gameId, revision, "canonical", epoch),
         );
         next =
-          action.kind === "fleet.form" || action.kind === "fleet.disband"
+          action.kind === "fleet.form" ||
+          action.kind === "fleet.disband" ||
+          action.kind === "fleet.load" ||
+          action.kind === "fleet.unload"
             ? orderFleet(current, action, uid, commandId, Date.now())
             : maintenance
               ? maintainCampaign(current, action, uid, now)

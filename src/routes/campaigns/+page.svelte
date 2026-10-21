@@ -1,4 +1,8 @@
 <script lang="ts">
+  import {
+    fleetSettlementFeedback,
+    type AcceptedFleetCommand,
+  } from "$lib/fleet-feedback";
   import { ReceiptMismatch } from "@shared/command-receipt";
   import {
     campaignFeedback,
@@ -54,6 +58,7 @@
   let faction = $state<FactionId>("heliac");
   let joinTab = $state<"faction" | "portrait" | "briefing">("faction");
   let pending = $state<PendingCampaign | null>(null);
+  let acceptedFleetCommand = $state<AcceptedFleetCommand | null>(null);
   let busy = $state(false);
   let message = $state("");
   let commandKind = $state("");
@@ -67,6 +72,15 @@
   let stopReceipt = () => {};
   let timer: ReturnType<typeof setTimeout>;
   const game = $derived(games.find((g) => g.id === selected));
+  $effect(() => {
+    if (!view || !acceptedFleetCommand || pending) return;
+    const feedback = fleetSettlementFeedback(view, acceptedFleetCommand);
+    if (!feedback) return;
+    message = feedback.message;
+    error = feedback.error;
+    remedy = feedback.remedy;
+    acceptedFleetCommand = null;
+  });
   $effect(() => {
     if (game?.migration && pending?.kind === "campaign.migrate") {
       clearTimeout(timer);
@@ -98,6 +112,11 @@
     const session = generation;
     let focused = false;
     stopView();
+    if (selected !== id && !pending && commandKind.startsWith("fleet.")) {
+      acceptedFleetCommand = null;
+      commandKind = "";
+      message = "";
+    }
     selected = id;
     void goto(`${base}/campaigns/?campaign=${encodeURIComponent(id)}`, {
       replaceState: true,
@@ -201,6 +220,7 @@
           view = null;
           selected = requestedCampaign(location.search);
           pending = null;
+          acceptedFleetCommand = null;
           busy = false;
           error = "";
           message = "";
@@ -242,6 +262,14 @@
         clearTimeout(timer);
         busy = false;
         pending = null;
+        acceptedFleetCommand =
+          receipt.status === "accepted" && command.kind.startsWith("fleet.")
+            ? {
+                id: command.id,
+                gameId: command.gameId,
+                revision: receipt.revision,
+              }
+            : null;
         const feedback = campaignFeedback(command.kind, receipt);
         message = feedback.message;
         error = feedback.error;
@@ -255,6 +283,8 @@
             "market.focus",
             "fleet.form",
             "fleet.disband",
+            "fleet.load",
+            "fleet.unload",
             "construction.build",
             "construction.cancel",
           ].includes(command.kind)
@@ -272,6 +302,7 @@
   }
   async function send(id: string, action: CampaignAction) {
     if (busy || pending) return;
+    acceptedFleetCommand = null;
     commandKind = action.kind;
     message = "";
     busy = true;
@@ -299,6 +330,11 @@
     }
   }
   async function back() {
+    if (!pending && commandKind.startsWith("fleet.")) {
+      acceptedFleetCommand = null;
+      commandKind = "";
+      message = "";
+    }
     stopView();
     selection++;
     view = null;
@@ -343,6 +379,13 @@
           expectedRevision: view!.revision,
           starId,
           fighters,
+          infantry,
+        })}
+      oncargo={(fleetId, operation, infantry) =>
+        send(view!.id, {
+          kind: operation === "load" ? "fleet.load" : "fleet.unload",
+          expectedRevision: view!.revision,
+          fleetId,
           infantry,
         })}
       ondisband={(fleetId) =>

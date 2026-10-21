@@ -66,7 +66,12 @@ export function observationFrame(time:number){return campaignView(time>=3200?obs
 const fleetQueued=orderFleet(productionStart,{kind:'fleet.form',expectedRevision:productionStart.revision,starId:productionStart.seats[0].home!,fighters:2,infantry:10},'scheduled-0','fleet-demo',productionStart.economy!.nextTickAt-1);
 const fleetFormed=produce(fleetQueued,fleetQueued.economy!);
 export function fleetFrame(time:number){return campaignView(time>=3200?{...fleetFormed.campaign,economy:fleetFormed.economy}:time>=2200?fleetQueued:productionStart,'scheduled-0');}
+const cargoSource={...fleetFormed.campaign,economy:fleetFormed.economy};
+const cargoQueued=orderFleet(cargoSource,{kind:"fleet.load",expectedRevision:cargoSource.revision,fleetId:Object.keys(cargoSource.military!.fleets)[0],infantry:3},"scheduled-0","cargo-demo",cargoSource.economy!.nextTickAt-1);
+const cargoLoaded=produce(cargoQueued,cargoQueued.economy!);
+export function cargoFrame(time:number){return campaignView(time>=3200?{...cargoLoaded.campaign,economy:cargoLoaded.economy}:time>=2200?cargoQueued:cargoSource,"scheduled-0");}
 export const scenarios = [
+ {id:"cargo",label:"Fleet cargo: pending → reconnect → reserved → loaded",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("fleet.load",{status:"accepted"})},{at:3200,feedback:{message:"Infantry loaded. Forces remain conserved.",error:"",remedy:"none"}}]},
  {id:'fleet',label:'Fleet: pending → reconnect → reserved → formed',frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:'',error:campaignNetworkMessage,remedy:'network'}},{at:2200,feedback:campaignFeedback('fleet.form',{status:'accepted'})},{at:3200,feedback:{message:'Fleet formed. Forces remain conserved.',error:'',remedy:'none'}}]},
  {id:"observation",label:"Observation: unknown → current → stale",frames:[{at:0,feedback:{message:"No observation acquired.",error:"",remedy:"none"}},{at:1200,feedback:{message:"Observation acquired at tick 1.",error:"",remedy:"none"}},{at:3200,feedback:{message:"Scan missed. Prior observation remains historical.",error:"",remedy:"none"}}]},
  {id:"market-focus",label:"Market focus: pending → reconnect → accepted → applied",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("market.focus",{status:"accepted"})},{at:3200,feedback:{message:"Focus applied. New dividend weights begin next tick.",error:"",remedy:"none"}}]},

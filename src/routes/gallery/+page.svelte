@@ -24,6 +24,7 @@
     constructionFrame,
     focusFrame,
     fleetFrame,
+    cargoFrame,
     observationFrame,
     observedTarget,
     legacyProductionView,
@@ -215,10 +216,38 @@
               : ""}
             onform={() => {}}
             ondisband={() => {}}
+            oncargo={() => {}}
             onclose={() => {}}
             onretry={() => {}}
           />
         </div>{/each}
+      <h2>Fleet cargo · shared load and unload controls</h2>
+      <p>
+        Select the stationed fleet, then Load or Unload to inspect the manifest
+        controls in each state.
+      </p>
+      {#each ["ready", "pending", "error", "paused", "loaded"] as state}{@const sample =
+          cargoFrame(state === "loaded" ? 3400 : state === "ready" ? 0 : 2400)}
+        <h3>Cargo · {state}</h3>
+        <div
+          style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <SystemFleets
+            view={state === "paused" ? { ...sample, pausedAt: 1 } : sample}
+            starId={sample.own.home!}
+            pending={state === "pending" || state === "error"}
+            message={state === "pending" ? "Awaiting acknowledgement…" : ""}
+            error={state === "error"
+              ? "The connection was interrupted. Your cargo and pending order are preserved."
+              : ""}
+            onform={() => {}}
+            ondisband={() => {}}
+            oncargo={() => {}}
+            onclose={() => {}}
+            onretry={() => {}}
+          />
+        </div>
+      {/each}
       <h2>Stellar observations · entitled report states</h2>
       {#each [0, 1200, 3400] as time}<div
           style="max-width:420px;padding:20px;border:1px solid #42616d;margin-bottom:20px"
