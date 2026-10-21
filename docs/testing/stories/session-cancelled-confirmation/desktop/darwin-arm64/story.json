@@ -1,0 +1,207 @@
+{
+  "id": "session-cancelled-confirmation",
+  "title": "Cancel confirmation and then end both device sessions",
+  "inventory": [
+    "UX-01",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "One commander uses two independent authenticated devices. Saved identity survives account-wide sign-out; an unsaved draft remains while confirmation is cancelled. Both devices show the acknowledged session end before fresh sign-in recovers the saved identity.",
+  "source": {
+    "commit": "20a7cff123b7b8f4a017b6739f3d84bca377a855",
+    "dirty": true,
+    "spec": "tests/browser/session-recovery.story.spec.ts",
+    "specSha256": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "two-device-start",
+      "description": "Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "account-entry",
+      "description": "The signed-in entry provides device management while the other device retains its draft.",
+      "actor": "Commander · first device",
+      "kind": "player",
+      "acknowledgement": "Your devices is available.",
+      "verifications": [
+        "Saved identity has one revision, one version and one acknowledged receipt."
+      ],
+      "views": [
+        {
+          "player": "Commander · first device",
+          "image": "002-account-entry-1-commander-first-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander · second device",
+          "image": "002-account-entry-2-commander-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "open-devices",
+      "description": "Open account-wide sign-out confirmation.",
+      "actor": "Commander · first device",
+      "kind": "player",
+      "acknowledgement": "The device panel asks for Google confirmation.",
+      "verifications": [
+        "Saved identity has one revision, one version and one acknowledged receipt."
+      ],
+      "views": [
+        {
+          "player": "Commander · first device",
+          "image": "003-open-devices-1-commander-first-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-devices",
+      "description": "Close the panel and return focus to its opening control.",
+      "actor": "Commander · first device",
+      "kind": "player",
+      "acknowledgement": "Your devices regains keyboard focus.",
+      "verifications": [
+        "Saved identity has one revision, one version and one acknowledged receipt."
+      ],
+      "views": [
+        {
+          "player": "Commander · first device",
+          "image": "004-close-devices-1-commander-first-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "cancel-confirmation",
+      "description": "Reopen devices and cancel the Google confirmation popup. No session has ended.",
+      "actor": "Commander · first device",
+      "kind": "player",
+      "acknowledgement": "The uncertain completion alert receives focus.",
+      "verifications": [
+        "Saved identity has one revision, one version and one acknowledged receipt.",
+        "The second device still holds its unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Commander · first device",
+          "image": "005-cancel-confirmation-1-commander-first-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander · second device",
+          "image": "005-cancel-confirmation-2-commander-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "end-both-sessions",
+      "description": "Confirm account-wide sign-out. Both devices acknowledge the ended session and discard their editors.",
+      "actor": "Commander · first device",
+      "kind": "player",
+      "acknowledgement": "Both devices acknowledge session end and focus Play.",
+      "verifications": [
+        "Saved identity has one revision, one version and one acknowledged receipt."
+      ],
+      "views": [
+        {
+          "player": "Commander · first device",
+          "image": "006-end-both-sessions-1-commander-first-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander · second device",
+          "image": "006-end-both-sessions-2-commander-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "auth-time-boundary",
+      "description": "Firebase auth_time uses whole seconds. Wait until a fresh sign-in is strictly after the acknowledged revocation cutoff; this changes no service clock or state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "fresh-sign-in",
+      "description": "Sign in again and recover the saved identity, not the other device’s discarded draft.",
+      "actor": "Commander · first device",
+      "kind": "player",
+      "acknowledgement": "The saved commander identity is restored.",
+      "verifications": [
+        "Saved identity has one revision, one version and one acknowledged receipt.",
+        "Recovered identity does not claim a new save from the ended session."
+      ],
+      "views": [
+        {
+          "player": "Commander · first device",
+          "image": "008-fresh-sign-in-1-commander-first-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Commander · second device",
+          "image": "008-fresh-sign-in-2-commander-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-identity",
+      "description": "Reload and reopen identity without saving another revision.",
+      "actor": "Commander · first device",
+      "kind": "player",
+      "acknowledgement": "The same saved identity survives reload.",
+      "verifications": [
+        "Saved identity has one revision, one version and one acknowledged receipt."
+      ],
+      "views": [
+        {
+          "player": "Commander · first device",
+          "image": "009-reload-identity-1-commander-first-device.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

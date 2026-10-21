@@ -1,0 +1,9 @@
+# Device recovery baseline review
+
+Implementer review, 2026-10-21. Eight local journeys generate 104 ordered captures in 2.9 minutes: four cancellation journeys with 11 captures each and four interrupted-worker journeys with 15 each. The contact sheets were inspected at phone, desktop, large and short sizes. Both-device views distinguish retained unsent draft, uncertain completion, persisted recovery, ended sessions and restored saved identity. Phone error and confirmation text remain legible and contained; short panels retain the action and close control. The compact 4K panels retain the existing composition and remain an independent composition-review gap.
+
+The first draft omitted four required verification arrays and failed before completing those stories. Its traces remain at `/tmp/cluster-session-story-before`. The corrected pre-feedback run passed but visual review found stale “Identity saved” text after fresh sign-in. Those captures remain at `/tmp/cluster-session-feedback-before`; the account observer now clears session-scoped profile feedback. The final generation additionally asserts that the recovered editor has no save acknowledgement while canonical revision, version and receipt counts stay at one. No expected image is used to excuse that stale message.
+
+Promotion is separate from exact comparison. These candidates do not certify Linux rendering, hosted Google revocation, normal-motion parity, native mobile keyboards or full independent visual acceptance. The real-service worker interruption is explicitly labeled test control, not a mocked outcome.
+
+Exact local comparison passes 12 combined journeys/124 captures, including all eight session journeys and the four unchanged commander-identity stories. The assertion forbidding stale save feedback passes after fresh authentication; no existing identity baseline changed.
