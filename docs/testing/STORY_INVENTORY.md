@@ -233,3 +233,12 @@ Eight local exact component stories/64 captures inspect scheduled/delayed/begun 
 - desktop: [Scheduled start](stories/scheduled-start-lab/desktop/darwin-arm64/README.md), [Session ending](stories/session-ending-lab/desktop/darwin-arm64/README.md).
 - large: [Scheduled start](stories/scheduled-start-lab/large/darwin-arm64/README.md), [Session ending](stories/session-ending-lab/large/darwin-arm64/README.md).
 - short: [Scheduled start](stories/scheduled-start-lab/short/darwin-arm64/README.md), [Session ending](stories/session-ending-lab/short/darwin-arm64/README.md).
+
+## Research lab narratives
+
+Four local exact component stories/96 captures cover pending, reconnect, scheduled and applied selections, keyboard history disclosure and retained-choice submission focus. These reducer-derived specimens are not live production/authorization evidence. The remaining procedural lab/service branches are unchanged; Linux and independent review stay open.
+
+- phone: [Research selection](stories/research-selection-lab/phone/darwin-arm64/README.md).
+- desktop: [Research selection](stories/research-selection-lab/desktop/darwin-arm64/README.md).
+- large: [Research selection](stories/research-selection-lab/large/darwin-arm64/README.md).
+- short: [Research selection](stories/research-selection-lab/short/darwin-arm64/README.md).

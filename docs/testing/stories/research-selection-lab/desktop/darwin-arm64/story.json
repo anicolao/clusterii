@@ -1,0 +1,345 @@
+{
+  "id": "research-selection-lab",
+  "title": "Inspect research selection, acknowledgement and applied history",
+  "inventory": [
+    "UX-06",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer uses the shipped CampaignResearch component and shared reducer-derived lab scenario. Browser playback is a component fixture, not live order admission, production delivery or authorization evidence. Both motion modes retain the same outcome; the existing service journey remains separate.",
+  "source": {
+    "commit": "5394322b004c7608e09b35b63a9ffb5a233039bc",
+    "dirty": true,
+    "spec": "tests/browser/research-lab.story.spec.ts",
+    "specSha256": "3c4a67c4428fe938f4991d75d552fda67cacfb12de4e22b02359529569de0f9a"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "presentation-clock",
+      "description": "Freeze browser playback only. The scenario calls the existing production reducers with its declared lab data; no campaign service or live account is invoked.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "pending",
+      "description": "Inspect the pending research frame and compare both motion presentations.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both component feedback panels report “Awaiting acknowledgement”.",
+      "verifications": [
+        "Pending disables selection; recovery offers retry; accepted and applied orders remain distinct with the exact investing tick."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard research selection",
+          "image": "002-pending-1-developer-standard-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · standard research outcome",
+          "image": "002-pending-2-developer-standard-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research selection",
+          "image": "002-pending-3-developer-reduced-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research outcome",
+          "image": "002-pending-4-developer-reduced-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interrupted",
+      "description": "Inspect the interrupted research frame and compare both motion presentations.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both component feedback panels report “preserved”.",
+      "verifications": [
+        "Pending disables selection; recovery offers retry; accepted and applied orders remain distinct with the exact investing tick."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard research selection",
+          "image": "003-interrupted-1-developer-standard-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · standard research outcome",
+          "image": "003-interrupted-2-developer-standard-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research selection",
+          "image": "003-interrupted-3-developer-reduced-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research outcome",
+          "image": "003-interrupted-4-developer-reduced-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scheduled",
+      "description": "Inspect the scheduled research frame and compare both motion presentations.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both component feedback panels report “Research order accepted”.",
+      "verifications": [
+        "Pending disables selection; recovery offers retry; accepted and applied orders remain distinct with the exact investing tick."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard research selection",
+          "image": "004-scheduled-1-developer-standard-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · standard research outcome",
+          "image": "004-scheduled-2-developer-standard-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research selection",
+          "image": "004-scheduled-3-developer-reduced-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research outcome",
+          "image": "004-scheduled-4-developer-reduced-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applied",
+      "description": "Inspect the applied research frame and compare both motion presentations.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both component feedback panels report “Research applied at tick 1”.",
+      "verifications": [
+        "Pending disables selection; recovery offers retry; accepted and applied orders remain distinct with the exact investing tick."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard research selection",
+          "image": "005-applied-1-developer-standard-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · standard research outcome",
+          "image": "005-applied-2-developer-standard-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research selection",
+          "image": "005-applied-3-developer-reduced-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research outcome",
+          "image": "005-applied-4-developer-reduced-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applied-history",
+      "description": "Open the actual applied-selection disclosure by keyboard in both panes.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both opened histories identify the applied investing order at tick one.",
+      "verifications": [
+        "The applied history does not reintroduce an outstanding order."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard research selection",
+          "image": "006-applied-history-1-developer-standard-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · standard research outcome",
+          "image": "006-applied-history-2-developer-standard-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research selection",
+          "image": "006-applied-history-3-developer-reduced-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research outcome",
+          "image": "006-applied-history-4-developer-reduced-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "queue-preserved-choice",
+      "description": "Choose investing and activate Queue by keyboard. The lab resets to pending while the actual component retains its choice and moves focus to acknowledgement.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The component retains investing, disables repeat submission and focuses the acknowledgement group.",
+      "verifications": [
+        "Reset removes applied history and the retained choice remains a local component selection, not a new acknowledged order."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard research selection",
+          "image": "007-queue-preserved-choice-1-developer-standard-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · standard research outcome",
+          "image": "007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research selection",
+          "image": "007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+          "verifications": [
+            "The labeled specimen and research heading are visible in this explicit upper document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced research outcome",
+          "image": "007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+          "verifications": [
+            "The commitment control and complete outcome are contained in this explicit lower document view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}
