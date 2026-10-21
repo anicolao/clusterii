@@ -15,3 +15,5 @@ Validation: 91 unit tests/1,536 assertions, five isolated browser-tool tests/nin
 Exact local verification passed all eight journeys/44 captures in 35.6 seconds; generated narratives and capture hashes are archived in `docs/testing/stories/`. The UI is unchanged. Linux candidates and comparisons remain pending.
 
 The first Linux workflow stopped before tests because the pinned Playwright image lacks `unzip`, which Bun setup requires. The workflow now installs that archive utility explicitly; no browser or font package is changed. Baseline generation and exact verification remain pending.
+
+After archive setup, Linux generation reached all stories but provenance writing failed Git’s ownership check in the container. The workflow now explicitly trusts only its checked-out workspace for Git metadata, preserving the source-revision requirement. Failure log: `/tmp/cluster-story-linux-generate-first.log`. No candidates from that failed run are promoted.

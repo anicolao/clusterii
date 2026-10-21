@@ -20,6 +20,8 @@ jobs:
       CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
     steps:
       - uses: actions/checkout@v4
+      - name: Trust this checked-out workspace for story source provenance
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - uses: actions/setup-node@v4
         with:
           node-version: 22.20.0
