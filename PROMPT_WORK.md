@@ -144,3 +144,4 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | R
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Propagate the verified history focus cycle into private credit offers, preserving all supervisor and prompt histories.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Merge the predecessor history correction and replace its legacy regression with guarded, multi-viewpoint illustrated recovery stories.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Correct synthetic-merge prompt ancestry validation and isolate catalogue instrumentation to the demo Functions runtime after reproduced CI failures.
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Promote separately inspected pinned Linux story candidates for strict verification, preserving generation and acceptance as distinct gates.

@@ -27,3 +27,5 @@ GitHub’s synthetic merge exposed a prompt-check ancestry gap: path-simplified 
 Linux Node 22 also exposed loader interference with Playwright before story execution. Catalogue instrumentation now registers only in the demo Functions Emulator runtime, rather than installing a pass-through hook in every Node child. Production seed/key generation remains untouched; the loader still rejects signature and environment drift. Failure log: `/tmp/cluster-story-linux-generation2.log`.
 
 After runtime scoping, all four history journeys still pass exact comparison in 43.9 seconds against the existing reviewed images (`/tmp/cluster-history-runtime-isolation.log`). No baselines were regenerated for this fix. Six story policy/catalogue guards pass.
+
+Pinned Linux generation now passes 12 stories/86 captures in 2.2 minutes (run 39613924633). The implementer reviewed and promoted its distinct linux-arm64 candidates; a separate exact comparison remains pending. The missing-baseline verification failure is retained and no thresholds, masks or retries were relaxed.
