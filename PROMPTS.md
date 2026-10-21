@@ -349,3 +349,24 @@ Reviewer CI finding: PR #13 at 76ec04b failed verification run 39517211446. All 
 Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and the 2026-10-20 20:36 checkpoint in meta-prompts.md.
 
 Reviewer rollout direction within the existing implementation authorization: preserve existing development campaigns on their recorded behavior; implement production for newly created campaigns with an explicit stored rules/schema capability boundary. Do not reconstruct unrecorded historical pause intervals or retroactively award production. Document the compatibility policy and show a clear explanation when an older campaign lacks production; retain its history/access and allow normal creation of new development campaigns. This is a conservative reviewer implementation choice, not new human approval of game rules. Continue the production tracer bullet and both-mode authorization/repeat-safe tick/catch-up/ledger verification; a future explicit migration can be reviewed separately. Log this attributed instruction and latest meta-prompts.md, commit/push, and never merge.
+
+
+## Prompt 33: Recovery Continuation
+
+Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and the 2026-10-20 22:57 checkpoint in meta-prompts.md.
+
+Reviewer recovery checkpoint: the model-capacity error stopped this turn. Retry the current construction work from its existing state; do not repeat historical handoffs. The old schema rollout instruction is already implemented and logged. PR #17 is now green; #18 verification remains pending. Resume diagnosing construction completion settlement (zero instead of five ticks), inspect existing background journey output first, preserve tests and drafts, then complete review evidence and stacked PR. Record this attributed continuation and current main meta-prompts.md in the related commit/push; never merge.
+
+
+## Prompt 34: Availability Retry
+
+Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and the 2026-10-20 23:07 checkpoint in meta-prompts.md.
+
+Reviewer availability retry: resume the existing construction work and 22:57 recovery checkpoint if capacity has returned. PR #18 is now green. Background construction-browser.log finished with the production journey passing in 29.0 minutes and one lab geometry failure (the previously corrected document-scroll helper); reconcile against the newer passing lab run rather than repeating resolved work. Construction completion settlement remains unverified. Preserve current edits, carry main meta-prompts.md into the next commit, and continue without merging.
+
+
+## Prompt 35: Construction Feedback
+
+Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and the 2026-10-20 23:17 checkpoint in meta-prompts.md.
+
+Reviewer visual finding: retained docs/ux/reviews/construction/construction-phone.png shows “Your seat is confirmed.” in the construction commitment footer. Scope feedback to the relevant action/panel so a previous join/research acknowledgement cannot appear as construction feedback. Preserve actual build/cancel pending, acceptance and error messages; refresh the affected captures after fixing. The composition/art and fixed cost/balance/actions otherwise look readable in this phone sample. Log this attributed finding and carry latest meta-prompts.md into the related commit/push; continue completion validation, no merge.

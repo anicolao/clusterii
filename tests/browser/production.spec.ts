@@ -16,6 +16,18 @@ test('four commanders receive authoritative production after the real scheduled 
   const deliver=async(name:string)=>{const response=await request.post(`http://127.0.0.1:15001/demo-clusterii/us-central1/${name}-0`,{headers:{'X-CloudScheduler-JobName':'emulator-production-journey','X-CloudScheduler-ScheduleTime':new Date().toISOString()}});expect(response.ok()).toBe(true);};
   await deliver('startScheduledCampaigns');
   for(const page of pages){await expect(page.getByText('Campaign begun',{exact:true})).toBeVisible();if(page!==pages[0])await page.getByRole('button',{name:'Economy',exact:true}).click();await expect(page.getByRole('dialog',{name:'Empire economy panel'})).toContainText('First production pending');}
+  await pages[0].getByRole('button',{name:'Return to galaxy',exact:true}).click();
+  await pages[0].getByRole('button',{name:'Develop',exact:true}).click();
+  const construction=pages[0].getByRole('dialog',{name:'System construction panel'});
+  for(const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['short',1280,720],['4k',3840,2160]] as const){
+   await pages[0].setViewportSize({width,height});const action=construction.getByRole('button',{name:'Build market',exact:true});const box=await action.boundingBox();expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(height);
+   await construction.getByRole('radio',{name:/Market/}).focus();for(const name of ['training camp','base','space station','market']){await pages[0].keyboard.press('ArrowDown');const target=construction.getByRole('button',{name:'Build '+name,exact:true});const rail=await target.boundingBox();expect(rail!.y).toBeGreaterThanOrEqual(0);expect(rail!.y+rail!.height).toBeLessThanOrEqual(height);}
+   await geometry(pages[0],construction);await construction.getByRole('region',{name:'Construction details'}).evaluate(el=>el.scrollTo(0,0));const path=info.outputPath(`construction-${label}.png`);await pages[0].screenshot({path});await info.attach(`Construction ${label}`,{path,contentType:'image/png'});
+  }
+  await construction.getByRole('button',{name:'Build market',exact:true}).click();await expect(construction).toContainText('Construction order accepted.');await expect(construction.locator('header')).toContainText('94');await expect(construction).toContainText('Queued · eligible tick 1');
+  await pages[0].reload();await pages[0].getByRole('button',{name:'Develop',exact:true}).click();await expect(construction).toContainText('Queued · eligible tick 1');
+  await construction.getByRole('button',{name:'Cancel market order',exact:true}).click();await expect(construction).toContainText('Cancellation accepted.');await expect(construction).toContainText('Cancellation queued for tick 1');
+  await pages[0].keyboard.press('Escape');await expect(pages[0].getByRole('button',{name:'Develop',exact:true})).toBeFocused();await pages[0].getByRole('button',{name:'Economy',exact:true}).click();
   const researchPanel=pages[0].getByRole('dialog',{name:'Empire economy panel'});
   await researchPanel.getByRole('radio',{name:/investing/}).check();
   for(const [width,height] of [[393,852],[1440,1000],[1280,720],[3840,2160]]) {
@@ -34,6 +46,7 @@ test('four commanders receive authoritative production after the real scheduled 
   remaining=900000-Date.now()%900000+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for actual first production.`);await new Promise(r=>setTimeout(r,remaining));
   const tray=pages[0].getByRole('dialog',{name:'Empire economy panel'});await expect(tray.getByRole('status',{name:'Production schedule'})).toContainText('Awaiting next tick.');
   await deliver('runProduction');await deliver('runProduction');
+  await pages[0].getByRole('button',{name:'Return to galaxy',exact:true}).click();await pages[0].getByRole('button',{name:'Develop',exact:true}).click();await expect(construction).toContainText('Market · cancelled · 106 credits returned');await expect(construction.locator('header')).toContainText('202.8');await construction.getByRole('button',{name:'Back to galaxy',exact:true}).click();await pages[0].getByRole('button',{name:'Economy',exact:true}).click();
   for(const page of pages){const panel=page.getByRole('dialog',{name:'Empire economy panel'});await expect(panel).toContainText('Confirmed tick 1');await expect(panel.locator('.balance strong')).toHaveText('202.8');await expect(panel.getByRole('progressbar',{name:'Science towards next level'})).toHaveAttribute('value','1400');}
   await expect(researchPanel.getByRole('status',{name:'Applied research order'})).toContainText('investing applied at tick 1.');
   for(const [label,width,height] of [['phone',393,852],['desktop',1440,1000],['short',1280,720],['4k',3840,2160]] as const) {

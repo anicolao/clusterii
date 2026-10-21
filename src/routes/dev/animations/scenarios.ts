@@ -19,7 +19,7 @@ const invalid = receiptFeedback(receipt(1, 1, 'A'.repeat(25)));
 const pending = { message: pendingMessage, error: '', remedy: 'none' };
 const reconnect = { message: '', error: networkMessage, remedy: 'network' };
 import { campaignFeedback, campaignPendingMessage, campaignNetworkMessage } from '$lib/campaign-feedback';
-import { selectResearch, createCampaign, joinOrLeave, maintainCampaign, activateEncryptionEpoch, startCampaign, campaignDirectory, campaignView } from '@shared/campaign';
+import { orderConstruction, selectResearch, createCampaign, joinOrLeave, maintainCampaign, activateEncryptionEpoch, startCampaign, campaignDirectory, campaignView } from '@shared/campaign';
 const campaign = createCampaign('lab', {kind:'campaign.create',expectedRevision:0,name:'Lab scenario',capacity:4,mode:'mock',development:true},'d'.repeat(64),0);
 function joinReceipt(revision:number) {
   try {joinOrLeave(campaign,{kind:'campaign.join',expectedRevision:revision,faction:'heliac'},'lab',{alias:'Envoy',portrait:'G1'},0);return campaignFeedback('campaign.join',{status:'accepted'});}
@@ -50,7 +50,12 @@ export const legacyProductionView = campaignView({...productionStart,schemaVersi
 const researchQueued=selectResearch(productionStart,{kind:"research.select",expectedRevision:productionStart.revision,target:"investing"},"scheduled-0","lab-research",productionStart.economy!.nextTickAt-1);
 const researchSettled=produce(researchQueued,researchQueued.economy!);
 export function researchFrame(time:number) {return campaignView(time>=3200?{...researchSettled.campaign,economy:researchSettled.economy}:time>=2200?researchQueued:productionStart,"scheduled-0").economy!.research;}
+const constructionQueued=orderConstruction(productionStart,{kind:"construction.build",expectedRevision:productionStart.revision,starId:productionStart.seats[0].home!,type:"market"},"scheduled-0","00000000-0000-0000-0000-000000000001",productionStart.economy!.nextTickAt-1);
+let constructionCompleted=constructionQueued;
+for(let tick=0;tick<5;tick++){const result=produce(constructionCompleted,constructionCompleted.economy!);constructionCompleted={...result.campaign,economy:result.economy};}
+export function constructionFrame(time:number){return campaignView(time>=3200?constructionCompleted:time>=2200?constructionQueued:productionStart,"scheduled-0");}
 export const scenarios = [
+ {id:"construction",label:"Construction: pending → reconnect → reserved → completed",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("construction.build",{status:"accepted"})},{at:3200,feedback:{message:"Market completed. Production and dividends settled.",error:"",remedy:"none"}}]},
  {id:"research",label:"Research: pending → reconnect → scheduled → applied",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:campaignNetworkMessage,remedy:"network"}},{at:2200,feedback:campaignFeedback("research.select",{status:"accepted"})},{at:3200,feedback:{message:"Research applied at tick 1.",error:"",remedy:"none"}}]},
  {id:"production",label:"Production: due → confirmed ledger",frames:[{at:0,feedback:campaignPending},{at:2200,feedback:{message:"Production confirmed.",error:"",remedy:"none"}}]},
  {id:"history-recovery",label:"History: loading → reconnect → recovered",frames:[{at:0,feedback:campaignPending},{at:1000,feedback:{message:"",error:"History could not be recovered. Retry keeps your place.",remedy:"network"}},{at:2200,feedback:campaignPending},{at:3200,feedback:{message:"Campaign records recovered.",error:"",remedy:"none"}}]},

@@ -1,6 +1,8 @@
 <script lang="ts">
   import { tick, onDestroy } from "svelte";
   import type { Technology } from "@shared/production";
+  import SystemConstruction from "../SystemConstruction.svelte";
+  import type { Development } from "@shared/construction";
   import CampaignEconomy from "../CampaignEconomy.svelte";
   import CampaignHistory from "../CampaignHistory.svelte";
   import {
@@ -26,11 +28,14 @@
     onleave,
     onmaintenance,
     onresearch,
+    onbuild,
+    oncancel,
     onmigrate,
     realAvailable = false,
     migration = null,
     onretry,
     message = "",
+    commandKind = "",
     error = "",
     busy = false,
     pending = false,
@@ -41,15 +46,19 @@
     onleave?: () => void;
     onmaintenance?: () => void;
     onresearch?: (target: Technology) => void;
+    onbuild?: (starId: string, type: Development) => void;
+    oncancel?: (orderId: string) => void;
     onmigrate?: (mode: "mock" | "real") => void;
     realAvailable?: boolean;
     migration?: CampaignView["migration"];
     onretry?: () => void;
     message?: string;
+    commandKind?: string;
     error?: string;
     busy?: boolean;
     pending?: boolean;
   } = $props();
+  let construction = $state(false);
   let economy = $state(false);
   let history = $state(false);
   let records = $state<CampaignView[]>([]);
@@ -140,14 +149,20 @@
   );
   let query = $state("");
   let listing = $state(false);
-  async function openPanel(kind: "roster" | "systems" | "history" | "economy") {
+  async function openPanel(
+    kind: "roster" | "systems" | "history" | "economy" | "construction",
+  ) {
+    construction = kind === "construction";
     economy = kind === "economy";
     history = kind === "history";
     if (history && !records.length) void readHistory();
     roster = kind === "roster";
     listing = kind === "systems";
     await tick();
-    if (economy) document.querySelector<HTMLElement>(".economy-panel")?.focus();
+    if (construction)
+      document.querySelector<HTMLElement>(".construction-panel")?.focus();
+    else if (economy)
+      document.querySelector<HTMLElement>(".economy-panel")?.focus();
     else if (history)
       document.querySelector<HTMLElement>(".history-panel")?.focus();
     else if (listing) document.getElementById("system-search")?.focus();
@@ -163,16 +178,23 @@
     await tick();
     document.querySelector<HTMLElement>('[data-focus="economy"]')?.focus();
   }
+  async function closeConstruction() {
+    construction = false;
+    await tick();
+    document.querySelector<HTMLElement>('[data-focus="construction"]')?.focus();
+  }
   function panelKeys(event: KeyboardEvent) {
     if (event.key === "Escape") {
       event.preventDefault();
-      void (economy
-        ? closeEconomy()
-        : history
-          ? closeHistory()
-          : roster
-            ? closeRoster()
-            : closeList());
+      void (construction
+        ? closeConstruction()
+        : economy
+          ? closeEconomy()
+          : history
+            ? closeHistory()
+            : roster
+              ? closeRoster()
+              : closeList());
       return;
     }
     if (event.key !== "Tab") return;
@@ -215,7 +237,10 @@
 </script>
 
 <div class="galaxy-surface">
-  <header class="command-rail" inert={roster || listing || history || economy}>
+  <header
+    class="command-rail"
+    inert={roster || listing || history || economy || construction}
+  >
     <div>
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
       <span
@@ -242,7 +267,7 @@
   </header>
   {#if !roster}<div
       class="acknowledgement"
-      inert={listing || history || economy}
+      inert={listing || history || economy || construction}
     >
       <Feedback {message} {error} />{#if onretry}<ActionButton
           disabled={busy}
@@ -253,7 +278,7 @@
     </div>{/if}
   <div
     class="chart"
-    inert={roster || listing || history || economy}
+    inert={roster || listing || history || economy || construction}
     aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
   >
     <Canvas renderMode="on-demand"
@@ -268,7 +293,7 @@
     >
   </div>
   <aside
-    inert={roster || listing || history || economy}
+    inert={roster || listing || history || economy || construction}
     class="system-inspector"
     aria-label="Selected system"
   >
@@ -327,6 +352,12 @@
       </dl>
     </div>
     <div class="system-actions">
+      {#if holding && view.productionEnabled && onbuild}<ActionButton
+          class="secondary"
+          data-focus="construction"
+          aria-expanded={construction}
+          onclick={() => openPanel("construction")}>Develop</ActionButton
+        >{/if}
       <ActionButton
         class="secondary"
         onclick={() => openPanel("systems")}
@@ -347,6 +378,27 @@
       >
     </div>
   </aside>
+  {#if construction}<div
+      class="construction-panel"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      aria-label="System construction panel"
+      onkeydown={panelKeys}
+    >
+      <SystemConstruction
+        {view}
+        starId={star.id}
+        onbuild={(type) => onbuild?.(star.id, type)}
+        {oncancel}
+        onclose={closeConstruction}
+        {onretry}
+        {busy}
+        {pending}
+        message={commandKind.startsWith("construction.") ? message : ""}
+        {error}
+      />
+    </div>{/if}
   {#if economy}<div
       class="history-panel economy-panel"
       role="dialog"
@@ -466,6 +518,18 @@
 </div>
 
 <style>
+  .construction-panel {
+    position: absolute;
+    inset: 58px 0 0;
+    z-index: 6;
+    background: #06121a;
+    overflow: hidden;
+  }
+  @media (min-width: 2500px) {
+    .construction-panel {
+      top: 90px;
+    }
+  }
   .galaxy-surface {
     height: 100svh;
     min-height: 0;

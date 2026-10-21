@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import SystemConstruction from "$lib/components/SystemConstruction.svelte";
   import CampaignResearch from "$lib/components/CampaignResearch.svelte";
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
@@ -17,6 +18,7 @@
     historyRecords,
     productionFrame,
     researchFrame,
+    constructionFrame,
   } from "./scenarios";
   let selected = $state("accepted");
   let time = $state(0);
@@ -112,7 +114,22 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "research"}<CampaignResearch
+        {#if selected === "construction"}<div
+            style="height: min(800px, 85svh); min-height: 550px;"
+          >
+            <SystemConstruction
+              inspect={{ time: time - frame.at, reduced }}
+              view={constructionFrame(time)}
+              starId={constructionFrame(time).own.home!}
+              pending={time < 1000}
+              message={frame.feedback.message}
+              error={frame.feedback.error}
+              onbuild={() => {}}
+              oncancel={() => {}}
+              onclose={() => {}}
+            />
+          </div>
+        {:else if selected === "research"}<CampaignResearch
             research={researchFrame(time)}
             inspect={{ time: time - frame.at, reduced }}
             pending={time < 1000}

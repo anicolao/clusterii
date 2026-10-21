@@ -1,0 +1,60 @@
+{
+  "units": {
+    "passed": 27,
+    "assertions": 410
+  },
+  "service": {
+    "passed": 6,
+    "assertions": 386,
+    "seconds": 82.47,
+    "providers": [
+      "mock",
+      "AES-256-GCM with live Cloud KMS"
+    ],
+    "log": "/tmp/cluster-construction-live.log",
+    "coverage": "Quotes, foreign layer/forged field rejection, atomic reservation, concurrent/repeated completion, dividends, cancellation, pending reservation pause and both-direction migration with complete paged private history for all four recipients; production lease recovery/catch-up."
+  },
+  "browser": {
+    "ordinaryTimedJourney": {
+      "passed": 1,
+      "minutes": 29,
+      "log": "/tmp/cluster-construction-browser.log",
+      "cohortCaveat": "Combined run includes older lab-only document-scroll helper failure; separately corrected lab run passes."
+    },
+    "completionJourney": {
+      "passed": 1,
+      "minutes": 7.3,
+      "log": "/tmp/cluster-construction-completion-fixed.log",
+      "clock": "Ordinary UI admission and actual start boundary; five production ticks use real service with explicit test clock, no seeded game state."
+    },
+    "galleryLab": {
+      "passed": 6,
+      "seconds": 9.9,
+      "log": "/tmp/cluster-construction-final-lab.log"
+    },
+    "finalMotion": {
+      "passed": 1,
+      "log": "/tmp/cluster-construction-motion.log"
+    },
+    "geometry": "393x852,1440x1000,1280x720,3840x2160; primary rail checked before automatic scrolling, keyboard selection, overlap/containment, bounded details/no document overflow and Escape focus restoration.",
+    "feedback": {
+      "passed": 1,
+      "seconds": 17.5,
+      "log": "/tmp/cluster-construction-feedback-final.log",
+      "coverage": "Ordinary UI join and research acknowledgements do not appear in construction; actual build/cancel acceptance preserved. Real start service uses explicit test clock. Refreshed ready captures at four sizes."
+    }
+  },
+  "types": "pass",
+  "lint": "pass",
+  "promptHooks": 12,
+  "visual": "Implementer inspected refreshed ready and completed actual renders against construction-v2 concept. Before captures preserve stale acknowledgement; ready captures show the correction. Independent review pending.",
+  "limits": "Proposed rules, editable market focus, capture/combat, hosted Google/Scheduler, exact-head CI, full independent visual/security and release acceptance remain open.",
+  "defaultService": {
+    "passed": 20,
+    "assertions": 1108,
+    "liveOnlySkipped": 10,
+    "seconds": 62.8,
+    "log": "/tmp/cluster-construction-default.log"
+  },
+  "deployment": "All five consumers/view writers, then processCampaign, then database rules deployed. Six functions ACTIVE Node 22, emulator test flag absent."
+}

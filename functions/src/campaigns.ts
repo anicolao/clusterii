@@ -18,6 +18,7 @@ import {
   createCampaign,
   joinOrLeave,
   maintainCampaign,
+  orderConstruction,
   selectResearch,
   startCampaign,
 } from "../../shared/campaign.js";
@@ -399,9 +400,12 @@ async function handleCampaign(
         );
         next = maintenance
           ? maintainCampaign(current, action, uid, now)
-          : action.kind === "research.select"
-            ? selectResearch(current, action, uid, commandId, Date.now())
-            : joinOrLeave(current, action, uid, profile, now);
+          : action.kind === "construction.build" ||
+              action.kind === "construction.cancel"
+            ? orderConstruction(current, action, uid, commandId, Date.now())
+            : action.kind === "research.select"
+              ? selectResearch(current, action, uid, commandId, Date.now())
+              : joinOrLeave(current, action, uid, profile, now);
       }
     } catch (error) {
       if (error instanceof KeyServiceError) throw error;
@@ -410,6 +414,11 @@ async function handleCampaign(
         [
           "permission",
           "profile-required",
+          "construction-unavailable",
+          "construction-capacity",
+          "construction-queue-full",
+          "insufficient-credits",
+          "cancellation-pending",
           "research-unavailable",
           "research-queue-full",
           "invalid",

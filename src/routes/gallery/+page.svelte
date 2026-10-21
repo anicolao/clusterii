@@ -8,6 +8,7 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import SystemConstruction from "$lib/components/SystemConstruction.svelte";
   import CampaignResearch from "$lib/components/CampaignResearch.svelte";
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
@@ -15,6 +16,7 @@
     historyRecords,
     productionFrame,
     researchFrame,
+    constructionFrame,
     legacyProductionView,
   } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
@@ -188,6 +190,26 @@
     </section>
     <section>
       <h2>Account sessions</h2>
+      <h2>Construction · shared illustrated instrument</h2>
+      {#each ["ready", "pending", "error", "paused", "completed"] as state}{@const sample =
+          constructionFrame(
+            state === "completed" ? 3400 : state === "ready" ? 0 : 2400,
+          )}
+        <div
+          style="height: min(850px, 90svh); min-height: 550px; margin-bottom: 32px;"
+        >
+          <SystemConstruction
+            view={state === "paused" ? { ...sample, pausedAt: 1 } : sample}
+            starId={sample.own.home!}
+            pending={state === "pending"}
+            error={state === "error"
+              ? "The connection was interrupted. Your selection and pending order are preserved."
+              : ""}
+            onbuild={() => {}}
+            oncancel={() => {}}
+            onclose={() => {}}
+          />
+        </div>{/each}
       <h2>Research · shared selection and acknowledgement</h2>
       {#each ["ready", "pending", "error", "disabled", "applied"] as state}<div
           style="max-width:620px;margin-bottom:32px"

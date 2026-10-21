@@ -84,6 +84,14 @@
           <dt>Credits received</dt>
           <dd>{amount(ledger.creditsMilli)}</dd>
         </div>
+        {#if ledger.marketDividendsMilli}<div>
+            <dt>Market dividends included</dt>
+            <dd>{amount(ledger.marketDividendsMilli)}</dd>
+          </div>{/if}
+        {#if ledger.marketEscrowMilli}<div>
+            <dt>Market dividends held locally</dt>
+            <dd>{amount(ledger.marketEscrowMilli)}</dd>
+          </div>{/if}
         {#if ledger.releasedEscrowMilli}<div>
             <dt>Included credits released from unified systems</dt>
             <dd>{amount(ledger.releasedEscrowMilli)}</dd>

@@ -865,3 +865,41 @@ test('native credential completion interrupted after its mirror remains fenced a
  let denied:unknown;try{await requireCurrentSession({uid:a.uid,token:claims});}catch(error){denied=error;}expect((denied as {code:string}).code).toBe('unauthenticated');
  await operation.update({leaseUntil:0});expect(await endCredentialSessions({auth:{uid:a.uid,token:claims},data:{operationId}} as never)).toEqual({status:'complete'});expect((await identity.getUser(a.uid)).tokensValidAfterTime).toBe(before);await requireCurrentSession({uid:a.uid,token:claims});expect((await operation.get()).get('status')).toBe('complete');expect((await db.doc(`profiles/${a.uid}`).get()).get('revision')).toBe(1);
 },60000);
+
+for(const mode of ['mock','real'] as const)(mode==='real' && process.env.CLUSTER_KMS_TEST!=='true'?test.skip:test)(`construction ${mode}: concurrent quotes, private orders, atomic completion dividends and cancellation recovery`,async()=>{
+ const {createRequire}=await import('node:module');const require=createRequire(new URL('../functions/package.json',import.meta.url));const admin=require('firebase-admin/app');if(!admin.getApps().length)admin.initializeApp({projectId});const db=require('firebase-admin/firestore').getFirestore();
+ const {startDueCampaign,processCampaign}=await import('../functions/src/campaigns');const {settleCampaignTicks}=await import('../functions/src/production');
+ const players=await Promise.all((['heliac','pelagic','vesper','dracon'] as const).map(async faction=>{const c=await client(`build-${faction}-${crypto.randomUUID()}`);await developer(c);await saveIdentity(c);return {c,faction};}));
+ const owner=players[0].c,other=players[1].c,id=crypto.randomUUID();await campaignCommand(owner,id,{kind:'campaign.create',expectedRevision:0,name:'Construction service',capacity:4,mode,development:true});for(let i=0;i<4;i++)await campaignCommand(players[i].c,id,{kind:'campaign.join',expectedRevision:i+1,faction:players[i].faction},mode);
+ const head=db.doc(`campaignStates/${id}`),start=(await head.get()).get('startAt');await startDueCampaign(id,start);const read=async(c=owner)=>(await readCampaignHistory(c.firestore,c.functions,id,c.uid)).records[0];const initial=await read(),home=initial.own.home!;
+ const quotes=await Promise.all((['market','station'] as const).map(type=>campaignCommand(owner,id,{kind:'construction.build',expectedRevision:6,starId:home,type},mode)));expect(quotes.filter(q=>q.receipt.status==='accepted')).toHaveLength(1);expect(quotes.find(q=>q.receipt.status==='rejected')!.receipt.reason).toBe('conflict');
+ const accepted=quotes.find(q=>q.receipt.status==='accepted')!,queued=await read(),order=queued.construction!.orders[0];expect(queued.revision).toBe(7);expect(queued.empire!.creditsMilli).toBe(200000-order.paidMilli);expect(order.effectiveTick).toBe(1);expect(order.progress).toBe(0);expect(order.startedTick).toBeNull();expect(JSON.stringify(await read(other))).not.toContain(order.id);
+ const denied=await campaignCommand(other,id,{kind:'construction.build',expectedRevision:7,starId:home,type:'market'},mode);expect(denied.receipt.reason).toBe('permission');
+ const forged=await campaignCommand(owner,id,{kind:'construction.build',expectedRevision:7,starId:home,type:'base',paidMilli:0} as CampaignAction,mode);expect(forged.receipt.reason).toBe('invalid');
+ const overspend=await campaignCommand(owner,id,{kind:'construction.build',expectedRevision:7,starId:home,type:'station'},mode);expect(overspend.receipt.reason).toBe('insufficient-credits');
+ await processCampaign.run({params:{gameId:id,uid:owner.uid,commandId:accepted.ingress.key},time:new Date().toISOString(),data:{val:()=>accepted.payload}} as never);expect((await read()).construction!.orders).toEqual([order]);expect((await head.get()).get('revision')).toBe(7);
+ await expect(set(accepted.ingress,accepted.payload)).rejects.toThrow();await expect(getDoc(doc(other.firestore,'campaignViews',id,'members',owner.uid))).rejects.toThrow();
+ expect(await settleCampaignTicks(id,()=>start+4*900000)).toBe(4);const progress=await read();expect(progress.construction!.orders[0].progress).toBe(3);
+ const finish=await Promise.all([settleCampaignTicks(id,()=>start+5*900000),settleCampaignTicks(id,()=>start+5*900000)]);expect(finish.reduce((sum,n)=>sum+n,0)).toBe(1);const completed=await read();expect(completed.revision).toBe(12);expect(completed.construction!.orders).toEqual([]);expect(completed.construction!.ledger[0]).toMatchObject({id:order.id,result:'completed',refundMilli:0});
+ expect(completed.holdings[0][order.type==='market'?'markets':'stations']).toBe(order.type==='market'?3:2);
+ let dividends=0;for(const {c} of players.slice(1)){const peer=await read(c);dividends+=peer.economy!.ledger!.marketDividendsMilli??0;expect(peer.construction?.ledger??[]).toEqual([]);expect(JSON.stringify(peer)).not.toContain(order.id);}expect(dividends).toBe(order.paidMilli/10);expect(completed.economy!.ledger!.marketDividendsMilli??0).toBe(0);
+ expect(await settleCampaignTicks(id,()=>start+5*900000)).toBe(0);expect(await read()).toEqual(completed);expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(12);
+ const baseOrder=await campaignCommand(owner,id,{kind:'construction.build',expectedRevision:12,starId:home,type:'base'},mode);expect(baseOrder.receipt.status).toBe('accepted');const reserved=await read(),cancelId=reserved.construction!.orders[0].id;expect(reserved.empire!.creditsMilli).toBe(completed.empire!.creditsMilli-69000);
+ const cancelled=await campaignCommand(owner,id,{kind:'construction.cancel',expectedRevision:13,orderId:cancelId},mode);expect(cancelled.receipt.status).toBe('accepted');expect((await read()).empire).toEqual(reserved.empire);const repeated=await campaignCommand(owner,id,{kind:'construction.cancel',expectedRevision:14,orderId:cancelId},mode);expect(repeated.receipt.reason).toBe('cancellation-pending');
+ expect(await settleCampaignTicks(id,()=>start+6*900000)).toBe(1);const refunded=await read();expect(refunded.construction!.orders).toEqual([]);expect(refunded.construction!.ledger[0]).toMatchObject({id:cancelId,result:'cancelled',refundMilli:69000});expect(refunded.empire!.creditsMilli).toBe(completed.empire!.creditsMilli+refunded.economy!.ledger!.creditsMilli);
+ // Preserve a live reservation and all recipient histories across maintenance and
+ // provider migration, including the history reader's ten-record page boundary.
+ const pending=await campaignCommand(owner,id,{kind:'construction.build',expectedRevision:15,starId:home,type:'camp'},mode);expect(pending.receipt.status).toBe('accepted');const pendingView=await read();
+ expect((await campaignCommand(owner,id,{kind:'campaign.pause',expectedRevision:16},mode)).receipt.status).toBe('accepted');
+ expect((await read()).construction).toEqual(pendingView.construction);expect(await settleCampaignTicks(id,()=>start+10*900000)).toBe(0);
+ if(process.env.CLUSTER_KMS_TEST==='true') {
+  const history=async(c:typeof owner)=>{let page=await readCampaignHistory(c.firestore,c.functions,id,c.uid);const records=[...page.records];while(page.cursor){page=await readCampaignHistory(c.firestore,c.functions,id,c.uid,page.cursor);records.push(...page.records);}return records;};
+  const before=await Promise.all(players.map(({c})=>history(c)));
+  expect(before.every(records=>records.length>10)).toBe(true);
+  const migrated=await campaignCommand(owner,id,{kind:'campaign.migrate',expectedRevision:17,targetMode:mode==='real'?'mock':'real'},mode);expect(migrated.receipt.status).toBe('accepted');
+  const normalize=(record:CampaignView)=>{const {mode,encryptionEpoch,mockExposed,...rest}=record;return rest;};
+  for(let i=0;i<players.length;i++){const after=await history(players[i].c);expect(after.filter(record=>record.revision<=17).map(normalize)).toEqual(before[i].map(normalize));expect(after[0].encryptionEpoch).toBe(2);expect(after[0].construction).toEqual(before[i][0].construction);expect(after[0].empire).toEqual(before[i][0].empire);}
+  expect((await read()).construction!.orders).toEqual(pendingView.construction!.orders);
+ }
+
+},120000);

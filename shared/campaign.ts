@@ -1,3 +1,10 @@
+import {
+  admitBuild,
+  admitCancellation,
+  type Construction,
+  type Development,
+  developments,
+} from "./construction.js";
 import { type Galaxy, generateGalaxy } from "./galaxy.js";
 import {
   type Economy,
@@ -36,6 +43,7 @@ export interface Campaign {
   rulesetVersion: string;
   schemaVersion: 1 | 2;
   economy?: Economy;
+  construction?: Construction;
   commandProtocolVersion: 1;
   development: true;
   mode: "mock" | "real";
@@ -58,6 +66,13 @@ export type MigrationAction = {
 };
 export type CampaignAction =
   | MigrationAction
+  | {
+      kind: "construction.build";
+      expectedRevision: number;
+      starId: string;
+      type: Development;
+    }
+  | { kind: "construction.cancel"; expectedRevision: number; orderId: string }
   | { kind: "research.select"; expectedRevision: number; target: Technology }
   | {
       kind: "campaign.create";
@@ -83,15 +98,26 @@ export function parseCampaignAction(input: unknown): CampaignAction {
   if (!Number.isSafeInteger(a.expectedRevision) || a.expectedRevision < 0)
     throw new Error("invalid");
   const fields =
-    a.kind === "campaign.create"
-      ? ["kind", "expectedRevision", "name", "capacity", "mode", "development"]
-      : a.kind === "research.select"
-        ? ["kind", "expectedRevision", "target"]
-        : a.kind === "campaign.migrate"
-          ? ["kind", "expectedRevision", "targetMode"]
-          : a.kind === "campaign.join"
-            ? ["kind", "expectedRevision", "faction", "portrait"]
-            : ["kind", "expectedRevision"];
+    a.kind === "construction.build"
+      ? ["kind", "expectedRevision", "starId", "type"]
+      : a.kind === "construction.cancel"
+        ? ["kind", "expectedRevision", "orderId"]
+        : a.kind === "campaign.create"
+          ? [
+              "kind",
+              "expectedRevision",
+              "name",
+              "capacity",
+              "mode",
+              "development",
+            ]
+          : a.kind === "research.select"
+            ? ["kind", "expectedRevision", "target"]
+            : a.kind === "campaign.migrate"
+              ? ["kind", "expectedRevision", "targetMode"]
+              : a.kind === "campaign.join"
+                ? ["kind", "expectedRevision", "faction", "portrait"]
+                : ["kind", "expectedRevision"];
   if (Object.keys(a).some((key) => !fields.includes(key)))
     throw new Error("invalid");
   if (a.kind === "campaign.create") {
@@ -105,6 +131,16 @@ export function parseCampaignAction(input: unknown): CampaignAction {
       (a.mode !== "mock" && a.mode !== "real") ||
       a.development !== true
     )
+      throw new Error("invalid");
+  } else if (a.kind === "construction.build") {
+    if (
+      typeof a.starId !== "string" ||
+      a.starId.length > 100 ||
+      !developments.includes(a.type)
+    )
+      throw new Error("invalid");
+  } else if (a.kind === "construction.cancel") {
+    if (typeof a.orderId !== "string" || !/^[a-f0-9-]{36}$/.test(a.orderId))
       throw new Error("invalid");
   } else if (a.kind === "research.select") {
     if (!technologies.includes(a.target)) throw new Error("invalid");
@@ -385,6 +421,21 @@ export function campaignView(state: Campaign, uid: string) {
           ledger: state.economy.ledger[uid] ?? null,
         }
       : null,
+    construction: state.construction
+      ? {
+          orders: state.construction.orders.filter(
+            (o) =>
+              o.uid === uid &&
+              state.systems[o.starId][
+                rules.developments[o.type].layer as "orbit" | "surface"
+              ] === uid,
+          ),
+          cancellations: state.construction.cancellations.filter(
+            (c) => c.uid === uid,
+          ),
+          ledger: state.construction.ledger[uid] ?? [],
+        }
+      : null,
     holdings: Object.entries(state.systems)
       .filter(([, system]) => system.orbit === uid || system.surface === uid)
       .map(([starId, system]) => ({
@@ -459,5 +510,44 @@ export function selectResearch(
     effectiveTick,
     target: action.target,
   });
+  return next;
+}
+
+export function orderConstruction(
+  current: Campaign,
+  input: unknown,
+  uid: string,
+  commandId: string,
+  now: number,
+): Campaign {
+  const action = parseCampaignAction(input);
+  if (
+    action.kind !== "construction.build" &&
+    action.kind !== "construction.cancel"
+  )
+    throw new Error("invalid");
+  if (!current.seats.some((s) => s.uid === uid)) throw new Error("permission");
+  if (current.revision !== action.expectedRevision) throw new Error("conflict");
+  if (current.pausedAt != null) throw new Error("paused");
+  if (
+    current.phase !== "active" ||
+    current.schemaVersion !== 2 ||
+    !current.economy
+  )
+    throw new Error("construction-unavailable");
+  const next = structuredClone(current);
+  next.revision++;
+  if (action.kind === "construction.build")
+    admitBuild(
+      next,
+      uid,
+      commandId,
+      next.revision,
+      now,
+      action.starId,
+      action.type,
+    );
+  else
+    admitCancellation(next, uid, commandId, next.revision, now, action.orderId);
   return next;
 }
