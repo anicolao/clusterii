@@ -6,7 +6,7 @@ Both use a real saved developer identity, actual create/join/leave commands, can
 
 The campaign briefing previously said economy did not run. That obsolete implementation-status claim is removed; the briefing now states the actual remaining limit that victory evaluation is not enabled. Shared-victory rule values remain explicitly under review, not newly approved.
 
-The procedural predecessor is removed after replacement verification. Pinned Linux comparison, current-head CI, normal-motion parity and independent full visual/hosted acceptance remain open. Base: #41, `feat/receipt-recovery-stories`. No PR is merged.
+The procedural predecessor is removed after replacement verification. Pinned Linux comparison, current-head CI, normal-motion parity and independent full visual/hosted acceptance remain open. PR: [#42](https://github.com/anicolao/clusterii/pull/42), based on #41, `feat/receipt-recovery-stories`. [Preview](https://anicolao.github.io/clusterii/pr42/) publication is pending. No PR is merged.
 
 The new release/reload step exposed a returning-player race at all four sizes: Play was enabled before the saved profile resolved, so a fast click opened identity rather than campaign selection. Entry and Learn play controls now remain disabled while an authenticated profile is still loading. The unchanged immediate-click journey must reach the directory after readiness. Initial traces also record a corrected fixture error: the authoritative fixed catalogue identifies Rana as A-class, not K-class.
 
