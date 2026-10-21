@@ -215,3 +215,12 @@ Eight component journeys/108 exact local captures cover identity pending/reconne
 - desktop: [Identity feedback and playback](stories/feedback-motion-lab/desktop/darwin-arm64/README.md), [Campaign receipts](stories/campaign-feedback-lab/desktop/darwin-arm64/README.md).
 - large: [Identity feedback and playback](stories/feedback-motion-lab/large/darwin-arm64/README.md), [Campaign receipts](stories/campaign-feedback-lab/large/darwin-arm64/README.md).
 - short: [Identity feedback and playback](stories/feedback-motion-lab/short/darwin-arm64/README.md), [Campaign receipts](stories/campaign-feedback-lab/short/darwin-arm64/README.md).
+
+## Identity gallery narratives
+
+The production identity/navigation gallery now has a separately scoped component story: keyboard activation, local callback counts, selected/disabled/pending/invalid states, all eight portrait names, reconnect feedback, six shared glyph identifiers, phone-width containment and provenance. The actual applied-research disclosure is opened/closed by keyboard. These specimens are not service acceptance; all unmigrated gameplay/gallery and lab checks remain in `lab.spec.ts`. Four local exact gallery journeys cover84 reviewed new images, alongside twelve unchanged identity/lab journeys; current-head Linux and independent gates are tracked in [the slice review](../design/IDENTITY_GALLERY_STORIES_REVIEW.md).
+
+- phone: [Identity and navigation gallery](stories/identity-component-gallery/phone/darwin-arm64/README.md).
+- desktop: [Identity and navigation gallery](stories/identity-component-gallery/desktop/darwin-arm64/README.md).
+- large: [Identity and navigation gallery](stories/identity-component-gallery/large/darwin-arm64/README.md).
+- short: [Identity and navigation gallery](stories/identity-component-gallery/short/darwin-arm64/README.md).

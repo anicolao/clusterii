@@ -1,0 +1,21 @@
+# Identity-gallery baseline review
+
+Implementer review, 2026-10-21. These new images depict actual shared production components in the developer gallery, not service or gameplay acceptance. Native keyboard activation, focus, selection, disabled/pending/error copy and callback outcomes are asserted before capture. The glyph registry and portrait names come from the shared production registry. The page explicitly discloses specimen behavior and artwork/font provenance.
+
+Generation is separate from exact verification. Retained first-run failures document header scoping, undersized links/disclosure and fractional nearest-edge clipping. Production hit targets are corrected; centered reference-page scrolling preserves exact viewport containment rather than relaxing the assertion. No existing baseline is replaced.
+
+Candidate inspection precedes promotion; exact verification is recorded below.
+
+Inspected all84 final new candidates across phone, desktop, large and short, including magnified4K specimen regions. Focus rings are distinct, adjacent labels are clear, enabled/disabled portrait selections remain independent, and the narrow short-height grid stays within its specimen. The open/closed research history has a readable focus target and unchanged applied selection. Provenance and six glyph identifiers remain visible in their named views. The spacing/container correction changes44 candidates;40 remain byte-identical to the retained preceding generation. Promote these new candidates only for exact verification. Independent visual acceptance, Linux and inherited identity-raster gates remain open.
+
+Exact local verification passes16 journeys in1.6 minutes: four new gallery stories/84 captures, eight existing feedback-lab stories and four real identity journeys against unchanged baselines. The four gallery narratives are archived. Type checks and lint pass; nine policy/clock/catalogue checks pass. This is scoped local evidence; Linux/current-head CI and independent full visual/motion/hosted acceptance remain open.
+
+## Linux candidate review — 2026-10-21
+
+Reviewer Prompt 52 identifies missing Linux baselines, not a pixel mismatch, in run `39667546697`. Generation job `119456454492` succeeded; artifact `12382254430` supplies exactly 84 new `identity-component-gallery` images (21 per viewport). Only that story was extracted to `/tmp/cluster47-linux-gallery`; the 1.5 GB archive was read with bounded ranges, transferring 34 MB. The failure log remains `/tmp/cluster47-1728-review-failure.log`.
+
+Provenance is verified: generation records clean merge commit `28070d48902841f792c59c7e039d4e3bde01e43e`, whose parent is PR #47 head `1ece4b8685c377996d91ae0ab5088585eacacdd6`. Both trees are exactly `0b8e275f8e4f3f6919a939484a7a251a29948e7a`. The story SHA-256 is `c2bfba40911bb5c3def4047566eb5466de8e7cfcbbc6d0270acda341cd8da039`, matching the checked-out source. Manifests record Linux ARM64, Playwright 1.61.1 / Chromium 149.0.7827.0, the workflow's pinned image digest, bundled font hash, UTC/en-US, DPR 1 and reduced motion. All four stories report passed generation, not verification.
+
+Implementer review inspected all 84 candidates using labelled rendered sheets, with 4K specimen regions enlarged. The named focus controls and adjacent labels remain distinct; selected and disabled portraits are independent; validation/pending and conflict/network copy remain readable. Open/closed research disclosure, six glyph identifiers and asset provenance match their captions. Reference-page scrolling is intentional and does not imply game-surface scrolling approval. Approve only these new Linux gallery candidates for strict verification. Existing baselines, inherited raster failures, comparison tolerance and browser assertions remain unchanged. Current-head exact CI and independent full acceptance remain required.
+
+The verification artifact contains four failed manifests and no gallery captures: baseline existence is checked before capture, so it supplies no independent pixel comparison to reuse. Its log reports 84 other stories passed and four missing-gallery failures. The new head must run strict verification in the pinned Linux workflow; local candidate promotion is not labelled a Linux verification pass. All nine local story-policy checks pass. No production source or test assertion changes are included.

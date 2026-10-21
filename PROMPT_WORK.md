@@ -202,5 +202,31 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Verify illustrated two-device KMS epoch recovery and carry reviewer 14:38 scoped checkpoint.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Register stacked migration PR45 and its preview gate, preserving verified actual-provider scope.
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Carry contact-subscription readiness and four exact verified narratives into the feedback lab stack.
+Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Migrate production identity and navigation gallery interactions into explicit illustrated component stories.
+Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Register stacked PR47 and its gallery preview and exact-evidence acceptance gates.
+Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Migrate scheduled-start and session-ending lab transitions into paired illustrated production-component stories.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Propagate reviewed Linux feedback baselines and the 15:48 supervisory checkpoint into lifecycle stories.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Add reviewed research lab stories and exact four-viewport evidence while retaining publication and inherited CI gates.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Register research lab PR49 dependency, preview and scoped evidence in the acceptance table.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Place the research lab dependency row inside the acceptance table without changing its scoped review gates.
 
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into feedback-lab-stories, preserving exact comparisons.
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into identity-gallery-stories, preserving exact comparisons.
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into lifecycle-lab-stories, preserving exact comparisons.
+
+Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into research-lab-stories, preserving exact comparisons.
+
+Prompt 48 | 19717bdb7dd404d5198f254feeecf62ce4af2ee3eb8a00f1f6718d5901ce2870 | Register history lab PR50 dependency, preview and scoped exact evidence while retaining inherited Linux gates.
+
+Prompt 50 | 45c98506864f979aad39223cc6d78e677d97f5f29cb8ea8a344aa5000e2a7fc1 | Register production lab PR 51 dependency and preview with exact local evidence and open Linux gates
+
+Prompt 50 | 45c98506864f979aad39223cc6d78e677d97f5f29cb8ea8a344aa5000e2a7fc1 | Migrate selected-history lab consent and disclosure with exact reviewed motion captures and preserved service assertions
+
+Prompt 50 | 45c98506864f979aad39223cc6d78e677d97f5f29cb8ea8a344aa5000e2a7fc1 | Register selected-history lab PR 52 dependency and preview while preserving unresolved Linux and raster gates
+Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | Correct responsive room-directory navigation from retained traces and carry the 17:18 reviewer checkpoint.
+Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | Assert complete consent-message containment and promote the separately reviewed four-viewport local candidate set.
+Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | Archive all four passing live consent stories, register PR 53 and record exact local evidence with remaining acceptance gates.

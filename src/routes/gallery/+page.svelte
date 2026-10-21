@@ -175,19 +175,24 @@
     </section>
     <section>
       <h2>Identity fields</h2>
-      <NameField id="gallery-name" bind:value={alias} /><NameField
-        id="gallery-invalid"
-        value={"A".repeat(25)}
-        invalid
-        errorId="gallery-validation"
-      /><Feedback
-        error="Choose a name of 2–24 characters and a portrait."
-        errorId="gallery-validation"
-      /><NameField
-        id="gallery-disabled"
-        value="Pending draft"
-        disabled
-      /><PortraitPicker
+      <div class="field-specimen">
+        <NameField id="gallery-name" bind:value={alias} />
+      </div>
+      <div class="field-specimen">
+        <NameField
+          id="gallery-invalid"
+          value={"A".repeat(25)}
+          invalid
+          errorId="gallery-validation"
+        /><Feedback
+          error="Choose a name of 2–24 characters and a portrait."
+          errorId="gallery-validation"
+        />
+      </div>
+      <div class="field-specimen">
+        <NameField id="gallery-disabled" value="Pending draft" disabled />
+      </div>
+      <PortraitPicker
         bind:value={portrait}
         group="gallery-portrait"
       /><PortraitPicker value="G1" disabled group="gallery-disabled-portrait" />
@@ -671,6 +676,10 @@
   }
   a {
     color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 12px;
   }
   .samples {
     display: grid;
@@ -693,6 +702,9 @@
   section :global(.entry-button) {
     width: 100%;
     margin-bottom: 12px;
+  }
+  .field-specimen {
+    margin-bottom: 24px;
   }
   .icon-grid {
     display: flex;
