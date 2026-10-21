@@ -437,3 +437,9 @@ Reviewer finding 2026-10-21 14:48 Toronto: #43 publication run39652784195/job119
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 15:08 Toronto”.
 
 Reviewer finding 2026-10-21 15:08 Toronto: #43 job119405166506 now fails two snapshots with70 passing26.1min. In addition to known1994-pixel short session fresh-sign-in text difference, desktop campaign-scheduled-start/026-started-rosters-1-dawn-envoy-1.png differs5688 pixels. Retained log /tmp/cluster43-repeat-review-failure.log. Inspect and retain the distinct roster actual/expected/diff before deciding whether it shares the text cause; do not regenerate baselines or relax comparison to pass. #43 publication retry now succeeded. Log this reviewer-attributed finding and carry checkpoint; no merge.
+
+## Prompt 47: Preview retries
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 15:38 Toronto”.
+
+Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed expected d3e34c4 versus hosted4cfaebf; #46 publish39660570655 failed revision fetch with ECONNRESET. Logs retained /tmp/cluster43-publish-latest-review.log and /tmp/cluster46-publish-latest-review.log. Coordinate retries after shared publication queue clears and retain exact-head checks; do not describe current previews as verified until those checks pass. Log reviewer attribution/continuation and carry latest checkpoint. No merge.
