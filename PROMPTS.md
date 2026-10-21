@@ -382,3 +382,10 @@ Reviewer finding for cargo PR #23 e167364: docs/ux/reviews/fleet-cargo/fleet-car
 Delegated instruction from the reviewer; authority is recorded under “Supervisory takeover” and “Reviewer progress — 2026-10-21 02:57 Toronto” in meta-prompts.md.
 
 Reviewer continuation: the old construction and cargo feedback findings are resolved and recorded; do not duplicate them. Resume the authorized implementation plan from clean feat/fleet-cancellation (70938de), creating the next small stacked PR on that branch for milestone 6 travel/routing. Read the approved design and distinguish unresolved gameplay choices from approvals. Deliver a real route-preview/commit/acknowledgement/settlement tracer bullet with range separate from speed, conservation, privacy, reload/pause/catch-up and ordinary-player evidence, shared gallery/interactive lab and phone/desktop/large/short keyboard/reduced-motion review. Continue monitoring replacement CI for #23–25 and repair actual failures without weakening assertions. Record this attributed handoff in PROMPTS.md, continuations in PROMPT_WORK.md, and carry main meta-prompts.md into the next commit/push. Continue through the plan without waiting after each completed slice; never merge.
+
+
+## Prompt 38: Gallery Measurement
+
+Delegated instruction from the reviewer, referring to meta-prompts.md “Reviewer progress — 2026-10-21 05:27 Toronto”:
+
+Reviewer CI finding: #27 a1fb904 verification run 39567435352 failed. Retained log /tmp/cluster27-review-failure.log shows gallery/lab viewport cases timing out at 45 seconds while iterating hundreds of button/input/select bounding boxes (lab.spec.ts:102; short case nth459). Diagnose trace and preserve all geometry/accessibility assertions; consider batching DOM measurements rather than weakening coverage or blindly increasing timeouts. Fix on #27 and propagate through successors, retain failure/pass evidence and attributed logs, carry latest main meta-prompts.md, commit/push without merging. Continue conversation work around this diagnosis; no need to repeat resolved earlier handoffs.

@@ -252,6 +252,33 @@ export function assertObservationBudget(
       travelBytes += Math.min(count, owned + ownRoutes) * 512;
     }
   }
+  // Reserve the complete next-tick fleet draw matrix, including queued new
+  // fleets. Current scans are replaced, never accumulated in canonical state.
+  if (state.fleetContactsVersion === 1) {
+    const count =
+      Object.keys(state.military?.fleets ?? {}).length +
+      (state.military?.orders ?? []).filter(
+        (o) => o.fleetId === null || o.reorganization === "split",
+      ).length;
+    const maximumScans = {
+      tick: Number.MAX_SAFE_INTEGER,
+      levels: Object.fromEntries(
+        state.seats.map((s) => [s.uid, rules.maximumResearchLevel]),
+      ),
+      draws: Object.fromEntries(
+        state.seats.map((s) => [s.uid, Array(count).fill(drawRange - 1)]),
+      ),
+    };
+    const encoder = new TextEncoder();
+    const futureBytes = encoder.encode(
+      JSON.stringify({ fleetScans: maximumScans }),
+    ).byteLength;
+    const priorBytes = state.fleetScans
+      ? encoder.encode(JSON.stringify({ fleetScans: state.fleetScans }))
+          .byteLength
+      : 0;
+    travelBytes += Math.max(0, futureBytes - priorBytes);
+  }
   // Merging and disbanding must remain admissible at the ordinary state budget. Its orders
   // become smaller outcomes and remove persistent fleets at settlement. The
   // higher bound still fits the encrypted document and cannot admit new forces.

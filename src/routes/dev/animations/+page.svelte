@@ -5,6 +5,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import NameField from "$lib/components/NameField.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
+  import FleetContacts from "$lib/components/FleetContacts.svelte";
   import FleetRoute from "$lib/components/FleetRoute.svelte";
   import SystemFleets from "$lib/components/SystemFleets.svelte";
   import SystemObservation from "$lib/components/SystemObservation.svelte";
@@ -16,6 +17,7 @@
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
   import {
+    contactsFrame,
     travelFrame,
     travelFleetId,
     travelDestination,
@@ -128,7 +130,16 @@
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
         <p class="overline">Same outcome · {frame.feedback.remedy}</p>
-        {#if selected === "travel"}<div
+        {#if selected === "contacts"}{@const sample = contactsFrame(time)}
+          <div style="height:min(850px,90svh);min-height:550px">
+            <FleetContacts
+              {...sample}
+              onearlier={() => {}}
+              onlatest={() => {}}
+              onretry={() => {}}
+              onclose={() => {}}
+            />
+          </div>{:else if selected === "travel"}<div
             style="height:min(850px,90svh);min-height:550px"
           >
             {#key frame.at}<FleetRoute

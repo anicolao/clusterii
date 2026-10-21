@@ -8,6 +8,7 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import FleetContacts from "$lib/components/FleetContacts.svelte";
   import FleetRoute from "$lib/components/FleetRoute.svelte";
   import SystemFleets from "$lib/components/SystemFleets.svelte";
   import FleetSymbol from "$lib/components/FleetSymbol.svelte";
@@ -19,6 +20,7 @@
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import {
+    contactsFrame,
     travelFrame,
     travelFleetId,
     travelDestination,
@@ -287,6 +289,20 @@
             />
           </div>
         {/each}{/each}
+      <h2>Fleet contacts · acquired and last-seen intelligence</h2>
+      {#each [0, 700, 1200, 2200, 3200] as time}{@const sample =
+          contactsFrame(time)}
+        <div
+          style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"
+        >
+          <FleetContacts
+            {...sample}
+            onearlier={() => {}}
+            onlatest={() => {}}
+            onretry={() => {}}
+            onclose={() => {}}
+          />
+        </div>{/each}
       <h2>Fleet routing · real catalogue and authoritative states</h2>
       {#each [0, 2400, 3400, 5000] as time}<div
           style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"

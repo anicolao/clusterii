@@ -106,3 +106,7 @@ Prompt 36 | fc460be8acdfe26be3d69936f0d79a805081ae785de1d77ea0c361acb67aaf39 | P
 Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Align the system fleet action count with stationed forces, excluding departures already in flight.
 
 Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Carry the exact selected-fleet CI assertion into travel while preserving pending-order and conservation coverage.
+
+Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Propagate the formation journey selector correction into the fleet-contact successor before its browser validation.
+
+Prompt 37 | ba8c9698c8ce70e789d05413b1f8a8ce95ff89b2be1a1bc3ad7a615517ed29ff | Add private last-observed fleet contacts with authoritative scans and a shared player-facing contact instrument.

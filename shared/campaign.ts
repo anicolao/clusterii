@@ -5,6 +5,7 @@ import {
   type Development,
   developments,
 } from "./construction.js";
+import { type FleetScans, fleetContactView } from "./fleet-contacts.js";
 import { type FleetAction, type Military, militaryView } from "./fleets.js";
 import { type Galaxy, generateGalaxy } from "./galaxy.js";
 import {
@@ -55,6 +56,8 @@ export interface Campaign {
   construction?: Construction;
   military?: Military;
   travelVersion?: 1;
+  fleetContactsVersion?: 1;
+  fleetScans?: FleetScans;
   intelligenceVersion?: 1;
   intelligence?: Intelligence;
   commandProtocolVersion: 1;
@@ -195,6 +198,7 @@ export function createCampaign(
     rulesetVersion: rules.id,
     schemaVersion: 2,
     travelVersion: 1,
+    fleetContactsVersion: 1,
     intelligenceVersion: 1,
     commandProtocolVersion: 1,
     development: true,
@@ -446,6 +450,8 @@ export function campaignView(state: Campaign, uid: string) {
       : null,
     military: militaryView(state, uid),
     travelEnabled: state.travelVersion === 1,
+    fleetContactsEnabled: state.fleetContactsVersion === 1,
+    fleetContacts: fleetContactView(state, uid),
     observations: observationView(state, uid),
     scanningEnabled:
       state.schemaVersion === 2 && state.intelligenceVersion === 1,

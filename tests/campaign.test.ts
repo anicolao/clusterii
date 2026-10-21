@@ -576,32 +576,62 @@ test("state capacity cannot block disbanding that frees persistent fleet storage
   expect(full).toBe(true);
   assertObservationBudget(state);
   let merging = structuredClone(state);
-  for(let i=0;i<40;i+=2) {
-    merging=orderFleet(merging,{kind:"fleet.merge",expectedRevision:merging.revision,fleetId:String(i).padStart(36,"0"),targetFleetId:String(i+1).padStart(36,"0")},"player-0",`merge-release-${i}`,merging.economy!.nextTickAt-1);
-    expect(()=>assertObservationBudget(merging,true)).not.toThrow();
+  for (let i = 0; i < 40; i += 2) {
+    merging = orderFleet(
+      merging,
+      {
+        kind: "fleet.merge",
+        expectedRevision: merging.revision,
+        fleetId: String(i).padStart(36, "0"),
+        targetFleetId: String(i + 1).padStart(36, "0"),
+      },
+      "player-0",
+      `merge-release-${i}`,
+      merging.economy!.nextTickAt - 1,
+    );
+    expect(() => assertObservationBudget(merging, true)).not.toThrow();
   }
-  expect(()=>assertObservationBudget(merging)).toThrow("pending-work-capacity");
-  merging=nextProduction(nextProduction(merging));
-  expect(()=>assertObservationBudget(merging)).not.toThrow();
-  expect(merging.military!.fleets["1".padStart(36,"0")].fighters).toBe(2);
-  const queued = orderFleet(
-    state,
-    {
-      kind: "fleet.disband",
-      expectedRevision: state.revision,
-      fleetId: "0".repeat(36),
-    },
-    "player-0",
-    "release".padStart(36, "0"),
-    state.economy!.nextTickAt - 1,
+  expect(() => assertObservationBudget(merging)).toThrow(
+    "pending-work-capacity",
   );
+  merging = nextProduction(nextProduction(merging));
+  expect(() => assertObservationBudget(merging)).not.toThrow();
+  expect(merging.military!.fleets["1".padStart(36, "0")].fighters).toBe(2);
+  // Fill the remaining byte headroom with real release orders. One order need
+  // not cross the limit after adding a larger reserved scan matrix per fleet.
+  let queued = state,
+    releaseCount = 0,
+    needsRecovery = false;
+  for (let i = 0; i < 20; i++) {
+    queued = orderFleet(
+      queued,
+      {
+        kind: "fleet.disband",
+        expectedRevision: queued.revision,
+        fleetId: String(i).padStart(36, "0"),
+      },
+      "player-0",
+      `release-boundary-${i}`,
+      queued.economy!.nextTickAt - 1,
+    );
+    releaseCount++;
+    expect(() => assertObservationBudget(queued, true)).not.toThrow();
+    try {
+      assertObservationBudget(queued);
+    } catch (error) {
+      expect((error as Error).message).toBe("pending-work-capacity");
+      needsRecovery = true;
+      break;
+    }
+  }
+  expect(needsRecovery).toBe(true);
   expect(() => assertObservationBudget(queued)).toThrow(
     "pending-work-capacity",
   );
-  expect(() => assertObservationBudget(queued, true)).not.toThrow();
   state = nextProduction(nextProduction(queued));
-  expect(state.military!.fleets["0".repeat(36)]).toBeUndefined();
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 0; i < releaseCount; i++)
+    expect(state.military!.fleets[String(i).padStart(36, "0")]).toBeUndefined();
+  for (let i = releaseCount; i < releaseCount + 20; i++) {
     state = orderFleet(
       state,
       {
