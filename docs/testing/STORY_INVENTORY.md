@@ -19,7 +19,7 @@ The UX inventory is required coverage, not a completion claim. “Procedural” 
 | UX-13 Finish and begin again | none                                                                                                            | Victory, final settlement and repeated-game loop are not implemented.                                                                                                                                                 |
 | UX-14 Recover commitments    | profile-recovery.story, receipt-binding, migration, maintenance, session-security, construction, conversations, credit-offers | Identity conflict, repeat-safe pending/retry and keyboard return have 12 exact local journeys/92 captures; history recovery also has local and Linux evidence. Other fault journeys remain procedural; hosted OAuth/Scheduler and compromise-key lifecycle gaps remain explicit. |
 | UX-15 Navigate and learn     | entry.story / identity.story, invitation, session-security                                                      | Entry and all four Learn chapters now have exact local illustrated evidence. Full contextual rules/settings/safe-departure story remains open.                                                                        |
-| UX-16 Every input            | geometry, identity-layout, lab, profile-recovery.story                                                                        | Existing keyboard/geometry/motion checks remain. The first stories cover keyboard Learn/focus and four viewports; complete text enlargement, native-keyboard, contrast and motion story coverage remains open.        |
+| UX-16 Every input            | geometry, identity-validation.story, lab, profile-recovery.story                                                                        | Existing keyboard/geometry/motion checks remain. The first stories cover keyboard Learn/focus and four viewports; complete text enlargement, native-keyboard, contrast and motion story coverage remains open.        |
 
 ## Enforcement and evidence
 
@@ -69,3 +69,9 @@ Twelve darwin-arm64 journeys verify 92 exact captures in 2.6 minutes. These repl
 | desktop | [Both devices](stories/identity-conflict/desktop/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/desktop/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/desktop/darwin-arm64/README.md) |
 | large | [Both devices](stories/identity-conflict/large/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/large/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/large/darwin-arm64/README.md) |
 | short | [Both devices](stories/identity-conflict/short/darwin-arm64/README.md) | [Repeat-safe save](stories/identity-pending-retry/short/darwin-arm64/README.md) | [Focus restoration](stories/identity-keyboard-return/short/darwin-arm64/README.md) |
+
+## Identity validation narratives
+
+Four local journeys verify 24 exact captures after separate candidate review. The invalid draft sends no command, retains its portrait and focused name, and receives a validation remedy; correction saves one canonical revision and survives reload. Linux, independent full review and native keyboard acceptance remain open.
+
+[phone](stories/identity-validation/phone/darwin-arm64/README.md) · [desktop](stories/identity-validation/desktop/darwin-arm64/README.md) · [large](stories/identity-validation/large/darwin-arm64/README.md) · [short](stories/identity-validation/short/darwin-arm64/README.md)
