@@ -744,3 +744,31 @@ maybe get it to specifically write an e2e guide similar to that int he other pro
 ## Reviewer handoff — Dedicated E2E guide
 
 Reviewer follow-up explicitly requested by the user: write a root E2E_GUIDE.md for Cluster II, reading /Users/anicolao/projects/todo/E2E_GUIDE.md and /Users/anicolao/projects/games/pantheon/E2E_GUIDE.md as references. Make the illustrated user-story/TestStepHelper convention mandatory and hard to miss: link the guide from AGENTS.md, README.md and IMPLEMENTATION_PLAN.md, and require reading it before writing/changing browser tests. Include a concrete runnable-style Cluster story example with named steps/assertions and generated story output, helper/artifact locations, real service/player setup versus explicitly labeled fault/clock controls, deterministic capture readiness, exact visual verification versus separate baseline review, viewport/keyboard/motion requirements, commands, and a PR acceptance checklist. Separate required convention from migration status honestly; document existing gaps rather than claiming procedural tests already comply. Implement this alongside the previously requested helper/story migration before another gameplay PR. Record this delegated instruction with reviewer attribution and carry the latest supervisory log; commit/push without merging.
+
+
+## Reviewer progress — 2026-10-21 09:07 Toronto
+
+Agent explicitly acknowledged user-requested E2E contract correction, pushed co-faction fix on #34 dd7c251, then switched to feat/illustrated-e2e and read both sample guides/helpers. No further gameplay PR is being advanced; observation-offer work is deferred. Root guide/helper implementation has not yet appeared at inspection, so not claimed complete. Prompts42–43 and review note explicitly mark procedural coverage as incomplete illustrated-story acceptance.
+
+Independent identity diff uses a shared authoritative commander-seat reader and neutral author attribution for historical records without seat identity; equivalent conversation/arrival faction-inference bugs are also corrected. Reported91units/1536 and two focused browser/lab cases8.4s; source review is scoped, not full acceptance. #30–34 verification pending; #34 publication running, prior publications/docs green. Agent active, no duplicate handoff. Disk5.4GiB. Carry checkpoint into related committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 09:19 Toronto
+
+Agent healthy on feat/illustrated-e2e, with root E2E_GUIDE.md, mandatory links in AGENTS/README/IMPLEMENTATION_PLAN, shared TestStepHelper/readiness/fixture, isolated story config/runner and entry/identity story migration actively being written. Independently read guide and helper: named player actions, acknowledgements, assertions and per-player captures; separate harness controls; exact decoded RGBA comparison; generation explicitly not verification; four viewports and honest migration gaps. No completed run, generated narrative, reviewed baseline or new PR yet; not accepted. An initial stale passed-document concern was raised in commentary, then inspection found the configured Playwright outputDir owns test-results/stories and normal run cleanup addresses cross-run stale artifacts; no defect handoff sent on that unconfirmed concern. Review generated evidence and failure behavior when ready.
+
+#30–34 verification still in progress; publication/documentation green. #29 green. No duplicate queued prompt or interruption. Carry this checkpoint into the related committed/pushed supervisory logs; no merge.
+
+
+## Reviewer progress — 2026-10-21 09:28 Toronto
+
+Agent remains active on uncommitted feat/illustrated-e2e. First generation run reportedly passed all four Learn journeys and two identity journeys; two identity failures are being repaired with explicit emulator-page readiness, failure traces retained. Independently read generated six-step phone Learn narrative: separate entry, keyboard opening, each subsequent chapter, and focus-restoring return, with named checks and linked captures. Document clearly says baseline candidates/generation, not verification. Sampled chapter-four phone image is readable, bounded, and matches its narrative with visible Previous/Enter controls. This is scoped candidate review, not approval of all baselines or exact verification.
+
+UX-01–16 migration inventory explicitly lists remaining gameplay, input and hosted gaps. New policy script freezes legacy procedural spec hashes and requires new/changed specs to migrate, with mandatory guide links and basic bypass checks; this static guard is supplementary, not proof of story semantics. No new PR or completed acceptance run yet. #30–34 verification still running; publish/docs green; #29 green. Existing agent is diagnosing its failures without intervention, so no duplicate handoff. Carry latest meta log into related commit/push, preserve failures, and retain independent baseline review before acceptance; no merge.
+
+
+## Reviewer progress and CI handoff — 2026-10-21 09:38 Toronto
+
+Story slice committed locally b661987; clean checkout at inspection, PR creation underway. Read baseline review: generation failures and compositor-related exact mismatches retained, rendering flags pinned, final local comparison reportedly eight journeys/44 captures35.6s. No independent full baseline approval or Linux acceptance claimed.
+
+Reviewer CI finding at 09:38 Toronto: #30 aac1d04 and #31 19e896c are now green. #32 46307c6 run39599629028 and #33 8a9ae26 run39600113448 fail history.spec.ts:20 in all four viewports: focusing Saved campaign records then Shift+Tab no longer focuses Return to galaxy. Logs retained /tmp/cluster32-review-failure.log and /tmp/cluster33-review-failure.log. Diagnose actual keyboard order after briefing changes, distinguish stale expected order from accessibility regression, preserve meaningful keyboard/focus/containment assertions, and propagate the appropriate fix through the stack. Do not simply drop the check or raise timeout. If changing legacy specs on the story branch, honor the new migration policy rather than silently refreshing exceptions. Record attributed instruction and continuation, carry latest meta-prompts, commit/push without merge. Entry/identity local exact comparison is useful progress, but Linux and independent full visual acceptance remain pending.
