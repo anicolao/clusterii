@@ -231,3 +231,26 @@ test('construction layer queues start successors without an immediate advance an
  const ledger=state.economy!.ledger;expect(ledger.p1.marketDividendsMilli??0).toBe(0);expect(ledger.p1.marketEscrowMilli).toBeGreaterThan(0);expect((ledger.p1.marketEscrowMilli??0)+(ledger.p2.marketDividendsMilli??0)+(ledger.p3.marketDividendsMilli??0)).toBe(10600);
  for(let n=0;n<4;n++)state=nextProduction(state);expect(state.systems[home].bases).toBe(2);expect(state.construction!.orders).toEqual([]);expect(state.economy!.ledger.p0.infantry).toBeGreaterThanOrEqual(2);
 });
+
+import {selectMarketFocus} from '../shared/campaign';
+import {initialFocus} from '../shared/market-focus';
+test('market focus validates exact allocation, membership, private orders and future boundary',()=>{
+ const state=productionFixture(),due=state.economy!.nextTickAt,allocation={market:100,camp:0,base:0,station:0},action={kind:'market.focus',expectedRevision:state.revision,allocation};
+ const before=structuredClone(state);const next=selectMarketFocus(state,action,'p0','focus-one',due-1);expect(state).toEqual(before);expect(next.economy!.marketFocus!.p0.orders[0]).toMatchObject({effectiveTick:1,allocation});expect(next.economy!.marketFocus!.p0.allocation).toEqual(initialFocus().allocation);expect(campaignView(next,'p1').economy!.marketFocus.orders).toEqual([]);expect(JSON.stringify(campaignView(next,'p1'))).not.toContain('focus-one');
+ const boundary=selectMarketFocus(state,action,'p0','focus-two',due);expect(boundary.economy!.marketFocus!.p0.orders[0].effectiveTick).toBe(2);expect(selectMarketFocus(state,action,'p0','late',due+900000).economy!.marketFocus!.p0.orders[0].effectiveTick).toBe(3);
+ for(const allocation of [{market:99,camp:0,base:0,station:0},{market:100.5,camp:0,base:0,station:0},{market:101,camp:-1,base:0,station:0},{market:100,camp:0,base:0,station:0,uid:'p1'},{market:'100',camp:0,base:0,station:0},null])expect(()=>selectMarketFocus(state,{...action,allocation},'p0','x',due)).toThrow('invalid');
+ expect(()=>selectMarketFocus(state,action,'stranger','x',due)).toThrow('permission');expect(()=>selectMarketFocus(next,action,'p0','x',due)).toThrow('conflict');expect(()=>selectMarketFocus({...state,pausedAt:1},action,'p0','x',due)).toThrow('paused');expect(()=>selectMarketFocus({...state,schemaVersion:1,economy:undefined},action,'p0','x',due)).toThrow('focus-unavailable');
+});
+test('focus applies in sequence but completion dividends use the previous tick allocation',()=>{
+ let state=productionFixture();const home=state.seats[0].home!;state=orderConstruction(state,{kind:'construction.build',expectedRevision:state.revision,starId:home,type:'camp'},'p0','build-focus',state.economy!.nextTickAt-1);
+ for(let i=0;i<4;i++)state=nextProduction(state);
+ state=selectMarketFocus(state,{kind:'market.focus',expectedRevision:state.revision,allocation:{market:100,camp:0,base:0,station:0}},'p1','zero-camp',state.economy!.nextTickAt-1);
+ state=nextProduction(state);expect(state.economy!.marketFocus!.p1.allocation.camp).toBe(0);expect(state.economy!.ledger.p1.marketDividendsMilli).toBe(2300);expect(state.economy!.marketFocus!.p1.lastApplied!.effectiveTick).toBe(5);
+ state=orderConstruction(state,{kind:'construction.build',expectedRevision:state.revision,starId:home,type:'camp'},'p0','next-build',state.economy!.nextTickAt-1);for(let i=0;i<5;i++)state=nextProduction(state);
+ expect(state.economy!.ledger.p1.marketDividendsMilli??0).toBe(0);expect(state.economy!.ledger.p2.marketDividendsMilli).toBe(4000);expect(state.economy!.ledger.p3.marketDividendsMilli).toBe(4000);expect(state.economy!.marketFocus!.p1.orders).toEqual([]);
+});
+
+test('focus admission is bounded, ordered and zero-weight completion pools pay nothing',()=>{
+ let state=productionFixture();const allocation={market:100,camp:0,base:0,station:0},due=state.economy!.nextTickAt;for(let i=0;i<64;i++)state=selectMarketFocus(state,{kind:'market.focus',expectedRevision:state.revision,allocation:i===63?{market:0,camp:100,base:0,station:0}:allocation},'p1',`order-${i}`,due-1);expect(()=>selectMarketFocus(state,{kind:'market.focus',expectedRevision:state.revision,allocation},'p1','overflow',due-1)).toThrow('focus-queue-full');state=nextProduction(state);expect(state.economy!.marketFocus!.p1.appliedOrders).toHaveLength(64);expect(state.economy!.marketFocus!.p1.allocation.camp).toBe(100);expect(state.economy!.marketFocus!.p1.orders).toEqual([]);
+ let zero=productionFixture();delete zero.economy!.marketFocus;expect(campaignView(zero,'p0').economy!.marketFocus.allocation).toEqual(initialFocus().allocation);for(const uid of ['p1','p2','p3'])zero=selectMarketFocus(zero,{kind:'market.focus',expectedRevision:zero.revision,allocation},uid,`zero-${uid}`,zero.economy!.nextTickAt-1);zero=orderConstruction(zero,{kind:'construction.build',expectedRevision:zero.revision,starId:zero.seats[0].home!,type:'camp'},'p0','zero-pool',zero.economy!.nextTickAt-1);for(let i=0;i<5;i++)zero=nextProduction(zero);for(const ledger of Object.values(zero.economy!.ledger))expect(ledger.marketDividendsMilli??0).toBe(0);
+});

@@ -316,3 +316,22 @@ Availability retry entered Working state on the existing model at inspection, wi
 Agent has resumed sustained healthy work. #17/#18 green. Construction completion failure was traced to test URL parameter id instead of campaign; corrected test now validates identity/active state/start timestamp and is running. This is not yet a completion pass. Ordinary build/cancel journey passed in 29 minutes; earlier lab-helper failure remains accurately disclosed separately. Independently inspected phone construction capture and found stale join acknowledgement in construction footer. Exact handoff:
 
 Reviewer visual finding: retained docs/ux/reviews/construction/construction-phone.png shows “Your seat is confirmed.” in the construction commitment footer. Scope feedback to the relevant action/panel so a previous join/research acknowledgement cannot appear as construction feedback. Preserve actual build/cancel pending, acceptance and error messages; refresh the affected captures after fixing. The composition/art and fixed cost/balance/actions otherwise look readable in this phone sample. Log this attributed finding and carry latest meta-prompts.md into the related commit/push; continue completion validation, no merge.
+
+
+## Reviewer progress — 2026-10-20 23:28 Toronto
+
+New #19 f442132 correctly stacks on provider-session-revocation and is attached to supervisor chat; construction committed/pushed with clean worktree and attributed finding/logs. Independently inspected command-kind scoping of construction feedback and refreshed ready-phone capture: stale join acknowledgement is absent, artwork/quotes/actions remain readable. This resolves the specific 23:17 visual finding, not full UI acceptance. Independent npm run check passes, zero Svelte errors/warnings and backend TypeScript success.
+
+Retained evidence reports completion journey pass in 7.3 minutes: ordinary UI admission/actual start, then five ticks through real service with explicit test clock. Both-provider construction/migration/recovery cohort has 386 assertions with zero failures; final scoped-feedback regression passes in 17.5 seconds. These are implementer runs and controlled emulator settlement, not hosted Scheduler certification. Agent reports compatible backend/rules rollout completed. Full #19 CI, broader independent security/rendered review and release gates remain open; no merge. Carry this checkpoint into next related committed/pushed logs.
+
+
+## Reviewer progress — 2026-10-20 23:37 Toronto
+
+#19 f442132 publication/documentation green, verification running; earlier stack through #18 green. Agent actively implementing market-focus successor based on #19, with real command integration and shared icons/control/gallery/lab; no new PR. Preliminary source review confirms exact integer allocation sum validation, bounded ordered future-tick admission and settlement; dividend weights read the original beginning-of-tick allocation while the new allocation is applied to the next state, matching proposed T+1 dividend timing. Source is still changing; privacy, recovery, actual renders and complete service evidence remain pending. No new actionable finding or stall, and no duplicate construction handoff (already fixed and logged) needed. Existing instructions require current checkpoint in next related committed/pushed logs. No merge or acceptance expansion.
+
+
+## Reviewer progress — 2026-10-20 23:47 Toronto
+
+#19 f442132 verification remains running; publication/documentation green. Market-focus successor still uncommitted with no new PR. Agent reports four live-KMS construction/focus cases passing 390 assertions and final default service cohort 1150 assertions, while final browser checks and compatible rollout proceed. Review doc clearly distinguishes ordinary UI admission with explicit service test clock from real-time/hosted scheduling.
+
+Independently inspected focus-draft-phone capture: all four allocation rows, full three-digit 100 value, current allocation labels, 100/100 total, remaining count and Apply/Back controls are readable and contained. This sample supports the repaired layout; it does not certify all states, keyboard behavior or final committed head. No actionable new finding or stall, so no duplicate prompt. Carry this checkpoint into related committed/pushed logs; full CI/security/rendered and release gates remain. No merge.

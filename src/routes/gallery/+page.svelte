@@ -8,6 +8,8 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import MarketFocus from "$lib/components/MarketFocus.svelte";
+  import DevelopmentIcon from "$lib/components/DevelopmentIcon.svelte";
   import SystemConstruction from "$lib/components/SystemConstruction.svelte";
   import CampaignResearch from "$lib/components/CampaignResearch.svelte";
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
@@ -17,6 +19,7 @@
     productionFrame,
     researchFrame,
     constructionFrame,
+    focusFrame,
     legacyProductionView,
   } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
@@ -190,6 +193,28 @@
     </section>
     <section>
       <h2>Account sessions</h2>
+      <h2>Market focus · production allocation and icons</h2>
+      {#each ["market", "camp", "base", "station"] as type}<DevelopmentIcon
+          type={type as "market" | "camp" | "base" | "station"}
+        /><span>{type}</span>{/each}
+      {#each ["ready", "pending", "error", "paused", "applied"] as state}<div
+          style="height: min(850px,90svh); min-height:550px;margin-bottom:32px"
+        >
+          <MarketFocus
+            focus={focusFrame(
+              state === "applied" ? 3400 : state === "ready" ? 0 : 2400,
+            )}
+            paused={state === "paused"}
+            pending={state === "pending" || state === "error"}
+            message={state === "pending" ? "Awaiting acknowledgement…" : ""}
+            error={state === "error"
+              ? "The connection was interrupted. Your allocation is preserved."
+              : ""}
+            onapply={() => {}}
+            onclose={() => {}}
+            onretry={() => {}}
+          />
+        </div>{/each}
       <h2>Construction · shared illustrated instrument</h2>
       {#each ["ready", "pending", "error", "paused", "completed"] as state}{@const sample =
           constructionFrame(

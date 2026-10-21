@@ -63,3 +63,7 @@ Other three exact prompts use this template with the subjects below:
 - Camp SUBJECT: a fighter pilot TRAINING CAMP in orbit: long sweeping training station and hangars, several small distinct sleek fighter craft departing in formation, blue-white atmospheric planet beneath, dark space beyond
 - Base SUBJECT: a planetary infantry BASE: monumental grounded military academy and fortified landing apron, low pale-stone and dark-metal architecture, tiny fully armored infantry formations, rugged mountain valley, no combat or explosions
 - Station SUBJECT: a SCIENCE SPACE STATION: graceful concentric laboratory rings and long delicate telescope instruments, blue-glowing observatory dome, sophisticated white-metal and brass structure above a luminous curved planet
+
+## Development icons
+
+`src/lib/components/DevelopmentIcon.svelte` supplies the production market coin stack, training chevrons, surface base and orbital station symbols. These are original hand-authored SVG paths, licensed with this project under GPL-3.0-only; no external artwork or generated lettering is used. They accompany real labels and expose no intelligence. The gallery enumerates all four symbols, and the market-focus control shares them across production, gallery and animation lab. Its header reuses the provenance-recorded construction market scene.

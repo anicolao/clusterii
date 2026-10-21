@@ -1,4 +1,7 @@
 <script lang="ts">
+  import MarketFocus from "./MarketFocus.svelte";
+  import { initialFocus, type Allocation } from "@shared/market-focus";
+  import { tick } from "svelte";
   import CampaignResearch from "./CampaignResearch.svelte";
   import type { Technology } from "@shared/production";
   import { onMount } from "svelte";
@@ -10,6 +13,8 @@
     onclose,
     inspectTime,
     onresearch,
+    onfocus,
+    commandKind = "",
     message = "",
     error = "",
     busy = false,
@@ -19,6 +24,8 @@
     view: CampaignView;
     onclose: () => void;
     inspectTime?: number;
+    onfocus?: (allocation: Allocation) => void;
+    commandKind?: string;
     onresearch?: (target: Technology) => void;
     message?: string;
     error?: string;
@@ -26,6 +33,19 @@
     pending?: boolean;
     onretry?: () => void;
   } = $props();
+  let editingFocus = $state(false);
+  let focusHost = $state<HTMLDivElement>();
+  async function openFocus() {
+    editingFocus = true;
+    await tick();
+    focusHost?.querySelector<HTMLHeadingElement>("h2")?.focus();
+  }
+  let focusButton = $state<HTMLButtonElement>();
+  async function closeFocus() {
+    editingFocus = false;
+    await tick();
+    focusButton?.focus();
+  }
   let now = $state(Date.now());
   onMount(() => {
     const timer = setInterval(() => (now = Date.now()), 1000);
@@ -46,130 +66,167 @@
   }
 </script>
 
-<section class="economy-instrument" aria-label="Empire economy">
-  <header>
-    <p class="overline gold">Your empire</p>
-    <h2>Economy</h2>
-    <p role="status" aria-label="Production schedule">
-      {#if !view.productionEnabled}This campaign preserves its earlier behavior
-        and does not produce resources. Create a new development campaign to
-        play with production.{:else if view.pausedAt != null}Production is
-        paused. Remaining time resumes with the campaign.{:else if !view.production}Production
-        begins fifteen minutes after home assignment.{:else if (inspectTime ?? now) >= view.production.nextTickAt}Awaiting
-        next tick. Balances update when production is confirmed.{:else}Next
-        production: {new Date(
-          view.production.nextTickAt,
-        ).toLocaleString()}.{/if}
-    </p>
-  </header>
-  <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded ledger supports keyboard scrolling.) -->
-  <div
-    class="economy-scroll"
-    role="region"
-    tabindex="0"
-    aria-label="Production ledger"
-  >
-    {#if view.empire}<p class="balance">
-        <span>Available credits</span><strong
-          >{amount(view.empire.creditsMilli)}</strong
-        >
-      </p>{/if}
-    {#if view.production}<p class="overline">
-        {view.production.tick === 0
-          ? "First production pending"
-          : `Confirmed tick ${view.production.tick}`}
-      </p>{/if}
-    {#if ledger}<dl aria-label="Last production">
-        <div>
-          <dt>Credits received</dt>
-          <dd>{amount(ledger.creditsMilli)}</dd>
-        </div>
-        {#if ledger.marketDividendsMilli}<div>
-            <dt>Market dividends included</dt>
-            <dd>{amount(ledger.marketDividendsMilli)}</dd>
-          </div>{/if}
-        {#if ledger.marketEscrowMilli}<div>
-            <dt>Market dividends held locally</dt>
-            <dd>{amount(ledger.marketEscrowMilli)}</dd>
-          </div>{/if}
-        {#if ledger.releasedEscrowMilli}<div>
-            <dt>Included credits released from unified systems</dt>
-            <dd>{amount(ledger.releasedEscrowMilli)}</dd>
-          </div>{/if}
-        <div>
-          <dt>Credits held in contested systems</dt>
-          <dd>{amount(ledger.escrowMilli)}</dd>
-        </div>
-        <div>
-          <dt>Fighters trained</dt>
-          <dd>{ledger.fighters}</dd>
-        </div>
-        <div>
-          <dt>Infantry recruited</dt>
-          <dd>{ledger.infantry}</dd>
-        </div>
-        <div>
-          <dt>Science earned</dt>
-          <dd>{amount(ledger.scienceMilli)}</dd>
-        </div>
-        {#if ledger.discardedFighters || ledger.discardedInfantry}<div>
-            <dt>Production discarded at force limit</dt>
-            <dd>
-              {ledger.discardedFighters} fighters · {ledger.discardedInfantry} infantry
-            </dd>
-          </div>{/if}
-      </dl>{/if}
-    {#if research}<section aria-label="Science progress">
-        <h3>Science · {research.target}</h3>
-        <p>
-          Level {research.levels[research.target]} · {amount(
-            research.progressMilli[research.target],
-          )} science{research.levels[research.target] <
-          rules.maximumResearchLevel
-            ? ` of ${cost}`
-            : " banked at the level cap"}
-        </p>
-        {#if research.levels[research.target] < rules.maximumResearchLevel}<progress
-            aria-label="Science towards next level"
-            max={cost * 1000}
-            value={research.progressMilli[research.target]}
-          ></progress>{/if}
-        <p>New levels apply to production from the following tick.</p>
-      </section>{/if}
-    {#if research && onresearch}<CampaignResearch
-        {research}
-        paused={view.pausedAt != null}
-        {busy}
-        {pending}
-        {message}
-        {error}
-        onselect={onresearch}
-        {onretry}
-      />{/if}
-    {#if view.productionEnabled}<section>
-        <h3>Where production goes</h3>
-        <p>
-          Markets produce credits, camps train fighters, bases recruit infantry
-          and stations earn science. Affinity and research modify their output.
-          Fractional forces remain at their system until a whole unit is ready.
-        </p>
-        <p>
-          Orbit receives fighters and science; the surface receives infantry.
-          Credits are held in a system until one empire controls both layers.
-        </p>
-        <p class="review-note">
-          Development campaign · Production rules remain under review.
-        </p>
-      </section>{/if}
-  </div>
-  <footer>
-    <ActionButton class="primary" onclick={onclose}
-      >Return to galaxy</ActionButton
+{#if editingFocus && view.economy}<div bind:this={focusHost} class="focus-host">
+    <MarketFocus
+      focus={view.economy.marketFocus ?? initialFocus()}
+      ledger={view.economy.ledger}
+      paused={view.pausedAt != null}
+      {busy}
+      {pending}
+      message={commandKind === "market.focus" ? message : ""}
+      error={commandKind === "market.focus" ? error : ""}
+      onapply={onfocus}
+      onclose={closeFocus}
+      {onretry}
+    />
+  </div>{:else}
+  <section class="economy-instrument" aria-label="Empire economy">
+    <header>
+      <p class="overline gold">Your empire</p>
+      <h2>Economy</h2>
+      <p role="status" aria-label="Production schedule">
+        {#if !view.productionEnabled}This campaign preserves its earlier
+          behavior and does not produce resources. Create a new development
+          campaign to play with production.{:else if view.pausedAt != null}Production
+          is paused. Remaining time resumes with the campaign.{:else if !view.production}Production
+          begins fifteen minutes after home assignment.{:else if (inspectTime ?? now) >= view.production.nextTickAt}Awaiting
+          next tick. Balances update when production is confirmed.{:else}Next
+          production: {new Date(
+            view.production.nextTickAt,
+          ).toLocaleString()}.{/if}
+      </p>
+    </header>
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded ledger supports keyboard scrolling.) -->
+    <div
+      class="economy-scroll"
+      role="region"
+      tabindex="0"
+      aria-label="Production ledger"
     >
-  </footer>
-</section>
+      {#if view.empire}<p class="balance">
+          <span>Available credits</span><strong
+            >{amount(view.empire.creditsMilli)}</strong
+          >
+        </p>{/if}
+      {#if view.production}<p class="overline">
+          {view.production.tick === 0
+            ? "First production pending"
+            : `Confirmed tick ${view.production.tick}`}
+        </p>{/if}
+      {#if ledger}<dl aria-label="Last production">
+          <div>
+            <dt>Credits received</dt>
+            <dd>{amount(ledger.creditsMilli)}</dd>
+          </div>
+          {#if ledger.marketDividendsMilli}<div>
+              <dt>Market dividends included</dt>
+              <dd>{amount(ledger.marketDividendsMilli)}</dd>
+            </div>{/if}
+          {#if ledger.marketEscrowMilli}<div>
+              <dt>Market dividends held locally</dt>
+              <dd>{amount(ledger.marketEscrowMilli)}</dd>
+            </div>{/if}
+          {#if ledger.releasedEscrowMilli}<div>
+              <dt>Included credits released from unified systems</dt>
+              <dd>{amount(ledger.releasedEscrowMilli)}</dd>
+            </div>{/if}
+          <div>
+            <dt>Credits held in contested systems</dt>
+            <dd>{amount(ledger.escrowMilli)}</dd>
+          </div>
+          <div>
+            <dt>Fighters trained</dt>
+            <dd>{ledger.fighters}</dd>
+          </div>
+          <div>
+            <dt>Infantry recruited</dt>
+            <dd>{ledger.infantry}</dd>
+          </div>
+          <div>
+            <dt>Science earned</dt>
+            <dd>{amount(ledger.scienceMilli)}</dd>
+          </div>
+          {#if ledger.discardedFighters || ledger.discardedInfantry}<div>
+              <dt>Production discarded at force limit</dt>
+              <dd>
+                {ledger.discardedFighters} fighters · {ledger.discardedInfantry} infantry
+              </dd>
+            </div>{/if}
+        </dl>{/if}
+      {#if research}<section aria-label="Science progress">
+          <h3>Science · {research.target}</h3>
+          <p>
+            Level {research.levels[research.target]} · {amount(
+              research.progressMilli[research.target],
+            )} science{research.levels[research.target] <
+            rules.maximumResearchLevel
+              ? ` of ${cost}`
+              : " banked at the level cap"}
+          </p>
+          {#if research.levels[research.target] < rules.maximumResearchLevel}<progress
+              aria-label="Science towards next level"
+              max={cost * 1000}
+              value={research.progressMilli[research.target]}
+            ></progress>{/if}
+          <p>New levels apply to production from the following tick.</p>
+        </section>{/if}
+      {#if research && onresearch}<CampaignResearch
+          {research}
+          paused={view.pausedAt != null}
+          {busy}
+          {pending}
+          message={commandKind === "research.select" ? message : ""}
+          error={commandKind === "research.select" ? error : ""}
+          onselect={onresearch}
+          {onretry}
+        />{/if}
+      {#if view.productionEnabled}<section>
+          <h3>Where production goes</h3>
+          <p>
+            Markets produce credits, camps train fighters, bases recruit
+            infantry and stations earn science. Affinity and research modify
+            their output. Fractional forces remain at their system until a whole
+            unit is ready.
+          </p>
+          <p>
+            Orbit receives fighters and science; the surface receives infantry.
+            Credits are held in a system until one empire controls both layers.
+          </p>
+          <p class="review-note">
+            Development campaign · Production rules remain under review.
+          </p>
+        </section>{/if}
+    </div>
+    <footer>
+      {#if view.economy && onfocus}<button
+          bind:this={focusButton}
+          class="focus-button"
+          onclick={openFocus}>Market focus</button
+        >{/if}
+      <ActionButton class="primary" onclick={onclose}
+        >Return to galaxy</ActionButton
+      >
+    </footer>
+  </section>
+{/if}
 
 <style>
+  .focus-host {
+    height: 100%;
+    min-height: 0;
+  }
+  .focus-button {
+    min-height: 48px;
+    padding: 12px 20px;
+    background: #0b2631;
+    border: 1px solid #7296a2;
+    color: #fff;
+    font: inherit;
+  }
+  .focus-button:focus-visible {
+    outline: 2px solid #7ce9fa;
+    outline-offset: 3px;
+  }
   .economy-instrument {
     display: flex;
     flex-direction: column;

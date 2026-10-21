@@ -1,0 +1,34 @@
+{
+  "units": {
+    "passed": 30,
+    "assertions": 443
+  },
+  "liveService": {
+    "passed": 4,
+    "assertions": 390,
+    "seconds": 108.02,
+    "log": "/tmp/cluster-focus-live.log",
+    "coverage": "Both-provider construction/focus, exact frozen-weight dividends, private orders and complete four-recipient history across both-direction migration."
+  },
+  "defaultService": {
+    "passed": 21,
+    "assertions": 1150,
+    "liveOnlySkipped": 11,
+    "seconds": 62.68,
+    "log": "/tmp/cluster-focus-final.log"
+  },
+  "browser": {
+    "combinedPassed": 7,
+    "seconds": 31.9,
+    "log": "/tmp/cluster-focus-final.log",
+    "finalFocusPassed": 2,
+    "secondsFinal": 20.5,
+    "logFinal": "/tmp/cluster-focus-keyboard.log",
+    "coverage": "Ordinary four-player admission; real service with explicit start/tick clock; invalid totals, pre-scroll commitment rail, overlap/containment, numeric field text width, heading focus, Back focus restoration, accepted reload, old and new dividend timing, ledger balances; deterministic lab reset/replay and reduced-motion equivalence."
+  },
+  "types": "pass",
+  "lint": "pass",
+  "renderedReview": "Implementer compared phone/desktop/short/4K before/after and applied states to economy-v2. Supervisor independently sampled corrected phone draft at 23:47; full independent visual/security acceptance pending.",
+  "deployment": "All five consumers/view writers then processCampaign then database rules deployed; hosted acceptance remains separate.",
+  "limits": "Proposed rules, public admission, hosted Google/Scheduler, exact-head CI, account-key rotation and full milestone/release acceptance remain open."
+}

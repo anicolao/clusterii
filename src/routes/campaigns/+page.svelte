@@ -252,6 +252,7 @@
             "campaign.pause",
             "campaign.resume",
             "research.select",
+            "market.focus",
             "construction.build",
             "construction.cancel",
           ].includes(command.kind)
@@ -346,6 +347,12 @@
           kind: "construction.cancel",
           expectedRevision: view!.revision,
           orderId,
+        })}
+      onfocus={(allocation) =>
+        send(view!.id, {
+          kind: "market.focus",
+          expectedRevision: view!.revision,
+          allocation,
         })}
       onresearch={(target) =>
         send(view!.id, {
