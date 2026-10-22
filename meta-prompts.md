@@ -1810,3 +1810,22 @@ Reviewer continuation 2026-10-22 09:59 Toronto: #85 e8330bc attached, clean idle
 Agent healthy at15a0a1f reviewing saved-account isolation candidates and running strict coverage. Independently reviewed story: ordinary same-browser sign-out/sign-in, no saved-identity mutation, distinct blank73/blank61 drafts, other device stays authoritative25, complete canonical/private/profile/receipt equality. This path intentionally leaves/unmounts campaign before sign-out, so it proves navigation-plus-account reuse rather than in-place account-switch callback handling; prior remote session and membership fault cover separate mounted-loss paths. No full acceptance inferred.
 
 No new CI failure among latest stack; disk2.7GiB, bounded run active. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release/independent visual/Linux/hosted/original raster holds remain open. No merge.
+
+
+## Reviewer progress and finding — 2026-10-22 10:19 Toronto
+
+#86 46235f9 attached on #85:8 strict journeys128 captures recorded, existing independent account-switch source review remains scoped. Agent healthy on9ac6709 research capability guidance successor; catches incorrect construction-ledger capability assumption, retains failed candidate and corrects against recorded schema. No interruption/duplicate prompt.
+
+NEW actionable #85 application verification failure, distinct from illustrated baseline gaps:job119864955566 retained /tmp/cluster85-1019-app.log. fleet reorganization mock test fails after20.14s with No authoritative receipt from profile receipt helper tests/service.test.ts:85;30 pass21 skip1 fail,1708 assertions. Investigate actual receipt/ingress evidence at next boundary; do not assume raster/infra flake or relax timeout/assertions without diagnosis. Carry checkpoint into attributed committed/pushed logs and prioritize resolving this test failure after current bounded work. Full independent visual/Linux/hosted/original raster/release holds remain open; no merge.
+
+## Reviewer progress — 2026-10-22 10:29 Toronto
+
+Agent healthy at6e676da on research capability guidance, preserving original failures and reviewing completed four-size candidates before strict verification. Independently reviewed native-fieldset scrolling fix and nested-scroll geometry audit; selected radio also explicitly focus/hit-tested before reading its description. Candidate visual review remains scoped, not release acceptance. Agent has read #85 receipt-failure log and narrowed investigation to missing profile ingress execution during identity setup; cause remains unproven. No duplicate prompt/interruption.
+
+#84 Linux story job119848843080 completed; retained /tmp/cluster84-1029-verify.log:63 missing reviewed baselines and four pixel differences1066/259/273/1994. Prior eight paired voluntary-Leave screenshot failures no longer appear, supporting the specific fix without clearing other raster/baseline holds. Application verification and publication passed. Carry checkpoint into attributed committed/pushed logs at natural boundary; continue receipt diagnosis and full implementation/release gaps. No merge.
+
+## Reviewer progress — 2026-10-22 10:39 Toronto
+
+Attached #87 4111427 on #86: eight strict journeys/144 exact captures across four sizes; independent phone candidate and fieldset/nested-audit source review from10:29 remains scoped. Reviewed final capability wiring and nested-reader overlay regression: production/economy capability does not depend on an existing construction ledger, real overlay still must fail. Historical branches and broader shared-component/Linux propagation remain unverified; no release acceptance.
+
+Agent healthy back on #85 preparing failure-only receipt diagnostics and propagation through successors. Independently inspected current diff: loopback-only read-only persisted ingress/profile/receipt evidence, redacted to IDs/digests/status, original20-second polling deadline retained, no write retry. Local unchanged fleet-reorganization pass is a negative reproduction, not cause/fix. Diagnostic test and final committed diff still pending. Disk below2GiB capture gate; avoid further large captures/downloads. No interruption or duplicate prompt. Carry checkpoint into attributed committed/pushed logs at natural boundary. Full implementation, Linux/hosted/visual/original raster holds remain open; no merge.

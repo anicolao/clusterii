@@ -526,3 +526,5 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | R
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Archive exact account-isolation evidence and reconcile broader plan gaps with the 10:09 reviewer checkpoint
 
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Attach PR86 dependency and preview gates before continuing capability-aware research guidance
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Propagate PR85 read-only timeout diagnostics into PR86 without changing account-isolation behavior
