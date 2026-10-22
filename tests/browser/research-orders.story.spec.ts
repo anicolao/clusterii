@@ -436,7 +436,9 @@ test("Live research orders preserve choices and acknowledge switches", async ({
                 await expect(forecast).not.toContainText(
                   "Estimated completion:",
                 );
-                await button(owner, "Queue investing").scrollIntoViewIfNeeded();
+                await forecast.evaluate((e) =>
+                  e.scrollIntoView({ block: "start" }),
+                );
                 const box = await forecast.boundingBox();
                 const footer = await button(
                   owner,

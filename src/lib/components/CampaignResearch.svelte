@@ -163,9 +163,10 @@
       class="forecast"
       aria-label="Selected research forecast"
       ontoggle={async (event) => {
-        if (event.currentTarget.open) {
+        const disclosure = event.currentTarget;
+        if (disclosure.open) {
           await tick();
-          commitment?.scrollIntoView({ block: "nearest" });
+          disclosure.scrollIntoView({ block: "start" });
         }
       }}
     >
