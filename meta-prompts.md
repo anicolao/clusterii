@@ -1490,3 +1490,10 @@ Agent healthy now extending actual arrival archive reading. Independently inspec
 Agent healthy atf372d4d continuing arrival archive exact comparison; phone25.7sec and desktop35.4sec pass, large/short pending. Independently inspectedc697dfc: conditional centering only for genuinely clipped report bounds, persistent before/after JSON, unchanged full-visibility assertions. Candidate review scopes48 new captures with112 predecessor pixels unchanged and explicitly excludes failed short candidate run. Full four-size exact acceptance pending.
 
 #67 Linux verification now running; no new completed failure requiring intervention. Existing01:49/01:59 handoffs remain queued and main checkpoints are visibly read by agent; no duplicate prompt. Agent is monitoring low disk headroom758MiB; no broad downloads initiated here. Carry this checkpoint into committed/pushed logs at natural boundary. Full implementation/release, independent visual/Linux/raster and served-preview gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 03:09 Toronto
+
+Draft #70 da36da2 attached on #69. Independently checked unresolved short7-pixel mismatch in retained log; no short acceptance, tolerance change or overwrite. Agent processing prior queued checkpoint; next remains queued, no duplicate. Three full exact viewports archived, short final other-player return remains open.
+
+Independent disk check521MiB free confirms substantial new evidence runs are resource-blocked after agent safe task-cache cleanup. User notification warranted; preserve failure artifacts. Important correction from reviewed triage: green #64 generation job skipped candidate steps without baseline-candidates label and produced no candidates. Green job status is not generated evidence; same caution applies to other generation jobs until steps/artifacts inspected. Pages recovery is recorded for #61/#65/#66 with exact-head/static checks; broader hosted acceptance remains open. Carry checkpoint into committed/pushed attributed logs. No merge; full implementation/release incomplete.

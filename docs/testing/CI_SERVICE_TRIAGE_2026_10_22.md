@@ -59,3 +59,11 @@ Pages deployment39732471805 completed successfully. Read-only current PR-head ch
 ## Queued 01:49 checkpoint reconciliation
 
 Prompt 65 records the delivered reviewer checkpoint and its scoped phone-only acceptance. The #65 HTTP404 failure and later exact-head serving recovery are retained above as separate observations: the failed publication job remains failed, while the subsequent unchanged verifier passed against served757d423. No duplicate publication or test run was started to reconcile the queued instruction. Navigation/shared-renderer verification subsequently completed in #68 and #69; their review documents retain local evidence and independent/Linux/hosted limits. Draft #70 retains its distinct seven-pixel short arrival-frame failure and low-disk evidence hold. Main supervisory history through02:59 is preserved unchanged.
+
+## Delivered 01:59 checkpoint and #65 generation audit
+
+Prompt 66 records the reviewer’s scoped finding: all four cohorts report29 passes and12 missing reviewed Linux baselines, with no other substantive Error entries in the retained log. This supports bounded-cohort execution in that run, not service/raster certification.
+
+Read-only jobs API confirms run39724370529 at757d423c4d21397ca36ff9233c6741257a4df72a: verify119644812733 failed; generate119644812983 succeeded but its “Explicit baseline candidates (never acceptance)” step was skipped. The only artifact is failed verification output12405425226 (1,841,837,811 bytes). There are therefore no generated matching-head candidates from this run to review or promote. Evidence: `/tmp/cluster65-generation-step-status.json`, `/tmp/cluster65-artifact-status.json`; original failure `/tmp/cluster65-0158-failure.log` remains retained. No verification images were promoted, inherited baselines changed, or duplicate runs launched.
+
+Data-volume headroom is510MiB at this audit, so the1.84GB artifact was not downloaded. Existing review captures/traces remain preserved. Candidate review requires an explicit generation artifact with matching provenance and adequate storage; the current draft arrival-frame, Linux/raster and newer-preview gates remain open. Main supervisory history through02:59 is preserved.
