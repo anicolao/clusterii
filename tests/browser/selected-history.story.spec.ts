@@ -539,7 +539,9 @@ test("Selected history reaches only a consenting commander and survives reload",
               members: string[];
             };
             expect(room.members).not.toContain(state.seats[1].uid);
-            await expect(panel(guest)).toContainText(selected);
+            await expect(panel(guest)).toContainText(
+              "Previously received records remain in your campaign",
+            );
             await expect(panel(guest)).not.toContainText(secret);
           },
         },
@@ -595,59 +597,90 @@ test("Selected history reaches only a consenting commander and survives reload",
       ],
       views: [view(0), view(1), view(2)],
     });
-    await story.step("recover-ended-access", {
+
+    const retainedHistory = guest.getByRole("region", {
+      name: "Campaign history",
+      exact: true,
+    });
+    const receivedRecord = retainedHistory.getByLabel(
+      `Campaign record ${before.revision + 1}`,
+      { exact: true },
+    );
+    await story.step("recover-retained-history", {
       actor: aliases[1],
       description:
-        "Reload the former member's session. Earlier selected history remains readable; new private messages remain unavailable.",
+        "Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible.",
       action: async () => {
         await guest.reload();
-        await open(guest);
-        await chooseRoom(guest);
+        await button(guest, "History").focus();
+        await guest.keyboard.press("Enter");
+        await expect(receivedRecord).toBeVisible();
+        await receivedRecord.locator("summary").focus();
+        await guest.keyboard.press("Enter");
       },
       acknowledgement: {
-        spec: "Recovered conversation explains that current access has ended.",
+        spec: "The accepted-consent record exposes the previously received rendezvous message.",
         check: async () =>
-          expect(panel(guest)).toContainText(
-            "Your current access to this conversation has ended",
-          ),
+          expect(
+            receivedRecord.getByRole("article", {
+              name: "Previously received message",
+            }),
+          ).toContainText(selected),
       },
       verifications: [
         noErrors,
         outsiderPrivate,
-        revokedPrivate,
         {
-          spec: "Reload preserves history boundaries and causes no command revision.",
+          spec: "Reload and both motion preferences preserve the exact revision and exclude ungranted messages from historical reading.",
           check: async () => {
             expect((await canonical()).revision).toBe(revokedRevision + 2);
-            await expect(panel(guest)).toContainText(selected);
-            await expect(panel(guest)).not.toContainText(secret);
-            await expect(
-              panel(guest).getByLabel("Message", { exact: true }),
-            ).toHaveCount(0);
+            await expect(retainedHistory).not.toContainText(secret);
+            await expect(retainedHistory).not.toContainText(absentMessage);
+            expect(JSON.stringify(await published(1))).not.toContain(
+              absentMessage,
+            );
+            const back = button(guest, "Return to galaxy");
+            await expect(back).toBeInViewport({ ratio: 1 });
+            const article = receivedRecord.getByRole("article", {
+              name: "Previously received message",
+            });
+            await article.evaluate((el) =>
+              el.scrollIntoView({ block: "center" }),
+            );
+            await expect(article).toBeInViewport({ ratio: 1 });
+            const inner = await article.boundingBox(),
+              outer = await retainedHistory
+                .getByRole("region", { name: "Saved campaign records" })
+                .boundingBox();
+            expect(inner!.y).toBeGreaterThanOrEqual(outer!.y);
+            expect(inner!.y + inner!.height).toBeLessThanOrEqual(
+              outer!.y + outer!.height,
+            );
+            await guest.emulateMedia({ reducedMotion: "no-preference" });
+            await expect(article).toContainText(selected);
+            expect((await canonical()).revision).toBe(revokedRevision + 2);
+            await guest.emulateMedia({ reducedMotion: "reduce" });
           },
         },
       ],
       views: [view(1), view(2)],
     });
-    await story.step("leave-ended-conversation", {
+    await story.step("leave-retained-history", {
       actor: aliases[1],
       description:
-        "Escape returns the former member to the galaxy with keyboard focus restored.",
+        "Escape closes retained history and restores focus to History on the galaxy.",
       action: async () => {
         await guest.keyboard.press("Escape");
       },
       acknowledgement: {
-        spec: "Focus returns to Conversations.",
-        check: async () =>
-          expect(
-            guest.getByRole("button", { name: /^Conversations(?: · New)?$/ }),
-          ).toBeFocused(),
+        spec: "Focus returns to History.",
+        check: async () => expect(button(guest, "History")).toBeFocused(),
       },
       verifications: [
         noErrors,
         {
-          spec: "No private panel remains visible.",
-          check: async () => expect(panel(guest)).not.toBeVisible(),
+          spec: "No private history panel remains visible.",
+          check: async () => expect(retainedHistory).not.toBeVisible(),
         },
       ],
       views: [view(1)],
