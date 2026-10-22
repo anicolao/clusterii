@@ -8,10 +8,10 @@
   ],
   "description": "Independent commanders use authenticated development-provider commands. The creator shares one of two earlier messages; the recipient reviews and accepts its scope, then reloads. An uninvolved commander never receives the room or either message. Admission uses the labelled emulator clock and actual scheduler endpoint, not injected state. Managed-key and fault journeys remain separate coverage.",
   "source": {
-    "commit": "e4b66cc77710965e1cf9a25cb64baf0922a6923f",
+    "commit": "13939f302eb8e073d3c36e0e65e2d2e2b367ce66",
     "dirty": false,
     "spec": "tests/browser/selected-history.story.spec.ts",
-    "specSha256": "02f5c7efe2e3f8eda5e280d2433577c01f3c825f749d088564a9ed53ea0ee959"
+    "specSha256": "f88a77979033604fa9009299e83fa4d8c8247f34e1348540834b6bce91eba954"
   },
   "mode": "verify",
   "status": "passed",
@@ -308,6 +308,125 @@
         {
           "player": "Dawn listener",
           "image": "017-return-to-chart-1-dawn-listener.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-removal",
+      "description": "The creator reviews removal of the consenting listener before committing it.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The removal confirmation is available without changing membership.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "018-review-removal-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "remove-current-access",
+      "description": "Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The listener sees authoritative access-ended feedback and cannot compose a new message.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Exactly one revision removes the listener without expanding previous history."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "019-remove-current-access-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "019-remove-current-access-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "019-remove-current-access-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "message-after-removal",
+      "description": "The creator sends a new private message after removal; neither the former member nor outsider receives it.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Message sent acknowledges the command and the creator can read its text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Removed and outsider recipients receive no post-removal message in UI or serialized views.",
+        "The post-removal message commits exactly once."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "020-message-after-removal-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "020-message-after-removal-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "020-message-after-removal-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-retained-history",
+      "description": "Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The accepted-consent record exposes the previously received rendezvous message.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Reload and both motion preferences preserve the exact revision and exclude ungranted messages from historical reading."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "021-recover-retained-history-1-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "021-recover-retained-history-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "leave-retained-history",
+      "description": "Escape closes retained history and restores focus to History on the galaxy.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "Focus returns to History.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "No private history panel remains visible."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "022-leave-retained-history-1-dawn-listener.png",
           "verifications": []
         }
       ]

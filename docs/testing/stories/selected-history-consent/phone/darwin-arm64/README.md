@@ -197,3 +197,92 @@ Acknowledged outcome: The chart returns focus to Conversations.
 ### Viewpoint: Dawn listener
 
 [![Escape closes the conversation and restores keyboard focus to its opening control. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/017-return-to-chart-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/017-return-to-chart-1-dawn-listener.png)
+
+## 18. The creator reviews removal of the consenting listener before committing it.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The removal confirmation is available without changing membership.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] The outsider's UI and serialized authorized view contain neither private room nor either message.
+
+### Viewpoint: Nacre envoy
+
+[![The creator reviews removal of the consenting listener before committing it. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/018-review-removal-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/018-review-removal-1-nacre-envoy.png)
+
+## 19. Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The listener sees authoritative access-ended feedback and cannot compose a new message.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] The outsider's UI and serialized authorized view contain neither private room nor either message.
+- [x] Exactly one revision removes the listener without expanding previous history.
+
+### Viewpoint: Nacre envoy
+
+[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/019-remove-current-access-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/019-remove-current-access-1-nacre-envoy.png)
+
+### Viewpoint: Dawn listener
+
+[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/019-remove-current-access-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/019-remove-current-access-2-dawn-listener.png)
+
+### Viewpoint: Outer witness
+
+[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/019-remove-current-access-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/019-remove-current-access-3-outer-witness.png)
+
+## 20. The creator sends a new private message after removal; neither the former member nor outsider receives it.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Message sent acknowledges the command and the creator can read its text.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] The outsider's UI and serialized authorized view contain neither private room nor either message.
+- [x] Removed and outsider recipients receive no post-removal message in UI or serialized views.
+- [x] The post-removal message commits exactly once.
+
+### Viewpoint: Nacre envoy
+
+[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/020-message-after-removal-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/020-message-after-removal-1-nacre-envoy.png)
+
+### Viewpoint: Dawn listener
+
+[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/020-message-after-removal-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/020-message-after-removal-2-dawn-listener.png)
+
+### Viewpoint: Outer witness
+
+[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/020-message-after-removal-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/020-message-after-removal-3-outer-witness.png)
+
+## 21. Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible.
+
+Actor: **Dawn listener**.
+
+Acknowledged outcome: The accepted-consent record exposes the previously received rendezvous message.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] The outsider's UI and serialized authorized view contain neither private room nor either message.
+- [x] Reload and both motion preferences preserve the exact revision and exclude ungranted messages from historical reading.
+
+### Viewpoint: Dawn listener
+
+[![Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/021-recover-retained-history-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/021-recover-retained-history-1-dawn-listener.png)
+
+### Viewpoint: Outer witness
+
+[![Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/021-recover-retained-history-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/021-recover-retained-history-2-outer-witness.png)
+
+## 22. Escape closes retained history and restores focus to History on the galaxy.
+
+Actor: **Dawn listener**.
+
+Acknowledged outcome: Focus returns to History.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] No private history panel remains visible.
+
+### Viewpoint: Dawn listener
+
+[![Escape closes retained history and restores focus to History on the galaxy. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)
