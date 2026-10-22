@@ -3,6 +3,7 @@ import { commandDigest } from "../../../shared/command-receipt";
 
 /** Observe real transport before login; never intercept or manufacture a receipt. */
 export function observeDeparture(page: Page) {
+  let authorization = "";
   const writes: { path: string; payload: unknown }[] = [];
   const record = (raw: string) => {
     if (!raw.includes('"a":"p"') || !raw.includes("/commands/")) return;
@@ -15,13 +16,15 @@ export function observeDeparture(page: Page) {
   );
   page.on("request", (request) => {
     const url = new URL(request.url());
+    if (url.port === "15001" && url.pathname.endsWith("/campaignKey"))
+      authorization = request.headers().authorization ?? authorization;
     if (url.port !== "19000" || url.pathname !== "/.lp") return;
     for (const [key, value] of url.searchParams)
       if (/^d\d+$/.test(key))
         record(Buffer.from(value.replaceAll(".", "="), "base64url").toString());
   });
   return {
-    spec: "One logical Leave has its matching accepted receipt; membership and protected view are absent, with no involuntary-access error or retry remedy.",
+    spec: "One logical Leave has its matching accepted receipt; membership is absent and the retained protected view denies player access, with no involuntary-access error or retry remedy.",
     check: async () => {
       expect(writes.length).toBeGreaterThan(0);
       const original = writes[0];
@@ -49,9 +52,21 @@ export function observeDeparture(page: Page) {
       expect(
         (await read(`campaignMemberships/${uid}/games/${gameId}`)).status(),
       ).toBe(404);
+      // Historical ciphertext remains stored. Prove the actual departed player's
+      // credential still reads its receipt but cannot read that retained view.
+      expect(authorization.startsWith("Bearer ")).toBe(true);
+      const playerRead = (path: string) =>
+        page.request.get(root + path, {
+          headers: { Authorization: authorization },
+        });
       expect(
-        (await read(`campaignViews/${gameId}/members/${uid}`)).status(),
-      ).toBe(404);
+        (
+          await playerRead(`campaignReceipts/${uid}/results/${commandId}`)
+        ).status(),
+      ).toBe(200);
+      expect(
+        (await playerRead(`campaignViews/${gameId}/members/${uid}`)).status(),
+      ).toBe(403);
       await expect(page.locator("canvas")).toHaveCount(0);
       await expect(page.getByRole("alert")).toHaveCount(0);
       await expect(
