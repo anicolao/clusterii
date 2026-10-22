@@ -1,0 +1,18 @@
+# Admission recovery timing
+
+Prompt96 records the reviewer15:19 instruction. The two retained construction-feedback runs stop at the5s Choose your faction assertion, before reaching the Queue regression. Source and existing artifacts were inspected before any retry. No new browser run, instrumentation or recovery behavior change is included in this diagnosis.
+
+| Existing trace | Create click (monotonic ms) | Heading wait begins | campaignKey request begins | Assertion ends |
+| --- | ---: | ---: | ---: | ---: |
+| Local before | 52824.399 | 52890.732 | 56279.980 | 57983.388 |
+| Local after | 30295.011 | 30591.457 | 33275.702 | 35703.245 |
+
+Evidence remains in `/tmp/cluster-queue-local-before-failure` and `/tmp/cluster-queue-local-after-result`. Extracted traces are `/tmp/cluster-admission-before-failure` and `/tmp/cluster-admission-after-result`; bounded offline snapshot correlation is `/tmp/cluster-admission-correlate.cjs` and `/tmp/cluster-admission-correlation.txt`. No envelope, key or identity values are logged in the correlation.
+
+The after-run's last screencast frame at33307.546ms says Order acknowledged. Saving recovery state. That painted frame predates the final DOM snapshot at35706.111ms. The final snapshot instead contains the success status Campaign created. Choose your faction, the campaign URL and Recovering your campaign. It has no Choose your faction heading: the phrase appears only in status text. The before-run final DOM likewise reaches campaign recovery.
+
+The source chain is receipt digest validation → callback → clearOrder → transaction complete → clear pending/busy → select → observeCampaign → campaignKey → authorized subscription/view. For campaign.create there is no conversation-draft cleanup. clearOrder resolves only from the orders readwrite transaction's oncomplete, after matching the complete immutable command and deleting it. Both traces issue campaignKey after that chain has progressed; this rejects the hypothesis that durable cleanup remains blocked at the final assertion. It does not measure the exact IndexedDB request/transaction duration, which these traces do not record.
+
+Neither campaignKey request has a completed browser response in its trace (HAR time/status -1 at teardown). No authorized private view is observed before failure. The demonstrated remaining boundary is authorization/view recovery after durable retirement, not historical persisted-but-unprocessed ingress. Earlier campaignSecurity requests return200 before the create click. Existing CLI execution-duration messages lack correlated browser receipt timestamps and do not establish where campaignKey response time was spent.
+
+Do not clear pending early, bypass IndexedDB, extend the assertion deadline or describe this as infrastructure flakiness. No such changes were made. If a focused diagnostic execution becomes necessary, its discriminating hypothesis is post-delete campaignKey transport/response versus subsequent authorized-view delivery. Capture a bounded test-only timestamp sequence for order transaction/delete/complete (without keys or values), fixed UI status transitions and callable request/response metadata; preserve the original5s assertion and account fences. A clean pass alone cannot resolve these historical timings. Expensive capture families stay separate.
