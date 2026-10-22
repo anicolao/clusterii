@@ -344,3 +344,5 @@ Prompt 60 | e9ee1581c65b5d28372170a05026a9277246c5cc8b0e883467985fd56d429964 | C
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Review and promote only new paused-travel candidates before strict comparison; retain CI diagnosis.
 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Archive twelve exact journeys and retained travel regressions; carry supervisory logs and distinct CI resource evidence.
+
+Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Bound CI emulator lifetime by viewport while preserving failed artifacts, exact assertions and interruption ownership.
