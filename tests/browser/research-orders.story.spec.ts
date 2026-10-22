@@ -1133,6 +1133,21 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           expect(observedWrites.get(peer)).toEqual([]);
         },
       },
+      verifications: [
+        {
+          spec: "The newer local choice leaves saved identity and the independent peer's science unchanged.",
+          check: async () => {
+            expect(await identity(uid)).toEqual(identityBefore);
+            expect(
+              (await published(peerUid)).economy!.ledger!.scienceMilli,
+            ).toBe(1400);
+            expect(
+              (await published(peerUid)).economy!.research.progressMilli
+                .navigation,
+            ).toBe(22400);
+          },
+        },
+      ],
       views: [
         {
           page: stale,
