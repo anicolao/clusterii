@@ -4,6 +4,7 @@ import type { Campaign, CampaignView } from "../../shared/campaign";
 import { observationView } from "../../shared/observations";
 import { distance } from "../../shared/galaxy";
 import { test, expect } from "./story-helpers/fixtures";
+import { readableLabels, labelGeometry } from "./story-helpers/galaxy-labels";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
@@ -100,6 +101,12 @@ test("Live stellar observations retain private current and historical facts afte
       player: aliases[i],
       surface: "game" as const,
       primary: [button(page, "Observation")],
+      verifications: [
+        {
+          spec: "Projected system labels remain separated and contained within the chart.",
+          check: () => readableLabels(page),
+        },
+      ],
     }));
   const privacy = async () => {
     const s = await canonical();
@@ -565,6 +572,90 @@ test("Live stellar observations retain private current and historical facts afte
             );
             await privacy();
             for (const seat of [0, 1]) await matchReport(seat, stale.id);
+          },
+        },
+      ],
+      views: views(),
+    });
+    const recoveredState = await canonical();
+    await story.step("read-labels-after-resize", {
+      actor: aliases[0],
+      description:
+        "Resize the recovered chart and return to the original viewport; compare normal and reduced motion without changing the selected report.",
+      action: async () => {
+        const size = owner.viewportSize()!;
+        const before = await labelGeometry(owner);
+        await owner.setViewportSize({
+          width: size.width + 57,
+          height: size.height + 41,
+        });
+        await readableLabels(owner);
+        await owner.setViewportSize(size);
+        await expect.poll(() => labelGeometry(owner)).toEqual(before);
+        await owner.emulateMedia({ reducedMotion: "no-preference" });
+        await readableLabels(owner);
+        await expect.poll(() => labelGeometry(owner)).toEqual(before);
+        await owner.emulateMedia({ reducedMotion: "reduce" });
+      },
+      acknowledgement: {
+        spec: "The same historical report remains selected with readable labels after resize and either motion preference.",
+        check: async () => {
+          await expect(age(owner)).toHaveText(
+            "Last observed 1 tick ago · tick 1",
+          );
+          await readableLabels(owner);
+          if (info.project.name === "phone") {
+            await expect(
+              owner.locator(".quiet-label").filter({ hasText: "Tupã · A" }),
+            ).toBeVisible();
+            await expect(
+              owner
+                .locator(".quiet-label")
+                .filter({ hasText: "Tania Australis · G · You" }),
+            ).toBeVisible();
+          }
+        },
+      },
+      verifications: [
+        {
+          spec: "Presentation changes neither canonical state nor authorized observations.",
+          check: async () => {
+            expect(await canonical()).toEqual(recoveredState);
+            await privacy();
+          },
+        },
+      ],
+      views: views(),
+    });
+    await story.step("locate-home-by-keyboard", {
+      actor: aliases[0],
+      description:
+        "Use the systems list and Center home control with the keyboard to discover the home system independently of secondary map labels.",
+      action: async () => {
+        await button(owner, "Systems list").focus();
+        await button(owner, "Systems list").press("Enter");
+        await button(owner, "Center home").focus();
+        await button(owner, "Center home").press("Enter");
+        await button(owner, "Close list").focus();
+        await button(owner, "Close list").press("Enter");
+      },
+      acknowledgement: {
+        spec: "The authoritative home system is selected and its priority label is readable.",
+        check: async () => {
+          await expect(
+            inspector(owner).getByRole("heading", { level: 2 }),
+          ).toHaveAccessibleName(home.name);
+          await expect(owner.locator(".star-label")).toHaveText(home.name);
+          await expect(owner.locator(".star-label")).toBeVisible();
+          await readableLabels(owner);
+        },
+      },
+      verifications: [
+        {
+          spec: "Keyboard chart navigation preserves authoritative forces, history and private recipient projections.",
+          check: async () => {
+            expect(await canonical()).toEqual(recoveredState);
+            await privacy();
           },
         },
       ],

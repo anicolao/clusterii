@@ -966,6 +966,7 @@
         {contacts}
         stars={view.stars}
         owned={view.holdings.map((h) => h.starId)}
+        home={view.own.home ?? ""}
         selected={star.id}
         {stellarClass}
         {cameraRequest}
