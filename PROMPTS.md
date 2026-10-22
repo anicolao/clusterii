@@ -581,3 +581,9 @@ Reviewer continuation 2026-10-22 03:49 Toronto: clean417bb62, idle, disk13GiB. P
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:09 Toronto”.
 
 Reviewer continuation 2026-10-22 04:09 Toronto: #71 b590be6 attached, clean idle and queue empty. Continue the next concrete IMPLEMENTATION_PLAN gap as a small stacked successor based on #71; keep actual player interaction/actions/persistence/authorization and user-story TestStepHelper evidence. Select from the recorded remaining plan gaps without treating proposed rules as approvals; do not stop merely because Linux generation is queued. Preserve #70 draft unresolved raster and all independent visual/hosted gates. Follow the single explicit #70 candidate run when it produces evidence, no duplicate generation. Carry checkpoints through04:09 into attributed committed/pushed logs; no merge.
+
+## Prompt 71: Recovery continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:29 Toronto”.
+
+Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle. Continue next concrete IMPLEMENTATION_PLAN gap in a small successor based on #72, preserving user-story TestStepHelper and authoritative privacy/recovery/concurrency evidence. New #69 verify job119679444037 log /tmp/cluster69-0429-failure.log has phone1066/259/273-pixel mismatches plus short1994 identity recurrence and missing Linux baselines; classify actual affected frames before assuming inherited causes or promoting anything. Keep one explicit #70 generation run, no duplicates. Carry checkpoint into attributed committed/pushed logs. #70 original mismatch and independent visual/hosted gates remain open; no merge.
