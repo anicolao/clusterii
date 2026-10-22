@@ -610,3 +610,5 @@ Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | P
 Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Preserve qualified recovery captures and fence each restored command once so later view callbacks cannot overwrite a deliberate baseline choice.
 
 Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Add the required named peer and identity verification to the post-tick recovery story after typecheck caught the missing helper field.
+
+Prompt 93 | f8f3eef49593489ee296c5689ee896f1cdada23453ef15c9d729af2f8c1a8062 | Preserve the short-screen containment failure and use End then ArrowUp to read Recruiting without weakening any clipping or exact-image assertion.

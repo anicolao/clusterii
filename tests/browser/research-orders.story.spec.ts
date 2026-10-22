@@ -68,16 +68,17 @@ async function containedReading(target: Locator) {
           await new Promise(requestAnimationFrame);
           await new Promise(requestAnimationFrame);
           const last = measure();
-          return (
-            last.contained && JSON.stringify(first) === JSON.stringify(last)
-          );
+          return {
+            ...last,
+            stable: JSON.stringify(first) === JSON.stringify(last),
+          };
         }),
       {
         message:
           "The whole named reading control settles inside every clipping ancestor",
       },
     )
-    .toBe(true);
+    .toMatchObject({ contained: true, stable: true });
 }
 const aliases = [
   "Market envoy",
@@ -753,6 +754,11 @@ test("Live research orders preserve choices and acknowledge switches", async ({
             ),
           )
           .toBeLessThanOrEqual(1);
+        const endPosition = await tracks.evaluate((e) => e.scrollTop);
+        await stale.keyboard.press("ArrowUp");
+        await expect
+          .poll(() => tracks.evaluate((e) => e.scrollTop))
+          .toBeLessThan(endPosition);
         await containedReading(choice.locator(".."));
       },
       acknowledgement: {
@@ -789,7 +795,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       verifications: [
         privacy,
         {
-          spec: "The entire restored Recruiting control is contained inside the keyboard-focused bounded list and Economy reading viewport after End scrolling settles.",
+          spec: "The entire restored Recruiting control is contained inside the keyboard-focused bounded list and Economy reading viewport after End and ArrowUp reading scroll settles.",
           check: async () => {
             await containedReading(
               research(stale)
