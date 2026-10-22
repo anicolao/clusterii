@@ -12,9 +12,13 @@
   import DevelopmentIcon from "./DevelopmentIcon.svelte";
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
+  import type { MarketAllocationDraft } from "$lib/market-draft";
   import MarketRules from "./MarketRules.svelte";
   let {
     focus,
+    draft = $bindable<MarketAllocationDraft>({
+      ...untrack(() => focus.orders.at(-1)?.allocation ?? focus.allocation),
+    }),
     ledger,
     paused = false,
     busy = false,
@@ -27,6 +31,7 @@
     inspect,
   }: {
     focus: MarketFocus;
+    draft?: MarketAllocationDraft;
     ledger?: ProductionLedger | null;
     paused?: boolean;
     busy?: boolean;
@@ -38,9 +43,6 @@
     onretry?: () => void;
     inspect?: MotionInspection;
   } = $props();
-  let draft = $state<Record<Development, number | undefined>>({
-    ...untrack(() => focus.orders.at(-1)?.allocation ?? focus.allocation),
-  });
   const names = {
     market: "Market",
     camp: "Training camp",

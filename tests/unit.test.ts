@@ -126,3 +126,51 @@ test('acknowledgements bind exact payload and admission path independently of JS
  for(const changed of [await commandDigest('commands/other/alice/id',body),await commandDigest('maintenanceCommands/game/alice/id',body),await commandDigest(path,{...body,kind:'campaign.leave'}),await commandDigest(path,{...body,envelope:{...body.envelope,ciphertext:'changed'}})]) expect(()=>verifyReceipt({requestDigest:changed},digest)).toThrow('does not match');
  expect(()=>verifyReceipt({},digest)).toThrow('does not match');
 });
+
+test("market drafts preserve incomplete intent, follow untouched authority and isolate account/access scopes", async () => {
+  const { refreshMarketDraft, scopeMarketDrafts } =
+    await import("../src/lib/market-draft");
+  const focus = {
+    allocation: { market: 25, camp: 25, base: 25, station: 25 },
+    orders: [],
+  };
+  const first = refreshMarketDraft(undefined, focus);
+  first.allocation.market = undefined;
+  first.allocation.camp = 100;
+  const scope = {
+    account: "alice",
+    campaigns: { one: first, two: refreshMarketDraft(undefined, focus) },
+  };
+  const newer = {
+    allocation: { market: 100, camp: 0, base: 0, station: 0 },
+    orders: [],
+  };
+  expect(refreshMarketDraft(first, newer).allocation).toEqual(first.allocation);
+  expect(refreshMarketDraft(scope.campaigns.two, newer).allocation).toEqual(
+    newer.allocation,
+  );
+  expect(scopeMarketDrafts(scope, "alice").campaigns.one).toBe(first);
+  expect(
+    Object.keys(scopeMarketDrafts(scope, "alice", ["two"]).campaigns),
+  ).toEqual(["two"]);
+  expect(scopeMarketDrafts(scope, "bob").campaigns).toEqual({});
+  expect(scopeMarketDrafts(scope, null).campaigns).toEqual({});
+  const revoked = scopeMarketDrafts(scope, "alice", []);
+  expect(scopeMarketDrafts(revoked, "alice", ["one"]).campaigns).toEqual({});
+  const accepted = {
+    ...focus,
+    orders: [
+      {
+        id: "accepted",
+        sequence: 2,
+        effectiveTick: 1,
+        allocation: { market: 0, camp: 100, base: 0, station: 0 },
+      },
+    ],
+  };
+  expect(refreshMarketDraft(undefined, accepted).allocation).toEqual(
+    accepted.orders[0].allocation,
+  );
+  expect(focus.allocation.market).toBe(25);
+  expect(accepted.orders).toHaveLength(1);
+});

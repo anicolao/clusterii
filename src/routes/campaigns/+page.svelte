@@ -1,5 +1,11 @@
 <script lang="ts">
   import {
+    refreshMarketDraft,
+    scopeMarketDrafts,
+    type MarketDraftScope,
+  } from "$lib/market-draft";
+  let marketDrafts = $state<MarketDraftScope>({ account: null, campaigns: {} });
+  import {
     constructionSettlementFeedback,
     type AcceptedConstruction,
     type RecoveredConstruction,
@@ -232,6 +238,13 @@
         account!,
         (next) => {
           if (session !== generation || current !== selection) return;
+          if (next && account) {
+            marketDrafts = scopeMarketDrafts(marketDrafts, account);
+            marketDrafts.campaigns[id] = refreshMarketDraft(
+              marketDrafts.campaigns[id],
+              next.economy?.marketFocus,
+            );
+          } else delete marketDrafts.campaigns[id];
           view = next;
           if (next?.phase === "active" && account)
             rememberCampaign(account, next.id);
@@ -257,8 +270,10 @@
           reason &&
           typeof reason === "object" &&
           "code" in reason &&
-          reason.code === "functions/not-found"
+          (reason.code === "functions/not-found" ||
+            reason.code === "functions/permission-denied")
         ) {
+          delete marketDrafts.campaigns[id];
           error =
             "This campaign is no longer available. Return to all campaigns to choose another.";
           remedy = "validation";
@@ -277,6 +292,7 @@
     const session = generation;
     try {
       if (!(await service.developerAccess())) {
+        marketDrafts = { account: null, campaigns: {} };
         access = "restricted";
         return;
       }
@@ -289,7 +305,11 @@
       stopMemberships = service.observeMemberships(
         account,
         (ids) => {
-          if (session === generation) memberships = ids;
+          if (session === generation) {
+            memberships = ids;
+            marketDrafts = scopeMarketDrafts(marketDrafts, account, ids);
+            if (view && !ids.includes(view.id)) view = null;
+          }
         },
         failed,
       );
@@ -411,6 +431,7 @@
           message = "";
           remedy = null;
           account = user?.uid ?? null;
+          marketDrafts = scopeMarketDrafts(marketDrafts, account);
           access = user ? "loading" : "signed-out";
           if (user) void recover();
         });
@@ -670,7 +691,8 @@
       reason={recoveryProblem.reason}
       onretry={recover}
       onforget={forgetRecovery}
-    />{:else if view}<Galaxy
+    />{:else if view && marketDrafts.campaigns[view.id]}<Galaxy
+      bind:marketDraft={marketDrafts.campaigns[view.id].allocation}
       {view}
       {commandKind}
       {commandFleetId}

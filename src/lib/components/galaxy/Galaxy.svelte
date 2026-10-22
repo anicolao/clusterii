@@ -1,5 +1,9 @@
 <script lang="ts">
   import {
+    refreshMarketDraft,
+    type MarketAllocationDraft,
+  } from "$lib/market-draft";
+  import {
     fleetRecoveryTarget,
     recoveredRouteDraft,
   } from "$lib/fleet-feedback";
@@ -50,6 +54,12 @@
   import Icon from "../Icon.svelte";
   let {
     view,
+    marketDraft = $bindable<MarketAllocationDraft>(
+      untrack(
+        () =>
+          refreshMarketDraft(undefined, view.economy?.marketFocus).allocation,
+      ),
+    ),
     loadHistory,
     onback,
     onleave,
@@ -92,6 +102,7 @@
     pending = false,
   }: {
     view: CampaignView;
+    marketDraft?: MarketAllocationDraft;
     onvisit?: (revision: number) => void;
     ontrade?: (action: TradeAction) => void;
     commandId?: string;
@@ -1276,6 +1287,7 @@
       onkeydown={panelKeys}
     >
       <CampaignEconomy
+        bind:marketDraft
         {view}
         {ontrade}
         records={[...records, ...receivedTradeViews]}
