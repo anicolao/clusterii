@@ -308,9 +308,22 @@
         account,
         (ids) => {
           if (session === generation) {
+            const lostSelected =
+              selected &&
+              (memberships.includes(selected) || view?.id === selected) &&
+              !ids.includes(selected);
             memberships = ids;
             marketDrafts = scopeMarketDrafts(marketDrafts, account, ids);
-            if (view && !ids.includes(view.id)) view = null;
+            if (lostSelected) {
+              // Fence callbacks already decrypting the old private view.
+              selection++;
+              stopView();
+              view = null;
+              loading = false;
+              error =
+                "You no longer have access to this campaign. Choose another campaign.";
+              remedy = "validation";
+            }
           }
         },
         failed,
