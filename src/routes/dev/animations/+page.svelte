@@ -39,6 +39,7 @@
     historyRecords,
     productionFrame,
     researchFrame,
+    researchScienceRate,
     constructionFrame,
     focusFrame,
     fleetFrame,
@@ -309,6 +310,7 @@
             travelEnabled={true}
             constructionEnabled={true}
             research={researchFrame(time)}
+            scienceMilli={researchScienceRate(time)}
             inspect={{ time: time - frame.at, reduced }}
             pending={time < 1000}
             message={frame.feedback.message}

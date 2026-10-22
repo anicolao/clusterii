@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { researchCostMilli } from "@shared/research";
   import type { ResearchDraft } from "$lib/research-draft";
   import {
     refreshMarketDraft,
@@ -101,8 +102,7 @@
     ledger = $derived(view.economy?.ledger);
   const cost = $derived(
     research
-      ? rules.researchBaseCost *
-          rules.researchCostGrowth ** research.levels[research.target]
+      ? (researchCostMilli(research.levels[research.target]) ?? 0) / 1000
       : 0,
   );
   function amount(milli: number) {
@@ -240,6 +240,7 @@
         </section>{/if}
       {#if research && onresearch}<CampaignResearch
           {research}
+          scienceMilli={ledger?.scienceMilli ?? null}
           bind:draft={researchDraft}
           scanningEnabled={view.scanningEnabled}
           travelEnabled={view.travelEnabled}

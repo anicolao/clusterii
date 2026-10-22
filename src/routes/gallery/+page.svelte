@@ -40,6 +40,7 @@
     historyRecords,
     productionFrame,
     researchFrame,
+    researchScienceRate,
     constructionFrame,
     focusFrame,
     fleetFrame,
@@ -523,6 +524,9 @@
             travelEnabled={true}
             constructionEnabled={true}
             research={researchFrame(state === "applied" ? 3400 : 2400)}
+            scienceMilli={researchScienceRate(
+              state === "applied" ? 3400 : 2400,
+            )}
             pending={state === "pending"}
             paused={state === "disabled"}
             error={state === "error"

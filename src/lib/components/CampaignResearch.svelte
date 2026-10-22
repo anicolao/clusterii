@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { researchEstimate } from "@shared/research";
+  import { nextResearchEffect } from "$lib/research-effect";
   import type { ResearchDraft } from "$lib/research-draft";
   import { tick } from "svelte";
   import type { ResearchState, Technology } from "@shared/production";
@@ -9,6 +11,7 @@
   import Feedback from "./Feedback.svelte";
   let {
     research,
+    scienceMilli = null,
     draft = $bindable<ResearchDraft | undefined>(undefined),
     scanningEnabled = false,
     travelEnabled = false,
@@ -23,6 +26,7 @@
     inspect,
   }: {
     research: ResearchState;
+    scienceMilli?: number | null;
     draft?: ResearchDraft;
     scanningEnabled?: boolean;
     travelEnabled?: boolean;
@@ -52,6 +56,37 @@
       research.orders?.at(-1)?.target ??
       research.target,
   );
+  const estimate = $derived(
+    researchEstimate(
+      research,
+      selected,
+      scienceMilli,
+      paused ? "paused" : pending || busy ? "pending" : null,
+    ),
+  );
+  const nextEffect = $derived(
+    nextResearchEffect(selected, research.levels[selected], {
+      scanning: scanningEnabled,
+      travel: travelEnabled,
+      construction: constructionEnabled,
+    }),
+  );
+  const amount = (milli: number) =>
+    (milli / 1000).toLocaleString("en-US", { maximumFractionDigits: 3 });
+  const estimateReasons = {
+    capped:
+      "Maximum level reached. Science on this track is banked; no further level is estimated.",
+    paused:
+      "Campaign paused. No completion estimate while production is stopped.",
+    pending:
+      "A research selection is awaiting acknowledgement or application. Recalculate after it applies.",
+    "bank-transfer":
+      "Switching will transfer the active capped track's banked science. Recalculate after the transfer applies.",
+    "unknown-rate":
+      "No completed science-production tick is available yet; completion rate is unknown.",
+    "zero-rate":
+      "The last completed tick produced no science. No completion at that rate.",
+  };
   const descriptions: Record<Technology, string> = $derived({
     scanning: scanningEnabled
       ? "Improves the chance of acquiring distant observations. Reports retain their recorded age; research does not reveal every system."
@@ -124,6 +159,44 @@
       </div>
     </fieldset>
     <p class="effect">{descriptions[selected]}</p>
+    <details class="forecast" aria-label="Selected research forecast">
+      <summary
+        >{#if estimate.costMilli !== null}Next level {research.levels[
+            selected
+          ] + 1} · {amount(estimate.costMilli)} science{:else}Maximum research
+          level{/if}</summary
+      >
+      {#if estimate.costMilli !== null}
+        <p>
+          Level {research.levels[selected] + 1} costs {amount(
+            estimate.costMilli,
+          )} science.
+          {amount(estimate.remainingMilli!)} more science required from this track's
+          retained progress.
+        </p>
+      {/if}
+      <p>{nextEffect}</p>
+      {#if estimate.reason}
+        <p>{estimateReasons[estimate.reason]}</p>
+      {:else}
+        <p>
+          Estimated completion: {estimate.fundedTicks} funded {estimate.fundedTicks ===
+          1
+            ? "tick"
+            : "ticks"} ({rules.tickSeconds / 60} minutes each).
+        </p>
+        <p>
+          Assumes {amount(scienceMilli!)} science per tick, the last completed production
+          rate, with unchanged output and all future science allocated to {selected}.
+          Excludes time before a switch applies; this is not a promised
+          completion time.
+        </p>
+      {/if}
+      <p>
+        Active research: {research.target}. A selection changes only at its
+        acknowledged application tick.
+      </p>
+    </details>
     <div
       class="research-commit"
       bind:this={commitment}
@@ -278,6 +351,20 @@
   .effect {
     min-height: 3em;
     color: #c1e1eb;
+  }
+  .forecast {
+    border-block: 1px solid #476173;
+    padding-block: 4px;
+  }
+  .forecast summary {
+    min-height: 44px;
+    align-content: center;
+    cursor: pointer;
+    color: #c1e1eb;
+  }
+  .forecast summary:focus-visible {
+    outline: 2px solid #9ee9ff;
+    outline-offset: 2px;
   }
   .review-note {
     color: #c6b28a;

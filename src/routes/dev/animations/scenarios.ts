@@ -72,6 +72,8 @@ export const legacyProductionView = campaignView({...productionStart,schemaVersi
 const researchQueued=selectResearch(productionStart,{kind:"research.select",expectedRevision:productionStart.revision,target:"investing"},"scheduled-0","lab-research",productionStart.economy!.nextTickAt-1);
 const researchSettled=produce(researchQueued,researchQueued.economy!);
 export function researchFrame(time:number) {return campaignView(time>=3200?{...researchSettled.campaign,economy:researchSettled.economy}:time>=2200?researchQueued:productionStart,"scheduled-0").economy!.research;}
+export function researchScienceRate(time:number) {return time>=3200?researchSettled.economy.ledger["scheduled-0"].scienceMilli:null;}
+
 const constructionQueued=orderConstruction(productionStart,{kind:"construction.build",expectedRevision:productionStart.revision,starId:productionStart.seats[0].home!,type:"market"},"scheduled-0","00000000-0000-0000-0000-000000000001",productionStart.economy!.nextTickAt-1);
 let constructionCompleted=constructionQueued;
 for(let tick=0;tick<5;tick++){const result=produce(constructionCompleted,constructionCompleted.economy!);constructionCompleted={...result.campaign,economy:result.economy};}

@@ -106,6 +106,8 @@ Add empire market focus, eligible construction-event accounting, and speculative
 
 ## 5. Implement research and intelligence
 
+Implementation evidence: [research forecast audit](docs/design/RESEARCH_FORECAST_REVIEW.md) records shared calculations and remaining browser/visual gates; it does not mark this milestone complete.
+
 Build research selection, costs, progress, level completion, and effective-tick handling. Implement all eight technologies through shared calculation functions:
 
 | Technology | Complete implementation |

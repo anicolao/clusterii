@@ -556,3 +556,5 @@ Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | B
 Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | Preserve renderer failure and correct motion capture plus original-frame interruption without changing command assertions.
 
 Prompt 85 | a116e9223be6f0a15d6115a157919937d8ae1d2eadb9761daf3a2cbd6c1f6c15 | Record corrected feedback source checks and exact disk blocker before the required new candidate run.
+
+Prompt 86 | c952b36ade3c871d9a7515e90dd12e0d8b7539ea7d4bb254f97c54e88b1ab3fd | Add shared next-cost and funded-tick forecasts with recorded research effects, focused calculation evidence and explicit visual gates.
