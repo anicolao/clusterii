@@ -73,5 +73,55 @@
     "image": "017-return-to-chart-1-dawn-listener.png",
     "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
     "actualSha256": "bc2132e4c22256d25b97219e6135a414934887627fb9e26a09af531cff76eb95"
+  },
+  {
+    "image": "018-review-removal-1-nacre-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/018-review-removal-1-nacre-envoy.png",
+    "actualSha256": "b1a4f988fd423f9f750bc1af8fb00f31bd4ecd66cb4bccff0204a8370fe15bf3"
+  },
+  {
+    "image": "019-remove-current-access-1-nacre-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/019-remove-current-access-1-nacre-envoy.png",
+    "actualSha256": "8d5100b872da154cd14a9c9b8228393c9d876124401e3e3c4db8495536709776"
+  },
+  {
+    "image": "019-remove-current-access-2-dawn-listener.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/019-remove-current-access-2-dawn-listener.png",
+    "actualSha256": "869dd4acc975737e02de330e24dfe19e9531a3286d5bea89729b51f9de6b87b9"
+  },
+  {
+    "image": "019-remove-current-access-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/019-remove-current-access-3-outer-witness.png",
+    "actualSha256": "341d6e746684c861cd42d51f1d20a7ad380a69802f2737ad3342be5be0c3e968"
+  },
+  {
+    "image": "020-message-after-removal-1-nacre-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/020-message-after-removal-1-nacre-envoy.png",
+    "actualSha256": "0b58a2e4b02029a532b801ef322af75b9251387a5d048cb78b57bdd2c378cdef"
+  },
+  {
+    "image": "020-message-after-removal-2-dawn-listener.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/020-message-after-removal-2-dawn-listener.png",
+    "actualSha256": "869dd4acc975737e02de330e24dfe19e9531a3286d5bea89729b51f9de6b87b9"
+  },
+  {
+    "image": "020-message-after-removal-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/020-message-after-removal-3-outer-witness.png",
+    "actualSha256": "341d6e746684c861cd42d51f1d20a7ad380a69802f2737ad3342be5be0c3e968"
+  },
+  {
+    "image": "021-recover-retained-history-1-dawn-listener.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/021-recover-retained-history-1-dawn-listener.png",
+    "actualSha256": "9777cf0f1e153b209baea3fd39308bf263d34cb5e1fb2dd2735c4d42bb530b19"
+  },
+  {
+    "image": "021-recover-retained-history-2-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/021-recover-retained-history-2-outer-witness.png",
+    "actualSha256": "341d6e746684c861cd42d51f1d20a7ad380a69802f2737ad3342be5be0c3e968"
+  },
+  {
+    "image": "022-leave-retained-history-1-dawn-listener.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/022-leave-retained-history-1-dawn-listener.png",
+    "actualSha256": "8820956aa58049a1bf74074b48c5cb9aebefaf72d3c302596096f873f3beba11"
   }
 ]

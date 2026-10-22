@@ -1522,3 +1522,19 @@ Disk independently recovered to17GiB; agent idle clean1c9a9a9, queue empty. Resu
 Exact handoff:
 
 Reviewer continuation 2026-10-22 03:39 Toronto: disk independently recovered to17GiB; clean1c9a9a9 and empty queue. Resume the bounded #70 stellar-core diagnosis documented in ARRIVAL_RENDER_DIAGNOSIS.md now: preserve original evidence, add minimal correlated render/camera/depth telemetry, run isolated short verification and identify cause before changing production or baseline. Keep zero tolerance and all authoritative/privacy assertions. Then continue IMPLEMENTATION_PLAN in small stacked successors with independently reviewable evidence. #68 publish now failed; retained /tmp/cluster68-0338-preview.log for read-only deployment diagnosis at natural boundary. Inspect actual generation steps before claiming eligible Linux candidates; use deliberate separate matching-head generation/review, not failed verification output. Carry main checkpoints through03:39 into attributed PROMPTS/PROMPT_WORK and committed/pushed logs. No merge or duplicate queued prompts.
+
+
+## Reviewer progress — 2026-10-22 03:49 Toronto
+
+Agent completed two negative short reproductions and pushed417bb62, idle clean; disk13GiB. Original mismatch unresolved, draft retained. #68 static preview recovery recorded; #67 verification newly failed, log retained. Resume independent plan work and deliberate generation evidence.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 03:49 Toronto: clean417bb62, idle, disk13GiB. Preserve #70 draft and unresolved original failure; two negative reproductions do not close it. Continue independent IMPLEMENTATION_PLAN work as a small successor instead of stopping on intermittent raster. Also close missing Linux evidence deliberately: inspect current-head generation status/label and arrange one explicit candidate-generation run using the existing baseline-candidates workflow gate, avoiding duplicate queued runs; document exact source and review generated artifacts separately before any promotion. Current #67 verify log /tmp/cluster67-0349-failure.log is available for scoped triage. Carry main checkpoint into attributed committed/pushed logs. Never relax pixels or merge; retain full visual/hosted gates.
+
+
+## Reviewer progress — 2026-10-22 03:59 Toronto
+
+Agent healthy at48ab938 extending selected-history story through actual participant removal, later-message exclusion and retained campaign-history recovery. Independently reviewed recovery correction: reads granted history via Campaign history, checks secret/later message absence and exact command revision, full article/footer containment and keyboard focus. Agent already correcting visible removal confirmation/new-message reading gaps before promotion; no duplicate intervention.
+
+#70 now has baseline-candidates label; explicit generation job119705315798 queued with old queued run cancelled, no candidate acceptance yet. Current draft source417bb62 retained; source/provenance and independent review required when generation actually executes. No new PR or completed actionable CI result. Carry checkpoint into committed/pushed attributed logs at natural boundary. Full release, original seven-pixel and identity raster, Linux and visual/hosted gates remain open; no merge.
