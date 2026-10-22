@@ -877,7 +877,7 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
       action: async () => {
         await owner.goto(url);
         await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
+          .getByRole("button", { name: "Fleets · 0", exact: true })
           .click();
         await button(owner, fleetName).click();
         await button(owner, "Plot route").click();
@@ -997,12 +997,6 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
         expect((await db.doc(`campaignTickLeases/${id}`).get()).exists).toBe(
           false,
         );
-        await button(owner, "Close roster").press("Escape");
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .click();
-        await button(owner, fleetName).click();
-        await button(owner, "Plot route").click();
       },
     );
     await story.step("arrival-report", {
@@ -1010,6 +1004,12 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
       description:
         "Read the resolved arrival and resulting orbit/surface control. Landed infantry remains part of the commander's conserved forces.",
       action: async () => {
+        await button(owner, "Close roster").press("Escape");
+        await inspector(owner)
+          .getByRole("button", { name: "Fleets · 0", exact: true })
+          .click();
+        await button(owner, fleetName).click();
+        await button(owner, "Plot route").click();
         await expect(details.getByRole("status")).toContainText("Arrived at");
         await routeRead(
           details.getByRole("article", { name: "Arrival report" }),
