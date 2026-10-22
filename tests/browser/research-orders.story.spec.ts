@@ -749,16 +749,33 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         await expect(tracks).toBeFocused();
         await expect
           .poll(() =>
-            tracks.evaluate((e) =>
-              Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop),
-            ),
+            tracks.evaluate(async (e) => {
+              const start = e.scrollTop;
+              await new Promise(requestAnimationFrame);
+              await new Promise(requestAnimationFrame);
+              return (
+                e.scrollTop === start &&
+                Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) <= 1
+              );
+            }),
           )
-          .toBeLessThanOrEqual(1);
-        const endPosition = await tracks.evaluate((e) => e.scrollTop);
-        await stale.keyboard.press("ArrowUp");
-        await expect
-          .poll(() => tracks.evaluate((e) => e.scrollTop))
-          .toBeLessThan(endPosition);
+          .toBe(true);
+        // Short lists can clip the second-last row at End. Only then take
+        // another native reading step; wider/taller lists already expose it.
+        const clippedAtEnd = await choice.locator("..").evaluate((e) => {
+          const list = e.parentElement!;
+          return (
+            e.getBoundingClientRect().top <
+            list.getBoundingClientRect().top + list.clientTop
+          );
+        });
+        if (clippedAtEnd) {
+          const endPosition = await tracks.evaluate((e) => e.scrollTop);
+          await stale.keyboard.press("ArrowUp");
+          await expect
+            .poll(() => tracks.evaluate((e) => e.scrollTop))
+            .toBeLessThan(endPosition);
+        }
         await containedReading(choice.locator(".."));
       },
       acknowledgement: {
@@ -795,7 +812,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       verifications: [
         privacy,
         {
-          spec: "The entire restored Recruiting control is contained inside the keyboard-focused bounded list and Economy reading viewport after End and ArrowUp reading scroll settles.",
+          spec: "The entire restored Recruiting control is contained inside the keyboard-focused bounded list and Economy reading viewport after End and any required ArrowUp reading scroll settles.",
           check: async () => {
             await containedReading(
               research(stale)
