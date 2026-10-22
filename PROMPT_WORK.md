@@ -614,3 +614,5 @@ Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | A
 Prompt 93 | f8f3eef49593489ee296c5689ee896f1cdada23453ef15c9d729af2f8c1a8062 | Preserve the short-screen containment failure and use End then ArrowUp to read Recruiting without weakening any clipping or exact-image assertion.
 
 Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Preserve the extra-key phone failure and condition the additional keyboard reading step on actual clipping while retaining full containment at every size.
+
+Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Preserve distinct recovery admission, capture-budget and isolated identity-readiness failures before approved predecessor gallery comparison.
