@@ -119,7 +119,10 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
     expect(errors).toEqual([]);
   };
   async function rail(p: Page) {
-    const back = button(p, "Back to galaxy"),
+    const back = button(
+        p,
+        p === pages[0] ? "Back to system" : "Back to galaxy",
+      ),
       b = await back.boundingBox();
     expect(b).not.toBeNull();
     expect(b!.y).toBeGreaterThanOrEqual(0);
@@ -130,10 +133,10 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       page,
       player: aliases[i],
       surface: "game" as const,
-      primary: [button(page, "Back to galaxy")],
+      primary: [button(page, i === 0 ? "Back to system" : "Back to galaxy")],
       verifications: [
         {
-          spec: "Back to galaxy stays visible before scrolling and the authoritative player view has no application error.",
+          spec: "Each instrument’s actual return control stays visible before scrolling and the authoritative player view has no application error.",
           check: async () => {
             await rail(page);
             expect(errors).toEqual([]);
