@@ -413,3 +413,5 @@ The shared settings checkbox controls actual Scene dust/reference-ring creation 
 ## Shared local presentation settings
 
 `local-settings.story.spec.ts` covers UX-15/16 through the actual gallery menu and shared feedback lab: keyboard modal ownership, both local preferences, reload, OS precedence and focus restoration. Source prepared for one isolated four-size candidate run; rendered acceptance and independent baseline review remain pending. No identity, campaign or emulator setup; galaxy rail fit, factual scene equivalence, authoritative actions and performance remain outside this evidence. See [review plan](SHARED_SETTINGS_REVIEW.md).
+
+Settings execution update: first phone run failed boundary Tab wrapping before the first capture; remaining three sizes stopped. Explicit production boundary wrapping is corrected in source, not browser-verified. All candidates/persistence/Escape/lab/four-size acceptance remain pending; original failure retained and no baselines changed.
