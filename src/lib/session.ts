@@ -40,6 +40,7 @@ import {
   getFunctions,
   httpsCallable,
 } from "firebase/functions";
+import { currentResult } from "./current-result";
 
 declare const __CLUSTER_EMULATORS__: boolean;
 
@@ -179,6 +180,7 @@ export function observeProfile(
   const stop = onSnapshot(
     doc(firestore, "profiles", uid),
     (snapshot) => {
+      if (!active) return;
       const version = ++serial;
       if (!snapshot.exists()) {
         next(null, 0);
@@ -186,18 +188,18 @@ export function observeProfile(
       }
       const view = snapshot.data() as ProfileView;
       const context = profileContext(uid, view.revision);
-      void unwrap(view.grant, kek, uid, context, "mock")
-        .then((key) =>
+      void currentResult(
+        unwrap(view.grant, kek, uid, context, "mock").then((key) =>
           provider("mock").open<Profile>(view.envelope, key, context),
-        )
-        .then((profile) => {
-          if (active && version === serial) next(profile, view.revision);
-        })
-        .catch((error) => {
-          if (active) fail(error);
-        });
+        ),
+        () => active && version === serial,
+        (profile) => next(profile, view.revision),
+        fail,
+      );
     },
-    fail,
+    (error) => {
+      if (active) fail(error);
+    },
   );
   return () => {
     active = false;
