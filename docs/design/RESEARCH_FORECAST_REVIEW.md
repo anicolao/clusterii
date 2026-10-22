@@ -15,7 +15,7 @@ The selected track's next effect states its recorded coefficient, units, roundin
 | Forecast source | #89 `test/live-research-orders`, f47bfe4 | Shared cost, real private ledger, eight effect descriptions, shared production component in gallery/lab. |
 | Calculation verification | Existing authoritative reducer | 47 focused tests / 1366 assertions pass, including all eight tracks at each uncapped completion boundary and a 28-tick estimate checked against actual production. |
 | Static verification | Forecast source | Type/Svelte checks and lint pass. |
-| Forecast browser/visual | Independent review of corrected #89 family first | Not run. Disclosure, cap/rate/switch states, keyboard, reduced motion and four sizes still require TestStepHelper stories and separately reviewed candidates. No baseline changes. |
+| Forecast browser/visual | Independent review of corrected #89 family first | Shared-gallery keyboard disclosure generation passed four sizes / 28 captures on b7e629a; independent review and strict comparison pending. Live forecast integration, cap/zero/unknown-rate browser states and normal-motion comparison remain open. No forecast baseline changes. |
 | #89 corrected candidates | Clean 826e63d, before forecast edits | Four journeys / 52 images passed generation; reviewer approved and strict verification passed all 52 captures on ea4a002. See RESEARCH_ORDERS_STORY_REVIEW.md for isolated restart and provenance. Old b6043bb family remains unapproved. |
 | Hosted/current-head CI | Successor publication | Pending; no preview acceptance claimed. |
 
@@ -24,3 +24,9 @@ Local logs: `/tmp/cluster-research-forecast-unit2.log`, `/tmp/cluster-research-f
 ## Next evidence
 
 The isolated #89 review and strict comparison passed; extend research stories with named forecast facts and disclosure keyboard journeys on this successor, preserving predecessor acknowledgement, concurrency, privacy and recovery assertions. Generate only new or intentionally changed candidates with matching-source provenance and review separately. Do not use forecast captures as evidence for #89.
+
+## Separate forecast gallery candidates
+
+Source `b7e629a` generated four passing stories / 28 candidates with `research-forecast.story.spec.ts`. Retained directory: `/tmp/cluster-research-forecast-gallery-candidates`; log: `/tmp/cluster-research-forecast-gallery-generation2.log`. Each manifest records clean source and exact spec/renderer identity. The story checks pending, paused and applied forecasts through native keyboard disclosure, recorded 20-science cost, 1.01 effect, 18.6 remaining science and 14 funded ticks at 1.4 science/tick. Views explicitly scroll the developer gallery and prove disclosure containment. They are component evidence, not live command receipts. The implementer inspected the phone applied frame: full text and action are readable/contained. Independent matching-source review is requested; no forecast family promotion or strict verification has occurred.
+
+The first attempt failed the helper's mandatory-viewpoint contract before capture; artifacts remain at `/tmp/cluster-research-forecast-gallery-initial-failure`, log `/tmp/cluster-research-forecast-gallery-generation.log`. The corrected opening step captures the real gallery scope. Type/lint and story-policy checks pass. Existing real research orders and privacy/receipt assertions remain unchanged. Latest-head CI and publication remain pending, and green skipped-generation jobs do not establish candidate evidence.
