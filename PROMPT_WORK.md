@@ -572,3 +572,5 @@ Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | R
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Archive four strict forecast gallery stories and 28 exact captures after scoped reviewer approval.
 
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Extend live research orders with keyboard forecasts corroborated by private projections and original receipts without weakening peer invariants.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve live forecast failures and assert the authoritative null-ledger contract before the first production tick.

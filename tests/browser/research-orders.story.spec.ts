@@ -407,7 +407,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
               await expect(forecast).toHaveAttribute("open", "");
               await expect(summary).toBeFocused();
               const view = await published(uid);
-              expect(view.economy!.ledger).toBeUndefined();
+              expect(view.economy!.ledger).toBeNull();
               expect(view.economy!.research.levels.investing).toBe(0);
               expect(view.economy!.research.progressMilli.investing).toBe(0);
               expect(view.economy!.research.target).toBe("navigation");
