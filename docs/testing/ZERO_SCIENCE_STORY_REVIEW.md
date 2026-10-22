@@ -36,3 +36,5 @@ Current desktop samples: [zero output](../ux/reviews/zero-science/desktop-zero-o
 No baseline promotion or strict comparison has occurred. The requested complete four-size candidate family remains unfinished. Existing Queue procedural, recovery/shared/feedback, Linux/KMS/hosted/raster and release holds remain. Latest #98 application/publication were running and story checks queued at inspection; no duplicate run requested.
 
 Post-generation inventory correction adds UX-04 split control and UX-06 economy/science to the spec metadata. No actions, assertions, readiness, pixels or deadlines change. Retained candidate provenance remains cb0dbe2 with its original spec hash; no rerun or current-head visual acceptance is claimed for the metadata-only successor.
+
+Published draft [#99](https://github.com/anicolao/clusterii/pull/99) on #98. Final type/Svelte checks pass0 errors/0 warnings (`/tmp/cluster-zero-science-final-check.log`); story policy passes. Preview remains unverified. No baseline promotion, strict comparison, merge or release approval.

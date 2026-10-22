@@ -644,3 +644,5 @@ Prompt 99 | 6d18d450c25ece4a4bd9076b70365298645c17a51955c9ab43125a9a4b64625b | C
 Prompt 99 | 6d18d450c25ece4a4bd9076b70365298645c17a51955c9ab43125a9a4b64625b | Preserve large/short timing failures; avoid unnecessary contained-target scrolling and park players during elapsed-time preparation.
 
 Prompt 99 | 6d18d450c25ece4a4bd9076b70365298645c17a51955c9ab43125a9a4b64625b | Preserve four-size generation outcomes, current desktop candidates and unresolved timing failures without promotion.
+
+Prompt 99 | 6d18d450c25ece4a4bd9076b70365298645c17a51955c9ab43125a9a4b64625b | Record draft PR99 dependency, partial candidate status, final static checks and unverified preview gate.
