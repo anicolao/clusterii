@@ -770,16 +770,41 @@ test("Interrupted route commands retain their original choices and identity", as
       ],
       views: views(),
     });
-    await story.step("retry-original-route", {
+    await story.step("review-route-retry", {
       actor: aliases[0],
       description:
-        "When acknowledgement remains uncertain, use Check route order with Enter to discover or retry the same submitted order.",
+        "When acknowledgement remains uncertain, review the preserved destination and focus Check route order. This remedy discovers or retries the existing submission.",
       action: async () => {
         const retry = button(owner, "Check route order");
         await expect(retry).toBeEnabled({ timeout: 25000 });
         await routeRail();
         await retry.focus();
-        await retry.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The focused same-order remedy is enabled while the original route remains visible.",
+        check: async () => {
+          await expect(button(owner, "Check route order")).toBeFocused();
+          await expect(planner.locator("footer")).toContainText(
+            "Still waiting for acknowledgement. Retry checks the same order.",
+          );
+          await expect(routeList).toContainText(targetName);
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Waiting for a remedy changes no forces or campaign revision.",
+          check: async () => expect(await canonical()).toEqual(formed!),
+        },
+      ],
+      views: views(),
+    });
+    await story.step("retry-original-route", {
+      actor: aliases[0],
+      description:
+        "When acknowledgement remains uncertain, use Check route order with Enter to discover or retry the same submitted order.",
+      action: async () => {
+        await button(owner, "Check route order").press("Enter");
       },
       acknowledgement: {
         spec: "The original route is pending again; another transport attempt does not create another logical command.",
@@ -928,6 +953,36 @@ test("Interrupted route commands retain their original choices and identity", as
               .get();
             expect(receipt.get("status")).toBe("accepted");
             expect(receipt.get("revision")).toBe(accepted.revision);
+            const {
+              commandDigest,
+            } = require("./lib/shared/command-receipt.js");
+            expect(receipt.get("requestDigest")).toBe(
+              await commandDigest(writes[0].p.replace(/^\//, ""), writes[0].d),
+            );
+            const durable = await owner.evaluate(
+              async (uid) =>
+                new Promise<unknown>((resolve, reject) => {
+                  const open = indexedDB.open("clusterii-recovery", 1);
+                  open.onerror = () => reject(open.error);
+                  open.onsuccess = () => {
+                    const db = open.result;
+                    const read = db
+                      .transaction("orders")
+                      .objectStore("orders")
+                      .get(uid);
+                    read.onsuccess = () => {
+                      resolve(read.result);
+                      db.close();
+                    };
+                    read.onerror = () => {
+                      reject(read.error);
+                      db.close();
+                    };
+                  };
+                }),
+              uid,
+            );
+            expect(durable).toBeUndefined();
           },
         },
       ],
