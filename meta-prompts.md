@@ -1239,3 +1239,10 @@ Reviewer continuation 2026-10-21 19:59 Toronto: clean0bd3936 and pane idle after
 Agent healthy verifying fleet split/merge recovery at local e62b33e. Independently read production restoration diff: only accessible fleet in matching campaign, original split quantities/merge target, repeated-restoration guard and clearing recovered state on receipt. Original missing-panel failures retained; final candidate/exact review pending. No duplicate intervention.
 
 Read CI queue report and its scope:109 queued runs,16 executing hosted jobs, no runner assigned to latest ARM/x64 jobs; queue progresses with approximately70min observed documentation delay. This supports scheduling backlog, not a proven account quota diagnosis. Pages also serializes through its shared concurrency group. No jobs cancelled or broad reruns launched. Carry checkpoint into committed/pushed logs; all strict/current-preview/raster/full-release gates remain open. No merge.
+
+
+## Reviewer progress — 2026-10-21 20:19 Toronto
+
+Agent healthy at local96bca23 verifying reorganization plus unchanged formation regressions; phone/desktop and large formation passed, remaining cases running. Candidate reading corrections preserve named-fact containment rather than concealment; final exact result and PR publication still pending. No duplicate prompt.
+
+Read queue follow-up: publication39690455906 holds shared slot while x64 job has no runner, explaining latest pending preview; retain existing queued work and exact-head gate. No new completed actionable CI failure. Carry checkpoint into committed/pushed logs; raster/full independent visual/Linux/release acceptance remains open, no merge.

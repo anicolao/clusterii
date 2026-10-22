@@ -11,9 +11,11 @@ The first four-viewport run reproduced a production recovery gap: the durable sp
 | Rules | Existing capacity and tick rules remain development rules under review; no new rule approval inferred |
 | Fault / clock | Only split transport frames withheld before ingress; original identity/envelope replayed; explicit domain time and real leased tick delivery |
 | Conservation / privacy | Named assertions cover one accepted revision/order/receipt, no early movement, private recipient projections, complete complements and actual production-only increases |
-| Local candidate / exact | Pending new-candidate review and strict comparison |
+| Local candidate / exact | [Separate candidate review](../testing/LIVE_FLEET_REORGANIZATION_BASELINE_REVIEW.md); eight exact journeys / 216 captures in 4.1 minutes, including unchanged formation regressions |
 | Checks | Type check and lint pass; 43 campaign tests / 1051 assertions; 15 story policy guards; prompt-history suite |
 | Linux / independent / hosted | Pending; local emulator evidence does not certify managed keys or hosted scheduling |
 | Remaining UX-08 | Travel, cargo, cancellation and normal-motion live acceptance remain separate; procedural coverage preserved |
 
-Failure artifacts: `/tmp/cluster-reorganization-recovery-before` and `/tmp/cluster-reorganization-generation.log`. New candidate review will be separate from exact comparison; inherited baselines and zero tolerance remain unchanged. The [CI queue observation](../testing/CI_QUEUE_2026_10_21.md) records read-only runner evidence. Current-head preview verification and the [identity raster diagnosis](../testing/IDENTITY_RASTER_DIAGNOSIS.md) remain open; a second identical-layout pair is not a fix.
+Failure artifacts: `/tmp/cluster-reorganization-recovery-before` and `/tmp/cluster-reorganization-generation.log`. New candidate review preceded exact comparison; inherited baselines and zero tolerance remain unchanged. The [CI queue observation](../testing/CI_QUEUE_2026_10_21.md) records read-only runner evidence. Current-head preview verification and the [identity raster diagnosis](../testing/IDENTITY_RASTER_DIAGNOSIS.md) remain open; a second identical-layout pair is not a fix.
+
+[Four generated player walkthroughs](../testing/STORY_INVENTORY.md#live-fleet-reorganization-58). [PR58 preview](https://anicolao.github.io/clusterii/pr58/) awaits exact current-head publication verification. The shared publication queue remains blocked on runner scheduling; no preview readiness is claimed.
