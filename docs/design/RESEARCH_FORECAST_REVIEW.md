@@ -34,3 +34,11 @@ The first attempt failed the helper's mandatory-viewpoint contract before captur
 ## Gallery strict result — 12:19 approval
 
 On clean `dc7bb0e`, all four gallery journeys and 28 exact captures passed in 23.2 seconds. Log `/tmp/cluster-research-forecast-gallery-strict.log`; ordered stories and capture hashes are archived under `docs/testing/stories/research-forecast-gallery`. Archive validation rechecked decoded pixels. This supersedes the gallery review/strict pending status above only. Live integration and other listed gates remain open; initial failed generation and predecessor held candidates remain preserved.
+
+## Live forecast integration candidates
+
+Clean `91376fc` passed four real research-order journeys / 68 candidates in 1.5 minutes; retained `/tmp/cluster-live-research-forecast-candidates`, log `/tmp/cluster-live-research-forecast-generation2.log`. New keyboard steps compare the displayed 20-science cost and 1.01 effect with authorized level/progress, prove absent-ledger unknown-rate treatment, and suppress ETA after the original order receipt while navigation remains active. Existing original-command/digest, reload, stale conflict, peer privacy, conservation and identity assertions remain. Implementer inspected the phone unknown-rate frame: full forecast and controls fit above the footer. Independent changed-family review and strict comparison remain pending; predecessor baselines are untouched.
+
+The first run asserted undefined where the projection explicitly supplies null for an absent ledger. All four failures and traces are retained at `/tmp/cluster-live-research-forecast-null-failure`, log `/tmp/cluster-live-research-forecast-generation.log`. The correction asserts the exact null contract; no application or authorization behavior changed.
+
+At this boundary, #88 Linux story job119902859352 completed: 75 missing-baseline errors and 12 pixel mismatches, retained `/tmp/cluster88-forecast-boundary-stories.log`. Eight mismatches are identity-gallery applied-research/research-lab pending frames across four sizes; four others are phone navigation (1066), start roster (259), selected history (273), and short invitation identity (1994). These counts classify affected frames, not establish causes. No artifact promotion or duplicate CI was requested; profile delivery and broader holds remain unresolved.

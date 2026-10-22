@@ -574,3 +574,5 @@ Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | A
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Extend live research orders with keyboard forecasts corroborated by private projections and original receipts without weakening peer invariants.
 
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve live forecast failures and assert the authoritative null-ledger contract before the first production tick.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Retain passing live forecast candidates and exact null-contract failure, classifying completed Linux errors separately from visual acceptance.
