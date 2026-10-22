@@ -10,8 +10,13 @@ import {
 } from "../tests/browser/story-helpers/emulator-construction-clock-loader.mjs";
 const target = "file:///isolated/shared/campaign.js";
 initialize({ target });
-const source =
-  "export function orderConstruction(current, input, uid, commandId, now) { return {current, input, uid, commandId, now}; }";
+const functions = ["orderConstruction", "selectMarketFocus"];
+const source = functions
+  .map(
+    (name) =>
+      `export function ${name}(current, input, uid, commandId, now) { return {current, input, uid, commandId, now}; }`,
+  )
+  .join("\n");
 test("construction story clock preserves unrelated campaigns and advances only with confirmed boundaries", () => {
   for (const c of [
     null,
@@ -66,34 +71,36 @@ test("construction loader fails closed outside demo runtime and preserves all co
         starId: "real-system",
         type: "camp",
       };
-    assert.deepEqual(
-      fixture.orderConstruction(
-        current,
-        input,
-        "real-user",
-        "original-id",
+    for (const name of functions) {
+      const command =
+        name === "selectMarketFocus"
+          ? {
+              kind: "market.focus",
+              allocation: { market: 0, camp: 100, base: 0, station: 0 },
+            }
+          : input;
+      assert.deepEqual(
+        fixture[name](current, command, "real-user", "original-id", 555),
+        {
+          current,
+          input: command,
+          uid: "real-user",
+          commandId: "original-id",
+          now: 900001,
+        },
+      );
+      assert.equal(
+        fixture[name]({ name: "ordinary" }, command, "user", "id", 555).now,
         555,
-      ),
-      {
-        current,
-        input,
-        uid: "real-user",
-        commandId: "original-id",
-        now: 900001,
-      },
-    );
-    assert.equal(
-      fixture.orderConstruction({ name: "ordinary" }, input, "user", "id", 555)
-        .now,
-      555,
-    );
-    await assert.rejects(
-      load(target, {}, async () => ({
-        ...result,
-        source: source.replace("orderConstruction(", "changed("),
-      })),
-      /signature changed/,
-    );
+      );
+      await assert.rejects(
+        load(target, {}, async () => ({
+          ...result,
+          source: source.replace(`${name}(`, "changed("),
+        })),
+        /signature changed/,
+      );
+    }
   } finally {
     for (const [key, value] of Object.entries(original)) {
       if (value === undefined) delete process.env[key];
