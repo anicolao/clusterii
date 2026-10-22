@@ -323,9 +323,10 @@ test("Live zero science after orbital loss preserves private research", async ({
       action: async () => {
         for (const p of [owner, peer]) {
           const f = panel(p).getByRole("button", {
-            name: "Fleet 1",
+            name: /^Fleet [0-9]+$/,
             exact: true,
           });
+          await expect(f).toHaveCount(1);
           await f.focus();
           await f.press("Enter");
           await read(
