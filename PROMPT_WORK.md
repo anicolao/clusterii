@@ -404,3 +404,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | R
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve the desktop disclosure edge-clipping failure, center its bounded reading position and attach before/after bounds while retaining full-visibility assertions.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve three passing candidate cohorts and the short control-edge failure; center only clipped reading targets and persist exact scroll-bound diagnostics.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review 48 new arrival archive candidates while retaining 112 unchanged images, persist fractional-scroll evidence and record recovered exact-head Pages checks.
