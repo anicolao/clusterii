@@ -32,7 +32,21 @@ Acknowledged outcome: The native disclosure opens and retains keyboard focus; th
 
 [![Open the pending forecast with Enter and read the cost, exact effect and rate qualification. — Developer · pending forecast](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/002-read-pending-forecast-1-developer-pending-forecast.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/002-read-pending-forecast-1-developer-pending-forecast.png)
 
-## 3. Close the disclosure with Space, keeping focus and the selected research choice.
+## 3. Use End in the bounded forecast to read the rate qualification and active target without changing research.
+
+Actor: **Developer**.
+
+Acknowledged outcome: Keyboard focus stays in the forecast, which reaches its final active-target explanation.
+
+- [x] The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status.
+
+### Viewpoint: Developer · pending qualification
+
+- [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
+
+[![Use End in the bounded forecast to read the rate qualification and active target without changing research. — Developer · pending qualification](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/003-read-pending-qualification-1-developer-pending-qualification.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/003-read-pending-qualification-1-developer-pending-qualification.png)
+
+## 4. Close the disclosure with Space, keeping focus and the selected research choice.
 
 Actor: **Developer**.
 
@@ -44,9 +58,9 @@ Acknowledged outcome: The disclosure closes without queuing research.
 
 - [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
 
-[![Close the disclosure with Space, keeping focus and the selected research choice. — Developer · pending collapsed](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/003-close-pending-forecast-1-developer-pending-collapsed.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/003-close-pending-forecast-1-developer-pending-collapsed.png)
+[![Close the disclosure with Space, keeping focus and the selected research choice. — Developer · pending collapsed](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png)
 
-## 4. Open the disabled forecast with Enter and read the cost, exact effect and rate qualification.
+## 5. Open the disabled forecast with Enter and read the cost, exact effect and rate qualification.
 
 Actor: **Developer**.
 
@@ -58,9 +72,23 @@ Acknowledged outcome: The native disclosure opens and retains keyboard focus; th
 
 - [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
 
-[![Open the disabled forecast with Enter and read the cost, exact effect and rate qualification. — Developer · disabled forecast](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/004-read-disabled-forecast-1-developer-disabled-forecast.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/004-read-disabled-forecast-1-developer-disabled-forecast.png)
+[![Open the disabled forecast with Enter and read the cost, exact effect and rate qualification. — Developer · disabled forecast](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png)
 
-## 5. Close the disclosure with Space, keeping focus and the selected research choice.
+## 6. Use End in the bounded forecast to read the rate qualification and active target without changing research.
+
+Actor: **Developer**.
+
+Acknowledged outcome: Keyboard focus stays in the forecast, which reaches its final active-target explanation.
+
+- [x] The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status.
+
+### Viewpoint: Developer · disabled qualification
+
+- [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
+
+[![Use End in the bounded forecast to read the rate qualification and active target without changing research. — Developer · disabled qualification](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png)
+
+## 7. Close the disclosure with Space, keeping focus and the selected research choice.
 
 Actor: **Developer**.
 
@@ -72,9 +100,9 @@ Acknowledged outcome: The disclosure closes without queuing research.
 
 - [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
 
-[![Close the disclosure with Space, keeping focus and the selected research choice. — Developer · disabled collapsed](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/005-close-disabled-forecast-1-developer-disabled-collapsed.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/005-close-disabled-forecast-1-developer-disabled-collapsed.png)
+[![Close the disclosure with Space, keeping focus and the selected research choice. — Developer · disabled collapsed](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png)
 
-## 6. Open the applied forecast with Enter and read the cost, exact effect and rate qualification.
+## 8. Open the applied forecast with Enter and read the cost, exact effect and rate qualification.
 
 Actor: **Developer**.
 
@@ -86,9 +114,23 @@ Acknowledged outcome: The native disclosure opens and retains keyboard focus; th
 
 - [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
 
-[![Open the applied forecast with Enter and read the cost, exact effect and rate qualification. — Developer · applied forecast](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/006-read-applied-forecast-1-developer-applied-forecast.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/006-read-applied-forecast-1-developer-applied-forecast.png)
+[![Open the applied forecast with Enter and read the cost, exact effect and rate qualification. — Developer · applied forecast](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/008-read-applied-forecast-1-developer-applied-forecast.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/008-read-applied-forecast-1-developer-applied-forecast.png)
 
-## 7. Close the disclosure with Space, keeping focus and the selected research choice.
+## 9. Use End in the bounded forecast to read the rate qualification and active target without changing research.
+
+Actor: **Developer**.
+
+Acknowledged outcome: Keyboard focus stays in the forecast, which reaches its final active-target explanation.
+
+- [x] The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status.
+
+### Viewpoint: Developer · applied qualification
+
+- [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
+
+[![Use End in the bounded forecast to read the rate qualification and active target without changing research. — Developer · applied qualification](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/009-read-applied-qualification-1-developer-applied-qualification.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/009-read-applied-qualification-1-developer-applied-qualification.png)
+
+## 10. Close the disclosure with Space, keeping focus and the selected research choice.
 
 Actor: **Developer**.
 
@@ -100,4 +142,4 @@ Acknowledged outcome: The disclosure closes without queuing research.
 
 - [x] The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow.
 
-[![Close the disclosure with Space, keeping focus and the selected research choice. — Developer · applied collapsed](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/007-close-applied-forecast-1-developer-applied-collapsed.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/007-close-applied-forecast-1-developer-applied-collapsed.png)
+[![Close the disclosure with Space, keeping focus and the selected research choice. — Developer · applied collapsed](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png)](../../../../../../tests/browser/story-baselines/research-forecast-gallery/desktop/darwin-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png)
