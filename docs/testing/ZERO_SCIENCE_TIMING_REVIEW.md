@@ -17,3 +17,11 @@ One phone story generation is authorized as the discriminating case: original240
 ## PR98 publication
 
 Original failed job120061090226 expected840e3f5 but servedHTTP404, retained `/tmp/cluster98-publish-failure-1640.log`. A later read-only `/pr98/revision.json?review=20261022T1640` request still returned404. No publication retry, relaxed check or current-preview claim. Existing Pages status will be inspected read-only; queue membership alone is not a causal diagnosis.
+
+## Single focused result (48e9479)
+
+The one phone probe failed before settlement: the original10s Choose your faction assertion expired during first admission. Final DOM has Campaign created. Choose your faction and Recovering your campaign, but no faction heading. No settlement-timing.jsonl was produced: no instrumented batch was reached. This is neither a negative reproduction of settlement nor evidence of its cause. No retry is planned. Trace/error context are preserved in `/tmp/cluster-zero-science-timing-phone-result`, run log `/tmp/cluster-zero-science-timing-phone.log`, emulator logs `/tmp/cluster-zero-science-timing-phone-*-debug.log`. Original failures remain unchanged.
+
+Read-only gh-pages inspection found pr98/revision.json records840e3f5 and publication run39845870334, while the served endpoint still404. Pages run39848373501 was queued and39848372811 cancelled; the last observed successful run39845020451 used another branch head. These observations do not establish the404 cause or verify the preview. No publication was requested.
+
+The precise settlement boundary remains unresolved without an executed probe. Independent next work covers complete authorized history pagination after actual orbital loss, retaining earlier acquired knowledge and later layer redaction. No production timing fix or baseline change is claimed.
