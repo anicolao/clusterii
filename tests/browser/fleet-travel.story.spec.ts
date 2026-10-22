@@ -1072,7 +1072,29 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
           .filter({ hasText: "Participants and resolution" });
         await summary.focus();
         await summary.press("Enter");
-        await summary.locator("..").scrollIntoViewIfNeeded();
+        const section = summary.locator("..");
+        await section.scrollIntoViewIfNeeded();
+        const before = {
+          section: await section.boundingBox(),
+          panel: await body(owner).boundingBox(),
+        };
+        await section.evaluate((element) =>
+          element.scrollIntoView({
+            block: "center",
+            inline: "nearest",
+            behavior: "instant",
+          }),
+        );
+        await info.attach("arrival-disclosure-scroll-bounds", {
+          body: JSON.stringify({
+            before,
+            after: {
+              section: await section.boundingBox(),
+              panel: await body(owner).boundingBox(),
+            },
+          }),
+          contentType: "application/json",
+        });
       },
       acknowledgement: {
         spec: "The expanded resolution explanation is visible and identifies proposed development rules without revealing opposing forces.",
