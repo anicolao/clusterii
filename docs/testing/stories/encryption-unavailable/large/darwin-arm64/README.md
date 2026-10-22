@@ -66,6 +66,7 @@ Actor: **Cipher envoy**.
 Acknowledged outcome: The service acknowledges seat release.
 
 - [x] Read-only authoritative metadata retains the chosen mock mode and revision 3.
+- [x] One logical Leave has its matching accepted receipt; membership is absent and the retained protected view denies player access, with no involuntary-access error or retry remedy.
 
 ### Viewpoint: Cipher envoy
 

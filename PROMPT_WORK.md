@@ -508,3 +508,5 @@ Prompt 77 | 969c0ce13a6447bb996931a6977a8ad97e6461aea9273a1760ccb277c62ea37d | L
 Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | Correct receipt-versus-membership Leave ordering after eight rendered failures and add digest-bound departure assertions
 
 Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | Verify retained-view denial with actual departed-player credentials after correcting the storage-deletion test assumption
+
+Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | Archive140 exact captures across departure and revocation stories while retaining both failure cohorts and unchanged baselines
