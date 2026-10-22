@@ -668,3 +668,5 @@ Prompt 104 | 6979cace6cffcf632ea8b9c16a42370ba4cd201a1c5b59481222a1ad517dfd6c | 
 Prompt 105 | 61075108a923c8f09df1f09a7b76d04b0177a1cf1a388dc9df3fe4c53aca73d6 | Preserve the single pre-target admission probe failure and document absent target timing evidence without retry.
 
 Prompt 105 | 61075108a923c8f09df1f09a7b76d04b0177a1cf1a388dc9df3fe4c53aca73d6 | Register draft PR106 dependency and unverified preview with the precise pre-target diagnostic outcome.
+
+Prompt 106 | 1342b964ee6683077856b3352cefb67ec6521e51cb130cca09b8bff4a50ca336 | Register PR107 callback ownership correction and separate unresolved admission and mounted acceptance gates.
