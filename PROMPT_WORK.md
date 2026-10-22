@@ -662,3 +662,5 @@ Prompt 102 | dc7ed1d311981efbb84e12b15727ef273af2c8f4da9f04f890cc671336948af0 | 
 Prompt 103 | 48f237276c60ef3d19ae11ce2aa4649aab00948fbcc22abffea1e89dc7a7d2d3 | Preserve phone admission failure, correct unexecuted directory-return fixture and document pending route recovery acceptance.
 
 Prompt 103 | 48f237276c60ef3d19ae11ce2aa4649aab00948fbcc22abffea1e89dc7a7d2d3 | Record PR104 dependency and source fix with explicit failed admission and unexecuted browser acceptance gates.
+
+Prompt 104 | 6979cace6cffcf632ea8b9c16a42370ba4cd201a1c5b59481222a1ad517dfd6c | Record PR105 dependency and scoped ownership evidence with unresolved admission and unexecuted probe preserved.

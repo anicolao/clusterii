@@ -1,0 +1,27 @@
+# Dracon admission and route ownership boundaries
+
+Prompt104 requests diagnosis before a travel rerun. Original clean34f11c2 phone evidence remains `/tmp/cluster-route-navigation-phone-failure`, with `/tmp/cluster-route-navigation-phone.log`. No new browser/emulator/capture execution is part of this slice.
+
+## Retained action evidence
+
+Browser trace3 call226 begins111574.331ms; locator resolution logs114302.921ms and click action stability evaluation114312.121ms. The browser-side call ends122239.653ms; the test-side error arrives123503.2ms. It never logs a completed stable/visible/enabled evaluation, scrolling, hit-target interception or input dispatch. No assertion deadline changes.
+
+The after snapshot at122246.318ms has viewport393×852 and the Dracon radio present, unchecked, without disabled or aria-disabled. Its fieldset has no disabled attribute. The three occupied factions are disabled; Dracon text says1 seat open. This rules out an absent target and a disabled control in that final snapshot, not every intervening frame. The before snapshot uses retained DOM references; it is not a sampled geometry series. CSS gives the native radio an absolute full-label box with opacity0; this intentional hit area is not evidence of display:none or zero size.
+
+The installed Playwright implementation checks requestAnimationFrame-based rectangle stability before other requested element states. A returned moving rectangle would normally yield a missing-stable result and a retry log. None is retained here. The unresolved boundary is utility execution/animation-frame stability completion; it does not establish hidden geometry, continuous motion, occlusion or host overload. Hit-target checks happen later and were not reached. No replayed DOM geometry is presented as the original rendered measurements.
+
+The campaignSecurity record starts111816.746ms, completes in169.2ms withHTTP200. campaignKey starts113359.701ms, records1888.39ms total/HTTP200 (including1420.399ms receive time), overlapping the beginning of the stability wait. Browser callback completion is not recorded. HTTP completion alone cannot prove the callback or page rendering time. This differs from missing profile ingress, absent faction DOM and native screenshot failure; none is declared resolved.
+
+## One proposed discriminating probe — not executed
+
+Use admission only, preserving the four real authenticated players and exact radio.check action/10s deadline, with a120s total test cap. No formation, travel, tick batches, screenshots or force/fallback clicks. For the fourth admission, record at most16 samples over the action window: native RAF and100ms timer progress counts/times, visibilityState, target isConnected/disabled, rectangle, computed display/visibility, ancestor clipping, and center/corner elementFromPoint classification (target/label/other, no text or identities). Record redacted Node request-start/response-finished and action-entry/completion times. Do not focus/resize or change the page clock to make it pass. Samples distinguish a moving/zero/hidden target from stalled RAF/utility execution with progressing timers; response markers remain separate from actual callback evidence. Sampling overhead must be stated. A pass is negative reproduction, not cause. No probe is launched here; retain the original run and avoid a retry loop.
+
+## Route ownership audit
+
+#104 scopes route memory to the account, campaign and authorized fleet IDs. Every private-view callback first compares captured generation and selection; membership loss increments selection, stops the view and clears protected memory. Account change increments the generation and resets recoveredFleet before scoping; confirmed leave and access denial also clear the campaign. No new unguarded callback or command emitter was added by lifting routeDrafts.
+
+Galaxy recovery first uses fleetRecoveryTarget on the current authorized view. recoveredRouteDraft returns the current array, including deliberately empty/invalid intent, before considering a copy of submitted waypoints. Its per-mount command fence avoids repeated selection; remount uses the already retained array. Retired fleets are pruned before mounting and cannot pass recovery-target validation. Durable submitted payload/identity is separate and unchanged.
+
+Existing tests cover each helper separately; the new composed reducer regression covers navigation refresh plus repeated submitted discovery after newer invalid edits/explicit discard, account/membership/logout clearing, a peer's actual private projection, and fleet retirement through the existing real disband reducer/settlement fixture. It reuses the established reducer fixture (which fixes map/resources); this is not service or illustrated acceptance. Canonical state and original submitted payload stay unchanged through memory operations. Late callback ordering remains source-audited against the existing fence, not newly browser-executed; the corrected #104 story retains canonical/receipt-ID assertions but has not run past admission. No claim of live race/privacy acceptance.
+
+Focused composed regression passes1 test/12 assertions in231ms (`/tmp/cluster-route-ownership-focused.log`; `bun test tests/travel.test.ts -t "route memory and submitted recovery"`). No browser or screenshot suite was repeated. All four-size/keyboard/reduced-motion, gallery/lab, timing/Linux/KMS/hosted/release holds remain open. No baseline promotion, rule approval or merge.
