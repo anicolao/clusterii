@@ -650,6 +650,60 @@ for (const interrupted of [false, true])
           verifications: [...focusChecks, readOnly],
           views: views(),
         });
+        await story.step("leave-partial-focus", {
+          actor: aliases[0],
+          description:
+            "Clear the market field while redistributing points; a blank partial edit remains unsent.",
+          action: async () => {
+            await focusPanel
+              .getByLabel("Market points", { exact: true })
+              .fill("");
+          },
+          acknowledgement: {
+            spec: "The blank market field is preserved and Apply focus is disabled.",
+            check: async () => {
+              await expect(
+                focusPanel.getByLabel("Market points", { exact: true }),
+              ).toHaveValue("");
+              await expect(button(owner, "Apply focus")).toBeDisabled();
+            },
+          },
+          verifications: [...focusChecks, readOnly],
+          views: views(),
+        });
+        await story.step("restore-invalid-focus", {
+          actor: aliases[0],
+          description:
+            "Leave the allocation instrument and galaxy panel, then recover the same unsent invalid allocation using the keyboard.",
+          action: async () => {
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            await button(owner, "Back to economy").focus();
+            await owner.keyboard.press("Enter");
+            await expect(button(owner, "Market focus")).toBeFocused();
+            await button(owner, "Return to galaxy").focus();
+            await owner.keyboard.press("Enter");
+            await button(owner, "Economy").focus();
+            await owner.keyboard.press("Enter");
+            await button(owner, "Market focus").focus();
+            await owner.keyboard.press("Enter");
+            await owner.emulateMedia({ reducedMotion: "reduce" });
+          },
+          acknowledgement: {
+            spec: "The blank market and100 camp points return intact and cannot be sent.",
+            check: async () => {
+              await expect(
+                focusPanel.getByLabel("Training camp points", { exact: true }),
+              ).toHaveValue("100");
+              await expect(focusPanel).toContainText("50 over allocation");
+              await expect(
+                focusPanel.getByLabel("Market points", { exact: true }),
+              ).toHaveValue("");
+              await expect(button(owner, "Apply focus")).toBeDisabled();
+            },
+          },
+          verifications: [...focusChecks, readOnly],
+          views: views(),
+        });
         await story.step("review-market-draft", {
           actor: aliases[0],
           description:

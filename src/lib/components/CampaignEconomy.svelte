@@ -1,4 +1,9 @@
 <script lang="ts">
+  import {
+    refreshMarketDraft,
+    type MarketAllocationDraft,
+  } from "$lib/market-draft";
+  import { untrack } from "svelte";
   import CreditOffers from "./CreditOffers.svelte";
   import type { TradeAction } from "@shared/trades";
   import type { CreditDraft } from "$lib/credit-offers";
@@ -13,6 +18,12 @@
   import ActionButton from "./ActionButton.svelte";
   let {
     view,
+    marketDraft = $bindable<MarketAllocationDraft>(
+      untrack(
+        () =>
+          refreshMarketDraft(undefined, view.economy?.marketFocus).allocation,
+      ),
+    ),
     records = [],
     exchanging = $bindable(false),
     tradeSelection = $bindable(""),
@@ -33,6 +44,7 @@
     onretry,
   }: {
     view: CampaignView;
+    marketDraft?: MarketAllocationDraft;
     records?: CampaignView[];
     exchanging?: boolean;
     tradeSelection?: string;
@@ -120,6 +132,7 @@
     class="focus-host"
   >
     <MarketFocus
+      bind:draft={marketDraft}
       focus={view.economy.marketFocus ?? initialFocus()}
       ledger={view.economy.ledger}
       paused={view.pausedAt != null}

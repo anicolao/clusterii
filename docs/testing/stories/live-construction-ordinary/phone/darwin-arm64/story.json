@@ -10,10 +10,10 @@
   ],
   "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time for construction and market-focus admission, plus withheld delivery, are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
   "source": {
-    "commit": "3910cef102a253c1aeea4393901e05baed5d7ec5",
+    "commit": "485a25dd90233a9c35d610e35e18b28d3d65b8a0",
     "dirty": false,
     "spec": "tests/browser/construction.story.spec.ts",
-    "specSha256": "5845ffbbd1a23e2ca865789f75d27e19f4d6631a2b2995f21a2071397357ded0"
+    "specSha256": "ec1422f5258bf107fa3034f12c804174d380ea22be291d1690f2cae469be2dd0"
   },
   "mode": "verify",
   "status": "passed",
@@ -445,6 +445,54 @@
       ]
     },
     {
+      "id": "leave-partial-focus",
+      "description": "Clear the market field while redistributing points; a blank partial edit remains unsent.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The blank market field is preserved and Apply focus is disabled.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "023-leave-partial-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "023-leave-partial-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-invalid-focus",
+      "description": "Leave the allocation instrument and galaxy panel, then recover the same unsent invalid allocation using the keyboard.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The blank market and100 camp points return intact and cannot be sent.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "024-restore-invalid-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "024-restore-invalid-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
       "id": "review-market-draft",
       "description": "Allocate all100 points to training camps without sending an order yet.",
       "actor": "Builder envoy",
@@ -458,12 +506,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "023-review-market-draft-1-builder-envoy.png",
+          "image": "025-review-market-draft-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "023-review-market-draft-2-independent-builder.png",
+          "image": "025-review-market-draft-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -482,12 +530,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "024-accept-market-focus-1-builder-envoy.png",
+          "image": "026-accept-market-focus-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "024-accept-market-focus-2-independent-builder.png",
+          "image": "026-accept-market-focus-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -506,12 +554,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "025-recover-market-focus-1-builder-envoy.png",
+          "image": "027-recover-market-focus-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "025-recover-market-focus-2-independent-builder.png",
+          "image": "027-recover-market-focus-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -531,12 +579,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "026-return-to-development-1-builder-envoy.png",
+          "image": "028-return-to-development-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "026-return-to-development-2-independent-builder.png",
+          "image": "028-return-to-development-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -556,12 +604,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "027-reserve-build-1-builder-envoy.png",
+          "image": "029-reserve-build-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "027-reserve-build-2-independent-builder.png",
+          "image": "029-reserve-build-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -581,12 +629,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "028-reload-reservation-1-builder-envoy.png",
+          "image": "030-reload-reservation-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "028-reload-reservation-2-independent-builder.png",
+          "image": "030-reload-reservation-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -615,12 +663,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "030-completed-build-1-builder-envoy.png",
+          "image": "032-completed-build-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "030-completed-build-2-independent-builder.png",
+          "image": "032-completed-build-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -637,12 +685,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "031-inspect-applied-focus-1-builder-envoy.png",
+          "image": "033-inspect-applied-focus-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "031-inspect-applied-focus-2-independent-builder.png",
+          "image": "033-inspect-applied-focus-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -661,12 +709,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "032-return-after-focus-settlement-1-builder-envoy.png",
+          "image": "034-return-after-focus-settlement-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "032-return-after-focus-settlement-2-independent-builder.png",
+          "image": "034-return-after-focus-settlement-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -686,12 +734,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "033-reserve-cancellable-base-1-builder-envoy.png",
+          "image": "035-reserve-cancellable-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "033-reserve-cancellable-base-2-independent-builder.png",
+          "image": "035-reserve-cancellable-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -711,12 +759,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "034-cancel-base-1-builder-envoy.png",
+          "image": "036-cancel-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "034-cancel-base-2-independent-builder.png",
+          "image": "036-cancel-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -745,12 +793,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "036-cancelled-base-1-builder-envoy.png",
+          "image": "038-cancelled-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "036-cancelled-base-2-independent-builder.png",
+          "image": "038-cancelled-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -770,12 +818,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "037-recover-settled-outcome-1-builder-envoy.png",
+          "image": "039-recover-settled-outcome-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "037-recover-settled-outcome-2-independent-builder.png",
+          "image": "039-recover-settled-outcome-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -792,12 +840,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "038-keyboard-return-1-builder-envoy.png",
+          "image": "040-keyboard-return-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "038-keyboard-return-2-independent-builder.png",
+          "image": "040-keyboard-return-2-independent-builder.png",
           "verifications": []
         }
       ]
