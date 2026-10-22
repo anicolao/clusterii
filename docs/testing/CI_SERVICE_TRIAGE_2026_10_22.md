@@ -33,3 +33,9 @@ The reviewer’s 01:10 checkpoint is retained in `meta-prompts.md`; `/tmp/cluste
 ## Delivered 00:09 handoff reconciliation
 
 The queued reviewer instruction is now recorded as Prompt 62, with supervisory history preserved through 01:20 Toronto. The existing retained trace, heap log and matching-head generation comparison above address its diagnosis request without repeating completed suites. Missing candidate families, aggregate setup timing and pending/failed service calls remain separate findings. New Linux candidates still require rendered review before promotion; inherited baselines and exact comparison remain unchanged. No broad rerun, timeout relaxation or merge was performed.
+
+## Delivered 01:10 visual/publication handoff
+
+Prompt 63 records the reviewer’s delegated finding. A fresh read-only check still reports Pages run39724569489 queued for commit54189303257e8a3376190c301f21be4aa33027dd, and the served `pr61/revision.json` still returns HTTP404. The retained published-tree revision and queued deployment distinguish publication from serving; exact-head acceptance remains blocked. No duplicate retry was launched while this deployment remains queued.
+
+The phone Tupã/Tania Australis overlap remains an explicit rendered-UI defect in both observation review documents. This handoff does not approve full composition or change any baseline. Its resolution needs separately reviewed collision handling and affected captures; scoped observation-reading evidence remains distinct from visual acceptance.
