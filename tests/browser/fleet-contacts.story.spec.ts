@@ -396,6 +396,11 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       observerUid = formed.seats[1].uid,
       source = formed.galaxy.stars.find((s) => s.id === formed.seats[1].home)!,
       target = formed.galaxy.stars.find((s) => s.id === fleet.starId)!;
+    const contactId = `${formed.seats.findIndex((s) => s.uid === fleet.uid)}:${fleet.number}`;
+    expect(
+      (await published(0)).military.fleets.find((f) => f.id === fleetId)
+        ?.number,
+    ).toBe(fleet.number);
     const probability = detectionProbability(1, distance(source, target));
     const hit = (tick: number) =>
       observationDraw(
@@ -418,7 +423,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       async () => advanceTo(acquiredTick),
     );
     const acquired = (await published(1)).fleetContacts!.find(
-      (c) => c.id === "0:1",
+      (c) => c.id === contactId,
     )!;
     expect(acquired).toBeTruthy();
     await story.step("read-current-contact", {
@@ -427,7 +432,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
         "Read acquired fleet facts and the private owner manifest as separate player viewpoints.",
       action: async () => {
         await fleetPanel(owner)
-          .getByRole("button", { name: /Fleet 1/ })
+          .getByRole("button", { name: `Fleet ${fleet.number}`, exact: true })
           .click();
         await contacts(observer)
           .getByRole("region", { name: "Contact details", exact: true })
@@ -439,7 +444,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           await matchContact(observer, acquired, true);
           await expect(
             fleetPanel(owner).getByRole("heading", {
-              name: "Fleet 1",
+              name: `Fleet ${fleet.number}`,
               exact: true,
             }),
           ).toBeVisible();
@@ -465,7 +470,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       async () => {
         await advanceTo(missedTick - 1);
         retained = (await published(1)).fleetContacts!.find(
-          (c) => c.id === "0:1",
+          (c) => c.id === contactId,
         )!;
         expect(retained).toBeTruthy();
         await advanceTo(missedTick);
@@ -509,7 +514,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           .getByRole("button", { name: "Fleets · 1", exact: true })
           .click();
         await fleetPanel(owner)
-          .getByRole("button", { name: /Fleet 1/ })
+          .getByRole("button", { name: `Fleet ${fleet.number}`, exact: true })
           .click();
         await observer.reload();
         await button(observer, "Fleet contacts").focus();
