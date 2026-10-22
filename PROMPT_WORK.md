@@ -603,8 +603,24 @@ Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | R
 
 Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Archive four passing research completion journeys and100 exact comparisons with scoped review and unchanged service/privacy assertions.
 
+Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Restore authenticated submitted research targets in the matching campaign and add reload identity payload and privacy assertions on a successor.
+
+Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Preserve four passing recovery journeys and add visible restored-choice and pending-control capture assertions; correct the research harness guide.
+
+Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Preserve qualified recovery captures and fence each restored command once so later view callbacks cannot overwrite a deliberate baseline choice.
+
+Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Add the required named peer and identity verification to the post-tick recovery story after typecheck caught the missing helper field.
+
+Prompt 93 | f8f3eef49593489ee296c5689ee896f1cdada23453ef15c9d729af2f8c1a8062 | Preserve the short-screen containment failure and use End then ArrowUp to read Recruiting without weakening any clipping or exact-image assertion.
+
+Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Preserve the extra-key phone failure and condition the additional keyboard reading step on actual clipping while retaining full containment at every size.
+
+Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Preserve distinct recovery admission, capture-budget and isolated identity-readiness failures before approved predecessor gallery comparison.
+
 Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Archive four passing qualified forecast gallery journeys and40 exact captures under the scoped reviewer approval.
 
 Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Propagate approved forecast40 strict evidence into feedback successor while preserving both continuation histories.
 
 Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Carry reviewed forecast gallery comparisons into completion successor without changing completion baselines or service assertions.
+
+Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Preserve recovery work while inheriting approved forecast40 baselines and exact archived comparison through the stack.

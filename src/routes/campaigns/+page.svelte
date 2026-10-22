@@ -1,6 +1,7 @@
 <script lang="ts">
   import {
-    refreshResearchDraft,
+    restoreResearchDraft,
+    type RecoveredResearch,
     scopeResearchDrafts,
     type ResearchDraftScope,
   } from "$lib/research-draft";
@@ -100,6 +101,7 @@
   let commandVisitRevision = $state(0);
   let commandId = $state("");
   let commandOfferId = $state("");
+  let recoveredResearch = $state<RecoveredResearch | null>(null);
   let recoveredFleet = $state<RecoveredFleetCommand | null>(null);
   let recoveredConstruction = $state<RecoveredConstruction | null>(null);
   let acceptedConstruction = $state<AcceptedConstruction | null>(null);
@@ -255,9 +257,12 @@
               next.economy?.marketFocus,
             );
             if (next.economy?.research)
-              researchDrafts.campaigns[id] = refreshResearchDraft(
+              researchDrafts.campaigns[id] = restoreResearchDraft(
                 researchDrafts.campaigns[id],
                 next.economy.research,
+                recoveredResearch,
+                account,
+                id,
               );
             else delete researchDrafts.campaigns[id];
           } else {
@@ -394,6 +399,15 @@
                 action: restored.action as TradeAction,
               }
             : null;
+          recoveredResearch =
+            restored.action.kind === "research.select"
+              ? {
+                  id: pending.id,
+                  gameId: pending.gameId,
+                  accountId: account,
+                  target: restored.action.target,
+                }
+              : null;
           recoveredFleet =
             restored.action.kind === "fleet.split" ||
             restored.action.kind === "fleet.merge" ||
@@ -468,6 +482,7 @@
           recoveredTrade = null;
           recoveredConstruction = null;
           recoveredFleet = null;
+          recoveredResearch = null;
           acceptedConstruction = null;
           recoveryProblem = null;
           commandRoomId = "";
@@ -651,6 +666,7 @@
   async function send(id: string, action: CampaignAction) {
     if (busy || pending) return;
     recoveredFleet = null;
+    recoveredResearch = null;
     acceptedFleetCommand = null;
     acceptedTrade = null;
     acceptedConstruction = null;
@@ -767,6 +783,7 @@
       {recoveredTrade}
       {recoveredConstruction}
       {recoveredFleet}
+      {recoveredResearch}
       accountId={account ?? undefined}
       onvisit={(throughRevision) =>
         send(view!.id, {
