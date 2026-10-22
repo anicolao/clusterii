@@ -593,3 +593,9 @@ Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:39 Toronto”.
 
 Reviewer continuation 2026-10-22 04:39 Toronto: #73 17250d5 attached; independently reviewed replacement assertions and phone conflict capture, with both remedies visible and sending disabled. Continue next documented gap as a small stacked successor on #73, prioritizing interrupted-send recovery/account isolation or another concrete plan gap; retain real authoritative acknowledgement and distinguish browser draft persistence from sending. Do not stop after one PR while authorized plan work remains. Preserve independent visual/Linux/hosted and original raster gates. Track existing explicit #70 candidate run without duplicate requests. Carry checkpoints through04:39 into attributed committed/pushed logs; no merge.
+
+## Prompt 73: Broader implementation continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 05:29 Toronto”.
+
+Reviewer continuation 2026-10-22 05:29 Toronto: #76 ee86a33 attached, clean idle, no queued input. Continue remaining IMPLEMENTATION_PLAN as small stacked successors on #76. Reconcile implementation gaps with the design contract and prioritize a missing end-to-end production capability or actionable product defect where approved requirements suffice, alongside TestStepHelper evidence; avoid indefinitely extending only the same conversation test while other milestones remain incomplete. Document chosen scope and approval boundaries. Review the existing Linux candidate run when available without duplicate generation. Carry checkpoints through05:29 into attributed committed/pushed logs. Preserve unresolved raster/visual/hosted gates; never merge.
