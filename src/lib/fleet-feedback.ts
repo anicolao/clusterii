@@ -1,9 +1,31 @@
 import type { CampaignView } from "@shared/campaign";
 import type { FleetAction, FleetOutcome } from "@shared/fleets";
-export interface RecoveredFleetReorganization {
+import type { TravelAction } from "@shared/travel";
+export interface RecoveredFleetCommand {
   gameId: string;
   id: string;
-  action: Extract<FleetAction, { kind: "fleet.split" | "fleet.merge" }>;
+  action:
+    | Extract<FleetAction, { kind: "fleet.split" | "fleet.merge" }>
+    | TravelAction;
+}
+/** Recovery may select only a fleet in the current authorized private projection. */
+export function fleetRecoveryTarget(
+  view: CampaignView | null,
+  recovered: RecoveredFleetCommand | null,
+) {
+  if (!view || !recovered || recovered.gameId !== view.id) return null;
+  const fleet = view.military?.fleets.find(
+    (f) => f.id === recovered.action.fleetId,
+  );
+  if (!fleet || !view.stars.some((s) => s.id === fleet.starId)) return null;
+  return fleet;
+}
+/** Existing local choices, including an intentionally empty route, always win. */
+export function recoveredRouteDraft(
+  current: string[] | undefined,
+  submitted: readonly string[],
+) {
+  return current ?? [...submitted];
 }
 export interface AcceptedFleetCommand {
   gameId: string;
