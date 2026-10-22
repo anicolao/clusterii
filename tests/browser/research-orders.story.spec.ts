@@ -436,9 +436,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
                 await expect(forecast).not.toContainText(
                   "Estimated completion:",
                 );
-                await forecast.evaluate((e) =>
-                  e.scrollIntoView({ block: "center" }),
-                );
+                await button(owner, "Queue investing").scrollIntoViewIfNeeded();
                 const box = await forecast.boundingBox();
                 const footer = await button(
                   owner,
@@ -446,10 +444,76 @@ test("Live research orders preserve choices and acknowledge switches", async ({
                 ).boundingBox();
                 expect(box!.y).toBeGreaterThanOrEqual(0);
                 expect(box!.y + box!.height).toBeLessThanOrEqual(footer!.y);
+                const queue = await button(
+                  owner,
+                  "Queue investing",
+                ).boundingBox();
+                expect(queue!.y).toBeGreaterThanOrEqual(box!.y + box!.height);
+                expect(queue!.y + queue!.height).toBeLessThanOrEqual(footer!.y);
+                await expect(owner.locator(".acknowledgement")).toHaveCount(0);
               },
             },
           ],
           views: [ownerView, peerView],
+        },
+      );
+      await story.step(
+        queued ? "read-queued-assumptions" : "read-unfunded-assumptions",
+        {
+          actor: aliases[0],
+          description:
+            "Scroll the bounded forecast with the keyboard while the actual Queue control stays fully visible.",
+          action: async () => {
+            const body = forecast.getByRole("region", {
+              name: "Research forecast details",
+            });
+            await body.focus();
+            await owner.keyboard.press("End");
+          },
+          acknowledgement: {
+            spec: "The focused forecast reveals its active-target qualification without sending another command.",
+            check: async () => {
+              await expect(
+                forecast.getByRole("region", {
+                  name: "Research forecast details",
+                }),
+              ).toBeFocused();
+              expect((await receipts(uid)).length).toBe(
+                receiptsBefore.length + (queued ? 1 : 0),
+              );
+            },
+          },
+          verifications: [
+            privacy,
+            {
+              spec: "Active navigation and Queue investing are contained above the fixed footer.",
+              check: async () => {
+                const target = forecast.getByText(
+                  "Active research: navigation.",
+                  { exact: false },
+                );
+                const body = await forecast
+                  .getByRole("region", { name: "Research forecast details" })
+                  .boundingBox();
+                const text = await target.boundingBox();
+                expect(text!.y).toBeGreaterThanOrEqual(body!.y);
+                expect(text!.y + text!.height).toBeLessThanOrEqual(
+                  body!.y + body!.height,
+                );
+                const queue = await button(
+                  owner,
+                  "Queue investing",
+                ).boundingBox();
+                const footer = await button(
+                  owner,
+                  "Return to galaxy",
+                ).boundingBox();
+                expect(queue!.y).toBeGreaterThanOrEqual(0);
+                expect(queue!.y + queue!.height).toBeLessThanOrEqual(footer!.y);
+              },
+            },
+          ],
+          views: [ownerView],
         },
       );
       // Close the presentation disclosure before continuing normal orders.

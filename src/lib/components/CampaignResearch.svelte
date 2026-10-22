@@ -159,43 +159,60 @@
       </div>
     </fieldset>
     <p class="effect">{descriptions[selected]}</p>
-    <details class="forecast" aria-label="Selected research forecast">
+    <details
+      class="forecast"
+      aria-label="Selected research forecast"
+      ontoggle={async (event) => {
+        if (event.currentTarget.open) {
+          await tick();
+          commitment?.scrollIntoView({ block: "nearest" });
+        }
+      }}
+    >
       <summary
         >{#if estimate.costMilli !== null}Next level {research.levels[
             selected
           ] + 1} · {amount(estimate.costMilli)} science{:else}Maximum research
           level{/if}</summary
       >
-      {#if estimate.costMilli !== null}
+      <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded forecast must support keyboard scrolling.) -->
+      <div
+        class="forecast-body"
+        role="region"
+        aria-label="Research forecast details"
+        tabindex="0"
+      >
+        {#if estimate.costMilli !== null}
+          <p>
+            Level {research.levels[selected] + 1} costs {amount(
+              estimate.costMilli,
+            )} science.
+            {amount(estimate.remainingMilli!)} more science required from this track's
+            retained progress.
+          </p>
+        {/if}
+        <p>{nextEffect}</p>
+        {#if estimate.reason}
+          <p>{estimateReasons[estimate.reason]}</p>
+        {:else}
+          <p>
+            Estimated completion: {estimate.fundedTicks} funded {estimate.fundedTicks ===
+            1
+              ? "tick"
+              : "ticks"} ({rules.tickSeconds / 60} minutes each).
+          </p>
+          <p>
+            Assumes {amount(scienceMilli!)} science per tick, the last completed production
+            rate, with unchanged output and all future science allocated to {selected}.
+            Excludes time before a switch applies; this is not a promised
+            completion time.
+          </p>
+        {/if}
         <p>
-          Level {research.levels[selected] + 1} costs {amount(
-            estimate.costMilli,
-          )} science.
-          {amount(estimate.remainingMilli!)} more science required from this track's
-          retained progress.
+          Active research: {research.target}. A selection changes only at its
+          acknowledged application tick.
         </p>
-      {/if}
-      <p>{nextEffect}</p>
-      {#if estimate.reason}
-        <p>{estimateReasons[estimate.reason]}</p>
-      {:else}
-        <p>
-          Estimated completion: {estimate.fundedTicks} funded {estimate.fundedTicks ===
-          1
-            ? "tick"
-            : "ticks"} ({rules.tickSeconds / 60} minutes each).
-        </p>
-        <p>
-          Assumes {amount(scienceMilli!)} science per tick, the last completed production
-          rate, with unchanged output and all future science allocated to {selected}.
-          Excludes time before a switch applies; this is not a promised
-          completion time.
-        </p>
-      {/if}
-      <p>
-        Active research: {research.target}. A selection changes only at its
-        acknowledged application tick.
-      </p>
+      </div>
     </details>
     <div
       class="research-commit"
@@ -355,6 +372,16 @@
   .forecast {
     border-block: 1px solid #476173;
     padding-block: 4px;
+  }
+  .forecast-body {
+    max-height: min(360px, 30dvh);
+    overflow: auto;
+    overscroll-behavior: contain;
+    padding-inline: 2px;
+  }
+  .forecast-body:focus-visible {
+    outline: 2px solid #9ee9ff;
+    outline-offset: -2px;
   }
   .forecast summary {
     min-height: 44px;
