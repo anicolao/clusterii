@@ -210,49 +210,61 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       "Route and destination are private.",
       { exact: true },
     );
-    await story.step(id, {
-      actor: aliases[1],
-      description: current
-        ? "Scroll the bounded contact details to read the complete acquired complement, coordinates and privacy explanation alongside its observed tick."
-        : "Read the complete retained coordinates and complement beside the last-seen timestamp and explicit private-route explanation.",
-      action: async () => {
-        await rail(p);
-        await details.focus();
-        await caveat.scrollIntoViewIfNeeded();
+    const observed = selectedContact(p).locator(".observed");
+    for (const part of [
+      {
+        suffix: "age",
+        target: observed,
+        items: [observed],
+        description: current
+          ? "Read the acquired report's tick and current-observation status."
+          : "Read the retained report's tick and explicit warning that its current position is unknown.",
       },
-      acknowledgement: {
-        spec: "The full report values, age and privacy explanation are visible together inside the bounded details panel.",
-        check: async () => {
-          await matchContact(p, report, current);
-          const panel = await details.boundingBox();
-          expect(panel).not.toBeNull();
-          for (const item of [
-            selectedContact(p).locator(".observed"),
-            selectedContact(p).locator("dl"),
-            caveat,
-          ]) {
-            await expect(item).toBeInViewport({ ratio: 1 });
-            const b = await item.boundingBox();
-            expect(b).not.toBeNull();
-            expect(b!.y).toBeGreaterThanOrEqual(panel!.y);
-            expect(b!.y + b!.height).toBeLessThanOrEqual(
-              panel!.y + panel!.height,
-            );
-          }
+      {
+        suffix: "facts",
+        target: caveat,
+        items: [selectedContact(p).locator("dl"), caveat],
+        description:
+          "Scroll the bounded contact details to read the complete complement, coordinates and private-route explanation.",
+      },
+    ])
+      await story.step(`${id}-${part.suffix}`, {
+        actor: aliases[1],
+        description: part.description,
+        action: async () => {
+          await rail(p);
+          await details.focus();
+          await part.target.scrollIntoViewIfNeeded();
         },
-      },
-      verifications: [
-        {
-          spec: "Reading and keyboard focus do not write a command, reveal private routes or change authoritative forces/history.",
+        acknowledgement: {
+          spec: `The report ${part.suffix} is fully visible inside the bounded details panel.`,
           check: async () => {
-            expect(await canonical()).toEqual(before);
-            await privacy();
-            await expect(details).toBeFocused();
+            await matchContact(p, report, current);
+            const panel = await details.boundingBox();
+            expect(panel).not.toBeNull();
+            for (const item of part.items) {
+              await expect(item).toBeInViewport({ ratio: 1 });
+              const b = await item.boundingBox();
+              expect(b).not.toBeNull();
+              expect(b!.y).toBeGreaterThanOrEqual(panel!.y);
+              expect(b!.y + b!.height).toBeLessThanOrEqual(
+                panel!.y + panel!.height,
+              );
+            }
           },
         },
-      ],
-      views: views(),
-    });
+        verifications: [
+          {
+            spec: "Reading and keyboard focus do not write a command, reveal private routes or change authoritative forces/history.",
+            check: async () => {
+              expect(await canonical()).toEqual(before);
+              await privacy();
+              await expect(details).toBeFocused();
+            },
+          },
+        ],
+        views: views(),
+      });
   };
   try {
     for (let i = 0; i < 4; i++)

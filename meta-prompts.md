@@ -1448,3 +1448,24 @@ Agent healthy at0d9150f validating navigation/observation exact comparisons afte
 Exact new evidence handoff:
 
 Reviewer CI finding 2026-10-22 01:59 Toronto: independently read completed #65 stories verify job119644812733 via jobs logs API (overall generation still queued). /tmp/cluster65-0158-failure.log shows every viewport29 passed and12 failed; all48 reported failures are missing reviewed Linux baselines, with no other Error entries beyond orchestration failures. This is evidence of improved bounded-cohort/setup execution in this run, not complete service or raster certification. Review matching-head generated Linux candidates when available; never promote failed verification output. Carry this and main checkpoints into committed/pushed attributed logs; continue current healthy work, no merge.
+
+
+## Reviewer progress — 2026-10-22 02:09 Toronto
+
+#68 a6f04e9 published on #67 and attached. Independently reviewed production decorative-wrapper pointer fix and actual hit-test assertions during preceding checkpoint, and now checked eight exact local journeys101 captures in retained evidence. Sampled phone orbit image shows the right-edge Guniibuu name contained; full composition approval remains open. Source/preview review retains exact-head gates.
+
+Agent healthy developing live fleet-contact story; independently read isolated demo/loopback entropy instrumentation and ran all three guard tests successfully. It retains actual scan draws and validates seats/fleet owner/tick while removing random identity domains for the named fixture only; this does not certify production entropy or managed services. #64 generation is now green, verification still running; #65 verification remains missing-baseline-only per prior independently read log. Existing01:49/01:59 findings remain queued, no duplicate interruption. Carry checkpoint into committed/pushed logs at natural boundary. Full release/visual/Linux/preview gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 02:19 Toronto
+
+Agent healthy atbebd8b8 diagnosing new contact story on phone before repeating all viewports. Retained failures concern wrong owner return-control name and legitimately absent pre-order military container; independently reviewed conservation correction, which preserves stationed totals and counts existing fleets without assuming a container. No acceptance yet. Existing01:49/01:59 handoffs remain queued, no duplicate intervention.
+
+Independently read completed #64 verify job119643687547 logs into /tmp/cluster64-0218-failure.log:115 pass,48 missing Linux baselines plus one known short identity1994-pixel mismatch at commander-identity/short/linux-arm64/002-sign-in-1-toile.png. No new service-timeout error identified; this does not prove root cause or raster closure. Generation is green, but generated candidates need separate matching-head review; do not use failed verification output as expected images. #66 publish running; latest PR checks otherwise queued/running. Carry checkpoint into committed/pushed logs at natural boundary. Full release/visual/preview acceptance remains open; no merge.
+
+
+## Reviewer progress — 2026-10-22 02:29 Toronto
+
+Agent progressing at0a9297d, currently compacting after successful phone contact journey and adding complete-facts reading steps. Independently reviewed authoritative contact-ID correction e93ca1a and decorative annotation pointer changes0a9297d; interactive traveling-fleet buttons retain their handlers. Four-size candidates/exact and expanded pointer coverage remain pending. Prior queued findings not duplicated or interrupted.
+
+#66 publication now failed; independently read job119661688843 log at /tmp/cluster66-0228-preview.log: expected0666727, HTTP404. Same existing publication gate, not a new inferred cause; no duplicate publish or relaxed check. #67 documentation green, other latest checks queued/running. Carry checkpoint into committed/pushed logs. Full release and visual/hosted acceptance remain open; no merge.

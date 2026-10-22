@@ -386,3 +386,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | C
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Bind contact lookup and keyboard fleet selection to the actual recorded fleet number and authoritative owner seat, not an assumed first number.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Reproduce contact annotation pointer interception, preserve interactive fleet markers and add complete current/history reading steps before candidate review.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve the phone reading failure and verify report age and complete facts in separate bounded-scroll steps; carry reviewer checkpoints through 02:29.
