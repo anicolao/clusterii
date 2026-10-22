@@ -34,12 +34,14 @@ async function fixture(
     page.on("close", closed);
     browser.on("disconnected", disconnected);
   }
+  let failed = false;
   try {
     await page.setContent(
       `<style>body{margin:0}button{width:80px;height:48px}</style>${html}`,
     );
     await run(page);
   } catch (error) {
+    failed = true;
     if (diagnostic) {
       // Observe only after failure: no extra paint/readiness work before either screenshot.
       const evidence: Record<string, unknown> = {
@@ -111,7 +113,11 @@ async function fixture(
     page.off("crash", crashed);
     page.off("close", closed);
     browser.off("disconnected", disconnected);
-    await page.close();
+    try {
+      await page.close();
+    } catch (cleanupError) {
+      if (!failed) throw cleanupError;
+    }
   }
 }
 test("capture waits for the finite effect and its final outcome", async () => {
@@ -403,4 +409,29 @@ test("failed tooling diagnostics retain the original error and closed-page bound
     evidence.events.map((event: { event: string }) => event.event),
   ).toContain("page-close");
   expect(evidence.geometry).toEqual({ unavailable: "page-evaluation-failed" });
+});
+
+test("fixture cleanup preserves primary failure and surfaces standalone close failure", async () => {
+  const primary = new Error("Primary fixture failure"),
+    cleanup = new Error("Close failed");
+  for (const failPrimary of [true, false]) {
+    let retained: Page | undefined, close: (() => Promise<void>) | undefined;
+    try {
+      await expect(
+        fixture("<button>Cleanup probe</button>", async (page) => {
+          retained = page;
+          close = page.close.bind(page);
+          page.close = async () => {
+            throw cleanup;
+          };
+          if (failPrimary) throw primary;
+        }),
+      ).rejects.toBe(failPrimary ? primary : cleanup);
+    } finally {
+      if (retained && close) {
+        retained.close = close;
+        await close();
+      }
+    }
+  }
 });

@@ -1,5 +1,11 @@
 <script lang="ts">
   import {
+    scopeRouteDrafts,
+    refreshRouteDrafts,
+    type RouteDraftScope,
+  } from "$lib/route-draft";
+  let routeDrafts = $state<RouteDraftScope>({ account: null, campaigns: {} });
+  import {
     restoreResearchDraft,
     type RecoveredResearch,
     scopeResearchDrafts,
@@ -252,6 +258,11 @@
           if (next && account) {
             marketDrafts = scopeMarketDrafts(marketDrafts, account);
             researchDrafts = scopeResearchDrafts(researchDrafts, account);
+            routeDrafts = scopeRouteDrafts(routeDrafts, account);
+            routeDrafts.campaigns[id] = refreshRouteDrafts(
+              routeDrafts.campaigns[id],
+              next.military?.fleets.map((fleet) => fleet.id) ?? [],
+            );
             marketDrafts.campaigns[id] = refreshMarketDraft(
               marketDrafts.campaigns[id],
               next.economy?.marketFocus,
@@ -267,6 +278,7 @@
             else delete researchDrafts.campaigns[id];
           } else {
             delete marketDrafts.campaigns[id];
+            delete routeDrafts.campaigns[id];
             delete researchDrafts.campaigns[id];
           }
           view = next;
@@ -298,6 +310,7 @@
             reason.code === "functions/permission-denied")
         ) {
           delete marketDrafts.campaigns[id];
+          delete routeDrafts.campaigns[id];
           delete researchDrafts.campaigns[id];
           error =
             "This campaign is no longer available. Return to all campaigns to choose another.";
@@ -321,6 +334,7 @@
       if (!allowed) {
         marketDrafts = { account: null, campaigns: {} };
         researchDrafts = { account: null, campaigns: {} };
+        routeDrafts = { account: null, campaigns: {} };
         access = "restricted";
         return;
       }
@@ -341,6 +355,7 @@
             memberships = ids;
             marketDrafts = scopeMarketDrafts(marketDrafts, account, ids);
             researchDrafts = scopeResearchDrafts(researchDrafts, account, ids);
+            routeDrafts = scopeRouteDrafts(routeDrafts, account, ids);
             if (lostSelected) {
               // Fence callbacks already decrypting the old private view.
               selection++;
@@ -494,6 +509,7 @@
           account = user?.uid ?? null;
           marketDrafts = scopeMarketDrafts(marketDrafts, account);
           researchDrafts = scopeResearchDrafts(researchDrafts, account);
+          routeDrafts = scopeRouteDrafts(routeDrafts, account);
           access = user ? "loading" : "signed-out";
           if (user) void recover();
         });
@@ -621,6 +637,7 @@
           memberships = memberships.filter((id) => id !== receipt.gameId);
           delete marketDrafts.campaigns[receipt.gameId];
           delete researchDrafts.campaigns[receipt.gameId];
+          delete routeDrafts.campaigns[receipt.gameId];
         }
         if (
           receipt.status === "accepted" &&
@@ -768,6 +785,7 @@
     />{:else if view && marketDrafts.campaigns[view.id]}<Galaxy
       bind:marketDraft={marketDrafts.campaigns[view.id].allocation}
       bind:researchDraft={researchDrafts.campaigns[view.id]}
+      bind:routeDrafts={routeDrafts.campaigns[view.id]}
       {view}
       {commandKind}
       {commandFleetId}

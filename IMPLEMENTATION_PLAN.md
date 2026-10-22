@@ -127,6 +127,8 @@ Use `output^(1 + level/100)` where specified, with defined precision, overflow l
 
 ## 6. Implement fleets and travel
 
+[Player-gap audit](docs/design/FLEET_PLAYER_GAP_AUDIT.md) maps existing travel/combat behavior and selects unsent route navigation recovery; it preserves outstanding rule and visual acceptance boundaries.
+
 Create persistent fleets with owner, fighter/infantry complement, location, route, departure/arrival times, and order status. Implement formation, split/merge, loading/unloading, cancellation/rerouting, and friendly/neutral arrival according to the rules contract.
 
 Turn route drawing into an order workflow: select forces, add/remove waypoints, inspect range and ETA, confirm, and receive authoritative acknowledgement. Revalidate at submission and execution where the rules require it. Apply navigation range separately from travel speed. Render actual moving fleets and last-observed enemy positions without leaking authoritative hidden locations.
