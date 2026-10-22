@@ -492,3 +492,5 @@ Prompt 74 | 672a0cb1d66404d4f9d4f7fe144ddf06f05a37290d1007dd5f6133f762580fc1 | A
 Prompt 74 | 672a0cb1d66404d4f9d4f7fe144ddf06f05a37290d1007dd5f6133f762580fc1 | Reconcile completed local acceptance, record unsent market draft gap and carry the 07:19 supervisory checkpoint
 
 Prompt 75 | 82dd538643d39c5592ba0265b8c8fafb0220db3ede20d5ccebaaf262febb7c6f | Preserve partial market allocations in account-scoped campaign memory after four-size navigation-loss reproduction
+
+Prompt 75 | 82dd538643d39c5592ba0265b8c8fafb0220db3ede20d5ccebaaf262febb7c6f | Review four-size partial allocation recovery candidates and preserve214 identical predecessor frames before strict checks

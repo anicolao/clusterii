@@ -291,7 +291,9 @@
     remedy = null;
     const session = generation;
     try {
-      if (!(await service.developerAccess())) {
+      const allowed = await service.developerAccess();
+      if (session !== generation) return;
+      if (!allowed) {
         marketDrafts = { account: null, campaigns: {} };
         access = "restricted";
         return;
