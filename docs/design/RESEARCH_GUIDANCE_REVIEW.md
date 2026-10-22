@@ -21,3 +21,18 @@ Live order submission/switch/completion/effect migration remains next research w
 Reviewer10:19 reports a separate #85 application verification failure before fleet reorganization begins: four profileKey calls, three processProfile executions, then the20-second missing profile receipt. Retained /tmp/cluster85-1019-app.log does not identify the missing command or prove why delivery/receipt was absent. No timeout/assertion relaxation or infrastructure-flake conclusion is justified. Prioritize a bounded setup/ingress diagnostic after this slice; no broad rerun or48MB artifact download under current low headroom.
 
 At the next boundary, the isolated unchanged `fleet reorganization mock` service test passed58 assertions in5.41 seconds (/tmp/cluster85-profile-receipt-targeted.log). This is a negative local reproduction, not a fix or cause assignment. Reviewer10:29 independently scoped the fieldset/audit source review and reported #84 inherited baseline/raster results; latest meta log is carried forward. Disk measured2,070,412KiB free, below the2GiB capture threshold: additional captures/artifact downloads remain deferred, while low-output receipt diagnostics continue.
+
+## Resource boundary and restart
+
+Final stack propagation: #85 profile diagnostics70fdfe0 → #86 integration1c85b94 → #87 integration9b480d6. Original UI evidence remains at the sources above; these integrations change only test diagnostics/logs. All prompt-history tests pass after preserving both continuation histories. Current-head CI/publication remain pending; no preview is certified from an older deployment.
+
+Disk measured1,973,752KiB free (about1.88GiB), below the documented2GiB capture gate. No large captures/downloads or cleanup were started at this boundary. Preserve all candidate/failure/strict artifacts. Once free space is at least2,097,152KiB, the next *unexecuted* comparison is:
+
+```sh
+PATH=/nix/store/vnycnlns50zkb0pns9rd7vhpv3m0fxc4-zulu-ca-jdk-21.0.8/bin:$PATH \
+FIREBASE_EMULATORS_PATH=/tmp/cluster-route-emulator-cache \
+CLUSTER_STORY_FILTER='Production gallery exposes|Production lab distinguishes' \
+bun run test:stories > /tmp/cluster-research-guidance-shared-regressions.log 2>&1
+```
+
+Inspect exact affected frames first. Any intentional component changes require separate matching-source generation and review before promotion; unrelated inherited raster expectations stay untouched. The eight completed research cases need no duplicate run solely because disk recovered. Then complete the real research order/switch/completion story migration. In parallel, inspect the updated #85 application CI for timeout diagnostics; a passing job alone does not establish the historical missing-ingress cause. All independent/Linux/hosted/original raster and release gates remain open.
