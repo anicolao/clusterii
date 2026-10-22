@@ -454,3 +454,5 @@ Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | A
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Review route-discard candidates while retaining original unrelated stellar-core expectations.
 
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Archive three strict route-discard stories and retain the unresolved 4K stellar-core failure and reviewer checkpoint.
+
+Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Register draft PR77 dependency, exact-preview gate and scoped route-discard acceptance limits.
