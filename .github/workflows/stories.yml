@@ -17,6 +17,7 @@ jobs:
       matrix:
         mode: [verify, generate]
     env:
+      CLUSTER_STORY_COHORTS: viewport
       CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
     steps:
       - uses: actions/checkout@v4
@@ -46,6 +47,8 @@ jobs:
         if: always()
         with:
           name: illustrated-stories-${{ matrix.mode }}-linux-arm64
+          include-hidden-files: true
           path: |
             test-results/stories/
+            test-results/.story-cohorts-*/
             firestore-debug.log
