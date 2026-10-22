@@ -469,6 +469,14 @@ test("Live research orders preserve choices and acknowledge switches", async ({
             });
             await body.focus();
             await owner.keyboard.press("End");
+            await expect
+              .poll(() =>
+                body.evaluate(
+                  (e) =>
+                    Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) < 1,
+                ),
+              )
+              .toBe(true);
           },
           acknowledgement: {
             spec: "The focused forecast reveals its active-target qualification without sending another command.",

@@ -580,3 +580,5 @@ Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | R
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve lab selector failures and scope applied-history keyboard checks to its exact disclosure label after adding forecasts.
 
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve nested-locator failure and use the named summary parent for unchanged open-state and applied-tick lab assertions.
+
+Prompt 89 | a0e71b861760a4e030fd48ac1ecd9ec56fab80ab929e0da263315a2bd59ed9f0 | Preserve phone and short scroll timing failures and await keyboard scroll completion before unchanged text and Queue geometry checks.
