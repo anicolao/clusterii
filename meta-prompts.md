@@ -1579,3 +1579,10 @@ Reviewer continuation 2026-10-22 04:39 Toronto: #73 17250d5 attached; independen
 #74 7ce5d61 attached on #73, candidate review complete but strict comparison still pending. Agent healthy continuing interrupted-send coverage and already plans account isolation next without waiting for CI. Independently read transport boundary: holds only actual conversation.send RTDB writes, passes other traffic, retains identical path/encrypted payload, checks complete canonical no-op before release, restored original proposal and second-tab order blocking. No fabricated receipt/state or service acceptance inferred from pending UI. Full release/regression acceptance pending.
 
 Explicit #70 generation job119705315798 now in progress, independently checked; no artifact/promotion yet. No duplicate intervention. Carry checkpoint into committed/pushed attributed logs at natural boundary. Full independent visual/Linux/hosted and original raster gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 04:59 Toronto
+
+#74 now2639f20 records four exact local journeys200 captures3.7min,32 separately reviewed new frames and168 unchanged predecessors. Prior independent transport-source review remains scoped; full Linux/visual/hosted acceptance open. Agent healthy on b5a34bb successor account-isolation story; independently read same-browser sign-out/outsider login/original-account recovery assertions, including no composer/retry leakage and unchanged canonical/profile state. Four candidate sizes pass; separate review/exact pending.
+
+No new completed actionable CI result in latest stack. No duplicate prompt or interruption; explicit Linux generation remains tracked by agent. Carry checkpoint into committed/pushed attributed logs at natural boundary. Original raster and full release gates remain open; no merge.

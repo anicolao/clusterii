@@ -548,3 +548,77 @@ Acknowledged outcome: The sent proposal is retained in history without restoring
 ### Viewpoint: Nacre envoy · second tab
 
 [![Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)
+
+## 41. Save a new unsent note before leaving this browser session. Saving a draft is not sending a message.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Browser storage acknowledges the exact private draft.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Account switching changes no campaign or saved identity and never publishes the unsent draft.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Save a new unsent note before leaving this browser session. Saving a draft is not sending a message. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png)
+
+## 42. Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Entry confirms the signed-out session with Play and no account identity control.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Account switching changes no campaign or saved identity and never publishes the unsent draft.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png)
+
+## 43. Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft.
+
+Actor: **Outer witness**.
+
+Acknowledged outcome: The authenticated outsider sees an empty conversation directory and no recovered private composer.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Account switching changes no campaign or saved identity and never publishes the unsent draft.
+
+### Viewpoint: Outer witness · same browser
+
+[![Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft. — Outer witness · same browser](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png)
+
+### Viewpoint: Outer witness
+
+[![Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/043-other-account-on-same-browser-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/043-other-account-on-same-browser-2-outer-witness.png)
+
+## 44. Sign out the second account before returning the browser to its original commander.
+
+Actor: **Outer witness**.
+
+Acknowledged outcome: The second account has signed out and its private campaign surface is closed.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Account switching changes no campaign or saved identity and never publishes the unsent draft.
+
+### Viewpoint: Outer witness · signed out
+
+[![Sign out the second account before returning the browser to its original commander. — Outer witness · signed out](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/044-end-other-account-session-1-outer-witness-signed-out.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/044-end-other-account-session-1-outer-witness-signed-out.png)
+
+## 45. Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Only the original account recovers its private room and unsent note.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Account switching changes no campaign or saved identity and never publishes the unsent draft.
+- [x] The restored composer and commitment remain visible; normal/reduced motion preserve the unsent text.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png)
+
+### Viewpoint: Outer witness
+
+[![Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)
