@@ -438,3 +438,5 @@ Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | R
 Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Archive four exact interrupted-send journeys and carry the reviewer 04:49 source checkpoint before account isolation
 
 Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Continue into real same-browser account isolation and owner-only draft restoration on the next stacked slice
+
+Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Review same-browser account-isolation candidates while preserving all two hundred predecessor images
