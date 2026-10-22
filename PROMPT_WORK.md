@@ -390,3 +390,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | R
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve the phone reading failure and verify report age and complete facts in separate bounded-scroll steps; carry reviewer checkpoints through 02:29.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review four contact candidate journeys and add typed fail-closed fixture/projection guards and normal/reduced-motion parity before strict comparison.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 76 exact contact captures, document source/privacy gates and distinguish skipped Linux generation from actual candidates while preserving supervisory history.

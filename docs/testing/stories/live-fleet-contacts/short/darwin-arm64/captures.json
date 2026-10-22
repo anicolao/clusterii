@@ -1,0 +1,97 @@
+[
+  {
+    "image": "010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+    "actualSha256": "3a10efd9048eb2e51fc529ea16e11c40b983c3cb35b04c5cb56dd5208172bd1d"
+  },
+  {
+    "image": "010-inspect-empty-contact-history-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+    "actualSha256": "2f6c7700c9e3ac261e8f7c805255e626e2a2f56238937dbdc7c0189c81c293fb"
+  },
+  {
+    "image": "011-commit-real-fleet-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+    "actualSha256": "9aa44bcd7eee2fa39b1a29c40cb2eaae13ef5d1ddb8a098f3ac2e614c070d835"
+  },
+  {
+    "image": "011-commit-real-fleet-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/011-commit-real-fleet-2-contact-watcher.png",
+    "actualSha256": "3b6b8700fdcf0faa512c2b5ae433b3b5377362084d1bae78829e679de1634169"
+  },
+  {
+    "image": "014-read-current-contact-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+    "actualSha256": "6571bca9531c6206ef770ec84c094fce9af499a6c1e66a31d44dbc9f8a03978f"
+  },
+  {
+    "image": "014-read-current-contact-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/014-read-current-contact-2-contact-watcher.png",
+    "actualSha256": "eadc526d2643b14df4ee32bee1670f6e6d3ebc174e4a838d115cd66dbb4ee5eb"
+  },
+  {
+    "image": "015-read-current-coordinates-age-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/015-read-current-coordinates-age-1-fleet-pathfinder.png",
+    "actualSha256": "6571bca9531c6206ef770ec84c094fce9af499a6c1e66a31d44dbc9f8a03978f"
+  },
+  {
+    "image": "015-read-current-coordinates-age-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/015-read-current-coordinates-age-2-contact-watcher.png",
+    "actualSha256": "eadc526d2643b14df4ee32bee1670f6e6d3ebc174e4a838d115cd66dbb4ee5eb"
+  },
+  {
+    "image": "016-read-current-coordinates-facts-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/016-read-current-coordinates-facts-1-fleet-pathfinder.png",
+    "actualSha256": "6571bca9531c6206ef770ec84c094fce9af499a6c1e66a31d44dbc9f8a03978f"
+  },
+  {
+    "image": "016-read-current-coordinates-facts-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/016-read-current-coordinates-facts-2-contact-watcher.png",
+    "actualSha256": "eadc526d2643b14df4ee32bee1670f6e6d3ebc174e4a838d115cd66dbb4ee5eb"
+  },
+  {
+    "image": "018-recover-last-seen-record-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/018-recover-last-seen-record-1-fleet-pathfinder.png",
+    "actualSha256": "3540446661b5a58ac792079e9945c7e4d28b7291a1516b4f763440a6efed64d1"
+  },
+  {
+    "image": "018-recover-last-seen-record-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/018-recover-last-seen-record-2-contact-watcher.png",
+    "actualSha256": "94d5536972e8d419285c1a1f94ef90b68104944a910aa249d804feb19ff69384"
+  },
+  {
+    "image": "019-read-retained-coordinates-age-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/019-read-retained-coordinates-age-1-fleet-pathfinder.png",
+    "actualSha256": "3540446661b5a58ac792079e9945c7e4d28b7291a1516b4f763440a6efed64d1"
+  },
+  {
+    "image": "019-read-retained-coordinates-age-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/019-read-retained-coordinates-age-2-contact-watcher.png",
+    "actualSha256": "d7823bc0c598220870c78493245ded2d76497371db587988cd63f7e9a4c12382"
+  },
+  {
+    "image": "020-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/020-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+    "actualSha256": "3540446661b5a58ac792079e9945c7e4d28b7291a1516b4f763440a6efed64d1"
+  },
+  {
+    "image": "020-read-retained-coordinates-facts-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/020-read-retained-coordinates-facts-2-contact-watcher.png",
+    "actualSha256": "d7823bc0c598220870c78493245ded2d76497371db587988cd63f7e9a4c12382"
+  },
+  {
+    "image": "021-reload-private-contact-history-1-fleet-pathfinder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/021-reload-private-contact-history-1-fleet-pathfinder.png",
+    "actualSha256": "afda59e6711bd79171475b95b6c96d1b245b91056b8154a9ccf06816cb9ceff9"
+  },
+  {
+    "image": "021-reload-private-contact-history-2-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/021-reload-private-contact-history-2-contact-watcher.png",
+    "actualSha256": "94d5536972e8d419285c1a1f94ef90b68104944a910aa249d804feb19ff69384"
+  },
+  {
+    "image": "022-return-to-chart-by-keyboard-1-contact-watcher.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-contacts/short/darwin-arm64/022-return-to-chart-by-keyboard-1-contact-watcher.png",
+    "actualSha256": "a9fd188e21ea6e3d0117c2a5de5ab4582d379ab9cb2054a7827edbdbd8c913e3"
+  }
+]
