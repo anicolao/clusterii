@@ -577,3 +577,39 @@ test("submitted route recovery requires the accessible matching fleet and preser
   expect(recoveredRouteDraft(cleared, original)).toBe(cleared);
   expect(recoveredRouteDraft(undefined, original)).toEqual([first.id]);
 });
+
+test("route memory and submitted recovery preserve newer intent across navigation and retirement", async () => {
+  const { scopeRouteDrafts, refreshRouteDrafts } = await import("../src/lib/route-draft");
+  const { fleetRecoveryTarget, recoveredRouteDraft } = await import("../src/lib/fleet-feedback");
+  const { c, id, first, second } = formed();
+  const saved = structuredClone(c);
+  const submitted = { gameId: c.id, id: "pending-route", action: {
+    kind: "fleet.route" as const, expectedRevision: c.revision, fleetId: id, waypoints: [first.id],
+  }};
+  const originalPayload = structuredClone(submitted);
+  const ownerView = campaignView(c, "p0"), peerView = campaignView(c, "p1");
+  let memory = scopeRouteDrafts({ account: null, campaigns: {} }, "p0");
+  memory.campaigns[c.id] = { [id]: recoveredRouteDraft(undefined, submitted.action.waypoints) };
+  // A newer invalid/partial edit must survive remount and repeated discovery.
+  const newer = [second.id, second.id];
+  memory.campaigns[c.id][id] = newer;
+  memory = scopeRouteDrafts(memory, "p0", [c.id]);
+  memory.campaigns[c.id] = refreshRouteDrafts(memory.campaigns[c.id], ownerView.military!.fleets.map(f => f.id));
+  expect(recoveredRouteDraft(memory.campaigns[c.id][id], submitted.action.waypoints)).toBe(newer);
+  const discarded: string[] = [];
+  memory.campaigns[c.id][id] = discarded;
+  expect(recoveredRouteDraft(memory.campaigns[c.id][id], submitted.action.waypoints)).toBe(discarded);
+  expect(submitted).toEqual(originalPayload);
+  expect(c).toEqual(saved); // Memory/navigation helpers cannot mutate canonical forces/orders.
+  expect(fleetRecoveryTarget(peerView, submitted)).toBeNull();
+  expect(scopeRouteDrafts(memory, "p1", [c.id]).campaigns).toEqual({});
+  expect(scopeRouteDrafts(memory, "p0", []).campaigns).toEqual({});
+  expect(scopeRouteDrafts(scopeRouteDrafts(memory, null), "p0").campaigns).toEqual({});
+  const retired = advance(orderFleet(c, { kind: "fleet.disband", expectedRevision: c.revision, fleetId: id }, "p0", "retire-memory", 0));
+  const retiredView = campaignView(retired, "p0");
+  memory.campaigns[c.id] = refreshRouteDrafts(memory.campaigns[c.id], retiredView.military!.fleets.map(f => f.id));
+  expect(memory.campaigns[c.id]).toEqual({});
+  expect(fleetRecoveryTarget(retiredView, submitted)).toBeNull();
+  expect(recoveredRouteDraft(newer, submitted.action.waypoints)).toBe(newer);
+  expect(submitted).toEqual(originalPayload);
+});
