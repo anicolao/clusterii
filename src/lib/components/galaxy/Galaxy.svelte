@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ResearchDraft } from "$lib/research-draft";
+  import type { ResearchDraft, RecoveredResearch } from "$lib/research-draft";
   import {
     refreshMarketDraft,
     type MarketAllocationDraft,
@@ -89,6 +89,7 @@
     recoveredTrade = null,
     recoveredConstruction = null,
     recoveredFleet = null,
+    recoveredResearch = null,
     accountId,
     onbuild,
     oncancel,
@@ -135,6 +136,7 @@
     recoveredTrade?: RecoveredTrade | null;
     recoveredConstruction?: RecoveredConstruction | null;
     recoveredFleet?: RecoveredFleetCommand | null;
+    recoveredResearch?: RecoveredResearch | null;
     accountId?: string;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
@@ -209,6 +211,19 @@
     void openPanel("construction");
   });
   let economy = $state(false);
+  let resumedResearch = "";
+  $effect(() => {
+    if (
+      !recoveredResearch ||
+      recoveredResearch.gameId !== view.id ||
+      recoveredResearch.accountId !== accountId ||
+      !view.economy?.research ||
+      resumedResearch === recoveredResearch.id
+    )
+      return;
+    resumedResearch = recoveredResearch.id;
+    void openPanel("economy");
+  });
   let exchanging = $state(false),
     tradeSelection = $state("");
   let resumedTrade = "";

@@ -1,6 +1,7 @@
 import { expect, test } from "bun:test";
 import {
   refreshResearchDraft,
+  restoreResearchDraft,
   scopeResearchDrafts,
 } from "../src/lib/research-draft";
 import { rules } from "../shared/rules";
@@ -64,4 +65,42 @@ test("research memory isolates campaigns/accounts and cannot restore revoked int
   expect(scopeResearchDrafts(scope, "bob").campaigns).toEqual({});
   expect(scopeResearchDrafts(scope, null).campaigns).toEqual({});
   expect(scope.campaigns.one.target).toBe("innovation");
+});
+
+test("submitted research recovery restores only the matching account campaign and preserves newer intent", () => {
+  const research = state();
+  const recovered = {
+    id: "original",
+    gameId: "one",
+    accountId: "alice",
+    target: "recruiting" as const,
+  };
+  const before = structuredClone({ research, recovered });
+  const restored = restoreResearchDraft(
+    undefined,
+    research,
+    recovered,
+    "alice",
+    "one",
+  );
+  expect(restored).toEqual({ baseline: "navigation", target: "recruiting" });
+  for (const [account, campaign] of [
+    ["bob", "one"],
+    ["alice", "two"],
+  ])
+    expect(
+      restoreResearchDraft(undefined, research, recovered, account, campaign)
+        .target,
+    ).toBe("navigation");
+  const newer = {
+    baseline: "navigation" as const,
+    target: "investing" as const,
+  };
+  expect(
+    restoreResearchDraft(newer, research, recovered, "alice", "one"),
+  ).toEqual(newer);
+  expect(
+    restoreResearchDraft(undefined, research, null, "alice", "one").target,
+  ).toBe("navigation");
+  expect({ research, recovered }).toEqual(before);
 });

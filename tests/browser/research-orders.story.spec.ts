@@ -115,7 +115,11 @@ test("Live research orders preserve choices and acknowledge switches", async ({
     };
   };
   let holdingResearch = false;
-  const heldResearch: { release: () => void }[] = [];
+  const heldResearch: {
+    active: () => boolean;
+    payload: { p: string; d: unknown };
+    release: () => void;
+  }[] = [];
   const newDevice = async (interrupt = false) => {
     const ctx = await browser.newContext({
       viewport: info.project.use.viewport,
@@ -146,6 +150,8 @@ test("Live research orders preserve choices and acknowledge switches", async ({
             frame.d.b?.d?.kind === "research.select"
           ) {
             heldResearch.push({
+              active: () => active,
+              payload: frame.d.b,
               release: () => {
                 expect(
                   active,
@@ -655,6 +661,53 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         },
       ],
     });
+    await story.step("reload-submitted-research", {
+      actor: aliases[0] + " · second device",
+      description:
+        "Reload while the original recruiting command is withheld. Recover its exact submitted target and acknowledgement panel; this is durable submitted intent, not an unsent draft.",
+      action: async () => {
+        await stale.reload();
+      },
+      acknowledgement: {
+        spec: "The authenticated outbox restores recruiting and reopens Economy while the original command is still unacknowledged.",
+        check: async () => {
+          await expect(
+            research(stale).getByRole("radio", { name: /^recruiting/ }),
+          ).toBeChecked();
+          await expect(
+            button(stale, "Awaiting acknowledgement…"),
+          ).toBeVisible();
+          await expect
+            .poll(async () => (await readDurable())?.id)
+            .toBe(durable!.id);
+          expect(await readDurable()).toEqual(durable);
+          await expect
+            .poll(() => heldResearch.filter((held) => held.active()).length)
+            .toBeGreaterThan(0);
+          for (const held of heldResearch) {
+            expect(held.payload.p.replace(/^\//, "")).toBe(
+              `commands/${id}/${uid}/${durable!.id}`,
+            );
+            expect(held.payload.d).toEqual({
+              kind: durable!.kind,
+              envelope: durable!.envelope,
+            });
+          }
+          expect((await canonical()).economy!.research[uid].orders).toEqual([
+            first,
+          ]);
+          expect(await identity(uid)).toEqual(identityBefore);
+        },
+      },
+      verifications: [privacy],
+      views: [
+        {
+          page: stale,
+          player: aliases[0] + " · recovered submission",
+          surface: "game",
+        },
+      ],
+    });
     await story.harness(
       "normal-motion-owner",
       "Use normal motion on the current device; outcome assertions remain identical and captures wait for finite motion.",
@@ -696,7 +749,9 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       "Release the exact held frames after the competing order is accepted. No synthesized request, extra write or rewritten payload.",
       async () => {
         holdingResearch = false;
-        for (const held of heldResearch) held.release();
+        const connected = heldResearch.filter((held) => held.active());
+        expect(connected.length).toBeGreaterThan(0);
+        for (const held of connected) held.release();
       },
     );
     await story.step("review-stale-rejection", {

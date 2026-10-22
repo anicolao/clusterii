@@ -39,3 +39,30 @@ export function refreshResearchDraft(
         : baseline,
   };
 }
+
+export interface RecoveredResearch {
+  id: string;
+  gameId: string;
+  accountId: string;
+  target: Technology;
+}
+// Only authenticated outbox recovery supplies this target. A newer unsent edit
+// remains the player's intent; recovery never changes the original command.
+export function restoreResearchDraft(
+  previous: ResearchDraft | undefined,
+  research: ResearchState,
+  recovered: RecoveredResearch | null,
+  accountId: string,
+  gameId: string,
+): ResearchDraft {
+  const current = refreshResearchDraft(previous, research);
+  if (
+    !recovered ||
+    recovered.accountId !== accountId ||
+    recovered.gameId !== gameId
+  )
+    return current;
+  return previous && previous.target !== previous.baseline
+    ? current
+    : { ...current, target: recovered.target };
+}

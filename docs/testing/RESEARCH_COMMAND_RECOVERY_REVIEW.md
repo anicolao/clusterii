@@ -1,0 +1,9 @@
+# Submitted research recovery
+
+Successor to #92. Source audit found that authenticated outbox recovery retained the submitted command but did not restore its research target or open Economy. This slice restores only the recovered account/campaign target after an authorized research projection arrives. A newer unsent edit survives. The original encrypted command identity and retry path are unchanged; no new storage or command is introduced. Account changes clear the recovery presentation, and inaccessible campaigns have no research view to restore.
+
+The existing live research story now reloads the second device while recruiting ingress remains withheld. It asserts restored target/panel, identical durable record, identical payload and logical path on all transmissions, no accepted extra order, unchanged identity and peer privacy. Only connected transport instances deliver the preserved request after the competing order; abandoned pre-reload sockets are not replayed. The original authoritative conflict/receipt and completion regressions remain.
+
+Three focused unit tests pass20 assertions; type/Svelte checks and story policy pass. Browser generation and independent visual/strict review remain pending. No baseline changed. Cap/zero-rate live evidence remains open: capped research requires real production to level10; a zero ledger requires actual loss of science-producing orbit. Do not inject either state into a player journey or equate paused production with zero-rate production. These remain recorded-development behavior, not human rules approval.
+
+Run the bounded live research-orders family after committing clean source and remeasuring disk. Retain predecessor100 baselines until separate review approves any changed recovery captures. Linux, hosted scheduling/authentication, original raster and historical missing profile processing remain open.
