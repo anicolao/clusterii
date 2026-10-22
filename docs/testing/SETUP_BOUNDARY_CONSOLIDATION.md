@@ -1,0 +1,26 @@
+# Setup boundaries and stale identity results
+
+Reviewer Prompt109 requests read-only consolidation and no browser/capture/probe reruns. Retained failure sources/specs remain in MOUNTED_SELECTION_REVIEW; the earlier accepted-create chain remains in ADMISSION_BOUNDARY_CONSOLIDATION. None is classified as a raster failure.
+
+| Retained case | Browser boundary (trace monotonic ms) | What is and is not observed |
+| --- | --- | --- |
+| Pre-fix phone8b7fa2a + reviewed story | profileKey starts66755.758; failed readiness ends77051.077; network status/time=-1 | No completed response before teardown, no identity save command. Runtime begins/finishes profileKey968.915ms after shutdown begins in the CLI log. That runtime duration does not measure browser transport or callback time. |
+| Current desktop9c23c22 | profileKey starts47675.978; failed readiness ends57517.439; status/time=-1 | Retrieval failure before save; not evidence of missing ingress receipt. |
+| Current large9c23c22 | profileKey starts74978.364; HTTP200 after1274.126ms; save assertion ends87346.453 still Sending your identity | Retrieval progressed and save was attempted; receipt/application callback was not visibly acknowledged within10s. A later runtime processProfile entered/transaction-settled message exists. This does not prove a receipt was absent from storage or identify delayed delivery/handling. |
+| Current short9c23c22 | profileKey110207.697 +7525.498ms HTTP200; later125685.272 +310.036ms HTTP200; faction assertion ends135786.349 | Final DOM is Awaiting acknowledgement, controls disabled; no campaignKey request recorded. This is create receipt waiting, **not** the accepted-create recovery state in #94/#100/#106. processCampaign finishes1015.145ms later in CLI output before shutdown; log interleaving is not a callback timestamp. |
+
+CLI durations, Playwright monotonic clocks and application callbacks are different measurements. The retained traces lack a correlated receipt listener callback and durable-retirement event for these save/create failures. The older ingress HTTP200 + profile404/receipt404 case remains separately unresolved; these failures must not be relabelled as that cause. No new diagnostics or browser reruns were added.
+
+## Actual identity path and distinct source defect
+
+Entry recovery awaits loadKey/profileKey before observeProfile subscribes. Account generation and profile-watch fences reject retired subscriptions at route level. On each profile snapshot, the service increments a serial and asynchronously unwraps/decrypts it. Success already checked active plus serial, but the error handler checked only active. A slower error from revision1 could therefore overwrite the UI after revision2 successfully loaded in the same still-active subscription. This is demonstrable callback ordering, not proof of any retained setup timeout's cause.
+
+The smallest successor uses a shared current-result delivery function for both success and failure, with the existing active/serial predicate. A stopped snapshot listener is also ignored before processing a missing snapshot, and stopped listener errors no longer publish. Current authorization/decryption failures remain actionable; no service response, crypto validation, command identity, receipt, draft or persistence behavior changes. UX-14/16 and milestone10 require obsolete results not to replace current recovered identity/error state. This correction serves that player-visible contract, rather than adding another diagnostic-only PR.
+
+Focused ordering verification controls only promise completion: newer success followed by old rejection, retired rejection/success and current failure. Two tests/seven assertions pass; these are adapter/unit evidence, not mounted or real-service acceptance. No browser test or candidate generation was executed. Type/Svelte/Functions checks passed (exit0, 0 Svelte errors/0 warnings); log `/tmp/cluster-profile-result-check.log`. Focused Biome check passed. Verification was unusually slow; elapsed time is not attributed to a proven host cause. Shared gallery/lab/art, four-size keyboard/reduced-motion, mounted account/late-error, Linux/KMS/hosted and release holds remain open.
+
+## Resource ownership and disposable cleanup
+
+Read-only process inspection before checks found no remaining task-owned browser cohort, emulator execution, preview server or compiler for the comparison. An unrelated TODO emulator process was present and untouched. The completed comparison and three-viewport logs both contain emulator shutdown sequences. No process/resource snapshot proves historical host-load causality.
+
+Before cleanup, every comparison trace/context/FAILED manifest and debug log was byte-compared with `/tmp/cluster-selection-before-failure`; the sole copied story exactly matched the committed source. `git worktree remove --force /tmp/cluster-selection-before` then removed only the owned disposable79MiB sparse checkout (including ignored build output and symlinks, without traversing shared dependencies). Original worktrees and `/tmp` failure/candidate directories remain. Disk after cleanup5387424KiB; no broad cache/artifact cleanup. Main supervisory history is carried forward unchanged.
