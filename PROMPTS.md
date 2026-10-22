@@ -545,3 +545,27 @@ Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stel
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:29 Toronto”.
 
 Reviewer continuation 2026-10-22 01:29 Toronto: pane idle after logging findings, clean0666727 on #66; queues empty. Resolve the observed phone map-label collision now as a small stacked successor to #66, rather than only documenting it. Reproduce Tupa/Tania Australis overlap in retained observation recovery scene. Implement deterministic readable label placement/selection priorities appropriate to the approved galaxy composition, preserving factual positions, visibility/privacy, selected/home-system discoverability and keyboard systems-list access. Do not mask labels just to pass snapshots. Add meaningful collision/edge/resize coverage and review actual phone/desktop/large/short scenes, reduced/normal motion where affected, then separately review changed candidates and exact comparisons with provenance. Preserve existing service assertions. Continue remaining IMPLEMENTATION_PLAN work while CI waits, with targeted resource/raster and exact-head preview follow-up when evidence changes. Carry checkpoints through01:29 into attributed PROMPTS/PROMPT_WORK and committed/pushed meta logs; no merge.
+
+## Prompt 65: Publication checkpoint reconciliation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:49 Toronto”.
+
+Reviewer checkpoint 2026-10-22 01:49 Toronto: #67 c4a5cac attached; reviewed scope/provenance and prior production diff, sampled phone collision resolved only. New #65 publish job119648365097 failed exact-head757d423 check with HTTP404 at05:44UTC, same symptom as #61; retain publication gate and diagnose existing Pages deployment at a natural boundary without duplicate publishes or weaker checks. Continue healthy navigation/shared-renderer verification. Carry main meta checkpoints through01:49 into committed/pushed logs and attributed continuations. Preserve evidence under low disk headroom; no merge.
+
+## Prompt 66: Linux candidate checkpoint
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:59 Toronto”.
+
+Reviewer CI finding 2026-10-22 01:59 Toronto: independently read completed #65 stories verify job119644812733 via jobs logs API (overall generation still queued). /tmp/cluster65-0158-failure.log shows every viewport29 passed and12 failed; all48 reported failures are missing reviewed Linux baselines, with no other Error entries beyond orchestration failures. This is evidence of improved bounded-cohort/setup execution in this run, not complete service or raster certification. Review matching-head generated Linux candidates when available; never promote failed verification output. Carry this and main checkpoints into committed/pushed attributed logs; continue current healthy work, no merge.
+
+## Prompt 67: Bounded render diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:19 Toronto”.
+
+Reviewer continuation 2026-10-22 03:19 Toronto: clean6c168d2 and queues empty; disk independently460MiB, so keep large runs/downloads blocked and preserve evidence. Continue useful bounded read-only diagnosis of #70 seven-pixel stellar-core mismatch using retained trace/camera/render lifecycle source and existing actual/expected artifacts. Identify a concrete hypothesis and smallest future verification, without changing baselines/tolerance or asserting an untested fix. Audit outstanding implementation/release gates against IMPLEMENTATION_PLAN and distinguish green skipped-generation jobs from real candidate evidence. Carry main checkpoint into attributed committed/pushed logs; no duplicate CI or merge. If no further low-disk work is meaningful, record the exact restart command and required evidence, then wait for disk headroom.
+
+## Prompt 68: Render telemetry continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:39 Toronto”.
+
+Reviewer continuation 2026-10-22 03:39 Toronto: disk independently recovered to17GiB; clean1c9a9a9 and empty queue. Resume the bounded #70 stellar-core diagnosis documented in ARRIVAL_RENDER_DIAGNOSIS.md now: preserve original evidence, add minimal correlated render/camera/depth telemetry, run isolated short verification and identify cause before changing production or baseline. Keep zero tolerance and all authoritative/privacy assertions. Then continue IMPLEMENTATION_PLAN in small stacked successors with independently reviewable evidence. #68 publish now failed; retained /tmp/cluster68-0338-preview.log for read-only deployment diagnosis at natural boundary. Inspect actual generation steps before claiming eligible Linux candidates; use deliberate separate matching-head generation/review, not failed verification output. Carry main checkpoints through03:39 into attributed PROMPTS/PROMPT_WORK and committed/pushed logs. No merge or duplicate queued prompts.

@@ -394,3 +394,21 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | R
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 76 exact contact captures, document source/privacy gates and distinguish skipped Linux generation from actual candidates while preserving supervisory history.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 69 to its predecessor and exact-head preview gate after publishing reviewed fleet-contact stories and preserved regressions.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Extend the preserved live travel story into owner and uninvolved-player arrival archives with named history acknowledgements, bounded reading and reload privacy.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve the passing phone archive probe and add visible proposed-rule/privacy disclosure, motion parity and keyboard focus restoration before four-size review.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Retain the arrival disclosure locator failure and scope its expanded details to the named summary parent without weakening visibility or privacy checks.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve the desktop disclosure edge-clipping failure, center its bounded reading position and attach before/after bounds while retaining full-visibility assertions.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve three passing candidate cohorts and the short control-edge failure; center only clipped reading targets and persist exact scroll-bound diagnostics.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review 48 new arrival archive candidates while retaining 112 unchanged images, persist fractional-scroll evidence and record recovered exact-head Pages checks.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive only three passing arrival stories, retain the short seven-pixel strict hold and resource blocker, and carry current supervisory checkpoints into the draft.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link draft PR 70 and its dependency, strict raster hold, resource limit and unverified preview without claiming complete four-viewport acceptance.
+
+Prompt 68 | 8b67979370916e4469fc162c407af05a190c26565e178208032fcacb3468ff98 | Preserve second isolated telemetry comparison and unresolved framebuffer/compositor cause gate
