@@ -412,3 +412,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | A
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link draft PR 70 and its dependency, strict raster hold, resource limit and unverified preview without claiming complete four-viewport acceptance.
 
 Prompt 68 | 8b67979370916e4469fc162c407af05a190c26565e178208032fcacb3468ff98 | Preserve second isolated telemetry comparison and unresolved framebuffer/compositor cause gate
+
+Prompt 69 | f022f357e20df6718495e650cb86540187a72985f07acf75ef51774f0ec1e854 | Correct participant-panel navigation using its actual expanded state and retain failed candidate traces

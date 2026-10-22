@@ -487,9 +487,13 @@ test("Selected history reaches only a consenting commander and survives reload",
       description:
         "The creator reviews removal of the consenting listener before committing it.",
       action: async () => {
-        await panel(owner)
-          .getByRole("button", { name: "Participants", exact: true })
-          .click();
+        const participants = panel(owner).getByRole("button", {
+          name: "Participants",
+          exact: true,
+        });
+        if ((await participants.getAttribute("aria-expanded")) !== "true")
+          await participants.click();
+        await expect(participants).toHaveAttribute("aria-expanded", "true");
         await button(owner, `Remove ${aliases[1]}`).click();
       },
       acknowledgement: {
