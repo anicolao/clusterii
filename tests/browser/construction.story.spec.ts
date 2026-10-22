@@ -362,6 +362,13 @@ for (const interrupted of [false, true])
               owner,
               help.getByRole("heading", { name: "Price and capacity" }),
             );
+            await help
+              .getByRole("heading", { name: "Price and capacity" })
+              .evaluate((el) => el.scrollIntoView({ block: "start" }));
+            await read(
+              owner,
+              help.locator("p").filter({ hasText: "Here, 1 completed" }),
+            );
           },
           acknowledgement: {
             spec: "The open chapter explains the real69-credit quote and8-place capacity without an order acknowledgement.",
@@ -376,6 +383,40 @@ for (const interrupted of [false, true])
           verifications: [...checks(), unchanged],
           views: views(),
         });
+        for (const [slug, heading, text] of [
+          [
+            "reservation",
+            "Reservation and progress",
+            "Choosing a development spends nothing",
+          ],
+          [
+            "refund",
+            "Cancellation and control",
+            "Cancellation is a separate order",
+          ],
+        ]) {
+          await story.step(`read-construction-${slug}`, {
+            actor: aliases[0],
+            description: `Read ${heading.toLowerCase()} before committing credits.`,
+            action: async () => {
+              await rail(owner);
+              await help
+                .getByRole("heading", { name: heading })
+                .evaluate((el) => el.scrollIntoView({ block: "start" }));
+              await read(owner, help.locator("p").filter({ hasText: text }));
+            },
+            acknowledgement: {
+              spec: `The ${heading.toLowerCase()} explanation is visible inside the bounded reading panel.`,
+              check: async () => {
+                await expect(
+                  help.locator("p").filter({ hasText: text }),
+                ).toBeVisible();
+              },
+            },
+            verifications: [...checks(), unchanged],
+            views: views(),
+          });
+        }
         await story.step("read-construction-outcomes", {
           actor: aliases[0],
           description:

@@ -472,3 +472,5 @@ Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | A
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Review contextual help candidates and preserve unrelated stellar expectations with supervisory checkpoints through 05:59.
 
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Archive all four exact contextual-help stories, register PR78 and carry CI classifications and reviewer checkpoints through 06:09.
+
+Prompt 74 | 672a0cb1d66404d4f9d4f7fe144ddf06f05a37290d1007dd5f6133f762580fc1 | Refine bounded help reading after phone candidate review and record Linux merge-tree provenance
