@@ -959,12 +959,34 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
         expect(settled.economy!.tick).toBe(2 + duration);
         expect(settled.economy!.nextTickAt).toBe(due + 900000);
         expect(settled.revision).toBe(resumed!.revision + duration);
-        // Fixed home developments have unchanged per-tick output; the neutral
-        // destination has no developments and adds no production on arrival.
-        productionFighters +=
-          departed!.economy!.ledger[uid].fighters * duration;
-        productionInfantry +=
-          departed!.economy!.ledger[uid].infantry * duration;
+        // Inspect immutable tick revisions, including fractional production carry.
+        for (let offset = 1; offset <= duration; offset++) {
+          const revision = resumed!.revision + offset;
+          const h = await db
+            .doc(`campaignStates/${id}/versions/${revision}`)
+            .get();
+          const frame: Campaign = await provider("mock").open(
+            h.get("envelope"),
+            h.get("canonicalKey"),
+            context(id, revision, "canonical", 1),
+          );
+          expect(frame.economy!.tick).toBe(2 + offset);
+          expect(frame.economy!.nextTickAt).toBe(
+            resumed!.economy!.nextTickAt + offset * 900000,
+          );
+          productionFighters += frame.economy!.ledger[uid].fighters;
+          productionInfantry += frame.economy!.ledger[uid].infantry;
+          expect(totals(frame)).toEqual({
+            fighters: totals(formed!).fighters + productionFighters,
+            infantry: totals(formed!).infantry + productionInfantry,
+          });
+          if (offset < duration) {
+            expect(frame.military!.fleets[fleetId].travel?.status).toBe(
+              "traveling",
+            );
+            expect(frame.military!.arrivals?.[uid] ?? []).toHaveLength(0);
+          }
+        }
         expect(
           await Promise.all([
             settleCampaignTicks(id, () => due),
