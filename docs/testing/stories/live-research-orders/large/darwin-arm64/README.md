@@ -2,7 +2,7 @@
 
 **Exact comparison passed.** large · darwin-arm64. Inventory: UX-06, UX-14, UX-16.
 
-Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. No completion, overflow or hosted acceptance is claimed.
+Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. Labelled leased tick delivery verifies completion, retained overflow and the following-tick Innovation effect; hosted scheduling and proposed rules remain unapproved.
 
 ## 1. Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.
 
@@ -265,3 +265,72 @@ Acknowledged outcome: Panel ownership returns without duplicating the error or s
 ### Viewpoint: Market envoy · second device
 
 [![Reopen Economy and review the preserved recruiting choice with a single in-panel remedy. — Market envoy · second device](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/026-reopen-conflict-panel-1-market-envoy-second-device.png)](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/026-reopen-conflict-panel-1-market-envoy-second-device.png)
+
+## 27. Advance only the existing demo domain clock and call the real leased settlement service. Competing and repeated delivery must settle each due tick once. No research levels, resources, receipts or private views are injected; this is not hosted Scheduler certification.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 28. Reload both commanders and read the actual retained science one funded tick before Innovation completes.
+
+Actor: **Market envoy**.
+
+Acknowledged outcome: Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt.
+
+- [x] Exact completion/overflow and next-tick rate match the authorized projection; the peer receives no owner order IDs or Innovation benefit.
+- [x] Both players can read their complete science ledger and progress after keyboard navigation inside the bounded Economy panel.
+
+### Viewpoint: Market envoy
+
+[![Reload both commanders and read the actual retained science one funded tick before Innovation completes. — Market envoy](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/028-recover-science-tick-14-1-market-envoy.png)](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/028-recover-science-tick-14-1-market-envoy.png)
+
+### Viewpoint: Independent investor
+
+[![Reload both commanders and read the actual retained science one funded tick before Innovation completes. — Independent investor](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/028-recover-science-tick-14-2-independent-investor.png)](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/028-recover-science-tick-14-2-independent-investor.png)
+
+## 29. Advance only the existing demo domain clock and call the real leased settlement service. Competing and repeated delivery must settle each due tick once. No research levels, resources, receipts or private views are injected; this is not hosted Scheduler certification.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 30. Reload the completed Innovation level: its cost is spent once, excess science remains, and this tick used the old production rate.
+
+Actor: **Market envoy**.
+
+Acknowledged outcome: Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt.
+
+- [x] Exact completion/overflow and next-tick rate match the authorized projection; the peer receives no owner order IDs or Innovation benefit.
+- [x] Both players can read their complete science ledger and progress after keyboard navigation inside the bounded Economy panel.
+
+### Viewpoint: Market envoy
+
+[![Reload the completed Innovation level: its cost is spent once, excess science remains, and this tick used the old production rate. — Market envoy](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/030-recover-science-tick-15-1-market-envoy.png)](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/030-recover-science-tick-15-1-market-envoy.png)
+
+### Viewpoint: Independent investor
+
+[![Reload the completed Innovation level: its cost is spent once, excess science remains, and this tick used the old production rate. — Independent investor](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/030-recover-science-tick-15-2-independent-investor.png)](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/030-recover-science-tick-15-2-independent-investor.png)
+
+## 31. Advance only the existing demo domain clock and call the real leased settlement service. Competing and repeated delivery must settle each due tick once. No research levels, resources, receipts or private views are injected; this is not hosted Scheduler certification.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 32. Reload the next confirmed tick: Innovation now raises science output while the other commander's navigation remains private and independent.
+
+Actor: **Market envoy**.
+
+Acknowledged outcome: Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt.
+
+- [x] Exact completion/overflow and next-tick rate match the authorized projection; the peer receives no owner order IDs or Innovation benefit.
+- [x] Both players can read their complete science ledger and progress after keyboard navigation inside the bounded Economy panel.
+
+### Viewpoint: Market envoy
+
+[![Reload the next confirmed tick: Innovation now raises science output while the other commander's navigation remains private and independent. — Market envoy](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/032-recover-science-tick-16-1-market-envoy.png)](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/032-recover-science-tick-16-1-market-envoy.png)
+
+### Viewpoint: Independent investor
+
+[![Reload the next confirmed tick: Innovation now raises science output while the other commander's navigation remains private and independent. — Independent investor](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/032-recover-science-tick-16-2-independent-investor.png)](../../../../../../tests/browser/story-baselines/live-research-orders/large/darwin-arm64/032-recover-science-tick-16-2-independent-investor.png)

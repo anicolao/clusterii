@@ -34,3 +34,7 @@ bun run test:stories:generate > /tmp/cluster-research-completion-generation.log 
 ```
 
 Inspect the named tick14/15/16 owner and peer views, full science-ledger/progress containment and receipt/lease assertions. Preserve failures. Obtain independent matching-source review before baseline promotion and strict comparison; do not inherit earlier live76 approval for added completion views. Preview and latest-head CI are separate gates.
+
+## Approved Darwin strict result
+
+On clean `f4681f2`, four journeys passed in2.9 minutes with100 exact comparisons: phone31.6s, desktop31.6s, large1.2m, short28.9s. Log `/tmp/cluster-research-completion-strict.log`. Ordered stories are archived under `docs/testing/stories/live-research-orders`; archive checks decoded pixels against reviewed baselines. Real leased completion/overflow/effect timing, competing/repeated delivery, original receipts and private peer assertions pass. This closes only the reviewed Darwin family. Latest CI remains pending; no new ingress diagnosis or Linux/hosted/rules acceptance follows.
