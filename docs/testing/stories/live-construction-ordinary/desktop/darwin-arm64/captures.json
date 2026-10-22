@@ -2,91 +2,141 @@
   {
     "image": "010-inspect-development-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/010-inspect-development-1-builder-envoy.png",
-    "actualSha256": "8bbb79778f48f770a3aee86dc3fa43d7f524bd6077689a850cc08f685de8b974"
+    "actualSha256": "dc8fa776e3ecee6d87759109b701ebba759212df52814ea84e05abcb888335dd"
   },
   {
     "image": "010-inspect-development-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/010-inspect-development-2-independent-builder.png",
-    "actualSha256": "877504e09ae73dae9784d749b76f9ba1d93048c4ef6810088cf6541271018ca2"
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "011-reserve-build-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/011-reserve-build-1-builder-envoy.png",
-    "actualSha256": "a4e53a39991c3554a61dbe700663447f172bef3410126858097dec56591fbea1"
+    "image": "011-read-construction-price-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/011-read-construction-price-1-builder-envoy.png",
+    "actualSha256": "28356e3cd02ee332bb6f63dbf0a34f6c55173f62b5dc9979d5e259c1256b0c19"
   },
   {
-    "image": "011-reserve-build-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/011-reserve-build-2-independent-builder.png",
-    "actualSha256": "877504e09ae73dae9784d749b76f9ba1d93048c4ef6810088cf6541271018ca2"
+    "image": "011-read-construction-price-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/011-read-construction-price-2-independent-builder.png",
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "012-reload-reservation-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/012-reload-reservation-1-builder-envoy.png",
-    "actualSha256": "face62ab29fb8cc37e7113518df0114114b5e73f1c156fc663e895aef55c725f"
+    "image": "012-read-construction-reservation-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/012-read-construction-reservation-1-builder-envoy.png",
+    "actualSha256": "b647f99f325ce09c210a362bec06b1f44a44e1761f36fa7482f8b417c2ca1fe6"
   },
   {
-    "image": "012-reload-reservation-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/012-reload-reservation-2-independent-builder.png",
-    "actualSha256": "877504e09ae73dae9784d749b76f9ba1d93048c4ef6810088cf6541271018ca2"
+    "image": "012-read-construction-reservation-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/012-read-construction-reservation-2-independent-builder.png",
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "014-completed-build-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/014-completed-build-1-builder-envoy.png",
-    "actualSha256": "a1fa4c0562ac4e5364a0dd8a566d688d2de6c747c749ec7e52adc06a2f2a0624"
+    "image": "013-read-construction-refund-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/013-read-construction-refund-1-builder-envoy.png",
+    "actualSha256": "6b798585bb15150a43f36ed5d613f101047167aa72cdf1d76f9fdde620e16825"
   },
   {
-    "image": "014-completed-build-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/014-completed-build-2-independent-builder.png",
-    "actualSha256": "057f35f19903c72d32f0d140dc0cac1f81737732971994c6d00307d8b43e65b3"
+    "image": "013-read-construction-refund-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/013-read-construction-refund-2-independent-builder.png",
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "015-reserve-cancellable-base-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/015-reserve-cancellable-base-1-builder-envoy.png",
-    "actualSha256": "3a59a3f8da19c4db24b9c2c9f90aa2a20165f7e3eb119370e789b5ab6c3c8235"
+    "image": "014-read-construction-outcomes-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+    "actualSha256": "6b798585bb15150a43f36ed5d613f101047167aa72cdf1d76f9fdde620e16825"
   },
   {
-    "image": "015-reserve-cancellable-base-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/015-reserve-cancellable-base-2-independent-builder.png",
-    "actualSha256": "057f35f19903c72d32f0d140dc0cac1f81737732971994c6d00307d8b43e65b3"
+    "image": "014-read-construction-outcomes-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/014-read-construction-outcomes-2-independent-builder.png",
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "016-cancel-base-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-cancel-base-1-builder-envoy.png",
-    "actualSha256": "09ecde9ddb901cb2f649595ca146b6b824f6d27ed6263ed0c8f2d785601ba98e"
+    "image": "015-close-construction-rules-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/015-close-construction-rules-1-builder-envoy.png",
+    "actualSha256": "d752f0cb2c4cadc520bd638d61e2fa99e2a020e53447f1588548a6f00ce8a483"
   },
   {
-    "image": "016-cancel-base-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-cancel-base-2-independent-builder.png",
-    "actualSha256": "057f35f19903c72d32f0d140dc0cac1f81737732971994c6d00307d8b43e65b3"
+    "image": "015-close-construction-rules-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/015-close-construction-rules-2-independent-builder.png",
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "018-cancelled-base-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/018-cancelled-base-1-builder-envoy.png",
-    "actualSha256": "aa4020bcf9afea990ae95ce8e10f3951b478239679d6091a7cc1be552e1b6dc4"
+    "image": "016-reserve-build-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-reserve-build-1-builder-envoy.png",
+    "actualSha256": "4aef50459944e3beeaa4b5b83bb4c36b77dc6d95675487662097d7edefa3baba"
   },
   {
-    "image": "018-cancelled-base-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/018-cancelled-base-2-independent-builder.png",
-    "actualSha256": "dbffd6e858d169340988d44669f8c365c30d9991801ddf9cb63c06899488b9ce"
+    "image": "016-reserve-build-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-reserve-build-2-independent-builder.png",
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "019-recover-settled-outcome-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/019-recover-settled-outcome-1-builder-envoy.png",
-    "actualSha256": "93b70f8bfa71d4ef84a1766d633eccd723be3b376beee0525bf8f13ee6dd4cd8"
+    "image": "017-reload-reservation-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/017-reload-reservation-1-builder-envoy.png",
+    "actualSha256": "910ed5bd22c85bb2ba05c2d8d3eb33113fdd0c2dcec6a9d1a693e2b73bd012b1"
   },
   {
-    "image": "019-recover-settled-outcome-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/019-recover-settled-outcome-2-independent-builder.png",
-    "actualSha256": "dbffd6e858d169340988d44669f8c365c30d9991801ddf9cb63c06899488b9ce"
+    "image": "017-reload-reservation-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/017-reload-reservation-2-independent-builder.png",
+    "actualSha256": "086e36047e37146221b3726bce6fd7cd5b10b93d3283d546d80b470dabdc5918"
   },
   {
-    "image": "020-keyboard-return-1-builder-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/020-keyboard-return-1-builder-envoy.png",
+    "image": "019-completed-build-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/019-completed-build-1-builder-envoy.png",
+    "actualSha256": "3ef0ded617020102400673149c78c632422de11858017e5326193822a40dd6b1"
+  },
+  {
+    "image": "019-completed-build-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/019-completed-build-2-independent-builder.png",
+    "actualSha256": "695ffb4827aa6c4dfd8af1ee4d310e85cde74d4b254e28ff162f7a0ac1239630"
+  },
+  {
+    "image": "020-reserve-cancellable-base-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/020-reserve-cancellable-base-1-builder-envoy.png",
+    "actualSha256": "1352e24f0b45f6f5fd60faf84930495cf8a424593b146e3c6dec04e3146ab93f"
+  },
+  {
+    "image": "020-reserve-cancellable-base-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/020-reserve-cancellable-base-2-independent-builder.png",
+    "actualSha256": "695ffb4827aa6c4dfd8af1ee4d310e85cde74d4b254e28ff162f7a0ac1239630"
+  },
+  {
+    "image": "021-cancel-base-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/021-cancel-base-1-builder-envoy.png",
+    "actualSha256": "b8bb5c4ceebd686b6f77b7ab55afe9e597d49a08d02a3040d8d3e1c94f015537"
+  },
+  {
+    "image": "021-cancel-base-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/021-cancel-base-2-independent-builder.png",
+    "actualSha256": "695ffb4827aa6c4dfd8af1ee4d310e85cde74d4b254e28ff162f7a0ac1239630"
+  },
+  {
+    "image": "023-cancelled-base-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/023-cancelled-base-1-builder-envoy.png",
+    "actualSha256": "ccd294e0d6e16ac63d3c362c6857aaec285492bcecb0b7bad214c3f8b2a415e8"
+  },
+  {
+    "image": "023-cancelled-base-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/023-cancelled-base-2-independent-builder.png",
+    "actualSha256": "197da175bab417b8d9774f12ce3965d437b6db7bf8079265580279b249efe900"
+  },
+  {
+    "image": "024-recover-settled-outcome-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/024-recover-settled-outcome-1-builder-envoy.png",
+    "actualSha256": "602549f888b633126f50d1c6b6c00400026c8b681ef5c5b4adb8c51baeee782c"
+  },
+  {
+    "image": "024-recover-settled-outcome-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/024-recover-settled-outcome-2-independent-builder.png",
+    "actualSha256": "197da175bab417b8d9774f12ce3965d437b6db7bf8079265580279b249efe900"
+  },
+  {
+    "image": "025-keyboard-return-1-builder-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/025-keyboard-return-1-builder-envoy.png",
     "actualSha256": "1b2f5d8852301ac4ed83f3c13c1925609be1c69deaf5a51d486ba9d8f511e42d"
   },
   {
-    "image": "020-keyboard-return-2-independent-builder.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/020-keyboard-return-2-independent-builder.png",
-    "actualSha256": "dbffd6e858d169340988d44669f8c365c30d9991801ddf9cb63c06899488b9ce"
+    "image": "025-keyboard-return-2-independent-builder.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/025-keyboard-return-2-independent-builder.png",
+    "actualSha256": "197da175bab417b8d9774f12ce3965d437b6db7bf8079265580279b249efe900"
   }
 ]

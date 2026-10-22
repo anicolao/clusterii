@@ -1646,3 +1646,17 @@ Agent healthy at b861641 on contextual help: four candidate journeys200 captures
 Exact handoff:
 
 Reviewer continuation 2026-10-22 06:19 Toronto: #78 a2d0d2f attached; clean idle, no queued input. Continue remaining IMPLEMENTATION_PLAN work as a small stacked successor on #78. Reconcile the documented remaining production gaps and choose the next approved player-visible capability (including remaining contextual help/menu/settings scope if appropriate); do not treat one route chapter or passing successor pixels as full completion or a raster fix. Retain real acknowledged actions, user-story TestStepHelper evidence, privacy/recovery/concurrency and four-size keyboard/reduced-motion coverage as applicable. Diagnose the single existing long-running Linux candidate job from available progress/timeout evidence without duplicating generation; only independently reviewed eligible candidates can be promoted. Carry checkpoints through06:19 into reviewer-attributed PROMPTS and committed/pushed continuation logs. Preserve independent visual/hosted and original raster holds; never merge.
+
+
+## Reviewer progress — 2026-10-22 06:29 Toronto
+
+Agent healthy at e600bf0 implementing contextual construction guidance plus corrected market-focus copy on #78. Independently read ConstructionRules and story invariants: real shared price/capacity values, canonical and both private snapshots preserved, selected camp retained before real construction journey. Types pass zero errors/warnings; four-size candidates still pending. No visual approval or new PR yet. No duplicate prompt/interruption.
+
+Explicit Linux generation job119705315798 completed success. Independently checked artifact12418233598 illustrated-stories-generate-linux-arm64 (4,440,214,304 bytes) exists and is unexpired, distinct from failed verification artifact12415154158. Agent documented89-minute actual generation and43 stories per viewport, frozen417bb62 source; uses bounded metadata inspection under7.3GiB disk headroom. No candidates approved/promoted and older-source evidence must not overwrite newer changes. #78 publish now green. Carry checkpoint through committed/pushed attributed logs at natural boundary. Independent visual/hosted, original raster and full-release gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 06:39 Toronto
+
+Agent healthy at37a3041 reviewing construction-help candidates:200 captures,40 added144 changed16 identical, with no unrelated changed frames reported. Independently reviewed added named reservation/refund reading steps and phone013 refund candidate: complete cancellation/control copy readable inside bounded panel, price69/balance131 and Build action remain visible. Scoped candidate review only; exact verification/full visual acceptance pending. No intervention or duplicate prompt.
+
+Agent completed bounded Linux metadata audit:344 files for172 passed generation stories at verified frozen merge tree, identifies changed specs and explicitly requires component-source compatibility before any promotion. No images promoted. #78 CI still running, #76 application now green; no new actionable failure. Carry checkpoint into committed/pushed attributed logs at natural boundary; preserve original raster/independent Linux/hosted/full-release holds. No merge.
