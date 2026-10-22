@@ -4,6 +4,7 @@ import { emulatorAsset } from "./browser/story-helpers/emulator-auth-assets";
 import { stableImage } from "./browser/story-helpers/stable-image";
 import { captureReady } from "./browser/story-helpers/capture-ready";
 import { assertScreenFit } from "./browser/story-helpers/screen-fit";
+import { textLayout } from "./browser/story-helpers/text-layout";
 // Isolated tests of the browser-test tooling, not player/service acceptance.
 let browser: Browser;
 beforeAll(async () => {
@@ -218,4 +219,41 @@ test("explicit animation inspection validates exact paused count, time and durat
       "undeclared paused animation",
     );
   });
+});
+
+test("identity raster diagnostics exclude galaxy text, retain identity ancestry and report bounds", async () => {
+  await fixture(
+    `<section aria-label="Galaxy">${"<span>Stellar label</span>".repeat(2000)}</section><section aria-label="Your identity" style="position:fixed;top:0"><p>The face your allies trust. The name your rivals remember.</p></section>`,
+    async (page) => {
+      const before = await page.screenshot();
+      const evidence = await page.evaluate(textLayout);
+      expect(evidence.scope).toBe("identity-raster");
+      expect(evidence.applicable).toBe(true);
+      expect(evidence.truncated).toBe(false);
+      expect(evidence.visited).toBe(1);
+      expect(evidence.texts).toHaveLength(1);
+      expect(evidence.texts[0].text).toBe(
+        "The face your allies trust. The name your rivals remember.",
+      );
+      expect(evidence.texts[0].ancestors.length).toBeGreaterThan(2);
+      expect(await page.screenshot()).toEqual(before);
+      await page
+        .locator('section[aria-label="Your identity"]')
+        .evaluate((el) => el.remove());
+      expect(await page.evaluate(textLayout)).toMatchObject({
+        applicable: false,
+        visited: 0,
+        texts: [],
+        truncated: false,
+      });
+    },
+  );
+  await fixture(
+    `<section aria-label="Your identity" style="position:fixed;top:0">${"<span style='position:absolute;top:0'>Visible</span>".repeat(200)}</section>`,
+    async (page) => {
+      const evidence = await page.evaluate(textLayout);
+      expect(evidence.texts).toHaveLength(128);
+      expect(evidence.truncated).toBe(true);
+    },
+  );
 });

@@ -1338,3 +1338,28 @@ Reviewer continuation 2026-10-21 22:10 Toronto: #62 published cleanff1d616 on #6
 Checkout still cleanff1d616; no progress since #62. Pane showed22:10 handoff still in input with no Working indicator. Submitted existing text once using Enter, without pasting another prompt; subsequent capture confirms Working and cleared input. Prior report of directing agent did not establish execution. No new delegated instruction; exact existing22:10 handoff remains governing continuation.
 
 GitHub reachable again: #51 all checks green; #53/#54/#60 application green; #58/#61/#62 story verification running. #52 verify failed two known1994-pixel short identity frames (identity-validation001-sign-in and identity-keyboard-return004-sign-in); job119554354070 logs retained /tmp/cluster52-2325-failure.log. Generation green does not resolve raster defect. Carry checkpoint into committed/pushed logs. Full independent visual/Linux/current-preview/raster/release gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-21 23:35 Toronto
+
+Agent actively progressing on feat/travel-pause-catchup-stories at711f00a; new story and demo maintenance clock scope, candidate run ongoing with phone failure under investigation. Independently read immutable-revision conservation checks: actual per-tick production including fractional carry, expected schedule progression, no early arrival, and repeated concurrent delivery no-op. No exact/visual acceptance claimed. Agent already reading failure evidence, so no duplicate handoff or interruption.
+
+#55 application now green; #60 story verification running alongside #58/#61/#62. No new completed failure beyond recorded #52 raster recurrence. Carry checkpoint into committed/pushed logs. Full visual/Linux/current-preview/raster/release gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-21 23:46 Toronto
+
+Agent stopped with workspace routing discovery timeout at cleaneeb84e6; no healthy work to interrupt. Independently reviewed stationed-count correction: travelling fleet excluded from origin count, original fleet still selected through zero-stationed control; arrival reading moved into named player step. Separate4K ten-second step failure under diagnosis, no timeout/tolerance relaxation. Resume existing work once. CI no newly completed failure; full release gates open.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-21 23:46 Toronto: pane stopped with workspace routing discovery timed out at cleaneeb84e6. Resume the existing pause/catch-up slice and trace diagnosis; do not restart or duplicate work. Reviewed correction to zero stationed fleets after departure, retaining selection of the actual traveling fleet. Diagnose the 4K ten-second step using completed trace timing and bounded diagnostic scope; preserve assertions, exact pixels and original failure artifacts. Finish candidate review, strict comparison and appropriate regressions before publication. Carry checkpoints through23:46 into attributed logs and commit/push. Current CI has no newly completed failure beyond recorded #52 raster recurrence. No merge; retain full independent/Linux/preview gates.
+
+
+## Reviewer progress — 2026-10-22 00:09 Toronto
+
+Agent resumed and is actively diagnosing13–15sec text-layout diagnostic cost, with log edits in progress. No interruption. New CI failures require separate triage; queued finding once for natural boundary. Full release gates remain open.
+
+Exact queued handoff:
+
+Reviewer finding 2026-10-22 00:09 Toronto (queue after current diagnostic): #58 and #62 Linux verification completed with36 and70 failures. Logs retained /tmp/cluster58-0008-failure.log and /tmp/cluster62-0008-failure.log from jobs119568677251/119594903701. These include missing reviewed Linux baselines AND additional admission/identity/maintenance locator timeouts plus function socket hangups; do not classify all as baseline or known raster failures. At a natural boundary inspect first causal service/trace failure and compare generation artifacts; review/promote only new candidate families with matching provenance, retain strict verification. No broad duplicate rerun or timeout relaxation. Carry this attributed finding and checkpoint into committed/pushed logs; no merge.
