@@ -409,3 +409,7 @@ The shared GameMenu/PresentationSettings now controls real feedback/CSS motion a
 ## Lower galaxy detail (UX-03/15/16)
 
 The shared settings checkbox controls actual Scene dust/reference-ring creation and texture lifecycle; authorized stars, labels, ownership, contacts, fleets, paths and keyboard/list actions are unchanged. Three preference/Three texture-lifecycle tests provide source-level evidence only. Pending: same campaign/selection/draft across toggles and reload, cross-mode fact/action equivalence, four-size keyboard/Escape/focus and shared gallery/lab captures, measured GPU work. No browser or capture run while setup holds remain. [Renderer audit and CI phase triage](../design/LOCAL_DETAIL_REVIEW.md).
+
+## Shared local presentation settings
+
+`local-settings.story.spec.ts` covers UX-15/16 through the actual gallery menu and shared feedback lab: keyboard modal ownership, both local preferences, reload, OS precedence and focus restoration. Source prepared for one isolated four-size candidate run; rendered acceptance and independent baseline review remain pending. No identity, campaign or emulator setup; galaxy rail fit, factual scene equivalence, authoritative actions and performance remain outside this evidence. See [review plan](SHARED_SETTINGS_REVIEW.md).
