@@ -480,6 +480,174 @@ test("Selected history reaches only a consenting commander and survives reload",
       ],
       views: [view(1)],
     });
+
+    const revokedRevision = (await canonical()).revision;
+    await story.step("review-removal", {
+      actor: aliases[0],
+      description:
+        "The creator reviews removal of the consenting listener before committing it.",
+      action: async () => {
+        await panel(owner)
+          .getByRole("button", { name: "Participants", exact: true })
+          .click();
+        await button(owner, `Remove ${aliases[1]}`).click();
+      },
+      acknowledgement: {
+        spec: "The removal confirmation is available without changing membership.",
+        check: async () => {
+          await expect(button(owner, "Confirm remove")).toBeVisible();
+          expect((await canonical()).revision).toBe(revokedRevision);
+        },
+      },
+      verifications: [noErrors, outsiderPrivate],
+      views: [view(0)],
+    });
+    await story.step("remove-current-access", {
+      actor: aliases[0],
+      description:
+        "Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends.",
+      action: async () => {
+        await open(guest);
+        await chooseRoom(guest);
+        await button(owner, "Confirm remove").focus();
+        await owner.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The listener sees authoritative access-ended feedback and cannot compose a new message.",
+        check: async () => {
+          await expect(panel(guest)).toContainText(
+            "Your current access to this conversation has ended",
+          );
+          await expect(
+            panel(guest).getByLabel("Message", { exact: true }),
+          ).toHaveCount(0);
+        },
+      },
+      verifications: [
+        noErrors,
+        outsiderPrivate,
+        {
+          spec: "Exactly one revision removes the listener without expanding previous history.",
+          check: async () => {
+            const state = await canonical();
+            expect(state.revision).toBe(revokedRevision + 1);
+            const room = Object.values(state.diplomacy.rooms)[0] as {
+              members: string[];
+            };
+            expect(room.members).not.toContain(state.seats[1].uid);
+            await expect(panel(guest)).toContainText(selected);
+            await expect(panel(guest)).not.toContainText(secret);
+          },
+        },
+      ],
+      views: [view(0), view(1), view(2)],
+    });
+    const absentMessage =
+      "The new meeting point is private during your absence.";
+    const revokedPrivate = {
+      spec: "Removed and outsider recipients receive no post-removal message in UI or serialized views.",
+      check: async () => {
+        for (const seat of [1, 2]) {
+          await expect(panel(pages[seat])).not.toContainText(absentMessage);
+          expect(JSON.stringify(await published(seat))).not.toContain(
+            absentMessage,
+          );
+        }
+      },
+    };
+    await story.step("message-after-removal", {
+      actor: aliases[0],
+      description:
+        "The creator sends a new private message after removal; neither the former member nor outsider receives it.",
+      action: async () => {
+        await button(owner, "Participants").click();
+        await panel(owner)
+          .getByLabel("Message", { exact: true })
+          .fill(absentMessage);
+        await button(owner, "Send message").click();
+      },
+      acknowledgement: {
+        spec: "Message sent acknowledges the command and the creator can read its text.",
+        check: async () => {
+          await expect(
+            panel(owner)
+              .getByRole("group", { name: "Conversation acknowledgement" })
+              .getByRole("status"),
+          ).toHaveText("Message sent.");
+          await expect(
+            panel(owner).getByRole("list", { name: "Authorized messages" }),
+          ).toContainText(absentMessage);
+        },
+      },
+      verifications: [
+        noErrors,
+        outsiderPrivate,
+        revokedPrivate,
+        {
+          spec: "The post-removal message commits exactly once.",
+          check: async () =>
+            expect((await canonical()).revision).toBe(revokedRevision + 2),
+        },
+      ],
+      views: [view(0), view(1), view(2)],
+    });
+    await story.step("recover-ended-access", {
+      actor: aliases[1],
+      description:
+        "Reload the former member's session. Earlier selected history remains readable; new private messages remain unavailable.",
+      action: async () => {
+        await guest.reload();
+        await open(guest);
+        await chooseRoom(guest);
+      },
+      acknowledgement: {
+        spec: "Recovered conversation explains that current access has ended.",
+        check: async () =>
+          expect(panel(guest)).toContainText(
+            "Your current access to this conversation has ended",
+          ),
+      },
+      verifications: [
+        noErrors,
+        outsiderPrivate,
+        revokedPrivate,
+        {
+          spec: "Reload preserves history boundaries and causes no command revision.",
+          check: async () => {
+            expect((await canonical()).revision).toBe(revokedRevision + 2);
+            await expect(panel(guest)).toContainText(selected);
+            await expect(panel(guest)).not.toContainText(secret);
+            await expect(
+              panel(guest).getByLabel("Message", { exact: true }),
+            ).toHaveCount(0);
+          },
+        },
+      ],
+      views: [view(1), view(2)],
+    });
+    await story.step("leave-ended-conversation", {
+      actor: aliases[1],
+      description:
+        "Escape returns the former member to the galaxy with keyboard focus restored.",
+      action: async () => {
+        await guest.keyboard.press("Escape");
+      },
+      acknowledgement: {
+        spec: "Focus returns to Conversations.",
+        check: async () =>
+          expect(
+            guest.getByRole("button", { name: /^Conversations(?: · New)?$/ }),
+          ).toBeFocused(),
+      },
+      verifications: [
+        noErrors,
+        {
+          spec: "No private panel remains visible.",
+          check: async () => expect(panel(guest)).not.toBeVisible(),
+        },
+      ],
+      views: [view(1)],
+    });
   } finally {
     for (const ctx of contexts) await ctx.close();
   }
