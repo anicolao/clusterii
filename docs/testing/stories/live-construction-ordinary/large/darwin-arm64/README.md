@@ -297,7 +297,43 @@ Acknowledged outcome: 75 over allocation is explained and Apply focus stays disa
 
 [![Increase camp focus before redistributing the other points; the invalid total prevents sending. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/022-review-invalid-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/022-review-invalid-focus-2-independent-builder.png)
 
-## 23. Allocate all100 points to training camps without sending an order yet.
+## 23. Clear the market field while redistributing points; a blank partial edit remains unsent.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The blank market field is preserved and Apply focus is disabled.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Clear the market field while redistributing points; a blank partial edit remains unsent. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-leave-partial-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-leave-partial-focus-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Clear the market field while redistributing points; a blank partial edit remains unsent. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-leave-partial-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-leave-partial-focus-2-independent-builder.png)
+
+## 24. Leave the allocation instrument and galaxy panel, then recover the same unsent invalid allocation using the keyboard.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The blank market and100 camp points return intact and cannot be sent.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Leave the allocation instrument and galaxy panel, then recover the same unsent invalid allocation using the keyboard. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-restore-invalid-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-restore-invalid-focus-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Leave the allocation instrument and galaxy panel, then recover the same unsent invalid allocation using the keyboard. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-restore-invalid-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-restore-invalid-focus-2-independent-builder.png)
+
+## 25. Allocate all100 points to training camps without sending an order yet.
 
 Actor: **Builder envoy**.
 
@@ -309,13 +345,13 @@ Acknowledged outcome: Exactly100 points enables Apply focus while the current al
 
 ### Viewpoint: Builder envoy
 
-[![Allocate all100 points to training camps without sending an order yet. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-review-market-draft-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-review-market-draft-1-builder-envoy.png)
+[![Allocate all100 points to training camps without sending an order yet. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-review-market-draft-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-review-market-draft-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Allocate all100 points to training camps without sending an order yet. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-review-market-draft-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-review-market-draft-2-independent-builder.png)
+[![Allocate all100 points to training camps without sending an order yet. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-review-market-draft-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-review-market-draft-2-independent-builder.png)
 
-## 24. Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick.
+## 26. Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick.
 
 Actor: **Builder envoy**.
 
@@ -327,13 +363,13 @@ Acknowledged outcome: Focus order accepted names application tick1 and dividends
 
 ### Viewpoint: Builder envoy
 
-[![Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-accept-market-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-accept-market-focus-1-builder-envoy.png)
+[![Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-accept-market-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-accept-market-focus-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-accept-market-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-accept-market-focus-2-independent-builder.png)
+[![Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-accept-market-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-accept-market-focus-2-independent-builder.png)
 
-## 25. Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it.
+## 27. Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it.
 
 Actor: **Builder envoy**.
 
@@ -345,13 +381,13 @@ Acknowledged outcome: The camp allocation and original application tick survive 
 
 ### Viewpoint: Builder envoy
 
-[![Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-recover-market-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-recover-market-focus-1-builder-envoy.png)
+[![Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-recover-market-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-recover-market-focus-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-recover-market-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-recover-market-focus-2-independent-builder.png)
+[![Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-recover-market-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-recover-market-focus-2-independent-builder.png)
 
-## 26. Return through economy to the preserved home development decision.
+## 28. Return through economy to the preserved home development decision.
 
 Actor: **Builder envoy**.
 
@@ -364,13 +400,13 @@ Acknowledged outcome: Training camp still costs69 with131 remaining after reserv
 
 ### Viewpoint: Builder envoy
 
-[![Return through economy to the preserved home development decision. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-return-to-development-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-return-to-development-1-builder-envoy.png)
+[![Return through economy to the preserved home development decision. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-return-to-development-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-return-to-development-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Return through economy to the preserved home development decision. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-return-to-development-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/026-return-to-development-2-independent-builder.png)
+[![Return through economy to the preserved home development decision. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-return-to-development-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-return-to-development-2-independent-builder.png)
 
-## 27. Read the authoritative construction acknowledgement and credit reservation.
+## 29. Read the authoritative construction acknowledgement and credit reservation.
 
 Actor: **Builder envoy**.
 
@@ -383,13 +419,13 @@ Acknowledged outcome: Construction order accepted accompanies a queued camp elig
 
 ### Viewpoint: Builder envoy
 
-[![Read the authoritative construction acknowledgement and credit reservation. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-reserve-build-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-reserve-build-1-builder-envoy.png)
+[![Read the authoritative construction acknowledgement and credit reservation. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/029-reserve-build-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/029-reserve-build-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Read the authoritative construction acknowledgement and credit reservation. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-reserve-build-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/027-reserve-build-2-independent-builder.png)
+[![Read the authoritative construction acknowledgement and credit reservation. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/029-reserve-build-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/029-reserve-build-2-independent-builder.png)
 
-## 28. Reload the accepted work and reopen Develop to recover the same queue and balance.
+## 30. Reload the accepted work and reopen Develop to recover the same queue and balance.
 
 Actor: **Builder envoy**.
 
@@ -402,19 +438,19 @@ Acknowledged outcome: The persisted queue remains eligible at tick1 with131 cred
 
 ### Viewpoint: Builder envoy
 
-[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-reload-reservation-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-reload-reservation-1-builder-envoy.png)
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-reload-reservation-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-reload-reservation-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-reload-reservation-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/028-reload-reservation-2-independent-builder.png)
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-reload-reservation-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-reload-reservation-2-independent-builder.png)
 
-## 29. Deliver five explicit production boundaries through the actual leased tick service. The first starts the build, four subsequent advances finish it; repeat delivery must change nothing.
+## 31. Deliver five explicit production boundaries through the actual leased tick service. The first starts the build, four subsequent advances finish it; repeat delivery must change nothing.
 
 Actor: **Test harness**. **Harness control; not a player action.**
 
 Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
 
-## 30. Inspect the settled training camp and the other commander's unchanged private queue.
+## 32. Inspect the settled training camp and the other commander's unchanged private queue.
 
 Actor: **Builder envoy**.
 
@@ -427,13 +463,13 @@ Acknowledged outcome: The authoritative completion appears and the camp count is
 
 ### Viewpoint: Builder envoy
 
-[![Inspect the settled training camp and the other commander's unchanged private queue. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-completed-build-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-completed-build-1-builder-envoy.png)
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-completed-build-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-completed-build-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Inspect the settled training camp and the other commander's unchanged private queue. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-completed-build-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/030-completed-build-2-independent-builder.png)
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-completed-build-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-completed-build-2-independent-builder.png)
 
-## 31. After real tick settlement, inspect the applied allocation and distinguish it from future market returns.
+## 33. After real tick settlement, inspect the applied allocation and distinguish it from future market returns.
 
 Actor: **Builder envoy**.
 
@@ -443,13 +479,13 @@ Acknowledged outcome: The authoritative applied outcome names tick1 and dividend
 
 ### Viewpoint: Builder envoy
 
-[![After real tick settlement, inspect the applied allocation and distinguish it from future market returns. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/031-inspect-applied-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/031-inspect-applied-focus-1-builder-envoy.png)
+[![After real tick settlement, inspect the applied allocation and distinguish it from future market returns. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-inspect-applied-focus-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-inspect-applied-focus-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![After real tick settlement, inspect the applied allocation and distinguish it from future market returns. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/031-inspect-applied-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/031-inspect-applied-focus-2-independent-builder.png)
+[![After real tick settlement, inspect the applied allocation and distinguish it from future market returns. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-inspect-applied-focus-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-inspect-applied-focus-2-independent-builder.png)
 
-## 32. Return to the completed camp before making the next construction decision.
+## 34. Return to the completed camp before making the next construction decision.
 
 Actor: **Builder envoy**.
 
@@ -461,13 +497,13 @@ Acknowledged outcome: The completed camp remains available with no queued work.
 
 ### Viewpoint: Builder envoy
 
-[![Return to the completed camp before making the next construction decision. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-return-after-focus-settlement-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-return-after-focus-settlement-1-builder-envoy.png)
+[![Return to the completed camp before making the next construction decision. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-return-after-focus-settlement-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-return-after-focus-settlement-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Return to the completed camp before making the next construction decision. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-return-after-focus-settlement-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/032-return-after-focus-settlement-2-independent-builder.png)
+[![Return to the completed camp before making the next construction decision. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-return-after-focus-settlement-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-return-after-focus-settlement-2-independent-builder.png)
 
-## 33. Choose a surface base and reserve its quoted cost using the keyboard.
+## 35. Choose a surface base and reserve its quoted cost using the keyboard.
 
 Actor: **Builder envoy**.
 
@@ -480,13 +516,13 @@ Acknowledged outcome: A new accepted base order enters the surface queue for tic
 
 ### Viewpoint: Builder envoy
 
-[![Choose a surface base and reserve its quoted cost using the keyboard. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-reserve-cancellable-base-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-reserve-cancellable-base-1-builder-envoy.png)
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/035-reserve-cancellable-base-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/035-reserve-cancellable-base-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Choose a surface base and reserve its quoted cost using the keyboard. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-reserve-cancellable-base-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/033-reserve-cancellable-base-2-independent-builder.png)
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/035-reserve-cancellable-base-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/035-reserve-cancellable-base-2-independent-builder.png)
 
-## 34. Request cancellation of the queued surface base. The refund waits for authoritative settlement.
+## 36. Request cancellation of the queued surface base. The refund waits for authoritative settlement.
 
 Actor: **Builder envoy**.
 
@@ -499,19 +535,19 @@ Acknowledged outcome: Cancellation is acknowledged for tick6 and the cancel acti
 
 ### Viewpoint: Builder envoy
 
-[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-cancel-base-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-cancel-base-1-builder-envoy.png)
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancel-base-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancel-base-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-cancel-base-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/034-cancel-base-2-independent-builder.png)
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancel-base-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancel-base-2-independent-builder.png)
 
-## 35. Deliver tick6 through the real production service and repeat it to prove no second refund or production effect.
+## 37. Deliver tick6 through the real production service and repeat it to prove no second refund or production effect.
 
 Actor: **Test harness**. **Harness control; not a player action.**
 
 Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
 
-## 36. Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues.
+## 38. Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues.
 
 Actor: **Builder envoy**.
 
@@ -524,13 +560,13 @@ Acknowledged outcome: The base cancellation states its returned credits and no c
 
 ### Viewpoint: Builder envoy
 
-[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancelled-base-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancelled-base-1-builder-envoy.png)
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-cancelled-base-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-cancelled-base-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancelled-base-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/036-cancelled-base-2-independent-builder.png)
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-cancelled-base-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-cancelled-base-2-independent-builder.png)
 
-## 37. Reload and reopen the construction panel to inspect the persisted refund without replaying an action.
+## 39. Reload and reopen the construction panel to inspect the persisted refund without replaying an action.
 
 Actor: **Builder envoy**.
 
@@ -543,13 +579,13 @@ Acknowledged outcome: The same settled cancellation and returned credits are rec
 
 ### Viewpoint: Builder envoy
 
-[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/037-recover-settled-outcome-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/037-recover-settled-outcome-1-builder-envoy.png)
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/039-recover-settled-outcome-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/039-recover-settled-outcome-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/037-recover-settled-outcome-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/037-recover-settled-outcome-2-independent-builder.png)
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/039-recover-settled-outcome-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/039-recover-settled-outcome-2-independent-builder.png)
 
-## 38. Return to the galaxy with Escape and recover the Develop control's focus.
+## 40. Return to the galaxy with Escape and recover the Develop control's focus.
 
 Actor: **Builder envoy**.
 
@@ -559,8 +595,8 @@ Acknowledged outcome: The panel closes and Develop receives keyboard focus.
 
 ### Viewpoint: Builder envoy
 
-[![Return to the galaxy with Escape and recover the Develop control's focus. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-keyboard-return-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-keyboard-return-1-builder-envoy.png)
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Builder envoy](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/040-keyboard-return-1-builder-envoy.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/040-keyboard-return-1-builder-envoy.png)
 
 ### Viewpoint: Independent builder
 
-[![Return to the galaxy with Escape and recover the Develop control's focus. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-keyboard-return-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/038-keyboard-return-2-independent-builder.png)
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Independent builder](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/040-keyboard-return-2-independent-builder.png)](../../../../../../tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/040-keyboard-return-2-independent-builder.png)
