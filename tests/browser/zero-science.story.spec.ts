@@ -5,6 +5,7 @@ import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
+import { settlementTiming } from "./story-helpers/settlement-timing";
 import { expectReadingTarget } from "./story-helpers/reading-target";
 import { distance } from "../../shared/galaxy";
 import { routePreview } from "../../shared/travel";
@@ -94,6 +95,10 @@ test("Live zero science after orbital loss preserves private research", async ({
   if (!admin.getApps().length)
     admin.initializeApp({ projectId: "demo-clusterii" });
   const db = require("firebase-admin/firestore").getFirestore();
+  const timing = settlementTiming(
+    db,
+    info.outputPath("settlement-timing.jsonl"),
+  );
   const { provider, unwrap } = require("./lib/shared/crypto.js"),
     { context } = require("./lib/functions/src/campaigns.js"),
     { settleCampaignTicks } = require("./lib/functions/src/production.js");
@@ -219,19 +224,23 @@ test("Live zero science after orbital loss preserves private research", async ({
       peer = pages[1];
     const settle = async (target: number) => {
       expect(target).toBeLessThanOrEqual(220);
-      const state = await canonical(),
+      const state = await timing.span("canonical", canonical),
         previous = state.economy!.tick;
       const due = scheduledAt + target * 900000;
       for (const p of pages.filter((p) => !p.isClosed()))
-        await p.clock.setFixedTime(due);
+        await timing.span("clock", () => p.clock.setFixedTime(due));
       let count = 0,
         batch: number;
       do {
-        batch = await settleCampaignTicks(id, () => due);
+        batch = await timing.span("batch", () =>
+          settleCampaignTicks(id, () => due),
+        );
         count += batch;
       } while (batch === 96);
       expect(count).toBe(target - previous);
-      expect(await settleCampaignTicks(id, () => due)).toBe(0);
+      expect(
+        await timing.span("repeat", () => settleCampaignTicks(id, () => due)),
+      ).toBe(0);
     };
     await story.harness(
       "leave-campaign-during-elapsed-time",
