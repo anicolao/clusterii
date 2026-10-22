@@ -25,3 +25,7 @@ Provenance identifies clean merge commit `d6885b03e796dc7b6b047e1d45d97da9c833a6
 The short reorganization failure's error context shows “Retrieving your identity…” with no Commander name field. Its trace records a `profileKey` request beginning 04:42:34.282 UTC without a completed response/status when the ten-second readiness assertion ends. This corroborates a pending identity-service readiness failure rather than a wrong field label or pixel mismatch; it does not independently establish this job's resource root cause. Two trace/context files were extracted with 4,860,616 bytes transferred and retained in `/tmp/cluster58-reorganization-failure`.
 
 Read-only publication status shows #63 and #64 publication runs cancelled in the shared queue, with #65 queued; no manual cancellation or duplicate rerun was issued. Their exact-head preview gates remain open.
+
+## #61 preview 404
+
+The reviewer’s 01:10 checkpoint is retained in `meta-prompts.md`; `/tmp/cluster61-preview-0109.log` shows publication of gh-pages commit5418930 followed by the unchanged ten-minute exact-head checker receiving HTTP404. Read-only API checks confirm `pr61/revision.json` exists in the published tree and both revision fields equal6504a4a. Pages build/deployment run39724569489 for full commit54189303257e8a3376190c301f21be4aa33027dd remains queued. The served preview is therefore not verified; no timeout/tolerance change or duplicate workflow retry was issued.
