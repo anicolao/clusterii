@@ -1,0 +1,21 @@
+# Local galaxy detail and retained CI triage
+
+Reviewer Prompt111 requests read-only inspection before the next product slice. No browser/probe/capture retry was run.
+
+## Completed CI phases
+
+#104 run39857548745/job120099581366 checked merge2081b4407ac71eb921edee883251c7a27c7ea985 (headbdb9cd8). Retained `/tmp/cluster104-story-1922.log`:83 missing reviewed Linux baseline errors,11 exact-pixel failures,4 zero-science30s harness failures. Phone pixels include chart orbit1066, begun roster259 and selected-history chart273; shared identity-gallery disclosure differs47188/92775/246283/47487 pixels and research-lab pending91280/332453/416467/245237 across phone/desktop/large/short. These large shared-frame mismatches are not classified as the1994 identity raster recurrence. Zero-science fails the actual initial100 leased-tick harness in every viewport, not screenshot readiness. These are distinct existing baseline/shared-layout/settlement acceptance holds; logs alone do not establish their root causes or justify baseline changes. No new navigation behavior executes past its missing-baseline gate.
+
+#106 run39859883269/job120107525422 checked mergef234a0fbeb2bf095f4e70daa46b71515dd2bd85d (head8b7fa2a). Retained `/tmp/cluster106-story-1922.log`: story policy passes, then test:story-tools has0 pass/1 fail; unnamed hook expires5000.72ms and Bun kills one dangling process. Source beforeAll awaits chromium.launch and afterAll closes it; the log has no named test, player journey, pixel failure or capture diagnostic. The unchanged launch hook is the unresolved tooling setup boundary, distinct from screenshot/identity/admission/ingress holds. No artifacts were uploaded because capture work never began. No new concrete source defect is supported by these logs, so no speculative retry or deadline adjustment.
+
+## Renderer audit and chosen behavior
+
+Scene renders on demand, disables camera damping and already supplies a full keyboard Systems list with the same authorized catalogue/class filter/search/selection. Optional scene decoration is one28×28 additive dust shader plane sampling galaxy-dust.webp, plus three128-segment reference rings at radii3/6/9. Neither encodes a system, ownership, fleet, intelligence or legal action. A meaningful lower-detail mode can remove those four drawables, skip/release the dust texture, and avoid their shader/blending/geometry work without reducing factual markers or interactive hit targets. This removes work on redraws, not a claimed continuous idle rendering cost: the canvas already renders on demand. No FPS/energy improvement is claimed without measurement.
+
+Add a browser-local Lower galaxy detail checkbox to the existing production PresentationSettings/GameMenu, already shared with gallery/lab. Keep all star sprites and core geometry, selection/home/ownership labels and rings, routes, travelers, contacts, camera/list controls and authorized positions unchanged. Preserve existing asset files/provenance. Persist only the non-sensitive setting; report storage failure honestly. Wait for local preference initialization before loading decorative texture. Dispose loaded/late-arriving textures on toggle/unmount, preventing a stale callback from restoring decoration.
+
+Source-level preference/resource-lifecycle checks and serialized static verification only. Actual four-size/normal-reduced composition, keyboard/Escape/focus, gallery/lab equivalence, production GPU cost and all earlier setup/raster/concurrency/KMS/hosted/release gates remain pending. No rule changes, fabricated state, fallbacks or baseline promotion.
+
+Focused validation: three tests/15 assertions pass in439ms (`/tmp/cluster-detail-tests.log`), including actual Three Texture dispose events. First static check caught a test-only partial StorageEvent cast; the explicit synthetic-event cast was corrected without changing production or assertions, with original log retained at `/tmp/cluster-detail-check.log`. No browser execution.
+
+Final serialized type/Svelte/Functions verification exits0 with0 Svelte errors/warnings (`/tmp/cluster-detail-check-final.log`). Focused Biome and changed Svelte formatting pass. No browser/capture retry. Disk9075576KiB at bounded verification.

@@ -405,3 +405,7 @@ Selection ownership sensitivity remains unproven: pre-fix phone failed identity 
 ## Local presentation controls (UX-15/16)
 
 The shared GameMenu/PresentationSettings now controls real feedback/CSS motion and is available in the production galaxy, gallery and animation lab. Focused store/feedback tests are not mounted acceptance. Pending: ordinary keyboard open/toggle/Escape/restore, persisted browser reload and OS precedence, normal/reduced settled outcome equality, gallery/lab real states, four viewport target/scroll/corner geometry and separately reviewed candidates. No browser run while setup diagnosis is held; low-detail renderer remains unimplemented. [Audit](../design/LOCAL_MOTION_REVIEW.md).
+
+## Lower galaxy detail (UX-03/15/16)
+
+The shared settings checkbox controls actual Scene dust/reference-ring creation and texture lifecycle; authorized stars, labels, ownership, contacts, fleets, paths and keyboard/list actions are unchanged. Three preference/Three texture-lifecycle tests provide source-level evidence only. Pending: same campaign/selection/draft across toggles and reload, cross-mode fact/action equivalence, four-size keyboard/Escape/focus and shared gallery/lab captures, measured GPU work. No browser or capture run while setup holds remain. [Renderer audit and CI phase triage](../design/LOCAL_DETAIL_REVIEW.md).

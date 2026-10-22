@@ -173,7 +173,7 @@ Add first-game guidance and an in-game rules reference. A returning player sees 
 
 **Acceptance:** Review actual phone, desktop, and large-display compositions against the selected art/UX direction, then verify them with deterministic browser captures and geometry assertions. Representative players complete the entire loop without developer assistance. Every action is usable through the supported input methods; private information remains private in reports and notifications. Errors and stale views explain recovery without requiring a refresh or losing unsent work silently.
 
-Implementation evidence: [local motion settings](docs/design/LOCAL_MOTION_REVIEW.md) adds browser-local reduction through the shared game menu without overriding OS reduction. Renderer low-detail, full settings scope and actual four-size/keyboard/motion/gallery acceptance remain open.
+Implementation evidence: [local motion settings](docs/design/LOCAL_MOTION_REVIEW.md) adds browser-local reduction through the shared game menu without overriding OS reduction. [Lower-detail decoration](docs/design/LOCAL_DETAIL_REVIEW.md) adds a browser-local option that omits dust/reference rings while preserving factual markers and list actions. Full settings scope and actual four-size/keyboard/motion/gallery/performance acceptance remain open.
 
 ## 11. Verify balance, scale, and long-running play
 

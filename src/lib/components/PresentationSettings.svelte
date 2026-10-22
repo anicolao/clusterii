@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { detailPreference } from "$lib/detail-preference";
   import { motionPreference } from "$lib/motion-preference";
 </script>
 
@@ -26,6 +27,28 @@
   {#if !$motionPreference.saved}<p>
       Your choice applies on this page. Browser storage is unavailable, so it
       cannot be saved.
+    </p>{/if}
+  <h3>Galaxy detail</h3>
+  <label
+    ><input
+      type="checkbox"
+      checked={$detailPreference.lower}
+      onchange={(event) =>
+        detailPreference.setLower(event.currentTarget.checked)}
+    /> Lower galaxy detail</label
+  >
+  <p>
+    Remove decorative dust and reference rings. Every system, fleet, route and
+    control stays available.
+  </p>
+  <p role="status" aria-live="polite">
+    {$detailPreference.lower
+      ? "Lower galaxy detail is on."
+      : "Full galaxy decoration is on."}
+  </p>
+  {#if !$detailPreference.saved}<p>
+      This choice applies on this page but cannot be saved because browser
+      storage is unavailable.
     </p>{/if}
 </section>
 
