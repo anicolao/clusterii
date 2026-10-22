@@ -307,3 +307,4 @@ Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | A
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Review new fleet reorganization candidates across four viewports and preserve the 20:09 checkpoint
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Archive eight passing exact fleet journeys and carry the 20:19 supervisory checkpoint into the review stack
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Continue UX-08 with real cancellation receipts, preserved drafts and repeat-safe released reservations
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Review new cancellation candidates with request-bound receipts and preserved drafts at all supported sizes
