@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { RecoveredFleetReorganization } from "$lib/fleet-feedback";
   import { tick } from "svelte";
   import { base } from "$app/paths";
   import type { CampaignView } from "@shared/campaign";
@@ -12,6 +13,7 @@
     selected = $bindable<string | null>(null),
     routeDrafts = $bindable<Record<string, string[]>>({}),
     view,
+    recoveredFleet = null,
     starId,
     pending = false,
     busy = false,
@@ -32,6 +34,7 @@
     selected?: string | null;
     routeDrafts?: Record<string, string[]>;
     view: CampaignView;
+    recoveredFleet?: RecoveredFleetReorganization | null;
     starId: string;
     pending?: boolean;
     busy?: boolean;
@@ -63,6 +66,27 @@
   let splitFighters = $state<number | undefined>(1),
     splitInfantry = $state<number | undefined>(0),
     targetId = $state("");
+  let resumedReorganization = "";
+  $effect(() => {
+    const recovered = recoveredFleet;
+    if (
+      !recovered ||
+      recovered.gameId !== view.id ||
+      resumedReorganization === recovered.id ||
+      !view.military?.fleets.some((f) => f.id === recovered.action.fleetId)
+    )
+      return;
+    resumedReorganization = recovered.id;
+    selected = recovered.action.fleetId;
+    if (recovered.action.kind === "fleet.split") {
+      operation = "split";
+      splitFighters = recovered.action.fighters;
+      splitInfantry = recovered.action.infantry;
+    } else {
+      operation = "merge";
+      targetId = recovered.action.targetFleetId;
+    }
+  });
   let routing = $state(false);
   let routeButton = $state<HTMLButtonElement>();
   const currentStarId = $derived(
