@@ -392,3 +392,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | P
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review four contact candidate journeys and add typed fail-closed fixture/projection guards and normal/reduced-motion parity before strict comparison.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 76 exact contact captures, document source/privacy gates and distinguish skipped Linux generation from actual candidates while preserving supervisory history.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 69 to its predecessor and exact-head preview gate after publishing reviewed fleet-contact stories and preserved regressions.

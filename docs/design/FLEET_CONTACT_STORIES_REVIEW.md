@@ -20,3 +20,5 @@ Actual hit testing reproduced decorative contact-label wrapper interception. HTM
 [Candidate review](../testing/FLEET_CONTACT_BASELINE_REVIEW.md) and [ordered stories](../testing/stories/live-fleet-contacts/phone/darwin-arm64/README.md) retain source and renderer provenance. Diagnostic logs under `/tmp/cluster-contact-story-*` distinguish incorrect return-control selection, pre-order absent military container, actual Fleet7 identity, pointer interception and all-at-once reading failure. These were diagnosed before accepting new candidates; no timeout or exact-pixel threshold changed.
 
 Retained regression evidence: `/tmp/cluster-contact-regressions.log`. The normal fixture hook is absent from this cohort. Managed-real skip is not authorization completion; hosted entropy/scheduling remains unverified. The original live route journey still exercises real formation, route commitment, departure, arrival and recovery with production controls.
+
+Published as [PR #69](https://github.com/anicolao/clusterii/pull/69), based on #68. [Review preview](https://anicolao.github.io/clusterii/pr69/) is unverified until source/build revision both match the current head. No merge.
