@@ -658,3 +658,5 @@ Prompt 100 | 8af6c828dec4260d8d1d99589cd8c91859d1895fcd6ae829e9f25ee8493d4c63 | 
 Prompt 101 | 9bc9b8d1b7c49b73b961be508943f55c3760bbbd87b538529efcd589a9babe03 | Record PR102 dependency, scanning audit and controlled service evidence with original failure and preview gates preserved.
 
 Prompt 102 | dc7ed1d311981efbb84e12b15727ef273af2c8f4da9f04f890cc671336948af0 | Record PR103 dependency and diagnostic-only acceptance limits while retaining original Linux failure and exact capture assertions.
+
+Prompt 103 | 48f237276c60ef3d19ae11ce2aa4649aab00948fbcc22abffea1e89dc7a7d2d3 | Preserve phone admission failure, correct unexecuted directory-return fixture and document pending route recovery acceptance.

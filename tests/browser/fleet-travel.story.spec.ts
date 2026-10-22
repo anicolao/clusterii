@@ -785,6 +785,12 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       ],
       views: views(),
     });
+    const navigationReceipts = async () =>
+      (await db.collection(`campaignReceipts/${uid}/results`).get()).docs
+        .map((document: { id: string }) => document.id)
+        .sort();
+    const receiptsBeforeNavigation = await navigationReceipts();
+    expect(formed!.visits?.[uid]).toBeUndefined();
     await story.step("recover-unsent-route-navigation", {
       actor: aliases[0],
       description:
@@ -800,7 +806,10 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         await expect(card).toHaveCount(1);
         await card.focus();
         await card.press("Enter");
-        await button(owner, "Return to galaxy").press("Enter");
+        // No saved visit exists in this fixture: reopening goes directly to the galaxy.
+        await expect(
+          owner.getByRole("region", { name: "Return briefing", exact: true }),
+        ).toHaveCount(0);
         await inspector(owner)
           .getByRole("button", { name: "Fleets · 1", exact: true })
           .press("Enter");
@@ -827,6 +836,9 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
           spec: "Directory navigation preserves authoritative forces, orders and receipts without a new mutation; ordinary and reduced motion keep the same draft.",
           check: async () => {
             expect(await canonical()).toEqual(formed!);
+            expect(await navigationReceipts()).toEqual(
+              receiptsBeforeNavigation,
+            );
             await owner.emulateMedia({ reducedMotion: "no-preference" });
             await expect(routeList).toContainText(targetName);
             await owner.emulateMedia({ reducedMotion: "reduce" });
