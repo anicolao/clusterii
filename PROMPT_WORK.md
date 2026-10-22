@@ -604,3 +604,5 @@ Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | R
 Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Archive four passing research completion journeys and100 exact comparisons with scoped review and unchanged service/privacy assertions.
 
 Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Restore authenticated submitted research targets in the matching campaign and add reload identity payload and privacy assertions on a successor.
+
+Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Preserve four passing recovery journeys and add visible restored-choice and pending-control capture assertions; correct the research harness guide.

@@ -667,6 +667,16 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         "Reload while the original recruiting command is withheld. Recover its exact submitted target and acknowledgement panel; this is durable submitted intent, not an unsent draft.",
       action: async () => {
         await stale.reload();
+        const choice = research(stale).getByRole("radio", {
+          name: /^recruiting/,
+        });
+        await expect(choice).toBeChecked();
+        // Deliberately review the restored disabled choice in its bounded list,
+        // then focus the actual commitment group without submitting anything.
+        await choice.locator("..").scrollIntoViewIfNeeded();
+        await research(stale)
+          .getByRole("group", { name: "Research acknowledgement" })
+          .focus();
       },
       acknowledgement: {
         spec: "The authenticated outbox restores recruiting and reopens Economy while the original command is still unacknowledged.",
@@ -699,7 +709,38 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           expect(await identity(uid)).toEqual(identityBefore);
         },
       },
-      verifications: [privacy],
+      verifications: [
+        privacy,
+        {
+          spec: "The restored recruiting choice and pending commitment are fully readable above the footer after deliberate review scrolling, with keyboard focus on acknowledgement.",
+          check: async () => {
+            const selected = research(stale)
+              .getByRole("radio", { name: /^recruiting/ })
+              .locator("..");
+            const label = await selected.boundingBox();
+            const track = await selected.locator("..").boundingBox();
+            const queue = await button(
+              stale,
+              "Awaiting acknowledgement…",
+            ).boundingBox();
+            const footer = await button(
+              stale,
+              "Return to galaxy",
+            ).boundingBox();
+            expect(label!.y).toBeGreaterThanOrEqual(Math.max(0, track!.y));
+            expect(label!.y + label!.height).toBeLessThanOrEqual(
+              Math.min(track!.y + track!.height, footer!.y),
+            );
+            expect(queue!.y).toBeGreaterThanOrEqual(0);
+            expect(queue!.y + queue!.height).toBeLessThanOrEqual(footer!.y);
+            await expect(
+              research(stale).getByRole("group", {
+                name: "Research acknowledgement",
+              }),
+            ).toBeFocused();
+          },
+        },
+      ],
       views: [
         {
           page: stale,
