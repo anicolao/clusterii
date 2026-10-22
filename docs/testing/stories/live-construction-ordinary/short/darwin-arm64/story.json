@@ -3,16 +3,17 @@
   "title": "Reserve, complete and cancel developments",
   "inventory": [
     "UX-05",
+    "UX-06",
     "UX-14",
     "UX-15",
     "UX-16"
   ],
-  "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
+  "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time for construction and market-focus admission, plus withheld delivery, are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
   "source": {
-    "commit": "1d75c63f410f49e486dd1181f6a1dbc656454ca6",
+    "commit": "3910cef102a253c1aeea4393901e05baed5d7ec5",
     "dirty": false,
     "spec": "tests/browser/construction.story.spec.ts",
-    "specSha256": "54c0800d3466202e7ba8b07c6db7afbd3a77b5248edd86d96e5362c98ef54c93"
+    "specSha256": "5845ffbbd1a23e2ca865789f75d27e19f4d6631a2b2995f21a2071397357ded0"
   },
   "mode": "verify",
   "status": "passed",
@@ -276,6 +277,271 @@
       ]
     },
     {
+      "id": "open-market-focus",
+      "description": "Open the real market instrument before choosing a private allocation.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Current equal allocation is visible and unchanged focus cannot be submitted.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "016-open-market-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "016-open-market-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-0",
+      "description": "Read allocate expectations while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "017-read-market-rule-0-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "017-read-market-rule-0-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-1",
+      "description": "Read read the scheduled outcome while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "018-read-market-rule-1-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "018-read-market-rule-1-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-2",
+      "description": "Read share a dividend pool while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "019-read-market-rule-2-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "019-read-market-rule-2-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-3",
+      "description": "Read confirmed and held returns while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "020-read-market-rule-3-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "020-read-market-rule-3-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-market-rules",
+      "description": "Close help with the keyboard in both motion modes and return to allocation controls.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The closed disclosure retains keyboard focus and the allocation remains unsent.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "021-close-market-rules-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "021-close-market-rules-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-invalid-focus",
+      "description": "Increase camp focus before redistributing the other points; the invalid total prevents sending.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "75 over allocation is explained and Apply focus stays disabled.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "022-review-invalid-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "022-review-invalid-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-market-draft",
+      "description": "Allocate all100 points to training camps without sending an order yet.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Exactly100 points enables Apply focus while the current allocation is unchanged.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "023-review-market-draft-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "023-review-market-draft-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "accept-market-focus",
+      "description": "Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Focus order accepted names application tick1 and dividends from tick2.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "One accepted receipt records the private allocation without changing any wallet, system or another player's focus."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "024-accept-market-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "024-accept-market-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-market-focus",
+      "description": "Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The camp allocation and original application tick survive reload.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Reload creates no additional command or effect."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "025-recover-market-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "025-recover-market-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-development",
+      "description": "Return through economy to the preserved home development decision.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Training camp still costs69 with131 remaining after reservation.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Navigation leaves the accepted focus unchanged."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "026-return-to-development-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "026-return-to-development-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
       "id": "reserve-build",
       "description": "Read the authoritative construction acknowledgement and credit reservation.",
       "actor": "Builder envoy",
@@ -290,12 +556,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "016-reserve-build-1-builder-envoy.png",
+          "image": "027-reserve-build-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "016-reserve-build-2-independent-builder.png",
+          "image": "027-reserve-build-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -315,12 +581,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "017-reload-reservation-1-builder-envoy.png",
+          "image": "028-reload-reservation-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "017-reload-reservation-2-independent-builder.png",
+          "image": "028-reload-reservation-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -349,12 +615,58 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "019-completed-build-1-builder-envoy.png",
+          "image": "030-completed-build-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "019-completed-build-2-independent-builder.png",
+          "image": "030-completed-build-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-applied-focus",
+      "description": "After real tick settlement, inspect the applied allocation and distinguish it from future market returns.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative applied outcome names tick1 and dividend eligibility from tick2.",
+      "verifications": [
+        "The original order applied once and own construction still pays no own-market dividend."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "031-inspect-applied-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "031-inspect-applied-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-after-focus-settlement",
+      "description": "Return to the completed camp before making the next construction decision.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The completed camp remains available with no queued work.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "032-return-after-focus-settlement-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "032-return-after-focus-settlement-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -374,12 +686,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "020-reserve-cancellable-base-1-builder-envoy.png",
+          "image": "033-reserve-cancellable-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "020-reserve-cancellable-base-2-independent-builder.png",
+          "image": "033-reserve-cancellable-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -399,12 +711,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "021-cancel-base-1-builder-envoy.png",
+          "image": "034-cancel-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "021-cancel-base-2-independent-builder.png",
+          "image": "034-cancel-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -433,12 +745,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "023-cancelled-base-1-builder-envoy.png",
+          "image": "036-cancelled-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "023-cancelled-base-2-independent-builder.png",
+          "image": "036-cancelled-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -458,12 +770,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "024-recover-settled-outcome-1-builder-envoy.png",
+          "image": "037-recover-settled-outcome-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "024-recover-settled-outcome-2-independent-builder.png",
+          "image": "037-recover-settled-outcome-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -480,12 +792,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "025-keyboard-return-1-builder-envoy.png",
+          "image": "038-keyboard-return-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "025-keyboard-return-2-independent-builder.png",
+          "image": "038-keyboard-return-2-independent-builder.png",
           "verifications": []
         }
       ]

@@ -12,6 +12,7 @@
   import DevelopmentIcon from "./DevelopmentIcon.svelte";
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
+  import MarketRules from "./MarketRules.svelte";
   let {
     focus,
     ledger,
@@ -139,6 +140,7 @@
             </div>
           </fieldset>{/each}
       </div>
+      <MarketRules />
       {#if ledger}<section aria-label="Confirmed market income">
           <h3>Confirmed last tick</h3>
           <dl>

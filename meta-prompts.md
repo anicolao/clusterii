@@ -1660,3 +1660,31 @@ Explicit Linux generation job119705315798 completed success. Independently check
 Agent healthy at37a3041 reviewing construction-help candidates:200 captures,40 added144 changed16 identical, with no unrelated changed frames reported. Independently reviewed added named reservation/refund reading steps and phone013 refund candidate: complete cancellation/control copy readable inside bounded panel, price69/balance131 and Build action remain visible. Scoped candidate review only; exact verification/full visual acceptance pending. No intervention or duplicate prompt.
 
 Agent completed bounded Linux metadata audit:344 files for172 passed generation stories at verified frozen merge tree, identifies changed specs and explicitly requires component-source compatibility before any promotion. No images promoted. #78 CI still running, #76 application now green; no new actionable failure. Carry checkpoint into committed/pushed attributed logs at natural boundary; preserve original raster/independent Linux/hosted/full-release holds. No merge.
+
+
+## Reviewer progress — 2026-10-22 06:49 Toronto
+
+#79 30cf022 attached on #78, clean/pushed. Eight local exact construction journeys200 captures pass after separate candidate review; four shared gallery/lab geometry regressions also pass. Prior independent source and phone refund view review remains scoped, not full acceptance. Agent healthy planning next market-focus contextual chapter without waiting or requiring another prompt. #77 application verification newly green; latest story jobs remain pending.
+
+Transient disk headroom1.3GiB during push recovered to5.4GiB at independent check; do not remove retained evidence or download full4.44GB Linux artifact unnecessarily. No intervention/duplicate prompt. Carry checkpoint into committed/pushed attributed logs at natural boundary. Full implementation, independent visual/Linux/hosted and original raster gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 06:59 Toronto
+
+Agent healthy at57c2313 on market guidance, retaining initial real scheduled-tick mismatch evidence and correcting explicit emulator-only story clock scope. Independently reviewed loader change: only orderConstruction/selectMarketFocus time arguments transformed with exact-signature fail-closed guard; original arguments/commands/reducers retained. Independently ran node --test scripts/check-construction-clock.test.mjs:2 tests pass, including non-demo rejection and unrelated-campaign preservation. Corrected candidates running; no visual acceptance yet.
+
+#77 illustrated Linux verification newly failed; retained job119754528265 log /tmp/cluster77-0659-verify.log. Inspected missing reviewed Linux baseline errors; full classification to carry at natural boundary. #79 exact-head static publication green; no new deployment intervention. Carry checkpoint into committed/pushed attributed logs; no duplicate prompt or interruption. Full release, independent visual/Linux/hosted and original raster gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 07:09 Toronto
+
+Agent healthy at0bbf0f0 reviewing four passing market candidates216 captures:104 added112 unchanged, no changed predecessors reported. Independently reviewed actual acceptance/reload assertions: one revision, accepted receipt keyed by original order ID, unchanged systems/wallets, absent order ID in other players' projections, exact canonical equality after reload. Viewed phone024: accepted application tick1/dividends tick2 and100 camp allocation readable in bounded region, disabled duplicate Apply action and proposed-rule notice present. Scoped review only; strict verification/full visual acceptance pending.
+
+#78 application verification now green. Agent classified #77 Linux failure as59 missing baselines3 pixel mismatches5 propagation reports; absence of prior identity mismatch does not establish a fix. No interruption or duplicate prompt. Carry checkpoint into committed/pushed attributed logs at natural boundary; full implementation/release and independent visual/Linux/hosted/raster gates remain open. No merge.
+
+
+## Reviewer progress — 2026-10-22 07:19 Toronto
+
+Agent healthy at3910cef archiving eight passing strict market/construction journeys304 captures4.9min; independently checked final log. Shared geometry check/publication still in progress; no new PR yet. Existing independent acceptance/reload source and phone review remains scoped. Linux identity-gallery artifact extraction records source/hash manifest with approval explicitly pending; no promotion.
+
+#78 Linux verification newly failed; retained job119766389502 full log /tmp/cluster78-0719-verify.log for classification at next logging boundary. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs; original raster, independent visual/Linux/hosted and full release gates remain open. No merge.

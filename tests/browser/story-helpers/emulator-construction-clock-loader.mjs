@@ -13,19 +13,22 @@ export async function load(url, context, nextLoad) {
       "Construction clock is confined to demo-clusterii Functions Emulator",
     );
   const source = String(result.source);
-  const signature =
-    "export function orderConstruction(current, input, uid, commandId, now) {";
-  if (source.split(signature).length !== 2)
-    throw new Error(
-      "Construction clock reducer signature changed; review the test boundary",
+  let transformed = source;
+  for (const name of ["orderConstruction", "selectMarketFocus"]) {
+    const signature = `export function ${name}(current, input, uid, commandId, now) {`;
+    if (source.split(signature).length !== 2)
+      throw new Error(
+        "Construction/focus clock reducer signature changed; review the test boundary",
+      );
+    transformed = transformed.replace(
+      signature,
+      signature + "\nnow = __constructionTime(current, now);",
     );
+  }
   return {
     ...result,
     source:
       `import { constructionTime as __constructionTime } from ${JSON.stringify(new URL("./construction-clock.mjs", import.meta.url).href)};\n` +
-      source.replace(
-        signature,
-        signature + "\nnow = __constructionTime(current, now);",
-      ),
+      transformed,
   };
 }

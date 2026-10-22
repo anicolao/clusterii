@@ -74,9 +74,9 @@ for (const interrupted of [false, true])
       title: interrupted
         ? "Recover one construction commitment and settle its outcome"
         : "Reserve, complete and cancel developments",
-      inventory: ["UX-05", "UX-14", "UX-15", "UX-16"],
+      inventory: ["UX-05", "UX-06", "UX-14", "UX-15", "UX-16"],
       description:
-        "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
+        "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time for construction and market-focus admission, plus withheld delivery, are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
     });
     const contexts: BrowserContext[] = [],
       pages: Page[] = [],
@@ -306,6 +306,44 @@ for (const interrupted of [false, true])
       const home = Object.entries(initial.systems).find(
         ([, s]) => s.orbit === uid && s.surface === uid,
       )![0];
+      let constructionRevision = initial.revision;
+      let focusOrderId = "";
+      const focusPanel = owner.getByRole("region", {
+        name: "Market focus",
+        exact: true,
+      });
+      const focusRail = async () => {
+        const box = await button(owner, "Apply focus").boundingBox();
+        expect(box).not.toBeNull();
+        expect(box!.y).toBeGreaterThanOrEqual(0);
+        expect(box!.y + box!.height).toBeLessThanOrEqual(
+          owner.viewportSize()!.height,
+        );
+        await rail(peer);
+        expect(errors).toEqual([]);
+      };
+      const readFocus = async (target: Locator) => {
+        await focusRail();
+        const region = focusPanel.getByRole("region", {
+          name: "Focus allocation details",
+        });
+        await region.focus();
+        await target.scrollIntoViewIfNeeded();
+        const a = await region.boundingBox(),
+          b = await target.boundingBox();
+        expect(b).not.toBeNull();
+        expect(b!.y).toBeGreaterThanOrEqual(a!.y);
+        expect(b!.y + b!.height).toBeLessThanOrEqual(a!.y + a!.height);
+      };
+      const returnToConstruction = async () => {
+        await button(owner, "Back to economy").click();
+        await expect(button(owner, "Market focus")).toBeFocused();
+        await button(owner, "Return to galaxy").click();
+        await button(owner, "Develop").click();
+        await panel(owner)
+          .getByRole("radio", { name: /Training camp/ })
+          .check();
+      };
       await story.step("inspect-development", {
         actor: aliases[0],
         description:
@@ -468,6 +506,284 @@ for (const interrupted of [false, true])
           views: views(),
         });
       }
+      if (!interrupted) {
+        const allocation = { market: 0, camp: 100, base: 0, station: 0 };
+        const privateBefore = await Promise.all([published(0), published(1)]);
+        const readOnly = {
+          spec: "Help and an unsent allocation preserve canonical state and both private projections.",
+          check: async () => {
+            expect(await canonical()).toEqual(initial);
+            expect(await Promise.all([published(0), published(1)])).toEqual(
+              privateBefore,
+            );
+          },
+        };
+        const focusChecks = [
+          {
+            spec: "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+            check: focusRail,
+          },
+          checks()[1],
+        ];
+        await story.step("open-market-focus", {
+          actor: aliases[0],
+          description:
+            "Open the real market instrument before choosing a private allocation.",
+          action: async () => {
+            await button(owner, "Back to galaxy").click();
+            await button(owner, "Economy").click();
+            await button(owner, "Market focus").click();
+          },
+          acknowledgement: {
+            spec: "Current equal allocation is visible and unchanged focus cannot be submitted.",
+            check: async () => {
+              await expect(
+                focusPanel.getByRole("heading", {
+                  name: "Market focus",
+                  exact: true,
+                }),
+              ).toBeFocused();
+              await expect(button(owner, "Apply focus")).toBeDisabled();
+              for (const name of [
+                "Market",
+                "Training camp",
+                "Base",
+                "Space station",
+              ])
+                await expect(
+                  focusPanel.getByLabel(`${name} points`, { exact: true }),
+                ).toHaveValue("25");
+            },
+          },
+          verifications: [...focusChecks, readOnly],
+          views: views(),
+        });
+        const help = focusPanel.locator("details.market-rules"),
+          summary = help.locator("summary");
+        for (const [index, heading, text] of [
+          [0, "Allocate expectations", "Distribute exactly"],
+          [1, "Read the scheduled outcome", "An accepted order records"],
+          [2, "Share a dividend pool", "Other empires’ completed"],
+          [3, "Confirmed and held returns", "New markets join"],
+        ] as const)
+          await story.step(`read-market-rule-${index}`, {
+            actor: aliases[0],
+            description: `Read ${heading.toLowerCase()} while the campaign continues.`,
+            action: async () => {
+              await focusRail();
+              if (index === 0) {
+                await summary.evaluate((el) =>
+                  el.scrollIntoView({ block: "center" }),
+                );
+                await summary.focus();
+                await owner.keyboard.press("Enter");
+              }
+              await help
+                .getByRole("heading", { name: heading })
+                .evaluate((el) => el.scrollIntoView({ block: "start" }));
+              const region = focusPanel.getByRole("region", {
+                name: "Focus allocation details",
+              });
+              await region.focus();
+              const paragraph = help.locator("p").filter({ hasText: text });
+              await paragraph.scrollIntoViewIfNeeded();
+              const a = await region.boundingBox(),
+                b = await paragraph.boundingBox();
+              expect(b!.y).toBeGreaterThanOrEqual(a!.y);
+              expect(b!.y + b!.height).toBeLessThanOrEqual(a!.y + a!.height);
+            },
+            acknowledgement: {
+              spec: "The selected rule is readable without applying an allocation.",
+              check: async () => {
+                await expect(help).toHaveAttribute("open", "");
+                await expect(
+                  help.locator("p").filter({ hasText: text }),
+                ).toBeVisible();
+              },
+            },
+            verifications: [...focusChecks, readOnly],
+            views: views(),
+          });
+        await story.step("close-market-rules", {
+          actor: aliases[0],
+          description:
+            "Close help with the keyboard in both motion modes and return to allocation controls.",
+          action: async () => {
+            await summary.evaluate((el) =>
+              el.scrollIntoView({ block: "center" }),
+            );
+            await summary.focus();
+            await owner.keyboard.press("Enter");
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            await owner.keyboard.press("Enter");
+            await expect(help).toHaveAttribute("open", "");
+            await owner.keyboard.press("Enter");
+            await owner.emulateMedia({ reducedMotion: "reduce" });
+          },
+          acknowledgement: {
+            spec: "The closed disclosure retains keyboard focus and the allocation remains unsent.",
+            check: async () => {
+              await expect(summary).toBeFocused();
+              await expect(help).not.toHaveAttribute("open", "");
+            },
+          },
+          verifications: [...focusChecks, readOnly],
+          views: views(),
+        });
+        await story.step("review-invalid-focus", {
+          actor: aliases[0],
+          description:
+            "Increase camp focus before redistributing the other points; the invalid total prevents sending.",
+          action: async () => {
+            await focusRail();
+            await focusPanel
+              .getByLabel("Training camp points", { exact: true })
+              .fill("100");
+          },
+          acknowledgement: {
+            spec: "75 over allocation is explained and Apply focus stays disabled.",
+            check: async () => {
+              await expect(focusPanel).toContainText("75 over allocation");
+              await expect(button(owner, "Apply focus")).toBeDisabled();
+            },
+          },
+          verifications: [...focusChecks, readOnly],
+          views: views(),
+        });
+        await story.step("review-market-draft", {
+          actor: aliases[0],
+          description:
+            "Allocate all100 points to training camps without sending an order yet.",
+          action: async () => {
+            for (const name of ["Market", "Base", "Space station"]) {
+              await focusRail();
+              await focusPanel
+                .getByLabel(`${name} points`, { exact: true })
+                .fill("0");
+            }
+          },
+          acknowledgement: {
+            spec: "Exactly100 points enables Apply focus while the current allocation is unchanged.",
+            check: async () => {
+              await expect(focusPanel).toContainText("100 / 100 allocated");
+              await expect(button(owner, "Apply focus")).toBeEnabled();
+            },
+          },
+          verifications: [...focusChecks, readOnly],
+          views: views(),
+        });
+        await story.step("accept-market-focus", {
+          actor: aliases[0],
+          description:
+            "Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick.",
+          action: async () => {
+            await button(owner, "Apply focus").focus();
+            await owner.keyboard.press("Enter");
+          },
+          acknowledgement: {
+            spec: "Focus order accepted names application tick1 and dividends from tick2.",
+            check: async () => {
+              await expect(focusPanel).toContainText("Focus order accepted.");
+              await expect(focusPanel).toContainText(
+                "Applies tick 1 · dividends from tick 2",
+              );
+              await readFocus(
+                focusPanel
+                  .getByRole("listitem")
+                  .filter({ hasText: "Applies tick 1" }),
+              );
+            },
+          },
+          verifications: [
+            ...focusChecks,
+            {
+              spec: "One accepted receipt records the private allocation without changing any wallet, system or another player's focus.",
+              check: async () => {
+                const state = await canonical();
+                expect(state.revision).toBe(initial.revision + 1);
+                expect(state.systems).toEqual(initial.systems);
+                expect(wallets(state)).toEqual(wallets(initial));
+                const focus = state.economy!.marketFocus![uid];
+                expect(focus.orders).toHaveLength(1);
+                expect(focus.orders[0]).toMatchObject({
+                  allocation,
+                  effectiveTick: 1,
+                });
+                focusOrderId = focus.orders[0].id;
+                expect(
+                  (
+                    await db
+                      .doc(`campaignReceipts/${uid}/results/${focusOrderId}`)
+                      .get()
+                  ).get("status"),
+                ).toBe("accepted");
+                for (const seat of [1, 2]) {
+                  const v = await published(seat);
+                  expect(v.economy.marketFocus.orders).toEqual([]);
+                  expect(JSON.stringify(v)).not.toContain(focusOrderId);
+                }
+              },
+            },
+          ],
+          views: views(),
+        });
+        const acceptedFocus = await canonical();
+        await story.step("recover-market-focus", {
+          actor: aliases[0],
+          description:
+            "Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it.",
+          action: async () => {
+            await owner.reload();
+            await button(owner, "Economy").click();
+            await button(owner, "Market focus").click();
+          },
+          acknowledgement: {
+            spec: "The camp allocation and original application tick survive reload.",
+            check: async () => {
+              await expect(
+                focusPanel.getByLabel("Training camp points", { exact: true }),
+              ).toHaveValue("100");
+              await expect(focusPanel).toContainText("Applies tick 1");
+              await readFocus(
+                focusPanel
+                  .getByRole("listitem")
+                  .filter({ hasText: "Applies tick 1" }),
+              );
+            },
+          },
+          verifications: [
+            ...focusChecks,
+            {
+              spec: "Reload creates no additional command or effect.",
+              check: async () =>
+                expect(await canonical()).toEqual(acceptedFocus),
+            },
+          ],
+          views: views(),
+        });
+        await story.step("return-to-development", {
+          actor: aliases[0],
+          description:
+            "Return through economy to the preserved home development decision.",
+          action: returnToConstruction,
+          acknowledgement: {
+            spec: "Training camp still costs69 with131 remaining after reservation.",
+            check: async () => {
+              await expect(commitment(owner)).toContainText("131");
+            },
+          },
+          verifications: [
+            ...checks(),
+            {
+              spec: "Navigation leaves the accepted focus unchanged.",
+              check: async () =>
+                expect(await canonical()).toEqual(acceptedFocus),
+            },
+          ],
+          views: views(),
+        });
+        constructionRevision = acceptedFocus.revision;
+      }
       if (interrupted) {
         await story.harness(
           "withhold-build-delivery",
@@ -572,7 +888,7 @@ for (const interrupted of [false, true])
             spec: "Exactly one command revision reserves69 credits; the orbital count and every other wallet are unchanged.",
             check: async () => {
               const s = await canonical();
-              expect(s.revision).toBe(initial.revision + 1);
+              expect(s.revision).toBe(constructionRevision + 1);
               expect(s.construction!.orders).toHaveLength(1);
               expect(s.construction!.orders[0]).toMatchObject({
                 uid,
@@ -699,6 +1015,71 @@ for (const interrupted of [false, true])
         ],
         views: views(),
       });
+      if (!interrupted) {
+        const completed = await canonical();
+        await story.step("inspect-applied-focus", {
+          actor: aliases[0],
+          description:
+            "After real tick settlement, inspect the applied allocation and distinguish it from future market returns.",
+          action: async () => {
+            await button(owner, "Back to galaxy").click();
+            await button(owner, "Economy").click();
+            await button(owner, "Market focus").click();
+            await focusPanel
+              .getByRole("status", { name: "Applied market focus" })
+              .scrollIntoViewIfNeeded();
+          },
+          acknowledgement: {
+            spec: "The authoritative applied outcome names tick1 and dividend eligibility from tick2.",
+            check: async () => {
+              await expect(
+                focusPanel.getByRole("status", {
+                  name: "Applied market focus",
+                }),
+              ).toContainText("Focus applied at tick 1");
+            },
+          },
+          verifications: [
+            {
+              spec: "The original order applied once and own construction still pays no own-market dividend.",
+              check: async () => {
+                const state = await canonical();
+                expect(state).toEqual(completed);
+                const focus = state.economy!.marketFocus![uid];
+                expect(focus.orders).toEqual([]);
+                expect(focus.lastApplied?.id).toBe(focusOrderId);
+                expect(focus.allocation).toEqual({
+                  market: 0,
+                  camp: 100,
+                  base: 0,
+                  station: 0,
+                });
+                expect(
+                  state.economy!.ledger[uid].marketDividendsMilli ?? 0,
+                ).toBe(0);
+                await focusRail();
+              },
+            },
+          ],
+          views: views(),
+        });
+        await story.step("return-after-focus-settlement", {
+          actor: aliases[0],
+          description:
+            "Return to the completed camp before making the next construction decision.",
+          action: returnToConstruction,
+          acknowledgement: {
+            spec: "The completed camp remains available with no queued work.",
+            check: async () => {
+              await expect(panel(owner)).toContainText(
+                "Training camp · completed",
+              );
+            },
+          },
+          verifications: checks(),
+          views: views(),
+        });
+      }
       const complete = await canonical();
       await story.step("reserve-cancellable-base", {
         actor: aliases[0],

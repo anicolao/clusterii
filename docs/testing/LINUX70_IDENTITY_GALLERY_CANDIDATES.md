@@ -1,0 +1,7 @@
+# Linux identity gallery review bundle
+
+Prepared for independent review; **no candidate images promoted**. The single explicit generation run39743227540/job119705315798 produced artifact12418233598. All four identity-component-gallery manifests are passed generation from clean synthetic mergeddd7512cd2169da67a312272b8336a086a034d4a, whose tree matches frozen417bb622. The pinned Linux arm64 renderer and spec provenance were audited with the full172-story metadata set.
+
+Bounded ZIP range extraction fetched28,835,555 bytes, not the4.44GB artifact. Local review root: /tmp/cluster70-identity-gallery-candidates. It contains84 PNGs, their layout sidecars, four ordered READMEs, story manifests and renderers (180 files). [SHA256 inventory](diagnostics/linux70-identity-gallery-candidates.json) records original bytes and source. [Generation artifact](https://github.com/anicolao/clusterii/actions/runs/39743227540/artifacts/12418233598).
+
+Source comparison417bb62→3910cef finds no changes to the gallery route, its identity/navigation/feedback components, global stylesheet or this spec. Changes affect later conversation/construction/route/market specimens. This supports reviewing this limited family; it does not certify pixel compatibility or approve newer gameplay families. Review every caption/viewpoint, renderer and source before promotion; then require strict pinned-Linux verification. Never use failed verification output or overwrite inherited expectations to erase raster failures. Full independent review remains pending.
