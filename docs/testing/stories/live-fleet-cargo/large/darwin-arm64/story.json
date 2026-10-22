@@ -1,0 +1,535 @@
+{
+  "id": "live-fleet-cargo",
+  "title": "Unload, recover and reload fleet cargo",
+  "inventory": [
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; unload and load reserve infantry and move it once at leased settlement. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify travel, managed encryption or hosted scheduling.",
+  "source": {
+    "commit": "9ec90d0fd0b56cdba7bc77f1b7720b49a1893829",
+    "dirty": true,
+    "spec": "tests/browser/fleet-cargo.story.spec.ts",
+    "specSha256": "8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-formation",
+      "description": "Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The actual capacity constraint disables formation without a command.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Invalid input does not change canonical state or reserve forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "010-inspect-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "010-inspect-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-complement",
+      "description": "Reduce infantry to the supported twenty and inspect the ready formation.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "011-choose-complement-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "011-choose-complement-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-formation",
+      "description": "Confirm formation with Enter. The authoritative receipt reserves two fighters and twenty infantry for tick one, without moving them yet.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "One accepted receipt and revision reserve the original forces without creating a fleet or moving the garrison."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "012-reserve-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "012-reserve-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-formation",
+      "description": "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload adds no revision, order or effect."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "013-reload-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "013-reload-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "settle-formation",
+      "description": "Advance the explicit domain clock once and invoke the real leased tick service. Repeat delivery must do no work; no fleet or outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "formed-fleet",
+      "description": "Read the authoritative formation result and select the new fleet with the keyboard. The other commander still sees only their own forces.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Units move from garrison to exactly one fleet; only this tick's recorded production changes empire totals."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "015-formed-fleet-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "015-formed-fleet-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "unload-capacity",
+      "description": "Choose unload and inspect a quantity beyond the available cargo or capacity. No order is issued.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The production control rejects the excess quantity before submission.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Invalid cargo input creates no revision, reservation or unit movement."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "016-unload-capacity-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "016-unload-capacity-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "unload-preview",
+      "description": "Review 5 infantry for unload and focus the fixed commitment control.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The valid cargo order is enabled and keyboard focused.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "017-unload-preview-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "017-unload-preview-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "unload-accepted",
+      "description": "Confirm unload with Enter. The acknowledged reservation waits for tick 2; infantry has not moved.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The service acknowledges the exact transfer and scheduled tick.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "One accepted receipt and revision reserve the transfer; all garrisons and fleets are unchanged."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "018-unload-accepted-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "018-unload-accepted-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "unload-reload",
+      "description": "Reload the exact campaign and recover the same private accepted cargo order.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The original quantity and settlement tick return from authoritative persistence.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload creates no new command, revision or transfer."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "019-unload-reload-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "019-unload-reload-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "unload-settlement",
+      "description": "Advance the explicitly labelled domain clock and deliver the real leased tick, then repeat delivery. No cargo, production or outcome is injected; hosted cadence remains unverified.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "unload-settled",
+      "description": "Read the confirmed 5-infantry transfer. The fleet now carries 15 infantry; other commanders receive no private order or ledger.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The matching authoritative result replaces the scheduled transfer and clears the reservation.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Exactly one matching ledger transfers infantry between fleet and surface; only recorded production changes combined forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "021-unload-settled-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "021-unload-settled-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "load-capacity",
+      "description": "Choose load and inspect a quantity beyond the available cargo or capacity. No order is issued.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The production control rejects the excess quantity before submission.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Invalid cargo input creates no revision, reservation or unit movement."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "022-load-capacity-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "022-load-capacity-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "load-preview",
+      "description": "Review 3 infantry for load and focus the fixed commitment control.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The valid cargo order is enabled and keyboard focused.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "023-load-preview-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "023-load-preview-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "load-accepted",
+      "description": "Confirm load with Enter. The acknowledged reservation waits for tick 3; infantry has not moved.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The service acknowledges the exact transfer and scheduled tick.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "One accepted receipt and revision reserve the transfer; all garrisons and fleets are unchanged."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "024-load-accepted-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "024-load-accepted-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "load-reload",
+      "description": "Reload the exact campaign and recover the same private accepted cargo order.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The original quantity and settlement tick return from authoritative persistence.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload creates no new command, revision or transfer."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "025-load-reload-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "025-load-reload-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "load-settlement",
+      "description": "Advance the explicitly labelled domain clock and deliver the real leased tick, then repeat delivery. No cargo, production or outcome is injected; hosted cadence remains unverified.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "load-settled",
+      "description": "Read the confirmed 3-infantry transfer. The fleet now carries 18 infantry; other commanders receive no private order or ledger.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The matching authoritative result replaces the scheduled transfer and clears the reservation.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Exactly one matching ledger transfers infantry between fleet and surface; only recorded production changes combined forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "027-load-settled-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "027-load-settled-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-loaded-fleet",
+      "description": "Reload the final loaded fleet and return to the galaxy using the keyboard.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The stationed fleet marker remains and the opener regains focus.",
+      "verifications": [
+        "Reload preserves the final conserved forces without another effect or application error."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "028-recover-loaded-fleet-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "028-recover-loaded-fleet-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

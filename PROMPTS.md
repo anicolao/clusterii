@@ -497,3 +497,9 @@ Reviewer continuation 2026-10-21 19:08 Toronto: pane idle since19:00 after succe
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 19:59 Toronto”.
 
 Reviewer continuation 2026-10-21 19:59 Toronto: clean0bd3936 and pane idle after #57 completion. Continue next live UX-08 fleet travel/cancellation or reorganization story as a small successor to #57, with authoritative conservation, private owner/observer projections, interrupted/reload recovery and four-viewport keyboard evidence, keeping procedural regressions. Also inspect why CI jobs have remained queued for hours using read-only run/runner status; record whether capacity or workflow dependencies explain it, without cancelling unrelated jobs or launching broad duplicate reruns. Retain exact-head preview gates and targeted raster diagnosis; second identical-layout pair is not a fix. Carry latest checkpoints through19:59 and attributed logs, commit/push. Continue useful independent work; no merge.
+
+## Prompt 57: Fleet journeys
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 20:39 Toronto”.
+
+Reviewer continuation 2026-10-21 20:39 Toronto: #59 is pushed clean943fdce and pane idle since20:35. Continue live fleet travel/cargo/arrival coverage next as a small successor to #59, preserving authoritative force conservation, owner versus observer privacy, recovery and four-viewport keyboard evidence. Keep existing procedural assertions until equivalent stories replace them. Maintain explicit rule-approval boundaries and label clock harnesses. Continue targeted raster investigation when evidence permits and retain current-head preview checks; do not duplicate broad CI runs into the documented backlog. Carry main checkpoint through20:39 with attributed PROMPTS/PROMPT_WORK, commit/push. No merge; keep progressing independently while CI waits.

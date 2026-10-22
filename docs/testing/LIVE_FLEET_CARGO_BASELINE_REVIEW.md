@@ -1,0 +1,11 @@
+# Live fleet cargo candidate review
+
+Approve only the new `live-fleet-cargo` macOS/arm64 candidates for exact comparison. Generation passes four journeys / 128 captures in 2.5 minutes (`/tmp/cluster-cargo-generation.log`). Each viewport has 20 distinct images, 80 total. This is implementer candidate review, not independent or Linux acceptance.
+
+Inspected every distinct phone, desktop and short composition, all 4K instrument crops and full 4K settled composition. The fixed action rail remains visible while the bounded manifest reveals the chosen quantities, accepted tick and confirmed transfer. Invalid cargo values disable commitment with a specific remedy. Reloaded order quantities remain in the accepted list; the separate new-input default is not presented as persisted draft recovery. Settled fleets show 15 then 18 embarked infantry. The independent commander sees their own production and no private fleet/order/ledger. Keyboard confirmations and restored galaxy opener focus are asserted.
+
+All manifests have spec SHA-256 `8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276`. Phone records parent943fdce plus the working-tree story; desktop/large/short record clean05cedd1. The source commit records those same bytes; no test or production source changed during generation. Renderer manifests retain the pinned local browser, fonts and reduced motion. No inherited baseline or tolerance changes.
+
+Real receipts, one revision per transfer, exact private grants, complete canonical no-op on repeat delivery, surface/fleet conservation and reload are asserted. Harness clocks call actual admission and leased tick services; they do not certify hosted cadence or cutoff races. Interrupted cargo, managed keys, normal-motion live parity, travel/arrival, Linux comparison and independent review remain open. Existing procedural assertions remain intact, including mounted acceptance-to-settlement feedback. This story illustrates recovery after acceptance; it does not replace that mounted-feedback regression.
+
+Strict comparison passes all four viewports / 128 exact captures in 2.5 minutes (`/tmp/cluster-cargo-exact.log`). Four generated walkthroughs are archived under `docs/testing/stories/live-fleet-cargo/`. This is local macOS/arm64 evidence; Linux and independent acceptance remain pending.
