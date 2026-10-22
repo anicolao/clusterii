@@ -330,6 +330,14 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           name: "Accepted research orders",
         }),
       ).toContainText("Tick 1 · " + target);
+      const schedule = research(owner).getByRole("region", {
+        name: "Accepted research orders",
+      });
+      await schedule.scrollIntoViewIfNeeded();
+      const listBox = await schedule.boundingBox();
+      const footerBox = await button(owner, "Return to galaxy").boundingBox();
+      expect(listBox!.y).toBeGreaterThanOrEqual(0);
+      expect(listBox!.y + listBox!.height).toBeLessThanOrEqual(footerBox!.y);
       return order;
     };
     await story.step("choose-without-sending", {
@@ -369,6 +377,9 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           ).toBeChecked();
           expect(await receipts(uid)).toEqual(receiptsBefore);
           expect(observedWrites.get(owner)).toEqual([]);
+          await research(owner)
+            .getByRole("radio", { name: /^investing/ })
+            .focus();
           await research(owner).locator(".effect").scrollIntoViewIfNeeded();
           await expect(button(owner, "Queue investing")).toBeVisible();
         },
@@ -552,6 +563,10 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       acknowledgement: {
         spec: "One rejected conflict receipt leaves the two accepted orders intact and preserves the local choice.",
         check: async () => {
+          await expect(
+            stale.getByRole("alert", { includeHidden: true }),
+          ).toHaveCount(1);
+          await expect(research(stale).getByRole("alert")).toBeFocused();
           await expect(research(stale).getByRole("alert")).toContainText(
             "Your research choice is preserved",
           );
@@ -610,6 +625,67 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           surface: "game",
         },
         peerView,
+      ],
+    });
+    await story.step("close-conflict-panel", {
+      actor: aliases[0] + " · second device",
+      description:
+        "Close Economy with Escape; the same research conflict remains discoverable on the galaxy.",
+      action: async () => {
+        await stale.keyboard.press("Escape");
+      },
+      acknowledgement: {
+        spec: "Exactly one accessible route error replaces the panel error; Economy regains keyboard focus.",
+        check: async () => {
+          await expect(research(stale)).toHaveCount(0);
+          await expect(button(stale, "Economy")).toBeFocused();
+          await expect(
+            stale.getByRole("alert", { includeHidden: true }),
+          ).toHaveCount(1);
+          await expect(stale.getByRole("alert")).toContainText(
+            "Your research choice is preserved",
+          );
+          expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
+        },
+      },
+      verifications: [privacy],
+      views: [
+        {
+          page: stale,
+          player: aliases[0] + " · second device",
+          surface: "game",
+          primary: [stale.getByRole("alert")],
+        },
+      ],
+    });
+    await story.step("reopen-conflict-panel", {
+      actor: aliases[0] + " · second device",
+      description:
+        "Reopen Economy and review the preserved recruiting choice with a single in-panel remedy.",
+      action: async () => {
+        await keyboard(stale, "Economy");
+        await research(stale).getByRole("alert").focus();
+      },
+      acknowledgement: {
+        spec: "Panel ownership returns without duplicating the error or sending another command.",
+        check: async () => {
+          await expect(
+            stale.getByRole("alert", { includeHidden: true }),
+          ).toHaveCount(1);
+          await expect(research(stale).getByRole("alert")).toBeFocused();
+          await expect(
+            research(stale).getByRole("radio", { name: /^recruiting/ }),
+          ).toBeChecked();
+          expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
+        },
+      },
+      verifications: [privacy],
+      views: [
+        {
+          page: stale,
+          player: aliases[0] + " · second device",
+          surface: "game",
+        },
       ],
     });
   } finally {
