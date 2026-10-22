@@ -8,10 +8,10 @@
   ],
   "description": "A developer inspects the shipped CampaignResearch component with reducer-derived research and science ledger specimens. Keyboard disclosure changes no campaign state. Component observations are not live service acknowledgements, scheduling or authorization acceptance.",
   "source": {
-    "commit": "dc7bb0e6d77c37bdc2684fd75364c1d5afcd495d",
+    "commit": "b4410b4c0b930e4cd7b89027120b0a8417b03928",
     "dirty": false,
     "spec": "tests/browser/research-forecast.story.spec.ts",
-    "specSha256": "a07ab1d55e87050cf902c97807a524ddf62f504ce015ac28ca7c9b70fcee6be9"
+    "specSha256": "3629924ead2f768b0c4063a6fe4130186ef991bc77433eb3fb823a1f73eb23cd"
   },
   "mode": "verify",
   "status": "passed",
@@ -83,6 +83,25 @@
       ]
     },
     {
+      "id": "read-pending-qualification",
+      "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation.",
+      "verifications": [
+        "The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status."
+      ],
+      "views": [
+        {
+          "player": "Developer · pending qualification",
+          "image": "003-read-pending-qualification-1-developer-pending-qualification.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
       "id": "close-pending-forecast",
       "description": "Close the disclosure with Space, keeping focus and the selected research choice.",
       "actor": "Developer",
@@ -94,7 +113,7 @@
       "views": [
         {
           "player": "Developer · pending collapsed",
-          "image": "003-close-pending-forecast-1-developer-pending-collapsed.png",
+          "image": "004-close-pending-forecast-1-developer-pending-collapsed.png",
           "verifications": [
             "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
           ]
@@ -113,7 +132,26 @@
       "views": [
         {
           "player": "Developer · disabled forecast",
-          "image": "004-read-disabled-forecast-1-developer-disabled-forecast.png",
+          "image": "005-read-disabled-forecast-1-developer-disabled-forecast.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-disabled-qualification",
+      "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation.",
+      "verifications": [
+        "The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status."
+      ],
+      "views": [
+        {
+          "player": "Developer · disabled qualification",
+          "image": "006-read-disabled-qualification-1-developer-disabled-qualification.png",
           "verifications": [
             "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
           ]
@@ -132,7 +170,7 @@
       "views": [
         {
           "player": "Developer · disabled collapsed",
-          "image": "005-close-disabled-forecast-1-developer-disabled-collapsed.png",
+          "image": "007-close-disabled-forecast-1-developer-disabled-collapsed.png",
           "verifications": [
             "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
           ]
@@ -151,7 +189,26 @@
       "views": [
         {
           "player": "Developer · applied forecast",
-          "image": "006-read-applied-forecast-1-developer-applied-forecast.png",
+          "image": "008-read-applied-forecast-1-developer-applied-forecast.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-applied-qualification",
+      "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation.",
+      "verifications": [
+        "The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status."
+      ],
+      "views": [
+        {
+          "player": "Developer · applied qualification",
+          "image": "009-read-applied-qualification-1-developer-applied-qualification.png",
           "verifications": [
             "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
           ]
@@ -170,7 +227,7 @@
       "views": [
         {
           "player": "Developer · applied collapsed",
-          "image": "007-close-applied-forecast-1-developer-applied-collapsed.png",
+          "image": "010-close-applied-forecast-1-developer-applied-collapsed.png",
           "verifications": [
             "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
           ]
