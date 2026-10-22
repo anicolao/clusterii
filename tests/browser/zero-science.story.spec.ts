@@ -62,7 +62,16 @@ test("Live zero science after orbital loss preserves private research", async ({
   const story = new TestStepHelper(info, {
     id: "live-zero-science",
     title: "Recover research after losing orbital science",
-    inventory: ["UX-07", "UX-08", "UX-09", "UX-14", "UX-15", "UX-16"],
+    inventory: [
+      "UX-04",
+      "UX-06",
+      "UX-07",
+      "UX-08",
+      "UX-09",
+      "UX-14",
+      "UX-15",
+      "UX-16",
+    ],
     description:
       "Four independently authenticated commanders use real fleet controls after100 earned ticks. An escape and rival route produce actual orbital loss, zero science and retained surface control. Owner and peer recover private research through reload. Fixed catalogue/domain clocks are explicit harness controls; budgets are220 ticks,240 seconds and16 captures per viewport. Rules remain under review; this does not certify managed encryption or hosted scheduling.",
   });
