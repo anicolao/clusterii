@@ -73,6 +73,35 @@ async function client(name: string) {
 afterAll(async () => {
   await Promise.all(clients.map(deleteApp));
 });
+// Read-only administrative diagnostics, restricted to the demo emulators.
+// Never log keys, ciphertext, tokens or private profile content; never retry a write.
+async function profileReceiptEvidence(uid: string, id: string) {
+  if (process.env.FIRESTORE_EMULATOR_HOST !== "127.0.0.1:18080" ||
+      process.env.FIREBASE_DATABASE_EMULATOR_HOST !== "127.0.0.1:19000")
+    return { unavailable: "Expected loopback demo emulators are not configured" };
+  const path = `profileCommands/${uid}/${id}`;
+  const read = async (url: string) => {
+    try {
+      const response = await fetch(url, {headers: {Authorization: "Bearer owner"}, signal: AbortSignal.timeout(1500)});
+      return {status: response.status, body: await response.json()};
+    } catch (error) {
+      return {status: 0, body: null, error: error instanceof Error ? error.name : "unknown"};
+    }
+  };
+  const base = `http://127.0.0.1:18080/v1/projects/${projectId}/databases/(default)/documents/profiles/${encodeURIComponent(uid)}`;
+  const [ingress, head, saved] = await Promise.all([
+    read(`http://127.0.0.1:19000/${path}.json?ns=${projectId}-default-rtdb`),
+    read(base), read(`${base}/receipts/${encodeURIComponent(id)}`),
+  ]);
+  return {
+    uid, commandId: id,
+    ingress: {httpStatus: ingress.status, exists: ingress.status === 200 && ingress.body != null,
+      digest: ingress.status === 200 && ingress.body != null ? await commandDigest(path, ingress.body) : null},
+    profile: {httpStatus: head.status, revision: head.body?.fields?.revision?.integerValue ?? null},
+    receipt: {httpStatus: saved.status, status: saved.body?.fields?.status?.stringValue ?? null,
+      digest: saved.body?.fields?.requestDigest?.stringValue ?? null},
+  };
+}
 async function receipt(c: Awaited<ReturnType<typeof client>>, id: string) {
   const deadline = Date.now() + 20000;
   while (Date.now() < deadline) {
@@ -82,7 +111,7 @@ async function receipt(c: Awaited<ReturnType<typeof client>>, id: string) {
     if (result.exists()) return result.data();
     await new Promise((r) => setTimeout(r, 100));
   }
-  throw new Error("No authoritative receipt");
+  throw new Error(`No authoritative receipt: ${JSON.stringify(await profileReceiptEvidence(c.uid, id))}`);
 }
 test("authenticated ingress, owner grants, replay, concurrent CAS and direct access rules", async () => {
   const alice = await client(`alice${Date.now()}`),
@@ -5810,3 +5839,21 @@ for (const mode of ["mock", "real"] as const)
       expect((await read(third)).trades).toEqual({enabled:true,offers:[],ledger:[]});
     },240000,
   );
+
+
+test("profile timeout diagnostics inspect real ingress without retrying writes", async () => {
+  const c = await client(`receipt-diagnostic-${crypto.randomUUID()}`);
+  const id = crypto.randomUUID(), path = `profileCommands/${c.uid}/${id}`;
+  const empty = await profileReceiptEvidence(c.uid, id);
+  expect(empty).toMatchObject({ingress: {exists: false}, profile: {httpStatus: 404}, receipt: {httpStatus: 404}});
+  const payload = await provider("mock").seal({kind:"profile.set",expectedRevision:0,profile:{alias:"Diagnostic commander",portrait:"G1"}},c.kek,commandContext(c.uid,id));
+  await set(ref(c.database,path),payload);
+  expect((await receipt(c,id)).status).toBe("accepted");
+  const expected = await commandDigest(path,payload);
+  const evidence = await profileReceiptEvidence(c.uid,id);
+  expect(evidence).toMatchObject({uid:c.uid,commandId:id,ingress:{httpStatus:200,exists:true,digest:expected},profile:{httpStatus:200,revision:"1"},receipt:{httpStatus:200,status:"accepted",digest:expected}});
+  expect(JSON.stringify(evidence)).not.toContain("Diagnostic commander");
+  expect(JSON.stringify(evidence)).not.toContain(c.kek);
+  expect(await profileReceiptEvidence(c.uid,id)).toEqual(evidence);
+  expect((await getDoc(doc(c.firestore,"profiles",c.uid))).get("revision")).toBe(1);
+});
