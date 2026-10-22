@@ -1748,3 +1748,10 @@ Reviewer continuation 2026-10-22 08:29 Toronto: disk recovered to1.5GiB; enough 
 Agent healthy ata91efce implementing real account-wide sign-out story; static checks/discovery pass. Independently reviewed mounted-document timeOrigin/navigation-count assertions, real completed session fence, unchanged canonical/private state checks and fresh original-account allocation recovery. Scope does not yet prove same-browser other-account or separate membership-fault clearing. Browser generation now starting; no executed/visual approval inferred.
 
 Disk independently6.3GiB, above2GiB gate; agent already resumed one bounded generation without duplicate instruction. #81 application verification now green, latest illustrated checks pending. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release/independent visual/Linux/hosted/original raster gates remain open. No merge.
+
+
+## Reviewer progress — 2026-10-22 08:49 Toronto
+
+Agent healthy atb462cbd publishing real remote-session-end story:4 strict journeys64 captures pass; independent prior source review plus phone015 shows protected campaign absent, readable sign-in remedy and visible keyboard focus. Scope remains local Auth Emulator, not hosted auth or separate membership/account-switch acceptance. PR creation transiently failed while push is still active; do not duplicate work. Disk5.5GiB.
+
+#81 Linux verification failed; full job119806587419 log retained /tmp/cluster81-0849-verify.log.59 missing baselines; pixel reports now include19340/37585/96672/33491 (some repeated) as well as1066/259/273/1994. These additional counts require classification, not automatic attribution to inherited stellar/identity causes. Carry checkpoint and classify at next committed/pushed logging boundary. No acceptance/merge; original raster, independent visual/Linux/hosted and full-release holds remain open.
