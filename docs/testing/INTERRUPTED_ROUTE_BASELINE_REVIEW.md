@@ -1,0 +1,13 @@
+# Interrupted route candidate review
+
+Approve only new `interrupted-fleet-route` macOS/arm64 candidates. Final generation passes four viewport journeys / 160 captures in 4.0 minutes (`/tmp/cluster-route-recovery-final-generation.log`). Each viewport has 23 distinct images, 92 total. This is implementer candidate review, not independent or Linux acceptance.
+
+Inspected every distinct phone, desktop and short composition, large-screen instrument crops, the full large retry/map and full signed-out view. Fixed rails contain the original route summary, pending explanation and focused Check route order remedy. Scrolling details expose the selected destination without moving the document. Accepted, traveling and arrived states remain distinct; signed-out recovery shows no private fleet. The independent commander sees their own forces and no private route or arrival report. Some preceding titles scroll out of bounded details while the inspected fact and commitment rail stay visible; this is not document overflow or an obscured action.
+
+Phone, desktop and large final images match the already inspected first passing candidates byte-for-byte except the separately inspected new retry-remedy image. All final short candidates were inspected directly. No inherited baseline or tolerance changes.
+
+All final manifests record source `1360478532ea3fcd74b3a4c9b8276a61635040a7` and spec SHA-256 `1005a83d7147e5493216aa7eb977b4fdd8e2bdbcfed4bb7abea432f08eb98d5c`. Phone records a clean tree; subsequent manifests mark the tree dirty only because the unrelated identity-raster investigation document was updated during the run. No test, production source, font, artwork or renderer changed during generation.
+
+The real story checks withheld submission, durable reload, same-command discovery/retry, offline service acceptance, bound receipt discovery and durable-record cleanup, then repeat-safe departure/arrival and full force conservation. The fault harness delivers the original payload with the actual emulator account credential through RTDB rules and ingress. The ordinary sign-out journey removes access. Null access, other-player/different-campaign projections, retired fleets and newer/cleared drafts have explicit unit guards; this is not a live multi-device retirement race claim.
+
+Unsent drafts remain memory-only. Managed encryption, rejected-receipt live race illustration, hosted scheduling, independent visual review, Linux comparison and current-head preview verification remain separate gates. Existing procedural and motion regressions remain unchanged. Game rules remain review choices, not new human approvals.
