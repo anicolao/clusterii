@@ -474,10 +474,18 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         owner.viewportSize()!.height,
       );
     };
-    const routeRead = async (target: Locator) => {
+    const routeRead = async (target: Locator, centered = false) => {
       await routeRail();
       await details.focus();
-      await target.scrollIntoViewIfNeeded();
+      if (centered)
+        await target.evaluate((element) =>
+          element.scrollIntoView({
+            block: "center",
+            inline: "nearest",
+            behavior: "instant",
+          }),
+        );
+      else await target.scrollIntoViewIfNeeded();
       const a = await details.boundingBox(),
         b = await target.boundingBox();
       expect(b!.y).toBeGreaterThanOrEqual(a!.y);
@@ -663,7 +671,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       description:
         "Read the route rules beside the unsent plan. Range and speed are distinct; opening help does not pause the campaign or send the fleet.",
       action: async () => {
-        await routeRead(helpSummary);
+        await routeRead(helpSummary, true);
         await helpSummary.focus();
         await helpSummary.press("Enter");
         await helpSummary.evaluate((element) =>
