@@ -1,0 +1,82 @@
+[
+  {
+    "image": "010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+    "actualSha256": "85ef1d12ae8a869c8a31d3568288cd71e2a04a941020762a8db5e7103d426067"
+  },
+  {
+    "image": "010-inspect-owned-focus-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/010-inspect-owned-focus-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  },
+  {
+    "image": "011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+    "actualSha256": "26a25d08cbb0a83d370f2cbb3f9f119e784cbd91ac034cedda5a76d47f83f2b1"
+  },
+  {
+    "image": "011-edit-partial-allocation-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/011-edit-partial-allocation-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  },
+  {
+    "image": "012-navigate-with-intent-1-market-envoy-campaign-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+    "actualSha256": "53020dd4970029585f5432775277c925a1dc2930ea2709770fff19e957cc1249"
+  },
+  {
+    "image": "012-navigate-with-intent-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/012-navigate-with-intent-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  },
+  {
+    "image": "013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+    "actualSha256": "9a00289bafc13dc77e88d9db1278b1e1d3cd085db369bc9689743e07c786c693"
+  },
+  {
+    "image": "013-sign-out-original-commander-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/013-sign-out-original-commander-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  },
+  {
+    "image": "014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+    "actualSha256": "6a9a4101d50a76aa032e7309d8c0e2dfe7ded3224b3221945cd06bfde84a9ace"
+  },
+  {
+    "image": "014-reuse-browser-as-saved-peer-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  },
+  {
+    "image": "015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+    "actualSha256": "baa3887784077273b2064a775dcfed991358af3945a9a96a5335d9dc2e5846e1"
+  },
+  {
+    "image": "015-edit-second-account-intent-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/015-edit-second-account-intent-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  },
+  {
+    "image": "016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+    "actualSha256": "9a00289bafc13dc77e88d9db1278b1e1d3cd085db369bc9689743e07c786c693"
+  },
+  {
+    "image": "016-sign-out-second-commander-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/016-sign-out-second-commander-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  },
+  {
+    "image": "017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+    "actualSha256": "ea54d50788bd449f9a708a4f8797de16ba3b2e0711d2a075403212ed29b91bb5"
+  },
+  {
+    "image": "017-return-to-original-saved-identity-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/market-draft-account-isolation/large/darwin-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+    "actualSha256": "2692b1397a8344f1e7656f47c62d4d7431b3f9e293aee9183daaae98242283a4"
+  }
+]

@@ -365,3 +365,7 @@ The campaign-admission-navigation and encryption-unavailable stories now disting
 ## Guarded late private-view membership revocation
 
 `market-membership-revocation.story.spec.ts` exercises UX-06/14/16 with seven named player steps and explicitly separate administrative/digest harness steps. Four local strict cases/56 exact captures prove actual read denial, unchanged digest release without protected-state resurrection, exact authorization restoration and25-point recovery instead of old partial intent. Owner/other-player viewpoints, canonical history, receipt/privacy conservation, keyboard and normal/reduced-motion navigation are retained. Twelve predecessor sign-out/departure stories140 unchanged captures also pass. [Scope, guards and evidence](../design/LATE_VIEW_REVOCATION_REVIEW.md). Same-browser different-account reuse, managed-key fault, Linux/independent/hosted and original raster gates remain open.
+
+## Same-browser saved market identities
+
+`market-account-isolation.story.spec.ts` adds eight named player steps, two-way saved-account reuse without identity resave, distinct unsent drafts, full canonical/private/receipt equality, keyboard and normal/reduced navigation. Four local strict cases64 captures pass, with four unchanged remote-session cases64 captures. [Scope/evidence](../design/MARKET_ACCOUNT_ISOLATION_REVIEW.md). Route unmount precedes ordinary sign-out; mounted late-callback coverage remains separate. Accepted-order recovery, Linux/independent/hosted and original raster gates remain open.
