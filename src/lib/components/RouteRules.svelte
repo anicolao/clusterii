@@ -25,7 +25,7 @@
   <p>
     Choose up to {rules.maximumWaypoints} waypoints. Consecutive waypoints must differ,
     and the final destination must differ from the origin. Every leg must be in range.
-    The service checks the route when you send it and again before each departure.
+    Your route is checked when you send it and again before each departure.
   </p>
   <h3>Drafts and orders</h3>
   <p>

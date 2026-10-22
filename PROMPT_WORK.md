@@ -466,3 +466,5 @@ Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | G
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Center the rule disclosure reading target after short-viewport fractional edge clipping; retain exact containment checks.
 
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Keep contextual route-rule copy focused on player decisions rather than backend terminology.
+
+Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Apply the verified route-copy replacement after the first whitespace-sensitive edit changed only its work log.
