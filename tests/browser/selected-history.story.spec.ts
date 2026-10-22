@@ -735,9 +735,18 @@ test("Selected history reaches only a consenting commander and survives reload",
         await composer(owner).fill(startingDraft);
       },
       acknowledgement: {
-        spec: "Browser storage acknowledges the saved draft.",
-        check: async () =>
-          expect(draftStatus(owner)).toHaveText("Draft saved on this browser."),
+        spec: "Browser storage acknowledges the saved draft without presenting it as a sent message.",
+        check: async () => {
+          await expect(draftStatus(owner)).toHaveText(
+            "Draft saved on this browser.",
+          );
+          await expect(
+            panel(owner).getByRole("group", {
+              name: "Conversation acknowledgement",
+            }),
+          ).not.toContainText("Message sent.");
+          await expect(composer(owner)).toHaveValue(startingDraft);
+        },
       },
       verifications: [noErrors, draftsPrivate],
       views: [view(0)],
