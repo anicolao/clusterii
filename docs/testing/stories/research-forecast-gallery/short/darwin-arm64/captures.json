@@ -7,31 +7,46 @@
   {
     "image": "002-read-pending-forecast-1-developer-pending-forecast.png",
     "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/002-read-pending-forecast-1-developer-pending-forecast.png",
-    "actualSha256": "ebaa3ada1d3ca031892cdf5669b175fc12e028bf5db7bc631195aab39cff0183"
+    "actualSha256": "173ed485c29d00626859316a1ec8d1227909d5c1abb424fba4a052a67b7c2527"
   },
   {
-    "image": "003-close-pending-forecast-1-developer-pending-collapsed.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/003-close-pending-forecast-1-developer-pending-collapsed.png",
+    "image": "003-read-pending-qualification-1-developer-pending-qualification.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/003-read-pending-qualification-1-developer-pending-qualification.png",
+    "actualSha256": "45b19f449533dfbfaa68e39c4f584b0a101fa84135fb0a938de93d67e856ff5b"
+  },
+  {
+    "image": "004-close-pending-forecast-1-developer-pending-collapsed.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png",
     "actualSha256": "07155e6be7efc2f0bb271359271630de170f120c2c9e7f9a30c470bc2f530552"
   },
   {
-    "image": "004-read-disabled-forecast-1-developer-disabled-forecast.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/004-read-disabled-forecast-1-developer-disabled-forecast.png",
-    "actualSha256": "f310e9abef7d9998c0e68d2fb950dd51678b5a7b379caf272283d9668667bf5e"
+    "image": "005-read-disabled-forecast-1-developer-disabled-forecast.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png",
+    "actualSha256": "b5495cc38a23e351c1da06e63edb833042a0aefa5229403337e62c6b201336d1"
   },
   {
-    "image": "005-close-disabled-forecast-1-developer-disabled-collapsed.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/005-close-disabled-forecast-1-developer-disabled-collapsed.png",
+    "image": "006-read-disabled-qualification-1-developer-disabled-qualification.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png",
+    "actualSha256": "a9a59f2fdcf73861967348b91288c7ba3ada533f5625f4bf492292ecd8bc7c60"
+  },
+  {
+    "image": "007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png",
     "actualSha256": "5316c49a6d16a35646455f84ef2712928050750ce2d2b5a7de8d41654763bce1"
   },
   {
-    "image": "006-read-applied-forecast-1-developer-applied-forecast.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/006-read-applied-forecast-1-developer-applied-forecast.png",
-    "actualSha256": "725d472b9f218347a724ce15ce0dcf07bb47793c09e71d82f1fc2ef061cad0b5"
+    "image": "008-read-applied-forecast-1-developer-applied-forecast.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/008-read-applied-forecast-1-developer-applied-forecast.png",
+    "actualSha256": "f2ba96ae2d38591816e5253fc339f05073fcfbc0066a91857ac9aee2c5723aef"
   },
   {
-    "image": "007-close-applied-forecast-1-developer-applied-collapsed.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/007-close-applied-forecast-1-developer-applied-collapsed.png",
+    "image": "009-read-applied-qualification-1-developer-applied-qualification.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/009-read-applied-qualification-1-developer-applied-qualification.png",
+    "actualSha256": "ae4f44d52c667666d4b50d63ad0af494280d3485f746c1f0fcce8d498515ee26"
+  },
+  {
+    "image": "010-close-applied-forecast-1-developer-applied-collapsed.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/research-forecast-gallery/short/darwin-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png",
     "actualSha256": "dad550b5a9cdc921383d5e87b1631a4936837c5d97588189df357e00b628d2ba"
   }
 ]
