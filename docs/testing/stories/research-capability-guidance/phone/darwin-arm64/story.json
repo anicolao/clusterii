@@ -1,0 +1,325 @@
+{
+  "id": "research-capability-guidance",
+  "title": "Read research effects before committing science",
+  "inventory": [
+    "UX-06",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four saved commanders enter an authoritative development campaign. A commander reads all eight research choices through keyboard controls while another player's private state remains unchanged. Reading and choosing do not submit an order. Capability flags come from the real private projection. Fixed admission/catalogue clocks and developer entitlement are explicitly labelled harness controls; this is not hosted scheduling or full research-effect acceptance.",
+  "source": {
+    "commit": "c38ea5f63d61111c8b42593bb7d0b3b6021ed45a",
+    "dirty": false,
+    "spec": "tests/browser/research-guidance.story.spec.ts",
+    "specSha256": "e6eeb4f4c069cc97f458e00fa4852072a93d65f8d23d2cdda76ca37618090dd4"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Set the designated browser/domain clock to12:15 UTC and deliver the real Scheduler HTTP request. Authentication remains real. This is not hosted scheduling certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "open-authoritative-science",
+      "description": "Open each commander's economy through keyboard controls and inspect the saved research target.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Both private instruments show the authoritative navigation selection before any draft change.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "010-open-authoritative-science-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "010-open-authoritative-science-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-scanning",
+      "description": "Use the keyboard to inspect scanning. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "011-read-scanning-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-navigation",
+      "description": "Use the keyboard to inspect navigation. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "012-read-navigation-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-terraforming",
+      "description": "Use the keyboard to inspect terraforming. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "013-read-terraforming-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-investing",
+      "description": "Use the keyboard to inspect investing. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "014-read-investing-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-formations",
+      "description": "Use the keyboard to inspect formations. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "015-read-formations-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-melee",
+      "description": "Use the keyboard to inspect melee. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "016-read-melee-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-recruiting",
+      "description": "Use the keyboard to inspect recruiting. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "017-read-recruiting-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-innovation",
+      "description": "Use the keyboard to inspect innovation. Read the effect before choosing whether to queue; no research order is sent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "018-read-innovation-1-market-envoy-campaign-device.png",
+          "verifications": [
+            "The complete selected explanation and queue control remain readable in the bounded research panel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close-without-order",
+      "description": "Close the instrument with Escape after reading. Research continues on the recorded target; inspecting a choice is not an acknowledged order.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Galaxy focus returns to Economy and the research instrument closes without changing the campaign.",
+      "verifications": [
+        "No research write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "019-close-without-order-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "019-close-without-order-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

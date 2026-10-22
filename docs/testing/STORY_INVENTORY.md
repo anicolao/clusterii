@@ -369,3 +369,7 @@ The campaign-admission-navigation and encryption-unavailable stories now disting
 ## Same-browser saved market identities
 
 `market-account-isolation.story.spec.ts` adds eight named player steps, two-way saved-account reuse without identity resave, distinct unsent drafts, full canonical/private/receipt equality, keyboard and normal/reduced navigation. Four local strict cases64 captures pass, with four unchanged remote-session cases64 captures. [Scope/evidence](../design/MARKET_ACCOUNT_ISOLATION_REVIEW.md). Route unmount precedes ordinary sign-out; mounted late-callback coverage remains separate. Accepted-order recovery, Linux/independent/hosted and original raster gates remain open.
+
+## Live research guidance and native radio containment
+
+`research-guidance.story.spec.ts` adds ten named steps reading all eight current-capability effects through real saved campaign views. Four local strict cases48 captures retain canonical/private/receipt equality, focus and actual radio hit testing; four shared research-lab cases96 captures retain acknowledged fixture states and motion parity. [Scope and diagnosed geometry failures](../design/RESEARCH_GUIDANCE_REVIEW.md). Live submission/completion migration and historical-capability browser cases remain open; this does not replace service/procedural assertions or close independent/Linux/hosted/raster gates.

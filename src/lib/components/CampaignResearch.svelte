@@ -8,6 +8,9 @@
   import Feedback from "./Feedback.svelte";
   let {
     research,
+    scanningEnabled = false,
+    travelEnabled = false,
+    constructionEnabled = false,
     paused = false,
     busy = false,
     pending = false,
@@ -18,6 +21,9 @@
     inspect,
   }: {
     research: ResearchState;
+    scanningEnabled?: boolean;
+    travelEnabled?: boolean;
+    constructionEnabled?: boolean;
     paused?: boolean;
     busy?: boolean;
     pending?: boolean;
@@ -40,20 +46,27 @@
   const selected = $derived(
     choice ?? research.orders?.at(-1)?.target ?? research.target,
   );
-  const descriptions: Record<Technology, string> = {
-    scanning:
-      "Improves sensing range. Intelligence reports are not available yet.",
-    navigation:
-      "Increases permitted route range. Fleet travel is not available yet.",
-    terraforming:
-      "Raises resource extraction. Construction is not available yet.",
+  const descriptions: Record<Technology, string> = $derived({
+    scanning: scanningEnabled
+      ? "Improves the chance of acquiring distant observations. Reports retain their recorded age; research does not reveal every system."
+      : "This campaign retains its recorded intelligence rules. Stellar observations are available in new development campaigns.",
+    navigation: travelEnabled
+      ? `Allows route legs up to ${rules.navigationLyPerLevel} light years per level. Range does not change fleet speed.`
+      : "This campaign retains its recorded travel rules. Fleet routes are available in new development campaigns.",
+    terraforming: constructionEnabled
+      ? "Raises resource extraction and the capacity for each development type at your systems."
+      : "Raises resource extraction. This campaign retains its recorded construction rules.",
     investing: "Raises total market income before distribution to systems.",
-    formations: "Improves fighter effectiveness. Combat is not available yet.",
-    melee: "Improves infantry effectiveness. Combat is not available yet.",
+    formations: travelEnabled
+      ? "Improves fighter effectiveness in orbital combat. Arrival reports record your forces and losses."
+      : "This campaign retains its recorded travel rules. Orbital combat is available in new development campaigns.",
+    melee: travelEnabled
+      ? "Improves infantry effectiveness in surface combat. Orbital and surface control remain separate."
+      : "This campaign retains its recorded travel rules. Surface combat is available in new development campaigns.",
     recruiting: "Raises infantry production at each controlled surface.",
     innovation:
       "Raises total science output before allocation to the selected track.",
-  };
+  });
 </script>
 
 <section class="research-instrument" aria-label="Research selection">
@@ -75,31 +88,33 @@
   >
     <fieldset disabled={busy || pending || paused}>
       <legend>Research target</legend>
-      {#each technologies as technology}
-        <label>
-          <input
-            type="radio"
-            name="research-target"
-            value={technology}
-            checked={selected === technology}
-            onfocus={showChoice}
-            onchange={(event) => {
-              choice = technology;
-              showChoice(event);
-            }}
-          />
-          <span
-            ><strong>{technology}</strong><small
-              >Level {research.levels[technology]} · {(
-                research.progressMilli[technology] / 1000
-              ).toLocaleString()} science{research.levels[technology] ===
-              rules.maximumResearchLevel
-                ? " banked"
-                : " retained"}</small
-            ></span
-          >
-        </label>
-      {/each}
+      <div class="research-tracks">
+        {#each technologies as technology}
+          <label>
+            <input
+              type="radio"
+              name="research-target"
+              value={technology}
+              checked={selected === technology}
+              onfocus={showChoice}
+              onchange={(event) => {
+                choice = technology;
+                showChoice(event);
+              }}
+            />
+            <span
+              ><strong>{technology}</strong><small
+                >Level {research.levels[technology]} · {(
+                  research.progressMilli[technology] / 1000
+                ).toLocaleString()} science{research.levels[technology] ===
+                rules.maximumResearchLevel
+                  ? " banked"
+                  : " retained"}</small
+              ></span
+            >
+          </label>
+        {/each}
+      </div>
     </fieldset>
     <p class="effect">{descriptions[selected]}</p>
     <div
@@ -177,6 +192,9 @@
     border: 0;
     padding: 0;
     margin: 16px 0;
+    min-width: 0;
+  }
+  .research-tracks {
     display: grid;
     gap: 8px;
     max-height: min(320px, 20dvh);

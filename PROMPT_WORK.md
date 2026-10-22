@@ -527,4 +527,24 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | A
 
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Attach PR86 dependency and preview gates before continuing capability-aware research guidance
 
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Correct stale research guidance from stored campaign capabilities and add a live eight-track reading story
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Fix construction guidance capability after retained new-campaign ledger-null failure
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Reproduce nested bounded-scroll false occlusion and retain real-overlay rejection while auditing all ancestors
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Fix diagnosed native fieldset legend occlusion and carry reviewer 10:19 service-receipt finding for follow-up
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Review corrected research and shared-lab candidates separately before strict verification
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Archive 144 exact research captures with retained failure diagnosis and the separate profile-receipt investigation gate
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Attach PR87 and reviewer 10:29 checkpoint, retaining negative receipt reproduction and exact disk blocker
+
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Propagate PR85 read-only timeout diagnostics into PR86 without changing account-isolation behavior
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Propagate validated profile timeout diagnostics through PR87 and retain reviewer checkpoints through 10:39
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Record the below-threshold disk blocker and exact unexecuted shared-research comparison restart
+
+Prompt 82 | c86097b8d680f74fa6eebd1840d7c96645d22e86d41368e868d9185db03b79c5 | Retain the demo database delivery log with application evidence for the next persisted-ingress recurrence.
