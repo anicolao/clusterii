@@ -52,7 +52,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
     title: "Choose, switch and recover acknowledged research",
     inventory: ["UX-06", "UX-14", "UX-16"],
     description:
-      "Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a disconnected second device submits a stale revision for rejection. The guarded demo clock changes only designated domain time. No completion, overflow or hosted acceptance is claimed.",
+      "Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. No completion, overflow or hosted acceptance is claimed.",
   });
   const contexts: BrowserContext[] = [],
     pages: Page[] = [],
@@ -114,7 +114,9 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       receipts: saved.docs.map((d: { id: string }) => d.id).sort(),
     };
   };
-  const newDevice = async () => {
+  let holdingResearch = false;
+  const heldResearch: { release: () => void }[] = [];
+  const newDevice = async (interrupt = false) => {
     const ctx = await browser.newContext({
       viewport: info.project.use.viewport,
       baseURL: info.project.use.baseURL,
@@ -125,6 +127,37 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       reducedMotion: "reduce",
     });
     contexts.push(ctx);
+    if (interrupt)
+      await ctx.routeWebSocket(/127\.0\.0\.1:19000/, (socket) => {
+        const server = socket.connectToServer();
+        let active = true;
+        socket.onClose(() => {
+          active = false;
+          server.close();
+        });
+        socket.onMessage((raw) => {
+          let frame;
+          try {
+            frame = JSON.parse(String(raw));
+          } catch {}
+          if (
+            holdingResearch &&
+            frame?.d?.a === "p" &&
+            frame.d.b?.d?.kind === "research.select"
+          ) {
+            heldResearch.push({
+              release: () => {
+                expect(
+                  active,
+                  "The original command transport remains connected",
+                ).toBe(true);
+                server.send(raw);
+              },
+            });
+          } else server.send(raw);
+        });
+        server.onMessage((raw) => socket.send(raw));
+      });
     const page = await ctx.newPage();
     observedWrites.set(page, researchWrites(page));
     page.on("pageerror", (e) => errors.push(e.message));
@@ -336,6 +369,8 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           ).toBeChecked();
           expect(await receipts(uid)).toEqual(receiptsBefore);
           expect(observedWrites.get(owner)).toEqual([]);
+          await research(owner).locator(".effect").scrollIntoViewIfNeeded();
+          await expect(button(owner, "Queue investing")).toBeVisible();
         },
       },
       verifications: [privacy],
@@ -380,7 +415,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       verifications: [privacy],
       views: [ownerView],
     });
-    const stale = await newDevice();
+    const stale = await newDevice(true);
     await story.harness(
       "second-saved-device",
       "Ordinary sign-in on a second device uses the same saved identity without resaving it; no campaign command is injected.",
@@ -400,44 +435,12 @@ test("Live research orders preserve choices and acknowledge switches", async ({
     );
     const staleRevision = (await canonical()).revision;
     await story.harness(
-      "disconnect-second-device",
-      "Harness fault: disconnect the second browser after its older revision is visible. No state or receipt is fabricated.",
+      "hold-original-command",
+      "Harness fault: hold only original research ingress frames. Authentication/key requests and private-view updates remain real; no payload is rewritten.",
       async () => {
-        await stale.context().setOffline(true);
+        holdingResearch = true;
       },
     );
-    await story.harness(
-      "normal-motion-owner",
-      "Use normal motion on the current device; outcome assertions remain identical and captures wait for finite motion.",
-      async () => {
-        await owner.emulateMedia({ reducedMotion: "no-preference" });
-      },
-    );
-    await story.step("switch-current-device", {
-      actor: aliases[0],
-      description:
-        "Commit innovation while the disconnected device retains the older revision.",
-      action: async () => {
-        await choose(owner, "innovation");
-        await keyboard(owner, "Queue innovation");
-      },
-      acknowledgement: {
-        spec: "Two distinct accepted orders preserve sequence, first order and progress before settlement.",
-        check: async () => {
-          await expect(research(owner).getByRole("status")).toContainText(
-            "Research order accepted",
-          );
-          const second = await accepted("innovation", 2);
-          expect(second.sequence).toBeGreaterThan(first.sequence);
-          expect(second.id).not.toBe(first.id);
-          expect((await canonical()).economy!.research[uid].orders![0]).toEqual(
-            first,
-          );
-        },
-      },
-      verifications: [privacy],
-      views: [ownerView, peerView],
-    });
     let durable: PendingCampaign | undefined;
     const readDurable = () =>
       stale.evaluate(
@@ -463,26 +466,27 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           }),
         uid,
       );
-    await story.step("submit-disconnected-choice", {
+    await story.step("submit-held-choice", {
       actor: aliases[0] + " · second device",
       description:
-        "Submit recruiting from the disconnected device's stale revision. Waiting is not acceptance.",
+        "Submit recruiting from the second device's current revision. Waiting is not acceptance.",
       action: async () => {
         await choose(stale, "recruiting");
         await keyboard(stale, "Queue recruiting");
       },
       acknowledgement: {
-        spec: "The second device waits; authority still has only two accepted orders.",
+        spec: "The second device waits; authority still has only the first accepted order.",
         check: async () => {
           await expect(
             button(stale, "Awaiting acknowledgement…"),
           ).toBeVisible();
+          await expect.poll(() => heldResearch.length).toBeGreaterThan(0);
           durable = await readDurable();
           expect(durable?.kind).toBe("research.select");
           expect(durable?.gameId).toBe(id);
           expect(
             (await canonical()).economy!.research[uid].orders,
-          ).toHaveLength(2);
+          ).toHaveLength(1);
         },
       },
       verifications: [privacy],
@@ -494,12 +498,48 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         },
       ],
     });
+    await story.harness(
+      "normal-motion-owner",
+      "Use normal motion on the current device; outcome assertions remain identical and captures wait for finite motion.",
+      async () => {
+        await owner.emulateMedia({ reducedMotion: "no-preference" });
+      },
+    );
+    await story.step("switch-current-device", {
+      actor: aliases[0],
+      description:
+        "Commit innovation while the second device has an unacknowledged original command.",
+      action: async () => {
+        await choose(owner, "innovation");
+        await keyboard(owner, "Queue innovation");
+      },
+      acknowledgement: {
+        spec: "Two distinct accepted orders preserve sequence, first order and progress before settlement.",
+        check: async () => {
+          await expect(research(owner).getByRole("status")).toContainText(
+            "Research order accepted",
+          );
+          const second = await accepted("innovation", 2);
+          expect(second.sequence).toBeGreaterThan(first.sequence);
+          expect(second.id).not.toBe(first.id);
+          const confirmed = await canonical();
+          await owner.emulateMedia({ reducedMotion: "reduce" });
+          expect(await canonical()).toEqual(confirmed);
+          expect((await canonical()).economy!.research[uid].orders![0]).toEqual(
+            first,
+          );
+        },
+      },
+      verifications: [privacy],
+      views: [ownerView, peerView],
+    });
     const beforeReconnect = await receipts(uid);
     await story.harness(
-      "restore-second-transport",
-      "Restore transport for the existing outbox; never rewrite or redeliver ingress from the harness.",
+      "release-original-command",
+      "Release the exact held frames after the competing order is accepted. No synthesized request, extra write or rewritten payload.",
       async () => {
-        await stale.context().setOffline(false);
+        holdingResearch = false;
+        for (const held of heldResearch) held.release();
       },
     );
     await story.step("review-stale-rejection", {

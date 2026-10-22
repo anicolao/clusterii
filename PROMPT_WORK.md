@@ -552,3 +552,5 @@ Prompt 82 | c86097b8d680f74fa6eebd1840d7c96645d22e86d41368e868d9185db03b79c5 | R
 Prompt 82 | c86097b8d680f74fa6eebd1840d7c96645d22e86d41368e868d9185db03b79c5 | Propagate profile entry/settlement diagnostics and delivery-log retention from PR87 into research draft PR88.
 
 Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | Bind the research story ingress read to the demo database after preserving all four failed candidate traces.
+
+Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | Preserve renderer failure and correct motion capture plus original-frame interruption without changing command assertions.
