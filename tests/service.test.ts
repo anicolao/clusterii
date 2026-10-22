@@ -5890,3 +5890,78 @@ test("concurrent profile ingress preserves every command identity and single eff
     expect(new Set(results).size).toBe(4);
   }
 }, 120000);
+
+for (const mode of ["mock", "real"] as const)
+  (mode === "real" && process.env.CLUSTER_KMS_TEST !== "true" ? test.skip : test)(
+    `research completion persistence ${mode}: leased overflow, following-tick effect and private history`,
+    async () => {
+      const { createRequire } = await import("node:module");
+      const require = createRequire(new URL("../functions/package.json", import.meta.url));
+      const admin = require("firebase-admin/app");
+      if (!admin.getApps().length) admin.initializeApp({ projectId });
+      const db = require("firebase-admin/firestore").getFirestore();
+      const { startDueCampaign } = await import("../functions/src/campaigns");
+      const { settleCampaignTicks } = await import("../functions/src/production");
+      const players = [];
+      for (let i = 0; i < 4; i++) {
+        const c = await client(`completion-${i}-${crypto.randomUUID()}`);
+        await developer(c);
+        await saveIdentity(c);
+        players.push(c);
+      }
+      const [owner, peer] = players, id = crypto.randomUUID();
+      expect((await campaignCommand(owner, id, {
+        kind: "campaign.create", expectedRevision: 0, name: "Persisted research completion",
+        capacity: 4, mode, development: true,
+      })).receipt.status).toBe("accepted");
+      for (let i = 0; i < 4; i++)
+        expect((await campaignCommand(players[i], id, {
+          kind: "campaign.join", expectedRevision: i + 1, faction: (["heliac", "pelagic", "vesper", "dracon"] as const)[i],
+        }, mode)).receipt.status).toBe("accepted");
+      const head = db.doc(`campaignStates/${id}`);
+      const start = (await head.get()).get("startAt");
+      await startDueCampaign(id, start);
+      const selected = await campaignCommand(owner, id, {
+        kind: "research.select", expectedRevision: 6, target: "innovation",
+      }, mode);
+      expect(selected.receipt.status).toBe("accepted");
+      const history = (c: typeof owner) => readCampaignHistory(c.firestore, c.functions, id, c.uid);
+      const pending = (await history(owner)).records[0];
+      const order = pending.economy!.research.orders![0];
+      expect(order.effectiveTick).toBe(1);
+      // Harness clock only: sixteen real leased settlements, no stored-state injection.
+      expect(await settleCampaignTicks(id, () => start + 14 * 900000)).toBe(14);
+      const before = (await history(owner)).records[0];
+      expect(before.economy!.research.levels.innovation).toBe(0);
+      expect(before.economy!.research.progressMilli.innovation).toBe(19600);
+      expect(before.economy!.ledger!.scienceMilli).toBe(1400);
+      const deliveries = await Promise.all([
+        settleCampaignTicks(id, () => start + 15 * 900000),
+        settleCampaignTicks(id, () => start + 15 * 900000),
+      ]);
+      expect(deliveries.reduce((a, b) => a + b, 0)).toBe(1);
+      const complete = (await history(owner)).records[0];
+      expect(complete.economy!.research.levels.innovation).toBe(1);
+      expect(complete.economy!.research.progressMilli.innovation).toBe(1000);
+      expect(complete.economy!.ledger!.scienceMilli).toBe(1400);
+      expect(complete.economy!.research.lastApplied).toEqual(order);
+      expect(await settleCampaignTicks(id, () => start + 15 * 900000)).toBe(0);
+      expect(await settleCampaignTicks(id, () => start + 16 * 900000)).toBe(1);
+      const ownerHistory = (await history(owner)).records;
+      const final = ownerHistory[0];
+      expect(final.economy!.research.progressMilli.innovation).toBe(2404);
+      expect(final.economy!.ledger!.scienceMilli).toBe(1404);
+      expect(final.revision).toBe(23);
+      const peerHistory = (await history(peer)).records;
+      expect(peerHistory[0].economy!.research.target).toBe("navigation");
+      expect(peerHistory[0].economy!.research.progressMilli.navigation).toBe(22400);
+      expect(peerHistory[0].economy!.ledger!.scienceMilli).toBe(1400);
+      expect(JSON.stringify(peerHistory)).not.toContain(order.id);
+      await expect(getDoc(doc(peer.firestore, "campaignViews", id, "members", owner.uid))).rejects.toThrow();
+      expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(23);
+      // Reopen the authorized history after repeated delivery; every persisted revision is unchanged.
+      expect((await history(owner)).records).toEqual(ownerHistory);
+      expect((await history(peer)).records).toEqual(peerHistory);
+      expect((await getDoc(doc(owner.firestore, "campaignReceipts", owner.uid, "results", selected.ingress.key!))).data()).toEqual(selected.receipt);
+    }, 120000,
+  );

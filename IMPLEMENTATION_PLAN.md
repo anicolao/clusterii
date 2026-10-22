@@ -106,7 +106,7 @@ Add empire market focus, eligible construction-event accounting, and speculative
 
 ## 5. Implement research and intelligence
 
-Implementation evidence: [research forecast audit](docs/design/RESEARCH_FORECAST_REVIEW.md) records shared calculations and remaining browser/visual gates. [Earned cap and zero-rate progression](docs/design/RESEARCH_PROGRESSION_REVIEW.md) adds actual reducer/authorized-projection boundary coverage; service and illustrated player evidence remain open. Neither marks this milestone complete.
+Implementation evidence: [research forecast audit](docs/design/RESEARCH_FORECAST_REVIEW.md) records shared calculations and remaining browser/visual gates. [Earned cap and zero-rate progression](docs/design/RESEARCH_PROGRESSION_REVIEW.md) adds actual reducer/authorized-projection boundary coverage; service and illustrated player evidence remain open. [Persisted completion boundary](docs/design/RESEARCH_PERSISTENCE_REVIEW.md) verifies16 leased ticks, overflow/effect timing and private history through actual command ingress; managed-key execution and cap/zero-rate persistence remain open. None marks this milestone complete.
 
 Build research selection, costs, progress, level completion, and effective-tick handling. Implement all eight technologies through shared calculation functions:
 
