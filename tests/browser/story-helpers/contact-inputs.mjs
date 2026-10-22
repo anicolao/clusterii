@@ -1,5 +1,14 @@
 // Explicit illustrated-story entropy domains, not injected scan outcomes.
 export const contactPrefix = "Scheduled story fleet contacts ";
+/**
+ * @param {import("../../../shared/campaign.js").Campaign} current
+ * @param {import("../../../shared/campaign.js").Campaign} next
+ * @param {string} id
+ * @param {string} uid
+ * @param {string} target
+ * @param {number} tick
+ * @returns {[string, string, string, string, number]}
+ */
 export function contactInputs(current, next, id, uid, target, tick) {
   if (!current.name.startsWith(contactPrefix))
     return [current.seed, id, uid, target, tick];
@@ -15,7 +24,8 @@ export function contactInputs(current, next, id, uid, target, tick) {
     owner < 0 ||
     current.seed !== "0123456789abcdef".repeat(4) ||
     next.seed !== current.seed ||
-    !Number.isSafeInteger(fleet?.number) ||
+    !fleet ||
+    !Number.isSafeInteger(fleet.number) ||
     fleet.number < 1 ||
     next.economy?.tick !== tick
   )
@@ -28,6 +38,7 @@ export function contactInputs(current, next, id, uid, target, tick) {
     tick,
   ];
 }
+/** @param {string} source @param {NodeJS.ProcessEnv} env */
 export function instrumentContactSource(source, env) {
   if (
     env.GCLOUD_PROJECT !== "demo-clusterii" ||

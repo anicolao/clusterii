@@ -108,6 +108,8 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           ].sort(),
         );
       if (seat) {
+        if (!v.military)
+          throw new Error("Expected authorized military projection");
         expect(v.military.fleets).toEqual([]);
         expect(v.military.orders).toEqual([]);
         expect(v.military.ledger).toEqual([]);
@@ -485,10 +487,11 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       source = formed.galaxy.stars.find((s) => s.id === formed.seats[1].home)!,
       target = formed.galaxy.stars.find((s) => s.id === fleet.starId)!;
     const contactId = `${formed.seats.findIndex((s) => s.uid === fleet.uid)}:${fleet.number}`;
-    expect(
-      (await published(0)).military.fleets.find((f) => f.id === fleetId)
-        ?.number,
-    ).toBe(fleet.number);
+    const ownerMilitary = (await published(0)).military;
+    if (!ownerMilitary) throw new Error("Expected owner military projection");
+    expect(ownerMilitary.fleets.find((f) => f.id === fleetId)?.number).toBe(
+      fleet.number,
+    );
     const probability = detectionProbability(1, distance(source, target));
     const hit = (tick: number) =>
       observationDraw(
@@ -616,10 +619,14 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       },
       verifications: [
         {
-          spec: "Reload writes no new command, changes no canonical forces/history, and respects every recipient projection.",
+          spec: "Reload and normal/reduced-motion preferences preserve report facts, every recipient projection and authoritative forces/history without writing commands.",
           check: async () => {
+            await observer.emulateMedia({ reducedMotion: "no-preference" });
+            await matchContact(observer, retained!, false);
+            await rail(observer);
             expect(await canonical()).toEqual(beforeReload);
             await privacy();
+            await observer.emulateMedia({ reducedMotion: "reduce" });
           },
         },
       ],
