@@ -527,3 +527,15 @@ Reviewer continuation 2026-10-21 22:10 Toronto: #62 published cleanff1d616 on #6
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 23:46 Toronto”.
 
 Reviewer continuation 2026-10-21 23:46 Toronto: pane stopped with workspace routing discovery timed out at cleaneeb84e6. Resume the existing pause/catch-up slice and trace diagnosis; do not restart or duplicate work. Reviewed correction to zero stationed fleets after departure, retaining selection of the actual traveling fleet. Diagnose the 4K ten-second step using completed trace timing and bounded diagnostic scope; preserve assertions, exact pixels and original failure artifacts. Finish candidate review, strict comparison and appropriate regressions before publication. Carry checkpoints through23:46 into attributed logs and commit/push. Current CI has no newly completed failure beyond recorded #52 raster recurrence. No merge; retain full independent/Linux/preview gates.
+
+## Prompt 62: Linux failure triage
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 00:09 Toronto”.
+
+Reviewer finding 2026-10-22 00:09 Toronto (queue after current diagnostic): #58 and #62 Linux verification completed with36 and70 failures. Logs retained /tmp/cluster58-0008-failure.log and /tmp/cluster62-0008-failure.log from jobs119568677251/119594903701. These include missing reviewed Linux baselines AND additional admission/identity/maintenance locator timeouts plus function socket hangups; do not classify all as baseline or known raster failures. At a natural boundary inspect first causal service/trace failure and compare generation artifacts; review/promote only new candidate families with matching provenance, retain strict verification. No broad duplicate rerun or timeout relaxation. Carry this attributed finding and checkpoint into committed/pushed logs; no merge.
+
+## Prompt 63: Observation visual review
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:10 Toronto”.
+
+Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png. Observation card is readable, but map labels Tupa and Tania Australis overlap behind it around x40-90/y215-225; record and resolve as an actual rendered-UI issue, or retain explicitly open rather than approve full composition. Also #61 publication job119592171086 failed exact-head check for6504a4a with HTTP404; log /tmp/cluster61-preview-0109.log. Diagnose preview path/publication at next natural boundary; do not weaken exact-head gate or duplicate broad CI. Keep current healthy work moving and carry attributed findings into committed/pushed logs. No merge.
