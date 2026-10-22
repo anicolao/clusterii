@@ -1,5 +1,10 @@
 import type { CampaignView } from "@shared/campaign";
-import type { FleetOutcome } from "@shared/fleets";
+import type { FleetAction, FleetOutcome } from "@shared/fleets";
+export interface RecoveredFleetReorganization {
+  gameId: string;
+  id: string;
+  action: Extract<FleetAction, { kind: "fleet.split" | "fleet.merge" }>;
+}
 export interface AcceptedFleetCommand {
   gameId: string;
   id: string;
