@@ -1720,3 +1720,38 @@ Agent healthy ata86cd73 finalizing market draft slice. Eight strict journeys320 
 Exact handoff:
 
 Reviewer continuation 2026-10-22 07:59 Toronto: #81 4677fdb attached; exact-head publication now green, source review remains scoped and live account/access-loss acceptance open. Disk is now606MiB free: do not start large capture runs, artifact downloads or destructive cleanup. Continue useful low-output work by auditing existing extracted Linux identity-gallery source compatibility and existing evidence, and preparing the concrete live account/access-loss story plan or small source changes on a successor to #81 if safely possible; do not mark unexecuted checks passed. Preserve all failure/review evidence. Carry checkpoints through07:59 into reviewer-attributed committed/pushed logs where space permits. Report a concrete disk blocker rather than stopping as complete; no merge.
+
+
+## Reviewer progress — 2026-10-22 08:09 Toronto
+
+#82 e86e5e9 attached, draft stacked on #81; clean pushed audit/plan only, no new execution claims. Independently read lifecycle plan: real second-device account-wide sign-out while first remains mounted; separates active membership authorization fault from unsupported active Leave; specifies unchanged original delayed delivery, exact metadata restoration and fail-closed guards before fault execution. Plan remains unimplemented. Linux gallery audit reports84 byte-identical existing baselines and18 unchanged relevant files; no new promotion or raster-fix claim.
+
+Disk independently242MiB free, down from606MiB; agent stopped large output and completed authorized small audit. No further queued work forced under this constraint, no destructive cleanup or duplicate prompt. Carry checkpoint into next committed/pushed log once space allows. Full implementation/release and live revocation/independent visual/Linux/hosted/raster gates remain open; monitor stays active, no merge.
+
+
+## Reviewer checkpoint — 2026-10-22 08:19 Toronto
+
+Agent unchanged idle at clean/pushed e86e5e9 under documented disk blocker, no queued prompt. Headroom671MiB remains below prior996MiB candidate-plus-strict output and2GiB bounded-run target. #82 publication and #80 application verification now green; illustrated verification still running. No new acceptance, promotion, cleanup or merge. Avoid duplicate intervention; carry08:09/08:19 logs at next safe committed boundary. Full implementation and release review incomplete; monitor remains active.
+
+
+## Reviewer progress — 2026-10-22 08:29 Toronto
+
+Agent clean idle at e86e5e9. Headroom recovered1.5GiB; resume small implementation, retain2GiB capture gate. #80 Linux verification newly failed, retained job119796767333 full log /tmp/cluster80-0829-verify.log. No acceptance or merge.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 08:29 Toronto: disk recovered to1.5GiB; enough to resume small source work, still below documented2GiB capture threshold. Implement the real account-wide sign-out portion of MARKET_DRAFT_LIFECYCLE_PLAN as a small successor on #82 using existing TestStepHelper and actual session flow. Keep membership fault separate until guarded/reviewed. Perform low-output static checks and source review; defer large generation/strict runs until remeasured adequate headroom, clearly mark unexecuted coverage. Preserve existing evidence and avoid downloads/cleanup. #80 Linux failure log retained /tmp/cluster80-0829-verify.log; classify at logging boundary. Carry checkpoints08:09 through08:29 into attributed committed/pushed logs. Never merge or claim release completion.
+
+
+## Reviewer progress — 2026-10-22 08:39 Toronto
+
+Agent healthy ata91efce implementing real account-wide sign-out story; static checks/discovery pass. Independently reviewed mounted-document timeOrigin/navigation-count assertions, real completed session fence, unchanged canonical/private state checks and fresh original-account allocation recovery. Scope does not yet prove same-browser other-account or separate membership-fault clearing. Browser generation now starting; no executed/visual approval inferred.
+
+Disk independently6.3GiB, above2GiB gate; agent already resumed one bounded generation without duplicate instruction. #81 application verification now green, latest illustrated checks pending. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release/independent visual/Linux/hosted/original raster gates remain open. No merge.
+
+
+## Reviewer progress — 2026-10-22 08:49 Toronto
+
+Agent healthy atb462cbd publishing real remote-session-end story:4 strict journeys64 captures pass; independent prior source review plus phone015 shows protected campaign absent, readable sign-in remedy and visible keyboard focus. Scope remains local Auth Emulator, not hosted auth or separate membership/account-switch acceptance. PR creation transiently failed while push is still active; do not duplicate work. Disk5.5GiB.
+
+#81 Linux verification failed; full job119806587419 log retained /tmp/cluster81-0849-verify.log.59 missing baselines; pixel reports now include19340/37585/96672/33491 (some repeated) as well as1066/259/273/1994. These additional counts require classification, not automatic attribution to inherited stellar/identity causes. Carry checkpoint and classify at next committed/pushed logging boundary. No acceptance/merge; original raster, independent visual/Linux/hosted and full-release holds remain open.
