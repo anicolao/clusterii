@@ -519,6 +519,9 @@
           style="max-width:620px;margin-bottom:32px"
         >
           <CampaignResearch
+            scanningEnabled={true}
+            travelEnabled={true}
+            constructionEnabled={true}
             research={researchFrame(state === "applied" ? 3400 : 2400)}
             pending={state === "pending"}
             paused={state === "disabled"}

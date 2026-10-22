@@ -305,6 +305,9 @@
             />
           </div>
         {:else if selected === "research"}<CampaignResearch
+            scanningEnabled={true}
+            travelEnabled={true}
+            constructionEnabled={true}
             research={researchFrame(time)}
             inspect={{ time: time - frame.at, reduced }}
             pending={time < 1000}

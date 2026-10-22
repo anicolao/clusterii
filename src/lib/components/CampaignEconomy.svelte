@@ -237,6 +237,9 @@
         </section>{/if}
       {#if research && onresearch}<CampaignResearch
           {research}
+          scanningEnabled={view.scanningEnabled}
+          travelEnabled={view.travelEnabled}
+          constructionEnabled={view.construction != null}
           paused={view.pausedAt != null}
           {busy}
           {pending}
