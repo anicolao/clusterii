@@ -5959,7 +5959,7 @@ for (const mode of ["mock", "real"] as const)
       expect(JSON.stringify(peerHistory)).not.toContain(order.id);
       await expect(getDoc(doc(peer.firestore, "campaignViews", id, "members", owner.uid))).rejects.toThrow();
       expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(23);
-      // Reopen the authorized history after repeated delivery; every persisted revision is unchanged.
+      // Reopen the authorized history after repeated delivery; the latest returned history page is unchanged.
       expect((await history(owner)).records).toEqual(ownerHistory);
       expect((await history(peer)).records).toEqual(peerHistory);
       expect((await getDoc(doc(owner.firestore, "campaignReceipts", owner.uid, "results", selected.ingress.key!))).data()).toEqual(selected.receipt);
