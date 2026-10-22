@@ -16,3 +16,24 @@ The source chain is receipt digest validation → callback → clearOrder → tr
 Neither campaignKey request has a completed browser response in its trace (HAR time/status -1 at teardown). The newly created campaign has no seats yet: campaignKey should return `{ joined: false }`, then observeCampaign calls next(null) and clears loading. No private member-view subscription is expected before joining. The missing response therefore blocks this nonmember authorization result and faction selection; it is not evidence of a missing member projection. The demonstrated remaining boundary is authorization/view recovery after durable retirement, not historical persisted-but-unprocessed ingress. Earlier campaignSecurity requests return200 before the create click. Existing CLI execution-duration messages lack correlated browser receipt timestamps and do not establish where campaignKey response time was spent.
 
 Do not clear pending early, bypass IndexedDB, extend the assertion deadline or describe this as infrastructure flakiness. No such changes were made. If a focused diagnostic execution becomes necessary, its discriminating hypothesis is post-delete campaignKey transport/response versus browser handling of the authorized nonmember result. Capture a bounded test-only timestamp sequence for order transaction/delete/complete (without keys or values), fixed UI status transitions and callable request/response metadata; preserve the original5s assertion and account fences. A clean pass alone cannot resolve these historical timings. Expensive capture families stay separate.
+
+## Prompt97 bounded execution
+
+The reviewer15:49 handoff requests one discriminating diagnostic. `tests/diagnostics/admission-timing.ts` is an explicitly non-acceptance standalone probe, not a new procedural acceptance spec or an illustrated-story migration exception. It uses ordinary emulator authentication, identity save and campaign creation with the original five-second faction-heading assertion. Production sources and account fences are unchanged. Only one creator is needed at this boundary; the original four-player procedural regression remains open.
+
+The loopback-only browser probe records at most256 fixed event names/timestamps. Native IndexedDB calls retain arguments/results and transaction completion behavior; added listeners record only orders transaction/get/delete events. The fetch observer returns the original response, reads a clone asynchronously only to classify `joined:false`, and records no URL parameters, keys, values, identities, tokens or envelope contents. Fixed DOM state markers observe the resulting callback/UI transition rather than instrumenting the production callback. Clone parsing may finish after the SDK renders; it is not the callback timestamp.
+
+One execution passed the unchanged5s assertion. [Redacted timing evidence](evidence/admission-timing-20261022.json): retirement transaction0.6ms; transaction completion→campaignKey request1.5ms; request→HTTP response459.4ms; response→faction heading1.3ms. The nonmember clone classification followed the heading by1.8ms. This is a passing negative reproduction, not a fix or explanation of either historical failure. No retry, deadline change, early pending release or baseline change occurred. Original Queue/recovery/shared/feedback holds remain.
+
+Execution log: `/tmp/cluster-admission-timing-probe-execution.log`. An earlier launcher attempt stopped before browser execution because Java was absent from PATH (`/tmp/cluster-admission-timing-probe.log`); adding the existing Java21 path enabled the single execution. TypeScript no-emit check passed. No illustrated images or full-family capture run was requested or produced.
+
+Restart (only for a new discriminating hypothesis, not retry-until-green): build Functions and the emulator-enabled app, serve the existing static build at4173, then:
+
+```sh
+PATH=/nix/store/vnycnlns50zkb0pns9rd7vhpv3m0fxc4-zulu-ca-jdk-21.0.8/bin:$PATH \
+CLUSTER_ADMISSION_TIMING_OUTPUT=/tmp/cluster-admission-timing-next.json \
+bunx firebase emulators:exec --project demo-clusterii --only auth,functions,firestore,database \
+  'bun tests/diagnostics/admission-timing.ts'
+```
+
+No production admission change is justified by this execution. Next service scope is16 real leased research ticks, verifying persisted completion/overflow/following-tick effect and peer privacy; cap/zero-rate remain reducer-only until separately exercised through persistence.

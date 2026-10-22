@@ -1,0 +1,79 @@
+{
+  "scope": "single-creator diagnostic; no acceptance captures",
+  "passed": true,
+  "stage": "original-five-second-heading",
+  "events": [
+    {
+      "at": 1792698879186.6,
+      "event": "action.create"
+    },
+    {
+      "at": 1792698879216.2,
+      "event": "orders.transaction.start",
+      "sequence": 1
+    },
+    {
+      "at": 1792698879216.3,
+      "event": "orders.get.start"
+    },
+    {
+      "at": 1792698879216.4,
+      "event": "orders.get.success"
+    },
+    {
+      "at": 1792698879216.4,
+      "event": "orders.transaction.complete",
+      "sequence": 1
+    },
+    {
+      "at": 1792698879802.5,
+      "event": "orders.transaction.start",
+      "sequence": 2
+    },
+    {
+      "at": 1792698879802.5,
+      "event": "orders.get.start"
+    },
+    {
+      "at": 1792698879802.5,
+      "event": "ui.saving"
+    },
+    {
+      "at": 1792698879802.9,
+      "event": "orders.get.success"
+    },
+    {
+      "at": 1792698879803,
+      "event": "orders.delete.start"
+    },
+    {
+      "at": 1792698879803.1,
+      "event": "orders.delete.success"
+    },
+    {
+      "at": 1792698879803.1,
+      "event": "orders.transaction.complete",
+      "sequence": 2
+    },
+    {
+      "at": 1792698879803.7,
+      "event": "ui.created+recovering"
+    },
+    {
+      "at": 1792698879804.6,
+      "event": "campaignKey.request"
+    },
+    {
+      "at": 1792698880264,
+      "event": "campaignKey.response.ok"
+    },
+    {
+      "at": 1792698880265.3,
+      "event": "ui.created+faction-heading"
+    },
+    {
+      "at": 1792698880267.1,
+      "event": "campaignKey.response.nonmember"
+    }
+  ]
+}
