@@ -1,0 +1,9 @@
+# Private draft candidate review
+
+Source clean ffc29652cd608a487c747b5e4aaac0c0b70c1533; spec SHA256 e9bba1cf1271624615cf7ccb2ae77659350db9b7b52600f8bc7929e3bc63a189. Four viewport candidates pass20.7/19.6/40.8/19.1 seconds. Log `/tmp/cluster-draft-final-candidates.log`; tree `/tmp/cluster-draft-final-candidates`. All100 predecessor images retain identical decoded pixels. Approve only36 new local darwin-arm64 images for exact comparison, not any inherited baseline change.
+
+Reviewed32 distinct new compositions through phone originals, four-size contact sheets and native4K conflict-footer inspection. Draft text, competing local text, both explicit remedies, disabled Send during conflict, chosen saved text, acknowledged sent message and recovered empty composer are readable. Footer containment and keyboard choice/send are asserted; sent history is fully read inside its bounded panel. Outsider captures retain no room/message, with removed-member/outsider projection checks alongside canonical invariants. Reduced/normal preferences retain the same recovered effect.
+
+Initial candidates at0f8cf66 passed but were not promoted: visual review exposed the previous Message sent acknowledgement beside an unsent new draft. The production component now suppresses that exact success when its conversation.send context has a nonempty composer. Pending text and the separate error prop are unaffected; accepted sending clears the composer and displays success again. The focused first-draft assertion checks this distinction. Earlier candidate trees remain `/tmp/cluster-draft-phone-candidates` and `/tmp/cluster-draft-before-feedback-candidates` as diagnosis evidence.
+
+Generation is not acceptance. Exact comparison, independent review, Linux, managed-provider/interruption/account-isolation matrices and hosted gates remain separate. Original #70 seven-pixel and identity-raster failures are not resolved or replaced. No pixel tolerance changes or merge.
