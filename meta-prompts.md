@@ -1586,3 +1586,17 @@ Explicit #70 generation job119705315798 now in progress, independently checked; 
 #74 now2639f20 records four exact local journeys200 captures3.7min,32 separately reviewed new frames and168 unchanged predecessors. Prior independent transport-source review remains scoped; full Linux/visual/hosted acceptance open. Agent healthy on b5a34bb successor account-isolation story; independently read same-browser sign-out/outsider login/original-account recovery assertions, including no composer/retry leakage and unchanged canonical/profile state. Four candidate sizes pass; separate review/exact pending.
 
 No new completed actionable CI result in latest stack. No duplicate prompt or interruption; explicit Linux generation remains tracked by agent. Carry checkpoint into committed/pushed attributed logs at natural boundary. Original raster and full release gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 05:09 Toronto
+
+#75 80fbb05 attached on #74:228 exact local captures4.1min,28 separately reviewed new frames and200 unchanged predecessors. Independent prior source review plus current phone same-browser outsider capture shows empty conversation directory/no owner composer; this scoped evidence is not managed-provider confidentiality or full visual approval. Agent healthy already continuing future-only readmission at6862e17; no interruption.
+
+#73 publication failed HTTP404 for17250d5, independently read job119727024246 into /tmp/cluster73-0509-preview.log; same outstanding exact-head deployment gate, no inferred root cause or duplicate publish. Explicit #70 generation/verify remain in progress per recorded evidence. Carry checkpoint into committed/pushed attributed logs at natural boundary. Full release, Linux/visual/hosted and original raster gates open; no merge.
+
+
+## Reviewer progress — 2026-10-22 05:19 Toronto
+
+Agent healthy ata3d6ea0 correcting readmission candidate sequencing. Independently reviewed change: waits for actual saved-draft acknowledgement and enabled Send before keyboard focus/Enter, preserving privacy/revision assertions and avoiding sleeps/tolerance changes. Phone corrected candidate passes; full separate review/exact pending, no new PR yet.
+
+Independently checked #70 job119705315798: explicit candidate-generation step actually in_progress, not merely a green skipped job; no completed eligible artifact yet. #72 application now green. Agent already investigating #73 deployment404 without duplicate publish. No intervention/duplicate prompts. Carry checkpoint into committed/pushed attributed logs; full implementation/release and visual/Linux/hosted/raster gates remain open. No merge.
