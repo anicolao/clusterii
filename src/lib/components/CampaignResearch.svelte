@@ -88,31 +88,33 @@
   >
     <fieldset disabled={busy || pending || paused}>
       <legend>Research target</legend>
-      {#each technologies as technology}
-        <label>
-          <input
-            type="radio"
-            name="research-target"
-            value={technology}
-            checked={selected === technology}
-            onfocus={showChoice}
-            onchange={(event) => {
-              choice = technology;
-              showChoice(event);
-            }}
-          />
-          <span
-            ><strong>{technology}</strong><small
-              >Level {research.levels[technology]} · {(
-                research.progressMilli[technology] / 1000
-              ).toLocaleString()} science{research.levels[technology] ===
-              rules.maximumResearchLevel
-                ? " banked"
-                : " retained"}</small
-            ></span
-          >
-        </label>
-      {/each}
+      <div class="research-tracks">
+        {#each technologies as technology}
+          <label>
+            <input
+              type="radio"
+              name="research-target"
+              value={technology}
+              checked={selected === technology}
+              onfocus={showChoice}
+              onchange={(event) => {
+                choice = technology;
+                showChoice(event);
+              }}
+            />
+            <span
+              ><strong>{technology}</strong><small
+                >Level {research.levels[technology]} · {(
+                  research.progressMilli[technology] / 1000
+                ).toLocaleString()} science{research.levels[technology] ===
+                rules.maximumResearchLevel
+                  ? " banked"
+                  : " retained"}</small
+              ></span
+            >
+          </label>
+        {/each}
+      </div>
     </fieldset>
     <p class="effect">{descriptions[selected]}</p>
     <div
@@ -190,6 +192,9 @@
     border: 0;
     padding: 0;
     margin: 16px 0;
+    min-width: 0;
+  }
+  .research-tracks {
     display: grid;
     gap: 8px;
     max-height: min(320px, 20dvh);

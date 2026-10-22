@@ -532,3 +532,5 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | C
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Fix construction guidance capability after retained new-campaign ledger-null failure
 
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Reproduce nested bounded-scroll false occlusion and retain real-overlay rejection while auditing all ancestors
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Fix diagnosed native fieldset legend occlusion and carry reviewer 10:19 service-receipt finding for follow-up

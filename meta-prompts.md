@@ -1810,3 +1810,10 @@ Reviewer continuation 2026-10-22 09:59 Toronto: #85 e8330bc attached, clean idle
 Agent healthy at15a0a1f reviewing saved-account isolation candidates and running strict coverage. Independently reviewed story: ordinary same-browser sign-out/sign-in, no saved-identity mutation, distinct blank73/blank61 drafts, other device stays authoritative25, complete canonical/private/profile/receipt equality. This path intentionally leaves/unmounts campaign before sign-out, so it proves navigation-plus-account reuse rather than in-place account-switch callback handling; prior remote session and membership fault cover separate mounted-loss paths. No full acceptance inferred.
 
 No new CI failure among latest stack; disk2.7GiB, bounded run active. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release/independent visual/Linux/hosted/original raster holds remain open. No merge.
+
+
+## Reviewer progress and finding — 2026-10-22 10:19 Toronto
+
+#86 46235f9 attached on #85:8 strict journeys128 captures recorded, existing independent account-switch source review remains scoped. Agent healthy on9ac6709 research capability guidance successor; catches incorrect construction-ledger capability assumption, retains failed candidate and corrects against recorded schema. No interruption/duplicate prompt.
+
+NEW actionable #85 application verification failure, distinct from illustrated baseline gaps:job119864955566 retained /tmp/cluster85-1019-app.log. fleet reorganization mock test fails after20.14s with No authoritative receipt from profile receipt helper tests/service.test.ts:85;30 pass21 skip1 fail,1708 assertions. Investigate actual receipt/ingress evidence at next boundary; do not assume raster/infra flake or relax timeout/assertions without diagnosis. Carry checkpoint into attributed committed/pushed logs and prioritize resolving this test failure after current bounded work. Full independent visual/Linux/hosted/original raster/release holds remain open; no merge.

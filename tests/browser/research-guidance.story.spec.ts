@@ -303,6 +303,18 @@ test("Live research guidance follows the campaign capabilities without submittin
           });
           await radio.focus();
           await owner.keyboard.press("Space");
+          // Check the actual selected control before scrolling to its explanation.
+          await expect(radio).toBeFocused();
+          expect(
+            await radio.evaluate((element) => {
+              const b = element.getBoundingClientRect();
+              const top = document.elementFromPoint(
+                b.x + b.width / 2,
+                b.y + b.height / 2,
+              );
+              return element === top || element.contains(top);
+            }),
+          ).toBe(true);
         },
         acknowledgement: {
           spec: "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
