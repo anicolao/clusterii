@@ -1741,3 +1741,10 @@ Agent clean idle at e86e5e9. Headroom recovered1.5GiB; resume small implementati
 Exact handoff:
 
 Reviewer continuation 2026-10-22 08:29 Toronto: disk recovered to1.5GiB; enough to resume small source work, still below documented2GiB capture threshold. Implement the real account-wide sign-out portion of MARKET_DRAFT_LIFECYCLE_PLAN as a small successor on #82 using existing TestStepHelper and actual session flow. Keep membership fault separate until guarded/reviewed. Perform low-output static checks and source review; defer large generation/strict runs until remeasured adequate headroom, clearly mark unexecuted coverage. Preserve existing evidence and avoid downloads/cleanup. #80 Linux failure log retained /tmp/cluster80-0829-verify.log; classify at logging boundary. Carry checkpoints08:09 through08:29 into attributed committed/pushed logs. Never merge or claim release completion.
+
+
+## Reviewer progress — 2026-10-22 08:39 Toronto
+
+Agent healthy ata91efce implementing real account-wide sign-out story; static checks/discovery pass. Independently reviewed mounted-document timeOrigin/navigation-count assertions, real completed session fence, unchanged canonical/private state checks and fresh original-account allocation recovery. Scope does not yet prove same-browser other-account or separate membership-fault clearing. Browser generation now starting; no executed/visual approval inferred.
+
+Disk independently6.3GiB, above2GiB gate; agent already resumed one bounded generation without duplicate instruction. #81 application verification now green, latest illustrated checks pending. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release/independent visual/Linux/hosted/original raster gates remain open. No merge.
