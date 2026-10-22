@@ -67,3 +67,9 @@ Capture real rendered states at 393×852, 1440×1000, 3840×2160 and short deskt
 Identity-gallery story work in #47 is stacked on #46: [scope and evidence](IDENTITY_GALLERY_STORIES_REVIEW.md). New illustrated component coverage retains the older broad gallery/lab predecessor; local exact component evidence is not hosted acceptance. The inherited short identity-text Linux comparison remains an open gate, distinct from the contact-readiness correction.
 
 | Illustrated live selected-history consent | [#53](https://github.com/anicolao/clusterii/pull/53), base `feat/sharing-lab-stories` (#52) | [Campaigns](https://anicolao.github.io/clusterii/pr53/campaigns/) publication pending | [Scope and evidence](LIVE_SHARING_STORIES_REVIEW.md). Four local exact journeys/60 captures; creator, recipient and outsider, actual encrypted authorized views, consent/reload revision checks, keyboard and bounded reading. Ordinary mock-provider story; fault/managed-key migration, Linux, inherited raster, preview and independent gates remain open. |
+
+## Galaxy label correction
+
+| Slice / dependency | Review | Preview | Acceptance |
+| --- | --- | --- | --- |
+| Measured label placement, based on #66 `feat/live-observation-stories` | [#67](https://github.com/anicolao/clusterii/pull/67), `feat/galaxy-label-placement` | [Preview](https://anicolao.github.io/clusterii/pr67/) — exact current-head serving unverified | [Scope/evidence](GALAXY_LABEL_PLACEMENT_REVIEW.md). Four exact local journeys /72 captures,95 unit tests, uninstrumented mock observation service and4 retained browser/lab regressions pass. Independent01:41 phone pair accepted only. Other affected galaxy families, Linux/full visual/current-head CI and hosted gates remain open. |
