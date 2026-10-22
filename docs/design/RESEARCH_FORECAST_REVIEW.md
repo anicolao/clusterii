@@ -60,3 +60,9 @@ Final type/Svelte and lint checks pass (`/tmp/cluster-forecast-layout-final-chec
 ## Corrected family strict result
 
 On clean2d313c6, all four corrected live journeys /76 exact comparisons passed, including full Queue containment, keyboard-scrolled qualifications, private projection/receipt assertions and preserved conflict recovery. Log `/tmp/cluster-live-research-forecast-corrected-strict.log`; archived ordered evidence under `docs/testing/stories/live-research-orders`. Archive verifies decoded pixels against the approved baseline family. This closes only the scoped Darwin live comparison; shared views, ownership regressions, Linux/hosted and broader gates remain separate. #88 application verification completed successfully; no new profile-ingress failure evidence or historical cause is established by that pass.
+
+## Current shared-view candidates
+
+On clean e70d1fc the changed identity gallery84 and research lab96 families passed all four viewports (alongside an earlier forecast-gallery28 generation), retained at `/tmp/cluster-forecast-shared-current-candidates`. Log `/tmp/cluster-forecast-shared-current-generation.log`:12 passed1.3m. The lab retains normal/reduced-motion comparison and its exact applied-history keyboard/tick assertions.
+
+Forecast gallery now includes End-key reading views for the bounded qualifications. Clean bb921ac passed four journeys /40 candidates, retained `/tmp/cluster-forecast-gallery-qualified-candidates`, log `/tmp/cluster-forecast-gallery-qualified-generation.log`:4 passed30.5s. The implementer inspected phone009: full rate assumptions and active-target paragraph are readable with the Queue control visible. Independent review is requested separately for these current families; earlier gallery approval is not reused. No shared replacement baselines promoted.
