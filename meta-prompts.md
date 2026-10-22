@@ -1780,3 +1780,10 @@ Agent healthy at5ae496e correcting voluntary Leave regression. Independently rev
 Exact handoff:
 
 Reviewer continuation 2026-10-22 09:29 Toronto: #84 12f9591 attached, clean idle. Source/phone departure correction independently reviewed;12 local journeys140 exact captures recorded without baseline changes. Continue on a small stacked successor to #84 with remaining live draft lifecycle evidence: same-browser different-account reuse and/or guarded late-view membership revocation from MARKET_DRAFT_LIFECYCLE_PLAN. Prioritize proof that old callbacks cannot restore protected draft state; preserve real service authorization, explicitly label administrative faults, use fail-closed demo-only controls and exact restoration, never invent active Leave gameplay. Keep scope small, validate guarded harness before execution, and retain original sign-out/departure regression protections. Continue broader approved plan after the slice rather than stopping at each PR. Carry checkpoints through09:29 into reviewer-attributed committed/pushed logs. Recheck disk before captures; preserve independent visual/Linux/hosted and original raster gates. No merge.
+
+
+## Reviewer progress — 2026-10-22 09:39 Toronto
+
+Agent healthy implementing guarded membership-fault story on #84 successor. Independently read fault helper: exact demo/loopback/source guards, four-member labelled mock-campaign target, transaction removes only member authorization metadata; restoration refuses concurrent head/membership/directory changes. Digest gate computes original digest then delays only exact envelope input, releases unchanged result and restores native function. Independently ran4 guard tests successfully. These source/guard checks do not certify browser race coverage; execution/visual review remains pending.
+
+#84 publication now green; latest CI still running, disk3.4GiB. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary; administrative fault must remain distinct from approved gameplay. Full release, independent visual/Linux/hosted and original raster holds remain open; no merge.
