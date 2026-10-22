@@ -66,6 +66,7 @@ test("Interrupted route commands retain their original choices and identity", as
   let id = "",
     url = "";
   let holding = false;
+  let credential = "";
   const writes: { p: string; d: Record<string, unknown> }[] = [],
     held: {
       server: WebSocketRoute;
@@ -167,6 +168,7 @@ test("Interrupted route commands retain their original choices and identity", as
                 try {
                   frame = JSON.parse(String(raw));
                 } catch {}
+                if (frame?.d?.a === "auth") credential = frame.d.b.cred;
                 if (
                   frame?.d?.a === "p" &&
                   frame.d.b?.d?.kind === "fleet.route"
@@ -807,7 +809,17 @@ test("Interrupted route commands retain their original choices and identity", as
       async () => {
         await contexts[0].setOffline(true);
         holding = false;
-        for (const h of held) if (h.active()) h.server.send(h.raw);
+        // Fault delivery reuses the actual browser's authenticated command,
+        // through RTDB rules/ingress, never an administrative service shortcut.
+        expect(credential).not.toBe("");
+        const response = await request.put(
+          `http://127.0.0.1:19000${writes[0].p}.json`,
+          {
+            params: { ns: "demo-clusterii-default-rtdb", auth: credential },
+            data: writes[0].d,
+          },
+        );
+        expect(response.ok()).toBe(true);
         await expect
           .poll(async () => (await canonical()).military!.orders.length)
           .toBe(1);
