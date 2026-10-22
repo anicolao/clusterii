@@ -408,3 +408,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | P
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review 48 new arrival archive candidates while retaining 112 unchanged images, persist fractional-scroll evidence and record recovered exact-head Pages checks.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive only three passing arrival stories, retain the short seven-pixel strict hold and resource blocker, and carry current supervisory checkpoints into the draft.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link draft PR 70 and its dependency, strict raster hold, resource limit and unverified preview without claiming complete four-viewport acceptance.

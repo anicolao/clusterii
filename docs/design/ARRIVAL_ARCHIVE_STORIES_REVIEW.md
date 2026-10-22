@@ -27,3 +27,5 @@ Svelte types and28 story-policy checks pass. Existing procedural/service asserti
 ## Resource boundary
 
 Data-volume headroom fell to551MiB after preserving candidate/failure/exact evidence. Only22MiB of task-owned disposable `.svelte-kit`/`build` outputs were identified and removed after the runs stopped. Source, worktrees, credentials, review images and failure traces remain intact. Further large capture runs or Linux artifact downloads need additional disk headroom; no broad cleanup or unrelated cancellation was performed.
+
+Published as [draft PR #70](https://github.com/anicolao/clusterii/pull/70), stacked on #69. [Preview](https://anicolao.github.io/clusterii/pr70/) has not passed current-head serving checks. No merge.
