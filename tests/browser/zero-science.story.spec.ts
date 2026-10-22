@@ -36,7 +36,19 @@ async function rail(p: Page) {
 async function read(p: Page, target: Locator) {
   await rail(p);
   await manifest(p).focus();
-  await target.scrollIntoViewIfNeeded();
+  const needsScroll = await target.evaluate((element) => {
+    const box = element.getBoundingClientRect();
+    const panel = element.closest('[aria-label="Fleet manifest and orders"]')!;
+    const bounds = panel.getBoundingClientRect();
+    return (
+      box.top < bounds.top ||
+      box.bottom > bounds.bottom ||
+      box.left < bounds.left ||
+      box.right > bounds.right
+    );
+  });
+  if (needsScroll) await target.scrollIntoViewIfNeeded();
+  await expectReadingTarget(target, false);
   const a = await manifest(p).boundingBox(),
     b = await target.boundingBox();
   expect(b!.y).toBeGreaterThanOrEqual(a!.y);
@@ -201,7 +213,8 @@ test("Live zero science after orbital loss preserves private research", async ({
       const state = await canonical(),
         previous = state.economy!.tick;
       const due = scheduledAt + target * 900000;
-      for (const p of pages) await p.clock.setFixedTime(due);
+      for (const p of pages.filter((p) => !p.isClosed()))
+        await p.clock.setFixedTime(due);
       let count = 0,
         batch: number;
       do {
@@ -212,9 +225,27 @@ test("Live zero science after orbital loss preserves private research", async ({
       expect(await settleCampaignTicks(id, () => due)).toBe(0);
     };
     await story.harness(
+      "leave-campaign-during-elapsed-time",
+      "Both captured players return through ordinary Campaigns controls while time passes; setup-only witnesses close after admission. No service delivery or authorization is bypassed.",
+      async () => {
+        for (const p of [owner, peer]) await button(p, "Campaigns").click();
+        for (const context of contexts.slice(2)) await context.close();
+      },
+    );
+    await story.harness(
       "earn-navigation",
       "Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling.",
       () => settle(100),
+    );
+    await story.harness(
+      "recover-earned-campaign",
+      "Both real saved identities reopen the exact campaign after elapsed-time settlement.",
+      async () => {
+        for (const p of [owner, peer]) {
+          await p.goto(url);
+          await expect(inspector(p)).toBeVisible();
+        }
+      },
     );
     const prepared = await Promise.all([0, 1, 2, 3].map(published));
     const homes = prepared.map((v) => v.own.home!),
