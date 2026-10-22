@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { ResearchDraft } from "$lib/research-draft";
   import { tick } from "svelte";
   import type { ResearchState, Technology } from "@shared/production";
   import { technologies } from "@shared/production";
@@ -8,6 +9,7 @@
   import Feedback from "./Feedback.svelte";
   let {
     research,
+    draft = $bindable<ResearchDraft | undefined>(undefined),
     scanningEnabled = false,
     travelEnabled = false,
     constructionEnabled = false,
@@ -21,6 +23,7 @@
     inspect,
   }: {
     research: ResearchState;
+    draft?: ResearchDraft;
     scanningEnabled?: boolean;
     travelEnabled?: boolean;
     constructionEnabled?: boolean;
@@ -44,7 +47,10 @@
   const errorId = $props.id();
   let choice = $state<Technology | null>(null);
   const selected = $derived(
-    choice ?? research.orders?.at(-1)?.target ?? research.target,
+    draft?.target ??
+      choice ??
+      research.orders?.at(-1)?.target ??
+      research.target,
   );
   const descriptions: Record<Technology, string> = $derived({
     scanning: scanningEnabled
@@ -98,7 +104,8 @@
               checked={selected === technology}
               onfocus={showChoice}
               onchange={(event) => {
-                choice = technology;
+                if (draft) draft.target = technology;
+                else choice = technology;
                 showChoice(event);
               }}
             />
