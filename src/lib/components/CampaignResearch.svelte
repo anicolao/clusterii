@@ -42,8 +42,12 @@
   } = $props();
   let commitment: HTMLDivElement;
   let form: HTMLFormElement;
-  function showChoice(event?: Event) {
+  async function showChoice(event?: Event) {
     const target = event?.currentTarget;
+    // The new effect/cost can wrap differently. Position the committed layout,
+    // not the previous selection, so Queue stays above the panel footer.
+    await tick();
+    if (!form?.isConnected) return;
     if (target instanceof HTMLInputElement)
       target.closest("label")?.scrollIntoView({ block: "nearest" });
     form?.scrollIntoView({ block: "nearest" });
