@@ -123,5 +123,50 @@
     "image": "022-leave-retained-history-1-dawn-listener.png",
     "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/022-leave-retained-history-1-dawn-listener.png",
     "actualSha256": "8820956aa58049a1bf74074b48c5cb9aebefaf72d3c302596096f873f3beba11"
+  },
+  {
+    "image": "023-save-private-browser-draft-1-nacre-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/023-save-private-browser-draft-1-nacre-envoy.png",
+    "actualSha256": "c3b7da9eed23220ccb4280e5a4e0a0d8fddc569f86db169125325c01dd2a1511"
+  },
+  {
+    "image": "024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+    "actualSha256": "3b2605708088db931420cdf15ecb33210a5bffe51ae9b897678c60b785daffc2"
+  },
+  {
+    "image": "024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+    "actualSha256": "3b2605708088db931420cdf15ecb33210a5bffe51ae9b897678c60b785daffc2"
+  },
+  {
+    "image": "025-preserve-conflicting-draft-1-nacre-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png",
+    "actualSha256": "eeec0dda24b7368ef4062ce222f368c10fe74b69b121e31e1c16ad7d92069ea2"
+  },
+  {
+    "image": "025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+    "actualSha256": "0c48fc4b049b6a4939685eea7735649aa9fe59a0868f7b92b32e284d86a1439d"
+  },
+  {
+    "image": "026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+    "actualSha256": "5dce3b578d789b233409f8bae7e3ea9e8d60573d8b2252ecd2c0912d06571732"
+  },
+  {
+    "image": "027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+    "actualSha256": "e0842893d2a748cd2090c73b85733e03a3274184d6fcf607b2e8904d57d71a66"
+  },
+  {
+    "image": "027-send-recovered-draft-once-2-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/027-send-recovered-draft-once-2-outer-witness.png",
+    "actualSha256": "341d6e746684c861cd42d51f1d20a7ad380a69802f2737ad3342be5be0c3e968"
+  },
+  {
+    "image": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+    "actualSha256": "057f52d71a41053285c4a3446d39c57b1754433745aef0b93df522485d10796c"
   }
 ]

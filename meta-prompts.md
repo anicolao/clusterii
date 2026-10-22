@@ -1547,3 +1547,10 @@ Agent healthy at48ab938 extending selected-history story through actual particip
 Exact handoff:
 
 Reviewer continuation 2026-10-22 04:09 Toronto: #71 b590be6 attached, clean idle and queue empty. Continue the next concrete IMPLEMENTATION_PLAN gap as a small stacked successor based on #71; keep actual player interaction/actions/persistence/authorization and user-story TestStepHelper evidence. Select from the recorded remaining plan gaps without treating proposed rules as approvals; do not stop merely because Linux generation is queued. Preserve #70 draft unresolved raster and all independent visual/hosted gates. Follow the single explicit #70 candidate run when it produces evidence, no duplicate generation. Carry checkpoints through04:09 into attributed committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-22 04:19 Toronto
+
+Agent healthy atffc2965 implementing private draft reload/competing-tab recovery on #71 successor. Independently reviewed production acknowledgement correction: suppress stale successful-send wording while a new nonempty draft is being composed, without suppressing errors; story explicitly checks saved-browser status, composer contents and absence of misleading sent acknowledgement. Candidate visual review underway before exact comparisons; no acceptance or new PR yet.
+
+#67 application now green; deliberate #70 Linux generation still queued, no new actionable completed failure. No interruption or duplicate prompts. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release, independent visuals/Linux and unresolved raster gates remain open. No merge.
