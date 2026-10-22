@@ -283,14 +283,14 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
         Object.values(s.systems)
           .filter((v) => v.orbit === uid)
           .reduce((n, v) => n + v.fighters, 0) +
-        Object.values(s.military!.fleets)
+        Object.values(s.military?.fleets ?? {})
           .filter((f) => f.uid === uid)
           .reduce((n, f) => n + f.fighters, 0),
       infantry:
         Object.values(s.systems)
           .filter((v) => v.surface === uid)
           .reduce((n, v) => n + v.infantry, 0) +
-        Object.values(s.military!.fleets)
+        Object.values(s.military?.fleets ?? {})
           .filter((f) => f.uid === uid)
           .reduce((n, f) => n + f.infantry, 0),
     });

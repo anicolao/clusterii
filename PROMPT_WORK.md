@@ -380,3 +380,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | L
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Begin the next live fleet-contact story with real formation, private acquired/history views and guarded deterministic HMAC identity inputs.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Correct contact-story rail assertions to distinguish Back to system from Back to galaxy while preserving failure traces and containment checks.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Count the legitimate absence of a pre-formation military container as zero fleets in conservation checks; retain original integration failures.
