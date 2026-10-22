@@ -398,3 +398,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | L
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Extend the preserved live travel story into owner and uninvolved-player arrival archives with named history acknowledgements, bounded reading and reload privacy.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve the passing phone archive probe and add visible proposed-rule/privacy disclosure, motion parity and keyboard focus restoration before four-size review.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Retain the arrival disclosure locator failure and scope its expanded details to the named summary parent without weakening visibility or privacy checks.

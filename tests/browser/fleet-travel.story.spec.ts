@@ -1078,12 +1078,9 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         spec: "The expanded resolution explanation is visible and identifies proposed development rules without revealing opposing forces.",
         check: async () => {
           const details = archive(owner)
-            .locator("details")
-            .filter({
-              has: archive(owner)
-                .locator("summary")
-                .filter({ hasText: "Participants and resolution" }),
-            });
+            .locator("summary")
+            .filter({ hasText: "Participants and resolution" })
+            .locator("..");
           await expect(details).toHaveAttribute("open", "");
           await expect(details).toBeInViewport({ ratio: 1 });
           await expect(details).toContainText(
