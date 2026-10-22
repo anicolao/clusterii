@@ -8,10 +8,10 @@
   ],
   "description": "Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. No completion, overflow or hosted acceptance is claimed.",
   "source": {
-    "commit": "ea4a002a94cb98a7db13a247e3554050bb3e9948",
+    "commit": "2d313c6aff3df80bfe00807eaf0f43dffb347000",
     "dirty": false,
     "spec": "tests/browser/research-orders.story.spec.ts",
-    "specSha256": "1928a6d6c277a895f22aab0341797dd8c5ccff3b087378c9020b4cf9fa73912c"
+    "specSha256": "64c08731b175cc41d1a90dc2c840bc07965464d2847f95d67eda9d2ca5054701"
   },
   "mode": "verify",
   "status": "passed",
@@ -165,6 +165,47 @@
       ]
     },
     {
+      "id": "read-unfunded-forecast",
+      "description": "Read investing cost and effect before the first production ledger exists, without sending a command.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The forecast opens with keyboard focus and matches the authoritative private projection.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views.",
+        "Cost and next effect are exact; unknown rate or queued switch suppresses ETA, and the full forecast fits above the panel footer."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "012-read-unfunded-forecast-1-market-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "012-read-unfunded-forecast-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-unfunded-assumptions",
+      "description": "Scroll the bounded forecast with the keyboard while the actual Queue control stays fully visible.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The focused forecast reveals its active-target qualification without sending another command.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views.",
+        "Active navigation and Queue investing are contained above the fixed footer."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "013-read-unfunded-assumptions-1-market-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
       "id": "queue-investing",
       "description": "Commit investing and wait for its genuine authoritative receipt.",
       "actor": "Market envoy",
@@ -176,12 +217,53 @@
       "views": [
         {
           "player": "Market envoy",
-          "image": "012-queue-investing-1-market-envoy.png",
+          "image": "014-queue-investing-1-market-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent investor",
-          "image": "012-queue-investing-2-independent-investor.png",
+          "image": "014-queue-investing-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-queued-forecast",
+      "description": "Read the forecast after the server has accepted the original investing order; active navigation remains distinct.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The forecast opens with keyboard focus and matches the authoritative private projection.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views.",
+        "Cost and next effect are exact; unknown rate or queued switch suppresses ETA, and the full forecast fits above the panel footer."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "015-read-queued-forecast-1-market-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "015-read-queued-forecast-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-queued-assumptions",
+      "description": "Scroll the bounded forecast with the keyboard while the actual Queue control stays fully visible.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The focused forecast reveals its active-target qualification without sending another command.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views.",
+        "Active navigation and Queue investing are contained above the fixed footer."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "016-read-queued-assumptions-1-market-envoy.png",
           "verifications": []
         }
       ]
@@ -198,7 +280,7 @@
       "views": [
         {
           "player": "Market envoy",
-          "image": "013-reload-accepted-order-1-market-envoy.png",
+          "image": "017-reload-accepted-order-1-market-envoy.png",
           "verifications": []
         }
       ]
@@ -233,7 +315,7 @@
       "views": [
         {
           "player": "Market envoy · second device",
-          "image": "016-submit-held-choice-1-market-envoy-second-device.png",
+          "image": "020-submit-held-choice-1-market-envoy-second-device.png",
           "verifications": []
         }
       ]
@@ -259,12 +341,12 @@
       "views": [
         {
           "player": "Market envoy",
-          "image": "018-switch-current-device-1-market-envoy.png",
+          "image": "022-switch-current-device-1-market-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent investor",
-          "image": "018-switch-current-device-2-independent-investor.png",
+          "image": "022-switch-current-device-2-independent-investor.png",
           "verifications": []
         }
       ]
@@ -290,12 +372,12 @@
       "views": [
         {
           "player": "Market envoy · second device",
-          "image": "020-review-stale-rejection-1-market-envoy-second-device.png",
+          "image": "024-review-stale-rejection-1-market-envoy-second-device.png",
           "verifications": []
         },
         {
           "player": "Independent investor",
-          "image": "020-review-stale-rejection-2-independent-investor.png",
+          "image": "024-review-stale-rejection-2-independent-investor.png",
           "verifications": []
         }
       ]
@@ -312,7 +394,7 @@
       "views": [
         {
           "player": "Market envoy · second device",
-          "image": "021-close-conflict-panel-1-market-envoy-second-device.png",
+          "image": "025-close-conflict-panel-1-market-envoy-second-device.png",
           "verifications": []
         }
       ]
@@ -329,7 +411,7 @@
       "views": [
         {
           "player": "Market envoy · second device",
-          "image": "022-reopen-conflict-panel-1-market-envoy-second-device.png",
+          "image": "026-reopen-conflict-panel-1-market-envoy-second-device.png",
           "verifications": []
         }
       ]
