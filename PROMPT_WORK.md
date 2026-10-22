@@ -628,3 +628,5 @@ Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | P
 Prompt 95 | a29d7cee27adc8d826f079c8e7904444a2851726e969219aa2c1c32a5809f654 | Preserve the short form-height failure and position the actual research commitment after updated form layout without weakening corner checks.
 
 Prompt 95 | a29d7cee27adc8d826f079c8e7904444a2851726e969219aa2c1c32a5809f654 | Preserve corrected four-size Formations evidence and three passed stories while recording separate large capture-budget and procedural admission gates.
+
+Prompt 96 | 97ce599cafdb4d97cbe7ab738994d9257dfa1920bff7c2e99170ceadb75b68ba | Link the earned-boundary successor and clarify nonmember key authorization as the post-delete admission boundary, carrying reviewer checkpoints.
