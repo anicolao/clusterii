@@ -248,5 +248,40 @@
     "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
     "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
     "actualSha256": "a04116eddec1acc2278b7bfeb144041d21708c0f42325f3b7059a0f571697578"
+  },
+  {
+    "image": "041-save-account-private-draft-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png",
+    "actualSha256": "b504f9eff3e4f50f676cc1f70d61cd3f2a85f23ce527eac20fc5b545645ce890"
+  },
+  {
+    "image": "042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png",
+    "actualSha256": "9a00289bafc13dc77e88d9db1278b1e1d3cd085db369bc9689743e07c786c693"
+  },
+  {
+    "image": "043-other-account-on-same-browser-1-outer-witness-same-browser.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png",
+    "actualSha256": "d54c7e649ceacf1641ae6382a7c24c0190c795d1731c7ca58f423bcce4e05dcc"
+  },
+  {
+    "image": "043-other-account-on-same-browser-2-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/043-other-account-on-same-browser-2-outer-witness.png",
+    "actualSha256": "d54c7e649ceacf1641ae6382a7c24c0190c795d1731c7ca58f423bcce4e05dcc"
+  },
+  {
+    "image": "044-end-other-account-session-1-outer-witness-signed-out.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/044-end-other-account-session-1-outer-witness-signed-out.png",
+    "actualSha256": "9a00289bafc13dc77e88d9db1278b1e1d3cd085db369bc9689743e07c786c693"
+  },
+  {
+    "image": "045-restore-original-account-draft-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png",
+    "actualSha256": "e7e1d9cd373ddc8a2c5d0da9d6c95e56dd28def3f20755c323d302d68c59aac3"
+  },
+  {
+    "image": "045-restore-original-account-draft-2-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png",
+    "actualSha256": "d54c7e649ceacf1641ae6382a7c24c0190c795d1731c7ca58f423bcce4e05dcc"
   }
 ]

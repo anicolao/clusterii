@@ -8,10 +8,10 @@
   ],
   "description": "Independent commanders use authenticated development-provider commands. The creator shares one of two earlier messages; the recipient reviews and accepts its scope, then reloads. An uninvolved commander never receives the room or either message. Admission uses the labelled emulator clock and actual scheduler endpoint, not injected state. Managed-key and fault journeys remain separate coverage.",
   "source": {
-    "commit": "7ce5d61fae455343a052b3938cbaad1a627ca14e",
+    "commit": "ad3e438846e4253a3e079e322528b5f562518cb4",
     "dirty": false,
     "spec": "tests/browser/selected-history.story.spec.ts",
-    "specSha256": "7bfde913a591aed895a33e3b36db0a95cb5cbd83a110613e83bd90da207abcb9"
+    "specSha256": "ef3de409fd2017a632fccac05764ba6514f0a4e92725ed59c418b1cfa492e6ea"
   },
   "mode": "verify",
   "status": "passed",
@@ -784,6 +784,107 @@
         {
           "player": "Nacre envoy · second tab",
           "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-account-private-draft",
+      "description": "Save a new unsent note before leaving this browser session. Saving a draft is not sending a message.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Browser storage acknowledges the exact private draft.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "041-save-account-private-draft-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "sign-out-with-unsent-note",
+      "description": "Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Entry confirms the signed-out session with Play and no account identity control.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "other-account-on-same-browser",
+      "description": "Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft.",
+      "actor": "Outer witness",
+      "kind": "player",
+      "acknowledgement": "The authenticated outsider sees an empty conversation directory and no recovered private composer.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Outer witness · same browser",
+          "image": "043-other-account-on-same-browser-1-outer-witness-same-browser.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "043-other-account-on-same-browser-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "end-other-account-session",
+      "description": "Sign out the second account before returning the browser to its original commander.",
+      "actor": "Outer witness",
+      "kind": "player",
+      "acknowledgement": "The second account has signed out and its private campaign surface is closed.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Outer witness · signed out",
+          "image": "044-end-other-account-session-1-outer-witness-signed-out.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-original-account-draft",
+      "description": "Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Only the original account recovers its private room and unsent note.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft.",
+        "The restored composer and commitment remain visible; normal/reduced motion preserve the unsent text."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "045-restore-original-account-draft-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "045-restore-original-account-draft-2-outer-witness.png",
           "verifications": []
         }
       ]
