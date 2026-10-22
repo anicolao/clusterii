@@ -550,3 +550,5 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | R
 Prompt 82 | c86097b8d680f74fa6eebd1840d7c96645d22e86d41368e868d9185db03b79c5 | Retain the demo database delivery log with application evidence for the next persisted-ingress recurrence.
 
 Prompt 82 | c86097b8d680f74fa6eebd1840d7c96645d22e86d41368e868d9185db03b79c5 | Propagate profile entry/settlement diagnostics and delivery-log retention from PR87 into research draft PR88.
+
+Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | Bind the research story ingress read to the demo database after preserving all four failed candidate traces.

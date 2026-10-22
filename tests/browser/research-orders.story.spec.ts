@@ -283,7 +283,9 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       expect(saved.get("status")).toBe("accepted");
       const path = "commands/" + id + "/" + uid + "/" + order.id;
       const ingress = await require("firebase-admin/database")
-        .getDatabase()
+        .getDatabaseWithUrl(
+          "http://127.0.0.1:19000?ns=demo-clusterii-default-rtdb",
+        )
         .ref(path)
         .get();
       const { commandDigest } = require("./lib/shared/command-receipt.js");
@@ -526,7 +528,9 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           expect(added[0].id).toBe(durable!.id);
           const path = "commands/" + id + "/" + uid + "/" + durable!.id;
           const ingress = await require("firebase-admin/database")
-            .getDatabase()
+            .getDatabaseWithUrl(
+              "http://127.0.0.1:19000?ns=demo-clusterii-default-rtdb",
+            )
             .ref(path)
             .get();
           expect(ingress.val()).toEqual({
