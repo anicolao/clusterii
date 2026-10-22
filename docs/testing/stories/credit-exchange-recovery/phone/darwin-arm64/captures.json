@@ -1,0 +1,127 @@
+[
+  {
+    "image": "011-compose-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/011-compose-1-exchange-sender.png",
+    "actualSha256": "8e2c85ee9bed377731951d71ca3e92b6f02f27c80e15a273c6092a1540f20bf5"
+  },
+  {
+    "image": "011-compose-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/011-compose-2-exchange-recipient.png",
+    "actualSha256": "41e229705ac6991fdc6e683af4082c80cd5bd50295b536aa760c049bce67304f"
+  },
+  {
+    "image": "011-compose-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/011-compose-3-outer-witness.png",
+    "actualSha256": "36a36cdc097715efd24342517278a081af66fffd28544a9be276ab80d2ce0938"
+  },
+  {
+    "image": "013-uncertain-commitment-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/013-uncertain-commitment-1-exchange-sender.png",
+    "actualSha256": "9cc9eb9ac4dffd91160ca948377a2ed45fceb1f53558c1fe5bf1348f5815be72"
+  },
+  {
+    "image": "013-uncertain-commitment-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+    "actualSha256": "41e229705ac6991fdc6e683af4082c80cd5bd50295b536aa760c049bce67304f"
+  },
+  {
+    "image": "013-uncertain-commitment-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/013-uncertain-commitment-3-outer-witness.png",
+    "actualSha256": "36a36cdc097715efd24342517278a081af66fffd28544a9be276ab80d2ce0938"
+  },
+  {
+    "image": "014-reload-pending-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/014-reload-pending-1-exchange-sender.png",
+    "actualSha256": "30292c201ee2bec3e8156b9ff0030bb35010c13e7693a404d978835dec7fc4ff"
+  },
+  {
+    "image": "014-reload-pending-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/014-reload-pending-2-exchange-recipient.png",
+    "actualSha256": "41e229705ac6991fdc6e683af4082c80cd5bd50295b536aa760c049bce67304f"
+  },
+  {
+    "image": "014-reload-pending-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/014-reload-pending-3-outer-witness.png",
+    "actualSha256": "36a36cdc097715efd24342517278a081af66fffd28544a9be276ab80d2ce0938"
+  },
+  {
+    "image": "016-offer-shared-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/016-offer-shared-1-exchange-sender.png",
+    "actualSha256": "9fa2c238a59bffd91dc5f4518130e2b93b0681db94f0d1f042ef3cd3e508f41c"
+  },
+  {
+    "image": "016-offer-shared-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/016-offer-shared-2-exchange-recipient.png",
+    "actualSha256": "8f1057b69e633fa23a7b540a21ac97960fd25c61c39de6d07a3c31e647a19136"
+  },
+  {
+    "image": "016-offer-shared-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/016-offer-shared-3-outer-witness.png",
+    "actualSha256": "36a36cdc097715efd24342517278a081af66fffd28544a9be276ab80d2ce0938"
+  },
+  {
+    "image": "017-review-terms-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/017-review-terms-1-exchange-sender.png",
+    "actualSha256": "9fa2c238a59bffd91dc5f4518130e2b93b0681db94f0d1f042ef3cd3e508f41c"
+  },
+  {
+    "image": "017-review-terms-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/017-review-terms-2-exchange-recipient.png",
+    "actualSha256": "e645840fad923754b880a2feffc798a8186df11a4cd0b00c83463acae21b27d4"
+  },
+  {
+    "image": "017-review-terms-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/017-review-terms-3-outer-witness.png",
+    "actualSha256": "36a36cdc097715efd24342517278a081af66fffd28544a9be276ab80d2ce0938"
+  },
+  {
+    "image": "018-accept-terms-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/018-accept-terms-1-exchange-sender.png",
+    "actualSha256": "ffcf0209d2a09e190f1c872e6cb8bea2fb8ff6165fa78457c36ad20bc0520095"
+  },
+  {
+    "image": "018-accept-terms-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/018-accept-terms-2-exchange-recipient.png",
+    "actualSha256": "c74560ec625a09ca1465fdcccbeb642899504a6ae8f27a37da6770505dd78afa"
+  },
+  {
+    "image": "018-accept-terms-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/018-accept-terms-3-outer-witness.png",
+    "actualSha256": "36a36cdc097715efd24342517278a081af66fffd28544a9be276ab80d2ce0938"
+  },
+  {
+    "image": "020-settled-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/020-settled-1-exchange-sender.png",
+    "actualSha256": "96fa948631c5b651f090070cb1050d6f2727c36aa46019266c1e921cd4bf7903"
+  },
+  {
+    "image": "020-settled-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/020-settled-2-exchange-recipient.png",
+    "actualSha256": "42ec085dc57013ee74451eb80c2f546a33a958ef4654c1d2764dce38fd4f000a"
+  },
+  {
+    "image": "020-settled-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/020-settled-3-outer-witness.png",
+    "actualSha256": "8be34f8b7c76c9e59719d213b4be866a42e6f2b734260820fbeee83ceafc71de"
+  },
+  {
+    "image": "022-reload-outcome-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/022-reload-outcome-1-exchange-sender.png",
+    "actualSha256": "4695fa0e85296f50ba0e986a4423e0967f9e340b2ea2472125702a42fe0ea47e"
+  },
+  {
+    "image": "022-reload-outcome-2-exchange-recipient.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/022-reload-outcome-2-exchange-recipient.png",
+    "actualSha256": "42ec085dc57013ee74451eb80c2f546a33a958ef4654c1d2764dce38fd4f000a"
+  },
+  {
+    "image": "022-reload-outcome-3-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/022-reload-outcome-3-outer-witness.png",
+    "actualSha256": "8be34f8b7c76c9e59719d213b4be866a42e6f2b734260820fbeee83ceafc71de"
+  },
+  {
+    "image": "023-keyboard-return-1-exchange-sender.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/credit-exchange-recovery/phone/darwin-arm64/023-keyboard-return-1-exchange-sender.png",
+    "actualSha256": "d4cfd2c5b7103d12ffbe57fdf9e53561541bf2de18442412424f3263166f5b4f"
+  }
+]
