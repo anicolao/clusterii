@@ -1,5 +1,10 @@
 import { expect, test } from "bun:test";
-import { createCampaign, joinOrLeave, startCampaign } from "../shared/campaign";
+import {
+  createCampaign,
+  joinOrLeave,
+  startCampaign,
+  selectResearch,
+} from "../shared/campaign";
 import { produce, technologies } from "../shared/production";
 import { researchCostMilli, researchEstimate } from "../shared/research";
 import { nextResearchEffect } from "../src/lib/research-effect";
@@ -150,4 +155,32 @@ test("next effects describe recorded coefficients, units and historical capabili
   expect(nextResearchEffect("terraforming", 0, historical)).not.toContain(
     "Capacity:",
   );
+});
+
+test("Innovation completion retains overflow and changes science only on the following tick", () => {
+  let state = fixture();
+  for (const target of ["investing", "innovation"] as const)
+    state = selectResearch(
+      state,
+      { kind: "research.select", expectedRevision: state.revision, target },
+      "p0",
+      target,
+      state.economy!.nextTickAt - 1,
+    );
+  for (let tick = 1; tick <= 16; tick++) {
+    state = produce(state, state.economy!).campaign;
+    const own = state.economy!.research.p0;
+    expect(own.target).toBe("innovation");
+    expect(own.lastApplied!.id).toBe("innovation");
+    expect(own.orders).toEqual([]);
+    expect(own.levels.innovation).toBe(tick < 15 ? 0 : 1);
+    expect(own.progressMilli.innovation).toBe(
+      tick < 15 ? tick * 1400 : tick === 15 ? 1000 : 2404,
+    );
+    expect(state.economy!.ledger.p0.scienceMilli).toBe(tick < 16 ? 1400 : 1404);
+    const peer = state.economy!.research.p1;
+    expect(peer.target).toBe("navigation");
+    expect(peer.levels.innovation).toBe(0);
+    expect(peer.progressMilli.navigation).toBe(tick * 1400);
+  }
 });

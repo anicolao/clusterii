@@ -597,6 +597,14 @@ Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | A
 
 Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Record eight passing ownership journeys and preserved360 candidates, carrying reviewer checkpoints through13:09 and the renewed disk capture gate.
 
+Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Prepare real leased research completion overflow and next-tick effect stories with a passing144-assertion worked example; captures remain disk-gated.
+
+Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Record four passing leased research completion journeys and100 unpromoted candidates with matching-source provenance and reviewer13:19 checkpoint.
+
+Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Archive four passing research completion journeys and100 exact comparisons with scoped review and unchanged service/privacy assertions.
+
 Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Archive four passing qualified forecast gallery journeys and40 exact captures under the scoped reviewer approval.
 
 Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Propagate approved forecast40 strict evidence into feedback successor while preserving both continuation histories.
+
+Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Carry reviewed forecast gallery comparisons into completion successor without changing completion baselines or service assertions.
