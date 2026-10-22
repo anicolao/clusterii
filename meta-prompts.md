@@ -1483,3 +1483,10 @@ Agent healthy at9295bc2, four local contact exact journeys now pass22.5/27.2/55.
 #69 f6c20e3 published on #68 and attached. Independently checked review scope against preceding source/entropy/phone reviews:76 exact local captures, actual owner/observer and third-recipient privacy, conservation/repeat delivery, uninstrumented mock service27 assertions and four retained contact/travel browser regressions37.7sec; managed-real remains skipped. Full composition and hosted acceptance not inferred.
 
 Agent healthy now extending actual arrival archive reading. Independently inspected605e7c9: full visibility assertion retained after99.8% desktop clip; scroll centers actual expanded section and attaches before/after bounds. Candidate/exact follow-up pending. #65 application/generation and #66 application now green; existing missing baselines, identity raster and publication gates remain. Prior queued findings remain present; no duplicate interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary. No merge; implementation/release incomplete.
+
+
+## Reviewer progress — 2026-10-22 02:59 Toronto
+
+Agent healthy atf372d4d continuing arrival archive exact comparison; phone25.7sec and desktop35.4sec pass, large/short pending. Independently inspectedc697dfc: conditional centering only for genuinely clipped report bounds, persistent before/after JSON, unchanged full-visibility assertions. Candidate review scopes48 new captures with112 predecessor pixels unchanged and explicitly excludes failed short candidate run. Full four-size exact acceptance pending.
+
+#67 Linux verification now running; no new completed failure requiring intervention. Existing01:49/01:59 handoffs remain queued and main checkpoints are visibly read by agent; no duplicate prompt. Agent is monitoring low disk headroom758MiB; no broad downloads initiated here. Carry this checkpoint into committed/pushed logs at natural boundary. Full implementation/release, independent visual/Linux/raster and served-preview gates remain open; no merge.
