@@ -1262,3 +1262,19 @@ No newly completed actionable CI failure; runner backlog remains. Carry latest c
 Exact handoff:
 
 Reviewer continuation 2026-10-21 20:39 Toronto: #59 is pushed clean943fdce and pane idle since20:35. Continue live fleet travel/cargo/arrival coverage next as a small successor to #59, preserving authoritative force conservation, owner versus observer privacy, recovery and four-viewport keyboard evidence. Keep existing procedural assertions until equivalent stories replace them. Maintain explicit rule-approval boundaries and label clock harnesses. Continue targeted raster investigation when evidence permits and retain current-head preview checks; do not duplicate broad CI runs into the documented backlog. Carry main checkpoint through20:39 with attributed PROMPTS/PROMPT_WORK, commit/push. No merge; keep progressing independently while CI waits.
+
+
+## Reviewer progress — 2026-10-21 20:49 Toronto
+
+Local cargo03a2a8e has four exact journeys128 captures2.5min and archived narratives; agent actively finishing push after premature PR creation returned missing head/base SHA. No established persistent blocker; let active push finish. No new PR yet to attach. Read review scope: accepted-order reload, not interrupted-draft recovery; existing mounted feedback regression retained. Independently viewed phone load-reload capture: accepted3 infantry/tick3 and reservation are readable; new-input1 is separate, action disabled while scheduled. No production diff in cargo slice. Full independent visual/Linux acceptance remains open.
+
+CI current heads remain queued; no new actionable completed failure or duplicate intervention. Carry checkpoint into committed/pushed logs; raster/current previews/full-release gates remain open, no merge.
+
+
+## Reviewer progress — 2026-10-21 20:59 Toronto
+
+#60 03a2a8e cargo is now published on #59 and attached. Checkout clean, pane idle since20:50; current CI queued. Four local journeys128 exact captures remain scoped evidence, not full visual/Linux/preview approval. Resume travel/arrival without duplicate queued work. Identity raster and full implementation/release acceptance remain open.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-21 20:59 Toronto: #60 is published clean03a2a8e on #59; pane idle since20:50. Continue live fleet travel/arrival stories as a small successor to #60. Use TestStepHelper user-story actions, authoritative acknowledgements, force conservation, owner/observer privacy, reload and interrupted recovery where supported, and phone/desktop/large/short keyboard evidence. Keep navigation range distinct from speed and proposed rules distinct from approvals. Preserve procedural assertions until equivalent coverage exists and label guarded clock harnesses. Cargo currently proves accepted-order reload, not interrupted-draft recovery. Maintain targeted identity-raster investigation and exact-head preview gates; do not launch broad duplicate CI runs into the documented queue. Carry main checkpoints through20:59 into attributed PROMPTS/PROMPT_WORK and committed/pushed meta log. Continue useful independent work while CI waits. No merge.
