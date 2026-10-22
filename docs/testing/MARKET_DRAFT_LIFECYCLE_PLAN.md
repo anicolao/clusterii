@@ -1,10 +1,10 @@
 # Market draft account and access lifecycle story plan
 
-Status: **planned, not implemented or executed**. Successor to #81 (`feat/market-draft-navigation`). UX-06/14/16 and E2E_GUIDE govern this work. The production fix has scoped source/helper evidence and navigation stories; those do not prove live account/access-loss acceptance. This plan changes no production code, gameplay rule, assertion or baseline.
+Status: **account-wide sign-out story implemented, not executed** in a successor to #82 (`test/market-draft-lifecycle-plan`). Membership-fault, different-account reuse and new accepted-order steps remain planned. UX-06/14/16 and E2E_GUIDE govern this work. The production fix has scoped source/helper evidence and navigation stories; those do not prove live account/access-loss acceptance. The implemented story changes no production code, gameplay rule or baseline; existing assertions remain intact.
 
 ## Real player journey
 
-Add `tests/browser/market-draft-lifecycle.story.spec.ts`, using the existing TestStepHelper fixture, named steps and ordered owner/control-device/other-player viewpoints. Reuse the actual authenticated admission pattern in construction.story.spec.ts and device confirmation in session-recovery.story.spec.ts. Do not copy the long construction story or substitute a component specimen for a campaign.
+Implemented `tests/browser/market-draft-lifecycle.story.spec.ts`, using the existing TestStepHelper fixture, named steps and ordered owner/control-device/other-player viewpoints. Reuse the actual authenticated admission pattern in construction.story.spec.ts and device confirmation in session-recovery.story.spec.ts. Do not copy the long construction story or substitute a component specimen for a campaign.
 
 Create a new development campaign through ordinary UI with four independent saved identities. Admit/start using the existing explicitly labelled fixed catalogue/domain-clock and real scheduler delivery. A second authenticated browser context belongs to the owner; a third belongs to another actual seat. Save identity once and retain its revision. Start from canonical/private snapshots and record each account's authoritative allocation, receipt set, wallets and systems.
 
@@ -34,7 +34,7 @@ Hold a real in-flight view delivery/decryption at a test-only boundary, revoke a
 
 Require phone393×852, desktop1440×1000, large3840×2160 and short1280×720, real keyboard actions/focus restoration, fixed action rail, bounded panels and no document overflow. TestStepHelper owns font/image/finite-motion readiness, named authoritative assertions and ordered captures. Normal/reduced motion must preserve outcomes. Keep all existing navigation, privacy, conservation and recovery regressions.
 
-No new baseline family exists yet. Once the story is implemented and disk headroom restored, run a clean-source bounded generation, review each viewpoint independently, then strict verification. Proposed title filter and commands (not runnable coverage until that spec exists):
+No new baseline family exists yet. Once the story is implemented and disk headroom restored, run a clean-source bounded generation, review each viewpoint independently, then strict verification. The title filter discovers four viewport cases. Commands are ready after the disk gate, but neither generation nor verification has run:
 
 ```sh
 export PATH=/nix/store/vnycnlns50zkb0pns9rd7vhpv3m0fxc4-zulu-ca-jdk-21.0.8/bin:$PATH
@@ -51,3 +51,9 @@ Known existing navigation regression, runnable after storage recovery: `CLUSTER_
 Data volume measured602MiB, then564MiB, then358MiB free during this low-output audit. The continuing decline is not explained by this text-only change. Existing retained draft failure evidence is262MiB, candidate evidence414MiB, full strict evidence582MiB and final targeted evidence46MiB. A comparable candidate-plus-strict cohort alone uses about996MiB before build, traces, git operations or safety margin. The inspected disposable `.svelte-kit`, `build` and `functions/lib` total about22MiB; removing them would not restore adequate headroom. No cleanup was performed. Failure traces, captures, sources, worktrees and credentials remain intact.
 
 Resume sustained capture work only after additional headroom is available; target at least2GiB free for a bounded cohort and its failure margin, then remeasure between runs. Do not download the4.44GB Linux artifact. This is a storage blocker, not completed implementation or release acceptance.
+
+## Account-wide session implementation — 2026-10-22 08:29
+
+The new story implements inspect-owned-focus, edit-partial-allocation, navigate-with-intent, open-session-control and confirm-session-end, followed by fresh authentication of the original owner and recovery of authoritative allocation. It uses actual Google confirmation and the real session service. The first campaign device remains mounted: URL, main-frame navigation count and document time origin must remain unchanged during revocation. Its signed-out remedy is distinct from the control device's entry acknowledgement. Other-player views, complete canonical/private state, saved identity revision and receipt sets must remain unchanged; transport observation starts before login so existing sockets cannot escape the no-market-write assertion.
+
+Static type checking,28 policy/loader tests and four-case discovery pass; discovery is not execution. Seven named player steps define16 viewpoints per viewport, with explicit keyboard/fixed-rail and normal/reduced-motion checks. No generated narrative, capture, baseline or runtime pass exists yet. Different-account same-browser reuse, new accepted/uncertain order recovery and the membership callback fault remain separate plan items. [Source-review and failure classification](../design/MARKET_SESSION_STORY_REVIEW.md).

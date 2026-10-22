@@ -617,3 +617,9 @@ Reviewer continuation 2026-10-22 07:29 Toronto: #80 326de8b attached, clean idle
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 07:59 Toronto”.
 
 Reviewer continuation 2026-10-22 07:59 Toronto: #81 4677fdb attached; exact-head publication now green, source review remains scoped and live account/access-loss acceptance open. Disk is now606MiB free: do not start large capture runs, artifact downloads or destructive cleanup. Continue useful low-output work by auditing existing extracted Linux identity-gallery source compatibility and existing evidence, and preparing the concrete live account/access-loss story plan or small source changes on a successor to #81 if safely possible; do not mark unexecuted checks passed. Preserve all failure/review evidence. Carry checkpoints through07:59 into reviewer-attributed committed/pushed logs where space permits. Report a concrete disk blocker rather than stopping as complete; no merge.
+
+## Prompt 77: Live lifecycle implementation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 08:29 Toronto”.
+
+Reviewer continuation 2026-10-22 08:29 Toronto: disk recovered to1.5GiB; enough to resume small source work, still below documented2GiB capture threshold. Implement the real account-wide sign-out portion of MARKET_DRAFT_LIFECYCLE_PLAN as a small successor on #82 using existing TestStepHelper and actual session flow. Keep membership fault separate until guarded/reviewed. Perform low-output static checks and source review; defer large generation/strict runs until remeasured adequate headroom, clearly mark unexecuted coverage. Preserve existing evidence and avoid downloads/cleanup. #80 Linux failure log retained /tmp/cluster80-0829-verify.log; classify at logging boundary. Carry checkpoints08:09 through08:29 into attributed committed/pushed logs. Never merge or claim release completion.
