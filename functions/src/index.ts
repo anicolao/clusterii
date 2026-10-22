@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
+import { logger } from "firebase-functions";
 import { setGlobalOptions } from "firebase-functions/v2";
 import { onValueCreated } from "firebase-functions/v2/database";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
@@ -45,78 +46,100 @@ export const processProfile = onValueCreated(
   { ref: "/profileCommands/{uid}/{commandId}", retry: true },
   async (event) => {
     const { uid, commandId } = event.params;
-    const incoming = event.data.val() as Envelope;
-    const requestDigest = await commandDigest(
-      `profileCommands/${uid}/${commandId}`,
-      event.data.val(),
-    );
-    const receiptRef = db.doc(`profiles/${uid}/receipts/${commandId}`);
-    const headRef = db.doc(`profiles/${uid}`);
-    const keyRef = db.doc(`profileKeys/${uid}`);
-    // Random inputs are stable across transaction retries; no committed object is re-encrypted.
-    const objectKey = newKey();
-    await db.runTransaction(async (tx) => {
-      const [receipt, head, key, session] = await Promise.all([
-        tx.get(receiptRef),
-        tx.get(headRef),
-        tx.get(keyRef),
-        tx.get(db.doc(`sessionFences/${uid}`)),
-      ]);
-      if (receipt.exists) return;
-      const revision = head.exists ? Number(head.get("revision")) : 0;
-      let action: unknown;
-      let profile: ReturnType<typeof reduceProfile>;
-      const kek = key.get("kek") as string;
-      try {
-        if (
-          !admissionAllowed(
-            session.data() as SessionFence | undefined,
-            event.time,
+    // Correlate delivery without logging envelopes, identity contents or keys.
+    const delivery = { uid, commandId, eventId: event.id };
+    logger.info("Profile command entered", delivery);
+    let stage = "digest";
+    try {
+      const incoming = event.data.val() as Envelope;
+      const requestDigest = await commandDigest(
+        `profileCommands/${uid}/${commandId}`,
+        event.data.val(),
+      );
+      const receiptRef = db.doc(`profiles/${uid}/receipts/${commandId}`);
+      const headRef = db.doc(`profiles/${uid}`);
+      const keyRef = db.doc(`profileKeys/${uid}`);
+      // Random inputs are stable across transaction retries; no committed object is re-encrypted.
+      const objectKey = newKey();
+      stage = "transaction";
+      await db.runTransaction(async (tx) => {
+        const [receipt, head, key, session] = await Promise.all([
+          tx.get(receiptRef),
+          tx.get(headRef),
+          tx.get(keyRef),
+          tx.get(db.doc(`sessionFences/${uid}`)),
+        ]);
+        if (receipt.exists) return;
+        const revision = head.exists ? Number(head.get("revision")) : 0;
+        let action: unknown;
+        let profile: ReturnType<typeof reduceProfile>;
+        const kek = key.get("kek") as string;
+        try {
+          if (
+            !admissionAllowed(
+              session.data() as SessionFence | undefined,
+              event.time,
+            )
           )
-        )
-          throw new Error("session");
-        if (!key.exists || key.get("mode") !== "mock")
-          throw new Error("invalid");
-        action = await provider("mock").open(
-          incoming,
-          kek,
-          commandContext(uid, commandId),
-        );
-        profile = reduceProfile(revision, action);
-      } catch (error) {
+            throw new Error("session");
+          if (!key.exists || key.get("mode") !== "mock")
+            throw new Error("invalid");
+          action = await provider("mock").open(
+            incoming,
+            kek,
+            commandContext(uid, commandId),
+          );
+          profile = reduceProfile(revision, action);
+        } catch (error) {
+          tx.create(receiptRef, {
+            requestDigest,
+            status: "rejected",
+            revision,
+            reason:
+              error instanceof Error &&
+              ["conflict", "session"].includes(error.message)
+                ? error.message
+                : "invalid",
+          });
+          return;
+        }
+        // Validate the prior committed view before replacing it; corrupt history fails closed.
+        if (head.exists) {
+          const previous = head.data() as ProfileView;
+          const context = profileContext(uid, revision);
+          const oldKey = await unwrap(
+            previous.grant,
+            kek,
+            uid,
+            context,
+            "mock",
+          );
+          await provider("mock").open(previous.envelope, oldKey, context);
+        }
+        const context = profileContext(uid, revision + 1);
+        const view: ProfileView = {
+          revision: revision + 1,
+          envelope: await provider("mock").seal(profile, objectKey, context),
+          grant: await wrap(objectKey, kek, uid, context, "mock"),
+        };
+        tx.create(db.doc(`profiles/${uid}/versions/${revision + 1}`), view);
+        tx.set(headRef, view);
         tx.create(receiptRef, {
           requestDigest,
-          status: "rejected",
-          revision,
-          reason:
-            error instanceof Error &&
-            ["conflict", "session"].includes(error.message)
-              ? error.message
-              : "invalid",
+          status: "accepted",
+          revision: revision + 1,
         });
-        return;
-      }
-      // Validate the prior committed view before replacing it; corrupt history fails closed.
-      if (head.exists) {
-        const previous = head.data() as ProfileView;
-        const context = profileContext(uid, revision);
-        const oldKey = await unwrap(previous.grant, kek, uid, context, "mock");
-        await provider("mock").open(previous.envelope, oldKey, context);
-      }
-      const context = profileContext(uid, revision + 1);
-      const view: ProfileView = {
-        revision: revision + 1,
-        envelope: await provider("mock").seal(profile, objectKey, context),
-        grant: await wrap(objectKey, kek, uid, context, "mock"),
-      };
-      tx.create(db.doc(`profiles/${uid}/versions/${revision + 1}`), view);
-      tx.set(headRef, view);
-      tx.create(receiptRef, {
-        requestDigest,
-        status: "accepted",
-        revision: revision + 1,
       });
-    });
+      logger.info("Profile command transaction settled", {
+        ...delivery,
+        requestDigest,
+      });
+    } catch (error) {
+      // Preserve retry semantics and the original error. Log no error message:
+      // dependency errors can contain protected input.
+      logger.error("Profile command failed", { ...delivery, stage });
+      throw error;
+    }
   },
 );
 
