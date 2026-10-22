@@ -416,3 +416,5 @@ Prompt 68 | 8b67979370916e4469fc162c407af05a190c26565e178208032fcacb3468ff98 | P
 Prompt 69 | f022f357e20df6718495e650cb86540187a72985f07acf75ef51774f0ec1e854 | Correct participant-panel navigation using its actual expanded state and retain failed candidate traces
 
 Prompt 69 | f022f357e20df6718495e650cb86540187a72985f07acf75ef51774f0ec1e854 | Read preserved consent through the actual Campaign history after live room access ends
+
+Prompt 69 | f022f357e20df6718495e650cb86540187a72985f07acf75ef51774f0ec1e854 | Make confirmation and acknowledged message fully readable inside bounded panels before story captures

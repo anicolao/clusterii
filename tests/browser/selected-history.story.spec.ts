@@ -1,5 +1,5 @@
 import { createRequire } from "node:module";
-import type { Page, BrowserContext } from "@playwright/test";
+import type { Page, BrowserContext, Locator } from "@playwright/test";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
@@ -28,6 +28,17 @@ const chooseRoom = async (page: Page) => {
     .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
     .click();
 };
+async function readConversation(page: Page, target: Locator) {
+  await expect(panel(page).locator("footer")).toBeInViewport({ ratio: 1 });
+  await target.evaluate((el) => el.scrollIntoView({ block: "center" }));
+  await expect(target).toBeInViewport({ ratio: 1 });
+  const box = await target.boundingBox(),
+    region = await panel(page)
+      .getByRole("region", { name: "Conversation details" })
+      .boundingBox();
+  expect(box!.y).toBeGreaterThanOrEqual(region!.y);
+  expect(box!.y + box!.height).toBeLessThanOrEqual(region!.y + region!.height);
+}
 const aliases = [
   "Nacre envoy",
   "Dawn listener",
@@ -500,6 +511,12 @@ test("Selected history reaches only a consenting commander and survives reload",
         spec: "The removal confirmation is available without changing membership.",
         check: async () => {
           await expect(button(owner, "Confirm remove")).toBeVisible();
+          await readConversation(
+            owner,
+            panel(owner).getByRole("region", {
+              name: "Review conversation access",
+            }),
+          );
           expect((await canonical()).revision).toBe(revokedRevision);
         },
       },
@@ -583,6 +600,12 @@ test("Selected history reaches only a consenting commander and survives reload",
           await expect(
             panel(owner).getByRole("list", { name: "Authorized messages" }),
           ).toContainText(absentMessage);
+          await readConversation(
+            owner,
+            panel(owner)
+              .getByRole("listitem")
+              .filter({ hasText: absentMessage }),
+          );
         },
       },
       verifications: [
