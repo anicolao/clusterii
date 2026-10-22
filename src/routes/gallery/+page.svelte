@@ -1,4 +1,5 @@
 <script lang="ts">
+  import GameMenu from "$lib/components/GameMenu.svelte";
   import { identityConversation } from "../dev/animations/identity-scenario";
   import CreditOffers from "$lib/components/CreditOffers.svelte";
   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
@@ -100,6 +101,8 @@
   let chapter = $state(0);
   let narrow = $state(false);
 </script>
+
+<section aria-label="Local presentation controls"><GameMenu /></section>
 
 <svelte:head
   ><title>Production gallery — Cluster</title><meta

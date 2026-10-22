@@ -173,6 +173,8 @@ Add first-game guidance and an in-game rules reference. A returning player sees 
 
 **Acceptance:** Review actual phone, desktop, and large-display compositions against the selected art/UX direction, then verify them with deterministic browser captures and geometry assertions. Representative players complete the entire loop without developer assistance. Every action is usable through the supported input methods; private information remains private in reports and notifications. Errors and stale views explain recovery without requiring a refresh or losing unsent work silently.
 
+Implementation evidence: [local motion settings](docs/design/LOCAL_MOTION_REVIEW.md) adds browser-local reduction through the shared game menu without overriding OS reduction. Renderer low-detail, full settings scope and actual four-size/keyboard/motion/gallery acceptance remain open.
+
 ## 11. Verify balance, scale, and long-running play
 
 Run deterministic simulations across map seeds, faction matchups, player counts, market focuses, research paths, combat ratios, and alliance compositions. Measure starting opportunity, snowballing, economic growth, dominant strategies, time to victory, and benefits of cooperation. Test adversarial trading/construction and alliance membership patterns against the selected rules.

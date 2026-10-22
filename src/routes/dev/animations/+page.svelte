@@ -1,4 +1,5 @@
 <script lang="ts">
+  import GameMenu from "$lib/components/GameMenu.svelte";
   import CreditOffers from "$lib/components/CreditOffers.svelte";
   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
@@ -80,6 +81,8 @@
     return () => cancelAnimationFrame(id);
   });
 </script>
+
+<section aria-label="Local presentation controls"><GameMenu /></section>
 
 <svelte:head
   ><title>Animation lab — Cluster</title><meta

@@ -1,3 +1,4 @@
+import { motionPreference } from "./motion-preference";
 export const feedbackDuration = 180;
 export interface MotionInspection {
   time: number;
@@ -7,7 +8,7 @@ export function feedbackMotion(
   node: HTMLElement,
   options: { key: string; inspect?: MotionInspection },
 ) {
-  const preference = matchMedia("(prefers-reduced-motion: reduce)");
+  let reduced = false;
   let animation: Animation | undefined;
   let key: string | undefined;
   function update(next: typeof options) {
@@ -33,16 +34,19 @@ export function feedbackMotion(
       animation.currentTime = options.inspect.reduced
         ? feedbackDuration
         : Math.max(0, Math.min(feedbackDuration, options.inspect.time));
-    } else if (preference.matches) animation.cancel();
+    } else if (reduced) animation.cancel();
   }
-  const changed = () => update(options);
-  preference.addEventListener("change", changed);
+  const unsubscribe = motionPreference.subscribe((value) => {
+    reduced =
+      value.effective || matchMedia("(prefers-reduced-motion: reduce)").matches;
+    update(options);
+  });
   update(options);
   return {
     update,
     destroy() {
       animation?.cancel();
-      preference.removeEventListener("change", changed);
+      unsubscribe();
     },
   };
 }
