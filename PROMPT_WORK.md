@@ -540,3 +540,7 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | R
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Archive 144 exact research captures with retained failure diagnosis and the separate profile-receipt investigation gate
 
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Attach PR87 and reviewer 10:29 checkpoint, retaining negative receipt reproduction and exact disk blocker
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Propagate PR85 read-only timeout diagnostics into PR86 without changing account-isolation behavior
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Propagate validated profile timeout diagnostics through PR87 and retain reviewer checkpoints through 10:39
