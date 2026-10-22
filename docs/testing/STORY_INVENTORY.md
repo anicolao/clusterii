@@ -327,3 +327,7 @@ Four ordinary-player exact journeys / 72 captures cover current acquisition, unk
 ## Navigation label propagation
 
 Eight exact local navigation/observation journeys /101 captures now include actual label separation, containment and pointer hit testing. Original catalogue class counts, keyboard orbit/focus, overview, inspector-boundary pan and reload assertions remain. A reproduced decorative-wrapper interception is fixed in production without pixel changes; one separately reviewed phone orbit label moves inward at the chart edge. See [navigation label review](../design/NAVIGATION_LABEL_REVIEW.md). Other galaxy-family comparisons and full independent/Linux/hosted gates remain open.
+
+## Explicit unsent route discard
+
+The production route planner now distinguishes Discard draft from accepted-order cancellation. Two named live steps prove keyboard discard, empty re-entry, replanning, unchanged complete canonical state and private observer views. Phone/desktop/short strict stories pass132 captures;4K fails only its final observer galaxy image (38 reported pixels), after43 exact frames and all gameplay assertions. Candidate generation passes all176 frames. Original expected pixels and failure artifacts are retained; this is not full visual/Linux/hosted acceptance. Unsent drafts remain memory-only.

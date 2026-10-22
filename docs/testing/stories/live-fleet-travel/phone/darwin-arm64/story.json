@@ -9,10 +9,10 @@
   ],
   "description": "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.",
   "source": {
-    "commit": "f372d4dfc804da033707186457f5143af0e74b71",
+    "commit": "12abe7122e21c0ed82636bd05fba9d0c451cd862",
     "dirty": false,
     "spec": "tests/browser/fleet-travel.story.spec.ts",
-    "specSha256": "4c653d9d49d806ed15dbe2529cd55ebafdce80ea4a392bf96f76a8378ce329d0"
+    "specSha256": "8e8a087be3d0c250efab0fb8dc5c3aedafab8f0400f5c903e49addca0cbe34ed"
   },
   "mode": "verify",
   "status": "passed",
@@ -345,6 +345,52 @@
       ]
     },
     {
+      "id": "discard-uncommitted-route",
+      "description": "Discard the selected fleet's unsent route with the keyboard. This is a local draft decision, not cancellation of an accepted order.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The editor confirms local discard, clears the route and returns keyboard focus to waypoint search.",
+      "verifications": [
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Discard neither issues a command nor changes any authoritative force, order, balance or revision."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "020-discard-uncommitted-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "020-discard-uncommitted-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reopen-cleared-route",
+      "description": "Return to fleets and reopen the planner. The discarded route stays empty; select the original destination again as a new draft.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Only the newly selected destination is ready to send; no stale discard notice accompanies it.",
+      "verifications": [
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Replanning preserves canonical state and has the same result with normal motion."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "021-reopen-cleared-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "021-reopen-cleared-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
       "id": "accept-route",
       "description": "Commit the route with Enter. The authoritative acknowledgement schedules departure without moving the fleet.",
       "actor": "Fleet marshal",
@@ -357,12 +403,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "020-accept-route-1-fleet-marshal.png",
+          "image": "022-accept-route-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "020-accept-route-2-independent-marshal.png",
+          "image": "022-accept-route-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -375,17 +421,17 @@
       "acknowledgement": "The same accepted destination and departure tick return from persistence.",
       "verifications": [
         "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
-        "Reload neither duplicates the route nor changes forces."
+        "Reload neither duplicates the route nor changes forces; accepted routes cannot be discarded as drafts."
       ],
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "021-recover-route-1-fleet-marshal.png",
+          "image": "023-recover-route-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "021-recover-route-2-independent-marshal.png",
+          "image": "023-recover-route-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -412,12 +458,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "023-traveling-1-fleet-marshal.png",
+          "image": "025-traveling-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "023-traveling-2-independent-marshal.png",
+          "image": "025-traveling-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -444,12 +490,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "025-arrival-report-1-fleet-marshal.png",
+          "image": "027-arrival-report-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "025-arrival-report-2-independent-marshal.png",
+          "image": "027-arrival-report-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -468,12 +514,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "026-recover-arrival-1-fleet-marshal.png",
+          "image": "028-recover-arrival-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "026-recover-arrival-2-independent-marshal.png",
+          "image": "028-recover-arrival-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -490,12 +536,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "027-open-private-arrival-archives-1-fleet-marshal.png",
+          "image": "029-open-private-arrival-archives-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "027-open-private-arrival-archives-2-independent-marshal.png",
+          "image": "029-open-private-arrival-archives-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -512,12 +558,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "028-read-arrival-losses-1-fleet-marshal.png",
+          "image": "030-read-arrival-losses-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "028-read-arrival-losses-2-independent-marshal.png",
+          "image": "030-read-arrival-losses-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -534,12 +580,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "029-read-arrival-control-1-fleet-marshal.png",
+          "image": "031-read-arrival-control-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "029-read-arrival-control-2-independent-marshal.png",
+          "image": "031-read-arrival-control-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -556,12 +602,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "030-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+          "image": "032-read-arrival-resolution-boundaries-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "030-read-arrival-resolution-boundaries-2-independent-marshal.png",
+          "image": "032-read-arrival-resolution-boundaries-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -579,12 +625,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "031-reload-private-arrival-archives-1-fleet-marshal.png",
+          "image": "033-reload-private-arrival-archives-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "031-reload-private-arrival-archives-2-independent-marshal.png",
+          "image": "033-reload-private-arrival-archives-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -601,12 +647,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "032-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+          "image": "034-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+          "image": "034-close-arrival-archives-by-keyboard-2-independent-marshal.png",
           "verifications": []
         }
       ]
