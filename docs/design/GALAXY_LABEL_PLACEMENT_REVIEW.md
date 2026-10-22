@@ -17,3 +17,5 @@ The chart observes actual text dimensions, font readiness, viewport size and pro
 | Linux / independent review / preview | Pending; no hosted or release acceptance |
 
 Rules remain under review. No service, cryptography, tick, command or gameplay rule changes are introduced by label placement.
+
+Diagnostic evidence: `/tmp/cluster-label-generation.log` passes phone/desktop/large (19.5/23.1/46.0s), then short fails before testing with Firestore HTTP server `Address already in use`; retained under `/tmp/cluster-label-first-candidates`. Generation2 reaches the new keyboard home action, whose incorrect extra Close list action times out: production `move()` already closes the list and restores focus. The correction asserts both dismissal and restored Systems list focus. The owned remaining cohorts were interrupted; no deadline or service assertion was relaxed.

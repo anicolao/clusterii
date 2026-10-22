@@ -636,8 +636,8 @@ test("Live stellar observations retain private current and historical facts afte
         await button(owner, "Systems list").press("Enter");
         await button(owner, "Center home").focus();
         await button(owner, "Center home").press("Enter");
-        await button(owner, "Close list").focus();
-        await button(owner, "Close list").press("Enter");
+        await expect(button(owner, "Close list")).toHaveCount(0);
+        await expect(button(owner, "Systems list")).toBeFocused();
       },
       acknowledgement: {
         spec: "The authoritative home system is selected and its priority label is readable.",

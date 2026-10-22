@@ -356,3 +356,5 @@ Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | R
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Review all stellar observation candidates and promote only the new macOS family before strict comparison.
 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Archive exact observation stories and retained regressions; carry scoped visual findings and queued Pages deployment diagnosis.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Correct the keyboard home journey to verify automatic list dismissal and restored focus; retain diagnostic failures.
