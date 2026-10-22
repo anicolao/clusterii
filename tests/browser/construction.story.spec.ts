@@ -74,7 +74,7 @@ for (const interrupted of [false, true])
       title: interrupted
         ? "Recover one construction commitment and settle its outcome"
         : "Reserve, complete and cancel developments",
-      inventory: ["UX-05", "UX-14", "UX-16"],
+      inventory: ["UX-05", "UX-14", "UX-15", "UX-16"],
       description:
         "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
     });
@@ -330,6 +330,103 @@ for (const interrupted of [false, true])
         verifications: checks(),
         views: views(),
       });
+      if (!interrupted) {
+        const privateBefore = await Promise.all([published(0), published(1)]);
+        const help = panel(owner).locator("details.construction-rules");
+        const summary = help.locator("summary");
+        const unchanged = {
+          spec: "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.",
+          check: async () => {
+            expect(await canonical()).toEqual(initial);
+            expect(await Promise.all([published(0), published(1)])).toEqual(
+              privateBefore,
+            );
+            await expect(
+              panel(owner).getByRole("radio", { name: /Training camp/ }),
+            ).toBeChecked();
+            await expect(commitment(owner)).toContainText("131");
+          },
+        };
+        await story.step("read-construction-price", {
+          actor: aliases[0],
+          description:
+            "Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity.",
+          action: async () => {
+            await rail(owner);
+            await summary.evaluate((el) =>
+              el.scrollIntoView({ block: "center" }),
+            );
+            await summary.focus();
+            await owner.keyboard.press("Enter");
+            await read(
+              owner,
+              help.getByRole("heading", { name: "Price and capacity" }),
+            );
+          },
+          acknowledgement: {
+            spec: "The open chapter explains the real69-credit quote and8-place capacity without an order acknowledgement.",
+            check: async () => {
+              await expect(help).toHaveAttribute("open", "");
+              await expect(help).toContainText(
+                "1 completed or queued gives a quote of 69 credits",
+              );
+              await expect(help).toContainText("Capacity is 8");
+            },
+          },
+          verifications: [...checks(), unchanged],
+          views: views(),
+        });
+        await story.step("read-construction-outcomes", {
+          actor: aliases[0],
+          description:
+            "Read cancellation, control and completion boundaries while the build commitment remains available.",
+          action: async () => {
+            await read(
+              owner,
+              help.locator("p").filter({ hasText: "Read the settled outcome" }),
+            );
+          },
+          acknowledgement: {
+            spec: "The chapter explains execution-time refunds and recorded market focus, not equal-focus dividends.",
+            check: async () => {
+              await expect(help).toContainText(
+                "Progress at execution determines the refund",
+              );
+              await expect(help).toContainText(
+                "focus at the beginning of the tick",
+              );
+            },
+          },
+          verifications: [...checks(), unchanged],
+          views: views(),
+        });
+        await story.step("close-construction-rules", {
+          actor: aliases[0],
+          description:
+            "Close the chapter with the keyboard; normal and reduced motion retain the same construction decision.",
+          action: async () => {
+            await summary.evaluate((el) =>
+              el.scrollIntoView({ block: "center" }),
+            );
+            await summary.focus();
+            await owner.keyboard.press("Enter");
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            await owner.keyboard.press("Enter");
+            await expect(help).toHaveAttribute("open", "");
+            await owner.keyboard.press("Enter");
+            await owner.emulateMedia({ reducedMotion: "reduce" });
+          },
+          acknowledgement: {
+            spec: "The chapter closes and keyboard focus remains on its opening control.",
+            check: async () => {
+              await expect(help).not.toHaveAttribute("open", "");
+              await expect(summary).toBeFocused();
+            },
+          },
+          verifications: [...checks(), unchanged],
+          views: views(),
+        });
+      }
       if (interrupted) {
         await story.harness(
           "withhold-build-delivery",
