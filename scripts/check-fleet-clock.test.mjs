@@ -11,7 +11,7 @@ import {
 const target = "file:///isolated/shared/fleets.js";
 initialize({ target });
 const source =
-  "export function orderFleet(current, raw, uid, id, now) { return {current, raw, uid, id, now}; }";
+  "export function orderFleet(current, raw, uid, id, now) { return {current, raw, uid, id, now}; }\nexport function cancelFleet(current, raw, uid, now) { return {current, raw, uid, now}; }";
 test("fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries", () => {
   for (const c of [
     null,
@@ -80,6 +80,28 @@ test("fleet loader fails closed outside demo runtime and preserves all command i
     assert.equal(
       fixture.orderFleet({ name: "ordinary" }, input, "user", "id", 555).now,
       555,
+    );
+    const cancel = {
+      kind: "fleet.cancel",
+      expectedRevision: 8,
+      orderId: "original-order",
+    };
+    assert.deepEqual(fixture.cancelFleet(current, cancel, "real-user", 555), {
+      current,
+      raw: cancel,
+      uid: "real-user",
+      now: 900001,
+    });
+    assert.equal(
+      fixture.cancelFleet({ name: "ordinary" }, cancel, "user", 555).now,
+      555,
+    );
+    await assert.rejects(
+      load(target, {}, async () => ({
+        ...result,
+        source: source.replace("cancelFleet(", "changed("),
+      })),
+      /signature changed/,
     );
     await assert.rejects(
       load(target, {}, async () => ({
