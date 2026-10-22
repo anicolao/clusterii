@@ -1,14 +1,17 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { detailPreference } from "$lib/detail-preference";
   import { motionPreference } from "$lib/motion-preference";
   onMount(() => {
     const disconnect = motionPreference.connect(window);
+    const disconnectDetail = detailPreference.connect(window);
     const unsubscribe = motionPreference.subscribe((value) => {
       document.documentElement.dataset.reduceMotion = String(value.effective);
     });
     return () => {
       unsubscribe();
       disconnect();
+      disconnectDetail();
       delete document.documentElement.dataset.reduceMotion;
     };
   });

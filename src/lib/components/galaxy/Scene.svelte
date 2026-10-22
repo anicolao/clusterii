@@ -6,24 +6,27 @@
   import type { OrbitControls as OrbitControlsType } from "three/examples/jsm/controls/OrbitControls.js";
   import type { StarClass } from "@shared/rules";
   import { untrack } from "svelte";
-  import { onDestroy, onMount } from "svelte";
+  import { onDestroy } from "svelte";
+  import { detailPreference } from "$lib/detail-preference";
+  import { decorativeTexture } from "$lib/decorative-texture";
   import { base } from "$app/paths";
   import { TextureLoader, SRGBColorSpace, type Texture } from "three";
   let dust = $state<Texture>();
-  onMount(() => {
-    let active = true;
-    new TextureLoader().load(`${base}/art/galaxy-dust.webp`, (texture) => {
-      if (!active) {
-        texture.dispose();
-        return;
-      }
-      texture.colorSpace = SRGBColorSpace;
-      dust = texture;
-    });
-    return () => {
-      active = false;
-      dust?.dispose();
-    };
+  const decoration = $derived(
+    $detailPreference.ready && !$detailPreference.lower,
+  );
+  $effect(() => {
+    dust = undefined;
+    if (!decoration) return;
+    return decorativeTexture<Texture>(
+      (loaded) => {
+        new TextureLoader().load(`${base}/art/galaxy-dust.webp`, loaded);
+      },
+      (texture) => {
+        texture.colorSpace = SRGBColorSpace;
+        dust = texture;
+      },
+    );
   });
   import { galaxyLabel } from "$lib/galaxy-labels";
   import RouteLine from "./RouteLine.svelte";
@@ -212,7 +215,7 @@
     maxPolarAngle={Math.PI / 2.1}
   /></T.PerspectiveCamera
 >
-{#if dust}<T.Mesh rotation.x={-Math.PI / 2} position.y={-0.3}
+{#if decoration && dust}<T.Mesh rotation.x={-Math.PI / 2} position.y={-0.3}
     ><T.PlaneGeometry args={[28, 28]} /><T.ShaderMaterial
       uniforms={{ map: { value: dust } }}
       vertexShader={"varying vec2 uvPosition; void main(){uvPosition=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}"}
@@ -222,7 +225,9 @@
       depthWrite={false}
     /></T.Mesh
   >{/if}
-{#each [3, 6, 9] as radius}<T.Mesh rotation.x={-Math.PI / 2} position.y={-0.15}
+{#each decoration ? [3, 6, 9] : [] as radius}<T.Mesh
+    rotation.x={-Math.PI / 2}
+    position.y={-0.15}
     ><T.RingGeometry args={[radius, radius + 0.008, 128]} /><T.MeshBasicMaterial
       color="#d0b580"
       transparent
