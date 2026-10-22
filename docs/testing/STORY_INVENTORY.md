@@ -397,3 +397,5 @@ Research forecast update: reviewer12:19 approved gallery28 from b7e629a and stri
 ## Mounted campaign selection ownership (UX-02/14/16)
 
 `selection-ownership.story.spec.ts` holds a genuine campaignKey response across keyboard navigation to a newer unsent proposal and separately checks a current missing invitation error. It complements, rather than replaces, membership-fault and account-isolation journeys. One focused phone execution is planned; mounted account switch and four-size acceptance remain open. See [design and provenance](MOUNTED_SELECTION_REVIEW.md).
+
+Mounted selection update: one phone Darwin journey passes with two unpromoted candidates from82e58b1. Actual held-response navigation and current missing-invitation checks execute; account-switch/late-error/four-size independent acceptance remain separate.

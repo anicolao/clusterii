@@ -670,3 +670,5 @@ Prompt 105 | 61075108a923c8f09df1f09a7b76d04b0177a1cf1a388dc9df3fe4c53aca73d6 | 
 Prompt 105 | 61075108a923c8f09df1f09a7b76d04b0177a1cf1a388dc9df3fe4c53aca73d6 | Register draft PR106 dependency and unverified preview with the precise pre-target diagnostic outcome.
 
 Prompt 106 | 1342b964ee6683077856b3352cefb67ec6521e51cb130cca09b8bff4a50ca336 | Register PR107 callback ownership correction and separate unresolved admission and mounted acceptance gates.
+
+Prompt 107 | 40dc57d778c1ba3812403105d52e4aafaf7c97f4414c586e71fc471629dbc77e | Preserve the single passing mounted phone selection journey and two unpromoted candidates with exact provenance.
