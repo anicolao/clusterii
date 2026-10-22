@@ -17,3 +17,5 @@ Add a browser-local Lower galaxy detail checkbox to the existing production Pres
 Source-level preference/resource-lifecycle checks and serialized static verification only. Actual four-size/normal-reduced composition, keyboard/Escape/focus, gallery/lab equivalence, production GPU cost and all earlier setup/raster/concurrency/KMS/hosted/release gates remain pending. No rule changes, fabricated state, fallbacks or baseline promotion.
 
 Focused validation: three tests/15 assertions pass in439ms (`/tmp/cluster-detail-tests.log`), including actual Three Texture dispose events. First static check caught a test-only partial StorageEvent cast; the explicit synthetic-event cast was corrected without changing production or assertions, with original log retained at `/tmp/cluster-detail-check.log`. No browser execution.
+
+Final serialized type/Svelte/Functions verification exits0 with0 Svelte errors/warnings (`/tmp/cluster-detail-check-final.log`). Focused Biome and changed Svelte formatting pass. No browser/capture retry. Disk9075576KiB at bounded verification.
