@@ -1685,6 +1685,10 @@ test("Selected history reaches only a consenting commander and survives reload",
         await button(second!, "Participants").click();
         await expect(composer(second!)).toHaveValue(accountDraft);
         await composer(second!).fill(welcome);
+        await expect(draftStatus(second!)).toHaveText(
+          "Draft saved on this browser.",
+        );
+        await expect(button(second!, "Send message")).toBeEnabled();
         await button(second!, "Send message").focus();
         await second!.keyboard.press("Enter");
       },
