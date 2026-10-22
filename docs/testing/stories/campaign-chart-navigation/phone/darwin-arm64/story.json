@@ -9,10 +9,10 @@
   ],
   "description": "A real waiting member filters the authoritative catalogue, uses keyboard camera controls, selects a named star and tests map-label clipping at the inspector boundary. No home exists before scheduled start. Fixed catalogue entropy makes the scene repeatable without invented star data or gameplay actions.",
   "source": {
-    "commit": "775e6ad5d2a6718604ed470bacd6c6eda0caa818",
-    "dirty": true,
+    "commit": "0d9150ff45f441c6ad3f99e29f6ac5f355a9b9dc",
+    "dirty": false,
     "spec": "tests/browser/campaign-navigation.story.spec.ts",
-    "specSha256": "f314919f15fcf692c79c3885bfef3063f5cfee66192f3c0501419c32e6cde975"
+    "specSha256": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788"
   },
   "mode": "verify",
   "status": "passed",
@@ -67,7 +67,9 @@
         {
           "player": "Star envoy",
           "image": "002-waiting-chart-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     },
@@ -85,7 +87,9 @@
         {
           "player": "Star envoy",
           "image": "003-filter-o-stars-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     },
@@ -102,7 +106,9 @@
         {
           "player": "Star envoy",
           "image": "004-expand-camera-controls-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     },
@@ -119,7 +125,9 @@
         {
           "player": "Star envoy",
           "image": "005-keyboard-orbit-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     },
@@ -136,7 +144,9 @@
         {
           "player": "Star envoy",
           "image": "006-overview-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     },
@@ -153,7 +163,9 @@
         {
           "player": "Star envoy",
           "image": "007-select-rana-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     },
@@ -170,7 +182,9 @@
         {
           "player": "Star envoy",
           "image": "008-label-inspector-boundary-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     },
@@ -187,7 +201,9 @@
         {
           "player": "Star envoy",
           "image": "009-reload-chart-1-star-envoy.png",
-          "verifications": []
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
         }
       ]
     }

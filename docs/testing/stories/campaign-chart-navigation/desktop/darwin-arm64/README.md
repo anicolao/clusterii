@@ -20,6 +20,8 @@ Acknowledged outcome: The real canvas and selected system are visible.
 
 ### Viewpoint: Star envoy
 
+- [x] System names remain separated and contained as the actual camera and class filter change.
+
 [![Inspect the waiting galaxy before a home has been assigned. — Star envoy](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/002-waiting-chart-1-star-envoy.png)](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/002-waiting-chart-1-star-envoy.png)
 
 ## 3. Open Systems list and filter the authoritative catalogue to O-class stars.
@@ -33,6 +35,8 @@ Acknowledged outcome: Exactly 32 catalogued O-class systems match.
 
 ### Viewpoint: Star envoy
 
+- [x] System names remain separated and contained as the actual camera and class filter change.
+
 [![Open Systems list and filter the authoritative catalogue to O-class stars. — Star envoy](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/003-filter-o-stars-1-star-envoy.png)](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/003-filter-o-stars-1-star-envoy.png)
 
 ## 4. Restore all stellar classes and expand Camera controls using the keyboard.
@@ -44,6 +48,8 @@ Acknowledged outcome: Orbit left is available in the expanded controls.
 - [x] Close list remains inside the viewport.
 
 ### Viewpoint: Star envoy
+
+- [x] System names remain separated and contained as the actual camera and class filter change.
 
 [![Restore all stellar classes and expand Camera controls using the keyboard. — Star envoy](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/004-expand-camera-controls-1-star-envoy.png)](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/004-expand-camera-controls-1-star-envoy.png)
 
@@ -57,6 +63,8 @@ Acknowledged outcome: The list closes, focus returns and the map label moves.
 
 ### Viewpoint: Star envoy
 
+- [x] System names remain separated and contained as the actual camera and class filter change.
+
 [![Activate Orbit left with Enter and observe the actual camera moving the selected star label. — Star envoy](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/005-keyboard-orbit-1-star-envoy.png)](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/005-keyboard-orbit-1-star-envoy.png)
 
 ## 6. Reopen the list with Enter and restore the galaxy overview.
@@ -68,6 +76,8 @@ Acknowledged outcome: The overview returns focus to Systems list.
 - [x] The acknowledged navigation causes no uncaught application errors.
 
 ### Viewpoint: Star envoy
+
+- [x] System names remain separated and contained as the actual camera and class filter change.
 
 [![Reopen the list with Enter and restore the galaxy overview. — Star envoy](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/006-overview-1-star-envoy.png)](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/006-overview-1-star-envoy.png)
 
@@ -81,6 +91,8 @@ Acknowledged outcome: The inspector identifies the selected authoritative star.
 
 ### Viewpoint: Star envoy
 
+- [x] System names remain separated and contained as the actual camera and class filter change.
+
 [![Select the named visible catalogue entry Rana and inspect its system details. — Star envoy](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/007-select-rana-1-star-envoy.png)](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/007-select-rana-1-star-envoy.png)
 
 ## 8. Reload the same campaign after navigation without fabricating a home or changing membership.
@@ -92,5 +104,7 @@ Acknowledged outcome: The authoritative galaxy canvas recovers.
 - [x] Navigation and reload caused no uncaught page errors.
 
 ### Viewpoint: Star envoy
+
+- [x] System names remain separated and contained as the actual camera and class filter change.
 
 [![Reload the same campaign after navigation without fabricating a home or changing membership. — Star envoy](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/008-reload-chart-1-star-envoy.png)](../../../../../../tests/browser/story-baselines/campaign-chart-navigation/desktop/darwin-arm64/008-reload-chart-1-star-envoy.png)
