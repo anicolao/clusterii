@@ -676,3 +676,5 @@ Prompt 107 | 40dc57d778c1ba3812403105d52e4aafaf7c97f4414c586e71fc471629dbc77e | 
 Prompt 108 | 3f582e9776ca1924917733c10a87ea9d946919c55f0df0ec757866ad1c4fd14c | Record inconclusive isolated pre-fix comparison and three setup failures with exact source pairing and preserved evidence.
 
 Prompt 109 | cc7ca0bb14d39e9a50f1a141d2fcaff2b4610587fb4b6afd016b6c20a878fc3b | Register PR108 identity result ordering correction with setup-diagnosis limits and unverified preview.
+
+Prompt 110 | d3dc1d6dc204c32fbc486efb60bb96802d7909a2f41c3bb5f538b7da757522ee | Register PR109 shared local motion control with scoped source validation and pending rendered acceptance.
