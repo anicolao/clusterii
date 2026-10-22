@@ -286,3 +286,94 @@ Acknowledged outcome: Focus returns to History.
 ### Viewpoint: Dawn listener
 
 [![Escape closes retained history and restores focus to History on the galaxy. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)
+
+## 23. Write a private reply and wait for this browser's durable draft acknowledgement without sending it.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Browser storage acknowledges the saved draft without presenting it as a sent message.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Unsent drafts never change canonical state or appear in other recipients' projections.
+
+### Viewpoint: Nacre envoy
+
+[![Write a private reply and wait for this browser's durable draft acknowledgement without sending it. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/023-save-private-browser-draft-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/023-save-private-browser-draft-1-nacre-envoy.png)
+
+## 24. Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Both composers recover the exact saved text.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Unsent drafts never change canonical state or appear in other recipients' projections.
+
+### Viewpoint: Nacre envoy
+
+[![Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png)
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png)
+
+## 25. Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The second tab explains the competing saved draft without discarding its local text.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Unsent drafts never change canonical state or appear in other recipients' projections.
+- [x] Conflict remedies and composer remain in the visible fixed footer.
+
+### Viewpoint: Nacre envoy
+
+[![Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png)
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png)
+
+## 26. Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The chosen saved reply replaces local text and clears the conflict.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Unsent drafts never change canonical state or appear in other recipients' projections.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png)
+
+## 27. Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Message sent acknowledges the recovered reply and clears its composer.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Exactly one message sequence and campaign revision are committed, without the discarded text or unauthorized recipients.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png)
+
+### Viewpoint: Outer witness
+
+[![Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-2-outer-witness.png)
+
+## 28. Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Reload restores the sent message with an empty composer.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Recovery and motion preferences preserve one committed effect and privacy.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)
