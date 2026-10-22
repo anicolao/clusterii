@@ -421,6 +421,9 @@ test("Live membership revocation rejects a delayed private view and clears marke
         await expect(owner.getByRole("alert")).toContainText(
           "You no longer have access to this campaign",
         );
+        await expect(
+          owner.getByText("Your seat is confirmed.", { exact: true }),
+        ).toHaveCount(0);
         await expect(owner.locator("canvas")).toHaveCount(0);
         await expect(focus(owner)).toHaveCount(0);
         await expect(button(owner, "Economy")).toHaveCount(0);

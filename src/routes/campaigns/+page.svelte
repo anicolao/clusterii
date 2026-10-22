@@ -327,6 +327,7 @@
                 pending?.kind !== "campaign.leave" ||
                 pending.gameId !== selected
               ) {
+                if (!pending) message = "";
                 error =
                   "You no longer have access to this campaign. Choose another campaign.";
                 remedy = "validation";
