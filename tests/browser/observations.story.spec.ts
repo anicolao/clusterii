@@ -460,25 +460,39 @@ test("Live stellar observations retain private current and historical facts afte
       ],
       views: views(),
     });
+    const warning = (p: Page) =>
+      observation(p).getByText(
+        p === owner
+          ? "These are historical facts. Ownership and forces may have changed."
+          : "Scans happen automatically. A missed scan preserves the last report; it does not mean the system is empty. Owned layers remain current in System.",
+        { exact: true },
+      );
     await story.step("read-historical-warning", {
       actor: aliases[0],
       description:
-        "Scroll the retained report to its historical warning without losing the pinned age or leaving the bounded panel.",
+        "Read the full historical warning and the other commander's scan caveat without losing the pinned age or leaving the bounded panel.",
       action: async () => {
         for (const p of [owner, peer]) {
           await pinned(p);
           await details(p).focus();
-          await details(p).evaluate((el) => el.scrollTo(0, el.scrollHeight));
+          await warning(p).scrollIntoViewIfNeeded();
         }
       },
       acknowledgement: {
-        spec: "The report explains that a missed scan does not mean the system is empty.",
+        spec: "Each full warning is readable inside its panel below the pinned observation age.",
         check: async () => {
           for (const p of [owner, peer]) {
-            await expect(observation(p)).toContainText(
-              "A missed scan preserves the last report",
-            );
+            await expect(warning(p)).toBeInViewport({ ratio: 1 });
             await pinned(p);
+            const text = await warning(p).boundingBox(),
+              bounds = await details(p).boundingBox(),
+              pinnedAge = await age(p).boundingBox();
+            expect(text!.y).toBeGreaterThanOrEqual(
+              pinnedAge!.y + pinnedAge!.height,
+            );
+            expect(text!.y + text!.height).toBeLessThanOrEqual(
+              bounds!.y + bounds!.height,
+            );
           }
         },
       },

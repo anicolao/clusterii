@@ -1391,3 +1391,10 @@ Agent healthy continuing CI lifetime/setup slice without another prompt. Existin
 #64 a26324c emulator-cohort PR published and attached. Independently reviewed sequential viewport orchestration, ownership/port guards, interrupt handling, retained per-cohort failure/log metadata, collision rejection and nonzero final status. Ran all five orchestration tests successfully. This mitigates lifetime accumulation; Linux effectiveness and underlying backlog cause remain unproven.
 
 Agent healthy validating history setup follow-up: phone/desktop/large exact comparisons pass existing baselines, short pending. Read helper diff: distinct described setup controls get existing individual budgets while whole-test deadline remains; acknowledgement checks retained, narrative records controls. Existing00:09 handoff still queued, no duplicate. #58 application green; latest CI queued/running. Carry checkpoint into committed/pushed logs. Full visual/Linux/current-preview/raster/release acceptance remains open; no merge.
+
+
+## Reviewer progress — 2026-10-22 00:59 Toronto
+
+#65 757d423 history setup published on #64 and attached; review records four exact journeys42 unchanged captures, all fifteen named controls, original90sec total deadline. No production/image changes. Agent healthy already developing live observations story; retained candidate assertion failure caused decorative DOM glyph versus accessible star name, being corrected without changing game behavior.
+
+Independently read observation entropy boundary and ran its three tests successfully: isolated demo/loopback and exact service signature, fixed fixture identity inputs only, seed/star/tick/distinct seats retained, unrelated campaigns unchanged. This explicit harness is not production entropy certification. New observations candidates and exact/visual review remain pending. CI #58 generation and #61 second verify now failed within existing service triage; #64/#65 queued. Existing00:09 handoff remains queued; no duplicate interruption. Carry checkpoint into committed/pushed logs; full release gates open, no merge.

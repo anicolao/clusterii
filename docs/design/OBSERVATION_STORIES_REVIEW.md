@@ -20,3 +20,5 @@ This is deterministic visual-fixture evidence, not certification of production e
 | Linux / independent visual / preview | Open; exact-head publication must be verified separately |
 
 The initial failure is a test selector correction, not a player-facing change. All original action, acknowledgement, geometry and capture deadlines remain. No `.first()`/`.last()`, masking, image normalization or tolerance changes are used.
+
+The consistent candidate run at `3692f6d` passed all four journeys (35.7s/32.0s/57.5s/22.6s), but local rendered review withheld promotion: scrolling to the panel bottom clipped the beginning of the paragraph described as the historical warning. The action now brings that exact paragraph into view and asserts full viewport/scroll-panel containment below the pinned age. Original candidates remain `/tmp/cluster-observations-before-warning`; no pixel baseline was created or changed. This corrects the illustrated reading action, not production presentation.

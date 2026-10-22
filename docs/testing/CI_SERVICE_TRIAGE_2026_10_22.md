@@ -15,3 +15,9 @@ The same verification artifact contains a 239,937,693-byte Firestore log, select
 Full Firestore evidence remains `/tmp/cluster62-first-service-failure/firestore-debug.log`. No service data, traces or user files were deleted. A bounded emulator-cohort investigation is the next resource correction to review, preserving all tests and artifacts. #58 matching-head generation job119568677880 is still running; its candidate artifact is unavailable, so no Linux family is promoted from a different head or failed verification output.
 
 The 00:19 supervisory checkpoint also records #61 job119582164198 with 59 failures (`/tmp/cluster61-0018-failure.log`), including missing baselines and identity/admission timeouts. That job is not independently diagnosed here; it remains part of the same follow-up triage, not classified as raster-only.
+
+## Completed #58 generation
+
+Generation job119568677880 completed with 121 passes and 23 failures, including later identity/admission locators and socket hangups; `/tmp/cluster58-generation-review.log` is retained. Artifact12402018661 is 2,622,106,312 bytes. Bounded metadata extraction transferred 21,637,832 bytes without downloading the full artifact. The new fleet-reorganization family has passed phone/desktop/large narratives; short failed during identity setup and has no passed narrative.
+
+Provenance identifies clean merge commit `d6885b03e796dc7b6b047e1d45d97da9c833a616`; its verified parents include run head `a6838a2eee3a2725da63a53d473379b3a2fb4ff0`. The generated spec SHA `8531a5bbb0d138362c4e87fa2b802ddf064353374fc8d6087551114c51e955c6` matches the unchanged current spec. Metadata is under `/tmp/cluster58-reorganization-candidates`. No new Linux image has been promoted from metadata alone. Separate rendered review and strict verification remain required, and generation failures are not classified as raster-only.
