@@ -401,3 +401,7 @@ Research forecast update: reviewer12:19 approved gallery28 from b7e629a and stri
 Mounted selection update: one phone Darwin journey passes with two unpromoted candidates from82e58b1. Actual held-response navigation and current missing-invitation checks execute; account-switch/late-error/four-size independent acceptance remain separate.
 
 Selection ownership sensitivity remains unproven: pre-fix phone failed identity readiness; unchanged current desktop/large/short failed setup. No additional captures or promotion. Original phone evidence remains separately scoped.
+
+## Local presentation controls (UX-15/16)
+
+The shared GameMenu/PresentationSettings now controls real feedback/CSS motion and is available in the production galaxy, gallery and animation lab. Focused store/feedback tests are not mounted acceptance. Pending: ordinary keyboard open/toggle/Escape/restore, persisted browser reload and OS precedence, normal/reduced settled outcome equality, gallery/lab real states, four viewport target/scroll/corner geometry and separately reviewed candidates. No browser run while setup diagnosis is held; low-detail renderer remains unimplemented. [Audit](../design/LOCAL_MOTION_REVIEW.md).

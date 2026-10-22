@@ -1,4 +1,5 @@
 <script lang="ts">
+  import GameMenu from "../GameMenu.svelte";
   import type { ResearchDraft, RecoveredResearch } from "$lib/research-draft";
   import {
     refreshMarketDraft,
@@ -933,6 +934,7 @@
       data-focus="roster"
       aria-expanded={roster}>Roster</ActionButton
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
+    <GameMenu />
   </header>
   {#if !roster && !commandKind.startsWith("conversation.") && !economy}<div
       class="acknowledgement"
