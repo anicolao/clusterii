@@ -320,9 +320,17 @@
               stopView();
               view = null;
               loading = false;
-              error =
-                "You no longer have access to this campaign. Choose another campaign.";
-              remedy = "validation";
+              // Removal can arrive before the matching Leave receipt. Keep its
+              // pending/retry outcome until the service acknowledges or rejects it.
+              // The private-view fence above applies to either kind of removal.
+              if (
+                pending?.kind !== "campaign.leave" ||
+                pending.gameId !== selected
+              ) {
+                error =
+                  "You no longer have access to this campaign. Choose another campaign.";
+                remedy = "validation";
+              }
             }
           }
         },
@@ -564,6 +572,16 @@
         message = feedback.message;
         error = feedback.error;
         remedy = feedback.remedy;
+        if (
+          receipt.status === "accepted" &&
+          command.kind === "campaign.leave"
+        ) {
+          // The receipt can beat the membership snapshot. Retire this acknowledged
+          // membership now so its later removal cannot become an access-loss error.
+          // select() below still fences and stops the old private-view subscription.
+          memberships = memberships.filter((id) => id !== receipt.gameId);
+          delete marketDrafts.campaigns[receipt.gameId];
+        }
         if (
           receipt.status === "accepted" &&
           [

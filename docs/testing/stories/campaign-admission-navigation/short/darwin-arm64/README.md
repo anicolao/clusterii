@@ -160,6 +160,7 @@ Actor: **Star envoy**.
 
 Acknowledged outcome: Seat release is acknowledged and the member galaxy view closes.
 
+- [x] One logical Leave has its matching accepted receipt; membership is absent and the retained protected view denies player access, with no involuntary-access error or retry remedy.
 - [x] The ordinary journey has no uncaught page errors.
 
 ### Viewpoint: Star envoy

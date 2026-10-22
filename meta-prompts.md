@@ -1755,3 +1755,19 @@ Disk independently6.3GiB, above2GiB gate; agent already resumed one bounded gene
 Agent healthy atb462cbd publishing real remote-session-end story:4 strict journeys64 captures pass; independent prior source review plus phone015 shows protected campaign absent, readable sign-in remedy and visible keyboard focus. Scope remains local Auth Emulator, not hosted auth or separate membership/account-switch acceptance. PR creation transiently failed while push is still active; do not duplicate work. Disk5.5GiB.
 
 #81 Linux verification failed; full job119806587419 log retained /tmp/cluster81-0849-verify.log.59 missing baselines; pixel reports now include19340/37585/96672/33491 (some repeated) as well as1066/259/273/1994. These additional counts require classification, not automatic attribution to inherited stellar/identity causes. Carry checkpoint and classify at next committed/pushed logging boundary. No acceptance/merge; original raster, independent visual/Linux/hosted and full-release holds remain open.
+
+
+## Reviewer findings and handoff — 2026-10-22 09:09 Toronto
+
+#83 00748d3 attached on #82, clean idle; publication green. Independent previous source/phone sign-out review remains scoped. New #81 pixel failures localized to waiting-campaign Leave in both campaign-navigation and encryption-choice, all sizes; suspected interaction with new membership-loss error needs reproduction, not baseline replacement.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 09:09 Toronto: #83 00748d3 attached and publication green; agent idle. Prioritize actionable #81 regression before further features, as a small successor on #83. Independently classified /tmp/cluster81-0849-verify.log: both campaign-navigation and encryption-choice fail their successful waiting-campaign Leave capture in all four sizes with identical per-size counts19340/37585/96672/33491. Hypothesis, not established cause: a86cd73 lostSelected membership fence now emits access-loss error for an acknowledged voluntary Leave. Reproduce and inspect actual rendered before/after; preserve authoritative leave receipt and distinguish intended successful departure from involuntary revocation without weakening late-callback protection. Add relevant named assertions and verify both affected story families plus scoped revocation regression; do not approve replacement baselines merely to hide wrong error UI. Continue remaining authorized implementation after resolving findings. Carry checkpoints08:49/09:09 and exact attributed handoff into committed/pushed logs. Preserve all evidence, full visual/Linux/hosted/original raster gates; never merge.
+
+
+## Reviewer progress — 2026-10-22 09:19 Toronto
+
+Agent healthy at5ae496e correcting voluntary Leave regression. Independently reviewed58d2179: unconditional private-view fence remains; matching pending Leave retains receipt-driven outcome, and accepted Leave retires local membership/draft before a later snapshot. Independently viewed phone006 encryption-unavailable: successful seat-release message and Claim your seat action, no false access-loss banner. Both phone stories pass original expected images plus accepted-receipt/read-denied assertions; remaining aggregate and scoped revocation results being finalized. No new baseline approval or broad acceptance inferred.
+
+#82 Linux verification failed; retained job119813484417 log /tmp/cluster82-0919-verify.log.59 missing baselines, same12 pixel reports including paired per-size Leave mismatches and inherited4 others. Carry checkpoint into committed/pushed attributed logs at natural boundary. No interruption/duplicate prompt, no merge; independent visual/Linux/hosted and original raster/full-release gates remain open.

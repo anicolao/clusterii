@@ -1,3 +1,4 @@
+import { observeDeparture } from "./story-helpers/campaign-departure";
 import { test, expect } from "./story-helpers/fixtures";
 import { readableLabels } from "./story-helpers/galaxy-labels";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
@@ -57,6 +58,7 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     description:
       "A developer creates a real waiting campaign, reviews portrait/faction/briefing with a persistent commitment rail, joins and recovers that exact campaign through Play. Waiting membership never offers Continue. Seat release is acknowledged and survives reload. The catalogue seed is fixed by the emulator-only harness; no campaign state or tick is fabricated.",
   });
+  const departure = observeDeparture(page);
   const name = `Admission dawn ${info.project.name}`,
     views = [view(page, "Star envoy")],
     errors: string[] = [];
@@ -368,6 +370,7 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
       },
     },
     verifications: [
+      departure,
       {
         spec: "The ordinary journey has no uncaught page errors.",
         check: async () => expect(errors).toEqual([]),

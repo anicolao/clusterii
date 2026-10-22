@@ -10,10 +10,10 @@
   ],
   "description": "A developer creates a real waiting campaign, reviews portrait/faction/briefing with a persistent commitment rail, joins and recovers that exact campaign through Play. Waiting membership never offers Continue. Seat release is acknowledged and survives reload. The catalogue seed is fixed by the emulator-only harness; no campaign state or tick is fabricated.",
   "source": {
-    "commit": "775e6ad5d2a6718604ed470bacd6c6eda0caa818",
-    "dirty": true,
+    "commit": "5ae496e3e962d6c4985fd193a5bdba10f9196ede",
+    "dirty": false,
     "spec": "tests/browser/campaign-navigation.story.spec.ts",
-    "specSha256": "f314919f15fcf692c79c3885bfef3063f5cfee66192f3c0501419c32e6cde975"
+    "specSha256": "6df8eda2be721c7e0b7879a4376242c93e6db77eee180d5c7e8ad8e759ccd984"
   },
   "mode": "verify",
   "status": "passed",
@@ -266,6 +266,7 @@
       "kind": "player",
       "acknowledgement": "Seat release is acknowledged and the member galaxy view closes.",
       "verifications": [
+        "One logical Leave has its matching accepted receipt; membership is absent and the retained protected view denies player access, with no involuntary-access error or retry remedy.",
         "The ordinary journey has no uncaught page errors."
       ],
       "views": [
