@@ -256,16 +256,41 @@ export class TestStepHelper {
                   "Pinned renderer must match the reviewed baseline",
                 ).toEqual(JSON.parse(readFileSync(manifest, "utf8")));
               }
-              const image = await stableImage(
-                () =>
-                  page.screenshot({
-                    animations: "allow",
-                    caret: "hide",
-                    fullPage: false,
-                  }),
-                exactPixels,
-              );
+              const renderSamples: unknown[] = [];
+              const sampleRender = async () => {
+                if (process.env.CLUSTER_RENDER_TELEMETRY === "1")
+                  renderSamples.push(
+                    await page.evaluate(
+                      () =>
+                        (
+                          window as unknown as {
+                            __clusterRenderSample?: () => unknown;
+                          }
+                        ).__clusterRenderSample?.() ?? null,
+                    ),
+                  );
+              };
+              const image = await stableImage(async () => {
+                await sampleRender();
+                const captured = await page.screenshot({
+                  animations: "allow",
+                  caret: "hide",
+                  fullPage: false,
+                });
+                await sampleRender();
+                return captured;
+              }, exactPixels);
               writeFileSync(join(this.story.folder, stem), image);
+              if (process.env.CLUSTER_RENDER_TELEMETRY === "1") {
+                writeFileSync(
+                  join(
+                    this.story.folder,
+                    stem.replace(/\.png$/, ".render.json"),
+                  ),
+                  JSON.stringify(renderSamples, null, 2),
+                );
+              }
+
               // Observe after capture: diagnostics cannot change the captured pixels.
               // Preserve this for passing and failing views, independently of baselines.
               writeFileSync(
