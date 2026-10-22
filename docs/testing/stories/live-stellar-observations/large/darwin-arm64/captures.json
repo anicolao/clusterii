@@ -2,7 +2,7 @@
   {
     "image": "010-inspect-before-acquisition-1-survey-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
-    "actualSha256": "45c9ce432378684d60399a5c0ef3d35c22feaa23e088e3dd1121acd036336a16"
+    "actualSha256": "e114ac63522548bb710114a9956afbf82710f85471626f7c8378d6bacf072790"
   },
   {
     "image": "010-inspect-before-acquisition-2-independent-surveyor.png",
@@ -12,7 +12,7 @@
   {
     "image": "012-read-current-report-1-survey-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/012-read-current-report-1-survey-envoy.png",
-    "actualSha256": "a770f68e6194da45e646b12908935f893644047ea73e70d64f430f51e6ba8a7f"
+    "actualSha256": "0aead11ccc8bd1fdd045fe20335aa57b887492aa6a13ad237a5cf3b217b0a76f"
   },
   {
     "image": "012-read-current-report-2-independent-surveyor.png",
@@ -22,7 +22,7 @@
   {
     "image": "013-read-scanning-capability-1-survey-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/013-read-scanning-capability-1-survey-envoy.png",
-    "actualSha256": "a770f68e6194da45e646b12908935f893644047ea73e70d64f430f51e6ba8a7f"
+    "actualSha256": "0aead11ccc8bd1fdd045fe20335aa57b887492aa6a13ad237a5cf3b217b0a76f"
   },
   {
     "image": "013-read-scanning-capability-2-independent-surveyor.png",
@@ -32,7 +32,7 @@
   {
     "image": "015-read-retained-history-1-survey-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/015-read-retained-history-1-survey-envoy.png",
-    "actualSha256": "d9e0348e24f5872059ffcd3986d73f6ac0e1ca0b3bae62b6d7418549450d190f"
+    "actualSha256": "b4fe698aa06ee0a99e113a4b4b8ad62f5ea97fb1379734485f452e231f30224f"
   },
   {
     "image": "015-read-retained-history-2-independent-surveyor.png",
@@ -42,7 +42,7 @@
   {
     "image": "016-read-historical-warning-1-survey-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/016-read-historical-warning-1-survey-envoy.png",
-    "actualSha256": "d9e0348e24f5872059ffcd3986d73f6ac0e1ca0b3bae62b6d7418549450d190f"
+    "actualSha256": "b4fe698aa06ee0a99e113a4b4b8ad62f5ea97fb1379734485f452e231f30224f"
   },
   {
     "image": "016-read-historical-warning-2-independent-surveyor.png",
@@ -52,7 +52,7 @@
   {
     "image": "017-inspect-still-unknown-1-survey-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/017-inspect-still-unknown-1-survey-envoy.png",
-    "actualSha256": "7ba23e2b601694966f6860cc24e270c57a255f4818f2cc968d016344d949ad94"
+    "actualSha256": "01999e191aa611dae40d11e19fa09c2880bb820563e5c4311c5a5f22f36ed139"
   },
   {
     "image": "017-inspect-still-unknown-2-independent-surveyor.png",
@@ -62,11 +62,31 @@
   {
     "image": "018-recover-retained-report-1-survey-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/018-recover-retained-report-1-survey-envoy.png",
-    "actualSha256": "9860281849cd601e8d2f1e9fea220260fe38d3e96efedf98b2aff36cd68302a6"
+    "actualSha256": "561d1524f623dcbc3848c01cd799a5b910b8d7166aec9f8add356fb6a28d5e8c"
   },
   {
     "image": "018-recover-retained-report-2-independent-surveyor.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/018-recover-retained-report-2-independent-surveyor.png",
+    "actualSha256": "67334b74f35df18f92edd8c69c49bc58aa2ee5eb47b1643d5ceb91be7b82a213"
+  },
+  {
+    "image": "019-read-labels-after-resize-1-survey-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+    "actualSha256": "561d1524f623dcbc3848c01cd799a5b910b8d7166aec9f8add356fb6a28d5e8c"
+  },
+  {
+    "image": "019-read-labels-after-resize-2-independent-surveyor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+    "actualSha256": "67334b74f35df18f92edd8c69c49bc58aa2ee5eb47b1643d5ceb91be7b82a213"
+  },
+  {
+    "image": "020-locate-home-by-keyboard-1-survey-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+    "actualSha256": "6ff4cd970fd7a693db5f12f62cc2d0ca2dc499dcc25e5ba18e0270a6d6301dab"
+  },
+  {
+    "image": "020-locate-home-by-keyboard-2-independent-surveyor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
     "actualSha256": "67334b74f35df18f92edd8c69c49bc58aa2ee5eb47b1643d5ceb91be7b82a213"
   }
 ]

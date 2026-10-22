@@ -1414,3 +1414,19 @@ Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stel
 #66 4969974 published on #65 and attached. Independently checked four exact local observation results56 captures; scope review retains uninstrumented mock service136 assertions and two original browser/motion regressions, with managed-real coverage explicitly skipped. Phone map-label overlap remains openly documented and full composition unapproved. Agent healthy automatically processing00:09 queued finding;01:10 finding remains queued, no duplicate prompt.
 
 Independently fetched gh-pages/pr61/revision.json: source/build both6504a4a, corresponding Pages run39724569489 still queued. This explains plausible deployment delay but served preview remains unverified; no relaxed gate or duplicate publish. #57/#59 application now green, #65 Linux running. Carry checkpoint into committed/pushed logs; raster, Linux/full visual/preview/release gates open, no merge.
+
+
+## Reviewer progress — 2026-10-22 01:29 Toronto
+
+#66 clean0666727 includes both prior attributed findings; pane idle since01:24 and queues empty. Resume actual map-label correction as successor; documenting open issue is not full visual acceptance. #64/#65 verification now running, latest heads otherwise queued; no new completed actionable failure. Full release gates remain open.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 01:29 Toronto: pane idle after logging findings, clean0666727 on #66; queues empty. Resolve the observed phone map-label collision now as a small stacked successor to #66, rather than only documenting it. Reproduce Tupa/Tania Australis overlap in retained observation recovery scene. Implement deterministic readable label placement/selection priorities appropriate to the approved galaxy composition, preserving factual positions, visibility/privacy, selected/home-system discoverability and keyboard systems-list access. Do not mask labels just to pass snapshots. Add meaningful collision/edge/resize coverage and review actual phone/desktop/large/short scenes, reduced/normal motion where affected, then separately review changed candidates and exact comparisons with provenance. Preserve existing service assertions. Continue remaining IMPLEMENTATION_PLAN work while CI waits, with targeted resource/raster and exact-head preview follow-up when evidence changes. Carry checkpoints through01:29 into attributed PROMPTS/PROMPT_WORK and committed/pushed meta logs; no merge.
+
+
+## Reviewer progress — 2026-10-22 01:41 Toronto
+
+Agent healthy implementing label-placement successor at fff5be0 after40742c9 and2be1ffa; no duplicate prompt or interruption. Independently reviewed measured-bound placement, deterministic selected/home/owned priorities, offscreen handling and observer cleanup. Independently viewed fresh phone018 recovered observation candidate: Tupã and Tania Australis now separated and observation facts readable. This resolves the sampled overlap only; full composition and remaining viewport/exact/hosted acceptance are not inferred. Agent reports four candidate journeys passing and is continuing separate promotion/exact verification; shared contact-chart viewport correction is included in latest commit.
+
+Carry this checkpoint into committed/pushed logs at the next natural boundary. Full implementation/release, Linux resource/raster and exact-head preview gates remain open; no merge.
