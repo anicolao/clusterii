@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { selectedObserver } from "$lib/selected-observer";
   import {
     scopeRouteDrafts,
     refreshRouteDrafts,
@@ -250,9 +251,9 @@
     loading = true;
     creating = false;
     try {
-      const stop = await service.observeCampaign(
-        id,
-        account!,
+      const stop = await selectedObserver<CampaignView | null>(
+        () => session === generation && current === selection,
+        (next, fail) => service.observeCampaign(id, account!, next, fail),
         (next) => {
           if (session !== generation || current !== selection) return;
           if (next && account) {
@@ -319,6 +320,7 @@
       }
     }
     await tick();
+    if (session !== generation || current !== selection) return;
     if (view && !showBriefing)
       document.getElementById("galaxy-heading")?.focus();
     else title?.focus();

@@ -217,3 +217,5 @@ Reviewed Pantheon’s local implementation at `4a14001a352d2ccdc2a1e5883bca94142
 - [GameButton](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/src/lib/components/GameButton.svelte) and [DialogFrame](https://github.com/anicolao/pantheon/blob/4a14001a352d2ccdc2a1e5883bca9414284b21ca/src/lib/components/DialogFrame.svelte): semantic controls with themed artwork, noninteractive decorative layers, visible focus, and composition-aware sizing.
 
 This review covers local source and design, not a certification of Pantheon’s hosted behavior. Cluster retains authoritative server processing and encrypted object access; it does not adopt Pantheon’s trusted-client replay privacy model, card-game mechanics, or shared-table scope.
+
+[Campaign selection ownership](docs/testing/ADMISSION_BOUNDARY_CONSOLIDATION.md) consolidates retained admission failures and fences stale observer errors/focus after selection changes. Callback-adapter unit coverage is separate from mounted recovery/keyboard acceptance; no admission timing fix is claimed.
