@@ -128,6 +128,59 @@ test("Research forecast gallery explains recorded costs effects and rate assumpt
       ],
       views: [view(details, `${state} forecast`)],
     });
+    await story.step(`read-${state}-qualification`, {
+      actor: "Developer",
+      description:
+        "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+      action: async () => {
+        const reading = details.getByRole("region", {
+          name: "Research forecast details",
+        });
+        await reading.focus();
+        await page.keyboard.press("End");
+        await expect
+          .poll(() =>
+            reading.evaluate(
+              (e) =>
+                Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) < 1,
+            ),
+          )
+          .toBe(true);
+      },
+      acknowledgement: {
+        spec: "Keyboard focus stays in the forecast, which reaches its final active-target explanation.",
+        check: async () => {
+          await expect(
+            details.getByRole("region", { name: "Research forecast details" }),
+          ).toBeFocused();
+        },
+      },
+      verifications: [
+        {
+          spec: "The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status.",
+          check: async () => {
+            const reading = await details
+              .getByRole("region", { name: "Research forecast details" })
+              .boundingBox();
+            const text = await details
+              .getByText("Active research:", { exact: false })
+              .boundingBox();
+            expect(text!.y).toBeGreaterThanOrEqual(reading!.y);
+            expect(text!.y + text!.height).toBeLessThanOrEqual(
+              reading!.y + reading!.height,
+            );
+            await expect(
+              panel.getByRole("radio", { name: /investing/ }),
+            ).toBeChecked();
+            if (state === "applied")
+              await expect(
+                panel.getByRole("status", { name: "Applied research order" }),
+              ).toContainText("applied at tick 1");
+          },
+        },
+      ],
+      views: [view(details, `${state} qualification`)],
+    });
     await story.step(`close-${state}-forecast`, {
       actor: "Developer",
       description:
