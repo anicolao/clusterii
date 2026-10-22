@@ -447,3 +447,104 @@ Acknowledged outcome: Both authenticated tabs recover the replacement from durab
 ### Viewpoint: Outer witness
 
 [![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)
+
+## 33. Withhold only actual conversation.send RTDB frames before ingress. Other traffic passes through; no payload, identity, receipt or state is replaced.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 34. Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The interface explicitly waits for acknowledgement and retains the submitted text; this is not service acceptance.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] An undelivered command changes no canonical state and exposes no draft to removed members or outsiders.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png)
+
+### Viewpoint: Outer witness
+
+[![Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png)
+
+## 35. Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The other tab explains the unfinished order and preserves its text.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] An undelivered command changes no canonical state and exposes no draft to removed members or outsiders.
+
+### Viewpoint: Nacre envoy
+
+[![Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png)
+
+## 36. Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Recovery opens the correct room and offers Retry same command with the original proposal intact.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] An undelivered command changes no canonical state and exposes no draft to removed members or outsiders.
+- [x] The retry control remains fully visible before scrolling.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png)
+
+## 37. Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The interface returns to awaiting acknowledgement without clearing the proposal.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] An undelivered command changes no canonical state and exposes no draft to removed members or outsiders.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png)
+
+## 38. Release retained frames on still-active connections to actual RTDB ingress. Retransmissions retain their original command path and encrypted payload; no service result is injected.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 39. Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The real service acknowledges Message sent and the submitted composer clears.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] One authoritative receipt, campaign revision and message sequence acknowledge the original command; private projections exclude its contents.
+- [x] The acknowledged message is fully readable within bounded conversation details.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png)
+
+### Viewpoint: Outer witness
+
+[![Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-2-outer-witness.png)
+
+## 40. Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The sent proposal is retained in history without restoring a pending order or unsent text.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] One authoritative receipt, campaign revision and message sequence acknowledge the original command; private projections exclude its contents.
+- [x] IndexedDB contains no unfinished order and motion preferences preserve the single accepted outcome.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)

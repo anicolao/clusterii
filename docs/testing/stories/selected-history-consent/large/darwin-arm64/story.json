@@ -8,10 +8,10 @@
   ],
   "description": "Independent commanders use authenticated development-provider commands. The creator shares one of two earlier messages; the recipient reviews and accepts its scope, then reloads. An uninvolved commander never receives the room or either message. Admission uses the labelled emulator clock and actual scheduler endpoint, not injected state. Managed-key and fault journeys remain separate coverage.",
   "source": {
-    "commit": "b2d236a822ee03730e1af0726c8eb4df1b8d14b0",
+    "commit": "7ce5d61fae455343a052b3938cbaad1a627ca14e",
     "dirty": false,
     "spec": "tests/browser/selected-history.story.spec.ts",
-    "specSha256": "3145a92f070ed340a2319cbbfc1580a1b3e5c8ddafa7ba36411357e286b9d214"
+    "specSha256": "7bfde913a591aed895a33e3b36db0a95cb5cbd83a110613e83bd90da207abcb9"
   },
   "mode": "verify",
   "status": "passed",
@@ -645,6 +645,145 @@
         {
           "player": "Outer witness",
           "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "interrupt-send-transport",
+      "description": "Withhold only actual conversation.send RTDB frames before ingress. Other traffic passes through; no payload, identity, receipt or state is replaced.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "submit-replacement-awaiting-acknowledgement",
+      "description": "Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The interface explicitly waits for acknowledgement and retains the submitted text; this is not service acceptance.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "protect-pending-send-from-second-tab",
+      "description": "Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The other tab explains the unfinished order and preserves its text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-interrupted-send",
+      "description": "Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Recovery opens the correct room and offers Retry same command with the original proposal intact.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders.",
+        "The retry control remains fully visible before scrolling."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "retry-original-message-command",
+      "description": "Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The interface returns to awaiting acknowledgement without clearing the proposal.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-send-delivery",
+      "description": "Release retained frames on still-active connections to actual RTDB ingress. Retransmissions retain their original command path and encrypted payload; no service result is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "observe-retried-message-acceptance",
+      "description": "Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The real service acknowledges Message sent and the submitted composer clears.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "One authoritative receipt, campaign revision and message sequence acknowledge the original command; private projections exclude its contents.",
+        "The acknowledged message is fully readable within bounded conversation details."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "039-observe-retried-message-acceptance-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-acknowledged-send",
+      "description": "Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The sent proposal is retained in history without restoring a pending order or unsent text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "One authoritative receipt, campaign revision and message sequence acknowledge the original command; private projections exclude its contents.",
+        "IndexedDB contains no unfinished order and motion preferences preserve the single accepted outcome."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
           "verifications": []
         }
       ]
