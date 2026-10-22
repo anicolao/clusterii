@@ -598,3 +598,5 @@ Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | A
 Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Record eight passing ownership journeys and preserved360 candidates, carrying reviewer checkpoints through13:09 and the renewed disk capture gate.
 
 Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Prepare real leased research completion overflow and next-tick effect stories with a passing144-assertion worked example; captures remain disk-gated.
+
+Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Record four passing leased research completion journeys and100 unpromoted candidates with matching-source provenance and reviewer13:19 checkpoint.
