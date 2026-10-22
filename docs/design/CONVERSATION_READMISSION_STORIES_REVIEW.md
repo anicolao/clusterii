@@ -1,0 +1,5 @@
+# Future-only conversation readmission
+
+Successor to #75 at80fbb05. The creator re-invites a removed commander with explicit future-only scope. Invitation and acceptance each commit one revision without creating messages; a subsequent welcome reaches exactly the current members. Reload preserves the boundary, and unshared/absence-period messages remain absent from the returning recipient and outsider UI/projections. Previously received history is not erased.
+
+Uses real authenticated commands, current membership, canonical recipient checks and persisted authorized views. The existing private unsent draft survives the invitation controls before the creator deliberately replaces it with the welcome. Candidate/strict evidence is pending; original procedural checks, rule boundaries, independent visual/Linux/hosted and raster gates remain. No new gameplay rule or merge.
