@@ -606,3 +606,5 @@ Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | A
 Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Restore authenticated submitted research targets in the matching campaign and add reload identity payload and privacy assertions on a successor.
 
 Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Preserve four passing recovery journeys and add visible restored-choice and pending-control capture assertions; correct the research harness guide.
+
+Prompt 91 | 91e98394bd3299bdc7f6ddfc00bf98e1ac5d96ab65aee066b54c5a96b560118b | Preserve qualified recovery captures and fence each restored command once so later view callbacks cannot overwrite a deliberate baseline choice.

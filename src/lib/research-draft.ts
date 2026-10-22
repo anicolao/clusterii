@@ -3,6 +3,7 @@ import type { ResearchState, Technology } from "@shared/production";
 export interface ResearchDraft {
   target: Technology;
   baseline: Technology;
+  restoredCommandId?: string;
 }
 export interface ResearchDraftScope {
   account: string | null;
@@ -33,6 +34,9 @@ export function refreshResearchDraft(
   const baseline = research.orders?.at(-1)?.target ?? research.target;
   return {
     baseline,
+    ...(previous?.restoredCommandId
+      ? { restoredCommandId: previous.restoredCommandId }
+      : {}),
     target:
       previous && previous.target !== previous.baseline
         ? previous.target
@@ -62,7 +66,13 @@ export function restoreResearchDraft(
     recovered.gameId !== gameId
   )
     return current;
-  return previous && previous.target !== previous.baseline
-    ? current
-    : { ...current, target: recovered.target };
+  if (previous?.restoredCommandId === recovered.id) return current;
+  return {
+    ...current,
+    restoredCommandId: recovered.id,
+    target:
+      previous && previous.target !== previous.baseline
+        ? current.target
+        : recovered.target,
+  };
 }

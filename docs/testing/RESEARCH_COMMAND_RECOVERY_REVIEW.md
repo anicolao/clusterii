@@ -11,3 +11,9 @@ Run the bounded live research-orders family after committing clean source and re
 ## First bounded execution
 
 Clean05e0621 passed all four journeys in2.8 minutes, including original command identity/payload, withheld-ingress reload, actual rejection and completion/privacy regressions. Candidates remain at `/tmp/cluster-research-command-recovery-heading-candidates`; log `/tmp/cluster-research-command-recovery-generation.log`. The implementer's phone inspection found the new capture at the Economy heading rather than the restored choice. Preserve this run; the follow-up explicitly reviews the selected disabled radio, focuses the acknowledgement group and asserts both choice and pending control above the footer before capture. This is a viewpoint correction, not independent approval or a baseline change.
+
+## Qualified reading and once-only restoration
+
+Clean df2325a passed four journeys in2.9 minutes with104 candidates, retained at `/tmp/cluster-research-command-recovery-qualified-candidates`, log `/tmp/cluster-research-command-recovery-qualified-generation.log`. The new view explicitly contains Recruiting and its pending acknowledgement above the footer. These images remain unapproved.
+
+Source follow-up records the recovered command ID only in the account/campaign-scoped in-memory draft. Later authorized view callbacks cannot reapply that same submitted target after the player deliberately chooses the authoritative baseline target. The original outbox command remains unchanged. The focused regression covers this previously ambiguous newer-edit case; matching-source rendered evidence remains required after the fix.

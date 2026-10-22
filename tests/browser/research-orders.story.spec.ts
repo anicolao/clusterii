@@ -930,6 +930,36 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         },
       ],
     });
+    await story.step("replace-recovered-intent", {
+      actor: aliases[0] + " · second device",
+      description:
+        "After rejection, deliberately choose the currently acknowledged Innovation target without sending. Later views must not restore the rejected Recruiting choice.",
+      action: async () => {
+        await choose(stale, "innovation");
+      },
+      acknowledgement: {
+        spec: "Only local intent changes; the original rejected receipt and two accepted orders remain authoritative.",
+        check: async () => {
+          await expect(
+            research(stale).getByRole("radio", { name: /^innovation/ }),
+          ).toBeChecked();
+          expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
+          expect(
+            (await canonical()).economy!.research[uid].orders!.map(
+              (o) => o.target,
+            ),
+          ).toEqual(["investing", "innovation"]);
+        },
+      },
+      verifications: [privacy],
+      views: [
+        {
+          page: stale,
+          player: aliases[0] + " · revised intent",
+          surface: "game",
+        },
+      ],
+    });
     const admitted = await canonical();
     const admittedReceipts = await receipts(uid);
     const researchOrderIds = admitted.economy!.research[uid].orders!.map(
@@ -1072,6 +1102,45 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         views: [ownerView, peerView],
       });
     }
+    await story.step("retain-newer-intent-after-ticks", {
+      actor: aliases[0] + " · second device",
+      description:
+        "Read the same device after real tick updates. Innovation remains selected; no old Recruiting command is reapplied or silently resubmitted.",
+      action: async () => {
+        const chosen = research(stale).getByRole("radio", {
+          name: /^innovation/,
+        });
+        await expect(chosen).toBeChecked();
+        await chosen.focus();
+      },
+      acknowledgement: {
+        spec: "The latest authorized level1 projection retains the newer local choice and the exact original receipts.",
+        check: async () => {
+          await expect(
+            research(stale).getByRole("radio", { name: /^innovation/ }),
+          ).toBeChecked();
+          await expect(
+            research(stale)
+              .getByRole("radio", { name: /^innovation/ })
+              .locator(".."),
+          ).toContainText("Level 1");
+          expect(await receipts(uid)).toEqual(admittedReceipts);
+          expect(await readDurable()).toBeUndefined();
+          expect((await canonical()).economy!.research[uid].orders).toEqual([]);
+          expect((await published(peerUid)).economy!.research.target).toBe(
+            "navigation",
+          );
+          expect(observedWrites.get(peer)).toEqual([]);
+        },
+      },
+      views: [
+        {
+          page: stale,
+          player: aliases[0] + " · retained revised intent",
+          surface: "game",
+        },
+      ],
+    });
   } finally {
     for (const ctx of contexts) await ctx.close();
   }

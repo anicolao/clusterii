@@ -83,7 +83,11 @@ test("submitted research recovery restores only the matching account campaign an
     "alice",
     "one",
   );
-  expect(restored).toEqual({ baseline: "navigation", target: "recruiting" });
+  expect(restored).toEqual({
+    baseline: "navigation",
+    target: "recruiting",
+    restoredCommandId: "original",
+  });
   for (const [account, campaign] of [
     ["bob", "one"],
     ["alice", "two"],
@@ -98,7 +102,20 @@ test("submitted research recovery restores only the matching account campaign an
   };
   expect(
     restoreResearchDraft(newer, research, recovered, "alice", "one"),
-  ).toEqual(newer);
+  ).toEqual({ ...newer, restoredCommandId: "original" });
+  const deliberatelyReverted = { ...restored, target: "navigation" as const };
+  expect(
+    restoreResearchDraft(
+      deliberatelyReverted,
+      research,
+      recovered,
+      "alice",
+      "one",
+    ),
+  ).toEqual(deliberatelyReverted);
+  expect(refreshResearchDraft(deliberatelyReverted, research)).toEqual(
+    deliberatelyReverted,
+  );
   expect(
     restoreResearchDraft(undefined, research, null, "alice", "one").target,
   ).toBe("navigation");
