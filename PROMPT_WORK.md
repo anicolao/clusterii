@@ -538,3 +538,5 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | F
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Review corrected research and shared-lab candidates separately before strict verification
 
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Archive 144 exact research captures with retained failure diagnosis and the separate profile-receipt investigation gate
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Attach PR87 and reviewer 10:29 checkpoint, retaining negative receipt reproduction and exact disk blocker
