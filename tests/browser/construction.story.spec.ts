@@ -520,6 +520,11 @@ for (const interrupted of [false, true])
         };
         const focusChecks = [
           {
+            spec: "Market focus owns its feedback while Economy is open; no background route acknowledgement is rendered.",
+            check: async () =>
+              expect(owner.locator(".acknowledgement")).toHaveCount(0),
+          },
+          {
             spec: "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
             check: focusRail,
           },
@@ -782,6 +787,34 @@ for (const interrupted of [false, true])
           views: views(),
         });
         const acceptedFocus = await canonical();
+        await story.step("close-market-feedback", {
+          actor: aliases[0],
+          description:
+            "Close Market focus and Economy, retaining the accepted allocation acknowledgement on the galaxy.",
+          action: async () => {
+            await button(owner, "Back to economy").click();
+            await expect(owner.locator(".acknowledgement")).toHaveCount(0);
+            await button(owner, "Return to galaxy").click();
+          },
+          acknowledgement: {
+            spec: "The original Focus order accepted message is discoverable and Economy regains focus.",
+            check: async () => {
+              await expect(
+                owner.locator(".acknowledgement").getByRole("status"),
+              ).toContainText("Focus order accepted.");
+              await expect(button(owner, "Economy")).toBeFocused();
+            },
+          },
+          verifications: [
+            {
+              spec: "Closing changes neither accepted focus nor any authoritative state.",
+              check: async () =>
+                expect(await canonical()).toEqual(acceptedFocus),
+            },
+          ],
+          views: [views()[0]],
+        });
+
         await story.step("recover-market-focus", {
           actor: aliases[0],
           description:
@@ -971,6 +1004,66 @@ for (const interrupted of [false, true])
         views: views(),
       });
       const reserved = await canonical();
+      if (!interrupted) {
+        await story.step("inspect-economy-with-outstanding-build", {
+          actor: aliases[0],
+          description:
+            "Leave the queued construction and inspect Economy without exposing its unrelated acknowledgement behind the panel.",
+          action: async () => {
+            await owner.keyboard.press("Escape");
+            await button(owner, "Economy").click();
+          },
+          acknowledgement: {
+            spec: "Economy opens while the construction order remains accepted and unsettled.",
+            check: async () => {
+              await expect(
+                owner.getByRole("heading", { name: "Economy", exact: true }),
+              ).toBeVisible();
+              await expect(owner.locator(".acknowledgement")).toHaveCount(0);
+            },
+          },
+          verifications: [
+            {
+              spec: "The exact original queued construction, balances and revision remain authoritative.",
+              check: async () => expect(await canonical()).toEqual(reserved),
+            },
+          ],
+          views: [views()[0]],
+        });
+        await story.step("restore-outstanding-build-feedback", {
+          actor: aliases[0],
+          description:
+            "Close Economy and rediscover the outstanding construction acknowledgement on the galaxy.",
+          action: async () => {
+            await button(owner, "Return to galaxy").click();
+          },
+          acknowledgement: {
+            spec: "Construction order accepted is readable again and Economy retains keyboard focus.",
+            check: async () => {
+              const feedback = owner
+                .locator(".acknowledgement")
+                .getByRole("status");
+              await expect(feedback).toContainText(
+                "Construction order accepted.",
+              );
+              await expect(button(owner, "Economy")).toBeFocused();
+              const box = await feedback.boundingBox();
+              expect(box!.y).toBeGreaterThanOrEqual(0);
+              expect(box!.y + box!.height).toBeLessThanOrEqual(
+                owner.viewportSize()!.height,
+              );
+            },
+          },
+          verifications: [
+            {
+              spec: "Feedback recovery has no command, debit, tick or queue effect.",
+              check: async () => expect(await canonical()).toEqual(reserved),
+            },
+          ],
+          views: [views()[0]],
+        });
+      }
+
       await story.step("reload-reservation", {
         actor: aliases[0],
         description:

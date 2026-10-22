@@ -170,7 +170,18 @@ for (const interrupted of [false, true])
           );
       },
     };
-    const checks = () => [noErrors, privateTerms, visibleWallets];
+    const checks = () => [
+      noErrors,
+      privateTerms,
+      visibleWallets,
+      {
+        spec: "Credit instruments own their feedback while Economy is open; no background route acknowledgement is rendered.",
+        check: async () => {
+          for (const page of pages.slice(0, 3))
+            await expect(page.locator(".acknowledgement")).toHaveCount(0);
+        },
+      },
+    ];
     try {
       for (let i = 0; i < 4; i++)
         await story.harness(
@@ -512,11 +523,49 @@ for (const interrupted of [false, true])
         ],
         views: views(),
       });
+      if (!interrupted) {
+        const acknowledged = await canonical();
+        await story.step("close-offer-feedback", {
+          actor: aliases[0],
+          description:
+            "Close the nested exchange and Economy, retaining the original offer acknowledgement on the galaxy.",
+          action: async () => {
+            await sender.keyboard.press("Escape");
+            await expect(button(sender, "Credit offers")).toBeFocused();
+            await expect(sender.locator(".acknowledgement")).toHaveCount(0);
+            await button(sender, "Return to galaxy").click();
+          },
+          acknowledgement: {
+            spec: "Offer shared is discoverable after closing Economy, which regains keyboard focus.",
+            check: async () => {
+              const feedback = sender
+                .locator(".acknowledgement")
+                .getByRole("status");
+              await expect(feedback).toContainText("Offer shared.");
+              await expect(button(sender, "Economy")).toBeFocused();
+              const box = await feedback.boundingBox();
+              expect(box!.y).toBeGreaterThanOrEqual(0);
+              expect(box!.y + box!.height).toBeLessThanOrEqual(
+                sender.viewportSize()!.height,
+              );
+            },
+          },
+          verifications: [
+            {
+              spec: "Closing preserves the exact private offer, reservations and campaign revision.",
+              check: async () =>
+                expect(await canonical()).toEqual(acknowledged),
+            },
+          ],
+          views: [view(0)],
+        });
+      }
       await story.step("review-terms", {
         actor: aliases[1],
         description:
           "Read the named counterpart and both exact amounts before accepting; the outsider remains excluded.",
         action: async () => {
+          if (!interrupted) await open(sender);
           await button(recipient, `From ${aliases[0]} · open`).click();
         },
         acknowledgement: {
