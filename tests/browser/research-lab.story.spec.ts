@@ -173,7 +173,9 @@ test("Research lab preserves selection through pending, recovery, scheduling and
       "Open the actual applied-selection disclosure by keyboard in both panes.",
     action: async () => {
       for (const panel of panels) {
-        const summary = panel.locator("summary");
+        const summary = panel
+          .locator("summary")
+          .filter({ hasText: /^Last applied selections$/ });
         await summary.focus();
         await summary.press("Enter");
       }
@@ -182,8 +184,15 @@ test("Research lab preserves selection through pending, recovery, scheduling and
       spec: "Both opened histories identify the applied investing order at tick one.",
       check: async () => {
         for (const panel of panels) {
-          await expect(panel.locator("details")).toHaveAttribute("open", "");
-          await expect(panel.locator("details ol")).toContainText(
+          const history = panel
+            .locator("details")
+            .filter({
+              has: panel
+                .locator("summary")
+                .filter({ hasText: /^Last applied selections$/ }),
+            });
+          await expect(history).toHaveAttribute("open", "");
+          await expect(history.locator("ol")).toContainText(
             "Tick 1 · investing",
           );
         }
