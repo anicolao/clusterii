@@ -4,6 +4,7 @@ import type { Campaign, CampaignView } from "../../shared/campaign";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
+import { expectReadingTarget } from "./story-helpers/reading-target";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
 
 const button = (page: Page, name: string) =>
@@ -301,20 +302,14 @@ test("Live research guidance follows the campaign capabilities without submittin
           const radio = research(owner).getByRole("radio", {
             name: new RegExp(`^${technology}`),
           });
-          await radio.focus();
-          await owner.keyboard.press("Space");
+          if (technology === "scanning") {
+            await radio.focus();
+            await owner.keyboard.press("Space");
+          } else await owner.keyboard.press("ArrowDown");
           // Check the actual selected control before scrolling to its explanation.
           await expect(radio).toBeFocused();
-          expect(
-            await radio.evaluate((element) => {
-              const b = element.getBoundingClientRect();
-              const top = document.elementFromPoint(
-                b.x + b.width / 2,
-                b.y + b.height / 2,
-              );
-              return element === top || element.contains(top);
-            }),
-          ).toBe(true);
+          await expectReadingTarget(radio);
+          await expectReadingTarget(button(owner, `Queue ${technology}`));
         },
         acknowledgement: {
           spec: "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative.",
@@ -341,9 +336,10 @@ test("Live research guidance follows the campaign capabilities without submittin
                 spec: "The complete selected explanation and queue control remain readable in the bounded research panel.",
                 check: async () => {
                   const effect = research(owner).locator(".effect");
-                  await effect.scrollIntoViewIfNeeded();
+                  await expectReadingTarget(effect, false);
                   const action = button(owner, `Queue ${technology}`);
                   for (const target of [effect, action]) {
+                    await expectReadingTarget(target, target === action);
                     await expect(target).toBeVisible();
                     const box = await target.boundingBox();
                     expect(box!.y).toBeGreaterThanOrEqual(0);

@@ -42,11 +42,18 @@
   } = $props();
   let commitment: HTMLDivElement;
   let form: HTMLFormElement;
-  function showChoice(event?: Event) {
+  async function showChoice(event?: Event) {
     const target = event?.currentTarget;
+    // The new effect/cost can wrap differently. Position the committed layout,
+    // not the previous selection, so Queue stays above the panel footer.
+    await tick();
+    if (!form?.isConnected) return;
     if (target instanceof HTMLInputElement)
       target.closest("label")?.scrollIntoView({ block: "nearest" });
-    form?.scrollIntoView({ block: "nearest" });
+    form.scrollIntoView({ block: "nearest" });
+    // A short panel can be smaller than the form (legend included). Keep the
+    // actual commitment fully visible instead of relying on the form bounds.
+    commitment?.scrollIntoView({ block: "nearest" });
   }
   const errorId = $props.id();
   let choice = $state<Technology | null>(null);
