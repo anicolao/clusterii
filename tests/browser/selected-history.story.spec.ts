@@ -1544,6 +1544,231 @@ test("Selected history reaches only a consenting commander and survives reload",
       ],
       views: [secondView, view(2)],
     });
+    const readmissionBase = await canonical();
+    const returningUid = readmissionBase.seats[1].uid;
+    const hiddenDuringAbsence = [
+      secret,
+      absentMessage,
+      savedDraft,
+      chosenText,
+      accountDraft,
+    ];
+    const absencePrivate = {
+      spec: "Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.",
+      check: async () => {
+        for (const text of hiddenDuringAbsence) {
+          await expect(panel(guest)).not.toContainText(text);
+          expect(JSON.stringify(await published(1))).not.toContain(text);
+          expect(JSON.stringify(await published(2))).not.toContain(text);
+        }
+      },
+    };
+    await story.step("choose-future-only-readmission", {
+      actor: aliases[0],
+      description:
+        "Invite the removed commander again, explicitly choosing only messages sent after acceptance. The unsent browser note is not shared by this choice.",
+      action: async () => {
+        await button(second!, "Participants").click();
+        await panel(second!)
+          .getByRole("combobox", { name: "Commander", exact: true })
+          .selectOption({ label: aliases[1] });
+        await panel(second!)
+          .getByRole("radio", {
+            name: "Future messages only — sent after acceptance",
+            exact: true,
+          })
+          .check();
+      },
+      acknowledgement: {
+        spec: "The invitation offers future-only scope with no selected earlier messages.",
+        check: async () => {
+          await expect(button(second!, `Invite ${aliases[1]}`)).toBeEnabled();
+          await expect(
+            panel(second!).getByRole("radio", {
+              name: "Future messages only — sent after acceptance",
+              exact: true,
+            }),
+          ).toBeChecked();
+        },
+      },
+      verifications: [
+        noErrors,
+        {
+          spec: "Selecting scope sends no command or campaign mutation.",
+          check: async () => expect(await canonical()).toEqual(readmissionBase),
+        },
+      ],
+      views: [secondView],
+    });
+    await story.step("offer-renewed-conversation-access", {
+      actor: aliases[0],
+      description:
+        "Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence.",
+      action: async () => {
+        await button(second!, `Invite ${aliases[1]}`).click();
+        await open(guest);
+        await chooseRoom(guest);
+      },
+      acknowledgement: {
+        spec: "The returning commander receives an invitation explaining future-only access.",
+        check: async () => {
+          await expect(button(guest, "Accept invitation")).toBeVisible();
+          await expect(panel(guest)).toContainText(
+            "messages sent after you accept",
+          );
+        },
+      },
+      verifications: [
+        noErrors,
+        absencePrivate,
+        {
+          spec: "One revision adds only an invitation, not membership or a message.",
+          check: async () => {
+            const s = await canonical();
+            expect(s.revision).toBe(readmissionBase.revision + 1);
+            expect(s.diplomacy.rooms[roomId].invitations).toContain(
+              returningUid,
+            );
+            expect(s.diplomacy.rooms[roomId].members).not.toContain(
+              returningUid,
+            );
+            expect(s.diplomacy.rooms[roomId].sequence).toBe(
+              readmissionBase.diplomacy.rooms[roomId].sequence,
+            );
+          },
+        },
+      ],
+      views: [
+        secondView,
+        { ...view(1), primary: [button(guest, "Accept invitation")] },
+        view(2),
+      ],
+    });
+    await story.step("accept-renewed-future-access", {
+      actor: aliases[1],
+      description:
+        "Accept the renewed invitation by keyboard. Membership resumes for future messages without granting the missing interval.",
+      action: async () => {
+        await button(guest, "Accept invitation").focus();
+        await guest.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The returned member receives an enabled composer.",
+        check: async () => expect(composer(guest)).toBeEnabled(),
+      },
+      verifications: [
+        noErrors,
+        absencePrivate,
+        {
+          spec: "Exactly one acceptance revision restores membership without creating a message.",
+          check: async () => {
+            const s = await canonical();
+            expect(s.revision).toBe(readmissionBase.revision + 2);
+            expect(s.diplomacy.rooms[roomId].members).toContain(returningUid);
+            expect(s.diplomacy.rooms[roomId].invitations).not.toContain(
+              returningUid,
+            );
+            expect(s.diplomacy.rooms[roomId].sequence).toBe(
+              readmissionBase.diplomacy.rooms[roomId].sequence,
+            );
+          },
+        },
+      ],
+      views: [view(1), secondView],
+    });
+    const welcome = "Welcome back. Our next meeting is open to you.";
+    await story.step("send-after-renewed-consent", {
+      actor: aliases[0],
+      description:
+        "Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted.",
+      action: async () => {
+        await button(second!, "Participants").click();
+        await expect(composer(second!)).toHaveValue(accountDraft);
+        await composer(second!).fill(welcome);
+        await expect(draftStatus(second!)).toHaveText(
+          "Draft saved on this browser.",
+        );
+        await expect(button(second!, "Send message")).toBeEnabled();
+        await button(second!, "Send message").focus();
+        await second!.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "Message sent is acknowledged and the returned member receives the welcome.",
+        check: async () => {
+          await expect(
+            panel(second!)
+              .getByRole("group", { name: "Conversation acknowledgement" })
+              .getByRole("status"),
+          ).toHaveText("Message sent.");
+          await expect(
+            panel(guest).getByRole("list", { name: "Authorized messages" }),
+          ).toContainText(welcome);
+        },
+      },
+      verifications: [
+        noErrors,
+        absencePrivate,
+        {
+          spec: "One new message reaches exactly the current members, with no outsider disclosure.",
+          check: async () => {
+            const s = await canonical();
+            expect(s.revision).toBe(readmissionBase.revision + 3);
+            expect(s.diplomacy.rooms[roomId].sequence).toBe(
+              readmissionBase.diplomacy.rooms[roomId].sequence + 1,
+            );
+            expect(s.diplomacy.rooms[roomId].message.body).toBe(welcome);
+            expect(
+              [...s.diplomacy.rooms[roomId].message.recipients].sort(),
+            ).toEqual([accountUid, returningUid].sort());
+            expect(JSON.stringify(await published(2))).not.toContain(welcome);
+            await expect(panel(pages[2])).not.toContainText(welcome);
+            for (const p of [second!, guest])
+              await readConversation(
+                p,
+                panel(p).getByRole("listitem").filter({ hasText: welcome }),
+              );
+          },
+        },
+      ],
+      views: [secondView, view(1), view(2)],
+    });
+    await story.step("recover-renewed-message-boundary", {
+      actor: aliases[1],
+      description:
+        "Reload the returning commander's campaign and read the welcome. Renewed access preserves its boundary across recovery and motion preferences.",
+      action: async () => {
+        await guest.reload();
+        await open(guest);
+        await chooseRoom(guest);
+      },
+      acknowledgement: {
+        spec: "The returned member recovers the welcome in authorized history.",
+        check: async () =>
+          expect(
+            panel(guest).getByRole("list", { name: "Authorized messages" }),
+          ).toContainText(welcome),
+      },
+      verifications: [
+        noErrors,
+        absencePrivate,
+        {
+          spec: "Reload changes no message or membership revision and keeps the welcome readable without exposing the absence interval.",
+          check: async () => {
+            expect((await canonical()).revision).toBe(
+              readmissionBase.revision + 3,
+            );
+            await guest.emulateMedia({ reducedMotion: "no-preference" });
+            await expect(composer(guest)).toBeEnabled();
+            await guest.emulateMedia({ reducedMotion: "reduce" });
+            await readConversation(
+              guest,
+              panel(guest).getByRole("listitem").filter({ hasText: welcome }),
+            );
+          },
+        },
+      ],
+      views: [view(1), view(2)],
+    });
   } finally {
     for (const ctx of contexts) await ctx.close();
   }
