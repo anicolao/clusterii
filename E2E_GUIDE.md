@@ -21,6 +21,7 @@ The helper owns counters, filenames, assertions, captures and Markdown links. Di
 
 - `tests/browser/*.story.spec.ts`: illustrated journeys; import the shared story fixture.
 - `tests/browser/story-helpers/`: step helper, readiness, layout, exact comparison and fixture.
+- `test-results/story-tools/<pid>/`: bounded failure-only lifecycle/geometry diagnostics for the synthetic identity tooling fixture; CI uploads these separately from player-story captures. The deliberate closed-page probe is tooling verification, not player evidence. See [screenshot boundary review](docs/testing/STORY_SCREENSHOT_BOUNDARY_REVIEW.md).
 - `tests/recovery-store.test.ts`: isolated production IndexedDB integration (`bun run test:browser-storage`); this preserves storage semantics without presenting a non-player harness as an illustrated journey.
 - `tests/browser/story-baselines/<story>/<viewport>/<platform>/`: reviewed PNGs and renderer manifests.
 - `test-results/stories/<story>/<viewport>/<platform>/`: the current run's captures, manifest and generated `README.md`/JSON sequence. Failed runs never produce a passed story document.
@@ -100,6 +101,8 @@ The same fail-closed admission loader fixes research admission only for names be
 The login helper serves lockfile-pinned `material-components-web@10.0.0` JS/CSS bytes for the Auth Emulator’s own external UI dependency, only within `http://127.0.0.1:19099/emulator/auth/handler`. It awaits the initialized provider label before clicking. This avoids a mutable CDN redirect without replacing authentication documents, APIs, credentials or results; production origins are excluded. These are test-only asset deliveries, not hosted Google evidence.
 
 CI sets `CLUSTER_STORY_COHORTS=viewport`: each of the four viewport projects runs sequentially against a fresh owned emulator process. Every story, assertion, deadline and exact comparison remains enabled. A failed viewport retains its evidence and fails the overall command after the remaining independent viewports run; interruption stops further launches. Per-viewport process results, Playwright status and Firestore logs are retained under `test-results/stories/_cohorts/`. Existing local output is moved to a reported `.story-cohorts-*/previous` staging directory, never overwritten. Artifact collisions fail without overwriting either copy. This bounds test-service lifetime; it does not certify production resource behavior or resolve renderer mismatches. Use the same environment setting locally to reproduce CI cohort boundaries.
+
+Complete builds and type-check emission before starting an emulator cohort. Do not rebuild watched `functions/lib` while service/browser cases are running; a compiler-triggered Functions reload confounds delivery evidence.
 
 Only one local emulator cohort may own the configured ports. The story runner starts and stops its own emulator process. It must fail clearly on occupied ports, never kill unrelated processes or reset another worktree's data. Do not run destructive service cleanup alongside browser stories.
 

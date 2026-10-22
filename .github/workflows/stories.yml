@@ -50,5 +50,6 @@ jobs:
           include-hidden-files: true
           path: |
             test-results/stories/
+            test-results/story-tools/
             test-results/.story-cohorts-*/
             firestore-debug.log

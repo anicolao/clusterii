@@ -1,4 +1,5 @@
 import { test, expect, beforeAll, afterAll } from "bun:test";
+import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { chromium, type Browser, type Page } from "@playwright/test";
 import { emulatorAsset } from "./browser/story-helpers/emulator-auth-assets";
 import { stableImage } from "./browser/story-helpers/stable-image";
@@ -13,14 +14,103 @@ beforeAll(async () => {
 afterAll(async () => {
   await browser?.close();
 });
-async function fixture(html: string, run: (page: Page) => Promise<void>) {
+async function fixture(
+  html: string,
+  run: (page: Page) => Promise<void>,
+  diagnostic?: { name: string; phase: string },
+) {
   const page = await browser.newPage({ viewport: { width: 393, height: 852 } });
+  const events: Array<{ event: string; elapsedMs: number }> = [];
+  const started = performance.now();
+  const mark = (event: string) => {
+    if (events.length < 16)
+      events.push({ event, elapsedMs: performance.now() - started });
+  };
+  const crashed = () => mark("page-crash"),
+    closed = () => mark("page-close"),
+    disconnected = () => mark("browser-disconnected");
+  if (diagnostic) {
+    page.on("crash", crashed);
+    page.on("close", closed);
+    browser.on("disconnected", disconnected);
+  }
   try {
     await page.setContent(
       `<style>body{margin:0}button{width:80px;height:48px}</style>${html}`,
     );
     await run(page);
+  } catch (error) {
+    if (diagnostic) {
+      // Observe only after failure: no extra paint/readiness work before either screenshot.
+      const evidence: Record<string, unknown> = {
+        phase: diagnostic.phase,
+        events,
+        elapsedMs: performance.now() - started,
+        pageClosed: page.isClosed(),
+        browserConnected: browser.isConnected(),
+        viewport: page.viewportSize(),
+        browserVersion: browser.version(),
+        platform: process.platform,
+        architecture: process.arch,
+        configuredContainer: process.env.CLUSTER_PINNED_RENDERER ?? null,
+        launchOverrides: [],
+        error: String(error).slice(0, 2000),
+      };
+      let timer: ReturnType<typeof setTimeout> | undefined;
+      try {
+        evidence.geometry = await Promise.race([
+          page
+            .evaluate(() => ({
+              readyState: document.readyState,
+              visibility: document.visibilityState,
+              fonts: document.fonts.status,
+              dpr: devicePixelRatio,
+              inner: [innerWidth, innerHeight],
+              scroll: [scrollX, scrollY],
+              document: [
+                document.documentElement.scrollWidth,
+                document.documentElement.scrollHeight,
+              ],
+              body: document.body.getBoundingClientRect().toJSON(),
+              visualViewport: visualViewport
+                ? {
+                    width: visualViewport.width,
+                    height: visualViewport.height,
+                    scale: visualViewport.scale,
+                  }
+                : null,
+            }))
+            .catch(() => ({ unavailable: "page-evaluation-failed" })),
+          new Promise((resolve) => {
+            timer = setTimeout(
+              () => resolve({ unavailable: "diagnostic-budget" }),
+              250,
+            );
+          }),
+        ]);
+      } finally {
+        clearTimeout(timer);
+      }
+      try {
+        const directory = `test-results/story-tools/${process.pid}`;
+        mkdirSync(directory, { recursive: true });
+        writeFileSync(
+          `${directory}/${diagnostic.name}.json`,
+          JSON.stringify(evidence, null, 2),
+        );
+        console.error(
+          "Story tooling failure evidence:",
+          JSON.stringify(evidence),
+        );
+      } catch {
+        console.error("Story tooling evidence could not be written");
+      }
+    }
+    throw error;
   } finally {
+    page.off("crash", crashed);
+    page.off("close", closed);
+    browser.off("disconnected", disconnected);
     await page.close();
   }
 }
@@ -222,10 +312,15 @@ test("explicit animation inspection validates exact paused count, time and durat
 });
 
 test("identity raster diagnostics exclude galaxy text, retain identity ancestry and report bounds", async () => {
+  const diagnostic = {
+    name: "identity-raster",
+    phase: "before-read-screenshot",
+  };
   await fixture(
     `<section aria-label="Galaxy">${"<span>Stellar label</span>".repeat(2000)}</section><section aria-label="Your identity" style="position:fixed;top:0"><p>The face your allies trust. The name your rivals remember.</p></section>`,
     async (page) => {
       const before = await page.screenshot();
+      diagnostic.phase = "text-layout-read";
       const evidence = await page.evaluate(textLayout);
       expect(evidence.scope).toBe("identity-raster");
       expect(evidence.applicable).toBe(true);
@@ -236,7 +331,9 @@ test("identity raster diagnostics exclude galaxy text, retain identity ancestry 
         "The face your allies trust. The name your rivals remember.",
       );
       expect(evidence.texts[0].ancestors.length).toBeGreaterThan(2);
+      diagnostic.phase = "after-read-screenshot";
       expect(await page.screenshot()).toEqual(before);
+      diagnostic.phase = "removed-identity-check";
       await page
         .locator('section[aria-label="Your identity"]')
         .evaluate((el) => el.remove());
@@ -247,6 +344,7 @@ test("identity raster diagnostics exclude galaxy text, retain identity ancestry 
         truncated: false,
       });
     },
+    diagnostic,
   );
   await fixture(
     `<section aria-label="Your identity" style="position:fixed;top:0">${"<span style='position:absolute;top:0'>Visible</span>".repeat(200)}</section>`,
@@ -279,4 +377,30 @@ test("nested bounded readers audit visible targets without treating outer-clippe
       ).rejects.toThrow("occluded");
     },
   );
+});
+
+// Explicit tooling fault, not a game fixture or screenshot retry.
+test("failed tooling diagnostics retain the original error and closed-page boundary", async () => {
+  const original = new Error("Expected closed-page diagnostic probe");
+  await expect(
+    fixture(
+      "<button>Probe</button>",
+      async (page) => {
+        await page.close();
+        throw original;
+      },
+      { name: "closed-page-probe", phase: "explicit-tooling-fault" },
+    ),
+  ).rejects.toBe(original);
+  const evidence = JSON.parse(
+    readFileSync(
+      `test-results/story-tools/${process.pid}/closed-page-probe.json`,
+      "utf8",
+    ),
+  );
+  expect(evidence.pageClosed).toBe(true);
+  expect(
+    evidence.events.map((event: { event: string }) => event.event),
+  ).toContain("page-close");
+  expect(evidence.geometry).toEqual({ unavailable: "page-evaluation-failed" });
 });
