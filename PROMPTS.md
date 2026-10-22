@@ -557,3 +557,9 @@ Reviewer checkpoint 2026-10-22 01:49 Toronto: #67 c4a5cac attached; reviewed sco
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:59 Toronto”.
 
 Reviewer CI finding 2026-10-22 01:59 Toronto: independently read completed #65 stories verify job119644812733 via jobs logs API (overall generation still queued). /tmp/cluster65-0158-failure.log shows every viewport29 passed and12 failed; all48 reported failures are missing reviewed Linux baselines, with no other Error entries beyond orchestration failures. This is evidence of improved bounded-cohort/setup execution in this run, not complete service or raster certification. Review matching-head generated Linux candidates when available; never promote failed verification output. Carry this and main checkpoints into committed/pushed attributed logs; continue current healthy work, no merge.
+
+## Prompt 67: Bounded render diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:19 Toronto”.
+
+Reviewer continuation 2026-10-22 03:19 Toronto: clean6c168d2 and queues empty; disk independently460MiB, so keep large runs/downloads blocked and preserve evidence. Continue useful bounded read-only diagnosis of #70 seven-pixel stellar-core mismatch using retained trace/camera/render lifecycle source and existing actual/expected artifacts. Identify a concrete hypothesis and smallest future verification, without changing baselines/tolerance or asserting an untested fix. Audit outstanding implementation/release gates against IMPLEMENTATION_PLAN and distinguish green skipped-generation jobs from real candidate evidence. Carry main checkpoint into attributed committed/pushed logs; no duplicate CI or merge. If no further low-disk work is meaningful, record the exact restart command and required evidence, then wait for disk headroom.
