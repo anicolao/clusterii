@@ -55,3 +55,7 @@ Reviewer02:19 evidence records115 passes,48 missing Linux images and the distinc
 ## Pages serving recovered, 02:54 Toronto
 
 Pages deployment39732471805 completed successfully. Read-only current PR-head checks match served source/build revisions for #61 (6504a4a), #65 (757d423) and #66 (0666727). The unchanged verify-pages script passes each preview's entry, diagnostics, gallery, animation lab and26 static asset references. Retained `/tmp/cluster-served-current-heads-0254.json` and `/tmp/cluster{61,65,66}-served-verified-0254.log`. No duplicate publication or relaxed revision assertion was used. #67–69 still returned404 in this check; they remain unverified. Successful static serving does not certify hosted authentication, scheduler behavior or full release acceptance.
+
+## Queued 01:49 checkpoint reconciliation
+
+Prompt 65 records the delivered reviewer checkpoint and its scoped phone-only acceptance. The #65 HTTP404 failure and later exact-head serving recovery are retained above as separate observations: the failed publication job remains failed, while the subsequent unchanged verifier passed against served757d423. No duplicate publication or test run was started to reconcile the queued instruction. Navigation/shared-renderer verification subsequently completed in #68 and #69; their review documents retain local evidence and independent/Linux/hosted limits. Draft #70 retains its distinct seven-pixel short arrival-frame failure and low-disk evidence hold. Main supervisory history through02:59 is preserved unchanged.
