@@ -430,3 +430,5 @@ Prompt 70 | 9f325c370f799b55773c4b27ab4ca8889866a804f09c3669028dccf424a95a10 | R
 Prompt 70 | 9f325c370f799b55773c4b27ab4ca8889866a804f09c3669028dccf424a95a10 | Archive four exact draft journeys and retained lab regressions; carry the reviewer 04:19 checkpoint and scoped acceptance gaps
 
 Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | Review thirty-two replacement candidates and inspect four retained Linux mismatches without altering inherited baselines
+
+Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | Archive four exact replacement journeys and record scoped acceptance with Linux diagnosis and outstanding provider gates

@@ -377,3 +377,73 @@ Acknowledged outcome: Reload restores the sent message with an empty composer.
 ### Viewpoint: Nacre envoy · second tab
 
 [![Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)
+
+## 29. Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Both tabs recover the same unsent proposal.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.
+
+### Viewpoint: Nacre envoy
+
+[![Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-1-nacre-envoy.png)
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png)
+
+## 30. Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: A revision conflict preserves the second tab's proposal and blocks sending.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.
+- [x] Both explicit choices remain visible before any scrolling.
+
+### Viewpoint: Nacre envoy
+
+[![Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-1-nacre-envoy.png)
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-2-nacre-envoy-second-tab.png)
+
+## 31. Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Browser storage acknowledges the chosen local text and clears the conflict.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png)
+
+## 32. Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Both authenticated tabs recover the replacement from durable browser storage.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.
+- [x] Normal and reduced motion preserve the chosen text and unsent state.
+
+### Viewpoint: Nacre envoy
+
+[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-1-nacre-envoy.png)
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png)
+
+### Viewpoint: Outer witness
+
+[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)

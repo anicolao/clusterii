@@ -8,10 +8,10 @@
   ],
   "description": "Independent commanders use authenticated development-provider commands. The creator shares one of two earlier messages; the recipient reviews and accepts its scope, then reloads. An uninvolved commander never receives the room or either message. Admission uses the labelled emulator clock and actual scheduler endpoint, not injected state. Managed-key and fault journeys remain separate coverage.",
   "source": {
-    "commit": "106520907725c9456368a817c1b80d76ad9ec7cf",
+    "commit": "b2d236a822ee03730e1af0726c8eb4df1b8d14b0",
     "dirty": false,
     "spec": "tests/browser/selected-history.story.spec.ts",
-    "specSha256": "e9bba1cf1271624615cf7ccb2ae77659350db9b7b52600f8bc7929e3bc63a189"
+    "specSha256": "3145a92f070ed340a2319cbbfc1580a1b3e5c8ddafa7ba36411357e286b9d214"
   },
   "mode": "verify",
   "status": "passed",
@@ -551,6 +551,100 @@
         {
           "player": "Nacre envoy · second tab",
           "image": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "prepare-replacement-choice",
+      "description": "Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Both tabs recover the same unsent proposal.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "029-prepare-replacement-choice-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-competing-replacement",
+      "description": "Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "A revision conflict preserves the second tab's proposal and blocks sending.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.",
+        "Both explicit choices remain visible before any scrolling."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "030-review-competing-replacement-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "replace-with-local-proposal",
+      "description": "Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Browser storage acknowledges the chosen local text and clears the conflict.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-chosen-local-proposal",
+      "description": "Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Both authenticated tabs recover the replacement from durable browser storage.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.",
+        "Normal and reduced motion preserve the chosen text and unsent state."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "032-recover-chosen-local-proposal-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
           "verifications": []
         }
       ]
