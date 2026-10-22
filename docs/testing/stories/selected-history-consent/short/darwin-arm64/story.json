@@ -1,0 +1,316 @@
+{
+  "id": "selected-history-consent",
+  "title": "Consent to one earlier diplomatic message",
+  "inventory": [
+    "UX-10",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Independent commanders use authenticated development-provider commands. The creator shares one of two earlier messages; the recipient reviews and accepts its scope, then reloads. An uninvolved commander never receives the room or either message. Admission uses the labelled emulator clock and actual scheduler endpoint, not injected state. Managed-key and fault journeys remain separate coverage.",
+  "source": {
+    "commit": "e4b66cc77710965e1cf9a25cb64baf0922a6923f",
+    "dirty": false,
+    "spec": "tests/browser/selected-history.story.spec.ts",
+    "specSha256": "02f5c7efe2e3f8eda5e280d2433577c01f3c825f749d088564a9ed53ea0ee959"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "short",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "private-room",
+      "description": "Create a private room while the recipient and outsider inspect their own empty directories.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative room appears only for its creator.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "The future recipient cannot see the room before invitation."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "010-private-room-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "010-private-room-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "010-private-room-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earlier-message-1",
+      "description": "Send a reserve-route message that stays private.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The command is acknowledged as Message sent and appears in the creator's authorized messages.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "The acknowledged composer clears its submitted text."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "011-earlier-message-1-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earlier-message-2",
+      "description": "Send the rendezvous message that will be selected.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The command is acknowledged as Message sent and appears in the creator's authorized messages.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "The acknowledged composer clears its submitted text."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "012-earlier-message-2-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-history",
+      "description": "Select Dawn listener and exactly one earlier message; keep the reserve route unselected.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The invitation control identifies one selected earlier message.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The reserve message remains unchecked and stale send feedback is absent."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "013-choose-history-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "invite",
+      "description": "Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The independently authenticated recipient receives the one-message invitation.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Neither message body is present in the recipient's UI or serialized authorized projection before consent."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "014-invite-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "014-invite-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "014-invite-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "consent",
+      "description": "Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The accepted membership publishes the selected message to the recipient.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Keyboard Home and bounded reading reveal the complete shared message, author and provenance while the commitment rail stays visible.",
+        "Acceptance makes exactly one authoritative revision, excludes the reserve message, and names the sharing commander."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "015-consent-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "015-consent-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "015-consent-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-consent",
+      "description": "Reload and reopen the accepted room without resending acceptance or expanding its history grant.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The recovered authorized messages still contain the selected rendezvous note.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Keyboard Home and bounded reading reveal the complete shared message, author and provenance while the commitment rail stays visible.",
+        "Recovery causes no extra revision and never exposes the unselected message."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "016-recover-consent-1-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "016-recover-consent-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-chart",
+      "description": "Escape closes the conversation and restores keyboard focus to its opening control.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The chart returns focus to Conversations.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Private conversation details are no longer visible."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "017-return-to-chart-1-dawn-listener.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
