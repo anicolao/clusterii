@@ -56,6 +56,7 @@
   let {
     view,
     researchDraft = $bindable<ResearchDraft | undefined>(undefined),
+    routeDrafts = $bindable<Record<string, string[]>>({}),
     marketDraft = $bindable<MarketAllocationDraft>(
       untrack(
         () =>
@@ -106,6 +107,7 @@
   }: {
     view: CampaignView;
     researchDraft?: ResearchDraft;
+    routeDrafts?: Record<string, string[]>;
     marketDraft?: MarketAllocationDraft;
     onvisit?: (revision: number) => void;
     ontrade?: (action: TradeAction) => void;
@@ -159,8 +161,7 @@
     pending?: boolean;
   } = $props();
   let military = $state(false);
-  let selectedFleet = $state<string | null>(null),
-    routeDrafts = $state<Record<string, string[]>>({});
+  let selectedFleet = $state<string | null>(null);
   let resumedFleet = "";
   $effect(() => {
     const recovered = recoveredFleet;

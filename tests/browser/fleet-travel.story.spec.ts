@@ -785,6 +785,56 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       ],
       views: views(),
     });
+    await story.step("recover-unsent-route-navigation", {
+      actor: aliases[0],
+      description:
+        "Leave the galaxy for Campaigns, reopen this exact campaign and the same fleet, and recover unsent waypoint intent without issuing an order.",
+      action: async () => {
+        await button(owner, "Back to fleets").press("Enter");
+        await button(owner, "Campaigns").focus();
+        await button(owner, "Campaigns").press("Enter");
+        const card = owner
+          .getByRole("region", { name: "Campaign directory" })
+          .getByRole("button")
+          .filter({ hasText: campaignName });
+        await expect(card).toHaveCount(1);
+        await card.focus();
+        await card.press("Enter");
+        await button(owner, "Return to galaxy").press("Enter");
+        await inspector(owner)
+          .getByRole("button", { name: "Fleets · 1", exact: true })
+          .press("Enter");
+        await button(owner, fleetName).press("Enter");
+        await button(owner, "Plot route").press("Enter");
+        await routeRead(routeList);
+        await send.focus();
+      },
+      acknowledgement: {
+        spec: "The original waypoint and exact estimate return as an editable unsent draft with the Send fleet control focused.",
+        check: async () => {
+          await expect(routeList.locator("li")).toHaveCount(1);
+          await expect(routeList).toContainText(targetName);
+          await expect(routeList).toContainText(
+            `${distance.toFixed(2)} ly · ${duration} ticks`,
+          );
+          await expect(send).toBeEnabled();
+          await expect(send).toBeFocused();
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Directory navigation preserves authoritative forces, orders and receipts without a new mutation; ordinary and reduced motion keep the same draft.",
+          check: async () => {
+            expect(await canonical()).toEqual(formed!);
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            await expect(routeList).toContainText(targetName);
+            await owner.emulateMedia({ reducedMotion: "reduce" });
+          },
+        },
+      ],
+      views: views(),
+    });
     await story.step("discard-uncommitted-route", {
       actor: aliases[0],
       description:

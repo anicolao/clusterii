@@ -1,0 +1,18 @@
+# Fleet and combat player-gap audit
+
+Prompt103 requires player-visible work after the scoped evidence additions. README's current fleets/observations/history implementation, VISION's transport and split control, MVP's private authoritative recovery and UX_DESIGN §10–12/§16 were compared with IMPLEMENTATION_PLAN milestones6/7 before implementation.
+
+| Player contract | Existing implementation/evidence | Remaining boundary |
+| --- | --- | --- |
+| Formation, cargo, split/merge/disband, cancellation | SystemFleets, shared/fleets; fleet-formation/cargo/reorganization/cancellation stories and real service cases | Existing rendered/hosted holds remain; no duplicate feature needed. |
+| Waypoint add/remove/reorder, range versus speed, commit/ack/depart/arrive | FleetRoute, shared/travel, fleet-travel/recovery/catchup stories; private sensors/contacts | No mid-leg reroute is permitted under recorded v0.1 rules. Do not invent a reroute control. |
+| Orbital/surface resolution and report comprehension | shared/travel resolves combat, transport loss, occupation; ArrivalReports exposes own casualties/effectiveness, control, escrow/output recipients; arrival/archive stories and worked service/reducer fixtures | Full UX09 multi-phase acceptance and allied policy remain separate. Existing development-rule implementation is not new owner approval. |
+| Preserve unsent route intent while access remains valid | UX §10–11/§16; Galaxy owns routeDrafts locally, but campaigns/+page.svelte sets view=null on Campaigns and destroys Galaxy. Only submitted fleet commands recover durably. Market/research drafts already live in the campaign route. | Concrete missing behavior: directory navigation loses an unsent route without any command. |
+
+Selected slice: move unsent per-fleet waypoint arrays to account/campaign-scoped campaign-route memory. Bind the same shared Galaxy/SystemFleets/FleetRoute controls; preserve malformed/out-of-range intent for editing. Refresh only against authorized owned fleet IDs; retire missing fleets and clear account/access/leave boundaries through existing generation/selection fences. Accepted/traveling state remains authoritative, and recovered submitted commands keep their existing identity and newer-edit precedence. No localStorage/IndexedDB or cross-session promise is added. No rule or service protocol changes are needed; existing send path persists and authorizes the unchanged final route.
+
+Before player work, fixture cleanup now suppresses a secondary close rejection only when a primary test failure already exists; standalone close failure still fails. One focused fault test passed2 assertions in2.18s, without screenshot-suite repetition (`/tmp/cluster-tooling-cleanup-focused.log`).
+
+Browser evidence will extend the real fleet-travel TestStepHelper journey with directory navigation, exact campaign reopening, retained draft and unchanged canonical state before the existing authoritative send/receipt/settlement checks. Four-size/reduced-motion configuration remains; no baseline promotion. Execution/capture acceptance remains pending until run and independent review. All previous holds and unresolved timing/ingress diagnoses remain.
+
+Source checks: route memory unit passed8 assertions; focused cleanup fault passed2 assertions; type/Svelte checks pass0 errors/0 warnings. Story policy passes. The new named navigation step retains actual canonical/peer privacy checks and the subsequent discard/send/receipt/travel/settlement assertions. One phone candidate run is planned with the unchanged240-second journey budget, existing step/capture budgets and no more than80 images; other three viewports and independent candidate review remain unexecuted. No new artwork or layout is introduced.
