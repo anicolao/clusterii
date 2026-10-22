@@ -52,7 +52,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
     title: "Choose, switch and recover acknowledged research",
     inventory: ["UX-06", "UX-14", "UX-16"],
     description:
-      "Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. No completion, overflow or hosted acceptance is claimed.",
+      "Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. Labelled leased tick delivery verifies completion, retained overflow and the following-tick Innovation effect; hosted scheduling and proposed rules remain unapproved.",
   });
   const contexts: BrowserContext[] = [],
     pages: Page[] = [],
@@ -834,6 +834,148 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         },
       ],
     });
+    const admitted = await canonical();
+    const admittedReceipts = await receipts(uid);
+    const researchOrderIds = admitted.economy!.research[uid].orders!.map(
+      (o) => o.id,
+    );
+    const {
+      settleCampaignTicks,
+    } = require("./lib/functions/src/production.js");
+    let previousTick = 0;
+    for (const [tickNumber, level, progressMilli, scienceMilli] of [
+      [14, 0, 19600, 1400],
+      [15, 1, 1000, 1400],
+      [16, 1, 2404, 1404],
+    ] as const) {
+      await story.harness(
+        `deliver-science-tick-${tickNumber}`,
+        "Advance only the existing demo domain clock and call the real leased settlement service. Competing and repeated delivery must settle each due tick once. No research levels, resources, receipts or private views are injected; this is not hosted Scheduler certification.",
+        async () => {
+          const due = scheduledAt + tickNumber * 900000;
+          for (const page of pages) await page.clock.setFixedTime(due + 1);
+          const delivered = await Promise.all([
+            settleCampaignTicks(id, () => due),
+            settleCampaignTicks(id, () => due),
+          ]);
+          expect(delivered.reduce((sum: number, n: number) => sum + n, 0)).toBe(
+            tickNumber - previousTick,
+          );
+          const settled = await canonical();
+          expect(settled.economy!.tick).toBe(tickNumber);
+          expect(settled.revision).toBe(admitted.revision + tickNumber);
+          expect(await settleCampaignTicks(id, () => due)).toBe(0);
+          expect(await canonical()).toEqual(settled);
+          previousTick = tickNumber;
+        },
+      );
+      await story.step(`recover-science-tick-${tickNumber}`, {
+        actor: aliases[0],
+        description:
+          tickNumber === 14
+            ? "Reload both commanders and read the actual retained science one funded tick before Innovation completes."
+            : tickNumber === 15
+              ? "Reload the completed Innovation level: its cost is spent once, excess science remains, and this tick used the old production rate."
+              : "Reload the next confirmed tick: Innovation now raises science output while the other commander's navigation remains private and independent.",
+        action: async () => {
+          for (const page of [owner, peer]) {
+            await page.reload();
+            await keyboard(page, "Economy");
+          }
+        },
+        acknowledgement: {
+          spec: "Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt.",
+          check: async () => {
+            const view = await published(uid);
+            expect(view.production!.tick).toBe(tickNumber);
+            expect(view.economy!.research.target).toBe("innovation");
+            expect(view.economy!.research.orders).toEqual([]);
+            expect(view.economy!.research.lastApplied!.id).toBe(
+              researchOrderIds[1],
+            );
+            await expect(
+              research(owner).getByRole("status", {
+                name: "Applied research order",
+              }),
+            ).toContainText("innovation applied at tick 1");
+            expect(await receipts(uid)).toEqual(admittedReceipts);
+          },
+        },
+        verifications: [
+          {
+            spec: "Exact completion/overflow and next-tick rate match the authorized projection; the peer receives no owner order IDs or Innovation benefit.",
+            check: async () => {
+              const state = await canonical(),
+                own = await published(uid),
+                other = await published(peerUid);
+              expect(state.economy!.research[uid].levels.innovation).toBe(
+                level,
+              );
+              expect(
+                state.economy!.research[uid].progressMilli.innovation,
+              ).toBe(progressMilli);
+              expect(own.economy!.research).toEqual(
+                state.economy!.research[uid],
+              );
+              expect(own.economy!.ledger!.scienceMilli).toBe(scienceMilli);
+              expect(other.economy!.research.target).toBe("navigation");
+              expect(other.economy!.research.levels.innovation).toBe(0);
+              expect(other.economy!.ledger!.scienceMilli).toBe(1400);
+              expect(other.economy!.research.progressMilli.navigation).toBe(
+                tickNumber * 1400,
+              );
+              for (const orderId of researchOrderIds)
+                expect(JSON.stringify(other)).not.toContain(orderId);
+              expect(await identity(uid)).toEqual(identityBefore);
+              expect(observedWrites.get(peer)).toEqual([]);
+              expect(errors).toEqual([]);
+            },
+          },
+          {
+            spec: "Both players can read their complete science ledger and progress after keyboard navigation inside the bounded Economy panel.",
+            check: async () => {
+              for (const [page, produced, retained, expectedLevel] of [
+                [owner, scienceMilli, progressMilli, level],
+                [peer, 1400, tickNumber * 1400, 1],
+              ] as const) {
+                const reading = page.getByRole("region", {
+                  name: "Production ledger",
+                  exact: true,
+                });
+                await reading.focus();
+                const progress = page.getByRole("region", {
+                  name: "Science progress",
+                  exact: true,
+                });
+                await progress.evaluate((e) =>
+                  e.scrollIntoView({ block: "center" }),
+                );
+                const earned = page
+                  .locator('dl[aria-label="Last production"] dt')
+                  .filter({ hasText: /^Science earned$/ })
+                  .locator("..");
+                await expect(earned.locator("dd")).toHaveText(
+                  (produced / 1000).toLocaleString("en-US"),
+                );
+                await expect(progress).toContainText(`Level ${expectedLevel}`);
+                await expect(progress).toContainText(
+                  (retained / 1000).toLocaleString("en-US"),
+                );
+                const bounds = await reading.boundingBox();
+                for (const target of [earned, progress]) {
+                  const box = await target.boundingBox();
+                  expect(box!.y).toBeGreaterThanOrEqual(bounds!.y);
+                  expect(box!.y + box!.height).toBeLessThanOrEqual(
+                    bounds!.y + bounds!.height,
+                  );
+                }
+              }
+            },
+          },
+        ],
+        views: [ownerView, peerView],
+      });
+    }
   } finally {
     for (const ctx of contexts) await ctx.close();
   }
