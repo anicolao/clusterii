@@ -1,6 +1,6 @@
 import type { PendingCampaign } from "../../src/lib/campaign-session";
 import { createRequire } from "node:module";
-import type { BrowserContext, Page } from "@playwright/test";
+import type { BrowserContext, Page, Locator } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
@@ -11,6 +11,74 @@ const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
 const research = (page: Page) =>
   page.getByRole("region", { name: "Research selection", exact: true });
+// Include every actual scrolling ancestor, not just document and nearest list.
+// Focus/End can scroll asynchronously; capture only after the painted bounds settle.
+async function containedReading(target: Locator) {
+  await expect
+    .poll(
+      () =>
+        target.evaluate(async (element) => {
+          function measure() {
+            const box = element.getBoundingClientRect();
+            let left = 0,
+              top = 0,
+              right = innerWidth,
+              bottom = innerHeight;
+            for (
+              let parent = element.parentElement;
+              parent;
+              parent = parent.parentElement
+            ) {
+              const style = getComputedStyle(parent),
+                bounds = parent.getBoundingClientRect();
+              if (/(auto|scroll|hidden|clip)/.test(style.overflowX)) {
+                left = Math.max(left, bounds.left + parent.clientLeft);
+                right = Math.min(
+                  right,
+                  bounds.left + parent.clientLeft + parent.clientWidth,
+                );
+              }
+              if (/(auto|scroll|hidden|clip)/.test(style.overflowY)) {
+                top = Math.max(top, bounds.top + parent.clientTop);
+                bottom = Math.min(
+                  bottom,
+                  bounds.top + parent.clientTop + parent.clientHeight,
+                );
+              }
+            }
+            return {
+              x: box.x,
+              y: box.y,
+              width: box.width,
+              height: box.height,
+              left,
+              top,
+              right,
+              bottom,
+              contained:
+                box.width > 0 &&
+                box.height > 0 &&
+                box.left >= left &&
+                box.top >= top &&
+                box.right <= right &&
+                box.bottom <= bottom,
+            };
+          }
+          const first = measure();
+          await new Promise(requestAnimationFrame);
+          await new Promise(requestAnimationFrame);
+          const last = measure();
+          return (
+            last.contained && JSON.stringify(first) === JSON.stringify(last)
+          );
+        }),
+      {
+        message:
+          "The whole named reading control settles inside every clipping ancestor",
+      },
+    )
+    .toBe(true);
+}
 const aliases = [
   "Market envoy",
   "Independent investor",
@@ -671,12 +739,21 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           name: /^recruiting/,
         });
         await expect(choice).toBeChecked();
-        // Deliberately review the restored disabled choice in its bounded list,
-        // then focus the actual commitment group without submitting anything.
-        await choice.locator("..").scrollIntoViewIfNeeded();
-        await research(stale)
-          .getByRole("group", { name: "Research acknowledgement" })
-          .focus();
+        const tracks = research(stale).getByRole("region", {
+          name: "Research tracks",
+          exact: true,
+        });
+        await tracks.focus();
+        await stale.keyboard.press("End");
+        await expect(tracks).toBeFocused();
+        await expect
+          .poll(() =>
+            tracks.evaluate((e) =>
+              Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop),
+            ),
+          )
+          .toBeLessThanOrEqual(1);
+        await containedReading(choice.locator(".."));
       },
       acknowledgement: {
         spec: "The authenticated outbox restores recruiting and reopens Economy while the original command is still unacknowledged.",
@@ -712,30 +789,17 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       verifications: [
         privacy,
         {
-          spec: "The restored recruiting choice and pending commitment are fully readable above the footer after deliberate review scrolling, with keyboard focus on acknowledgement.",
+          spec: "The entire restored Recruiting control is contained inside the keyboard-focused bounded list and Economy reading viewport after End scrolling settles.",
           check: async () => {
-            const selected = research(stale)
-              .getByRole("radio", { name: /^recruiting/ })
-              .locator("..");
-            const label = await selected.boundingBox();
-            const track = await selected.locator("..").boundingBox();
-            const queue = await button(
-              stale,
-              "Awaiting acknowledgement…",
-            ).boundingBox();
-            const footer = await button(
-              stale,
-              "Return to galaxy",
-            ).boundingBox();
-            expect(label!.y).toBeGreaterThanOrEqual(Math.max(0, track!.y));
-            expect(label!.y + label!.height).toBeLessThanOrEqual(
-              Math.min(track!.y + track!.height, footer!.y),
+            await containedReading(
+              research(stale)
+                .getByRole("radio", { name: /^recruiting/ })
+                .locator(".."),
             );
-            expect(queue!.y).toBeGreaterThanOrEqual(0);
-            expect(queue!.y + queue!.height).toBeLessThanOrEqual(footer!.y);
             await expect(
-              research(stale).getByRole("group", {
-                name: "Research acknowledgement",
+              research(stale).getByRole("region", {
+                name: "Research tracks",
+                exact: true,
               }),
             ).toBeFocused();
           },
@@ -746,6 +810,66 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           page: stale,
           player: aliases[0] + " · recovered submission",
           surface: "game",
+          primary: [
+            research(stale)
+              .getByRole("radio", { name: /^recruiting/ })
+              .locator(".."),
+          ],
+          verifications: [
+            {
+              spec: "The selected control remains fully contained at the recovered-choice capture boundary.",
+              check: async () =>
+                containedReading(
+                  research(stale)
+                    .getByRole("radio", { name: /^recruiting/ })
+                    .locator(".."),
+                ),
+            },
+          ],
+        },
+      ],
+    });
+    await story.step("read-recovered-retry", {
+      actor: aliases[0] + " · second device",
+      description:
+        "Use the next keyboard reading position to find the original command's pending acknowledgement and Retry remedy. Reading does not retry or submit another command.",
+      action: async () => {
+        const summary = research(stale).locator("details.forecast > summary");
+        await summary.focus();
+        await stale.keyboard.press("Tab");
+        await expect(button(stale, "Retry acknowledgement")).toBeFocused();
+      },
+      acknowledgement: {
+        spec: "The same submitted command remains durable and unacknowledged; both pending and Retry controls are readable.",
+        check: async () => {
+          expect(await readDurable()).toEqual(durable);
+          expect((await canonical()).economy!.research[uid].orders).toEqual([
+            first,
+          ]);
+          await containedReading(button(stale, "Awaiting acknowledgement…"));
+          await containedReading(button(stale, "Retry acknowledgement"));
+        },
+      },
+      verifications: [
+        privacy,
+        {
+          spec: "Retry is keyboard-focused and fully contained along with the pending control immediately before capture.",
+          check: async () => {
+            await expect(button(stale, "Retry acknowledgement")).toBeFocused();
+            await containedReading(button(stale, "Awaiting acknowledgement…"));
+            await containedReading(button(stale, "Retry acknowledgement"));
+          },
+        },
+      ],
+      views: [
+        {
+          page: stale,
+          player: aliases[0] + " · pending and retry",
+          surface: "game",
+          primary: [
+            button(stale, "Awaiting acknowledgement…"),
+            button(stale, "Retry acknowledgement"),
+          ],
         },
       ],
     });

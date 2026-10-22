@@ -129,7 +129,13 @@
   >
     <fieldset disabled={busy || pending || paused}>
       <legend>Research target</legend>
-      <div class="research-tracks">
+      <!-- svelte-ignore a11y_no_noninteractive_tabindex (Pending choices remain readable with keyboard scrolling while radios are disabled.) -->
+      <div
+        class="research-tracks"
+        role="region"
+        aria-label="Research tracks"
+        tabindex="0"
+      >
         {#each technologies as technology}
           <label>
             <input
