@@ -1,0 +1,7 @@
+# Authorized orbital-loss history
+
+This successor to #100 closes a distinct service coverage gap: #98 reopened only the latest history page after orbital loss. The production history reader now receives a complete authenticated pagination journey on the same actual command/leased progression fixture. No production state, levels, resources or ownership are injected.
+
+Budget stated before execution: existing220-tick ceiling and180-second test deadline, at most24 ten-record pages per player and one oldest-page recovery. No second campaign or new research policy is introduced. Checks require contiguous complete revision sequences from each actual admission, no duplicates, the current owner view unchanged, earlier authorized station knowledge retained, later opposing orbital values absent, rival records free of the owner's private route identity, wrong-recipient history denied, and no revision created by reads.
+
+Execution passed1 test/89 assertions in64.27s on the first focused run. Log: `/tmp/cluster-zero-science-history-pagination.log`. Command: `bun test tests/service.test.ts -t "zero science persistence"` in the loopback demo auth/database/firestore/functions cohort. Type/Svelte checks pass0 errors/0 warnings (`/tmp/cluster-orbital-history-check.log`). This is mock-provider service/persistence scope, not illustrated player, managed KMS, pinned Node22/Linux, hosted scheduling or release acceptance. The local emulator uses Node24. Original timing/admission/capture failures and all visual holds remain open.

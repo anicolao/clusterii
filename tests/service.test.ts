@@ -6076,4 +6076,44 @@ test("zero science persistence: earned range, real orbital capture and frozen pr
   expect(JSON.stringify(won.military)).not.toContain(routedReceipts[0].ingress.key!);
   for (let i = 0; i < 2; i++)
     expect((await getDoc(doc(players[i].firestore, "campaignReceipts", players[i].uid, "results", routedReceipts[i].ingress.key!))).data()).toEqual(routedReceipts[i].receipt);
+  // Full authorized pagination is a separate boundary from latest-page recovery.
+  // At most24 pages per player for the existing <=220-tick scenario.
+  const completeHistory = async (c: typeof owner) => {
+    let cursor: import("../src/lib/campaign-history").HistoryCursor | null = null;
+    const records: CampaignView[] = [];
+    for (let page = 0; page < 24; page++) {
+      const next = await readCampaignHistory(c.firestore, c.functions, id, c.uid, cursor);
+      records.push(...next.records);
+      if (!next.cursor) return records;
+      cursor = next.cursor;
+    }
+    throw new Error("Authorized history exceeded the declared24-page budget");
+  };
+  const ownerRecords = await completeHistory(owner), rivalRecords = await completeHistory(rival);
+  for (const [records, firstRevision] of [[ownerRecords, 2], [rivalRecords, 3]] as const) {
+    expect(records.length).toBe(frozen.revision - firstRevision + 1);
+    expect(records.map(record => record.revision)).toEqual(
+      Array.from({length: records.length}, (_, i) => frozen.revision - i),
+    );
+    expect(new Set(records.map(record => record.revision)).size).toBe(records.length);
+  }
+  expect(ownerRecords[0]).toEqual(frozen);
+  const earlierOwned = ownerRecords.find(record => record.holdings.some(h => h.starId === homes[0] && h.orbit === "You" && h.surface === "You"));
+  expect(earlierOwned).toBeDefined();
+  expect(earlierOwned!.holdings.find(h => h.starId === homes[0])!.stations).toBe(1);
+  const laterSplit = ownerRecords.filter(record => record.holdings.some(h => h.starId === homes[0] && h.orbit === "Unknown" && h.surface === "You"));
+  expect(laterSplit.length).toBeGreaterThan(0);
+  for (const record of laterSplit) {
+    const holding = record.holdings.find(h => h.starId === homes[0])!;
+    for (const field of ["fighters", "camps", "stations", "escrowMilli"])
+      expect(holding).not.toHaveProperty(field);
+  }
+  expect(JSON.stringify(rivalRecords)).not.toContain(routedReceipts[0].ingress.key!);
+  await expect(readCampaignHistory(rival.firestore, rival.functions, id, owner.uid)).rejects.toThrow();
+  // Read-only pagination neither creates revisions nor changes the earlier grants.
+  expect((await head.get()).get("revision")).toBe(frozen.revision);
+  const oldest = ownerRecords[ownerRecords.length - 1];
+  const recoveredOldest = await readCampaignHistory(owner.firestore, owner.functions, id, owner.uid,
+    {epoch: oldest.encryptionEpoch, before: oldest.revision + 1, ceiling: frozen.revision});
+  expect(recoveredOldest.records).toEqual([oldest]);
 }, 180000);
