@@ -393,3 +393,7 @@ Research forecast update: reviewer12:19 approved gallery28 from b7e629a and stri
 ## Zero-science player recovery (partial)
 
 `zero-science.story.spec.ts` connects real100-tick earned navigation, ordinary fleet formation/route acknowledgements, actual orbital capture and persisted zero science/frozen progress to owner/peer illustrations (UX-04/06/07/08/09/14/15/16). [Current evidence and failures](ZERO_SCIENCE_STORY_REVIEW.md): current-source desktop14 candidates passed; phone/short leased-batch deadlines and large first-capture deadline leave four-size acceptance incomplete. Earlier phone/desktop candidates are separate provenance. No promotion or strict comparison; existing procedural assertions remain.
+
+## Mounted campaign selection ownership (UX-02/14/16)
+
+`selection-ownership.story.spec.ts` holds a genuine campaignKey response across keyboard navigation to a newer unsent proposal and separately checks a current missing invitation error. It complements, rather than replaces, membership-fault and account-isolation journeys. One focused phone execution is planned; mounted account switch and four-size acceptance remain open. See [design and provenance](MOUNTED_SELECTION_REVIEW.md).
