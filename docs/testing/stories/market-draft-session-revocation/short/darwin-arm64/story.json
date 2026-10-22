@@ -1,0 +1,311 @@
+{
+  "id": "market-draft-session-revocation",
+  "title": "End both account sessions while an unsent market allocation is open",
+  "inventory": [
+    "UX-06",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four commanders enter a real development campaign. A second device ends the owner's sessions through Google confirmation while the first remains on its campaign page. Partial market intent clears without sending; an unrelated player's private view remains unchanged. Fresh authentication recovers the original identity and authoritative allocation. Fixed admission/catalogue clocks and developer entitlement are explicit harness controls, not hosted acceptance. No membership fault, active Leave, market order or production tick is injected.",
+  "source": {
+    "commit": "c9bbcbc53f71916c3e5ceed29abda3ae7d9dba42",
+    "dirty": false,
+    "spec": "tests/browser/market-draft-lifecycle.story.spec.ts",
+    "specSha256": "37f7e58145dec8ac1c85513486235a97b090efcfb1cb9930a27470bba7ba7a49"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "short",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Set the designated browser/domain clock to12:15 UTC and deliver the real Scheduler HTTP request. Authentication and session-revocation clocks remain real. This is not hosted scheduling certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "second-owner-device",
+      "description": "Authenticate another independent browser as the same saved owner without resaving identity. This control device keeps real Date for Google/session confirmation.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-owned-focus",
+      "description": "Both commanders inspect their own authoritative allocation through keyboard controls.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Both instruments show the original25-point allocation and disable an unchanged commitment.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "011-inspect-owned-focus-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "edit-partial-allocation",
+      "description": "Blank Market and enter73 camp points. The incomplete allocation remains an unsent draft.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The exact partial values remain visible and Apply stays disabled.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "012-edit-partial-allocation-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "navigate-with-intent",
+      "description": "Close and reopen the economy under normal motion, then return to reduced motion with the same unsent intent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Blank/73 survive navigation in both motion modes without a command.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "013-navigate-with-intent-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "013-navigate-with-intent-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "open-session-control",
+      "description": "Open Your devices on the second device while the first stays mounted in its campaign.",
+      "actor": "Market envoy · session control",
+      "kind": "player",
+      "acknowledgement": "Google confirmation is available and the first device still holds its partial allocation.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · session control",
+          "image": "014-open-session-control-1-market-envoy-session-control.png",
+          "verifications": []
+        },
+        {
+          "player": "Market envoy · campaign device",
+          "image": "014-open-session-control-2-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "014-open-session-control-3-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "confirm-session-end",
+      "description": "Confirm real account-wide sign-out. The campaign device loses protected controls without reloading or navigating, while the other commander stays authorized.",
+      "actor": "Market envoy · session control",
+      "kind": "player",
+      "acknowledgement": "The real session fence completes; entry confirms session end and the mounted campaign offers its signed-out remedy.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "015-confirm-session-end-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Market envoy · session control",
+          "image": "015-confirm-session-end-2-market-envoy-session-control.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "015-confirm-session-end-3-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "auth-time-boundary",
+      "description": "Wait for real whole-second authentication time to pass the acknowledged revocation cutoff. No service clock or session state is changed.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "fresh-owner-authentication",
+      "description": "Follow the campaign's Sign in remedy and authenticate the original saved commander; no identity resave or market order is required.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The preserved invitation returns directly to the original campaign with the saved identity revision intact.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "017-fresh-owner-authentication-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "017-fresh-owner-authentication-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-authoritative-allocation",
+      "description": "Reopen Market focus after fresh authentication. Authoritative values return; the signed-out session's blank/73 draft does not.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "All four original25-point fields return and no duplicate commitment is available.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "018-recover-authoritative-allocation-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
