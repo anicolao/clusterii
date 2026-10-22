@@ -67,5 +67,12 @@ describe("galaxy label cartography", () => {
     expect(desktop.has("outside")).toBe(true);
     expect(readable(labels, 393, 820)).toEqual(phone);
     expect(placeGalaxyLabels(labels, 80, 20).size).toBe(0);
+    expect(
+      placeGalaxyLabels(
+        [{ ...box("behind-camera", 0, 0, 3), width: 0, height: 0 }],
+        393,
+        820,
+      ).size,
+    ).toBe(0);
   });
 });

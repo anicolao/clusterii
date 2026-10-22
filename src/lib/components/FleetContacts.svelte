@@ -40,6 +40,7 @@
 <section class="contacts" aria-label="Fleet contacts">
   <div
     class="contact-chart"
+    data-galaxy-viewport
     aria-label="Last observed fleet positions. Select a contact in the list to center its recorded location."
   >
     <Canvas renderMode="on-demand"

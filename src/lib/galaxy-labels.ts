@@ -18,7 +18,12 @@ export function placeGalaxyLabels(
   for (const label of [...labels].sort(
     (a, b) => b.priority - a.priority || a.id.localeCompare(b.id, "en"),
   )) {
-    if (label.width > width - 2 * gap || label.height > height - 2 * gap)
+    if (
+      label.width <= 0 ||
+      label.height <= 0 ||
+      label.width > width - 2 * gap ||
+      label.height > height - 2 * gap
+    )
       continue;
     // Do not pull offscreen systems into view. Priority labels may move inward
     // at an edge, while their star/selection marker retains its exact position.
@@ -136,7 +141,7 @@ function createManager(root: HTMLElement) {
   };
 }
 export function galaxyLabel(node: HTMLElement, options: Options) {
-  const root = node.closest<HTMLElement>(".chart");
+  const root = node.closest<HTMLElement>("[data-galaxy-viewport]");
   if (!root) throw new Error("Galaxy labels require their chart viewport");
   node.dataset.mapLabel = options.id;
   const manager = managers.get(root) ?? createManager(root);

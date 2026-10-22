@@ -925,6 +925,7 @@
     </div>{/if}
   <div
     class="chart"
+    data-galaxy-viewport
     inert={roster ||
       listing ||
       briefingOpen ||
