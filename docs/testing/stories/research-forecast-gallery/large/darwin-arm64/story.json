@@ -1,0 +1,238 @@
+{
+  "id": "research-forecast-gallery",
+  "title": "Read research costs and qualified completion estimates",
+  "inventory": [
+    "UX-06",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer inspects the shipped CampaignResearch component with reducer-derived research and science ledger specimens. Keyboard disclosure changes no campaign state. Component observations are not live service acknowledgements, scheduling or authorization acceptance.",
+  "source": {
+    "commit": "b4410b4c0b930e4cd7b89027120b0a8417b03928",
+    "dirty": false,
+    "spec": "tests/browser/research-forecast.story.spec.ts",
+    "specSha256": "3629924ead2f768b0c4063a6fe4130186ef991bc77433eb3fb823a1f73eb23cd"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "open-gallery",
+      "description": "Read the developer gallery scope before inspecting research.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The gallery explicitly says samples do not submit game commands.",
+      "verifications": [
+        "All five production research specimens are available by name."
+      ],
+      "views": [
+        {
+          "player": "Developer · gallery scope",
+          "image": "001-open-gallery-1-developer-gallery-scope.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-pending-forecast",
+      "description": "Open the pending forecast with Enter and read the cost, exact effect and rate qualification.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The native disclosure opens and retains keyboard focus; this is a local presentation outcome.",
+      "verifications": [
+        "Investing costs 20 science, has the recorded 1.01 exponent, distinguishes construction dividends and explains the actual state."
+      ],
+      "views": [
+        {
+          "player": "Developer · pending forecast",
+          "image": "002-read-pending-forecast-1-developer-pending-forecast.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-pending-qualification",
+      "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation.",
+      "verifications": [
+        "The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status."
+      ],
+      "views": [
+        {
+          "player": "Developer · pending qualification",
+          "image": "003-read-pending-qualification-1-developer-pending-qualification.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close-pending-forecast",
+      "description": "Close the disclosure with Space, keeping focus and the selected research choice.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The disclosure closes without queuing research.",
+      "verifications": [
+        "The investing radio remains selected."
+      ],
+      "views": [
+        {
+          "player": "Developer · pending collapsed",
+          "image": "004-close-pending-forecast-1-developer-pending-collapsed.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-disabled-forecast",
+      "description": "Open the disabled forecast with Enter and read the cost, exact effect and rate qualification.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The native disclosure opens and retains keyboard focus; this is a local presentation outcome.",
+      "verifications": [
+        "Investing costs 20 science, has the recorded 1.01 exponent, distinguishes construction dividends and explains the actual state."
+      ],
+      "views": [
+        {
+          "player": "Developer · disabled forecast",
+          "image": "005-read-disabled-forecast-1-developer-disabled-forecast.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-disabled-qualification",
+      "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation.",
+      "verifications": [
+        "The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status."
+      ],
+      "views": [
+        {
+          "player": "Developer · disabled qualification",
+          "image": "006-read-disabled-qualification-1-developer-disabled-qualification.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close-disabled-forecast",
+      "description": "Close the disclosure with Space, keeping focus and the selected research choice.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The disclosure closes without queuing research.",
+      "verifications": [
+        "The investing radio remains selected."
+      ],
+      "views": [
+        {
+          "player": "Developer · disabled collapsed",
+          "image": "007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-applied-forecast",
+      "description": "Open the applied forecast with Enter and read the cost, exact effect and rate qualification.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The native disclosure opens and retains keyboard focus; this is a local presentation outcome.",
+      "verifications": [
+        "Investing costs 20 science, has the recorded 1.01 exponent, distinguishes construction dividends and explains the actual state."
+      ],
+      "views": [
+        {
+          "player": "Developer · applied forecast",
+          "image": "008-read-applied-forecast-1-developer-applied-forecast.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-applied-qualification",
+      "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation.",
+      "verifications": [
+        "The final active-target paragraph is fully contained, with unchanged selected investing and genuine applied order status."
+      ],
+      "views": [
+        {
+          "player": "Developer · applied qualification",
+          "image": "009-read-applied-qualification-1-developer-applied-qualification.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close-applied-forecast",
+      "description": "Close the disclosure with Space, keeping focus and the selected research choice.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The disclosure closes without queuing research.",
+      "verifications": [
+        "The investing radio remains selected."
+      ],
+      "views": [
+        {
+          "player": "Developer · applied collapsed",
+          "image": "010-close-applied-forecast-1-developer-applied-collapsed.png",
+          "verifications": [
+            "The full research forecast is contained after deliberate gallery scrolling, without horizontal document overflow."
+          ]
+        }
+      ]
+    }
+  ]
+}

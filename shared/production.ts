@@ -2,6 +2,7 @@ import type { Campaign } from "./campaign.js";
 import { settleConstruction } from "./construction.js";
 import { settleFleets } from "./fleets.js";
 import { initialFocus, type MarketFocus, settleFocus } from "./market-focus.js";
+import { researchCostMilli } from "./research.js";
 import { faction, rules } from "./rules.js";
 import { assertTradeBalances, settleTrades } from "./trades.js";
 import { type ArrivalRank, settleTravel } from "./travel.js";
@@ -291,10 +292,8 @@ export function produce(
       BigInt(target.progressMilli[target.target]) + BigInt(ledger.scienceMilli),
     );
     while (target.levels[target.target] < rules.maximumResearchLevel) {
-      const cost =
-        rules.researchBaseCost *
-        rules.researchCostGrowth ** target.levels[target.target] *
-        1000;
+      const cost = researchCostMilli(target.levels[target.target]);
+      if (cost === null) break;
       if (target.progressMilli[target.target] < cost) break;
       target.progressMilli[target.target] -= cost;
       target.levels[target.target]++;

@@ -40,6 +40,7 @@
     historyRecords,
     productionFrame,
     researchFrame,
+    researchScienceRate,
     constructionFrame,
     focusFrame,
     fleetFrame,
@@ -516,6 +517,8 @@
         </div>{/each}
       <h2>Research · shared selection and acknowledgement</h2>
       {#each ["ready", "pending", "error", "disabled", "applied"] as state}<div
+          role="region"
+          aria-label={`Research specimen ${state}`}
           style="max-width:620px;margin-bottom:32px"
         >
           <CampaignResearch
@@ -523,6 +526,9 @@
             travelEnabled={true}
             constructionEnabled={true}
             research={researchFrame(state === "applied" ? 3400 : 2400)}
+            scienceMilli={researchScienceRate(
+              state === "applied" ? 3400 : 2400,
+            )}
             pending={state === "pending"}
             paused={state === "disabled"}
             error={state === "error"

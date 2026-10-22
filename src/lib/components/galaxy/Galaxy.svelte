@@ -918,7 +918,7 @@
       aria-expanded={roster}>Roster</ActionButton
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
   </header>
-  {#if !roster && !commandKind.startsWith("conversation.") && !(economy && commandKind === "research.select")}<div
+  {#if !roster && !commandKind.startsWith("conversation.") && !economy}<div
       class="acknowledgement"
       inert={listing ||
         briefingOpen ||

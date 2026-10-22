@@ -557,4 +557,40 @@ Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | P
 
 Prompt 85 | a116e9223be6f0a15d6115a157919937d8ae1d2eadb9761daf3a2cbd6c1f6c15 | Record corrected feedback source checks and exact disk blocker before the required new candidate run.
 
+Prompt 86 | c952b36ade3c871d9a7515e90dd12e0d8b7539ea7d4bb254f97c54e88b1ab3fd | Add shared next-cost and funded-tick forecasts with recorded research effects, focused calculation evidence and explicit visual gates.
+
 Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Archive four passing research-order stories and 52 exact comparisons on isolated PR89 source after scoped reviewer promotion.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Propagate approved PR89 baselines and exact evidence to the forecast successor while preserving both prompt histories.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Add named shared-gallery forecast disclosure stories with keyboard cost effect and recorded-rate assertions before candidate review.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Preserve failed forecast generation and add the mandatory opening gallery viewpoint before rerunning its isolated family.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Record separate forecast gallery candidates and preserved initial failure, retaining independent review and live integration gates.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Archive four strict forecast gallery stories and 28 exact captures after scoped reviewer approval.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Extend live research orders with keyboard forecasts corroborated by private projections and original receipts without weakening peer invariants.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve live forecast failures and assert the authoritative null-ledger contract before the first production tick.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Retain passing live forecast candidates and exact null-contract failure, classifying completed Linux errors separately from visual acceptance.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve lab selector failures and scope applied-history keyboard checks to its exact disclosure label after adding forecasts.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve nested-locator failure and use the named summary parent for unchanged open-state and applied-tick lab assertions.
+
+Prompt 89 | a0e71b861760a4e030fd48ac1ecd9ec56fab80ab929e0da263315a2bd59ed9f0 | Preserve phone and short scroll timing failures and await keyboard scroll completion before unchanged text and Queue geometry checks.
+
+Prompt 89 | a0e71b861760a4e030fd48ac1ecd9ec56fab80ab929e0da263315a2bd59ed9f0 | Preserve queued-view positioning failure and align the bounded disclosure start while retaining full forecast and Queue containment assertions.
+
+Prompt 89 | a0e71b861760a4e030fd48ac1ecd9ec56fab80ab929e0da263315a2bd59ed9f0 | Record corrected four-size live76 candidates with full Queue visibility and retained failures, leaving independent promotion and shared visual gates open.
+
+Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Archive all 76 strict corrected live comparisons with scoped reviewer provenance and retain independent shared and ownership gates.
+
+Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Add bounded forecast End-key qualification views after preserving separately generated current shared lab and gallery candidates.
+
+Prompt 90 | a2a4614415e1b1546646e4e310e1bd9709b47ec32a66156daa834e152b647beb | Record current shared identity gallery84, research lab96 and keyboard-qualified forecast gallery40 candidates for separate independent review.
+
+Prompt 94 | 3149f5292bfbdbe18a7401025134413babfb139e7c5f65a15aa819fb16876e70 | Archive four passing qualified forecast gallery journeys and40 exact captures under the scoped reviewer approval.

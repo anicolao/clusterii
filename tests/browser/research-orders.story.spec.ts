@@ -387,6 +387,151 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       verifications: [privacy],
       views: [ownerView],
     });
+    const forecastStep = async (queued: boolean) => {
+      const forecast = research(owner).locator("details.forecast");
+      const summary = forecast.locator("summary");
+      await story.step(
+        queued ? "read-queued-forecast" : "read-unfunded-forecast",
+        {
+          actor: aliases[0],
+          description: queued
+            ? "Read the forecast after the server has accepted the original investing order; active navigation remains distinct."
+            : "Read investing cost and effect before the first production ledger exists, without sending a command.",
+          action: async () => {
+            await summary.focus();
+            await owner.keyboard.press("Enter");
+          },
+          acknowledgement: {
+            spec: "The forecast opens with keyboard focus and matches the authoritative private projection.",
+            check: async () => {
+              await expect(forecast).toHaveAttribute("open", "");
+              await expect(summary).toBeFocused();
+              const view = await published(uid);
+              expect(view.economy!.ledger).toBeNull();
+              expect(view.economy!.research.levels.investing).toBe(0);
+              expect(view.economy!.research.progressMilli.investing).toBe(0);
+              expect(view.economy!.research.target).toBe("navigation");
+              if (queued) await accepted("investing", 1);
+              else expect(await receipts(uid)).toEqual(receiptsBefore);
+            },
+          },
+          verifications: [
+            privacy,
+            {
+              spec: "Cost and next effect are exact; unknown rate or queued switch suppresses ETA, and the full forecast fits above the panel footer.",
+              check: async () => {
+                await expect(forecast).toContainText(
+                  "Level 1 costs 20 science",
+                );
+                await expect(forecast).toContainText("20 more science");
+                await expect(forecast).toContainText("power 1.01");
+                await expect(forecast).toContainText(
+                  "Active research: navigation",
+                );
+                await expect(forecast).toContainText(
+                  queued
+                    ? "A research selection is awaiting acknowledgement or application"
+                    : "No completed science-production tick is available yet",
+                );
+                await expect(forecast).not.toContainText(
+                  "Estimated completion:",
+                );
+                await forecast.evaluate((e) =>
+                  e.scrollIntoView({ block: "start" }),
+                );
+                const box = await forecast.boundingBox();
+                const footer = await button(
+                  owner,
+                  "Return to galaxy",
+                ).boundingBox();
+                expect(box!.y).toBeGreaterThanOrEqual(0);
+                expect(box!.y + box!.height).toBeLessThanOrEqual(footer!.y);
+                const queue = await button(
+                  owner,
+                  "Queue investing",
+                ).boundingBox();
+                expect(queue!.y).toBeGreaterThanOrEqual(box!.y + box!.height);
+                expect(queue!.y + queue!.height).toBeLessThanOrEqual(footer!.y);
+                await expect(owner.locator(".acknowledgement")).toHaveCount(0);
+              },
+            },
+          ],
+          views: [ownerView, peerView],
+        },
+      );
+      await story.step(
+        queued ? "read-queued-assumptions" : "read-unfunded-assumptions",
+        {
+          actor: aliases[0],
+          description:
+            "Scroll the bounded forecast with the keyboard while the actual Queue control stays fully visible.",
+          action: async () => {
+            const body = forecast.getByRole("region", {
+              name: "Research forecast details",
+            });
+            await body.focus();
+            await owner.keyboard.press("End");
+            await expect
+              .poll(() =>
+                body.evaluate(
+                  (e) =>
+                    Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) < 1,
+                ),
+              )
+              .toBe(true);
+          },
+          acknowledgement: {
+            spec: "The focused forecast reveals its active-target qualification without sending another command.",
+            check: async () => {
+              await expect(
+                forecast.getByRole("region", {
+                  name: "Research forecast details",
+                }),
+              ).toBeFocused();
+              expect((await receipts(uid)).length).toBe(
+                receiptsBefore.length + (queued ? 1 : 0),
+              );
+            },
+          },
+          verifications: [
+            privacy,
+            {
+              spec: "Active navigation and Queue investing are contained above the fixed footer.",
+              check: async () => {
+                const target = forecast.getByText(
+                  "Active research: navigation.",
+                  { exact: false },
+                );
+                const body = await forecast
+                  .getByRole("region", { name: "Research forecast details" })
+                  .boundingBox();
+                const text = await target.boundingBox();
+                expect(text!.y).toBeGreaterThanOrEqual(body!.y);
+                expect(text!.y + text!.height).toBeLessThanOrEqual(
+                  body!.y + body!.height,
+                );
+                const queue = await button(
+                  owner,
+                  "Queue investing",
+                ).boundingBox();
+                const footer = await button(
+                  owner,
+                  "Return to galaxy",
+                ).boundingBox();
+                expect(queue!.y).toBeGreaterThanOrEqual(0);
+                expect(queue!.y + queue!.height).toBeLessThanOrEqual(footer!.y);
+              },
+            },
+          ],
+          views: [ownerView],
+        },
+      );
+      // Close the presentation disclosure before continuing normal orders.
+      await summary.focus();
+      await owner.keyboard.press("Space");
+      await expect(forecast).not.toHaveAttribute("open", "");
+    };
+    await forecastStep(false);
     await story.step("queue-investing", {
       actor: aliases[0],
       description:
@@ -404,6 +549,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       verifications: [privacy],
       views: [ownerView, peerView],
     });
+    await forecastStep(true);
     const first = (await canonical()).economy!.research[uid].orders![0];
     await story.step("reload-accepted-order", {
       actor: aliases[0],

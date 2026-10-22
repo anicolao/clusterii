@@ -2,66 +2,96 @@
   {
     "image": "010-choose-without-sending-1-market-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/010-choose-without-sending-1-market-envoy.png",
-    "actualSha256": "f711e70a94cc77fc6f2b3a9b7e2d31749399c34020d13f7e36cbeaf8f79728b8"
+    "actualSha256": "dd71635e9f8de75ca03af90084d27601bb7e4fe0eebddf002685012040d3d167"
   },
   {
     "image": "010-choose-without-sending-2-independent-investor.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/010-choose-without-sending-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
     "image": "011-restore-panel-choice-1-market-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/011-restore-panel-choice-1-market-envoy.png",
-    "actualSha256": "f711e70a94cc77fc6f2b3a9b7e2d31749399c34020d13f7e36cbeaf8f79728b8"
+    "actualSha256": "dd71635e9f8de75ca03af90084d27601bb7e4fe0eebddf002685012040d3d167"
   },
   {
-    "image": "012-queue-investing-1-market-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/012-queue-investing-1-market-envoy.png",
-    "actualSha256": "1761d713414af7a52658790b5cfee1d01c8004f5fa6ac0401ec356887b4dfa77"
+    "image": "012-read-unfunded-forecast-1-market-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+    "actualSha256": "7beab39aa64daa2e71e3840c83f14def1152a891b8f7d81bc946070fb303fb7b"
   },
   {
-    "image": "012-queue-investing-2-independent-investor.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/012-queue-investing-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "image": "012-read-unfunded-forecast-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
-    "image": "013-reload-accepted-order-1-market-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/013-reload-accepted-order-1-market-envoy.png",
-    "actualSha256": "af1cc9d1d3dcfa751c0a4c8ff62344421175dea758b0fbe06a72238ea2401a1c"
+    "image": "013-read-unfunded-assumptions-1-market-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+    "actualSha256": "347541789dcce353131e572df135819feefea5bca6af01fb806c0175c746e09b"
   },
   {
-    "image": "016-submit-held-choice-1-market-envoy-second-device.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/016-submit-held-choice-1-market-envoy-second-device.png",
-    "actualSha256": "76761d589e6d187c42782089de1583a872d8bd887d9cb840f5f8cd3046adcc84"
+    "image": "014-queue-investing-1-market-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/014-queue-investing-1-market-envoy.png",
+    "actualSha256": "7018cd64dc7630491b5dfc3168b49a4fbcb861e51a18988d49d5533c71ff7538"
   },
   {
-    "image": "018-switch-current-device-1-market-envoy.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/018-switch-current-device-1-market-envoy.png",
-    "actualSha256": "a51c95b2dd58abba6e2f1cdd728f34d20e83e9c8c84deef7a098104c6d265c48"
+    "image": "014-queue-investing-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/014-queue-investing-2-independent-investor.png",
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
-    "image": "018-switch-current-device-2-independent-investor.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/018-switch-current-device-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "image": "015-read-queued-forecast-1-market-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/015-read-queued-forecast-1-market-envoy.png",
+    "actualSha256": "a415469b5c430f02132f1ebbfec7923c5ba8faa41af0ca3a7b4b7843ba7cb450"
   },
   {
-    "image": "020-review-stale-rejection-1-market-envoy-second-device.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/020-review-stale-rejection-1-market-envoy-second-device.png",
-    "actualSha256": "f06f59df134af81d5c0e187cab0f91a7e372dfb940150964ddf3b0e6840f90f0"
+    "image": "015-read-queued-forecast-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/015-read-queued-forecast-2-independent-investor.png",
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
-    "image": "020-review-stale-rejection-2-independent-investor.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/020-review-stale-rejection-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "image": "016-read-queued-assumptions-1-market-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/016-read-queued-assumptions-1-market-envoy.png",
+    "actualSha256": "382283bc2e72d525f3f48e8b287245920cc79c1ec51d5a02e22dbfb829ebbd1f"
   },
   {
-    "image": "021-close-conflict-panel-1-market-envoy-second-device.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/021-close-conflict-panel-1-market-envoy-second-device.png",
+    "image": "017-reload-accepted-order-1-market-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/017-reload-accepted-order-1-market-envoy.png",
+    "actualSha256": "4544efa9a72f9f4d19899864346a000a1353e5782c57933df633973c6f720ff2"
+  },
+  {
+    "image": "020-submit-held-choice-1-market-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+    "actualSha256": "cfaa2f32b43f6d128094519d806d9c44a18ee234b9ea50c68f64f885916cb731"
+  },
+  {
+    "image": "022-switch-current-device-1-market-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-switch-current-device-1-market-envoy.png",
+    "actualSha256": "01617e493392ab4691253712375d6bf5c4810b187c3aa5b26ef50ecaac0b049e"
+  },
+  {
+    "image": "022-switch-current-device-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-switch-current-device-2-independent-investor.png",
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
+  },
+  {
+    "image": "024-review-stale-rejection-1-market-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/024-review-stale-rejection-1-market-envoy-second-device.png",
+    "actualSha256": "ad7ee8166122e91de05cae9557bbd52d53c91073d0dcda2413b9b4f4db65e0db"
+  },
+  {
+    "image": "024-review-stale-rejection-2-independent-investor.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/024-review-stale-rejection-2-independent-investor.png",
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
+  },
+  {
+    "image": "025-close-conflict-panel-1-market-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/025-close-conflict-panel-1-market-envoy-second-device.png",
     "actualSha256": "f0ba002e9396a62b34d7d877e0eb7af8e85b45d4c5f95aadb29c089f3d90e2ef"
   },
   {
-    "image": "022-reopen-conflict-panel-1-market-envoy-second-device.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-reopen-conflict-panel-1-market-envoy-second-device.png",
-    "actualSha256": "bbdc06b4c6b8d429bd56a393dab99f1fdf14204f6b6cc6be7f2cbb6da98d4ca5"
+    "image": "026-reopen-conflict-panel-1-market-envoy-second-device.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/026-reopen-conflict-panel-1-market-envoy-second-device.png",
+    "actualSha256": "ad7ee8166122e91de05cae9557bbd52d53c91073d0dcda2413b9b4f4db65e0db"
   }
 ]
