@@ -175,7 +175,10 @@
       ><T.OctahedronGeometry
         args={[contact.id === selectedContact ? 0.12 : 0.06]}
       /><T.MeshBasicMaterial color="#e0b08c" /></T.Mesh
-    >{#if contact.id === selectedContact}<HTML position={[0, 0.3, 0]} center
+    >{#if contact.id === selectedContact}<HTML
+        position={[0, 0.3, 0]}
+        style="pointer-events: none"
+        center
         ><span class="contact-label"
           >{contact.owner} · Fleet {contact.number} · observed tick {contact.observedTick}</span
         ></HTML
@@ -184,7 +187,7 @@
 {#each paths as path}<RouteLine {...path} />{/each}
 {#each travelers as fleet}<T.Group
     position={[fleet.x / 10, fleet.y / 10 + 0.08, fleet.z / 10]}
-    ><HTML
+    ><HTML style={onfleet ? undefined : "pointer-events: none"}
       >{#if onfleet}<button
           class="travel-marker"
           aria-label={`Traveling fleet ${fleet.number}`}
@@ -288,7 +291,10 @@
             : ""}</span
         ></HTML
       >{/if}
-    {#if fleets[star.id]}<HTML position={[0, -0.5, 0]} center
+    {#if fleets[star.id]}<HTML
+        position={[0, -0.5, 0]}
+        style="pointer-events: none"
+        center
         ><span
           class="fleet-label"
           aria-label={`${fleets[star.id]} of your fleets stationed at ${star.name}`}
@@ -297,6 +303,7 @@
       >{/if}
     {#if routeFocus && routeIds.includes(star.id)}<HTML
         position={[0, 0.015, 0]}
+        style="pointer-events: none"
         center
         ><span class="route-node"
           >{routeIds.indexOf(star.id) === 0
