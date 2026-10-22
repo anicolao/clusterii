@@ -1,0 +1,434 @@
+{
+  "run": 39743227540,
+  "job": 119705315798,
+  "artifact": 12418233598,
+  "source": {
+    "commit": "ddd7512cd2169da67a312272b8336a086a034d4a",
+    "dirty": false,
+    "spec": "tests/browser/identity-gallery.story.spec.ts",
+    "specSha256": "c2bfba40911bb5c3def4047566eb5466de8e7cfcbbc6d0270acda341cd8da039"
+  },
+  "approval": "pending independent review; no images promoted",
+  "images": [
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+      "sha256": "d2ed2a90f9ec4044f2009478e6089bcc77edadac7adff2aa6f4cbf5ba26a50a6",
+      "bytes": 221382
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+      "sha256": "c2f0d2474775d40f33d6a654ebf04d5928cbc510e7a17e668be5fb89b23c8040",
+      "bytes": 220309
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+      "sha256": "c0c9ea1a738795d95dbc8948653003c4ab1457e366e277a8094e4edb268a04af",
+      "bytes": 218072
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+      "sha256": "444ae58c5e5fbd1c2a03a05acf77912eb020044f62a3fd08ee7569c378840ff3",
+      "bytes": 222029
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+      "sha256": "e40a3a95e0190f5e2560fc888b9d77a8d835ebfb4b7729f4833e8b5421330b98",
+      "bytes": 232510
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+      "sha256": "082df2dd81ee8bb9255b86e5ff98d7f0b455b0d4508ce97b830e876e20a1d3e5",
+      "bytes": 222671
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+      "sha256": "ae5f275204bb5b276477384826e0e4e33e00506c6d5563b4f1635148925e8918",
+      "bytes": 223394
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+      "sha256": "717aeeb2ecb980520e0740e4cc8abfe41520474ee27c7e8add88c441a7afc30e",
+      "bytes": 221715
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+      "sha256": "19ed5fd83e15a6080ae7c0d227f72fb35d1af95a4ded3dbffd9781a5e26f9c65",
+      "bytes": 221597
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+      "sha256": "90cbd88e91b448a048ad8a9c2faabf1af901299ff34c6ac3d670a92286dbfeac",
+      "bytes": 324459
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+      "sha256": "087a4ea436e77cf92acf600bac6ba19175232fe27f4172ad2f97778bceaa4c24",
+      "bytes": 369580
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+      "sha256": "78a7c759c86f57fc48aa6069b98d1f7404c9bfa9297eca53a0be9ea5d7a21449",
+      "bytes": 537844
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+      "sha256": "6f6f6d52ca777a84a651440d80657db2a45c50a31a3ea3a1614f0d3367d9a5ba",
+      "bytes": 674584
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+      "sha256": "9d03787356109e882d1b3dfe0777fcdd4dde542132764a9ce0c87cc10ff31a98",
+      "bytes": 363266
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+      "sha256": "2165bc4b6bba2c45fd8e7ee7f04bf718b8e90e47a7206a64160bb6367881a6fe",
+      "bytes": 350464
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+      "sha256": "ff243f43330a821fcf00be87cb40483d1e2295f4412f81c890ad66139fe6d620",
+      "bytes": 427438
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "sha256": "01fc724c3a6950e0331e1c4073bbe0db599a13e6a791ff999122c8bd2d1cbcb8",
+      "bytes": 76042
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+      "sha256": "01baad46954d427195aad04305079e67c5e3179f7f564d376d8fbdd854e60e8d",
+      "bytes": 78174
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+      "sha256": "08a12a42d3f3007493dbc1a9fe986d3bc83582c8a6fa4614ff7dd86c58444586",
+      "bytes": 251408
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+      "sha256": "5acf5c7aede3495d266a863cb50c80f7c0166e19fe88c1ce44128854fcac2947",
+      "bytes": 169691
+    },
+    {
+      "path": "identity-component-gallery/desktop/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+      "sha256": "ab6c12749209feba7efcb4d05fb22e5a28d41b4c3578604c31b453e1bc485660",
+      "bytes": 52891
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+      "sha256": "ef2d866518e266848cdb6e85245d6f0223afb11aa25d51d20ffead8e33c968e1",
+      "bytes": 866292
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+      "sha256": "3257e96d80acc874fabc4120f44d9bef0a77cc4a00eaad3ffd6e53ab1a740587",
+      "bytes": 865862
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+      "sha256": "1316c40f010567939e58b944dd11d84428b333871f042e6f061526a80b130c8e",
+      "bytes": 865924
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+      "sha256": "984170aebd25937f9d7f712221927d7020ace15d4d196ed1a94d88966f90dd7e",
+      "bytes": 866180
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+      "sha256": "984170aebd25937f9d7f712221927d7020ace15d4d196ed1a94d88966f90dd7e",
+      "bytes": 866180
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+      "sha256": "5be58cb2371b223aaa6748b7f6c8168581c5ea4ad2291106d924f9817bf91888",
+      "bytes": 866019
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+      "sha256": "9a57f316834f2ddd61fd9824c67661d0864acd79d0821c9aa2d77fa2caa0fb7e",
+      "bytes": 866150
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+      "sha256": "308a7b3f0ae65a5fad89964bbcc5aba9d58dae20199733ef37009b6d7f4cc203",
+      "bytes": 866368
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+      "sha256": "7f97d85553d1c75623a4894bf520c56dcca07ba69f490164c2392e073c36f835",
+      "bytes": 866243
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+      "sha256": "a441493e97ba6ec12d7388aae0e945eca7aff9bcae11fa3f04445d1934002d6f",
+      "bytes": 870849
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+      "sha256": "46b3a60e2ccbaf162bddb464de7ba778a3b1eb8c1e954fdcacb308c457e1d19c",
+      "bytes": 1014803
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+      "sha256": "672f2011de13289b317413bf06d2c10dce6eddaa5f6c1fa702e213f2515ed979",
+      "bytes": 1264823
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+      "sha256": "4955ed2f6590f493d85ea942e699ae1270c563fc4c174e39ea1c6145fd0834ce",
+      "bytes": 1314490
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+      "sha256": "e98c95d73d6afbc1b4e679813c657cf52fc51de93d7b3d2ff1bbe6b45e9378bb",
+      "bytes": 930140
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+      "sha256": "47a6ee7c23167d7318cd70e86b053beca84944f899147989d4f55a457c5963a1",
+      "bytes": 990112
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+      "sha256": "63dce99fbc62aeffb289924028d85f34da4a90101a656bcd5b2c061c25a8e9b4",
+      "bytes": 1126129
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "sha256": "7598bf40c7ea3dc0a7cc5b33c82ea5e87adce35270af25dc62bc7c1aff01ccaf",
+      "bytes": 216886
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+      "sha256": "c85aadce99667170bc06d11cc6a467e4d43d2885304138ca79f6a148c38cd9d5",
+      "bytes": 214835
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+      "sha256": "87485968a9113e533fc82e6d5176046699e3145c4139895a8fd8a2b97e627d54",
+      "bytes": 362417
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+      "sha256": "4e882ed09d70944ef7b0e91677c13fc373272b6224d5e295aca4a42d4f7e362f",
+      "bytes": 694510
+    },
+    {
+      "path": "identity-component-gallery/large/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+      "sha256": "4e882ed09d70944ef7b0e91677c13fc373272b6224d5e295aca4a42d4f7e362f",
+      "bytes": 694510
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+      "sha256": "4d5e423f6ae1dcd3c8a0752ce98a0ad915baf5aa68ff1f7fd408818ddc14f60b",
+      "bytes": 110917
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+      "sha256": "eace9956900e14e3cd0a3b4ac05a3b7e552d301aa2653c6a5a2e29bd442b8155",
+      "bytes": 124420
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+      "sha256": "db822b34358f9b2a7fcb1e0fe0b7c44720ce9953d0163f7326d254fe24f0af7a",
+      "bytes": 122967
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+      "sha256": "01c8ca808ec26e013bb14d1cf3ae4e1494b4243ffa9f7c3e934850063139ed8c",
+      "bytes": 118800
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+      "sha256": "85885edb6b570b1ed64609d5a3e88d181fae041087c3f1a7a8e2063d35d24c4c",
+      "bytes": 124640
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+      "sha256": "c603b8e604305579251e4aebccb6a2808447842d87a24f3300c6d4121c753f13",
+      "bytes": 65720
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+      "sha256": "cac56fe76fb4060e47822f7b50d4787ded3ff3183762c343507772360482adcb",
+      "bytes": 46067
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+      "sha256": "11e3149006077c481bccd93e7ad00e1dfe14a41b03ce6ee2d5e84c47b313b3ef",
+      "bytes": 48289
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+      "sha256": "b211cd336fa5674281925c89fbd43e7857a5efffedad1b07394890ddd8224222",
+      "bytes": 89358
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+      "sha256": "54b08ad20e537982ef28dacaaedfc62518827bad88f2cad0aef79692e89a8678",
+      "bytes": 88707
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+      "sha256": "1421c93bf15f05142bed97f91987426094407c586ff9152dc7f135a0c72a27fa",
+      "bytes": 152301
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+      "sha256": "de4e1f48443be2a7fdc0ab68338e90f0015595461bf191e99af281cb91c1de84",
+      "bytes": 218461
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+      "sha256": "cec7ec33844b6bf0ff09f3286123e10a64db6268c80fed5537ac4c3ac17900e0",
+      "bytes": 222190
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+      "sha256": "f67e165fe1df8e7d70cff797a60b4c02f9b3b644e77ed35d9fb8d2e6b7f23298",
+      "bytes": 112353
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+      "sha256": "2f286580d2f7d6e1af86d84cebebf179c3d7e36561661ded7d73533ecd774e24",
+      "bytes": 71116
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+      "sha256": "4e5f813856513dc458fd989983ca12d29771a948e8734902740dabd9593bcb0a",
+      "bytes": 124215
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "sha256": "a6dcd4cc43e9283ec6e26348d8e3e236576cb8e6d321e57d88c1b05f79bbbbbd",
+      "bytes": 52705
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+      "sha256": "cf7ab50b722c2db825097545dfefdd9c3be1dd1cd2bec87a5c6255b2afb56f95",
+      "bytes": 53895
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+      "sha256": "3b60d49852c90c4734d78f651421d0570d8098c7c570ed4e3ba42aaa718dba7d",
+      "bytes": 218947
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+      "sha256": "27ebb352218853dc8fcfc5e358981c5f412c2696f86ab41f74e606398d0cf438",
+      "bytes": 109285
+    },
+    {
+      "path": "identity-component-gallery/phone/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+      "sha256": "018dfc005e254a7b68e1170471b20c9b56e1c3ae01d7dcda500a6522b7089588",
+      "bytes": 36745
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+      "sha256": "289b24235ed410b6260cbcc0adc62c4ee6481f8aca3014db3692d8d5a81bfd43",
+      "bytes": 134666
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+      "sha256": "506015808eca4f75b3d965334728ce7428a9badc916b1ca1429e724e72df7845",
+      "bytes": 199291
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+      "sha256": "e6c4386cdc60f7dbd1abbb0eacab79f32d1efb5aff69d08493fb159c3ca80bd0",
+      "bytes": 196374
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+      "sha256": "40c0ceddce0154f2d817c63b03152a9feb06ae0e5513909e64fb8be4834ca25c",
+      "bytes": 200474
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+      "sha256": "ce42c1ad56579502ea3796e87e2a15ad564b22c93b1a085388fff8c070ce7907",
+      "bytes": 202659
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+      "sha256": "6d6314fba756249d42cea8954ff89a3a2ca2a0b9bdffa0bd0f757edcefae033b",
+      "bytes": 198458
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+      "sha256": "8e6563f16965e5141b1f01fa26f123c950d23f13ade52040d4aa43999ac074f4",
+      "bytes": 196961
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+      "sha256": "83efcc1e2455b90c3cac298794b5802a3ec755cf871cd4964314516baacd987f",
+      "bytes": 197568
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+      "sha256": "810c9e0a71e3dd800b6a08b3accf7a764ed3a1c23de6a92b76c6ee5b4b0bd428",
+      "bytes": 198922
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+      "sha256": "6a26fbba93a5deb7bf177d3b0fed0ad0a8221580980c14ced6613f80fd503d6d",
+      "bytes": 128672
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+      "sha256": "da06a08a9240c614ab5f3f8ba976d1bff73aaf25573a6013c5f583edc6e4708d",
+      "bytes": 171260
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+      "sha256": "34829a2572154e9896416cfa0f64c0bff736b3f051b84c97223e7045c21c4281",
+      "bytes": 171163
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+      "sha256": "a88b9e6016fb142935a567eb0087382622912e69f81e61025add9a2217c7ca28",
+      "bytes": 259548
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+      "sha256": "3999c5cc8e0e6307d89a3c3db9cf20e84d5a956529327b79bbc42049bd792c7c",
+      "bytes": 125704
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+      "sha256": "c113fbbce1e0bfc961f29f5bbb7bfb85b20bb73e1b16ea585ad07cb1688cf05d",
+      "bytes": 171513
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+      "sha256": "a529f495a0384162c40e0371c07c71ffbf482d1a790fd2e54d20ccc509e1d2ee",
+      "bytes": 173320
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "sha256": "028db0c6132843420cdec2b51d451add3541e15e8f80006072a204a06aef4c69",
+      "bytes": 57313
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+      "sha256": "575296199dc31755beaee45773fd67199c8d751329295384b6b512b67a49a6a7",
+      "bytes": 58051
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+      "sha256": "8587364a8f7e0e324721bbc85cc348b4c889d1817f77e268afe1bc23e44af9d3",
+      "bytes": 251855
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+      "sha256": "978853bf721c477a7a9c8ef8b27347d0a5fcdcc643ec6d9e8ef2b20f01c1e225",
+      "bytes": 55755
+    },
+    {
+      "path": "identity-component-gallery/short/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+      "sha256": "aeb48fe0b2e00d0213e1f89ef6d3108a05c6864f6df0e920933fcb9e04427c47",
+      "bytes": 41974
+    }
+  ]
+}

@@ -3,16 +3,17 @@
   "title": "Recover one construction commitment and settle its outcome",
   "inventory": [
     "UX-05",
+    "UX-06",
     "UX-14",
     "UX-15",
     "UX-16"
   ],
-  "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
+  "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time for construction and market-focus admission, plus withheld delivery, are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
   "source": {
-    "commit": "1d75c63f410f49e486dd1181f6a1dbc656454ca6",
+    "commit": "3910cef102a253c1aeea4393901e05baed5d7ec5",
     "dirty": false,
     "spec": "tests/browser/construction.story.spec.ts",
-    "specSha256": "54c0800d3466202e7ba8b07c6db7afbd3a77b5248edd86d96e5362c98ef54c93"
+    "specSha256": "5845ffbbd1a23e2ca865789f75d27e19f4d6631a2b2995f21a2071397357ded0"
   },
   "mode": "verify",
   "status": "passed",

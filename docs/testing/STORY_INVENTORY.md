@@ -339,3 +339,7 @@ UX-15 gains a production route chapter with shared range/speed/waypoint constant
 ## Contextual construction guidance
 
 UX-05/15 gains a shared production construction chapter, including real selected quote/capacity, reservation, queue, refunds/control and completion focus. Five named keyboard reading/closing steps preserve complete canonical and owner/peer private views; ordinary and interrupted construction stories retain actual reservation, completion, cancellation, once-only ingress and recovery. Eight local strict journeys/200 captures pass in four sizes after separate candidate review. [Evidence](../design/CONTEXTUAL_CONSTRUCTION_HELP_REVIEW.md). This is one additional contextual chapter; complete menu/settings, other chapters and independent visual/Linux/hosted gates remain open.
+
+## Contextual market focus and scheduled allocation
+
+UX-06/15 now includes four rule sections, invalid-total prevention, unsent allocation review, authenticated acceptance, original private order/receipt, reload recovery and applied outcome through real leased settlement, alongside construction conservation/privacy. Eight local strict ordinary/interrupted journeys304 captures pass across four sizes. [Scope/evidence](../design/CONTEXTUAL_MARKET_HELP_REVIEW.md). Existing market-focus procedural checks remain. Full competing-recipient weights, interrupted focus submission, all technologies and menu/settings remain open; no proposed rule approval or inherited raster fix.
