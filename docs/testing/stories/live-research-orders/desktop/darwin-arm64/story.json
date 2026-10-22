@@ -1,0 +1,338 @@
+{
+  "id": "live-research-orders",
+  "title": "Choose, switch and recover acknowledged research",
+  "inventory": [
+    "UX-06",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. No completion, overflow or hosted acceptance is claimed.",
+  "source": {
+    "commit": "ea4a002a94cb98a7db13a247e3554050bb3e9948",
+    "dirty": false,
+    "spec": "tests/browser/research-orders.story.spec.ts",
+    "specSha256": "1928a6d6c277a895f22aab0341797dd8c5ccff3b087378c9020b4cf9fa73912c"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Set the designated browser/domain clock to12:15 UTC and deliver the real Scheduler HTTP request. Authentication remains real. This is not hosted scheduling certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "choose-without-sending",
+      "description": "Open both private science instruments and choose investing by keyboard without sending.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Investing is a local choice; no command or receipt exists.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "010-choose-without-sending-1-market-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "010-choose-without-sending-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-panel-choice",
+      "description": "Close with Escape and reopen; unsent investing survives within the campaign.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The investing radio is restored without a command.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "011-restore-panel-choice-1-market-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "queue-investing",
+      "description": "Commit investing and wait for its genuine authoritative receipt.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The accepted receipt binds the original payload; investing is scheduled for tick1 while navigation remains active.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "012-queue-investing-1-market-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "012-queue-investing-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-accepted-order",
+      "description": "Reload and recover the accepted investing order from authority.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The same UUID and tick recover; reload creates no extra receipt.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "013-reload-accepted-order-1-market-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "second-saved-device",
+      "description": "Ordinary sign-in on a second device uses the same saved identity without resaving it; no campaign command is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "hold-original-command",
+      "description": "Harness fault: hold only original research ingress frames. Authentication/key requests and private-view updates remain real; no payload is rewritten.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "submit-held-choice",
+      "description": "Submit recruiting from the second device's current revision. Waiting is not acceptance.",
+      "actor": "Market envoy · second device",
+      "kind": "player",
+      "acknowledgement": "The second device waits; authority still has only the first accepted order.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · second device",
+          "image": "016-submit-held-choice-1-market-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "normal-motion-owner",
+      "description": "Use normal motion on the current device; outcome assertions remain identical and captures wait for finite motion.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "switch-current-device",
+      "description": "Commit innovation while the second device has an unacknowledged original command.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Two distinct accepted orders preserve sequence, first order and progress before settlement.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy",
+          "image": "018-switch-current-device-1-market-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "018-switch-current-device-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "release-original-command",
+      "description": "Release the exact held frames after the competing order is accepted. No synthesized request, extra write or rewritten payload.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "review-stale-rejection",
+      "description": "Read the authoritative conflict and retain recruiting for review.",
+      "actor": "Market envoy · second device",
+      "kind": "player",
+      "acknowledgement": "One rejected conflict receipt leaves the two accepted orders intact and preserves the local choice.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · second device",
+          "image": "020-review-stale-rejection-1-market-envoy-second-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "020-review-stale-rejection-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-conflict-panel",
+      "description": "Close Economy with Escape; the same research conflict remains discoverable on the galaxy.",
+      "actor": "Market envoy · second device",
+      "kind": "player",
+      "acknowledgement": "Exactly one accessible route error replaces the panel error; Economy regains keyboard focus.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · second device",
+          "image": "021-close-conflict-panel-1-market-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reopen-conflict-panel",
+      "description": "Reopen Economy and review the preserved recruiting choice with a single in-panel remedy.",
+      "actor": "Market envoy · second device",
+      "kind": "player",
+      "acknowledgement": "Panel ownership returns without duplicating the error or sending another command.",
+      "verifications": [
+        "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · second device",
+          "image": "022-reopen-conflict-panel-1-market-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

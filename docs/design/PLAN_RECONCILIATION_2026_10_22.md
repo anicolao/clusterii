@@ -20,3 +20,7 @@ Beyond that correction, prioritize the missing live research order/switch/comple
 ## Research audit successor
 
 [Research draft review](RESEARCH_DRAFT_REVIEW.md) records the milestone 5 service/reducer audit and fixes unsent selection lost when closing the instrument. Account/campaign-scoped memory is wired into production; 45 unit/reducer cases pass. Live navigation, account/access-loss and research-specific interrupted-command acceptance remain pending, along with exact effect/cost/estimate presentation and the full acknowledged research story. #87 guidance is implemented; prior table entries describing stale text are historical findings. Capture-dependent review remains blocked below 2GiB free.
+
+## Research order story source prepared
+
+[Research order story review](RESEARCH_ORDERS_STORY_REVIEW.md) scopes the next UX-06 migration: ordinary selection/switch, genuine receipt/effective tick, accepted reload and disconnected-device stale conflict with original encrypted identity. Source and clock guards are verified; all browser/candidate/strict acceptance remains unexecuted below the disk gate. Completion/overflow/effect presentation and full retry/account-access acceptance remain next approved work. This does not complete milestone5 or change proposed rules.

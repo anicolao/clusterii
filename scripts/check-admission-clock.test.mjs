@@ -12,6 +12,7 @@ import {
 const target = "file:///isolated/shared/campaign.js";
 initialize({ target });
 const source = `
+export function selectResearch(current, input, uid, commandId, now) { return {current, input, uid, commandId, now}; }
 export function maintainCampaign(current, input, uid, now) { return { current, input, uid, now }; }
 export function createCampaign(id, input, seed, now) { return { input, seed, now }; }
 export function joinOrLeave(current, input, uid, profile, now) { return { current, input, uid, profile, now }; }
@@ -79,6 +80,35 @@ test("admission loader preserves identities and actions and rejects changed sign
       scheduledAt,
     );
     assert.equal(fixture.startCampaign({ name: "Ordinary" }, 987).now, 987);
+    const research = {
+      name: "Scheduled story research orders phone",
+      economy: { nextTickAt: 1800000 },
+    };
+    const selection = {
+      kind: "research.select",
+      expectedRevision: 6,
+      target: "investing",
+    };
+    assert.deepEqual(
+      fixture.selectResearch(research, selection, "owner", "original-id", 987),
+      {
+        current: research,
+        input: selection,
+        uid: "owner",
+        commandId: "original-id",
+        now: 900001,
+      },
+    );
+    for (const current of [
+      { name: "Ordinary", economy: research.economy },
+      { name: research.name },
+      { name: research.name, economy: { nextTickAt: NaN } },
+    ])
+      assert.equal(
+        fixture.selectResearch(current, selection, "owner", "original-id", 987)
+          .now,
+        987,
+      );
     const travel = {
       name: "Scheduled story fleet catchup phone",
       economy: { nextTickAt: 1800000 },

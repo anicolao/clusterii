@@ -550,3 +550,11 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | R
 Prompt 82 | c86097b8d680f74fa6eebd1840d7c96645d22e86d41368e868d9185db03b79c5 | Retain the demo database delivery log with application evidence for the next persisted-ingress recurrence.
 
 Prompt 82 | c86097b8d680f74fa6eebd1840d7c96645d22e86d41368e868d9185db03b79c5 | Propagate profile entry/settlement diagnostics and delivery-log retention from PR87 into research draft PR88.
+
+Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | Bind the research story ingress read to the demo database after preserving all four failed candidate traces.
+
+Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | Preserve renderer failure and correct motion capture plus original-frame interruption without changing command assertions.
+
+Prompt 85 | a116e9223be6f0a15d6115a157919937d8ae1d2eadb9761daf3a2cbd6c1f6c15 | Record corrected feedback source checks and exact disk blocker before the required new candidate run.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Archive four passing research-order stories and 52 exact comparisons on isolated PR89 source after scoped reviewer promotion.
