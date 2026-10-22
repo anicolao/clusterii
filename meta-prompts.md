@@ -1688,3 +1688,12 @@ Agent healthy at0bbf0f0 reviewing four passing market candidates216 captures:104
 Agent healthy at3910cef archiving eight passing strict market/construction journeys304 captures4.9min; independently checked final log. Shared geometry check/publication still in progress; no new PR yet. Existing independent acceptance/reload source and phone review remains scoped. Linux identity-gallery artifact extraction records source/hash manifest with approval explicitly pending; no promotion.
 
 #78 Linux verification newly failed; retained job119766389502 full log /tmp/cluster78-0719-verify.log for classification at next logging boundary. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs; original raster, independent visual/Linux/hosted and full release gates remain open. No merge.
+
+
+## Reviewer progress — 2026-10-22 07:29 Toronto
+
+#80 326de8b attached on #79,304 exact local captures and four-size shared geometry checks recorded. Prior independent acceptance/privacy/reload source and phone review remains scoped. Agent idle after carrying logs through07:19; independently confirmed next market draft lifetime defect in component initialization.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 07:29 Toronto: #80 326de8b attached, clean idle. Independently confirmed MarketFocus initializes draft only in its mounted component; proceed with the identified unsent allocation navigation-loss fix as a small stacked successor on #80. Scope drafts to authorized player/campaign, preserve partial/invalid edits across intended navigation, and clear protected drafts on account/access changes per UX_DESIGN. Keep accepted and uncertain orders authoritative and separate; test navigation restoration, explicit discard behavior if provided, privacy boundaries and no unintended command with TestStepHelper and four-size keyboard/reduced-motion captures. Do not silently broaden in-memory preservation into durable cross-session storage without documenting privacy/recovery semantics. Continue remaining approved plan work after this slice. Carry checkpoints through07:29 into attributed committed/pushed logs. Linux candidate independent review and original raster/hosted holds remain open; no merge.

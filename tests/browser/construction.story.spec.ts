@@ -650,6 +650,34 @@ for (const interrupted of [false, true])
           verifications: [...focusChecks, readOnly],
           views: views(),
         });
+        await story.step("restore-invalid-focus", {
+          actor: aliases[0],
+          description:
+            "Leave the allocation instrument and galaxy panel, then recover the same unsent invalid allocation using the keyboard.",
+          action: async () => {
+            await button(owner, "Back to economy").focus();
+            await owner.keyboard.press("Enter");
+            await expect(button(owner, "Market focus")).toBeFocused();
+            await button(owner, "Return to galaxy").focus();
+            await owner.keyboard.press("Enter");
+            await button(owner, "Economy").focus();
+            await owner.keyboard.press("Enter");
+            await button(owner, "Market focus").focus();
+            await owner.keyboard.press("Enter");
+          },
+          acknowledgement: {
+            spec: "The unsent 175-point allocation returns intact and cannot be sent.",
+            check: async () => {
+              await expect(
+                focusPanel.getByLabel("Training camp points", { exact: true }),
+              ).toHaveValue("100");
+              await expect(focusPanel).toContainText("75 over allocation");
+              await expect(button(owner, "Apply focus")).toBeDisabled();
+            },
+          },
+          verifications: [...focusChecks, readOnly],
+          views: views(),
+        });
         await story.step("review-market-draft", {
           actor: aliases[0],
           description:
