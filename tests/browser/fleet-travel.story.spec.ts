@@ -656,6 +656,83 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       verifications: routeChecks(),
       views: views(),
     });
+    const routeHelp = planner.locator("details.route-rules"),
+      helpSummary = routeHelp.locator("summary");
+    await story.step("read-contextual-route-rules", {
+      actor: aliases[0],
+      description:
+        "Read the route rules beside the unsent plan. Range and speed are distinct; opening help does not pause the campaign or send the fleet.",
+      action: async () => {
+        await routeRead(helpSummary);
+        await helpSummary.focus();
+        await helpSummary.press("Enter");
+        await routeRead(helpSummary);
+      },
+      acknowledgement: {
+        spec: "The contextual guide expands through keyboard input and explains actual shared range, speed and proposed development rules.",
+        check: async () => {
+          await expect(routeHelp).toHaveAttribute("open", "");
+          await expect(routeHelp).toContainText(
+            "Navigation level 1 reaches 10 light years per leg.",
+          );
+          await expect(routeHelp).toContainText(
+            "Fleets travel 2 light years per tick.",
+          );
+          await expect(routeHelp).toContainText(
+            "Development rules remain under review.",
+          );
+          await expect(helpSummary).toBeFocused();
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "The reading panel remains bounded, and help changes neither the exact unsent route nor the complete authoritative state.",
+          check: async () => {
+            await expect(routeList.locator("li")).toHaveCount(1);
+            await expect(routeList).toContainText(targetName);
+            expect(await canonical()).toEqual(formed!);
+            const b = await details.boundingBox();
+            expect(b!.y + b!.height).toBeLessThanOrEqual(
+              owner.viewportSize()!.height,
+            );
+          },
+        },
+      ],
+      views: views(),
+    });
+    await story.step("return-from-route-rules", {
+      actor: aliases[0],
+      description:
+        "Read the final arrival warning within the bounded panel, then close help with the keyboard and return to the unchanged draft.",
+      action: async () => {
+        await routeRead(
+          routeHelp.getByRole("heading", { name: "Arrival and uncertainty" }),
+        );
+        await helpSummary.focus();
+        await helpSummary.press("Enter");
+        await routeRead(routeList);
+        await send.focus();
+      },
+      acknowledgement: {
+        spec: "Help closes without discarding the route; the same draft is ready for deliberate commitment.",
+        check: async () => {
+          await expect(routeHelp).not.toHaveAttribute("open", "");
+          await expect(routeList.locator("li")).toHaveCount(1);
+          await expect(routeList).toContainText(targetName);
+          await expect(send).toBeFocused();
+          await expect(send).toBeEnabled();
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Reading and closing contextual help sends no gameplay command and reveals no private facts to another commander.",
+          check: async () => expect(await canonical()).toEqual(formed!),
+        },
+      ],
+      views: views(),
+    });
     await story.step("discard-uncommitted-route", {
       actor: aliases[0],
       description:

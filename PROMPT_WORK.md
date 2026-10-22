@@ -456,3 +456,5 @@ Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | R
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Archive three strict route-discard stories and retain the unresolved 4K stellar-core failure and reviewer checkpoint.
 
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Register draft PR77 dependency, exact-preview gate and scoped route-discard acceptance limits.
+
+Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Add contextual fleet-route rules using shared production constants and preserve drafts while reading help.

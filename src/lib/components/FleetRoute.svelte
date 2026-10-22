@@ -8,6 +8,7 @@
   import Scene from "./galaxy/Scene.svelte";
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
+  import RouteRules from "./RouteRules.svelte";
   let {
     waypoints = $bindable<string[]>([]),
     view,
@@ -359,6 +360,7 @@
       arrivals resolve combat automatically. No mid-flight cancellation or
       rerouting.
     </p>
+    <RouteRules {navigation} />
     {#if preview.length && !active}<p class="summary">
         Departure at the next eligible tick; {ticks} ticks to final arrival, including
         waypoint stops. Origin forces stay behind. These estimates pause with the
