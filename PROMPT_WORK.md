@@ -564,3 +564,5 @@ Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | A
 Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Propagate approved PR89 baselines and exact evidence to the forecast successor while preserving both prompt histories.
 
 Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Add named shared-gallery forecast disclosure stories with keyboard cost effect and recorded-rate assertions before candidate review.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Preserve failed forecast generation and add the mandatory opening gallery viewpoint before rerunning its isolated family.

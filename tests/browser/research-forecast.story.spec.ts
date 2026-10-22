@@ -72,7 +72,7 @@ test("Research forecast gallery explains recorded costs effects and rate assumpt
         },
       },
     ],
-    views: [],
+    views: [view(page.locator(".dev-shell > header"), "gallery scope")],
   });
   for (const [state, explanation] of [
     [
