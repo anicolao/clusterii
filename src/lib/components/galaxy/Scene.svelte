@@ -275,6 +275,7 @@
     >
     {#if !routeFocus && !selectedContact && star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
         position={[0, 0.25, 0]}
+        style="pointer-events: none"
         center
         ><span
           use:galaxyLabel={{
@@ -319,7 +320,7 @@
         color="#7ee7ff"
         side={DoubleSide}
       /></T.Mesh
-    ><HTML position={[0, 0.5, 0]} center
+    ><HTML position={[0, 0.5, 0]} style="pointer-events: none" center
       ><span use:galaxyLabel={{ id: target.id, priority: 3 }} class="star-label"
         >{target.name}</span
       ></HTML

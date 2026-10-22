@@ -368,3 +368,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | A
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 67 and its predecessor in the delivery acceptance table with an explicitly unverified current-head preview.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Extend the existing authoritative navigation story with shared label geometry assertions across filtering, orbit and inspector boundaries.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Reproduce decorative wrapper pointer interception and make system-label wrappers pass through hits while preserving actual star interactions.

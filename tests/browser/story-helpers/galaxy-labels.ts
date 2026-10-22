@@ -8,8 +8,13 @@ export async function labelGeometry(page: Page) {
     ]
       .map((node) => {
         const b = node.getBoundingClientRect();
+        const hit = document.elementFromPoint(
+          b.x + b.width / 2,
+          b.y + b.height / 2,
+        );
         return {
           id: node.dataset.mapLabel!,
+          interceptsPointer: !!hit && !!node.parentElement?.contains(hit),
           text: node.textContent,
           x: b.x - viewport.x,
           y: b.y - viewport.y,
@@ -20,6 +25,7 @@ export async function labelGeometry(page: Page) {
       .sort((a, b) => a.id.localeCompare(b.id));
     const failures: string[] = [];
     for (const a of labels) {
+      if (a.interceptsPointer) failures.push(`Pointer intercepted: ${a.text}`);
       if (
         a.x < 5.9 ||
         a.y < 5.9 ||
