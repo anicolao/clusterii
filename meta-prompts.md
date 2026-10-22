@@ -1407,3 +1407,10 @@ Agent healthy reviewing four passing observation candidates at16eb245; exact/reg
 Exact queued handoff:
 
 Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png. Observation card is readable, but map labels Tupa and Tania Australis overlap behind it around x40-90/y215-225; record and resolve as an actual rendered-UI issue, or retain explicitly open rather than approve full composition. Also #61 publication job119592171086 failed exact-head check for6504a4a with HTTP404; log /tmp/cluster61-preview-0109.log. Diagnose preview path/publication at next natural boundary; do not weaken exact-head gate or duplicate broad CI. Keep current healthy work moving and carry attributed findings into committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-22 01:20 Toronto
+
+#66 4969974 published on #65 and attached. Independently checked four exact local observation results56 captures; scope review retains uninstrumented mock service136 assertions and two original browser/motion regressions, with managed-real coverage explicitly skipped. Phone map-label overlap remains openly documented and full composition unapproved. Agent healthy automatically processing00:09 queued finding;01:10 finding remains queued, no duplicate prompt.
+
+Independently fetched gh-pages/pr61/revision.json: source/build both6504a4a, corresponding Pages run39724569489 still queued. This explains plausible deployment delay but served preview remains unverified; no relaxed gate or duplicate publish. #57/#59 application now green, #65 Linux running. Carry checkpoint into committed/pushed logs; raster, Linux/full visual/preview/release gates open, no merge.
