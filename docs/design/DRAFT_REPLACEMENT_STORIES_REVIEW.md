@@ -16,3 +16,9 @@ Job119679444037, retained `/tmp/cluster69-0429-failure.log`, reports 56 missing 
 | short | identity-pending-retry/001-sign-in-1-commander.png | 1994 | Identity entry before retry; matches the recorded recurrence count, but does not establish a shared raster cause or fix. |
 
 Do not promote these failed outputs. The sole explicit #70 generation run39743227540 remains queued with no executed steps or eligible candidate artifact. Baselines and zero tolerance remain unchanged.
+
+## Bounded inspection of retained failures
+
+Artifact12411947797 is 1,899,683,457 bytes, source f6c20e3d8bf8f7703c489cb97551968383fd0c8f. Range extraction retrieved only the four actual/expected/diff sets with 3,712,594 downloaded bytes, preserving originals at `/tmp/cluster69-scoped-images`. Reviewed crops are committed under `docs/testing/diagnostics/linux69/`, ordered expected / actual / diff.
+
+The keyboard-orbit change is the visible Gunibuu label becoming Gunibuu · O at x318–392/y404–420. Both roster and consent-return differences are removal of clipped label fragments at x0–11/y451–474, leaving the panel boundary intact. These are actual label-presentation changes, not identity text differences; they still require matching-source Linux candidate review. The identity crop retains the same paragraph text at x583–1012/y289–305 with changed glyph rasterization. Its causal diagnosis remains open. Raw RGBA differences are1068/260/273/2231 respectively, distinct from the comparison reporter's1066/259/273/1994 counts. No failed output is used as a baseline.
