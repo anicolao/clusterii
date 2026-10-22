@@ -1061,6 +1061,46 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         verifications: archiveChecks,
         views: archiveViews(),
       });
+    await story.step("read-arrival-resolution-boundaries", {
+      actor: aliases[0],
+      description:
+        "Open Participants and resolution with the keyboard to read the recorded order, private opposing-force boundary and development-rule disclosure.",
+      action: async () => {
+        await archiveChecks[0].check();
+        const summary = archive(owner)
+          .locator("summary")
+          .filter({ hasText: "Participants and resolution" });
+        await summary.focus();
+        await summary.press("Enter");
+        await summary.locator("..").scrollIntoViewIfNeeded();
+      },
+      acknowledgement: {
+        spec: "The expanded resolution explanation is visible and identifies proposed development rules without revealing opposing forces.",
+        check: async () => {
+          const details = archive(owner)
+            .locator("details")
+            .filter({
+              has: archive(owner)
+                .locator("summary")
+                .filter({ hasText: "Participants and resolution" }),
+            });
+          await expect(details).toHaveAttribute("open", "");
+          await expect(details).toBeInViewport({ ratio: 1 });
+          await expect(details).toContainText(
+            "Opposing force counts and effectiveness are private.",
+          );
+          await expect(details).toContainText(
+            "Development combat rules remain under review.",
+          );
+          const a = await body(owner).boundingBox(),
+            b = await details.boundingBox();
+          expect(b!.y).toBeGreaterThanOrEqual(a!.y);
+          expect(b!.y + b!.height).toBeLessThanOrEqual(a!.y + a!.height);
+        },
+      },
+      verifications: archiveChecks,
+      views: archiveViews(),
+    });
     await story.step("reload-private-arrival-archives", {
       actor: aliases[0],
       description:
@@ -1080,8 +1120,50 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         spec: "The same recorded destination/tick returns only to its recipient after loss of local panel state.",
         check: confirmArchives,
       },
-      verifications: archiveChecks,
+      verifications: [
+        ...archiveChecks,
+        {
+          spec: "Normal and reduced motion retain the same authoritative history and recipient outcomes.",
+          check: async () => {
+            for (const p of [owner, peer])
+              await p.emulateMedia({ reducedMotion: "no-preference" });
+            await confirmArchives();
+            await archiveChecks[0].check();
+            for (const p of [owner, peer])
+              await p.emulateMedia({ reducedMotion: "reduce" });
+          },
+        },
+      ],
       views: archiveViews(),
+    });
+    await story.step("close-arrival-archives-by-keyboard", {
+      actor: aliases[0],
+      description:
+        "Both commanders close the archive with Escape and return to the opening Arrival reports control.",
+      action: async () => {
+        for (const p of [owner, peer]) await p.keyboard.press("Escape");
+      },
+      acknowledgement: {
+        spec: "Both archive panels close and focus returns to each player's Arrival reports control.",
+        check: async () => {
+          for (const p of [owner, peer]) {
+            await expect(archive(p)).toHaveCount(0);
+            await expect(
+              inspector(p).getByRole("button", {
+                name: "Arrival reports",
+                exact: true,
+              }),
+            ).toBeFocused();
+          }
+        },
+      },
+      verifications: [
+        {
+          spec: "Keyboard dismissal changes no canonical outcome or receipt.",
+          check: async () => expect(await canonical()).toEqual(settled!),
+        },
+      ],
+      views: views(),
     });
   } finally {
     for (const c of contexts) await c.close();
