@@ -257,3 +257,26 @@ test("identity raster diagnostics exclude galaxy text, retain identity ancestry 
     },
   );
 });
+
+test("nested bounded readers audit visible targets without treating outer-clipped rows as overlays", async () => {
+  await fixture(
+    '<div id="outer" style="height:100px;overflow:auto"><div style="height:140px"></div><div id="inner" style="height:100px;overflow:auto"><button id="row">Nested row</button><div style="height:300px"></div></div></div><button>Commit</button>',
+    async (page) => {
+      // The row is inside the inner reader but below the outer reader's clip.
+      await page.evaluate(assertScreenFit, { surface: "game" as const });
+      await page.locator("#row").scrollIntoViewIfNeeded();
+      await page.evaluate(assertScreenFit, { surface: "game" as const });
+      expect(await page.evaluate(() => scrollY)).toBe(0);
+      // A real overlay covering the now-visible row must still fail.
+      await page.evaluate(() => {
+        const b = document.querySelector("#row")!.getBoundingClientRect();
+        const cover = document.createElement("div");
+        cover.style.cssText = `position:fixed;z-index:10;left:${b.x}px;top:${b.y}px;width:${b.width}px;height:${b.height}px;background:red`;
+        document.body.append(cover);
+      });
+      await expect(
+        page.evaluate(assertScreenFit, { surface: "game" as const }),
+      ).rejects.toThrow("occluded");
+    },
+  );
+});

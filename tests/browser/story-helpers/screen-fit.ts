@@ -72,7 +72,7 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
       failures.push(
         `Target under 44px: ${describe(hit)} (${h.width}×${h.height})`,
       );
-    let scroll: HTMLElement | null = null;
+    const scrolls: HTMLElement[] = [];
     for (
       let parent = target.parentElement;
       parent;
@@ -85,8 +85,7 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
         (/auto|scroll/.test(style.overflowX) &&
           parent.scrollWidth > parent.clientWidth)
       ) {
-        scroll = parent;
-        break;
+        scrolls.push(parent);
       }
     }
     const inViewport =
@@ -94,7 +93,7 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
       b.top >= 0 &&
       b.right <= innerWidth + 0.1 &&
       b.bottom <= innerHeight + 0.1;
-    if (!inViewport && !scroll && surface !== "document")
+    if (!inViewport && !scrolls.length && surface !== "document")
       failures.push(
         `Target outside viewport without a bounded scroller: ${describe(target)}`,
       );
@@ -108,16 +107,18 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
       !(target.contains(top) || hit.contains(top) || top === target)
     ) {
       // An offscreen row may be clipped by its declared bounded reading region.
-      if (scroll) {
-        const r = rect(scroll);
-        if (
-          b.top < r.top ||
-          b.bottom > r.bottom ||
-          b.left < r.left ||
-          b.right > r.right
-        )
-          continue;
-      }
+      if (
+        scrolls.some((scroll) => {
+          const r = rect(scroll);
+          return (
+            b.top < r.top + scroll.clientTop ||
+            b.bottom > r.top + scroll.clientTop + scroll.clientHeight ||
+            b.left < r.left + scroll.clientLeft ||
+            b.right > r.left + scroll.clientLeft + scroll.clientWidth
+          );
+        })
+      )
+        continue;
       // Inactive scenes behind a modal are covered intentionally, not active targets.
       if (
         document.querySelector('dialog[open],[aria-modal="true"]') &&
