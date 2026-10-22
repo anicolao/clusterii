@@ -3657,6 +3657,11 @@ for (const mode of ["mock", "real"] as const)
           context(id, revision, "canonical", epoch),
         );
       };
+      const scanningOrder = await campaignCommand(owner, id, {
+        kind: "research.select", expectedRevision: (await read()).revision,
+        target: "scanning",
+      }, mode);
+      expect(scanningOrder.receipt.status).toBe("accepted");
       expect((await read()).scanningEnabled).toBe(true);
       expect((await read()).observations).toBeNull();
       expect(await settleCampaignTicks(id, () => start + 900000)).toBe(1);
@@ -3736,8 +3741,58 @@ for (const mode of ["mock", "real"] as const)
       expect(await read()).toEqual(view);
       expect(
         (await db.collection(`campaignStates/${id}/versions`).get()).size,
-      ).toBe(8);
-      expect(await settleCampaignTicks(id, () => start + 8 * 900000)).toBe(6);
+      ).toBe(9);
+      // Earn the first Scanning increase through actual funded service ticks.
+      // Fixed development cost40 / science1.4 completes at29, effective for scans at30.
+      expect(await settleCampaignTicks(id, () => start + 28 * 900000)).toBe(26);
+      const beforeCompletion = await canonical();
+      expect(beforeCompletion.economy!.research[owner.uid]).toMatchObject({
+        target: "scanning", levels: { scanning: 1 }, progressMilli: { scanning: 39200 },
+      });
+      const { distance } = await import("../shared/galaxy");
+      const { observationDraw } = await import("../functions/src/observation-random");
+      const { drawRange } = await import("../shared/observations");
+      const boundaryViews: CampaignView[] = [];
+      let prior = beforeCompletion;
+      for (const [tick, frozenLevel, settledLevel, progress] of [[29, 1, 2, 600], [30, 2, 2, 2000]]) {
+        expect(await settleCampaignTicks(id, () => start + tick * 900000)).toBe(1);
+        const current = await canonical(), authorized = await read();
+        expect(current.economy!.research[owner.uid]).toMatchObject({
+          levels: { scanning: settledLevel }, progressMilli: { scanning: progress },
+        });
+        const home = current.galaxy.stars.find(star => star.id === current.seats[0].home)!;
+        let longRange = 0;
+        for (const [index, star] of current.galaxy.stars.entries()) {
+          const range = distance(home, star), owned = star.id === home.id;
+          // Independent boundary oracle: never calls acquireObservations/observationView.
+          const roll = owned ? null : observationDraw(current.seed, id, owner.uid, star.id, tick);
+          expect(current.intelligence!.draws[owner.uid][index]).toBe(roll);
+          const acquired = owned || roll! / drawRange < Math.min(1, 10 * frozenLevel ** 2 / range);
+          const report = authorized.observations![star.id];
+          if (range > 40) longRange++;
+          if (acquired) {
+            expect(report).toMatchObject({ observedTick: tick, fighters: current.systems[star.id].fighters });
+          } else {
+            const retained = prior.intelligence!.reports[owner.uid][star.id];
+            if (!retained) expect(authorized.observations).not.toHaveProperty(star.id);
+            else expect(report).toMatchObject({ observedTick: retained[0], fighters: retained[4] });
+          }
+        }
+        expect(longRange).toBeGreaterThan(0);
+        expect(await settleCampaignTicks(id, () => start + tick * 900000)).toBe(0);
+        expect((await canonical()).intelligence).toEqual(current.intelligence);
+        expect(await read()).toEqual(authorized);
+        boundaryViews.push(authorized);
+        prior = current;
+      }
+      const retainedBoundary = await readCampaignHistory(owner.firestore, owner.functions, id, owner.uid);
+      for (const captured of boundaryViews)
+        expect(retainedBoundary.records.find(record => record.revision === captured.revision)).toEqual(captured);
+      expect(JSON.stringify(retainedBoundary.records)).not.toContain(prior.seed);
+      expect(JSON.stringify(retainedBoundary.records)).not.toContain('"draws"');
+      await expect(readCampaignHistory(players[1].c.firestore, players[1].c.functions, id, owner.uid)).rejects.toThrow();
+      expect(JSON.stringify(await read(players[1].c))).not.toContain(scanningOrder.ingress.key!);
+      expect((await getDoc(doc(owner.firestore, "campaignReceipts", owner.uid, "results", scanningOrder.ingress.key!))).data()).toEqual(scanningOrder.receipt);
       const settled = await read();
       expect(
         (
@@ -3768,7 +3823,7 @@ for (const mode of ["mock", "real"] as const)
           )
         ).receipt.status,
       ).toBe("accepted");
-      expect(await settleCampaignTicks(id, () => start + 10 * 900000)).toBe(0);
+      expect(await settleCampaignTicks(id, () => start + 32 * 900000)).toBe(0);
       if (process.env.CLUSTER_KMS_TEST === "true") {
         const priorIntelligence = (await canonical()).intelligence;
         const history = async (c: typeof owner) => {
