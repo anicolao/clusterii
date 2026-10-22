@@ -1630,3 +1630,10 @@ Explicit Linux generation job119705315798 remains actually in_progress. #75 publ
 Agent healthy at e9fbfc5 on contextual route help; no queued input or intervention. Independently reviewed centering correction: keeps strict containment/focus assertions and uses real scrollIntoView before opening disclosure. Independently viewed current phone020: focused native summary, readable range/speed text, map context and persistent commitment rail contained. This is scoped phone review, not full visual acceptance. Corrected four-size candidate work remains active.
 
 #74 Linux verification newly failed; retained job119731108231 log /tmp/cluster74-0559-verify.log. Tail confirms missing reviewed Linux baselines plus inherited short1994-pixel mismatch,27 short cases pass; no promotion from verification output. Existing explicit #70 generation job119705315798 remains in_progress. #75 preview failure unchanged; no duplicate runs. Carry checkpoint and classify full #74 failure log at natural committed/pushed logging boundary. All unresolved implementation/release, visual/Linux/hosted/raster gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 06:09 Toronto
+
+Agent healthy at b861641 on contextual help: four candidate journeys200 captures reviewed separately; phone/desktop strict comparisons pass, remaining sizes running. Independently reviewed story help steps: native keyboard disclosure, bounded complete arrival paragraph, unchanged authoritative state and preserved unsent route; viewed phone021 with readable arrival uncertainty and orbit/surface distinction above persistent commitment rail. No full visual or raster acceptance inferred. No interruption or duplicate queued prompt.
+
+#77 publish now green; #76 publish newly failed, log retained /tmp/cluster76-0609-preview.log. #74/#75 application verification now green while illustrated/Linux acceptance remains separate. Explicit Linux candidate job119705315798 remains active. Carry checkpoint into committed/pushed attributed logs at natural boundary; inspect failed preview exact-head state without duplicate publish. Original raster failures and full release gates remain open; no merge.
