@@ -8,4 +8,4 @@ All manifests have spec SHA-256 `8b2200676367654b4bd6cda9185999ac29e27a9aca3539a
 
 Real receipts, one revision per transfer, exact private grants, complete canonical no-op on repeat delivery, surface/fleet conservation and reload are asserted. Harness clocks call actual admission and leased tick services; they do not certify hosted cadence or cutoff races. Interrupted cargo, managed keys, normal-motion live parity, travel/arrival, Linux comparison and independent review remain open. Existing procedural assertions remain intact, including mounted acceptance-to-settlement feedback. This story illustrates recovery after acceptance; it does not replace that mounted-feedback regression.
 
-Strict comparison and generated archival follow this separate review.
+Strict comparison passes all four viewports / 128 exact captures in 2.5 minutes (`/tmp/cluster-cargo-exact.log`). Four generated walkthroughs are archived under `docs/testing/stories/live-fleet-cargo/`. This is local macOS/arm64 evidence; Linux and independent acceptance remain pending.
