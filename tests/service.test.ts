@@ -5857,3 +5857,36 @@ test("profile timeout diagnostics inspect real ingress without retrying writes",
   expect(await profileReceiptEvidence(c.uid,id)).toEqual(evidence);
   expect((await getDoc(doc(c.firestore,"profiles",c.uid))).get("revision")).toBe(1);
 });
+
+test("concurrent profile ingress preserves every command identity and single effect", async () => {
+  // Four waves of four ordinary authenticated writers match the failing setup.
+  // No direct reducer delivery, rewritten ingress or retry on missing receipt.
+  for (let wave = 0; wave < 4; wave++) {
+    const results = await Promise.all(Array.from({length: 4}, async (_, seat) => {
+      const c = await client(`profile-wave-${wave}-${seat}-${crypto.randomUUID()}`);
+      await developer(c);
+      const id = crypto.randomUUID();
+      const path = `profileCommands/${c.uid}/${id}`;
+      const body = await provider("mock").seal({
+        kind: "profile.set", expectedRevision: 0,
+        profile: {alias: "Concurrent commander", portrait: "G1"},
+      }, c.kek, commandContext(c.uid, id));
+      const digest = await commandDigest(path, body);
+      console.info("Profile test ingress", JSON.stringify({wave, uid: c.uid, commandId: id, digest}));
+      await set(ref(c.database, path), body);
+      const accepted = await receipt(c, id);
+      expect(accepted.status).toBe("accepted");
+      expect(accepted.revision).toBe(1);
+      expect(accepted.requestDigest).toBe(digest);
+      const evidence = await profileReceiptEvidence(c.uid, id);
+      expect(evidence).toMatchObject({
+        ingress: {exists: true, digest},
+        profile: {revision: "1"},
+        receipt: {status: "accepted", digest},
+      });
+      expect((await getDoc(doc(c.firestore, "profiles", c.uid))).get("revision")).toBe(1);
+      return id;
+    }));
+    expect(new Set(results).size).toBe(4);
+  }
+}, 120000);
