@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { ResearchDraft } from "$lib/research-draft";
   import {
     refreshMarketDraft,
     type MarketAllocationDraft,
@@ -54,6 +55,7 @@
   import Icon from "../Icon.svelte";
   let {
     view,
+    researchDraft = $bindable<ResearchDraft | undefined>(undefined),
     marketDraft = $bindable<MarketAllocationDraft>(
       untrack(
         () =>
@@ -102,6 +104,7 @@
     pending = false,
   }: {
     view: CampaignView;
+    researchDraft?: ResearchDraft;
     marketDraft?: MarketAllocationDraft;
     onvisit?: (revision: number) => void;
     ontrade?: (action: TradeAction) => void;
@@ -1287,6 +1290,7 @@
       onkeydown={panelKeys}
     >
       <CampaignEconomy
+        bind:researchDraft
         bind:marketDraft
         {view}
         {ontrade}

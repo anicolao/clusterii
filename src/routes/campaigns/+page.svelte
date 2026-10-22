@@ -1,5 +1,14 @@
 <script lang="ts">
   import {
+    refreshResearchDraft,
+    scopeResearchDrafts,
+    type ResearchDraftScope,
+  } from "$lib/research-draft";
+  let researchDrafts = $state<ResearchDraftScope>({
+    account: null,
+    campaigns: {},
+  });
+  import {
     refreshMarketDraft,
     scopeMarketDrafts,
     type MarketDraftScope,
@@ -240,11 +249,21 @@
           if (session !== generation || current !== selection) return;
           if (next && account) {
             marketDrafts = scopeMarketDrafts(marketDrafts, account);
+            researchDrafts = scopeResearchDrafts(researchDrafts, account);
             marketDrafts.campaigns[id] = refreshMarketDraft(
               marketDrafts.campaigns[id],
               next.economy?.marketFocus,
             );
-          } else delete marketDrafts.campaigns[id];
+            if (next.economy?.research)
+              researchDrafts.campaigns[id] = refreshResearchDraft(
+                researchDrafts.campaigns[id],
+                next.economy.research,
+              );
+            else delete researchDrafts.campaigns[id];
+          } else {
+            delete marketDrafts.campaigns[id];
+            delete researchDrafts.campaigns[id];
+          }
           view = next;
           if (next?.phase === "active" && account)
             rememberCampaign(account, next.id);
@@ -274,6 +293,7 @@
             reason.code === "functions/permission-denied")
         ) {
           delete marketDrafts.campaigns[id];
+          delete researchDrafts.campaigns[id];
           error =
             "This campaign is no longer available. Return to all campaigns to choose another.";
           remedy = "validation";
@@ -295,6 +315,7 @@
       if (session !== generation) return;
       if (!allowed) {
         marketDrafts = { account: null, campaigns: {} };
+        researchDrafts = { account: null, campaigns: {} };
         access = "restricted";
         return;
       }
@@ -314,6 +335,7 @@
               !ids.includes(selected);
             memberships = ids;
             marketDrafts = scopeMarketDrafts(marketDrafts, account, ids);
+            researchDrafts = scopeResearchDrafts(researchDrafts, account, ids);
             if (lostSelected) {
               // Fence callbacks already decrypting the old private view.
               selection++;
@@ -456,6 +478,7 @@
           remedy = null;
           account = user?.uid ?? null;
           marketDrafts = scopeMarketDrafts(marketDrafts, account);
+          researchDrafts = scopeResearchDrafts(researchDrafts, account);
           access = user ? "loading" : "signed-out";
           if (user) void recover();
         });
@@ -582,6 +605,7 @@
           // select() below still fences and stops the old private-view subscription.
           memberships = memberships.filter((id) => id !== receipt.gameId);
           delete marketDrafts.campaigns[receipt.gameId];
+          delete researchDrafts.campaigns[receipt.gameId];
         }
         if (
           receipt.status === "accepted" &&
@@ -727,6 +751,7 @@
       onforget={forgetRecovery}
     />{:else if view && marketDrafts.campaigns[view.id]}<Galaxy
       bind:marketDraft={marketDrafts.campaigns[view.id].allocation}
+      bind:researchDraft={researchDrafts.campaigns[view.id]}
       {view}
       {commandKind}
       {commandFleetId}

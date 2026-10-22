@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { ResearchDraft } from "$lib/research-draft";
   import {
     refreshMarketDraft,
     type MarketAllocationDraft,
@@ -18,6 +19,7 @@
   import ActionButton from "./ActionButton.svelte";
   let {
     view,
+    researchDraft = $bindable<ResearchDraft | undefined>(undefined),
     marketDraft = $bindable<MarketAllocationDraft>(
       untrack(
         () =>
@@ -44,6 +46,7 @@
     onretry,
   }: {
     view: CampaignView;
+    researchDraft?: ResearchDraft;
     marketDraft?: MarketAllocationDraft;
     records?: CampaignView[];
     exchanging?: boolean;
@@ -237,6 +240,7 @@
         </section>{/if}
       {#if research && onresearch}<CampaignResearch
           {research}
+          bind:draft={researchDraft}
           scanningEnabled={view.scanningEnabled}
           travelEnabled={view.travelEnabled}
           constructionEnabled={view.productionEnabled && view.economy != null}
