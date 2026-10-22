@@ -8,4 +8,4 @@ Provenance: phone/desktop candidates recorded e95192a with the new working-tree 
 
 Real command ingress, encrypted-request digest/receipt binding, one cancellation revision, unchanged garrisons/fleets, private recipient grants, reload and repeated production settlement are asserted. Clock advancement is an explicit test boundary; it does not certify cutoff races or hosted scheduling. Captures use reduced motion. Normal-motion live parity, interrupted cancellation, managed keys, Linux exact comparison and independent review remain open. Existing procedural assertions remain intact.
 
-Strict verification and generated archival follow this separate review.
+Strict verification passes all four viewports / 88 exact captures in 1.9 minutes (`/tmp/cluster-cancellation-exact.log`). Four generated walkthroughs are archived under `docs/testing/stories/live-fleet-cancellation/`; comparison used the separately reviewed candidates above without changing inherited pixels.

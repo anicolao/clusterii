@@ -1,0 +1,399 @@
+{
+  "id": "live-fleet-cancellation",
+  "title": "Review, keep and cancel a fleet order",
+  "inventory": [
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent commanders enter through actual authenticated controls. The owner reviews and keeps an accepted formation, preserves a separate unsubmitted draft, then cancels with one authoritative receipt. Released forces never execute at the cancelled boundary. Owner and independent-player views show private reservations and recovery. Explicit domain clocks are harness controls; this does not certify cutoff-edge timing, managed keys or hosted cadence.",
+  "source": {
+    "commit": "3adb3cbeef1c2accbef75ea7ce2735b0d89f9d33",
+    "dirty": false,
+    "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+    "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-formation",
+      "description": "Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The actual capacity constraint disables formation without a command.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Invalid input does not change canonical state or reserve forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "010-inspect-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "010-inspect-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-complement",
+      "description": "Reduce infantry to the supported eighteen and inspect the ready formation.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "011-choose-complement-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "011-choose-complement-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-formation",
+      "description": "Confirm formation with Enter. The authoritative receipt reserves four fighters and eighteen infantry for tick one, without moving them yet.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "One accepted receipt and revision reserve the original forces without creating a fleet or moving the garrison."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "012-reserve-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "012-reserve-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-formation",
+      "description": "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload adds no revision, order or effect."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "013-reload-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "013-reload-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-cancellation",
+      "description": "Start a separate three-fighter draft, then inspect cancellation of the accepted four-fighter/eighteen-infantry order. The reservation stays intact until confirmed.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Review creates no command and preserves the unrelated three-fighter draft and original reservation."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "014-review-cancellation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "014-review-cancellation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keep-order",
+      "description": "Choose Keep order with Enter. Return to the original draft without cancelling anything.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Keep order adds no revision or cancellation; draft stays three fighters."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "015-keep-order-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "015-keep-order-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "cancel-formation",
+      "description": "Review the same accepted order again and confirm cancellation with Enter. Read the actual service acknowledgement and released reservation.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Exactly one accepted cancellation revision clears the original order and preserves every garrison/fleet; its receipt is bound to the actual encrypted request."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "016-cancel-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "016-cancel-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "released-draft",
+      "description": "Inspect the preserved three-fighter draft and the returned availability after cancellation, without submitting a replacement formation.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Draft inspection cannot create a replacement order or change balances/forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "017-released-draft-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "017-released-draft-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-cancelled",
+      "description": "Reload the exact campaign and inspect its confirmed absence of accepted fleet orders. The unsubmitted draft is not claimed as a persisted command.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Confirmed released reservations recover from persistence.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload does not re-create the cancelled order or append a new revision."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "018-reload-cancelled-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "018-reload-cancelled-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "cancelled-boundary",
+      "description": "Advance to the cancelled formation's real boundary and invoke the production leased tick service, then repeat delivery. Only ordinary production may occur; no formation is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "cancelled-order-never-executes",
+      "description": "Inspect the next confirmed tick: no fleet appears, and both commanders retain their own produced forces.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "No formation outcome or force movement exists; only the real production ledger increases totals and repeated delivery is a complete no-op."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "020-cancelled-order-never-executes-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "020-cancelled-order-never-executes-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-system",
+      "description": "Return to the galaxy with Enter and confirm the system has no fleet marker.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Focus returns to Fleets · 0 and no owned fleet marker exists.",
+      "verifications": [
+        "Navigation preserves settled forces and no application error occurred."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "021-return-to-system-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "021-return-to-system-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
