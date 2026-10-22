@@ -1771,3 +1771,55 @@ Reviewer continuation 2026-10-22 09:09 Toronto: #83 00748d3 attached and publica
 Agent healthy at5ae496e correcting voluntary Leave regression. Independently reviewed58d2179: unconditional private-view fence remains; matching pending Leave retains receipt-driven outcome, and accepted Leave retires local membership/draft before a later snapshot. Independently viewed phone006 encryption-unavailable: successful seat-release message and Claim your seat action, no false access-loss banner. Both phone stories pass original expected images plus accepted-receipt/read-denied assertions; remaining aggregate and scoped revocation results being finalized. No new baseline approval or broad acceptance inferred.
 
 #82 Linux verification failed; retained job119813484417 log /tmp/cluster82-0919-verify.log.59 missing baselines, same12 pixel reports including paired per-size Leave mismatches and inherited4 others. Carry checkpoint into committed/pushed attributed logs at natural boundary. No interruption/duplicate prompt, no merge; independent visual/Linux/hosted and original raster/full-release gates remain open.
+
+
+## Reviewer continuation — 2026-10-22 09:29 Toronto
+
+#84 12f9591 attached on #83, clean pushed;12 local exact journeys140 captures retain original baselines. Independent source/phone review remains scoped, Linux/hosted/full acceptance open. Agent idle with no queued input.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 09:29 Toronto: #84 12f9591 attached, clean idle. Source/phone departure correction independently reviewed;12 local journeys140 exact captures recorded without baseline changes. Continue on a small stacked successor to #84 with remaining live draft lifecycle evidence: same-browser different-account reuse and/or guarded late-view membership revocation from MARKET_DRAFT_LIFECYCLE_PLAN. Prioritize proof that old callbacks cannot restore protected draft state; preserve real service authorization, explicitly label administrative faults, use fail-closed demo-only controls and exact restoration, never invent active Leave gameplay. Keep scope small, validate guarded harness before execution, and retain original sign-out/departure regression protections. Continue broader approved plan after the slice rather than stopping at each PR. Carry checkpoints through09:29 into reviewer-attributed committed/pushed logs. Recheck disk before captures; preserve independent visual/Linux/hosted and original raster gates. No merge.
+
+
+## Reviewer progress — 2026-10-22 09:39 Toronto
+
+Agent healthy implementing guarded membership-fault story on #84 successor. Independently read fault helper: exact demo/loopback/source guards, four-member labelled mock-campaign target, transaction removes only member authorization metadata; restoration refuses concurrent head/membership/directory changes. Digest gate computes original digest then delays only exact envelope input, releases unchanged result and restores native function. Independently ran4 guard tests successfully. These source/guard checks do not certify browser race coverage; execution/visual review remains pending.
+
+#84 publication now green; latest CI still running, disk3.4GiB. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary; administrative fault must remain distinct from approved gameplay. Full release, independent visual/Linux/hosted and original raster holds remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 09:49 Toronto
+
+Agent healthy at185be7a finalizing guarded late-view revocation evidence:16 strict journeys196 captures pass including original departure/sign-out regressions. Independently revieweddd432b0 clearing stale settled message only with no pending command in involuntary-loss branch; pending Leave handling/fence unchanged. Independently viewed phone018: protected draft absent after released delayed view, access-loss remedy present, no stale success banner. Source/guard review from09:39 remains scoped; full Linux/hosted/visual acceptance pending.
+
+#83 Linux verification newly failed, retained job119833646345 log /tmp/cluster83-0949-verify.log for classification at next boundary. Disk3.2GiB, no duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs. Administrative fault is not approved gameplay; original raster/full-release holds remain open. No merge.
+
+
+## Reviewer continuation — 2026-10-22 09:59 Toronto
+
+#85 e8330bc attached on #84, clean pushed and publication green. Independent source/guard/phone review remains scoped; full implementation/release incomplete. Agent idle, no queued input.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 09:59 Toronto: #85 e8330bc attached, clean idle, publication green. Independent guard/source/phone review recorded;16 local journeys196 captures remain scoped. Continue with same-browser different-account market-draft isolation as a small successor on #85 using real saved identities, ordinary sign-out/sign-in, no identity resave, unchanged gameplay/receipt assertions and keyboard/four-size evidence. Distinguish cleared unsent intent from durable accepted-order recovery. Then reconcile remaining IMPLEMENTATION_PLAN production/release gaps and continue approved work instead of stopping after one PR; avoid extending this one story family indefinitely. Recheck disk before each bounded run. Carry checkpoints through09:59 into attributed committed/pushed logs. Full independent visual/Linux/hosted and original raster gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 10:09 Toronto
+
+Agent healthy at15a0a1f reviewing saved-account isolation candidates and running strict coverage. Independently reviewed story: ordinary same-browser sign-out/sign-in, no saved-identity mutation, distinct blank73/blank61 drafts, other device stays authoritative25, complete canonical/private/profile/receipt equality. This path intentionally leaves/unmounts campaign before sign-out, so it proves navigation-plus-account reuse rather than in-place account-switch callback handling; prior remote session and membership fault cover separate mounted-loss paths. No full acceptance inferred.
+
+No new CI failure among latest stack; disk2.7GiB, bounded run active. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release/independent visual/Linux/hosted/original raster holds remain open. No merge.
+
+
+## Reviewer progress and finding — 2026-10-22 10:19 Toronto
+
+#86 46235f9 attached on #85:8 strict journeys128 captures recorded, existing independent account-switch source review remains scoped. Agent healthy on9ac6709 research capability guidance successor; catches incorrect construction-ledger capability assumption, retains failed candidate and corrects against recorded schema. No interruption/duplicate prompt.
+
+NEW actionable #85 application verification failure, distinct from illustrated baseline gaps:job119864955566 retained /tmp/cluster85-1019-app.log. fleet reorganization mock test fails after20.14s with No authoritative receipt from profile receipt helper tests/service.test.ts:85;30 pass21 skip1 fail,1708 assertions. Investigate actual receipt/ingress evidence at next boundary; do not assume raster/infra flake or relax timeout/assertions without diagnosis. Carry checkpoint into attributed committed/pushed logs and prioritize resolving this test failure after current bounded work. Full independent visual/Linux/hosted/original raster/release holds remain open; no merge.
+
+## Reviewer progress — 2026-10-22 10:29 Toronto
+
+Agent healthy at6e676da on research capability guidance, preserving original failures and reviewing completed four-size candidates before strict verification. Independently reviewed native-fieldset scrolling fix and nested-scroll geometry audit; selected radio also explicitly focus/hit-tested before reading its description. Candidate visual review remains scoped, not release acceptance. Agent has read #85 receipt-failure log and narrowed investigation to missing profile ingress execution during identity setup; cause remains unproven. No duplicate prompt/interruption.
+
+#84 Linux story job119848843080 completed; retained /tmp/cluster84-1029-verify.log:63 missing reviewed baselines and four pixel differences1066/259/273/1994. Prior eight paired voluntary-Leave screenshot failures no longer appear, supporting the specific fix without clearing other raster/baseline holds. Application verification and publication passed. Carry checkpoint into attributed committed/pushed logs at natural boundary; continue receipt diagnosis and full implementation/release gaps. No merge.

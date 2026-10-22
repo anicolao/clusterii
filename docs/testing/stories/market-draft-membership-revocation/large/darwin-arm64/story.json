@@ -1,0 +1,319 @@
+{
+  "id": "market-draft-membership-revocation",
+  "title": "Reject an old private view after a guarded membership fault",
+  "inventory": [
+    "UX-06",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four commanders enter a real development campaign. The owner keeps a partial market allocation, then recovers the campaign with a real private-view digest held by a demo-only harness. A separately labelled administrative fault removes only authorization metadata; the original encrypted state, history, resources and receipts remain intact. Releasing the unchanged digest cannot reopen protected UI. Compare-and-set restoration and ordinary recovery must not resurrect the draft. This is not active Leave gameplay or hosted certification.",
+  "source": {
+    "commit": "185be7a87c2117d1d814d37a1d76aae6b84739bc",
+    "dirty": false,
+    "spec": "tests/browser/market-membership-revocation.story.spec.ts",
+    "specSha256": "f9045b8872531a189b8efbeb8fdc870a8a76b507f3befe00825016ac7fe8e90a"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary Google emulator sign-in and identity save; developer entitlement is an explicit admission fixture, not a fabricated seat.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join with ordinary player controls. The existing fixed catalogue and admission-time fixture changes no identity, payload, resource or result.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Set the designated browser/domain clock to12:15 UTC and deliver the real Scheduler HTTP request. Authentication and session-revocation clocks remain real. This is not hosted scheduling certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-owned-focus",
+      "description": "Both commanders inspect their own authoritative allocation through keyboard controls.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Both instruments show the original25-point allocation and disable an unchanged commitment.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "010-inspect-owned-focus-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "edit-partial-allocation",
+      "description": "Blank Market and enter73 camp points. The incomplete allocation remains an unsent draft.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "The exact partial values remain visible and Apply stays disabled.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "011-edit-partial-allocation-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "navigate-with-intent",
+      "description": "Close and reopen the economy under normal motion, then return to reduced motion with the same unsent intent.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Blank/73 survive navigation in both motion modes without a command.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "012-navigate-with-intent-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "012-navigate-with-intent-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "hold-authorized-view",
+      "description": "Install a demo-loopback digest gate for this actual owner's current encrypted view only. Native digest bytes and all callbacks remain unchanged; the real result is delayed, never substituted.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "recover-with-inflight-view",
+      "description": "Return to Campaigns and recover the same campaign using keyboard controls; its authentic private view waits at the labelled harness boundary.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Recovery is visibly pending while an actual authorized digest is held.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "014-recover-with-inflight-view-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "administrative-membership-fault",
+      "description": "Guarded demo-only administrative fault: atomically remove this owner's memberUids entry and membership document. No player Leave, canonical state, private ciphertext, history, command, receipt or resource is fabricated or changed.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "observe-revoked-access",
+      "description": "Observe the acknowledged access-loss remedy after the separately labelled administrative fault.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Real membership loss removes protected UI and player reads are denied, while the other commander stays authorized.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "016-observe-revoked-access-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "016-observe-revoked-access-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "release-original-digest",
+      "description": "Release every held native digest result unchanged and wait for its promise continuation and rendered frame. Existing service/route callback fences, not the harness, decide whether the old view may display.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "reject-late-private-view",
+      "description": "Review the same access-loss state after the old authorized view resumes; no old galaxy or draft may return.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Real membership loss removes protected UI and player reads are denied, while the other commander stays authorized.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "018-reject-late-private-view-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "018-reject-late-private-view-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-exact-authorization",
+      "description": "Compare-and-set restoration restores only this fault's exact membership metadata. Any concurrent campaign or membership change fails closed; no campaign progress or private history is reconstructed.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "recover-restored-membership",
+      "description": "Use All campaigns and the original campaign card to recover through the real authorized service, without reload or identity save.",
+      "actor": "Market envoy",
+      "kind": "player",
+      "acknowledgement": "Authoritative25-point allocations replace the cleared blank/73 draft and Apply stays disabled.",
+      "verifications": [
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Market envoy · campaign device",
+          "image": "020-recover-restored-membership-1-market-envoy-campaign-device.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent investor",
+          "image": "020-recover-restored-membership-2-independent-investor.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
