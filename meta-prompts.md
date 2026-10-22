@@ -1704,3 +1704,19 @@ Reviewer continuation 2026-10-22 07:29 Toronto: #80 326de8b attached, clean idle
 Agent healthy at65b9344, implementing route-instance market drafts scoped by account/campaign. Independently reviewed binding chain through Galaxy/CampaignEconomy/MarketFocus and scope/refresh helpers: preserves undefined/invalid edits, follows authoritative baseline only when unedited, clears on account change, membership loss and unavailable/permission-denied campaign. No browser-storage persistence introduced. Phone/desktop/4K navigation candidates pass; short and full exact review pending. No intervention or duplicate prompt.
 
 #80 publication now green; #79 application verification green. Agent retained/classified #78 missing-baseline and4 pixel failures without claiming identity fix. Carry checkpoint into committed/pushed attributed logs at natural boundary; privacy helper tests are not full end-to-end account/access-loss proof. Independent visual/Linux/hosted, original raster and full implementation/release gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 07:49 Toronto
+
+Agent healthy ata86cd73 finalizing market draft slice. Eight strict journeys320 captures pass before final callback fence; both targeted short journeys pass after it. Independently reviewed lost-selected-membership handler incrementing selection and stopping subscription before clearing view, preventing in-flight old callbacks restoring protected draft/view. Full end-to-end account/access revocation acceptance remains separate from helper tests and targeted navigation verification.
+
+#79 Linux verification failed; retained job119780668933 log /tmp/cluster79-0749-verify.log for next boundary classification. Disk independently down to1.2GiB; agent already limits remaining work to small checks/publication and preserves evidence. Notify user that additional free space is needed for sustained capture work. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs; full release/independent visual/Linux/hosted/original raster holds remain open. No merge.
+
+
+## Reviewer progress — 2026-10-22 07:59 Toronto
+
+#81 4677fdb attached on #80, clean pushed and publication green. Agent idle after holding large runs for disk. Independent current headroom606MiB, worsening from1.2GiB. Existing scoped source reviews apply; full live revocation and independent visual/Linux/hosted/raster acceptance remain open.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 07:59 Toronto: #81 4677fdb attached; exact-head publication now green, source review remains scoped and live account/access-loss acceptance open. Disk is now606MiB free: do not start large capture runs, artifact downloads or destructive cleanup. Continue useful low-output work by auditing existing extracted Linux identity-gallery source compatibility and existing evidence, and preparing the concrete live account/access-loss story plan or small source changes on a successor to #81 if safely possible; do not mark unexecuted checks passed. Preserve all failure/review evidence. Carry checkpoints through07:59 into reviewer-attributed committed/pushed logs where space permits. Report a concrete disk blocker rather than stopping as complete; no merge.

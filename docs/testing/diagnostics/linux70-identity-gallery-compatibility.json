@@ -1,0 +1,251 @@
+{
+  "auditedHead": "4677fdb6d459824af7149a9206bb42661d6fb978",
+  "generationSource": {
+    "commit": "ddd7512cd2169da67a312272b8336a086a034d4a",
+    "dirty": false,
+    "spec": "tests/browser/identity-gallery.story.spec.ts",
+    "specSha256": "c2bfba40911bb5c3def4047566eb5466de8e7cfcbbc6d0270acda341cd8da039"
+  },
+  "originalImagesRehashed": 84,
+  "unchangedRelevantFiles": [
+    {
+      "path": "src/routes/gallery/+page.svelte",
+      "unchanged": true,
+      "sha256": "64716168ea5ded6aec8eb22ac16ad635a35a93c9104026581f1e1ee600a69303"
+    },
+    {
+      "path": "src/routes/+layout.svelte",
+      "unchanged": true,
+      "sha256": "80bb432f788e2cd9eb5297b0c747c02ab1f26c0bf913d6d9172fcdce40f48c5a"
+    },
+    {
+      "path": "src/routes/+layout.ts",
+      "unchanged": true,
+      "sha256": "c99ecc4f19c0da816a224ef18de036f3d7ae1ab03b2692441bc52887d3881513"
+    },
+    {
+      "path": "src/routes/app.css",
+      "unchanged": true,
+      "sha256": "b5b894c9d8756acdb340cc6afd346059275989c8db4bf266b47b96a5977155df"
+    },
+    {
+      "path": "src/lib/presentation.ts",
+      "unchanged": true,
+      "sha256": "d5b279b88615af6797f4802901d2169bafb4897d7325a4aeeb4bb8e037776718"
+    },
+    {
+      "path": "src/lib/motion.ts",
+      "unchanged": true,
+      "sha256": "506fc5a02db62597857358abe5108abdcf791316ef11bd80b651270f428f5592"
+    },
+    {
+      "path": "tests/browser/identity-gallery.story.spec.ts",
+      "unchanged": true,
+      "sha256": "c2bfba40911bb5c3def4047566eb5466de8e7cfcbbc6d0270acda341cd8da039"
+    },
+    {
+      "path": "tests/browser/story-helpers/test-step-helper.ts",
+      "unchanged": true,
+      "sha256": "98227a1c1bfeb93bc498b0081bb5c3d2d253f8521557bbb0cd4c03f7e95099f5"
+    },
+    {
+      "path": "tests/browser/story-helpers/fixtures.ts",
+      "unchanged": true,
+      "sha256": "f174310dc2db11262b5755146b2a794db609edd1c330f219235755037fcac40b"
+    },
+    {
+      "path": "package.json",
+      "unchanged": true,
+      "sha256": "6b02105b6ee22615cb2bda1fcc3595c580eee081df17f07daec707651f823ead"
+    },
+    {
+      "path": "bun.lock",
+      "unchanged": true,
+      "sha256": "a97fb9a33d206f07e99c99c8599d8d4390fff1289fbde9fd0ccd4e93404ae5a0"
+    },
+    {
+      "path": "src/lib/components/ChapterNav.svelte",
+      "unchanged": true,
+      "sha256": "9f975c603fc2ce1d6af94c44ea6eec6cc346ec36069b1c6d3b32486885b79423"
+    },
+    {
+      "path": "src/lib/components/ActionButton.svelte",
+      "unchanged": true,
+      "sha256": "2eec640f110e8a9e1fe6e95699a5bbf0aef45fa8c0ca938a6699aa3e0a1226e1"
+    },
+    {
+      "path": "src/lib/components/EntryButton.svelte",
+      "unchanged": true,
+      "sha256": "db1cc33ca2b48abd4009c678fc5074c03eec787be1b8612f934800b39d42e708"
+    },
+    {
+      "path": "src/lib/components/PortraitPicker.svelte",
+      "unchanged": true,
+      "sha256": "c749cad7f0c9f1202ab9d6632690f3b5b445bc800d8e8ea40a8ad631ee65f3e7"
+    },
+    {
+      "path": "src/lib/components/NameField.svelte",
+      "unchanged": true,
+      "sha256": "81761d8a65b2bf19df7a3bbc6f4981584fb2c165cc0ca1db09fb904db28507cc"
+    },
+    {
+      "path": "src/lib/components/Feedback.svelte",
+      "unchanged": true,
+      "sha256": "212118e650b0f621ac128755beb280668e01a1f69331c6b18d29c119d8df5683"
+    },
+    {
+      "path": "src/lib/components/Icon.svelte",
+      "unchanged": true,
+      "sha256": "1d38d2f643747debb1c46963278185384127a1d417859d6f81b8b95e8be3ab37"
+    }
+  ],
+  "manifests": [
+    {
+      "project": "large",
+      "steps": 18,
+      "views": 21,
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "project": "short",
+      "steps": 18,
+      "views": 21,
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "project": "desktop",
+      "steps": 18,
+      "views": 21,
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "project": "phone",
+      "steps": 18,
+      "views": 21,
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    }
+  ],
+  "changedOtherDependencies": [
+    "src/lib/components/CampaignEconomy.svelte",
+    "src/lib/components/ConstructionRules.svelte",
+    "src/lib/components/Conversations.svelte",
+    "src/lib/components/FleetRoute.svelte",
+    "src/lib/components/MarketFocus.svelte",
+    "src/lib/components/MarketRules.svelte",
+    "src/lib/components/RouteRules.svelte",
+    "src/lib/components/SystemConstruction.svelte",
+    "src/lib/components/galaxy/Galaxy.svelte",
+    "src/lib/market-draft.ts",
+    "src/routes/campaigns/+page.svelte",
+    "tests/browser/story-helpers/emulator-construction-clock-loader.mjs"
+  ],
+  "approval": "No new promotion needed: all extracted PNGs and renderer manifests equal existing reviewed baselines. No new strict run or independent acceptance claimed.",
+  "existingRendererMatches": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "existingBaselineByteMatches": 84,
+  "existingBaselineCommit": "e2d5cce67a7f9cf87ce591e6d74215ed0e5f96aa"
+}

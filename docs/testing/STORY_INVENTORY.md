@@ -347,3 +347,9 @@ UX-06/15 now includes four rule sections, invalid-total prevention, unsent alloc
 ## Unsent market allocation navigation
 
 UX-06/14 preserves incomplete and invalid allocation intent through keyboard closing/reopening of the economy instrument. Four-size TestStepHelper steps show blank market/100 camp points restored without a command, canonical revision, balance or private-view change; normal/reduced motion retain identical intent. Existing real focus acknowledgement, accepted-order reload, settlement, construction conservation and interrupted recovery remain. Eight local strict journeys320 captures pass; final subscription fencing has two further strict short regressions. [Scope/evidence](../design/MARKET_DRAFT_NAVIGATION_REVIEW.md), [separate candidate review](MARKET_DRAFT_BASELINE_REVIEW.md). Account/access isolation has helper/source coverage, not yet a live same-browser revocation story. Unsent memory is cleared on reload/leaving the route; no durable storage or new discard action is claimed. Linux/independent/hosted and original raster gates remain open.
+
+## Bounded lifecycle plan and Linux gallery reconciliation
+
+[Market draft lifecycle plan](MARKET_DRAFT_LIFECYCLE_PLAN.md) defines live remote-session revocation, same-browser account isolation and a separately labelled membership-fault boundary. It is **unimplemented/unexecuted**; #81's helper/navigation evidence does not close this gap. Local capture work is blocked by564MiB free versus approximately996MiB used by the prior candidate-plus-strict pair.
+
+The extracted #70 identity-component-gallery family is not a missing-baseline family: all84 PNGs and four renderer manifests match existing committed expectations frome2d5cce. [Reconciliation](LINUX70_IDENTITY_GALLERY_CANDIDATES.md) records current source compatibility and historical Linux verification provenance. No new promotion or run occurred, and no unrelated raster/independent/hosted gate is closed.
