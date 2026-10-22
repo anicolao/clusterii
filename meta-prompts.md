@@ -1794,3 +1794,12 @@ Agent healthy implementing guarded membership-fault story on #84 successor. Inde
 Agent healthy at185be7a finalizing guarded late-view revocation evidence:16 strict journeys196 captures pass including original departure/sign-out regressions. Independently revieweddd432b0 clearing stale settled message only with no pending command in involuntary-loss branch; pending Leave handling/fence unchanged. Independently viewed phone018: protected draft absent after released delayed view, access-loss remedy present, no stale success banner. Source/guard review from09:39 remains scoped; full Linux/hosted/visual acceptance pending.
 
 #83 Linux verification newly failed, retained job119833646345 log /tmp/cluster83-0949-verify.log for classification at next boundary. Disk3.2GiB, no duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs. Administrative fault is not approved gameplay; original raster/full-release holds remain open. No merge.
+
+
+## Reviewer continuation — 2026-10-22 09:59 Toronto
+
+#85 e8330bc attached on #84, clean pushed and publication green. Independent source/guard/phone review remains scoped; full implementation/release incomplete. Agent idle, no queued input.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 09:59 Toronto: #85 e8330bc attached, clean idle, publication green. Independent guard/source/phone review recorded;16 local journeys196 captures remain scoped. Continue with same-browser different-account market-draft isolation as a small successor on #85 using real saved identities, ordinary sign-out/sign-in, no identity resave, unchanged gameplay/receipt assertions and keyboard/four-size evidence. Distinguish cleared unsent intent from durable accepted-order recovery. Then reconcile remaining IMPLEMENTATION_PLAN production/release gaps and continue approved work instead of stopping after one PR; avoid extending this one story family indefinitely. Recheck disk before each bounded run. Carry checkpoints through09:59 into attributed committed/pushed logs. Full independent visual/Linux/hosted and original raster gates remain open; no merge.
