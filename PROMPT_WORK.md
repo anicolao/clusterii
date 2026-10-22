@@ -528,3 +528,5 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | A
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Attach PR86 dependency and preview gates before continuing capability-aware research guidance
 
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Correct stale research guidance from stored campaign capabilities and add a live eight-track reading story
+
+Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Fix construction guidance capability after retained new-campaign ledger-null failure

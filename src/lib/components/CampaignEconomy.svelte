@@ -239,7 +239,7 @@
           {research}
           scanningEnabled={view.scanningEnabled}
           travelEnabled={view.travelEnabled}
-          constructionEnabled={view.construction != null}
+          constructionEnabled={view.productionEnabled && view.economy != null}
           paused={view.pausedAt != null}
           {busy}
           {pending}

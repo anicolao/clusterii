@@ -270,7 +270,10 @@ test("Live research guidance follows the campaign capabilities without submittin
     };
     expect(beforeOwner.scanningEnabled).toBe(true);
     expect(beforeOwner.travelEnabled).toBe(true);
-    expect(beforeOwner.construction).not.toBeNull();
+    expect(beforeOwner.productionEnabled).toBe(true);
+    expect(beforeOwner.economy).not.toBeNull();
+    // A campaign can construct before its first order creates a ledger.
+    expect(beforeOwner.construction).toBeNull();
     await story.step("open-authoritative-science", {
       actor: aliases[0],
       description:
