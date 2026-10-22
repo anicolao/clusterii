@@ -708,6 +708,246 @@ test("Selected history reaches only a consenting commander and survives reload",
       ],
       views: [view(1)],
     });
+
+    const startingDraft = "A private reply retained across reload.";
+    const savedDraft = "First tab proposes a private rendezvous.";
+    const conflictingDraft = "Second tab preserves a different rendezvous.";
+    const draftBase = await canonical();
+    const roomId = Object.keys(draftBase.diplomacy.rooms)[0];
+    const composer = (p: Page) =>
+      panel(p).getByLabel("Message", { exact: true });
+    const draftStatus = (p: Page) =>
+      panel(p).getByRole("status", { name: "Browser draft status" });
+    const draftsPrivate = {
+      spec: "Unsent drafts never change canonical state or appear in other recipients' projections.",
+      check: async () => {
+        expect(await canonical()).toEqual(draftBase);
+        for (const seat of [1, 2])
+          for (const text of [startingDraft, savedDraft, conflictingDraft])
+            expect(JSON.stringify(await published(seat))).not.toContain(text);
+      },
+    };
+    await story.step("save-private-browser-draft", {
+      actor: aliases[0],
+      description:
+        "Write a private reply and wait for this browser's durable draft acknowledgement without sending it.",
+      action: async () => {
+        await composer(owner).fill(startingDraft);
+      },
+      acknowledgement: {
+        spec: "Browser storage acknowledges the saved draft.",
+        check: async () =>
+          expect(draftStatus(owner)).toHaveText("Draft saved on this browser."),
+      },
+      verifications: [noErrors, draftsPrivate],
+      views: [view(0)],
+    });
+    let second: Page;
+    await story.step("recover-draft-in-two-tabs", {
+      actor: aliases[0],
+      description:
+        "Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser.",
+      action: async () => {
+        await owner.reload();
+        await open(owner);
+        await chooseRoom(owner);
+        second = await contexts[0].newPage();
+        second.on("pageerror", (e) => errors.push(e.message));
+        await second.clock.setFixedTime(scheduledAt);
+        await second.goto(url);
+        await open(second);
+        await chooseRoom(second);
+      },
+      acknowledgement: {
+        spec: "Both composers recover the exact saved text.",
+        check: async () => {
+          await expect(composer(owner)).toHaveValue(startingDraft);
+          await expect(composer(second!)).toHaveValue(startingDraft);
+        },
+      },
+      verifications: [noErrors, draftsPrivate],
+      views: [
+        view(0),
+        {
+          page: () => second!,
+          player: `${aliases[0]} · second tab`,
+          surface: "game",
+        },
+      ],
+    });
+    await story.step("preserve-conflicting-draft", {
+      actor: aliases[0],
+      description:
+        "Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved.",
+      action: async () => {
+        await composer(owner).fill(savedDraft);
+        await expect(draftStatus(owner)).toHaveText(
+          "Draft saved on this browser.",
+        );
+        await composer(second!).fill(conflictingDraft);
+      },
+      acknowledgement: {
+        spec: "The second tab explains the competing saved draft without discarding its local text.",
+        check: async () => {
+          await expect(panel(second!).getByRole("alert")).toContainText(
+            "another tab",
+          );
+          await expect(composer(second!)).toHaveValue(conflictingDraft);
+          await expect(button(second!, "Send message")).toBeDisabled();
+        },
+      },
+      verifications: [
+        noErrors,
+        draftsPrivate,
+        {
+          spec: "Conflict remedies and composer remain in the visible fixed footer.",
+          check: async () => {
+            await expect(panel(second!).locator("footer")).toBeInViewport({
+              ratio: 1,
+            });
+            await expect(button(second!, "Use saved draft")).toBeInViewport({
+              ratio: 1,
+            });
+            await expect(
+              button(second!, "Replace saved draft with my text"),
+            ).toBeInViewport({ ratio: 1 });
+          },
+        },
+      ],
+      views: [
+        view(0),
+        {
+          page: () => second!,
+          player: `${aliases[0]} · second tab`,
+          surface: "game",
+        },
+      ],
+    });
+    await story.step("choose-saved-draft", {
+      actor: aliases[0],
+      description:
+        "Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict.",
+      action: async () => {
+        await button(second!, "Use saved draft").focus();
+        await second!.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The chosen saved reply replaces local text and clears the conflict.",
+        check: async () => {
+          await expect(composer(second!)).toHaveValue(savedDraft);
+          await expect(panel(second!).getByRole("alert")).toHaveCount(0);
+          await expect(button(second!, "Send message")).toBeEnabled();
+        },
+      },
+      verifications: [noErrors, draftsPrivate],
+      views: [
+        {
+          page: () => second!,
+          player: `${aliases[0]} · second tab`,
+          surface: "game",
+        },
+      ],
+    });
+    await story.step("send-recovered-draft-once", {
+      actor: aliases[0],
+      description:
+        "Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing.",
+      action: async () => {
+        await button(second!, "Send message").focus();
+        await second!.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "Message sent acknowledges the recovered reply and clears its composer.",
+        check: async () => {
+          await expect(
+            panel(second!)
+              .getByRole("group", { name: "Conversation acknowledgement" })
+              .getByRole("status"),
+          ).toHaveText("Message sent.");
+          await expect(composer(second!)).toHaveValue("");
+        },
+      },
+      verifications: [
+        noErrors,
+        {
+          spec: "Exactly one message sequence and campaign revision are committed, without the discarded text or unauthorized recipients.",
+          check: async () => {
+            const state = await canonical();
+            expect(state.revision).toBe(draftBase.revision + 1);
+            expect(state.diplomacy.rooms[roomId].sequence).toBe(
+              draftBase.diplomacy.rooms[roomId].sequence + 1,
+            );
+            expect(state.diplomacy.rooms[roomId].message.body).toBe(savedDraft);
+            for (const seat of [1, 2])
+              expect(JSON.stringify(await published(seat))).not.toContain(
+                savedDraft,
+              );
+            await readConversation(
+              second!,
+              panel(second!)
+                .getByRole("listitem")
+                .filter({ hasText: savedDraft }),
+            );
+          },
+        },
+      ],
+      views: [
+        {
+          page: () => second!,
+          player: `${aliases[0]} · second tab`,
+          surface: "game",
+        },
+        view(2),
+      ],
+    });
+    await story.step("recover-cleared-draft", {
+      actor: aliases[0],
+      description:
+        "Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send.",
+      action: async () => {
+        await second!.reload();
+        await open(second!);
+        await chooseRoom(second!);
+      },
+      acknowledgement: {
+        spec: "Reload restores the sent message with an empty composer.",
+        check: async () => {
+          await expect(composer(second!)).toHaveValue("");
+          await expect(
+            panel(second!).getByRole("list", { name: "Authorized messages" }),
+          ).toContainText(savedDraft);
+        },
+      },
+      verifications: [
+        noErrors,
+        {
+          spec: "Recovery and motion preferences preserve one committed effect and privacy.",
+          check: async () => {
+            expect((await canonical()).revision).toBe(draftBase.revision + 1);
+            await second!.emulateMedia({ reducedMotion: "no-preference" });
+            await expect(composer(second!)).toHaveValue("");
+            await second!.emulateMedia({ reducedMotion: "reduce" });
+            for (const seat of [1, 2])
+              expect(JSON.stringify(await published(seat))).not.toContain(
+                savedDraft,
+              );
+            await readConversation(
+              second!,
+              panel(second!)
+                .getByRole("listitem")
+                .filter({ hasText: savedDraft }),
+            );
+          },
+        },
+      ],
+      views: [
+        {
+          page: () => second!,
+          player: `${aliases[0]} · second tab`,
+          surface: "game",
+        },
+      ],
+    });
   } finally {
     for (const ctx of contexts) await ctx.close();
   }

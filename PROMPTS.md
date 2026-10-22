@@ -575,3 +575,9 @@ Reviewer continuation 2026-10-22 03:39 Toronto: disk independently recovered to1
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:49 Toronto”.
 
 Reviewer continuation 2026-10-22 03:49 Toronto: clean417bb62, idle, disk13GiB. Preserve #70 draft and unresolved original failure; two negative reproductions do not close it. Continue independent IMPLEMENTATION_PLAN work as a small successor instead of stopping on intermittent raster. Also close missing Linux evidence deliberately: inspect current-head generation status/label and arrange one explicit candidate-generation run using the existing baseline-candidates workflow gate, avoiding duplicate queued runs; document exact source and review generated artifacts separately before any promotion. Current #67 verify log /tmp/cluster67-0349-failure.log is available for scoped triage. Carry main checkpoint into attributed committed/pushed logs. Never relax pixels or merge; retain full visual/hosted gates.
+
+## Prompt 70: Next player journey
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:09 Toronto”.
+
+Reviewer continuation 2026-10-22 04:09 Toronto: #71 b590be6 attached, clean idle and queue empty. Continue the next concrete IMPLEMENTATION_PLAN gap as a small stacked successor based on #71; keep actual player interaction/actions/persistence/authorization and user-story TestStepHelper evidence. Select from the recorded remaining plan gaps without treating proposed rules as approvals; do not stop merely because Linux generation is queued. Preserve #70 draft unresolved raster and all independent visual/hosted gates. Follow the single explicit #70 candidate run when it produces evidence, no duplicate generation. Carry checkpoints through04:09 into attributed committed/pushed logs; no merge.

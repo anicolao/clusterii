@@ -1538,3 +1538,12 @@ Reviewer continuation 2026-10-22 03:49 Toronto: clean417bb62, idle, disk13GiB. P
 Agent healthy at48ab938 extending selected-history story through actual participant removal, later-message exclusion and retained campaign-history recovery. Independently reviewed recovery correction: reads granted history via Campaign history, checks secret/later message absence and exact command revision, full article/footer containment and keyboard focus. Agent already correcting visible removal confirmation/new-message reading gaps before promotion; no duplicate intervention.
 
 #70 now has baseline-candidates label; explicit generation job119705315798 queued with old queued run cancelled, no candidate acceptance yet. Current draft source417bb62 retained; source/provenance and independent review required when generation actually executes. No new PR or completed actionable CI result. Carry checkpoint into committed/pushed attributed logs at natural boundary. Full release, original seven-pixel and identity raster, Linux and visual/hosted gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 04:09 Toronto
+
+#71 b590be6 attached on #70. Four exact local journeys100 captures recorded; separately reviewed40 new frames and one inherited phone offscreen-label propagation. Prior source review preserves revoked-access and retained-grant boundaries. Linux candidate run still queued; #69 application now green. Agent idle; continue plan while preserving unresolved acceptance.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 04:09 Toronto: #71 b590be6 attached, clean idle and queue empty. Continue the next concrete IMPLEMENTATION_PLAN gap as a small stacked successor based on #71; keep actual player interaction/actions/persistence/authorization and user-story TestStepHelper evidence. Select from the recorded remaining plan gaps without treating proposed rules as approvals; do not stop merely because Linux generation is queued. Preserve #70 draft unresolved raster and all independent visual/hosted gates. Follow the single explicit #70 candidate run when it produces evidence, no duplicate generation. Carry checkpoints through04:09 into attributed committed/pushed logs; no merge.
