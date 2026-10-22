@@ -346,3 +346,5 @@ Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | R
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Archive twelve exact journeys and retained travel regressions; carry supervisory logs and distinct CI resource evidence.
 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Bound CI emulator lifetime by viewport while preserving failed artifacts, exact assertions and interruption ownership.
+
+Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Separate traced history setup into named acknowledged controls with unchanged per-control and total test deadlines.

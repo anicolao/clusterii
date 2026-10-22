@@ -311,11 +311,30 @@ export class TestStepHelper {
       { timeout: STEP_BUDGET },
     );
   }
-  async harness(id: string, description: string, run: () => Promise<unknown>) {
+  async harness(
+    id: string,
+    description: string,
+    run:
+      | (() => Promise<unknown>)
+      | readonly { description: string; run: () => Promise<unknown> }[],
+  ) {
     this.claim(id);
-    await test.step(`Harness control: ${description}`, run, {
-      timeout: STEP_BUDGET,
-    });
+    const controls = typeof run === "function" ? [{ description, run }] : run;
+    if (
+      !controls.length ||
+      controls.some((control) => !control.description.trim()) ||
+      new Set(controls.map((control) => control.description)).size !==
+        controls.length
+    )
+      throw new Error(
+        "Harness controls require distinct nonempty descriptions",
+      );
+    // Each independent setup operation has the existing bounded step budget.
+    // The enclosing test deadline remains unchanged; no unbounded retry group.
+    for (const control of controls)
+      await test.step(`Harness control: ${control.description}`, control.run, {
+        timeout: STEP_BUDGET,
+      });
     this.story.entries.push({
       id,
       description,
@@ -323,7 +342,10 @@ export class TestStepHelper {
       kind: "harness",
       acknowledgement:
         "Explicit test control; not a player action or hosted-service certification.",
-      verifications: [],
+      verifications:
+        typeof run === "function"
+          ? []
+          : controls.map((control) => control.description),
       views: [],
     });
   }

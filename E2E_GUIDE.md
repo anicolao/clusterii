@@ -103,7 +103,7 @@ Only one local emulator cohort may own the configured ports. The story runner st
 
 ## Readiness, geometry and motion
 
-Wait on named conditions, never fixed sleeps or `networkidle`. Pending/offline stories declare the expected pending/offline outcome; do not always wait for acceptance and skip the recovery experience. Every wait is bounded. Cluster's helper uses a bounded capture budget and explicit action/acknowledgement budgets; Pantheon's project-specific two-second rule is not silently imported.
+Wait on named conditions, never fixed sleeps or `networkidle`. Pending/offline stories declare the expected pending/offline outcome; do not always wait for acceptance and skip the recovery experience. Every wait is bounded. A setup sequence can pass an array of distinct `{ description, run }` controls to `story.harness`; each operation retains the existing 30-second step budget and the enclosing test retains its total deadline. The generated harness entry lists every completed control. Use this for independently acknowledged setup operations, not to subdivide a slow assertion or bypass its timeout. The grouped narrative keeps existing capture ordinals stable without changing expected pixels. Cluster's helper uses a bounded capture budget and explicit action/acknowledgement budgets; Pantheon's project-specific two-second rule is not silently imported.
 
 The helper requires two consecutive actual frames with identical decoded pixels within six captures and the existing capture deadline. This settling step has no expected-image input: stable incorrect pixels still fail exact baseline comparison, and oscillating pixels fail readiness. It never searches for a frame that matches the baseline.
 

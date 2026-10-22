@@ -8,10 +8,10 @@
   ],
   "description": "History envoy returns to a waiting development campaign, reads beyond the first page, receives another device’s changes without forced scrolling, explicitly recovers latest records, and restores the same selected system. Setup uses real UI and services with a test-only fixed catalogue input; keys, commands and persistence remain real.",
   "source": {
-    "commit": "7594cc27ad168a6f5c5f404b3c09a109a02a78b4",
+    "commit": "a26324cb00e770fd4503c76c8db39ae6005dc9d4",
     "dirty": true,
     "spec": "tests/browser/history.story.spec.ts",
-    "specSha256": "72c82b04db5cb6bbcfb8487444f6fd1d5502094a9a6b8ac27b14486140d8c9eb"
+    "specSha256": "ec5d81d686148906ff984266f2d638ec48ccde4987479349c03c456a49bc5cae"
   },
   "mode": "verify",
   "status": "passed",
@@ -50,7 +50,23 @@
       "actor": "Test harness",
       "kind": "harness",
       "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
-      "verifications": [],
+      "verifications": [
+        "Authenticate History envoy and acknowledge the saved identity.",
+        "Create the fixed-catalogue campaign, acknowledge the claimed seat and open host controls.",
+        "Acknowledge history setup command 1: pause the waiting campaign.",
+        "Acknowledge history setup command 2: resume the waiting campaign.",
+        "Acknowledge history setup command 3: pause the waiting campaign.",
+        "Acknowledge history setup command 4: resume the waiting campaign.",
+        "Acknowledge history setup command 5: pause the waiting campaign.",
+        "Acknowledge history setup command 6: resume the waiting campaign.",
+        "Acknowledge history setup command 7: pause the waiting campaign.",
+        "Acknowledge history setup command 8: resume the waiting campaign.",
+        "Acknowledge history setup command 9: pause the waiting campaign.",
+        "Acknowledge history setup command 10: resume the waiting campaign.",
+        "Acknowledge history setup command 11: pause the waiting campaign.",
+        "Acknowledge history setup command 12: resume the waiting campaign.",
+        "Close host controls and return to the selected system."
+      ],
       "views": []
     },
     {

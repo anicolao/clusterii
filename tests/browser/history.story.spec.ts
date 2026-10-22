@@ -17,55 +17,83 @@ test("Recover saved campaign records without losing your place", async ({
   await story.harness(
     "prepare-history",
     "Prepare a fixed-catalogue waiting campaign through ordinary sign-in/create/join UI, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling.",
-    async () => {
-      await login(page, email);
-      await page.getByLabel("Commander name").fill("History envoy");
-      await page
-        .getByRole("button", { name: "Save identity", exact: true })
-        .click();
-      await expect(page.getByRole("status")).toContainText("Identity saved");
-      await grantDeveloper(email);
-      await page.getByRole("button", { name: "Close", exact: true }).click();
-      await page.getByRole("link", { name: "Open campaigns" }).click();
-      await page
-        .getByRole("button", { name: "Create campaign", exact: true })
-        .click();
-      await page
-        .getByLabel("Campaign name")
-        .fill(`History ${info.project.name}`);
-      await page
-        .getByRole("button", { name: "Create galaxy", exact: true })
-        .click();
-      await page
-        .getByRole("button", { name: "Claim your seat", exact: true })
-        .click();
-      await expect(
-        page.getByText("Your seat is confirmed.", { exact: true }),
-      ).toBeVisible();
-      await page.getByRole("button", { name: "Roster", exact: true }).click();
-      await page.getByText("Development controls", { exact: true }).click();
-      for (let i = 0; i < 12; i++) {
+    [
+      {
+        description:
+          "Authenticate History envoy and acknowledge the saved identity.",
+        run: async () => {
+          await login(page, email);
+          await page.getByLabel("Commander name").fill("History envoy");
+          await page
+            .getByRole("button", { name: "Save identity", exact: true })
+            .click();
+          await expect(page.getByRole("status")).toContainText(
+            "Identity saved",
+          );
+        },
+      },
+      {
+        description:
+          "Create the fixed-catalogue campaign, acknowledge the claimed seat and open host controls.",
+        run: async () => {
+          await grantDeveloper(email);
+          await page
+            .getByRole("button", { name: "Close", exact: true })
+            .click();
+          await page.getByRole("link", { name: "Open campaigns" }).click();
+          await page
+            .getByRole("button", { name: "Create campaign", exact: true })
+            .click();
+          await page
+            .getByLabel("Campaign name")
+            .fill(`History ${info.project.name}`);
+          await page
+            .getByRole("button", { name: "Create galaxy", exact: true })
+            .click();
+          await page
+            .getByRole("button", { name: "Claim your seat", exact: true })
+            .click();
+          await expect(
+            page.getByText("Your seat is confirmed.", { exact: true }),
+          ).toBeVisible();
+          await page
+            .getByRole("button", { name: "Roster", exact: true })
+            .click();
+          await page.getByText("Development controls", { exact: true }).click();
+        },
+      },
+      ...Array.from({ length: 12 }, (_, i) => {
         const pause = i % 2 === 0;
-        await page
-          .getByRole("button", {
-            name: pause ? "Pause campaign" : "Resume campaign",
-            exact: true,
-          })
-          .click();
-        await expect(
-          page.getByRole("status").filter({
-            hasText: pause ? /^Campaign paused\./ : /^Campaign resumed\./,
-          }),
-        ).toHaveText(
-          pause
-            ? "Campaign paused. Admissions and scheduled start are stopped."
-            : "Campaign resumed.",
-        );
-      }
-      await page
-        .getByRole("button", { name: "Close roster", exact: true })
-        .click();
-    },
+        return {
+          description: `Acknowledge history setup command ${i + 1}: ${pause ? "pause" : "resume"} the waiting campaign.`,
+          run: async () => {
+            await page
+              .getByRole("button", {
+                name: pause ? "Pause campaign" : "Resume campaign",
+                exact: true,
+              })
+              .click();
+            await expect(
+              page.getByRole("status").filter({
+                hasText: pause ? /^Campaign paused\./ : /^Campaign resumed\./,
+              }),
+            ).toHaveText(
+              pause
+                ? "Campaign paused. Admissions and scheduled start are stopped."
+                : "Campaign resumed.",
+            );
+          },
+        };
+      }),
+      {
+        description: "Close host controls and return to the selected system.",
+        run: async () => {
+          await page
+            .getByRole("button", { name: "Close roster", exact: true })
+            .click();
+        },
+      },
+    ],
   );
   const url = page.url(),
     selected = await page

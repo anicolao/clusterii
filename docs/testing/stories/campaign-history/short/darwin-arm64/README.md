@@ -10,6 +10,22 @@ Actor: **Test harness**. **Harness control; not a player action.**
 
 Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
 
+- [x] Authenticate History envoy and acknowledge the saved identity.
+- [x] Create the fixed-catalogue campaign, acknowledge the claimed seat and open host controls.
+- [x] Acknowledge history setup command 1: pause the waiting campaign.
+- [x] Acknowledge history setup command 2: resume the waiting campaign.
+- [x] Acknowledge history setup command 3: pause the waiting campaign.
+- [x] Acknowledge history setup command 4: resume the waiting campaign.
+- [x] Acknowledge history setup command 5: pause the waiting campaign.
+- [x] Acknowledge history setup command 6: resume the waiting campaign.
+- [x] Acknowledge history setup command 7: pause the waiting campaign.
+- [x] Acknowledge history setup command 8: resume the waiting campaign.
+- [x] Acknowledge history setup command 9: pause the waiting campaign.
+- [x] Acknowledge history setup command 10: resume the waiting campaign.
+- [x] Acknowledge history setup command 11: pause the waiting campaign.
+- [x] Acknowledge history setup command 12: resume the waiting campaign.
+- [x] Close host controls and return to the selected system.
+
 ## 2. Open ten saved records with the return control visible.
 
 Actor: **History envoy**.
