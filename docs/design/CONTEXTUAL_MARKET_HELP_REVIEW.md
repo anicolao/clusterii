@@ -1,0 +1,7 @@
+# Contextual market focus help
+
+Successor to #79. The actual shared MarketFocus component gains a bounded rule chapter explaining whole-point allocation, accepted application timing, beginning-of-tick focus, proportional dividend weights and split-control escrow. Values use the existing versioned rules. This changes no reducer or rule approval; dividend parameters remain under review.
+
+The ordinary construction story now also opens this real instrument, reads each rule section, closes with keyboard/motion parity, rejects an invalid total, reviews an unsent valid draft, submits through authenticated ingress, checks the accepted receipt/private order, reloads that exact order and observes its applied outcome through the existing leased five-tick settlement. Existing construction reservation/cancellation/conservation/recovery checks remain, including the interrupted scenario. Own-market exclusion remains asserted; a full competing-recipient weight matrix and interrupted focus submission remain separate gaps.
+
+Acceptance pending: clean-source generation, candidate review, exact comparison, shared gallery/lab regression and independent/Linux/hosted checks. Original identity/stellar-core raster holds remain unresolved. No Linux images promoted from the separately audited #70 generation. This is a contextual chapter and scheduled allocation journey, not complete UX-06/15 or the settings/menu contract.
