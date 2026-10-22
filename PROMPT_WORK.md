@@ -352,3 +352,5 @@ Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | S
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Extend live illustrated intelligence coverage with explicit deterministic entropy boundaries and unchanged service authorization.
 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Reject clipped-warning candidates and require full paragraph containment beneath pinned report age before visual review.
+
+Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Review all stellar observation candidates and promote only the new macOS family before strict comparison.
