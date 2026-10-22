@@ -1803,3 +1803,10 @@ Agent healthy at185be7a finalizing guarded late-view revocation evidence:16 stri
 Exact handoff:
 
 Reviewer continuation 2026-10-22 09:59 Toronto: #85 e8330bc attached, clean idle, publication green. Independent guard/source/phone review recorded;16 local journeys196 captures remain scoped. Continue with same-browser different-account market-draft isolation as a small successor on #85 using real saved identities, ordinary sign-out/sign-in, no identity resave, unchanged gameplay/receipt assertions and keyboard/four-size evidence. Distinguish cleared unsent intent from durable accepted-order recovery. Then reconcile remaining IMPLEMENTATION_PLAN production/release gaps and continue approved work instead of stopping after one PR; avoid extending this one story family indefinitely. Recheck disk before each bounded run. Carry checkpoints through09:59 into attributed committed/pushed logs. Full independent visual/Linux/hosted and original raster gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 10:09 Toronto
+
+Agent healthy at15a0a1f reviewing saved-account isolation candidates and running strict coverage. Independently reviewed story: ordinary same-browser sign-out/sign-in, no saved-identity mutation, distinct blank73/blank61 drafts, other device stays authoritative25, complete canonical/private/profile/receipt equality. This path intentionally leaves/unmounts campaign before sign-out, so it proves navigation-plus-account reuse rather than in-place account-switch callback handling; prior remote session and membership fault cover separate mounted-loss paths. No full acceptance inferred.
+
+No new CI failure among latest stack; disk2.7GiB, bounded run active. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary; full release/independent visual/Linux/hosted/original raster holds remain open. No merge.

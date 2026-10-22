@@ -1,0 +1,13 @@
+# Same-browser market draft isolation
+
+A saved commander leaves an incomplete market allocation, signs out through the ordinary identity panel, and signs into the same browser as another saved commander. The second account receives its authoritative allocation, creates a distinct incomplete draft, signs out, and returns the browser to the original identity. Neither partial draft returns and neither identity is saved again.
+
+This is navigation-plus-account reuse: opening entry unmounts the campaign before sign-out. It does not pretend to be an in-place account callback race. The separate remote-session and guarded membership-fault stories exercise mounted access loss and late-view delivery. Unsent market intent remains memory-only; this story sends no order. Durable accepted-order reload/settlement remains separately evidenced in construction stories; interrupted market submission is still open.
+
+Eight named player steps retain complete canonical state, both private projections, both identity revisions/version/receipt sets and both campaign receipt sets. Actual transport observation confirms no market write. Keyboard opening/closing and fixed commitment visibility run in all four sizes; normal/reduced navigation preserves intent before sign-out. Administrative controls are limited to labelled developer entitlement, deterministic admission/catalogue time and actual Scheduler HTTP delivery. No membership fault, market order or gameplay state is injected.
+
+Separate generation at54a161a passed4 cases/64 images. Implementation-agent review approved only the new family; [candidate provenance](../testing/MARKET_ACCOUNT_BASELINE_REVIEW.md). Strict source15a0a1f passes8 journeys/128 exact captures in3.3 minutes: new account reuse plus unchanged remote-session predecessors. Logs: /tmp/cluster-market-account-generation.log and /tmp/cluster-market-account-strict.log. Original outputs retained at /tmp/cluster-market-account-candidates and /tmp/cluster-market-account-exact-results. Types/lint and32 policy tests pass. No production code or inherited baseline changes.
+
+[Phone story](../testing/stories/market-draft-account-isolation/phone/darwin-arm64/README.md), [desktop](../testing/stories/market-draft-account-isolation/desktop/darwin-arm64/README.md), [4K](../testing/stories/market-draft-account-isolation/large/darwin-arm64/README.md), [short](../testing/stories/market-draft-account-isolation/short/darwin-arm64/README.md).
+
+Stack base: #85 test/late-view-revocation, e8330bc. Current-head publication/CI, independent full visual/Linux/hosted acceptance and original raster holds remain open. Reviewer10:09 source/guard distinction is recorded in meta-prompts.md. No gameplay rule approval or release claim.
