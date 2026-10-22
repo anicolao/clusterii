@@ -1384,3 +1384,10 @@ Agent healthy at51a56f1 running strict pause/catch-up plus identity/maintenance 
 #63 9050d65 published on #62 and attached; independently checked12 local exact journeys12.7min,208 captures comprising136 paused-travel +20 identity +52 maintenance. Review records two unchanged procedural travel/motion regressions29.2sec. Independently viewed phone paused-reload baseline: paused banner, traveling location/destination/tick4, two fighters/twenty infantry, range versus speed, preserved-route notice and disabled Send fleet readable and contained. This sample does not close full visual/Linux/hosted acceptance.
 
 Agent healthy continuing CI lifetime/setup slice without another prompt. Existing00:09 finding visibly queued; no duplicate. #60 second verification now failed as well, within ongoing triage; other current checks queued/running. Carry checkpoint into committed/pushed logs; resource cause, raster, current previews and full release gates remain open. No merge.
+
+
+## Reviewer progress — 2026-10-22 00:49 Toronto
+
+#64 a26324c emulator-cohort PR published and attached. Independently reviewed sequential viewport orchestration, ownership/port guards, interrupt handling, retained per-cohort failure/log metadata, collision rejection and nonzero final status. Ran all five orchestration tests successfully. This mitigates lifetime accumulation; Linux effectiveness and underlying backlog cause remain unproven.
+
+Agent healthy validating history setup follow-up: phone/desktop/large exact comparisons pass existing baselines, short pending. Read helper diff: distinct described setup controls get existing individual budgets while whole-test deadline remains; acknowledgement checks retained, narrative records controls. Existing00:09 handoff still queued, no duplicate. #58 application green; latest CI queued/running. Carry checkpoint into committed/pushed logs. Full visual/Linux/current-preview/raster/release acceptance remains open; no merge.
