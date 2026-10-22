@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { tick } from "svelte";
   import { base } from "$app/paths";
   import { Canvas } from "@threlte/core";
   import type { CampaignView } from "@shared/campaign";
@@ -32,6 +33,17 @@
   } = $props();
   const fleet = $derived(view.military?.fleets.find((f) => f.id === fleetId));
   let query = $state("");
+  let draftNotice = $state("");
+  let waypointSearch = $state<HTMLInputElement>();
+  async function discardDraft() {
+    if (active || pending || busy || !fleet || !waypoints.length) return;
+    waypoints = [];
+    selected = "";
+    query = "";
+    draftNotice = "Draft discarded. No fleet order was sent.";
+    await tick();
+    waypointSearch?.focus();
+  }
   let replanning = $state(false);
   const outcome = $derived(
     view.military?.ledger.find(
@@ -127,6 +139,7 @@
       id === (waypoints.at(-1) ?? fleet?.starId)
     )
       return;
+    draftNotice = "";
     replanning = true;
     waypoints = [...waypoints, id];
     selected = id;
@@ -273,7 +286,11 @@
           </p>{/if}
       </article>{/each}
     {#if !active && !completed && fleet}<label
-        >Find a waypoint<input type="search" bind:value={query} /></label
+        >Find a waypoint<input
+          type="search"
+          bind:this={waypointSearch}
+          bind:value={query}
+        /></label
       >
       <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded catalogue supports keyboard scrolling.) -->
       <div
@@ -329,6 +346,14 @@
               </div>{/if}
           </li>{/each}
       </ol>{/if}
+    {#if !active && !completed && fleet}
+      <ActionButton
+        class="secondary"
+        disabled={pending || busy || !waypoints.length}
+        onclick={discardDraft}>Discard draft</ActionButton
+      >
+      {#if draftNotice}<p role="status">{draftNotice}</p>{/if}
+    {/if}
     <p>
       Defenders may be unknown or have changed since observation. Nonallied
       arrivals resolve combat automatically. No mid-flight cancellation or
