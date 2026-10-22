@@ -13,3 +13,16 @@ The home action automatically closes the systems list and visibly identifies Tan
 Approve only this family's intentional macOS label changes and new reading/navigation frames as local regression references. Other galaxy families are not silently regenerated. Independent review, Linux candidates/comparison, inherited identity-raster diagnosis, current-head CI and exact-head served preview remain gates. Source review subsequently scoped labels to explicit viewport hosts (including contact/route charts) and excluded non-rendered zero-size labels; strict verification must run on that corrected source after promotion.
 
 Original failed diagnostic evidence remains in `/tmp/cluster-label-first-candidates` (short emulator bind failure) and `/tmp/cluster-label-keyboard-failure` (incorrect extra close action, corrected without relaxed assertions). Candidate generation is not exact verification or hosted acceptance.
+
+## Exact comparison and review links
+
+After promotion, the corrected shared-viewport source at `4a3ea95` passed all four exact journeys / 72 captures. The generated narratives are archived under `docs/testing/stories/live-stellar-observations`. Reviewer 01:41 independently confirms the sampled phone overlap is resolved; this is not full independent composition acceptance.
+
+[Before: retained phone recovery at PR #66](https://github.com/anicolao/clusterii/blob/0666727da28a8c05f1734ac11a1f0b66afb0efb7/tests/browser/story-baselines/live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png).
+
+| Viewport | Corrected recovered report | Keyboard home |
+| --- | --- | --- |
+| phone | [Capture](../../tests/browser/story-baselines/live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png) | [Capture](../../tests/browser/story-baselines/live-stellar-observations/phone/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png) |
+| desktop | [Capture](../../tests/browser/story-baselines/live-stellar-observations/desktop/darwin-arm64/018-recover-retained-report-1-survey-envoy.png) | [Capture](../../tests/browser/story-baselines/live-stellar-observations/desktop/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png) |
+| large | [Capture](../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/018-recover-retained-report-1-survey-envoy.png) | [Capture](../../tests/browser/story-baselines/live-stellar-observations/large/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png) |
+| short | [Capture](../../tests/browser/story-baselines/live-stellar-observations/short/darwin-arm64/018-recover-retained-report-1-survey-envoy.png) | [Capture](../../tests/browser/story-baselines/live-stellar-observations/short/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png) |

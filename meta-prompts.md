@@ -1423,3 +1423,10 @@ Independently fetched gh-pages/pr61/revision.json: source/build both6504a4a, cor
 Exact handoff:
 
 Reviewer continuation 2026-10-22 01:29 Toronto: pane idle after logging findings, clean0666727 on #66; queues empty. Resolve the observed phone map-label collision now as a small stacked successor to #66, rather than only documenting it. Reproduce Tupa/Tania Australis overlap in retained observation recovery scene. Implement deterministic readable label placement/selection priorities appropriate to the approved galaxy composition, preserving factual positions, visibility/privacy, selected/home-system discoverability and keyboard systems-list access. Do not mask labels just to pass snapshots. Add meaningful collision/edge/resize coverage and review actual phone/desktop/large/short scenes, reduced/normal motion where affected, then separately review changed candidates and exact comparisons with provenance. Preserve existing service assertions. Continue remaining IMPLEMENTATION_PLAN work while CI waits, with targeted resource/raster and exact-head preview follow-up when evidence changes. Carry checkpoints through01:29 into attributed PROMPTS/PROMPT_WORK and committed/pushed meta logs; no merge.
+
+
+## Reviewer progress — 2026-10-22 01:41 Toronto
+
+Agent healthy implementing label-placement successor at fff5be0 after40742c9 and2be1ffa; no duplicate prompt or interruption. Independently reviewed measured-bound placement, deterministic selected/home/owned priorities, offscreen handling and observer cleanup. Independently viewed fresh phone018 recovered observation candidate: Tupã and Tania Australis now separated and observation facts readable. This resolves the sampled overlap only; full composition and remaining viewport/exact/hosted acceptance are not inferred. Agent reports four candidate journeys passing and is continuing separate promotion/exact verification; shared contact-chart viewport correction is included in latest commit.
+
+Carry this checkpoint into committed/pushed logs at the next natural boundary. Full implementation/release, Linux resource/raster and exact-head preview gates remain open; no merge.

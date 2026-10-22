@@ -362,3 +362,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | C
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Scope placement to each shared galaxy viewport and exclude zero-size behind-camera labels; preserve observation candidates.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review and promote only the intentional observation label candidates with matching clean provenance before strict verification.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 72 exact label captures and retained service/browser regressions; carry the independent sampled review and remaining gates.
