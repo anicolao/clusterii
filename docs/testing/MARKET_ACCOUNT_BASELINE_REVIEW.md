@@ -1,0 +1,7 @@
+# Saved-account market draft candidate review
+
+Separate generation at clean source54a161a77aef93cbc726982599d3d069e36b879f passed four viewport cases in1.5 minutes. Spec SHA-256:ff70447efde7044f94d1b13ab3932915e78c5692af19a97ab1e936a289a03daa. Candidates: /tmp/cluster-market-account-candidates; log: /tmp/cluster-market-account-generation.log. Each darwin-arm64 manifest records passed generate mode and16 images,64 total.
+
+Implementation-agent review inspected all64 images in twelve contact sheets, the native phone second-account partial allocation and enlarged4K returned-owner panel. The first account's blank/73 becomes authoritative25 fields for the second saved account; its blank/61 then clears before the original account returns. Independent-device fields remain25. Signed-out entry removes private instruments. Focus rings, fixed commitment rails and disabled invalid/unchanged Apply remain visible; short panels scroll their fields while retaining the rail. Normal-motion navigation preserves the first draft before sign-out; pinned images use reduced motion.
+
+Approve only the new market-draft-account-isolation family for local strict comparison. No inherited baseline changes. This is implementation-agent review, not independent visual/Linux/hosted approval. The story clears memory-only unsent intent and never submits an order; durable accepted-order recovery is separately covered by construction stories and is not certified by this run. All original raster holds remain open.
