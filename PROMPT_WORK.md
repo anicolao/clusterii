@@ -277,11 +277,25 @@ Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | C
 
 Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Retain the 18:58 supervisory checkpoint and final reviewed-baseline propagation audit.
 
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Check absent initial construction state before the first actual build creates its queues.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Restore pending construction selection and reconcile settled completion/refund feedback with matching authoritative outcomes.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Contain pending construction lettering beside Retry order and assert actual text bounds at every commitment view.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Use concise pending receipt lettering in the three-action construction rail while retaining full status and text containment checks.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Review and promote 160 new construction candidates after pending recovery and settlement corrections; retain 19:28 supervisory scope.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Archive eight exact construction walkthroughs and scoped acceptance evidence; carry the 19:39 supervisory checkpoint.
+
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-sharing-stories.
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-credit-stories.
-
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-briefing-stories.
 
-Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-credit-stories
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-construction-stories.
 
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-credit-stories
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-briefing-stories
+
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-construction-stories

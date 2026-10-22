@@ -14,6 +14,7 @@
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
   let {
+    chosen = $bindable<Development>("market"),
     inspect,
     view,
     starId,
@@ -26,6 +27,7 @@
     message = "",
     error = "",
   }: {
+    chosen?: Development;
     inspect?: MotionInspection;
     view: CampaignView;
     starId: string;
@@ -50,7 +52,6 @@
     base: "infantry",
     station: "science",
   };
-  let chosen = $state<Development>("market");
   const star = $derived(view.stars.find((s) => s.id === starId)!);
   const holding = $derived(view.holdings.find((h) => h.starId === starId));
   const orders = $derived(
@@ -240,7 +241,9 @@
           type="submit"
           disabled={!onbuild || !!constraint || busy || pending}
           >{busy || pending
-            ? "Awaiting acknowledgement…"
+            ? onretry
+              ? "Awaiting receipt…"
+              : "Awaiting acknowledgement…"
             : `Build ${names[chosen].toLowerCase()}`}</ActionButton
         >{#if onretry}<ActionButton
             type="button"
@@ -417,6 +420,7 @@
     margin-top: 12px;
   }
   .actions :global(button[type="submit"]) {
+    overflow-wrap: anywhere;
     min-width: 220px;
     background: #79e3f1;
     border-color: #b4f8ff;
