@@ -47,7 +47,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
   const story = new TestStepHelper(info, {
     id: "live-fleet-travel",
     title: "Plot, recover and follow an authoritative fleet arrival",
-    inventory: ["UX-08", "UX-09", "UX-14", "UX-16"],
+    inventory: ["UX-08", "UX-09", "UX-14", "UX-15", "UX-16"],
     description:
       "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.",
   });
@@ -666,7 +666,6 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         await routeRead(helpSummary);
         await helpSummary.focus();
         await helpSummary.press("Enter");
-        await routeRead(helpSummary);
       },
       acknowledgement: {
         spec: "The contextual guide expands through keyboard input and explains actual shared range, speed and proposed development rules.",
