@@ -185,12 +185,9 @@ test("Research lab preserves selection through pending, recovery, scheduling and
       check: async () => {
         for (const panel of panels) {
           const history = panel
-            .locator("details")
-            .filter({
-              has: panel
-                .locator("summary")
-                .filter({ hasText: /^Last applied selections$/ }),
-            });
+            .locator("summary")
+            .filter({ hasText: /^Last applied selections$/ })
+            .locator("..");
           await expect(history).toHaveAttribute("open", "");
           await expect(history.locator("ol")).toContainText(
             "Tick 1 · investing",

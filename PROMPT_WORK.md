@@ -578,3 +578,5 @@ Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | P
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Retain passing live forecast candidates and exact null-contract failure, classifying completed Linux errors separately from visual acceptance.
 
 Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve lab selector failures and scope applied-history keyboard checks to its exact disclosure label after adding forecasts.
+
+Prompt 88 | 208a9776b0fd6bbeca4520854b61a193022843cc9fad90931cb31b7d3ecf65d9 | Preserve nested-locator failure and use the named summary parent for unchanged open-state and applied-tick lab assertions.
