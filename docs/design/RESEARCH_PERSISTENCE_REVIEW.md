@@ -1,0 +1,13 @@
+# Persisted research completion
+
+This bounded successor to #96 exercises the existing development research rules through actual authenticated command ingress, accepted digest-bound receipts and the leased production service. It does not change rules, production code or approval status. The prior cap/zero-rate proof remains reducer/authorized-projection scope.
+
+The budget is four real saved player identities, one four-seat development campaign, one research selection, and16 actual ticks. Explicit start/tick timestamps are service harness inputs, not hosted Scheduler certification. No research levels, ledger, ownership, seats or encrypted views are injected. Innovation is selected before tick1: tick14 retains19600 milli-science, tick15 completes level1 with1000 overflow at the old1400 output, and tick16 applies1404 output, retaining2404. Concurrent and repeated tick15 delivery must produce exactly one revision/effect. The ordinary authenticated history reader reopens persisted private envelopes; the peer retains Navigation progress/output and cannot read the owner's member document or order ID. The original accepted receipt is unchanged.
+
+Mock and managed-key modes share the same case; managed-key execution is explicitly skipped without CLUSTER_KMS_TEST. A mock pass does not certify cryptographic secrecy, managed KMS, rendered acceptance or hosted scheduling. Browser/cap/zero-rate persistence and full milestone5 acceptance remain separate gaps.
+
+The initial execution rejected a fixture that tried assigning all four seats to Heliac. The corrected fixture uses the campaign's four permitted factions. Failure is preserved at `/tmp/cluster-research-persisted-completion.log`; no admission guard or receipt assertion was weakened.
+
+Focused execution passed1 mock case/40 assertions in7.73s; the managed-key case skipped explicitly. Log: `/tmp/cluster-research-persisted-completion-valid-roster.log`. The history reader checks/reopens its latest10-record page, not a claim of complete all-revision pagination. Existing Queue/recovery/shared/feedback, Linux/independent visual/hosted and original raster holds remain unchanged. No candidate generation, baseline promotion or broad CI rerun belongs to this slice.
+
+Published as draft [#97](https://github.com/anicolao/clusterii/pull/97) on [#96](https://github.com/anicolao/clusterii/pull/96), which is based on #95. Type/Svelte checks pass0 errors/0 warnings (`/tmp/cluster-research-persisted-check.log`). At this boundary #94/#95 application and story verification still run; successful generation-job status is not evidence that its gated generation steps executed. No duplicate CI requests were made. Preview current-head checks remain pending.
