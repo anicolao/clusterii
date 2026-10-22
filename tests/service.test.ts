@@ -5965,3 +5965,115 @@ for (const mode of ["mock", "real"] as const)
       expect((await getDoc(doc(owner.firestore, "campaignReceipts", owner.uid, "results", selected.ingress.key!))).data()).toEqual(selected.receipt);
     }, 120000,
   );
+
+test("zero science persistence: earned range, real orbital capture and frozen private progress", async () => {
+  const { createRequire } = await import("node:module");
+  const require = createRequire(new URL("../functions/package.json", import.meta.url));
+  const admin = require("firebase-admin/app");
+  if (!admin.getApps().length) admin.initializeApp({ projectId });
+  const db = require("firebase-admin/firestore").getFirestore();
+  const { startDueCampaign } = await import("../functions/src/campaigns");
+  const { settleCampaignTicks } = await import("../functions/src/production");
+  const { distance } = await import("../shared/galaxy");
+  const { routePreview } = await import("../shared/travel");
+  const { researchEstimate } = await import("../shared/research");
+  const factions = ["heliac", "pelagic", "vesper", "dracon"] as const;
+  const players = [];
+  for (let i = 0; i < 4; i++) {
+    const c = await client(`zero-science-${i}-${crypto.randomUUID()}`);
+    await developer(c); await saveIdentity(c); players.push(c);
+  }
+  const [owner, rival] = players, id = crypto.randomUUID();
+  const created = await campaignCommand(owner, id, {
+    kind: "campaign.create", expectedRevision: 0, name: "Earned zero science",
+    capacity: 4, mode: "mock", development: true,
+  });
+  expect(created.receipt.status).toBe("accepted");
+  for (let i = 0; i < 4; i++)
+    expect((await campaignCommand(players[i], id, {
+      kind: "campaign.join", expectedRevision: i + 1, faction: factions[i],
+    })).receipt.status).toBe("accepted");
+  const head = db.doc(`campaignStates/${id}`), start = (await head.get()).get("startAt");
+  await startDueCampaign(id, start);
+  const view = async (c: typeof owner) => (await readCampaignHistory(c.firestore, c.functions, id, c.uid)).records[0];
+  const starting = await Promise.all(players.map(view));
+  const homes = starting.map(v => v.own.home!);
+  // Budget: <=220 ticks /180s, no injected map, levels, forces or ownership.
+  const settle = async (tick: number) => {
+    expect(tick).toBeLessThanOrEqual(220);
+    let count = 0, batch: number;
+    do { batch = await settleCampaignTicks(id, () => start + tick * 900000); count += batch; } while (batch === 96);
+    return count;
+  };
+  expect(await settle(100)).toBe(100);
+  const prepared = await Promise.all([view(owner), view(rival)]);
+  expect(prepared[0].economy!.research.levels.navigation).toBe(3);
+  expect(prepared[1].economy!.research.levels.navigation).toBe(3);
+  const stars = prepared[0].stars;
+  const star = (id: string) => stars.find(s => s.id === id)!;
+  // Dijkstra on the real public catalogue; exclude other occupied homes.
+  const pending = [{ id: homes[1], path: [] as string[], cost: 0 }], seen = new Set<string>();
+  let route: string[] | undefined;
+  while (pending.length) {
+    pending.sort((a, b) => a.cost - b.cost);
+    const next = pending.shift()!;
+    if (seen.has(next.id)) continue;
+    seen.add(next.id);
+    if (next.id === homes[0]) { route = next.path; break; }
+    for (const candidate of stars) {
+      if (seen.has(candidate.id) || (homes.includes(candidate.id) && candidate.id !== homes[0])) continue;
+      const length = distance(star(next.id), candidate);
+      if (length <= 30) pending.push({ id: candidate.id, path: [...next.path, candidate.id], cost: next.cost + Math.ceil(length / 2) + 1 });
+    }
+  }
+  expect(route).toBeDefined();
+  const legs = routePreview(stars, homes[1], route!, 3);
+  expect(legs.every(leg => leg.reachable)).toBe(true);
+  const travelBudget = legs.reduce((total, leg) => total + leg.ticks + 1, 0);
+  expect(travelBudget).toBeLessThanOrEqual(104);
+  const escape = stars.filter(s => !homes.includes(s.id) && !route!.includes(s.id) && distance(s, star(homes[0])) <= 30)
+    .sort((a, b) => distance(a, star(homes[0])) - distance(b, star(homes[0])))[0];
+  expect(escape).toBeDefined();
+  for (let i = 0; i < 2; i++) {
+    const current = await view(players[i]);
+    const fighters = current.holdings.find(h => h.starId === homes[i])!.fighters!;
+    expect(fighters).toBe(160);
+    expect((await campaignCommand(players[i], id, {
+      kind: "fleet.form", expectedRevision: current.revision, starId: homes[i], fighters, infantry: 0,
+    })).receipt.status).toBe("accepted");
+  }
+  expect(await settle(101)).toBe(1);
+  const routedReceipts = [];
+  for (let i = 0; i < 2; i++) {
+    const current = await view(players[i]), fleet = current.military!.fleets[0];
+    expect(fleet.fighters).toBe(160);
+    const result = await campaignCommand(players[i], id, {
+      kind: "fleet.route", expectedRevision: current.revision, fleetId: fleet.id,
+      waypoints: i === 0 ? [escape.id] : route!,
+    });
+    expect(result.receipt.status).toBe("accepted");
+    routedReceipts.push(result);
+  }
+  const through = 103 + travelBudget;
+  expect(await settle(through)).toBe(through - 101);
+  const lost = await view(owner), won = await view(rival);
+  const holding = lost.holdings.find(h => h.starId === homes[0])!;
+  expect(holding).toMatchObject({ orbit: "Unknown", surface: "You" });
+  for (const field of ["fighters", "camps", "stations", "escrowMilli"])
+    expect(holding).not.toHaveProperty(field);
+  expect(won.holdings.find(h => h.starId === homes[0])).toMatchObject({ orbit: "You", surface: "Unknown", stations: 1 });
+  expect(lost.economy!.ledger!.scienceMilli).toBe(0);
+  expect(won.economy!.ledger!.scienceMilli).toBeGreaterThan(1400);
+  expect(lost.military!.fleets.find(f => f.starId === escape.id)!.fighters).toBe(160);
+  expect(researchEstimate(lost.economy!.research, "navigation", lost.economy!.ledger!.scienceMilli)).toMatchObject({ reason: "zero-rate", fundedTicks: null });
+  expect(await settle(through + 1)).toBe(1);
+  const frozen = await view(owner);
+  expect(frozen.economy!.research).toEqual(lost.economy!.research);
+  expect(frozen.economy!.ledger!.scienceMilli).toBe(0);
+  expect(await settle(through + 1)).toBe(0);
+  expect(await view(owner)).toEqual(frozen);
+  await expect(getDoc(doc(rival.firestore, "campaignViews", id, "members", owner.uid))).rejects.toThrow();
+  expect(JSON.stringify(won.military)).not.toContain(routedReceipts[0].ingress.key!);
+  for (let i = 0; i < 2; i++)
+    expect((await getDoc(doc(players[i].firestore, "campaignReceipts", players[i].uid, "results", routedReceipts[i].ingress.key!))).data()).toEqual(routedReceipts[i].receipt);
+}, 180000);
