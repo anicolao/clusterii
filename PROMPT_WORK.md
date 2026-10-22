@@ -518,3 +518,5 @@ Prompt 79 | a69eeaf699fdf9488f992f9b3be71f8ef79462304cec5010df63b2a5ed89dcf0 | C
 Prompt 79 | a69eeaf699fdf9488f992f9b3be71f8ef79462304cec5010df63b2a5ed89dcf0 | Review56 corrected membership-fault candidates separately before exact comparison and predecessor regression checks
 
 Prompt 79 | a69eeaf699fdf9488f992f9b3be71f8ef79462304cec5010df63b2a5ed89dcf0 | Archive196 strict captures and document real authorization denial, late-view rejection and exact metadata restoration
+
+Prompt 79 | a69eeaf699fdf9488f992f9b3be71f8ef79462304cec5010df63b2a5ed89dcf0 | Link PR85 and classify retained predecessor Linux failures while carrying09:49 scoped review and unchanged acceptance gates
