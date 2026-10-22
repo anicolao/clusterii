@@ -47,7 +47,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
   const story = new TestStepHelper(info, {
     id: "live-fleet-travel",
     title: "Plot, recover and follow an authoritative fleet arrival",
-    inventory: ["UX-08", "UX-09", "UX-14", "UX-16"],
+    inventory: ["UX-08", "UX-09", "UX-14", "UX-15", "UX-16"],
     description:
       "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.",
   });
@@ -474,10 +474,18 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         owner.viewportSize()!.height,
       );
     };
-    const routeRead = async (target: Locator) => {
+    const routeRead = async (target: Locator, centered = false) => {
       await routeRail();
       await details.focus();
-      await target.scrollIntoViewIfNeeded();
+      if (centered)
+        await target.evaluate((element) =>
+          element.scrollIntoView({
+            block: "center",
+            inline: "nearest",
+            behavior: "instant",
+          }),
+        );
+      else await target.scrollIntoViewIfNeeded();
       const a = await details.boundingBox(),
         b = await target.boundingBox();
       expect(b!.y).toBeGreaterThanOrEqual(a!.y);
@@ -654,6 +662,127 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         },
       },
       verifications: routeChecks(),
+      views: views(),
+    });
+    const routeHelp = planner.locator("details.route-rules"),
+      helpSummary = routeHelp.locator("summary");
+    await story.step("read-contextual-route-rules", {
+      actor: aliases[0],
+      description:
+        "Read the route rules beside the unsent plan. Range and speed are distinct; opening help does not pause the campaign or send the fleet.",
+      action: async () => {
+        await routeRead(helpSummary, true);
+        await helpSummary.focus();
+        await helpSummary.press("Enter");
+        await helpSummary.evaluate((element) =>
+          element.scrollIntoView({ block: "start", behavior: "instant" }),
+        );
+      },
+      acknowledgement: {
+        spec: "The contextual guide expands through keyboard input and explains actual shared range, speed and proposed development rules.",
+        check: async () => {
+          await expect(routeHelp).toHaveAttribute("open", "");
+          await expect(routeHelp).toContainText(
+            "Navigation level 1 reaches 10 light years per leg.",
+          );
+          await expect(routeHelp).toContainText(
+            "Fleets travel 2 light years per tick.",
+          );
+          await expect(routeHelp).toContainText(
+            "Development rules remain under review.",
+          );
+          await expect(helpSummary).toBeFocused();
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "The reading panel remains bounded, and help changes neither the exact unsent route nor the complete authoritative state.",
+          check: async () => {
+            await expect(routeList.locator("li")).toHaveCount(1);
+            await expect(routeList).toContainText(targetName);
+            expect(await canonical()).toEqual(formed!);
+            const b = await details.boundingBox();
+            expect(b!.y + b!.height).toBeLessThanOrEqual(
+              owner.viewportSize()!.height,
+            );
+          },
+        },
+      ],
+      views: views(),
+    });
+    await story.step("read-arrival-rule-boundaries", {
+      actor: aliases[0],
+      description:
+        "Scroll within the rule chapter to read the distinction between orbit and surface control, and the warning about stale intelligence.",
+      action: async () => {
+        await routeRead(
+          routeHelp.getByRole("heading", { name: "Arrival and uncertainty" }),
+        );
+        await routeHelp
+          .locator("p")
+          .filter({ hasText: "Winning orbit alone" })
+          .evaluate((element) =>
+            element.scrollIntoView({ block: "end", behavior: "instant" }),
+          );
+      },
+      acknowledgement: {
+        spec: "The final rule paragraph is fully visible within the bounded route details while the commitment rail remains on screen.",
+        check: async () => {
+          const lastParagraph = routeHelp
+            .locator("p")
+            .filter({ hasText: "Winning orbit alone" });
+          await expect(lastParagraph).toBeInViewport({ ratio: 1 });
+          const a = await details.boundingBox(),
+            b = await lastParagraph.boundingBox();
+          expect(b!.y).toBeGreaterThanOrEqual(a!.y);
+          expect(b!.y + b!.height).toBeLessThanOrEqual(a!.y + a!.height);
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Reading the complete chapter preserves the unsent route and canonical state under normal and reduced motion.",
+          check: async () => {
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            expect(await canonical()).toEqual(formed!);
+            await expect(routeList).toContainText(targetName);
+            await owner.emulateMedia({ reducedMotion: "reduce" });
+          },
+        },
+      ],
+      views: views(),
+    });
+    await story.step("return-from-route-rules", {
+      actor: aliases[0],
+      description:
+        "Read the final arrival warning within the bounded panel, then close help with the keyboard and return to the unchanged draft.",
+      action: async () => {
+        await routeRead(
+          routeHelp.getByRole("heading", { name: "Arrival and uncertainty" }),
+        );
+        await helpSummary.focus();
+        await helpSummary.press("Enter");
+        await routeRead(routeList);
+        await send.focus();
+      },
+      acknowledgement: {
+        spec: "Help closes without discarding the route; the same draft is ready for deliberate commitment.",
+        check: async () => {
+          await expect(routeHelp).not.toHaveAttribute("open", "");
+          await expect(routeList.locator("li")).toHaveCount(1);
+          await expect(routeList).toContainText(targetName);
+          await expect(send).toBeFocused();
+          await expect(send).toBeEnabled();
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Reading and closing contextual help sends no gameplay command and reveals no private facts to another commander.",
+          check: async () => expect(await canonical()).toEqual(formed!),
+        },
+      ],
       views: views(),
     });
     await story.step("discard-uncommitted-route", {

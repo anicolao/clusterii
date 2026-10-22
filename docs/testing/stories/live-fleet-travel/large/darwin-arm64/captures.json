@@ -52,7 +52,7 @@
   {
     "image": "016-open-route-1-fleet-marshal.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/016-open-route-1-fleet-marshal.png",
-    "actualSha256": "68c7676cd091411f8a99491601815b30e28524d855b919edb5b41f90cdb845c7"
+    "actualSha256": "b581a30c3d14de9c06359422d342b206715a0c12c3208374e08fbb6843817248"
   },
   {
     "image": "016-open-route-2-independent-marshal.png",
@@ -62,7 +62,7 @@
   {
     "image": "017-choose-waypoint-1-fleet-marshal.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
-    "actualSha256": "f6162a2192ad2ea38761226cbda5333e0efac5027c1ca2f46863579c5114347d"
+    "actualSha256": "a2eb8c433c202923d1f9047414cf0462ea4866342fc2969e38593851a0782c5d"
   },
   {
     "image": "017-choose-waypoint-2-independent-marshal.png",
@@ -72,7 +72,7 @@
   {
     "image": "018-reject-distant-leg-1-fleet-marshal.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
-    "actualSha256": "33da1c209c79f574f6f406ac68d06a60b3489359ef7b3a8644a191fe64919211"
+    "actualSha256": "cd21cb9e09b60d128ecc80dca21471013e8df55cec9026246730e0fe69426650"
   },
   {
     "image": "018-reject-distant-leg-2-independent-marshal.png",
@@ -82,7 +82,7 @@
   {
     "image": "019-repair-route-1-fleet-marshal.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/019-repair-route-1-fleet-marshal.png",
-    "actualSha256": "2f1e7967d6cd509404b92a9788e509ffd843562286e09c1005126293fdc3368c"
+    "actualSha256": "60492ce6c872dd85d7c1540300685ac67d4a19eba8e72250adc8a1bf9e6df4b5"
   },
   {
     "image": "019-repair-route-2-independent-marshal.png",
@@ -90,113 +90,163 @@
     "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
   },
   {
-    "image": "020-accept-route-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/020-accept-route-1-fleet-marshal.png",
-    "actualSha256": "16cf1e8df8378e2d61448624c60181fd369bae211a4ec85d2c594df94c881f3e"
+    "image": "020-read-contextual-route-rules-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/020-read-contextual-route-rules-1-fleet-marshal.png",
+    "actualSha256": "1bb43f06467b9ba2c26f028d7821da8d4cae12bae38351849000af1554b47e40"
   },
   {
-    "image": "020-accept-route-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "image": "020-read-contextual-route-rules-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/020-read-contextual-route-rules-2-independent-marshal.png",
     "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
   },
   {
-    "image": "021-recover-route-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/021-recover-route-1-fleet-marshal.png",
-    "actualSha256": "7cf6d6f4fd3969535da096ec89b6cf32ec2e72274be10df03bddb51b85fce1b5"
+    "image": "021-read-arrival-rule-boundaries-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/021-read-arrival-rule-boundaries-1-fleet-marshal.png",
+    "actualSha256": "f12c1514d0a1ca10b1f70ff8a3b57c624d073621e0999dea80ae188a5c5e968f"
   },
   {
-    "image": "021-recover-route-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "image": "021-read-arrival-rule-boundaries-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/021-read-arrival-rule-boundaries-2-independent-marshal.png",
     "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
   },
   {
-    "image": "023-traveling-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/023-traveling-1-fleet-marshal.png",
-    "actualSha256": "006ca4c67a8137ec1ba7a31565b576a78fddf4cae27d22ee32555d2a6416335e"
+    "image": "022-return-from-route-rules-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/022-return-from-route-rules-1-fleet-marshal.png",
+    "actualSha256": "60492ce6c872dd85d7c1540300685ac67d4a19eba8e72250adc8a1bf9e6df4b5"
   },
   {
-    "image": "023-traveling-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "image": "022-return-from-route-rules-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/022-return-from-route-rules-2-independent-marshal.png",
+    "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
+  },
+  {
+    "image": "023-discard-uncommitted-route-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/023-discard-uncommitted-route-1-fleet-marshal.png",
+    "actualSha256": "ec46ddd94ef7a8d8efc6e6cfc7e97796275d874d6207070addaf77698c58958d"
+  },
+  {
+    "image": "023-discard-uncommitted-route-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/023-discard-uncommitted-route-2-independent-marshal.png",
+    "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
+  },
+  {
+    "image": "024-reopen-cleared-route-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/024-reopen-cleared-route-1-fleet-marshal.png",
+    "actualSha256": "b575a25da616e04d29e5f9f0d475ee7cd43e5d9ff8226d70cb6ea8cddb1bd20f"
+  },
+  {
+    "image": "024-reopen-cleared-route-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/024-reopen-cleared-route-2-independent-marshal.png",
+    "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
+  },
+  {
+    "image": "025-accept-route-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/025-accept-route-1-fleet-marshal.png",
+    "actualSha256": "13e02af61c9693ce0d98ac001a00020d7dea941d5c6786bcce9c053e0711180b"
+  },
+  {
+    "image": "025-accept-route-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/025-accept-route-2-independent-marshal.png",
+    "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
+  },
+  {
+    "image": "026-recover-route-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/026-recover-route-1-fleet-marshal.png",
+    "actualSha256": "af1547f6c52db64027e19cda89087ffdfbcde19d7097cd14d8e6118f13e6976f"
+  },
+  {
+    "image": "026-recover-route-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/026-recover-route-2-independent-marshal.png",
+    "actualSha256": "2e41899d2f1186f8aa87a115999f77e45772e9b73e6dac4aae0a5f204e3b7ff2"
+  },
+  {
+    "image": "028-traveling-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/028-traveling-1-fleet-marshal.png",
+    "actualSha256": "fd96f21d3a1e3565d310d005331909ec2acd08d0f90a9ae9bc13d252f2275f3e"
+  },
+  {
+    "image": "028-traveling-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/028-traveling-2-independent-marshal.png",
     "actualSha256": "de76d3b0095a23c7967f1a54ca7bbb150d4c1d2d6f0f011955da41cf339d2b68"
   },
   {
-    "image": "025-arrival-report-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
-    "actualSha256": "cb7ba9163092be1d3902062a95df8faf212eebfa04a8219258c8c75c5c1a6386"
+    "image": "030-arrival-report-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/030-arrival-report-1-fleet-marshal.png",
+    "actualSha256": "590070dcaf6bca83024bbf9ffe58cd73d5bd2bff98c17d49dee5b67c0fb653ea"
   },
   {
-    "image": "025-arrival-report-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "image": "030-arrival-report-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/030-arrival-report-2-independent-marshal.png",
     "actualSha256": "81d831d00419236114fb217732d9dfd1e5a51f222dbb1e5a525a919b6f846801"
   },
   {
-    "image": "026-recover-arrival-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "image": "031-recover-arrival-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/031-recover-arrival-1-fleet-marshal.png",
     "actualSha256": "e81d41c69b3d83b162bb033d68f0762e3f14059280b65bc3b59fb14c2ecf65fc"
   },
   {
-    "image": "026-recover-arrival-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "image": "031-recover-arrival-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/031-recover-arrival-2-independent-marshal.png",
     "actualSha256": "81d831d00419236114fb217732d9dfd1e5a51f222dbb1e5a525a919b6f846801"
   },
   {
-    "image": "027-open-private-arrival-archives-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/027-open-private-arrival-archives-1-fleet-marshal.png",
+    "image": "032-open-private-arrival-archives-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/032-open-private-arrival-archives-1-fleet-marshal.png",
     "actualSha256": "36a4b8d63fc6fc384326993c0e4ff445ba2efd99b54654337113ec380053f726"
   },
   {
-    "image": "027-open-private-arrival-archives-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/027-open-private-arrival-archives-2-independent-marshal.png",
+    "image": "032-open-private-arrival-archives-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/032-open-private-arrival-archives-2-independent-marshal.png",
     "actualSha256": "5eedb1322bea9b9aa9541d0b440cfeb7b46451477f0fc477f675e66e4d365270"
   },
   {
-    "image": "028-read-arrival-losses-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/028-read-arrival-losses-1-fleet-marshal.png",
+    "image": "033-read-arrival-losses-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/033-read-arrival-losses-1-fleet-marshal.png",
     "actualSha256": "daecff1dc88a7f34bfdc84a150f2573873b09346f06626d95ba319e0b1a24761"
   },
   {
-    "image": "028-read-arrival-losses-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/028-read-arrival-losses-2-independent-marshal.png",
+    "image": "033-read-arrival-losses-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/033-read-arrival-losses-2-independent-marshal.png",
     "actualSha256": "5eedb1322bea9b9aa9541d0b440cfeb7b46451477f0fc477f675e66e4d365270"
   },
   {
-    "image": "029-read-arrival-control-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/029-read-arrival-control-1-fleet-marshal.png",
+    "image": "034-read-arrival-control-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/034-read-arrival-control-1-fleet-marshal.png",
     "actualSha256": "daecff1dc88a7f34bfdc84a150f2573873b09346f06626d95ba319e0b1a24761"
   },
   {
-    "image": "029-read-arrival-control-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/029-read-arrival-control-2-independent-marshal.png",
+    "image": "034-read-arrival-control-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/034-read-arrival-control-2-independent-marshal.png",
     "actualSha256": "5eedb1322bea9b9aa9541d0b440cfeb7b46451477f0fc477f675e66e4d365270"
   },
   {
-    "image": "030-read-arrival-resolution-boundaries-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/030-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+    "image": "035-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/035-read-arrival-resolution-boundaries-1-fleet-marshal.png",
     "actualSha256": "40a5212d736c9a34f45dc94bf452fc9b42297b5b7e4fccae746f803a058e6a92"
   },
   {
-    "image": "030-read-arrival-resolution-boundaries-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/030-read-arrival-resolution-boundaries-2-independent-marshal.png",
+    "image": "035-read-arrival-resolution-boundaries-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/035-read-arrival-resolution-boundaries-2-independent-marshal.png",
     "actualSha256": "5eedb1322bea9b9aa9541d0b440cfeb7b46451477f0fc477f675e66e4d365270"
   },
   {
-    "image": "031-reload-private-arrival-archives-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/031-reload-private-arrival-archives-1-fleet-marshal.png",
+    "image": "036-reload-private-arrival-archives-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/036-reload-private-arrival-archives-1-fleet-marshal.png",
     "actualSha256": "36a4b8d63fc6fc384326993c0e4ff445ba2efd99b54654337113ec380053f726"
   },
   {
-    "image": "031-reload-private-arrival-archives-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/031-reload-private-arrival-archives-2-independent-marshal.png",
+    "image": "036-reload-private-arrival-archives-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/036-reload-private-arrival-archives-2-independent-marshal.png",
     "actualSha256": "029d5720fe4f70843bb801df1c513586a9150f703ea5c77e34e329414a9736de"
   },
   {
-    "image": "032-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/032-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+    "image": "037-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/037-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
     "actualSha256": "6bf41a72957cc2948bb16d85b1a42feecba5953314bffb14ae555c0e90e9ed0c"
   },
   {
-    "image": "032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
-    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+    "image": "037-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/037-close-arrival-archives-by-keyboard-2-independent-marshal.png",
     "actualSha256": "3c6e70d23965514c649a98adb01bc37f751566f53306822321a806bc36509acd"
   }
 ]

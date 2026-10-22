@@ -331,3 +331,7 @@ Eight exact local navigation/observation journeys /101 captures now include actu
 ## Explicit unsent route discard
 
 The production route planner now distinguishes Discard draft from accepted-order cancellation. Two named live steps prove keyboard discard, empty re-entry, replanning, unchanged complete canonical state and private observer views. Phone/desktop/short strict stories pass132 captures;4K fails only its final observer galaxy image (38 reported pixels), after43 exact frames and all gameplay assertions. Candidate generation passes all176 frames. Original expected pixels and failure artifacts are retained; this is not full visual/Linux/hosted acceptance. Unsent drafts remain memory-only.
+
+## Contextual route help
+
+UX-15 gains a production route chapter with shared range/speed/waypoint constants and explicit development-rule boundaries. Three named real-player steps cover keyboard opening, bounded first/final chapter reading and closing without changing the draft or canonical state. All four local strict journeys pass200 captures, preserving existing authoritative/privacy/recovery assertions. This completes one contextual chapter, not the full campaign menu, all rule chapters/settings or hosted/Linux/independent acceptance; inherited raster holds remain open.
