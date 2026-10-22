@@ -57,3 +57,11 @@ The original #88 publication failure remains retained. A later read-only check f
 Only corrected research-family generation is authorized next, after another disk check. Independent corrected-candidate review is required before promotion. No broad capture cohort or guidance rerun.
 
 Correction sourcea588962 passes types and lint (/tmp/cluster-research-orders-check4.log and /tmp/cluster-research-orders-lint4.log). The immediately following disk check found2,087,316KiB free:9,836KiB below the2,097,152KiB capture gate. Therefore corrected generation has NOT run. No candidate from b6043bb is approved or promoted; no strict comparison is claimed. Preserve both failed runs and the independently held candidate family. Recheck free space before using the existing filtered generation restart; corrected generation now includes close/reopen error-ownership views in all four sizes. The earlier44 passing candidates are historical execution evidence only and do not validate the new source.
+
+## Corrected generation after disk recovery
+
+While the forecast successor was in progress, free space recovered above gate. Its uncommitted source was preserved separately, then the worktree returned to clean #89 source826e63de0f5274b2cf1d316876f9522871b74f74 before generation. No forecast code participated.
+
+The corrected family passed four viewports in1.3 minutes with52 candidates: /tmp/cluster-research-orders-corrected-candidates/live-research-orders. Spec SHA2561928a6d6c277a895f22aab0341797dd8c5ccff3b087378c9020b4cf9fa73912c. Log /tmp/cluster-research-orders-generation4.log. Single-alert including-hidden checks, focused in-panel conflict, Escape restoration of route feedback, reopen, original encrypted identity/digest, unchanged receipts/private facts and visible scheduled-list bounds all passed.
+
+Implementation-agent native desktop inspection confirms the prior obscured orange route duplicate is absent. Independent review of the corrected family is requested and pending; the older b6043bb family remains unapproved. No promotion or strict comparison yet. Current space is about4.3GiB, so after independent approval strict verification can run on this #89 source lineage, separately from the forecast successor. No broader family is included.
