@@ -208,5 +208,45 @@
     "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
     "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png",
     "actualSha256": "d54c7e649ceacf1641ae6382a7c24c0190c795d1731c7ca58f423bcce4e05dcc"
+  },
+  {
+    "image": "034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+    "actualSha256": "062c8afed33f37a6185431ae4a9ccf455036f00bf487d9890a52bb9c1929c583"
+  },
+  {
+    "image": "034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+    "actualSha256": "d54c7e649ceacf1641ae6382a7c24c0190c795d1731c7ca58f423bcce4e05dcc"
+  },
+  {
+    "image": "035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+    "actualSha256": "2065a81949de382921bcda88186e3dceb1c919609e760753e3cea70c7339cc76"
+  },
+  {
+    "image": "036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+    "actualSha256": "7ce2c269a21c83d81f85447aa23356dbce3970614491b1928fa92c50d51d40e6"
+  },
+  {
+    "image": "037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+    "actualSha256": "062c8afed33f37a6185431ae4a9ccf455036f00bf487d9890a52bb9c1929c583"
+  },
+  {
+    "image": "039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+    "actualSha256": "a99a801e5380a5961d9d34195bf3a014c5d1f7ab27b665a3c0d67f9b552d72a4"
+  },
+  {
+    "image": "039-observe-retried-message-acceptance-2-outer-witness.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/039-observe-retried-message-acceptance-2-outer-witness.png",
+    "actualSha256": "d54c7e649ceacf1641ae6382a7c24c0190c795d1731c7ca58f423bcce4e05dcc"
+  },
+  {
+    "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+    "actualSha256": "a04116eddec1acc2278b7bfeb144041d21708c0f42325f3b7059a0f571697578"
   }
 ]

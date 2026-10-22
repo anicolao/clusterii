@@ -63,6 +63,13 @@ test("Selected history reaches only a consenting commander and survives reload",
   });
   const contexts: BrowserContext[] = [],
     pages: Page[] = [];
+  let holdingSend = false;
+  const heldSends: {
+    server: import("@playwright/test").WebSocketRoute;
+    raw: string | Buffer;
+    active: () => boolean;
+  }[] = [];
+  const sendWrites: { p: string; d: Record<string, unknown> }[] = [];
   const errors: string[] = [];
   const noErrors = {
     spec: "No viewpoint has an uncaught application error.",
@@ -129,6 +136,30 @@ test("Selected history reaches only a consenting commander and survives reload",
             reducedMotion: "reduce",
           });
           contexts.push(ctx);
+          if (i === 0)
+            await ctx.routeWebSocket(/127\.0\.0\.1:19000/, (ws) => {
+              const server = ws.connectToServer();
+              let active = true;
+              ws.onClose(() => {
+                active = false;
+                server.close();
+              });
+              ws.onMessage((raw) => {
+                let frame;
+                try {
+                  frame = JSON.parse(String(raw));
+                } catch {}
+                if (
+                  holdingSend &&
+                  frame?.d?.a === "p" &&
+                  frame.d.b?.d?.kind === "conversation.send"
+                ) {
+                  sendWrites.push(frame.d.b);
+                  heldSends.push({ server, raw, active: () => active });
+                } else server.send(raw);
+              });
+              server.onMessage((raw) => ws.send(raw));
+            });
           const page = await ctx.newPage();
           pages.push(page);
           page.on("pageerror", (error) => errors.push(error.message));
@@ -1099,6 +1130,260 @@ test("Selected history reaches only a consenting commander and survives reload",
         },
       ],
       views: [view(0), secondView, view(2)],
+    });
+    const sendBase = await canonical();
+    const pendingPrivate = {
+      spec: "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders.",
+      check: async () => {
+        expect(await canonical()).toEqual(sendBase);
+        for (const seat of [1, 2])
+          expect(JSON.stringify(await published(seat))).not.toContain(
+            chosenText,
+          );
+        expect(new Set(sendWrites.map((w) => w.p)).size).toBe(1);
+        for (const w of sendWrites) expect(w.d).toEqual(sendWrites[0].d);
+      },
+    };
+    await story.harness(
+      "interrupt-send-transport",
+      "Withhold only actual conversation.send RTDB frames before ingress. Other traffic passes through; no payload, identity, receipt or state is replaced.",
+      async () => {
+        holdingSend = true;
+      },
+    );
+    await story.step("submit-replacement-awaiting-acknowledgement", {
+      actor: aliases[0],
+      description:
+        "Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message.",
+      action: async () => {
+        await button(second!, "Send message").focus();
+        await second!.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The interface explicitly waits for acknowledgement and retains the submitted text; this is not service acceptance.",
+        check: async () => {
+          await expect.poll(() => heldSends.length).toBeGreaterThan(0);
+          await expect(
+            button(second!, "Awaiting acknowledgement…"),
+          ).toBeDisabled();
+          await expect(composer(second!)).toHaveValue(chosenText);
+        },
+      },
+      verifications: [noErrors, pendingPrivate],
+      views: [secondView, view(2)],
+    });
+    await story.step("protect-pending-send-from-second-tab", {
+      actor: aliases[0],
+      description:
+        "Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order.",
+      action: async () => {
+        await button(owner, "Send message").click();
+      },
+      acknowledgement: {
+        spec: "The other tab explains the unfinished order and preserves its text.",
+        check: async () => {
+          await expect(panel(owner).getByRole("alert")).toContainText(
+            "Another tab has an unfinished order",
+          );
+          await expect(button(owner, "Recover pending order")).toBeVisible();
+          await expect(composer(owner)).toHaveValue(chosenText);
+        },
+      },
+      verifications: [noErrors, pendingPrivate],
+      views: [view(0)],
+    });
+    await story.step("reload-interrupted-send", {
+      actor: aliases[0],
+      description:
+        "Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable.",
+      action: async () => {
+        await second!.reload();
+      },
+      acknowledgement: {
+        spec: "Recovery opens the correct room and offers Retry same command with the original proposal intact.",
+        check: async () => {
+          await expect(
+            panel(second!).getByRole("heading", {
+              name: roomTitle,
+              exact: true,
+            }),
+          ).toBeVisible();
+          await expect(composer(second!)).toHaveValue(chosenText);
+          await expect(button(second!, "Retry same command")).toBeVisible({
+            timeout: 25000,
+          });
+        },
+      },
+      verifications: [
+        noErrors,
+        pendingPrivate,
+        {
+          spec: "The retry control remains fully visible before scrolling.",
+          check: async () =>
+            expect(button(second!, "Retry same command")).toBeInViewport({
+              ratio: 1,
+            }),
+        },
+      ],
+      views: [secondView],
+    });
+    await story.step("retry-original-message-command", {
+      actor: aliases[0],
+      description:
+        "Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending.",
+      action: async () => {
+        await button(second!, "Retry same command").focus();
+        await second!.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The interface returns to awaiting acknowledgement without clearing the proposal.",
+        check: async () => {
+          await expect(
+            button(second!, "Awaiting acknowledgement…"),
+          ).toBeDisabled();
+          await expect(composer(second!)).toHaveValue(chosenText);
+          await expect
+            .poll(() => heldSends.filter((w) => w.active()).length)
+            .toBeGreaterThan(0);
+        },
+      },
+      verifications: [noErrors, pendingPrivate],
+      views: [secondView],
+    });
+    await story.harness(
+      "restore-send-delivery",
+      "Release retained frames on still-active connections to actual RTDB ingress. Retransmissions retain their original command path and encrypted payload; no service result is injected.",
+      async () => {
+        holdingSend = false;
+        for (const entry of heldSends.filter((w) => w.active()))
+          entry.server.send(entry.raw);
+      },
+    );
+    const acknowledgedSend = {
+      spec: "One authoritative receipt, campaign revision and message sequence acknowledge the original command; private projections exclude its contents.",
+      check: async () => {
+        const state = await canonical();
+        expect(state.revision).toBe(sendBase.revision + 1);
+        expect(state.diplomacy.rooms[roomId].sequence).toBe(
+          sendBase.diplomacy.rooms[roomId].sequence + 1,
+        );
+        expect(state.diplomacy.rooms[roomId].message.body).toBe(chosenText);
+        expect(new Set(sendWrites.map((w) => w.p)).size).toBe(1);
+        for (const w of sendWrites) expect(w.d).toEqual(sendWrites[0].d);
+        const uid = state.seats[0].uid,
+          commandId = sendWrites[0].p.split("/").at(-1);
+        const receipt = await db
+          .doc(`campaignReceipts/${uid}/results/${commandId}`)
+          .get();
+        expect(receipt.get("status")).toBe("accepted");
+        expect(receipt.get("revision")).toBe(state.revision);
+        const { commandDigest } = require("./lib/shared/command-receipt.js");
+        expect(receipt.get("requestDigest")).toBe(
+          await commandDigest(
+            sendWrites[0].p.replace(/^\//, ""),
+            sendWrites[0].d,
+          ),
+        );
+        for (const seat of [1, 2])
+          expect(JSON.stringify(await published(seat))).not.toContain(
+            chosenText,
+          );
+      },
+    };
+    await story.step("observe-retried-message-acceptance", {
+      actor: aliases[0],
+      description:
+        "Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents.",
+      action: async () =>
+        readConversation(
+          second!,
+          panel(second!).getByRole("listitem").filter({ hasText: chosenText }),
+        ),
+      acknowledgement: {
+        spec: "The real service acknowledges Message sent and the submitted composer clears.",
+        check: async () => {
+          await expect(
+            panel(second!)
+              .getByRole("group", { name: "Conversation acknowledgement" })
+              .getByRole("status"),
+          ).toHaveText("Message sent.");
+          await expect(composer(second!)).toHaveValue("");
+        },
+      },
+      verifications: [
+        noErrors,
+        acknowledgedSend,
+        {
+          spec: "The acknowledged message is fully readable within bounded conversation details.",
+          check: async () =>
+            readConversation(
+              second!,
+              panel(second!)
+                .getByRole("listitem")
+                .filter({ hasText: chosenText }),
+            ),
+        },
+      ],
+      views: [secondView, view(2)],
+    });
+    await story.step("recover-acknowledged-send", {
+      actor: aliases[0],
+      description:
+        "Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared.",
+      action: async () => {
+        await second!.reload();
+        await open(second!);
+        await chooseRoom(second!);
+      },
+      acknowledgement: {
+        spec: "The sent proposal is retained in history without restoring a pending order or unsent text.",
+        check: async () => {
+          await expect(composer(second!)).toHaveValue("");
+          await expect(
+            panel(second!).getByRole("list", { name: "Authorized messages" }),
+          ).toContainText(chosenText);
+          await expect(button(second!, "Retry same command")).toHaveCount(0);
+        },
+      },
+      verifications: [
+        noErrors,
+        acknowledgedSend,
+        {
+          spec: "IndexedDB contains no unfinished order and motion preferences preserve the single accepted outcome.",
+          check: async () => {
+            const orders = await second!.evaluate(
+              async () =>
+                new Promise<unknown[]>((resolve, reject) => {
+                  const open = indexedDB.open("clusterii-recovery", 1);
+                  open.onerror = () => reject(open.error);
+                  open.onsuccess = () => {
+                    const db = open.result;
+                    const r = db
+                      .transaction("orders")
+                      .objectStore("orders")
+                      .getAll();
+                    r.onerror = () => reject(r.error);
+                    r.onsuccess = () => {
+                      db.close();
+                      resolve(r.result);
+                    };
+                  };
+                }),
+            );
+            expect(orders).toEqual([]);
+            await second!.emulateMedia({ reducedMotion: "no-preference" });
+            await expect(composer(second!)).toHaveValue("");
+            await second!.emulateMedia({ reducedMotion: "reduce" });
+            await readConversation(
+              second!,
+              panel(second!)
+                .getByRole("listitem")
+                .filter({ hasText: chosenText }),
+            );
+          },
+        },
+      ],
+      views: [secondView],
     });
   } finally {
     for (const ctx of contexts) await ctx.close();
