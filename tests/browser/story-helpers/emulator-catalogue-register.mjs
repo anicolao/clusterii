@@ -5,6 +5,14 @@ if (
   process.env.FUNCTIONS_EMULATOR === "true" &&
   process.env.GCLOUD_PROJECT === "demo-clusterii"
 ) {
+  register("./emulator-travel-clock-loader.mjs", import.meta.url, {
+    data: {
+      target: new URL(
+        "../../../functions/lib/shared/travel.js",
+        import.meta.url,
+      ).href,
+    },
+  });
   register("./emulator-fleet-clock-loader.mjs", import.meta.url, {
     data: {
       target: new URL(
