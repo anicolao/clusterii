@@ -1,0 +1,8 @@
+{"kind":"environment","elapsedMs":118.80341699999997,"source":"cf8449a722f212dd30a4caba14c1acc7ba5ef660","specSha256":"038832bb4e81b1bf9609e3610944a90872b3b4d8d0d9158108cba5b0a810301a","browser":"149.0.7827.55","platform":"darwin","architecture":"arm64","rendererArgs":["--use-angle=swiftshader","--enable-unsafe-swiftshader","--num-raster-threads=2","--disable-skia-runtime-opts","--run-all-compositor-stages-before-draw","--disable-checker-imaging","--disable-partial-raster","--disable-gpu-rasterization","--disable-gpu"],"viewport":{"width":393,"height":852},"clock":"ordinary-unmodified","totalBudgetMs":120000,"actionBudgetMs":10000}
+{"kind":"identity-ready","elapsedMs":13556.30725,"ordinal":1}
+{"kind":"identity-ready","elapsedMs":22065.78875,"ordinal":2}
+{"kind":"identity-ready","elapsedMs":34973.964584,"ordinal":3}
+{"kind":"identity-ready","elapsedMs":48485.853125,"ordinal":4}
+{"kind":"request-start","elapsedMs":49307.832459000005,"endpoint":"campaignSecurity"}
+{"kind":"response-finished","elapsedMs":56776.323042,"endpoint":"campaignSecurity","durationMs":7458.752833999999,"status":200}
+{"kind":"outcome","elapsedMs":61364.855125,"result":"failed","phase":"admission-1"}

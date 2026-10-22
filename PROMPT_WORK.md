@@ -664,3 +664,5 @@ Prompt 103 | 48f237276c60ef3d19ae11ce2aa4649aab00948fbcc22abffea1e89dc7a7d2d3 | 
 Prompt 103 | 48f237276c60ef3d19ae11ce2aa4649aab00948fbcc22abffea1e89dc7a7d2d3 | Record PR104 dependency and source fix with explicit failed admission and unexecuted browser acceptance gates.
 
 Prompt 104 | 6979cace6cffcf632ea8b9c16a42370ba4cd201a1c5b59481222a1ad517dfd6c | Record PR105 dependency and scoped ownership evidence with unresolved admission and unexecuted probe preserved.
+
+Prompt 105 | 61075108a923c8f09df1f09a7b76d04b0177a1cf1a388dc9df3fe4c53aca73d6 | Preserve the single pre-target admission probe failure and document absent target timing evidence without retry.
