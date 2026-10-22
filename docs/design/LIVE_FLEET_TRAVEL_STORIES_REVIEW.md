@@ -11,7 +11,7 @@ This successor to #60 illustrates ordinary route preparation, acknowledgement, a
 | Range / speed | Distinct range constraint and speed-derived duration using unrounded catalogue coordinates |
 | Test clock | Guarded demo-only `orderRoute` admission boundary; real leased service delivers departure/arrival |
 | Proposed rules | Existing ten-ly navigation level, two-ly/tick speed, capacity and arrival rules remain review choices, not new human approval |
-| Local candidates / exact | In progress; generation is not comparison |
+| Local candidates / exact | Four local journeys / 112 exact captures pass in 2.3 minutes after separate candidate review |
 | Guard checks | 17 story-policy/clock tests pass |
 | Linux / independent / hosted | Pending; exact current-head preview remains required |
 | Remaining | Interrupted route-draft restoration, batch catch-up/pause illustration, contested arrivals, managed keys and normal-motion live parity |
@@ -19,3 +19,5 @@ This successor to #60 illustrates ordinary route preparation, acknowledgement, a
 The current recovered outbox integration restores split/merge drafts into their production panel but does not restore a route draft into its planner. This slice therefore claims accepted-order recovery only. Cargo also proves accepted-order reload, not interrupted-draft recovery. Existing procedural route/recovery/pause/combat and motion assertions remain unchanged. No production state or outcome is injected, no game rule is approved, and no inherited baseline or comparison tolerance changes.
 
 Identity-raster diagnosis remains open. Identical post-capture layouts are not a fix; broad duplicate CI reruns are not launched into the documented runner backlog.
+
+Verified walkthroughs: [phone](../testing/stories/live-fleet-travel/phone/darwin-arm64/README.md), [desktop](../testing/stories/live-fleet-travel/desktop/darwin-arm64/README.md), [large](../testing/stories/live-fleet-travel/large/darwin-arm64/README.md), [short](../testing/stories/live-fleet-travel/short/darwin-arm64/README.md). Type checks report zero errors/warnings; thirteen prompt-history tests pass. Preview publication and exact-head verification remain pending.
