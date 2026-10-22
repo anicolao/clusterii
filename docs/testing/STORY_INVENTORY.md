@@ -335,3 +335,7 @@ The production route planner now distinguishes Discard draft from accepted-order
 ## Contextual route help
 
 UX-15 gains a production route chapter with shared range/speed/waypoint constants and explicit development-rule boundaries. Three named real-player steps cover keyboard opening, bounded first/final chapter reading and closing without changing the draft or canonical state. All four local strict journeys pass200 captures, preserving existing authoritative/privacy/recovery assertions. This completes one contextual chapter, not the full campaign menu, all rule chapters/settings or hosted/Linux/independent acceptance; inherited raster holds remain open.
+
+## Contextual construction guidance
+
+UX-05/15 gains a shared production construction chapter, including real selected quote/capacity, reservation, queue, refunds/control and completion focus. Five named keyboard reading/closing steps preserve complete canonical and owner/peer private views; ordinary and interrupted construction stories retain actual reservation, completion, cancellation, once-only ingress and recovery. Eight local strict journeys/200 captures pass in four sizes after separate candidate review. [Evidence](../design/CONTEXTUAL_CONSTRUCTION_HELP_REVIEW.md). This is one additional contextual chapter; complete menu/settings, other chapters and independent visual/Linux/hosted gates remain open.
