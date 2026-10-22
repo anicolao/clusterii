@@ -136,10 +136,27 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       primary: [button(page, i === 0 ? "Back to system" : "Back to galaxy")],
       verifications: [
         {
-          spec: "Each instrument’s actual return control stays visible before scrolling and the authoritative player view has no application error.",
+          spec: "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error.",
           check: async () => {
             await rail(page);
             expect(errors).toEqual([]);
+            if (i === 1) {
+              const interceptions = await page
+                .locator(".contact-label")
+                .evaluateAll((nodes) =>
+                  nodes
+                    .filter((node) => {
+                      const b = node.getBoundingClientRect();
+                      const hit = document.elementFromPoint(
+                        b.x + b.width / 2,
+                        b.y + b.height / 2,
+                      );
+                      return hit && node.parentElement?.contains(hit);
+                    })
+                    .map((node) => node.textContent),
+                );
+              expect(interceptions).toEqual([]);
+            }
           },
         },
       ],
@@ -177,6 +194,65 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
     await expect(selectedContact(p)).toContainText(
       "Route and destination are private.",
     );
+  };
+  const readFacts = async (
+    id: string,
+    report: FleetContact,
+    current: boolean,
+  ) => {
+    const p = pages[1],
+      before = await canonical();
+    const details = contacts(p).getByRole("region", {
+      name: "Contact details",
+      exact: true,
+    });
+    const caveat = selectedContact(p).getByText(
+      "Route and destination are private.",
+      { exact: true },
+    );
+    await story.step(id, {
+      actor: aliases[1],
+      description: current
+        ? "Scroll the bounded contact details to read the complete acquired complement, coordinates and privacy explanation alongside its observed tick."
+        : "Read the complete retained coordinates and complement beside the last-seen timestamp and explicit private-route explanation.",
+      action: async () => {
+        await rail(p);
+        await details.focus();
+        await caveat.scrollIntoViewIfNeeded();
+      },
+      acknowledgement: {
+        spec: "The full report values, age and privacy explanation are visible together inside the bounded details panel.",
+        check: async () => {
+          await matchContact(p, report, current);
+          const panel = await details.boundingBox();
+          expect(panel).not.toBeNull();
+          for (const item of [
+            selectedContact(p).locator(".observed"),
+            selectedContact(p).locator("dl"),
+            caveat,
+          ]) {
+            await expect(item).toBeInViewport({ ratio: 1 });
+            const b = await item.boundingBox();
+            expect(b).not.toBeNull();
+            expect(b!.y).toBeGreaterThanOrEqual(panel!.y);
+            expect(b!.y + b!.height).toBeLessThanOrEqual(
+              panel!.y + panel!.height,
+            );
+          }
+        },
+      },
+      verifications: [
+        {
+          spec: "Reading and keyboard focus do not write a command, reveal private routes or change authoritative forces/history.",
+          check: async () => {
+            expect(await canonical()).toEqual(before);
+            await privacy();
+            await expect(details).toBeFocused();
+          },
+        },
+      ],
+      views: views(),
+    });
   };
   try {
     for (let i = 0; i < 4; i++)
@@ -458,6 +534,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       ],
       views: views(),
     });
+    await readFacts("read-current-coordinates", acquired, true);
     const missedTick = Array.from(
       { length: 94 },
       (_, i) => i + acquiredTick + 1,
@@ -502,6 +579,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       ],
       views: views(),
     });
+    await readFacts("read-retained-coordinates", retained!, false);
     const beforeReload = await canonical();
     await story.step("reload-private-contact-history", {
       actor: aliases[1],
