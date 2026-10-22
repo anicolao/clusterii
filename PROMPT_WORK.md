@@ -410,3 +410,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | R
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive only three passing arrival stories, retain the short seven-pixel strict hold and resource blocker, and carry current supervisory checkpoints into the draft.
 
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link draft PR 70 and its dependency, strict raster hold, resource limit and unverified preview without claiming complete four-viewport acceptance.
+
+Prompt 68 | 8b67979370916e4469fc162c407af05a190c26565e178208032fcacb3468ff98 | Preserve second isolated telemetry comparison and unresolved framebuffer/compositor cause gate
