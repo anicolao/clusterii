@@ -1,3 +1,4 @@
+import { observeDeparture } from "./story-helpers/campaign-departure";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
@@ -44,6 +45,7 @@ for (const managed of [false, true]) {
       description:
         "A saved developer reviews the actual provider availability, chooses the disclosed encryption mode, creates and joins a campaign, reloads its acknowledged seat and leaves. Fixed catalogue entropy is test-only; commands, authorization, encryption, persistence and recipient delivery remain real. Managed runs use actual Cloud KMS and are separate from default CI; emulated login does not certify hosted Google authentication.",
     });
+    const departure = observeDeparture(page);
     const name = `${managed ? "Managed" : "Inspectable"} dawn ${info.project.name}`;
     const views = [{ page, player: "Cipher envoy", surface: "game" as const }];
     let campaignUrl = "",
@@ -238,7 +240,7 @@ for (const managed of [false, true]) {
             page.getByText("Your seat has been released.", { exact: true }),
           ).toBeVisible(),
       },
-      verifications: [state(3)],
+      verifications: [state(3), departure],
       views,
     });
   });
