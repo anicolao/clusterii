@@ -373,3 +373,9 @@ The campaign-admission-navigation and encryption-unavailable stories now disting
 ## Live research guidance and native radio containment
 
 `research-guidance.story.spec.ts` adds ten named steps reading all eight current-capability effects through real saved campaign views. Four local strict cases48 captures retain canonical/private/receipt equality, focus and actual radio hit testing; four shared research-lab cases96 captures retain acknowledged fixture states and motion parity. [Scope and diagnosed geometry failures](../design/RESEARCH_GUIDANCE_REVIEW.md). Live submission/completion migration and historical-capability browser cases remain open; this does not replace service/procedural assertions or close independent/Linux/hosted/raster gates.
+
+## Prepared live research order migration — execution pending
+
+research-orders.story.spec.ts prepares UX-06/14/16 with named keyboard selection, unsent panel restoration, real accepted receipt/digest/effective tick, accepted-order reload, ordered switch and a disconnected second-device stale conflict. Read-only IndexedDB/ingress/receipt checks bind the original encrypted command through reconnect; peer science/resources and serialized privacy assertions remain. This is stale-revision concurrency, not simultaneous admission or lost-accepted-acknowledgement proof.
+
+The source typechecks and guarded clock/policy tests pass. No browser run, candidate, generated story document or visual acceptance exists yet: disk remains below2GiB. Do not count these source-only steps as migrated acceptance or remove procedural production/research tests. Completion, overflow, all-eight effects, explicit retry, same-campaign account/access races and independent/Linux/hosted gates remain open. See [research order review](../design/RESEARCH_ORDERS_STORY_REVIEW.md).

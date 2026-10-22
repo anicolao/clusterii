@@ -15,6 +15,10 @@ export async function load(url, context, nextLoad) {
   let source = String(result.source);
   const replacements = [
     [
+      "export function selectResearch(current, input, uid, commandId, now) {",
+      'if (current.name?.startsWith("Scheduled story research orders ") && Number.isSafeInteger(current.economy?.nextTickAt)) now = current.economy.nextTickAt - 900000 + 1;',
+    ],
+    [
       "export function maintainCampaign(current, input, uid, now) {",
       'if (current.name?.startsWith("Scheduled story fleet catchup " ) && current.economy) now = current.pausedAt == null ? current.economy.nextTickAt - 900000 + 1 : current.pausedAt + 3600000;',
     ],
