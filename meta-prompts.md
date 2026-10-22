@@ -1285,3 +1285,33 @@ Reviewer continuation 2026-10-21 20:59 Toronto: #60 is published clean03a2a8e on
 Agent healthy at clean842d306 reviewing four-viewpoint travel candidates after generation passed2.4min; exact comparison and PR publication remain pending. No duplicate prompt during active work/compaction. Independently read demo-only exact-signature orderRoute clock loader and ran its two guard tests successfully. No production diff in slice. Review explicitly excludes interrupted route-draft restoration and retains procedural coverage; accepted-order reload is not that recovery. Independently viewed phone recovered-arrival candidate: Tupa stationed fleet, two fighters, zero embarked infantry, capacity20 and fixed disband rail readable; accepted-orders content continues in bounded scroll region. This sample is not full visual approval.
 
 #49 application checks now green and Linux stories running; #50 application running; latest successors queued. No new actionable completed failure. Carry this checkpoint into committed/pushed logs at next natural commit. Identity raster, Linux/current-head previews and full release acceptance remain open. No merge.
+
+
+## Reviewer progress — 2026-10-21 21:19 Toronto
+
+#61 6504a4a published on #60 and attached. Clean checkout, idle since21:17. Four strict local journeys112 exact captures2.3min archived; candidate generation was2.4min. Independently inspected recovery plumbing: only fleet.split/merge reaches recoveredFleet; routeDrafts remains local in Galaxy. Resume concrete interrupted-route recovery gap, preserving same-command semantics. CI latest queued; #49 story and #50 application still running, no new completed failure. Full visual/Linux/preview/raster/release acceptance remains open.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-21 21:19 Toronto: #61 published clean6504a4a on #60, pane idle. Continue a small successor addressing interrupted route-command recovery. Independent inspection confirms campaigns/+page.svelte restores fleet.split/merge only, while Galaxy keeps routeDrafts locally; UX_DESIGN recovery requires preserved route choices while access remains valid and same-command discovery/retry. First reproduce interruption before/after acknowledgement with TestStepHelper, then restore the accessible matching campaign/fleet and original route without inventing state, duplicating command identity, or overwriting a newer user edit. Verify stale/retired fleet and access-loss handling, authoritative receipts/conservation/privacy, four viewport keyboard captures and unchanged procedural regressions. Distinguish durable submitted-command recovery from unsent memory-only drafts. Preserve rule boundaries, exact comparisons, targeted raster diagnosis and exact-head preview gates; no broad duplicate CI. Carry checkpoints through21:19 into attributed PROMPTS/PROMPT_WORK and committed/pushed meta logs. Continue useful independent work while CI waits; no merge.
+
+
+## Reviewer progress — 2026-10-21 21:29 Toronto
+
+Agent active at local7af3de0 fixing and verifying interrupted-route recovery; no duplicate intervention. Independently reviewed production diff: fleet.route now reaches recovery context; matching authorized campaign/fleet selection, copied submitted waypoints only when no local draft exists, intentional empty/newer drafts preserved, receipt-before-view context retained and new-command clearing. Unit guard coverage includes retired fleet and unavailable/other-player projections. All-four original missing-planner reproduction retained. First fix generation failed on strict scroll containment and an over-specific transport-frame count; agent is addressing these while retaining logical command identity/payload/effect checks. No passing exact or full visual acceptance claimed yet.
+
+Latest CI unchanged: #49 story and #50 application running, successors queued; no new completed actionable failure. Carry checkpoint into committed/pushed logs at next natural commit. Raster, Linux/current-preview and full release gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-21 21:39 Toronto
+
+Agent healthy at locale6e3b76 generating corrected interrupted-route stories; phone passed, remaining viewports in progress. Read production follow-up: retain route context for rejected as well as accepted receipts arriving before private view, while authorized-fleet guard remains. Independently viewed phone pending-reload candidate: restored Tupa leg3.50ly/two ticks, range10ly distinct from speed2ly/tick, awaiting acknowledgement and disabled Send fleet with manifest summary visible. Full candidate/exact/regression acceptance pending. No duplicate interruption.
+
+#48 all checks now green. #49 Linux verify completed with two known1994-pixel short identity mismatches: identity-receipt-recovery/002-first-draft and session-cancelled-confirmation/002-account-entry; job119533541377 logs retained /tmp/cluster49-2139-failure.log (fetched job directly because generation sibling still queued). This is additional recurrence, not a new diagnosis or permission to update baselines. #50 application running, successors queued. Carry checkpoint into committed/pushed logs; targeted raster, Linux/current-preview/full release gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-21 21:49 Toronto
+
+Agent healthy at b9661d8 running exact interrupted-route plus unchanged travel/reorganization checks after four candidate journeys160 captures4.0min. Read candidate provenance: source1360478 and identical spec hash throughout; later dirty manifests attributed to a documentation-only edit, not renderer/test changes. Read boundary evidence distinguishing authenticated original-payload offline delivery, bound receipt and durable cleanup from admin injection, and unit-only retired-fleet/newer-draft guards from unproven live races. Exact/procedural results and publication still pending; no duplicate intervention.
+
+#50 application now green; #51 generation green and application running, verification queued. No newly completed failure beyond recorded #49 raster recurrence. Carry checkpoint into committed/pushed logs. Full independent visual/Linux/current-preview/raster/release acceptance remains open; no merge.

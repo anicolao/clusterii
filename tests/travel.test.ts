@@ -550,3 +550,30 @@ test("arrival history deduplicates repeated snapshots while retaining older reco
   ).toEqual(view.military!.arrivals![0]);
   expect(arrivalRecords([campaignView(arrived, "p2")])).toEqual([]);
 });
+
+test("submitted route recovery requires the accessible matching fleet and preserves newer local edits", async () => {
+  const { fleetRecoveryTarget, recoveredRouteDraft } = await import("../src/lib/fleet-feedback");
+  const { c, id, first, second } = formed();
+  const recovered = { gameId: c.id, id: "original-route", action: {
+    kind: "fleet.route" as const, expectedRevision: c.revision,
+    fleetId: id, waypoints: [first.id],
+  }};
+  const view = campaignView(c, "p0");
+  expect(fleetRecoveryTarget(view, recovered)?.id).toBe(id);
+  expect(fleetRecoveryTarget(null, recovered)).toBeNull();
+  expect(fleetRecoveryTarget(campaignView(c, "p1"), recovered)).toBeNull();
+  expect(fleetRecoveryTarget({...view, id: "different"}, recovered)).toBeNull();
+  const retired = advance(orderFleet(c, {kind:"fleet.disband", expectedRevision:c.revision, fleetId:id}, "p0", "retire", 0));
+  expect(fleetRecoveryTarget(campaignView(retired,"p0"), recovered)).toBeNull();
+  expect(() => route(retired, id, [first.id])).toThrow();
+  const original = recovered.action.waypoints;
+  const restored = recoveredRouteDraft(undefined, original);
+  expect(restored).toEqual([first.id]);
+  expect(restored).not.toBe(original);
+  restored.push(second.id);
+  expect(original).toEqual([first.id]);
+  expect(recoveredRouteDraft(restored, original)).toBe(restored);
+  const cleared: string[] = [];
+  expect(recoveredRouteDraft(cleared, original)).toBe(cleared);
+  expect(recoveredRouteDraft(undefined, original)).toEqual([first.id]);
+});

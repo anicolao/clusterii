@@ -1,5 +1,6 @@
 <script lang="ts">
-  import type { RecoveredFleetReorganization } from "$lib/fleet-feedback";
+  import { fleetRecoveryTarget } from "$lib/fleet-feedback";
+  import type { RecoveredFleetCommand } from "$lib/fleet-feedback";
   import { tick } from "svelte";
   import { base } from "$app/paths";
   import type { CampaignView } from "@shared/campaign";
@@ -34,7 +35,7 @@
     selected?: string | null;
     routeDrafts?: Record<string, string[]>;
     view: CampaignView;
-    recoveredFleet?: RecoveredFleetReorganization | null;
+    recoveredFleet?: RecoveredFleetCommand | null;
     starId: string;
     pending?: boolean;
     busy?: boolean;
@@ -73,7 +74,7 @@
       !recovered ||
       recovered.gameId !== view.id ||
       resumedReorganization === recovered.id ||
-      !view.military?.fleets.some((f) => f.id === recovered.action.fleetId)
+      !fleetRecoveryTarget(view, recovered)
     )
       return;
     resumedReorganization = recovered.id;
@@ -82,9 +83,11 @@
       operation = "split";
       splitFighters = recovered.action.fighters;
       splitInfantry = recovered.action.infantry;
-    } else {
+    } else if (recovered.action.kind === "fleet.merge") {
       operation = "merge";
       targetId = recovered.action.targetFleetId;
+    } else {
+      routing = true;
     }
   });
   let routing = $state(false);

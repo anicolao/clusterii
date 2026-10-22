@@ -1,5 +1,9 @@
 <script lang="ts">
-  import type { RecoveredFleetReorganization } from "$lib/fleet-feedback";
+  import {
+    fleetRecoveryTarget,
+    recoveredRouteDraft,
+  } from "$lib/fleet-feedback";
+  import type { RecoveredFleetCommand } from "$lib/fleet-feedback";
   import type { RecoveredConstruction } from "$lib/construction-feedback";
   import type { RecoveredTrade } from "$lib/credit-offers";
   import { tick, onDestroy, untrack } from "svelte";
@@ -116,7 +120,7 @@
     } | null;
     recoveredTrade?: RecoveredTrade | null;
     recoveredConstruction?: RecoveredConstruction | null;
-    recoveredFleet?: RecoveredFleetReorganization | null;
+    recoveredFleet?: RecoveredFleetCommand | null;
     accountId?: string;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
@@ -152,10 +156,13 @@
       return;
     // Restore only an accessible owned fleet. Missing/retired fleets retain the
     // global receipt recovery remedy; never fabricate a manifest from a draft.
-    const fleet = view.military?.fleets.find(
-      (f) => f.id === recovered.action.fleetId,
-    );
-    if (!fleet || !view.stars.some((s) => s.id === fleet.starId)) return;
+    const fleet = fleetRecoveryTarget(view, recovered);
+    if (!fleet) return;
+    if (recovered.action.kind === "fleet.route")
+      routeDrafts[fleet.id] = recoveredRouteDraft(
+        routeDrafts[fleet.id],
+        recovered.action.waypoints,
+      );
     resumedFleet = recovered.id;
     selected = fleet.starId;
     selectedFleet = fleet.id;
