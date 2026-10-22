@@ -1771,3 +1771,12 @@ Reviewer continuation 2026-10-22 09:09 Toronto: #83 00748d3 attached and publica
 Agent healthy at5ae496e correcting voluntary Leave regression. Independently reviewed58d2179: unconditional private-view fence remains; matching pending Leave retains receipt-driven outcome, and accepted Leave retires local membership/draft before a later snapshot. Independently viewed phone006 encryption-unavailable: successful seat-release message and Claim your seat action, no false access-loss banner. Both phone stories pass original expected images plus accepted-receipt/read-denied assertions; remaining aggregate and scoped revocation results being finalized. No new baseline approval or broad acceptance inferred.
 
 #82 Linux verification failed; retained job119813484417 log /tmp/cluster82-0919-verify.log.59 missing baselines, same12 pixel reports including paired per-size Leave mismatches and inherited4 others. Carry checkpoint into committed/pushed attributed logs at natural boundary. No interruption/duplicate prompt, no merge; independent visual/Linux/hosted and original raster/full-release gates remain open.
+
+
+## Reviewer continuation — 2026-10-22 09:29 Toronto
+
+#84 12f9591 attached on #83, clean pushed;12 local exact journeys140 captures retain original baselines. Independent source/phone review remains scoped, Linux/hosted/full acceptance open. Agent idle with no queued input.
+
+Exact handoff:
+
+Reviewer continuation 2026-10-22 09:29 Toronto: #84 12f9591 attached, clean idle. Source/phone departure correction independently reviewed;12 local journeys140 exact captures recorded without baseline changes. Continue on a small stacked successor to #84 with remaining live draft lifecycle evidence: same-browser different-account reuse and/or guarded late-view membership revocation from MARKET_DRAFT_LIFECYCLE_PLAN. Prioritize proof that old callbacks cannot restore protected draft state; preserve real service authorization, explicitly label administrative faults, use fail-closed demo-only controls and exact restoration, never invent active Leave gameplay. Keep scope small, validate guarded harness before execution, and retain original sign-out/departure regression protections. Continue broader approved plan after the slice rather than stopping at each PR. Carry checkpoints through09:29 into reviewer-attributed committed/pushed logs. Recheck disk before captures; preserve independent visual/Linux/hosted and original raster gates. No merge.

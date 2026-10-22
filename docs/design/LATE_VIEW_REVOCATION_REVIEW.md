@@ -1,0 +1,9 @@
+# Late private-view membership revocation
+
+Small successor to #84. Reviewer Prompt79 and09:29 checkpoint authorize this guarded lifecycle evidence. The separate same-browser account-switch story remains open.
+
+The new TestStepHelper story creates a real four-player development campaign, edits blank/73 market intent, and recovers the same campaign through keyboard controls. A test-only gate holds the actual native digest result for that owner's encrypted private view. The guarded administrative transaction removes only memberUids authorization and its matching membership document. Real rules must deny the player's read; the existing access-loss remedy must replace protected controls. Releasing the original digest must not reopen the view. Compare-and-set restoration then ordinary recovery must produce authoritative25-point fields, not the old draft. No active Leave, game state, command, receipt, private view, history or resource is injected.
+
+Four guard tests pass before execution: runtime/source confinement, exact mutation scope, invalid-target rejection and refusal to restore over concurrent changes. All32 story-policy tests pass. Source checks pin the actual crypto/session implementations, preserve native digest output and keep both service and route fences active. The fault does not independently attribute protection to one of those two fences. Exact restored head/membership, complete canonical history, owner/peer projections, receipts and identity are checked. Original sign-out and voluntary-departure stories remain unchanged and require scoped regressions.
+
+Browser generation/exact comparison and visual review remain pending. Recheck the2GiB storage gate before each cohort. Linux/independent visual/hosted and original raster holds remain open; no gameplay-rule approval or merge.
