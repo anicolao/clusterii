@@ -499,6 +499,7 @@ test("Live fleet reorganization recovers one private split and conserves forces"
         await panel(owner)
           .getByLabel("Infantry to split", { exact: true })
           .fill("0");
+        await read(owner, panel(owner).locator(".counts"));
       },
       acknowledgement: {
         spec: "Split is disabled because both complements must retain transport capacity.",
@@ -529,6 +530,7 @@ test("Live fleet reorganization recovers one private split and conserves forces"
         await panel(owner)
           .getByLabel("Infantry to split", { exact: true })
           .fill("8");
+        await read(owner, panel(owner).locator(".preview"));
         await button(owner, "Split fleet").focus();
       },
       acknowledgement: {
@@ -599,6 +601,7 @@ test("Live fleet reorganization recovers one private split and conserves forces"
           ).toHaveValue("8");
           await expect(button(owner, "Split fleet")).toBeDisabled();
           await expect.poll(() => writes.length).toBeGreaterThanOrEqual(2);
+          await read(owner, panel(owner).locator(".preview"));
         },
       },
       verifications: [
@@ -759,6 +762,7 @@ test("Live fleet reorganization recovers one private split and conserves forces"
         await panel(owner)
           .getByRole("combobox", { name: "Receiving fleet" })
           .selectOption({ label: `${fleetName} · 3 fighters · 10 infantry` });
+        await read(owner, panel(owner).locator(".preview"));
         await button(owner, "Merge fleets").focus();
       },
       acknowledgement: {
