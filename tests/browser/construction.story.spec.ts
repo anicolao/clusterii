@@ -322,6 +322,19 @@ for (const interrupted of [false, true])
         await rail(peer);
         expect(errors).toEqual([]);
       };
+      const readFocus = async (target: Locator) => {
+        await focusRail();
+        const region = focusPanel.getByRole("region", {
+          name: "Focus allocation details",
+        });
+        await region.focus();
+        await target.scrollIntoViewIfNeeded();
+        const a = await region.boundingBox(),
+          b = await target.boundingBox();
+        expect(b).not.toBeNull();
+        expect(b!.y).toBeGreaterThanOrEqual(a!.y);
+        expect(b!.y + b!.height).toBeLessThanOrEqual(a!.y + a!.height);
+      };
       const returnToConstruction = async () => {
         await button(owner, "Back to economy").click();
         await expect(button(owner, "Market focus")).toBeFocused();
@@ -674,6 +687,11 @@ for (const interrupted of [false, true])
               await expect(focusPanel).toContainText(
                 "Applies tick 1 · dividends from tick 2",
               );
+              await readFocus(
+                focusPanel
+                  .getByRole("listitem")
+                  .filter({ hasText: "Applies tick 1" }),
+              );
             },
           },
           verifications: [
@@ -726,6 +744,11 @@ for (const interrupted of [false, true])
                 focusPanel.getByLabel("Training camp points", { exact: true }),
               ).toHaveValue("100");
               await expect(focusPanel).toContainText("Applies tick 1");
+              await readFocus(
+                focusPanel
+                  .getByRole("listitem")
+                  .filter({ hasText: "Applies tick 1" }),
+              );
             },
           },
           verifications: [
