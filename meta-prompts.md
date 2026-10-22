@@ -1430,3 +1430,21 @@ Reviewer continuation 2026-10-22 01:29 Toronto: pane idle after logging findings
 Agent healthy implementing label-placement successor at fff5be0 after40742c9 and2be1ffa; no duplicate prompt or interruption. Independently reviewed measured-bound placement, deterministic selected/home/owned priorities, offscreen handling and observer cleanup. Independently viewed fresh phone018 recovered observation candidate: Tupã and Tania Australis now separated and observation facts readable. This resolves the sampled overlap only; full composition and remaining viewport/exact/hosted acceptance are not inferred. Agent reports four candidate journeys passing and is continuing separate promotion/exact verification; shared contact-chart viewport correction is included in latest commit.
 
 Carry this checkpoint into committed/pushed logs at the next natural boundary. Full implementation/release, Linux resource/raster and exact-head preview gates remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 01:49 Toronto
+
+#67 c4a5cac published on #66 and attached. Reviewed candidate/exact provenance: four exact local journeys72 captures and shared viewport correction; independent phone sample remains limited acceptance. Agent healthy checking affected navigation story; no interruption. #63 application now green; #64/#65 Linux verification running. #65 publication newly failed exact-head757d423 with HTTP404, independently read job119648365097 log. Full release gates open.
+
+Exact queued handoff:
+
+Reviewer checkpoint 2026-10-22 01:49 Toronto: #67 c4a5cac attached; reviewed scope/provenance and prior production diff, sampled phone collision resolved only. New #65 publish job119648365097 failed exact-head757d423 check with HTTP404 at05:44UTC, same symptom as #61; retain publication gate and diagnose existing Pages deployment at a natural boundary without duplicate publishes or weaker checks. Continue healthy navigation/shared-renderer verification. Carry main meta checkpoints through01:49 into committed/pushed logs and attributed continuations. Preserve evidence under low disk headroom; no merge.
+
+
+## Reviewer progress — 2026-10-22 01:59 Toronto
+
+Agent healthy at0d9150f validating navigation/observation exact comparisons after pointer-wrapper correction b82cdf8. Independently reviewed production pointer-events change and actual elementFromPoint assertion; scope is decorative labels only. Prior01:49 handoff remains queued, not duplicated.
+
+Exact new evidence handoff:
+
+Reviewer CI finding 2026-10-22 01:59 Toronto: independently read completed #65 stories verify job119644812733 via jobs logs API (overall generation still queued). /tmp/cluster65-0158-failure.log shows every viewport29 passed and12 failed; all48 reported failures are missing reviewed Linux baselines, with no other Error entries beyond orchestration failures. This is evidence of improved bounded-cohort/setup execution in this run, not complete service or raster certification. Review matching-head generated Linux candidates when available; never promote failed verification output. Carry this and main checkpoints into committed/pushed attributed logs; continue current healthy work, no merge.
