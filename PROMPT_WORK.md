@@ -510,3 +510,5 @@ Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | C
 Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | Verify retained-view denial with actual departed-player credentials after correcting the storage-deletion test assumption
 
 Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | Archive140 exact captures across departure and revocation stories while retaining both failure cohorts and unchanged baselines
+
+Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | Link PR84 and carry09:19 scoped source and phone review while retaining Linux and preview gates
