@@ -1,3 +1,5 @@
+import { mkdir, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
@@ -1032,6 +1034,35 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
           await archiveChecks[0].check();
           await body(owner).focus();
           await part.target.scrollIntoViewIfNeeded();
+          const before = {
+            section: await part.target.boundingBox(),
+            panel: await body(owner).boundingBox(),
+          };
+          const { section: b, panel: a } = before;
+          if (b!.y < a!.y || b!.y + b!.height > a!.y + a!.height)
+            await part.target.evaluate((element) =>
+              element.scrollIntoView({
+                block: "center",
+                inline: "nearest",
+                behavior: "instant",
+              }),
+            );
+          const path = info.outputPath(`arrival-${part.id}-scroll-bounds.json`);
+          await mkdir(dirname(path), { recursive: true });
+          await writeFile(
+            path,
+            JSON.stringify({
+              before,
+              after: {
+                section: await part.target.boundingBox(),
+                panel: await body(owner).boundingBox(),
+              },
+            }),
+          );
+          await info.attach(`arrival-${part.id}-scroll-bounds`, {
+            path,
+            contentType: "application/json",
+          });
         },
         acknowledgement: {
           spec: "The named report facts are fully visible inside the bounded panel and match the single authoritative outcome.",
@@ -1085,14 +1116,20 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
             behavior: "instant",
           }),
         );
-        await info.attach("arrival-disclosure-scroll-bounds", {
-          body: JSON.stringify({
+        const path = info.outputPath("arrival-disclosure-scroll-bounds.json");
+        await mkdir(dirname(path), { recursive: true });
+        await writeFile(
+          path,
+          JSON.stringify({
             before,
             after: {
               section: await section.boundingBox(),
               panel: await body(owner).boundingBox(),
             },
           }),
+        );
+        await info.attach("arrival-disclosure-scroll-bounds", {
+          path,
           contentType: "application/json",
         });
       },
