@@ -622,3 +622,96 @@ Acknowledged outcome: Only the original account recovers its private room and un
 ### Viewpoint: Outer witness
 
 [![Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)
+
+## 46. Invite the removed commander again, explicitly choosing only messages sent after acceptance. The unsent browser note is not shared by this choice.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The invitation offers future-only scope with no selected earlier messages.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Selecting scope sends no command or campaign mutation.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Invite the removed commander again, explicitly choosing only messages sent after acceptance. The unsent browser note is not shared by this choice. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/046-choose-future-only-readmission-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/046-choose-future-only-readmission-1-nacre-envoy-second-tab.png)
+
+## 47. Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: The returning commander receives an invitation explaining future-only access.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.
+- [x] One revision adds only an invitation, not membership or a message.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/047-offer-renewed-conversation-access-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/047-offer-renewed-conversation-access-1-nacre-envoy-second-tab.png)
+
+### Viewpoint: Dawn listener
+
+[![Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/047-offer-renewed-conversation-access-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/047-offer-renewed-conversation-access-2-dawn-listener.png)
+
+### Viewpoint: Outer witness
+
+[![Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/047-offer-renewed-conversation-access-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/047-offer-renewed-conversation-access-3-outer-witness.png)
+
+## 48. Accept the renewed invitation by keyboard. Membership resumes for future messages without granting the missing interval.
+
+Actor: **Dawn listener**.
+
+Acknowledged outcome: The returned member receives an enabled composer.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.
+- [x] Exactly one acceptance revision restores membership without creating a message.
+
+### Viewpoint: Dawn listener
+
+[![Accept the renewed invitation by keyboard. Membership resumes for future messages without granting the missing interval. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/048-accept-renewed-future-access-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/048-accept-renewed-future-access-1-dawn-listener.png)
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Accept the renewed invitation by keyboard. Membership resumes for future messages without granting the missing interval. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/048-accept-renewed-future-access-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/048-accept-renewed-future-access-2-nacre-envoy-second-tab.png)
+
+## 49. Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted.
+
+Actor: **Nacre envoy**.
+
+Acknowledged outcome: Message sent is acknowledged and the returned member receives the welcome.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.
+- [x] One new message reaches exactly the current members, with no outsider disclosure.
+
+### Viewpoint: Nacre envoy · second tab
+
+[![Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/049-send-after-renewed-consent-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/049-send-after-renewed-consent-1-nacre-envoy-second-tab.png)
+
+### Viewpoint: Dawn listener
+
+[![Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/049-send-after-renewed-consent-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/049-send-after-renewed-consent-2-dawn-listener.png)
+
+### Viewpoint: Outer witness
+
+[![Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/049-send-after-renewed-consent-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/049-send-after-renewed-consent-3-outer-witness.png)
+
+## 50. Reload the returning commander's campaign and read the welcome. Renewed access preserves its boundary across recovery and motion preferences.
+
+Actor: **Dawn listener**.
+
+Acknowledged outcome: The returned member recovers the welcome in authorized history.
+
+- [x] No viewpoint has an uncaught application error.
+- [x] Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.
+- [x] Reload changes no message or membership revision and keeps the welcome readable without exposing the absence interval.
+
+### Viewpoint: Dawn listener
+
+[![Reload the returning commander's campaign and read the welcome. Renewed access preserves its boundary across recovery and motion preferences. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/050-recover-renewed-message-boundary-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/050-recover-renewed-message-boundary-1-dawn-listener.png)
+
+### Viewpoint: Outer witness
+
+[![Reload the returning commander's campaign and read the welcome. Renewed access preserves its boundary across recovery and motion preferences. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/050-recover-renewed-message-boundary-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/050-recover-renewed-message-boundary-2-outer-witness.png)

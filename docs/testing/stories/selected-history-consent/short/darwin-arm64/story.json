@@ -8,10 +8,10 @@
   ],
   "description": "Independent commanders use authenticated development-provider commands. The creator shares one of two earlier messages; the recipient reviews and accepts its scope, then reloads. An uninvolved commander never receives the room or either message. Admission uses the labelled emulator clock and actual scheduler endpoint, not injected state. Managed-key and fault journeys remain separate coverage.",
   "source": {
-    "commit": "ad3e438846e4253a3e079e322528b5f562518cb4",
+    "commit": "1f7830914be1d571bacd43fb5f72a0e0dcf4e2b3",
     "dirty": false,
     "spec": "tests/browser/selected-history.story.spec.ts",
-    "specSha256": "ef3de409fd2017a632fccac05764ba6514f0a4e92725ed59c418b1cfa492e6ea"
+    "specSha256": "9c1386fa99f41420f0e0cfc2b2963b343e351f46508076461c3c714e326606ab"
   },
   "mode": "verify",
   "status": "passed",
@@ -885,6 +885,130 @@
         {
           "player": "Outer witness",
           "image": "045-restore-original-account-draft-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-future-only-readmission",
+      "description": "Invite the removed commander again, explicitly choosing only messages sent after acceptance. The unsent browser note is not shared by this choice.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The invitation offers future-only scope with no selected earlier messages.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Selecting scope sends no command or campaign mutation."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "046-choose-future-only-readmission-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "offer-renewed-conversation-access",
+      "description": "Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The returning commander receives an invitation explaining future-only access.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.",
+        "One revision adds only an invitation, not membership or a message."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "047-offer-renewed-conversation-access-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "047-offer-renewed-conversation-access-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "047-offer-renewed-conversation-access-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "accept-renewed-future-access",
+      "description": "Accept the renewed invitation by keyboard. Membership resumes for future messages without granting the missing interval.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The returned member receives an enabled composer.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.",
+        "Exactly one acceptance revision restores membership without creating a message."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "048-accept-renewed-future-access-1-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "048-accept-renewed-future-access-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "send-after-renewed-consent",
+      "description": "Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Message sent is acknowledged and the returned member receives the welcome.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.",
+        "One new message reaches exactly the current members, with no outsider disclosure."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy · second tab",
+          "image": "049-send-after-renewed-consent-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "049-send-after-renewed-consent-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "049-send-after-renewed-consent-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-renewed-message-boundary",
+      "description": "Reload the returning commander's campaign and read the welcome. Renewed access preserves its boundary across recovery and motion preferences.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The returned member recovers the welcome in authorized history.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Renewed access never reveals unshared or absence-period messages in the returning player's UI or serialized projection.",
+        "Reload changes no message or membership revision and keeps the welcome readable without exposing the absence interval."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "050-recover-renewed-message-boundary-1-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "050-recover-renewed-message-boundary-2-outer-witness.png",
           "verifications": []
         }
       ]
