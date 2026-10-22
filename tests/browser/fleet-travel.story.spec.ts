@@ -666,6 +666,9 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         await routeRead(helpSummary);
         await helpSummary.focus();
         await helpSummary.press("Enter");
+        await helpSummary.evaluate((element) =>
+          element.scrollIntoView({ block: "start", behavior: "instant" }),
+        );
       },
       acknowledgement: {
         spec: "The contextual guide expands through keyboard input and explains actual shared range, speed and proposed development rules.",
@@ -695,6 +698,48 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
             expect(b!.y + b!.height).toBeLessThanOrEqual(
               owner.viewportSize()!.height,
             );
+          },
+        },
+      ],
+      views: views(),
+    });
+    await story.step("read-arrival-rule-boundaries", {
+      actor: aliases[0],
+      description:
+        "Scroll within the rule chapter to read the distinction between orbit and surface control, and the warning about stale intelligence.",
+      action: async () => {
+        await routeRead(
+          routeHelp.getByRole("heading", { name: "Arrival and uncertainty" }),
+        );
+        await routeHelp
+          .locator("p")
+          .filter({ hasText: "Winning orbit alone" })
+          .evaluate((element) =>
+            element.scrollIntoView({ block: "end", behavior: "instant" }),
+          );
+      },
+      acknowledgement: {
+        spec: "The final rule paragraph is fully visible within the bounded route details while the commitment rail remains on screen.",
+        check: async () => {
+          const lastParagraph = routeHelp
+            .locator("p")
+            .filter({ hasText: "Winning orbit alone" });
+          await expect(lastParagraph).toBeInViewport({ ratio: 1 });
+          const a = await details.boundingBox(),
+            b = await lastParagraph.boundingBox();
+          expect(b!.y).toBeGreaterThanOrEqual(a!.y);
+          expect(b!.y + b!.height).toBeLessThanOrEqual(a!.y + a!.height);
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Reading the complete chapter preserves the unsent route and canonical state under normal and reduced motion.",
+          check: async () => {
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            expect(await canonical()).toEqual(formed!);
+            await expect(routeList).toContainText(targetName);
+            await owner.emulateMedia({ reducedMotion: "reduce" });
           },
         },
       ],

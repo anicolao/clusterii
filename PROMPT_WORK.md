@@ -460,3 +460,5 @@ Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | R
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Add contextual fleet-route rules using shared production constants and preserve drafts while reading help.
 
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Correct the help journey scrolling helper focus side effect while retaining keyboard-focus assertions.
+
+Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Give contextual route help readable bounded first and final chapter captures without changing native focus.
