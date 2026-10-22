@@ -1,6 +1,6 @@
 # Interrupted route recovery review
 
-Successor to #61. A submitted route is durable command state; an unsent route remains a local draft. Recovery selects only the matching campaign and a fleet present in the current authorized private projection. It restores the original submitted waypoints once, preserves newer local choices (including an empty route), and never manufactures a retired fleet. Receipt discovery may precede the private view, so accepted route recovery retains its selection context until that view arrives. A new command clears the old recovery context.
+Successor to #61. A submitted route is durable command state; an unsent route remains a local draft. Recovery selects only the matching campaign and a fleet present in the current authorized private projection. It restores the original submitted waypoints once, preserves newer local choices (including an empty route), and never manufactures a retired fleet. Receipt discovery may precede the private view, so route recovery retains its selection context until that view arrives, including a rejected command whose original choices need review. A new command clears the old recovery context.
 
 | Dependency / acceptance | Status |
 | --- | --- |

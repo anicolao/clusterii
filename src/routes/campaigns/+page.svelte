@@ -474,9 +474,9 @@
         busy = false;
         pending = null;
         // Receipt discovery can beat the first private view after reload.
-        // Keep the matching accepted route until its accessible fleet can open.
-        if (receipt.status !== "accepted" || command.kind !== "fleet.route")
-          recoveredFleet = null;
+        // Keep the submitted route for review, including a rejected order,
+        // until its accessible fleet can open. Never invent a retired fleet.
+        if (command.kind !== "fleet.route") recoveredFleet = null;
         acceptedConstruction =
           receipt.status === "accepted" &&
           command.kind.startsWith("construction.")
