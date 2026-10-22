@@ -310,3 +310,11 @@ Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | C
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Review new cancellation candidates with request-bound receipts and preserved drafts at all supported sizes
 
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Archive four exact cancellation walkthroughs and carry the 20:29 checkpoint with scoped Linux and preview gates
+
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-credit-stories
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-briefing-stories
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-construction-stories
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-fleet-formation-stories
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-fleet-reorganization-stories
+
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-fleet-cancellation-stories
