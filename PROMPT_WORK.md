@@ -516,3 +516,5 @@ Prompt 78 | 0fdf1011791e32ac3023d7b24dd03cd6de10ec4f1a1d51f9128c7738a942a4e5 | L
 Prompt 79 | a69eeaf699fdf9488f992f9b3be71f8ef79462304cec5010df63b2a5ed89dcf0 | Clear stale settled seat confirmation exposed by the real revocation capture before approving any new baseline
 
 Prompt 79 | a69eeaf699fdf9488f992f9b3be71f8ef79462304cec5010df63b2a5ed89dcf0 | Review56 corrected membership-fault candidates separately before exact comparison and predecessor regression checks
+
+Prompt 79 | a69eeaf699fdf9488f992f9b3be71f8ef79462304cec5010df63b2a5ed89dcf0 | Archive196 strict captures and document real authorization denial, late-view rejection and exact metadata restoration

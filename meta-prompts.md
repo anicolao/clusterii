@@ -1787,3 +1787,10 @@ Reviewer continuation 2026-10-22 09:29 Toronto: #84 12f9591 attached, clean idle
 Agent healthy implementing guarded membership-fault story on #84 successor. Independently read fault helper: exact demo/loopback/source guards, four-member labelled mock-campaign target, transaction removes only member authorization metadata; restoration refuses concurrent head/membership/directory changes. Digest gate computes original digest then delays only exact envelope input, releases unchanged result and restores native function. Independently ran4 guard tests successfully. These source/guard checks do not certify browser race coverage; execution/visual review remains pending.
 
 #84 publication now green; latest CI still running, disk3.4GiB. No duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs at natural boundary; administrative fault must remain distinct from approved gameplay. Full release, independent visual/Linux/hosted and original raster holds remain open; no merge.
+
+
+## Reviewer progress — 2026-10-22 09:49 Toronto
+
+Agent healthy at185be7a finalizing guarded late-view revocation evidence:16 strict journeys196 captures pass including original departure/sign-out regressions. Independently revieweddd432b0 clearing stale settled message only with no pending command in involuntary-loss branch; pending Leave handling/fence unchanged. Independently viewed phone018: protected draft absent after released delayed view, access-loss remedy present, no stale success banner. Source/guard review from09:39 remains scoped; full Linux/hosted/visual acceptance pending.
+
+#83 Linux verification newly failed, retained job119833646345 log /tmp/cluster83-0949-verify.log for classification at next boundary. Disk3.2GiB, no duplicate prompt/interruption. Carry checkpoint into committed/pushed attributed logs. Administrative fault is not approved gameplay; original raster/full-release holds remain open. No merge.
