@@ -558,3 +558,7 @@ Prompt 84 | aa62fa25478e4cd0899b4052f2a78c5dc70e2f2d8f0e2526fbdb462b3b9fdd93 | P
 Prompt 85 | a116e9223be6f0a15d6115a157919937d8ae1d2eadb9761daf3a2cbd6c1f6c15 | Record corrected feedback source checks and exact disk blocker before the required new candidate run.
 
 Prompt 86 | c952b36ade3c871d9a7515e90dd12e0d8b7539ea7d4bb254f97c54e88b1ab3fd | Add shared next-cost and funded-tick forecasts with recorded research effects, focused calculation evidence and explicit visual gates.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Archive four passing research-order stories and 52 exact comparisons on isolated PR89 source after scoped reviewer promotion.
+
+Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Propagate approved PR89 baselines and exact evidence to the forecast successor while preserving both prompt histories.
