@@ -1363,3 +1363,17 @@ Agent resumed and is actively diagnosing13–15sec text-layout diagnostic cost, 
 Exact queued handoff:
 
 Reviewer finding 2026-10-22 00:09 Toronto (queue after current diagnostic): #58 and #62 Linux verification completed with36 and70 failures. Logs retained /tmp/cluster58-0008-failure.log and /tmp/cluster62-0008-failure.log from jobs119568677251/119594903701. These include missing reviewed Linux baselines AND additional admission/identity/maintenance locator timeouts plus function socket hangups; do not classify all as baseline or known raster failures. At a natural boundary inspect first causal service/trace failure and compare generation artifacts; review/promote only new candidate families with matching provenance, retain strict verification. No broad duplicate rerun or timeout relaxation. Carry this attributed finding and checkpoint into committed/pushed logs; no merge.
+
+
+## Reviewer progress — 2026-10-22 00:19 Toronto
+
+Agent healthy at51a56f1 reviewing four-viewpoint pause/catch-up candidates; 4K now passes original deadline. Independently reviewed480dde8 diagnostic scope: text-layout telemetry limited to identity panel, bounded traversal/ancestor counts with explicit truncation metadata and cached style/box reads. Pixel/readiness acceptance unchanged; not a fix for inherited raster mismatch. Strict comparison still pending. Existing00:09 CI handoff visibly queued; do not duplicate.
+
+#61 Linux verify also failed59 cases with missing-baseline and identity/admission locator failures, logs /tmp/cluster61-0018-failure.log from job119582164198. Include in already queued service/trace triage, not merely raster classification. Other current checks remain queued/running. Carry checkpoint into committed/pushed logs; no merge or full visual/Linux/preview/release acceptance.
+
+
+## Reviewer progress — 2026-10-22 00:29 Toronto
+
+Agent healthy at51a56f1 running strict pause/catch-up plus identity/maintenance cohort; phone and desktop cases progressing, final results pending. Read CI triage and proposed bounded per-viewport emulator lifetime investigation. Independently confirmed retained Firestore log contains10001-message backchannel warnings and Java heap exhaustion. This supports emulator resource failure, not yet its accumulation root cause or a production/raster fix. History aggregate30sec setup budget is a separate traced failure. Existing00:09 handoff remains queued, no duplicate.
+
+#60 verification job119573320021 also failed50 cases; log retained /tmp/cluster60-0028-failure.log includes service socket hangups. #61 second generation failed; #62 generation green does not establish verification acceptance. Carry checkpoint into committed/pushed logs. No merge; visual/Linux/current-preview/raster/full-release gates remain open.
