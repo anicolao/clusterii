@@ -24,6 +24,8 @@ import { test, expect } from "../helpers/fixtures";
 import { TestStepHelper } from "../helpers/test-step-helper";
 import { settlementTiming } from "../../browser/story-helpers/settlement-timing";
 import { expectReadingTarget } from "../../browser/story-helpers/reading-target";
+import { readCampaignHistory } from "../../../src/lib/campaign-history";
+import { arrivalRecords } from "../../../src/lib/arrival-reports";
 import { distance } from "../../../shared/galaxy";
 import { routePreview } from "../../../shared/travel";
 import {
@@ -564,11 +566,19 @@ test("Open a contextual arrival report and recover its recorded surface", async 
       "Deliver bounded real leased travel/combat/production ticks. The peer captures orbit; no battle outcome is injected.",
       () => settle(through),
     );
-    const lost = await published(0),
-      won = await published(1);
-    const reports = [lost, won].map((v) =>
-      v.military!.arrivals!.find((r) => r.starId === homes[0])!,
-    );
+    const recordedReport = async (actor: number) => {
+      const r = readers[actor];
+      const page = await readCampaignHistory(r.db, r.functions, id, r.uid);
+      const entry = arrivalRecords(page.records).find(
+        (r) => r.report.starId === homes[0],
+      );
+      expect(
+        entry,
+        "The recent authenticated immutable history contains the actual capture",
+      ).toBeDefined();
+      return entry!.report;
+    };
+    const reports = await Promise.all([recordedReport(0), recordedReport(1)]);
     expect(reports.every(Boolean)).toBe(true);
     expect(reports[0].tick).toBe(reports[1].tick);
     const reportTick = reports[0].tick;
@@ -610,9 +620,7 @@ test("Open a contextual arrival report and recover its recorded surface", async 
         check: async () => {
           const current = await Promise.all([published(0), published(1)]);
           for (const [i, p] of [owner, peer].entries()) {
-            expect(
-              current[i].military!.arrivals!.find((r) => r.starId === homes[0]),
-            ).toEqual(reports[i]);
+            expect(await recordedReport(i)).toEqual(reports[i]);
             const losses = reportPanel(p).locator("dl.losses");
             await expect(losses.locator("dd")).toHaveText([
               String(reports[i].fightersBefore - reports[i].fightersAfter),
