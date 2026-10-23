@@ -18,3 +18,12 @@ Clean7bc1fd8, four passing journeys/44 unapproved originals. Accepted orbital co
 - [Large](layer-candidates-7bc1fd8/galaxy-command-surface/large/darwin-arm64/README.md)
 - [Short](layer-candidates-7bc1fd8/galaxy-command-surface/short/darwin-arm64/README.md)
 - [Generation summary](layer-candidates-7bc1fd8/verification.txt)
+
+## Focus and waiting correction — independent review pending
+
+Clean ded4cfb, spec55582b2e6deb7a16ac6d5d43641102e487b6ac5f5a6f00937c34f112bfd14ca3. Four passing journeys/48 reduced-motion candidates; separately named normal-motion keyboard check, measured focus separation and waiting-rail/inspector containment. Earlier families above remain separate and unchanged.
+
+- [Phone](focus-candidates-ded4cfb/galaxy-command-surface/phone/darwin-arm64/README.md)
+- [Desktop](focus-candidates-ded4cfb/galaxy-command-surface/desktop/darwin-arm64/README.md)
+- [Large](focus-candidates-ded4cfb/galaxy-command-surface/large/darwin-arm64/README.md)
+- [Short](focus-candidates-ded4cfb/galaxy-command-surface/short/darwin-arm64/README.md)
