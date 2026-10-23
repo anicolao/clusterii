@@ -107,3 +107,7 @@ Generation requested a clean wide cinematic landscape, no UI/lettering/symbols/b
 World/orbit WebP SHA256: `a9c87b992bcf333b81e1ada9bf77a2fad6dd059e2b881440f8949d2d3ccd4d7b`. `CommandIcon.svelte` paths are original hand-authored GPL-3.0-only SVG geometry, shared by the actual dock and gallery with real accessible button labels.
 
 `SystemLayers.svelte` reuses the same provenanced world/orbit WebP: the desktop scene is continuous; phone crops place orbital and surface instruments beside their corresponding illustration regions. Shared DevelopmentIcon station/base symbols identify the layers, and FleetSymbol identifies the actual manifest action. No new asset, generated lettering or inferred intelligence is introduced.
+
+## Contextual aftermath instrument
+
+The ArrivalReports sequence reuses `fleet-preparation.webp`, `orbital-aftermath.webp` and `system-orbit.webp` as decorative circular scene insets, paired with the existing shared FleetSymbol/DevelopmentIcon marks. Original bytes and provenance above are unchanged. Semantic Arrival/Orbit/Surface labels and recipient facts remain real HTML; the insets imply no additional fleet counts, buildings or planet intelligence.

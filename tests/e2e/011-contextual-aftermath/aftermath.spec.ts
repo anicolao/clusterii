@@ -706,6 +706,54 @@ test("Open a contextual arrival report and recover its recorded surface", async 
       verifications: reportChecks,
       views: views(),
     });
+    await story.step("read-recorded-layers", {
+      actor: aliases[0],
+      description:
+        "Use the bounded report's End and ArrowUp keys to read independent layer control and the held-credit explanation. The fixed return/inspect actions stay available.",
+      action: async () => {
+        for (const p of [owner, peer]) {
+          await footers(p);
+          await reportBody(p).focus();
+          await reportBody(p).press("End");
+          const control = reportPanel(p).locator("dl.control");
+          for (let n = 0; n < 24; n++) {
+            const contained = await control.evaluate((e) => {
+              const a = e.getBoundingClientRect(),
+                b = e
+                  .closest('[aria-label="Arrival report details"]')!
+                  .getBoundingClientRect();
+              return a.top >= b.top && a.bottom <= b.bottom;
+            });
+            if (contained) break;
+            const before = await reportBody(p).evaluate((e) => e.scrollTop);
+            await reportBody(p).press("ArrowUp");
+            if (before === 0) break;
+            await expect
+              .poll(() => reportBody(p).evaluate((e) => e.scrollTop))
+              .toBeLessThan(before);
+          }
+        }
+      },
+      acknowledgement: {
+        spec: "Recorded Orbit/Surface and the private held-credit explanation are fully readable without document scrolling.",
+        check: async () => {
+          for (const p of [owner, peer]) {
+            await expectReadingTarget(
+              reportPanel(p).locator("dl.control"),
+              false,
+            );
+            await expectReadingTarget(reportPanel(p).locator(".escrow"), false);
+            await expect(reportPanel(p).locator(".escrow")).toContainText(
+              "The held balance is private.",
+            );
+            expect(await p.evaluate(() => window.scrollY)).toBe(0);
+            await footers(p);
+          }
+        },
+      },
+      verifications: reportChecks,
+      views: views(),
+    });
     await story.harness(
       "next-authoritative-tick",
       "Deliver one additional leased production tick while reports remain open. Repeated delivery must settle zero further ticks; this is an explicit scheduler harness, not elapsed-time inference.",
@@ -717,7 +765,11 @@ test("Open a contextual arrival report and recover its recorded surface", async 
       description:
         "Read the same outcome while the campaign advances. Current facts update without rewriting the selected historical report.",
       action: async () => {
-        for (const p of [owner, peer]) await reportBody(p).focus();
+        for (const p of [owner, peer]) {
+          await reportBody(p).focus();
+          await reportBody(p).press("Home");
+          expect(await p.evaluate(() => window.scrollY)).toBe(0);
+        }
       },
       acknowledgement: {
         spec: "Both authorized current projections acknowledge the next tick and both selected report identities remain unchanged.",
