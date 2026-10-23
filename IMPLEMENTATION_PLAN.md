@@ -221,3 +221,5 @@ Reviewed Pantheon’s local implementation at `4a14001a352d2ccdc2a1e5883bca94142
 This review covers local source and design, not a certification of Pantheon’s hosted behavior. Cluster retains authoritative server processing and encrypted object access; it does not adopt Pantheon’s trusted-client replay privacy model, card-game mechanics, or shared-table scope.
 
 [Campaign selection ownership](docs/testing/ADMISSION_BOUNDARY_CONSOLIDATION.md) consolidates retained admission failures and fences stale observer errors/focus after selection changes. Callback-adapter unit coverage is separate from mounted recovery/keyboard acceptance; no admission timing fix is claimed.
+
+Milestone10 source increment: [in-game market rules](docs/design/IN_GAME_RULES_REVIEW.md) reuses the existing market chapter within the shared bounded menu. Source/static scope only until new four-size review; broader codex and live preservation acceptance remain open.

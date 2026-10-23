@@ -425,3 +425,7 @@ Corrected-source phone settings at9d0a837 passes one journey/six candidates; pro
 Settings lab semantics corrected atfd74e91: full four-size generation passes4 journeys/24 candidates with accurate feedback-recovery labels asserted independently of accepted outcomes. New spec/source pairing retained; prior24 untouched. Corrected-family independent review and strict comparison pending.
 
 Reviewer-approved local-presentation-settings Darwin family now passes4 strict journeys/24 exact captures (31.1s), with generated narratives archived under `stories/local-presentation-settings/{phone,desktop,large,short}/darwin-arm64/README.md`. Scope is shared local settings/gallery/lab only; actual galaxy, Linux and broader acceptance gates remain separate.
+
+## In-game market rules source
+
+UX15/16 `menu-rules.story.spec.ts` prepares shared-menu chapter, Back/Escape/opener and single-modal assertions using actual MarketRules; browser execution pending initial source review. New Rules footer changes local-presentation-settings captures/tab order; existing baselines preserved and new independent review required. See [scope](../design/IN_GAME_RULES_REVIEW.md).

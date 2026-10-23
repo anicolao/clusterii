@@ -83,6 +83,10 @@ test("Shared presentation settings retain local choices and accessible modal own
       await page.keyboard.press("Tab");
       await expect(detail).toBeFocused();
       await page.keyboard.press("Tab");
+      await expect(
+        dialog.getByRole("button", { name: "Rules", exact: true }),
+      ).toBeFocused();
+      await page.keyboard.press("Tab");
       await expect(close).toBeFocused();
       await page.keyboard.press("Tab");
       await expect(motion).toBeFocused();
@@ -190,6 +194,10 @@ test("Shared presentation settings retain local choices and accessible modal own
       await page.keyboard.press("Tab");
       await expect(detail).toBeFocused();
       await page.keyboard.press("Space");
+      await page.keyboard.press("Tab");
+      await expect(
+        dialog.getByRole("button", { name: "Rules", exact: true }),
+      ).toBeFocused();
       await page.keyboard.press("Tab");
       await expect(close).toBeFocused();
       await page.keyboard.press("Enter");
