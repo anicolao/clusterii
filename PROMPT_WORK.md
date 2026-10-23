@@ -740,3 +740,5 @@ Prompt 139 | ba0b3631960ee844c2bd2a1c531fec1e448912ae522c65e0808f6dbf1fe99f9e | 
 Prompt 139 | ba0b3631960ee844c2bd2a1c531fec1e448912ae522c65e0808f6dbf1fe99f9e | Archive four completed waiting lifecycle journeys and reconcile the reviewer03:42 checkpoint with scoped acceptance.
 
 Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve first phone navigation evidence and correct the final entry accessible heading after successful invitation recovery.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Fix measured six-pixel phone chart/rail overlap and retain command-tray focus restoration in active history navigation.

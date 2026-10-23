@@ -125,6 +125,20 @@ test("Recover saved campaign records without losing your place", async ({
       name: "Since your last visit",
       exact: true,
     });
+  const closeCommandTray = {
+    spec: "After History restores its opener, Escape dismisses the phone command tray and restores More before reading the selected system.",
+    check: async () => {
+      const more = page.getByRole("button", { name: "More", exact: true });
+      if (
+        (await more.isVisible()) &&
+        (await more.getAttribute("aria-expanded")) === "true"
+      ) {
+        await page.keyboard.press("Escape");
+        await expect(more).toBeFocused();
+        await expect(more).toHaveAttribute("aria-expanded", "false");
+      }
+    },
+  };
   const view = () => ({
     page,
     player: "History envoy — reading device",
@@ -382,6 +396,7 @@ test("Recover saved campaign records without losing your place", async ({
         ).toBeFocused(),
     },
     verifications: [
+      closeCommandTray,
       {
         spec: "System selection survives reading history.",
         check: async () =>
@@ -398,7 +413,12 @@ test("Recover saved campaign records without losing your place", async ({
         page,
         player: "History envoy",
         surface: "game",
-        primary: [page.getByRole("button", { name: "History", exact: true })],
+        primary: [
+          page.getByRole("button", {
+            name: info.project.name === "phone" ? "More" : "History",
+            exact: true,
+          }),
+        ],
       },
     ],
   });
@@ -440,6 +460,7 @@ test("Recover saved campaign records without losing your place", async ({
       },
     },
     verifications: [
+      closeCommandTray,
       {
         spec: "The selected system still matches the previous visit.",
         check: async () =>
@@ -456,7 +477,12 @@ test("Recover saved campaign records without losing your place", async ({
         page,
         player: "History envoy",
         surface: "game",
-        primary: [page.getByRole("button", { name: "History", exact: true })],
+        primary: [
+          page.getByRole("button", {
+            name: info.project.name === "phone" ? "More" : "History",
+            exact: true,
+          }),
+        ],
       },
     ],
   });

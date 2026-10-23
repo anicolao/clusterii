@@ -11,3 +11,9 @@ Failure is exact accessible heading casing: expected `CLUSTER`, actual `Cluster`
 ## Remaining scope
 
 Phone/desktop/large/short runtime and new source-paired candidate review remain incomplete. No baseline moved/promoted. Existing Linux reference/pixel failures require independent platform/design evidence. Original ingress and100-tick harness timing causes remain separate unresolved boundaries. The current100-tick log reports only the outer30s step; earlier opt-in timing probe failed admission before reaching settlement. Neither establishes a service/network cause. Timing diagnosis follows repaired navigation work, without arbitrary budget increases.
+
+## Changed-source phone result and measured rail defect
+
+Clean dce2543: returning invitation passed7.6s and waiting admission/leave passed4.3s. Active chart completed four independent admissions and actual scheduled start, then its non-overlap assertion measured chart.top110 against rail.bottom116. History was not run. This is a six-pixel production overlap, not a baseline issue. Original trace/partial captures retained `/tmp/cluster117-navigation-dce2543-phone-result`, logs `/tmp/cluster117-navigation-dce2543-phone*`.
+
+Production now binds the real header border-box height and places the chart below that measured height, preserving designed minimum insets at each breakpoint. No game facts, actions, deadlines or containment thresholds change. Svelte check reports0errors/0warnings and story policy passes. Active history also explicitly dismisses the phone command tray after first verifying History opener restoration; selected-system reading remains separate from the intermediate menu state. Corrected rendered evidence is pending.

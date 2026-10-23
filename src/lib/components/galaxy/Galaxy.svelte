@@ -219,6 +219,7 @@
     void openPanel("construction");
   }
   let more = $state(false);
+  let commandRailHeight = $state(0);
   let construction = $state(false);
   let constructionChoice = $state<Development>("market");
   let resumedConstruction = "";
@@ -958,7 +959,11 @@
   );
 </script>
 
-<div class="galaxy-surface" class:before-start={view.phase !== "active"}>
+<div
+  class="galaxy-surface"
+  class:before-start={view.phase !== "active"}
+  style:--command-rail-height={`${commandRailHeight}px`}
+>
   {#if view.phase === "waiting" || view.phase === "scheduled"}
     <div inert={roster}>
       <CampaignWaiting
@@ -976,6 +981,7 @@
   {:else}
     <header
       class="command-rail"
+      bind:offsetHeight={commandRailHeight}
       inert={more ||
         roster ||
         listing ||
@@ -2181,7 +2187,7 @@
     color: #f1f6ef;
   }
   .chart {
-    inset: 58px 19% 80px 0;
+    inset: max(58px, var(--command-rail-height)) 19% 80px 0;
   }
   @media (min-width: 2500px) {
     .system-inspector {
@@ -2209,7 +2215,7 @@
       padding-inline: 24px;
     }
     .chart {
-      top: 90px;
+      top: max(90px, var(--command-rail-height));
       bottom: 120px;
     }
   }
@@ -2244,7 +2250,7 @@
       padding-inline: 7px;
     }
     .chart {
-      inset: 110px 0 calc(44svh + 82px) 0;
+      inset: max(110px, var(--command-rail-height)) 0 calc(44svh + 82px) 0;
     }
     .before-start .chart {
       top: 58px;
