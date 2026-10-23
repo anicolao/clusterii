@@ -958,6 +958,7 @@
       <div class="development-banner">
         Development campaign · Rules under review
       </div>{/if}
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex a11y_no_noninteractive_element_interactions (Named scroll region supports bounded keyboard Home/End without activating a command.) -->
     <div
       class="campaign-body"
       bind:this={campaignBody}

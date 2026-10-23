@@ -843,3 +843,5 @@ Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | 
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Archive twelve source-paired science journeys, preserved failures, and scoped Linux bootstrap diagnosis
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Initialize generated Svelte aliases before story collection and verify pinned resolver cold-start behavior
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Record stacked science and bootstrap PR links with completed policy checks and unchanged acceptance gates
+
+Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | Document intentional named scroll-region keyboard semantics before source-paired admission capture.
