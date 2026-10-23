@@ -166,6 +166,27 @@ test("Inspect authoritative science rate and recover earned output", async ({
       surface: "game" as const,
       primary: [button(peer, "Return to galaxy")],
     };
+    const railClearance = async (page: Page, stage: string) => {
+      const panel = await page
+        .getByRole("dialog", {
+          name: "Empire economy panel",
+          exact: true,
+        })
+        .boundingBox();
+      const rail = await page.locator(".command-rail").boundingBox();
+      expect(panel).not.toBeNull();
+      expect(rail).not.toBeNull();
+      expect(panel!.y).toBeGreaterThanOrEqual(rail!.y + rail!.height);
+      await info.attach(`science-rail-${stage}`, {
+        body: JSON.stringify({
+          viewport: info.project.name,
+          stage,
+          panel,
+          rail,
+        }),
+        contentType: "application/json",
+      });
+    };
     let ownerSource = "",
       peerSource = "";
     await story.step("inspect-private-sources", {
@@ -187,14 +208,10 @@ test("Inspect authoritative science rate and recover earned output", async ({
               "+1.4 / tick",
             );
             await expect(ledger(page).locator("article")).toHaveCount(1);
-            const panel = await page
-              .getByRole("dialog", {
-                name: "Empire economy panel",
-                exact: true,
-              })
-              .boundingBox();
-            const rail = await page.locator(".command-rail").boundingBox();
-            expect(panel!.y).toBeGreaterThanOrEqual(rail!.y + rail!.height);
+            await railClearance(
+              page,
+              page === owner ? "initial-owner" : "initial-peer",
+            );
             await expect(
               ledger(page).getByRole("heading", { name: "Science per tick" }),
             ).toBeFocused();
@@ -367,6 +384,10 @@ test("Inspect authoritative science rate and recover earned output", async ({
               peerSource,
             );
             for (const page of [owner, peer]) {
+              await railClearance(
+                page,
+                page === owner ? "earned-owner" : "earned-peer",
+              );
               const bounds = await ledger(page)
                 .locator("dl > div")
                 .filter({ hasText: "Last delivered science" })
@@ -423,6 +444,7 @@ test("Inspect authoritative science rate and recover earned output", async ({
         {
           spec: "Reload preserves source ownership and does not alter the accepted command identity.",
           check: async () => {
+            await railClearance(owner, "delivered-owner");
             await expect(ledger(owner).locator("article h4")).toHaveText(
               ownerSource,
             );
