@@ -768,6 +768,20 @@
   let selected = $state("");
   let stellarClass = $state<StarClass | "all">("all");
   let cameraRequest = $state({ action: "overview", starId: "", sequence: 0 });
+  let framedCampaign = "";
+  $effect(() => {
+    if (view.phase !== "active" || !view.own.home || framedCampaign === view.id)
+      return;
+    framedCampaign = view.id;
+    if (window.matchMedia("(max-width: 700px)").matches)
+      untrack(() => {
+        cameraRequest = {
+          action: "home",
+          starId: view.own.home!,
+          sequence: cameraRequest.sequence + 1,
+        };
+      });
+  });
   function move(
     action: "selected" | "home" | "overview" | "in" | "out" | "left" | "right",
   ) {
@@ -2861,6 +2875,87 @@
       min-height: 52px;
       border: 0;
       border-radius: 0;
+    }
+  }
+  @media (min-width: 701px) {
+    .command-rail {
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      padding: 12px 24px 10px 480px;
+      gap: 4px 20px;
+      background: linear-gradient(#07131ce8, #07131c77, transparent);
+      border: 0;
+    }
+    .command-rail .commander-presence {
+      position: absolute;
+      left: 24px;
+      top: 16px;
+    }
+    .command-rail .campaign-facts {
+      grid-row: 1;
+      grid-column: 1;
+      gap: clamp(20px, 3vw, 72px);
+      justify-content: flex-end;
+    }
+    .command-rail :global(.roster-access) {
+      grid-column: 2;
+    }
+    .command-rail :global(.campaigns-access) {
+      grid-column: 3;
+    }
+    .campaign-context {
+      grid-row: 2;
+      grid-column: 1 / -1;
+      text-align: right;
+    }
+    .command-rail .campaign-context h1 {
+      display: inline;
+      font-size: 20px;
+      margin-right: 16px;
+    }
+    .command-rail > .campaign-context > span {
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 701px) and (max-height: 800px) {
+    .command-rail {
+      padding-left: 400px;
+    }
+  }
+  @media (min-width: 2500px) {
+    .command-rail {
+      padding: 20px 48px 16px 880px;
+      gap: 8px 36px;
+    }
+    .command-rail .commander-presence {
+      left: 48px;
+      top: 28px;
+    }
+    .command-rail .campaign-context h1 {
+      font-size: 32px;
+    }
+    .command-rail > .campaign-context > span {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 700px) {
+    .chart {
+      bottom: calc(38svh + 82px);
+    }
+    .system-inspector:not(.expanded) {
+      max-height: 38%;
+    }
+    .system-inspector:not(.expanded) .system-details :global(.world-art) {
+      aspect-ratio: 2.8;
+      margin-bottom: 4px;
+    }
+    .system-inspector:not(.expanded) .system-details > p {
+      margin: 2px 0;
+    }
+    .system-inspector:not(.expanded) dl {
+      margin: 4px 0;
+    }
+    .system-inspector:not(.expanded) dl > div {
+      padding: 4px 0;
     }
   }
 </style>

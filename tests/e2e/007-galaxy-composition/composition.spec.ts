@@ -23,6 +23,15 @@ test("Read the cinematic galaxy through real commander and system instruments", 
     await button(name).focus();
     await page.keyboard.press("Enter");
   };
+  const camera = async (name: "Overview" | "Center home") => {
+    if (info.project.name === "phone") await key("More");
+    await key("Systems list");
+    await expect(
+      page.getByText("128 systems · All classes", { exact: true }),
+    ).toBeVisible();
+    await key(name);
+    if (info.project.name === "phone") await page.keyboard.press("Escape");
+  };
   const inspector = page.getByRole("complementary", {
     name: "Selected system",
     exact: true,
@@ -246,11 +255,38 @@ test("Read the cinematic galaxy through real commander and system instruments", 
     ],
     views: views(),
   });
+  await story.step("choose-full-overview", {
+    actor: "Deepseer envoy",
+    description:
+      "Open the factual Systems list and explicitly request Overview with the keyboard; the same authorized home remains selected while the camera frames the full catalogue.",
+    action: async () => camera("Overview"),
+    acknowledgement: {
+      spec: "The systems reader closes and the actual full-catalogue overview remains available without changing selected-system facts.",
+      check: async () => {
+        await expect(
+          page.getByRole("dialog", { name: "Systems list", exact: true }),
+        ).toHaveCount(0);
+        await expect(inspector.getByRole("heading", { level: 2 })).toHaveText(
+          homeName,
+        );
+      },
+    },
+    verifications: [
+      {
+        spec: "Camera navigation does not navigate away from the real campaign.",
+        check: async () => expect(page.url()).toBe(campaignUrl),
+      },
+    ],
+    views: views(),
+  });
   await story.step("inspect-home-layers", {
     actor: "Deepseer envoy",
     description:
       "Use Inspect to read the real independent Orbit and Surface instruments without creating an order.",
-    action: async () => key("Inspect system"),
+    action: async () => {
+      await camera("Center home");
+      await key("Inspect system");
+    },
     acknowledgement: {
       spec: "Both authorized ownership instruments are available.",
       check: async () => {

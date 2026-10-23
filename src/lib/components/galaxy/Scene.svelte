@@ -169,6 +169,7 @@
       } else {
         const destination = stars.find((s) => s.id === request.starId);
         if (destination) {
+          if (request.action === "home") offset.setLength(5.5);
           activeControls.target.set(
             destination.x / 10,
             destination.y / 10,
