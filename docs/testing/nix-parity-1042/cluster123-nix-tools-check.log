@@ -1,0 +1,22 @@
+Validated config, arithmetic examples, 168,100 ground-combat cases, and 73 local links.
+✔ requires a staged prompt log, including on the initial commit (230.667833ms)
+✔ accepts a staged append and rejects an unstaged append (205.40525ms)
+✔ rejects rewritten or deleted historical prompts (177.188458ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (422.355459ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (350.309041ms)
+✔ checks a PR against its base, including a base with no prompt log (199.0605ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (515.864959ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (237.75975ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (356.480459ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (631.386791ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (600.630708ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (347.940375ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (443.619708ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4768.051041

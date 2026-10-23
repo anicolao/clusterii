@@ -12,8 +12,15 @@ concurrency:
 jobs:
   cleanup:
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
     steps:
       - uses: actions/checkout@v4
+      - name: Bootstrap Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
       - run: node scripts/cleanup-previews.mjs
         env:
           GH_TOKEN: ${{ github.token }}
