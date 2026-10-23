@@ -252,6 +252,22 @@ test("Shared presentation settings retain local choices and accessible modal own
     },
     verifications: [
       {
+        spec: "Both accepted comparisons distinguish no recovery action from their successful Identity saved outcome.",
+        check: async () => {
+          for (const panel of panels) {
+            await expect(
+              panel.getByText("Feedback recovery · No action indicated", {
+                exact: true,
+              }),
+            ).toBeVisible();
+            await expect(panel).not.toContainText("Same outcome · none");
+            await expect(panel.getByRole("status")).toContainText(
+              "Identity saved",
+            );
+          }
+        },
+      },
+      {
         spec: "The production menu is present in the shared lab; playback is paused and no live campaign is involved.",
         check: async () => {
           await expect(menu).toBeVisible();

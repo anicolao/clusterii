@@ -145,7 +145,12 @@
           : "Standard motion comparison"}
       >
         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
-        <p class="overline">Same outcome · {frame.feedback.remedy ?? "none"}</p>
+        <p class="overline">
+          Feedback recovery · {frame.feedback.remedy &&
+          frame.feedback.remedy !== "none"
+            ? frame.feedback.remedy
+            : "No action indicated"}
+        </p>
         {#if selected === "invalid-recovery"}{#key frame.at}<RecoveryRecord
               reason={new RecoveryValidation("").message}
               confirming={time >= 1200}

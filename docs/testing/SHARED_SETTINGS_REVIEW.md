@@ -91,3 +91,11 @@ Original phone paths:
 - `/tmp/cluster-settings-phone-corrected-candidates/stories/local-presentation-settings/phone/darwin-arm64/005-compare-shared-feedback-2-developer-reduced-feedback.png`
 
 Combined review set is these six plus18 at `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/` on7d43510: identical production/spec, distinct exact clean commit provenance. No files promoted or baselines changed; generation is not strict comparison. Passing traces are not retained, so no network404 claim. A later passing phone run does not prove the prior reload failure’s cause. Full independent24-image/native-resolution review, exact baseline verification/Linux and actual galaxy/scene/authoritative/concurrency/KMS/hosted/performance/release gates remain open. No other browser family or feature work executed.
+
+## Lab label semantics — reviewer Prompt117
+
+Reviewer20:32 inspected all24 prior originals across two reviews: readable settings, opener and equal feedback outcomes; large text was viewed scaled, not native pixel audited. No family/baseline approval. The repeated `Same outcome · none` incorrectly described feedback.remedy as an outcome.
+
+Small correction before generation: label the existing metadata `Feedback recovery`, rendering `none`/absent as `No action indicated`; retain all other category values rather than inventing success or recovery actions. Reviewed the complete scenario frame list and shared conditional render branches: pending/accepted/research applied can all have remedy none, network/validation/conflict/receipt/retry describe recovery, and specialized draft/history/research components also own their internal states. The label explicitly describes frame feedback metadata rather than asserting those components have no outcome. Actual status/error messages and callbacks are untouched. The existing local-settings lab step now requires the accurate phrase and successful Identity saved status in both panels, retaining every other assertion/deadline.
+
+All24 prior originals remain in their existing separate paths. Commit changed source/spec before one focused four-size generation with max-failures1/retries0, serialized build and disk gate. No baseline promotion or other families.
