@@ -840,3 +840,4 @@ Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | 
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Include retained original timing and loader files excluded by generic test-results and log ignore patterns
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Preserve large specimen reading failure and use bounded ArrowUp reading without relaxing containment
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Apply bounded total reading to the missed lab call site after large gallery passes and lab failure is retained
+Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Archive twelve source-paired science journeys, preserved failures, and scoped Linux bootstrap diagnosis

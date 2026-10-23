@@ -1,0 +1,146 @@
+[
+  {
+    "family": "science-rate-sources",
+    "viewport": "phone",
+    "source": {
+      "commit": "147d62b7c9d6d369ad65b70f309b2c1f35e9a72b",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "c5a5b30f7ae0ae68a031f30fefa85d803134b40a2c06c8ffedab41a823fe2ecc"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-147d62b7/science-rate-sources/phone/darwin-arm64",
+    "images": 18
+  },
+  {
+    "family": "science-rate-sources",
+    "viewport": "desktop",
+    "source": {
+      "commit": "147d62b7c9d6d369ad65b70f309b2c1f35e9a72b",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "c5a5b30f7ae0ae68a031f30fefa85d803134b40a2c06c8ffedab41a823fe2ecc"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-147d62b7/science-rate-sources/desktop/darwin-arm64",
+    "images": 18
+  },
+  {
+    "family": "live-zero-science",
+    "viewport": "phone",
+    "source": {
+      "commit": "147d62b7c9d6d369ad65b70f309b2c1f35e9a72b",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "path": "tests/e2e/010-zero-science/stories/candidates-147d62b7/live-zero-science/phone/darwin-arm64",
+    "images": 26
+  },
+  {
+    "family": "live-zero-science",
+    "viewport": "desktop",
+    "source": {
+      "commit": "147d62b7c9d6d369ad65b70f309b2c1f35e9a72b",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "path": "tests/e2e/010-zero-science/stories/candidates-147d62b7/live-zero-science/desktop/darwin-arm64",
+    "images": 26
+  },
+  {
+    "family": "science-ledger-components",
+    "viewport": "phone",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/components.spec.ts",
+      "specSha256": "985d31b200918cf879f90f82c9511b15a4893fc5d39bcf470cb62f6ea5fab15c"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-d97d897a/science-ledger-components/phone/darwin-arm64",
+    "images": 5
+  },
+  {
+    "family": "science-ledger-components",
+    "viewport": "desktop",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/components.spec.ts",
+      "specSha256": "985d31b200918cf879f90f82c9511b15a4893fc5d39bcf470cb62f6ea5fab15c"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-d97d897a/science-ledger-components/desktop/darwin-arm64",
+    "images": 5
+  },
+  {
+    "family": "science-ledger-components",
+    "viewport": "large",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/components.spec.ts",
+      "specSha256": "985d31b200918cf879f90f82c9511b15a4893fc5d39bcf470cb62f6ea5fab15c"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-d97d897a/science-ledger-components/large/darwin-arm64",
+    "images": 5
+  },
+  {
+    "family": "science-ledger-components",
+    "viewport": "short",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/components.spec.ts",
+      "specSha256": "985d31b200918cf879f90f82c9511b15a4893fc5d39bcf470cb62f6ea5fab15c"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-d97d897a/science-ledger-components/short/darwin-arm64",
+    "images": 5
+  },
+  {
+    "family": "science-rate-sources",
+    "viewport": "large",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "c5a5b30f7ae0ae68a031f30fefa85d803134b40a2c06c8ffedab41a823fe2ecc"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-d97d897a/science-rate-sources/large/darwin-arm64",
+    "images": 18
+  },
+  {
+    "family": "science-rate-sources",
+    "viewport": "short",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "c5a5b30f7ae0ae68a031f30fefa85d803134b40a2c06c8ffedab41a823fe2ecc"
+    },
+    "path": "tests/e2e/003-science/stories/candidates-d97d897a/science-rate-sources/short/darwin-arm64",
+    "images": 18
+  },
+  {
+    "family": "live-zero-science",
+    "viewport": "large",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "path": "tests/e2e/010-zero-science/stories/candidates-d97d897a/live-zero-science/large/darwin-arm64",
+    "images": 26
+  },
+  {
+    "family": "live-zero-science",
+    "viewport": "short",
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "path": "tests/e2e/010-zero-science/stories/candidates-d97d897a/live-zero-science/short/darwin-arm64",
+    "images": 26
+  }
+]
