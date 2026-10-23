@@ -157,6 +157,9 @@ test("Read shared market rules and return without leaving the game", async ({
         spec: "The reading region retains keyboard focus and both persistent footer actions remain inside their clipping ancestors and viewport before helper scrolling.",
         check: async () => {
           await expect(reading).toBeFocused();
+          expect(await page.evaluate(() => window.scrollY)).toBe(
+            documentScrollBeforeReading,
+          );
           await contained(back);
           await contained(close);
         },
@@ -166,6 +169,47 @@ test("Read shared market rules and return without leaving the game", async ({
       {
         page,
         player: "Reader · held returns",
+        surface: "document",
+        primary: [back, close],
+      },
+    ],
+  });
+  await story.step("read-rules-top", {
+    actor: "Reader",
+    description:
+      "After capturing the lower text, use Home in the same focused reading region to return to the top without scrolling the document.",
+    action: async () => {
+      await expect(reading).toBeFocused();
+      await page.keyboard.press("Home");
+    },
+    acknowledgement: {
+      spec: "Home restores the top heading and chapter entry inside the bounded region.",
+      check: async () => {
+        expect(await reading.evaluate((element) => element.scrollTop)).toBe(0);
+        await contained(
+          reading.getByRole("heading", { name: "Rules", exact: true }),
+        );
+        await contained(reading.locator("summary"));
+        await contained(reading.locator(".scope"));
+      },
+    },
+    verifications: [
+      {
+        spec: "Document scroll is unchanged, focus stays in Rules reading and the persistent actions remain contained.",
+        check: async () => {
+          expect(await page.evaluate(() => window.scrollY)).toBe(
+            documentScrollBeforeReading,
+          );
+          await expect(reading).toBeFocused();
+          await contained(back);
+          await contained(close);
+        },
+      },
+    ],
+    views: [
+      {
+        page,
+        player: "Reader · rules top",
         surface: "document",
         primary: [back, close],
       },
