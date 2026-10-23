@@ -64,6 +64,7 @@
   } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
+  import AdmissionBriefing from "$lib/components/AdmissionBriefing.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
   import {
@@ -604,6 +605,8 @@
         error="Sessions could not be ended. Confirm your identity and retry the same request."
         onconfirm={() => {}}
       />
+      <h2>Admission briefing · shared reading surface</h2>
+      <AdmissionBriefing game={roster} />
       <h2>Campaign roster</h2>
       <CampaignRoster game={roster} />
       <h3>Scheduled start</h3>
