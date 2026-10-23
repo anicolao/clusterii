@@ -821,11 +821,13 @@
     document.querySelector<HTMLElement>('[data-focus="economy"]')?.focus();
   }
   async function closeConstruction() {
+    expanded = true;
     construction = false;
     await tick();
     document.querySelector<HTMLElement>('[data-focus="construction"]')?.focus();
   }
   async function closeMilitary() {
+    expanded = true;
     military = false;
     await tick();
     document.querySelector<HTMLElement>('[data-focus="military"]')?.focus();
@@ -1065,11 +1067,26 @@
         }}>Observation</ActionButton
       >
     </div>
-    <!-- svelte-ignore a11y_no_noninteractive_tabindex (This bounded intelligence panel needs keyboard scrolling.) -->
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This bounded intelligence panel owns its keyboard scrolling.) -->
     <div
       class="system-details"
       role="region"
       aria-label="System details"
+      onkeydown={(event) => {
+        if (
+          event.target !== event.currentTarget ||
+          event.altKey ||
+          event.ctrlKey ||
+          event.metaKey ||
+          event.shiftKey
+        )
+          return;
+        if (event.key === "End" || event.key === "Home") {
+          event.preventDefault();
+          event.currentTarget.scrollTop =
+            event.key === "End" ? event.currentTarget.scrollHeight : 0;
+        }
+      }}
       tabindex="0"
     >
       {#if observation}<SystemObservation {view} starId={star.id} />{:else}
@@ -1120,7 +1137,7 @@
       {/if}
     </div>
     <div class="system-actions">
-      {#if view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
+      {#if expanded && view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
           class="secondary"
           data-focus="military"
           aria-expanded={military}
@@ -1129,7 +1146,7 @@
             (f) => f.starId === star.id && f.travel?.status !== "traveling",
           ).length}</ActionButton
         >{/if}
-      {#if holding && view.productionEnabled && onbuild}<ActionButton
+      {#if expanded && holding && view.productionEnabled && onbuild}<ActionButton
           class="secondary"
           data-focus="construction"
           aria-expanded={construction}
@@ -2031,7 +2048,7 @@
   .campaign-facts strong {
     font-size: 18px;
     color: #e8dcc1;
-    font-variant-numeric: tabular-nums;
+    font-weight: 400;
   }
   .command-dock {
     position: absolute;
@@ -2356,7 +2373,7 @@
   }
   @media (max-width: 700px) {
     .system-inspector:not(.expanded) .system-details :global(.world-art img) {
-      object-position: center 30%;
+      object-position: center;
     }
     .system-inspector:not(.expanded) .system-actions {
       grid-template-columns: 1fr 1fr;
@@ -2365,7 +2382,18 @@
       padding: 6px 0;
     }
     .system-inspector:not(.expanded) .system-details :global(.world-art) {
-      aspect-ratio: 3.5;
+      aspect-ratio: 2.3;
     }
+  }
+  .system-inspector.expanded dl > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .system-inspector.expanded dl > div:nth-child(-n + 2) {
+    grid-column: 1 / -1;
+  }
+  .system-inspector.expanded dd {
+    margin: 0;
   }
 </style>

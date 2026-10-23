@@ -258,6 +258,59 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
         },
       ],
     });
+    await story.step("read-lower-system-facts", {
+      actor: aliases[0],
+      description:
+        "Focus the bounded system reading region and use End to read the lower authorized developments and held credits while retaining the contextual controls.",
+      action: async () => {
+        await owner
+          .getByRole("region", { name: "System details", exact: true })
+          .focus();
+        await owner.keyboard.press("End");
+      },
+      acknowledgement: {
+        spec: "The held credits label is fully inside the bounded reading viewport.",
+        check: async () => {
+          await expect
+            .poll(() =>
+              inspector
+                .getByText("Held credits", { exact: true })
+                .evaluate((el) => {
+                  const box = el.getBoundingClientRect(),
+                    region = el
+                      .closest('[role="region"]')!
+                      .getBoundingClientRect();
+                  return (
+                    box.top >= region.top &&
+                    box.bottom <= region.bottom &&
+                    box.top >= 0 &&
+                    box.bottom <= innerHeight
+                  );
+                }),
+            )
+            .toBe(true);
+        },
+      },
+      verifications: [
+        {
+          spec: "Keyboard reading does not move the page or replace the selected system.",
+          check: async () => {
+            expect(await owner.evaluate(() => window.scrollY)).toBe(0);
+            await expect(
+              inspector.getByRole("heading", { level: 2 }),
+            ).toHaveText(selectedName);
+          },
+        },
+      ],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [button(owner, "Collapse system"), button(owner, "Develop")],
+        },
+      ],
+    });
     await story.step("navigate-global-economy", {
       actor: aliases[0],
       description:
