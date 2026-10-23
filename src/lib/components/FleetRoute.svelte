@@ -270,7 +270,7 @@
                 max={Math.max(1, forces.capacity)}
                 value={forces.infantry}
                 aria-label="Infantry transport capacity"
-              />
+              ></meter>
             </div>
           </dl>
         </section>
