@@ -1548,7 +1548,7 @@
         />
       </div>{/if}
     {#if history}<div
-        class="history-panel"
+        class="history-panel campaign-records"
         role="dialog"
         aria-modal="true"
         aria-label="Campaign history panel"
@@ -1746,6 +1746,19 @@
     width: auto;
     padding: 0;
     border: 0;
+  }
+  .history-panel.campaign-records {
+    top: max(80px, calc(var(--command-rail-height) + 8px));
+  }
+  @media (min-width: 2400px) {
+    .history-panel.campaign-records {
+      top: max(130px, calc(var(--command-rail-height) + 8px));
+    }
+  }
+  @media (max-width: 700px) {
+    .history-panel.campaign-records {
+      top: max(66px, calc(var(--command-rail-height) + 8px));
+    }
   }
   .roster-panel {
     position: absolute;

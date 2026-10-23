@@ -144,6 +144,20 @@ test("Recover saved campaign records without losing your place", async ({
     player: "History envoy — reading device",
     surface: "game" as const,
     primary: [back],
+    verifications: [
+      {
+        spec: "The bounded history panel leaves the entire factual resource rail readable above it, without clipped background text.",
+        check: async () => {
+          await expect
+            .poll(async () => {
+              const rail = await page.locator(".command-rail").boundingBox();
+              const panel = await tray.boundingBox();
+              return rail && panel ? panel.y - (rail.y + rail.height) : -1;
+            })
+            .toBeGreaterThanOrEqual(8);
+        },
+      },
+    ],
   });
   await story.step("open-records", {
     actor: "History envoy",
