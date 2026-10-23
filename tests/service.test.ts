@@ -5990,6 +5990,8 @@ for (const mode of ["mock", "real"] as const)
       expect(before.economy!.research.levels.innovation).toBe(0);
       expect(before.economy!.research.progressMilli.innovation).toBe(19600);
       expect(before.economy!.ledger!.scienceMilli).toBe(1400);
+      expect(before.economy!.science!.scienceMilli).toBe(1400);
+      expect(before.economy!.science!.sources.map(source => source.starId)).toEqual([before.own.home!]);
       const deliveries = await Promise.all([
         settleCampaignTicks(id, () => start + 15 * 900000),
         settleCampaignTicks(id, () => start + 15 * 900000),
@@ -5999,6 +6001,7 @@ for (const mode of ["mock", "real"] as const)
       expect(complete.economy!.research.levels.innovation).toBe(1);
       expect(complete.economy!.research.progressMilli.innovation).toBe(1000);
       expect(complete.economy!.ledger!.scienceMilli).toBe(1400);
+      expect(complete.economy!.science!.scienceMilli).toBe(1404);
       expect(complete.economy!.research.lastApplied).toEqual(order);
       expect(await settleCampaignTicks(id, () => start + 15 * 900000)).toBe(0);
       expect(await settleCampaignTicks(id, () => start + 16 * 900000)).toBe(1);
@@ -6006,11 +6009,14 @@ for (const mode of ["mock", "real"] as const)
       const final = ownerHistory[0];
       expect(final.economy!.research.progressMilli.innovation).toBe(2404);
       expect(final.economy!.ledger!.scienceMilli).toBe(1404);
+      expect(final.economy!.science!.scienceMilli).toBe(1404);
       expect(final.revision).toBe(23);
       const peerHistory = (await history(peer)).records;
       expect(peerHistory[0].economy!.research.target).toBe("navigation");
       expect(peerHistory[0].economy!.research.progressMilli.navigation).toBe(22400);
       expect(peerHistory[0].economy!.ledger!.scienceMilli).toBe(1400);
+      expect(peerHistory[0].economy!.science!.scienceMilli).toBe(1400);
+      expect(peerHistory[0].economy!.science!.sources.map(source => source.starId)).toEqual([peerHistory[0].own.home!]);
       expect(JSON.stringify(peerHistory)).not.toContain(order.id);
       await expect(getDoc(doc(peer.firestore, "campaignViews", id, "members", owner.uid))).rejects.toThrow();
       expect((await db.collection(`campaignStates/${id}/versions`).get()).size).toBe(23);

@@ -731,3 +731,5 @@ Prompt 135 | 69efaf807213ec1d2efef0f3044908fbe98444d4930b1757be3d5d226fe5500d | 
 Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Correct measured eight-pixel focus intrusion and add waiting-rail and separate normal-motion keyboard verification
 Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Preserve passing focus evidence and correct observed waiting inspector anchoring with heading and rail containment
 Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Retain 48 corrected focus and waiting-rail candidates with four-size generation and separately scoped normal-motion evidence
+Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | Preserve earned-rate failure evidence and correct exact label spacing and resource-panel containment before scoped verification
+Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | Archive four passing real science-rate journeys and 24 unapproved candidates with service privacy and settlement evidence

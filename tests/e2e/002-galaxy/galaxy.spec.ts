@@ -213,13 +213,13 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
       if (info.project.name === "phone") await keyboard(owner, "More");
     };
     const facts = {
-      spec: "Credits, last confirmed science and actual next scheduled tick remain readable on phone as well as desktop; the chart and inspector stay within the viewport.",
+      spec: "Credits, current science per tick and actual next scheduled tick remain readable on phone as well as desktop; the chart and inspector stay within the viewport.",
       check: async () => {
         await expect(owner.getByLabel("Empire resources")).toContainText(
           "Credits",
         );
         await expect(owner.getByLabel("Empire resources")).toContainText(
-          "Science · last tick",
+          "Science",
         );
         await expect(owner.getByLabel("Empire resources")).toContainText(
           "Next tick",

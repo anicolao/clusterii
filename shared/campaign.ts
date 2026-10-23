@@ -24,6 +24,7 @@ import { type Intelligence, observationView } from "./observations.js";
 import {
   type Economy,
   initialEconomy,
+  scienceProduction,
   type Technology,
   technologies,
 } from "./production.js";
@@ -481,6 +482,7 @@ export function campaignView(state: Campaign, uid: string) {
           research: state.economy.research[uid],
           marketFocus: state.economy.marketFocus?.[uid] ?? initialFocus(),
           ledger: state.economy.ledger[uid] ?? null,
+          science: scienceProduction(state, uid),
         }
       : null,
     military: militaryView(state, uid),
