@@ -849,3 +849,5 @@ Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | 
 Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | Isolate shared gallery radio groups so pending and interactive faction specimens preserve independent selection.
 
 Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | Correct Svelte annotation syntax for the intentional focusable reading region before final capture source.
+
+Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | Correct rendered initial faction/footer clipping and opaque chapter tabs; assert all choices and matrix before scrolling.

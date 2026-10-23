@@ -220,6 +220,46 @@
     margin: 6px 0 0;
     font-size: 19px;
   }
+  @media (min-width: 701px) and (max-height: 800px) {
+    .faction-picker,
+    .faction-content {
+      min-height: 430px;
+    }
+    .faction-content {
+      padding: 18px 24px;
+      gap: 12px 24px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    label {
+      min-height: 60px;
+    }
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+    }
+    .faction-options {
+      gap: 10px;
+    }
+    article p {
+      font-size: 15px;
+      margin: 8px 0;
+    }
+    article {
+      padding: 8px 0;
+    }
+    dl {
+      margin-top: 12px;
+      padding-top: 10px;
+    }
+    dd {
+      font-size: 17px;
+    }
+  }
   @media (min-width: 2400px) {
     .faction-picker,
     .faction-content {

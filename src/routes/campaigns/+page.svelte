@@ -1279,11 +1279,26 @@
     margin: 5px 0 0;
     line-height: 1.2;
   }
+  .admitting .campaign-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .admitting .join-tabs {
+    flex-shrink: 0;
+  }
+  .admitting .campaign-body :global(.faction-picker) {
+    flex: 1;
+    height: auto;
+  }
+  .admitting .portrait-task {
+    flex: 1;
+    min-height: min-content;
+  }
   .admitting .page-heading {
     display: none;
   }
   .admitting .join-tabs {
-    background: #07131cdd;
+    background: #07131c;
     gap: 18px;
     justify-content: center;
   }

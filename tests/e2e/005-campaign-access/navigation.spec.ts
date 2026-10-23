@@ -163,17 +163,22 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     },
     verifications: [
       {
-        spec: "Claim stays visible while faction details scroll within their panel.",
+        spec: "The initial view contains all four choices, affinity matrix and Claim without automatic scrolling; longer reading remains bounded.",
         check: async () => {
           await rail(page, "Claim your seat");
           const panel = page.locator(".campaign-body");
           expect(
             await panel.evaluate((el) => getComputedStyle(el).overflowY),
           ).toBe("auto");
-          if (["phone", "short"].includes(info.project.name))
-            expect(
-              await panel.evaluate((el) => el.scrollHeight > el.clientHeight),
-            ).toBe(true);
+          for (const radio of await page
+            .getByRole("region", { name: "Choose your faction", exact: true })
+            .getByRole("radio")
+            .all())
+            await contained(radio);
+          await contained(
+            page.getByLabel("Production affinity by stellar class"),
+          );
+          expect(await page.evaluate(() => window.scrollY)).toBe(0);
         },
       },
     ],
