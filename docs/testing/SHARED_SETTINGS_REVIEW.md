@@ -72,3 +72,22 @@ Exact original image paths for review:
 - `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/short/darwin-arm64/005-compare-shared-feedback-2-developer-reduced-feedback.png`
 
 All candidates remain unpromoted. Older phone images are from e686e3d and cannot complete this source-matched family. Full-family/phone reload, actual galaxy rail/scene equivalence, authoritative actions/account/concurrency, Linux/KMS/hosted/performance/release holds stay open. No further run or source change this turn.
+
+## Corrected-source phone — reviewer Prompt116
+
+Reviewer20:20 sampled six originals from the other three sizes (003 settings and005 standard feedback), with large composition viewed scaled only; full image/native-resolution review and baseline approval remain outstanding. Authorized one phone verification after the concrete asset correction.
+
+Exact clean HEAD `9d0a837e62ef2fe3f76cea735f63fbe94c4a8de8`; `git diff 7d43510 -- src tests/browser/local-settings.story.spec.ts` is empty. Unchanged spec SHA-256 `48420b694b27389054df2022333f7d0e5b1f18d58cd744daed8d9ca59ba264ed`. Prompt/meta logged first, temporarily stashed to preserve requested clean pairing, then restored. Disk7167656KiB. Serialized build, then `CLUSTER_STORY_MODE=generate bunx playwright test tests/browser/local-settings.story.spec.ts --config playwright.stories.config.ts --project=phone --max-failures=1`; original budgets, exactRGBA0/retries0 unchanged.
+
+One phone journey passes8.7s (12.1s overall), six original captures with all local-setting/reload/OS/focus/containment/shared-feedback assertions. Retained root `/tmp/cluster-settings-phone-corrected-candidates/` includes full log, generated README/story/renderer manifests, PNG/layout pairs and evidence-sha256.json. Implementation-agent inspection of003 and005 reduced confirms contained settings and readable named feedback; independent review remains pending. Older phone failures/partials are preserved separately and excluded.
+
+Original phone paths:
+
+- `/tmp/cluster-settings-phone-corrected-candidates/stories/local-presentation-settings/phone/darwin-arm64/001-open-and-contain-1-developer-local-settings.png`
+- `/tmp/cluster-settings-phone-corrected-candidates/stories/local-presentation-settings/phone/darwin-arm64/002-choose-local-reduction-1-developer-local-settings.png`
+- `/tmp/cluster-settings-phone-corrected-candidates/stories/local-presentation-settings/phone/darwin-arm64/003-reload-and-respect-device-1-developer-local-settings.png`
+- `/tmp/cluster-settings-phone-corrected-candidates/stories/local-presentation-settings/phone/darwin-arm64/004-close-explicitly-1-developer-restored-opener.png`
+- `/tmp/cluster-settings-phone-corrected-candidates/stories/local-presentation-settings/phone/darwin-arm64/005-compare-shared-feedback-1-developer-standard-feedback.png`
+- `/tmp/cluster-settings-phone-corrected-candidates/stories/local-presentation-settings/phone/darwin-arm64/005-compare-shared-feedback-2-developer-reduced-feedback.png`
+
+Combined review set is these six plus18 at `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/` on7d43510: identical production/spec, distinct exact clean commit provenance. No files promoted or baselines changed; generation is not strict comparison. Passing traces are not retained, so no network404 claim. A later passing phone run does not prove the prior reload failure’s cause. Full independent24-image/native-resolution review, exact baseline verification/Linux and actual galaxy/scene/authoritative/concurrency/KMS/hosted/performance/release gates remain open. No other browser family or feature work executed.
