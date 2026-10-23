@@ -31,3 +31,9 @@ Phone completed real admission/start, compact/expanded/lower reading, Economy re
 ## Full interaction generation2ac4bf1
 
 Four journeys/28 candidates pass52.5s. Originals retained at `/tmp/cluster-galaxy-command-selection-candidates/`. Explicit Saiph selection, local lower-detail acknowledgement/fact retention and keyboard lower-fact reading pass. Normal-motion interaction is checked before restoring reduced-motion capture; all images have the declared reduced-motion environment. Own visual comparison found centered cover cropping trims the orbital station tower in the shallow short scene; changed-source art alignment20% preserves the station silhouette while keeping the real factual overlay. No assertion/spec changes for this framing correction.
+
+## Review family cefd8d1
+
+Final framing source `cefd8d1496acb85292fef13fa80975b8e6406828`, unchanged spec `95060f6d9a2cb7bf0f87adec882ccf7b3038c10432a693127a040ee82bf31579`:4 genuine journeys pass52.7s,28 candidates at `/tmp/cluster-galaxy-command-review-candidates/galaxy-command-surface/`, copied byte-for-byte under feature `stories/candidates/`. Source/clean/spec/manifest checks passed. Original helper-generated narratives and metadata retained. Reduced captures, keyboard reading, actual selection, global Economy return and local lower-detail text equivalence exercised; normal-motion interaction only, not normal-motion captures.
+
+Independent plate03/04 comparison, strict promotion, Linux rendering, live action/draft concurrency and hosted/KMS remain open. Existing legacy fleet/construction journeys assume immediately exposed Fleets/Develop; their navigation must migrate explicitly to Inspect without discarding command/conservation/privacy assertions. This feature does not claim the inherited whole browser suite is green. No prior baseline or failure evidence changed.
