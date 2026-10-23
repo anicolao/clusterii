@@ -85,7 +85,28 @@ test("Inspect shared route composition in gallery and interactive lab", async ({
         }
       },
     },
-    verifications: [],
+    verifications: [
+      {
+        spec: "Accepted frames disable duplicate dispatch in both actual shared components.",
+        check: async () => {
+          for (const name of [
+            "Standard motion comparison",
+            "Reduced motion comparison",
+          ]) {
+            const p = page.getByRole("region", { name, exact: true });
+            await expect(
+              p.getByRole("button", { name: "Send fleet", exact: true }),
+            ).toBeDisabled();
+            await expect(
+              p.getByRole("region", {
+                name: "Fleet route planner",
+                exact: true,
+              }),
+            ).toHaveCount(1);
+          }
+        },
+      },
+    ],
     views: [{ page, player: "Component reviewer", surface: "document" }],
   });
 });

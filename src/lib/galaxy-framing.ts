@@ -100,7 +100,8 @@ export function fleetRouteFrame(
       dot = (v: number[]) => d.reduce((n, x, i) => n + x * v[i], 0);
     distance = Math.max(
       distance,
-      dot(normal) + Math.abs(dot(right)) / (tangent * aspect * 0.68),
+      dot(normal) +
+        Math.abs(dot(right)) / (tangent * aspect * (aspect < 1.6 ? 0.5 : 0.68)),
       dot(normal) + Math.abs(dot(up)) / (tangent * 0.64),
     );
   }

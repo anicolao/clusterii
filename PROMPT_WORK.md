@@ -780,3 +780,5 @@ Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | 
 Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | Preserve first four-size fleet evidence and remove the cropped inert commander deck during fleet instrumentation.
 
 Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | Archive corrected four-size dispatch and recovery evidence with native-scale review and explicit unresolved visual gates.
+
+Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Preserve the mandatory-verification failure and bound narrow-scene route labels before corrected component/live execution.

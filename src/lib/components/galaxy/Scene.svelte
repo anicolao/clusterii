@@ -391,7 +391,9 @@
     background: #06121be8;
     color: #d9fcff;
     font-size: 13px;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: min(160px, 40vw);
+    text-align: center;
     pointer-events: none;
   }
   .fleet-label {
