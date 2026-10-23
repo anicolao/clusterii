@@ -109,6 +109,59 @@ test("Read the cinematic galaxy through real commander and system instruments", 
     },
     verifications: [
       {
+        spec: "The inspector title clears the measured resource rail and both ownership rows plus the illustration disclaimer are fully readable without automatic scrolling.",
+        check: async () => {
+          const header = await page.locator(".command-rail").boundingBox();
+          const panel = await inspector.boundingBox();
+          const map = await page
+            .locator("[data-galaxy-viewport]")
+            .boundingBox();
+          const legend = await page.locator(".contact-legend").boundingBox();
+          expect(map!.y + map!.height).toBeLessThanOrEqual(legend!.y);
+          expect(panel!.y).toBeGreaterThanOrEqual(
+            header!.y + header!.height + 8,
+          );
+          for (const target of [
+            inspector.getByRole("heading", { level: 2 }),
+            inspector.getByText("Orbit", { exact: true }),
+            inspector.getByText("Surface", { exact: true }),
+            inspector.locator("figcaption"),
+          ]) {
+            expect(
+              await target.evaluate((element) => {
+                const box = element.getBoundingClientRect();
+                if (
+                  box.top < 0 ||
+                  box.left < 0 ||
+                  box.right > innerWidth ||
+                  box.bottom > innerHeight
+                )
+                  return false;
+                for (
+                  let parent = element.parentElement;
+                  parent;
+                  parent = parent.parentElement
+                ) {
+                  const style = getComputedStyle(parent),
+                    clip = parent.getBoundingClientRect();
+                  if (
+                    /(auto|scroll|hidden|clip)/.test(style.overflowX) &&
+                    (box.left < clip.left || box.right > clip.right)
+                  )
+                    return false;
+                  if (
+                    /(auto|scroll|hidden|clip)/.test(style.overflowY) &&
+                    (box.top < clip.top || box.bottom > clip.bottom)
+                  )
+                    return false;
+                }
+                return true;
+              }),
+            ).toBe(true);
+          }
+        },
+      },
+      {
         spec: "Portrait identity and mechanical faction are labelled separately; saved portrait is the M2 atlas tile.",
         check: async () => {
           await expect(button("Menu")).toHaveAttribute(

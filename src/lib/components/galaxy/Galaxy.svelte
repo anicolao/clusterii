@@ -1089,7 +1089,6 @@
       </div>{/if}
     <div
       class="chart"
-      data-galaxy-viewport
       inert={more ||
         roster ||
         listing ||
@@ -1108,37 +1107,39 @@
             ? "Recovering contact records…"
             : "Contact markers show acquired positions from loaded records."}
         </p>{/if}
-      <Canvas renderMode="on-demand"
-        ><Scene
-          fleets={Object.fromEntries(
-            view.stars.map((s) => [
-              s.id,
-              view.military?.fleets.filter(
-                (f) => f.starId === s.id && f.travel?.status !== "traveling",
-              ).length ?? 0,
-            ]),
-          )}
-          travelers={(view.military?.fleets ?? [])
-            .filter((f) => f.travel?.status === "traveling")
-            .map((f) => ({
-              id: f.id,
-              number: f.number,
-              ...fleetPosition(f, view.stars, view.production?.tick ?? 0),
-            }))}
-          onfleet={(id) => {
-            selectedFleet = id;
-            void openPanel("military");
-          }}
-          {contacts}
-          stars={view.stars}
-          owned={view.holdings.map((h) => h.starId)}
-          home={view.own.home ?? ""}
-          selected={star.id}
-          {stellarClass}
-          {cameraRequest}
-          onselect={(id) => (selected = id)}
-        /></Canvas
-      >
+      <div class="stellar-viewport" data-galaxy-viewport>
+        <Canvas renderMode="on-demand"
+          ><Scene
+            fleets={Object.fromEntries(
+              view.stars.map((s) => [
+                s.id,
+                view.military?.fleets.filter(
+                  (f) => f.starId === s.id && f.travel?.status !== "traveling",
+                ).length ?? 0,
+              ]),
+            )}
+            travelers={(view.military?.fleets ?? [])
+              .filter((f) => f.travel?.status === "traveling")
+              .map((f) => ({
+                id: f.id,
+                number: f.number,
+                ...fleetPosition(f, view.stars, view.production?.tick ?? 0),
+              }))}
+            onfleet={(id) => {
+              selectedFleet = id;
+              void openPanel("military");
+            }}
+            {contacts}
+            stars={view.stars}
+            owned={view.holdings.map((h) => h.starId)}
+            home={view.own.home ?? ""}
+            selected={star.id}
+            {stellarClass}
+            {cameraRequest}
+            onselect={(id) => (selected = id)}
+          /></Canvas
+        >
+      </div>
     </div>
     <aside
       inert={more ||
@@ -1691,11 +1692,10 @@
       radial-gradient(ellipse at 50% 55%, #16385788, transparent 70%), #050c14;
   }
   .contact-legend {
-    position: absolute;
-    left: 16px;
-    bottom: 12px;
+    order: 2;
+    flex: none;
     z-index: 1;
-    max-width: calc(100% - 32px);
+    margin: 0 16px;
     color: #dccbb5;
     background: #07131cd9;
     padding: 6px;
@@ -1703,11 +1703,20 @@
     pointer-events: none;
   }
   .chart {
+    display: flex;
+    flex-direction: column;
     isolation: isolate;
     overflow: hidden;
     z-index: 0;
     position: absolute;
     inset: 58px 20% 0 0;
+  }
+  .stellar-viewport {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    isolation: isolate;
   }
   .command-rail {
     position: absolute;
@@ -2703,6 +2712,7 @@
     inset: var(--command-rail-height) 29% 112px 0;
   }
   .system-inspector,
+  .system-inspector.active,
   .system-inspector.expanded {
     top: calc(var(--command-rail-height) + 8px);
   }
@@ -2715,14 +2725,14 @@
   }
   .system-inspector:not(.expanded) .system-details :global(.world-art) {
     aspect-ratio: 1.45;
-    margin: 0 -20px 12px;
+    margin: 0 0 12px;
     border-radius: 0;
   }
   .acknowledgement {
     top: calc(var(--command-rail-height) + 8px);
   }
   .command-dock {
-    width: max-content;
+    width: calc(100% - 48px);
     max-width: calc(100% - 48px);
     left: 50%;
     right: auto;
@@ -2731,10 +2741,12 @@
     border-radius: 12px;
   }
   .dock-destinations {
+    flex: 1;
     flex-wrap: nowrap;
     gap: 12px;
   }
   .dock-destinations :global(.command-control) {
+    flex: 1;
     background: linear-gradient(165deg, #1b2c38ee, #08121dec 72%);
     border-color: #96a3ad77;
     min-height: 64px;
@@ -2767,14 +2779,19 @@
       max-height: calc(100% - var(--command-rail-height) - 192px);
     }
     .system-inspector:not(.expanded) .system-details :global(.world-art) {
-      margin-inline: -32px;
+      margin-inline: 0;
       aspect-ratio: 1.45;
     }
     .dock-destinations {
       gap: 24px;
     }
     .dock-destinations :global(.command-control) {
-      min-height: 92px;
+      min-height: 112px;
+      font-size: 36px;
+    }
+    .dock-destinations :global(.command-control svg) {
+      width: 56px;
+      height: 56px;
     }
   }
   @media (min-width: 701px) and (max-height: 800px) {
@@ -2783,7 +2800,7 @@
       gap: 6px 16px;
     }
     .system-inspector:not(.expanded) .system-details :global(.world-art) {
-      aspect-ratio: 2;
+      aspect-ratio: 3;
     }
     .chart {
       bottom: 100px;
@@ -2826,7 +2843,7 @@
       padding: 12px;
     }
     .system-inspector:not(.expanded) .system-details :global(.world-art) {
-      margin: 0 -12px 6px;
+      margin: 0 0 6px;
       aspect-ratio: 2.5;
     }
     .system-inspector.expanded,
