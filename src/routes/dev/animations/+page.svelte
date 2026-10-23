@@ -1,5 +1,6 @@
 <script lang="ts">
   import GameMenu from "$lib/components/GameMenu.svelte";
+  import CommandControl from "$lib/components/CommandControl.svelte";
   import CreditOffers from "$lib/components/CreditOffers.svelte";
   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
@@ -54,6 +55,7 @@
   let time = $state(0);
   let speed = $state(1);
   let playing = $state(false);
+  let commandSelections = $state(["systems", "systems"]);
   const scenario = $derived(scenarios.find((s) => s.id === selected)!);
   const frame = $derived(
     [...scenario.frames].reverse().find((f) => f.at <= time)!,
@@ -399,6 +401,40 @@
     tested in the emulator browser journey.
   </p>
 </div>
+
+<section class="lab" aria-label="Command control motion lab">
+  <h2>Shared command selection</h2>
+  <p>
+    Selection is immediate. Normal and reduced motion preserve the same local
+    result; this preview issues no campaign order.
+  </p>
+  <div class="comparison">
+    {#each [false, true] as reduced, index}
+      <section
+        class="specimen"
+        aria-label={reduced
+          ? "Reduced command comparison"
+          : "Standard command comparison"}
+        data-reduce-motion={reduced}
+      >
+        <h3>{reduced ? "Reduced motion" : "Standard motion"}</h3>
+        <p role="status" aria-label="Local command selection">
+          Selected command preview: {commandSelections[index]}
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px">
+          {#each ["systems", "economy"] as const as kind}
+            <CommandControl
+              {kind}
+              label={kind}
+              current={commandSelections[index] === kind}
+              onclick={() => (commandSelections[index] = kind)}
+            />
+          {/each}
+        </div>
+      </section>
+    {/each}
+  </div>
+</section>
 
 <style>
   .lab {

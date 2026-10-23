@@ -2765,13 +2765,13 @@
   }
   .dock-destinations :global(.command-control) {
     flex: 1;
-    background: linear-gradient(165deg, #1b2c38ee, #08121dec 72%);
-    border-color: #96a3ad77;
+    --command-background: linear-gradient(165deg, #1b2c38ee, #08121dec 72%);
+    --command-border: #96a3ad77;
     min-height: 64px;
   }
   .dock-destinations :global(.command-control.current) {
-    border-color: #84e4f4;
-    background: linear-gradient(#214559, #071822);
+    --command-border: #84e4f4;
+    --command-background: linear-gradient(#214559, #071822);
   }
   @media (min-width: 2500px) {
     .command-rail {
@@ -2879,6 +2879,8 @@
       min-height: 52px;
       border: 0;
       border-radius: 0;
+      --command-radius: 0px;
+      --command-border-width: 0px;
     }
   }
   @media (min-width: 701px) {
