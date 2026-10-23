@@ -1,5 +1,7 @@
 # Project instructions
 
+Use the established Nix development environment for all build, emulator and browser commands. The recovered local invocation is `nix develop /tmp/pantheon-nix-env --command …`; verify Java21, Node and Bun inside it. Do not substitute host tools or manually hard-code Nix store paths.
+
 Read [E2E_GUIDE.md](E2E_GUIDE.md) before writing or changing browser tests. Illustrated user stories use the shared TestStepHelper, named acknowledged outcomes and assertions, generated ordered walkthroughs, and exact separately reviewed visual baselines. Procedural tests and loose captures do not satisfy this contract.
 
 README.md, VISION.md, and CLUSTER_II_MVP.md are the design contract. IMPLEMENTATION_PLAN.md defines delivery. CLUSTER_I_DESIGN_REVIEW.md is historical evidence, not a forward requirement. Describe the design directly and assertively. Distinguish the design contract from implementation status.

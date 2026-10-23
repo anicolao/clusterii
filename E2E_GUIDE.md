@@ -17,6 +17,12 @@ Capture opening states, decisions, confirmation, cancellation and outcomes. Do n
 
 The helper owns counters, filenames, assertions, captures and Markdown links. Direct screenshots, hand-written screenshot walkthroughs, masks, hidden controls and pixel normalization do not satisfy this convention. Component gallery/lab scenarios and service tests remain useful, separately labeled evidence.
 
+## Feature-local organization (mandatory)
+
+Follow Pantheon’s actual `tests/e2e/001-game-setup` structure: `tests/e2e/NNN-feature/feature.spec.ts`, `README.md`, `FIDELITY.md`, `screenshots/` and `stories/`, with common `tests/e2e/helpers/`. Entry is migrated in [001-entry](tests/e2e/001-entry/README.md); legacy stories remain discovered until their production flow migrates. Do not add empty parallel directories or duplicate stories.
+
+The shared runner discovers both locations. For feature specs, exact verification resolves feature-local `screenshots/<story>/<viewport>/<platform>`; reviewed promotion and strict-evidence archiving derive the same feature from recorded source.spec and write `screenshots/` or `stories/`. Generated candidates remain isolated under test-results until reviewed. Original source/hash review records survive moves unchanged.
+
 ## Files and generated evidence
 
 - `tests/browser/*.story.spec.ts`: illustrated journeys; import the shared story fixture.

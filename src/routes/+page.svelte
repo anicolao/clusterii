@@ -441,14 +441,28 @@
       aria-label="Welcome to Cluster"
     >
       <div class="brand">
-        <p class="overline">A galaxy won together</p>
-        <h1 bind:this={focusTitle} tabindex="-1">CLUSTER</h1>
-        <div class="rule" aria-hidden="true"><Icon kind="star" /></div>
-        <p class="invitation">
-          The stars are vast.<br />Your empire cannot stand alone.
-        </p>
+        <h1 bind:this={focusTitle} tabindex="-1" aria-label="Cluster">
+          <span aria-hidden="true"
+            >CLU<span class="title-star"
+              ><svg viewBox="0 0 100 180" focusable="false"
+                ><circle cx="50" cy="90" r="36" /><path
+                  d="M50 0 L54 81 L83 90 L54 96 L50 180 L46 96 L17 90 L46 81 Z"
+                /></svg
+              ></span
+            >STER</span
+          >
+        </h1>
       </div>
       <div class="entry-actions">
+        {#if continued}<EntryButton
+            label="Continue"
+            detail={continued.name}
+            illustration="world"
+            emphasis
+            focusId="continue"
+            onclick={() =>
+              goto(`${campaignHref(base, continued.id)}&briefing=return`)}
+          />{/if}
         <EntryButton
           label={busy ? "Opening the gates…" : "Play"}
           illustration="planet"
@@ -456,14 +470,6 @@
           onclick={play}
           disabled={!connected || busy || (!!account && !ready)}
         />
-        {#if continued}<EntryButton
-            label="Continue"
-            detail={continued.name}
-            illustration="planet"
-            focusId="continue"
-            onclick={() =>
-              goto(`${campaignHref(base, continued.id)}&briefing=return`)}
-          />{/if}
         <EntryButton
           label="Learn the game"
           illustration="observatory"
@@ -504,9 +510,6 @@
         />{/if}
       {#if error}<p class="notice error" role="alert">{error}</p>{/if}
     </section>
-    <p class="world-caption" aria-hidden="true">
-      Beyond the horizon, an alliance is forming.
-    </p>
   {:else if scene === "learn"}
     <section class="instrument learn" aria-label="Learn the game">
       <div class="instrument-top">
@@ -650,36 +653,102 @@
     font-size: 14px;
     padding: 8px;
   }
+  /* Plate 01: title and inset choices share one quiet command axis. */
+  .entry {
+    width: min(550px, 42vw);
+    margin: 0 24% 0 auto;
+    padding: 32px 0;
+  }
+  .brand h1 {
+    font-size: clamp(64px, 6.3vw, 112px);
+    letter-spacing: 0.18em;
+    margin: 0 -0.18em 12px 0;
+  }
+  .brand h1 > span {
+    display: inline-flex;
+    align-items: center;
+  }
+  .title-star {
+    position: relative;
+    display: inline-block;
+    width: 0.34em;
+    height: 1em;
+    margin: 0 0.08em 0 -0.07em;
+  }
+  .title-star svg {
+    position: absolute;
+    width: 1.05em;
+    height: 1.9em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    filter: drop-shadow(0 0 8px #ffbc6580);
+    pointer-events: none;
+  }
+  .title-star circle {
+    fill: none;
+    stroke: #e2bd80;
+    stroke-width: 0.6;
+  }
+  .title-star path {
+    fill: #ffe3ac;
+  }
+  .entry-actions {
+    margin: clamp(40px, 8svh, 100px) auto 0;
+  }
+  .entry-secondary {
+    flex-wrap: wrap;
+    gap: 0 8px;
+  }
+  @media (min-width: 2200px) {
+    .entry {
+      width: 34vw;
+      margin-right: 25%;
+    }
+    .brand h1 {
+      font-size: clamp(150px, 6.3vw, 280px);
+    }
+    .entry-actions {
+      width: 94%;
+      gap: 24px;
+      margin-top: 9svh;
+    }
+    .entry-secondary :global(button),
+    .entry-secondary .campaign-link,
+    .signed {
+      font-size: 24px;
+    }
+  }
   @media (max-width: 700px) {
-    .resuming :global(.entry-actions) {
-      margin-top: 20px;
+    .entry {
+      width: 100%;
+      margin: 0;
+      padding: max(48px, env(safe-area-inset-top)) 16px
+        max(24px, env(safe-area-inset-bottom));
     }
-    .resuming .brand h1 {
-      font-size: 48px;
-      margin: 10px 0;
+    .brand h1 {
+      font-size: clamp(44px, 13vw, 80px);
+      margin: 30px -0.18em 12px 0;
     }
-    .resuming .invitation {
-      font-size: 20px;
-      line-height: 1.2;
+    .entry-actions {
+      margin-top: auto;
+      padding-top: 40px;
+      max-width: 420px;
     }
-    .resuming .rule {
-      margin: 12px auto;
+    .signed {
+      margin-top: 0;
     }
   }
   @media (min-width: 701px) and (max-height: 780px) {
-    .resuming .brand h1 {
+    .entry {
+      padding: 20px 0;
+    }
+    .brand h1 {
       font-size: 68px;
-      margin: 8px 0;
     }
-    .resuming .invitation {
-      font-size: 22px;
-      line-height: 1.2;
-    }
-    .resuming .rule {
-      margin: 8px auto;
-    }
-    .resuming :global(.entry-actions) {
-      margin-top: 20px;
+    .entry-actions {
+      margin-top: 32px;
     }
   }
 
