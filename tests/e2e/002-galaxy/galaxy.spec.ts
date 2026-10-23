@@ -267,6 +267,10 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
       name: "System construction",
       exact: true,
     });
+    const closeConstruction = constructionPanel.getByRole("button", {
+      name: "Back to galaxy",
+      exact: true,
+    });
     let reservedBalance = "";
     const readAcceptedQueue = async () => {
       await constructionPanel
@@ -351,6 +355,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
       acknowledgement: {
         spec: "The real construction receipt accepts the order and credits are reserved.",
         check: async () => {
+          await expect(inspector).toHaveAttribute("inert", "");
           await expect(constructionPanel.getByRole("status")).toContainText(
             "Construction order accepted. Credits reserved",
           );
@@ -387,7 +392,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           page: owner,
           player: aliases[0],
           surface: "game",
-          primary: [button(owner, "Back to galaxy")],
+          primary: [closeConstruction],
         },
       ],
     });
@@ -435,7 +440,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           page: owner,
           player: aliases[0],
           surface: "game",
-          primary: [button(owner, "Back to galaxy")],
+          primary: [closeConstruction],
         },
       ],
     });
@@ -444,7 +449,8 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
       description:
         "Close recovered construction to its Orbit opener, select Surface, then use End in the bounded reading region to read held credits while retaining contextual controls.",
       action: async () => {
-        await keyboard(owner, "Back to galaxy");
+        await closeConstruction.focus();
+        await owner.keyboard.press("Enter");
         await expect(button(owner, "Build in orbit")).toBeFocused();
         await keyboard(owner, "Inspect Surface · owner You");
         await owner
@@ -535,10 +541,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           page: owner,
           player: aliases[0],
           surface: "game",
-          primary: [
-            button(owner, "Build base"),
-            button(owner, "Back to galaxy"),
-          ],
+          primary: [button(owner, "Build base"), closeConstruction],
         },
       ],
     });
@@ -547,7 +550,8 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
       description:
         "Collapse the system, open the global command dock and read Economy through the actual authorized projection.",
       action: async () => {
-        await keyboard(owner, "Back to galaxy");
+        await closeConstruction.focus();
+        await owner.keyboard.press("Enter");
         await expect(button(owner, "Build on surface")).toBeFocused();
         await keyboard(owner, "Back to galaxy");
         await openDock();

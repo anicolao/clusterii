@@ -53,3 +53,13 @@ Source validation at the Prompt131 boundary: Nix Java21.0.11/Node24.18.0/Bun1.3.
 ## Reviewer00:22 CI compatibility boundary
 
 [Exact failure classification and compatibility corrections](../../../docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md) records all14 first failures from699ca61 application run39896097763, preserved deadlines/assertions and the distinct arrival/briefing scene-navigation fix. These procedural corrections do not certify the held spatial-layer illustrated family. No current-source browser execution or baseline promotion; original candidates remain intact.
+
+## Reviewer02:12 resumed layer verification
+
+Clean8cc095e71f1e0890f26edf36951f4def103f4452, spec8e090d9e85606d9aa8bb5df2c7c19c5072f9589cf0c4ab70d3e62f4173b97007, ran once after Nix Java21.0.11/Node24.18.0/Bun1.3.13 verification, free owned ports and serial Functions compilation. Disk4,717,748KiB exceeded2,359,296KiB. Original240s/30s/10s budgets, retries0/max-failures1 and exact capture checks were unchanged.
+
+Phone reached actual accepted orbital construction, singular queued order and quoted reserved balance before capture failed: global Back to galaxy matched both the inert selected-system inspector and the construction commitment control. Three prior phone images exist; reload/Surface and other sizes were not reached. Failure is locator scope, not a missing receipt or demonstrated service failure. Full trace, error context, FAILED.json, originals and emulator logs are retained at `/tmp/cluster-galaxy-layer-0212-failure/`; previous output remains `/tmp/cluster-galaxy-layer-0212-previous/`. No retry of unchanged source.
+
+The corrected story scopes construction close/capture to the actual System construction region and asserts the underlying inspector is inert. It retains all geometry, focus restoration, queue, balance, reload, Surface and unrelated-order assertions. No production/service/deadline change. Nix no-emit typecheck and story policy pass. A changed-source run must retain separate provenance; these three originals are not an approved family.
+
+Own partial-image review against03/04: compact phone retains usable map, ownership rows and primary Inspect; expanded phone now distinguishes orbital and surface scene/control instruments with held-credit explanation and persistent Back/View forces. Expanded Orbit exposes actual fighters/camps/stations and Build. These are partial phone observations only, not whole composition approval, 4K evidence, waiting-rail evidence, normal-motion visual acceptance or independent review. Last-tick science remains accurately labelled rather than inferred as a rate. All baseline, Linux, tick, privacy/concurrency, hosted/KMS and release gates remain open.
