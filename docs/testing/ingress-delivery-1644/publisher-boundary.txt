@@ -1,0 +1,91 @@
+  private void sendToFunctionsEmulator(scala.concurrent.Promise<scala.runtime.BoxedUnit>, java.lang.String, java.lang.String, com.firebase.util.triggers.format.PubsubApi$PubsubMessage);
+    Code:
+       0: aload         4
+       2: invokevirtual #86                 // Method com/firebase/util/triggers/format/PubsubApi$PubsubMessage.attributes:()Lscala/collection/immutable/Map;
+       5: getstatic     #62                 // Field scala/Predef$ArrowAssoc$.MODULE$:Lscala/Predef$ArrowAssoc$;
+       8: getstatic     #61                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      11: ldc           #10                 // String Content-Type
+      13: invokevirtual #97                 // Method scala/Predef$.ArrowAssoc:(Ljava/lang/Object;)Ljava/lang/Object;
+      16: getstatic     #58                 // Field com/firebase/server/response/messages/ContentTypes$.MODULE$:Lcom/firebase/server/response/messages/ContentTypes$;
+      19: invokevirtual #80                 // Method com/firebase/server/response/messages/ContentTypes$.JSON:()Ljava/lang/String;
+      22: invokevirtual #98                 // Method scala/Predef$ArrowAssoc$.$minus$greater$extension:(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Tuple2;
+      25: invokeinterface #119,  2          // InterfaceMethod scala/collection/immutable/Map.$plus:(Lscala/Tuple2;)Lscala/collection/immutable/Map;
+      30: astore        5
+      32: aload_0
+      33: getfield      #56                 // Field httpClient:Lcom/firebase/server/client/HttpBesieger;
+      36: new           #33                 // class java/lang/StringBuilder
+      39: dup
+      40: ldc           #5                  // int 30
+      42: invokespecial #92                 // Method java/lang/StringBuilder."<init>":(I)V
+      45: ldc           #8                  // String /functions/projects/
+      47: invokevirtual #93                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      50: aload_2
+      51: invokevirtual #93                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      54: ldc           #9                  // String /triggers/
+      56: invokevirtual #93                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      59: aload_3
+      60: invokevirtual #93                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      63: invokevirtual #94                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      66: getstatic     #60                 // Field io/netty/handler/codec/http/HttpMethod.POST:Lio/netty/handler/codec/http/HttpMethod;
+      69: aload         4
+      71: invokevirtual #87                 // Method com/firebase/util/triggers/format/PubsubApi$PubsubMessage.data:()[B
+      74: invokestatic  #89                 // Method io/netty/buffer/Unpooled.copiedBuffer:([B)Lio/netty/buffer/ByteBuf;
+      77: aload         5
+      79: invokevirtual #78                 // Method com/firebase/server/client/HttpBesieger.newRequest:(Ljava/lang/String;Lio/netty/handler/codec/http/HttpMethod;Lio/netty/buffer/ByteBuf;Lscala/collection/immutable/Map;)Lio/netty/handler/codec/http/DefaultFullHttpRequest;
+      82: astore        6
+      84: aload_0
+      85: getfield      #56                 // Field httpClient:Lcom/firebase/server/client/HttpBesieger;
+      88: aload         6
+      90: invokevirtual #79                 // Method com/firebase/server/client/HttpBesieger.send:(Lio/netty/handler/codec/http/FullHttpRequest;)Lscala/concurrent/Future;
+      93: aload_0
+      94: aload_1
+      95: aload_2
+      96: invokedynamic #127,  0            // InvokeDynamic #2:apply:(Lcom/firebase/server/client/GCFEmulatorPublisher;Lscala/concurrent/Promise;Ljava/lang/String;)Lscala/Function1;
+     101: aload_0
+
+  public static final scala.concurrent.Promise $anonfun$sendToFunctionsEmulator$1(com.firebase.server.client.GCFEmulatorPublisher, scala.concurrent.Promise, java.lang.String, scala.util.Try);
+    Code:
+       0: aload_3
+       1: astore        5
+       3: aload         5
+       5: instanceof    #52                 // class scala/util/Success
+       8: ifeq          29
+      11: aload_1
+      12: getstatic     #63                 // Field scala/Unit$.MODULE$:Lscala/Unit$;
+      15: pop
+      16: getstatic     #66                 // Field scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+      19: invokeinterface #124,  2          // InterfaceMethod scala/concurrent/Promise.success:(Ljava/lang/Object;)Lscala/concurrent/Promise;
+      24: astore        4
+      26: goto          92
+      29: goto          32
+      32: aload         5
+      34: instanceof    #51                 // class scala/util/Failure
+      37: ifeq          79
+      40: aload         5
+      42: checkcast     #51                 // class scala/util/Failure
+      45: astore        6
+      47: aload         6
+      49: invokevirtual #103                // Method scala/util/Failure.exception:()Ljava/lang/Throwable;
+      52: astore        7
+      54: aload_0
+      55: aload_2
+      56: invokedynamic #128,  0            // InvokeDynamic #3:apply:(Ljava/lang/String;)Lscala/Function0;
+      61: aload         7
+      63: invokevirtual #72                 // Method error:(Lscala/Function0;Ljava/lang/Throwable;)V
+      66: aload_1
+      67: aload         7
+      69: invokeinterface #122,  2          // InterfaceMethod scala/concurrent/Promise.failure:(Ljava/lang/Throwable;)Lscala/concurrent/Promise;
+      74: astore        4
+      76: goto          92
+      79: goto          82
+      82: new           #37                 // class scala/MatchError
+      85: dup
+      86: aload         5
+      88: invokespecial #96                 // Method scala/MatchError."<init>":(Ljava/lang/Object;)V
+      91: athrow
+      92: aload         4
+      94: areturn
+
+  public com.firebase.server.client.GCFEmulatorPublisher(com.firebase.server.client.HttpBesieger, io.netty.channel.EventLoopGroup);
+    Code:
+       0: aload_0

@@ -1,0 +1,22 @@
+{
+  "firebaseTools": "15.25.0",
+  "databaseEmulator": "4.11.2",
+  "files": [
+    {
+      "path": "functions/src/index.ts",
+      "sha256": "8f1f06a06dab34c99244abc1c9ccc2d4f0ec2ac5c344e7c10f6dd2006ad089a4"
+    },
+    {
+      "path": "tests/service.test.ts",
+      "sha256": "85b52b4b572547565f236d57ebcfcdb6139fe9585c5146e477ad626d0a8a0309"
+    },
+    {
+      "path": "node_modules/firebase-tools/lib/emulator/functionsEmulator.js",
+      "sha256": "0c16fe813bc5a034e43a9218c0099ae2c75628e14078d40b86708630cf402406"
+    },
+    {
+      "path": "node_modules/firebase-tools/lib/emulator/events/types.js",
+      "sha256": "45bff5e257fb56425566ee0590b429180a9d1151e2e321923a31ea75a925493f"
+    }
+  ]
+}

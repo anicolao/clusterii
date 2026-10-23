@@ -27,5 +27,6 @@ jobs:
             database-debug.log
             firestore-debug.log
             ci-evidence/nix-renderer/
+            ci-evidence/profile-ingress.jsonl
             test-results/
             tests/browser/journey.spec.ts-snapshots/
