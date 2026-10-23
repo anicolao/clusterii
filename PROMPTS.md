@@ -1126,3 +1126,33 @@ Reviewer12:22: original124 story39975694018 now completed FAILURE; full failed l
 Delegated reviewer instruction; see meta-prompts.md checkpoint2026-10-23 12:42 Toronto.
 
 Reviewer12:42: independently viewed3776f52e phone023 and short023 peer against09. New graphics improve fidelity, but initial phone view hides infantry and orbit/surface ownership below fixed action rail; short view hides even casualty numbers. Approved09 keeps outcome, compact casualties and separate orbit/surface facts together above primary action. Bounded scrolling is useful for detail, but these are core outcome facts: compact responsive summary spacing/phase descriptions/art and reserve rail height so main known casualty/control summary is visible initially on phone and short, without hiding required timestamp or inventing values. Keep expanded detail scrollable. Incorporate this on125 before declaring screen done; source-pair focused phone/short evidence and check desktop/large unaffected. Science-rail defect remains next actionable slice, not substitute for current outcome fidelity. Current108candidates stay retained/unapproved. Nix/disk gate/exact criteria, no baseline promotion/merge. Reconcile12:42 findings with attributed logs and push.
+
+## Prompt 160: Science rail
+
+Delegated reviewer instruction; see meta-prompts.md checkpoint2026-10-23 12:52 Toronto.
+
+Reviewer12:52: independently inspected7092767d phone023/short023 peer. Main casualties and separate orbit/surface ownership now visible above action rail on initial view; resolves specific12:42 finding, not full108-frame/plate09 approval. Finish push4b61be86 evidence then keep125 stable and correct concrete feature003 science-panel/rail overlap in a small child PR based125. Use measured rendered rail bounds/responsive layout, preserve keyboard focus, approved composition, real science/recovery assertions and all4sizes; no geometry-test relaxation.1249a3de84a Linux app/story still running, retention/timing acceptance pending. Disk3,280,240KiB: check before each capture/download and do not cross2,359,296 gate; preserve originals. If space blocks browser work, continue source/static investigation and report exact block, no unrelated cleanup. Reconcile12:52, commit/push attributed logs, no baseline promotion/merge or full visual/release acceptance.
+
+## Prompt 161: Disk boundary
+
+Delegated reviewer instruction; see meta-prompts.md checkpoint2026-10-23 13:02 Toronto.
+
+Reviewer13:02:126a81343a3 clean pushed based125 confirmed; independent0077be54 desktop010 sample clears resource rail, not full24-image approval. Four journeys passed, originals remain/tmp/cluster-science-clearance-0077be54. Disk537,924KiB on supervisor check, well below2,359,296 gate. No new captures, builds, large copies/downloads or unrelated cleanup. Preserve originals; continue lightweight source review of recurring publication consistency and existing CI status/log summaries only, with no evidence-heavy work until headroom returns. Do not claim release complete or disable monitor.124retention app/story still running; inspect completed outcome when available without large downloads. Reconcile13:02 checkpoint in next small committed/pushed log; report concrete disk blocker, no merge/baseline promotion.
+
+## Prompt 162: Retention outcome
+
+Delegated reviewer instruction; see meta-prompts.md checkpoints2026-10-23 13:12/13:22/13:32/13:54 Toronto.
+
+Reviewer13:54: inspection tools recovered; disk262,044KiB remains below gate.1249a3de84a application39987470646 SUCCESS; story39987470893 FAILURE completed17:34:42UTC, but upload-artifact now SUCCESS. Metadata lists unexpired artifact12520550251 illustrated-stories-verify-linux-arm64 size1,658,663,863bytes. This establishes successful upload, not presence/validity of timing or loader files. Do not download this archive or start heavy work below gate. Reconcile pending13:12/13:22/13:32/13:54 checkpoints in a small log commit and inspect only bounded remote failure summaries if feasible. Preserve existing originals, avoid unchanged reruns/cleanup; timing/root cause still unverified until safe evidence access. No merge/approval/monitor disable.
+
+## Prompt 163: Evidence recovery
+
+Delegated reviewer instruction; see meta-prompts.md checkpoint2026-10-23 14:04 Toronto.
+
+Reviewer14:04: independent fresh df shows59,699,964KiB free, above gate; cause unknown, no cleanup attribution. Disk-only restriction is lifted conditional on fresh preflight. Resume evidence work: retrieve existing12520550251 artifact once with size/hash checks and separate preserved storage; inspect actual renderer loader diagnostics and feature010 timing spans for failed100tick boundary. No unchanged rerun needed. Verify retained0077be54 science originals against manifests before archival (no packaging rerun). Continue source-supported timeout/geometry/publication corrections in small stacked PRs based current predecessor, with actual UI/design/authorization evidence; do not replace missing Linux references without independent review. Prefer offline/no-substitute cached Nix invocation where practical and verify tool versions, since established shell unexpectedly substituted dependencies during disk block. Reconcile14:04 plus prior checkpoints, commit/push attributed logs. No baseline promotion, merge, release approval or monitor disable.
+
+## Prompt 164: Resume evidence
+
+Delegated reviewer instruction; see meta-prompts.md checkpoints2026-10-23 14:14/14:24 Toronto.
+
+Reviewer14:24: routing discovery ended with a terminal error and the agent is now idle; resume the already acknowledged14:04 evidence task. Current checkout667c25ce clean/pushed; independent disk56,995,664KiB above gate. First check for any existing download/background work to avoid duplication, then retrieve artifact12520550251 once, verify size/hash, and inspect retained loader diagnostics and feature010100tick timing. Verify/hash/archive existing0077be54 science originals without rerunning. Use established cached offline Nix environment and fresh disk preflight. Reconcile14:14/14:24 checkpoints and commit/push reviewer-attributed logs. Do not infer root cause from aggregate failures, relax checks, promote baselines, merge or declare release complete. If routing fails again, preserve checkpoint and report exact blocker.

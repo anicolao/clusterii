@@ -2689,15 +2689,14 @@
     color: #a7edf3;
     text-align: left;
   }
+  /* The real resource rail grows with commander, labels and viewport. Match
+     the existing history inset to its measured height, not a device guess. */
+  .history-panel.science-panel {
+    top: calc(var(--command-rail-height) + 8px);
+  }
   @media (min-width: 2500px) {
     .science-panel {
-      top: 114px;
       width: min(900px, calc(100% - 48px));
-    }
-  }
-  @media (max-width: 700px) {
-    .science-panel {
-      top: 124px;
     }
   }
   .campaign-facts :global(.science-resource span) {

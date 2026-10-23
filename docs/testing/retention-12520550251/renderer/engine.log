@@ -1,0 +1,22 @@
+time="2026-10-23T16:34:34.567518775Z" level=info msg="Starting up"
+time="2026-10-23T16:34:34.568309327Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+time="2026-10-23T16:34:34.568406106Z" level=info msg="CDI directory does not exist, skipping" dir=/var/run/cdi
+time="2026-10-23T16:34:34.568416201Z" level=info msg="CDI directory does not exist, skipping" dir=/etc/cdi
+time="2026-10-23T16:34:34.568638988Z" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+time="2026-10-23T16:34:34.597686945Z" level=info msg="Creating a containerd client" address=/home/runner/work/_temp/cluster-nix-engine.okHjjs/containerd.sock timeout=1m0s
+time="2026-10-23T16:34:34.601643219Z" level=info msg="Loading containers: start."
+time="2026-10-23T16:34:34.601694000Z" level=info msg="NRI is disabled"
+time="2026-10-23T16:34:37.297939861Z" level=info msg="Restoring containers: start."
+time="2026-10-23T16:34:37.316342250Z" level=info msg="Loading containers: done."
+time="2026-10-23T16:34:37.333247786Z" level=warning msg="Not using native diff for overlay2, this may cause degraded performance for building images: kernel has CONFIG_OVERLAY_FS_REDIRECT_DIR enabled" storage-driver=overlay2
+time="2026-10-23T16:34:37.334702970Z" level=info msg="Docker daemon" commit=v29.6.2 containerd-snapshotter=false storage-driver=overlay2 version=29.6.2
+time="2026-10-23T16:34:37.334820539Z" level=info msg="Initializing buildkit"
+time="2026-10-23T16:34:37.374464667Z" level=info msg="Completed buildkit initialization"
+time="2026-10-23T16:34:37.378970428Z" level=info msg="Daemon has completed initialization"
+time="2026-10-23T16:34:37.379050288Z" level=info msg="API listen on /home/runner/work/_temp/cluster-nix-engine.okHjjs/docker.sock"
+time="2026-10-23T16:35:04.556754819Z" level=info msg="sbJoin: gwep4 ''->'', gwep6 ''->''" eid=140a2f4a0ceb ep=kind_almeida net=host nid=f1839de6db28
+time="2026-10-23T17:33:57.952200143Z" level=info msg="received task-delete event from containerd" container=2589824f75593ebfb380a04b8d4a876319456b5a74c157cca88c747ffd4a6628 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2026-10-23T17:33:58.156905759Z" level=info msg="Processing signal 'terminated'"
+time="2026-10-23T17:33:58.159988786Z" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+time="2026-10-23T17:33:58.161352346Z" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+time="2026-10-23T17:33:58.161443876Z" level=info msg="Daemon shutdown complete"
