@@ -370,7 +370,20 @@ test("Recover a waiting seat and enter the assigned home", async ({
           ).toContainText("Market dividend rules remain under review.");
         },
       },
-      verifications: [],
+      verifications: [
+        {
+          spec: "Rules takes heading focus and both return controls remain completely contained before capture.",
+          check: async () => {
+            await expect(
+              pages[0]
+                .getByRole("dialog", { name: "Game menu" })
+                .getByRole("heading", { name: "Rules", exact: true }),
+            ).toBeFocused();
+            await contained(button(pages[0], "Back to menu"));
+            await contained(button(pages[0], "Return to game"));
+          },
+        },
+      ],
       views: [
         {
           page: pages[0],
