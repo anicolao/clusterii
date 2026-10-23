@@ -720,3 +720,5 @@ Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | 
 Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Preserve renderer-environment failure and distinguish normal-motion interaction from reduced-motion captures
 
 Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Keep the phone map and contact legend above the compact inspector after rendered boundary review
+
+Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Preserve passing 28-frame family and frame the full orbital station in the shallow desktop scene

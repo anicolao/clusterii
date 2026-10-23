@@ -27,3 +27,7 @@ Regular Atkinson removed bold thickening but its visibly slashed zeros remain; r
 ## Capture environment failure4ecd3c8
 
 Phone completed real admission/start, compact/expanded/lower reading, Economy return, explicit Saiph selection and local lower-detail acknowledgement. Six captures plus original trace/log retained at `/tmp/cluster-galaxy-command-motion-failure/`; remaining sizes did not execute. Final capture correctly rejected changed OS motion against the shared pinned reduced-motion declaration. Corrected story follows existing local-settings convention: verify normal-motion interaction and unchanged selected facts, then explicitly restore reduced motion before capture. No renderer guard, deadline or pixel assertion changed. This is not normal-motion visual approval.
+
+## Full interaction generation2ac4bf1
+
+Four journeys/28 candidates pass52.5s. Originals retained at `/tmp/cluster-galaxy-command-selection-candidates/`. Explicit Saiph selection, local lower-detail acknowledgement/fact retention and keyboard lower-fact reading pass. Normal-motion interaction is checked before restoring reduced-motion capture; all images have the declared reduced-motion environment. Own visual comparison found centered cover cropping trims the orbital station tower in the shallow short scene; changed-source art alignment20% preserves the station silhouette while keeping the real factual overlay. No assertion/spec changes for this framing correction.

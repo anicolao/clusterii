@@ -2423,6 +2423,9 @@
       height: 100%;
       z-index: -1;
     }
+    .system-inspector.expanded .system-details :global(.world-art img) {
+      object-position: center 20%;
+    }
     .system-inspector.expanded .system-details > p,
     .system-inspector.expanded .system-details > dl {
       width: 38%;
