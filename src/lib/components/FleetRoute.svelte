@@ -266,7 +266,7 @@
         </div>
       </div>
       <span class="art-caption"
-        >Fleet illustration · confirmed complement below</span
+        >Fleet illustration · confirmed counts in manifest</span
       >
     </div>
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
@@ -409,7 +409,7 @@
             : forces.surface + " infantry"}. Current confirmed counts.
         </p>{/if}
       {#if invalid && !completed}<p>{invalid}</p>{/if}
-      {#if !active && !completed}<button
+      {#if !active && !completed && !editing}<button
           class="edit-route"
           bind:this={editControl}
           onclick={() => editRoute(!editing)}
@@ -761,7 +761,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background: #071c29f5;
+    background: #071c29;
     border: 1px solid #9b8c6b;
     padding: 12px;
     box-shadow: 0 14px 50px #0009;

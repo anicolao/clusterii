@@ -392,6 +392,7 @@
     color: #d9fcff;
     font-size: 13px;
     white-space: normal;
+    width: max-content;
     max-width: min(160px, 40vw);
     text-align: center;
     pointer-events: none;

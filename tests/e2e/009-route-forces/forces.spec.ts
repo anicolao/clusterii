@@ -446,6 +446,9 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
         await editor
           .getByRole("button", { name: "Move waypoint 2 earlier", exact: true })
           .focus();
+        await editor
+          .getByRole("list", { name: "Route waypoints" })
+          .scrollIntoViewIfNeeded();
       },
       acknowledgement: {
         spec: "Two actual waypoints are retained as unsent intent; no service revision changes.",
@@ -455,6 +458,15 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
               .getByRole("list", { name: "Route waypoints" })
               .getByRole("listitem"),
           ).toHaveCount(2);
+          const list = planner.getByRole("list", { name: "Route waypoints" }),
+            box = await list.boundingBox(),
+            clip = await planner
+              .getByRole("region", { name: "Waypoint editing", exact: true })
+              .boundingBox();
+          expect(box!.y).toBeGreaterThanOrEqual(clip!.y);
+          expect(box!.y + box!.height).toBeLessThanOrEqual(
+            clip!.y + clip!.height,
+          );
           expect(await canonical()).toEqual(formed!);
         },
       },
@@ -470,6 +482,10 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
           name: "Route editing",
           exact: true,
         });
+        const orderBefore = await editor
+          .getByRole("list", { name: "Route waypoints" })
+          .locator("strong")
+          .allTextContents();
         for (const name of [
           "Move waypoint 2 earlier",
           "Move waypoint 1 later",
@@ -477,6 +493,16 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
           const c = editor.getByRole("button", { name, exact: true });
           await c.focus();
           await owner.keyboard.press("Enter");
+          expect(
+            await editor
+              .getByRole("list", { name: "Route waypoints" })
+              .locator("strong")
+              .allTextContents(),
+          ).toEqual(
+            name === "Move waypoint 2 earlier"
+              ? [...orderBefore].reverse()
+              : orderBefore,
+          );
         }
         await editor
           .getByRole("button", { name: "Remove waypoint 2", exact: true })
