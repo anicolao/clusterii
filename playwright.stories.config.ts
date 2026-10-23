@@ -20,7 +20,7 @@ export default defineConfig({
   timeout: 90000,
   outputDir: "test-results/stories",
   updateSnapshots: "none",
-  snapshotPathTemplate: "{configDir}/tests/browser/story-baselines/{arg}{ext}",
+  snapshotPathTemplate: "{testDir}/browser/story-baselines/{arg}{ext}",
   grep: process.env.CLUSTER_STORY_FILTER
     ? new RegExp(process.env.CLUSTER_STORY_FILTER)
     : undefined,
