@@ -735,3 +735,4 @@ Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | 
 Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | Archive four passing real science-rate journeys and 24 unapproved candidates with service privacy and settlement evidence
 Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Implement the real bounded waiting manifest and prepare feature-local admission recovery evidence.
 Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Archive four waiting-manifest candidate journeys and preserve explicit remaining acceptance gates.
+Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Record draft PR117 dependency and unverified preview in the delivery acceptance table.
