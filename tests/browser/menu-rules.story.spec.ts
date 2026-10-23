@@ -124,6 +124,7 @@ test("Read shared market rules and return without leaving the game", async ({
       { page, player: "Reader", surface: "document", primary: [back, close] },
     ],
   });
+  let documentScrollBeforeReading = 0;
   await story.step("read-held-returns", {
     actor: "Reader",
     description:
@@ -131,6 +132,7 @@ test("Read shared market rules and return without leaving the game", async ({
     action: async () => {
       await page.keyboard.press("Shift+Tab");
       await expect(reading).toBeFocused();
+      documentScrollBeforeReading = await page.evaluate(() => window.scrollY);
       await page.keyboard.press("End");
     },
     acknowledgement: {

@@ -690,3 +690,5 @@ Prompt 117 | 080c53a673a8201c6ab67ca160024eb2ff2d2076ac120dc327e985063ab095f5 | 
 Prompt 118 | 7474732170248360199f7827a415ef0699dcabb7ed7b003980cf1af2fad8decb | Archive four passing strict settings journeys and24 exact captures under scoped reviewer approval with remaining gates
 
 Prompt 119 | 330b0b90bd75656268e3f5e329fa767ddff7a3e59cc59f18906f25068b75f67f | Register stacked PR112 source-review boundary and affected settings baselines with unexecuted browser acceptance
+
+Prompt 120 | 096daf7d19e46d50990e9773648915fa776da673d1642572f483a3fe7652cf33 | Preserve failed large rules End-scroll evidence and scope Home/End to reading region with unchanged containment guards

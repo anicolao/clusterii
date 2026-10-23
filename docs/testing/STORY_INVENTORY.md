@@ -429,3 +429,5 @@ Reviewer-approved local-presentation-settings Darwin family now passes4 strict j
 ## In-game market rules source
 
 UX15/16 `menu-rules.story.spec.ts` prepares shared-menu chapter, Back/Escape/opener and single-modal assertions using actual MarketRules; browser execution pending initial source review. New Rules footer changes local-presentation-settings captures/tab order; existing baselines preserved and new independent review required. See [scope](../design/IN_GAME_RULES_REVIEW.md).
+
+Rules/settings first generation at1503cce:5pass/1fail/2notrun. Large Rules End scrolled the background and failed final opener containment; trace retained. Scoped Home/End region handling added, no corrected-source rerun; short unexecuted. Partial candidates unpromoted, old settings baselines preserved.

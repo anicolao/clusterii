@@ -4,6 +4,7 @@
   import ActionButton from "./ActionButton.svelte";
   import PresentationSettings from "./PresentationSettings.svelte";
   let dialog: HTMLDialogElement;
+  let readingRegion: HTMLDivElement;
   let readingRules = $state(false);
   let navigationSerial = 0;
   async function showRules(value: boolean) {
@@ -27,6 +28,20 @@
     dialog.querySelector<HTMLElement>("h2")?.focus();
   }
   function containFocus(event: KeyboardEvent) {
+    if (
+      readingRules &&
+      event.target === readingRegion &&
+      !event.altKey &&
+      !event.ctrlKey &&
+      !event.metaKey &&
+      (event.key === "Home" || event.key === "End")
+    ) {
+      // Native End can scroll the document when this bounded region has no overflow.
+      event.preventDefault();
+      readingRegion.scrollTop =
+        event.key === "Home" ? 0 : readingRegion.scrollHeight;
+      return;
+    }
     if (event.key !== "Tab") return;
     const controls = Array.from(
       dialog.querySelectorAll<HTMLElement>(
@@ -68,6 +83,7 @@
   <!-- svelte-ignore a11y_no_noninteractive_tabindex (The named bounded reading region needs keyboard scrolling.) -->
   <div
     class="menu-content"
+    bind:this={readingRegion}
     role="region"
     tabindex={readingRules ? 0 : undefined}
     aria-label={readingRules ? "Rules reading" : "Presentation reading"}
