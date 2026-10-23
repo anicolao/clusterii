@@ -29,6 +29,7 @@
     );
   });
   import { galaxyLabel } from "$lib/galaxy-labels";
+  import { galaxyOverview } from "$lib/galaxy-framing";
   import RouteLine from "./RouteLine.svelte";
   import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
@@ -70,9 +71,30 @@
     cameraRequest: { action: string; starId: string; sequence: number };
   } = $props();
   interactivity();
-  const { invalidate } = useThrelte();
+  const { invalidate, size } = useThrelte();
   let camera = $state<PerspectiveCamera>();
   let controls = $state<OrbitControlsType>();
+  let overview = $state(true);
+  let framedRequest = "";
+  function frameOverview(
+    activeCamera: PerspectiveCamera,
+    activeControls: OrbitControlsType,
+    aspect: number,
+  ) {
+    const framing = galaxyOverview(stars, aspect);
+    activeControls.target.set(...framing.target);
+    activeCamera.position.set(...framing.position);
+  }
+  $effect(() => {
+    const width = $size.width,
+      height = $size.height;
+    if (!camera || !controls || !overview || width <= 0 || height <= 0) return;
+    untrack(() => {
+      frameOverview(camera!, controls!, width / height);
+      controls!.update();
+      invalidate();
+    });
+  });
   $effect(() => {
     const request = cameraRequest;
     const contact = contacts.find((c) => c.id === selectedContact);
@@ -80,7 +102,16 @@
     const activeCamera = camera,
       activeControls = controls;
     if (!activeCamera || !activeControls) return;
+    const requestKey = JSON.stringify([
+      request,
+      selectedContact,
+      routeFocus,
+      routePoints.map((p) => p.id),
+    ]);
+    if (requestKey === framedRequest) return;
+    framedRequest = requestKey;
     untrack(() => {
+      overview = request.action === "overview" && !contact && !routeFocus;
       const offset = activeCamera.position.clone().sub(activeControls.target);
       if (contact) {
         activeControls.target.set(
@@ -116,8 +147,8 @@
             .add(new Vector3(0, distance, distance * 0.15));
         }
       } else if (request.action === "overview") {
-        activeControls.target.set(0, 0, 0);
-        activeCamera.position.set(0, 19, 15);
+        overview = true;
+        frameOverview(activeCamera, activeControls, activeCamera.aspect);
       } else if (request.action === "in" || request.action === "out") {
         offset.setLength(
           Math.max(
@@ -151,6 +182,7 @@
     });
   });
   const colors = { M: "#ff8b55", G: "#ffd580", A: "#eef4ff", O: "#79d9ff" };
+  const radiance = { M: 0.48, G: 0.72, A: 0.64, O: 1.0 };
   const bytes = new Uint8Array(64 * 64 * 4);
   for (let y = 0; y < 64; y++)
     for (let x = 0; x < 64; x++) {
@@ -209,6 +241,7 @@
   fov={48}
   ><OrbitControls
     bind:ref={controls}
+    onstart={() => (overview = false)}
     enableDamping={false}
     minDistance={routeFocus ? 0.6 : 5}
     maxDistance={40}
@@ -219,7 +252,7 @@
     ><T.PlaneGeometry args={[28, 28]} /><T.ShaderMaterial
       uniforms={{ map: { value: dust } }}
       vertexShader={"varying vec2 uvPosition; void main(){uvPosition=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}"}
-      fragmentShader={"uniform sampler2D map; varying vec2 uvPosition; void main(){vec3 c=texture2D(map,uvPosition).rgb;float edge=1.0-smoothstep(0.34,0.5,length(uvPosition-0.5));float light=max(c.r,max(c.g,c.b));gl_FragColor=vec4(c,0.75*edge*sqrt(light));}"}
+      fragmentShader={"uniform sampler2D map; varying vec2 uvPosition; void main(){vec3 c=texture2D(map,uvPosition).rgb;float edge=1.0-smoothstep(0.4,0.55,length(uvPosition-0.5));float light=max(c.r,max(c.g,c.b));gl_FragColor=vec4(c,0.88*edge*sqrt(light));}"}
       transparent
       blending={AdditiveBlending}
       depthWrite={false}
@@ -244,12 +277,8 @@
           ? 0.15
           : 0.05
         : star.id === selected
-          ? 1.5
-          : index % 11 === 0
-            ? 0.95
-            : star.class === "O"
-              ? 0.5
-              : 0.3}
+          ? 1.7
+          : radiance[star.class]}
       onclick={(event: { stopPropagation(): void }) => {
         event.stopPropagation();
         onselect?.(star.id);
@@ -273,9 +302,7 @@
             ? 0.008
             : star.id === selected
               ? 0.08
-              : index % 11 === 0
-                ? 0.06
-                : 0.025,
+              : radiance[star.class] * 0.045,
           16,
           16,
         ]}

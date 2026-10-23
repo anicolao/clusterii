@@ -55,6 +55,7 @@ export function activeAdmissionControls(
   request: APIRequestContext,
   host: Page,
   info: TestInfo,
+  portraitNames?: readonly string[],
 ) {
   const contexts: BrowserContext[] = [];
   return [
@@ -78,6 +79,10 @@ export function activeAdmissionControls(
           await peer
             .getByLabel("Commander name")
             .fill(`Navigation peer ${i + 1}`);
+          if (portraitNames?.[i])
+            await peer
+              .getByRole("radio", { name: portraitNames[i], exact: true })
+              .check();
           await peer
             .getByRole("button", { name: "Save identity", exact: true })
             .click();

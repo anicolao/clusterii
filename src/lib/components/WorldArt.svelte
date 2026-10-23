@@ -2,11 +2,12 @@
   import { base } from "$app/paths";
 </script>
 
-<figure class="world-art">
+<figure
+  class="world-art"
+  aria-label="World and orbit illustration · not sensor intelligence"
+>
   <img src={`${base}/art/system-orbit.webp`} alt="" />
-  <figcaption>
-    World and orbit illustration · not sensor intelligence
-  </figcaption>
+  <figcaption>Illustration · not sensor intelligence</figcaption>
 </figure>
 
 <style>
@@ -31,7 +32,7 @@
     padding: 16px 8px 6px;
     background: linear-gradient(transparent, #030b11e8);
     color: #d3ddd9;
-    font-size: 10px;
+    font-size: 14px;
   }
   @media (min-width: 2500px) {
     figcaption {

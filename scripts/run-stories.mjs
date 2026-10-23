@@ -25,7 +25,7 @@ const mode = process.argv[2] ?? "verify";
 if (!["verify", "generate"].includes(mode))
   throw new Error("Use verify or generate");
 async function assertPortsFree() {
-  for (const port of [4173, 19099, 19000, 18080, 15001, 14400]) {
+  for (const port of [4173, 19099, 19000, 18080, 19150, 15001, 14400, 14500]) {
     const occupied = await new Promise((resolve) => {
       const socket = createConnection({ host: "127.0.0.1", port });
       socket.once("connect", () => {

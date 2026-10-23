@@ -35,6 +35,8 @@ export type StoryView = {
   surface: "game" | "document";
   primary?: Locator[];
   motionInspection?: MotionFrame[];
+  /** Explicit normal-motion settled view; readiness and exact pixels stay mandatory. */
+  normalMotion?: boolean;
   verifications?: Verification[];
 };
 interface Metadata {
@@ -235,7 +237,7 @@ export class TestStepHelper {
                 dpr: 1,
                 locale: "en-US",
                 timezone: "UTC",
-                reducedMotion: true,
+                reducedMotion: !view.normalMotion,
               });
               const settings = renderer(page, this.info);
               this.story.renderer = settings;
@@ -325,6 +327,11 @@ export class TestStepHelper {
             player: view.player,
             image: stem,
             verifications: [
+              ...(view.normalMotion
+                ? [
+                    "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged.",
+                  ]
+                : []),
               ...(view.verifications ?? []).map((v) => v.spec),
               ...(view.motionInspection ?? []).map(
                 (frame) =>

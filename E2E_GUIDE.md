@@ -122,6 +122,8 @@ The helper checks fonts, visible `<img>` and CSS background decoding, and all fi
 
 Run all four supported sizes at DPR 1:
 
+A view may explicitly declare `normalMotion: true` for a settled normal-motion comparison. The helper then requires the actual no-preference media state, retains the same loaded-assets/finite-effects/stable-frame and exact-pixel checks, and records the declaration in that view's narrative. The renderer manifest records the fixture default; the per-view declaration records this override. It never disables readiness or fast-forwards effects. Ordinary views still require reduced motion.
+
 | Name    | Size        |
 | ------- | ----------- |
 | phone   | 393 × 852   |

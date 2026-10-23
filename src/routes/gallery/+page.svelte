@@ -1,5 +1,11 @@
 <script lang="ts">
   import GameMenu from "$lib/components/GameMenu.svelte";
+  import CommanderPortrait from "$lib/components/CommanderPortrait.svelte";
+  import CommanderDeck from "$lib/components/CommanderDeck.svelte";
+  import CommandControl from "$lib/components/CommandControl.svelte";
+  import { portraits } from "@shared/profile";
+  let commandPreview = $state("systems");
+  let portraitPreview = $state("No roster request");
   import { identityConversation } from "../dev/animations/identity-scenario";
   import CreditOffers from "$lib/components/CreditOffers.svelte";
   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
@@ -640,6 +646,42 @@
         {#each ["systems", "economy", "conversations", "history", "arrivals", "contacts"] as const as kind}<span
             ><CommandIcon {kind} /> {kind}</span
           >{/each}
+      </div>
+      <h3>Shared galaxy command instruments</h3>
+      <CommanderDeck
+        roster={productionFrame(1200).view.roster}
+        own={productionFrame(1200).view.own}
+        onroster={() =>
+          (portraitPreview = "Roster requested by gallery control")}
+      />
+      <p role="status" aria-label="Portrait control demonstration">
+        {portraitPreview}
+      </p>
+      <p>
+        Production controls, including selected and disabled gallery states.
+        Cosmetic saved portraits never determine mechanical faction. Atlas
+        provenance: docs/art/PRODUCTION_ASSETS.md.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        {#each ["systems", "economy", "conversations", "history", "arrivals", "contacts"] as const as kind}
+          <CommandControl
+            {kind}
+            label={kind}
+            current={commandPreview === kind}
+            onclick={() => (commandPreview = kind)}
+          />
+        {/each}
+        <CommandControl
+          kind="systems"
+          label="Disabled gallery example"
+          disabled
+        />
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-block:24px">
+        {#each portraits as portrait}<figure style="width:120px;margin:0">
+            <CommanderPortrait {portrait} />
+            <figcaption>{portrait} · cosmetic portrait</figcaption>
+          </figure>{/each}
       </div>
       {#each ["M", "G", "A", "O"] as stellarClass}<StellarArt
           stellarClass={stellarClass as "M" | "G" | "A" | "O"}

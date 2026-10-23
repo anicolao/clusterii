@@ -1,9 +1,9 @@
 <script lang="ts">
   import CampaignWaiting from "../CampaignWaiting.svelte";
-  import GameMenu from "../GameMenu.svelte";
+  import CommanderDeck from "../CommanderDeck.svelte";
+  import CommandControl from "../CommandControl.svelte";
   import ScienceLedger from "../ScienceLedger.svelte";
   import DevelopmentIcon from "../DevelopmentIcon.svelte";
-  import CommandIcon from "../CommandIcon.svelte";
   import type { ResearchDraft, RecoveredResearch } from "$lib/research-draft";
   import {
     refreshMarketDraft,
@@ -786,6 +786,7 @@
   );
   let query = $state("");
   let listing = $state(false);
+  let rosterOpener: HTMLElement | null = null;
   async function openPanel(
     kind:
       | "roster"
@@ -799,6 +800,11 @@
       | "construction"
       | "military",
   ) {
+    if (kind === "roster")
+      rosterOpener =
+        document.activeElement instanceof HTMLElement
+          ? document.activeElement
+          : null;
     military = kind === "military";
     construction = kind === "construction";
     economy = kind === "economy";
@@ -851,7 +857,8 @@
   async function closeRoster() {
     roster = false;
     await tick();
-    document.querySelector<HTMLElement>('[data-focus="roster"]')?.focus();
+    if (rosterOpener?.isConnected) rosterOpener.focus();
+    else document.querySelector<HTMLElement>('[data-focus="roster"]')?.focus();
   }
   async function closeEconomy() {
     const opener = scienceOpen ? "science" : "economy";
@@ -994,7 +1001,14 @@
         construction ||
         military}
     >
-      <div>
+      <div class="commander-presence">
+        <CommanderDeck
+          roster={view.roster}
+          own={view.own}
+          onroster={() => openPanel("roster")}
+        />
+      </div>
+      <div class="campaign-context">
         <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
         <span
           >{view.pausedAt != null
@@ -1041,12 +1055,13 @@
         </div>
       {/if}
       <ActionButton
-        class="quiet"
+        class="quiet roster-access"
         onclick={() => openPanel("roster")}
         data-focus="roster"
         aria-expanded={roster}>Roster</ActionButton
-      ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
-      <GameMenu />
+      ><ActionButton class="quiet campaigns-access" onclick={onback}
+        >Campaigns</ActionButton
+      >
     </header>
     {#if !roster && !expanded && !more && !history && !commandKind.startsWith("conversation.") && !economy}<div
         class="acknowledgement"
@@ -1268,46 +1283,49 @@
         >
       </div>
       <div id="galaxy-destinations" class="dock-destinations" class:open={more}>
-        <ActionButton
-          class="secondary"
+        <CommandControl
+          kind="systems"
+          label="Systems list"
+          current
           onclick={() => openPanel("systems")}
           data-focus="systems-list"
           aria-expanded={listing}
-          ><CommandIcon kind="systems" /> Systems list</ActionButton
-        >
-        {#if loadHistory && onconversation}<ActionButton
-            class="secondary"
+        />
+        {#if loadHistory && onconversation}<CommandControl
+            kind="conversations"
+            label={view.conversations?.some((r) => r.invited || r.unread)
+              ? "Conversations · New"
+              : "Conversations"}
             data-focus="conversations"
             aria-expanded={conversationsOpen}
             onclick={() => openPanel("conversations")}
-            ><CommandIcon kind="conversations" /> Conversations{#if view.conversations?.some((r) => r.invited || r.unread)}{" · New"}{/if}</ActionButton
-          >{/if}
-        {#if loadHistory}<ActionButton
-            class="secondary"
+          />{/if}
+        {#if loadHistory}<CommandControl
+            kind="arrivals"
+            label="Arrival reports"
             data-focus="arrivals"
             aria-expanded={arrivalsOpen}
             onclick={() => openPanel("arrivals")}
-            ><CommandIcon kind="arrivals" /> Arrival reports</ActionButton
-          ><ActionButton
-            class="secondary"
+          /><CommandControl
+            kind="contacts"
+            label="Fleet contacts"
             data-focus="contacts"
             aria-expanded={contactsOpen}
             onclick={() => openPanel("contacts")}
-            ><CommandIcon kind="contacts" /> Fleet contacts</ActionButton
-          ><ActionButton
-            class="secondary"
+          /><CommandControl
+            kind="history"
+            label="History"
             data-focus="history"
             aria-expanded={history}
             onclick={() => openPanel("history")}
-            ><CommandIcon kind="history" /> History</ActionButton
-          >{/if}
-        <ActionButton
-          class="secondary"
+          />{/if}
+        <CommandControl
+          kind="economy"
+          label="Economy"
           data-focus="economy"
           aria-expanded={economy}
           onclick={() => openPanel("economy")}
-          ><CommandIcon kind="economy" /> Economy</ActionButton
-        >
+        />
       </div>
     </nav>
     {#if conversationsOpen && onconversation}<div
@@ -2640,6 +2658,192 @@
     }
     .campaign-facts :global(.science-resource strong) {
       font-size: 32px;
+    }
+  }
+  /* Commanders, resources and system instruments share the scene's scale. */
+  .command-rail {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px 24px;
+    background: linear-gradient(180deg, #07131cf5, #07131cdd 80%, #07131c66);
+    border-bottom-color: #627d8944;
+  }
+  .command-rail .commander-presence {
+    grid-row: 1 / 3;
+    margin: 0;
+    min-width: 0;
+  }
+  .campaign-context {
+    min-width: 0;
+  }
+  .campaign-context h1 {
+    overflow-wrap: anywhere;
+  }
+  .command-rail .campaign-facts {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    margin: 0;
+    justify-content: flex-end;
+    gap: clamp(24px, 4vw, 100px);
+  }
+  .command-rail :global(.roster-access),
+  .command-rail :global(.campaigns-access) {
+    grid-row: 1;
+  }
+  .command-rail :global(.roster-access) {
+    grid-column: 3;
+  }
+  .command-rail :global(.campaigns-access) {
+    grid-column: 4;
+  }
+  .chart {
+    inset: var(--command-rail-height) 29% 112px 0;
+  }
+  .system-inspector,
+  .system-inspector.expanded {
+    top: calc(var(--command-rail-height) + 8px);
+  }
+  .system-inspector:not(.expanded) {
+    width: clamp(330px, 28vw, 1080px);
+    max-height: calc(100% - var(--command-rail-height) - 128px);
+    padding: 20px;
+    border-color: #9eb9c077;
+    background: linear-gradient(145deg, #182b36ef, #07131cf5);
+  }
+  .system-inspector:not(.expanded) .system-details :global(.world-art) {
+    aspect-ratio: 1.45;
+    margin: 0 -20px 12px;
+    border-radius: 0;
+  }
+  .acknowledgement {
+    top: calc(var(--command-rail-height) + 8px);
+  }
+  .command-dock {
+    width: max-content;
+    max-width: calc(100% - 48px);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    padding: 8px;
+    border-radius: 12px;
+  }
+  .dock-destinations {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+  .dock-destinations :global(.command-control) {
+    background: linear-gradient(165deg, #1b2c38ee, #08121dec 72%);
+    border-color: #96a3ad77;
+    min-height: 64px;
+  }
+  .dock-destinations :global(.command-control.current) {
+    border-color: #84e4f4;
+    background: linear-gradient(#214559, #071822);
+  }
+  @media (min-width: 2500px) {
+    .command-rail {
+      padding: 28px 48px;
+      gap: 16px 48px;
+    }
+    .command-rail h1 {
+      font-size: 44px;
+    }
+    .command-rail > .campaign-context > span {
+      font-size: 22px;
+    }
+    .command-rail :global(.roster-access),
+    .command-rail :global(.campaigns-access) {
+      font-size: 26px;
+      min-height: 64px;
+    }
+    .chart {
+      bottom: 156px;
+    }
+    .system-inspector:not(.expanded) {
+      padding: 32px;
+      max-height: calc(100% - var(--command-rail-height) - 192px);
+    }
+    .system-inspector:not(.expanded) .system-details :global(.world-art) {
+      margin-inline: -32px;
+      aspect-ratio: 1.45;
+    }
+    .dock-destinations {
+      gap: 24px;
+    }
+    .dock-destinations :global(.command-control) {
+      min-height: 92px;
+    }
+  }
+  @media (min-width: 701px) and (max-height: 800px) {
+    .command-rail {
+      padding: 10px 20px;
+      gap: 6px 16px;
+    }
+    .system-inspector:not(.expanded) .system-details :global(.world-art) {
+      aspect-ratio: 2;
+    }
+    .chart {
+      bottom: 100px;
+    }
+    .dock-destinations {
+      gap: 6px;
+    }
+    .dock-destinations :global(.command-control) {
+      padding-inline: 12px;
+    }
+  }
+  @media (max-width: 700px) {
+    .command-rail {
+      grid-template-columns: 48px minmax(0, 1fr) auto auto;
+      padding: 8px 12px;
+      gap: 4px 8px;
+    }
+    .command-rail .commander-presence {
+      grid-row: 1;
+    }
+    .command-rail h1 {
+      font-size: 20px;
+    }
+    .command-rail > .campaign-context > span {
+      font-size: 10px;
+    }
+    .command-rail .campaign-facts {
+      grid-column: 1 / -1;
+      justify-content: space-between;
+      gap: 8px;
+      padding-top: 4px;
+    }
+    .chart {
+      inset: var(--command-rail-height) 0 calc(44svh + 82px) 0;
+    }
+    .system-inspector:not(.expanded) {
+      inset: auto 8px 74px;
+      width: auto;
+      max-height: 44%;
+      padding: 12px;
+    }
+    .system-inspector:not(.expanded) .system-details :global(.world-art) {
+      margin: 0 -12px 6px;
+      aspect-ratio: 2.5;
+    }
+    .system-inspector.expanded,
+    .system-inspector.active.expanded {
+      top: calc(var(--command-rail-height) + 8px);
+    }
+    .command-dock {
+      width: auto;
+      max-width: none;
+      inset: auto 8px max(8px, env(safe-area-inset-bottom));
+      transform: none;
+      padding: 0;
+    }
+    .dock-destinations :global(.command-control) {
+      min-height: 52px;
+      border: 0;
+      border-radius: 0;
     }
   }
 </style>

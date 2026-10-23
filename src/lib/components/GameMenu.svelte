@@ -3,6 +3,9 @@
   import MarketRules from "./MarketRules.svelte";
   import ActionButton from "./ActionButton.svelte";
   import PresentationSettings from "./PresentationSettings.svelte";
+  import CommanderPortrait from "./CommanderPortrait.svelte";
+  import type { Profile } from "@shared/profile";
+  let { commander }: { commander?: Profile & { faction: string } } = $props();
   let dialog: HTMLDialogElement;
   let readingRegion: HTMLDivElement;
   let readingRules = $state(false);
@@ -70,8 +73,17 @@
   }
 </script>
 
-<ActionButton class="quiet" onclick={open} aria-haspopup="dialog"
-  >Menu</ActionButton
+<ActionButton
+  class={commander ? "commander-card own-commander" : "quiet"}
+  onclick={open}
+  aria-haspopup="dialog"
+  aria-label="Menu"
+  title={commander
+    ? `${commander.alias} · ${commander.faction} · Open game menu; portrait is cosmetic`
+    : undefined}
+  >{#if commander}<CommanderPortrait portrait={commander.portrait} /><strong
+      >{commander.alias}</strong
+    ><span>{commander.faction}</span>{:else}Menu{/if}</ActionButton
 >
 <dialog
   bind:this={dialog}
