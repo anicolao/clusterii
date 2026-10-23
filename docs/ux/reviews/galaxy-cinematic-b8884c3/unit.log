@@ -1,0 +1,170 @@
+$ bun test tests/unit.test.ts tests/galaxy-labels.test.ts tests/campaign.test.ts tests/travel.test.ts tests/fleet-contacts.test.ts tests/conversations.test.ts tests/briefing.test.ts tests/trades.test.ts tests/selected-observer.test.ts tests/current-result.test.ts tests/motion-preference.test.ts tests/detail-preference.test.ts tests/science-rate.test.ts tests/galaxy-framing.test.ts
+bun test v1.3.13 (bf2e2cec)
+
+tests/motion-preference.test.ts:
+(pass) explicit reduction persists and OS reduction cannot be overridden [0.66ms]
+(pass) cross-tab changes and unavailable storage preserve honest usable state [0.10ms]
+(pass) shared feedback cancels active motion on local reduction without replaying the event [0.14ms]
+
+tests/campaign.test.ts:
+(pass) review rules generate persisted, reproducible, fair connected galaxies for every roster size [104.45ms]
+(pass) development admission enforces quota, idempotency, stale claims, scheduled start and private views [2.27ms]
+(pass) split ownership omits opposing layer values from serialized views [0.30ms]
+(pass) private projections are independent of opposing-layer values for every control combination [4.23ms]
+(pass) maintenance freezes scheduled time and rejects admissions without changing holdings [0.70ms]
+(pass) epoch activation resumes only paused members and permanently records mock exposure [0.19ms]
+(pass) exact production floors review exponents, preserves milliunits and apportions stable ties [0.40ms]
+(pass) home production conserves credits, whole forces and fractional remainders; science advances only after output [3.97ms]
+(pass) split control routes production by layer, releases escrow once and hides opposing ledgers [4.34ms]
+(pass) production force caps record discarded units and legacy campaigns retain their stored capability [0.62ms]
+(pass) production pause preserves the remaining interval and legacy starts never gain an economy [0.31ms]
+(pass) investing is applied once before wallet/escrow apportionment and neutral developments produce nothing [0.64ms]
+(pass) research admission assigns future cutoff, rejects foreign/stale/paused/legacy orders and keeps queues private [1.45ms]
+(pass) research selections settle in admitted order, retain unfinished progress and transfer capped bank exactly once [1.85ms]
+(pass) construction reserves exact escalating prices, serial layer capacity and future cutoffs without overspending [1.98ms]
+(pass) four construction advances produce on completion and distribute one bounded dividend from frozen markets [2.31ms]
+(pass) cancellation settles at its assigned tick with full or half refund and cannot repeat [2.85ms]
+(pass) split-layer construction privacy, pre-execution invalidation and capture cancellation preserve exact refunds [2.25ms]
+(pass) construction layer queues start successors without an immediate advance and dividend escrow conserves its pool [3.87ms]
+(pass) market focus validates exact allocation, membership, private orders and future boundary [1.24ms]
+(pass) focus applies in sequence but completion dividends use the previous tick allocation [3.13ms]
+(pass) focus admission is bounded, ordered and zero-weight completion pools pay nothing [13.62ms]
+(pass) scans use one private draw per target, frozen levels and nearest orbital source [2.28ms]
+(pass) stale observations preserve old permitted facts and never expose current enemy secrets or draws [2.28ms]
+(pass) split ownership grants only observed fields; no sensor means stale and legacy capability remains unchanged [2.47ms]
+(pass) server observation draws are stable and domain-separated without public replay secrets [0.37ms]
+Stellar observation envelope budget {
+  mode: "mock",
+  bytes: 563611,
+  players: 12,
+  stars: 384,
+}
+Stellar observation envelope budget {
+  mode: "real",
+  bytes: 563432,
+  players: 12,
+  stars: 384,
+}
+(pass) the largest stellar catalogue retains complete reports within the canonical envelope budget [28.47ms]
+(pass) observation storage reserves complete reports before admitting excess pending work [6.31ms]
+(pass) fleet admission reserves without moving forces; boundary settlement conserves units and rejects duplicate reservations [3.74ms]
+(pass) fleet validation, layer entitlement and private views fail closed [2.55ms]
+(pass) formed and reserved fleet units count toward the empire production ceiling [1.39ms]
+(pass) fleet slots include reservations and enforce the recorded empire limit [23.48ms]
+(pass) state capacity cannot block disbanding that frees persistent fleet storage [680.08ms]
+Disband recovery envelope budget {
+  mode: "mock",
+  bytes: 933747,
+}
+Disband recovery envelope budget {
+  mode: "real",
+  bytes: 933568,
+}
+(pass) the disbanding recovery budget fits both encrypted envelope formats [18.14ms]
+(pass) two commanders using one command UUID retain independent fleet identities and forces [1.35ms]
+(pass) cargo reservations share surface inventory and conserve fleet/system forces across load and unload [2.07ms]
+(pass) cargo fails closed on forged fields, lost layer ownership, capacity changes and absent fleets [5.95ms]
+(pass) fleet acknowledgement reconciles only its authoritative outcome and never invents a future transfer [2.09ms]
+(pass) split and merge conserve stationed complements, reserve slots and lock every participant [2.12ms]
+(pass) reorganization rejects forged or incompatible fleets and preserves orthogonal surface control [4.95ms]
+(pass) pending splits reserve the shared fleet limit against formation and other splits [1.71ms]
+(pass) fleet cancellation releases only owned reservations before the exact cutoff [1.17ms]
+(pass) cancelling all stationed operations preserves forces and releases both merge participants [4.25ms]
+
+tests/unit.test.ts:
+(pass) JSON, Unicode, escaping, null and newlines round trip through object and grant [1.60ms]
+(pass) wrong keys, modified bodies, game, recipient, epoch and revision fail closed [0.57ms]
+(pass) profile reducer validates data and rejects lost updates [0.51ms]
+(pass) campaign sign-in return accepts only canonical IDs and retains the preview base [0.10ms]
+(pass) Continue uses accessible active metadata and the remembered selection only [0.18ms]
+(pass) AES-GCM reads an independent OpenSSL vector with authenticated Cluster metadata [0.29ms]
+(pass) real envelopes and recipient grants reject substitution and never accept mock data [0.82ms]
+(pass) acknowledgements bind exact payload and admission path independently of JSON property order [0.42ms]
+(pass) market drafts preserve incomplete intent, follow untouched authority and isolate account/access scopes [0.40ms]
+
+tests/trades.test.ts:
+(pass) credit offers reserve exact amounts and settle both sides once without a dividend [1.86ms]
+(pass) only named participants see terms and outcomes, with no account IDs or opponent wallet [1.21ms]
+(pass) authorization, exact terms, affordability and revision guards leave canonical state unchanged [2.17ms]
+(pass) first admitted acceptance or withdrawal wins and all cancellation paths conserve reservations [1.46ms]
+(pass) strict tick cutoff and expiry precede settlement during catch-up [0.88ms]
+(pass) overflow fails the complete exchange and returns both reservations without partial credit [1.66ms]
+(pass) credit input accepts exact milliunits without float rounding or scientific notation [0.10ms]
+(pass) co-faction commanders retain distinct trade identities and private entitlements [1.14ms]
+
+tests/travel.test.ts:
+(pass) route geometry uses exact Euclidean range separately from speed and validates each leg [0.58ms]
+(pass) route admission is private, revision-bound, strict, cancellable and does not move forces [2.85ms]
+(pass) travel conserves complements, resolves neutral layers, stops at waypoints and revalidates onward range [4.69ms]
+(pass) integer combat follows square-law coefficients and defender-first linear frontage [0.07ms]
+(pass) simultaneous hostile arrival is permutation-stable, capacity-safe and reports only to participants [3.24ms]
+(pass) fleet sensors use confirmed in-flight positions without disclosing the private route [1.96ms]
+(pass) hostile surface arrival ends the onward route even with friendly orbital control [2.12ms]
+Route capacity fixture {
+  admitted: 142,
+  refused: true,
+}
+(pass) route admission reserves multi-fleet departure and arrival growth within both encrypted document limits [171.87ms]
+(pass) split occupation routes each output by layer and releases escrow once with recipient-only loss reports [5.92ms]
+(pass) arrival history deduplicates repeated snapshots while retaining older recorded details [3.65ms]
+(pass) submitted route recovery requires the accessible matching fleet and preserves newer local edits [1.18ms]
+(pass) route memory and submitted recovery preserve newer intent across navigation and retirement [1.98ms]
+
+tests/fleet-contacts.test.ts:
+(pass) fleet scans persist one target draw and project exact acquired facts without private identifiers or routes [2.13ms]
+(pass) failed scans publish no contact; stale history retains only acquired positions [1.87ms]
+(pass) scan outcomes survive JSON reload and future navigation orders without exposing hidden destinations [1.52ms]
+(pass) frozen scanning level, missing sensors, invalid draws and legacy capability are explicit [1.20ms]
+(pass) incomplete persisted scan matrices fail closed instead of exposing an unverified contact [1.46ms]
+(pass) moving contacts use the confirmed position and never publish the planned destination [1.98ms]
+(pass) an empire without an orbital or fleet sensor acquires no contacts and consumes no target draw [1.09ms]
+
+tests/briefing.test.ts:
+(pass) visit checkpoints are private, monotonic and change no gameplay or message-read state [1.57ms]
+(pass) visit validation rejects forged periods and nonmembers without mutation [0.70ms]
+(pass) briefing requires an exact baseline, deduplicates production and reports layer losses explicitly [1.41ms]
+(pass) briefing includes only received message metadata and does not mark messages read [1.74ms]
+(pass) briefing retains construction completion once and excludes outcomes before the saved visit [1.96ms]
+(pass) illustrated briefing derives mixed control, arrivals, construction and received-message reports from production reducers [4.13ms]
+(pass) eight-seat briefings distinguish co-faction authors and safely label legacy identity [3.84ms]
+(pass) commander identity rejects missing or invalid seat indices without faction inference [1.19ms]
+
+tests/galaxy-framing.test.ts:
+(pass) camera framing contains the unchanged authorized catalogue at phone, desktop, large and short map aspects [1.81ms]
+
+tests/selected-observer.test.ts:
+(pass) superseded selection rejects late data and errors and retires delayed subscription [0.16ms]
+(pass) current observer preserves ownership of cleanup and propagates initialization failure [0.13ms]
+
+tests/current-result.test.ts:
+(pass) a superseded snapshot error cannot replace a newer saved identity [0.14ms]
+(pass) current errors remain actionable and retired successes cannot restore identity
+
+tests/science-rate.test.ts:
+(pass) current rate is available before first output and equals unchanged next settlement [5.16ms]
+(pass) current earned Innovation differs from previous delivered output without changing settlement timing [3.90ms]
+(pass) science sources follow orbital entitlement, omit opposing fields and sum before Innovation [0.96ms]
+
+tests/detail-preference.test.ts:
+(pass) detail preference waits for initialization and persists browser-local selection [0.20ms]
+(pass) storage denial is explicit while the current-page setting still works [0.02ms]
+(pass) late decorative texture cannot restore a retired render generation [0.19ms]
+
+tests/conversations.test.ts:
+(pass) future-only admission never grants an invited player earlier message plaintext [1.50ms]
+(pass) concurrent senders share one server sequence without rejecting unrelated campaign revisions [1.78ms]
+(pass) removal fences stale sends and rejoining grants no messages sent during absence [1.91ms]
+(pass) only the creator manages membership and closure; members leave without erasing earlier records [2.29ms]
+(pass) validation and room conflicts preserve authoritative state and never alter economic or military state [1.26ms]
+(pass) selected history requires explicit acceptance and projects only granted bodies [3.27ms]
+(pass) selected references reject invalid scopes, stale membership and unbounded or duplicate history [1.24ms]
+
+tests/galaxy-labels.test.ts:
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars [0.22ms]
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.23ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes [0.05ms]
+
+ 111 pass
+ 0 fail
+ 4370 expect() calls
+Ran 111 tests across 14 files. [1343.00ms]

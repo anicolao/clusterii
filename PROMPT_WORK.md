@@ -754,3 +754,19 @@ Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | 
 Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Record four-size history feedback/clearance passes, exact retained image provenance and the bounded settlement timing plan.
 
 Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve the isolated timing attempt's pre-browser Firestore bind failure and distinguish it from unresolved100-tick CI timing.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Correct phone portrait collapse specificity after the retained real-admission hit-test failure.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Select campaign-specific portraits through the real admission controls after retained fixture mismatch.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Correct observed short inspector clearance, caption clipping, map-legend overlap and large dock scale.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Retain clean-source four-size composition candidates and concept comparison without baseline promotion.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Apply reviewer07:50 dense overlay header and real home-neighbourhood framing while preserving explicit Overview.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Restore complete Surface-row containment in the compact phone card after the retained targeted failure.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Archive32 source-paired overlay/home-framing candidates and verification logs, retaining independent visual gates.
+
+Prompt 146 | 1a80fd97dbdfe603fc7ce8fd7141893ad8acea46098a7fc1148d51dc479091ce | Archive eight shared/live instrument journeys with source-paired native-scale inspection and retain independent visual gates.

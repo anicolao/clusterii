@@ -1,0 +1,203 @@
+$ node --test scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.39075ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.299333ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (3.610125ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (10.519958ms)
+✔ a roster without a scheduled start does not fabricate a time (0.10375ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.387083ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.245417ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.756125ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.36125ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (2.380166ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.964625ms)
+✔ unrelated campaigns retain every production entropy input (0.073042ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.218583ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.421375ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.433208ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (1.09025ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (3.117208ms)
+✔ membership fault requires demo loopback and reviewed source hashes (1.21275ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.323375ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.112083ms)
+✔ restoration refuses concurrent head, membership or directory writes (0.1195ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.874333ms)
+✔ unrelated campaigns retain every original entropy input (0.066667ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.197833ms)
+Previous story evidence preserved at /tmp/nix-shell.mcId4X/cluster-cohort-test-b7AtrZ/.story-cohorts-emeWW4/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.mcId4X/cluster-cohort-test-b7AtrZ/.story-cohorts-emeWW4/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (13.264292ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.611292ms)
+✔ interruption retains current artifacts and launches no successor (1.729208ms)
+✔ an artifact path collision fails rather than overwriting either result (3.105791ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.472583ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.8465ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.937917ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (31.152625ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.367375ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.359959ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 202.912958
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ playwright test --config playwright.paths.config.ts
+
+Running 4 tests using 1 worker
+
+
+(node:62307) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:62565) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/4] [desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:62827) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/4] [large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:63088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] [short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4 passed (1.7s)
