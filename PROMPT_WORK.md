@@ -841,3 +841,5 @@ Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | 
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Preserve large specimen reading failure and use bounded ArrowUp reading without relaxing containment
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Apply bounded total reading to the missed lab call site after large gallery passes and lab failure is retained
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Archive twelve source-paired science journeys, preserved failures, and scoped Linux bootstrap diagnosis
+Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Initialize generated Svelte aliases before story collection and verify pinned resolver cold-start behavior
+Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Record stacked science and bootstrap PR links with completed policy checks and unchanged acceptance gates
