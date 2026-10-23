@@ -2939,13 +2939,13 @@
   }
   @media (max-width: 700px) {
     .chart {
-      bottom: calc(38svh + 82px);
+      bottom: calc(40svh + 82px);
     }
     .system-inspector:not(.expanded) {
-      max-height: 38%;
+      max-height: 40%;
     }
     .system-inspector:not(.expanded) .system-details :global(.world-art) {
-      aspect-ratio: 2.8;
+      aspect-ratio: 3;
       margin-bottom: 4px;
     }
     .system-inspector:not(.expanded) .system-details > p {

@@ -764,3 +764,5 @@ Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | 
 Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Retain clean-source four-size composition candidates and concept comparison without baseline promotion.
 
 Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Apply reviewer07:50 dense overlay header and real home-neighbourhood framing while preserving explicit Overview.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Restore complete Surface-row containment in the compact phone card after the retained targeted failure.
