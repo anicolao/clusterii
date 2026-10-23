@@ -19,7 +19,11 @@
   } = $props();
 </script>
 
-<button {...attributes} class="command-control" class:current
+<button
+  {...attributes}
+  class="command-control"
+  class:current
+  aria-current={current ? "true" : undefined}
   ><CommandIcon {kind} /><span>{label}</span></button
 >
 

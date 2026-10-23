@@ -647,42 +647,54 @@
             ><CommandIcon {kind} /> {kind}</span
           >{/each}
       </div>
-      <h3>Shared galaxy command instruments</h3>
-      <CommanderDeck
-        roster={productionFrame(1200).view.roster}
-        own={productionFrame(1200).view.own}
-        onroster={() =>
-          (portraitPreview = "Roster requested by gallery control")}
-      />
-      <p role="status" aria-label="Portrait control demonstration">
-        {portraitPreview}
-      </p>
-      <p>
-        Production controls, including selected and disabled gallery states.
-        Cosmetic saved portraits never determine mechanical faction. Atlas
-        provenance: docs/art/PRODUCTION_ASSETS.md.
-      </p>
-      <div style="display:flex;flex-wrap:wrap;gap:12px">
-        {#each ["systems", "economy", "conversations", "history", "arrivals", "contacts"] as const as kind}
-          <CommandControl
-            {kind}
-            label={kind}
-            current={commandPreview === kind}
-            onclick={() => (commandPreview = kind)}
-          />
-        {/each}
-        <CommandControl
-          kind="systems"
-          label="Disabled gallery example"
-          disabled
+      <section aria-label="Commander instrument gallery">
+        <h3>Commander instruments</h3>
+        <CommanderDeck
+          menuLabel="Commander menu"
+          roster={productionFrame(1200).view.roster}
+          own={productionFrame(1200).view.own}
+          onroster={() =>
+            (portraitPreview = "Roster requested by gallery control")}
         />
-      </div>
-      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-block:24px">
-        {#each portraits as portrait}<figure style="width:120px;margin:0">
-            <CommanderPortrait {portrait} />
-            <figcaption>{portrait} · cosmetic portrait</figcaption>
-          </figure>{/each}
-      </div>
+        <p role="status" aria-label="Portrait control demonstration">
+          {portraitPreview}
+        </p>
+      </section>
+      <section aria-label="Command control gallery">
+        <h3>Shared galaxy command instruments</h3>
+        <p>
+          Production controls, including selected and disabled gallery states.
+          Cosmetic saved portraits never determine mechanical faction. Atlas
+          provenance: docs/art/PRODUCTION_ASSETS.md.
+        </p>
+        <p role="status" aria-label="Command selection demonstration">
+          Selected command preview: {commandPreview}
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          {#each ["systems", "economy", "conversations", "history", "arrivals", "contacts"] as const as kind}
+            <CommandControl
+              {kind}
+              label={kind}
+              current={commandPreview === kind}
+              onclick={() => (commandPreview = kind)}
+            />
+          {/each}
+          <CommandControl
+            kind="systems"
+            label="Disabled gallery example"
+            disabled
+          />
+        </div>
+      </section>
+      <section aria-label="Cosmetic portrait atlas">
+        <h3>Cosmetic portrait atlas</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;margin-block:24px">
+          {#each portraits as portrait}<figure style="width:120px;margin:0">
+              <CommanderPortrait {portrait} />
+              <figcaption>{portrait} · cosmetic portrait</figcaption>
+            </figure>{/each}
+        </div>
+      </section>
       {#each ["M", "G", "A", "O"] as stellarClass}<StellarArt
           stellarClass={stellarClass as "M" | "G" | "A" | "O"}
         />{/each}

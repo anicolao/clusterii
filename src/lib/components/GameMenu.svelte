@@ -5,7 +5,10 @@
   import PresentationSettings from "./PresentationSettings.svelte";
   import CommanderPortrait from "./CommanderPortrait.svelte";
   import type { Profile } from "@shared/profile";
-  let { commander }: { commander?: Profile & { faction: string } } = $props();
+  let {
+    commander,
+    label = "Menu",
+  }: { commander?: Profile & { faction: string }; label?: string } = $props();
   let dialog: HTMLDialogElement;
   let readingRegion: HTMLDivElement;
   let readingRules = $state(false);
@@ -77,7 +80,7 @@
   class={commander ? "commander-card own-commander" : "quiet"}
   onclick={open}
   aria-haspopup="dialog"
-  aria-label="Menu"
+  aria-label={label}
   title={commander
     ? `${commander.alias} · ${commander.faction} · Open game menu; portrait is cosmetic`
     : undefined}

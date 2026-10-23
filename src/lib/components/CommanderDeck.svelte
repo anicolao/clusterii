@@ -7,17 +7,22 @@
     roster,
     own,
     onroster,
+    menuLabel = "Menu",
   }: {
     roster: CampaignView["roster"];
     own: CampaignView["own"];
     onroster: () => void;
+    menuLabel?: string;
   } = $props();
   const faction = (id: string) =>
     rules.factions.find((f) => f.id === id)?.name ?? id;
 </script>
 
 <nav class="commander-deck" aria-label="Campaign commanders">
-  <GameMenu commander={{ ...own.profile, faction: faction(own.faction) }} />
+  <GameMenu
+    label={menuLabel}
+    commander={{ ...own.profile, faction: faction(own.faction) }}
+  />
   {#each roster as seat, index}
     {#if index !== own.seat}
       <button

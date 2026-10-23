@@ -340,17 +340,78 @@ test("Read the cinematic galaxy through real commander and system instruments", 
               () => matchMedia("(prefers-reduced-motion: reduce)").matches,
             ),
           ).toBe(false);
+          await expect(page.locator("html")).toHaveAttribute(
+            "data-reduce-motion",
+            "false",
+          );
           expect(await page.evaluate(() => scrollY)).toBe(0);
         },
       },
     ],
     views: views(true),
   });
+  await story.step("contain-live-commander-menu", {
+    actor: "Deepseer envoy",
+    description:
+      "Open the production portrait menu over the real campaign and traverse every modal control and both wrap boundaries without changing a game order.",
+    action: async () => {
+      await page.emulateMedia({ reducedMotion: "reduce" });
+      await key("Menu");
+      const dialog = page.getByRole("dialog", {
+        name: "Game menu",
+        exact: true,
+      });
+      await expect(
+        dialog.getByRole("heading", { name: "Game menu", exact: true }),
+      ).toBeFocused();
+      for (const control of [
+        dialog.getByRole("checkbox", { name: "Reduce motion", exact: true }),
+        dialog.getByRole("checkbox", {
+          name: "Lower galaxy detail",
+          exact: true,
+        }),
+        dialog.getByRole("button", { name: "Rules", exact: true }),
+        dialog.getByRole("button", { name: "Return to game", exact: true }),
+        dialog.getByRole("checkbox", { name: "Reduce motion", exact: true }),
+      ]) {
+        await page.keyboard.press("Tab");
+        await expect(control).toBeFocused();
+      }
+      await page.keyboard.press("Shift+Tab");
+    },
+    acknowledgement: {
+      spec: "The actual menu contains keyboard focus at its return control.",
+      check: async () => expect(button("Return to game")).toBeFocused(),
+    },
+    verifications: [
+      {
+        spec: "The local settings scope is readable and the real selected system remains unchanged behind the modal.",
+        check: async () => {
+          await expect(
+            page.getByRole("dialog", { name: "Game menu", exact: true }),
+          ).toContainText("saved in this browser");
+          await expect(inspector.getByRole("heading", { level: 2 })).toHaveText(
+            homeName,
+          );
+        },
+      },
+    ],
+    views: [
+      {
+        page,
+        player: "Deepseer envoy",
+        surface: "game",
+        primary: [button("Return to game")],
+      },
+    ],
+  });
   await story.step("reduce-decoration-retain-facts", {
     actor: "Deepseer envoy",
     description:
       "Return to reduced-motion capture preference, open the real portrait menu and lower decorative detail. The local acknowledgement precedes the unchanged factual scene.",
     action: async () => {
+      await key("Return to game");
+      await expect(button("Menu")).toBeFocused();
       await page.emulateMedia({ reducedMotion: "reduce" });
       await key("Menu");
       await page
