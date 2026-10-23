@@ -7,3 +7,5 @@ The fixed catalogue/admission clock and scheduler HTTP delivery are labelled har
 Generated candidates await independent review; `screenshots/` and `stories/` are populated only by reviewed promotion/archive tooling. See [fidelity](FIDELITY.md). Existing 002 layer/build and 005/006 navigation/privacy/history assertions remain in place.
 
 [Source-paired28 candidate walkthroughs](../../../docs/ux/reviews/galaxy-cinematic-aa9200b/README.md) are retained under review evidence, not approved screenshot/story directories.
+
+[Corrected overlay/home-framing32 candidate walkthroughs](../../../docs/ux/reviews/galaxy-cinematic-b8884c3/README.md) add explicit keyboard Overview/Center home after reviewer07:50 findings. Both source families remain separate and unapproved.

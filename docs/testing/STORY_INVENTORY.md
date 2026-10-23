@@ -443,3 +443,7 @@ Reviewer-approved in-game-market-rules and updated local-presentation-settings D
 ## PR117 waiting/active compatibility migration
 
 Current executable sources for campaign-navigation, invitation and encryption-choice now live in [005-campaign-access](../../tests/e2e/005-campaign-access/README.md); history lives in [006-campaign-history](../../tests/e2e/006-campaign-history/README.md). Historical names/evidence above retain their original provenance. Waiting recovery verifies actual manifest membership; real chart/history interactions require four UI admissions and acknowledged scheduler start. No deadlines, privacy/identity assertions or exact comparison policy are relaxed. New source-paired review and runtime results are pending; this migration does not approve the 76 pixel failures or 112 absent Linux references from39931091215.
+
+## Galaxy composition, UX-03/04/15
+
+[Feature007](../../tests/e2e/007-galaxy-composition/README.md) connects actual four-player admission/start to saved cosmetic portraits, mechanical faction labels, keyboard roster/inspection, explicit Overview/home camera actions, normal/reduced presentation and same-home reload. Cleanb8884c3 four journeys32 candidates are [retained for independent concept comparison](../ux/reviews/galaxy-cinematic-b8884c3/README.md), not approved baselines. Existing002 layer/build and005/006 history/privacy/recovery remain. This does not complete shared-gallery, peer-private/concurrent/account or hosted/Linux acceptance.
