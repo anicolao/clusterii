@@ -708,3 +708,5 @@ Prompt 126 | 56eaa9a991fdb80ba6fc9e9d3a222e1405d7927f3eef94d094f35c0eb949d07e | 
 Prompt 127 | 61820531933547e8f1cdcb61051374836539034263e81355cd8aadab3569cdbb | Preserve clean four-size integrated-title candidates and feature-layout provenance for independent design review
 
 Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Preserve phone hidden-rail assertion failure and verify start through ordinary visible roster acknowledgement
+
+Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Retain real returning-entry label assertion failure and distinguish semantic label order from decorative chevrons

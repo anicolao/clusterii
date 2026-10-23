@@ -154,7 +154,7 @@ test("Return to a genuinely active campaign from the cinematic entry", async ({
         await expect(
           owner.getByText(`Welcome back, ${aliases[0]}`, { exact: true }),
         ).toBeVisible();
-        await expect(owner.locator(".entry-actions > button")).toHaveText([
+        await expect(owner.locator(".entry-actions > button .label")).toHaveText([
           `Continue${name}`,
           "Play",
           "Learn the game",
