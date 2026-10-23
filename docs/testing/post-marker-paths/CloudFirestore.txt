@@ -1,0 +1,921 @@
+Compiled from "CloudFirestore.java"
+public class com.google.cloud.datastore.emulator.firestore.CloudFirestore {
+  private static final com.google.common.flogger.GoogleLogger logger;
+
+  private static final int MAX_PROTO_NESTED_LEVEL;
+
+  private final com.google.cloud.datastore.emulator.firestore.CloudFirestoreEmulatorOption opts;
+
+  private com.google.cloud.datastore.emulator.firestore.FirestoreEmulator firestore;
+
+  private com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer websocket;
+
+  private com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter webchannel;
+
+  private io.gapi.emulators.grpc.GrpcServer server;
+
+  private boolean isRunning;
+
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+    Code:
+       0: getstatic     #1                  // Field io/netty/util/ResourceLeakDetector$Level.DISABLED:Lio/netty/util/ResourceLeakDetector$Level;
+       3: invokestatic  #7                  // Method io/netty/util/ResourceLeakDetector.setLevel:(Lio/netty/util/ResourceLeakDetector$Level;)V
+       6: aload_0
+       7: invokestatic  #13                 // Method com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.parse:([Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions;
+      10: astore_1
+      11: aload_1
+      12: invokestatic  #19                 // Method convertCliOptions:(Lcom/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      15: astore_2
+      16: aload_2
+      17: invokestatic  #25                 // Method startLocally:(Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestore;
+      20: astore_3
+      21: aload_3
+      22: invokevirtual #29                 // Method awaitTerminated:()V
+      25: aload_3
+      26: invokevirtual #33                 // Method stop:()V
+      29: goto          78
+      32: astore_1
+      33: getstatic     #42                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      36: invokevirtual #46                 // Method com/google/common/flogger/GoogleLogger.atSevere:()Lcom/google/common/flogger/LoggingApi;
+      39: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+      42: aload_1
+      43: invokeinterface #54,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+      48: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+      51: ldc           #58                 // String com/google/cloud/datastore/emulator/firestore/CloudFirestore
+      53: ldc           #59                 // String main
+      55: bipush        105
+      57: ldc           #61                 // String java/com/google/cloud/datastore/emulator/firestore/CloudFirestore.java
+      59: invokeinterface #63,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      64: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+      67: ldc           #67                 // String Exiting due to unexpected exception.
+      69: invokeinterface #69,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;)V
+      74: iconst_1
+      75: invokestatic  #73                 // Method com/google/common/util/LegacySystemExit.exit:(I)V
+      78: iconst_0
+      79: invokestatic  #73                 // Method com/google/common/util/LegacySystemExit.exit:(I)V
+      82: return
+    Exception table:
+       from    to  target type
+           6    29    32   Class java/io/IOException
+           6    29    32   Class java/lang/RuntimeException
+           6    29    32   Class com/google/cloud/datastore/core/exception/DatastoreException
+
+  public static com.google.cloud.datastore.emulator.firestore.CloudFirestore startLocally(com.google.cloud.datastore.emulator.firestore.CloudFirestoreEmulatorOption) throws java.io.IOException, com.google.cloud.datastore.core.exception.DatastoreException;
+    Code:
+       0: new           #20                 // class com/google/cloud/datastore/emulator/firestore/CloudFirestore
+       3: dup
+       4: aload_0
+       5: invokespecial #79                 // Method "<init>":(Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;)V
+       8: astore_1
+       9: aload_1
+      10: invokevirtual #83                 // Method init:()V
+      13: aload_1
+      14: invokevirtual #86                 // Method start:()V
+      17: aload_1
+      18: areturn
+
+  public void awaitTerminated() throws java.lang.Exception;
+    Code:
+       0: aload_0
+       1: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+       4: invokevirtual #93                 // Method io/gapi/emulators/grpc/GrpcServer.awaitTerminated:()V
+       7: aload_0
+       8: iconst_0
+       9: putfield      #96                 // Field isRunning:Z
+      12: return
+
+  public void stop();
+    Code:
+       0: aload_0
+       1: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+       4: invokevirtual #104                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.exportPath:()Ljava/lang/String;
+       7: ifnull        122
+      10: aload_0
+      11: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      14: invokevirtual #110                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.exportName:()Ljava/lang/String;
+      17: invokestatic  #113                // Method com/google/common/base/Strings.nullToEmpty:(Ljava/lang/String;)Ljava/lang/String;
+      20: astore_1
+      21: aload_0
+      22: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      25: invokevirtual #119                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.databaseMode:()Lcom/google/cloud/datastore/emulator/impl/ProductMode;
+      28: getstatic     #123                // Field com/google/cloud/datastore/emulator/impl/ProductMode.CLOUD_FIRESTORE:Lcom/google/cloud/datastore/emulator/impl/ProductMode;
+      31: invokevirtual #129                // Method com/google/cloud/datastore/emulator/impl/ProductMode.equals:(Ljava/lang/Object;)Z
+      34: ifeq          58
+      37: aload_0
+      38: getfield      #133                // Field firestore:Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;
+      41: invokevirtual #137                // Method com/google/cloud/datastore/emulator/firestore/FirestoreEmulator.firestoreV1Router:()Lcom/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1Router;
+      44: aload_1
+      45: aload_0
+      46: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      49: invokevirtual #104                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.exportPath:()Ljava/lang/String;
+      52: invokevirtual #143                // Method com/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1Router.export:(Ljava/lang/String;Ljava/lang/String;)V
+      55: goto          76
+      58: aload_0
+      59: getfield      #133                // Field firestore:Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;
+      62: invokevirtual #149                // Method com/google/cloud/datastore/emulator/firestore/FirestoreEmulator.cloudDatastoreV1Router:()Lcom/google/cloud/datastore/emulator/impl/firestore/cloudv1/CloudDatastoreV1Router;
+      65: aload_1
+      66: aload_0
+      67: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      70: invokevirtual #104                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.exportPath:()Ljava/lang/String;
+      73: invokevirtual #153                // Method com/google/cloud/datastore/emulator/impl/firestore/cloudv1/CloudDatastoreV1Router.export:(Ljava/lang/String;Ljava/lang/String;)V
+      76: goto          122
+      79: astore_2
+      80: getstatic     #42                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      83: invokevirtual #46                 // Method com/google/common/flogger/GoogleLogger.atSevere:()Lcom/google/common/flogger/LoggingApi;
+      86: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+      89: aload_2
+      90: invokeinterface #54,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+      95: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+      98: ldc           #58                 // String com/google/cloud/datastore/emulator/firestore/CloudFirestore
+     100: ldc           #156                // String stop
+     102: sipush        147
+     105: ldc           #61                 // String java/com/google/cloud/datastore/emulator/firestore/CloudFirestore.java
+     107: invokeinterface #63,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+     112: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+     115: ldc           #157                // String Failed during export
+     117: invokeinterface #69,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;)V
+     122: aload_0
+     123: iconst_0
+     124: putfield      #96                 // Field isRunning:Z
+     127: aload_0
+     128: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     131: ifnull        146
+     134: aload_0
+     135: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     138: invokevirtual #159                // Method io/gapi/emulators/grpc/GrpcServer.stop:()V
+     141: aload_0
+     142: aconst_null
+     143: putfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     146: aload_0
+     147: getfield      #160                // Field websocket:Lcom/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer;
+     150: ifnull        165
+     153: aload_0
+     154: getfield      #160                // Field websocket:Lcom/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer;
+     157: invokevirtual #164                // Method com/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer.stop:()V
+     160: aload_0
+     161: aconst_null
+     162: putfield      #160                // Field websocket:Lcom/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer;
+     165: aload_0
+     166: getfield      #167                // Field webchannel:Lcom/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter;
+     169: ifnull        184
+     172: aload_0
+     173: getfield      #167                // Field webchannel:Lcom/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter;
+     176: invokevirtual #171                // Method com/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter.shutdown:()V
+     179: aload_0
+     180: aconst_null
+     181: putfield      #167                // Field webchannel:Lcom/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter;
+     184: return
+    Exception table:
+       from    to  target type
+          21    76    79   Class com/google/cloud/datastore/core/exception/DatastoreException
+
+  public com.google.common.net.HostAndPort getHostAndPort();
+    Code:
+       0: aload_0
+       1: getfield      #96                 // Field isRunning:Z
+       4: ldc           #176                // String Emulator is not running.
+       6: invokestatic  #178                // Method com/google/common/base/Preconditions.checkState:(ZLjava/lang/Object;)V
+       9: aload_0
+      10: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      13: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+      16: areturn
+
+  private void init() throws java.io.IOException, com.google.cloud.datastore.core.exception.DatastoreException;
+    Code:
+       0: invokestatic  #188                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig.builder:()Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+       3: astore_1
+       4: aload_0
+       5: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+       8: invokevirtual #194                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.rulesFile:()Ljava/lang/String;
+      11: ifnull        66
+      14: aload_0
+      15: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      18: invokevirtual #194                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.rulesFile:()Ljava/lang/String;
+      21: astore_2
+      22: aload_1
+      23: invokestatic  #197                // Method com/google/firebase/rules/v1/Source.newBuilder:()Lcom/google/firebase/rules/v1/Source$Builder;
+      26: invokestatic  #203                // Method com/google/firebase/rules/v1/File.newBuilder:()Lcom/google/firebase/rules/v1/File$Builder;
+      29: new           #208                // class java/io/File
+      32: dup
+      33: aload_2
+      34: invokespecial #210                // Method java/io/File."<init>":(Ljava/lang/String;)V
+      37: getstatic     #212                // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      40: invokestatic  #218                // Method com/google/common/io/Files.asCharSource:(Ljava/io/File;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
+      43: invokevirtual #224                // Method com/google/common/io/CharSource.read:()Ljava/lang/String;
+      46: invokevirtual #229                // Method com/google/firebase/rules/v1/File$Builder.setContent:(Ljava/lang/String;)Lcom/google/firebase/rules/v1/File$Builder;
+      49: aload_2
+      50: invokevirtual #235                // Method com/google/firebase/rules/v1/File$Builder.setName:(Ljava/lang/String;)Lcom/google/firebase/rules/v1/File$Builder;
+      53: invokevirtual #238                // Method com/google/firebase/rules/v1/File$Builder.build:()Lcom/google/firebase/rules/v1/File;
+      56: invokevirtual #242                // Method com/google/firebase/rules/v1/Source$Builder.addFiles:(Lcom/google/firebase/rules/v1/File;)Lcom/google/firebase/rules/v1/Source$Builder;
+      59: invokevirtual #248                // Method com/google/firebase/rules/v1/Source$Builder.build:()Lcom/google/firebase/rules/v1/Source;
+      62: invokevirtual #251                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.defaultRules:(Lcom/google/firebase/rules/v1/Source;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+      65: pop
+      66: aload_0
+      67: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      70: invokevirtual #257                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.functionsEmulatorHostAndPort:()Lcom/google/common/net/HostAndPort;
+      73: ifnull        126
+      76: new           #260                // class java/util/concurrent/ThreadPoolExecutor
+      79: dup
+      80: iconst_0
+      81: iconst_4
+      82: ldc2_w        #262                // long 60l
+      85: getstatic     #264                // Field java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+      88: new           #270                // class java/util/concurrent/LinkedBlockingQueue
+      91: dup
+      92: invokespecial #272                // Method java/util/concurrent/LinkedBlockingQueue."<init>":()V
+      95: invokespecial #274                // Method java/util/concurrent/ThreadPoolExecutor."<init>":(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;)V
+      98: astore_2
+      99: aload_1
+     100: new           #277                // class com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+     103: dup
+     104: aload_0
+     105: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     108: invokevirtual #257                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.functionsEmulatorHostAndPort:()Lcom/google/common/net/HostAndPort;
+     111: new           #279                // class com/google/api/client/http/javanet/NetHttpTransport
+     114: dup
+     115: invokespecial #281                // Method com/google/api/client/http/javanet/NetHttpTransport."<init>":()V
+     118: aload_2
+     119: invokespecial #282                // Method com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher."<init>":(Lcom/google/common/net/HostAndPort;Lcom/google/api/client/http/HttpTransport;Ljava/util/concurrent/ExecutorService;)V
+     122: invokevirtual #285                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.eventPublisher:(Lcom/google/cloud/datastore/emulator/impl/events/EventPublisher;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     125: pop
+     126: aload_0
+     127: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     130: invokevirtual #289                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.seedFromExport:()Ljava/lang/String;
+     133: ifnull        163
+     136: new           #208                // class java/io/File
+     139: dup
+     140: aload_0
+     141: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     144: invokevirtual #289                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.seedFromExport:()Ljava/lang/String;
+     147: invokespecial #210                // Method java/io/File."<init>":(Ljava/lang/String;)V
+     150: invokestatic  #292                // Method com/google/common/collect/ImmutableList.of:()Lcom/google/common/collect/ImmutableList;
+     153: invokestatic  #298                // Method com/google/cloud/datastore/util/leveldb/ExportImportUtil.fetchEntities:(Ljava/io/File;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+     156: astore_2
+     157: aload_1
+     158: aload_2
+     159: invokevirtual #304                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.seedData:(Ljava/lang/Iterable;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     162: pop
+     163: aload_0
+     164: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     167: invokevirtual #308                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.websocketPort:()Ljava/lang/Integer;
+     170: ifnull        186
+     173: aload_0
+     174: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     177: invokevirtual #308                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.websocketPort:()Ljava/lang/Integer;
+     180: invokevirtual #312                // Method java/lang/Integer.intValue:()I
+     183: goto          189
+     186: invokestatic  #318                // Method findOpenPort:()I
+     189: istore_2
+     190: aload_0
+     191: new           #165                // class com/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer
+     194: dup
+     195: aload_0
+     196: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     199: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+     202: invokevirtual #321                // Method com/google/common/net/HostAndPort.getHost:()Ljava/lang/String;
+     205: iload_2
+     206: aload_1
+     207: invokevirtual #326                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.build:()Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig;
+     210: invokevirtual #329                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig.timeSource:()Lcom/google/common/time/TimeSource;
+     213: invokespecial #333                // Method com/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer."<init>":(Ljava/lang/String;ILcom/google/common/time/TimeSource;)V
+     216: putfield      #160                // Field websocket:Lcom/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer;
+     219: aload_1
+     220: aload_0
+     221: getfield      #160                // Field websocket:Lcom/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer;
+     224: invokevirtual #336                // Method com/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer.getRequestsListener:()Lcom/google/cloud/datastore/emulator/impl/util/EmulatorRequestsListener;
+     227: invokevirtual #340                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.requestsListener:(Lcom/google/cloud/datastore/emulator/impl/util/EmulatorRequestsListener;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     230: pop
+     231: aload_0
+     232: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     235: invokevirtual #344                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.maxReadStaleness:()Ljava/time/Duration;
+     238: ifnull        253
+     241: aload_1
+     242: aload_0
+     243: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     246: invokevirtual #344                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.maxReadStaleness:()Ljava/time/Duration;
+     249: invokevirtual #348                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.maxReadStaleness:(Ljava/time/Duration;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     252: pop
+     253: aload_0
+     254: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     257: invokevirtual #351                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.experimentalMode:()Ljava/lang/Boolean;
+     260: ifnull        313
+     263: aload_1
+     264: aload_0
+     265: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     268: invokevirtual #351                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.experimentalMode:()Ljava/lang/Boolean;
+     271: invokevirtual #355                // Method java/lang/Boolean.booleanValue:()Z
+     274: invokevirtual #361                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.experimentalMode:(Z)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     277: pop
+     278: getstatic     #42                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+     281: invokevirtual #364                // Method com/google/common/flogger/GoogleLogger.atInfo:()Lcom/google/common/flogger/LoggingApi;
+     284: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+     287: ldc           #58                 // String com/google/cloud/datastore/emulator/firestore/CloudFirestore
+     289: ldc_w         #367                // String init
+     292: sipush        217
+     295: ldc           #61                 // String java/com/google/cloud/datastore/emulator/firestore/CloudFirestore.java
+     297: invokeinterface #63,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+     302: checkcast     #52                 // class com/google/common/flogger/GoogleLogger$Api
+     305: ldc_w         #368                // String Emulator has been started in experimental mode!
+     308: invokeinterface #69,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;)V
+     313: aload_0
+     314: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     317: invokevirtual #370                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.indexFile:()Ljava/lang/String;
+     320: ifnull        342
+     323: aload_1
+     324: new           #208                // class java/io/File
+     327: dup
+     328: aload_0
+     329: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     332: invokevirtual #370                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.indexFile:()Ljava/lang/String;
+     335: invokespecial #210                // Method java/io/File."<init>":(Ljava/lang/String;)V
+     338: invokevirtual #373                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.indexFile:(Ljava/io/File;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     341: pop
+     342: aload_1
+     343: aload_0
+     344: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     347: invokevirtual #376                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.requireIndexes:()Z
+     350: invokevirtual #379                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.requireIndexes:(Z)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     353: aload_0
+     354: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     357: invokevirtual #119                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.databaseMode:()Lcom/google/cloud/datastore/emulator/impl/ProductMode;
+     360: invokevirtual #381                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.databaseMode:(Lcom/google/cloud/datastore/emulator/impl/ProductMode;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     363: aload_0
+     364: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     367: invokevirtual #384                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.databaseEdition:()Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+     370: invokevirtual #388                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.databaseEdition:(Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     373: aload_0
+     374: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     377: invokevirtual #391                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.projectId:()Ljava/lang/String;
+     380: invokevirtual #394                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.projectId:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     383: aload_0
+     384: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     387: invokevirtual #397                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.singleProjectMode:()Ljava/lang/Boolean;
+     390: invokevirtual #400                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.singleProjectMode:(Ljava/lang/Boolean;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     393: aload_0
+     394: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     397: invokevirtual #403                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.singleProjectModeError:()Ljava/lang/Boolean;
+     400: invokevirtual #406                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.singleProjectModeError:(Ljava/lang/Boolean;)Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder;
+     403: pop
+     404: aload_0
+     405: aload_1
+     406: invokevirtual #326                // Method com/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig$Builder.build:()Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig;
+     409: invokestatic  #408                // Method com/google/cloud/datastore/emulator/firestore/FirestoreEmulator.fromConfig:(Lcom/google/cloud/datastore/emulator/impl/config/FirestoreEmulatorConfig;)Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;
+     412: putfield      #133                // Field firestore:Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;
+     415: aload_0
+     416: aload_0
+     417: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     420: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+     423: invokevirtual #321                // Method com/google/common/net/HostAndPort.getHost:()Ljava/lang/String;
+     426: aload_0
+     427: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     430: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+     433: invokevirtual #412                // Method com/google/common/net/HostAndPort.getPort:()I
+     436: aload_0
+     437: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     440: invokevirtual #119                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.databaseMode:()Lcom/google/cloud/datastore/emulator/impl/ProductMode;
+     443: aload_0
+     444: getfield      #133                // Field firestore:Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;
+     447: invokestatic  #415                // Method buildGrpcServer:(Ljava/lang/String;ILcom/google/cloud/datastore/emulator/impl/ProductMode;Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;)Lio/gapi/emulators/grpc/GrpcServer;
+     450: putfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     453: aload_0
+     454: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     457: invokevirtual #419                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.webchannelPort:()Ljava/lang/Integer;
+     460: ifnull        477
+     463: aload_0
+     464: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     467: invokevirtual #419                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.webchannelPort:()Ljava/lang/Integer;
+     470: invokevirtual #312                // Method java/lang/Integer.intValue:()I
+     473: istore_3
+     474: goto          481
+     477: invokestatic  #318                // Method findOpenPort:()I
+     480: istore_3
+     481: aload_0
+     482: new           #172                // class com/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter
+     485: dup
+     486: aload_0
+     487: getfield      #133                // Field firestore:Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;
+     490: invokevirtual #137                // Method com/google/cloud/datastore/emulator/firestore/FirestoreEmulator.firestoreV1Router:()Lcom/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1Router;
+     493: aload_0
+     494: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     497: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+     500: invokevirtual #321                // Method com/google/common/net/HostAndPort.getHost:()Ljava/lang/String;
+     503: iload_3
+     504: invokespecial #422                // Method com/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter."<init>":(Lcom/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1Router;Ljava/lang/String;I)V
+     507: putfield      #167                // Field webchannel:Lcom/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter;
+     510: aload_0
+     511: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     514: new           #425                // class com/google/cloud/datastore/emulator/firestore/WebChannelForwardingHandler
+     517: dup
+     518: aload_0
+     519: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     522: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+     525: invokevirtual #321                // Method com/google/common/net/HostAndPort.getHost:()Ljava/lang/String;
+     528: iload_3
+     529: ldc_w         #427                // String /google\\.firestore\\.v1\\.Firestore/(Write|Listen)/.*
+     532: invokestatic  #429                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+     535: invokespecial #435                // Method com/google/cloud/datastore/emulator/firestore/WebChannelForwardingHandler."<init>":(Ljava/lang/String;ILjava/util/regex/Pattern;)V
+     538: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     541: aload_0
+     542: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     545: new           #442                // class io/gapi/emulators/netty/ShutdownHandler
+     548: dup
+     549: ldc_w         #444                // String /shutdown$
+     552: aload_0
+     553: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     556: invokestatic  #446                // Method java/util/concurrent/Executors.newSingleThreadScheduledExecutor:()Ljava/util/concurrent/ScheduledExecutorService;
+     559: invokespecial #452                // Method io/gapi/emulators/netty/ShutdownHandler."<init>":(Ljava/lang/String;Lio/gapi/emulators/grpc/GrpcServer;Ljava/util/concurrent/Executor;)V
+     562: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     565: aload_0
+     566: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+     569: new           #455                // class io/gapi/emulators/netty/ResetHandler
+     572: dup
+     573: ldc_w         #457                // String /reset$
+     576: aload_0
+     577: getfield      #133                // Field firestore:Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;
+     580: invokespecial #459                // Method io/gapi/emulators/netty/ResetHandler."<init>":(Ljava/lang/String;Lio/gapi/emulators/util/Resettable;)V
+     583: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     586: return
+
+  private void start() throws java.io.IOException;
+    Code:
+       0: aload_0
+       1: getfield      #167                // Field webchannel:Lcom/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter;
+       4: ifnull        11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: invokestatic  #462                // Method com/google/common/base/Preconditions.checkState:(Z)V
+      15: aload_0
+      16: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+      19: ifnull        26
+      22: iconst_1
+      23: goto          27
+      26: iconst_0
+      27: invokestatic  #462                // Method com/google/common/base/Preconditions.checkState:(Z)V
+      30: aload_0
+      31: getfield      #160                // Field websocket:Lcom/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer;
+      34: ifnull        41
+      37: iconst_1
+      38: goto          42
+      41: iconst_0
+      42: invokestatic  #462                // Method com/google/common/base/Preconditions.checkState:(Z)V
+      45: aload_0
+      46: getfield      #167                // Field webchannel:Lcom/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter;
+      49: invokevirtual #465                // Method com/google/cloud/datastore/emulator/firestore/webchannel/FirestoreV1WebChannelAdapter.start:()V
+      52: aload_0
+      53: getfield      #160                // Field websocket:Lcom/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer;
+      56: invokevirtual #466                // Method com/google/cloud/datastore/emulator/firestore/websocket/WebSocketServer.start:()V
+      59: aload_0
+      60: getfield      #89                 // Field server:Lio/gapi/emulators/grpc/GrpcServer;
+      63: invokevirtual #467                // Method io/gapi/emulators/grpc/GrpcServer.start:()V
+      66: aload_0
+      67: iconst_1
+      68: putfield      #96                 // Field isRunning:Z
+      71: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+      74: ldc_w         #474                // String \nAPI endpoint: http://%s\n
+      77: iconst_1
+      78: anewarray     #476                // class java/lang/Object
+      81: dup
+      82: iconst_0
+      83: aload_0
+      84: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+      87: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+      90: aastore
+      91: invokevirtual #478                // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+      94: pop
+      95: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+      98: ldc_w         #484                // String Database Edition: %s\n
+     101: iconst_1
+     102: anewarray     #476                // class java/lang/Object
+     105: dup
+     106: iconst_0
+     107: aload_0
+     108: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     111: invokevirtual #384                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.databaseEdition:()Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+     114: aastore
+     115: invokevirtual #478                // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     118: pop
+     119: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+     122: ldc_w         #486                // String Database Mode: %s\n\n
+     125: iconst_1
+     126: anewarray     #476                // class java/lang/Object
+     129: dup
+     130: iconst_0
+     131: aload_0
+     132: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     135: invokevirtual #119                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.databaseMode:()Lcom/google/cloud/datastore/emulator/impl/ProductMode;
+     138: aastore
+     139: invokevirtual #478                // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     142: pop
+     143: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+     146: ldc_w         #488                // String If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+     149: invokevirtual #490                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     152: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+     155: ldc_w         #493                // String \n   export FIRESTORE_EMULATOR_HOST=%s\n\n
+     158: iconst_1
+     159: anewarray     #476                // class java/lang/Object
+     162: dup
+     163: iconst_0
+     164: aload_0
+     165: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     168: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+     171: aastore
+     172: invokevirtual #478                // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     175: pop
+     176: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+     179: ldc_w         #495                // String If you are running a Firestore in Datastore Mode project, run:
+     182: invokevirtual #490                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     185: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+     188: ldc_w         #497                // String \n   export DATASTORE_EMULATOR_HOST=%s\n\n
+     191: iconst_1
+     192: anewarray     #476                // class java/lang/Object
+     195: dup
+     196: iconst_0
+     197: aload_0
+     198: getfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     201: invokevirtual #184                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.hostAndPort:()Lcom/google/common/net/HostAndPort;
+     204: aastore
+     205: invokevirtual #478                // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     208: pop
+     209: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+     212: ldc_w         #499                // String Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+     215: invokevirtual #490                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     218: getstatic     #468                // Field java/lang/System.out:Ljava/io/PrintStream;
+     221: ldc_w         #501                // String Dev App Server is now running.\n
+     224: invokevirtual #490                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     227: return
+
+  public static io.gapi.emulators.grpc.GrpcServer buildGrpcServer(java.lang.String, int, com.google.cloud.datastore.emulator.impl.ProductMode, com.google.cloud.datastore.emulator.firestore.FirestoreEmulator) throws java.io.IOException;
+    Code:
+       0: sipush        1024
+       3: invokestatic  #503                // Method com/google/protobuf/CodedInputStream.setDefaultRecursionLimit:(I)V
+       6: aload_3
+       7: invokestatic  #508                // Method com/google/cloud/datastore/emulator/firestore/v1/FirestoreV1GrpcAdapter.build:(Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;)Lio/grpc/ServerServiceDefinition;
+      10: iconst_2
+      11: anewarray     #513                // class io/grpc/ServerInterceptor
+      14: dup
+      15: iconst_0
+      16: new           #515                // class com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseAuthInterceptor
+      19: dup
+      20: invokespecial #517                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseAuthInterceptor."<init>":()V
+      23: aastore
+      24: dup
+      25: iconst_1
+      26: new           #518                // class com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseDatabaseRefInterceptor
+      29: dup
+      30: invokespecial #520                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseDatabaseRefInterceptor."<init>":()V
+      33: aastore
+      34: invokestatic  #521                // Method io/grpc/ServerInterceptors.intercept:(Lio/grpc/ServerServiceDefinition;[Lio/grpc/ServerInterceptor;)Lio/grpc/ServerServiceDefinition;
+      37: astore        4
+      39: aload_3
+      40: invokestatic  #527                // Method com/google/cloud/datastore/emulator/firestore/v1beta1/FirestoreV1Beta1GrpcAdapter.build:(Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;)Lio/grpc/ServerServiceDefinition;
+      43: iconst_2
+      44: anewarray     #513                // class io/grpc/ServerInterceptor
+      47: dup
+      48: iconst_0
+      49: new           #515                // class com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseAuthInterceptor
+      52: dup
+      53: invokespecial #517                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseAuthInterceptor."<init>":()V
+      56: aastore
+      57: dup
+      58: iconst_1
+      59: new           #518                // class com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseDatabaseRefInterceptor
+      62: dup
+      63: invokespecial #520                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseDatabaseRefInterceptor."<init>":()V
+      66: aastore
+      67: invokestatic  #521                // Method io/grpc/ServerInterceptors.intercept:(Lio/grpc/ServerServiceDefinition;[Lio/grpc/ServerInterceptor;)Lio/grpc/ServerServiceDefinition;
+      70: astore        5
+      72: aload_2
+      73: getstatic     #123                // Field com/google/cloud/datastore/emulator/impl/ProductMode.CLOUD_FIRESTORE:Lcom/google/cloud/datastore/emulator/impl/ProductMode;
+      76: invokevirtual #129                // Method com/google/cloud/datastore/emulator/impl/ProductMode.equals:(Ljava/lang/Object;)Z
+      79: ifeq          89
+      82: aload_3
+      83: invokevirtual #137                // Method com/google/cloud/datastore/emulator/firestore/FirestoreEmulator.firestoreV1Router:()Lcom/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1Router;
+      86: goto          93
+      89: aload_3
+      90: invokevirtual #149                // Method com/google/cloud/datastore/emulator/firestore/FirestoreEmulator.cloudDatastoreV1Router:()Lcom/google/cloud/datastore/emulator/impl/firestore/cloudv1/CloudDatastoreV1Router;
+      93: invokestatic  #530                // Method com/google/cloud/datastore/emulator/firestore/EmulatorAuxiliaryGrpcAdapter.build:(Lcom/google/cloud/datastore/emulator/impl/firestore/ApiRouter;)Lio/grpc/ServerServiceDefinition;
+      96: iconst_2
+      97: anewarray     #513                // class io/grpc/ServerInterceptor
+     100: dup
+     101: iconst_0
+     102: new           #515                // class com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseAuthInterceptor
+     105: dup
+     106: invokespecial #517                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseAuthInterceptor."<init>":()V
+     109: aastore
+     110: dup
+     111: iconst_1
+     112: new           #518                // class com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseDatabaseRefInterceptor
+     115: dup
+     116: invokespecial #520                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestore$FirebaseDatabaseRefInterceptor."<init>":()V
+     119: aastore
+     120: invokestatic  #521                // Method io/grpc/ServerInterceptors.intercept:(Lio/grpc/ServerServiceDefinition;[Lio/grpc/ServerInterceptor;)Lio/grpc/ServerServiceDefinition;
+     123: astore        6
+     125: aload_3
+     126: invokestatic  #535                // Method com/google/cloud/datastore/emulator/firestore/cloudv1/CloudDatastoreV1GrpcAdapter.build:(Lcom/google/cloud/datastore/emulator/firestore/FirestoreEmulator;)Lio/grpc/ServerServiceDefinition;
+     129: iconst_0
+     130: anewarray     #513                // class io/grpc/ServerInterceptor
+     133: invokestatic  #521                // Method io/grpc/ServerInterceptors.intercept:(Lio/grpc/ServerServiceDefinition;[Lio/grpc/ServerInterceptor;)Lio/grpc/ServerServiceDefinition;
+     136: astore        7
+     138: aload         4
+     140: aload         5
+     142: aload         6
+     144: aload         7
+     146: invokestatic  #538                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+     149: astore        8
+     151: ldc_w         #541                // int 104857600
+     154: istore        9
+     156: new           #94                 // class io/gapi/emulators/grpc/GrpcServer
+     159: dup
+     160: aload_0
+     161: iload_1
+     162: aload         8
+     164: iload         9
+     166: invokespecial #542                // Method io/gapi/emulators/grpc/GrpcServer."<init>":(Ljava/lang/String;ILjava/util/List;I)V
+     169: astore        10
+     171: aload_0
+     172: iload_1
+     173: invokestatic  #545                // Method io/grpc/netty/NettyChannelBuilder.forAddress:(Ljava/lang/String;I)Lio/grpc/netty/NettyChannelBuilder;
+     176: iload         9
+     178: invokevirtual #551                // Method io/grpc/netty/NettyChannelBuilder.maxInboundMessageSize:(I)Lio/grpc/netty/NettyChannelBuilder;
+     181: invokevirtual #555                // Method io/grpc/netty/NettyChannelBuilder.usePlaintext:()Lio/grpc/netty/NettyChannelBuilder;
+     184: invokevirtual #559                // Method io/grpc/netty/NettyChannelBuilder.build:()Lio/grpc/ManagedChannel;
+     187: astore        11
+     189: new           #562                // class io/gapi/emulators/grpc/HttpJsonAdapter
+     192: dup
+     193: invokespecial #564                // Method io/gapi/emulators/grpc/HttpJsonAdapter."<init>":()V
+     196: astore        12
+     198: new           #565                // class io/gapi/emulators/grpc/HttpProtoAdapter
+     201: dup
+     202: invokespecial #567                // Method io/gapi/emulators/grpc/HttpProtoAdapter."<init>":()V
+     205: astore        13
+     207: invokestatic  #568                // Method com/google/datastore/v1/DatastoreProto.getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+     210: ldc_w         #574                // String Datastore
+     213: invokevirtual #576                // Method com/google/protobuf/Descriptors$FileDescriptor.findServiceByName:(Ljava/lang/String;)Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+     216: astore        14
+     218: aload         11
+     220: invokestatic  #582                // Method com/google/datastore/v1/DatastoreGrpc.newStub:(Lio/grpc/Channel;)Lcom/google/datastore/v1/DatastoreGrpc$DatastoreStub;
+     223: astore        15
+     225: aload         12
+     227: aload         14
+     229: aload         15
+     231: invokevirtual #588                // Method io/gapi/emulators/grpc/HttpJsonAdapter.addService:(Lcom/google/protobuf/Descriptors$ServiceDescriptor;Lio/grpc/stub/AbstractStub;)V
+     234: aload         13
+     236: aload         14
+     238: aload         15
+     240: invokevirtual #592                // Method io/gapi/emulators/grpc/HttpProtoAdapter.addService:(Lcom/google/protobuf/Descriptors$ServiceDescriptor;Lio/grpc/stub/AbstractStub;)V
+     243: invokestatic  #593                // Method com/google/firestore/v1/FirestoreProto.getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+     246: astore        16
+     248: aload         12
+     250: aload         16
+     252: ldc_w         #596                // String Firestore
+     255: invokevirtual #576                // Method com/google/protobuf/Descriptors$FileDescriptor.findServiceByName:(Ljava/lang/String;)Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+     258: aload         11
+     260: invokestatic  #598                // Method com/google/firestore/v1/FirestoreGrpc.newStub:(Lio/grpc/Channel;)Lcom/google/firestore/v1/FirestoreGrpc$FirestoreStub;
+     263: ldc_w         #603                // String .*Firestore.(Get|List)Documents?$
+     266: invokestatic  #429                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+     269: invokevirtual #605                // Method io/gapi/emulators/grpc/HttpJsonAdapter.addService:(Lcom/google/protobuf/Descriptors$ServiceDescriptor;Lio/grpc/stub/AbstractStub;Ljava/util/regex/Pattern;)V
+     272: invokestatic  #608                // Method com/google/firestore/v1beta1/FirestoreProto.getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+     275: astore        17
+     277: aload         12
+     279: aload         17
+     281: ldc_w         #596                // String Firestore
+     284: invokevirtual #576                // Method com/google/protobuf/Descriptors$FileDescriptor.findServiceByName:(Ljava/lang/String;)Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+     287: aload         11
+     289: invokestatic  #611                // Method com/google/firestore/v1beta1/FirestoreGrpc.newStub:(Lio/grpc/Channel;)Lcom/google/firestore/v1beta1/FirestoreGrpc$FirestoreStub;
+     292: ldc_w         #603                // String .*Firestore.(Get|List)Documents?$
+     295: invokestatic  #429                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+     298: invokevirtual #605                // Method io/gapi/emulators/grpc/HttpJsonAdapter.addService:(Lcom/google/protobuf/Descriptors$ServiceDescriptor;Lio/grpc/stub/AbstractStub;Ljava/util/regex/Pattern;)V
+     301: invokestatic  #616                // Method com/google/firestore/emulator/v1/FirestoreEmulatorProto.getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+     304: ldc_w         #619                // String FirestoreEmulator
+     307: invokevirtual #576                // Method com/google/protobuf/Descriptors$FileDescriptor.findServiceByName:(Ljava/lang/String;)Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+     310: astore        18
+     312: aload         11
+     314: invokestatic  #621                // Method com/google/firestore/emulator/v1/FirestoreEmulatorGrpc.newStub:(Lio/grpc/Channel;)Lcom/google/firestore/emulator/v1/FirestoreEmulatorGrpc$FirestoreEmulatorStub;
+     317: astore        19
+     319: aload         12
+     321: aload         18
+     323: aload         19
+     325: invokevirtual #588                // Method io/gapi/emulators/grpc/HttpJsonAdapter.addService:(Lcom/google/protobuf/Descriptors$ServiceDescriptor;Lio/grpc/stub/AbstractStub;)V
+     328: aload         13
+     330: aload         18
+     332: aload         19
+     334: invokevirtual #592                // Method io/gapi/emulators/grpc/HttpProtoAdapter.addService:(Lcom/google/protobuf/Descriptors$ServiceDescriptor;Lio/grpc/stub/AbstractStub;)V
+     337: aload         10
+     339: invokestatic  #626                // Method io/grpc/protobuf/services/ProtoReflectionService.newInstance:()Lio/grpc/BindableService;
+     342: invokevirtual #632                // Method io/gapi/emulators/grpc/GrpcServer.addService:(Lio/grpc/BindableService;)V
+     345: aload         10
+     347: new           #635                // class io/gapi/emulators/netty/OkHandler
+     350: dup
+     351: ldc_w         #637                // String /
+     354: invokespecial #639                // Method io/gapi/emulators/netty/OkHandler."<init>":(Ljava/lang/String;)V
+     357: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     360: aload         10
+     362: aload         19
+     364: invokestatic  #640                // Method com/google/cloud/datastore/emulator/firestore/FirestoreRuleCoverageHandler.create:(Lcom/google/firestore/emulator/v1/FirestoreEmulatorGrpc$FirestoreEmulatorStub;)Lcom/google/cloud/datastore/emulator/firestore/FirestoreRuleCoverageHandler;
+     367: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     370: aload         10
+     372: new           #646                // class io/gapi/emulators/netty/OptionsHandler
+     375: dup
+     376: invokespecial #648                // Method io/gapi/emulators/netty/OptionsHandler."<init>":()V
+     379: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     382: aload         10
+     384: new           #649                // class com/google/cloud/datastore/emulator/firestore/CloudFirestore$ContentTypeWorkaroundHandler
+     387: dup
+     388: invokespecial #651                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestore$ContentTypeWorkaroundHandler."<init>":()V
+     391: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     394: aload         10
+     396: aload         12
+     398: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     401: aload         10
+     403: aload         13
+     405: invokevirtual #438                // Method io/gapi/emulators/grpc/GrpcServer.addHttpHandler:(Lio/netty/channel/ChannelHandler;)V
+     408: aload         10
+     410: areturn
+
+  private static int findOpenPort() throws java.io.IOException;
+    Code:
+       0: new           #652                // class java/net/ServerSocket
+       3: dup
+       4: iconst_0
+       5: invokespecial #654                // Method java/net/ServerSocket."<init>":(I)V
+       8: astore_0
+       9: aload_0
+      10: invokevirtual #656                // Method java/net/ServerSocket.getLocalPort:()I
+      13: istore_1
+      14: aload_0
+      15: invokevirtual #659                // Method java/net/ServerSocket.close:()V
+      18: iload_1
+      19: ireturn
+      20: astore_1
+      21: aload_0
+      22: invokevirtual #659                // Method java/net/ServerSocket.close:()V
+      25: goto          34
+      28: astore_2
+      29: aload_1
+      30: aload_2
+      31: invokevirtual #664                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+      34: aload_1
+      35: athrow
+    Exception table:
+       from    to  target type
+           9    14    20   Class java/lang/Throwable
+          21    25    28   Class java/lang/Throwable
+
+  private static com.google.cloud.datastore.emulator.firestore.CloudFirestoreEmulatorOption convertCliOptions(com.google.cloud.datastore.emulator.cli.FirestoreEmulatorCliOptions) throws java.lang.Exception;
+    Code:
+       0: invokestatic  #668                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption.builder:()Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+       3: aload_0
+       4: getfield      #671                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.host:Ljava/lang/String;
+       7: aload_0
+       8: getfield      #675                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.port:I
+      11: invokestatic  #679                // Method com/google/common/net/HostAndPort.fromParts:(Ljava/lang/String;I)Lcom/google/common/net/HostAndPort;
+      14: invokevirtual #683                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setHostAndPort:(Lcom/google/common/net/HostAndPort;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+      17: astore_1
+      18: aload_0
+      19: getfield      #689                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.functionsEmulatorHostAndPort:Ljava/lang/String;
+      22: ifnull        37
+      25: aload_1
+      26: aload_0
+      27: getfield      #689                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.functionsEmulatorHostAndPort:Ljava/lang/String;
+      30: invokestatic  #691                // Method com/google/common/net/HostAndPort.fromString:(Ljava/lang/String;)Lcom/google/common/net/HostAndPort;
+      33: invokevirtual #695                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setFunctionsEmulatorHostAndPort:(Lcom/google/common/net/HostAndPort;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+      36: pop
+      37: aload_0
+      38: getfield      #698                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.websocketPort:Ljava/lang/Integer;
+      41: ifnull        56
+      44: aload_1
+      45: aload_0
+      46: getfield      #698                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.websocketPort:Ljava/lang/Integer;
+      49: invokevirtual #312                // Method java/lang/Integer.intValue:()I
+      52: invokevirtual #701                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setWebsocketPort:(I)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+      55: astore_1
+      56: aload_0
+      57: getfield      #705                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.seedFromExport:Ljava/lang/String;
+      60: ifnull        72
+      63: aload_1
+      64: aload_0
+      65: getfield      #705                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.seedFromExport:Ljava/lang/String;
+      68: invokevirtual #707                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setSeedFromExport:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+      71: pop
+      72: aload_0
+      73: getfield      #711                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.importPath:Ljava/lang/String;
+      76: ifnull        88
+      79: aload_1
+      80: aload_0
+      81: getfield      #711                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.importPath:Ljava/lang/String;
+      84: invokevirtual #707                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setSeedFromExport:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+      87: pop
+      88: aload_0
+      89: getfield      #714                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.exportName:Ljava/lang/String;
+      92: ifnull        113
+      95: aload_0
+      96: getfield      #716                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.exportPath:Ljava/lang/String;
+      99: ifnonnull     113
+     102: new           #718                // class com/google/cloud/datastore/core/exception/ValidationException
+     105: dup
+     106: ldc_w         #720                // String Export path not provided along with export name
+     109: invokespecial #722                // Method com/google/cloud/datastore/core/exception/ValidationException."<init>":(Ljava/lang/String;)V
+     112: athrow
+     113: aload_0
+     114: getfield      #716                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.exportPath:Ljava/lang/String;
+     117: ifnull        145
+     120: aload_1
+     121: aload_0
+     122: getfield      #716                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.exportPath:Ljava/lang/String;
+     125: invokevirtual #723                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setExportPath:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     128: pop
+     129: aload_0
+     130: getfield      #714                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.exportName:Ljava/lang/String;
+     133: ifnull        145
+     136: aload_1
+     137: aload_0
+     138: getfield      #714                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.exportName:Ljava/lang/String;
+     141: invokevirtual #726                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setExportName:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     144: pop
+     145: aload_0
+     146: getfield      #729                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.webchannelPort:Ljava/lang/Integer;
+     149: ifnull        164
+     152: aload_1
+     153: aload_0
+     154: getfield      #729                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.webchannelPort:Ljava/lang/Integer;
+     157: invokevirtual #312                // Method java/lang/Integer.intValue:()I
+     160: invokevirtual #731                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setWebchannelPort:(I)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     163: pop
+     164: aload_0
+     165: getfield      #734                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.rulesFile:Ljava/lang/String;
+     168: ifnull        180
+     171: aload_1
+     172: aload_0
+     173: getfield      #734                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.rulesFile:Ljava/lang/String;
+     176: invokevirtual #736                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setRulesFile:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     179: pop
+     180: ldc_w         #739                // String EXPERIMENTAL_MODE
+     183: invokestatic  #741                // Method java/lang/System.getenv:(Ljava/lang/String;)Ljava/lang/String;
+     186: astore_2
+     187: aload_2
+     188: ifnull        210
+     191: aload_2
+     192: ldc_w         #744                // String true
+     195: invokestatic  #746                // Method com/google/common/base/Ascii.equalsIgnoreCase:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+     198: ifeq          210
+     201: aload_1
+     202: iconst_1
+     203: invokestatic  #752                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     206: invokevirtual #756                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setExperimentalMode:(Ljava/lang/Boolean;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     209: pop
+     210: aload_0
+     211: getfield      #760                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.indexFile:Ljava/lang/String;
+     214: ifnull        226
+     217: aload_1
+     218: aload_0
+     219: getfield      #760                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.indexFile:Ljava/lang/String;
+     222: invokevirtual #762                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setIndexFile:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     225: pop
+     226: aload_0
+     227: getfield      #765                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.requireIndexes:Ljava/lang/Boolean;
+     230: ifnull        245
+     233: aload_1
+     234: aload_0
+     235: getfield      #765                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.requireIndexes:Ljava/lang/Boolean;
+     238: invokevirtual #355                // Method java/lang/Boolean.booleanValue:()Z
+     241: invokevirtual #768                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setRequireIndexes:(Z)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     244: pop
+     245: aload_1
+     246: aload_0
+     247: getfield      #772                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.projectId:Ljava/lang/String;
+     250: invokevirtual #774                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setProjectId:(Ljava/lang/String;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     253: aload_0
+     254: getfield      #777                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.singleProjectMode:Ljava/lang/Boolean;
+     257: invokevirtual #779                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setSingleProjectMode:(Ljava/lang/Boolean;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     260: aload_0
+     261: getfield      #782                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.singleProjectModeError:Ljava/lang/Boolean;
+     264: invokevirtual #784                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setSingleProjectModeError:(Ljava/lang/Boolean;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     267: aload_0
+     268: getfield      #787                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.databaseMode:Lcom/google/cloud/datastore/emulator/impl/ProductMode;
+     271: invokevirtual #789                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setDatabaseMode:(Lcom/google/cloud/datastore/emulator/impl/ProductMode;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     274: aload_0
+     275: getfield      #793                // Field com/google/cloud/datastore/emulator/cli/FirestoreEmulatorCliOptions.databaseEdition:Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+     278: invokevirtual #796                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.setDatabaseEdition:(Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;)Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder;
+     281: invokevirtual #800                // Method com/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption$Builder.build:()Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+     284: areturn
+
+  private com.google.cloud.datastore.emulator.firestore.CloudFirestore(com.google.cloud.datastore.emulator.firestore.CloudFirestoreEmulatorOption);
+    Code:
+       0: aload_0
+       1: invokespecial #803                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #100                // Field opts:Lcom/google/cloud/datastore/emulator/firestore/CloudFirestoreEmulatorOption;
+       9: aload_0
+      10: iconst_0
+      11: putfield      #96                 // Field isRunning:Z
+      14: return
+
+  static {};
+    Code:
+       0: ldc           #58                 // String com/google/cloud/datastore/emulator/firestore/CloudFirestore
+       2: invokestatic  #804                // Method com/google/common/flogger/GoogleLogger.forInjectedClassName:(Ljava/lang/String;)Lcom/google/common/flogger/GoogleLogger;
+       5: putstatic     #42                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+       8: return
+}

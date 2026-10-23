@@ -1,0 +1,94 @@
+Compiled from "WrappedStreamObserver.java"
+public class com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver<T> implements io.grpc.stub.StreamObserver<T> {
+  private static final com.google.common.flogger.GoogleLogger logger;
+
+  private final io.grpc.stub.StreamObserver<T> underlying;
+
+  public com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver(io.grpc.stub.StreamObserver<T>);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #7                  // Field underlying:Lio/grpc/stub/StreamObserver;
+       9: return
+
+  public void onNext(T);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field underlying:Lio/grpc/stub/StreamObserver;
+       4: aload_1
+       5: invokeinterface #13,  2           // InterfaceMethod io/grpc/stub/StreamObserver.onNext:(Ljava/lang/Object;)V
+      10: goto          23
+      13: astore_2
+      14: new           #23                 // class com/google/cloud/datastore/emulator/impl/util/StreamTransportClosedException
+      17: dup
+      18: aload_2
+      19: invokespecial #25                 // Method com/google/cloud/datastore/emulator/impl/util/StreamTransportClosedException."<init>":(Ljava/lang/RuntimeException;)V
+      22: athrow
+      23: return
+    Exception table:
+       from    to  target type
+           0    10    13   Class java/lang/IllegalStateException
+           0    10    13   Class io/grpc/StatusRuntimeException
+
+  public void onError(java.lang.Throwable);
+    Code:
+       0: getstatic     #28                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+       3: invokevirtual #32                 // Method com/google/common/flogger/GoogleLogger.atWarning:()Lcom/google/common/flogger/LoggingApi;
+       6: checkcast     #38                 // class com/google/common/flogger/GoogleLogger$Api
+       9: aload_1
+      10: invokeinterface #40,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+      15: checkcast     #38                 // class com/google/common/flogger/GoogleLogger$Api
+      18: ldc           #44                 // String com/google/cloud/datastore/emulator/impl/util/WrappedStreamObserver
+      20: ldc           #45                 // String onError
+      22: bipush        36
+      24: ldc           #47                 // String java/com/google/cloud/datastore/emulator/impl/util/WrappedStreamObserver.java
+      26: invokeinterface #49,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      31: checkcast     #38                 // class com/google/common/flogger/GoogleLogger$Api
+      34: ldc           #53                 // String Operation failed: %s
+      36: aload_1
+      37: invokevirtual #55                 // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+      40: invokeinterface #61,  3           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;)V
+      45: aload_1
+      46: instanceof    #65                 // class com/google/cloud/datastore/core/exception/DatastoreException
+      49: ifeq          95
+      52: aload_1
+      53: checkcast     #65                 // class com/google/cloud/datastore/core/exception/DatastoreException
+      56: astore_2
+      57: aload_2
+      58: invokestatic  #67                 // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toStatus:(Lcom/google/cloud/datastore/core/exception/DatastoreException;)Lcom/google/rpc/Status;
+      61: invokevirtual #73                 // Method com/google/rpc/Status.getCode:()I
+      64: invokestatic  #79                 // Method io/grpc/Status.fromCodeValue:(I)Lio/grpc/Status;
+      67: aload_2
+      68: invokevirtual #85                 // Method com/google/cloud/datastore/core/exception/DatastoreException.getMessage:()Ljava/lang/String;
+      71: invokevirtual #86                 // Method io/grpc/Status.withDescription:(Ljava/lang/String;)Lio/grpc/Status;
+      74: astore_3
+      75: aload_0
+      76: getfield      #7                  // Field underlying:Lio/grpc/stub/StreamObserver;
+      79: new           #90                 // class io/grpc/StatusException
+      82: dup
+      83: aload_3
+      84: invokespecial #92                 // Method io/grpc/StatusException."<init>":(Lio/grpc/Status;)V
+      87: invokeinterface #95,  2           // InterfaceMethod io/grpc/stub/StreamObserver.onError:(Ljava/lang/Throwable;)V
+      92: goto          105
+      95: aload_0
+      96: getfield      #7                  // Field underlying:Lio/grpc/stub/StreamObserver;
+      99: aload_1
+     100: invokeinterface #95,  2           // InterfaceMethod io/grpc/stub/StreamObserver.onError:(Ljava/lang/Throwable;)V
+     105: return
+
+  public void onCompleted();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field underlying:Lio/grpc/stub/StreamObserver;
+       4: invokeinterface #98,  1           // InterfaceMethod io/grpc/stub/StreamObserver.onCompleted:()V
+       9: return
+
+  static {};
+    Code:
+       0: ldc           #44                 // String com/google/cloud/datastore/emulator/impl/util/WrappedStreamObserver
+       2: invokestatic  #101                // Method com/google/common/flogger/GoogleLogger.forInjectedClassName:(Ljava/lang/String;)Lcom/google/common/flogger/GoogleLogger;
+       5: putstatic     #28                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+       8: return
+}

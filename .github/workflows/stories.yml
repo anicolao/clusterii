@@ -49,6 +49,7 @@ jobs:
           # Existing bounded, redacted demo-only probe; retained with story traces.
           CLUSTER_SETTLEMENT_TIMING: "1"
           CLUSTER_SETTLEMENT_RPC_TIMING: "1"
+          CLUSTER_EMULATOR_POST_MARKER: "1"
         run: nix run path:./nix#ci-renderer -- stories verify
       - name: Explicit baseline candidates (never acceptance)
         if: matrix.mode == 'generate' && contains(github.event.pull_request.labels.*.name, 'baseline-candidates')
@@ -61,6 +62,7 @@ jobs:
           path: |
             ci-evidence/nix-renderer/
             ci-evidence/verification/
+            ci-evidence/settlement-profile/
             test-results/stories/
             test-results/story-tools/
             test-results/.story-cohorts-*/

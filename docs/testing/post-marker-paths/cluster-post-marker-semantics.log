@@ -1,0 +1,16 @@
+bun test v1.3.13 (bf2e2cec)
+
+tests/settlement-rpc-timing.test.ts:
+(pass) native commit observation preserves concurrent argument/result identity and restoration [0.30ms]
+(pass) pinned native gRPC transport preserves real response and correlates server marker [151.20ms]
+(pass) partial native-stub installation failure restores earlier clients without initializing replacements [0.13ms]
+(pass) synchronous transport rejection retains the exact failure and no false server marker [0.09ms]
+
+tests/settlement-timing.test.ts:
+(pass) settlement timing preserves SDK outcomes, failures and redacts arguments [0.83ms]
+(pass) commit timing preserves receivers, arguments and errors across concurrent SDK continuations [0.81ms]
+
+ 6 pass
+ 0 fail
+ 116 expect() calls
+Ran 6 tests across 2 files. [198.00ms]

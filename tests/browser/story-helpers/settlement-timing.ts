@@ -1,6 +1,7 @@
 import { appendFileSync } from "node:fs";
 import { performance, monitorEventLoopDelay } from "node:perf_hooks";
 import { AsyncLocalStorage } from "node:async_hooks";
+import { requestEmulatorProfile } from "../../../scripts/emulator-post-marker.mjs";
 import {
   observeInitializedCommitRpcs,
   rpcMetrics,
@@ -65,6 +66,7 @@ export function settlementTiming(db: any, output: string) {
         : undefined;
       try {
         if (label === "batch" || label === "repeat") {
+          if (label === "batch") requestEmulatorProfile();
           if (rpcEnabled) {
             restoreSpan.push(
               await observeInitializedCommitRpcs(db, () =>

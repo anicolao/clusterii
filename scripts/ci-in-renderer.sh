@@ -16,10 +16,14 @@ fi
 ldd "$browser" > ci-evidence/nix-renderer/renderer-ldd.txt
 case "$1" in
   stories)
+    # Unit fixtures also exercise settlementTiming; only real story batches may
+    # claim the single emulator observation.
+    post_marker=${CLUSTER_EMULATOR_POST_MARKER:-}
+    unset CLUSTER_EMULATOR_POST_MARKER
     bun run test:story-policy
     bun run test:story-tools
     bun run test:browser-storage
-    if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
+    if [ "$2" = verify ]; then CLUSTER_EMULATOR_POST_MARKER="$post_marker" bun run test:stories; else bun run test:stories:generate; fi
     ;;
   application)
     bun run check

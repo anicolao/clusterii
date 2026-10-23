@@ -82,6 +82,6 @@ docker run --rm --ipc=host --network=host \
   --env CI=true --env NIX_REMOTE=daemon \
   --env 'NIX_CONFIG=experimental-features = nix-command flakes' \
   --env "CLUSTER_NIX_RENDERER_DIGEST=$imageDigest" \
-  --env CLUSTER_PINNED_RENDERER --env CLUSTER_STORY_COHORTS --env CLUSTER_SETTLEMENT_TIMING --env CLUSTER_SETTLEMENT_RPC_TIMING \
+  --env CLUSTER_PINNED_RENDERER --env CLUSTER_STORY_COHORTS --env CLUSTER_SETTLEMENT_TIMING --env CLUSTER_SETTLEMENT_RPC_TIMING --env CLUSTER_EMULATOR_POST_MARKER \
   --entrypoint "$nixCommand" "$imageTag" \
   develop path:./nix#renderer --command bash scripts/ci-in-renderer.sh "$@"
