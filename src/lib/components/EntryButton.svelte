@@ -128,15 +128,20 @@
   }
   @media (min-width: 2200px) {
     .entry-button {
-      grid-template-columns: 110px 1fr 36px;
-      min-height: 110px;
+      grid-template-columns: 150px 1fr 44px;
+      gap: 32px;
+      min-height: 164px;
+      padding: 6px 28px 6px 6px;
     }
     .inset {
-      width: 110px;
-      height: 96px;
+      width: 150px;
+      height: 150px;
     }
     .label {
-      font-size: 40px;
+      font-size: 56px;
+    }
+    .label small {
+      font-size: 24px;
     }
   }
 </style>

@@ -703,11 +703,21 @@
   }
   @media (min-width: 2200px) {
     .entry {
-      width: 780px;
+      width: 34vw;
       margin-right: 25%;
     }
     .brand h1 {
-      font-size: 150px;
+      font-size: clamp(150px, 6.3vw, 280px);
+    }
+    .entry-actions {
+      width: 94%;
+      gap: 24px;
+      margin-top: 9svh;
+    }
+    .entry-secondary :global(button),
+    .entry-secondary .campaign-link,
+    .signed {
+      font-size: 24px;
     }
   }
   @media (max-width: 700px) {

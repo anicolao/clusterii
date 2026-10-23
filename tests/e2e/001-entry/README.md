@@ -10,3 +10,5 @@ Production entry and Learn journey: [entry.spec.ts](entry.spec.ts). Read [E2E gu
 These archived stories and screenshots retain their original source/review metadata. They are historical regression references, not acceptance of the changed cinematic entry. New candidates remain separate until independently reviewed.
 
 Run only this feature: `nix develop /tmp/pantheon-nix-env --command bunx playwright test --config playwright.stories.config.ts tests/e2e/001-entry/entry.spec.ts`. Use real demo emulators for app initialization; explicit generation sets `CLUSTER_STORY_MODE=generate`. Verification never updates screenshots.
+
+[Returning entry journey](returning.spec.ts) verifies actual campaign membership and Continue after scheduled start. It requires the existing demo-only catalogue/admission loader through NODE_OPTIONS, real emulators and serialized Functions compilation. Never inject membership to reproduce the illustration.
