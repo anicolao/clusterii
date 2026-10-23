@@ -49,6 +49,20 @@
     if (value) editorHeading?.focus();
     else editControl?.focus();
   }
+  function readingKey(event: KeyboardEvent) {
+    if (
+      event.target !== event.currentTarget ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey
+    )
+      return;
+    if (event.key !== "Home" && event.key !== "End") return;
+    event.preventDefault();
+    const region = event.currentTarget as HTMLElement;
+    region.scrollTop = event.key === "Home" ? 0 : region.scrollHeight;
+  }
   function editorKey(event: KeyboardEvent) {
     if (event.key === "Escape") {
       event.stopPropagation();
@@ -279,6 +293,7 @@
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
     <div
       class="route-details"
+      onkeydown={readingKey}
       inert={editing && !active && !completed}
       role="region"
       tabindex="0"
@@ -835,9 +850,15 @@
     display: block;
   }
   .waypoint-actions {
+    margin-top: 10px;
+    margin-bottom: 6px;
     display: flex;
-    gap: 6px;
+    gap: 12px;
     flex-wrap: wrap;
+  }
+  .waypoint-actions :global(button:focus-visible) {
+    outline: 3px solid #e9cb85;
+    outline-offset: 2px;
   }
   .summary,
   article {

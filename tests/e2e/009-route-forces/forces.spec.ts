@@ -484,6 +484,99 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
       verifications: [privacy],
       views: views(),
     });
+    for (const [id, name] of [
+      ["earlier", "Move waypoint 2 earlier"],
+      ["later", "Move waypoint 1 later"],
+      ["remove", "Remove waypoint 2"],
+    ]) {
+      const control = planner.getByRole("button", { name, exact: true });
+      await story.step(`read-${id}-focus`, {
+        actor: aliases[0],
+        description: `Read the leg facts with the ${id} keyboard control focused; no route is changed.`,
+        action: async () => {
+          await owner.keyboard.press("Tab");
+          await control.focus();
+        },
+        acknowledgement: {
+          spec: "Keyboard focus is visible on the requested enabled control.",
+          check: async () => {
+            await expect(control).toBeFocused();
+            await expect(control).toBeEnabled();
+          },
+        },
+        verifications: [
+          privacy,
+          {
+            spec: "The painted focus outline clears every leg fact and the reading clip; unsent intent changes no authoritative state.",
+            check: async () => {
+              const paint = await control.evaluate((button) => {
+                const style = getComputedStyle(button),
+                  box = button.getBoundingClientRect();
+                const extent =
+                  parseFloat(style.outlineWidth) +
+                  parseFloat(style.outlineOffset);
+                const ring = {
+                  left: box.left - extent,
+                  right: box.right + extent,
+                  top: box.top - extent,
+                  bottom: box.bottom + extent,
+                };
+                const list = button.closest("ol")!;
+                const clip = button
+                  .closest(".editor-reading")!
+                  .getBoundingClientRect();
+                const facts = [
+                  ...list.querySelectorAll("li > strong, li > span"),
+                ].map((el) => {
+                  const r = el.getBoundingClientRect();
+                  return {
+                    left: r.left,
+                    right: r.right,
+                    top: r.top,
+                    bottom: r.bottom,
+                  };
+                });
+                return {
+                  ring,
+                  facts,
+                  width: parseFloat(style.outlineWidth),
+                  visible: button.matches(":focus-visible"),
+                  clip: {
+                    left: clip.left,
+                    right: clip.right,
+                    top: clip.top,
+                    bottom: clip.bottom,
+                  },
+                };
+              });
+              expect(paint.visible).toBe(true);
+              expect(paint.width).toBeGreaterThanOrEqual(2);
+              expect(paint.ring.left).toBeGreaterThanOrEqual(paint.clip.left);
+              expect(paint.ring.right).toBeLessThanOrEqual(paint.clip.right);
+              expect(paint.ring.top).toBeGreaterThanOrEqual(paint.clip.top);
+              expect(paint.ring.bottom).toBeLessThanOrEqual(paint.clip.bottom);
+              for (const fact of paint.facts) {
+                expect(
+                  paint.ring.right + 2 <= fact.left ||
+                    paint.ring.left - 2 >= fact.right ||
+                    paint.ring.bottom + 2 <= fact.top ||
+                    paint.ring.top - 2 >= fact.bottom,
+                ).toBe(true);
+              }
+              expect(await canonical()).toEqual(formed!);
+            },
+          },
+        ],
+        views: [
+          {
+            page: owner,
+            player: aliases[0],
+            surface: "game",
+            primary: [control, send],
+          },
+        ],
+      });
+    }
     await story.step("reorder-remove-waypoint", {
       actor: aliases[0],
       description:
@@ -606,6 +699,67 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
       verifications: [privacy],
       views: views(),
     });
+    for (const [position, key, label] of [
+      ["top", "Home", "Fleet transport manifest"],
+      ["bottom", "End", "Route waypoints"],
+    ]) {
+      const reading = planner.getByRole("region", {
+        name: "Route details",
+        exact: true,
+      });
+      let pageY = 0;
+      await story.step(`read-accepted-${position}`, {
+        actor: aliases[0],
+        description: `Use ${key} in the bounded manifest to read the accepted fleet ${position}, without moving the page or issuing another order.`,
+        action: async () => {
+          await reading.focus();
+          pageY = await owner.evaluate(() => scrollY);
+          await reading.press(key);
+        },
+        acknowledgement: {
+          spec: "The selected reading extent is reached inside the manifest.",
+          check: async () => {
+            await expect
+              .poll(() =>
+                reading.evaluate((el) => ({
+                  top: el.scrollTop,
+                  end: el.scrollHeight - el.clientHeight - el.scrollTop,
+                })),
+              )
+              .toMatchObject(position === "top" ? { top: 0 } : { end: 0 });
+          },
+        },
+        verifications: [
+          privacy,
+          {
+            spec: "Complete counts or accepted waypoint text are contained, with the same accepted command and unchanged document scroll.",
+            check: async () => {
+              const target =
+                position === "top"
+                  ? reading.getByRole("region", { name: label })
+                  : reading.getByRole("list", { name: label });
+              const a = await target.boundingBox(),
+                b = await reading.boundingBox();
+              expect(a!.y).toBeGreaterThanOrEqual(b!.y);
+              expect(a!.y + a!.height).toBeLessThanOrEqual(b!.y + b!.height);
+              expect(await owner.evaluate(() => scrollY)).toBe(pageY);
+              if (position === "top")
+                await expect(target).toContainText("20 / 20 infantry");
+              else await expect(target).toContainText(targetName);
+              expect(await canonical()).toEqual(accepted!);
+            },
+          },
+        ],
+        views: [
+          {
+            page: owner,
+            player: aliases[0],
+            surface: "game",
+            primary: [reading],
+          },
+        ],
+      });
+    }
     await story.step("recover-same-dispatch", {
       actor: aliases[0],
       description:
