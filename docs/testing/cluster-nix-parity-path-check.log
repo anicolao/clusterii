@@ -1,0 +1,20 @@
+openjdk version "21.0.11" 2026-04-21 LTS
+OpenJDK Runtime Environment Zulu21.50+19-CA (build 21.0.11+10-LTS)
+OpenJDK 64-Bit Server VM Zulu21.50+19-CA (build 21.0.11+10-LTS, mixed mode, sharing)
+v24.18.0
+1.3.13
+Previous story evidence preserved at /tmp/nix-shell.7EGKfm/cluster-cohort-test-4rGAuG/.story-cohorts-kSRLNv/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.7EGKfm/cluster-cohort-test-4rGAuG/.story-cohorts-kSRLNv/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (9.526875ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.559541ms)
+✔ interruption retains current artifacts and launches no successor (1.960125ms)
+✔ an artifact path collision fails rather than overwriting either result (11.667458ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (2.077416ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 78.614542
