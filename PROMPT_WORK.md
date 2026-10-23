@@ -855,3 +855,5 @@ Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | 
 Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | Archive corrected real admission and shared faction candidates with exact provenance, visual comparison and scoped reviewer checkpoints.
 
 Prompt 180 | e51a5b9a5e66d8f7d811c9b69d5e2120dc1bc0d1e78de18afa6d783e5b92b22b | Move admission chapter controls outside bounded scrolling after the preserved short rules-overlap failure, keeping geometry guards unchanged.
+
+Prompt 180 | e51a5b9a5e66d8f7d811c9b69d5e2120dc1bc0d1e78de18afa6d783e5b92b22b | Correct the backdrop content height found in passing short reading evidence; preserve the full prior family before changed-source capture.

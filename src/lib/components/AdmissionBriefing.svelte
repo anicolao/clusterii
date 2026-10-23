@@ -46,7 +46,7 @@
   .admission-briefing {
     position: relative;
     isolation: isolate;
-    flex: 1;
+    flex: 1 0 auto;
     min-height: 100%;
     padding: 32px 5%;
     display: flex;
