@@ -828,3 +828,5 @@ Prompt 158 | 2b474c792dc523c0dd989ee5e15ea75712904fac4360c25368c7ee553d76f6a5 | 
 Prompt 158 | 2b474c792dc523c0dd989ee5e15ea75712904fac4360c25368c7ee553d76f6a5 | Archive108 source-matched aftermath candidates, reconcile12:32 review and classified Linux retention evidence without baseline promotion.
 
 Prompt 159 | 029afc87a1b9f89812fda66457e41b832c080ef6acdaa756b9520a5171b05e83 | Preserve corrected108-image compact outcome family and48 unchanged full-size captures after eight passing Nix journeys, pending independent review.
+
+Prompt 160 | 5d77cf21d3a3bcd97eac47aa106ed35686712c786ea80bb8b23211d7e178e06e | Retain four passing science-clearance journeys and24 image hashes, documenting disk collapse and failed stop attempt after process completion.
