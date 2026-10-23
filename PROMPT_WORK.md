@@ -776,3 +776,5 @@ Prompt 146 | 1a80fd97dbdfe603fc7ce8fd7141893ad8acea46098a7fc1148d51dc479091ce | 
 Prompt 146 | 1a80fd97dbdfe603fc7ce8fd7141893ad8acea46098a7fc1148d51dc479091ce | Retain forty field-guide candidates from eight passing Nix journeys and document independent visual and publication gates.
 
 Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | Correct the semantic meter closing tag before the first source-paired fleet review execution.
+
+Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | Preserve first four-size fleet evidence and remove the cropped inert commander deck during fleet instrumentation.

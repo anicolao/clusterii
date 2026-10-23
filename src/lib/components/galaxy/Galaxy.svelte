@@ -1002,6 +1002,7 @@
   {:else}
     <header
       class="command-rail"
+      class:fleet-instrument-open={military}
       bind:offsetHeight={commandRailHeight}
       inert={more ||
         roster ||
@@ -1684,6 +1685,9 @@
 </div>
 
 <style>
+  .command-rail.fleet-instrument-open .commander-presence {
+    visibility: hidden;
+  }
   .construction-panel {
     position: absolute;
     inset: 58px 0 0;

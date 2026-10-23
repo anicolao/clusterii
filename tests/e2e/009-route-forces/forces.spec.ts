@@ -301,6 +301,9 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
               formed!.economy!.ledger[uid].infantry,
           );
           await expect(send).toBeDisabled();
+          await expect(
+            owner.locator(".command-rail .commander-presence"),
+          ).toBeHidden();
         },
       },
       verifications: [
