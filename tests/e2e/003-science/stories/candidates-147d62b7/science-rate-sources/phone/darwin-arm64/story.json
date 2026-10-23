@@ -1,0 +1,373 @@
+{
+  "id": "science-rate-sources",
+  "title": "Read science capacity separately from delivered output",
+  "inventory": [
+    "UX-03",
+    "UX-08",
+    "UX-16"
+  ],
+  "description": "Four ordinary players start a real campaign. The owner opens the private science source ledger, queues Innovation and recovers the earned new capacity separately from delivered science. Demo catalogue/admission/research clock and leased tick delivery are explicitly labelled harness controls; no stored state is injected.",
+  "source": {
+    "commit": "147d62b7c9d6d369ad65b70f309b2c1f35e9a72b",
+    "dirty": false,
+    "spec": "tests/e2e/003-science/science.spec.ts",
+    "specSha256": "c5a5b30f7ae0ae68a031f30fefa85d803134b40a2c06c8ffedab41a823fe2ecc"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduled-start",
+      "description": "Deliver the real Scheduler HTTP request at the designated browser/domain boundary; no campaign or membership writes. This is not hosted cadence certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-private-sources",
+      "description": "Open the real per-tick rail control on both independent accounts. Current capacity exists before the first delivered output.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Both authorized ledgers acknowledge tick0, current1.4 capacity and their own completed station.",
+      "verifications": [
+        "The two ordinary views name different owned orbital sources, and no historical output is substituted for capacity."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "010-inspect-private-sources-1-chart-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "010-inspect-private-sources-2-tidal-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "commit-innovation",
+      "description": "Return to the same galaxy and queue Innovation through ordinary research controls. Capacity remains1.4 until the level is earned.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The actual research receipt accepts Innovation for tick1.",
+      "verifications": [
+        "The peer remains at its own initial rate and source while the owner order is accepted."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "011-commit-innovation-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "deliver-earned-level",
+      "description": "Existing guarded demo clock and fifteen real leased ticks, concurrent/repeated delivery. No levels, resources or private projections injected; not hosted Scheduler certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "read-earned-capacity",
+      "description": "Reload both accounts and inspect the earned new rate separately from tick15 output. The peer retains its independent sources and rate.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Authoritative tick15 supplies owner1.404 capacity while last delivered science is1.4; peer remains1.4.",
+      "verifications": [
+        "Source identity and peer ownership remain isolated through reload; lower totals stay inside the reading viewport."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "013-read-earned-capacity-1-chart-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "013-read-earned-capacity-2-tidal-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earned-normal-ledger",
+      "description": "Reload the existing acknowledged campaign with normal motion, open its actual science rail using Enter, then Tab into the bounded ledger. No campaign command is sent.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The mounted private ledger recovers the confirmed tick, current capacity and delivered output under the selected motion preference.",
+      "verifications": [
+        "Authorized rates, delivered output, source ownership and accepted command state remain unchanged by local reading or motion preference.",
+        "Top basis and primary Return remain fully inside their clipping ancestors; keyboard reading does not move the game document."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "014-earned-normal-ledger-1-chart-envoy.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "014-earned-normal-ledger-2-tidal-envoy.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "earned-normal-totals",
+      "description": "Press End in the focused ledger to read delivered science and assumptions, while the return action remains available.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Keyboard reading reaches the actual delivered total without changing the acknowledged rate or server facts.",
+      "verifications": [
+        "Authorized rates, delivered output, source ownership and accepted command state remain unchanged by local reading or motion preference.",
+        "Delivered total and Return are contained before capture; only the bounded reading region scrolls."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "015-earned-normal-totals-1-chart-envoy.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "015-earned-normal-totals-2-tidal-envoy.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "earned-normal-return",
+      "description": "Home returns the same reading region to its basis, then Escape closes the ledger and restores its real rail opener.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The ledger closes and focus returns to the science resource control, without sending a command.",
+      "verifications": [
+        "Authorized rates, delivered output, source ownership and accepted command state remain unchanged by local reading or motion preference."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "016-earned-normal-return-1-chart-envoy.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "016-earned-normal-return-2-tidal-envoy.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "earned-reduced-ledger",
+      "description": "Reload the existing acknowledged campaign with reduced motion, open its actual science rail using Enter, then Tab into the bounded ledger. No campaign command is sent.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The mounted private ledger recovers the confirmed tick, current capacity and delivered output under the selected motion preference.",
+      "verifications": [
+        "Authorized rates, delivered output, source ownership and accepted command state remain unchanged by local reading or motion preference.",
+        "Top basis and primary Return remain fully inside their clipping ancestors; keyboard reading does not move the game document."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "017-earned-reduced-ledger-1-chart-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "017-earned-reduced-ledger-2-tidal-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earned-reduced-totals",
+      "description": "Press End in the focused ledger to read delivered science and assumptions, while the return action remains available.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Keyboard reading reaches the actual delivered total without changing the acknowledged rate or server facts.",
+      "verifications": [
+        "Authorized rates, delivered output, source ownership and accepted command state remain unchanged by local reading or motion preference.",
+        "Delivered total and Return are contained before capture; only the bounded reading region scrolls."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "018-earned-reduced-totals-1-chart-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "018-earned-reduced-totals-2-tidal-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earned-reduced-return",
+      "description": "Home returns the same reading region to its basis, then Return to galaxy closes the ledger and restores its real rail opener.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The ledger closes and focus returns to the science resource control, without sending a command.",
+      "verifications": [
+        "Authorized rates, delivered output, source ownership and accepted command state remain unchanged by local reading or motion preference."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "019-earned-reduced-return-1-chart-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "019-earned-reduced-return-2-tidal-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "deliver-following-tick",
+      "description": "One real leased following tick applies the already-earned Innovation level; repeated delivery remains empty.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "recover-delivered-rate",
+      "description": "Recover tick16 after reload, read the actual1.404 delivery, then retain the same authoritative source and current rate.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The new rate is now also the actual delivered output at confirmed tick16.",
+      "verifications": [
+        "Reload preserves source ownership and does not alter the accepted command identity."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "021-recover-delivered-rate-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

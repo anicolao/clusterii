@@ -1,0 +1,3758 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: e2e/003-science/components.spec.ts >> Read shared science ledger in gallery and lab
+- Location: tests/e2e/003-science/components.spec.ts:5:1
+
+# Error details
+
+```
+Error: The entire reading target and both corners remain usable inside every clipping ancestor
+
+The entire reading target and both corners remain usable inside every clipping ancestor
+
+expect(received).toMatchObject(expected)
+
+- Expected  - 1
++ Received  + 1
+
+  Object {
+-   "contained": true,
++   "contained": false,
+    "hits": true,
+  }
+
+Call Log:
+- Timeout 10000ms exceeded while waiting on the predicate
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Local presentation controls" [ref=e3]:
+    - button "Menu" [ref=e4] [cursor=pointer]
+  - generic [ref=e5]:
+    - banner [ref=e6]:
+      - paragraph [ref=e7]: Developer review
+      - heading "Production component gallery" [level=1] [ref=e8]
+      - paragraph [ref=e9]: These are the same components used by the entry and identity screens. Tab to inspect real keyboard focus; select portraits and activate controls. Samples do not submit game commands.
+      - navigation [ref=e10]:
+        - link "Animation lab" [ref=e11] [cursor=pointer]:
+          - /url: /clusterii/pr4/dev/animations/
+        - link "Player entry" [ref=e12] [cursor=pointer]:
+          - /url: /clusterii/pr4/
+    - button "Use phone-width specimens" [ref=e13] [cursor=pointer]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - heading "Illustrated navigation" [level=2] [ref=e16]
+        - button "Play" [ref=e17] [cursor=pointer]:
+          - generic [ref=e18]: Play
+          - generic [ref=e19]: ›
+        - button "Learn the game" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Learn the game
+          - generic [ref=e22]: ›
+        - button "Continue The Cygnus Compact" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]:
+            - text: Continue
+            - generic [ref=e25]: The Cygnus Compact
+          - generic [ref=e26]: ›
+        - button "Opening the gates…" [disabled] [ref=e27]:
+          - generic [ref=e28]: Opening the gates…
+          - generic [ref=e29]: ›
+        - paragraph [ref=e30]: 44 px minimum targets; illustrated entry controls scale at phone and 4K breakpoints.
+      - generic [ref=e31]:
+        - heading "Actions and focus" [level=2] [ref=e32]
+        - generic "Chapters" [ref=e33]:
+          - button "The galaxy" [ref=e34] [cursor=pointer]
+          - button "Conquest" [ref=e36] [cursor=pointer]
+          - button "Your empire" [ref=e38] [cursor=pointer]
+          - button "Diplomacy" [ref=e40] [cursor=pointer]
+        - generic [ref=e42]:
+          - button "primary action" [ref=e43] [cursor=pointer]:
+            - text: primary action
+            - generic [ref=e44]: →
+          - button "primary disabled" [disabled] [ref=e45]
+        - generic [ref=e46]:
+          - button "secondary action" [ref=e47] [cursor=pointer]:
+            - text: secondary action
+            - generic [ref=e48]: →
+          - button "secondary disabled" [disabled] [ref=e49]
+        - generic [ref=e50]:
+          - button "quiet action" [ref=e51] [cursor=pointer]: quiet action →
+          - button "quiet disabled" [disabled] [ref=e52]
+        - button "Awaiting acknowledgement…" [disabled] [ref=e53]
+        - status [ref=e54]: Activated 0 controls
+      - generic [ref=e55]:
+        - heading "Identity fields" [level=2] [ref=e56]
+        - generic [ref=e57]:
+          - generic [ref=e58]: Commander name
+          - textbox "Commander name" [ref=e59]: The envoy
+        - generic [ref=e60]:
+          - generic [ref=e61]: Commander name
+          - textbox "Commander name" [invalid] [ref=e62]: AAAAAAAAAAAAAAAAAAAAAAAAA
+          - alert [ref=e64]: Choose a name of 2–24 characters and a portrait.
+        - generic [ref=e65]:
+          - generic [ref=e66]: Commander name
+          - textbox "Commander name" [disabled] [ref=e67]: Pending draft
+        - group "Choose your portrait" [ref=e68]:
+          - generic [ref=e69]: Choose your portrait
+          - generic [ref=e70]:
+            - generic "The envoy" [ref=e71] [cursor=pointer]:
+              - radio "The envoy" [ref=e72]
+              - generic [ref=e74]: The envoy
+            - generic "The navigator" [ref=e75] [cursor=pointer]:
+              - radio "The navigator" [ref=e76]
+              - generic [ref=e78]: The navigator
+            - generic "The tidekeeper" [ref=e79] [cursor=pointer]:
+              - radio "The tidekeeper" [ref=e80]
+              - generic [ref=e82]: The tidekeeper
+            - generic "The deepseer" [ref=e83] [cursor=pointer]:
+              - radio "The deepseer" [checked] [ref=e84]
+              - generic [ref=e86]: The deepseer
+              - generic [ref=e87]: ✓
+            - generic "The architect" [ref=e88] [cursor=pointer]:
+              - radio "The architect" [ref=e89]
+              - generic [ref=e91]: The architect
+            - generic "The scholar" [ref=e92] [cursor=pointer]:
+              - radio "The scholar" [ref=e93]
+              - generic [ref=e95]: The scholar
+            - generic "The marshal" [ref=e96] [cursor=pointer]:
+              - radio "The marshal" [ref=e97]
+              - generic [ref=e99]: The marshal
+            - generic "The emissary" [ref=e100] [cursor=pointer]:
+              - radio "The emissary" [ref=e101]
+              - generic [ref=e103]: The emissary
+        - group "Choose your portrait" [ref=e104]:
+          - generic [ref=e105]: Choose your portrait
+          - generic [ref=e106]:
+            - generic "The envoy" [ref=e107] [cursor=pointer]:
+              - radio "The envoy" [checked] [disabled] [ref=e108]
+              - generic [ref=e110]: The envoy
+              - generic [ref=e111]: ✓
+            - generic "The navigator" [ref=e112] [cursor=pointer]:
+              - radio "The navigator" [disabled] [ref=e113]
+              - generic [ref=e115]: The navigator
+            - generic "The tidekeeper" [ref=e116] [cursor=pointer]:
+              - radio "The tidekeeper" [disabled] [ref=e117]
+              - generic [ref=e119]: The tidekeeper
+            - generic "The deepseer" [ref=e120] [cursor=pointer]:
+              - radio "The deepseer" [disabled] [ref=e121]
+              - generic [ref=e123]: The deepseer
+            - generic "The architect" [ref=e124] [cursor=pointer]:
+              - radio "The architect" [disabled] [ref=e125]
+              - generic [ref=e127]: The architect
+            - generic "The scholar" [ref=e128] [cursor=pointer]:
+              - radio "The scholar" [disabled] [ref=e129]
+              - generic [ref=e131]: The scholar
+            - generic "The marshal" [ref=e132] [cursor=pointer]:
+              - radio "The marshal" [disabled] [ref=e133]
+              - generic [ref=e135]: The marshal
+            - generic "The emissary" [ref=e136] [cursor=pointer]:
+              - radio "The emissary" [disabled] [ref=e137]
+              - generic [ref=e139]: The emissary
+      - generic [ref=e140]:
+        - heading "Feedback and recovery" [level=2] [ref=e141]
+        - alert [ref=e143]: This acknowledgement does not match your order. Your draft is preserved. Review it and submit again.
+        - status [ref=e145]: Sending your identity…
+        - status [ref=e147]: Identity saved. Your next campaign will know you by this name.
+        - alert [ref=e149]: Another device changed your identity. Your draft is preserved. Save again to replace that version.
+        - generic [ref=e150]:
+          - alert [ref=e151]: Your connection was interrupted. Reconnect to recover updates; your draft is preserved.
+          - button "Reconnect" [ref=e152] [cursor=pointer]
+      - generic [ref=e153]:
+        - heading "Faction selection" [level=2] [ref=e154]
+        - paragraph [ref=e155]: Production faction art, selected radios and quota-disabled seats. These deterministic reducer specimens never enter a live campaign.
+        - region "Choose your faction" [ref=e156]:
+          - generic [ref=e158]:
+            - paragraph [ref=e159]: Four peoples. A shared galaxy.
+            - heading "Choose your faction" [level=1] [ref=e160]
+            - group "Faction" [ref=e161]:
+              - generic [ref=e162]: Faction
+              - generic [ref=e163]:
+                - generic [ref=e164]:
+                  - radio "Pelagic Concord 0 seats open" [disabled] [ref=e165]
+                  - generic [ref=e167]:
+                    - text: Pelagic Concord
+                    - generic [ref=e168]: 0 seats open
+                - generic [ref=e169] [cursor=pointer]:
+                  - radio "Heliac Assembly 1 seat open" [ref=e170]
+                  - generic [ref=e172]:
+                    - text: Heliac Assembly
+                    - generic [ref=e173]: 1 seat open
+                - generic [ref=e174] [cursor=pointer]:
+                  - radio "Vesper Synod 1 seat open" [ref=e175]
+                  - generic [ref=e177]:
+                    - text: Vesper Synod
+                    - generic [ref=e178]: 1 seat open
+                - generic [ref=e179] [cursor=pointer]:
+                  - radio "Dracon League 1 seat open" [ref=e180]
+                  - generic [ref=e182]:
+                    - text: Dracon League
+                    - generic [ref=e183]: 1 seat open
+            - article [ref=e184]:
+              - heading "Heliac Assembly" [level=2] [ref=e185]
+              - paragraph [ref=e186]: G-class affinity
+              - paragraph [ref=e187]: Lead the humanoid civilization. Your favored stars produce 1.4× resources. Affinity changes production, never combat strength.
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - term [ref=e190]: M class
+                  - definition [ref=e191]: 1×
+                - generic [ref=e192]:
+                  - term [ref=e193]: G class
+                  - definition [ref=e194]: 1.4×
+                - generic [ref=e195]:
+                  - term [ref=e196]: A class
+                  - definition [ref=e197]: 1×
+                - generic [ref=e198]:
+                  - term [ref=e199]: O class
+                  - definition [ref=e200]: 0.8×
+        - heading "Pending selection" [level=3] [ref=e201]
+        - region "Choose your faction" [ref=e202]:
+          - generic [ref=e204]:
+            - paragraph [ref=e205]: Four peoples. A shared galaxy.
+            - heading "Choose your faction" [level=1] [ref=e206]
+            - group "Faction" [ref=e207]:
+              - generic [ref=e208]: Faction
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - radio "Pelagic Concord 0 seats open" [disabled] [ref=e211]
+                  - generic [ref=e213]:
+                    - text: Pelagic Concord
+                    - generic [ref=e214]: 0 seats open
+                - generic [ref=e215]:
+                  - radio "Heliac Assembly 1 seat open" [checked] [disabled] [ref=e216]
+                  - generic [ref=e218]:
+                    - text: Heliac Assembly
+                    - generic [ref=e219]: 1 seat open
+                - generic [ref=e220]:
+                  - radio "Vesper Synod 1 seat open" [disabled] [ref=e221]
+                  - generic [ref=e223]:
+                    - text: Vesper Synod
+                    - generic [ref=e224]: 1 seat open
+                - generic [ref=e225]:
+                  - radio "Dracon League 1 seat open" [disabled] [ref=e226]
+                  - generic [ref=e228]:
+                    - text: Dracon League
+                    - generic [ref=e229]: 1 seat open
+            - article [ref=e230]:
+              - heading "Heliac Assembly" [level=2] [ref=e231]
+              - paragraph [ref=e232]: G-class affinity
+              - paragraph [ref=e233]: Lead the humanoid civilization. Your favored stars produce 1.4× resources. Affinity changes production, never combat strength.
+              - generic [ref=e234]:
+                - generic [ref=e235]:
+                  - term [ref=e236]: M class
+                  - definition [ref=e237]: 1×
+                - generic [ref=e238]:
+                  - term [ref=e239]: G class
+                  - definition [ref=e240]: 1.4×
+                - generic [ref=e241]:
+                  - term [ref=e242]: A class
+                  - definition [ref=e243]: 1×
+                - generic [ref=e244]:
+                  - term [ref=e245]: O class
+                  - definition [ref=e246]: 0.8×
+      - generic [ref=e247]:
+        - heading "Stationed fleets · shared manifest and icon" [level=2] [ref=e248]
+        - img [ref=e249]
+        - text: Fleet
+        - region "Fleet preparation" [ref=e253]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e254]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e255]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e258]:
+            - navigation "Stationed fleets" [ref=e259]:
+              - button "New fleet" [pressed] [ref=e260] [cursor=pointer]
+            - heading "Assemble a fleet" [level=3] [ref=e261]
+            - paragraph [ref=e262]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e265]: "1"
+                - generic [ref=e266]: 20 available · 0 reserved
+              - generic [ref=e267]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e268]: "0"
+                - generic [ref=e269]: 20 available · 0 reserved
+            - paragraph [ref=e270]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e271]:
+              - heading "Accepted orders" [level=3] [ref=e272]
+              - paragraph [ref=e273]: No fleet orders are waiting.
+          - generic [ref=e275]:
+            - button "Back to system" [ref=e276] [cursor=pointer]
+            - button "Form fleet" [ref=e277] [cursor=pointer]
+        - region "Fleet preparation" [ref=e279]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e280]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e281]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e284]:
+            - navigation "Stationed fleets" [ref=e285]:
+              - button "New fleet" [pressed] [ref=e286] [cursor=pointer]
+            - heading "Assemble a fleet" [level=3] [ref=e287]
+            - paragraph [ref=e288]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e291]: "1"
+                - generic [ref=e292]: 18 available · 2 reserved
+              - generic [ref=e293]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e294]: "0"
+                - generic [ref=e295]: 10 available · 10 reserved
+            - paragraph [ref=e296]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e297]:
+              - heading "Accepted orders" [level=3] [ref=e298]
+              - paragraph [ref=e299]: Form · 2 fighters · 10 infantry · tick 1
+              - button "Review cancellation · order 1" [ref=e300] [cursor=pointer]
+          - generic [ref=e301]:
+            - status [ref=e304]: Awaiting acknowledgement…
+            - generic [ref=e305]:
+              - button "Back to system" [ref=e306] [cursor=pointer]
+              - button "Form fleet" [disabled] [ref=e307]
+        - region "Fleet preparation" [ref=e309]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e310]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e311]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e314]:
+            - navigation "Stationed fleets" [ref=e315]:
+              - button "New fleet" [pressed] [ref=e316] [cursor=pointer]
+            - heading "Assemble a fleet" [level=3] [ref=e317]
+            - paragraph [ref=e318]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e319]:
+              - generic [ref=e320]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e321]: "1"
+                - generic [ref=e322]: 18 available · 2 reserved
+              - generic [ref=e323]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e324]: "0"
+                - generic [ref=e325]: 10 available · 10 reserved
+            - paragraph [ref=e326]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e327]:
+              - heading "Accepted orders" [level=3] [ref=e328]
+              - paragraph [ref=e329]: Form · 2 fighters · 10 infantry · tick 1
+              - button "Review cancellation · order 1" [ref=e330] [cursor=pointer]
+          - generic [ref=e331]:
+            - alert [ref=e334]: The connection was interrupted. Your manifest and pending order are preserved.
+            - generic [ref=e335]:
+              - button "Back to system" [ref=e336] [cursor=pointer]
+              - button "Check fleet order" [ref=e337] [cursor=pointer]
+        - region "Fleet preparation" [ref=e339]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e340]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e341]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e344]:
+            - navigation "Stationed fleets" [ref=e345]:
+              - button "New fleet" [pressed] [ref=e346] [cursor=pointer]
+            - heading "Assemble a fleet" [level=3] [ref=e347]
+            - paragraph [ref=e348]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e349]:
+              - generic [ref=e350]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e351]: "1"
+                - generic [ref=e352]: 18 available · 2 reserved
+              - generic [ref=e353]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e354]: "0"
+                - generic [ref=e355]: 10 available · 10 reserved
+            - paragraph [ref=e356]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e357]:
+              - heading "Accepted orders" [level=3] [ref=e358]
+              - paragraph [ref=e359]: Form · 2 fighters · 10 infantry · tick 1
+              - button "Review cancellation · order 1" [ref=e360] [cursor=pointer]
+          - generic [ref=e361]:
+            - paragraph [ref=e363]: Paused for development maintenance.
+            - generic [ref=e364]:
+              - button "Back to system" [ref=e365] [cursor=pointer]
+              - button "Form fleet" [disabled] [ref=e366]
+        - region "Fleet preparation" [ref=e368]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e369]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e370]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e373]:
+            - navigation "Stationed fleets" [ref=e374]:
+              - button "New fleet" [pressed] [ref=e375] [cursor=pointer]
+              - button "Fleet 7" [ref=e376] [cursor=pointer]
+            - status [ref=e377]: Fleet formed · 2 fighters · 10 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e378]
+            - paragraph [ref=e379]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e380]:
+              - generic [ref=e381]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e382]: "1"
+                - generic [ref=e383]: 19 available · 0 reserved
+              - generic [ref=e384]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e385]: "0"
+                - generic [ref=e386]: 11 available · 0 reserved
+            - paragraph [ref=e387]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e388]:
+              - heading "Accepted orders" [level=3] [ref=e389]
+              - paragraph [ref=e390]: No fleet orders are waiting.
+          - generic [ref=e392]:
+            - button "Back to system" [ref=e393] [cursor=pointer]
+            - button "Form fleet" [ref=e394] [cursor=pointer]
+        - heading "Fleet cargo · shared load and unload controls" [level=2] [ref=e395]
+        - paragraph [ref=e396]: Select the stationed fleet, then Load or Unload to inspect the manifest controls in each state.
+        - heading "Cargo · ready" [level=3] [ref=e397]
+        - region "Fleet preparation" [ref=e399]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e400]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e401]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e404]:
+            - navigation "Stationed fleets" [ref=e405]:
+              - button "New fleet" [pressed] [ref=e406] [cursor=pointer]
+              - button "Fleet 7" [ref=e407] [cursor=pointer]
+            - status [ref=e408]: Fleet formed · 2 fighters · 10 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e409]
+            - paragraph [ref=e410]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e411]:
+              - generic [ref=e412]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e413]: "1"
+                - generic [ref=e414]: 19 available · 0 reserved
+              - generic [ref=e415]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e416]: "0"
+                - generic [ref=e417]: 11 available · 0 reserved
+            - paragraph [ref=e418]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e419]:
+              - heading "Accepted orders" [level=3] [ref=e420]
+              - paragraph [ref=e421]: No fleet orders are waiting.
+          - generic [ref=e423]:
+            - button "Back to system" [ref=e424] [cursor=pointer]
+            - button "Form fleet" [ref=e425] [cursor=pointer]
+        - heading "Cargo · pending" [level=3] [ref=e426]
+        - region "Fleet preparation" [ref=e428]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e429]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e430]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e433]:
+            - navigation "Stationed fleets" [ref=e434]:
+              - button "New fleet" [pressed] [ref=e435] [cursor=pointer]
+              - button "Fleet 7" [ref=e436] [cursor=pointer]
+            - status [ref=e437]: Fleet formed · 2 fighters · 10 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e438]
+            - paragraph [ref=e439]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e440]:
+              - generic [ref=e441]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e442]: "1"
+                - generic [ref=e443]: 19 available · 0 reserved
+              - generic [ref=e444]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e445]: "0"
+                - generic [ref=e446]: 8 available · 3 reserved
+            - paragraph [ref=e447]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e448]:
+              - heading "Accepted orders" [level=3] [ref=e449]
+              - paragraph [ref=e450]: Load · 3 infantry · tick 2
+              - button "Review cancellation · order 1" [ref=e451] [cursor=pointer]
+          - generic [ref=e452]:
+            - status [ref=e455]: Awaiting acknowledgement…
+            - generic [ref=e456]:
+              - button "Back to system" [ref=e457] [cursor=pointer]
+              - button "Form fleet" [disabled] [ref=e458]
+        - heading "Cargo · error" [level=3] [ref=e459]
+        - region "Fleet preparation" [ref=e461]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e462]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e463]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e466]:
+            - navigation "Stationed fleets" [ref=e467]:
+              - button "New fleet" [pressed] [ref=e468] [cursor=pointer]
+              - button "Fleet 7" [ref=e469] [cursor=pointer]
+            - status [ref=e470]: Fleet formed · 2 fighters · 10 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e471]
+            - paragraph [ref=e472]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e473]:
+              - generic [ref=e474]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e475]: "1"
+                - generic [ref=e476]: 19 available · 0 reserved
+              - generic [ref=e477]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e478]: "0"
+                - generic [ref=e479]: 8 available · 3 reserved
+            - paragraph [ref=e480]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e481]:
+              - heading "Accepted orders" [level=3] [ref=e482]
+              - paragraph [ref=e483]: Load · 3 infantry · tick 2
+              - button "Review cancellation · order 1" [ref=e484] [cursor=pointer]
+          - generic [ref=e485]:
+            - alert [ref=e488]: The connection was interrupted. Your cargo and pending order are preserved.
+            - generic [ref=e489]:
+              - button "Back to system" [ref=e490] [cursor=pointer]
+              - button "Check fleet order" [ref=e491] [cursor=pointer]
+        - heading "Cargo · paused" [level=3] [ref=e492]
+        - region "Fleet preparation" [ref=e494]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e495]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e496]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e499]:
+            - navigation "Stationed fleets" [ref=e500]:
+              - button "New fleet" [pressed] [ref=e501] [cursor=pointer]
+              - button "Fleet 7" [ref=e502] [cursor=pointer]
+            - status [ref=e503]: Fleet formed · 2 fighters · 10 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e504]
+            - paragraph [ref=e505]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e506]:
+              - generic [ref=e507]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e508]: "1"
+                - generic [ref=e509]: 19 available · 0 reserved
+              - generic [ref=e510]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e511]: "0"
+                - generic [ref=e512]: 8 available · 3 reserved
+            - paragraph [ref=e513]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e514]:
+              - heading "Accepted orders" [level=3] [ref=e515]
+              - paragraph [ref=e516]: Load · 3 infantry · tick 2
+              - button "Review cancellation · order 1" [ref=e517] [cursor=pointer]
+          - generic [ref=e518]:
+            - paragraph [ref=e520]: Paused for development maintenance.
+            - generic [ref=e521]:
+              - button "Back to system" [ref=e522] [cursor=pointer]
+              - button "Form fleet" [disabled] [ref=e523]
+        - heading "Cargo · loaded" [level=3] [ref=e524]
+        - region "Fleet preparation" [ref=e526]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e527]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e528]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e531]:
+            - navigation "Stationed fleets" [ref=e532]:
+              - button "New fleet" [pressed] [ref=e533] [cursor=pointer]
+              - button "Fleet 7" [ref=e534] [cursor=pointer]
+            - status [ref=e535]: Infantry loaded · 3 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e536]
+            - paragraph [ref=e537]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e538]:
+              - generic [ref=e539]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e540]: "1"
+                - generic [ref=e541]: 20 available · 0 reserved
+              - generic [ref=e542]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e543]: "0"
+                - generic [ref=e544]: 9 available · 0 reserved
+            - paragraph [ref=e545]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e546]:
+              - heading "Accepted orders" [level=3] [ref=e547]
+              - paragraph [ref=e548]: No fleet orders are waiting.
+          - generic [ref=e550]:
+            - button "Back to system" [ref=e551] [cursor=pointer]
+            - button "Form fleet" [ref=e552] [cursor=pointer]
+        - heading "Fleet reorganization · shared split and merge controls" [level=2] [ref=e553]
+        - heading "Split · accepted" [level=3] [ref=e554]
+        - region "Fleet preparation" [ref=e556]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e557]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e558]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e561]:
+            - navigation "Stationed fleets" [ref=e562]:
+              - button "New fleet" [pressed] [ref=e563] [cursor=pointer]
+              - button "Fleet 7" [ref=e564] [cursor=pointer]
+            - status [ref=e565]: Fleet formed · 2 fighters · 10 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e566]
+            - paragraph [ref=e567]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e568]:
+              - generic [ref=e569]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e570]: "1"
+                - generic [ref=e571]: 19 available · 0 reserved
+              - generic [ref=e572]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e573]: "0"
+                - generic [ref=e574]: 11 available · 0 reserved
+            - paragraph [ref=e575]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e576]:
+              - heading "Accepted orders" [level=3] [ref=e577]
+              - paragraph [ref=e578]: Split · 1 fighters · 5 infantry · tick 2
+              - button "Review cancellation · order 1" [ref=e579] [cursor=pointer]
+          - generic [ref=e581]:
+            - button "Back to system" [ref=e582] [cursor=pointer]
+            - button "Form fleet" [ref=e583] [cursor=pointer]
+        - heading "Split · complete" [level=3] [ref=e584]
+        - region "Fleet preparation" [ref=e586]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e587]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e588]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e591]:
+            - navigation "Stationed fleets" [ref=e592]:
+              - button "New fleet" [pressed] [ref=e593] [cursor=pointer]
+              - button "Fleet 7" [ref=e594] [cursor=pointer]
+              - button "Fleet 9" [ref=e595] [cursor=pointer]
+            - status [ref=e596]: Fleet split · 1 fighters · 5 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e597]
+            - paragraph [ref=e598]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e599]:
+              - generic [ref=e600]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e601]: "1"
+                - generic [ref=e602]: 20 available · 0 reserved
+              - generic [ref=e603]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e604]: "0"
+                - generic [ref=e605]: 12 available · 0 reserved
+            - paragraph [ref=e606]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e607]:
+              - heading "Accepted orders" [level=3] [ref=e608]
+              - paragraph [ref=e609]: No fleet orders are waiting.
+          - generic [ref=e611]:
+            - button "Back to system" [ref=e612] [cursor=pointer]
+            - button "Form fleet" [ref=e613] [cursor=pointer]
+        - heading "Merge · accepted" [level=3] [ref=e614]
+        - region "Fleet preparation" [ref=e616]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e617]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e618]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e621]:
+            - navigation "Stationed fleets" [ref=e622]:
+              - button "New fleet" [pressed] [ref=e623] [cursor=pointer]
+              - button "Fleet 7" [ref=e624] [cursor=pointer]
+              - button "Fleet 9" [ref=e625] [cursor=pointer]
+            - status [ref=e626]: Fleet split · 1 fighters · 5 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e627]
+            - paragraph [ref=e628]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e629]:
+              - generic [ref=e630]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e631]: "1"
+                - generic [ref=e632]: 20 available · 0 reserved
+              - generic [ref=e633]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e634]: "0"
+                - generic [ref=e635]: 12 available · 0 reserved
+            - paragraph [ref=e636]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e637]:
+              - heading "Accepted orders" [level=3] [ref=e638]
+              - paragraph [ref=e639]: Merge · 1 fighters · 5 infantry · tick 3
+              - button "Review cancellation · order 1" [ref=e640] [cursor=pointer]
+          - generic [ref=e642]:
+            - button "Back to system" [ref=e643] [cursor=pointer]
+            - button "Form fleet" [ref=e644] [cursor=pointer]
+        - heading "Merge · complete" [level=3] [ref=e645]
+        - region "Fleet preparation" [ref=e647]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e648]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e649]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e652]:
+            - navigation "Stationed fleets" [ref=e653]:
+              - button "New fleet" [pressed] [ref=e654] [cursor=pointer]
+              - button "Fleet 7" [ref=e655] [cursor=pointer]
+            - status [ref=e656]: Fleets merged · 1 fighters · 5 infantry.
+            - heading "Assemble a fleet" [level=3] [ref=e657]
+            - paragraph [ref=e658]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e659]:
+              - generic [ref=e660]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e661]: "1"
+                - generic [ref=e662]: 22 available · 0 reserved
+              - generic [ref=e663]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e664]: "0"
+                - generic [ref=e665]: 14 available · 0 reserved
+            - paragraph [ref=e666]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e667]:
+              - heading "Accepted orders" [level=3] [ref=e668]
+              - paragraph [ref=e669]: No fleet orders are waiting.
+          - generic [ref=e671]:
+            - button "Back to system" [ref=e672] [cursor=pointer]
+            - button "Form fleet" [ref=e673] [cursor=pointer]
+        - heading "Invalid saved order · retry and explicit local discard" [level=2] [ref=e674]
+        - region "Saved order recovery" [ref=e675]:
+          - paragraph [ref=e676]: This browser · recovery record
+          - heading "Saved order needs review" [level=1] [ref=e677]
+          - alert [ref=e678]: This browser’s saved order could not be validated. It has not been replaced or resent.
+          - paragraph [ref=e679]: Forgetting this browser’s record does not cancel an order. An order already accepted by the campaign remains effective. Review the campaign’s history before placing another order.
+          - generic [ref=e680]:
+            - button "Forget this browser’s record" [ref=e681] [cursor=pointer]
+            - button "Retry order recovery" [ref=e682] [cursor=pointer]
+        - region "Saved order recovery" [ref=e683]:
+          - paragraph [ref=e684]: This browser · recovery record
+          - heading "Forget this saved record?" [level=1] [ref=e685]
+          - alert [ref=e686]: This browser’s saved order could not be validated. It has not been replaced or resent.
+          - paragraph [ref=e687]: Forgetting this browser’s record does not cancel an order. An order already accepted by the campaign remains effective. Review the campaign’s history before placing another order.
+          - generic [ref=e688]:
+            - button "Keep saved record" [ref=e689] [cursor=pointer]
+            - button "Confirm forgetting local record" [ref=e690] [cursor=pointer]
+        - heading "Browser drafts · recovery, conflict and saved" [level=2] [ref=e691]
+        - region "Private conversations" [ref=e694]:
+          - generic [ref=e695]:
+            - generic [ref=e698]:
+              - heading "Nacre talks" [level=2] [ref=e699]
+              - paragraph [ref=e700]: 2 participants · private membership
+              - generic [ref=e701]:
+                - button "Conversations" [ref=e702] [cursor=pointer]
+                - button "Participants" [ref=e703] [cursor=pointer]
+            - region "Conversation details" [ref=e704]:
+              - list "Authorized messages" [ref=e705]:
+                - listitem [ref=e706]:
+                  - generic [ref=e707]:
+                    - strong [ref=e709]: Envoy 1
+                    - generic [ref=e710]: Message 2
+                  - paragraph [ref=e711]: Can we discuss the systems near Nacre?
+              - paragraph [ref=e712]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e713] [cursor=pointer]
+            - generic [ref=e714]:
+              - generic "Draft recovery" [ref=e715]:
+                - status "Browser draft status" [ref=e716]: Recovering this browser’s draft…
+              - generic [ref=e717]:
+                - text: Message
+                - textbox "Message" [disabled] [ref=e718]: My text remains available while the saved draft is reviewed.
+              - generic [ref=e719]: 60 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e720]:
+                - button "Back to galaxy" [ref=e721] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e722]
+        - region "Private conversations" [ref=e725]:
+          - generic [ref=e726]:
+            - generic [ref=e729]:
+              - heading "Nacre talks" [level=2] [ref=e730]
+              - paragraph [ref=e731]: 2 participants · private membership
+              - generic [ref=e732]:
+                - button "Conversations" [ref=e733] [cursor=pointer]
+                - button "Participants" [ref=e734] [cursor=pointer]
+            - region "Conversation details" [ref=e735]:
+              - list "Authorized messages" [ref=e736]:
+                - listitem [ref=e737]:
+                  - generic [ref=e738]:
+                    - strong [ref=e740]: Envoy 1
+                    - generic [ref=e741]: Message 2
+                  - paragraph [ref=e742]: Can we discuss the systems near Nacre?
+              - paragraph [ref=e743]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e744] [cursor=pointer]
+            - generic [ref=e745]:
+              - generic "Draft recovery" [ref=e746]:
+                - status "Browser draft status" [ref=e747]: Draft saved on this browser.
+              - generic [ref=e748]:
+                - text: Message
+                - textbox "Message" [ref=e749]: My text remains available while the saved draft is reviewed.
+              - generic [ref=e750]: 60 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e751]:
+                - button "Back to galaxy" [ref=e752] [cursor=pointer]
+                - button "Send message" [ref=e753] [cursor=pointer]
+        - region "Private conversations" [ref=e756]:
+          - generic [ref=e757]:
+            - generic [ref=e760]:
+              - heading "Nacre talks" [level=2] [ref=e761]
+              - paragraph [ref=e762]: 2 participants · private membership
+              - generic [ref=e763]:
+                - button "Conversations" [ref=e764] [cursor=pointer]
+                - button "Participants" [ref=e765] [cursor=pointer]
+            - region "Conversation details" [ref=e766]:
+              - list "Authorized messages" [ref=e767]:
+                - listitem [ref=e768]:
+                  - generic [ref=e769]:
+                    - strong [ref=e771]: Envoy 1
+                    - generic [ref=e772]: Message 2
+                  - paragraph [ref=e773]: Can we discuss the systems near Nacre?
+              - paragraph [ref=e774]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e775] [cursor=pointer]
+            - generic [ref=e776]:
+              - generic "Draft recovery" [ref=e777]:
+                - alert [ref=e778]: This draft changed in another tab. Your text is preserved; review the saved draft before replacing it.
+                - button "Use saved draft" [ref=e779] [cursor=pointer]
+                - button "Replace saved draft with my text" [ref=e780] [cursor=pointer]
+              - generic [ref=e781]:
+                - text: Message
+                - textbox "Message" [ref=e782]: My text remains available while the saved draft is reviewed.
+              - generic [ref=e783]: 60 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e784]:
+                - button "Back to galaxy" [ref=e785] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e786]
+        - region "Private conversations" [ref=e789]:
+          - generic [ref=e790]:
+            - generic [ref=e793]:
+              - heading "Nacre talks" [level=2] [ref=e794]
+              - paragraph [ref=e795]: 2 participants · private membership
+              - generic [ref=e796]:
+                - button "Conversations" [ref=e797] [cursor=pointer]
+                - button "Participants" [ref=e798] [cursor=pointer]
+            - region "Conversation details" [ref=e799]:
+              - list "Authorized messages" [ref=e800]:
+                - listitem [ref=e801]:
+                  - generic [ref=e802]:
+                    - strong [ref=e804]: Envoy 1
+                    - generic [ref=e805]: Message 2
+                  - paragraph [ref=e806]: Can we discuss the systems near Nacre?
+              - paragraph [ref=e807]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e808] [cursor=pointer]
+            - generic [ref=e809]:
+              - generic "Draft recovery" [ref=e810]:
+                - status "Browser draft status" [ref=e811]: Saving draft on this browser…
+              - generic [ref=e812]:
+                - text: Message
+                - textbox "Message" [ref=e813]: My text remains available while the saved draft is reviewed.
+              - generic [ref=e814]: 60 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e815]:
+                - button "Back to galaxy" [ref=e816] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e817]
+        - region "Private conversations" [ref=e820]:
+          - generic [ref=e821]:
+            - generic [ref=e824]:
+              - heading "Nacre talks" [level=2] [ref=e825]
+              - paragraph [ref=e826]: 2 participants · private membership
+              - generic [ref=e827]:
+                - button "Conversations" [ref=e828] [cursor=pointer]
+                - button "Participants" [ref=e829] [cursor=pointer]
+            - region "Conversation details" [ref=e830]:
+              - list "Authorized messages" [ref=e831]:
+                - listitem [ref=e832]:
+                  - generic [ref=e833]:
+                    - strong [ref=e835]: Envoy 1
+                    - generic [ref=e836]: Message 2
+                  - paragraph [ref=e837]: Can we discuss the systems near Nacre?
+              - paragraph [ref=e838]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e839] [cursor=pointer]
+            - generic [ref=e840]:
+              - generic "Draft recovery" [ref=e841]:
+                - status "Browser draft status" [ref=e842]: Draft saved on this browser.
+              - generic [ref=e843]:
+                - text: Message
+                - textbox "Message" [ref=e844]: My text remains available while the saved draft is reviewed.
+              - generic [ref=e845]: 60 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e846]:
+                - button "Back to galaxy" [ref=e847] [cursor=pointer]
+                - button "Send message" [ref=e848] [cursor=pointer]
+        - heading "Commander identity · distinct seats in the same faction" [level=2] [ref=e849]
+        - region "Eight-seat commander identity" [ref=e850]:
+          - region "Private conversations" [ref=e852]:
+            - generic [ref=e853]:
+              - generic [ref=e856]:
+                - heading "Co-faction commanders" [level=2] [ref=e857]
+                - paragraph [ref=e858]: 2 participants · private membership
+                - generic [ref=e859]:
+                  - button "Conversations" [ref=e860] [cursor=pointer]
+                  - button "Participants" [ref=e861] [cursor=pointer]
+              - region "Conversation details" [ref=e862]:
+                - list "Authorized messages" [ref=e863]:
+                  - listitem [ref=e864]:
+                    - generic [ref=e865]:
+                      - strong [ref=e867]: Envoy 0
+                      - generic [ref=e868]: Message 1
+                    - paragraph [ref=e869]: Another commander with the same faction.
+                  - listitem [ref=e870]:
+                    - generic [ref=e871]:
+                      - strong [ref=e873]: You
+                      - generic [ref=e874]: Message 2
+                    - paragraph [ref=e875]: My own reply remains mine.
+                - paragraph [ref=e876]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+                - button "Mark loaded messages read" [ref=e877] [cursor=pointer]
+              - generic [ref=e878]:
+                - generic [ref=e879]:
+                  - text: Message
+                  - textbox "Message" [ref=e880]
+                - generic [ref=e881]: 0 / 2,000 characters
+                - group "Conversation acknowledgement"
+                - generic [ref=e882]:
+                  - button "Back to galaxy" [ref=e883] [cursor=pointer]
+                  - button "Send message" [disabled] [ref=e884]
+        - heading "Credit offers · exact terms and atomic settlement" [level=2] [ref=e885]
+        - region "Credit offers" [ref=e887]:
+          - generic [ref=e888]:
+            - paragraph [ref=e889]: Private exchange
+            - heading "Credit offers" [level=2] [ref=e890]
+            - paragraph [ref=e891]: Both sides settle together.
+          - region "Offer details" [ref=e892]:
+            - navigation "Credit offers" [ref=e893]:
+              - button "New offer" [pressed] [ref=e894] [cursor=pointer]
+              - button "Earlier offers" [ref=e895] [cursor=pointer]
+            - region "Compose credit offer" [ref=e896]:
+              - heading "Set the terms" [level=3] [ref=e897]
+              - generic [ref=e898]:
+                - text: Other commander
+                - combobox "Other commander" [ref=e899]:
+                  - option "Choose a commander"
+                  - option "Envoy 2" [selected]
+                  - option "Envoy 3"
+                  - option "Envoy 4"
+              - generic [ref=e900]:
+                - text: Credits you offer
+                - textbox "Credits you offer" [ref=e901]: "10.001"
+              - generic [ref=e902]:
+                - text: Credits you request
+                - textbox "Credits you request" [ref=e903]: "2.002"
+              - paragraph [ref=e904]: Use up to three decimal places. A zero return side is a gift. Offered credits are reserved on acknowledgement; an unaccepted offer expires after 8 ticks.
+          - generic [ref=e905]:
+            - paragraph [ref=e906]: "Available: 200 credits"
+            - group "Exchange acknowledgement"
+            - generic [ref=e907]:
+              - button "Return to economy" [ref=e908] [cursor=pointer]
+              - button "Share credit offer" [ref=e909] [cursor=pointer]
+        - region "Credit offers" [ref=e911]:
+          - generic [ref=e912]:
+            - paragraph [ref=e913]: Private exchange
+            - heading "Credit offers" [level=2] [ref=e914]
+            - paragraph [ref=e915]: Both sides settle together.
+          - region "Offer details" [ref=e916]:
+            - navigation "Credit offers" [ref=e917]:
+              - button "New offer" [pressed] [ref=e918] [cursor=pointer]
+              - button "Earlier offers" [ref=e919] [cursor=pointer]
+            - region "Compose credit offer" [ref=e920]:
+              - heading "Set the terms" [level=3] [ref=e921]
+              - generic [ref=e922]:
+                - text: Other commander
+                - combobox "Other commander" [disabled] [ref=e923]:
+                  - option "Choose a commander"
+                  - option "Envoy 2" [selected]
+                  - option "Envoy 3"
+                  - option "Envoy 4"
+              - generic [ref=e924]:
+                - text: Credits you offer
+                - textbox "Credits you offer" [disabled] [ref=e925]: "10.001"
+              - generic [ref=e926]:
+                - text: Credits you request
+                - textbox "Credits you request" [disabled] [ref=e927]: "2.002"
+              - paragraph [ref=e928]: Use up to three decimal places. A zero return side is a gift. Offered credits are reserved on acknowledgement; an unaccepted offer expires after 8 ticks.
+          - generic [ref=e929]:
+            - paragraph [ref=e930]: "Available: 200 credits"
+            - group "Exchange acknowledgement" [ref=e931]:
+              - status [ref=e933]: Awaiting acknowledgement…
+            - generic [ref=e934]:
+              - button "Return to economy" [ref=e935] [cursor=pointer]
+              - button "Awaiting acknowledgement…" [disabled] [ref=e936]
+        - region "Credit offers" [ref=e938]:
+          - generic [ref=e939]:
+            - paragraph [ref=e940]: Private exchange
+            - heading "Credit offers" [level=2] [ref=e941]
+            - paragraph [ref=e942]: Both sides settle together.
+          - region "Offer details" [ref=e943]:
+            - navigation "Credit offers" [ref=e944]:
+              - button "New offer" [pressed] [ref=e945] [cursor=pointer]
+              - button "Earlier offers" [ref=e946] [cursor=pointer]
+            - region "Compose credit offer" [ref=e947]:
+              - heading "Set the terms" [level=3] [ref=e948]
+              - generic [ref=e949]:
+                - text: Other commander
+                - combobox "Other commander" [ref=e950]:
+                  - option "Choose a commander"
+                  - option "Envoy 2" [selected]
+                  - option "Envoy 3"
+                  - option "Envoy 4"
+              - generic [ref=e951]:
+                - text: Credits you offer
+                - textbox "Credits you offer" [ref=e952]: "10.001"
+              - generic [ref=e953]:
+                - text: Credits you request
+                - textbox "Credits you request" [ref=e954]: "2.002"
+              - paragraph [ref=e955]: Use up to three decimal places. A zero return side is a gift. Offered credits are reserved on acknowledgement; an unaccepted offer expires after 8 ticks.
+          - generic [ref=e956]:
+            - paragraph [ref=e957]: "Available: 200 credits"
+            - group "Exchange acknowledgement" [ref=e958]:
+              - alert [ref=e960]: The connection was interrupted. Your selection and pending order are preserved.
+            - generic [ref=e961]:
+              - button "Return to economy" [ref=e962] [cursor=pointer]
+              - button "Refresh terms" [ref=e963] [cursor=pointer]
+              - button "Share credit offer" [ref=e964] [cursor=pointer]
+        - region "Credit offers" [ref=e966]:
+          - generic [ref=e967]:
+            - paragraph [ref=e968]: Private exchange
+            - heading "Credit offers" [level=2] [ref=e969]
+            - paragraph [ref=e970]: Both sides settle together.
+          - region "Offer details" [ref=e971]:
+            - navigation "Credit offers" [ref=e972]:
+              - button "New offer" [ref=e973] [cursor=pointer]
+              - button "To Envoy 2 · open" [pressed] [ref=e974] [cursor=pointer]
+              - button "Earlier offers" [ref=e975] [cursor=pointer]
+            - region "Offer review" [ref=e976]:
+              - heading "Envoy 1 → Envoy 2" [level=3] [ref=e977]
+              - generic [ref=e978]:
+                - generic [ref=e979]:
+                  - term [ref=e980]: Envoy 1 gives
+                  - definition [ref=e981]: 10.001 credits
+                - generic [ref=e982]:
+                  - term [ref=e983]: Envoy 2 gives
+                  - definition [ref=e984]: 2.002 credits
+                - generic [ref=e985]:
+                  - term [ref=e986]: Expires at the beginning of tick
+                  - definition [ref=e987]: "8"
+              - paragraph [ref=e988]: The issuer’s offered credits are reserved. Acceptance reserves the other side and schedules atomic settlement. Expiry returns reserved credits without an exchange.
+          - generic [ref=e989]:
+            - paragraph [ref=e990]: "Available: 189.999 credits"
+            - group "Exchange acknowledgement" [ref=e991]:
+              - status [ref=e993]: Offer shared. Your offered credits are reserved.
+            - generic [ref=e994]:
+              - button "Return to economy" [ref=e995] [cursor=pointer]
+              - button "Withdraw offer" [ref=e996] [cursor=pointer]
+        - region "Credit offers" [ref=e998]:
+          - generic [ref=e999]:
+            - paragraph [ref=e1000]: Private exchange
+            - heading "Credit offers" [level=2] [ref=e1001]
+            - paragraph [ref=e1002]: Both sides settle together.
+          - region "Offer details" [ref=e1003]:
+            - navigation "Credit offers" [ref=e1004]:
+              - button "New offer" [ref=e1005] [cursor=pointer]
+              - button "To Envoy 2 · accepted" [pressed] [ref=e1006] [cursor=pointer]
+              - button "Earlier offers" [ref=e1007] [cursor=pointer]
+            - region "Offer review" [ref=e1008]:
+              - heading "Envoy 1 → Envoy 2" [level=3] [ref=e1009]
+              - generic [ref=e1010]:
+                - generic [ref=e1011]:
+                  - term [ref=e1012]: Envoy 1 gives
+                  - definition [ref=e1013]: 10.001 credits
+                - generic [ref=e1014]:
+                  - term [ref=e1015]: Envoy 2 gives
+                  - definition [ref=e1016]: 2.002 credits
+                - generic [ref=e1017]:
+                  - term [ref=e1018]: Expires at the beginning of tick
+                  - definition [ref=e1019]: "8"
+              - status "Offer schedule" [ref=e1020]: Both sides are reserved. Settlement is scheduled for tick 1.
+          - generic [ref=e1021]:
+            - paragraph [ref=e1022]: "Available: 189.999 credits"
+            - group "Exchange acknowledgement" [ref=e1023]:
+              - status [ref=e1025]: Both sides are reserved. Settlement is scheduled for tick 1.
+            - button "Return to economy" [ref=e1027] [cursor=pointer]
+        - region "Credit offers" [ref=e1029]:
+          - generic [ref=e1030]:
+            - paragraph [ref=e1031]: Private exchange
+            - heading "Credit offers" [level=2] [ref=e1032]
+            - paragraph [ref=e1033]: Both sides settle together.
+          - region "Offer details" [ref=e1034]:
+            - navigation "Credit offers" [ref=e1035]:
+              - button "New offer" [ref=e1036] [cursor=pointer]
+              - button "settled · Envoy 2 · tick 1" [pressed] [ref=e1037] [cursor=pointer]
+              - button "Earlier offers" [ref=e1038] [cursor=pointer]
+            - region "Offer review" [ref=e1039]:
+              - heading "Envoy 1 → Envoy 2" [level=3] [ref=e1040]
+              - generic [ref=e1041]:
+                - generic [ref=e1042]:
+                  - term [ref=e1043]: Envoy 1 gives
+                  - definition [ref=e1044]: 10.001 credits
+                - generic [ref=e1045]:
+                  - term [ref=e1046]: Envoy 2 gives
+                  - definition [ref=e1047]: 2.002 credits
+                - generic [ref=e1048]:
+                  - term [ref=e1049]: Expires at the beginning of tick
+                  - definition [ref=e1050]: "8"
+              - status "Offer outcome" [ref=e1051]: Offer settled · confirmed tick 1. Both sides transferred once.
+          - generic [ref=e1052]:
+            - paragraph [ref=e1053]: "Available: 194.801 credits"
+            - group "Exchange acknowledgement" [ref=e1054]:
+              - status [ref=e1056]: Offer settled · confirmed tick 1.
+            - button "Return to economy" [ref=e1058] [cursor=pointer]
+        - heading "Return briefing · recovery and visit acknowledgement" [level=2] [ref=e1059]
+        - region "Return briefing" [ref=e1061]:
+          - generic [ref=e1062]:
+            - paragraph [ref=e1063]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1064]
+            - paragraph [ref=e1065]: From tick 0 through confirmed tick 1. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1066]:
+            - generic [ref=e1067]:
+              - paragraph [ref=e1068]: 1 authorized records loaded. Recover earlier records to complete this period before saving your visit.
+              - button "Recover earlier activity" [ref=e1069] [cursor=pointer]
+            - region "Upcoming orders" [ref=e1070]:
+              - heading "Upcoming orders" [level=3] [ref=e1071]
+              - paragraph [ref=e1072]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1073]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1074]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1075]:
+              - button "Back without saving" [ref=e1076] [cursor=pointer]
+              - button "Save visit and return to galaxy" [disabled] [ref=e1077]
+        - region "Return briefing" [ref=e1079]:
+          - generic [ref=e1080]:
+            - paragraph [ref=e1081]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1082]
+            - paragraph [ref=e1083]: From tick 0 through confirmed tick 1. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1084]:
+            - region "Economy" [ref=e1086]:
+              - heading "Economy" [level=3] [ref=e1087]
+              - article [ref=e1088]:
+                - button "Inspect Tick 1 production" [ref=e1089] [cursor=pointer]:
+                  - generic [ref=e1090]:
+                    - strong [ref=e1091]: Tick 1 production
+                    - generic [ref=e1092]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                    - generic [ref=e1093]: Confirmed tick 1
+                  - generic [ref=e1094]: ›
+            - region "Upcoming orders" [ref=e1095]:
+              - heading "Upcoming orders" [level=3] [ref=e1096]
+              - paragraph [ref=e1097]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1098]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1099]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1100]:
+              - button "Back without saving" [ref=e1101] [cursor=pointer]
+              - button "Save visit and return to galaxy" [ref=e1102] [cursor=pointer]
+        - region "Return briefing" [ref=e1104]:
+          - generic [ref=e1105]:
+            - paragraph [ref=e1106]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1107]
+            - paragraph [ref=e1108]: From tick 0 through confirmed tick 1. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1109]:
+            - region "Economy" [ref=e1111]:
+              - heading "Economy" [level=3] [ref=e1112]
+              - article [ref=e1113]:
+                - button "Inspect Tick 1 production" [ref=e1114] [cursor=pointer]:
+                  - generic [ref=e1115]:
+                    - strong [ref=e1116]: Tick 1 production
+                    - generic [ref=e1117]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                    - generic [ref=e1118]: Confirmed tick 1
+                  - generic [ref=e1119]: ›
+            - region "Upcoming orders" [ref=e1120]:
+              - heading "Upcoming orders" [level=3] [ref=e1121]
+              - paragraph [ref=e1122]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1123]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1124]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1125]:
+              - button "Back without saving" [ref=e1126] [cursor=pointer]
+              - button "Waiting for current order…" [disabled] [ref=e1127]
+        - region "Return briefing" [ref=e1129]:
+          - generic [ref=e1130]:
+            - paragraph [ref=e1131]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1132]
+            - paragraph [ref=e1133]: From tick 0 through confirmed tick 1. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1134]:
+            - region "Economy" [ref=e1136]:
+              - heading "Economy" [level=3] [ref=e1137]
+              - article [ref=e1138]:
+                - button "Inspect Tick 1 production" [ref=e1139] [cursor=pointer]:
+                  - generic [ref=e1140]:
+                    - strong [ref=e1141]: Tick 1 production
+                    - generic [ref=e1142]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                    - generic [ref=e1143]: Confirmed tick 1
+                  - generic [ref=e1144]: ›
+            - region "Upcoming orders" [ref=e1145]:
+              - heading "Upcoming orders" [level=3] [ref=e1146]
+              - paragraph [ref=e1147]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1148]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1149]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1150]:
+              - button "Back without saving" [ref=e1151] [cursor=pointer]
+              - button "Preparing visit…" [disabled] [ref=e1152]
+        - region "Return briefing" [ref=e1154]:
+          - generic [ref=e1155]:
+            - paragraph [ref=e1156]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1157]
+            - paragraph [ref=e1158]: From tick 0 through confirmed tick 1. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1159]:
+            - region "Economy" [ref=e1161]:
+              - heading "Economy" [level=3] [ref=e1162]
+              - article [ref=e1163]:
+                - button "Inspect Tick 1 production" [ref=e1164] [cursor=pointer]:
+                  - generic [ref=e1165]:
+                    - strong [ref=e1166]: Tick 1 production
+                    - generic [ref=e1167]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                    - generic [ref=e1168]: Confirmed tick 1
+                  - generic [ref=e1169]: ›
+            - region "Upcoming orders" [ref=e1170]:
+              - heading "Upcoming orders" [level=3] [ref=e1171]
+              - paragraph [ref=e1172]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1173]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1174]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1175]:
+              - button "Back without saving" [ref=e1176] [cursor=pointer]
+              - button "Awaiting acknowledgement…" [disabled] [ref=e1177]
+        - region "Return briefing" [ref=e1179]:
+          - generic [ref=e1180]:
+            - paragraph [ref=e1181]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1182]
+            - paragraph [ref=e1183]: From tick 0 through confirmed tick 1. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1184]:
+            - region "Economy" [ref=e1186]:
+              - heading "Economy" [level=3] [ref=e1187]
+              - article [ref=e1188]:
+                - button "Inspect Tick 1 production" [ref=e1189] [cursor=pointer]:
+                  - generic [ref=e1190]:
+                    - strong [ref=e1191]: Tick 1 production
+                    - generic [ref=e1192]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                    - generic [ref=e1193]: Confirmed tick 1
+                  - generic [ref=e1194]: ›
+            - region "Upcoming orders" [ref=e1195]:
+              - heading "Upcoming orders" [level=3] [ref=e1196]
+              - paragraph [ref=e1197]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1198]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1199]:
+            - group "Visit acknowledgement" [ref=e1200]:
+              - status [ref=e1202]: Visit saved. No messages were marked read.
+            - generic [ref=e1203]:
+              - button "Back without saving" [ref=e1204] [cursor=pointer]
+              - button "Save visit and return to galaxy" [ref=e1205] [cursor=pointer]
+        - region "Return briefing" [ref=e1207]:
+          - generic [ref=e1208]:
+            - paragraph [ref=e1209]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1210]
+            - paragraph [ref=e1211]: From tick 0 through confirmed tick 1. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1212]:
+            - region "Economy" [ref=e1214]:
+              - heading "Economy" [level=3] [ref=e1215]
+              - article [ref=e1216]:
+                - button "Inspect Tick 1 production" [ref=e1217] [cursor=pointer]:
+                  - generic [ref=e1218]:
+                    - strong [ref=e1219]: Tick 1 production
+                    - generic [ref=e1220]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                    - generic [ref=e1221]: Confirmed tick 1
+                  - generic [ref=e1222]: ›
+            - region "Upcoming orders" [ref=e1223]:
+              - heading "Upcoming orders" [level=3] [ref=e1224]
+              - paragraph [ref=e1225]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1226]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1227]:
+            - group "Visit acknowledgement" [ref=e1228]:
+              - alert [ref=e1230]: Connection interrupted. Your visit has not changed. Retry when connected.
+            - generic [ref=e1231]:
+              - button "Back without saving" [ref=e1232] [cursor=pointer]
+              - button "Retry recovery" [ref=e1233] [cursor=pointer]
+        - region "Return briefing" [ref=e1235]:
+          - generic [ref=e1236]:
+            - paragraph [ref=e1237]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1238]
+            - paragraph [ref=e1239]: Recovering the period of your saved visit. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1240]:
+            - generic [ref=e1241]:
+              - paragraph [ref=e1242]: 2 authorized records loaded. Recover earlier records to complete this period before saving your visit.
+              - button "Recover complete period" [ref=e1243] [cursor=pointer]
+              - paragraph [ref=e1244]: The full reviewed period is not available in these records. Your visit has not changed.
+            - region "Upcoming orders" [ref=e1245]:
+              - heading "Upcoming orders" [level=3] [ref=e1246]
+              - paragraph [ref=e1247]: 0 accepted orders awaiting settlement. These are separate from completed activity.
+            - paragraph [ref=e1248]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1249]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1250]:
+              - button "Back without saving" [ref=e1251] [cursor=pointer]
+              - button "Awaiting acknowledgement…" [disabled] [ref=e1252]
+        - region "Return briefing" [ref=e1254]:
+          - generic [ref=e1255]:
+            - paragraph [ref=e1256]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1257]
+            - paragraph [ref=e1258]: From tick 0 through confirmed tick 5. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1259]:
+            - generic [ref=e1260]:
+              - region "Control" [ref=e1261]:
+                - heading "Control" [level=3] [ref=e1262]
+                - article [ref=e1263]:
+                  - button "Inspect Nikawiy · orbit gained" [ref=e1264] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1265]:
+                      - strong [ref=e1266]: Nikawiy · orbit gained
+                      - generic [ref=e1267]: Recorded control change. Inspect your current authorized knowledge.
+                      - generic [ref=e1268]: Confirmed tick 4
+                    - generic [ref=e1269]: ›
+                - article [ref=e1270]:
+                  - button "Inspect Nikawiy · surface gained" [ref=e1271] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1272]:
+                      - strong [ref=e1273]: Nikawiy · surface gained
+                      - generic [ref=e1274]: Recorded control change. Inspect your current authorized knowledge.
+                      - generic [ref=e1275]: Confirmed tick 4
+                    - generic [ref=e1276]: ›
+              - region "Arrivals and losses" [ref=e1277]:
+                - heading "Arrivals and losses" [level=3] [ref=e1278]
+                - article [ref=e1279]:
+                  - button "Inspect Nikawiy · arrival settled" [ref=e1280] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1281]:
+                      - strong [ref=e1282]: Nikawiy · arrival settled
+                      - generic [ref=e1283]: 0 fighter losses · 0 infantry losses. Open the authorized report for combat and control details.
+                      - generic [ref=e1284]: Confirmed tick 4
+                    - generic [ref=e1285]: ›
+              - region "Economy" [ref=e1286]:
+                - heading "Economy" [level=3] [ref=e1287]
+                - article [ref=e1288]:
+                  - button "Inspect Tick 1 production" [ref=e1289] [cursor=pointer]:
+                    - generic [ref=e1290]:
+                      - strong [ref=e1291]: Tick 1 production
+                      - generic [ref=e1292]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                      - generic [ref=e1293]: Confirmed tick 1
+                    - generic [ref=e1294]: ›
+                - article [ref=e1295]:
+                  - button "Inspect Tick 2 production" [ref=e1296] [cursor=pointer]:
+                    - generic [ref=e1297]:
+                      - strong [ref=e1298]: Tick 2 production
+                      - generic [ref=e1299]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                      - generic [ref=e1300]: Confirmed tick 2
+                    - generic [ref=e1301]: ›
+                - article [ref=e1302]:
+                  - button "Inspect Tick 3 production" [ref=e1303] [cursor=pointer]:
+                    - generic [ref=e1304]:
+                      - strong [ref=e1305]: Tick 3 production
+                      - generic [ref=e1306]: 2.8 credits · 1.4 science · 2 fighters · 2 infantry.
+                      - generic [ref=e1307]: Confirmed tick 3
+                    - generic [ref=e1308]: ›
+                - article [ref=e1309]:
+                  - button "Inspect Tick 4 production" [ref=e1310] [cursor=pointer]:
+                    - generic [ref=e1311]:
+                      - strong [ref=e1312]: Tick 4 production
+                      - generic [ref=e1313]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                      - generic [ref=e1314]: Confirmed tick 4
+                    - generic [ref=e1315]: ›
+                - article [ref=e1316]:
+                  - button "Inspect Sarin · market completed" [ref=e1317] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1318]:
+                      - strong [ref=e1319]: Sarin · market completed
+                      - generic [ref=e1320]: 0 credits refunded. Inspect the system’s current development state.
+                      - generic [ref=e1321]: Confirmed tick 5
+                    - generic [ref=e1322]: ›
+                - article [ref=e1323]:
+                  - button "Inspect Tick 5 production" [ref=e1324] [cursor=pointer]:
+                    - generic [ref=e1325]:
+                      - strong [ref=e1326]: Tick 5 production
+                      - generic [ref=e1327]: 4.2 credits · 1.4 science · 2 fighters · 2 infantry.
+                      - generic [ref=e1328]: Confirmed tick 5
+                    - generic [ref=e1329]: ›
+              - region "Messages" [ref=e1330]:
+                - heading "Messages" [level=3] [ref=e1331]
+                - article [ref=e1332]:
+                  - button "Inspect Border talks · Message 1" [ref=e1333] [cursor=pointer]:
+                    - generic [ref=e1334]:
+                      - strong [ref=e1335]: Border talks · Message 1
+                      - generic [ref=e1336]: Received from Envoy 2. Message contents remain in your authorized conversation history.
+                      - generic [ref=e1337]: Confirmed tick 5
+                    - generic [ref=e1338]: ›
+            - region "Upcoming orders" [ref=e1339]:
+              - heading "Upcoming orders" [level=3] [ref=e1340]
+              - paragraph [ref=e1341]: 1 accepted order awaiting settlement. These are separate from completed activity.
+              - paragraph [ref=e1342]: camp construction · Sarin · eligible tick 6
+            - paragraph [ref=e1343]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1344]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1345]:
+              - button "Back without saving" [ref=e1346] [cursor=pointer]
+              - button "Save visit and return to galaxy" [ref=e1347] [cursor=pointer]
+        - region "Return briefing" [ref=e1349]:
+          - generic [ref=e1350]:
+            - paragraph [ref=e1351]: Your empire · Lab scenario
+            - heading "Since your last visit" [level=2] [ref=e1352]
+            - paragraph [ref=e1353]: From tick 0 through confirmed tick 5. Reading this briefing does not mark messages read.
+          - region "Briefing details" [ref=e1354]:
+            - generic [ref=e1355]:
+              - region "Control" [ref=e1356]:
+                - heading "Control" [level=3] [ref=e1357]
+                - article [ref=e1358]:
+                  - button "Inspect Nikawiy · orbit gained" [ref=e1359] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1360]:
+                      - strong [ref=e1361]: Nikawiy · orbit gained
+                      - generic [ref=e1362]: Recorded control change. Inspect your current authorized knowledge.
+                      - generic [ref=e1363]: Confirmed tick 4
+                    - generic [ref=e1364]: ›
+                - article [ref=e1365]:
+                  - button "Inspect Nikawiy · surface gained" [ref=e1366] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1367]:
+                      - strong [ref=e1368]: Nikawiy · surface gained
+                      - generic [ref=e1369]: Recorded control change. Inspect your current authorized knowledge.
+                      - generic [ref=e1370]: Confirmed tick 4
+                    - generic [ref=e1371]: ›
+              - region "Arrivals and losses" [ref=e1372]:
+                - heading "Arrivals and losses" [level=3] [ref=e1373]
+                - article [ref=e1374]:
+                  - button "Inspect Nikawiy · arrival settled" [ref=e1375] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1376]:
+                      - strong [ref=e1377]: Nikawiy · arrival settled
+                      - generic [ref=e1378]: 0 fighter losses · 0 infantry losses. Open the authorized report for combat and control details.
+                      - generic [ref=e1379]: Confirmed tick 4
+                    - generic [ref=e1380]: ›
+              - region "Economy" [ref=e1381]:
+                - heading "Economy" [level=3] [ref=e1382]
+                - article [ref=e1383]:
+                  - button "Inspect Tick 1 production" [ref=e1384] [cursor=pointer]:
+                    - generic [ref=e1385]:
+                      - strong [ref=e1386]: Tick 1 production
+                      - generic [ref=e1387]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                      - generic [ref=e1388]: Confirmed tick 1
+                    - generic [ref=e1389]: ›
+                - article [ref=e1390]:
+                  - button "Inspect Tick 2 production" [ref=e1391] [cursor=pointer]:
+                    - generic [ref=e1392]:
+                      - strong [ref=e1393]: Tick 2 production
+                      - generic [ref=e1394]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                      - generic [ref=e1395]: Confirmed tick 2
+                    - generic [ref=e1396]: ›
+                - article [ref=e1397]:
+                  - button "Inspect Tick 3 production" [ref=e1398] [cursor=pointer]:
+                    - generic [ref=e1399]:
+                      - strong [ref=e1400]: Tick 3 production
+                      - generic [ref=e1401]: 2.8 credits · 1.4 science · 2 fighters · 2 infantry.
+                      - generic [ref=e1402]: Confirmed tick 3
+                    - generic [ref=e1403]: ›
+                - article [ref=e1404]:
+                  - button "Inspect Tick 4 production" [ref=e1405] [cursor=pointer]:
+                    - generic [ref=e1406]:
+                      - strong [ref=e1407]: Tick 4 production
+                      - generic [ref=e1408]: 2.8 credits · 1.4 science · 1 fighters · 1 infantry.
+                      - generic [ref=e1409]: Confirmed tick 4
+                    - generic [ref=e1410]: ›
+                - article [ref=e1411]:
+                  - button "Inspect Sarin · market completed" [ref=e1412] [cursor=pointer]:
+                    - generic:
+                      - img
+                    - generic [ref=e1413]:
+                      - strong [ref=e1414]: Sarin · market completed
+                      - generic [ref=e1415]: 0 credits refunded. Inspect the system’s current development state.
+                      - generic [ref=e1416]: Confirmed tick 5
+                    - generic [ref=e1417]: ›
+                - article [ref=e1418]:
+                  - button "Inspect Tick 5 production" [ref=e1419] [cursor=pointer]:
+                    - generic [ref=e1420]:
+                      - strong [ref=e1421]: Tick 5 production
+                      - generic [ref=e1422]: 4.2 credits · 1.4 science · 2 fighters · 2 infantry.
+                      - generic [ref=e1423]: Confirmed tick 5
+                    - generic [ref=e1424]: ›
+              - region "Messages" [ref=e1425]:
+                - heading "Messages" [level=3] [ref=e1426]
+                - article [ref=e1427]:
+                  - button "Inspect Border talks · Message 1" [ref=e1428] [cursor=pointer]:
+                    - generic [ref=e1429]:
+                      - strong [ref=e1430]: Border talks · Message 1
+                      - generic [ref=e1431]: Message by Envoy 2. This historical record does not identify your commander seat, so incoming activity is not inferred. Contents remain in your authorized conversation history.
+                      - generic [ref=e1432]: Confirmed tick 5
+                    - generic [ref=e1433]: ›
+            - region "Upcoming orders" [ref=e1434]:
+              - heading "Upcoming orders" [level=3] [ref=e1435]
+              - paragraph [ref=e1436]: 1 accepted order awaiting settlement. These are separate from completed activity.
+              - paragraph [ref=e1437]: camp construction · Sarin · eligible tick 6
+            - paragraph [ref=e1438]: Only your authorized records are summarized. Inspecting a report changes no orders or permissions.
+          - generic [ref=e1439]:
+            - group "Visit acknowledgement"
+            - generic [ref=e1440]:
+              - button "Back without saving" [ref=e1441] [cursor=pointer]
+              - button "Save visit and return to galaxy" [ref=e1442] [cursor=pointer]
+        - heading "Selected earlier history · scope and acceptance" [level=2] [ref=e1443]
+        - region "Private conversations" [ref=e1446]:
+          - generic [ref=e1447]:
+            - generic [ref=e1450]:
+              - heading "Nacre talks" [level=2] [ref=e1451]
+              - paragraph [ref=e1452]: 1 participants · private membership
+              - generic [ref=e1453]:
+                - button "Conversations" [ref=e1454] [cursor=pointer]
+                - button "Participants" [ref=e1455] [cursor=pointer]
+            - region "Conversation details" [ref=e1456]:
+              - list "Authorized messages" [ref=e1457]:
+                - listitem [ref=e1458]:
+                  - generic [ref=e1459]:
+                    - strong [ref=e1461]: You
+                    - generic [ref=e1462]: Message 1
+                  - paragraph [ref=e1463]: Creator's earlier private note.
+              - paragraph [ref=e1464]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+            - generic [ref=e1465]:
+              - generic [ref=e1466]:
+                - text: Message
+                - textbox "Message" [ref=e1467]
+              - generic [ref=e1468]: 0 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e1469]:
+                - button "Back to galaxy" [ref=e1470] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e1471]
+        - region "Private conversations" [ref=e1474]:
+          - generic [ref=e1475]:
+            - generic [ref=e1478]:
+              - heading "Nacre talks" [level=2] [ref=e1479]
+              - paragraph [ref=e1480]: Invitation · review before accepting
+              - generic [ref=e1481]:
+                - button "Conversations" [ref=e1482] [cursor=pointer]
+                - button "Participants" [ref=e1483] [cursor=pointer]
+            - region "Conversation details" [ref=e1484]:
+              - heading "Envoy 1 invites you" [level=3] [ref=e1485]
+              - paragraph [ref=e1486]: You will receive 1 selected earlier message and messages sent after you accept. Other earlier messages are not shared. Accepting does not form an alliance or grant military access.
+              - heading "Earlier history included" [level=3] [ref=e1487]
+              - list "Selected earlier history" [ref=e1488]:
+                - listitem [ref=e1489]: Message 1 · Envoy 1
+              - paragraph [ref=e1490]: Message contents become available after you accept this scope.
+              - heading "Participants" [level=3] [ref=e1491]
+              - list [ref=e1492]:
+                - listitem [ref=e1493]: Envoy 1
+            - generic [ref=e1494]:
+              - group "Conversation acknowledgement"
+              - generic [ref=e1495]:
+                - button "Back to galaxy" [ref=e1496] [cursor=pointer]
+                - button "Decline" [ref=e1497] [cursor=pointer]
+                - button "Accept invitation" [ref=e1498] [cursor=pointer]
+        - region "Private conversations" [ref=e1501]:
+          - generic [ref=e1502]:
+            - generic [ref=e1505]:
+              - heading "Nacre talks" [level=2] [ref=e1506]
+              - paragraph [ref=e1507]: 2 participants · private membership
+              - generic [ref=e1508]:
+                - button "Conversations" [ref=e1509] [cursor=pointer]
+                - button "Participants" [ref=e1510] [cursor=pointer]
+            - region "Conversation details" [ref=e1511]:
+              - list "Authorized messages" [ref=e1512]:
+                - listitem [ref=e1513]:
+                  - generic [ref=e1514]:
+                    - strong [ref=e1516]: Envoy 1
+                    - generic [ref=e1517]: Message 1
+                  - paragraph [ref=e1518]: Selected earlier history · shared by Envoy 1
+                  - paragraph [ref=e1519]: Creator's earlier private note.
+              - paragraph [ref=e1520]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e1521] [cursor=pointer]
+            - generic [ref=e1522]:
+              - generic [ref=e1523]:
+                - text: Message
+                - textbox "Message" [ref=e1524]
+              - generic [ref=e1525]: 0 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e1526]:
+                - button "Back to galaxy" [ref=e1527] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e1528]
+        - heading "Private conversations · invitation and recipient history" [level=2] [ref=e1529]
+        - region "Private conversations" [ref=e1532]:
+          - generic [ref=e1533]:
+            - generic [ref=e1536]:
+              - heading "Nacre talks" [level=2] [ref=e1537]
+              - paragraph [ref=e1538]: Invitation · review before accepting
+              - generic [ref=e1539]:
+                - button "Conversations" [ref=e1540] [cursor=pointer]
+                - button "Participants" [ref=e1541] [cursor=pointer]
+            - region "Conversation details" [ref=e1542]:
+              - heading "Envoy 1 invites you" [level=3] [ref=e1543]
+              - paragraph [ref=e1544]: You will receive messages sent after you accept. Earlier messages are not shared. Accepting does not form an alliance or grant military access.
+              - heading "Participants" [level=3] [ref=e1545]
+              - list [ref=e1546]:
+                - listitem [ref=e1547]: Envoy 1
+            - generic [ref=e1548]:
+              - group "Conversation acknowledgement"
+              - generic [ref=e1549]:
+                - button "Back to galaxy" [ref=e1550] [cursor=pointer]
+                - button "Decline" [ref=e1551] [cursor=pointer]
+                - button "Accept invitation" [ref=e1552] [cursor=pointer]
+        - region "Private conversations" [ref=e1555]:
+          - generic [ref=e1556]:
+            - generic [ref=e1559]:
+              - heading "Nacre talks" [level=2] [ref=e1560]
+              - paragraph [ref=e1561]: 2 participants · private membership
+              - generic [ref=e1562]:
+                - button "Conversations" [ref=e1563] [cursor=pointer]
+                - button "Participants" [ref=e1564] [cursor=pointer]
+            - region "Conversation details" [ref=e1565]:
+              - paragraph [ref=e1566]: No messages in the records loaded. Invitations do not share earlier messages.
+              - list "Authorized messages"
+              - paragraph [ref=e1567]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+            - generic [ref=e1568]:
+              - generic [ref=e1569]:
+                - text: Message
+                - textbox "Message" [ref=e1570]
+              - generic [ref=e1571]: 0 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e1572]:
+                - button "Back to galaxy" [ref=e1573] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e1574]
+        - region "Private conversations" [ref=e1577]:
+          - generic [ref=e1578]:
+            - generic [ref=e1581]:
+              - heading "Nacre talks" [level=2] [ref=e1582]
+              - paragraph [ref=e1583]: 2 participants · private membership
+              - generic [ref=e1584]:
+                - button "Conversations" [ref=e1585] [cursor=pointer]
+                - button "Participants" [ref=e1586] [cursor=pointer]
+            - region "Conversation details" [ref=e1587]:
+              - list "Authorized messages" [ref=e1588]:
+                - listitem [ref=e1589]:
+                  - generic [ref=e1590]:
+                    - strong [ref=e1592]: Envoy 1
+                    - generic [ref=e1593]: Message 2
+                  - paragraph [ref=e1594]: Can we discuss the systems near Nacre?
+              - paragraph [ref=e1595]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e1596] [cursor=pointer]
+            - generic [ref=e1597]:
+              - generic [ref=e1598]:
+                - text: Message
+                - textbox "Message" [ref=e1599]
+              - generic [ref=e1600]: 0 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e1601]:
+                - button "Back to galaxy" [ref=e1602] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e1603]
+        - region "Private conversations" [ref=e1606]:
+          - generic [ref=e1607]:
+            - generic [ref=e1610]:
+              - heading "Nacre talks" [level=2] [ref=e1611]
+              - paragraph [ref=e1612]: 2 participants · private membership
+              - generic [ref=e1613]:
+                - button "Conversations" [ref=e1614] [cursor=pointer]
+                - button "Participants" [ref=e1615] [cursor=pointer]
+            - region "Conversation details" [ref=e1616]:
+              - list "Authorized messages" [ref=e1617]:
+                - listitem [ref=e1618]:
+                  - generic [ref=e1619]:
+                    - strong [ref=e1621]: Envoy 1
+                    - generic [ref=e1622]: Message 2
+                  - paragraph [ref=e1623]: Can we discuss the systems near Nacre?
+                - listitem [ref=e1624]:
+                  - generic [ref=e1625]:
+                    - strong [ref=e1627]: You
+                    - generic [ref=e1628]: Message 3
+                  - paragraph [ref=e1629]: Yes. Let’s discuss our plans before making an agreement.
+              - paragraph [ref=e1630]: Beginning of the authorized records loaded. Removed participants retain previously received knowledge.
+              - button "Mark loaded messages read" [ref=e1631] [cursor=pointer]
+            - generic [ref=e1632]:
+              - generic [ref=e1633]:
+                - text: Message
+                - textbox "Message" [ref=e1634]
+              - generic [ref=e1635]: 0 / 2,000 characters
+              - group "Conversation acknowledgement"
+              - generic [ref=e1636]:
+                - button "Back to galaxy" [ref=e1637] [cursor=pointer]
+                - button "Send message" [disabled] [ref=e1638]
+        - heading "Arrival reports · split occupation and conquest" [level=2] [ref=e1639]
+        - region "Arrival specimen 0" [ref=e1640]:
+          - region "Arrival reports" [ref=e1641]:
+            - region "Arrival report details" [ref=e1642]:
+              - paragraph [ref=e1643]: Your campaign record
+              - heading "Arrival reports" [level=2] [ref=e1644]
+              - paragraph [ref=e1645]: No arrival reports in the records loaded.
+              - group "Report history"
+              - group "Recorded arrivals"
+              - paragraph [ref=e1646]: Beginning of your loaded arrival history.
+            - button "Back to galaxy" [ref=e1648] [cursor=pointer]
+        - region "Arrival specimen 700" [ref=e1649]:
+          - region "Arrival reports" [ref=e1650]:
+            - region "Arrival report details" [ref=e1651]:
+              - paragraph [ref=e1652]: Your campaign record
+              - heading "Arrival reports" [level=2] [ref=e1653]
+              - status [ref=e1655]: Loading authorized arrival reports…
+              - group "Report history"
+              - group "Recorded arrivals"
+              - paragraph [ref=e1656]: Beginning of your loaded arrival history.
+            - button "Back to galaxy" [ref=e1658] [cursor=pointer]
+        - region "Arrival specimen 1200" [ref=e1659]:
+          - region "Arrival reports" [ref=e1660]:
+            - region "Arrival report details" [ref=e1661]:
+              - paragraph [ref=e1662]: Your campaign record· tick 4
+              - paragraph [ref=e1663]: Nikawiy
+              - heading "Orbit secured" [level=2] [ref=e1664]
+              - paragraph [ref=e1665]: Recorded outcome at tick 4. Current control may differ.
+              - article [ref=e1666]:
+                - list "Resolution sequence" [ref=e1667]:
+                  - listitem [ref=e1668]:
+                    - img [ref=e1670]
+                    - strong [ref=e1673]: Arrival
+                    - generic [ref=e1674]: Forces reached the system.
+                  - listitem [ref=e1675]:
+                    - img [ref=e1677]
+                    - strong [ref=e1681]: Orbit
+                    - generic [ref=e1682]: Orbital forces resolved.
+                  - listitem [ref=e1683]:
+                    - img [ref=e1685]
+                    - strong [ref=e1687]: Surface · recorded
+                    - generic [ref=e1688]: Control recorded separately.
+                - generic [ref=e1689]:
+                  - generic [ref=e1690]:
+                    - term [ref=e1691]: Your fighters lost
+                    - definition [ref=e1693]: "1"
+                  - generic [ref=e1694]:
+                    - term [ref=e1695]: Your fighters remaining
+                    - definition [ref=e1697]: "1"
+                  - generic [ref=e1698]:
+                    - term [ref=e1699]: Your infantry lost
+                    - definition [ref=e1701]: "0"
+                  - generic [ref=e1702]:
+                    - term [ref=e1703]: Your infantry remaining
+                    - definition [ref=e1705]: "0"
+                - generic [ref=e1706]:
+                  - generic [ref=e1707]:
+                    - term [ref=e1708]: Orbit
+                    - definition [ref=e1710]: You
+                  - generic [ref=e1711]:
+                    - term [ref=e1712]: Surface
+                    - definition [ref=e1714]: Envoy 2
+                - group [ref=e1715]:
+                  - generic "Losses and effectiveness" [ref=e1716] [cursor=pointer]
+                - paragraph [ref=e1717]: Credits remain held while control is split. The held balance is private.
+                - paragraph [ref=e1718]: "Output entitlement at the recorded tick: You receive orbital fighters and science. Envoy 2 receives surface infantry."
+                - group [ref=e1719]:
+                  - generic "Participants and resolution" [ref=e1720] [cursor=pointer]
+              - group "Report history"
+              - group "Recorded arrivals" [ref=e1721]:
+                - button "Nikawiy · tick 4" [pressed] [ref=e1722] [cursor=pointer]
+              - paragraph [ref=e1723]: Beginning of your loaded arrival history.
+            - generic [ref=e1724]:
+              - button "Back to system" [ref=e1725] [cursor=pointer]
+              - button "Inspect surface" [ref=e1726] [cursor=pointer]
+        - region "Arrival specimen 2200" [ref=e1727]:
+          - region "Arrival reports" [ref=e1728]:
+            - region "Arrival report details" [ref=e1729]:
+              - paragraph [ref=e1730]: Your campaign record· tick 4
+              - paragraph [ref=e1731]: Nikawiy
+              - heading "Orbit secured" [level=2] [ref=e1732]
+              - paragraph [ref=e1733]: Recorded outcome at tick 4. Current control may differ.
+              - alert [ref=e1735]: History could not be recovered. Check your connection and retry. Your current records remain in place.
+              - article [ref=e1736]:
+                - list "Resolution sequence" [ref=e1737]:
+                  - listitem [ref=e1738]:
+                    - img [ref=e1740]
+                    - strong [ref=e1743]: Arrival
+                    - generic [ref=e1744]: Forces reached the system.
+                  - listitem [ref=e1745]:
+                    - img [ref=e1747]
+                    - strong [ref=e1751]: Orbit
+                    - generic [ref=e1752]: Orbital forces resolved.
+                  - listitem [ref=e1753]:
+                    - img [ref=e1755]
+                    - strong [ref=e1757]: Surface · recorded
+                    - generic [ref=e1758]: Control recorded separately.
+                - generic [ref=e1759]:
+                  - generic [ref=e1760]:
+                    - term [ref=e1761]: Your fighters lost
+                    - definition [ref=e1763]: "1"
+                  - generic [ref=e1764]:
+                    - term [ref=e1765]: Your fighters remaining
+                    - definition [ref=e1767]: "1"
+                  - generic [ref=e1768]:
+                    - term [ref=e1769]: Your infantry lost
+                    - definition [ref=e1771]: "0"
+                  - generic [ref=e1772]:
+                    - term [ref=e1773]: Your infantry remaining
+                    - definition [ref=e1775]: "0"
+                - generic [ref=e1776]:
+                  - generic [ref=e1777]:
+                    - term [ref=e1778]: Orbit
+                    - definition [ref=e1780]: You
+                  - generic [ref=e1781]:
+                    - term [ref=e1782]: Surface
+                    - definition [ref=e1784]: Envoy 2
+                - group [ref=e1785]:
+                  - generic "Losses and effectiveness" [ref=e1786] [cursor=pointer]
+                - paragraph [ref=e1787]: Credits remain held while control is split. The held balance is private.
+                - paragraph [ref=e1788]: "Output entitlement at the recorded tick: You receive orbital fighters and science. Envoy 2 receives surface infantry."
+                - group [ref=e1789]:
+                  - generic "Participants and resolution" [ref=e1790] [cursor=pointer]
+              - group "Report history" [ref=e1791]:
+                - button "Retry reports" [ref=e1792] [cursor=pointer]
+              - group "Recorded arrivals" [ref=e1793]:
+                - button "Nikawiy · tick 4" [pressed] [ref=e1794] [cursor=pointer]
+              - paragraph [ref=e1795]: Beginning of your loaded arrival history.
+            - generic [ref=e1796]:
+              - button "Back to galaxy" [ref=e1797] [cursor=pointer]
+              - button "Inspect surface" [ref=e1798] [cursor=pointer]
+        - region "Arrival specimen 3200" [ref=e1799]:
+          - region "Arrival reports" [ref=e1800]:
+            - region "Arrival report details" [ref=e1801]:
+              - paragraph [ref=e1802]: Your campaign record· tick 8
+              - paragraph [ref=e1803]: Nikawiy
+              - heading "System secured" [level=2] [ref=e1804]
+              - paragraph [ref=e1805]: Recorded outcome at tick 8. Current control may differ.
+              - article [ref=e1806]:
+                - list "Resolution sequence" [ref=e1807]:
+                  - listitem [ref=e1808]:
+                    - img [ref=e1810]
+                    - strong [ref=e1813]: Arrival
+                    - generic [ref=e1814]: Forces reached the system.
+                  - listitem [ref=e1815]:
+                    - img [ref=e1817]
+                    - strong [ref=e1821]: Orbit
+                    - generic [ref=e1822]: Orbital forces resolved.
+                  - listitem [ref=e1823]:
+                    - img [ref=e1825]
+                    - strong [ref=e1827]: Surface · recorded
+                    - generic [ref=e1828]: 6 of your infantry landed.
+                - generic [ref=e1829]:
+                  - generic [ref=e1830]:
+                    - term [ref=e1831]: Your fighters lost
+                    - definition [ref=e1833]: "0"
+                  - generic [ref=e1834]:
+                    - term [ref=e1835]: Your fighters remaining
+                    - definition [ref=e1837]: "3"
+                  - generic [ref=e1838]:
+                    - term [ref=e1839]: Your infantry lost
+                    - definition [ref=e1841]: "2"
+                  - generic [ref=e1842]:
+                    - term [ref=e1843]: Your infantry remaining
+                    - definition [ref=e1845]: "4"
+                - generic [ref=e1846]:
+                  - generic [ref=e1847]:
+                    - term [ref=e1848]: Orbit
+                    - definition [ref=e1850]: You
+                  - generic [ref=e1851]:
+                    - term [ref=e1852]: Surface
+                    - definition [ref=e1854]: You
+                - group [ref=e1855]:
+                  - generic "Losses and effectiveness" [ref=e1856] [cursor=pointer]
+                - paragraph [ref=e1857]: 3.2 held credits released to you once.
+                - paragraph [ref=e1858]: "Output entitlement at the recorded tick: You receive orbital fighters and science. You receive surface infantry."
+                - group [ref=e1859]:
+                  - generic "Participants and resolution" [ref=e1860] [cursor=pointer]
+              - group "Report history"
+              - group "Recorded arrivals" [ref=e1861]:
+                - button "Nikawiy · tick 8" [pressed] [ref=e1862] [cursor=pointer]
+                - button "Nikawiy · tick 4" [ref=e1863] [cursor=pointer]
+              - paragraph [ref=e1864]: Beginning of your loaded arrival history.
+            - generic [ref=e1865]:
+              - button "Back to galaxy" [ref=e1866] [cursor=pointer]
+              - button "Inspect surface" [ref=e1867] [cursor=pointer]
+        - heading "Fleet contacts · acquired and last-seen intelligence" [level=2] [ref=e1868]
+        - region "Fleet contacts" [ref=e1870]:
+          - generic "Last observed fleet positions. Select a contact in the list to center its recorded location.":
+            - paragraph:
+              - text: Observed positions · tick 0
+              - text: Contacts do not track hidden movement.
+          - region "Contact details" [ref=e1871]:
+            - paragraph [ref=e1872]: Your acquired intelligence
+            - heading "Fleet contacts" [level=2] [ref=e1873]
+            - paragraph [ref=e1874]: Last seen in loaded history. A missed scan does not confirm movement, changes or destruction.
+            - paragraph [ref=e1875]: No fleet contacts in the records loaded.
+            - group "Observed fleets"
+            - paragraph [ref=e1876]: Beginning of your available history.
+          - button "Back to galaxy" [ref=e1878] [cursor=pointer]
+        - region "Fleet contacts" [ref=e1880]:
+          - generic "Last observed fleet positions. Select a contact in the list to center its recorded location.":
+            - paragraph:
+              - text: Observed positions · tick 0
+              - text: Contacts do not track hidden movement.
+          - region "Contact details" [ref=e1881]:
+            - paragraph [ref=e1882]: Your acquired intelligence
+            - heading "Fleet contacts" [level=2] [ref=e1883]
+            - paragraph [ref=e1884]: Last seen in loaded history. A missed scan does not confirm movement, changes or destruction.
+            - status [ref=e1886]: Loading authorized contact records…
+            - group "Observed fleets"
+          - button "Back to galaxy" [ref=e1888] [cursor=pointer]
+        - region "Fleet contacts" [ref=e1890]:
+          - generic "Last observed fleet positions. Select a contact in the list to center its recorded location.":
+            - paragraph:
+              - text: Observed positions · tick 1
+              - text: Contacts do not track hidden movement.
+          - region "Contact details" [ref=e1891]:
+            - paragraph [ref=e1892]: Your acquired intelligence
+            - heading "Fleet contacts" [level=2] [ref=e1893]
+            - paragraph [ref=e1894]: Last seen in loaded history. A missed scan does not confirm movement, changes or destruction.
+            - article "Selected fleet contact" [ref=e1895]:
+              - heading "Envoy 1 · Fleet 7" [level=3] [ref=e1896]:
+                - img [ref=e1897]
+                - text: Envoy 1 · Fleet 7
+              - paragraph [ref=e1900]: Observed tick 1 · Current tick observation
+              - generic [ref=e1901]:
+                - term [ref=e1902]: Fighters observed
+                - definition [ref=e1903]: "2"
+                - term [ref=e1904]: Infantry observed
+                - definition [ref=e1905]: "10"
+                - term [ref=e1906]: Observed coordinates (ly)
+                - definition [ref=e1907]: "-68.18, -0.17, -50.76"
+              - paragraph [ref=e1908]: Route and destination are private.
+            - group "Observed fleets" [ref=e1909]:
+              - button "Envoy 1 · Fleet 7 Observed tick 1" [pressed] [ref=e1910] [cursor=pointer]:
+                - text: Envoy 1 · Fleet 7
+                - generic [ref=e1911]: Observed tick 1
+            - paragraph [ref=e1912]: Beginning of your available history.
+          - button "Back to galaxy" [ref=e1914] [cursor=pointer]
+        - region "Fleet contacts" [ref=e1916]:
+          - generic "Last observed fleet positions. Select a contact in the list to center its recorded location.":
+            - paragraph:
+              - text: Observed positions · tick 1
+              - text: Contacts do not track hidden movement.
+          - region "Contact details" [ref=e1917]:
+            - paragraph [ref=e1918]: Your acquired intelligence
+            - heading "Fleet contacts" [level=2] [ref=e1919]
+            - paragraph [ref=e1920]: Last seen in loaded history. A missed scan does not confirm movement, changes or destruction.
+            - alert [ref=e1922]: History could not be recovered. Check your connection and retry. Your current records remain in place.
+            - article "Selected fleet contact" [ref=e1923]:
+              - heading "Envoy 1 · Fleet 7" [level=3] [ref=e1924]:
+                - img [ref=e1925]
+                - text: Envoy 1 · Fleet 7
+              - paragraph [ref=e1928]: Observed tick 1 · Current tick observation
+              - generic [ref=e1929]:
+                - term [ref=e1930]: Fighters observed
+                - definition [ref=e1931]: "2"
+                - term [ref=e1932]: Infantry observed
+                - definition [ref=e1933]: "10"
+                - term [ref=e1934]: Observed coordinates (ly)
+                - definition [ref=e1935]: "-68.18, -0.17, -50.76"
+              - paragraph [ref=e1936]: Route and destination are private.
+            - group "Observed fleets" [ref=e1937]:
+              - button "Envoy 1 · Fleet 7 Observed tick 1" [pressed] [ref=e1938] [cursor=pointer]:
+                - text: Envoy 1 · Fleet 7
+                - generic [ref=e1939]: Observed tick 1
+          - generic [ref=e1940]:
+            - button "Retry contact history" [ref=e1941] [cursor=pointer]
+            - button "Back to galaxy" [ref=e1942] [cursor=pointer]
+        - region "Fleet contacts" [ref=e1944]:
+          - generic "Last observed fleet positions. Select a contact in the list to center its recorded location.":
+            - paragraph:
+              - text: Observed positions · tick 2
+              - text: Contacts do not track hidden movement.
+          - region "Contact details" [ref=e1945]:
+            - paragraph [ref=e1946]: Your acquired intelligence
+            - heading "Fleet contacts" [level=2] [ref=e1947]
+            - paragraph [ref=e1948]: Last seen in loaded history. A missed scan does not confirm movement, changes or destruction.
+            - article "Selected fleet contact" [ref=e1949]:
+              - heading "Envoy 1 · Fleet 7" [level=3] [ref=e1950]:
+                - img [ref=e1951]
+                - text: Envoy 1 · Fleet 7
+              - paragraph [ref=e1954]: Observed tick 1 · Last seen; current position unknown
+              - generic [ref=e1955]:
+                - term [ref=e1956]: Fighters observed
+                - definition [ref=e1957]: "2"
+                - term [ref=e1958]: Infantry observed
+                - definition [ref=e1959]: "10"
+                - term [ref=e1960]: Observed coordinates (ly)
+                - definition [ref=e1961]: "-68.18, -0.17, -50.76"
+              - paragraph [ref=e1962]: Route and destination are private.
+            - group "Observed fleets" [ref=e1963]:
+              - button "Envoy 1 · Fleet 7 Observed tick 1" [pressed] [ref=e1964] [cursor=pointer]:
+                - text: Envoy 1 · Fleet 7
+                - generic [ref=e1965]: Observed tick 1
+            - paragraph [ref=e1966]: Beginning of your available history.
+          - button "Back to galaxy" [ref=e1968] [cursor=pointer]
+        - heading "Fleet routing · real catalogue and authoritative states" [level=2] [ref=e1969]
+        - region "Fleet route specimen 0" [ref=e1970]:
+          - region "Fleet route planner" [ref=e1972]:
+            - generic "Route chart. Use waypoint controls for keyboard planning." [ref=e1973]:
+              - generic:
+                - paragraph: Draft route · dashed
+                - paragraph: Range 10 ly per leg · Speed 2 ly/tick
+            - generic [ref=e1978]:
+              - heading "Plot a course" [level=2] [ref=e1979]
+              - paragraph [ref=e1980]: 2 fighters · 10 infantry aboard
+            - region "Route details" [ref=e1981]:
+              - region "Confirmed route forces" [ref=e1982]:
+                - region "Fleet transport manifest" [ref=e1983]:
+                  - heading "Forces to deploy" [level=3] [ref=e1984]
+                  - generic [ref=e1985]:
+                    - generic [ref=e1986]:
+                      - term [ref=e1987]: Fighters aboard
+                      - definition [ref=e1988]: "2"
+                    - generic [ref=e1989]:
+                      - term [ref=e1990]: Infantry aboard
+                      - definition [ref=e1991]: "10"
+                    - generic [ref=e1992]:
+                      - term [ref=e1993]: Transport capacity
+                      - definition [ref=e1994]: 10 / 20 infantry
+                      - meter "Infantry transport capacity" [ref=e1995]
+                - region "Confirmed origin defense" [ref=e1996]:
+                  - heading "Remaining at Sarin" [level=3] [ref=e1997]
+                  - generic [ref=e1998]:
+                    - generic [ref=e1999]:
+                      - term [ref=e2000]: Orbit garrison
+                      - definition [ref=e2001]: 19 fighters
+                    - generic [ref=e2002]:
+                      - term [ref=e2003]: Surface garrison
+                      - definition [ref=e2004]: 11 infantry
+                    - generic [ref=e2005]:
+                      - term [ref=e2006]: Other own stationed fleets
+                      - definition [ref=e2007]: 0 fighters · 0 infantry
+                  - paragraph [ref=e2008]: Confirmed now; other orders and ticks can change these forces before departure. Garrison counts already exclude this fleet.
+            - generic [ref=e2009]:
+              - paragraph [ref=e2010]:
+                - text: 3.50 ly · 2 ticks after departure
+                - text: 2 fighters · 10 infantry aboard · Capacity 20 infantry
+              - paragraph [ref=e2011]: "Garrison remaining: 19 fighters · 11 infantry. Current confirmed counts."
+              - button "Edit route" [ref=e2012] [cursor=pointer]
+              - generic [ref=e2013]:
+                - button "Back to fleets" [ref=e2014] [cursor=pointer]
+                - button "Send fleet" [ref=e2015] [cursor=pointer]
+        - region "Fleet route specimen 2400" [ref=e2016]:
+          - region "Fleet route planner" [ref=e2018]:
+            - generic "Route chart. Use waypoint controls for keyboard planning." [ref=e2019]:
+              - generic:
+                - paragraph: Accepted route
+                - paragraph: Range 10 ly per leg · Speed 2 ly/tick
+            - generic [ref=e2024]:
+              - heading "Departure accepted" [level=2] [ref=e2025]
+              - paragraph [ref=e2026]: 2 fighters · 10 infantry aboard
+            - region "Route details" [ref=e2027]:
+              - region "Confirmed route forces" [ref=e2028]:
+                - region "Fleet transport manifest" [ref=e2029]:
+                  - heading "Forces aboard" [level=3] [ref=e2030]
+                  - generic [ref=e2031]:
+                    - generic [ref=e2032]:
+                      - term [ref=e2033]: Fighters aboard
+                      - definition [ref=e2034]: "2"
+                    - generic [ref=e2035]:
+                      - term [ref=e2036]: Infantry aboard
+                      - definition [ref=e2037]: "10"
+                    - generic [ref=e2038]:
+                      - term [ref=e2039]: Transport capacity
+                      - definition [ref=e2040]: 10 / 20 infantry
+                      - meter "Infantry transport capacity" [ref=e2041]
+                - region "Confirmed origin defense" [ref=e2042]:
+                  - heading "Remaining at Sarin" [level=3] [ref=e2043]
+                  - generic [ref=e2044]:
+                    - generic [ref=e2045]:
+                      - term [ref=e2046]: Orbit garrison
+                      - definition [ref=e2047]: 19 fighters
+                    - generic [ref=e2048]:
+                      - term [ref=e2049]: Surface garrison
+                      - definition [ref=e2050]: 11 infantry
+                    - generic [ref=e2051]:
+                      - term [ref=e2052]: Other own stationed fleets
+                      - definition [ref=e2053]: 0 fighters · 0 infantry
+                  - paragraph [ref=e2054]: Confirmed now; other orders and ticks can change these forces before departure. Garrison counts already exclude this fleet.
+              - status [ref=e2055]: Route accepted · departure tick 2 · first arrival tick 4, subject to execution validation.
+              - list "Route waypoints" [ref=e2056]:
+                - listitem [ref=e2057]: Nikawiy
+            - generic [ref=e2058]:
+              - paragraph [ref=e2059]: An accepted route is already in progress.
+              - generic [ref=e2060]:
+                - button "Back to fleets" [ref=e2061] [cursor=pointer]
+                - button "Send fleet" [disabled] [ref=e2062]
+        - region "Fleet route specimen 3400" [ref=e2063]:
+          - region "Fleet route planner" [ref=e2065]:
+            - generic "Route chart. Use waypoint controls for keyboard planning." [ref=e2066]:
+              - generic:
+                - paragraph: Traveling
+                - paragraph: Range 10 ly per leg · Speed 2 ly/tick
+            - generic [ref=e2071]:
+              - heading "Fleet en route" [level=2] [ref=e2072]
+              - paragraph [ref=e2073]: 2 fighters · 10 infantry aboard
+            - region "Route details" [ref=e2074]:
+              - region "Confirmed route forces" [ref=e2075]:
+                - region "Fleet transport manifest" [ref=e2076]:
+                  - heading "Forces aboard" [level=3] [ref=e2077]
+                  - generic [ref=e2078]:
+                    - generic [ref=e2079]:
+                      - term [ref=e2080]: Fighters aboard
+                      - definition [ref=e2081]: "2"
+                    - generic [ref=e2082]:
+                      - term [ref=e2083]: Infantry aboard
+                      - definition [ref=e2084]: "10"
+                    - generic [ref=e2085]:
+                      - term [ref=e2086]: Transport capacity
+                      - definition [ref=e2087]: 10 / 20 infantry
+                      - meter "Infantry transport capacity" [ref=e2088]
+              - status [ref=e2089]: Traveling · Nikawiy · arrival tick 4.
+              - list "Route waypoints" [ref=e2090]:
+                - listitem [ref=e2091]: Nikawiy
+            - generic [ref=e2092]:
+              - paragraph [ref=e2093]: An accepted route is already in progress.
+              - generic [ref=e2094]:
+                - button "Back to fleets" [ref=e2095] [cursor=pointer]
+                - button "Send fleet" [disabled] [ref=e2096]
+        - region "Fleet route specimen 5000" [ref=e2097]:
+          - region "Fleet route planner" [ref=e2099]:
+            - generic "Route chart. Use waypoint controls for keyboard planning." [ref=e2100]:
+              - generic:
+                - paragraph: Arrival resolved
+                - paragraph: Range 10 ly per leg · Speed 2 ly/tick
+            - generic [ref=e2105]:
+              - heading "Arrival resolved" [level=2] [ref=e2106]
+              - paragraph [ref=e2107]: 2 fighters · 0 infantry aboard
+            - region "Route details" [ref=e2108]:
+              - region "Confirmed route forces" [ref=e2109]:
+                - region "Fleet transport manifest" [ref=e2110]:
+                  - heading "Forces to deploy" [level=3] [ref=e2111]
+                  - generic [ref=e2112]:
+                    - generic [ref=e2113]:
+                      - term [ref=e2114]: Fighters aboard
+                      - definition [ref=e2115]: "2"
+                    - generic [ref=e2116]:
+                      - term [ref=e2117]: Infantry aboard
+                      - definition [ref=e2118]: "0"
+                    - generic [ref=e2119]:
+                      - term [ref=e2120]: Transport capacity
+                      - definition [ref=e2121]: 0 / 20 infantry
+                      - meter "Infantry transport capacity" [ref=e2122]
+                - region "Confirmed origin defense" [ref=e2123]:
+                  - heading "Remaining at Nikawiy" [level=3] [ref=e2124]
+                  - generic [ref=e2125]:
+                    - generic [ref=e2126]:
+                      - term [ref=e2127]: Orbit garrison
+                      - definition [ref=e2128]: 0 fighters
+                    - generic [ref=e2129]:
+                      - term [ref=e2130]: Surface garrison
+                      - definition [ref=e2131]: 10 infantry
+                    - generic [ref=e2132]:
+                      - term [ref=e2133]: Other own stationed fleets
+                      - definition [ref=e2134]: 0 fighters · 0 infantry
+                  - paragraph [ref=e2135]: Confirmed now; other orders and ticks can change these forces before departure. Garrison counts already exclude this fleet.
+              - status [ref=e2136]: Arrived at Nikawiy. 2 fighters · 0 infantry aboard.
+              - article "Arrival report" [ref=e2137]:
+                - heading "Nikawiy · tick 4" [level=3] [ref=e2138]
+                - paragraph [ref=e2139]: "Arrival resolved. Your forces: 2 → 2 fighters; 10 → 10 infantry, including the surface."
+                - paragraph [ref=e2140]: "Orbit: Envoy 1. Surface: Envoy 1."
+            - generic [ref=e2142]:
+              - button "Back to fleets" [ref=e2143] [cursor=pointer]
+              - button "Plan another route" [ref=e2144] [cursor=pointer]
+        - heading "Fleet cancellation · reservations released" [level=2] [ref=e2145]
+        - region "Fleet preparation" [ref=e2147]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e2148]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e2149]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e2152]:
+            - navigation "Stationed fleets" [ref=e2153]:
+              - button "New fleet" [pressed] [ref=e2154] [cursor=pointer]
+            - heading "Assemble a fleet" [level=3] [ref=e2155]
+            - paragraph [ref=e2156]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e2157]:
+              - generic [ref=e2158]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e2159]: "1"
+                - generic [ref=e2160]: 18 available · 2 reserved
+              - generic [ref=e2161]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e2162]: "0"
+                - generic [ref=e2163]: 10 available · 10 reserved
+            - paragraph [ref=e2164]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e2165]:
+              - heading "Accepted orders" [level=3] [ref=e2166]
+              - paragraph [ref=e2167]: Form · 2 fighters · 10 infantry · tick 1
+              - button "Review cancellation · order 1" [ref=e2168] [cursor=pointer]
+          - generic [ref=e2170]:
+            - button "Back to system" [ref=e2171] [cursor=pointer]
+            - button "Form fleet" [ref=e2172] [cursor=pointer]
+        - region "Fleet preparation" [ref=e2174]:
+          - generic:
+            - img "Fighter transport stationed at an orbital hangar above a planet"
+            - generic [ref=e2175]:
+              - paragraph: Sarin · Orbital forces
+              - heading "Fleet preparation" [level=2]:
+                - img [ref=e2176]
+                - text: Fleet preparation
+          - region "Fleet manifest and orders" [ref=e2179]:
+            - navigation "Stationed fleets" [ref=e2180]:
+              - button "New fleet" [pressed] [ref=e2181] [cursor=pointer]
+            - heading "Assemble a fleet" [level=3] [ref=e2182]
+            - paragraph [ref=e2183]: Reserve local forces now. They assemble at the order’s scheduled tick.
+            - generic [ref=e2184]:
+              - generic [ref=e2185]:
+                - text: Fighters
+                - spinbutton "Fighters" [ref=e2186]: "1"
+                - generic [ref=e2187]: 20 available · 0 reserved
+              - generic [ref=e2188]:
+                - text: Infantry
+                - spinbutton "Infantry" [ref=e2189]: "0"
+                - generic [ref=e2190]: 20 available · 0 reserved
+            - paragraph [ref=e2191]: Each fighter carries ten infantry. Embarkation requires your control of orbit and surface.
+            - region "Accepted fleet orders" [ref=e2192]:
+              - heading "Accepted orders" [level=3] [ref=e2193]
+              - paragraph [ref=e2194]: No fleet orders are waiting.
+          - generic [ref=e2195]:
+            - status [ref=e2198]: Fleet order cancelled. Reservations released; no forces moved.
+            - generic [ref=e2199]:
+              - button "Back to system" [ref=e2200] [cursor=pointer]
+              - button "Form fleet" [ref=e2201] [cursor=pointer]
+        - heading "Stellar observations · entitled report states" [level=2] [ref=e2202]
+        - region "Stellar observation" [ref=e2204]:
+          - heading "Observation" [level=3] [ref=e2205]
+          - status "Observation age" [ref=e2206]: — Unknown · no observation acquired
+          - paragraph [ref=e2207]: Ownership, completed developments and stationed forces remain unknown until an observation succeeds.
+          - region "Scanning capability" [ref=e2208]:
+            - heading "Your scanning" [level=4] [ref=e2209]
+            - paragraph [ref=e2210]: Level 1 · nearest orbital sensor 120.2 light years away.
+            - paragraph [ref=e2211]: 8.3% acquisition probability each tick.
+            - paragraph [ref=e2212]: Scans happen automatically. A missed scan preserves the last report; it does not mean the system is empty. Owned layers remain current in System.
+        - region "Stellar observation" [ref=e2214]:
+          - heading "Observation" [level=3] [ref=e2215]
+          - status "Observation age" [ref=e2216]: Current observation · tick 1
+          - paragraph [ref=e2217]: Observed from Sarin.
+          - generic [ref=e2218]:
+            - generic [ref=e2219]:
+              - term [ref=e2220]: Orbit owner
+              - definition [ref=e2221]: Envoy 2
+            - generic [ref=e2222]:
+              - term [ref=e2223]: Surface owner
+              - definition [ref=e2224]: Envoy 2
+            - generic [ref=e2225]:
+              - term [ref=e2226]: Stationed fighters
+              - definition [ref=e2227]: "21"
+            - generic [ref=e2228]:
+              - term [ref=e2229]: Stationed infantry
+              - definition [ref=e2230]: "21"
+            - generic [ref=e2231]:
+              - term [ref=e2232]: Markets
+              - definition [ref=e2233]: "2"
+            - generic [ref=e2234]:
+              - term [ref=e2235]: Training camps
+              - definition [ref=e2236]: "1"
+            - generic [ref=e2237]:
+              - term [ref=e2238]: Bases
+              - definition [ref=e2239]: "1"
+            - generic [ref=e2240]:
+              - term [ref=e2241]: Space stations
+              - definition [ref=e2242]: "1"
+          - paragraph [ref=e2243]: These facts were acquired at the last confirmed tick.
+          - region "Scanning capability" [ref=e2244]:
+            - heading "Your scanning" [level=4] [ref=e2245]
+            - paragraph [ref=e2246]: Level 1 · nearest orbital sensor 120.2 light years away.
+            - paragraph [ref=e2247]: 8.3% acquisition probability each tick.
+            - paragraph [ref=e2248]: Scans happen automatically. A missed scan preserves the last report; it does not mean the system is empty. Owned layers remain current in System.
+        - region "Stellar observation" [ref=e2250]:
+          - heading "Observation" [level=3] [ref=e2251]
+          - status "Observation age" [ref=e2252]: Last observed 1 tick ago · tick 1
+          - paragraph [ref=e2253]: Observed from Sarin.
+          - generic [ref=e2254]:
+            - generic [ref=e2255]:
+              - term [ref=e2256]: Orbit owner
+              - definition [ref=e2257]: Envoy 2
+            - generic [ref=e2258]:
+              - term [ref=e2259]: Surface owner
+              - definition [ref=e2260]: Envoy 2
+            - generic [ref=e2261]:
+              - term [ref=e2262]: Stationed fighters
+              - definition [ref=e2263]: "21"
+            - generic [ref=e2264]:
+              - term [ref=e2265]: Stationed infantry
+              - definition [ref=e2266]: "21"
+            - generic [ref=e2267]:
+              - term [ref=e2268]: Markets
+              - definition [ref=e2269]: "2"
+            - generic [ref=e2270]:
+              - term [ref=e2271]: Training camps
+              - definition [ref=e2272]: "1"
+            - generic [ref=e2273]:
+              - term [ref=e2274]: Bases
+              - definition [ref=e2275]: "1"
+            - generic [ref=e2276]:
+              - term [ref=e2277]: Space stations
+              - definition [ref=e2278]: "1"
+          - paragraph [ref=e2279]: These are historical facts. Ownership and forces may have changed.
+          - region "Scanning capability" [ref=e2280]:
+            - heading "Your scanning" [level=4] [ref=e2281]
+            - paragraph [ref=e2282]: Level 1 · nearest orbital sensor 120.2 light years away.
+            - paragraph [ref=e2283]: 8.3% acquisition probability each tick.
+            - paragraph [ref=e2284]: Scans happen automatically. A missed scan preserves the last report; it does not mean the system is empty. Owned layers remain current in System.
+        - region "Stellar observation" [ref=e2286]:
+          - heading "Observation" [level=3] [ref=e2287]
+          - paragraph [ref=e2288]: This campaign preserves its earlier sensor behavior. Create a new development campaign for automatic observations. Your owned layers remain current in System.
+        - heading "Market focus · production allocation and icons" [level=2] [ref=e2289]
+        - img [ref=e2290]
+        - text: market
+        - img [ref=e2293]
+        - text: camp
+        - img [ref=e2295]
+        - text: base
+        - img [ref=e2297]
+        - text: station
+        - region "Market focus" [ref=e2302]:
+          - generic [ref=e2303]:
+            - paragraph [ref=e2304]: Your markets
+            - heading "Market focus" [level=2] [ref=e2305]
+          - generic [ref=e2306]:
+            - region "Focus allocation details" [ref=e2307]:
+              - paragraph [ref=e2308]: Allocate 100 points across the developments you expect other empires to complete.
+              - generic [ref=e2309]:
+                - group "Market" [ref=e2310]:
+                  - generic [ref=e2311]: Market
+                  - generic [ref=e2312]:
+                    - img [ref=e2314]
+                    - generic [ref=e2317]:
+                      - progressbar "Market allocation" [ref=e2318]
+                      - generic [ref=e2319]: Current 25
+                    - button "Decrease Market focus" [ref=e2320] [cursor=pointer]: −
+                    - generic [ref=e2321]:
+                      - generic [ref=e2322]: Market points
+                      - spinbutton "Market points" [ref=e2323]: "25"
+                    - button "Increase Market focus" [ref=e2324] [cursor=pointer]: +
+                - group "Training camp" [ref=e2325]:
+                  - generic [ref=e2326]: Training camp
+                  - generic [ref=e2327]:
+                    - img [ref=e2329]
+                    - generic [ref=e2331]:
+                      - progressbar "Training camp allocation" [ref=e2332]
+                      - generic [ref=e2333]: Current 25
+                    - button "Decrease Training camp focus" [ref=e2334] [cursor=pointer]: −
+                    - generic [ref=e2335]:
+                      - generic [ref=e2336]: Training camp points
+                      - spinbutton "Training camp points" [ref=e2337]: "25"
+                    - button "Increase Training camp focus" [ref=e2338] [cursor=pointer]: +
+                - group "Base" [ref=e2339]:
+                  - generic [ref=e2340]: Base
+                  - generic [ref=e2341]:
+                    - img [ref=e2343]
+                    - generic [ref=e2345]:
+                      - progressbar "Base allocation" [ref=e2346]
+                      - generic [ref=e2347]: Current 25
+                    - button "Decrease Base focus" [ref=e2348] [cursor=pointer]: −
+                    - generic [ref=e2349]:
+                      - generic [ref=e2350]: Base points
+                      - spinbutton "Base points" [ref=e2351]: "25"
+                    - button "Increase Base focus" [ref=e2352] [cursor=pointer]: +
+                - group "Space station" [ref=e2353]:
+                  - generic [ref=e2354]: Space station
+                  - generic [ref=e2355]:
+                    - img [ref=e2357]
+                    - generic [ref=e2361]:
+                      - progressbar "Space station allocation" [ref=e2362]
+                      - generic [ref=e2363]: Current 25
+                    - button "Decrease Space station focus" [ref=e2364] [cursor=pointer]: −
+                    - generic [ref=e2365]:
+                      - generic [ref=e2366]: Space station points
+                      - spinbutton "Space station points" [ref=e2367]: "25"
+                    - button "Increase Space station focus" [ref=e2368] [cursor=pointer]: +
+              - group [ref=e2369]:
+                - generic "Market focus rules" [ref=e2370] [cursor=pointer]
+              - region "Focus timing" [ref=e2371]:
+                - heading "When it takes effect" [level=3] [ref=e2372]
+                - paragraph [ref=e2373]: Other empires’ completions create a shared dividend pool; a higher allocation increases your markets’ share for that type. Future purchases and returns are uncertain. The order applies at its next eligible tick. Dividends use the focus frozen at the beginning of that tick, so your new allocation first affects the following tick. Your own builds never pay your markets.
+                - paragraph [ref=e2374]: Development campaign · Market dividend rules remain under review.
+            - generic [ref=e2375]:
+              - generic [ref=e2376]:
+                - strong [ref=e2377]: 100 / 100 allocated
+                - generic [ref=e2378]: 0 remaining
+              - group "Market focus acknowledgement" [ref=e2379]:
+                - paragraph [ref=e2380]: This allocation is already configured.
+              - generic [ref=e2381]:
+                - button "Back to economy" [ref=e2382] [cursor=pointer]
+                - button "Apply focus" [disabled] [ref=e2383]
+        - region "Market focus" [ref=e2385]:
+          - generic [ref=e2386]:
+            - paragraph [ref=e2387]: Your markets
+            - heading "Market focus" [level=2] [ref=e2388]
+          - generic [ref=e2389]:
+            - region "Focus allocation details" [ref=e2390]:
+              - paragraph [ref=e2391]: Allocate 100 points across the developments you expect other empires to complete.
+              - generic [ref=e2392]:
+                - group "Market" [ref=e2393]:
+                  - generic [ref=e2394]: Market
+                  - generic [ref=e2395]:
+                    - img [ref=e2397]
+                    - generic [ref=e2400]:
+                      - progressbar "Market allocation" [ref=e2401]
+                      - generic [ref=e2402]: Current 25
+                    - button "Decrease Market focus" [disabled] [ref=e2403]: −
+                    - generic [ref=e2404]:
+                      - generic [ref=e2405]: Market points
+                      - spinbutton "Market points" [disabled] [ref=e2406]: "40"
+                    - button "Increase Market focus" [disabled] [ref=e2407]: +
+                - group "Training camp" [ref=e2408]:
+                  - generic [ref=e2409]: Training camp
+                  - generic [ref=e2410]:
+                    - img [ref=e2412]
+                    - generic [ref=e2414]:
+                      - progressbar "Training camp allocation" [ref=e2415]
+                      - generic [ref=e2416]: Current 25
+                    - button "Decrease Training camp focus" [disabled] [ref=e2417]: −
+                    - generic [ref=e2418]:
+                      - generic [ref=e2419]: Training camp points
+                      - spinbutton "Training camp points" [disabled] [ref=e2420]: "20"
+                    - button "Increase Training camp focus" [disabled] [ref=e2421]: +
+                - group "Base" [ref=e2422]:
+                  - generic [ref=e2423]: Base
+                  - generic [ref=e2424]:
+                    - img [ref=e2426]
+                    - generic [ref=e2428]:
+                      - progressbar "Base allocation" [ref=e2429]
+                      - generic [ref=e2430]: Current 25
+                    - button "Decrease Base focus" [disabled] [ref=e2431]: −
+                    - generic [ref=e2432]:
+                      - generic [ref=e2433]: Base points
+                      - spinbutton "Base points" [disabled] [ref=e2434]: "20"
+                    - button "Increase Base focus" [disabled] [ref=e2435]: +
+                - group "Space station" [ref=e2436]:
+                  - generic [ref=e2437]: Space station
+                  - generic [ref=e2438]:
+                    - img [ref=e2440]
+                    - generic [ref=e2444]:
+                      - progressbar "Space station allocation" [ref=e2445]
+                      - generic [ref=e2446]: Current 25
+                    - button "Decrease Space station focus" [disabled] [ref=e2447]: −
+                    - generic [ref=e2448]:
+                      - generic [ref=e2449]: Space station points
+                      - spinbutton "Space station points" [disabled] [ref=e2450]: "20"
+                    - button "Increase Space station focus" [disabled] [ref=e2451]: +
+              - group [ref=e2452]:
+                - generic "Market focus rules" [ref=e2453] [cursor=pointer]
+              - region "Focus timing" [ref=e2454]:
+                - heading "When it takes effect" [level=3] [ref=e2455]
+                - paragraph [ref=e2456]: Other empires’ completions create a shared dividend pool; a higher allocation increases your markets’ share for that type. Future purchases and returns are uncertain. The order applies at its next eligible tick. Dividends use the focus frozen at the beginning of that tick, so your new allocation first affects the following tick. Your own builds never pay your markets.
+                - heading "Accepted orders" [level=3] [ref=e2457]
+                - list [ref=e2458]:
+                  - listitem [ref=e2459]:
+                    - text: Applies tick 1 · dividends from tick 2
+                    - generic [ref=e2460]: Market 40 · Training camp 20 · Base 20 · Space station 20
+                - paragraph [ref=e2461]: Development campaign · Market dividend rules remain under review.
+            - generic [ref=e2462]:
+              - generic [ref=e2463]:
+                - strong [ref=e2464]: 100 / 100 allocated
+                - generic [ref=e2465]: 0 remaining
+              - group "Market focus acknowledgement" [ref=e2466]:
+                - status [ref=e2468]: Awaiting acknowledgement…
+                - paragraph [ref=e2469]: This allocation is already configured.
+              - generic [ref=e2470]:
+                - button "Back to economy" [ref=e2471] [cursor=pointer]
+                - button "Apply focus" [disabled] [ref=e2472]
+        - region "Market focus" [ref=e2474]:
+          - generic [ref=e2475]:
+            - paragraph [ref=e2476]: Your markets
+            - heading "Market focus" [level=2] [ref=e2477]
+          - generic [ref=e2478]:
+            - region "Focus allocation details" [ref=e2479]:
+              - paragraph [ref=e2480]: Allocate 100 points across the developments you expect other empires to complete.
+              - generic [ref=e2481]:
+                - group "Market" [ref=e2482]:
+                  - generic [ref=e2483]: Market
+                  - generic [ref=e2484]:
+                    - img [ref=e2486]
+                    - generic [ref=e2489]:
+                      - progressbar "Market allocation" [ref=e2490]
+                      - generic [ref=e2491]: Current 25
+                    - button "Decrease Market focus" [disabled] [ref=e2492]: −
+                    - generic [ref=e2493]:
+                      - generic [ref=e2494]: Market points
+                      - spinbutton "Market points" [disabled] [ref=e2495]: "40"
+                    - button "Increase Market focus" [disabled] [ref=e2496]: +
+                - group "Training camp" [ref=e2497]:
+                  - generic [ref=e2498]: Training camp
+                  - generic [ref=e2499]:
+                    - img [ref=e2501]
+                    - generic [ref=e2503]:
+                      - progressbar "Training camp allocation" [ref=e2504]
+                      - generic [ref=e2505]: Current 25
+                    - button "Decrease Training camp focus" [disabled] [ref=e2506]: −
+                    - generic [ref=e2507]:
+                      - generic [ref=e2508]: Training camp points
+                      - spinbutton "Training camp points" [disabled] [ref=e2509]: "20"
+                    - button "Increase Training camp focus" [disabled] [ref=e2510]: +
+                - group "Base" [ref=e2511]:
+                  - generic [ref=e2512]: Base
+                  - generic [ref=e2513]:
+                    - img [ref=e2515]
+                    - generic [ref=e2517]:
+                      - progressbar "Base allocation" [ref=e2518]
+                      - generic [ref=e2519]: Current 25
+                    - button "Decrease Base focus" [disabled] [ref=e2520]: −
+                    - generic [ref=e2521]:
+                      - generic [ref=e2522]: Base points
+                      - spinbutton "Base points" [disabled] [ref=e2523]: "20"
+                    - button "Increase Base focus" [disabled] [ref=e2524]: +
+                - group "Space station" [ref=e2525]:
+                  - generic [ref=e2526]: Space station
+                  - generic [ref=e2527]:
+                    - img [ref=e2529]
+                    - generic [ref=e2533]:
+                      - progressbar "Space station allocation" [ref=e2534]
+                      - generic [ref=e2535]: Current 25
+                    - button "Decrease Space station focus" [disabled] [ref=e2536]: −
+                    - generic [ref=e2537]:
+                      - generic [ref=e2538]: Space station points
+                      - spinbutton "Space station points" [disabled] [ref=e2539]: "20"
+                    - button "Increase Space station focus" [disabled] [ref=e2540]: +
+              - group [ref=e2541]:
+                - generic "Market focus rules" [ref=e2542] [cursor=pointer]
+              - region "Focus timing" [ref=e2543]:
+                - heading "When it takes effect" [level=3] [ref=e2544]
+                - paragraph [ref=e2545]: Other empires’ completions create a shared dividend pool; a higher allocation increases your markets’ share for that type. Future purchases and returns are uncertain. The order applies at its next eligible tick. Dividends use the focus frozen at the beginning of that tick, so your new allocation first affects the following tick. Your own builds never pay your markets.
+                - heading "Accepted orders" [level=3] [ref=e2546]
+                - list [ref=e2547]:
+                  - listitem [ref=e2548]:
+                    - text: Applies tick 1 · dividends from tick 2
+                    - generic [ref=e2549]: Market 40 · Training camp 20 · Base 20 · Space station 20
+                - paragraph [ref=e2550]: Development campaign · Market dividend rules remain under review.
+            - generic [ref=e2551]:
+              - generic [ref=e2552]:
+                - strong [ref=e2553]: 100 / 100 allocated
+                - generic [ref=e2554]: 0 remaining
+              - group "Market focus acknowledgement" [ref=e2555]:
+                - alert [ref=e2557]: The connection was interrupted. Your allocation is preserved.
+                - paragraph [ref=e2558]: This allocation is already configured.
+              - generic [ref=e2559]:
+                - button "Back to economy" [ref=e2560] [cursor=pointer]
+                - button "Reconnect" [ref=e2561] [cursor=pointer]
+                - button "Apply focus" [disabled] [ref=e2562]
+        - region "Market focus" [ref=e2564]:
+          - generic [ref=e2565]:
+            - paragraph [ref=e2566]: Your markets
+            - heading "Market focus" [level=2] [ref=e2567]
+          - generic [ref=e2568]:
+            - region "Focus allocation details" [ref=e2569]:
+              - paragraph [ref=e2570]: Allocate 100 points across the developments you expect other empires to complete.
+              - generic [ref=e2571]:
+                - group "Market" [ref=e2572]:
+                  - generic [ref=e2573]: Market
+                  - generic [ref=e2574]:
+                    - img [ref=e2576]
+                    - generic [ref=e2579]:
+                      - progressbar "Market allocation" [ref=e2580]
+                      - generic [ref=e2581]: Current 25
+                    - button "Decrease Market focus" [ref=e2582] [cursor=pointer]: −
+                    - generic [ref=e2583]:
+                      - generic [ref=e2584]: Market points
+                      - spinbutton "Market points" [ref=e2585]: "40"
+                    - button "Increase Market focus" [ref=e2586] [cursor=pointer]: +
+                - group "Training camp" [ref=e2587]:
+                  - generic [ref=e2588]: Training camp
+                  - generic [ref=e2589]:
+                    - img [ref=e2591]
+                    - generic [ref=e2593]:
+                      - progressbar "Training camp allocation" [ref=e2594]
+                      - generic [ref=e2595]: Current 25
+                    - button "Decrease Training camp focus" [ref=e2596] [cursor=pointer]: −
+                    - generic [ref=e2597]:
+                      - generic [ref=e2598]: Training camp points
+                      - spinbutton "Training camp points" [ref=e2599]: "20"
+                    - button "Increase Training camp focus" [ref=e2600] [cursor=pointer]: +
+                - group "Base" [ref=e2601]:
+                  - generic [ref=e2602]: Base
+                  - generic [ref=e2603]:
+                    - img [ref=e2605]
+                    - generic [ref=e2607]:
+                      - progressbar "Base allocation" [ref=e2608]
+                      - generic [ref=e2609]: Current 25
+                    - button "Decrease Base focus" [ref=e2610] [cursor=pointer]: −
+                    - generic [ref=e2611]:
+                      - generic [ref=e2612]: Base points
+                      - spinbutton "Base points" [ref=e2613]: "20"
+                    - button "Increase Base focus" [ref=e2614] [cursor=pointer]: +
+                - group "Space station" [ref=e2615]:
+                  - generic [ref=e2616]: Space station
+                  - generic [ref=e2617]:
+                    - img [ref=e2619]
+                    - generic [ref=e2623]:
+                      - progressbar "Space station allocation" [ref=e2624]
+                      - generic [ref=e2625]: Current 25
+                    - button "Decrease Space station focus" [ref=e2626] [cursor=pointer]: −
+                    - generic [ref=e2627]:
+                      - generic [ref=e2628]: Space station points
+                      - spinbutton "Space station points" [ref=e2629]: "20"
+                    - button "Increase Space station focus" [ref=e2630] [cursor=pointer]: +
+              - group [ref=e2631]:
+                - generic "Market focus rules" [ref=e2632] [cursor=pointer]
+              - region "Focus timing" [ref=e2633]:
+                - heading "When it takes effect" [level=3] [ref=e2634]
+                - paragraph [ref=e2635]: Other empires’ completions create a shared dividend pool; a higher allocation increases your markets’ share for that type. Future purchases and returns are uncertain. The order applies at its next eligible tick. Dividends use the focus frozen at the beginning of that tick, so your new allocation first affects the following tick. Your own builds never pay your markets.
+                - heading "Accepted orders" [level=3] [ref=e2636]
+                - list [ref=e2637]:
+                  - listitem [ref=e2638]:
+                    - text: Applies tick 1 · dividends from tick 2
+                    - generic [ref=e2639]: Market 40 · Training camp 20 · Base 20 · Space station 20
+                - paragraph [ref=e2640]: Development campaign · Market dividend rules remain under review.
+            - generic [ref=e2641]:
+              - generic [ref=e2642]:
+                - strong [ref=e2643]: 100 / 100 allocated
+                - generic [ref=e2644]: 0 remaining
+              - group "Market focus acknowledgement" [ref=e2645]:
+                - paragraph [ref=e2646]: Market orders are paused. Resume the campaign to apply focus.
+              - generic [ref=e2647]:
+                - button "Back to economy" [ref=e2648] [cursor=pointer]
+                - button "Apply focus" [disabled] [ref=e2649]
+        - region "Market focus" [ref=e2651]:
+          - generic [ref=e2652]:
+            - paragraph [ref=e2653]: Your markets
+            - heading "Market focus" [level=2] [ref=e2654]
+          - generic [ref=e2655]:
+            - region "Focus allocation details" [ref=e2656]:
+              - paragraph [ref=e2657]: Allocate 100 points across the developments you expect other empires to complete.
+              - generic [ref=e2658]:
+                - group "Market" [ref=e2659]:
+                  - generic [ref=e2660]: Market
+                  - generic [ref=e2661]:
+                    - img [ref=e2663]
+                    - generic [ref=e2666]:
+                      - progressbar "Market allocation" [ref=e2667]
+                      - generic [ref=e2668]: Current 40
+                    - button "Decrease Market focus" [ref=e2669] [cursor=pointer]: −
+                    - generic [ref=e2670]:
+                      - generic [ref=e2671]: Market points
+                      - spinbutton "Market points" [ref=e2672]: "40"
+                    - button "Increase Market focus" [ref=e2673] [cursor=pointer]: +
+                - group "Training camp" [ref=e2674]:
+                  - generic [ref=e2675]: Training camp
+                  - generic [ref=e2676]:
+                    - img [ref=e2678]
+                    - generic [ref=e2680]:
+                      - progressbar "Training camp allocation" [ref=e2681]
+                      - generic [ref=e2682]: Current 20
+                    - button "Decrease Training camp focus" [ref=e2683] [cursor=pointer]: −
+                    - generic [ref=e2684]:
+                      - generic [ref=e2685]: Training camp points
+                      - spinbutton "Training camp points" [ref=e2686]: "20"
+                    - button "Increase Training camp focus" [ref=e2687] [cursor=pointer]: +
+                - group "Base" [ref=e2688]:
+                  - generic [ref=e2689]: Base
+                  - generic [ref=e2690]:
+                    - img [ref=e2692]
+                    - generic [ref=e2694]:
+                      - progressbar "Base allocation" [ref=e2695]
+                      - generic [ref=e2696]: Current 20
+                    - button "Decrease Base focus" [ref=e2697] [cursor=pointer]: −
+                    - generic [ref=e2698]:
+                      - generic [ref=e2699]: Base points
+                      - spinbutton "Base points" [ref=e2700]: "20"
+                    - button "Increase Base focus" [ref=e2701] [cursor=pointer]: +
+                - group "Space station" [ref=e2702]:
+                  - generic [ref=e2703]: Space station
+                  - generic [ref=e2704]:
+                    - img [ref=e2706]
+                    - generic [ref=e2710]:
+                      - progressbar "Space station allocation" [ref=e2711]
+                      - generic [ref=e2712]: Current 20
+                    - button "Decrease Space station focus" [ref=e2713] [cursor=pointer]: −
+                    - generic [ref=e2714]:
+                      - generic [ref=e2715]: Space station points
+                      - spinbutton "Space station points" [ref=e2716]: "20"
+                    - button "Increase Space station focus" [ref=e2717] [cursor=pointer]: +
+              - group [ref=e2718]:
+                - generic "Market focus rules" [ref=e2719] [cursor=pointer]
+              - region "Focus timing" [ref=e2720]:
+                - heading "When it takes effect" [level=3] [ref=e2721]
+                - paragraph [ref=e2722]: Other empires’ completions create a shared dividend pool; a higher allocation increases your markets’ share for that type. Future purchases and returns are uncertain. The order applies at its next eligible tick. Dividends use the focus frozen at the beginning of that tick, so your new allocation first affects the following tick. Your own builds never pay your markets.
+                - status "Applied market focus" [ref=e2723]: Focus applied at tick 1. Dividends use it from tick 2.
+                - paragraph [ref=e2724]: Development campaign · Market dividend rules remain under review.
+            - generic [ref=e2725]:
+              - generic [ref=e2726]:
+                - strong [ref=e2727]: 100 / 100 allocated
+                - generic [ref=e2728]: 0 remaining
+              - group "Market focus acknowledgement" [ref=e2729]:
+                - paragraph [ref=e2730]: This allocation is already configured.
+              - generic [ref=e2731]:
+                - button "Back to economy" [ref=e2732] [cursor=pointer]
+                - button "Apply focus" [disabled] [ref=e2733]
+        - heading "Construction · shared illustrated instrument" [level=2] [ref=e2734]
+        - region "System construction" [ref=e2736]:
+          - generic [ref=e2737]:
+            - paragraph [ref=e2738]: G-class · Your developments
+            - heading "Sarin" [level=2] [ref=e2739]
+            - paragraph [ref=e2740]:
+              - text: Available credits
+              - strong [ref=e2741]: "200"
+          - generic [ref=e2742]:
+            - region "Construction details" [ref=e2743]:
+              - group "Choose a development" [ref=e2744]:
+                - generic [ref=e2745]: Choose a development
+                - generic [ref=e2746]:
+                  - generic [ref=e2747] [cursor=pointer]:
+                    - radio "Market Surface · Produces credits 2 completed · 0 queued" [checked] [ref=e2748]
+                    - generic [ref=e2749]:
+                      - strong [ref=e2750]: Market
+                      - generic [ref=e2751]: Surface · Produces credits
+                      - generic [ref=e2752]: 2 completed · 0 queued
+                  - generic [ref=e2753] [cursor=pointer]:
+                    - radio "Training camp Orbit · Produces fighters 1 completed · 0 queued" [ref=e2754]
+                    - generic [ref=e2755]:
+                      - strong [ref=e2756]: Training camp
+                      - generic [ref=e2757]: Orbit · Produces fighters
+                      - generic [ref=e2758]: 1 completed · 0 queued
+                  - generic [ref=e2759] [cursor=pointer]:
+                    - radio "Base Surface · Produces infantry 1 completed · 0 queued" [ref=e2760]
+                    - generic [ref=e2761]:
+                      - strong [ref=e2762]: Base
+                      - generic [ref=e2763]: Surface · Produces infantry
+                      - generic [ref=e2764]: 1 completed · 0 queued
+                  - generic [ref=e2765] [cursor=pointer]:
+                    - radio "Space station Orbit · Produces science 1 completed · 0 queued" [ref=e2766]
+                    - generic [ref=e2767]:
+                      - strong [ref=e2768]: Space station
+                      - generic [ref=e2769]: Orbit · Produces science
+                      - generic [ref=e2770]: 1 completed · 0 queued
+              - group [ref=e2771]:
+                - generic "Construction rules" [ref=e2772] [cursor=pointer]
+              - generic [ref=e2773]:
+                - heading "Construction queues" [level=3] [ref=e2774]
+                - paragraph [ref=e2775]: Each layer builds one development at a time. Four advances complete a build; its first advance follows the tick when it starts.
+                - paragraph [ref=e2776]: No construction queued.
+                - paragraph [ref=e2777]: Development rules under review. Completion dividends use beginning-of-tick markets and focus; new markets qualify from the following tick.
+            - group "Construction commitment" [ref=e2778]:
+              - generic [ref=e2779]:
+                - heading "Market" [level=3] [ref=e2780]
+                - paragraph [ref=e2781]:
+                  - text: Cost
+                  - strong [ref=e2782]: "106"
+                - paragraph [ref=e2783]:
+                  - text: Balance after
+                  - strong [ref=e2784]: "94"
+              - generic [ref=e2785]:
+                - button "Back to galaxy" [ref=e2786] [cursor=pointer]
+                - button "Build market" [ref=e2787] [cursor=pointer]
+        - region "System construction" [ref=e2789]:
+          - generic [ref=e2790]:
+            - paragraph [ref=e2791]: G-class · Your developments
+            - heading "Sarin" [level=2] [ref=e2792]
+            - paragraph [ref=e2793]:
+              - text: Available credits
+              - strong [ref=e2794]: "94"
+          - generic [ref=e2795]:
+            - region "Construction details" [ref=e2796]:
+              - group "Choose a development" [ref=e2797]:
+                - generic [ref=e2798]: Choose a development
+                - generic [ref=e2799]:
+                  - generic [ref=e2800] [cursor=pointer]:
+                    - radio "Market Surface · Produces credits 2 completed · 1 queued" [checked] [disabled] [ref=e2801]
+                    - generic [ref=e2802]:
+                      - strong [ref=e2803]: Market
+                      - generic [ref=e2804]: Surface · Produces credits
+                      - generic [ref=e2805]: 2 completed · 1 queued
+                  - generic [ref=e2806] [cursor=pointer]:
+                    - radio "Training camp Orbit · Produces fighters 1 completed · 0 queued" [disabled] [ref=e2807]
+                    - generic [ref=e2808]:
+                      - strong [ref=e2809]: Training camp
+                      - generic [ref=e2810]: Orbit · Produces fighters
+                      - generic [ref=e2811]: 1 completed · 0 queued
+                  - generic [ref=e2812] [cursor=pointer]:
+                    - radio "Base Surface · Produces infantry 1 completed · 0 queued" [disabled] [ref=e2813]
+                    - generic [ref=e2814]:
+                      - strong [ref=e2815]: Base
+                      - generic [ref=e2816]: Surface · Produces infantry
+                      - generic [ref=e2817]: 1 completed · 0 queued
+                  - generic [ref=e2818] [cursor=pointer]:
+                    - radio "Space station Orbit · Produces science 1 completed · 0 queued" [disabled] [ref=e2819]
+                    - generic [ref=e2820]:
+                      - strong [ref=e2821]: Space station
+                      - generic [ref=e2822]: Orbit · Produces science
+                      - generic [ref=e2823]: 1 completed · 0 queued
+              - group [ref=e2824]:
+                - generic "Construction rules" [ref=e2825] [cursor=pointer]
+              - generic [ref=e2826]:
+                - heading "Construction queues" [level=3] [ref=e2827]
+                - paragraph [ref=e2828]: Each layer builds one development at a time. Four advances complete a build; its first advance follows the tick when it starts.
+                - heading "Surface" [level=4] [ref=e2829]
+                - list [ref=e2830]:
+                  - listitem [ref=e2831]:
+                    - generic [ref=e2832]:
+                      - strong [ref=e2833]: Market
+                      - generic [ref=e2834]: Queued · eligible tick 1 · Paid 106
+                      - generic [ref=e2835]: "Cancel refund now: 106 credits. Progress at the execution tick determines the refund."
+                    - button "Cancel market order" [disabled] [ref=e2836]: Cancel
+                - paragraph [ref=e2837]: Development rules under review. Completion dividends use beginning-of-tick markets and focus; new markets qualify from the following tick.
+            - group "Construction commitment" [ref=e2838]:
+              - generic [ref=e2839]:
+                - heading "Market" [level=3] [ref=e2840]
+                - paragraph [ref=e2841]:
+                  - text: Cost
+                  - strong [ref=e2842]: "122"
+                - paragraph [ref=e2843]:
+                  - text: Balance after
+                  - strong [ref=e2844]: —
+              - paragraph [ref=e2845]: More credits are needed. Wait for production or choose another development.
+              - generic [ref=e2846]:
+                - button "Back to galaxy" [ref=e2847] [cursor=pointer]
+                - button "Awaiting acknowledgement…" [disabled] [ref=e2848]
+        - region "System construction" [ref=e2850]:
+          - generic [ref=e2851]:
+            - paragraph [ref=e2852]: G-class · Your developments
+            - heading "Sarin" [level=2] [ref=e2853]
+            - paragraph [ref=e2854]:
+              - text: Available credits
+              - strong [ref=e2855]: "94"
+          - generic [ref=e2856]:
+            - region "Construction details" [ref=e2857]:
+              - group "Choose a development" [ref=e2858]:
+                - generic [ref=e2859]: Choose a development
+                - generic [ref=e2860]:
+                  - generic [ref=e2861] [cursor=pointer]:
+                    - radio "Market Surface · Produces credits 2 completed · 1 queued" [checked] [ref=e2862]
+                    - generic [ref=e2863]:
+                      - strong [ref=e2864]: Market
+                      - generic [ref=e2865]: Surface · Produces credits
+                      - generic [ref=e2866]: 2 completed · 1 queued
+                  - generic [ref=e2867] [cursor=pointer]:
+                    - radio "Training camp Orbit · Produces fighters 1 completed · 0 queued" [ref=e2868]
+                    - generic [ref=e2869]:
+                      - strong [ref=e2870]: Training camp
+                      - generic [ref=e2871]: Orbit · Produces fighters
+                      - generic [ref=e2872]: 1 completed · 0 queued
+                  - generic [ref=e2873] [cursor=pointer]:
+                    - radio "Base Surface · Produces infantry 1 completed · 0 queued" [ref=e2874]
+                    - generic [ref=e2875]:
+                      - strong [ref=e2876]: Base
+                      - generic [ref=e2877]: Surface · Produces infantry
+                      - generic [ref=e2878]: 1 completed · 0 queued
+                  - generic [ref=e2879] [cursor=pointer]:
+                    - radio "Space station Orbit · Produces science 1 completed · 0 queued" [ref=e2880]
+                    - generic [ref=e2881]:
+                      - strong [ref=e2882]: Space station
+                      - generic [ref=e2883]: Orbit · Produces science
+                      - generic [ref=e2884]: 1 completed · 0 queued
+              - group [ref=e2885]:
+                - generic "Construction rules" [ref=e2886] [cursor=pointer]
+              - generic [ref=e2887]:
+                - heading "Construction queues" [level=3] [ref=e2888]
+                - paragraph [ref=e2889]: Each layer builds one development at a time. Four advances complete a build; its first advance follows the tick when it starts.
+                - heading "Surface" [level=4] [ref=e2890]
+                - list [ref=e2891]:
+                  - listitem [ref=e2892]:
+                    - generic [ref=e2893]:
+                      - strong [ref=e2894]: Market
+                      - generic [ref=e2895]: Queued · eligible tick 1 · Paid 106
+                      - generic [ref=e2896]: "Cancel refund now: 106 credits. Progress at the execution tick determines the refund."
+                    - button "Cancel market order" [ref=e2897] [cursor=pointer]: Cancel
+                - paragraph [ref=e2898]: Development rules under review. Completion dividends use beginning-of-tick markets and focus; new markets qualify from the following tick.
+            - group "Construction commitment" [ref=e2899]:
+              - generic [ref=e2900]:
+                - heading "Market" [level=3] [ref=e2901]
+                - paragraph [ref=e2902]:
+                  - text: Cost
+                  - strong [ref=e2903]: "122"
+                - paragraph [ref=e2904]:
+                  - text: Balance after
+                  - strong [ref=e2905]: —
+              - paragraph [ref=e2906]: More credits are needed. Wait for production or choose another development.
+              - alert [ref=e2908]: The connection was interrupted. Your selection and pending order are preserved.
+              - generic [ref=e2909]:
+                - button "Back to galaxy" [ref=e2910] [cursor=pointer]
+                - button "Build market" [disabled] [ref=e2911]
+        - region "System construction" [ref=e2913]:
+          - generic [ref=e2914]:
+            - paragraph [ref=e2915]: G-class · Your developments
+            - heading "Sarin" [level=2] [ref=e2916]
+            - paragraph [ref=e2917]:
+              - text: Available credits
+              - strong [ref=e2918]: "94"
+          - generic [ref=e2919]:
+            - region "Construction details" [ref=e2920]:
+              - group "Choose a development" [ref=e2921]:
+                - generic [ref=e2922]: Choose a development
+                - generic [ref=e2923]:
+                  - generic [ref=e2924] [cursor=pointer]:
+                    - radio "Market Surface · Produces credits 2 completed · 1 queued" [checked] [ref=e2925]
+                    - generic [ref=e2926]:
+                      - strong [ref=e2927]: Market
+                      - generic [ref=e2928]: Surface · Produces credits
+                      - generic [ref=e2929]: 2 completed · 1 queued
+                  - generic [ref=e2930] [cursor=pointer]:
+                    - radio "Training camp Orbit · Produces fighters 1 completed · 0 queued" [ref=e2931]
+                    - generic [ref=e2932]:
+                      - strong [ref=e2933]: Training camp
+                      - generic [ref=e2934]: Orbit · Produces fighters
+                      - generic [ref=e2935]: 1 completed · 0 queued
+                  - generic [ref=e2936] [cursor=pointer]:
+                    - radio "Base Surface · Produces infantry 1 completed · 0 queued" [ref=e2937]
+                    - generic [ref=e2938]:
+                      - strong [ref=e2939]: Base
+                      - generic [ref=e2940]: Surface · Produces infantry
+                      - generic [ref=e2941]: 1 completed · 0 queued
+                  - generic [ref=e2942] [cursor=pointer]:
+                    - radio "Space station Orbit · Produces science 1 completed · 0 queued" [ref=e2943]
+                    - generic [ref=e2944]:
+                      - strong [ref=e2945]: Space station
+                      - generic [ref=e2946]: Orbit · Produces science
+                      - generic [ref=e2947]: 1 completed · 0 queued
+              - group [ref=e2948]:
+                - generic "Construction rules" [ref=e2949] [cursor=pointer]
+              - generic [ref=e2950]:
+                - heading "Construction queues" [level=3] [ref=e2951]
+                - paragraph [ref=e2952]: Each layer builds one development at a time. Four advances complete a build; its first advance follows the tick when it starts.
+                - heading "Surface" [level=4] [ref=e2953]
+                - list [ref=e2954]:
+                  - listitem [ref=e2955]:
+                    - generic [ref=e2956]:
+                      - strong [ref=e2957]: Market
+                      - generic [ref=e2958]: Queued · eligible tick 1 · Paid 106
+                      - generic [ref=e2959]: "Cancel refund now: 106 credits. Progress at the execution tick determines the refund."
+                    - button "Cancel market order" [disabled] [ref=e2960]: Cancel
+                - paragraph [ref=e2961]: Development rules under review. Completion dividends use beginning-of-tick markets and focus; new markets qualify from the following tick.
+            - group "Construction commitment" [ref=e2962]:
+              - generic [ref=e2963]:
+                - heading "Market" [level=3] [ref=e2964]
+                - paragraph [ref=e2965]:
+                  - text: Cost
+                  - strong [ref=e2966]: "122"
+                - paragraph [ref=e2967]:
+                  - text: Balance after
+                  - strong [ref=e2968]: —
+              - paragraph [ref=e2969]: Construction is paused. Resume the campaign to submit an order.
+              - generic [ref=e2970]:
+                - button "Back to galaxy" [ref=e2971] [cursor=pointer]
+                - button "Build market" [disabled] [ref=e2972]
+        - region "System construction" [ref=e2974]:
+          - generic [ref=e2975]:
+            - paragraph [ref=e2976]: G-class · Your developments
+            - heading "Sarin" [level=2] [ref=e2977]
+            - paragraph [ref=e2978]:
+              - text: Available credits
+              - strong [ref=e2979]: "109.4"
+          - generic [ref=e2980]:
+            - region "Construction details" [ref=e2981]:
+              - group "Choose a development" [ref=e2982]:
+                - generic [ref=e2983]: Choose a development
+                - generic [ref=e2984]:
+                  - generic [ref=e2985] [cursor=pointer]:
+                    - radio "Market Surface · Produces credits 3 completed · 0 queued" [checked] [ref=e2986]
+                    - generic [ref=e2987]:
+                      - strong [ref=e2988]: Market
+                      - generic [ref=e2989]: Surface · Produces credits
+                      - generic [ref=e2990]: 3 completed · 0 queued
+                  - generic [ref=e2991] [cursor=pointer]:
+                    - radio "Training camp Orbit · Produces fighters 1 completed · 0 queued" [ref=e2992]
+                    - generic [ref=e2993]:
+                      - strong [ref=e2994]: Training camp
+                      - generic [ref=e2995]: Orbit · Produces fighters
+                      - generic [ref=e2996]: 1 completed · 0 queued
+                  - generic [ref=e2997] [cursor=pointer]:
+                    - radio "Base Surface · Produces infantry 1 completed · 0 queued" [ref=e2998]
+                    - generic [ref=e2999]:
+                      - strong [ref=e3000]: Base
+                      - generic [ref=e3001]: Surface · Produces infantry
+                      - generic [ref=e3002]: 1 completed · 0 queued
+                  - generic [ref=e3003] [cursor=pointer]:
+                    - radio "Space station Orbit · Produces science 1 completed · 0 queued" [ref=e3004]
+                    - generic [ref=e3005]:
+                      - strong [ref=e3006]: Space station
+                      - generic [ref=e3007]: Orbit · Produces science
+                      - generic [ref=e3008]: 1 completed · 0 queued
+              - group [ref=e3009]:
+                - generic "Construction rules" [ref=e3010] [cursor=pointer]
+              - generic [ref=e3011]:
+                - heading "Construction queues" [level=3] [ref=e3012]
+                - paragraph [ref=e3013]: Each layer builds one development at a time. Four advances complete a build; its first advance follows the tick when it starts.
+                - paragraph [ref=e3014]: No construction queued.
+                - heading "Last settled construction" [level=3] [ref=e3015]
+                - list [ref=e3016]:
+                  - listitem [ref=e3017]: Market · completed
+                - paragraph [ref=e3018]: Development rules under review. Completion dividends use beginning-of-tick markets and focus; new markets qualify from the following tick.
+            - group "Construction commitment" [ref=e3019]:
+              - generic [ref=e3020]:
+                - heading "Market" [level=3] [ref=e3021]
+                - paragraph [ref=e3022]:
+                  - text: Cost
+                  - strong [ref=e3023]: "122"
+                - paragraph [ref=e3024]:
+                  - text: Balance after
+                  - strong [ref=e3025]: —
+              - paragraph [ref=e3026]: More credits are needed. Wait for production or choose another development.
+              - generic [ref=e3027]:
+                - button "Back to galaxy" [ref=e3028] [cursor=pointer]
+                - button "Build market" [disabled] [ref=e3029]
+        - heading "Research · shared selection and acknowledgement" [level=2] [ref=e3030]
+        - region "Research specimen ready" [ref=e3031]:
+          - region "Research selection" [ref=e3032]:
+            - heading "Direct your science" [level=3] [ref=e3033]
+            - paragraph [ref=e3034]: Orders apply at their scheduled tick. Switching preserves unfinished progress; switching from a capped track moves its banked science to the new target.
+            - generic [ref=e3035]:
+              - group "Research target" [ref=e3036]:
+                - generic [ref=e3037]: Research target
+                - region "Research tracks" [ref=e3038]:
+                  - generic [ref=e3039] [cursor=pointer]:
+                    - radio "scanning Level 1 · 0 science retained" [ref=e3040]
+                    - generic [ref=e3041]:
+                      - strong [ref=e3042]: scanning
+                      - generic [ref=e3043]: Level 1 · 0 science retained
+                  - generic [ref=e3044] [cursor=pointer]:
+                    - radio "navigation Level 1 · 0 science retained" [ref=e3045]
+                    - generic [ref=e3046]:
+                      - strong [ref=e3047]: navigation
+                      - generic [ref=e3048]: Level 1 · 0 science retained
+                  - generic [ref=e3049] [cursor=pointer]:
+                    - radio "terraforming Level 0 · 0 science retained" [ref=e3050]
+                    - generic [ref=e3051]:
+                      - strong [ref=e3052]: terraforming
+                      - generic [ref=e3053]: Level 0 · 0 science retained
+                  - generic [ref=e3054] [cursor=pointer]:
+                    - radio "investing Level 0 · 0 science retained" [checked] [ref=e3055]
+                    - generic [ref=e3056]:
+                      - strong [ref=e3057]: investing
+                      - generic [ref=e3058]: Level 0 · 0 science retained
+                  - generic [ref=e3059] [cursor=pointer]:
+                    - radio "formations Level 1 · 0 science retained" [ref=e3060]
+                    - generic [ref=e3061]:
+                      - strong [ref=e3062]: formations
+                      - generic [ref=e3063]: Level 1 · 0 science retained
+                  - generic [ref=e3064] [cursor=pointer]:
+                    - radio "melee Level 1 · 0 science retained" [ref=e3065]
+                    - generic [ref=e3066]:
+                      - strong [ref=e3067]: melee
+                      - generic [ref=e3068]: Level 1 · 0 science retained
+                  - generic [ref=e3069] [cursor=pointer]:
+                    - radio "recruiting Level 0 · 0 science retained" [ref=e3070]
+                    - generic [ref=e3071]:
+                      - strong [ref=e3072]: recruiting
+                      - generic [ref=e3073]: Level 0 · 0 science retained
+                  - generic [ref=e3074] [cursor=pointer]:
+                    - radio "innovation Level 0 · 0 science retained" [ref=e3075]
+                    - generic [ref=e3076]:
+                      - strong [ref=e3077]: innovation
+                      - generic [ref=e3078]: Level 0 · 0 science retained
+              - paragraph [ref=e3079]: Raises total market income before distribution to systems.
+              - group "Selected research forecast" [ref=e3080]:
+                - generic "Next level 1 · 20 science" [ref=e3081] [cursor=pointer]
+              - group "Research acknowledgement" [ref=e3082]:
+                - button "Queue investing" [ref=e3083] [cursor=pointer]
+            - region "Accepted research orders" [ref=e3084]:
+              - heading "Scheduled selections" [level=4] [ref=e3085]
+              - list [ref=e3086]:
+                - listitem [ref=e3087]: Tick 1 · investing
+            - paragraph [ref=e3088]: Development research rules remain under review.
+        - region "Research specimen pending" [ref=e3089]:
+          - region "Research selection" [ref=e3090]:
+            - heading "Direct your science" [level=3] [ref=e3091]
+            - paragraph [ref=e3092]: Orders apply at their scheduled tick. Switching preserves unfinished progress; switching from a capped track moves its banked science to the new target.
+            - generic [ref=e3093]:
+              - group "Research target" [ref=e3094]:
+                - generic [ref=e3095]: Research target
+                - region "Research tracks" [ref=e3096]:
+                  - generic [ref=e3097] [cursor=pointer]:
+                    - radio "scanning Level 1 · 0 science retained" [disabled] [ref=e3098]
+                    - generic [ref=e3099]:
+                      - strong [ref=e3100]: scanning
+                      - generic [ref=e3101]: Level 1 · 0 science retained
+                  - generic [ref=e3102] [cursor=pointer]:
+                    - radio "navigation Level 1 · 0 science retained" [disabled] [ref=e3103]
+                    - generic [ref=e3104]:
+                      - strong [ref=e3105]: navigation
+                      - generic [ref=e3106]: Level 1 · 0 science retained
+                  - generic [ref=e3107] [cursor=pointer]:
+                    - radio "terraforming Level 0 · 0 science retained" [disabled] [ref=e3108]
+                    - generic [ref=e3109]:
+                      - strong [ref=e3110]: terraforming
+                      - generic [ref=e3111]: Level 0 · 0 science retained
+                  - generic [ref=e3112] [cursor=pointer]:
+                    - radio "investing Level 0 · 0 science retained" [checked] [disabled] [ref=e3113]
+                    - generic [ref=e3114]:
+                      - strong [ref=e3115]: investing
+                      - generic [ref=e3116]: Level 0 · 0 science retained
+                  - generic [ref=e3117] [cursor=pointer]:
+                    - radio "formations Level 1 · 0 science retained" [disabled] [ref=e3118]
+                    - generic [ref=e3119]:
+                      - strong [ref=e3120]: formations
+                      - generic [ref=e3121]: Level 1 · 0 science retained
+                  - generic [ref=e3122] [cursor=pointer]:
+                    - radio "melee Level 1 · 0 science retained" [disabled] [ref=e3123]
+                    - generic [ref=e3124]:
+                      - strong [ref=e3125]: melee
+                      - generic [ref=e3126]: Level 1 · 0 science retained
+                  - generic [ref=e3127] [cursor=pointer]:
+                    - radio "recruiting Level 0 · 0 science retained" [disabled] [ref=e3128]
+                    - generic [ref=e3129]:
+                      - strong [ref=e3130]: recruiting
+                      - generic [ref=e3131]: Level 0 · 0 science retained
+                  - generic [ref=e3132] [cursor=pointer]:
+                    - radio "innovation Level 0 · 0 science retained" [disabled] [ref=e3133]
+                    - generic [ref=e3134]:
+                      - strong [ref=e3135]: innovation
+                      - generic [ref=e3136]: Level 0 · 0 science retained
+              - paragraph [ref=e3137]: Raises total market income before distribution to systems.
+              - group "Selected research forecast" [ref=e3138]:
+                - generic "Next level 1 · 20 science" [ref=e3139] [cursor=pointer]
+              - group "Research acknowledgement" [ref=e3140]:
+                - button "Awaiting acknowledgement…" [disabled] [ref=e3141]
+            - region "Accepted research orders" [ref=e3142]:
+              - heading "Scheduled selections" [level=4] [ref=e3143]
+              - list [ref=e3144]:
+                - listitem [ref=e3145]: Tick 1 · investing
+            - paragraph [ref=e3146]: Development research rules remain under review.
+        - region "Research specimen error" [ref=e3147]:
+          - region "Research selection" [ref=e3148]:
+            - heading "Direct your science" [level=3] [ref=e3149]
+            - paragraph [ref=e3150]: Orders apply at their scheduled tick. Switching preserves unfinished progress; switching from a capped track moves its banked science to the new target.
+            - generic [ref=e3151]:
+              - group "Research target" [ref=e3152]:
+                - generic [ref=e3153]: Research target
+                - region "Research tracks" [ref=e3154]:
+                  - generic [ref=e3155] [cursor=pointer]:
+                    - radio "scanning Level 1 · 0 science retained" [ref=e3156]
+                    - generic [ref=e3157]:
+                      - strong [ref=e3158]: scanning
+                      - generic [ref=e3159]: Level 1 · 0 science retained
+                  - generic [ref=e3160] [cursor=pointer]:
+                    - radio "navigation Level 1 · 0 science retained" [ref=e3161]
+                    - generic [ref=e3162]:
+                      - strong [ref=e3163]: navigation
+                      - generic [ref=e3164]: Level 1 · 0 science retained
+                  - generic [ref=e3165] [cursor=pointer]:
+                    - radio "terraforming Level 0 · 0 science retained" [ref=e3166]
+                    - generic [ref=e3167]:
+                      - strong [ref=e3168]: terraforming
+                      - generic [ref=e3169]: Level 0 · 0 science retained
+                  - generic [ref=e3170] [cursor=pointer]:
+                    - radio "investing Level 0 · 0 science retained" [checked] [ref=e3171]
+                    - generic [ref=e3172]:
+                      - strong [ref=e3173]: investing
+                      - generic [ref=e3174]: Level 0 · 0 science retained
+                  - generic [ref=e3175] [cursor=pointer]:
+                    - radio "formations Level 1 · 0 science retained" [ref=e3176]
+                    - generic [ref=e3177]:
+                      - strong [ref=e3178]: formations
+                      - generic [ref=e3179]: Level 1 · 0 science retained
+                  - generic [ref=e3180] [cursor=pointer]:
+                    - radio "melee Level 1 · 0 science retained" [ref=e3181]
+                    - generic [ref=e3182]:
+                      - strong [ref=e3183]: melee
+                      - generic [ref=e3184]: Level 1 · 0 science retained
+                  - generic [ref=e3185] [cursor=pointer]:
+                    - radio "recruiting Level 0 · 0 science retained" [ref=e3186]
+                    - generic [ref=e3187]:
+                      - strong [ref=e3188]: recruiting
+                      - generic [ref=e3189]: Level 0 · 0 science retained
+                  - generic [ref=e3190] [cursor=pointer]:
+                    - radio "innovation Level 0 · 0 science retained" [ref=e3191]
+                    - generic [ref=e3192]:
+                      - strong [ref=e3193]: innovation
+                      - generic [ref=e3194]: Level 0 · 0 science retained
+              - paragraph [ref=e3195]: Raises total market income before distribution to systems.
+              - group "Selected research forecast" [ref=e3196]:
+                - generic "Next level 1 · 20 science" [ref=e3197] [cursor=pointer]
+              - group "Research acknowledgement" [ref=e3198]:
+                - button "Queue investing" [ref=e3199] [cursor=pointer]
+            - alert [ref=e3201]: The connection was interrupted. Your selection and pending order are preserved.
+            - region "Accepted research orders" [ref=e3202]:
+              - heading "Scheduled selections" [level=4] [ref=e3203]
+              - list [ref=e3204]:
+                - listitem [ref=e3205]: Tick 1 · investing
+            - paragraph [ref=e3206]: Development research rules remain under review.
+        - region "Research specimen disabled" [ref=e3207]:
+          - region "Research selection" [ref=e3208]:
+            - heading "Direct your science" [level=3] [ref=e3209]
+            - paragraph [ref=e3210]: Orders apply at their scheduled tick. Switching preserves unfinished progress; switching from a capped track moves its banked science to the new target.
+            - generic [ref=e3211]:
+              - group "Research target" [ref=e3212]:
+                - generic [ref=e3213]: Research target
+                - region "Research tracks" [ref=e3214]:
+                  - generic [ref=e3215] [cursor=pointer]:
+                    - radio "scanning Level 1 · 0 science retained" [disabled] [ref=e3216]
+                    - generic [ref=e3217]:
+                      - strong [ref=e3218]: scanning
+                      - generic [ref=e3219]: Level 1 · 0 science retained
+                  - generic [ref=e3220] [cursor=pointer]:
+                    - radio "navigation Level 1 · 0 science retained" [disabled] [ref=e3221]
+                    - generic [ref=e3222]:
+                      - strong [ref=e3223]: navigation
+                      - generic [ref=e3224]: Level 1 · 0 science retained
+                  - generic [ref=e3225] [cursor=pointer]:
+                    - radio "terraforming Level 0 · 0 science retained" [disabled] [ref=e3226]
+                    - generic [ref=e3227]:
+                      - strong [ref=e3228]: terraforming
+                      - generic [ref=e3229]: Level 0 · 0 science retained
+                  - generic [ref=e3230] [cursor=pointer]:
+                    - radio "investing Level 0 · 0 science retained" [checked] [disabled] [ref=e3231]
+                    - generic [ref=e3232]:
+                      - strong [ref=e3233]: investing
+                      - generic [ref=e3234]: Level 0 · 0 science retained
+                  - generic [ref=e3235] [cursor=pointer]:
+                    - radio "formations Level 1 · 0 science retained" [disabled] [ref=e3236]
+                    - generic [ref=e3237]:
+                      - strong [ref=e3238]: formations
+                      - generic [ref=e3239]: Level 1 · 0 science retained
+                  - generic [ref=e3240] [cursor=pointer]:
+                    - radio "melee Level 1 · 0 science retained" [disabled] [ref=e3241]
+                    - generic [ref=e3242]:
+                      - strong [ref=e3243]: melee
+                      - generic [ref=e3244]: Level 1 · 0 science retained
+                  - generic [ref=e3245] [cursor=pointer]:
+                    - radio "recruiting Level 0 · 0 science retained" [disabled] [ref=e3246]
+                    - generic [ref=e3247]:
+                      - strong [ref=e3248]: recruiting
+                      - generic [ref=e3249]: Level 0 · 0 science retained
+                  - generic [ref=e3250] [cursor=pointer]:
+                    - radio "innovation Level 0 · 0 science retained" [disabled] [ref=e3251]
+                    - generic [ref=e3252]:
+                      - strong [ref=e3253]: innovation
+                      - generic [ref=e3254]: Level 0 · 0 science retained
+              - paragraph [ref=e3255]: Raises total market income before distribution to systems.
+              - group "Selected research forecast" [ref=e3256]:
+                - generic "Next level 1 · 20 science" [ref=e3257] [cursor=pointer]
+              - group "Research acknowledgement" [ref=e3258]:
+                - button "Queue investing" [disabled] [ref=e3259]
+            - paragraph [ref=e3260]: Research orders resume when the campaign resumes. Your selection is preserved.
+            - region "Accepted research orders" [ref=e3261]:
+              - heading "Scheduled selections" [level=4] [ref=e3262]
+              - list [ref=e3263]:
+                - listitem [ref=e3264]: Tick 1 · investing
+            - paragraph [ref=e3265]: Development research rules remain under review.
+        - region "Research specimen applied" [ref=e3266]:
+          - region "Research selection" [ref=e3267]:
+            - heading "Direct your science" [level=3] [ref=e3268]
+            - paragraph [ref=e3269]: Orders apply at their scheduled tick. Switching preserves unfinished progress; switching from a capped track moves its banked science to the new target.
+            - generic [ref=e3270]:
+              - group "Research target" [ref=e3271]:
+                - generic [ref=e3272]: Research target
+                - region "Research tracks" [ref=e3273]:
+                  - generic [ref=e3274] [cursor=pointer]:
+                    - radio "scanning Level 1 · 0 science retained" [ref=e3275]
+                    - generic [ref=e3276]:
+                      - strong [ref=e3277]: scanning
+                      - generic [ref=e3278]: Level 1 · 0 science retained
+                  - generic [ref=e3279] [cursor=pointer]:
+                    - radio "navigation Level 1 · 0 science retained" [ref=e3280]
+                    - generic [ref=e3281]:
+                      - strong [ref=e3282]: navigation
+                      - generic [ref=e3283]: Level 1 · 0 science retained
+                  - generic [ref=e3284] [cursor=pointer]:
+                    - radio "terraforming Level 0 · 0 science retained" [ref=e3285]
+                    - generic [ref=e3286]:
+                      - strong [ref=e3287]: terraforming
+                      - generic [ref=e3288]: Level 0 · 0 science retained
+                  - generic [ref=e3289] [cursor=pointer]:
+                    - radio "investing Level 0 · 1.4 science retained" [checked] [ref=e3290]
+                    - generic [ref=e3291]:
+                      - strong [ref=e3292]: investing
+                      - generic [ref=e3293]: Level 0 · 1.4 science retained
+                  - generic [ref=e3294] [cursor=pointer]:
+                    - radio "formations Level 1 · 0 science retained" [ref=e3295]
+                    - generic [ref=e3296]:
+                      - strong [ref=e3297]: formations
+                      - generic [ref=e3298]: Level 1 · 0 science retained
+                  - generic [ref=e3299] [cursor=pointer]:
+                    - radio "melee Level 1 · 0 science retained" [ref=e3300]
+                    - generic [ref=e3301]:
+                      - strong [ref=e3302]: melee
+                      - generic [ref=e3303]: Level 1 · 0 science retained
+                  - generic [ref=e3304] [cursor=pointer]:
+                    - radio "recruiting Level 0 · 0 science retained" [ref=e3305]
+                    - generic [ref=e3306]:
+                      - strong [ref=e3307]: recruiting
+                      - generic [ref=e3308]: Level 0 · 0 science retained
+                  - generic [ref=e3309] [cursor=pointer]:
+                    - radio "innovation Level 0 · 0 science retained" [ref=e3310]
+                    - generic [ref=e3311]:
+                      - strong [ref=e3312]: innovation
+                      - generic [ref=e3313]: Level 0 · 0 science retained
+              - paragraph [ref=e3314]: Raises total market income before distribution to systems.
+              - group "Selected research forecast" [ref=e3315]:
+                - generic "Next level 1 · 20 science" [ref=e3316] [cursor=pointer]
+              - group "Research acknowledgement" [ref=e3317]:
+                - button "Queue investing" [ref=e3318] [cursor=pointer]
+            - status "Applied research order" [ref=e3319]: investing applied at tick 1.
+            - group [ref=e3320]:
+              - generic "Last applied selections" [ref=e3321] [cursor=pointer]
+            - paragraph [ref=e3322]: Development research rules remain under review.
+        - heading "Economy · shared production ledger" [level=2] [ref=e3323]
+        - region "Empire economy" [ref=e3325]:
+          - generic [ref=e3326]:
+            - paragraph [ref=e3327]: Your empire
+            - heading "Economy" [level=2] [ref=e3328]
+            - status "Production schedule" [ref=e3329]:
+              - text: Awaiting next tick. Balances update when production is confirmed. Scheduled for
+              - time [ref=e3330]: 1/1/1970, 12:30:00 AM
+              - text: .
+          - region "Production ledger" [ref=e3331]:
+            - paragraph [ref=e3332]:
+              - generic [ref=e3333]: Available credits
+              - strong [ref=e3334]: "200"
+            - paragraph [ref=e3335]: First production pending
+            - region "Science progress" [ref=e3336]:
+              - heading "Science · navigation" [level=3] [ref=e3337]
+              - paragraph [ref=e3338]: Level 1 · 0 science of 40
+              - progressbar "Science towards next level" [ref=e3339]
+              - paragraph [ref=e3340]: New levels apply to production from the following tick.
+            - generic [ref=e3341]:
+              - heading "Where production goes" [level=3] [ref=e3342]
+              - paragraph [ref=e3343]: Markets produce credits, camps train fighters, bases recruit infantry and stations earn science. Affinity and research modify their output. Fractional forces remain at their system until a whole unit is ready.
+              - paragraph [ref=e3344]: Orbit receives fighters and science; the surface receives infantry. Credits are held in a system until one empire controls both layers.
+              - paragraph [ref=e3345]: Development campaign · Production rules remain under review.
+          - button "Return to galaxy" [ref=e3347] [cursor=pointer]
+        - region "Empire economy" [ref=e3349]:
+          - generic [ref=e3350]:
+            - paragraph [ref=e3351]: Your empire
+            - heading "Economy" [level=2] [ref=e3352]
+            - status "Production schedule" [ref=e3353]:
+              - text: Awaiting next tick. Balances update when production is confirmed. Scheduled for
+              - time [ref=e3354]: 1/1/1970, 12:30:00 AM
+              - text: .
+          - region "Production ledger" [ref=e3355]:
+            - paragraph [ref=e3356]:
+              - generic [ref=e3357]: Available credits
+              - strong [ref=e3358]: "200"
+            - paragraph [ref=e3359]: First production pending
+            - region "Science progress" [ref=e3360]:
+              - heading "Science · navigation" [level=3] [ref=e3361]
+              - paragraph [ref=e3362]: Level 1 · 0 science of 40
+              - progressbar "Science towards next level" [ref=e3363]
+              - paragraph [ref=e3364]: New levels apply to production from the following tick.
+            - generic [ref=e3365]:
+              - heading "Where production goes" [level=3] [ref=e3366]
+              - paragraph [ref=e3367]: Markets produce credits, camps train fighters, bases recruit infantry and stations earn science. Affinity and research modify their output. Fractional forces remain at their system until a whole unit is ready.
+              - paragraph [ref=e3368]: Orbit receives fighters and science; the surface receives infantry. Credits are held in a system until one empire controls both layers.
+              - paragraph [ref=e3369]: Development campaign · Production rules remain under review.
+          - button "Return to galaxy" [ref=e3371] [cursor=pointer]
+        - region "Empire economy" [ref=e3373]:
+          - generic [ref=e3374]:
+            - paragraph [ref=e3375]: Your empire
+            - heading "Economy" [level=2] [ref=e3376]
+            - status "Production schedule" [ref=e3377]:
+              - text: "Next production:"
+              - time [ref=e3378]: 1/1/1970, 12:45:00 AM
+              - text: .
+          - region "Production ledger" [ref=e3379]:
+            - paragraph [ref=e3380]:
+              - generic [ref=e3381]: Available credits
+              - strong [ref=e3382]: "202.8"
+            - paragraph [ref=e3383]: Confirmed tick 1
+            - generic "Last production" [ref=e3384]:
+              - generic [ref=e3385]:
+                - term [ref=e3386]: Credits received
+                - definition [ref=e3387]: "2.8"
+              - generic [ref=e3388]:
+                - term [ref=e3389]: Credits held in contested systems
+                - definition [ref=e3390]: "0"
+              - generic [ref=e3391]:
+                - term [ref=e3392]: Fighters trained
+                - definition [ref=e3393]: "1"
+              - generic [ref=e3394]:
+                - term [ref=e3395]: Infantry recruited
+                - definition [ref=e3396]: "1"
+              - generic [ref=e3397]:
+                - term [ref=e3398]: Science earned
+                - definition [ref=e3399]: "1.4"
+            - region "Science progress" [ref=e3400]:
+              - heading "Science · navigation" [level=3] [ref=e3401]
+              - paragraph [ref=e3402]: Level 1 · 1.4 science of 40
+              - progressbar "Science towards next level" [ref=e3403]
+              - paragraph [ref=e3404]: New levels apply to production from the following tick.
+            - generic [ref=e3405]:
+              - heading "Where production goes" [level=3] [ref=e3406]
+              - paragraph [ref=e3407]: Markets produce credits, camps train fighters, bases recruit infantry and stations earn science. Affinity and research modify their output. Fractional forces remain at their system until a whole unit is ready.
+              - paragraph [ref=e3408]: Orbit receives fighters and science; the surface receives infantry. Credits are held in a system until one empire controls both layers.
+              - paragraph [ref=e3409]: Development campaign · Production rules remain under review.
+          - button "Return to galaxy" [ref=e3411] [cursor=pointer]
+        - region "Empire economy" [ref=e3413]:
+          - generic [ref=e3414]:
+            - paragraph [ref=e3415]: Your empire
+            - heading "Economy" [level=2] [ref=e3416]
+            - status "Production schedule" [ref=e3417]: This campaign preserves its earlier behavior and does not produce resources. Create a new development campaign to play with production.
+          - region "Production ledger" [ref=e3418]:
+            - paragraph [ref=e3419]:
+              - generic [ref=e3420]: Available credits
+              - strong [ref=e3421]: "200"
+          - button "Return to galaxy" [ref=e3423] [cursor=pointer]
+        - heading "Campaign history · shared instrument" [level=2] [ref=e3424]
+        - region "Campaign history" [ref=e3426]:
+          - generic [ref=e3427]:
+            - paragraph [ref=e3428]: Your campaign record
+            - heading "Campaign history" [level=2] [ref=e3429]
+            - paragraph [ref=e3430]: Saved knowledge from your time in this campaign. Earlier records keep the information you could see then.
+            - button "New records available" [ref=e3431] [cursor=pointer]
+          - region "Saved campaign records" [ref=e3432]:
+            - group "Campaign record 3" [ref=e3433]:
+              - generic "Record 3Campaign paused" [ref=e3434] [cursor=pointer]:
+                - text: Record 3
+                - strong [ref=e3435]: Campaign paused
+            - group "Campaign record 2" [ref=e3436]:
+              - generic "Record 2Assembling empires" [ref=e3437] [cursor=pointer]:
+                - text: Record 2
+                - strong [ref=e3438]: Assembling empires
+            - button "Earlier records" [ref=e3439] [cursor=pointer]
+          - generic [ref=e3440]:
+            - button "Latest records" [ref=e3441] [cursor=pointer]
+            - button "Return to galaxy" [ref=e3442] [cursor=pointer]
+        - region "Campaign history" [ref=e3444]:
+          - generic [ref=e3445]:
+            - paragraph [ref=e3446]: Your campaign record
+            - heading "Campaign history" [level=2] [ref=e3447]
+            - paragraph [ref=e3448]: Saved knowledge from your time in this campaign. Earlier records keep the information you could see then.
+            - button "New records available" [disabled] [ref=e3449]
+          - region "Saved campaign records" [ref=e3450]:
+            - status [ref=e3452]: Loading campaign records…
+            - group "Campaign record 3" [ref=e3453]:
+              - generic "Record 3Campaign paused" [ref=e3454] [cursor=pointer]:
+                - text: Record 3
+                - strong [ref=e3455]: Campaign paused
+            - group "Campaign record 2" [ref=e3456]:
+              - generic "Record 2Assembling empires" [ref=e3457] [cursor=pointer]:
+                - text: Record 2
+                - strong [ref=e3458]: Assembling empires
+            - button "Earlier records" [disabled] [ref=e3459]
+          - generic [ref=e3460]:
+            - button "Latest records" [disabled] [ref=e3461]
+            - button "Return to galaxy" [ref=e3462] [cursor=pointer]
+        - region "Campaign history" [ref=e3464]:
+          - generic [ref=e3465]:
+            - paragraph [ref=e3466]: Your campaign record
+            - heading "Campaign history" [level=2] [ref=e3467]
+            - paragraph [ref=e3468]: Saved knowledge from your time in this campaign. Earlier records keep the information you could see then.
+            - button "New records available" [ref=e3469] [cursor=pointer]
+          - region "Saved campaign records" [ref=e3470]:
+            - alert [ref=e3472]: History could not be recovered. Retry keeps your place.
+            - button "Retry history" [ref=e3473] [cursor=pointer]
+            - group "Campaign record 3" [ref=e3474]:
+              - generic "Record 3Campaign paused" [ref=e3475] [cursor=pointer]:
+                - text: Record 3
+                - strong [ref=e3476]: Campaign paused
+            - group "Campaign record 2" [ref=e3477]:
+              - generic "Record 2Assembling empires" [ref=e3478] [cursor=pointer]:
+                - text: Record 2
+                - strong [ref=e3479]: Assembling empires
+            - button "Earlier records" [ref=e3480] [cursor=pointer]
+          - generic [ref=e3481]:
+            - button "Latest records" [ref=e3482] [cursor=pointer]
+            - button "Return to galaxy" [ref=e3483] [cursor=pointer]
+        - heading "Account sessions" [level=2] [ref=e3484]
+        - region "Sign out all devices" [ref=e3485]:
+          - heading "End every session" [level=2] [ref=e3486]
+          - paragraph [ref=e3487]: Confirm your Google identity to sign out here and on your other devices. Existing sign-ins lose access and cannot refresh it after confirmation. Wait for completion before signing in again. Your saved identity and campaigns remain. Unacknowledged orders may be cancelled; unsaved drafts on those devices will be cleared.
+          - button "Confirm with Google" [ref=e3488] [cursor=pointer]
+        - region "Sign out all devices" [ref=e3489]:
+          - heading "End every session" [level=2] [ref=e3490]
+          - paragraph [ref=e3491]: Confirm your Google identity to sign out here and on your other devices. Existing sign-ins lose access and cannot refresh it after confirmation. Wait for completion before signing in again. Your saved identity and campaigns remain. Unacknowledged orders may be cancelled; unsaved drafts on those devices will be cleared.
+          - button "Ending sessions…" [disabled] [ref=e3492]
+          - status [ref=e3494]: Keep this window open while your sessions end.
+        - region "Sign out all devices" [ref=e3495]:
+          - heading "End every session" [level=2] [ref=e3496]
+          - paragraph [ref=e3497]: Confirm your Google identity to sign out here and on your other devices. Existing sign-ins lose access and cannot refresh it after confirmation. Wait for completion before signing in again. Your saved identity and campaigns remain. Unacknowledged orders may be cancelled; unsaved drafts on those devices will be cleared.
+          - button "Confirm with Google" [ref=e3498] [cursor=pointer]
+          - alert [ref=e3500]: Sessions could not be ended. Confirm your identity and retry the same request.
+        - heading "Campaign roster" [level=2] [ref=e3501]
+        - region "Campaign roster" [ref=e3502]:
+          - heading "1 / 4 empires assembled" [level=2] [ref=e3503]
+          - status "Campaign start" [ref=e3504]: Waiting for players. Every faction has 1 seats; a full roster begins at the next quarter-hour.
+          - list [ref=e3505]:
+            - listitem [ref=e3506]:
+              - generic [ref=e3507]: Pelagic Concord
+              - strong [ref=e3508]: Envoy
+              - generic [ref=e3509]: 0 seats open
+            - listitem [ref=e3510]:
+              - generic [ref=e3511]: Heliac Assembly
+              - generic [ref=e3512]: 1 seats open
+            - listitem [ref=e3513]:
+              - generic [ref=e3514]: Vesper Synod
+              - generic [ref=e3515]: 1 seats open
+            - listitem [ref=e3516]:
+              - generic [ref=e3517]: Dracon League
+              - generic [ref=e3518]: 1 seats open
+        - heading "Scheduled start" [level=3] [ref=e3519]
+        - status "Campaign start" [ref=e3520]:
+          - text: Starts
+          - time [ref=e3521]: 1/1/2100, 12:00:00 AM
+          - text: . The server assigns home systems at the scheduled start.
+        - heading "Awaiting assignment" [level=3] [ref=e3522]
+        - status "Campaign start" [ref=e3523]:
+          - text: Awaiting home assignment. Your seat is saved; this view updates automatically. Scheduled for
+          - time [ref=e3524]: 1/1/1970, 12:00:00 AM
+          - text: .
+        - heading "Paused start" [level=3] [ref=e3525]
+        - status "Campaign start" [ref=e3526]: Paused for development maintenance. Admissions and scheduled start are stopped.
+        - heading "Started" [level=3] [ref=e3527]
+        - status "Campaign start" [ref=e3528]:
+          - text: Began
+          - time [ref=e3529]: 1/1/1970, 12:00:00 AM
+          - text: .
+      - generic [ref=e3530]:
+        - heading "Galaxy view controls" [level=2] [ref=e3531]
+        - generic "Galaxy view controls" [ref=e3532]:
+          - generic [ref=e3533]:
+            - generic [ref=e3534]: Stellar class
+            - combobox "Stellar class" [ref=e3535]:
+              - option "All classes" [selected]
+              - option "M class"
+              - option "G class"
+              - option "A class"
+              - option "O class"
+          - generic [ref=e3536]:
+            - button "Center selected" [ref=e3537] [cursor=pointer]
+            - button "Center home" [disabled] [ref=e3538]
+            - button "Overview" [ref=e3539] [cursor=pointer]
+          - group [ref=e3540]:
+            - generic "Camera controls" [ref=e3541] [cursor=pointer]
+        - status [ref=e3542]: No movement requested · all
+        - paragraph [ref=e3543]: Home centering is disabled until the server assigns a home system. These controls use the production camera interaction.
+      - generic [ref=e3544]:
+        - heading "Stellar class illustrations" [level=2] [ref=e3545]
+        - figure "World and orbit illustration · not sensor intelligence" [ref=e3546]:
+          - generic [ref=e3547]: Illustration · not sensor intelligence
+        - heading "Science sources · shared production instrument" [level=2] [ref=e3548]
+        - button "Open science source specimen" [ref=e3549] [cursor=pointer]
+        - region "Science sources" [ref=e3551]:
+          - generic [ref=e3552]:
+            - paragraph [ref=e3553]: Your orbital science
+            - heading "Science per tick" [level=2] [ref=e3554]:
+              - img [ref=e3555]
+              - text: Science per tick
+            - paragraph [ref=e3559]:
+              - strong [ref=e3560]: "+1.4"
+              - text: / tick
+          - region "Science source ledger" [active] [ref=e3561]:
+            - status "Science rate basis" [ref=e3562]: Confirmed tick 0 · current orbital control and completed stations.
+            - paragraph [ref=e3563]: Assumes unchanged control, stations and research levels.
+            - heading "Orbital sources" [level=3] [ref=e3564]
+            - article "Science from Sarin" [ref=e3565]:
+              - heading "Sarin" [level=4] [ref=e3566]
+              - generic [ref=e3567]:
+                - generic [ref=e3568]:
+                  - term [ref=e3569]: Completed stations
+                  - definition [ref=e3570]: "1"
+                - generic [ref=e3571]:
+                  - term [ref=e3572]: Base science
+                  - definition [ref=e3573]: "1"
+                - generic [ref=e3574]:
+                  - term [ref=e3575]: Faction affinity
+                  - definition [ref=e3576]: ×1.4
+                - generic [ref=e3577]:
+                  - term [ref=e3578]: After Terraforming 0
+                  - definition [ref=e3579]: 1.4 / tick
+            - heading "Empire total" [level=3] [ref=e3580]
+            - generic [ref=e3581]:
+              - generic [ref=e3582]:
+                - term [ref=e3583]: Before Innovation
+                - definition [ref=e3584]: "1.4"
+              - generic [ref=e3585]:
+                - term [ref=e3586]: After Innovation 0
+                - definition [ref=e3587]: 1.4 / tick
+              - generic [ref=e3588]:
+                - term [ref=e3589]: Last delivered science
+                - definition [ref=e3590]: First production pending
+            - paragraph [ref=e3591]: Terraforming applies to each system, then Innovation applies to the empire total. Output is floored to thousandths by the recorded ruleset.
+            - paragraph [ref=e3592]: Queued construction and future arrivals can change the next output.
+            - paragraph [ref=e3593]: Development rules remain under review.
+          - button "Return to galaxy" [ref=e3595] [cursor=pointer]
+        - heading "System layers · shared scene instruments" [level=2] [ref=e3596]
+        - paragraph [ref=e3597]: Component specimen from the existing reducer-backed development scenario; not live authorization evidence.
+        - region "System layers" [ref=e3599]:
+          - region "Orbital control" [ref=e3600]:
+            - button "Inspect Orbit · owner You" [ref=e3601] [cursor=pointer]:
+              - img [ref=e3602]
+              - generic [ref=e3606]:
+                - strong [ref=e3607]: Orbit
+                - generic [ref=e3608]: Orbital control
+              - generic [ref=e3609]: You
+              - generic [ref=e3610]: ›
+          - region "Surface control" [ref=e3611]:
+            - button "Inspect Surface · owner You" [ref=e3612] [cursor=pointer]:
+              - img [ref=e3613]
+              - generic [ref=e3615]:
+                - strong [ref=e3616]: Surface
+                - generic [ref=e3617]: Planetary control
+              - generic [ref=e3618]: You
+              - generic [ref=e3619]: ›
+          - region "Held credits" [ref=e3620]:
+            - generic [ref=e3621]:
+              - heading "Held credits" [level=3] [ref=e3622]
+              - strong [ref=e3623]: "0"
+            - paragraph [ref=e3624]: Securing both layers releases held credits.
+          - paragraph: World and orbit illustration · not sensor intelligence
+        - generic "Galaxy command symbols" [ref=e3625]:
+          - generic [ref=e3626]:
+            - img [ref=e3627]
+            - text: systems
+          - generic [ref=e3629]:
+            - img [ref=e3630]
+            - text: economy
+          - generic [ref=e3632]:
+            - img [ref=e3633]
+            - text: conversations
+          - generic [ref=e3635]:
+            - img [ref=e3636]
+            - text: history
+          - generic [ref=e3638]:
+            - img [ref=e3639]
+            - text: arrivals
+          - generic [ref=e3641]:
+            - img [ref=e3642]
+            - text: contacts
+        - region "Commander instrument gallery" [ref=e3644]:
+          - heading "Commander instruments" [level=3] [ref=e3645]
+          - navigation "Campaign commanders" [ref=e3646]:
+            - button "Commander menu" [ref=e3647] [cursor=pointer]:
+              - strong [ref=e3649]: Envoy 1
+              - generic [ref=e3650]: Heliac Assembly
+            - 'button "Inspect roster: Envoy 2, Pelagic Concord" [ref=e3651] [cursor=pointer]':
+              - strong [ref=e3653]: Envoy 2
+              - generic [ref=e3654]: Pelagic Concord
+            - 'button "Inspect roster: Envoy 3, Vesper Synod" [ref=e3655] [cursor=pointer]':
+              - strong [ref=e3657]: Envoy 3
+              - generic [ref=e3658]: Vesper Synod
+            - 'button "Inspect roster: Envoy 4, Dracon League" [ref=e3659] [cursor=pointer]':
+              - strong [ref=e3661]: Envoy 4
+              - generic [ref=e3662]: Dracon League
+          - status "Portrait control demonstration" [ref=e3663]: No roster request
+        - region "Command control gallery" [ref=e3664]:
+          - heading "Shared galaxy command instruments" [level=3] [ref=e3665]
+          - paragraph [ref=e3666]: "Production controls, including selected and disabled gallery states. Cosmetic saved portraits never determine mechanical faction. Atlas provenance: docs/art/PRODUCTION_ASSETS.md."
+          - status "Command selection demonstration" [ref=e3667]: "Selected command preview: systems"
+          - generic [ref=e3668]:
+            - button "systems" [ref=e3669] [cursor=pointer]:
+              - img [ref=e3670]
+              - generic [ref=e3672]: systems
+            - button "economy" [ref=e3673] [cursor=pointer]:
+              - img [ref=e3674]
+              - generic [ref=e3676]: economy
+            - button "conversations" [ref=e3677] [cursor=pointer]:
+              - img [ref=e3678]
+              - generic [ref=e3680]: conversations
+            - button "history" [ref=e3681] [cursor=pointer]:
+              - img [ref=e3682]
+              - generic [ref=e3684]: history
+            - button "arrivals" [ref=e3685] [cursor=pointer]:
+              - img [ref=e3686]
+              - generic [ref=e3688]: arrivals
+            - button "contacts" [ref=e3689] [cursor=pointer]:
+              - img [ref=e3690]
+              - generic [ref=e3692]: contacts
+            - button "Disabled gallery example" [disabled] [ref=e3693]:
+              - img [ref=e3694]
+              - generic [ref=e3696]: Disabled gallery example
+        - region "Cosmetic portrait atlas" [ref=e3697]:
+          - heading "Cosmetic portrait atlas" [level=3] [ref=e3698]
+          - generic [ref=e3699]:
+            - figure "G1 · cosmetic portrait" [ref=e3700]:
+              - generic [ref=e3702]: G1 · cosmetic portrait
+            - figure "G2 · cosmetic portrait" [ref=e3703]:
+              - generic [ref=e3705]: G2 · cosmetic portrait
+            - figure "M1 · cosmetic portrait" [ref=e3706]:
+              - generic [ref=e3708]: M1 · cosmetic portrait
+            - figure "M2 · cosmetic portrait" [ref=e3709]:
+              - generic [ref=e3711]: M2 · cosmetic portrait
+            - figure "A1 · cosmetic portrait" [ref=e3712]:
+              - generic [ref=e3714]: A1 · cosmetic portrait
+            - figure "A2 · cosmetic portrait" [ref=e3715]:
+              - generic [ref=e3717]: A2 · cosmetic portrait
+            - figure "O1 · cosmetic portrait" [ref=e3718]:
+              - generic [ref=e3720]: O1 · cosmetic portrait
+            - figure "O2 · cosmetic portrait" [ref=e3721]:
+              - generic [ref=e3723]: O2 · cosmetic portrait
+        - img "M-class stellar illustration"
+        - img "G-class stellar illustration"
+        - img "A-class stellar illustration"
+        - img "O-class stellar illustration"
+        - paragraph [ref=e3724]: Decorative class illustrations carry no system intelligence.
+      - generic [ref=e3725]:
+        - heading "Icon inventory" [level=2] [ref=e3726]
+        - paragraph [ref=e3727]: Decorative glyphs are hidden from assistive technology. The adjacent control text supplies the accessible name.
+        - generic [ref=e3728]:
+          - generic [ref=e3729]:
+            - generic [ref=e3730]: ×
+            - code [ref=e3731]: close
+          - generic [ref=e3732]:
+            - generic [ref=e3733]: →
+            - code [ref=e3734]: arrow
+          - generic [ref=e3735]:
+            - generic [ref=e3736]: ↗
+            - code [ref=e3737]: launch
+          - generic [ref=e3738]:
+            - generic [ref=e3739]: ✓
+            - code [ref=e3740]: selected
+          - generic [ref=e3741]:
+            - generic [ref=e3742]: ✦
+            - code [ref=e3743]: star
+          - generic [ref=e3744]:
+            - generic [ref=e3745]: ›
+            - code [ref=e3746]: chevron
+      - region "Campaign maintenance controls" [ref=e3747]:
+        - heading "Development maintenance" [level=2] [ref=e3748]
+        - group [ref=e3749]:
+          - generic "Development controls" [ref=e3750] [cursor=pointer]
+        - group [ref=e3751]:
+          - generic "Development controls" [ref=e3752] [cursor=pointer]
+      - generic [ref=e3753]:
+        - heading "Asset provenance" [level=2] [ref=e3754]
+        - paragraph [ref=e3755]: The entry landscape, phone landscape, navigation atlas and eight portrait atlas are commissioned imagegen assets. Fonts are locally bundled Cormorant Garamond and Atkinson Hyperlegible under their supplied OFL licences. No generated lettering is used.
+        - link "Exact prompts and source assets" [ref=e3756] [cursor=pointer]:
+          - /url: https://github.com/anicolao/clusterii/blob/feat/campaign-admission/docs/art/PRODUCTION_ASSETS.md
+        - paragraph [ref=e3757]: Button focus, selected and disabled styles come from production CSS; motion comes from the shared feedback action.
+```
+
+# Test source
+
+```ts
+  1  | import { expect, type Locator } from "@playwright/test";
+  2  | 
+  3  | // Observe without moving the viewport: a later test scroll must not hide a
+  4  | // production focus/selection bug. Keep both original corner hit checks.
+  5  | export async function expectReadingTarget(target: Locator, hitTest = true) {
+  6  |   await expect
+  7  |     .poll(
+  8  |       () =>
+  9  |         target.evaluate((element, hitTest) => {
+  10 |           const box = element.getBoundingClientRect();
+  11 |           let left = 0,
+  12 |             top = 0,
+  13 |             right = innerWidth,
+  14 |             bottom = innerHeight;
+  15 |           for (
+  16 |             let parent = element.parentElement;
+  17 |             parent;
+  18 |             parent = parent.parentElement
+  19 |           ) {
+  20 |             const style = getComputedStyle(parent),
+  21 |               bounds = parent.getBoundingClientRect();
+  22 |             if (/(auto|scroll|hidden|clip)/.test(style.overflowX)) {
+  23 |               left = Math.max(left, bounds.left + parent.clientLeft);
+  24 |               right = Math.min(
+  25 |                 right,
+  26 |                 bounds.left + parent.clientLeft + parent.clientWidth,
+  27 |               );
+  28 |             }
+  29 |             if (/(auto|scroll|hidden|clip)/.test(style.overflowY)) {
+  30 |               top = Math.max(top, bounds.top + parent.clientTop);
+  31 |               bottom = Math.min(
+  32 |                 bottom,
+  33 |                 bounds.top + parent.clientTop + parent.clientHeight,
+  34 |               );
+  35 |             }
+  36 |           }
+  37 |           const corners = [
+  38 |             [box.left + 1, box.top + 1],
+  39 |             [box.right - 1, box.bottom - 1],
+  40 |             [box.left + box.width / 2, box.top + box.height / 2],
+  41 |           ].map(([x, y]) => {
+  42 |             const painted = document.elementFromPoint(x, y);
+  43 |             return {
+  44 |               hit:
+  45 |                 !hitTest ||
+  46 |                 painted === element ||
+  47 |                 (!!painted && element.contains(painted)),
+  48 |               painted: painted?.tagName + "." + painted?.className,
+  49 |             };
+  50 |           });
+  51 |           return {
+  52 |             rect: box.toJSON(),
+  53 |             clip: { left, top, right, bottom },
+  54 |             corners,
+  55 |             contained:
+  56 |               box.width > 0 &&
+  57 |               box.height > 0 &&
+  58 |               box.left >= left &&
+  59 |               box.top >= top &&
+  60 |               box.right <= right &&
+  61 |               box.bottom <= bottom,
+  62 |             hits: corners.every((corner) => corner.hit),
+  63 |           };
+  64 |         }, hitTest),
+  65 |       {
+  66 |         message:
+  67 |           "The entire reading target and both corners remain usable inside every clipping ancestor",
+  68 |       },
+  69 |     )
+> 70 |     .toMatchObject({ contained: true, hits: true });
+     |      ^ Error: The entire reading target and both corners remain usable inside every clipping ancestor
+  71 | }
+  72 | 
+```

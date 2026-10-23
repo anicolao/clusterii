@@ -20,6 +20,7 @@
   import MarketFocus from "$lib/components/MarketFocus.svelte";
   import SystemConstruction from "$lib/components/SystemConstruction.svelte";
   import CampaignResearch from "$lib/components/CampaignResearch.svelte";
+  import ScienceLedger from "$lib/components/ScienceLedger.svelte";
   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
@@ -329,6 +330,12 @@
             onselect={reset}
             onretry={frame.feedback.remedy === "network" ? reset : undefined}
           />
+        {:else if selected === "science"}<div style="height:650px">
+            <ScienceLedger
+              view={productionFrame(time).view}
+              onclose={() => (selected = "production")}
+            />
+          </div>
         {:else if selected === "production"}<div style="height:650px">
             <CampaignEconomy
               view={productionFrame(time).view}
