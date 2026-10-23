@@ -12,16 +12,21 @@
   });
 </script>
 
-<p role="status" aria-live="polite">
+<p role="status" aria-label="Campaign start" aria-live="polite">
   {#if game.pausedAt != null}
     Paused for development maintenance. Admissions and scheduled start are
     stopped.
   {:else if game.phase === "scheduled" && game.startAt != null && (inspectTime ?? now) >= game.startAt}
     Awaiting home assignment. Your seat is saved; this view updates
-    automatically.
+    automatically. Scheduled for <time
+      datetime={new Date(game.startAt).toISOString()}
+      >{new Date(game.startAt).toLocaleString()}</time
+    >.
   {:else if game.startAt}
     {game.phase === "active" ? "Began" : "Starts"}
-    {new Date(game.startAt).toLocaleString()}.
+    <time datetime={new Date(game.startAt).toISOString()}
+      >{new Date(game.startAt).toLocaleString()}</time
+    >.
     {game.phase === "scheduled"
       ? "The server assigns home systems at the scheduled start."
       : ""}

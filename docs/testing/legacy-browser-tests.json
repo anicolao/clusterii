@@ -129,7 +129,7 @@
     }
   },
   "production.spec.ts": {
-    "sha256": "f27fefccf159d920a9a155f9d65b28c85799f8f737a9d3b402f9522b404ddf19",
+    "sha256": "2629e2f663144836f0d5c214455b386e0de3e6c5fd58bb889667f9aaa901a036",
     "status": "Procedural regression; illustrated migration incomplete",
     "navigationCompatibility": {
       "priorSha256": "b82c35d343e6a2841a5c2b840032ea9a26ad4b967b3f24b16c9b63c544af6c50",
@@ -140,6 +140,11 @@
       "priorSha256": "fe68bc9057fa91592d7d41f8c87548ef8301c060cee1adde314dd5d919eca27a",
       "authorization": "Prompt 141: reviewer04:43 explicitly requests bounded legacy waiting/start compatibility; this is not illustrated migration",
       "review": "docs/testing/PRODUCTION_WAITING_CI_REVIEW.md"
+    },
+    "scheduledStatusCompatibility": {
+      "priorSha256": "f27fefccf159d920a9a155f9d65b28c85799f8f737a9d3b402f9522b404ddf19",
+      "authorization": "Prompt 142: reviewer05:12 requests whole-path scheduled phase/time/whitespace correction; not illustrated migration",
+      "review": "docs/testing/scheduled-status-39927177999/README.md"
     }
   }
 }

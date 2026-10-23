@@ -158,10 +158,13 @@
           campaign to play with production.{:else if view.pausedAt != null}Production
           is paused. Remaining time resumes with the campaign.{:else if !view.production}Production
           begins fifteen minutes after home assignment.{:else if (inspectTime ?? now) >= view.production.nextTickAt}Awaiting
-          next tick. Balances update when production is confirmed.{:else}Next
-          production: {new Date(
-            view.production.nextTickAt,
-          ).toLocaleString()}.{/if}
+          next tick. Balances update when production is confirmed. Scheduled for <time
+            datetime={new Date(view.production.nextTickAt).toISOString()}
+            >{new Date(view.production.nextTickAt).toLocaleString()}</time
+          >.{:else}Next production: <time
+            datetime={new Date(view.production.nextTickAt).toISOString()}
+            >{new Date(view.production.nextTickAt).toLocaleString()}</time
+          >.{/if}
       </p>
     </header>
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded ledger supports keyboard scrolling.) -->

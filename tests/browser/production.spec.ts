@@ -15,17 +15,17 @@ test('four commanders receive authoritative production after the real scheduled 
   // A full roster is scheduled, not active: read the real manifest before gameplay navigation.
   const waiting=pages[0].getByRole('region',{name:'Waiting campaign',exact:true});
   await expect(waiting.getByRole('heading',{name:'4 / 4 empires assembled',exact:true})).toBeVisible();
-  const startStatus=waiting.getByRole('status').filter({hasText:/^Starts /});
-  await expect(startStatus).toContainText('The server assigns home systems at the scheduled start.');
-  const startLabel=(await startStatus.innerText()).match(/^Starts (.*?)\. The server assigns/)!;
-  expect(startLabel).not.toBeNull();
-  const startAt=await pages[0].evaluate(label=>Date.parse(label),startLabel[1]);expect(Number.isFinite(startAt)).toBe(true);
+  const startStatus=waiting.getByRole('status',{name:'Campaign start',exact:true});
+  const startTime=startStatus.locator('time');await expect(startTime).toBeVisible();
+  const startIdentity=await startTime.getAttribute('datetime');expect(startIdentity).not.toBeNull();
+  const startAt=Date.parse(startIdentity!);expect(Number.isFinite(startAt)).toBe(true);
+  expect(new Date(startAt).toISOString()).toBe(startIdentity);
   await expect(pages[0].getByRole('navigation',{name:'Galaxy commands',exact:true})).toHaveCount(0);
   await expect(pages[0].getByRole('dialog',{name:'Empire economy panel'})).toHaveCount(0);
-  let remaining=900000-Date.now()%900000+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for actual campaign start.`);await new Promise(r=>setTimeout(r,remaining));
+  let remaining=Math.max(0,startAt-Date.now())+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for recorded campaign start ${startIdentity}.`);await new Promise(r=>setTimeout(r,remaining));
   const deliver=async(name:string)=>{const response=await request.post(`http://127.0.0.1:15001/demo-clusterii/us-central1/${name}-0`,{headers:{'X-CloudScheduler-JobName':'emulator-production-journey','X-CloudScheduler-ScheduleTime':new Date().toISOString()}});expect(response.ok()).toBe(true);};
   await deliver('startScheduledCampaigns');
-  for(const page of pages){await acknowledgeCampaignStart(page);await expect(page.getByRole('region',{name:'Waiting campaign',exact:true})).toHaveCount(0);await openGalaxyCommand(page, "Economy");const panel=page.getByRole('dialog',{name:'Empire economy panel'});await expect(panel).toContainText('First production pending');const firstProduction=await page.evaluate(at=>new Date(at+900000).toLocaleString(),startAt);await expect(panel.getByRole('status',{name:'Production schedule',exact:true})).toHaveText(`Next production: ${firstProduction}.`);}
+  for(const page of pages){await acknowledgeCampaignStart(page);await expect(page.getByRole('region',{name:'Waiting campaign',exact:true})).toHaveCount(0);await openGalaxyCommand(page, "Economy");const panel=page.getByRole('dialog',{name:'Empire economy panel'});await expect(panel).toContainText('First production pending');const firstProduction=panel.getByRole('status',{name:'Production schedule',exact:true}).locator('time');await expect(firstProduction).toBeVisible();await expect(firstProduction).toHaveAttribute('datetime',new Date(startAt+900000).toISOString());await expect(firstProduction).toHaveText(await page.evaluate(at=>new Date(at+900000).toLocaleString(),startAt));}
   await pages[0].getByRole('button',{name:'Return to galaxy',exact:true}).click();
   await openConstruction(pages[0], "Surface");
   const construction=pages[0].getByRole('dialog',{name:'System construction panel'});
@@ -53,7 +53,7 @@ test('four commanders receive authoritative production after the real scheduled 
   await pages[0].reload();await openGalaxyCommand(pages[0], "Economy");
   await expect(researchPanel.getByRole('radio',{name:/investing/})).toBeChecked();
   await expect(researchPanel.getByRole('region',{name:'Accepted research orders'})).toContainText('Tick 1 · investing');
-  remaining=900000-Date.now()%900000+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for actual first production.`);await new Promise(r=>setTimeout(r,remaining));
+  remaining=Math.max(0,startAt+900000-Date.now())+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for recorded first production.`);await new Promise(r=>setTimeout(r,remaining));
   const tray=pages[0].getByRole('dialog',{name:'Empire economy panel'});await expect(tray.getByRole('status',{name:'Production schedule'})).toContainText('Awaiting next tick.');
   await deliver('runProduction');await deliver('runProduction');
   await pages[0].getByRole('button',{name:'Return to galaxy',exact:true}).click();await openConstruction(pages[0], "Surface");await expect(construction).toContainText('Market · cancelled · 106 credits returned');await expect(construction.locator('header')).toContainText('202.8');await construction.getByRole('button',{name:'Back to galaxy',exact:true}).click();await openGalaxyCommand(pages[0], "Economy");
