@@ -1,0 +1,24 @@
+{
+  "firestore": "7.11.6",
+  "grpc": "1.14.6",
+  "emulator": "1.22.0",
+  "emulatorSHA256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c",
+  "files": [
+    {
+      "path": "functions/node_modules/@google-cloud/firestore/build/src/index.js",
+      "sha256": "ecb61cdee1d5a5d6ca0d9ebc0037dbabbfdc193500882d8ce0a2f0fb1e8d00e9"
+    },
+    {
+      "path": "functions/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js",
+      "sha256": "f596f29c983836d92bc711bc3b0b740ce7e27b47cbdd6175d2faa3ff20be223b"
+    },
+    {
+      "path": "functions/node_modules/@google-cloud/firestore/build/src/pool.js",
+      "sha256": "10f653583778b3a947c30e3eb760fb91e281ad4f2d64f3403e72cdb30c387b66"
+    },
+    {
+      "path": "functions/node_modules/@grpc/grpc-js/build/src/client.js",
+      "sha256": "e3a84fe730d6afdb4fef32e6774aded7932c3a24b446d992baaa77d50bbaea7b"
+    }
+  ]
+}
