@@ -99,6 +99,9 @@
         {item.view.stars.find((s) => s.id === item.report.starId)?.name ??
           item.report.starId}
       </p>{/if}
+    {#if report}<div class="scene-window" aria-hidden="true">
+        <img src={`${base}/art/orbital-aftermath.webp`} alt="" />
+      </div>{/if}
     <h2>{title}</h2>
     {#if report}<p class="recorded-context">
         Recorded outcome at tick {report.tick}. Current control may differ.
@@ -150,8 +153,8 @@
           <div>
             <dt>
               <span
-                class="force-art"
-                style={`background-image:url('${base}/art/fleet-preparation.webp')`}
+                class="force-art fighters-art"
+                style={`background-image:url('${base}/art/orbital-aftermath.webp')`}
                 aria-hidden="true"><FleetSymbol /></span
               >Your fighters lost
             </dt>
@@ -160,8 +163,8 @@
           <div>
             <dt>
               <span
-                class="force-art"
-                style={`background-image:url('${base}/art/fleet-preparation.webp')`}
+                class="force-art fighters-art"
+                style={`background-image:url('${base}/art/orbital-aftermath.webp')`}
                 aria-hidden="true"><FleetSymbol /></span
               >Your fighters remaining
             </dt>
@@ -170,7 +173,7 @@
           <div>
             <dt>
               <span
-                class="force-art"
+                class="force-art infantry-art"
                 style={`background-image:url('${base}/art/construction-base.webp')`}
                 aria-hidden="true"><DevelopmentIcon type="base" /></span
               >Your infantry lost
@@ -180,7 +183,7 @@
           <div>
             <dt>
               <span
-                class="force-art"
+                class="force-art infantry-art"
                 style={`background-image:url('${base}/art/construction-base.webp')`}
                 aria-hidden="true"><DevelopmentIcon type="base" /></span
               >Your infantry remaining
@@ -202,8 +205,8 @@
           <div>
             <dt>
               <span
-                class="ownership-art surface-art"
-                style={`background-image:url('${base}/art/system-orbit.webp')`}
+                class="ownership-art world-art"
+                style={`background-image:url('${base}/art/orbital-aftermath.webp')`}
                 aria-hidden="true"><DevelopmentIcon type="base" /></span
               >Surface
             </dt>
@@ -349,6 +352,9 @@
     max-width: 850px;
     line-height: 1.5;
   }
+  .scene-window {
+    display: none;
+  }
   .recorded-context {
     color: #b9d2d8;
     font-size: 0.9em;
@@ -440,11 +446,29 @@
     margin: 0 0 8px;
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
-    border: 1px solid #6c929b;
+    border: 0;
+    /* Focused details from the existing scene assets, without postcard frames. */
+    mask-image: radial-gradient(ellipse, #000 55%, transparent 75%);
+  }
+  .fighters-art {
+    background-size: 440% auto;
+    background-position: 94% 73%;
+  }
+  .infantry-art {
+    background-size: 400% auto;
+    background-position: 60% 88%;
+  }
+  .ownership-art.orbit-art {
+    background-size: 220% auto;
+    background-position: 91% 18%;
+  }
+  .ownership-art.world-art {
+    background-size: 960% auto;
+    background-position: 17% 7.5%;
   }
   .force-art :global(svg),
   .ownership-art :global(svg) {
+    display: none;
     position: absolute;
     width: 22px;
     height: 22px;
@@ -748,6 +772,9 @@
       margin: 20px 0 6px;
       font-size: 40px;
     }
+    .scene-window {
+      display: none;
+    }
     .recorded-context {
       margin: 6px 0 12px;
     }
@@ -780,8 +807,8 @@
       gap: 10px;
     }
     .force-art {
-      width: 36px;
-      height: 28px;
+      width: 60px;
+      height: 38px;
       margin-bottom: 4px;
     }
     .force-art :global(svg),
@@ -797,12 +824,12 @@
       font-size: 26px;
     }
     .ownership-art {
-      width: 32px;
-      height: 32px;
+      width: 44px;
+      height: 44px;
       margin: 0 8px 0 0;
     }
     .control dd {
-      padding-left: 40px;
+      padding-left: 52px;
       clear: none;
       font-size: 22px;
       overflow-wrap: anywhere;
@@ -812,8 +839,22 @@
     .report-body {
       padding: 16px;
     }
+    .scene-window {
+      display: block;
+      height: 136px;
+      margin: 8px -16px 0;
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(#000 80%, transparent);
+    }
+    .scene-window img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 70% 34%;
+    }
     .recorded h2 {
-      margin-top: 32px;
+      margin-top: 0;
       font-size: 36px;
     }
     .losses dt {
@@ -824,7 +865,7 @@
       margin: 2px 8px 0 0;
     }
     .losses dd {
-      padding-left: 44px;
+      padding-left: 0;
     }
     .control dd {
       padding-left: 0;

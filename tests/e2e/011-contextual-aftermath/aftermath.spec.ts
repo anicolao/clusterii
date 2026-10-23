@@ -694,6 +694,22 @@ test("Open a contextual arrival report and recover its recorded surface", async 
               ),
               false,
             );
+            if (info.project.name === "phone") {
+              const scene = reportPanel(p).locator(".scene-window");
+              await expectReadingTarget(scene, false);
+              const bounds = await scene.boundingBox();
+              expect(bounds?.height).toBeGreaterThanOrEqual(112);
+              const image = scene.locator("img");
+              await expect(image).toHaveAttribute(
+                "src",
+                /orbital-aftermath\.webp$/,
+              );
+              expect(
+                await image.evaluate(
+                  (e: HTMLImageElement) => e.complete && e.naturalWidth > 0,
+                ),
+              ).toBe(true);
+            }
             if (["phone", "short"].includes(info.project.name)) {
               // Initial reading state: no scroll helper may manufacture visibility.
               expect(await reportBody(p).evaluate((e) => e.scrollTop)).toBe(0);

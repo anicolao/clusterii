@@ -1,0 +1,20 @@
+# Aftermath scene hierarchy — c3ecf3f8
+
+Eight Nix journeys passed in3.4minutes,108 Darwin candidate images, clean source/spec manifests checked against committed c3ecf3f8. This is generation for independent review, not strict baseline verification or screen approval. Original240s/30s/10s budgets,retries0,max-failures1 and exactRGBA0 unchanged. Original output remains /tmp/cluster-aftermath-hierarchy-c3ecf3f8; prior failed/held families are untouched.
+
+Reviewer15:14/15:24 identified insufficient phone upper scene and generic cropped thumbnails. ArrivalReports now frames a distinct136px orbital scene on narrow compact surfaces. Existing provenanced artwork supplies focused ship/troop/station/planet illustrations with soft edges rather than postcard borders. All four real casualty values, independent owners, recorded-time/current-control qualification and primary actions remain in the initial phone/short viewport. Secondary prose remains bounded-scroll. No gameplay, service, authorized report or asset bytes changed; no private credit balance or invented stages.
+
+| Viewport | Real contextual acknowledgement/recovery | Actual shared gallery/lab |
+| --- | --- | --- |
+| Phone393×852 | [24 originals](contextual-aftermath/phone/darwin-arm64/README.md) | [3 originals](contextual-aftermath-components/phone/darwin-arm64/README.md) |
+| Desktop1440×1000 | [24 originals](contextual-aftermath/desktop/darwin-arm64/README.md) | [3 originals](contextual-aftermath-components/desktop/darwin-arm64/README.md) |
+| Large3840×2160 | [24 originals](contextual-aftermath/large/darwin-arm64/README.md) | [3 originals](contextual-aftermath-components/large/darwin-arm64/README.md) |
+| Short1280×720 | [24 originals](contextual-aftermath/short/darwin-arm64/README.md) | [3 originals](contextual-aftermath-components/short/darwin-arm64/README.md) |
+
+Real loops retain actual dispatch, persisted recipient reports, authenticated foreign-read denial, immutable next-tick/reload recovery, Escape/opener/selected-layer restoration, bounded keyboard reading and normal-motion preference/effect settlement. Original initial core-fact containment remains before helper scrolling; added phone check verifies loaded upper scene height>=112px. No service result is injected. Fixed catalogue/domain-clock and leased scheduler calls remain explicitly labeled harness controls, not hosted scheduling certification. Shared reducer-derived component scenarios are not live privacy acceptance.
+
+Self-review: initial peer023 inspected all four sizes against plate09; phone030 normal-motion recovery also inspected. Upper scene is now separately legible and all core facts remain above the game action rail. Desktop/large keep dominant scene and outcome. Native4K illustration/value/ownership crop large-native-casualties.png is extract-only from large023 at x120,y1120,width1560,height570; no resampling, not an additional story capture or baseline. Font clarity and separate labels are visible there. The phone embedded standard-motion lab sample is narrower than the game: ownership details require bounded scrolling. Its persistent actions remain visible; do not claim initial whole-summary visibility in that specimen or full108 visual review. Art remains atmospheric, not intelligence or actual unit counts.
+
+Preflight:48,880,496KiB free, required2,359,296; owned ports free. Offline/no-substitute established Nix, Java21.0.11/Node24.18.0/Bun1.3.13. Node differs from declared Functions22 and remains an environment limitation. Functions compilation completed before emulator launch. Static check0errors/one existing unrelated FleetRoute warning; policy checks pass. Eight clean/passed manifests, spec hashes and all archived original bytes verified; no failures in this changed-source generation.
+
+Original PR128 application40006959520 and story40006959566 remain running at archival; no new commit/request timing conclusion. Linux baseline/pixel, historical100-tick and ingress, independent visual, hosted/KMS and release gates remain open. No merge or baseline promotion.
