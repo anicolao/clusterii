@@ -20,7 +20,7 @@
     "test:stories:generate": "node scripts/run-stories.mjs generate",
     "test:story-policy": "node --test scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths",
     "test:stories:promote": "node scripts/promote-story-baselines.mjs",
-    "test:story-tools": "bun test tests/story-tools.test.ts",
+    "test:story-tools": "bun test tests/story-tools.test.ts tests/settlement-timing.test.ts",
     "test:browser-storage": "bun test tests/recovery-store.test.ts",
     "test:baseline-paths": "playwright test --config playwright.paths.config.ts"
   },
