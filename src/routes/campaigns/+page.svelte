@@ -959,6 +959,20 @@
       <div class="development-banner">
         Development campaign · Rules under review
       </div>{/if}
+    {#if access === "developer" && selected && game && !creating && !loading}
+      <div class="join-tabs" role="group" aria-label="Join campaign details">
+        {#each ["faction", "portrait", "briefing"] as tab}<ActionButton
+            class="quiet"
+            aria-pressed={joinTab === tab}
+            onclick={() => openJoinTab(tab as typeof joinTab)}
+            >{tab === "faction"
+              ? "Faction"
+              : tab === "portrait"
+                ? "Portrait"
+                : "Briefing & roster"}</ActionButton
+          >{/each}
+      </div>
+    {/if}
     <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (Named scroll region supports bounded keyboard Home/End without activating a command.) -->
     <div
       class="campaign-body"
@@ -1102,22 +1116,7 @@
           </form>
         {:else if selected}
           {#if loading}<p role="status">Recovering your campaign…</p>
-          {:else if game}<div
-              class="join-tabs"
-              role="group"
-              aria-label="Join campaign details"
-            >
-              {#each ["faction", "portrait", "briefing"] as tab}<ActionButton
-                  class="quiet"
-                  aria-pressed={joinTab === tab}
-                  onclick={() => openJoinTab(tab as typeof joinTab)}
-                  >{tab === "faction"
-                    ? "Faction"
-                    : tab === "portrait"
-                      ? "Portrait"
-                      : "Briefing & roster"}</ActionButton
-                >{/each}
-            </div>
+          {:else if game}
             {#if joinTab === "faction"}<FactionPicker
                 bind:value={faction}
                 {game}
@@ -1428,8 +1427,8 @@
   .join-tabs {
     display: flex;
     gap: 8px;
-    position: sticky;
-    top: 0;
+    position: relative;
+    flex-shrink: 0;
     z-index: 3;
     background: #07121ef8;
     padding: 4px 16px;

@@ -316,6 +316,15 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
             .getByRole("listitem")
             .filter({ hasText: "Dracon League" });
           await contained(row);
+          const tabs = await page
+            .getByRole("group", { name: "Join campaign details", exact: true })
+            .boundingBox();
+          const reading = await page
+            .getByRole("region", { name: "Campaign details", exact: true })
+            .boundingBox();
+          expect(tabs).not.toBeNull();
+          expect(reading).not.toBeNull();
+          expect(reading!.y).toBeGreaterThanOrEqual(tabs!.y + tabs!.height);
           await expect(row).toContainText("1 seats open");
           await rail(page, "Claim your seat");
           expect(await page.evaluate(() => window.scrollY)).toBe(0);
