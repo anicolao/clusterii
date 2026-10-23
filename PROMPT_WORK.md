@@ -702,3 +702,5 @@ Prompt 123 | c41a310f366558ab4bc45602465c87f113a3194a25322995f1c068ce994dbaed | 
 Prompt 124 | eb2b94643e064bae3f92743c2e4151b2390b99403e386da1ff32c12011c4b0ed | Preserve sole phone startup failure and explicit Java environment blocker without browser retry or baseline changes
 
 Prompt 126 | 56eaa9a991fdb80ba6fc9e9d3a222e1405d7927f3eef94d094f35c0eb949d07e | Align entry hierarchy with approved cinematic plate and document four-size retained-screen design deviations
+
+Prompt 126 | 56eaa9a991fdb80ba6fc9e9d3a222e1405d7927f3eef94d094f35c0eb949d07e | Retain four-size Nix entry candidates and side-by-side approved-design comparison without baseline promotion

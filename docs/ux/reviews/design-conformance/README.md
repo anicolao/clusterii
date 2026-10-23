@@ -13,3 +13,7 @@
 This PR completes entry composition source first. Existing scene assets are reused byte-for-byte; Continue crops the already-provenanced entry-phone world image decoratively, with semantic campaign name. No generated lettering or new gameplay policy. Existing accepted baseline bytes remain unchanged. New exact candidate family requires independent design comparison before promotion. Account resume scenarios and galaxy implementation are separate remaining live gates; no fabricated membership is used for visual acceptance.
 
 Execution uses recovered `nix develop /tmp/pantheon-nix-env --command …`, verified Java21.0.11/Node24.18.0/Bun1.3.13. The earlier Java failure was outside Nix, not missing installation. Runtime versions differ from documented Node22/Bun1.3.10 targets and do not certify pinned Linux rendering. Original failure preserved.
+
+## Changed-source evidence
+
+Clean `4129971` production; unchanged `entry.story.spec.ts`. Nix generation passed4 journeys/24 candidates in30.0s, retries0 and unchanged readiness/geometry/deadlines. Complete originals/manifests/generated stories: `/tmp/cluster-entry-design-candidates/learn-and-return/`. Four entry frames committed here and paired with plate01 in comparison.html. Keyboard opening and closing Learn/focus restoration passed at each size with reduced motion. All candidate images remain unapproved; no baseline bytes changed. Returning memberships, normal motion and full fresh galaxy render acceptance remain open.
