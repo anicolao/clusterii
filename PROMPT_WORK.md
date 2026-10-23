@@ -820,3 +820,5 @@ Prompt 156 | c3675bfdbe4f8f5a000af2bb66f08bb9c83d797144f531eb04c046c4cd9b7a37 | 
 Prompt 156 | c3675bfdbe4f8f5a000af2bb66f08bb9c83d797144f531eb04c046c4cd9b7a37 | Preserve the first real settlement failure and read immutable arrival history through the actual authenticated production reader.
 
 Prompt 156 | c3675bfdbe4f8f5a000af2bb66f08bb9c83d797144f531eb04c046c4cd9b7a37 | Retain four-size authenticated aftermath evidence, refine plate09 framing and keyboard reading, and reconcile publication recovery without a root-cause claim.
+
+Prompt 156 | c3675bfdbe4f8f5a000af2bb66f08bb9c83d797144f531eb04c046c4cd9b7a37 | Preserve the rounded footer corner failure and retain plate09 paint with complete semantic hit surfaces, without changing any geometry assertion.

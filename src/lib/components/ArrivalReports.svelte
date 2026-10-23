@@ -455,17 +455,32 @@
     color: #f3ead6;
     font: inherit;
   }
-  footer :global(button) {
+  .arrival-instrument footer :global(button) {
+    position: relative;
+    isolation: isolate;
     flex: 1;
     font:
       600 20px "Cormorant Garamond",
       serif;
     min-height: 58px;
+    border-radius: 0;
+    border-color: transparent;
+    background: transparent;
+  }
+  /* Match the shared command treatment: rounded paint, complete hit surface. */
+  footer :global(button::before) {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    pointer-events: none;
+    border: 1px solid var(--arrival-button-border, #8aa3a5);
+    background: var(--arrival-button-background, #0c2836);
     border-radius: 4px;
   }
   footer :global(.primary) {
-    border-color: #64e5f3;
-    background: #07516b;
+    --arrival-button-border: #64e5f3;
+    --arrival-button-background: #07516b;
   }
   @media (min-width: 2300px) {
     .report-body {
@@ -488,7 +503,7 @@
       width: min(100%, 1400px);
       font-size: 26px;
     }
-    footer :global(button) {
+    .arrival-instrument footer :global(button) {
       font-size: 32px;
       min-height: 84px;
     }
