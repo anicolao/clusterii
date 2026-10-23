@@ -184,7 +184,7 @@
       0 12px 32px #0008;
   }
   .layer-facts {
-    padding: 0 20px 18px;
+    padding: 12px 20px 18px;
   }
   dl {
     display: grid;
@@ -278,7 +278,7 @@
     }
     .layer-facts {
       font-size: 30px;
-      padding: 0 34px 30px;
+      padding: 12px 34px 30px;
     }
     .layer-facts p {
       font-size: 24px;
@@ -326,7 +326,7 @@
     }
     .layer-facts {
       font-size: 13px;
-      padding: 0 12px 10px;
+      padding: 12px 12px 10px;
     }
     .layer-facts p {
       margin: 6px 0;
@@ -388,7 +388,7 @@
       font-size: 20px;
     }
     .layer-facts {
-      padding: 0 12px 12px;
+      padding: 12px;
       font-size: 14px;
     }
     .layer-facts p {

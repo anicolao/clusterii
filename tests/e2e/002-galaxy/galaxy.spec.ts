@@ -82,7 +82,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           await page.clock.setFixedTime(admissionAt);
         },
       );
-    for (let i = 0; i < 4; i++)
+    for (let i = 0; i < 4; i++) {
       await story.harness(
         `admit-${i + 1}`,
         "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
@@ -119,6 +119,53 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           ).toBeVisible();
         },
       );
+      if (i === 0)
+        await story.step("read-waiting-rail", {
+          actor: aliases[0],
+          description:
+            "Read the acknowledged waiting campaign before other players join. Unavailable empire production is not shown as a placeholder resource row.",
+          action: async () => keyboard(pages[0], "Roster"),
+          acknowledgement: {
+            spec: "The real roster shows the accepted commander before scheduled start.",
+            check: async () => {
+              await expect(
+                pages[0].getByRole("dialog", { name: "Campaign roster" }),
+              ).toContainText(aliases[0]);
+              await keyboard(pages[0], "Close roster");
+              await expect(button(pages[0], "Roster")).toBeFocused();
+            },
+          },
+          verifications: [
+            {
+              spec: "The waiting rail is compact, retains navigation and omits unavailable empire facts.",
+              check: async () => {
+                await expect(
+                  pages[0].getByLabel("Empire resources"),
+                ).toHaveCount(0);
+                const rail = await pages[0]
+                  .locator(".command-rail")
+                  .boundingBox();
+                expect(rail).not.toBeNull();
+                expect(rail!.height).toBeLessThanOrEqual(
+                  info.project.name === "large" ? 100 : 70,
+                );
+              },
+            },
+          ],
+          views: [
+            {
+              page: pages[0],
+              player: aliases[0],
+              surface: "game",
+              primary: [
+                button(pages[0], "Roster"),
+                button(pages[0], "Campaigns"),
+                button(pages[0], "Menu"),
+              ],
+            },
+          ],
+        });
+    }
     await story.harness(
       "scheduled-start",
       "Deliver the real Scheduler HTTP request at the designated browser/domain boundary; no campaign or membership writes. This is not hosted cadence certification.",
@@ -367,6 +414,40 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
         },
       ],
     });
+    await story.harness(
+      "normal-motion-orbit-keyboard",
+      "Separately permit normal device motion, close and reopen Orbit by keyboard and measure focused fact separation. Restore reduced motion before captured evidence; this is interaction evidence, not normal-motion visual approval.",
+      async () => {
+        await owner.emulateMedia({ reducedMotion: "no-preference" });
+        expect(
+          await owner.evaluate(
+            () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+          ),
+        ).toBe(false);
+        await keyboard(owner, "Inspect Orbit · owner You");
+        await expect(
+          button(owner, "Inspect Orbit · owner You"),
+        ).toHaveAttribute("aria-expanded", "false");
+        await keyboard(owner, "Inspect Orbit · owner You");
+        await expect(button(owner, "Build in orbit")).toBeVisible();
+        const gap = await button(owner, "Inspect Orbit · owner You").evaluate(
+          (el) => {
+            const style = getComputedStyle(el);
+            return (
+              el
+                .parentElement!.querySelector("dl > div")!
+                .getBoundingClientRect().top -
+              el.getBoundingClientRect().bottom -
+              parseFloat(style.outlineWidth) -
+              parseFloat(style.outlineOffset)
+            );
+          },
+        );
+        expect(gap).toBeGreaterThanOrEqual(4);
+        await expect(button(owner, "Inspect Orbit · owner You")).toBeFocused();
+        await owner.emulateMedia({ reducedMotion: "reduce" });
+      },
+    );
     await story.step("reserve-orbital-development", {
       actor: aliases[0],
       description:
