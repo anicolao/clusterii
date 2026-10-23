@@ -1,0 +1,133 @@
+{
+  "id": "galaxy-instrument-gallery",
+  "title": "Inspect shared commander and command instruments",
+  "inventory": [
+    "UX-03",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "The developer gallery renders the actual CommanderDeck, CommanderPortrait, CommandControl and GameMenu. Its existing reducer-derived scenario is explicitly a component demonstration, not an authenticated campaign, admission or privacy claim. Keyboard and local preview outcomes are named separately from service acknowledgements.",
+  "source": {
+    "commit": "3dbb483d4458393801a23b07f208224f42763802",
+    "dirty": false,
+    "spec": "tests/e2e/007-galaxy-composition/gallery.spec.ts",
+    "specSha256": "c3acb531eef665a2ce7f73a51d29c35c2b6adc95ca3a67ca9bfdd9fd29216afd"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "open-shared-portrait-menu",
+      "description": "Read the actual commander deck, open its portrait menu with Enter, and traverse every modal control including both wrap boundaries.",
+      "actor": "Gallery reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual native game menu contains focus at its final control.",
+      "verifications": [
+        "This is the browser-local presentation menu, not campaign navigation or a fabricated order."
+      ],
+      "views": [
+        {
+          "player": "Gallery reviewer",
+          "image": "001-open-shared-portrait-menu-1-gallery-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-commander-deck",
+      "description": "Escape restores the exact portrait opener. Read the own and peer controls; compact phone uses the own portrait while live Roster remains covered by the campaign story.",
+      "actor": "Gallery reviewer",
+      "kind": "player",
+      "acknowledgement": "The commander opener regains focus and the modal closes.",
+      "verifications": [
+        "Responsive peer visibility and semantic cosmetic/faction labelling are retained."
+      ],
+      "views": [
+        {
+          "player": "Gallery reviewer",
+          "image": "002-return-to-commander-deck-1-gallery-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "request-roster-example",
+      "description": "Activate a peer portrait through Space and observe the gallery callback acknowledgement, explicitly not a server receipt.",
+      "actor": "Gallery reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual deck delivers its roster callback.",
+      "verifications": [
+        "The initiating peer control retains keyboard focus in this component demonstration."
+      ],
+      "views": [
+        {
+          "player": "Gallery reviewer",
+          "image": "003-request-roster-example-1-gallery-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "select-shared-command",
+      "description": "Read all six shared command instruments and the disabled example, then select History with the keyboard.",
+      "actor": "Gallery reviewer",
+      "kind": "player",
+      "acknowledgement": "The local preview names History and exposes its current state to assistive technology.",
+      "verifications": [
+        "All real icon controls remain labelled; only one is current and the explicit disabled example cannot be activated."
+      ],
+      "views": [
+        {
+          "player": "Gallery reviewer",
+          "image": "004-select-shared-command-1-gallery-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-provenanced-portraits",
+      "description": "Read all eight cosmetic portrait tiles from the original approved atlas, rendered by the shared production portrait component.",
+      "actor": "Gallery reviewer",
+      "kind": "player",
+      "acknowledgement": "Eight labelled atlas tiles are rendered from the production portrait asset.",
+      "verifications": [
+        "The atlas uses the existing provenanced image and every tile has a contained readable caption."
+      ],
+      "views": [
+        {
+          "player": "Gallery reviewer",
+          "image": "005-read-provenanced-portraits-1-gallery-reviewer.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
