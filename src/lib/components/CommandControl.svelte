@@ -35,7 +35,7 @@
     gap: 12px;
     min-height: 60px;
     padding: 12px 18px;
-    border-radius: 8px;
+    border-radius: 0;
     border: 1px solid #96a3ad77;
     background: linear-gradient(165deg, #1b2c38ee, #08121dec 72%);
     box-shadow:
