@@ -1,5 +1,7 @@
 <script lang="ts">
   import GameMenu from "../GameMenu.svelte";
+  import ScienceLedger from "../ScienceLedger.svelte";
+  import DevelopmentIcon from "../DevelopmentIcon.svelte";
   import CommandIcon from "../CommandIcon.svelte";
   import type { ResearchDraft, RecoveredResearch } from "$lib/research-draft";
   import {
@@ -243,6 +245,7 @@
     void openPanel("construction");
   });
   let economy = $state(false);
+  let scienceOpen = $state(false);
   let resumedResearch = "";
   $effect(() => {
     if (
@@ -797,6 +800,7 @@
     military = kind === "military";
     construction = kind === "construction";
     economy = kind === "economy";
+    scienceOpen = false;
     history = kind === "history";
     briefingOpen = kind === "briefing";
     if (briefingOpen) {
@@ -848,9 +852,17 @@
     document.querySelector<HTMLElement>('[data-focus="roster"]')?.focus();
   }
   async function closeEconomy() {
+    const opener = scienceOpen ? "science" : "economy";
     economy = false;
+    scienceOpen = false;
     await tick();
-    document.querySelector<HTMLElement>('[data-focus="economy"]')?.focus();
+    document.querySelector<HTMLElement>(`[data-focus="${opener}"]`)?.focus();
+  }
+  async function openScience() {
+    await openPanel("economy");
+    scienceOpen = true;
+    await tick();
+    document.querySelector<HTMLElement>("[data-science-heading]")?.focus();
   }
   async function closeConstruction() {
     expanded = true;
@@ -977,15 +989,21 @@
               : "—"}</strong
           ></span
         >
-        <span
-          >Science · last tick <strong
-            >{view.economy?.ledger
-              ? (view.economy.ledger.scienceMilli / 1000).toLocaleString(
-                  "en-US",
-                )
-              : "—"}</strong
-          ></span
+        <ActionButton
+          class="science-resource"
+          data-focus="science"
+          onclick={openScience}
+          aria-label="Inspect science per tick"
         >
+          <DevelopmentIcon type="station" />
+          <span
+            >Science <strong
+              >{view.economy?.science
+                ? `+${(view.economy.science.scienceMilli / 1000).toLocaleString("en-US", { maximumFractionDigits: 3 })} / tick`
+                : "Rate not recorded"}</strong
+            >{#if view.pausedAt != null}<small>Paused</small>{/if}</span
+          >
+        </ActionButton>
         <span
           >Next tick <strong
             >{view.pausedAt != null
@@ -1434,28 +1452,31 @@
       aria-label="Empire economy panel"
       onkeydown={panelKeys}
     >
-      <CampaignEconomy
-        bind:researchDraft
-        bind:marketDraft
-        {view}
-        {ontrade}
-        records={[...records, ...receivedTradeViews]}
-        bind:exchanging
-        bind:tradeSelection
-        bind:tradeDraft
-        {commandId}
-        {commandOfferId}
-        onhistory={() => openPanel("history")}
-        onclose={closeEconomy}
-        {onresearch}
-        {onfocus}
-        {commandKind}
-        {message}
-        {error}
-        {busy}
-        {pending}
-        {onretry}
-      />
+      {#if scienceOpen}<ScienceLedger
+          {view}
+          onclose={closeEconomy}
+        />{:else}<CampaignEconomy
+          bind:researchDraft
+          bind:marketDraft
+          {view}
+          {ontrade}
+          records={[...records, ...receivedTradeViews]}
+          bind:exchanging
+          bind:tradeSelection
+          bind:tradeDraft
+          {commandId}
+          {commandOfferId}
+          onhistory={() => openPanel("history")}
+          onclose={closeEconomy}
+          {onresearch}
+          {onfocus}
+          {commandKind}
+          {message}
+          {error}
+          {busy}
+          {pending}
+          {onretry}
+        />{/if}
     </div>{/if}
   {#if briefingOpen && briefingSnapshot}<div
       class="construction-panel contact-panel history-panel"
@@ -2514,6 +2535,58 @@
       font-size: 14px;
       padding: 8px;
       gap: 8px;
+    }
+  }
+  .campaign-facts :global(.science-resource) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 10px;
+    background: #0d2530;
+    border: 1px solid #75c9db66;
+    color: #a7edf3;
+    text-align: left;
+  }
+  .campaign-facts :global(.science-resource span) {
+    display: block;
+    font-size: 12px;
+  }
+  .campaign-facts :global(.science-resource strong) {
+    display: block;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .campaign-facts :global(.science-resource small) {
+    display: block;
+  }
+  @media (max-width: 700px) {
+    .campaign-facts :global(.science-resource) {
+      gap: 6px;
+      padding: 2px 6px;
+      min-height: 44px;
+    }
+    .campaign-facts :global(.science-resource svg) {
+      width: 20px;
+      height: 20px;
+    }
+    .campaign-facts :global(.science-resource span) {
+      font-size: 10px;
+    }
+    .campaign-facts :global(.science-resource strong) {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 2500px) {
+    .campaign-facts :global(.science-resource) {
+      padding: 8px 20px;
+    }
+    .campaign-facts :global(.science-resource span) {
+      font-size: 22px;
+    }
+    .campaign-facts :global(.science-resource strong) {
+      font-size: 32px;
     }
   }
 </style>

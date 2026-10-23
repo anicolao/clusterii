@@ -15,6 +15,7 @@
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
   import WorldArt from "$lib/components/WorldArt.svelte";
+  import ScienceLedger from "$lib/components/ScienceLedger.svelte";
   import SystemLayers from "$lib/components/SystemLayers.svelte";
   import CommandIcon from "$lib/components/CommandIcon.svelte";
   import Conversations from "$lib/components/Conversations.svelte";
@@ -101,6 +102,8 @@
   let portrait = $state<Portrait>("M2");
   let alias = $state("The envoy");
   let clicks = $state(0);
+  let scienceExampleOpen = $state(false);
+  let scienceExampleButton: HTMLButtonElement;
   let chapter = $state(0);
   let narrow = $state(false);
 </script>
@@ -610,6 +613,21 @@
     <section>
       <h2>Stellar class illustrations</h2>
       <WorldArt />
+      <h2>Science sources · shared production instrument</h2>
+      <button
+        bind:this={scienceExampleButton}
+        onclick={() => (scienceExampleOpen = true)}
+        >Open science source specimen</button
+      >
+      {#if scienceExampleOpen}<div style="height: 700px; max-height: 80svh;">
+          <ScienceLedger
+            view={productionFrame(1200).view}
+            onclose={() => {
+              scienceExampleOpen = false;
+              scienceExampleButton?.focus();
+            }}
+          />
+        </div>{/if}
       <h2>System layers · shared scene instruments</h2>
       <p>
         Component specimen from the existing reducer-backed development

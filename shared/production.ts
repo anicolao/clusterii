@@ -128,6 +128,49 @@ export function apportionMilli(
     }
   return new Map(shares.map((item) => [item.id, checked(item.amount)]));
 }
+/** Current owned capacity; upcoming orders/control changes are not predicted. */
+export function scienceProduction(
+  campaign: Campaign,
+  uid: string,
+  levels = campaign.economy?.research[uid]?.levels,
+) {
+  const seat = campaign.seats.find((entry) => entry.uid === uid);
+  if (!seat) throw new Error("not-member");
+  if (!campaign.economy || !levels) return null;
+  const stars = new Map(campaign.galaxy.stars.map((star) => [star.id, star]));
+  const sources = Object.entries(campaign.systems)
+    .filter(([, system]) => system.orbit === uid)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([starId, system]) => {
+      const star = stars.get(starId);
+      if (!star) throw new Error("Unknown production system");
+      const affinityMilli = Math.round(
+        faction(seat.faction).affinity[star.class] * 1000,
+      );
+      const baseMilli = checked(BigInt(system.stations) * 1000n);
+      const affiliatedMilli = checked(
+        BigInt(system.stations) * BigInt(affinityMilli),
+      );
+      return {
+        starId,
+        stations: system.stations,
+        baseMilli,
+        affinityMilli,
+        scienceMilli: powerMilli(affiliatedMilli, levels.terraforming),
+      };
+    });
+  const orbitalScienceMilli = checked(
+    sources.reduce((total, source) => total + BigInt(source.scienceMilli), 0n),
+  );
+  return {
+    tick: campaign.economy.tick,
+    terraformingLevel: levels.terraforming,
+    innovationLevel: levels.innovation,
+    sources,
+    orbitalScienceMilli,
+    scienceMilli: powerMilli(orbitalScienceMilli, levels.innovation),
+  };
+}
 export function produce(
   campaign: Campaign,
   economy: Economy,
@@ -196,7 +239,6 @@ export function produce(
       if (system.surface === seat.uid) totals.infantry += system.infantry;
     }
     const income: { id: string; milli: number }[] = [];
-    let science = 0n;
     for (const [id, system] of Object.entries(next.systems).sort(([a], [b]) =>
       a < b ? -1 : a > b ? 1 : 0,
     )) {
@@ -246,7 +288,6 @@ export function produce(
         ledger.fighters += granted;
         ledger.discardedFighters += units - granted;
         remainder.fightersMilli = output % 1000;
-        science += BigInt(raw(system.stations));
       }
       if (system.surface === seat.uid) {
         const output =
@@ -286,7 +327,9 @@ export function produce(
     next.empires[seat.uid].creditsMilli = checked(
       BigInt(next.empires[seat.uid].creditsMilli) + BigInt(ledger.creditsMilli),
     );
-    ledger.scienceMilli = powerMilli(checked(science), levels.innovation);
+    const science = scienceProduction(next, seat.uid, levels);
+    if (!science) throw new Error("Missing research state");
+    ledger.scienceMilli = science.scienceMilli;
     const target = clock.research[seat.uid];
     target.progressMilli[target.target] = checked(
       BigInt(target.progressMilli[target.target]) + BigInt(ledger.scienceMilli),

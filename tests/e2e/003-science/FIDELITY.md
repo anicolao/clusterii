@@ -1,0 +1,9 @@
+# Science resource fidelity and acceptance
+
+UX_DESIGN29/plate03 requires per-tick science and selecting the resource to reveal its source ledger. This feature reuses the real station icon and provenanced construction-station.webp art, the bounded shared panel and ActionButton, with keyboard opening/reading/closing and restored resource focus. It does not fabricate predicted arrivals, rival stations or future output.
+
+Projection: shared scienceProduction calculates owned orbital stations, faction affinity and per-system Terraforming, then empire-wide Innovation. Settlement calls it with post-settlement holdings and beginning-of-tick levels. The current private projection calls it with current holdings/earned levels; the last delivered ledger remains distinct. Paused nominal capacity is explicitly explained. Old views without a recorded rate show that absence, never last-output substitution. Research policy remains under review.
+
+Source boundary: Nix Java21/Node24/Bun1.3.13; Node24 is not pinned Linux22 certification.48 focused reducer/progression cases1178 assertions pass. Initial regression retained `/tmp/cluster-science-rate-unit.log`: broad privacy sentinel `before` also matched the new field name beforeInnovationMilli; renamed the additive subtotal orbitalScienceMilli without weakening that existing assertion. Fixed pass `/tmp/cluster-science-rate-unit-fixed.log`. Static/type/policy pass. Service16-tick120s and four-size browser240s/30s/10s remain pending at this boundary. Builds serialize before owned emulators.
+
+Maximum six source/acknowledgement/recovery views per viewport,24 originals;2,359,296KiB gate measured before generation. Preserve first failure/retries0/exactRGBA and source-pair every candidate. No baseline approval, Linux/hosted/KMS or release claim. Galaxy stellar composition and waiting-state interaction semantics remain separate unresolved design gaps; #115 layout/focus48 are not a fully approved family.
