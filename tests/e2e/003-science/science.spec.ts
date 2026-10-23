@@ -1,3 +1,4 @@
+import { inspectLedgerMotion } from "./ledger-journey";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
 import { test, expect } from "../helpers/fixtures";
@@ -408,6 +409,32 @@ test("Inspect authoritative science rate and recover earned output", async ({
       ],
       views: [ownerView, peerView],
     });
+    const earnedBeforeReading = await canonical();
+    await inspectLedgerMotion(
+      story,
+      "earned",
+      [
+        {
+          page: owner,
+          name: aliases[0],
+          tick: 15,
+          rate: 1404,
+          delivered: 1400,
+          sources: [ownerSource],
+        },
+        {
+          page: peer,
+          name: aliases[1],
+          tick: 15,
+          rate: 1400,
+          delivered: 1400,
+          sources: [peerSource],
+        },
+      ],
+      async () => {
+        expect(await canonical()).toEqual(earnedBeforeReading);
+      },
+    );
     await story.harness(
       "deliver-following-tick",
       "One real leased following tick applies the already-earned Innovation level; repeated delivery remains empty.",

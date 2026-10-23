@@ -1,3 +1,4 @@
+import { inspectLedgerMotion } from "../003-science/ledger-journey";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { createRequire } from "node:module";
@@ -95,7 +96,7 @@ test("Live zero science after orbital loss preserves private research", async ({
       "UX-16",
     ],
     description:
-      "Four independently authenticated commanders use real fleet controls after100 earned ticks. An escape and rival route produce actual orbital loss, zero science and retained surface control. Owner and peer recover private research through reload. Fixed catalogue/domain clocks are explicit harness controls; budgets are220 ticks,240 seconds and16 captures per viewport. Rules remain under review; this does not certify managed encryption or hosted scheduling.",
+      "Four independently authenticated commanders use real fleet controls after100 earned ticks. An escape and rival route produce actual orbital loss, zero science and retained surface control. Owner and peer recover private research through reload. Fixed catalogue/domain clocks are explicit harness controls; budgets are220 ticks,240 seconds and26 captures per viewport. Rules remain under review; this does not certify managed encryption or hosted scheduling.",
   });
   const contexts: BrowserContext[] = [],
     pages: Page[] = [],
@@ -697,6 +698,32 @@ test("Live zero science after orbital loss preserves private research", async ({
       },
       verifications: readingChecks(),
       views: [{ page: owner, player: aliases[0], surface: "game" }],
+    });
+    const zeroBeforeReading = await canonical();
+    const ledgerActors = await Promise.all(
+      [owner, peer].map(async (page, seat) => {
+        const view = await published(seat),
+          rate = view.economy!.science!;
+        if (seat === 0) expect(rate.scienceMilli).toBe(0);
+        return {
+          page,
+          name: aliases[seat],
+          tick: rate.tick,
+          rate: rate.scienceMilli,
+          delivered: view.economy!.ledger!.scienceMilli,
+          sources: rate.sources.map(
+            (source) => view.stars.find((s) => s.id === source.starId)!.name,
+          ),
+        };
+      }),
+    );
+    await inspectLedgerMotion(story, "zero-rate", ledgerActors, async () => {
+      await privateCheck.check();
+      expect(await canonical()).toEqual(zeroBeforeReading);
+      expect((await published(0)).economy!.science!.scienceMilli).toBe(0);
+      expect((await published(0)).economy!.research).toEqual(
+        lost.economy!.research,
+      );
     });
   } finally {
     for (const c of contexts) await c.close();
