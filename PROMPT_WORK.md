@@ -814,3 +814,5 @@ Prompt 154 | 251de243e58bbbf97730ab2026766f2feb4e07f6e38fd2d0aa1e955de37152ad | 
 Prompt 154 | 251de243e58bbbf97730ab2026766f2feb4e07f6e38fd2d0aa1e955de37152ad | Provision exact renderer images and isolated engine through Nix, migrate application tooling and retain loader validation evidence gates.
 
 Prompt 155 | 5adc4b09636c1e2435ca9f548b8962bf794b5dcb1e415b8a407e30755f39981f | Corroborate imported manifest identity from retained archive bytes and reconcile11:12 while corrected Linux startup remains pending.
+
+Prompt 158 | 2b474c792dc523c0dd989ee5e15ea75712904fac4360c25368c7ee553d76f6a5 | Record corrected Linux package evaluation and distinguish 60 failing story cases from 237 viewport executions while preserving the original command error.
