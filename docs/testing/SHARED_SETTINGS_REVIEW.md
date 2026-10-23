@@ -114,3 +114,9 @@ Retained root `/tmp/cluster-settings-label-corrected-candidates/` contains origi
 - `005-compare-shared-feedback-2-developer-reduced-feedback.png`
 
 Implementation-agent sample inspection of phone/short005 standard shows accurate recovery metadata separately above the unchanged accepted status, both readable. The same semantic assertion passes in both comparisons at every size. Independent corrected-image/native-resolution review and baseline permission remain pending; none promoted or strictly compared yet. Prior24 originals and older failures remain intact in their original paths. No campaign/admission/probe or feature expansion. Historical timeout causality and actual galaxy/scene/authoritative/concurrency/Linux/KMS/hosted/performance/release holds unchanged.
+
+## Scoped baseline approval — reviewer Prompt118
+
+Reviewer20:42 explicitly approves promotion ONLY of the24 local-presentation-settings Darwin candidates from cleanfd74e91, specd9a3f6c1b340debc42c60af4591cfa561040b0cf84d204e5768987a4874e8ff6, under `/tmp/cluster-settings-label-corrected-candidates/stories/local-presentation-settings/`. Reviewer byte-compared all24 with the earlier set (16 unchanged settings/opener, eight changed005), and independently viewed all eight corrected comparisons. Large composition was downscaled, not native-pixel typography measurement. Approval covers this family only, not other lab/gallery baselines or broader acceptance.
+
+Before promotion, verified every retained evidence-sha256 entry, all four passed generation manifests with exact clean source/spec and matching renderer.json, six PNGs each, and no production/shared/browser-tooling/config/dependency diff fromfd74e91. Use existing promotion tool with this review document; then one isolated strict run with unchanged budgets/zero tolerance/retries0, serialized build and disk gate. Archive only after strict success. Historical failures and original candidates remain untouched.
