@@ -710,3 +710,5 @@ Prompt 127 | 61820531933547e8f1cdcb61051374836539034263e81355cd8aadab3569cdbb | 
 Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Preserve phone hidden-rail assertion failure and verify start through ordinary visible roster acknowledgement
 
 Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Retain real returning-entry label assertion failure and distinguish semantic label order from decorative chevrons
+
+Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Preserve four-size large-composition and genuine returning-account candidates with unchanged baseline review gates
