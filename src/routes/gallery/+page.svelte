@@ -230,15 +230,19 @@
         reconnect={() => clicks++}
       />
     </section>
-    <section class="faction-specimens">
+    <section class="faction-specimens" aria-label="Faction selection gallery">
       <h2>Faction selection</h2>
       <p>
         Production faction art, selected radios and quota-disabled seats. These
         deterministic reducer specimens never enter a live campaign.
       </p>
-      <FactionPicker bind:value={faction} game={roster} />
+      <div role="group" aria-label="Interactive faction specimen">
+        <FactionPicker bind:value={faction} game={roster} />
+      </div>
       <h3>Pending selection</h3>
-      <FactionPicker value="heliac" game={roster} disabled />
+      <div role="group" aria-label="Pending faction specimen">
+        <FactionPicker value="heliac" game={roster} disabled />
+      </div>
     </section>
     <section>
       <h2>Stationed fleets · shared manifest and icon</h2>
