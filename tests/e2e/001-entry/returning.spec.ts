@@ -37,6 +37,24 @@ test("Return to a genuinely active campaign from the cinematic entry", async ({
     await button(page, name).focus();
     await page.keyboard.press("Enter");
   };
+  const acknowledgeStart = async (page: Page) => {
+    await keyboard(page, "Roster");
+    const roster = page.getByRole("region", {
+      name: "Campaign roster",
+      exact: true,
+    });
+    await expect(roster.getByRole("status")).toContainText("Began");
+    await expect(
+      roster.getByRole("heading", {
+        name: "4 / 4 empires assembled",
+        exact: true,
+      }),
+    ).toBeVisible();
+    await keyboard(page, "Close roster");
+    await expect(
+      page.getByText("Your knowledge of this system", { exact: true }),
+    ).toBeVisible();
+  };
   let campaignUrl = "",
     campaignId = "";
   try {
@@ -123,10 +141,7 @@ test("Return to a genuinely active campaign from the cinematic entry", async ({
           },
         );
         expect(result.ok()).toBe(true);
-        for (const page of pages)
-          await expect(
-            page.getByText("Campaign begun", { exact: true }),
-          ).toBeVisible();
+        for (const page of pages) await acknowledgeStart(page);
       },
     );
     const owner = pages[0],
@@ -207,10 +222,7 @@ test("Return to a genuinely active campaign from the cinematic entry", async ({
       },
       acknowledgement: {
         spec: "The same active campaign is displayed.",
-        check: async () =>
-          expect(
-            owner.getByText("Campaign begun", { exact: true }),
-          ).toBeVisible(),
+        check: async () => acknowledgeStart(owner),
       },
       verifications: [
         {
