@@ -1,0 +1,40 @@
+openjdk version "21.0.11" 2026-04-21 LTS
+OpenJDK Runtime Environment Zulu21.50+19-CA (build 21.0.11+10-LTS)
+OpenJDK 64-Bit Server VM Zulu21.50+19-CA (build 21.0.11+10-LTS, mixed mode, sharing)
+v24.18.0
+1.3.13
+[WebServer] $ vite build
+[WebServer] (node:92288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:92288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:92294) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:92295) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [phone] › tests/e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game (4.6s)
+  ✓  2 [phone] › tests/e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game (4.7s)
+(node:92375) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [desktop] › tests/e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game (4.6s)
+  ✓  4 [desktop] › tests/e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game (4.7s)
+(node:92487) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 [large] › tests/e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game (5.5s)
+  ✓  6 [large] › tests/e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game (5.6s)
+(node:92562) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  7 [short] › tests/e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game (4.5s)
+  ✓  8 [short] › tests/e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game (4.5s)
+
+  8 passed (43.1s)

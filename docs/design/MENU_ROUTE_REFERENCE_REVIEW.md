@@ -1,0 +1,9 @@
+# Fleet route field guide
+
+Successor to PR118 under Prompt146. Milestone10 requires an in-game rules reference; the current menu exposes only market focus. FleetRoute already renders RouteRules from shared rule constants. This increment reuses that exact component in the menu. Its optional navigation argument omits personal level/range when no authorized campaign context is provided; it never invents a level. The existing fleet panel continues supplying its actual level. Range, speed, acknowledgement, cancellation and independent layers retain their implemented semantics and development-policy disclosure. No alliance/victory policy is approved.
+
+The same native dialog, bounded reading region, Home/End isolation, focus wrap, Escape/back and opener restoration remain. Construction stays with its real contextual quote. Feature008 migrates the existing market story with all assertions and adds route reading. Existing approved pixels are retained at their historical locations and are not silently promoted for the changed menu. New rendered/independent acceptance remains pending. No service or persistence changes.
+
+## Source-paired execution
+
+Clean768b274: eight Nix gallery journeys passed43.1s,40 Darwin candidates retained in docs/ux/reviews/menu-routes-768b274 with manifests/narratives/hash inventory. Static/lint pass; the first policy invocation used a nonexistent script name, then the actual test:story-policy suite passed, including4 no-browser path cases. Java21/Node24/Bun1.3.13, disk16,556,388KiB before execution; gallery-only run needs no emulators. Author inspected phone top route and short lower arrival reading: policy disclosure, focus and persistent actions readable. Independent all-image review/strict baseline comparison remains pending; no promotion. This is shared-component scope, not live orders, private projections, hosted/KMS or whole-release acceptance.

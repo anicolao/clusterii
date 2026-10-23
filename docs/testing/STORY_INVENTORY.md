@@ -447,3 +447,7 @@ Current executable sources for campaign-navigation, invitation and encryption-ch
 ## Galaxy composition, UX-03/04/15
 
 [Feature007](../../tests/e2e/007-galaxy-composition/README.md) connects actual four-player admission/start to saved cosmetic portraits, mechanical faction labels, keyboard roster/inspection, explicit Overview/home camera actions, normal/reduced presentation and same-home reload. Cleanb8884c3 four journeys32 candidates are [retained for independent concept comparison](../ux/reviews/galaxy-cinematic-b8884c3/README.md), not approved baselines. Existing002 layer/build and005/006 history/privacy/recovery remain. This does not complete shared-gallery, peer-private/concurrent/account or hosted/Linux acceptance.
+
+## Feature008 route reference
+
+Milestone10/UX15: market reference migrates to tests/e2e/008-field-guide/market.spec.ts; route reference reuses actual RouteRules in routes.spec.ts. Original market checks retained with explicit chapter scope and traversal through the new route summary. New/changed pixels require independent review, historical baselines remain untouched. No live orders or private-account acceptance claimed by gallery reading.

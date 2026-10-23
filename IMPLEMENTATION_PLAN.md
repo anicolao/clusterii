@@ -225,3 +225,5 @@ This review covers local source and design, not a certification of Pantheon’s 
 [Campaign selection ownership](docs/testing/ADMISSION_BOUNDARY_CONSOLIDATION.md) consolidates retained admission failures and fences stale observer errors/focus after selection changes. Callback-adapter unit coverage is separate from mounted recovery/keyboard acceptance; no admission timing fix is claimed.
 
 Milestone10 source increment: [in-game market rules](docs/design/IN_GAME_RULES_REVIEW.md) reuses the existing market chapter within the shared bounded menu. Its scoped shared-component Darwin review and8-journey/44-capture strict comparison are complete; broader codex and actual live preservation acceptance remain open.
+
+Route reference follow-up: the shared menu now exposes implemented RouteRules alongside MarketRules without fabricating a current navigation level. See [scope and remaining gates](docs/design/MENU_ROUTE_REFERENCE_REVIEW.md). Feature008 preserves market keyboard/reading coverage and adds route reading; rendered acceptance remains separate from source completion.

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { rules } from "@shared/rules";
-  let { navigation }: { navigation: number } = $props();
+  let { navigation }: { navigation?: number } = $props();
 </script>
 
 <details class="route-rules">
@@ -10,11 +10,10 @@
   </p>
   <h3>Range and speed</h3>
   <p>
-    Navigation level {navigation} reaches {navigation *
-      rules.navigationLyPerLevel}
-    light years per leg. Each level adds {rules.navigationLyPerLevel} light years
-    of range; it does not increase speed. A leg exactly at the limit is reachable.
-    Displayed distances are rounded; route validation uses the full distance.
+    {#if navigation !== undefined}Navigation level {navigation} reaches {navigation *
+        rules.navigationLyPerLevel} light years per leg.{/if} Each level adds {rules.navigationLyPerLevel}
+    light years of range; it does not increase speed. A leg exactly at the limit is
+    reachable. Displayed distances are rounded; route validation uses the full distance.
   </p>
   <p>
     Fleets travel {rules.fleetSpeedLyPerTick} light years per tick. Divide each leg's
