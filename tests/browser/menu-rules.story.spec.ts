@@ -1,3 +1,4 @@
+import type { Locator } from "@playwright/test";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 
@@ -16,6 +17,53 @@ test("Read shared market rules and return without leaving the game", async ({
   const rules = dialog.getByRole("button", { name: "Rules", exact: true });
   const back = dialog.getByRole("button", { name: "Back to menu" });
   const close = dialog.getByRole("button", { name: "Return to game" });
+  const reading = dialog.getByRole("region", {
+    name: "Rules reading",
+    exact: true,
+  });
+  const contained = async (locator: Locator) => {
+    await expect
+      .poll(() =>
+        locator.evaluate((element) => {
+          const box = element.getBoundingClientRect();
+          let left = 0,
+            top = 0,
+            right = innerWidth,
+            bottom = innerHeight;
+          for (
+            let parent = element.parentElement;
+            parent;
+            parent = parent.parentElement
+          ) {
+            const style = getComputedStyle(parent),
+              bounds = parent.getBoundingClientRect();
+            if (/(auto|scroll|hidden|clip)/.test(style.overflowX)) {
+              left = Math.max(left, bounds.left + parent.clientLeft);
+              right = Math.min(
+                right,
+                bounds.left + parent.clientLeft + parent.clientWidth,
+              );
+            }
+            if (/(auto|scroll|hidden|clip)/.test(style.overflowY)) {
+              top = Math.max(top, bounds.top + parent.clientTop);
+              bottom = Math.min(
+                bottom,
+                bounds.top + parent.clientTop + parent.clientHeight,
+              );
+            }
+          }
+          return (
+            box.width > 0 &&
+            box.height > 0 &&
+            box.left >= left &&
+            box.right <= right &&
+            box.top >= top &&
+            box.bottom <= bottom
+          );
+        }),
+      )
+      .toBe(true);
+  };
   await story.step("read-market-rules", {
     actor: "Reader",
     description:
@@ -45,6 +93,19 @@ test("Read shared market rules and return without leaving the game", async ({
     },
     verifications: [
       {
+        spec: "The top heading, chapter entry and rule-review disclosure are wholly within the reading clip while both footer actions remain contained.",
+        check: async () => {
+          for (const item of [
+            reading.getByRole("heading", { name: "Rules", exact: true }),
+            reading.locator("summary"),
+            reading.locator(".scope"),
+            back,
+            close,
+          ])
+            await contained(item);
+        },
+      },
+      {
         spec: "Reading continues the campaign and cannot be confused with leaving or surrendering; proposed rules retain their disclosure.",
         check: async () => {
           await expect(dialog).toContainText(
@@ -63,12 +124,64 @@ test("Read shared market rules and return without leaving the game", async ({
       { page, player: "Reader", surface: "document", primary: [back, close] },
     ],
   });
+  await story.step("read-held-returns", {
+    actor: "Reader",
+    description:
+      "Shift+Tab from the chapter entry into the named bounded reading region, then use End to read confirmed and held returns without moving the footer.",
+    action: async () => {
+      await page.keyboard.press("Shift+Tab");
+      await expect(reading).toBeFocused();
+      await page.keyboard.press("End");
+    },
+    acknowledgement: {
+      spec: "Keyboard scrolling reveals the complete lower heading and its relevant paragraph.",
+      check: async () => {
+        await contained(
+          reading.getByRole("heading", {
+            name: "Confirmed and held returns",
+            exact: true,
+          }),
+        );
+        await contained(
+          reading.getByText(
+            "New markets join dividend weights from the next tick.",
+            { exact: false },
+          ),
+        );
+      },
+    },
+    verifications: [
+      {
+        spec: "The reading region retains keyboard focus and both persistent footer actions remain inside their clipping ancestors and viewport before helper scrolling.",
+        check: async () => {
+          await expect(reading).toBeFocused();
+          await contained(back);
+          await contained(close);
+        },
+      },
+    ],
+    views: [
+      {
+        page,
+        player: "Reader · held returns",
+        surface: "document",
+        primary: [back, close],
+      },
+    ],
+  });
   await story.step("return-within-menu", {
     actor: "Reader",
     description:
       "Use Back to menu, then reopen Rules and use Escape to return to its opening control.",
     action: async () => {
-      await back.focus();
+      await page.keyboard.press("Shift+Tab");
+      await expect(close).toBeFocused();
+      await page.keyboard.press("Tab");
+      await expect(reading).toBeFocused();
+      await page.keyboard.press("Tab");
+      await expect(reading.locator("summary")).toBeFocused();
+      await page.keyboard.press("Tab");
+      await expect(back).toBeFocused();
       await page.keyboard.press("Enter");
       await expect(rules).toBeFocused();
       await page.keyboard.press("Enter");
