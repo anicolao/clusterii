@@ -173,7 +173,7 @@ Add first-game guidance and an in-game rules reference. A returning player sees 
 
 **Acceptance:** Review actual phone, desktop, and large-display compositions against the selected art/UX direction, then verify them with deterministic browser captures and geometry assertions. Representative players complete the entire loop without developer assistance. Every action is usable through the supported input methods; private information remains private in reports and notifications. Errors and stale views explain recovery without requiring a refresh or losing unsent work silently.
 
-Implementation evidence: [local motion settings](docs/design/LOCAL_MOTION_REVIEW.md) adds browser-local reduction through the shared game menu without overriding OS reduction. [Lower-detail decoration](docs/design/LOCAL_DETAIL_REVIEW.md) adds a browser-local option that omits dust/reference rings while preserving factual markers and list actions. Full settings scope and actual four-size/keyboard/motion/gallery/performance acceptance remain open.
+Implementation evidence: [local motion settings](docs/design/LOCAL_MOTION_REVIEW.md) adds browser-local reduction through the shared game menu without overriding OS reduction. [Lower-detail decoration](docs/design/LOCAL_DETAIL_REVIEW.md) adds a browser-local option that omits dust/reference rings while preserving factual markers and list actions. Shared settings and market-rules gallery/lab scope now has independently reviewed Darwin baselines and8 strict journeys/44 exact captures (see docs/design/IN_GAME_RULES_REVIEW.md). Actual in-game scene/draft/tick preservation, broader settings/codex scope, normal-motion/performance, Linux and hosted acceptance remain open. The next mounted-menu story is prepared for source review only (docs/testing/LIVE_MENU_PRESERVATION_PLAN.md).
 
 ## 11. Verify balance, scale, and long-running play
 
@@ -222,4 +222,4 @@ This review covers local source and design, not a certification of Pantheon’s 
 
 [Campaign selection ownership](docs/testing/ADMISSION_BOUNDARY_CONSOLIDATION.md) consolidates retained admission failures and fences stale observer errors/focus after selection changes. Callback-adapter unit coverage is separate from mounted recovery/keyboard acceptance; no admission timing fix is claimed.
 
-Milestone10 source increment: [in-game market rules](docs/design/IN_GAME_RULES_REVIEW.md) reuses the existing market chapter within the shared bounded menu. Source/static scope only until new four-size review; broader codex and live preservation acceptance remain open.
+Milestone10 source increment: [in-game market rules](docs/design/IN_GAME_RULES_REVIEW.md) reuses the existing market chapter within the shared bounded menu. Its scoped shared-component Darwin review and8-journey/44-capture strict comparison are complete; broader codex and actual live preservation acceptance remain open.
