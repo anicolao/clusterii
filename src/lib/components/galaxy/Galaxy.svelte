@@ -1048,7 +1048,7 @@
       ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
       <GameMenu />
     </header>
-    {#if !roster && !expanded && !more && !commandKind.startsWith("conversation.") && !economy}<div
+    {#if !roster && !expanded && !more && !history && !commandKind.startsWith("conversation.") && !economy}<div
         class="acknowledgement"
         inert={listing ||
           briefingOpen ||

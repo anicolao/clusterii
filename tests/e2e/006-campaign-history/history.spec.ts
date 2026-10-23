@@ -146,6 +146,14 @@ test("Recover saved campaign records without losing your place", async ({
     primary: [back],
     verifications: [
       {
+        spec: "The prior acknowledged resume is not clipped behind the history reader.",
+        check: async () => {
+          await expect(
+            page.getByText("Campaign resumed.", { exact: true }),
+          ).toHaveCount(0);
+        },
+      },
+      {
         spec: "The bounded history panel leaves the entire factual resource rail readable above it, without clipped background text.",
         check: async () => {
           await expect
@@ -417,6 +425,14 @@ test("Recover saved campaign records without losing your place", async ({
     },
     verifications: [
       closeCommandTray,
+      {
+        spec: "Closing history restores the prior acknowledged command feedback without rewriting its outcome.",
+        check: async () => {
+          await expect(
+            page.getByText("Campaign resumed.", { exact: true }),
+          ).toBeVisible();
+        },
+      },
       {
         spec: "System selection survives reading history.",
         check: async () =>

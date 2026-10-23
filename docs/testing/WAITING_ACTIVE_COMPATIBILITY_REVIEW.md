@@ -35,3 +35,9 @@ Clean70dec33 (production/spec equivalent86be660) completed desktop/large/short:2
 Author compared desktop assigned chart to plate03: navigation/resource functionality is real, but uniform stellar presentation, sparse emphasis and scene richness remain visibly short of the approved cinematic plate. This run does not certify those76 prior pixel failures. Missing112 Linux references still require matching-platform reviewed evidence.
 
 Author phone history image review found the panel at66px overlapping the measured116px resource rail, leaving background resource text partially visible. The history panel alone now follows the measured rail plus8px clearance, retaining original breakpoint minimum insets, bounded scrolling and fixed return control. Every captured reading view asserts this clearance before helper capture. Other panel types are outside this small correction; no cosmetic masking or resource concealment. New history source/spec candidates require separate review. Static Svelte/type/policy checks passed; rendered correction pending.
+
+## History clearance and feedback ownership
+
+Clean68b7e88: four history journeys passed1.2m with42 candidates; all reading captures assert panel.top >= rail.bottom+8. Retained `/tmp/cluster117-history-68b7e88-four-result` and adjacent logs. Author phone and short original review confirms complete resource text above the panel. Short also exposes a sliver of the prior Campaign resumed route acknowledgement behind the panel's left edge. This family remains held.
+
+The route acknowledgement now stays out of the visible scene while history owns the view, following existing Economy/roster ownership. Command state/receipt is unchanged and feedback returns on close. Narrow story assertions require no prior resume text behind the reader and visible original acknowledgement after normal history/phone-tray closing. No history record text is concealed. Corrected source-paired images remain pending independent review.
