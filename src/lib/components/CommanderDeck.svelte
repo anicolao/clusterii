@@ -112,7 +112,7 @@
       max-width: none;
       overflow: visible;
     }
-    .peer {
+    nav :global(.commander-card.peer) {
       display: none;
     }
     nav :global(.own-commander) {

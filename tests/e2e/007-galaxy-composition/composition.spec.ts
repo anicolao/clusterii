@@ -115,6 +115,9 @@ test("Read the cinematic galaxy through real commander and system instruments", 
             button("Menu").locator(".commander-portrait"),
           ).toHaveAttribute("style", /--portrait-column:3;--portrait-row:0/);
           await expect(button("Menu")).toBeFocused();
+          await expect(
+            page.getByRole("button", { name: /^Inspect roster:/ }),
+          ).toHaveCount(info.project.name === "phone" ? 0 : 3);
         },
       },
     ],

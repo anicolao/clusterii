@@ -17,3 +17,7 @@ Feature-local007 follows the actual Pantheon numbered directory convention. Real
 Retained preceding6f5c88b failed before browser in Firestore WebChannel bind. Installed firebase-tools15.25 controller.js263–268 supports explicit firestore.websocketPort; otherwise it searches from9150. Read-only lsof found unrelated Java listeners9150/9151; no process was stopped. The exact prior collision remains unproven. Cluster now declares19150 and the runner checks that port (plus logging14500) before startup, rather than silently selecting a shared extra socket. This bounds ownership; it does not establish the old failure's cause or resolve100-tick/ingress evidence.
 
 No baseline promotion, hosted/KMS certification, or full design/release approval. Current candidate and runtime outcomes are recorded below after execution.
+
+## First rendered boundary
+
+Clean bab0685 reached four real admissions and started home, then phone Roster click failed its original10s hit test: a peer portrait intercepted the pointer. Desktop card selector specificity defeated the phone `.peer` collapse. Fixed with the same parent/card specificity; added actual visible peer-count assertion. No forced action, timeout or geometry weakening. Zero candidates; three sizes unexecuted. Retained /tmp/cluster118-composition-bab0685-failure and /tmp/cluster118-composition-bab0685-four.log plus adjacent Firestore/database logs. Explicit websocket19150 started successfully; this does not prove prior collision cause.
