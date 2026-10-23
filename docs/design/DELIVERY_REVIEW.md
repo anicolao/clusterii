@@ -162,3 +162,5 @@ Identity-gallery story work in #47 is stacked on #46: [scope and evidence](IDENT
 #111 phone update: clean9d0a837 (same production/spec as7d43510) passes one isolated phone journey/six candidates. Four-size24-candidate review set complete, unpromoted; [original paths/provenance](../testing/SHARED_SETTINGS_REVIEW.md). No original-timeout cause or full acceptance claimed.
 
 #111 lab-label update: accurate feedback-recovery metadata replaces misleading outcome label; four-size generation atfd74e91 passes4 journeys/24 new unpromoted candidates in32.3s. Source/spec and original paths in [review](../testing/SHARED_SETTINGS_REVIEW.md). Prior holds and independent corrected-family review remain.
+
+#111 scoped strict completion: reviewer-approved24 Darwin settings baselines pass all4 strict journeys/24 exact captures in31.1s, archived illustrated narratives committed. [Provenance and limits](../testing/SHARED_SETTINGS_REVIEW.md). Actual galaxy/scene/authoritative/concurrency/Linux/KMS/hosted/performance/release holds remain; no historical timeout cause claimed.
