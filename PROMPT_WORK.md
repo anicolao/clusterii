@@ -729,3 +729,4 @@ Prompt 133 | 4caa4d0241c6214486b199a169903e58c6abb7b45f9d5bd1bd72815e3d8b8b75 | 
 Prompt 135 | 69efaf807213ec1d2efef0f3044908fbe98444d4930b1757be3d5d226fe5500d | Preserve first layer run and scope construction close controls to the active panel before changed-source verification
 Prompt 135 | 69efaf807213ec1d2efef0f3044908fbe98444d4930b1757be3d5d226fe5500d | Archive four source-matched layer journeys and 44 unapproved candidates with first-failure and plate comparison evidence
 Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Correct measured eight-pixel focus intrusion and add waiting-rail and separate normal-motion keyboard verification
+Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Preserve passing focus evidence and correct observed waiting inspector anchoring with heading and rail containment

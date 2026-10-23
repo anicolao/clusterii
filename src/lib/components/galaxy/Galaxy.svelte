@@ -2209,6 +2209,7 @@
       top: 66px;
     }
     .system-inspector,
+    .system-inspector:not(.expanded),
     .system-inspector.active,
     .system-inspector.observing {
       inset: auto 8px 74px;

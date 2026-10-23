@@ -149,6 +149,22 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
                 expect(rail!.height).toBeLessThanOrEqual(
                   info.project.name === "large" ? 100 : 70,
                 );
+                const inspector = pages[0].getByRole("complementary", {
+                  name: "Selected system",
+                });
+                const box = (await inspector.boundingBox())!;
+                const heading = (await inspector
+                  .getByRole("heading", { level: 2 })
+                  .boundingBox())!;
+                const dock = (await pages[0]
+                  .locator(".command-dock")
+                  .boundingBox())!;
+                expect(box.y).toBeGreaterThanOrEqual(rail!.y + rail!.height);
+                expect(box.y + box.height).toBeLessThanOrEqual(dock.y);
+                expect(heading.y).toBeGreaterThanOrEqual(box.y);
+                expect(heading.y + heading.height).toBeLessThanOrEqual(
+                  box.y + box.height,
+                );
               },
             },
           ],
