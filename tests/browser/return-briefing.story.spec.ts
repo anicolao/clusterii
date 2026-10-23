@@ -1,3 +1,4 @@
+import { openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext } from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
@@ -19,7 +20,7 @@ const save = (page: Page) =>
     exact: true,
   });
 const open = async (page: Page) => {
-  await button(page, "History").click();
+  await openGalaxyCommand(page, "History");
   await button(page, "Since your last visit").click();
 };
 const aliases = [

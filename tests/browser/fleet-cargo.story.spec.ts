@@ -1,3 +1,4 @@
+import { openForces, expectStationedCount } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
@@ -247,10 +248,7 @@ test("Live fleet cargo transfers conserve private forces through reload", async 
       description:
         "Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything.",
       action: async () => {
-        for (const p of [owner, peer])
-          await inspector(p)
-            .getByRole("button", { name: "Fleets · 0", exact: true })
-            .click();
+        for (const p of [owner, peer]) await openForces(p, 0);
         await panel(owner).getByLabel("Fighters", { exact: true }).fill("2");
         await panel(owner).getByLabel("Infantry", { exact: true }).fill("21");
       },
@@ -346,9 +344,7 @@ test("Live fleet cargo transfers conserve private forces through reload", async 
         "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await read(owner, orders(owner));
       },
       acknowledgement: {
@@ -558,9 +554,7 @@ test("Live fleet cargo transfers conserve private forces through reload", async 
           "Reload the exact campaign and recover the same private accepted cargo order.",
         action: async () => {
           await owner.goto(url);
-          await inspector(owner)
-            .getByRole("button", { name: "Fleets · 1", exact: true })
-            .click();
+          await openForces(owner, 1);
           await button(owner, fleetName).click();
           await button(owner, operation).click();
           await read(owner, orders(owner));
@@ -657,22 +651,24 @@ test("Live fleet cargo transfers conserve private forces through reload", async 
         "Reload the final loaded fleet and return to the galaxy using the keyboard.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .click();
+        await openForces(owner, 1);
         await expect(outcome("Infantry loaded")).toBeVisible();
         await button(owner, "Back to system").focus();
         await button(owner, "Back to system").press("Enter");
+        await expect(button(owner, "View forces")).toBeFocused();
+        await button(owner, "Back to galaxy").focus();
+        await owner.keyboard.press("Enter");
       },
       acknowledgement: {
         spec: "The stationed fleet marker remains and the opener regains focus.",
         check: async () => {
           await expect(
             inspector(owner).getByRole("button", {
-              name: "Fleets · 1",
+              name: "Inspect system",
               exact: true,
             }),
           ).toBeFocused();
+          await expectStationedCount(owner, 1);
           await expect(
             owner.getByLabel(/1 of your fleets stationed at/),
           ).toBeVisible();

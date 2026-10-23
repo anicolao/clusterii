@@ -3,6 +3,19 @@ import { expect, type Page } from "@playwright/test";
 const selectedSystem = (page: Page) =>
   page.getByRole("complementary", { name: "Selected system", exact: true });
 
+/** Read the displayed name, excluding the aria-hidden decorative icon. */
+export async function selectedSystemName(page: Page) {
+  return selectedSystem(page)
+    .getByRole("heading", { level: 2 })
+    .evaluate((el) =>
+      Array.from(el.childNodes)
+        .filter((node) => node.nodeType === Node.TEXT_NODE)
+        .map((node) => node.textContent ?? "")
+        .join("")
+        .trim(),
+    );
+}
+
 /** Read the real roster acknowledgement, never infer start from a clock. */
 export async function acknowledgeCampaignStart(page: Page) {
   await page.getByRole("button", { name: "Roster", exact: true }).click();
@@ -57,9 +70,7 @@ export async function inspectLayer(page: Page, layer: "Orbit" | "Surface") {
 
 /** Preserve former Fleets · N checks through the actual labelled map marker. */
 export async function expectStationedCount(page: Page, count: number) {
-  const name = (
-    await selectedSystem(page).getByRole("heading", { level: 2 }).innerText()
-  ).trim();
+  const name = await selectedSystemName(page);
   const suffix = " of your fleets stationed at " + name;
   await expect
     .poll(() =>
@@ -76,12 +87,17 @@ export async function expectStationedCount(page: Page, count: number) {
     .toEqual(count ? [count + suffix] : []);
 }
 
-export async function openForces(page: Page, count?: number) {
+export async function openForces(page: Page, count?: number, keyboard = false) {
   await inspectSystem(page);
   if (count !== undefined) await expectStationedCount(page, count);
-  await selectedSystem(page)
-    .getByRole("button", { name: "View forces", exact: true })
-    .click();
+  const control = selectedSystem(page).getByRole("button", {
+    name: "View forces",
+    exact: true,
+  });
+  if (keyboard) {
+    await control.focus();
+    await page.keyboard.press("Enter");
+  } else await control.click();
   await expect(
     page.getByRole("region", { name: "Fleet preparation", exact: true }),
   ).toBeVisible();
@@ -104,7 +120,11 @@ export async function openConstruction(page: Page, layer: "Orbit" | "Surface") {
 }
 
 /** Global destinations belong to the dock, including its real phone More disclosure. */
-export async function openGalaxyCommand(page: Page, name: string | RegExp) {
+export async function openGalaxyCommand(
+  page: Page,
+  name: string | RegExp,
+  keyboard = false,
+) {
   const inspector = selectedSystem(page);
   const back = inspector.getByRole("button", {
     name: "Back to galaxy",
@@ -122,7 +142,10 @@ export async function openGalaxyCommand(page: Page, name: string | RegExp) {
   });
   if (!(await control.isVisible()))
     await dock.getByRole("button", { name: "More", exact: true }).click();
-  await control.click();
+  if (keyboard) {
+    await control.focus();
+    await page.keyboard.press("Enter");
+  } else await control.click();
 }
 
 export async function openObservation(page: Page) {

@@ -1,3 +1,4 @@
+import { openForces, expectStationedCount } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
@@ -267,10 +268,7 @@ test("Live fleet cancellation preserves drafts and releases private reservations
       description:
         "Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything.",
       action: async () => {
-        for (const p of [owner, peer])
-          await inspector(p)
-            .getByRole("button", { name: "Fleets · 0", exact: true })
-            .click();
+        for (const p of [owner, peer]) await openForces(p, 0);
         await panel(owner).getByLabel("Fighters", { exact: true }).fill("4");
         await panel(owner).getByLabel("Infantry", { exact: true }).fill("41");
       },
@@ -366,9 +364,7 @@ test("Live fleet cancellation preserves drafts and releases private reservations
         "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await read(owner, orders(owner));
       },
       acknowledgement: {
@@ -573,9 +569,7 @@ test("Live fleet cancellation preserves drafts and releases private reservations
         "Reload the exact campaign and inspect its confirmed absence of accepted fleet orders. The unsubmitted draft is not claimed as a persisted command.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await read(owner, orders(owner));
       },
       acknowledgement: {
@@ -664,16 +658,20 @@ test("Live fleet cancellation preserves drafts and releases private reservations
       action: async () => {
         await button(owner, "Back to system").focus();
         await owner.keyboard.press("Enter");
+        await expect(button(owner, "View forces")).toBeFocused();
+        await button(owner, "Back to galaxy").focus();
+        await owner.keyboard.press("Enter");
       },
       acknowledgement: {
-        spec: "Focus returns to Fleets · 0 and no owned fleet marker exists.",
+        spec: "Focus returns to Inspect system after closing the expanded scene and no owned fleet marker exists.",
         check: async () => {
           await expect(
             inspector(owner).getByRole("button", {
-              name: "Fleets · 0",
+              name: "Inspect system",
               exact: true,
             }),
           ).toBeFocused();
+          await expectStationedCount(owner, 0);
           await expect(
             owner.getByLabel(/1 of your fleets stationed at/),
           ).toHaveCount(0);

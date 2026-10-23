@@ -1,3 +1,4 @@
+import { openForces } from "./galaxy-navigation";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { createRequire } from "node:module";
@@ -255,10 +256,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       description:
         "Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything.",
       action: async () => {
-        for (const p of [owner, peer])
-          await inspector(p)
-            .getByRole("button", { name: "Fleets · 0", exact: true })
-            .click();
+        for (const p of [owner, peer]) await openForces(p, 0);
         await panel(owner).getByLabel("Fighters", { exact: true }).fill("2");
         await panel(owner).getByLabel("Infantry", { exact: true }).fill("21");
       },
@@ -354,9 +352,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await read(owner, orders(owner));
       },
       acknowledgement: {
@@ -810,9 +806,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         await expect(
           owner.getByRole("region", { name: "Return briefing", exact: true }),
         ).toHaveCount(0);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .press("Enter");
+        await openForces(owner, 1, true);
         await button(owner, fleetName).press("Enter");
         await button(owner, "Plot route").press("Enter");
         await routeRead(routeList);
@@ -981,9 +975,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         "Reload the exact campaign and reopen the original fleet's accepted route, without issuing a replacement command.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .click();
+        await openForces(owner, 1);
         await button(owner, fleetName).click();
         await button(owner, "Plot route").click();
         await routeRead(routeList);
@@ -1147,9 +1139,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         await button(owner, "Back to fleets").press("Enter");
         await expect(button(owner, "Plot route")).toBeFocused();
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: /Fleets ·/ })
-          .click();
+        await openForces(owner);
         await button(owner, fleetName).focus();
         await button(owner, fleetName).press("Enter");
         await read(owner, panel(owner).locator("dl"));

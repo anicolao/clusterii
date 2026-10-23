@@ -1,3 +1,4 @@
+import { openForces, expectStationedCount } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
@@ -247,10 +248,7 @@ test("Live fleet formation and disband conserve private forces", async ({
       description:
         "Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything.",
       action: async () => {
-        for (const p of [owner, peer])
-          await inspector(p)
-            .getByRole("button", { name: "Fleets · 0", exact: true })
-            .click();
+        for (const p of [owner, peer]) await openForces(p, 0);
         await panel(owner).getByLabel("Fighters", { exact: true }).fill("2");
         await panel(owner).getByLabel("Infantry", { exact: true }).fill("21");
       },
@@ -346,9 +344,7 @@ test("Live fleet formation and disband conserve private forces", async ({
         "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await read(owner, orders(owner));
       },
       acknowledgement: {
@@ -454,16 +450,20 @@ test("Live fleet formation and disband conserve private forces", async ({
         "Return to the actual galaxy and inspect the stationed fleet marker.",
       action: async () => {
         await button(owner, "Back to system").click();
+        await expect(button(owner, "View forces")).toBeFocused();
+        await button(owner, "Back to galaxy").focus();
+        await owner.keyboard.press("Enter");
       },
       acknowledgement: {
         spec: "The galaxy reports one owned stationed fleet and restores the opener's focus.",
         check: async () => {
           await expect(
             inspector(owner).getByRole("button", {
-              name: "Fleets · 1",
+              name: "Inspect system",
               exact: true,
             }),
           ).toBeFocused();
+          await expectStationedCount(owner, 1);
           await expect(
             owner.getByLabel(/1 of your fleets stationed at/),
           ).toBeVisible();
@@ -489,9 +489,7 @@ test("Live fleet formation and disband conserve private forces", async ({
       description:
         "Reopen the stationed fleet and confirm disbanding with Enter. Forces stay aboard until tick two is acknowledged.",
       action: async () => {
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .click();
+        await openForces(owner, 1);
         await button(owner, fleetName).click();
         await button(owner, "Disband fleet").focus();
         await button(owner, "Disband fleet").press("Enter");
@@ -544,9 +542,7 @@ test("Live fleet formation and disband conserve private forces", async ({
       description: "Reload the accepted disband order before settlement.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .click();
+        await openForces(owner, 1);
         await read(owner, orders(owner));
       },
       acknowledgement: {
@@ -631,22 +627,24 @@ test("Live fleet formation and disband conserve private forces", async ({
         "Reload the settled result and return to the galaxy with the keyboard.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await expect(outcome("Fleet disbanded")).toBeVisible();
         await button(owner, "Back to system").focus();
         await button(owner, "Back to system").press("Enter");
+        await expect(button(owner, "View forces")).toBeFocused();
+        await button(owner, "Back to galaxy").focus();
+        await owner.keyboard.press("Enter");
       },
       acknowledgement: {
-        spec: "The map has no owned fleet marker and focus returns to Fleets · 0.",
+        spec: "The map has no owned fleet marker and focus returns to Inspect system after closing the expanded scene.",
         check: async () => {
           await expect(
             inspector(owner).getByRole("button", {
-              name: "Fleets · 0",
+              name: "Inspect system",
               exact: true,
             }),
           ).toBeFocused();
+          await expectStationedCount(owner, 0);
           await expect(
             owner.getByLabel(/1 of your fleets stationed at/),
           ).toHaveCount(0);

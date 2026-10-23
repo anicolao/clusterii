@@ -1,3 +1,4 @@
+import { openGalaxyCommand } from "./galaxy-navigation";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
@@ -116,8 +117,7 @@ test("Recover saved campaign records without losing your place", async ({
   await story.step("open-records", {
     actor: "History envoy",
     description: "Open ten saved records with the return control visible.",
-    action: async () =>
-      page.getByRole("button", { name: "History", exact: true }).click(),
+    action: async () => openGalaxyCommand(page, "History"),
     acknowledgement: {
       spec: "Ten authorized records finish loading.",
       check: async () => expect(tray.locator("summary")).toHaveCount(10),
@@ -387,7 +387,7 @@ test("Recover saved campaign records without losing your place", async ({
     description: "Reload and recover the same saved latest record.",
     action: async () => {
       await page.reload();
-      await page.getByRole("button", { name: "History", exact: true }).click();
+      await openGalaxyCommand(page, "History");
     },
     acknowledgement: {
       spec: "Persisted record 15 is recovered after reload.",
