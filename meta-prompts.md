@@ -2521,3 +2521,13 @@ Reviewer06:22: application39931091268 at4239b39 now SUCCESS; story39931091215 fa
 ## Reviewer checkpoint — 2026-10-23 06:32 Toronto
 
 Agent was still idle at clean4239b39 and the06:22 handoff was absent from captured history/composer. Recovered delivery using bracketed paste of the existing exact reviewer0622 buffer, verified pasted content before separately submitting Enter; no new instructions or duplicate task intended. CI unchanged: application success, story failure; disk1,235,280KiB still below2,359,296 gate. No capture/emulator/download or baseline approval. Agent to reconcile checkpoints and commit/push supported fixes under the existing handoff.
+
+## Human follow-up — 2026-10-23
+
+what is going on? I see that it classified 212 failures—seems like a lot.
+
+## Reviewer follow-up — classification and recovered disk
+
+Independently read acfefc0 classification/diff:53first failures per viewport,28missingLinuxreferences,19pixel,2ambiguity,3navigation,1ticktimeout. Scoped selector changes preserve exact status/names and counts; runtime not yet verified. Disk23,403,952KiB independently observed; prior disk-conditioned source-only restriction lifted. Exact handoff:
+
+Reviewer follow-up after acfefc0: independently reviewed classification and scoped-selector diff. User asks why212failures; report53first-failing stories across4viewports, not212independent bugs. Disk independently recovered to23,403,952KiB, so earlier source-only restriction was conditional on disk and is now lifted subject to rechecking2,359,296KiB gate. Continue on PR117 with complete waiting/active navigation compatibility for campaign-navigation/encryption-choice and latent invitation/history prerequisites using genuine acknowledged campaign setup; inspect actual Pantheon E2E structure and migrate touched stories appropriately. Preserve all identity/privacy/history assertions, deadlines and strict visual criteria. Run focused Nix browser verification of repaired journeys with real actions, retain first failures and actual captures for review. Do not merely remove canvas assertions or promote baselines to green the suite. Then diagnose100tick timeout from evidence; no unsupported timeout increases. Production-ready high-fidelity tracer bullets remain goal; all76pixel failures require independent mockup comparison,112missing references require reviewed platform evidence, not automatic acceptance. Log this attributed handoff and reconcile main meta. Commit/push each coherent completed correction, no merge.

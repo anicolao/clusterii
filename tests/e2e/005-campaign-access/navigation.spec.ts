@@ -1,14 +1,20 @@
-import { observeDeparture } from "./story-helpers/campaign-departure";
-import { test, expect } from "./story-helpers/fixtures";
-import { readableLabels } from "./story-helpers/galaxy-labels";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { login, grantDeveloper } from "./helpers";
+import { openGalaxyCommand } from "../../browser/galaxy-navigation";
+import {
+  expectWaitingSeat,
+  activeAdmissionControls,
+} from "../helpers/campaign-phase";
+import { admissionAt } from "../../browser/story-helpers/admission-clock.mjs";
+import { observeDeparture } from "../../browser/story-helpers/campaign-departure";
+import { test, expect } from "../helpers/fixtures";
+import { readableLabels } from "../../browser/story-helpers/galaxy-labels";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { login, grantDeveloper } from "../../browser/helpers";
 import type { Page } from "@playwright/test";
 import {
   observeProfileWrites,
   profileIdentity,
   profileFacts,
-} from "./story-helpers/profile-observer";
+} from "../../browser/story-helpers/profile-observer";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
 const view = (
@@ -204,10 +210,10 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
       campaignUrl = page.url();
     },
     acknowledgement: {
-      spec: "The seat is confirmed and the real galaxy canvas is available.",
+      spec: "The seat is confirmed and the one-member manifest preserves the waiting phase.",
       check: async () => {
         await confirmed(page);
-        await expect(page.locator("canvas")).toBeVisible();
+        await expectWaitingSeat(page, "Star envoy", 1);
       },
     },
     verifications: [
@@ -297,10 +303,10 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
       "Select the named membership and recover its exact authoritative galaxy.",
     action: async () => card(page, name).click(),
     acknowledgement: {
-      spec: "The same campaign URL and canvas recover.",
+      spec: "The same campaign URL, named saved seat and waiting manifest recover.",
       check: async () => {
         await expect(page).toHaveURL(campaignUrl);
-        await expect(page.locator("canvas")).toBeVisible();
+        await expectWaitingSeat(page, "Star envoy", 1);
       },
     },
     verifications: [
@@ -317,7 +323,7 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
       "Reload the waiting galaxy, recover its exact directory card through Campaigns and reopen its roster.",
     action: async () => {
       await page.reload();
-      await expect(page.locator("canvas")).toBeVisible();
+      await expectWaitingSeat(page, "Star envoy", 1);
       await button(page, "Campaigns").click();
       await expect(card(page, name)).toBeVisible();
       await card(page, name).click();
@@ -326,7 +332,12 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     },
     acknowledgement: {
       spec: "The recovered roster permits leaving the waiting campaign.",
-      check: async () => expect(button(page, "Leave campaign")).toBeEnabled(),
+      check: async () =>
+        expect(
+          page
+            .getByRole("dialog", { name: "Campaign roster panel", exact: true })
+            .getByRole("button", { name: "Leave campaign", exact: true }),
+        ).toBeEnabled(),
     },
     verifications: [
       {
@@ -358,7 +369,10 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     description: "Reopen the roster with Enter and release the waiting seat.",
     action: async () => {
       await page.keyboard.press("Enter");
-      await button(page, "Leave campaign").click();
+      await page
+        .getByRole("dialog", { name: "Campaign roster panel", exact: true })
+        .getByRole("button", { name: "Leave campaign", exact: true })
+        .click();
     },
     acknowledgement: {
       spec: "Seat release is acknowledged and the member galaxy view closes.",
@@ -367,6 +381,9 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
           page.getByText("Your seat has been released.", { exact: true }),
         ).toBeVisible();
         await expect(page.locator("canvas")).toHaveCount(0);
+        await expect(
+          page.getByRole("region", { name: "Waiting campaign", exact: true }),
+        ).toHaveCount(0);
       },
     },
     verifications: [
@@ -406,8 +423,10 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
   });
 });
 
-test("A waiting commander filters stars, orbits by keyboard and inspects a clipped map label", async ({
+test("An active commander filters stars, orbits by keyboard and inspects a clipped map label", async ({
   page,
+  browser,
+  request,
 }, info) => {
   const story = new TestStepHelper(info, {
     id: "campaign-chart-navigation",
@@ -415,7 +434,7 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
       "Navigate the authoritative star catalogue with keyboard and pointer",
     inventory: ["UX-03", "UX-04", "UX-15", "UX-16"],
     description:
-      "A real waiting member filters the authoritative catalogue, uses keyboard camera controls, selects a named star and tests map-label clipping at the inspector boundary. No home exists before scheduled start. Fixed catalogue entropy makes the scene repeatable without invented star data or gameplay actions.",
+      "A genuinely started member filters the authoritative catalogue, uses keyboard camera controls, selects a named star and tests map-label clipping at the inspector boundary. Four ordinary admissions and labelled scheduler delivery establish the home; no state is injected. Fixed catalogue entropy makes the scene repeatable without invented star data or gameplay actions.",
   });
   const views = [
       {
@@ -433,21 +452,34 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
   let before: { x: number; y: number; width: number; height: number } | null =
     null;
   await story.harness(
-    "waiting-member",
-    "Create and join a waiting development campaign through ordinary sign-in/create/join controls. Grant emulator developer access and use the test loader’s fixed catalogue entropy. No scheduler or production clock is advanced.",
-    async () => {
-      await developer(
-        page,
-        `chart-story-${info.project.name}-${Date.now()}@example.test`,
-      );
-      await makeCampaign(page, `Chart dawn ${info.project.name}`);
-      await button(page, "Claim your seat").click();
-      await confirmed(page);
-    },
+    "active-members",
+    "Save the host, create/join through UI, admit three independent commanders and deliver the existing fixed-clock scheduler harness. No state injection or hosted scheduling claim.",
+    [
+      {
+        description:
+          "Save Star envoy, create the named scheduled campaign and acknowledge the host seat.",
+        run: async () => {
+          await developer(
+            page,
+            `chart-story-${info.project.name}-${Date.now()}@example.test`,
+          );
+          await page.clock.setFixedTime(admissionAt);
+          await makeCampaign(
+            page,
+            `Scheduled story chart dawn ${info.project.name}`,
+          );
+          await button(page, "Claim your seat").click();
+          await confirmed(page);
+          await expectWaitingSeat(page, "Star envoy", 1);
+        },
+      },
+      ...activeAdmissionControls(browser, request, page, info),
+    ],
   );
-  await story.step("waiting-chart", {
+  await story.step("assigned-chart", {
     actor: "Star envoy",
-    description: "Inspect the waiting galaxy before a home has been assigned.",
+    description:
+      "Inspect the real galaxy after acknowledged scheduled home assignment.",
     action: async () => {},
     acknowledgement: {
       spec: "The real canvas and selected system are visible.",
@@ -465,9 +497,11 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
           expect(
             (await page.locator(".galaxy-surface").boundingBox())!.height,
           ).toBe(page.viewportSize()!.height);
-          expect(
-            (await page.locator(".command-rail").boundingBox())!.height,
-          ).toBeLessThanOrEqual(info.project.name === "large" ? 100 : 70);
+          const rail = (await page.locator(".command-rail").boundingBox())!;
+          const chart = (await page.locator(".chart").boundingBox())!;
+          expect(rail.y).toBeGreaterThanOrEqual(0);
+          expect(chart.y).toBeGreaterThanOrEqual(rail.y + rail.height);
+          expect(chart.height).toBeGreaterThan(page.viewportSize()!.height / 4);
         },
       },
     ],
@@ -479,7 +513,7 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
       "Open Systems list and filter the authoritative catalogue to O-class stars.",
     action: async () => {
       before = await page.locator(".star-label").boundingBox();
-      await button(page, "Systems list").click();
+      await openGalaxyCommand(page, "Systems list", true);
       await page
         .getByRole("combobox", { name: "Stellar class", exact: true })
         .selectOption("O");
@@ -495,8 +529,8 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
     },
     verifications: [
       {
-        spec: "No home-centering action is available before home assignment.",
-        check: async () => expect(button(page, "Center home")).toBeDisabled(),
+        spec: "Home-centering is enabled only after the acknowledged home assignment.",
+        check: async () => expect(button(page, "Center home")).toBeEnabled(),
       },
       {
         spec: "The opaque list and bounded scroll region stay below the campaign rail.",
@@ -568,8 +602,20 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
     },
     verifications: [
       {
-        spec: "The acknowledged navigation causes no uncaught application errors.",
-        check: async () => expect(errors).toEqual([]),
+        spec: "The acknowledged navigation causes no uncaught application errors; dismiss the phone command tray through Escape for map reading.",
+        check: async () => {
+          expect(errors).toEqual([]);
+          const more = button(page, "More");
+          if (
+            (await more.isVisible()) &&
+            (await more.getAttribute("aria-expanded")) === "true"
+          ) {
+            await more.focus();
+            await page.keyboard.press("Escape");
+            await expect(more).toBeFocused();
+            await expect(more).toHaveAttribute("aria-expanded", "false");
+          }
+        },
       },
     ],
     views,
@@ -578,7 +624,7 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
     actor: "Star envoy",
     description: "Reopen the list with Enter and restore the galaxy overview.",
     action: async () => {
-      await page.keyboard.press("Enter");
+      await openGalaxyCommand(page, "Systems list", true);
       await button(page, "Overview").click();
     },
     acknowledgement: {
@@ -587,8 +633,20 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
     },
     verifications: [
       {
-        spec: "The acknowledged navigation causes no uncaught application errors.",
-        check: async () => expect(errors).toEqual([]),
+        spec: "The acknowledged navigation causes no uncaught application errors; dismiss the phone command tray through Escape for map reading.",
+        check: async () => {
+          expect(errors).toEqual([]);
+          const more = button(page, "More");
+          if (
+            (await more.isVisible()) &&
+            (await more.getAttribute("aria-expanded")) === "true"
+          ) {
+            await more.focus();
+            await page.keyboard.press("Escape");
+            await expect(more).toBeFocused();
+            await expect(more).toHaveAttribute("aria-expanded", "false");
+          }
+        },
       },
     ],
     views,
@@ -598,10 +656,20 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
     description:
       "Select the named visible catalogue entry Rana and inspect its system details.",
     action: async () => {
-      await button(page, "Systems list").click();
+      await openGalaxyCommand(page, "Systems list", true);
       await page
         .getByRole("button", { name: "Select Rana, A class", exact: true })
         .click();
+      await expect(button(page, "Systems list")).toBeFocused();
+      const more = button(page, "More");
+      if (
+        (await more.isVisible()) &&
+        (await more.getAttribute("aria-expanded")) === "true"
+      ) {
+        await more.focus();
+        await page.keyboard.press("Escape");
+        await expect(more).toBeFocused();
+      }
     },
     acknowledgement: {
       spec: "The inspector identifies the selected authoritative star.",
