@@ -370,6 +370,9 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
       description:
         "Choose an actually reachable catalogue destination, review the commitment without issuing an order.",
       action: async () => {
+        await planner
+          .getByRole("button", { name: "Edit route", exact: true })
+          .click();
         const catalogue = planner.getByRole("region", {
           name: "Waypoint catalogue",
         });
@@ -385,6 +388,10 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
         await planner.getByRole("searchbox").fill(targetName);
         await button(owner, label!).focus();
         await button(owner, label!).press("Enter");
+        await planner
+          .getByRole("region", { name: "Route editing", exact: true })
+          .getByRole("button", { name: "Review route", exact: true })
+          .click();
         await send.focus();
       },
       acknowledgement: {
@@ -400,6 +407,133 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
       verifications: [privacy],
       views: views(),
     });
+    await story.step("edit-multiple-waypoints", {
+      actor: aliases[0],
+      description:
+        "Add another actual reachable waypoint and inspect both editable legs without issuing a command.",
+      action: async () => {
+        await planner
+          .getByRole("button", { name: "Edit route", exact: true })
+          .click();
+        const editor = planner.getByRole("region", {
+          name: "Route editing",
+          exact: true,
+        });
+        await editor.getByRole("searchbox").fill("");
+        const originName = initial.galaxy.stars.find(
+          (s) => s.id === home,
+        )!.name;
+        const label = await editor
+          .getByRole("region", { name: "Waypoint catalogue" })
+          .getByRole("button")
+          .evaluateAll(
+            (bs, excluded) =>
+              bs
+                .find(
+                  (b) =>
+                    b.textContent?.includes("Within range") &&
+                    !excluded.includes(b.getAttribute("aria-label") ?? ""),
+                )
+                ?.getAttribute("aria-label"),
+            [
+              "Add " + originName + " waypoint",
+              "Add " + targetName + " waypoint",
+            ],
+          );
+        expect(label).toBeTruthy();
+        await editor.getByRole("button", { name: label!, exact: true }).focus();
+        await owner.keyboard.press("Enter");
+        await editor
+          .getByRole("button", { name: "Move waypoint 2 earlier", exact: true })
+          .focus();
+      },
+      acknowledgement: {
+        spec: "Two actual waypoints are retained as unsent intent; no service revision changes.",
+        check: async () => {
+          await expect(
+            planner
+              .getByRole("list", { name: "Route waypoints" })
+              .getByRole("listitem"),
+          ).toHaveCount(2);
+          expect(await canonical()).toEqual(formed!);
+        },
+      },
+      verifications: [privacy],
+      views: views(),
+    });
+    await story.step("reorder-remove-waypoint", {
+      actor: aliases[0],
+      description:
+        "Move the second leg earlier and back, remove it, then return to the original route review.",
+      action: async () => {
+        const editor = planner.getByRole("region", {
+          name: "Route editing",
+          exact: true,
+        });
+        for (const name of [
+          "Move waypoint 2 earlier",
+          "Move waypoint 1 later",
+        ]) {
+          const c = editor.getByRole("button", { name, exact: true });
+          await c.focus();
+          await owner.keyboard.press("Enter");
+        }
+        await editor
+          .getByRole("button", { name: "Remove waypoint 2", exact: true })
+          .focus();
+        await owner.keyboard.press("Enter");
+        await editor
+          .getByRole("button", { name: "Review route", exact: true })
+          .click();
+      },
+      acknowledgement: {
+        spec: "All edits remain local, the original destination survives and Edit route regains focus.",
+        check: async () => {
+          expect(await canonical()).toEqual(formed!);
+          await expect(
+            planner.getByRole("button", { name: "Edit route", exact: true }),
+          ).toBeFocused();
+          await expect(send).toBeEnabled();
+        },
+      },
+      verifications: [privacy],
+      views: views(),
+    });
+    await story.step("review-normal-motion", {
+      actor: aliases[0],
+      description:
+        "Read the same confirmed route with normal motion preference and settled finite effects; no fast-forward.",
+      action: async () => {
+        await owner.emulateMedia({ reducedMotion: "no-preference" });
+        await send.focus();
+      },
+      acknowledgement: {
+        spec: "Actual media and root preference allow normal motion, with identical authoritative state.",
+        check: async () => {
+          expect(
+            await owner.evaluate(
+              () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+            ),
+          ).toBe(false);
+          await expect(owner.locator("html")).toHaveAttribute(
+            "data-reduce-motion",
+            "false",
+          );
+          expect(await canonical()).toEqual(formed!);
+        },
+      },
+      verifications: [privacy],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          normalMotion: true,
+          primary: [send],
+        },
+      ],
+    });
+    await owner.emulateMedia({ reducedMotion: "reduce" });
     await story.step("acknowledge-dispatch", {
       actor: aliases[0],
       description:
