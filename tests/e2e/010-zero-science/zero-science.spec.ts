@@ -2,16 +2,20 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
-import type { Campaign, CampaignView } from "../../shared/campaign";
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { settlementTiming } from "./story-helpers/settlement-timing";
-import { expectReadingTarget } from "./story-helpers/reading-target";
-import { distance } from "../../shared/galaxy";
-import { routePreview } from "../../shared/travel";
-import { login, grantDeveloper } from "./helpers";
-import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
-import { fleetStoryPrefix } from "./story-helpers/fleet-clock.mjs";
+import type { Campaign, CampaignView } from "../../../shared/campaign";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { settlementTiming } from "../../browser/story-helpers/settlement-timing";
+import { expectReadingTarget } from "../../browser/story-helpers/reading-target";
+import { distance } from "../../../shared/galaxy";
+import { routePreview } from "../../../shared/travel";
+import { openForces, openGalaxyCommand } from "../../browser/galaxy-navigation";
+import { login, grantDeveloper } from "../../browser/helpers";
+import {
+  admissionAt,
+  scheduledAt,
+} from "../../browser/story-helpers/admission-clock.mjs";
+import { fleetStoryPrefix } from "../../browser/story-helpers/fleet-clock.mjs";
 const button = (p: Page, name: string) =>
   p.getByRole("button", { name, exact: true });
 const panel = (p: Page) =>
@@ -89,7 +93,7 @@ test("Live zero science after orbital loss preserves private research", async ({
       surface: "game" as const,
     }));
   const require = createRequire(
-    new URL("../../functions/package.json", import.meta.url),
+    new URL("../../../functions/package.json", import.meta.url),
   );
   const admin = require("firebase-admin/app");
   if (!admin.getApps().length)
@@ -333,9 +337,7 @@ test("Live zero science after orbital loss preserves private research", async ({
         description:
           "Use the actual home-system fleet controls to reserve all160 earned fighters. The other commander's order remains private.",
         action: async () => {
-          await inspector(p)
-            .getByRole("button", { name: "Fleets · 0", exact: true })
-            .click();
+          await openForces(p, 0, true);
           await panel(p).getByLabel("Fighters", { exact: true }).fill("160");
           await panel(p).getByLabel("Infantry", { exact: true }).fill("0");
           await button(p, "Form fleet").focus();
@@ -534,8 +536,7 @@ test("Live zero science after orbital loss preserves private research", async ({
         action: async () => {
           for (const p of [owner, peer]) {
             await p.reload();
-            await button(p, "Economy").focus();
-            await button(p, "Economy").press("Enter");
+            await openGalaxyCommand(p, "Economy", true);
             const reading = p.getByRole("region", {
               name: "Production ledger",
               exact: true,

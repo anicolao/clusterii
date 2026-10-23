@@ -1,0 +1,66 @@
+{
+  "events": 116,
+  "completedSpans": [
+    {
+      "at": 10093.307209,
+      "event": "complete",
+      "label": "canonical",
+      "span": 1,
+      "elapsedMs": 5.713584000000992,
+      "transactions": 0
+    },
+    {
+      "at": 10094.642459,
+      "event": "complete",
+      "label": "clock",
+      "span": 2,
+      "elapsedMs": 1.2016249999996944,
+      "transactions": 0
+    },
+    {
+      "at": 10095.441917,
+      "event": "complete",
+      "label": "clock",
+      "span": 3,
+      "elapsedMs": 0.7586250000003929,
+      "transactions": 0
+    },
+    {
+      "at": 13432.433917,
+      "event": "complete",
+      "label": "batch",
+      "span": 4,
+      "elapsedMs": 3336.9455,
+      "transactions": 97,
+      "ticks": 96
+    },
+    {
+      "at": 13566.880042,
+      "event": "complete",
+      "label": "batch",
+      "span": 5,
+      "elapsedMs": 134.32625000000007,
+      "transactions": 6,
+      "ticks": 4
+    },
+    {
+      "at": 13572.222792,
+      "event": "complete",
+      "label": "repeat",
+      "span": 6,
+      "elapsedMs": 4.94341600000007,
+      "transactions": 1,
+      "ticks": 0
+    }
+  ],
+  "transactionCount": 104,
+  "attempts": 104,
+  "reads": 504,
+  "writeEnqueues": 1702,
+  "readMs": 1387.075582999987,
+  "callbackMs": 2056.633082999995,
+  "transactionTotalMs": 3453.1386270000075,
+  "outsideCallbackMs": 1396.5055440000124,
+  "maxTransactionMs": 46.793416000000434,
+  "overallSpanMs": 3484.6165419999998
+}

@@ -392,7 +392,7 @@ Research forecast update: reviewer12:19 approved gallery28 from b7e629a and stri
 
 ## Zero-science player recovery (partial)
 
-`zero-science.story.spec.ts` connects real100-tick earned navigation, ordinary fleet formation/route acknowledgements, actual orbital capture and persisted zero science/frozen progress to owner/peer illustrations (UX-04/06/07/08/09/14/15/16). [Current evidence and failures](ZERO_SCIENCE_STORY_REVIEW.md): current-source desktop14 candidates passed; phone/short leased-batch deadlines and large first-capture deadline leave four-size acceptance incomplete. Earlier phone/desktop candidates are separate provenance. No promotion or strict comparison; existing procedural assertions remain.
+`tests/e2e/010-zero-science/zero-science.spec.ts` (migrated from the legacy browser story) connects real100-tick earned navigation, ordinary fleet formation/route acknowledgements, actual orbital capture and persisted zero science/frozen progress to owner/peer illustrations (UX-04/06/07/08/09/14/15/16). [Current evidence and failures](ZERO_SCIENCE_STORY_REVIEW.md): current-source desktop14 candidates passed; phone/short leased-batch deadlines and large first-capture deadline leave four-size acceptance incomplete. Earlier phone/desktop candidates are separate provenance. No promotion or strict comparison; existing procedural assertions remain.
 
 ## Mounted campaign selection ownership (UX-02/14/16)
 
@@ -453,3 +453,5 @@ Current executable sources for campaign-navigation, invitation and encryption-ch
 Milestone10/UX15: market reference migrates to tests/e2e/008-field-guide/market.spec.ts; route reference reuses actual RouteRules in routes.spec.ts. Original market checks retained with explicit chapter scope and traversal through the new route summary. New/changed pixels require independent review, historical baselines remain untouched. No live orders or private-account acceptance claimed by gallery reading.
 
 Feature009 route-force review adds real formation/dispatch/reload and authorized capacity/origin-defense reading; predecessor full travel/recovery assertions remain. Actual Auth UIDs are resolved by unique email. Split-layer privacy helper coverage is reducer/projection scope, not hosted certification. Candidates require separate review.
+
+Zero-science timing follow-up: [single measured run and source migration](SETTLEMENT_0942_REVIEW.md) completes100 ticks locally in3.485s then fails obsolete fleet navigation. Shared real-navigation correction is source-validated only; historical timeout and admin-projection authorization limits remain open.

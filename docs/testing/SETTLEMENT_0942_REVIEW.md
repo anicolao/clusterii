@@ -11,3 +11,21 @@ Established Nix Java21.0.11/Node24.18.0/Bun1.3.13 verified; Node24 differs from 
 Read E2E_GUIDE and actual Pantheon001 layout. This unchanged legacy diagnostic is not new feature acceptance: its seat-index/admin projection reader does not prove ordinary-player privacy. Any future touched/migrated player story must use numbered feature structure and explicit authenticated identities. Existing service/privacy assertions are not replaced.
 
 If this isolated run fails, preserve first failure and attribute only measured boundaries. If it passes, historical cause remains unresolved. No arbitrary deadlines/baselines, no merge, no hosted/KMS/Linux/release approval.
+
+## Measured single-run result:8219387
+
+The isolated phone run completed initial100-tick settlement and failed later at legacy Fleets ·0 locator (zero-science.story.spec.ts338,10s). Test duration24.4s; zero completed player stories/captures. Original trace, error context, full run/emulator/preflight/CI logs and116 redacted events preserved in [settlement-8219387](settlement-8219387/). This is a non-reproduction of100-tick timeout, not a passing story or historical-cause resolution. No second browser run.
+
+From first canonical start through repeated no-op settlement completion:3484.62ms. Canonical read/decrypt5.71ms; two browser clock updates1.20/0.76ms;96-tick batch3336.95ms;4-tick batch134.33ms; repeated delivery0ticks4.94ms.104 measured transactions,104 callback attempts,504 awaited read calls,1702 write enqueues; aggregate read1387.08ms, callback2056.63ms,total3453.14ms. Total-minus-callback1396.51ms includes commit/retry machinery/scheduling; it cannot isolate transport or physical write latency. Max transaction46.79ms. No callback retries observed in this run. Test-only logging overhead remains nonzero; canonical spans include crypto and SDK, clock spans measure Playwright round-trip. Browser view callback latency is not measured by these events.
+
+No production optimization is justified by this local result. Historical CI failure still needs correlated timing from a failing environment; current probe is not deployed instrumentation. Java21/Node24 local differs from Linux CI22. Prior Firestore bind and missing ingress remain separate unresolved failures.
+
+## Concrete successor compatibility correction
+
+Retained error context names the obsolete Fleets ·0 selector after successful settlement/recovery. Move the touched story into Pantheon-style tests/e2e/010-zero-science and use shared openForces(page,0,true): real Inspect/View forces with existing stationed-count assertion. Economy similarly uses existing dock/More helper with keyboard entry. Every original gameplay/ledger/conservation/command/reload assertion and deadline remains; no hidden state substitutes. The story still has canonical-seat/admin-projection limitations, explicitly documented in feature FIDELITY rather than claimed as authorization acceptance. This source correction is statically validated; corrected mounted execution remains pending and no unchanged timing retry is launched.
+
+PR120 remains at5057c797. New branch investigate/zero-science-settlement is based on it; no merge or baseline promotion. Source/migration evidence is not full visual/hosted/KMS/Linux/release acceptance.
+
+Initial migration static/lint passed, policy correctly rejected direct legacy fixture import in feature010. Use established feature helpers re-export (same actual fixture/helper); preserve initial policy log. No policy guard weakened.
+
+Corrected migration static/lint/story-policy and settlementTiming delegation/redaction case17 assertions pass. No additional browser execution occurred.

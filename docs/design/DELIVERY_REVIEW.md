@@ -192,3 +192,7 @@ Based on PR119 / `feat/menu-route-reference`, branch `feat/route-force-review`. 
 PR120 composition update: [8ce6f35 evidence](../ux/reviews/route-composition-8ce6f35/README.md), eight Nix journeys76 candidates plus two unchanged travel regressions passed. Dominant real-route framing, integrated fleet art and bounded editing replace the prior tiny-route/tall-form arrangement. Fifteen unit/travel tests2858 assertions pass. Whole-family independent visual, Linux/strict and current-head preview gates remain; no promotion or merge.
 
 PR120 reviewer09:32 follow-up: [3c16123](../ux/reviews/route-focus-3c16123/README.md) clears waypoint focus paint and adds bounded accepted-manifest Home/End reading. Eight Nix journeys96 candidates pass with predecessor command/privacy/recovery assertions intact; unapproved and unpromoted.
+
+## Isolated settlement investigation, based on PR120
+
+Branch investigate/zero-science-settlement on5057c797 keeps PR120 stable. [Measured evidence](../testing/SETTLEMENT_0942_REVIEW.md): one unchanged phone run completes100 ticks in3.485s then fails stale fleet navigation; no historical-cause resolution. Feature010 source correction uses shared real navigation; static/policy and17 timing assertions pass, corrected browser execution pending. No preview/visual/privacy/hosted certification or promotion.

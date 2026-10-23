@@ -792,3 +792,5 @@ Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | 
 Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Archive76 final source-paired route candidates and passing unchanged regressions; preserve prior evidence loss and review gates.
 
 Prompt 149 | 5666f7692e0b368b268f99472292a2ce83381db234465930181a0aabf9c67744 | Retain96 source-paired focus-clearance and manifest-reading candidates with all four-size journeys passing and review gates open.
+
+Prompt 150 | 23d1df104ccd29cfa9314da4ccb4fef0c2c2ace7f8b659871a1470d11c8c4d79 | Preserve one measured settlement non-reproduction and migrate the demonstrated stale fleet navigation without a browser retry.
