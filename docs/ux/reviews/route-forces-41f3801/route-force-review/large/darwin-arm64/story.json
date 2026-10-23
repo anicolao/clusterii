@@ -1,0 +1,271 @@
+{
+  "id": "route-force-review",
+  "title": "Review the forces sent and left behind",
+  "inventory": [
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Ordinary authenticated formation and dispatch with actual leased settlement. Fixed catalogue/domain clock and Scheduler delivery are labelled harness controls, never injected forces. Owner and peer authorized projections corroborate private forces; hosted scheduling and managed crypto remain outside this development journey.",
+  "source": {
+    "commit": "41f3801f2dd599afc45a4a2da4aa24df2a2f2002",
+    "dirty": false,
+    "spec": "tests/e2e/009-route-forces/forces.spec.ts",
+    "specSha256": "fbf722e5c535d1fd238795d90876fd9d994b45a3943f78883c213e1040b7732c"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "reserve-real-complement",
+      "description": "Form two fighters carrying twenty infantry through the actual preparation controls.",
+      "actor": "Route marshal",
+      "kind": "player",
+      "acknowledgement": "Authoritative formation receipt reserves the complement without moving the garrison.",
+      "verifications": [
+        "Independent commander receives no owner's fleet, route order or private complement."
+      ],
+      "views": [
+        {
+          "player": "Route marshal",
+          "image": "010-reserve-real-complement-1-route-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "010-reserve-real-complement-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "leased-formation",
+      "description": "One real tick, concurrent and repeated deliveries; no state injection or hosted scheduling claim.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "review-confirmed-forces",
+      "description": "Select the formed fleet and review capacity and the exact origin garrison before planning.",
+      "actor": "Route marshal",
+      "kind": "player",
+      "acknowledgement": "The review shows actual formed forces and capacity; garrison excludes the fleet exactly once.",
+      "verifications": [
+        "Independent commander receives no owner's fleet, route order or private complement.",
+        "Review fits its bounded reading region while commitment actions stay in the viewport."
+      ],
+      "views": [
+        {
+          "player": "Route marshal",
+          "image": "012-review-confirmed-forces-1-route-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "012-review-confirmed-forces-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-origin-defense",
+      "description": "Read the independently authorized origin layers and other own stationed fleets before sending.",
+      "actor": "Route marshal",
+      "kind": "player",
+      "acknowledgement": "Both current garrison counts and the concurrent-order qualification are fully readable in the bounded region.",
+      "verifications": [
+        "Independent commander receives no owner's fleet, route order or private complement."
+      ],
+      "views": [
+        {
+          "player": "Route marshal",
+          "image": "013-read-origin-defense-1-route-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "013-read-origin-defense-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-real-waypoint",
+      "description": "Choose an actually reachable catalogue destination, review the commitment without issuing an order.",
+      "actor": "Route marshal",
+      "kind": "player",
+      "acknowledgement": "Send becomes available while confirmed remaining-defense counts remain visible.",
+      "verifications": [
+        "Independent commander receives no owner's fleet, route order or private complement."
+      ],
+      "views": [
+        {
+          "player": "Route marshal",
+          "image": "014-choose-real-waypoint-1-route-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "014-choose-real-waypoint-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "acknowledge-dispatch",
+      "description": "Send with Enter and read the real accepted route before any departure.",
+      "actor": "Route marshal",
+      "kind": "player",
+      "acknowledgement": "An authoritative receipt schedules departure without subtracting forces again.",
+      "verifications": [
+        "Independent commander receives no owner's fleet, route order or private complement."
+      ],
+      "views": [
+        {
+          "player": "Route marshal",
+          "image": "015-acknowledge-dispatch-1-route-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "015-acknowledge-dispatch-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-same-dispatch",
+      "description": "Reload the same campaign and inspect the same accepted fleet and destination without sending again.",
+      "actor": "Route marshal",
+      "kind": "player",
+      "acknowledgement": "The accepted destination and immutable order return; no duplicate revision or forces.",
+      "verifications": [
+        "Independent commander receives no owner's fleet, route order or private complement."
+      ],
+      "views": [
+        {
+          "player": "Route marshal",
+          "image": "016-recover-same-dispatch-1-route-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "016-recover-same-dispatch-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

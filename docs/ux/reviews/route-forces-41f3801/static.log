@@ -1,0 +1,11 @@
+src/lib/components/galaxy/Galaxy.svelte 240ms (unchanged)
+tests/e2e/009-route-forces/forces.spec.ts 20ms
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 14ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
