@@ -688,3 +688,11 @@ Prompt 112 | 0e6514eab0c4f604dc10fa7e4ee8acce4b7a9f3d9ed98defccaae678eb879ff4 | 
 Prompt 117 | 080c53a673a8201c6ab67ca160024eb2ff2d2076ac120dc327e985063ab095f5 | Preserve four-size corrected lab-label candidates and exact source pairing for independent review without promotion
 
 Prompt 118 | 7474732170248360199f7827a415ef0699dcabb7ed7b003980cf1af2fad8decb | Archive four passing strict settings journeys and24 exact captures under scoped reviewer approval with remaining gates
+
+Prompt 119 | 330b0b90bd75656268e3f5e329fa767ddff7a3e59cc59f18906f25068b75f67f | Register stacked PR112 source-review boundary and affected settings baselines with unexecuted browser acceptance
+
+Prompt 120 | 096daf7d19e46d50990e9773648915fa776da673d1642572f483a3fe7652cf33 | Preserve failed large rules End-scroll evidence and scope Home/End to reading region with unchanged containment guards
+
+Prompt 121 | a5849393980451bdec107561913bc69b15a245b103e42ef15ef33c5347797e49 | Record eight passing corrected rules/settings journeys with44 unpromoted candidates and executed End/Home invariants
+
+Prompt 122 | 3c857daa47e1db2e52a05d385255d2f798ecc3fd4357b304a0ad292cd1bac624 | Archive eight strict rules/settings journeys and44 exact captures after scoped reviewer-approved baseline promotion

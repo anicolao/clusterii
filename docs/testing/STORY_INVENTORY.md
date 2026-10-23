@@ -425,3 +425,13 @@ Corrected-source phone settings at9d0a837 passes one journey/six candidates; pro
 Settings lab semantics corrected atfd74e91: full four-size generation passes4 journeys/24 candidates with accurate feedback-recovery labels asserted independently of accepted outcomes. New spec/source pairing retained; prior24 untouched. Corrected-family independent review and strict comparison pending.
 
 Reviewer-approved local-presentation-settings Darwin family now passes4 strict journeys/24 exact captures (31.1s), with generated narratives archived under `stories/local-presentation-settings/{phone,desktop,large,short}/darwin-arm64/README.md`. Scope is shared local settings/gallery/lab only; actual galaxy, Linux and broader acceptance gates remain separate.
+
+## In-game market rules source
+
+UX15/16 `menu-rules.story.spec.ts` prepares shared-menu chapter, Back/Escape/opener and single-modal assertions using actual MarketRules; browser execution pending initial source review. New Rules footer changes local-presentation-settings captures/tab order; existing baselines preserved and new independent review required. See [scope](../design/IN_GAME_RULES_REVIEW.md).
+
+Rules/settings first generation at1503cce:5pass/1fail/2notrun. Large Rules End scrolled the background and failed final opener containment; trace retained. Scoped Home/End region handling added, no corrected-source rerun; short unexecuted. Partial candidates unpromoted, old settings baselines preserved.
+
+Corrected menu/rules generation atd436c43 passes8 journeys/44 candidates, including executed document-scroll equality after End and Home plus lower/top clipping and footer/final-opener containment. Independent review/promotion pending for20 rules and24 affected settings images. Prior failures and approved baselines preserved.
+
+Reviewer-approved in-game-market-rules and updated local-presentation-settings Darwin families pass8 strict journeys/44 exact captures in46.9s. Generated illustrated evidence archived under `stories/{in-game-market-rules,local-presentation-settings}/{phone,desktop,large,short}/darwin-arm64/`. Scope is local shared-menu reading/settings, not live campaign preservation or broader release.

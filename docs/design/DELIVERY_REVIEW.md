@@ -164,3 +164,11 @@ Identity-gallery story work in #47 is stacked on #46: [scope and evidence](IDENT
 #111 lab-label update: accurate feedback-recovery metadata replaces misleading outcome label; four-size generation atfd74e91 passes4 journeys/24 new unpromoted candidates in32.3s. Source/spec and original paths in [review](../testing/SHARED_SETTINGS_REVIEW.md). Prior holds and independent corrected-family review remain.
 
 #111 scoped strict completion: reviewer-approved24 Darwin settings baselines pass all4 strict journeys/24 exact captures in31.1s, archived illustrated narratives committed. [Provenance and limits](../testing/SHARED_SETTINGS_REVIEW.md). Actual galaxy/scene/authoritative/concurrency/Linux/KMS/hosted/performance/release holds remain; no historical timeout cause claimed.
+
+| In-game market rules; based on #111 | [Draft #112](https://github.com/anicolao/clusterii/pull/112), `feat/in-game-rules`; [audit](IN_GAME_RULES_REVIEW.md) | [Preview](https://anicolao.github.io/clusterii/pr112/) (unverified) | Shared bounded menu reuses MarketRules, one-dialog Back/Escape/opener ownership, no campaign mutations. Static/story-policy checks pass; new focused story source and existing-settings traversal updated. No browser/capture executed pending source review. Existing settings baselines unchanged; new independent four-size review required. Broader chapters/live preservation/Linux/hosted/release gates remain. |
+
+#112 first generation: phone/desktop rules+settings and large settings pass; large rules fails offscreen opener after End scrolls background, both short cases stop. Trace-supported region Home/End correction and document-scroll assertion prepared; corrected-source browser gate pending, no baseline changes. [Evidence](IN_GAME_RULES_REVIEW.md).
+
+#112 corrected invariants:8 journeys/44 candidates pass47.6s atd436c43, both End/Home preserve document position and bounded reading/footers. No promotion; independent review remains. [Source/spec/original paths](IN_GAME_RULES_REVIEW.md).
+
+#112 scoped boundary complete: reviewer-approved two Darwin families pass8 strict journeys/44 exact captures in46.9s; illustrated evidence archived. [Approval/provenance/limits](IN_GAME_RULES_REVIEW.md). Actual galaxy/live state/authorization/concurrency/Linux/hosted and release gates remain; proposed policy not approved.
