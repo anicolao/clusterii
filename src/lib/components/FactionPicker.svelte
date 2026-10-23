@@ -1,15 +1,18 @@
 <script lang="ts">
   import { rules, type FactionId } from "@shared/rules";
   import type { CampaignDirectory } from "@shared/campaign";
+  import Icon from "./Icon.svelte";
   import FactionArt from "./FactionArt.svelte";
   let {
     value = $bindable<FactionId>("heliac"),
     game,
     disabled = false,
+    group = "faction",
   }: {
     value?: FactionId;
     game: CampaignDirectory;
     disabled?: boolean;
+    group?: string;
   } = $props();
   const chosen = $derived(rules.factions.find((f) => f.id === value)!);
 </script>
@@ -17,8 +20,10 @@
 <section class="faction-picker" aria-label="Choose your faction">
   <div class="hero"><FactionArt faction={value} /></div>
   <div class="faction-content">
-    <p class="overline gold">Four peoples. A shared galaxy.</p>
-    <h1>Choose your faction</h1>
+    <header>
+      <p class="overline gold">Four peoples. A shared galaxy.</p>
+      <h1>Choose your faction</h1>
+    </header>
     <fieldset {disabled}>
       <legend class="sr-only">Faction</legend>
       <div class="faction-options">
@@ -29,7 +34,7 @@
           <label class:selected={value === f.id}
             ><input
               type="radio"
-              name="faction"
+              name={group}
               value={f.id}
               bind:group={value}
               disabled={remaining === 0}
@@ -46,13 +51,16 @@
     </fieldset>
     <article>
       <h2>{chosen.name}</h2>
-      <p class="affinity">{chosen.homeClass}-class affinity</p>
+      <p class="affinity">
+        <Icon kind="star" />
+        {chosen.homeClass}-class affinity
+      </p>
       <p>
         Lead the {chosen.species} civilization. Your favored stars produce {chosen
           .affinity[chosen.homeClass as keyof typeof chosen.affinity]}×
         resources. Affinity changes production, never combat strength.
       </p>
-      <dl>
+      <dl aria-label="Production affinity by stellar class">
         {#each rules.starClasses as starClass}<div>
             <dt>{starClass} class</dt>
             <dd>
@@ -67,18 +75,17 @@
 <style>
   .faction-picker {
     position: relative;
-    min-height: 520px;
+    min-height: 560px;
+    height: 100%;
     isolation: isolate;
     overflow: hidden;
-    background: #081521;
+    background: #07131c;
   }
   .hero {
     position: absolute;
-    inset: 0 0 0 35%;
-    max-width: 1000px;
-    margin-left: auto;
+    inset: 0 0 0 25%;
     z-index: -2;
-    opacity: 0.8;
+    pointer-events: none;
   }
   .faction-picker:before {
     content: "";
@@ -86,52 +93,71 @@
     inset: 0;
     z-index: -1;
     background:
-      linear-gradient(90deg, #07131c 20%, #07131ccc 47%, #07131c11),
-      linear-gradient(0deg, #07131c 2%, transparent 65%);
+      linear-gradient(90deg, #07131cf5 5%, #07131c70 35%, transparent 65%),
+      linear-gradient(0deg, #07131c 0%, #07131cc9 25%, transparent 66%);
+    pointer-events: none;
   }
   .faction-content {
-    padding: 36px;
-    max-width: 760px;
+    display: grid;
+    grid-template-columns: minmax(220px, 0.72fr) minmax(280px, 1fr) minmax(
+        0,
+        0.7fr
+      );
+    grid-template-rows: auto 1fr;
+    gap: 24px 32px;
+    padding: 28px 36px;
+    min-height: 560px;
+    height: 100%;
+  }
+  header {
+    grid-column: 1/-1;
   }
   h1 {
     font:
-      500 48px "Cormorant Garamond",
+      500 clamp(32px, 3.6vw, 56px) "Cormorant Garamond",
       serif;
-    margin: 12px 0 24px;
+    margin: 8px 0 0;
+    letter-spacing: 0.045em;
   }
   h2 {
     font:
       500 36px "Cormorant Garamond",
       serif;
-    margin: 0 0 8px;
+    margin: 0 0 10px;
+  }
+  fieldset {
+    margin: 0;
+    min-width: 0;
+    align-self: end;
   }
   .faction-options {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 12px;
-    max-width: 560px;
   }
   label {
     position: relative;
     display: flex;
-    gap: 12px;
+    gap: 14px;
     align-items: center;
-    min-height: 78px;
-    padding: 7px;
+    min-height: 76px;
+    padding: 6px 12px 6px 6px;
     border: 1px solid #8d806b;
-    background: #081521e8;
+    border-radius: 4px;
+    background: #081521df;
     cursor: pointer;
   }
   label.selected {
-    border-color: #e6c88d;
-    box-shadow: 0 0 15px #e6c88d45;
+    border-color: #ffe1a4;
+    box-shadow:
+      0 0 12px #e6c88d65,
+      inset 0 0 12px #e6c88d22;
   }
   label:has(input:focus-visible) {
     outline: 3px solid #ffe1a4;
-    outline-offset: 4px;
+    outline-offset: 3px;
   }
   label:has(input:disabled) {
-    opacity: 0.5;
+    opacity: 0.55;
     cursor: default;
   }
   input {
@@ -144,88 +170,235 @@
     cursor: inherit;
   }
   .thumbnail {
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     flex-shrink: 0;
+    border-radius: 3px;
+    overflow: hidden;
   }
   small {
     display: block;
     color: var(--muted);
     margin-top: 4px;
-    font-size: 14px;
+    font-size: 13px;
   }
   article {
-    max-width: 450px;
-    margin-top: 28px;
+    align-self: end;
+    max-width: 470px;
+    padding: 16px 0 8px;
   }
   article p {
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1.45;
+    margin: 12px 0;
   }
   .affinity {
     color: var(--gold);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .affinity :global(span) {
+    font-size: 30px;
+    text-shadow: 0 0 14px #eeb546;
   }
   dl {
-    display: flex;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    border-top: 1px solid #b7a27c65;
+    padding-top: 14px;
+    margin: 18px 0 0;
   }
   dt {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--muted);
   }
   dd {
     margin: 6px 0 0;
+    font-size: 19px;
   }
-  @media (max-width: 700px) {
-    .hero {
-      inset: 0 0 auto;
-      height: 250px;
-      opacity: 1;
-    }
-    .faction-picker:before {
-      background: linear-gradient(0deg, #07131c 55%, transparent 95%);
+  @media (min-width: 701px) and (max-height: 800px) {
+    .faction-picker,
+    .faction-content {
+      min-height: 430px;
     }
     .faction-content {
-      padding: 190px 16px 16px;
+      padding: 18px 24px;
+      gap: 12px 24px;
     }
     h1 {
-      font-size: 28px;
-      margin: 8px 0 14px;
-    }
-    .faction-options {
-      gap: 8px;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-    label {
-      display: block;
-      padding: 5px;
-      font-size: 11px;
-    }
-    .thumbnail {
-      display: block;
-      width: 100%;
-      height: 58px;
-      margin-bottom: 6px;
-    }
-    article {
-      margin-top: 18px;
-    }
-    dl {
-      gap: 18px;
-    }
-    small {
-      font-size: 11px;
-    }
-    article p {
-      font-size: 15px;
+      font-size: 36px;
     }
     h2 {
       font-size: 28px;
     }
-    .overline {
+    label {
+      min-height: 60px;
+    }
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+    }
+    .faction-options {
+      gap: 10px;
+    }
+    article p {
+      font-size: 15px;
+      margin: 8px 0;
+    }
+    article {
+      padding: 8px 0;
+    }
+    dl {
+      margin-top: 12px;
+      padding-top: 10px;
+    }
+    dd {
+      font-size: 17px;
+    }
+  }
+  @media (min-width: 2400px) {
+    .faction-picker,
+    .faction-content {
+      min-height: 1000px;
+    }
+    .faction-content {
+      padding: 64px 96px;
+      gap: 64px;
+      grid-template-columns: minmax(420px, 0.8fr) minmax(600px, 1fr) 1fr;
+    }
+    h1 {
+      font-size: 88px;
+    }
+    h2 {
+      font-size: 64px;
+    }
+    header .overline {
+      font-size: 22px;
+    }
+    label {
+      min-height: 136px;
+      padding: 12px;
+      font-size: 28px;
+      gap: 24px;
+    }
+    .thumbnail {
+      width: 112px;
+      height: 112px;
+    }
+    small {
+      font-size: 22px;
+    }
+    .faction-options {
+      gap: 24px;
+    }
+    article {
+      max-width: 820px;
+    }
+    article p {
+      font-size: 28px;
+      line-height: 1.5;
+    }
+    dl {
+      gap: 32px;
+      padding-top: 24px;
+      margin-top: 28px;
+    }
+    dt {
+      font-size: 24px;
+    }
+    dd {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 700px) {
+    .faction-picker {
+      min-height: 580px;
+    }
+    .hero {
+      inset: 48px 0 auto;
+      height: 280px;
+    }
+    .faction-picker:before {
+      background:
+        linear-gradient(0deg, #07131c 0%, #07131c 46%, transparent 78%),
+        linear-gradient(180deg, #07131c 0%, transparent 27%);
+    }
+    .faction-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 16px;
+      min-height: 580px;
+    }
+    header .overline {
+      font-size: 10px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 6px 0 0;
+      letter-spacing: 0.02em;
+    }
+    fieldset {
+      align-self: stretch;
+      margin-top: 156px;
+    }
+    .faction-options {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+    label {
+      display: block;
+      padding: 4px;
       font-size: 11px;
+      min-height: 102px;
+    }
+    .thumbnail {
+      display: block;
+      width: 100%;
+      height: 54px;
+      margin-bottom: 6px;
+    }
+    small {
+      font-size: 10px;
+      margin-top: 3px;
+    }
+    article {
+      align-self: stretch;
+      padding: 18px 2px 2px;
+      max-width: none;
+    }
+    h2 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+    article p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 8px 0;
+    }
+    .affinity {
+      font-size: 12px;
+      gap: 8px;
+    }
+    .affinity :global(span) {
+      font-size: 22px;
+    }
+    dl {
+      gap: 12px;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+    dt {
+      font-size: 12px;
+    }
+    dd {
+      font-size: 17px;
+      margin-top: 4px;
     }
   }
 </style>

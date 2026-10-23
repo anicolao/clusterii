@@ -1,0 +1,33 @@
+# Admission composition review
+
+Reviewer19:05 / Prompt179. Base PR138b0dbfaad. Compare actual retained PR131d27e3df6 renders with approved plates01/02, README/VISION/MVP and UX_DESIGN02/03; do not compare only against obsolete baselines. Original verified artifact12531989021 remains local; provenance.json identifies the extracted original bytes. No new download.
+
+## Observed gap and bounded correction
+
+Signed-out entry actuals preserve real Play/Learn and the cinematic scene; absence of Continue is correct. The title treatment still differs from plate01, but no new regression is established by these limited samples. Identity's actual saved-state sample is a readable cosmetic editor; it is not faction selection or a mechanical species choice. Neither sampled conclusion approves all entry/identity states.
+
+The faction scene is the largest concrete gap. Phone actual has about230px of persistent website-style branding/campaign/tabs before the scene. Its chosen affinity explanation falls below the commitment rail. Desktop shows a two-column form grid and a heavily darkened giant face, rather than plate02's vertically stacked choices, dominant envoy and compact nearby affinity instrument. Large display retains ordinary-scale text. Campaign briefing and portrait navigation are genuine, but their hierarchy consumes the available scene.
+
+The correction keeps the exact real faction, quota, portrait and seat-claim semantics: compact campaign identity/disclosure, secondary Faction/Portrait/Briefing navigation, vertical desktop faction choices and four-choice phone strip, brighter existing envoy scene and compact four-class matrix. The portrait chapter renders the actual selected cosmetic portrait with existing shared CommanderPortrait; changing it remains independent of faction. No ship/planet facts, bonuses, victory policies or unavailable actions are invented. Existing provenance in docs/art/PRODUCTION_ASSETS.md covers faction-envoys.webp and portraits.webp; no assets are regenerated or altered.
+
+Keyboard Home/End is bounded to the named Campaign details region; chapter entry resets its own scroll, not selection or pending commands. The seat rail stays persistent and still waits for the genuine receipt. The existing005-campaign-access live journey retains all identity, membership, recovery and leave assertions and adds actual keyboard selection plus full affinity containment. New component coverage uses the existing reducer-derived gallery with the real shared picker, selected/disabled states and both motion preferences. Existing feedback animation lab code is unchanged; no new lab acceptance is claimed.
+
+## Execution plan / review gates
+
+Read Cluster E2E_GUIDE and actual Pantheon tests/e2e README/001-game-setup organization before editing. Reuse numbered feature005; do not duplicate or reorganize existing player journeys. Source is committed before generation. Run only the affected live navigation story and shared faction story at phone393x852, desktop1440x1000, large3840x2160 and short1280x720, with original90s test/30s step/10s assertion/capture bounds, retries0/max-failures1 and RGBA0. The live setup uses ordinary Google-emulator identity/create/join/recover/leave and existing labelled catalogue loader; no injected campaign state. Preserve first failure in a distinct output directory, diagnose before changed-source verification.
+
+Budget: roughly64 candidates, <=250MiB plus build/trace reserve; require the existing2,359,296KiB disk gate. Serial Functions compilation and owned-port checks precede Nix-only execution. Do not promote candidates before independent comparison. Real service acknowledgement is not visual acceptance; four-size/keyboard/reduced-motion, normal component motion, Linux, KMS/hosted, original raster/ingress/settlement and full release gates remain distinct. PR137's unique profile observation is prioritized when complete and is not restarted.
+
+## First source-paired family retained
+
+Source e754f840:8 journeys passed in1.7minutes. Originals/logs remain /tmp/cluster-faction-candidates-e754f840. Inspection found desktop/large initial last-radio/matrix clipping: picker100% height incorrectly included space already occupied by sticky tabs. Scrolled phone copy was visible through translucent tabs. These are actual rendered defects, not acceptable pixel differences. No promotion. The correction gives the scene the remaining flex height, uses an opaque tab surface, and compacts short desktop. Initial containment now covers all four choices and the complete matrix before helper scrolling. The previous assertion that short/phone must always overflow was tied to the old fixed-height layout; it is replaced by stronger initial reading containment while overflow:auto, bounded End reading, fixed commitment and zero document scroll checks remain.
+
+## Corrected source and review boundary
+
+Clean d2a30973 passed eight journeys/64 candidates in1.7minutes. [Source-paired originals, manifests and ordered stories](../../../../tests/e2e/005-campaign-access/stories/candidates-d2a30973/README.md) are archived with hashes. All manifests declare clean matching source and current spec hashes. No baseline promotion or strict comparison is claimed.
+
+The implementer compared the corrected phone/short reading states and desktop initial state to plate02: the envoy is now the dominant scene, choices and affinity are adjacent and fully visible above commitment, and chapter navigation no longer consumes roughly230px. A native large crop confirms readable choice labels and focus; full-image/contact-sheet review is composition-only. Existing atlas art remains unchanged. The illustration's multi-character group/ship is not reproduced by this bounded correction; no private facts or unsupported controls are invented. Shared gallery normal/reduced captures pass; feedback lab source is unchanged and has no new acceptance claim.
+
+Reviewer19:15 independently confirmed the original phone gap, not the new layout. PR137 profile observation40035060163 was still executing at the last retained19:27 metadata check; no duplicate observation or artifact download was started. Historical timing/ingress causes remain unresolved. Child dependency is PR138; new branch preview, independent64-image review, Linux/KMS/hosted and release gates remain pending.
+
+Reviewer19:25 independently sampled corrected phone/short005 and confirmed the specific clipping/hierarchy improvement only. Full64-family acceptance remains pending. Final lint and story-policy/baseline-path checks pass; current PR137 verification remains executing. [Side-by-side review aid](comparison.html) preserves original image proportions and links the approved plate.

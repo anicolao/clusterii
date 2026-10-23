@@ -1,0 +1,298 @@
+{
+  "id": "campaign-admission-navigation",
+  "title": "Review, join, recover and leave a waiting campaign",
+  "inventory": [
+    "UX-01",
+    "UX-02",
+    "UX-03",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer creates a real waiting campaign, reviews portrait/faction/briefing with a persistent commitment rail, joins and recovers that exact campaign through Play. Waiting membership never offers Continue. Seat release is acknowledged and survives reload. The catalogue seed is fixed by the emulator-only harness; no campaign state or tick is fabricated.",
+  "source": {
+    "commit": "d2a3097385ba6030bb9da53779bf109d68aa94e5",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+    "specSha256": "8b81bfed368f386c7ddc243c0c7698578d28867efa6a34a9fb365638d6a5cb4f"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "saved-developer",
+      "description": "Prepare a saved commander identity through ordinary UI and grant explicit emulator developer access. The test loader fixes catalogue entropy only.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "propose-campaign",
+      "description": "Open campaign creation and name the four-empire development galaxy.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The named proposal is ready to commit.",
+      "verifications": [
+        "Create galaxy stays in the viewport before automatic scrolling."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "002-propose-campaign-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "created-faction",
+      "description": "Create the galaxy and review its faction choice before claiming a seat.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Campaign creation is acknowledged and faction selection opens.",
+      "verifications": [
+        "The initial view contains all four choices, affinity matrix and Claim without automatic scrolling; longer reading remains bounded."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "003-created-faction-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-portrait",
+      "description": "Review portraits and choose The emissary without leaving the visible seat commitment.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The named portrait is selected.",
+      "verifications": [
+        "Claim stays visible before scrolling."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "004-choose-portrait-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-faction",
+      "description": "Return to the faction briefing while keeping the chosen portrait and commitment.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Faction details are visible again.",
+      "verifications": [
+        "Keyboard-selected Vesper and the complete four-class affinity matrix remain readable; no document scroll or seat claim occurs."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "005-review-faction-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-rules",
+      "description": "Read the campaign briefing and distinguish the shared-victory design from enabled development behavior.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The briefing explicitly says victory evaluation is not enabled.",
+      "verifications": [
+        "Claim remains visible while reviewing the briefing."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "006-review-rules-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "seat-confirmed",
+      "description": "Commit the seat and enter the authoritative waiting galaxy.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The seat is confirmed and the one-member manifest preserves the waiting phase.",
+      "verifications": [
+        "The campaign URL records its authoritative UUID."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "007-seat-confirmed-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "waiting-entry",
+      "description": "Return to entry. A waiting membership remains accessible through Play and does not offer Continue.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Play is available without an active-campaign Continue.",
+      "verifications": [
+        "The campaign directory link is retained."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "008-waiting-entry-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "identity-focus-return",
+      "description": "Open and close identity, returning keyboard focus to its entry control.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Your identity regains focus.",
+      "verifications": [
+        "The acknowledged navigation causes no uncaught application errors."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "009-identity-focus-return-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "campaign-directory",
+      "description": "Use Play to review the joined waiting campaign by name.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The joined campaign appears in the directory.",
+      "verifications": [
+        "The directory reports exactly one joined membership."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "010-campaign-directory-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-exact-campaign",
+      "description": "Select the named membership and recover its exact authoritative galaxy.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The same campaign URL, named saved seat and waiting manifest recover.",
+      "verifications": [
+        "The acknowledged navigation causes no uncaught application errors."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "011-recover-exact-campaign-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-membership",
+      "description": "Reload the waiting galaxy, recover its exact directory card through Campaigns and reopen its roster.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The recovered roster permits leaving the waiting campaign.",
+      "verifications": [
+        "Reload retains the exact campaign ID."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "012-reload-membership-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "roster-focus-return",
+      "description": "Close the roster with Escape and retain its keyboard opening control.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Roster regains keyboard focus.",
+      "verifications": [
+        "The acknowledged navigation causes no uncaught application errors."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "013-roster-focus-return-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "release-seat",
+      "description": "Reopen the roster with Enter and release the waiting seat.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Seat release is acknowledged and the member galaxy view closes.",
+      "verifications": [
+        "One logical Leave has its matching accepted receipt; membership is absent and the retained protected view denies player access, with no involuntary-access error or retry remedy.",
+        "The ordinary journey has no uncaught page errors."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "014-release-seat-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "released-membership-reload",
+      "description": "Reload entry and open Play again to confirm the released membership is absent.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Your campaigns reports zero joined seats.",
+      "verifications": [
+        "No uncaught page errors occurred."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "015-released-membership-reload-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

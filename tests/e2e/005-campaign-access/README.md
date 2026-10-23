@@ -5,6 +5,7 @@ Read [E2E_GUIDE](../../../E2E_GUIDE.md) and [fidelity status](FIDELITY.md). This
 - `navigation.spec.ts`: waiting admission/portrait/rules/identity/leave recovery; active catalogue/keyboard camera/selection; delayed saved-identity readiness.
 - `invitation.spec.ts`: independent new and returning invited commanders, original identity revisions, exact host roster membership, missing/denied recovery.
 - `encryption.spec.ts`: actual provider availability, persisted mode/envelope, admission/reload/release. Managed-key execution remains explicitly conditional on real credentials.
+- `faction-components.spec.ts`: actual shared faction picker keyboard selection, separate pending specimen, disabled quotas and normal/reduced preferences. [Corrected candidate stories](stories/candidates-d2a30973/README.md) remain pending independent review.
 
 Waiting stories assert the named saved seat, capacity, waiting status and absence of premature map/inspector. Chart coverage retains the real canvas after four ordinary authenticated admissions and acknowledged scheduler start. The shared admission helper labels fixed demo catalogue/time and actual scheduler delivery; it injects no campaign state or responses. Original total/step/assertion budgets and exact RGBA criteria remain unchanged.
 

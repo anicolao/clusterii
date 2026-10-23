@@ -9,12 +9,55 @@ import { test, expect } from "../helpers/fixtures";
 import { readableLabels } from "../../browser/story-helpers/galaxy-labels";
 import { TestStepHelper } from "../helpers/test-step-helper";
 import { login, grantDeveloper } from "../../browser/helpers";
-import type { Page } from "@playwright/test";
+import type { Page, Locator } from "@playwright/test";
 import {
   observeProfileWrites,
   profileIdentity,
   profileFacts,
 } from "../../browser/story-helpers/profile-observer";
+const contained = async (locator: Locator) => {
+  await expect
+    .poll(() =>
+      locator.evaluate((element) => {
+        const box = element.getBoundingClientRect();
+        let left = 0,
+          top = 0,
+          right = innerWidth,
+          bottom = innerHeight;
+        for (
+          let parent = element.parentElement;
+          parent;
+          parent = parent.parentElement
+        ) {
+          const style = getComputedStyle(parent),
+            bounds = parent.getBoundingClientRect();
+          if (/(auto|scroll|hidden|clip)/.test(style.overflowX)) {
+            left = Math.max(left, bounds.left + parent.clientLeft);
+            right = Math.min(
+              right,
+              bounds.left + parent.clientLeft + parent.clientWidth,
+            );
+          }
+          if (/(auto|scroll|hidden|clip)/.test(style.overflowY)) {
+            top = Math.max(top, bounds.top + parent.clientTop);
+            bottom = Math.min(
+              bottom,
+              bounds.top + parent.clientTop + parent.clientHeight,
+            );
+          }
+        }
+        return (
+          box.width > 0 &&
+          box.height > 0 &&
+          box.left >= left &&
+          box.right <= right &&
+          box.top >= top &&
+          box.bottom <= bottom
+        );
+      }),
+    )
+    .toBe(true);
+};
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
 const view = (
@@ -120,17 +163,22 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     },
     verifications: [
       {
-        spec: "Claim stays visible while faction details scroll within their panel.",
+        spec: "The initial view contains all four choices, affinity matrix and Claim without automatic scrolling; longer reading remains bounded.",
         check: async () => {
           await rail(page, "Claim your seat");
           const panel = page.locator(".campaign-body");
           expect(
             await panel.evaluate((el) => getComputedStyle(el).overflowY),
           ).toBe("auto");
-          if (["phone", "short"].includes(info.project.name))
-            expect(
-              await panel.evaluate((el) => el.scrollHeight > el.clientHeight),
-            ).toBe(true);
+          for (const radio of await page
+            .getByRole("region", { name: "Choose your faction", exact: true })
+            .getByRole("radio")
+            .all())
+            await contained(radio);
+          await contained(
+            page.getByLabel("Production affinity by stellar class"),
+          );
+          expect(await page.evaluate(() => window.scrollY)).toBe(0);
         },
       },
     ],
@@ -141,7 +189,8 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     description:
       "Review portraits and choose The emissary without leaving the visible seat commitment.",
     action: async () => {
-      await button(page, "Portrait").click();
+      await button(page, "Portrait").focus();
+      await page.keyboard.press("Enter");
       await page
         .getByRole("radio", { name: "The emissary", exact: true })
         .check();
@@ -165,7 +214,16 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     actor: "Star envoy",
     description:
       "Return to the faction briefing while keeping the chosen portrait and commitment.",
-    action: async () => button(page, "Faction").click(),
+    action: async () => {
+      await button(page, "Faction").focus();
+      await page.keyboard.press("Enter");
+      await page.getByRole("radio", { name: /Heliac Assembly/ }).focus();
+      await page.keyboard.press("ArrowDown");
+      await page
+        .getByRole("region", { name: "Campaign details", exact: true })
+        .focus();
+      await page.keyboard.press("End");
+    },
     acknowledgement: {
       spec: "Faction details are visible again.",
       check: async () =>
@@ -175,8 +233,26 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     },
     verifications: [
       {
-        spec: "Claim stays visible while choosing.",
-        check: async () => rail(page, "Claim your seat"),
+        spec: "Keyboard-selected Vesper and the complete four-class affinity matrix remain readable; no document scroll or seat claim occurs.",
+        check: async () => {
+          await rail(page, "Claim your seat");
+          await expect(
+            page.getByRole("radio", { name: /Vesper Synod/ }),
+          ).toBeChecked();
+          await contained(page.getByRole("radio", { name: /Vesper Synod/ }));
+          await contained(
+            page.getByLabel("Production affinity by stellar class"),
+          );
+          await expect(
+            page
+              .getByLabel("Production affinity by stellar class")
+              .locator("dd"),
+          ).toHaveCount(4);
+          expect(await page.evaluate(() => window.scrollY)).toBe(0);
+          await expect(
+            page.getByText("Your seat is confirmed.", { exact: true }),
+          ).toHaveCount(0);
+        },
       },
     ],
     views: [view(page, "Star envoy", [button(page, "Claim your seat")])],

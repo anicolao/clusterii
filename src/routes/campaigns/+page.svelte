@@ -65,6 +65,7 @@
   import ActionButton from "$lib/components/ActionButton.svelte";
   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
   import Feedback from "$lib/components/Feedback.svelte";
+  import CommanderPortrait from "$lib/components/CommanderPortrait.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
@@ -98,6 +99,27 @@
   let realAvailable = $state(false);
   let faction = $state<FactionId>("heliac");
   let joinTab = $state<"faction" | "portrait" | "briefing">("faction");
+  let campaignBody = $state<HTMLDivElement>();
+  async function openJoinTab(tab: typeof joinTab) {
+    joinTab = tab;
+    await tick();
+    if (campaignBody) campaignBody.scrollTop = 0;
+  }
+  function readCampaign(event: KeyboardEvent) {
+    if (
+      event.target !== event.currentTarget ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      !["Home", "End"].includes(event.key)
+    )
+      return;
+    event.preventDefault();
+    const panel = event.currentTarget as HTMLElement;
+    panel.scrollTop = event.key === "Home" ? 0 : panel.scrollHeight;
+  }
+
   let pending = $state<PendingCampaign | null>(null);
   let acceptedFleetCommand = $state<AcceptedFleetCommand | null>(null);
   let busy = $state(false);
@@ -779,7 +801,11 @@
 </script>
 
 <svelte:head><title>Campaigns — Cluster</title></svelte:head>
-<main class="campaign-shell" class:commanding={!!view}>
+<main
+  class="campaign-shell"
+  class:commanding={!!view}
+  class:admitting={!!game && !view && !creating && !loading}
+>
   {#if recoveryProblem}<RecoveryRecord
       reason={recoveryProblem.reason}
       onretry={recover}
@@ -914,15 +940,33 @@
       onretry={pending ? dispatch : remedy === "network" ? recover : undefined}
     />
   {:else}
-    <header>
-      <a href={`${base}/`}>CLUSTER</a><span class="overline"
-        >Campaign command</span
-      ><a href={`${base}/`}>Your identity</a>
-    </header>
-    <div class="development-banner">
-      Development campaign · Rules under review
-    </div>
-    <div class="campaign-body">
+    {#if game && !creating && !loading}
+      <header class="admission-heading">
+        <div>
+          <h1 bind:this={title} tabindex="-1">{game.name}</h1>
+          <p>Development campaign · Rules under review</p>
+        </div>
+        <ActionButton class="quiet" onclick={back} disabled={!!pending || busy}
+          >All campaigns</ActionButton
+        >
+      </header>
+    {:else}<header>
+        <a href={`${base}/`}>CLUSTER</a><span class="overline"
+          >Campaign command</span
+        ><a href={`${base}/`}>Your identity</a>
+      </header>
+      <div class="development-banner">
+        Development campaign · Rules under review
+      </div>{/if}
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (Named scroll region supports bounded keyboard Home/End without activating a command.) -->
+    <div
+      class="campaign-body"
+      bind:this={campaignBody}
+      role="region"
+      aria-label="Campaign details"
+      tabindex={game && !creating ? 0 : undefined}
+      onkeydown={readCampaign}
+    >
       {#if access !== "developer"}
         <section class="briefing">
           <h1 bind:this={title} tabindex="-1">
@@ -948,24 +992,25 @@
           >
         </section>
       {:else}
-        <div class="page-heading">
-          <h1 bind:this={title} tabindex="-1">
-            {game?.name ??
-              (creating ? "Assemble a galaxy" : "Your next alliance")}
-          </h1>
-          {#if selected || creating}<ActionButton
-              class="quiet"
-              onclick={back}
-              disabled={!!pending || busy}>All campaigns</ActionButton
-            >{:else}<ActionButton
-              class="primary"
-              onclick={() => {
-                creating = true;
-                if (!busy && !pending) message = "";
-                void tick().then(() => title?.focus());
-              }}>Create campaign</ActionButton
-            >{/if}
-        </div>
+        {#if !game || creating || loading}<div class="page-heading">
+            <h1 bind:this={title} tabindex="-1">
+              {game?.name ??
+                (creating ? "Assemble a galaxy" : "Your next alliance")}
+            </h1>
+            {#if selected || creating}<ActionButton
+                class="quiet"
+                onclick={back}
+                disabled={!!pending || busy}>All campaigns</ActionButton
+              >{:else}<ActionButton
+                class="primary"
+                onclick={() => {
+                  creating = true;
+                  if (!busy && !pending) message = "";
+                  void tick().then(() => title?.focus());
+                }}>Create campaign</ActionButton
+              >{/if}
+          </div>
+        {/if}
         {#if !game || loading || creating}<div class="directory-feedback">
             <Feedback
               {message}
@@ -1064,7 +1109,7 @@
               {#each ["faction", "portrait", "briefing"] as tab}<ActionButton
                   class="quiet"
                   aria-pressed={joinTab === tab}
-                  onclick={() => (joinTab = tab as typeof joinTab)}
+                  onclick={() => openJoinTab(tab as typeof joinTab)}
                   >{tab === "faction"
                     ? "Faction"
                     : tab === "portrait"
@@ -1080,15 +1125,21 @@
             {:else if joinTab === "portrait"}<section
                 class="roster portrait-task"
               >
-                <h2>Your face in this galaxy</h2>
-                <p>
-                  Portrait changes appearance. Your faction determines affinity.
-                </p>
-                <div class="portrait-choice">
-                  <PortraitPicker
-                    bind:value={portrait}
-                    disabled={busy || !!pending}
-                  />
+                <div class="portrait-hero">
+                  <CommanderPortrait {portrait} />
+                </div>
+                <div class="portrait-content">
+                  <h2>Your face in this galaxy</h2>
+                  <p>
+                    Portrait changes appearance. Your faction determines
+                    affinity.
+                  </p>
+                  <div class="portrait-choice">
+                    <PortraitPicker
+                      bind:value={portrait}
+                      disabled={busy || !!pending}
+                    />
+                  </div>
                 </div>
               </section>
             {:else}<section class="roster">
@@ -1215,6 +1266,151 @@
 </main>
 
 <style>
+  .admission-heading {
+    padding: 10px 24px;
+    background: #07131c;
+  }
+  .admission-heading h1 {
+    font-size: 25px;
+  }
+  .admission-heading p {
+    font-size: 12px;
+    color: var(--gold);
+    margin: 5px 0 0;
+    line-height: 1.2;
+  }
+  .admitting .campaign-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .admitting .join-tabs {
+    flex-shrink: 0;
+  }
+  .admitting .campaign-body :global(.faction-picker) {
+    flex: 1;
+    height: auto;
+  }
+  .admitting .portrait-task {
+    flex: 1;
+    min-height: min-content;
+  }
+  .admitting .page-heading {
+    display: none;
+  }
+  .admitting .join-tabs {
+    background: #07131c;
+    gap: 18px;
+    justify-content: center;
+  }
+  .admitting .join-tabs :global(button) {
+    flex: 0 1 240px;
+  }
+  .portrait-task {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(300px, 1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 100%;
+    background:
+      radial-gradient(ellipse at 25% 30%, #75603b50, transparent 65%), #07131c;
+  }
+  .portrait-hero {
+    max-width: 560px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #b79c64;
+    box-shadow: 0 0 40px #b9903d30;
+  }
+  .portrait-content {
+    max-width: 680px;
+  }
+  @media (min-width: 2400px) {
+    .admission-heading {
+      padding: 24px 64px;
+    }
+    .admission-heading h1 {
+      font-size: 44px;
+    }
+    .admission-heading p {
+      font-size: 20px;
+    }
+    .admitting .join-tabs :global(button),
+    .admission-heading :global(button) {
+      font-size: 24px;
+      min-height: 72px;
+    }
+    .admitting .join-tabs :global(button) {
+      flex-basis: 360px;
+    }
+    .admitting .commit-rail {
+      padding: 24px 64px;
+      gap: 24px;
+      font-size: 24px;
+    }
+    .admitting .commit-rail small {
+      font-size: 20px;
+    }
+    .admitting .commit-rail :global(button) {
+      font-size: 28px;
+      min-width: 420px;
+      padding: 24px;
+    }
+    .portrait-task {
+      padding: 64px;
+      gap: 80px;
+    }
+    .portrait-hero {
+      max-width: 950px;
+    }
+    .portrait-content {
+      max-width: 1000px;
+      font-size: 28px;
+    }
+    .portrait-content h2 {
+      font-size: 56px;
+    }
+  }
+  @media (max-width: 700px) {
+    .admission-heading {
+      padding: 8px 16px;
+      gap: 12px;
+    }
+    .admission-heading h1 {
+      font-size: 21px;
+    }
+    .admission-heading p {
+      font-size: 10px;
+    }
+    .admission-heading :global(button) {
+      font-size: 13px;
+      padding: 8px;
+      flex-shrink: 0;
+      max-width: 92px;
+    }
+    .admitting .join-tabs {
+      gap: 0;
+      padding: 0 10px;
+    }
+    .admitting .join-tabs :global(button) {
+      font-size: 13px;
+      min-height: 48px;
+      padding: 8px;
+    }
+    .portrait-task {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 24px 20px;
+    }
+    .portrait-hero {
+      width: 190px;
+      flex-shrink: 0;
+    }
+    .portrait-content h2 {
+      font-size: 28px;
+      margin: 0;
+    }
+  }
   .directory-feedback {
     width: min(720px, calc(100% - 24px));
     margin: 0 auto;
