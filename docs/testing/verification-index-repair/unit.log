@@ -1,0 +1,17 @@
+✔ index acquisition preserves every mode/path beyond the default child buffer and matches the complete repository (179.950792ms)
+✔ only the explicit report allowlist can change without changing verification inputs (0.35225ms)
+✔ reuse requires exact scope, provenance and an earlier source; outcomes never turn failure or pending into success (0.190625ms)
+✔ workflow check names, full execution branches and evidence retention remain present (0.551917ms)
+✔ prepare executes normal checks for absent, invalid, expired, unavailable or unrelated evidence (0.668417ms)
+✔ prepare and wait pin a real executor; pending becomes its failure or retained success, never a manufactured pass (0.729875ms)
+✔ chained plans resolve the original checkout and reject a substituted unrelated executor (0.162708ms)
+✔ wait falls back to real tests on missing evidence/API, but preserves a pending or failed source gate (0.3135ms)
+✔ plan archive reader checks size/hash, expiry and bounded JSON with actual ZIP fixtures (134.713041ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 367.709958

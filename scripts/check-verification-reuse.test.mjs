@@ -1,6 +1,14 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import {
+  readFileSync,
+  mkdtempSync,
+  rmSync,
+  openSync,
+  closeSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import {
@@ -12,6 +20,7 @@ import {
   waitVerification,
   reuseSummary,
   readPlanArtifact,
+  readVerificationIndex,
 } from "./verification-reuse.mjs";
 const sha = "a".repeat(40),
   other = "b".repeat(40);
@@ -19,6 +28,72 @@ const entry = (path, hash = sha, mode = "100644") =>
   `${mode} ${hash} 0\t${path}\0`;
 const hash = (index, key = "stories-verify", platform = "Linux/ARM64") =>
   inputDigest(index, key, platform);
+test("index acquisition preserves every mode/path beyond the default child buffer and matches the complete repository", () => {
+  const dir = mkdtempSync(join(tmpdir(), "cluster-index-acquisition-"));
+  try {
+    execFileSync("git", ["init", "-q", dir]);
+    const blob = execFileSync("git", ["hash-object", "-w", "--stdin"], {
+      cwd: dir,
+      input: "fixture\n",
+    })
+      .toString()
+      .trim();
+    const paths = Array.from(
+      { length: 16000 },
+      (_, i) =>
+        `evidence/${String(i).padStart(5, "0")}-${"retained-source".repeat(5)}.json`,
+    );
+    const records = paths
+      .map((path, i) =>
+        entry(path, blob, i === paths.length - 1 ? "120000" : "100644"),
+      )
+      .join("");
+    execFileSync("git", ["update-index", "-z", "--index-info"], {
+      cwd: dir,
+      input: records,
+    });
+    assert.ok(Buffer.byteLength(records) > 1024 * 1024);
+    assert.throws(
+      () => execFileSync("git", ["ls-files", "--stage", "-z"], { cwd: dir }),
+      (error) => error.code === "ENOBUFS",
+    );
+    const actual = readVerificationIndex(dir);
+    assert.equal(
+      actual,
+      records,
+      "full synthetic Git child output, including final symlink mode",
+    );
+    assert.equal(hash(actual), hash(records));
+    assert.notEqual(
+      hash(actual),
+      hash(records.replace(paths.at(-1), "different-final-path")),
+    );
+
+    // Independent stdout-to-file acquisition has no in-memory child buffer.
+    const file = join(dir, "repository-index"),
+      fd = openSync(file, "w");
+    try {
+      execFileSync("git", ["ls-files", "--stage", "-z"], {
+        stdio: ["ignore", fd, "pipe"],
+      });
+    } finally {
+      closeSync(fd);
+    }
+    const repository = readVerificationIndex();
+    assert.ok(
+      Buffer.byteLength(repository) > 1024 * 1024,
+      "exercise the current evidence-rich repository",
+    );
+    assert.equal(
+      repository,
+      readFileSync(file, "utf8"),
+      "no omitted paths/modes or truncated tail",
+    );
+    assert.equal(hash(repository), hash(readFileSync(file, "utf8")));
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
 test("only the explicit report allowlist can change without changing verification inputs", () => {
   const code = entry("src/routes/+page.svelte");
   for (const path of reportOnly)

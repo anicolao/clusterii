@@ -1,0 +1,49 @@
+[
+    {
+        "Id": "sha256:7e11780237209f8747e8023d2ba777723d9aba451a548bbcc0563511e28a2c9a",
+        "RepoTags": [
+            "cluster-renderer:playwright-1.61.1"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-06-23T20:11:13.829773644Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "PLAYWRIGHT_BROWSERS_PATH=/ms-playwright"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "Labels": {
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 2727228999,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/home/runner/work/_temp/cluster-nix-engine.Nkhmhi/data/overlay2/67ace78e922cae0c2e30b6535a89e8b5d8a2087f2a438f371d5ea2c2b14270d1/diff:/home/runner/work/_temp/cluster-nix-engine.Nkhmhi/data/overlay2/5d3545a2b371e4e97d71ad9b5b1af3e08214a97884f34e9bef833e60c944436c/diff:/home/runner/work/_temp/cluster-nix-engine.Nkhmhi/data/overlay2/f27432b3fc2e4a5e980cbf41bbd3a65ef5c3616fe32efd4dbbc888418ab21545/diff",
+                "MergedDir": "/home/runner/work/_temp/cluster-nix-engine.Nkhmhi/data/overlay2/52022bfa9a4037945e846d73344b3cb8c89d9af1fa22dde33d8ffb977dce0bda/merged",
+                "UpperDir": "/home/runner/work/_temp/cluster-nix-engine.Nkhmhi/data/overlay2/52022bfa9a4037945e846d73344b3cb8c89d9af1fa22dde33d8ffb977dce0bda/diff",
+                "WorkDir": "/home/runner/work/_temp/cluster-nix-engine.Nkhmhi/data/overlay2/52022bfa9a4037945e846d73344b3cb8c89d9af1fa22dde33d8ffb977dce0bda/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:2d8834226313616cc27c8a08ca876096cf83f18090b5fa07fd65dba017ec9e5e",
+                "sha256:815041b71a6977d29f75a29975a0f478ca3281be35b581b7a3b75db6ba452540",
+                "sha256:08ce1a0d4d8e716e31d40ce78768e01eabc6bcd2f470f6542dffd7ff7c295791",
+                "sha256:1506c6aef772da7251677f3d9687ecde7fedfd106f257eff57bc824d54051fd5"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

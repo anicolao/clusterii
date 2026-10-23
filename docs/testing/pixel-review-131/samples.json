@@ -1,0 +1,132 @@
+[
+  {
+    "source": "test-results/stories/browser-identity.story-Save-and-recover-a-commander-identity-phone/commander-identity/phone/linux-arm64/001-arrive-1-toile-expected.png",
+    "target": "samples/commander-identity/expected.png",
+    "sha256": "f4cfab65b335216f7557a409915cb60f01e456a72cd059de2da434a00fb5baaa"
+  },
+  {
+    "source": "test-results/stories/browser-identity.story-Save-and-recover-a-commander-identity-phone/commander-identity/phone/linux-arm64/001-arrive-1-toile-actual.png",
+    "target": "samples/commander-identity/actual.png",
+    "sha256": "e1c6347c3684c3dda7bfe58107d34bd0168b27e0e0aa917fd2aff68fe6f3b3c2"
+  },
+  {
+    "source": "test-results/stories/browser-identity.story-Save-and-recover-a-commander-identity-phone/commander-identity/phone/linux-arm64/001-arrive-1-toile-diff.png",
+    "target": "samples/commander-identity/diff.png",
+    "sha256": "51dad03a505dcb60f524e965ffe5a1254076e5b3d9432b6db18e63f71015c7ff"
+  },
+  {
+    "source": "test-results/stories/browser-campaign-start.sto-4e484-their-named-active-campaign-phone/campaign-scheduled-start/phone/linux-arm64/005-join-1-1-1-dawn-envoy-1-expected.png",
+    "target": "samples/campaign-scheduled-start/expected.png",
+    "sha256": "7aaebdf93f500805ebdf17acde167aa0ffdf8a777cad5782f93476f560d014af"
+  },
+  {
+    "source": "test-results/stories/browser-campaign-start.sto-4e484-their-named-active-campaign-phone/campaign-scheduled-start/phone/linux-arm64/005-join-1-1-1-dawn-envoy-1-actual.png",
+    "target": "samples/campaign-scheduled-start/actual.png",
+    "sha256": "13978e7f2a1eea122fda3a45faebefcf841273ef8dc0083ed48ce321695d6c3e"
+  },
+  {
+    "source": "test-results/stories/browser-campaign-start.sto-4e484-their-named-active-campaign-phone/campaign-scheduled-start/phone/linux-arm64/005-join-1-1-1-dawn-envoy-1-diff.png",
+    "target": "samples/campaign-scheduled-start/diff.png",
+    "sha256": "91fde37be3988a83adeaca1f37f5b7b5ed66582d0c6e7399573bf4003581a24c"
+  },
+  {
+    "source": "test-results/stories/browser-selected-history.s-81d06-mmander-and-survives-reload-phone/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-expected.png",
+    "target": "samples/selected-history-consent/expected.png",
+    "sha256": "8d1a6a3b59a926d41abfbdf622e3c690ec63c782430b07dbd00ae969fab119c9"
+  },
+  {
+    "source": "test-results/stories/browser-selected-history.s-81d06-mmander-and-survives-reload-phone/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-actual.png",
+    "target": "samples/selected-history-consent/actual.png",
+    "sha256": "771356a943e13e5b600698ff439bb3a0bbe07e2a61a454d811ce29f32be89466"
+  },
+  {
+    "source": "test-results/stories/browser-selected-history.s-81d06-mmander-and-survives-reload-phone/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-diff.png",
+    "target": "samples/selected-history-consent/diff.png",
+    "sha256": "11ee965b245bca58119247fdd009745151b9a35b219542db07838c2b6c9b5023"
+  },
+  {
+    "source": "test-results/stories/browser-feedback-lab.story-2bc57-k-without-changing-outcomes-phone/feedback-motion-lab/phone/linux-arm64/002-pending-1-developer-playback-controls-expected.png",
+    "target": "samples/feedback-motion-lab/expected.png",
+    "sha256": "1afac92f501d89a298ddc45e5b39b1a8e38e2625283228822ecbd845b4ceac87"
+  },
+  {
+    "source": "test-results/stories/browser-feedback-lab.story-2bc57-k-without-changing-outcomes-phone/feedback-motion-lab/phone/linux-arm64/002-pending-1-developer-playback-controls-actual.png",
+    "target": "samples/feedback-motion-lab/actual.png",
+    "sha256": "a84c16deaa12e87ab1790ef24c8c871a28614bee7c3d0451fbad0090625446bd"
+  },
+  {
+    "source": "test-results/stories/browser-feedback-lab.story-2bc57-k-without-changing-outcomes-phone/feedback-motion-lab/phone/linux-arm64/002-pending-1-developer-playback-controls-diff.png",
+    "target": "samples/feedback-motion-lab/diff.png",
+    "sha256": "35a31a90652ba133d5897599b07b3199db58445f2f5fc2de00e72ae6065eedb8"
+  },
+  {
+    "source": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope-expected.png",
+    "target": "samples/identity-component-gallery/expected.png",
+    "sha256": "4d5e423f6ae1dcd3c8a0752ce98a0ad915baf5aa68ff1f7fd408818ddc14f60b"
+  },
+  {
+    "source": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope-actual.png",
+    "target": "samples/identity-component-gallery/actual.png",
+    "sha256": "84f5d58df75a182af8c6b32fea7b3cc7ffd7f9587e38d98336eb8af342ca6a2d"
+  },
+  {
+    "source": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope-diff.png",
+    "target": "samples/identity-component-gallery/diff.png",
+    "sha256": "a3f09614b3c916b696948a8318532d02f57b0dda68e70b4bfd925d19681597c0"
+  },
+  {
+    "source": "test-results/stories/browser-research-lab.story-8bb95--scheduling-and-application-phone/research-selection-lab/phone/linux-arm64/002-pending-1-developer-standard-research-selection-expected.png",
+    "target": "samples/research-selection-lab/expected.png",
+    "sha256": "9bdec6e35b5fc61b6a141483419bbe9ae994764e19af32611c8731b8ce3d257f"
+  },
+  {
+    "source": "test-results/stories/browser-research-lab.story-8bb95--scheduling-and-application-phone/research-selection-lab/phone/linux-arm64/002-pending-1-developer-standard-research-selection-actual.png",
+    "target": "samples/research-selection-lab/actual.png",
+    "sha256": "88ae4a56aae4e25f999ab1a18c77e606bbb340ea420ea453d3ff75aa8cf092a1"
+  },
+  {
+    "source": "test-results/stories/browser-research-lab.story-8bb95--scheduling-and-application-phone/research-selection-lab/phone/linux-arm64/002-pending-1-developer-standard-research-selection-diff.png",
+    "target": "samples/research-selection-lab/diff.png",
+    "sha256": "5bed87ff51ddd2c7a3c0db536b64ac0679949035ac68160df1a352f90d47123d"
+  },
+  {
+    "source": "/tmp/cluster131-artifact-12531989021/pixels/test-results/stories/learn-and-return/phone/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/phone-actual.png",
+    "sha256": "e1c6347c3684c3dda7bfe58107d34bd0168b27e0e0aa917fd2aff68fe6f3b3c2"
+  },
+  {
+    "source": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/001-entry/screenshots/learn-and-return/phone/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/phone-expected.png",
+    "sha256": "f4cfab65b335216f7557a409915cb60f01e456a72cd059de2da434a00fb5baaa"
+  },
+  {
+    "source": "/tmp/cluster131-artifact-12531989021/pixels/test-results/stories/learn-and-return/desktop/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/desktop-actual.png",
+    "sha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be"
+  },
+  {
+    "source": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/001-entry/screenshots/learn-and-return/desktop/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/desktop-expected.png",
+    "sha256": "5310670bb36f7e86a4c5b642db9c9b945ea1d661aeecbe5ba05f574adac06759"
+  },
+  {
+    "source": "/tmp/cluster131-artifact-12531989021/pixels/test-results/stories/learn-and-return/large/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/large-actual.png",
+    "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+  },
+  {
+    "source": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/001-entry/screenshots/learn-and-return/large/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/large-expected.png",
+    "sha256": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca"
+  },
+  {
+    "source": "/tmp/cluster131-artifact-12531989021/pixels/test-results/stories/learn-and-return/short/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/short-actual.png",
+    "sha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7"
+  },
+  {
+    "source": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/001-entry/screenshots/learn-and-return/short/linux-arm64/001-enter-1-visitor.png",
+    "target": "entry/short-expected.png",
+    "sha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37"
+  }
+]

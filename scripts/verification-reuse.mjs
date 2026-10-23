@@ -21,6 +21,14 @@ export const reportOnly = new Set([
   "docs/design/DELIVERY_REVIEW.md",
   "docs/design/STORY_ALIAS_BOOTSTRAP.md",
 ]);
+// Evidence-rich repositories exceed Node's default 1MiB child stdout buffer.
+// Read the whole index, or fail closed; never fingerprint a truncated prefix.
+export function readVerificationIndex(cwd = process.cwd()) {
+  return execFileSync("git", ["ls-files", "--stage", "-z"], {
+    cwd,
+    maxBuffer: 64 * 1024 * 1024,
+  }).toString();
+}
 export function inputDigest(index, key, platform) {
   const entries = index
     .split("\0")
@@ -301,7 +309,7 @@ async function prepare(key, jobName) {
     headRepositoryId: event.pull_request?.head.repo?.id ?? null,
     currentHead: event.pull_request?.head.sha ?? process.env.GITHUB_SHA,
     digest: inputDigest(
-      execFileSync("git", ["ls-files", "--stage", "-z"]).toString(),
+      readVerificationIndex(),
       key,
       `${process.env.RUNNER_OS}/${process.env.RUNNER_ARCH}`,
     ),
