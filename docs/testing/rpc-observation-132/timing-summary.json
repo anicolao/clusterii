@@ -1,0 +1,498 @@
+[
+  {
+    "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-desktop/settlement-timing.jsonl",
+    "transactions": 49,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 612.8919080000051,
+      "callbackMs": 43.74402999999438,
+      "commitRequestMs": 564.9166120000009,
+      "rpcMs": 564.7969869999943,
+      "rpcToServerMarkerMs": 4.261962890625,
+      "serverMarkerToCallbackMs": 561.1680807499943
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 48471.597629,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 50,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 70.75511199999164,
+      "callbackMs": 64.97581999999966,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 569.7461279999989,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 3.77001953125,
+      "serverMarkerToCallbackMs": 565.9761084687489,
+      "commitCalls": 1,
+      "commitMs": 570.0925239999997,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 569.8649509999959,
+      "commitRequestFailures": 0,
+      "totalMs": 636.1928209999969
+    }
+  },
+  {
+    "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-large/settlement-timing.jsonl",
+    "transactions": 52,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 575.0057419999994,
+      "callbackMs": 39.72450799999933,
+      "commitRequestMs": 533.2896695000018,
+      "rpcMs": 533.1362180000015,
+      "rpcToServerMarkerMs": 3.702392578125,
+      "serverMarkerToCallbackMs": 529.3347611640656
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 52170.918869,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 53,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 23.515903999999864,
+      "callbackMs": 45.295326999999816,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 599.9407310000024,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 4.429931640625,
+      "serverMarkerToCallbackMs": 595.5107993593774,
+      "commitCalls": 1,
+      "commitMs": 600.2123160000046,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 600.0502969999943,
+      "commitRequestFailures": 0,
+      "totalMs": 645.7698120000059
+    }
+  },
+  {
+    "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-phone/settlement-timing.jsonl",
+    "transactions": 51,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 577.3958759999987,
+      "callbackMs": 41.81441800000175,
+      "commitRequestMs": 534.1095010000063,
+      "rpcMs": 534.0059099999999,
+      "rpcToServerMarkerMs": 3.93310546875,
+      "serverMarkerToCallbackMs": 530.3129227187528
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 46499.472011,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 52,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 25.22278199998982,
+      "callbackMs": 40.56239700000151,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 553.5601049999968,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 3.7548828125,
+      "serverMarkerToCallbackMs": 549.8052221874968,
+      "commitCalls": 1,
+      "commitMs": 553.9216900000029,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 553.7056130000055,
+      "commitRequestFailures": 0,
+      "totalMs": 594.947408
+    }
+  },
+  {
+    "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-short/settlement-timing.jsonl",
+    "transactions": 53,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 570.3078959999984,
+      "callbackMs": 39.70296100000269,
+      "commitRequestMs": 529.0897379999951,
+      "rpcMs": 528.9901590000009,
+      "rpcToServerMarkerMs": 3.830078125,
+      "serverMarkerToCallbackMs": 525.0906448281239
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 47661.505815,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 54,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 25.44373800000176,
+      "callbackMs": 41.98585599999933,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 543.3720659999963,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 4.197021484375,
+      "serverMarkerToCallbackMs": 539.1750445156213,
+      "commitCalls": 1,
+      "commitMs": 543.6599070000011,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 543.4807169999985,
+      "commitRequestFailures": 0,
+      "totalMs": 587.4730029999992
+    }
+  },
+  {
+    "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-desktop/settlement-timing.jsonl",
+    "transactions": 47,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 636.4593049999967,
+      "callbackMs": 42.32646899999963,
+      "commitRequestMs": 592.8028360000026,
+      "rpcMs": 592.6709379999957,
+      "rpcToServerMarkerMs": 3.968017578125,
+      "serverMarkerToCallbackMs": 586.8964391562513
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 48293.187759,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 48,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 22.999412000004668,
+      "callbackMs": 41.60043699999369,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 602.0965199999991,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 3.595947265625,
+      "serverMarkerToCallbackMs": 598.5005727343741,
+      "commitCalls": 1,
+      "commitMs": 602.4035939999958,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 602.2171480000034,
+      "commitRequestFailures": 0,
+      "totalMs": 645.3708909999987
+    }
+  },
+  {
+    "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-large/settlement-timing.jsonl",
+    "transactions": 49,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 609.00504,
+      "callbackMs": 39.97082299999602,
+      "commitRequestMs": 569.103317000001,
+      "rpcMs": 568.9348500000015,
+      "rpcToServerMarkerMs": 3.5810546875,
+      "serverMarkerToCallbackMs": 565.3137562500015
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 52343.784299,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 50,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 21.440964000008535,
+      "callbackMs": 38.93611300000339,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 589.6677749999944,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 4.845947265625,
+      "serverMarkerToCallbackMs": 584.8218277343694,
+      "commitCalls": 1,
+      "commitMs": 589.9534590000039,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 589.7923500000034,
+      "commitRequestFailures": 0,
+      "totalMs": 630.2094599999982
+    }
+  },
+  {
+    "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-phone/settlement-timing.jsonl",
+    "transactions": 50,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 602.4103505000003,
+      "callbackMs": 39.96680749999905,
+      "commitRequestMs": 560.2107454999987,
+      "rpcMs": 560.1161854999991,
+      "rpcToServerMarkerMs": 3.635009765625,
+      "serverMarkerToCallbackMs": 556.4423618203127
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 47141.033486,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 51,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 22.231282000000647,
+      "callbackMs": 40.433100000002014,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 567.4785660000052,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 3.153076171875,
+      "serverMarkerToCallbackMs": 564.3254898281302,
+      "commitCalls": 1,
+      "commitMs": 567.7635349999982,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 567.6227300000028,
+      "commitRequestFailures": 0,
+      "totalMs": 609.2591180000018
+    }
+  },
+  {
+    "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-short/settlement-timing.jsonl",
+    "transactions": 50,
+    "coverage": {
+      "attempts": [
+        1
+      ],
+      "commitRequestCalls": [
+        1
+      ],
+      "rpcCalls": [
+        1
+      ],
+      "rpcCallbacks": [
+        1
+      ],
+      "rpcFailures": [
+        0
+      ],
+      "serverMarkerSamples": [
+        1
+      ],
+      "serverMarkerInvalid": [
+        0
+      ]
+    },
+    "medians": {
+      "totalMs": 599.6105664999995,
+      "callbackMs": 39.74028350000117,
+      "commitRequestMs": 556.0998409999993,
+      "rpcMs": 555.9926400000004,
+      "rpcToServerMarkerMs": 3.577392578125,
+      "serverMarkerToCallbackMs": 552.3261360937504
+    },
+    "eventLoops": [],
+    "last": {
+      "at": 47128.576973,
+      "event": "transaction",
+      "span": 4,
+      "txNumber": 51,
+      "attempts": 1,
+      "reads": 5,
+      "writes": 17,
+      "readMs": 22.282257999999274,
+      "callbackMs": 40.63769399999728,
+      "rpcCalls": 1,
+      "rpcCallbacks": 1,
+      "rpcFailures": 0,
+      "rpcMs": 718.6123700000026,
+      "serverMarkerSamples": 1,
+      "serverMarkerInvalid": 0,
+      "rpcToServerMarkerMs": 3.052978515625,
+      "serverMarkerToCallbackMs": 715.5593914843776,
+      "commitCalls": 1,
+      "commitMs": 718.953472000001,
+      "commitFailures": 0,
+      "commitRequestCalls": 1,
+      "commitRequestMs": 718.7783460000064,
+      "commitRequestFailures": 0,
+      "totalMs": 760.5312180000037
+    }
+  }
+]
