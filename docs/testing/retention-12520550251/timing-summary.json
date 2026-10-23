@@ -1,0 +1,302 @@
+[
+  {
+    "viewport": "desktop",
+    "transactions": 52,
+    "attempts": [
+      1
+    ],
+    "spans": [
+      {
+        "at": 16894.441218,
+        "event": "start",
+        "label": "canonical",
+        "span": 1
+      },
+      {
+        "at": 16908.512124,
+        "event": "complete",
+        "label": "canonical",
+        "span": 1,
+        "elapsedMs": 14.131477999999333,
+        "transactions": 0
+      },
+      {
+        "at": 16908.650164,
+        "event": "start",
+        "label": "clock",
+        "span": 2
+      },
+      {
+        "at": 16912.317119,
+        "event": "complete",
+        "label": "clock",
+        "span": 2,
+        "elapsedMs": 3.6694429999988643,
+        "transactions": 0
+      },
+      {
+        "at": 16912.374187,
+        "event": "start",
+        "label": "clock",
+        "span": 3
+      },
+      {
+        "at": 16914.819027,
+        "event": "complete",
+        "label": "clock",
+        "span": 3,
+        "elapsedMs": 2.4457909999982803,
+        "transactions": 0
+      },
+      {
+        "at": 16914.875983,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "stats": {
+      "readMs": {
+        "median": 22.565224500001932,
+        "sum": 1271.6104040000064,
+        "max": 70.76948500000435
+      },
+      "callbackMs": {
+        "median": 41.74353700000029,
+        "sum": 2244.520916999976,
+        "max": 73.80858300000546
+      },
+      "totalMs": {
+        "median": 594.9421760000005,
+        "sum": 30848.08429600004,
+        "max": 675.0318470000057
+      }
+    },
+    "outsideCallbackSumMs": 28603.563379000065
+  },
+  {
+    "viewport": "large",
+    "transactions": 53,
+    "attempts": [
+      1
+    ],
+    "spans": [
+      {
+        "at": 21297.9979,
+        "event": "start",
+        "label": "canonical",
+        "span": 1
+      },
+      {
+        "at": 21306.913481,
+        "event": "complete",
+        "label": "canonical",
+        "span": 1,
+        "elapsedMs": 8.97316100000171,
+        "transactions": 0
+      },
+      {
+        "at": 21307.03865,
+        "event": "start",
+        "label": "clock",
+        "span": 2
+      },
+      {
+        "at": 21314.497384,
+        "event": "complete",
+        "label": "clock",
+        "span": 2,
+        "elapsedMs": 7.46153399999821,
+        "transactions": 0
+      },
+      {
+        "at": 21314.600513,
+        "event": "start",
+        "label": "clock",
+        "span": 3
+      },
+      {
+        "at": 21316.925019,
+        "event": "complete",
+        "label": "clock",
+        "span": 3,
+        "elapsedMs": 2.326481000000058,
+        "transactions": 0
+      },
+      {
+        "at": 21316.975432,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "stats": {
+      "readMs": {
+        "median": 21.21455700000297,
+        "sum": 1173.972973000069,
+        "max": 34.765566000001854
+      },
+      "callbackMs": {
+        "median": 40.31036300000051,
+        "sum": 2188.749391999987,
+        "max": 100.85454700000264
+      },
+      "totalMs": {
+        "median": 578.0744389999963,
+        "sum": 30670.126649000016,
+        "max": 678.5693670000037
+      }
+    },
+    "outsideCallbackSumMs": 28481.37725700003
+  },
+  {
+    "viewport": "phone",
+    "transactions": 44,
+    "attempts": [
+      1
+    ],
+    "spans": [
+      {
+        "at": 17654.177703,
+        "event": "start",
+        "label": "canonical",
+        "span": 1
+      },
+      {
+        "at": 17667.01062,
+        "event": "complete",
+        "label": "canonical",
+        "span": 1,
+        "elapsedMs": 12.89176900000166,
+        "transactions": 0
+      },
+      {
+        "at": 17667.346944,
+        "event": "start",
+        "label": "clock",
+        "span": 2
+      },
+      {
+        "at": 17671.032336,
+        "event": "complete",
+        "label": "clock",
+        "span": 2,
+        "elapsedMs": 3.689903000002232,
+        "transactions": 0
+      },
+      {
+        "at": 17671.106547,
+        "event": "start",
+        "label": "clock",
+        "span": 3
+      },
+      {
+        "at": 17675.555597,
+        "event": "complete",
+        "label": "clock",
+        "span": 3,
+        "elapsedMs": 4.448410000000877,
+        "transactions": 0
+      },
+      {
+        "at": 17675.625489,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "stats": {
+      "readMs": {
+        "median": 29.859786000000895,
+        "sum": 1364.5520210000504,
+        "max": 53.42204399999173
+      },
+      "callbackMs": {
+        "median": 46.928726500000266,
+        "sum": 2139.358922999996,
+        "max": 81.71099200000026
+      },
+      "totalMs": {
+        "median": 697.0195994999995,
+        "sum": 30420.748304999997,
+        "max": 807.0020719999993
+      }
+    },
+    "outsideCallbackSumMs": 28281.389382
+  },
+  {
+    "viewport": "short",
+    "transactions": 55,
+    "attempts": [
+      1
+    ],
+    "spans": [
+      {
+        "at": 16303.187459,
+        "event": "start",
+        "label": "canonical",
+        "span": 1
+      },
+      {
+        "at": 16313.206885,
+        "event": "complete",
+        "label": "canonical",
+        "span": 1,
+        "elapsedMs": 10.061718999999357,
+        "transactions": 0
+      },
+      {
+        "at": 16313.325213,
+        "event": "start",
+        "label": "clock",
+        "span": 2
+      },
+      {
+        "at": 16318.308796,
+        "event": "complete",
+        "label": "clock",
+        "span": 2,
+        "elapsedMs": 4.985693999999057,
+        "transactions": 0
+      },
+      {
+        "at": 16318.369264,
+        "event": "start",
+        "label": "clock",
+        "span": 3
+      },
+      {
+        "at": 16320.944886,
+        "event": "complete",
+        "label": "clock",
+        "span": 3,
+        "elapsedMs": 2.574134000000413,
+        "transactions": 0
+      },
+      {
+        "at": 16321.000667,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "stats": {
+      "readMs": {
+        "median": 20.918044000001828,
+        "sum": 1152.699417000007,
+        "max": 26.59028699999908
+      },
+      "callbackMs": {
+        "median": 39.87203900000168,
+        "sum": 2155.7675340000314,
+        "max": 48.92473299999983
+      },
+      "totalMs": {
+        "median": 562.4872290000021,
+        "sum": 30826.72623799999,
+        "max": 651.4743789999993
+      }
+    },
+    "outsideCallbackSumMs": 28670.95870399996
+  }
+]
