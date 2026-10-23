@@ -738,3 +738,5 @@ Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | 
 Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Record draft PR117 dependency and unverified preview in the delivery acceptance table.
 Prompt 139 | ba0b3631960ee844c2bd2a1c531fec1e448912ae522c65e0808f6dbf1fe99f9e | Preserve the missing-verification story failure and add explicit Rules focus and containment assertions.
 Prompt 139 | ba0b3631960ee844c2bd2a1c531fec1e448912ae522c65e0808f6dbf1fe99f9e | Archive four completed waiting lifecycle journeys and reconcile the reviewer03:42 checkpoint with scoped acceptance.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve first phone navigation evidence and correct the final entry accessible heading after successful invitation recovery.

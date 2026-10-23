@@ -532,7 +532,7 @@ test("A returning commander resumes an invitation without rewriting identity and
         spec: "The entry surface is available again.",
         check: async () =>
           expect(
-            guest.getByRole("heading", { name: "CLUSTER", exact: true }),
+            guest.getByRole("heading", { name: "Cluster", exact: true }),
           ).toBeVisible(),
       },
       verifications: [
