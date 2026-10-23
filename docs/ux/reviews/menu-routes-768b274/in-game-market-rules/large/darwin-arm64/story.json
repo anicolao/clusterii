@@ -1,0 +1,133 @@
+{
+  "id": "in-game-market-rules",
+  "title": "Read market rules and return to the same menu",
+  "inventory": [
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "Actual shared GameMenu and MarketRules in the production gallery. Local navigation only; this does not establish live campaign draft/tick preservation or authoritative actions.",
+  "source": {
+    "commit": "768b2746d5d3da50d33d3b6a1e365cc401db355e",
+    "dirty": false,
+    "spec": "tests/e2e/008-field-guide/market.spec.ts",
+    "specSha256": "e4c2287f68ca362c200f5ea308c3145ca3c2750716b0ef2252c20c66ca2b62b6"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "read-market-rules",
+      "description": "Open the shared menu and Rules with the keyboard, then expand the existing market chapter.",
+      "actor": "Reader",
+      "kind": "player",
+      "acknowledgement": "The actual market chapter opens inside the single existing modal.",
+      "verifications": [
+        "The top heading, chapter entry and rule-review disclosure are wholly within the reading clip while both footer actions remain contained.",
+        "Reading continues the campaign and cannot be confused with leaving or surrendering; proposed rules retain their disclosure."
+      ],
+      "views": [
+        {
+          "player": "Reader",
+          "image": "001-read-market-rules-1-reader.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-held-returns",
+      "description": "Shift+Tab from the chapter entry into the named bounded reading region, then use End to read confirmed and held returns without moving the footer.",
+      "actor": "Reader",
+      "kind": "player",
+      "acknowledgement": "Keyboard scrolling reveals the complete lower heading and its relevant paragraph.",
+      "verifications": [
+        "The reading region retains keyboard focus and both persistent footer actions remain inside their clipping ancestors and viewport before helper scrolling."
+      ],
+      "views": [
+        {
+          "player": "Reader · held returns",
+          "image": "002-read-held-returns-1-reader-held-returns.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-rules-top",
+      "description": "After capturing the lower text, use Home in the same focused reading region to return to the top without scrolling the document.",
+      "actor": "Reader",
+      "kind": "player",
+      "acknowledgement": "Home restores the top heading and chapter entry inside the bounded region.",
+      "verifications": [
+        "Document scroll is unchanged, focus stays in Rules reading and the persistent actions remain contained."
+      ],
+      "views": [
+        {
+          "player": "Reader · rules top",
+          "image": "003-read-rules-top-1-reader-rules-top.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-within-menu",
+      "description": "Use Back to menu, then reopen Rules and use Escape to return to its opening control.",
+      "actor": "Reader",
+      "kind": "player",
+      "acknowledgement": "Rules closes inside the still-open menu and restores Rules focus.",
+      "verifications": [
+        "Presentation controls remain available and there is no second modal."
+      ],
+      "views": [
+        {
+          "player": "Reader",
+          "image": "004-return-within-menu-1-reader.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-scene",
+      "description": "Escape the menu and return focus to its original opener without route navigation.",
+      "actor": "Reader",
+      "kind": "player",
+      "acknowledgement": "The menu is closed and Menu regains focus.",
+      "verifications": [
+        "The same gallery route remains mounted."
+      ],
+      "views": [
+        {
+          "player": "Reader",
+          "image": "005-return-to-scene-1-reader.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

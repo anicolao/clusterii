@@ -1,0 +1,14 @@
+src/lib/components/GameMenu.svelte 84ms (unchanged)
+src/lib/components/RouteRules.svelte 8ms
+tests/e2e/008-field-guide/market.spec.ts 15ms
+tests/e2e/008-field-guide/routes.spec.ts 9ms
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 56 files in 42ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+error: Script not found "test:policy"
