@@ -1,0 +1,94 @@
+{
+  "id": "contextual-aftermath-components",
+  "title": "Inspect the production aftermath instrument",
+  "inventory": [
+    "UX-09",
+    "UX-16"
+  ],
+  "description": "Explicit reducer-derived component scenarios exercise the real ArrivalReports. They do not replace authenticated live combat or private report acceptance.",
+  "source": {
+    "commit": "c3ecf3f851bc6b5529444d1a1fd6f39cb9ee1a56",
+    "dirty": false,
+    "spec": "tests/e2e/011-contextual-aftermath/components.spec.ts",
+    "specSha256": "8292cced6e642644147ad31473c00541cebdb166ba0acaa90eb0e0f4b1ba3d1d"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "recorded-gallery-outcome",
+      "description": "Read the existing split-occupation specimen with its contextual return control and historical distinction.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual shared component distinguishes its recorded outcome from current control.",
+      "verifications": [
+        "Context return and surface inspection remain entirely contained before any automatic capture scrolling."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "001-recorded-gallery-outcome-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-lab-outcome",
+      "description": "Seek the existing arrivals scenario to1200ms. Compare the same report under actual normal and reduced shared feedback code.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "Both actual report components expose the same recorded split ownership and contextual return.",
+      "verifications": [
+        "Paused inspection changes presentation, never the report's casualty or control facts."
+      ],
+      "views": [
+        {
+          "player": "Standard motion comparison",
+          "image": "002-inspect-lab-outcome-1-standard-motion-comparison.png",
+          "verifications": [
+            "The named comparison's outcome and persistent actions are visible together.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 2 animation(s), 90/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Reduced motion comparison",
+          "image": "002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+          "verifications": [
+            "The named comparison's outcome and persistent actions are visible together.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 2 animation(s), 90/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 2 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}

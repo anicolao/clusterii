@@ -217,3 +217,5 @@ Previous visual families and privacy/concurrency/KMS/hosted/release holds remain
 
 | [PR127](https://github.com/anicolao/clusterii/pull/127) / PR126 | Past-tense immutable arrival expectation only; focused real occupation/conquest/reload and shared lab pass2 cases/1.1m. [Evidence](../testing/ARRIVAL_RECORD_EXPECTATION_REVIEW.md). | Narrow attributed legacy compatibility, not illustrated migration or full visual/release approval. |
 | Transaction commit instrumentation / PR127 | [Discriminating SDK-boundary helper](../testing/settlement-commit-boundary/README.md),2 tooling cases71 assertions and static/policy pass. | Actual Linux new-span results pending; no production fix or deadline/renderer change. |
+
+| Aftermath scene hierarchy / PR128 child | c3ecf3f8 shared production correction; eight Nix journeys108 candidates, initial phone/short facts, real report/recovery/privacy and shared normal/reduced execution. [Evidence](../../tests/e2e/011-contextual-aftermath/stories/candidates-c3ecf3f8/README.md). | Independent plate09/family review, Linux/hosted/release remain open; no promotion. Original128 timing run still running. |
