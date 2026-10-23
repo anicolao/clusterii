@@ -237,11 +237,20 @@
         deterministic reducer specimens never enter a live campaign.
       </p>
       <div role="group" aria-label="Interactive faction specimen">
-        <FactionPicker bind:value={faction} game={roster} />
+        <FactionPicker
+          bind:value={faction}
+          game={roster}
+          group="gallery-faction"
+        />
       </div>
       <h3>Pending selection</h3>
       <div role="group" aria-label="Pending faction specimen">
-        <FactionPicker value="heliac" game={roster} disabled />
+        <FactionPicker
+          value="heliac"
+          game={roster}
+          disabled
+          group="gallery-pending-faction"
+        />
       </div>
     </section>
     <section>

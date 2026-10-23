@@ -50,6 +50,9 @@ test("Shared faction composition preserves keyboard choices in both motion prefe
               name: "Pending faction specimen",
               exact: true,
             });
+            await expect(
+              pending.getByRole("radio", { name: /Heliac Assembly/ }),
+            ).toBeChecked();
             for (const radio of await pending.getByRole("radio").all())
               await expect(radio).toBeDisabled();
             expect(

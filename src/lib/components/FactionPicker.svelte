@@ -7,10 +7,12 @@
     value = $bindable<FactionId>("heliac"),
     game,
     disabled = false,
+    group = "faction",
   }: {
     value?: FactionId;
     game: CampaignDirectory;
     disabled?: boolean;
+    group?: string;
   } = $props();
   const chosen = $derived(rules.factions.find((f) => f.id === value)!);
 </script>
@@ -32,7 +34,7 @@
           <label class:selected={value === f.id}
             ><input
               type="radio"
-              name="faction"
+              name={group}
               value={f.id}
               bind:group={value}
               disabled={remaining === 0}
