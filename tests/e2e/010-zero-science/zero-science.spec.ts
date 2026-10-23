@@ -1,6 +1,23 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { createRequire } from "node:module";
+import { initializeApp, deleteApp } from "firebase/app";
+import {
+  getAuth,
+  connectAuthEmulator,
+  signInWithCustomToken,
+} from "firebase/auth";
+import {
+  getFirestore,
+  connectFirestoreEmulator,
+  getDoc,
+  doc,
+} from "firebase/firestore";
+import {
+  getFunctions,
+  connectFunctionsEmulator,
+  httpsCallable,
+} from "firebase/functions";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../../shared/campaign";
 import { test, expect } from "../helpers/fixtures";
@@ -99,6 +116,13 @@ test("Live zero science after orbital loss preserves private research", async ({
   if (!admin.getApps().length)
     admin.initializeApp({ projectId: "demo-clusterii" });
   const db = require("firebase-admin/firestore").getFirestore();
+  const auth = require("firebase-admin/auth").getAuth();
+  const readers: {
+    app: ReturnType<typeof initializeApp>;
+    uid: string;
+    db: ReturnType<typeof getFirestore>;
+    functions: ReturnType<typeof getFunctions>;
+  }[] = [];
   const timing = settlementTiming(
     db,
     info.outputPath("settlement-timing.jsonl"),
@@ -114,15 +138,22 @@ test("Live zero science after orbital loss preserves private research", async ({
       context(id, h.get("revision"), "canonical", 1),
     );
   };
-  const published = async (seat: number): Promise<CampaignView> => {
-    const s = await canonical(),
-      uid = s.seats[seat].uid,
-      h = await db.doc(`campaignViews/${id}/members/${uid}`).get(),
-      key = await db.doc(`campaignKeys/${id}/members/${uid}`).get(),
-      ctx = context(id, h.get("revision"), `member:${uid}`, 1);
+  const published = async (actor: number): Promise<CampaignView> => {
+    const reader = readers[actor],
+      uid = reader.uid;
+    const h = (
+      await getDoc(doc(reader.db, "campaignViews", id, "members", uid))
+    ).data()!;
+    const access = (
+      await httpsCallable<{ gameId: string }, { kek: string }>(
+        reader.functions,
+        "campaignKey",
+      )({ gameId: id })
+    ).data;
+    const ctx = context(id, h.revision, `member:${uid}`, h.envelope.epoch);
     return provider("mock").open(
-      h.get("envelope"),
-      await unwrap(h.get("grant"), key.get("kek"), uid, ctx, "mock"),
+      h.envelope,
+      await unwrap(h.grant, access.kek, uid, ctx, "mock"),
       ctx,
     );
   };
@@ -156,6 +187,28 @@ test("Live zero science after orbital loss preserves private research", async ({
           await button(page, "Close").click();
           await button(page, "Play").click();
           await page.clock.setFixedTime(admissionAt);
+          // Separate authenticated SDK reader for this exact real login, as in
+          // feature004. Admin only mints the emulator session; reads use rules
+          // and the actual campaignKey callable, never canonical seat ordering.
+          const user = await auth.getUserByEmail(email);
+          const app = initializeApp(
+            { projectId: "demo-clusterii", apiKey: "demo-key" },
+            crypto.randomUUID(),
+          );
+          const client = getAuth(app);
+          connectAuthEmulator(client, "http://127.0.0.1:19099", {
+            disableWarnings: true,
+          });
+          await signInWithCustomToken(
+            client,
+            await auth.createCustomToken(user.uid),
+          );
+          expect(client.currentUser!.uid).toBe(user.uid);
+          const clientDb = getFirestore(app);
+          connectFirestoreEmulator(clientDb, "127.0.0.1", 18080);
+          const functions = getFunctions(app);
+          connectFunctionsEmulator(functions, "127.0.0.1", 15001);
+          readers.push({ app, uid: user.uid, db: clientDb, functions });
         },
       );
     for (let i = 0; i < 4; i++)
@@ -224,6 +277,12 @@ test("Live zero science after orbital loss preserves private research", async ({
       },
     );
 
+    expect(new Set(readers.map((r) => r.uid)).size).toBe(4);
+    const admitted = await canonical();
+    for (const reader of readers)
+      expect(admitted.seats.filter((s) => s.uid === reader.uid)).toHaveLength(
+        1,
+      );
     const owner = pages[0],
       peer = pages[1];
     const settle = async (target: number) => {
@@ -318,15 +377,26 @@ test("Live zero science after orbital loss preserves private research", async ({
       )[0];
     expect(escape).toBeDefined();
     const privateCheck = {
-      spec: "Each authenticated projection omits the other commander's private order IDs; no application errors occur.",
+      spec: "Actual owner SDK reads and campaignKey grants succeed; foreign private reads are denied and returned projections omit foreign order IDs.",
       check: async () => {
         expect(errors).toEqual([]);
         const state = await canonical();
         for (const seat of [0, 1]) {
           const own = await published(seat);
           for (const order of state.military?.orders ?? [])
-            if (order.uid !== state.seats[seat].uid)
+            if (order.uid !== readers[seat].uid)
               expect(JSON.stringify(own.military)).not.toContain(order.id);
+          await expect(
+            getDoc(
+              doc(
+                readers[seat].db,
+                "campaignViews",
+                id,
+                "members",
+                readers[1 - seat].uid,
+              ),
+            ),
+          ).rejects.toMatchObject({ code: "permission-denied" });
         }
       },
     };
@@ -464,7 +534,7 @@ test("Live zero science after orbital loss preserves private research", async ({
                 .filter({ hasText: "Route accepted ·" }),
             ).toBeVisible();
             const state = await canonical(),
-              uid = state.seats[seat].uid;
+              uid = readers[seat].uid;
             const order = state.military!.orders.find(
               (o) => o.uid === uid && o.waypoints,
             )!;
@@ -630,5 +700,6 @@ test("Live zero science after orbital loss preserves private research", async ({
     });
   } finally {
     for (const c of contexts) await c.close();
+    for (const reader of readers) await deleteApp(reader.app);
   }
 });
