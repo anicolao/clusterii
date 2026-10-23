@@ -1,0 +1,49 @@
+{
+  "observedAt": "2026-10-23T21:25:46.622Z",
+  "agent": "actively implementing and validating CI reuse",
+  "runs": [
+    {
+      "id": 40018210203,
+      "head": "a0c33e98461c8f8afe2da75f11b75de9f5ad0442",
+      "created": "2026-10-23T20:18:36Z",
+      "status": "in_progress",
+      "conclusion": null,
+      "ageSeconds": 4031,
+      "job": 120635673627,
+      "lastObservableStep": "Exact verification",
+      "stepStarted": "2026-10-23T20:21:44Z"
+    },
+    {
+      "id": 40018251102,
+      "head": "d27e3df63186e8a9401137dd8b25a7b13d284701",
+      "created": "2026-10-23T20:18:55Z",
+      "status": "completed",
+      "conclusion": "failure",
+      "ageSeconds": 4012,
+      "job": 120635813926,
+      "lastObservableStep": "failure"
+    },
+    {
+      "id": 40020084890,
+      "head": "3af727f1890d74781c184d66320493cfe8852076",
+      "created": "2026-10-23T20:33:04Z",
+      "status": "in_progress",
+      "conclusion": null,
+      "ageSeconds": 3163,
+      "job": 120642057865,
+      "lastObservableStep": "Exact verification",
+      "stepStarted": "2026-10-23T20:36:09Z"
+    },
+    {
+      "id": 40022816635,
+      "head": "977df46e9a73d030d9b8d011ce8529af06f06e66",
+      "created": "2026-10-23T20:54:29Z",
+      "status": "in_progress",
+      "conclusion": null,
+      "ageSeconds": 1878,
+      "job": 120651411187,
+      "lastObservableStep": "Exact verification",
+      "stepStarted": "2026-10-23T20:57:33Z"
+    }
+  ]
+}

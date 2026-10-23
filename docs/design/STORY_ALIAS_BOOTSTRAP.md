@@ -13,3 +13,5 @@ The no-browser regression uses the installed pinned Playwright resolver with an 
 This supports the configuration ordering correction. Linux execution of the corrected runner remains pending; no unchanged browser or CI rerun was requested. It does not explain the separate roughly550–605ms Firestore commit-request durations, historical profile ingress, pixels or missing reviewed Linux references. Visual, hosted/KMS and release gates remain open.
 
 Draft [PR131](https://github.com/anicolao/clusterii/pull/131) is based on [PR130](https://github.com/anicolao/clusterii/pull/130). Source a0c33e98 is pushed. The complete story-policy run passed36 tests plus four baseline-path cases; these checks do not launch a browser. No workflow rerun was requested.
+
+Later Linux evidence: run40018251102 atd27e3df6 completed with failure, but its first phone cohort collected and executed69tests without the missing-alias error. [The scoped cold-collection result and runtime audit](../testing/ci-runtime-1706/README.md) distinguish that boundary from62later failures per viewport. This is not full Linux/visual acceptance.

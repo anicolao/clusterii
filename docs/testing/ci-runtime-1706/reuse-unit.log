@@ -1,0 +1,16 @@
+✔ only the explicit report allowlist can change without changing verification inputs (1.682875ms)
+✔ reuse requires exact scope, provenance and an earlier source; outcomes never turn failure or pending into success (0.21625ms)
+✔ workflow check names, full execution branches and evidence retention remain present (0.224917ms)
+✔ prepare executes normal checks for absent, invalid, expired, unavailable or unrelated evidence (0.646583ms)
+✔ prepare and wait pin a real executor; pending becomes its failure or retained success, never a manufactured pass (0.699083ms)
+✔ chained plans resolve the original checkout and reject a substituted unrelated executor (0.16975ms)
+✔ wait falls back to real tests on missing evidence/API, but preserves a pending or failed source gate (0.312ms)
+✔ plan archive reader checks size/hash, expiry and bounded JSON with actual ZIP fixtures (113.60425ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 172.541

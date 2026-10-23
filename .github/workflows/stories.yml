@@ -6,6 +6,7 @@ on:
     branches: [main]
 permissions:
   contents: read
+  actions: read
 jobs:
   stories:
     runs-on: ubuntu-24.04-arm
@@ -25,8 +26,25 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
         with:
           determinate: false
-      - name: Exact verification
+      - name: Identify matching verification inputs
         if: matrix.mode == 'verify'
+        id: reuse
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/verification-reuse.mjs prepare stories-verify 'stories (verify)'
+      - uses: actions/upload-artifact@v4
+        if: matrix.mode == 'verify'
+        with:
+          name: verification-input-stories-verify-${{ github.run_attempt }}
+          path: ci-evidence/verification/stories-verify/plan.json
+      - name: Await matching verification outcome
+        id: reused
+        if: matrix.mode == 'verify' && steps.reuse.outputs.execute == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/verification-reuse.mjs wait stories-verify
+      - name: Exact verification
+        if: matrix.mode == 'verify' && (steps.reuse.outputs.execute == 'true' || steps.reused.outputs.execute == 'true')
         env:
           # Existing bounded, redacted demo-only probe; retained with story traces.
           CLUSTER_SETTLEMENT_TIMING: "1"
@@ -42,6 +60,7 @@ jobs:
           include-hidden-files: true
           path: |
             ci-evidence/nix-renderer/
+            ci-evidence/verification/
             test-results/stories/
             test-results/story-tools/
             test-results/.story-cohorts-*/
