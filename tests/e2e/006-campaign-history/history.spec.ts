@@ -147,8 +147,14 @@ test("Recover saved campaign records without losing your place", async ({
   });
   await story.step("open-records", {
     actor: "History envoy",
-    description: "Open ten saved records with the return control visible.",
-    action: async () => openGalaxyCommand(page, "History"),
+    description:
+      "Open history and explicitly load latest records after the acknowledged maintenance commands, with the return control visible.",
+    action: async () => {
+      await openGalaxyCommand(page, "History");
+      await tray
+        .getByRole("button", { name: "Latest records", exact: true })
+        .click();
+    },
     acknowledgement: {
       spec: "Ten authorized records finish loading.",
       check: async () => expect(tray.locator("summary")).toHaveCount(10),
