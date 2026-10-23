@@ -26,13 +26,15 @@ in {
   '';
   launcher = pkgs.writeShellApplication {
     name = "cluster-ci-renderer";
-    runtimeInputs = [ pkgs.docker pkgs.coreutils pkgs.nix ];
+    runtimeInputs = [ pkgs.docker pkgs.docker.docker-containerd pkgs.docker.docker-runc pkgs.coreutils pkgs.nix ];
     text = ''
       imageArchive=${image}
       imageTag=cluster-renderer:${tag}
       imageConfig=${config}
       imageDigest=${digest}
       engine=${pkgs.docker}/bin/dockerd
+      containerd=${pkgs.docker.docker-containerd}/bin/containerd
+      rootShell=${pkgs.bash}/bin/bash
       nixCommand=${pkgs.nix}/bin/nix
       ${builtins.readFile ./ci-renderer.sh}
     '';
