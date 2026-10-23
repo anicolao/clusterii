@@ -156,3 +156,5 @@ Identity-gallery story work in #47 is stacked on #46: [scope and evidence](IDENT
 #111 corrected-source update: one authorized run at clean e686e3d passes phone focus wrapping, toggle acknowledgements and Escape restoration, then fails reload readiness at10s. Two held phone images, three sizes unexecuted; no retry or promotion. [Exact trace boundary/provenance](../testing/SHARED_SETTINGS_REVIEW.md).
 
 #111 asset audit: corrected two real prerendered relative background URLs consumed from external CSS; emitted16 component instances resolve to unchanged approved art files. Static/build checks pass. No browser run; remaining settings sizes held for changed-source review. Reload cause and family acceptance remain open.
+
+#111 remaining-size update: exact7d43510 desktop/large/short settings generation passes3 journeys/18 unpromoted candidates in22.8s. Original paths and scope in [settings review](../testing/SHARED_SETTINGS_REVIEW.md). Phone remains older-source/incomplete; no mixed family, runtime404 conclusion, reload-cause claim or full acceptance.

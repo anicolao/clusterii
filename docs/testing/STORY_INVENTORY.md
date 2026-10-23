@@ -417,3 +417,5 @@ The shared settings checkbox controls actual Scene dust/reference-ring creation 
 Settings execution update: first phone run failed boundary Tab wrapping before the first capture; remaining three sizes stopped. Explicit production boundary wrapping is corrected in source, not browser-verified. All candidates/persistence/Escape/lab/four-size acceptance remain pending; original failure retained and no baselines changed.
 
 Reviewer-authorized corrected settings run at clean e686e3d passed phone boundary wrapping and both local selections, producing two held images, then failed the unchanged10s reload deadline. Remaining sizes stopped; persistence after reload, explicit close and shared lab comparison remain unexecuted. No complete family or baseline approval; see SHARED_SETTINGS_REVIEW.md.
+
+Settings update at7d43510: desktop/large/short generation passes3 journeys/18 candidates with full local preference/reload/focus/shared-feedback assertions. Independent review and promotion pending. Older phone images retain e686e3d provenance and reload failure; there is no completed source-matched four-size family.

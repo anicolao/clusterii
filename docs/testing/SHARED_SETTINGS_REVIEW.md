@@ -41,3 +41,34 @@ Small correction: move the complete existing background declarations (unchanged 
 Validation: serialized `npm run check` passes0 errors/0 warnings; `PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build` passes. A bounded HTMLParser check of the emitted component sections finds16 actual sections with inline backgrounds, resolves both art paths under `/clusterii/pr4/art/`, confirms files exist and match static originals byte-for-byte, and verifies no external CSS still consumes the two removed variables. Construction-market SHA256 `d38dc97677e8506d4a5951f50d302ea7ba41d99f1aa963433287517e3d2e4d25`; galaxy-dust `2f3233750712cc2733aa29a031ae9bc514a0c1ac977b1b35531ddb1e8c975956`. Logs `/tmp/cluster-settings-assets-check.log`, `/tmp/cluster-settings-assets-build.log`, `/tmp/cluster-settings-assets-emitted-check.log`. Initial audit selector also matched a gallery wrapper with the same accessible label and failed its inline-style assertion; corrected selection uses the actual component class tokens, with no production change between these audit attempts.
 
 No browser execution this turn: the authorized remaining desktop/large/short generation is held for source review because production changed. Original e686e3d/spec provenance stays separate; no new candidates, phone retry or promotion. Corrected emitted URLs are static evidence, not rendered-equivalence, reload-cause or complete asset-runtime certification. All prior holds remain.
+
+## Three remaining sizes — reviewer Prompt115
+
+Clean source `7d43510d6d859d01cad5b76b025170099d6f87b8`, unchanged spec SHA-256 `48420b694b27389054df2022333f7d0e5b1f18d58cd744daed8d9ca59ba264ed`. Reviewer20:10 explicitly approved this pairing after independent source/emitted-path inspection. Prompt/meta logged before work, temporarily stashed for exact clean source execution, then restored. Disk8161744KiB. Serialized production build followed by only desktop/large/short, one worker, retries0/max-failures1, unchanged deadlines/exact RGBA0.
+
+Command: `CLUSTER_STORY_MODE=generate bunx playwright test tests/browser/local-settings.story.spec.ts --config playwright.stories.config.ts --project=desktop --project=large --project=short --max-failures=1`. All3 journeys pass in22.8s,18 generated candidates. These cases execute all named keyboard containment, local persistence/reload, OS precedence, Escape/explicit close restoration, label/primary containment and shared paused normal/reduced feedback outcomes. Generation is not strict baseline comparison or independent acceptance. No phone, campaign, admission or probe execution.
+
+Retained root `/tmp/cluster-settings-remaining-candidates/` contains full log,18 original PNG/layout pairs, three generated README/story/renderer manifests and evidence-sha256.json. The passing configuration retains traces only on failure: no network trace exists for these three runs. Therefore no runtime claim about disappearance of the earlier404s is made from absent network evidence. Prior emitted-path verification remains distinct; this pass does not explain the earlier phone reload timeout. Implementation-agent sample inspection of003 at all three sizes and short005 found readable controls/outcomes; independent review remains required.
+
+Exact original image paths for review:
+
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/desktop/darwin-arm64/001-open-and-contain-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/desktop/darwin-arm64/002-choose-local-reduction-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/desktop/darwin-arm64/003-reload-and-respect-device-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/desktop/darwin-arm64/004-close-explicitly-1-developer-restored-opener.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/desktop/darwin-arm64/005-compare-shared-feedback-1-developer-standard-feedback.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/desktop/darwin-arm64/005-compare-shared-feedback-2-developer-reduced-feedback.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/large/darwin-arm64/001-open-and-contain-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/large/darwin-arm64/002-choose-local-reduction-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/large/darwin-arm64/003-reload-and-respect-device-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/large/darwin-arm64/004-close-explicitly-1-developer-restored-opener.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/large/darwin-arm64/005-compare-shared-feedback-1-developer-standard-feedback.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/large/darwin-arm64/005-compare-shared-feedback-2-developer-reduced-feedback.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/short/darwin-arm64/001-open-and-contain-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/short/darwin-arm64/002-choose-local-reduction-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/short/darwin-arm64/003-reload-and-respect-device-1-developer-local-settings.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/short/darwin-arm64/004-close-explicitly-1-developer-restored-opener.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/short/darwin-arm64/005-compare-shared-feedback-1-developer-standard-feedback.png`
+- `/tmp/cluster-settings-remaining-candidates/stories/local-presentation-settings/short/darwin-arm64/005-compare-shared-feedback-2-developer-reduced-feedback.png`
+
+All candidates remain unpromoted. Older phone images are from e686e3d and cannot complete this source-matched family. Full-family/phone reload, actual galaxy rail/scene equivalence, authoritative actions/account/concurrency, Linux/KMS/hosted/performance/release holds stay open. No further run or source change this turn.
