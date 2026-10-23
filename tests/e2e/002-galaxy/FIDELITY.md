@@ -17,3 +17,9 @@ Typography source audit found default strong700 plus a new tabular-numeral featu
 ## Predecessor CI, read-only inspection
 
 #112 head076650a, Illustrated stories run39883950648: retained `/tmp/cluster112-stories-2252-failure.log`. Reported error entries classify as92 missing Linux baseline/renderer,73 exact pixel comparisons and4 zero-science30s harness deadlines delivering100 leased ticks (one per viewport). These are distinct failure types; no assertion relaxation, baseline promotion or rerun was performed. Pixel causes remain unclassified pending matching original artifacts, and zero-science settlement timing remains its existing open boundary. This is not caused or repaired by the new galaxy screen source.
+
+## Corrected generation ff3b1ee
+
+Four real journeys passed48.2s,20 captures at `/tmp/cluster-galaxy-command-corrected-candidates/`. All retained/unapproved. Phone compact art/ownership hierarchy and expanded keyboard lower-fact reading improved; source inspection and actual4K reveal stretched data cells still dominating the expanded world scene. Next source uses the world as the expanded scene with compact factual overlays, keeps phone bounded reading, and explicitly exercises selection through the public systems list plus local lower-detail facts preservation.
+
+Regular Atkinson removed bold thickening but its visibly slashed zeros remain; resource values now use the existing loaded Cormorant600 face at readable sizes. New captures must establish the visual result; no inference that this explains historical raster failures.

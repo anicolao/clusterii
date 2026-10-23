@@ -973,7 +973,12 @@
         construction ||
         military}
     >
-      <Feedback {message} {error} />{#if onretry}<ActionButton
+      <Feedback
+        message={view.phase === "active" && commandKind === "campaign.join"
+          ? ""
+          : message}
+        {error}
+      />{#if onretry}<ActionButton
           disabled={busy}
           class="secondary"
           onclick={onretry}
@@ -2395,5 +2400,76 @@
   }
   .system-inspector.expanded dd {
     margin: 0;
+  }
+  .campaign-facts strong {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 23px;
+  }
+  .system-inspector.expanded dl {
+    align-content: start;
+    align-self: start;
+  }
+  @media (min-width: 701px) {
+    .system-inspector.expanded .system-details {
+      display: block;
+      position: relative;
+      isolation: isolate;
+    }
+    .system-inspector.expanded .system-details :global(.world-art) {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .system-inspector.expanded .system-details > p,
+    .system-inspector.expanded .system-details > dl {
+      width: 38%;
+      margin-left: auto;
+      margin-right: 20px;
+      padding: 16px;
+      background: #05131ee8;
+    }
+    .system-inspector.expanded .system-details > p {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    .system-inspector.expanded .system-details > dl {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 2500px) {
+    .campaign-facts strong {
+      font-size: 36px;
+    }
+    .system-inspector.expanded .system-details > p,
+    .system-inspector.expanded .system-details > dl {
+      font-size: 32px;
+      padding: 28px;
+      margin-right: 40px;
+    }
+    .system-inspector.expanded dl > div {
+      min-height: 72px;
+    }
+  }
+  @media (min-width: 701px) and (max-height: 800px) {
+    .system-inspector.expanded .system-details > p,
+    .system-inspector.expanded .system-details > dl {
+      padding: 8px;
+      font-size: 14px;
+      margin-right: 12px;
+    }
+    .system-inspector.expanded .system-details > p {
+      margin-top: 12px;
+    }
+    .system-inspector.expanded dl > div {
+      padding: 5px;
+    }
+  }
+  @media (max-width: 700px) {
+    .campaign-facts strong {
+      font-size: 20px;
+    }
   }
 </style>

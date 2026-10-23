@@ -370,6 +370,87 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
         },
       ],
     });
+    await story.step("select-a-catalogued-system", {
+      actor: aliases[0],
+      description:
+        "Use the factual systems list to select Saiph with the keyboard, then return to the compact inspector.",
+      action: async () => {
+        if (info.project.name !== "phone")
+          await button(owner, "Systems list").focus();
+        await keyboard(owner, "Systems list");
+        await owner.getByLabel("Find a system").fill("Saiph");
+        await owner.getByRole("button", { name: /^Select Saiph,/ }).focus();
+        await owner.keyboard.press("Enter");
+        if (info.project.name === "phone") await owner.keyboard.press("Escape");
+      },
+      acknowledgement: {
+        spec: "The actual selected system is Saiph and the same campaign remains open.",
+        check: async () => {
+          await expect(
+            inspector.getByRole("heading", { level: 2 }),
+          ).toContainText("Saiph");
+          expect(new URL(owner.url()).searchParams.get("campaign")).toBe(
+            campaignId,
+          );
+        },
+      },
+      verifications: [facts],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [button(owner, "Inspect system")],
+        },
+      ],
+    });
+    const authorizedText = await inspector.innerText();
+    const resourceText = await owner.getByLabel("Empire resources").innerText();
+    await story.step("retain-facts-with-lower-detail", {
+      actor: aliases[0],
+      description:
+        "Use the actual local setting to remove decorative rendering, with normal motion permitted by the device. Selection and authorized resource text remain unchanged.",
+      action: async () => {
+        await owner.emulateMedia({ reducedMotion: "no-preference" });
+        await keyboard(owner, "Menu");
+        await owner
+          .getByRole("checkbox", { name: "Lower galaxy detail", exact: true })
+          .focus();
+        await owner.keyboard.press("Space");
+        await expect(
+          owner
+            .getByRole("status")
+            .filter({ hasText: "Lower galaxy detail is on." }),
+        ).toBeVisible();
+        await owner.keyboard.press("Escape");
+      },
+      acknowledgement: {
+        spec: "The menu closes and restores its opener after acknowledging the local setting.",
+        check: async () => expect(button(owner, "Menu")).toBeFocused(),
+      },
+      verifications: [
+        {
+          spec: "Authorized inspector and resource text match exactly; reduced decoration does not alter selected-system facts. This does not certify every canvas marker or hosted timing.",
+          check: async () => {
+            expect(await inspector.innerText()).toBe(authorizedText);
+            expect(await owner.getByLabel("Empire resources").innerText()).toBe(
+              resourceText,
+            );
+            await expect(
+              inspector.getByRole("heading", { level: 2 }),
+            ).toContainText("Saiph");
+          },
+        },
+      ],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [button(owner, "Menu"), button(owner, "Inspect system")],
+        },
+      ],
+    });
   } finally {
     for (const context of contexts) await context.close();
   }
