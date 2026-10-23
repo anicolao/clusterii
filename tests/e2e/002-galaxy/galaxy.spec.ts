@@ -409,7 +409,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
     await story.step("retain-facts-with-lower-detail", {
       actor: aliases[0],
       description:
-        "Use the actual local setting to remove decorative rendering, with normal motion permitted by the device. Selection and authorized resource text remain unchanged.",
+        "Use the actual local setting with normal motion permitted by the device, verify its outcome, then restore the declared reduced-motion capture environment. Selection and authorized resource text remain unchanged.",
       action: async () => {
         await owner.emulateMedia({ reducedMotion: "no-preference" });
         await keyboard(owner, "Menu");
@@ -423,6 +423,13 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
             .filter({ hasText: "Lower galaxy detail is on." }),
         ).toBeVisible();
         await owner.keyboard.press("Escape");
+        expect(
+          await owner.evaluate(
+            () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+          ),
+        ).toBe(false);
+        expect(await inspector.innerText()).toBe(authorizedText);
+        await owner.emulateMedia({ reducedMotion: "reduce" });
       },
       acknowledgement: {
         spec: "The menu closes and restores its opener after acknowledging the local setting.",
