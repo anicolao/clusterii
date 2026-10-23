@@ -441,14 +441,19 @@
       aria-label="Welcome to Cluster"
     >
       <div class="brand">
-        <p class="overline">A galaxy won together</p>
         <h1 bind:this={focusTitle} tabindex="-1">CLUSTER</h1>
         <div class="rule" aria-hidden="true"><Icon kind="star" /></div>
-        <p class="invitation">
-          The stars are vast.<br />Your empire cannot stand alone.
-        </p>
       </div>
       <div class="entry-actions">
+        {#if continued}<EntryButton
+            label="Continue"
+            detail={continued.name}
+            illustration="world"
+            emphasis
+            focusId="continue"
+            onclick={() =>
+              goto(`${campaignHref(base, continued.id)}&briefing=return`)}
+          />{/if}
         <EntryButton
           label={busy ? "Opening the gates…" : "Play"}
           illustration="planet"
@@ -456,14 +461,6 @@
           onclick={play}
           disabled={!connected || busy || (!!account && !ready)}
         />
-        {#if continued}<EntryButton
-            label="Continue"
-            detail={continued.name}
-            illustration="planet"
-            focusId="continue"
-            onclick={() =>
-              goto(`${campaignHref(base, continued.id)}&briefing=return`)}
-          />{/if}
         <EntryButton
           label="Learn the game"
           illustration="observatory"
@@ -504,9 +501,6 @@
         />{/if}
       {#if error}<p class="notice error" role="alert">{error}</p>{/if}
     </section>
-    <p class="world-caption" aria-hidden="true">
-      Beyond the horizon, an alliance is forming.
-    </p>
   {:else if scene === "learn"}
     <section class="instrument learn" aria-label="Learn the game">
       <div class="instrument-top">
@@ -650,36 +644,62 @@
     font-size: 14px;
     padding: 8px;
   }
+  /* Plate 01: title and inset choices share one quiet command axis. */
+  .entry {
+    width: min(550px, 42vw);
+    margin: 0 24% 0 auto;
+    padding: 32px 0;
+  }
+  .brand h1 {
+    font-size: clamp(64px, 6.3vw, 112px);
+    letter-spacing: 0.18em;
+    margin: 0 -0.18em 12px 0;
+  }
+  .entry-actions {
+    margin: clamp(40px, 8svh, 100px) auto 0;
+  }
+  .entry-secondary {
+    flex-wrap: wrap;
+    gap: 0 8px;
+  }
+  @media (min-width: 2200px) {
+    .entry {
+      width: 780px;
+      margin-right: 25%;
+    }
+    .brand h1 {
+      font-size: 150px;
+    }
+  }
   @media (max-width: 700px) {
-    .resuming :global(.entry-actions) {
-      margin-top: 20px;
+    .entry {
+      width: 100%;
+      margin: 0;
+      padding: max(48px, env(safe-area-inset-top)) 16px
+        max(24px, env(safe-area-inset-bottom));
     }
-    .resuming .brand h1 {
-      font-size: 48px;
-      margin: 10px 0;
+    .brand h1 {
+      font-size: clamp(44px, 13vw, 80px);
+      margin: 30px -0.18em 12px 0;
     }
-    .resuming .invitation {
-      font-size: 20px;
-      line-height: 1.2;
+    .entry-actions {
+      margin-top: auto;
+      padding-top: 40px;
+      max-width: 420px;
     }
-    .resuming .rule {
-      margin: 12px auto;
+    .signed {
+      margin-top: 0;
     }
   }
   @media (min-width: 701px) and (max-height: 780px) {
-    .resuming .brand h1 {
+    .entry {
+      padding: 20px 0;
+    }
+    .brand h1 {
       font-size: 68px;
-      margin: 8px 0;
     }
-    .resuming .invitation {
-      font-size: 22px;
-      line-height: 1.2;
-    }
-    .resuming .rule {
-      margin: 8px auto;
-    }
-    .resuming :global(.entry-actions) {
-      margin-top: 20px;
+    .entry-actions {
+      margin-top: 32px;
     }
   }
 

@@ -91,3 +91,7 @@ Exact generation prompt:
 ## Credit offers
 
 `CreditOffers.svelte` reuses `construction-market.webp` as decorative exchange scenery. Exact terms, participants, balances and outcomes remain semantic HTML text and controls. No generated lettering or new raster asset conveys game state.
+
+## Entry composition alignment
+
+Continue reuses `entry-phone.webp` as a decorative inhabited-world inset, distinct from Play’s planet and Learn’s observatory atlas. No asset bytes changed. Cyan emphasis and exact campaign names are semantic production UI; only accessible active memberships render Continue.

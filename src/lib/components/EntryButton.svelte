@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Icon from "./Icon.svelte";
   import { base } from "$app/paths";
   let {
     label,
@@ -7,22 +6,31 @@
     illustration,
     onclick,
     disabled = false,
+    emphasis = false,
     focusId,
   }: {
     label: string;
     detail?: string;
-    illustration: "planet" | "observatory";
+    illustration: "planet" | "observatory" | "world";
+    emphasis?: boolean;
     onclick: () => void;
     disabled?: boolean;
     focusId: string;
   } = $props();
 </script>
 
-<button class="entry-button" {onclick} {disabled} data-focus={focusId}>
+<button
+  class="entry-button"
+  class:emphasis
+  {onclick}
+  {disabled}
+  data-focus={focusId}
+>
   <span class="inset" aria-hidden="true"
     ><img
+      class:world={illustration === "world"}
       class:observatory={illustration === "observatory"}
-      src={`${base}/art/entry-navigation.webp`}
+      src={`${base}/art/${illustration === "world" ? "entry-phone" : "entry-navigation"}.webp`}
       alt=""
     /></span
   >
@@ -45,6 +53,21 @@
     box-shadow:
       inset 0 0 0 3px #d5ba8420,
       0 6px 22px #0007;
+  }
+  .entry-button.emphasis {
+    background: linear-gradient(115deg, #0a2838ee, #124052ef);
+    border-color: #8de5f3;
+    box-shadow:
+      inset 0 0 0 3px #8de5f326,
+      0 0 18px #60cce52b;
+  }
+  .emphasis .label small {
+    color: #abe8f3;
+  }
+  .inset img.world {
+    width: 100%;
+    height: 100%;
+    object-position: 50% 62%;
   }
   .entry-button:hover:not(:disabled) {
     background: linear-gradient(115deg, #162a38, #233947);
