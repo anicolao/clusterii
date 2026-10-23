@@ -177,8 +177,7 @@ test("Read shared science ledger in gallery and lab", async ({
                 exact: true,
               });
               await panel.locator(".science-ledger").scrollIntoViewIfNeeded();
-              await r.focus();
-              await r.press("End");
+              await readDelivered(panel);
               await expect(r).toBeFocused();
               await expectReadingTarget(
                 panel
