@@ -82,6 +82,9 @@ test("Inspect shared route composition in gallery and interactive lab", async ({
         ]) {
           const p = page.getByRole("region", { name, exact: true });
           await expect(p).toContainText("Route accepted");
+          await expect(
+            p.getByRole("heading", { name: "Departure accepted", exact: true }),
+          ).toBeVisible();
         }
       },
     },

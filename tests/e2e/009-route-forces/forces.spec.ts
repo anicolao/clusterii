@@ -278,6 +278,10 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
         await expect(
           planner.getByRole("region", { name: "Route details", exact: true }),
         ).toBeFocused();
+        await expect(planner.locator(".route-details")).toHaveAttribute(
+          "inert",
+          "",
+        );
         await planner
           .getByRole("region", { name: "Route editing", exact: true })
           .getByRole("button", { name: "Review route", exact: true })
@@ -580,6 +584,12 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
           await expect(
             planner.locator("footer").getByRole("status"),
           ).toHaveText("Route accepted. Departure scheduled.");
+          await expect(
+            planner.getByRole("heading", {
+              name: "Departure accepted",
+              exact: true,
+            }),
+          ).toBeVisible();
           accepted = await canonical();
           expect(accepted.systems).toEqual(formed!.systems);
           expect(accepted.military!.fleets).toEqual(formed!.military!.fleets);

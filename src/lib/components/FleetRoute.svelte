@@ -75,7 +75,6 @@
         ["arrived", "destroyed", "halted"].includes(e.result),
     ),
   );
-  const completed = $derived(!!outcome && !replanning);
   const origin = $derived(view.stars.find((s) => s.id === fleet?.starId));
   const navigation = $derived(view.economy?.research.levels.navigation ?? 0);
   const accepted = $derived(
@@ -92,6 +91,10 @@
       : [],
   );
   const committed = $derived(fleet?.travel);
+  const completed = $derived(
+    !!outcome && !replanning && !accepted && committed?.status !== "traveling",
+  );
+
   const preview = $derived.by(() => {
     if (!fleet || !waypoints.length) return [];
     try {
@@ -258,9 +261,11 @@
           <h2>
             {completed
               ? "Arrival resolved"
-              : active
+              : committed?.status === "traveling"
                 ? "Fleet en route"
-                : "Plot a course"}
+                : accepted
+                  ? "Departure accepted"
+                  : "Plot a course"}
           </h2>
           {#if fleet}<p>
               {fleet.fighters} fighters · {fleet.infantry} infantry aboard
@@ -274,6 +279,7 @@
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
     <div
       class="route-details"
+      inert={editing && !active && !completed}
       role="region"
       tabindex="0"
       aria-label={editing && !active && !completed
@@ -289,7 +295,7 @@
           aria-label="Confirmed route forces"
         >
           <section aria-label="Fleet transport manifest">
-            <h3>Forces to deploy</h3>
+            <h3>{active ? "Forces aboard" : "Forces to deploy"}</h3>
             <dl>
               <div>
                 <dt>Fighters aboard</dt>

@@ -786,3 +786,5 @@ Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | 
 Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Preserve76 composition candidates and correct label width, opaque editing, and complete multi-waypoint reading.
 
 Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Preserve readable76-frame family and restore direct Plot route editing with accurate active-region focus semantics.
+
+Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Record the output-directory loss and correct accepted-state heading plus editor keyboard ownership before isolated final evidence.
