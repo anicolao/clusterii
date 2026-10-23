@@ -99,3 +99,18 @@ Reviewer20:32 inspected all24 prior originals across two reviews: readable setti
 Small correction before generation: label the existing metadata `Feedback recovery`, rendering `none`/absent as `No action indicated`; retain all other category values rather than inventing success or recovery actions. Reviewed the complete scenario frame list and shared conditional render branches: pending/accepted/research applied can all have remedy none, network/validation/conflict/receipt/retry describe recovery, and specialized draft/history/research components also own their internal states. The label explicitly describes frame feedback metadata rather than asserting those components have no outcome. Actual status/error messages and callbacks are untouched. The existing local-settings lab step now requires the accurate phrase and successful Identity saved status in both panels, retaining every other assertion/deadline.
 
 All24 prior originals remain in their existing separate paths. Commit changed source/spec before one focused four-size generation with max-failures1/retries0, serialized build and disk gate. No baseline promotion or other families.
+
+### Corrected-label candidate result
+
+Clean committed source `fd74e91a409139b9816c35b4fe2996dbae8699a6`; updated spec SHA-256 `d9a3f6c1b340debc42c60af4591cfa561040b0cf84d204e5768987a4874e8ff6`. Static checks0 errors/0 warnings and story policy pass. Disk6941548KiB before execution. Serialized build followed by the same targeted file/all four projects, original deadlines, retries0/max-failures1/exactRGBA0. Four journeys pass32.3s (phone8.7, desktop6.2, large7.0, short6.0);24 originals, no failure or repeat.
+
+Retained root `/tmp/cluster-settings-label-corrected-candidates/` contains original log, evidence-sha256.json and all four generated story/renderer manifests, README narratives, PNG/layout pairs. Exact original image directory template: `/tmp/cluster-settings-label-corrected-candidates/stories/local-presentation-settings/{phone,desktop,large,short}/darwin-arm64/`. Each contains:
+
+- `001-open-and-contain-1-developer-local-settings.png`
+- `002-choose-local-reduction-1-developer-local-settings.png`
+- `003-reload-and-respect-device-1-developer-local-settings.png`
+- `004-close-explicitly-1-developer-restored-opener.png`
+- `005-compare-shared-feedback-1-developer-standard-feedback.png`
+- `005-compare-shared-feedback-2-developer-reduced-feedback.png`
+
+Implementation-agent sample inspection of phone/short005 standard shows accurate recovery metadata separately above the unchanged accepted status, both readable. The same semantic assertion passes in both comparisons at every size. Independent corrected-image/native-resolution review and baseline permission remain pending; none promoted or strictly compared yet. Prior24 originals and older failures remain intact in their original paths. No campaign/admission/probe or feature expansion. Historical timeout causality and actual galaxy/scene/authoritative/concurrency/Linux/KMS/hosted/performance/release holds unchanged.

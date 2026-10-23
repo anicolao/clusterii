@@ -684,3 +684,5 @@ Prompt 111 | 94c90d69fc150daf99b3399d15e26ee30f98dac0d10eaaa72b2d3a58dfbd177a | 
 Prompt 112 | 0e6514eab0c4f604dc10fa7e4ee8acce4b7a9f3d9ed98defccaae678eb879ff4 | Preserve first settings Tab-boundary failure and implement explicit shared modal focus wrapping without browser retry
 
 Prompt 112 | 0e6514eab0c4f604dc10fa7e4ee8acce4b7a9f3d9ed98defccaae678eb879ff4 | Register stacked draft PR111 and its stopped generation, source correction and outstanding settings acceptance gates
+
+Prompt 117 | 080c53a673a8201c6ab67ca160024eb2ff2d2076ac120dc327e985063ab095f5 | Preserve four-size corrected lab-label candidates and exact source pairing for independent review without promotion

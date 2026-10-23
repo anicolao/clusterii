@@ -421,3 +421,5 @@ Reviewer-authorized corrected settings run at clean e686e3d passed phone boundar
 Settings update at7d43510: desktop/large/short generation passes3 journeys/18 candidates with full local preference/reload/focus/shared-feedback assertions. Independent review and promotion pending. Older phone images retain e686e3d provenance and reload failure; there is no completed source-matched four-size family.
 
 Corrected-source phone settings at9d0a837 passes one journey/six candidates; production/spec identical to7d43510 other-size18 candidates. Complete24-image candidate set awaits independent review and strict comparison. Older phone failures stay separate; their cause remains unresolved.
+
+Settings lab semantics corrected atfd74e91: full four-size generation passes4 journeys/24 candidates with accurate feedback-recovery labels asserted independently of accepted outcomes. New spec/source pairing retained; prior24 untouched. Corrected-family independent review and strict comparison pending.
