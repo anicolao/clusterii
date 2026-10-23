@@ -1,16 +1,16 @@
 import type { Locator } from "@playwright/test";
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
 
-test("Read shared market rules and return without leaving the game", async ({
+test("Read shared route rules and return without leaving the game", async ({
   page,
 }, info) => {
   const story = new TestStepHelper(info, {
-    id: "in-game-market-rules",
-    title: "Read market rules and return to the same menu",
+    id: "in-game-route-rules",
+    title: "Read route rules and return to the same menu",
     inventory: ["UX-15", "UX-16"],
     description:
-      "Actual shared GameMenu and MarketRules in the production gallery. Local navigation only; this does not establish live campaign draft/tick preservation or authoritative actions.",
+      "Actual shared GameMenu and RouteRules in the production gallery. Local navigation only; this does not establish live campaign draft/tick preservation or authoritative actions.",
   });
   const menu = page.getByRole("button", { name: "Menu", exact: true });
   const dialog = page.getByRole("dialog", { name: "Game menu" });
@@ -64,10 +64,10 @@ test("Read shared market rules and return without leaving the game", async ({
       )
       .toBe(true);
   };
-  await story.step("read-market-rules", {
+  await story.step("read-route-rules", {
     actor: "Reader",
     description:
-      "Open the shared menu and Rules with the keyboard, then expand the existing market chapter.",
+      "Open the shared menu and Rules with the keyboard, then expand the existing route chapter.",
     action: async () => {
       await page.goto("./gallery/");
       await menu.focus();
@@ -78,16 +78,21 @@ test("Read shared market rules and return without leaving the game", async ({
         dialog.getByRole("heading", { name: "Rules", exact: true }),
       ).toBeFocused();
       await page.keyboard.press("Tab");
-      await expect(dialog.locator("summary")).toBeFocused();
+      await expect(dialog.locator(".market-rules summary")).toBeFocused();
+      await page.keyboard.press("Tab");
+      await expect(dialog.locator(".route-rules summary")).toBeFocused();
       await page.keyboard.press("Enter");
     },
     acknowledgement: {
-      spec: "The actual market chapter opens inside the single existing modal.",
+      spec: "The actual route chapter opens inside the single existing modal.",
       check: async () => {
         await expect(page.locator("dialog[open]")).toHaveCount(1);
-        await expect(dialog.locator("details")).toHaveAttribute("open", "");
+        await expect(dialog.locator(".route-rules")).toHaveAttribute(
+          "open",
+          "",
+        );
         await expect(
-          dialog.getByRole("heading", { name: "Allocate expectations" }),
+          dialog.getByRole("heading", { name: "Range and speed" }),
         ).toBeVisible();
       },
     },
@@ -97,8 +102,8 @@ test("Read shared market rules and return without leaving the game", async ({
         check: async () => {
           for (const item of [
             reading.getByRole("heading", { name: "Rules", exact: true }),
-            reading.locator("summary"),
-            reading.locator(".scope"),
+            reading.locator(".route-rules summary"),
+            reading.locator(".route-rules .scope"),
             back,
             close,
           ])
@@ -112,11 +117,13 @@ test("Read shared market rules and return without leaving the game", async ({
             "Neither leaves the campaign nor surrenders your seat.",
           );
           await expect(dialog).toContainText(
-            "Market dividend rules remain under review.",
+            "Development rules remain under review.",
           );
           await expect(dialog).toContainText(
-            "Apply focus requests an order; wait for acceptance.",
+            "Selecting waypoints moves no forces.",
           );
+          await expect(dialog).toContainText("it does not increase speed");
+          await expect(dialog).not.toContainText("Navigation level");
         },
       },
     ],
@@ -125,11 +132,13 @@ test("Read shared market rules and return without leaving the game", async ({
     ],
   });
   let documentScrollBeforeReading = 0;
-  await story.step("read-held-returns", {
+  await story.step("read-arrival-uncertainty", {
     actor: "Reader",
     description:
-      "Shift+Tab from the chapter entry into the named bounded reading region, then use End to read confirmed and held returns without moving the footer.",
+      "Shift+Tab from the chapter entry into the named bounded reading region, then use End to read arrival and uncertainty without moving the footer.",
     action: async () => {
+      await page.keyboard.press("Shift+Tab");
+      await expect(reading.locator(".market-rules summary")).toBeFocused();
       await page.keyboard.press("Shift+Tab");
       await expect(reading).toBeFocused();
       documentScrollBeforeReading = await page.evaluate(() => window.scrollY);
@@ -140,13 +149,13 @@ test("Read shared market rules and return without leaving the game", async ({
       check: async () => {
         await contained(
           reading.getByRole("heading", {
-            name: "Confirmed and held returns",
+            name: "Arrival and uncertainty",
             exact: true,
           }),
         );
         await contained(
           reading.getByText(
-            "New markets join dividend weights from the next tick.",
+            "Ownership and defenders may have changed since the last observation.",
             { exact: false },
           ),
         );
@@ -168,7 +177,7 @@ test("Read shared market rules and return without leaving the game", async ({
     views: [
       {
         page,
-        player: "Reader · held returns",
+        player: "Reader · arrival uncertainty",
         surface: "document",
         primary: [back, close],
       },
@@ -189,8 +198,8 @@ test("Read shared market rules and return without leaving the game", async ({
         await contained(
           reading.getByRole("heading", { name: "Rules", exact: true }),
         );
-        await contained(reading.locator("summary"));
-        await contained(reading.locator(".scope"));
+        await contained(reading.locator(".route-rules summary"));
+        await contained(reading.locator(".route-rules .scope"));
       },
     },
     verifications: [
@@ -225,7 +234,9 @@ test("Read shared market rules and return without leaving the game", async ({
       await page.keyboard.press("Tab");
       await expect(reading).toBeFocused();
       await page.keyboard.press("Tab");
-      await expect(reading.locator("summary")).toBeFocused();
+      await expect(reading.locator(".market-rules summary")).toBeFocused();
+      await page.keyboard.press("Tab");
+      await expect(reading.locator(".route-rules summary")).toBeFocused();
       await page.keyboard.press("Tab");
       await expect(back).toBeFocused();
       await page.keyboard.press("Enter");

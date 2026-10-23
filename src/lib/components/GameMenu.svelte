@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick } from "svelte";
   import MarketRules from "./MarketRules.svelte";
+  import RouteRules from "./RouteRules.svelte";
   import ActionButton from "./ActionButton.svelte";
   import PresentationSettings from "./PresentationSettings.svelte";
   import CommanderPortrait from "./CommanderPortrait.svelte";
@@ -112,9 +113,10 @@
         your seat.
       </p>
       <MarketRules />
+      <RouteRules />
       <p class="navigation-note">
-        This reference covers market focus. Construction and route rules remain
-        available in their respective panels.
+        This reference covers market focus and fleet routes. Construction rules
+        remain available with the actual development quote in its panel.
       </p>
     {:else}
       <PresentationSettings />
