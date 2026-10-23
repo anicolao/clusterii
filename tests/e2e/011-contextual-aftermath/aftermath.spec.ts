@@ -706,33 +706,60 @@ test("Open a contextual arrival report and recover its recorded surface", async 
       verifications: reportChecks,
       views: views(),
     });
+    const keyboardRead = async (p: Page, target: Locator) => {
+      await footers(p);
+      await reportBody(p).focus();
+      await reportBody(p).press("End");
+      for (let n = 0; n < 24; n++) {
+        if (
+          await target.evaluate((e) => {
+            const a = e.getBoundingClientRect(),
+              b = e
+                .closest('[aria-label="Arrival report details"]')!
+                .getBoundingClientRect();
+            return a.top >= b.top && a.bottom <= b.bottom;
+          })
+        )
+          break;
+        const before = await reportBody(p).evaluate((e) => e.scrollTop);
+        await reportBody(p).press("ArrowUp");
+        if (before === 0) break;
+        await expect
+          .poll(() => reportBody(p).evaluate((e) => e.scrollTop))
+          .toBeLessThan(before);
+      }
+    };
+    await story.step("read-own-casualties", {
+      actor: aliases[0],
+      description:
+        "Read all four own-force casualty values through the bounded keyboard reading region. Illustrated unit marks describe forces, never disclose rival losses.",
+      action: async () => {
+        for (const p of [owner, peer])
+          await keyboardRead(p, reportPanel(p).locator("dl.losses"));
+      },
+      acknowledgement: {
+        spec: "Both recipients see their complete own casualty instrument and persistent actions inside the reading viewport.",
+        check: async () => {
+          for (const p of [owner, peer]) {
+            await expectReadingTarget(
+              reportPanel(p).locator("dl.losses"),
+              false,
+            );
+            await footers(p);
+            expect(await p.evaluate(() => window.scrollY)).toBe(0);
+          }
+        },
+      },
+      verifications: reportChecks,
+      views: views(),
+    });
     await story.step("read-recorded-layers", {
       actor: aliases[0],
       description:
         "Use the bounded report's End and ArrowUp keys to read independent layer control and the held-credit explanation. The fixed return/inspect actions stay available.",
       action: async () => {
-        for (const p of [owner, peer]) {
-          await footers(p);
-          await reportBody(p).focus();
-          await reportBody(p).press("End");
-          const control = reportPanel(p).locator("dl.control");
-          for (let n = 0; n < 24; n++) {
-            const contained = await control.evaluate((e) => {
-              const a = e.getBoundingClientRect(),
-                b = e
-                  .closest('[aria-label="Arrival report details"]')!
-                  .getBoundingClientRect();
-              return a.top >= b.top && a.bottom <= b.bottom;
-            });
-            if (contained) break;
-            const before = await reportBody(p).evaluate((e) => e.scrollTop);
-            await reportBody(p).press("ArrowUp");
-            if (before === 0) break;
-            await expect
-              .poll(() => reportBody(p).evaluate((e) => e.scrollTop))
-              .toBeLessThan(before);
-          }
-        }
+        for (const p of [owner, peer])
+          await keyboardRead(p, reportPanel(p).locator("dl.control"));
       },
       acknowledgement: {
         spec: "Recorded Orbit/Surface and the private held-credit explanation are fully readable without document scrolling.",

@@ -134,12 +134,12 @@
                 : "No hostile resistance."}</span
             >
           </li>
-          <li>
+          <li class="recorded-stage">
             <span
               class="phase-art surface-art"
               style={`background-image:url('${base}/art/system-orbit.webp')`}
               aria-hidden="true"><DevelopmentIcon type="base" /></span
-            ><strong>Surface</strong><span
+            ><strong>Surface · recorded</strong><span
               >{detail?.landed
                 ? `${detail.landed} of your infantry landed.`
                 : "Control recorded separately."}</span
@@ -148,29 +148,65 @@
         </ol>
         <dl class="losses">
           <div>
-            <dt>Your fighters lost</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/fleet-preparation.webp')`}
+                aria-hidden="true"><FleetSymbol /></span
+              >Your fighters lost
+            </dt>
             <dd>{report.fightersBefore - report.fightersAfter}</dd>
           </div>
           <div>
-            <dt>Your fighters remaining</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/fleet-preparation.webp')`}
+                aria-hidden="true"><FleetSymbol /></span
+              >Your fighters remaining
+            </dt>
             <dd>{report.fightersAfter}</dd>
           </div>
           <div>
-            <dt>Your infantry lost</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/construction-base.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="base" /></span
+              >Your infantry lost
+            </dt>
             <dd>{report.infantryBefore - report.infantryAfter}</dd>
           </div>
           <div>
-            <dt>Your infantry remaining</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/construction-base.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="base" /></span
+              >Your infantry remaining
+            </dt>
             <dd>{report.infantryAfter}</dd>
           </div>
         </dl>
         <dl class="control">
           <div>
-            <dt>Orbit</dt>
+            <dt>
+              <span
+                class="ownership-art orbit-art"
+                style={`background-image:url('${base}/art/orbital-aftermath.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="station" /></span
+              >Orbit
+            </dt>
             <dd class:you={report.orbit === own}>{owner(report.orbit)}</dd>
           </div>
           <div>
-            <dt>Surface</dt>
+            <dt>
+              <span
+                class="ownership-art surface-art"
+                style={`background-image:url('${base}/art/system-orbit.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="base" /></span
+              >Surface
+            </dt>
             <dd class:you={report.surface === own}>{owner(report.surface)}</dd>
           </div>
         </dl>
@@ -272,6 +308,7 @@
 
 <style>
   .arrival-instrument {
+    container: aftermath / size;
     height: 100%;
     min-height: 0;
     position: relative;
@@ -335,24 +372,50 @@
     margin-top: clamp(70px, 12svh, 160px);
   }
   .sequence {
+    --phase-size: 92px;
+    --phase-gap: 16px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
+    gap: var(--phase-gap);
     list-style: none;
     padding: 0;
   }
   .sequence li {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     gap: 6px;
   }
+  .sequence li + li::before {
+    content: "";
+    position: absolute;
+    left: calc(-50% - var(--phase-gap) / 2);
+    top: calc(var(--phase-size) / 2);
+    width: calc(100% + var(--phase-gap));
+    height: 1px;
+    background: linear-gradient(90deg, #6c929b, #b9d2d8);
+    pointer-events: none;
+  }
+  .sequence li + li::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--phase-size) / 2 - 3px);
+    left: calc(var(--phase-gap) / -2 - 3px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #b9d2d8;
+    box-shadow: 0 0 10px #76ddec88;
+    pointer-events: none;
+  }
   .phase-art {
     display: block;
     position: relative;
-    width: 92px;
-    height: 92px;
+    z-index: 1;
+    width: var(--phase-size);
+    height: var(--phase-size);
     border: 1px solid #b9d2d8;
     border-radius: 50%;
     background-color: #16323d;
@@ -361,6 +424,46 @@
     box-shadow:
       0 0 18px #72dcec24,
       inset 0 0 16px #05101a;
+  }
+  .recorded-stage .phase-art {
+    border: 2px solid #6ae9f5;
+    box-shadow:
+      0 0 18px #6ae9f566,
+      inset 0 0 16px #05101a;
+  }
+  .force-art,
+  .ownership-art {
+    display: block;
+    position: relative;
+    width: 76px;
+    height: 54px;
+    margin: 0 0 8px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: 1px solid #6c929b;
+  }
+  .force-art :global(svg),
+  .ownership-art :global(svg) {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    bottom: -3px;
+    right: -3px;
+    padding: 3px;
+    background: #06131c;
+    border: 1px solid #8ca7ad;
+    border-radius: 50%;
+  }
+  .ownership-art {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 16px 0 0;
+  }
+  .control dd {
+    padding-left: 80px;
   }
   .phase-art :global(svg) {
     position: absolute;
@@ -400,6 +503,15 @@
     background: #06131ce6;
     border: 1px solid #7e9c9c;
     border-radius: 4px;
+  }
+  @media (min-width: 1000px) {
+    .losses {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .losses > div + div {
+      border-left: 1px solid #557781;
+      padding-left: 16px;
+    }
   }
   .control {
     border: 0;
@@ -507,9 +619,65 @@
       font-size: 32px;
       min-height: 84px;
     }
-    .phase-art {
+    .sequence {
+      --phase-size: 140px;
+    }
+  }
+  /* Full scene scale follows available space; bounded gallery/lab specimens
+     retain the same compact instrument rather than clipping a 4K heading. */
+  @container aftermath (min-width: 2300px) and (min-height: 1200px) {
+    .report-body {
+      max-width: 1800px;
+      padding: 64px 120px;
+      font-size: 34px;
+    }
+    .system-name {
+      font-size: 72px;
+    }
+    h2 {
+      font-size: 144px;
+    }
+    .recorded h2 {
+      margin-top: clamp(160px, 12svh, 280px);
+    }
+    .result {
+      font-size: 36px;
+    }
+    .sequence span {
+      font-size: 32px;
+    }
+    dd {
+      font-size: 64px;
+    }
+    footer {
+      width: min(100%, 1800px);
+      padding: 32px 120px max(32px, env(safe-area-inset-bottom));
+      font-size: 34px;
+    }
+    .arrival-instrument footer :global(button) {
+      font-size: 40px;
+      min-height: 112px;
+    }
+    .sequence {
+      --phase-size: 180px;
+      --phase-gap: 32px;
+    }
+    .force-art {
       width: 140px;
-      height: 140px;
+      height: 96px;
+    }
+    .ownership-art {
+      width: 100px;
+      height: 100px;
+      margin-right: 24px;
+    }
+    .control dd {
+      padding-left: 124px;
+    }
+    .phase-art :global(svg) {
+      width: 44px;
+      height: 44px;
+      padding: 8px;
     }
   }
   @media (max-width: 760px) {
@@ -535,11 +703,17 @@
       font-size: 17px;
     }
     .sequence {
-      gap: 8px;
+      --phase-gap: 8px;
+      --phase-size: 74px;
     }
-    .phase-art {
-      width: 74px;
-      height: 74px;
+    .ownership-art {
+      width: 42px;
+      height: 42px;
+      margin-right: 8px;
+    }
+    .control dd {
+      padding-left: 0;
+      clear: both;
     }
     .sequence span {
       font-size: 13px;
