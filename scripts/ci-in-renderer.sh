@@ -26,7 +26,10 @@ case "$1" in
     bun run lint
     bun run test
     bun run test:story-policy
-    bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'
+    CLUSTER_PROFILE_INGRESS_DIAGNOSTICS=1 \
+      CLUSTER_PROFILE_INGRESS_LOG="$PWD/ci-evidence/profile-ingress.jsonl" \
+      NODE_OPTIONS="${NODE_OPTIONS:-} --import=$PWD/scripts/profile-ingress-observer.mjs" \
+      bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'
     ;;
   *) exit 2 ;;
 esac

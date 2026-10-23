@@ -1,0 +1,40 @@
+{
+  "run": 39917587574,
+  "head": "9f889ead990ee21728c1dab78de5e55fbc6b1e5d",
+  "artifact": {
+    "id": 12486095865,
+    "bytes": 48059405,
+    "sha256": "ccee2263400fca1358fa2edadeac082e76eb8f1782dc82d3eaab1c814a236e09"
+  },
+  "target": {
+    "eventTag": "786901caff961e569400087e3f89c314595839d9e749a73c22f2dda899ee4b37",
+    "commandTag": "ed2faef65ab627eaa818bfea7ce803560634bc5b40c61e15e5d4d1f323d3b0b2",
+    "type": "google.firebase.database.ref.v1.created",
+    "stage": "TRIGGERED",
+    "evaluatedAt": "2026-10-23T07:31:06.361Z",
+    "auditLine": 430,
+    "auditAt": "07:31:06.362",
+    "matchingEventAuditCount": 1,
+    "handlerEntryCount": 0,
+    "transactionSettledCount": 0,
+    "receiptStatus": 404,
+    "profileStatus": 404
+  },
+  "database": {
+    "profileTriggeredCount": 114,
+    "publisherErrors": 1,
+    "publisherErrorAt": "07:31:06.371",
+    "publisherError": "java.net.SocketException: Connection reset",
+    "publisherErrorHasEventId": false
+  },
+  "limits": [
+    "The publisher error is namespace-scoped, not correlated to the target event.",
+    "No firebase-debug.log in archive; HTTP acceptance/queue/worker boundary is absent.",
+    "No application or emulator root cause established."
+  ],
+  "correlation": {
+    "uniqueTriggeredEvents": 114,
+    "uniqueEnteredEvents": 113,
+    "triggeredWithoutEntry": 1
+  }
+}
