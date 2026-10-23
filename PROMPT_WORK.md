@@ -704,3 +704,5 @@ Prompt 124 | eb2b94643e064bae3f92743c2e4151b2390b99403e386da1ff32c12011c4b0ed | 
 Prompt 126 | 56eaa9a991fdb80ba6fc9e9d3a222e1405d7927f3eef94d094f35c0eb949d07e | Align entry hierarchy with approved cinematic plate and document four-size retained-screen design deviations
 
 Prompt 126 | 56eaa9a991fdb80ba6fc9e9d3a222e1405d7927f3eef94d094f35c0eb949d07e | Retain four-size Nix entry candidates and side-by-side approved-design comparison without baseline promotion
+
+Prompt 127 | 61820531933547e8f1cdcb61051374836539034263e81355cd8aadab3569cdbb | Preserve clean four-size integrated-title candidates and feature-layout provenance for independent design review

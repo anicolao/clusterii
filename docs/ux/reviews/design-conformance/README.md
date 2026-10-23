@@ -17,3 +17,11 @@ Execution uses recovered `nix develop /tmp/pantheon-nix-env --command …`, veri
 ## Changed-source evidence
 
 Clean `4129971` production; unchanged `entry.story.spec.ts`. Nix generation passed4 journeys/24 candidates in30.0s, retries0 and unchanged readiness/geometry/deadlines. Complete originals/manifests/generated stories: `/tmp/cluster-entry-design-candidates/learn-and-return/`. Four entry frames committed here and paired with plate01 in comparison.html. Keyboard opening and closing Learn/focus restoration passed at each size with reduced motion. All candidate images remain unapproved; no baseline bytes changed. Returning memberships, normal motion and full fresh galaxy render acceptance remain open.
+
+## Integrated title and feature-local delivery
+
+85b79b7 adds the integrated decorative star/ring while preserving accessible real title text. Four production entry/Learn journeys passed30.4s in Nix, producing24 new candidates at `/tmp/cluster-entry-insignia-candidates/learn-and-return/`; specSHA256 `4f2b998a5e2d86b1409b018e0168fe8a9892b04b51d0dd71755ec83581890aed`. All manifests record clean85b79b7. New four entry images and side-by-side plate comparison are committed; the earlier4129971 candidates remain separately retained and unapproved. No promotion/strict-comparison claim.
+
+Actual Pantheon feature layout adopted for this screen at `tests/e2e/001-entry`: spec, README, FIDELITY, screenshots and stories, with common helpers. Runner discovers feature and legacy suites once. Exact comparison/promotion/archive paths follow source feature. Previously reviewed screenshots and JSON provenance moved byte-for-byte; README relative image links repaired. The old source paths inside immutable provenance remain historical. Static check, policy check, three policy tests and four-project discovery pass.
+
+#114 is based on #113. Entry production treatment and four-size anonymous/Learn evidence are ready for independent design review; returning-account layout and normal-motion evidence remain open. Galaxy dock/system-scene mismatches documented above are the next production slice, not delivered by this entry PR. All broader release gates remain open.
