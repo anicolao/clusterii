@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -112,9 +113,7 @@ for (const mode of ["mock", "real"] as const)
       const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
       await startDueCampaign(id, start);
       const page = pages[0];
-      await expect(
-        page.getByText("Campaign begun", { exact: true }),
-      ).toBeVisible();
+      await acknowledgeCampaignStart(page);
       const {
         settleCampaignTicks,
       } = require("./lib/functions/src/production.js");
@@ -125,7 +124,7 @@ for (const mode of ["mock", "real"] as const)
         settled += count;
       }
       expect(settled).toBe(12);
-      await page.getByRole("button", { name: "Economy", exact: true }).click();
+      await openGalaxyCommand(page, "Economy");
       await expect(
         page.getByText("Confirmed tick 12", { exact: true }),
       ).toBeVisible();
@@ -133,9 +132,7 @@ for (const mode of ["mock", "real"] as const)
         .getByRole("button", { name: "Return to galaxy", exact: true })
         .click();
       const open = async () => {
-        await page
-          .getByRole("button", { name: "History", exact: true })
-          .click();
+        await openGalaxyCommand(page, "History");
         await page
           .getByRole("button", { name: "Since your last visit", exact: true })
           .click();
@@ -216,9 +213,7 @@ for (const mode of ["mock", "real"] as const)
         before,
       );
       await page.reload();
-      await expect(
-        page.getByText("Campaign begun", { exact: true }),
-      ).toBeVisible();
+      await acknowledgeCampaignStart(page);
       await open();
       await expect(panel).toContainText("through confirmed tick 12");
       await expect(panel).not.toContainText("through confirmed tick 13");
@@ -239,9 +234,7 @@ for (const mode of ["mock", "real"] as const)
         before + 1,
       );
       await page.reload();
-      await expect(
-        page.getByText("Campaign begun", { exact: true }),
-      ).toBeVisible();
+      await acknowledgeCampaignStart(page);
       await open();
       await expect(panel).toContainText(
         "From tick 12 through confirmed tick 13",
@@ -267,11 +260,11 @@ for (const mode of ["mock", "real"] as const)
       await expect(panel).toHaveCount(0);
       await page.goto("./");
       await page.getByRole("button", {name:`Continue ${campaignName}`,exact:true}).click();
-      await expect(page.getByText("Campaign begun", {exact:true})).toBeVisible();
-      await expect(panel).toHaveCount(0);
       await expect(page.locator("#galaxy-heading")).toBeFocused();
+      await acknowledgeCampaignStart(page);
+      await expect(panel).toHaveCount(0);
       const other = pages[1];
-      await other.getByRole("button", { name: "History", exact: true }).click();
+      await openGalaxyCommand(other, "History");
       await other
         .getByRole("button", { name: "Since your last visit", exact: true })
         .click();

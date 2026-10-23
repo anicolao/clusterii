@@ -1,5 +1,6 @@
 <script lang="ts">
   import GameMenu from "../GameMenu.svelte";
+  import CommandIcon from "../CommandIcon.svelte";
   import type { ResearchDraft, RecoveredResearch } from "$lib/research-draft";
   import {
     refreshMarketDraft,
@@ -48,7 +49,10 @@
   import type { CampaignView } from "@shared/campaign";
   import ChartControls from "./ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
-  import StellarArt from "../StellarArt.svelte";
+  import WorldArt from "../WorldArt.svelte";
+  import SystemLayers from "../SystemLayers.svelte";
+  import FleetSymbol from "../FleetSymbol.svelte";
+  import { layer as developmentLayer, type Layer } from "@shared/construction";
   import CampaignMaintenance from "../CampaignMaintenance.svelte";
   import CampaignRoster from "../CampaignRoster.svelte";
   import Feedback from "../Feedback.svelte";
@@ -187,6 +191,31 @@
     void openPanel("military");
   });
   let observation = $state(false);
+  let expanded = $state(false);
+  let selectedLayer = $state<Layer | null>(null);
+  let inspectorHeading: HTMLHeadingElement;
+  async function inspectSystem() {
+    expanded = true;
+    await tick();
+    if (inspectorHeading?.isConnected && expanded) inspectorHeading.focus();
+  }
+  async function collapseSystem() {
+    expanded = false;
+    observation = false;
+    await tick();
+    if (inspectorHeading?.isConnected)
+      document
+        .querySelector<HTMLButtonElement>(".galaxy-surface .inspect-system")
+        ?.focus();
+  }
+  function buildLayer(area: Layer) {
+    if (busy || pending) return;
+    selectedLayer = area;
+    if (developmentLayer(constructionChoice) !== area)
+      constructionChoice = area === "orbit" ? "camp" : "base";
+    void openPanel("construction");
+  }
+  let more = $state(false);
   let construction = $state(false);
   let constructionChoice = $state<Development>("market");
   let resumedConstruction = "";
@@ -210,6 +239,7 @@
     selected = starId;
     constructionChoice =
       action.kind === "construction.build" ? action.type : order!.type;
+    selectedLayer = developmentLayer(constructionChoice);
     void openPanel("construction");
   });
   let economy = $state(false);
@@ -322,6 +352,8 @@
     briefingOpen = false;
     if (event.destination === "system" && event.starId) {
       selected = event.starId;
+      expanded = true;
+      more = false;
       observation = true;
       await tick();
       document.querySelector<HTMLElement>(".system-details")?.focus();
@@ -701,6 +733,9 @@
   async function inspectArrival(starId: string) {
     arrivalsOpen = false;
     selected = starId;
+    expanded = true;
+    selectedLayer = "surface";
+    more = false;
     cameraRequest = {
       action: "selected",
       starId,
@@ -818,11 +853,24 @@
     document.querySelector<HTMLElement>('[data-focus="economy"]')?.focus();
   }
   async function closeConstruction() {
+    expanded = true;
+    selectedLayer = developmentLayer(constructionChoice);
     construction = false;
     await tick();
-    document.querySelector<HTMLElement>('[data-focus="construction"]')?.focus();
+    if (!inspectorHeading?.isConnected) return;
+    const entry = document.querySelector<HTMLButtonElement>(
+      '[data-focus="construction"]',
+    );
+    if (entry && !entry.disabled) entry.focus();
+    else
+      document
+        .querySelector<HTMLButtonElement>(
+          `[data-focus="layer-${selectedLayer}"]`,
+        )
+        ?.focus();
   }
   async function closeMilitary() {
+    expanded = true;
     military = false;
     await tick();
     document.querySelector<HTMLElement>('[data-focus="military"]')?.focus();
@@ -897,10 +945,11 @@
   );
 </script>
 
-<div class="galaxy-surface">
+<div class="galaxy-surface" class:before-start={view.phase !== "active"}>
   <header
     class="command-rail"
-    inert={roster ||
+    inert={more ||
+      roster ||
       listing ||
       briefingOpen ||
       history ||
@@ -919,15 +968,38 @@
           : "Development · Rules under review"}</span
       >
     </div>
-    <div class="campaign-facts">
-      {#if view.empire}<span
-          >Credits <strong>{view.empire.creditsMilli / 1000}</strong></span
-        >{/if}<span
-        >{view.phase === "active"
-          ? "Campaign begun"
-          : `${view.roster.length} / ${view.capacity} empires`}</span
-      >
-    </div>
+    {#if view.phase === "active"}
+      <div class="campaign-facts" aria-label="Empire resources">
+        <span
+          >Credits <strong
+            >{view.empire
+              ? (view.empire.creditsMilli / 1000).toLocaleString("en-US")
+              : "—"}</strong
+          ></span
+        >
+        <span
+          >Science · last tick <strong
+            >{view.economy?.ledger
+              ? (view.economy.ledger.scienceMilli / 1000).toLocaleString(
+                  "en-US",
+                )
+              : "—"}</strong
+          ></span
+        >
+        <span
+          >Next tick <strong
+            >{view.pausedAt != null
+              ? "Paused"
+              : view.production
+                ? new Date(view.production.nextTickAt).toLocaleTimeString(
+                    "en-US",
+                    { hour: "2-digit", minute: "2-digit", timeZone: "UTC" },
+                  ) + " UTC"
+                : "After start"}</strong
+          ></span
+        >
+      </div>
+    {/if}
     <ActionButton
       class="quiet"
       onclick={() => openPanel("roster")}
@@ -936,7 +1008,7 @@
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
     <GameMenu />
   </header>
-  {#if !roster && !commandKind.startsWith("conversation.") && !economy}<div
+  {#if !roster && !expanded && !more && !commandKind.startsWith("conversation.") && !economy}<div
       class="acknowledgement"
       inert={listing ||
         briefingOpen ||
@@ -948,7 +1020,12 @@
         construction ||
         military}
     >
-      <Feedback {message} {error} />{#if onretry}<ActionButton
+      <Feedback
+        message={view.phase === "active" && commandKind === "campaign.join"
+          ? ""
+          : message}
+        {error}
+      />{#if onretry}<ActionButton
           disabled={busy}
           class="secondary"
           onclick={onretry}
@@ -958,7 +1035,8 @@
   <div
     class="chart"
     data-galaxy-viewport
-    inert={roster ||
+    inert={more ||
+      roster ||
       listing ||
       briefingOpen ||
       history ||
@@ -1008,7 +1086,8 @@
     >
   </div>
   <aside
-    inert={roster ||
+    inert={more ||
+      roster ||
       listing ||
       briefingOpen ||
       history ||
@@ -1020,31 +1099,57 @@
       military}
     class="system-inspector"
     class:observing={observation}
+    class:expanded
     class:active={view.phase === "active"}
     aria-label="Selected system"
   >
     <p class="overline gold">{star.class}-class star</p>
-    <h2><Icon kind="star" /> {star.name}</h2>
-    <div class="knowledge-tabs" role="group" aria-label="System information">
-      <ActionButton
-        class="secondary"
-        aria-pressed={!observation}
-        onclick={() => (observation = false)}>System</ActionButton
-      ><ActionButton
-        class="secondary"
-        aria-pressed={observation}
-        onclick={() => (observation = true)}>Observation</ActionButton
-      >
-    </div>
-    <!-- svelte-ignore a11y_no_noninteractive_tabindex (This bounded intelligence panel needs keyboard scrolling.) -->
+    <h2 bind:this={inspectorHeading} tabindex="-1">
+      <Icon kind="star" />
+      {star.name}
+    </h2>
+    {#if expanded}<div class="observation-access">
+        <ActionButton
+          class="quiet"
+          aria-pressed={observation}
+          onclick={() => (observation = !observation)}
+          >{observation ? "Return to system" : "Observation"}</ActionButton
+        >
+      </div>{/if}
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This bounded intelligence panel owns its keyboard scrolling.) -->
     <div
       class="system-details"
       role="region"
       aria-label="System details"
+      onkeydown={(event) => {
+        if (
+          event.target !== event.currentTarget ||
+          event.altKey ||
+          event.ctrlKey ||
+          event.metaKey ||
+          event.shiftKey
+        )
+          return;
+        if (event.key === "End" || event.key === "Home") {
+          event.preventDefault();
+          event.currentTarget.scrollTop =
+            event.key === "End" ? event.currentTarget.scrollHeight : 0;
+        }
+      }}
       tabindex="0"
     >
-      {#if observation}<SystemObservation {view} starId={star.id} />{:else}
-        <StellarArt stellarClass={star.class} />
+      {#if observation}<SystemObservation
+          {view}
+          starId={star.id}
+        />{:else if expanded}
+        <SystemLayers
+          {holding}
+          bind:selected={selectedLayer}
+          pending={busy || pending}
+          onbuild={view.productionEnabled && onbuild ? buildLayer : undefined}
+        />
+      {:else}
+        <WorldArt />
         <p>
           {view.phase === "active"
             ? "Your knowledge of this system"
@@ -1059,90 +1164,112 @@
             <dt>Surface</dt>
             <dd>{holding?.surface ?? "Unknown"}</dd>
           </div>
-          {#if holding}<div>
-              <dt>Fighters</dt>
-              <dd>{holding.fighters ?? "Unknown"}</dd>
-            </div>
-            <div>
-              <dt>Infantry</dt>
-              <dd>{holding.infantry ?? "Unknown"}</dd>
-            </div>
-            <div>
-              <dt>Markets / Camps</dt>
-              <dd>
-                {holding.markets ?? "Unknown"} / {holding.camps ?? "Unknown"}
-              </dd>
-            </div>
-            <div>
-              <dt>Bases / Stations</dt>
-              <dd>
-                {holding.bases ?? "Unknown"} / {holding.stations ?? "Unknown"}
-              </dd>
-            </div>
-            <div>
-              <dt>Held credits</dt>
-              <dd>
-                {holding.escrowMilli === undefined
-                  ? "Unknown"
-                  : holding.escrowMilli / 1000}
-              </dd>
-            </div>{/if}
         </dl>
       {/if}
     </div>
     <div class="system-actions">
-      {#if view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
-          class="secondary"
-          data-focus="military"
-          aria-expanded={military}
-          onclick={() => openPanel("military")}
-          >Fleets · {view.military.fleets.filter(
-            (f) => f.starId === star.id && f.travel?.status !== "traveling",
-          ).length}</ActionButton
+      {#if expanded}
+        <ActionButton class="secondary back-to-chart" onclick={collapseSystem}
+          >Back to galaxy</ActionButton
+        >
+        {#if view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
+            class="view-forces"
+            data-focus="military"
+            aria-expanded={military}
+            onclick={() => openPanel("military")}
+            ><FleetSymbol /> View forces</ActionButton
+          >{/if}
+      {:else}<ActionButton
+          class="inspect-system"
+          aria-expanded={false}
+          onclick={inspectSystem}>Inspect system</ActionButton
         >{/if}
-      {#if holding && view.productionEnabled && onbuild}<ActionButton
-          class="secondary"
-          data-focus="construction"
-          aria-expanded={construction}
-          onclick={() => openPanel("construction")}>Develop</ActionButton
-        >{/if}
+    </div>
+  </aside>
+  <!-- svelte-ignore a11y_no_noninteractive_element_interactions (Delegated Escape closes the command tray from its real buttons.) -->
+  <nav
+    class="command-dock"
+    aria-label="Galaxy commands"
+    onkeydown={(event) => {
+      if (event.key === "Escape" && more) {
+        event.preventDefault();
+        more = false;
+        document
+          .querySelector<HTMLButtonElement>('[data-focus="more"]')
+          ?.focus();
+      }
+    }}
+    inert={roster ||
+      listing ||
+      briefingOpen ||
+      history ||
+      contactsOpen ||
+      arrivalsOpen ||
+      conversationsOpen ||
+      economy ||
+      construction ||
+      military}
+  >
+    <div class="dock-primary">
+      <ActionButton
+        class="quiet"
+        onclick={() => {
+          expanded = false;
+          observation = false;
+          more = false;
+        }}>Galaxy</ActionButton
+      >
+      <ActionButton
+        class="quiet"
+        aria-expanded={more}
+        data-focus="more"
+        aria-controls="galaxy-destinations"
+        onclick={() => (more = !more)}>More</ActionButton
+      >
+    </div>
+    <div id="galaxy-destinations" class="dock-destinations" class:open={more}>
       <ActionButton
         class="secondary"
         onclick={() => openPanel("systems")}
         data-focus="systems-list"
-        aria-expanded={listing}>Systems list</ActionButton
+        aria-expanded={listing}
+        ><CommandIcon kind="systems" /> Systems list</ActionButton
       >
       {#if loadHistory && onconversation}<ActionButton
           class="secondary"
           data-focus="conversations"
           aria-expanded={conversationsOpen}
           onclick={() => openPanel("conversations")}
-          >Conversations{#if view.conversations?.some((r) => r.invited || r.unread)}{" · New"}{/if}</ActionButton
+          ><CommandIcon kind="conversations" /> Conversations{#if view.conversations?.some((r) => r.invited || r.unread)}{" · New"}{/if}</ActionButton
         >{/if}
       {#if loadHistory}<ActionButton
           class="secondary"
           data-focus="arrivals"
           aria-expanded={arrivalsOpen}
-          onclick={() => openPanel("arrivals")}>Arrival reports</ActionButton
+          onclick={() => openPanel("arrivals")}
+          ><CommandIcon kind="arrivals" /> Arrival reports</ActionButton
         ><ActionButton
           class="secondary"
           data-focus="contacts"
           aria-expanded={contactsOpen}
-          onclick={() => openPanel("contacts")}>Fleet contacts</ActionButton
+          onclick={() => openPanel("contacts")}
+          ><CommandIcon kind="contacts" /> Fleet contacts</ActionButton
         ><ActionButton
           class="secondary"
           data-focus="history"
           aria-expanded={history}
-          onclick={() => openPanel("history")}>History</ActionButton
+          onclick={() => openPanel("history")}
+          ><CommandIcon kind="history" /> History</ActionButton
         >{/if}
       <ActionButton
         class="secondary"
         data-focus="economy"
         aria-expanded={economy}
-        onclick={() => openPanel("economy")}>Economy</ActionButton
+        onclick={() => openPanel("economy")}
+        ><CommandIcon kind="economy" /> Economy</ActionButton
       >
     </div>
-  </aside>
+  </nav>
   {#if conversationsOpen && onconversation}<div
       class="construction-panel contact-panel history-panel"
       role="dialog"
@@ -1474,20 +1601,6 @@
 </div>
 
 <style>
-  .knowledge-tabs {
-    display: flex;
-    gap: 8px;
-    flex: none;
-  }
-  .knowledge-tabs :global(button) {
-    min-height: 44px;
-    flex: 1;
-    padding: 8px;
-  }
-  .knowledge-tabs :global([aria-pressed="true"]) {
-    border-color: #7ce9fa;
-    background: #143944;
-  }
   .construction-panel {
     position: absolute;
     inset: 58px 0 0;
@@ -1926,6 +2039,481 @@
     }
     .system-results {
       flex: 1;
+    }
+  }
+  /* Galaxy commands belong to the scene, never to the selected subject. */
+  .command-rail {
+    gap: 16px;
+  }
+  .campaign-facts {
+    margin-left: auto;
+    gap: clamp(16px, 3vw, 60px);
+  }
+  .campaign-facts span {
+    display: grid;
+    gap: 2px;
+    white-space: nowrap;
+    font-size: 11px;
+  }
+  .campaign-facts strong {
+    font-size: 18px;
+    color: #e8dcc1;
+    font-weight: 400;
+  }
+  .command-dock {
+    position: absolute;
+    z-index: 4;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    left: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #102331ee, #071019f5);
+    border: 1px solid #9e8b6555;
+    box-shadow: 0 8px 30px #0009;
+    padding: 8px;
+  }
+  .dock-primary {
+    display: none;
+  }
+  .dock-destinations {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dock-destinations :global(button) {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-color: transparent;
+    color: #d9dfdf;
+    min-height: 48px;
+  }
+  .dock-destinations :global(button:hover) {
+    border-color: #b8a478;
+    background: #203545;
+  }
+  .system-inspector {
+    width: clamp(310px, 26vw, 560px);
+    top: 84px;
+    bottom: 100px;
+    max-height: none;
+    padding: 20px;
+  }
+  .system-inspector:not(.expanded) {
+    bottom: auto;
+    max-height: calc(100% - 184px);
+  }
+  .system-inspector h2 {
+    margin: 4px 0 12px;
+  }
+  .system-inspector .overline {
+    margin: 0;
+  }
+  .system-inspector dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .system-inspector dl > div {
+    display: grid;
+    padding: 10px;
+    background: #16303a66;
+    border: 1px solid #b7a57333;
+  }
+  .system-inspector dd {
+    margin: 4px 0 0;
+  }
+  .system-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .system-actions :global(.inspect-system) {
+    grid-column: 1 / -1;
+    background: linear-gradient(#236c83, #164252);
+    border-color: #7cbcca;
+    color: #f1f6ef;
+  }
+  .chart {
+    inset: 58px 19% 80px 0;
+  }
+  @media (min-width: 2500px) {
+    .system-inspector {
+      top: 130px;
+      bottom: 140px;
+      width: 28vw;
+      padding: 32px;
+    }
+    .system-inspector:not(.expanded) {
+      max-height: calc(100% - 280px);
+    }
+    .campaign-facts span {
+      font-size: 18px;
+    }
+    .campaign-facts strong {
+      font-size: 30px;
+    }
+    .command-dock {
+      bottom: 24px;
+      padding: 16px;
+    }
+    .dock-destinations :global(button) {
+      font-size: 24px;
+      min-height: 68px;
+      padding-inline: 24px;
+    }
+    .chart {
+      top: 90px;
+      bottom: 120px;
+    }
+  }
+  @media (max-width: 700px) {
+    .command-rail {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto;
+      gap: 2px 6px;
+      padding: 6px 12px;
+    }
+    .command-rail > div:first-child {
+      margin: 0;
+      min-width: 0;
+    }
+    .command-rail .campaign-facts {
+      display: flex;
+      grid-row: 2;
+      grid-column: 1 / -1;
+      width: 100%;
+      margin: 0;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 7px 0 2px;
+    }
+    .campaign-facts span {
+      font-size: 10px;
+    }
+    .campaign-facts strong {
+      font-size: 15px;
+    }
+    .command-rail :global(button) {
+      padding-inline: 7px;
+    }
+    .chart {
+      inset: 110px 0 calc(44svh + 82px) 0;
+    }
+    .before-start .chart {
+      top: 58px;
+    }
+    .before-start .acknowledgement {
+      top: 66px;
+    }
+    .system-inspector,
+    .system-inspector:not(.expanded),
+    .system-inspector.active,
+    .system-inspector.observing {
+      inset: auto 8px 74px;
+      height: auto;
+      max-height: 44%;
+      width: auto;
+      padding: 12px;
+    }
+    .system-inspector.expanded,
+    .system-inspector.active.expanded {
+      top: 114px;
+      height: auto;
+      max-height: none;
+    }
+    .before-start .system-inspector.expanded,
+    .before-start .system-inspector.active.expanded {
+      top: 64px;
+    }
+    .system-inspector h2 {
+      font-size: 24px;
+      margin: 0 0 6px;
+    }
+    .system-inspector .overline {
+      font-size: 10px;
+    }
+    .system-inspector dl {
+      margin: 8px 0;
+    }
+    .system-inspector dl > div {
+      padding: 6px;
+    }
+    .system-inspector:not(.expanded) .system-details :global(.world-art) {
+      aspect-ratio: 4;
+    }
+    .system-inspector:not(.expanded) .system-details > p {
+      margin: 4px 0;
+      font-size: 12px;
+    }
+    .system-actions {
+      padding-top: 4px;
+      gap: 6px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .system-actions :global(button) {
+      min-height: 44px;
+      font-size: 13px;
+    }
+    .system-actions :global(.inspect-system) {
+      grid-column: auto;
+    }
+    .command-dock {
+      inset: auto 8px max(8px, env(safe-area-inset-bottom));
+      padding: 0;
+    }
+    .dock-primary {
+      display: flex;
+      width: 100%;
+    }
+    .dock-primary :global(button) {
+      flex: 1;
+      min-height: 52px;
+    }
+    .dock-destinations {
+      display: none;
+    }
+    .dock-destinations.open {
+      position: absolute;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      bottom: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      max-height: 50svh;
+      overflow: auto;
+      padding: 12px;
+      background: #0b1b27;
+      border: 1px solid #b7a573;
+      box-shadow: 0 -16px 40px #000a;
+    }
+    .acknowledgement {
+      top: 110px;
+    }
+  }
+  @media (max-width: 700px) {
+    .command-dock {
+      justify-content: space-around;
+    }
+    .dock-primary {
+      display: contents;
+    }
+    .dock-primary :global(button) {
+      flex: 1;
+      font-size: 13px;
+    }
+    .dock-primary :global(button:last-child) {
+      order: 4;
+    }
+    .dock-destinations {
+      display: contents;
+    }
+    .dock-destinations :global(button) {
+      display: none;
+    }
+    .dock-destinations :global(button[data-focus="economy"]),
+    .dock-destinations :global(button[data-focus="conversations"]) {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 2px;
+      padding: 4px;
+      font-size: 12px;
+      min-height: 52px;
+    }
+    .dock-destinations :global(button[data-focus="economy"]) {
+      order: 1;
+    }
+    .dock-destinations :global(button[data-focus="conversations"]) {
+      order: 2;
+    }
+    .dock-destinations.open :global(button) {
+      display: flex;
+      flex-direction: row;
+      font-size: 13px;
+      order: initial;
+    }
+  }
+  .system-inspector:not(.expanded) dl {
+    display: block;
+  }
+  .system-inspector:not(.expanded) dl > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #9eabaf44;
+    background: transparent;
+    padding: 8px 0;
+  }
+  .system-inspector:not(.expanded) dd {
+    margin: 0;
+  }
+  .system-inspector {
+    border-radius: 12px;
+  }
+  .system-inspector:not(.expanded) .system-actions :global(.inspect-system) {
+    grid-column: 1 / -1;
+  }
+  @media (min-width: 701px) {
+    .system-inspector.expanded {
+      left: 24px;
+      right: 24px;
+      width: auto;
+    }
+    .system-inspector.expanded .system-details {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+      grid-template-rows: auto 1fr;
+      gap: 0 28px;
+    }
+    .system-inspector.expanded .system-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .system-inspector.expanded .system-actions :global(button) {
+      min-width: 180px;
+    }
+  }
+  @media (max-width: 700px) {
+    .system-inspector:not(.expanded) .system-details :global(.world-art img) {
+      object-position: center;
+    }
+    .system-inspector:not(.expanded) .system-actions {
+      grid-template-columns: 1fr 1fr;
+    }
+    .system-inspector:not(.expanded) dl > div {
+      padding: 6px 0;
+    }
+    .system-inspector:not(.expanded) .system-details :global(.world-art) {
+      aspect-ratio: 2.3;
+    }
+  }
+  .system-inspector.expanded dd {
+    margin: 0;
+  }
+  .campaign-facts strong {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 23px;
+  }
+  @media (min-width: 701px) {
+    .system-inspector.expanded .system-details {
+      display: block;
+      position: relative;
+      isolation: isolate;
+    }
+  }
+  @media (min-width: 2500px) {
+    .campaign-facts strong {
+      font-size: 36px;
+    }
+  }
+  @media (min-width: 701px) and (max-height: 800px) {
+  }
+  @media (max-width: 700px) {
+    .campaign-facts strong {
+      font-size: 20px;
+    }
+  }
+  .system-inspector.expanded .system-details {
+    display: block;
+    position: relative;
+  }
+  .system-inspector.expanded {
+    padding: 20px;
+  }
+  .observation-access {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+  }
+  .observation-access :global(button) {
+    min-height: 44px;
+    padding: 8px 12px;
+  }
+  .system-inspector.expanded h2 {
+    padding-right: 190px;
+  }
+  .system-inspector.expanded .system-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    gap: 16px;
+  }
+  .system-actions :global(.view-forces),
+  .system-actions :global(.back-to-chart) {
+    min-height: 58px;
+    min-width: 220px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 20px;
+  }
+  .system-actions :global(.view-forces) {
+    background: linear-gradient(#286d82, #164352);
+  }
+  @media (min-width: 2500px) {
+    .system-inspector.expanded {
+      padding: 32px;
+    }
+    .system-inspector.expanded h2 {
+      font-size: 64px;
+      padding-right: 300px;
+    }
+    .observation-access {
+      top: 28px;
+      right: 32px;
+    }
+    .observation-access :global(button) {
+      font-size: 28px;
+      min-height: 72px;
+    }
+    .system-actions :global(.view-forces),
+    .system-actions :global(.back-to-chart) {
+      min-height: 92px;
+      min-width: 380px;
+      font-size: 34px;
+    }
+    .system-actions :global(.view-forces svg) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  @media (max-width: 700px) {
+    .system-inspector.expanded {
+      padding: 12px;
+    }
+    .system-inspector.expanded h2 {
+      padding-right: 0;
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+    .observation-access {
+      position: static;
+      align-self: flex-end;
+      margin-top: -6px;
+    }
+    .observation-access :global(button) {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+    .system-inspector.expanded .system-actions {
+      padding-top: 10px;
+      gap: 8px;
+    }
+    .system-actions :global(.view-forces),
+    .system-actions :global(.back-to-chart) {
+      min-width: 0;
+      flex: 1;
+      min-height: 50px;
+      font-size: 14px;
+      padding: 8px;
+      gap: 8px;
     }
   }
 </style>

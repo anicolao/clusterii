@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openForces } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -71,13 +72,11 @@ test("ordinary commanders preview, send and recover a real fleet route", async (
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
+    await acknowledgeCampaignStart(page);
     const inspector = page.getByRole("complementary", {
       name: "Selected system",
     });
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     const panel = page.getByRole("region", {
       name: "Fleet preparation",
       exact: true,
@@ -210,7 +209,7 @@ test("ordinary commanders preview, send and recover a real fleet route", async (
     );
     await expect(details.getByRole("status")).toContainText("departure tick 2");
     await page.reload();
-    await inspector.getByRole("button", { name: /Fleets/ }).click();
+    await openForces(page);
     await panel.getByRole("button", { name: fleetName, exact: true }).click();
     await panel.getByRole("button", { name: "Plot route" }).click();
     await expect(details.getByRole("status")).toContainText("Route accepted");
@@ -273,7 +272,7 @@ test("ordinary commanders preview, send and recover a real fleet route", async (
     ).toBeFocused();
     await expect(panel).toContainText(`Stationed at ${nextLabel.slice(4, -9)}`);
     await page.reload();
-    await inspector.getByRole("button", { name: /Fleets/ }).click();
+    await openForces(page);
     await panel.getByRole("button", { name: fleetName, exact: true }).click();
     await expect(panel).toContainText(`Stationed at ${nextLabel.slice(4, -9)}`);
   } finally {

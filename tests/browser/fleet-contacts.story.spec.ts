@@ -1,3 +1,4 @@
+import { openForces, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
@@ -413,12 +414,8 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       description:
         "The owner opens fleet preparation while the observer checks their own contact records before any fleet exists.",
       action: async () => {
-        await owner
-          .getByRole("complementary", { name: "Selected system" })
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
-        await button(observer, "Fleet contacts").focus();
-        await button(observer, "Fleet contacts").press("Enter");
+        await openForces(owner, 0);
+        await openGalaxyCommand(observer, "Fleet contacts", true);
       },
       acknowledgement: {
         spec: "Authorized contact history is loaded and contains no fleet contact.",
@@ -602,16 +599,12 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
         "Reload both accounts and use ordinary controls to recover the owner's fleet and the observer's last-seen history.",
       action: async () => {
         await owner.reload();
-        await owner
-          .getByRole("complementary", { name: "Selected system" })
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .click();
+        await openForces(owner, 1);
         await fleetPanel(owner)
           .getByRole("button", { name: `Fleet ${fleet.number}`, exact: true })
           .click();
         await observer.reload();
-        await button(observer, "Fleet contacts").focus();
-        await button(observer, "Fleet contacts").press("Enter");
+        await openGalaxyCommand(observer, "Fleet contacts", true);
       },
       acknowledgement: {
         spec: "The original last-seen report survives loss of in-memory contact state and the owner recovers the same fleet.",

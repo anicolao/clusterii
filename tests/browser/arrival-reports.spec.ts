@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openForces, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -72,9 +73,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
+    await acknowledgeCampaignStart(page);
     const {
       settleCampaignTicks,
     } = require("./lib/functions/src/production.js");
@@ -105,9 +104,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
       name: "Selected system",
     });
     async function research(target: string) {
-      await inspector
-        .getByRole("button", { name: "Economy", exact: true })
-        .click();
+      await openGalaxyCommand(page, "Economy");
       const panel = page.getByRole("region", {
         name: "Research selection",
         exact: true,
@@ -162,7 +159,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
       exact: true,
     });
     async function form(fighters: number, infantry: number) {
-      await inspector.getByRole("button", { name: /Fleets/ }).click();
+      await openForces(page);
       await panel
         .getByLabel("Fighters", { exact: true })
         .fill(String(fighters));
@@ -240,11 +237,11 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
     state = await canonical();
     expect(state.systems[target].orbit).toBe(uid);
     expect(state.systems[target].surface).toBe(state.seats[1].uid);
-    const open = inspector.getByRole("button", {
+    const open = page.getByRole("button", {
       name: "Arrival reports",
       exact: true,
     });
-    await open.click();
+    await openGalaxyCommand(page, "Arrival reports");
     const reports = page.getByRole("region", {
       name: "Arrival reports",
       exact: true,
@@ -282,7 +279,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
     await page.keyboard.press("Escape");
     await expect(open).toBeFocused();
     await page.reload();
-    await open.click();
+    await openGalaxyCommand(page, "Arrival reports");
     await expect(
       reports.getByRole("heading", { name: "Orbit secured", exact: true }),
     ).toBeVisible();
@@ -294,10 +291,9 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
       inspector.getByRole("region", { name: "System details" }),
     ).toBeFocused();
     await expect(inspector).toContainText(targetStar.name);
+    await expect(inspector.getByRole("button", { name: /^Inspect Surface · owner / })).toHaveAttribute("aria-expanded", "true");
     // Return to our real home before forming the second wave.
-    await inspector
-      .getByRole("button", { name: "Systems list", exact: true })
-      .click();
+    await openGalaxyCommand(page, "Systems list");
     await page
       .getByRole("button", { name: "Center home", exact: true })
       .click();
@@ -311,7 +307,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
     // same troops again through the ordinary cargo interface before each leg.
     for (const [index, starId] of route.entries()) {
       if (index > 0) {
-        await inspector.getByRole("button", { name: /Fleets/ }).click();
+        await openForces(page);
         await panel
           .getByRole("button", { name: `Fleet ${second}`, exact: true })
           .click();
@@ -349,7 +345,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
       (r: any) => r.starId === target,
     ).detail.releasedEscrowMilli;
     expect(released).toBeGreaterThan(0);
-    await open.click();
+    await openGalaxyCommand(page, "Arrival reports");
     // A new report does not replace the record already being read.
     await expect(
       reports.getByRole("heading", { name: "Orbit secured", exact: true }),
@@ -369,9 +365,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
     );
     await evidence("conquest");
     const defender = pages[1];
-    await defender
-      .getByRole("button", { name: "Arrival reports", exact: true })
-      .click();
+    await openGalaxyCommand(defender, "Arrival reports");
     const defenderReport = defender.getByRole("region", {
       name: "Arrival reports",
       exact: true,
@@ -395,7 +389,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
     state = await canonical();
     expect(state.economy.ledger[uid].releasedEscrowMilli).toBe(0);
     await page.reload();
-    await open.click();
+    await openGalaxyCommand(page, "Arrival reports");
     await expect(reports).toContainText(
       `${released / 1000} held credits released to you once.`,
     );

@@ -1,0 +1,250 @@
+{
+  "id": "galaxy-command-surface",
+  "title": "Inspect a system without losing the galaxy",
+  "inventory": [
+    "UX-02",
+    "UX-03",
+    "UX-04",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "Four ordinary authenticated players create, join and start one real campaign. The owner reads authorized resources, expands the independent ownership layers and uses the global dock without issuing an order. Developer entitlement, fixed catalogue/domain clock and real scheduler HTTP delivery are explicit harness controls, not injected seats or hosted scheduling evidence.",
+  "source": {
+    "commit": "cefd8d1496acb85292fef13fa80975b8e6406828",
+    "dirty": false,
+    "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+    "specSha256": "95060f6d9a2cb7bf0f87adec882ccf7b3038c10432a693127a040ee82bf31579"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduled-start",
+      "description": "Deliver the real Scheduler HTTP request at the designated browser/domain boundary; no campaign or membership writes. This is not hosted cadence certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "read-galaxy",
+      "description": "Read the real started campaign, independent ownership layers and compact instrument rail before opening any order.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The authorized home view follows the acknowledged four-player start.",
+      "verifications": [
+        "Credits, last confirmed science and actual next scheduled tick remain readable on phone as well as desktop; the chart and inspector stay within the viewport."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "010-read-galaxy-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-independent-layers",
+      "description": "Expand the selected system through its real keyboard control and read separate orbital and surface holdings. Artwork is explicitly illustrative.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The same selected system expands without changing ownership.",
+      "verifications": [
+        "Authorized fields remain separate, and decorative art is not represented as sensor intelligence."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "011-inspect-independent-layers-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-lower-system-facts",
+      "description": "Focus the bounded system reading region and use End to read the lower authorized developments and held credits while retaining the contextual controls.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The held credits label is fully inside the bounded reading viewport.",
+      "verifications": [
+        "Keyboard reading does not move the page or replace the selected system."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "012-read-lower-system-facts-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "navigate-global-economy",
+      "description": "Collapse the system, open the global command dock and read Economy through the actual authorized projection.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The actual Empire economy panel opens with keyboard focus.",
+      "verifications": [
+        "The authorized economy provides an enabled return to the galaxy; this check does not certify command absence or peer privacy."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "013-navigate-global-economy-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-selected-system",
+      "description": "Close Economy with Escape and retain the selected system and accessible command opener.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The dock Economy opener regains focus.",
+      "verifications": [
+        "The same system remains selected after global navigation."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "014-return-to-selected-system-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "select-a-catalogued-system",
+      "description": "Use the factual systems list to select Saiph with the keyboard, then return to the compact inspector.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The actual selected system is Saiph and the same campaign remains open.",
+      "verifications": [
+        "Credits, last confirmed science and actual next scheduled tick remain readable on phone as well as desktop; the chart and inspector stay within the viewport."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "015-select-a-catalogued-system-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "retain-facts-with-lower-detail",
+      "description": "Use the actual local setting with normal motion permitted by the device, verify its outcome, then restore the declared reduced-motion capture environment. Selection and authorized resource text remain unchanged.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The menu closes and restores its opener after acknowledging the local setting.",
+      "verifications": [
+        "Authorized inspector and resource text match exactly; reduced decoration does not alter selected-system facts. This does not certify every canvas marker or hosted timing."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "016-retain-facts-with-lower-detail-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

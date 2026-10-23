@@ -1,0 +1,8 @@
+Candidate generation, not strict baseline comparison. Clean7bc1fd8f4f29dda330f3739c69496a9938270b7d
+Spec b1b42d3464a94d8f814e563cc7e77671a603b03165354662181fe6d1ef9e6f0c
+Raw log SHA256 f771fd40ff22c85afa908f1ff3a0e98bf548d644d04a52c04501188dd6817823
+  ✓  1 [phone] › tests/e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock (12.8s)
+  ✓  2 [desktop] › tests/e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock (11.8s)
+  ✓  3 [large] › tests/e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock (27.5s)
+  ✓  4 [short] › tests/e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock (10.1s)
+  4 passed (1.1m)

@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openGalaxyCommand, openForces } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -71,13 +72,11 @@ test("ordinary observers recover acquired and last-seen fleet contacts", async (
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
+    await acknowledgeCampaignStart(page);
     const inspector = page.getByRole("complementary", {
       name: "Selected system",
     });
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     const panel = page.getByRole("region", {
       name: "Fleet preparation",
       exact: true,
@@ -142,8 +141,7 @@ test("ordinary observers recover acquired and last-seen fleet contacts", async (
       name: "Fleet contacts",
       exact: true,
     });
-    await open.focus();
-    await observer.keyboard.press("Enter");
+    await openGalaxyCommand(observer, "Fleet contacts");
     const contacts = observer.getByRole("region", {
       name: "Fleet contacts",
       exact: true,
@@ -196,7 +194,7 @@ test("ordinary observers recover acquired and last-seen fleet contacts", async (
     await contacts.getByRole("button", { name: "Back to galaxy" }).click();
     await expect(open).toBeFocused();
     await observer.reload();
-    await open.click();
+    await openGalaxyCommand(observer, "Fleet contacts");
     await expect(contacts).toContainText("Last seen; current position unknown");
     await expect(
       contacts.getByRole("article", { name: "Selected fleet contact" }),

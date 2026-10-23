@@ -712,3 +712,22 @@ Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | 
 Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Retain real returning-entry label assertion failure and distinguish semantic label order from decorative chevrons
 
 Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Preserve four-size large-composition and genuine returning-account candidates with unchanged baseline review gates
+
+Prompt 129 | b8c303674ebd70c8d0a8e963e88c59f1b74eab806ad4c29f498401554b0f260a | Correct command tray interaction ownership and expanded feedback after retained phone rendering failure
+
+Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Refine expanded cinematic scene after four-size review and exercise factual selection and local detail preservation
+
+Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Preserve renderer-environment failure and distinguish normal-motion interaction from reduced-motion captures
+
+Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Keep the phone map and contact legend above the compact inspector after rendered boundary review
+
+Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Preserve passing 28-frame family and frame the full orbital station in the shallow desktop scene
+
+Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Preserve 28 clean-source candidate frames and generated stories with plate comparison and explicit acceptance gates
+
+Prompt 133 | 4caa4d0241c6214486b199a169903e58c6abb7b45f9d5bd1bd72815e3d8b8b75 | Correct reported illustrated navigation paths while preserving gameplay assertions, deadlines and reviewed baseline bytes.
+Prompt 135 | 69efaf807213ec1d2efef0f3044908fbe98444d4930b1757be3d5d226fe5500d | Preserve first layer run and scope construction close controls to the active panel before changed-source verification
+Prompt 135 | 69efaf807213ec1d2efef0f3044908fbe98444d4930b1757be3d5d226fe5500d | Archive four source-matched layer journeys and 44 unapproved candidates with first-failure and plate comparison evidence
+Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Correct measured eight-pixel focus intrusion and add waiting-rail and separate normal-motion keyboard verification
+Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Preserve passing focus evidence and correct observed waiting inspector anchoring with heading and rail containment
+Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Retain 48 corrected focus and waiting-rail candidates with four-size generation and separately scoped normal-motion evidence

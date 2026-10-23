@@ -1,3 +1,4 @@
+import { openConstruction } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type {
   Page,
@@ -339,7 +340,7 @@ for (const interrupted of [false, true])
         await button(owner, "Back to economy").click();
         await expect(button(owner, "Market focus")).toBeFocused();
         await button(owner, "Return to galaxy").click();
-        await button(owner, "Develop").click();
+        await openConstruction(owner, "Orbit");
         await panel(owner)
           .getByRole("radio", { name: /Training camp/ })
           .check();
@@ -349,7 +350,8 @@ for (const interrupted of [false, true])
         description:
           "Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel.",
         action: async () => {
-          for (const p of [owner, peer]) await button(p, "Develop").click();
+          await openConstruction(owner, "Orbit");
+          await openConstruction(peer, "Surface");
           await rail(owner);
           await panel(owner)
             .getByRole("radio", { name: /Training camp/ })
@@ -1067,11 +1069,11 @@ for (const interrupted of [false, true])
       await story.step("reload-reservation", {
         actor: aliases[0],
         description:
-          "Reload the accepted work and reopen Develop to recover the same queue and balance.",
+          "Reload the accepted work and reopen the Orbit construction entry to recover the same queue and balance.",
         action: async () => {
           await owner.reload();
           if (!(await panel(owner).isVisible()))
-            await button(owner, "Develop").click();
+            await openConstruction(owner, "Orbit");
         },
         acknowledgement: {
           spec: "The persisted queue remains eligible at tick1 with131 credits available.",
@@ -1380,7 +1382,7 @@ for (const interrupted of [false, true])
         action: async () => {
           await owner.reload();
           if (!(await panel(owner).isVisible()))
-            await button(owner, "Develop").click();
+            await openConstruction(owner, "Surface");
           await read(owner, panel(owner).getByText(/Base · cancelled/));
         },
         acknowledgement: {
@@ -1403,15 +1405,15 @@ for (const interrupted of [false, true])
       await story.step("keyboard-return", {
         actor: aliases[0],
         description:
-          "Return to the galaxy with Escape and recover the Develop control's focus.",
+          "Return to the galaxy with Escape and recover the Surface Build control's focus.",
         action: async () => {
           await owner.keyboard.press("Escape");
         },
         acknowledgement: {
-          spec: "The panel closes and Develop receives keyboard focus.",
+          spec: "The panel closes and Build on surface receives keyboard focus.",
           check: async () => {
             await expect(panel(owner)).toHaveCount(0);
-            await expect(button(owner, "Develop")).toBeFocused();
+            await expect(button(owner, "Build on surface")).toBeFocused();
           },
         },
         verifications: [

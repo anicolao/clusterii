@@ -1,3 +1,4 @@
+import { openGalaxyCommand, openObservation } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
@@ -28,7 +29,7 @@ const aliases = [
 ];
 async function pinned(p: Page) {
   const viewport = p.viewportSize()!;
-  const tab = await button(p, "Observation").boundingBox(),
+  const tab = await button(p, "Return to system").boundingBox(),
     box = await age(p).boundingBox(),
     bounds = await details(p).boundingBox();
   expect(tab).not.toBeNull();
@@ -100,7 +101,7 @@ test("Live stellar observations retain private current and historical facts afte
       page,
       player: aliases[i],
       surface: "game" as const,
-      primary: [button(page, "Observation")],
+      primary: [button(page, "Return to system")],
       verifications: [
         {
           spec: "Projected system labels remain separated and contained within the chart.",
@@ -142,7 +143,7 @@ test("Live stellar observations retain private current and historical facts afte
     name: string,
     stars: CampaignView["stars"],
   ) => {
-    await button(p, "Systems list").click();
+    await openGalaxyCommand(p, "Systems list");
     await p.getByLabel("Find a system").fill(name);
     const star = stars.find((s) => s.name === name)!;
     const target = button(p, `Select ${name}, ${star.class} class`);
@@ -151,7 +152,7 @@ test("Live stellar observations retain private current and historical facts afte
     await expect(
       inspector(p).getByRole("heading", { level: 2 }),
     ).toHaveAccessibleName(name);
-    await button(p, "Observation").click();
+    await openObservation(p);
     await details(p).evaluate((el) => el.scrollTo(0, 0));
   };
   try {
@@ -344,7 +345,8 @@ test("Live stellar observations retain private current and historical facts afte
       description:
         "Read the acknowledged current scan and compare the other commander's independently authorized view of the same star.",
       action: async () => {
-        for (const p of [owner, peer]) await button(p, "Observation").focus();
+        for (const p of [owner, peer])
+          await button(p, "Return to system").focus();
       },
       acknowledgement: {
         spec: "The nearby star has a current tick-one report for the survey envoy.",

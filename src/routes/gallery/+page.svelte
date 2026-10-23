@@ -14,6 +14,9 @@
   let chartClass = $state<StarClass | "all">("all");
   let cameraAction = $state("No movement requested");
   import StellarArt from "$lib/components/StellarArt.svelte";
+  import WorldArt from "$lib/components/WorldArt.svelte";
+  import SystemLayers from "$lib/components/SystemLayers.svelte";
+  import CommandIcon from "$lib/components/CommandIcon.svelte";
   import Conversations from "$lib/components/Conversations.svelte";
   import ArrivalReports from "$lib/components/ArrivalReports.svelte";
   import FleetContacts from "$lib/components/FleetContacts.svelte";
@@ -606,6 +609,20 @@
     </section>
     <section>
       <h2>Stellar class illustrations</h2>
+      <WorldArt />
+      <h2>System layers · shared scene instruments</h2>
+      <p>
+        Component specimen from the existing reducer-backed development
+        scenario; not live authorization evidence.
+      </p>
+      <div style="height: 650px; overflow: auto; margin-bottom: 24px;">
+        <SystemLayers holding={productionFrame(1200).view.holdings[0]} />
+      </div>
+      <div aria-label="Galaxy command symbols">
+        {#each ["systems", "economy", "conversations", "history", "arrivals", "contacts"] as const as kind}<span
+            ><CommandIcon {kind} /> {kind}</span
+          >{/each}
+      </div>
       {#each ["M", "G", "A", "O"] as stellarClass}<StellarArt
           stellarClass={stellarClass as "M" | "G" | "A" | "O"}
         />{/each}

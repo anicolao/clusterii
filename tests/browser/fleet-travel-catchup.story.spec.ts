@@ -1,3 +1,4 @@
+import { openForces } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
@@ -259,10 +260,7 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
       description:
         "Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything.",
       action: async () => {
-        for (const p of [owner, peer])
-          await inspector(p)
-            .getByRole("button", { name: "Fleets · 0", exact: true })
-            .click();
+        for (const p of [owner, peer]) await openForces(p, 0);
         await panel(owner).getByLabel("Fighters", { exact: true }).fill("2");
         await panel(owner).getByLabel("Infantry", { exact: true }).fill("21");
       },
@@ -358,9 +356,7 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
         "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await read(owner, orders(owner));
       },
       acknowledgement: {
@@ -723,9 +719,7 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
         "Reload the exact campaign and reopen the original fleet's accepted route, without issuing a replacement command.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 1", exact: true })
-          .click();
+        await openForces(owner, 1);
         await button(owner, fleetName).click();
         await button(owner, "Plot route").click();
         await routeRead(routeList);
@@ -876,9 +870,7 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
         "Reload while paused and recover the same in-flight route from the private campaign view.",
       action: async () => {
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await button(owner, fleetName).click();
         await button(owner, "Plot route").click();
         await routeRead(details.getByRole("status"));
@@ -1005,9 +997,7 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
         "Read the resolved arrival and resulting orbit/surface control. Landed infantry remains part of the commander's conserved forces.",
       action: async () => {
         await button(owner, "Close roster").press("Escape");
-        await inspector(owner)
-          .getByRole("button", { name: "Fleets · 0", exact: true })
-          .click();
+        await openForces(owner, 0);
         await button(owner, fleetName).click();
         await button(owner, "Plot route").click();
         await expect(details.getByRole("status")).toContainText("Arrived at");
@@ -1072,9 +1062,7 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
         await button(owner, "Back to fleets").press("Enter");
         await expect(button(owner, "Plot route")).toBeFocused();
         await owner.goto(url);
-        await inspector(owner)
-          .getByRole("button", { name: /Fleets ·/ })
-          .click();
+        await openForces(owner);
         await button(owner, fleetName).focus();
         await button(owner, fleetName).press("Enter");
         await read(owner, panel(owner).locator("dl"));

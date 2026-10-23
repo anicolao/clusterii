@@ -1,3 +1,4 @@
+import { openGalaxyCommand, selectedSystemName } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
@@ -87,6 +88,8 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
     return page;
   };
   const keyboard = async (page: Page, name: string) => {
+    if (name === "Systems list" || name === "Economy")
+      return openGalaxyCommand(page, name, true);
     await button(page, name).focus();
     await page.keyboard.press("Enter");
   };
@@ -204,9 +207,7 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
       player: aliases[1],
       surface: "game" as const,
     };
-    const selectedName = (
-      await inspector(owner).getByRole("heading").innerText()
-    ).trim();
+    const selectedName = await selectedSystemName(owner);
     const labels = () =>
       owner
         .locator(
@@ -235,9 +236,9 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
           .getByRole("button", { name: new RegExp(`^Select ${selectedName},`) })
           .focus();
         await owner.keyboard.press("Enter");
-        await expect(inspector(owner).getByRole("heading")).toHaveText(
-          selectedName,
-        );
+        await expect(
+          inspector(owner).getByRole("heading"),
+        ).toHaveAccessibleName(selectedName);
         originalLabels = await labels();
         expect(originalLabels.length).toBeGreaterThan(0);
         await openFocus(owner);
@@ -273,9 +274,9 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
       action: async () => {
         await keyboard(owner, "Back to economy");
         await keyboard(owner, "Return to galaxy");
-        await expect(inspector(owner).getByRole("heading")).toHaveText(
-          selectedName,
-        );
+        await expect(
+          inspector(owner).getByRole("heading"),
+        ).toHaveAccessibleName(selectedName);
         await keyboard(owner, "Menu");
         const detail = dialog.getByRole("checkbox", {
           name: "Lower galaxy detail",
@@ -387,9 +388,9 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
       action: async () => {
         await keyboard(owner, "Return to game");
         await expect(button(owner, "Menu")).toBeFocused();
-        await expect(inspector(owner).getByRole("heading")).toHaveText(
-          selectedName,
-        );
+        await expect(
+          inspector(owner).getByRole("heading"),
+        ).toHaveAccessibleName(selectedName);
         await expect.poll(labels).toEqual(originalLabels);
         await keyboard(owner, "Systems list");
         await owner.getByLabel("Find a system").fill(selectedName);
@@ -403,9 +404,9 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
       acknowledgement: {
         spec: "The selected system remains named and reachable through the real systems list after the tick.",
         check: async () => {
-          await expect(inspector(owner).getByRole("heading")).toHaveText(
-            selectedName,
-          );
+          await expect(
+            inspector(owner).getByRole("heading"),
+          ).toHaveAccessibleName(selectedName);
           await expect.poll(labels).toEqual(originalLabels);
         },
       },

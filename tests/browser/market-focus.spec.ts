@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openConstruction, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -73,10 +74,8 @@ test("market allocation preserves drafts, acknowledges orders and changes divide
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
-    await page.getByRole("button", { name: "Develop", exact: true }).click();
+    await acknowledgeCampaignStart(page);
+    await openConstruction(page, "Orbit");
     const construction = page.getByRole("dialog", {
       name: "System construction panel",
     });
@@ -90,9 +89,7 @@ test("market allocation preserves drafts, acknowledges orders and changes divide
     } = require("./lib/functions/src/production.js");
     expect(await settleCampaignTicks(id, () => start + 4 * 900000)).toBe(4);
     const investor = pages[1];
-    await investor
-      .getByRole("button", { name: "Economy", exact: true })
-      .click();
+    await openGalaxyCommand(investor, "Economy");
     await investor
       .getByRole("button", { name: "Market focus", exact: true })
       .click();
@@ -157,9 +154,7 @@ test("market allocation preserves drafts, acknowledges orders and changes divide
     await expect(panel).toContainText("Focus order accepted.");
     await expect(panel).toContainText("Applies tick 5 · dividends from tick 6");
     await investor.reload();
-    await investor
-      .getByRole("button", { name: "Economy", exact: true })
-      .click();
+    await openGalaxyCommand(investor, "Economy");
     await investor
       .getByRole("button", { name: "Market focus", exact: true })
       .click();

@@ -21,6 +21,7 @@ import {
   pinnedRenderer,
   rendererArgs,
 } from "../../../playwright.stories.config";
+import { baselinePath } from "./baseline-path";
 import { stableImage } from "./stable-image";
 import { textLayout } from "./text-layout";
 import { captureReady, type MotionFrame } from "./capture-ready";
@@ -245,9 +246,7 @@ export class TestStepHelper {
                 stem,
               ];
               const featureLocal = this.info.file.includes("/tests/e2e/");
-              const baseline = featureLocal
-                  ? resolve(dirname(this.info.file), "screenshots", ...name)
-                  : this.info.snapshotPath(...name),
+              const baseline = baselinePath(this.info, name),
                 manifest = join(dirname(baseline), "renderer.json");
               if (mode() === "verify") {
                 if (!existsSync(baseline) || !existsSync(manifest))
