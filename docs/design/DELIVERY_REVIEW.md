@@ -188,3 +188,5 @@ Identity-gallery story work in #47 is stacked on #46: [scope and evidence](IDENT
 ## Route force review successor
 
 Based on PR119 / `feat/menu-route-reference`, branch `feat/route-force-review`. Four Nix journeys48 candidates at41f3801;13 travel tests147 assertions and static/policy pass. Preview pending exact-head verification. Independent visual/normal-motion/gallery/lab,100tick/ingress/Linux/KMS/hosted and release gates remain. See [scope](ROUTE_FORCE_REVIEW.md).
+
+PR120 composition update: [8ce6f35 evidence](../ux/reviews/route-composition-8ce6f35/README.md), eight Nix journeys76 candidates plus two unchanged travel regressions passed. Dominant real-route framing, integrated fleet art and bounded editing replace the prior tiny-route/tall-form arrangement. Fifteen unit/travel tests2858 assertions pass. Whole-family independent visual, Linux/strict and current-head preview gates remain; no promotion or merge.
