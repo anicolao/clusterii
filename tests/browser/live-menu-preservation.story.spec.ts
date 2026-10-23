@@ -177,9 +177,19 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
     );
     const owner = pages[0],
       peer = pages[1];
-    const initial = await canonical(),
-      uid = initial.seats[0].uid,
-      peerUid = initial.seats[1].uid;
+    const initial = await canonical();
+    const auth = require("firebase-admin/auth").getAuth();
+    const actors: { uid: string }[] = await Promise.all(
+      emails.map((email) => auth.getUserByEmail(email)),
+    );
+    expect(new Set(actors.map((actor) => actor.uid)).size).toBe(4);
+    for (const [index, actor] of actors.entries()) {
+      const seat = initial.seats.find((seat) => seat.uid === actor.uid);
+      expect(seat).toBeDefined();
+      expect(seat!.profile.alias).toBe(aliases[index]);
+    }
+    const uid = actors[0].uid,
+      peerUid = actors[1].uid;
     const beforeReceipts = await receipts(uid),
       ownerBefore = await published(uid),
       peerBefore = await published(peerUid);
@@ -205,7 +215,7 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
         .allTextContents();
     let originalLabels: string[] = [];
     const noOrder = {
-      spec: "Local reading and unsent edits issue no market order or receipt and preserve the peer's private authority.",
+      spec: "Local reading and unsent edits leave owner receipt IDs and confirmed market allocations unchanged; this is not foreign-read denial or privacy acceptance.",
       check: async () => {
         expect(await receipts(uid)).toEqual(beforeReceipts);
         expect((await canonical()).economy!.marketFocus).toEqual(

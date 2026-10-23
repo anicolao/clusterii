@@ -32,3 +32,11 @@ Reviewed SETUP_BOUNDARY_CONSOLIDATION.md and ADMISSION_BOUNDARY_CONSOLIDATION.md
 Source/static/policy checks only. Browser setup, actual mounted draft/selection/update continuity, four-size/motion/art/readiness/geometry, live privacy/account/concurrency, Linux/KMS/hosted/performance and release remain unverified. Proposed market policy remains under review. Existing gallery44 strict captures certify only their shared-component scope. A reviewer must lift the existing campaign execution hold before any candidate run; no automatic generation from this work.
 
 Static result: `npm run check` passes0 Svelte errors/0 warnings plus Functions TypeScript; `node scripts/check-story-policy.mjs` passes. Logs `/tmp/cluster-live-menu-check-final.log` and `/tmp/cluster-live-menu-policy-final.log`. No browser/emulator/service case executed; these are not live acceptance results.
+
+## Reviewer Prompt124: explicit actors and first-run boundary
+
+Corrected the pre-run seat-order assumption. Resolve each of the four actual Auth Emulator users from its unique login email, require four distinct UIDs and a matching campaign seat/profile alias, then use those explicit owner/peer UIDs for recipient projections and receipt reads. No actor identity is inferred from faction or seat position. Narrowed noOrder to unchanged owner receipt IDs/confirmed market allocations; own-ledger and pre-tick peer-view equality remain scoped corroboration, not foreign-read denial/privacy acceptance.
+
+Reviewer authorizes one initial phone-only generation after static/policy checks and clean commit. Same240s total/30s steps/10s expectations, retries0/max-failures1/RGBA0, existing real setup; owned-port preflight, serialized Functions build and disk gate required. Stop first failure and preserve all traces/runtime logs/candidates. No other viewport/probe or unchanged retry. Existing44 approved gallery baselines remain untouched.
+
+Pre-run validation: `npm run check` reports zero errors/warnings; story policy passes. Corrected story SHA-256: `a8abc6d7f2f25da241403e24a4db7a99f3c884059c8665add0e6e3bd2bb93649`. Production unchanged.
