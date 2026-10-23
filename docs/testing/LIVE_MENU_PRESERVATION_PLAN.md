@@ -40,3 +40,13 @@ Corrected the pre-run seat-order assumption. Resolve each of the four actual Aut
 Reviewer authorizes one initial phone-only generation after static/policy checks and clean commit. Same240s total/30s steps/10s expectations, retries0/max-failures1/RGBA0, existing real setup; owned-port preflight, serialized Functions build and disk gate required. Stop first failure and preserve all traces/runtime logs/candidates. No other viewport/probe or unchanged retry. Existing44 approved gallery baselines remain untouched.
 
 Pre-run validation: `npm run check` reports zero errors/warnings; story policy passes. Corrected story SHA-256: `a8abc6d7f2f25da241403e24a4db7a99f3c884059c8665add0e6e3bd2bb93649`. Production unchanged.
+
+## First authorized phone attempt: startup blocked
+
+Clean source `41180dc85373406ee007ea3a5b17125d6d5df80e`, story SHA-256 `a8abc6d7f2f25da241403e24a4db7a99f3c884059c8665add0e6e3bd2bb93649`. Static/policy and serialized Functions build passed. All six runner ports were free; available disk was 5,997,184 KiB. One phone-only generation was invoked with existing config, retries0/max-failures1 and unchanged budgets.
+
+Firebase exited1 during its `java -version` prerequisite check: the shell resolved `/usr/bin/java`, `JAVA_HOME` was unset, and Java reported no runtime. Read-only inspection found no JDK entries in `/opt/homebrew/opt` or `/Library/Java/JavaVirtualMachines`; `/usr/local/opt` was absent. This establishes a startup environment blocker, not an application, admission, receipt, callback or screenshot failure. No browser/test steps ran, no captures/manifests/traces were produced, and no firebase-debug.log was created. No retry, install, service-result alteration or baseline change followed.
+
+Complete command output and build/static/policy logs are retained in [first-attempt evidence](evidence/live-menu-first-phone/). Command: `CLUSTER_STORY_MODE=generate NODE_OPTIONS=--import=file:///Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/emulator-catalogue-register.mjs bun x firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bunx playwright test --config playwright.stories.config.ts tests/browser/live-menu-preservation.story.spec.ts --project=phone --max-failures=1'`.
+
+A subsequent run requires a verified supported Java runtime in the execution environment and renewed bounded execution authorization after this stop. All mounted/visual/privacy and broader gates remain open. Existing44 approved gallery baselines are unchanged.

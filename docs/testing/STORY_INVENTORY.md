@@ -438,4 +438,4 @@ Reviewer-approved in-game-market-rules and updated local-presentation-settings D
 
 ## Live mounted menu preparation
 
-`live-menu-preservation.story.spec.ts` prepares UX02/06/14/15/16 through four genuine admissions, unsent market allocation, shared menu/settings/Rules and one labelled leased tick with peer visible acknowledgement. Source/static boundary only: no browser/emulator run. Dependencies, retained admission blockers and factual-renderer limits in [plan](LIVE_MENU_PRESERVATION_PLAN.md). Existing44 approved baselines unchanged.
+`live-menu-preservation.story.spec.ts` prepares UX02/06/14/15/16 through four genuine admissions, unsent market allocation, shared menu/settings/Rules and one labelled leased tick with peer visible acknowledgement. Static/policy pass; first authorized phone invocation stopped at Firebase Java prerequisite before browser launch (zero captures). Dependencies, retained admission blockers and factual-renderer limits in [plan](LIVE_MENU_PRESERVATION_PLAN.md). Existing44 approved baselines unchanged.
