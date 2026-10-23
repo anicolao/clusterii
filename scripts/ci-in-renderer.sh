@@ -7,13 +7,13 @@ bun --version
 bun install --frozen-lockfile
 bun install --cwd functions --frozen-lockfile
 # Retain actual dependency resolution before running unchanged browser guards.
-node -e 'console.log(require("playwright").chromium.executablePath())' > test-results/nix-renderer/browser-path.txt
-browser=$(cat test-results/nix-renderer/browser-path.txt)
+node -e 'console.log(require("playwright").chromium.executablePath())' > ci-evidence/nix-renderer/browser-path.txt
+browser=$(cat ci-evidence/nix-renderer/browser-path.txt)
 # Compare loaders diagnostically; actual Playwright validation stays enabled.
-if ! "$CLUSTER_NIX_LDD" "$browser" > test-results/nix-renderer/nix-ldd.txt 2>&1; then
-  echo "Nix loader inspection returned nonzero" >> test-results/nix-renderer/nix-ldd.txt
+if ! "$CLUSTER_NIX_LDD" "$browser" > ci-evidence/nix-renderer/nix-ldd.txt 2>&1; then
+  echo "Nix loader inspection returned nonzero" >> ci-evidence/nix-renderer/nix-ldd.txt
 fi
-ldd "$browser" > test-results/nix-renderer/renderer-ldd.txt
+ldd "$browser" > ci-evidence/nix-renderer/renderer-ldd.txt
 case "$1" in
   stories)
     bun run test:story-policy

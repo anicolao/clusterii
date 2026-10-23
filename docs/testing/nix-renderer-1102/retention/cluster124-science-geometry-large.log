@@ -1,0 +1,29 @@
+  43) [large] › tests/e2e/003-science/science.spec.ts:12:1 › Inspect authoritative science rate and recover earned output › Open the real per-tick rail control on both independent accounts. Current capacity exists before the first delivered output. › Both authorized ledgers acknowledge tick0, current1.4 capacity and their own completed station. 
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 167
+    Received:    114
+
+      195 |               .boundingBox();
+      196 |             const rail = await page.locator(".command-rail").boundingBox();
+    > 197 |             expect(panel!.y).toBeGreaterThanOrEqual(rail!.y + rail!.height);
+          |                              ^
+      198 |             await expect(
+      199 |               ledger(page).getByRole("heading", { name: "Science per tick" }),
+      200 |             ).toBeFocused();
+        at check (/home/runner/work/clusterii/clusterii/tests/e2e/003-science/science.spec.ts:197:30)
+        at test.step.timeout (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:188:9)
+        at TestStepHelper.step (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:184:5)
+        at /home/runner/work/clusterii/clusterii/tests/e2e/003-science/science.spec.ts:171:5
+
+    Error Context: test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-large/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-large/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-large/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+

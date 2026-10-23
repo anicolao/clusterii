@@ -1,0 +1,25 @@
+  59) [phone] › tests/e2e/010-zero-science/zero-science.spec.ts:79:1 › Live zero science after orbital loss preserves private research › Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. 
+
+    TimeoutError: Step timeout of 30000ms exceeded.
+
+       at browser/story-helpers/test-step-helper.ts:370
+
+      368 |     // The enclosing test deadline remains unchanged; no unbounded retry group.
+      369 |     for (const control of controls)
+    > 370 |       await test.step(`Harness control: ${control.description}`, control.run, {
+          |       ^
+      371 |         timeout: STEP_BUDGET,
+      372 |       });
+      373 |     this.story.entries.push({
+        at TestStepHelper.harness (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:370:7)
+        at /home/runner/work/clusterii/clusterii/tests/e2e/010-zero-science/zero-science.spec.ts:316:5
+
+    Error Context: test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
