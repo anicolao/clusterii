@@ -1,0 +1,21 @@
+Oct 23, 2026 7:07:15 A.M. com.google.cloud.datastore.emulator.firestore.CloudFirestore main
+SEVERE: Exiting due to unexpected exception.
+java.lang.IllegalArgumentException: Failed to init the HTTP server.
+	at com.google.net.webchannel.server.WebChannelServers$DevWebChannelServer.<init>(WebChannelServers.java:60)
+	at com.google.net.webchannel.server.WebChannelServers.createDevServer(WebChannelServers.java:43)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter.<init>(FirestoreV1WebChannelAdapter.java:47)
+	at com.google.cloud.datastore.emulator.firestore.CloudFirestore.init(CloudFirestore.java:250)
+	at com.google.cloud.datastore.emulator.firestore.CloudFirestore.startLocally(CloudFirestore.java:120)
+	at com.google.cloud.datastore.emulator.firestore.CloudFirestore.main(CloudFirestore.java:101)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:577)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl.bind(ServerImpl.java:180)
+	at jdk.httpserver/sun.net.httpserver.HttpServerImpl.bind(HttpServerImpl.java:54)
+	at com.google.net.http.jdkserver.HttpServerSupportInternal.initialize(HttpServerSupportInternal.java:37)
+	at com.google.net.webchannel.server.WebChannelServers$DevWebChannelServer.<init>(WebChannelServers.java:58)
+	... 5 more
+
