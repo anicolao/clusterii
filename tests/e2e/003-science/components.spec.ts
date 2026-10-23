@@ -2,6 +2,38 @@ import { test, expect } from "../helpers/fixtures";
 import { TestStepHelper } from "../helpers/test-step-helper";
 import { expectReadingTarget } from "../../browser/story-helpers/reading-target";
 
+async function readDelivered(panel: import("@playwright/test").Locator) {
+  const reading = panel.getByRole("region", {
+    name: "Science source ledger",
+    exact: true,
+  });
+  const total = panel
+    .locator("dl > div")
+    .filter({ hasText: "Last delivered science" });
+  await reading.focus();
+  await reading.press("End");
+  // The delivered row precedes explanatory prose; End need not put it in view
+  // in a short specimen with large type. Use ordinary bounded keyboard reading.
+  for (let i = 0; i < 12; i++) {
+    const fits = await total.evaluate((e) => {
+      const r = e.getBoundingClientRect(),
+        p = e
+          .closest('[aria-label="Science source ledger"]')!
+          .getBoundingClientRect();
+      return r.top >= p.top && r.bottom <= p.bottom;
+    });
+    if (fits) break;
+    await reading.press("ArrowUp");
+    await reading.evaluate(
+      () =>
+        new Promise<void>((resolve) =>
+          requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
+        ),
+    );
+  }
+  await expectReadingTarget(total, false);
+}
+
 test("Read shared science ledger in gallery and lab", async ({
   page,
 }, info) => {
@@ -29,12 +61,7 @@ test("Read shared science ledger in gallery and lab", async ({
       await open.focus();
       await open.press("Enter");
       await ledger.scrollIntoViewIfNeeded();
-      const r = ledger.getByRole("region", {
-        name: "Science source ledger",
-        exact: true,
-      });
-      await r.focus();
-      await r.press("End");
+      await readDelivered(ledger);
     },
     acknowledgement: {
       spec: "The reducer-derived component distinguishes initial capacity from pending first delivery.",

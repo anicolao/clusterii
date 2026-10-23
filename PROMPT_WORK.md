@@ -838,3 +838,4 @@ Prompt 167 | 3a6bbd4e3d154ce7b13727b4bbbd78d0ecc5d836551b61bd0908d33178e5c2da | 
 Prompt 167 | 3a6bbd4e3d154ce7b13727b4bbbd78d0ecc5d836551b61bd0908d33178e5c2da | Reconcile reviewer1534 scoped visual findings and link draft129 dependency without broad acceptance
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Preserve first lab viewpoint failure, correct per-view reading, and inspect original128 commit request timings
 Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Include retained original timing and loader files excluded by generic test-results and log ignore patterns
+Prompt 168 | 1bdd2609f8d08fafd8a11f9b4e6cceec4781d5ba7712d1d149a6b65d57bcbae0 | Preserve large specimen reading failure and use bounded ArrowUp reading without relaxing containment
