@@ -1,0 +1,84 @@
+{
+  "id": "command-control-motion",
+  "title": "Read and select the shared command instruments",
+  "inventory": [
+    "UX-03",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "Actual production CommandControl in gallery and lab. Local selection callbacks are not server receipts. Command selection is immediate, with unchanged results under normal/reduced preference; no animation is fast-forwarded.",
+  "source": {
+    "commit": "0009995cb1252682e186db6346e6f284f19523c1",
+    "dirty": false,
+    "spec": "tests/e2e/010-zero-science/controls.spec.ts",
+    "specSha256": "4d3c38e5ff263fadfdddbbd4dc06d910682f362c212ad231fd5d1fe6865b7412"
+  },
+  "mode": "generate",
+  "status": "failed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "normal-gallery-selection",
+      "description": "Select history with the keyboard under normal system preference; inspect the rounded painted face and complete semantic target.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual shared callback updates one current command and the named local status.",
+      "verifications": [
+        "Rounded artwork is noninteractive, all corner probes hit the semantic button, and actual motion preference is honored without changing selection semantics."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "001-normal-gallery-selection-1-component-reviewer.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reduced-gallery-selection",
+      "description": "Select economy with the keyboard under reduced system preference; inspect the rounded painted face and complete semantic target.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual shared callback updates one current command and the named local status.",
+      "verifications": [
+        "Rounded artwork is noninteractive, all corner probes hit the semantic button, and actual motion preference is honored without changing selection semantics."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "002-reduced-gallery-selection-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

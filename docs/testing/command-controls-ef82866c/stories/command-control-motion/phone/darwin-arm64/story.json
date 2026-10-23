@@ -1,0 +1,125 @@
+{
+  "id": "command-control-motion",
+  "title": "Read and select the shared command instruments",
+  "inventory": [
+    "UX-03",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "Actual production CommandControl in gallery and lab. Local selection callbacks are not server receipts. Command selection is immediate, with unchanged results under normal/reduced preference; no animation is fast-forwarded.",
+  "source": {
+    "commit": "ef82866cf777c4d8a480eaf017a742f0cfdd3dc3",
+    "dirty": false,
+    "spec": "tests/e2e/010-zero-science/controls.spec.ts",
+    "specSha256": "f58311e618820c720120361d0bc9108dbab031d9db156173fd5f84b79874ecfe"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "normal-gallery-selection",
+      "description": "Select history with the keyboard under normal system preference; inspect the rounded painted face and complete semantic target.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual shared callback updates one current command and the named local status.",
+      "verifications": [
+        "Rounded artwork is noninteractive, all corner probes hit the semantic button, and actual motion preference is honored without changing selection semantics."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "001-normal-gallery-selection-1-component-reviewer.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reduced-gallery-selection",
+      "description": "Select economy with the keyboard under reduced system preference; inspect the rounded painted face and complete semantic target.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual shared callback updates one current command and the named local status.",
+      "verifications": [
+        "Rounded artwork is noninteractive, all corner probes hit the semantic button, and actual motion preference is honored without changing selection semantics."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "002-reduced-gallery-selection-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "normal-lab-selection",
+      "description": "Use Space on the actual shared lab control; the local result is identical and does not issue a campaign order.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The selected command and local result agree in this comparison.",
+      "verifications": [
+        "Visible keyboard focus and complete corner access remain; both comparisons finish with the same outcome."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "003-normal-lab-selection-1-component-reviewer.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reduced-lab-selection",
+      "description": "Use Space on the actual shared lab control; the local result is identical and does not issue a campaign order.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The selected command and local result agree in this comparison.",
+      "verifications": [
+        "Visible keyboard focus and complete corner access remain; both comparisons finish with the same outcome."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "004-reduced-lab-selection-1-component-reviewer.png",
+          "verifications": [
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}

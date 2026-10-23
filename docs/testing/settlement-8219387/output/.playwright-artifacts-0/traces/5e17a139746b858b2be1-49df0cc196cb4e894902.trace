@@ -1,0 +1,15 @@
+{"version":8,"type":"context-options","origin":"library","browserName":"","playwrightVersion":"1.61.1","options":{},"platform":"darwin","wallTime":1792763103128,"monotonicTime":3602.905,"sdkLanguage":"javascript","contextId":"request-context@82e0a6a72d2971f223d61b7c5791ba9b","title":"browser/zero-science.story.spec.ts:58 › Live zero science after orbital loss preserves private research"}
+{"type":"before","callId":"call@240","startTime":10925.785,"class":"APIRequestContext","method":"fetch","params":{"url":"http://127.0.0.1:15001/demo-clusterii/us-central1/startScheduledCampaigns-0","method":"POST","headers":[{"name":"X-CloudScheduler-JobName","value":"emulator-admission-story"},{"name":"X-CloudScheduler-ScheduleTime","value":"2026-01-01T12:15:00.000Z"}],"timeout":10000},"stepId":"pw:api@152"}
+{"type":"log","callId":"call@240","time":10927.401,"message":"→ POST http://127.0.0.1:15001/demo-clusterii/us-central1/startScheduledCampaigns-0"}
+{"type":"log","callId":"call@240","time":10927.408,"message":"  user-agent: Playwright/1.61.1 (arm64; macOS 26.5) node/24.18"}
+{"type":"log","callId":"call@240","time":10927.41,"message":"  accept: */*"}
+{"type":"log","callId":"call@240","time":10927.411,"message":"  accept-encoding: gzip,deflate,br"}
+{"type":"log","callId":"call@240","time":10927.412,"message":"  X-CloudScheduler-JobName: emulator-admission-story"}
+{"type":"log","callId":"call@240","time":10927.412,"message":"  X-CloudScheduler-ScheduleTime: 2026-01-01T12:15:00.000Z"}
+{"type":"log","callId":"call@240","time":11541.535,"message":"← 200 OK"}
+{"type":"log","callId":"call@240","time":11541.54,"message":"  x-powered-by: Express"}
+{"type":"log","callId":"call@240","time":11541.541,"message":"  date: Fri, 23 Oct 2026 13:45:11 GMT"}
+{"type":"log","callId":"call@240","time":11541.542,"message":"  connection: keep-alive"}
+{"type":"log","callId":"call@240","time":11541.543,"message":"  keep-alive: timeout=5"}
+{"type":"log","callId":"call@240","time":11541.544,"message":"  content-length: 0"}
+{"type":"after","callId":"call@240","endTime":11541.615,"result":{"response":{"url":"http://127.0.0.1:15001/demo-clusterii/us-central1/startScheduledCampaigns-0","status":200,"statusText":"OK","headers":[{"name":"x-powered-by","value":"Express"},{"name":"date","value":"Fri, 23 Oct 2026 13:45:11 GMT"},{"name":"connection","value":"keep-alive"},{"name":"keep-alive","value":"timeout=5"},{"name":"content-length","value":"0"}],"fetchUid":"39ca94306c42ff72268d9d845052ae18"}}}

@@ -29,23 +29,40 @@
 
 <style>
   button {
+    position: relative;
+    isolation: isolate;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
     min-height: 60px;
     padding: 12px 18px;
-    border-radius: 8px;
-    border: 1px solid #96a3ad77;
-    background: linear-gradient(165deg, #1b2c38ee, #08121dec 72%);
-    box-shadow:
-      inset 0 1px #eef7ff22,
-      0 4px 14px #0009;
+    border-radius: 0;
+    border: 1px solid transparent;
+    background: transparent;
     color: #eeece4;
     font:
       500 16px "Atkinson Hyperlegible",
       sans-serif;
     text-align: center;
+  }
+  /* Rounded concept artwork is paint, not a cutout in the semantic hit target. */
+  button::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: var(--command-radius, 8px);
+    border: var(--command-border-width, 1px) solid
+      var(--command-border, #96a3ad77);
+    background: var(
+      --command-background,
+      linear-gradient(165deg, #1b2c38ee, #08121dec 72%)
+    );
+    box-shadow:
+      inset 0 1px #eef7ff22,
+      0 4px 14px #0009;
   }
   button :global(svg) {
     width: 32px;
@@ -53,14 +70,13 @@
     filter: drop-shadow(0 2px 3px #000);
   }
   .current {
-    border-color: #84e4f4;
-    background:
+    --command-border: #84e4f4;
+    --command-background:
       radial-gradient(ellipse at 40% 0, #2b759060, transparent 80%),
       linear-gradient(#142c3d, #071822);
   }
   button:hover {
-    border-color: #b0e9f2;
-    background-color: #244558;
+    --command-border: #b0e9f2;
   }
   button:disabled {
     opacity: 0.5;

@@ -1,0 +1,19 @@
+publish	Verify served revision and assets	﻿2026-10-23T14:20:51.6910687Z ##[group]Run node scripts/verify-pages.mjs "https://anicolao.github.io${PUBLIC_BASE_PATH}/" "$SOURCE_SHA"
+publish	Verify served revision and assets	2026-10-23T14:20:51.6912104Z ^[[36;1mnode scripts/verify-pages.mjs "https://anicolao.github.io${PUBLIC_BASE_PATH}/" "$SOURCE_SHA"^[[0m
+publish	Verify served revision and assets	2026-10-23T14:20:51.7002027Z shell: /usr/bin/bash -e {0}
+publish	Verify served revision and assets	2026-10-23T14:20:51.7002495Z env:
+publish	Verify served revision and assets	2026-10-23T14:20:51.7002931Z   SOURCE_SHA: 291bc4049c7f4429e307efaa3b86335de2c4afa1
+publish	Verify served revision and assets	2026-10-23T14:20:51.7003502Z   PR_NUMBER: 121
+publish	Verify served revision and assets	2026-10-23T14:20:51.7004096Z   PUBLIC_BASE_PATH: /clusterii/pr121
+publish	Verify served revision and assets	2026-10-23T14:20:51.7006589Z   GH_TOKEN: ***
+publish	Verify served revision and assets	2026-10-23T14:20:51.7006817Z ##[endgroup]
+publish	Verify served revision and assets	2026-10-23T14:22:00.8948805Z file:///home/runner/work/clusterii/clusterii/scripts/verify-pages.mjs:49
+publish	Verify served revision and assets	2026-10-23T14:22:00.8950138Z   if (!response.ok) throw new Error(`Missing published asset: ${url}`);
+publish	Verify served revision and assets	2026-10-23T14:22:00.8951021Z                           ^
+publish	Verify served revision and assets	2026-10-23T14:22:00.8951486Z 
+publish	Verify served revision and assets	2026-10-23T14:22:00.8954998Z Error: Missing published asset: https://anicolao.github.io/clusterii/pr121/_app/immutable/assets/SessionSecurity.ChAwtUwW.css
+publish	Verify served revision and assets	2026-10-23T14:22:00.8958322Z     at file:///home/runner/work/clusterii/clusterii/scripts/verify-pages.mjs:49:27
+publish	Verify served revision and assets	2026-10-23T14:22:00.8959281Z     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+publish	Verify served revision and assets	2026-10-23T14:22:00.8959796Z 
+publish	Verify served revision and assets	2026-10-23T14:22:00.8959930Z Node.js v22.23.3
+publish	Verify served revision and assets	2026-10-23T14:22:00.9028254Z ##[error]Process completed with exit code 1.

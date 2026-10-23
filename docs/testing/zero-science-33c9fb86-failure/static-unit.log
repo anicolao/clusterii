@@ -1,0 +1,360 @@
+tests/browser/story-helpers/story-output.ts 30ms (unchanged)
+tests/browser/story-helpers/test-step-helper.ts 32ms (unchanged)
+tests/story-output.test.ts 3ms
+tests/e2e/010-zero-science/zero-science.spec.ts 28ms
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+/Users/anicolao/projects/games/clusterii-conversation-history/src/lib/components/FleetRoute.svelte:294:5
+Warn: Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions (svelte)
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+    <div
+      class="route-details"
+      onkeydown={readingKey}
+      inert={editing && !active && !completed}
+      role="region"
+      tabindex="0"
+      aria-label={editing && !active && !completed
+        ? "Force details"
+        : "Route details"}
+    >
+      <p class="overline">
+        Fleet {fleet?.number ?? "lost"} · {origin?.name ?? "Recorded outcome"}
+      </p>
+
+      {#if forces}<section
+          class="force-review"
+          aria-label="Confirmed route forces"
+        >
+          <section aria-label="Fleet transport manifest">
+            <h3>{active ? "Forces aboard" : "Forces to deploy"}</h3>
+            <dl>
+              <div>
+                <dt>Fighters aboard</dt>
+                <dd>{forces.fighters}</dd>
+              </div>
+              <div>
+                <dt>Infantry aboard</dt>
+                <dd>{forces.infantry}</dd>
+              </div>
+              <div class="capacity">
+                <dt>Transport capacity</dt>
+                <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+                <meter
+                  min="0"
+                  max={Math.max(1, forces.capacity)}
+                  value={forces.infantry}
+                  aria-label="Infantry transport capacity"
+                ></meter>
+              </div>
+            </dl>
+          </section>
+          {#if !committed || committed.status !== "traveling"}<section
+              aria-label="Confirmed origin defense"
+            >
+              <h3>
+                Remaining at {origin?.name ?? "origin"}
+              </h3>
+              <dl>
+                <div>
+                  <dt>Orbit garrison</dt>
+                  <dd>
+                    {forces.orbit === null
+                      ? "Unknown"
+                      : forces.orbit + " fighters"}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Surface garrison</dt>
+                  <dd>
+                    {forces.surface === null
+                      ? "Unknown"
+                      : forces.surface + " infantry"}
+                  </dd>
+                </div>
+                <div class="capacity">
+                  <dt>Other own stationed fleets</dt>
+                  <dd>
+                    {forces.otherFighters} fighters · {forces.otherInfantry} infantry
+                  </dd>
+                </div>
+              </dl>
+              <p>
+                Confirmed now; other orders and ticks can change these forces
+                before departure. Garrison counts already exclude this fleet.
+              </p>
+            </section>{/if}
+        </section>{/if}
+      {#if committed}<p class="outcome" role="status">
+          {committed.status === "traveling" ? "Traveling" : "At waypoint"} · {view.stars.find(
+            (s) => s.id === committed.to,
+          )?.name} · arrival tick {committed.arrivalTick}.
+        </p>{:else if accepted}<p class="outcome" role="status">
+          Route accepted · departure tick {accepted.effectiveTick} · first arrival
+          tick
+          {accepted.effectiveTick + (acceptedLegs[0]?.ticks ?? 0)}, subject to
+          execution validation.
+        </p>{/if}
+      {#each view.military?.ledger.filter((e) => e.fleetId === fleetId && ["arrived", "destroyed", "halted"].includes(e.result)) ?? [] as e}<p
+          class="outcome"
+          role="status"
+        >
+          {e.result === "arrived"
+            ? "Arrived"
+            : e.result === "destroyed"
+              ? "Fleet destroyed"
+              : "Route halted"} at {view.stars.find((s) => s.id === e.starId)
+            ?.name}. {e.fighters} fighters · {e.infantry} infantry aboard.
+        </p>{/each}
+      {#each view.military?.arrivals ?? [] as report}<article
+          aria-label="Arrival report"
+        >
+          <h3>
+            {view.stars.find((s) => s.id === report.starId)?.name} · tick {report.tick}
+          </h3>
+          <p>
+            {report.contested ? "Contested arrival" : "Arrival resolved"}. Your
+            forces: {report.fightersBefore} → {report.fightersAfter} fighters; {report.infantryBefore}
+            → {report.infantryAfter} infantry, including the surface.
+          </p>
+          <p>
+            Orbit: {view.roster[report.orbit]?.alias ?? "Unclaimed"}. Surface: {view
+              .roster[report.surface]?.alias ?? "Unclaimed"}.
+          </p>
+          {#if report.contested}<p>
+              Orbital order: {report.order
+                .map((i) => view.roster[i].alias)
+                .join(" → ")}. The incumbent defends first.
+            </p>{/if}
+        </article>{/each}
+      {#if active}<ol aria-label="Route waypoints">
+          {#each committed?.waypoints ?? accepted?.waypoints ?? [] as id}<li>
+              {view.stars.find((s) => s.id === id)?.name}
+            </li>{/each}
+        </ol>{/if}
+    </div>
+    <footer bind:offsetHeight={footerHeight}>
+
+====================================
+svelte-check found 0 errors and 1 warning in 1 file
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 44ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+$ node --test scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.355042ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.289541ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.758625ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (10.3415ms)
+✔ a roster without a scheduled start does not fabricate a time (0.092375ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.381208ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.243666ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.680167ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.469583ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.929209ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.923875ms)
+✔ unrelated campaigns retain every production entropy input (0.06325ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.192833ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.366375ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.525375ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.383ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.466041ms)
+✔ membership fault requires demo loopback and reviewed source hashes (1.02225ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.3435ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.131083ms)
+✔ restoration refuses concurrent head, membership or directory writes (0.133667ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.81ms)
+✔ unrelated campaigns retain every original entropy input (0.060083ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.185834ms)
+Previous story evidence preserved at /tmp/nix-shell.M1LcZY/cluster-cohort-test-fAXpW6/.story-cohorts-YOfmpB/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.M1LcZY/cluster-cohort-test-fAXpW6/.story-cohorts-YOfmpB/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (9.346583ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.47325ms)
+✔ interruption retains current artifacts and launches no successor (1.358458ms)
+✔ an artifact path collision fails rather than overwriting either result (2.532541ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.610542ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.871167ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.781875ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (8.62825ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.485584ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.747209ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 189.41425
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ playwright test --config playwright.paths.config.ts
+
+Running 4 tests using 1 worker
+
+
+(node:69795) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:70071) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/4] [desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:70340) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/4] [large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:70610) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] [short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4 passed (1.6s)
+bun test v1.3.13 (bf2e2cec)
+
+tests/story-output.test.ts:
+(pass) fresh story outputs reject retained pass/failure artifacts without deleting history [1.28ms]
+
+tests/settlement-timing.test.ts:
+(pass) settlement timing preserves SDK outcomes, failures and redacts arguments [0.90ms]
+
+ 2 pass
+ 0 fail
+ 22 expect() calls
+Ran 2 tests across 2 files. [42.00ms]

@@ -39,6 +39,9 @@ jobs:
       - run: bun run test:story-policy && bun run test:story-tools && bun run test:browser-storage
       - name: Exact verification
         if: matrix.mode == 'verify'
+        env:
+          # Existing bounded, redacted demo-only probe; retained with story traces.
+          CLUSTER_SETTLEMENT_TIMING: "1"
         run: bun run test:stories
       - name: Explicit baseline candidates (never acceptance)
         if: matrix.mode == 'generate' && contains(github.event.pull_request.labels.*.name, 'baseline-candidates')

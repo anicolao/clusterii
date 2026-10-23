@@ -22,6 +22,7 @@ import {
   rendererArgs,
 } from "../../../playwright.stories.config";
 import { baselinePath } from "./baseline-path";
+import { claimStoryOutput } from "./story-output";
 import { stableImage } from "./stable-image";
 import { textLayout } from "./text-layout";
 import { captureReady, type MotionFrame } from "./capture-ready";
@@ -149,7 +150,7 @@ export class TestStepHelper {
       entries: [],
       ids: new Set(),
       folder: resolve(
-        "test-results/stories",
+        process.env.CLUSTER_STORY_OUTPUT_ROOT ?? "test-results/stories",
         metadata.id,
         info.project.name,
         platform(),
@@ -160,9 +161,9 @@ export class TestStepHelper {
       throw new Error(
         "Distinct tests must not share an illustrated output directory",
       );
+    if (!existing) claimStoryOutput(this.story.folder);
     owners.set(this.story.folder, info.testId);
     stories.set(info, this.story);
-    mkdirSync(this.story.folder, { recursive: true });
   }
   async step(
     id: string,
