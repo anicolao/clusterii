@@ -276,7 +276,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
       },
       verifications: [
         {
-          spec: "No research or allocation is submitted by navigation.",
+          spec: "The authorized economy provides an enabled return to the galaxy; this check does not certify command absence or peer privacy.",
           check: async () =>
             expect(button(owner, "Return to galaxy")).toBeEnabled(),
         },

@@ -903,7 +903,8 @@
 <div class="galaxy-surface">
   <header
     class="command-rail"
-    inert={roster ||
+    inert={more ||
+      roster ||
       listing ||
       briefingOpen ||
       history ||
@@ -958,7 +959,7 @@
     ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
     <GameMenu />
   </header>
-  {#if !roster && !commandKind.startsWith("conversation.") && !economy}<div
+  {#if !roster && !expanded && !more && !commandKind.startsWith("conversation.") && !economy}<div
       class="acknowledgement"
       inert={listing ||
         briefingOpen ||
@@ -980,7 +981,8 @@
   <div
     class="chart"
     data-galaxy-viewport
-    inert={roster ||
+    inert={more ||
+      roster ||
       listing ||
       briefingOpen ||
       history ||
@@ -1030,7 +1032,8 @@
     >
   </div>
   <aside
-    inert={roster ||
+    inert={more ||
+      roster ||
       listing ||
       briefingOpen ||
       history ||
@@ -1142,9 +1145,19 @@
       >
     </div>
   </aside>
+  <!-- svelte-ignore a11y_no_noninteractive_element_interactions (Delegated Escape closes the command tray from its real buttons.) -->
   <nav
     class="command-dock"
     aria-label="Galaxy commands"
+    onkeydown={(event) => {
+      if (event.key === "Escape" && more) {
+        event.preventDefault();
+        more = false;
+        document
+          .querySelector<HTMLButtonElement>('[data-focus="more"]')
+          ?.focus();
+      }
+    }}
     inert={roster ||
       listing ||
       briefingOpen ||
@@ -1168,6 +1181,7 @@
       <ActionButton
         class="quiet"
         aria-expanded={more}
+        data-focus="more"
         aria-controls="galaxy-destinations"
         onclick={() => (more = !more)}>More</ActionButton
       >
@@ -2288,6 +2302,70 @@
       flex-direction: row;
       font-size: 13px;
       order: initial;
+    }
+  }
+  .system-inspector:not(.expanded) dl {
+    display: block;
+  }
+  .system-inspector:not(.expanded) dl > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #9eabaf44;
+    background: transparent;
+    padding: 8px 0;
+  }
+  .system-inspector:not(.expanded) dd {
+    margin: 0;
+  }
+  .system-inspector {
+    border-radius: 12px;
+  }
+  .system-inspector:not(.expanded) .system-actions :global(.inspect-system) {
+    grid-column: 1 / -1;
+  }
+  @media (min-width: 701px) {
+    .system-inspector.expanded {
+      left: 24px;
+      right: 24px;
+      width: auto;
+    }
+    .system-inspector.expanded .system-details {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+      grid-template-rows: auto 1fr;
+      gap: 0 28px;
+    }
+    .system-inspector.expanded .system-details :global(.world-art) {
+      grid-row: 1 / 3;
+      align-self: stretch;
+      height: 100%;
+      aspect-ratio: auto;
+    }
+    .system-inspector.expanded .system-details > p {
+      margin-top: 0;
+    }
+    .system-inspector.expanded .system-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .system-inspector.expanded .system-actions :global(button) {
+      min-width: 180px;
+    }
+  }
+  @media (max-width: 700px) {
+    .system-inspector:not(.expanded) .system-details :global(.world-art img) {
+      object-position: center 30%;
+    }
+    .system-inspector:not(.expanded) .system-actions {
+      grid-template-columns: 1fr 1fr;
+    }
+    .system-inspector:not(.expanded) dl > div {
+      padding: 6px 0;
+    }
+    .system-inspector:not(.expanded) .system-details :global(.world-art) {
+      aspect-ratio: 3.5;
     }
   }
 </style>

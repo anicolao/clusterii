@@ -712,3 +712,5 @@ Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | 
 Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Retain real returning-entry label assertion failure and distinguish semantic label order from decorative chevrons
 
 Prompt 128 | 89d3f8177e241384f7c4d31331e46f813d9a224a5b3334c7eaeca1e2486251a7 | Preserve four-size large-composition and genuine returning-account candidates with unchanged baseline review gates
+
+Prompt 129 | b8c303674ebd70c8d0a8e963e88c59f1b74eab806ad4c29f498401554b0f260a | Correct command tray interaction ownership and expanded feedback after retained phone rendering failure
