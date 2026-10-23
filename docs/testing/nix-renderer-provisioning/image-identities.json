@@ -1,0 +1,30 @@
+[
+  {
+    "architecture": "arm64",
+    "configDigest": "sha256:7e11780237209f8747e8023d2ba777723d9aba451a548bbcc0563511e28a2c9a",
+    "tags": [
+      "docker.io/library/cluster-renderer:playwright-1.61.1"
+    ],
+    "archive": "/nix/store/c6bwddf3idpl3y3hk74by0nq2r239wry-docker-image-cluster-renderer-playwright-1.61.1.tar",
+    "rootfsDiffIds": [
+      "sha256:2d8834226313616cc27c8a08ca876096cf83f18090b5fa07fd65dba017ec9e5e",
+      "sha256:815041b71a6977d29f75a29975a0f478ca3281be35b581b7a3b75db6ba452540",
+      "sha256:08ce1a0d4d8e716e31d40ce78768e01eabc6bcd2f470f6542dffd7ff7c295791",
+      "sha256:1506c6aef772da7251677f3d9687ecde7fedfd106f257eff57bc824d54051fd5"
+    ]
+  },
+  {
+    "architecture": "amd64",
+    "configDigest": "sha256:89924b46ec81c1c0eb0055a7d72790b8067a16a5d0d0512e8117a01aa4a5d7ee",
+    "tags": [
+      "docker.io/library/cluster-renderer:playwright-1.61.1-amd64"
+    ],
+    "archive": "/nix/store/f15m5wagmdal8d59bpa7n7rqwj9a36ga-docker-image-cluster-renderer-playwright-1.61.1-amd64.tar",
+    "rootfsDiffIds": [
+      "sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043",
+      "sha256:3510962c86ba3c3226d639c3b2587fd5a2d9e09f470ee99c89614aedf5bb9b5b",
+      "sha256:327e4f7d52815156914c4c654c60170bc631bcbaa823df672e37f7b7110909a8",
+      "sha256:94b9e4adef57f1882ab0c94b3b55c33087910f76bc791e21aa076854f1785886"
+    ]
+  }
+]

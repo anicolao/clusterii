@@ -1,0 +1,9 @@
+{"root":"/tmp/nix-shell.06tvui/cluster-renderer-retention-PMZzNX","evidence":"ci-evidence/nix-renderer","playwright":"1.61.1","browserLaunched":false}
+
+Running 1 test using 1 worker
+
+(node:25151) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ../nix-shell.06tvui/cluster-renderer-retention-PMZzNX/retention.spec.cjs:1:178 › Playwright clears its output and retains renderer evidence (2ms)
+
+  1 passed (236ms)
