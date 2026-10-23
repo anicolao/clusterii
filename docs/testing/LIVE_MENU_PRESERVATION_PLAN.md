@@ -1,0 +1,56 @@
+# Live menu preservation source review
+
+Reviewer Prompt123 requests source/static review before lifting the campaign browser hold. No browser, emulator or probe execution is authorized here. Existing44 approved Rules/settings Darwin baselines stay byte-unchanged.
+
+## Selected tracer bullet
+
+Use an incomplete market allocation, not fleet preparation: MarketFocus already binds account/campaign-scoped in-memory draft through CampaignEconomy/Galaxy. No extra force, routing or long tick prerequisites. Five named player steps show selection/draft, menu Rules/settings, independently acknowledged update, returned galaxy and recovered draft. Owner and independent peer viewpoints expose the expected outcomes without presenting a whole campaign replay.
+
+The story uses actual login/profile save, create/join radio/Claim your seat and scheduler start. It selects the visible named system through Systems list, enters blank Market/73 camp points (Apply remains disabled), closes economy panels, opens actual GameMenu, enables Lower galaxy detail and opens actual MarketRules. While the dialog stays open, one labelled harness delivery calls the production leased tick service at its first due timestamp, then replays the same timestamp expecting zero. A real peer ledger must visibly say Confirmed tick1; the owner member projection must publish tick1 and the owner Rules focus remains. Closing restores Menu focus, original selected system/labels/textual selection, confirmed production and the same unsent allocation. Reading/editing never claims an accepted market order.
+
+## Exact setup dependencies and budget
+
+- Compile/typecheck before any future emulator start: imported Functions JS must match committed source; do not rebuild watched functions/lib during the cohort.
+- Existing demo-clusterii Auth19099, Database19000, Firestore18080 and Functions15001; code fails closed unless FIRESTORE_EMULATOR_HOST is127.0.0.1:18080 before admin access.
+- Existing login helper and real saved identities, four independent browser contexts/factions. Unique emails; fixed visible campaign name by viewport for exact pixels. The actual newly created campaign URL/ID is retained directly, never a first()/last() directory match.
+- Existing fixed-catalogue loader and admission clock prefix Scheduled story; browser/domain12:01→12:15; actual startScheduledCampaigns-0 HTTP delivery. Developer entitlement is the established explicit admission fixture, not a fabricated seat.
+- Read-only canonical/recipient/receipt corroboration uses existing mock provider/decryption semantics. No injected views/resources/ownership, service-response replacements or application-internal success hooks. The only campaign mutation outside player controls is explicitly labelled production leased tick delivery (one tick plus idempotent replay); no hosted Scheduler certification.
+- Same existing240s live-story ceiling,30s harness/step and10s action/capture budgets; five player steps/nine captures per viewport, four independently authenticated players. Four-size/reduced-motion/pinned renderer intended; normal-motion/live concurrency are not certified by this reduced-motion story. No deadline increase or automatic execution.
+
+## Evidence boundaries
+
+Before the tick, full canonical campaign and both actual recipient projections must remain unchanged; receipt IDs remain identical through local interactions. After the tick, exactly one revision/tick advances; each player's published empire/ledger matches its own settled record; allocation and receipt set remain unchanged. This is scoped corroboration, not a new complete authorization proof. No UI outcome is synthesized from those reads: visible peer tick and owner's later tick are independently awaited.
+
+Lower-detail verification uses existing public rendered star-label text (nonempty before comparison), actual selected inspector, Systems list search/selection and a captured returned galaxy. The production source already gates only dust/reference rings. This story cannot count every canvas primitive or measure GPU cost without additional legitimate renderer evidence; do not present label equality as complete factual-scene equivalence. No added production instrumentation or asset changes.
+
+## Retained setup failures that can block this story
+
+Reviewed SETUP_BOUNDARY_CONSOLIDATION.md and ADMISSION_BOUNDARY_CONSOLIDATION.md against the existing setup code. Earlier selection before-fix/current large/desktop traces failed identity retrieval/profile save; current short stopped Awaiting acknowledgement with no campaignKey. Separately #94/#100/#106 first-admission traces reached accepted creation/recovery and awaited campaignKey joined:false→faction UI; #96 passing timing was a negative reproduction only. New story uses this same identity/create/admission path and can fail before its first player step. The unrelated persisted-profile ingress HTTP200/profile404/receipt404 cause remains distinct. No existing trace replay, emulator restart or browser diagnostic retry performed this turn.
+
+## Review gate
+
+Source/static/policy checks only. Browser setup, actual mounted draft/selection/update continuity, four-size/motion/art/readiness/geometry, live privacy/account/concurrency, Linux/KMS/hosted/performance and release remain unverified. Proposed market policy remains under review. Existing gallery44 strict captures certify only their shared-component scope. A reviewer must lift the existing campaign execution hold before any candidate run; no automatic generation from this work.
+
+Static result: `npm run check` passes0 Svelte errors/0 warnings plus Functions TypeScript; `node scripts/check-story-policy.mjs` passes. Logs `/tmp/cluster-live-menu-check-final.log` and `/tmp/cluster-live-menu-policy-final.log`. No browser/emulator/service case executed; these are not live acceptance results.
+
+## Reviewer Prompt124: explicit actors and first-run boundary
+
+Corrected the pre-run seat-order assumption. Resolve each of the four actual Auth Emulator users from its unique login email, require four distinct UIDs and a matching campaign seat/profile alias, then use those explicit owner/peer UIDs for recipient projections and receipt reads. No actor identity is inferred from faction or seat position. Narrowed noOrder to unchanged owner receipt IDs/confirmed market allocations; own-ledger and pre-tick peer-view equality remain scoped corroboration, not foreign-read denial/privacy acceptance.
+
+Reviewer authorizes one initial phone-only generation after static/policy checks and clean commit. Same240s total/30s steps/10s expectations, retries0/max-failures1/RGBA0, existing real setup; owned-port preflight, serialized Functions build and disk gate required. Stop first failure and preserve all traces/runtime logs/candidates. No other viewport/probe or unchanged retry. Existing44 approved gallery baselines remain untouched.
+
+Pre-run validation: `npm run check` reports zero errors/warnings; story policy passes. Corrected story SHA-256: `a8abc6d7f2f25da241403e24a4db7a99f3c884059c8665add0e6e3bd2bb93649`. Production unchanged.
+
+## First authorized phone attempt: startup blocked
+
+Clean source `41180dc85373406ee007ea3a5b17125d6d5df80e`, story SHA-256 `a8abc6d7f2f25da241403e24a4db7a99f3c884059c8665add0e6e3bd2bb93649`. Static/policy and serialized Functions build passed. All six runner ports were free; available disk was 5,997,184 KiB. One phone-only generation was invoked with existing config, retries0/max-failures1 and unchanged budgets.
+
+Firebase exited1 during its `java -version` prerequisite check: the shell resolved `/usr/bin/java`, `JAVA_HOME` was unset, and Java reported no runtime. Read-only inspection found no JDK entries in `/opt/homebrew/opt` or `/Library/Java/JavaVirtualMachines`; `/usr/local/opt` was absent. Correction: this was execution outside the required Nix environment, not a missing Java installation. It establishes no application, admission, receipt, callback or screenshot failure. No browser/test steps ran, no captures/manifests/traces were produced, and no firebase-debug.log was created. No retry, install, service-result alteration or baseline change followed.
+
+Complete command output and build/static/policy logs are retained in [first-attempt evidence](evidence/live-menu-first-phone/). Command: `CLUSTER_STORY_MODE=generate NODE_OPTIONS=--import=file:///Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/emulator-catalogue-register.mjs bun x firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bunx playwright test --config playwright.stories.config.ts tests/browser/live-menu-preservation.story.spec.ts --project=phone --max-failures=1'`.
+
+The reviewer authorized one Nix-environment phone attempt, but the subsequent production-design priority supersedes diagnostic execution; that attempt has not been launched. All mounted/visual/privacy and broader gates remain open. Existing44 approved gallery baselines are unchanged.
+
+## Nix correction and design priority
+
+Recovered prior successful invocation `nix develop /tmp/pantheon-nix-env --command …` from retained session history and inspected its flake/lock. The existing shell includes Bun, Node and JDK. Verified inside that environment: Java21.0.11, Node24.18.0, Bun1.3.13 (versions differ from documented Node22/Bun1.3.10 targets). No manually assigned store PATH, installation or global shell change. Original startup evidence remains unchanged. The human Nix correction and production-design priority are preserved verbatim in meta-prompts.md; reviewer handoffs are Prompts125/126. No new browser attempt was launched before the priority changed.

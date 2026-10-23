@@ -435,3 +435,7 @@ Rules/settings first generation at1503cce:5pass/1fail/2notrun. Large Rules End s
 Corrected menu/rules generation atd436c43 passes8 journeys/44 candidates, including executed document-scroll equality after End and Home plus lower/top clipping and footer/final-opener containment. Independent review/promotion pending for20 rules and24 affected settings images. Prior failures and approved baselines preserved.
 
 Reviewer-approved in-game-market-rules and updated local-presentation-settings Darwin families pass8 strict journeys/44 exact captures in46.9s. Generated illustrated evidence archived under `stories/{in-game-market-rules,local-presentation-settings}/{phone,desktop,large,short}/darwin-arm64/`. Scope is local shared-menu reading/settings, not live campaign preservation or broader release.
+
+## Live mounted menu preparation
+
+`live-menu-preservation.story.spec.ts` prepares UX02/06/14/15/16 through four genuine admissions, unsent market allocation, shared menu/settings/Rules and one labelled leased tick with peer visible acknowledgement. Static/policy pass; first authorized phone invocation stopped at Firebase Java prerequisite before browser launch (zero captures). Dependencies, retained admission blockers and factual-renderer limits in [plan](LIVE_MENU_PRESERVATION_PLAN.md). Existing44 approved baselines unchanged.

@@ -696,3 +696,7 @@ Prompt 120 | 096daf7d19e46d50990e9773648915fa776da673d1642572f483a3fe7652cf33 | 
 Prompt 121 | a5849393980451bdec107561913bc69b15a245b103e42ef15ef33c5347797e49 | Record eight passing corrected rules/settings journeys with44 unpromoted candidates and executed End/Home invariants
 
 Prompt 122 | 3c857daa47e1db2e52a05d385255d2f798ecc3fd4357b304a0ad292cd1bac624 | Archive eight strict rules/settings journeys and44 exact captures after scoped reviewer-approved baseline promotion
+
+Prompt 123 | c41a310f366558ab4bc45602465c87f113a3194a25322995f1c068ce994dbaed | Register draft PR113 and explicit live-menu source review dependency without running held campaign setup
+
+Prompt 124 | eb2b94643e064bae3f92743c2e4151b2390b99403e386da1ff32c12011c4b0ed | Preserve sole phone startup failure and explicit Java environment blocker without browser retry or baseline changes
