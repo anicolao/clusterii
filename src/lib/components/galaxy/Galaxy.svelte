@@ -945,7 +945,7 @@
   );
 </script>
 
-<div class="galaxy-surface">
+<div class="galaxy-surface" class:before-start={view.phase !== "active"}>
   <header
     class="command-rail"
     inert={more ||
@@ -968,34 +968,38 @@
           : "Development · Rules under review"}</span
       >
     </div>
-    <div class="campaign-facts" aria-label="Empire resources">
-      <span
-        >Credits <strong
-          >{view.empire
-            ? (view.empire.creditsMilli / 1000).toLocaleString("en-US")
-            : "—"}</strong
-        ></span
-      >
-      <span
-        >Science · last tick <strong
-          >{view.economy?.ledger
-            ? (view.economy.ledger.scienceMilli / 1000).toLocaleString("en-US")
-            : "—"}</strong
-        ></span
-      >
-      <span
-        >Next tick <strong
-          >{view.pausedAt != null
-            ? "Paused"
-            : view.production
-              ? new Date(view.production.nextTickAt).toLocaleTimeString(
+    {#if view.phase === "active"}
+      <div class="campaign-facts" aria-label="Empire resources">
+        <span
+          >Credits <strong
+            >{view.empire
+              ? (view.empire.creditsMilli / 1000).toLocaleString("en-US")
+              : "—"}</strong
+          ></span
+        >
+        <span
+          >Science · last tick <strong
+            >{view.economy?.ledger
+              ? (view.economy.ledger.scienceMilli / 1000).toLocaleString(
                   "en-US",
-                  { hour: "2-digit", minute: "2-digit", timeZone: "UTC" },
-                ) + " UTC"
-              : "After start"}</strong
-        ></span
-      >
-    </div>
+                )
+              : "—"}</strong
+          ></span
+        >
+        <span
+          >Next tick <strong
+            >{view.pausedAt != null
+              ? "Paused"
+              : view.production
+                ? new Date(view.production.nextTickAt).toLocaleTimeString(
+                    "en-US",
+                    { hour: "2-digit", minute: "2-digit", timeZone: "UTC" },
+                  ) + " UTC"
+                : "After start"}</strong
+          ></span
+        >
+      </div>
+    {/if}
     <ActionButton
       class="quiet"
       onclick={() => openPanel("roster")}
@@ -2198,6 +2202,12 @@
     .chart {
       inset: 110px 0 calc(44svh + 82px) 0;
     }
+    .before-start .chart {
+      top: 58px;
+    }
+    .before-start .acknowledgement {
+      top: 66px;
+    }
     .system-inspector,
     .system-inspector.active,
     .system-inspector.observing {
@@ -2212,6 +2222,10 @@
       top: 114px;
       height: auto;
       max-height: none;
+    }
+    .before-start .system-inspector.expanded,
+    .before-start .system-inspector.active.expanded {
+      top: 64px;
     }
     .system-inspector h2 {
       font-size: 24px;
