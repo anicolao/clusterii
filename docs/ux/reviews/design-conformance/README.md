@@ -29,3 +29,9 @@ Actual Pantheon feature layout adopted for this screen at `tests/e2e/001-entry`:
 ## Large composition and real returning state
 
 Cleancca529c:8 journeys pass in1.3m,36 candidates (24anonymous/Learn,12returning) across four sizes in Nix. Originals/manifests/generated stories: `/tmp/cluster-entry-returning-candidates/`. Entry group scales cohesively at3840, centered58% with34vw group/94% control width. Real returning scenes now show cyan Continue first and actual campaign name, persisted across reload, with ordinary keyboard return to the same campaign. Four genuine identities/admissions and real leased start delivery precede each returning view; no fabricated membership. Source-paired failures6e28d2a/1fb9b09 remain retained as documented in featureFIDELITY. No baseline promotion or independent visual acceptance yet.
+
+## Galaxy command successor
+
+Production now separates global dock navigation from selected-system actions, keeps credits/last confirmed science/scheduled UTC tick visible on phone, and provides compact/expanded inspection with independent Orbit and Surface facts. WorldArt is shared with the gallery and explicitly labels decorative geography. CommandIcon shares original GPL SVG marks with gallery. No projection, command, reducer, draft or observer ownership changes. Missing intelligence remains Unknown; no countdown, route links or undisclosed planetary facts are inferred from plate illustrations.
+
+New feature-local `tests/e2e/002-galaxy` reuses ordinary authenticated four-seat admission and real Scheduler HTTP start, then captures compact/expanded inspection and global Economy navigation. Static check, lint and story policy pass before generation. Four-size rendered evidence, independent design comparison and exact baseline approval remain pending. Entry36 and prior failed originals are untouched.

@@ -97,3 +97,9 @@ Exact generation prompt:
 Continue reuses `entry-phone.webp` as a decorative inhabited-world inset, distinct from Play’s planet and Learn’s observatory atlas. No asset bytes changed. Cyan emphasis and exact campaign names are semantic production UI; only accessible active memberships render Continue.
 
 The integrated title insignia is original inline vector geometry (thin gold ring and vertical four-point star), composed to plate01. It is aria-hidden decoration around the accessible real Cluster heading, not a rasterized or generated wordmark.
+
+## System world and orbit
+
+`static/art/system-orbit.webp` was generated with the built-in imagegen tool on 2026-10-22 and encoded using Sharp WebP quality90 inside the established Nix environment. Original retained at `/Users/anicolao/.codex/generated_images/01a15929-99b0-7603-a932-6dda979c98ff/exec-ffd3d274-9789-4cce-b4b5-3d09c46589be.png`. Shared production `WorldArt.svelte` labels it as illustration, not sensor intelligence. The scene does not assert planetary geography, buildings, resources or undisclosed ownership. All factual ownership and quantities remain authorized semantic HTML.
+
+Generation requested a clean wide cinematic landscape, no UI/lettering/symbols/borders, a fully visible bronze-gunmetal circular orbital station above a blue ocean world, warm habitat windows and distant sunlight, atmospheric clouds and distant coastal settlements, matching plate04's scene direction. No generated lettering enters the interface.
