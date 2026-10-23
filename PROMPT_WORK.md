@@ -822,3 +822,5 @@ Prompt 156 | c3675bfdbe4f8f5a000af2bb66f08bb9c83d797144f531eb04c046c4cd9b7a37 | 
 Prompt 156 | c3675bfdbe4f8f5a000af2bb66f08bb9c83d797144f531eb04c046c4cd9b7a37 | Retain four-size authenticated aftermath evidence, refine plate09 framing and keyboard reading, and reconcile publication recovery without a root-cause claim.
 
 Prompt 156 | c3675bfdbe4f8f5a000af2bb66f08bb9c83d797144f531eb04c046c4cd9b7a37 | Preserve the rounded footer corner failure and retain plate09 paint with complete semantic hit surfaces, without changing any geometry assertion.
+
+Prompt 158 | 2b474c792dc523c0dd989ee5e15ea75712904fac4360c25368c7ee553d76f6a5 | Record corrected Linux package evaluation and distinguish 60 failing story cases from 237 viewport executions while preserving the original command error.

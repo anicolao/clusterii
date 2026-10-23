@@ -7,20 +7,36 @@ case "${1:-}:${2:-}" in
 esac
 : "${RUNNER_TEMP:?GitHub runner scratch directory required}"
 workspace=$PWD
-mkdir -p test-results/nix-renderer
-logs=$workspace/test-results/nix-renderer
+mkdir -p ci-evidence/nix-renderer
+logs=$workspace/ci-evidence/nix-renderer
 state=$(mktemp -d "$RUNNER_TEMP/cluster-nix-engine.XXXXXX")
 unset DOCKER_CONTEXT DOCKER_TLS_VERIFY DOCKER_CERT_PATH
 export DOCKER_HOST="unix://$state/docker.sock"
 # sudo is the runner's privilege broker, not a package installer or engine.
 # Start only the Nix engine, with an isolated socket, data, pid and execution root.
 cleanup() {
+  status=$?
+  # The pinned renderer runs as root. mkdtemp cohort directories are0700, so
+  # the unprivileged upload action cannot read them until ownership is restored.
+  # Only this checkout's artifact roots are touched; never follow symlinks.
+  if ! /usr/bin/sudo -n "$rootShell" -c '
+    export PATH="$1"; owner=$2; shift 2
+    for artifact in "$@"; do
+      if [ -d "$artifact" ] && [ ! -L "$artifact" ]; then
+        chown -hR -- "$owner" "$artifact" || exit 1
+      fi
+    done
+  ' -- "$PATH" "$(id -u):$(id -g)" "$workspace/test-results" "$workspace/ci-evidence"; then
+    echo "Artifact ownership restoration failed" >&2
+    if [ "$status" -eq 0 ]; then status=1; fi
+  fi
   if [ -f "$state/engine.pid" ]; then
     /usr/bin/sudo -n kill "$(cat "$state/engine.pid")" || true
   fi
   if [ -f "$state/containerd.pid" ]; then
     /usr/bin/sudo -n kill "$(cat "$state/containerd.pid")" || true
   fi
+  exit "$status"
 }
 trap cleanup EXIT
 # Never inherit the runner daemon configuration or its containerd endpoint.

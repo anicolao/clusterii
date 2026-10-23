@@ -40,7 +40,7 @@ jobs:
           name: illustrated-stories-${{ matrix.mode }}-linux-arm64
           include-hidden-files: true
           path: |
-            test-results/nix-renderer/
+            ci-evidence/nix-renderer/
             test-results/stories/
             test-results/story-tools/
             test-results/.story-cohorts-*/

@@ -26,5 +26,6 @@ jobs:
           path: |
             database-debug.log
             firestore-debug.log
+            ci-evidence/nix-renderer/
             test-results/
             tests/browser/journey.spec.ts-snapshots/
