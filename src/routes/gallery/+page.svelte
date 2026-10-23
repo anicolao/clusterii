@@ -414,10 +414,13 @@
         </div>{/each}
       <h2>Arrival reports · split occupation and conquest</h2>
       {#each [0, 700, 1200, 2200, 3200] as time}<div
+          role="region"
+          aria-label={`Arrival specimen ${time}`}
           style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"
         >
           <ArrivalReports
             {...arrivalFrame(time)}
+            returnLabel={time === 1200 ? "Back to system" : "Back to galaxy"}
             onearlier={() => {}}
             onlatest={() => {}}
             onretry={() => {}}

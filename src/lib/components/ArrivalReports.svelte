@@ -9,6 +9,7 @@
   import FleetSymbol from "./FleetSymbol.svelte";
   let {
     records,
+    returnLabel = "Back to galaxy",
     selected = $bindable(""),
     loading = false,
     error = "",
@@ -22,6 +23,7 @@
     oninspect,
   }: {
     records: ArrivalRecord[];
+    returnLabel?: string;
     selected?: string;
     loading?: boolean;
     error?: string;
@@ -61,14 +63,33 @@
   }
 </script>
 
-<section class="arrival-instrument" aria-label="Arrival reports">
+<section
+  class="arrival-instrument"
+  class:recorded={!!report}
+  aria-label="Arrival reports"
+>
   <img class="aftermath" src={`${base}/art/orbital-aftermath.webp`} alt="" />
-  <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded report supports keyboard scrolling.) -->
+  <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (Bounded report owns unmodified Home/End while its reading region is focused.) -->
   <div
     class="report-body history-scroll"
     role="region"
     aria-label="Arrival report details"
     tabindex="0"
+    onkeydown={(event) => {
+      if (
+        event.target !== event.currentTarget ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey
+      )
+        return;
+      if (event.key === "Home" || event.key === "End") {
+        event.preventDefault();
+        event.currentTarget.scrollTop =
+          event.key === "Home" ? 0 : event.currentTarget.scrollHeight;
+      }
+    }}
   >
     <p class="overline">
       Your campaign record{#if report}
@@ -79,32 +100,46 @@
           item.report.starId}
       </p>{/if}
     <h2>{title}</h2>
+    {#if report}<p class="recorded-context">
+        Recorded outcome at tick {report.tick}. Current control may differ.
+      </p>{/if}
     <Feedback
       message={loading ? "Loading authorized arrival reports…" : ""}
       {error}
       {inspect}
     />
     {#if report}<article use:feedbackMotion={{ key: item.id, inspect }}>
-        <p class="result">
-          {report.orbit === own && report.surface !== own
-            ? `Orbit is yours. Surface remains ${owner(report.surface) === "Unclaimed" ? "unclaimed" : `${owner(report.surface)}-held`}.`
-            : "Confirmed outcome at the recorded tick. Current control may have changed."}
-        </p>
+        {#if report.orbit === own && report.surface !== own}<p class="result">
+            Orbit was yours. Surface remained {owner(report.surface) ===
+            "Unclaimed"
+              ? "unclaimed"
+              : `${owner(report.surface)}-held`}.
+          </p>{/if}
         <ol class="sequence" aria-label="Resolution sequence">
           <li>
-            <FleetSymbol /><strong>Arrival</strong><span
-              >Forces reached the system.</span
-            >
+            <span
+              class="phase-art arrival-art"
+              style={`background-image:url('${base}/art/fleet-preparation.webp')`}
+              aria-hidden="true"><FleetSymbol /></span
+            ><strong>Arrival</strong><span>Forces reached the system.</span>
           </li>
           <li>
-            <DevelopmentIcon type="station" /><strong>Orbit</strong><span
+            <span
+              class="phase-art orbit-art"
+              style={`background-image:url('${base}/art/orbital-aftermath.webp')`}
+              aria-hidden="true"><DevelopmentIcon type="station" /></span
+            ><strong>Orbit</strong><span
               >{report.contested
                 ? "Orbital forces resolved."
                 : "No hostile resistance."}</span
             >
           </li>
-          <li>
-            <DevelopmentIcon type="base" /><strong>Surface</strong><span
+          <li class="recorded-stage">
+            <span
+              class="phase-art surface-art"
+              style={`background-image:url('${base}/art/system-orbit.webp')`}
+              aria-hidden="true"><DevelopmentIcon type="base" /></span
+            ><strong>Surface · recorded</strong><span
               >{detail?.landed
                 ? `${detail.landed} of your infantry landed.`
                 : "Control recorded separately."}</span
@@ -113,29 +148,65 @@
         </ol>
         <dl class="losses">
           <div>
-            <dt>Your fighters lost</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/fleet-preparation.webp')`}
+                aria-hidden="true"><FleetSymbol /></span
+              >Your fighters lost
+            </dt>
             <dd>{report.fightersBefore - report.fightersAfter}</dd>
           </div>
           <div>
-            <dt>Your fighters remaining</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/fleet-preparation.webp')`}
+                aria-hidden="true"><FleetSymbol /></span
+              >Your fighters remaining
+            </dt>
             <dd>{report.fightersAfter}</dd>
           </div>
           <div>
-            <dt>Your infantry lost</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/construction-base.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="base" /></span
+              >Your infantry lost
+            </dt>
             <dd>{report.infantryBefore - report.infantryAfter}</dd>
           </div>
           <div>
-            <dt>Your infantry remaining</dt>
+            <dt>
+              <span
+                class="force-art"
+                style={`background-image:url('${base}/art/construction-base.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="base" /></span
+              >Your infantry remaining
+            </dt>
             <dd>{report.infantryAfter}</dd>
           </div>
         </dl>
         <dl class="control">
           <div>
-            <dt>Orbit</dt>
+            <dt>
+              <span
+                class="ownership-art orbit-art"
+                style={`background-image:url('${base}/art/orbital-aftermath.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="station" /></span
+              >Orbit
+            </dt>
             <dd class:you={report.orbit === own}>{owner(report.orbit)}</dd>
           </div>
           <div>
-            <dt>Surface</dt>
+            <dt>
+              <span
+                class="ownership-art surface-art"
+                style={`background-image:url('${base}/art/system-orbit.webp')`}
+                aria-hidden="true"><DevelopmentIcon type="base" /></span
+              >Surface
+            </dt>
             <dd class:you={report.surface === own}>{owner(report.surface)}</dd>
           </div>
         </dl>
@@ -171,6 +242,7 @@
             layers share control. This report records no credit release to you.{/if}
         </p>
         <p class="outputs">
+          Output entitlement at the recorded tick:
           {#if report.orbit >= 0}{owner(report.orbit)}
             {report.orbit === own ? "receive" : "receives"} orbital fighters and science.{:else}No
             empire receives orbital output.{/if}
@@ -226,7 +298,7 @@
   </div>
   <footer>
     <ActionButton class="secondary" onclick={onclose}
-      >Back to galaxy</ActionButton
+      >{returnLabel}</ActionButton
     >{#if report}<ActionButton
         class="primary"
         onclick={() => oninspect(report!.starId)}>Inspect surface</ActionButton
@@ -236,6 +308,7 @@
 
 <style>
   .arrival-instrument {
+    container: aftermath / size;
     height: 100%;
     min-height: 0;
     position: relative;
@@ -276,6 +349,10 @@
     max-width: 850px;
     line-height: 1.5;
   }
+  .recorded-context {
+    color: #b9d2d8;
+    font-size: 0.9em;
+  }
   .system-name {
     font:
       500 32px "Cormorant Garamond",
@@ -291,27 +368,119 @@
   .result {
     font-size: 20px;
   }
+  .recorded h2 {
+    margin-top: clamp(70px, 12svh, 160px);
+  }
   .sequence {
+    --phase-size: 92px;
+    --phase-gap: 16px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
+    gap: var(--phase-gap);
     list-style: none;
     padding: 0;
   }
   .sequence li {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     gap: 6px;
   }
-  .sequence :global(svg) {
-    width: 48px;
-    height: 48px;
-    padding: 10px;
-    border: 1px solid #a1c3cb;
+  .sequence li + li::before {
+    content: "";
+    position: absolute;
+    left: calc(-50% - var(--phase-gap) / 2);
+    top: calc(var(--phase-size) / 2);
+    width: calc(100% + var(--phase-gap));
+    height: 1px;
+    background: linear-gradient(90deg, #6c929b, #b9d2d8);
+    pointer-events: none;
+  }
+  .sequence li + li::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--phase-size) / 2 - 3px);
+    left: calc(var(--phase-gap) / -2 - 3px);
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    background: #16323d;
+    background: #b9d2d8;
+    box-shadow: 0 0 10px #76ddec88;
+    pointer-events: none;
+  }
+  .phase-art {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: var(--phase-size);
+    height: var(--phase-size);
+    border: 1px solid #b9d2d8;
+    border-radius: 50%;
+    background-color: #16323d;
+    background-size: cover;
+    background-position: center;
+    box-shadow:
+      0 0 18px #72dcec24,
+      inset 0 0 16px #05101a;
+  }
+  .recorded-stage .phase-art {
+    border: 2px solid #6ae9f5;
+    box-shadow:
+      0 0 18px #6ae9f566,
+      inset 0 0 16px #05101a;
+  }
+  .force-art,
+  .ownership-art {
+    display: block;
+    position: relative;
+    width: 76px;
+    height: 54px;
+    margin: 0 0 8px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: 1px solid #6c929b;
+  }
+  .force-art :global(svg),
+  .ownership-art :global(svg) {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    bottom: -3px;
+    right: -3px;
+    padding: 3px;
+    background: #06131c;
+    border: 1px solid #8ca7ad;
+    border-radius: 50%;
+  }
+  .ownership-art {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 16px 0 0;
+  }
+  .control dd {
+    padding-left: 80px;
+  }
+  .phase-art :global(svg) {
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 50%;
+    background: #06131c;
+    border: 1px solid #a1c3cb;
+  }
+  .orbit-art {
+    background-position: 70% center;
+  }
+  .surface-art {
+    background-position: 58% center;
   }
   .sequence span {
     font-size: 14px;
@@ -334,6 +503,15 @@
     background: #06131ce6;
     border: 1px solid #7e9c9c;
     border-radius: 4px;
+  }
+  @media (min-width: 1000px) {
+    .losses {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .losses > div + div {
+      border-left: 1px solid #557781;
+      padding-left: 16px;
+    }
   }
   .control {
     border: 0;
@@ -371,6 +549,8 @@
     background: #174558;
   }
   footer {
+    width: min(100%, 850px);
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -387,12 +567,32 @@
     color: #f3ead6;
     font: inherit;
   }
-  footer :global(button) {
+  .arrival-instrument footer :global(button) {
+    position: relative;
+    isolation: isolate;
     flex: 1;
+    font:
+      600 20px "Cormorant Garamond",
+      serif;
+    min-height: 58px;
+    border-radius: 0;
+    border-color: transparent;
+    background: transparent;
+  }
+  /* Match the shared command treatment: rounded paint, complete hit surface. */
+  footer :global(button::before) {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    pointer-events: none;
+    border: 1px solid var(--arrival-button-border, #8aa3a5);
+    background: var(--arrival-button-background, #0c2836);
+    border-radius: 4px;
   }
   footer :global(.primary) {
-    border-color: #64e5f3;
-    background: #07516b;
+    --arrival-button-border: #64e5f3;
+    --arrival-button-background: #07516b;
   }
   @media (min-width: 2300px) {
     .report-body {
@@ -412,12 +612,77 @@
       font-size: 44px;
     }
     footer {
+      width: min(100%, 1400px);
       font-size: 26px;
+    }
+    .arrival-instrument footer :global(button) {
+      font-size: 32px;
+      min-height: 84px;
+    }
+    .sequence {
+      --phase-size: 140px;
+    }
+  }
+  /* Full scene scale follows available space; bounded gallery/lab specimens
+     retain the same compact instrument rather than clipping a 4K heading. */
+  @container aftermath (min-width: 2300px) and (min-height: 1200px) {
+    .report-body {
+      max-width: 1800px;
+      padding: 64px 120px;
+      font-size: 34px;
+    }
+    .system-name {
+      font-size: 72px;
+    }
+    h2 {
+      font-size: 144px;
+    }
+    .recorded h2 {
+      margin-top: clamp(160px, 12svh, 280px);
+    }
+    .result {
+      font-size: 36px;
+    }
+    .sequence span {
+      font-size: 32px;
+    }
+    dd {
+      font-size: 64px;
+    }
+    footer {
+      width: min(100%, 1800px);
+      padding: 32px 120px max(32px, env(safe-area-inset-bottom));
+      font-size: 34px;
+    }
+    .arrival-instrument footer :global(button) {
+      font-size: 40px;
+      min-height: 112px;
+    }
+    .sequence {
+      --phase-size: 180px;
+      --phase-gap: 32px;
+    }
+    .force-art {
+      width: 140px;
+      height: 96px;
+    }
+    .ownership-art {
+      width: 100px;
+      height: 100px;
+      margin-right: 24px;
+    }
+    .control dd {
+      padding-left: 124px;
+    }
+    .phase-art :global(svg) {
+      width: 44px;
+      height: 44px;
+      padding: 8px;
     }
   }
   @media (max-width: 760px) {
     .report-body {
-      padding: 76px 20px 20px;
+      padding: 20px 20px 20px;
     }
     .aftermath {
       object-position: 70% top;
@@ -428,6 +693,9 @@
     h2 {
       font-size: 38px;
     }
+    .recorded h2 {
+      margin-top: clamp(100px, 18svh, 180px);
+    }
     .system-name {
       font-size: 28px;
     }
@@ -435,7 +703,17 @@
       font-size: 17px;
     }
     .sequence {
-      gap: 8px;
+      --phase-gap: 8px;
+      --phase-size: 74px;
+    }
+    .ownership-art {
+      width: 42px;
+      height: 42px;
+      margin-right: 8px;
+    }
+    .control dd {
+      padding-left: 0;
+      clear: both;
     }
     .sequence span {
       font-size: 13px;
@@ -450,6 +728,107 @@
     }
     footer {
       padding: 12px 20px max(12px, env(safe-area-inset-bottom));
+    }
+  }
+  /* Core outcome facts precede scrollable detail in compact scenes. The grid
+     reserves the action rail; these rules reduce decorative space, not facts. */
+  @container aftermath (max-height: 900px) {
+    .report-body {
+      padding: 16px 24px;
+      line-height: 1.3;
+    }
+    .overline {
+      margin: 0 0 4px;
+    }
+    .system-name {
+      margin: 4px 0;
+      font-size: 28px;
+    }
+    .recorded h2 {
+      margin: 20px 0 6px;
+      font-size: 40px;
+    }
+    .recorded-context {
+      margin: 6px 0 12px;
+    }
+    .result {
+      display: none;
+    }
+    .sequence {
+      --phase-size: 40px;
+      --phase-gap: 12px;
+      margin: 12px 0;
+    }
+    .sequence li {
+      gap: 3px;
+    }
+    .sequence strong {
+      font-size: 14px;
+    }
+    .sequence span {
+      font-size: 12px;
+    }
+    .phase-art :global(svg) {
+      width: 20px;
+      height: 20px;
+      padding: 3px;
+    }
+    .losses,
+    .control {
+      margin: 12px 0;
+      padding: 10px;
+      gap: 10px;
+    }
+    .force-art {
+      width: 36px;
+      height: 28px;
+      margin-bottom: 4px;
+    }
+    .force-art :global(svg),
+    .ownership-art :global(svg) {
+      width: 18px;
+      height: 18px;
+      padding: 2px;
+    }
+    dt {
+      font-size: 14px;
+    }
+    dd {
+      font-size: 26px;
+    }
+    .ownership-art {
+      width: 32px;
+      height: 32px;
+      margin: 0 8px 0 0;
+    }
+    .control dd {
+      padding-left: 40px;
+      clear: none;
+      font-size: 22px;
+      overflow-wrap: anywhere;
+    }
+  }
+  @container aftermath (max-width: 500px) and (max-height: 900px) {
+    .report-body {
+      padding: 16px;
+    }
+    .recorded h2 {
+      margin-top: 32px;
+      font-size: 36px;
+    }
+    .losses dt {
+      min-height: 38px;
+    }
+    .force-art {
+      float: left;
+      margin: 2px 8px 0 0;
+    }
+    .losses dd {
+      padding-left: 44px;
+    }
+    .control dd {
+      padding-left: 0;
+      clear: both;
     }
   }
   @media (max-height: 550px) {

@@ -35,7 +35,7 @@
     type MessageRecord,
   } from "$lib/conversation-history";
   import ArrivalReports from "../ArrivalReports.svelte";
-  import { arrivalRecords } from "$lib/arrival-reports";
+  import { arrivalRecords, type ArrivalRecord } from "$lib/arrival-reports";
   import FleetContacts from "../FleetContacts.svelte";
   import { type FleetContact, lastFleetContacts } from "@shared/fleet-contacts";
   import ReturnBriefing from "../ReturnBriefing.svelte";
@@ -600,6 +600,15 @@
     }
   });
   let selectedArrival = $state("");
+  let arrivalOpener: HTMLElement | null = null;
+  let arrivalContext = $state<{
+    starId: string;
+    expanded: boolean;
+    layer: Layer | null;
+    observation: boolean;
+  } | null>(null);
+  let navigationSerial = 0;
+  let mounted = true;
   let receivedArrivals = $state<CampaignView[]>([]);
   const arrivals = $derived(
     arrivalRecords([view, ...receivedArrivals, ...records]),
@@ -615,6 +624,9 @@
   });
   let selectedContact = $state("");
 
+  const systemArrival = $derived(
+    arrivals.find((entry) => entry.report.starId === star.id),
+  );
   let receivedContacts = $state<FleetContact[]>([]);
   const contacts = $derived(
     lastFleetContacts([view, { fleetContacts: receivedContacts }, ...records]),
@@ -644,6 +656,8 @@
       void readHistory();
   });
   onDestroy(() => {
+    mounted = false;
+    navigationSerial++;
     historySerial++;
   });
   async function readHistory(after: HistoryCursor | null = null) {
@@ -729,13 +743,33 @@
       ?.focus();
   }
   async function closeArrivals() {
+    const serial = ++navigationSerial;
+    const context = arrivalContext;
     arrivalsOpen = false;
     historySerial++;
     historyLoading = false;
+    if (
+      context &&
+      view.stars.some((candidate) => candidate.id === context.starId)
+    ) {
+      selected = context.starId;
+      expanded = context.expanded;
+      selectedLayer = context.layer;
+      observation = context.observation;
+    }
     await tick();
-    document.querySelector<HTMLElement>('[data-focus="arrivals"]')?.focus();
+    if (!mounted || serial !== navigationSerial) return;
+    if (arrivalOpener?.isConnected && !arrivalOpener.closest("[inert]"))
+      arrivalOpener.focus();
+    else
+      document
+        .querySelector<HTMLElement>(
+          context ? '[data-focus="system-arrival"]' : '[data-focus="arrivals"]',
+        )
+        ?.focus();
   }
   async function inspectArrival(starId: string) {
+    const serial = ++navigationSerial;
     arrivalsOpen = false;
     selected = starId;
     expanded = true;
@@ -748,7 +782,8 @@
     };
     observation = false;
     await tick();
-    document.querySelector<HTMLElement>(".system-details")?.focus();
+    if (mounted && serial === navigationSerial)
+      document.querySelector<HTMLElement>(".system-details")?.focus();
   }
   async function closeContacts() {
     contactsOpen = false;
@@ -813,7 +848,19 @@
       | "economy"
       | "construction"
       | "military",
+    arrival?: ArrivalRecord,
   ) {
+    const serial = ++navigationSerial;
+    if (kind === "arrivals") {
+      arrivalOpener =
+        document.activeElement instanceof HTMLElement
+          ? document.activeElement
+          : null;
+      arrivalContext = arrival
+        ? { starId: star.id, expanded, layer: selectedLayer, observation }
+        : null;
+      if (arrival) selectedArrival = arrival.id;
+    }
     if (kind === "roster")
       rosterOpener =
         document.activeElement instanceof HTMLElement
@@ -852,6 +899,7 @@
     roster = kind === "roster";
     listing = kind === "systems";
     await tick();
+    if (!mounted || serial !== navigationSerial) return;
     if (military) document.querySelector<HTMLElement>(".fleet-panel")?.focus();
     else if (construction)
       document.querySelector<HTMLElement>(".construction-panel")?.focus();
@@ -1186,6 +1234,12 @@
             onclick={() => (observation = !observation)}
             >{observation ? "Return to system" : "Observation"}</ActionButton
           >
+          {#if systemArrival}<CommandControl
+              kind="arrivals"
+              label={`Arrival report · tick ${systemArrival.report.tick}`}
+              data-focus="system-arrival"
+              onclick={() => openPanel("arrivals", systemArrival)}
+            />{/if}
         </div>{/if}
       <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This bounded intelligence panel owns its keyboard scrolling.) -->
       <div
@@ -1405,7 +1459,7 @@
         />
       </div>{/if}
     {#if arrivalsOpen}<div
-        class="construction-panel contact-panel history-panel"
+        class="construction-panel contact-panel history-panel arrival-panel"
         role="dialog"
         aria-modal="true"
         tabindex="-1"
@@ -1414,6 +1468,7 @@
       >
         <ArrivalReports
           records={arrivals}
+          returnLabel={arrivalContext ? "Back to system" : "Back to galaxy"}
           bind:selected={selectedArrival}
           loading={historyLoading}
           error={historyError}
@@ -2963,5 +3018,19 @@
     .system-inspector:not(.expanded) dl > div {
       padding: 4px 0;
     }
+  }
+  .arrival-panel.contact-panel.history-panel {
+    inset: 0;
+  }
+  .observation-access {
+    position: static;
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  .system-inspector.expanded h2 {
+    padding-right: 0;
   }
 </style>

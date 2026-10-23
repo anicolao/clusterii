@@ -1,0 +1,7 @@
+# Pre-review contextual report evidence
+
+Cleance9cab56,8 journeys pass3.4minutes;100 originals and generated narratives remain/tmp/cluster-aftermath-ce9cab56/stories with exact source/spec manifests. Their immutable hashes and original log are retained here. No promotion. The prior7ecfc61a andc4bc59a8 failures remain separate, as does the complete075fa606 family.
+
+Four-size real authenticated capture/immutable-history/contextual navigation/reload and normal preference pass. Added bounded Home/End/ArrowUp reading verifies independent layers and the held-credit explanation with persistent actions; the decorative rounded footer retains complete corner targets. Gallery/lab exercise actual normal/reduced component effects. Browser foreign-document denial plus own immutable history are covered; broader foreign-history authorization has existing service coverage, not a new mounted foreign-history claim.
+
+Self-review identifies insufficient4K instrument scale; reviewer12:12 additionally identifies plain casualty grid, absent illustrated ownership and missing connected/confirmed phase emphasis versus09. New source addresses these with existing provenanced shared art/icons, enlarged full-scene container typography and a dedicated complete casualty reading step. “Surface · recorded” emphasizes a recorded completed resolution, not victory or undisclosed rival facts. Compact gallery/lab containers retain bounded scale. Changed-source execution and independent review remain required.

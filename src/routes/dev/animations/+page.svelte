@@ -225,6 +225,7 @@
           >
             {#key frame.at}<ArrivalReports
                 {...arrivalFrame(time)}
+                returnLabel="Back to system"
                 inspect={{ time: time - frame.at, reduced }}
                 onearlier={() => {}}
                 onlatest={() => {}}

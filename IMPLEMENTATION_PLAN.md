@@ -143,6 +143,8 @@ Resolve orbital and surface control separately. Apply casualties, control change
 
 **Acceptance:** Worked combat examples and boundary fixtures pass; arrival ordering cannot be exploited; no resolver creates units or negative counts. A full browser scenario captures orbit, leaves the surface contested, accumulates escrow, captures the surface, and receives the credits exactly once. The former surface owner continues receiving infantry only while entitled to it.
 
+**Scoped delivery evidence:** [Feature011 contextual aftermath](tests/e2e/011-contextual-aftermath/stories/candidates-7092767d/README.md) connects a selected system to its authorized immutable report and current surface, with real orbital capture, independent ownership, next-tick/reload and keyboard recovery. Eight local journeys/108 candidates pass; independent visual/Linux/hosted acceptance and the full combat/escrow acceptance above remain open.
+
 ## 8. Implement diplomacy and cooperation
 
 Deliver private rooms with explicit invitations, membership, message ordering, unread state, and recovery. Preserve the predecessor's ability to share prior conversation history, governed by the reviewed admission/revocation policy. Replace raw `@UID` access commands with clear membership controls. Use the same object/key-grant interface in mock and real games, with server-enforced membership and real-mode confidentiality. Test admission, key rotation, revocation, and retained-history disclosure against both providers.
