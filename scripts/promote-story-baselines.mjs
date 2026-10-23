@@ -44,8 +44,20 @@ for (const file of stories(source)) {
     if (!/^[a-z0-9-]+$/.test(part)) throw new Error("Invalid story path");
   if (!story.renderer || !story.steps.length)
     throw new Error("Missing renderer or ordered story steps");
+  const feature = /^tests\/e2e\/\d{3}-[a-z0-9-]+\/[^/]+\.spec\.ts$/.test(
+    story.source?.spec ?? "",
+  )
+    ? dirname(story.source.spec)
+    : null;
+  const baselineRoot = feature
+    ? join(feature, "screenshots")
+    : "tests/browser/story-baselines";
   const destination = resolve(
-    archive ? "docs/testing/stories" : "tests/browser/story-baselines",
+    archive
+      ? feature
+        ? join(feature, "stories")
+        : "docs/testing/stories"
+      : baselineRoot,
     story.id,
     story.project,
     story.platform,
@@ -60,7 +72,7 @@ for (const file of stories(source)) {
       const actual = readFileSync(join(dirname(file), view.image));
       if (archive) {
         const baseline = resolve(
-          "tests/browser/story-baselines",
+          baselineRoot,
           story.id,
           story.project,
           story.platform,

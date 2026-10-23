@@ -4,7 +4,9 @@ import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 export function storyViolations(source) {
   const errors = [];
-  if (!/from\s+["']\.\/story-helpers\/fixtures["']/.test(source))
+  if (
+    !/from\s+["'](?:\.\/story-helpers|\.\.\/helpers)\/fixtures["']/.test(source)
+  )
     errors.push("Import the illustrated story fixture");
   if (!source.includes("TestStepHelper")) errors.push("Use TestStepHelper");
   for (const [pattern, message] of [
@@ -59,6 +61,19 @@ export function checkPolicy(root = process.cwd()) {
         `${name}: new/changed procedural spec must migrate to illustrated stories; do not silently extend legacy exceptions`,
       );
   }
+  const featureRoot = resolve(root, "tests/e2e");
+  if (existsSync(featureRoot))
+    for (const feature of readdirSync(featureRoot)) {
+      if (!/^\d{3}-/.test(feature)) continue;
+      for (const name of readdirSync(resolve(featureRoot, feature)).filter(
+        (name) => name.endsWith(".spec.ts"),
+      )) {
+        for (const error of storyViolations(
+          readFileSync(resolve(featureRoot, feature, name), "utf8"),
+        ))
+          errors.push(`${feature}/${name}: ${error}`);
+      }
+    }
   for (const error of helperViolations(
     readFileSync(resolve(folder, "story-helpers/test-step-helper.ts"), "utf8"),
   ))

@@ -1,5 +1,5 @@
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
 
 test("Learn the campaign and return to entry", async ({ page }, info) => {
   const story = new TestStepHelper(info, {

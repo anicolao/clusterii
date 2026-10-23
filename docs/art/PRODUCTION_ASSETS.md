@@ -95,3 +95,5 @@ Exact generation prompt:
 ## Entry composition alignment
 
 Continue reuses `entry-phone.webp` as a decorative inhabited-world inset, distinct from Play’s planet and Learn’s observatory atlas. No asset bytes changed. Cyan emphasis and exact campaign names are semantic production UI; only accessible active memberships render Continue.
+
+The integrated title insignia is original inline vector geometry (thin gold ring and vertical four-point star), composed to plate01. It is aria-hidden decoration around the accessible real Cluster heading, not a rasterized or generated wordmark.

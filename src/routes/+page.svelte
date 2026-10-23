@@ -441,8 +441,17 @@
       aria-label="Welcome to Cluster"
     >
       <div class="brand">
-        <h1 bind:this={focusTitle} tabindex="-1">CLUSTER</h1>
-        <div class="rule" aria-hidden="true"><Icon kind="star" /></div>
+        <h1 bind:this={focusTitle} tabindex="-1" aria-label="Cluster">
+          <span aria-hidden="true"
+            >CLU<span class="title-star"
+              ><svg viewBox="0 0 100 180" focusable="false"
+                ><circle cx="50" cy="90" r="36" /><path
+                  d="M50 0 L54 81 L83 90 L54 96 L50 180 L46 96 L17 90 L46 81 Z"
+                /></svg
+              ></span
+            >STER</span
+          >
+        </h1>
       </div>
       <div class="entry-actions">
         {#if continued}<EntryButton
@@ -654,6 +663,36 @@
     font-size: clamp(64px, 6.3vw, 112px);
     letter-spacing: 0.18em;
     margin: 0 -0.18em 12px 0;
+  }
+  .brand h1 > span {
+    display: inline-flex;
+    align-items: center;
+  }
+  .title-star {
+    position: relative;
+    display: inline-block;
+    width: 0.34em;
+    height: 1em;
+    margin: 0 0.08em 0 -0.07em;
+  }
+  .title-star svg {
+    position: absolute;
+    width: 1.05em;
+    height: 1.9em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    filter: drop-shadow(0 0 8px #ffbc6580);
+    pointer-events: none;
+  }
+  .title-star circle {
+    fill: none;
+    stroke: #e2bd80;
+    stroke-width: 0.6;
+  }
+  .title-star path {
+    fill: #ffe3ac;
   }
   .entry-actions {
     margin: clamp(40px, 8svh, 100px) auto 0;
