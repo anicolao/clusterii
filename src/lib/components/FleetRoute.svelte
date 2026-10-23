@@ -1,6 +1,6 @@
 <script lang="ts">
   import { detailPreference } from "$lib/detail-preference";
-  import { tick } from "svelte";
+  import { tick, untrack } from "svelte";
   import { base } from "$app/paths";
   import { Canvas } from "@threlte/core";
   import type { CampaignView } from "@shared/campaign";
@@ -15,6 +15,7 @@
     waypoints = $bindable<string[]>([]),
     view,
     fleetId,
+    initialMode = "review",
     pending = false,
     busy = false,
     message = "",
@@ -26,6 +27,7 @@
     waypoints?: string[];
     view: CampaignView;
     fleetId: string;
+    initialMode?: "edit" | "review";
     pending?: boolean;
     busy?: boolean;
     message?: string;
@@ -37,7 +39,7 @@
   const fleet = $derived(view.military?.fleets.find((f) => f.id === fleetId));
   const forces = $derived(routeForceReview(view, fleetId));
   let query = $state("");
-  let editing = $state(false);
+  let editing = $state(untrack(() => initialMode === "edit"));
   let editorHeading = $state<HTMLHeadingElement>();
   let editControl = $state<HTMLButtonElement>();
   let footerHeight = $state(160);
@@ -274,7 +276,9 @@
       class="route-details"
       role="region"
       tabindex="0"
-      aria-label="Route details"
+      aria-label={editing && !active && !completed
+        ? "Force details"
+        : "Route details"}
     >
       <p class="overline">
         Fleet {fleet?.number ?? "lost"} · {origin?.name ?? "Recorded outcome"}
@@ -422,6 +426,7 @@
         >{#if completed && fleet}<ActionButton
             onclick={() => {
               replanning = true;
+              editing = true;
               waypoints = [];
               query = "";
             }}>Plan another route</ActionButton
@@ -446,7 +451,7 @@
           class="editor-reading"
           role="region"
           tabindex="0"
-          aria-label="Waypoint editing"
+          aria-label="Route details"
         >
           {#if !active && !completed && fleet}<label
               >Find a waypoint<input

@@ -275,6 +275,13 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
         await pick.press("Enter");
         await button(owner, "Plot route").focus();
         await button(owner, "Plot route").press("Enter");
+        await expect(
+          planner.getByRole("region", { name: "Route details", exact: true }),
+        ).toBeFocused();
+        await planner
+          .getByRole("region", { name: "Route editing", exact: true })
+          .getByRole("button", { name: "Review route", exact: true })
+          .click();
         await review
           .getByRole("region", { name: "Fleet transport manifest" })
           .scrollIntoViewIfNeeded();
@@ -461,7 +468,7 @@ test("Review confirmed forces before acknowledged dispatch and recovery", async 
           const list = planner.getByRole("list", { name: "Route waypoints" }),
             box = await list.boundingBox(),
             clip = await planner
-              .getByRole("region", { name: "Waypoint editing", exact: true })
+              .getByRole("region", { name: "Route details", exact: true })
               .boundingBox();
           expect(box!.y).toBeGreaterThanOrEqual(clip!.y);
           expect(box!.y + box!.height).toBeLessThanOrEqual(
