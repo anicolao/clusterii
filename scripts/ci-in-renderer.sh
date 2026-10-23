@@ -34,6 +34,7 @@ case "$1" in
       CLUSTER_PROFILE_INGRESS_LOG="$PWD/ci-evidence/profile-ingress.jsonl" \
       NODE_OPTIONS="${NODE_OPTIONS:-} --import=$PWD/scripts/profile-ingress-observer.mjs" \
       bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'
+    node scripts/verify-profile-ingress-evidence.mjs "$PWD/ci-evidence/profile-ingress.jsonl"
     ;;
   *) exit 2 ;;
 esac

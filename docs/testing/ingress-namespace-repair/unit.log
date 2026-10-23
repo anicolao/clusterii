@@ -1,0 +1,12 @@
+✔ binary metadata correlation is bounded and never returns source identifiers or secrets (0.816584ms)
+✔ native HTTP observer preserves body, headers, status and response while separating arrival/close (10.696792ms)
+✔ diagnostic cap is explicit and does not prevent subsequent HTTP responses (10.801584ms)
+✔ successful CI cannot accept absent, unmatched or uncorrelated ingress evidence (1.113459ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 86.205417

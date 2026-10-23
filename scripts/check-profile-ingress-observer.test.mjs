@@ -2,22 +2,40 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { createServer, request, Server } from "node:http";
 import { once } from "node:events";
-import { mkdtempSync, readFileSync, existsSync, rmSync } from "node:fs";
+import {
+  mkdtempSync,
+  readFileSync,
+  existsSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
   installProfileIngressObserver,
   profileIngressTags,
+  isProfileIngressRoute,
 } from "./profile-ingress-observer.mjs";
 
+import { verifyProfileIngressEvidence } from "./verify-profile-ingress-evidence.mjs";
+
 const path =
-  "/functions/projects/demo-clusterii/triggers/us-central1-processProfile-0";
+  "/functions/projects/demo-clusterii-default-rtdb/triggers/us-central1-processProfile-0";
 const headers = {
   "ce-id": "private-event",
   "ce-ref": "/profileCommands/private-user/private-command",
   authorization: "private-token",
 };
 test("binary metadata correlation is bounded and never returns source identifiers or secrets", () => {
+  assert.equal(isProfileIngressRoute(path), true);
+  assert.equal(isProfileIngressRoute(path.replace("-default-rtdb", "")), true);
+  for (const bad of [
+    path.replace("demo-clusterii", "other"),
+    path.replace("-default-rtdb", "-private"),
+    path + "/extra",
+    path.replace("processProfile", "processCampaign"),
+  ])
+    assert.equal(isProfileIngressRoute(bad), false);
   const tags = profileIngressTags(headers);
   assert.match(tags.eventTag, /^[a-f0-9]{64}$/);
   assert.match(tags.commandTag, /^[a-f0-9]{64}$/);
@@ -105,6 +123,12 @@ test("native HTTP observer preserves body, headers, status and response while se
       { status: 202, body: "original-response" },
     );
     assert.equal(existsSync(output), false);
+    const initialCoverage = JSON.parse(
+      readFileSync(`${output}.status.json`, "utf8"),
+    );
+    assert.equal(initialCoverage.status, "active");
+    assert.equal(initialCoverage.matched, 0);
+    assert.equal(initialCoverage.otherRoute, 1);
     assert.deepEqual(await send(path), {
       status: 202,
       body: "original-response",
@@ -132,6 +156,10 @@ test("native HTTP observer preserves body, headers, status and response while se
     assert.equal(events[0].commandTag, events[1].commandTag);
     assert.equal(events[2].sequence, events[3].sequence);
     assert.ok(events[1].elapsedMs >= 0 && events[3].elapsedMs >= 0);
+    const coverage = JSON.parse(readFileSync(`${output}.status.json`, "utf8"));
+    assert.equal(coverage.matched, 2);
+    assert.equal(coverage.requests, 3);
+    assert.ok(!JSON.stringify(coverage).includes("private"));
     assert.ok(!text.includes("private") && !text.includes("original-response"));
   } finally {
     restore();
@@ -164,11 +192,68 @@ test("diagnostic cap is explicit and does not prevent subsequent HTTP responses"
       .map(JSON.parse);
     assert.equal(events.length, 2);
     assert.deepEqual(events[1], { event: "limit" });
+    const coverage = JSON.parse(readFileSync(`${output}.status.json`, "utf8"));
+    assert.equal(coverage.status, "coverage-limit");
+    assert.equal(coverage.requests, 2);
+    assert.equal(coverage.matched, 2);
   } finally {
     restore();
     server.close();
     server.closeAllConnections();
     await once(server, "close");
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test("successful CI cannot accept absent, unmatched or uncorrelated ingress evidence", () => {
+  const dir = mkdtempSync(join(tmpdir(), "cluster-ingress-verification-"));
+  const output = join(dir, "events.jsonl");
+  try {
+    assert.throws(() => verifyProfileIngressEvidence(output), /unavailable/);
+    const status = { status: "active", listening: "loopback", matched: 1 };
+    writeFileSync(`${output}.status.json`, JSON.stringify(status));
+    const tags = profileIngressTags(headers);
+    const arrival = { event: "http-arrived", sequence: 1, ...tags };
+    const finished = {
+      event: "http-finished",
+      sequence: 1,
+      status: 200,
+      ...tags,
+    };
+    const write = (records) =>
+      writeFileSync(output, records.map((r) => JSON.stringify(r)).join("\n"));
+    write([arrival]);
+    assert.throws(
+      () => verifyProfileIngressEvidence(output),
+      /completed tagged/,
+    );
+    write([arrival, { ...finished, eventTag: "0".repeat(64) }]);
+    assert.throws(
+      () => verifyProfileIngressEvidence(output),
+      /completed tagged/,
+    );
+    write([arrival, finished]);
+    assert.deepEqual(verifyProfileIngressEvidence(output), {
+      status: "verified",
+      arrivals: 1,
+      completedTaggedRequests: 1,
+      coverageLimited: false,
+    });
+    writeFileSync(
+      `${output}.status.json`,
+      JSON.stringify({ ...status, matched: 0 }),
+    );
+    assert.throws(
+      () => verifyProfileIngressEvidence(output),
+      /coverage absent/,
+    );
+    writeFileSync(
+      `${output}.status.json`,
+      JSON.stringify({ ...status, status: "coverage-limit" }),
+    );
+    write([arrival, finished, { event: "limit" }]);
+    assert.equal(verifyProfileIngressEvidence(output).coverageLimited, true);
+  } finally {
     rmSync(dir, { recursive: true, force: true });
   }
 });

@@ -1,0 +1,22 @@
+{
+  "sourceBase": "9de12d74",
+  "test": "authenticated ingress, owner grants, replay, concurrent CAS and direct access rules",
+  "testPass": 1,
+  "testAssertions": 16,
+  "receiptDeadlineMs": 20000,
+  "testDeadlineMs": 60000,
+  "outerEmulatorStartupAndTestCapSeconds": 180,
+  "arrivals": 4,
+  "http200Completions": 4,
+  "handlerEntries": 4,
+  "transactionSettlements": 4,
+  "exactEventAndCommandTagSetsEqual": true,
+  "closedResponses": 0,
+  "historicalCauseResolved": false,
+  "rawEvidence": {
+    "/tmp/cluster-ingress-activation-smoke/run.log": "bef53402eaa8fc3900af44a0be2b4e95647cc3e7f7a2f89c71ec8796dd962986",
+    "/tmp/cluster-ingress-namespace-smoke/run.log": "00b18ff726207aed20795a4187666b9a49a5f7a8f32938a806b2bd7b93bdc28f",
+    "/tmp/cluster-ingress-namespace-smoke/database-debug.log": "b8473e677ae5c17e1c967c6dbed8b314b78be5eed1fdb57dc2306198b7636d89",
+    "/tmp/cluster-ingress-namespace-smoke/firestore-debug.log": "bc6df89d1f96df553ff6c5813a816638870c28aeac33a0651a57ca42e2099d78"
+  }
+}

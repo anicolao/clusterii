@@ -1,6 +1,6 @@
 import { Server } from "node:http";
 import { createHash } from "node:crypto";
-import { appendFileSync, mkdirSync } from "node:fs";
+import { appendFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { performance } from "node:perf_hooks";
 
@@ -8,6 +8,13 @@ const loopback = (address) =>
   ["127.0.0.1", "::1", "::ffff:127.0.0.1"].includes(address);
 const tag = (kind, value) =>
   createHash("sha256").update(`${kind}\0${value}`).digest("hex");
+
+// RTDB GCFEmulatorPublisher uses FunctionPayload.namespace in this URL,
+// rather than the project ID. Accept only this project's explicit demo namespace.
+export const isProfileIngressRoute = (url) =>
+  /^\/functions\/projects\/demo-clusterii(?:-default-rtdb)?\/triggers\/us-central1-processProfile(?:-\d+)?$/.test(
+    url,
+  );
 
 // Binary CloudEvent metadata only. Never inspect/consume the body or log headers.
 export function profileIngressTags(headers) {
@@ -42,6 +49,25 @@ export function installProfileIngressObserver({
   let records = 0,
     sequence = 0,
     disabled = false;
+  const coverage = {
+    status: "active",
+    listening: "unobserved",
+    requests: 0,
+    matched: 0,
+    nonLoopback: 0,
+    nonPost: 0,
+    otherRoute: 0,
+  };
+  const status = () => {
+    try {
+      mkdirSync(dirname(output), { recursive: true });
+      writeFileSync(`${output}.status.json`, JSON.stringify(coverage) + "\n");
+    } catch {
+      disabled = true;
+      process.stderr.write("Profile ingress diagnostics unavailable\n");
+    }
+  };
+  status();
   const emit = (event) => {
     if (disabled || records > limit) return;
     try {
@@ -57,16 +83,40 @@ export function installProfileIngressObserver({
     }
   };
   Server.prototype.emit = function (event, ...args) {
+    if (event === "listening") {
+      const address = this.address();
+      if (typeof address === "object" && address?.port === port) {
+        coverage.listening = loopback(address.address)
+          ? "loopback"
+          : "other-address";
+        status();
+      }
+    }
     const [req, res] = args;
+    if (
+      event === "request" &&
+      req.socket.localPort === port &&
+      coverage.requests <= limit
+    ) {
+      coverage.requests++;
+      if (
+        !loopback(req.socket.localAddress) ||
+        !loopback(req.socket.remoteAddress)
+      )
+        coverage.nonLoopback++;
+      else if (req.method !== "POST") coverage.nonPost++;
+      else if (!isProfileIngressRoute(req.url)) coverage.otherRoute++;
+      else coverage.matched++;
+      if (coverage.requests > limit) coverage.status = "coverage-limit";
+      status();
+    }
     if (
       event === "request" &&
       req.method === "POST" &&
       req.socket.localPort === port &&
       loopback(req.socket.localAddress) &&
       loopback(req.socket.remoteAddress) &&
-      /^\/functions\/projects\/demo-clusterii\/triggers\/us-central1-processProfile(?:-\d+)?$/.test(
-        req.url,
-      )
+      isProfileIngressRoute(req.url)
     ) {
       const sequenceId = ++sequence,
         started = performance.now();
