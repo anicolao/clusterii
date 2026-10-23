@@ -1,5 +1,25 @@
 import { appendFileSync } from "node:fs";
 import { performance } from "node:perf_hooks";
+import { AsyncLocalStorage } from "node:async_hooks";
+
+type CommitMetrics = {
+  commitCalls: number;
+  commitMs: number;
+  commitFailures: number;
+  commitRequestCalls: number;
+  commitRequestMs: number;
+  commitRequestFailures: number;
+};
+
+// Restore the exact own/prototype boundary as well as the method value.
+function replaceMethod(target: any, name: string, replacement: any) {
+  const descriptor = Object.getOwnPropertyDescriptor(target, name);
+  target[name] = replacement;
+  return () => {
+    if (descriptor) Object.defineProperty(target, name, descriptor);
+    else delete target[name];
+  };
+}
 
 // Opt-in test instrumentation only. Never records document paths, values, keys,
 // identities, envelopes or errors; delegates every operation to the original SDK.
@@ -11,6 +31,7 @@ export function settlementTiming(db: any, output: string) {
     db.projectId !== "demo-clusterii"
   )
     throw new Error("Settlement timing requires the loopback demo emulator");
+  const transactionContext = new AsyncLocalStorage<CommitMetrics>();
   let count = 0,
     sequence = 0;
   const emit = (event: Record<string, string | number | boolean>) => {
@@ -30,75 +51,150 @@ export function settlementTiming(db: any, output: string) {
       emit({ event: "start", label, span });
       const original = db.runTransaction;
       let transactions = 0;
-      if (label === "batch" || label === "repeat")
-        db.runTransaction = function (callback: any, ...options: any[]) {
-          const txNumber = ++transactions,
-            txStart = performance.now();
-          let attempts = 0,
-            reads = 0,
-            writes = 0,
-            readMs = 0,
-            callbackMs = 0;
-          return original
-            .call(
-              this,
-              async (tx: any) => {
-                attempts++;
-                const begin = performance.now(),
-                  restore: (() => void)[] = [];
-                for (const name of ["get", "getAll"] as const) {
-                  const native = tx[name];
-                  tx[name] = async function (...args: any[]) {
-                    reads++;
-                    const readStart = performance.now();
-                    try {
-                      return await native.apply(this, args);
-                    } finally {
-                      readMs += performance.now() - readStart;
-                    }
-                  };
-                  restore.push(() => {
-                    tx[name] = native;
+      const restoreSpan: (() => void)[] = [];
+      if (label === "batch" || label === "repeat") {
+        const nativeRequest = db.request;
+        if (typeof nativeRequest !== "function")
+          throw new Error(
+            "Settlement timing requires the SDK request boundary",
+          );
+        restoreSpan.push(
+          replaceMethod(
+            db,
+            "request",
+            async function (this: any, ...args: any[]) {
+              const metrics = transactionContext.getStore();
+              if (!metrics || args[0] !== "commit")
+                return nativeRequest.apply(this, args);
+              metrics.commitRequestCalls++;
+              const begin = performance.now();
+              try {
+                return await nativeRequest.apply(this, args);
+              } catch (error) {
+                metrics.commitRequestFailures++;
+                throw error;
+              } finally {
+                metrics.commitRequestMs += performance.now() - begin;
+              }
+            },
+          ),
+        );
+        restoreSpan.push(
+          replaceMethod(
+            db,
+            "runTransaction",
+            function (this: any, callback: any, ...options: any[]) {
+              const txNumber = ++transactions,
+                txStart = performance.now();
+              let attempts = 0,
+                reads = 0,
+                writes = 0,
+                readMs = 0,
+                callbackMs = 0;
+              const metrics: CommitMetrics = {
+                commitCalls: 0,
+                commitMs: 0,
+                commitFailures: 0,
+                commitRequestCalls: 0,
+                commitRequestMs: 0,
+                commitRequestFailures: 0,
+              };
+              const commitRestores = new Map<any, () => void>();
+              // Keep context through the SDK continuation after the callback returns.
+              // Concurrent transaction requests cannot borrow another call's metrics.
+              return transactionContext
+                .run(metrics, async () =>
+                  original.call(
+                    this,
+                    async (tx: any) => {
+                      attempts++;
+                      if (!commitRestores.has(tx)) {
+                        const nativeCommit = tx.commit;
+                        if (typeof nativeCommit !== "function")
+                          throw new Error(
+                            "Settlement timing requires the SDK transaction commit boundary",
+                          );
+                        commitRestores.set(
+                          tx,
+                          replaceMethod(
+                            tx,
+                            "commit",
+                            async function (this: any, ...args: any[]) {
+                              metrics.commitCalls++;
+                              const begin = performance.now();
+                              try {
+                                return await nativeCommit.apply(this, args);
+                              } catch (error) {
+                                metrics.commitFailures++;
+                                throw error;
+                              } finally {
+                                metrics.commitMs += performance.now() - begin;
+                              }
+                            },
+                          ),
+                        );
+                      }
+                      const begin = performance.now(),
+                        restore: (() => void)[] = [];
+                      for (const name of ["get", "getAll"] as const) {
+                        const native = tx[name];
+                        tx[name] = async function (...args: any[]) {
+                          reads++;
+                          const readStart = performance.now();
+                          try {
+                            return await native.apply(this, args);
+                          } finally {
+                            readMs += performance.now() - readStart;
+                          }
+                        };
+                        restore.push(() => {
+                          tx[name] = native;
+                        });
+                      }
+                      for (const name of [
+                        "set",
+                        "update",
+                        "delete",
+                        "create",
+                      ] as const) {
+                        const native = tx[name];
+                        tx[name] = function (...args: any[]) {
+                          writes++;
+                          return native.apply(this, args);
+                        };
+                        restore.push(() => {
+                          tx[name] = native;
+                        });
+                      }
+                      try {
+                        return await callback(tx);
+                      } finally {
+                        callbackMs += performance.now() - begin;
+                        for (const reset of restore) reset();
+                      }
+                    },
+                    ...options,
+                  ),
+                )
+                .finally(() => {
+                  for (const restore of commitRestores.values()) restore();
+                  emit({
+                    event: "transaction",
+                    span,
+                    txNumber,
+                    attempts,
+                    reads,
+                    writes,
+                    readMs,
+                    callbackMs,
+                    ...metrics,
+                    totalMs: performance.now() - txStart,
                   });
-                }
-                for (const name of [
-                  "set",
-                  "update",
-                  "delete",
-                  "create",
-                ] as const) {
-                  const native = tx[name];
-                  tx[name] = function (...args: any[]) {
-                    writes++;
-                    return native.apply(this, args);
-                  };
-                  restore.push(() => {
-                    tx[name] = native;
-                  });
-                }
-                try {
-                  return await callback(tx);
-                } finally {
-                  callbackMs += performance.now() - begin;
-                  for (const reset of restore) reset();
-                }
-              },
-              ...options,
-            )
-            .finally(() =>
-              emit({
-                event: "transaction",
-                span,
-                txNumber,
-                attempts,
-                reads,
-                writes,
-                readMs,
-                callbackMs,
-                totalMs: performance.now() - txStart,
-              }),
-            );
-        };
+                });
+            },
+          ),
+        );
+      }
       try {
         const result = await run();
         emit({
@@ -120,7 +216,7 @@ export function settlementTiming(db: any, output: string) {
         });
         throw error;
       } finally {
-        db.runTransaction = original;
+        for (const restore of restoreSpan.reverse()) restore();
       }
     },
   };
