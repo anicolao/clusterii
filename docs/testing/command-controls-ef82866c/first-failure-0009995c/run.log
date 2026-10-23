@@ -1,0 +1,104 @@
+$ tsc -p tsconfig.json
+i  emulators: Starting emulators: auth, functions, firestore, database
+i  emulators: Detected demo project ID "demo-clusterii", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
+✔  firestore: Firestore Emulator was started in standard edition.
+✔  firestore: Firestore Emulator UI websocket is running on 19150.
+i  database: Database Emulator logging to database-debug.log
+i  functions: Watching "/Users/anicolao/projects/games/clusterii-conversation-history/functions" for Cloud Functions...
+⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+⚠  functions: Your requested "node" version "22" doesn't match your global version "24". Using node@24 from host.
+Serving at port 8502
+
+✔  functions: Loaded functions definitions from source: campaignCommandKey, campaignKey, campaignSecurity, processCampaign, processCampaignMaintenance, processCampaignMigration, revokeCredentials, revokeSessions, runCampaignMigration, runProduction, startScheduledCampaigns, processProfile, profileKey.
+✔  functions[us-central1-campaignCommandKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignCommandKey).
+✔  functions[us-central1-campaignKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignKey).
+✔  functions[us-central1-campaignSecurity]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignSecurity).
+✔  functions[us-central1-processCampaign]: database function initialized.
+✔  functions[us-central1-processCampaignMaintenance]: database function initialized.
+✔  functions[us-central1-processCampaignMigration]: database function initialized.
+✔  functions[us-central1-revokeCredentials]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeCredentials).
+✔  functions[us-central1-revokeSessions]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeSessions).
+✔  functions[us-central1-runCampaignMigration]: firestore function initialized.
+i  functions[us-central1-runProduction]: function ignored because the pubsub emulator does not exist or is not running.
+i  functions[us-central1-startScheduledCampaigns]: function ignored because the pubsub emulator does not exist or is not running.
+✔  functions[us-central1-processProfile]: database function initialized.
+✔  functions[us-central1-profileKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/profileKey).
+i  Running script: bunx playwright test --config playwright.stories.config.ts tests/e2e/010-zero-science --project=phone --max-failures=1 --output=/tmp/cluster121-1022-phone-output && bunx playwright test --config playwright.stories.config.ts tests/e2e/010-zero-science/controls.spec.ts --project=desktop --project=large --project=short --max-failures=1 --output=/tmp/cluster121-1022-controls-output
+[WebServer] $ vite build
+[WebServer] (node:78331) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 10:26:59 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+[WebServer] https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+[WebServer] 292:     </div>
+[WebServer] 293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+[WebServer] 294:     <div
+[WebServer]              ^
+[WebServer] 295:       class="route-details"
+[WebServer] 296:       onkeydown={readingKey}
+[WebServer] (node:78331) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 10:27:00 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+[WebServer] https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+[WebServer] 292:     </div>
+[WebServer] 293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+[WebServer] 294:     <div
+[WebServer]              ^
+[WebServer] 295:       class="route-details"
+[WebServer] 296:       onkeydown={readingKey}
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:78331) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:78343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:78363) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [phone] › tests/e2e/010-zero-science/controls.spec.ts:5:1 › Shared command artwork retains keyboard targets and motion-independent selection (3.7s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [phone] › tests/e2e/010-zero-science/controls.spec.ts:5:1 › Shared command artwork retains keyboard targets and motion-independent selection › Use Space on the actual shared lab control; the local result is identical and does not issue a campaign order. › Component reviewer: settled, contained, exact capture 
+
+    Error: page.evaluate: Error: Stable capture has an undeclared paused animation; use a separate explicit animation inspection test.
+        at captureReady (eval at evaluate (:303:30), <anonymous>:53:77)
+        at async <anonymous>:329:30
+        at captureReady (eval at evaluate (:303:30), <anonymous>:53:77)
+        at async <anonymous>:329:30
+        at test.step.timeout (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:226:26)
+        at test.step.timeout (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:209:11)
+        at TestStepHelper.step (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:184:5)
+        at /Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/010-zero-science/controls.spec.ts:101:5
+
+    Error Context: ../../../../../tmp/cluster121-1022-phone-output/e2e-010-zero-science-contr-5ade1-otion-independent-selection-phone/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../tmp/cluster121-1022-phone-output/e2e-010-zero-science-contr-5ade1-otion-independent-selection-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../tmp/cluster121-1022-phone-output/e2e-010-zero-science-contr-5ade1-otion-independent-selection-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [phone] › tests/e2e/010-zero-science/controls.spec.ts:5:1 › Shared command artwork retains keyboard targets and motion-independent selection 
+  1 did not run
+  1 error was not a part of any test, see above for details
+⚠  Script exited unsuccessfully (code 1)
+i  emulators: Shutting down emulators.
+i  functions: Stopping Functions Emulator
+i  database: Stopping Database Emulator
+i  firestore: Stopping Firestore Emulator
+i  auth: Stopping Authentication Emulator
+i  eventarc: Stopping Eventarc Emulator
+i  tasks: Stopping Cloud Tasks Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator
+
+Error: Script "bunx playwright test --config playwright.stories.config.ts tests/e2e/010-zero-science --project=phone --max-failures=1 --output=/tmp/cluster121-1022-phone-output && bunx playwright test --config playwright.stories.config.ts tests/e2e/010-zero-science/controls.spec.ts --project=desktop --project=large --project=short --max-failures=1 --output=/tmp/cluster121-1022-controls-output" exited with code 1

@@ -802,3 +802,5 @@ Prompt 152 | f89738fdb5a8aaf886c00ae41ec3792137cd6e22cc2ce7479ebaf560d46dfe8e | 
 Prompt 152 | f89738fdb5a8aaf886c00ae41ec3792137cd6e22cc2ce7479ebaf560d46dfe8e | Retain42 clean authenticated-view candidates, reconcile10:12 and enable existing bounded CI settlement evidence without manual reruns.
 
 Prompt 153 | df819655d769e50128fdd604af99f7a89373022a4c0e3d5eab20df31ea652d56 | Preserve first lab readiness failure and explicitly declare existing paused feedback frames without relaxing capture checks.
+
+Prompt 153 | df819655d769e50128fdd604af99f7a89373022a4c0e3d5eab20df31ea652d56 | Archive30 source-paired command and authenticated-phone candidates, first failure and later publication availability with scoped gates.
