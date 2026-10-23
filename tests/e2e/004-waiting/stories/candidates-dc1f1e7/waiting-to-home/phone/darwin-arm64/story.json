@@ -1,0 +1,279 @@
+{
+  "id": "waiting-to-home",
+  "title": "Gather commanders and recover the same seat",
+  "inventory": [
+    "UX-02",
+    "UX-16"
+  ],
+  "description": "Four ordinary authenticated players gather, recover a waiting membership and enter assigned homes after the real scheduler delivery. The demo catalogue/admission clock is a labelled harness; no state is injected.",
+  "source": {
+    "commit": "dc1f1e761c6f6a7b9c61df22023b07ea0f436dd6",
+    "dirty": false,
+    "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+    "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary Google emulator sign-in and acknowledged identity save; development entitlement is a labelled fixture.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "authorized-readers",
+      "description": "Read-only corroboration: resolve actual emulator accounts by unique login email, mint their authenticated client sessions and use Firestore rules/campaignKey grants. No state writes or identity inference.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "recover-waiting-seat",
+      "description": "Reload the acknowledged membership without joining again; read named seats and remaining places.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Authorized manifest restores the saved roster and actual start condition.",
+      "verifications": [
+        "Pre-start screen exposes no arbitrary world, home ownership or extra claim control."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "007-recover-waiting-seat-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "admit-2",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Actual create/join controls and accepted seat; catalogue and admission time are fixed by the demo-only loader, never injected state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "read-scheduled-roster",
+      "description": "The full actual roster schedules departure; no player starts the campaign manually.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Authorized manifest restores the saved roster and actual start condition.",
+      "verifications": [
+        "Pre-start screen exposes no arbitrary world, home ownership or extra claim control."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "011-read-scheduled-roster-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-departure-policy",
+      "description": "Keyboard-scroll the bounded manifest to the objective and Leave policy while actions remain contained.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Complete departure policy is readable without moving the document.",
+      "verifications": [
+        "Keyboard focus remains in the reading region."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "012-read-departure-policy-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-rules-and-return",
+      "description": "Open shared Rules through Menu, then Escape back through the menu and restore the original opener.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Rules disclose proposed policy and preserve the campaign.",
+      "verifications": [
+        "Rules takes heading focus and both return controls remain completely contained before capture."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "013-read-rules-and-return-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "rules-focus-return",
+      "description": "Ordinary Escape restores Rules, then Menu, without a server command.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "release-saved-seat",
+      "description": "Leave before departure; the server releases this seat and cancels the full-roster schedule for the remaining player.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "The Leave receipt is accepted and peer capacity updates.",
+      "verifications": [
+        "The remaining authorized projection has one free place and no scheduled start; departed private read is denied."
+      ],
+      "views": [
+        {
+          "player": "Tidal envoy",
+          "image": "015-release-saved-seat-1-tidal-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "rejoin-departure",
+      "description": "Choose the released faction and submit a new ordinary admission; the actual full roster schedules departure again.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Server confirms rejoin and four occupied places.",
+      "verifications": [
+        "One seat per authenticated commander and no home before start."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "016-rejoin-departure-1-chart-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "normal-motion-start",
+      "description": "Explicit normal-motion interaction check: enable no-preference before real scheduled transition; reduced capture metadata is restored only afterward.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduled-start",
+      "description": "Deliver the real Scheduler HTTP request at the designated browser/domain boundary; no campaign or membership writes. This is not hosted cadence certification.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "recover-assigned-home",
+      "description": "The same campaign reveals a real home. Reload preserves that assignment and independent peer ownership.",
+      "actor": "Chart envoy",
+      "kind": "player",
+      "acknowledgement": "Authorized active view has a home and no waiting manifest.",
+      "verifications": [
+        "No new seat claim is offered after recovery."
+      ],
+      "views": [
+        {
+          "player": "Chart envoy",
+          "image": "019-recover-assigned-home-1-chart-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Tidal envoy",
+          "image": "019-recover-assigned-home-2-tidal-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
