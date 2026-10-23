@@ -9,6 +9,7 @@
   import FleetSymbol from "./FleetSymbol.svelte";
   let {
     records,
+    returnLabel = "Back to galaxy",
     selected = $bindable(""),
     loading = false,
     error = "",
@@ -22,6 +23,7 @@
     oninspect,
   }: {
     records: ArrivalRecord[];
+    returnLabel?: string;
     selected?: string;
     loading?: boolean;
     error?: string;
@@ -79,6 +81,9 @@
           item.report.starId}
       </p>{/if}
     <h2>{title}</h2>
+    {#if report}<p class="recorded-context">
+        Recorded outcome at tick {report.tick}. Current control may differ.
+      </p>{/if}
     <Feedback
       message={loading ? "Loading authorized arrival reports…" : ""}
       {error}
@@ -87,7 +92,7 @@
     {#if report}<article use:feedbackMotion={{ key: item.id, inspect }}>
         <p class="result">
           {report.orbit === own && report.surface !== own
-            ? `Orbit is yours. Surface remains ${owner(report.surface) === "Unclaimed" ? "unclaimed" : `${owner(report.surface)}-held`}.`
+            ? `Orbit was yours at this tick. Surface remained ${owner(report.surface) === "Unclaimed" ? "unclaimed" : `${owner(report.surface)}-held`}.`
             : "Confirmed outcome at the recorded tick. Current control may have changed."}
         </p>
         <ol class="sequence" aria-label="Resolution sequence">
@@ -171,6 +176,7 @@
             layers share control. This report records no credit release to you.{/if}
         </p>
         <p class="outputs">
+          Output entitlement at the recorded tick:
           {#if report.orbit >= 0}{owner(report.orbit)}
             {report.orbit === own ? "receive" : "receives"} orbital fighters and science.{:else}No
             empire receives orbital output.{/if}
@@ -226,7 +232,7 @@
   </div>
   <footer>
     <ActionButton class="secondary" onclick={onclose}
-      >Back to galaxy</ActionButton
+      >{returnLabel}</ActionButton
     >{#if report}<ActionButton
         class="primary"
         onclick={() => oninspect(report!.starId)}>Inspect surface</ActionButton
@@ -275,6 +281,10 @@
     padding: 32px clamp(24px, 4vw, 70px);
     max-width: 850px;
     line-height: 1.5;
+  }
+  .recorded-context {
+    color: #b9d2d8;
+    font-size: 0.9em;
   }
   .system-name {
     font:
