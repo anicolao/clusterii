@@ -680,3 +680,11 @@ Prompt 109 | cc7ca0bb14d39e9a50f1a141d2fcaff2b4610587fb4b6afd016b6c20a878fc3b | 
 Prompt 110 | d3dc1d6dc204c32fbc486efb60bb96802d7909a2f41c3bb5f538b7da757522ee | Register PR109 shared local motion control with scoped source validation and pending rendered acceptance.
 
 Prompt 111 | 94c90d69fc150daf99b3399d15e26ee30f98dac0d10eaaa72b2d3a58dfbd177a | Record successful final static verification and PR110 dependency with explicit rendering and performance gates.
+
+Prompt 112 | 0e6514eab0c4f604dc10fa7e4ee8acce4b7a9f3d9ed98defccaae678eb879ff4 | Preserve first settings Tab-boundary failure and implement explicit shared modal focus wrapping without browser retry
+
+Prompt 112 | 0e6514eab0c4f604dc10fa7e4ee8acce4b7a9f3d9ed98defccaae678eb879ff4 | Register stacked draft PR111 and its stopped generation, source correction and outstanding settings acceptance gates
+
+Prompt 117 | 080c53a673a8201c6ab67ca160024eb2ff2d2076ac120dc327e985063ab095f5 | Preserve four-size corrected lab-label candidates and exact source pairing for independent review without promotion
+
+Prompt 118 | 7474732170248360199f7827a415ef0699dcabb7ed7b003980cf1af2fad8decb | Archive four passing strict settings journeys and24 exact captures under scoped reviewer approval with remaining gates

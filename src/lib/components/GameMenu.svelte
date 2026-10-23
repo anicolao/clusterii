@@ -8,6 +8,28 @@
     dialog.showModal();
     dialog.querySelector<HTMLElement>("h2")?.focus();
   }
+  function containFocus(event: KeyboardEvent) {
+    if (event.key !== "Tab") return;
+    const controls = Array.from(
+      dialog.querySelectorAll<HTMLElement>(
+        'button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), a[href], [tabindex="0"]',
+      ),
+    ).filter((control) => control.checkVisibility());
+    const first = controls[0];
+    const last = controls.at(-1);
+    if (!first || !last) return;
+    if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    } else if (
+      event.shiftKey &&
+      (document.activeElement === first ||
+        document.activeElement === dialog.querySelector("h2"))
+    ) {
+      event.preventDefault();
+      last.focus();
+    }
+  }
   function restore() {
     if (opener?.isConnected) opener.focus();
   }
@@ -16,7 +38,12 @@
 <ActionButton class="quiet" onclick={open} aria-haspopup="dialog"
   >Menu</ActionButton
 >
-<dialog bind:this={dialog} aria-label="Game menu" onclose={restore}>
+<dialog
+  bind:this={dialog}
+  aria-label="Game menu"
+  onclose={restore}
+  onkeydown={containFocus}
+>
   <div class="menu-content">
     <p class="overline">Your presentation</p>
     <h2 tabindex="-1">Game menu</h2>

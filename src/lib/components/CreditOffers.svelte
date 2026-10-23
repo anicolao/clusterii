@@ -132,7 +132,7 @@
   }}
   class="credit-offers"
   aria-label="Credit offers"
-  style={`--exchange-art:url(${base}/art/construction-market.webp)`}
+  style={`background:linear-gradient(#071820cf,#071820f5),url(${base}/art/construction-market.webp) center/cover`}
 >
   <header>
     <p class="overline gold">Private exchange</p>
@@ -329,9 +329,6 @@
     min-height: 0;
     display: grid;
     grid-template-rows: auto minmax(0, 1fr) auto;
-    background:
-      linear-gradient(#071820cf, #071820f5),
-      var(--exchange-art) center/cover;
     container-type: inline-size;
   }
   header,

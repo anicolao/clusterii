@@ -1,0 +1,148 @@
+{
+  "id": "local-presentation-settings",
+  "title": "Choose local presentation and return with keyboard focus",
+  "inventory": [
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "A developer operates the actual shared game menu/settings in the gallery, reloads local choices, and inspects the existing shared feedback lab. These are acknowledged browser-local outcomes, not campaign receipts, galaxy rail/scene equivalence or performance evidence. No identity or emulator setup is used.",
+  "source": {
+    "commit": "15877816b074cd4e711e0210b9736f4e61f5c48c",
+    "dirty": false,
+    "spec": "tests/browser/local-settings.story.spec.ts",
+    "specSha256": "d9a3f6c1b340debc42c60af4591cfa561040b0cf84d204e5768987a4874e8ff6"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "open-and-contain",
+      "description": "Open the shared menu with Enter and cycle every modal control with Tab and Shift+Tab.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The native modal owns focus and explains browser-local scope.",
+      "verifications": [
+        "Both complete labelled controls and the close action are contained and readable before any auto-scroll.",
+        "OS reduction applies even with the local checkbox off."
+      ],
+      "views": [
+        {
+          "player": "Developer · local settings",
+          "image": "001-open-and-contain-1-developer-local-settings.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-local-reduction",
+      "description": "With the device allowing motion, enable both local reductions through Space; then return to the capture environment.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both local choices are checked and persisted by the production settings code.",
+      "verifications": [
+        "Both complete labelled controls and the close action are contained and readable before any auto-scroll.",
+        "Lower detail has a named local acknowledgement."
+      ],
+      "views": [
+        {
+          "player": "Developer · local settings",
+          "image": "002-choose-local-reduction-1-developer-local-settings.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-and-respect-device",
+      "description": "Close with Escape, verify opener focus, reload and reopen the saved settings. Turn off the local motion override while the device still requests reduction.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The saved detail choice survives reload and OS reduction cannot be disabled locally.",
+      "verifications": [
+        "Both complete labelled controls and the close action are contained and readable before any auto-scroll."
+      ],
+      "views": [
+        {
+          "player": "Developer · local settings",
+          "image": "003-reload-and-respect-device-1-developer-local-settings.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-explicitly",
+      "description": "Restore full decoration and explicitly return from the menu with Enter; keyboard focus returns to Menu.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The menu closes and restores its original opening control.",
+      "verifications": [
+        "Both explicit local overrides are now off; device reduction remains effective."
+      ],
+      "views": [
+        {
+          "player": "Developer · restored opener",
+          "image": "004-close-explicitly-1-developer-restored-opener.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "compare-shared-feedback",
+      "description": "Open the existing feedback lab and seek the same accepted identity result in both paused motion presentations.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both actual Feedback components show the same accepted outcome.",
+      "verifications": [
+        "Both accepted comparisons distinguish no recovery action from their successful Identity saved outcome.",
+        "The production menu is present in the shared lab; playback is paused and no live campaign is involved."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard feedback",
+          "image": "005-compare-shared-feedback-1-developer-standard-feedback.png",
+          "verifications": [
+            "The named comparison and accepted outcome are wholly visible in their explicit reading view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 90/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced feedback",
+          "image": "005-compare-shared-feedback-2-developer-reduced-feedback.png",
+          "verifications": [
+            "The named comparison and accepted outcome are wholly visible in their explicit reading view.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 90/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}

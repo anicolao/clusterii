@@ -409,3 +409,19 @@ The shared GameMenu/PresentationSettings now controls real feedback/CSS motion a
 ## Lower galaxy detail (UX-03/15/16)
 
 The shared settings checkbox controls actual Scene dust/reference-ring creation and texture lifecycle; authorized stars, labels, ownership, contacts, fleets, paths and keyboard/list actions are unchanged. Three preference/Three texture-lifecycle tests provide source-level evidence only. Pending: same campaign/selection/draft across toggles and reload, cross-mode fact/action equivalence, four-size keyboard/Escape/focus and shared gallery/lab captures, measured GPU work. No browser or capture run while setup holds remain. [Renderer audit and CI phase triage](../design/LOCAL_DETAIL_REVIEW.md).
+
+## Shared local presentation settings
+
+`local-settings.story.spec.ts` covers UX-15/16 through the actual gallery menu and shared feedback lab: keyboard modal ownership, both local preferences, reload, OS precedence and focus restoration. Source prepared for one isolated four-size candidate run; rendered acceptance and independent baseline review remain pending. No identity, campaign or emulator setup; galaxy rail fit, factual scene equivalence, authoritative actions and performance remain outside this evidence. See [review plan](SHARED_SETTINGS_REVIEW.md).
+
+Settings execution update: first phone run failed boundary Tab wrapping before the first capture; remaining three sizes stopped. Explicit production boundary wrapping is corrected in source, not browser-verified. All candidates/persistence/Escape/lab/four-size acceptance remain pending; original failure retained and no baselines changed.
+
+Reviewer-authorized corrected settings run at clean e686e3d passed phone boundary wrapping and both local selections, producing two held images, then failed the unchanged10s reload deadline. Remaining sizes stopped; persistence after reload, explicit close and shared lab comparison remain unexecuted. No complete family or baseline approval; see SHARED_SETTINGS_REVIEW.md.
+
+Settings update at7d43510: desktop/large/short generation passes3 journeys/18 candidates with full local preference/reload/focus/shared-feedback assertions. Independent review and promotion pending. Older phone images retain e686e3d provenance and reload failure; there is no completed source-matched four-size family.
+
+Corrected-source phone settings at9d0a837 passes one journey/six candidates; production/spec identical to7d43510 other-size18 candidates. Complete24-image candidate set awaits independent review and strict comparison. Older phone failures stay separate; their cause remains unresolved.
+
+Settings lab semantics corrected atfd74e91: full four-size generation passes4 journeys/24 candidates with accurate feedback-recovery labels asserted independently of accepted outcomes. New spec/source pairing retained; prior24 untouched. Corrected-family independent review and strict comparison pending.
+
+Reviewer-approved local-presentation-settings Darwin family now passes4 strict journeys/24 exact captures (31.1s), with generated narratives archived under `stories/local-presentation-settings/{phone,desktop,large,short}/darwin-arm64/README.md`. Scope is shared local settings/gallery/lab only; actual galaxy, Linux and broader acceptance gates remain separate.

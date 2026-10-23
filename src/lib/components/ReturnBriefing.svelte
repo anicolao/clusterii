@@ -69,7 +69,7 @@
 <section
   class="return-briefing"
   aria-label="Return briefing"
-  style={`--briefing-scene:url(${base}/art/galaxy-dust.webp)`}
+  style={`background:linear-gradient(#07182044,#071820ee),url(${base}/art/galaxy-dust.webp) center/cover`}
 >
   <header>
     <p class="overline gold">Your empire · {snapshot.name}</p>
@@ -220,9 +220,6 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto minmax(0, 1fr) auto;
-    background:
-      linear-gradient(#07182044, #071820ee),
-      var(--briefing-scene) center/cover;
     color: #f6eedf;
     overflow: hidden;
   }
