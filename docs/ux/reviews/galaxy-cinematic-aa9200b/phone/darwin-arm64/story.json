@@ -1,0 +1,204 @@
+{
+  "id": "galaxy-cinematic-instruments",
+  "title": "Commanders and systems share one galaxy",
+  "inventory": [
+    "UX-02",
+    "UX-03",
+    "UX-04",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "Four ordinary authenticated players save cosmetic portraits, join different mechanical factions and receive real scheduled homes. Fixed catalogue/admission time and Scheduler HTTP delivery are labelled demo-only harness controls. The owner reads the actual scene, uses keyboard roster/menu/system instruments and recovers the same authorized campaign. Normal-motion settled visual evidence is declared separately; this does not certify hosted scheduling or peer-private read denial.",
+  "source": {
+    "commit": "aa9200b985dd3a3194930c091f420fd28f0f6faf",
+    "dirty": false,
+    "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+    "specSha256": "ad41dbec7335c3ade54ffc68edb92c09a1ef0135b2d46496ea9ec0bdf2bcd5ba"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "saved-identity",
+      "description": "Ordinary authenticated identity save; developer entitlement is the explicit emulator permission fixture, not a fabricated member.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "create-and-claim",
+      "description": "Create and claim through actual commands, receipts and private projections; the existing demo loader fixes catalogue and admission time only.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "independent-admission-and-start",
+      "description": "Three independent ordinary player admissions then actual scheduler HTTP delivery; no injected seats, home, resources or results. Not hosted timing evidence.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [
+        "Authenticate independent Pelagic Concord commander, save identity and acknowledge ordinary seat admission.",
+        "Authenticate independent Vesper Synod commander, save identity and acknowledge ordinary seat admission.",
+        "Authenticate independent Dracon League commander, save identity and acknowledge ordinary seat admission.",
+        "Deliver the real scheduler HTTP request at the fixed demo admission boundary; acknowledge Began and the assigned home chart. Not hosted scheduling evidence."
+      ],
+      "views": []
+    },
+    {
+      "id": "read-commanders-and-home",
+      "description": "Read the acknowledged home neighbourhood. The saved Deepseer portrait remains cosmetic; Heliac Assembly is the mechanical faction.",
+      "actor": "Deepseer envoy",
+      "kind": "player",
+      "acknowledgement": "The real started campaign exposes the assigned home, credits and science rate.",
+      "verifications": [
+        "The inspector title clears the measured resource rail and both ownership rows plus the illustration disclaimer are fully readable without automatic scrolling.",
+        "Portrait identity and mechanical faction are labelled separately; saved portrait is the M2 atlas tile."
+      ],
+      "views": [
+        {
+          "player": "Deepseer envoy",
+          "image": "004-read-commanders-and-home-1-deepseer-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-real-commanders",
+      "description": "Open the authoritative roster from a commander portrait, or the compact phone Roster control, and read the named independent empires.",
+      "actor": "Deepseer envoy",
+      "kind": "player",
+      "acknowledgement": "Four actual members and Began are visible in the roster.",
+      "verifications": [
+        "Closing the roster is a contained keyboard action."
+      ],
+      "views": [
+        {
+          "player": "Deepseer envoy",
+          "image": "005-inspect-real-commanders-1-deepseer-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-portrait",
+      "description": "Close the roster with Escape and return to its exact opener, retaining the same selected home.",
+      "actor": "Deepseer envoy",
+      "kind": "player",
+      "acknowledgement": "The actual opening portrait or Roster control regains keyboard focus.",
+      "verifications": [
+        "The home selection is unchanged by roster navigation."
+      ],
+      "views": [
+        {
+          "player": "Deepseer envoy",
+          "image": "006-return-to-portrait-1-deepseer-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-home-layers",
+      "description": "Use Inspect to read the real independent Orbit and Surface instruments without creating an order.",
+      "actor": "Deepseer envoy",
+      "kind": "player",
+      "acknowledgement": "Both authorized ownership instruments are available.",
+      "verifications": [
+        "The same system title remains selected."
+      ],
+      "views": [
+        {
+          "player": "Deepseer envoy",
+          "image": "007-inspect-home-layers-1-deepseer-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "normal-motion-return",
+      "description": "Permit normal device motion, return from the contextual system instrument and inspect the settled production scene. No animation is fast-forwarded; finite-effect and exact stable-image readiness still apply.",
+      "actor": "Deepseer envoy",
+      "kind": "player",
+      "acknowledgement": "The compact inspector returns for the same authoritative system.",
+      "verifications": [
+        "Normal-motion device preference is genuine and the document remains fixed."
+      ],
+      "views": [
+        {
+          "player": "Deepseer envoy",
+          "image": "008-normal-motion-return-1-deepseer-envoy.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reduce-decoration-retain-facts",
+      "description": "Return to reduced-motion capture preference, open the real portrait menu and lower decorative detail. The local acknowledgement precedes the unchanged factual scene.",
+      "actor": "Deepseer envoy",
+      "kind": "player",
+      "acknowledgement": "The saved local detail preference closes back to the portrait menu opener.",
+      "verifications": [
+        "All displayed selected-system and resource facts remain identical; this is not complete canvas-equivalence or private-peer authorization certification."
+      ],
+      "views": [
+        {
+          "player": "Deepseer envoy",
+          "image": "009-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-real-home",
+      "description": "Reload the actual campaign and recover the same assigned home and saved cosmetic portrait without claiming another seat.",
+      "actor": "Deepseer envoy",
+      "kind": "player",
+      "acknowledgement": "The same authorized campaign and home recover after reload.",
+      "verifications": [
+        "The saved commander and lower-detail preference persist independently of mechanical faction."
+      ],
+      "views": [
+        {
+          "player": "Deepseer envoy",
+          "image": "010-recover-real-home-1-deepseer-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

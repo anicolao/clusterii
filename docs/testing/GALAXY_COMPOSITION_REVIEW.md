@@ -18,6 +18,12 @@ Retained preceding6f5c88b failed before browser in Firestore WebChannel bind. In
 
 No baseline promotion, hosted/KMS certification, or full design/release approval. Current candidate and runtime outcomes are recorded below after execution.
 
+## Corrected source-paired result
+
+Clean aa9200b: four journeys passed57.5s with28 candidates, including explicit normal-motion settled interaction at every size. [Original candidates, generated narratives, source/renderer manifests, SHA-256 index and plate03 comparison](../ux/reviews/galaxy-cinematic-aa9200b/README.md) are committed as unapproved review evidence, not baselines. Short clearance/ownership/caption and map/legend separation assertions pass before helper capture. Source static/lint checks passed; the projection test is included in normal unit execution. Run log `/tmp/cluster118-composition-aa9200b-four.log`; original runtime directory retained separately at the next boundary.
+
+Draft [PR118](https://github.com/anicolao/clusterii/pull/118) is based on `feat/waiting-campaign-manifest`, not main. Preview `https://anicolao.github.io/clusterii/pr118/` remains unverified at this boundary. Current CI/independent comparison/strict reviewed pixels remain gates. No merge, promotion or approval of proposed rules.
+
 ## First rendered boundary
 
 Clean bab0685 reached four real admissions and started home, then phone Roster click failed its original10s hit test: a peer portrait intercepted the pointer. Desktop card selector specificity defeated the phone `.peer` collapse. Fixed with the same parent/card specificity; added actual visible peer-count assertion. No forced action, timeout or geometry weakening. Zero candidates; three sizes unexecuted. Retained /tmp/cluster118-composition-bab0685-failure and /tmp/cluster118-composition-bab0685-four.log plus adjacent Firestore/database logs. Explicit websocket19150 started successfully; this does not prove prior collision cause.
