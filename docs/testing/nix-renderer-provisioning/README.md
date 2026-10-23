@@ -1,0 +1,15 @@
+# Nix-managed renderer provisioning
+
+Continuation of reviewer10:42; based on PR123. No player source, baseline, renderer argument, threshold or game/test deadline changes.
+
+Both Playwright1.61.1 Noble images are fetched by locked nixpkgs dockerTools.pullImage. The original ARM64 story digest824f1a… remains exact; its archive hash is recorded from successful nix-prefetch-docker. The same upstream version index supplies AMD64 digestcf0dae… for the application's existing x86 runner. Both downloads succeeded with fixed archive hashes and expected image configuration identities. Application previously installed browsers/dependencies with unpinned apt; the new pinned AMD64 userspace is an explicit application-environment change, not an assertion of pixel equivalence.
+
+The launcher provisions the Docker engine and client through Nix too. It starts a task-owned engine on a unique socket/data/exec/pid path; it never uses or stops the runner's existing engine. The runner's sudo is only the platform privilege broker for starting/stopping that Nix engine. GitHub actions/Nix bootstrap, host kernel and privilege broker remain execution substrate; no project runtime/browser/system rendering dependency is installed through apt, setup actions or host package managers. All image contents, including browser, loader, fonts and libraries, are provisioned as the hash-checked Nix image artifact rather than a GitHub-preinstalled job container.
+
+The loaded image config is checked before execution. Shared memory/host networking match previous story execution. Nix mounts supply project tools; real renderer validation uses the unchanged image's /usr/bin/ldd via a Nix-built scoped wrapper that rejects contexts without the expected digest. No PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS or library substitution. Both Nix and renderer loader outputs are retained before ordinary checks to discriminate the prior21-library failure; launch/pixel compatibility remains unexecuted locally on Darwin.
+
+Application retains its real service/browser command and evidence. Stories retain exact verification, candidate label gate and all prior failure artifacts. Unlabelled generation now skips the whole generation command; its green workflow is not candidate evidence. New engine/image/loader logs are uploaded even on failure. No retries of failed CI requested: subsequent normal PR checks validate changed source.
+
+Validated locally: both exact image/archive/config identities; Linux ARM64/AMD64 derivation evaluation; renderer-shell evaluation; shellcheck; all five workflow project-command shells audited through parsed YAML. Linux engine startup, loader comparison, real checks and strict pixels remain pending. This is an implementation awaiting CI evidence, not full Nix compliance acceptance or a historical timeout/publication fix. No baseline promotion or merge.
+
+Generated launcher shell (after Nix path/identity injection) also passes shellcheck. Archive manifests/config hashes and architectures are independently read from both fetched tar files and retained in image-identities.json. No local Linux engine/browser execution is claimed.

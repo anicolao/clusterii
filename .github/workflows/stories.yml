@@ -9,9 +9,6 @@ permissions:
 jobs:
   stories:
     runs-on: ubuntu-24.04-arm
-    container:
-      image: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
-      options: --ipc=host
     defaults:
       run:
         shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
@@ -24,33 +21,26 @@ jobs:
       CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
     steps:
       - uses: actions/checkout@v4
-      - name: Bootstrap Nix (supports root without systemd in the pinned renderer)
+      - name: Bootstrap Nix
         uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
         with:
           determinate: false
-      - name: Verify Nix runtime and source provenance
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          java -version
-          node --version
-          bun --version
-      - run: bun install --frozen-lockfile && bun install --cwd functions --frozen-lockfile
-      - run: bun run test:story-policy && bun run test:story-tools && bun run test:browser-storage
       - name: Exact verification
         if: matrix.mode == 'verify'
         env:
           # Existing bounded, redacted demo-only probe; retained with story traces.
           CLUSTER_SETTLEMENT_TIMING: "1"
-        run: bun run test:stories
+        run: nix run path:./nix#ci-renderer -- stories verify
       - name: Explicit baseline candidates (never acceptance)
         if: matrix.mode == 'generate' && contains(github.event.pull_request.labels.*.name, 'baseline-candidates')
-        run: bun run test:stories:generate
+        run: nix run path:./nix#ci-renderer -- stories generate
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: illustrated-stories-${{ matrix.mode }}-linux-arm64
           include-hidden-files: true
           path: |
+            test-results/nix-renderer/
             test-results/stories/
             test-results/story-tools/
             test-results/.story-cohorts-*/
