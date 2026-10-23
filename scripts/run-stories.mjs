@@ -61,6 +61,9 @@ const run = (args, env = process.env) =>
         : reject(new Error(`Story command exited ${code}`));
     });
   });
+// Playwright caches tsconfig paths before starting its Vite web server. Generate
+// Svelte's inherited aliases first, including on a clean first viewport cohort.
+await run(["x", "svelte-kit", "sync"]);
 await run(["run", "--cwd", "functions", "build"]);
 const runStory = (viewport) =>
   run(
