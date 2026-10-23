@@ -2195,7 +2195,7 @@
       padding-inline: 7px;
     }
     .chart {
-      inset: 106px 0 48% 0;
+      inset: 110px 0 calc(44svh + 82px) 0;
     }
     .system-inspector,
     .system-inspector.active,

@@ -718,3 +718,5 @@ Prompt 129 | b8c303674ebd70c8d0a8e963e88c59f1b74eab806ad4c29f498401554b0f260a | 
 Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Refine expanded cinematic scene after four-size review and exercise factual selection and local detail preservation
 
 Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Preserve renderer-environment failure and distinguish normal-motion interaction from reduced-motion captures
+
+Prompt 130 | e845443466dddedbad63d8547e5db61b652e0f63ae5ad0b21db112f56c77a4bb | Keep the phone map and contact legend above the compact inspector after rendered boundary review
