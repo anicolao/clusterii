@@ -1,0 +1,30 @@
+2026-10-23T20:24:18.3510532Z Running 4 tests using 1 worker
+2026-10-23T20:24:20.5718091Z   4 passed (2.3s)
+2026-10-23T20:24:28.6749523Z i  emulators: Starting emulators: auth, functions, firestore, database
+2026-10-23T20:24:43.3145839Z i  Running script: bunx playwright test --config playwright.stories.config.ts --project=phone
+2026-10-23T20:24:52.8173122Z Running 69 tests using 1 worker
+2026-10-23T20:36:18.2895239Z   62 failed
+2026-10-23T20:36:18.2930052Z   2 skipped
+2026-10-23T20:36:18.2930122Z   5 passed (11.6m)
+2026-10-23T20:36:18.2930309Z ⚠  Script exited unsuccessfully (code 1)
+2026-10-23T20:36:21.3810801Z i  emulators: Starting emulators: auth, functions, firestore, database
+2026-10-23T20:36:33.8332825Z i  Running script: bunx playwright test --config playwright.stories.config.ts --project=desktop
+2026-10-23T20:36:41.8418467Z Running 69 tests using 1 worker
+2026-10-23T20:49:59.8744288Z   62 failed
+2026-10-23T20:49:59.8776401Z   2 skipped
+2026-10-23T20:49:59.8776476Z   5 passed (13.4m)
+2026-10-23T20:49:59.8776622Z ⚠  Script exited unsuccessfully (code 1)
+2026-10-23T20:50:02.7201424Z i  emulators: Starting emulators: auth, functions, firestore, database
+2026-10-23T20:50:14.7003036Z i  Running script: bunx playwright test --config playwright.stories.config.ts --project=large
+2026-10-23T20:50:21.6527245Z Running 69 tests using 1 worker
+2026-10-23T21:09:17.8701220Z   62 failed
+2026-10-23T21:09:17.8732614Z   2 skipped
+2026-10-23T21:09:17.8732683Z   5 passed (19.0m)
+2026-10-23T21:09:17.8732822Z ⚠  Script exited unsuccessfully (code 1)
+2026-10-23T21:09:20.8091425Z i  emulators: Starting emulators: auth, functions, firestore, database
+2026-10-23T21:09:32.8081102Z i  Running script: bunx playwright test --config playwright.stories.config.ts --project=short
+2026-10-23T21:09:39.7632498Z Running 69 tests using 1 worker
+2026-10-23T21:22:40.1439741Z   62 failed
+2026-10-23T21:22:40.1470985Z   2 skipped
+2026-10-23T21:22:40.1471054Z   5 passed (13.1m)
+2026-10-23T21:22:40.1471233Z ⚠  Script exited unsuccessfully (code 1)

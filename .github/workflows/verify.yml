@@ -5,6 +5,7 @@ on:
     branches: [main]
 permissions:
   contents: read
+  actions: read
 jobs:
   verify:
     runs-on: ubuntu-24.04
@@ -17,7 +18,23 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
         with:
           determinate: false
+      - name: Identify matching verification inputs
+        id: reuse
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/verification-reuse.mjs prepare application verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verification-input-application-${{ github.run_attempt }}
+          path: ci-evidence/verification/application/plan.json
+      - name: Await matching verification outcome
+        id: reused
+        if: steps.reuse.outputs.execute == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/verification-reuse.mjs wait application
       - name: Application checks in Nix-provisioned renderer
+        if: steps.reuse.outputs.execute == 'true' || steps.reused.outputs.execute == 'true'
         run: nix run path:./nix#ci-renderer -- application
       - uses: actions/upload-artifact@v4
         if: always()
@@ -27,6 +44,7 @@ jobs:
             database-debug.log
             firestore-debug.log
             ci-evidence/nix-renderer/
+            ci-evidence/verification/
             ci-evidence/profile-ingress.jsonl
             test-results/
             tests/browser/journey.spec.ts-snapshots/
