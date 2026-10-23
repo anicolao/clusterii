@@ -314,6 +314,35 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
         {
           spec: "Orbital facts are labelled separately from the independent Surface owner.",
           check: async () => {
+            const geometry = await button(
+              owner,
+              "Inspect Orbit · owner You",
+            ).evaluate((selector) => {
+              const button = selector.getBoundingClientRect();
+              const row = selector.parentElement!.querySelector("dl > div")!;
+              const label = row.querySelector("dt")!;
+              const style = getComputedStyle(selector);
+              const outlineWidth = parseFloat(style.outlineWidth);
+              const outlineOffset = parseFloat(style.outlineOffset);
+              return {
+                focused: selector.matches(":focus-visible"),
+                buttonBottom: button.bottom,
+                outlineWidth,
+                outlineOffset,
+                outlineBottom: button.bottom + outlineWidth + outlineOffset,
+                rowTop: row.getBoundingClientRect().top,
+                labelTop: label.getBoundingClientRect().top,
+              };
+            });
+            await info.attach("Orbit focus and first fact geometry", {
+              body: JSON.stringify(geometry, null, 2),
+              contentType: "application/json",
+            });
+            expect(geometry.focused).toBe(true);
+            expect(
+              geometry.outlineBottom,
+              JSON.stringify(geometry),
+            ).toBeLessThanOrEqual(geometry.rowTop);
             await expect(
               owner
                 .getByRole("region", { name: "Orbital control", exact: true })
