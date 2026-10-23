@@ -800,3 +800,5 @@ Prompt 151 | f82896f58a9f4e76b83ceaca59f06c90c444d7fb5b858cf04717589d10661456 | 
 Prompt 152 | f89738fdb5a8aaf886c00ae41ec3792137cd6e22cc2ce7479ebaf560d46dfe8e | Preserve desktop final-opener failure and correct shared command corner hit shape without changing geometry assertions.
 
 Prompt 152 | f89738fdb5a8aaf886c00ae41ec3792137cd6e22cc2ce7479ebaf560d46dfe8e | Retain42 clean authenticated-view candidates, reconcile10:12 and enable existing bounded CI settlement evidence without manual reruns.
+
+Prompt 153 | df819655d769e50128fdd604af99f7a89373022a4c0e3d5eab20df31ea652d56 | Preserve first lab readiness failure and explicitly declare existing paused feedback frames without relaxing capture checks.

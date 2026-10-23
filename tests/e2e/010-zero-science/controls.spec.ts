@@ -152,6 +152,22 @@ test("Shared command artwork retains keyboard targets and motion-independent sel
             surface: "document",
             primary: [control],
             normalMotion: !reduced,
+            // The pre-existing feedback lab deliberately inspects paused frames.
+            // Command selection itself remains immediate under the real preference.
+            motionInspection: [
+              {
+                selector: '[aria-label="Standard motion comparison"]',
+                count: 1,
+                time: 0,
+                duration: 180,
+              },
+              {
+                selector: '[aria-label="Reduced motion comparison"]',
+                count: 1,
+                time: 180,
+                duration: 180,
+              },
+            ],
           },
         ],
       },
