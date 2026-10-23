@@ -70,6 +70,10 @@ test("Read the cinematic galaxy through real commander and system instruments", 
       ).toBeVisible();
       campaignUrl = page.url();
       await page.getByRole("radio", { name: /Heliac Assembly/ }).check();
+      await key("Portrait");
+      await page
+        .getByRole("radio", { name: "The deepseer", exact: true })
+        .check();
       await key("Claim your seat");
       await expect(
         page.getByText("Your seat is confirmed.", { exact: true }),
@@ -111,9 +115,18 @@ test("Read the cinematic galaxy through real commander and system instruments", 
             "title",
             /Deepseer envoy.*Heliac Assembly.*portrait is cosmetic/,
           );
-          await expect(
-            button("Menu").locator(".commander-portrait"),
-          ).toHaveAttribute("style", /--portrait-column:3;--portrait-row:0/);
+          expect(
+            await button("Menu")
+              .locator(".commander-portrait")
+              .evaluate((element) => [
+                getComputedStyle(element)
+                  .getPropertyValue("--portrait-column")
+                  .trim(),
+                getComputedStyle(element)
+                  .getPropertyValue("--portrait-row")
+                  .trim(),
+              ]),
+          ).toEqual(["3", "0"]);
           await expect(button("Menu")).toBeFocused();
           await expect(
             page.getByRole("button", { name: /^Inspect roster:/ }),

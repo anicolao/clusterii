@@ -756,3 +756,5 @@ Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | 
 Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve the isolated timing attempt's pre-browser Firestore bind failure and distinguish it from unresolved100-tick CI timing.
 
 Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Correct phone portrait collapse specificity after the retained real-admission hit-test failure.
+
+Prompt 145 | 09e7d0ea5220dd8d7ee01e93f2032d31f0cf3611d5dedd54490decfba159bb25 | Select campaign-specific portraits through the real admission controls after retained fixture mismatch.

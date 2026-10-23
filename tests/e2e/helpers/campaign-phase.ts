@@ -93,6 +93,14 @@ export function activeAdmissionControls(
           await peer.clock.setFixedTime(admissionAt);
           await peer.goto(host.url());
           await peer.getByRole("radio", { name: new RegExp(faction) }).check();
+          if (portraitNames?.[i]) {
+            await peer
+              .getByRole("button", { name: "Portrait", exact: true })
+              .click();
+            await peer
+              .getByRole("radio", { name: portraitNames[i], exact: true })
+              .check();
+          }
           await peer
             .getByRole("button", { name: "Claim your seat", exact: true })
             .click();
