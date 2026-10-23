@@ -440,7 +440,8 @@
           />
         </div>{/each}
       <h2>Fleet routing · real catalogue and authoritative states</h2>
-      {#each [0, 2400, 3400, 5000] as time}<div
+      {#each [0, 2400, 3400, 5000] as time}<section
+          aria-label={`Fleet route specimen ${time}`}
           style="height:min(850px,90svh);min-height:550px;margin-bottom:32px"
         >
           <FleetRoute
@@ -450,7 +451,7 @@
             oncommit={() => {}}
             onclose={() => {}}
           />
-        </div>{/each}
+        </section>{/each}
       <h2>Fleet cancellation · reservations released</h2>
       {#each [0, 2400] as time}{@const sample = cancellationFrame(time)}
         <div

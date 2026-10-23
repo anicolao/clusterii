@@ -29,7 +29,7 @@
     );
   });
   import { galaxyLabel } from "$lib/galaxy-labels";
-  import { galaxyOverview } from "$lib/galaxy-framing";
+  import { galaxyOverview, fleetRouteFrame } from "$lib/galaxy-framing";
   import RouteLine from "./RouteLine.svelte";
   import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
@@ -75,6 +75,11 @@
   let camera = $state<PerspectiveCamera>();
   let controls = $state<OrbitControlsType>();
   let overview = $state(true);
+  let routeDistance = $state(1);
+  const routeUnit = $derived(
+    (routeDistance * Math.tan((48 * Math.PI) / 360) * 2) /
+      Math.max(1, $size.height),
+  );
   let framedRequest = "";
   function frameOverview(
     activeCamera: PerspectiveCamera,
@@ -107,6 +112,7 @@
       selectedContact,
       routeFocus,
       routePoints.map((p) => p.id),
+      ...(routeFocus ? [$size.width, $size.height] : []),
     ]);
     if (requestKey === framedRequest) return;
     framedRequest = requestKey;
@@ -127,24 +133,13 @@
           ? routePoints
           : stars.filter((s) => s.id === request.starId);
         if (points.length) {
-          const low = new Vector3(Infinity, Infinity, Infinity),
-            high = new Vector3(-Infinity, -Infinity, -Infinity);
-          for (const p of points) {
-            const v = new Vector3(p.x / 10, p.y / 10, p.z / 10);
-            low.min(v);
-            high.max(v);
-          }
-          activeControls.target.copy(low).add(high).multiplyScalar(0.5);
-          const span = high.clone().sub(low);
-          const distance = Math.max(
-            1.2,
-            span.z * 2.5,
-            (span.x * 2.5) / activeCamera.aspect,
-            span.y * 2.5,
+          const frame = fleetRouteFrame(
+            points,
+            Math.max(1, $size.width) / Math.max(1, $size.height),
           );
-          activeCamera.position
-            .copy(activeControls.target)
-            .add(new Vector3(0, distance, distance * 0.15));
+          routeDistance = frame.distance;
+          activeControls.target.set(...frame.target);
+          activeCamera.position.set(...frame.position);
         }
       } else if (request.action === "overview") {
         overview = true;
@@ -220,7 +215,10 @@
         ></HTML
       >{/if}</T.Group
   >{/each}
-{#each paths as path}<RouteLine {...path} />{/each}
+{#each paths as path}<RouteLine
+    {...path}
+    thickness={routeFocus ? routeUnit * 1.5 : 0}
+  />{/each}
 {#each travelers as fleet}<T.Group
     position={[fleet.x / 10, fleet.y / 10 + 0.08, fleet.z / 10]}
     ><HTML style={onfleet ? undefined : "pointer-events: none"}
@@ -244,12 +242,14 @@
     bind:ref={controls}
     onstart={() => (overview = false)}
     enableDamping={false}
-    minDistance={routeFocus ? 0.6 : 5}
+    minDistance={routeFocus ? 0.1 : 5}
     maxDistance={40}
     maxPolarAngle={Math.PI / 2.1}
   /></T.PerspectiveCamera
 >
-{#if decoration && dust}<T.Mesh rotation.x={-Math.PI / 2} position.y={-0.3}
+{#if decoration && dust && !routeFocus}<T.Mesh
+    rotation.x={-Math.PI / 2}
+    position.y={-0.3}
     ><T.PlaneGeometry args={[28, 28]} /><T.ShaderMaterial
       uniforms={{ map: { value: dust } }}
       vertexShader={"varying vec2 uvPosition; void main(){uvPosition=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}"}
@@ -259,7 +259,7 @@
       depthWrite={false}
     /></T.Mesh
   >{/if}
-{#each decoration ? [3, 6, 9] : [] as radius}<T.Mesh
+{#each decoration && !routeFocus ? [3, 6, 9] : [] as radius}<T.Mesh
     rotation.x={-Math.PI / 2}
     position.y={-0.15}
     ><T.RingGeometry args={[radius, radius + 0.008, 128]} /><T.MeshBasicMaterial
@@ -275,8 +275,8 @@
     <T.Sprite
       scale={routeFocus
         ? routeIds.includes(star.id)
-          ? 0.15
-          : 0.05
+          ? routeUnit * 64
+          : routeUnit * 12
         : star.id === selected
           ? 1.7
           : radiance[star.class]}
@@ -300,7 +300,7 @@
       ><T.SphereGeometry
         args={[
           routeFocus
-            ? 0.008
+            ? routeUnit * (routeIds.includes(star.id) ? 7 : 1.5)
             : star.id === selected
               ? 0.08
               : radiance[star.class] * 0.045,
@@ -334,11 +334,16 @@
           ><FleetSymbol /> {fleets[star.id]}</span
         ></HTML
       >{/if}
-    {#if routeFocus && routeIds.includes(star.id)}<HTML
-        position={[0, 0.015, 0]}
-        style="pointer-events: none"
-        center
-        ><span class="route-node"
+    {#if routeFocus && routeIds.includes(star.id)}<T.Mesh
+        rotation.x={-Math.PI / 2}
+        ><T.RingGeometry
+          args={[routeUnit * 16, routeUnit * 18, 48]}
+        /><T.MeshBasicMaterial
+          color={owned.includes(star.id) ? "#8be4ed" : "#eacb88"}
+          side={DoubleSide}
+        /></T.Mesh
+      ><HTML position={[0, 0.015, 0]} style="pointer-events: none" center
+        ><span class="route-node" style="margin-top:22px"
           >{routeIds.indexOf(star.id) === 0
             ? "Origin"
             : routeIds.indexOf(star.id)} · {star.name}</span
@@ -386,7 +391,10 @@
     background: #06121be8;
     color: #d9fcff;
     font-size: 13px;
-    white-space: nowrap;
+    white-space: normal;
+    width: max-content;
+    max-width: min(160px, 40vw);
+    text-align: center;
     pointer-events: none;
   }
   .fleet-label {

@@ -34,3 +34,34 @@ test("camera framing contains the unchanged authorized catalogue at phone, deskt
   expect(() => galaxyOverview([], 1)).toThrow();
   expect(() => galaxyOverview(stars, 0)).toThrow();
 });
+
+import { fleetRouteFrame } from "../src/lib/galaxy-framing";
+test("route camera fits actual inclined and reordered endpoints across viewport changes", () => {
+  const points = [
+    { x: 2, y: 0.3, z: 4 },
+    { x: 2.1, y: 0.5, z: 7.5 },
+    { x: 4, y: 0.2, z: 8 },
+  ];
+  const original = structuredClone(points);
+  for (const aspect of [0.7, 1.5, 3, 4])
+    for (const route of [points, points.toReversed(), [points[0], points[1]]]) {
+      const f = fleetRouteFrame(route, aspect),
+        camera = new PerspectiveCamera(48, aspect, 0.01, 1000);
+      camera.position.set(...f.position);
+      camera.lookAt(...f.target);
+      camera.updateMatrixWorld();
+      const projections = route.map((p) =>
+        new Vector3(p.x / 10, p.y / 10, p.z / 10).project(camera),
+      );
+      for (const p of projections) {
+        expect(Math.abs(p.x)).toBeLessThanOrEqual(0.68001);
+        expect(Math.abs(p.y)).toBeLessThanOrEqual(0.64001);
+        expect(p.z).toBeGreaterThan(-1);
+        expect(p.z).toBeLessThan(1);
+      }
+      expect(
+        Math.max(...projections.flatMap((p) => [Math.abs(p.x), Math.abs(p.y)])),
+      ).toBeGreaterThan(0.4);
+    }
+  expect(points).toEqual(original);
+});

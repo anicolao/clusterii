@@ -774,3 +774,21 @@ Prompt 146 | 1a80fd97dbdfe603fc7ce8fd7141893ad8acea46098a7fc1148d51dc479091ce | 
 Prompt 146 | 1a80fd97dbdfe603fc7ce8fd7141893ad8acea46098a7fc1148d51dc479091ce | Extend the real bounded menu reference with shared route rules and migrate its market journey to feature008.
 
 Prompt 146 | 1a80fd97dbdfe603fc7ce8fd7141893ad8acea46098a7fc1148d51dc479091ce | Retain forty field-guide candidates from eight passing Nix journeys and document independent visual and publication gates.
+
+Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | Correct the semantic meter closing tag before the first source-paired fleet review execution.
+
+Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | Preserve first four-size fleet evidence and remove the cropped inert commander deck during fleet instrumentation.
+
+Prompt 147 | 89e6788684c1b1d251043d43426bfaacd5a4dd0b663d28e537f31baab4ddb47e | Archive corrected four-size dispatch and recovery evidence with native-scale review and explicit unresolved visual gates.
+
+Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Preserve the mandatory-verification failure and bound narrow-scene route labels before corrected component/live execution.
+
+Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Preserve76 composition candidates and correct label width, opaque editing, and complete multi-waypoint reading.
+
+Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Preserve readable76-frame family and restore direct Plot route editing with accurate active-region focus semantics.
+
+Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Record the output-directory loss and correct accepted-state heading plus editor keyboard ownership before isolated final evidence.
+
+Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Archive76 final source-paired route candidates and passing unchanged regressions; preserve prior evidence loss and review gates.
+
+Prompt 149 | 5666f7692e0b368b268f99472292a2ce83381db234465930181a0aabf9c67744 | Retain96 source-paired focus-clearance and manifest-reading candidates with all four-size journeys passing and review gates open.

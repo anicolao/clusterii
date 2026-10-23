@@ -261,6 +261,7 @@
 
 {#if routing && selected}
   <FleetRoute
+    initialMode="edit"
     {view}
     fleetId={selected}
     bind:waypoints={routeDrafts[selected]}
@@ -350,7 +351,11 @@
               routeDrafts[fleet.id] ??= [];
               routing = true;
               await tick();
-              document.querySelector<HTMLElement>(".route-details")?.focus();
+              document
+                .querySelector<HTMLElement>(
+                  '.route-planner [aria-label="Route details"]',
+                )
+                ?.focus();
             }}>Plot route</button
           >
           <p>

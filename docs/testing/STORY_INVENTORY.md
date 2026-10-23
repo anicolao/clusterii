@@ -451,3 +451,5 @@ Current executable sources for campaign-navigation, invitation and encryption-ch
 ## Feature008 route reference
 
 Milestone10/UX15: market reference migrates to tests/e2e/008-field-guide/market.spec.ts; route reference reuses actual RouteRules in routes.spec.ts. Original market checks retained with explicit chapter scope and traversal through the new route summary. New/changed pixels require independent review, historical baselines remain untouched. No live orders or private-account acceptance claimed by gallery reading.
+
+Feature009 route-force review adds real formation/dispatch/reload and authorized capacity/origin-defense reading; predecessor full travel/recovery assertions remain. Actual Auth UIDs are resolved by unique email. Split-layer privacy helper coverage is reducer/projection scope, not hosted certification. Candidates require separate review.

@@ -1,0 +1,38 @@
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 45ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+bun test v1.3.13 (bf2e2cec)
+
+tests/travel.test.ts:
+(pass) route geometry uses exact Euclidean range separately from speed and validates each leg [2.20ms]
+(pass) route admission is private, revision-bound, strict, cancellable and does not move forces [5.46ms]
+(pass) travel conserves complements, resolves neutral layers, stops at waypoints and revalidates onward range [5.32ms]
+(pass) integer combat follows square-law coefficients and defender-first linear frontage [0.06ms]
+(pass) simultaneous hostile arrival is permutation-stable, capacity-safe and reports only to participants [3.89ms]
+(pass) fleet sensors use confirmed in-flight positions without disclosing the private route [2.72ms]
+(pass) hostile surface arrival ends the onward route even with friendly orbital control [2.98ms]
+Route capacity fixture {
+  admitted: 142,
+  refused: true,
+}
+(pass) route admission reserves multi-fleet departure and arrival growth within both encrypted document limits [166.90ms]
+(pass) split occupation routes each output by layer and releases escrow once with recipient-only loss reports [6.44ms]
+(pass) arrival history deduplicates repeated snapshots while retaining older recorded details [3.76ms]
+(pass) submitted route recovery requires the accessible matching fleet and preserves newer local edits [1.34ms]
+(pass) route memory and submitted recovery preserve newer intent across navigation and retirement [2.16ms]
+(pass) route review retains exact garrison without subtracting formed forces twice or revealing the opposite layer [1.01ms]
+
+tests/galaxy-framing.test.ts:
+(pass) camera framing contains the unchanged authorized catalogue at phone, desktop, large and short map aspects [1.88ms]
+(pass) route camera fits actual inclined and reordered endpoints across viewport changes [0.45ms]
+
+ 15 pass
+ 0 fail
+ 2858 expect() calls
+Ran 15 tests across 2 files. [254.00ms]

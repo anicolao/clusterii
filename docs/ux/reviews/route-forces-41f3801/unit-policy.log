@@ -1,0 +1,254 @@
+src/lib/components/FleetRoute.svelte 131ms
+src/lib/route-force-review.ts 4ms
+tests/e2e/009-route-forces/forces.spec.ts 20ms
+tests/travel.test.ts 31ms
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+/Users/anicolao/projects/games/clusterii-conversation-history/src/lib/components/FleetRoute.svelte:267:13
+Warn: Self-closing HTML tags for non-void elements are ambiguous — use `<meter ...></meter>` rather than `<meter ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag (svelte)
+            <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+            <meter
+              min="0"
+              max={Math.max(1, forces.capacity)}
+              value={forces.infantry}
+              aria-label="Infantry transport capacity"
+            />
+          </div>
+
+====================================
+svelte-check found 0 errors and 1 warning in 1 file
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 42ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+bun test v1.3.13 (bf2e2cec)
+
+tests/travel.test.ts:
+(pass) route geometry uses exact Euclidean range separately from speed and validates each leg [2.37ms]
+(pass) route admission is private, revision-bound, strict, cancellable and does not move forces [5.42ms]
+(pass) travel conserves complements, resolves neutral layers, stops at waypoints and revalidates onward range [5.52ms]
+(pass) integer combat follows square-law coefficients and defender-first linear frontage [0.08ms]
+(pass) simultaneous hostile arrival is permutation-stable, capacity-safe and reports only to participants [3.98ms]
+(pass) fleet sensors use confirmed in-flight positions without disclosing the private route [2.76ms]
+(pass) hostile surface arrival ends the onward route even with friendly orbital control [2.96ms]
+Route capacity fixture {
+  admitted: 142,
+  refused: true,
+}
+(pass) route admission reserves multi-fleet departure and arrival growth within both encrypted document limits [162.89ms]
+(pass) split occupation routes each output by layer and releases escrow once with recipient-only loss reports [6.14ms]
+(pass) arrival history deduplicates repeated snapshots while retaining older recorded details [3.92ms]
+(pass) submitted route recovery requires the accessible matching fleet and preserves newer local edits [2.12ms]
+(pass) route memory and submitted recovery preserve newer intent across navigation and retirement [1.77ms]
+(pass) route review retains exact garrison without subtracting formed forces twice or revealing the opposite layer [0.92ms]
+
+ 13 pass
+ 0 fail
+ 147 expect() calls
+Ran 13 tests across 1 file. [231.00ms]
+$ node --test scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.376666ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.298708ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.8245ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (9.859125ms)
+✔ a roster without a scheduled start does not fabricate a time (0.096292ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.386583ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.246708ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.708666ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.365ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (2.637834ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.937833ms)
+✔ unrelated campaigns retain every production entropy input (0.063ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.200542ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.371625ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.463125ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.387583ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.639375ms)
+✔ membership fault requires demo loopback and reviewed source hashes (1.016042ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.297875ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.102792ms)
+✔ restoration refuses concurrent head, membership or directory writes (0.114792ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.8055ms)
+✔ unrelated campaigns retain every original entropy input (0.064ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.179833ms)
+Previous story evidence preserved at /tmp/nix-shell.dknXIm/cluster-cohort-test-ssCjp0/.story-cohorts-zkUT3J/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.dknXIm/cluster-cohort-test-ssCjp0/.story-cohorts-zkUT3J/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (9.112333ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.448292ms)
+✔ interruption retains current artifacts and launches no successor (1.789833ms)
+✔ an artifact path collision fails rather than overwriting either result (3.096542ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.72175ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.867625ms)
+✔ capture policy protects each exact comparison, readiness and review guard (1.015959ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (8.725875ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.374834ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.697625ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 183.979166
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ playwright test --config playwright.paths.config.ts
+
+Running 4 tests using 1 worker
+
+
+(node:95395) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:95652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/4] [desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:95913) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/4] [large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:96174) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] [short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4 passed (1.7s)
