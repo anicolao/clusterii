@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, inspectLayer, openForces, expectStationedCount } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -71,13 +72,11 @@ test("ordinary commanders split and merge fleets without duplicating inventories
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
+    await acknowledgeCampaignStart(page);
     const inspector = page.getByRole("complementary", {
       name: "Selected system",
     });
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     const panel = page.getByRole("region", {
       name: "Fleet preparation",
       exact: true,
@@ -165,7 +164,7 @@ test("ordinary commanders split and merge fleets without duplicating inventories
       panel.getByRole("region", { name: "Accepted fleet orders" }),
     ).toContainText("Split · 1 fighters · 8 infantry");
     await page.reload();
-    await inspector.getByRole("button", { name: /Fleets · 1/ }).click();
+    await openForces(page, 1);
     await expect(
       panel.getByRole("region", { name: "Accepted fleet orders" }),
     ).toContainText("Split · 1 fighters · 8 infantry");
@@ -217,11 +216,12 @@ test("ordinary commanders split and merge fleets without duplicating inventories
     await expect(panel.locator("dl")).toContainText("18");
     await evidence("fleet-merged", "Merge fleets");
     await panel.getByRole("button", { name: "Back to system" }).click();
-    await expect(
-      inspector.getByRole("button", { name: /Fleets · 1/ }),
-    ).toBeFocused();
-    await expect(inspector.getByText("20", { exact: true })).toBeVisible();
-    await expect(inspector.getByText("6", { exact: true })).toBeVisible();
+    await expect(inspector.getByRole("button", { name: "View forces", exact: true })).toBeFocused();
+    await expectStationedCount(page, 1);
+    await inspectLayer(page, "Orbit");
+    await expect(inspector.getByRole("region", {name:"Orbital control",exact:true}).locator("dl > div").filter({has:page.getByText("Fighters",{exact:true})}).locator("dd")).toHaveText("20");
+    await inspectLayer(page, "Surface");
+    await expect(inspector.getByRole("region", {name:"Surface control",exact:true}).locator("dl > div").filter({has:page.getByText("Infantry",{exact:true})}).locator("dd")).toHaveText("6");
   } finally {
     for (const context of contexts) await context.close();
   }

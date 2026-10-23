@@ -352,6 +352,8 @@
     briefingOpen = false;
     if (event.destination === "system" && event.starId) {
       selected = event.starId;
+      expanded = true;
+      more = false;
       observation = true;
       await tick();
       document.querySelector<HTMLElement>(".system-details")?.focus();
@@ -731,6 +733,9 @@
   async function inspectArrival(starId: string) {
     arrivalsOpen = false;
     selected = starId;
+    expanded = true;
+    selectedLayer = "surface";
+    more = false;
     cameraRequest = {
       action: "selected",
       starId,

@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openForces } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -71,13 +72,11 @@ test("ordinary commanders cancel an acknowledged fleet order without losing thei
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
+    await acknowledgeCampaignStart(page);
     const inspector = page.getByRole("complementary", {
       name: "Selected system",
     });
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     const panel = page.getByRole("region", {
       name: "Fleet preparation",
       exact: true,
@@ -91,7 +90,7 @@ test("ordinary commanders cancel an acknowledged fleet order without losing thei
     const orders = panel.getByRole("region", { name: "Accepted fleet orders" });
     await expect(orders).toContainText("4 fighters · 18 infantry");
     await page.reload();
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     await panel.getByLabel("Fighters", { exact: true }).fill("3");
     await orders.getByRole("button", { name: /Review cancellation/ }).click();
     async function capture(phase: string, actionName: string) {
@@ -149,7 +148,7 @@ test("ordinary commanders cancel an acknowledged fleet order without losing thei
       panel.getByRole("button", { name: /^Fleet [0-9]+$/ }),
     ).toHaveCount(0);
     await page.reload();
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     await expect(orders).toContainText("No fleet orders are waiting.");
   } finally {
     for (const context of contexts) await context.close();

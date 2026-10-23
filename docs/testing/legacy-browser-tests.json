@@ -1,51 +1,106 @@
 {
   "arrival-reports.spec.ts": {
-    "sha256": "0bd282b7aa4c20af324a5315bf8eb875f69c1c8ab339819db346cfe97c5d0b4f",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "a3389a9361dc8b060fdd254ccf5efe5a276f5991b444d2f1fb3d177f6b899625",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "0bd282b7aa4c20af324a5315bf8eb875f69c1c8ab339819db346cfe97c5d0b4f",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "briefing.spec.ts": {
-    "sha256": "9a5c339d61a7e9629a2d59b4a76fb5e2df146cee82977be76318e4e0e107e6e4",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "b4bc1e4bb574fb6e1341fc871b379644641793e29216fd84a86d138860b319fc",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "9a5c339d61a7e9629a2d59b4a76fb5e2df146cee82977be76318e4e0e107e6e4",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "construction-completion.spec.ts": {
-    "sha256": "811815272b40c9a49fc9df0c158f90f9c47411f498d4c580c63fcbf0b86d462c",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "0107f428bb23fa3f19039985315654069f3be0a1bbd26c905273062c5b7025e6",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "811815272b40c9a49fc9df0c158f90f9c47411f498d4c580c63fcbf0b86d462c",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "construction-feedback.spec.ts": {
-    "sha256": "b2e3f480dd829cdb8bf3ec7b6d6ded00ca8588cc9b6c7a8bff98038bb2563257",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "b9e7850ec304c867879ad64df206887e53a386de06abfa26eed366a4f59a7a38",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "b2e3f480dd829cdb8bf3ec7b6d6ded00ca8588cc9b6c7a8bff98038bb2563257",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "construction.spec.ts": {
     "sha256": "290daec116f2bec2cc3a57cecdae57ed14d6e817b9f1442e17a67c44684c9aaa",
     "status": "Procedural regression; illustrated migration incomplete"
   },
   "conversations.spec.ts": {
-    "sha256": "28113ad49a44f62deef0fa2150377ab07cb2ecb90adfe346b958539958476a11",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "3a4ddf2a3227d6a6b42ea6dbc6a9865d1f3b2e220a9f00e9a832b0832161022f",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "28113ad49a44f62deef0fa2150377ab07cb2ecb90adfe346b958539958476a11",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "credit-offers.spec.ts": {
-    "sha256": "17a239784195f389ce144229cf2d4d9da3fe3535edc8d4912909761097f21292",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "d12ba6e3fe35993e2fef97d0859b6da718ca05551314ac23d755141b5db223fc",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "17a239784195f389ce144229cf2d4d9da3fe3535edc8d4912909761097f21292",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "fleet-cancellation.spec.ts": {
-    "sha256": "ab98e265d014b39c23b623f344ed83a8ada080a11ec3157f28cbdb0438518c67",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "c1b8522cb2546a298c0046b59df7b02f9ec3485c320f4b38d5f8a92406c629b1",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "ab98e265d014b39c23b623f344ed83a8ada080a11ec3157f28cbdb0438518c67",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "fleet-contacts.spec.ts": {
-    "sha256": "06dadac6c95a8794f654df9418ecbb218166bcae7425bf5ac789ca424a8a2a59",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "7f1cde29e0454344bf1f1df44c77816b64f0c3dc7b7846929d6b6ddb92b31398",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "06dadac6c95a8794f654df9418ecbb218166bcae7425bf5ac789ca424a8a2a59",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "fleet-reorganization.spec.ts": {
-    "sha256": "c4c380a5fc1cc58d300488cfbd1a1d9caa522aaf4b52000c3bd3ec7a97e29f92",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "f3f4300fdd9ca119172a0fc28723116cefa1cac23ba1159e16ce8fb6a4cd2df0",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "c4c380a5fc1cc58d300488cfbd1a1d9caa522aaf4b52000c3bd3ec7a97e29f92",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "fleet-travel.spec.ts": {
-    "sha256": "9259563f5c2e10b2388f9f73d0dbd0d24a7e3890f34a606e9c9d85c6993b8d06",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "c596fea885276b59588529d92133e7891eb5c2ca7adb56db3ef5209dea5cac9e",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "9259563f5c2e10b2388f9f73d0dbd0d24a7e3890f34a606e9c9d85c6993b8d06",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "fleets.spec.ts": {
-    "sha256": "1fbe194b072cdb6c2277c9846e226daaad008152f111d9ceae4f05795b6be665",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "f9977ba0945ecc263083908bb62820eaf1f88dc653a626bb9be0fecadd2b8426",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "1fbe194b072cdb6c2277c9846e226daaad008152f111d9ceae4f05795b6be665",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "geometry.spec.ts": {
     "sha256": "850e354aa741eaef5e3fbde0224507d30c2a0c39d960c8c0b90e3842861d4281",
@@ -56,15 +111,30 @@
     "status": "Procedural regression; illustrated migration incomplete"
   },
   "market-focus.spec.ts": {
-    "sha256": "962a3b2438d2002a653111aaaea44bd4c1969f74441bcb6933391f905592b769",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "0a4d0de0067de6afdc62757253dc024346fd8b7d7efd045537d1b7f0f85c784f",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "962a3b2438d2002a653111aaaea44bd4c1969f74441bcb6933391f905592b769",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "observations.spec.ts": {
-    "sha256": "b9748674db67da981cb1838a8a2e39b82e189b0a602bacfa8c731aead99563bf",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "9e6f75391bf843d947cb189fdce4566c214ca1206d8a93635ad554af925dbbbf",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "b9748674db67da981cb1838a8a2e39b82e189b0a602bacfa8c731aead99563bf",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   },
   "production.spec.ts": {
-    "sha256": "b82c35d343e6a2841a5c2b840032ea9a26ad4b967b3f24b16c9b63c544af6c50",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "fe68bc9057fa91592d7d41f8c87548ef8301c060cee1adde314dd5d919eca27a",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "navigationCompatibility": {
+      "priorSha256": "b82c35d343e6a2841a5c2b840032ea9a26ad4b967b3f24b16c9b63c544af6c50",
+      "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
+      "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    }
   }
 }

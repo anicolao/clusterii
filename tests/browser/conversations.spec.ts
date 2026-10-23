@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -120,9 +121,7 @@ for (const mode of ["mock", "real"] as const)
       const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
       await startDueCampaign(id, start);
       const page = pages[0];
-      await expect(
-        page.getByText("Campaign begun", { exact: true }),
-      ).toBeVisible();
+      await acknowledgeCampaignStart(page);
       const owner = pages[0],
         guest = pages[1],
         outsider = pages[2];
@@ -132,9 +131,7 @@ for (const mode of ["mock", "real"] as const)
           exact: true,
         });
       const open = async (page: typeof owner) =>
-        page
-          .getByRole("button", { name: /^Conversations(?: · New)?$/ })
-          .click();
+        openGalaxyCommand(page, /^Conversations(?: · New)?$/);
       await open(owner);
       const own = panel(owner),
         roomTitle = `Nacre talks ${Date.now()}`;
@@ -199,9 +196,7 @@ for (const mode of ["mock", "real"] as const)
       expect(acceptBox!.y).toBeGreaterThanOrEqual(0);
       expect(acceptBox!.y + acceptBox!.height).toBeLessThanOrEqual(852);
       await geometry(guest, guestPanel);
-      await guestPanel
-        .getByRole("button", { name: "Conversations", exact: true })
-        .click();
+      await guestPanel.getByRole("button", { name: "Conversations", exact: true }).click();
       await geometry(guest, guestPanel);
       await guestPanel
         .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
@@ -260,9 +255,7 @@ for (const mode of ["mock", "real"] as const)
       ).toHaveText("Draft saved on this browser.");
       await guest.reload();
       await open(guest);
-      await guestPanel
-        .getByRole("button", { name: "Conversations", exact: true })
-        .click();
+      await guestPanel.getByRole("button", { name: "Conversations", exact: true }).click();
       await guestPanel
         .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
         .click();
@@ -469,9 +462,7 @@ for (const mode of ["mock", "real"] as const)
         guest.getByRole("heading", { name: "Saved order needs review" }),
       ).not.toBeVisible();
       await open(guest);
-      await guestPanel
-        .getByRole("button", { name: "Conversations", exact: true })
-        .click();
+      await guestPanel.getByRole("button", { name: "Conversations", exact: true }).click();
       await guestPanel
         .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
         .click();
@@ -680,9 +671,7 @@ for (const mode of ["mock", "real"] as const)
         "access to this conversation has ended",
       );
       await newcomer.keyboard.press("Escape");
-      await newcomer
-        .getByRole("button", { name: "History", exact: true })
-        .click();
+      await openGalaxyCommand(newcomer, "History");
       const retainedHistory = newcomer.getByRole("region", {
         name: "Campaign history",
         exact: true,

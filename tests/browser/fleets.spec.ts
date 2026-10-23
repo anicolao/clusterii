@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, inspectLayer, openForces, expectStationedCount } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -71,13 +72,11 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
+    await acknowledgeCampaignStart(page);
     const inspector = page.getByRole("complementary", {
       name: "Selected system",
     });
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     const panel = page.getByRole("region", {
       name: "Fleet preparation",
       exact: true,
@@ -147,7 +146,7 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
       panel.getByRole("region", { name: "Accepted fleet orders" }),
     ).toContainText("2 fighters · 20 infantry");
     await page.reload();
-    await inspector.getByRole("button", { name: /Fleets · 0/ }).click();
+    await openForces(page, 0);
     await expect(
       panel.getByRole("region", { name: "Accepted fleet orders" }),
     ).toContainText("2 fighters · 20 infantry");
@@ -192,9 +191,9 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
       });
     }
     await panel.getByRole("button", { name: "Back to system" }).click();
-    await expect(
-      inspector.getByRole("button", { name: /Fleets · 1/ }),
-    ).toBeFocused();
+    await expect(inspector.getByRole("button", { name: "View forces", exact: true })).toBeFocused();
+    await expectStationedCount(page, 1);
+    await inspector.getByRole("button", { name: "Back to galaxy", exact: true }).click();
     await expect(
       page.getByLabel(/1 of your fleets stationed at/),
     ).toBeVisible();
@@ -214,7 +213,7 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
         path: info.outputPath(`fleet-map-${label}.png`),
       });
     }
-    await inspector.getByRole("button", { name: /Fleets · 1/ }).click();
+    await openForces(page, 1);
     await panel.getByRole("button", { name: /^Fleet [0-9]+$/ }).click();
     await panel.getByRole("button", { name: "Unload", exact: true }).click();
     await panel
@@ -270,7 +269,7 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
       panel.getByRole("region", { name: "Accepted fleet orders" }),
     ).toContainText("Unload · 5 infantry");
     await page.reload();
-    await inspector.getByRole("button", { name: /Fleets · 1/ }).click();
+    await openForces(page, 1);
     await expect(
       panel.getByRole("region", { name: "Accepted fleet orders" }),
     ).toContainText("Unload · 5 infantry");
@@ -366,10 +365,12 @@ test("ordinary commanders form and disband conserved fleets through acknowledged
         .filter({ hasText: "Fleet disbanded" }),
     ).toBeVisible();
     await panel.getByRole("button", { name: "Back to system" }).click();
-    await expect(
-      inspector.getByRole("button", { name: /Fleets · 0/ }),
-    ).toBeFocused();
-    await expect(inspector.getByText("25", { exact: true })).toHaveCount(2);
+    await expect(inspector.getByRole("button", { name: "View forces", exact: true })).toBeFocused();
+    await expectStationedCount(page, 0);
+    await inspectLayer(page, "Orbit");
+    await expect(inspector.getByRole("region", {name:"Orbital control",exact:true}).locator("dl > div").filter({has:page.getByText("Fighters",{exact:true})}).locator("dd")).toHaveText("25");
+    await inspectLayer(page, "Surface");
+    await expect(inspector.getByRole("region", {name:"Surface control",exact:true}).locator("dl > div").filter({has:page.getByText("Infantry",{exact:true})}).locator("dd")).toHaveText("25");
   } finally {
     for (const context of contexts) await context.close();
   }

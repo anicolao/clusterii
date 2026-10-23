@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openConstruction, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -73,10 +74,8 @@ test("construction feedback stays scoped after join and research acknowledgement
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
-    await page.getByRole("button", { name: "Develop", exact: true }).click();
+    await acknowledgeCampaignStart(page);
+    await openConstruction(page, "Surface");
     const panel = page.getByRole("dialog", {
       name: "System construction panel",
     });
@@ -104,7 +103,7 @@ test("construction feedback stays scoped after join and research acknowledgement
       });
     }
     await page.keyboard.press("Escape");
-    await page.getByRole("button", { name: "Economy", exact: true }).click();
+    await openGalaxyCommand(page, "Economy");
     const economy = page.getByRole("dialog", { name: "Empire economy panel" });
     await economy.getByRole("radio", { name: /investing/i }).check();
     await economy
@@ -190,7 +189,7 @@ test("construction feedback stays scoped after join and research acknowledgement
       await geometry(page, economy);
     }
     await page.keyboard.press("Escape");
-    await page.getByRole("button", { name: "Develop", exact: true }).click();
+    await openConstruction(page, "Surface");
     await expect(panel).not.toContainText("Research order accepted.");
     await panel
       .getByRole("button", { name: "Build market", exact: true })

@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -110,14 +111,12 @@ for (const mode of ["mock", "real"] as const)
       const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
       await startDueCampaign(id, start);
       const page = pages[0];
-      await expect(
-        page.getByText("Campaign begun", { exact: true }),
-      ).toBeVisible();
+      await acknowledgeCampaignStart(page);
       const {
         settleCampaignTicks,
       } = require("./lib/functions/src/production.js");
       const open = async (p: typeof page) => {
-        await p.getByRole("button", { name: "Economy", exact: true }).click();
+        await openGalaxyCommand(p, "Economy");
         await p
           .getByRole("button", { name: "Credit offers", exact: true })
           .click();

@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openConstruction, openGalaxyCommand } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -72,10 +73,8 @@ test("ordinary UI construction completes through real settlement with an explici
     );
     expect(response.ok()).toBe(true);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
-    await page.getByRole("button", { name: "Develop", exact: true }).click();
+    await acknowledgeCampaignStart(page);
+    await openConstruction(page, "Orbit");
     const panel = page.getByRole("dialog", {
       name: "System construction panel",
     });
@@ -135,14 +134,14 @@ test("ordinary UI construction completes through real settlement with an explici
     }
     await page.keyboard.press("Escape");
     await expect(
-      page.getByRole("button", { name: "Develop", exact: true }),
+      page.getByRole("button", { name: "Build in orbit", exact: true }),
     ).toBeFocused();
     await page.reload();
-    await page.getByRole("button", { name: "Develop", exact: true }).click();
+    await openConstruction(page, "Orbit");
     await expect(panel).toContainText("Training camp · completed");
     await expect(panel.locator("header")).toContainText("145");
     for (const peer of pages.slice(1)) {
-      await peer.getByRole("button", { name: "Economy", exact: true }).click();
+      await openGalaxyCommand(peer, "Economy");
       const economy = peer.getByRole("dialog", {
         name: "Empire economy panel",
       });

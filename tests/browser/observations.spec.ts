@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, openGalaxyCommand, openObservation } from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
 import { login, grantDeveloper, geometry } from "./helpers";
@@ -73,15 +74,11 @@ test("ordinary commanders inspect current, unknown and historical stellar observ
     const { startDueCampaign } = require("./lib/functions/src/campaigns.js");
     await startDueCampaign(id, start);
     const page = pages[0];
-    await expect(
-      page.getByText("Campaign begun", { exact: true }),
-    ).toBeVisible();
+    await acknowledgeCampaignStart(page);
     const inspector = page.getByRole("complementary", {
       name: "Selected system",
     });
-    await inspector
-      .getByRole("button", { name: "Observation", exact: true })
-      .click();
+    await openObservation(page);
     const observation = inspector.getByRole("region", {
       name: "Stellar observation",
     });
@@ -110,9 +107,7 @@ test("ordinary commanders inspect current, unknown and historical stellar observ
     );
     expect(nearby).toBeTruthy();
     const select = async (name: string) => {
-      await inspector
-        .getByRole("button", { name: "Systems list", exact: true })
-        .click();
+      await openGalaxyCommand(page, "Systems list");
       await page.getByLabel("Find a system").fill(name);
       await page
         .getByRole("button", {
@@ -123,6 +118,7 @@ test("ordinary commanders inspect current, unknown and historical stellar observ
       await expect(inspector.getByRole("heading", { level: 2 })).toContainText(
         name,
       );
+      await openObservation(page);
     };
     await select(nearby.name);
     await expect(observation).toContainText(
@@ -145,7 +141,7 @@ test("ordinary commanders inspect current, unknown and historical stellar observ
     ] as const) {
       await page.setViewportSize({ width, height });
       const tab = inspector.getByRole("button", {
-        name: "Observation",
+        name: "Return to system",
         exact: true,
       });
       const box = await tab.boundingBox();
@@ -220,9 +216,7 @@ test("ordinary commanders inspect current, unknown and historical stellar observ
     ).toContainText("Last observed");
     await expect(observation).toContainText("These are historical facts.");
     await page.reload();
-    await inspector
-      .getByRole("button", { name: "Observation", exact: true })
-      .click();
+    await openObservation(page);
     await select(stale.name);
     await expect(
       observation.getByRole("status", { name: "Observation age" }),
