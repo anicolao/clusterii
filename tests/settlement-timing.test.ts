@@ -6,8 +6,10 @@ import { settlementTiming } from "./browser/story-helpers/settlement-timing";
 
 test("settlement timing preserves SDK outcomes, failures and redacts arguments", async () => {
   const enabled = process.env.CLUSTER_SETTLEMENT_TIMING,
-    host = process.env.FIRESTORE_EMULATOR_HOST;
+    host = process.env.FIRESTORE_EMULATOR_HOST,
+    rpc = process.env.CLUSTER_SETTLEMENT_RPC_TIMING;
   process.env.CLUSTER_SETTLEMENT_TIMING = "1";
+  process.env.CLUSTER_SETTLEMENT_RPC_TIMING = "0";
   process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:18080";
   try {
     const path = join(
@@ -95,6 +97,8 @@ test("settlement timing preserves SDK outcomes, failures and redacts arguments",
     );
     expect(readFileSync(path, "utf8")).toBe(text);
   } finally {
+    if (rpc === undefined) delete process.env.CLUSTER_SETTLEMENT_RPC_TIMING;
+    else process.env.CLUSTER_SETTLEMENT_RPC_TIMING = rpc;
     if (enabled === undefined) delete process.env.CLUSTER_SETTLEMENT_TIMING;
     else process.env.CLUSTER_SETTLEMENT_TIMING = enabled;
     if (host === undefined) delete process.env.FIRESTORE_EMULATOR_HOST;
@@ -105,7 +109,9 @@ test("settlement timing preserves SDK outcomes, failures and redacts arguments",
 test("commit timing preserves receivers, arguments and errors across concurrent SDK continuations", async () => {
   const enabled = process.env.CLUSTER_SETTLEMENT_TIMING;
   const host = process.env.FIRESTORE_EMULATOR_HOST;
+  const rpc = process.env.CLUSTER_SETTLEMENT_RPC_TIMING;
   process.env.CLUSTER_SETTLEMENT_TIMING = "1";
+  process.env.CLUSTER_SETTLEMENT_RPC_TIMING = "0";
   process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:18080";
   const path = join(
     mkdtempSync(join(tmpdir(), "cluster-commit-unit-")),
@@ -247,6 +253,8 @@ test("commit timing preserves receivers, arguments and errors across concurrent 
       attempts: 1,
     });
   } finally {
+    if (rpc === undefined) delete process.env.CLUSTER_SETTLEMENT_RPC_TIMING;
+    else process.env.CLUSTER_SETTLEMENT_RPC_TIMING = rpc;
     if (enabled === undefined) delete process.env.CLUSTER_SETTLEMENT_TIMING;
     else process.env.CLUSTER_SETTLEMENT_TIMING = enabled;
     if (host === undefined) delete process.env.FIRESTORE_EMULATOR_HOST;

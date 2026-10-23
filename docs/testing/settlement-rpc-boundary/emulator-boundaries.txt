@@ -1,0 +1,173 @@
+/tmp/cluster-write-view.txt lines84-126 (javap -c -p; emulator1.22.0)
+     109: getfield      #7                  // Field this$0:Lcom/google/cloud/datastore/emulator/impl/storage/FlatLocalEntityStore;
+     112: getfield      #119                // Field com/google/cloud/datastore/emulator/impl/storage/FlatLocalEntityStore.stateManager:Lcom/google/cloud/datastore/emulator/impl/transactions/StateManager;
+     115: aload_0
+     116: getfield      #45                 // Field handle:J
+     119: invokeinterface #123,  3          // InterfaceMethod com/google/cloud/datastore/emulator/impl/transactions/StateManager.toCommit:(J)V
+     124: aload_0
+     125: iconst_1
+     126: putfield      #25                 // Field isCommitted:Z
+     129: aload_0
+     130: getfield      #7                  // Field this$0:Lcom/google/cloud/datastore/emulator/impl/storage/FlatLocalEntityStore;
+     133: getfield      #129                // Field com/google/cloud/datastore/emulator/impl/storage/FlatLocalEntityStore.clock:Lcom/google/common/time/TimeSource;
+     136: invokeinterface #133,  1          // InterfaceMethod com/google/common/time/TimeSource.instant:()Ljava/time/Instant;
+     141: astore        4
+     143: invokestatic  #139                // Method com/google/common/collect/ImmutableMap.builder:()Lcom/google/common/collect/ImmutableMap$Builder;
+     146: astore        5
+     148: aload_3
+     149: invokeinterface #142,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+     154: invokeinterface #145,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     159: astore        6
+     161: aload         6
+     163: invokeinterface #151,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     168: ifeq          231
+     171: aload         6
+     173: invokeinterface #156,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     178: checkcast     #160                // class java/util/Map$Entry
+     181: astore        7
+     183: aload         5
+     185: aload         7
+     187: invokeinterface #162,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     192: checkcast     #165                // class com/google/cloud/datastore/core/rep/EntityRef
+     195: aload_0
+     196: getfield      #7                  // Field this$0:Lcom/google/cloud/datastore/emulator/impl/storage/FlatLocalEntityStore;
+     199: aload         7
+     201: invokeinterface #162,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     206: checkcast     #165                // class com/google/cloud/datastore/core/rep/EntityRef
+     209: aload         7
+     211: invokeinterface #167,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     216: checkcast     #170                // class com/google/cloud/datastore/emulator/impl/storage/LocalEntityStore$EntityMutation
+     219: aload         4
+     221: invokevirtual #172                // Method com/google/cloud/datastore/emulator/impl/storage/FlatLocalEntityStore.updateRow:(Lcom/google/cloud/datastore/core/rep/EntityRef;Lcom/google/cloud/datastore/emulator/impl/storage/LocalEntityStore$EntityMutation;Ljava/time/Instant;)Lcom/google/cloud/datastore/emulator/impl/util/EntityReadResult;
+     224: invokevirtual #176                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+     227: pop
+     228: goto          161
+
+/tmp/cluster-emulator-helper.txt lines481-540 (javap -c -p; emulator1.22.0)
+     289: aload         10
+     291: invokeinterface #397,  2          // InterfaceMethod com/google/cloud/datastore/emulator/impl/storage/LocalEntityStore$ReadWriteView.commit:(Lcom/google/common/collect/ImmutableMap;)Lcom/google/common/collect/ImmutableMap;
+     296: astore        11
+     298: aload_0
+     299: invokevirtual #388                // Method listenStreamManager:()Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+     302: aload         11
+     304: aload_0
+     305: invokevirtual #154                // Method converters:()Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+     308: dup
+     309: invokestatic  #401                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     312: pop
+     313: invokedynamic #406,  0            // InvokeDynamic #7:apply:(Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;)Lcom/google/common/base/Function;
+     318: invokestatic  #325                // Method com/google/common/collect/Maps.transformValues:(Ljava/util/Map;Lcom/google/common/base/Function;)Ljava/util/Map;
+     321: invokestatic  #296                // Method com/google/common/collect/ImmutableMap.copyOf:(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
+     324: invokevirtual #409                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.notifyListeners:(Lcom/google/common/collect/ImmutableMap;)V
+     327: aload_0
+     328: invokevirtual #388                // Method listenStreamManager:()Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+     331: invokevirtual #413                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.endCommit:()V
+     334: goto          349
+     337: astore        14
+     339: aload_0
+     340: invokevirtual #388                // Method listenStreamManager:()Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+     343: invokevirtual #413                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.endCommit:()V
+     346: aload         14
+     348: athrow
+     349: aload_0
+     350: invokevirtual #416                // Method eventManager:()Lcom/google/cloud/datastore/emulator/impl/events/EventManager;
+     353: aload_0
+     354: invokevirtual #420                // Method triggersV1:()Ljava/util/concurrent/atomic/AtomicReference;
+     357: invokevirtual #78                 // Method java/util/concurrent/atomic/AtomicReference.get:()Ljava/lang/Object;
+     360: checkcast     #112                // class com/google/common/collect/ImmutableMap
+     363: aload_0
+     364: invokevirtual #423                // Method triggersV2:()Ljava/util/concurrent/atomic/AtomicReference;
+     367: invokevirtual #78                 // Method java/util/concurrent/atomic/AtomicReference.get:()Ljava/lang/Object;
+     370: checkcast     #112                // class com/google/common/collect/ImmutableMap
+     373: aload         7
+     375: aload         11
+     377: invokevirtual #426                // Method com/google/cloud/datastore/emulator/impl/events/EventManager.reportEvents:(Lcom/google/common/collect/ImmutableMap;Lcom/google/common/collect/ImmutableMap;Ljava/util/Map;Ljava/util/Map;)V
+     380: aload_1
+     381: invokevirtual #432                // Method com/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext.requestTime:()Ljava/time/Instant;
+     384: astore        12
+     386: aload         11
+     388: invokevirtual #111                // Method com/google/common/collect/ImmutableMap.values:()Lcom/google/common/collect/ImmutableCollection;
+     391: invokevirtual #123                // Method com/google/common/collect/ImmutableCollection.iterator:()Lcom/google/common/collect/UnmodifiableIterator;
+     394: astore        13
+     396: aload         13
+     398: invokeinterface #129,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     403: ifeq          428
+     406: aload         13
+     408: invokeinterface #135,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     413: checkcast     #138                // class com/google/cloud/datastore/emulator/impl/util/EntityReadResult
+     416: astore        14
+     418: aload         14
+     420: invokevirtual #140                // Method com/google/cloud/datastore/emulator/impl/util/EntityReadResult.readAt:()Ljava/time/Instant;
+     423: astore        12
+     425: goto          428
+     428: invokestatic  #435                // Method com/google/common/collect/ImmutableMap.builder:()Lcom/google/common/collect/ImmutableMap$Builder;
+     431: astore        13
+     433: aload         4
+     435: invokeinterface #438,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+
+/tmp/cluster-emulator-cloud-v1.txt lines866-930 (javap -c -p; emulator1.22.0)
+  public com.google.firestore.v1.CommitResponse commit(com.google.cloud.datastore.emulator.impl.context.FirestoreEmulatorRequestContext, com.google.firestore.v1.CommitRequest) throws com.google.cloud.datastore.core.exception.DatastoreException;
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field validator:Lcom/google/cloud/datastore/core/firestorev1/validator/FirestoreV1ServiceValidator;
+       4: aload_2
+       5: invokevirtual #857                // Method com/google/cloud/datastore/core/firestorev1/validator/FirestoreV1ServiceValidator.validateCommitRequest:(Lcom/google/firestore/v1/CommitRequest;)V
+       8: aload_0
+       9: getfield      #100                // Field transactionManager:Lcom/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager;
+      12: aload_1
+      13: invokevirtual #474                // Method com/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext.databaseEdition:()Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+      16: aload_2
+      17: invokevirtual #861                // Method com/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager.create:(Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;Lcom/google/firestore/v1/CommitRequest;)Lcom/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager$EmulatorTransaction;
+      20: astore_3
+      21: aload_2
+      22: invokevirtual #864                // Method com/google/firestore/v1/CommitRequest.getWritesCount:()I
+      25: ifne          51
+      28: aload_0
+      29: aload_3
+      30: invokevirtual #869                // Method commitWithoutMutations:(Lcom/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager$EmulatorTransaction;)V
+      33: invokestatic  #873                // Method com/google/firestore/v1/CommitResponse.getDefaultInstance:()Lcom/google/firestore/v1/CommitResponse;
+      36: astore        4
+      38: aload_3
+      39: ifnull        48
+      42: aload_3
+      43: invokeinterface #459,  1          // InterfaceMethod com/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager$EmulatorTransaction.close:()V
+      48: aload         4
+      50: areturn
+      51: aload_3
+      52: invokeinterface #879,  1          // InterfaceMethod com/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager$EmulatorTransaction.isReadOnly:()Z
+      57: ifne          64
+      60: iconst_1
+      61: goto          65
+      64: iconst_0
+      65: ldc_w         #882                // String Cannot modify entities in a read-only transaction.
+      68: invokestatic  #884                // Method com/google/cloud/datastore/core/exception/ValidationException.validateAssertion:(ZLjava/lang/String;)V
+      71: aload_0
+      72: getfield      #66                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+      75: aload_0
+      76: getfield      #329                // Field firestoreEmulatorHelper:Lcom/google/cloud/datastore/emulator/impl/firestore/FirestoreEmulatorHelper;
+      79: aload_1
+      80: aload_0
+      81: getfield      #66                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+      84: aload_2
+      85: aload_1
+      86: invokevirtual #890                // Method com/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext.requestTime:()Ljava/time/Instant;
+      89: invokestatic  #894                // Method com/google/protobuf/util/JavaTimeConversions.toProtoTimestamp:(Ljava/time/Instant;)Lcom/google/protobuf/Timestamp;
+      92: aload_1
+      93: invokevirtual #474                // Method com/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext.databaseEdition:()Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+      96: invokevirtual #900                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toWrite:(Lcom/google/firestore/v1/CommitRequest;Lcom/google/protobuf/Timestamp;Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;)Lcom/google/cloud/datastore/core/write/Write;
+      99: aload_3
+     100: getstatic     #903                // Field com/google/cloud/datastore/emulator/impl/firestore/FirestoreEmulatorHelper$IdAllocationStyle.FIRESTORE:Lcom/google/cloud/datastore/emulator/impl/firestore/FirestoreEmulatorHelper$IdAllocationStyle;
+     103: invokevirtual #909                // Method com/google/cloud/datastore/emulator/impl/firestore/FirestoreEmulatorHelper.internalCommit:(Lcom/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext;Lcom/google/cloud/datastore/core/write/Write;Lcom/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager$EmulatorTransaction;Lcom/google/cloud/datastore/emulator/impl/firestore/FirestoreEmulatorHelper$IdAllocationStyle;)Lcom/google/cloud/datastore/core/write/WriteResponse;
+     106: invokevirtual #912                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toCommitResponse:(Lcom/google/cloud/datastore/core/write/WriteResponse;)Lcom/google/firestore/v1/CommitResponse;
+     109: astore        4
+     111: aload_3
+     112: ifnull        121
+     115: aload_3
+     116: invokeinterface #459,  1          // InterfaceMethod com/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager$EmulatorTransaction.close:()V
+     121: aload         4
+     123: areturn
+     124: astore        4
+     126: aload_3
+     127: ifnull        148
+     130: aload_3
+     131: invokeinterface #459,  1          // InterfaceMethod com/google/cloud/datastore/emulator/impl/transactions/EmulatorTransactionManager$EmulatorTransaction.close:()V

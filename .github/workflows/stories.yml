@@ -30,6 +30,7 @@ jobs:
         env:
           # Existing bounded, redacted demo-only probe; retained with story traces.
           CLUSTER_SETTLEMENT_TIMING: "1"
+          CLUSTER_SETTLEMENT_RPC_TIMING: "1"
         run: nix run path:./nix#ci-renderer -- stories verify
       - name: Explicit baseline candidates (never acceptance)
         if: matrix.mode == 'generate' && contains(github.event.pull_request.labels.*.name, 'baseline-candidates')
