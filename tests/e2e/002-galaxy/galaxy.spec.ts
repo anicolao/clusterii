@@ -137,34 +137,33 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           },
           verifications: [
             {
-              spec: "The waiting rail is compact, retains navigation and omits unavailable empire facts.",
+              spec: "The bounded waiting manifest retains navigation and omits unavailable empire facts and arbitrary system ownership.",
               check: async () => {
                 await expect(
                   pages[0].getByLabel("Empire resources"),
                 ).toHaveCount(0);
-                const rail = await pages[0]
-                  .locator(".command-rail")
-                  .boundingBox();
-                expect(rail).not.toBeNull();
-                expect(rail!.height).toBeLessThanOrEqual(
-                  info.project.name === "large" ? 100 : 70,
-                );
-                const inspector = pages[0].getByRole("complementary", {
-                  name: "Selected system",
+                const manifest = pages[0].getByRole("region", {
+                  name: "Campaign manifest",
+                  exact: true,
                 });
-                const box = (await inspector.boundingBox())!;
-                const heading = (await inspector
-                  .getByRole("heading", { level: 2 })
+                const reading = (await manifest.boundingBox())!;
+                const footer = (await pages[0]
+                  .locator(".waiting footer")
                   .boundingBox())!;
-                const dock = (await pages[0]
-                  .locator(".command-dock")
-                  .boundingBox())!;
-                expect(box.y).toBeGreaterThanOrEqual(rail!.y + rail!.height);
-                expect(box.y + box.height).toBeLessThanOrEqual(dock.y);
-                expect(heading.y).toBeGreaterThanOrEqual(box.y);
-                expect(heading.y + heading.height).toBeLessThanOrEqual(
-                  box.y + box.height,
+                const viewport = pages[0].viewportSize()!;
+                expect(reading.y).toBeGreaterThanOrEqual(0);
+                expect(reading.y + reading.height).toBeLessThanOrEqual(
+                  footer.y,
                 );
+                expect(footer.y + footer.height).toBeLessThanOrEqual(
+                  viewport.height,
+                );
+                await expect(
+                  pages[0].getByRole("complementary", {
+                    name: "Selected system",
+                  }),
+                ).toHaveCount(0);
+                await expect(manifest).toContainText(aliases[0]);
               },
             },
           ],

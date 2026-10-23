@@ -733,3 +733,24 @@ Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | 
 Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Retain 48 corrected focus and waiting-rail candidates with four-size generation and separately scoped normal-motion evidence
 Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | Preserve earned-rate failure evidence and correct exact label spacing and resource-panel containment before scoped verification
 Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | Archive four passing real science-rate journeys and 24 unapproved candidates with service privacy and settlement evidence
+Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Implement the real bounded waiting manifest and prepare feature-local admission recovery evidence.
+Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Archive four waiting-manifest candidate journeys and preserve explicit remaining acceptance gates.
+Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Record draft PR117 dependency and unverified preview in the delivery acceptance table.
+Prompt 139 | ba0b3631960ee844c2bd2a1c531fec1e448912ae522c65e0808f6dbf1fe99f9e | Preserve the missing-verification story failure and add explicit Rules focus and containment assertions.
+Prompt 139 | ba0b3631960ee844c2bd2a1c531fec1e448912ae522c65e0808f6dbf1fe99f9e | Archive four completed waiting lifecycle journeys and reconcile the reviewer03:42 checkpoint with scoped acceptance.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve first phone navigation evidence and correct the final entry accessible heading after successful invitation recovery.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Fix measured six-pixel phone chart/rail overlap and retain command-tray focus restoration in active history navigation.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve passing active-chart evidence and refresh cached admission history through the real Latest records control.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Record passing active phone history and preserve source-paired evidence before remaining viewport verification.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Record21 passing remaining-size journeys and align history with the measured factual rail after rendered clipping review.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve four-size history clearance evidence and remove clipped route acknowledgement while the history reader owns the view.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Record four-size history feedback/clearance passes, exact retained image provenance and the bounded settlement timing plan.
+
+Prompt 144 | c04432f9c72822693063c93d8c9e62aa52f21b514489da537b38c8ff24626165 | Preserve the isolated timing attempt's pre-browser Firestore bind failure and distinguish it from unresolved100-tick CI timing.

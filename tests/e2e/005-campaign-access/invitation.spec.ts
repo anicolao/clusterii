@@ -1,11 +1,12 @@
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { login, authenticate, grantDeveloper } from "./helpers";
+import { expectWaitingSeat } from "../helpers/campaign-phase";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { login, authenticate, grantDeveloper } from "../../browser/helpers";
 import {
   observeProfileWrites,
   profileIdentity,
   profileFacts,
-} from "./story-helpers/profile-observer";
+} from "../../browser/story-helpers/profile-observer";
 import type { Page } from "@playwright/test";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -85,7 +86,15 @@ test("An invited new commander saves an identity and joins the preserved campaig
       verifications: [
         {
           spec: "The private galaxy is not exposed before authentication.",
-          check: async () => expect(guest.locator("canvas")).toHaveCount(0),
+          check: async () => {
+            await expect(guest.locator("canvas")).toHaveCount(0);
+            await expect(
+              guest.getByRole("region", {
+                name: "Waiting campaign",
+                exact: true,
+              }),
+            ).toHaveCount(0);
+          },
         },
       ],
       views: [view(guest, "Invited envoy")],
@@ -212,15 +221,21 @@ test("An invited new commander saves an identity and joins the preserved campaig
         check: async () => {
           await confirmed(guest);
           await expect(
-            page.getByText("Invited envoy", { exact: true }),
+            page
+              .getByRole("dialog", {
+                name: "Campaign roster panel",
+                exact: true,
+              })
+              .getByRole("region", { name: "Campaign roster", exact: true })
+              .getByText("Invited envoy", { exact: true }),
           ).toBeVisible();
         },
       },
       verifications: [
         {
-          spec: "The guest sees the actual galaxy without creating another identity revision.",
+          spec: "The guest sees its actual two-seat waiting manifest without creating another identity revision.",
           check: async () => {
-            await expect(guest.locator("canvas")).toBeVisible();
+            await expectWaitingSeat(guest, "Invited envoy", 2);
             expect(
               (await profileFacts(guest, profileIdentity(writes))).revision,
             ).toBe(1);
@@ -238,8 +253,8 @@ test("An invited new commander saves an identity and joins the preserved campaig
         "Reload and recover the admitted campaign without re-saving identity.",
       action: async () => guest.reload(),
       acknowledgement: {
-        spec: "The invited galaxy is restored.",
-        check: async () => expect(guest.locator("canvas")).toBeVisible(),
+        spec: "The invited waiting campaign is restored.",
+        check: async () => expectWaitingSeat(guest, "Invited envoy", 2),
       },
       verifications: [
         {
@@ -308,7 +323,10 @@ test("A returning commander resumes an invitation without rewriting identity and
         await button(guest, "Claim your seat").click();
         await confirmed(guest);
         await expect(
-          page.getByText("Returning envoy", { exact: true }),
+          page
+            .getByRole("dialog", { name: "Campaign roster panel", exact: true })
+            .getByRole("region", { name: "Campaign roster", exact: true })
+            .getByText("Returning envoy", { exact: true }),
         ).toBeVisible();
         await guest.goto("./");
         await button(guest, "Your identity").click();
@@ -336,7 +354,15 @@ test("A returning commander resumes an invitation without rewriting identity and
       verifications: [
         {
           spec: "The private galaxy is absent while signed out.",
-          check: async () => expect(guest.locator("canvas")).toHaveCount(0),
+          check: async () => {
+            await expect(guest.locator("canvas")).toHaveCount(0);
+            await expect(
+              guest.getByRole("region", {
+                name: "Waiting campaign",
+                exact: true,
+              }),
+            ).toHaveCount(0);
+          },
         },
       ],
       views: [view(guest, "Returning envoy")],
@@ -368,10 +394,10 @@ test("A returning commander resumes an invitation without rewriting identity and
         "Authenticate with the saved account and resume the campaign directly.",
       action: async () => authenticate(guest, email),
       acknowledgement: {
-        spec: "The invited galaxy opens without an identity-editor round trip.",
+        spec: "The invited waiting campaign opens without an identity-editor round trip.",
         check: async () => {
           await expect(guest).toHaveURL(invitation);
-          await expect(guest.locator("canvas")).toBeVisible();
+          await expectWaitingSeat(guest, "Returning envoy", 2);
         },
       },
       verifications: [
@@ -381,7 +407,13 @@ test("A returning commander resumes an invitation without rewriting identity and
             await expect(guest.getByLabel("Commander name")).toHaveCount(0);
             await unchanged();
             await expect(
-              page.getByText("Returning envoy", { exact: true }),
+              page
+                .getByRole("dialog", {
+                  name: "Campaign roster panel",
+                  exact: true,
+                })
+                .getByRole("region", { name: "Campaign roster", exact: true })
+                .getByText("Returning envoy", { exact: true }),
             ).toHaveCount(1);
           },
         },
@@ -396,8 +428,8 @@ test("A returning commander resumes an invitation without rewriting identity and
       description: "Reload the resumed campaign with the same saved identity.",
       action: async () => guest.reload(),
       acknowledgement: {
-        spec: "The authorized galaxy is recovered again.",
-        check: async () => expect(guest.locator("canvas")).toBeVisible(),
+        spec: "The authorized waiting membership is recovered again.",
+        check: async () => expectWaitingSeat(guest, "Returning envoy", 2),
       },
       verifications: [
         {
@@ -500,7 +532,7 @@ test("A returning commander resumes an invitation without rewriting identity and
         spec: "The entry surface is available again.",
         check: async () =>
           expect(
-            guest.getByRole("heading", { name: "CLUSTER", exact: true }),
+            guest.getByRole("heading", { name: "Cluster", exact: true }),
           ).toBeVisible(),
       },
       verifications: [

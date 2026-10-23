@@ -1,4 +1,5 @@
 <script lang="ts">
+  import CampaignWaiting from "../CampaignWaiting.svelte";
   import GameMenu from "../GameMenu.svelte";
   import ScienceLedger from "../ScienceLedger.svelte";
   import DevelopmentIcon from "../DevelopmentIcon.svelte";
@@ -195,7 +196,7 @@
   let observation = $state(false);
   let expanded = $state(false);
   let selectedLayer = $state<Layer | null>(null);
-  let inspectorHeading: HTMLHeadingElement;
+  let inspectorHeading = $state<HTMLHeadingElement>();
   async function inspectSystem() {
     expanded = true;
     await tick();
@@ -218,6 +219,7 @@
     void openPanel("construction");
   }
   let more = $state(false);
+  let commandRailHeight = $state(0);
   let construction = $state(false);
   let constructionChoice = $state<Development>("market");
   let resumedConstruction = "";
@@ -957,78 +959,32 @@
   );
 </script>
 
-<div class="galaxy-surface" class:before-start={view.phase !== "active"}>
-  <header
-    class="command-rail"
-    inert={more ||
-      roster ||
-      listing ||
-      briefingOpen ||
-      history ||
-      contactsOpen ||
-      arrivalsOpen ||
-      conversationsOpen ||
-      economy ||
-      construction ||
-      military}
-  >
-    <div>
-      <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
-      <span
-        >{view.pausedAt != null
-          ? "Paused · Development maintenance"
-          : "Development · Rules under review"}</span
-      >
+<div
+  class="galaxy-surface"
+  class:before-start={view.phase !== "active"}
+  style:--command-rail-height={`${commandRailHeight}px`}
+>
+  {#if view.phase === "waiting" || view.phase === "scheduled"}
+    <div inert={roster}>
+      <CampaignWaiting
+        {view}
+        {message}
+        {error}
+        {busy}
+        {pending}
+        {onback}
+        {onleave}
+        {onretry}
+        onroster={() => openPanel("roster")}
+      />
     </div>
-    {#if view.phase === "active"}
-      <div class="campaign-facts" aria-label="Empire resources">
-        <span
-          >Credits <strong
-            >{view.empire
-              ? (view.empire.creditsMilli / 1000).toLocaleString("en-US")
-              : "—"}</strong
-          ></span
-        >
-        <ActionButton
-          class="science-resource"
-          data-focus="science"
-          onclick={openScience}
-          aria-label="Inspect science per tick"
-        >
-          <DevelopmentIcon type="station" />
-          <span
-            >Science <strong
-              >{view.economy?.science
-                ? `+${(view.economy.science.scienceMilli / 1000).toLocaleString("en-US", { maximumFractionDigits: 3 })} / tick`
-                : "Rate not recorded"}</strong
-            >{#if view.pausedAt != null}<small>Paused</small>{/if}</span
-          >
-        </ActionButton>
-        <span
-          >Next tick <strong
-            >{view.pausedAt != null
-              ? "Paused"
-              : view.production
-                ? new Date(view.production.nextTickAt).toLocaleTimeString(
-                    "en-US",
-                    { hour: "2-digit", minute: "2-digit", timeZone: "UTC" },
-                  ) + " UTC"
-                : "After start"}</strong
-          ></span
-        >
-      </div>
-    {/if}
-    <ActionButton
-      class="quiet"
-      onclick={() => openPanel("roster")}
-      data-focus="roster"
-      aria-expanded={roster}>Roster</ActionButton
-    ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
-    <GameMenu />
-  </header>
-  {#if !roster && !expanded && !more && !commandKind.startsWith("conversation.") && !economy}<div
-      class="acknowledgement"
-      inert={listing ||
+  {:else}
+    <header
+      class="command-rail"
+      bind:offsetHeight={commandRailHeight}
+      inert={more ||
+        roster ||
+        listing ||
         briefingOpen ||
         history ||
         contactsOpen ||
@@ -1038,511 +994,583 @@
         construction ||
         military}
     >
-      <Feedback
-        message={view.phase === "active" && commandKind === "campaign.join"
-          ? ""
-          : message}
-        {error}
-      />{#if onretry}<ActionButton
-          disabled={busy}
-          class="secondary"
-          onclick={onretry}
-          >{pending ? "Retry order" : "Reconnect"}</ActionButton
-        >{/if}
-    </div>{/if}
-  <div
-    class="chart"
-    data-galaxy-viewport
-    inert={more ||
-      roster ||
-      listing ||
-      briefingOpen ||
-      history ||
-      contactsOpen ||
-      arrivalsOpen ||
-      conversationsOpen ||
-      economy ||
-      construction ||
-      military}
-    aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
-  >
-    {#if view.fleetContactsEnabled}<p class="contact-legend">
-        {historyLoading
-          ? "Recovering contact records…"
-          : "Contact markers show acquired positions from loaded records."}
-      </p>{/if}
-    <Canvas renderMode="on-demand"
-      ><Scene
-        fleets={Object.fromEntries(
-          view.stars.map((s) => [
-            s.id,
-            view.military?.fleets.filter(
-              (f) => f.starId === s.id && f.travel?.status !== "traveling",
-            ).length ?? 0,
-          ]),
-        )}
-        travelers={(view.military?.fleets ?? [])
-          .filter((f) => f.travel?.status === "traveling")
-          .map((f) => ({
-            id: f.id,
-            number: f.number,
-            ...fleetPosition(f, view.stars, view.production?.tick ?? 0),
-          }))}
-        onfleet={(id) => {
-          selectedFleet = id;
-          void openPanel("military");
-        }}
-        {contacts}
-        stars={view.stars}
-        owned={view.holdings.map((h) => h.starId)}
-        home={view.own.home ?? ""}
-        selected={star.id}
-        {stellarClass}
-        {cameraRequest}
-        onselect={(id) => (selected = id)}
-      /></Canvas
-    >
-  </div>
-  <aside
-    inert={more ||
-      roster ||
-      listing ||
-      briefingOpen ||
-      history ||
-      contactsOpen ||
-      arrivalsOpen ||
-      conversationsOpen ||
-      economy ||
-      construction ||
-      military}
-    class="system-inspector"
-    class:observing={observation}
-    class:expanded
-    class:active={view.phase === "active"}
-    aria-label="Selected system"
-  >
-    <p class="overline gold">{star.class}-class star</p>
-    <h2 bind:this={inspectorHeading} tabindex="-1">
-      <Icon kind="star" />
-      {star.name}
-    </h2>
-    {#if expanded}<div class="observation-access">
-        <ActionButton
-          class="quiet"
-          aria-pressed={observation}
-          onclick={() => (observation = !observation)}
-          >{observation ? "Return to system" : "Observation"}</ActionButton
+      <div>
+        <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
+        <span
+          >{view.pausedAt != null
+            ? "Paused · Development maintenance"
+            : "Development · Rules under review"}</span
         >
+      </div>
+      {#if view.phase === "active"}
+        <div class="campaign-facts" aria-label="Empire resources">
+          <span
+            >Credits <strong
+              >{view.empire
+                ? (view.empire.creditsMilli / 1000).toLocaleString("en-US")
+                : "—"}</strong
+            ></span
+          >
+          <ActionButton
+            class="science-resource"
+            data-focus="science"
+            onclick={openScience}
+            aria-label="Inspect science per tick"
+          >
+            <DevelopmentIcon type="station" />
+            <span
+              >Science <strong
+                >{view.economy?.science
+                  ? `+${(view.economy.science.scienceMilli / 1000).toLocaleString("en-US", { maximumFractionDigits: 3 })} / tick`
+                  : "Rate not recorded"}</strong
+              >{#if view.pausedAt != null}<small>Paused</small>{/if}</span
+            >
+          </ActionButton>
+          <span
+            >Next tick <strong
+              >{view.pausedAt != null
+                ? "Paused"
+                : view.production
+                  ? new Date(view.production.nextTickAt).toLocaleTimeString(
+                      "en-US",
+                      { hour: "2-digit", minute: "2-digit", timeZone: "UTC" },
+                    ) + " UTC"
+                  : "After start"}</strong
+            ></span
+          >
+        </div>
+      {/if}
+      <ActionButton
+        class="quiet"
+        onclick={() => openPanel("roster")}
+        data-focus="roster"
+        aria-expanded={roster}>Roster</ActionButton
+      ><ActionButton class="quiet" onclick={onback}>Campaigns</ActionButton>
+      <GameMenu />
+    </header>
+    {#if !roster && !expanded && !more && !history && !commandKind.startsWith("conversation.") && !economy}<div
+        class="acknowledgement"
+        inert={listing ||
+          briefingOpen ||
+          history ||
+          contactsOpen ||
+          arrivalsOpen ||
+          conversationsOpen ||
+          economy ||
+          construction ||
+          military}
+      >
+        <Feedback
+          message={view.phase === "active" && commandKind === "campaign.join"
+            ? ""
+            : message}
+          {error}
+        />{#if onretry}<ActionButton
+            disabled={busy}
+            class="secondary"
+            onclick={onretry}
+            >{pending ? "Retry order" : "Reconnect"}</ActionButton
+          >{/if}
       </div>{/if}
-    <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This bounded intelligence panel owns its keyboard scrolling.) -->
     <div
-      class="system-details"
-      role="region"
-      aria-label="System details"
+      class="chart"
+      data-galaxy-viewport
+      inert={more ||
+        roster ||
+        listing ||
+        briefingOpen ||
+        history ||
+        contactsOpen ||
+        arrivalsOpen ||
+        conversationsOpen ||
+        economy ||
+        construction ||
+        military}
+      aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
+    >
+      {#if view.fleetContactsEnabled}<p class="contact-legend">
+          {historyLoading
+            ? "Recovering contact records…"
+            : "Contact markers show acquired positions from loaded records."}
+        </p>{/if}
+      <Canvas renderMode="on-demand"
+        ><Scene
+          fleets={Object.fromEntries(
+            view.stars.map((s) => [
+              s.id,
+              view.military?.fleets.filter(
+                (f) => f.starId === s.id && f.travel?.status !== "traveling",
+              ).length ?? 0,
+            ]),
+          )}
+          travelers={(view.military?.fleets ?? [])
+            .filter((f) => f.travel?.status === "traveling")
+            .map((f) => ({
+              id: f.id,
+              number: f.number,
+              ...fleetPosition(f, view.stars, view.production?.tick ?? 0),
+            }))}
+          onfleet={(id) => {
+            selectedFleet = id;
+            void openPanel("military");
+          }}
+          {contacts}
+          stars={view.stars}
+          owned={view.holdings.map((h) => h.starId)}
+          home={view.own.home ?? ""}
+          selected={star.id}
+          {stellarClass}
+          {cameraRequest}
+          onselect={(id) => (selected = id)}
+        /></Canvas
+      >
+    </div>
+    <aside
+      inert={more ||
+        roster ||
+        listing ||
+        briefingOpen ||
+        history ||
+        contactsOpen ||
+        arrivalsOpen ||
+        conversationsOpen ||
+        economy ||
+        construction ||
+        military}
+      class="system-inspector"
+      class:observing={observation}
+      class:expanded
+      class:active={view.phase === "active"}
+      aria-label="Selected system"
+    >
+      <p class="overline gold">{star.class}-class star</p>
+      <h2 bind:this={inspectorHeading} tabindex="-1">
+        <Icon kind="star" />
+        {star.name}
+      </h2>
+      {#if expanded}<div class="observation-access">
+          <ActionButton
+            class="quiet"
+            aria-pressed={observation}
+            onclick={() => (observation = !observation)}
+            >{observation ? "Return to system" : "Observation"}</ActionButton
+          >
+        </div>{/if}
+      <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This bounded intelligence panel owns its keyboard scrolling.) -->
+      <div
+        class="system-details"
+        role="region"
+        aria-label="System details"
+        onkeydown={(event) => {
+          if (
+            event.target !== event.currentTarget ||
+            event.altKey ||
+            event.ctrlKey ||
+            event.metaKey ||
+            event.shiftKey
+          )
+            return;
+          if (event.key === "End" || event.key === "Home") {
+            event.preventDefault();
+            event.currentTarget.scrollTop =
+              event.key === "End" ? event.currentTarget.scrollHeight : 0;
+          }
+        }}
+        tabindex="0"
+      >
+        {#if observation}<SystemObservation
+            {view}
+            starId={star.id}
+          />{:else if expanded}
+          <SystemLayers
+            {holding}
+            bind:selected={selectedLayer}
+            pending={busy || pending}
+            onbuild={view.productionEnabled && onbuild ? buildLayer : undefined}
+          />
+        {:else}
+          <WorldArt />
+          <p>
+            {view.phase === "active"
+              ? "Your knowledge of this system"
+              : "Awaiting home assignment."}
+          </p>
+          <dl>
+            <div>
+              <dt>Orbit</dt>
+              <dd>{holding?.orbit ?? "Unknown"}</dd>
+            </div>
+            <div>
+              <dt>Surface</dt>
+              <dd>{holding?.surface ?? "Unknown"}</dd>
+            </div>
+          </dl>
+        {/if}
+      </div>
+      <div class="system-actions">
+        {#if expanded}
+          <ActionButton class="secondary back-to-chart" onclick={collapseSystem}
+            >Back to galaxy</ActionButton
+          >
+          {#if view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
+              class="view-forces"
+              data-focus="military"
+              aria-expanded={military}
+              onclick={() => openPanel("military")}
+              ><FleetSymbol /> View forces</ActionButton
+            >{/if}
+        {:else}<ActionButton
+            class="inspect-system"
+            aria-expanded={false}
+            onclick={inspectSystem}>Inspect system</ActionButton
+          >{/if}
+      </div>
+    </aside>
+    <!-- svelte-ignore a11y_no_noninteractive_element_interactions (Delegated Escape closes the command tray from its real buttons.) -->
+    <nav
+      class="command-dock"
+      aria-label="Galaxy commands"
       onkeydown={(event) => {
-        if (
-          event.target !== event.currentTarget ||
-          event.altKey ||
-          event.ctrlKey ||
-          event.metaKey ||
-          event.shiftKey
-        )
-          return;
-        if (event.key === "End" || event.key === "Home") {
+        if (event.key === "Escape" && more) {
           event.preventDefault();
-          event.currentTarget.scrollTop =
-            event.key === "End" ? event.currentTarget.scrollHeight : 0;
+          more = false;
+          document
+            .querySelector<HTMLButtonElement>('[data-focus="more"]')
+            ?.focus();
         }
       }}
-      tabindex="0"
+      inert={roster ||
+        listing ||
+        briefingOpen ||
+        history ||
+        contactsOpen ||
+        arrivalsOpen ||
+        conversationsOpen ||
+        economy ||
+        construction ||
+        military}
     >
-      {#if observation}<SystemObservation
+      <div class="dock-primary">
+        <ActionButton
+          class="quiet"
+          onclick={() => {
+            expanded = false;
+            observation = false;
+            more = false;
+          }}>Galaxy</ActionButton
+        >
+        <ActionButton
+          class="quiet"
+          aria-expanded={more}
+          data-focus="more"
+          aria-controls="galaxy-destinations"
+          onclick={() => (more = !more)}>More</ActionButton
+        >
+      </div>
+      <div id="galaxy-destinations" class="dock-destinations" class:open={more}>
+        <ActionButton
+          class="secondary"
+          onclick={() => openPanel("systems")}
+          data-focus="systems-list"
+          aria-expanded={listing}
+          ><CommandIcon kind="systems" /> Systems list</ActionButton
+        >
+        {#if loadHistory && onconversation}<ActionButton
+            class="secondary"
+            data-focus="conversations"
+            aria-expanded={conversationsOpen}
+            onclick={() => openPanel("conversations")}
+            ><CommandIcon kind="conversations" /> Conversations{#if view.conversations?.some((r) => r.invited || r.unread)}{" · New"}{/if}</ActionButton
+          >{/if}
+        {#if loadHistory}<ActionButton
+            class="secondary"
+            data-focus="arrivals"
+            aria-expanded={arrivalsOpen}
+            onclick={() => openPanel("arrivals")}
+            ><CommandIcon kind="arrivals" /> Arrival reports</ActionButton
+          ><ActionButton
+            class="secondary"
+            data-focus="contacts"
+            aria-expanded={contactsOpen}
+            onclick={() => openPanel("contacts")}
+            ><CommandIcon kind="contacts" /> Fleet contacts</ActionButton
+          ><ActionButton
+            class="secondary"
+            data-focus="history"
+            aria-expanded={history}
+            onclick={() => openPanel("history")}
+            ><CommandIcon kind="history" /> History</ActionButton
+          >{/if}
+        <ActionButton
+          class="secondary"
+          data-focus="economy"
+          aria-expanded={economy}
+          onclick={() => openPanel("economy")}
+          ><CommandIcon kind="economy" /> Economy</ActionButton
+        >
+      </div>
+    </nav>
+    {#if conversationsOpen && onconversation}<div
+        class="construction-panel contact-panel history-panel"
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        aria-label="Conversations panel"
+        onkeydown={panelKeys}
+      >
+        <Conversations
+          feedbackKind={commandKind}
+          {view}
+          {messages}
+          bind:selected={selectedRoom}
+          bind:drafts={conversationDrafts}
+          bind:title={conversationTitle}
+          draftReady={!accountId ||
+            draftReadyRoom === draftRoom ||
+            !draftAllowed}
+          draftSaving={draftSaving ||
+            (!!accountId &&
+              draftReadyRoom === draftRoom &&
+              draftText !== draftSavedText &&
+              !draftError)}
+          {draftError}
+          {draftConflict}
+          draftSaved={!!accountId &&
+            draftReadyRoom === draftRoom &&
+            draftText === draftSavedText &&
+            !!draftText}
+          onretryDraft={accountId
+            ? () => (draftReadyRoom === draftRoom ? storeDraft() : loadDraft())
+            : undefined}
+          onuseSavedDraft={() => resolveDraft(false)}
+          onreplaceDraft={() => resolveDraft(true)}
+          pending={pending && commandKind.startsWith("conversation.")}
+          {busy}
+          message={commandKind.startsWith("conversation.") &&
+          (commandRoomId === selectedRoom ||
+            (commandKind === "conversation.create" &&
+              conversationReceipt?.roomId === selectedRoom))
+            ? message
+            : ""}
+          error={commandKind.startsWith("conversation.") &&
+          (commandRoomId === selectedRoom ||
+            (commandKind === "conversation.create" &&
+              conversationReceipt?.roomId === selectedRoom))
+            ? error
+            : ""}
+          loading={historyLoading}
+          {historyError}
+          earlier={!!cursor}
+          newer={!!records.length && records[0].revision < view.revision}
+          oncommand={onconversation}
+          onearlier={() => readHistory(cursor)}
+          onlatest={() => readHistory()}
+          onretryHistory={() => readHistory(retryCursor)}
+          {onretry}
+          onclose={closeConversations}
+        />
+      </div>{/if}
+    {#if arrivalsOpen}<div
+        class="construction-panel contact-panel history-panel"
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        aria-label="Arrival reports panel"
+        onkeydown={panelKeys}
+      >
+        <ArrivalReports
+          records={arrivals}
+          bind:selected={selectedArrival}
+          loading={historyLoading}
+          error={historyError}
+          earlier={!!cursor}
+          newer={!!records.length && records[0].revision < view.revision}
+          onearlier={() => readHistory(cursor)}
+          onlatest={() => readHistory()}
+          onretry={() => readHistory(retryCursor)}
+          onclose={closeArrivals}
+          oninspect={inspectArrival}
+        />
+      </div>{/if}
+    {#if contactsOpen}<div
+        class="construction-panel contact-panel history-panel"
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        aria-label="Fleet contacts panel"
+        onkeydown={panelKeys}
+      >
+        <FleetContacts
+          {view}
+          {contacts}
+          bind:selected={selectedContact}
+          loading={historyLoading}
+          error={historyError}
+          earlier={!!cursor}
+          newer={!!records.length && records[0].revision < view.revision}
+          onearlier={() => readHistory(cursor)}
+          onlatest={() => readHistory()}
+          onretry={() => readHistory(retryCursor)}
+          onclose={closeContacts}
+        />
+      </div>{/if}
+    {#if military}<div
+        class="construction-panel fleet-panel"
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        aria-label="Fleet preparation panel"
+        onkeydown={panelKeys}
+      >
+        <SystemFleets
+          bind:selected={selectedFleet}
+          bind:routeDrafts
+          {recoveredFleet}
+          {commandKind}
+          {commandFleetId}
           {view}
           starId={star.id}
-        />{:else if expanded}
-        <SystemLayers
-          {holding}
-          bind:selected={selectedLayer}
-          pending={busy || pending}
-          onbuild={view.productionEnabled && onbuild ? buildLayer : undefined}
-        />
-      {:else}
-        <WorldArt />
-        <p>
-          {view.phase === "active"
-            ? "Your knowledge of this system"
-            : "Awaiting home assignment."}
-        </p>
-        <dl>
-          <div>
-            <dt>Orbit</dt>
-            <dd>{holding?.orbit ?? "Unknown"}</dd>
-          </div>
-          <div>
-            <dt>Surface</dt>
-            <dd>{holding?.surface ?? "Unknown"}</dd>
-          </div>
-        </dl>
-      {/if}
-    </div>
-    <div class="system-actions">
-      {#if expanded}
-        <ActionButton class="secondary back-to-chart" onclick={collapseSystem}
-          >Back to galaxy</ActionButton
-        >
-        {#if view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
-            class="view-forces"
-            data-focus="military"
-            aria-expanded={military}
-            onclick={() => openPanel("military")}
-            ><FleetSymbol /> View forces</ActionButton
-          >{/if}
-      {:else}<ActionButton
-          class="inspect-system"
-          aria-expanded={false}
-          onclick={inspectSystem}>Inspect system</ActionButton
-        >{/if}
-    </div>
-  </aside>
-  <!-- svelte-ignore a11y_no_noninteractive_element_interactions (Delegated Escape closes the command tray from its real buttons.) -->
-  <nav
-    class="command-dock"
-    aria-label="Galaxy commands"
-    onkeydown={(event) => {
-      if (event.key === "Escape" && more) {
-        event.preventDefault();
-        more = false;
-        document
-          .querySelector<HTMLButtonElement>('[data-focus="more"]')
-          ?.focus();
-      }
-    }}
-    inert={roster ||
-      listing ||
-      briefingOpen ||
-      history ||
-      contactsOpen ||
-      arrivalsOpen ||
-      conversationsOpen ||
-      economy ||
-      construction ||
-      military}
-  >
-    <div class="dock-primary">
-      <ActionButton
-        class="quiet"
-        onclick={() => {
-          expanded = false;
-          observation = false;
-          more = false;
-        }}>Galaxy</ActionButton
-      >
-      <ActionButton
-        class="quiet"
-        aria-expanded={more}
-        data-focus="more"
-        aria-controls="galaxy-destinations"
-        onclick={() => (more = !more)}>More</ActionButton
-      >
-    </div>
-    <div id="galaxy-destinations" class="dock-destinations" class:open={more}>
-      <ActionButton
-        class="secondary"
-        onclick={() => openPanel("systems")}
-        data-focus="systems-list"
-        aria-expanded={listing}
-        ><CommandIcon kind="systems" /> Systems list</ActionButton
-      >
-      {#if loadHistory && onconversation}<ActionButton
-          class="secondary"
-          data-focus="conversations"
-          aria-expanded={conversationsOpen}
-          onclick={() => openPanel("conversations")}
-          ><CommandIcon kind="conversations" /> Conversations{#if view.conversations?.some((r) => r.invited || r.unread)}{" · New"}{/if}</ActionButton
-        >{/if}
-      {#if loadHistory}<ActionButton
-          class="secondary"
-          data-focus="arrivals"
-          aria-expanded={arrivalsOpen}
-          onclick={() => openPanel("arrivals")}
-          ><CommandIcon kind="arrivals" /> Arrival reports</ActionButton
-        ><ActionButton
-          class="secondary"
-          data-focus="contacts"
-          aria-expanded={contactsOpen}
-          onclick={() => openPanel("contacts")}
-          ><CommandIcon kind="contacts" /> Fleet contacts</ActionButton
-        ><ActionButton
-          class="secondary"
-          data-focus="history"
-          aria-expanded={history}
-          onclick={() => openPanel("history")}
-          ><CommandIcon kind="history" /> History</ActionButton
-        >{/if}
-      <ActionButton
-        class="secondary"
-        data-focus="economy"
-        aria-expanded={economy}
-        onclick={() => openPanel("economy")}
-        ><CommandIcon kind="economy" /> Economy</ActionButton
-      >
-    </div>
-  </nav>
-  {#if conversationsOpen && onconversation}<div
-      class="construction-panel contact-panel history-panel"
-      role="dialog"
-      aria-modal="true"
-      tabindex="-1"
-      aria-label="Conversations panel"
-      onkeydown={panelKeys}
-    >
-      <Conversations
-        feedbackKind={commandKind}
-        {view}
-        {messages}
-        bind:selected={selectedRoom}
-        bind:drafts={conversationDrafts}
-        bind:title={conversationTitle}
-        draftReady={!accountId || draftReadyRoom === draftRoom || !draftAllowed}
-        draftSaving={draftSaving ||
-          (!!accountId &&
-            draftReadyRoom === draftRoom &&
-            draftText !== draftSavedText &&
-            !draftError)}
-        {draftError}
-        {draftConflict}
-        draftSaved={!!accountId &&
-          draftReadyRoom === draftRoom &&
-          draftText === draftSavedText &&
-          !!draftText}
-        onretryDraft={accountId
-          ? () => (draftReadyRoom === draftRoom ? storeDraft() : loadDraft())
-          : undefined}
-        onuseSavedDraft={() => resolveDraft(false)}
-        onreplaceDraft={() => resolveDraft(true)}
-        pending={pending && commandKind.startsWith("conversation.")}
-        {busy}
-        message={commandKind.startsWith("conversation.") &&
-        (commandRoomId === selectedRoom ||
-          (commandKind === "conversation.create" &&
-            conversationReceipt?.roomId === selectedRoom))
-          ? message
-          : ""}
-        error={commandKind.startsWith("conversation.") &&
-        (commandRoomId === selectedRoom ||
-          (commandKind === "conversation.create" &&
-            conversationReceipt?.roomId === selectedRoom))
-          ? error
-          : ""}
-        loading={historyLoading}
-        {historyError}
-        earlier={!!cursor}
-        newer={!!records.length && records[0].revision < view.revision}
-        oncommand={onconversation}
-        onearlier={() => readHistory(cursor)}
-        onlatest={() => readHistory()}
-        onretryHistory={() => readHistory(retryCursor)}
-        {onretry}
-        onclose={closeConversations}
-      />
-    </div>{/if}
-  {#if arrivalsOpen}<div
-      class="construction-panel contact-panel history-panel"
-      role="dialog"
-      aria-modal="true"
-      tabindex="-1"
-      aria-label="Arrival reports panel"
-      onkeydown={panelKeys}
-    >
-      <ArrivalReports
-        records={arrivals}
-        bind:selected={selectedArrival}
-        loading={historyLoading}
-        error={historyError}
-        earlier={!!cursor}
-        newer={!!records.length && records[0].revision < view.revision}
-        onearlier={() => readHistory(cursor)}
-        onlatest={() => readHistory()}
-        onretry={() => readHistory(retryCursor)}
-        onclose={closeArrivals}
-        oninspect={inspectArrival}
-      />
-    </div>{/if}
-  {#if contactsOpen}<div
-      class="construction-panel contact-panel history-panel"
-      role="dialog"
-      aria-modal="true"
-      tabindex="-1"
-      aria-label="Fleet contacts panel"
-      onkeydown={panelKeys}
-    >
-      <FleetContacts
-        {view}
-        {contacts}
-        bind:selected={selectedContact}
-        loading={historyLoading}
-        error={historyError}
-        earlier={!!cursor}
-        newer={!!records.length && records[0].revision < view.revision}
-        onearlier={() => readHistory(cursor)}
-        onlatest={() => readHistory()}
-        onretry={() => readHistory(retryCursor)}
-        onclose={closeContacts}
-      />
-    </div>{/if}
-  {#if military}<div
-      class="construction-panel fleet-panel"
-      role="dialog"
-      aria-modal="true"
-      tabindex="-1"
-      aria-label="Fleet preparation panel"
-      onkeydown={panelKeys}
-    >
-      <SystemFleets
-        bind:selected={selectedFleet}
-        bind:routeDrafts
-        {recoveredFleet}
-        {commandKind}
-        {commandFleetId}
-        {view}
-        starId={star.id}
-        {busy}
-        {pending}
-        message={commandKind.startsWith("fleet.") ? message : ""}
-        error={commandKind.startsWith("fleet.") ? error : ""}
-        onform={(fighters, infantry) => onform?.(star.id, fighters, infantry)}
-        ondisband={(id) => ondisband?.(id)}
-        onsplit={(id, fighters, infantry) => onsplit?.(id, fighters, infantry)}
-        onroute={(id, waypoints) => onroute?.(id, waypoints)}
-        oncancel={(id) => oncancelFleet?.(id)}
-        onmerge={(id, targetId) => onmerge?.(id, targetId)}
-        oncargo={(id, operation, infantry) =>
-          oncargo?.(id, operation, infantry)}
-        onclose={closeMilitary}
-        {onretry}
-      />
-    </div>{/if}
-  {#if construction}<div
-      class="construction-panel"
-      role="dialog"
-      aria-modal="true"
-      tabindex="-1"
-      aria-label="System construction panel"
-      onkeydown={panelKeys}
-    >
-      <SystemConstruction
-        bind:chosen={constructionChoice}
-        {view}
-        starId={star.id}
-        onbuild={(type) => onbuild?.(star.id, type)}
-        {oncancel}
-        onclose={closeConstruction}
-        {onretry}
-        {busy}
-        {pending}
-        message={commandKind.startsWith("construction.") ? message : ""}
-        error={commandKind.startsWith("construction.") ? error : ""}
-      />
-    </div>{/if}
-  {#if economy}<div
-      class="history-panel economy-panel"
-      class:science-panel={scienceOpen}
-      role="dialog"
-      aria-modal="true"
-      tabindex="-1"
-      aria-label="Empire economy panel"
-      onkeydown={panelKeys}
-    >
-      {#if scienceOpen}<ScienceLedger
-          {view}
-          onclose={closeEconomy}
-        />{:else}<CampaignEconomy
-          bind:researchDraft
-          bind:marketDraft
-          {view}
-          {ontrade}
-          records={[...records, ...receivedTradeViews]}
-          bind:exchanging
-          bind:tradeSelection
-          bind:tradeDraft
-          {commandId}
-          {commandOfferId}
-          onhistory={() => openPanel("history")}
-          onclose={closeEconomy}
-          {onresearch}
-          {onfocus}
-          {commandKind}
-          {message}
-          {error}
           {busy}
           {pending}
+          message={commandKind.startsWith("fleet.") ? message : ""}
+          error={commandKind.startsWith("fleet.") ? error : ""}
+          onform={(fighters, infantry) => onform?.(star.id, fighters, infantry)}
+          ondisband={(id) => ondisband?.(id)}
+          onsplit={(id, fighters, infantry) =>
+            onsplit?.(id, fighters, infantry)}
+          onroute={(id, waypoints) => onroute?.(id, waypoints)}
+          oncancel={(id) => oncancelFleet?.(id)}
+          onmerge={(id, targetId) => onmerge?.(id, targetId)}
+          oncargo={(id, operation, infantry) =>
+            oncargo?.(id, operation, infantry)}
+          onclose={closeMilitary}
           {onretry}
-        />{/if}
-    </div>{/if}
-  {#if briefingOpen && briefingSnapshot}<div
-      class="construction-panel contact-panel history-panel"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Return briefing panel"
-      tabindex="-1"
-      onkeydown={panelKeys}
-    >
-      <ReturnBriefing
-        snapshot={briefingSnapshot}
-        {records}
-        loading={historyLoading}
-        earlier={!!cursor}
-        newer={view.revision > briefingSnapshot.revision &&
-          !(pending && commandKind === "campaign.visit")}
-        pending={pending && commandKind === "campaign.visit"}
-        preparing={busy && !pending && commandKind === "campaign.visit"}
-        blocked={(pending || busy) && commandKind !== "campaign.visit"}
-        recovering={visitRecoveryRevision != null &&
-          briefingSnapshot.revision !== visitRecoveryRevision}
-        message={commandKind === "campaign.visit" && (visitRequested || pending)
-          ? message
-          : ""}
-        error={historyError ||
-          (commandKind === "campaign.visit" && (visitRequested || pending)
-            ? error
-            : "")}
-        onearlier={() => readHistory(cursor)}
-        onlatest={() => {
-          briefingSnapshot = structuredClone($state.snapshot(view));
-          void readHistory();
-        }}
-        onretry={() => (historyError ? readHistory(retryCursor) : onretry?.())}
-        oninspect={inspectBriefing}
-        onconfirm={(revision) => {
-          visitRequested = true;
-          onvisit?.(revision);
-        }}
-        onclose={closeBriefing}
-      />
-    </div>{/if}
-  {#if history}<div
-      class="history-panel"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Campaign history panel"
-      tabindex="-1"
-      onkeydown={panelKeys}
-    >
-      <CampaignHistory
-        {records}
-        loading={historyLoading}
-        error={historyError}
-        earlier={!!cursor}
-        newer={!!records.length && view.revision > records[0].revision}
-        onearlier={() => readHistory(cursor)}
-        onlatest={() => readHistory()}
-        onretry={() => readHistory(retryCursor)}
-        onbriefing={view.briefingEnabled && onvisit
-          ? () => openPanel("briefing")
-          : undefined}
-        onclose={closeHistory}
-      />
-    </div>{/if}
+        />
+      </div>{/if}
+    {#if construction}<div
+        class="construction-panel"
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        aria-label="System construction panel"
+        onkeydown={panelKeys}
+      >
+        <SystemConstruction
+          bind:chosen={constructionChoice}
+          {view}
+          starId={star.id}
+          onbuild={(type) => onbuild?.(star.id, type)}
+          {oncancel}
+          onclose={closeConstruction}
+          {onretry}
+          {busy}
+          {pending}
+          message={commandKind.startsWith("construction.") ? message : ""}
+          error={commandKind.startsWith("construction.") ? error : ""}
+        />
+      </div>{/if}
+    {#if economy}<div
+        class="history-panel economy-panel"
+        class:science-panel={scienceOpen}
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        aria-label="Empire economy panel"
+        onkeydown={panelKeys}
+      >
+        {#if scienceOpen}<ScienceLedger
+            {view}
+            onclose={closeEconomy}
+          />{:else}<CampaignEconomy
+            bind:researchDraft
+            bind:marketDraft
+            {view}
+            {ontrade}
+            records={[...records, ...receivedTradeViews]}
+            bind:exchanging
+            bind:tradeSelection
+            bind:tradeDraft
+            {commandId}
+            {commandOfferId}
+            onhistory={() => openPanel("history")}
+            onclose={closeEconomy}
+            {onresearch}
+            {onfocus}
+            {commandKind}
+            {message}
+            {error}
+            {busy}
+            {pending}
+            {onretry}
+          />{/if}
+      </div>{/if}
+    {#if briefingOpen && briefingSnapshot}<div
+        class="construction-panel contact-panel history-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Return briefing panel"
+        tabindex="-1"
+        onkeydown={panelKeys}
+      >
+        <ReturnBriefing
+          snapshot={briefingSnapshot}
+          {records}
+          loading={historyLoading}
+          earlier={!!cursor}
+          newer={view.revision > briefingSnapshot.revision &&
+            !(pending && commandKind === "campaign.visit")}
+          pending={pending && commandKind === "campaign.visit"}
+          preparing={busy && !pending && commandKind === "campaign.visit"}
+          blocked={(pending || busy) && commandKind !== "campaign.visit"}
+          recovering={visitRecoveryRevision != null &&
+            briefingSnapshot.revision !== visitRecoveryRevision}
+          message={commandKind === "campaign.visit" &&
+          (visitRequested || pending)
+            ? message
+            : ""}
+          error={historyError ||
+            (commandKind === "campaign.visit" && (visitRequested || pending)
+              ? error
+              : "")}
+          onearlier={() => readHistory(cursor)}
+          onlatest={() => {
+            briefingSnapshot = structuredClone($state.snapshot(view));
+            void readHistory();
+          }}
+          onretry={() =>
+            historyError ? readHistory(retryCursor) : onretry?.()}
+          oninspect={inspectBriefing}
+          onconfirm={(revision) => {
+            visitRequested = true;
+            onvisit?.(revision);
+          }}
+          onclose={closeBriefing}
+        />
+      </div>{/if}
+    {#if history}<div
+        class="history-panel campaign-records"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Campaign history panel"
+        tabindex="-1"
+        onkeydown={panelKeys}
+      >
+        <CampaignHistory
+          {records}
+          loading={historyLoading}
+          error={historyError}
+          earlier={!!cursor}
+          newer={!!records.length && view.revision > records[0].revision}
+          onearlier={() => readHistory(cursor)}
+          onlatest={() => readHistory()}
+          onretry={() => readHistory(retryCursor)}
+          onbriefing={view.briefingEnabled && onvisit
+            ? () => openPanel("briefing")
+            : undefined}
+          onclose={closeHistory}
+        />
+      </div>{/if}
+  {/if}
   {#if roster}<div
       class="roster-panel"
       role="dialog"
@@ -1718,6 +1746,19 @@
     width: auto;
     padding: 0;
     border: 0;
+  }
+  .history-panel.campaign-records {
+    top: max(80px, calc(var(--command-rail-height) + 8px));
+  }
+  @media (min-width: 2400px) {
+    .history-panel.campaign-records {
+      top: max(130px, calc(var(--command-rail-height) + 8px));
+    }
+  }
+  @media (max-width: 700px) {
+    .history-panel.campaign-records {
+      top: max(66px, calc(var(--command-rail-height) + 8px));
+    }
   }
   .roster-panel {
     position: absolute;
@@ -2159,7 +2200,7 @@
     color: #f1f6ef;
   }
   .chart {
-    inset: 58px 19% 80px 0;
+    inset: max(58px, var(--command-rail-height)) 19% 80px 0;
   }
   @media (min-width: 2500px) {
     .system-inspector {
@@ -2187,7 +2228,7 @@
       padding-inline: 24px;
     }
     .chart {
-      top: 90px;
+      top: max(90px, var(--command-rail-height));
       bottom: 120px;
     }
   }
@@ -2222,7 +2263,7 @@
       padding-inline: 7px;
     }
     .chart {
-      inset: 110px 0 calc(44svh + 82px) 0;
+      inset: max(110px, var(--command-rail-height)) 0 calc(44svh + 82px) 0;
     }
     .before-start .chart {
       top: 58px;

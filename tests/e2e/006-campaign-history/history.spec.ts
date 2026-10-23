@@ -1,23 +1,27 @@
-import { openGalaxyCommand } from "./galaxy-navigation";
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { login, grantDeveloper } from "./helpers";
+import { activeAdmissionControls } from "../helpers/campaign-phase";
+import { admissionAt } from "../../browser/story-helpers/admission-clock.mjs";
+import { openGalaxyCommand } from "../../browser/galaxy-navigation";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { login, grantDeveloper } from "../../browser/helpers";
 
 test("Recover saved campaign records without losing your place", async ({
   page,
   context,
+  browser,
+  request,
 }, info) => {
   const story = new TestStepHelper(info, {
     id: "campaign-history",
     title: "Recover saved campaign records without losing your place",
     inventory: ["UX-12", "UX-14", "UX-16"],
     description:
-      "History envoy returns to a waiting development campaign, reads beyond the first page, receives another device’s changes without forced scrolling, explicitly recovers latest records, and restores the same selected system. Setup uses real UI and services with a test-only fixed catalogue input; keys, commands and persistence remain real.",
+      "History envoy returns to a active development campaign, reads beyond the first page, receives another device’s changes without forced scrolling, explicitly recovers latest records, and restores the same selected system. Setup uses real UI and services with a test-only fixed catalogue input; keys, commands and persistence remain real.",
   });
   const email = `story-history-${info.project.name}@example.test`;
   await story.harness(
     "prepare-history",
-    "Prepare a fixed-catalogue waiting campaign through ordinary sign-in/create/join UI, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling.",
+    "Prepare a fixed-catalogue campaign through four ordinary sign-in/create/join admissions and labelled demo scheduler delivery, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling.",
     [
       {
         description:
@@ -45,9 +49,10 @@ test("Recover saved campaign records without losing your place", async ({
           await page
             .getByRole("button", { name: "Create campaign", exact: true })
             .click();
+          await page.clock.setFixedTime(admissionAt);
           await page
             .getByLabel("Campaign name")
-            .fill(`History ${info.project.name}`);
+            .fill(`Scheduled story history ${info.project.name}`);
           await page
             .getByRole("button", { name: "Create galaxy", exact: true })
             .click();
@@ -57,6 +62,12 @@ test("Recover saved campaign records without losing your place", async ({
           await expect(
             page.getByText("Your seat is confirmed.", { exact: true }),
           ).toBeVisible();
+        },
+      },
+      ...activeAdmissionControls(browser, request, page, info),
+      {
+        description: "Open acknowledged active campaign host controls.",
+        run: async () => {
           await page
             .getByRole("button", { name: "Roster", exact: true })
             .click();
@@ -66,7 +77,7 @@ test("Recover saved campaign records without losing your place", async ({
       ...Array.from({ length: 12 }, (_, i) => {
         const pause = i % 2 === 0;
         return {
-          description: `Acknowledge history setup command ${i + 1}: ${pause ? "pause" : "resume"} the waiting campaign.`,
+          description: `Acknowledge history setup command ${i + 1}: ${pause ? "pause" : "resume"} the active campaign.`,
           run: async () => {
             await page
               .getByRole("button", {
@@ -75,9 +86,15 @@ test("Recover saved campaign records without losing your place", async ({
               })
               .click();
             await expect(
-              page.getByRole("status").filter({
-                hasText: pause ? /^Campaign paused\./ : /^Campaign resumed\./,
-              }),
+              page
+                .getByRole("dialog", {
+                  name: "Campaign roster panel",
+                  exact: true,
+                })
+                .getByRole("status")
+                .filter({
+                  hasText: pause ? /^Campaign paused\./ : /^Campaign resumed\./,
+                }),
             ).toHaveText(
               pause
                 ? "Campaign paused. Admissions and scheduled start are stopped."
@@ -108,16 +125,58 @@ test("Recover saved campaign records without losing your place", async ({
       name: "Since your last visit",
       exact: true,
     });
+  const closeCommandTray = {
+    spec: "After History restores its opener, Escape dismisses the phone command tray and restores More before reading the selected system.",
+    check: async () => {
+      const more = page.getByRole("button", { name: "More", exact: true });
+      if (
+        (await more.isVisible()) &&
+        (await more.getAttribute("aria-expanded")) === "true"
+      ) {
+        await page.keyboard.press("Escape");
+        await expect(more).toBeFocused();
+        await expect(more).toHaveAttribute("aria-expanded", "false");
+      }
+    },
+  };
   const view = () => ({
     page,
     player: "History envoy — reading device",
     surface: "game" as const,
     primary: [back],
+    verifications: [
+      {
+        spec: "The prior acknowledged resume is not clipped behind the history reader.",
+        check: async () => {
+          await expect(
+            page.getByText("Campaign resumed.", { exact: true }),
+          ).toHaveCount(0);
+        },
+      },
+      {
+        spec: "The bounded history panel leaves the entire factual resource rail readable above it, without clipped background text.",
+        check: async () => {
+          await expect
+            .poll(async () => {
+              const rail = await page.locator(".command-rail").boundingBox();
+              const panel = await tray.boundingBox();
+              return rail && panel ? panel.y - (rail.y + rail.height) : -1;
+            })
+            .toBeGreaterThanOrEqual(8);
+        },
+      },
+    ],
   });
   await story.step("open-records", {
     actor: "History envoy",
-    description: "Open ten saved records with the return control visible.",
-    action: async () => openGalaxyCommand(page, "History"),
+    description:
+      "Open history and explicitly load latest records after the acknowledged maintenance commands, with the return control visible.",
+    action: async () => {
+      await openGalaxyCommand(page, "History");
+      await tray
+        .getByRole("button", { name: "Latest records", exact: true })
+        .click();
+    },
     acknowledgement: {
       spec: "Ten authorized records finish loading.",
       check: async () => expect(tray.locator("summary")).toHaveCount(10),
@@ -161,10 +220,10 @@ test("Recover saved campaign records without losing your place", async ({
   });
   await story.step("inspect-record", {
     actor: "History envoy",
-    description: "Expand record 14 to read the saved roster.",
+    description: "Expand record 18 to read the saved roster.",
     action: async () =>
       tray
-        .getByRole("group", { name: "Campaign record 14", exact: true })
+        .getByRole("group", { name: "Campaign record 18", exact: true })
         .locator("summary")
         .click(),
     acknowledgement: {
@@ -172,7 +231,7 @@ test("Recover saved campaign records without losing your place", async ({
       check: async () =>
         expect(
           tray
-            .getByRole("group", { name: "Campaign record 14", exact: true })
+            .getByRole("group", { name: "Campaign record 18", exact: true })
             .getByText("History envoy", { exact: true }),
         ).toBeVisible(),
     },
@@ -192,8 +251,8 @@ test("Recover saved campaign records without losing your place", async ({
         .getByRole("button", { name: "Earlier records", exact: true })
         .click(),
     acknowledgement: {
-      spec: "Thirteen member-accessible records are available.",
-      check: async () => expect(tray.locator("summary")).toHaveCount(13),
+      spec: "Seventeen member-accessible records are available.",
+      check: async () => expect(tray.locator("summary")).toHaveCount(17),
     },
     verifications: [
       {
@@ -231,12 +290,15 @@ test("Recover saved campaign records without losing your place", async ({
       spec: "The host command is acknowledged as paused.",
       check: async () =>
         expect(
-          second.getByRole("status").filter({ hasText: /^Campaign paused\./ }),
+          second
+            .getByRole("dialog", { name: "Campaign roster panel", exact: true })
+            .getByRole("status")
+            .filter({ hasText: /^Campaign paused\./ }),
         ).toBeVisible(),
     },
     verifications: [
       {
-        spec: "The reading device signals new records without replacing its thirteen records or scrolling.",
+        spec: "The reading device signals new records without replacing its seventeen records or scrolling.",
         check: async () => {
           await expect(
             tray.getByRole("button", {
@@ -245,7 +307,7 @@ test("Recover saved campaign records without losing your place", async ({
             }),
           ).toBeAttached();
           expect(await records.evaluate((el) => el.scrollTop)).toBe(position);
-          await expect(tray.locator("summary")).toHaveCount(13);
+          await expect(tray.locator("summary")).toHaveCount(17);
         },
       },
     ],
@@ -263,17 +325,17 @@ test("Recover saved campaign records without losing your place", async ({
   });
   await story.step("recover-latest", {
     actor: "History envoy — reading device",
-    description: "Choose latest records and recover acknowledged revision 15.",
+    description: "Choose latest records and recover acknowledged revision 19.",
     action: async () =>
       tray.getByRole("button", { name: "Latest records", exact: true }).click(),
     acknowledgement: {
-      spec: "Record 15 is present from persisted campaign history.",
+      spec: "Record 19 is present from persisted campaign history.",
       check: async () =>
         expect(
           tray
-            .getByRole("group", { name: "Campaign record 15", exact: true })
+            .getByRole("group", { name: "Campaign record 19", exact: true })
             .locator("summary"),
-        ).toContainText("Record 15"),
+        ).toContainText("Record 19"),
     },
     verifications: [
       {
@@ -336,11 +398,11 @@ test("Recover saved campaign records without losing your place", async ({
       },
       verifications: [
         {
-          spec: "Revision 15 remains the acknowledged latest record.",
+          spec: "Revision 19 remains the acknowledged latest record.",
           check: async () =>
             expect(
               tray.getByRole("group", {
-                name: "Campaign record 15",
+                name: "Campaign record 19",
                 exact: true,
               }),
             ).toBeAttached(),
@@ -362,6 +424,15 @@ test("Recover saved campaign records without losing your place", async ({
         ).toBeFocused(),
     },
     verifications: [
+      closeCommandTray,
+      {
+        spec: "Closing history restores the prior acknowledged command feedback without rewriting its outcome.",
+        check: async () => {
+          await expect(
+            page.getByText("Campaign resumed.", { exact: true }),
+          ).toBeVisible();
+        },
+      },
       {
         spec: "System selection survives reading history.",
         check: async () =>
@@ -378,7 +449,12 @@ test("Recover saved campaign records without losing your place", async ({
         page,
         player: "History envoy",
         surface: "game",
-        primary: [page.getByRole("button", { name: "History", exact: true })],
+        primary: [
+          page.getByRole("button", {
+            name: info.project.name === "phone" ? "More" : "History",
+            exact: true,
+          }),
+        ],
       },
     ],
   });
@@ -390,13 +466,13 @@ test("Recover saved campaign records without losing your place", async ({
       await openGalaxyCommand(page, "History");
     },
     acknowledgement: {
-      spec: "Persisted record 15 is recovered after reload.",
+      spec: "Persisted record 19 is recovered after reload.",
       check: async () =>
         expect(
           tray
-            .getByRole("group", { name: "Campaign record 15", exact: true })
+            .getByRole("group", { name: "Campaign record 19", exact: true })
             .locator("summary"),
-        ).toContainText("Record 15"),
+        ).toContainText("Record 19"),
     },
     verifications: [
       {
@@ -420,6 +496,7 @@ test("Recover saved campaign records without losing your place", async ({
       },
     },
     verifications: [
+      closeCommandTray,
       {
         spec: "The selected system still matches the previous visit.",
         check: async () =>
@@ -436,7 +513,12 @@ test("Recover saved campaign records without losing your place", async ({
         page,
         player: "History envoy",
         surface: "game",
-        primary: [page.getByRole("button", { name: "History", exact: true })],
+        primary: [
+          page.getByRole("button", {
+            name: info.project.name === "phone" ? "More" : "History",
+            exact: true,
+          }),
+        ],
       },
     ],
   });

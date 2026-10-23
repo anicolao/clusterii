@@ -1,7 +1,8 @@
-import { observeDeparture } from "./story-helpers/campaign-departure";
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { login, grantDeveloper } from "./helpers";
+import { expectWaitingSeat } from "../helpers/campaign-phase";
+import { observeDeparture } from "../../browser/story-helpers/campaign-departure";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { login, grantDeveloper } from "../../browser/helpers";
 import type { Page } from "@playwright/test";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -194,7 +195,7 @@ for (const managed of [false, true]) {
           await expect(
             page.getByText("Your seat is confirmed.", { exact: true }),
           ).toBeVisible();
-          await expect(page.locator("canvas")).toBeVisible();
+          await expectWaitingSeat(page, "Cipher envoy", 1);
           await expect(button(page, "Roster")).toBeVisible();
         },
       },
@@ -207,16 +208,29 @@ for (const managed of [false, true]) {
         "Reload the exact campaign and open its roster using recovered authenticated member delivery.",
       action: async () => {
         await page.reload();
-        await expect(page.locator("canvas")).toBeVisible();
+        await expectWaitingSeat(page, "Cipher envoy", 1);
         await button(page, "Roster").click();
       },
       acknowledgement: {
         spec: "The recovered roster identifies the saved commander and offers seat release.",
         check: async () => {
           await expect(
-            page.getByText("Cipher envoy", { exact: true }),
+            page
+              .getByRole("dialog", {
+                name: "Campaign roster panel",
+                exact: true,
+              })
+              .getByRole("region", { name: "Campaign roster", exact: true })
+              .getByText("Cipher envoy", { exact: true }),
           ).toBeVisible();
-          await expect(button(page, "Leave campaign")).toBeVisible();
+          await expect(
+            page
+              .getByRole("dialog", {
+                name: "Campaign roster panel",
+                exact: true,
+              })
+              .getByRole("button", { name: "Leave campaign", exact: true }),
+          ).toBeVisible();
         },
       },
       verifications: [
@@ -232,7 +246,11 @@ for (const managed of [false, true]) {
       actor: "Cipher envoy",
       description:
         "Leave the waiting campaign and wait for the matching authoritative acknowledgement.",
-      action: async () => button(page, "Leave campaign").click(),
+      action: async () =>
+        page
+          .getByRole("dialog", { name: "Campaign roster panel", exact: true })
+          .getByRole("button", { name: "Leave campaign", exact: true })
+          .click(),
       acknowledgement: {
         spec: "The service acknowledges seat release.",
         check: async () =>

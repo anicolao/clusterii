@@ -1,0 +1,30 @@
+{
+  "source": "6f5c88b",
+  "environment": "nix develop /tmp/pantheon-nix-env; Java21, Node24.18.0, Bun1.3.13; Darwin ARM64",
+  "spec": "tests/browser/zero-science.story.spec.ts",
+  "specSha256": "97d90864f60409545aaca85698658062031f9c851d8c6d421df742c9e1fdffff",
+  "preflightFreeKiB": 21282032,
+  "portsChecked": [
+    4173,
+    19099,
+    19000,
+    18080,
+    15001,
+    14400
+  ],
+  "mode": "generate; CLUSTER_SETTLEMENT_TIMING=1; one phone project; retries0/max-failures1",
+  "browserTestsStarted": 0,
+  "ticksObserved": 0,
+  "images": 0,
+  "timingFileProduced": false,
+  "logs": [
+    {
+      "path": "startup.log",
+      "sha256": "a18cf112ce87dc6319b99f3110ef25494e16f6b34d29c57759e7e78fecb04190"
+    },
+    {
+      "path": "firestore.log",
+      "sha256": "11a64130f887b388c2e521eb5a730f6739d28f089e14f89531a9360c14ed24b4"
+    }
+  ]
+}
