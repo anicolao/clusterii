@@ -733,3 +733,4 @@ Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | 
 Prompt 136 | d8ebb267653a11e11ed2158f182c120dba6b0fda69da70f25cc5d0ac3f3d199e | Retain 48 corrected focus and waiting-rail candidates with four-size generation and separately scoped normal-motion evidence
 Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | Preserve earned-rate failure evidence and correct exact label spacing and resource-panel containment before scoped verification
 Prompt 137 | fd4ce76ee05f9ce45af039f64ab9efed5be27a4c3c6fe3f394ef43af430ff964 | Archive four passing real science-rate journeys and 24 unapproved candidates with service privacy and settlement evidence
+Prompt 138 | e6016a136dfbb1af180bc6253b3b07965c7a781c9224ed58ab7d7f6e6c1eb381 | Implement the real bounded waiting manifest and prepare feature-local admission recovery evidence.
