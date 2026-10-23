@@ -1,0 +1,9 @@
+# Authenticated zero-science candidates
+
+Clean ce90816e: desktop31.4s, large54.9s, short27.0s;3 journeys pass2.0m,42 original Darwin candidates. Separate fresh candidate/trace roots; no FAILED.json and every passed manifest checked against source/dirty status. Original budgets/retries0/max-failures1 unchanged. No baseline promotion. Older phone5509821f is not this source or new authorization evidence.
+
+Four actors resolve by unique real login email with distinct UID/matching-seat checks. Authenticated SDK sessions use real Firestore rules and campaignKey grants, replacing administrative private reads. Repeated ordinary-owner reads succeed and peer-private reads reject permission-denied through actual formation/travel/orbital loss/reload. Canonical admin reads only corroborate harness ticks/forces. This does not certify hosted/KMS or every authorization lifecycle.
+
+Original33c9fb86 desktop failed at final focused Economy corner hit (contained:true,hits:false);13 partial frames/trace preserved separately. Shared8px-radius command shape excludes the preserved1px corner test positions; square edges align the actual hit surface with the phone instrument. All original corner/containment assertions now pass in remaining sizes; control-shape visual review remains open. No test tolerance/deadline changed.
+
+Author inspected desktop026 opener, short022/025/026 and large025 plus native1200×1400 crop for readable forecast. Not whole42-image independent design approval. Shared gallery/lab and current-source phone/normal-motion visual checks remain separate. Historical CI100-tick cause unresolved; local timing files are not failing-environment evidence. Existing bounded probe enabled for future CI verification only; no manual broad rerun. Linux/hosted/current-head CI/preview/release gates remain. No merge.
