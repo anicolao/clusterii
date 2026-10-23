@@ -790,3 +790,5 @@ Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | 
 Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Record the output-directory loss and correct accepted-state heading plus editor keyboard ownership before isolated final evidence.
 
 Prompt 148 | 3abe91efb64f8752a33b308f55478d8403085731b628b06f154c213509022825 | Archive76 final source-paired route candidates and passing unchanged regressions; preserve prior evidence loss and review gates.
+
+Prompt 149 | 5666f7692e0b368b268f99472292a2ce83381db234465930181a0aabf9c67744 | Retain96 source-paired focus-clearance and manifest-reading candidates with all four-size journeys passing and review gates open.

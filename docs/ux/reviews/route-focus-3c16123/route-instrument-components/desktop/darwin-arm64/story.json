@@ -1,0 +1,81 @@
+{
+  "id": "route-instrument-components",
+  "title": "Inspect the actual route instrument",
+  "inventory": [
+    "UX-08",
+    "UX-16"
+  ],
+  "description": "Actual shared FleetRoute in reducer-derived gallery/lab scenarios. These are explicit component examples, not authenticated command acceptance. Live acceptance is the companion forces story.",
+  "source": {
+    "commit": "3c161232b6cf4da7baf18c26d8956aeb2ee46f6e",
+    "dirty": false,
+    "spec": "tests/e2e/009-route-forces/components.spec.ts",
+    "specSha256": "504a59eddebd991a74f40fa84a676e4b76fe08f9db78bd70815184ad93e1437c"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "review-gallery-route",
+      "description": "Read the real route scene and shared force instrument in its gallery container.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The actual component exposes current capacity and a real editable route.",
+      "verifications": [
+        "The named route chart is bounded by its specimen and has positive usable height."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "001-review-gallery-route-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-accepted-lab",
+      "description": "Select the existing travel scenario and inspect its accepted frame without replacing production state.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "Both shared comparison panels report the same accepted route and departure tick.",
+      "verifications": [
+        "Accepted frames disable duplicate dispatch in both actual shared components."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "002-inspect-accepted-lab-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
