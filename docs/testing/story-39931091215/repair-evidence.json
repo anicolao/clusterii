@@ -1,0 +1,1838 @@
+{
+  "review": "Candidates only; no baseline approval or promotion. Includes retained failed partials.",
+  "runs": [
+    {
+      "root": "/tmp/cluster117-navigation-cb2fe38-phone-result",
+      "log": "/tmp/cluster117-navigation-cb2fe38-phone.log",
+      "logSha256": "b8c4c9cf9e8474e914447c5dfd8c397236e08ff0b1dde4b0824a9521500fc1af",
+      "passedStories": [
+        {
+          "story": "encryption-unavailable",
+          "project": "phone",
+          "source": {
+            "commit": "cb2fe38ba1d37fdf56623b246f6b3210ef90124a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/encryption.spec.ts",
+            "specSha256": "698cc234d3edbd5d58d86108aa71edee6d1201670229e966a8af21976c54d056"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-cb2fe38-phone-result/encryption-unavailable/phone/darwin-arm64/story.json",
+          "sha256": "807c00a6fe7bda031fee7d02cba1ffa2365c18f8a43c6fceae43e7594ab06764"
+        },
+        {
+          "story": "invitation-first-admission",
+          "project": "phone",
+          "source": {
+            "commit": "cb2fe38ba1d37fdf56623b246f6b3210ef90124a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "a1a09d2b993503fa2a9ed25ac312faf0efa9f60eaf5c24dcb528bd03bb551a2a"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-cb2fe38-phone-result/invitation-first-admission/phone/darwin-arm64/story.json",
+          "sha256": "0afc0d543f7e7a8c675e6633165a7daa03534cbffd99bbd2f1e9a64b6bf7f94c"
+        }
+      ],
+      "images": [
+        {
+          "path": "encryption-unavailable/phone/darwin-arm64/002-review-provider-1-cipher-envoy.png",
+          "sha256": "5c9ad512ce8284cc26e93beaf449aea4e382f2f2679efb501ff21e7a57132c80"
+        },
+        {
+          "path": "encryption-unavailable/phone/darwin-arm64/003-created-campaign-1-cipher-envoy.png",
+          "sha256": "a0f4f54eaba6b5d9170714ae762e3a1ee863e6a6e4480bcce02ccf262df5b35e"
+        },
+        {
+          "path": "encryption-unavailable/phone/darwin-arm64/004-claimed-seat-1-cipher-envoy.png",
+          "sha256": "07140e37b63a30aef980e0999e916760e25f470958854704cba6dca772b6283d"
+        },
+        {
+          "path": "encryption-unavailable/phone/darwin-arm64/005-recovered-seat-1-cipher-envoy.png",
+          "sha256": "da04db7c8bb38caf0e9bf2a6421e3ac570fec6dbc0d3f02c2226375cd078621d"
+        },
+        {
+          "path": "encryption-unavailable/phone/darwin-arm64/006-released-seat-1-cipher-envoy.png",
+          "sha256": "b236821f9538a7d89e2b64ac34c1d6ae5c6ce2147aacf46ecb96047c83f7b84a"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/002-open-invitation-1-invited-envoy.png",
+          "sha256": "974d6765e2645b076f1757ef62a6ec3313e1be2f5f7e0c3f85276357dc8c0ee5"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/003-preserve-destination-1-invited-envoy.png",
+          "sha256": "a96b8bf3a4f993b6f54dbc1c49628f6657df29e267bc537ec011a77c42340a7d"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/004-sign-in-1-invited-envoy.png",
+          "sha256": "e87cdb732f54045dd8c92407036ceae9af29127167e6318f63f54f7dd69f8752"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/006-draft-identity-1-invited-envoy.png",
+          "sha256": "a0e7712f744546407b386a573bd8e7dc7ca9cf76cb042a0c0f2ad66f739fdfc5"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/007-save-and-resume-1-invited-envoy.png",
+          "sha256": "610ecb5fdf22325e8da2294a525aa2e1402712113f21b00cbebe2506bb0cd7d1"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/008-choose-faction-1-invited-envoy.png",
+          "sha256": "0f303b8886185b54aa40707be609cdd25f362d1d871e58f72095d7266b1749da"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/009-claim-seat-1-invited-envoy.png",
+          "sha256": "b38357846d89c273984a579daeba82a695d0381e81571519c72a9da5b3bd9ad2"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/009-claim-seat-2-invitation-host.png",
+          "sha256": "5e4d16a5849cee90a70c3bc0cebb550b09a6c148f7945483f3993fdba6b5f6c5"
+        },
+        {
+          "path": "invitation-first-admission/phone/darwin-arm64/010-recover-seat-1-invited-envoy.png",
+          "sha256": "bf37026fd51c83bd00bc0762587bc952e39c7c7a99255c25b5052449d213aed7"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "974d6765e2645b076f1757ef62a6ec3313e1be2f5f7e0c3f85276357dc8c0ee5"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "a96b8bf3a4f993b6f54dbc1c49628f6657df29e267bc537ec011a77c42340a7d"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "26d02622084af809a36d4c0a43ccfbf29499e0fafccb63136cd187a42f8a1ef6"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "5f1018e2072471d0b9a55b16a55f5477301b367432c94c10d0c70fd8c2d389f3"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/005-reload-return-1-returning-envoy.png",
+          "sha256": "26d02622084af809a36d4c0a43ccfbf29499e0fafccb63136cd187a42f8a1ef6"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/006-missing-invitation-1-returning-envoy.png",
+          "sha256": "32b1544685832192fe436d8163a60e607e375bbca14ec0545d0d9d1cd55a308b"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/007-recover-directory-1-returning-envoy.png",
+          "sha256": "592e5177f0936c74e20e07ae6675819a2ac296f7382a4765d522e2afd509c123"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/009-denied-invitation-1-returning-envoy.png",
+          "sha256": "ab45bab6e2be09de609bc87ffc853d54b34c1d57b34e7654584cb634506aca73"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/cluster117-navigation-dce2543-phone-result",
+      "log": "/tmp/cluster117-navigation-dce2543-phone.log",
+      "logSha256": "34f90100d3e7010127947e9a56d83e85027e3a20912e00314b7074e2c8c229de",
+      "passedStories": [
+        {
+          "story": "campaign-admission-navigation",
+          "project": "phone",
+          "source": {
+            "commit": "dce2543ae4c7d1989967b899520a434a462263e4",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-dce2543-phone-result/campaign-admission-navigation/phone/darwin-arm64/story.json",
+          "sha256": "953eebec311ae61afbee2a8d7c504caa5150c029d2c30caaeef53ec07fa5620f"
+        },
+        {
+          "story": "invitation-returning-recovery",
+          "project": "phone",
+          "source": {
+            "commit": "dce2543ae4c7d1989967b899520a434a462263e4",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-dce2543-phone-result/invitation-returning-recovery/phone/darwin-arm64/story.json",
+          "sha256": "b64991cbc5bb1f53d51df87504819320196263e2c1928399722432d0c66a849e"
+        }
+      ],
+      "images": [
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/002-propose-campaign-1-star-envoy.png",
+          "sha256": "e3781226d48f0f5ff8e8bf2bf9765615316282fd963af17865f934295a96e454"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/003-created-faction-1-star-envoy.png",
+          "sha256": "b6ece624aa1f86ef28bd362c1f41b45ce0761820c4c8709c38a770954ff88d98"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/004-choose-portrait-1-star-envoy.png",
+          "sha256": "3528b768bd6bf19fa6313b0b064d3f9b043f98aa44d62251fcad1c843c608df7"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/005-review-faction-1-star-envoy.png",
+          "sha256": "b6ece624aa1f86ef28bd362c1f41b45ce0761820c4c8709c38a770954ff88d98"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/006-review-rules-1-star-envoy.png",
+          "sha256": "5ce6b2fe10b3296a745a4ba75b2de7f25cf26431221ebc5b62ac4e3414f9ccec"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/007-seat-confirmed-1-star-envoy.png",
+          "sha256": "fbf6bcad2b36c935651bff8c3341a33edc2354f57b7aa8115d4f132dec25fac7"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/008-waiting-entry-1-star-envoy.png",
+          "sha256": "a3def0e78b95bb6ce31712428db899810eead53ff3db70912951666e98dec597"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/009-identity-focus-return-1-star-envoy.png",
+          "sha256": "a3def0e78b95bb6ce31712428db899810eead53ff3db70912951666e98dec597"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/010-campaign-directory-1-star-envoy.png",
+          "sha256": "bd1a007af161e42673ea8414d83439de155c26b8e752c01c5dfb5937f3a28c63"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/011-recover-exact-campaign-1-star-envoy.png",
+          "sha256": "4907e9017fd1d59acc7b9cc2ef263fbb8e52fc865bf2cc473d4b599c1392e587"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/012-reload-membership-1-star-envoy.png",
+          "sha256": "e2e7f5dc61dbd74bf3f9b9d1183c06c7b2edcda3fc439a9657d0463feff65136"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/013-roster-focus-return-1-star-envoy.png",
+          "sha256": "7490d3d9de72a0a7b5a73d9de40d35224326a63947de91924863a6bdf06f2bd2"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/014-release-seat-1-star-envoy.png",
+          "sha256": "00c4363fb061b6bf2415f743f17cc865bef4a6fe1875d644a0fb1f055f056e14"
+        },
+        {
+          "path": "campaign-admission-navigation/phone/darwin-arm64/015-released-membership-reload-1-star-envoy.png",
+          "sha256": "df061914a056289caab555be82f95bfb5386eef1768c4d7d86111a9008086a36"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "974d6765e2645b076f1757ef62a6ec3313e1be2f5f7e0c3f85276357dc8c0ee5"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "a96b8bf3a4f993b6f54dbc1c49628f6657df29e267bc537ec011a77c42340a7d"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "26d02622084af809a36d4c0a43ccfbf29499e0fafccb63136cd187a42f8a1ef6"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "5f1018e2072471d0b9a55b16a55f5477301b367432c94c10d0c70fd8c2d389f3"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/005-reload-return-1-returning-envoy.png",
+          "sha256": "26d02622084af809a36d4c0a43ccfbf29499e0fafccb63136cd187a42f8a1ef6"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/006-missing-invitation-1-returning-envoy.png",
+          "sha256": "32b1544685832192fe436d8163a60e607e375bbca14ec0545d0d9d1cd55a308b"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/007-recover-directory-1-returning-envoy.png",
+          "sha256": "592e5177f0936c74e20e07ae6675819a2ac296f7382a4765d522e2afd509c123"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/009-denied-invitation-1-returning-envoy.png",
+          "sha256": "ab45bab6e2be09de609bc87ffc853d54b34c1d57b34e7654584cb634506aca73"
+        },
+        {
+          "path": "invitation-returning-recovery/phone/darwin-arm64/010-recover-entry-1-returning-envoy.png",
+          "sha256": "5408bbcd8c8b5edbc5dd14df5d10e69fde15f5f14572e09dea23147cbe7a0813"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/cluster117-navigation-03d5fc7-phone-result",
+      "log": "/tmp/cluster117-navigation-03d5fc7-phone.log",
+      "logSha256": "93324f41005499fc2ed8a96f9bb800c20d639646fbdfedad4a3b0e508e4b1bcd",
+      "passedStories": [
+        {
+          "story": "campaign-chart-navigation",
+          "project": "phone",
+          "source": {
+            "commit": "03d5fc745a4ca4f18ed928de7ae46c9363b49ae8",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-03d5fc7-phone-result/campaign-chart-navigation/phone/darwin-arm64/story.json",
+          "sha256": "71aebbcac46b765f7b3b95b9957d3746aeb767d3ef4abbd76b4f74eab45d6056"
+        }
+      ],
+      "images": [
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/002-assigned-chart-1-star-envoy.png",
+          "sha256": "6e306f595079faaa4c53f0a4ef811c9d3163d6e60d07a0f8ba6a77fcc1cf64f4"
+        },
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/003-filter-o-stars-1-star-envoy.png",
+          "sha256": "9e2a7f3f6c85c109b2153fc5ad932c84549278779241e39a6f2f33718bc909fb"
+        },
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "sha256": "09e8c762cbf091b8cd780ec2187ec850b5959070d9174a487c90ccee9868190d"
+        },
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "sha256": "0668342706197aa6d5797a5ba3020f8f58ee08cde87bc6b644db02fb157257d9"
+        },
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/006-overview-1-star-envoy.png",
+          "sha256": "4d9ae2a3b6c5a7085bc2805caad7857ec7f785324bd143fc4d820e98677bd849"
+        },
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/007-select-rana-1-star-envoy.png",
+          "sha256": "d11afa995d148ba243653e024553aa0c4c48edc6e37a549b0cdc5d2806be46a7"
+        },
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/008-label-inspector-boundary-1-star-envoy.png",
+          "sha256": "1127b202f02716ccf766c31e33c1df6c21e4ac064ef1498419d4f0f7dfe97f4f"
+        },
+        {
+          "path": "campaign-chart-navigation/phone/darwin-arm64/009-reload-chart-1-star-envoy.png",
+          "sha256": "6e306f595079faaa4c53f0a4ef811c9d3163d6e60d07a0f8ba6a77fcc1cf64f4"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/cluster117-history-86be660-phone-result",
+      "log": "/tmp/cluster117-history-86be660-phone.log",
+      "logSha256": "98ec67f70fc3542c077c8b7d369e932b7abb6f10e973124e33614082b3c1411a",
+      "passedStories": [
+        {
+          "story": "campaign-history",
+          "project": "phone",
+          "source": {
+            "commit": "86be6601c44ff034421e61832d2e1428d82ad753",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "01068bb5e46ac0e4b6a4f33db4fbadbdbb576f4c7b751937faced0b384cca503"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-86be660-phone-result/campaign-history/phone/darwin-arm64/story.json",
+          "sha256": "c727c218ef5184dd763e50eb566494a9e247faf0f8482aa01e9094e510c4ba6b"
+        }
+      ],
+      "images": [
+        {
+          "path": "campaign-history/phone/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "4995fb4459ff1c51a13c17ac897ffdc3595f7cfa1e24b11aed62cc8dd5a6d53e"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "98a924d2bc762e27fb1bd818448e34283bbc0909c380960f36e5ccc54737f285"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "2d65430f42323cc3200bef5a40f836cfa98c75fddd98bc31ce90d77e6550a711"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "971ac23de87932bdb9a9db7eabc19dc2c452afaa76122255201386b689730417"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "9404a699f044aeb1e44c4e4bd719ccb021f85c753a291fa890237d565a4507cb"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "911a13b569f2c8443dc4abeaef008d30ff8862aaada58ddbbbbd7187c6b9f3eb"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "9e81e8410408ebcb0a8f13133bb72c0d0938e6084eec8a935b8aa85f2b6e8537"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/010-offline-history-1-history-envoy-reading-device.png",
+          "sha256": "8b203d4e1621f6e2a6a36510542432b5671dc12fe0ae9da88b3e2b039bb8fd66"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/012-retry-history-1-history-envoy-reading-device.png",
+          "sha256": "9e81e8410408ebcb0a8f13133bb72c0d0938e6084eec8a935b8aa85f2b6e8537"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/013-return-to-galaxy-1-history-envoy.png",
+          "sha256": "f741b5e65b26e58674431f59d200ba7164331735c26c2243c028ccd9cf9e559b"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/014-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "bca1288e5a2d715a78039036e008d1b182af1990cf5e935f9ba800280a0e13f3"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/015-finish-reading-1-history-envoy.png",
+          "sha256": "b748fd9b044d726f65cef2777b1776ecc43ac389a2cb5bd7dcabb0c0edbd1af8"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/cluster117-navigation-70dec33-remaining-result",
+      "log": "/tmp/cluster117-navigation-70dec33-remaining.log",
+      "logSha256": "0e0bd1964416220bcff6c83b13e6c1e7120fff40f3064d6b3dd9159a6e2ee894",
+      "passedStories": [
+        {
+          "story": "campaign-admission-navigation",
+          "project": "desktop",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-admission-navigation/desktop/darwin-arm64/story.json",
+          "sha256": "1fd82aa5dc4f5cd3c9f1d005d07b2a5926d2e4000c37fd98a61c96ce440ab2d9"
+        },
+        {
+          "story": "campaign-admission-navigation",
+          "project": "large",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-admission-navigation/large/darwin-arm64/story.json",
+          "sha256": "39007af735377251df002639f22056ed5526505e891955bd0e30081e0fd06562"
+        },
+        {
+          "story": "campaign-admission-navigation",
+          "project": "short",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-admission-navigation/short/darwin-arm64/story.json",
+          "sha256": "595ddc89c7a406d6d77e79a8a9a0a73542f7728b969358a044c432a306aaa158"
+        },
+        {
+          "story": "campaign-chart-navigation",
+          "project": "desktop",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-chart-navigation/desktop/darwin-arm64/story.json",
+          "sha256": "e55a2a97badc0929d4bf7bf1311c616b77fe64b3f9133d44288a77a8e67e80d0"
+        },
+        {
+          "story": "campaign-chart-navigation",
+          "project": "large",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-chart-navigation/large/darwin-arm64/story.json",
+          "sha256": "bf67ff5604d092eff4259c06fa45c62fa05ae88e99f84e3c513a6a8154c20ab9"
+        },
+        {
+          "story": "campaign-chart-navigation",
+          "project": "short",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-chart-navigation/short/darwin-arm64/story.json",
+          "sha256": "b99ae03921223c049b85eb7aef5cc0aed25a2893453e3587249b0eb872e3d854"
+        },
+        {
+          "story": "campaign-history",
+          "project": "desktop",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "01068bb5e46ac0e4b6a4f33db4fbadbdbb576f4c7b751937faced0b384cca503"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-history/desktop/darwin-arm64/story.json",
+          "sha256": "57428f9b003ec49196decd52867ef2388889fe7075c74a4bbbcab792b0bff878"
+        },
+        {
+          "story": "campaign-history",
+          "project": "large",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "01068bb5e46ac0e4b6a4f33db4fbadbdbb576f4c7b751937faced0b384cca503"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-history/large/darwin-arm64/story.json",
+          "sha256": "dbf84849295ef3afaec8c02cb50a33d44a49898bf323abc31ca7b02bc919ef74"
+        },
+        {
+          "story": "campaign-history",
+          "project": "short",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "01068bb5e46ac0e4b6a4f33db4fbadbdbb576f4c7b751937faced0b384cca503"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/campaign-history/short/darwin-arm64/story.json",
+          "sha256": "97f398e70b60599adf0af8433a16f1202facca096347279073641b2062b87a16"
+        },
+        {
+          "story": "encryption-unavailable",
+          "project": "desktop",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/encryption.spec.ts",
+            "specSha256": "698cc234d3edbd5d58d86108aa71edee6d1201670229e966a8af21976c54d056"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/encryption-unavailable/desktop/darwin-arm64/story.json",
+          "sha256": "e894707790907c351b0b34d01265ef76888495526f7dd372ca95eef48b4d29d6"
+        },
+        {
+          "story": "encryption-unavailable",
+          "project": "large",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/encryption.spec.ts",
+            "specSha256": "698cc234d3edbd5d58d86108aa71edee6d1201670229e966a8af21976c54d056"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/encryption-unavailable/large/darwin-arm64/story.json",
+          "sha256": "827c4acbf0e486c981d1816dcbd11e01a072dda2796a418b401cb7e599b2f97b"
+        },
+        {
+          "story": "encryption-unavailable",
+          "project": "short",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/encryption.spec.ts",
+            "specSha256": "698cc234d3edbd5d58d86108aa71edee6d1201670229e966a8af21976c54d056"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/encryption-unavailable/short/darwin-arm64/story.json",
+          "sha256": "4f4141816625d69a5d5e725dd58bde03c2ce2c89a2aa55ca0a7f251da3b62cf7"
+        },
+        {
+          "story": "entry-profile-readiness",
+          "project": "desktop",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/entry-profile-readiness/desktop/darwin-arm64/story.json",
+          "sha256": "a42471182d6d543a8704f9a5dbaa3463f3ae116e4fe3b8ee66f3bbe5180c173c"
+        },
+        {
+          "story": "entry-profile-readiness",
+          "project": "large",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/entry-profile-readiness/large/darwin-arm64/story.json",
+          "sha256": "1830495f4b241699e20536bd9b26586de0bbfd9f2c4fc7e2687f4afed252a506"
+        },
+        {
+          "story": "entry-profile-readiness",
+          "project": "short",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+            "specSha256": "33906258bde3f7f39da27613518fe31e2c181abc7139af5621b427ee74e800a3"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/entry-profile-readiness/short/darwin-arm64/story.json",
+          "sha256": "3bd6e378f8e995002d22be8072de8bd38032fa5b690c75c0e9d67f726a767fed"
+        },
+        {
+          "story": "invitation-first-admission",
+          "project": "desktop",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/invitation-first-admission/desktop/darwin-arm64/story.json",
+          "sha256": "335d38cf0108bcf6766633893d1b9146bfd5c9bf2f1a634821da3886e9fe76f6"
+        },
+        {
+          "story": "invitation-first-admission",
+          "project": "large",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/invitation-first-admission/large/darwin-arm64/story.json",
+          "sha256": "01a7f9a49378bbbf9bf50b7c69884376292f8f4eb55b95d8422b5782eb3e0717"
+        },
+        {
+          "story": "invitation-first-admission",
+          "project": "short",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/invitation-first-admission/short/darwin-arm64/story.json",
+          "sha256": "c976bc6453aedff89e01d7c5d813b90c57ac631a50965f95e0b6f360cef4f846"
+        },
+        {
+          "story": "invitation-returning-recovery",
+          "project": "desktop",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/invitation-returning-recovery/desktop/darwin-arm64/story.json",
+          "sha256": "6b94f5586336428eaae0e6422a8e1f9378f984d8360a35d9ab0a70a63a7fae39"
+        },
+        {
+          "story": "invitation-returning-recovery",
+          "project": "large",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/invitation-returning-recovery/large/darwin-arm64/story.json",
+          "sha256": "466526edabbe4801e1721010ceaad2a8e38e1fa3459d8db457becc528501be48"
+        },
+        {
+          "story": "invitation-returning-recovery",
+          "project": "short",
+          "source": {
+            "commit": "70dec3357d09ba93806d604871a1b1eb46cc586a",
+            "dirty": false,
+            "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+            "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-navigation-70dec33-remaining-result/invitation-returning-recovery/short/darwin-arm64/story.json",
+          "sha256": "72db20801d4344b25d17450d9892a0fbddf13b11677311379021691da1e5dc20"
+        }
+      ],
+      "images": [
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/002-propose-campaign-1-star-envoy.png",
+          "sha256": "4af433f5b3833f889cac0fa84f2d88884445363dabb70ddbbf3f351ed07f60da"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/003-created-faction-1-star-envoy.png",
+          "sha256": "53e823675b84ac70706ca807119b0df700485fe2e128a6414635655b525b7a29"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/004-choose-portrait-1-star-envoy.png",
+          "sha256": "e74c27f2717eccae9c76421b04902e0530d28983f511d17ddbb24576d93aa8be"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/005-review-faction-1-star-envoy.png",
+          "sha256": "53e823675b84ac70706ca807119b0df700485fe2e128a6414635655b525b7a29"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/006-review-rules-1-star-envoy.png",
+          "sha256": "1c32f2356e77d5309d97ab8a8ead9a73ccad5271d29da311136c3cb8dae175ed"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/007-seat-confirmed-1-star-envoy.png",
+          "sha256": "9cfdcefc4bc64d583afc58e27de92bc68b90dd8d7050ea4e02d503272807bf21"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/008-waiting-entry-1-star-envoy.png",
+          "sha256": "3053dfeba910b481f4ed26c709cac4fcdaaf4a582283bf6a09d5edc3d9496e5a"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/009-identity-focus-return-1-star-envoy.png",
+          "sha256": "3053dfeba910b481f4ed26c709cac4fcdaaf4a582283bf6a09d5edc3d9496e5a"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/010-campaign-directory-1-star-envoy.png",
+          "sha256": "a678e379397cc9ced38f0f2141600040539b41d1f7ad73ea1e6d9d360053e621"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/011-recover-exact-campaign-1-star-envoy.png",
+          "sha256": "10bc2bb9c9e36662ed485cd3238221b73d3a0706347cf5ed471c093540dc1112"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/012-reload-membership-1-star-envoy.png",
+          "sha256": "680592055c532ff065bd6a8251ca594678b3ccca3fc38787ad022a310a3d4851"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/013-roster-focus-return-1-star-envoy.png",
+          "sha256": "3fa0881a4f67a08a30117a63e4cc1913f370f3bcfdbaa08630770dfb01de8197"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/014-release-seat-1-star-envoy.png",
+          "sha256": "f4e1c851c0b9f4c851dab96995b4b8ba228a2efc55451c03be2b79fed2c2bc5d"
+        },
+        {
+          "path": "campaign-admission-navigation/desktop/darwin-arm64/015-released-membership-reload-1-star-envoy.png",
+          "sha256": "2325d8be8fc2f079a3130ec7a35088de731d41c0e868fdc7927e30c74b6593db"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/002-propose-campaign-1-star-envoy.png",
+          "sha256": "6d54231f5970855501ab683bf665382bde45436b67cbc4b59d4a47ceaf6f4fa4"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/003-created-faction-1-star-envoy.png",
+          "sha256": "a2611eb05d6c7b985c933da36396b6b6985b62cd9930aebc41599933da96136e"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/004-choose-portrait-1-star-envoy.png",
+          "sha256": "68ffd05dbd9cbebbe09ecc1df2cdc4041db8282f6f0c5f70ca69b1094cbdc262"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/005-review-faction-1-star-envoy.png",
+          "sha256": "a2611eb05d6c7b985c933da36396b6b6985b62cd9930aebc41599933da96136e"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/006-review-rules-1-star-envoy.png",
+          "sha256": "a1254fac431bc715cde526b53fb3de74a6398c4280c7cd0597ba9e9a6f60ef99"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/007-seat-confirmed-1-star-envoy.png",
+          "sha256": "14ad1a228658e2b6de2e3277b093fc5006a0de45d40cb58da8fd820665f55d0f"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/008-waiting-entry-1-star-envoy.png",
+          "sha256": "a7e77d4f01125cae881783bf5e9ad2214045c4f01dd1891c170543e0f7a0d3ca"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/009-identity-focus-return-1-star-envoy.png",
+          "sha256": "a7e77d4f01125cae881783bf5e9ad2214045c4f01dd1891c170543e0f7a0d3ca"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/010-campaign-directory-1-star-envoy.png",
+          "sha256": "283c14a097a89b5441482c490ccf8cde8dde87db9b27868f00268a7a9b149218"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/011-recover-exact-campaign-1-star-envoy.png",
+          "sha256": "8a3c92b8454eb9e47b793d5e4dfb88e114d448d53956d7b6d3100f2f34f7a47c"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/012-reload-membership-1-star-envoy.png",
+          "sha256": "4d861a67f7ca0a215a6ffaa086cbcfcbe4719ee6cdef63ceac9c896e1b9dd4b4"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/013-roster-focus-return-1-star-envoy.png",
+          "sha256": "e24672a515b6213cbb3bfe12d8c4eb964c023753c463df480f074b8c046fdb7f"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/014-release-seat-1-star-envoy.png",
+          "sha256": "4af43884d1c3aabfaf2f8e46e1b3ffa5f2a26ea16b3193c8d9f586f794f6304c"
+        },
+        {
+          "path": "campaign-admission-navigation/large/darwin-arm64/015-released-membership-reload-1-star-envoy.png",
+          "sha256": "52a76b9cb50e600060b2f9aa6283bd1057ce7105ed1bc1a379857fc545c86dcf"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/002-propose-campaign-1-star-envoy.png",
+          "sha256": "92eafda2db31d9a077c9de066f4611909e338fd7848876de3727a22157ee5fed"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/003-created-faction-1-star-envoy.png",
+          "sha256": "6e345173cf11cfdeca54712383ecea3844381dec4587ff8424f25144e0a61326"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/004-choose-portrait-1-star-envoy.png",
+          "sha256": "948b8898f801115de7a2f8ae1fd88a526de8e99c11220d81d3e1bd77203c54d1"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/005-review-faction-1-star-envoy.png",
+          "sha256": "6e345173cf11cfdeca54712383ecea3844381dec4587ff8424f25144e0a61326"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/006-review-rules-1-star-envoy.png",
+          "sha256": "24b1d6b97ca460fc57057c726f2b1f7e5b522e7c0eb898ec20b9781dfb85c231"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/007-seat-confirmed-1-star-envoy.png",
+          "sha256": "144132a0b5d963206a763e1b24a851393511b3da41563ce80da678f5da81cfcf"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/008-waiting-entry-1-star-envoy.png",
+          "sha256": "fcc076eb8f994adc3248121f7c534e73b0caa41a8f0f4e5ccf3469578bf87dde"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/009-identity-focus-return-1-star-envoy.png",
+          "sha256": "fcc076eb8f994adc3248121f7c534e73b0caa41a8f0f4e5ccf3469578bf87dde"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/010-campaign-directory-1-star-envoy.png",
+          "sha256": "8d27c8b9ce3b26ef17a7766495264e3ca97e82a730129626750ef0dc656455a3"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/011-recover-exact-campaign-1-star-envoy.png",
+          "sha256": "338e940ff82f0778bb3f6c9d7fc02fffd93f280b98d60015eb02bb28f002458f"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/012-reload-membership-1-star-envoy.png",
+          "sha256": "52996f1205ff439ba586e52ab8d35487079220da016b74e1ebd6a91dd2fbde06"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/013-roster-focus-return-1-star-envoy.png",
+          "sha256": "c628acedc7bd85c9d6238ccde7add8b53b6d9f9292bbf03154b9db0ecd63f0bd"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/014-release-seat-1-star-envoy.png",
+          "sha256": "06719900e1f827faa1f12fe53b8bd44c64e24dfd07dc03874e47fe9361cf3835"
+        },
+        {
+          "path": "campaign-admission-navigation/short/darwin-arm64/015-released-membership-reload-1-star-envoy.png",
+          "sha256": "9f53460aa6db963c834132d5e606b05acf8c978d1585ed7f40b9df02cc3ee378"
+        },
+        {
+          "path": "campaign-chart-navigation/desktop/darwin-arm64/002-assigned-chart-1-star-envoy.png",
+          "sha256": "b41e3c54c158922da0ce01d4467f05938e25a2c2fcdd4d75bec19a5dfd53805d"
+        },
+        {
+          "path": "campaign-chart-navigation/desktop/darwin-arm64/003-filter-o-stars-1-star-envoy.png",
+          "sha256": "a090ce8093c5aa2863caa4baa025d9efb4d303f1106d72504c43d10f5ff0c08c"
+        },
+        {
+          "path": "campaign-chart-navigation/desktop/darwin-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "sha256": "f5b168e49fd0bce26905da54a234d3533fd17ea2cda80f1ef8dc55cbbd356b40"
+        },
+        {
+          "path": "campaign-chart-navigation/desktop/darwin-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "sha256": "d18b9dace0fb3a82e6c85a136af9a67c4fbd0e5b06fb1a10cbbae187697024f0"
+        },
+        {
+          "path": "campaign-chart-navigation/desktop/darwin-arm64/006-overview-1-star-envoy.png",
+          "sha256": "b41e3c54c158922da0ce01d4467f05938e25a2c2fcdd4d75bec19a5dfd53805d"
+        },
+        {
+          "path": "campaign-chart-navigation/desktop/darwin-arm64/007-select-rana-1-star-envoy.png",
+          "sha256": "7c3658fd8b5a630ca943491aa3fd7305929b459629f9910e7392627b7d965755"
+        },
+        {
+          "path": "campaign-chart-navigation/desktop/darwin-arm64/008-reload-chart-1-star-envoy.png",
+          "sha256": "b41e3c54c158922da0ce01d4467f05938e25a2c2fcdd4d75bec19a5dfd53805d"
+        },
+        {
+          "path": "campaign-chart-navigation/large/darwin-arm64/002-assigned-chart-1-star-envoy.png",
+          "sha256": "06c48f179c5fb68287a14501d7d8b6e025ac98b9da1ea270b79c470bb4b03351"
+        },
+        {
+          "path": "campaign-chart-navigation/large/darwin-arm64/003-filter-o-stars-1-star-envoy.png",
+          "sha256": "c3cf234e7d57334bf3eecf1769b9a12925c6a4064f62227afce5f40f5fcdefcf"
+        },
+        {
+          "path": "campaign-chart-navigation/large/darwin-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "sha256": "c5b82f147151e6bcf4d9b200a53b47a3daac04100a325db58a763545c69889e5"
+        },
+        {
+          "path": "campaign-chart-navigation/large/darwin-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "sha256": "5476f72d8a1ddd30abf431f4fb40ee4ecee68925c58ad373a01adc09045d92db"
+        },
+        {
+          "path": "campaign-chart-navigation/large/darwin-arm64/006-overview-1-star-envoy.png",
+          "sha256": "06c48f179c5fb68287a14501d7d8b6e025ac98b9da1ea270b79c470bb4b03351"
+        },
+        {
+          "path": "campaign-chart-navigation/large/darwin-arm64/007-select-rana-1-star-envoy.png",
+          "sha256": "db3ecd089364095ce69bed960f5e7426c0a766e1d16e895f8a8caafa3d7e9d05"
+        },
+        {
+          "path": "campaign-chart-navigation/large/darwin-arm64/008-reload-chart-1-star-envoy.png",
+          "sha256": "06c48f179c5fb68287a14501d7d8b6e025ac98b9da1ea270b79c470bb4b03351"
+        },
+        {
+          "path": "campaign-chart-navigation/short/darwin-arm64/002-assigned-chart-1-star-envoy.png",
+          "sha256": "54fdd9893db704788561969456be5e6834dff3b5640a0f34c47be7da72f60be3"
+        },
+        {
+          "path": "campaign-chart-navigation/short/darwin-arm64/003-filter-o-stars-1-star-envoy.png",
+          "sha256": "8797fcab93a17280b56306d114383bf89ba9617a61793080aa5a9fa891af6cc4"
+        },
+        {
+          "path": "campaign-chart-navigation/short/darwin-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "sha256": "069de13c400b425a2486bd25266121ddafcd6f257c012ddc4ac23605fda3ae09"
+        },
+        {
+          "path": "campaign-chart-navigation/short/darwin-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "sha256": "d1e8b24dad79d858b99e8806d86ac698c83f0ce3922461f3eb0a42637dd20e16"
+        },
+        {
+          "path": "campaign-chart-navigation/short/darwin-arm64/006-overview-1-star-envoy.png",
+          "sha256": "54fdd9893db704788561969456be5e6834dff3b5640a0f34c47be7da72f60be3"
+        },
+        {
+          "path": "campaign-chart-navigation/short/darwin-arm64/007-select-rana-1-star-envoy.png",
+          "sha256": "7932cad203f8675ff038ee7d62ae2664eb03039ebd98f783af6a96f81387dd0e"
+        },
+        {
+          "path": "campaign-chart-navigation/short/darwin-arm64/008-reload-chart-1-star-envoy.png",
+          "sha256": "54fdd9893db704788561969456be5e6834dff3b5640a0f34c47be7da72f60be3"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "62e373320b904c7ec36874c4f8dfbb73fca82efa395387f1416f420e290391a0"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "82f63a9959e4bc9238eb9e1edf179713b524a3feaa7f5a59755103dfbf4644af"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "ed95c894fd8adbde0a1e1f95f6bf784ff7f2799859c85b45c9a63785d7413bc8"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "d5c7f6752fdc2fb40c98518aeaa2143c7ddc27a003d8d2148f96aec03e924a94"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "d5830903fb399baf6f5e398db7b69e0e56d7c7eaffbe98170fd50b88b7ac3625"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "40aef2d7a801c67fc1f8217a8f0f7da3c0d0f6af9198ed091e61734f8dd5459b"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "c7c192514e0f4c59f88ec59c28a73a90befd74b59d6ecb3f1c034514ebc01999"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "9e867fe7237392eb38f47bec3d34f257a9a7cf4625a63f20750b5eef4a74f12a"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "c5c04a045bb46fc2ea53b03e89779a3bbb4c795d6a7a6b29ecc94c981bf1c1d7"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "c8fc4b1d6c67db30161f293a134ba25a16ef604358728603d1bd129d96c61252"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "52c2d38f793833d76d51df810f59c96c633e4f684a4bf66be32eca676b7a0846"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "f7e9331757bb82642acee6098a5cd0ff54d7c8d60694b2cfd76b844d18c3bad5"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "a5b0c5f7a5f22a5884412176412c1a735d1b74c1a2c4272c39dcbe827b27ac01"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "0967d7c533cec473f123272eb0aef86c7e68ffe367a50d2d4f0f79cb6352cf79"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "01140358c03b6656a563d722c4514dbb68071997eae04622c54de35894746fb6"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "4bcbd09073d69709e6c1b153f9c87ee183b8d3b8c9fe8cdd93075edfebed6b8e"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "06ce7af1aa8cecfb3a11067bd0404e9e8134646b2cac25516b129af8a0ec12db"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "3a572a66dfc0d4f744949ef0e0d0ae03af9ef11f60d68fabb13d4fc65ff290ef"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "8cb349318d9081e55bbd91c0167e8794ef08f41e60abebb391fa2c6c4f86c5fc"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "e6c32d52011f3aa92bd95b615a05094f693d52a57227d748a90501551208a537"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "c50e15e0a54b42dc0594518a43c7ae4452319dcca963d96aa79029671e069c76"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "bcb091abb37abf8dcb5c9def114cce9b216d5b0ac0798a3f6977a2b9c1cd55cf"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "8b718934e6515cdc403d6be3c0b633f10bbbeb00d46d4e3254225fa53c165210"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "ef4a82eedd6670cf9f5760bce48c10d8d39ac141f532523d5b775633a0e81394"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "cfa7dd4b2903a1eb18684240c3ca035449a599bd202e86dc673248075999f6da"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "d993a8ca57aa1e36f67b836cc257e8eb0935cc7b177f3e52a2b90ff00892dfa7"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "6a29ceb3a50de81b79d94653ab3c9b22341b6a26aea70be859b47c7234644c06"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "b4884ce64a72b54d50035c477040f02214373543301c4bf09b8e08c87970b2a4"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "85b6a5564bf520b3ae7d169aef789fc5869c4f9e8d8201a55dc14faa2d6436be"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "01f8403be313431f30eafeb1f71557c88d120c63cb86c253e8746fa9a80384dd"
+        },
+        {
+          "path": "encryption-unavailable/desktop/darwin-arm64/002-review-provider-1-cipher-envoy.png",
+          "sha256": "b2ab4e9ab6ae1fa859d6b4da2f80e3dc037ec721d8cf1c79b851c9d29f63a401"
+        },
+        {
+          "path": "encryption-unavailable/desktop/darwin-arm64/003-created-campaign-1-cipher-envoy.png",
+          "sha256": "2d6abb291d7ac302f03ed4bdb49cc426f4129e55ce46ad8ff7fdc95eac9bfda0"
+        },
+        {
+          "path": "encryption-unavailable/desktop/darwin-arm64/004-claimed-seat-1-cipher-envoy.png",
+          "sha256": "22d436701cdd2cdebcc21c469ae46bf66f57775a9f1393778c52ca732688f9d0"
+        },
+        {
+          "path": "encryption-unavailable/desktop/darwin-arm64/005-recovered-seat-1-cipher-envoy.png",
+          "sha256": "65b8a7fca4eae318b537169c2eb6c413b88e6ad6c68bb24829424c0c9f18e0f8"
+        },
+        {
+          "path": "encryption-unavailable/desktop/darwin-arm64/006-released-seat-1-cipher-envoy.png",
+          "sha256": "5c4b36dc9c350d370c03995ca43a92badd4fc59e56e1084d70cc2666494a8c88"
+        },
+        {
+          "path": "encryption-unavailable/large/darwin-arm64/002-review-provider-1-cipher-envoy.png",
+          "sha256": "afb8af4c50a4c1cf802477ed4f006e013880195239186e2205283a387a835a8e"
+        },
+        {
+          "path": "encryption-unavailable/large/darwin-arm64/003-created-campaign-1-cipher-envoy.png",
+          "sha256": "99b37168cea55f163ecc37c07159c900e57896d1ac32e4a18c20c8943bf35681"
+        },
+        {
+          "path": "encryption-unavailable/large/darwin-arm64/004-claimed-seat-1-cipher-envoy.png",
+          "sha256": "671a82ff87e387af914d09c8b09ec06452bc49cceb677403b6faa7f615478ee5"
+        },
+        {
+          "path": "encryption-unavailable/large/darwin-arm64/005-recovered-seat-1-cipher-envoy.png",
+          "sha256": "31ababe0c0cb330c4cf872f447ce95e4ffca2e7def86a2669430ed732fec6809"
+        },
+        {
+          "path": "encryption-unavailable/large/darwin-arm64/006-released-seat-1-cipher-envoy.png",
+          "sha256": "3e5d802d4d58995ce8d7bb77021a0f94d18d4594049398547933973148b38b84"
+        },
+        {
+          "path": "encryption-unavailable/short/darwin-arm64/002-review-provider-1-cipher-envoy.png",
+          "sha256": "4a384d6d7ec77b60110e773d494c6b31087b2e49aa73e37adb55dc5cb48f354e"
+        },
+        {
+          "path": "encryption-unavailable/short/darwin-arm64/003-created-campaign-1-cipher-envoy.png",
+          "sha256": "06c2ef0dbac57cf302703273c3bf8596050de367e6008e487d3698befd85bd1a"
+        },
+        {
+          "path": "encryption-unavailable/short/darwin-arm64/004-claimed-seat-1-cipher-envoy.png",
+          "sha256": "758324755e6dcb995782af6b434d5817890af310f9257aacf2b778c5670190a9"
+        },
+        {
+          "path": "encryption-unavailable/short/darwin-arm64/005-recovered-seat-1-cipher-envoy.png",
+          "sha256": "ee437726ef5c8040a11e6b8f909c4850614ee860fdc63b35f4c2244026ac92da"
+        },
+        {
+          "path": "encryption-unavailable/short/darwin-arm64/006-released-seat-1-cipher-envoy.png",
+          "sha256": "8f83af14efc7fddc3081258008a65033680e89c00a56022b569c74c871a59c5b"
+        },
+        {
+          "path": "entry-profile-readiness/desktop/darwin-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+          "sha256": "4de959aa1885ffacfd1c0648d6bf20ad1e7aa53f62eef2c7473d8823d097d811"
+        },
+        {
+          "path": "entry-profile-readiness/desktop/darwin-arm64/005-ready-campaign-selection-1-star-envoy.png",
+          "sha256": "2325d8be8fc2f079a3130ec7a35088de731d41c0e868fdc7927e30c74b6593db"
+        },
+        {
+          "path": "entry-profile-readiness/desktop/darwin-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+          "sha256": "bd5790d1044814948a8c8ae62c23b3ada6d37d7300bf7d7b8de4f01f3dc155a9"
+        },
+        {
+          "path": "entry-profile-readiness/large/darwin-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+          "sha256": "c03ecf108f7a27d02ce1de885a8c3848e71fc8b5c4aec2d2c94abf69aed951ff"
+        },
+        {
+          "path": "entry-profile-readiness/large/darwin-arm64/005-ready-campaign-selection-1-star-envoy.png",
+          "sha256": "52a76b9cb50e600060b2f9aa6283bd1057ce7105ed1bc1a379857fc545c86dcf"
+        },
+        {
+          "path": "entry-profile-readiness/large/darwin-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+          "sha256": "78d1a1415a8f694a4078a807e61a4fa8c5364506a660fe32a0d81506529f9836"
+        },
+        {
+          "path": "entry-profile-readiness/short/darwin-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+          "sha256": "ec26fccef8cc5f9a254db28a5e5e5c1455b42d2c1c9ac23427fc6d57ae28b050"
+        },
+        {
+          "path": "entry-profile-readiness/short/darwin-arm64/005-ready-campaign-selection-1-star-envoy.png",
+          "sha256": "9f53460aa6db963c834132d5e606b05acf8c978d1585ed7f40b9df02cc3ee378"
+        },
+        {
+          "path": "entry-profile-readiness/short/darwin-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+          "sha256": "2211dcc48667f9143cf68eb2cf0dcedf3522e5a090505539dd7cb1babd630c64"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/002-open-invitation-1-invited-envoy.png",
+          "sha256": "7220f85e9d1f1899fa6147980ab37f3d885cde6f553563cf988745f340cd34e2"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/003-preserve-destination-1-invited-envoy.png",
+          "sha256": "308e7f2bd1a1b6c9e3dec0f2e04b659151c0a16b265267c4905dd35d9f77991c"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/004-sign-in-1-invited-envoy.png",
+          "sha256": "69e11453457aefbdefa1ff32310167d4a4bd57bbf59e7eee61e25c848bbf2be6"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/006-draft-identity-1-invited-envoy.png",
+          "sha256": "f37dee3e794f591837cc71183d57b81af16f5f104764c931a375e41c26e7017f"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/007-save-and-resume-1-invited-envoy.png",
+          "sha256": "a0383785965ef8e89b1ab5aaa693fb276f9dfb88a0673ece7b899e3973a75e4b"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/008-choose-faction-1-invited-envoy.png",
+          "sha256": "b137cca995e7b9594bd5f21b406f4026dd221ef5920da3cefdb43570df20fab8"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/009-claim-seat-1-invited-envoy.png",
+          "sha256": "64a0438812b383b0a580d3efed67afac238f03b72a65c35c97787ee0bac2cb6d"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/009-claim-seat-2-invitation-host.png",
+          "sha256": "ea175f346ca8167e600820002ca7edda5aa4f6d7f1e72c55457b261e7ba42852"
+        },
+        {
+          "path": "invitation-first-admission/desktop/darwin-arm64/010-recover-seat-1-invited-envoy.png",
+          "sha256": "749732328bf4c596f8c1e3ab3f02833b7f34f65753ff6046001f4441025d2fc1"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/002-open-invitation-1-invited-envoy.png",
+          "sha256": "f2730c981baa5e3134a9210d62cc7bceb7abfbca2e37c55b8f74304ebd2ded87"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/003-preserve-destination-1-invited-envoy.png",
+          "sha256": "8109bd201ac0daa36eaf75ee8b6a5b95a136b3bfa4064d2c7881e2cf42f6c21d"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/004-sign-in-1-invited-envoy.png",
+          "sha256": "8b514b4a3aef45f625b623ab1d04d5498f6b0345b09b51d01dd3303dd5fd2388"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/006-draft-identity-1-invited-envoy.png",
+          "sha256": "307a1b2a3ac5b6dc1339f6517b6e32a4e4efa65d3ed085f01a74a012fb76e2db"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/007-save-and-resume-1-invited-envoy.png",
+          "sha256": "c5082cf1498aae1439251592e8a1319f15d462fc67221b9d6f8fa1ff4e0d3311"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/008-choose-faction-1-invited-envoy.png",
+          "sha256": "aa776e4e9389c491337aed873400a4ca1fa0e3b8fc17857da8e7e75bdf94a0ae"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/009-claim-seat-1-invited-envoy.png",
+          "sha256": "1726552683f8930d507612086e71ca397c25bae401ef4fa6bb80f2a0be1a17c9"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/009-claim-seat-2-invitation-host.png",
+          "sha256": "22f36d768f6eb2e5b292543148e324544510bc3e874dbdf7f80b7083e7a2a38b"
+        },
+        {
+          "path": "invitation-first-admission/large/darwin-arm64/010-recover-seat-1-invited-envoy.png",
+          "sha256": "7aa165a2d354fac869134c17e649429b43d51f9c8d793d69b7d063614d57371e"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/002-open-invitation-1-invited-envoy.png",
+          "sha256": "fa0f1844bf0efb6907f586c073eabc0523197efa37ecddf9bdb1f4754658668e"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/003-preserve-destination-1-invited-envoy.png",
+          "sha256": "82b8a8a474b62bfbc662c402090b9150f2b91cdc7fe81b9e3adfe5b0c96d709a"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/004-sign-in-1-invited-envoy.png",
+          "sha256": "35c822cd144416d5933116f27db348979a0a1aba36d9ef209d8e2720eeb7519f"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/006-draft-identity-1-invited-envoy.png",
+          "sha256": "ace6e28154502ec12422039149c8a554db17e7ae8b255f786dc2a2d6dd7f55b3"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/007-save-and-resume-1-invited-envoy.png",
+          "sha256": "4edc329251c8c96f9309ba7baa6a76fe2ec0d99e2c9a8eb339b858c4333dc35a"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/008-choose-faction-1-invited-envoy.png",
+          "sha256": "dcaa8154609e8a0b618acac94e1c1b7caa9b1d8dc364d51c68d30a0c12475192"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/009-claim-seat-1-invited-envoy.png",
+          "sha256": "37ff0eb5d2d7b85d66dffd64882b265001b74ca264571a2755fdbf98b002e2ca"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/009-claim-seat-2-invitation-host.png",
+          "sha256": "0d8dbfdf9549858e9af875ac327deb07c99f2ce4b6045f99f604b34662e5f025"
+        },
+        {
+          "path": "invitation-first-admission/short/darwin-arm64/010-recover-seat-1-invited-envoy.png",
+          "sha256": "8343478ceb2dffad8d38a3057d1eccd94779da0d2e3f504bcf02c4024e4a5343"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "7220f85e9d1f1899fa6147980ab37f3d885cde6f553563cf988745f340cd34e2"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "308e7f2bd1a1b6c9e3dec0f2e04b659151c0a16b265267c4905dd35d9f77991c"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "093a005863969028c11ff6173a0d6d65c0f596b8b2c60fae3280b9f027b366f8"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "619e639e7fd0156831b2850237f3c81055e51519c6dcd6e3a88bc62036a16640"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/005-reload-return-1-returning-envoy.png",
+          "sha256": "093a005863969028c11ff6173a0d6d65c0f596b8b2c60fae3280b9f027b366f8"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/006-missing-invitation-1-returning-envoy.png",
+          "sha256": "19c80dae04609011a564cc62b3b082ef7b0e973087eb2ac89b89161913abb063"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/007-recover-directory-1-returning-envoy.png",
+          "sha256": "99a6e5b9c2226f835bf927748dff2d5938acdd0715b2c202ab659325b8162cd6"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/009-denied-invitation-1-returning-envoy.png",
+          "sha256": "4b06070f0db1790fd3e8da328624fd5cfaffce3ceda9143172484115ee295ce3"
+        },
+        {
+          "path": "invitation-returning-recovery/desktop/darwin-arm64/010-recover-entry-1-returning-envoy.png",
+          "sha256": "0db2b7c83bb03679a3e09acc8c9bb0faf2adf1ddffbb1ba269cd72546a75a89d"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "f2730c981baa5e3134a9210d62cc7bceb7abfbca2e37c55b8f74304ebd2ded87"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "8109bd201ac0daa36eaf75ee8b6a5b95a136b3bfa4064d2c7881e2cf42f6c21d"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "6026fa51cd664f8edc4cf7796d485859151d8bb1d841e55329cb6c6d7e1b82f3"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "11ba1d8a980a53cd3d7a7876857c0370231fec6599679baa81c73f9796a7502f"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/005-reload-return-1-returning-envoy.png",
+          "sha256": "6026fa51cd664f8edc4cf7796d485859151d8bb1d841e55329cb6c6d7e1b82f3"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/006-missing-invitation-1-returning-envoy.png",
+          "sha256": "5f65f83f473d945c24722a8564f59e53f3b8d5fb08c51db5c82bde3489cd9fc5"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/007-recover-directory-1-returning-envoy.png",
+          "sha256": "5eb93c7fa24179f66ff720474418937cb529720fe68cb6302948c3631377408e"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/009-denied-invitation-1-returning-envoy.png",
+          "sha256": "e73cb8a49c7b68d3e9b03b96ac6339080136c690291a3b65736e899af7d4c72f"
+        },
+        {
+          "path": "invitation-returning-recovery/large/darwin-arm64/010-recover-entry-1-returning-envoy.png",
+          "sha256": "2f5a2488af928cb7c98b6a7f2fdffb9f8bce61849321d4879cfa5552cc2488d1"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "fa0f1844bf0efb6907f586c073eabc0523197efa37ecddf9bdb1f4754658668e"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "82b8a8a474b62bfbc662c402090b9150f2b91cdc7fe81b9e3adfe5b0c96d709a"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "a904e05c67bc60dad5a50981b357e51f5094c28c64cbeebd2b57b32909931943"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "712e93e74c669f7dd5e0befcf7d36aae246003620b1225cd664b880b32839191"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/005-reload-return-1-returning-envoy.png",
+          "sha256": "a904e05c67bc60dad5a50981b357e51f5094c28c64cbeebd2b57b32909931943"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/006-missing-invitation-1-returning-envoy.png",
+          "sha256": "308ec423c1b29b25370168199f666be85f760bb1ba50444e5b89188a9eb3d9b9"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/007-recover-directory-1-returning-envoy.png",
+          "sha256": "7d61ead454a5bc7ce2e66e4eb3d18ab875ff022c1ed5adf9a85a69b285caeab5"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/009-denied-invitation-1-returning-envoy.png",
+          "sha256": "942efad1724bfa661a525b1f35db0839af4f145b6db69b89ca4229d3cb33b356"
+        },
+        {
+          "path": "invitation-returning-recovery/short/darwin-arm64/010-recover-entry-1-returning-envoy.png",
+          "sha256": "448c2bbdab2feee53d08db01f54a915b5e752c991713316165d47249ac1734fe"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/cluster117-history-68b7e88-four-result",
+      "log": "/tmp/cluster117-history-68b7e88-four.log",
+      "logSha256": "1cabcdd94724d5db509aa7f9eaaed64efc927fd4ae3281f2f1c49bd5627f7f8c",
+      "passedStories": [
+        {
+          "story": "campaign-history",
+          "project": "desktop",
+          "source": {
+            "commit": "68b7e88a45b47f4c85f1ef2e4869187863bfbf77",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "2d95521d26e3b53982347c9a9a314747f688ea240b481ac871581ba352247d0b"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-68b7e88-four-result/campaign-history/desktop/darwin-arm64/story.json",
+          "sha256": "1458a7856826d45e56a2523bc3b203dc995d8284d175c5a46953facdd7a8d7c5"
+        },
+        {
+          "story": "campaign-history",
+          "project": "large",
+          "source": {
+            "commit": "68b7e88a45b47f4c85f1ef2e4869187863bfbf77",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "2d95521d26e3b53982347c9a9a314747f688ea240b481ac871581ba352247d0b"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-68b7e88-four-result/campaign-history/large/darwin-arm64/story.json",
+          "sha256": "8093d6601cd4869f5e4ae43660abf2924599eefeed03c9a85144225f65c5c6c4"
+        },
+        {
+          "story": "campaign-history",
+          "project": "phone",
+          "source": {
+            "commit": "68b7e88a45b47f4c85f1ef2e4869187863bfbf77",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "2d95521d26e3b53982347c9a9a314747f688ea240b481ac871581ba352247d0b"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-68b7e88-four-result/campaign-history/phone/darwin-arm64/story.json",
+          "sha256": "4f97fa16b8c747cd30e48d7432f4139f261889b043cb1e13013ce1dc415028ad"
+        },
+        {
+          "story": "campaign-history",
+          "project": "short",
+          "source": {
+            "commit": "68b7e88a45b47f4c85f1ef2e4869187863bfbf77",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "2d95521d26e3b53982347c9a9a314747f688ea240b481ac871581ba352247d0b"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-68b7e88-four-result/campaign-history/short/darwin-arm64/story.json",
+          "sha256": "15d56bf512ab7a0d4fa3181524f3a19343fa48e92b9a7752101f3c74a6a2279f"
+        }
+      ],
+      "images": [
+        {
+          "path": "campaign-history/desktop/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "62e373320b904c7ec36874c4f8dfbb73fca82efa395387f1416f420e290391a0"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "82f63a9959e4bc9238eb9e1edf179713b524a3feaa7f5a59755103dfbf4644af"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "ed95c894fd8adbde0a1e1f95f6bf784ff7f2799859c85b45c9a63785d7413bc8"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "d5c7f6752fdc2fb40c98518aeaa2143c7ddc27a003d8d2148f96aec03e924a94"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "d5830903fb399baf6f5e398db7b69e0e56d7c7eaffbe98170fd50b88b7ac3625"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "40aef2d7a801c67fc1f8217a8f0f7da3c0d0f6af9198ed091e61734f8dd5459b"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "c7c192514e0f4c59f88ec59c28a73a90befd74b59d6ecb3f1c034514ebc01999"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "9e867fe7237392eb38f47bec3d34f257a9a7cf4625a63f20750b5eef4a74f12a"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "c5c04a045bb46fc2ea53b03e89779a3bbb4c795d6a7a6b29ecc94c981bf1c1d7"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "c8fc4b1d6c67db30161f293a134ba25a16ef604358728603d1bd129d96c61252"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "52c2d38f793833d76d51df810f59c96c633e4f684a4bf66be32eca676b7a0846"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "f7e9331757bb82642acee6098a5cd0ff54d7c8d60694b2cfd76b844d18c3bad5"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "a5b0c5f7a5f22a5884412176412c1a735d1b74c1a2c4272c39dcbe827b27ac01"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "0967d7c533cec473f123272eb0aef86c7e68ffe367a50d2d4f0f79cb6352cf79"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "01140358c03b6656a563d722c4514dbb68071997eae04622c54de35894746fb6"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "d2122cf9b67fece4c6b36d2ecea355bff8a30f352321f13d8cfa11dc48b9ac9f"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "f3ccc905e2f32ff852b1f87743901c2b2ec6ea3f0cb94f14b985cd76b3808210"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "3a572a66dfc0d4f744949ef0e0d0ae03af9ef11f60d68fabb13d4fc65ff290ef"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "47daf2114ae1d552443f47b5b0dc75432dc2242f5c0364b5fa48eca017106266"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "e6c32d52011f3aa92bd95b615a05094f693d52a57227d748a90501551208a537"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "c7ae864ba4723ce074d2f2fc4ab05cc5e49bdc9ec94d8cfa53953f723f3bf4eb"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "7ff22f6400b3fb52eee2d30dda9f729a0ec4119cd5ee0e73073eab495c54e35a"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "9ff9ffbec9345391be93170fb4f23d3dca59f941c361967340ac1f308039043b"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "9ffb523ead2855bdf0d4e2fe7b4549af54f34703210ff9b00891314987fcbf89"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "9404a699f044aeb1e44c4e4bd719ccb021f85c753a291fa890237d565a4507cb"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "cc1fb380ebc4460e746f57596d345ecf02c91bdf559df895b6de96b3fc865bad"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "4587ce786bd8b10616822510a358fe8391b11767e3fafeee9c52b6b3987e7f4e"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/010-offline-history-1-history-envoy-reading-device.png",
+          "sha256": "40ddce5e12b48689166d1c3f803a4b09e4e285dd7d3fbac4405a052af60e566d"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/012-retry-history-1-history-envoy-reading-device.png",
+          "sha256": "4587ce786bd8b10616822510a358fe8391b11767e3fafeee9c52b6b3987e7f4e"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/013-return-to-galaxy-1-history-envoy.png",
+          "sha256": "f741b5e65b26e58674431f59d200ba7164331735c26c2243c028ccd9cf9e559b"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/014-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "ce6be6c5202615321e54428ac7cda59f340d200cc5d9e3e75d6a99d3b529951d"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/015-finish-reading-1-history-envoy.png",
+          "sha256": "b748fd9b044d726f65cef2777b1776ecc43ac389a2cb5bd7dcabb0c0edbd1af8"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "c50e15e0a54b42dc0594518a43c7ae4452319dcca963d96aa79029671e069c76"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "bcb091abb37abf8dcb5c9def114cce9b216d5b0ac0798a3f6977a2b9c1cd55cf"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "8b718934e6515cdc403d6be3c0b633f10bbbeb00d46d4e3254225fa53c165210"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "ef4a82eedd6670cf9f5760bce48c10d8d39ac141f532523d5b775633a0e81394"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "cfa7dd4b2903a1eb18684240c3ca035449a599bd202e86dc673248075999f6da"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "d993a8ca57aa1e36f67b836cc257e8eb0935cc7b177f3e52a2b90ff00892dfa7"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "6a29ceb3a50de81b79d94653ab3c9b22341b6a26aea70be859b47c7234644c06"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "b4884ce64a72b54d50035c477040f02214373543301c4bf09b8e08c87970b2a4"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "85b6a5564bf520b3ae7d169aef789fc5869c4f9e8d8201a55dc14faa2d6436be"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "01f8403be313431f30eafeb1f71557c88d120c63cb86c253e8746fa9a80384dd"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/cluster117-history-a4206a5-four-result",
+      "log": "/tmp/cluster117-history-a4206a5-four.log",
+      "logSha256": "70fe3d79bd0a02d676ecffb9473e28b45efcc62d8b2e053f01791e10a5fe2ac0",
+      "passedStories": [
+        {
+          "story": "campaign-history",
+          "project": "desktop",
+          "source": {
+            "commit": "a4206a5a19585155678228af32da4c4000629aa9",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "7671301e7ad8f4c254a304733918e22a2070e98c68a2f0fe348fcbe6029713a7"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-a4206a5-four-result/campaign-history/desktop/darwin-arm64/story.json",
+          "sha256": "c9e1f72745706b166651480d05caa39f6cb8e24530fa3dda3fd436b15064f942"
+        },
+        {
+          "story": "campaign-history",
+          "project": "large",
+          "source": {
+            "commit": "a4206a5a19585155678228af32da4c4000629aa9",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "7671301e7ad8f4c254a304733918e22a2070e98c68a2f0fe348fcbe6029713a7"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-a4206a5-four-result/campaign-history/large/darwin-arm64/story.json",
+          "sha256": "73680cd9162cf4b01c1065bfe7c1b5ae8839a067ba45eb952743b9b9031eeaad"
+        },
+        {
+          "story": "campaign-history",
+          "project": "phone",
+          "source": {
+            "commit": "a4206a5a19585155678228af32da4c4000629aa9",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "7671301e7ad8f4c254a304733918e22a2070e98c68a2f0fe348fcbe6029713a7"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-a4206a5-four-result/campaign-history/phone/darwin-arm64/story.json",
+          "sha256": "4c988a6fcba2e61c2d5f57ed7ea87c8927ffefaf43a44d4121ea3d0d3797190b"
+        },
+        {
+          "story": "campaign-history",
+          "project": "short",
+          "source": {
+            "commit": "a4206a5a19585155678228af32da4c4000629aa9",
+            "dirty": false,
+            "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+            "specSha256": "7671301e7ad8f4c254a304733918e22a2070e98c68a2f0fe348fcbe6029713a7"
+          },
+          "status": "passed",
+          "mode": "generate",
+          "manifest": "/tmp/cluster117-history-a4206a5-four-result/campaign-history/short/darwin-arm64/story.json",
+          "sha256": "0dfb6abb9f721616194d91a69d022a7a44abec465c9beb69a5727dd7bb88aa00"
+        }
+      ],
+      "images": [
+        {
+          "path": "campaign-history/desktop/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "5d283f2c737b79ffd9d3de2efaa136c5e5ff73962ed5770927be2bd2ad2ca614"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "2294b9358a36bc32d625e3d9a030604bf555fd7a9f48aab50a040b15560a67a9"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "67908d5f671bc1edc25f3ad950de2479b164ba0345f228fb5319c6641eeb7426"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "837be934d229e18804acd9713d092609d46784042356de002e7d5edd64dd0c41"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "d5830903fb399baf6f5e398db7b69e0e56d7c7eaffbe98170fd50b88b7ac3625"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "ea86dfe9a591bc6b1012d823f4261404064d9ecfdd092d3a1df5a8c009943728"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "11db32d2e5182468222764f0375b3e13a210002a2de9d355597f939e2d8f12da"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "9e867fe7237392eb38f47bec3d34f257a9a7cf4625a63f20750b5eef4a74f12a"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "c5c04a045bb46fc2ea53b03e89779a3bbb4c795d6a7a6b29ecc94c981bf1c1d7"
+        },
+        {
+          "path": "campaign-history/desktop/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "c8fc4b1d6c67db30161f293a134ba25a16ef604358728603d1bd129d96c61252"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "f6df52e5b1130e193ea87b1a569279fc09ad4f01b23939a9770c885236f730e9"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "2599b61e8ef3de90f31b5c6093e6bf7fa3ec5cd1082714f77cc129f88a3f74ff"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "2997740f3751ca15e35c37af7f34a4b32b35e146cdd4ae38113ef69a71b83f7a"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "32becaafb329e758611fef2c6cd491d313a418fe3a8b24da21c6f1e16c5b113b"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "01140358c03b6656a563d722c4514dbb68071997eae04622c54de35894746fb6"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "ea20a8e23e109e953dc806cba3609c567acfa3f21ab7dbaf717de5d3db25fb6d"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "1153696fc9eaa56fccf4ff1eb29958028e0f64b22881339a8c54b536076f9fa0"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "3a572a66dfc0d4f744949ef0e0d0ae03af9ef11f60d68fabb13d4fc65ff290ef"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "47daf2114ae1d552443f47b5b0dc75432dc2242f5c0364b5fa48eca017106266"
+        },
+        {
+          "path": "campaign-history/large/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "e6c32d52011f3aa92bd95b615a05094f693d52a57227d748a90501551208a537"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "c7ae864ba4723ce074d2f2fc4ab05cc5e49bdc9ec94d8cfa53953f723f3bf4eb"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "7ff22f6400b3fb52eee2d30dda9f729a0ec4119cd5ee0e73073eab495c54e35a"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "9ff9ffbec9345391be93170fb4f23d3dca59f941c361967340ac1f308039043b"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "9ffb523ead2855bdf0d4e2fe7b4549af54f34703210ff9b00891314987fcbf89"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "9404a699f044aeb1e44c4e4bd719ccb021f85c753a291fa890237d565a4507cb"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "cc1fb380ebc4460e746f57596d345ecf02c91bdf559df895b6de96b3fc865bad"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "4587ce786bd8b10616822510a358fe8391b11767e3fafeee9c52b6b3987e7f4e"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/010-offline-history-1-history-envoy-reading-device.png",
+          "sha256": "40ddce5e12b48689166d1c3f803a4b09e4e285dd7d3fbac4405a052af60e566d"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/012-retry-history-1-history-envoy-reading-device.png",
+          "sha256": "4587ce786bd8b10616822510a358fe8391b11767e3fafeee9c52b6b3987e7f4e"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/013-return-to-galaxy-1-history-envoy.png",
+          "sha256": "f741b5e65b26e58674431f59d200ba7164331735c26c2243c028ccd9cf9e559b"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/014-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "ce6be6c5202615321e54428ac7cda59f340d200cc5d9e3e75d6a99d3b529951d"
+        },
+        {
+          "path": "campaign-history/phone/darwin-arm64/015-finish-reading-1-history-envoy.png",
+          "sha256": "b748fd9b044d726f65cef2777b1776ecc43ac389a2cb5bd7dcabb0c0edbd1af8"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/002-open-records-1-history-envoy-reading-device.png",
+          "sha256": "27946dbe20dcaced7ce3605831924e253a87f6b467a4e29a281408872dbe8916"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+          "sha256": "57a082dbd2a5d0c0f9b059ad1f4345bf4246309ced8d3032e1c23f6b634fefa7"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+          "sha256": "c6fe2196d1a8cadd505f9d528a19575449f202e26142e86cce077c007b062dfe"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+          "sha256": "72d54a63f624882710c7b5a5ebad366c467b10b448ac5e2c7a8d05e37371f58d"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/007-other-device-change-1-history-envoy-second-device.png",
+          "sha256": "cfa7dd4b2903a1eb18684240c3ca035449a599bd202e86dc673248075999f6da"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+          "sha256": "512dc21a9c61a6af9cd58388b655b1f60a1449d3a5afcd72ffccf5ba7da68aa5"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+          "sha256": "50cac16e90d9f9afa79dd76c2a6c03261c4cf0e7c6537ac921d443e03a57ca44"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/009-return-to-galaxy-1-history-envoy.png",
+          "sha256": "b4884ce64a72b54d50035c477040f02214373543301c4bf09b8e08c87970b2a4"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/010-reload-history-1-history-envoy-reading-device.png",
+          "sha256": "85b6a5564bf520b3ae7d169aef789fc5869c4f9e8d8201a55dc14faa2d6436be"
+        },
+        {
+          "path": "campaign-history/short/darwin-arm64/011-finish-reading-1-history-envoy.png",
+          "sha256": "01f8403be313431f30eafeb1f71557c88d120c63cb86c253e8746fa9a80384dd"
+        }
+      ]
+    }
+  ]
+}
