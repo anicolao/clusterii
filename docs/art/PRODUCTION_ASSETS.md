@@ -105,3 +105,5 @@ The integrated title insignia is original inline vector geometry (thin gold ring
 Generation requested a clean wide cinematic landscape, no UI/lettering/symbols/borders, a fully visible bronze-gunmetal circular orbital station above a blue ocean world, warm habitat windows and distant sunlight, atmospheric clouds and distant coastal settlements, matching plate04's scene direction. No generated lettering enters the interface.
 
 World/orbit WebP SHA256: `a9c87b992bcf333b81e1ada9bf77a2fad6dd059e2b881440f8949d2d3ccd4d7b`. `CommandIcon.svelte` paths are original hand-authored GPL-3.0-only SVG geometry, shared by the actual dock and gallery with real accessible button labels.
+
+`SystemLayers.svelte` reuses the same provenanced world/orbit WebP: the desktop scene is continuous; phone crops place orbital and surface instruments beside their corresponding illustration regions. Shared DevelopmentIcon station/base symbols identify the layers, and FleetSymbol identifies the actual manifest action. No new asset, generated lettering or inferred intelligence is introduced.

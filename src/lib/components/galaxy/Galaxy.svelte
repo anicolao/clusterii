@@ -50,6 +50,9 @@
   import ChartControls from "./ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
   import WorldArt from "../WorldArt.svelte";
+  import SystemLayers from "../SystemLayers.svelte";
+  import FleetSymbol from "../FleetSymbol.svelte";
+  import { layer as developmentLayer, type Layer } from "@shared/construction";
   import CampaignMaintenance from "../CampaignMaintenance.svelte";
   import CampaignRoster from "../CampaignRoster.svelte";
   import Feedback from "../Feedback.svelte";
@@ -189,6 +192,29 @@
   });
   let observation = $state(false);
   let expanded = $state(false);
+  let selectedLayer = $state<Layer | null>(null);
+  let inspectorHeading: HTMLHeadingElement;
+  async function inspectSystem() {
+    expanded = true;
+    await tick();
+    if (inspectorHeading?.isConnected && expanded) inspectorHeading.focus();
+  }
+  async function collapseSystem() {
+    expanded = false;
+    observation = false;
+    await tick();
+    if (inspectorHeading?.isConnected)
+      document
+        .querySelector<HTMLButtonElement>(".galaxy-surface .inspect-system")
+        ?.focus();
+  }
+  function buildLayer(area: Layer) {
+    if (busy || pending) return;
+    selectedLayer = area;
+    if (developmentLayer(constructionChoice) !== area)
+      constructionChoice = area === "orbit" ? "camp" : "base";
+    void openPanel("construction");
+  }
   let more = $state(false);
   let construction = $state(false);
   let constructionChoice = $state<Development>("market");
@@ -213,6 +239,7 @@
     selected = starId;
     constructionChoice =
       action.kind === "construction.build" ? action.type : order!.type;
+    selectedLayer = developmentLayer(constructionChoice);
     void openPanel("construction");
   });
   let economy = $state(false);
@@ -822,9 +849,20 @@
   }
   async function closeConstruction() {
     expanded = true;
+    selectedLayer = developmentLayer(constructionChoice);
     construction = false;
     await tick();
-    document.querySelector<HTMLElement>('[data-focus="construction"]')?.focus();
+    if (!inspectorHeading?.isConnected) return;
+    const entry = document.querySelector<HTMLButtonElement>(
+      '[data-focus="construction"]',
+    );
+    if (entry && !entry.disabled) entry.focus();
+    else
+      document
+        .querySelector<HTMLButtonElement>(
+          `[data-focus="layer-${selectedLayer}"]`,
+        )
+        ?.focus();
   }
   async function closeMilitary() {
     expanded = true;
@@ -1057,21 +1095,18 @@
     aria-label="Selected system"
   >
     <p class="overline gold">{star.class}-class star</p>
-    <h2><Icon kind="star" /> {star.name}</h2>
-    <div class="knowledge-tabs" role="group" aria-label="System information">
-      <ActionButton
-        class="secondary"
-        aria-pressed={!observation}
-        onclick={() => (observation = false)}>System</ActionButton
-      ><ActionButton
-        class="secondary"
-        aria-pressed={observation}
-        onclick={() => {
-          observation = true;
-          expanded = true;
-        }}>Observation</ActionButton
-      >
-    </div>
+    <h2 bind:this={inspectorHeading} tabindex="-1">
+      <Icon kind="star" />
+      {star.name}
+    </h2>
+    {#if expanded}<div class="observation-access">
+        <ActionButton
+          class="quiet"
+          aria-pressed={observation}
+          onclick={() => (observation = !observation)}
+          >{observation ? "Return to system" : "Observation"}</ActionButton
+        >
+      </div>{/if}
     <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This bounded intelligence panel owns its keyboard scrolling.) -->
     <div
       class="system-details"
@@ -1094,7 +1129,17 @@
       }}
       tabindex="0"
     >
-      {#if observation}<SystemObservation {view} starId={star.id} />{:else}
+      {#if observation}<SystemObservation
+          {view}
+          starId={star.id}
+        />{:else if expanded}
+        <SystemLayers
+          {holding}
+          bind:selected={selectedLayer}
+          pending={busy || pending}
+          onbuild={view.productionEnabled && onbuild ? buildLayer : undefined}
+        />
+      {:else}
         <WorldArt />
         <p>
           {view.phase === "active"
@@ -1110,61 +1155,26 @@
             <dt>Surface</dt>
             <dd>{holding?.surface ?? "Unknown"}</dd>
           </div>
-          {#if holding && expanded}<div>
-              <dt>Fighters</dt>
-              <dd>{holding.fighters ?? "Unknown"}</dd>
-            </div>
-            <div>
-              <dt>Infantry</dt>
-              <dd>{holding.infantry ?? "Unknown"}</dd>
-            </div>
-            <div>
-              <dt>Markets / Camps</dt>
-              <dd>
-                {holding.markets ?? "Unknown"} / {holding.camps ?? "Unknown"}
-              </dd>
-            </div>
-            <div>
-              <dt>Bases / Stations</dt>
-              <dd>
-                {holding.bases ?? "Unknown"} / {holding.stations ?? "Unknown"}
-              </dd>
-            </div>
-            <div>
-              <dt>Held credits</dt>
-              <dd>
-                {holding.escrowMilli === undefined
-                  ? "Unknown"
-                  : holding.escrowMilli / 1000}
-              </dd>
-            </div>{/if}
         </dl>
       {/if}
     </div>
     <div class="system-actions">
-      {#if expanded && view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
-          class="secondary"
-          data-focus="military"
-          aria-expanded={military}
-          onclick={() => openPanel("military")}
-          >Fleets · {view.military.fleets.filter(
-            (f) => f.starId === star.id && f.travel?.status !== "traveling",
-          ).length}</ActionButton
+      {#if expanded}
+        <ActionButton class="secondary back-to-chart" onclick={collapseSystem}
+          >Back to galaxy</ActionButton
+        >
+        {#if view.military && (holding?.orbit === "You" || view.military.fleets.length) && onform}<ActionButton
+            class="view-forces"
+            data-focus="military"
+            aria-expanded={military}
+            onclick={() => openPanel("military")}
+            ><FleetSymbol /> View forces</ActionButton
+          >{/if}
+      {:else}<ActionButton
+          class="inspect-system"
+          aria-expanded={false}
+          onclick={inspectSystem}>Inspect system</ActionButton
         >{/if}
-      {#if expanded && holding && view.productionEnabled && onbuild}<ActionButton
-          class="secondary"
-          data-focus="construction"
-          aria-expanded={construction}
-          onclick={() => openPanel("construction")}>Develop</ActionButton
-        >{/if}
-      <ActionButton
-        class="inspect-system"
-        aria-expanded={expanded}
-        onclick={() => {
-          expanded = !expanded;
-          if (!expanded) observation = false;
-        }}>{expanded ? "Collapse system" : "Inspect system"}</ActionButton
-      >
     </div>
   </aside>
   <!-- svelte-ignore a11y_no_noninteractive_element_interactions (Delegated Escape closes the command tray from its real buttons.) -->
@@ -1582,20 +1592,6 @@
 </div>
 
 <style>
-  .knowledge-tabs {
-    display: flex;
-    gap: 8px;
-    flex: none;
-  }
-  .knowledge-tabs :global(button) {
-    min-height: 44px;
-    flex: 1;
-    padding: 8px;
-  }
-  .knowledge-tabs :global([aria-pressed="true"]) {
-    border-color: #7ce9fa;
-    background: #143944;
-  }
   .construction-panel {
     position: absolute;
     inset: 58px 0 0;
@@ -2225,12 +2221,6 @@
     .system-inspector dl > div {
       padding: 6px;
     }
-    .system-inspector .knowledge-tabs {
-      flex-shrink: 0;
-    }
-    .system-inspector:not(.expanded) .knowledge-tabs {
-      display: none;
-    }
     .system-inspector:not(.expanded) .system-details :global(.world-art) {
       aspect-ratio: 4;
     }
@@ -2359,15 +2349,6 @@
       grid-template-rows: auto 1fr;
       gap: 0 28px;
     }
-    .system-inspector.expanded .system-details :global(.world-art) {
-      grid-row: 1 / 3;
-      align-self: stretch;
-      height: 100%;
-      aspect-ratio: auto;
-    }
-    .system-inspector.expanded .system-details > p {
-      margin-top: 0;
-    }
     .system-inspector.expanded .system-actions {
       display: flex;
       justify-content: flex-end;
@@ -2390,14 +2371,6 @@
       aspect-ratio: 2.3;
     }
   }
-  .system-inspector.expanded dl > div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .system-inspector.expanded dl > div:nth-child(-n + 2) {
-    grid-column: 1 / -1;
-  }
   .system-inspector.expanded dd {
     margin: 0;
   }
@@ -2406,73 +2379,121 @@
     font-weight: 600;
     font-size: 23px;
   }
-  .system-inspector.expanded dl {
-    align-content: start;
-    align-self: start;
-  }
   @media (min-width: 701px) {
     .system-inspector.expanded .system-details {
       display: block;
       position: relative;
       isolation: isolate;
     }
-    .system-inspector.expanded .system-details :global(.world-art) {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-    .system-inspector.expanded .system-details :global(.world-art img) {
-      object-position: center 20%;
-    }
-    .system-inspector.expanded .system-details > p,
-    .system-inspector.expanded .system-details > dl {
-      width: 38%;
-      margin-left: auto;
-      margin-right: 20px;
-      padding: 16px;
-      background: #05131ee8;
-    }
-    .system-inspector.expanded .system-details > p {
-      margin-top: 20px;
-      margin-bottom: 0;
-    }
-    .system-inspector.expanded .system-details > dl {
-      margin-top: 0;
-    }
   }
   @media (min-width: 2500px) {
     .campaign-facts strong {
       font-size: 36px;
     }
-    .system-inspector.expanded .system-details > p,
-    .system-inspector.expanded .system-details > dl {
-      font-size: 32px;
-      padding: 28px;
-      margin-right: 40px;
-    }
-    .system-inspector.expanded dl > div {
-      min-height: 72px;
-    }
   }
   @media (min-width: 701px) and (max-height: 800px) {
-    .system-inspector.expanded .system-details > p,
-    .system-inspector.expanded .system-details > dl {
-      padding: 8px;
-      font-size: 14px;
-      margin-right: 12px;
-    }
-    .system-inspector.expanded .system-details > p {
-      margin-top: 12px;
-    }
-    .system-inspector.expanded dl > div {
-      padding: 5px;
-    }
   }
   @media (max-width: 700px) {
     .campaign-facts strong {
       font-size: 20px;
+    }
+  }
+  .system-inspector.expanded .system-details {
+    display: block;
+    position: relative;
+  }
+  .system-inspector.expanded {
+    padding: 20px;
+  }
+  .observation-access {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+  }
+  .observation-access :global(button) {
+    min-height: 44px;
+    padding: 8px 12px;
+  }
+  .system-inspector.expanded h2 {
+    padding-right: 190px;
+  }
+  .system-inspector.expanded .system-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    gap: 16px;
+  }
+  .system-actions :global(.view-forces),
+  .system-actions :global(.back-to-chart) {
+    min-height: 58px;
+    min-width: 220px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 20px;
+  }
+  .system-actions :global(.view-forces) {
+    background: linear-gradient(#286d82, #164352);
+  }
+  @media (min-width: 2500px) {
+    .system-inspector.expanded {
+      padding: 32px;
+    }
+    .system-inspector.expanded h2 {
+      font-size: 64px;
+      padding-right: 300px;
+    }
+    .observation-access {
+      top: 28px;
+      right: 32px;
+    }
+    .observation-access :global(button) {
+      font-size: 28px;
+      min-height: 72px;
+    }
+    .system-actions :global(.view-forces),
+    .system-actions :global(.back-to-chart) {
+      min-height: 92px;
+      min-width: 380px;
+      font-size: 34px;
+    }
+    .system-actions :global(.view-forces svg) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  @media (max-width: 700px) {
+    .system-inspector.expanded {
+      padding: 12px;
+    }
+    .system-inspector.expanded h2 {
+      padding-right: 0;
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+    .observation-access {
+      position: static;
+      align-self: flex-end;
+      margin-top: -6px;
+    }
+    .observation-access :global(button) {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+    .system-inspector.expanded .system-actions {
+      padding-top: 10px;
+      gap: 8px;
+    }
+    .system-actions :global(.view-forces),
+    .system-actions :global(.back-to-chart) {
+      min-width: 0;
+      flex: 1;
+      min-height: 50px;
+      font-size: 14px;
+      padding: 8px;
+      gap: 8px;
     }
   }
 </style>

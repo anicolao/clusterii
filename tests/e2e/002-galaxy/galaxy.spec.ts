@@ -18,7 +18,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
     title: "Inspect a system without losing the galaxy",
     inventory: ["UX-02", "UX-03", "UX-04", "UX-15", "UX-16"],
     description:
-      "Four ordinary authenticated players create, join and start one real campaign. The owner reads authorized resources, expands the independent ownership layers and uses the global dock without issuing an order. Developer entitlement, fixed catalogue/domain clock and real scheduler HTTP delivery are explicit harness controls, not injected seats or hosted scheduling evidence.",
+      "Four ordinary authenticated players create, join and start one real campaign. The owner reads authorized resources, expands the independent ownership layers and uses the global dock without issuing an unrelated order. Developer entitlement, fixed catalogue/admission clock, the existing construction-prefix command clock and real scheduler HTTP delivery are explicit harness controls, not injected seats or hosted scheduling evidence. The layer journey reserves a real orbital development and recovers that accepted order without resubmitting it.",
   });
   const contexts: BrowserContext[] = [],
     pages: Page[] = [];
@@ -26,7 +26,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
     { length: 4 },
     (_, i) => `galaxy-${info.project.name}-${Date.now()}-${i}@example.test`,
   );
-  const name = `Scheduled story command ${info.project.name}`;
+  const name = `Scheduled story construction layers ${info.project.name}`;
   const aliases = ["Chart envoy", "Tidal envoy", "Night envoy", "Solar envoy"];
   const keyboard = async (page: Page, name: string) => {
     await button(page, name).focus();
@@ -221,10 +221,12 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           await expect(inspector.getByRole("heading", { level: 2 })).toHaveText(
             selectedName,
           );
-          await expect(button(owner, "Collapse system")).toHaveAttribute(
-            "aria-expanded",
-            "true",
-          );
+          await expect(
+            inspector.getByRole("region", {
+              name: "System layers",
+              exact: true,
+            }),
+          ).toBeVisible();
         },
       },
       verifications: [
@@ -254,15 +256,197 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           page: owner,
           player: aliases[0],
           surface: "game",
-          primary: [button(owner, "Collapse system"), button(owner, "Develop")],
+          primary: [
+            button(owner, "Back to galaxy"),
+            button(owner, "View forces"),
+          ],
+        },
+      ],
+    });
+    const constructionPanel = owner.getByRole("region", {
+      name: "System construction",
+      exact: true,
+    });
+    let reservedBalance = "";
+    const readAcceptedQueue = async () => {
+      await constructionPanel
+        .getByRole("region", { name: "Construction details", exact: true })
+        .focus();
+      await owner.keyboard.press("End");
+      await expect
+        .poll(() =>
+          constructionPanel
+            .getByText("Queued · eligible tick 1", { exact: false })
+            .evaluate((el) => {
+              const box = el.getBoundingClientRect();
+              const region = el
+                .closest('[role="region"]')!
+                .getBoundingClientRect();
+              return (
+                box.top >= region.top &&
+                box.bottom <= region.bottom &&
+                box.top >= 0 &&
+                box.bottom <= innerHeight
+              );
+            }),
+        )
+        .toBe(true);
+    };
+    await story.step("inspect-orbital-authority", {
+      actor: aliases[0],
+      description:
+        "Open the distinct Orbit instrument to inspect entitled fighters, training camps and science stations.",
+      action: async () => keyboard(owner, "Inspect Orbit · owner You"),
+      acknowledgement: {
+        spec: "The orbit instrument expands and exposes an applicable real construction entry.",
+        check: async () => {
+          await expect(
+            button(owner, "Inspect Orbit · owner You"),
+          ).toHaveAttribute("aria-expanded", "true");
+          await expect(button(owner, "Build in orbit")).toBeEnabled();
+        },
+      },
+      verifications: [
+        {
+          spec: "Orbital facts are labelled separately from the independent Surface owner.",
+          check: async () => {
+            await expect(
+              owner
+                .getByRole("region", { name: "Orbital control", exact: true })
+                .getByText("Fighters", { exact: true }),
+            ).toBeVisible();
+            await expect(
+              button(owner, "Inspect Surface · owner You"),
+            ).toHaveAttribute("aria-expanded", "false");
+          },
+        },
+      ],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [
+            button(owner, "Build in orbit"),
+            button(owner, "View forces"),
+            button(owner, "Back to galaxy"),
+          ],
+        },
+      ],
+    });
+    await story.step("reserve-orbital-development", {
+      actor: aliases[0],
+      description:
+        "Enter construction from Orbit and submit the actual training-camp order, reserving credits only after authoritative acceptance.",
+      action: async () => {
+        await keyboard(owner, "Build in orbit");
+        await expect(
+          constructionPanel.getByRole("radio", { name: /^Training camp/ }),
+        ).toBeChecked();
+        reservedBalance = await constructionPanel
+          .getByText("Balance after", { exact: false })
+          .innerText();
+        await keyboard(owner, "Build training camp");
+      },
+      acknowledgement: {
+        spec: "The real construction receipt accepts the order and credits are reserved.",
+        check: async () => {
+          await expect(constructionPanel.getByRole("status")).toContainText(
+            "Construction order accepted. Credits reserved",
+          );
+          await expect(
+            constructionPanel.getByRole("button", {
+              name: "Cancel training camp order",
+              exact: true,
+            }),
+          ).toHaveCount(1);
+        },
+      },
+      verifications: [
+        {
+          spec: "The authorized balance matches the reviewed quote and exactly one orbital order is listed.",
+          check: async () => {
+            await expect(
+              constructionPanel
+                .locator("header")
+                .getByText("Available credits", { exact: false }),
+            ).toHaveText(
+              reservedBalance.replace("Balance after", "Available credits"),
+            );
+            await expect(
+              constructionPanel.getByText("Queued · eligible tick 1", {
+                exact: false,
+              }),
+            ).toBeVisible();
+            await readAcceptedQueue();
+          },
+        },
+      ],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [button(owner, "Back to galaxy")],
+        },
+      ],
+    });
+    await story.step("recover-accepted-orbit-order", {
+      actor: aliases[0],
+      description:
+        "Reload, return through Inspect and Orbit, and recover the accepted queue from the real authorized view without sending another build.",
+      action: async () => {
+        await owner.reload();
+        await keyboard(owner, "Inspect system");
+        await keyboard(owner, "Inspect Orbit · owner You");
+        await keyboard(owner, "Build in orbit");
+      },
+      acknowledgement: {
+        spec: "One accepted orbital order and the reserved balance recover after reload.",
+        check: async () => {
+          await expect(
+            constructionPanel.getByRole("button", {
+              name: "Cancel training camp order",
+              exact: true,
+            }),
+          ).toHaveCount(1);
+          await expect(
+            constructionPanel
+              .locator("header")
+              .getByText("Available credits", { exact: false }),
+          ).toHaveText(
+            reservedBalance.replace("Balance after", "Available credits"),
+          );
+        },
+      },
+      verifications: [
+        {
+          spec: "Construction still selects the orbital training camp and its recovered queue is readable.",
+          check: async () => {
+            await expect(
+              constructionPanel.getByRole("radio", { name: /^Training camp/ }),
+            ).toBeChecked();
+            await readAcceptedQueue();
+          },
+        },
+      ],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [button(owner, "Back to galaxy")],
         },
       ],
     });
     await story.step("read-lower-system-facts", {
       actor: aliases[0],
       description:
-        "Focus the bounded system reading region and use End to read the lower authorized developments and held credits while retaining the contextual controls.",
+        "Close recovered construction to its Orbit opener, select Surface, then use End in the bounded reading region to read held credits while retaining contextual controls.",
       action: async () => {
+        await keyboard(owner, "Back to galaxy");
+        await expect(button(owner, "Build in orbit")).toBeFocused();
+        await keyboard(owner, "Inspect Surface · owner You");
         await owner
           .getByRole("region", { name: "System details", exact: true })
           .focus();
@@ -278,7 +462,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
                 .evaluate((el) => {
                   const box = el.getBoundingClientRect(),
                     region = el
-                      .closest('[role="region"]')!
+                      .closest('[aria-label="System details"]')!
                       .getBoundingClientRect();
                   return (
                     box.top >= region.top &&
@@ -307,7 +491,54 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           page: owner,
           player: aliases[0],
           surface: "game",
-          primary: [button(owner, "Collapse system"), button(owner, "Develop")],
+          primary: [
+            button(owner, "Back to galaxy"),
+            button(owner, "View forces"),
+          ],
+        },
+      ],
+    });
+    await story.step("review-surface-development", {
+      actor: aliases[0],
+      description:
+        "Use the separate Surface instrument to open its actual base construction quote without submitting a second order.",
+      action: async () => keyboard(owner, "Build on surface"),
+      acknowledgement: {
+        spec: "The actual construction instrument selects a surface Base.",
+        check: async () =>
+          expect(
+            constructionPanel.getByRole("radio", { name: /^Base Surface/ }),
+          ).toBeChecked(),
+      },
+      verifications: [
+        {
+          spec: "The prior accepted orbital order remains singular and the reserved balance is unchanged.",
+          check: async () => {
+            await expect(
+              constructionPanel.getByRole("button", {
+                name: "Cancel training camp order",
+                exact: true,
+              }),
+            ).toHaveCount(1);
+            await expect(
+              constructionPanel
+                .locator("header")
+                .getByText("Available credits", { exact: false }),
+            ).toHaveText(
+              reservedBalance.replace("Balance after", "Available credits"),
+            );
+          },
+        },
+      ],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [
+            button(owner, "Build base"),
+            button(owner, "Back to galaxy"),
+          ],
         },
       ],
     });
@@ -316,7 +547,9 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
       description:
         "Collapse the system, open the global command dock and read Economy through the actual authorized projection.",
       action: async () => {
-        await keyboard(owner, "Collapse system");
+        await keyboard(owner, "Back to galaxy");
+        await expect(button(owner, "Build on surface")).toBeFocused();
+        await keyboard(owner, "Back to galaxy");
         await openDock();
         await keyboard(owner, "Economy");
       },
