@@ -1,0 +1,22 @@
+{
+  "run": 40022816686,
+  "head": "977df46e9a73d030d9b8d011ce8529af06f06e66",
+  "conclusion": "success",
+  "artifact": {
+    "id": 12533224790,
+    "bytes": 452638678,
+    "sha256": "ce15954327d0a2ce4324cee5c3dfd0bbe3dfa33f2a672014a407bea3527910c7",
+    "members": 228,
+    "profileIngressMembers": 0
+  },
+  "handlerEntryCount": 171,
+  "transactionSettledCount": 171,
+  "handlerFailureCount": 0,
+  "diagnosticUnavailableWarnings": 0,
+  "applicationLogSHA256": "955aa2859b4157d3f30a4a676bf83dd2cf8d0ef79e7ac5b3e8f9af522d1ce2cf",
+  "limits": [
+    "No profile-ingress.jsonl in verified archive. HTTP correlation unavailable.",
+    "No initialization/guard/unmatched-request marker was implemented, so missing file cannot distinguish import/install failure from unmatched requests or retention omission.",
+    "Success is negative reproduction, not historical cause resolution."
+  ]
+}

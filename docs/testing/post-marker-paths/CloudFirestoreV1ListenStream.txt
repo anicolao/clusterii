@@ -1,0 +1,788 @@
+Compiled from "CloudFirestoreV1ListenStream.java"
+public final class com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1ListenStream implements com.google.cloud.datastore.emulator.impl.watch.ListenStream<com.google.firestore.v1.ListenRequest> {
+  private static final com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1RecordConverterImpl RECORD_CONVERTER;
+
+  private final com.google.cloud.datastore.emulator.impl.context.FirestoreEmulatorRequestContext context;
+
+  private final java.util.concurrent.atomic.AtomicInteger lastId;
+
+  private final com.google.cloud.datastore.emulator.impl.watch.StreamId streamId;
+
+  private final com.google.cloud.datastore.emulator.impl.util.FirestoreEmulatorConverters converters;
+
+  private final com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager<com.google.firestore.v1.ListenRequest> manager;
+
+  private final io.grpc.stub.StreamObserver<com.google.firestore.v1.ListenResponse> responseObserver;
+
+  private final java.util.Set<com.google.cloud.datastore.emulator.impl.watch.TargetId> targetIds;
+
+  private final com.google.common.time.TimeSource timeSource;
+
+  private final boolean experimentalMode;
+
+  public static com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1ListenStream create(com.google.cloud.datastore.emulator.impl.context.FirestoreEmulatorRequestContext, com.google.cloud.datastore.emulator.impl.watch.StreamId, com.google.cloud.datastore.emulator.impl.util.FirestoreEmulatorConverters, com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager<com.google.firestore.v1.ListenRequest>, io.grpc.stub.StreamObserver<com.google.firestore.v1.ListenResponse>, boolean);
+    Code:
+       0: new           #1                  // class com/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1ListenStream
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: aload_2
+       7: aload_3
+       8: aload         4
+      10: aload_3
+      11: invokevirtual #3                  // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.timeSource:()Lcom/google/common/time/TimeSource;
+      14: iload         5
+      16: invokespecial #9                  // Method "<init>":(Lcom/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext;Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;Lio/grpc/stub/StreamObserver;Lcom/google/common/time/TimeSource;Z)V
+      19: areturn
+
+  private com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1ListenStream(com.google.cloud.datastore.emulator.impl.context.FirestoreEmulatorRequestContext, com.google.cloud.datastore.emulator.impl.watch.StreamId, com.google.cloud.datastore.emulator.impl.util.FirestoreEmulatorConverters, com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager<com.google.firestore.v1.ListenRequest>, io.grpc.stub.StreamObserver<com.google.firestore.v1.ListenResponse>, com.google.common.time.TimeSource, boolean);
+    Code:
+       0: aload_0
+       1: invokespecial #13                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #18                 // class java/util/concurrent/atomic/AtomicInteger
+       8: dup
+       9: invokespecial #20                 // Method java/util/concurrent/atomic/AtomicInteger."<init>":()V
+      12: putfield      #21                 // Field lastId:Ljava/util/concurrent/atomic/AtomicInteger;
+      15: aload_0
+      16: invokestatic  #25                 // Method java/util/concurrent/ConcurrentHashMap.newKeySet:()Ljava/util/concurrent/ConcurrentHashMap$KeySetView;
+      19: putfield      #31                 // Field targetIds:Ljava/util/Set;
+      22: aload_0
+      23: aload_1
+      24: putfield      #35                 // Field context:Lcom/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext;
+      27: aload_0
+      28: aload_2
+      29: putfield      #39                 // Field streamId:Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;
+      32: aload_0
+      33: aload_3
+      34: putfield      #43                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+      37: aload_0
+      38: aload         4
+      40: putfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+      43: aload_0
+      44: aload         5
+      46: putfield      #51                 // Field responseObserver:Lio/grpc/stub/StreamObserver;
+      49: aload_0
+      50: aload         6
+      52: putfield      #55                 // Field timeSource:Lcom/google/common/time/TimeSource;
+      55: aload_0
+      56: iload         7
+      58: putfield      #58                 // Field experimentalMode:Z
+      61: return
+
+  public com.google.cloud.datastore.emulator.impl.context.FirestoreEmulatorRequestContext context();
+    Code:
+       0: aload_0
+       1: getfield      #35                 // Field context:Lcom/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext;
+       4: areturn
+
+  public void notify(com.google.cloud.datastore.emulator.impl.watch.TargetId, com.google.cloud.datastore.core.rep.ReadResponse) throws com.google.cloud.datastore.core.exception.InvalidConversionException;
+    Code:
+       0: aload_2
+       1: invokevirtual #62                 // Method com/google/cloud/datastore/core/rep/ReadResponse.results:()Lcom/google/common/collect/ImmutableList;
+       4: invokevirtual #68                 // Method com/google/common/collect/ImmutableList.iterator:()Lcom/google/common/collect/UnmodifiableIterator;
+       7: astore_3
+       8: aload_3
+       9: invokeinterface #74,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      14: ifeq          145
+      17: aload_3
+      18: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      23: checkcast     #84                 // class com/google/cloud/datastore/core/rep/ReadResult
+      26: astore        4
+      28: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+      31: astore        5
+      33: aload         4
+      35: invokevirtual #92                 // Method com/google/cloud/datastore/core/rep/ReadResult.exists:()Z
+      38: ifeq          79
+      41: aload_0
+      42: getfield      #43                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+      45: aload         4
+      47: invokevirtual #95                 // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toDocument:(Lcom/google/cloud/datastore/core/rep/ReadResult;)Lcom/google/firestore/v1/Document;
+      50: astore        6
+      52: aload         5
+      54: invokestatic  #101                // Method com/google/firestore/v1/DocumentChange.newBuilder:()Lcom/google/firestore/v1/DocumentChange$Builder;
+      57: aload_1
+      58: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      61: invokevirtual #112                // Method com/google/firestore/v1/DocumentChange$Builder.addTargetIds:(I)Lcom/google/firestore/v1/DocumentChange$Builder;
+      64: aload         6
+      66: invokevirtual #118                // Method com/google/firestore/v1/DocumentChange$Builder.setDocument:(Lcom/google/firestore/v1/Document;)Lcom/google/firestore/v1/DocumentChange$Builder;
+      69: invokevirtual #122                // Method com/google/firestore/v1/DocumentChange$Builder.build:()Lcom/google/firestore/v1/DocumentChange;
+      72: invokevirtual #126                // Method com/google/firestore/v1/ListenResponse$Builder.setDocumentChange:(Lcom/google/firestore/v1/DocumentChange;)Lcom/google/firestore/v1/ListenResponse$Builder;
+      75: pop
+      76: goto          133
+      79: invokestatic  #132                // Method com/google/firestore/v1/DocumentDelete.newBuilder:()Lcom/google/firestore/v1/DocumentDelete$Builder;
+      82: aload_1
+      83: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      86: invokevirtual #137                // Method com/google/firestore/v1/DocumentDelete$Builder.addRemovedTargetIds:(I)Lcom/google/firestore/v1/DocumentDelete$Builder;
+      89: aload         4
+      91: invokevirtual #143                // Method com/google/cloud/datastore/core/rep/ReadResult.entityRef:()Lcom/google/cloud/datastore/core/rep/EntityRef;
+      94: invokestatic  #147                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toDocumentName:(Lcom/google/cloud/datastore/core/rep/EntityRef;)Ljava/lang/String;
+      97: invokevirtual #151                // Method com/google/firestore/v1/DocumentDelete$Builder.setDocument:(Ljava/lang/String;)Lcom/google/firestore/v1/DocumentDelete$Builder;
+     100: astore        6
+     102: aload_2
+     103: invokevirtual #154                // Method com/google/cloud/datastore/core/rep/ReadResponse.readTime:()Ljava/time/Instant;
+     106: ifnull        122
+     109: aload         6
+     111: aload_2
+     112: invokevirtual #154                // Method com/google/cloud/datastore/core/rep/ReadResponse.readTime:()Ljava/time/Instant;
+     115: invokestatic  #158                // Method com/google/protobuf/util/JavaTimeConversions.toProtoTimestamp:(Ljava/time/Instant;)Lcom/google/protobuf/Timestamp;
+     118: invokevirtual #164                // Method com/google/firestore/v1/DocumentDelete$Builder.setReadTime:(Lcom/google/protobuf/Timestamp;)Lcom/google/firestore/v1/DocumentDelete$Builder;
+     121: pop
+     122: aload         5
+     124: aload         6
+     126: invokevirtual #168                // Method com/google/firestore/v1/DocumentDelete$Builder.build:()Lcom/google/firestore/v1/DocumentDelete;
+     129: invokevirtual #171                // Method com/google/firestore/v1/ListenResponse$Builder.setDocumentDelete:(Lcom/google/firestore/v1/DocumentDelete;)Lcom/google/firestore/v1/ListenResponse$Builder;
+     132: pop
+     133: aload_0
+     134: aload         5
+     136: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+     139: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+     142: goto          8
+     145: return
+
+  public void notify(com.google.cloud.datastore.emulator.impl.watch.TargetId, com.google.common.collect.ImmutableList<java.util.Map<com.google.cloud.datastore.core.rep.PropertyName, com.google.cloud.datastore.core.rep.values.Value>>) throws com.google.cloud.datastore.core.exception.InvalidConversionException;
+    Code:
+       0: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+       3: astore_3
+       4: aload_2
+       5: invokevirtual #68                 // Method com/google/common/collect/ImmutableList.iterator:()Lcom/google/common/collect/UnmodifiableIterator;
+       8: astore        4
+      10: aload         4
+      12: invokeinterface #74,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      17: ifeq          97
+      20: aload         4
+      22: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      27: checkcast     #182                // class java/util/Map
+      30: astore        5
+      32: aload         5
+      34: invokestatic  #184                // Method com/google/common/labs/collect/BiStream.from:(Ljava/util/Map;)Lcom/google/common/labs/collect/BiStream;
+      37: invokedynamic #190,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      42: invokevirtual #194                // Method com/google/common/labs/collect/BiStream.mapKeys:(Ljava/util/function/Function;)Lcom/google/common/labs/collect/BiStream;
+      45: invokevirtual #198                // Method com/google/common/labs/collect/BiStream.toMap:()Lcom/google/common/collect/ImmutableMap;
+      48: astore        6
+      50: aload_3
+      51: invokestatic  #101                // Method com/google/firestore/v1/DocumentChange.newBuilder:()Lcom/google/firestore/v1/DocumentChange$Builder;
+      54: aload_1
+      55: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      58: invokevirtual #112                // Method com/google/firestore/v1/DocumentChange$Builder.addTargetIds:(I)Lcom/google/firestore/v1/DocumentChange$Builder;
+      61: getstatic     #202                // Field RECORD_CONVERTER:Lcom/google/cloud/datastore/core/firestorev1/converter/FirestoreV1RecordConverterImpl;
+      64: aload_0
+      65: getfield      #35                 // Field context:Lcom/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext;
+      68: invokevirtual #206                // Method com/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext.databaseRef:()Lcom/google/cloud/datastore/core/rep/DatabaseRef;
+      71: aload         6
+      73: invokevirtual #212                // Method com/google/cloud/datastore/core/firestorev1/converter/FirestoreV1RecordConverterImpl.apply:(Lcom/google/cloud/datastore/core/rep/DatabaseRef;Ljava/util/Map;)Lcom/google/firestore/v1/Document;
+      76: invokevirtual #118                // Method com/google/firestore/v1/DocumentChange$Builder.setDocument:(Lcom/google/firestore/v1/Document;)Lcom/google/firestore/v1/DocumentChange$Builder;
+      79: invokevirtual #122                // Method com/google/firestore/v1/DocumentChange$Builder.build:()Lcom/google/firestore/v1/DocumentChange;
+      82: invokevirtual #126                // Method com/google/firestore/v1/ListenResponse$Builder.setDocumentChange:(Lcom/google/firestore/v1/DocumentChange;)Lcom/google/firestore/v1/ListenResponse$Builder;
+      85: pop
+      86: aload_0
+      87: aload_3
+      88: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+      91: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+      94: goto          10
+      97: return
+
+  public void notifyReset(com.google.cloud.datastore.emulator.impl.watch.TargetId);
+    Code:
+       0: aload_0
+       1: getfield      #55                 // Field timeSource:Lcom/google/common/time/TimeSource;
+       4: invokeinterface #217,  1          // InterfaceMethod com/google/common/time/TimeSource.instant:()Ljava/time/Instant;
+       9: astore_2
+      10: aload_0
+      11: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+      14: invokestatic  #222                // Method com/google/firestore/v1/TargetChange.newBuilder:()Lcom/google/firestore/v1/TargetChange$Builder;
+      17: aload_2
+      18: invokestatic  #227                // Method toResumeToken:(Ljava/time/Instant;)Lcom/google/protobuf/ByteString;
+      21: invokevirtual #231                // Method com/google/firestore/v1/TargetChange$Builder.setResumeToken:(Lcom/google/protobuf/ByteString;)Lcom/google/firestore/v1/TargetChange$Builder;
+      24: aload_1
+      25: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      28: invokevirtual #237                // Method com/google/firestore/v1/TargetChange$Builder.addTargetIds:(I)Lcom/google/firestore/v1/TargetChange$Builder;
+      31: getstatic     #240                // Field com/google/firestore/v1/TargetChange$TargetChangeType.RESET:Lcom/google/firestore/v1/TargetChange$TargetChangeType;
+      34: invokevirtual #246                // Method com/google/firestore/v1/TargetChange$Builder.setTargetChangeType:(Lcom/google/firestore/v1/TargetChange$TargetChangeType;)Lcom/google/firestore/v1/TargetChange$Builder;
+      37: invokevirtual #250                // Method com/google/firestore/v1/ListenResponse$Builder.setTargetChange:(Lcom/google/firestore/v1/TargetChange$Builder;)Lcom/google/firestore/v1/ListenResponse$Builder;
+      40: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+      43: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+      46: return
+
+  public void notifySynced();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #55                 // Field timeSource:Lcom/google/common/time/TimeSource;
+       5: invokeinterface #217,  1          // InterfaceMethod com/google/common/time/TimeSource.instant:()Ljava/time/Instant;
+      10: invokevirtual #254                // Method notifySynced:(Ljava/time/Instant;)V
+      13: return
+
+  public void notifySynced(java.time.Instant);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #258                // Method notifySyncedInternal:(Ljava/time/Instant;)V
+       5: return
+
+  public void notifyTargetAdd(com.google.cloud.datastore.emulator.impl.watch.TargetId);
+    Code:
+       0: aload_0
+       1: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+       4: invokestatic  #222                // Method com/google/firestore/v1/TargetChange.newBuilder:()Lcom/google/firestore/v1/TargetChange$Builder;
+       7: getstatic     #261                // Field com/google/firestore/v1/TargetChange$TargetChangeType.ADD:Lcom/google/firestore/v1/TargetChange$TargetChangeType;
+      10: invokevirtual #246                // Method com/google/firestore/v1/TargetChange$Builder.setTargetChangeType:(Lcom/google/firestore/v1/TargetChange$TargetChangeType;)Lcom/google/firestore/v1/TargetChange$Builder;
+      13: aload_1
+      14: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      17: invokevirtual #237                // Method com/google/firestore/v1/TargetChange$Builder.addTargetIds:(I)Lcom/google/firestore/v1/TargetChange$Builder;
+      20: invokevirtual #250                // Method com/google/firestore/v1/ListenResponse$Builder.setTargetChange:(Lcom/google/firestore/v1/TargetChange$Builder;)Lcom/google/firestore/v1/ListenResponse$Builder;
+      23: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+      26: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+      29: return
+
+  public void notifySyncedInternal(java.time.Instant);
+    Code:
+       0: invokestatic  #222                // Method com/google/firestore/v1/TargetChange.newBuilder:()Lcom/google/firestore/v1/TargetChange$Builder;
+       3: getstatic     #264                // Field com/google/firestore/v1/TargetChange$TargetChangeType.NO_CHANGE:Lcom/google/firestore/v1/TargetChange$TargetChangeType;
+       6: invokevirtual #246                // Method com/google/firestore/v1/TargetChange$Builder.setTargetChangeType:(Lcom/google/firestore/v1/TargetChange$TargetChangeType;)Lcom/google/firestore/v1/TargetChange$Builder;
+       9: aload_1
+      10: invokestatic  #158                // Method com/google/protobuf/util/JavaTimeConversions.toProtoTimestamp:(Ljava/time/Instant;)Lcom/google/protobuf/Timestamp;
+      13: invokevirtual #267                // Method com/google/firestore/v1/TargetChange$Builder.setReadTime:(Lcom/google/protobuf/Timestamp;)Lcom/google/firestore/v1/TargetChange$Builder;
+      16: aload_1
+      17: invokestatic  #227                // Method toResumeToken:(Ljava/time/Instant;)Lcom/google/protobuf/ByteString;
+      20: invokevirtual #231                // Method com/google/firestore/v1/TargetChange$Builder.setResumeToken:(Lcom/google/protobuf/ByteString;)Lcom/google/firestore/v1/TargetChange$Builder;
+      23: astore_2
+      24: aload_0
+      25: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+      28: aload_2
+      29: invokevirtual #250                // Method com/google/firestore/v1/ListenResponse$Builder.setTargetChange:(Lcom/google/firestore/v1/TargetChange$Builder;)Lcom/google/firestore/v1/ListenResponse$Builder;
+      32: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+      35: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+      38: return
+
+  private void sendResponse(com.google.firestore.v1.ListenResponse);
+    Code:
+       0: aload_0
+       1: getfield      #51                 // Field responseObserver:Lio/grpc/stub/StreamObserver;
+       4: dup
+       5: astore_2
+       6: monitorenter
+       7: aload_0
+       8: getfield      #51                 // Field responseObserver:Lio/grpc/stub/StreamObserver;
+      11: aload_1
+      12: invokeinterface #270,  2          // InterfaceMethod io/grpc/stub/StreamObserver.onNext:(Ljava/lang/Object;)V
+      17: aload_2
+      18: monitorexit
+      19: goto          27
+      22: astore_3
+      23: aload_2
+      24: monitorexit
+      25: aload_3
+      26: athrow
+      27: return
+    Exception table:
+       from    to  target type
+           7    19    22   any
+          22    25    22   any
+
+  private void sendError(java.lang.Throwable);
+    Code:
+       0: aload_0
+       1: getfield      #51                 // Field responseObserver:Lio/grpc/stub/StreamObserver;
+       4: dup
+       5: astore_2
+       6: monitorenter
+       7: aload_0
+       8: getfield      #51                 // Field responseObserver:Lio/grpc/stub/StreamObserver;
+      11: aload_1
+      12: invokeinterface #276,  2          // InterfaceMethod io/grpc/stub/StreamObserver.onError:(Ljava/lang/Throwable;)V
+      17: aload_2
+      18: monitorexit
+      19: goto          27
+      22: astore_3
+      23: aload_2
+      24: monitorexit
+      25: aload_3
+      26: athrow
+      27: return
+    Exception table:
+       from    to  target type
+           7    19    22   any
+          22    25    22   any
+
+  public com.google.common.collect.ImmutableSet<com.google.cloud.datastore.emulator.impl.watch.TargetId> targetIds();
+    Code:
+       0: aload_0
+       1: getfield      #31                 // Field targetIds:Ljava/util/Set;
+       4: invokestatic  #280                // Method com/google/common/collect/ImmutableSet.copyOf:(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableSet;
+       7: areturn
+
+  public com.google.cloud.datastore.emulator.impl.watch.StreamId streamId();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field streamId:Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;
+       4: areturn
+
+  public void onNext(com.google.firestore.v1.ListenRequest);
+    Code:
+       0: getstatic     #286                // Field com/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1ListenStream$1.$SwitchMap$com$google$firestore$v1$ListenRequest$TargetChangeCase:[I
+       3: aload_1
+       4: invokevirtual #292                // Method com/google/firestore/v1/ListenRequest.getTargetChangeCase:()Lcom/google/firestore/v1/ListenRequest$TargetChangeCase;
+       7: invokevirtual #298                // Method com/google/firestore/v1/ListenRequest$TargetChangeCase.ordinal:()I
+      10: iaload
+      11: tableswitch   { // 1 to 4
+                     1: 40
+                     2: 112
+                     3: 146
+                     4: 200
+               default: 220
+          }
+      40: aload_0
+      41: aload_1
+      42: invokevirtual #303                // Method com/google/firestore/v1/ListenRequest.getAddTarget:()Lcom/google/firestore/v1/Target;
+      45: invokevirtual #307                // Method com/google/firestore/v1/Target.getTargetId:()I
+      48: invokevirtual #312                // Method nextTargetId:(I)Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;
+      51: astore_2
+      52: aload_0
+      53: aload_2
+      54: aload_1
+      55: invokevirtual #303                // Method com/google/firestore/v1/ListenRequest.getAddTarget:()Lcom/google/firestore/v1/Target;
+      58: invokevirtual #316                // Method addTarget:(Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;Lcom/google/firestore/v1/Target;)V
+      61: goto          109
+      64: astore_3
+      65: aload_0
+      66: aload_2
+      67: aload_3
+      68: invokestatic  #322                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      71: invokevirtual #328                // Method notifyTargetRemoveInternal:(Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;Ljava/util/Optional;)V
+      74: aload_0
+      75: getfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+      78: aload_0
+      79: getfield      #39                 // Field streamId:Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;
+      82: aload_2
+      83: invokestatic  #332                // Method com/google/cloud/datastore/emulator/impl/watch/StreamTarget.of:(Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;)Lcom/google/cloud/datastore/emulator/impl/watch/StreamTarget;
+      86: invokevirtual #337                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.removeTarget:(Lcom/google/cloud/datastore/emulator/impl/watch/StreamTarget;)V
+      89: goto          109
+      92: astore_3
+      93: aload_0
+      94: getfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+      97: aload_0
+      98: getfield      #39                 // Field streamId:Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;
+     101: invokevirtual #345                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.removeStream:(Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;)V
+     104: aload_0
+     105: aload_3
+     106: invokevirtual #349                // Method sendError:(Ljava/lang/Throwable;)V
+     109: goto          220
+     112: aload_1
+     113: invokevirtual #352                // Method com/google/firestore/v1/ListenRequest.getRemoveTarget:()I
+     116: invokestatic  #355                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.of:(I)Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;
+     119: astore_2
+     120: aload_0
+     121: aload_2
+     122: invokestatic  #357                // Method java/util/Optional.empty:()Ljava/util/Optional;
+     125: invokevirtual #328                // Method notifyTargetRemoveInternal:(Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;Ljava/util/Optional;)V
+     128: aload_0
+     129: getfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+     132: aload_0
+     133: getfield      #39                 // Field streamId:Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;
+     136: aload_2
+     137: invokestatic  #332                // Method com/google/cloud/datastore/emulator/impl/watch/StreamTarget.of:(Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;)Lcom/google/cloud/datastore/emulator/impl/watch/StreamTarget;
+     140: invokevirtual #337                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.removeTarget:(Lcom/google/cloud/datastore/emulator/impl/watch/StreamTarget;)V
+     143: goto          220
+     146: aload_0
+     147: getfield      #58                 // Field experimentalMode:Z
+     150: ifne          164
+     153: new           #341                // class java/lang/IllegalArgumentException
+     156: dup
+     157: ldc_w         #361                // String InitializeRequest is not supported in the Firestore emulator yet.
+     160: invokespecial #363                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     163: athrow
+     164: aload_0
+     165: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+     168: invokestatic  #366                // Method com/google/firestore/v1/InitializeStreamResponse.newBuilder:()Lcom/google/firestore/v1/InitializeStreamResponse$Builder;
+     171: aload_1
+     172: invokevirtual #371                // Method com/google/firestore/v1/ListenRequest.getInitializeRequest:()Lcom/google/firestore/v1/InitializeStreamRequest;
+     175: invokevirtual #375                // Method com/google/firestore/v1/InitializeStreamRequest.getSessionToken:()Lcom/google/protobuf/ByteString;
+     178: invokevirtual #381                // Method com/google/firestore/v1/InitializeStreamResponse$Builder.setSessionToken:(Lcom/google/protobuf/ByteString;)Lcom/google/firestore/v1/InitializeStreamResponse$Builder;
+     181: iconst_0
+     182: invokevirtual #387                // Method com/google/firestore/v1/InitializeStreamResponse$Builder.setInvalidateCache:(Z)Lcom/google/firestore/v1/InitializeStreamResponse$Builder;
+     185: invokevirtual #391                // Method com/google/firestore/v1/InitializeStreamResponse$Builder.build:()Lcom/google/firestore/v1/InitializeStreamResponse;
+     188: invokevirtual #394                // Method com/google/firestore/v1/ListenResponse$Builder.setInitializeResponse:(Lcom/google/firestore/v1/InitializeStreamResponse;)Lcom/google/firestore/v1/ListenResponse$Builder;
+     191: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+     194: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+     197: goto          220
+     200: new           #341                // class java/lang/IllegalArgumentException
+     203: dup
+     204: aload_1
+     205: invokevirtual #292                // Method com/google/firestore/v1/ListenRequest.getTargetChangeCase:()Lcom/google/firestore/v1/ListenRequest$TargetChangeCase;
+     208: invokestatic  #398                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+     211: invokedynamic #404,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     216: invokespecial #363                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     219: athrow
+     220: return
+    Exception table:
+       from    to  target type
+          52    61    64   Class com/google/cloud/datastore/core/exception/DatastoreException
+          52    61    92   Class java/lang/IllegalArgumentException
+          52    61    92   Class java/lang/UnsupportedOperationException
+
+  public void onError(java.lang.Throwable);
+    Code:
+       0: aload_1
+       1: invokestatic  #408                // Method io/grpc/Status.fromThrowable:(Ljava/lang/Throwable;)Lio/grpc/Status;
+       4: astore_2
+       5: aload_2
+       6: invokevirtual #414                // Method io/grpc/Status.getCode:()Lio/grpc/Status$Code;
+       9: getstatic     #418                // Field io/grpc/Status$Code.CANCELLED:Lio/grpc/Status$Code;
+      12: if_acmpeq     20
+      15: aload_0
+      16: aload_1
+      17: invokevirtual #349                // Method sendError:(Ljava/lang/Throwable;)V
+      20: return
+
+  public void onCompleted();
+    Code:
+       0: aload_0
+       1: getfield      #51                 // Field responseObserver:Lio/grpc/stub/StreamObserver;
+       4: dup
+       5: astore_1
+       6: monitorenter
+       7: aload_0
+       8: getfield      #51                 // Field responseObserver:Lio/grpc/stub/StreamObserver;
+      11: invokeinterface #424,  1          // InterfaceMethod io/grpc/stub/StreamObserver.onCompleted:()V
+      16: aload_1
+      17: monitorexit
+      18: goto          26
+      21: astore_2
+      22: aload_1
+      23: monitorexit
+      24: aload_2
+      25: athrow
+      26: return
+    Exception table:
+       from    to  target type
+           7    18    21   any
+          21    24    21   any
+
+  public void notifyCurrent(com.google.cloud.datastore.emulator.impl.watch.TargetId, java.time.Instant);
+    Code:
+       0: aload_0
+       1: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+       4: invokestatic  #222                // Method com/google/firestore/v1/TargetChange.newBuilder:()Lcom/google/firestore/v1/TargetChange$Builder;
+       7: getstatic     #427                // Field com/google/firestore/v1/TargetChange$TargetChangeType.CURRENT:Lcom/google/firestore/v1/TargetChange$TargetChangeType;
+      10: invokevirtual #246                // Method com/google/firestore/v1/TargetChange$Builder.setTargetChangeType:(Lcom/google/firestore/v1/TargetChange$TargetChangeType;)Lcom/google/firestore/v1/TargetChange$Builder;
+      13: aload_1
+      14: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      17: invokevirtual #237                // Method com/google/firestore/v1/TargetChange$Builder.addTargetIds:(I)Lcom/google/firestore/v1/TargetChange$Builder;
+      20: aload_2
+      21: invokestatic  #158                // Method com/google/protobuf/util/JavaTimeConversions.toProtoTimestamp:(Ljava/time/Instant;)Lcom/google/protobuf/Timestamp;
+      24: invokevirtual #267                // Method com/google/firestore/v1/TargetChange$Builder.setReadTime:(Lcom/google/protobuf/Timestamp;)Lcom/google/firestore/v1/TargetChange$Builder;
+      27: aload_2
+      28: invokestatic  #227                // Method toResumeToken:(Ljava/time/Instant;)Lcom/google/protobuf/ByteString;
+      31: invokevirtual #231                // Method com/google/firestore/v1/TargetChange$Builder.setResumeToken:(Lcom/google/protobuf/ByteString;)Lcom/google/firestore/v1/TargetChange$Builder;
+      34: invokevirtual #250                // Method com/google/firestore/v1/ListenResponse$Builder.setTargetChange:(Lcom/google/firestore/v1/TargetChange$Builder;)Lcom/google/firestore/v1/ListenResponse$Builder;
+      37: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+      40: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+      43: return
+
+  public void notifyTargetRemove(com.google.cloud.datastore.emulator.impl.watch.TargetId, com.google.cloud.datastore.core.exception.DatastoreException);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #322                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+       6: invokevirtual #328                // Method notifyTargetRemoveInternal:(Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;Ljava/util/Optional;)V
+       9: return
+
+  private void notifyTargetRemoveInternal(com.google.cloud.datastore.emulator.impl.watch.TargetId, java.util.Optional<com.google.cloud.datastore.core.exception.DatastoreException>);
+    Code:
+       0: aload_0
+       1: getfield      #31                 // Field targetIds:Ljava/util/Set;
+       4: aload_1
+       5: invokeinterface #430,  2          // InterfaceMethod java/util/Set.remove:(Ljava/lang/Object;)Z
+      10: ifeq          69
+      13: invokestatic  #222                // Method com/google/firestore/v1/TargetChange.newBuilder:()Lcom/google/firestore/v1/TargetChange$Builder;
+      16: getstatic     #436                // Field com/google/firestore/v1/TargetChange$TargetChangeType.REMOVE:Lcom/google/firestore/v1/TargetChange$TargetChangeType;
+      19: invokevirtual #246                // Method com/google/firestore/v1/TargetChange$Builder.setTargetChangeType:(Lcom/google/firestore/v1/TargetChange$TargetChangeType;)Lcom/google/firestore/v1/TargetChange$Builder;
+      22: aload_1
+      23: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      26: invokevirtual #237                // Method com/google/firestore/v1/TargetChange$Builder.addTargetIds:(I)Lcom/google/firestore/v1/TargetChange$Builder;
+      29: astore_3
+      30: aload_2
+      31: aload_3
+      32: invokedynamic #439,  0            // InvokeDynamic #2:accept:(Lcom/google/firestore/v1/TargetChange$Builder;)Ljava/util/function/Consumer;
+      37: invokevirtual #443                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      40: aload_0
+      41: getfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+      44: aload_0
+      45: getfield      #39                 // Field streamId:Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;
+      48: aload_1
+      49: invokestatic  #332                // Method com/google/cloud/datastore/emulator/impl/watch/StreamTarget.of:(Lcom/google/cloud/datastore/emulator/impl/watch/StreamId;Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;)Lcom/google/cloud/datastore/emulator/impl/watch/StreamTarget;
+      52: invokevirtual #337                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.removeTarget:(Lcom/google/cloud/datastore/emulator/impl/watch/StreamTarget;)V
+      55: aload_0
+      56: invokestatic  #86                 // Method com/google/firestore/v1/ListenResponse.newBuilder:()Lcom/google/firestore/v1/ListenResponse$Builder;
+      59: aload_3
+      60: invokevirtual #250                // Method com/google/firestore/v1/ListenResponse$Builder.setTargetChange:(Lcom/google/firestore/v1/TargetChange$Builder;)Lcom/google/firestore/v1/ListenResponse$Builder;
+      63: invokevirtual #175                // Method com/google/firestore/v1/ListenResponse$Builder.build:()Lcom/google/firestore/v1/ListenResponse;
+      66: invokevirtual #178                // Method sendResponse:(Lcom/google/firestore/v1/ListenResponse;)V
+      69: return
+
+  private com.google.cloud.datastore.emulator.impl.watch.TargetId nextTargetId(int);
+    Code:
+       0: iload_1
+       1: ifge          18
+       4: new           #341                // class java/lang/IllegalArgumentException
+       7: dup
+       8: iload_1
+       9: invokedynamic #447,  0            // InvokeDynamic #3:makeConcatWithConstants:(I)Ljava/lang/String;
+      14: invokespecial #363                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      17: athrow
+      18: iload_1
+      19: ifne          33
+      22: aload_0
+      23: getfield      #21                 // Field lastId:Ljava/util/concurrent/atomic/AtomicInteger;
+      26: invokevirtual #450                // Method java/util/concurrent/atomic/AtomicInteger.incrementAndGet:()I
+      29: invokestatic  #355                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.of:(I)Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;
+      32: areturn
+      33: aload_0
+      34: getfield      #21                 // Field lastId:Ljava/util/concurrent/atomic/AtomicInteger;
+      37: invokevirtual #453                // Method java/util/concurrent/atomic/AtomicInteger.get:()I
+      40: istore_2
+      41: iload_1
+      42: iload_2
+      43: if_icmple     69
+      46: aload_0
+      47: getfield      #21                 // Field lastId:Ljava/util/concurrent/atomic/AtomicInteger;
+      50: iload_2
+      51: iload_1
+      52: invokevirtual #456                // Method java/util/concurrent/atomic/AtomicInteger.compareAndSet:(II)Z
+      55: ifne          69
+      58: aload_0
+      59: getfield      #21                 // Field lastId:Ljava/util/concurrent/atomic/AtomicInteger;
+      62: invokevirtual #453                // Method java/util/concurrent/atomic/AtomicInteger.get:()I
+      65: istore_2
+      66: goto          41
+      69: iload_1
+      70: invokestatic  #355                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.of:(I)Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;
+      73: areturn
+
+  private void addTarget(com.google.cloud.datastore.emulator.impl.watch.TargetId, com.google.firestore.v1.Target) throws com.google.cloud.datastore.core.exception.DatastoreException;
+    Code:
+       0: aload_2
+       1: invokevirtual #307                // Method com/google/firestore/v1/Target.getTargetId:()I
+       4: ifeq          18
+       7: aload_2
+       8: invokevirtual #307                // Method com/google/firestore/v1/Target.getTargetId:()I
+      11: aload_1
+      12: invokevirtual #106                // Method com/google/cloud/datastore/emulator/impl/watch/TargetId.id:()I
+      15: if_icmpne     22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: invokestatic  #460                // Method com/google/common/base/Preconditions.checkArgument:(Z)V
+      26: aload_0
+      27: getfield      #31                 // Field targetIds:Ljava/util/Set;
+      30: aload_1
+      31: invokeinterface #466,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      36: ifne          43
+      39: iconst_1
+      40: goto          44
+      43: iconst_0
+      44: invokestatic  #460                // Method com/google/common/base/Preconditions.checkArgument:(Z)V
+      47: aload_0
+      48: getfield      #31                 // Field targetIds:Ljava/util/Set;
+      51: aload_1
+      52: invokeinterface #469,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      57: pop
+      58: aload_2
+      59: invokevirtual #472                // Method com/google/firestore/v1/Target.hasResumeToken:()Z
+      62: ifne          72
+      65: aload_2
+      66: invokevirtual #475                // Method com/google/firestore/v1/Target.hasReadTime:()Z
+      69: ifeq          76
+      72: iconst_1
+      73: goto          77
+      76: iconst_0
+      77: istore_3
+      78: getstatic     #478                // Field com/google/cloud/datastore/emulator/impl/firestore/CloudFirestoreV1ListenStream$1.$SwitchMap$com$google$firestore$v1$Target$TargetTypeCase:[I
+      81: aload_2
+      82: invokevirtual #481                // Method com/google/firestore/v1/Target.getTargetTypeCase:()Lcom/google/firestore/v1/Target$TargetTypeCase;
+      85: invokevirtual #485                // Method com/google/firestore/v1/Target$TargetTypeCase.ordinal:()I
+      88: iaload
+      89: tableswitch   { // 1 to 4
+                     1: 120
+                     2: 197
+                     3: 319
+                     4: 377
+               default: 388
+          }
+     120: invokestatic  #488                // Method com/google/common/collect/ImmutableSet.builder:()Lcom/google/common/collect/ImmutableSet$Builder;
+     123: astore        4
+     125: aload_2
+     126: invokevirtual #492                // Method com/google/firestore/v1/Target.getDocuments:()Lcom/google/firestore/v1/Target$DocumentsTarget;
+     129: invokevirtual #496                // Method com/google/firestore/v1/Target$DocumentsTarget.getDocumentsList:()Lcom/google/protobuf/ProtocolStringList;
+     132: invokeinterface #502,  1          // InterfaceMethod com/google/protobuf/ProtocolStringList.iterator:()Ljava/util/Iterator;
+     137: astore        5
+     139: aload         5
+     141: invokeinterface #74,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     146: ifeq          179
+     149: aload         5
+     151: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     156: checkcast     #399                // class java/lang/String
+     159: astore        6
+     161: aload         4
+     163: aload_0
+     164: getfield      #43                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+     167: aload         6
+     169: invokevirtual #507                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toEntityRef:(Ljava/lang/String;)Lcom/google/cloud/datastore/core/rep/EntityRef;
+     172: invokevirtual #511                // Method com/google/common/collect/ImmutableSet$Builder.add:(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet$Builder;
+     175: pop
+     176: goto          139
+     179: aload_0
+     180: getfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+     183: aload_0
+     184: aload_1
+     185: aload         4
+     187: invokevirtual #516                // Method com/google/common/collect/ImmutableSet$Builder.build:()Lcom/google/common/collect/ImmutableSet;
+     190: iload_3
+     191: invokevirtual #519                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.addDocumentTargetAndSync:(Lcom/google/cloud/datastore/emulator/impl/watch/ListenStream;Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;Lcom/google/common/collect/ImmutableSet;Z)V
+     194: goto          388
+     197: aload_2
+     198: invokevirtual #523                // Method com/google/firestore/v1/Target.getQuery:()Lcom/google/firestore/v1/Target$QueryTarget;
+     201: invokevirtual #527                // Method com/google/firestore/v1/Target$QueryTarget.getStructuredQuery:()Lcom/google/firestore/v1/StructuredQuery;
+     204: invokevirtual #533                // Method com/google/firestore/v1/StructuredQuery.getFromCount:()I
+     207: iconst_1
+     208: if_icmpgt     215
+     211: iconst_1
+     212: goto          216
+     215: iconst_0
+     216: invokestatic  #460                // Method com/google/common/base/Preconditions.checkArgument:(Z)V
+     219: aload_2
+     220: invokevirtual #523                // Method com/google/firestore/v1/Target.getQuery:()Lcom/google/firestore/v1/Target$QueryTarget;
+     223: invokevirtual #527                // Method com/google/firestore/v1/Target$QueryTarget.getStructuredQuery:()Lcom/google/firestore/v1/StructuredQuery;
+     226: invokevirtual #538                // Method com/google/firestore/v1/StructuredQuery.getFromList:()Ljava/util/List;
+     229: invokestatic  #542                // Method com/google/firestore/v1/StructuredQuery$CollectionSelector.getDefaultInstance:()Lcom/google/firestore/v1/StructuredQuery$CollectionSelector;
+     232: invokestatic  #548                // Method com/google/common/collect/Iterables.getOnlyElement:(Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
+     235: checkcast     #543                // class com/google/firestore/v1/StructuredQuery$CollectionSelector
+     238: astore        4
+     240: aload         4
+     242: invokevirtual #554                // Method com/google/firestore/v1/StructuredQuery$CollectionSelector.getCollectionId:()Ljava/lang/String;
+     245: aload         4
+     247: invokevirtual #558                // Method com/google/firestore/v1/StructuredQuery$CollectionSelector.getAllDescendants:()Z
+     250: invokestatic  #561                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     253: invokestatic  #566                // Method com/google/cloud/datastore/emulator/impl/watch/CollectionSelector.of:(Ljava/lang/String;Ljava/lang/Boolean;)Lcom/google/cloud/datastore/emulator/impl/watch/CollectionSelector;
+     256: astore        5
+     258: aload_2
+     259: invokevirtual #523                // Method com/google/firestore/v1/Target.getQuery:()Lcom/google/firestore/v1/Target$QueryTarget;
+     262: invokevirtual #527                // Method com/google/firestore/v1/Target$QueryTarget.getStructuredQuery:()Lcom/google/firestore/v1/StructuredQuery;
+     265: invokestatic  #571                // Method com/google/cloud/datastore/core/firestorev1/validator/FirestoreV1ServiceValidator.validateStructuredQuery:(Lcom/google/firestore/v1/StructuredQuery;)V
+     268: aload_0
+     269: getfield      #43                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+     272: aload_2
+     273: invokevirtual #523                // Method com/google/firestore/v1/Target.getQuery:()Lcom/google/firestore/v1/Target$QueryTarget;
+     276: aload_0
+     277: getfield      #35                 // Field context:Lcom/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext;
+     280: invokevirtual #577                // Method com/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext.databaseEdition:()Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+     283: invokevirtual #581                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toQuery:(Lcom/google/firestore/v1/Target$QueryTarget;Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;)Lcom/google/cloud/datastore/core/rep/QueryRequest;
+     286: astore        6
+     288: aload_0
+     289: getfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+     292: aload_0
+     293: aload_1
+     294: aload         6
+     296: aload_0
+     297: getfield      #43                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+     300: aload_2
+     301: invokevirtual #523                // Method com/google/firestore/v1/Target.getQuery:()Lcom/google/firestore/v1/Target$QueryTarget;
+     304: invokevirtual #585                // Method com/google/firestore/v1/Target$QueryTarget.getParent:()Ljava/lang/String;
+     307: invokevirtual #588                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.parseParent:(Ljava/lang/String;)Lcom/google/cloud/datastore/core/rep/EntityRef;
+     310: aload         5
+     312: iload_3
+     313: invokevirtual #591                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.addQueryTargetAndSync:(Lcom/google/cloud/datastore/emulator/impl/watch/ListenStream;Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;Lcom/google/cloud/datastore/core/rep/QueryRequest;Lcom/google/cloud/datastore/core/rep/EntityRef;Lcom/google/cloud/datastore/emulator/impl/watch/CollectionSelector;Z)V
+     316: goto          388
+     319: aload_0
+     320: getfield      #35                 // Field context:Lcom/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext;
+     323: invokevirtual #577                // Method com/google/cloud/datastore/emulator/impl/context/FirestoreEmulatorRequestContext.databaseEdition:()Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+     326: getstatic     #595                // Field com/google/cloud/datastore/core/rep/Query$DatabaseEdition.ENTERPRISE:Lcom/google/cloud/datastore/core/rep/Query$DatabaseEdition;
+     329: invokevirtual #601                // Method com/google/cloud/datastore/core/rep/Query$DatabaseEdition.equals:(Ljava/lang/Object;)Z
+     332: ifne          346
+     335: new           #341                // class java/lang/IllegalArgumentException
+     338: dup
+     339: ldc_w         #604                // String ExecutePipeline requires the Database Edition to be `enterprise`. If using the gcloud CLI, please specify the --database-edition=enterprise flag.
+     342: invokespecial #363                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     345: athrow
+     346: aload_0
+     347: getfield      #43                 // Field converters:Lcom/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters;
+     350: aload_2
+     351: invokevirtual #606                // Method com/google/firestore/v1/Target.getPipelineQuery:()Lcom/google/firestore/v1/Target$PipelineQueryTarget;
+     354: invokevirtual #610                // Method com/google/firestore/v1/Target$PipelineQueryTarget.getStructuredPipeline:()Lcom/google/firestore/v1/StructuredPipeline;
+     357: invokevirtual #616                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toPipeline:(Lcom/google/firestore/v1/StructuredPipeline;)Lcom/google/cloud/datastore/core/hyperstore/ast/Pipeline;
+     360: astore        4
+     362: aload_0
+     363: getfield      #47                 // Field manager:Lcom/google/cloud/datastore/emulator/impl/watch/ListenStreamManager;
+     366: aload_0
+     367: aload_1
+     368: aload         4
+     370: iload_3
+     371: invokevirtual #620                // Method com/google/cloud/datastore/emulator/impl/watch/ListenStreamManager.addPipelineQueryTargetAndSync:(Lcom/google/cloud/datastore/emulator/impl/watch/ListenStream;Lcom/google/cloud/datastore/emulator/impl/watch/TargetId;Lcom/google/cloud/datastore/core/hyperstore/ast/Pipeline;Z)V
+     374: goto          388
+     377: new           #341                // class java/lang/IllegalArgumentException
+     380: dup
+     381: ldc_w         #624                // String expected TargetType to be set
+     384: invokespecial #363                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     387: athrow
+     388: return
+
+  private static com.google.protobuf.ByteString toResumeToken(java.time.Instant);
+    Code:
+       0: getstatic     #626                // Field java/time/temporal/ChronoUnit.MICROS:Ljava/time/temporal/ChronoUnit;
+       3: getstatic     #632                // Field java/time/Instant.EPOCH:Ljava/time/Instant;
+       6: aload_0
+       7: invokevirtual #638                // Method java/time/temporal/ChronoUnit.between:(Ljava/time/temporal/Temporal;Ljava/time/temporal/Temporal;)J
+      10: lstore_1
+      11: invokestatic  #642                // Method com/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken.newBuilder:()Lcom/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$Builder;
+      14: invokestatic  #647                // Method com/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$RangeState.newBuilder:()Lcom/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$RangeState$Builder;
+      17: lload_1
+      18: invokevirtual #652                // Method com/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$RangeState$Builder.setSnapshotVersion:(J)Lcom/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$RangeState$Builder;
+      21: invokevirtual #658                // Method com/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$Builder.addStates:(Lcom/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$RangeState$Builder;)Lcom/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$Builder;
+      24: invokevirtual #664                // Method com/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken$Builder.build:()Lcom/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken;
+      27: astore_3
+      28: invokestatic  #667                // Method com/google/protobuf/ByteString.newOutput:()Lcom/google/protobuf/ByteString$Output;
+      31: astore        4
+      33: aload_3
+      34: aload         4
+      36: invokevirtual #673                // Method com/google/cloud/datastore/clientproxy/ClientProxy$ResumeToken.writeTo:(Ljava/io/OutputStream;)V
+      39: aload         4
+      41: invokevirtual #677                // Method com/google/protobuf/ByteString$Output.toByteString:()Lcom/google/protobuf/ByteString;
+      44: areturn
+      45: astore        4
+      47: new           #684                // class java/lang/AssertionError
+      50: dup
+      51: ldc_w         #686                // String impossible: failed to create a resume token
+      54: aload         4
+      56: invokespecial #688                // Method java/lang/AssertionError."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+      59: athrow
+    Exception table:
+       from    to  target type
+          28    44    45   Class java/io/IOException
+
+  public void onNext(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #293                // class com/google/firestore/v1/ListenRequest
+       5: invokevirtual #691                // Method onNext:(Lcom/google/firestore/v1/ListenRequest;)V
+       8: return
+
+  private static void lambda$notifyTargetRemoveInternal$0(com.google.firestore.v1.TargetChange$Builder, com.google.cloud.datastore.core.exception.DatastoreException);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #694                // Method com/google/cloud/datastore/emulator/impl/util/FirestoreEmulatorConverters.toStatus:(Lcom/google/cloud/datastore/core/exception/DatastoreException;)Lcom/google/rpc/Status;
+       5: invokevirtual #698                // Method com/google/firestore/v1/TargetChange$Builder.setCause:(Lcom/google/rpc/Status;)Lcom/google/firestore/v1/TargetChange$Builder;
+       8: pop
+       9: return
+
+  static {};
+    Code:
+       0: new           #213                // class com/google/cloud/datastore/core/firestorev1/converter/FirestoreV1RecordConverterImpl
+       3: dup
+       4: invokespecial #702                // Method com/google/cloud/datastore/core/firestorev1/converter/FirestoreV1RecordConverterImpl."<init>":()V
+       7: putstatic     #202                // Field RECORD_CONVERTER:Lcom/google/cloud/datastore/core/firestorev1/converter/FirestoreV1RecordConverterImpl;
+      10: return
+}

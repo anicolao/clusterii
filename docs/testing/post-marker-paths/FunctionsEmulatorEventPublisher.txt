@@ -1,0 +1,671 @@
+Compiled from "FunctionsEmulatorEventPublisher.java"
+public class com.google.cloud.datastore.emulator.impl.events.FunctionsEmulatorEventPublisher implements com.google.cloud.datastore.emulator.impl.events.EventPublisher {
+  private static final com.google.common.flogger.GoogleLogger logger;
+
+  private static final int HTTP_REQUEST_TIMEOUT;
+
+  private static final java.lang.String AUTH_ID;
+
+  private static final java.lang.String AUTH_TYPE;
+
+  private static final java.util.function.Function<java.lang.String, java.lang.String> SEGMENT_ENCODER;
+
+  private final com.google.common.net.HostAndPort hostAndPort;
+
+  private final com.google.api.client.http.HttpTransport httpTransport;
+
+  private final java.util.concurrent.ExecutorService executorService;
+
+  public com.google.cloud.datastore.emulator.impl.events.FunctionsEmulatorEventPublisher(com.google.common.net.HostAndPort, com.google.api.client.http.HttpTransport, java.util.concurrent.ExecutorService);
+    Code:
+       0: aload_0
+       1: invokespecial #3                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+       9: aload_0
+      10: aload_2
+      11: putfield      #15                 // Field httpTransport:Lcom/google/api/client/http/HttpTransport;
+      14: aload_0
+      15: aload_3
+      16: putfield      #19                 // Field executorService:Ljava/util/concurrent/ExecutorService;
+      19: return
+
+  public void publishEvent(java.lang.String, java.lang.String, com.google.firebase.rules.runtime.evaluators.EventRuleEvaluator$EventRuleContext, com.google.firestore.v1.Document, com.google.firestore.v1.Document);
+    Code:
+       0: aload_0
+       1: aload_3
+       2: aload_0
+       3: aload         4
+       5: aload         5
+       7: invokevirtual #23                 // Method createChangeMessage:(Lcom/google/firestore/v1/Document;Lcom/google/firestore/v1/Document;)Lcom/google/firestore/v1/EventFlowDocumentChange;
+      10: invokevirtual #27                 // Method generateRequestPayload:(Lcom/google/firebase/rules/runtime/evaluators/EventRuleEvaluator$EventRuleContext;Lcom/google/firestore/v1/EventFlowDocumentChange;)[B
+      13: astore        6
+      15: goto          102
+      18: astore        7
+      20: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      23: invokevirtual #37                 // Method com/google/common/flogger/GoogleLogger.atFine:()Lcom/google/common/flogger/LoggingApi;
+      26: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      29: aload         7
+      31: invokeinterface #45,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+      36: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      39: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+      41: ldc           #50                 // String publishEvent
+      43: bipush        97
+      45: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+      47: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      52: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      55: ldc           #58                 // String Failed to format event payload for %s
+      57: aload_2
+      58: invokeinterface #60,  3           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;)V
+      63: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      66: invokevirtual #64                 // Method com/google/common/flogger/GoogleLogger.atWarning:()Lcom/google/common/flogger/LoggingApi;
+      69: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      72: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+      74: ldc           #50                 // String publishEvent
+      76: bipush        98
+      78: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+      80: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      85: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      88: ldc           #67                 // String Failed to format event payload for %s: %s
+      90: aload_2
+      91: aload         7
+      93: invokevirtual #69                 // Method java/io/IOException.getMessage:()Ljava/lang/String;
+      96: invokeinterface #73,  4           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+     101: return
+     102: aload_0
+     103: getfield      #19                 // Field executorService:Ljava/util/concurrent/ExecutorService;
+     106: aload_0
+     107: aload_2
+     108: aload         6
+     110: invokedynamic #76,  0             // InvokeDynamic #0:run:(Lcom/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher;Ljava/lang/String;[B)Ljava/lang/Runnable;
+     115: invokeinterface #80,  2           // InterfaceMethod java/util/concurrent/ExecutorService.execute:(Ljava/lang/Runnable;)V
+     120: return
+    Exception table:
+       from    to  target type
+           0    15    18   Class java/io/IOException
+
+  public void publishV2Event(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.google.protos.google.events.cloud.firestore.v1.Data$Document, com.google.protos.google.events.cloud.firestore.v1.Data$Document);
+    Code:
+       0: aload_0
+       1: aload         8
+       3: aload         9
+       5: invokevirtual #86                 // Method generateRequestPayloadV2:(Lcom/google/protos/google/events/cloud/firestore/v1/Data$Document;Lcom/google/protos/google/events/cloud/firestore/v1/Data$Document;)[B
+       8: astore        10
+      10: aload_0
+      11: getfield      #19                 // Field executorService:Ljava/util/concurrent/ExecutorService;
+      14: aload_0
+      15: aload_1
+      16: aload_2
+      17: aload         4
+      19: aload         5
+      21: aload         6
+      23: aload         7
+      25: aload_3
+      26: aload         10
+      28: invokedynamic #90,  0             // InvokeDynamic #1:run:(Lcom/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)Ljava/lang/Runnable;
+      33: invokeinterface #80,  2           // InterfaceMethod java/util/concurrent/ExecutorService.execute:(Ljava/lang/Runnable;)V
+      38: return
+
+  private com.google.api.client.http.HttpHeaders createHttpHeaders(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: new           #93                 // class com/google/api/client/http/HttpHeaders
+       3: dup
+       4: invokespecial #95                 // Method com/google/api/client/http/HttpHeaders."<init>":()V
+       7: ldc           #96                 // String ce-specversion
+       9: ldc           #98                 // String 1.0
+      11: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      14: ldc           #104                // String ce-type
+      16: aload_3
+      17: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      20: ldc           #106                // String ce-source
+      22: aload_1
+      23: aload_2
+      24: invokedynamic #108,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      29: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      32: ldc           #112                // String ce-id
+      34: invokestatic  #114                // Method java/util/UUID.randomUUID:()Ljava/util/UUID;
+      37: invokevirtual #120                // Method java/util/UUID.toString:()Ljava/lang/String;
+      40: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      43: ldc           #123                // String ce-subject
+      45: aload         6
+      47: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      50: ldc           #125                // String ce-time
+      52: aload_0
+      53: invokestatic  #127                // InterfaceMethod java/time/InstantSource.system:()Ljava/time/InstantSource;
+      56: invokeinterface #133,  1          // InterfaceMethod java/time/InstantSource.instant:()Ljava/time/Instant;
+      61: invokevirtual #137                // Method stripNanoSecond:(Ljava/time/Instant;)Ljava/time/Instant;
+      64: invokevirtual #141                // Method java/time/Instant.toString:()Ljava/lang/String;
+      67: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      70: ldc           #144                // String ce-datacontenttype
+      72: ldc           #146                // String application/protobuf
+      74: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      77: ldc           #148                // String ce-dataschema
+      79: ldc           #150                // String https://github.com/googleapis/google-cloudevents/blob/main/proto/google/events/cloud/firestore/v1/data.proto
+      81: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      84: ldc           #152                // String ce-location
+      86: ldc           #154                // String us-central1
+      88: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      91: ldc           #156                // String ce-project
+      93: aload_1
+      94: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+      97: ldc           #158                // String ce-database
+      99: aload_2
+     100: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+     103: ldc           #160                // String ce-namespace
+     105: aload         5
+     107: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+     110: ldc           #162                // String ce-document
+     112: aload         4
+     114: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+     117: astore        7
+     119: getstatic     #164                // Field com/google/cloud/datastore/emulator/impl/events/EventManager.SUPPORTED_EVENT_TYPES_V2_WITH_AUTH_CONTEXT:Lcom/google/common/collect/ImmutableSet;
+     122: aload_3
+     123: invokevirtual #168                // Method com/google/common/collect/ImmutableSet.contains:(Ljava/lang/Object;)Z
+     126: ifeq          149
+     129: aload         7
+     131: ldc           #174                // String ce-authtype
+     133: ldc           #176                // String unknown
+     135: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+     138: pop
+     139: aload         7
+     141: ldc           #178                // String ce-authid
+     143: ldc           #180                // String fake-auth-id@gmail.com
+     145: invokevirtual #100                // Method com/google/api/client/http/HttpHeaders.set:(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/http/HttpHeaders;
+     148: pop
+     149: aload         7
+     151: areturn
+
+  java.time.Instant stripNanoSecond(java.time.Instant);
+    Code:
+       0: aload_1
+       1: getstatic     #182                // Field java/time/temporal/ChronoUnit.SECONDS:Ljava/time/temporal/ChronoUnit;
+       4: invokevirtual #188                // Method java/time/Instant.truncatedTo:(Ljava/time/temporal/TemporalUnit;)Ljava/time/Instant;
+       7: areturn
+
+  byte[] generateRequestPayload(com.google.firebase.rules.runtime.evaluators.EventRuleEvaluator$EventRuleContext, com.google.firestore.v1.EventFlowDocumentChange) throws java.io.IOException;
+    Code:
+       0: invokestatic  #192                // Method com/google/protobuf/util/JsonFormat.printer:()Lcom/google/protobuf/util/JsonFormat$Printer;
+       3: invokevirtual #198                // Method com/google/protobuf/util/JsonFormat$Printer.omittingInsignificantWhitespace:()Lcom/google/protobuf/util/JsonFormat$Printer;
+       6: astore_3
+       7: aload_3
+       8: aload_2
+       9: invokevirtual #203                // Method com/google/protobuf/util/JsonFormat$Printer.print:(Lcom/google/protobuf/MessageOrBuilder;)Ljava/lang/String;
+      12: astore        4
+      14: goto          29
+      17: astore        5
+      19: new           #209                // class java/lang/IllegalStateException
+      22: dup
+      23: aload         5
+      25: invokespecial #211                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/Throwable;)V
+      28: athrow
+      29: new           #214                // class java/io/ByteArrayOutputStream
+      32: dup
+      33: invokespecial #216                // Method java/io/ByteArrayOutputStream."<init>":()V
+      36: astore        5
+      38: new           #217                // class java/io/OutputStreamWriter
+      41: dup
+      42: aload         5
+      44: getstatic     #219                // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      47: invokespecial #225                // Method java/io/OutputStreamWriter."<init>":(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
+      50: astore        6
+      52: new           #228                // class com/google/gson/stream/JsonWriter
+      55: dup
+      56: aload         6
+      58: invokespecial #230                // Method com/google/gson/stream/JsonWriter."<init>":(Ljava/io/Writer;)V
+      61: astore        7
+      63: aload         7
+      65: invokevirtual #233                // Method com/google/gson/stream/JsonWriter.beginObject:()Lcom/google/gson/stream/JsonWriter;
+      68: pop
+      69: aload         7
+      71: ldc           #237                // String data
+      73: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      76: aload         4
+      78: invokevirtual #243                // Method com/google/gson/stream/JsonWriter.jsonValue:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      81: pop
+      82: aload_0
+      83: aload         7
+      85: ldc           #246                // String context
+      87: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      90: aload_1
+      91: invokevirtual #248                // Method writeContextJson:(Lcom/google/gson/stream/JsonWriter;Lcom/google/firebase/rules/runtime/evaluators/EventRuleEvaluator$EventRuleContext;)V
+      94: aload         7
+      96: invokevirtual #252                // Method com/google/gson/stream/JsonWriter.endObject:()Lcom/google/gson/stream/JsonWriter;
+      99: pop
+     100: aload         7
+     102: invokevirtual #255                // Method com/google/gson/stream/JsonWriter.close:()V
+     105: goto          130
+     108: astore        8
+     110: aload         7
+     112: invokevirtual #255                // Method com/google/gson/stream/JsonWriter.close:()V
+     115: goto          127
+     118: astore        9
+     120: aload         8
+     122: aload         9
+     124: invokevirtual #260                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+     127: aload         8
+     129: athrow
+     130: aload         5
+     132: invokevirtual #263                // Method java/io/ByteArrayOutputStream.toByteArray:()[B
+     135: areturn
+    Exception table:
+       from    to  target type
+           7    14    17   Class com/google/protobuf/InvalidProtocolBufferException
+          63   100   108   Class java/lang/Throwable
+         110   115   118   Class java/lang/Throwable
+
+  byte[] generateRequestPayloadV2(com.google.protos.google.events.cloud.firestore.v1.Data$Document, com.google.protos.google.events.cloud.firestore.v1.Data$Document);
+    Code:
+       0: invokestatic  #267                // Method com/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData.newBuilder:()Lcom/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder;
+       3: astore_3
+       4: aload_1
+       5: ifnull        14
+       8: aload_3
+       9: aload_1
+      10: invokevirtual #273                // Method com/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder.setOldValue:(Lcom/google/protos/google/events/cloud/firestore/v1/Data$Document;)Lcom/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder;
+      13: pop
+      14: aload_2
+      15: ifnull        24
+      18: aload_3
+      19: aload_2
+      20: invokevirtual #279                // Method com/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder.setValue:(Lcom/google/protos/google/events/cloud/firestore/v1/Data$Document;)Lcom/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder;
+      23: pop
+      24: aload_3
+      25: invokestatic  #282                // Method com/google/protos/google/events/cloud/firestore/v1/Data$DocumentMask.getDefaultInstance:()Lcom/google/protos/google/events/cloud/firestore/v1/Data$DocumentMask;
+      28: invokevirtual #288                // Method com/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder.setUpdateMask:(Lcom/google/protos/google/events/cloud/firestore/v1/Data$DocumentMask;)Lcom/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder;
+      31: pop
+      32: invokestatic  #292                // Method java/util/Base64.getEncoder:()Ljava/util/Base64$Encoder;
+      35: aload_3
+      36: invokevirtual #298                // Method com/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData$Builder.build:()Lcom/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData;
+      39: invokevirtual #302                // Method com/google/protos/google/events/cloud/firestore/v1/Data$DocumentEventData.toByteArray:()[B
+      42: invokevirtual #303                // Method java/util/Base64$Encoder.encode:([B)[B
+      45: areturn
+
+  private void writeContextJson(com.google.gson.stream.JsonWriter, com.google.firebase.rules.runtime.evaluators.EventRuleEvaluator$EventRuleContext) throws java.io.IOException;
+    Code:
+       0: aload_2
+       1: invokevirtual #309                // Method com/google/firebase/rules/runtime/evaluators/EventRuleEvaluator$EventRuleContext.eventTypes:()Lcom/google/common/collect/ImmutableList;
+       4: invokevirtual #315                // Method com/google/common/collect/ImmutableList.size:()I
+       7: iconst_1
+       8: if_icmpne     15
+      11: iconst_1
+      12: goto          16
+      15: iconst_0
+      16: ldc_w         #321                // String Context must contain exactly one event type, but got: %s
+      19: aload_2
+      20: invokestatic  #323                // Method com/google/common/base/Preconditions.checkArgument:(ZLjava/lang/String;Ljava/lang/Object;)V
+      23: aload_1
+      24: invokevirtual #233                // Method com/google/gson/stream/JsonWriter.beginObject:()Lcom/google/gson/stream/JsonWriter;
+      27: pop
+      28: aload_1
+      29: ldc_w         #329                // String eventId
+      32: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      35: aload_2
+      36: invokevirtual #331                // Method com/google/firebase/rules/runtime/evaluators/EventRuleEvaluator$EventRuleContext.eventId:()Ljava/lang/String;
+      39: invokevirtual #333                // Method com/google/gson/stream/JsonWriter.value:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      42: pop
+      43: aload_1
+      44: ldc_w         #336                // String timestamp
+      47: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      50: aload_2
+      51: invokevirtual #338                // Method com/google/firebase/rules/runtime/evaluators/EventRuleEvaluator$EventRuleContext.timestamp:()Ljava/util/Optional;
+      54: invokevirtual #341                // Method java/util/Optional.get:()Ljava/lang/Object;
+      57: checkcast     #142                // class java/time/Instant
+      60: invokestatic  #347                // Method com/google/protobuf/util/JavaTimeConversions.toProtoTimestamp:(Ljava/time/Instant;)Lcom/google/protobuf/Timestamp;
+      63: invokestatic  #353                // Method com/google/protobuf/util/Timestamps.toString:(Lcom/google/protobuf/Timestamp;)Ljava/lang/String;
+      66: invokevirtual #333                // Method com/google/gson/stream/JsonWriter.value:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      69: pop
+      70: aload_1
+      71: ldc_w         #358                // String eventType
+      74: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      77: aload_2
+      78: invokevirtual #309                // Method com/google/firebase/rules/runtime/evaluators/EventRuleEvaluator$EventRuleContext.eventTypes:()Lcom/google/common/collect/ImmutableList;
+      81: iconst_0
+      82: invokevirtual #360                // Method com/google/common/collect/ImmutableList.get:(I)Ljava/lang/Object;
+      85: checkcast     #363                // class java/lang/String
+      88: invokevirtual #333                // Method com/google/gson/stream/JsonWriter.value:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      91: pop
+      92: aload_1
+      93: ldc_w         #365                // String resource
+      96: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+      99: invokevirtual #233                // Method com/google/gson/stream/JsonWriter.beginObject:()Lcom/google/gson/stream/JsonWriter;
+     102: pop
+     103: aload_1
+     104: ldc_w         #367                // String name
+     107: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+     110: aload_2
+     111: invokevirtual #368                // Method com/google/firebase/rules/runtime/evaluators/EventRuleEvaluator$EventRuleContext.resource:()Lcom/google/firebase/rules/eventflow/client/path/Path;
+     114: getstatic     #371                // Field SEGMENT_ENCODER:Ljava/util/function/Function;
+     117: invokevirtual #375                // Method com/google/firebase/rules/eventflow/client/path/Path.toPath:(Ljava/util/function/Function;)Ljava/lang/String;
+     120: invokevirtual #333                // Method com/google/gson/stream/JsonWriter.value:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+     123: pop
+     124: aload_1
+     125: ldc_w         #381                // String service
+     128: invokevirtual #239                // Method com/google/gson/stream/JsonWriter.name:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+     131: ldc_w         #383                // String firestore.googleapis.com
+     134: invokevirtual #333                // Method com/google/gson/stream/JsonWriter.value:(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
+     137: pop
+     138: aload_1
+     139: invokevirtual #252                // Method com/google/gson/stream/JsonWriter.endObject:()Lcom/google/gson/stream/JsonWriter;
+     142: pop
+     143: aload_1
+     144: invokevirtual #252                // Method com/google/gson/stream/JsonWriter.endObject:()Lcom/google/gson/stream/JsonWriter;
+     147: pop
+     148: return
+
+  void sendHttpRequest(java.lang.String, byte[]) throws java.io.IOException;
+    Code:
+       0: new           #385                // class com/google/api/client/http/GenericUrl
+       3: dup
+       4: invokespecial #387                // Method com/google/api/client/http/GenericUrl."<init>":()V
+       7: astore_3
+       8: aload_3
+       9: ldc_w         #388                // String http
+      12: invokevirtual #390                // Method com/google/api/client/http/GenericUrl.setScheme:(Ljava/lang/String;)V
+      15: aload_3
+      16: aload_0
+      17: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+      20: invokevirtual #394                // Method com/google/common/net/HostAndPort.getHost:()Ljava/lang/String;
+      23: invokevirtual #399                // Method com/google/api/client/http/GenericUrl.setHost:(Ljava/lang/String;)V
+      26: aload_3
+      27: aload_0
+      28: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+      31: invokevirtual #402                // Method com/google/common/net/HostAndPort.getPort:()I
+      34: invokevirtual #405                // Method com/google/api/client/http/GenericUrl.setPort:(I)V
+      37: aload_3
+      38: aload_1
+      39: invokedynamic #409,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      44: invokevirtual #412                // Method com/google/api/client/http/GenericUrl.setRawPath:(Ljava/lang/String;)V
+      47: aload_0
+      48: getfield      #15                 // Field httpTransport:Lcom/google/api/client/http/HttpTransport;
+      51: invokevirtual #415                // Method com/google/api/client/http/HttpTransport.createRequestFactory:()Lcom/google/api/client/http/HttpRequestFactory;
+      54: aload_3
+      55: new           #421                // class com/google/api/client/http/ByteArrayContent
+      58: dup
+      59: ldc_w         #423                // String application/json
+      62: aload_2
+      63: invokespecial #425                // Method com/google/api/client/http/ByteArrayContent."<init>":(Ljava/lang/String;[B)V
+      66: invokevirtual #428                // Method com/google/api/client/http/HttpRequestFactory.buildPostRequest:(Lcom/google/api/client/http/GenericUrl;Lcom/google/api/client/http/HttpContent;)Lcom/google/api/client/http/HttpRequest;
+      69: astore        4
+      71: aload         4
+      73: iconst_0
+      74: invokevirtual #434                // Method com/google/api/client/http/HttpRequest.setThrowExceptionOnExecuteError:(Z)Lcom/google/api/client/http/HttpRequest;
+      77: pop
+      78: aload         4
+      80: sipush        20000
+      83: invokevirtual #440                // Method com/google/api/client/http/HttpRequest.setConnectTimeout:(I)Lcom/google/api/client/http/HttpRequest;
+      86: pop
+      87: aload         4
+      89: sipush        20000
+      92: invokevirtual #444                // Method com/google/api/client/http/HttpRequest.setReadTimeout:(I)Lcom/google/api/client/http/HttpRequest;
+      95: pop
+      96: aload         4
+      98: invokevirtual #447                // Method com/google/api/client/http/HttpRequest.execute:()Lcom/google/api/client/http/HttpResponse;
+     101: astore        5
+     103: aload         5
+     105: invokevirtual #450                // Method com/google/api/client/http/HttpResponse.isSuccessStatusCode:()Z
+     108: ifne          209
+     111: new           #456                // class com/google/api/client/http/HttpResponseException
+     114: dup
+     115: aload         5
+     117: invokespecial #458                // Method com/google/api/client/http/HttpResponseException."<init>":(Lcom/google/api/client/http/HttpResponse;)V
+     120: astore        6
+     122: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+     125: invokevirtual #37                 // Method com/google/common/flogger/GoogleLogger.atFine:()Lcom/google/common/flogger/LoggingApi;
+     128: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     131: aload         6
+     133: invokeinterface #45,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+     138: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     141: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+     143: ldc_w         #461                // String sendHttpRequest
+     146: sipush        294
+     149: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+     151: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+     156: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     159: ldc_w         #463                // String Unsuccessful HTTP response when publishing event for %s
+     162: aload_1
+     163: invokeinterface #60,  3           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;)V
+     168: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+     171: invokevirtual #64                 // Method com/google/common/flogger/GoogleLogger.atWarning:()Lcom/google/common/flogger/LoggingApi;
+     174: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     177: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+     179: ldc_w         #461                // String sendHttpRequest
+     182: sipush        296
+     185: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+     187: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+     192: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     195: ldc_w         #465                // String Unsuccessful HTTP response when publishing event for %s: %s
+     198: aload_1
+     199: aload         6
+     201: invokevirtual #467                // Method com/google/api/client/http/HttpResponseException.getMessage:()Ljava/lang/String;
+     204: invokeinterface #73,  4           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+     209: aload         5
+     211: invokevirtual #468                // Method com/google/api/client/http/HttpResponse.disconnect:()V
+     214: return
+
+  void sendHttpRequestV2(com.google.api.client.http.HttpHeaders, java.lang.String, byte[]) throws java.io.IOException;
+    Code:
+       0: new           #385                // class com/google/api/client/http/GenericUrl
+       3: dup
+       4: invokespecial #387                // Method com/google/api/client/http/GenericUrl."<init>":()V
+       7: astore        4
+       9: aload         4
+      11: ldc_w         #388                // String http
+      14: invokevirtual #390                // Method com/google/api/client/http/GenericUrl.setScheme:(Ljava/lang/String;)V
+      17: aload         4
+      19: aload_0
+      20: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+      23: invokevirtual #394                // Method com/google/common/net/HostAndPort.getHost:()Ljava/lang/String;
+      26: invokevirtual #399                // Method com/google/api/client/http/GenericUrl.setHost:(Ljava/lang/String;)V
+      29: aload         4
+      31: aload_0
+      32: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+      35: invokevirtual #402                // Method com/google/common/net/HostAndPort.getPort:()I
+      38: invokevirtual #405                // Method com/google/api/client/http/GenericUrl.setPort:(I)V
+      41: aload         4
+      43: aload_2
+      44: ldc_w         #471                // String eventarcTriggers
+      47: ldc_w         #473                // String triggers
+      50: invokevirtual #475                // Method java/lang/String.replaceFirst:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      53: invokedynamic #409,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      58: invokevirtual #412                // Method com/google/api/client/http/GenericUrl.setRawPath:(Ljava/lang/String;)V
+      61: aload_0
+      62: getfield      #15                 // Field httpTransport:Lcom/google/api/client/http/HttpTransport;
+      65: invokevirtual #415                // Method com/google/api/client/http/HttpTransport.createRequestFactory:()Lcom/google/api/client/http/HttpRequestFactory;
+      68: aload         4
+      70: new           #421                // class com/google/api/client/http/ByteArrayContent
+      73: dup
+      74: ldc           #146                // String application/protobuf
+      76: aload_3
+      77: invokespecial #425                // Method com/google/api/client/http/ByteArrayContent."<init>":(Ljava/lang/String;[B)V
+      80: invokevirtual #428                // Method com/google/api/client/http/HttpRequestFactory.buildPostRequest:(Lcom/google/api/client/http/GenericUrl;Lcom/google/api/client/http/HttpContent;)Lcom/google/api/client/http/HttpRequest;
+      83: astore        5
+      85: aload         5
+      87: iconst_0
+      88: invokevirtual #434                // Method com/google/api/client/http/HttpRequest.setThrowExceptionOnExecuteError:(Z)Lcom/google/api/client/http/HttpRequest;
+      91: pop
+      92: aload         5
+      94: sipush        20000
+      97: invokevirtual #440                // Method com/google/api/client/http/HttpRequest.setConnectTimeout:(I)Lcom/google/api/client/http/HttpRequest;
+     100: pop
+     101: aload         5
+     103: sipush        20000
+     106: invokevirtual #444                // Method com/google/api/client/http/HttpRequest.setReadTimeout:(I)Lcom/google/api/client/http/HttpRequest;
+     109: pop
+     110: aload         5
+     112: aload_1
+     113: invokevirtual #478                // Method com/google/api/client/http/HttpRequest.setHeaders:(Lcom/google/api/client/http/HttpHeaders;)Lcom/google/api/client/http/HttpRequest;
+     116: pop
+     117: aload         5
+     119: invokevirtual #447                // Method com/google/api/client/http/HttpRequest.execute:()Lcom/google/api/client/http/HttpResponse;
+     122: astore        6
+     124: aload         6
+     126: invokevirtual #450                // Method com/google/api/client/http/HttpResponse.isSuccessStatusCode:()Z
+     129: ifne          230
+     132: new           #456                // class com/google/api/client/http/HttpResponseException
+     135: dup
+     136: aload         6
+     138: invokespecial #458                // Method com/google/api/client/http/HttpResponseException."<init>":(Lcom/google/api/client/http/HttpResponse;)V
+     141: astore        7
+     143: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+     146: invokevirtual #37                 // Method com/google/common/flogger/GoogleLogger.atFine:()Lcom/google/common/flogger/LoggingApi;
+     149: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     152: aload         7
+     154: invokeinterface #45,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+     159: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     162: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+     164: ldc_w         #482                // String sendHttpRequestV2
+     167: sipush        325
+     170: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+     172: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+     177: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     180: ldc_w         #484                // String Unsuccessful HTTP response when publishing v2 event for %s
+     183: aload_2
+     184: invokeinterface #60,  3           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;)V
+     189: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+     192: invokevirtual #64                 // Method com/google/common/flogger/GoogleLogger.atWarning:()Lcom/google/common/flogger/LoggingApi;
+     195: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     198: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+     200: ldc_w         #482                // String sendHttpRequestV2
+     203: sipush        327
+     206: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+     208: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+     213: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     216: ldc_w         #486                // String Unsuccessful HTTP response when publishing v2 event for %s: %s
+     219: aload_2
+     220: aload         7
+     222: invokevirtual #467                // Method com/google/api/client/http/HttpResponseException.getMessage:()Ljava/lang/String;
+     225: invokeinterface #73,  4           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+     230: aload         6
+     232: invokevirtual #468                // Method com/google/api/client/http/HttpResponse.disconnect:()V
+     235: return
+
+  com.google.firestore.v1.EventFlowDocumentChange createChangeMessage(com.google.firestore.v1.Document, com.google.firestore.v1.Document);
+    Code:
+       0: invokestatic  #488                // Method com/google/firestore/v1/EventFlowDocumentChange.newBuilder:()Lcom/google/firestore/v1/EventFlowDocumentChange$Builder;
+       3: astore_3
+       4: aload_1
+       5: ifnull        14
+       8: aload_3
+       9: aload_1
+      10: invokevirtual #493                // Method com/google/firestore/v1/EventFlowDocumentChange$Builder.setOldValue:(Lcom/google/firestore/v1/Document;)Lcom/google/firestore/v1/EventFlowDocumentChange$Builder;
+      13: pop
+      14: aload_2
+      15: ifnull        24
+      18: aload_3
+      19: aload_2
+      20: invokevirtual #498                // Method com/google/firestore/v1/EventFlowDocumentChange$Builder.setValue:(Lcom/google/firestore/v1/Document;)Lcom/google/firestore/v1/EventFlowDocumentChange$Builder;
+      23: pop
+      24: aload_3
+      25: invokestatic  #500                // Method com/google/firestore/v1/DocumentMask.getDefaultInstance:()Lcom/google/firestore/v1/DocumentMask;
+      28: invokevirtual #505                // Method com/google/firestore/v1/EventFlowDocumentChange$Builder.setUpdateMask:(Lcom/google/firestore/v1/DocumentMask;)Lcom/google/firestore/v1/EventFlowDocumentChange$Builder;
+      31: pop
+      32: aload_3
+      33: invokevirtual #508                // Method com/google/firestore/v1/EventFlowDocumentChange$Builder.build:()Lcom/google/firestore/v1/EventFlowDocumentChange;
+      36: areturn
+
+  private void lambda$publishV2Event$0(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, byte[]);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: aload_1
+       3: aload_2
+       4: aload_3
+       5: aload         4
+       7: aload         5
+       9: aload         6
+      11: invokevirtual #511                // Method createHttpHeaders:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
+      14: aload         7
+      16: aload         8
+      18: invokevirtual #515                // Method sendHttpRequestV2:(Lcom/google/api/client/http/HttpHeaders;Ljava/lang/String;[B)V
+      21: goto          119
+      24: astore        9
+      26: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      29: invokevirtual #37                 // Method com/google/common/flogger/GoogleLogger.atFine:()Lcom/google/common/flogger/LoggingApi;
+      32: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      35: aload         9
+      37: invokeinterface #45,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+      42: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      45: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+      47: ldc_w         #518                // String publishV2Event
+      50: sipush        153
+      53: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+      55: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      60: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      63: ldc_w         #520                // String Failed to publish v2 event to %s
+      66: aload_0
+      67: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+      70: invokeinterface #60,  3           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;)V
+      75: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      78: invokevirtual #64                 // Method com/google/common/flogger/GoogleLogger.atWarning:()Lcom/google/common/flogger/LoggingApi;
+      81: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      84: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+      86: ldc_w         #518                // String publishV2Event
+      89: sipush        154
+      92: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+      94: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      99: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+     102: ldc_w         #522                // String Failed to publish v2 event to %s: %s
+     105: aload_0
+     106: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+     109: aload         9
+     111: invokevirtual #69                 // Method java/io/IOException.getMessage:()Ljava/lang/String;
+     114: invokeinterface #73,  4           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+     119: return
+    Exception table:
+       from    to  target type
+           0    21    24   Class java/io/IOException
+
+  private void lambda$publishEvent$0(java.lang.String, byte[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #524                // Method sendHttpRequest:(Ljava/lang/String;[B)V
+       6: goto          97
+       9: astore_3
+      10: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      13: invokevirtual #37                 // Method com/google/common/flogger/GoogleLogger.atFine:()Lcom/google/common/flogger/LoggingApi;
+      16: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      19: aload_3
+      20: invokeinterface #45,  2           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withCause:(Ljava/lang/Throwable;)Lcom/google/common/flogger/LoggingApi;
+      25: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      28: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+      30: ldc           #50                 // String publishEvent
+      32: bipush        108
+      34: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+      36: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      41: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      44: ldc_w         #526                // String Failed to publish event to %s
+      47: aload_0
+      48: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+      51: invokeinterface #60,  3           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;)V
+      56: getstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+      59: invokevirtual #64                 // Method com/google/common/flogger/GoogleLogger.atWarning:()Lcom/google/common/flogger/LoggingApi;
+      62: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      65: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+      67: ldc           #50                 // String publishEvent
+      69: bipush        109
+      71: ldc           #52                 // String java/com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher.java
+      73: invokeinterface #54,  5           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.withInjectedLogSite:(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/google/common/flogger/LoggingApi;
+      78: checkcast     #43                 // class com/google/common/flogger/GoogleLogger$Api
+      81: ldc_w         #528                // String Failed to publish event to %s: %s
+      84: aload_0
+      85: getfield      #9                  // Field hostAndPort:Lcom/google/common/net/HostAndPort;
+      88: aload_3
+      89: invokevirtual #69                 // Method java/io/IOException.getMessage:()Ljava/lang/String;
+      92: invokeinterface #73,  4           // InterfaceMethod com/google/common/flogger/GoogleLogger$Api.log:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+      97: return
+    Exception table:
+       from    to  target type
+           0     6     9   Class java/io/IOException
+
+  static {};
+    Code:
+       0: ldc           #49                 // String com/google/cloud/datastore/emulator/impl/events/FunctionsEmulatorEventPublisher
+       2: invokestatic  #530                // Method com/google/common/flogger/GoogleLogger.forInjectedClassName:(Ljava/lang/String;)Lcom/google/common/flogger/GoogleLogger;
+       5: putstatic     #33                 // Field logger:Lcom/google/common/flogger/GoogleLogger;
+       8: invokestatic  #534                // Method com/google/common/base/Functions.identity:()Lcom/google/common/base/Function;
+      11: putstatic     #371                // Field SEGMENT_ENCODER:Ljava/util/function/Function;
+      14: return
+}
