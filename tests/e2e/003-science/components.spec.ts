@@ -140,6 +140,34 @@ test("Read shared science ledger in gallery and lab", async ({
         page,
         player: name,
         surface: "document" as const,
+        verifications: [
+          {
+            spec: "The named comparison is the keyboard reading viewpoint; its delivered total and Return remain contained before capture.",
+            check: async () => {
+              const panel = page.getByRole("region", { name, exact: true });
+              const r = panel.getByRole("region", {
+                name: "Science source ledger",
+                exact: true,
+              });
+              await panel.locator(".science-ledger").scrollIntoViewIfNeeded();
+              await r.focus();
+              await r.press("End");
+              await expect(r).toBeFocused();
+              await expectReadingTarget(
+                panel
+                  .locator("dl > div")
+                  .filter({ hasText: "Last delivered science" }),
+                false,
+              );
+              await expectReadingTarget(
+                panel.getByRole("button", {
+                  name: "Return to galaxy",
+                  exact: true,
+                }),
+              );
+            },
+          },
+        ],
         primary: [
           page
             .getByRole("region", { name, exact: true })

@@ -1,0 +1,65 @@
+{
+  "id": "science-ledger-components",
+  "title": "Inspect the shared science source instrument",
+  "inventory": [
+    "UX-03",
+    "UX-08",
+    "UX-16"
+  ],
+  "description": "Actual ScienceLedger in reducer-derived gallery/lab specimens. This is component evidence, not live authorization. The ledger itself has no invented animation or pending science values.",
+  "source": {
+    "commit": "4ed1fe58c7113a103f962b3d91e722cdbad72951",
+    "dirty": false,
+    "spec": "tests/e2e/003-science/components.spec.ts",
+    "specSha256": "aa4fe8d8d6cbecf77de33e49007147f46d155d7b9d9b8b78e352d5edee57263a"
+  },
+  "mode": "generate",
+  "status": "failed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "gallery-source",
+      "description": "Open the actual shared ledger with Enter and read its lower totals through End.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The reducer-derived component distinguishes initial capacity from pending first delivery.",
+      "verifications": [
+        "The actual delivered-total reading and Return remain usable inside the component."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "001-gallery-source-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "readMs": 28.653,
+    "callbackMs": 44.743,
+    "commitMs": 567.624,
+    "commitRequestMs": 567.388,
+    "totalMs": 626.13,
+    "commitOutsideRequestMs": 0.214,
+    "totalOutsideCallbackCommitMs": 1.309,
+    "file": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-desktop/settlement-timing.jsonl",
+    "calls": 49,
+    "attempts": [
+      1
+    ],
+    "commitFailures": 0,
+    "requestFailures": 0,
+    "batchCompleted": false
+  },
+  {
+    "readMs": 24.274,
+    "callbackMs": 41.254,
+    "commitMs": 558.361,
+    "commitRequestMs": 558.207,
+    "totalMs": 598.421,
+    "commitOutsideRequestMs": 0.165,
+    "totalOutsideCallbackCommitMs": 1.302,
+    "file": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-large/settlement-timing.jsonl",
+    "calls": 51,
+    "attempts": [
+      1
+    ],
+    "commitFailures": 0,
+    "requestFailures": 0,
+    "batchCompleted": false
+  },
+  {
+    "readMs": 23.031,
+    "callbackMs": 40.642,
+    "commitMs": 547.565,
+    "commitRequestMs": 547.348,
+    "totalMs": 590.036,
+    "commitOutsideRequestMs": 0.157,
+    "totalOutsideCallbackCommitMs": 1.266,
+    "file": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-short/settlement-timing.jsonl",
+    "calls": 51,
+    "attempts": [
+      1
+    ],
+    "commitFailures": 0,
+    "requestFailures": 0,
+    "batchCompleted": false
+  },
+  {
+    "readMs": 24.635,
+    "callbackMs": 42.614,
+    "commitMs": 605.491,
+    "commitRequestMs": 605.318,
+    "totalMs": 650.447,
+    "commitOutsideRequestMs": 0.19,
+    "totalOutsideCallbackCommitMs": 1.309,
+    "file": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-desktop/settlement-timing.jsonl",
+    "calls": 46,
+    "attempts": [
+      1
+    ],
+    "commitFailures": 0,
+    "requestFailures": 0,
+    "batchCompleted": false
+  },
+  {
+    "readMs": 24.232,
+    "callbackMs": 41.521,
+    "commitMs": 571.883,
+    "commitRequestMs": 571.66,
+    "totalMs": 617.413,
+    "commitOutsideRequestMs": 0.177,
+    "totalOutsideCallbackCommitMs": 1.308,
+    "file": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-large/settlement-timing.jsonl",
+    "calls": 49,
+    "attempts": [
+      1
+    ],
+    "commitFailures": 0,
+    "requestFailures": 0,
+    "batchCompleted": false
+  },
+  {
+    "readMs": 23.382,
+    "callbackMs": 40.253,
+    "commitMs": 581.85,
+    "commitRequestMs": 581.688,
+    "totalMs": 622.83,
+    "commitOutsideRequestMs": 0.167,
+    "totalOutsideCallbackCommitMs": 1.315,
+    "file": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-short/settlement-timing.jsonl",
+    "calls": 48,
+    "attempts": [
+      1
+    ],
+    "commitFailures": 0,
+    "requestFailures": 0,
+    "batchCompleted": false
+  }
+]
