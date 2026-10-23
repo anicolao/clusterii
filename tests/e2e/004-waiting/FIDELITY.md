@@ -5,3 +5,9 @@ UX_DESIGN section02 requires entry scenery and a bounded manifest, named occupie
 Production reuses existing entry-desktop/entry-phone artwork, with provenance in docs/art/PRODUCTION_ASSETS.md, shared buttons, GameMenu/rules and authoritative CampaignStartStatus. Shared roster preserves maintenance and supported Leave commands. Objective copy is derived from the versioned development rules and explicitly remains under review.
 
 Four-size candidate, keyboard/reduced-motion, reconnection and independent visual acceptance are pending execution. No baseline promotion. Full privacy/concurrency, normal-motion, Linux/KMS/hosted and release gates remain open. Science24 and prior galaxy families remain separately unapproved; cinematic galaxy composition is not resolved by this waiting screen.
+
+## Candidate execution
+
+Clean d26f7f6 produced four passing journeys/16 candidate PNGs in49.3s under Nix, with original240s/30s/10s budgets, retries0 and max-failures1. Spec SHA256 f1264e5faff61ac5b42542e43fc2e8080a374ceaa6a46baf0fab947a47c65618. Originals/manifests: /tmp/cluster-waiting-d26f7f6/stories/waiting-to-home; byte-preserved archive: stories/candidates-d26f7f6/waiting-to-home. Type/lint/policy checks pass. Author inspected the scheduled manifest at all four sizes; large display was downscaled by the viewer, not a native typography audit. Independent review and strict comparison remain pending.
+
+The journey proves acknowledged admissions, one-seat roster after reload, full scheduled roster, same-view active transition and two authenticated active viewpoints after reload. It does not prove canonical home-ID invariance, foreign-read denial, account-switch races or normal-motion rendering; these remain explicit live acceptance gaps. Existing service authorization is unchanged. The older002 geometry assertions now target the real bounded manifest rather than the removed arbitrary inspector; that compatibility edit has not been browser-rerun.
