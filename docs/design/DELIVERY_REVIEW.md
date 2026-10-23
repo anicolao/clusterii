@@ -196,3 +196,5 @@ PR120 reviewer09:32 follow-up: [3c16123](../ux/reviews/route-focus-3c16123/READM
 ## Isolated settlement investigation, based on PR120
 
 Branch investigate/zero-science-settlement on5057c797 keeps PR120 stable. [Measured evidence](../testing/SETTLEMENT_0942_REVIEW.md): one unchanged phone run completes100 ticks in3.485s then fails stale fleet navigation; no historical-cause resolution. Feature010 source correction uses shared real navigation; static/policy and17 timing assertions pass, corrected browser execution pending. No preview/visual/privacy/hosted certification or promotion.
+
+[Draft PR121](https://github.com/anicolao/clusterii/pull/121), base PR1205057c797: changed-source phone feature010 completed26.1s with14 unpromoted candidates at5509821f. Actual198 leased ticks and zero-science/reload path pass locally; historical CI timeout/privacy/independent visual gates stay open. [Evidence](../testing/zero-science-5509821f/README.md).

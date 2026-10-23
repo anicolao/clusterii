@@ -1,0 +1,394 @@
+{
+  "id": "live-zero-science",
+  "title": "Recover research after losing orbital science",
+  "inventory": [
+    "UX-04",
+    "UX-06",
+    "UX-07",
+    "UX-08",
+    "UX-09",
+    "UX-14",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "Four independently authenticated commanders use real fleet controls after100 earned ticks. An escape and rival route produce actual orbital loss, zero science and retained surface control. Owner and peer recover private research through reload. Fixed catalogue/domain clocks are explicit harness controls; budgets are220 ticks,240 seconds and16 captures per viewport. Rules remain under review; this does not certify managed encryption or hosted scheduling.",
+  "source": {
+    "commit": "5509821f562b97e6ca5e8eedee00de2c5d213492",
+    "dirty": false,
+    "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+    "specSha256": "ffa26204b68a53a8f6dcced4bf2605823ff3a7cc048d56439f486a9969d4557e"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "leave-campaign-during-elapsed-time",
+      "description": "Both captured players return through ordinary Campaigns controls while time passes; setup-only witnesses close after admission. No service delivery or authorization is bypassed.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "earn-navigation",
+      "description": "Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "recover-earned-campaign",
+      "description": "Both real saved identities reopen the exact campaign after elapsed-time settlement.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "form-0",
+      "description": "Use the actual home-system fleet controls to reserve all160 earned fighters. The other commander's order remains private.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "A real receipt accepts160 fighters for tick101.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "013-form-0-1-fleet-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "form-1",
+      "description": "Use the actual home-system fleet controls to reserve all160 earned fighters. The other commander's order remains private.",
+      "actor": "Independent marshal",
+      "kind": "player",
+      "acknowledgement": "A real receipt accepts160 fighters for tick101.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur."
+      ],
+      "views": [
+        {
+          "player": "Independent marshal",
+          "image": "014-form-1-1-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "form-at-101",
+      "description": "Real leased settlement forms both fleets once; repeat delivery does no work.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "formed-fleets",
+      "description": "Select each acknowledged fleet with the keyboard and read its actual160-fighter complement.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Both players see the settled formation outcome.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "016-formed-fleets-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "016-formed-fleets-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "preview-route-0",
+      "description": "Plot an escape to a neutral star without a science station.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Reachable legs enable commitment; range30 and speed2 remain distinct.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "017-preview-route-0-1-fleet-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "commit-route-0",
+      "description": "Confirm the original route with Enter and read the authoritative scheduled departure acknowledgement.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The server accepts the route and retains its exact waypoints for tick102.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "018-commit-route-0-1-fleet-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "preview-route-1",
+      "description": "Plot a seven-leg route through the actual catalogue toward the other commander's home.",
+      "actor": "Independent marshal",
+      "kind": "player",
+      "acknowledgement": "Reachable legs enable commitment; range30 and speed2 remain distinct.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur."
+      ],
+      "views": [
+        {
+          "player": "Independent marshal",
+          "image": "019-preview-route-1-1-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "commit-route-1",
+      "description": "Confirm the original route with Enter and read the authoritative scheduled departure acknowledgement.",
+      "actor": "Independent marshal",
+      "kind": "player",
+      "acknowledgement": "The server accepts the route and retains its exact waypoints for tick102.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur."
+      ],
+      "views": [
+        {
+          "player": "Independent marshal",
+          "image": "020-commit-route-1-1-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "travel-and-capture",
+      "description": "Deliver bounded real leased travel/combat/production ticks. The peer captures orbit; no battle outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "lost-orbit",
+      "description": "Reload both accounts, then use keyboard navigation to read persisted science production and research progress after orbital loss.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Both players recover the settled tick and their own distinct science ledger.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur.",
+        "The owner retains surface control but no opposing orbital values; zero output freezes research while the rival gains science."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "022-lost-orbit-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "022-lost-orbit-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "zero-next-tick",
+      "description": "Deliver one further real tick and repeat it; zero science must retain the same research state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "still-unfunded",
+      "description": "Reload both accounts, then use keyboard navigation to read persisted science production and research progress after orbital loss.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Both players recover the settled tick and their own distinct science ledger.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur.",
+        "The owner retains surface control but no opposing orbital values; zero output freezes research while the rival gains science."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "024-still-unfunded-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "024-still-unfunded-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "no-completion-estimate",
+      "description": "Open the real forecast with the keyboard. Read why no completion date is available at zero science.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The forecast states zero-rate explicitly and invents no ETA.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur.",
+        "The owner retains surface control but no opposing orbital values; zero output freezes research while the rival gains science."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "025-no-completion-estimate-1-fleet-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-economy",
+      "description": "Close Economy with Escape and return keyboard focus to its opening control.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The panel closes and Economy is focused and fully usable.",
+      "verifications": [
+        "Each authenticated projection omits the other commander's private order IDs; no application errors occur.",
+        "The owner retains surface control but no opposing orbital values; zero output freezes research while the rival gains science."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "026-close-economy-1-fleet-marshal.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
