@@ -29,3 +29,7 @@ PR120 remains at5057c797. New branch investigate/zero-science-settlement is base
 Initial migration static/lint passed, policy correctly rejected direct legacy fixture import in feature010. Use established feature helpers re-export (same actual fixture/helper); preserve initial policy log. No policy guard weakened.
 
 Corrected migration static/lint/story-policy and settlementTiming delegation/redaction case17 assertions pass. No additional browser execution occurred.
+
+## Reviewer09:52 changed-source verification
+
+One phone feature010 run now authorized to verify the demonstrated navigation correction. Original240s/30s/10s budgets, retries0/max-failures1 and220-tick bound remain; existing timing opt-in records real progression. Separate /tmp/cluster121-0952-output and run log preserve first failure; no automatic retry. Fresh Nix Java21/Node24/Bun1.3.13; disk10,397,312KiB and all configured Cluster ports clear. Serial Functions build precedes execution. Current9395ea9 application39964550103/story39964550111/publication39964550112 running; documentation passed, generation check green is not candidate evidence. PR1205057c797 publication39963144423 succeeded; app/story still running. Raw CI/preflight preserved under /tmp/cluster121-0952-*. No new completed CI timing result, historical cause remains unresolved.
