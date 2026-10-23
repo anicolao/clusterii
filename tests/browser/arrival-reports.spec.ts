@@ -249,7 +249,7 @@ test("ordinary commanders recover orbital occupation and conquest reports", asyn
     await expect(
       reports.getByRole("heading", { name: "Orbit secured", exact: true }),
     ).toBeVisible();
-    await expect(reports).toContainText("Surface remains Fleet envoy 2-held");
+    await expect(reports).toContainText("Surface remained Fleet envoy 2-held.");
     await expect(reports).toContainText("The held balance is private");
     async function evidence(phase: string) {
       for (const [label, width, height] of [

@@ -1,11 +1,16 @@
 {
   "arrival-reports.spec.ts": {
-    "sha256": "a3389a9361dc8b060fdd254ccf5efe5a276f5991b444d2f1fb3d177f6b899625",
+    "sha256": "9514066d76818b56d40f05daeb38791e889b2ec3eb3a7681f5826ea4bd4f601b",
     "status": "Procedural regression; illustrated migration incomplete",
     "navigationCompatibility": {
       "priorSha256": "0bd282b7aa4c20af324a5315bf8eb875f69c1c8ab339819db346cfe97c5d0b4f",
       "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
       "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    },
+    "historicalCopyCompatibility": {
+      "priorSha256": "a3389a9361dc8b060fdd254ccf5efe5a276f5991b444d2f1fb3d177f6b899625",
+      "authorization": "Prompt 165: reviewer14:44 explicitly requests semantic historical-record expectation correction; no illustrated migration or broader exception renewal",
+      "review": "docs/testing/ARRIVAL_RECORD_EXPECTATION_REVIEW.md"
     }
   },
   "briefing.spec.ts": {
