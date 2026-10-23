@@ -45,6 +45,6 @@ jobs:
             firestore-debug.log
             ci-evidence/nix-renderer/
             ci-evidence/verification/
-            ci-evidence/profile-ingress.jsonl
+            ci-evidence/profile-ingress.jsonl*
             test-results/
             tests/browser/journey.spec.ts-snapshots/
