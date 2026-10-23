@@ -212,7 +212,13 @@ test("An invited new commander saves an identity and joins the preserved campaig
         check: async () => {
           await confirmed(guest);
           await expect(
-            page.getByText("Invited envoy", { exact: true }),
+            page
+              .getByRole("dialog", {
+                name: "Campaign roster panel",
+                exact: true,
+              })
+              .getByRole("region", { name: "Campaign roster", exact: true })
+              .getByText("Invited envoy", { exact: true }),
           ).toBeVisible();
         },
       },
@@ -308,7 +314,10 @@ test("A returning commander resumes an invitation without rewriting identity and
         await button(guest, "Claim your seat").click();
         await confirmed(guest);
         await expect(
-          page.getByText("Returning envoy", { exact: true }),
+          page
+            .getByRole("dialog", { name: "Campaign roster panel", exact: true })
+            .getByRole("region", { name: "Campaign roster", exact: true })
+            .getByText("Returning envoy", { exact: true }),
         ).toBeVisible();
         await guest.goto("./");
         await button(guest, "Your identity").click();
@@ -381,7 +390,13 @@ test("A returning commander resumes an invitation without rewriting identity and
             await expect(guest.getByLabel("Commander name")).toHaveCount(0);
             await unchanged();
             await expect(
-              page.getByText("Returning envoy", { exact: true }),
+              page
+                .getByRole("dialog", {
+                  name: "Campaign roster panel",
+                  exact: true,
+                })
+                .getByRole("region", { name: "Campaign roster", exact: true })
+                .getByText("Returning envoy", { exact: true }),
             ).toHaveCount(1);
           },
         },

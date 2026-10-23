@@ -2487,3 +2487,37 @@ No actionable change: agent idle, clean/pushed5178d6c/#117. Disk729,224KiB far b
 New independent failed-log/source inspection; exact handoff to idle agent:
 
 Reviewer05:12: new application39927177999 at5178d6c failed production.spec.ts:19: Waiting campaign region/full roster found, but getByRole(status).filter(hasText:/^Starts /) absent after5s. Independently read CampaignStartStatus: scheduled past start renders Awaiting home assignment; future branch emits Starts and date via separate templated whitespace. Diagnose both actual phase/time and raw-vs-normalized text rather than assume earlier dock issue persists. Audit the whole new pre-start path, date extraction and real-boundary wait for late scheduling/locale/whitespace; use authoritative displayed/authorized start identity and real Began acknowledgement, preserve first-production+15min and all downstream assertions/deadlines. Do not solve by unconditional tolerance or fake clocks. Bounded Nix source/static work only: disk576,888KiB, no browser/emulator/artifact archive/unchanged rerun. Retain exact run/failure, log attributed handoff and waiting05:02 checkpoint, commit/push supported correction. Existing ingress failure remains separate unresolved evidence; no merge/promotion or visual approval.
+
+## Reviewer checkpoint — 2026-10-23 05:22 Toronto
+
+Confirmed idle clean/pushed4239b39/#117. Independently reviewed source/static diagnosis: prior Svelte render has newline after Starts, defeating raw regex; actual overdue branch also omitted scheduled identity. Semantic visible time/ISO now preserves authorized start and next-production dates, named status removes raw-text dependency, both waits use recorded target with unchanged100ms buffer; real Began and first-production+900000 remain required. No locale-parsed prose or fake clock. Two static tests/type/Svelte/policy checks pass; browser and updated-copy visual review remain unexecuted. CurrentCI all running. Disk379,996KiB far below gate; no browser/download or duplicate prompt. Existing disk notice stands. Reconcile checkpoint with next committed work, preserve failure evidence; no visual approval, baseline promotion, merge or completion.
+
+## Reviewer checkpoint — 2026-10-23 05:32 Toronto
+
+Unchanged actionable state: agent idle at clean/pushed4239b39/#117; disk246,648KiB far below2,359,296 capture gate. Documentation/publication/generation now pass; application/story verification running. No new browser evidence or failure to diagnose. No duplicate prompt, download, browser/emulator launch or cleanup. Preserve evidence, reconcile waiting checkpoint on resumption; existing disk notice stands. No approval, promotion, merge or completion.
+
+## Reviewer checkpoint — 2026-10-23 05:42 Toronto
+
+No actionable change: agent idle, clean/pushed4239b39/#117. Disk462,588KiB remains far below2,359,296 gate despite slight recovery. Application/story verification in progress; other checks pass. No new execution/evidence, duplicate prompt, download or cleanup. Preserve originals and reconcile waiting checkpoints on resumption; existing disk notice stands. No visual approval, promotion, merge or completion.
+
+## Reviewer checkpoint — 2026-10-23 05:52 Toronto
+
+Unchanged actionable state: idle clean/pushed4239b39/#117, application/story CI in progress, other checks pass. Disk455,496KiB below floor/capture gate. No new evidence, duplicate prompt, local run/download or cleanup. Existing disk notice stands; preserve originals and reconcile checkpoints on resumption. Full visual/release review incomplete; no promotion/merge/completion.
+
+## Reviewer checkpoint — 2026-10-23 06:02 Toronto
+
+Agent idle, clean/pushed4239b39/#117; no actionable change. Disk553,928KiB below2,359,296 gate. Application/story CI still running; other checks passed. No duplicate prompt, download, local run or cleanup. Preserve evidence and reconcile waiting checkpoints on resumption; existing disk notice stands. No visual approval, promotion, merge or completion.
+
+## Reviewer checkpoint — 2026-10-23 06:12 Toronto
+
+Unchanged actionable state: agent idle and worktree clean at pushed4239b39/#117. Application39931091268 and story39931091215 remain in progress; documentation, publication and story generation passed. Disk412,912KiB remains far below2,359,296 capture gate. No new rendered evidence, duplicate prompt, local browser/emulator launch, archive download or cleanup. Preserve originals and reconcile waiting checkpoints at next resumed commit boundary; existing disk notice stands. Full visual/release review remains incomplete; no approval, promotion, merge or monitor completion.
+
+## Reviewer checkpoint — 2026-10-23 06:22 Toronto
+
+Application39931091268 at4239b39 succeeded; story39931091215 failed. Idle clean agent; disk343,920KiB below capture gate. Bounded failed-log inspection identified duplicate global selectors separately from missing Linux baselines/pixel differences. Exact handoff follows; agent owns correction/log reconciliation and commits, supervisor writes only this main checkpoint.
+
+Reviewer06:22: application39931091268 at4239b39 now SUCCESS; story39931091215 failed all four cohorts. Independently inspected failed log /tmp/cluster117-0622-story-failure.log: distinguish absent Linux reviewed baselines/pixel differences from actionable strict-locator regressions. history.story.spec.ts:81 global paused status matches both Waiting campaign and Campaign roster panel; invitation.story.spec.ts:312 global exact Returning envoy matches two elements. Diagnose and scope to the intended acknowledged roster/status surface, audit related duplicate selectors (including invitation line384), preserve actual authorization/membership/recovery assertions and deadlines; never use first() merely to suppress ambiguity. Classify whole log by failure type/cohort with counts and retain run/head references, rather than describe all failures as baselines. Read E2E_GUIDE and Pantheon structure before test edits; bounded Nix source/static checks only: disk343,920KiB below2,359,296 gate, no browser/emulator/archive download or unchanged rerun. No automatic baseline promotion or visual approval. Log reviewer attribution and reconcile main meta checkpoints since05:22, commit/push supported correction and diagnosis. Keep unresolved ingress and full fidelity/release gates separate. No merge.
+
+## Reviewer checkpoint — 2026-10-23 06:32 Toronto
+
+Agent was still idle at clean4239b39 and the06:22 handoff was absent from captured history/composer. Recovered delivery using bracketed paste of the existing exact reviewer0622 buffer, verified pasted content before separately submitting Enter; no new instructions or duplicate task intended. CI unchanged: application success, story failure; disk1,235,280KiB still below2,359,296 gate. No capture/emulator/download or baseline approval. Agent to reconcile checkpoints and commit/push supported fixes under the existing handoff.

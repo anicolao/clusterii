@@ -75,9 +75,15 @@ test("Recover saved campaign records without losing your place", async ({
               })
               .click();
             await expect(
-              page.getByRole("status").filter({
-                hasText: pause ? /^Campaign paused\./ : /^Campaign resumed\./,
-              }),
+              page
+                .getByRole("dialog", {
+                  name: "Campaign roster panel",
+                  exact: true,
+                })
+                .getByRole("status")
+                .filter({
+                  hasText: pause ? /^Campaign paused\./ : /^Campaign resumed\./,
+                }),
             ).toHaveText(
               pause
                 ? "Campaign paused. Admissions and scheduled start are stopped."
@@ -231,7 +237,10 @@ test("Recover saved campaign records without losing your place", async ({
       spec: "The host command is acknowledged as paused.",
       check: async () =>
         expect(
-          second.getByRole("status").filter({ hasText: /^Campaign paused\./ }),
+          second
+            .getByRole("dialog", { name: "Campaign roster panel", exact: true })
+            .getByRole("status")
+            .filter({ hasText: /^Campaign paused\./ }),
         ).toBeVisible(),
     },
     verifications: [
