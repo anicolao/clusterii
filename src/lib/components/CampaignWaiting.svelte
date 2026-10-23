@@ -43,12 +43,26 @@
       <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
       <CampaignStartStatus game={view} />
     </div>
-    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded manifest supports ordinary keyboard reading.) -->
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (Named bounded reading region uses Home/End without scrolling the document.) -->
     <div
       class="reading"
       role="region"
       aria-label="Campaign manifest"
       tabindex="0"
+      onkeydown={(event) => {
+        if (
+          event.target !== event.currentTarget ||
+          event.altKey ||
+          event.ctrlKey ||
+          event.metaKey
+        )
+          return;
+        if (event.key === "Home" || event.key === "End") {
+          event.preventDefault();
+          event.currentTarget.scrollTop =
+            event.key === "Home" ? 0 : event.currentTarget.scrollHeight;
+        }
+      }}
     >
       <h2>{view.roster.length} / {view.capacity} empires assembled</h2>
       <p>
@@ -220,12 +234,50 @@
     gap: 8px;
   }
   @media (min-width: 2400px) {
+    .waiting {
+      padding: 64px 6vw;
+    }
+    .wordmark {
+      font-size: 46px;
+    }
     .manifest {
-      width: 1000px;
-      margin-right: 8vw;
+      width: min(1400px, 42vw);
+      margin: 8vh 15vw 0 auto;
+    }
+    .manifest-heading,
+    footer {
+      padding: 28px 44px;
     }
     .reading {
-      font-size: 20px;
+      padding: 8px 44px 32px;
+    }
+    .manifest {
+      font-size: 24px;
+    }
+    h1 {
+      font-size: 64px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    .overline {
+      font-size: 18px;
+    }
+    ul {
+      gap: 28px 40px;
+      margin: 28px 0;
+    }
+    li {
+      padding-block: 20px;
+      gap: 14px;
+    }
+    .actions {
+      gap: 20px;
+    }
+    .waiting :global(button) {
+      font-size: 24px;
+      min-height: 68px;
+      padding: 16px 28px;
     }
   }
   @media (max-width: 700px) {
