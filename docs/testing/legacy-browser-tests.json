@@ -129,12 +129,17 @@
     }
   },
   "production.spec.ts": {
-    "sha256": "fe68bc9057fa91592d7d41f8c87548ef8301c060cee1adde314dd5d919eca27a",
+    "sha256": "f27fefccf159d920a9a155f9d65b28c85799f8f737a9d3b402f9522b404ddf19",
     "status": "Procedural regression; illustrated migration incomplete",
     "navigationCompatibility": {
       "priorSha256": "b82c35d343e6a2841a5c2b840032ea9a26ad4b967b3f24b16c9b63c544af6c50",
       "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
       "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    },
+    "waitingCompatibility": {
+      "priorSha256": "fe68bc9057fa91592d7d41f8c87548ef8301c060cee1adde314dd5d919eca27a",
+      "authorization": "Prompt 141: reviewer04:43 explicitly requests bounded legacy waiting/start compatibility; this is not illustrated migration",
+      "review": "docs/testing/PRODUCTION_WAITING_CI_REVIEW.md"
     }
   }
 }

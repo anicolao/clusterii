@@ -12,12 +12,20 @@ test('four commanders receive authoritative production after the real scheduled 
    const page=pages[i];if(i===0){await page.getByRole('button',{name:'Create campaign',exact:true}).click();await page.getByLabel('Campaign name').fill(`Production dawn ${Date.now()}`);await page.getByRole('button',{name:'Create galaxy'}).click();await expect(page.getByRole('heading',{name:'Choose your faction'})).toBeVisible();url=page.url();}else await page.goto(url);
    await page.getByRole('radio',{name:new RegExp(['Heliac Assembly','Pelagic Concord','Vesper Synod','Dracon League'][i])}).check();await page.getByRole('button',{name:'Claim your seat'}).click();await expect(page.getByText('Your seat is confirmed.')).toBeVisible();
   }
-  await openGalaxyCommand(pages[0], "Economy");await expect(pages[0].getByRole('dialog',{name:'Empire economy panel'})).toContainText('Production begins fifteen minutes after home assignment.');
+  // A full roster is scheduled, not active: read the real manifest before gameplay navigation.
+  const waiting=pages[0].getByRole('region',{name:'Waiting campaign',exact:true});
+  await expect(waiting.getByRole('heading',{name:'4 / 4 empires assembled',exact:true})).toBeVisible();
+  const startStatus=waiting.getByRole('status').filter({hasText:/^Starts /});
+  await expect(startStatus).toContainText('The server assigns home systems at the scheduled start.');
+  const startLabel=(await startStatus.innerText()).match(/^Starts (.*?)\. The server assigns/)!;
+  expect(startLabel).not.toBeNull();
+  const startAt=await pages[0].evaluate(label=>Date.parse(label),startLabel[1]);expect(Number.isFinite(startAt)).toBe(true);
+  await expect(pages[0].getByRole('navigation',{name:'Galaxy commands',exact:true})).toHaveCount(0);
+  await expect(pages[0].getByRole('dialog',{name:'Empire economy panel'})).toHaveCount(0);
   let remaining=900000-Date.now()%900000+100;console.log(`Production journey: waiting ${Math.ceil(remaining/1000)}s for actual campaign start.`);await new Promise(r=>setTimeout(r,remaining));
   const deliver=async(name:string)=>{const response=await request.post(`http://127.0.0.1:15001/demo-clusterii/us-central1/${name}-0`,{headers:{'X-CloudScheduler-JobName':'emulator-production-journey','X-CloudScheduler-ScheduleTime':new Date().toISOString()}});expect(response.ok()).toBe(true);};
   await deliver('startScheduledCampaigns');
-  await pages[0].getByRole("button", {name:"Return to galaxy",exact:true}).click();
-  for(const page of pages){await acknowledgeCampaignStart(page);await openGalaxyCommand(page, "Economy");await expect(page.getByRole('dialog',{name:'Empire economy panel'})).toContainText('First production pending');}
+  for(const page of pages){await acknowledgeCampaignStart(page);await expect(page.getByRole('region',{name:'Waiting campaign',exact:true})).toHaveCount(0);await openGalaxyCommand(page, "Economy");const panel=page.getByRole('dialog',{name:'Empire economy panel'});await expect(panel).toContainText('First production pending');const firstProduction=await page.evaluate(at=>new Date(at+900000).toLocaleString(),startAt);await expect(panel.getByRole('status',{name:'Production schedule',exact:true})).toHaveText(`Next production: ${firstProduction}.`);}
   await pages[0].getByRole('button',{name:'Return to galaxy',exact:true}).click();
   await openConstruction(pages[0], "Surface");
   const construction=pages[0].getByRole('dialog',{name:'System construction panel'});
