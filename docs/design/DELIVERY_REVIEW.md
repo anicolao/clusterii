@@ -200,3 +200,15 @@ Branch investigate/zero-science-settlement on5057c797 keeps PR120 stable. [Measu
 [Draft PR121](https://github.com/anicolao/clusterii/pull/121), base PR1205057c797: changed-source phone feature010 completed26.1s with14 unpromoted candidates at5509821f. Actual198 leased ticks and zero-science/reload path pass locally; historical CI timeout/privacy/independent visual gates stay open. [Evidence](../testing/zero-science-5509821f/README.md).
 
 PR12110:02 update: passed phone package provenance repaired without rerun or lost failure history. Fresh-output guard and exact actor SDK reads added; ce90816e desktop/large/short3 journeys42 candidates pass after separately retained command-corner failure. [Evidence](../testing/zero-science-ce90816e/README.md). Current-source phone/shared-control visual/normal-motion/Linux/hosted and historical CI timing gates remain.
+
+## Nix runtime dependencies and next product gap
+
+| Slice / base | Current evidence | Remaining acceptance |
+| --- | --- | --- |
+| PR121 / PR120 | ef82866c five journeys,30 retained candidates: current-source authenticated phone and four-size shared command normal/reduced keyboard selection. Rounded painted faces restore plate03 treatment. | Full family/plate review, Linux strict and historical settlement cause remain open. |
+| PR122 / PR121 | Locked Nix story tools bootstrap/runtime succeed on13562e6c; story-tools rejects21 library dependencies before player journeys. | Not full Nix compliance; original logs retained. |
+| PR123 / PR122 | Publication/documentation/cleanup use Nix. Rules and13 prompt tests pass locally; source/revision checks unchanged. | Hosted exact-head and runtime acceptance separate. |
+| PR124 / PR123 | Both89efb4f2 Linux architectures reach fixed-image load, then config-ID guard rejects. Retained engine reveals runner containerd.9f8c8fe0 explicitly isolates Nix containerd and fixes storage semantics while retaining hash equality/loader checks. | Corrected Linux jobs39975693961/39975694018 running; no browser/loader/pixel success inferred. Generation skipped, not candidate evidence. |
+| Subsequent player slice / PR124 once coherent | [Contextual aftermath gap audit](NEXT_PLAYER_GAP_AUDIT.md): selected system → its authorized arrival report → surface inspection with contextual focus/selection recovery, against09-combat. | No implementation or captures yet; no new combat/alliance/victory policies authorized. |
+
+Previous visual families and privacy/concurrency/KMS/hosted/release holds remain. No baseline promotion or merge.
