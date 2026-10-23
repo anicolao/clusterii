@@ -613,3 +613,25 @@ test("route memory and submitted recovery preserve newer intent across navigatio
   expect(recoveredRouteDraft(newer, submitted.action.waypoints)).toBe(newer);
   expect(submitted).toEqual(originalPayload);
 });
+// Projection boundary: fixture edits establish split ownership, not live-service evidence.
+import { routeForceReview } from "../src/lib/route-force-review";
+test("route review retains exact garrison without subtracting formed forces twice or revealing the opposite layer", () => {
+  const { c, home, id } = formed();
+  const view = campaignView(c, "p0");
+  const review = routeForceReview(view, id)!;
+  expect(review.fighters).toBe(4);
+  expect(review.infantry).toBe(6);
+  expect(review.capacity).toBe(40);
+  expect(review.orbit).toBe(c.systems[home.id].fighters);
+  expect(review.surface).toBe(c.systems[home.id].infantry);
+  expect(review.otherFighters).toBe(0);
+  const before = structuredClone(c);
+  c.systems[home.id].surface = "p1";
+  c.systems[home.id].infantry = 987654;
+  const split = routeForceReview(campaignView(c, "p0"), id)!;
+  expect(split.surface).toBeNull();
+  expect(JSON.stringify(split)).not.toContain("987654");
+  expect(split.orbit).toBe(before.systems[home.id].fighters);
+  expect(routeForceReview(campaignView(c, "p1"), id)).toBeNull();
+  expect(routeForceReview(view, "retired")).toBeNull();
+});

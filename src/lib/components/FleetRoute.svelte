@@ -9,6 +9,7 @@
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
   import RouteRules from "./RouteRules.svelte";
+  import { routeForceReview } from "$lib/route-force-review";
   let {
     waypoints = $bindable<string[]>([]),
     view,
@@ -33,6 +34,7 @@
     onretry?: () => void;
   } = $props();
   const fleet = $derived(view.military?.fleets.find((f) => f.id === fleetId));
+  const forces = $derived(routeForceReview(view, fleetId));
   let query = $state("");
   let draftNotice = $state("");
   let waypointSearch = $state<HTMLInputElement>();
@@ -245,6 +247,69 @@
       </div>
     </div>
 
+    {#if forces}<section
+        class="force-review"
+        aria-label="Confirmed route forces"
+      >
+        <section aria-label="Fleet transport manifest">
+          <h3>Forces to deploy</h3>
+          <dl>
+            <div>
+              <dt>Fighters aboard</dt>
+              <dd>{forces.fighters}</dd>
+            </div>
+            <div>
+              <dt>Infantry aboard</dt>
+              <dd>{forces.infantry}</dd>
+            </div>
+            <div class="capacity">
+              <dt>Transport capacity</dt>
+              <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+              <meter
+                min="0"
+                max={Math.max(1, forces.capacity)}
+                value={forces.infantry}
+                aria-label="Infantry transport capacity"
+              />
+            </div>
+          </dl>
+        </section>
+        {#if !committed || committed.status !== "traveling"}<section
+            aria-label="Confirmed origin defense"
+          >
+            <h3>
+              Remaining at {origin?.name ?? "origin"}
+            </h3>
+            <dl>
+              <div>
+                <dt>Orbit garrison</dt>
+                <dd>
+                  {forces.orbit === null
+                    ? "Unknown"
+                    : forces.orbit + " fighters"}
+                </dd>
+              </div>
+              <div>
+                <dt>Surface garrison</dt>
+                <dd>
+                  {forces.surface === null
+                    ? "Unknown"
+                    : forces.surface + " infantry"}
+                </dd>
+              </div>
+              <div class="capacity">
+                <dt>Other own stationed fleets</dt>
+                <dd>
+                  {forces.otherFighters} fighters · {forces.otherInfantry} infantry
+                </dd>
+              </div>
+            </dl>
+            <p>
+              Confirmed now; other orders and ticks can change these forces
+              before departure. Garrison counts already exclude this fleet.
+            </p>
+          </section>{/if}
+      </section>{/if}
     {#if committed}<p class="outcome" role="status">
         {committed.status === "traveling" ? "Traveling" : "At waypoint"} · {view.stars.find(
           (s) => s.id === committed.to,
@@ -372,7 +437,17 @@
     {#if !active && !completed && preview.length}<p class="commit-summary">
         {preview.reduce((n, leg) => n + leg.distanceLy, 0).toFixed(2)} ly · {ticks}
         ticks after departure<br />{fleet?.fighters} fighters · {fleet?.infantry}
-        infantry aboard · Origin garrison stays
+        infantry aboard · Capacity {forces?.capacity} infantry
+      </p>{/if}
+    {#if forces && !active && !completed}<p
+        class="origin-summary"
+        aria-label="Origin defense review"
+      >
+        Garrison remaining: {forces.orbit === null
+          ? "orbit unknown"
+          : forces.orbit + " fighters"} · {forces.surface === null
+          ? "surface unknown"
+          : forces.surface + " infantry"}. Current confirmed counts.
       </p>{/if}
     {#if invalid && !completed}<p>{invalid}</p>{/if}
     <div class="actions">
@@ -404,6 +479,43 @@
     grid-template-rows: minmax(0, 1fr) auto;
     background: #06121b;
     color: #f1ede1;
+  }
+  .force-review {
+    border: 1px solid #557783;
+    background: linear-gradient(135deg, #173744, #091a25);
+    padding: 16px;
+    margin: 16px 0;
+  }
+  .force-review h3 {
+    font-size: 1.15em;
+  }
+  .force-review dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 12px 0;
+  }
+  .force-review dt {
+    color: #b4cbd1;
+    font-size: 0.85em;
+  }
+  .force-review dd {
+    margin: 4px 0;
+    font-variant-numeric: tabular-nums;
+    color: #f0d69b;
+  }
+  .force-review .capacity {
+    grid-column: 1/-1;
+  }
+  .force-review meter {
+    width: 100%;
+    height: 12px;
+    accent-color: #87d9e0;
+  }
+  .force-review p,
+  .origin-summary {
+    font-size: 0.85em;
+    color: #bfd4dc;
   }
   .manifest {
     display: flex;
