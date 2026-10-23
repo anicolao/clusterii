@@ -1138,3 +1138,15 @@ Reviewer12:52: independently inspected7092767d phone023/short023 peer. Main casu
 Delegated reviewer instruction; see meta-prompts.md checkpoint2026-10-23 13:02 Toronto.
 
 Reviewer13:02:126a81343a3 clean pushed based125 confirmed; independent0077be54 desktop010 sample clears resource rail, not full24-image approval. Four journeys passed, originals remain/tmp/cluster-science-clearance-0077be54. Disk537,924KiB on supervisor check, well below2,359,296 gate. No new captures, builds, large copies/downloads or unrelated cleanup. Preserve originals; continue lightweight source review of recurring publication consistency and existing CI status/log summaries only, with no evidence-heavy work until headroom returns. Do not claim release complete or disable monitor.124retention app/story still running; inspect completed outcome when available without large downloads. Reconcile13:02 checkpoint in next small committed/pushed log; report concrete disk blocker, no merge/baseline promotion.
+
+## Prompt 162: Retention outcome
+
+Delegated reviewer instruction; see meta-prompts.md checkpoints2026-10-23 13:12/13:22/13:32/13:54 Toronto.
+
+Reviewer13:54: inspection tools recovered; disk262,044KiB remains below gate.1249a3de84a application39987470646 SUCCESS; story39987470893 FAILURE completed17:34:42UTC, but upload-artifact now SUCCESS. Metadata lists unexpired artifact12520550251 illustrated-stories-verify-linux-arm64 size1,658,663,863bytes. This establishes successful upload, not presence/validity of timing or loader files. Do not download this archive or start heavy work below gate. Reconcile pending13:12/13:22/13:32/13:54 checkpoints in a small log commit and inspect only bounded remote failure summaries if feasible. Preserve existing originals, avoid unchanged reruns/cleanup; timing/root cause still unverified until safe evidence access. No merge/approval/monitor disable.
+
+## Prompt 163: Evidence recovery
+
+Delegated reviewer instruction; see meta-prompts.md checkpoint2026-10-23 14:04 Toronto.
+
+Reviewer14:04: independent fresh df shows59,699,964KiB free, above gate; cause unknown, no cleanup attribution. Disk-only restriction is lifted conditional on fresh preflight. Resume evidence work: retrieve existing12520550251 artifact once with size/hash checks and separate preserved storage; inspect actual renderer loader diagnostics and feature010 timing spans for failed100tick boundary. No unchanged rerun needed. Verify retained0077be54 science originals against manifests before archival (no packaging rerun). Continue source-supported timeout/geometry/publication corrections in small stacked PRs based current predecessor, with actual UI/design/authorization evidence; do not replace missing Linux references without independent review. Prefer offline/no-substitute cached Nix invocation where practical and verify tool versions, since established shell unexpectedly substituted dependencies during disk block. Reconcile14:04 plus prior checkpoints, commit/push attributed logs. No baseline promotion, merge, release approval or monitor disable.
