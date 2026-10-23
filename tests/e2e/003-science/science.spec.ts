@@ -187,6 +187,14 @@ test("Inspect authoritative science rate and recover earned output", async ({
               "+1.4 / tick",
             );
             await expect(ledger(page).locator("article")).toHaveCount(1);
+            const panel = await page
+              .getByRole("dialog", {
+                name: "Empire economy panel",
+                exact: true,
+              })
+              .boundingBox();
+            const rail = await page.locator(".command-rail").boundingBox();
+            expect(panel!.y).toBeGreaterThanOrEqual(rail!.y + rail!.height);
             await expect(
               ledger(page).getByRole("heading", { name: "Science per tick" }),
             ).toBeFocused();
@@ -209,7 +217,16 @@ test("Inspect authoritative science rate and recover earned output", async ({
           },
         },
       ],
-      views: [ownerView, peerView],
+      views: [
+        {
+          ...ownerView,
+          primary: [...ownerView.primary, ledger(owner).locator("article")],
+        },
+        {
+          ...peerView,
+          primary: [...peerView.primary, ledger(peer).locator("article")],
+        },
+      ],
     });
     await story.step("commit-innovation", {
       actor: aliases[0],
@@ -336,7 +353,7 @@ test("Inspect authoritative science rate and recover earned output", async ({
             ledger(owner)
               .locator("dl > div")
               .filter({ hasText: "Last delivered science" }),
-          ).toHaveText("Last delivered science1.4");
+          ).toHaveText("Last delivered science 1.4");
         },
       },
       verifications: [
@@ -399,7 +416,7 @@ test("Inspect authoritative science rate and recover earned output", async ({
             ledger(owner)
               .locator("dl > div")
               .filter({ hasText: "Last delivered science" }),
-          ).toHaveText("Last delivered science1.404");
+          ).toHaveText("Last delivered science 1.404");
         },
       },
       verifications: [

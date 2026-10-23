@@ -1446,6 +1446,7 @@
     </div>{/if}
   {#if economy}<div
       class="history-panel economy-panel"
+      class:science-panel={scienceOpen}
       role="dialog"
       aria-modal="true"
       tabindex="-1"
@@ -2546,6 +2547,17 @@
     border: 1px solid #75c9db66;
     color: #a7edf3;
     text-align: left;
+  }
+  @media (min-width: 2500px) {
+    .science-panel {
+      top: 114px;
+      width: min(900px, calc(100% - 48px));
+    }
+  }
+  @media (max-width: 700px) {
+    .science-panel {
+      top: 124px;
+    }
   }
   .campaign-facts :global(.science-resource span) {
     display: block;

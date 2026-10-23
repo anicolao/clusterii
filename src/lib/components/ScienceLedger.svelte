@@ -57,10 +57,7 @@
           Production is paused. This is capacity per tick; no science is
           delivered while paused.
         </p>{/if}
-      <p>
-        Assumes unchanged control, stations and research levels. Queued
-        construction and future arrivals can change the next output.
-      </p>
+      <p>Assumes unchanged control, stations and research levels.</p>
       <h3>Orbital sources</h3>
       {#if !rate.sources.length}<p>
           No orbital sources under your control. Current output is zero.
@@ -116,6 +113,7 @@
         Terraforming applies to each system, then Innovation applies to the
         empire total. Output is floored to thousandths by the recorded ruleset.
       </p>
+      <p>Queued construction and future arrivals can change the next output.</p>
       <p class="policy">Development rules remain under review.</p>
     {/if}
   </div>
