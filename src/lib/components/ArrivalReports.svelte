@@ -730,6 +730,107 @@
       padding: 12px 20px max(12px, env(safe-area-inset-bottom));
     }
   }
+  /* Core outcome facts precede scrollable detail in compact scenes. The grid
+     reserves the action rail; these rules reduce decorative space, not facts. */
+  @container aftermath (max-height: 900px) {
+    .report-body {
+      padding: 16px 24px;
+      line-height: 1.3;
+    }
+    .overline {
+      margin: 0 0 4px;
+    }
+    .system-name {
+      margin: 4px 0;
+      font-size: 28px;
+    }
+    .recorded h2 {
+      margin: 20px 0 6px;
+      font-size: 40px;
+    }
+    .recorded-context {
+      margin: 6px 0 12px;
+    }
+    .result {
+      display: none;
+    }
+    .sequence {
+      --phase-size: 40px;
+      --phase-gap: 12px;
+      margin: 12px 0;
+    }
+    .sequence li {
+      gap: 3px;
+    }
+    .sequence strong {
+      font-size: 14px;
+    }
+    .sequence span {
+      font-size: 12px;
+    }
+    .phase-art :global(svg) {
+      width: 20px;
+      height: 20px;
+      padding: 3px;
+    }
+    .losses,
+    .control {
+      margin: 12px 0;
+      padding: 10px;
+      gap: 10px;
+    }
+    .force-art {
+      width: 36px;
+      height: 28px;
+      margin-bottom: 4px;
+    }
+    .force-art :global(svg),
+    .ownership-art :global(svg) {
+      width: 18px;
+      height: 18px;
+      padding: 2px;
+    }
+    dt {
+      font-size: 14px;
+    }
+    dd {
+      font-size: 26px;
+    }
+    .ownership-art {
+      width: 32px;
+      height: 32px;
+      margin: 0 8px 0 0;
+    }
+    .control dd {
+      padding-left: 40px;
+      clear: none;
+      font-size: 22px;
+      overflow-wrap: anywhere;
+    }
+  }
+  @container aftermath (max-width: 500px) and (max-height: 900px) {
+    .report-body {
+      padding: 16px;
+    }
+    .recorded h2 {
+      margin-top: 32px;
+      font-size: 36px;
+    }
+    .losses dt {
+      min-height: 38px;
+    }
+    .force-art {
+      float: left;
+      margin: 2px 8px 0 0;
+    }
+    .losses dd {
+      padding-left: 44px;
+    }
+    .control dd {
+      padding-left: 0;
+      clear: both;
+    }
+  }
   @media (max-height: 550px) {
     .report-body {
       padding-top: 16px;

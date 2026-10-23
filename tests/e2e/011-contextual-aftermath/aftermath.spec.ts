@@ -694,6 +694,19 @@ test("Open a contextual arrival report and recover its recorded surface", async 
               ),
               false,
             );
+            if (["phone", "short"].includes(info.project.name)) {
+              // Initial reading state: no scroll helper may manufacture visibility.
+              expect(await reportBody(p).evaluate((e) => e.scrollTop)).toBe(0);
+              await expectReadingTarget(
+                reportPanel(p).locator("dl.losses"),
+                false,
+              );
+              await expectReadingTarget(
+                reportPanel(p).locator("dl.control"),
+                false,
+              );
+              await footers(p);
+            }
             await expect(
               reportPanel(p).getByRole("button", {
                 name: `${star(homes[0]).name} · tick ${reportTick}`,
