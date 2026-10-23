@@ -433,3 +433,5 @@ UX15/16 `menu-rules.story.spec.ts` prepares shared-menu chapter, Back/Escape/ope
 Rules/settings first generation at1503cce:5pass/1fail/2notrun. Large Rules End scrolled the background and failed final opener containment; trace retained. Scoped Home/End region handling added, no corrected-source rerun; short unexecuted. Partial candidates unpromoted, old settings baselines preserved.
 
 Corrected menu/rules generation atd436c43 passes8 journeys/44 candidates, including executed document-scroll equality after End and Home plus lower/top clipping and footer/final-opener containment. Independent review/promotion pending for20 rules and24 affected settings images. Prior failures and approved baselines preserved.
+
+Reviewer-approved in-game-market-rules and updated local-presentation-settings Darwin families pass8 strict journeys/44 exact captures in46.9s. Generated illustrated evidence archived under `stories/{in-game-market-rules,local-presentation-settings}/{phone,desktop,large,short}/darwin-arm64/`. Scope is local shared-menu reading/settings, not live campaign preservation or broader release.

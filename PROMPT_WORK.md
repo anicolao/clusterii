@@ -694,3 +694,5 @@ Prompt 119 | 330b0b90bd75656268e3f5e329fa767ddff7a3e59cc59f18906f25068b75f67f | 
 Prompt 120 | 096daf7d19e46d50990e9773648915fa776da673d1642572f483a3fe7652cf33 | Preserve failed large rules End-scroll evidence and scope Home/End to reading region with unchanged containment guards
 
 Prompt 121 | a5849393980451bdec107561913bc69b15a245b103e42ef15ef33c5347797e49 | Record eight passing corrected rules/settings journeys with44 unpromoted candidates and executed End/Home invariants
+
+Prompt 122 | 3c857daa47e1db2e52a05d385255d2f798ecc3fd4357b304a0ad292cd1bac624 | Archive eight strict rules/settings journeys and44 exact captures after scoped reviewer-approved baseline promotion

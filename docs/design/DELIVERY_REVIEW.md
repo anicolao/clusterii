@@ -170,3 +170,5 @@ Identity-gallery story work in #47 is stacked on #46: [scope and evidence](IDENT
 #112 first generation: phone/desktop rules+settings and large settings pass; large rules fails offscreen opener after End scrolls background, both short cases stop. Trace-supported region Home/End correction and document-scroll assertion prepared; corrected-source browser gate pending, no baseline changes. [Evidence](IN_GAME_RULES_REVIEW.md).
 
 #112 corrected invariants:8 journeys/44 candidates pass47.6s atd436c43, both End/Home preserve document position and bounded reading/footers. No promotion; independent review remains. [Source/spec/original paths](IN_GAME_RULES_REVIEW.md).
+
+#112 scoped boundary complete: reviewer-approved two Darwin families pass8 strict journeys/44 exact captures in46.9s; illustrated evidence archived. [Approval/provenance/limits](IN_GAME_RULES_REVIEW.md). Actual galaxy/live state/authorization/concurrency/Linux/hosted and release gates remain; proposed policy not approved.
