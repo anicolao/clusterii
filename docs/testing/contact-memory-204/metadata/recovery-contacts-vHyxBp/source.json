@@ -1,0 +1,17 @@
+{
+  "commit": "fa23ffd54029e40338a4127ad4947b4c08b75428",
+  "renderer": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+  "feature": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+  "specHash": "e4484a9625456225a381ae924be491ac1ca6eaf7b0b105b0baf32e4e74f56c56",
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "mode": "generate",
+  "expectedCaptures": 88,
+  "testBudgetMs": 240000,
+  "stepBudgetMs": 30000,
+  "assertionBudgetMs": 10000
+}
