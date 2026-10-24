@@ -37,117 +37,126 @@
   );
 </script>
 
-<section class="contacts" aria-label="Fleet contacts">
-  <div
-    class="contact-chart"
-    data-galaxy-viewport
-    aria-label="Last observed fleet positions. Select a contact in the list to center its recorded location."
-  >
-    <Canvas renderMode="on-demand"
-      ><Scene
-        stars={view.stars}
-        selected=""
-        stellarClass="all"
-        {contacts}
-        selectedContact={contact?.id ?? ""}
-        cameraRequest={{ action: "overview", starId: "", sequence: 0 }}
-      /></Canvas
+<div class="contact-host">
+  <section class="contacts" aria-label="Fleet contacts">
+    <div
+      class="contact-chart"
+      data-galaxy-viewport
+      aria-label="Last observed fleet positions. Select a contact in the list to center its recorded location."
     >
-    <p>
-      Observed positions · tick {view.production?.tick ?? 0}<br />Contacts do
-      not track hidden movement.
-    </p>
-  </div>
-  <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded contact detail is keyboard scrollable.) -->
-  <div
-    class="contact-details history-scroll"
-    role="region"
-    aria-label="Contact details"
-    tabindex="0"
-  >
-    <p class="overline">Your acquired intelligence</p>
-    <h2>Fleet contacts</h2>
-    {#if !view.fleetContactsEnabled}<p>
-        This older campaign has no fleet scans. Its stellar observations and
-        history remain available. Create a new development campaign for fleet
-        contacts.
-      </p>{:else}
+      <Canvas renderMode="on-demand"
+        ><Scene
+          stars={view.stars}
+          selected=""
+          stellarClass="all"
+          {contacts}
+          selectedContact={contact?.id ?? ""}
+          cameraRequest={{ action: "overview", starId: "", sequence: 0 }}
+        /></Canvas
+      >
       <p>
-        Last seen in loaded history. A missed scan does not confirm movement,
-        changes or destruction.
+        Observed positions · tick {view.production?.tick ?? 0}<br />Contacts do
+        not track hidden movement.
       </p>
-      <Feedback
-        message={loading ? "Loading authorized contact records…" : ""}
-        {error}
-      />
-      {#if contact}<article aria-label="Selected fleet contact">
-          <img
-            class="contact-art"
-            src={`${base}/art/fleet-preparation.webp`}
-            alt=""
-          />
-          <h3><FleetSymbol /> {contact.owner} · Fleet {contact.number}</h3>
-          <p class="observed">
-            Observed tick {contact.observedTick} · {contact.observedTick ===
-            view.production?.tick
-              ? "Current tick observation"
-              : "Last seen; current position unknown"}
-          </p>
-          <dl>
-            <dt>Fighters observed</dt>
-            <dd>{contact.fighters}</dd>
-            <dt>Infantry observed</dt>
-            <dd>{contact.infantry}</dd>
-            <dt>Observed coordinates (ly)</dt>
-            <dd>
-              {contact.x.toFixed(2)}, {contact.y.toFixed(2)}, {contact.z.toFixed(
-                2,
-              )}
-            </dd>
-          </dl>
-          <p>Route and destination are private.</p>
-        </article>{:else if !loading}<p>
-          No fleet contacts in the records loaded.
-        </p>{/if}
-      <div class="contact-list" role="group" aria-label="Observed fleets">
-        {#each contacts as item}<ActionButton
-            class="secondary"
-            aria-pressed={contact?.id === item.id}
-            onclick={() => (selected = item.id)}
-            >{item.owner} · Fleet {item.number}<span
-              >Observed tick {item.observedTick}</span
-            ></ActionButton
-          >{/each}
-      </div>
-      {#if !loading && !error}<p>
-          {newer
-            ? "New records are available. Refresh to recover observations between loaded pages."
-            : earlier
-              ? "Earlier records may contain other last-seen contacts."
-              : "Beginning of your available history."}
-        </p>{/if}
-    {/if}
-  </div>
-  <footer>
-    {#if error}<ActionButton
-        class="secondary"
-        disabled={loading}
-        onclick={onretry}>Retry contact history</ActionButton
-      >{/if}{#if newer}<ActionButton
-        class="secondary"
-        disabled={loading}
-        onclick={onlatest}>Refresh observations</ActionButton
-      >{/if}{#if earlier}<ActionButton
-        class="secondary"
-        disabled={loading}
-        onclick={onearlier}>Earlier observations</ActionButton
-      >{/if}<ActionButton class="secondary" onclick={onclose}
-      >Back to galaxy</ActionButton
+    </div>
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded contact detail is keyboard scrollable.) -->
+    <div
+      class="contact-details history-scroll"
+      role="region"
+      aria-label="Contact details"
+      tabindex="0"
     >
-  </footer>
-</section>
+      <p class="overline">Your acquired intelligence</p>
+      <h2>Fleet contacts</h2>
+      {#if !view.fleetContactsEnabled}<p>
+          This older campaign has no fleet scans. Its stellar observations and
+          history remain available. Create a new development campaign for fleet
+          contacts.
+        </p>{:else}
+        <p>
+          Last seen in loaded history. A missed scan does not confirm movement,
+          changes or destruction.
+        </p>
+        <Feedback
+          message={loading ? "Loading authorized contact records…" : ""}
+          {error}
+        />
+        {#if contact}<article aria-label="Selected fleet contact">
+            <img
+              class="contact-art"
+              src={`${base}/art/fleet-preparation.webp`}
+              alt=""
+            />
+            <h3><FleetSymbol /> {contact.owner} · Fleet {contact.number}</h3>
+            <p class="observed">
+              Observed tick {contact.observedTick} · {contact.observedTick ===
+              view.production?.tick
+                ? "Current tick observation"
+                : "Last seen; current position unknown"}
+            </p>
+            <dl>
+              <dt>Fighters observed</dt>
+              <dd>{contact.fighters}</dd>
+              <dt>Infantry observed</dt>
+              <dd>{contact.infantry}</dd>
+              <dt>Observed coordinates (ly)</dt>
+              <dd>
+                {contact.x.toFixed(2)}, {contact.y.toFixed(2)}, {contact.z.toFixed(
+                  2,
+                )}
+              </dd>
+            </dl>
+            <p>Route and destination are private.</p>
+          </article>{:else if !loading}<p>
+            No fleet contacts in the records loaded.
+          </p>{/if}
+        <div class="contact-list" role="group" aria-label="Observed fleets">
+          {#each contacts as item}<ActionButton
+              class="secondary"
+              aria-pressed={contact?.id === item.id}
+              onclick={() => (selected = item.id)}
+              >{item.owner} · Fleet {item.number}<span
+                >Observed tick {item.observedTick}</span
+              ></ActionButton
+            >{/each}
+        </div>
+        {#if !loading && !error}<p>
+            {newer
+              ? "New records are available. Refresh to recover observations between loaded pages."
+              : earlier
+                ? "Earlier records may contain other last-seen contacts."
+                : "Beginning of your available history."}
+          </p>{/if}
+      {/if}
+    </div>
+    <footer>
+      {#if error}<ActionButton
+          class="secondary"
+          disabled={loading}
+          onclick={onretry}>Retry contact history</ActionButton
+        >{/if}{#if newer}<ActionButton
+          class="secondary"
+          disabled={loading}
+          onclick={onlatest}>Refresh observations</ActionButton
+        >{/if}{#if earlier}<ActionButton
+          class="secondary"
+          disabled={loading}
+          onclick={onearlier}>Earlier observations</ActionButton
+        >{/if}<ActionButton class="secondary" onclick={onclose}
+        >Back to galaxy</ActionButton
+      >
+    </footer>
+  </section>
+</div>
 
 <style>
+  .contact-host {
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    container-type: inline-size;
+    container-name: fleet-contacts;
+  }
   .contacts {
     height: 100%;
     display: grid;
@@ -254,7 +263,7 @@
     flex: 1;
     text-align: center;
   }
-  @media (min-width: 2300px) {
+  @container fleet-contacts (min-width: 2300px) {
     .contacts {
       font-size: 24px;
       grid-template-columns: minmax(0, 1fr) minmax(620px, 30vw);
@@ -272,7 +281,7 @@
       font-size: 20px;
     }
   }
-  @media (max-width: 760px) {
+  @container fleet-contacts (max-width: 760px) {
     .contacts {
       grid-template-columns: minmax(0, 1fr);
       grid-template-rows: minmax(140px, 24svh) minmax(0, 1fr) auto;

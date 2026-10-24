@@ -59,6 +59,9 @@ try{
  }
  if(result.pageErrors.length)throw Error('Gallery render errors');
  for(const phase of result.phases)if(phase.steadyDraws.after!==phase.steadyDraws.before)throw Error('Static offscreen scenes continue drawing');
+ const charts=await page.locator('canvas').evaluateAll(nodes=>nodes.map(n=>({width:n.getBoundingClientRect().width,height:n.getBoundingClientRect().height})));
+ if(charts.some(n=>n.width<=0||n.height<=0))throw Error('Collapsed shared scene');
+ result.charts=charts;
  const labels=await page.locator('.route-node').evaluateAll(nodes=>nodes.map(n=>({width:n.getBoundingClientRect().width,height:n.getBoundingClientRect().height,text:n.textContent.trim()})));
  if(!labels.length||labels.some(n=>!n.width||!n.height||!n.text))throw Error('Projected route labels missing');
  result.routeLabels=labels;result.status='complete';
