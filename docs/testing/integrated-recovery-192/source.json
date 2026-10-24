@@ -1,0 +1,18 @@
+{
+  "commit": "1ef11c275353d52280ea7fbd8a4b4e4692fd8bd6",
+  "renderer": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+  "feature": "tests/e2e/003-science/components.spec.ts",
+  "specHash": "886cefc982dd9f99f8d05c9cc9dae343b41e11b91a33dd71d481c9958fe78be6",
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "mode": "generate",
+  "expectedCaptures": 24,
+  "testBudgetMs": 90000,
+  "stepBudgetMs": 30000,
+  "captureBudgetMs": 10000,
+  "assertionBudgetMs": 10000
+}
