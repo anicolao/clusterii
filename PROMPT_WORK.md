@@ -869,3 +869,5 @@ Prompt 186 | 44e3a26e5bdfd71a351f289e2288fe43c6e4d82990124461dce8c134fdf63da1 | 
 Prompt 187 | 1076fa084af797eebf930a7cf2c818d08429f78544497538b2546f78addfb5a0 | Record unchanged original capture pass, four-size component review candidates and bounded geometry diagnostic
 
 Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | Issue one Linux gallery request bound to validated source b1ed3980, preserving frozen target and original test
+
+Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | Verify single Linux capture artifact and source, close scoped capture gate, retain reference eligibility and generation plan

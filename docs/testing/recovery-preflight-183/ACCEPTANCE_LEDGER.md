@@ -54,3 +54,17 @@ Only after this and reference/behavior gates converge should one complete integr
 Packaging: Git normalizes CRLF in `linux-store.log`; its original subprocess bytes are preserved separately in `linux-store-original.log.gz`. SHA256SUMS covers the committed normalized text and raw compressed original separately.
 
 Step184: [bounded entry and narrowed Linux family review](../recovery-single-184/README.md) implements the missing single-case launcher with local orchestration checks. Execution remains blocked on an authorized dispatch/session; no full run substituted. Two retained Linux families now have confirmed renderer compatibility but concrete source/content incompatibility.
+
+## Recovery overlay update — reviewer21:25,2026-10-23
+
+Earlier tables above are preserved snapshots, not assertions that the later overlay has zero source diff. Frozen140 remains0f09db62. Current executed recovery overlay59d9ba374edbaaf23e423f5f3f4b0c360136f623 adds the measured gallery layout correction and narrowly bound Linux request; it does not update140 or establish integrated green.
+
+| Boundary | Exact evidence | Status |
+| --- | --- | --- |
+| Original140 large gallery/lab capture | Before Linux40042533180 and locala64947a6 fail; after localfd435caa passes20.6s and pinned Linux40049852223 passes32.8s. Original spec hash b2833ba4… unchanged;3840×2160/45s/fullPage and all assertions retained. | Scoped capture blocker resolved on recovery overlay. |
+| Actual Linux size and contents |3840×37385 gallery,3840×2160 lab;525 controls,152 decoded images. Same correction reduced prior measured165992px gallery. | Artifact12542539892 verified once by68,074,608byte size/API SHA256/ZIP CRC; originals preserved. |
+| Gallery visual approval | Native briefing/roster reviewed as readable separate sections; bounded briefing partial.16 Darwin current-source component candidates retained. | Independent whole-family/platform approval still open; no promoted references. |
+| Formation references |104 retained Darwin candidates share current feature010 spec but cannot fill absent Linux references. Smallest existing generation unit is one full phone story, not a failed013 image. | Exact-source generation/review plan prepared; not executed. |
+| Integrated acceptance | No new full application/story run;172missing/68pixel/8timeout counts remain historical classified instances, current aggregate unverified. | Open. Single capture pass is not integrated green or a historical settlement fix. |
+
+See [Linux capture evidence](../linux-gallery-188/README.md) and [formation generation plan](../linux-gallery-188/FORMATION_GENERATION_PLAN.md). No unchanged rerun, baseline promotion, new PR, target/main change or merge.
