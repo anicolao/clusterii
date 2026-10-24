@@ -52,59 +52,71 @@ test("Read shared science ledger in gallery and lab", async ({
     name: "Open science source specimen",
     exact: true,
   });
-  await story.step("gallery-source", {
-    actor: "Component reviewer",
-    description:
-      "Open the actual shared ledger with Enter and read its lower totals through End.",
-    action: async () => {
-      await page.goto("./gallery/");
-      await open.focus();
-      await open.press("Enter");
-      await ledger.scrollIntoViewIfNeeded();
-      await readDelivered(ledger);
-    },
-    acknowledgement: {
-      spec: "The reducer-derived component distinguishes initial capacity from pending first delivery.",
-      check: async () => {
-        await expect(ledger).toContainText("First production pending");
-        await expect(ledger.locator(".rate")).toHaveText("+1.4 / tick");
+  for (const motion of ["reduce", "no-preference"] as const) {
+    await story.step(`gallery-source-${motion}`, {
+      actor: "Component reviewer",
+      description:
+        "Open the actual shared ledger with Enter and read its lower totals through End.",
+      action: async () => {
+        await page.emulateMedia({ reducedMotion: motion });
+        await page.goto("./gallery/");
+        await open.focus();
+        await open.press("Enter");
+        await ledger.scrollIntoViewIfNeeded();
+        await readDelivered(ledger);
       },
-    },
-    verifications: [
-      {
-        spec: "The actual delivered-total reading and Return remain usable inside the component.",
+      acknowledgement: {
+        spec: "The reducer-derived component distinguishes initial capacity from pending first delivery.",
         check: async () => {
-          await expectReadingTarget(
-            ledger
-              .locator("dl > div")
-              .filter({ hasText: "Last delivered science" }),
-            false,
-          );
-          await expectReadingTarget(
+          await expect(ledger).toContainText("First production pending");
+          await expect(ledger.locator(".rate")).toHaveText("+1.4 / tick");
+        },
+      },
+      verifications: [
+        {
+          spec: "The actual delivered-total reading and Return remain usable inside the component.",
+          check: async () => {
+            expect(
+              await page.evaluate(
+                () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+              ),
+            ).toBe(motion === "reduce");
+            await expectReadingTarget(
+              ledger
+                .locator("dl > div")
+                .filter({ hasText: "Last delivered science" }),
+              false,
+            );
+            await expectReadingTarget(
+              ledger.getByRole("button", {
+                name: "Return to galaxy",
+                exact: true,
+              }),
+            );
+          },
+        },
+      ],
+      views: [
+        {
+          page,
+          player: "Component reviewer",
+          surface: "document",
+          normalMotion: motion === "no-preference",
+          primary: [
             ledger.getByRole("button", {
               name: "Return to galaxy",
               exact: true,
             }),
-          );
+          ],
         },
-      },
-    ],
-    views: [
-      {
-        page,
-        player: "Component reviewer",
-        surface: "document",
-        primary: [
-          ledger.getByRole("button", { name: "Return to galaxy", exact: true }),
-        ],
-      },
-    ],
-  });
-  await ledger
-    .getByRole("button", { name: "Return to galaxy", exact: true })
-    .press("Enter");
-  await expect(open).toBeFocused();
-  await expect(ledger).toHaveCount(0);
+      ],
+    });
+    await ledger
+      .getByRole("button", { name: "Return to galaxy", exact: true })
+      .press("Enter");
+    await expect(open).toBeFocused();
+    await expect(ledger).toHaveCount(0);
+  }
   const names = ["Standard motion comparison", "Reduced motion comparison"];
   for (const [stage, time] of [
     ["capacity", "1200"],
