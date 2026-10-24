@@ -1,0 +1,118 @@
+{
+  "source": "181f93ca901b80556f7eb0c45776109ca04b9b8c",
+  "trackedBytes": 10978251420,
+  "trackedFiles": 12843,
+  "groups": [
+    [
+      "tests/browser",
+      7534107399
+    ],
+    [
+      "tests/e2e",
+      1722594817
+    ],
+    [
+      "docs/ux",
+      1374986407
+    ],
+    [
+      "docs/testing",
+      304079797
+    ],
+    [
+      "docs/art",
+      32990145
+    ],
+    [
+      "static/art",
+      5819470
+    ],
+    [
+      "docs/design",
+      589854
+    ],
+    [
+      "meta-prompts.md",
+      584398
+    ],
+    [
+      "src/lib",
+      483867
+    ],
+    [
+      "PROMPTS.md",
+      257155
+    ],
+    [
+      "tests/service.test.ts",
+      233734
+    ],
+    [
+      "bun.lock",
+      220123
+    ],
+    [
+      "src/routes",
+      171514
+    ],
+    [
+      "PROMPT_WORK.md",
+      100203
+    ],
+    [
+      "functions/src",
+      74627
+    ]
+  ],
+  "largest": [
+    {
+      "path": "docs/testing/zero-science-33c9fb86-failure/output/e2e-010-zero-science-zero--06679--preserves-private-research-desktop/trace.zip",
+      "bytes": 21430508
+    },
+    {
+      "path": "tests/browser/story-baselines/entry-profile-readiness/large/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+      "bytes": 9058544
+    },
+    {
+      "path": "docs/ux/reviews/entry-recovery/continue-4k.png",
+      "bytes": 9057599
+    },
+    {
+      "path": "tests/browser/story-baselines/entry-profile-readiness/large/darwin-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+      "bytes": 9054769
+    },
+    {
+      "path": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/028-single-membership-entry-1-dawn-envoy-4.png",
+      "bytes": 9050026
+    },
+    {
+      "path": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/030-multiple-membership-entry-1-dawn-envoy-1.png",
+      "bytes": 9050008
+    },
+    {
+      "path": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/031-reload-last-selection-1-dawn-envoy-1.png",
+      "bytes": 9050008
+    },
+    {
+      "path": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/002-account-entry-1-commander-first-device.png",
+      "bytes": 9049636
+    },
+    {
+      "path": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/004-close-devices-1-commander-first-device.png",
+      "bytes": 9049636
+    },
+    {
+      "path": "tests/browser/story-baselines/session-interrupted-recovery/large/linux-arm64/002-account-entry-1-commander-first-device.png",
+      "bytes": 9049636
+    },
+    {
+      "path": "tests/browser/story-baselines/session-interrupted-recovery/large/linux-arm64/004-close-devices-1-commander-first-device.png",
+      "bytes": 9049636
+    },
+    {
+      "path": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/006-end-both-sessions-1-commander-first-device.png",
+      "bytes": 9049576
+    }
+  ],
+  "interpretation": "Logical tracked blob sizes, not network transfer bytes or proof of checkout delay cause. No files removed."
+}

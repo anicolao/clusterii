@@ -1,0 +1,122 @@
+[
+  {
+    "family": "campaign-feedback-lab",
+    "source": "4fc0c6d66fa693c5f51a4b3e66bdc28cfc030489",
+    "manifest": "/tmp/cluster-feedback-lab-linux/test-results/stories/campaign-feedback-lab/phone/linux-arm64/story.json",
+    "specMatch": true,
+    "sourceAudit": {
+      "origin": "verified GitHub blob 53ff987564ad639ab14836ac4c5f0f5353b81c36",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  },
+  {
+    "family": "feedback-motion-lab",
+    "source": "4fc0c6d66fa693c5f51a4b3e66bdc28cfc030489",
+    "manifest": "/tmp/cluster-feedback-lab-linux/test-results/stories/feedback-motion-lab/phone/linux-arm64/story.json",
+    "specMatch": true,
+    "sourceAudit": {
+      "origin": "verified GitHub blob 53ff987564ad639ab14836ac4c5f0f5353b81c36",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  },
+  {
+    "family": "scheduled-start-lab",
+    "source": "623b0ff74f39bc534dcef476a7ab835425a7a7c1",
+    "manifest": "/tmp/cluster48-linux-lifecycle/test-results/stories/scheduled-start-lab/phone/linux-arm64/story.json",
+    "specMatch": true,
+    "sourceAudit": {
+      "origin": "local Git object",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  },
+  {
+    "family": "session-ending-lab",
+    "source": "623b0ff74f39bc534dcef476a7ab835425a7a7c1",
+    "manifest": "/tmp/cluster48-linux-lifecycle/test-results/stories/session-ending-lab/phone/linux-arm64/story.json",
+    "specMatch": true,
+    "sourceAudit": {
+      "origin": "local Git object",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  },
+  {
+    "family": "research-selection-lab",
+    "source": "05a27a9607a8ca210590f497865b07550a4e8a99",
+    "manifest": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/story.json",
+    "specMatch": false,
+    "sourceAudit": {
+      "origin": "local Git object",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  },
+  {
+    "family": "history-recovery-lab",
+    "source": "cbf67363a4575f127308d2190b03b404a9a72873",
+    "manifest": "/tmp/cluster51-linux-labs/test-results/stories/history-recovery-lab/phone/linux-arm64/story.json",
+    "specMatch": true,
+    "sourceAudit": {
+      "origin": "local Git object",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  },
+  {
+    "family": "production-ledger-lab",
+    "source": "cbf67363a4575f127308d2190b03b404a9a72873",
+    "manifest": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/story.json",
+    "specMatch": true,
+    "sourceAudit": {
+      "origin": "local Git object",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  },
+  {
+    "family": "selected-history-lab",
+    "source": "14150a631f8bba382673551487ed2c7bd5ba1f05",
+    "manifest": "/tmp/cluster52-linux-candidates/test-results/stories/selected-history-lab/phone/linux-arm64/story.json",
+    "specMatch": true,
+    "sourceAudit": {
+      "origin": "verified GitHub blob 53ff987564ad639ab14836ac4c5f0f5353b81c36",
+      "sha256": "91d9bcfe8412edecd303e61fd5b0ed63598cc36b147eeeebfd891d2ec591e6df",
+      "oldLabel": true,
+      "currentLabel": false,
+      "bytes": 16422
+    },
+    "rendererMatchesObserved": true,
+    "classification": "Shared visible label changed; retained whole-family source equivalence rejected. No claim about every remaining pixel."
+  }
+]
