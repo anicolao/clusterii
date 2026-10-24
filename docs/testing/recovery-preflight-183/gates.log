@@ -1,0 +1,299 @@
+openjdk version "21.0.11" 2026-04-21 LTS
+OpenJDK Runtime Environment Zulu21.50+19-CA (build 21.0.11+10-LTS)
+OpenJDK 64-Bit Server VM Zulu21.50+19-CA (build 21.0.11+10-LTS, mixed mode, sharing)
+v24.18.0
+1.3.13
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+/Users/anicolao/projects/games/clusterii-conversation-history/src/lib/components/FleetRoute.svelte:294:5
+Warn: Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions (svelte)
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+    <div
+      class="route-details"
+      onkeydown={readingKey}
+      inert={editing && !active && !completed}
+      role="region"
+      tabindex="0"
+      aria-label={editing && !active && !completed
+        ? "Force details"
+        : "Route details"}
+    >
+      <p class="overline">
+        Fleet {fleet?.number ?? "lost"} · {origin?.name ?? "Recorded outcome"}
+      </p>
+
+      {#if forces}<section
+          class="force-review"
+          aria-label="Confirmed route forces"
+        >
+          <section aria-label="Fleet transport manifest">
+            <h3>{active ? "Forces aboard" : "Forces to deploy"}</h3>
+            <dl>
+              <div>
+                <dt>Fighters aboard</dt>
+                <dd>{forces.fighters}</dd>
+              </div>
+              <div>
+                <dt>Infantry aboard</dt>
+                <dd>{forces.infantry}</dd>
+              </div>
+              <div class="capacity">
+                <dt>Transport capacity</dt>
+                <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+                <meter
+                  min="0"
+                  max={Math.max(1, forces.capacity)}
+                  value={forces.infantry}
+                  aria-label="Infantry transport capacity"
+                ></meter>
+              </div>
+            </dl>
+          </section>
+          {#if !committed || committed.status !== "traveling"}<section
+              aria-label="Confirmed origin defense"
+            >
+              <h3>
+                Remaining at {origin?.name ?? "origin"}
+              </h3>
+              <dl>
+                <div>
+                  <dt>Orbit garrison</dt>
+                  <dd>
+                    {forces.orbit === null
+                      ? "Unknown"
+                      : forces.orbit + " fighters"}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Surface garrison</dt>
+                  <dd>
+                    {forces.surface === null
+                      ? "Unknown"
+                      : forces.surface + " infantry"}
+                  </dd>
+                </div>
+                <div class="capacity">
+                  <dt>Other own stationed fleets</dt>
+                  <dd>
+                    {forces.otherFighters} fighters · {forces.otherInfantry} infantry
+                  </dd>
+                </div>
+              </dl>
+              <p>
+                Confirmed now; other orders and ticks can change these forces
+                before departure. Garrison counts already exclude this fleet.
+              </p>
+            </section>{/if}
+        </section>{/if}
+      {#if committed}<p class="outcome" role="status">
+          {committed.status === "traveling" ? "Traveling" : "At waypoint"} · {view.stars.find(
+            (s) => s.id === committed.to,
+          )?.name} · arrival tick {committed.arrivalTick}.
+        </p>{:else if accepted}<p class="outcome" role="status">
+          Route accepted · departure tick {accepted.effectiveTick} · first arrival
+          tick
+          {accepted.effectiveTick + (acceptedLegs[0]?.ticks ?? 0)}, subject to
+          execution validation.
+        </p>{/if}
+      {#each view.military?.ledger.filter((e) => e.fleetId === fleetId && ["arrived", "destroyed", "halted"].includes(e.result)) ?? [] as e}<p
+          class="outcome"
+          role="status"
+        >
+          {e.result === "arrived"
+            ? "Arrived"
+            : e.result === "destroyed"
+              ? "Fleet destroyed"
+              : "Route halted"} at {view.stars.find((s) => s.id === e.starId)
+            ?.name}. {e.fighters} fighters · {e.infantry} infantry aboard.
+        </p>{/each}
+      {#each view.military?.arrivals ?? [] as report}<article
+          aria-label="Arrival report"
+        >
+          <h3>
+            {view.stars.find((s) => s.id === report.starId)?.name} · tick {report.tick}
+          </h3>
+          <p>
+            {report.contested ? "Contested arrival" : "Arrival resolved"}. Your
+            forces: {report.fightersBefore} → {report.fightersAfter} fighters; {report.infantryBefore}
+            → {report.infantryAfter} infantry, including the surface.
+          </p>
+          <p>
+            Orbit: {view.roster[report.orbit]?.alias ?? "Unclaimed"}. Surface: {view
+              .roster[report.surface]?.alias ?? "Unclaimed"}.
+          </p>
+          {#if report.contested}<p>
+              Orbital order: {report.order
+                .map((i) => view.roster[i].alias)
+                .join(" → ")}. The incumbent defends first.
+            </p>{/if}
+        </article>{/each}
+      {#if active}<ol aria-label="Route waypoints">
+          {#each committed?.waypoints ?? accepted?.waypoints ?? [] as id}<li>
+              {view.stars.find((s) => s.id === id)?.name}
+            </li>{/each}
+        </ol>{/if}
+    </div>
+    <footer bind:offsetHeight={footerHeight}>
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:52:3
+Error: Member 'pieces' implicitly has an 'any[]' type. 
+  trailer = "";
+  pieces = [];
+  bytes = 0;
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:62:8
+Error: Parameter 'category' implicitly has an 'any' type. 
+  summary = { buckets: [], ignoredEvents: 0 };
+  fail(category) {
+    const error = Error(category);
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:64:11
+Error: Property 'category' does not exist on type 'Error'. 
+    const error = Error(category);
+    error.category = category;
+    throw error;
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:67:7
+Error: Parameter 'piece' implicitly has an 'any' type. 
+  }
+  add(piece) {
+    this.bytes += Buffer.byteLength(piece);
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:95:35
+Error: 'next' is possibly 'undefined'. 
+    }
+    this.summary.ignoredEvents += next.ignoredEvents;
+    for (const bucket of next.buckets) {
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:96:26
+Error: 'next' is possibly 'undefined'. 
+    this.summary.ignoredEvents += next.ignoredEvents;
+    for (const bucket of next.buckets) {
+      const prior = this.summary.buckets.find(
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:98:18
+Error: Property 'event' does not exist on type 'never'. 
+      const prior = this.summary.buckets.find(
+        (b) => b.event === bucket.event && b.phase === bucket.phase,
+      );
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:98:46
+Error: Property 'phase' does not exist on type 'never'. 
+      const prior = this.summary.buckets.find(
+        (b) => b.event === bucket.event && b.phase === bucket.phase,
+      );
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:101:15
+Error: Property 'count' does not exist on type 'never'. 
+      if (prior) {
+        prior.count += bucket.count;
+        prior.durationMs += bucket.durationMs;
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:102:15
+Error: Property 'durationMs' does not exist on type 'never'. 
+        prior.count += bucket.count;
+        prior.durationMs += bucket.durationMs;
+      } else this.summary.buckets.push(bucket);
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:103:40
+Error: Argument of type '{ event: string; phase: string; count: number; durationMs: number; }' is not assignable to parameter of type 'never'. 
+        prior.durationMs += bucket.durationMs;
+      } else this.summary.buckets.push(bucket);
+    }
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:110:9
+Error: Parameter 'text' implicitly has an 'any' type. 
+  }
+  write(text) {
+    let segment = this.depth ? 0 : -1;
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:174:42
+Error: Parameter 'bin' implicitly has an 'any' type. 
+/** Fixed safe metadata only; never retain subprocess output or exception text. */
+export async function readProfileProcess(bin, args, timeoutMs = 10000) {
+  const decoder = new ProfileDecoder(),
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:174:47
+Error: Parameter 'args' implicitly has an 'any' type. 
+/** Fixed safe metadata only; never retain subprocess output or exception text. */
+export async function readProfileProcess(bin, args, timeoutMs = 10000) {
+  const decoder = new ProfileDecoder(),
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:179:5
+Error: Variable 'category' implicitly has type 'any' in some locations where its type cannot be determined. 
+    stderrBytes = 0,
+    category,
+    exitCode = null,
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:191:11
+Error: Variable 'category' implicitly has an 'any' type. 
+      stdoutBytes += chunk.length;
+      if (category) return;
+      try {
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:195:20
+Error: 'error' is of type 'unknown'. 
+      } catch (error) {
+        category = error.category ?? "json";
+        child.kill("SIGKILL");
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:209:12
+Error: Variable 'category' implicitly has an 'any' type. 
+      signal = sig;
+      if (!category && sig) category = "signal";
+      if (!category && code !== 0) category = "exit";
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:210:12
+Error: Variable 'category' implicitly has an 'any' type. 
+      if (!category && sig) category = "signal";
+      if (!category && code !== 0) category = "exit";
+      let summary;
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:212:12
+Error: Variable 'category' implicitly has an 'any' type. 
+      let summary;
+      if (!category) {
+        try {
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:217:22
+Error: 'error' is of type 'unknown'. 
+        } catch (error) {
+          category = error.category ?? "schema";
+        }
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:221:19
+Error: Variable 'category' implicitly has an 'any' type. 
+      const diagnostic = {
+        category: category ?? "complete",
+        exitCode,
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:228:11
+Error: Variable 'category' implicitly has an 'any' type. 
+      };
+      if (category) {
+        const error = Error("profile-export");
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:230:15
+Error: Property 'diagnostic' does not exist on type 'Error'. 
+        const error = Error("profile-export");
+        error.diagnostic = diagnostic;
+        reject(error);
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:414:32
+Error: 'error' is of type 'unknown'. 
+      reason: phase,
+      ...(phase === "parse" && error.diagnostic
+        ? { export: error.diagnostic }
+
+/Users/anicolao/projects/games/clusterii-conversation-history/scripts/emulator-post-marker.mjs:415:21
+Error: 'error' is of type 'unknown'. 
+      ...(phase === "parse" && error.diagnostic
+        ? { export: error.diagnostic }
+        : {}),
+
+====================================
+svelte-check found 26 errors and 1 warning in 2 files
+error: script "check" exited with code 1

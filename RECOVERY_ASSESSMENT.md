@@ -60,3 +60,7 @@ Other open historical boundaries remain separate: authenticated profile ingress 
 The exporter changes are test/diagnostic-only: same JFC/event selection,35-second recording,10-second export deadline and gameplay semantics;4MiB event and4KiB envelope limits replace whole-document retention. Exit/signal/timeout/buffer/JSON/schema/spawn categories retain byte counts, not raw stderr, identities or JVM metadata. `scripts/check-emulator-export-load.mjs <fresh-directory>` is an explicit bounded local check, outside the full player suite. No new dependency was added.
 
 The [evidence directory](docs/testing/recovery-reset-20261023/) contains hashed API/check snapshots, compressed completed51/137 logs, reconciled failure inventory and local exporter validation. Existing giant artifacts were not downloaded again. Source, drafts and all prior evidence are preserved. No new full run or child PR was started after the reset.
+
+## Step2 execution
+
+The [exact-source acceptance ledger](docs/testing/recovery-preflight-183/ACCEPTANCE_LEDGER.md) records frozen140 plus the separately hashed exporter overlay, the initial overlay type-check failure and correction, local Nix integration gates, current reference eligibility and the bounded Linux entry/access limitation. No target update or full run was started.

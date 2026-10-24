@@ -49,6 +49,7 @@ export function startRecording(pid, file, durationSeconds = 35) {
 export class ProfileDecoder {
   prefix = "";
   trailer = "";
+  /** @type {string[]} */
   pieces = [];
   bytes = 0;
   depth = 0;
@@ -58,12 +59,13 @@ export class ProfileDecoder {
   ended = false;
   expectEvent = true;
   afterComma = false;
+  /** @type {ReturnType<typeof aggregateProfile>} */
   summary = { buckets: [], ignoredEvents: 0 };
+  /** @param {string} category @returns {never} */
   fail(category) {
-    const error = Error(category);
-    error.category = category;
-    throw error;
+    throw Object.assign(Error(category), { category });
   }
+  /** @param {string} piece */
   add(piece) {
     this.bytes += Buffer.byteLength(piece);
     if (this.bytes > 4 * 1024 * 1024) this.fail("buffer");
@@ -107,6 +109,7 @@ export class ProfileDecoder {
     this.expectEvent = false;
     this.afterComma = false;
   }
+  /** @param {string} text */
   write(text) {
     let segment = this.depth ? 0 : -1;
     for (let i = 0; i < text.length; i++) {
@@ -170,13 +173,16 @@ export class ProfileDecoder {
     return this.summary;
   }
 }
-/** Fixed safe metadata only; never retain subprocess output or exception text. */
+/** Fixed safe metadata only; never retain subprocess output or exception text.
+ * @param {string} bin @param {string[]} args
+ */
 export async function readProfileProcess(bin, args, timeoutMs = 10000) {
   const decoder = new ProfileDecoder(),
     utf8 = new StringDecoder("utf8");
+  /** @type {string | undefined} */
+  let category;
   let stdoutBytes = 0,
     stderrBytes = 0,
-    category,
     exitCode = null,
     signal = null;
   const child = spawn(bin, args, { stdio: ["ignore", "pipe", "pipe"] });
@@ -192,7 +198,12 @@ export async function readProfileProcess(bin, args, timeoutMs = 10000) {
       try {
         decoder.write(utf8.write(chunk));
       } catch (error) {
-        category = error.category ?? "json";
+        category =
+          error instanceof Error &&
+          "category" in error &&
+          typeof error.category === "string"
+            ? error.category
+            : "json";
         child.kill("SIGKILL");
       }
     });
@@ -214,7 +225,12 @@ export async function readProfileProcess(bin, args, timeoutMs = 10000) {
           decoder.write(utf8.end());
           summary = decoder.finish();
         } catch (error) {
-          category = error.category ?? "schema";
+          category =
+            error instanceof Error &&
+            "category" in error &&
+            typeof error.category === "string"
+              ? error.category
+              : "schema";
         }
       }
       const diagnostic = {
@@ -226,9 +242,7 @@ export async function readProfileProcess(bin, args, timeoutMs = 10000) {
         elapsedMs: performance.now() - started,
       };
       if (category) {
-        const error = Error("profile-export");
-        error.diagnostic = diagnostic;
-        reject(error);
+        reject(Object.assign(Error("profile-export"), { diagnostic }));
       } else resolve({ ...summary, export: diagnostic });
     });
   });
@@ -411,7 +425,7 @@ async function observe() {
     record({
       status: "unavailable",
       reason: phase,
-      ...(phase === "parse" && error.diagnostic
+      ...(phase === "parse" && error instanceof Error && "diagnostic" in error
         ? { export: error.diagnostic }
         : {}),
       elapsedMs: performance.now() - started,

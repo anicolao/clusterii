@@ -1,0 +1,12 @@
+{
+  "target": "0f09db62776368702fc4df7d7a73aeeb39d98be8",
+  "preservedOverlay": "aae30e1f",
+  "additionalRepair": "Typed streaming decoder and narrowed unknown-error access; no gameplay/renderer/spec edits.",
+  "files": {
+    "scripts/emulator-post-marker.mjs": "83193617b5ea0cfc6c7b2ad1754b911f0777d0152797cdb03eac7abc539a6112",
+    "scripts/check-emulator-post-marker.test.mjs": "01bf4a66f782d9a89aec1fd20285a66cb58c5d4cfebe8546aa657c3d0283c231",
+    "scripts/check-emulator-export-load.mjs": "a55bba7ad3f489fa950d64b7a02176460435e39672da2eafcd69e7ccb18c899b",
+    "scripts/recovery-reference-inventory.mjs": "e379c4cf12178bbb7cd6dddc53a6d63af122a6875192811618b6533bf27dad13"
+  },
+  "productDiff": ""
+}

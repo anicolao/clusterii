@@ -1,0 +1,39 @@
+Darwin arm64
+@/etc/nix/machines
+  507 /nix/store/h1wf185b0pzayp4i5xi6plxdvjp1zfxp-qemu-host-cpu-only-10.2.1/bin/qemu-system-aarch64
+138 [
+  [
+    'stories (verify)',
+    'FAILURE',
+    'https://github.com/anicolao/clusterii/actions/runs/40036503402/job/120697178728'
+  ],
+  [
+    'verify',
+    'SUCCESS',
+    'https://github.com/anicolao/clusterii/actions/runs/40036503409/job/120697178411'
+  ]
+]
+139 [
+  [
+    'stories (verify)',
+    'IN_PROGRESS',
+    'https://github.com/anicolao/clusterii/actions/runs/40039674130/job/120707523786'
+  ],
+  [
+    'verify',
+    'SUCCESS',
+    'https://github.com/anicolao/clusterii/actions/runs/40039674163/job/120707523532'
+  ]
+]
+140 [
+  [
+    'verify',
+    'IN_PROGRESS',
+    'https://github.com/anicolao/clusterii/actions/runs/40042533180/job/120716689615'
+  ],
+  [
+    'stories (verify)',
+    'IN_PROGRESS',
+    'https://github.com/anicolao/clusterii/actions/runs/40042533270/job/120716690219'
+  ]
+]
