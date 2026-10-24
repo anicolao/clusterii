@@ -1,0 +1,13 @@
+✔ request cannot replay, change source, repository, branch, case, mode, or combine code changes (0.5665ms)
+✔ exact four-size feature, source hash, no generation, retries or whole-suite fallback (0.51675ms)
+✔ original failing exit survives exactly one invocation (0.383625ms)
+✔ serial build and service setup failure prevents later commands (0.101625ms)
+✔ workflow remains branch/request-only with pinned Nix and failed-artifact retention (4.058916ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 69.535333

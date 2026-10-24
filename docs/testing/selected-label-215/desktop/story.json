@@ -1,0 +1,452 @@
+{
+  "id": "live-fleet-contacts",
+  "title": "Acquire and recover a fleet's last observed facts",
+  "inventory": [
+    "UX-03",
+    "UX-07",
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four ordinary authenticated commanders admit through the UI. One forms a real fleet; another acquires and recovers last-seen intelligence while owner forces remain private. Catalogue/domain clocks and scan entropy identities are explicit harness controls, never injected reports. Development scanning and force rules remain under review; hosted scheduling, secure-provider and production entropy certification are separate gates.",
+  "source": {
+    "commit": "97d2fdd027a5467d8b4496593c3b711cbdd1074b",
+    "dirty": false,
+    "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+    "specSha256": "d80d55f3550c4e55a43aae202fbfcb611275c248cd93b61831b116c73419b7f4"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Set the explicit admission domain clock and deliver the real emulator Scheduler HTTP request; this does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-empty-contact-history",
+      "description": "The owner opens fleet preparation while the observer checks their own contact records before any fleet exists.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "Authorized contact history is loaded and contains no fleet contact.",
+      "verifications": [
+        "Each commander has only their own military view and no invented contact."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "010-inspect-empty-contact-history-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commit-real-fleet",
+      "description": "Reserve four fighters and six infantry through the real encrypted formation command; the observer receives no private order.",
+      "actor": "Fleet pathfinder",
+      "kind": "player",
+      "acknowledgement": "The authoritative accepted fleet order records exactly four fighters and six infantry.",
+      "verifications": [
+        "Reservation changes no total forces and no observer receives the private order or a fabricated fleet."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "011-commit-real-fleet-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "011-commit-real-fleet-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "settle-real-formation",
+      "description": "Deliver the first real leased tick using the explicit domain clock; verify formation/production conservation and a repeat delivery with no effect. Scan HMAC identity inputs are fixed only in the guarded test service module.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "acquire-observation",
+      "description": "Advance real ticks to the deterministic fixture's next acquired contact. This explicit scan/clock harness is not a player action or production entropy certification; every tick checks conservation and repeat delivery.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "read-current-contact",
+      "description": "Read acquired fleet facts and the private owner manifest as separate player viewpoints.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The observer's report is current at the actual acquired tick; the owner has exactly one formed fleet.",
+      "verifications": [
+        "The contact contains only authorized observed fields, with no route, destination, owner command or private fleet identity; owner forces remain conserved."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "014-read-current-contact-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "014-read-current-contact-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "select-and-resize-contact",
+      "description": "Select the acquired fleet by keyboard, resize its real contact instrument across compact/wide layouts, and return to the original reading size.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The same acquired report and its positive-sized canvas survive resizing with no render error or authoritative mutation.",
+      "verifications": [
+        "Existing authorized projection and force conservation remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "015-select-and-resize-contact-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-current-coordinates-age",
+      "description": "Read the acquired report's tick and current-observation status.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The report age is fully visible inside the bounded details panel.",
+      "verifications": [
+        "Reading and keyboard focus do not write a command, reveal private routes or change authoritative forces/history."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "016-read-current-coordinates-age-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-current-coordinates-facts",
+      "description": "Scroll the bounded contact details to read the complete complement, coordinates and private-route explanation.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The report facts is fully visible inside the bounded details panel.",
+      "verifications": [
+        "Reading and keyboard focus do not write a command, reveal private routes or change authoritative forces/history."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "017-read-current-coordinates-facts-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miss-next-scan",
+      "description": "Deliver actual ticks to the next deterministic missed scan, retaining the last acquired authorized report for comparison. A missed roll is produced by the real HMAC/probability check, never an injected outcome.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "recover-last-seen-record",
+      "description": "Refresh authorized contact history and distinguish last-seen facts from current position, without inferring destruction or a private route.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The loaded last-seen record retains its actual observed tick, coordinates and complement while current position is unknown.",
+      "verifications": [
+        "The current private projection has no acquired contact at the missed tick, while the owner still has the same real fleet and forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "019-recover-last-seen-record-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-retained-coordinates-age",
+      "description": "Read the retained report's tick and explicit warning that its current position is unknown.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The report age is fully visible inside the bounded details panel.",
+      "verifications": [
+        "Reading and keyboard focus do not write a command, reveal private routes or change authoritative forces/history."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "020-read-retained-coordinates-age-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-retained-coordinates-facts",
+      "description": "Scroll the bounded contact details to read the complete complement, coordinates and private-route explanation.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The report facts is fully visible inside the bounded details panel.",
+      "verifications": [
+        "Reading and keyboard focus do not write a command, reveal private routes or change authoritative forces/history."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reload-private-contact-history",
+      "description": "Reload both accounts and use ordinary controls to recover the owner's fleet and the observer's last-seen history.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "The original last-seen report survives loss of in-memory contact state and the owner recovers the same fleet.",
+      "verifications": [
+        "Reload and normal/reduced-motion preferences preserve report facts, every recipient projection and authoritative forces/history without writing commands."
+      ],
+      "views": [
+        {
+          "player": "Fleet pathfinder",
+          "image": "022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        },
+        {
+          "player": "Contact watcher",
+          "image": "022-reload-private-contact-history-2-contact-watcher.png",
+          "verifications": [
+            "Each return control stays visible before scrolling, contact annotations do not intercept the pointer, and neither player view has an application error."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return-to-chart-by-keyboard",
+      "description": "Close the contact instrument with Escape and retain keyboard focus on Fleet contacts in the real galaxy.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "Focus returns to Fleet contacts and the instrument closes.",
+      "verifications": [
+        "Closing the instrument preserves authoritative history and forces."
+      ],
+      "views": [
+        {
+          "player": "Contact watcher",
+          "image": "023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-galaxy-overview",
+      "description": "Open the real systems list by keyboard, request the catalogue overview, and close it without changing the retained contact or campaign.",
+      "actor": "Contact watcher",
+      "kind": "player",
+      "acknowledgement": "Overview returns keyboard focus to the systems opener, with a visible chart and no render error.",
+      "verifications": [
+        "The catalogue camera action preserves private observations and forces."
+      ],
+      "views": [
+        {
+          "player": "Contact watcher",
+          "image": "024-review-galaxy-overview-1-contact-watcher.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

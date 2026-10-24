@@ -18,12 +18,12 @@ export function placeGalaxyLabels(
   const result = new Map<string, { x: number; y: number }>();
   const gap = 6;
   const markers = labels
-    .filter((l) => l.clearance)
+    .filter((l): l is LabelBox & { clearance: number } => !!l.clearance)
     .map((l) => ({
-      x: l.x + l.width / 2 - l.clearance!,
-      y: l.y + l.height / 2 - l.clearance!,
-      width: l.clearance! * 2,
-      height: l.clearance! * 2,
+      x: l.x + l.width / 2 - l.clearance,
+      y: l.y + l.height / 2 - l.clearance,
+      width: l.clearance * 2,
+      height: l.clearance * 2,
     }));
   for (const label of [...labels].sort(
     (a, b) => b.priority - a.priority || a.id.localeCompare(b.id, "en"),
