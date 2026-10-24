@@ -28,10 +28,10 @@ export function validateRequest({
     throw Error("Wrong event, repository, branch, attempt or checkout");
   if (
     request.version !== 1 ||
-    request.id !== "science-resolved-heading-20261023-01" ||
+    request.id !== "science-html-binding-20261024-01" ||
     request.case !== "science-components-candidates" ||
     request.mode !== "generate" ||
-    request.target !== "d8241411431450821074267a1cad2adbaf45c766" ||
+    request.target !== "eaa2b57aed00d73290d514bff065a199fb68db06" ||
     request.sourceCommit !== parent ||
     !/^[a-f0-9]{40}$/.test(parent)
   )
