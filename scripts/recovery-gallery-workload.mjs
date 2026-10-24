@@ -11,6 +11,13 @@ const timer=setTimeout(()=>void browser.close(),30000);timer.unref();
 try{
  const page=await browser.newPage({viewport:{width:3840,height:2160},deviceScaleFactor:1,locale:'en-US',timezoneId:'UTC',colorScheme:'dark',reducedMotion:'reduce'});
  page.setDefaultTimeout(10000);
+ await page.addInitScript(()=>{
+  const counts={draws:0};Object.defineProperty(window,'__galleryDrawCounts',{value:counts});
+  for(const type of [WebGLRenderingContext,WebGL2RenderingContext])for(const name of ['drawArrays','drawElements','drawArraysInstanced','drawElementsInstanced']){
+   const original=type.prototype[name];if(!original)continue;
+   type.prototype[name]=function(...args){counts.draws++;return Reflect.apply(original,this,args);};
+  }
+ });
  const cdp=await page.context().newCDPSession(page);
  await cdp.send('Performance.enable');await cdp.send('Profiler.enable');
  for(const motion of ['reduce','no-preference']){
@@ -35,6 +42,11 @@ try{
    }
    await expectReadingTarget(heading,false);
    await expectReadingTarget(panel.locator('dl > div').filter({hasText:'Last delivered science'}),false);
+  });
+  phase.steadyDraws=await page.evaluate(async()=>{
+   const before=window.__galleryDrawCounts.draws,at=performance.now();
+   await new Promise(resolve=>setTimeout(resolve,500));
+   return {before,after:window.__galleryDrawCounts.draws,elapsedMs:performance.now()-at};
   });
   phase.geometry=await page.evaluate(()=>({height:document.documentElement.scrollHeight,controls:document.querySelectorAll('button,input,select').length,canvases:[...document.querySelectorAll('canvas')].map(c=>{const b=c.getBoundingClientRect();return {width:c.width,height:c.height,inViewport:b.bottom>0&&b.top<innerHeight&&b.right>0&&b.left<innerWidth};})}));
   const {profile}=await cdp.send('Profiler.stop');

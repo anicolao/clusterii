@@ -923,3 +923,5 @@ Prompt 195 | 6a4aad371ea136fa18a845c8e7d2ade02ffc5f601d34fb99b30075f0806ea62c | 
 Prompt 195 | 6a4aad371ea136fa18a845c8e7d2ade02ffc5f601d34fb99b30075f0806ea62c | Include exact hashed runtime evidence omitted by global ci-evidence/test-results ignore rules and verify the staged evidence inventory
 
 Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Prepare one bounded real-gallery CPU/layout observation with native reading and unchanged viewport before any render optimization
+
+Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Preserve bounded gallery CPU observations and prepare one real authenticated directory cardinality comparison with original tick budgets
