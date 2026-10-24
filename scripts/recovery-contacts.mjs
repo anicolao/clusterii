@@ -7,7 +7,7 @@ import { createConnection } from 'node:net';
 import { runtimeGuard, pinned, childExit } from './recovery-settlement.mjs';
 export const feature='tests/e2e/012-fleet-contacts/contacts.spec.ts';
 export const projects=['phone','desktop','large','short'];
-export const specHash='e4484a9625456225a381ae924be491ac1ca6eaf7b0b105b0baf32e4e74f56c56';
+export const specHash='d80d55f3550c4e55a43aae202fbfcb611275c248cd93b61831b116c73419b7f4';
 export function candidateCase(args) {
  if(args.length!==1||args[0]!=='feature012-contacts-candidates')throw Error('Only complete feature012 four-size candidates allowed');
  return ['x','playwright','test','--config','playwright.stories.config.ts',feature,...projects.map(p=>`--project=${p}`),'--max-failures=1','--retries=0','--update-snapshots=none'];

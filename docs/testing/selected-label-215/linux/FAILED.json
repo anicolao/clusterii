@@ -1,0 +1,131 @@
+{
+  "id": "live-fleet-contacts",
+  "title": "Acquire and recover a fleet's last observed facts",
+  "inventory": [
+    "UX-03",
+    "UX-07",
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four ordinary authenticated commanders admit through the UI. One forms a real fleet; another acquires and recovers last-seen intelligence while owner forces remain private. Catalogue/domain clocks and scan entropy identities are explicit harness controls, never injected reports. Development scanning and force rules remain under review; hosted scheduling, secure-provider and production entropy certification are separate gates.",
+  "source": {
+    "commit": "0cfbbae294a55fffc3472bf61cd54ed60a61a84b",
+    "dirty": false,
+    "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+    "specSha256": "d80d55f3550c4e55a43aae202fbfcb611275c248cd93b61831b116c73419b7f4"
+  },
+  "mode": "verify",
+  "status": "failed",
+  "project": "phone",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator authentication and saved identity; explicit developer access and fixed domain Date. Timers remain real.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through production controls. The catalogue seed and admission clock are test boundaries, not injected seats or campaign state.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Set the explicit admission domain clock and deliver the real emulator Scheduler HTTP request; this does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    }
+  ]
+}

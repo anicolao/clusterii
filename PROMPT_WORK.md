@@ -965,3 +965,5 @@ Prompt 214 | 7f955da93b1041ff56c8b491bcfae65c4276eefe1fe715eaa17718794a3cd3c0 | 
 Prompt 215 | 65e3e03cab9f6545806339191fd37c42c18b9c10bf1405888f6095b6ec07aead | Retain four-size selected-label candidates and validate one narrow pinned Linux strict request without reference changes
 
 Prompt 215 | 65e3e03cab9f6545806339191fd37c42c18b9c10bf1405888f6095b6ec07aead | Dispatch the single source-bound pinned Linux contact verification after local four-size and guard checks pass
+
+Prompt 215 | 65e3e03cab9f6545806339191fd37c42c18b9c10bf1405888f6095b6ec07aead | Preserve terminal Linux missing-reference failure, verified artifact and current contact-source guard without promoting images
