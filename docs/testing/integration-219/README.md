@@ -1,0 +1,7 @@
+# Frozen candidate integration219
+
+Reviewer18:17. Production frozen at26d471d7 (four-file client delta from PR140d0804122). Full required unit suite passes115tests/4670assertions. Existing218 check/lint/story-policy passes are reused because production/dependency/app-test inputs are unchanged; command provenance remains in overlay-exclusions-218. Full service and procedural application browser stages, enabled ingress observer and evidence verifier are next, under established offline Nix. No test filters, retries or deadline changes. Local platform acceptance is distinct from pinned Linux renderer evidence.
+
+The application contains real scheduled start/production waits (up to33minutes for the production journey); preserve these, do not invent clock shortcuts. Serial Functions build, clean owned emulator ports and fresh output avoid prior-cohort reuse. Capture all failures and terminal exits. Current PR140 remains applicationSUCCESS/strictFAILURE atd0804122, not pending.
+
+Audit the complete nonproduction diff before a proposed normal fast-forward; no integration push is authorized until review. Required application/story workflows and thresholds remain unchanged. Historical branch-only request identities must not replay. Prepare one fresh exact-source pinned-Linux contact012 + live science003 candidate batch, with independent outcomes and retained full manifests/indexes. No automatic promotion, full strict run or unrelated product changes.
