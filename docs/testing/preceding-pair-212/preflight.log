@@ -1,0 +1,26 @@
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.508334ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.913041ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (199.546875ms)
+✔ exact ordered pair is allowlisted, with one emulator lifecycle after serialized compilation (0.70175ms)
+✔ real failed subprocess retires before second starts; both exits survive without success laundering (62.311292ms)
+✔ infrastructure exit is retained and does not launch a partial-state successor (0.286208ms)
+✔ query observation retains exact strict feature010 phone arguments (0.585291ms)
+✔ serial compilation precedes real emulator; original failure exits without fallback (0.136958ms)
+✔ observer remains identical to locally executed source and no original budgets change (0.327125ms)
+✔ entry permits exactly the frozen feature010 phone verification (0.98ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (31.791625ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.046459ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.228292ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.144209ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (12.625584ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 274.958458

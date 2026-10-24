@@ -1,0 +1,39 @@
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.570833ms)
+✖ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.575833ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (179.823291ms)
+✔ exact ordered pair is allowlisted, with one emulator lifecycle after serialized compilation (0.687583ms)
+✔ real failed subprocess retires before second starts; both exits survive without success laundering (64.073791ms)
+✔ infrastructure exit is retained and does not launch a partial-state successor (0.27975ms)
+✔ query observation retains exact strict feature010 phone arguments (0.737417ms)
+✔ serial compilation precedes real emulator; original failure exits without fallback (0.145125ms)
+✔ observer remains identical to locally executed source and no original budgets change (0.462375ms)
+✔ entry permits exactly the frozen feature010 phone verification (1.011042ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (30.66275ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (0.97175ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.244292ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.134958ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (11.768042ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 14
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 252.28225
+
+✖ failing tests:
+
+test at scripts/check-recovery-pair-request.test.mjs:77:1
+✖ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.575833ms)
+  TypeError: Cannot read properties of undefined (reading 'timeout-minutes')
+      at TestContext.<anonymous> (file:///Users/anicolao/projects/games/clusterii-conversation-history/scripts/check-recovery-pair-request.test.mjs:101:78)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
