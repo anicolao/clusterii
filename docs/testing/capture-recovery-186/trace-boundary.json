@@ -1,0 +1,180 @@
+[
+  {
+    "version": 8,
+    "type": "context-options",
+    "origin": "testRunner",
+    "browserName": "",
+    "playwrightVersion": "1.61.1",
+    "options": {},
+    "platform": "linux",
+    "wallTime": 1792801450911,
+    "monotonicTime": 921015.73,
+    "sdkLanguage": "javascript",
+    "testTimeout": 45000
+  },
+  {
+    "type": "after",
+    "callId": "pw:api@1082",
+    "endTime": 946846.841,
+    "annotations": [],
+    "error": {
+      "name": "",
+      "message": "Error: page.screenshot: Protocol error (Page.captureScreenshot): Unable to capture screenshot\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n",
+      "stack": "Error: page.screenshot: Protocol error (Page.captureScreenshot): Unable to capture screenshot\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\n    at /home/runner/work/clusterii/clusterii/tests/browser/lab.spec.ts:114:18"
+    }
+  },
+  {
+    "version": 8,
+    "type": "context-options",
+    "origin": "library",
+    "browserName": "chromium",
+    "playwrightVersion": "1.61.1",
+    "options": {
+      "noDefaultViewport": false,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "ignoreHTTPSErrors": false,
+      "javaScriptEnabled": true,
+      "bypassCSP": false,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "offline": false,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "colorScheme": "dark",
+      "acceptDownloads": "accept",
+      "baseURL": "http://127.0.0.1:4173/clusterii/pr4/",
+      "serviceWorkers": "allow",
+      "selectorEngines": [],
+      "testIdAttributeName": "data-testid"
+    },
+    "platform": "linux",
+    "wallTime": 1792801450922,
+    "monotonicTime": 921025.953,
+    "sdkLanguage": "javascript",
+    "testIdAttributeName": "data-testid",
+    "contextId": "browser-context@b6c5419d42af49aba6475a1068d7991c",
+    "title": "lab.spec.ts:88 \u203a large: gallery and lab rendered evidence"
+  },
+  {
+    "type": "before",
+    "callId": "call@19206",
+    "startTime": 921070.732,
+    "class": "Page",
+    "method": "setViewportSize",
+    "params": {
+      "viewportSize": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    "stepId": "pw:api@26",
+    "pageId": "page@a8b3b96fb100c7b47386b1867e15df97",
+    "beforeSnapshot": "before@call@19206"
+  },
+  {
+    "type": "before",
+    "callId": "call@19208",
+    "startTime": 921076.253,
+    "class": "Frame",
+    "method": "goto",
+    "params": {
+      "url": "./gallery/",
+      "timeout": 0,
+      "waitUntil": "load"
+    },
+    "stepId": "pw:api@27",
+    "pageId": "page@a8b3b96fb100c7b47386b1867e15df97",
+    "beforeSnapshot": "before@call@19208"
+  },
+  {
+    "type": "before",
+    "callId": "call@19210",
+    "startTime": 921781.576,
+    "class": "Frame",
+    "method": "evaluateExpression",
+    "params": {
+      "expression": "async () => {\n        await document.fonts.ready;\n        await Promise.all([...document.images].map(img => img.decode()));\n      }",
+      "isFunction": true,
+      "arg": {
+        "value": {
+          "v": "undefined"
+        },
+        "handles": []
+      }
+    },
+    "stepId": "pw:api@28",
+    "pageId": "page@a8b3b96fb100c7b47386b1867e15df97",
+    "beforeSnapshot": "before@call@19210"
+  },
+  {
+    "type": "before",
+    "callId": "call@19212",
+    "startTime": 924243.312,
+    "class": "Frame",
+    "method": "evaluateExpression",
+    "params": {
+      "expression": "() => document.documentElement.scrollWidth > innerWidth",
+      "isFunction": true,
+      "arg": {
+        "value": {
+          "v": "undefined"
+        },
+        "handles": []
+      }
+    },
+    "stepId": "pw:api@29",
+    "pageId": "page@a8b3b96fb100c7b47386b1867e15df97",
+    "beforeSnapshot": "before@call@19212"
+  },
+  {
+    "type": "before",
+    "callId": "call@19214",
+    "startTime": 924458.079,
+    "class": "Frame",
+    "method": "evalOnSelectorAll",
+    "params": {
+      "selector": "button,input,select",
+      "expression": "elements => elements.flatMap(element => {\n        // Match boundingBox visibility: hidden layout has no box; offscreen controls still count.\n        if (!element.getClientRects().length || getComputedStyle(element).visibility !== \"visible\") return [];\n        const {\n          width,\n          height\n        } = element.getBoundingClientRect();\n        return [{\n          label: element.getAttribute(\"aria-label\") || element.textContent || element.tagName,\n          width,\n          height\n        }];\n      })",
+      "isFunction": true,
+      "arg": {
+        "value": {
+          "v": "undefined"
+        },
+        "handles": []
+      }
+    },
+    "stepId": "pw:api@31",
+    "pageId": "page@a8b3b96fb100c7b47386b1867e15df97",
+    "beforeSnapshot": "before@call@19214"
+  },
+  {
+    "type": "before",
+    "callId": "call@19216",
+    "startTime": 925418.643,
+    "class": "Page",
+    "method": "screenshot",
+    "params": {
+      "timeout": 0,
+      "type": "png",
+      "fullPage": true
+    },
+    "stepId": "pw:api@1082",
+    "pageId": "page@a8b3b96fb100c7b47386b1867e15df97",
+    "beforeSnapshot": "before@call@19216"
+  },
+  {
+    "type": "after",
+    "callId": "call@19216",
+    "endTime": 946720.594,
+    "error": {
+      "message": "Protocol error (Page.captureScreenshot): Unable to capture screenshot",
+      "stack": "Error: Protocol error (Page.captureScreenshot): Unable to capture screenshot\n    at /home/runner/work/clusterii/clusterii/node_modules/playwright-core/lib/coreBundle.js:34579:61\n    at new Promise (<anonymous>)\n    at _CRSession.send (/home/runner/work/clusterii/clusterii/node_modules/playwright-core/lib/coreBundle.js:34578:16)\n    at CRPage.takeScreenshot (/home/runner/work/clusterii/clusterii/node_modules/playwright-core/lib/coreBundle.js:36854:77)\n    at Screenshotter._screenshot (/home/runner/work/clusterii/clusterii/node_modules/playwright-core/lib/coreBundle.js:20960:26)\n    at /home/runner/work/clusterii/clusterii/node_modules/playwright-core/lib/coreBundle.js:20870:22",
+      "name": "Error"
+    },
+    "afterSnapshot": "after@call@19216"
+  }
+]
