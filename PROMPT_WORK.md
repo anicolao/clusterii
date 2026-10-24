@@ -871,3 +871,5 @@ Prompt 187 | 1076fa084af797eebf930a7cf2c818d08429f78544497538b2546f78addfb5a0 | 
 Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | Issue one Linux gallery request bound to validated source b1ed3980, preserving frozen target and original test
 
 Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | Verify single Linux capture artifact and source, close scoped capture gate, retain reference eligibility and generation plan
+
+Prompt 189 | bbce6f77533634013579595bd5654609f5962f9a2ef38b014941f1f2c84e3919 | Issue one complete Linux phone candidate request bound to prepared source 2cf5e092 with original behavior budgets
