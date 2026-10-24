@@ -19,3 +19,5 @@ The held26-image family is unchanged. If independent reading review requires add
 ## Single Linux request
 
 Prepared source449fc698; executor1ef11c275353d52280ea7fbd8a4b4e4692fd8bd6; run40054302899/job120753744977. This one request selects only feature003 component cases, all four sizes. At the first inspection checkout was still running; no claim of Linux behavior or candidate completion yet. Original requests are immutable and later documentation/source pushes do not retrigger this workflow.
+
+Final local integration checks after adding the request runner/reading probe: check0errors/1existing warning, lint pass, six orchestration tests pass, story policy pass. The opener's production secondary class supplies min-height54px (above44px); the story explicitly tests focus and corner/ancestor containment, rather than claiming the reading helper itself enforces a minimum height. No new live-family execution is implied by the component reading probe.
