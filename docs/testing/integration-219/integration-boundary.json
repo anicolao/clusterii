@@ -1,0 +1,19 @@
+{
+  "targetBranch": "feat/admission-briefing-composition",
+  "targetHead": "d0804122e614b0b8c26351dee4593ec20cb6f731",
+  "sourceParent": "0753ff9dc7cca0aa10ca12b3e095328237a24214",
+  "verifiedExecutor": "14d1e12c4ba1f03ffd80847b65b6c71fce295922",
+  "productionPatchSha256": "e8c5cd43ee3903a048f423bdf3dba60a6f4e7361cd4e5bb51f38520e05a6fbf1",
+  "productionFiles": [
+    "src/lib/components/FleetContacts.svelte",
+    "src/lib/components/galaxy/Galaxy.svelte",
+    "src/lib/components/galaxy/Scene.svelte",
+    "src/lib/galaxy-labels.ts"
+  ],
+  "ancestorVerified": true,
+  "requiredWorkflowsChanged": false,
+  "baselineFilesChanged": false,
+  "integrationAuthorized": false,
+  "pending": "Independent integration/image review; no automatic target push or reference promotion",
+  "evidenceCommit": "This report and later append-only logs are documentation descendants of the exact verified executor."
+}
