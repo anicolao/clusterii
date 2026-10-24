@@ -52,3 +52,5 @@ The inventory is read-only and deliberately conservative. It records original pa
 Only after this and reference/behavior gates converge should one complete integrated run be started. Required logs are consolidated in this non-PR commit; no feature expansion, history rewrite, PR closure or cancellation of unique evidence.
 
 Packaging: Git normalizes CRLF in `linux-store.log`; its original subprocess bytes are preserved separately in `linux-store-original.log.gz`. SHA256SUMS covers the committed normalized text and raw compressed original separately.
+
+Step184: [bounded entry and narrowed Linux family review](../recovery-single-184/README.md) implements the missing single-case launcher with local orchestration checks. Execution remains blocked on an authorized dispatch/session; no full run substituted. Two retained Linux families now have confirmed renderer compatibility but concrete source/content incompatibility.

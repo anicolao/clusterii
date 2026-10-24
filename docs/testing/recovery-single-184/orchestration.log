@@ -1,0 +1,49 @@
+scripts/recovery-settlement.mjs 33ms
+scripts/check-recovery-settlement.test.mjs 8ms
+✖ entry permits exactly the frozen feature010 phone verification (1.29ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (33.3565ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (0.713417ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.274833ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.1325ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.253375
+
+✖ failing tests:
+
+test at scripts/check-recovery-settlement.test.mjs:14:1
+✖ entry permits exactly the frozen feature010 phone verification (1.29ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'x',
+      'playwright',
+      'test',
+      '--config',
+      'playwright.stories.config.ts',
+      'tests/e2e/010-zero-science/zero-science.spec.ts',
+  -   [AsyncFunction: prepareSingle],
+      '--project=phone',
+      '--max-failures=1',
+      '--retries=0',
+      '--update-snapshots=none'
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/anicolao/projects/games/clusterii-conversation-history/scripts/check-recovery-settlement.test.mjs:16:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

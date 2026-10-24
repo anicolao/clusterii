@@ -64,3 +64,5 @@ The [evidence directory](docs/testing/recovery-reset-20261023/) contains hashed 
 ## Step2 execution
 
 The [exact-source acceptance ledger](docs/testing/recovery-preflight-183/ACCEPTANCE_LEDGER.md) records frozen140 plus the separately hashed exporter overlay, the initial overlay type-check failure and correction, local Nix integration gates, current reference eligibility and the bounded Linux entry/access limitation. No target update or full run was started.
+
+The [bounded recovery entry](docs/testing/recovery-single-184/README.md) is locally validated. No existing authorized dispatch can run it from the recovery branch; main and PR140 were not modified. Retained Linux research/production families match the observed renderer but contain demonstrably superseded component content, so cannot be promoted as current evidence.

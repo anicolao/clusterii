@@ -25,6 +25,10 @@ case "$1" in
     bun run test:browser-storage
     if [ "$2" = verify ]; then CLUSTER_EMULATOR_POST_MARKER="$post_marker" bun run test:stories; else bun run test:stories:generate; fi
     ;;
+  recovery)
+    [ "$#" -eq 2 ] || exit 2
+    node scripts/recovery-settlement.mjs "$2"
+    ;;
   application)
     bun run check
     bun run lint
