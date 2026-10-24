@@ -978,6 +978,60 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
         },
       ],
     });
+    await story.step("read-name-below-commanders", {
+      actor: aliases[1],
+      description:
+        "Find Tania Australis by its public catalogue name and request Overview, reproducing the short-screen commander-card collision through actual keyboard selection.",
+      action: async () => {
+        await openGalaxyCommand(observer, "Systems list", true);
+        await observer
+          .getByLabel("Find a system", { exact: true })
+          .fill("Tania Australis");
+        const choice = observer.getByRole("button", {
+          name: /^Select Tania Australis,/,
+        });
+        await choice.focus();
+        await choice.press("Enter");
+        await openGalaxyCommand(observer, "Systems list", true);
+        const overview = observer
+          .getByRole("dialog", { name: "Systems list", exact: true })
+          .getByRole("button", { name: "Overview", exact: true });
+        await overview.focus();
+        await overview.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The selected catalogue name is Tania Australis and remains fully readable outside commander cards and intelligence qualifiers.",
+        check: async () => {
+          await expect(observer.locator("[data-selected-label]")).toHaveText(
+            "Tania Australis",
+          );
+          await expectReadingTarget(
+            observer.locator("[data-selected-label]"),
+            false,
+          );
+          await overlayClearance(observer, ".stellar-viewport");
+          await expect(button(observer, "Systems list")).toBeFocused();
+        },
+      },
+      verifications: [
+        {
+          spec: "Selecting the known system does not claim its unknown layers or send a command; acquired reports and conserved forces remain unchanged.",
+          check: async () => {
+            await privacy();
+            expect(await canonical()).toEqual(beforeReload);
+            expect(errors).toEqual([]);
+          },
+        },
+      ],
+      views: [
+        {
+          page: observer,
+          player: aliases[1],
+          surface: "game",
+          primary: [button(observer, "Systems list")],
+        },
+      ],
+    });
   } finally {
     for (const ctx of contexts) await ctx.close();
     entropy.deregister();
