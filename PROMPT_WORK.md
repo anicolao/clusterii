@@ -917,3 +917,5 @@ Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | 
 Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Request changed-source Linux validation of resolved-heading correction on ebdbb7ee1ec31ba6d6c9c72e5cfa2df27ed5b2bf with original budgets and complete-family guards
 
 Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Preserve measured stale-control boundary, reconcile 23:34/23:44 reviews, and record below-gate artifact restart without rerunning
+
+Prompt 195 | 6a4aad371ea136fa18a845c8e7d2ade02ffc5f601d34fb99b30075f0806ea62c | Validate actual refresh and migrated phone after headroom recovery; preserve third science cumulative timing and held source-matched candidates
