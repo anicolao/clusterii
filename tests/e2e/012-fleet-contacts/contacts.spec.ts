@@ -806,6 +806,24 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           });
           expect(errors).toEqual([]);
           expect(await canonical()).toEqual(beforeReload);
+          const label = observer.locator("[data-selected-label]");
+          await expectReadingTarget(label, false);
+          await expect
+            .poll(() =>
+              label.evaluate((el) => {
+                const box = el.getBoundingClientRect();
+                const anchor =
+                  el.parentElement!.parentElement!.getBoundingClientRect();
+                const radius = Number(el.getAttribute("data-marker-radius"));
+                return (
+                  box.bottom <= anchor.y - radius - 5.5 ||
+                  box.top >= anchor.y + radius + 5.5 ||
+                  box.right <= anchor.x - radius - 5.5 ||
+                  box.left >= anchor.x + radius + 5.5
+                );
+              }),
+            )
+            .toBe(true);
           if (info.project.name === "phone") {
             await expect(button(observer, "More")).toHaveAttribute(
               "aria-expanded",

@@ -1,0 +1,7 @@
+# Selected-name clearance
+
+Reviewer16:57; UX03 requires selected name and ring, readable chart, preserved factual coordinates and keyboard equivalence. Existing HTML at world y0.5 overlaps selected glow whose billboard diameter is1.7world units. Screen projection changes that clearance with camera angle/zoom.
+
+Correction anchors the HTML at the actual star and reserves its perspective-projected glow radius (minimum12CSSpixels) in the existing cartography allocator. Selected label tries above/below/right/left, retaining priority over home/other names; other labels avoid its glow too. A restrained dark label surface separates text from unrelated backdrop radiance. Camera, catalogue, ring, click targets, selection, real commands and authorization are unchanged. Active camera events/resize/selection recompute clearance without a continuous render loop.
+
+Unit coverage exercises viewport edges and three projected radii across four map sizes, preserves input anchors, retains original collision/priority checks. Feature012 adds actual selected-name containment and marker clearance to the existing acknowledged Overview reading state, retaining all prior actions/privacy/conservation/reload checks and original240s/30s/10s budgets. Existing four-size214 evidence remains intact. Local generation is independent-review preparation, not reference approval. Timeout213, chart prominence/HUD and wider design/release gates remain open.

@@ -6,6 +6,8 @@ export type LabelBox = {
   width: number;
   height: number;
   priority: number;
+  /** Projected selected-star glow radius in CSS pixels. */
+  clearance?: number;
 };
 export function placeGalaxyLabels(
   labels: LabelBox[],
@@ -15,6 +17,14 @@ export function placeGalaxyLabels(
   const placed: LabelBox[] = [];
   const result = new Map<string, { x: number; y: number }>();
   const gap = 6;
+  const markers = labels
+    .filter((l) => l.clearance)
+    .map((l) => ({
+      x: l.x + l.width / 2 - l.clearance!,
+      y: l.y + l.height / 2 - l.clearance!,
+      width: l.clearance! * 2,
+      height: l.clearance! * 2,
+    }));
   for (const label of [...labels].sort(
     (a, b) => b.priority - a.priority || a.id.localeCompare(b.id, "en"),
   )) {
@@ -31,21 +41,25 @@ export function placeGalaxyLabels(
     const anchorY = label.y + label.height / 2;
     if (anchorX < 0 || anchorX > width || anchorY < 0 || anchorY > height)
       continue;
-    const offsets = [0, -1, 1, -2, 2];
-    for (const row of offsets) {
+    const candidates = label.clearance
+      ? [
+          [label.x, anchorY - label.clearance - gap - label.height],
+          [label.x, anchorY + label.clearance + gap],
+          [anchorX + label.clearance + gap, label.y],
+          [anchorX - label.clearance - gap - label.width, label.y],
+        ]
+      : [0, -1, 1, -2, 2].map((row) => [
+          label.x,
+          label.y + row * (label.height + gap),
+        ]);
+    for (const [x, y] of candidates) {
       const candidate = {
         ...label,
-        x: Math.max(gap, Math.min(width - gap - label.width, label.x)),
-        y: Math.max(
-          gap,
-          Math.min(
-            height - gap - label.height,
-            label.y + row * (label.height + gap),
-          ),
-        ),
+        x: Math.max(gap, Math.min(width - gap - label.width, x)),
+        y: Math.max(gap, Math.min(height - gap - label.height, y)),
       };
       if (
-        placed.some(
+        [...placed, ...markers].some(
           (p) =>
             candidate.x < p.x + p.width + gap &&
             candidate.x + candidate.width + gap > p.x &&
@@ -65,7 +79,7 @@ export function placeGalaxyLabels(
   return result;
 }
 
-type Options = { id: string; priority: number };
+type Options = { id: string; priority: number; clearance?: number };
 type Entry = { node: HTMLElement; options: Options; x: number; y: number };
 const managers = new WeakMap<HTMLElement, ReturnType<typeof createManager>>();
 function createManager(root: HTMLElement) {

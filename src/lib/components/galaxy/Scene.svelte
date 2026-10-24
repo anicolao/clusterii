@@ -76,6 +76,28 @@
   let controls = $state<OrbitControlsType>();
   let overview = $state(true);
   let routeDistance = $state(1);
+  let selectedMarkerRadius = $state(12);
+  function measureSelectedMarker() {
+    if (!camera || !target || $size.height <= 0) return;
+    camera.updateMatrixWorld();
+    const depth = -new Vector3(
+      target.x / 10,
+      target.y / 10,
+      target.z / 10,
+    ).applyMatrix4(camera.matrixWorldInverse).z;
+    if (depth > 0)
+      selectedMarkerRadius = Math.max(
+        12,
+        (0.85 * $size.height) /
+          (2 * Math.tan((camera.fov * Math.PI) / 360) * depth),
+      );
+  }
+  $effect(() => {
+    void target;
+    void camera;
+    void $size.height;
+    untrack(measureSelectedMarker);
+  });
   const routeUnit = $derived(
     (routeDistance * Math.tan((48 * Math.PI) / 360) * 2) /
       Math.max(1, $size.height),
@@ -243,6 +265,7 @@
   ><OrbitControls
     bind:ref={controls}
     onstart={() => (overview = false)}
+    onchange={measureSelectedMarker}
     enableDamping={false}
     minDistance={routeFocus ? 0.1 : 5}
     maxDistance={40}
@@ -367,9 +390,16 @@
         color="#7ee7ff"
         side={DoubleSide}
       /></T.Mesh
-    ><HTML position={[0, 0.5, 0]} style="pointer-events: none" center
-      ><span use:galaxyLabel={{ id: target.id, priority: 3 }} class="star-label"
-        >{target.name}</span
+    ><HTML position={[0, 0, 0]} style="pointer-events: none" center
+      ><span
+        use:galaxyLabel={{
+          id: target.id,
+          priority: 3,
+          clearance: selectedMarkerRadius,
+        }}
+        data-selected-label
+        data-marker-radius={selectedMarkerRadius}
+        class="star-label">{target.name}</span
       ></HTML
     ></T.Group
   >{/if}
@@ -437,6 +467,10 @@
   .star-label {
     display: inline-block;
     color: #f5e9ce;
+    background: #06131be8;
+    border-left: 2px solid #7ee7ff;
+    border-radius: 2px;
+    padding: 3px 7px;
     font-size: 18px;
     text-shadow: 0 2px 8px #000;
     white-space: nowrap;

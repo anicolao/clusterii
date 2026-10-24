@@ -76,3 +76,40 @@ describe("galaxy label cartography", () => {
     ).toBe(0);
   });
 });
+
+test("selected glow exclusion survives zoom and viewport edges without moving anchors", () => {
+  for (const [width, height] of [
+    [393, 300],
+    [1000, 700],
+    [2700, 1700],
+    [890, 470],
+  ]) {
+    for (const radius of [12, 32, 70])
+      for (const y of [15, height / 2, height - 15]) {
+        const label = {
+          ...box("selected", width / 2 - 50, y - 9, 3),
+          clearance: radius,
+        };
+        const before = structuredClone(label);
+        const result = placeGalaxyLabels(
+          [label, box("nearby", width / 2 - 50, y - 9)],
+          width,
+          height,
+        );
+        expect(result.has("selected")).toBe(true);
+        for (const item of [label, box("nearby", width / 2 - 50, y - 9)]) {
+          const offset = result.get(item.id);
+          if (!offset) continue;
+          const left = item.x + offset.x,
+            top = item.y + offset.y;
+          expect(
+            left + item.width <= width / 2 - radius - 6 ||
+              left >= width / 2 + radius + 6 ||
+              top + item.height <= y - radius - 6 ||
+              top >= y + radius + 6,
+          ).toBe(true);
+        }
+        expect(label).toEqual(before);
+      }
+  }
+});
