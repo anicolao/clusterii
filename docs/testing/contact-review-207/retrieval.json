@@ -1,0 +1,20 @@
+{
+  "artifactId": 12550144141,
+  "run": 40069590773,
+  "archive": "/tmp/cluster-contact-review-12550144141/artifact.zip",
+  "archiveBytes": 149102350,
+  "sha256": "c83b33cbf89dc2431723674d88323e8c3a167bfc6953706b509d59dd9e8ac442",
+  "extracted": "/tmp/cluster-contact-review-12550144141/originals",
+  "verifiedFiles": 206,
+  "verifiedImages": 88,
+  "source": {
+    "commit": "fa23ffd54029e40338a4127ad4947b4c08b75428",
+    "dirty": false,
+    "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+    "specSha256": "e4484a9625456225a381ae924be491ac1ca6eaf7b0b105b0baf32e4e74f56c56"
+  },
+  "expiry": "2026-11-23T06:27:04Z",
+  "freeKiBBefore": 38167952,
+  "freeKiBAfter": 37873016,
+  "verification": "All files SHA256/size match prior CRC/path-verified archive inventory; archive SHA exact. No tests or promotion."
+}
