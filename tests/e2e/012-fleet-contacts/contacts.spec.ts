@@ -806,6 +806,17 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           });
           expect(errors).toEqual([]);
           expect(await canonical()).toEqual(beforeReload);
+          if (info.project.name === "phone") {
+            await expect(button(observer, "More")).toHaveAttribute(
+              "aria-expanded",
+              "false",
+            );
+            await expectReadingTarget(
+              observer
+                .getByRole("complementary", { name: "Selected system" })
+                .getByRole("button", { name: "Inspect system", exact: true }),
+            );
+          }
         },
       },
       verifications: [

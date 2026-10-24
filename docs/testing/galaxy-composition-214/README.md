@@ -1,0 +1,7 @@
+# Galaxy return composition — reviewer16:47
+
+Plate03 and retained Linux contact024 phone show different interaction states: retained image follows keyboard Systems list→Overview after opening More. More remains expanded and the inspector is inert underneath, so the six-command drawer covers its art and ownership rows. This is not the default galaxy composition. The concrete correction dismisses that drawer when a camera action completes and makes the real Systems list control persistently accessible on phone; focus still returns to it. Other panel closure and authorized data remain unchanged.
+
+Written UX03 requires readable chart/context, keyboard equivalent, and camera actions that do not mutate selection except Home. Full-catalogue overview necessarily frames the real catalogue; plate routes/planet facts must not be fabricated. Small framing, two-row header, artwork proportions and apparent label overlap remain separate comparison questions pending actual corrected-source measurement. This increment does not claim whole-screen fidelity.
+
+Feature012 remains the actual four-player authenticated contact/recovery journey in Pantheon feature-local structure. Existing receipt/conservation/privacy assertions and240s/30s/10s budgets remain. Add phone drawer-dismissal and fully readable Inspect target checks at the existing overview viewpoint; preserve every previous viewpoint. All candidates remain unapproved. Timeout/transport hold213 is unchanged.

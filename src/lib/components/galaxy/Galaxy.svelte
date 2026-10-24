@@ -826,6 +826,7 @@
       starId: action === "home" ? (view.own.home ?? "") : star.id,
       sequence: cameraRequest.sequence + 1,
     };
+    more = false;
     void closeList();
   }
   const filtered = $derived(
@@ -3016,6 +3017,30 @@
     }
     .system-inspector:not(.expanded) dl > div {
       padding: 4px 0;
+    }
+  }
+  /* Systems is a persistent chart opener. Camera actions can dismiss the
+     destination drawer without focusing a hidden control or covering the subject. */
+  @media (max-width: 700px) {
+    .dock-destinations:not(.open) {
+      display: contents;
+    }
+    .dock-destinations:not(.open) :global(button) {
+      display: none;
+    }
+    .dock-destinations:not(.open) :global(button[data-focus="systems-list"]) {
+      display: flex;
+      flex: 1;
+      min-width: 0;
+      min-height: 52px;
+      padding: 4px 8px;
+      font-size: 13px;
+      order: 1;
+    }
+    .dock-destinations:not(.open)
+      :global(button[data-focus="systems-list"] svg) {
+      width: 22px;
+      height: 22px;
     }
   }
   .fleet-contacts-panel.contact-panel.history-panel {
