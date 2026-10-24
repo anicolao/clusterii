@@ -27,7 +27,11 @@ case "$1" in
     ;;
   recovery)
     [ "$#" -eq 2 ] || exit 2
-    node scripts/recovery-settlement.mjs "$2"
+    case "$2" in
+      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;
+      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;
+      *) exit 2 ;;
+    esac
     ;;
   application)
     bun run check
