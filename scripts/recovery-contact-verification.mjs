@@ -14,7 +14,7 @@ import { createConnection } from "node:net";
 import { runtimeGuard, pinned, childExit } from "./recovery-settlement.mjs";
 export const feature = "tests/e2e/012-fleet-contacts/contacts.spec.ts";
 export const specHash =
-  "d80d55f3550c4e55a43aae202fbfcb611275c248cd93b61831b116c73419b7f4";
+  "71df799a88dfa020b47d917b465050f62fcf7e4a8465c3936e85788098984193";
 export function verificationCase(args) {
   if (args.length !== 1 || args[0] !== "feature012-contacts-verify")
     throw Error("Only complete feature012 strict verification allowed");

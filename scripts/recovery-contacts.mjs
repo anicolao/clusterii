@@ -7,7 +7,7 @@ import { createConnection } from 'node:net';
 import { runtimeGuard, pinned, childExit } from './recovery-settlement.mjs';
 export const feature='tests/e2e/012-fleet-contacts/contacts.spec.ts';
 export const projects=['phone','desktop','large','short'];
-export const specHash='d80d55f3550c4e55a43aae202fbfcb611275c248cd93b61831b116c73419b7f4';
+export const specHash='71df799a88dfa020b47d917b465050f62fcf7e4a8465c3936e85788098984193';
 export function candidateCase(args) {
  if(args.length!==1||args[0]!=='feature012-contacts-candidates')throw Error('Only complete feature012 four-size candidates allowed');
  return ['x','playwright','test','--config','playwright.stories.config.ts',feature,...projects.map(p=>`--project=${p}`),'--max-failures=1','--retries=0','--update-snapshots=none'];
@@ -18,8 +18,8 @@ export function candidateGuard(platform,env,inside=false){
 }
 export function validateComplete({records,commit}) {
  if(records.length!==4)throw Error('All four sizes required');
- for(const project of projects){const entries=records.filter(r=>r.manifest.project===project);if(entries.length!==1)throw Error('Missing or duplicate project');const {manifest,pngs,failed}=entries[0];if(failed||manifest.status!=='passed'||manifest.mode!=='generate'||manifest.platform!=='linux-arm64'||manifest.source?.commit!==commit||manifest.source?.dirty!==false||manifest.source?.spec!==feature||manifest.source?.specSha256!==specHash||pngs!==22)throw Error('Incomplete or wrong-source candidates');}
- return {status:'complete-candidates',images:88,approval:'pending-independent-review'};
+ for(const project of projects){const entries=records.filter(r=>r.manifest.project===project);if(entries.length!==1)throw Error('Missing or duplicate project');const {manifest,pngs,failed}=entries[0];if(failed||manifest.status!=='passed'||manifest.mode!=='generate'||manifest.platform!=='linux-arm64'||manifest.source?.commit!==commit||manifest.source?.dirty!==false||manifest.source?.spec!==feature||manifest.source?.specSha256!==specHash||pngs!==24)throw Error('Incomplete or wrong-source candidates');}
+ return {status:'complete-candidates',images:96,approval:'pending-independent-review'};
 }
 export async function executeCandidates({run,inspect,record}){
  const testExit=await run(candidateCase(['feature012-contacts-candidates']));
@@ -53,7 +53,7 @@ async function main(args){
   if(busy)throw Error(`Owned port ${port} occupied; no process was stopped`);
  }
  mkdirSync('ci-evidence',{recursive:true});const folder=mkdtempSync(resolve('ci-evidence/recovery-contacts-'));
- writeFileSync(join(folder,'source.json'),JSON.stringify({commit:git('rev-parse','HEAD'),renderer:pinned,feature,specHash,projects,mode:'generate',expectedCaptures:88,testBudgetMs:240000,stepBudgetMs:30000,assertionBudgetMs:10000},null,2)+'\n');
+ writeFileSync(join(folder,'source.json'),JSON.stringify({commit:git('rev-parse','HEAD'),renderer:pinned,feature,specHash,projects,mode:'generate',expectedCaptures:96,testBudgetMs:240000,stepBudgetMs:30000,assertionBudgetMs:10000},null,2)+'\n');
  const env={...process.env,CLUSTER_RECOVERY_OUTPUT:folder,CLUSTER_STORY_OUTPUT_ROOT:join(folder,'stories'),CLUSTER_STORY_MODE:'generate',NODE_OPTIONS:`--import=${pathToFileURL(resolve('tests/browser/story-helpers/emulator-catalogue-register.mjs')).href}`};
  delete env.CLUSTER_EMULATOR_POST_MARKER;
  return prepareCandidates((a,e)=>childExit('bun',a,e),env);
