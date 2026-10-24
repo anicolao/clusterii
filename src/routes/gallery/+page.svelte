@@ -685,6 +685,7 @@
       <WorldArt />
       <h2>Science sources · shared production instrument</h2>
       <button
+        class="secondary"
         bind:this={scienceExampleButton}
         onclick={() => (scienceExampleOpen = true)}
         >Open science source specimen</button

@@ -61,6 +61,8 @@ test("Read shared science ledger in gallery and lab", async ({
         await page.emulateMedia({ reducedMotion: motion });
         await page.goto("./gallery/");
         await open.focus();
+        await expect(open).toBeFocused();
+        await expectReadingTarget(open);
         await open.press("Enter");
         await ledger.scrollIntoViewIfNeeded();
         await readDelivered(ledger);
