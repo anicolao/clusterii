@@ -1,0 +1,107 @@
+{
+  "source": "96f081d84d3278c232a0b2d56e7e6ffb866d022f",
+  "testExit": 0,
+  "recordCount": 73,
+  "intervals": [
+    {
+      "phase": "terminated-listener-live",
+      "at": 1792874041740,
+      "notifications": [
+        {
+          "sequence": 3,
+          "queryTargets": 1,
+          "streams": 2,
+          "elapsedNs": 7345917
+        }
+      ]
+    },
+    {
+      "phase": "sdk-termination-complete",
+      "at": 1792874042408,
+      "notifications": [
+        {
+          "sequence": 4,
+          "queryTargets": 1,
+          "streams": 2,
+          "elapsedNs": 3646167
+        }
+      ]
+    },
+    {
+      "phase": "after-termination-write-accepted",
+      "at": 1792874042442,
+      "notifications": [
+        {
+          "sequence": 5,
+          "queryTargets": 1,
+          "streams": 2,
+          "elapsedNs": 73583
+        }
+      ]
+    },
+    {
+      "phase": "explicit-listener-live",
+      "at": 1792874042476,
+      "notifications": [
+        {
+          "sequence": 6,
+          "queryTargets": 2,
+          "streams": 3,
+          "elapsedNs": 3645708
+        }
+      ]
+    },
+    {
+      "phase": "explicit-unsubscribe-and-read-complete",
+      "at": 1792874042514,
+      "notifications": [
+        {
+          "sequence": 7,
+          "queryTargets": 1,
+          "streams": 3,
+          "elapsedNs": 3221625
+        }
+      ]
+    },
+    {
+      "phase": "after-unsubscribe-write-accepted",
+      "at": 1792874042544,
+      "notifications": []
+    },
+    {
+      "phase": "explicit-termination-complete",
+      "at": 1792874042544,
+      "notifications": [
+        {
+          "sequence": 8,
+          "queryTargets": 1,
+          "streams": 3,
+          "elapsedNs": 3272750
+        }
+      ]
+    },
+    {
+      "phase": "after-both-terminations-write-accepted",
+      "at": 1792874042572,
+      "notifications": [
+        {
+          "sequence": 9,
+          "queryTargets": 1,
+          "streams": 3,
+          "elapsedNs": 70333
+        }
+      ]
+    },
+    {
+      "phase": "foreign-read-denied",
+      "at": 1792874042598,
+      "notifications": []
+    }
+  ],
+  "limits": [
+    "Node SDK service probe, not browser-mounted or pinned-Linux correction acceptance.",
+    "Targets measured at acknowledged profile writes, not a claim of permanent retention.",
+    "No per-target identity or request/document contents exported.",
+    "No production fix or full-cohort timeout resolution established."
+  ]
+}

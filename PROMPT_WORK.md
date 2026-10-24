@@ -958,3 +958,4 @@ Prompt 211 | a8c3531011a7cad70d3892af7c790c764f369ba062d330727bdbdaf1538f44b2 | 
 Prompt 211 | a8c3531011a7cad70d3892af7c790c764f369ba062d330727bdbdaf1538f44b2 | Verify Linux artifact once, retain correlated query costs and strict failure, specify bounded predecessor contrast
 Prompt 212 | 88e782e12de68706f49362ee37d5419967b92aa8ef89010e805f9b951da5997a | Dispatch one source-bound route-forces to feature010 pair after fifteen orchestration checks pass
 Prompt 212 | 88e782e12de68706f49362ee37d5419967b92aa8ef89010e805f9b951da5997a | Preserve both Linux failures, compare retained query populations and costs, quantify missing prior access history
+Prompt 213 | be9cc001dd77a62526e53c55554a5dc0c4060fbd43404b5f14c5889968469562 | Preserve real SDK termination control and evaluated supported-emulator blocker without a semantic workaround
