@@ -8,7 +8,7 @@ import {
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { pathToFileURL } from "node:url";
-export const requestFile = ".github/recovery/science-focused-input-candidates.json";
+export const requestFile = ".github/recovery/science-resolved-heading-candidates.json";
 export const branch = "refs/heads/investigate/jfr-export-load";
 export function validateRequest({
   request,
@@ -28,7 +28,7 @@ export function validateRequest({
     throw Error("Wrong event, repository, branch, attempt or checkout");
   if (
     request.version !== 1 ||
-    request.id !== "science-focused-input-20261023-01" ||
+    request.id !== "science-resolved-heading-20261023-01" ||
     request.case !== "science-components-candidates" ||
     request.mode !== "generate" ||
     request.target !== "d8241411431450821074267a1cad2adbaf45c766" ||
