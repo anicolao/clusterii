@@ -13,6 +13,7 @@ public class ObserverCheck {
     Object cloud = loader.loadClass("fixture.CloudFirestoreV1").getConstructor().newInstance();
     Object listener = loader.loadClass("fixture.ListenStreamManager").getConstructor().newInstance();
     var call = cloud.getClass().getMethod("commit", Object.class, Object.class);
+    if (!java.lang.reflect.Modifier.isSynchronized(listener.getClass().getMethod("notifyListeners", Object.class).getModifiers())) throw new AssertionError("synchronization removed");
     Object value = new Object();
     if (call.invoke(cloud, value, listener) != value) throw new AssertionError("return identity");
     Exception original = new Exception("never logged");

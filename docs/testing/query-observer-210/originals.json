@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "path": "/tmp/cluster-query-observer-210/source.txt",
+      "bytes": 41,
+      "sha256": "8702ec50fce4c6e4df577bd2ed1784da94426957e2c8be1850aed1f4b824a95d"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/source-sha256.txt",
+      "bytes": 437,
+      "sha256": "8f99b44ecf492068e1d358fb7186742a18353141a59eaae885b1b974fdbb128c"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/observer.jar",
+      "bytes": 12195,
+      "sha256": "4708928879effbd04110533c1b82c9ac74f70d4b43a5c7d56f9d531f189b0e20"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/server.jsonl",
+      "bytes": 507041,
+      "sha256": "f4b463b86395866752dbafa4bf0c13082509e32dfb27c63c394d8f6093b0738a"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/run.log",
+      "bytes": 26401,
+      "sha256": "664c5ac7b03a57a0aa9aa9cc79bdc0e6ca36233e38ea5c23c7adff91642ff72f"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/firestore-debug.log",
+      "bytes": 18301,
+      "sha256": "37c36dbd05e680b4ef7486db1dd6fa2a57a886524743a4487ae55bb098e12145"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/test-exit.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/playwright/e2e-010-zero-science-zero--06679--preserves-private-research-phone/trace.zip",
+      "bytes": 5128842,
+      "sha256": "cd8002cb1c9eaf1fd511bc4e9c462afa7cae7880a6477153ecdedcdaabe32a4a"
+    },
+    {
+      "path": "/tmp/cluster-query-observer-210/playwright/e2e-010-zero-science-zero--06679--preserves-private-research-phone/error-context.md",
+      "bytes": 10625,
+      "sha256": "fd8cbd71fba92269c5726c59c6ab7f5ba2ca554c4bd3b37534519ec3aac1aaa0"
+    }
+  ],
+  "absent": [
+    "firebase-debug.log (CLI did not emit this optional file)"
+  ]
+}
