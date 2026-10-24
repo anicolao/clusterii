@@ -921,3 +921,5 @@ Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | 
 Prompt 195 | 6a4aad371ea136fa18a845c8e7d2ade02ffc5f601d34fb99b30075f0806ea62c | Validate actual refresh and migrated phone after headroom recovery; preserve third science cumulative timing and held source-matched candidates
 
 Prompt 195 | 6a4aad371ea136fa18a845c8e7d2ade02ffc5f601d34fb99b30075f0806ea62c | Include exact hashed runtime evidence omitted by global ci-evidence/test-results ignore rules and verify the staged evidence inventory
+
+Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Prepare one bounded real-gallery CPU/layout observation with native reading and unchanged viewport before any render optimization
