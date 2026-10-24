@@ -3165,6 +3165,8 @@
       grid-row: 1;
       grid-column: 2;
       min-width: 0;
+      font-size: 12px;
+      line-height: 1.2;
     }
     .command-rail h1 {
       font-size: 14px;
@@ -3172,6 +3174,10 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       margin: 0;
+    }
+    .command-rail .campaign-context > span {
+      display: block;
+      line-height: 1.2;
     }
     .command-rail .phone-tick {
       display: block;

@@ -973,3 +973,5 @@ Prompt 216 | 542faaee19da60b57894e006cace3f0857bd5c2f2a2648d3a4f37f3a175a1b6b | 
 Prompt 216 | 542faaee19da60b57894e006cace3f0857bd5c2f2a2648d3a4f37f3a175a1b6b | Verify current Linux artifact once and publish all88 exact review paths with source hashes and scoped coverage limits
 
 Prompt 217 | 678a6406d83fd1cf904e57b7e14cf0f2246c49fbe9de383a8c2294e2b1c65783 | Correct inherited phone grid placement after the real campaign rail measured106px; retain original failed trace.
+
+Prompt 217 | 678a6406d83fd1cf904e57b7e14cf0f2246c49fbe9de383a8c2294e2b1c65783 | Establish compact context line boxes and retain bounded child geometry after the102px failed rail measurement.

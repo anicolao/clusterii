@@ -220,6 +220,22 @@ test("Inspect authoritative science rate and recover earned output", async ({
               await expectReadingTarget(control);
             if (info.project.name === "phone") {
               const rail = await owner.locator(".command-rail").boundingBox();
+              await info.attach("phone-rail-layout", {
+                body: JSON.stringify(
+                  await owner
+                    .locator(".command-rail")
+                    .evaluate((el) =>
+                      Array.from(el.children).map((child) => ({
+                        className: child.className,
+                        bounds: child.getBoundingClientRect().toJSON(),
+                        lineHeight: getComputedStyle(child).lineHeight,
+                        gridRow: getComputedStyle(child).gridRow,
+                        gridColumn: getComputedStyle(child).gridColumn,
+                      })),
+                    ),
+                ),
+                contentType: "application/json",
+              });
               expect(rail!.height).toBeLessThan(100);
               await expectReadingTarget(owner.locator(".phone-tick"), false);
             }
@@ -250,9 +266,10 @@ test("Inspect authoritative science rate and recover earned output", async ({
               name: "Production ledger",
               exact: true,
             });
-            await expect(credits.locator(".balance")).toHaveText(
-              "Available credits200",
+            await expect(credits.locator(".balance span")).toHaveText(
+              "Available credits",
             );
+            await expect(credits.locator(".balance strong")).toHaveText("200");
             await expect(credits).toContainText("First production pending");
           },
         },
