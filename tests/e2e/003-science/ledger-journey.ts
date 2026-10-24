@@ -2,6 +2,26 @@ import { expect, type Page } from "@playwright/test";
 import type { TestStepHelper } from "../helpers/test-step-helper";
 import { expectReadingTarget } from "../../browser/story-helpers/reading-target";
 
+export const scienceResourceOpener = (page: Page) =>
+  page.getByRole("button", {
+    name:
+      (page.viewportSize()?.width ?? 1440) <= 700
+        ? "Empire resources"
+        : "Inspect science per tick",
+    exact: true,
+  });
+export async function openScienceResource(page: Page) {
+  await scienceResourceOpener(page).focus();
+  await page.keyboard.press("Enter");
+  if ((page.viewportSize()?.width ?? 1440) <= 700) {
+    const science = page
+      .getByRole("navigation", { name: "Empire ledgers" })
+      .getByRole("button", { name: "Inspect science per tick", exact: true });
+    await science.focus();
+    await science.press("Enter");
+  }
+}
+
 /** Mounted production ledger, reusing the caller's real acknowledged campaign. */
 export async function inspectLedgerMotion(
   story: TestStepHelper,
@@ -25,8 +45,7 @@ export async function inspectLedgerMotion(
       name: "Science source ledger",
       exact: true,
     });
-  const opener = (p: Page) =>
-    p.getByRole("button", { name: "Inspect science per tick", exact: true });
+  const opener = scienceResourceOpener;
   const close = (p: Page) =>
     ledger(p).getByRole("button", { name: "Return to galaxy", exact: true });
   for (const reduced of [false, true]) {
@@ -75,8 +94,7 @@ export async function inspectLedgerMotion(
             reducedMotion: reduced ? "reduce" : "no-preference",
           });
           await a.page.reload();
-          await opener(a.page).focus();
-          await opener(a.page).press("Enter");
+          await openScienceResource(a.page);
           await expect(
             ledger(a.page).getByRole("heading", {
               name: "Science per tick",

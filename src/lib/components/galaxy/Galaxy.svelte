@@ -247,7 +247,20 @@
     void openPanel("construction");
   });
   let economy = $state(false);
+  const nextTickLabel = $derived(
+    view.pausedAt != null
+      ? "Paused"
+      : view.production
+        ? new Date(view.production.nextTickAt).toLocaleTimeString("en-US", {
+            hour: "2-digit",
+            minute: "2-digit",
+            timeZone: "UTC",
+          }) + " UTC"
+        : "After start",
+  );
   let scienceOpen = $state(false);
+  let resourceAccess = $state(false);
+  let resourceOpener: HTMLElement | null = null;
   let resumedResearch = "";
   $effect(() => {
     if (
@@ -871,6 +884,7 @@
     construction = kind === "construction";
     economy = kind === "economy";
     scienceOpen = false;
+    resourceAccess = false;
     history = kind === "history";
     briefingOpen = kind === "briefing";
     if (briefingOpen) {
@@ -925,16 +939,41 @@
   }
   async function closeEconomy() {
     const opener = scienceOpen ? "science" : "economy";
+    const resource = resourceAccess ? resourceOpener : null;
+    resourceAccess = false;
     economy = false;
     scienceOpen = false;
     await tick();
-    document.querySelector<HTMLElement>(`[data-focus="${opener}"]`)?.focus();
+    if (resource?.isConnected) resource.focus();
+    else
+      document.querySelector<HTMLElement>(`[data-focus="${opener}"]`)?.focus();
   }
   async function openScience() {
     await openPanel("economy");
     scienceOpen = true;
     await tick();
     document.querySelector<HTMLElement>("[data-science-heading]")?.focus();
+  }
+  async function openResources() {
+    resourceOpener =
+      document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null;
+    const serial = navigationSerial + 1;
+    await openPanel("economy");
+    if (mounted && economy && serial === navigationSerial)
+      resourceAccess = true;
+  }
+  async function resourceView(science: boolean) {
+    const serial = navigationSerial;
+    scienceOpen = science;
+    await tick();
+    if (!mounted || !economy || serial !== navigationSerial) return;
+    document
+      .querySelector<HTMLElement>(
+        science ? "[data-science-heading]" : ".economy-panel",
+      )
+      ?.focus();
   }
   async function closeConstruction() {
     expanded = true;
@@ -1073,13 +1112,23 @@
         />
       </div>
       <div class="campaign-context">
-        <h1 id="galaxy-heading" tabindex="-1">{view.name}</h1>
+        <h1 id="galaxy-heading" tabindex="-1" title={view.name}>{view.name}</h1>
+        <span class="phone-tick"
+          >Next tick <strong>{nextTickLabel}</strong></span
+        >
         <span
           >{view.pausedAt != null
             ? "Paused · Development maintenance"
             : "Development · Rules under review"}</span
         >
       </div>
+      <ActionButton
+        class="phone-resources"
+        aria-label="Empire resources"
+        data-focus="resources"
+        onclick={openResources}
+        aria-expanded={resourceAccess}>Resources</ActionButton
+      >
       {#if view.phase === "active"}
         <div class="campaign-facts" aria-label="Empire resources">
           <span
@@ -1104,18 +1153,7 @@
               >{#if view.pausedAt != null}<small>Paused</small>{/if}</span
             >
           </ActionButton>
-          <span
-            >Next tick <strong
-              >{view.pausedAt != null
-                ? "Paused"
-                : view.production
-                  ? new Date(view.production.nextTickAt).toLocaleTimeString(
-                      "en-US",
-                      { hour: "2-digit", minute: "2-digit", timeZone: "UTC" },
-                    ) + " UTC"
-                  : "After start"}</strong
-            ></span
-          >
+          <span>Next tick <strong>{nextTickLabel}</strong></span>
         </div>
       {/if}
       <ActionButton
@@ -1562,37 +1600,58 @@
     {#if economy}<div
         class="history-panel economy-panel"
         class:science-panel={scienceOpen}
+        class:resource-panel={resourceAccess}
         role="dialog"
         aria-modal="true"
         tabindex="-1"
         aria-label="Empire economy panel"
         onkeydown={panelKeys}
       >
-        {#if scienceOpen}<ScienceLedger
-            {view}
-            onclose={closeEconomy}
-          />{:else}<CampaignEconomy
-            bind:researchDraft
-            bind:marketDraft
-            {view}
-            {ontrade}
-            records={[...records, ...receivedTradeViews]}
-            bind:exchanging
-            bind:tradeSelection
-            bind:tradeDraft
-            {commandId}
-            {commandOfferId}
-            onhistory={() => openPanel("history")}
-            onclose={closeEconomy}
-            {onresearch}
-            {onfocus}
-            {commandKind}
-            {message}
-            {error}
-            {busy}
-            {pending}
-            {onretry}
-          />{/if}
+        {#if resourceAccess}<nav
+            class="resource-navigation"
+            aria-label="Empire ledgers"
+          >
+            <ActionButton
+              class="quiet"
+              aria-pressed={!scienceOpen}
+              onclick={() => resourceView(false)}
+              >Credits and research</ActionButton
+            >
+            <ActionButton
+              class="quiet"
+              aria-pressed={scienceOpen}
+              onclick={() => resourceView(true)}
+              aria-label="Inspect science per tick"
+              >Science per tick</ActionButton
+            >
+          </nav>{/if}
+        <div class="resource-content">
+          {#if scienceOpen}<ScienceLedger
+              {view}
+              onclose={closeEconomy}
+            />{:else}<CampaignEconomy
+              bind:researchDraft
+              bind:marketDraft
+              {view}
+              {ontrade}
+              records={[...records, ...receivedTradeViews]}
+              bind:exchanging
+              bind:tradeSelection
+              bind:tradeDraft
+              {commandId}
+              {commandOfferId}
+              onhistory={() => openPanel("history")}
+              onclose={closeEconomy}
+              {onresearch}
+              {onfocus}
+              {commandKind}
+              {message}
+              {error}
+              {busy}
+              {pending}
+              {onretry}
+            />{/if}
+        </div>
       </div>{/if}
     {#if briefingOpen && briefingSnapshot}<div
         class="construction-panel contact-panel history-panel"
@@ -3059,5 +3118,81 @@
   }
   .system-inspector.expanded h2 {
     padding-right: 0;
+  }
+  .phone-tick,
+  :global(.phone-resources) {
+    display: none;
+  }
+  .resource-content {
+    height: 100%;
+    min-height: 0;
+  }
+  .resource-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    top: calc(var(--command-rail-height) + 8px);
+  }
+  .resource-panel .resource-content {
+    flex: 1;
+    height: auto;
+  }
+  .resource-navigation {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .resource-navigation :global(button) {
+    flex: 1;
+    min-height: 44px;
+  }
+  .resource-navigation :global([aria-pressed="true"]) {
+    border-color: #9ee7ef;
+    color: #a7edf3;
+  }
+  @media (max-width: 700px) {
+    .command-rail {
+      grid-template-columns: 48px minmax(0, 1fr) 64px 44px 62px;
+      gap: 4px;
+      padding: 8px;
+      align-items: center;
+    }
+    .command-rail .campaign-facts {
+      display: none;
+    }
+    .command-rail .campaign-context {
+      min-width: 0;
+    }
+    .command-rail h1 {
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 0;
+    }
+    .command-rail .phone-tick {
+      display: block;
+      font-size: 10px;
+      line-height: 1.4;
+    }
+    .phone-tick strong {
+      display: block;
+      font-weight: 400;
+    }
+    .command-rail :global(.phone-resources) {
+      display: block;
+      min-height: 44px;
+      padding: 4px;
+      font-size: 11px;
+      color: #a7edf3;
+      border-color: #75c9db66;
+      background: #0d2530;
+    }
+    .command-rail :global(.roster-access),
+    .command-rail :global(.campaigns-access) {
+      min-height: 44px;
+      padding: 4px;
+      font-size: 11px;
+    }
   }
 </style>

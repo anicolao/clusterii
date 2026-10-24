@@ -1,4 +1,9 @@
-import { inspectLedgerMotion } from "./ledger-journey";
+import {
+  inspectLedgerMotion,
+  openScienceResource,
+  scienceResourceOpener,
+} from "./ledger-journey";
+import { expectReadingTarget } from "../../browser/story-helpers/reading-target";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
 import { test, expect } from "../helpers/fixtures";
@@ -144,11 +149,8 @@ test("Inspect authoritative science rate and recover earned output", async ({
     const [owner, peer] = pages;
     const ledger = (page: Page) =>
       page.getByRole("region", { name: "Science sources", exact: true });
-    const rateButton = (page: Page) => button(page, "Inspect science per tick");
-    const openRate = async (page: Page) => {
-      await rateButton(page).focus();
-      await page.keyboard.press("Enter");
-    };
+    const rateButton = scienceResourceOpener;
+    const openRate = openScienceResource;
     const readTotals = async (page: Page) => {
       await page
         .getByRole("region", { name: "Science source ledger", exact: true })
@@ -190,6 +192,100 @@ test("Inspect authoritative science rate and recover earned output", async ({
     };
     let ownerSource = "",
       peerSource = "";
+    await story.step("read-campaign-resource-rail", {
+      actor: aliases[0],
+      description:
+        "Read the scheduled next tick beside the campaign, with roster and campaign navigation retained. Phone uses one resource entry to the existing ledgers.",
+      action: async () => {
+        await rateButton(owner).focus();
+      },
+      acknowledgement: {
+        spec: "The real active campaign exposes its resource opener and next scheduled tick.",
+        check: async () => {
+          await expect(rateButton(owner)).toBeFocused();
+          await expect(owner.locator(".command-rail")).toContainText(
+            "Next tick",
+          );
+        },
+      },
+      verifications: [
+        {
+          spec: "The rail and each named navigation control fit without automatic scrolling; the phone rail leaves more room for the chart.",
+          check: async () => {
+            for (const control of [
+              rateButton(owner),
+              button(owner, "Roster"),
+              button(owner, "Campaigns"),
+            ])
+              await expectReadingTarget(control);
+            if (info.project.name === "phone") {
+              const rail = await owner.locator(".command-rail").boundingBox();
+              expect(rail!.height).toBeLessThan(100);
+              await expectReadingTarget(owner.locator(".phone-tick"), false);
+            }
+          },
+        },
+      ],
+      views: [
+        {
+          page: owner,
+          player: aliases[0],
+          surface: "game",
+          primary: [rateButton(owner)],
+        },
+      ],
+    });
+    if (info.project.name === "phone")
+      await story.step("open-credit-ledger", {
+        actor: aliases[0],
+        description:
+          "Use the compact Resources control by keyboard to read the actual available credit balance and first-production status, then Escape returns to the same opener.",
+        action: async () => {
+          await rateButton(owner).press("Enter");
+        },
+        acknowledgement: {
+          spec: "The existing credit ledger reports available200 and pending first production; it is not a synthetic combined ledger.",
+          check: async () => {
+            const credits = owner.getByRole("region", {
+              name: "Production ledger",
+              exact: true,
+            });
+            await expect(credits.locator(".balance")).toHaveText(
+              "Available credits200",
+            );
+            await expect(credits).toContainText("First production pending");
+          },
+        },
+        verifications: [
+          {
+            spec: "Credits, science access and Return remain contained and keyboard reachable.",
+            check: async () => {
+              await expectReadingTarget(owner.locator(".balance"), false);
+              await expectReadingTarget(
+                button(owner, "Inspect science per tick"),
+              );
+              await expectReadingTarget(button(owner, "Return to galaxy"));
+            },
+          },
+        ],
+        views: [
+          {
+            page: owner,
+            player: aliases[0],
+            surface: "game",
+            primary: [button(owner, "Return to galaxy")],
+          },
+        ],
+      });
+    if (info.project.name === "phone")
+      await story.harness(
+        "close-credit-reading",
+        "Ordinary Escape dismisses only the local reading panel; no command is sent.",
+        async () => {
+          await owner.keyboard.press("Escape");
+          await expect(rateButton(owner)).toBeFocused();
+        },
+      );
     await story.step("inspect-private-sources", {
       actor: aliases[0],
       description:
