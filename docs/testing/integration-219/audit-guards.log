@@ -1,0 +1,25 @@
+✔ request cannot replay, change source, repository, branch, case, mode, or combine code changes (0.660125ms)
+✔ exact four-size feature, source hash, no generation, retries or whole-suite fallback (0.670333ms)
+✔ original failing exit survives exactly one invocation (0.422792ms)
+✔ serial build and service setup failure prevents later commands (0.167916ms)
+✔ workflow remains branch/request-only with pinned Nix and failed-artifact retention (4.274625ms)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.701917ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (5.110375ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (224.903917ms)
+✔ exact ordered pair is allowlisted, with one emulator lifecycle after serialized compilation (0.676334ms)
+✔ real failed subprocess retires before second starts; both exits survive without success laundering (65.929792ms)
+✔ infrastructure exit is retained and does not launch a partial-state successor (0.300542ms)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.603625ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.699584ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (222.923417ms)
+✔ query observation retains exact strict feature010 phone arguments (0.571083ms)
+✔ serial compilation precedes real emulator; original failure exits without fallback (0.133916ms)
+✔ observer remains identical to locally executed source and no original budgets change (0.333375ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 290.459917

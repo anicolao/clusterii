@@ -1,0 +1,61 @@
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.778209ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (5.036041ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (224.227167ms)
+✔ both complete families execute once; each exit is retained, no fallback (0.343583ms)
+✔ live science binds exact unchanged story and all77 clean Linux images (0.485958ms)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.570291ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (5.189166ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (224.309917ms)
+✔ exact complete four-size contact family without filters or fallback (0.672458ms)
+✔ all96 images, projects and clean source required (0.207875ms)
+✔ serial sync/build/emulators preserves setup failures and actual service command (0.121833ms)
+✔ test failure preserved, partial evidence rejected, no retry (0.166125ms)
+✔ entry permits exactly the frozen feature010 phone verification (1.192167ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (34.530833ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.170834ms)
+✖ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.909ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.1605ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (13.756625ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 17
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 303.11425
+
+✖ failing tests:
+
+test at scripts/check-recovery-settlement.test.mjs:133:1
+✖ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.909ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+    '[ "$#" -eq 2 ] || exit 2\n' +
+      '    case "$2" in\n' +
+  +   '      client-contact-science-candidates) node scripts/recovery-client-batch.mjs "$2" ;;\n' +
+      '      feature012-contacts-verify) node scripts/recovery-contact-verification.mjs "$2" ;;\n' +
+      '      feature009-010-pair) node scripts/recovery-pair.mjs "$2" ;;\n' +
+      '      feature010-query-phone) node scripts/recovery-query.mjs "$2" ;;\n' +
+      '      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n' +
+      '      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n' +
+  
+      at TestContext.<anonymous> (file:///Users/anicolao/projects/games/clusterii-conversation-history/scripts/check-recovery-settlement.test.mjs:139:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '[ "$#" -eq 2 ] || exit 2\n    case "$2" in\n      client-contact-science-candidates) node scripts/recovery-client-batch.mjs "$2" ;;\n      feature012-contacts-verify) node scripts/recovery-contact-verification.mjs "$2" ;;\n      feature009-010-pair) node scripts/recovery-pair.mjs "$2" ;;\n      feature010-query-phone) node scripts/recovery-query.mjs "$2" ;;\n      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n      feature012-contacts-candidates) node scripts/recovery-contacts.mjs "$2" ;;\n      science-components-candidates) node scripts/recovery-science.mjs "$2" ;;\n      feature010-phone-candidates) node scripts/recovery-candidates.mjs "$2" ;;\n      *) exit 2 ;;\n    esac',
+    expected: '[ "$#" -eq 2 ] || exit 2\n    case "$2" in\n      feature012-contacts-verify) node scripts/recovery-contact-verification.mjs "$2" ;;\n      feature009-010-pair) node scripts/recovery-pair.mjs "$2" ;;\n      feature010-query-phone) node scripts/recovery-query.mjs "$2" ;;\n      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n      feature012-contacts-candidates) node scripts/recovery-contacts.mjs "$2" ;;\n      science-components-candidates) node scripts/recovery-science.mjs "$2" ;;\n      feature010-phone-candidates) node scripts/recovery-candidates.mjs "$2" ;;\n      *) exit 2 ;;\n    esac',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
