@@ -1,0 +1,146 @@
+[
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-desktop",
+    "completedTransactions": 54,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 566.5,
+    "medianCallbackMs": 41.79,
+    "medianRequestMs": 521.74,
+    "medianRpcMs": 521.64,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 3.98,
+    "medianAfterMarkerMs": 517.53,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  },
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-large",
+    "completedTransactions": 54,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 561.76,
+    "medianCallbackMs": 42,
+    "medianRequestMs": 516.82,
+    "medianRpcMs": 516.73,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 3.75,
+    "medianAfterMarkerMs": 512.37,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  },
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-phone",
+    "completedTransactions": 41,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 658.21,
+    "medianCallbackMs": 45.3,
+    "medianRequestMs": 611.64,
+    "medianRpcMs": 611.53,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 5.99,
+    "medianAfterMarkerMs": 597.29,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  },
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-short",
+    "completedTransactions": 55,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 560.1,
+    "medianCallbackMs": 41.15,
+    "medianRequestMs": 518.91,
+    "medianRpcMs": 518.81,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 3.93,
+    "medianAfterMarkerMs": 514.31,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-desktop",
+    "completedTransactions": 51,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 594.99,
+    "medianCallbackMs": 40.68,
+    "medianRequestMs": 551.64,
+    "medianRpcMs": 551.54,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 3.74,
+    "medianAfterMarkerMs": 547.89,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-large",
+    "completedTransactions": 52,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 590.52,
+    "medianCallbackMs": 41.14,
+    "medianRequestMs": 548.1,
+    "medianRpcMs": 548,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 3.65,
+    "medianAfterMarkerMs": 544.69,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-phone",
+    "completedTransactions": 49,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 623.21,
+    "medianCallbackMs": 42.3,
+    "medianRequestMs": 579.91,
+    "medianRpcMs": 579.81,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 4.17,
+    "medianAfterMarkerMs": 575.79,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-short",
+    "completedTransactions": 51,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 592.89,
+    "medianCallbackMs": 40.41,
+    "medianRequestMs": 551.1,
+    "medianRpcMs": 551,
+    "markerInvalid": 0,
+    "medianBeforeMarkerMs": 3.7,
+    "medianAfterMarkerMs": 546.28,
+    "batchCompleted": false,
+    "eventLoop": [],
+    "failure": []
+  }
+]

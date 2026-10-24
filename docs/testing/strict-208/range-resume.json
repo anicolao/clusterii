@@ -1,0 +1,13 @@
+{
+  "start": 45203456,
+  "total": 1766133062,
+  "method": "One exact HTTP byte-range resume; abort before writing if response is not206 with matching Content-Range",
+  "httpStatus": "206",
+  "code": null,
+  "signal": "SIGINT",
+  "accepted": true,
+  "written": 802701312,
+  "reason": "header/transfer deadline",
+  "error": "",
+  "finalBytes": 847904768
+}

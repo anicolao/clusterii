@@ -1,0 +1,20 @@
+{
+  "start": 847904768,
+  "total": 1766133062,
+  "method": "One exact HTTP byte-range resume; abort before writing if response is not206 with matching Content-Range",
+  "httpStatus": "206",
+  "contentRange": {
+    "start": 847904768,
+    "end": 1766133061,
+    "total": 1766133062
+  },
+  "code": 0,
+  "signal": null,
+  "accepted": true,
+  "written": 918228294,
+  "reason": "",
+  "error": "",
+  "finalBytes": 1766133062,
+  "sha256": "09d22f0cff2b3b4490c2d2a2ef6e7b02cc6e35968fc050d1121dbabda210bac4",
+  "verified": true
+}

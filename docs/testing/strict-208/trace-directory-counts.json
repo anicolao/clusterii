@@ -1,0 +1,70 @@
+{
+  "scope": "Retained phone failing trace; unique document paths counted internally, identifiers never emitted. Counts are per recorded network body, not proof of all live emulator listeners.",
+  "counts": [
+    {
+      "context": "4-trace.network",
+      "listenResponses": 0,
+      "bodies": 0,
+      "distinctDirectoryDocumentIds": 0,
+      "allResourceOccurrences": 7,
+      "matches": 0,
+      "responseContentFields": []
+    },
+    {
+      "context": "3-trace.network",
+      "listenResponses": 24,
+      "bodies": 19,
+      "distinctDirectoryDocumentIds": 0,
+      "allResourceOccurrences": 7,
+      "matches": 0,
+      "responseContentFields": [
+        "size",
+        "mimeType",
+        "compression",
+        "_sha1"
+      ]
+    },
+    {
+      "context": "2-trace.network",
+      "listenResponses": 20,
+      "bodies": 17,
+      "distinctDirectoryDocumentIds": 0,
+      "allResourceOccurrences": 7,
+      "matches": 0,
+      "responseContentFields": [
+        "size",
+        "mimeType",
+        "compression",
+        "_sha1"
+      ]
+    },
+    {
+      "context": "1-trace.network",
+      "listenResponses": 23,
+      "bodies": 18,
+      "distinctDirectoryDocumentIds": 0,
+      "allResourceOccurrences": 7,
+      "matches": 0,
+      "responseContentFields": [
+        "size",
+        "mimeType",
+        "compression",
+        "_sha1"
+      ]
+    },
+    {
+      "context": "0-trace.network",
+      "listenResponses": 22,
+      "bodies": 17,
+      "distinctDirectoryDocumentIds": 0,
+      "allResourceOccurrences": 7,
+      "matches": 0,
+      "responseContentFields": [
+        "size",
+        "mimeType",
+        "compression",
+        "_sha1"
+      ]
+    }
+  ]
+}

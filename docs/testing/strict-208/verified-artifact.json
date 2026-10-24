@@ -1,0 +1,91 @@
+{
+  "api": {
+    "id": 12561036357,
+    "node_id": "MDg6QXJ0aWZhY3QxMjU2MTAzNjM1Nw==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 1766133062,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12561036357",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12561036357/zip",
+    "expired": false,
+    "digest": "sha256:09d22f0cff2b3b4490c2d2a2ef6e7b02cc6e35968fc050d1121dbabda210bac4",
+    "created_at": "2026-10-24T12:52:48Z",
+    "updated_at": "2026-10-24T12:52:48Z",
+    "expires_at": "2027-01-22T11:46:44Z",
+    "workflow_run": {
+      "id": 40091257252,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/admission-briefing-composition",
+      "head_sha": "d0804122e614b0b8c26351dee4593ec20cb6f731"
+    }
+  },
+  "archive": "/tmp/cluster-strict-208-12561036357/artifact.zip",
+  "selected": [
+    {
+      "path": "ci-evidence/nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "sha256": "aca6dee602a1ac122fa5636b82e90aeabb52a366197a227ecb86bbd2503f05f5"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "sha256": "227729d33a5373c2e44ae6c468129a1fb5e09a968fe45740b0f6e618ee87f528"
+    },
+    {
+      "path": "ci-evidence/settlement-profile/result.json",
+      "bytes": 1394,
+      "sha256": "1bcbf241164173ed2b09826a32f6f1fad4a6f2fb84e3d6324c2fd86f395a5f76"
+    },
+    {
+      "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-desktop/settlement-timing.jsonl",
+      "bytes": 29527,
+      "sha256": "010ee998a398cb21d706976a8a11e79ebe1cb8b0e728fb9b12597e8be2146156"
+    },
+    {
+      "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-large/settlement-timing.jsonl",
+      "bytes": 29476,
+      "sha256": "08d128a5e5b97340710dbb5137fdff73bda0c685eddacd99fc241bc74eaf06ed"
+    },
+    {
+      "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-phone/settlement-timing.jsonl",
+      "bytes": 22535,
+      "sha256": "4102c69b713daf33acf35f7b588e90b4cd51b9591f21f0693ce2d8cc141f9bd9"
+    },
+    {
+      "path": "test-results/stories/e2e-010-zero-science-zero--06679--preserves-private-research-short/settlement-timing.jsonl",
+      "bytes": 30067,
+      "sha256": "0a6ef28a527ebed087651465f6fb7e5722949d2457fcf794308c566f35638d77"
+    },
+    {
+      "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-desktop/settlement-timing.jsonl",
+      "bytes": 27887,
+      "sha256": "0964a458e5484c1cd56676fc886c7d1be86580a54cf8d138d675ae6b5ab91d2e"
+    },
+    {
+      "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-large/settlement-timing.jsonl",
+      "bytes": 28446,
+      "sha256": "9073911d1b7d1d4b282ffb3e1ec308844e7884e2c8ff0e5bba4c731aea89d6f8"
+    },
+    {
+      "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-phone/settlement-timing.jsonl",
+      "bytes": 26810,
+      "sha256": "be3fa1188c7060bb32ff2f75067a1a685b409f8de5d21bb021a7f725a3ba5eae"
+    },
+    {
+      "path": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-short/settlement-timing.jsonl",
+      "bytes": 27892,
+      "sha256": "ef3f9549128f54d9b44f17c3179ee706defeb0671ba418215588cd77aeea85ce"
+    }
+  ],
+  "freeKiB": 33890800
+}
