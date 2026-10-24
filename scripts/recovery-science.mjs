@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 import { createConnection } from 'node:net';
 import { runtimeGuard,pinned,childExit } from './recovery-settlement.mjs';
 export const feature='tests/e2e/003-science/components.spec.ts';
-export const specHash='886cefc982dd9f99f8d05c9cc9dae343b41e11b91a33dd71d481c9958fe78be6';
+export const specHash='f6b9b4bd1ce26b96d76391e079908ecbca56bb445d0f3e363128bc8dd7d58edb';
 export const projects=['phone','desktop','large','short'];
 export function scienceCase(args){
  if(args.length!==1||args[0]!=='science-components-candidates')throw Error('Only complete science component family allowed');

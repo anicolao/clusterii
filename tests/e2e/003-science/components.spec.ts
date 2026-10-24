@@ -10,12 +10,16 @@ async function readDelivered(panel: import("@playwright/test").Locator) {
   const total = panel
     .locator("dl > div")
     .filter({ hasText: "Last delivered science" });
+  const heading = panel.getByRole("heading", {
+    name: "Empire total",
+    exact: true,
+  });
   await reading.focus();
   await reading.press("End");
-  // The delivered row precedes explanatory prose; End need not put it in view
-  // in a short specimen with large type. Use ordinary bounded keyboard reading.
+  // End targets lower prose. Read the complete Empire total instrument,
+  // including its heading, with ordinary bounded keyboard movement.
   for (let i = 0; i < 12; i++) {
-    const fits = await total.evaluate((e) => {
+    const fits = await heading.evaluate((e) => {
       const r = e.getBoundingClientRect(),
         p = e
           .closest('[aria-label="Science source ledger"]')!
@@ -31,6 +35,7 @@ async function readDelivered(panel: import("@playwright/test").Locator) {
         ),
     );
   }
+  await expectReadingTarget(heading, false);
   await expectReadingTarget(total, false);
 }
 
