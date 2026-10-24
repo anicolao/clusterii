@@ -2,7 +2,7 @@ name: Bounded contact candidates
 on:
   push:
     branches: [investigate/jfr-export-load]
-    paths: [.github/recovery/contacts-layout-candidates.json]
+    paths: [.github/recovery/contacts-label-current-candidates.json]
 permissions:
   contents: read
 concurrency:

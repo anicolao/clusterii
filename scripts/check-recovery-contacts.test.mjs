@@ -18,10 +18,10 @@ const parent = "a".repeat(40),
 const fixture = () => ({
   request: {
     version: 1,
-    id: "contacts-layout-20261024-01",
+    id: "contacts-label-current-20261024-01",
     case: "feature012-contacts-candidates",
     mode: "generate",
-    target: "eaa2b57aed00d73290d514bff065a199fb68db06",
+    target: "d0804122e614b0b8c26351dee4593ec20cb6f731",
     sourceCommit: parent,
   },
   env: {
