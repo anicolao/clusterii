@@ -8,3 +8,5 @@ Common helpers expose the existing shared implementation; they do not create a p
 
 - [002 Galaxy command surface and spatial layers](002-galaxy/README.md)
 - [003 Authoritative science rate and sources](003-science/README.md)
+
+- [Fleet contact history and refresh recovery](012-fleet-contacts/README.md): feature-local migration prepared; corrected live execution remains pending.

@@ -72,12 +72,19 @@
     }
   },
   "fleet-contacts.spec.ts": {
-    "sha256": "7f1cde29e0454344bf1f1df44c77816b64f0c3dc7b7846929d6b6ddb92b31398",
+    "sha256": "67b09e34cb7e584112ab18955b2fb862ce005ce6f7f50b0892fe80ee4b5c3eae",
     "status": "Procedural regression; illustrated migration incomplete",
     "navigationCompatibility": {
       "priorSha256": "06dadac6c95a8794f654df9418ecbb218166bcae7425bf5ac789ca424a8a2a59",
       "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
       "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
+    },
+    "illustratedMigration": {
+      "priorSha256": "7f1cde29e0454344bf1f1df44c77816b64f0c3dc7b7846929d6b6ddb92b31398",
+      "authorization": "Prompt 195: diagnosed history-refresh readiness correction with required illustrated migration; existing procedural assertions remain executed, not retired",
+      "replacement": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+      "review": "docs/testing/failed-gates-195/README.md",
+      "acceptance": "Source preparation only; both corrected journeys require bounded execution before any retirement"
     }
   },
   "fleet-reorganization.spec.ts": {

@@ -1,22 +1,22 @@
-import { openForces, openGalaxyCommand } from "./galaxy-navigation";
+import { openForces, openGalaxyCommand } from "../../browser/galaxy-navigation";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
-import type { Campaign, CampaignView } from "../../shared/campaign";
+import type { Campaign, CampaignView } from "../../../shared/campaign";
 import {
   fleetContactView,
   type FleetContact,
-} from "../../shared/fleet-contacts";
-import { detectionProbability, drawRange } from "../../shared/observations";
-import { distance } from "../../shared/galaxy";
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { login, grantDeveloper } from "./helpers";
-import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
-import { installContactEntropy } from "./story-helpers/contact-entropy.mjs";
+} from "../../../shared/fleet-contacts";
+import { detectionProbability, drawRange } from "../../../shared/observations";
+import { distance } from "../../../shared/galaxy";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { login, grantDeveloper } from "../../browser/helpers";
+import { admissionAt, scheduledAt } from "../../browser/story-helpers/admission-clock.mjs";
+import { installContactEntropy } from "../../browser/story-helpers/contact-entropy.mjs";
 import {
   contactInputs,
   contactPrefix,
-} from "./story-helpers/contact-inputs.mjs";
+} from "../../browser/story-helpers/contact-inputs.mjs";
 const button = (p: Page, name: string) =>
   p.getByRole("button", { name, exact: true });
 const fleetPanel = (p: Page) =>
@@ -52,7 +52,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
     fleetId = "";
   const entropy = installContactEntropy();
   const require = createRequire(
-    new URL("../../functions/package.json", import.meta.url),
+    new URL("../../../functions/package.json", import.meta.url),
   );
   const admin = require("firebase-admin/app");
   if (!admin.getApps().length)
@@ -63,7 +63,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
     { observationDraw } = require("./lib/functions/src/observation-random.js"),
     { settleCampaignTicks } = await import(
       new URL(
-        "../../functions/lib/functions/src/production.js?illustrated-fleet-contacts",
+        "../../../functions/lib/functions/src/production.js?illustrated-fleet-contacts",
         import.meta.url,
       ).href
     );
@@ -575,7 +575,18 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       },
       acknowledgement: {
         spec: "The loaded last-seen record retains its actual observed tick, coordinates and complement while current position is unknown.",
-        check: async () => matchContact(observer, retained!, false),
+        check: async () => {
+          // The retained observed tick can already match before the refresh
+          // response arrives. Wait for the actual loaded head, not old facts.
+          await expect(button(observer, "Refresh observations")).toHaveCount(0);
+          await expect(
+            contacts(observer).getByText("Loading authorized contact records…", {
+              exact: true,
+            }),
+          ).toHaveCount(0);
+          await expect(contacts(observer).getByRole("alert")).toHaveCount(0);
+          await matchContact(observer, retained!, false);
+        },
       },
       verifications: [
         {
@@ -608,7 +619,18 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       },
       acknowledgement: {
         spec: "The original last-seen report survives loss of in-memory contact state and the owner recovers the same fleet.",
-        check: async () => matchContact(observer, retained!, false),
+        check: async () => {
+          // The retained observed tick can already match before the refresh
+          // response arrives. Wait for the actual loaded head, not old facts.
+          await expect(button(observer, "Refresh observations")).toHaveCount(0);
+          await expect(
+            contacts(observer).getByText("Loading authorized contact records…", {
+              exact: true,
+            }),
+          ).toHaveCount(0);
+          await expect(contacts(observer).getByRole("alert")).toHaveCount(0);
+          await matchContact(observer, retained!, false);
+        },
       },
       verifications: [
         {
