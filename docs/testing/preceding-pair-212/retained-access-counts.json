@@ -1,0 +1,315 @@
+{
+  "sourceRun": 40091257252,
+  "sourceHead": "d0804122",
+  "scope": "retained phone traces sorted before feature010 real story; successful joined:true key responses only",
+  "traceCount": 60,
+  "distinctJoinedCampaignLowerBound": 31,
+  "unavailableBodies": 0,
+  "traces": [
+    {
+      "trace": "test-results/stories/browser-campaign-start.sto-4e484-their-named-active-campaign-phone/trace.zip",
+      "successfulHttpKeyCalls": 1,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-construction.story-393d9-es-and-cancels-developments-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-credit-exchange.st-34599-covers-an-interrupted-offer-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-credit-exchange.st-645fb-s-and-withdraws-exact-terms-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-feedback-lab.story-2bc57-k-without-changing-outcomes-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-feedback-lab.story-5aa3e-tations-across-motion-modes-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-fleet-cancellation-2be44-leases-private-reservations-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-fleet-cargo.story--5de8e-ivate-forces-through-reload-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-fleet-formation.st-934a6-and-conserve-private-forces-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-fleet-reorganizati-b9873--split-and-conserves-forces-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-fleet-route-recove-fff28-iginal-choices-and-identity-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-fleet-travel-catch-40e20-concurrent-delayed-delivery-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-fleet-travel.story-00048-ate-forces-through-recovery-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-history-lab.story--37963-ut-changing-motion-outcomes-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-identity.story-Save-and-recover-a-commander-identity-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-lifecycle-lab.stor-1560e-ssigned-start-presentations-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-lifecycle-lab.stor-d7055-d-inspects-completed-motion-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-live-menu-preserva-c310e-ion-across-a-confirmed-tick-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-local-settings.sto-664a9--accessible-modal-ownership-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-maintenance.story--c82f7-resumes-a-waiting-commander-phone/trace.zip",
+      "successfulHttpKeyCalls": 3,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-market-account-iso-d3b49-ccounts-on-the-same-browser-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-market-draft-lifec-ec212--real-account-wide-sign-out-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-market-membership--341ab-ew-and-clears-market-intent-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-observations.story-c6ea5-storical-facts-after-reload-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-production-lab.sto-d45bc-d-preserves-ledger-outcomes-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-profile-recovery.s-170b6-arning-and-identity-editing-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-receipt-recovery.s-04db5-galaxy-for-a-fresh-creation-phone/trace.zip",
+      "successfulHttpKeyCalls": 1,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-research-forecast.-48711-ffects-and-rate-assumptions-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-research-guidance.-a986a--without-submitting-choices-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-research-lab.story-8bb95--scheduling-and-application-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-research-orders.st-a6013-es-and-acknowledge-switches-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/trace.zip",
+      "successfulHttpKeyCalls": 16,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-selected-history.s-81d06-mmander-and-survives-reload-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/browser-selection-ownershi-7d70d-er-genuine-delayed-recovery-phone/trace.zip",
+      "successfulHttpKeyCalls": 3,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-session-recovery.s-2de1f-thout-losing-saved-identity-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-session-recovery.s-9c006-thout-losing-saved-identity-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/browser-sharing-lab.story--3f7ba-closure-across-motion-modes-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-001-entry-entry-Learn-the-campaign-and-return-to-entry-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-001-entry-returning-Re-50c8c-gn-from-the-cinematic-entry-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-phone/trace.zip",
+      "successfulHttpKeyCalls": 2,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-004-waiting-waiting-Re-03c9e-and-enter-the-assigned-home-phone/trace.zip",
+      "successfulHttpKeyCalls": 3,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-005-campaign-access-en-9a6ca-without-silent-substitution-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-005-campaign-access-fa-98480--in-both-motion-preferences-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-phone/trace.zip",
+      "successfulHttpKeyCalls": 4,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-phone/trace.zip",
+      "successfulHttpKeyCalls": 2,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-005-campaign-access-na-05c30-waiting-campaign-and-leaves-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-005-campaign-access-na-0655f-ntity-readiness-before-Play-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-005-campaign-access-na-c0ddd-nspects-a-clipped-map-label-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-006-campaign-history-h-e3a4b-s-without-losing-your-place-phone/trace.zip",
+      "successfulHttpKeyCalls": 13,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-007-galaxy-composition-6948c-nder-and-system-instruments-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-007-galaxy-composition-ec1d7--their-real-keyboard-states-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-008-field-guide-market-7590a-rn-without-leaving-the-game-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-008-field-guide-routes-352e4-rn-without-leaving-the-game-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-009-route-forces-compo-06afc-gallery-and-interactive-lab-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    },
+    {
+      "trace": "test-results/stories/e2e-009-route-forces-force-45e7d-edged-dispatch-and-recovery-phone/trace.zip",
+      "successfulHttpKeyCalls": 12,
+      "distinctJoinedCampaigns": 1
+    },
+    {
+      "trace": "test-results/stories/e2e-010-zero-science-contr-5ade1-otion-independent-selection-phone/trace.zip",
+      "successfulHttpKeyCalls": 0,
+      "distinctJoinedCampaigns": 0
+    }
+  ],
+  "limits": [
+    "Observed authorized access is not a full directory count, active listener count or exact database cardinality at the failing boundary.",
+    "No IDs, keys, response bodies or document values are exported.",
+    "No emulator or story was executed."
+  ]
+}

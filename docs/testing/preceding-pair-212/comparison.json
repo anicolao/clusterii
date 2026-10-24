@@ -1,0 +1,759 @@
+{
+  "isolatedSource": "851fcb694438d1f9518f474fc1f0e7ad856d7d8a",
+  "pairedSource": "8fbccbbec95e348089fabe424ada89e65a7f4797",
+  "storyExits": [
+    1,
+    1
+  ],
+  "isolatedTicksMs": 8480.216685,
+  "pairedTicksMs": 9053.76303,
+  "firstSuccessorNotificationAfterPredecessorExitMs": 10033,
+  "isolatedPopulation": {
+    "count": 106,
+    "commitMs": {
+      "count": 106,
+      "min": 0.523263,
+      "median": 32.039389,
+      "p95": 61.070362,
+      "max": 87.021976
+    },
+    "notifyMs": {
+      "count": 106,
+      "min": 0.070019,
+      "median": 30.057666,
+      "p95": 55.956041,
+      "max": 80.046513
+    },
+    "queryCalls": {
+      "count": 106,
+      "min": 0,
+      "median": 14,
+      "p95": 14,
+      "max": 14
+    },
+    "queryMs": {
+      "count": 106,
+      "min": 0,
+      "median": 21.750492,
+      "p95": 41.21218600000001,
+      "max": 50.29519100000001
+    },
+    "rulesMs": {
+      "count": 106,
+      "min": 0,
+      "median": 21.775769,
+      "p95": 41.641018,
+      "max": 59.274761999999996
+    }
+  },
+  "phases": [
+    {
+      "name": "route-forces",
+      "spec": "tests/e2e/009-route-forces/forces.spec.ts",
+      "startedAt": 1792872996276,
+      "finishedAt": 1792873026484,
+      "exit": 1,
+      "commitCount": 21,
+      "firstNotification": {
+        "sequence": 1,
+        "startEpochMs": 1792873007596,
+        "commitMs": 55.383881,
+        "notifyCalls": 1,
+        "notifyMs": 2.216333,
+        "queryCalls": 0,
+        "queryMs": 0,
+        "rulesCalls": 0,
+        "rulesMs": 0,
+        "queryTargets": 0,
+        "streams": 1
+      },
+      "lastNotification": {
+        "sequence": 21,
+        "startEpochMs": 1792873024985,
+        "commitMs": 79.823665,
+        "notifyCalls": 1,
+        "notifyMs": 74.162551,
+        "queryCalls": 14,
+        "queryMs": 41.453415,
+        "rulesCalls": 19,
+        "rulesMs": 55.94448399999999,
+        "queryTargets": 14,
+        "streams": 14
+      },
+      "populations": {
+        "0/1": {
+          "commitMs": {
+            "count": 2,
+            "min": 46.535372,
+            "median": 55.383881,
+            "p95": 55.383881,
+            "max": 55.383881
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 2.216333,
+            "median": 29.393196,
+            "p95": 29.393196,
+            "max": 29.393196
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 20.338876,
+            "p95": 20.338876,
+            "max": 20.338876
+          }
+        },
+        "0/3": {
+          "commitMs": {
+            "count": 2,
+            "min": 1.374237,
+            "median": 25.412339,
+            "p95": 25.412339,
+            "max": 25.412339
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 0.131424,
+            "median": 19.216534,
+            "p95": 19.216534,
+            "max": 19.216534
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 16.898303,
+            "p95": 16.898303,
+            "max": 16.898303
+          }
+        },
+        "2/5": {
+          "commitMs": {
+            "count": 2,
+            "min": 3.618888,
+            "median": 18.995533,
+            "p95": 18.995533,
+            "max": 18.995533
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 0.15795,
+            "median": 15.832598,
+            "p95": 15.832598,
+            "max": 15.832598
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 12.926255999999999,
+            "p95": 12.926255999999999,
+            "max": 12.926255999999999
+          }
+        },
+        "6/7": {
+          "commitMs": {
+            "count": 2,
+            "min": 1.271676,
+            "median": 16.25017,
+            "p95": 16.25017,
+            "max": 16.25017
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 0.120464,
+            "median": 12.559936,
+            "p95": 12.559936,
+            "max": 12.559936
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 10.030055,
+            "p95": 10.030055,
+            "max": 10.030055
+          }
+        },
+        "8/8": {
+          "commitMs": {
+            "count": 2,
+            "min": 40.519649,
+            "median": 43.032075,
+            "p95": 43.032075,
+            "max": 43.032075
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 34.614449,
+            "median": 37.919846,
+            "p95": 37.919846,
+            "max": 37.919846
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 4,
+            "median": 5,
+            "p95": 5,
+            "max": 5
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 20.91575,
+            "median": 24.666524,
+            "p95": 24.666524,
+            "max": 24.666524
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 20.889263,
+            "median": 26.54395,
+            "p95": 26.54395,
+            "max": 26.54395
+          }
+        },
+        "10/10": {
+          "commitMs": {
+            "count": 1,
+            "min": 63.786723,
+            "median": 63.786723,
+            "p95": 63.786723,
+            "max": 63.786723
+          },
+          "notifyMs": {
+            "count": 1,
+            "min": 56.23156,
+            "median": 56.23156,
+            "p95": 56.23156,
+            "max": 56.23156
+          },
+          "queryCalls": {
+            "count": 1,
+            "min": 8,
+            "median": 8,
+            "p95": 8,
+            "max": 8
+          },
+          "queryMs": {
+            "count": 1,
+            "min": 35.385046,
+            "median": 35.385046,
+            "p95": 35.385046,
+            "max": 35.385046
+          },
+          "rulesMs": {
+            "count": 1,
+            "min": 40.333341,
+            "median": 40.333341,
+            "p95": 40.333341,
+            "max": 40.333341
+          }
+        },
+        "12/12": {
+          "commitMs": {
+            "count": 1,
+            "min": 80.36636,
+            "median": 80.36636,
+            "p95": 80.36636,
+            "max": 80.36636
+          },
+          "notifyMs": {
+            "count": 1,
+            "min": 71.309448,
+            "median": 71.309448,
+            "p95": 71.309448,
+            "max": 71.309448
+          },
+          "queryCalls": {
+            "count": 1,
+            "min": 11,
+            "median": 11,
+            "p95": 11,
+            "max": 11
+          },
+          "queryMs": {
+            "count": 1,
+            "min": 43.728173000000005,
+            "median": 43.728173000000005,
+            "p95": 43.728173000000005,
+            "max": 43.728173000000005
+          },
+          "rulesMs": {
+            "count": 1,
+            "min": 53.334064,
+            "median": 53.334064,
+            "p95": 53.334064,
+            "max": 53.334064
+          }
+        },
+        "14/14": {
+          "commitMs": {
+            "count": 3,
+            "min": 74.713458,
+            "median": 78.443175,
+            "p95": 79.823665,
+            "max": 79.823665
+          },
+          "notifyMs": {
+            "count": 3,
+            "min": 69.332606,
+            "median": 72.229043,
+            "p95": 74.162551,
+            "max": 74.162551
+          },
+          "queryCalls": {
+            "count": 3,
+            "min": 14,
+            "median": 14,
+            "p95": 14,
+            "max": 14
+          },
+          "queryMs": {
+            "count": 3,
+            "min": 41.453415,
+            "median": 41.787944,
+            "p95": 44.582046999999996,
+            "max": 44.582046999999996
+          },
+          "rulesMs": {
+            "count": 3,
+            "min": 50.172928000000006,
+            "median": 54.875944999999994,
+            "p95": 55.94448399999999,
+            "max": 55.94448399999999
+          }
+        }
+      }
+    },
+    {
+      "name": "feature010",
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "startedAt": 1792873026485,
+      "finishedAt": 1792873061531,
+      "exit": 1,
+      "commitCount": 127,
+      "firstNotification": {
+        "sequence": 22,
+        "startEpochMs": 1792873036517,
+        "commitMs": 0.921987,
+        "notifyCalls": 1,
+        "notifyMs": 0.132119,
+        "queryCalls": 0,
+        "queryMs": 0,
+        "rulesCalls": 0,
+        "rulesMs": 0,
+        "queryTargets": 14,
+        "streams": 15
+      },
+      "lastNotification": {
+        "sequence": 148,
+        "startEpochMs": 1792873060187,
+        "commitMs": 44.732153,
+        "notifyCalls": 1,
+        "notifyMs": 42.825055,
+        "queryCalls": 25,
+        "queryMs": 29.402588,
+        "rulesCalls": 30,
+        "rulesMs": 32.358367,
+        "queryTargets": 32,
+        "streams": 34
+      },
+      "populations": {
+        "14/15": {
+          "commitMs": {
+            "count": 2,
+            "min": 0.921987,
+            "median": 8.086169,
+            "p95": 8.086169,
+            "max": 8.086169
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 0.132119,
+            "median": 6.397137,
+            "p95": 6.397137,
+            "max": 6.397137
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 5.311192,
+            "p95": 5.311192,
+            "max": 5.311192
+          }
+        },
+        "16/17": {
+          "commitMs": {
+            "count": 2,
+            "min": 1.92836,
+            "median": 8.839087,
+            "p95": 8.839087,
+            "max": 8.839087
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 0.098625,
+            "median": 7.183965,
+            "p95": 7.183965,
+            "max": 7.183965
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 6.243994,
+            "p95": 6.243994,
+            "max": 6.243994
+          }
+        },
+        "18/19": {
+          "commitMs": {
+            "count": 2,
+            "min": 2.274802,
+            "median": 8.384325,
+            "p95": 8.384325,
+            "max": 8.384325
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 0.103505,
+            "median": 6.262314,
+            "p95": 6.262314,
+            "max": 6.262314
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 5.317007,
+            "p95": 5.317007,
+            "max": 5.317007
+          }
+        },
+        "20/21": {
+          "commitMs": {
+            "count": 2,
+            "min": 1.082001,
+            "median": 10.113811,
+            "p95": 10.113811,
+            "max": 10.113811
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 0.146758,
+            "median": 8.169659,
+            "p95": 8.169659,
+            "max": 8.169659
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 0,
+            "median": 7.07446,
+            "p95": 7.07446,
+            "max": 7.07446
+          }
+        },
+        "22/22": {
+          "commitMs": {
+            "count": 2,
+            "min": 45.481749,
+            "median": 47.075139,
+            "p95": 47.075139,
+            "max": 47.075139
+          },
+          "notifyMs": {
+            "count": 2,
+            "min": 42.444054,
+            "median": 44.770692,
+            "p95": 44.770692,
+            "max": 44.770692
+          },
+          "queryCalls": {
+            "count": 2,
+            "min": 11,
+            "median": 12,
+            "p95": 12,
+            "max": 12
+          },
+          "queryMs": {
+            "count": 2,
+            "min": 29.502038,
+            "median": 31.212277999999998,
+            "p95": 31.212277999999998,
+            "max": 31.212277999999998
+          },
+          "rulesMs": {
+            "count": 2,
+            "min": 26.324783999999998,
+            "median": 28.354324000000002,
+            "p95": 28.354324000000002,
+            "max": 28.354324000000002
+          }
+        },
+        "24/24": {
+          "commitMs": {
+            "count": 1,
+            "min": 55.021245,
+            "median": 55.021245,
+            "p95": 55.021245,
+            "max": 55.021245
+          },
+          "notifyMs": {
+            "count": 1,
+            "min": 48.351526,
+            "median": 48.351526,
+            "p95": 48.351526,
+            "max": 48.351526
+          },
+          "queryCalls": {
+            "count": 1,
+            "min": 15,
+            "median": 15,
+            "p95": 15,
+            "max": 15
+          },
+          "queryMs": {
+            "count": 1,
+            "min": 34.396721,
+            "median": 34.396721,
+            "p95": 34.396721,
+            "max": 34.396721
+          },
+          "rulesMs": {
+            "count": 1,
+            "min": 33.913315,
+            "median": 33.913315,
+            "p95": 33.913315,
+            "max": 33.913315
+          }
+        },
+        "26/26": {
+          "commitMs": {
+            "count": 1,
+            "min": 66.368046,
+            "median": 66.368046,
+            "p95": 66.368046,
+            "max": 66.368046
+          },
+          "notifyMs": {
+            "count": 1,
+            "min": 62.221824,
+            "median": 62.221824,
+            "p95": 62.221824,
+            "max": 62.221824
+          },
+          "queryCalls": {
+            "count": 1,
+            "min": 18,
+            "median": 18,
+            "p95": 18,
+            "max": 18
+          },
+          "queryMs": {
+            "count": 1,
+            "min": 41.849222,
+            "median": 41.849222,
+            "p95": 41.849222,
+            "max": 41.849222
+          },
+          "rulesMs": {
+            "count": 1,
+            "min": 43.29073900000001,
+            "median": 43.29073900000001,
+            "p95": 43.29073900000001,
+            "max": 43.29073900000001
+          }
+        },
+        "28/28": {
+          "commitMs": {
+            "count": 106,
+            "min": 0.492231,
+            "median": 39.278819,
+            "p95": 58.891565,
+            "max": 79.693068
+          },
+          "notifyMs": {
+            "count": 106,
+            "min": 0.071588,
+            "median": 37.488186,
+            "p95": 56.290283,
+            "max": 75.287167
+          },
+          "queryCalls": {
+            "count": 106,
+            "min": 0,
+            "median": 21,
+            "p95": 21,
+            "max": 21
+          },
+          "queryMs": {
+            "count": 106,
+            "min": 0,
+            "median": 27.633550999999997,
+            "p95": 43.258351,
+            "max": 52.52127300000001
+          },
+          "rulesMs": {
+            "count": 106,
+            "min": 0,
+            "median": 26.97092600000001,
+            "p95": 41.04589400000001,
+            "max": 55.928297
+          }
+        },
+        "32/34": {
+          "commitMs": {
+            "count": 1,
+            "min": 44.732153,
+            "median": 44.732153,
+            "p95": 44.732153,
+            "max": 44.732153
+          },
+          "notifyMs": {
+            "count": 1,
+            "min": 42.825055,
+            "median": 42.825055,
+            "p95": 42.825055,
+            "max": 42.825055
+          },
+          "queryCalls": {
+            "count": 1,
+            "min": 25,
+            "median": 25,
+            "p95": 25,
+            "max": 25
+          },
+          "queryMs": {
+            "count": 1,
+            "min": 29.402588,
+            "median": 29.402588,
+            "p95": 29.402588,
+            "max": 29.402588
+          },
+          "rulesMs": {
+            "count": 1,
+            "min": 32.358367,
+            "median": 32.358367,
+            "p95": 32.358367,
+            "max": 32.358367
+          }
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Counts are actual registrations, not proof that every stream is a live client.",
+    "Retention is observed over this pair, not proven permanent.",
+    "Nested rules/query spans overlap; do not add as separate wall time.",
+    "No exact query expression or client command identity exported.",
+    "A fast pair is not a historical timeout fix; no extrapolated full-cohort count is treated as measured."
+  ]
+}

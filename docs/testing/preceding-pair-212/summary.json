@@ -1,0 +1,2701 @@
+{
+  "source": "8fbccbbec95e348089fabe424ada89e65a7f4797",
+  "rowCount": 6122,
+  "totals": {
+    "commit": {
+      "elapsedMs": {
+        "count": 148,
+        "min": 0.048565,
+        "median": 37.751096,
+        "p95": 69.705572,
+        "max": 80.36636
+      },
+      "outsideCommit": 0,
+      "failures": 0
+    },
+    "notify": {
+      "elapsedMs": {
+        "count": 134,
+        "min": 0.071588,
+        "median": 36.309705,
+        "p95": 66.509057,
+        "max": 75.287167
+      },
+      "outsideCommit": 0,
+      "failures": 0
+    },
+    "query": {
+      "elapsedMs": {
+        "count": 2335,
+        "min": 0.995398,
+        "median": 1.358085,
+        "p95": 2.774472,
+        "max": 44.054784
+      },
+      "outsideCommit": 42,
+      "failures": 0
+    },
+    "rules": {
+      "elapsedMs": {
+        "count": 3499,
+        "min": 0.00084,
+        "median": 1.06629,
+        "p95": 2.809901,
+        "max": 147.679677
+      },
+      "outsideCommit": 950,
+      "failures": 2
+    }
+  },
+  "populations": {
+    "0 query targets / 1 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 46.535372,
+        "median": 55.383881,
+        "p95": 55.383881,
+        "max": 55.383881
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 2.216333,
+        "median": 29.393196,
+        "p95": 29.393196,
+        "max": 29.393196
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 20.338876,
+        "p95": 20.338876,
+        "max": 20.338876
+      }
+    },
+    "0 query targets / 3 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 1.374237,
+        "median": 25.412339,
+        "p95": 25.412339,
+        "max": 25.412339
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 0.131424,
+        "median": 19.216534,
+        "p95": 19.216534,
+        "max": 19.216534
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 16.898303,
+        "p95": 16.898303,
+        "max": 16.898303
+      }
+    },
+    "2 query targets / 5 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 3.618888,
+        "median": 18.995533,
+        "p95": 18.995533,
+        "max": 18.995533
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 0.15795,
+        "median": 15.832598,
+        "p95": 15.832598,
+        "max": 15.832598
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 12.926255999999999,
+        "p95": 12.926255999999999,
+        "max": 12.926255999999999
+      }
+    },
+    "6 query targets / 7 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 1.271676,
+        "median": 16.25017,
+        "p95": 16.25017,
+        "max": 16.25017
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 0.120464,
+        "median": 12.559936,
+        "p95": 12.559936,
+        "max": 12.559936
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 10.030055,
+        "p95": 10.030055,
+        "max": 10.030055
+      }
+    },
+    "8 query targets / 8 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 40.519649,
+        "median": 43.032075,
+        "p95": 43.032075,
+        "max": 43.032075
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 34.614449,
+        "median": 37.919846,
+        "p95": 37.919846,
+        "max": 37.919846
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 4,
+        "median": 5,
+        "p95": 5,
+        "max": 5
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 20.91575,
+        "median": 24.666524,
+        "p95": 24.666524,
+        "max": 24.666524
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 20.889263,
+        "median": 26.54395,
+        "p95": 26.54395,
+        "max": 26.54395
+      }
+    },
+    "10 query targets / 10 streams": {
+      "count": 1,
+      "commitMs": {
+        "count": 1,
+        "min": 63.786723,
+        "median": 63.786723,
+        "p95": 63.786723,
+        "max": 63.786723
+      },
+      "notifyMs": {
+        "count": 1,
+        "min": 56.23156,
+        "median": 56.23156,
+        "p95": 56.23156,
+        "max": 56.23156
+      },
+      "queryCalls": {
+        "count": 1,
+        "min": 8,
+        "median": 8,
+        "p95": 8,
+        "max": 8
+      },
+      "queryMs": {
+        "count": 1,
+        "min": 35.385046,
+        "median": 35.385046,
+        "p95": 35.385046,
+        "max": 35.385046
+      },
+      "rulesMs": {
+        "count": 1,
+        "min": 40.333341,
+        "median": 40.333341,
+        "p95": 40.333341,
+        "max": 40.333341
+      }
+    },
+    "12 query targets / 12 streams": {
+      "count": 1,
+      "commitMs": {
+        "count": 1,
+        "min": 80.36636,
+        "median": 80.36636,
+        "p95": 80.36636,
+        "max": 80.36636
+      },
+      "notifyMs": {
+        "count": 1,
+        "min": 71.309448,
+        "median": 71.309448,
+        "p95": 71.309448,
+        "max": 71.309448
+      },
+      "queryCalls": {
+        "count": 1,
+        "min": 11,
+        "median": 11,
+        "p95": 11,
+        "max": 11
+      },
+      "queryMs": {
+        "count": 1,
+        "min": 43.728173000000005,
+        "median": 43.728173000000005,
+        "p95": 43.728173000000005,
+        "max": 43.728173000000005
+      },
+      "rulesMs": {
+        "count": 1,
+        "min": 53.334064,
+        "median": 53.334064,
+        "p95": 53.334064,
+        "max": 53.334064
+      }
+    },
+    "14 query targets / 14 streams": {
+      "count": 3,
+      "commitMs": {
+        "count": 3,
+        "min": 74.713458,
+        "median": 78.443175,
+        "p95": 79.823665,
+        "max": 79.823665
+      },
+      "notifyMs": {
+        "count": 3,
+        "min": 69.332606,
+        "median": 72.229043,
+        "p95": 74.162551,
+        "max": 74.162551
+      },
+      "queryCalls": {
+        "count": 3,
+        "min": 14,
+        "median": 14,
+        "p95": 14,
+        "max": 14
+      },
+      "queryMs": {
+        "count": 3,
+        "min": 41.453415,
+        "median": 41.787944,
+        "p95": 44.582046999999996,
+        "max": 44.582046999999996
+      },
+      "rulesMs": {
+        "count": 3,
+        "min": 50.172928000000006,
+        "median": 54.875944999999994,
+        "p95": 55.94448399999999,
+        "max": 55.94448399999999
+      }
+    },
+    "14 query targets / 15 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 0.921987,
+        "median": 8.086169,
+        "p95": 8.086169,
+        "max": 8.086169
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 0.132119,
+        "median": 6.397137,
+        "p95": 6.397137,
+        "max": 6.397137
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 5.311192,
+        "p95": 5.311192,
+        "max": 5.311192
+      }
+    },
+    "16 query targets / 17 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 1.92836,
+        "median": 8.839087,
+        "p95": 8.839087,
+        "max": 8.839087
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 0.098625,
+        "median": 7.183965,
+        "p95": 7.183965,
+        "max": 7.183965
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 6.243994,
+        "p95": 6.243994,
+        "max": 6.243994
+      }
+    },
+    "18 query targets / 19 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 2.274802,
+        "median": 8.384325,
+        "p95": 8.384325,
+        "max": 8.384325
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 0.103505,
+        "median": 6.262314,
+        "p95": 6.262314,
+        "max": 6.262314
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 5.317007,
+        "p95": 5.317007,
+        "max": 5.317007
+      }
+    },
+    "20 query targets / 21 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 1.082001,
+        "median": 10.113811,
+        "p95": 10.113811,
+        "max": 10.113811
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 0.146758,
+        "median": 8.169659,
+        "p95": 8.169659,
+        "max": 8.169659
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 0,
+        "median": 7.07446,
+        "p95": 7.07446,
+        "max": 7.07446
+      }
+    },
+    "22 query targets / 22 streams": {
+      "count": 2,
+      "commitMs": {
+        "count": 2,
+        "min": 45.481749,
+        "median": 47.075139,
+        "p95": 47.075139,
+        "max": 47.075139
+      },
+      "notifyMs": {
+        "count": 2,
+        "min": 42.444054,
+        "median": 44.770692,
+        "p95": 44.770692,
+        "max": 44.770692
+      },
+      "queryCalls": {
+        "count": 2,
+        "min": 11,
+        "median": 12,
+        "p95": 12,
+        "max": 12
+      },
+      "queryMs": {
+        "count": 2,
+        "min": 29.502038,
+        "median": 31.212277999999998,
+        "p95": 31.212277999999998,
+        "max": 31.212277999999998
+      },
+      "rulesMs": {
+        "count": 2,
+        "min": 26.324783999999998,
+        "median": 28.354324000000002,
+        "p95": 28.354324000000002,
+        "max": 28.354324000000002
+      }
+    },
+    "24 query targets / 24 streams": {
+      "count": 1,
+      "commitMs": {
+        "count": 1,
+        "min": 55.021245,
+        "median": 55.021245,
+        "p95": 55.021245,
+        "max": 55.021245
+      },
+      "notifyMs": {
+        "count": 1,
+        "min": 48.351526,
+        "median": 48.351526,
+        "p95": 48.351526,
+        "max": 48.351526
+      },
+      "queryCalls": {
+        "count": 1,
+        "min": 15,
+        "median": 15,
+        "p95": 15,
+        "max": 15
+      },
+      "queryMs": {
+        "count": 1,
+        "min": 34.396721,
+        "median": 34.396721,
+        "p95": 34.396721,
+        "max": 34.396721
+      },
+      "rulesMs": {
+        "count": 1,
+        "min": 33.913315,
+        "median": 33.913315,
+        "p95": 33.913315,
+        "max": 33.913315
+      }
+    },
+    "26 query targets / 26 streams": {
+      "count": 1,
+      "commitMs": {
+        "count": 1,
+        "min": 66.368046,
+        "median": 66.368046,
+        "p95": 66.368046,
+        "max": 66.368046
+      },
+      "notifyMs": {
+        "count": 1,
+        "min": 62.221824,
+        "median": 62.221824,
+        "p95": 62.221824,
+        "max": 62.221824
+      },
+      "queryCalls": {
+        "count": 1,
+        "min": 18,
+        "median": 18,
+        "p95": 18,
+        "max": 18
+      },
+      "queryMs": {
+        "count": 1,
+        "min": 41.849222,
+        "median": 41.849222,
+        "p95": 41.849222,
+        "max": 41.849222
+      },
+      "rulesMs": {
+        "count": 1,
+        "min": 43.29073900000001,
+        "median": 43.29073900000001,
+        "p95": 43.29073900000001,
+        "max": 43.29073900000001
+      }
+    },
+    "28 query targets / 28 streams": {
+      "count": 106,
+      "commitMs": {
+        "count": 106,
+        "min": 0.492231,
+        "median": 39.278819,
+        "p95": 58.891565,
+        "max": 79.693068
+      },
+      "notifyMs": {
+        "count": 106,
+        "min": 0.071588,
+        "median": 37.488186,
+        "p95": 56.290283,
+        "max": 75.287167
+      },
+      "queryCalls": {
+        "count": 106,
+        "min": 0,
+        "median": 21,
+        "p95": 21,
+        "max": 21
+      },
+      "queryMs": {
+        "count": 106,
+        "min": 0,
+        "median": 27.633550999999997,
+        "p95": 43.258351,
+        "max": 52.52127300000001
+      },
+      "rulesMs": {
+        "count": 106,
+        "min": 0,
+        "median": 26.97092600000001,
+        "p95": 41.04589400000001,
+        "max": 55.928297
+      }
+    },
+    "32 query targets / 34 streams": {
+      "count": 1,
+      "commitMs": {
+        "count": 1,
+        "min": 44.732153,
+        "median": 44.732153,
+        "p95": 44.732153,
+        "max": 44.732153
+      },
+      "notifyMs": {
+        "count": 1,
+        "min": 42.825055,
+        "median": 42.825055,
+        "p95": 42.825055,
+        "max": 42.825055
+      },
+      "queryCalls": {
+        "count": 1,
+        "min": 25,
+        "median": 25,
+        "p95": 25,
+        "max": 25
+      },
+      "queryMs": {
+        "count": 1,
+        "min": 29.402588,
+        "median": 29.402588,
+        "p95": 29.402588,
+        "max": 29.402588
+      },
+      "rulesMs": {
+        "count": 1,
+        "min": 32.358367,
+        "median": 32.358367,
+        "p95": 32.358367,
+        "max": 32.358367
+      }
+    }
+  },
+  "perCommit": [
+    {
+      "sequence": 1,
+      "startEpochMs": 1792873007596,
+      "commitMs": 55.383881,
+      "notifyCalls": 1,
+      "notifyMs": 2.216333,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 0,
+      "streams": 1
+    },
+    {
+      "sequence": 2,
+      "startEpochMs": 1792873009613,
+      "commitMs": 46.535372,
+      "notifyCalls": 1,
+      "notifyMs": 29.393196,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 20.338876,
+      "queryTargets": 0,
+      "streams": 1
+    },
+    {
+      "sequence": 3,
+      "startEpochMs": 1792873010802,
+      "commitMs": 1.374237,
+      "notifyCalls": 1,
+      "notifyMs": 0.131424,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 0,
+      "streams": 3
+    },
+    {
+      "sequence": 4,
+      "startEpochMs": 1792873011075,
+      "commitMs": 25.412339,
+      "notifyCalls": 1,
+      "notifyMs": 19.216534,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 16.898303,
+      "queryTargets": 0,
+      "streams": 3
+    },
+    {
+      "sequence": 5,
+      "startEpochMs": 1792873012155,
+      "commitMs": 3.618888,
+      "notifyCalls": 1,
+      "notifyMs": 0.15795,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 2,
+      "streams": 5
+    },
+    {
+      "sequence": 6,
+      "startEpochMs": 1792873012402,
+      "commitMs": 18.995533,
+      "notifyCalls": 1,
+      "notifyMs": 15.832598,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 12.926255999999999,
+      "queryTargets": 2,
+      "streams": 5
+    },
+    {
+      "sequence": 7,
+      "startEpochMs": 1792873013384,
+      "commitMs": 1.271676,
+      "notifyCalls": 1,
+      "notifyMs": 0.120464,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 6,
+      "streams": 7
+    },
+    {
+      "sequence": 8,
+      "startEpochMs": 1792873013616,
+      "commitMs": 16.25017,
+      "notifyCalls": 1,
+      "notifyMs": 12.559936,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 10.030055,
+      "queryTargets": 6,
+      "streams": 7
+    },
+    {
+      "sequence": 9,
+      "startEpochMs": 1792873013970,
+      "commitMs": 0.132903,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 10,
+      "startEpochMs": 1792873015247,
+      "commitMs": 40.519649,
+      "notifyCalls": 1,
+      "notifyMs": 34.614449,
+      "queryCalls": 4,
+      "queryMs": 20.91575,
+      "rulesCalls": 5,
+      "rulesMs": 20.889263,
+      "queryTargets": 8,
+      "streams": 8
+    },
+    {
+      "sequence": 11,
+      "startEpochMs": 1792873016843,
+      "commitMs": 0.082803,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 12,
+      "startEpochMs": 1792873016903,
+      "commitMs": 43.032075,
+      "notifyCalls": 1,
+      "notifyMs": 37.919846,
+      "queryCalls": 5,
+      "queryMs": 24.666524,
+      "rulesCalls": 6,
+      "rulesMs": 26.54395,
+      "queryTargets": 8,
+      "streams": 8
+    },
+    {
+      "sequence": 13,
+      "startEpochMs": 1792873017444,
+      "commitMs": 0.127192,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 14,
+      "startEpochMs": 1792873017529,
+      "commitMs": 63.786723,
+      "notifyCalls": 1,
+      "notifyMs": 56.23156,
+      "queryCalls": 8,
+      "queryMs": 35.385046,
+      "rulesCalls": 10,
+      "rulesMs": 40.333341,
+      "queryTargets": 10,
+      "streams": 10
+    },
+    {
+      "sequence": 15,
+      "startEpochMs": 1792873018107,
+      "commitMs": 0.092234,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 16,
+      "startEpochMs": 1792873018196,
+      "commitMs": 80.36636,
+      "notifyCalls": 1,
+      "notifyMs": 71.309448,
+      "queryCalls": 11,
+      "queryMs": 43.728173000000005,
+      "rulesCalls": 14,
+      "rulesMs": 53.334064,
+      "queryTargets": 12,
+      "streams": 12
+    },
+    {
+      "sequence": 17,
+      "startEpochMs": 1792873018778,
+      "commitMs": 0.09429,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 18,
+      "startEpochMs": 1792873018858,
+      "commitMs": 78.443175,
+      "notifyCalls": 1,
+      "notifyMs": 72.229043,
+      "queryCalls": 14,
+      "queryMs": 44.582046999999996,
+      "rulesCalls": 18,
+      "rulesMs": 54.875944999999994,
+      "queryTargets": 14,
+      "streams": 14
+    },
+    {
+      "sequence": 19,
+      "startEpochMs": 1792873020272,
+      "commitMs": 74.713458,
+      "notifyCalls": 1,
+      "notifyMs": 69.332606,
+      "queryCalls": 14,
+      "queryMs": 41.787944,
+      "rulesCalls": 18,
+      "rulesMs": 50.172928000000006,
+      "queryTargets": 14,
+      "streams": 14
+    },
+    {
+      "sequence": 20,
+      "startEpochMs": 1792873024890,
+      "commitMs": 0.090978,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 21,
+      "startEpochMs": 1792873024985,
+      "commitMs": 79.823665,
+      "notifyCalls": 1,
+      "notifyMs": 74.162551,
+      "queryCalls": 14,
+      "queryMs": 41.453415,
+      "rulesCalls": 19,
+      "rulesMs": 55.94448399999999,
+      "queryTargets": 14,
+      "streams": 14
+    },
+    {
+      "sequence": 22,
+      "startEpochMs": 1792873036517,
+      "commitMs": 0.921987,
+      "notifyCalls": 1,
+      "notifyMs": 0.132119,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 14,
+      "streams": 15
+    },
+    {
+      "sequence": 23,
+      "startEpochMs": 1792873036689,
+      "commitMs": 8.086169,
+      "notifyCalls": 1,
+      "notifyMs": 6.397137,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 5.311192,
+      "queryTargets": 14,
+      "streams": 15
+    },
+    {
+      "sequence": 24,
+      "startEpochMs": 1792873037689,
+      "commitMs": 1.92836,
+      "notifyCalls": 1,
+      "notifyMs": 0.098625,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 16,
+      "streams": 17
+    },
+    {
+      "sequence": 25,
+      "startEpochMs": 1792873037946,
+      "commitMs": 8.839087,
+      "notifyCalls": 1,
+      "notifyMs": 7.183965,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 6.243994,
+      "queryTargets": 16,
+      "streams": 17
+    },
+    {
+      "sequence": 26,
+      "startEpochMs": 1792873038856,
+      "commitMs": 2.274802,
+      "notifyCalls": 1,
+      "notifyMs": 0.103505,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 18,
+      "streams": 19
+    },
+    {
+      "sequence": 27,
+      "startEpochMs": 1792873039096,
+      "commitMs": 8.384325,
+      "notifyCalls": 1,
+      "notifyMs": 6.262314,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 5.317007,
+      "queryTargets": 18,
+      "streams": 19
+    },
+    {
+      "sequence": 28,
+      "startEpochMs": 1792873040068,
+      "commitMs": 1.082001,
+      "notifyCalls": 1,
+      "notifyMs": 0.146758,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 20,
+      "streams": 21
+    },
+    {
+      "sequence": 29,
+      "startEpochMs": 1792873040309,
+      "commitMs": 10.113811,
+      "notifyCalls": 1,
+      "notifyMs": 8.169659,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 2,
+      "rulesMs": 7.07446,
+      "queryTargets": 20,
+      "streams": 21
+    },
+    {
+      "sequence": 30,
+      "startEpochMs": 1792873040692,
+      "commitMs": 0.113313,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 31,
+      "startEpochMs": 1792873040754,
+      "commitMs": 47.075139,
+      "notifyCalls": 1,
+      "notifyMs": 44.770692,
+      "queryCalls": 11,
+      "queryMs": 31.212277999999998,
+      "rulesCalls": 12,
+      "rulesMs": 28.354324000000002,
+      "queryTargets": 22,
+      "streams": 22
+    },
+    {
+      "sequence": 32,
+      "startEpochMs": 1792873040944,
+      "commitMs": 0.075451,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 33,
+      "startEpochMs": 1792873040994,
+      "commitMs": 45.481749,
+      "notifyCalls": 1,
+      "notifyMs": 42.444054,
+      "queryCalls": 12,
+      "queryMs": 29.502038,
+      "rulesCalls": 13,
+      "rulesMs": 26.324783999999998,
+      "queryTargets": 22,
+      "streams": 22
+    },
+    {
+      "sequence": 34,
+      "startEpochMs": 1792873041508,
+      "commitMs": 0.077211,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 35,
+      "startEpochMs": 1792873041574,
+      "commitMs": 55.021245,
+      "notifyCalls": 1,
+      "notifyMs": 48.351526,
+      "queryCalls": 15,
+      "queryMs": 34.396721,
+      "rulesCalls": 17,
+      "rulesMs": 33.913315,
+      "queryTargets": 24,
+      "streams": 24
+    },
+    {
+      "sequence": 36,
+      "startEpochMs": 1792873042080,
+      "commitMs": 0.080299,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 37,
+      "startEpochMs": 1792873042147,
+      "commitMs": 66.368046,
+      "notifyCalls": 1,
+      "notifyMs": 62.221824,
+      "queryCalls": 18,
+      "queryMs": 41.849222,
+      "rulesCalls": 21,
+      "rulesMs": 43.29073900000001,
+      "queryTargets": 26,
+      "streams": 26
+    },
+    {
+      "sequence": 38,
+      "startEpochMs": 1792873042674,
+      "commitMs": 0.085283,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 39,
+      "startEpochMs": 1792873042744,
+      "commitMs": 78.212806,
+      "notifyCalls": 1,
+      "notifyMs": 74.317015,
+      "queryCalls": 21,
+      "queryMs": 51.164773,
+      "rulesCalls": 25,
+      "rulesMs": 53.601941,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 40,
+      "startEpochMs": 1792873042956,
+      "commitMs": 79.693068,
+      "notifyCalls": 1,
+      "notifyMs": 75.287167,
+      "queryCalls": 21,
+      "queryMs": 46.156212000000004,
+      "rulesCalls": 25,
+      "rulesMs": 55.928297,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 41,
+      "startEpochMs": 1792873047162,
+      "commitMs": 0.980734,
+      "notifyCalls": 1,
+      "notifyMs": 0.100945,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 42,
+      "startEpochMs": 1792873047215,
+      "commitMs": 58.891565,
+      "notifyCalls": 1,
+      "notifyMs": 55.629839,
+      "queryCalls": 21,
+      "queryMs": 41.601389999999995,
+      "rulesCalls": 23,
+      "rulesMs": 40.04819400000001,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 43,
+      "startEpochMs": 1792873047322,
+      "commitMs": 71.212511,
+      "notifyCalls": 1,
+      "notifyMs": 62.745852,
+      "queryCalls": 21,
+      "queryMs": 44.808610999999985,
+      "rulesCalls": 23,
+      "rulesMs": 41.04589400000001,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 44,
+      "startEpochMs": 1792873047443,
+      "commitMs": 69.705572,
+      "notifyCalls": 1,
+      "notifyMs": 66.509057,
+      "queryCalls": 21,
+      "queryMs": 52.52127300000001,
+      "rulesCalls": 23,
+      "rulesMs": 50.180463,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 45,
+      "startEpochMs": 1792873047559,
+      "commitMs": 63.673766,
+      "notifyCalls": 1,
+      "notifyMs": 60.20079,
+      "queryCalls": 21,
+      "queryMs": 43.258351,
+      "rulesCalls": 23,
+      "rulesMs": 41.870895,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 46,
+      "startEpochMs": 1792873047673,
+      "commitMs": 56.512692,
+      "notifyCalls": 1,
+      "notifyMs": 53.252126,
+      "queryCalls": 21,
+      "queryMs": 40.488985,
+      "rulesCalls": 23,
+      "rulesMs": 38.78304300000001,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 47,
+      "startEpochMs": 1792873047776,
+      "commitMs": 56.556834,
+      "notifyCalls": 1,
+      "notifyMs": 53.431778,
+      "queryCalls": 21,
+      "queryMs": 39.88751,
+      "rulesCalls": 23,
+      "rulesMs": 38.701369,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 48,
+      "startEpochMs": 1792873047881,
+      "commitMs": 53.333016,
+      "notifyCalls": 1,
+      "notifyMs": 50.146189,
+      "queryCalls": 21,
+      "queryMs": 37.802068999999996,
+      "rulesCalls": 23,
+      "rulesMs": 36.394271999999994,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 49,
+      "startEpochMs": 1792873047984,
+      "commitMs": 54.39285,
+      "notifyCalls": 1,
+      "notifyMs": 51.146027,
+      "queryCalls": 21,
+      "queryMs": 38.314082,
+      "rulesCalls": 23,
+      "rulesMs": 36.306253,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 50,
+      "startEpochMs": 1792873048086,
+      "commitMs": 53.469767,
+      "notifyCalls": 1,
+      "notifyMs": 50.628701,
+      "queryCalls": 21,
+      "queryMs": 37.745529999999995,
+      "rulesCalls": 23,
+      "rulesMs": 36.22172599999999,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 51,
+      "startEpochMs": 1792873048188,
+      "commitMs": 56.238199,
+      "notifyCalls": 1,
+      "notifyMs": 53.28342,
+      "queryCalls": 21,
+      "queryMs": 38.377703999999994,
+      "rulesCalls": 23,
+      "rulesMs": 37.179751,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 52,
+      "startEpochMs": 1792873048299,
+      "commitMs": 51.164378,
+      "notifyCalls": 1,
+      "notifyMs": 48.233812,
+      "queryCalls": 21,
+      "queryMs": 36.196465,
+      "rulesCalls": 23,
+      "rulesMs": 34.605512999999995,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 53,
+      "startEpochMs": 1792873048400,
+      "commitMs": 54.246379,
+      "notifyCalls": 1,
+      "notifyMs": 50.977725,
+      "queryCalls": 21,
+      "queryMs": 38.6359,
+      "rulesCalls": 23,
+      "rulesMs": 36.98764800000001,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 54,
+      "startEpochMs": 1792873048505,
+      "commitMs": 50.891411,
+      "notifyCalls": 1,
+      "notifyMs": 48.291369,
+      "queryCalls": 21,
+      "queryMs": 36.522905,
+      "rulesCalls": 23,
+      "rulesMs": 35.23197,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 55,
+      "startEpochMs": 1792873048604,
+      "commitMs": 48.693102,
+      "notifyCalls": 1,
+      "notifyMs": 46.15668,
+      "queryCalls": 21,
+      "queryMs": 34.926790000000004,
+      "rulesCalls": 23,
+      "rulesMs": 33.706878,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 56,
+      "startEpochMs": 1792873048701,
+      "commitMs": 58.725833,
+      "notifyCalls": 1,
+      "notifyMs": 56.290283,
+      "queryCalls": 21,
+      "queryMs": 45.149387999999995,
+      "rulesCalls": 23,
+      "rulesMs": 41.866544000000005,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 57,
+      "startEpochMs": 1792873048808,
+      "commitMs": 47.146022,
+      "notifyCalls": 1,
+      "notifyMs": 44.553858,
+      "queryCalls": 21,
+      "queryMs": 33.461062000000005,
+      "rulesCalls": 23,
+      "rulesMs": 32.12031499999999,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 58,
+      "startEpochMs": 1792873048903,
+      "commitMs": 46.357314,
+      "notifyCalls": 1,
+      "notifyMs": 43.934748,
+      "queryCalls": 21,
+      "queryMs": 32.657153,
+      "rulesCalls": 23,
+      "rulesMs": 31.605274,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 59,
+      "startEpochMs": 1792873048999,
+      "commitMs": 48.074239,
+      "notifyCalls": 1,
+      "notifyMs": 45.691919,
+      "queryCalls": 21,
+      "queryMs": 34.207097999999995,
+      "rulesCalls": 23,
+      "rulesMs": 32.84327,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 60,
+      "startEpochMs": 1792873049097,
+      "commitMs": 45.808391,
+      "notifyCalls": 1,
+      "notifyMs": 43.054687,
+      "queryCalls": 21,
+      "queryMs": 32.216531,
+      "rulesCalls": 23,
+      "rulesMs": 31.189734999999995,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 61,
+      "startEpochMs": 1792873049193,
+      "commitMs": 45.993658,
+      "notifyCalls": 1,
+      "notifyMs": 41.656324,
+      "queryCalls": 21,
+      "queryMs": 31.238703999999995,
+      "rulesCalls": 23,
+      "rulesMs": 30.086175,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 62,
+      "startEpochMs": 1792873049289,
+      "commitMs": 47.88254,
+      "notifyCalls": 1,
+      "notifyMs": 45.507099,
+      "queryCalls": 21,
+      "queryMs": 34.05613,
+      "rulesCalls": 23,
+      "rulesMs": 32.258582,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 63,
+      "startEpochMs": 1792873049385,
+      "commitMs": 44.642876,
+      "notifyCalls": 1,
+      "notifyMs": 42.437472,
+      "queryCalls": 21,
+      "queryMs": 31.89438400000001,
+      "rulesCalls": 23,
+      "rulesMs": 30.58343,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 64,
+      "startEpochMs": 1792873049481,
+      "commitMs": 49.420766,
+      "notifyCalls": 1,
+      "notifyMs": 47.228552,
+      "queryCalls": 21,
+      "queryMs": 33.546488,
+      "rulesCalls": 23,
+      "rulesMs": 34.659287,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 65,
+      "startEpochMs": 1792873049581,
+      "commitMs": 46.463075,
+      "notifyCalls": 1,
+      "notifyMs": 44.121311,
+      "queryCalls": 21,
+      "queryMs": 33.096222,
+      "rulesCalls": 23,
+      "rulesMs": 31.792295999999997,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 66,
+      "startEpochMs": 1792873049678,
+      "commitMs": 45.811166,
+      "notifyCalls": 1,
+      "notifyMs": 43.455244,
+      "queryCalls": 21,
+      "queryMs": 33.066162999999996,
+      "rulesCalls": 23,
+      "rulesMs": 31.488279999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 67,
+      "startEpochMs": 1792873049772,
+      "commitMs": 55.04223,
+      "notifyCalls": 1,
+      "notifyMs": 52.58729,
+      "queryCalls": 21,
+      "queryMs": 42.297877,
+      "rulesCalls": 23,
+      "rulesMs": 40.637263999999995,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 68,
+      "startEpochMs": 1792873049877,
+      "commitMs": 53.227663,
+      "notifyCalls": 1,
+      "notifyMs": 51.011603,
+      "queryCalls": 21,
+      "queryMs": 34.804799,
+      "rulesCalls": 23,
+      "rulesMs": 33.381372999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 69,
+      "startEpochMs": 1792873049978,
+      "commitMs": 45.625059,
+      "notifyCalls": 1,
+      "notifyMs": 42.810751,
+      "queryCalls": 21,
+      "queryMs": 32.137373999999994,
+      "rulesCalls": 23,
+      "rulesMs": 31.275364,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 70,
+      "startEpochMs": 1792873050074,
+      "commitMs": 43.655062,
+      "notifyCalls": 1,
+      "notifyMs": 41.482127,
+      "queryCalls": 21,
+      "queryMs": 30.709349999999997,
+      "rulesCalls": 23,
+      "rulesMs": 29.252497,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 71,
+      "startEpochMs": 1792873050170,
+      "commitMs": 42.179632,
+      "notifyCalls": 1,
+      "notifyMs": 39.716957,
+      "queryCalls": 21,
+      "queryMs": 29.684479999999997,
+      "rulesCalls": 23,
+      "rulesMs": 28.216300000000007,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 72,
+      "startEpochMs": 1792873050264,
+      "commitMs": 40.649111,
+      "notifyCalls": 1,
+      "notifyMs": 38.759261,
+      "queryCalls": 21,
+      "queryMs": 29.015845,
+      "rulesCalls": 23,
+      "rulesMs": 27.946056000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 73,
+      "startEpochMs": 1792873050352,
+      "commitMs": 42.340734,
+      "notifyCalls": 1,
+      "notifyMs": 40.496489,
+      "queryCalls": 21,
+      "queryMs": 30.312791999999998,
+      "rulesCalls": 23,
+      "rulesMs": 28.960043,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 74,
+      "startEpochMs": 1792873050444,
+      "commitMs": 41.410204,
+      "notifyCalls": 1,
+      "notifyMs": 39.414929,
+      "queryCalls": 21,
+      "queryMs": 29.330340999999997,
+      "rulesCalls": 23,
+      "rulesMs": 28.026892,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 75,
+      "startEpochMs": 1792873050533,
+      "commitMs": 41.486903,
+      "notifyCalls": 1,
+      "notifyMs": 39.411322,
+      "queryCalls": 21,
+      "queryMs": 29.736791,
+      "rulesCalls": 23,
+      "rulesMs": 28.064669999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 76,
+      "startEpochMs": 1792873050624,
+      "commitMs": 44.05718,
+      "notifyCalls": 1,
+      "notifyMs": 41.991381,
+      "queryCalls": 21,
+      "queryMs": 29.951166,
+      "rulesCalls": 23,
+      "rulesMs": 30.785683999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 77,
+      "startEpochMs": 1792873050714,
+      "commitMs": 40.942979,
+      "notifyCalls": 1,
+      "notifyMs": 39.051626,
+      "queryCalls": 21,
+      "queryMs": 29.324746,
+      "rulesCalls": 23,
+      "rulesMs": 28.256774999999998,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 78,
+      "startEpochMs": 1792873050803,
+      "commitMs": 45.464782,
+      "notifyCalls": 1,
+      "notifyMs": 43.577651,
+      "queryCalls": 21,
+      "queryMs": 33.60887,
+      "rulesCalls": 23,
+      "rulesMs": 32.448957,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 79,
+      "startEpochMs": 1792873050896,
+      "commitMs": 39.912249,
+      "notifyCalls": 1,
+      "notifyMs": 38.142087,
+      "queryCalls": 21,
+      "queryMs": 28.507248,
+      "rulesCalls": 23,
+      "rulesMs": 27.337126,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 80,
+      "startEpochMs": 1792873050984,
+      "commitMs": 41.068211,
+      "notifyCalls": 1,
+      "notifyMs": 39.173906,
+      "queryCalls": 21,
+      "queryMs": 29.010492,
+      "rulesCalls": 23,
+      "rulesMs": 27.493329,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 81,
+      "startEpochMs": 1792873051073,
+      "commitMs": 42.45799,
+      "notifyCalls": 1,
+      "notifyMs": 40.462595,
+      "queryCalls": 21,
+      "queryMs": 30.210296000000003,
+      "rulesCalls": 23,
+      "rulesMs": 29.521595,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 82,
+      "startEpochMs": 1792873051165,
+      "commitMs": 39.278819,
+      "notifyCalls": 1,
+      "notifyMs": 37.488186,
+      "queryCalls": 21,
+      "queryMs": 27.78465,
+      "rulesCalls": 23,
+      "rulesMs": 26.97092600000001,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 83,
+      "startEpochMs": 1792873051254,
+      "commitMs": 38.065556,
+      "notifyCalls": 1,
+      "notifyMs": 36.242525,
+      "queryCalls": 21,
+      "queryMs": 27.326255,
+      "rulesCalls": 23,
+      "rulesMs": 26.457715999999994,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 84,
+      "startEpochMs": 1792873051338,
+      "commitMs": 39.917944,
+      "notifyCalls": 1,
+      "notifyMs": 37.971073,
+      "queryCalls": 21,
+      "queryMs": 28.456483000000006,
+      "rulesCalls": 23,
+      "rulesMs": 27.378724999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 85,
+      "startEpochMs": 1792873051424,
+      "commitMs": 41.151437,
+      "notifyCalls": 1,
+      "notifyMs": 39.287329,
+      "queryCalls": 21,
+      "queryMs": 30.190490999999998,
+      "rulesCalls": 23,
+      "rulesMs": 29.133779999999998,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 86,
+      "startEpochMs": 1792873051513,
+      "commitMs": 38.716656,
+      "notifyCalls": 1,
+      "notifyMs": 36.85418,
+      "queryCalls": 21,
+      "queryMs": 27.633550999999997,
+      "rulesCalls": 23,
+      "rulesMs": 26.900595000000003,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 87,
+      "startEpochMs": 1792873051599,
+      "commitMs": 37.256769,
+      "notifyCalls": 1,
+      "notifyMs": 35.503447,
+      "queryCalls": 21,
+      "queryMs": 26.763015,
+      "rulesCalls": 23,
+      "rulesMs": 25.285859,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 88,
+      "startEpochMs": 1792873051682,
+      "commitMs": 38.11928,
+      "notifyCalls": 1,
+      "notifyMs": 36.309705,
+      "queryCalls": 21,
+      "queryMs": 27.124229999999994,
+      "rulesCalls": 23,
+      "rulesMs": 26.480911,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 89,
+      "startEpochMs": 1792873051769,
+      "commitMs": 37.751096,
+      "notifyCalls": 1,
+      "notifyMs": 35.966831,
+      "queryCalls": 21,
+      "queryMs": 27.208320000000004,
+      "rulesCalls": 23,
+      "rulesMs": 26.362225999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 90,
+      "startEpochMs": 1792873051854,
+      "commitMs": 43.504337,
+      "notifyCalls": 1,
+      "notifyMs": 41.769236,
+      "queryCalls": 21,
+      "queryMs": 28.597586,
+      "rulesCalls": 23,
+      "rulesMs": 32.332882,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 91,
+      "startEpochMs": 1792873051946,
+      "commitMs": 37.669957,
+      "notifyCalls": 1,
+      "notifyMs": 35.866878,
+      "queryCalls": 21,
+      "queryMs": 27.221183000000003,
+      "rulesCalls": 23,
+      "rulesMs": 26.444656,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 92,
+      "startEpochMs": 1792873052032,
+      "commitMs": 37.078637,
+      "notifyCalls": 1,
+      "notifyMs": 35.378591,
+      "queryCalls": 21,
+      "queryMs": 26.732539,
+      "rulesCalls": 23,
+      "rulesMs": 25.922478999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 93,
+      "startEpochMs": 1792873052117,
+      "commitMs": 37.982681,
+      "notifyCalls": 1,
+      "notifyMs": 36.243421,
+      "queryCalls": 21,
+      "queryMs": 27.595630999999997,
+      "rulesCalls": 23,
+      "rulesMs": 26.726392000000004,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 94,
+      "startEpochMs": 1792873052206,
+      "commitMs": 37.835538,
+      "notifyCalls": 1,
+      "notifyMs": 35.789996,
+      "queryCalls": 21,
+      "queryMs": 26.334876,
+      "rulesCalls": 23,
+      "rulesMs": 26.460514999999997,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 95,
+      "startEpochMs": 1792873052294,
+      "commitMs": 36.125104,
+      "notifyCalls": 1,
+      "notifyMs": 34.502765,
+      "queryCalls": 21,
+      "queryMs": 25.991874,
+      "rulesCalls": 23,
+      "rulesMs": 25.490877,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 96,
+      "startEpochMs": 1792873052375,
+      "commitMs": 34.778125,
+      "notifyCalls": 1,
+      "notifyMs": 33.098709,
+      "queryCalls": 21,
+      "queryMs": 25.060141999999995,
+      "rulesCalls": 23,
+      "rulesMs": 24.608955,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 97,
+      "startEpochMs": 1792873052456,
+      "commitMs": 36.517473,
+      "notifyCalls": 1,
+      "notifyMs": 34.681707,
+      "queryCalls": 21,
+      "queryMs": 26.189576000000002,
+      "rulesCalls": 23,
+      "rulesMs": 25.389622000000003,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 98,
+      "startEpochMs": 1792873052539,
+      "commitMs": 34.720432,
+      "notifyCalls": 1,
+      "notifyMs": 33.001771,
+      "queryCalls": 21,
+      "queryMs": 24.728600999999998,
+      "rulesCalls": 23,
+      "rulesMs": 24.280485999999996,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 99,
+      "startEpochMs": 1792873052621,
+      "commitMs": 42.764779,
+      "notifyCalls": 1,
+      "notifyMs": 40.888392,
+      "queryCalls": 21,
+      "queryMs": 31.393621000000003,
+      "rulesCalls": 23,
+      "rulesMs": 30.610656000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 100,
+      "startEpochMs": 1792873052710,
+      "commitMs": 43.701525,
+      "notifyCalls": 1,
+      "notifyMs": 41.595553,
+      "queryCalls": 21,
+      "queryMs": 31.017613,
+      "rulesCalls": 23,
+      "rulesMs": 31.094469999999994,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 101,
+      "startEpochMs": 1792873052802,
+      "commitMs": 43.27137,
+      "notifyCalls": 1,
+      "notifyMs": 41.217058,
+      "queryCalls": 21,
+      "queryMs": 26.975650999999996,
+      "rulesCalls": 23,
+      "rulesMs": 32.224359,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 102,
+      "startEpochMs": 1792873052893,
+      "commitMs": 35.321841,
+      "notifyCalls": 1,
+      "notifyMs": 33.701372,
+      "queryCalls": 21,
+      "queryMs": 25.266689999999997,
+      "rulesCalls": 23,
+      "rulesMs": 24.793262000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 103,
+      "startEpochMs": 1792873052974,
+      "commitMs": 34.842369,
+      "notifyCalls": 1,
+      "notifyMs": 33.295895,
+      "queryCalls": 21,
+      "queryMs": 25.022821000000004,
+      "rulesCalls": 23,
+      "rulesMs": 24.515978999999998,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 104,
+      "startEpochMs": 1792873053058,
+      "commitMs": 36.145979,
+      "notifyCalls": 1,
+      "notifyMs": 34.468018,
+      "queryCalls": 21,
+      "queryMs": 25.754313999999997,
+      "rulesCalls": 23,
+      "rulesMs": 25.151586,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 105,
+      "startEpochMs": 1792873053142,
+      "commitMs": 35.438546,
+      "notifyCalls": 1,
+      "notifyMs": 33.827484,
+      "queryCalls": 21,
+      "queryMs": 25.505516,
+      "rulesCalls": 23,
+      "rulesMs": 24.727383999999997,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 106,
+      "startEpochMs": 1792873053224,
+      "commitMs": 34.277078,
+      "notifyCalls": 1,
+      "notifyMs": 32.740069,
+      "queryCalls": 21,
+      "queryMs": 24.627081999999994,
+      "rulesCalls": 23,
+      "rulesMs": 24.137569000000003,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 107,
+      "startEpochMs": 1792873053306,
+      "commitMs": 37.255337,
+      "notifyCalls": 1,
+      "notifyMs": 35.490157,
+      "queryCalls": 21,
+      "queryMs": 26.699749999999998,
+      "rulesCalls": 23,
+      "rulesMs": 26.030254999999997,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 108,
+      "startEpochMs": 1792873053389,
+      "commitMs": 40.432158,
+      "notifyCalls": 1,
+      "notifyMs": 38.653564,
+      "queryCalls": 21,
+      "queryMs": 30.315586,
+      "rulesCalls": 23,
+      "rulesMs": 25.264147000000005,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 109,
+      "startEpochMs": 1792873053476,
+      "commitMs": 34.900173,
+      "notifyCalls": 1,
+      "notifyMs": 33.26277,
+      "queryCalls": 21,
+      "queryMs": 24.842805000000002,
+      "rulesCalls": 23,
+      "rulesMs": 24.335251000000003,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 110,
+      "startEpochMs": 1792873053558,
+      "commitMs": 35.647916,
+      "notifyCalls": 1,
+      "notifyMs": 34.058029,
+      "queryCalls": 21,
+      "queryMs": 25.740405999999997,
+      "rulesCalls": 23,
+      "rulesMs": 25.069435000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 111,
+      "startEpochMs": 1792873053639,
+      "commitMs": 34.189957,
+      "notifyCalls": 1,
+      "notifyMs": 32.643379,
+      "queryCalls": 21,
+      "queryMs": 24.30801,
+      "rulesCalls": 23,
+      "rulesMs": 23.813625000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 112,
+      "startEpochMs": 1792873053721,
+      "commitMs": 36.351917,
+      "notifyCalls": 1,
+      "notifyMs": 34.63787,
+      "queryCalls": 21,
+      "queryMs": 26.018327,
+      "rulesCalls": 23,
+      "rulesMs": 25.480908999999993,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 113,
+      "startEpochMs": 1792873053805,
+      "commitMs": 36.398106,
+      "notifyCalls": 1,
+      "notifyMs": 34.735752,
+      "queryCalls": 21,
+      "queryMs": 25.450056999999994,
+      "rulesCalls": 23,
+      "rulesMs": 25.569688,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 114,
+      "startEpochMs": 1792873053889,
+      "commitMs": 35.843447,
+      "notifyCalls": 1,
+      "notifyMs": 34.070828,
+      "queryCalls": 21,
+      "queryMs": 25.662258999999995,
+      "rulesCalls": 23,
+      "rulesMs": 24.866238000000003,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 115,
+      "startEpochMs": 1792873053968,
+      "commitMs": 40.287399,
+      "notifyCalls": 1,
+      "notifyMs": 38.42282,
+      "queryCalls": 21,
+      "queryMs": 26.835532999999995,
+      "rulesCalls": 23,
+      "rulesMs": 26.047017,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 116,
+      "startEpochMs": 1792873054058,
+      "commitMs": 35.719767,
+      "notifyCalls": 1,
+      "notifyMs": 34.035238,
+      "queryCalls": 21,
+      "queryMs": 25.517483999999996,
+      "rulesCalls": 23,
+      "rulesMs": 24.712310000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 117,
+      "startEpochMs": 1792873054141,
+      "commitMs": 36.03145,
+      "notifyCalls": 1,
+      "notifyMs": 34.375359,
+      "queryCalls": 21,
+      "queryMs": 26.067928000000002,
+      "rulesCalls": 23,
+      "rulesMs": 25.299027000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 118,
+      "startEpochMs": 1792873054224,
+      "commitMs": 35.35587,
+      "notifyCalls": 1,
+      "notifyMs": 33.692509,
+      "queryCalls": 21,
+      "queryMs": 25.397498,
+      "rulesCalls": 23,
+      "rulesMs": 24.578752,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 119,
+      "startEpochMs": 1792873054305,
+      "commitMs": 35.283612,
+      "notifyCalls": 1,
+      "notifyMs": 33.757488,
+      "queryCalls": 21,
+      "queryMs": 25.270438,
+      "rulesCalls": 23,
+      "rulesMs": 24.575457999999994,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 120,
+      "startEpochMs": 1792873054386,
+      "commitMs": 33.802749,
+      "notifyCalls": 1,
+      "notifyMs": 32.110046,
+      "queryCalls": 21,
+      "queryMs": 23.982697000000005,
+      "rulesCalls": 23,
+      "rulesMs": 23.387352999999997,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 121,
+      "startEpochMs": 1792873054465,
+      "commitMs": 33.928365,
+      "notifyCalls": 1,
+      "notifyMs": 31.80193,
+      "queryCalls": 21,
+      "queryMs": 23.801652,
+      "rulesCalls": 23,
+      "rulesMs": 23.198462000000006,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 122,
+      "startEpochMs": 1792873054546,
+      "commitMs": 39.88713,
+      "notifyCalls": 1,
+      "notifyMs": 38.271822,
+      "queryCalls": 21,
+      "queryMs": 30.022582999999997,
+      "rulesCalls": 23,
+      "rulesMs": 29.274921,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 123,
+      "startEpochMs": 1792873054633,
+      "commitMs": 36.044977,
+      "notifyCalls": 1,
+      "notifyMs": 34.352154,
+      "queryCalls": 21,
+      "queryMs": 25.563296,
+      "rulesCalls": 23,
+      "rulesMs": 25.128001,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 124,
+      "startEpochMs": 1792873054714,
+      "commitMs": 34.820106,
+      "notifyCalls": 1,
+      "notifyMs": 33.312383,
+      "queryCalls": 21,
+      "queryMs": 25.147233999999997,
+      "rulesCalls": 23,
+      "rulesMs": 24.518974,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 125,
+      "startEpochMs": 1792873054806,
+      "commitMs": 36.05848,
+      "notifyCalls": 1,
+      "notifyMs": 34.489065,
+      "queryCalls": 21,
+      "queryMs": 25.942525000000007,
+      "rulesCalls": 23,
+      "rulesMs": 25.296481000000004,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 126,
+      "startEpochMs": 1792873054892,
+      "commitMs": 36.926526,
+      "notifyCalls": 1,
+      "notifyMs": 35.440137,
+      "queryCalls": 21,
+      "queryMs": 26.448541,
+      "rulesCalls": 23,
+      "rulesMs": 26.076749,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 127,
+      "startEpochMs": 1792873054974,
+      "commitMs": 34.981831,
+      "notifyCalls": 1,
+      "notifyMs": 33.293751,
+      "queryCalls": 21,
+      "queryMs": 25.005260999999994,
+      "rulesCalls": 23,
+      "rulesMs": 24.345588,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 128,
+      "startEpochMs": 1792873055058,
+      "commitMs": 35.147453,
+      "notifyCalls": 1,
+      "notifyMs": 33.480843,
+      "queryCalls": 21,
+      "queryMs": 25.102175000000003,
+      "rulesCalls": 23,
+      "rulesMs": 24.226760000000002,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 129,
+      "startEpochMs": 1792873055142,
+      "commitMs": 42.536875,
+      "notifyCalls": 1,
+      "notifyMs": 40.473732,
+      "queryCalls": 21,
+      "queryMs": 32.632948999999996,
+      "rulesCalls": 23,
+      "rulesMs": 31.548797,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 130,
+      "startEpochMs": 1792873055233,
+      "commitMs": 33.577636,
+      "notifyCalls": 1,
+      "notifyMs": 32.048786,
+      "queryCalls": 21,
+      "queryMs": 24.100661000000002,
+      "rulesCalls": 23,
+      "rulesMs": 23.212482999999995,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 131,
+      "startEpochMs": 1792873055314,
+      "commitMs": 34.326171,
+      "notifyCalls": 1,
+      "notifyMs": 32.710726,
+      "queryCalls": 21,
+      "queryMs": 24.766095,
+      "rulesCalls": 23,
+      "rulesMs": 23.950074,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 132,
+      "startEpochMs": 1792873055392,
+      "commitMs": 34.029454,
+      "notifyCalls": 1,
+      "notifyMs": 32.524794,
+      "queryCalls": 21,
+      "queryMs": 24.81086,
+      "rulesCalls": 23,
+      "rulesMs": 23.814044,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 133,
+      "startEpochMs": 1792873055472,
+      "commitMs": 33.720955,
+      "notifyCalls": 1,
+      "notifyMs": 32.283515,
+      "queryCalls": 21,
+      "queryMs": 24.542846000000004,
+      "rulesCalls": 23,
+      "rulesMs": 23.975708999999995,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 134,
+      "startEpochMs": 1792873055548,
+      "commitMs": 34.293669,
+      "notifyCalls": 1,
+      "notifyMs": 32.83151,
+      "queryCalls": 21,
+      "queryMs": 24.994831,
+      "rulesCalls": 23,
+      "rulesMs": 24.291026,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 135,
+      "startEpochMs": 1792873055632,
+      "commitMs": 38.242383,
+      "notifyCalls": 1,
+      "notifyMs": 36.657441,
+      "queryCalls": 21,
+      "queryMs": 28.588638,
+      "rulesCalls": 23,
+      "rulesMs": 27.793522,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 136,
+      "startEpochMs": 1792873055716,
+      "commitMs": 35.279556,
+      "notifyCalls": 1,
+      "notifyMs": 33.574333,
+      "queryCalls": 21,
+      "queryMs": 25.519798,
+      "rulesCalls": 23,
+      "rulesMs": 24.830070999999997,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 137,
+      "startEpochMs": 1792873055803,
+      "commitMs": 37.662941,
+      "notifyCalls": 1,
+      "notifyMs": 36.049929,
+      "queryCalls": 21,
+      "queryMs": 25.175112999999996,
+      "rulesCalls": 23,
+      "rulesMs": 27.258864,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 138,
+      "startEpochMs": 1792873055851,
+      "commitMs": 1.853125,
+      "notifyCalls": 1,
+      "notifyMs": 0.076907,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 139,
+      "startEpochMs": 1792873055861,
+      "commitMs": 1.36031,
+      "notifyCalls": 1,
+      "notifyMs": 0.620935,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 140,
+      "startEpochMs": 1792873055908,
+      "commitMs": 35.253981,
+      "notifyCalls": 1,
+      "notifyMs": 33.555086,
+      "queryCalls": 21,
+      "queryMs": 25.536701,
+      "rulesCalls": 23,
+      "rulesMs": 24.573043000000006,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 141,
+      "startEpochMs": 1792873055990,
+      "commitMs": 34.388511,
+      "notifyCalls": 1,
+      "notifyMs": 32.864188,
+      "queryCalls": 21,
+      "queryMs": 24.940934,
+      "rulesCalls": 23,
+      "rulesMs": 24.034625,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 142,
+      "startEpochMs": 1792873056073,
+      "commitMs": 34.379975,
+      "notifyCalls": 1,
+      "notifyMs": 32.755251,
+      "queryCalls": 21,
+      "queryMs": 24.66121,
+      "rulesCalls": 23,
+      "rulesMs": 23.923527,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 143,
+      "startEpochMs": 1792873056154,
+      "commitMs": 33.514977,
+      "notifyCalls": 1,
+      "notifyMs": 31.846191,
+      "queryCalls": 21,
+      "queryMs": 24.070498999999998,
+      "rulesCalls": 23,
+      "rulesMs": 23.298148999999995,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 144,
+      "startEpochMs": 1792873056195,
+      "commitMs": 0.059588,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 145,
+      "startEpochMs": 1792873056203,
+      "commitMs": 0.492231,
+      "notifyCalls": 1,
+      "notifyMs": 0.071588,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": 28,
+      "streams": 28
+    },
+    {
+      "sequence": 146,
+      "startEpochMs": 1792873056212,
+      "commitMs": 0.048565,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 147,
+      "startEpochMs": 1792873060093,
+      "commitMs": 0.082307,
+      "notifyCalls": 0,
+      "notifyMs": 0,
+      "queryCalls": 0,
+      "queryMs": 0,
+      "rulesCalls": 0,
+      "rulesMs": 0,
+      "queryTargets": null,
+      "streams": null
+    },
+    {
+      "sequence": 148,
+      "startEpochMs": 1792873060187,
+      "commitMs": 44.732153,
+      "notifyCalls": 1,
+      "notifyMs": 42.825055,
+      "queryCalls": 25,
+      "queryMs": 29.402588,
+      "rulesCalls": 30,
+      "rulesMs": 32.358367,
+      "queryTargets": 32,
+      "streams": 34
+    }
+  ],
+  "client": {
+    "completed": [
+      {
+        "at": 12736.678804,
+        "event": "complete",
+        "label": "canonical",
+        "span": 1,
+        "elapsedMs": 14.294678000000204,
+        "transactions": 0
+      },
+      {
+        "at": 12739.593881,
+        "event": "complete",
+        "label": "clock",
+        "span": 2,
+        "elapsedMs": 2.790638000000399,
+        "transactions": 0
+      },
+      {
+        "at": 12742.206475,
+        "event": "complete",
+        "label": "clock",
+        "span": 3,
+        "elapsedMs": 2.552972999999838,
+        "transactions": 0
+      },
+      {
+        "at": 21445.585419,
+        "event": "complete",
+        "label": "batch",
+        "span": 4,
+        "elapsedMs": 8703.306749000001,
+        "transactions": 97,
+        "ticks": 96
+      },
+      {
+        "at": 21796.460889,
+        "event": "complete",
+        "label": "batch",
+        "span": 5,
+        "elapsedMs": 350.45628099999885,
+        "transactions": 6,
+        "ticks": 4
+      },
+      {
+        "at": 21804.274971,
+        "event": "complete",
+        "label": "repeat",
+        "span": 6,
+        "elapsedMs": 6.858313000000635,
+        "transactions": 1,
+        "ticks": 0
+      }
+    ],
+    "transactions": 104,
+    "rpcFailures": 0,
+    "totalMs": {
+      "count": 104,
+      "min": 6.5415739999989455,
+      "median": 86.65808399999878,
+      "p95": 105.44177100000161,
+      "max": 118.904935999999
+    },
+    "postMarkerMs": {
+      "count": 102,
+      "min": 0.7771978749988193,
+      "median": 38.90884087499944,
+      "p95": 55.35633828124992,
+      "max": 68.30686798437455
+    }
+  },
+  "limits": [
+    "Server sequences are exact nested-call correlation, not command IDs.",
+    "Client timeline uses process-relative time; no exact client/server transaction identity mapping is asserted.",
+    "Rules are nested within query/notify durations: do not add overlapping spans.",
+    "Darwin isolated run does not establish failing Linux cohort counts/cost."
+  ]
+}

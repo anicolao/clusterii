@@ -1,0 +1,13 @@
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:15:21.2674540Z openjdk version "21.0.12" 2026-07-21
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:15:21.2675250Z OpenJDK Runtime Environment (build 21.0.12+2-nixos)
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:15:21.3214480Z v24.18.0
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:15:21.3376995Z 1.3.13
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:16:16.9396352Z PASS: original return/throw identity, synchronized wrapper, counts, sequence, context retirement
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:16:17.7851434Z PASS: five pinned-emulator methods load with JVM verification
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:17:06.4694209Z     Error: Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-force-review/phone/linux-arm64/010-reserve-real-complement-1-route-marshal.png. Generate candidates separately; verification never writes expected images.
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:17:06.4697515Z       257 |                     `Missing reviewed baseline/renderer: ${baseline}. Generate candidates separately; verification never writes expected images.`,
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:17:06.4708342Z   1 failed
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:17:41.5104311Z     Error: Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/013-form-0-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:17:41.5107660Z       257 |                     `Missing reviewed baseline/renderer: ${baseline}. Generate candidates separately; verification never writes expected images.`,
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:17:41.5117955Z   1 failed
+feature009-010-pair	One strict route-forces then feature010 pair	2026-10-24T20:17:43.3085940Z ##[error]Process completed with exit code 1.

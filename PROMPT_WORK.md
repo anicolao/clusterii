@@ -957,3 +957,4 @@ Prompt 210 | ccb19990abea03c74b7934026b360f8e03c63e37a912f3b9db9f3fd426f1b34e | 
 Prompt 211 | a8c3531011a7cad70d3892af7c790c764f369ba062d330727bdbdaf1538f44b2 | Dispatch the single source-bound pinned Linux feature010 query observation after twelve preflight checks
 Prompt 211 | a8c3531011a7cad70d3892af7c790c764f369ba062d330727bdbdaf1538f44b2 | Verify Linux artifact once, retain correlated query costs and strict failure, specify bounded predecessor contrast
 Prompt 212 | 88e782e12de68706f49362ee37d5419967b92aa8ef89010e805f9b951da5997a | Dispatch one source-bound route-forces to feature010 pair after fifteen orchestration checks pass
+Prompt 212 | 88e782e12de68706f49362ee37d5419967b92aa8ef89010e805f9b951da5997a | Preserve both Linux failures, compare retained query populations and costs, quantify missing prior access history
