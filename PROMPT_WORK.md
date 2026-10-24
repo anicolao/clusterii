@@ -954,3 +954,4 @@ Prompt 202 | 34f6ce9341edba4d45389cd4b02d9ad60faa4f98202fe4cfc112b7fde29ccc58 | 
 
 Prompt 209 | 889b034c86eb069d75058ebc6510b1058d55a30063dc69853353b70c7e98d421 | Complete guarded range recovery, verify archive and retain current failed-batch RPC/profile diagnosis without speculative production changes
 Prompt 210 | ccb19990abea03c74b7934026b360f8e03c63e37a912f3b9db9f3fd426f1b34e | Retain one real query-observer run, correlated costs and strict baseline failure without claiming Linux cause
+Prompt 211 | a8c3531011a7cad70d3892af7c790c764f369ba062d330727bdbdaf1538f44b2 | Dispatch the single source-bound pinned Linux feature010 query observation after twelve preflight checks
