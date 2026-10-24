@@ -1,0 +1,9 @@
+# Gallery capture geometry correction
+
+Prompt187 / reviewer21:15. Unchanged e61eb97a production measured by standalone read-only `scripts/recovery-gallery-geometry.mjs`, offline Nix, Chromium149.0.7827.55, 3840×2160/DPR1/reduced motion. Identical original font/image readiness; no capture, injected state or service setup. Legacy test remains byte-identical. This diagnostic is not an illustrated story or visual acceptance.
+
+Before: document3840×165992 (637,409,280 pixels; 2,549,637,120 RGBA bytes before encoder overhead). A single grid section groups nearly all game instruments and measures81582.55px tall, with a matching empty adjacent stretched section. Unbounded AdmissionBriefing min-height100% resolves against this parent, pushing roster content to165992px despite body offsetHeight91267px. This is a demonstrated layout defect; platform capture failure does not itself establish a universal Chromium dimension/memory limit.
+
+Correction: separate existing component families into33 grid sections; align them at their natural heights, use available desktop width (max3200 instead of1200), and give AdmissionBriefing a bounded700px/90svh reading viewport. All specimens remain mounted and visible in document flow; nothing removed, collapsed, lazy-loaded or masked for capture. Narrow specimen mode remains supported. No gameplay component or service change.
+
+After: document3840×37385, no vertical overflow beyond body;143,558,400 pixels/574,233,600 raw RGBA bytes.525 controls,152 fully decoded images, identical ordered headings before/after. This isolates the page-size reduction to gallery organization. Exact original large test will verify capture sensitivity without changed viewport/deadline/assertions. Existing source-paired evidence and baselines remain unmodified; changed gallery compositions require independent review.
