@@ -1,0 +1,10 @@
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:55:24.8854023Z openjdk version "21.0.12" 2026-07-21
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:55:24.8855588Z OpenJDK Runtime Environment (build 21.0.12+2-nixos)
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:55:24.9299520Z v24.18.0
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:55:24.9453977Z 1.3.13
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:56:20.6020427Z PASS: original return/throw identity, synchronized wrapper, counts, sequence, context retirement
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:56:21.3350114Z PASS: five pinned-emulator methods load with JVM verification
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:57:22.0095189Z     Error: Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/013-form-0-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:57:22.0098844Z       257 |                     `Missing reviewed baseline/renderer: ${baseline}. Generate candidates separately; verification never writes expected images.`,
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:57:22.0110140Z   1 failed
+feature010-query-phone	One strict feature010 phone observation	2026-10-24T19:57:23.9972574Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,14 @@
+{
+  "commit": "851fcb694438d1f9518f474fc1f0e7ad856d7d8a",
+  "feature": "tests/e2e/010-zero-science/zero-science.spec.ts",
+  "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3",
+  "observerSha256": "f198e05b3d26daed54530bd2e9bc532daacbcb149f3d96daaf2ef8453f95f053",
+  "renderer": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+  "mode": "verify",
+  "project": "phone",
+  "budgets": {
+    "story": 240000,
+    "step": 30000,
+    "assertion": 10000
+  }
+}
