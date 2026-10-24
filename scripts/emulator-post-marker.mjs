@@ -10,6 +10,7 @@ import {
 import { createHash } from "node:crypto";
 import { execFileSync, spawn } from "node:child_process";
 import { tmpdir } from "node:os";
+import { StringDecoder } from "node:string_decoder";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
@@ -44,21 +45,205 @@ export function startRecording(pid, file, durationSeconds = 35) {
   ]).toString();
   if (!/Started recording/.test(response)) throw Error("attach");
 }
+/** Strict JFR JSON envelope, with JSON.parse validating each complete event. */
+export class ProfileDecoder {
+  prefix = "";
+  trailer = "";
+  pieces = [];
+  bytes = 0;
+  depth = 0;
+  quoted = false;
+  escaped = false;
+  opened = false;
+  ended = false;
+  expectEvent = true;
+  afterComma = false;
+  summary = { buckets: [], ignoredEvents: 0 };
+  fail(category) {
+    const error = Error(category);
+    error.category = category;
+    throw error;
+  }
+  add(piece) {
+    this.bytes += Buffer.byteLength(piece);
+    if (this.bytes > 4 * 1024 * 1024) this.fail("buffer");
+    this.pieces.push(piece);
+  }
+  event() {
+    let value;
+    try {
+      value = JSON.parse(this.pieces.join(""));
+    } catch {
+      this.fail("json");
+    }
+    if (
+      !value ||
+      typeof value.type !== "string" ||
+      !value.values ||
+      typeof value.values !== "object" ||
+      Array.isArray(value.values) ||
+      (value.values.stackTrace?.frames != null &&
+        !Array.isArray(value.values.stackTrace.frames))
+    )
+      this.fail("schema");
+    let next;
+    try {
+      next = aggregateProfile({ recording: { events: [value] } });
+    } catch {
+      this.fail("schema");
+    }
+    this.summary.ignoredEvents += next.ignoredEvents;
+    for (const bucket of next.buckets) {
+      const prior = this.summary.buckets.find(
+        (b) => b.event === bucket.event && b.phase === bucket.phase,
+      );
+      if (prior) {
+        prior.count += bucket.count;
+        prior.durationMs += bucket.durationMs;
+      } else this.summary.buckets.push(bucket);
+    }
+    this.pieces = [];
+    this.bytes = 0;
+    this.expectEvent = false;
+    this.afterComma = false;
+  }
+  write(text) {
+    let segment = this.depth ? 0 : -1;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (!this.opened) {
+        this.prefix += c;
+        if (this.prefix.length > 4096) this.fail("schema");
+        if (c === "[") {
+          if (
+            !/^\s*\{\s*"recording"\s*:\s*\{\s*"events"\s*:\s*\[$/.test(
+              this.prefix,
+            )
+          )
+            this.fail("schema");
+          this.opened = true;
+        }
+        continue;
+      }
+      if (this.ended) {
+        this.trailer += c;
+        if (this.trailer.length > 4096) this.fail("schema");
+        continue;
+      }
+      if (!this.depth) {
+        if (/\s/.test(c)) continue;
+        if (c === "]" && !this.afterComma) {
+          this.ended = true;
+          continue;
+        }
+        if (c === "," && !this.expectEvent) {
+          this.expectEvent = true;
+          this.afterComma = true;
+          continue;
+        }
+        if (c !== "{" || !this.expectEvent) this.fail("json");
+        this.depth = 1;
+        segment = i;
+        continue;
+      }
+      if (this.quoted) {
+        if (this.escaped) this.escaped = false;
+        else if (c === "\\") this.escaped = true;
+        else if (c === '"') this.quoted = false;
+      } else if (c === '"') this.quoted = true;
+      else if (c === "{" || c === "[") this.depth++;
+      else if (c === "}" || c === "]") {
+        this.depth--;
+        if (!this.depth) {
+          this.add(text.slice(segment, i + 1));
+          this.event();
+          segment = -1;
+        }
+      }
+    }
+    if (segment >= 0) this.add(text.slice(segment));
+  }
+  finish() {
+    if (!this.opened) this.fail("schema");
+    if (!this.ended || this.depth || !/^\s*\}\s*\}\s*$/.test(this.trailer))
+      this.fail("json");
+    return this.summary;
+  }
+}
+/** Fixed safe metadata only; never retain subprocess output or exception text. */
+export async function readProfileProcess(bin, args, timeoutMs = 10000) {
+  const decoder = new ProfileDecoder(),
+    utf8 = new StringDecoder("utf8");
+  let stdoutBytes = 0,
+    stderrBytes = 0,
+    category,
+    exitCode = null,
+    signal = null;
+  const child = spawn(bin, args, { stdio: ["ignore", "pipe", "pipe"] });
+  const started = performance.now();
+  return await new Promise((resolve, reject) => {
+    const timer = setTimeout(() => {
+      category ??= "timeout";
+      child.kill("SIGKILL");
+    }, timeoutMs);
+    child.stdout.on("data", (chunk) => {
+      stdoutBytes += chunk.length;
+      if (category) return;
+      try {
+        decoder.write(utf8.write(chunk));
+      } catch (error) {
+        category = error.category ?? "json";
+        child.kill("SIGKILL");
+      }
+    });
+    child.stderr.on("data", (chunk) => {
+      stderrBytes += chunk.length;
+    });
+    child.on("error", () => {
+      category = "spawn";
+    });
+    child.on("close", (code, sig) => {
+      clearTimeout(timer);
+      exitCode = code;
+      signal = sig;
+      if (!category && sig) category = "signal";
+      if (!category && code !== 0) category = "exit";
+      let summary;
+      if (!category) {
+        try {
+          decoder.write(utf8.end());
+          summary = decoder.finish();
+        } catch (error) {
+          category = error.category ?? "schema";
+        }
+      }
+      const diagnostic = {
+        category: category ?? "complete",
+        exitCode,
+        signal,
+        stdoutBytes,
+        stderrBytes,
+        elapsedMs: performance.now() - started,
+      };
+      if (category) {
+        const error = Error("profile-export");
+        error.diagnostic = diagnostic;
+        reject(error);
+      } else resolve({ ...summary, export: diagnostic });
+    });
+  });
+}
 /** @param {string} file */
-export function readRecording(file) {
-  return aggregateProfile(
-    JSON.parse(
-      command("jfr", [
-        "print",
-        "--json",
-        "--stack-depth",
-        "32",
-        "--events",
-        events.join(","),
-        file,
-      ]).toString(),
-    ),
-  );
+export async function readRecording(file) {
+  return await readProfileProcess("jfr", [
+    "print",
+    "--json",
+    "--stack-depth",
+    "32",
+    "--events",
+    events.join(","),
+    file,
+  ]);
 }
 /** @param {string[]} args */
 export function emulatorArguments(args) {
@@ -214,7 +399,7 @@ async function observe() {
     await new Promise((resolve) => setTimeout(resolve, 37000));
     if (statSync(file).size > 8 * 1024 * 1024) throw Error("size");
     phase = "parse";
-    const summary = readRecording(file);
+    const summary = await readRecording(file);
     record({
       status: "complete",
       durationSeconds: 35,
@@ -222,10 +407,13 @@ async function observe() {
       sourceJarSHA256: jarHash,
       ...summary,
     });
-  } catch {
+  } catch (error) {
     record({
       status: "unavailable",
       reason: phase,
+      ...(phase === "parse" && error.diagnostic
+        ? { export: error.diagnostic }
+        : {}),
       elapsedMs: performance.now() - started,
     });
   } finally {
