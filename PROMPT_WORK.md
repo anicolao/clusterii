@@ -881,3 +881,5 @@ Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | 
 Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | Preserve failed motion-state orchestration and explicitly restore the lab declared preference before corrected verification
 
 Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | Retain four-size corrected science candidates and failure provenance without promotion; record measured fix and remaining review limits
+
+Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Validate corrected opener locally and narrowly prepare one complete pinned Linux science family request with failure-preserving orchestration

@@ -30,6 +30,7 @@ case "$1" in
     case "$2" in
       feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;
       gallery-large) node scripts/recovery-gallery.mjs "$2" ;;
+      science-components-candidates) node scripts/recovery-science.mjs "$2" ;;
       feature010-phone-candidates) node scripts/recovery-candidates.mjs "$2" ;;
       *) exit 2 ;;
     esac
