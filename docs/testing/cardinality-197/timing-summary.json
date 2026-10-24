@@ -1,0 +1,24 @@
+{
+  "sparse": {
+    "transactions": 103,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "validMarkers": 101,
+    "medianCommitRequestMs": 4.775583000000097,
+    "medianPostMarkerMs": 2.1901757656250993,
+    "medianTotalMs": 18.027000000000044
+  },
+  "dense": {
+    "transactions": 103,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "validMarkers": 100,
+    "medianCommitRequestMs": 4.03112499999952,
+    "medianPostMarkerMs": 2.366277343749971,
+    "medianTotalMs": 16.45037500000035
+  }
+}
