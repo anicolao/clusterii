@@ -937,3 +937,5 @@ Prompt 197 | b4747305b9b62431d89a42e335e9b1113e25f8844f169ba3309167a06e5f437f | 
 Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Request one changed-source pinned Linux science family after validated HTML binding and contact sizing corrections
 
 Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Extend existing real contact story with keyboard selection, responsive restoration and overview behavior while preserving all original checks
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Preserve four-size contact evidence and require complete selected-control keyboard reading after responsive restoration

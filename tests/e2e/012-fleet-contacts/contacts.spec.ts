@@ -1,3 +1,4 @@
+import { expectReadingTarget } from "../../browser/story-helpers/reading-target";
 import { openForces, openGalaxyCommand } from "../../browser/galaxy-navigation";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
@@ -580,7 +581,11 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
         } finally {
           await observer.setViewportSize(original);
         }
-        await control.focus();
+        // Re-enter the selected control through ordinary keyboard traversal.
+        await control.press("Shift+Tab");
+        await observer.keyboard.press("Tab");
+        await expect(control).toBeFocused();
+        await expectReadingTarget(control);
       },
       acknowledgement: {
         spec: "The same acquired report and its positive-sized canvas survive resizing with no render error or authoritative mutation.",
