@@ -1,0 +1,426 @@
+openjdk version "21.0.11" 2026-04-21 LTS
+OpenJDK Runtime Environment Zulu21.50+19-CA (build 21.0.11+10-LTS)
+OpenJDK 64-Bit Server VM Zulu21.50+19-CA (build 21.0.11+10-LTS, mixed mode, sharing)
+v24.18.0
+1.3.13
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+/Users/anicolao/projects/games/clusterii-conversation-history/src/lib/components/FleetRoute.svelte:294:5
+Warn: Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions (svelte)
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+    <div
+      class="route-details"
+      onkeydown={readingKey}
+      inert={editing && !active && !completed}
+      role="region"
+      tabindex="0"
+      aria-label={editing && !active && !completed
+        ? "Force details"
+        : "Route details"}
+    >
+      <p class="overline">
+        Fleet {fleet?.number ?? "lost"} · {origin?.name ?? "Recorded outcome"}
+      </p>
+
+      {#if forces}<section
+          class="force-review"
+          aria-label="Confirmed route forces"
+        >
+          <section aria-label="Fleet transport manifest">
+            <h3>{active ? "Forces aboard" : "Forces to deploy"}</h3>
+            <dl>
+              <div>
+                <dt>Fighters aboard</dt>
+                <dd>{forces.fighters}</dd>
+              </div>
+              <div>
+                <dt>Infantry aboard</dt>
+                <dd>{forces.infantry}</dd>
+              </div>
+              <div class="capacity">
+                <dt>Transport capacity</dt>
+                <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+                <meter
+                  min="0"
+                  max={Math.max(1, forces.capacity)}
+                  value={forces.infantry}
+                  aria-label="Infantry transport capacity"
+                ></meter>
+              </div>
+            </dl>
+          </section>
+          {#if !committed || committed.status !== "traveling"}<section
+              aria-label="Confirmed origin defense"
+            >
+              <h3>
+                Remaining at {origin?.name ?? "origin"}
+              </h3>
+              <dl>
+                <div>
+                  <dt>Orbit garrison</dt>
+                  <dd>
+                    {forces.orbit === null
+                      ? "Unknown"
+                      : forces.orbit + " fighters"}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Surface garrison</dt>
+                  <dd>
+                    {forces.surface === null
+                      ? "Unknown"
+                      : forces.surface + " infantry"}
+                  </dd>
+                </div>
+                <div class="capacity">
+                  <dt>Other own stationed fleets</dt>
+                  <dd>
+                    {forces.otherFighters} fighters · {forces.otherInfantry} infantry
+                  </dd>
+                </div>
+              </dl>
+              <p>
+                Confirmed now; other orders and ticks can change these forces
+                before departure. Garrison counts already exclude this fleet.
+              </p>
+            </section>{/if}
+        </section>{/if}
+      {#if committed}<p class="outcome" role="status">
+          {committed.status === "traveling" ? "Traveling" : "At waypoint"} · {view.stars.find(
+            (s) => s.id === committed.to,
+          )?.name} · arrival tick {committed.arrivalTick}.
+        </p>{:else if accepted}<p class="outcome" role="status">
+          Route accepted · departure tick {accepted.effectiveTick} · first arrival
+          tick
+          {accepted.effectiveTick + (acceptedLegs[0]?.ticks ?? 0)}, subject to
+          execution validation.
+        </p>{/if}
+      {#each view.military?.ledger.filter((e) => e.fleetId === fleetId && ["arrived", "destroyed", "halted"].includes(e.result)) ?? [] as e}<p
+          class="outcome"
+          role="status"
+        >
+          {e.result === "arrived"
+            ? "Arrived"
+            : e.result === "destroyed"
+              ? "Fleet destroyed"
+              : "Route halted"} at {view.stars.find((s) => s.id === e.starId)
+            ?.name}. {e.fighters} fighters · {e.infantry} infantry aboard.
+        </p>{/each}
+      {#each view.military?.arrivals ?? [] as report}<article
+          aria-label="Arrival report"
+        >
+          <h3>
+            {view.stars.find((s) => s.id === report.starId)?.name} · tick {report.tick}
+          </h3>
+          <p>
+            {report.contested ? "Contested arrival" : "Arrival resolved"}. Your
+            forces: {report.fightersBefore} → {report.fightersAfter} fighters; {report.infantryBefore}
+            → {report.infantryAfter} infantry, including the surface.
+          </p>
+          <p>
+            Orbit: {view.roster[report.orbit]?.alias ?? "Unclaimed"}. Surface: {view
+              .roster[report.surface]?.alias ?? "Unclaimed"}.
+          </p>
+          {#if report.contested}<p>
+              Orbital order: {report.order
+                .map((i) => view.roster[i].alias)
+                .join(" → ")}. The incumbent defends first.
+            </p>{/if}
+        </article>{/each}
+      {#if active}<ol aria-label="Route waypoints">
+          {#each committed?.waypoints ?? accepted?.waypoints ?? [] as id}<li>
+              {view.stars.find((s) => s.id === id)?.name}
+            </li>{/each}
+        </ol>{/if}
+    </div>
+    <footer bind:offsetHeight={footerHeight}>
+
+====================================
+svelte-check found 0 errors and 1 warning in 1 file
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 42ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+$ bun test tests/unit.test.ts tests/galaxy-labels.test.ts tests/campaign.test.ts tests/travel.test.ts tests/fleet-contacts.test.ts tests/conversations.test.ts tests/briefing.test.ts tests/trades.test.ts tests/selected-observer.test.ts tests/current-result.test.ts tests/motion-preference.test.ts tests/detail-preference.test.ts tests/science-rate.test.ts tests/galaxy-framing.test.ts
+bun test v1.3.13 (bf2e2cec)
+
+tests/motion-preference.test.ts:
+(pass) explicit reduction persists and OS reduction cannot be overridden [0.60ms]
+(pass) cross-tab changes and unavailable storage preserve honest usable state
+(pass) shared feedback cancels active motion on local reduction without replaying the event
+
+tests/campaign.test.ts:
+(pass) review rules generate persisted, reproducible, fair connected galaxies for every roster size [104.39ms]
+(pass) development admission enforces quota, idempotency, stale claims, scheduled start and private views [1.77ms]
+(pass) split ownership omits opposing layer values from serialized views [0.16ms]
+(pass) private projections are independent of opposing-layer values for every control combination [3.80ms]
+(pass) maintenance freezes scheduled time and rejects admissions without changing holdings [0.79ms]
+(pass) epoch activation resumes only paused members and permanently records mock exposure [0.18ms]
+(pass) exact production floors review exponents, preserves milliunits and apportions stable ties [0.28ms]
+(pass) home production conserves credits, whole forces and fractional remainders; science advances only after output [4.49ms]
+(pass) split control routes production by layer, releases escrow once and hides opposing ledgers [2.13ms]
+(pass) production force caps record discarded units and legacy campaigns retain their stored capability [0.55ms]
+(pass) production pause preserves the remaining interval and legacy starts never gain an economy [0.35ms]
+(pass) investing is applied once before wallet/escrow apportionment and neutral developments produce nothing [0.54ms]
+(pass) research admission assigns future cutoff, rejects foreign/stale/paused/legacy orders and keeps queues private [1.29ms]
+(pass) research selections settle in admitted order, retain unfinished progress and transfer capped bank exactly once [1.84ms]
+(pass) construction reserves exact escalating prices, serial layer capacity and future cutoffs without overspending [1.93ms]
+(pass) four construction advances produce on completion and distribute one bounded dividend from frozen markets [2.26ms]
+(pass) cancellation settles at its assigned tick with full or half refund and cannot repeat [2.98ms]
+(pass) split-layer construction privacy, pre-execution invalidation and capture cancellation preserve exact refunds [1.94ms]
+(pass) construction layer queues start successors without an immediate advance and dividend escrow conserves its pool [3.25ms]
+(pass) market focus validates exact allocation, membership, private orders and future boundary [1.19ms]
+(pass) focus applies in sequence but completion dividends use the previous tick allocation [2.91ms]
+(pass) focus admission is bounded, ordered and zero-weight completion pools pay nothing [13.56ms]
+(pass) scans use one private draw per target, frozen levels and nearest orbital source [2.29ms]
+(pass) stale observations preserve old permitted facts and never expose current enemy secrets or draws [2.35ms]
+(pass) split ownership grants only observed fields; no sensor means stale and legacy capability remains unchanged [2.65ms]
+(pass) server observation draws are stable and domain-separated without public replay secrets [0.45ms]
+Stellar observation envelope budget {
+  mode: "mock",
+  bytes: 563611,
+  players: 12,
+  stars: 384,
+}
+Stellar observation envelope budget {
+  mode: "real",
+  bytes: 563432,
+  players: 12,
+  stars: 384,
+}
+(pass) the largest stellar catalogue retains complete reports within the canonical envelope budget [25.01ms]
+(pass) observation storage reserves complete reports before admitting excess pending work [5.84ms]
+(pass) fleet admission reserves without moving forces; boundary settlement conserves units and rejects duplicate reservations [2.96ms]
+(pass) fleet validation, layer entitlement and private views fail closed [2.91ms]
+(pass) formed and reserved fleet units count toward the empire production ceiling [1.06ms]
+(pass) fleet slots include reservations and enforce the recorded empire limit [22.97ms]
+(pass) state capacity cannot block disbanding that frees persistent fleet storage [638.56ms]
+Disband recovery envelope budget {
+  mode: "mock",
+  bytes: 933747,
+}
+Disband recovery envelope budget {
+  mode: "real",
+  bytes: 933568,
+}
+(pass) the disbanding recovery budget fits both encrypted envelope formats [17.04ms]
+(pass) two commanders using one command UUID retain independent fleet identities and forces [1.27ms]
+(pass) cargo reservations share surface inventory and conserve fleet/system forces across load and unload [2.07ms]
+(pass) cargo fails closed on forged fields, lost layer ownership, capacity changes and absent fleets [5.88ms]
+(pass) fleet acknowledgement reconciles only its authoritative outcome and never invents a future transfer [2.29ms]
+(pass) split and merge conserve stationed complements, reserve slots and lock every participant [2.10ms]
+(pass) reorganization rejects forged or incompatible fleets and preserves orthogonal surface control [6.35ms]
+(pass) pending splits reserve the shared fleet limit against formation and other splits [1.91ms]
+(pass) fleet cancellation releases only owned reservations before the exact cutoff [1.18ms]
+(pass) cancelling all stationed operations preserves forces and releases both merge participants [4.41ms]
+
+tests/unit.test.ts:
+(pass) JSON, Unicode, escaping, null and newlines round trip through object and grant [1.19ms]
+(pass) wrong keys, modified bodies, game, recipient, epoch and revision fail closed [0.37ms]
+(pass) profile reducer validates data and rejects lost updates [0.23ms]
+(pass) campaign sign-in return accepts only canonical IDs and retains the preview base [0.20ms]
+(pass) Continue uses accessible active metadata and the remembered selection only [0.27ms]
+(pass) AES-GCM reads an independent OpenSSL vector with authenticated Cluster metadata [0.47ms]
+(pass) real envelopes and recipient grants reject substitution and never accept mock data [0.91ms]
+(pass) acknowledgements bind exact payload and admission path independently of JSON property order [0.31ms]
+(pass) market drafts preserve incomplete intent, follow untouched authority and isolate account/access scopes [0.89ms]
+
+tests/trades.test.ts:
+(pass) credit offers reserve exact amounts and settle both sides once without a dividend [1.83ms]
+(pass) only named participants see terms and outcomes, with no account IDs or opponent wallet [0.96ms]
+(pass) authorization, exact terms, affordability and revision guards leave canonical state unchanged [2.05ms]
+(pass) first admitted acceptance or withdrawal wins and all cancellation paths conserve reservations [1.47ms]
+(pass) strict tick cutoff and expiry precede settlement during catch-up [0.87ms]
+(pass) overflow fails the complete exchange and returns both reservations without partial credit [1.67ms]
+(pass) credit input accepts exact milliunits without float rounding or scientific notation [0.08ms]
+(pass) co-faction commanders retain distinct trade identities and private entitlements [0.99ms]
+
+tests/travel.test.ts:
+(pass) route geometry uses exact Euclidean range separately from speed and validates each leg [0.70ms]
+(pass) route admission is private, revision-bound, strict, cancellable and does not move forces [2.74ms]
+(pass) travel conserves complements, resolves neutral layers, stops at waypoints and revalidates onward range [4.30ms]
+(pass) integer combat follows square-law coefficients and defender-first linear frontage [0.07ms]
+(pass) simultaneous hostile arrival is permutation-stable, capacity-safe and reports only to participants [3.33ms]
+(pass) fleet sensors use confirmed in-flight positions without disclosing the private route [1.93ms]
+(pass) hostile surface arrival ends the onward route even with friendly orbital control [2.20ms]
+Route capacity fixture {
+  admitted: 142,
+  refused: true,
+}
+(pass) route admission reserves multi-fleet departure and arrival growth within both encrypted document limits [159.41ms]
+(pass) split occupation routes each output by layer and releases escrow once with recipient-only loss reports [5.16ms]
+(pass) arrival history deduplicates repeated snapshots while retaining older recorded details [2.92ms]
+(pass) submitted route recovery requires the accessible matching fleet and preserves newer local edits [1.10ms]
+(pass) route memory and submitted recovery preserve newer intent across navigation and retirement [1.50ms]
+(pass) route review retains exact garrison without subtracting formed forces twice or revealing the opposite layer [0.85ms]
+
+tests/fleet-contacts.test.ts:
+(pass) fleet scans persist one target draw and project exact acquired facts without private identifiers or routes [1.77ms]
+(pass) failed scans publish no contact; stale history retains only acquired positions [1.69ms]
+(pass) scan outcomes survive JSON reload and future navigation orders without exposing hidden destinations [1.49ms]
+(pass) frozen scanning level, missing sensors, invalid draws and legacy capability are explicit [1.19ms]
+(pass) incomplete persisted scan matrices fail closed instead of exposing an unverified contact [1.41ms]
+(pass) moving contacts use the confirmed position and never publish the planned destination [1.89ms]
+(pass) an empire without an orbital or fleet sensor acquires no contacts and consumes no target draw [1.12ms]
+
+tests/briefing.test.ts:
+(pass) visit checkpoints are private, monotonic and change no gameplay or message-read state [1.34ms]
+(pass) visit validation rejects forged periods and nonmembers without mutation [0.66ms]
+(pass) briefing requires an exact baseline, deduplicates production and reports layer losses explicitly [1.17ms]
+(pass) briefing includes only received message metadata and does not mark messages read [1.72ms]
+(pass) briefing retains construction completion once and excludes outcomes before the saved visit [1.95ms]
+(pass) illustrated briefing derives mixed control, arrivals, construction and received-message reports from production reducers [3.68ms]
+(pass) eight-seat briefings distinguish co-faction authors and safely label legacy identity [3.37ms]
+(pass) commander identity rejects missing or invalid seat indices without faction inference [1.31ms]
+
+tests/galaxy-framing.test.ts:
+(pass) camera framing contains the unchanged authorized catalogue at phone, desktop, large and short map aspects [1.56ms]
+(pass) route camera fits actual inclined and reordered endpoints across viewport changes [0.56ms]
+
+tests/selected-observer.test.ts:
+(pass) superseded selection rejects late data and errors and retires delayed subscription
+(pass) current observer preserves ownership of cleanup and propagates initialization failure
+
+tests/current-result.test.ts:
+(pass) a superseded snapshot error cannot replace a newer saved identity
+(pass) current errors remain actionable and retired successes cannot restore identity [0.28ms]
+
+tests/science-rate.test.ts:
+(pass) current rate is available before first output and equals unchanged next settlement [4.23ms]
+(pass) current earned Innovation differs from previous delivered output without changing settlement timing [4.01ms]
+(pass) science sources follow orbital entitlement, omit opposing fields and sum before Innovation [0.87ms]
+
+tests/detail-preference.test.ts:
+(pass) detail preference waits for initialization and persists browser-local selection [0.21ms]
+(pass) storage denial is explicit while the current-page setting still works
+(pass) late decorative texture cannot restore a retired render generation
+
+tests/conversations.test.ts:
+(pass) future-only admission never grants an invited player earlier message plaintext [1.43ms]
+(pass) concurrent senders share one server sequence without rejecting unrelated campaign revisions [1.68ms]
+(pass) removal fences stale sends and rejoining grants no messages sent during absence [1.75ms]
+(pass) only the creator manages membership and closure; members leave without erasing earlier records [2.29ms]
+(pass) validation and room conflicts preserve authoritative state and never alter economic or military state [1.54ms]
+(pass) selected history requires explicit acceptance and projects only granted bodies [2.35ms]
+(pass) selected references reject invalid scopes, stale membership and unbounded or duplicate history [1.18ms]
+
+tests/galaxy-labels.test.ts:
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars [0.16ms]
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.21ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes [0.03ms]
+
+ 113 pass
+ 0 fail
+ 4522 expect() calls
+Ran 113 tests across 14 files. [1281.00ms]
+$ node --test scripts/check-recovery-settlement.test.mjs scripts/check-emulator-post-marker.test.mjs scripts/check-verification-reuse.test.mjs scripts/check-profile-ingress-observer.test.mjs scripts/check-story-bootstrap.test.mjs scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.563916ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.310584ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (2.619084ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (10.419959ms)
+✔ a roster without a scheduled start does not fabricate a time (0.095708ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.39925ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.247334ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.683084ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.388208ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.546625ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.934416ms)
+✔ unrelated campaigns retain every production entropy input (0.065833ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.292959ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.584458ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (3.1805ms)
+✔ emulator selection is exact and exported categories cannot include document or identity metadata (1.032666ms)
+✔ unsafe invocation reports only a fixed guard category and unit tooling cannot claim the story observation (44.687ms)
+✔ actual jcmd acquisition uses the checked-in JFC and completes a parseable recording (4869.282875ms)
+✔ real Nix JDK recording exports bounded wait evidence without JVM metadata (470.485417ms)
+✔ streamed JFR events preserve aggregation across escaped strings and chunk boundaries (0.481791ms)
+✔ export failures retain classified process facts without output or exception contents (284.745125ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.700542ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.610125ms)
+✔ membership fault requires demo loopback and reviewed source hashes (2.325625ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.472125ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.125541ms)
+✔ restoration refuses concurrent head, membership or directory writes (0.125333ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.93025ms)
+✔ unrelated campaigns retain every original entropy input (0.091666ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.255125ms)
+✔ binary metadata correlation is bounded and never returns source identifiers or secrets (1.568542ms)
+✔ native HTTP observer preserves body, headers, status and response while separating arrival/close (12.2915ms)
+✔ diagnostic cap is explicit and does not prevent subsequent HTTP responses (12.848041ms)
+✔ successful CI cannot accept absent, unmatched or uncorrelated ingress evidence (1.538416ms)
+✔ entry permits exactly the frozen feature010 phone verification (2.274958ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (38.283667ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.04425ms)
+✖ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.992959ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.137417ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (15.255375ms)
+✔ generated Svelte aliases must precede Playwright's first configuration read (3.081542ms)
+✔ story runner awaits alias generation before building and launching any cohort (0.322083ms)
+Previous story evidence preserved at /tmp/nix-shell.cjdMge/cluster-cohort-test-ySMBHb/.story-cohorts-mryAxP/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.cjdMge/cluster-cohort-test-ySMBHb/.story-cohorts-mryAxP/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (10.847209ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.57225ms)
+✔ interruption retains current artifacts and launches no successor (1.623166ms)
+✔ an artifact path collision fails rather than overwriting either result (3.760916ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.875708ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.865333ms)
+✔ capture policy protects each exact comparison, readiness and review guard (1.032583ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (9.187875ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.375208ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.54625ms)
+✔ index acquisition preserves every mode/path beyond the default child buffer and matches the complete repository (164.777292ms)
+✔ only the explicit report allowlist can change without changing verification inputs (0.413792ms)
+✔ reuse requires exact scope, provenance and an earlier source; outcomes never turn failure or pending into success (0.213958ms)
+✔ workflow check names, full execution branches and evidence retention remain present (0.559541ms)
+✔ prepare executes normal checks for absent, invalid, expired, unavailable or unrelated evidence (0.700208ms)
+✔ prepare and wait pin a real executor; pending becomes its failure or retained success, never a manufactured pass (0.743916ms)
+✔ chained plans resolve the original checkout and reject a substituted unrelated executor (0.163959ms)
+✔ wait falls back to real tests on missing evidence/API, but preserves a pending or failed source gate (0.337584ms)
+✔ plan archive reader checks size/hash, expiry and bounded JSON with actual ZIP fixtures (100.414375ms)
+ℹ tests 61
+ℹ suites 0
+ℹ pass 60
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5734.253167
+
+✖ failing tests:
+
+test at scripts/check-recovery-settlement.test.mjs:133:1
+✖ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.992959ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+    '[ "$#" -eq 2 ] || exit 2\n' +
+      '    case "$2" in\n' +
+      '      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n' +
+      '      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n' +
+  +   '      science-components-candidates) node scripts/recovery-science.mjs "$2" ;;\n' +
+      '      feature010-phone-candidates) node scripts/recovery-candidates.mjs "$2" ;;\n' +
+      '      *) exit 2 ;;\n' +
+      '    esac'
+  
+      at TestContext.<anonymous> (file:///Users/anicolao/projects/games/clusterii-conversation-history/scripts/check-recovery-settlement.test.mjs:139:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '[ "$#" -eq 2 ] || exit 2\n    case "$2" in\n      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n      science-components-candidates) node scripts/recovery-science.mjs "$2" ;;\n      feature010-phone-candidates) node scripts/recovery-candidates.mjs "$2" ;;\n      *) exit 2 ;;\n    esac',
+    expected: '[ "$#" -eq 2 ] || exit 2\n    case "$2" in\n      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n      feature010-phone-candidates) node scripts/recovery-candidates.mjs "$2" ;;\n      *) exit 2 ;;\n    esac',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+error: script "test:story-policy" exited with code 1

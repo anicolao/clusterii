@@ -891,3 +891,5 @@ Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | 
 Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Establish local Home and End reading access with real shared components while retaining held live views and exact Linux request status
 
 Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Preserve final integration and workflow guards while Linux evidence remains bound to its single immutable executor
+
+Prompt 192 | 2833084b7c3282292c0cc7a518b1494f9c11d9cc00b0b269c1b7aae4cf2191ee | Preserve integrated policy failure and reconcile its exact dispatch allowlist with the validated science-only command
