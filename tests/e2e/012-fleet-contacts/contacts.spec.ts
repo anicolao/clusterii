@@ -11,7 +11,10 @@ import { distance } from "../../../shared/galaxy";
 import { test, expect } from "../helpers/fixtures";
 import { TestStepHelper } from "../helpers/test-step-helper";
 import { login, grantDeveloper } from "../../browser/helpers";
-import { admissionAt, scheduledAt } from "../../browser/story-helpers/admission-clock.mjs";
+import {
+  admissionAt,
+  scheduledAt,
+} from "../../browser/story-helpers/admission-clock.mjs";
 import { installContactEntropy } from "../../browser/story-helpers/contact-entropy.mjs";
 import {
   contactInputs,
@@ -546,6 +549,58 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       ],
       views: views(),
     });
+    const beforeContactResize = await canonical();
+    await story.step("select-and-resize-contact", {
+      actor: aliases[1],
+      description:
+        "Select the acquired fleet by keyboard, resize its real contact instrument across compact/wide layouts, and return to the original reading size.",
+      action: async () => {
+        const control = contacts(observer)
+          .getByRole("group", { name: "Observed fleets", exact: true })
+          .getByRole("button", {
+            name: new RegExp(acquired.owner + " · Fleet " + acquired.number),
+          });
+        await control.focus();
+        await control.press("Enter");
+        await expect(control).toHaveAttribute("aria-pressed", "true");
+        const original = observer.viewportSize()!;
+        try {
+          await observer.setViewportSize(
+            original.width < 760
+              ? { width: 1024, height: 768 }
+              : { width: 393, height: 852 },
+          );
+          const canvas = contacts(observer).locator("canvas");
+          await expect(canvas).toBeInViewport({ ratio: 1 });
+          const box = await canvas.boundingBox();
+          expect(box!.width).toBeGreaterThan(0);
+          expect(box!.height).toBeGreaterThan(0);
+          await rail(observer);
+          await matchContact(observer, acquired, true);
+        } finally {
+          await observer.setViewportSize(original);
+        }
+        await control.focus();
+      },
+      acknowledgement: {
+        spec: "The same acquired report and its positive-sized canvas survive resizing with no render error or authoritative mutation.",
+        check: async () => {
+          await matchContact(observer, acquired, true);
+          await expect(contacts(observer).locator("canvas")).toBeInViewport({
+            ratio: 1,
+          });
+          expect(errors).toEqual([]);
+          expect(await canonical()).toEqual(beforeContactResize);
+        },
+      },
+      verifications: [
+        {
+          spec: "Existing authorized projection and force conservation remain unchanged.",
+          check: privacy,
+        },
+      ],
+      views: views(),
+    });
     await readFacts("read-current-coordinates", acquired, true);
     const missedTick = Array.from(
       { length: 94 },
@@ -580,9 +635,12 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           // response arrives. Wait for the actual loaded head, not old facts.
           await expect(button(observer, "Refresh observations")).toHaveCount(0);
           await expect(
-            contacts(observer).getByText("Loading authorized contact records…", {
-              exact: true,
-            }),
+            contacts(observer).getByText(
+              "Loading authorized contact records…",
+              {
+                exact: true,
+              },
+            ),
           ).toHaveCount(0);
           await expect(contacts(observer).getByRole("alert")).toHaveCount(0);
           await matchContact(observer, retained!, false);
@@ -624,9 +682,12 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           // response arrives. Wait for the actual loaded head, not old facts.
           await expect(button(observer, "Refresh observations")).toHaveCount(0);
           await expect(
-            contacts(observer).getByText("Loading authorized contact records…", {
-              exact: true,
-            }),
+            contacts(observer).getByText(
+              "Loading authorized contact records…",
+              {
+                exact: true,
+              },
+            ),
           ).toHaveCount(0);
           await expect(contacts(observer).getByRole("alert")).toHaveCount(0);
           await matchContact(observer, retained!, false);
@@ -676,6 +737,47 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           player: aliases[1],
           surface: "game",
           primary: [button(observer, "Fleet contacts")],
+        },
+      ],
+    });
+    await story.step("review-galaxy-overview", {
+      actor: aliases[1],
+      description:
+        "Open the real systems list by keyboard, request the catalogue overview, and close it without changing the retained contact or campaign.",
+      action: async () => {
+        await openGalaxyCommand(observer, "Systems list", true);
+        const overview = observer
+          .getByRole("dialog", { name: "Systems list", exact: true })
+          .getByRole("button", { name: "Overview", exact: true });
+        await overview.focus();
+        await overview.press("Enter");
+      },
+      acknowledgement: {
+        spec: "Overview returns keyboard focus to the systems opener, with a visible chart and no render error.",
+        check: async () => {
+          await expect(button(observer, "Systems list")).toBeFocused();
+          await expect(
+            observer.getByRole("dialog", { name: "Systems list", exact: true }),
+          ).toHaveCount(0);
+          await expect(observer.locator(".chart canvas")).toBeInViewport({
+            ratio: 1,
+          });
+          expect(errors).toEqual([]);
+          expect(await canonical()).toEqual(beforeReload);
+        },
+      },
+      verifications: [
+        {
+          spec: "The catalogue camera action preserves private observations and forces.",
+          check: privacy,
+        },
+      ],
+      views: [
+        {
+          page: observer,
+          player: aliases[1],
+          surface: "game",
+          primary: [button(observer, "Systems list")],
         },
       ],
     });
