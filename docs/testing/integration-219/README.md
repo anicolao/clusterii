@@ -13,3 +13,9 @@ Full application service stage passed35 tests with0 failures; procedural browser
 The new exact two-family orchestration and existing contact/settlement guards pass18 tests; the initial dispatch assertion failed because its exact allowlist had not yet included the newly authorized batch. The original failure is retained in batch-tests.log, then the expected exact case list was updated (no wildcard) and all18 passed. Five final batch checks pass after adding separate emulator-log retention. Seventeen historical query/pair/request guard checks pass. Updated full story-policy passes, including four baseline-path cases; required check definitions remain unchanged.
 
 The batch request is not yet created or dispatched. See NONPRODUCTION_AUDIT.md for the safe FF boundary and still-open gates. PR140 remains unchanged.
+
+## Terminal application result
+
+The single application execution at2caac404 exited0. Service:35passed/22configured skips/2512assertions. Browser:36passed/3configured skips in37.3minutes, including the original real construction/start/first-production waits. Ingress verifier:171arrivals/171completed tagged requests, coverageLimited:true. Unit:115passed/4670assertions. Full log and absolute retained-file hash inventory are committed here. Hosted/KMS and broader strict acceptance are not established by these local results.
+
+The four-file client production and story inputs remain byte-identical to26d471d7; later recovery preparation does not change application inputs. Required check definitions and approved reference files remain unchanged. The next isolated request binds the clean preparation parent and its executor, producing contact96 plus live science77 candidates for independent review. No PR140 update is made.
