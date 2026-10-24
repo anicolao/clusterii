@@ -19,22 +19,36 @@ async function readDelivered(panel: import("@playwright/test").Locator) {
   await expect(reading).toBeFocused();
   // End targets lower prose. Read the complete Empire total instrument,
   // including its heading, with ordinary bounded keyboard movement.
-  for (let i = 0; i < 12; i++) {
-    const fits = await heading.evaluate((e) => {
-      const r = e.getBoundingClientRect(),
-        p = e
-          .closest('[aria-label="Science source ledger"]')!
-          .getBoundingClientRect();
-      return r.top >= p.top && r.bottom <= p.bottom;
-    });
-    if (fits) break;
-    await panel.page().keyboard.press("ArrowUp");
-    await panel.page().evaluate(
-      () =>
-        new Promise<void>((resolve) =>
-          requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
-        ),
-    );
+  // Resolve this unchanged heading once for the keyboard reading operation.
+  // Final locator-based assertions still verify the current rendered instrument.
+  const headingNode = await heading.elementHandle();
+  expect(headingNode).not.toBeNull();
+  try {
+    for (let i = 0; i < 12; i++) {
+      const fits = await headingNode!.evaluate((e) => {
+        if (!e.isConnected)
+          throw new Error("Science heading detached while reading");
+        const r = e.getBoundingClientRect(),
+          p = e
+            .closest('[aria-label="Science source ledger"]')!
+            .getBoundingClientRect();
+        return r.top >= p.top && r.bottom <= p.bottom;
+      });
+      if (fits) break;
+      await panel.page().keyboard.press("ArrowUp");
+      await panel
+        .page()
+        .evaluate(
+          () =>
+            new Promise<void>((resolve) =>
+              requestAnimationFrame(() =>
+                requestAnimationFrame(() => resolve()),
+              ),
+            ),
+        );
+    }
+  } finally {
+    await headingNode!.dispose();
   }
   await expect(reading).toBeFocused();
   await expectReadingTarget(heading, false);
