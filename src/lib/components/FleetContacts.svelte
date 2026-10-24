@@ -186,6 +186,7 @@
     min-height: 0;
     overflow: auto;
     overscroll-behavior: contain;
+    scroll-padding-block: 16px;
     padding: 24px;
     line-height: 1.5;
   }
@@ -240,6 +241,7 @@
     text-align: left;
   }
   .contact-list :global(button) {
+    scroll-margin-block: 16px;
     display: flex;
     flex-direction: column;
   }

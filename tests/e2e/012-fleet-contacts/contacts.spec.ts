@@ -586,6 +586,31 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
         await observer.keyboard.press("Tab");
         await expect(control).toBeFocused();
         await expectReadingTarget(control);
+        await expect
+          .poll(() =>
+            control.evaluate((element) => {
+              const style = getComputedStyle(element),
+                box = element.getBoundingClientRect();
+              const details = element.closest(
+                '[aria-label="Contact details"]',
+              )!;
+              const clip = details.getBoundingClientRect();
+              const paint =
+                style.outlineStyle === "none"
+                  ? 0
+                  : Math.max(
+                      0,
+                      parseFloat(style.outlineWidth) +
+                        parseFloat(style.outlineOffset),
+                    );
+              return (
+                box.top - paint >= clip.top + details.clientTop &&
+                box.bottom + paint <=
+                  clip.top + details.clientTop + details.clientHeight
+              );
+            }),
+          )
+          .toBe(true);
       },
       acknowledgement: {
         spec: "The same acquired report and its positive-sized canvas survive resizing with no render error or authoritative mutation.",
