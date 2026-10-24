@@ -1,0 +1,233 @@
+$ node --test scripts/check-recovery-settlement.test.mjs scripts/check-emulator-post-marker.test.mjs scripts/check-verification-reuse.test.mjs scripts/check-profile-ingress-observer.test.mjs scripts/check-story-bootstrap.test.mjs scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.391375ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.296875ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.503584ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (10.291959ms)
+✔ a roster without a scheduled start does not fabricate a time (0.095542ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.589167ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.477625ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.756375ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.833666ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.900917ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.905ms)
+✔ unrelated campaigns retain every production entropy input (0.065417ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.190583ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.390917ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.491542ms)
+✔ emulator selection is exact and exported categories cannot include document or identity metadata (0.960417ms)
+✔ unsafe invocation reports only a fixed guard category and unit tooling cannot claim the story observation (45.924417ms)
+✔ actual jcmd acquisition uses the checked-in JFC and completes a parseable recording (4249.122917ms)
+✔ real Nix JDK recording exports bounded wait evidence without JVM metadata (497.031083ms)
+✔ streamed JFR events preserve aggregation across escaped strings and chunk boundaries (0.45475ms)
+✔ export failures retain classified process facts without output or exception contents (285.058042ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.385791ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.595834ms)
+✔ membership fault requires demo loopback and reviewed source hashes (0.971542ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.270083ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.104917ms)
+✔ restoration refuses concurrent head, membership or directory writes (0.113084ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (1.0195ms)
+✔ unrelated campaigns retain every original entropy input (0.257292ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.360083ms)
+✔ binary metadata correlation is bounded and never returns source identifiers or secrets (0.976917ms)
+✔ native HTTP observer preserves body, headers, status and response while separating arrival/close (11.894792ms)
+✔ diagnostic cap is explicit and does not prevent subsequent HTTP responses (12.911583ms)
+✔ successful CI cannot accept absent, unmatched or uncorrelated ingress evidence (1.390333ms)
+✔ entry permits exactly the frozen feature010 phone verification (1.284291ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (36.1905ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.13575ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.456917ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.166333ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (15.395084ms)
+✔ generated Svelte aliases must precede Playwright's first configuration read (2.794541ms)
+✔ story runner awaits alias generation before building and launching any cohort (0.244791ms)
+Previous story evidence preserved at /tmp/nix-shell.vmDUvJ/cluster-cohort-test-GdOysP/.story-cohorts-5mBbPF/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.vmDUvJ/cluster-cohort-test-GdOysP/.story-cohorts-5mBbPF/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (9.490583ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.550333ms)
+✔ interruption retains current artifacts and launches no successor (2.1075ms)
+✔ an artifact path collision fails rather than overwriting either result (3.857625ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (2.023041ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.858458ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.966958ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (9.737625ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.406208ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.396ms)
+✔ index acquisition preserves every mode/path beyond the default child buffer and matches the complete repository (160.772167ms)
+✔ only the explicit report allowlist can change without changing verification inputs (0.335917ms)
+✔ reuse requires exact scope, provenance and an earlier source; outcomes never turn failure or pending into success (0.178208ms)
+✔ workflow check names, full execution branches and evidence retention remain present (0.548834ms)
+✔ prepare executes normal checks for absent, invalid, expired, unavailable or unrelated evidence (0.799125ms)
+✔ prepare and wait pin a real executor; pending becomes its failure or retained success, never a manufactured pass (0.721458ms)
+✔ chained plans resolve the original checkout and reject a substituted unrelated executor (0.166458ms)
+✔ wait falls back to real tests on missing evidence/API, but preserves a pending or failed source gate (0.331ms)
+✔ plan archive reader checks size/hash, expiry and bounded JSON with actual ZIP fixtures (119.826333ms)
+ℹ tests 61
+ℹ suites 0
+ℹ pass 61
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5136.518333
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ playwright test --config playwright.paths.config.ts
+
+Running 4 tests using 1 worker
+
+
+(node:39018) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:39276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/4] [desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:39534) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/4] [large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:39796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] [short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4 passed (1.5s)

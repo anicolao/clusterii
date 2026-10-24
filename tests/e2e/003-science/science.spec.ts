@@ -179,7 +179,7 @@ test("Inspect authoritative science rate and recover earned output", async ({
       const rail = await page.locator(".command-rail").boundingBox();
       expect(panel).not.toBeNull();
       expect(rail).not.toBeNull();
-      expect(panel!.y).toBeGreaterThanOrEqual(rail!.y + rail!.height);
+      expect(panel!.y).toBeGreaterThanOrEqual(rail!.y + rail!.height + 7.5);
       await info.attach(`science-rail-${stage}`, {
         body: JSON.stringify({
           viewport: info.project.name,
@@ -277,6 +277,7 @@ test("Inspect authoritative science rate and recover earned output", async ({
           {
             spec: "Credits, science access and Return remain contained and keyboard reachable.",
             check: async () => {
+              await railClearance(owner, "resource-credit");
               await expectReadingTarget(owner.locator(".balance"), false);
               await expectReadingTarget(
                 button(owner, "Inspect science per tick"),
@@ -368,10 +369,12 @@ test("Inspect authoritative science rate and recover earned output", async ({
         await expect(rateButton(owner)).toBeFocused();
         if (info.project.name === "phone") await keyboard(owner, "More");
         await keyboard(owner, "Economy");
+        await railClearance(owner, "ordinary-research-open");
         const radio = owner.getByRole("radio", { name: /^innovation/ });
         await radio.focus();
         await owner.keyboard.press("Space");
         await expect(radio).toBeChecked();
+        await expectReadingTarget(button(owner, "Queue innovation"));
         await keyboard(owner, "Queue innovation");
       },
       acknowledgement: {
@@ -386,8 +389,10 @@ test("Inspect authoritative science rate and recover earned output", async ({
       },
       verifications: [
         {
-          spec: "The peer remains at its own initial rate and source while the owner order is accepted.",
+          spec: "The accepted ordinary Economy panel clears the measured rail with Return fully contained; the peer retains its own rate and source.",
           check: async () => {
+            await railClearance(owner, "ordinary-research-accepted");
+            await expectReadingTarget(button(owner, "Return to galaxy"));
             await expect(ledger(peer).locator(".rate")).toHaveText(
               "+1.4 / tick",
             );
@@ -463,6 +468,8 @@ test("Inspect authoritative science rate and recover earned output", async ({
       description:
         "Reload both accounts and inspect the earned new rate separately from tick15 output. The peer retains its independent sources and rate.",
       action: async () => {
+        await keyboard(owner, "Return to galaxy");
+        await expect(button(owner, "Economy")).toBeFocused();
         for (const page of [owner, peer]) {
           await page.reload();
           await openRate(page);

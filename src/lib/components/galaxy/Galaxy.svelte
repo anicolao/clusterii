@@ -2753,9 +2753,9 @@
     color: #a7edf3;
     text-align: left;
   }
-  /* The real resource rail grows with commander, labels and viewport. Match
-     the existing history inset to its measured height, not a device guess. */
-  .history-panel.science-panel {
+  /* Every Economy entry shares the measured rail clearance, including the
+     ordinary research route without resource-navigation or science classes. */
+  .history-panel.economy-panel {
     top: calc(var(--command-rail-height) + 8px);
   }
   @media (min-width: 2500px) {
@@ -3135,7 +3135,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    top: calc(var(--command-rail-height) + 8px);
   }
   .resource-panel .resource-content {
     flex: 1;
