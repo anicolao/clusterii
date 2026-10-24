@@ -18,10 +18,10 @@ const parent = "a".repeat(40),
 const fixture = () => ({
   request: {
     version: 1,
-    id: "science-20261023-01",
+    id: "science-heading-20261023-01",
     case: "science-components-candidates",
     mode: "generate",
-    target: "0f09db62776368702fc4df7d7a73aeeb39d98be8",
+    target: "d8241411431450821074267a1cad2adbaf45c766",
     sourceCommit: parent,
   },
   env: {
