@@ -907,3 +907,5 @@ Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | 
 Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Preserve Linux deadline trace and remove measured repeated locator lookup while retaining actual keyboard input and geometry checks
 
 Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Validate four-size focused-input correction and bind a separate changed-source Linux check while retaining the original deadline failure
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Request the single corrected-input Linux verification bound to 1c403f5bf7d27f216de6a044d295c93896753e0f with unchanged failure gates
