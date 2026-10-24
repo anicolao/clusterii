@@ -1,0 +1,31 @@
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.607584ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.813042ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (265.108208ms)
+✔ one complete unchanged story, generation cannot leak to verification or other cases (0.602458ms)
+✔ failed/partial/wrong-source output cannot become candidates; original failure preserved (0.24125ms)
+✔ serial preparation stops before emulator on failed build, only candidate child command (0.095417ms)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.592833ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.78025ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (266.006208ms)
+✔ original large case only, unchanged spec and no suite/generation fallback (1.161875ms)
+✔ measuring precedes one test, failures retained without retry or successful substitution (0.174166ms)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.577167ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (5.466542ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (265.556542ms)
+✔ entry permits exactly the frozen feature010 phone verification (0.979459ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (35.4445ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.14325ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.358542ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.174208ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (14.21225ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 348.569208

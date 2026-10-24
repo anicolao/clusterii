@@ -138,7 +138,7 @@ test("renderer recovery dispatch uses the same pinned launcher with no suite fal
   const arm = inner.split("  recovery)\n")[1].split("    ;;", 1)[0];
   assert.equal(
     arm.trim(),
-    '[ "$#" -eq 2 ] || exit 2\n    case "$2" in\n      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n      *) exit 2 ;;\n    esac',
+    '[ "$#" -eq 2 ] || exit 2\n    case "$2" in\n      feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;\n      gallery-large) node scripts/recovery-gallery.mjs "$2" ;;\n      feature010-phone-candidates) node scripts/recovery-candidates.mjs "$2" ;;\n      *) exit 2 ;;\n    esac',
   );
   assert.doesNotMatch(arm, /test:stories|generate|application/);
   assert.match(outer, /Artifact ownership restoration failed/);
