@@ -897,3 +897,5 @@ Prompt 192 | 2833084b7c3282292c0cc7a518b1494f9c11d9cc00b0b269c1b7aae4cf2191ee | 
 Prompt 192 | 2833084b7c3282292c0cc7a518b1494f9c11d9cc00b0b269c1b7aae4cf2191ee | Batch corrected integration gates and current target ledger before the single ancestry-verified PR140 fast-forward
 
 Prompt 193 | b99d47eb9012bf067a49af5c74706502d75390f34c526e48e3a85aed0cbae455 | Retain corrected heading viewpoint and narrow directory-query timeout hypothesis without changing ongoing integrated target or requesting runs
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Preserve large reading failure and scale the actual science lab wrapper with its existing large-screen typography

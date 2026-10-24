@@ -330,7 +330,7 @@
             onselect={reset}
             onretry={frame.feedback.remedy === "network" ? reset : undefined}
           />
-        {:else if selected === "science"}<div style="height:650px">
+        {:else if selected === "science"}<div class="science-specimen">
             <ScienceLedger
               view={productionFrame(time).view}
               onclose={() => (selected = "production")}
@@ -445,6 +445,14 @@
 </section>
 
 <style>
+  .science-specimen {
+    height: 650px;
+  }
+  @media (min-width: 2500px) {
+    .science-specimen {
+      height: 900px;
+    }
+  }
   .lab {
     max-width: 1200px;
     margin: auto;
