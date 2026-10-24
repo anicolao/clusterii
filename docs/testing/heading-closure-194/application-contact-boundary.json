@@ -1,0 +1,250 @@
+{
+  "run": 40055483917,
+  "head": "d8241411431450821074267a1cad2adbaf45c766",
+  "artifact": 12546461088,
+  "traceSha256": "47a9c04a03c226a8134104f5796156d7a3085b415a5eb8db506906a5498c892e",
+  "stream": "2-trace.trace",
+  "events": [
+    {
+      "type": "after",
+      "callId": "call@12172",
+      "endTime": 529941.903,
+      "result": null
+    },
+    {
+      "type": "before",
+      "callId": "call@12174",
+      "startTime": 529949.429,
+      "method": "click",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> internal:role=button[name=\"Refresh observations\"i]",
+        "strict": true,
+        "timeout": 0
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12174",
+      "endTime": 530073.898,
+      "result": null
+    },
+    {
+      "type": "before",
+      "callId": "call@12176",
+      "startTime": 530078.286,
+      "method": "expect",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> internal:role=article[name=\"Selected fleet contact\"i]",
+        "expression": "to.have.text",
+        "expectedText": [
+          {
+            "string": "Observed tick 3",
+            "matchSubstring": true,
+            "normalizeWhiteSpace": true
+          }
+        ],
+        "expectedValue": {
+          "value": {
+            "v": "undefined"
+          },
+          "handles": []
+        },
+        "isNot": false,
+        "timeout": 5000
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12176",
+      "endTime": 530084.755,
+      "result": null
+    },
+    {
+      "type": "before",
+      "callId": "call@12178",
+      "startTime": 530090.276,
+      "method": "setViewportSize",
+      "params": {
+        "viewportSize": {
+          "width": 393,
+          "height": 852
+        }
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12178",
+      "endTime": 530099.997,
+      "result": null
+    },
+    {
+      "type": "before",
+      "callId": "call@12180",
+      "startTime": 530110.767,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> internal:role=button[name=\"Back to galaxy\"i]",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12180",
+      "endTime": 530128.244,
+      "result": {
+        "element": "<ElementHandle>"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12184",
+      "startTime": 530139.461,
+      "method": "queryCount",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12184",
+      "endTime": 530152.741,
+      "result": {
+        "value": 3
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12186",
+      "startTime": 530176.649,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible >> nth=0",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12186",
+      "endTime": 530184.308,
+      "result": {
+        "element": "<ElementHandle>"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12190",
+      "startTime": 530356.229,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible >> nth=0",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12190",
+      "endTime": 530405.125,
+      "result": {
+        "element": "<ElementHandle>"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12194",
+      "startTime": 530413.761,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible >> nth=0",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12194",
+      "endTime": 530422.988,
+      "result": {
+        "element": "<ElementHandle>"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12198",
+      "startTime": 530428.457,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible >> nth=1",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12198",
+      "endTime": 530434.997,
+      "result": {
+        "element": "<ElementHandle>"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12202",
+      "startTime": 530465.375,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible >> nth=1",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12202",
+      "endTime": 530472.182,
+      "result": {
+        "element": "<ElementHandle>"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12206",
+      "startTime": 530478.23,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible >> nth=1",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    },
+    {
+      "type": "after",
+      "callId": "call@12206",
+      "endTime": 530484.185,
+      "result": {
+        "element": "<ElementHandle>"
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@12210",
+      "startTime": 530488.489,
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=region[name=\"Fleet contacts\"s] >> :is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible >> nth=2",
+        "strict": true,
+        "timeout": 0,
+        "state": "attached"
+      }
+    }
+  ]
+}
