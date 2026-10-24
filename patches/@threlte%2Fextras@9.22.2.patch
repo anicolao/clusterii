@@ -1,0 +1,30 @@
+diff --git a/dist/components/HTML/HTML.svelte b/dist/components/HTML/HTML.svelte
+index a63f7911ab56446e73607c3c50d2343a643bcced..572e848c98935f930eaa126013aeffa5224bcaf9 100644
+--- a/dist/components/HTML/HTML.svelte
++++ b/dist/components/HTML/HTML.svelte
+@@ -88,7 +88,7 @@
+ 
+   const group = new Group()
+ 
+-  let element!: HTMLElement
++  let element = $state<HTMLElement>()
+   let oldZoom = 0
+   let oldX = 0
+   let oldY = 0
+@@ -131,6 +131,8 @@
+   })
+ 
+   export const render = () => {
++    // Binding can lag a render-stage task or clear before task teardown.
++    if (!element) return
+     camera.current.updateMatrixWorld()
+     group.updateWorldMatrix(true, false)
+     const vec = transform ? null : calculatePosition(group, camera.current, $size)
+@@ -299,6 +301,7 @@
+   $effect(() => {
+     // Track $size so resize updates the DOM synchronously, ahead of the next renderStage tick.
+     void $size
++    void element
+     untrack(render)
+   })
+ 

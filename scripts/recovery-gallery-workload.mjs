@@ -11,6 +11,7 @@ const timer=setTimeout(()=>void browser.close(),30000);timer.unref();
 try{
  const page=await browser.newPage({viewport:{width:3840,height:2160},deviceScaleFactor:1,locale:'en-US',timezoneId:'UTC',colorScheme:'dark',reducedMotion:'reduce'});
  page.setDefaultTimeout(10000);
+ result.pageErrors=[];page.on('pageerror',error=>{if(result.pageErrors.length<8)result.pageErrors.push({name:error.name,message:error.message});});
  await page.addInitScript(()=>{
   const counts={draws:0};Object.defineProperty(window,'__galleryDrawCounts',{value:counts});
   for(const type of [WebGLRenderingContext,WebGL2RenderingContext])for(const name of ['drawArrays','drawElements','drawArraysInstanced','drawElementsInstanced']){
@@ -56,6 +57,10 @@ try{
   phase.metrics=(await cdp.send('Performance.getMetrics')).metrics.filter(m=>allowed.has(m.name));
   await panel.getByRole('button',{name:'Return to galaxy',exact:true}).press('Enter');await expect(open).toBeFocused();
  }
- result.status='complete';
+ if(result.pageErrors.length)throw Error('Gallery render errors');
+ for(const phase of result.phases)if(phase.steadyDraws.after!==phase.steadyDraws.before)throw Error('Static offscreen scenes continue drawing');
+ const labels=await page.locator('.route-node').evaluateAll(nodes=>nodes.map(n=>({width:n.getBoundingClientRect().width,height:n.getBoundingClientRect().height,text:n.textContent.trim()})));
+ if(!labels.length||labels.some(n=>!n.width||!n.height||!n.text))throw Error('Projected route labels missing');
+ result.routeLabels=labels;result.status='complete';
 }catch(error){result.status='failed';result.errorName=error?.name??'Error';throw error;}
 finally{writeFileSync(output,JSON.stringify(result,null,2)+'\n');clearTimeout(timer);await browser.close();}

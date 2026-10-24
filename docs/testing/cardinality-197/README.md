@@ -15,3 +15,11 @@ Unchanged gallery build from3a705ee1; no pixel or production changes. Bounded re
 Pinned Threlte8.6.1 scheduler renders on invalidation only; extras9.22.2 HTML/OrbitControls explicitly autoInvalidate:false, damping disabled in production Scene. Scene manually invalidates overview sizing and changed camera requests. The exact recurring producer of invalidation is still unproved: debugger samples show automatic0/invalidtrue on some schedulers but invalidate-breakpoint attempts recorded no calls. Do not claim this identifies a source cause or patch accepted. No CSS hiding, removed controls, altered scene or reference changes. All initial and prior failed science families retained.
 
 PR140eaa2b57a required checks last observed running; no target update/restart, new PR or baseline promotion. Broader176/72/8 backlog remains last-completed classification.
+
+## Concrete HTML lifecycle fault and correction
+
+Exact built2J1FeWLK.js4303:3934 maps to HTML render reading element.style.zIndex before bind:this provides element. Eight bounded pageerror samples repeat the same TypeError; scheduler renderer callback invokes scheduler.run before clearing frameInvalidated, so the thrown label task prevents that reset. Function-call observation armed invalidate but saw no further call, consistent with a flag left set rather than new invalidations. This replaces the unproved generic invalidation hypothesis with a concrete local fault.
+
+Narrow Bun patch for pinned @threlte/extras9.22.2 makes element reactive, defers render while absent, and tracks binding alongside size so it renders when attached. No catch/ignore of other exceptions, no task/scene/label removal, no change to art or authoritative facts. Initial bun patch preparation failed FileNotFound and removed its package folder; frozen-lockfile/ignore-scripts restore installed exactly that one pinned package, then preparation succeeded. No dependency version change.
+
+Static check/build passed. Changed-source bounded workload now requires no pageerror, no additional static offscreen draws in the existing500ms window, and nonempty projected route labels with positive geometry. It preserves both native reduced/normal reading paths and all previous assertions; no screenshot/baseline change. Actual post-patch result follows separately.

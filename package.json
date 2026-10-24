@@ -55,5 +55,8 @@
   "packageManager": "bun@1.3.10",
   "engines": {
     "node": ">=22"
+  },
+  "patchedDependencies": {
+    "@threlte/extras@9.22.2": "patches/@threlte%2Fextras@9.22.2.patch"
   }
 }

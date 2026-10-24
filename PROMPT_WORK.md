@@ -927,3 +927,5 @@ Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | 
 Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Preserve bounded gallery CPU observations and prepare one real authenticated directory cardinality comparison with original tick budgets
 
 Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Preserve partial real-service comparison after disk-gate interruption and record current integrated checks and exact restart boundary
+
+Prompt 197 | b4747305b9b62431d89a42e335e9b1113e25f8844f169ba3309167a06e5f437f | Patch demonstrated HTML binding exception that prevents frame invalidation reset, preserving labels and all render assertions
