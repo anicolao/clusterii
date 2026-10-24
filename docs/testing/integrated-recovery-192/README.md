@@ -19,3 +19,9 @@ Latest fully classified failed140 run:64 first-failing stories ×4 sizes =256 in
 Application and strict-story results must be reported separately at the new target. Cheap source gates cannot replace either. No new full run is dispatched manually; one PR fast-forward invokes its unchanged required checks. No additional tooling is planned absent a demonstrated blocker.
 
 Pre-push integrated policy caught our own recovery-tooling regression: the older exact dispatcher assertion omitted the new science-components-candidates arm. First gate log preserved. Correct only that explicit expected arm; the full equality/no-fallback assertion and actual invalid-command rejection remain. This was not a game failure or baseline issue. package.json only adds recovery settlement policy coverage; existing policy tests are not removed. Required workflow files are unchanged.
+
+## Integrated push gate
+
+Clean tested code head5935d489: type check0errors/1existing warning; lint pass;113unit tests;61story policy tests plus4no-browser reference-path cases;20recovery orchestration tests; production build pass;280stories collected in58files. Corrected-gates.log preserves exact commands/results. Final commit adds only logs/acceptance ledger/review queue; no tested runtime input changes. Required workflow/config/helper diff remains empty. No reference PNG paths changed.
+
+Current target becomes existing PR140 branch feat/admission-briefing-composition at the fast-forward commit containing this report (exact enclosing commit is the integrated target; runtime code5935d489). Original failed0f09db62 remains in ancestry and all retained evidence. One atomic normal push updates PR140 and recovery branch together; no history rewrite. Application and strict-story statuses at publication are pending new execution, with last completed failure statuses belonging to0f09db62. Subsequent check results must be keyed to this new target, not inherited green bounded jobs.
