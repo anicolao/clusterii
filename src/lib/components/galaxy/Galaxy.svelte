@@ -3152,6 +3152,7 @@
   }
   @media (max-width: 700px) {
     .command-rail {
+      grid-template-rows: auto;
       grid-template-columns: 48px minmax(0, 1fr) 64px 44px 62px;
       gap: 4px;
       padding: 8px;
@@ -3161,6 +3162,8 @@
       display: none;
     }
     .command-rail .campaign-context {
+      grid-row: 1;
+      grid-column: 2;
       min-width: 0;
     }
     .command-rail h1 {
@@ -3180,6 +3183,8 @@
       font-weight: 400;
     }
     .command-rail :global(.phone-resources) {
+      grid-row: 1;
+      grid-column: 3;
       display: block;
       min-height: 44px;
       padding: 4px;
@@ -3187,6 +3192,12 @@
       color: #a7edf3;
       border-color: #75c9db66;
       background: #0d2530;
+    }
+    .command-rail :global(.roster-access) {
+      grid-column: 4;
+    }
+    .command-rail :global(.campaigns-access) {
+      grid-column: 5;
     }
     .command-rail :global(.roster-access),
     .command-rail :global(.campaigns-access) {
