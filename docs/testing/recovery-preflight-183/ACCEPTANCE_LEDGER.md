@@ -50,3 +50,5 @@ The inventory is read-only and deliberately conservative. It records original pa
 `LINUX_SETTLEMENT.md` records the single feature010/phone command, existing runtime and current access/launcher gaps. No whole-suite wrapper is an acceptable substitute. Obtain a bounded entry to the existing pinned Nix Linux renderer, preserve exact overlay identity and fail-fast outputs, then execute the original240s test/30s step/10s assertion budgets. First failure stops. Do not use candidate generation to bypass earlier reference failures. If a missing reference blocks before settlement, report that boundary and review the reference first.
 
 Only after this and reference/behavior gates converge should one complete integrated run be started. Required logs are consolidated in this non-PR commit; no feature expansion, history rewrite, PR closure or cancellation of unique evidence.
+
+Packaging: Git normalizes CRLF in `linux-store.log`; its original subprocess bytes are preserved separately in `linux-store-original.log.gz`. SHA256SUMS covers the committed normalized text and raw compressed original separately.
