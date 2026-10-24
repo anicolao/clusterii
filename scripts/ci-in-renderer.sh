@@ -28,6 +28,7 @@ case "$1" in
   recovery)
     [ "$#" -eq 2 ] || exit 2
     case "$2" in
+      feature010-query-phone) node scripts/recovery-query.mjs "$2" ;;
       feature010-phone) node scripts/recovery-settlement.mjs "$2" ;;
       gallery-large) node scripts/recovery-gallery.mjs "$2" ;;
       feature012-contacts-candidates) node scripts/recovery-contacts.mjs "$2" ;;

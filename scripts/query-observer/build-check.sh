@@ -8,4 +8,4 @@ javac -d "$1/fixture" scripts/query-observer/fixture/*.java
 java --add-exports java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED -cp "$1/agent" ObserverCheck "$1/fixture"
 printf 'Premain-Class: QueryObserver\n\n' > "$1/manifest"
 jar cfm "$1/observer.jar" "$1/manifest" -C "$1/agent" .
-CLUSTER_QUERY_OBSERVER_PROJECT=demo-clusterii java -Xverify:all --add-exports java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED "-javaagent:$1/observer.jar=$1/load.jsonl" -cp "$1/agent:$HOME/.cache/firebase/emulators/cloud-firestore-emulator-v1.22.0.jar" ObserverLoad
+CLUSTER_QUERY_OBSERVER_PROJECT=demo-clusterii java -Xverify:all --add-exports java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED "-javaagent:$1/observer.jar=$1/load.jsonl" -cp "$1/agent:${CLUSTER_FIRESTORE_JAR:-$HOME/.cache/firebase/emulators/cloud-firestore-emulator-v1.22.0.jar}" ObserverLoad

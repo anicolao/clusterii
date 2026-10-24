@@ -3,7 +3,7 @@
 : "${containerd:?}" "${rootShell:?}" "${engine:?}" "${imageArchive:?}" "${imageTag:?}" "${imageConfig:?}" "${imageDigest:?}" "${nixCommand:?}"
 case "${1:-}:${2:-}" in
   stories:verify|stories:generate|application:) ;;
-  recovery:feature010-phone|recovery:gallery-large|recovery:feature010-phone-candidates|recovery:science-components-candidates|recovery:feature012-contacts-candidates) [ "$#" -eq 2 ] || { echo "Recovery accepts no additional arguments" >&2; exit 2; } ;;
+  recovery:feature010-query-phone|recovery:feature010-phone|recovery:gallery-large|recovery:feature010-phone-candidates|recovery:science-components-candidates|recovery:feature012-contacts-candidates) [ "$#" -eq 2 ] || { echo "Recovery accepts no additional arguments" >&2; exit 2; } ;;
   *) echo "Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone" >&2; exit 2 ;;
 esac
 : "${RUNNER_TEMP:?GitHub runner scratch directory required}"

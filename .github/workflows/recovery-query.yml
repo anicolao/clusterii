@@ -1,0 +1,51 @@
+name: Bounded Linux query observation
+on:
+  push:
+    branches: [investigate/jfr-export-load]
+    paths: [.github/recovery/feature010-query-phone.json]
+permissions:
+  contents: read
+concurrency:
+  group: cluster-feature010-query
+  cancel-in-progress: false
+jobs:
+  feature010-query-phone:
+    if: github.repository == 'anicolao/clusterii'
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate exact request and executor
+        run: node scripts/recovery-query-request.mjs
+      - name: One strict feature010 phone observation
+        timeout-minutes: 15
+        run: nix run path:./nix#ci-renderer -- recovery feature010-query-phone
+      - name: Preserve bounded observation evidence
+        timeout-minutes: 3
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recovery-feature010-query-phone-${{ github.sha }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            ci-evidence/recovery-request/
+            ci-evidence/recovery-*/
+            ci-evidence/nix-renderer/
+            ci-evidence/settlement-profile/
+            database-debug.log
+            firestore-debug.log
+            firebase-debug.log
