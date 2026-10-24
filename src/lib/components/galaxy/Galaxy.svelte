@@ -1070,6 +1070,7 @@
 
 <div
   class="galaxy-surface"
+  data-galaxy-label-scope
   class:before-start={view.phase !== "active"}
   style:--command-rail-height={`${commandRailHeight}px`}
 >
@@ -1104,7 +1105,7 @@
         construction ||
         military}
     >
-      <div class="commander-presence">
+      <div class="commander-presence" data-galaxy-label-exclusion>
         <CommanderDeck
           roster={view.roster}
           own={view.own}
@@ -1204,7 +1205,10 @@
         military}
       aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
     >
-      {#if view.fleetContactsEnabled}<p class="contact-legend">
+      {#if view.fleetContactsEnabled}<p
+          class="contact-legend"
+          data-galaxy-label-exclusion
+        >
           {historyLoading
             ? "Recovering contact records…"
             : "Contact markers show acquired positions from loaded records."}

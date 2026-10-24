@@ -9,10 +9,12 @@ export type LabelBox = {
   /** Projected selected-star glow radius in CSS pixels. */
   clearance?: number;
 };
+export type LabelExclusion = Pick<LabelBox, "x" | "y" | "width" | "height">;
 export function placeGalaxyLabels(
   labels: LabelBox[],
   width: number,
   height: number,
+  exclusions: readonly LabelExclusion[] = [],
 ): Map<string, { x: number; y: number }> {
   const placed: LabelBox[] = [];
   const result = new Map<string, { x: number; y: number }>();
@@ -52,6 +54,48 @@ export function placeGalaxyLabels(
           label.x,
           label.y + row * (label.height + gap),
         ]);
+    // Fixed UI is measured in the same chart coordinate space. Keep ordinary
+    // labels near their anchor; selected/focused subjects get a complete set of
+    // obstacle-edge candidates so competing overlays cannot suppress the name
+    // while a readable rectangle remains available.
+    for (const area of exclusions)
+      candidates.push(
+        [label.x, area.y - gap - label.height],
+        [label.x, area.y + area.height + gap],
+        [area.x - gap - label.width, label.y],
+        [area.x + area.width + gap, label.y],
+      );
+    if (label.priority >= 3) {
+      const obstacles = [...exclusions, ...markers, ...placed];
+      const xs = [
+        label.x,
+        gap,
+        width - gap - label.width,
+        ...obstacles.flatMap((p) => [
+          p.x - gap - label.width,
+          p.x + p.width + gap,
+        ]),
+      ];
+      const ys = [
+        label.y,
+        gap,
+        height - gap - label.height,
+        ...obstacles.flatMap((p) => [
+          p.y - gap - label.height,
+          p.y + p.height + gap,
+        ]),
+      ];
+      candidates.push(
+        ...xs
+          .flatMap((x) => ys.map((y) => [x, y]))
+          .sort(
+            (a, b) =>
+              (a[0] - label.x) ** 2 +
+              (a[1] - label.y) ** 2 -
+              ((b[0] - label.x) ** 2 + (b[1] - label.y) ** 2),
+          ),
+      );
+    }
     for (const [x, y] of candidates) {
       const candidate = {
         ...label,
@@ -59,7 +103,7 @@ export function placeGalaxyLabels(
         y: Math.max(gap, Math.min(height - gap - label.height, y)),
       };
       if (
-        [...placed, ...markers].some(
+        [...placed, ...markers, ...exclusions].some(
           (p) =>
             candidate.x < p.x + p.width + gap &&
             candidate.x + candidate.width + gap > p.x &&
@@ -84,6 +128,8 @@ type Entry = { node: HTMLElement; options: Options; x: number; y: number };
 const managers = new WeakMap<HTMLElement, ReturnType<typeof createManager>>();
 function createManager(root: HTMLElement) {
   const entries = new Set<Entry>();
+  const scope = root.closest<HTMLElement>("[data-galaxy-label-scope]") ?? root;
+  const observedOverlays = new Set<HTMLElement>();
   let frame = 0;
   let disposed = false;
   function schedule() {
@@ -102,7 +148,46 @@ function createManager(root: HTMLElement) {
         height: box.height,
       };
     });
-    const placements = placeGalaxyLabels(labels, bounds.width, bounds.height);
+    const overlays = [
+      ...scope.querySelectorAll<HTMLElement>("[data-galaxy-label-exclusion]"),
+    ].filter(
+      (node) => (node.closest("[data-galaxy-label-scope]") ?? root) === scope,
+    );
+    for (const node of observedOverlays)
+      if (!overlays.includes(node)) {
+        resize.unobserve(node);
+        observedOverlays.delete(node);
+      }
+    const exclusions: LabelExclusion[] = [];
+    for (const node of overlays) {
+      if (!observedOverlays.has(node)) {
+        resize.observe(node);
+        observedOverlays.add(node);
+      }
+      const box = node.getBoundingClientRect();
+      if (
+        !box.width ||
+        !box.height ||
+        getComputedStyle(node).visibility === "hidden" ||
+        box.right <= bounds.left ||
+        box.left >= bounds.right ||
+        box.bottom <= bounds.top ||
+        box.top >= bounds.bottom
+      )
+        continue;
+      exclusions.push({
+        x: box.x - bounds.x,
+        y: box.y - bounds.y,
+        width: box.width,
+        height: box.height,
+      });
+    }
+    const placements = placeGalaxyLabels(
+      labels,
+      bounds.width,
+      bounds.height,
+      exclusions,
+    );
     for (const e of entries) {
       const p = placements.get(e.options.id);
       e.x = p?.x ?? 0;
@@ -114,6 +199,7 @@ function createManager(root: HTMLElement) {
   }
   const resize = new ResizeObserver(schedule);
   resize.observe(root);
+  if (scope !== root) resize.observe(scope);
   const changes = new MutationObserver((records) => {
     if (
       records.some(
@@ -126,9 +212,9 @@ function createManager(root: HTMLElement) {
   });
   // HTML's projected wrapper transforms change on camera orbit/zoom. Ignore
   // our own label style writes, avoiding continuous render/observer loops.
-  changes.observe(root, {
+  changes.observe(scope, {
     attributes: true,
-    attributeFilter: ["style"],
+    attributeFilter: ["style", "class", "hidden"],
     subtree: true,
     childList: true,
   });

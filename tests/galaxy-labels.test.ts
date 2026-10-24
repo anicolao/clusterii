@@ -113,3 +113,36 @@ test("selected glow exclusion survives zoom and viewport edges without moving an
       }
   }
 });
+
+test("fixed qualifiers and competing commander cards preserve selected name and catalogue anchors", () => {
+  for (const [width, height] of [
+    [393, 210],
+    [1280, 520],
+    [1440, 800],
+    [3840, 1900],
+  ]) {
+    const label = { ...box("selected", 110, 35, 3), clearance: 32 };
+    const labels = [label, box("tupa", 115, 40)];
+    const original = structuredClone(labels);
+    const overlays = [
+      { x: 0, y: -30, width: 220, height: 100 },
+      { x: 230, y: 0, width: 150, height: 120 },
+    ];
+    const result = placeGalaxyLabels(labels, width, height, overlays);
+    expect(result.has("selected")).toBe(true);
+    for (const l of labels) {
+      const offset = result.get(l.id);
+      if (!offset) continue;
+      for (const o of overlays)
+        expect(
+          l.x + offset.x + l.width <= o.x - 6 ||
+            l.x + offset.x >= o.x + o.width + 6 ||
+            l.y + offset.y + l.height <= o.y - 6 ||
+            l.y + offset.y >= o.y + o.height + 6,
+        ).toBe(true);
+    }
+    expect(labels).toEqual(original);
+    expect(placeGalaxyLabels(labels, width, height, overlays)).toEqual(result);
+    expect(placeGalaxyLabels(labels, width, height, [])).not.toEqual(result);
+  }
+});

@@ -42,6 +42,7 @@
     <div
       class="contact-chart"
       data-galaxy-viewport
+      data-galaxy-label-scope
       aria-label="Last observed fleet positions. Select a contact in the list to center its recorded location."
     >
       <Canvas renderMode="on-demand"
@@ -54,7 +55,7 @@
           cameraRequest={{ action: "overview", starId: "", sequence: 0 }}
         /></Canvas
       >
-      <p>
+      <p data-galaxy-label-exclusion>
         Observed positions · tick {view.production?.tick ?? 0}<br />Contacts do
         not track hidden movement.
       </p>

@@ -29,6 +29,41 @@ const contacts = (p: Page) =>
   p.getByRole("region", { name: "Fleet contacts", exact: true });
 const selectedContact = (p: Page) =>
   contacts(p).getByRole("article", { name: "Selected fleet contact" });
+async function overlayClearance(page: Page, chart: string) {
+  await expect
+    .poll(() =>
+      page.locator(chart).evaluate((root) => {
+        const scope = root.closest("[data-galaxy-label-scope]") ?? root;
+        const overlays = [
+          ...scope.querySelectorAll<HTMLElement>(
+            "[data-galaxy-label-exclusion]",
+          ),
+        ]
+          .filter(
+            (node) =>
+              (node.closest("[data-galaxy-label-scope]") ?? root) === scope &&
+              getComputedStyle(node).visibility !== "hidden",
+          )
+          .map((node) => node.getBoundingClientRect())
+          .filter((r) => r.width && r.height);
+        return [
+          ...root.querySelectorAll<HTMLElement>(
+            '[data-map-label][data-label-placed="true"]',
+          ),
+        ].every((node) => {
+          const r = node.getBoundingClientRect();
+          return overlays.every(
+            (o) =>
+              r.right <= o.left - 5.5 ||
+              r.left >= o.right + 5.5 ||
+              r.bottom <= o.top - 5.5 ||
+              r.top >= o.bottom + 5.5,
+          );
+        });
+      }),
+    )
+    .toBe(true);
+}
 const aliases = [
   "Fleet pathfinder",
   "Contact watcher",
@@ -445,8 +480,20 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
       },
       verifications: [
         {
-          spec: "Each commander has only their own military view and no invented contact.",
-          check: privacy,
+          spec: "Each commander has only their own military view and no invented contact; chart labels clear the complete fixed intelligence qualifier.",
+          check: async () => {
+            await privacy();
+            await expectReadingTarget(
+              contacts(observer).locator("[data-galaxy-label-exclusion]"),
+              false,
+            );
+            await expect(
+              contacts(observer).locator(
+                '[data-map-label][data-label-placed="true"]',
+              ),
+            ).not.toHaveCount(0);
+            await overlayClearance(observer, ".contact-chart");
+          },
         },
       ],
       views: views(),
@@ -590,6 +637,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           expect(box!.height).toBeGreaterThan(0);
           await rail(observer);
           await matchContact(observer, acquired, true);
+          await overlayClearance(observer, ".contact-chart");
         } finally {
           await observer.setViewportSize(original);
         }
@@ -633,6 +681,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           });
           expect(errors).toEqual([]);
           expect(await canonical()).toEqual(beforeContactResize);
+          await overlayClearance(observer, ".contact-chart");
         },
       },
       verifications: [
@@ -808,6 +857,7 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
           expect(await canonical()).toEqual(beforeReload);
           const label = observer.locator("[data-selected-label]");
           await expectReadingTarget(label, false);
+          await overlayClearance(observer, ".stellar-viewport");
           await expect
             .poll(() =>
               label.evaluate((el) => {
@@ -841,6 +891,82 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
         {
           spec: "The catalogue camera action preserves private observations and forces.",
           check: privacy,
+        },
+      ],
+      views: [
+        {
+          page: observer,
+          player: aliases[1],
+          surface: "game",
+          primary: [button(observer, "Systems list")],
+        },
+      ],
+    });
+    await story.step("read-selected-through-zoom", {
+      actor: aliases[1],
+      description:
+        "Center the selected real system and zoom using keyboard controls, then resize the chart and restore the reading size. Fixed commander and intelligence overlays never cover its name.",
+      action: async () => {
+        for (const name of ["Center selected", "Zoom in", "Zoom out"]) {
+          await openGalaxyCommand(observer, "Systems list", true);
+          const panel = observer.getByRole("dialog", {
+            name: "Systems list",
+            exact: true,
+          });
+          if (name.startsWith("Zoom")) {
+            const summary = panel
+              .locator("summary")
+              .filter({ hasText: "Camera controls" });
+            if ((await summary.locator("..").getAttribute("open")) === null) {
+              await summary.focus();
+              await summary.press("Enter");
+            }
+          }
+          const control = panel.getByRole("button", { name, exact: true });
+          await control.focus();
+          await control.press("Enter");
+          await expect(button(observer, "Systems list")).toBeFocused();
+          await expectReadingTarget(
+            observer.locator("[data-selected-label]"),
+            false,
+          );
+          await overlayClearance(observer, ".stellar-viewport");
+        }
+        const original = observer.viewportSize()!;
+        try {
+          await observer.setViewportSize(
+            original.width < 760
+              ? { width: 1280, height: 720 }
+              : { width: 393, height: 852 },
+          );
+          await expectReadingTarget(
+            observer.locator("[data-selected-label]"),
+            false,
+          );
+          await overlayClearance(observer, ".stellar-viewport");
+        } finally {
+          await observer.setViewportSize(original);
+        }
+      },
+      acknowledgement: {
+        spec: "Selected name remains readable and the actual systems opener retains keyboard focus after camera changes.",
+        check: async () => {
+          await expectReadingTarget(
+            observer.locator("[data-selected-label]"),
+            false,
+          );
+          await overlayClearance(observer, ".stellar-viewport");
+          await expect(button(observer, "Systems list")).toBeFocused();
+        },
+      },
+      verifications: [
+        {
+          spec: "Camera and reading changes do not modify the accepted campaign, acquired report or private forces.",
+          check: async () => {
+            await privacy();
+            expect(await canonical()).toEqual(beforeReload);
+            expect(errors).toEqual([]);
+          },
         },
       ],
       views: [
