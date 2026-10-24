@@ -311,10 +311,10 @@
       padding: 12px 20px max(12px, env(safe-area-inset-bottom));
     }
     dl {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
     dd {
-      margin-bottom: 8px;
+      overflow-wrap: anywhere;
     }
   }
   @media (prefers-reduced-motion: reduce) {

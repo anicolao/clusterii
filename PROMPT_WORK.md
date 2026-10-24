@@ -943,3 +943,5 @@ Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | 
 Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Correct measured contact focus clipping with scroll clearance and retain strict painted-outline plus hit-target assertions
 
 Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Align fleet contact overlay to measured commander rail after actual desktop/short review found the fixed inset clipping it
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Preserve verified Linux science family and phone rail-clearance failure; compact contact fact pairs without relaxing reading checks
