@@ -1,0 +1,65 @@
+{
+  "status": "complete",
+  "durationSeconds": 35,
+  "attachMs": 1196.290372,
+  "sourceJarSHA256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c",
+  "buckets": [
+    {
+      "event": "jdk.ThreadPark",
+      "phase": "other",
+      "count": 18839,
+      "durationMs": 6415853.898997974
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "listener-query",
+      "count": 228,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "security-rules-evaluation",
+      "count": 103,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "other-emulator",
+      "count": 134,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "grpc-response",
+      "count": 8,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "other",
+      "count": 15,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ThreadPark",
+      "phase": "listener-query",
+      "count": 3,
+      "durationMs": 33.145553
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "listener-notification",
+      "count": 5,
+      "durationMs": 0
+    }
+  ],
+  "ignoredEvents": 0,
+  "export": {
+    "category": "complete",
+    "exitCode": 0,
+    "signal": null,
+    "stdoutBytes": 243538826,
+    "stderrBytes": 0,
+    "elapsedMs": 3315.211242999998
+  }
+}
