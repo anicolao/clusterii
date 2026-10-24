@@ -1,0 +1,69 @@
+[
+  {
+    "gate": 1,
+    "command": [
+      "bun",
+      "run",
+      "check"
+    ],
+    "code": 0,
+    "signal": null,
+    "diskStopped": false,
+    "elapsedMs": 5821,
+    "freeKiB": 32668812
+  },
+  {
+    "gate": 2,
+    "command": [
+      "bun",
+      "run",
+      "lint"
+    ],
+    "code": 0,
+    "signal": null,
+    "diskStopped": false,
+    "elapsedMs": 1328,
+    "freeKiB": 39910888
+  },
+  {
+    "gate": 3,
+    "command": [
+      "bun",
+      "run",
+      "test"
+    ],
+    "code": 0,
+    "signal": null,
+    "diskStopped": false,
+    "elapsedMs": 1403,
+    "freeKiB": 39909792
+  },
+  {
+    "gate": 4,
+    "command": [
+      "bun",
+      "run",
+      "test:story-policy"
+    ],
+    "code": 0,
+    "signal": null,
+    "diskStopped": false,
+    "elapsedMs": 7038,
+    "freeKiB": 40415084
+  },
+  {
+    "gate": 5,
+    "command": [
+      "node",
+      "--test",
+      "scripts/check-recovery-contacts.test.mjs",
+      "scripts/check-recovery-science.test.mjs",
+      "scripts/check-recovery-settlement.test.mjs"
+    ],
+    "code": 0,
+    "signal": null,
+    "diskStopped": false,
+    "elapsedMs": 323,
+    "freeKiB": 40415028
+  }
+]

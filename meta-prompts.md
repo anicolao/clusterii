@@ -3195,3 +3195,76 @@ Tmux first; adec934a remains clean/idle. Fresh576200KiB free is still below esta
 
 Tmux first; adec934a clean/idle unchanged, disk865988KiB still below validation floor/reserve. No new validation or visual acceptance. Accumulated reviewer checkpoints since03:04 have not yet been published; request bounded documentation-only reconciliation now, without starting validation or changing target. Exact handoff:
 Reviewer04:44: Agent adec934a clean/idle and disk865988KiB remains below validation floor. Reconcile main /Users/anicolao/projects/games/clusterii/meta-prompts.md checkpoints03:04 through04:44 into your checkout now, preserving all existing entries, and log this reviewer-attributed delegation/continuation per AGENTS.md. Commit/push only these small log updates on existing recovery branch, with no validation/build/download or PR140 update while disk-gated; stop/report any write failure. Do not duplicate human prompts or alter source/evidence/baselines. Existing gated integration authorization remains unchanged. This publishes accumulated supervision findings, not completed implementation or CI recovery.
+
+## Reviewer checkpoint — 2026-10-24 04:54 Toronto
+
+Verified agent completed04:44 handoff: ac7b33e5 clean/pushed, only PROMPTS.md and meta-prompts.md,51 added lines, accumulated checkpoints through04:44 preserved. No source/validation/target changes. Fresh481016KiB available remains below validation floor/reserve; previously notified capacity blocker persists. Fresh Nix gh confirms unchanged PR140 eaa2b57a application SUCCESS and strict stories FAILURE completed. No duplicate prompt/run/download, merge or reference promotion. This log publication is not implementation/CI recovery. Monitor remains active/incomplete; reconcile this new checkpoint with next substantive work.
+
+## Reviewer checkpoint — 2026-10-24 05:04 Toronto
+
+Tmux first, ac7b33e5 clean/idle unchanged. Fresh348700KiB available remains below established validation floor/reserve. Fresh Nix gh confirms unchanged PR140 eaa2b57a application SUCCESS/strict stories FAILURE, completed. Existing human disk-capacity request remains outstanding; no duplicate instruction, validation, artifact download, merge or reference acceptance. Logs through04:44 already pushed; subsequent checkpoints to reconcile with next substantive work. Monitor active, implementation/release review incomplete.
+
+## Reviewer checkpoint — 2026-10-24 05:14 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk now159644KiB (about156MiB), materially worsened from725MiB at04:24 and near exhaustion. No builds, downloads, validation, new agent prompt or extra dependency process started. Last independently verified PR140 status at05:04 remains the latest available observation: eaa2b57a application SUCCESS/strict stories FAILURE; not re-queried this checkpoint. Notify human of urgent capacity requirement, without attributing cause or deleting unique/unrelated data. Log publication through04:44 remains verified; reconcile subsequent checkpoints when space permits. No merge/reference approval; monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 05:24 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk recovered to742092KiB without reviewer cleanup, still well below established validation floor/reserve; cause unknown. Fresh Nix gh confirms PR140 eaa2b57a unchanged, application SUCCESS/strict stories FAILURE completed. No validation restart, duplicate prompt/run/download, merge or reference promotion. Human capacity request remains outstanding; no repeated notification for the same blocker. Logs through04:44 verified pushed; subsequent checkpoints await reconciliation with substantive work. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 05:34 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk1367412KiB has recovered somewhat without reviewer cleanup, still below2359296floor/2559296run reserve. Fresh Nix gh confirms PR140 eaa2b57a unchanged, completed application SUCCESS/strict stories FAILURE. No validation restart, duplicate prompt, artifact retrieval, merge or reference promotion. Existing capacity request/gated integration authorization stand; no new user action beyond previously reported blocker. Logs through04:44 pushed; subsequent checkpoints to reconcile with substantive work. Monitor remains active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 05:44 Toronto
+
+Tmux first: ac7b33e5 remains clean/idle. Disk207084KiB again near exhaustion, below established floor/reserve. No writing validation, build, dependency process or duplicate prompt started. Latest verified PR140 status is05:34 eaa2b57a completed application SUCCESS/strict stories FAILURE; not re-queried this checkpoint. Same capacity blocker already reported urgently at05:14; no repeated notification. No merge/reference acceptance. Logs through04:44 pushed; reconcile later checkpoints when substantive work resumes. Monitor remains active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 05:54 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk125360KiB remains near exhaustion and below established validation floor/reserve. No builds, validation, artifact downloads, dependency process or duplicate prompt started. Latest independently verified target status remains05:34 PR140 eaa2b57a application SUCCESS/strict stories FAILURE; no fresh CI claim. Previously communicated urgent capacity blocker persists. No merge/reference acceptance. Logs through04:44 pushed; subsequent checkpoints await reconciliation when space permits. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 06:04 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk404976KiB remains below validation floor/reserve despite fluctuation; no build/validation resumed. Fresh Nix gh confirms PR140 eaa2b57a unchanged, completed application SUCCESS/strict stories FAILURE. No duplicate instruction, artifact download, merge or reference promotion. Urgent capacity request remains outstanding; no repeated notification for the same blocker. Logs through04:44 pushed; reconcile subsequent checkpoints with next substantive work. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 06:14 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk294332KiB remains below validation floor/reserve. No build, validation, download, dependency process or duplicate instruction started. Latest independently verified PR140 status remains06:04 eaa2b57a application SUCCESS/strict stories FAILURE completed; not re-queried this checkpoint. Existing urgent capacity request remains outstanding. No merge/reference promotion; logs through04:44 pushed and later checkpoints await substantive reconciliation. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 06:24 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk181212KiB remains near exhaustion, below validation floor/reserve. No build, validation, download, dependency process or duplicate instruction started. Latest independently verified PR140 status remains06:04 eaa2b57a application SUCCESS/strict stories FAILURE completed; not re-queried this checkpoint. Previously communicated urgent capacity blocker persists. No merge/reference promotion; logs through04:44 pushed and later checkpoints await reconciliation when space permits. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 06:34 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk1137736KiB recovered without reviewer cleanup but remains below2359296floor/2559296run reserve. Fresh Nix gh confirms unchanged PR140 eaa2b57a application SUCCESS/strict stories FAILURE completed. No validation restart, duplicate prompt/run/download, merge or reference acceptance. Existing capacity request remains outstanding; no repeated notification for unchanged actionable blocker. Logs through04:44 pushed; later checkpoints await substantive reconciliation. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 06:44 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk1295676KiB remains below2359296floor/2559296run reserve. Fresh Nix gh confirms PR140 eaa2b57a unchanged, completed application SUCCESS/strict stories FAILURE. No validation restart, duplicate prompt/run/download, merge or reference promotion. Existing capacity request/gated integration authorization stand. Logs through04:44 pushed; later checkpoints await substantive reconciliation. Monitor active/incomplete; no new user notification for unchanged blocker.
+
+## Reviewer checkpoint — 2026-10-24 06:54 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk988176KiB remains below2359296floor/2559296run reserve. Fresh Nix gh confirms unchanged PR140 eaa2b57a application SUCCESS/strict stories FAILURE completed. No validation restart, duplicate instruction/run/download, merge or reference promotion. Existing capacity request remains outstanding; no repeated notification. Logs through04:44 pushed, later checkpoints await reconciliation with substantive work. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 07:04 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk819800KiB remains below2359296floor/2559296run reserve. Fresh Nix gh confirms unchanged PR140 eaa2b57a, application SUCCESS/strict stories FAILURE completed. No validation restart, duplicate instruction/run/download, merge or reference promotion. Existing capacity request and gated integration handoff stand; no repeated notification for same blocker. Logs through04:44 pushed; later checkpoints await substantive reconciliation. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 07:14 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk616368KiB remains below2359296floor/2559296run reserve. Fresh Nix gh confirms unchanged PR140 eaa2b57a application SUCCESS/strict stories FAILURE completed. No validation restart, duplicate prompt/run/download, merge or reference promotion. Existing urgent capacity request remains outstanding; no new user notification for same blocker. Logs through04:44 pushed; subsequent checkpoints await substantive reconciliation. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 07:24 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk491772KiB remains below2359296floor/2559296run reserve. Fresh Nix gh confirms PR140 eaa2b57a unchanged, application SUCCESS/strict stories FAILURE completed. No validation restart, duplicate prompt/run/download, merge or reference promotion. Existing urgent capacity request and gated integration authorization stand; no repeated notification. Logs through04:44 pushed; subsequent checkpoints await substantive reconciliation. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 07:34 Toronto
+
+Tmux first: ac7b33e5 clean/idle unchanged. Disk1172916KiB fluctuated upward without reviewer cleanup but remains below2359296floor/2559296run reserve. Fresh Nix gh confirms unchanged PR140 eaa2b57a application SUCCESS/strict stories FAILURE completed. No validation restart, duplicate instruction/run/download, merge or reference promotion. Existing capacity request remains outstanding; no repeated notification for same blocker. Logs through04:44 pushed; subsequent checkpoints await substantive reconciliation. Monitor active/incomplete.
+
+## Reviewer checkpoint — 2026-10-24 07:44 Toronto
+
+Tmux first: ac7b33e5 clean/idle. Fresh disk5167760KiB now exceeds2559296KiB validation reserve, without reviewer cleanup. Resume already authorized integration gates after immediate recheck and monitor floor; no reason to remain idle if headroom persists. Exact handoff:
+Reviewer07:44: Fresh independent disk5167760KiB now exceeds2559296KiB run reserve; ac7b33e5 clean/idle. Recheck immediately and resume the already authorized cheap integration gates under established offline Nix environment, serially with disk-floor monitoring: bun run check; bun run lint; bun run test; bun run test:story-policy; node --test scripts/check-recovery-contacts.test.mjs scripts/check-recovery-science.test.mjs scripts/check-recovery-settlement.test.mjs. Preserve any failure and fix demonstrated causes without weakening checks. Reconcile main meta checkpoints04:54 through07:44 with attributed PROMPTS/PROMPT_WORK entries, commit/push substantive validation evidence. After these gates pass, perform the already authorized normal fast-forward of existing PR140 to the validated recovery batch and verify its actual required checks. No new PR, force push, merge, reference promotion, repeated artifact download or full local suite. Existing 88-image archive verification is complete; no new retrieval prerequisite. Stop writing validation if established disk floor is breached; record actual status, never call failed CI pending.
