@@ -1,0 +1,1077 @@
+{
+  "artifact": {
+    "id": 12576137638,
+    "node_id": "MDg6QXJ0aWZhY3QxMjU3NjEzNzYzOA==",
+    "name": "recovery-feature012-contacts-candidates-bf6093b65b48790fa7871e9b07b9e8b46750a861-1",
+    "size_in_bytes": 149139554,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12576137638",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12576137638/zip",
+    "expired": false,
+    "digest": "sha256:ddc435e86bb7a0f315d92fff516fb6122e64d50531582460a1bd862f8951141f",
+    "created_at": "2026-10-24T21:29:17Z",
+    "updated_at": "2026-10-24T21:29:17Z",
+    "expires_at": "2026-11-23T21:29:12Z",
+    "workflow_run": {
+      "id": 40133686309,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/jfr-export-load",
+      "head_sha": "bf6093b65b48790fa7871e9b07b9e8b46750a861"
+    }
+  },
+  "archive": "/tmp/cluster-contact-current-216/artifact.zip",
+  "source": {
+    "commit": "bf6093b65b48790fa7871e9b07b9e8b46750a861",
+    "renderer": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "feature": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+    "specHash": "d80d55f3550c4e55a43aae202fbfcb611275c248cd93b61831b116c73419b7f4",
+    "projects": [
+      "phone",
+      "desktop",
+      "large",
+      "short"
+    ],
+    "mode": "generate",
+    "expectedCaptures": 88,
+    "testBudgetMs": 240000,
+    "stepBudgetMs": 30000,
+    "assertionBudgetMs": 10000
+  },
+  "imageIdentities": [
+    "sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "sha256:7e11780237209f8747e8023d2ba777723d9aba451a548bbcc0563511e28a2c9a"
+  ],
+  "verifiedImages": 88,
+  "entries": [
+    {
+      "path": "nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+    },
+    {
+      "path": "nix-renderer/engine-info.log",
+      "bytes": 1791,
+      "sha256": "207fb418fa432eee59e8c24e31826529372b6b8b20de74f5add164e0f2109029"
+    },
+    {
+      "path": "nix-renderer/containerd.log",
+      "bytes": 11788,
+      "sha256": "c4c57ecb6e532b02e5f4ea5a918a80834221c89315fb971427405ed85d24bfd6"
+    },
+    {
+      "path": "nix-renderer/engine.log",
+      "bytes": 2723,
+      "sha256": "c2c6983dbecfc011969d79b9cbef871f3049a171e96bb5b4f22f2ceb7e78f1c8"
+    },
+    {
+      "path": "nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+    },
+    {
+      "path": "nix-renderer/image-inspect.json",
+      "bytes": 2411,
+      "sha256": "3bff8ebdfc34105a8c15c5b3c28b3b9eafd9e29557ba3d6812e1743d47392ed9"
+    },
+    {
+      "path": "nix-renderer/image-load.log",
+      "bytes": 49,
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+    },
+    {
+      "path": "nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "sha256": "9747b4751035d48148bdec0c7f356c08d250ddbed290a5016714c29e43dc877c"
+    },
+    {
+      "path": "nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "sha256": "45a594bd96b730b4c489645573cb1123dbc8bf0d63794a1bd820edc13806f2a7"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/playwright/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/playwright/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-desktop/attachments/Illustrated-story-ebb53d6580c6c2ab1466abae0fe2f772bdde319d.md",
+      "bytes": 18310,
+      "sha256": "061e6f0bd39cff475cfa8481735ae3b0d181ee01cb5c4c239df67b4a0e320c8b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/playwright/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-large/attachments/Illustrated-story-6f70b5b788d5f44ca1f4f1c673fed0a747803a49.md",
+      "bytes": 18308,
+      "sha256": "60a7b603ca755f9d684b18161f6b319efc59af1117ac5f155c41c4e7f97f9983"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/playwright/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-phone/attachments/Illustrated-story-54b97810689a70bf2ed7a3f6331fad13789ac482.md",
+      "bytes": 18308,
+      "sha256": "ff78b909ff37288a3c0c982111994544b2f50e7be94bd7e142d39c432d4d9a55"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/playwright/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-short/attachments/Illustrated-story-280a9b294016f90224a941e167b069d7f66ca016.md",
+      "bytes": 18308,
+      "sha256": "7c420710b06e919e4f8ca1313a8465325700d666bb82ffdbc83045caf8ebc9da"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/result.json",
+      "bytes": 115,
+      "sha256": "855cc6e7bce3e727db925d95b8937762f7297865faeb151792b19e3d3bef3625"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/source.json",
+      "bytes": 538,
+      "sha256": "dadc05e2c131ac7235e7c21a7bb8969a04a2bbbbcc42ea429d1267f45ef11552"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+      "bytes": 1439380,
+      "sha256": "3e26a815ef619adcb25d6bea58dc8984f99a5f142e2274552b19b553a77c3862"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+      "bytes": 880149,
+      "sha256": "31bfe4e13340abdbd53ef337eefe6d64822366de754ae9c770f2bd8729efe039"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+      "bytes": 1451290,
+      "sha256": "4d47370db04395f4b8dc189a4e4538a7fdc1f4806f782842075329a24f793fa3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+      "bytes": 884099,
+      "sha256": "aa756af7e55dc8a4fdc9e1c4cf75e960efcda947e0f124062e7c0ca0dd0efc50"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+      "bytes": 1447141,
+      "sha256": "0225792db95b0c09b6a87a3db2f8442dd126441498084265b3436fd41986d77b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+      "bytes": 714928,
+      "sha256": "f0f10b74a67f8975cb601dd6a9d13346e43cd40ddb528a35a897a22887e87dcb"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+      "bytes": 1447141,
+      "sha256": "0225792db95b0c09b6a87a3db2f8442dd126441498084265b3436fd41986d77b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+      "bytes": 712947,
+      "sha256": "0f1fb7224e6e1217aa5c177920f58203a84b28dd7adc069c1c7fbfd31678d68c"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 1447141,
+      "sha256": "0225792db95b0c09b6a87a3db2f8442dd126441498084265b3436fd41986d77b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+      "bytes": 714928,
+      "sha256": "f0f10b74a67f8975cb601dd6a9d13346e43cd40ddb528a35a897a22887e87dcb"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 1447141,
+      "sha256": "0225792db95b0c09b6a87a3db2f8442dd126441498084265b3436fd41986d77b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+      "bytes": 714928,
+      "sha256": "f0f10b74a67f8975cb601dd6a9d13346e43cd40ddb528a35a897a22887e87dcb"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+      "bytes": 1446827,
+      "sha256": "2f5af566611be023a02c07e45e894ba9b749658c93d5cb5fadf5c7d6463d4549"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+      "bytes": 709288,
+      "sha256": "525664628ee74b8f1c3624b1bcf861474b134f5f994bc688e38cdd622fd39b20"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 1446827,
+      "sha256": "2f5af566611be023a02c07e45e894ba9b749658c93d5cb5fadf5c7d6463d4549"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+      "bytes": 711875,
+      "sha256": "51688cf027655c22b9ffe3f3dc39bd15415f331af3e3832cf59f8c67c90b2768"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+      "bytes": 711875,
+      "sha256": "51688cf027655c22b9ffe3f3dc39bd15415f331af3e3832cf59f8c67c90b2768"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 1446827,
+      "sha256": "2f5af566611be023a02c07e45e894ba9b749658c93d5cb5fadf5c7d6463d4549"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+      "bytes": 1444334,
+      "sha256": "0e4a0d0505fb8e574347a9b0d0d3d5c1c7f34fcb45fc11adb48d810099ce62a9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+      "bytes": 709288,
+      "sha256": "525664628ee74b8f1c3624b1bcf861474b134f5f994bc688e38cdd622fd39b20"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+      "bytes": 1264056,
+      "sha256": "f2b43d16cb90b6a0a2e81f1ce1671777ba360c7d9b32c72d2497cd53add2655c"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "8bc2d362c3e1578f2a82679ea9ba3dfd5b9f07cc6acfba051981ee05c716abd6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+      "bytes": 1263925,
+      "sha256": "ce3aad069a95d0086ef32a2d8de5deeb2ac9823232811f8287cc9b792d36d586"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/README.md",
+      "bytes": 18310,
+      "sha256": "061e6f0bd39cff475cfa8481735ae3b0d181ee01cb5c4c239df67b4a0e320c8b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/desktop/linux-arm64/story.json",
+      "bytes": 20526,
+      "sha256": "f499b9a736998722bcd8dfa56f1a51187bcca7cb6a5b6cfa8431af29755a0cd3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+      "bytes": 6553464,
+      "sha256": "57fa738cf9ecee60ee305ff3f1206e7052c66eee4304846bd9583131718c1421"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+      "bytes": 3652325,
+      "sha256": "b034a8fe42f1d743e1a61e3bee1644ef3b34afcd5a37f5207d6be7c21b2d4831"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+      "bytes": 6564337,
+      "sha256": "5cd2d2cfc505dc8525e3fb83440fce272ae02354e0d6d62a14c81586daa9670b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+      "bytes": 3656743,
+      "sha256": "a489fe75dc444b46128bf5fd4114e0678216441d5e67fb08d772d2b40e35797e"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+      "bytes": 6565306,
+      "sha256": "f8dfa0ec78557e6f48c6528e5ff0272642706ed404c457ac333ffc9945462c6f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+      "bytes": 2538578,
+      "sha256": "d56d8a396e0ab4b1e0d086d4dec6b34e4ef9fa6692dfe2d2a9d3762d8f599d25"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+      "bytes": 6565306,
+      "sha256": "f8dfa0ec78557e6f48c6528e5ff0272642706ed404c457ac333ffc9945462c6f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+      "bytes": 2535956,
+      "sha256": "d1cdb0d20f4430af6ed2bc3a7a178a71c3583e4d0d540d30f64b545bd2902e16"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 6565306,
+      "sha256": "f8dfa0ec78557e6f48c6528e5ff0272642706ed404c457ac333ffc9945462c6f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+      "bytes": 2538578,
+      "sha256": "d56d8a396e0ab4b1e0d086d4dec6b34e4ef9fa6692dfe2d2a9d3762d8f599d25"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 6565306,
+      "sha256": "f8dfa0ec78557e6f48c6528e5ff0272642706ed404c457ac333ffc9945462c6f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+      "bytes": 2538578,
+      "sha256": "d56d8a396e0ab4b1e0d086d4dec6b34e4ef9fa6692dfe2d2a9d3762d8f599d25"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+      "bytes": 6565044,
+      "sha256": "4a99a3868094a94377b99714826145ebe6c1b5d923345a8440cdc24d977ca7d8"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+      "bytes": 2532569,
+      "sha256": "0be014fd3af12c6cc58941c62e1480ff6688293a32abd74994655ef0dff664cb"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 6565044,
+      "sha256": "4a99a3868094a94377b99714826145ebe6c1b5d923345a8440cdc24d977ca7d8"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+      "bytes": 2535745,
+      "sha256": "c15ad928510e77c7d8d42c85453d3ed8859f690ea3bbf773adea927a0a0951c3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 6565044,
+      "sha256": "4a99a3868094a94377b99714826145ebe6c1b5d923345a8440cdc24d977ca7d8"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+      "bytes": 2535745,
+      "sha256": "c15ad928510e77c7d8d42c85453d3ed8859f690ea3bbf773adea927a0a0951c3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2069,
+      "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+      "bytes": 6563156,
+      "sha256": "2663b6b0b1698bb0bbcf1501fac5db3a3f7d50afe94d4d566b6dce0cf20973d1"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+      "bytes": 2532569,
+      "sha256": "0be014fd3af12c6cc58941c62e1480ff6688293a32abd74994655ef0dff664cb"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+      "bytes": 2071,
+      "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+      "bytes": 5935445,
+      "sha256": "499525fec9a3a0148bcf2bbca1aeb05196a7b84d61272240976e3ae641837e8a"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "c58acf9a78bdadd14266c0e611c38e15b8c952bd5b7180d9fe8b7a26af18a6cc"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+      "bytes": 5935337,
+      "sha256": "13e9664d001fc782a139f9b9f4caceae91070fb8829303eab386be7e1beab618"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/README.md",
+      "bytes": 18308,
+      "sha256": "60a7b603ca755f9d684b18161f6b319efc59af1117ac5f155c41c4e7f97f9983"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/large/linux-arm64/story.json",
+      "bytes": 20524,
+      "sha256": "63a38a977a382a51c7c13a6ead33a8878a1368d73e1bac6acd989e51f5ccfe51"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+      "bytes": 155052,
+      "sha256": "d248cd5eb3309917e09275a06db5272ccda7d7419b0cf25e99e6ef11379df618"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+      "bytes": 111757,
+      "sha256": "803839384affc687f7098d561334c4bbef0b3a59a6d120295c072ca736f4cd1a"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+      "bytes": 162306,
+      "sha256": "f5b75bafb30ef3d195a3772eaec5cc98e62889cd41826dbd521bf21e9eebdaea"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+      "bytes": 115724,
+      "sha256": "13f4157b89618eeaf9d54d4fc488daf4fd587f34b64545e3a99e7e8378b0f0cf"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+      "bytes": 156786,
+      "sha256": "549e10ca11b935babb4d2504b7f2fd3971dcfb334b7fc6ec6e9d4692a3d9b1b3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+      "bytes": 180025,
+      "sha256": "51ed11ac9456b1770af699f2bb1c44bcb0d3c55f25b06626864e73fb9f5a0070"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+      "bytes": 156786,
+      "sha256": "549e10ca11b935babb4d2504b7f2fd3971dcfb334b7fc6ec6e9d4692a3d9b1b3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+      "bytes": 162247,
+      "sha256": "cf0826a2c30809bf9cbd14f3cf9d7ab11d97ab7504609bfec6e6d1c6a2fb6597"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 156786,
+      "sha256": "549e10ca11b935babb4d2504b7f2fd3971dcfb334b7fc6ec6e9d4692a3d9b1b3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+      "bytes": 161459,
+      "sha256": "704dc48c4fb95c108ccc5b7778f0e131d7edb1a0974f1335f86f208a8cb19c75"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 156786,
+      "sha256": "549e10ca11b935babb4d2504b7f2fd3971dcfb334b7fc6ec6e9d4692a3d9b1b3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+      "bytes": 161459,
+      "sha256": "704dc48c4fb95c108ccc5b7778f0e131d7edb1a0974f1335f86f208a8cb19c75"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+      "bytes": 156786,
+      "sha256": "549e10ca11b935babb4d2504b7f2fd3971dcfb334b7fc6ec6e9d4692a3d9b1b3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+      "bytes": 179589,
+      "sha256": "08ed958224bd012cbbcff971c7489d197662aae3e140be78833dc50c79c05d9b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 156786,
+      "sha256": "549e10ca11b935babb4d2504b7f2fd3971dcfb334b7fc6ec6e9d4692a3d9b1b3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+      "bytes": 179261,
+      "sha256": "75520907faa700837d3dc47b1d27274be8f6b9219442053bbe77ac4ae9e3a62e"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 156786,
+      "sha256": "549e10ca11b935babb4d2504b7f2fd3971dcfb334b7fc6ec6e9d4692a3d9b1b3"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+      "bytes": 126507,
+      "sha256": "cffa710f24784ba4cca1d9fc8291c39cdf6838722af393a5e319846995294b83"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+      "bytes": 157990,
+      "sha256": "b2384915dfb27576e3b39bfa04f1a304eccbc71d5a59470b2a8c9615165c2b85"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+      "bytes": 179589,
+      "sha256": "08ed958224bd012cbbcff971c7489d197662aae3e140be78833dc50c79c05d9b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+      "bytes": 2069,
+      "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+      "bytes": 256818,
+      "sha256": "154e0904d6735485495f1f9d839875418303041ae1a30d00e141857762744fee"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+      "bytes": 2067,
+      "sha256": "40aff2383cc83d766979d18af2ba8256ffef98fa7b104298231a752baedbef03"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+      "bytes": 291709,
+      "sha256": "2ad42b3bb80ab484502ca220341edefc32e322ba6812f80f5503f85f8ab420a5"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/README.md",
+      "bytes": 18308,
+      "sha256": "ff78b909ff37288a3c0c982111994544b2f50e7be94bd7e142d39c432d4d9a55"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/renderer.json",
+      "bytes": 757,
+      "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+      "bytes": 20522,
+      "sha256": "11b658d7361afddca2ce425a67f179cc2df93a19d02612eb50ec9ef31dcb226c"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+      "bytes": 945086,
+      "sha256": "a551349125923e404e4578b8e1423e3902fbc742e913550e47faa1928291c886"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+      "bytes": 554288,
+      "sha256": "64b3ffb430f66105074ccae7982dd2b677911410a33cafbfe59babba433383a9"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+      "bytes": 956620,
+      "sha256": "7285ea323f4ad88d27dd9d8f962636128d191fe2416d2ea59cda8914f45d7f73"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+      "bytes": 558554,
+      "sha256": "53b5dc3d9d3ad91fdb4e122f1a4a6afe3152c361544e9405cf034b746b2d1e20"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+      "bytes": 950114,
+      "sha256": "1cfa8b9bf6f2bf54ac4350bf387230033a19b40d99b9a737e74dd127e1e6220a"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+      "bytes": 548596,
+      "sha256": "8e5fa214b6cbca2f79c729e5c736c231f83a2345401e6b9d59c56744fe505e74"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+      "bytes": 950114,
+      "sha256": "1cfa8b9bf6f2bf54ac4350bf387230033a19b40d99b9a737e74dd127e1e6220a"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+      "bytes": 522525,
+      "sha256": "02a6e2d74cab14113fd21f98764a382761e60d0b289986b64823cb9f7c313a03"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 950114,
+      "sha256": "1cfa8b9bf6f2bf54ac4350bf387230033a19b40d99b9a737e74dd127e1e6220a"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+      "bytes": 522797,
+      "sha256": "fcc01044cd3f2a9763aedf3c00931b9ce275847d415d37493d4dbb90cf29a413"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 950114,
+      "sha256": "1cfa8b9bf6f2bf54ac4350bf387230033a19b40d99b9a737e74dd127e1e6220a"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+      "bytes": 522797,
+      "sha256": "fcc01044cd3f2a9763aedf3c00931b9ce275847d415d37493d4dbb90cf29a413"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+      "bytes": 950061,
+      "sha256": "c1cd0602072adc558cd7b5316b673f47ea9813a21e5af63818b8b40223541080"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+      "bytes": 545819,
+      "sha256": "a6b1e337428e3fed3e3b2d8d812346a73df4cb8693a9ed0205f145c4755145b1"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+      "bytes": 950061,
+      "sha256": "c1cd0602072adc558cd7b5316b673f47ea9813a21e5af63818b8b40223541080"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+      "bytes": 548457,
+      "sha256": "7b3a18a9cf6d0b9d3ab50107e47cc6d5ccfdf2cb2ff8870598d10d7d3a12a929"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+      "bytes": 950061,
+      "sha256": "c1cd0602072adc558cd7b5316b673f47ea9813a21e5af63818b8b40223541080"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+      "bytes": 548410,
+      "sha256": "e5fc59fe31ac6107901a1100abc0fe3ac14d4d9c7b164b661711e07b39ab9fe2"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+      "bytes": 2068,
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+      "bytes": 951441,
+      "sha256": "e0e9d04f876b8ffd6b81cc4de63d16f70a1083af81a4f4ea5d16a1476da08b9b"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+      "bytes": 545819,
+      "sha256": "a6b1e337428e3fed3e3b2d8d812346a73df4cb8693a9ed0205f145c4755145b1"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+      "bytes": 2070,
+      "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+      "bytes": 721330,
+      "sha256": "8353895f8cdc0e06c9e29e705d3f505b7fb064a69e3b2c452a49094f21e1556e"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+      "bytes": 2068,
+      "sha256": "70bfce32e814b8e380c2c6f0720b44180af044821fc6e800ad49d97950758ed7"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+      "bytes": 721019,
+      "sha256": "dde6a5c569de29779118e6eb6eb392e173276c4f5f9c30ac9414358af3018b10"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/README.md",
+      "bytes": 18308,
+      "sha256": "7c420710b06e919e4f8ca1313a8465325700d666bb82ffdbc83045caf8ebc9da"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/story.json",
+      "bytes": 20523,
+      "sha256": "5e606ff7ca26e52c7ee76fef4e1fe6f97b9e3904433d409b9cab22f78bdb8235"
+    },
+    {
+      "path": "recovery-contacts-OiAeWJ/stories/live-fleet-contacts/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+    },
+    {
+      "path": "recovery-request/executor.json",
+      "bytes": 433,
+      "sha256": "a8fc98074a255b5309aa3cb0f12ec7686dc5b981b1e418cf218a59b229a0a329"
+    },
+    {
+      "path": "recovery-request/request.json",
+      "bytes": 249,
+      "sha256": "fda5e17077c3e3793370ec75b38731e4074bed2390d0e996bf5c18914aa7fc51"
+    }
+  ]
+}
