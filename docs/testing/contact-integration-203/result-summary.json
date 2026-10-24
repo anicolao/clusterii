@@ -1,0 +1,18 @@
+{
+  "run": 40069590773,
+  "job": 120799949199,
+  "source": "e1b86ef6c161745b269ab498ec800913f22b3d56",
+  "executor": "fa23ffd54029e40338a4127ad4947b4c08b75428",
+  "requestSha256": "24987a0ce5450e450251e41796005d2f0182e2fc0df851b9ae1bfe2f458f3d81",
+  "specSha256": "e4484a9625456225a381ae924be491ac1ca6eaf7b0b105b0baf32e4e74f56c56",
+  "logSha256": "829bc024fc2765a030411a705537efb773a49628e0ef1c3d8bc4f793e5ef771a",
+  "fourPassLog": true,
+  "apiDigestMatchesUploadLog": true,
+  "artifactBytes": 149102350,
+  "artifactId": 12550144141,
+  "expiresAt": "2026-11-23T06:27:04Z",
+  "retrieved": false,
+  "expectedImages": 88,
+  "outputEvidence": "Runner exit0 follows validateComplete: four projects,22PNG each, passed clean Linux manifests bound to executor/spec. Archive contents not independently retrieved/hash-verified.",
+  "approval": "pending-independent-review"
+}
