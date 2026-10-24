@@ -877,3 +877,5 @@ Prompt 189 | bbce6f77533634013579595bd5654609f5962f9a2ef38b014941f1f2c84e3919 | 
 Prompt 189 | bbce6f77533634013579595bd5654609f5962f9a2ef38b014941f1f2c84e3919 | Archive complete Linux phone candidates, reconcile frozen140 failures and preserve conditional slowdown evidence for review
 
 Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | Establish exact Admission briefing hit obstruction and verify both motion preferences in the focused science component story
+
+Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | Preserve failed motion-state orchestration and explicitly restore the lab declared preference before corrected verification

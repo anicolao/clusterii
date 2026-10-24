@@ -127,6 +127,7 @@ test("Read shared science ledger in gallery and lab", async ({
       description: `Inspect ${stage} at the actual lab frame using the production ledger in both comparison panels. Seek changes reducer-derived presentation, not game state.`,
       action: async () => {
         if (stage === "capacity") {
+          await page.emulateMedia({ reducedMotion: "reduce" });
           await page.goto("./dev/animations/");
           await page.getByLabel("Scenario").selectOption("science");
         }
