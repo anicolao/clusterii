@@ -2,7 +2,7 @@ name: Bounded science component candidates
 on:
   push:
     branches: [investigate/jfr-export-load]
-    paths: [.github/recovery/science-heading-candidates.json]
+    paths: [.github/recovery/science-focused-input-candidates.json]
 permissions:
   contents: read
 concurrency:
