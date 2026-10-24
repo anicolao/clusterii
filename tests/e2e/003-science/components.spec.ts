@@ -16,6 +16,7 @@ async function readDelivered(panel: import("@playwright/test").Locator) {
   });
   await reading.focus();
   await reading.press("End");
+  await expect(reading).toBeFocused();
   // End targets lower prose. Read the complete Empire total instrument,
   // including its heading, with ordinary bounded keyboard movement.
   for (let i = 0; i < 12; i++) {
@@ -27,14 +28,15 @@ async function readDelivered(panel: import("@playwright/test").Locator) {
       return r.top >= p.top && r.bottom <= p.bottom;
     });
     if (fits) break;
-    await reading.press("ArrowUp");
-    await reading.evaluate(
+    await panel.page().keyboard.press("ArrowUp");
+    await panel.page().evaluate(
       () =>
         new Promise<void>((resolve) =>
           requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
         ),
     );
   }
+  await expect(reading).toBeFocused();
   await expectReadingTarget(heading, false);
   await expectReadingTarget(total, false);
 }
