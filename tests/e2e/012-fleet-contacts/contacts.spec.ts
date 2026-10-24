@@ -148,6 +148,18 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
             await rail(page);
             expect(errors).toEqual([]);
             if (i === 1) {
+              const header = await page.locator(".command-rail").boundingBox();
+              const panel = await page
+                .getByRole("dialog", {
+                  name: "Fleet contacts panel",
+                  exact: true,
+                })
+                .boundingBox();
+              expect(header).not.toBeNull();
+              expect(panel).not.toBeNull();
+              expect(panel!.y).toBeGreaterThanOrEqual(
+                header!.y + header!.height,
+              );
               const interceptions = await page
                 .locator(".contact-label")
                 .evaluateAll((nodes) =>
