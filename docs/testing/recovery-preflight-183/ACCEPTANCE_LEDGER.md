@@ -68,3 +68,13 @@ Earlier tables above are preserved snapshots, not assertions that the later over
 | Integrated acceptance | No new full application/story run;172missing/68pixel/8timeout counts remain historical classified instances, current aggregate unverified. | Open. Single capture pass is not integrated green or a historical settlement fix. |
 
 See [Linux capture evidence](../linux-gallery-188/README.md) and [formation generation plan](../linux-gallery-188/FORMATION_GENERATION_PLAN.md). No unchanged rerun, baseline promotion, new PR, target/main change or merge.
+
+## Frozen140 first-failure reconciliation — reviewer21:45
+
+Completed stories40042533270/job120716690219 at exact frozen0f09db62 now classified from the complete retained log:64 first-failing stories ×4viewports =256 instances, not256 independent bugs. Per viewport43missing references,18pixel differences,1geometry failure,2timeouts; totals172missing/72pixel/4geometry/8timeouts. These supersede the earlier138 aggregate for frozen140 only; current recovery overlay has not run a full cohort.
+
+The new concrete geometry boundary is feature003 science gallery Return-to-galaxy at components.spec.ts83: contained:true,hits:false in all four sizes. Painting element is not identified by the summary; retained trace inspection is required before a correction. Mismatched receipt recovery now has four pixel failures; faction gallery adds four absent references while science shifts from missing to geometry. Timeout boundaries remain feature010/011100ticks30s. Generation job's candidate step was skipped despite overall green status: no eligible candidates resulted. See [complete reconciliation](../formation-candidates-189/140_RECONCILIATION.md) for source/log hashes, normalized boundary changes and preserved uncertainty.
+
+### Complete feature010 phone Linux candidates — recovery189
+
+Request ae6f476309e846147bf902ab3de0746481275f46/run40051429026 passed the entire unchanged phone story (1.4m), producing26 complete source-paired Linux originals/narrative with actual later privacy/recovery/zero-rate checks. Artifact12543601794 size/digest/CRC verified; originals archived under feature010/stories/candidates-ae6f4763, **not screenshots references**. Independent visual approval and subsequent strict comparison remain pending. First100ticks9.098s is isolated non-reproduction, not closure of the full-cohort timeout. No integrated green, baseline promotion, new PR, merge or140 target update follows.

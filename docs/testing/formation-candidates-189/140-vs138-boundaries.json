@@ -1,0 +1,218 @@
+[
+  {
+    "viewport": "desktop",
+    "story": "A mismatched campaign receipt preserves the proposed galaxy for a fresh creation",
+    "before": null,
+    "current": {
+      "viewport": "desktop",
+      "ordinal": 30,
+      "story": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture",
+      "category": "pixel",
+      "error": "expect(Buffer).toMatchSnapshot(expected) failed"
+    }
+  },
+  {
+    "viewport": "desktop",
+    "story": "Read shared science ledger in gallery and lab",
+    "before": {
+      "viewport": "desktop",
+      "ordinal": 43,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/001-gallery-source-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/001-gallery-source-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    },
+    "current": {
+      "viewport": "desktop",
+      "ordinal": 44,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab",
+      "category": "geometry",
+      "error": "The entire reading target and both corners remain usable inside every clipping ancestor"
+    }
+  },
+  {
+    "viewport": "desktop",
+    "story": "Shared faction composition preserves keyboard choices in both motion preferences",
+    "before": null,
+    "current": {
+      "viewport": "desktop",
+      "ordinal": 48,
+      "story": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/desktop/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/desktop/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    }
+  },
+  {
+    "viewport": "large",
+    "story": "A mismatched campaign receipt preserves the proposed galaxy for a fresh creation",
+    "before": null,
+    "current": {
+      "viewport": "large",
+      "ordinal": 30,
+      "story": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture",
+      "category": "pixel",
+      "error": "expect(Buffer).toMatchSnapshot(expected) failed"
+    }
+  },
+  {
+    "viewport": "large",
+    "story": "Read shared science ledger in gallery and lab",
+    "before": {
+      "viewport": "large",
+      "ordinal": 43,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/001-gallery-source-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/001-gallery-source-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    },
+    "current": {
+      "viewport": "large",
+      "ordinal": 44,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab",
+      "category": "geometry",
+      "error": "The entire reading target and both corners remain usable inside every clipping ancestor"
+    }
+  },
+  {
+    "viewport": "large",
+    "story": "Shared faction composition preserves keyboard choices in both motion preferences",
+    "before": null,
+    "current": {
+      "viewport": "large",
+      "ordinal": 48,
+      "story": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/large/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/large/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    }
+  },
+  {
+    "viewport": "phone",
+    "story": "A mismatched campaign receipt preserves the proposed galaxy for a fresh creation",
+    "before": null,
+    "current": {
+      "viewport": "phone",
+      "ordinal": 30,
+      "story": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture",
+      "category": "pixel",
+      "error": "expect(Buffer).toMatchSnapshot(expected) failed"
+    }
+  },
+  {
+    "viewport": "phone",
+    "story": "Read shared science ledger in gallery and lab",
+    "before": {
+      "viewport": "phone",
+      "ordinal": 43,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/001-gallery-source-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/001-gallery-source-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    },
+    "current": {
+      "viewport": "phone",
+      "ordinal": 44,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a The actual delivered-total reading and Return remain usable inside the component.",
+      "category": "geometry",
+      "error": "The entire reading target and both corners remain usable inside every clipping ancestor"
+    }
+  },
+  {
+    "viewport": "phone",
+    "story": "Shared faction composition preserves keyboard choices in both motion preferences",
+    "before": null,
+    "current": {
+      "viewport": "phone",
+      "ordinal": 48,
+      "story": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/phone/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/phone/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    }
+  },
+  {
+    "viewport": "short",
+    "story": "A mismatched campaign receipt preserves the proposed galaxy for a fresh creation",
+    "before": null,
+    "current": {
+      "viewport": "short",
+      "ordinal": 30,
+      "story": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture",
+      "category": "pixel",
+      "error": "expect(Buffer).toMatchSnapshot(expected) failed"
+    }
+  },
+  {
+    "viewport": "short",
+    "story": "Read shared science ledger in gallery and lab",
+    "before": {
+      "viewport": "short",
+      "ordinal": 43,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/001-gallery-source-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/001-gallery-source-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    },
+    "current": {
+      "viewport": "short",
+      "ordinal": 44,
+      "story": "tests/e2e/003-science/components.spec.ts:37:1 \u203a Read shared science ledger in gallery and lab",
+      "category": "geometry",
+      "error": "The entire reading target and both corners remain usable inside every clipping ancestor"
+    }
+  },
+  {
+    "viewport": "short",
+    "story": "Shared faction composition preserves keyboard choices in both motion preferences",
+    "before": null,
+    "current": {
+      "viewport": "short",
+      "ordinal": 48,
+      "story": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture",
+      "category": "missing-reference",
+      "error": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/short/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images.",
+      "reference": {
+        "path": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/short/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "pngTrackedAtSource": false,
+        "rendererTrackedAtSource": false,
+        "literalBraces": false
+      }
+    }
+  }
+]

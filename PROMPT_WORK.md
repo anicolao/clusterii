@@ -873,3 +873,5 @@ Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | 
 Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | Verify single Linux capture artifact and source, close scoped capture gate, retain reference eligibility and generation plan
 
 Prompt 189 | bbce6f77533634013579595bd5654609f5962f9a2ef38b014941f1f2c84e3919 | Issue one complete Linux phone candidate request bound to prepared source 2cf5e092 with original behavior budgets
+
+Prompt 189 | bbce6f77533634013579595bd5654609f5962f9a2ef38b014941f1f2c84e3919 | Archive complete Linux phone candidates, reconcile frozen140 failures and preserve conditional slowdown evidence for review
