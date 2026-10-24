@@ -853,3 +853,101 @@ Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | 
 Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | Correct rendered initial faction/footer clipping and opaque chapter tabs; assert all choices and matrix before scrolling.
 
 Prompt 179 | eb9ee5c251fc6e59e3ae7086eba1d6007db438a309749b54e8e212be1b9e83d4 | Archive corrected real admission and shared faction candidates with exact provenance, visual comparison and scoped reviewer checkpoints.
+
+Prompt 180 | e51a5b9a5e66d8f7d811c9b69d5e2120dc1bc0d1e78de18afa6d783e5b92b22b | Move admission chapter controls outside bounded scrolling after the preserved short rules-overlap failure, keeping geometry guards unchanged.
+
+Prompt 180 | e51a5b9a5e66d8f7d811c9b69d5e2120dc1bc0d1e78de18afa6d783e5b92b22b | Correct the backdrop content height found in passing short reading evidence; preserve the full prior family before changed-source capture.
+
+Prompt 183 | 1ea9da127044e852b658b08a43222512602fc814c7018eeb98c6e33555fbf131 | Preserve raw runtime log and align archive hashes with Git-normalized committed bytes.
+
+Prompt 185 | 5839a7782cbea395c8960fa012b752bb98ccf010f1bbe69a1d9f2301dba863ea | Issue the single authorized feature010 phone request bound to validated source 035b1cf5.
+
+Prompt 185 | 5839a7782cbea395c8960fa012b752bb98ccf010f1bbe69a1d9f2301dba863ea | Retain the one Linux request failure, complete profile, timing contrast and source-specific reference review.
+
+Prompt 186 | 44e3a26e5bdfd71a351f289e2288fe43c6e4d82990124461dce8c134fdf63da1 | Preserve unchanged local capture reproduction, source comparison limits and separate Linux formation review plan
+
+Prompt 187 | 1076fa084af797eebf930a7cf2c818d08429f78544497538b2546f78addfb5a0 | Record unchanged original capture pass, four-size component review candidates and bounded geometry diagnostic
+
+Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | Issue one Linux gallery request bound to validated source b1ed3980, preserving frozen target and original test
+
+Prompt 188 | 7041e8d4f81ea1cdf80ec05771fec7312866dd373687ab67618509dc9b0ecd21 | Verify single Linux capture artifact and source, close scoped capture gate, retain reference eligibility and generation plan
+
+Prompt 189 | bbce6f77533634013579595bd5654609f5962f9a2ef38b014941f1f2c84e3919 | Issue one complete Linux phone candidate request bound to prepared source 2cf5e092 with original behavior budgets
+
+Prompt 189 | bbce6f77533634013579595bd5654609f5962f9a2ef38b014941f1f2c84e3919 | Archive complete Linux phone candidates, reconcile frozen140 failures and preserve conditional slowdown evidence for review
+
+Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | Establish exact Admission briefing hit obstruction and verify both motion preferences in the focused science component story
+
+Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | Preserve failed motion-state orchestration and explicitly restore the lab declared preference before corrected verification
+
+Prompt 190 | 8b067bf3df7d8b3914dee05bca7359c87fb777f6dc39300c40f2593584ada983 | Retain four-size corrected science candidates and failure provenance without promotion; record measured fix and remaining review limits
+
+Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Validate corrected opener locally and narrowly prepare one complete pinned Linux science family request with failure-preserving orchestration
+
+Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Place local candidate hashes and review status within their isolated evidence directory before issuing the Linux request
+
+Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Issue the single four-size Linux science candidate request bound to validated source 449fc69861435404751f29c7c1f9dd333b818388
+
+Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Establish local Home and End reading access with real shared components while retaining held live views and exact Linux request status
+
+Prompt 191 | 9a3f555209b888423d597ad02606cb54b60b4b785f9f0d54c1610c116efe75c4 | Preserve final integration and workflow guards while Linux evidence remains bound to its single immutable executor
+
+Prompt 192 | 2833084b7c3282292c0cc7a518b1494f9c11d9cc00b0b269c1b7aae4cf2191ee | Preserve integrated policy failure and reconcile its exact dispatch allowlist with the validated science-only command
+
+Prompt 192 | 2833084b7c3282292c0cc7a518b1494f9c11d9cc00b0b269c1b7aae4cf2191ee | Batch corrected integration gates and current target ledger before the single ancestry-verified PR140 fast-forward
+
+Prompt 193 | b99d47eb9012bf067a49af5c74706502d75390f34c526e48e3a85aed0cbae455 | Retain corrected heading viewpoint and narrow directory-query timeout hypothesis without changing ongoing integrated target or requesting runs
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Preserve large reading failure and scale the actual science lab wrapper with its existing large-screen typography
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Retain four-size corrected candidates and validate a fresh exact request using the existing Linux mechanism without replay
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Issue the one changed-source Linux heading request bound to prepared source 1e150353f208fd4665a912d98993b43988453bc2
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Preserve Linux deadline trace and remove measured repeated locator lookup while retaining actual keyboard input and geometry checks
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Validate four-size focused-input correction and bind a separate changed-source Linux check while retaining the original deadline failure
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Request the single corrected-input Linux verification bound to 1c403f5bf7d27f216de6a044d295c93896753e0f with unchanged failure gates
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Preserve second Linux timing failure and integrated fleet-contact timeout; remove repeated unchanged heading lookup with final geometry retained
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Archive four-size stable-heading validation and identify disappearing Refresh target in integrated fleet-contact trace
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Request changed-source Linux validation of resolved-heading correction on ebdbb7ee1ec31ba6d6c9c72e5cfa2df27ed5b2bf with original budgets and complete-family guards
+
+Prompt 194 | dbd571015c2f5e083350478b02b7136904b4ba79fa4835a1ce697188b8b6c87f | Preserve measured stale-control boundary, reconcile 23:34/23:44 reviews, and record below-gate artifact restart without rerunning
+
+Prompt 195 | 6a4aad371ea136fa18a845c8e7d2ade02ffc5f601d34fb99b30075f0806ea62c | Validate actual refresh and migrated phone after headroom recovery; preserve third science cumulative timing and held source-matched candidates
+
+Prompt 195 | 6a4aad371ea136fa18a845c8e7d2ade02ffc5f601d34fb99b30075f0806ea62c | Include exact hashed runtime evidence omitted by global ci-evidence/test-results ignore rules and verify the staged evidence inventory
+
+Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Prepare one bounded real-gallery CPU/layout observation with native reading and unchanged viewport before any render optimization
+
+Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Preserve bounded gallery CPU observations and prepare one real authenticated directory cardinality comparison with original tick budgets
+
+Prompt 196 | fa3c91d3ffc1f2240effe37e9654186a08ae914f0f993e5052b549e0412b4fbf | Preserve partial real-service comparison after disk-gate interruption and record current integrated checks and exact restart boundary
+
+Prompt 197 | b4747305b9b62431d89a42e335e9b1113e25f8844f169ba3309167a06e5f437f | Patch demonstrated HTML binding exception that prevents frame invalidation reset, preserving labels and all render assertions
+
+Prompt 197 | b4747305b9b62431d89a42e335e9b1113e25f8844f169ba3309167a06e5f437f | Preserve first patched failure and correct collapsed contact containers and premature zero-aspect camera framing
+
+Prompt 197 | b4747305b9b62431d89a42e335e9b1113e25f8844f169ba3309167a06e5f437f | Record zero idle redraws and four unchanged science journeys with source-matched held candidates after the demonstrated lifecycle fix
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Request one changed-source pinned Linux science family after validated HTML binding and contact sizing corrections
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Extend existing real contact story with keyboard selection, responsive restoration and overview behavior while preserving all original checks
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Preserve four-size contact evidence and require complete selected-control keyboard reading after responsive restoration
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Correct measured contact focus clipping with scroll clearance and retain strict painted-outline plus hit-target assertions
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Align fleet contact overlay to measured commander rail after actual desktop/short review found the fixed inset clipping it
+
+Prompt 198 | 56315ad64bd9f0c4107c5cd3b2822130d71fc8c1ce2e5963fc56f1c7cda5fb4f | Preserve verified Linux science family and phone rail-clearance failure; compact contact fact pairs without relaxing reading checks
+
+Prompt 201 | 4109af3d730c38ecda27ae1517da83c1be6f6f68d8551ad5a6944f822f2ec25f | Retain four passing source-matched contact journeys with exact originals, disk record and scoped rendered self-review
+
+Prompt 202 | 34f6ce9341edba4d45389cd4b02d9ad60faa4f98202fe4cfc112b7fde29ccc58 | Issue the single exact-source Linux contact request after local dispatch guards and complete four-size validation
+
+Prompt 202 | 34f6ce9341edba4d45389cd4b02d9ad60faa4f98202fe4cfc112b7fde29ccc58 | Record exact Linux contact executor and map missing families to retained evidence and design contracts without promotion

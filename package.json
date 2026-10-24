@@ -18,7 +18,7 @@
     "format:ui": "prettier --write \"src/**/*.svelte\" \"src/**/*.css\"",
     "test:stories": "node scripts/run-stories.mjs verify",
     "test:stories:generate": "node scripts/run-stories.mjs generate",
-    "test:story-policy": "node --test scripts/check-emulator-post-marker.test.mjs scripts/check-verification-reuse.test.mjs scripts/check-profile-ingress-observer.test.mjs scripts/check-story-bootstrap.test.mjs scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths",
+    "test:story-policy": "node --test scripts/check-recovery-settlement.test.mjs scripts/check-emulator-post-marker.test.mjs scripts/check-verification-reuse.test.mjs scripts/check-profile-ingress-observer.test.mjs scripts/check-story-bootstrap.test.mjs scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths",
     "test:stories:promote": "node scripts/promote-story-baselines.mjs",
     "test:story-tools": "bun test tests/story-tools.test.ts tests/settlement-timing.test.ts tests/settlement-rpc-timing.test.ts",
     "test:browser-storage": "bun test tests/recovery-store.test.ts",
@@ -55,5 +55,8 @@
   "packageManager": "bun@1.3.10",
   "engines": {
     "node": ">=22"
+  },
+  "patchedDependencies": {
+    "@threlte/extras@9.22.2": "patches/@threlte%2Fextras@9.22.2.patch"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "priorStorySha256": "dc6e004974b2d4848cda8dcd4809eba465bdd9ec82b81fe4b8f5d5045dd6493c",
+  "newStorySha256": "f6011c08b66fa9557579524d67f6cd6e8a187e22446bc148f1519c79e265740b",
+  "namedStepsUnchanged": [
+    "scheduler-delivery",
+    "inspect-empty-contact-history",
+    "commit-real-fleet",
+    "settle-real-formation",
+    "acquire-observation",
+    "read-current-contact",
+    "miss-next-scan",
+    "recover-last-seen-record",
+    "reload-private-contact-history",
+    "return-to-chart-by-keyboard"
+  ],
+  "priorExpectCalls": 55,
+  "newExpectCalls": 61,
+  "browserExecuted": false,
+  "retirement": false
+}

@@ -1,0 +1,653 @@
+{
+  "scope": "4K real gallery workload; not visual or service acceptance",
+  "browser": "149.0.7827.55",
+  "phases": [
+    {
+      "motion": "reduce",
+      "operations": [
+        {
+          "name": "navigate-and-assets",
+          "elapsedMs": 1049.6764580000001
+        },
+        {
+          "name": "open-ledger",
+          "elapsedMs": 133.39612499999998
+        },
+        {
+          "name": "native-reading",
+          "elapsedMs": 245.00358299999994
+        }
+      ],
+      "steadyDraws": {
+        "before": 1836,
+        "after": 1836,
+        "elapsedMs": 500.40000009536743
+      },
+      "geometry": {
+        "height": 38105,
+        "controls": 573,
+        "canvases": [
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 546,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 648,
+            "inViewport": false
+          }
+        ]
+      },
+      "cpu": {
+        "durationUs": 1933946,
+        "samples": 1678,
+        "top": [
+          {
+            "function": "(idle)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 598
+          },
+          {
+            "function": "(program)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 162
+          },
+          {
+            "function": "ki",
+            "script": "CwuwgWEa.js",
+            "line": 0,
+            "column": 34584,
+            "samples": 161
+          },
+          {
+            "function": "_e",
+            "script": "C3WS9Rlx.js",
+            "line": 4238,
+            "column": 13889,
+            "samples": 75
+          },
+          {
+            "function": "C",
+            "script": "C3WS9Rlx.js",
+            "line": 4204,
+            "column": 291,
+            "samples": 57
+          },
+          {
+            "function": "getTextAlternativeInternal",
+            "script": "",
+            "line": 3403,
+            "column": 35,
+            "samples": 39
+          },
+          {
+            "function": "(garbage collector)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 35
+          },
+          {
+            "function": "me",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 23788,
+            "samples": 16
+          },
+          {
+            "function": "RS",
+            "script": "C3WS9Rlx.js",
+            "line": 4302,
+            "column": 42827,
+            "samples": 11
+          },
+          {
+            "function": "getExplicitAriaRole",
+            "script": "",
+            "line": 3151,
+            "column": 28,
+            "samples": 10
+          },
+          {
+            "function": "setSize",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 25890,
+            "samples": 7
+          },
+          {
+            "function": "query",
+            "script": "",
+            "line": 5140,
+            "column": 16,
+            "samples": 7
+          },
+          {
+            "function": "qw",
+            "script": "C3WS9Rlx.js",
+            "line": 4369,
+            "column": 9080,
+            "samples": 6
+          },
+          {
+            "function": "",
+            "script": "C3WS9Rlx.js",
+            "line": 4369,
+            "column": 8536,
+            "samples": 6
+          },
+          {
+            "function": "n",
+            "script": "C3WS9Rlx.js",
+            "line": 4114,
+            "column": 2026,
+            "samples": 6
+          },
+          {
+            "function": "query",
+            "script": "",
+            "line": 5140,
+            "column": 16,
+            "samples": 6
+          },
+          {
+            "function": "de",
+            "script": "C3WS9Rlx.js",
+            "line": 4359,
+            "column": 2570,
+            "samples": 5
+          },
+          {
+            "function": "ki",
+            "script": "CwuwgWEa.js",
+            "line": 0,
+            "column": 34584,
+            "samples": 5
+          },
+          {
+            "function": "pb",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 76281,
+            "samples": 5
+          },
+          {
+            "function": "",
+            "script": "",
+            "line": 1,
+            "column": 7,
+            "samples": 4
+          },
+          {
+            "function": "e",
+            "script": "C3WS9Rlx.js",
+            "line": 43,
+            "column": 254709,
+            "samples": 4
+          },
+          {
+            "function": "Ss",
+            "script": "C3WS9Rlx.js",
+            "line": 43,
+            "column": 122648,
+            "samples": 4
+          },
+          {
+            "function": "nb",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 74415,
+            "samples": 4
+          },
+          {
+            "function": "n",
+            "script": "C3WS9Rlx.js",
+            "line": 4114,
+            "column": 2026,
+            "samples": 4
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "name": "Documents",
+          "value": 2
+        },
+        {
+          "name": "Nodes",
+          "value": 67172
+        },
+        {
+          "name": "LayoutCount",
+          "value": 55
+        },
+        {
+          "name": "RecalcStyleCount",
+          "value": 163
+        },
+        {
+          "name": "LayoutDuration",
+          "value": 0.070996
+        },
+        {
+          "name": "RecalcStyleDuration",
+          "value": 0.042854
+        },
+        {
+          "name": "ScriptDuration",
+          "value": 0.29615
+        },
+        {
+          "name": "TaskDuration",
+          "value": 1.191758
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 84393336
+        }
+      ]
+    },
+    {
+      "motion": "no-preference",
+      "operations": [
+        {
+          "name": "navigate-and-assets",
+          "elapsedMs": 1696.7400839999996
+        },
+        {
+          "name": "open-ledger",
+          "elapsedMs": 80.7777500000002
+        },
+        {
+          "name": "native-reading",
+          "elapsedMs": 233.9217920000001
+        }
+      ],
+      "steadyDraws": {
+        "before": 1836,
+        "after": 1836,
+        "elapsedMs": 500.6000003814697
+      },
+      "geometry": {
+        "height": 38105,
+        "controls": 573,
+        "canvases": [
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 716,
+            "height": 518,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 546,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 648,
+            "inViewport": false
+          }
+        ]
+      },
+      "cpu": {
+        "durationUs": 2598678,
+        "samples": 2114,
+        "top": [
+          {
+            "function": "(program)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 804
+          },
+          {
+            "function": "(idle)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 539
+          },
+          {
+            "function": "before",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 163
+          },
+          {
+            "function": "texSubImage2D",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 75
+          },
+          {
+            "function": "getProgramInfoLog",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 49
+          },
+          {
+            "function": "getTextAlternativeInternal",
+            "script": "",
+            "line": 3403,
+            "column": 35,
+            "samples": 37
+          },
+          {
+            "function": "(garbage collector)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 25
+          },
+          {
+            "function": "getContext",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 15
+          },
+          {
+            "function": "getExtension",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 9
+          },
+          {
+            "function": "m",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 56893,
+            "samples": 8
+          },
+          {
+            "function": "get ready",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 7
+          },
+          {
+            "function": "getExplicitAriaRole",
+            "script": "",
+            "line": 3151,
+            "column": 28,
+            "samples": 7
+          },
+          {
+            "function": "setSize",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 25890,
+            "samples": 6
+          },
+          {
+            "function": "query",
+            "script": "",
+            "line": 5140,
+            "column": 16,
+            "samples": 6
+          },
+          {
+            "function": "getAttribute",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 6
+          },
+          {
+            "function": "e",
+            "script": "C3WS9Rlx.js",
+            "line": 43,
+            "column": 254709,
+            "samples": 5
+          },
+          {
+            "function": "query",
+            "script": "",
+            "line": 5140,
+            "column": 16,
+            "samples": 5
+          },
+          {
+            "function": "elementSafeTagName",
+            "script": "",
+            "line": 2837,
+            "column": 27,
+            "samples": 5
+          },
+          {
+            "function": "pb",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 76281,
+            "samples": 4
+          },
+          {
+            "function": "before",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 4
+          },
+          {
+            "function": "computeBoundingSphere",
+            "script": "C3WS9Rlx.js",
+            "line": 43,
+            "column": 128457,
+            "samples": 3
+          },
+          {
+            "function": "renderBufferDirect",
+            "script": "C3WS9Rlx.js",
+            "line": 4262,
+            "column": 29357,
+            "samples": 3
+          },
+          {
+            "function": "getProgramParameter",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 3
+          },
+          {
+            "function": "qw",
+            "script": "C3WS9Rlx.js",
+            "line": 4369,
+            "column": 9080,
+            "samples": 3
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "name": "Documents",
+          "value": 2
+        },
+        {
+          "name": "Nodes",
+          "value": 68066
+        },
+        {
+          "name": "LayoutCount",
+          "value": 114
+        },
+        {
+          "name": "RecalcStyleCount",
+          "value": 416
+        },
+        {
+          "name": "LayoutDuration",
+          "value": 0.121882
+        },
+        {
+          "name": "RecalcStyleDuration",
+          "value": 0.085314
+        },
+        {
+          "name": "ScriptDuration",
+          "value": 0.541961
+        },
+        {
+          "name": "TaskDuration",
+          "value": 3.211679
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 107335464
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "charts": [
+    {
+      "width": 716,
+      "height": 518.390625
+    },
+    {
+      "width": 716,
+      "height": 518.390625
+    },
+    {
+      "width": 716,
+      "height": 518.390625
+    },
+    {
+      "width": 716,
+      "height": 518.390625
+    },
+    {
+      "width": 716,
+      "height": 518.390625
+    },
+    {
+      "width": 666,
+      "height": 546.0625
+    },
+    {
+      "width": 666,
+      "height": 634.8125
+    },
+    {
+      "width": 666,
+      "height": 634.8125
+    },
+    {
+      "width": 666,
+      "height": 648
+    }
+  ],
+  "routeLabels": [
+    {
+      "width": 141.82809448242188,
+      "height": 33,
+      "text": "Origin · Sarin"
+    },
+    {
+      "width": 113.90625,
+      "height": 33,
+      "text": "1 · Nikawiy"
+    },
+    {
+      "width": 141.828125,
+      "height": 33,
+      "text": "Origin · Sarin"
+    },
+    {
+      "width": 113.90625,
+      "height": 33,
+      "text": "1 · Nikawiy"
+    },
+    {
+      "width": 141.828125,
+      "height": 33,
+      "text": "Origin · Sarin"
+    },
+    {
+      "width": 113.90625,
+      "height": 33,
+      "text": "1 · Nikawiy"
+    },
+    {
+      "width": 160,
+      "height": 60,
+      "text": "Origin · Nikawiy"
+    }
+  ],
+  "status": "complete"
+}

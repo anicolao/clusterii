@@ -1,0 +1,69 @@
+{
+  "source": "eaa2b57aed00d73290d514bff065a199fb68db06",
+  "run": 40061786887,
+  "total": 256,
+  "counts": {
+    "phone": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "desktop": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "large": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "short": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    }
+  },
+  "prior": {
+    "phone": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "desktop": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "large": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "short": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    }
+  },
+  "categoryChanges": [],
+  "rawLogBytes": 4041359,
+  "rawLogSha256": "40391b31c780e431325b6c16205274a3516b33144598586b544cfc87d008174a",
+  "cohortSummaries": [
+    "  4 passed (3.0s)",
+    "  64 failed",
+    "  4 passed (13.7m)",
+    "  64 failed",
+    "  4 passed (14.6m)",
+    "  64 failed",
+    "  4 passed (21.9m)",
+    "  64 failed",
+    "  4 passed (13.9m)"
+  ],
+  "otherErrors": [],
+  "missingReferenceFiles": {
+    "pngAbsent": 176,
+    "rendererAbsent": 176
+  },
+  "comparisonKey": "viewport + exact story title, allowing documented feature migration and line-number changes"
+}

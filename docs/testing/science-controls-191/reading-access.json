@@ -1,0 +1,15 @@
+{
+  "scope": "gallery component keyboard access, not live accepted state",
+  "cases": [
+    {
+      "name": "Fleet manifest Home",
+      "passed": true,
+      "scrollTop": 0
+    },
+    {
+      "name": "Forecast End",
+      "passed": true,
+      "scrollTop": 105
+    }
+  ]
+}

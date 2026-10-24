@@ -1,0 +1,22 @@
+scripts/recovery-request.mjs 27ms
+scripts/check-recovery-request.test.mjs 8ms
+.github/workflows/recovery-single.yml 11ms (unchanged)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.579959ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.931625ms)
+✔ entry permits exactly the frozen feature010 phone verification (1.117333ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (34.239334ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.06ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.616375ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.288917ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (12.947875ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 100.221583

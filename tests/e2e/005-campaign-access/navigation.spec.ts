@@ -261,7 +261,10 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     actor: "Star envoy",
     description:
       "Read the campaign briefing and distinguish the shared-victory design from enabled development behavior.",
-    action: async () => button(page, "Briefing & roster").click(),
+    action: async () => {
+      await button(page, "Briefing & roster").focus();
+      await page.keyboard.press("Enter");
+    },
     acknowledgement: {
       spec: "The briefing explicitly says victory evaluation is not enabled.",
       check: async () =>
@@ -273,6 +276,59 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
       {
         spec: "Claim remains visible while reviewing the briefing.",
         check: async () => rail(page, "Claim your seat"),
+      },
+    ],
+    views: [view(page, "Star envoy", [button(page, "Claim your seat")])],
+  });
+  await story.step("read-full-briefing", {
+    actor: "Star envoy",
+    description:
+      "Open the actual rules with the keyboard, then read the last faction capacity inside the bounded campaign details. The selected faction and uncommitted seat remain unchanged.",
+    action: async () => {
+      await page
+        .getByText("Review this campaign’s rules", { exact: true })
+        .focus();
+      await page.keyboard.press("Enter");
+      await page
+        .getByRole("region", { name: "Campaign details", exact: true })
+        .focus();
+      await page.keyboard.press("End");
+    },
+    acknowledgement: {
+      spec: "The real rules disclosure remains open; no seat has been claimed.",
+      check: async () => {
+        await expect(
+          page
+            .getByRole("region", { name: "Admission briefing" })
+            .locator("details"),
+        ).toHaveAttribute("open", "");
+        await expect(
+          page.getByText("Your seat is confirmed.", { exact: true }),
+        ).toHaveCount(0);
+      },
+    },
+    verifications: [
+      {
+        spec: "The final faction and capacity are fully readable, with the commitment and document position preserved.",
+        check: async () => {
+          const row = page
+            .getByRole("region", { name: "Campaign roster", exact: true })
+            .getByRole("listitem")
+            .filter({ hasText: "Dracon League" });
+          await contained(row);
+          const tabs = await page
+            .getByRole("group", { name: "Join campaign details", exact: true })
+            .boundingBox();
+          const reading = await page
+            .getByRole("region", { name: "Campaign details", exact: true })
+            .boundingBox();
+          expect(tabs).not.toBeNull();
+          expect(reading).not.toBeNull();
+          expect(reading!.y).toBeGreaterThanOrEqual(tabs!.y + tabs!.height);
+          await expect(row).toContainText("1 seats open");
+          await rail(page, "Claim your seat");
+          expect(await page.evaluate(() => window.scrollY)).toBe(0);
+        },
       },
     ],
     views: [view(page, "Star envoy", [button(page, "Claim your seat")])],

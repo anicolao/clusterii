@@ -1,0 +1,9 @@
+# Retained PR137 profile result
+
+Original run40035060163, source9de12d7467bcea32a65b3f97fb32a9733b1eb429, completed failure23:47:38UTC. Artifact12539177641 was downloaded once, size1,723,624,292 bytes and SHA256847db69866efda96a927c252c765839055b315a5dd893621b630fb5981e82d60 verified. Original archive/inventory remain `/tmp/cluster137-profile-12539177641`; only bounded diagnostics are copied here.
+
+`profile-result.json` reports unavailable/parse after38591.9ms. No usable aggregate samples or waits were exported. Source phase ordering reached the exporter after target/jar/attach/recording checks, but that is not a valid profile. The catch conflates subprocess failure, timeout, buffer, JSON and schema failures; raw recording was intentionally removed. Neither ENOBUFS nor CPU/lock/transport cause is established. No production fix, enlarged limit or repeat observation follows from this result.
+
+The retained feature010 batch has41/51/52/50 completed transactions at phone/desktop/large/short, all one attempt, zero recorded RPC failures, no batch-complete marker. These are transactions, not completed tick counts. Median server-marker-to-callback spans are628.5/550.8/549.7/566.8ms respectively; median RPC-to-marker spans5.4/4.0/3.8/4.1ms. This repeats the measured boundary, without identifying its internal cause. Full redacted timing records and summary are retained; no authoritative semantics or deadlines changed.
+
+Reviewer19:55 requires a realistic local Nix recording/export reproduction with the checked-in JFC and safe classified subprocess metadata before any changed-source CI observation. Do not infer a buffer failure or run another hour-long suite solely for telemetry. Finish the bounded UI publication first; the next diagnostic must distinguish process/timeout/buffer/JSON/schema without raw stderr, identities or recording metadata. Current historical ingress/settlement and release gates stay open.

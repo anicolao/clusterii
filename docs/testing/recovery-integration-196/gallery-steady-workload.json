@@ -1,0 +1,577 @@
+{
+  "scope": "4K real gallery workload; not visual or service acceptance",
+  "browser": "149.0.7827.55",
+  "phases": [
+    {
+      "motion": "reduce",
+      "operations": [
+        {
+          "name": "navigate-and-assets",
+          "elapsedMs": 762.3044170000001
+        },
+        {
+          "name": "open-ledger",
+          "elapsedMs": 138.21954200000005
+        },
+        {
+          "name": "native-reading",
+          "elapsedMs": 1752.1118750000003
+        }
+      ],
+      "steadyDraws": {
+        "before": 55588,
+        "after": 64140,
+        "elapsedMs": 622.4000000953674
+      },
+      "geometry": {
+        "height": 38105,
+        "controls": 573,
+        "canvases": [
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 546,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 648,
+            "inViewport": false
+          }
+        ]
+      },
+      "cpu": {
+        "durationUs": 3521217,
+        "samples": 3036,
+        "top": [
+          {
+            "function": "Xg",
+            "script": "2J1FeWLK.js",
+            "line": 4160,
+            "column": 3323,
+            "samples": 1468
+          },
+          {
+            "function": "Kg",
+            "script": "2J1FeWLK.js",
+            "line": 4160,
+            "column": 2353,
+            "samples": 223
+          },
+          {
+            "function": "(program)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 174
+          },
+          {
+            "function": "type.<computed>",
+            "script": "",
+            "line": 9,
+            "column": 39,
+            "samples": 160
+          },
+          {
+            "function": "ki",
+            "script": "CwuwgWEa.js",
+            "line": 0,
+            "column": 34584,
+            "samples": 150
+          },
+          {
+            "function": "p",
+            "script": "2J1FeWLK.js",
+            "line": 3865,
+            "column": 11827,
+            "samples": 99
+          },
+          {
+            "function": "(idle)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 74
+          },
+          {
+            "function": "getTextAlternativeInternal",
+            "script": "",
+            "line": 3403,
+            "column": 35,
+            "samples": 35
+          },
+          {
+            "function": "C",
+            "script": "2J1FeWLK.js",
+            "line": 4204,
+            "column": 291,
+            "samples": 24
+          },
+          {
+            "function": "(garbage collector)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 21
+          },
+          {
+            "function": "me",
+            "script": "2J1FeWLK.js",
+            "line": 4262,
+            "column": 23788,
+            "samples": 17
+          },
+          {
+            "function": "multiplyMatrices",
+            "script": "2J1FeWLK.js",
+            "line": 43,
+            "column": 74318,
+            "samples": 14
+          },
+          {
+            "function": "Ne",
+            "script": "2J1FeWLK.js",
+            "line": 4302,
+            "column": 3447,
+            "samples": 11
+          },
+          {
+            "function": "RS",
+            "script": "2J1FeWLK.js",
+            "line": 4302,
+            "column": 42764,
+            "samples": 10
+          },
+          {
+            "function": "renderBufferDirect",
+            "script": "2J1FeWLK.js",
+            "line": 4262,
+            "column": 29357,
+            "samples": 10
+          },
+          {
+            "function": "getExplicitAriaRole",
+            "script": "",
+            "line": 3151,
+            "column": 28,
+            "samples": 9
+          },
+          {
+            "function": "tt",
+            "script": "2J1FeWLK.js",
+            "line": 4262,
+            "column": 41253,
+            "samples": 9
+          },
+          {
+            "function": "multiplyMatrices",
+            "script": "2J1FeWLK.js",
+            "line": 43,
+            "column": 74318,
+            "samples": 7
+          },
+          {
+            "function": "d",
+            "script": "2J1FeWLK.js",
+            "line": 3865,
+            "column": 11371,
+            "samples": 6
+          },
+          {
+            "function": "de",
+            "script": "2J1FeWLK.js",
+            "line": 4359,
+            "column": 2570,
+            "samples": 5
+          },
+          {
+            "function": "query",
+            "script": "",
+            "line": 5140,
+            "column": 16,
+            "samples": 5
+          },
+          {
+            "function": "",
+            "script": "DDc0DlEz.js",
+            "line": 0,
+            "column": 0,
+            "samples": 5
+          },
+          {
+            "function": "qw",
+            "script": "2J1FeWLK.js",
+            "line": 4369,
+            "column": 9080,
+            "samples": 5
+          },
+          {
+            "function": "",
+            "script": "2J1FeWLK.js",
+            "line": 4369,
+            "column": 8536,
+            "samples": 5
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "name": "Documents",
+          "value": 2
+        },
+        {
+          "name": "Nodes",
+          "value": 75635
+        },
+        {
+          "name": "LayoutCount",
+          "value": 33
+        },
+        {
+          "name": "RecalcStyleCount",
+          "value": 127
+        },
+        {
+          "name": "LayoutDuration",
+          "value": 0.065118
+        },
+        {
+          "name": "RecalcStyleDuration",
+          "value": 0.039754
+        },
+        {
+          "name": "ScriptDuration",
+          "value": 2.658806
+        },
+        {
+          "name": "TaskDuration",
+          "value": 3.452525
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 100853548
+        }
+      ]
+    },
+    {
+      "motion": "no-preference",
+      "operations": [
+        {
+          "name": "navigate-and-assets",
+          "elapsedMs": 3591.724375
+        },
+        {
+          "name": "open-ledger",
+          "elapsedMs": 112.66233300000022
+        },
+        {
+          "name": "native-reading",
+          "elapsedMs": 2013.1956250000003
+        }
+      ],
+      "steadyDraws": {
+        "before": 59864,
+        "after": 67347,
+        "elapsedMs": 548
+      },
+      "geometry": {
+        "height": 38105,
+        "controls": 573,
+        "canvases": [
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 300,
+            "height": 150,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 546,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 634,
+            "inViewport": false
+          },
+          {
+            "width": 666,
+            "height": 648,
+            "inViewport": false
+          }
+        ]
+      },
+      "cpu": {
+        "durationUs": 6598534,
+        "samples": 5387,
+        "top": [
+          {
+            "function": "(program)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 2517
+          },
+          {
+            "function": "uniformMatrix4fv",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 1583
+          },
+          {
+            "function": "uniform3f",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 223
+          },
+          {
+            "function": "drawElements",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 158
+          },
+          {
+            "function": "before",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 149
+          },
+          {
+            "function": "p",
+            "script": "2J1FeWLK.js",
+            "line": 3865,
+            "column": 11827,
+            "samples": 105
+          },
+          {
+            "function": "(idle)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 66
+          },
+          {
+            "function": "getTextAlternativeInternal",
+            "script": "",
+            "line": 3403,
+            "column": 35,
+            "samples": 39
+          },
+          {
+            "function": "Ne",
+            "script": "2J1FeWLK.js",
+            "line": 4302,
+            "column": 3447,
+            "samples": 22
+          },
+          {
+            "function": "(garbage collector)",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 17
+          },
+          {
+            "function": "getProgramInfoLog",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 15
+          },
+          {
+            "function": "getContext",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 15
+          },
+          {
+            "function": "multiplyMatrices",
+            "script": "2J1FeWLK.js",
+            "line": 43,
+            "column": 74318,
+            "samples": 11
+          },
+          {
+            "function": "renderBufferDirect",
+            "script": "2J1FeWLK.js",
+            "line": 4262,
+            "column": 29357,
+            "samples": 10
+          },
+          {
+            "function": "d",
+            "script": "2J1FeWLK.js",
+            "line": 3865,
+            "column": 11371,
+            "samples": 10
+          },
+          {
+            "function": "multiplyMatrices",
+            "script": "2J1FeWLK.js",
+            "line": 43,
+            "column": 74318,
+            "samples": 9
+          },
+          {
+            "function": "s",
+            "script": "2J1FeWLK.js",
+            "line": 3865,
+            "column": 11013,
+            "samples": 8
+          },
+          {
+            "function": "getExtension",
+            "script": "",
+            "line": -1,
+            "column": -1,
+            "samples": 8
+          },
+          {
+            "function": "setSize",
+            "script": "2J1FeWLK.js",
+            "line": 4262,
+            "column": 25890,
+            "samples": 7
+          },
+          {
+            "function": "query",
+            "script": "",
+            "line": 5140,
+            "column": 16,
+            "samples": 7
+          },
+          {
+            "function": "tt",
+            "script": "2J1FeWLK.js",
+            "line": 4262,
+            "column": 41253,
+            "samples": 6
+          },
+          {
+            "function": "updateMatrixWorld",
+            "script": "2J1FeWLK.js",
+            "line": 43,
+            "column": 88480,
+            "samples": 6
+          },
+          {
+            "function": "elementSafeTagName",
+            "script": "",
+            "line": 2837,
+            "column": 27,
+            "samples": 6
+          },
+          {
+            "function": "o",
+            "script": "2J1FeWLK.js",
+            "line": 47,
+            "column": 149979,
+            "samples": 5
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "name": "Documents",
+          "value": 2
+        },
+        {
+          "name": "Nodes",
+          "value": 67214
+        },
+        {
+          "name": "LayoutCount",
+          "value": 69
+        },
+        {
+          "name": "RecalcStyleCount",
+          "value": 348
+        },
+        {
+          "name": "LayoutDuration",
+          "value": 0.111345
+        },
+        {
+          "name": "RecalcStyleDuration",
+          "value": 0.082906
+        },
+        {
+          "name": "ScriptDuration",
+          "value": 6.194052
+        },
+        {
+          "name": "TaskDuration",
+          "value": 10.83722
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 110672008
+        }
+      ]
+    }
+  ],
+  "status": "complete"
+}

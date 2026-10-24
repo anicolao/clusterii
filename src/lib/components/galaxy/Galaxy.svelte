@@ -1482,7 +1482,7 @@
         />
       </div>{/if}
     {#if contactsOpen}<div
-        class="construction-panel contact-panel history-panel"
+        class="construction-panel contact-panel history-panel fleet-contacts-panel"
         role="dialog"
         aria-modal="true"
         tabindex="-1"
@@ -3017,6 +3017,9 @@
     .system-inspector:not(.expanded) dl > div {
       padding: 4px 0;
     }
+  }
+  .fleet-contacts-panel.contact-panel.history-panel {
+    top: var(--command-rail-height);
   }
   .arrival-panel.contact-panel.history-panel {
     inset: 0;

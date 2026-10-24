@@ -1,0 +1,99 @@
+{
+  "transactions": 211,
+  "attempts": 211,
+  "rpcFailures": 0,
+  "batches": [
+    {
+      "at": 30581.197448,
+      "event": "complete",
+      "label": "batch",
+      "span": 4,
+      "elapsedMs": 8737.082712,
+      "transactions": 97,
+      "ticks": 96
+    },
+    {
+      "at": 30943.020659,
+      "event": "complete",
+      "label": "batch",
+      "span": 5,
+      "elapsedMs": 361.3843310000011,
+      "transactions": 6,
+      "ticks": 4
+    },
+    {
+      "at": 30955.499218,
+      "event": "complete",
+      "label": "repeat",
+      "span": 6,
+      "elapsedMs": 11.202557000000525,
+      "transactions": 1,
+      "ticks": 0
+    },
+    {
+      "at": 37485.794311,
+      "event": "complete",
+      "label": "batch",
+      "span": 10,
+      "elapsedMs": 158.26041799999803,
+      "transactions": 3,
+      "ticks": 1
+    },
+    {
+      "at": 37500.45801,
+      "event": "complete",
+      "label": "repeat",
+      "span": 11,
+      "elapsedMs": 13.61656700000458,
+      "transactions": 1,
+      "ticks": 0
+    },
+    {
+      "at": 55036.062499,
+      "event": "complete",
+      "label": "batch",
+      "span": 15,
+      "elapsedMs": 10928.472056999999,
+      "transactions": 97,
+      "ticks": 96
+    },
+    {
+      "at": 55044.805868,
+      "event": "complete",
+      "label": "batch",
+      "span": 16,
+      "elapsedMs": 8.462088000000222,
+      "transactions": 1,
+      "ticks": 0
+    },
+    {
+      "at": 55052.79175,
+      "event": "complete",
+      "label": "repeat",
+      "span": 17,
+      "elapsedMs": 7.0271279999942635,
+      "transactions": 1,
+      "ticks": 0
+    },
+    {
+      "at": 59373.721758,
+      "event": "complete",
+      "label": "batch",
+      "span": 21,
+      "elapsedMs": 137.73413500000606,
+      "transactions": 3,
+      "ticks": 1
+    },
+    {
+      "at": 59390.311298,
+      "event": "complete",
+      "label": "repeat",
+      "span": 22,
+      "elapsedMs": 13.110732000001008,
+      "transactions": 1,
+      "ticks": 0
+    }
+  ],
+  "first100TickMs": 9098.467043,
+  "medianPostMarkerMs": 41.3532754062544
+}

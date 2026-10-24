@@ -1,0 +1,47 @@
+{
+  "fixture": {
+    "workers": 16,
+    "parkMs": 20,
+    "stackDepth": 16,
+    "durationSeconds": 35
+  },
+  "sourceHashes": {
+    "scripts/emulator-post-marker.mjs": "86aa7fb8446d640952c575686e1063568f22120bdea5ae6514d721d1716bb831",
+    "scripts/emulator-post-marker.jfc": "6248b1e1c4f43badaa4dba67292b12ad3230f6c1b6285489ec08fe64216293c1",
+    "scripts/check-emulator-export-load.mjs": "a55bba7ad3f489fa950d64b7a02176460435e39672da2eafcd69e7ccb18c899b",
+    "tests/fixtures/ProfileExportLoad.java": "886d65fc8c9443bf81e06e6c8ce1181eb7583296dfdf5af9d1a30f271b36c5ad"
+  },
+  "recordingBytes": 790881,
+  "control": {
+    "category": "buffer",
+    "exitCode": 143,
+    "signal": null,
+    "stdoutBytes": 67125248,
+    "stderrBytes": 0
+  },
+  "streamed": {
+    "buckets": [
+      {
+        "event": "jdk.ThreadPark",
+        "phase": "other",
+        "count": 24016,
+        "durationMs": 559416.1350999984
+      }
+    ],
+    "ignoredEvents": 0,
+    "export": {
+      "category": "complete",
+      "exitCode": 0,
+      "signal": null,
+      "stdoutBytes": 1642486528,
+      "stderrBytes": 0,
+      "elapsedMs": 7370.677541999998
+    }
+  },
+  "counts": {
+    "jdk.ThreadPark": 24016,
+    "jdk.JavaMonitorEnter": 0,
+    "jdk.ExecutionSample": 0
+  },
+  "status": "passed"
+}

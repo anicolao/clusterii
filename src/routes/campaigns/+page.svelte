@@ -67,6 +67,7 @@
   import Feedback from "$lib/components/Feedback.svelte";
   import CommanderPortrait from "$lib/components/CommanderPortrait.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
+  import AdmissionBriefing from "$lib/components/AdmissionBriefing.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import PortraitPicker from "$lib/components/PortraitPicker.svelte";
   import type { Portrait } from "@shared/profile";
@@ -958,6 +959,20 @@
       <div class="development-banner">
         Development campaign · Rules under review
       </div>{/if}
+    {#if access === "developer" && selected && game && !creating && !loading}
+      <div class="join-tabs" role="group" aria-label="Join campaign details">
+        {#each ["faction", "portrait", "briefing"] as tab}<ActionButton
+            class="quiet"
+            aria-pressed={joinTab === tab}
+            onclick={() => openJoinTab(tab as typeof joinTab)}
+            >{tab === "faction"
+              ? "Faction"
+              : tab === "portrait"
+                ? "Portrait"
+                : "Briefing & roster"}</ActionButton
+          >{/each}
+      </div>
+    {/if}
     <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (Named scroll region supports bounded keyboard Home/End without activating a command.) -->
     <div
       class="campaign-body"
@@ -1101,22 +1116,7 @@
           </form>
         {:else if selected}
           {#if loading}<p role="status">Recovering your campaign…</p>
-          {:else if game}<div
-              class="join-tabs"
-              role="group"
-              aria-label="Join campaign details"
-            >
-              {#each ["faction", "portrait", "briefing"] as tab}<ActionButton
-                  class="quiet"
-                  aria-pressed={joinTab === tab}
-                  onclick={() => openJoinTab(tab as typeof joinTab)}
-                  >{tab === "faction"
-                    ? "Faction"
-                    : tab === "portrait"
-                      ? "Portrait"
-                      : "Briefing & roster"}</ActionButton
-                >{/each}
-            </div>
+          {:else if game}
             {#if joinTab === "faction"}<FactionPicker
                 bind:value={faction}
                 {game}
@@ -1142,35 +1142,7 @@
                   </div>
                 </div>
               </section>
-            {:else}<section class="roster">
-                <h2>Campaign briefing</h2>
-                <p>
-                  {game.capacity} empires · {game.capacity / 4} seats per faction
-                  · a full roster starts at the next quarter-hour. You may leave until
-                  the scheduled start.
-                </p>
-                <p>
-                  The design objective is shared victory: an eligible alliance
-                  holds {rules.victoryStarFraction * 100}% of stars for {rules.victoryHoldTicks}
-                  ticks. Victory evaluation is not enabled in this development campaign.
-                </p>
-                <details>
-                  <summary>Review this campaign’s rules</summary>
-                  <p>
-                    {game.rulesetVersion} · Review status. A tick lasts {rules.tickSeconds /
-                      60} minutes. Starting holdings: {rules.startingAssets
-                      .credits} credits,
-                    {rules.startingAssets.fighters} fighters, {rules
-                      .startingAssets.infantry} infantry; {rules.startingAssets
-                      .markets} markets, {rules.startingAssets.camps} camp, {rules
-                      .startingAssets.bases} base and
-                    {rules.startingAssets.stations} station. Home systems match faction
-                    affinity. The faction selector shows the applicable production
-                    matrix.
-                  </p>
-                </details>
-                <CampaignRoster {game} />
-              </section>{/if}
+            {:else}<AdmissionBriefing {game} />{/if}
           {/if}
         {:else}<section class="campaign-list" aria-label="Campaign directory">
             <div
@@ -1455,8 +1427,8 @@
   .join-tabs {
     display: flex;
     gap: 8px;
-    position: sticky;
-    top: 0;
+    position: relative;
+    flex-shrink: 0;
     z-index: 3;
     background: #07121ef8;
     padding: 4px 16px;
@@ -1646,12 +1618,6 @@
   .portrait-choice {
     max-width: 600px;
     margin: 20px 0;
-  }
-  summary {
-    min-height: 48px;
-    cursor: pointer;
-    padding: 14px 0;
-    color: var(--gold);
   }
   :global(.retry) {
     margin: 0 28px 20px;

@@ -1,0 +1,15 @@
+# Exact pinned Linux contact family
+
+Prompt202 / reviewer02:14; main01:54/02:14 reconciled. Local sourcec78f7243 four journeys/88 candidates remains preserved and unapproved. Production/spec unchanged through this dispatch preparation. Targeteaa2b57a remains applicationgreen/strictred, untouched.
+
+One existing-pattern branch-only, path-only request with contents:read, attempt1, isolated new request commit whose parent binds source. No generic case selection, whole-suite fallback, secrets/deployment, cancellation or baseline updates. Exact feature012/spec e4484a9625456225a381ae924be491ac1ca6eaf7b0b105b0baf32e4e74f56c56, all4sizes/22images each; pinned existing ARM renderer. Ordinary authenticated services/actions and complete story remain; explicit leased tick/entropy harness unchanged. Original240s/30s/10s, retries0,maxfailures1. Sync then Functions build before owned emulators. Failures uploaded; incomplete/dirty/wrong-platform/missing-size output cannot claim complete candidates. This is candidate verification, not strict baseline acceptance.
+
+Thirteen focused checks pass including actual request CLI in disposable Git fixture, parsed workflow permissions/filter, serial setup/service invocation and error preservation, source hash/complete output validation. Existing required workflow diff is empty; narrow recovery dispatcher accepts only one additional literal case. No local browser/build run. Local disk near floor; artifact retrieval must wait for fresh adequate archive+extraction reserve, remote30-day retention preserves results meanwhile.
+
+## Single request issued
+
+Preparation/source parent e1b86ef6c161745b269ab498ec800913f22b3d56; isolated executor fa23ffd54029e40338a4127ad4947b4c08b75428; request SHA25624987a0ce5450e450251e41796005d2f0182e2fc0df851b9ae1bfe2f458f3d81. Actual CLI validation passed on the clean isolated child. One push triggered run40069590773/job120799949199; initial observed phase checkout, not test execution. No repeat request. Remote artifact retention30days, failure upload always. Required application/stories workflow diff from target is empty.
+
+Latest local free space1,541,996KiB below floor; no local captures/builds or result archive retrieval. Changes in space have no established cause. Keep output remotely until fresh adequate archive/extraction reserve. Guard tests and source mapping were low-output work, not another service run.
+
+REFERENCE_MAP.md maps all44 current missing-reference families (176instances) to written contracts and exact concept plate filenames, plus current evidence decision. JSON re-reads592 retained manifests from previous inventory and records actual platform/source/status/current spec match; this is not592 eligible complete families. Older Linux manifests do not establish full4size current rendering equivalence. Science24 is the concrete completed independent-review set with scoped source audit; contact88 Linux is pending this request. No arbitrary substitution for other42 families, no inferred approval or failed-verification image promotion. Previous strict timeout and72pixel gates remain separate.

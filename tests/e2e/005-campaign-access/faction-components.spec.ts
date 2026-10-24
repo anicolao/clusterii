@@ -73,5 +73,56 @@ test("Shared faction composition preserves keyboard choices in both motion prefe
         },
       ],
     });
+    await story.step(`briefing-${motion}`, {
+      actor: "Component reviewer",
+      description:
+        "Read the actual shared admission briefing and open its rules with the keyboard. This reducer-derived gallery is not a live campaign.",
+      action: async () => {
+        const summary = page
+          .getByRole("region", { name: "Admission briefing", exact: true })
+          .locator("summary");
+        await summary.focus();
+        await page.keyboard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The shared rules disclosure opens without claiming a seat.",
+        check: async () =>
+          expect(
+            page
+              .getByRole("region", { name: "Admission briefing", exact: true })
+              .locator("details"),
+          ).toHaveAttribute("open", ""),
+      },
+      verifications: [
+        {
+          spec: "Real rules and all four faction capacities remain in the shared component.",
+          check: async () => {
+            const briefing = page.getByRole("region", {
+              name: "Admission briefing",
+              exact: true,
+            });
+            await expect(
+              briefing.getByText("Victory evaluation is not enabled", {
+                exact: false,
+              }),
+            ).toBeVisible();
+            await expect(briefing.getByRole("listitem")).toHaveCount(4);
+          },
+        },
+      ],
+      views: [
+        {
+          page,
+          player: "Component reviewer",
+          surface: "document",
+          primary: [
+            page
+              .getByRole("region", { name: "Admission briefing", exact: true })
+              .locator("summary"),
+          ],
+          normalMotion: motion === "no-preference",
+        },
+      ],
+    });
   }
 });

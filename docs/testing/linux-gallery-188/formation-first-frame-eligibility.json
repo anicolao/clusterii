@@ -1,0 +1,154 @@
+[
+  {
+    "path": "tests/e2e/010-zero-science/stories/candidates-147d62b7/live-zero-science/desktop/darwin-arm64/013-form-0-1-fleet-marshal.png",
+    "sha256": "4b4215d39244119efa78cecda6e19e6100861fb624ad0228f9da9652de81db74",
+    "bytes": 1476377,
+    "source": {
+      "commit": "147d62b7c9d6d369ad65b70f309b2c1f35e9a72b",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "platform": "darwin-arm64",
+    "renderer": {
+      "platform": "darwin-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "25.5.0",
+      "browser": "149.0.7827.55",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "tests/e2e/010-zero-science/stories/candidates-147d62b7/live-zero-science/phone/darwin-arm64/013-form-0-1-fleet-marshal.png",
+    "sha256": "733eaeb49a69a6473e2c5977a1cf558f24938fe4c3a8a617c9f660edc121cae3",
+    "bytes": 181080,
+    "source": {
+      "commit": "147d62b7c9d6d369ad65b70f309b2c1f35e9a72b",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "platform": "darwin-arm64",
+    "renderer": {
+      "platform": "darwin-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "25.5.0",
+      "browser": "149.0.7827.55",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "tests/e2e/010-zero-science/stories/candidates-d97d897a/live-zero-science/large/darwin-arm64/013-form-0-1-fleet-marshal.png",
+    "sha256": "f5b8ebfe4cc436483b5d554278686145de1f07f8911d9a22d0fbbd918b42e8b1",
+    "bytes": 6605111,
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "platform": "darwin-arm64",
+    "renderer": {
+      "platform": "darwin-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "25.5.0",
+      "browser": "149.0.7827.55",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "tests/e2e/010-zero-science/stories/candidates-d97d897a/live-zero-science/short/darwin-arm64/013-form-0-1-fleet-marshal.png",
+    "sha256": "9227d38a53a9cab3bbdbaffcc045a41d5b7a0b1105c1a8b08560b1ae91f92280",
+    "bytes": 978670,
+    "source": {
+      "commit": "d97d897ab4985491acc084ded6265f98e8f7d946",
+      "dirty": false,
+      "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+      "specSha256": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3"
+    },
+    "platform": "darwin-arm64",
+    "renderer": {
+      "platform": "darwin-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "25.5.0",
+      "browser": "149.0.7827.55",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  }
+]

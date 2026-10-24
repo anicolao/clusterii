@@ -1,0 +1,366 @@
+scripts/emulator-post-marker.mjs 40ms
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+/Users/anicolao/projects/games/clusterii-conversation-history/src/lib/components/FleetRoute.svelte:294:5
+Warn: Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions (svelte)
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+    <div
+      class="route-details"
+      onkeydown={readingKey}
+      inert={editing && !active && !completed}
+      role="region"
+      tabindex="0"
+      aria-label={editing && !active && !completed
+        ? "Force details"
+        : "Route details"}
+    >
+      <p class="overline">
+        Fleet {fleet?.number ?? "lost"} · {origin?.name ?? "Recorded outcome"}
+      </p>
+
+      {#if forces}<section
+          class="force-review"
+          aria-label="Confirmed route forces"
+        >
+          <section aria-label="Fleet transport manifest">
+            <h3>{active ? "Forces aboard" : "Forces to deploy"}</h3>
+            <dl>
+              <div>
+                <dt>Fighters aboard</dt>
+                <dd>{forces.fighters}</dd>
+              </div>
+              <div>
+                <dt>Infantry aboard</dt>
+                <dd>{forces.infantry}</dd>
+              </div>
+              <div class="capacity">
+                <dt>Transport capacity</dt>
+                <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+                <meter
+                  min="0"
+                  max={Math.max(1, forces.capacity)}
+                  value={forces.infantry}
+                  aria-label="Infantry transport capacity"
+                ></meter>
+              </div>
+            </dl>
+          </section>
+          {#if !committed || committed.status !== "traveling"}<section
+              aria-label="Confirmed origin defense"
+            >
+              <h3>
+                Remaining at {origin?.name ?? "origin"}
+              </h3>
+              <dl>
+                <div>
+                  <dt>Orbit garrison</dt>
+                  <dd>
+                    {forces.orbit === null
+                      ? "Unknown"
+                      : forces.orbit + " fighters"}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Surface garrison</dt>
+                  <dd>
+                    {forces.surface === null
+                      ? "Unknown"
+                      : forces.surface + " infantry"}
+                  </dd>
+                </div>
+                <div class="capacity">
+                  <dt>Other own stationed fleets</dt>
+                  <dd>
+                    {forces.otherFighters} fighters · {forces.otherInfantry} infantry
+                  </dd>
+                </div>
+              </dl>
+              <p>
+                Confirmed now; other orders and ticks can change these forces
+                before departure. Garrison counts already exclude this fleet.
+              </p>
+            </section>{/if}
+        </section>{/if}
+      {#if committed}<p class="outcome" role="status">
+          {committed.status === "traveling" ? "Traveling" : "At waypoint"} · {view.stars.find(
+            (s) => s.id === committed.to,
+          )?.name} · arrival tick {committed.arrivalTick}.
+        </p>{:else if accepted}<p class="outcome" role="status">
+          Route accepted · departure tick {accepted.effectiveTick} · first arrival
+          tick
+          {accepted.effectiveTick + (acceptedLegs[0]?.ticks ?? 0)}, subject to
+          execution validation.
+        </p>{/if}
+      {#each view.military?.ledger.filter((e) => e.fleetId === fleetId && ["arrived", "destroyed", "halted"].includes(e.result)) ?? [] as e}<p
+          class="outcome"
+          role="status"
+        >
+          {e.result === "arrived"
+            ? "Arrived"
+            : e.result === "destroyed"
+              ? "Fleet destroyed"
+              : "Route halted"} at {view.stars.find((s) => s.id === e.starId)
+            ?.name}. {e.fighters} fighters · {e.infantry} infantry aboard.
+        </p>{/each}
+      {#each view.military?.arrivals ?? [] as report}<article
+          aria-label="Arrival report"
+        >
+          <h3>
+            {view.stars.find((s) => s.id === report.starId)?.name} · tick {report.tick}
+          </h3>
+          <p>
+            {report.contested ? "Contested arrival" : "Arrival resolved"}. Your
+            forces: {report.fightersBefore} → {report.fightersAfter} fighters; {report.infantryBefore}
+            → {report.infantryAfter} infantry, including the surface.
+          </p>
+          <p>
+            Orbit: {view.roster[report.orbit]?.alias ?? "Unclaimed"}. Surface: {view
+              .roster[report.surface]?.alias ?? "Unclaimed"}.
+          </p>
+          {#if report.contested}<p>
+              Orbital order: {report.order
+                .map((i) => view.roster[i].alias)
+                .join(" → ")}. The incumbent defends first.
+            </p>{/if}
+        </article>{/each}
+      {#if active}<ol aria-label="Route waypoints">
+          {#each committed?.waypoints ?? accepted?.waypoints ?? [] as id}<li>
+              {view.stars.find((s) => s.id === id)?.name}
+            </li>{/each}
+        </ol>{/if}
+    </div>
+    <footer bind:offsetHeight={footerHeight}>
+
+====================================
+svelte-check found 0 errors and 1 warning in 1 file
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 41ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+$ node --test scripts/check-emulator-post-marker.test.mjs scripts/check-verification-reuse.test.mjs scripts/check-profile-ingress-observer.test.mjs scripts/check-story-bootstrap.test.mjs scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.381ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.293958ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.509166ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (10.409458ms)
+✔ a roster without a scheduled start does not fabricate a time (0.090834ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.396375ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.251583ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.682166ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.407416ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (5.527709ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.9095ms)
+✔ unrelated campaigns retain every production entropy input (0.067875ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.197667ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.359333ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.544ms)
+✔ emulator selection is exact and exported categories cannot include document or identity metadata (0.997292ms)
+✔ unsafe invocation reports only a fixed guard category and unit tooling cannot claim the story observation (44.373ms)
+✔ actual jcmd acquisition uses the checked-in JFC and completes a parseable recording (4072.292458ms)
+✔ real Nix JDK recording exports bounded wait evidence without JVM metadata (493.242916ms)
+✔ streamed JFR events preserve aggregation across escaped strings and chunk boundaries (0.462291ms)
+✔ export failures retain classified process facts without output or exception contents (280.795625ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.376875ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.576041ms)
+✔ membership fault requires demo loopback and reviewed source hashes (1.045917ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.290583ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.103041ms)
+✔ restoration refuses concurrent head, membership or directory writes (0.11325ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.834209ms)
+✔ unrelated campaigns retain every original entropy input (0.072375ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.193833ms)
+✔ binary metadata correlation is bounded and never returns source identifiers or secrets (1.013333ms)
+✔ native HTTP observer preserves body, headers, status and response while separating arrival/close (13.709792ms)
+✔ diagnostic cap is explicit and does not prevent subsequent HTTP responses (12.788292ms)
+✔ successful CI cannot accept absent, unmatched or uncorrelated ingress evidence (1.270083ms)
+✔ generated Svelte aliases must precede Playwright's first configuration read (3.039ms)
+✔ story runner awaits alias generation before building and launching any cohort (0.296125ms)
+Previous story evidence preserved at /tmp/nix-shell.IpSsfM/cluster-cohort-test-azGvS6/.story-cohorts-4TMtby/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.IpSsfM/cluster-cohort-test-azGvS6/.story-cohorts-4TMtby/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (11.647458ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.65575ms)
+✔ interruption retains current artifacts and launches no successor (2.060792ms)
+✔ an artifact path collision fails rather than overwriting either result (3.966167ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.8105ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.887459ms)
+✔ capture policy protects each exact comparison, readiness and review guard (2.125209ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (10.492708ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.836209ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.849291ms)
+✔ index acquisition preserves every mode/path beyond the default child buffer and matches the complete repository (152.664959ms)
+✔ only the explicit report allowlist can change without changing verification inputs (0.411709ms)
+✔ reuse requires exact scope, provenance and an earlier source; outcomes never turn failure or pending into success (0.216042ms)
+✔ workflow check names, full execution branches and evidence retention remain present (0.597625ms)
+✔ prepare executes normal checks for absent, invalid, expired, unavailable or unrelated evidence (0.805083ms)
+✔ prepare and wait pin a real executor; pending becomes its failure or retained success, never a manufactured pass (0.786792ms)
+✔ chained plans resolve the original checkout and reject a substituted unrelated executor (0.186833ms)
+✔ wait falls back to real tests on missing evidence/API, but preserves a pending or failed source gate (0.358875ms)
+✔ plan archive reader checks size/hash, expiry and bounded JSON with actual ZIP fixtures (139.319ms)
+ℹ tests 55
+ℹ suites 0
+ℹ pass 55
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4958.5795
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ playwright test --config playwright.paths.config.ts
+
+Running 4 tests using 1 worker
+
+
+(node:46310) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:46573) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/4] [desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:46830) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/4] [large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:47088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] [short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4 passed (1.6s)

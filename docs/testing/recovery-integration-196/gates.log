@@ -1,0 +1,1054 @@
+openjdk version "21.0.11" 2026-04-21 LTS
+OpenJDK Runtime Environment Zulu21.50+19-CA (build 21.0.11+10-LTS)
+OpenJDK 64-Bit Server VM Zulu21.50+19-CA (build 21.0.11+10-LTS, mixed mode, sharing)
+v24.18.0
+1.3.13
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+/Users/anicolao/projects/games/clusterii-conversation-history/src/lib/components/FleetRoute.svelte:294:5
+Warn: Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions (svelte)
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+    <div
+      class="route-details"
+      onkeydown={readingKey}
+      inert={editing && !active && !completed}
+      role="region"
+      tabindex="0"
+      aria-label={editing && !active && !completed
+        ? "Force details"
+        : "Route details"}
+    >
+      <p class="overline">
+        Fleet {fleet?.number ?? "lost"} · {origin?.name ?? "Recorded outcome"}
+      </p>
+
+      {#if forces}<section
+          class="force-review"
+          aria-label="Confirmed route forces"
+        >
+          <section aria-label="Fleet transport manifest">
+            <h3>{active ? "Forces aboard" : "Forces to deploy"}</h3>
+            <dl>
+              <div>
+                <dt>Fighters aboard</dt>
+                <dd>{forces.fighters}</dd>
+              </div>
+              <div>
+                <dt>Infantry aboard</dt>
+                <dd>{forces.infantry}</dd>
+              </div>
+              <div class="capacity">
+                <dt>Transport capacity</dt>
+                <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+                <meter
+                  min="0"
+                  max={Math.max(1, forces.capacity)}
+                  value={forces.infantry}
+                  aria-label="Infantry transport capacity"
+                ></meter>
+              </div>
+            </dl>
+          </section>
+          {#if !committed || committed.status !== "traveling"}<section
+              aria-label="Confirmed origin defense"
+            >
+              <h3>
+                Remaining at {origin?.name ?? "origin"}
+              </h3>
+              <dl>
+                <div>
+                  <dt>Orbit garrison</dt>
+                  <dd>
+                    {forces.orbit === null
+                      ? "Unknown"
+                      : forces.orbit + " fighters"}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Surface garrison</dt>
+                  <dd>
+                    {forces.surface === null
+                      ? "Unknown"
+                      : forces.surface + " infantry"}
+                  </dd>
+                </div>
+                <div class="capacity">
+                  <dt>Other own stationed fleets</dt>
+                  <dd>
+                    {forces.otherFighters} fighters · {forces.otherInfantry} infantry
+                  </dd>
+                </div>
+              </dl>
+              <p>
+                Confirmed now; other orders and ticks can change these forces
+                before departure. Garrison counts already exclude this fleet.
+              </p>
+            </section>{/if}
+        </section>{/if}
+      {#if committed}<p class="outcome" role="status">
+          {committed.status === "traveling" ? "Traveling" : "At waypoint"} · {view.stars.find(
+            (s) => s.id === committed.to,
+          )?.name} · arrival tick {committed.arrivalTick}.
+        </p>{:else if accepted}<p class="outcome" role="status">
+          Route accepted · departure tick {accepted.effectiveTick} · first arrival
+          tick
+          {accepted.effectiveTick + (acceptedLegs[0]?.ticks ?? 0)}, subject to
+          execution validation.
+        </p>{/if}
+      {#each view.military?.ledger.filter((e) => e.fleetId === fleetId && ["arrived", "destroyed", "halted"].includes(e.result)) ?? [] as e}<p
+          class="outcome"
+          role="status"
+        >
+          {e.result === "arrived"
+            ? "Arrived"
+            : e.result === "destroyed"
+              ? "Fleet destroyed"
+              : "Route halted"} at {view.stars.find((s) => s.id === e.starId)
+            ?.name}. {e.fighters} fighters · {e.infantry} infantry aboard.
+        </p>{/each}
+      {#each view.military?.arrivals ?? [] as report}<article
+          aria-label="Arrival report"
+        >
+          <h3>
+            {view.stars.find((s) => s.id === report.starId)?.name} · tick {report.tick}
+          </h3>
+          <p>
+            {report.contested ? "Contested arrival" : "Arrival resolved"}. Your
+            forces: {report.fightersBefore} → {report.fightersAfter} fighters; {report.infantryBefore}
+            → {report.infantryAfter} infantry, including the surface.
+          </p>
+          <p>
+            Orbit: {view.roster[report.orbit]?.alias ?? "Unclaimed"}. Surface: {view
+              .roster[report.surface]?.alias ?? "Unclaimed"}.
+          </p>
+          {#if report.contested}<p>
+              Orbital order: {report.order
+                .map((i) => view.roster[i].alias)
+                .join(" → ")}. The incumbent defends first.
+            </p>{/if}
+        </article>{/each}
+      {#if active}<ol aria-label="Route waypoints">
+          {#each committed?.waypoints ?? accepted?.waypoints ?? [] as id}<li>
+              {view.stars.find((s) => s.id === id)?.name}
+            </li>{/each}
+        </ol>{/if}
+    </div>
+    <footer bind:offsetHeight={footerHeight}>
+
+====================================
+svelte-check found 0 errors and 1 warning in 1 file
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 40ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+$ bun test tests/unit.test.ts tests/galaxy-labels.test.ts tests/campaign.test.ts tests/travel.test.ts tests/fleet-contacts.test.ts tests/conversations.test.ts tests/briefing.test.ts tests/trades.test.ts tests/selected-observer.test.ts tests/current-result.test.ts tests/motion-preference.test.ts tests/detail-preference.test.ts tests/science-rate.test.ts tests/galaxy-framing.test.ts
+bun test v1.3.13 (bf2e2cec)
+
+tests/motion-preference.test.ts:
+(pass) explicit reduction persists and OS reduction cannot be overridden [0.41ms]
+(pass) cross-tab changes and unavailable storage preserve honest usable state
+(pass) shared feedback cancels active motion on local reduction without replaying the event
+
+tests/campaign.test.ts:
+(pass) review rules generate persisted, reproducible, fair connected galaxies for every roster size [95.21ms]
+(pass) development admission enforces quota, idempotency, stale claims, scheduled start and private views [1.60ms]
+(pass) split ownership omits opposing layer values from serialized views [0.32ms]
+(pass) private projections are independent of opposing-layer values for every control combination [3.99ms]
+(pass) maintenance freezes scheduled time and rejects admissions without changing holdings [0.63ms]
+(pass) epoch activation resumes only paused members and permanently records mock exposure [0.14ms]
+(pass) exact production floors review exponents, preserves milliunits and apportions stable ties [0.40ms]
+(pass) home production conserves credits, whole forces and fractional remainders; science advances only after output [4.06ms]
+(pass) split control routes production by layer, releases escrow once and hides opposing ledgers [2.05ms]
+(pass) production force caps record discarded units and legacy campaigns retain their stored capability [0.52ms]
+(pass) production pause preserves the remaining interval and legacy starts never gain an economy [0.25ms]
+(pass) investing is applied once before wallet/escrow apportionment and neutral developments produce nothing [0.50ms]
+(pass) research admission assigns future cutoff, rejects foreign/stale/paused/legacy orders and keeps queues private [1.12ms]
+(pass) research selections settle in admitted order, retain unfinished progress and transfer capped bank exactly once [1.45ms]
+(pass) construction reserves exact escalating prices, serial layer capacity and future cutoffs without overspending [1.81ms]
+(pass) four construction advances produce on completion and distribute one bounded dividend from frozen markets [2.07ms]
+(pass) cancellation settles at its assigned tick with full or half refund and cannot repeat [2.79ms]
+(pass) split-layer construction privacy, pre-execution invalidation and capture cancellation preserve exact refunds [1.87ms]
+(pass) construction layer queues start successors without an immediate advance and dividend escrow conserves its pool [4.11ms]
+(pass) market focus validates exact allocation, membership, private orders and future boundary [1.14ms]
+(pass) focus applies in sequence but completion dividends use the previous tick allocation [2.22ms]
+(pass) focus admission is bounded, ordered and zero-weight completion pools pay nothing [13.76ms]
+(pass) scans use one private draw per target, frozen levels and nearest orbital source [2.43ms]
+(pass) stale observations preserve old permitted facts and never expose current enemy secrets or draws [1.99ms]
+(pass) split ownership grants only observed fields; no sensor means stale and legacy capability remains unchanged [2.59ms]
+(pass) server observation draws are stable and domain-separated without public replay secrets [0.17ms]
+Stellar observation envelope budget {
+  mode: "mock",
+  bytes: 563611,
+  players: 12,
+  stars: 384,
+}
+Stellar observation envelope budget {
+  mode: "real",
+  bytes: 563432,
+  players: 12,
+  stars: 384,
+}
+(pass) the largest stellar catalogue retains complete reports within the canonical envelope budget [25.27ms]
+(pass) observation storage reserves complete reports before admitting excess pending work [5.81ms]
+(pass) fleet admission reserves without moving forces; boundary settlement conserves units and rejects duplicate reservations [3.58ms]
+(pass) fleet validation, layer entitlement and private views fail closed [2.28ms]
+(pass) formed and reserved fleet units count toward the empire production ceiling [0.85ms]
+(pass) fleet slots include reservations and enforce the recorded empire limit [23.25ms]
+(pass) state capacity cannot block disbanding that frees persistent fleet storage [634.79ms]
+Disband recovery envelope budget {
+  mode: "mock",
+  bytes: 933747,
+}
+Disband recovery envelope budget {
+  mode: "real",
+  bytes: 933568,
+}
+(pass) the disbanding recovery budget fits both encrypted envelope formats [30.19ms]
+(pass) two commanders using one command UUID retain independent fleet identities and forces [1.36ms]
+(pass) cargo reservations share surface inventory and conserve fleet/system forces across load and unload [2.41ms]
+(pass) cargo fails closed on forged fields, lost layer ownership, capacity changes and absent fleets [6.16ms]
+(pass) fleet acknowledgement reconciles only its authoritative outcome and never invents a future transfer [2.09ms]
+(pass) split and merge conserve stationed complements, reserve slots and lock every participant [2.08ms]
+(pass) reorganization rejects forged or incompatible fleets and preserves orthogonal surface control [5.34ms]
+(pass) pending splits reserve the shared fleet limit against formation and other splits [1.97ms]
+(pass) fleet cancellation releases only owned reservations before the exact cutoff [1.27ms]
+(pass) cancelling all stationed operations preserves forces and releases both merge participants [15.70ms]
+
+tests/unit.test.ts:
+(pass) JSON, Unicode, escaping, null and newlines round trip through object and grant [1.27ms]
+(pass) wrong keys, modified bodies, game, recipient, epoch and revision fail closed [0.47ms]
+(pass) profile reducer validates data and rejects lost updates [0.15ms]
+(pass) campaign sign-in return accepts only canonical IDs and retains the preview base
+(pass) Continue uses accessible active metadata and the remembered selection only
+(pass) AES-GCM reads an independent OpenSSL vector with authenticated Cluster metadata [0.61ms]
+(pass) real envelopes and recipient grants reject substitution and never accept mock data [0.81ms]
+(pass) acknowledgements bind exact payload and admission path independently of JSON property order [0.42ms]
+(pass) market drafts preserve incomplete intent, follow untouched authority and isolate account/access scopes [0.25ms]
+
+tests/trades.test.ts:
+(pass) credit offers reserve exact amounts and settle both sides once without a dividend [1.77ms]
+(pass) only named participants see terms and outcomes, with no account IDs or opponent wallet [0.92ms]
+(pass) authorization, exact terms, affordability and revision guards leave canonical state unchanged [2.06ms]
+(pass) first admitted acceptance or withdrawal wins and all cancellation paths conserve reservations [1.25ms]
+(pass) strict tick cutoff and expiry precede settlement during catch-up [0.86ms]
+(pass) overflow fails the complete exchange and returns both reservations without partial credit [1.48ms]
+(pass) credit input accepts exact milliunits without float rounding or scientific notation
+(pass) co-faction commanders retain distinct trade identities and private entitlements [1.25ms]
+
+tests/travel.test.ts:
+(pass) route geometry uses exact Euclidean range separately from speed and validates each leg [0.57ms]
+(pass) route admission is private, revision-bound, strict, cancellable and does not move forces [2.46ms]
+(pass) travel conserves complements, resolves neutral layers, stops at waypoints and revalidates onward range [3.95ms]
+(pass) integer combat follows square-law coefficients and defender-first linear frontage [0.21ms]
+(pass) simultaneous hostile arrival is permutation-stable, capacity-safe and reports only to participants [3.25ms]
+(pass) fleet sensors use confirmed in-flight positions without disclosing the private route [1.80ms]
+(pass) hostile surface arrival ends the onward route even with friendly orbital control [2.23ms]
+Route capacity fixture {
+  admitted: 142,
+  refused: true,
+}
+(pass) route admission reserves multi-fleet departure and arrival growth within both encrypted document limits [160.20ms]
+(pass) split occupation routes each output by layer and releases escrow once with recipient-only loss reports [5.03ms]
+(pass) arrival history deduplicates repeated snapshots while retaining older recorded details [2.40ms]
+(pass) submitted route recovery requires the accessible matching fleet and preserves newer local edits [1.09ms]
+(pass) route memory and submitted recovery preserve newer intent across navigation and retirement [2.17ms]
+(pass) route review retains exact garrison without subtracting formed forces twice or revealing the opposite layer [0.78ms]
+
+tests/fleet-contacts.test.ts:
+(pass) fleet scans persist one target draw and project exact acquired facts without private identifiers or routes [1.77ms]
+(pass) failed scans publish no contact; stale history retains only acquired positions [1.46ms]
+(pass) scan outcomes survive JSON reload and future navigation orders without exposing hidden destinations [1.43ms]
+(pass) frozen scanning level, missing sensors, invalid draws and legacy capability are explicit [1.21ms]
+(pass) incomplete persisted scan matrices fail closed instead of exposing an unverified contact [1.41ms]
+(pass) moving contacts use the confirmed position and never publish the planned destination [1.91ms]
+(pass) an empire without an orbital or fleet sensor acquires no contacts and consumes no target draw [1.09ms]
+
+tests/briefing.test.ts:
+(pass) visit checkpoints are private, monotonic and change no gameplay or message-read state [1.35ms]
+(pass) visit validation rejects forged periods and nonmembers without mutation [0.68ms]
+(pass) briefing requires an exact baseline, deduplicates production and reports layer losses explicitly [1.15ms]
+(pass) briefing includes only received message metadata and does not mark messages read [1.68ms]
+(pass) briefing retains construction completion once and excludes outcomes before the saved visit [1.99ms]
+(pass) illustrated briefing derives mixed control, arrivals, construction and received-message reports from production reducers [3.85ms]
+(pass) eight-seat briefings distinguish co-faction authors and safely label legacy identity [3.24ms]
+(pass) commander identity rejects missing or invalid seat indices without faction inference [0.95ms]
+
+tests/galaxy-framing.test.ts:
+(pass) camera framing contains the unchanged authorized catalogue at phone, desktop, large and short map aspects [1.45ms]
+(pass) route camera fits actual inclined and reordered endpoints across viewport changes [0.43ms]
+
+tests/selected-observer.test.ts:
+(pass) superseded selection rejects late data and errors and retires delayed subscription [0.10ms]
+(pass) current observer preserves ownership of cleanup and propagates initialization failure [0.11ms]
+
+tests/current-result.test.ts:
+(pass) a superseded snapshot error cannot replace a newer saved identity [0.14ms]
+(pass) current errors remain actionable and retired successes cannot restore identity [0.07ms]
+
+tests/science-rate.test.ts:
+(pass) current rate is available before first output and equals unchanged next settlement [4.29ms]
+(pass) current earned Innovation differs from previous delivered output without changing settlement timing [3.76ms]
+(pass) science sources follow orbital entitlement, omit opposing fields and sum before Innovation [1.23ms]
+
+tests/detail-preference.test.ts:
+(pass) detail preference waits for initialization and persists browser-local selection [0.28ms]
+(pass) storage denial is explicit while the current-page setting still works
+(pass) late decorative texture cannot restore a retired render generation
+
+tests/conversations.test.ts:
+(pass) future-only admission never grants an invited player earlier message plaintext [1.22ms]
+(pass) concurrent senders share one server sequence without rejecting unrelated campaign revisions [1.53ms]
+(pass) removal fences stale sends and rejoining grants no messages sent during absence [1.84ms]
+(pass) only the creator manages membership and closure; members leave without erasing earlier records [2.00ms]
+(pass) validation and room conflicts preserve authoritative state and never alter economic or military state [1.59ms]
+(pass) selected history requires explicit acceptance and projects only granted bodies [2.59ms]
+(pass) selected references reject invalid scopes, stale membership and unbounded or duplicate history [0.96ms]
+
+tests/galaxy-labels.test.ts:
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars [0.13ms]
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.33ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes
+
+ 113 pass
+ 0 fail
+ 4522 expect() calls
+Ran 113 tests across 14 files. [1302.00ms]
+$ node --test scripts/check-recovery-settlement.test.mjs scripts/check-emulator-post-marker.test.mjs scripts/check-verification-reuse.test.mjs scripts/check-profile-ingress-observer.test.mjs scripts/check-story-bootstrap.test.mjs scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.401916ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.359167ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.460292ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (10.723458ms)
+✔ a roster without a scheduled start does not fabricate a time (0.105166ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.399917ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.461917ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (1.507209ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.378583ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.88275ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.949083ms)
+✔ unrelated campaigns retain every production entropy input (0.064917ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.188709ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.360708ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (2.143417ms)
+✔ emulator selection is exact and exported categories cannot include document or identity metadata (0.973ms)
+✔ unsafe invocation reports only a fixed guard category and unit tooling cannot claim the story observation (43.050042ms)
+✔ actual jcmd acquisition uses the checked-in JFC and completes a parseable recording (4524.1475ms)
+✔ real Nix JDK recording exports bounded wait evidence without JVM metadata (473.585458ms)
+✔ streamed JFR events preserve aggregation across escaped strings and chunk boundaries (0.415291ms)
+✔ export failures retain classified process facts without output or exception contents (276.393416ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.39925ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.576459ms)
+✔ membership fault requires demo loopback and reviewed source hashes (1.003375ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.2705ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.100666ms)
+✔ restoration refuses concurrent head, membership or directory writes (0.110459ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.902333ms)
+✔ unrelated campaigns retain every original entropy input (0.067792ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.59775ms)
+✔ binary metadata correlation is bounded and never returns source identifiers or secrets (1.042167ms)
+✔ native HTTP observer preserves body, headers, status and response while separating arrival/close (11.845416ms)
+✔ diagnostic cap is explicit and does not prevent subsequent HTTP responses (12.639833ms)
+✔ successful CI cannot accept absent, unmatched or uncorrelated ingress evidence (1.258458ms)
+✔ entry permits exactly the frozen feature010 phone verification (1.237125ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (37.365708ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.121583ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.514208ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.159208ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (16.625583ms)
+✔ generated Svelte aliases must precede Playwright's first configuration read (2.725583ms)
+✔ story runner awaits alias generation before building and launching any cohort (0.332292ms)
+Previous story evidence preserved at /tmp/nix-shell.6JoPOC/cluster-cohort-test-hLPBnY/.story-cohorts-Y970Wg/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.6JoPOC/cluster-cohort-test-hLPBnY/.story-cohorts-Y970Wg/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (12.355584ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.500041ms)
+✔ interruption retains current artifacts and launches no successor (1.857667ms)
+✔ an artifact path collision fails rather than overwriting either result (3.479291ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.797417ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.870542ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.918708ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (10.031417ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.369583ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.442ms)
+✔ index acquisition preserves every mode/path beyond the default child buffer and matches the complete repository (157.842167ms)
+✔ only the explicit report allowlist can change without changing verification inputs (0.366791ms)
+✔ reuse requires exact scope, provenance and an earlier source; outcomes never turn failure or pending into success (0.209584ms)
+✔ workflow check names, full execution branches and evidence retention remain present (0.624833ms)
+✔ prepare executes normal checks for absent, invalid, expired, unavailable or unrelated evidence (0.827917ms)
+✔ prepare and wait pin a real executor; pending becomes its failure or retained success, never a manufactured pass (0.749625ms)
+✔ chained plans resolve the original checkout and reject a substituted unrelated executor (0.174042ms)
+✔ wait falls back to real tests on missing evidence/API, but preserves a pending or failed source gate (0.332ms)
+✔ plan archive reader checks size/hash, expiry and bounded JSON with actual ZIP fixtures (125.021458ms)
+ℹ tests 61
+ℹ suites 0
+ℹ pass 61
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5386.623583
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ playwright test --config playwright.paths.config.ts
+
+Running 4 tests using 1 worker
+
+
+(node:52113) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[phone] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:52379) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/4] [desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[desktop] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:52636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/4] [large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[large] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:52895) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] [short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[short] › tests/tooling/baseline-paths.spec.ts:9:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4 passed (1.5s)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.554167ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (5.056542ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (226.065583ms)
+✔ original large case only, unchanged spec and no suite/generation fallback (0.455833ms)
+✔ measuring precedes one test, failures retained without retry or successful substitution (0.157958ms)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.568917ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.929167ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (226.24475ms)
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.561917ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (5.016ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (226.238459ms)
+✔ exact complete family, no whole-suite or filter fallback (0.408292ms)
+✔ all sizes and exact clean source required; failed partials never eligible (0.215167ms)
+✔ orchestration preserves setup/test exit and rejects invalid output (0.22825ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 304.25025
+$ vite build
+vite v8.1.4 building ssr environment for production...
+[2Ktransforming...12:15:24 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+292:     </div>
+293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+294:     <div
+             ^
+295:       class="route-details"
+296:       onkeydown={readingKey}
+✓ 558 modules transformed.
+rendering chunks...
+vite v8.1.4 building client environment for production...
+[2Ktransforming...12:15:25 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+292:     </div>
+293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+294:     <div
+             ^
+295:       class="route-details"
+296:       onkeydown={readingKey}
+✓ 650 modules transformed.
+rendering chunks...
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                                                                    0.02 kB │ gzip:   0.04 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.BZGLGj12.woff2        6.75 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.BoXdMtcr.woff2        6.79 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.Bbz-b3yf.woff       7.35 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.CKkU2Dpt.woff       7.35 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.DqXqCC0q.woff         9.33 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.BoVPHkS0.woff2      9.37 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.DRk46D-x.woff2      9.38 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.C4HEjEaf.woff         9.42 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.CyAY5ZLS.woff2         12.92 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.C2atO-64.woff2         13.01 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BbWidj28.woff          14.02 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.Yta7XZ9C.woff2     14.09 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.BMhMHfrj.woff2     14.18 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.BK6Glc0m.woff          14.29 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.DkJXBcIH.woff          15.76 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.FNmA3REe.woff          15.82 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BrHNak5F.woff2         17.20 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.GZI4o3u0.woff2         17.52 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.lsPpqi9g.woff      17.55 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.CsIYWmWK.woff      17.62 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.CH1kM7og.woff2        20.20 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.DaBc-lu7.woff2        20.30 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-500-normal.BsRWmXhO.woff2            23.31 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-600-normal.Co1r35X9.woff2            23.39 kB
+.svelte-kit/output/client/.vite/manifest.json                                                                 24.45 kB │ gzip:   2.39 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.Dk3-quAP.woff         28.26 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.DYeaGGzO.woff         28.28 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-600-normal.2CBVLo0M.woff             31.30 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-500-normal.zIXX3Q-H.woff             31.37 kB
+.svelte-kit/output/client/_app/immutable/assets/basis_transcoder.o4Hde_L7.js                                  57.52 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_wasm_wrapper.fZCQGLGb.js                                58.45 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_wasm_wrapper.DxJM36Ib.js                                58.76 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_decoder.Z1_iN-Ht.wasm                                  192.42 kB │ gzip:  64.11 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_decoder.C32yEggz.wasm                                  285.74 kB │ gzip:  89.66 kB
+.svelte-kit/output/client/_app/immutable/assets/basis_transcoder.VXdx5NbI.wasm                               527.33 kB │ gzip: 248.94 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_decoder.fzg4nYZr.js                                    719.41 kB
+.svelte-kit/output/client/_app/immutable/assets/5.MP2YSySK.css                                                 0.08 kB │ gzip:   0.09 kB
+.svelte-kit/output/client/_app/immutable/assets/Feedback.BQ8jppjz.css                                          0.14 kB │ gzip:   0.13 kB
+.svelte-kit/output/client/_app/immutable/assets/SessionSecurity.ChAwtUwW.css                                   0.22 kB │ gzip:   0.19 kB
+.svelte-kit/output/client/_app/immutable/assets/6.D0B2W-6m.css                                                 1.31 kB │ gzip:   0.56 kB
+.svelte-kit/output/client/_app/immutable/assets/4.CGz5ET65.css                                                 1.41 kB │ gzip:   0.53 kB
+.svelte-kit/output/client/_app/immutable/assets/EntryButton.oDAbExO9.css                                       1.93 kB │ gzip:   0.76 kB
+.svelte-kit/output/client/_app/immutable/assets/2.DFUgJIug.css                                                 2.29 kB │ gzip:   0.77 kB
+.svelte-kit/output/client/_app/immutable/assets/0.q4AAvEAb.css                                                13.68 kB │ gzip:   3.59 kB
+.svelte-kit/output/client/_app/immutable/assets/CampaignMaintenance.T1A1jbQq.css                              15.51 kB │ gzip:   3.60 kB
+.svelte-kit/output/client/_app/immutable/assets/3.CKbq4ayj.css                                                37.87 kB │ gzip:   6.54 kB
+.svelte-kit/output/client/_app/immutable/assets/CampaignHistory.C85IPd_f.css                                  61.91 kB │ gzip:  11.79 kB
+.svelte-kit/output/client/_app/immutable/chunks/r4jBqio1.js                                                    0.03 kB │ gzip:   0.05 kB
+.svelte-kit/output/client/_app/immutable/chunks/xihTtKlq.js                                                    0.06 kB │ gzip:   0.08 kB
+.svelte-kit/output/client/_app/immutable/entry/start.CJpm48th.js                                               0.08 kB │ gzip:   0.09 kB
+.svelte-kit/output/client/_app/immutable/chunks/BNbKjlhm.js                                                    0.58 kB │ gzip:   0.34 kB
+.svelte-kit/output/client/_app/immutable/nodes/0.BfoTgL0P.js                                                   0.59 kB │ gzip:   0.35 kB
+.svelte-kit/output/client/_app/immutable/chunks/NFeW_2Fm.js                                                    0.64 kB │ gzip:   0.37 kB
+.svelte-kit/output/client/_app/immutable/nodes/1.DbMSppty.js                                                   0.66 kB │ gzip:   0.43 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bl_mR1WF.js                                                    0.72 kB │ gzip:   0.40 kB
+.svelte-kit/output/client/_app/immutable/chunks/ClnxyQdj.js                                                    0.92 kB │ gzip:   0.49 kB
+.svelte-kit/output/client/_app/immutable/chunks/HclGiUj8.js                                                    1.21 kB │ gzip:   0.67 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bjy-W4x2.js                                                    1.36 kB │ gzip:   0.65 kB
+.svelte-kit/output/client/_app/immutable/chunks/Dd6eMkDK.js                                                    1.46 kB │ gzip:   0.84 kB
+.svelte-kit/output/client/_app/immutable/nodes/5.C1ssjk0f.js                                                   1.57 kB │ gzip:   0.90 kB
+.svelte-kit/output/client/_app/immutable/chunks/4zBq9Iey.js                                                    1.60 kB │ gzip:   0.86 kB
+.svelte-kit/output/client/_app/immutable/chunks/rsc0P_VF.js                                                    2.16 kB │ gzip:   1.01 kB
+.svelte-kit/output/client/_app/immutable/chunks/CgBWNW6L.js                                                    2.18 kB │ gzip:   0.99 kB
+.svelte-kit/output/client/_app/immutable/chunks/dKQyTnxJ.js                                                    2.39 kB │ gzip:   1.27 kB
+.svelte-kit/output/client/_app/immutable/chunks/DcriLQkm.js                                                    3.60 kB │ gzip:   1.52 kB
+.svelte-kit/output/client/_app/immutable/entry/app.BSas5gWg.js                                                 4.22 kB │ gzip:   1.79 kB
+.svelte-kit/output/client/_app/immutable/chunks/B7GGAWYk.js                                                    4.42 kB │ gzip:   2.41 kB
+.svelte-kit/output/client/_app/immutable/nodes/4.CTH_9Q0e.js                                                  13.07 kB │ gzip:   4.27 kB
+.svelte-kit/output/client/_app/immutable/nodes/2.Dmz4-yVQ.js                                                  15.30 kB │ gzip:   5.92 kB
+.svelte-kit/output/client/_app/immutable/chunks/BMUqOOjG.js                                                   15.71 kB │ gzip:   5.65 kB
+.svelte-kit/output/client/_app/immutable/nodes/6.HCUy0YOR.js                                                  26.29 kB │ gzip:   7.73 kB
+.svelte-kit/output/client/_app/immutable/chunks/d37AvrwP.js                                                   26.81 kB │ gzip:  10.36 kB
+.svelte-kit/output/client/_app/immutable/chunks/ChD_VYQJ.js                                                   29.75 kB │ gzip:   7.88 kB
+.svelte-kit/output/client/_app/immutable/chunks/CwuwgWEa.js                                                   58.18 kB │ gzip:  22.05 kB
+.svelte-kit/output/client/_app/immutable/nodes/3.WIQDa2TK.js                                                  64.40 kB │ gzip:  19.22 kB
+.svelte-kit/output/client/_app/immutable/chunks/DlK-W9C7.js                                                  197.88 kB │ gzip:  58.98 kB
+.svelte-kit/output/client/_app/immutable/chunks/DB8HLiLR.js                                                  483.83 kB │ gzip: 144.79 kB
+.svelte-kit/output/client/_app/immutable/chunks/Cj9sfVUp.js                                                1,044.63 kB │ gzip: 280.21 kB
+
+✓ built in 718ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+computing gzip size...
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.BZGLGj12.woff2      6.75 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.BoXdMtcr.woff2      6.79 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.Bbz-b3yf.woff     7.35 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.CKkU2Dpt.woff     7.35 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.DqXqCC0q.woff       9.33 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.BoVPHkS0.woff2    9.37 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.DRk46D-x.woff2    9.38 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.C4HEjEaf.woff       9.42 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.CyAY5ZLS.woff2       12.92 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.C2atO-64.woff2       13.01 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BbWidj28.woff        14.02 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.Yta7XZ9C.woff2   14.09 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.BMhMHfrj.woff2   14.18 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.BK6Glc0m.woff        14.29 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.DkJXBcIH.woff        15.76 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.FNmA3REe.woff        15.82 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BrHNak5F.woff2       17.20 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.GZI4o3u0.woff2       17.52 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.lsPpqi9g.woff    17.55 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.CsIYWmWK.woff    17.62 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.CH1kM7og.woff2      20.20 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.DaBc-lu7.woff2      20.30 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-500-normal.BsRWmXhO.woff2          23.31 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-600-normal.Co1r35X9.woff2          23.39 kB
+.svelte-kit/output/server/.vite/manifest.json                                                               23.49 kB │ gzip:  2.16 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.Dk3-quAP.woff       28.26 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.DYeaGGzO.woff       28.28 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-600-normal.2CBVLo0M.woff           31.30 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-500-normal.zIXX3Q-H.woff           31.37 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.MP2YSySK.css                                           0.08 kB │ gzip:  0.09 kB
+.svelte-kit/output/server/_app/immutable/assets/Feedback.BQ8jppjz.css                                        0.14 kB │ gzip:  0.13 kB
+.svelte-kit/output/server/_app/immutable/assets/SessionSecurity.ChAwtUwW.css                                 0.22 kB │ gzip:  0.19 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.D0B2W-6m.css                                           1.31 kB │ gzip:  0.56 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.CGz5ET65.css                                           1.41 kB │ gzip:  0.53 kB
+.svelte-kit/output/server/_app/immutable/assets/EntryButton.oDAbExO9.css                                     1.93 kB │ gzip:  0.76 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.DFUgJIug.css                                           2.29 kB │ gzip:  0.77 kB
+.svelte-kit/output/server/_app/immutable/assets/_layout.BPihC1oX.css                                        13.64 kB │ gzip:  3.58 kB
+.svelte-kit/output/server/_app/immutable/assets/CampaignMaintenance.T1A1jbQq.css                            15.51 kB │ gzip:  3.60 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.CKbq4ayj.css                                          37.87 kB │ gzip:  6.54 kB
+.svelte-kit/output/server/_app/immutable/assets/CampaignHistory.eRWuf-aw.css                                61.81 kB │ gzip: 11.77 kB
+.svelte-kit/output/server/chunks/recovery-store.js                                                           0.07 kB │ gzip:  0.08 kB
+.svelte-kit/output/server/chunks/campaign-history.js                                                         0.09 kB │ gzip:  0.08 kB
+.svelte-kit/output/server/chunks/paths.js                                                                    0.12 kB │ gzip:  0.09 kB
+.svelte-kit/output/server/entries/pages/_layout.ts.js                                                        0.13 kB │ gzip:  0.12 kB
+.svelte-kit/output/server/env.js                                                                             0.22 kB │ gzip:  0.14 kB
+.svelte-kit/output/server/chunks/env.js                                                                      0.28 kB │ gzip:  0.17 kB
+.svelte-kit/output/server/entries/pages/_layout.svelte.js                                                    0.37 kB │ gzip:  0.23 kB
+.svelte-kit/output/server/internal.js                                                                        0.40 kB │ gzip:  0.19 kB
+.svelte-kit/output/server/chunks/campaign-session2.js                                                        0.43 kB │ gzip:  0.21 kB
+.svelte-kit/output/server/entries/pages/_error.svelte.js                                                     0.72 kB │ gzip:  0.42 kB
+.svelte-kit/output/server/chunks/internal.js                                                                 0.92 kB │ gzip:  0.40 kB
+.svelte-kit/output/server/entries/pages/diagnostics/_page.svelte.js                                          1.05 kB │ gzip:  0.55 kB
+.svelte-kit/output/server/chunks/command-receipt.js                                                          1.15 kB │ gzip:  0.66 kB
+.svelte-kit/output/server/chunks/detail-preference.js                                                        1.46 kB │ gzip:  0.57 kB
+.svelte-kit/output/server/chunks/motion-preference.js                                                        1.85 kB │ gzip:  0.70 kB
+.svelte-kit/output/server/chunks/index-server2.js                                                            1.87 kB │ gzip:  0.70 kB
+.svelte-kit/output/server/chunks/EntryButton.js                                                              2.05 kB │ gzip:  0.85 kB
+.svelte-kit/output/server/chunks/campaign-history2.js                                                        2.23 kB │ gzip:  1.02 kB
+.svelte-kit/output/server/chunks/SessionSecurity.js                                                          3.10 kB │ gzip:  1.32 kB
+.svelte-kit/output/server/chunks/conversation-drafts.js                                                      3.45 kB │ gzip:  1.29 kB
+.svelte-kit/output/server/chunks/recovery-store2.js                                                          3.64 kB │ gzip:  1.25 kB
+.svelte-kit/output/server/chunks/Feedback.js                                                                 4.30 kB │ gzip:  1.61 kB
+.svelte-kit/output/server/chunks/crypto.js                                                                   4.96 kB │ gzip:  1.69 kB
+.svelte-kit/output/server/chunks/exports.js                                                                  5.60 kB │ gzip:  1.75 kB
+.svelte-kit/output/server/chunks/routing.js                                                                  5.92 kB │ gzip:  2.12 kB
+.svelte-kit/output/server/chunks/campaign-session.js                                                         7.12 kB │ gzip:  2.35 kB
+.svelte-kit/output/server/chunks/shared.js                                                                  10.70 kB │ gzip:  3.41 kB
+.svelte-kit/output/server/entries/pages/_page.svelte.js                                                     11.72 kB │ gzip:  3.45 kB
+.svelte-kit/output/server/entries/pages/dev/animations/_page.svelte.js                                      17.80 kB │ gzip:  4.02 kB
+.svelte-kit/output/server/chunks/CampaignMaintenance.js                                                     19.23 kB │ gzip:  4.65 kB
+.svelte-kit/output/server/chunks/internal2.js                                                               23.94 kB │ gzip:  7.22 kB
+.svelte-kit/output/server/chunks/utils.js                                                                   31.90 kB │ gzip:  9.37 kB
+.svelte-kit/output/server/entries/pages/gallery/_page.svelte.js                                             38.89 kB │ gzip:  8.10 kB
+.svelte-kit/output/server/chunks/campaign-navigation.js                                                     51.02 kB │ gzip: 14.95 kB
+.svelte-kit/output/server/remote-entry.js                                                                   54.67 kB │ gzip: 12.04 kB
+.svelte-kit/output/server/chunks/scenarios.js                                                               59.97 kB │ gzip: 12.07 kB
+.svelte-kit/output/server/entries/pages/campaigns/_page.svelte.js                                           61.15 kB │ gzip: 12.65 kB
+.svelte-kit/output/server/index.js                                                                         124.63 kB │ gzip: 31.48 kB
+.svelte-kit/output/server/chunks/index-server.js                                                           141.36 kB │ gzip: 36.83 kB
+.svelte-kit/output/server/chunks/CampaignHistory.js                                                        359.32 kB │ gzip: 79.32 kB
+
+✓ built in 2.19s
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+  Wrote site to "build"
+  ✔ done
+Listing tests:
+  [phone] › browser/campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [phone] › browser/construction.story.spec.ts:68:3 › Live construction completes and cancels developments
+  [phone] › browser/construction.story.spec.ts:68:3 › Live construction recovers an interrupted reservation
+  [phone] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [phone] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [phone] › browser/feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [phone] › browser/feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [phone] › browser/fleet-cancellation.story.spec.ts:41:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [phone] › browser/fleet-cargo.story.spec.ts:41:1 › Live fleet cargo transfers conserve private forces through reload
+  [phone] › browser/fleet-formation.story.spec.ts:41:1 › Live fleet formation and disband conserve private forces
+  [phone] › browser/fleet-reorganization.story.spec.ts:46:1 › Live fleet reorganization recovers one private split and conserves forces
+  [phone] › browser/fleet-route-recovery.story.spec.ts:52:1 › Interrupted route commands retain their original choices and identity
+  [phone] › browser/fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [phone] › browser/fleet-travel.story.spec.ts:43:1 › Live fleet travel and arrival preserve private forces through recovery
+  [phone] › browser/history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [phone] › browser/identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [phone] › browser/identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [phone] › browser/identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [phone] › browser/lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [phone] › browser/lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [phone] › browser/live-menu-preservation.story.spec.ts:19:1 › Live galaxy menu preserves selection and unsent allocation across a confirmed tick
+  [phone] › browser/local-settings.story.spec.ts:7:1 › Shared presentation settings retain local choices and accessible modal ownership
+  [phone] › browser/maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [phone] › browser/market-account-isolation.story.spec.ts:47:1 › Live market allocation isolates saved accounts on the same browser
+  [phone] › browser/market-draft-lifecycle.story.spec.ts:59:1 › Live market allocation clears after real account-wide sign-out
+  [phone] › browser/market-membership-revocation.story.spec.ts:49:1 › Live membership revocation rejects a delayed private view and clears market intent
+  [phone] › browser/migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [phone] › browser/observations.story.spec.ts:45:1 › Live stellar observations retain private current and historical facts after reload
+  [phone] › browser/production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [phone] › browser/profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [phone] › browser/profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [phone] › browser/profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [phone] › browser/receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [phone] › browser/receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [phone] › browser/research-forecast.story.spec.ts:8:1 › Research forecast gallery explains recorded costs effects and rate assumptions
+  [phone] › browser/research-guidance.story.spec.ts:45:1 › Live research guidance follows the campaign capabilities without submitting choices
+  [phone] › browser/research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [phone] › browser/research-orders.story.spec.ts:114:1 › Live research orders preserve choices and acknowledge switches
+  [phone] › browser/return-briefing.story.spec.ts:32:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [phone] › browser/selected-history.story.spec.ts:52:1 › Selected history reaches only a consenting commander and survives reload
+  [phone] › browser/selection-ownership.story.spec.ts:5:1 › Mounted campaign selection preserves a newer proposal after genuine delayed recovery
+  [phone] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [phone] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [phone] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+  [phone] › e2e/001-entry/entry.spec.ts:4:1 › Learn the campaign and return to entry
+  [phone] › e2e/001-entry/returning.spec.ts:11:1 › Return to a genuinely active campaign from the cinematic entry
+  [phone] › e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock
+  [phone] › e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab
+  [phone] › e2e/003-science/science.spec.ts:13:1 › Inspect authoritative science rate and recover earned output
+  [phone] › e2e/004-waiting/waiting.spec.ts:33:1 › Recover a waiting seat and enter the assigned home
+  [phone] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [phone] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice uses actual managed keys through admission and recovery
+  [phone] › e2e/005-campaign-access/faction-components.spec.ts:4:1 › Shared faction composition preserves keyboard choices in both motion preferences
+  [phone] › e2e/005-campaign-access/invitation.spec.ts:38:1 › An invited new commander saves an identity and joins the preserved campaign
+  [phone] › e2e/005-campaign-access/invitation.spec.ts:277:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [phone] › e2e/005-campaign-access/navigation.spec.ts:100:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [phone] › e2e/005-campaign-access/navigation.spec.ts:558:1 › An active commander filters stars, orbits by keyboard and inspects a clipped map label
+  [phone] › e2e/005-campaign-access/navigation.spec.ts:894:1 › A returning commander waits for authoritative identity readiness before Play
+  [phone] › e2e/006-campaign-history/history.spec.ts:8:1 › Recover saved campaign records without losing your place
+  [phone] › e2e/007-galaxy-composition/composition.spec.ts:7:1 › Read the cinematic galaxy through real commander and system instruments
+  [phone] › e2e/007-galaxy-composition/gallery.spec.ts:4:1 › Shared commander and command instruments expose their real keyboard states
+  [phone] › e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game
+  [phone] › e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game
+  [phone] › e2e/009-route-forces/components.spec.ts:3:1 › Inspect shared route composition in gallery and interactive lab
+  [phone] › e2e/009-route-forces/forces.spec.ts:21:1 › Review confirmed forces before acknowledged dispatch and recovery
+  [phone] › e2e/010-zero-science/controls.spec.ts:5:1 › Shared command artwork retains keyboard targets and motion-independent selection
+  [phone] › e2e/010-zero-science/zero-science.spec.ts:80:1 › Live zero science after orbital loss preserves private research
+  [phone] › e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 › Open a contextual arrival report and recover its recorded surface
+  [phone] › e2e/011-contextual-aftermath/components.spec.ts:4:1 › Inspect shared contextual aftermath in gallery and animation lab
+  [phone] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [desktop] › browser/campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [desktop] › browser/construction.story.spec.ts:68:3 › Live construction completes and cancels developments
+  [desktop] › browser/construction.story.spec.ts:68:3 › Live construction recovers an interrupted reservation
+  [desktop] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [desktop] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [desktop] › browser/feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [desktop] › browser/feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [desktop] › browser/fleet-cancellation.story.spec.ts:41:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [desktop] › browser/fleet-cargo.story.spec.ts:41:1 › Live fleet cargo transfers conserve private forces through reload
+  [desktop] › browser/fleet-formation.story.spec.ts:41:1 › Live fleet formation and disband conserve private forces
+  [desktop] › browser/fleet-reorganization.story.spec.ts:46:1 › Live fleet reorganization recovers one private split and conserves forces
+  [desktop] › browser/fleet-route-recovery.story.spec.ts:52:1 › Interrupted route commands retain their original choices and identity
+  [desktop] › browser/fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [desktop] › browser/fleet-travel.story.spec.ts:43:1 › Live fleet travel and arrival preserve private forces through recovery
+  [desktop] › browser/history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [desktop] › browser/identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [desktop] › browser/identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [desktop] › browser/identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [desktop] › browser/lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [desktop] › browser/lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [desktop] › browser/live-menu-preservation.story.spec.ts:19:1 › Live galaxy menu preserves selection and unsent allocation across a confirmed tick
+  [desktop] › browser/local-settings.story.spec.ts:7:1 › Shared presentation settings retain local choices and accessible modal ownership
+  [desktop] › browser/maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [desktop] › browser/market-account-isolation.story.spec.ts:47:1 › Live market allocation isolates saved accounts on the same browser
+  [desktop] › browser/market-draft-lifecycle.story.spec.ts:59:1 › Live market allocation clears after real account-wide sign-out
+  [desktop] › browser/market-membership-revocation.story.spec.ts:49:1 › Live membership revocation rejects a delayed private view and clears market intent
+  [desktop] › browser/migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [desktop] › browser/observations.story.spec.ts:45:1 › Live stellar observations retain private current and historical facts after reload
+  [desktop] › browser/production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [desktop] › browser/profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [desktop] › browser/profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [desktop] › browser/profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [desktop] › browser/receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [desktop] › browser/receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [desktop] › browser/research-forecast.story.spec.ts:8:1 › Research forecast gallery explains recorded costs effects and rate assumptions
+  [desktop] › browser/research-guidance.story.spec.ts:45:1 › Live research guidance follows the campaign capabilities without submitting choices
+  [desktop] › browser/research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [desktop] › browser/research-orders.story.spec.ts:114:1 › Live research orders preserve choices and acknowledge switches
+  [desktop] › browser/return-briefing.story.spec.ts:32:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [desktop] › browser/selected-history.story.spec.ts:52:1 › Selected history reaches only a consenting commander and survives reload
+  [desktop] › browser/selection-ownership.story.spec.ts:5:1 › Mounted campaign selection preserves a newer proposal after genuine delayed recovery
+  [desktop] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [desktop] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [desktop] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+  [desktop] › e2e/001-entry/entry.spec.ts:4:1 › Learn the campaign and return to entry
+  [desktop] › e2e/001-entry/returning.spec.ts:11:1 › Return to a genuinely active campaign from the cinematic entry
+  [desktop] › e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock
+  [desktop] › e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab
+  [desktop] › e2e/003-science/science.spec.ts:13:1 › Inspect authoritative science rate and recover earned output
+  [desktop] › e2e/004-waiting/waiting.spec.ts:33:1 › Recover a waiting seat and enter the assigned home
+  [desktop] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [desktop] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice uses actual managed keys through admission and recovery
+  [desktop] › e2e/005-campaign-access/faction-components.spec.ts:4:1 › Shared faction composition preserves keyboard choices in both motion preferences
+  [desktop] › e2e/005-campaign-access/invitation.spec.ts:38:1 › An invited new commander saves an identity and joins the preserved campaign
+  [desktop] › e2e/005-campaign-access/invitation.spec.ts:277:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [desktop] › e2e/005-campaign-access/navigation.spec.ts:100:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [desktop] › e2e/005-campaign-access/navigation.spec.ts:558:1 › An active commander filters stars, orbits by keyboard and inspects a clipped map label
+  [desktop] › e2e/005-campaign-access/navigation.spec.ts:894:1 › A returning commander waits for authoritative identity readiness before Play
+  [desktop] › e2e/006-campaign-history/history.spec.ts:8:1 › Recover saved campaign records without losing your place
+  [desktop] › e2e/007-galaxy-composition/composition.spec.ts:7:1 › Read the cinematic galaxy through real commander and system instruments
+  [desktop] › e2e/007-galaxy-composition/gallery.spec.ts:4:1 › Shared commander and command instruments expose their real keyboard states
+  [desktop] › e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game
+  [desktop] › e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game
+  [desktop] › e2e/009-route-forces/components.spec.ts:3:1 › Inspect shared route composition in gallery and interactive lab
+  [desktop] › e2e/009-route-forces/forces.spec.ts:21:1 › Review confirmed forces before acknowledged dispatch and recovery
+  [desktop] › e2e/010-zero-science/controls.spec.ts:5:1 › Shared command artwork retains keyboard targets and motion-independent selection
+  [desktop] › e2e/010-zero-science/zero-science.spec.ts:80:1 › Live zero science after orbital loss preserves private research
+  [desktop] › e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 › Open a contextual arrival report and recover its recorded surface
+  [desktop] › e2e/011-contextual-aftermath/components.spec.ts:4:1 › Inspect shared contextual aftermath in gallery and animation lab
+  [desktop] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [large] › browser/campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [large] › browser/construction.story.spec.ts:68:3 › Live construction completes and cancels developments
+  [large] › browser/construction.story.spec.ts:68:3 › Live construction recovers an interrupted reservation
+  [large] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [large] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [large] › browser/feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [large] › browser/feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [large] › browser/fleet-cancellation.story.spec.ts:41:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [large] › browser/fleet-cargo.story.spec.ts:41:1 › Live fleet cargo transfers conserve private forces through reload
+  [large] › browser/fleet-formation.story.spec.ts:41:1 › Live fleet formation and disband conserve private forces
+  [large] › browser/fleet-reorganization.story.spec.ts:46:1 › Live fleet reorganization recovers one private split and conserves forces
+  [large] › browser/fleet-route-recovery.story.spec.ts:52:1 › Interrupted route commands retain their original choices and identity
+  [large] › browser/fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [large] › browser/fleet-travel.story.spec.ts:43:1 › Live fleet travel and arrival preserve private forces through recovery
+  [large] › browser/history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [large] › browser/identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [large] › browser/identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [large] › browser/identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [large] › browser/lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [large] › browser/lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [large] › browser/live-menu-preservation.story.spec.ts:19:1 › Live galaxy menu preserves selection and unsent allocation across a confirmed tick
+  [large] › browser/local-settings.story.spec.ts:7:1 › Shared presentation settings retain local choices and accessible modal ownership
+  [large] › browser/maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [large] › browser/market-account-isolation.story.spec.ts:47:1 › Live market allocation isolates saved accounts on the same browser
+  [large] › browser/market-draft-lifecycle.story.spec.ts:59:1 › Live market allocation clears after real account-wide sign-out
+  [large] › browser/market-membership-revocation.story.spec.ts:49:1 › Live membership revocation rejects a delayed private view and clears market intent
+  [large] › browser/migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [large] › browser/observations.story.spec.ts:45:1 › Live stellar observations retain private current and historical facts after reload
+  [large] › browser/production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [large] › browser/profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [large] › browser/profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [large] › browser/profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [large] › browser/receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [large] › browser/receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [large] › browser/research-forecast.story.spec.ts:8:1 › Research forecast gallery explains recorded costs effects and rate assumptions
+  [large] › browser/research-guidance.story.spec.ts:45:1 › Live research guidance follows the campaign capabilities without submitting choices
+  [large] › browser/research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [large] › browser/research-orders.story.spec.ts:114:1 › Live research orders preserve choices and acknowledge switches
+  [large] › browser/return-briefing.story.spec.ts:32:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [large] › browser/selected-history.story.spec.ts:52:1 › Selected history reaches only a consenting commander and survives reload
+  [large] › browser/selection-ownership.story.spec.ts:5:1 › Mounted campaign selection preserves a newer proposal after genuine delayed recovery
+  [large] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [large] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [large] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+  [large] › e2e/001-entry/entry.spec.ts:4:1 › Learn the campaign and return to entry
+  [large] › e2e/001-entry/returning.spec.ts:11:1 › Return to a genuinely active campaign from the cinematic entry
+  [large] › e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock
+  [large] › e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab
+  [large] › e2e/003-science/science.spec.ts:13:1 › Inspect authoritative science rate and recover earned output
+  [large] › e2e/004-waiting/waiting.spec.ts:33:1 › Recover a waiting seat and enter the assigned home
+  [large] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [large] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice uses actual managed keys through admission and recovery
+  [large] › e2e/005-campaign-access/faction-components.spec.ts:4:1 › Shared faction composition preserves keyboard choices in both motion preferences
+  [large] › e2e/005-campaign-access/invitation.spec.ts:38:1 › An invited new commander saves an identity and joins the preserved campaign
+  [large] › e2e/005-campaign-access/invitation.spec.ts:277:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [large] › e2e/005-campaign-access/navigation.spec.ts:100:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [large] › e2e/005-campaign-access/navigation.spec.ts:558:1 › An active commander filters stars, orbits by keyboard and inspects a clipped map label
+  [large] › e2e/005-campaign-access/navigation.spec.ts:894:1 › A returning commander waits for authoritative identity readiness before Play
+  [large] › e2e/006-campaign-history/history.spec.ts:8:1 › Recover saved campaign records without losing your place
+  [large] › e2e/007-galaxy-composition/composition.spec.ts:7:1 › Read the cinematic galaxy through real commander and system instruments
+  [large] › e2e/007-galaxy-composition/gallery.spec.ts:4:1 › Shared commander and command instruments expose their real keyboard states
+  [large] › e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game
+  [large] › e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game
+  [large] › e2e/009-route-forces/components.spec.ts:3:1 › Inspect shared route composition in gallery and interactive lab
+  [large] › e2e/009-route-forces/forces.spec.ts:21:1 › Review confirmed forces before acknowledged dispatch and recovery
+  [large] › e2e/010-zero-science/controls.spec.ts:5:1 › Shared command artwork retains keyboard targets and motion-independent selection
+  [large] › e2e/010-zero-science/zero-science.spec.ts:80:1 › Live zero science after orbital loss preserves private research
+  [large] › e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 › Open a contextual arrival report and recover its recorded surface
+  [large] › e2e/011-contextual-aftermath/components.spec.ts:4:1 › Inspect shared contextual aftermath in gallery and animation lab
+  [large] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [short] › browser/campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [short] › browser/construction.story.spec.ts:68:3 › Live construction completes and cancels developments
+  [short] › browser/construction.story.spec.ts:68:3 › Live construction recovers an interrupted reservation
+  [short] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [short] › browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [short] › browser/feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [short] › browser/feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [short] › browser/fleet-cancellation.story.spec.ts:41:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [short] › browser/fleet-cargo.story.spec.ts:41:1 › Live fleet cargo transfers conserve private forces through reload
+  [short] › browser/fleet-formation.story.spec.ts:41:1 › Live fleet formation and disband conserve private forces
+  [short] › browser/fleet-reorganization.story.spec.ts:46:1 › Live fleet reorganization recovers one private split and conserves forces
+  [short] › browser/fleet-route-recovery.story.spec.ts:52:1 › Interrupted route commands retain their original choices and identity
+  [short] › browser/fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [short] › browser/fleet-travel.story.spec.ts:43:1 › Live fleet travel and arrival preserve private forces through recovery
+  [short] › browser/history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [short] › browser/identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [short] › browser/identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [short] › browser/identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [short] › browser/lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [short] › browser/lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [short] › browser/live-menu-preservation.story.spec.ts:19:1 › Live galaxy menu preserves selection and unsent allocation across a confirmed tick
+  [short] › browser/local-settings.story.spec.ts:7:1 › Shared presentation settings retain local choices and accessible modal ownership
+  [short] › browser/maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [short] › browser/market-account-isolation.story.spec.ts:47:1 › Live market allocation isolates saved accounts on the same browser
+  [short] › browser/market-draft-lifecycle.story.spec.ts:59:1 › Live market allocation clears after real account-wide sign-out
+  [short] › browser/market-membership-revocation.story.spec.ts:49:1 › Live membership revocation rejects a delayed private view and clears market intent
+  [short] › browser/migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [short] › browser/observations.story.spec.ts:45:1 › Live stellar observations retain private current and historical facts after reload
+  [short] › browser/production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [short] › browser/profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [short] › browser/profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [short] › browser/profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [short] › browser/receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [short] › browser/receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [short] › browser/research-forecast.story.spec.ts:8:1 › Research forecast gallery explains recorded costs effects and rate assumptions
+  [short] › browser/research-guidance.story.spec.ts:45:1 › Live research guidance follows the campaign capabilities without submitting choices
+  [short] › browser/research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [short] › browser/research-orders.story.spec.ts:114:1 › Live research orders preserve choices and acknowledge switches
+  [short] › browser/return-briefing.story.spec.ts:32:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [short] › browser/selected-history.story.spec.ts:52:1 › Selected history reaches only a consenting commander and survives reload
+  [short] › browser/selection-ownership.story.spec.ts:5:1 › Mounted campaign selection preserves a newer proposal after genuine delayed recovery
+  [short] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [short] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [short] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+  [short] › e2e/001-entry/entry.spec.ts:4:1 › Learn the campaign and return to entry
+  [short] › e2e/001-entry/returning.spec.ts:11:1 › Return to a genuinely active campaign from the cinematic entry
+  [short] › e2e/002-galaxy/galaxy.spec.ts:11:1 › Inspect and navigate a real galaxy through its command dock
+  [short] › e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab
+  [short] › e2e/003-science/science.spec.ts:13:1 › Inspect authoritative science rate and recover earned output
+  [short] › e2e/004-waiting/waiting.spec.ts:33:1 › Recover a waiting seat and enter the assigned home
+  [short] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [short] › e2e/005-campaign-access/encryption.spec.ts:29:3 › Encryption choice uses actual managed keys through admission and recovery
+  [short] › e2e/005-campaign-access/faction-components.spec.ts:4:1 › Shared faction composition preserves keyboard choices in both motion preferences
+  [short] › e2e/005-campaign-access/invitation.spec.ts:38:1 › An invited new commander saves an identity and joins the preserved campaign
+  [short] › e2e/005-campaign-access/invitation.spec.ts:277:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [short] › e2e/005-campaign-access/navigation.spec.ts:100:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [short] › e2e/005-campaign-access/navigation.spec.ts:558:1 › An active commander filters stars, orbits by keyboard and inspects a clipped map label
+  [short] › e2e/005-campaign-access/navigation.spec.ts:894:1 › A returning commander waits for authoritative identity readiness before Play
+  [short] › e2e/006-campaign-history/history.spec.ts:8:1 › Recover saved campaign records without losing your place
+  [short] › e2e/007-galaxy-composition/composition.spec.ts:7:1 › Read the cinematic galaxy through real commander and system instruments
+  [short] › e2e/007-galaxy-composition/gallery.spec.ts:4:1 › Shared commander and command instruments expose their real keyboard states
+  [short] › e2e/008-field-guide/market.spec.ts:5:1 › Read shared market rules and return without leaving the game
+  [short] › e2e/008-field-guide/routes.spec.ts:5:1 › Read shared route rules and return without leaving the game
+  [short] › e2e/009-route-forces/components.spec.ts:3:1 › Inspect shared route composition in gallery and interactive lab
+  [short] › e2e/009-route-forces/forces.spec.ts:21:1 › Review confirmed forces before acknowledged dispatch and recovery
+  [short] › e2e/010-zero-science/controls.spec.ts:5:1 › Shared command artwork retains keyboard targets and motion-independent selection
+  [short] › e2e/010-zero-science/zero-science.spec.ts:80:1 › Live zero science after orbital loss preserves private research
+  [short] › e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 › Open a contextual arrival report and recover its recorded surface
+  [short] › e2e/011-contextual-aftermath/components.spec.ts:4:1 › Inspect shared contextual aftermath in gallery and animation lab
+  [short] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+Total: 280 tests in 58 files

@@ -187,6 +187,15 @@ test("ordinary observers recover acquired and last-seen fleet contacts", async (
     await contacts
       .getByRole("button", { name: "Refresh observations" })
       .click();
+    // Wait for the refreshed history head before enumerating its controls.
+    // The prior observed tick already matches while the request is pending.
+    await expect(
+      contacts.getByRole("button", { name: "Refresh observations" }),
+    ).toHaveCount(0);
+    await expect(
+      contacts.getByText("Loading authorized contact records…", { exact: true }),
+    ).toHaveCount(0);
+    await expect(contacts.getByRole("alert")).toHaveCount(0);
     await expect(
       contacts.getByRole("article", { name: "Selected fleet contact" }),
     ).toContainText(`Observed tick ${missedTick - 1}`);

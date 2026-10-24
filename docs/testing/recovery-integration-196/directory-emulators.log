@@ -1,0 +1,99 @@
+i  emulators: Starting emulators: auth, functions, firestore, database
+i  emulators: Detected demo project ID "demo-clusterii", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
+✔  firestore: Firestore Emulator was started in standard edition.
+✔  firestore: Firestore Emulator UI websocket is running on 19150.
+i  database: Database Emulator logging to database-debug.log
+i  functions: Watching "/Users/anicolao/projects/games/clusterii-conversation-history/functions" for Cloud Functions...
+⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+⚠  functions: Your requested "node" version "22" doesn't match your global version "24". Using node@24 from host.
+Serving at port 8112
+
+✔  functions: Loaded functions definitions from source: campaignCommandKey, campaignKey, campaignSecurity, processCampaign, processCampaignMaintenance, processCampaignMigration, revokeCredentials, revokeSessions, runCampaignMigration, runProduction, startScheduledCampaigns, processProfile, profileKey.
+✔  functions[us-central1-campaignCommandKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignCommandKey).
+✔  functions[us-central1-campaignKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignKey).
+✔  functions[us-central1-campaignSecurity]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignSecurity).
+✔  functions[us-central1-processCampaign]: database function initialized.
+✔  functions[us-central1-processCampaignMaintenance]: database function initialized.
+✔  functions[us-central1-processCampaignMigration]: database function initialized.
+✔  functions[us-central1-revokeCredentials]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeCredentials).
+✔  functions[us-central1-revokeSessions]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeSessions).
+✔  functions[us-central1-runCampaignMigration]: firestore function initialized.
+i  functions[us-central1-runProduction]: function ignored because the pubsub emulator does not exist or is not running.
+i  functions[us-central1-startScheduledCampaigns]: function ignored because the pubsub emulator does not exist or is not running.
+✔  functions[us-central1-processProfile]: database function initialized.
+✔  functions[us-central1-profileKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/profileKey).
+i  Running script: bun scripts/recovery-directory-cardinality.ts /tmp/cluster-integration-196/directory-comparison
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 131.731417ms
+i  functions: Beginning execution of "us-central1-processProfile"
+>  {"uid":"aToMc7ahKDuXQLBXXBsa3IW6Rlet","commandId":"8d91dab4-94c7-46a4-81df-e2fe9b0536a7","eventId":"uvsmhhens9S5IFnyBNgqcDsWo40=","severity":"INFO","message":"Profile command entered"}
+>  {"uid":"aToMc7ahKDuXQLBXXBsa3IW6Rlet","commandId":"8d91dab4-94c7-46a4-81df-e2fe9b0536a7","eventId":"uvsmhhens9S5IFnyBNgqcDsWo40=","requestDigest":"f5d5780fc8316c7723034f4063a1c3dd1302e3e8893faad88a11e0afdceaf03a","severity":"INFO","message":"Profile command transaction settled"}
+i  functions: Finished "us-central1-processProfile" in 70.373833ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 10.968667ms
+i  functions: Beginning execution of "us-central1-processProfile"
+>  {"uid":"Af6lOLfkTKNoiTCieRWIQ3mwJwZQ","commandId":"3b7079be-914a-4017-a09c-ca7dd0d86b33","eventId":"7pdO9k1uGNMA+qgQyN4HlMMLueg=","severity":"INFO","message":"Profile command entered"}
+>  {"uid":"Af6lOLfkTKNoiTCieRWIQ3mwJwZQ","commandId":"3b7079be-914a-4017-a09c-ca7dd0d86b33","eventId":"7pdO9k1uGNMA+qgQyN4HlMMLueg=","requestDigest":"65d7d665e96215850ab863d541fa4b2ee630e4f0896f4ee02323f00e49d29d02","severity":"INFO","message":"Profile command transaction settled"}
+i  functions: Finished "us-central1-processProfile" in 20.3785ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 10.709084ms
+i  functions: Beginning execution of "us-central1-processProfile"
+>  {"uid":"UqdDVwJlltGzJcFuxo2BHXW3CQrp","commandId":"47e007da-870a-4ae4-a133-92d9cb9b8682","eventId":"dk2+DsbkcjLdHTVJvwFt/Vj9u8c=","severity":"INFO","message":"Profile command entered"}
+>  {"uid":"UqdDVwJlltGzJcFuxo2BHXW3CQrp","commandId":"47e007da-870a-4ae4-a133-92d9cb9b8682","eventId":"dk2+DsbkcjLdHTVJvwFt/Vj9u8c=","requestDigest":"1d3a9ffb92666be04e2901809ab0e25ee93db575936c70cc357291dc325e0a5c","severity":"INFO","message":"Profile command transaction settled"}
+i  functions: Finished "us-central1-processProfile" in 20.190792ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 15.537459ms
+i  functions: Beginning execution of "us-central1-processProfile"
+>  {"uid":"dFiEpe8rNAeX8tWa4fymATT854ms","commandId":"a7d57f7f-1cbc-4d8d-8777-732218b1d88a","eventId":"wIPeuOAG635vsj0mVv8E9ByNaK4=","severity":"INFO","message":"Profile command entered"}
+>  {"uid":"dFiEpe8rNAeX8tWa4fymATT854ms","commandId":"a7d57f7f-1cbc-4d8d-8777-732218b1d88a","eventId":"wIPeuOAG635vsj0mVv8E9ByNaK4=","requestDigest":"01848a12f81d81d02bff46cbceace185a09c0887e9c48ee168ef7b9452b9aacf","severity":"INFO","message":"Profile command transaction settled"}
+i  functions: Finished "us-central1-processProfile" in 20.357625ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 71.320709ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 26.842334ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 24.564542ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 25.725375ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 28.167ms
+MetadataLookupWarning: received unexpected error = Unable to connect. Is the computer able to access the url? code = ConnectionRefused
+      at isAvailable (/Users/anicolao/projects/games/clusterii-mode-migration/functions/node_modules/google-gax/node_modules/google-auth-library/node_modules/gcp-metadata/build/src/index.js:356:25)
+      at async _checkIsGCE (/Users/anicolao/projects/games/clusterii-mode-migration/functions/node_modules/google-gax/node_modules/google-auth-library/build/src/auth/googleauth.js:300:69)
+      at async getApplicationDefaultAsync (/Users/anicolao/projects/games/clusterii-mode-migration/functions/node_modules/google-gax/node_modules/google-auth-library/build/src/auth/googleauth.js:283:24)
+      at async _GoogleAuth_determineClient (/Users/anicolao/projects/games/clusterii-mode-migration/functions/node_modules/google-gax/node_modules/google-auth-library/build/src/auth/googleauth.js:834:43)
+      at async getClient (/Users/anicolao/projects/games/clusterii-mode-migration/functions/node_modules/google-gax/node_modules/google-auth-library/build/src/auth/googleauth.js:698:26)
+      at async getUniverseDomain (/Users/anicolao/projects/games/clusterii-mode-migration/functions/node_modules/google-gax/node_modules/google-auth-library/build/src/auth/googleauth.js:217:115)
+      at async createStub (/Users/anicolao/projects/games/clusterii-mode-migration/functions/node_modules/google-gax/build/src/grpc.js:312:54)
+
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 13.827083ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 30.410458ms
+ 
+i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown.
+i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now.
+i  emulators: Shutting down emulators.
+i  functions: Stopping Functions Emulator
+i  database: Stopping Database Emulator
+⚠  Script exited with signal: SIGINT
+i  firestore: Stopping Firestore Emulator
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+i  auth: Stopping Authentication Emulator
+i  auth: Stopping Authentication Emulator
+i  eventarc: Stopping Eventarc Emulator
+i  eventarc: Stopping Eventarc Emulator
+i  tasks: Stopping Cloud Tasks Emulator
+i  tasks: Stopping Cloud Tasks Emulator
+i  hub: Stopping emulator hub
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator
+i  logging: Stopping Logging Emulator
+
+Error: An unexpected error has occurred.

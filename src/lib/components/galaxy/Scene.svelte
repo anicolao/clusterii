@@ -106,7 +106,9 @@
     const routePoints = routeFocus ? paths.flatMap((p) => [p.from, p.to]) : [];
     const activeCamera = camera,
       activeControls = controls;
-    if (!activeCamera || !activeControls) return;
+    const width = $size.width,
+      height = $size.height;
+    if (!activeCamera || !activeControls || width <= 0 || height <= 0) return;
     const requestKey = JSON.stringify([
       request,
       selectedContact,
@@ -143,7 +145,7 @@
         }
       } else if (request.action === "overview") {
         overview = true;
-        frameOverview(activeCamera, activeControls, activeCamera.aspect);
+        frameOverview(activeCamera, activeControls, width / height);
       } else if (request.action === "in" || request.action === "out") {
         offset.setLength(
           Math.max(

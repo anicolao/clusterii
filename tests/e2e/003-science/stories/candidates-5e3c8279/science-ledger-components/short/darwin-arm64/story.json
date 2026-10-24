@@ -1,0 +1,136 @@
+{
+  "id": "science-ledger-components",
+  "title": "Inspect the shared science source instrument",
+  "inventory": [
+    "UX-03",
+    "UX-08",
+    "UX-16"
+  ],
+  "description": "Actual ScienceLedger in reducer-derived gallery/lab specimens. This is component evidence, not live authorization. The ledger itself has no invented animation or pending science values.",
+  "source": {
+    "commit": "5e3c82790407a448dcc325eb401004604a5046e9",
+    "dirty": false,
+    "spec": "tests/e2e/003-science/components.spec.ts",
+    "specSha256": "57d9b849e3a4e777115d2520dccfa48bfc84e9b7366e8dbd5395e67e80df8e7d"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "short",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "gallery-source-reduce",
+      "description": "Open the actual shared ledger with Enter and read its lower totals through End.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The reducer-derived component distinguishes initial capacity from pending first delivery.",
+      "verifications": [
+        "The actual delivered-total reading and Return remain usable inside the component."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "001-gallery-source-reduce-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "gallery-source-no-preference",
+      "description": "Open the actual shared ledger with Enter and read its lower totals through End.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The reducer-derived component distinguishes initial capacity from pending first delivery.",
+      "verifications": [
+        "The actual delivered-total reading and Return remain usable inside the component."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "002-gallery-source-no-preference-1-component-reviewer.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lab-capacity",
+      "description": "Inspect capacity at the actual lab frame using the production ledger in both comparison panels. Seek changes reducer-derived presentation, not game state.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "Both comparison panels show the same capacity and the matching completed or pending delivery.",
+      "verifications": [
+        "Normal and reduced comparison facts agree; no animation changes a science amount."
+      ],
+      "views": [
+        {
+          "player": "Standard motion comparison",
+          "image": "003-lab-capacity-1-standard-motion-comparison.png",
+          "verifications": [
+            "The named comparison is the keyboard reading viewpoint; its delivered total and Return remain contained before capture."
+          ]
+        },
+        {
+          "player": "Reduced motion comparison",
+          "image": "003-lab-capacity-2-reduced-motion-comparison.png",
+          "verifications": [
+            "The named comparison is the keyboard reading viewpoint; its delivered total and Return remain contained before capture."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lab-delivered",
+      "description": "Inspect delivered at the actual lab frame using the production ledger in both comparison panels. Seek changes reducer-derived presentation, not game state.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "Both comparison panels show the same capacity and the matching completed or pending delivery.",
+      "verifications": [
+        "Normal and reduced comparison facts agree; no animation changes a science amount."
+      ],
+      "views": [
+        {
+          "player": "Standard motion comparison",
+          "image": "004-lab-delivered-1-standard-motion-comparison.png",
+          "verifications": [
+            "The named comparison is the keyboard reading viewpoint; its delivered total and Return remain contained before capture."
+          ]
+        },
+        {
+          "player": "Reduced motion comparison",
+          "image": "004-lab-delivered-2-reduced-motion-comparison.png",
+          "verifications": [
+            "The named comparison is the keyboard reading viewpoint; its delivered total and Return remain contained before capture."
+          ]
+        }
+      ]
+    }
+  ]
+}

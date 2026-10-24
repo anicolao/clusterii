@@ -1,0 +1,12 @@
+{
+  "target": "0f09db62776368702fc4df7d7a73aeeb39d98be8",
+  "overlayBase": "e575f92e",
+  "files": {
+    "scripts/recovery-settlement.mjs": "dbb32dfe5cfecdacab8a06cf6642225e303ec2132fdd28b949e3e6dc7ecf1e02",
+    "scripts/check-recovery-settlement.test.mjs": "7ec756712a9514a6543cb5d5f3672df22eef2ff8d9cca5dac233c055646539c3",
+    "scripts/ci-in-renderer.sh": "f4e3072269bea58a90a6768821d890a64f960245c262d923d8ff2c23673a2848",
+    "nix/ci-renderer.sh": "924a45b1e869d338d1045a56fe86403a801399e76a9d6812366030c919ea5274",
+    "package.json": "aba8a146c1ce96a5022f8a3adf72691d62add9979a47922e451368be4255a475"
+  },
+  "execution": "local orchestration only; no Linux story dispatched"
+}

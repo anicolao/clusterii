@@ -1,0 +1,282 @@
+[
+  {
+    "startMs": 51262.192,
+    "elapsedMs": 113.639,
+    "method": "Launch browser",
+    "selector": null,
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 51378.51,
+    "elapsedMs": 6.307,
+    "method": "Create context",
+    "selector": null,
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 51390.41,
+    "elapsedMs": 31.252,
+    "method": "Create page",
+    "selector": null,
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 51429.174,
+    "elapsedMs": 6.406,
+    "method": "Emulate media",
+    "selector": null,
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 51436.979,
+    "elapsedMs": 609.213,
+    "method": "Navigate to \"./gallery/\"",
+    "selector": null,
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 52049.776,
+    "elapsedMs": 1954.64,
+    "method": "Focus getByRole('button', { name: 'Open science source specimen', exact: true })",
+    "selector": "internal:role=button[name=\"Open science source specimen\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 54238.685,
+    "elapsedMs": 248.529,
+    "method": "Evaluate getByRole('button', { name: 'Open science source specimen', exact: true })",
+    "selector": "internal:role=button[name=\"Open science source specimen\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 54490.692,
+    "elapsedMs": 330.531,
+    "method": "Press \"Enter\" getByRole('button', { name: 'Open science source specimen', exact: true })",
+    "selector": "internal:role=button[name=\"Open science source specimen\"s]",
+    "key": "Enter",
+    "error": false
+  },
+  {
+    "startMs": 54823.567,
+    "elapsedMs": 246.032,
+    "method": "Scroll into view getByRole('region', { name: 'Science sources', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 55071.306,
+    "elapsedMs": 185.55,
+    "method": "Focus getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 55258.215,
+    "elapsedMs": 1204.635,
+    "method": "Press \"End\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": "End",
+    "error": false
+  },
+  {
+    "startMs": 56464.402,
+    "elapsedMs": 949.347,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 57415.208,
+    "elapsedMs": 1290.008,
+    "method": "Press \"ArrowUp\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": "ArrowUp",
+    "error": false
+  },
+  {
+    "startMs": 58707.268,
+    "elapsedMs": 1222.289,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 59931.373,
+    "elapsedMs": 973.347,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 60907.248,
+    "elapsedMs": 1312.727,
+    "method": "Press \"ArrowUp\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": "ArrowUp",
+    "error": false
+  },
+  {
+    "startMs": 62222.585,
+    "elapsedMs": 1152.271,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 63377.089,
+    "elapsedMs": 972.723,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 64351.258,
+    "elapsedMs": 1310.005,
+    "method": "Press \"ArrowUp\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": "ArrowUp",
+    "error": false
+  },
+  {
+    "startMs": 65662.581,
+    "elapsedMs": 1197.56,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 66862.632,
+    "elapsedMs": 1003.261,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 67866.994,
+    "elapsedMs": 1265.309,
+    "method": "Press \"ArrowUp\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": "ArrowUp",
+    "error": false
+  },
+  {
+    "startMs": 69133.494,
+    "elapsedMs": 1173.999,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 70311.648,
+    "elapsedMs": 964.081,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 71276.839,
+    "elapsedMs": 1344.484,
+    "method": "Press \"ArrowUp\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": "ArrowUp",
+    "error": false
+  },
+  {
+    "startMs": 72622.488,
+    "elapsedMs": 1209.868,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 73834.069,
+    "elapsedMs": 999.499,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 74836.827,
+    "elapsedMs": 1302.09,
+    "method": "Press \"ArrowUp\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": "ArrowUp",
+    "error": false
+  },
+  {
+    "startMs": 76140.304,
+    "elapsedMs": 1163.763,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=region[name=\"Science source ledger\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 77307.657,
+    "elapsedMs": 997.425,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 78308.47,
+    "elapsedMs": 995.865,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> internal:role=heading[name=\"Empire total\"s]",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 79309.636,
+    "elapsedMs": 982.529,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).locator('dl > div').filter({ hasText: 'Last delivered science' })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> dl > div >> internal:has-text=\"Last delivered science\"i",
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 81107.474,
+    "elapsedMs": 376.742,
+    "method": "Evaluate",
+    "selector": null,
+    "key": null,
+    "error": false
+  },
+  {
+    "startMs": 81488.38,
+    "elapsedMs": 843.206,
+    "method": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).locator('dl > div').filter({ hasText: 'Last delivered science' })",
+    "selector": "internal:role=region[name=\"Science sources\"s] >> dl > div >> internal:has-text=\"Last delivered science\"i",
+    "key": null,
+    "error": true
+  },
+  {
+    "startMs": 82320.579,
+    "elapsedMs": 12.127,
+    "method": "Close context",
+    "selector": null,
+    "key": null,
+    "error": false
+  }
+]
