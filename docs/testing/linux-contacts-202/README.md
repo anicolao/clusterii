@@ -1,0 +1,7 @@
+# Exact pinned Linux contact family
+
+Prompt202 / reviewer02:14; main01:54/02:14 reconciled. Local sourcec78f7243 four journeys/88 candidates remains preserved and unapproved. Production/spec unchanged through this dispatch preparation. Targeteaa2b57a remains applicationgreen/strictred, untouched.
+
+One existing-pattern branch-only, path-only request with contents:read, attempt1, isolated new request commit whose parent binds source. No generic case selection, whole-suite fallback, secrets/deployment, cancellation or baseline updates. Exact feature012/spec e4484a9625456225a381ae924be491ac1ca6eaf7b0b105b0baf32e4e74f56c56, all4sizes/22images each; pinned existing ARM renderer. Ordinary authenticated services/actions and complete story remain; explicit leased tick/entropy harness unchanged. Original240s/30s/10s, retries0,maxfailures1. Sync then Functions build before owned emulators. Failures uploaded; incomplete/dirty/wrong-platform/missing-size output cannot claim complete candidates. This is candidate verification, not strict baseline acceptance.
+
+Thirteen focused checks pass including actual request CLI in disposable Git fixture, parsed workflow permissions/filter, serial setup/service invocation and error preservation, source hash/complete output validation. Existing required workflow diff is empty; narrow recovery dispatcher accepts only one additional literal case. No local browser/build run. Local disk near floor; artifact retrieval must wait for fresh adequate archive+extraction reserve, remote30-day retention preserves results meanwhile.
