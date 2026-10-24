@@ -5,6 +5,8 @@ import { writeFileSync } from 'node:fs';
 const output = process.argv[2];
 if (!output) throw new Error('An explicit retained JSON output path is required');
 const browser = await chromium.launch();
+const budget = setTimeout(() => { console.error('Gallery geometry diagnostic exceeded 30s'); void browser.close(); }, 30000);
+budget.unref();
 try {
   const page = await browser.newPage({ viewport: {width:3840,height:2160}, deviceScaleFactor:1, locale:'en-US', timezoneId:'UTC', colorScheme:'dark', reducedMotion:'reduce' });
   page.setDefaultTimeout(10000);
@@ -28,4 +30,4 @@ try {
   const metrics=await cdp.send('Performance.getMetrics');
   const allowed=new Set(['Documents','Nodes','JSHeapUsedSize','JSHeapTotalSize','LayoutCount','RecalcStyleCount']);
   writeFileSync(output,JSON.stringify({browser:browser.version(),geometry,metrics:metrics.metrics.filter(m=>allowed.has(m.name))},null,2)+'\n');
-} finally { await browser.close(); }
+} finally { clearTimeout(budget); await browser.close(); }
