@@ -1,0 +1,95 @@
+{
+  "source": "d0804122e614b0b8c26351dee4593ec20cb6f731",
+  "run": 40091257252,
+  "total": 256,
+  "counts": {
+    "phone": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "desktop": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "large": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "short": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    }
+  },
+  "prior": {
+    "phone": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "desktop": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "large": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    },
+    "short": {
+      "pixel": 18,
+      "missing-reference": 44,
+      "timeout": 2
+    }
+  },
+  "categoryChanges": [],
+  "rawLogBytes": 3998388,
+  "rawLogSha256": "a22ce2eec8d083e21a5684b77b4e06a9accf67ae92238521f2ade1ea37009a2e",
+  "cohortSummaries": [
+    "  4 passed (2.6s)",
+    "  64 failed",
+    "  4 passed (12.4m)",
+    "  64 failed",
+    "  4 passed (13.6m)",
+    "  64 failed",
+    "  4 passed (19.3m)",
+    "  64 failed",
+    "  4 passed (13.0m)"
+  ],
+  "otherErrors": [],
+  "apiStatus": "completed",
+  "apiConclusion": "failure",
+  "jobs": [
+    {
+      "id": 120864226747,
+      "name": "stories (generate)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-24T11:46:49Z",
+      "completedAt": "2026-10-24T11:51:32Z",
+      "failedSteps": []
+    },
+    {
+      "id": 120864226977,
+      "name": "stories (verify)",
+      "status": "completed",
+      "conclusion": "failure",
+      "startedAt": "2026-10-24T11:46:49Z",
+      "completedAt": "2026-10-24T12:52:51Z",
+      "failedSteps": [
+        {
+          "completedAt": "2026-10-24T12:52:03Z",
+          "conclusion": "failure",
+          "name": "Exact verification",
+          "number": 7,
+          "startedAt": "2026-10-24T11:50:15Z",
+          "status": "completed"
+        }
+      ]
+    }
+  ]
+}
