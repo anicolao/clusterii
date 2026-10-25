@@ -1,0 +1,49 @@
+name: Bounded PR65 bounded route repeat candidates
+on:
+  push:
+    branches: [investigate/pr65-route-observation-repeat]
+    paths: [.github/recovery/pr65-route-repeat-01.json]
+permissions:
+  contents: read
+concurrency:
+  group: cluster-pr65-route-repeat
+  cancel-in-progress: false
+jobs:
+  maintenance:
+    if: github.repository == 'anicolao/clusterii'
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 35
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate exact request and executor
+        run: node scripts/route-repeat-request.mjs
+      - name: Two complete four-size route passes
+        timeout-minutes: 30
+        run: nix run path:./nix#ci-renderer -- recovery route-repeat
+      - name: Preserve bounded maintenance evidence
+        timeout-minutes: 3
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recovery-route-repeat-${{ github.sha }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            ci-evidence/recovery-request/
+            test-results/stories/
+            ci-evidence/route-repeat/
+            firestore-debug.log
+            ci-evidence/nix-renderer/
