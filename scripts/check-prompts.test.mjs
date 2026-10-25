@@ -263,3 +263,14 @@ test('reintegrating a parent retains its formerly final request already archived
  const combined=child+'\n'+later.replace('Prompt 3:','Prompt 5:')+'\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
  for(const bad of [combined.replace('Second user request.\n','Second user request. \n'),combined.replace('Second user request.\n\n','Second user request.\n'),combined.replace('Later parent request.\n','Later parent request.\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
 });
+
+
+test('post-merge appended prompt retains the exact copied final parent record in base checks', t => {
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();const parentLog=initial+next;
+ f.write(parentLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent request');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);const child=initial+next.replace('Second user request.','Child request.');f.write(child);f.git('add','PROMPTS.md');f.git('commit','-qm','Child request');
+ const dir=`docs/prompt-history/${parent}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(parentLog,`${dir}/PROMPTS.md`);f.git('add',dir);f.write(parent+'\n','.git/MERGE_HEAD');
+ const merged=child+next.replace('Prompt 2:','Prompt 3:')+'\n';f.write(merged);f.git('add','PROMPTS.md');assert.equal(f.check(),0);f.git('commit','-qm','Merge copied parent request');
+ const appended=merged+'\n## Prompt 4: Later Work\n\nLater request.\n';f.write(appended);f.git('add','PROMPTS.md');f.git('commit','-qm','Append later request');assert.equal(f.check('--base',parent),0);
+ for(const bad of [appended.replace('Second user request.','Second user request. '),appended.replace('Second user request.\n\n\n','Second user request.\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check('--base',parent),0);}
+});

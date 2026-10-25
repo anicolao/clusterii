@@ -60,6 +60,29 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     for (const record of records(archived)) originals.add(record);
   }
   }
+  // Prove later structural newlines from committed, append-only log transitions.
+  // A copied final record becomes interior when another request is appended.
+  const appendedTransitions = [];
+  const descendants = git(['rev-list', '--reverse', '--ancestry-path', `${revision}..HEAD`, '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean);
+  for (const commit of descendants) {
+    const nextLog = trackedAt(commit, 'PROMPTS.md');
+    for (const parent of git(['show', '-s', '--format=%P', commit]).trim().split(' ').filter(Boolean)) {
+      const oldLog = trackedAt(parent, 'PROMPTS.md');
+      if (!oldLog || !nextLog.startsWith(oldLog) || oldLog === nextLog) continue;
+      const oldRecords = records(oldLog), nextRecords = records(nextLog);
+      const before = oldRecords.at(-1), after = nextRecords[oldRecords.length - 1];
+      if (after === `${before}\n` || after === `${before}\n\n`) appendedTransitions.push([before, after]);
+    }
+  }
+  const copiedVariants = prior.map(record => {
+    const variants = new Set([`${record}\n`]);
+    for (let pass = 0; pass <= appendedTransitions.length; pass++) {
+      const size = variants.size;
+      for (const [before, after] of appendedTransitions) if (variants.has(before)) variants.add(after);
+      if (variants.size === size) break;
+    }
+    return variants;
+  });
   const same = (record, priorRecord) => record === priorRecord
     || (originals.has(record) && priorRecord === `${record}\n`);
 
@@ -71,7 +94,7 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     // A previously copied final record can become an interior parent record.
     const retainedSeparator = record === prior[cursor] && record.endsWith('\n')
       && originals.has(record.slice(0, -1));
-    if (record === `${prior[cursor]}\n` || retainedSeparator) cursor++;
+    if (copiedVariants[cursor]?.has(record) || retainedSeparator) cursor++;
   }
   if (cursor !== prior.length) fail('Retain every archived parent request verbatim and in order in the canonical log.');
   return true;
@@ -92,6 +115,7 @@ try {
   }
   const staged = git(['show', ':PROMPTS.md']);
   const previous = base ? trackedAt(base, 'PROMPTS.md') : '';
+  if (args.length && !staged.startsWith(trackedAt('HEAD', 'PROMPTS.md'))) fail('Base checks must preserve the current committed canonical log byte for byte.');
   const merging = !args.length && spawnSync('git', ['rev-parse', '--verify', 'MERGE_HEAD'], {stdio:'ignore'}).status === 0;
   if (merging) preservePromptHistory(staged, trackedAt('MERGE_HEAD', 'PROMPTS.md'), 'MERGE_HEAD', true);
   const latest = validateLog(staged);

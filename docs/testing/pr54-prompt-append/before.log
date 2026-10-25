@@ -1,0 +1,30 @@
+✖ post-merge appended prompt retains the exact copied final parent record in base checks (358.408459ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 401.16075
+
+✖ failing tests:
+
+test at ../nix-shell.0gwRzg/cluster-pr54-postmerge-before-wfyrnh4o/check-prompts.test.mjs:268:1
+✖ post-merge appended prompt retains the exact copied final parent record in base checks (358.408459ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///private/tmp/nix-shell.0gwRzg/cluster-pr54-postmerge-before-wfyrnh4o/check-prompts.test.mjs:274:168)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
