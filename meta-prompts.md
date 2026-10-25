@@ -4375,4 +4375,21 @@ short: e905386df19d6b0b04c6a035794f532ffb6ae789243e4196cb6b80ee22e06a00
 large: 835fa9c6fe58add00ff57ee363e4940a2cd0a39482fd965b5827440d6f210667
 
 53strict40160719097/job121071498782 live exact verification; Pages40160884684/job121072006435 queued no steps. Preserve handles. Agent published59correction92b9b88f and preparing one source-bound Linux generation; healthy work not interrupted. Reconcile this review into attributed history and push logs.
+## Reviewer PR59 complete corrected short capture review
+
+Individually inspected all13 distinct macOS short originals covering22PNGfiles at /tmp/cluster-pr59-clearance-4fb090d6/stories/live-fleet-cancellation/short/darwin-arm64. Includes010invalid/peer,011complement,012accepted,013reload,014confirmation,015keep,016cancelled,017released-draft(previous turn),018reloadcancelled,020owner/peer after tick,021return. SHA256 index /tmp/cluster-pr59-short-independent-review.json; peer010–018 identical c581df03..., peer020/021 identical0f248f20..., proven exact-byte reuse. All22 approved for this source macOS capture set. Footer acknowledgements, validation and confirmation controls contained; focus clears status. Nonfocal New fleet clips at scroll boundary in012/014 as expected, while confirmation/action rail stays fully visible. Reload has no stale acknowledgement; returned system shows21fighters/21infantry and zero fleets. This does not approve Linux references.
+
+Current59published92b9b88f required checks queued;53–55application/strict still live. Agent preparing one Linux generation, not interrupted. Reconcile review into attributed prompt history and push logs with next work.
+
+## Reviewer next-stack handoff after59
+
+Reviewer: independent review confirms corrected released-draft capture at all four sizes and all22 corrected short macOS images (13distinct); exact hashes and scope recorded in latest main meta-prompts.md. Linux remains unapproved pending single run40162403768; preserve it and57short/53Pages/live strict handles. Continue PR60 from current59 using previously inspected96Linux images only after exact current-source/renderer/hash validation; shared SystemFleets footer change may invalidate them, so regenerate affected captures once if necessary and inspect before promotion. Prioritize completed earlier failures. Reconcile new mainmeta review entries into attributed PROMPTS/PROMPT_WORK and push logs. No merge.
+
+## Reviewer PR59 corrected phone review complete
+
+Individually viewed all13 distinct phone captures covering22files from retained4fb090d6 originals. Includes owner010–018,020,021 and peer010/020; other peer files exact-hash matches, verified independently. All22 macOS phone images approved, SHA256 index /tmp/cluster-pr59-phone-independent-review.json. Confirmation wraps within fixed action rail, accepted/reserved facts readable, cancelled status clear of buttons, reload has no stale notice, system return shows21/21forces and zero fleets. Nonfocal scroll-boundary clipping remains expected. Combined corrected cancellation set46/88files inspected/approved:22phone+22short+desktop017+large017. Remaining42desktop/large require inspection; Linux remains unapproved. Current53app40160719083/strict40160719097 live; Pages40160884684 and59generation40162403768 queued. Agent acknowledged next60handoff and actively integrating without interruption. Reconcile and push review logs with next publication.
+
+## Reviewer PR59 corrected desktop review complete
+
+Individually inspected all13 distinct desktop originals covering22files, same retained4fb090d6 root. All owner010–018,020,021 plus peer010/020 viewed; exact SHA256 grouping confirms other peer files duplicate inspected originals. Index /tmp/cluster-pr59-desktop-independent-review.json. Approve all22 exact macOS desktop captures: validation, accepted reservation, confirmation, keep/cancel, released draft focus, reload and post-tick/system return contained and readable. No action/status overlap. Combined corrected set67/88 approved (all22 eachphone/short/desktop pluslarge017); remaining21large references not yet inspected. No Linux approval or greenCIclaim. Reconcile/push with attributed logs.
 

@@ -1,0 +1,24 @@
+{
+  "pr": 60,
+  "head": "df86305fa1532e5f3b75d2a28fee9d38037e903b",
+  "validation": "Exact parent check passed after commit; policy16tests passed; original spec/source/renderer/hash inventory verified",
+  "referencesPromoted": 0,
+  "affectedRetainedScenes": 9,
+  "retainedOriginals": 96,
+  "short": "Absent/unapproved",
+  "generation": {
+    "run": 40162646504,
+    "executor": "e5f47ff55fc3637ec1c1d61b78b064a971a4f373",
+    "source": "3483482f",
+    "expectedImages": 128,
+    "status": "queued",
+    "guards": "Four dispatch/request tests and exact four-case collection passed"
+  },
+  "requiredRuns": {
+    "application": 40162607680,
+    "strict": 40162607674,
+    "docs": 40162607684,
+    "publication": 40162607675
+  },
+  "earlier": "PR53 publicationFAILED and app/strictlive; existingPages40160884684 queued; PR57short40161761149 and PR59cancellation40162403768 queued. No duplicate dispatch or restart."
+}

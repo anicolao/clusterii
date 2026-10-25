@@ -1877,3 +1877,9 @@ Reviewer: independent57audit passed22tests, exact56parent, all60inspected hashes
 Delegated reviewer instruction; main meta records exact held geometry and expanded PR80 holds.
 
 Reviewer:58independent exact-parent/hashes verified. Continue59 from current58, preserving HOLD desktop017-released-draft-1-fleet-marshal.png: focus outline overlaps status text6px (textbottom930outline924); scopedCSS missed childFeedback. Fix source layout and capture/review corrected result, do not promote held image.65other inspected Linuxreferences need current-source validation; missing short needs generation/review. Preserve earlier gates and queued57short/53Pages handles; prioritize completed failures. Latestmainmeta PR80hold now23refs, reconcile/pushlogs. No merge.
+
+## Prompt 284: Cargo applicability
+
+Delegated reviewer instruction; main meta records exact corrected cancellation image approvals and remaining Linux scope.
+
+Reviewer: independent review confirms corrected released-draft capture at all four sizes and all22 corrected short macOS images (13distinct); exact hashes and scope recorded in latest main meta-prompts.md. Linux remains unapproved pending single run40162403768; preserve it and57short/53Pages/live strict handles. Continue PR60 from current59 using previously inspected96Linux images only after exact current-source/renderer/hash validation; shared SystemFleets footer change may invalidate them, so regenerate affected captures once if necessary and inspect before promotion. Prioritize completed earlier failures. Reconcile new mainmeta review entries into attributed PROMPTS/PROMPT_WORK and push logs. No merge.
