@@ -2175,3 +2175,9 @@ Reviewer: Completed independent full candidate diff review for66 run40227118604.
 
 
 
+
+## Prompt 164: Authorized failed-job retry
+
+Delegated reviewer instruction; refer to main meta PR66 exact-source non-reproduction and single retry authorization.
+
+Reviewer: Independently confirmed40242503554 bothSUCCESS and logs briefing27/session15 views, modeverify,exit0,referenceDiffExit0. Independently rehashed repeated briefing017 b716bbd9873a9c0ecb12b38d8d74f741cce50164e97286b8e3c20781e1288fab exact approved original. Both historical failures not reproduced on unchanged source/refs/limits; root causes remain unproven and failed evidence retained. After retaining complete session artifact/result, retry ONLY failed required job of PR66 run40232015015 once at samebb58f85a (failed-jobs rerun), no code/baseline/timeout changes and no duplicate dispatch; preserve all4otherSUCCESS checks. If failure recurs inspect exact evidence, no retry loop. Continue67 guarded4size strict preparation in parallel; independently verified ac3d6298 source/shared/functions/observation spec/helpers identical9bd21c68, full baseline integration audit still to follow. Commit/push attributed outcomes and request IDs. No merge.
