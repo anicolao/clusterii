@@ -443,3 +443,5 @@ Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | 
 Prompt 148 | 6d16a2903fe2937d7862d0ad34bb65ec673b177c23bace48a8af5646816eb98e | Retain complete eight-view phone strict success and seven original passing cases without claiming integrated PR acceptance.
 
 Prompt 151 | 3fcedc85759f371c11a388fcd921e4ca20af9fb494d1d7bd2420cd97ad0a800a | Record one PR67 remote request, successful guards, restored disk reserve and newly terminal PR66 strict classification.
+
+Prompt 151 | 3fcedc85759f371c11a388fcd921e4ca20af9fb494d1d7bd2420cd97ad0a800a | Verify complete72-image Linux artifact once; retain56 exact inherited matches and16 new files with source/renderer review index.
