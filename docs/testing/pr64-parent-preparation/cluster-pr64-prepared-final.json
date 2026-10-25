@@ -1,0 +1,32 @@
+{
+  "head": "4dda4c889e16142f3e020169dd8d7de1f549c517",
+  "parents": [
+    "f8adb007866692870ea2979e2d4108b2bb4bed3b",
+    "a26324cb00e770fd4503c76c8db39ae6005dc9d4"
+  ],
+  "changedPaths": [
+    "PROMPTS.md",
+    "PROMPT_WORK.md",
+    "docs/prompt-history/a26324cb00e770fd4503c76c8db39ae6005dc9d4/PROMPTS.md",
+    "docs/prompt-history/a26324cb00e770fd4503c76c8db39ae6005dc9d4/PROMPT_WORK.md",
+    "docs/prompt-history/a26324cb00e770fd4503c76c8db39ae6005dc9d4/separator.json",
+    "docs/testing/pr64-parent-preparation/PLAN.md",
+    "docs/testing/pr64-parent-preparation/active-preflight.json",
+    "docs/testing/pr64-parent-preparation/cohort-tests.log",
+    "docs/testing/pr64-parent-preparation/first-failures.json",
+    "docs/testing/pr64-parent-preparation/historical-log-sha256.txt",
+    "docs/testing/pr64-parent-preparation/historical-run.json",
+    "docs/testing/pr64-parent-preparation/historical-strict.log.gz",
+    "docs/testing/pr64-parent-preparation/policy-tests.log",
+    "docs/testing/pr64-parent-preparation/semantic-audit.json",
+    "meta-prompts.md"
+  ],
+  "allProductionTestsScriptsWorkflowsDependenciesIdentical": true,
+  "inheritedPNGCount": 5422,
+  "allBaselineMetadataIdentical": true,
+  "explicitParentPromptChecks": [
+    "passed f8adb007",
+    "passed a26324cb"
+  ],
+  "active64NotUpdated": true
+}
