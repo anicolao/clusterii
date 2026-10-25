@@ -87,7 +87,7 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
   // Prove later structural newlines from committed, append-only log transitions.
   // A copied final record becomes interior when another request is appended.
   const appendedTransitions = [];
-  const descendants = git(['rev-list', '--reverse', '--ancestry-path', `${revision}..HEAD`, '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean);
+  const descendants = git(['rev-list', '--reverse', `${commonAncestor}..HEAD`, '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean);
   for (const commit of descendants) {
     const nextLog = trackedAt(commit, 'PROMPTS.md');
     for (const parent of git(['show', '-s', '--format=%P', commit]).trim().split(' ').filter(Boolean)) {
@@ -108,6 +108,7 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     return variants;
   });
   const same = (record, priorRecord) => record === priorRecord
+    || appendedTransitions.some(([before, after]) => before === priorRecord && after === record)
     || (originals.has(record) && priorRecord === `${record}\n`);
 
   let cursor = 0;

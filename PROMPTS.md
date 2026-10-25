@@ -497,7 +497,14 @@ Reviewer continuation 2026-10-21 19:08 Toronto: pane idle since19:00 after succe
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 19:59 Toronto”.
 
 Reviewer continuation 2026-10-21 19:59 Toronto: clean0bd3936 and pane idle after #57 completion. Continue next live UX-08 fleet travel/cancellation or reorganization story as a small successor to #57, with authoritative conservation, private owner/observer projections, interrupted/reload recovery and four-viewport keyboard evidence, keeping procedural regressions. Also inspect why CI jobs have remained queued for hours using read-only run/runner status; record whether capacity or workflow dependencies explain it, without cancelling unrelated jobs or launching broad duplicate reruns. Retain exact-head preview gates and targeted raster diagnosis; second identical-layout pair is not a fix. Carry latest checkpoints through19:59 and attributed logs, commit/push. Continue useful independent work; no merge.
-## Prompt 57: Green stack
+
+## Prompt 57: Fleet integration
+
+Delegated reviewer instruction; main meta records current parent verification and completed PR79 macOS scope, not Linux approval.
+
+Reviewer: PR56 99c40f39 publication verified. Continue57 from current56 with previously inspected60Linux candidates after exact source/renderer/hash validation; preserve exact history, run actual-parent/policy checks before pushing. Missing short captures require real generation and inspection. Preserve existing53-56 live/queued gates; prioritize earlier failures. Main meta now records completed79macOS review184/184, Linux not approved; reconcile attributed logs and push. No GitHub merge. Independent56checker verification underway.
+
+## Prompt 58: Green stack
 
 Delegated reviewer instruction; refers to meta-prompts.md checkpoints19:37/19:47/19:58 and Human priority override — Green PR stack. Human questions remain verbatim in supervisor meta, not duplicated as direct human prompts here.
 
@@ -510,7 +517,9 @@ PRIORITY OVERRIDE FROM HUMAN JUST RECEIVED: "Let's get a passing PR. Focus on on
 
 
 
-## Prompt 58: Inspect references
+
+
+## Prompt 59: Inspect references
 
 Delegated reviewer clarification; refers to meta-prompts.md Human clarification — Inspect before approval. The direct human clarification stays verbatim in supervisor meta.
 
@@ -521,7 +530,9 @@ Reviewer clarification: Human explicitly said: when i say "approving all generat
 
 
 
-## Prompt 59: First green
+
+
+## Prompt 60: First green
 
 Delegated reviewer priority; refers to the new PR52 finding in main meta-prompts.md and the Human priority override — Green PR stack.
 
@@ -533,7 +544,9 @@ Reviewer new concrete evidence: prioritize first GREEN via52 from green51. I ind
 
 
 
-## Prompt 60: Shared evidence
+
+
+## Prompt 61: Shared evidence
 
 Delegated reviewer coordination; refers to main meta-prompts.md Reviewer evidence — Reuse identity raster diagnosis.
 
@@ -543,7 +556,9 @@ Reviewer coordination: While compaction runs I am retrieving only identity-valid
 
 
 
-## Prompt 61: Raster disposition
+
+
+## Prompt 62: Raster disposition
 
 Delegated reviewer inspection; refers to main meta exact PR52 visual disposition.
 
@@ -553,7 +568,9 @@ Reviewer completed exact52 independent inspection: extraction12399020127 finishe
 
 
 
-## Prompt 62: Diagnostic label
+
+
+## Prompt 63: Diagnostic label
 
 Delegated reviewer finding; refers to latest main meta request-summary correction and forward-stack findings.
 
@@ -563,7 +580,9 @@ Reviewer quick code finding: identity-paint-request.mjs GITHUB_STEP_SUMMARY stil
 
 
 
-## Prompt 63: Forward review
+
+
+## Prompt 64: Forward review
 
 Delegated reviewer inspection; refers to main meta PR54 phone-credit review; PR52 remains first.
 
@@ -573,7 +592,9 @@ Reviewer forward work, keep52first: inspected all53 phone credit images from exa
 
 
 
-## Prompt 64: Stable correction
+
+
+## Prompt 65: Stable correction
 
 Delegated reviewer instruction; refers to main meta forward credit review and PR52 Nix preservation review.
 
@@ -583,7 +604,9 @@ Reviewer: main meta now records independent inspection of all53 short PR54 credi
 
 
 
-## Prompt 65: Inspected promotion
+
+
+## Prompt 66: Inspected promotion
 
 Delegated reviewer approval; refers to main meta exact PR52 inspection and controlled promotion after Linux probe.
 
@@ -592,7 +615,9 @@ Reviewer: observed your crop comparison: all96 Linux probe crops match the actua
 
 
 
-## Prompt 66: Complete credit review
+
+
+## Prompt 67: Complete credit review
 
 Delegated reviewer disposition; refers to main meta PR54 complete212-image review with two required phone corrections.
 
@@ -602,7 +627,9 @@ Reviewer: all212 original PR54 credit candidate compositions now inspected,210 a
 
 
 
-## Prompt 67: Briefing review
+
+
+## Prompt 68: Briefing review
 
 Delegated reviewer inspection; refers to main meta PR55 retained candidate review and PR53 exact triple.
 
@@ -611,7 +638,9 @@ Reviewer: supervisor fetched exact55artifact12410489436 live-return-briefing fil
 
 
 
-## Prompt 68: Forward acceptance
+
+
+## Prompt 69: Forward acceptance
 
 Delegated reviewer disposition; refers to main meta PR55 all108 and PR56 execution-failure evidence.
 
@@ -620,7 +649,9 @@ Reviewer: PR55 all108 compositions independently inspected and acceptable; mainm
 
 
 
-## Prompt 69: Construction review
+
+
+## Prompt 70: Construction review
 
 Delegated reviewer inspection; refers to main meta PR56 partial construction review and PR54 pending-label source review.
 
@@ -629,7 +660,9 @@ Reviewer: exact PR56 construction extraction finished at /tmp/cluster-pr56-revie
 
 
 
-## Prompt 70: Construction complete
+
+
+## Prompt 71: Construction complete
 
 Delegated reviewer disposition; refers to main meta PR56 all160 construction review and remaining source applicability.
 
@@ -638,7 +671,9 @@ Reviewer: PR56 construction review now covers all160/160 captures from exact art
 
 
 
-## Prompt 71: Construction applicability
+
+
+## Prompt 72: Construction applicability
 
 Delegated reviewer finding; refers to main meta exact PR56 tree applicability.
 
@@ -647,7 +682,9 @@ Reviewer: independently fetched PR56 artifact source7a7b8f7af6d89769f01ca912311c
 
 
 
-## Prompt 72: Briefing applicability
+
+
+## Prompt 73: Briefing applicability
 
 Delegated reviewer finding; refers to main meta exact PR55 tree applicability.
 
@@ -656,7 +693,9 @@ Reviewer: PR55 source applicability also independently confirmed: fetched c8129f
 
 
 
-## Prompt 73: Credit inspection
+
+
+## Prompt 74: Credit inspection
 
 Delegated reviewer finding; refers to main meta local credit visual correction and uninspected PR57 extraction.
 
@@ -665,7 +704,9 @@ Reviewer: independently viewed new54 phone013 and014 full originals in your chec
 
 
 
-## Prompt 74: Concurrent publication
+
+
+## Prompt 75: Concurrent publication
 
 Delegated reviewer sequencing update; refers to main meta authorization to publish reviewed PR53 while PR52 application continues.
 
@@ -673,7 +714,9 @@ Reviewer: reviewed53fa414436 is ready and includes52head4f917d72. Publish53 now 
 
 
 
-## Prompt 75: Integrated recurrence
+
+
+## Prompt 76: Integrated recurrence
 
 Delegated reviewer finding; refers to main meta PR52 current strict recurrence and PR57 partial-family approval.
 
@@ -684,7 +727,9 @@ Reviewer: I confirmed52 strict111pass/1identity-validation-short001 mismatch. I 
 
 
 
-## Prompt 76: Raster alternation
+
+
+## Prompt 77: Raster alternation
 
 Delegated reviewer finding; refers to main meta current PR52 exact reverse raster and required stability verification.
 
@@ -695,7 +740,9 @@ Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review
 
 
 
-## Prompt 77: Leading approval
+
+
+## Prompt 78: Leading approval
 
 Delegated reviewer decision; refers to main meta all11 current Linux images and narrow CSS/reference approval.
 
@@ -705,7 +752,9 @@ Reviewer: independently inspected all11 fresh Linux PNGs from40149691891 at /tmp
 
 
 
-## Prompt 78: Ordered recovery
+
+
+## Prompt 79: Ordered recovery
 
 Delegated reviewer instruction; refers to main meta human first-green priority, whole-pixel identity approval and PR52 terminal-green gate before PR53 publication.
 
@@ -716,7 +765,9 @@ Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; u
 
 
 
-## Prompt 79: Forward eligibility
+
+
+## Prompt 80: Forward eligibility
 
 Delegated reviewer finding; refers to main meta PR62/63 no-artifact generation and PR53 source/Nix parity inspection.
 
@@ -726,7 +777,9 @@ Reviewer: while you prepare53, mainmeta now records full62 code review and63 com
 
 
 
-## Prompt 80: Branch integration
+
+
+## Prompt 81: Branch integration
 
 Delegated reviewer clarification; refers to main meta authorized parent-to-child integration without GitHub PR merges or history rewriting.
 
@@ -736,7 +789,9 @@ Reviewer: proceed with normal parent-to-child Git branch integration and conflic
 
 
 
-## Prompt 81: Forward runner
+
+
+## Prompt 82: Forward runner
 
 Delegated reviewer finding; refers to main meta PR64 runner and PR65 setup/source review, not new reference approval.
 
@@ -746,7 +801,9 @@ Reviewer: mainmeta now includes64full runner review and5 independent Nix tests p
 
 
 
-## Prompt 82: Verbatim retention
+
+
+## Prompt 83: Verbatim retention
 
 Delegated reviewer code finding; refers to main meta exact canonical prompt body preservation.
 
@@ -756,7 +813,9 @@ Reviewer code finding in your in-progress preservePromptHistory: records(...).tr
 
 
 
-## Prompt 83: Continuation preservation
+
+
+## Prompt 84: Continuation preservation
 
 Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
 
@@ -765,7 +824,9 @@ Reviewer second finding: updated if (archivedBase || staged.length > previous.le
 
 
 
-## Prompt 84: First green
+
+
+## Prompt 85: First green
 
 Delegated reviewer confirmation; refers to main meta exact PR52 green milestone and retained application log.
 
@@ -774,7 +835,9 @@ Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCES
 
 
 
-## Prompt 85: Forward label
+
+
+## Prompt 86: Forward label
 
 Delegated reviewer checkpoint; main meta records PR66/67 scoped source and sample review, not Linux approval.
 
@@ -784,7 +847,9 @@ Reviewer checkpoint: PR53 publish now passes; keep existing strict/application j
 
 
 
-## Prompt 86: Outer dispatch
+
+
+## Prompt 87: Outer dispatch
 
 Delegated reviewer failure finding; main meta records candidate40154163510 pre-test Usage exit2 and scoped forward findings.
 
@@ -794,7 +859,9 @@ Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh
 
 
 
-## Prompt 87: Dispatch confirmation
+
+
+## Prompt 88: Dispatch confirmation
 
 Delegated reviewer checkpoint; main meta records dispatch review and PR68/69 scoped forward findings, not new image approval.
 
@@ -804,7 +871,9 @@ Reviewer checkpoint: independently reviewed exact outer/inner credit dispatch fi
 
 
 
-## Prompt 88: Archive references
+
+
+## Prompt 89: Archive references
 
 Delegated reviewer checkpoint; main meta records PR70 selective48-frame approval, not inherited112 or short stability approval.
 
@@ -814,7 +883,9 @@ Reviewer: PR70 selective extraction completed328files289968374bytesCRC checked; 
 
 
 
-## Prompt 89: Travel references
+
+
+## Prompt 90: Travel references
 
 Delegated reviewer approval; main meta records PR70 exact-source160-frame family scope and unresolved current verification/stability gates.
 
@@ -823,7 +894,9 @@ Reviewer: mainmeta now records all160 retained PR70 fleet-travel PNGs covered. A
 
 
 
-## Prompt 90: Credit approval
+
+
+## Prompt 91: Credit approval
 
 Delegated reviewer independent visual approval; main meta records exact artifact12583688735 whole212 regression-family disposition.
 
@@ -831,50 +904,66 @@ Reviewer: independently recomputed all212 current/prior hashes:202byte-identical
 
 
 
-## Prompt 91: Briefing preparation
+
+
+## Prompt 92: Briefing preparation
 
 Delegated reviewer forward instruction; main meta records exact PR54 blob verification, PR55 inspected108 eligibility and PR71 source-only review.
 
 Reviewer: independently verified all212 committed PNG blobs at17915680 match approved originals, and GitHub54 exact head/checks live. Keep those handles and53jobs. Continue preparing55 from54 while checks run, using already reviewed108briefing images with explicit source/renderer applicability; inspect any changed compositions. Mainmeta also records71 full story/code and historical CI review (no71image approval). Reconcile new reviewer entries into attributed logs at next commit/push. No duplicate generation or PR merge.
 
-## Prompt 92: Briefing verification
+
+
+## Prompt 93: Briefing verification
 
 Delegated reviewer validation; main meta records16 prompt tests,108 exact briefing blobs and PR72/73 code-only forward review.
 
 Reviewer: independently ran all16 prompt-history tests in Nix, allpassed; read separator delta and independently SHA256-verified all108 prepared briefing PNGs equal inspected originals. Reviewed source applicability delta limited to inherited CreditOffers and identity CSS. Mainmeta also contains completed72/73 code and historical CI reviews, no image approvals for those. Reconcile reviewer entries at next commit/push, retain current53/54 CI handles, continue55 publication and forward stack. No extra generation, duplicate job or GitHub merge requested.
 
-## Prompt 93: Earliest failure
+
+
+## Prompt 94: Earliest failure
 
 Delegated reviewer current CI finding; prioritize exact PR53 failure after safe local PR56 integration checkpoint, using reviewer extraction without duplicates.
 
 Reviewer: current PR53 strict40153836539/job121050800104 just failed:114passed2failed8skipped. Both1994px: short identity-validation001-sign-in and session-interrupted-recovery012-fresh-sign-in. Log /tmp/cluster-pr53-current-failed.log; artifact12584840651 size1600404591. I am selectively retrieving and inspecting those actual/expected/diffs now; do not duplicate download or rerun. Prioritize earliest failing53 once56 integration is safely checkpointed; no blind promotion/tolerance change. Application53 stilllive. Findings to follow.
 
-## Prompt 94: Raster evidence
+
+
+## Prompt 95: Raster evidence
 
 Delegated reviewer exact evidence; main meta records active28px CSS and unchanged measured geometry despite alternate sentence raster.
 
 Reviewer: current53 exact evidence is ready at/tmp/cluster-pr53-current-review,39files20.14MB transferredCRCchecked. Independently inspected both triples; only identity-intro raster differs. Actual validationfb76 matches known alternate. Both sidecars confirm17px/28px font, texty286.421875 and paragraphy283.421875:28px fix is active yet instability remains. Prioritize53 after safe56checkpoint; avoid reference-only swaps. Use existing retained evidence for production rendering diagnosis and bounded same-renderer verification, preserving strict equality. Mainmeta records exact paths/hashes. I am not launching another job.
 
-## Prompt 95: Reviewed recovery
 
-Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
-
-Reviewer:54/55 integration independently reviewed; immutable55 prompt suite18passed. Continue green stack without restarting live53/54/55 jobs. Reconcile latest main meta entries (completed78 image review,79scoped40help approvals,54/55 independent audit) into attributed ledger and push. With55 published, recover parked56 staged tree c6552c6b0ec19845048daec71848195c18210b89 at/private/tmp/cluster-pr54-credit-review safely, integrate reviewed55 parent preserving exact prompt history, retain approved160construction references and prepare next current-head checks. Reuse fixed separator logic with meaningful regression verification if needed; no assertion/tolerance weakening or uninspected baselines. If53/54/55 produce actionable failures, prioritize those. No GitHub merge.
 
 ## Prompt 96: Reviewed recovery
 
 Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
 
+Reviewer:54/55 integration independently reviewed; immutable55 prompt suite18passed. Continue green stack without restarting live53/54/55 jobs. Reconcile latest main meta entries (completed78 image review,79scoped40help approvals,54/55 independent audit) into attributed ledger and push. With55 published, recover parked56 staged tree c6552c6b0ec19845048daec71848195c18210b89 at/private/tmp/cluster-pr54-credit-review safely, integrate reviewed55 parent preserving exact prompt history, retain approved160construction references and prepare next current-head checks. Reuse fixed separator logic with meaningful regression verification if needed; no assertion/tolerance weakening or uninspected baselines. If53/54/55 produce actionable failures, prioritize those. No GitHub merge.
+
+
+
+## Prompt 97: Reviewed recovery
+
+Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
+
 Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.
 
-## Prompt 97: Pending propagation
+
+
+## Prompt 98: Pending propagation
 
 Delegated reviewer scoped PR54/55 locator correction; original failure and focused pass retained on parent a2860b0c, with exact same inherited test.
 
 Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
 
 
-## Prompt 98: Pending locator
+
+
+## Prompt 99: Pending locator
 
 Delegated reviewer application failure; main meta and recovery ledger record exact run, requested scope and prior evidence preservation.
 
@@ -883,7 +972,9 @@ Reviewer: actionable current PR54 application failure40155701633/job121056527917
 
 
 
-## Prompt 99: Layer approval
+
+
+## Prompt 100: Layer approval
 
 Delegated reviewer exact image approval; main meta and recovery logs record intervening bounded-run instructions, original failures, and independent all13 changed originals.
 
@@ -893,7 +984,9 @@ Reviewer: independently inspected all8unique changed SHA representatives coverin
 
 
 
-## Prompt 100: Explicit maintenance
+
+
+## Prompt 101: Explicit maintenance
 
 Delegated reviewer policy-failure correction; main meta explicitly permits justified reviewable scoped legacy maintenance while retaining coverage.
 
@@ -901,13 +994,17 @@ Reviewer: prioritize new current54failure before56 propagation. Both app40159161
 
 
 
-## Prompt 101: Construction recovery
+
+
+## Prompt 102: Construction recovery
 
 Delegated reviewer continuation; main meta records independent parent checks and further PR79 image dispositions.
 
 Reviewer: independently verified published54 f8fa7f5f and55 acc0b414: seven images match all inspected hashes; actual immutable HEAD/index parent checks pass against3be6f22d andf8fa7f5f respectively; checker/tests unchanged. Continue green stack while current53/54/55 gates run, preserving their handles. Recover protected56 checkpoints in /private/tmp/cluster-pr54-credit-review, verify current disk headroom, integrate current55 preserving exact prompt histories and approved160construction references, run exact-parent/policy checks before publishing. No new production scope, no weakened checks, no GitHub merge. Prioritize any new actionable earlier gate failure. Mainmeta has additional79reviews and independent54/55audit; reconcile attributed logs and push.
 
-## Prompt 102: Appended history
+
+
+## Prompt 103: Appended history
 
 Delegated reviewer immutable-index PR54 base-check failure; preserve exact copied request bytes and prove appended separator history.
 
@@ -916,7 +1013,9 @@ Reviewer: new actionable54documentation failure40159642901/job121068319226 on9a7
 
 
 
-## Prompt 103: Remaining rasters
+
+
+## Prompt 104: Remaining rasters
 
 Delegated reviewer explicit approval of seven exact current-head failure-artifact images; full preceding result and independent extraction recorded in main meta and recovery ledger.
 
@@ -925,7 +1024,15 @@ Reviewer: independently downloaded only21 actual/expected/diff PNGs from artifac
 
 
 
-## Prompt 104: Complete identity
+
+
+
+## Prompt 105: Short approval
+
+Delegated reviewer instruction; main meta records independent twenty-image PR57 short approval and exact SHA index.
+
+Reviewer: new independent approval, not duplicate cargo instruction: all20 PR57 short Linux originals inspected as13distinct complete images, SHAindex /tmp/pr57-supervisor-short-index.json. Mainmeta records findings and manifest. At safe checkpoint after current cargo promotion, verify source/dirty provenance then promote these20 to57 and propagate existing stack. Reconcile/push latest logs. Preserve53 priority and existing jobs; no further feature branches or merges.
+## Prompt 106: Complete identity
 
 Delegated reviewer approval; see main meta Reviewer PR53 complete identity approval and handoff.
 
@@ -935,8 +1042,12 @@ Reviewer: independent review now APPROVES all27changed exact originals in /tmp/c
 
 
 
-## Prompt 105: Service exhaustion
+
+
+## Prompt 107: Service exhaustion
 
 Delegated reviewer instruction; see main meta Reviewer PR56 service exhaustion confirmed from retained artifact.
 
 Reviewer: new independent56evidence confirms emulator exhaustion: verify artifact12588014245 selected extraction at /tmp/cluster-pr56-error-contexts; firestore-debug.log has10001pending WebChannel backlog line8992 at05:38:19 and explicit Java heap OutOfMemoryError lines4680474/4683118. Contexts show Retrieving your identity or Awaiting acknowledgement. Full findings/exact handoff mainmeta Reviewer PR56 service exhaustion confirmed from retained artifact. After safe propagation checkpoint, backport applicable64a26324cb viewport cohort isolation to56, preserve alltests/deadlines/assertions/exactpixels/failed artifacts, test underNix and propagate forward. Do not disrupt53currentCI or duplicate downloads. Reconcile attribution/logpush. No merge.
+
+
