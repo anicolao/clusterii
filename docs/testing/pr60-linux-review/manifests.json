@@ -1,0 +1,150 @@
+[
+  {
+    "id": "live-fleet-cargo",
+    "source": {
+      "commit": "e5f47ff55fc3637ec1c1d61b78b064a971a4f373",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cargo.story.spec.ts",
+      "specSha256": "8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "desktop",
+    "status": "passed"
+  },
+  {
+    "id": "live-fleet-cargo",
+    "source": {
+      "commit": "e5f47ff55fc3637ec1c1d61b78b064a971a4f373",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cargo.story.spec.ts",
+      "specSha256": "8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "large",
+    "status": "passed"
+  },
+  {
+    "id": "live-fleet-cargo",
+    "source": {
+      "commit": "e5f47ff55fc3637ec1c1d61b78b064a971a4f373",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cargo.story.spec.ts",
+      "specSha256": "8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "phone",
+    "status": "passed"
+  },
+  {
+    "id": "live-fleet-cargo",
+    "source": {
+      "commit": "e5f47ff55fc3637ec1c1d61b78b064a971a4f373",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cargo.story.spec.ts",
+      "specSha256": "8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "short",
+    "status": "passed"
+  }
+]

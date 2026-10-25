@@ -1913,3 +1913,15 @@ Reviewer: independently inspected all22distinct changed/new images covering31fil
 Delegated reviewer instruction; main meta records independent PR59 verification and exact PR56 failed publication.
 
 Reviewer:59commit0fe42257 independently verified all88committed PNG bytes equal reviewed originals; read provenance report and accept its explicitly limited dirty:true explanation. New actionable gate:56publish40161305387/job121073856878 failed04:55:20, exact99c40f39 revision wait exhausted with HTTP404. Log /tmp/cluster-pr56-publish-failure.log. Include56 in publication recovery after checking live Pages state, avoid duplicate queued builds. Preserve53priority and existing generation handles. Mainmeta updated; reconcile/push attribution with next work. No merge.
+
+## Prompt 290: Forward integration
+
+Delegated reviewer instruction; main meta records independent PR60/61 exact-parent and inherited reference verification.
+
+Reviewer: independently verified60d394a454 and61e060a1f3 exact-parent checks and all88inherited approved PNG bytes; source/workflows/checker unchanged. Mainmeta has evidence. While53/57/60/61generation and Pages handles remain live, continue62 from latest61 as previously requested; prioritize completed earlier failures/candidate inspection. Preserve handles, no duplicate runs. Reconcile attribution and push logs. No GitHub merge.
+
+## Prompt 291: Available evidence
+
+Delegated reviewer instruction; main meta records exact PR54 failure and PR60 artifact readiness.
+
+Reviewer: cargo40162646504 nowSUCCESS, artifact12587925653 size289629708 ready; retrieve once and inspect changed/new originals before promotion. Please prioritize available candidate over further stack advancement.54strict40160782002/job121071692015 FAILED118passed6failed8skipped: same six short identity frame paths/pixelcounts as53, log /tmp/cluster-pr54-current-failed.log. No54actualhash approval yet; propagate inspected53complete repair after compatibility instead of duplicate identity generation. Mainmeta updated. Preserve live handles, reconcile/push logs, no merge.
