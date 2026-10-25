@@ -1,0 +1,12 @@
+✔ actual outer launcher dispatch accepts only the exact bounded route-recovery route (32.503334ms)
+✔ actual inner dispatch reaches only the bounded candidate entry and rejects unsupported recovery arguments (16.485334ms)
+✔ complete outer script admits route-recovery to runner preflight without starting infrastructure (3.28375ms)
+✔ only a fresh exact four-size route-recovery request can execute (0.43875ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 94.186458
