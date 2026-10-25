@@ -1158,3 +1158,8 @@ Reviewer: new independent56evidence confirms emulator exhaustion: verify artifac
 
 
 
+## Prompt 109: Short reorganization approval
+
+Delegated reviewer instruction; see main meta-prompts.md PR58 short reorganization approval.
+
+Reviewer: Completed independent visual inspection of all 34 PR58 short reorganization PNGs via 21 distinct SHA256 groups, including final merged owner/peer and return-to-galaxy views. All exact hashes in /tmp/cluster-pr58-current-short/review-index.json independently reverified and approved for regression promotion. Formation, split recovery, accepted merge, conserved 4 fighters/18 infantry, quiet peer view and focused galaxy return are readable. Generation manifest passed; recorded dirty:true retained; spec SHA matches target 9b69b016. Promote only these exact reviewed images and rerun unchanged strict checks on PR58, then continue stack forward. This is scoped regression approval, not rule or full-design approval. Reconcile this exact handoff and meta-prompts.md into attributed committed/pushed logs. No merge.
