@@ -1,0 +1,5 @@
+# Complete short maintenance generation
+
+Reviewer Prompt133 authorizes one complete generation after strict exposed004. Only003 SHA932203f3… and004 SHA999d68d5… are independently approved changed frames. No new reference is promoted here. Target remains cd0d5d60604b6f9c82665f03bc8621208559113f; unchanged production, spec825e5eff…, original90s total/30s steps/10s assertions, real admission/pause/reload/resume actions. One short case, retries0/max-failures1, snapshot updates disabled. Candidate mode bypasses reference comparison only; all functional assertions and full thirteen-capture journey remain. Required PR checks untouched.
+
+Fresh request02 bound to a committed launcher parent on isolated investigate/pr63-maintenance-candidates. No old request replay or serial strict attempt. Preserve strict run40203144519 failure and PR64 same003 failure40196208632. PR65 live strict/retry remain;66 frozen. On success compare every PNG to target and originalf8 baseline, generate every changed expected/actual/diff for independent inspection; retain all unchanged hashes and dirty-source/renderer provenance. No active63 publication before complete review.

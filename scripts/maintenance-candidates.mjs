@@ -29,6 +29,6 @@ const quote = (s) => "'" + s.replaceAll("'", "'\''") + "'";
 const command = ["bun", ...args].map(quote).join(" ");
 const result = spawnSync("bun", ["x", "firebase", "emulators:exec", "--project", "demo-clusterii", "--only", "auth,database,firestore,functions", command], {
   stdio: "inherit",
-  env: { ...process.env, CLUSTER_STORY_MODE: "verify", NODE_OPTIONS: [process.env.NODE_OPTIONS ?? "", "--import=" + pathToFileURL(resolve("tests/browser/story-helpers/emulator-catalogue-register.mjs")).href].join(" ") },
+  env: { ...process.env, CLUSTER_STORY_MODE: "generate", NODE_OPTIONS: [process.env.NODE_OPTIONS ?? "", "--import=" + pathToFileURL(resolve("tests/browser/story-helpers/emulator-catalogue-register.mjs")).href].join(" ") },
 });
 process.exit(result.status ?? 1);

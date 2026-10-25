@@ -10,7 +10,7 @@ test('actual outer launcher dispatch accepts only the exact bounded maintenance 
  for(const args of [[],['recovery'],['recovery','all'],['recovery','maintenance','extra'],['arbitrary']]) assert.equal(run(outer,args).status,2);
  for(const args of [['stories','verify'],['stories','generate'],['application']]) assert.equal(run(outer,args).status,0);
 });
-test('actual inner dispatch reaches only the bounded strict entry and rejects unsupported recovery arguments',()=>{
+test('actual inner dispatch reaches only the bounded candidate entry and rejects unsupported recovery arguments',()=>{
  const result=run(inner,['recovery','maintenance']);assert.equal(result.status,0);assert.equal(result.stdout,'NODE:scripts/maintenance-candidates.mjs\n');
  for(const args of [['recovery'],['recovery','all'],['recovery','maintenance','extra'],['arbitrary']]) {const result=run(inner,args);assert.equal(result.status,2);assert.equal(result.stdout,'');}
 });

@@ -8,8 +8,8 @@ import {
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { pathToFileURL } from "node:url";
-export const requestFile = ".github/recovery/pr63-maintenance-short-01.json";
-export const branch = "refs/heads/investigate/pr63-maintenance-verify";
+export const requestFile = ".github/recovery/pr63-maintenance-short-02.json";
+export const branch = "refs/heads/investigate/pr63-maintenance-candidates";
 export function validateRequest({
   request,
   env,
@@ -28,9 +28,9 @@ export function validateRequest({
     throw Error("Wrong event, repository, branch, attempt or checkout");
   if (
     request.version !== 1 ||
-    request.id !== "maintenance-short-20261025-01" ||
+    request.id !== "maintenance-short-20261025-02" ||
     request.case !== "maintenance" ||
-    request.mode !== "verify" ||
+    request.mode !== "generate" ||
     request.specSha256 !== "825e5effebcb5a6b820786c7788c6f81d136b1ffd1f4f6a3c715d5e95334aac5" ||
     request.target !== "cd0d5d60604b6f9c82665f03bc8621208559113f" ||
     request.sourceCommit !== parent ||
@@ -82,7 +82,7 @@ function main() {
   });
   if (git("status", "--porcelain"))
     throw Error("Request checkout must be clean");
-  if (createHash("sha256").update(readFileSync("tests/browser/maintenance.story.spec.ts")).digest("hex") !== request.specSha256) throw Error("Observation spec differs from bound request");
+  if (createHash("sha256").update(readFileSync("tests/browser/maintenance.story.spec.ts")).digest("hex") !== request.specSha256) throw Error("Maintenance spec differs from bound request");
   result.specSha256 = request.specSha256;
   result.requestSha256 = createHash("sha256").update(bytes).digest("hex");
   mkdirSync("ci-evidence/recovery-request", { recursive: true });
@@ -94,7 +94,7 @@ function main() {
   if (process.env.GITHUB_STEP_SUMMARY)
     appendFileSync(
       process.env.GITHUB_STEP_SUMMARY,
-      `Bounded request ${result.requestId}\n\nSource ${parent}; executor ${head}; request SHA256 ${result.requestSha256}. One complete short maintenance journey in strict mode; not full-suite acceptance.\n`,
+      `Bounded request ${result.requestId}\n\nSource ${parent}; executor ${head}; request SHA256 ${result.requestSha256}. One complete short maintenance journey in candidate generation mode; no reference promotion or strict acceptance.\n`,
     );
   console.log(JSON.stringify(result));
 }

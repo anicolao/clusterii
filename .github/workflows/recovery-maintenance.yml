@@ -1,8 +1,8 @@
-name: Bounded PR63 short maintenance verification
+name: Bounded PR63 short maintenance candidate generation
 on:
   push:
-    branches: [investigate/pr63-maintenance-verify]
-    paths: [.github/recovery/pr63-maintenance-short-01.json]
+    branches: [investigate/pr63-maintenance-candidates]
+    paths: [.github/recovery/pr63-maintenance-short-02.json]
 permissions:
   contents: read
 concurrency:
@@ -29,7 +29,7 @@ jobs:
           determinate: false
       - name: Validate exact request and executor
         run: node scripts/maintenance-request.mjs
-      - name: One complete short maintenance strict journey
+      - name: One complete short maintenance candidate journey
         timeout-minutes: 20
         run: nix run path:./nix#ci-renderer -- recovery maintenance
       - name: Preserve bounded maintenance evidence
