@@ -1,0 +1,24 @@
+✔ requires a staged prompt log, including on the initial commit (196.98875ms)
+✔ accepts a staged append and rejects an unstaged append (222.30425ms)
+✔ rejects rewritten or deleted historical prompts (192.845ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (454.569875ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (353.404292ms)
+✔ checks a PR against its base, including a base with no prompt log (214.943875ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (628.12525ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (254.345375ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (394.70325ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (666.563291ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (733.775333ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (394.227958ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (479.180542ms)
+✔ divergent prompt merge retains exact parent archive and canonical request order (2293.456125ms)
+✔ later stacked integration recognizes only a Git-verified inherited record separator (647.978666ms)
+✔ explicit structural separators retain exact request whitespace and reject undeclared changes (1063.82625ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9240.903792

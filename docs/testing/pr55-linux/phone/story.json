@@ -1,0 +1,408 @@
+{
+  "id": "live-return-briefing",
+  "title": "Return to a complete private briefing without losing new activity",
+  "inventory": [
+    "UX-12",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Independent commanders inspect their authorized production history. A returning commander recovers a paged period, keeps their reading position when new activity arrives, saves only the reviewed period and inspects the remaining report. Visits belong to authoritative player identities. The development mock provider uses real encrypted commands and grants. Domain clocks and actual service delivery are explicitly labelled controls, not hosted certification. Interrupted visit and managed-key stories remain separate coverage.",
+  "source": {
+    "commit": "c8129fec764fb8824bc951751b35aaedc3176c0f",
+    "dirty": false,
+    "spec": "tests/browser/return-briefing.story.spec.ts",
+    "specSha256": "5ed55233aeb9259683a8e05fd15833d12f63c13660985bd63cc62beeb5314c99"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "phone",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "twelve-confirmed-ticks",
+      "description": "Advance the declared browser/domain clock and deliver twelve production boundaries through the real leased service; no history, balances or checkpoint is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "return-to-campaign",
+      "description": "Return through the campaign directory. The briefing identifies the confirmed period but refuses to save while earlier authorized records are missing. Other commanders open their own briefings.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "All three briefings name tick 12 and require earlier records before saving.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "Reading opens no command and changes no canonical state or visit."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "011-return-to-campaign-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "011-return-to-campaign-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "011-return-to-campaign-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-complete-period",
+      "description": "Recover earlier authorized activity before making claims about change. Twelve distinct production reports become available to each player.",
+      "actor": "Each commander",
+      "kind": "player",
+      "acknowledgement": "All twelve reports are recovered and Save visit becomes available.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "History recovery preserves every checkpoint, balance and revision."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "012-recover-complete-period-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "012-recover-complete-period-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "012-recover-complete-period-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-later-production",
+      "description": "Use the bounded reading panel to reach Tick 12 production while the commitment rail stays visible.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The last report's inspection control has keyboard focus.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "The reading pane scrolls without moving the document or hiding the primary action."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "013-read-later-production-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "013-read-later-production-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "013-read-later-production-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "new-production-arrives",
+      "description": "Deliver the thirteenth real tick while the player reads the prior period. The service publishes new state; the test does not replace the open snapshot.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "retain-reading-position",
+      "description": "Notice New activity without silently advancing the reviewed period or moving the reading position.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "New activity is available while the open briefing still ends at tick 12.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "The original scroll offset and all private visits remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "015-retain-reading-position-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "015-retain-reading-position-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "015-retain-reading-position-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-reviewed-period",
+      "description": "Save the reviewed period with Enter. Confirmation returns to the galaxy; other commanders retain their independent periods.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The service accepts the visit and restores focus to History.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "Exactly one revision records only this commander's tick-12 source; wallets, military state and every other visit remain unchanged."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "016-save-reviewed-period-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "016-save-reviewed-period-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "016-save-reviewed-period-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-unreviewed-activity",
+      "description": "Reload and open the remaining activity. Tick 13 remains unreviewed because saving the older snapshot did not consume it.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The recovered private period contains only Tick 13 production.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "Reload does not repeat the visit command or alter any state."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "017-reload-unreviewed-activity-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "017-reload-unreviewed-activity-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "017-reload-unreviewed-activity-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-report-subject",
+      "description": "Inspect Tick 13 production through its real report control and read the current economy without marking a further visit.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The Empire economy opens on confirmed tick 13.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "Inspection preserves the last visit and all canonical state."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "018-inspect-report-subject-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "018-inspect-report-subject-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "018-inspect-report-subject-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "acknowledge-latest",
+      "description": "Return from the inspected subject and explicitly save the remaining confirmed period.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The latest visit is acknowledged and the galaxy regains History focus.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "Only the returning commander advances to tick 13, in one additional revision."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "019-acknowledge-latest-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "019-acknowledge-latest-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "019-acknowledge-latest-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "continue-without-repeat-briefing",
+      "description": "Return through the named Continue action. No new briefing is forced after all confirmed activity was explicitly acknowledged.",
+      "actor": "Returning envoy",
+      "kind": "player",
+      "acknowledgement": "The galaxy heading receives focus without a repeat briefing.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Each actual member projection carries only its own checkpoint; no other player's visit map is serialized.",
+        "Re-entry has no canonical effect and other commanders keep their earlier checkpoints."
+      ],
+      "views": [
+        {
+          "player": "Returning envoy",
+          "image": "020-continue-without-repeat-briefing-1-returning-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent envoy",
+          "image": "020-continue-without-repeat-briefing-2-independent-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "020-continue-without-repeat-briefing-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
