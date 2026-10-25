@@ -13,3 +13,9 @@ Exact source/spec/renderer manifests and originals are at /tmp/cluster-research-
 ## Independent approval and exact verification
 
 Reviewer independently approved full96 scoped regression set,56changed/40unchanged, including previously unreviewed large representatives (downscaled layout/content scope). Promotion5464e342 changed exactly56PNG, all96 candidate/baseline bytes verified. Four strict lab journeys passed16.7s with96exact captures and unchanged thresholds. Originals retained /tmp/cluster-research-external-approved-strict-originals; decoded-RGBA archive check passed. Guidance rerun on the same shared component is separate and remains pending until its terminal result.
+
+## Shared-component regression and final exact verification
+
+First guidance rerun at5464e342 passed phone/desktop then stopped at large017 recruiting,16947pixels differing in radio-list scroll position. Full failure/trace/actual/expected/diff retained /tmp/cluster-research-external-guidance-strict; partial originals separately /tmp/cluster-research-external-guidance-strict-originals. New effect also reacted to local choices already handled by showChoice. Corrected7e03b163 limits external reveal to choice===null, retaining established focus/scroll-margin handling for local interaction. No baseline swap or tolerance change.
+
+At clean7e03b163 combined original-budget strict run passed all8journeys1.2m:48guidance+96lab=144exact captures across four sizes. Complete originals /tmp/cluster-research-local-guard-strict-originals; existing archive tool independently decoded and compared RGBA exactly. No new image differences requiring approval. Check0errors0warnings. Retains original external-selection reproduction, first guidance failure, and all earlier candidates. No Linux/downstream/full-design acceptance.

@@ -1,0 +1,7 @@
+Checking formatting...
+All matched files use Prettier code style!
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /private/tmp/cluster-research-queue-visibility
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings
