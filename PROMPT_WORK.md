@@ -380,3 +380,5 @@ Prompt 109 | 5fd8169d6cb98c40f520640d1a2ae05e51a0755a76ef6f601ef31d06100d2186 | 
 Prompt 111 | 689d9adb6b0da9679bfab0c8aa3f99eedc0385015a379dc35b6e89b807b34f07 | Carry approved cancellation references through travel, preserving original travel generation source and both parent histories.
 
 Prompt 113 | 0ecc1c2a90c7b9057a77fd1fc7f21c36b141eeec1b4110dee421e87465c2a8a9 | Prepare one guarded complete four-size interrupted-route Linux generation; no reference promotion or required workflow changes.
+
+Prompt 113 | 0ecc1c2a90c7b9057a77fd1fc7f21c36b141eeec1b4110dee421e87465c2a8a9 | Request one current-source pinned Linux interrupted-route candidate family; preserve real recovery assertions and original deadlines.
