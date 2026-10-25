@@ -1,0 +1,67 @@
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /private/tmp/cluster-pr54-credit-review
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 44 files in 39ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+$ node --test scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs
+✔ admission fixture changes only designated domain time inputs (0.374084ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.295792ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.399042ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.399ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.254292ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.761333ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.476708ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (2.872791ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.429583ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.795209ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.409458ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.659167ms)
+Previous story evidence preserved at /tmp/nix-shell.OZBCrv/cluster-cohort-test-a9ZJJm/.story-cohorts-RQM0F4/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.OZBCrv/cluster-cohort-test-a9ZJJm/.story-cohorts-RQM0F4/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (10.910084ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.664375ms)
+✔ interruption retains current artifacts and launches no successor (1.729916ms)
+✔ an artifact path collision fails rather than overwriting either result (3.379208ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (2.106709ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.97175ms)
+✔ capture policy protects each exact comparison, readiness and review guard (1.077334ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (6.334709ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.609875ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.38375ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.995167ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 74.277625
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ bun test tests/story-tools.test.ts
+bun test v1.3.13 (bf2e2cec)
+
+tests/story-tools.test.ts:
+(pass) capture waits for the finite effect and its final outcome [233.37ms]
+(pass) stable capture rejects infinite and paused motion instead of hiding it [179.76ms]
+(pass) undecodable visible images fail readiness [111.76ms]
+(pass) geometry rejects undersized, overlapping and out-of-viewport controls [288.60ms]
+(pass) bounded scroll is allowed without moving the primary action or document [46.81ms]
+(pass) closed disclosure contents are inactive despite retained layout, but opened controls are audited [158.50ms]
+(pass) disclosure summaries are audited as real keyboard controls [136.07ms]
+(pass) overlap compares painted portions inside a bounded reading panel [66.51ms]
+(pass) actual-frame stability never selects pixels using a baseline [1.27ms]
+(pass) actual-frame stability rejects oscillation after its bounded frame budget [0.10ms]
+(pass) pinned emulator UI assets never replace provider responses or production assets [0.28ms]
+(pass) explicit animation inspection validates exact paused count, time and duration [359.96ms]
+(pass) identity raster diagnostics exclude galaxy text, retain identity ancestry and report bounds [183.29ms]
+(pass) focused control audit rejects clipped button and outline without scrolling [245.28ms]
+
+ 14 pass
+ 0 fail
+ 45 expect() calls
+Ran 14 tests across 1 file. [2.44s]
