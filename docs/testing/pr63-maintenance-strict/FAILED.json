@@ -1,0 +1,96 @@
+{
+  "id": "maintenance-admission-recovery",
+  "title": "Pause, recover and resume campaign admission",
+  "inventory": [
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A host pauses a real waiting development campaign while an independent commander is reviewing a faction. The pause fences admission and survives reload; acknowledged resume permits the waiting commander to join. Keyboard traversal wraps within the roster and Escape restores its opening control. Starting state uses real UI with explicit development access and fixed catalogue input.",
+  "source": {
+    "commit": "e59bb8df2f8a9c19cd60b15d91489fee1f5e7193",
+    "dirty": true,
+    "spec": "tests/browser/maintenance.story.spec.ts",
+    "specSha256": "825e5effebcb5a6b820786c7788c6f81d136b1ffd1f4f6a3c715d5e95334aac5"
+  },
+  "mode": "verify",
+  "status": "failed",
+  "project": "short",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "waiting-commanders",
+      "description": "Prepare a host's admitted Heliac seat and an independently authenticated Pelagic applicant through ordinary UI. Emulator development claims and fixed catalogue entropy are explicit controls; no production state, pause interval or tick is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "open-roster",
+      "description": "Open the roster while the other commander can still claim a seat.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "The roster panel receives focus.",
+      "verifications": [
+        "The waiting commander can still commit admission before a pause."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "002-open-roster-1-maintenance-host.png",
+          "verifications": []
+        },
+        {
+          "player": "Waiting envoy",
+          "image": "002-open-roster-2-waiting-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keyboard-controls",
+      "description": "Traverse the closed roster controls in both wrap directions, then open development controls with the keyboard.",
+      "actor": "Maintenance host",
+      "kind": "player",
+      "acknowledgement": "Pause campaign is focused after opening the disclosure.",
+      "verifications": [
+        "The same authoritative campaign remains ready for admission."
+      ],
+      "views": [
+        {
+          "player": "Maintenance host",
+          "image": "003-keyboard-controls-1-maintenance-host.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
