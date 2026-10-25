@@ -343,3 +343,9 @@ Prompt 106 | 2b3ca753cb68d3accad6c09c89d6ecc428dd4b82dc3da2bbc902f07ca25892c1 | 
 Prompt 108 | b82e039095adf3471d476eed64969819aaf3253a5a8ccb83d6b5dc93328c63db | Integrate current cancellation parent while retaining cargo evidence and exact inherited histories.
 
 Prompt 109 | 5fd8169d6cb98c40f520640d1a2ae05e51a0755a76ef6f601ef31d06100d2186 | Integrate independently approved cancellation references and preserve both parent histories without changing cargo source.
+
+Prompt 106 | 18d0d503951ea3761d2e76f8d6bc245771040025cb4147004aa78878de55eb87 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 108 | 6d6c0ef1176f90ace9448389ece1eade703b0a8efb8cc569ce803b19f5213e61 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 111 | b0e0fdc951a0fa6f63bfee4aebb3147791cc4deb2565ea89a5d8849b54d1f5b8 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
