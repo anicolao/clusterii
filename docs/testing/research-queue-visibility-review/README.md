@@ -1,0 +1,11 @@
+# Reviewer-directed PR87 research queue correction
+
+Delegated instruction recorded in PROMPTS/main meta. Isolated branch investigate/research-queue-visibility starts7423f669. No PRhead or publication changes. Read E2E_GUIDE and actual Pantheon numbered-feature documentation; reused existing illustrated guidance story rather than adding procedural coverage.
+
+Pre-fix clean3caa168e phone run failed intended new full-painted-bounds/ancestor-clipping assertion: Queue scanning733.390625 exceeds reader721,12.390625px clip. Existing viewport/radio-center/focus/screen-fit/assertions/deadlines retained. Original trace/error /tmp/cluster-research-visibility-before and partial originals /tmp/cluster-research-visibility-before-originals preserved.
+
+Minimal ad973bc2 waits for Svelte tick before existing label/form nearest scrolling and guards detached form/target. This measures selected explanation's rendered height, keeping explanation and Queue together. Already reviewed shared background suppression applied; no domain changes. Four complete corrected journeys passed58.8s; same new assertion passes all8choices at allfour sizes. Check0errors0warnings,lint,policy pass; shared screen-fit helper unchanged. Source-paired48Darwin originals at /tmp/cluster-research-visibility-corrected-originals/research-capability-guidance,44changed4identical versus87; index/manifests/logs pushed0f81bd39. Self-inspected011four sizes, full control/explanation readable; large downscaled. No independent corrected approval/baseline promotion or Linux/normal-motion/downstream claims. The96lab images were not generated in this run.
+
+Latest original reviewer disposition reconciled: guidance48=14approved34held; eight phone lab pending/interrupted images approved,88lab unreviewed. Combined56of144inspected22approved34held88pending. These original approvals do not automatically apply to changed-source candidates.
+
+Live dependency preserved: Pages40175189456 buildsuccess/report+deployqueued. PR53publication attempt2 remains failed on oldservedrevision; next action only after deployment success is exact hosted9a216847/assets verification, then current53publication recovery before54. Corrected62candidate40172866002 now in_progress, no restart/download yet. No competing publication, new PR, merge or feature expansion.
