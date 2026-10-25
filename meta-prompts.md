@@ -3942,3 +3942,187 @@ Viewed all28 original1440x1000 ordinary desktop PNGs through20 independently SHA
 ## Reviewer handoff — Inspected actual baseline verification
 
 Reviewer: observed your crop comparison: all96 Linux probe crops match the actual failed screenshot, not oldexpected. Clarify negative reproduction as failure to reproduce alternation, not failure to reproduce actual raster. Both exact failed actual full compositions already independently approved. This supports promoting those two inspected actual baselines as the next controlled PR52 attempt, with precise provenance, then running full strict CI; do not invent an unsupported production CSS fix merely to claim a cause. If actual is stable in integrated verification, deliver green. If integrated verification alternates, use that new evidence for the smallest capture/layout repair. Retain strict zero tolerance. Main meta now also records28 ordinary desktop54 approvals, total134/212 reviewed,132 acceptable/2phone fixes/78uninspected. Reconcile logs and publish52 promptly; no further isolated diagnostic necessary before that attempt.
+
+## Reviewer baseline inspection — PR54 recovery desktop
+
+Viewed all25 original1440x1000 recovery desktop PNGs through15 SHA-identical representatives, same names/duplicate groups as recovery phone above. All25 acceptable scoped to source artifact12405680074 and production/helper applicability. Pending controls retain200credits and disabled inputs with full readable acknowledgement label; receipt reserves189.999; acceptance197.998; settlement194.801/210.799 remains once-only after reload, outsider202.8 without private details. Keyboard return focus visible. Shared phone-label fix will require reinspection of changed desktop pending images. No new defect. Total159/212 inspected:157 acceptable,2phone fixes,53large uninspected.
+
+
+## Reviewer verification — PR52 promoted image bytes
+
+Read isolated52working diff after agent promotion: exactly two baseline PNG changes, no production CSS change. Independently hashed both destination files with established Nix Python; each SHA256fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9, exactly the previously inspected full actual images. Nix workflow backport and provenance/log files accompany them. Published green still requires full checks; this verifies only inspected-byte promotion. Recovery desktop54review recorded above after latest handoff; agent should reconcile159total next log sync.
+
+
+## Reviewer baseline inspection — PR54 large ordinary and recovery
+
+Viewed all53 large3840x2160 originals via35 SHA-identical representatives: ordinary28 via20 (same names/groups as ordinary desktop), recovery25 via15 (same names/groups as recovery desktop). Tool displayed full compositions resized2048x1152; not claimed native-pixel inspection. Source remains exact artifact12405680074, /tmp/cluster-pr54-reviewer-candidates/test-results/stories/credit-exchange-{ordinary,recovery}/large/linux-arm64. Terms, named counterparties, reservation/settlement/withdrawal balances, disabled pending state, outsider privacy and return focus readable; two-column offer navigation/details and sticky footer remain within panel. Pending button wraps at word boundary on large, unlike rejected phone midword wrap. No additional visible defect found. Approve these53 scoped compositions subject to production/helper applicability; reinspection required for any changed captures after shared pending-label fix. Total212/212 compositions inspected:210 acceptable,2phone pending-label corrections required. This is scoped regression reference review, not economic-rule or full-release approval.
+
+
+## Reviewer checkpoint — Published PR52 integration run
+
+Independently verified PR52 headcadb33e4c1ed3cac31bdc55738ce13ec0d7ec90f is published. Documentation40146647715 and publish40146647672 successful. Application40146647697 and strict40146647687 still running. Generation job success is not claimed image approval or generation execution. Existing implementer remains healthy and has begun PR53 source/image applicability review; no duplicate dispatch or interruption.
+
+
+## Reviewer handoff — Completed PR54 candidate inspection
+
+Reviewer: all212 original PR54 credit candidate compositions now inspected,210 acceptable and the two already identified phone pending-label images require correction. Large53 review and exact scope/limitations appended to main meta. Preserve source/renderer applicability checks before promotion; fix phone label and inspect every changed capture. Keep52 actual required checks first, then53 and54 forward. Reconcile main meta in next substantive committed/pushed log update. No merge and no blind baseline update.
+
+
+## Reviewer forward inspection — PR53 identity and PR55 retrieval
+
+Viewed exact PR53 actual/expected/diff triple from /tmp/cluster-pr53-identity-originals/test-results/stories/profile-recovery.story-Res-f53b0-arning-and-identity-editing-short/identity-keyboard-return/short/linux-arm64. Actual composition acceptable; only intro sentence raster differs, remaining art/input/portraits/actions intact. Independently Nix-hashed actual SHA256fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9 exactly equals approved52replacement. This supports forward reuse subject to source applicability and actual53checks, not claim green.
+
+Supervisor started bounded selective extraction of live-return-briefing PNG/JSON from exact PR55 generation artifact12410489436 (2132289859 bytes total), run39700599768, into /tmp/cluster-pr55-reviewer-candidates using /tmp/cluster-pr55-extract.py in established Nix. Transfer budget250MB; no reference promotion. Wait for extractor completion before review. PR52 strict job121029307652 independently confirmed live in Exact verification, Nix bootstrap successful; no duplicate run launched.
+
+
+## Reviewer baseline inspection — PR55 briefing desktop
+
+Read PR55 return-briefing.story.spec.ts, including real service twelve/thirteenth ticks, private member checkpoint assertions, complete-history gate, retained reading offset and saved reviewed-period semantics. Exact generated source manifest c8129fec764fb8824bc951751b35aaedc3176c0f clean; spec SHA2565ed55233aeb9259683a8e05fd15833d12f63c13660985bd63cc62beeb5314c99 independently matches PR55head88be06f1. Pinned Linuxarm64 Chromium149/Playwright1.61.1 renderer/font manifest consistent. Production/helper applicability remains for implementer to verify.
+
+Viewed all27 desktop1440x1000 PNGs via9 exact SHA groups under /tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64:011return1 (same2/3);012recover1 (same2/3 and0132/3);013read1;015retain1;015retain2 (same3 and016/017/018/019/0202/3);016save1 (same0191);017reload1;018inspect1;020continue1. All27 compositions acceptable scoped to exact source. Disabled saving before recovery, tick0–12 restored period, keyboard focus on Tick12, New activity without replacing reviewed period, reload tick12–13 single report,236.4credit/confirmed13 economy, focused History after save and no forced repeat briefing are visible and consistent. Partial cards/text at bounded scroll edge are deliberate scrolling; footer actions remain visible. No new visible defect found. Remaining81 phone/short/large captures not yet reviewed. No reference files promoted by supervisor.
+
+
+## Reviewer baseline inspection — PR55 briefing phone
+
+Selective extraction completed224files/183751970bytes transferred, all ZIP entry CRC checked, source artifact12410489436 retained in directory above. Independently SHA-grouped and viewed all27 phone393x852 originals via same9 representative/group pattern as desktop. All27 compositions acceptable for exact source subject to production/helper applicability. Footer remains visible, save label wraps at words, disabled recovery gate clear, Tick12 focus visible before/after new activity, reload shows onlyTick13, Economy values/readable return button and History focus are intact. Bounded scroll clips partial reports or trailing explanatory text normally; no midword label defect found here. Total54/108 PR55 candidates inspected and acceptable,54 short/large still pending. These are regression-reference dispositions only; no promotion by supervisor.
+
+
+## Reviewer handoff — PR55 review preparation
+
+Reviewer: supervisor fetched exact55artifact12410489436 live-return-briefing files to /tmp/cluster-pr55-reviewer-candidates, completed224files183751970bytes. No duplicate download needed. Desktop27 and phone27 independently inspected/acceptable; mainmeta records source/spec hash and duplicate groups. Short/large54 still uninspected. Also independently viewed53sole failed triple and confirmed actual SHA identical to52approved replacement. Continue52required checks then53/54, reconcile latest mainmeta in next substantive committed/pushed log update.
+
+
+## Reviewer baseline inspection — PR55 briefing short and large complete
+
+Independently SHA-grouped both remaining sizes and viewed all54 originals via18 representatives: same9 names/groups per size as desktop. Short1280x720 viewed full native size; large3840x2160 compositions displayed resized2048x1152 by viewer, not claimed native-pixel review. Exact paths live-return-briefing/{short,large}/linux-arm64 under retrieved55artifact directory. All54 compositions acceptable scoped to source applicability. Complete recovery/retained period/New activity/Tick13-only reload semantics remain visible, fixed save/back rail stays readable, inspected Economy and galaxy preserve appropriate state/focus, clipped portions are bounded scroll edges. No new defect found. Total108/108 PR55 candidates inspected and visually acceptable, no unreviewed references approved. Agent should confirm production/helper applicability and carry them forward after52/53/54 are green, with actual strict checks. Reconcile this entry on next substantive log sync; no need to interrupt active52 CI for documentation-only changes.
+
+
+## Reviewer forward-stack evidence — PR56
+
+Exact current56head9cfea0df84b96046b66e9d9b2b4aa1b4019d2e37 basefeat/live-briefing-stories, title Illustrate live construction reservation, completion and cancellation. Application/docs green; strict and generation failed run39700608312. Retained logs /tmp/cluster-pr56-failed.log. Strict24failures:20missingfamilies (8newconstruction,8inheritedcredit,4inheritedbriefing),3shortidentityimage differences (commander-identity002,identity-pending-retry001,session-cancelled-confirmation008),1shortselected-history missing Nacre accord acknowledged heading. Generation126passed8skipped10failed, allshort failures waiting for acknowledged creation/admission/room controls across several stories; not dismissed as baseline failures. No root cause inferred yet. Source diff includes construction recovery/feedback, test clock loader, and new construction stories. Existing52 run remains live; no duplicate launch.
+
+Supervisor bounded-extracting construction ordinary/recovery PNG/JSON from exact56generation artifact12411965142 (2415125120bytes) into /tmp/cluster-pr56-reviewer-candidates using /tmp/cluster-pr56-extract.py,350MBcap. Need completed family manifests before acceptance despite overall generation failure. No baseline promotion or production edits.55all108 candidate inspection completed in prior entry; inform agent at next useful handoff/log sync.
+
+
+## Reviewer verification — PR56 exact failure evidence
+
+Completed selective extraction of strict artifact12409421356 to /tmp/cluster-pr56-failure-evidence:33files6987980bytes, CRC verified. Commander-identity002 and identity-pending-retry001 actual PNGs hash fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9, byte-identical to inspected/approved52actual. Independently viewed session-cancelled-confirmation008 full actual/expected/diff: actual07073d1d72d4351d4e1ec23280ca009c8dfee62f80c2487692bd3dae7ae62f39 has correct retained commander field, portraits and actions; difference is intro raster only. These three actuals acceptable as scoped reference replacements after applicability check. No broader design/rules approval. Selected-history error context remains in Begin a conversation with Nacre accord input disabled and Awaiting acknowledgement/Create conversation disabled; evidence of pending acknowledgement, not merely missing reference. Fresh verification/investigation required; no timeout root cause asserted.
+
+
+## Reviewer handoff — Completed briefing review and forward failure evidence
+
+Reviewer: PR55 all108 compositions independently inspected and acceptable; mainmeta now has final short/large disposition. Confirm production/helper applicability before promotion after52/53/54. PR56 exact strict failure evidence is at /tmp/cluster-pr56-failure-evidence; three identity actuals approved as recorded above, but selected-history pending acknowledgement remains a real execution failure. Construction candidates still being extracted, not approved. Continue existing52 checks and54 label correction; reconcile latest mainmeta into your next substantive committed/pushed logs. No duplicate CI run or merge.
+
+
+## Reviewer baseline inspection — PR56 ordinary construction desktop
+
+Exact generation extraction completed336files334606424bytes with CRC checks, /tmp/cluster-pr56-reviewer-candidates. All8 construction family manifests passed,160PNGs total. Independently hashed PR56 construction spec at9cfea0df:0e71ff1069ed41b3d9a3449d8cecbabbe2bc0c551f4f5988b9e967d4150f654d matching clean generated source7a7b8f7af6d89769f01ca912311cfbdaf4503e38. Pinned renderer as previous55; production/helper applicability still required.
+
+Viewed all18 ordinary desktop1440x1000 compositions via12 exact SHA representatives:010inspect1;010inspect2 (same0112/0122);011reserve1;012reload1;014complete1;014complete2 (same0152/0162);015reservebase1;016cancel1;018cancelled1;018cancelled2 (same0192/0202);019recover1;020keyboard1. All18 acceptable scoped regression references: balance200→131 reservation, completed camp count2, base cancellation queued before69refund, settled147.8, independent player panels private, Develop keyboard focus intact. Sticky footer remains visible; partially visible cards/rules at scroll boundaries are normal bounded scrolling. No economic-rule/fullrelease approval. Remaining142construction captures uninspected.
+
+
+## Reviewer baseline inspection — PR56 ordinary construction phone
+
+Independently SHA-grouped and viewed all18 phone393x852 originals via same12 representatives/groups as desktop. All18 compositions acceptable scoped to applicability: reservation, queued cancellation, refund and recovered ledger remain readable; disable state and fixed commitment rail intact; keyboard return focuses Develop. Partly clipped headings/cards at scrolled panel boundaries are scroll positions, not overflow defects. Total36/160 construction candidates inspected acceptable;124 remain uninspected. No rule/release approval.
+
+
+## Reviewer baseline inspection — PR56 recovery phone and ordinary short
+
+Viewed all22 recovery phone393x852 originals via14 exact SHA representatives (group inventory /tmp/live-construction-recovery-phone-groups.json). All22 acceptable: pending balance remains200, Awaiting receipt wraps cleanly at words, full acknowledgement status and disabled retry remain readable, reload retains pending order and selected camp, accepted queue/settled refund/private independent view and keyboard return intact. No credit-style midword wrap here.
+
+Viewed all18 ordinary short1280x720 originals via same12 names/groups as desktop (inventory /tmp/live-construction-ordinary-short-groups.json). All18 acceptable: queued/cancelled/settled state and fixed quote/action rail remain readable; focused Develop visible. Partial headings/cards at bounded scroll top are normal scroll state. Total76/160 construction candidates inspected and acceptable,84 large ordinary plus desktop/short/large recovery remain uninspected. No production/helper applicability or rule/release approval implied.
+
+
+## Reviewer baseline inspection — PR56 ordinary large complete
+
+Viewed all18 large3840x2160 ordinary originals via same12 representatives/groups (inventory /tmp/live-construction-ordinary-large-groups.json). Viewer downsized full compositions to2048x1152; not a native-pixel claim. All18 acceptable: four development cards/quotes remain legible at intended native dimensions, queue/status/refund progression and private independent panel consistent, fixed action rail and keyboard Develop focus intact. All72 ordinary plus22 recovery phone now inspected/acceptable:94/160. Remaining66 recovery desktop/short/large uninspected. Preserve source/helper applicability before promotion.
+
+
+## Reviewer baseline inspection — PR56 recovery desktop
+
+Viewed all22 desktop1440x1000 originals via14 exact SHA representatives:010inspect1;010inspect2 (same0122/0132/0152/0162);012pending1;013recover1;015reserve1;016reload1;018complete1;018complete2 (same0192/0202);019reservebase1;020cancel1;022cancelled1;022cancelled2 (same0232/0242);023recover1;024keyboard1. All22 acceptable scoped compositions: pending200 balance/selected camp survives reload, Awaiting receipt and full status readable, accepted/reserved versus settled outcomes clear, refund69 and independent privacy panel consistent, focused Develop return intact. Total116/160 construction candidates inspected/acceptable,44recovery short/large still uninspected.
+
+
+## Reviewer code inspection — PR54 label correction
+
+Read local commit1e63b518499238d4896fd103ed932340cf7ab5bf in /tmp/cluster-pr54-credit-review. Three pending credit button labels changed to Awaiting receipt; receipt/domain semantics untouched. Two existing story checks retain bounds checks and additionally demand one text rectangle. No weakened timeout/privacy/conservation assertions observed. This addresses identified visual defect in code, pending fresh rendered inspection and strict CI; no new baseline approved from code alone.
+
+
+## Reviewer handoff — Construction review checkpoint
+
+Reviewer: exact PR56 construction extraction finished at /tmp/cluster-pr56-reviewer-candidates,336files334606424bytes, all8 family manifests passed. I inspected116/160: all72 ordinary sizes plus recoveryphone22 and recoverydesktop22 acceptable scoped references. Recoveryshort/large44 remain UNINSPECTED. Mainmeta contains exact groups/dispositions and PR54 local1e63b518 code review (sound label correction, fresh rendering still required). Please reconcile latest mainmeta in next substantive commit/push; no duplicate downloads. Keep52/53/54 publication order and current52 run first.
+
+
+## Reviewer baseline inspection — PR56 recovery short and large complete
+
+Viewed all22 recovery short1280x720 and all22 recovery large3840x2160 originals via the same14 SHA representatives/groups recorded for recovery desktop. Large full compositions were displayed at2048x1152; not a native-pixel inspection claim. The initial oversized tool output for the final7 large representatives was truncated and was not counted; all7 were subsequently re-opened successfully in smaller batches. All44 acceptable scoped references: pending200 balance and acknowledgement status readable, selected camp survives recovery, reservation and cancellation remain distinct from settlement,69 refund/147.8 settled balance retained, independent219.1 panel consistent, and Develop keyboard focus visible. All160/160 construction compositions now inspected and acceptable, subject to production/helper/source applicability before promotion. This is scoped regression approval, not economic-rule or full-release approval. PR52 application and strict-story checks remain pending on cadb33e4; no duplicate run started.
+
+
+## Reviewer handoff — Construction inspection complete
+
+Reviewer: PR56 construction review now covers all160/160 captures from exact artifact12411965142 at /tmp/cluster-pr56-reviewer-candidates. Remaining44 recovery short/large inspected and acceptable; mainmeta records groups and downscaled large-view limitation. Confirm production/helper/source applicability before promotion in stack order. Credit54 still needs fresh rendered inspection after label fix. Reconcile latest mainmeta in next substantive committed/pushed logs. Continue existing52 checks, then53/54; no merge or duplicate CI run.
+
+
+## Reviewer source applicability — PR56 construction
+
+Fetched exact clean artifact source7a7b8f7af6d89769f01ca912311cfbdaf4503e38 without switching or changing agent files. Full git tree diff against PR56head9cfea0df84b96046b66e9d9b2b4aa1b4019d2e37 is empty (both --stat and --name-only). Thus entire production/helper/spec/assets/dependency/config tree matches the reviewed generation source, not merely the spec hash. All160 construction reference approvals apply to that current56 source. Recheck any intervening stack fixes for changed rendered states before promotion. Exact PR54 local0ab45b7a run failed phone pending-label geometry at line382 before capture; this is a genuine unpassed validation, and agent is actively investigating the trace. No fresh54 approval.
+
+
+## Reviewer source applicability — PR55 briefing
+
+Fetched exact clean artifact sourcec8129fec764fb8824bc951751b35aaedc3176c0f. Full git tree diff to PR55head88be06f1eb28e6073c91be0385ffef8623d590a6 is empty (--stat and --name-only). All108 previously inspected briefing captures therefore match the complete production/helper/spec/assets/dependency/config tree at that head. Recheck intervening stack fixes before promotion. This supplies the previously outstanding applicability evidence, not a new screenshot inspection or CI pass.
+
+
+## Reviewer handoff — Briefing source confirmation
+
+Reviewer: PR55 source applicability also independently confirmed: fetched c8129fec764fb8824bc951751b35aaedc3176c0f, full tree diff to88be06f1eb28e6073c91be0385ffef8623d590a6 empty. All108 inspected briefing candidates apply to that complete tree; recheck intervening fixes. Mainmeta has this finding plus56 completion/source confirmation; please reconcile and commit/push them with next substantive checkpoint. No need repeat these tree comparisons.
+
+
+## Reviewer forward evidence — PR57 fleet formation
+
+PR57head1ba7cac0d4e8ac92dabe4de0e6ea2e7501b7248f basefeat/live-construction-stories, title Illustrate live fleet formation and conserved disbanding. Application and documentation checks succeeded; strict/generation failed run39700616583. Retained /tmp/cluster-pr57-failed.log. Strict110passed8skipped30failed:23 missing reviewed families (20 inherited minus briefing short, plus4fleet),7 short execution failures (history,maintenance,receipt,briefing,selected-history,two session cases). Generation125passed8skipped15failed, all short; fleet short failed, so do not assume a complete fourth family. No root cause inferred. Bounded selective extraction of artifact12408071600 (2535187431bytes) into /tmp/cluster-pr57-reviewer-candidates in progress, session81395, script/tmp/cluster-pr57-extract.py.127selected PNG/JSON files; no approval yet. Desktop family manifest passed,20PNGs, clean sourcec2f919bce69c167c0f0a7247063de7556ee07c34 specshaebd68226fa2090476b4047efac4d766d6d00feee318b5a1a349d7099bd03751e. Source code diff read for fleet test clock: confined to demo Functions Emulator, named fleet story prefix, preserves other campaigns and fails closed on reducer signature drift. No production feature delta in57. Need image inspection and all family manifests before baseline decisions.
+
+
+## Reviewer code inspection — PR54 measured label padding
+
+Read3f92a71cd78ecaf50820ebef062bc1f109ee40ea CreditOffers change: narrow-container commitment button horizontal padding8px→6px; vertical12px unchanged. Retains label and assertions from1e63b518. Agent measured original147.5px button/129.5px available content versus131.44px text. Code correction is consistent with measured failure; fresh rendered verification still required and is running. No baseline approved from this code inspection.
+
+
+## Reviewer fresh visual inspection — PR54 corrected phone label
+
+Independently opened full393x852 local phone originals at /tmp/cluster-pr54-credit-review/test-results/stories/credit-exchange-recovery/phone/darwin-arm64/013-uncertain-commitment-1-exchange-sender.png and014-reload-pending-1-exchange-sender.png after3f92a71c padding correction. Both show Awaiting receipt on one contained line; retained10.001/2.002 terms,200available, disabled button, full Awaiting acknowledgement status and focus are visible. Original midword-wrap defect corrected in these local rendered captures. This accepts the local visual correction only; exact Linux replacement references still need fresh inspected output.
+
+
+## Reviewer PR57 extraction checkpoint
+
+Selective extraction completed127files159772239bytes with ZIP CRC verification. Exactly60PNG fleet candidates:20each phone/desktop/large; all3 family manifests passed. No short family manifest or complete short images, consistent with short generation execution failure. Full source tree diff between clean artifactc2f919bce69c167c0f0a7247063de7556ee07c34 and57head1ba7cac0d4e8ac92dabe4de0e6ea2e7501b7248f is empty. These60 remain UNINSPECTED; no fleet baseline approval yet.
+
+
+## Reviewer baseline inspection — PR57 fleet complete available families
+
+Independently viewed all60 available fleet originals (20each phone393x852,desktop1440x1000,large3840x2160) via13 exact SHA representatives per size. Inventories /tmp/cluster-pr57-{phone,desktop,large}-groups.json:010inspect1;010inspect2 (same0112/0122/0132);011choose1;012reserve1;013reload1;015formed1;015formed2 (same0162/0172/0182);016map1;017disband1;018reload1;020disbanded1;020disbanded2 (same0212);021recover1. All60 acceptable scoped references at source verified in prior entry: invalid21infantry disabled with capacity message,20valid,18available/2reserved fighters and0available/20reserved infantry, formed2/20 fleet, disband queued versus completed clear, final22/22forces and fleet0, keyboard focus restored, independent private panel consistent. Phone partial headings/buttons at scroll boundaries are bounded scrolling. Large full compositions were downscaled to2048x1152; not native-pixel inspection. Short family absent/unapproved, requires fresh successful generation. No economic-rule/release approval implied.
+
+
+## Reviewer live result — PR52 cadb strict check
+
+Run40146647687/job121029307652 completed failure01:03:34UTC25Oct. Exact log/tmp/cluster-pr52-cadb-failed.log:111passed,1failed identity-validation short001sign-in screenshot. This is one of the two previously inspected/promoted references; do not assume stability or blindly alternate baseline. Agent actively retrieving exact new artifact. Application check still running. Need inspect expected/actual/diff and compare hashes to prior variants before next action.
+
+
+## Reviewer exact artifact — PR52 raster alternation established
+
+Bounded extraction of artifact12581856096 completed3PNGs2606597bytes CRC checked under /tmp/cluster-pr52-cadb-review. Independently viewed full expected/actual/diff. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 is byte-identical to the ORIGINAL baseline replaced bycadb; expectedfb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9 is the previously approved actual. Diff only intro text raster. This proves cross-run alternation between the two observed variants despite earlier96-observation probe stability; do not infer stable baseline from that probe. No blind reversion or tolerance/masking approval. Diagnose and fix fractional text layout/paint causally, then inspect stabilized output and rerun exact checks.
+
+
+## Reviewer handoff — PR52 exact alternation
+
+Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
+
+
+## Reviewer candidate code check — PR52 whole-pixel leading
+
+Read published investigation sourceeee5d6d3b05fb7aed304658a2e966e9635d1bd6e (no PR, PR52head unchanged). Only app style correction is identity intro28px line-height inside existing min-width701/max-height760 media query. Focused runner selects exactly2existing real short identity tests, asserts2tests2files, retains original assertions/timeouts, retries0, update-snapshotsnone, generates only candidates. Branch-only request/workflow bound to source parent/executor; Nix pinned ARM renderer. New live run40149691891 executor01aaf4e556aad8808f6fcef91ef439ff5f04d046 confirmed in_progress. No fix/stability claim from code alone; no required verification weakened. Independently compared retained current validation and keyboard-return .layout.json: entire parsed JSON equal. This supports paint variability despite matching recorded post-capture geometry; does not prove fractional leading as cause. Await real pinned-renderer output for visual inspection.
+
+
+## Reviewer fresh baseline inspection — PR52 whole-pixel leading
+
+Run40149691891 succeeded; artifact12582088259 already retrieved by implementer at /tmp/cluster-pr52-leading-linux/originals. Independently viewed all11 full1280x720 PNGs across identity-validation6 and identity-keyboard-return5. All acceptable scoped references: invalid draft and selected portrait retained, validation/focus readable, corrected identity saved/recovered, keyboard learning and return states preserved. Independently compared bytes against current PR52 checkout references:9 identical; only validation001 and keyboard004 differ, both SHA87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129. Both match original previously inspected raster. Approval applies together with reviewed28px CSS correction, not a blind baseline reversal. Focused generation proves these two journeys passed and produced matching sign-in rasters; does not prove full-suite stability. Proceed with minimal CSS plus2 reference changes and provenance/logs to PR52, then required strict/application checks; retain unchanged exact comparison requirements.
