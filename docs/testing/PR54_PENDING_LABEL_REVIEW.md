@@ -13,3 +13,7 @@ Source/spec checks establish the original212 candidates are complete eight gener
 ## First local setup failure retained
 
 Port9150 is owned by unrelated todo emulator PID48881, cwd/private/tmp/todo-pr42-rebase.5o46vA; not stopped. Source default9150 was therefore not used. First external configuration selected task-owned19150 successfully, but Functions config joined the supplied absolute path beneath the configuration directory. Functions failed to load, and the fully anchored Playwright grep matched no tests. Zero stories/captures executed; this is an orchestration failure, not credit behavior acceptance. Original run/config/log remain /tmp/cluster-pr54-pending-1e63b518. Correct with relative source/rules paths resolved from the external config directory, and validate the exact four-case selection with --list before another execution. No deadline or assertion changes.
+
+## Project-root correction
+
+Second setup at /tmp/cluster-pr54-pending-ea6a28c9 stopped before tests because pinned Firebase Config.path rejects rules outside its project directory. Retain that failure. Use normal repository firebase.json with explicit task-owned Firestore websocket19150, consistent with established successor configuration; no emulator state, service semantics, or test limits change. The four-case collection was validated before execution.
