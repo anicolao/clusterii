@@ -3,6 +3,9 @@
 : "${containerd:?}" "${rootShell:?}" "${engine:?}" "${imageArchive:?}" "${imageTag:?}" "${imageConfig:?}" "${imageDigest:?}" "${nixCommand:?}"
 case "${1:-}:${2:-}" in
   stories:verify|stories:generate|application:) ;;
+  recovery:scene-strict)
+    [ "$#" -eq 4 ] || exit 2
+    case "$3:$4" in observation:phone|observation:desktop|observation:large|observation:short|chart:phone|chart:desktop|chart:large|chart:short) ;; *) exit 2 ;; esac ;;
   *) echo "Usage: cluster-ci-renderer stories verify|generate OR application" >&2; exit 2 ;;
 esac
 : "${RUNNER_TEMP:?GitHub runner scratch directory required}"
