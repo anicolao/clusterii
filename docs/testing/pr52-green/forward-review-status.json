@@ -1,0 +1,46 @@
+{
+  "publicationOrder": [
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "pr52": {
+    "head": "cadb33e4c1ed3cac31bdc55738ce13ec0d7ec90f",
+    "applicationRun": 40146647697,
+    "strictRun": 40146647687,
+    "lastObserved": "in progress; no duplicate run"
+  },
+  "pr54": {
+    "originalCandidates": 212,
+    "reviewedAcceptable": 210,
+    "requiredPhoneCorrections": 2,
+    "localSource": "3f92a71cd78ecaf50820ebef062bc1f109ee40ea",
+    "measuredCorrection": "Pending label131.4375px needs more than129.5px available; compact padding8\u21926px preserves147.5px button and one-line containment assertion",
+    "firstBehaviorFailure": "/tmp/cluster-pr54-pending-0ab45b7a",
+    "currentVerification": "/tmp/cluster-pr54-pending-3f92a71c",
+    "published": false
+  },
+  "pr55": {
+    "reviewedAcceptable": 108,
+    "artifact": 12410489436,
+    "path": "/tmp/cluster-pr55-reviewer-candidates",
+    "captureSource": "c8129fec764fb8824bc951751b35aaedc3176c0f",
+    "applicableHead": "88be06f1eb28e6073c91be0385ffef8623d590a6",
+    "treeComparison": "Reviewer independently verified empty full-tree diff; do not duplicate",
+    "interveningStackApplicability": "required before promotion"
+  },
+  "pr56": {
+    "reviewedAcceptable": 160,
+    "artifact": 12411965142,
+    "path": "/tmp/cluster-pr56-reviewer-candidates",
+    "captureSource": "7a7b8f7af6d89769f01ca912311cfbdaf4503e38",
+    "applicableHead": "9cfea0df",
+    "treeComparison": "Reviewer independently verified empty full-tree diff; do not duplicate",
+    "interveningStackApplicability": "required before promotion",
+    "separateExecutionFailure": "Selected-history pending acknowledgement unresolved"
+  },
+  "promotedByThisReport": false,
+  "largeReviewLimitation": "Reviewer inspected downscaled full composition; no native-pixel typography measurement claimed"
+}
