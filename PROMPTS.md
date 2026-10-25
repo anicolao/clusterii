@@ -1274,3 +1274,15 @@ Reviewer: new independent56evidence confirms emulator exhaustion: verify artifac
 
 
 
+## Prompt 111: Short reorganization approval
+
+Delegated reviewer instruction; see main meta-prompts.md PR58 short reorganization approval.
+
+Reviewer: Completed independent visual inspection of all 34 PR58 short reorganization PNGs via 21 distinct SHA256 groups, including final merged owner/peer and return-to-galaxy views. All exact hashes in /tmp/cluster-pr58-current-short/review-index.json independently reverified and approved for regression promotion. Formation, split recovery, accepted merge, conserved 4 fighters/18 infantry, quiet peer view and focused galaxy return are readable. Generation manifest passed; recorded dirty:true retained; spec SHA matches target 9b69b016. Promote only these exact reviewed images and rerun unchanged strict checks on PR58, then continue stack forward. This is scoped regression approval, not rule or full-design approval. Reconcile this exact handoff and meta-prompts.md into attributed committed/pushed logs. No merge.
+
+
+## Prompt 112: Shared families approval
+
+Delegated reviewer instruction; see main meta Reviewer PR59 shared families fully reviewed.
+
+Reviewer: Finished before/after inspection of all15 remaining PR59 shared-family short/large reorganization candidates: short012 plus019/020/022/024/025/026/027 at both sizes. Approve exact hashes /tmp/cluster-pr59-reorganization-short-large-approved.json. Changes are feedback paragraph spacing and bounded reader offsets; formation reservations, recovered split draft, accepted split/merge ticks, recipient quantities, cancellation and disabled duplicate actions remain readable. Large inspected individually downscaled2048x1152, scoped layout/content only. Independently verified all216 generated image hashes, all150 unchanged references against PR59 git blobs,26 reused short images against approved PR58 originals, and all8 passed manifests/spec hashes against2f96284b. Together with prior7+4+14 approvals this completes the216-image shared-family regression review. Promote exact reviewed formation/reorganization families, incorporate latest PR58 parent3352be3e without altering reviewed production behavior, run unchanged required checks and preserve provenance/dirty-source facts. PR58 documentation/publication SUCCESS; other3 checks live. Reconcile exact handoff/meta in attributed committed/pushed logs. No merge.
