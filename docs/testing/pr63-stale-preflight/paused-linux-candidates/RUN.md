@@ -1,0 +1,7 @@
+# Completed bounded paused-travel candidate observation
+
+Run40188998948/job121155771745 succeeded in12m14s; four complete journeys passed in5.0m, original limits preserved. Artifact12597104857 is233175820bytes, SHA25692c1b228e03bf201b653bb03bde8119975ca9ec31dbf2683637afce061a9454e, expires2026-11-24T11:40:29Z. One full retrieval; exact API size/digest, full ZIP CRC and selected path/symlink checks passed. Original archive retained at /tmp/cluster-pr63-paused-linux/artifact.zip. Complete originals/narratives/layouts/manifests are retained beneath /tmp/cluster-pr63-paused-linux/originals/test-results/stories/paused-fleet-travel/.
+
+136 images,34 per viewport;4 passed generation manifests;88 distinct PNG hashes. Story bytes/spec hashes match08387260; executor434849e8 production/helper/dependency/config diff empty. Pinned renderer matches inherited reviewed same-platform metadata by viewport. Every manifest retains dirty:true. Generation-only request/renderer evidence writes are known; no complete runtime dirty-file inventory or fabricated clean attestation. All images remain unreviewed/unapproved. No references changed, activePR63 remains9050d65e.
+
+Full original run log retained at /tmp/cluster-pr63-paused-candidates.log, SHA25624cfe2092b403955bfdbeaf66aaf978b45b726cb8d958b6acea74dce40873a49. Download and extraction monitored2359296KiB disk floor; fresh post-extraction free12746532KiB, cause of increase unknown. No cleanup. No retries or second request. PR62 approved invitation promotion remains isolated until existing strict40185322011 terminal.
