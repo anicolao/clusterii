@@ -1,0 +1,55 @@
+name: Bounded fleet-contact candidate generation
+on:
+  push:
+    branches: [investigate/pr69-contact-candidates]
+    paths: [.github/recovery/pr69-contact-candidates-01.json]
+permissions:
+  contents: read
+concurrency:
+  group: cluster-pr69-contact-candidates
+  cancel-in-progress: false
+jobs:
+  scene:
+    if: github.repository == 'anicolao/clusterii'
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        family: [contacts]
+        viewport: [phone, desktop, large, short]
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate exact source request and references
+        run: node scripts/contact-candidates-request.mjs
+      - name: One complete fleet-contact candidate journey
+        timeout-minutes: 20
+        run: nix run path:./nix#ci-renderer -- recovery contact-candidates '${{ matrix.family }}' '${{ matrix.viewport }}'
+      - name: Preserve strict result and first failure
+        if: always()
+        timeout-minutes: 3
+        uses: actions/upload-artifact@v4
+        with:
+          name: contact-candidates-${{ matrix.family }}-${{ matrix.viewport }}-${{ github.sha }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            ci-evidence/recovery-request/
+            ci-evidence/contact-candidates/
+            ci-evidence/nix-renderer/
+            test-results/stories/
+            firestore-debug.log
