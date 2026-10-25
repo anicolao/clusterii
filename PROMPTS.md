@@ -2012,3 +2012,9 @@ Reviewer: Completed independent full candidate diff review for66 run40227118604.
   }
 ]
 
+
+## Prompt 153: Bounded failure reproduction
+
+Delegated reviewer instruction, attributed to the reviewer; see main meta PR66 two-short-journey reproduction request.
+
+Reviewer: Continue priority66 now; independent trace read confirms first-device Google scripts200, second-device api.js?onload request in0-trace.network status-1 timings-1 at teardown, not proof of cause. Independently viewed briefing triple and recorded hold in meta. Prepare one guarded bounded Nix/Linux strict run of BOTH complete short-viewport return-briefing and session-recovery journeys at exactactive66 bb58f85a, unchanged production/spec/helpers/renderer/baselines/deadlines,retries0,no snapshot update. Preserve full step captures/traces/network and manifests even on failure, exact target/ref provenance, and disk reserve. Do not rerun full suite yet or replace baseline from failed screenshot. Compare briefing017 repeat bytes with expected b716bbd9873a9c0ecb12b38d8d74f741cce50164e97286b8e3c20781e1288fab and failed eddc7a25991340c8b7cf462d6ed12ccd61bcac0bb551ca990bdf9201ddd18d87. Use outcome to diagnose reproducibility before source/renderer/auth changes. Preserve67 staged merge. Record attributed handoff and push request/evidence logs. No merge.
