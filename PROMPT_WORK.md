@@ -423,3 +423,7 @@ Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Bound CI emulator lifetime by viewport while preserving failed artifacts, exact assertions and interruption ownership.
 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Separate traced history setup into named acknowledged controls with unchanged per-control and total test deadlines.
+
+Prompt 135 | 7cd75987fbefb4bfcecdcf686dc564669af359afa058bd4d8e66e7eddd2f530a | Integrate reviewed PR63 three-reference maintenance correction into PR64 while preserving both exact prompt histories and all source.
+
+Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Prepare isolated PR65 on reviewed PR64, retaining exact histories/references before diagnosing variable observation inputs.
