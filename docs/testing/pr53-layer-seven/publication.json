@@ -1,0 +1,46 @@
+{
+  "pr": 53,
+  "head": "3be6f22d17a67960762892fec532a3005862d2fa",
+  "application": 40160719083,
+  "strict": 40160719097,
+  "documentation": 40160719116,
+  "publication": 40160719087,
+  "status": "New required checks started; prior cd7ed5fd strict failed109passed7failed8skipped. Seven exact reviewer-approved references only; no production or threshold changes.",
+  "validation": "21 independent hashes and extraction copies; seven exact-head expected blobs. Prompt hook passed. Raw retained CI log intentionally retains whitespace; diff-check reports original log whitespace, not source defects.",
+  "propagatedHeads": {
+    "feat/live-sharing-stories": "3be6f22d17a67960762892fec532a3005862d2fa",
+    "feat/live-credit-stories": "f8fa7f5f9ed8d380ac5337971314356115191e4b",
+    "feat/live-briefing-stories": "acc0b41435c2c5dddacd83518e5c9cb46007fd81"
+  },
+  "pr55Runs": [
+    {
+      "conclusion": "",
+      "databaseId": 40160826949,
+      "headSha": "acc0b41435c2c5dddacd83518e5c9cb46007fd81",
+      "status": "queued",
+      "workflowName": "Illustrated stories"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40160826928,
+      "headSha": "acc0b41435c2c5dddacd83518e5c9cb46007fd81",
+      "status": "queued",
+      "workflowName": "Application checks"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40160827004,
+      "headSha": "acc0b41435c2c5dddacd83518e5c9cb46007fd81",
+      "status": "queued",
+      "workflowName": "Documentation checks"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40160826955,
+      "headSha": "acc0b41435c2c5dddacd83518e5c9cb46007fd81",
+      "status": "pending",
+      "workflowName": "Publish review build"
+    }
+  ],
+  "integrationChecks": "All seven Git blob hashes verified at all three heads; staged and immutable-parent prompt checks pass. Normal merges preserve parent/child histories. No assertion, workflow or production change."
+}
