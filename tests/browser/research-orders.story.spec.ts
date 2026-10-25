@@ -610,6 +610,12 @@ test("Live research orders preserve choices and acknowledge switches", async ({
               element.contains(document.activeElement),
             ),
           ).toBe(true);
+          // The accepted-list reading helper can scroll the still-focused
+          // commitment above the aperture. Read both using nearest alignment,
+          // without moving focus or changing the acknowledged state.
+          await commitment.evaluate((element) =>
+            element.scrollIntoView({ block: "nearest" }),
+          );
           await paintedContained(commitment);
           await paintedContained(owner.locator(":focus"));
           await paintedContained(

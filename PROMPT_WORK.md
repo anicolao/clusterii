@@ -562,3 +562,5 @@ Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | A
 Prompt 88 | bb120a0d9dc14b3bc56b7b33026a3eca8575491952cebafa3e027cf28df1f06b | Correct reproduced100px restored draft clipping with bound-input reveal ownership and shared background suppression.
 
 Prompt 88 | bb120a0d9dc14b3bc56b7b33026a3eca8575491952cebafa3e027cf28df1f06b | Scope new row visibility assertion to open panel states after retained closed-panel assertion placement failure.
+
+Prompt 89 | 3141e13ce15ef631f9c235e455dfea25232f167226405e9671332cb6f38c05ce | Correct demonstrated5px focus clipping in accepted-list reading view while asserting full commitment and order-list bounds.
