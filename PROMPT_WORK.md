@@ -1019,3 +1019,5 @@ Prompt 353 | dcade87c4eb9c8f708251fad2e451f8b1d001a5ae12e66c1139afcdf4dc447a4 | 
 Prompt 355 | 94a6422526369864d8409e26247f628eef979cca70dde4facdc39a435db7c998 | Retain successful exact-head PR65 publication and hosted asset verification, preserving live required checks.
 
 Prompt 357 | 432f16a93199cb94f60d520244e4579e410902ede780367b41298bca8e00eaaa | Verify and retain complete 56-image Linux observation artifact and review index, preserving phone label hold and live CI.
+
+Prompt 358 | 42e5d58b0f611cfbe5e2c40ab0c06168bf6228a037006c044b9fcb7099b2b9d4 | Retain corrected four-size observation originals, verified source/renderer identity and complete 35-changed/21-unchanged comparison.
