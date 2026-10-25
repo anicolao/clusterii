@@ -4539,3 +4539,15 @@ Pages40163030217/deploy121078700345 transitioned queued->running->completedSUCCE
 Reviewer requested failed-job-only reruns of publication40160719087(PR53) and40161305387(PR56), both commands acceptedexit0. These were terminalfailed runs and servingconditionchanged; no live capture request restarted, no weakened gates. Handoff: preserve these publication reruns; do not request duplicates. Prioritize queued53identity results as before. Reconcile exact served evidence and reruns into attributed logs/push.
 
 Publication rerun follow-up: authoritative API shows53run40160719087 attempt2 completedCANCELLED while56run40161305387 attempt2 PENDING. Both share pages-tree concurrency; simultaneous pending requests likely replaced53. Do not claim53rerunlive. Serialize recovery: preserve56pending, then rerun terminalcancelled53 only after56is no longer pending (prefercompleted) to avoid another pending replacement. This follow-up supersedes earlier expectation that both reruns stayed queued.
+
+## Reviewer publication concurrency dependency
+
+Previous turn progressed exact served53/56verification and terminal publication retries, then corrected cancellation ordering. Fresh publish.yml run inventory identifies only two nonterminal runs in returned100:57currentheadcfe1b435 run40165038542 QUEUED,56run40161305387attempt2 PENDING.57publishjob121084385750 is queued with no runner. This identifies the preceding publication holding pages-tree; preserve it, then56, then retry53 after56terminal as already handed off.53identity40163401924 stillqueued;58generation40161964860 stillin_progress. Agent acknowledged corrected serialized sequence, no duplicate instruction or restart. Current turn is verified wait with dependency diagnosis.
+
+## Reviewer PR56 application gate success
+
+Fresh PR rollup and exact job121073258476 confirm56application40161305382 completedSUCCESS at2026-10-25T05:31:11Z on99c40f39.53through56application gates nowgreen;56strict/generation stillrunning, publication recoverypending, no fullygreenPRafter52 claimed.61travel121078226900 nowrunning Four complete fleet-travel candidate journeys; artifactlist stillempty. Prior turn verifiedspecificlivewait; this turn records new56application evidence. Preserve all handles and serialize publication57->56->53 as established. Reconcile with next substantive push.
+
+## Reviewer PR61 candidate run completed
+
+Previous turn verifiedlivewait.61travel40162979064/job121078226900 transitioned through Preserve bounded observation evidence to completedSUCCESS. Artifact12588836768 recovery-travel-4ce46226ba857d8b242d3a0f6d7f496da21d5989-1 size194616824 unexpired, now available. No screenshot approval from run status. Reviewer handoff: retrieve once under Nix, validate full artifact SHA/CRC/source, retain originals at stable/tmp path, group exact matches against prior reviewed travel captures and inspect every new/changed image; report index/root for independent reviewer. Prioritize53ifits candidate appears, preserve existing run handles and serialized publication57->56->53. Commit/push attributed logs. No merge or weakened checks.

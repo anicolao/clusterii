@@ -1,0 +1,2152 @@
+[
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "b8234ce97727ab23ea01701affce199be8586cd271cc4291e32a8873f25c2491",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "b8234ce97727ab23ea01701affce199be8586cd271cc4291e32a8873f25c2491",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "b8234ce97727ab23ea01701affce199be8586cd271cc4291e32a8873f25c2491",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "010-inspect-formation-2-independent-marshal.png",
+    "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "011-choose-complement-1-fleet-marshal.png",
+    "sha256": "7d795da3c2d2f76a24fa37e285c5d2453cf037f91dc410557248a7c46e9207cb",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "7d795da3c2d2f76a24fa37e285c5d2453cf037f91dc410557248a7c46e9207cb",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "7d795da3c2d2f76a24fa37e285c5d2453cf037f91dc410557248a7c46e9207cb",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "011-choose-complement-2-independent-marshal.png",
+    "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "1679e83a1e059deff94e81cc06d26e5396ce7f79d000af63d9fff7b8037ccecf",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "changed",
+    "previouslyInspectedExactMatches": []
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "012-reserve-formation-2-independent-marshal.png",
+    "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "013-reload-formation-1-fleet-marshal.png",
+    "sha256": "f6a0e6f3eb0c05f3f0dd13108ed22b16d59030f27526445bcbec119ef6190510",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f6a0e6f3eb0c05f3f0dd13108ed22b16d59030f27526445bcbec119ef6190510",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f6a0e6f3eb0c05f3f0dd13108ed22b16d59030f27526445bcbec119ef6190510",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "013-reload-formation-2-independent-marshal.png",
+    "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ccca7db71e24aa10481a51e99541dd5828e05e467cc1ae27e7c79e41cac2143a",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "a8ce0c7e047e81cce372b7dc5bd20e790114495295c64d150948b9656a366406",
+    "step": "formed-fleet",
+    "player": "Fleet marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "a8ce0c7e047e81cce372b7dc5bd20e790114495295c64d150948b9656a366406",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "a8ce0c7e047e81cce372b7dc5bd20e790114495295c64d150948b9656a366406",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "015-formed-fleet-2-independent-marshal.png",
+    "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+    "step": "formed-fleet",
+    "player": "Independent marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "016-open-route-1-fleet-marshal.png",
+    "sha256": "96d8c3d455c61e37ed604aa2c8debfa40e8a74d63b9febe63e01b8e9417a46bd",
+    "step": "open-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "96d8c3d455c61e37ed604aa2c8debfa40e8a74d63b9febe63e01b8e9417a46bd",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "96d8c3d455c61e37ed604aa2c8debfa40e8a74d63b9febe63e01b8e9417a46bd",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "016-open-route-2-independent-marshal.png",
+    "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+    "step": "open-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "aef666d401592060ae7c94f78c6bae55f4454b026fe3a899265e435e238f795d",
+    "step": "choose-waypoint",
+    "player": "Fleet marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "aef666d401592060ae7c94f78c6bae55f4454b026fe3a899265e435e238f795d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "aef666d401592060ae7c94f78c6bae55f4454b026fe3a899265e435e238f795d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+    "step": "choose-waypoint",
+    "player": "Independent marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "55530c813532938df000f43af2dc6b3c81133e893efb4048911e08e16de03d29",
+    "step": "reject-distant-leg",
+    "player": "Fleet marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "55530c813532938df000f43af2dc6b3c81133e893efb4048911e08e16de03d29",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "55530c813532938df000f43af2dc6b3c81133e893efb4048911e08e16de03d29",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+    "step": "reject-distant-leg",
+    "player": "Independent marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "019-repair-route-1-fleet-marshal.png",
+    "sha256": "0e798bf97f00fed0af22510b24b83e477a372e4b860837469da7cb6460a8dce1",
+    "step": "repair-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "0e798bf97f00fed0af22510b24b83e477a372e4b860837469da7cb6460a8dce1",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "0e798bf97f00fed0af22510b24b83e477a372e4b860837469da7cb6460a8dce1",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "019-repair-route-2-independent-marshal.png",
+    "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+    "step": "repair-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "020-accept-route-1-fleet-marshal.png",
+    "sha256": "ee532d6f9c983f4a88c6c2f60e641696a452c1598f1dab568f12ab916817064f",
+    "step": "accept-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ee532d6f9c983f4a88c6c2f60e641696a452c1598f1dab568f12ab916817064f",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ee532d6f9c983f4a88c6c2f60e641696a452c1598f1dab568f12ab916817064f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "020-accept-route-2-independent-marshal.png",
+    "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+    "step": "accept-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "021-recover-route-1-fleet-marshal.png",
+    "sha256": "330ca113756b511e4424c7006ec1abd0932f63aeed07958042274b6fc4daa127",
+    "step": "recover-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "330ca113756b511e4424c7006ec1abd0932f63aeed07958042274b6fc4daa127",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "330ca113756b511e4424c7006ec1abd0932f63aeed07958042274b6fc4daa127",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "021-recover-route-2-independent-marshal.png",
+    "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+    "step": "recover-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "f7574a50834f4e26a418f0c9c2fafeefa963f3a56b4865b558db358f7ff9f26c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "023-traveling-1-fleet-marshal.png",
+    "sha256": "150bb80e64084799836554a57cfd7b1c6d61ecd4b52c83aa8783fb76eb52949f",
+    "step": "traveling",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "150bb80e64084799836554a57cfd7b1c6d61ecd4b52c83aa8783fb76eb52949f",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "150bb80e64084799836554a57cfd7b1c6d61ecd4b52c83aa8783fb76eb52949f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "023-traveling-2-independent-marshal.png",
+    "sha256": "ffaf5e3f7114bfcebb19bf0fb63b03596efdf2d921e8bb9a2fd9e02cf859acb1",
+    "step": "traveling",
+    "player": "Independent marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ffaf5e3f7114bfcebb19bf0fb63b03596efdf2d921e8bb9a2fd9e02cf859acb1",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ffaf5e3f7114bfcebb19bf0fb63b03596efdf2d921e8bb9a2fd9e02cf859acb1",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "025-arrival-report-1-fleet-marshal.png",
+    "sha256": "8f7e9155ba1d81dc41c0b1cfe456817685925757103f72e553e7e117367d6c4d",
+    "step": "arrival-report",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "8f7e9155ba1d81dc41c0b1cfe456817685925757103f72e553e7e117367d6c4d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "8f7e9155ba1d81dc41c0b1cfe456817685925757103f72e553e7e117367d6c4d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "025-arrival-report-2-independent-marshal.png",
+    "sha256": "bf89ba36cd3d85c1b168144e8fc1d84186b3c7362c8ac5f8bb97a8fd7a776d5c",
+    "step": "arrival-report",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "bf89ba36cd3d85c1b168144e8fc1d84186b3c7362c8ac5f8bb97a8fd7a776d5c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/025-arrival-report-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "bf89ba36cd3d85c1b168144e8fc1d84186b3c7362c8ac5f8bb97a8fd7a776d5c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/025-arrival-report-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "viewport": "desktop",
+    "image": "026-recover-arrival-1-fleet-marshal.png",
+    "sha256": "ee0233033a9833b429423f147385f17f8ae3eda06bac2a79a28d4b705576ffd8",
+    "step": "recover-arrival",
+    "player": "Fleet marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ee0233033a9833b429423f147385f17f8ae3eda06bac2a79a28d4b705576ffd8",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ee0233033a9833b429423f147385f17f8ae3eda06bac2a79a28d4b705576ffd8",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "viewport": "desktop",
+    "image": "026-recover-arrival-2-independent-marshal.png",
+    "sha256": "bf89ba36cd3d85c1b168144e8fc1d84186b3c7362c8ac5f8bb97a8fd7a776d5c",
+    "step": "recover-arrival",
+    "player": "Independent marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "bf89ba36cd3d85c1b168144e8fc1d84186b3c7362c8ac5f8bb97a8fd7a776d5c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "bf89ba36cd3d85c1b168144e8fc1d84186b3c7362c8ac5f8bb97a8fd7a776d5c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "3a76749fd4a5000e3e00c43edbd3191568e5a62f614dd6f8e0f655402c3aa51a",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "3a76749fd4a5000e3e00c43edbd3191568e5a62f614dd6f8e0f655402c3aa51a",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "010-inspect-formation-2-independent-marshal.png",
+    "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "011-choose-complement-1-fleet-marshal.png",
+    "sha256": "9d274c5a901b3ce7f762c79a4e6771ce97d8ed5f43d091897c69fdeae59dcc70",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "9d274c5a901b3ce7f762c79a4e6771ce97d8ed5f43d091897c69fdeae59dcc70",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "011-choose-complement-2-independent-marshal.png",
+    "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "8fe1f468d85691425494593a673f17627bf559bf666adb508a583478349e91f8",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": []
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "012-reserve-formation-2-independent-marshal.png",
+    "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "013-reload-formation-1-fleet-marshal.png",
+    "sha256": "461cfbdfa28b7041b457d8cb7d3b1fddaa324332ed4bd619308c0d81225fcba2",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "461cfbdfa28b7041b457d8cb7d3b1fddaa324332ed4bd619308c0d81225fcba2",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "013-reload-formation-2-independent-marshal.png",
+    "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "033eca53daf544e0d369d8f55c34212e241c69860d38865cedbe6abdc590386f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "b006f2e2fd79119eee1790327257dea6361cf0335a33e4cdcc32f82fd2930fc9",
+    "step": "formed-fleet",
+    "player": "Fleet marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "b006f2e2fd79119eee1790327257dea6361cf0335a33e4cdcc32f82fd2930fc9",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "015-formed-fleet-2-independent-marshal.png",
+    "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+    "step": "formed-fleet",
+    "player": "Independent marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "016-open-route-1-fleet-marshal.png",
+    "sha256": "fc012c0470ed489d8278bd6ff385a460ca1c3c8d526cb72b29313207f7f7add4",
+    "step": "open-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "fc012c0470ed489d8278bd6ff385a460ca1c3c8d526cb72b29313207f7f7add4",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/016-open-route-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "016-open-route-2-independent-marshal.png",
+    "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+    "step": "open-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/016-open-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "18120635f32ad9d3940982e5720ccd834cfa743513a169d6dfc93c2665a58533",
+    "step": "choose-waypoint",
+    "player": "Fleet marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "18120635f32ad9d3940982e5720ccd834cfa743513a169d6dfc93c2665a58533",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+    "step": "choose-waypoint",
+    "player": "Independent marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "e37cb87914c1ffe870b736d98ec683c09899981b37be9cf645712faec6b274f1",
+    "step": "reject-distant-leg",
+    "player": "Fleet marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "e37cb87914c1ffe870b736d98ec683c09899981b37be9cf645712faec6b274f1",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+    "step": "reject-distant-leg",
+    "player": "Independent marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "019-repair-route-1-fleet-marshal.png",
+    "sha256": "c32d7da283f0a305f6c70592354875c0bac60a1e61fd635c85d9a64ab25c04a4",
+    "step": "repair-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c32d7da283f0a305f6c70592354875c0bac60a1e61fd635c85d9a64ab25c04a4",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "019-repair-route-2-independent-marshal.png",
+    "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+    "step": "repair-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "020-accept-route-1-fleet-marshal.png",
+    "sha256": "27cb9a58c163adb1d71ee4d02b9d7c3f284979aef2a7d0a46d43cc71b6e0afcf",
+    "step": "accept-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "27cb9a58c163adb1d71ee4d02b9d7c3f284979aef2a7d0a46d43cc71b6e0afcf",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/020-accept-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "020-accept-route-2-independent-marshal.png",
+    "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+    "step": "accept-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/020-accept-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "021-recover-route-1-fleet-marshal.png",
+    "sha256": "4a01fb2efe28365f4275e977b2da347cdbcaefd6992e586fe3992d38b1b599f1",
+    "step": "recover-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "4a01fb2efe28365f4275e977b2da347cdbcaefd6992e586fe3992d38b1b599f1",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/021-recover-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "021-recover-route-2-independent-marshal.png",
+    "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+    "step": "recover-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c8cfcfddb283329593eb1945a6d22f5b9c7b6eedc6b42b23b0e40057615ea0c6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/021-recover-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "023-traveling-1-fleet-marshal.png",
+    "sha256": "4c3169450b40c1f15ec82831bb3bdd6bd4c3c1e3cf93ba27033ecff969c76edb",
+    "step": "traveling",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "4c3169450b40c1f15ec82831bb3bdd6bd4c3c1e3cf93ba27033ecff969c76edb",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/023-traveling-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "023-traveling-2-independent-marshal.png",
+    "sha256": "07a021b5b26f54660e5a99f88da7b76e309aeee7789a757014b4be129c5ea0b6",
+    "step": "traveling",
+    "player": "Independent marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "07a021b5b26f54660e5a99f88da7b76e309aeee7789a757014b4be129c5ea0b6",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/023-traveling-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "025-arrival-report-1-fleet-marshal.png",
+    "sha256": "c24923ca36f6a44e3aa6e0d2bb6eb8c77e1438820b7dc005e5c4bba7e92b6fd3",
+    "step": "arrival-report",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "c24923ca36f6a44e3aa6e0d2bb6eb8c77e1438820b7dc005e5c4bba7e92b6fd3",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "025-arrival-report-2-independent-marshal.png",
+    "sha256": "1214f164832dd671ea971f1e5339ae3b160032c014123859b2887354014f7c21",
+    "step": "arrival-report",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1214f164832dd671ea971f1e5339ae3b160032c014123859b2887354014f7c21",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/025-arrival-report-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "viewport": "large",
+    "image": "026-recover-arrival-1-fleet-marshal.png",
+    "sha256": "5d95b876d188dba63e7dba9ae7c0e860ba703b8bade47d32229370d8bb4fa035",
+    "step": "recover-arrival",
+    "player": "Fleet marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "5d95b876d188dba63e7dba9ae7c0e860ba703b8bade47d32229370d8bb4fa035",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/large/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "viewport": "large",
+    "image": "026-recover-arrival-2-independent-marshal.png",
+    "sha256": "1214f164832dd671ea971f1e5339ae3b160032c014123859b2887354014f7c21",
+    "step": "recover-arrival",
+    "player": "Independent marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1214f164832dd671ea971f1e5339ae3b160032c014123859b2887354014f7c21",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/large/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "010-inspect-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "011-choose-complement-1-fleet-marshal.png",
+    "sha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "011-choose-complement-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "f2a1b05ed2860ed4a991a03d25511fd89fa00ea410b3529b169bf23b8106a082",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "changed",
+    "previouslyInspectedExactMatches": []
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "012-reserve-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "013-reload-formation-1-fleet-marshal.png",
+    "sha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "013-reload-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+    "step": "formed-fleet",
+    "player": "Fleet marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "015-formed-fleet-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "step": "formed-fleet",
+    "player": "Independent marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "016-open-route-1-fleet-marshal.png",
+    "sha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+    "step": "open-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "016-open-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "step": "open-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "10778b1067e9726efab8231a619153c1f8b5c65cd3ec6480dfb99a013f3df747",
+    "step": "choose-waypoint",
+    "player": "Fleet marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "10778b1067e9726efab8231a619153c1f8b5c65cd3ec6480dfb99a013f3df747",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "10778b1067e9726efab8231a619153c1f8b5c65cd3ec6480dfb99a013f3df747",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "step": "choose-waypoint",
+    "player": "Independent marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "26b76c0f7ada3c7a9855a3a66a6fc3216d8e0719430f0debdf760e3e5ce9b5d1",
+    "step": "reject-distant-leg",
+    "player": "Fleet marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "26b76c0f7ada3c7a9855a3a66a6fc3216d8e0719430f0debdf760e3e5ce9b5d1",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "26b76c0f7ada3c7a9855a3a66a6fc3216d8e0719430f0debdf760e3e5ce9b5d1",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "step": "reject-distant-leg",
+    "player": "Independent marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "019-repair-route-1-fleet-marshal.png",
+    "sha256": "1b872c5a85283c0d83e8d39f123eebcae36f5a2cad5bc554792aa8cef7cab3cf",
+    "step": "repair-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1b872c5a85283c0d83e8d39f123eebcae36f5a2cad5bc554792aa8cef7cab3cf",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "1b872c5a85283c0d83e8d39f123eebcae36f5a2cad5bc554792aa8cef7cab3cf",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "019-repair-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "step": "repair-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "020-accept-route-1-fleet-marshal.png",
+    "sha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+    "step": "accept-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "020-accept-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "step": "accept-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "021-recover-route-1-fleet-marshal.png",
+    "sha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+    "step": "recover-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "021-recover-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "step": "recover-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "023-traveling-1-fleet-marshal.png",
+    "sha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+    "step": "traveling",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "023-traveling-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "step": "traveling",
+    "player": "Independent marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "025-arrival-report-1-fleet-marshal.png",
+    "sha256": "2ae5d610bb4659be9c60503dc839705b71f3eb024cafd7fa208061f9920b320c",
+    "step": "arrival-report",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "2ae5d610bb4659be9c60503dc839705b71f3eb024cafd7fa208061f9920b320c",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "2ae5d610bb4659be9c60503dc839705b71f3eb024cafd7fa208061f9920b320c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "025-arrival-report-2-independent-marshal.png",
+    "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+    "step": "arrival-report",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "viewport": "phone",
+    "image": "026-recover-arrival-1-fleet-marshal.png",
+    "sha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+    "step": "recover-arrival",
+    "player": "Fleet marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "viewport": "phone",
+    "image": "026-recover-arrival-2-independent-marshal.png",
+    "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+    "step": "recover-arrival",
+    "player": "Independent marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "unchanged",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+        "path": "/tmp/cluster-pr61-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+        "review": "PR61"
+      },
+      {
+        "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "b241923e0b19bea3da631b928fa189f9b6276792095129b418f07c04b946b375",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "b241923e0b19bea3da631b928fa189f9b6276792095129b418f07c04b946b375",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "010-inspect-formation-2-independent-marshal.png",
+    "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "011-choose-complement-1-fleet-marshal.png",
+    "sha256": "cb08fc5c38491665d288bd6a7c612f4413952645605570e0173cb9ef02412572",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "cb08fc5c38491665d288bd6a7c612f4413952645605570e0173cb9ef02412572",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "011-choose-complement-2-independent-marshal.png",
+    "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "d56fd52e0e89900a78517cfc0c1eaa51f7ab90a8f587fe2a940f0eb230f7263a",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": []
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "012-reserve-formation-2-independent-marshal.png",
+    "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "013-reload-formation-1-fleet-marshal.png",
+    "sha256": "4accff335e904bcc915277fea21aa79cc75461cd34477440051141187ddc0d99",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "4accff335e904bcc915277fea21aa79cc75461cd34477440051141187ddc0d99",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "013-reload-formation-2-independent-marshal.png",
+    "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1e1c74571ddcfee190dee9fd0b281a2e2d2c66c15eb9f1c3c36ef68f2efcf468",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "9bab5de5ac6ea68f70d247d97cae7d45f6ae1d5614c6968a1406d39890d9d16c",
+    "step": "formed-fleet",
+    "player": "Fleet marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "9bab5de5ac6ea68f70d247d97cae7d45f6ae1d5614c6968a1406d39890d9d16c",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "015-formed-fleet-2-independent-marshal.png",
+    "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+    "step": "formed-fleet",
+    "player": "Independent marshal",
+    "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "016-open-route-1-fleet-marshal.png",
+    "sha256": "504cada0fc906d79b0177dc3656912ca33c98a9e47ef946d9468bd05a1ff6969",
+    "step": "open-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "504cada0fc906d79b0177dc3656912ca33c98a9e47ef946d9468bd05a1ff6969",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/016-open-route-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "016-open-route-2-independent-marshal.png",
+    "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+    "step": "open-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/016-open-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "319d16bf0a3040c23adfd75529f1bf99d83617126e0674ef04ca0607da10f956",
+    "step": "choose-waypoint",
+    "player": "Fleet marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "319d16bf0a3040c23adfd75529f1bf99d83617126e0674ef04ca0607da10f956",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+    "step": "choose-waypoint",
+    "player": "Independent marshal",
+    "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "4b2e79aa2a8c44014e5d46cd44f822f899749d0569abd646192ba71f9aa79f7e",
+    "step": "reject-distant-leg",
+    "player": "Fleet marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "4b2e79aa2a8c44014e5d46cd44f822f899749d0569abd646192ba71f9aa79f7e",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+    "step": "reject-distant-leg",
+    "player": "Independent marshal",
+    "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "019-repair-route-1-fleet-marshal.png",
+    "sha256": "23741723dd0c77f0c0b16d35b7c541b234b4191dc2b1109e5817280d6caa1a0e",
+    "step": "repair-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "23741723dd0c77f0c0b16d35b7c541b234b4191dc2b1109e5817280d6caa1a0e",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "019-repair-route-2-independent-marshal.png",
+    "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+    "step": "repair-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "020-accept-route-1-fleet-marshal.png",
+    "sha256": "1d63a76e1e9dfa16f18d6da5f813530c9955db4540460ce598d875207f4252c1",
+    "step": "accept-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "1d63a76e1e9dfa16f18d6da5f813530c9955db4540460ce598d875207f4252c1",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/020-accept-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "020-accept-route-2-independent-marshal.png",
+    "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+    "step": "accept-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/020-accept-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "021-recover-route-1-fleet-marshal.png",
+    "sha256": "226054993e9f659045fdafc9f8f3b8aca1ae2852ed75c01117e7d136795d6328",
+    "step": "recover-route",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "226054993e9f659045fdafc9f8f3b8aca1ae2852ed75c01117e7d136795d6328",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/021-recover-route-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "021-recover-route-2-independent-marshal.png",
+    "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+    "step": "recover-route",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "02dda7db8be8d208ad92098e552cee07cc9078c591c9790d4c288c68fe625b23",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/021-recover-route-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "023-traveling-1-fleet-marshal.png",
+    "sha256": "def97223bc42fa819c5bb1fc8c795ecda8a1c7833c6fa2d0770d85ea75910595",
+    "step": "traveling",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "def97223bc42fa819c5bb1fc8c795ecda8a1c7833c6fa2d0770d85ea75910595",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/023-traveling-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/023-traveling-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "023-traveling-2-independent-marshal.png",
+    "sha256": "5b2aa1e2249ef1d60cc402f78abc9f7a249aec765552bba6cd252ea3dc2b05ad",
+    "step": "traveling",
+    "player": "Independent marshal",
+    "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "5b2aa1e2249ef1d60cc402f78abc9f7a249aec765552bba6cd252ea3dc2b05ad",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/023-traveling-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "025-arrival-report-1-fleet-marshal.png",
+    "sha256": "59a4c1d02a5be995158c85461557ee66afae4ba5e7bc398e853e28a5a4f5434f",
+    "step": "arrival-report",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "59a4c1d02a5be995158c85461557ee66afae4ba5e7bc398e853e28a5a4f5434f",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "025-arrival-report-2-independent-marshal.png",
+    "sha256": "81aa3399b60efacb9bbeae714de2d78208435c4a058db1cdd4f21aa460368b61",
+    "step": "arrival-report",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "81aa3399b60efacb9bbeae714de2d78208435c4a058db1cdd4f21aa460368b61",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/025-arrival-report-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "viewport": "short",
+    "image": "026-recover-arrival-1-fleet-marshal.png",
+    "sha256": "a34553a21c55cb8c54499949669b137a37066fdc96639e3716e2c6e4e48a3d19",
+    "step": "recover-arrival",
+    "player": "Fleet marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "a34553a21c55cb8c54499949669b137a37066fdc96639e3716e2c6e4e48a3d19",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel/short/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "viewport": "short",
+    "image": "026-recover-arrival-2-independent-marshal.png",
+    "sha256": "81aa3399b60efacb9bbeae714de2d78208435c4a058db1cdd4f21aa460368b61",
+    "step": "recover-arrival",
+    "player": "Independent marshal",
+    "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+    "againstOriginal61": "new",
+    "previouslyInspectedExactMatches": [
+      {
+        "sha256": "81aa3399b60efacb9bbeae714de2d78208435c4a058db1cdd4f21aa460368b61",
+        "path": "/tmp/cluster-pr70-reviewer-candidates/test-results/stories/live-fleet-travel/short/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+        "review": "PR70"
+      }
+    ]
+  }
+]

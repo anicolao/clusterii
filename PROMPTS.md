@@ -1955,3 +1955,9 @@ Reviewer: Pages40163030217/deploy121078700345 nowSUCCESS. Independently ran unch
 Delegated reviewer correction; main meta supersedes the earlier expectation that both failed-only publication reruns remained queued.
 
 Reviewer correction from freshAPI:53publication40160719087 attempt2 was CANCELLED;56publication40161305387 attempt2 PENDING. Shared pages-tree concurrency likely replaced pending53. Preserve56; serialize recovery and rerun terminalcancelled53 after56completes, not concurrently. Mainmeta corrected; neither publication is yet green. Served-revision independent checks both remainPASS.
+
+## Prompt 297: Travel evidence
+
+Delegated reviewer instruction; main meta records the completed existing travel run and artifact scope, without image approval.
+
+Reviewer:61travel40162979064/job121078226900 nowSUCCESS. Artifact12588836768 recovery-travel-4ce46226ba857d8b242d3a0f6d7f496da21d5989-1 size194616824 unexpired ready. Retrieve once under Nix, verify SHA/CRC/source and retain originals stable/tmp; group against prior reviewed travel captures, inspect all new/changed, report index/root for independent review. No image approval from greenrun. Prioritize53ifready; preserve existing jobs/serializedpublication. Reconcile latest mainmeta and pushlogs. No merge.
