@@ -1756,3 +1756,30 @@ Reviewer: Completed independent inspection of all22 distinct large paused-travel
 Delegated reviewer instruction; main meta Reviewer published PR63 verification and PR64 preparation.
 
 Reviewer: Independently verified published PR63 f8adb007866692870ea2979e2d4108b2bb4bed3b contains all136 exact approved corrected hashes and every inherited baseline blob/metadata is unchanged from05d30b20. All five63checks live;62application/strict stilllive, other3SUCCESS. Preserve these runs. While waiting, prepare PR64 recovery in an isolated branch atopf8adb007. Original64 a26324cb00e770fd4503c76c8db39ae6005dc9d4 base9050d65e changes only four workflow/runner/cohort-test files, no player source or story screenshots. Current parent already contains later cohort work: reconcile original intended delta carefully, do not reintroduce obsolete runner code or drop inherited safeguards. Classify old strict39724010454/job119643687547 failures and determine which are already fixed by reviewed parent. Verify exact inherited references/source/assertions and applicable cohort tests under established Nix; report remaining semantic differences and publication/check plan before active64 push. Keep scope green stack, no new features or unseen baseline promotion. Reconcile exact handoff/meta into reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+## Prompt 133: Maintenance baseline verification
+
+Delegated reviewer instruction; main meta Reviewer PR63 maintenance focus baseline approval.
+
+Reviewer: Independently inspected PR63 short maintenance003 expected, actual and diff at1280x720; independently rehashed originals. Expected c9771048d2441b20e001f7f7fa7f6eb6ca1d07cb6e045d9ad72584413fce7c0e clips Pause lower border/focus ring. Actual932203f38bf4763abc499f0a94dfb5b81798656461a5e5627bde527c00678510 moves roster contents upward10px, full control and outline visible, surrounding panel/map unchanged. Approve this exact actual for scoped regression baseline replacement; no new source correction required on present evidence. Prepare isolated PR63 update atopf8adb007 with only this approved reference plus attributed evidence/logs. Run one bounded complete short maintenance journey under established pinned Nix renderer, unchanged source/assertions/deadlines, to expose remaining states masked by first failure. If strict passes, present complete manifests/hash comparison and proposed active63 head; if additional mismatches occur retain originals for independent review, no blanket updates. Preserve live64/65 runs and65 retry; PR66 remains frozen. Reconcile exact handoff/meta and continuation in reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+
+
+## Prompt 134: Complete maintenance candidates
+
+Delegated reviewer instruction; main meta Reviewer complete maintenance family correction.
+
+Reviewer: Independently inspected short maintenance004 expected/actual/diff. Approve exact actual SHA256 999d68d5233c5a1da3ac5e2ccb7a4350ceae1fc881e03a7e01c283ab9bf19155 for scoped regression: intended10px upward roster scroll persists after pause, acknowledgement readable, Resume full focus outline visible, map/panel fixed; lower encryption section remains scrollable secondary content. Do not run another serial first-mismatch strict attempt. Generate one COMPLETE short maintenance candidate journey now with all functional assertions/deadlines retained under pinned Nix renderer, then present every changed expected/actual/diff and exact unchanged hashes together. Generation must not promote references; only003/004 exact inspected hashes are approved so far. Review all later states before active63 publication, then carry same verified correction forward through64/65 at safe terminal boundaries. Independently confirmed64 strict40196208632 terminalFAILURE with same003 snapshot and53332pixels; log /tmp/cluster-pr64-current-failure.log. Preserve65 live strict/retry;66 frozen. Reconcile exact handoff/meta in reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+
+
+## Prompt 135: Maintenance family publication
+
+Delegated reviewer instruction; main meta Reviewer complete maintenance approval and publication.
+
+Reviewer: Independently inspected maintenance007 expected/actual/diff: acknowledged resume readable, intended10px roster scroll exposes full focused Pause control, background/panel unchanged. Approve actual0d369278969e687552757d0842e496c36cab88a26bed11f8ddde6ccdfa07926d for scoped regression. Independently compared all13 complete generation originals with activef8adb007 git blobs:10exact unchanged, only003/004/007changed, all three exact inspected approved hashes. Complete short maintenance family approved. Publish isolated PR63 correction with exactly these three approved references plus provenance/logs, no product/spec/assertion/tolerance change; verify complete inherited reference tree and start unchanged required CI. Propagate reviewed parent correction through64 then65 at safe terminal boundaries, serialize publication and preserve65 live application retry.65 strict nowterminalFAILURE: classify its log before propagation and inspect any distinct finding; do not assume identical. No further maintenance candidate run needed absent new evidence. PR66 stays frozen pending independent56 review. Reconcile exact handoff/meta and continuations in reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
