@@ -1,0 +1,9 @@
+# Reviewer-approved market promotion
+
+Delegation Prompt311 and supervisor main meta final shared-market disposition. All42 changed Darwin captures approved: phone9,desktop11,short11,large11. Large017–020 exact identical SHA group represented by inspected017; other changed originals individually inspected. Large viewer downscaling limits typography/full-design conclusions.174 unchanged references retained, not newly blanket-approved.
+
+Recovery branch investigate/market-background-paint promoted exactly42 PNGs in1fcf2e67 using existing reviewed-baseline tooling, after checking all216 original hashes, manifests, clean capture sourced5e1a41e and unchanged production/story/helpers/dependency/config. All216 committed PNG blobs independently rehashed after commit and match originals. Only two production attributes from84298998 suppress the inert background acknowledgement/contact legend while Economy owns the interaction. No active message/error/retry state cleared. Reference metadata points to scoped approval document. No downstream80–85/Linux/normal-motion approval or automatic promotion.
+
+Recovery is a normal fast-forward descendant of original PR80326de8ba; remote PR80 is intentionally not updated while current53 publication executes, avoiding competing pages-tree work. Earlier53–62 heads and live jobs preserved. PR53publication40167553183 attempt2 job121111701794 is executing Verify served revision and assets; corrected62candidate40172866002 remains queued. Neither was restarted.
+
+Focused exact four-size verification passed in3.1m on clean1fcf2e67:216 exact captures, original tests/real services/deadlines/retries0/max-failures1/RGBA0. Existing archive tooling decoded and compared all216 before archiving. Evidence pushed92e2b329. Original generation remains fixed /tmp/cluster-market-paint-originals; strict originals separate /tmp/cluster-market-paint-strict-originals. No overwrite.
