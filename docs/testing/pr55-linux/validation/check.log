@@ -1,0 +1,5 @@
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /private/tmp/cluster-pr54-credit-review
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings

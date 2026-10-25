@@ -842,3 +842,27 @@ Reviewer: independently verified all212 committed PNG blobs at17915680 match app
 Delegated reviewer validation; main meta records16 prompt tests,108 exact briefing blobs and PR72/73 code-only forward review.
 
 Reviewer: independently ran all16 prompt-history tests in Nix, allpassed; read separator delta and independently SHA256-verified all108 prepared briefing PNGs equal inspected originals. Reviewed source applicability delta limited to inherited CreditOffers and identity CSS. Mainmeta also contains completed72/73 code and historical CI reviews, no image approvals for those. Reconcile reviewer entries at next commit/push, retain current53/54 CI handles, continue55 publication and forward stack. No extra generation, duplicate job or GitHub merge requested.
+
+## Prompt 93: Earliest failure
+
+Delegated reviewer current CI finding; prioritize exact PR53 failure after safe local PR56 integration checkpoint, using reviewer extraction without duplicates.
+
+Reviewer: current PR53 strict40153836539/job121050800104 just failed:114passed2failed8skipped. Both1994px: short identity-validation001-sign-in and session-interrupted-recovery012-fresh-sign-in. Log /tmp/cluster-pr53-current-failed.log; artifact12584840651 size1600404591. I am selectively retrieving and inspecting those actual/expected/diffs now; do not duplicate download or rerun. Prioritize earliest failing53 once56 integration is safely checkpointed; no blind promotion/tolerance change. Application53 stilllive. Findings to follow.
+
+## Prompt 94: Raster evidence
+
+Delegated reviewer exact evidence; main meta records active28px CSS and unchanged measured geometry despite alternate sentence raster.
+
+Reviewer: current53 exact evidence is ready at/tmp/cluster-pr53-current-review,39files20.14MB transferredCRCchecked. Independently inspected both triples; only identity-intro raster differs. Actual validationfb76 matches known alternate. Both sidecars confirm17px/28px font, texty286.421875 and paragraphy283.421875:28px fix is active yet instability remains. Prioritize53 after safe56checkpoint; avoid reference-only swaps. Use existing retained evidence for production rendering diagnosis and bounded same-renderer verification, preserving strict equality. Mainmeta records exact paths/hashes. I am not launching another job.
+
+## Prompt 95: Reviewed recovery
+
+Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
+
+Reviewer:54/55 integration independently reviewed; immutable55 prompt suite18passed. Continue green stack without restarting live53/54/55 jobs. Reconcile latest main meta entries (completed78 image review,79scoped40help approvals,54/55 independent audit) into attributed ledger and push. With55 published, recover parked56 staged tree c6552c6b0ec19845048daec71848195c18210b89 at/private/tmp/cluster-pr54-credit-review safely, integrate reviewed55 parent preserving exact prompt history, retain approved160construction references and prepare next current-head checks. Reuse fixed separator logic with meaningful regression verification if needed; no assertion/tolerance weakening or uninspected baselines. If53/54/55 produce actionable failures, prioritize those. No GitHub merge.
+
+## Prompt 96: Reviewed recovery
+
+Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
+
+Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.

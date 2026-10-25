@@ -299,3 +299,9 @@ Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | C
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-briefing-stories
 
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-construction-stories
+
+Prompt 69 | 9430f52d3d07628cecbcda944f5192332a09671342bfb3b48a32cb266d1c4346 | Retain second pre-test setup failure and use explicit owned Firestore websocket with normal project-root configuration.
+
+Prompt 74 | b636ddc861570349646aad5591a9a83da187819c0e5db3469a08a829277464d2 | Integrate both branch histories with exact parent archives and tested verbatim prompt and continuation preservation.
+
+Prompt 91 | 3d21b141d9605f5a04c20d30f5f7f29f3f9f1b89bf4b47ef9a0d137dd17b53a5 | Integrate reviewed PR54 and promote108 inspected briefing references with exact source, renderer and append-only history checks.
