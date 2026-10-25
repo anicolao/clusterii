@@ -210,5 +210,117 @@
       "55": "f6b2cf4c"
     },
     "PR56": "parked tree verified c6552c6b; refs/checkpoints/pr56-parked-index protects it; unchanged pending earlier-gate priority and disk"
-  }
+  },
+  "postMergeHistoryRepair": {
+    "failedRun": 40159642901,
+    "failedJob": 121068319226,
+    "failedHead": "9a712a9b",
+    "exactBase": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+    "cause": "Copied final parent record became interior after later append; initial-copy fixtures missed actual archived-base comparison",
+    "correction": "Only committed append-only log transitions prove extra structural LF; staged base check must preserve committedHEADprefix; no trimming",
+    "parent54": "9306f80e",
+    "child55": "7eb4cc38",
+    "tests": "17parent/19childfixtures pass; newfixture fails old checker; actual immutableHEAD/index base checks pass after commits; full childpolicy passes",
+    "PR56": {
+      "originalTree": "c6552c6b0ec19845048daec71848195c18210b89",
+      "currentParentTree": "20b475e9b4209b45340cddb98f26f17b083cc654",
+      "localOldMerge": "670e1bbc",
+      "state": "Current55merge still staged, not published; explicit checkpoint refs protectboth; earliergatepriority"
+    }
+  },
+  "latestObservedHeads": [
+    {
+      "pr": 53,
+      "head": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+      "mergeable": true,
+      "runs": [
+        {
+          "id": 40157944454,
+          "name": "Illustrated stories",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40157944328,
+          "name": "Application checks",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40157944305,
+          "name": "Documentation checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40157944304,
+          "name": "Publish review build",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 54,
+      "head": "9306f80e6edb63e3bab84a4925ad9f1cbaafaf76",
+      "mergeable": true,
+      "runs": [
+        {
+          "id": 40160073225,
+          "name": "Publish review build",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40160073366,
+          "name": "Illustrated stories",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40160073223,
+          "name": "Application checks",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40160073235,
+          "name": "Documentation checks",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 55,
+      "head": "7eb4cc38be812641282169e57ee54fe28a1f27c8",
+      "mergeable": true,
+      "runs": [
+        {
+          "id": 40160192154,
+          "name": "Publish review build",
+          "status": "pending",
+          "conclusion": null
+        },
+        {
+          "id": 40160192156,
+          "name": "Illustrated stories",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40160192139,
+          "name": "Application checks",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40160192144,
+          "name": "Documentation checks",
+          "status": "in_progress",
+          "conclusion": null
+        }
+      ]
+    }
+  ]
 }
