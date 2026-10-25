@@ -413,3 +413,5 @@ Prompt 60 | e9ee1581c65b5d28372170a05026a9277246c5cc8b0e883467985fd56d429964 | V
 Prompt 60 | e9ee1581c65b5d28372170a05026a9277246c5cc8b0e883467985fd56d429964 | Correct in-flight navigation using the exact zero-stationed-fleet control and retain failure traces.
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Review and promote only new paused-travel candidates before strict comparison; retain CI diagnosis.
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Archive twelve exact journeys and retained travel regressions; carry supervisory logs and distinct CI resource evidence.
+
+Prompt 130 | e61966b5a4f4752b5b7b84791618152094cc37c0d05abbea638a0e0463301386 | Issue one fresh exact four-journey paused-travel request after guarded dispatcher and collection validation.
