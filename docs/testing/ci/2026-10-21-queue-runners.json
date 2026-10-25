@@ -1,0 +1,322 @@
+[
+  {
+    "run": 39690023424,
+    "job": 119533617983,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033397",
+    "started": "2026-10-21T23:46:09Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:48:22Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39689788163,
+    "job": 119532835709,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033402",
+    "started": "2026-10-21T23:46:49Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:49:20Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39689514081,
+    "job": 119531927240,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033395",
+    "started": "2026-10-21T23:35:38Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:37:44Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39689495712,
+    "job": 119531866186,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033387",
+    "started": "2026-10-21T23:29:38Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:31:58Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39689495801,
+    "job": 119531868836,
+    "name": "stories (generate)",
+    "labels": [
+      "ubuntu-24.04-arm"
+    ],
+    "runner": "GitHub Actions 1000033401",
+    "started": "2026-10-21T23:46:38Z",
+    "step": [
+      {
+        "name": "Explicit baseline candidates (never acceptance)",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 12,
+        "started_at": "2026-10-21T23:48:19Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39689491765,
+    "job": 119531854282,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033396",
+    "started": "2026-10-21T23:41:49Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:44:28Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39689484305,
+    "job": 119531827975,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033384",
+    "started": "2026-10-21T23:22:16Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:25:11Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39689448114,
+    "job": 119531699970,
+    "name": "documentation",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033407",
+    "started": "2026-10-22T00:01:33Z",
+    "step": [
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 2,
+        "started_at": "2026-10-22T00:01:34Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39688598459,
+    "job": 119528846450,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033386",
+    "started": "2026-10-21T23:26:55Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:29:39Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39688377475,
+    "job": 119528118462,
+    "name": "verify",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner": "GitHub Actions 1000033385",
+    "started": "2026-10-21T23:23:09Z",
+    "step": [
+      {
+        "name": "Run bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-10-21T23:25:43Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39687469068,
+    "job": 119525075312,
+    "name": "stories (generate)",
+    "labels": [
+      "ubuntu-24.04-arm"
+    ],
+    "runner": "GitHub Actions 1000033389",
+    "started": "2026-10-21T23:31:16Z",
+    "step": [
+      {
+        "name": "Explicit baseline candidates (never acceptance)",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 12,
+        "started_at": "2026-10-21T23:33:05Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39687469068,
+    "job": 119525075470,
+    "name": "stories (verify)",
+    "labels": [
+      "ubuntu-24.04-arm"
+    ],
+    "runner": "GitHub Actions 1000033394",
+    "started": "2026-10-21T23:34:36Z",
+    "step": [
+      {
+        "name": "Exact verification",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 11,
+        "started_at": "2026-10-21T23:36:23Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39687468891,
+    "job": 119525075270,
+    "name": "stories (generate)",
+    "labels": [
+      "ubuntu-24.04-arm"
+    ],
+    "runner": "GitHub Actions 1000033381",
+    "started": "2026-10-21T23:16:12Z",
+    "step": [
+      {
+        "name": "Explicit baseline candidates (never acceptance)",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 12,
+        "started_at": "2026-10-21T23:18:08Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39687468891,
+    "job": 119525075810,
+    "name": "stories (verify)",
+    "labels": [
+      "ubuntu-24.04-arm"
+    ],
+    "runner": "GitHub Actions 1000033404",
+    "started": "2026-10-21T23:47:23Z",
+    "step": [
+      {
+        "name": "Exact verification",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 11,
+        "started_at": "2026-10-21T23:49:16Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39683193749,
+    "job": 119510610988,
+    "name": "stories (generate)",
+    "labels": [
+      "ubuntu-24.04-arm"
+    ],
+    "runner": "GitHub Actions 1000033393",
+    "started": "2026-10-21T23:33:28Z",
+    "step": [
+      {
+        "name": "Explicit baseline candidates (never acceptance)",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 12,
+        "started_at": "2026-10-21T23:36:00Z",
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "run": 39683193437,
+    "job": 119510610792,
+    "name": "stories (verify)",
+    "labels": [
+      "ubuntu-24.04-arm"
+    ],
+    "runner": "GitHub Actions 1000033403",
+    "started": "2026-10-21T23:47:08Z",
+    "step": [
+      {
+        "name": "Exact verification",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 11,
+        "started_at": "2026-10-21T23:49:12Z",
+        "completed_at": null
+      }
+    ]
+  }
+]

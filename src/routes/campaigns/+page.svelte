@@ -9,6 +9,7 @@
   import {
     fleetSettlementFeedback,
     type AcceptedFleetCommand,
+    type RecoveredFleetReorganization,
   } from "$lib/fleet-feedback";
   import {
     claimOrder,
@@ -84,6 +85,7 @@
   let commandVisitRevision = $state(0);
   let commandId = $state("");
   let commandOfferId = $state("");
+  let recoveredFleet = $state<RecoveredFleetReorganization | null>(null);
   let recoveredConstruction = $state<RecoveredConstruction | null>(null);
   let acceptedConstruction = $state<AcceptedConstruction | null>(null);
   let commandConstructionOrder = "";
@@ -326,6 +328,15 @@
                 action: restored.action as TradeAction,
               }
             : null;
+          recoveredFleet =
+            restored.action.kind === "fleet.split" ||
+            restored.action.kind === "fleet.merge"
+              ? {
+                  id: pending.id,
+                  gameId: pending.gameId,
+                  action: restored.action,
+                }
+              : null;
           recoveredConstruction =
             restored.action.kind === "construction.build" ||
             restored.action.kind === "construction.cancel"
@@ -389,6 +400,7 @@
           recoveredConversation = null;
           recoveredTrade = null;
           recoveredConstruction = null;
+          recoveredFleet = null;
           acceptedConstruction = null;
           recoveryProblem = null;
           commandRoomId = "";
@@ -460,6 +472,7 @@
         clearTimeout(timer);
         busy = false;
         pending = null;
+        recoveredFleet = null;
         acceptedConstruction =
           receipt.status === "accepted" &&
           command.kind.startsWith("construction.")
@@ -667,6 +680,7 @@
       {recoveredConversation}
       {recoveredTrade}
       {recoveredConstruction}
+      {recoveredFleet}
       accountId={account ?? undefined}
       onvisit={(throughRevision) =>
         send(view!.id, {

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { RecoveredFleetReorganization } from "$lib/fleet-feedback";
   import type { RecoveredConstruction } from "$lib/construction-feedback";
   import type { RecoveredTrade } from "$lib/credit-offers";
   import { tick, onDestroy, untrack } from "svelte";
@@ -71,6 +72,7 @@
     recoveredConversation = null,
     recoveredTrade = null,
     recoveredConstruction = null,
+    recoveredFleet = null,
     accountId,
     onbuild,
     oncancel,
@@ -114,6 +116,7 @@
     } | null;
     recoveredTrade?: RecoveredTrade | null;
     recoveredConstruction?: RecoveredConstruction | null;
+    recoveredFleet?: RecoveredFleetReorganization | null;
     accountId?: string;
     oncancelFleet?: (orderId: string) => void;
     onmerge?: (id: string, targetId: string) => void;
@@ -138,6 +141,26 @@
   let military = $state(false);
   let selectedFleet = $state<string | null>(null),
     routeDrafts = $state<Record<string, string[]>>({});
+  let resumedFleet = "";
+  $effect(() => {
+    const recovered = recoveredFleet;
+    if (
+      !recovered ||
+      recovered.gameId !== view.id ||
+      resumedFleet === recovered.id
+    )
+      return;
+    // Restore only an accessible owned fleet. Missing/retired fleets retain the
+    // global receipt recovery remedy; never fabricate a manifest from a draft.
+    const fleet = view.military?.fleets.find(
+      (f) => f.id === recovered.action.fleetId,
+    );
+    if (!fleet || !view.stars.some((s) => s.id === fleet.starId)) return;
+    resumedFleet = recovered.id;
+    selected = fleet.starId;
+    selectedFleet = fleet.id;
+    void openPanel("military");
+  });
   let observation = $state(false);
   let construction = $state(false);
   let constructionChoice = $state<Development>("market");
@@ -1192,6 +1215,7 @@
       <SystemFleets
         bind:selected={selectedFleet}
         bind:routeDrafts
+        {recoveredFleet}
         {commandKind}
         {commandFleetId}
         {view}

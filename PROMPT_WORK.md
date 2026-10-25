@@ -303,12 +303,16 @@ Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | C
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-fleet-formation-stories.
 
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Record the second instrumented Linux identity pair and audit reviewed selected-history propagation without changing inherited pixels.
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Assert visible reorganization summaries before captures and record independent matrix queue evidence
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Review new fleet reorganization candidates across four viewports and preserve the 20:09 checkpoint
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Archive eight passing exact fleet journeys and carry the 20:19 supervisory checkpoint into the review stack
 
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-credit-stories
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-briefing-stories
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-construction-stories
-
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-fleet-formation-stories
+
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-fleet-reorganization-stories
 
 Prompt 69 | 9430f52d3d07628cecbcda944f5192332a09671342bfb3b48a32cb266d1c4346 | Retain second pre-test setup failure and use explicit owned Firestore websocket with normal project-root configuration.
 Prompt 74 | b636ddc861570349646aad5591a9a83da187819c0e5db3469a08a829277464d2 | Integrate both branch histories with exact parent archives and tested verbatim prompt and continuation preservation.
@@ -323,6 +327,9 @@ Prompt 97 | a9d2799ec916ce6e0aa6db07f82d5bb250e42b24b182fdcf96036a3081a61f12 | P
 Prompt 103 | bc3d207100eef0cde385b3854ed77d9be0a3321c69a7a03fec709009a9d04e00 | Integrate current PR55 with exact archived parent records and retain approved construction candidate provenance.
 Prompt 104 | 1ecbdd722f24f64273e13907e7cec28c84ac371b30d59dd95403916d0f9c8575 | Integrate current PR56 into fleet formation while preserving exact archived history and reviewer-approved reference scope.
 Prompt 104 | 1ecbdd722f24f64273e13907e7cec28c84ac371b30d59dd95403916d0f9c8575 | Verify post-merge parent checks retain proven sibling append transitions; preserve staged proof and regression tests.
+Prompt 105 | 16773f9ab61a56bd6f5d07a666c68fc780813f14a426b629f1778e7c6c975b47 | Integrate current PR57 and inspected reorganization references with exact immutable parent histories preserved.
+
+Prompt 106 | 18d0d503951ea3761d2e76f8d6bc245771040025cb4147004aa78878de55eb87 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 96 | d780608456873c9599a1804f303e7cf87456d1ca7b23b4a1259ad171a1145855 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
@@ -331,3 +338,5 @@ Prompt 98 | ec78ceffc24a09c8f2f66a37ffd1e3a93c039ecb9c4d2e4329412405c3f5b928 | C
 Prompt 104 | 41f7d6e89f513c98d56a5b390badc142029ba411af3d22df3ebbb40aedf3c8bc | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 107 | afa89a758bd689e5d9c979b1c954eb17d35a5e094173f8781427f2fc18a60fec | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 108 | 0118f50eee5a59ece233e9dfb80f45ec0d49d9fb266b8f9d3252f8f34be93c19 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
