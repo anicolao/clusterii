@@ -623,3 +623,9 @@ Reviewer code finding in your in-progress preservePromptHistory: records(...).tr
 Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
 
 Reviewer second finding: updated if (archivedBase || staged.length > previous.length) bypasses all PROMPT_WORK validation on archived-base CI checks. An exact prompt archive should not allow deleting/mutating inherited continuation records. Require inherited records retained in order for archived-base checks and both parents during integration; add negative test with exact prompt archive but deleted/mutated prior continuation. Whitespace fix and its regression tests look sound. Mainmeta records this. Continue current53fix; no duplicate CI.
+
+## Prompt 75: Layer approval
+
+Delegated reviewer exact image approval; main meta and recovery logs record intervening bounded-run instructions, original failures, and independent all13 changed originals.
+
+Reviewer: independently inspected all8unique changed SHA representatives covering13changedfiles in26Linux candidates. Independent rawRGBA bounds prove onlyintrotextchanged; full index and bounds at/tmp/cluster-pr53-layer-independent-{index,pixels}.json. Approve those13exact candidate PNGs with production layer change; retain13identical references. Proceed to scoped promotion/current strict verification, recording source and remaining cross-run uncertainty. Other short identity frames may also change from CSS: review any newly generated differences before approval, do not copy failed output blindly. Mainmeta records approval details and latest77review. No duplicate generation/merge.
