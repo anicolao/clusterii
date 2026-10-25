@@ -1,0 +1,98 @@
+[
+  {
+    "job": "stories (generate)",
+    "id": 121134140193,
+    "conclusion": "success",
+    "elapsedSeconds": 4156.0,
+    "stages": [
+      {
+        "name": "Set up job",
+        "seconds": 0.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "seconds": 140.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Bootstrap established Nix",
+        "seconds": 7.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Explicit baseline candidates (never acceptance)",
+        "seconds": 3922.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/upload-artifact@v4",
+        "seconds": 82.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Bootstrap established Nix",
+        "seconds": 2.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "seconds": 0.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Complete job",
+        "seconds": 0.0,
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "job": "stories (verify)",
+    "id": 121134140290,
+    "conclusion": "success",
+    "elapsedSeconds": 4156.0,
+    "stages": [
+      {
+        "name": "Set up job",
+        "seconds": 1.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "seconds": 144.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Bootstrap established Nix",
+        "seconds": 6.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Exact verification",
+        "seconds": 3919.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/upload-artifact@v4",
+        "seconds": 82.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Bootstrap established Nix",
+        "seconds": 1.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "seconds": 0.0,
+        "conclusion": "success"
+      },
+      {
+        "name": "Complete job",
+        "seconds": 0.0,
+        "conclusion": "success"
+      }
+    ]
+  }
+]

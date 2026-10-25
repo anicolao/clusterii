@@ -5161,3 +5161,13 @@ Reviewer: Completed independent inspection of all eight PR62 invitation002 expec
 ## Reviewer PR62 inherited references verified
 
 Reviewer checkpoint: Independently verified all216 approved formation/reorganization PNG hashes in PR62 7f56ac16e93503cec85839c6ba41bf7da4096eb4; no src/scripts/workflow/tests-e2e diff from8e683a73.58applicationSUCCESS;58-61visual checks still live.62documentation/publicationSUCCESS; application/strict live. Invitation-only generation40185678311 remains live; preserve it and existing checks, no duplicate dispatch. On completion extract bounded candidates/manifests and classify every frame against references plus eight exact approved actuals for independent later-frame review. Reconcile this checkpoint/meta in next safe attributed committed/pushed log update. No merge.
+
+
+## Reviewer completed generation handoff
+
+Reviewer: User asks why is the goal stalled. Independently checked goal metadata: status blocked, although actionable work now exists; do not confuse goal scheduling state with CI state. Invitation generation40185678311 now terminalSUCCESS. Continue immediately: bounded extraction of complete invitation candidates/manifests, independent SHA/spec/source validation and compare all72 historical frames against references and eight approved actuals, present changed later frames for review. Agent was idle awaiting this result.58application/docs/publicationPASS, stories still live;59-61 remaining checks live. Diagnose elapsed/live step progress for58 visual jobs read-only to distinguish slow from stuck; do not blindly restart. Keep priority next green PR. Reconcile human question verbatim in meta and this delegated instruction in attributed PROMPTS/PROMPT_WORK; commit/push logs with evidence. No merge.
+
+
+## Human progress question
+
+why is the goal stalled
