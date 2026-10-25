@@ -743,3 +743,9 @@ Delegated reviewer exact image approval; main meta and recovery logs record inte
 
 Reviewer: independently inspected all8unique changed SHA representatives covering13changedfiles in26Linux candidates. Independent rawRGBA bounds prove onlyintrotextchanged; full index and bounds at/tmp/cluster-pr53-layer-independent-{index,pixels}.json. Approve those13exact candidate PNGs with production layer change; retain13identical references. Proceed to scoped promotion/current strict verification, recording source and remaining cross-run uncertainty. Other short identity frames may also change from CSS: review any newly generated differences before approval, do not copy failed output blindly. Mainmeta records approval details and latest77review. No duplicate generation/merge.
 
+
+## Prompt 93: Explicit maintenance
+
+Delegated reviewer policy-failure correction; main meta explicitly permits justified reviewable scoped legacy maintenance while retaining coverage.
+
+Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.

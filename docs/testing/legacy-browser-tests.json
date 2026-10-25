@@ -24,8 +24,15 @@
     "status": "Procedural regression; illustrated migration incomplete"
   },
   "credit-offers.spec.ts": {
-    "sha256": "17a239784195f389ce144229cf2d4d9da3fe3535edc8d4912909761097f21292",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "b53b2b5b41598c94f5a9c2ea879d57d730a9d16182e86a326906e11f02c8a6e3",
+    "status": "Retained procedural mock/managed-key regression; exact pending-button maintenance exception, illustrated migration remains incomplete",
+    "maintenance": {
+      "kind": "exact-accessible-name-only",
+      "previousSha256": "17a239784195f389ce144229cf2d4d9da3fe3535edc8d4912909761097f21292",
+      "from": "name: \"Awaiting acknowledgement\u2026\"",
+      "to": "name: \"Awaiting receipt\"",
+      "review": "docs/testing/pr54-pending-locator/POLICY_MAINTENANCE.md"
+    }
   },
   "fleet-cancellation.spec.ts": {
     "sha256": "ab98e265d014b39c23b623f344ed83a8ada080a11ec3157f28cbdb0438518c67",
