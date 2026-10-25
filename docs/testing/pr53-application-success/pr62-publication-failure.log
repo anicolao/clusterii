@@ -1,0 +1,21 @@
+publish	Verify served revision and assets	﻿2026-10-25T06:51:48.0227885Z ##[group]Run node scripts/verify-pages.mjs "https://anicolao.github.io${PUBLIC_BASE_PATH}/" "$SOURCE_SHA"
+publish	Verify served revision and assets	2026-10-25T06:51:48.0228669Z ^[[36;1mnode scripts/verify-pages.mjs "https://anicolao.github.io${PUBLIC_BASE_PATH}/" "$SOURCE_SHA"^[[0m
+publish	Verify served revision and assets	2026-10-25T06:51:48.0231367Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+publish	Verify served revision and assets	2026-10-25T06:51:48.0231899Z env:
+publish	Verify served revision and assets	2026-10-25T06:51:48.0232143Z   SOURCE_SHA: e07299a56ca5d37cbf235b1c6b3a1fa0b467ee82
+publish	Verify served revision and assets	2026-10-25T06:51:48.0232449Z   PR_NUMBER: 62
+publish	Verify served revision and assets	2026-10-25T06:51:48.0232665Z   PUBLIC_BASE_PATH: /clusterii/pr62
+publish	Verify served revision and assets	2026-10-25T06:51:48.0235393Z   GH_TOKEN: ***
+publish	Verify served revision and assets	2026-10-25T06:51:48.0235687Z   DETSYS_INVOCATION_ID: e0251e25-e8bd-4f4b-8507-f67a2325c4c2
+publish	Verify served revision and assets	2026-10-25T06:51:48.0236041Z   DETERMINATE_NIX_KVM: 1
+publish	Verify served revision and assets	2026-10-25T06:51:48.0236269Z ##[endgroup]
+publish	Verify served revision and assets	2026-10-25T06:51:48.0463871Z warning: unknown setting 'build-provenance-tags'
+publish	Verify served revision and assets	2026-10-25T07:01:53.1742301Z file:///home/runner/work/clusterii/clusterii/scripts/verify-pages.mjs:27
+publish	Verify served revision and assets	2026-10-25T07:01:53.1743636Z   throw new Error(`Hosted revision did not match ${expected}; last observed ${observed}`);
+publish	Verify served revision and assets	2026-10-25T07:01:53.1744575Z         ^
+publish	Verify served revision and assets	2026-10-25T07:01:53.1744901Z 
+publish	Verify served revision and assets	2026-10-25T07:01:53.1745570Z Error: Hosted revision did not match e07299a56ca5d37cbf235b1c6b3a1fa0b467ee82; last observed HTTP 404
+publish	Verify served revision and assets	2026-10-25T07:01:53.1746787Z     at file:///home/runner/work/clusterii/clusterii/scripts/verify-pages.mjs:27:9
+publish	Verify served revision and assets	2026-10-25T07:01:53.1747483Z 
+publish	Verify served revision and assets	2026-10-25T07:01:53.1747649Z Node.js v24.18.0
+publish	Verify served revision and assets	2026-10-25T07:01:53.1817297Z ##[error]Process completed with exit code 1.
