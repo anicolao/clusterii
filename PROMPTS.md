@@ -1937,3 +1937,9 @@ Reviewer: all128 corrected60Linux cargo originals independently approved; 87exac
 Delegated reviewer instruction; main meta records independent twenty-image PR57 short approval and exact SHA index.
 
 Reviewer: new independent approval, not duplicate cargo instruction: all20 PR57 short Linux originals inspected as13distinct complete images, SHAindex /tmp/pr57-supervisor-short-index.json. Mainmeta records findings and manifest. At safe checkpoint after current cargo promotion, verify source/dirty provenance then promote these20 to57 and propagate existing stack. Reconcile/push latest logs. Preserve53 priority and existing jobs; no further feature branches or merges.
+
+## Prompt 294: Verified propagation
+
+Delegated reviewer instruction; latest main meta records independent58–62 checks and scoped PR55 failure.
+
+Reviewer: independent58–62 exact-parent checks and inherited image bytes now verified in latest mainmeta entries.55strict same6identity failures,122passed6failed8skipped; no unseen55actualapproval. Reconcile latest reviews into attributed PROMPTS/PROMPT_WORK and commit/push ledger. Fresh53identity121079458138/Pagesdeploy121078700345 stillqueued;56application/strict/generation running. Preserve handles/no duplicate generation; prioritize53complete images and exact publication recovery as results arrive. Scope remains green existing PRs, no merge or weakened checks.
