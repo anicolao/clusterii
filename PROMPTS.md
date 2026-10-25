@@ -1811,3 +1811,15 @@ Reviewer: main meta-prompts.md now records PR78 full code review and18of24 new h
 Delegated reviewer current PR54 application failure and scoped correction; main meta retains exact run and PR78 review scope.
 
 Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
+
+## Prompt 273: Resume construction
+
+Delegated reviewer next-stack preparation after independently reviewed PR55 integration; main meta records scopes and current-gate priorities.
+
+Reviewer:54/55 integration independently reviewed; immutable55 prompt suite18passed. Continue green stack without restarting live53/54/55 jobs. Reconcile latest main meta entries (completed78 image review,79scoped40help approvals,54/55 independent audit) into attributed ledger and push. With55 published, recover parked56 staged tree c6552c6b0ec19845048daec71848195c18210b89 at/private/tmp/cluster-pr54-credit-review safely, integrate reviewed55 parent preserving exact prompt history, retain approved160construction references and prepare next current-head checks. Reuse fixed separator logic with meaningful regression verification if needed; no assertion/tolerance weakening or uninspected baselines. If53/54/55 produce actionable failures, prioritize those. No GitHub merge.
+
+## Prompt 274: Policy compatibility
+
+Delegated reviewer current PR54 gate failure; main meta records exact evidence and explicit constrained exception boundary.
+
+Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.

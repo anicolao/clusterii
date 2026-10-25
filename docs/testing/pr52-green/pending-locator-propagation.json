@@ -197,5 +197,18 @@
         }
       ]
     }
-  ]
+  ],
+  "policyFailure": {
+    "application": 40159161854,
+    "strict": 40159161775,
+    "phase": "story-policy before browser",
+    "cause": "One-line locator repair changed frozen legacy SHA; omitted local policy rerun before prior publication",
+    "correction": "Explicit exact-name-only maintenance record with whole-file reverse-substitution SHA proof; checker unchanged; no coverage removed",
+    "validation": "full policy12tests pass on54and55; retained focused real-service23.0s pass; no duplicate browser run",
+    "heads": {
+      "54": "9a712a9b",
+      "55": "f6b2cf4c"
+    },
+    "PR56": "parked tree verified c6552c6b; refs/checkpoints/pr56-parked-index protects it; unchanged pending earlier-gate priority and disk"
+  }
 }
