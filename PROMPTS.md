@@ -1943,3 +1943,15 @@ Reviewer: new independent approval, not duplicate cargo instruction: all20 PR57 
 Delegated reviewer instruction; latest main meta records independent58–62 checks and scoped PR55 failure.
 
 Reviewer: independent58–62 exact-parent checks and inherited image bytes now verified in latest mainmeta entries.55strict same6identity failures,122passed6failed8skipped; no unseen55actualapproval. Reconcile latest reviews into attributed PROMPTS/PROMPT_WORK and commit/push ledger. Fresh53identity121079458138/Pagesdeploy121078700345 stillqueued;56application/strict/generation running. Preserve handles/no duplicate generation; prioritize53complete images and exact publication recovery as results arrive. Scope remains green existing PRs, no merge or weakened checks.
+
+## Prompt 295: Publication recovered
+
+Delegated reviewer instruction; independent exact revision/assets verification and reviewer-issued failed-only reruns are recorded in main meta.
+
+Reviewer: Pages40163030217/deploy121078700345 nowSUCCESS. Independently ran unchanged53verify-pages under Nix: exact53source/build3be6f22d and56exact99c40f39 bothPASS with entry/diagnostics/gallery/animationlab/26assets. I requested failed-only publication reruns40160719087 and40161305387; acceptedexit0. Preserve these reruns, no duplicate request. Mainmeta has evidence/session/path. Continue53identity priority, reconcile/push attributed logs. No merge.
+
+## Prompt 296: Serialized publication
+
+Delegated reviewer correction; main meta supersedes the earlier expectation that both failed-only publication reruns remained queued.
+
+Reviewer correction from freshAPI:53publication40160719087 attempt2 was CANCELLED;56publication40161305387 attempt2 PENDING. Shared pages-tree concurrency likely replaced pending53. Preserve56; serialize recovery and rerun terminalcancelled53 after56completes, not concurrently. Mainmeta corrected; neither publication is yet green. Served-revision independent checks both remainPASS.
