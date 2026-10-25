@@ -2271,3 +2271,10 @@ Reviewer: Independently confirmed PR58 all5SUCCESS at3352be3e3c02de5a2d7f32bffc4
 Delegated reviewer checkpoint; main meta Reviewer prepared promotion verification and forward preflight.
 
 Reviewer: Independently verified all72 invitation PNG hashes in prepared05d30b20 against complete approved generation.59,60,61 application checks nowSUCCESS; their stories remain live.62application/strict still live; preserve safe publication boundary. While waiting, retain read-only63 preflight evidence: current9050d65e strict39723194222 is old Oct22 terminalFAILURE, log saved /tmp/cluster-pr63-strict-failed.log showing missing inherited Linux construction/credit references and emulator connection failures. Classify before advancing63; do not rerun stale head or start new feature scope. Reconcile this checkpoint/meta with next safe attributed log commit/push; no merge.
+
+
+## Prompt 345: Isolated next-stack preparation
+
+Delegated reviewer instruction; main meta Reviewer next-stack preparation.
+
+Reviewer:59 generation nowSUCCESS, strict stilllive;60/61stories and62application/strict remainlive. No new failure or green frontier change. While waiting, prepare PR63 parent integration in an isolated branch based on approved62 promotion05d30b20, preserving all reviewed parent fixes and baseline hashes. Do not push63 active branch before62 integration boundary. Inspect exact original63 delta from its original parent to avoid reintroducing obsolete source/reference reversions. Determine bounded paused-fleet-travel generation path using established Nix tooling; preserve assertions and require complete successful four-size candidates for independent review before promotion. Keep new feature work out of scope. Reconcile this handoff/meta into attributed logs; no merge.
