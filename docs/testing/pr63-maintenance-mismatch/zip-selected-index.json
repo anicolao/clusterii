@@ -1,0 +1,86 @@
+[
+  {
+    "path": "ci-evidence/nix-renderer/browser-path.txt",
+    "crc32": 503735925,
+    "compressed": 41,
+    "bytes": 49
+  },
+  {
+    "path": "ci-evidence/nix-renderer/image-identity.txt",
+    "crc32": 4285110663,
+    "compressed": 100,
+    "bytes": 144
+  },
+  {
+    "path": "ci-evidence/nix-renderer/image-inspect.json",
+    "crc32": 922919982,
+    "compressed": 946,
+    "bytes": 2411
+  },
+  {
+    "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+    "crc32": 4057845848,
+    "compressed": 403,
+    "bytes": 1491
+  },
+  {
+    "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+    "crc32": 1284688365,
+    "compressed": 1110,
+    "bytes": 6729
+  },
+  {
+    "path": "test-results/stories/maintenance-admission-recovery/short/linux-arm64/002-open-roster-1-maintenance-host.layout.json",
+    "crc32": 1384265194,
+    "compressed": 295,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/maintenance-admission-recovery/short/linux-arm64/002-open-roster-2-waiting-envoy.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host.layout.json",
+    "crc32": 1384265194,
+    "compressed": 295,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/maintenance-admission-recovery/short/linux-arm64/FAILED.json",
+    "crc32": 962039099,
+    "compressed": 1305,
+    "bytes": 2942
+  },
+  {
+    "path": "test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/error-context.md",
+    "crc32": 151494266,
+    "compressed": 4807,
+    "bytes": 14529
+  },
+  {
+    "path": "test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host-actual.png",
+    "crc32": 211251112,
+    "compressed": 262623,
+    "bytes": 267499
+  },
+  {
+    "path": "test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host-diff.png",
+    "crc32": 3896644047,
+    "compressed": 68238,
+    "bytes": 98187
+  },
+  {
+    "path": "test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host-expected.png",
+    "crc32": 3768673610,
+    "compressed": 262852,
+    "bytes": 267206
+  },
+  {
+    "path": "test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/trace.zip",
+    "crc32": 3933581158,
+    "compressed": 5336623,
+    "bytes": 5348909
+  }
+]
