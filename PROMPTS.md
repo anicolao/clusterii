@@ -851,3 +851,11 @@ Reviewer: independently downloaded only21 actual/expected/diff PNGs from artifac
 
 
 
+## Prompt 98: Complete identity
+
+Delegated reviewer approval; see main meta Reviewer PR53 complete identity approval and handoff.
+
+Reviewer: independent review now APPROVES all27changed exact originals in /tmp/cluster-pr53-complete-linux/changed-groups.json:15remaining distinct originals individually inspected +6exact previously approved hashes, all27SHA verified underNix. Full findings/handoff appended mainmeta under Reviewer PR53 complete identity approval and handoff. Promote to53 now with provenance and full gates; commit/push attributed logs/exact-parent checks, carry compatible fix through54–62. Prioritize53fullygreen.56strict/generation now terminalFAILURE: triage existing results.57publication nowIN_PROGRESS; preserve serialization, avoid rerunning obsolete53publication after newhead. No merges/weakened checks.
+
+
+
