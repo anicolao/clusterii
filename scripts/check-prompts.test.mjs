@@ -250,6 +250,24 @@ test('later stacked integration recognizes only a Git-verified inherited record 
 });
 
 
+test('explicit structural separators retain exact request whitespace and reject undeclared changes', t => {
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const parentLog=initial+next;
+ f.write(parentLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent prompt');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);const childLog=initial+next.replace('Second user request.','Child user request.');
+ f.write(childLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Child prompt');f.write(parent+'\n','.git/MERGE_HEAD');
+ const dir=`docs/prompt-history/${parent}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});
+ f.write(parentLog,`${dir}/PROMPTS.md`);f.git('add',dir);
+ const combined=childLog+next.replace('Prompt 2:','Prompt 3:')+'\n\n';
+ f.write(combined);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0,'default one LF does not accept two');
+ const metadata={sourceCommit:parent,recordSeparator:'\n\n'};
+ f.write(JSON.stringify(metadata),`${dir}/separator.json`);f.git('add',dir);assert.equal(f.check(),0);
+ for(const altered of [combined+'\n',combined.slice(0,-1),combined.replace('Second user request.','Second user request. ')]) {f.write(altered);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
+ f.write(combined);f.git('add','PROMPTS.md');
+ f.write(JSON.stringify({...metadata,sourceCommit:common}),`${dir}/separator.json`);f.git('add',dir);assert.notEqual(f.check(),0);
+ f.write(JSON.stringify(metadata),`${dir}/separator.json`);f.git('add',dir);f.git('commit','-qm','Merge exact records');assert.equal(f.check('--base',parent),0);
+});
+
 test('reintegrating a parent retains its formerly final request already archived by child', t => {
  const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
  const parentOld=initial+next;f.write(parentOld);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent original');const old=f.git('rev-parse','HEAD').trim();
@@ -264,6 +282,19 @@ test('reintegrating a parent retains its formerly final request already archived
  for(const bad of [combined.replace('Second user request.\n','Second user request. \n'),combined.replace('Second user request.\n\n','Second user request.\n'),combined.replace('Later parent request.\n','Later parent request.\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
 });
 
+test('reintegrating a parent respects the child declared two-LF record separator', t => {
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const parentOld=initial+next;f.write(parentOld);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent original');const old=f.git('rev-parse','HEAD').trim();
+ const later='## Prompt 3: Parent Later\n\nLater parent request.\n';
+ const parentNew=parentOld+'\n'+later;f.write(parentNew);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent later');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);
+ const child=initial+next.replace('Second user request.','Child request.')+next.replace('Prompt 2:','Prompt 3:')+'\n\n## Prompt 4: Child Later\n\nChild later request.\n';f.write(child);
+ const archive=(ref)=>{const dir=`docs/prompt-history/${ref}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(f.git('show',`${ref}:PROMPTS.md`),`${dir}/PROMPTS.md`);f.git('add',dir);};
+ archive(old);f.git('add','PROMPTS.md');f.git('commit','-qm','Child retained original parent');
+ f.write(parent+'\n','.git/MERGE_HEAD');archive(parent);f.write(JSON.stringify({sourceCommit:parent,recordSeparator:'\n\n'}),`docs/prompt-history/${parent}/separator.json`);f.git('add',`docs/prompt-history/${parent}/separator.json`);
+ const combined=child+'\n'+later.replace('Prompt 3:','Prompt 5:')+'\n\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
+ for(const bad of [combined.replace('Second user request.\n','Second user request. \n'),combined.replace('Second user request.\n\n','Second user request.\n'),combined.replace('Later parent request.\n','Later parent request.\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
+});
 
 test('post-merge appended prompt retains the exact copied final parent record in base checks', t => {
  const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();const parentLog=initial+next;

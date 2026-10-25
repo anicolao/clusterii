@@ -44,6 +44,17 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     fail('Preserve divergent parent prompt history in an exact regular commit-addressed archive.');
   }
   validateLog(previous);
+  let separator = '\n';
+  const separatorPath = `docs/prompt-history/${revision}/separator.json`;
+  const separatorEntry = git(['ls-files', '--stage', '--', separatorPath]);
+  if (separatorEntry) {
+    if (!separatorEntry.startsWith('100644 ') || !separatorEntry.includes(` 0\t${separatorPath}\n`)) fail('Record separator metadata must be a regular staged file.');
+    const metadata = JSON.parse(git(['show', `:${separatorPath}`]));
+    if (metadata.sourceCommit !== revision || !['\n', '\n\n'].includes(metadata.recordSeparator)
+        || Object.keys(metadata).sort().join(',') !== 'recordSeparator,sourceCommit') fail('Invalid explicit record separator metadata.');
+    separator = metadata.recordSeparator;
+  }
+
   const records = log => [...log.matchAll(/^## Prompt [1-9][0-9]*: ([^\n]+)\n\n([\s\S]*?)(?=^## Prompt |$(?![\s\S]))/gm)]
     .map(match => `${match[1]}\n\n${match[2]}`);
   const prior = records(previous), current = records(staged);
@@ -75,7 +86,7 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     }
   }
   const copiedVariants = prior.map(record => {
-    const variants = new Set([`${record}\n`]);
+    const variants = new Set([`${record}${separator}`]);
     for (let pass = 0; pass <= appendedTransitions.length; pass++) {
       const size = variants.size;
       for (const [before, after] of appendedTransitions) if (variants.has(before)) variants.add(after);
@@ -88,12 +99,12 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
 
   let cursor = 0;
   while (cursor < prior.length && same(current[cursor], prior[cursor])) cursor++;
-  // Reconciled records are appended with exactly one additional LF separator.
+  // Reconciled records use the exact declared structural separator (default one LF).
   // Never trim body bytes: trailing spaces and every original newline survive.
   for (const record of current.slice(cursor)) {
-    // A previously copied final record can become an interior parent record.
-    const retainedSeparator = record === prior[cursor] && record.endsWith('\n')
-      && originals.has(record.slice(0, -1));
+    const originalRecord = record.endsWith(separator) ? record.slice(0, -separator.length) : null;
+    const retainedSeparator = originalRecord !== null && originals.has(originalRecord)
+      && prior[cursor] === `${originalRecord}\n`;
     if (copiedVariants[cursor]?.has(record) || retainedSeparator) cursor++;
   }
   if (cursor !== prior.length) fail('Retain every archived parent request verbatim and in order in the canonical log.');
