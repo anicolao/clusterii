@@ -1,0 +1,18 @@
+✔ actual outer launcher dispatch accepts only the exact bounded paused-travel route (50.938ms)
+✔ actual inner dispatch reaches only the bounded candidate entry and rejects unsupported recovery arguments (26.969833ms)
+✔ complete outer script admits paused-travel to runner preflight without starting infrastructure (5.407625ms)
+✔ only a fresh exact four-size paused-travel request can execute (0.520709ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 132.429292
+Listing tests:
+  [phone] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [desktop] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [large] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [short] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+Total: 4 tests in 1 file
