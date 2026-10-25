@@ -1715,3 +1715,58 @@ Reviewer: Completed independent inspection of all eight PR62 invitation002 expec
 Delegated reviewer instruction; human question remains verbatim in main meta Human progress question, not duplicated as a direct prompt.
 
 Reviewer: User asks why is the goal stalled. Independently checked goal metadata: status blocked, although actionable work now exists; do not confuse goal scheduling state with CI state. Invitation generation40185678311 now terminalSUCCESS. Continue immediately: bounded extraction of complete invitation candidates/manifests, independent SHA/spec/source validation and compare all72 historical frames against references and eight approved actuals, present changed later frames for review. Agent was idle awaiting this result.58application/docs/publicationPASS, stories still live;59-61 remaining checks live. Diagnose elapsed/live step progress for58 visual jobs read-only to distinguish slow from stuck; do not blindly restart. Keep priority next green PR. Reconcile human question verbatim in meta and this delegated instruction in attributed PROMPTS/PROMPT_WORK; commit/push logs with evidence. No merge.
+## Prompt 127: Travel catch-up
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 22:10 Toronto”.
+
+Reviewer continuation 2026-10-21 22:10 Toronto: #62 published cleanff1d616 on #61; pane idle since21:59. Continue milestone6 pause/catch-up travel acceptance as a small successor to #62 using TestStepHelper user-story journeys. Cover real leased delayed/batched tick settlement, correct departure/arrival timing and conservation, repeated/concurrent delivery idempotence, private owner/observer views, reload and keyboard access across four viewports. Preserve procedural checks and explicit harness boundaries; do not certify hosted scheduling from an emulator clock. After that slice continue remaining IMPLEMENTATION_PLAN work rather than stopping solely for queued CI. Keep targeted identity-raster investigation, exact-head previews and independent visual/Linux gates open. Latest GitHub retrieval had a TLS timeout, so recheck read-only when available, without broad duplicate runs. Carry checkpoints through22:10 into attributed PROMPTS/PROMPT_WORK and committed/pushed meta logs. No merge.
+
+
+
+## Prompt 128: Capture diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 23:46 Toronto”.
+
+Reviewer continuation 2026-10-21 23:46 Toronto: pane stopped with workspace routing discovery timed out at cleaneeb84e6. Resume the existing pause/catch-up slice and trace diagnosis; do not restart or duplicate work. Reviewed correction to zero stationed fleets after departure, retaining selection of the actual traveling fleet. Diagnose the 4K ten-second step using completed trace timing and bounded diagnostic scope; preserve assertions, exact pixels and original failure artifacts. Finish candidate review, strict comparison and appropriate regressions before publication. Carry checkpoints through23:46 into attributed logs and commit/push. Current CI has no newly completed failure beyond recorded #52 raster recurrence. No merge; retain full independent/Linux/preview gates.
+
+
+## Prompt 129: Isolated next-stack preparation
+
+Delegated reviewer instruction; main meta Reviewer next-stack preparation.
+
+Reviewer:59 generation nowSUCCESS, strict stilllive;60/61stories and62application/strict remainlive. No new failure or green frontier change. While waiting, prepare PR63 parent integration in an isolated branch based on approved62 promotion05d30b20, preserving all reviewed parent fixes and baseline hashes. Do not push63 active branch before62 integration boundary. Inspect exact original63 delta from its original parent to avoid reintroducing obsolete source/reference reversions. Determine bounded paused-fleet-travel generation path using established Nix tooling; preserve assertions and require complete successful four-size candidates for independent review before promotion. Keep new feature work out of scope. Reconcile this handoff/meta into attributed logs; no merge.
+
+
+## Prompt 130: Paused focus correction
+
+Delegated reviewer instruction; main meta Reviewer paused-travel short focus defect.
+
+Reviewer: Independently completed all22 distinct short paused-fleet-travel images covering34files. HOLD groups for 024-pause-travel-1-fleet-marshal sha af211b4e7a4ac226b4b08540f1beb57756cd439f4e5aa6f7a22684cc4c32ac02 and 027-resume-travel-1-fleet-marshal sha c0a0119efb598674003608c979b9063ca307791b4adf4e0f524e235bd5cf301c: focused Resume/Pause campaign button bottom and focus outline clipped by roster bottom at y690 in720px viewport. This is actionable focused-control clipping, not acceptable neighboring-content scrolling. Approve remaining short groups only for scoped regression; exact lists /tmp/cluster-pr63-paused-linux/short-approved.json and short-held.json. Independently viewed arrival/recovery: conserved2fighters,20surfaceinfantry, recoveredfleet2/0 and peerownresources readable. Implement minimal actual focus visibility/scroll recovery in isolated PR63 preparation; assert entire focused control plus outline lies inside every clipping ancestor, inspect existing visibility helper before duplicating. Preserve original assertions/tolerances and Nix-only workflow; inspect actual Pantheon E2E structure/instructions before any story addition/reorganization. Regenerate bounded affected family after fix and provide exact changed-image comparison for independent inspection; prior approvals apply only unchanged hashes. Large34 still unreviewed. PR62 now05d30b20 with documentation/publication/generation SUCCESS, application/strict live; preserve runs, verify served publication. Reconcile this exact handoff and meta into reviewer-attributed PROMPTS/PROMPT_WORK and commit/push logs. No GitHub merge.
+
+
+## Prompt 131: Corrected family approval
+
+Delegated reviewer instruction; main meta Reviewer complete corrected paused-travel approval.
+
+Reviewer: Completed independent inspection of all22 distinct large paused-travel captures covering34 files, including final formation/route/pause/recovery/resume/arrival readings; all readable with full focus controls and conserved2fighters20infantry across arrival. Large inspected resized2048x1152 from3840x2160, scoped regression/layout approval, not full design or rules acceptance. Also inspected both corrected short024/027 actuals and diff images: only intended roster scrolling changes, full focused Pause/Resume control plus outline now inside panel. Independently rehashed all136 fresh Linux captures:134 byte-identical to prior family, exactly2 corrected; four passed manifests specSha matches e167566e. Complete corrected136 family now approved for exact regression promotion, index /tmp/cluster-pr63-focus-linux/full-approved.json; original held hashes must not be used. Prepare/publish PR63 integration atop current reviewed62 05d30b20 with corrected source e167566e and these exact references, retaining source/renderer dirty:true provenance and all assertions/tolerances. Verify inherited approved hashes and start unchanged required checks; preserve live62 checks and serialize publication to avoid cancellation. Review any subsequent maintenance/migration/history mismatches rather than blanket updates. Reconcile exact handoff/meta, approval evidence and continuations in reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+## Prompt 132: Maintenance baseline verification
+
+Delegated reviewer instruction; main meta Reviewer PR63 maintenance focus baseline approval.
+
+Reviewer: Independently inspected PR63 short maintenance003 expected, actual and diff at1280x720; independently rehashed originals. Expected c9771048d2441b20e001f7f7fa7f6eb6ca1d07cb6e045d9ad72584413fce7c0e clips Pause lower border/focus ring. Actual932203f38bf4763abc499f0a94dfb5b81798656461a5e5627bde527c00678510 moves roster contents upward10px, full control and outline visible, surrounding panel/map unchanged. Approve this exact actual for scoped regression baseline replacement; no new source correction required on present evidence. Prepare isolated PR63 update atopf8adb007 with only this approved reference plus attributed evidence/logs. Run one bounded complete short maintenance journey under established pinned Nix renderer, unchanged source/assertions/deadlines, to expose remaining states masked by first failure. If strict passes, present complete manifests/hash comparison and proposed active63 head; if additional mismatches occur retain originals for independent review, no blanket updates. Preserve live64/65 runs and65 retry; PR66 remains frozen. Reconcile exact handoff/meta and continuation in reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+## Prompt 133: Complete maintenance candidates
+
+Delegated reviewer instruction; main meta Reviewer complete maintenance family correction.
+
+Reviewer: Independently inspected short maintenance004 expected/actual/diff. Approve exact actual SHA256 999d68d5233c5a1da3ac5e2ccb7a4350ceae1fc881e03a7e01c283ab9bf19155 for scoped regression: intended10px upward roster scroll persists after pause, acknowledgement readable, Resume full focus outline visible, map/panel fixed; lower encryption section remains scrollable secondary content. Do not run another serial first-mismatch strict attempt. Generate one COMPLETE short maintenance candidate journey now with all functional assertions/deadlines retained under pinned Nix renderer, then present every changed expected/actual/diff and exact unchanged hashes together. Generation must not promote references; only003/004 exact inspected hashes are approved so far. Review all later states before active63 publication, then carry same verified correction forward through64/65 at safe terminal boundaries. Independently confirmed64 strict40196208632 terminalFAILURE with same003 snapshot and53332pixels; log /tmp/cluster-pr64-current-failure.log. Preserve65 live strict/retry;66 frozen. Reconcile exact handoff/meta in reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+## Prompt 134: Maintenance family publication
+
+Delegated reviewer instruction; main meta Reviewer complete maintenance approval and publication.
+
+Reviewer: Independently inspected maintenance007 expected/actual/diff: acknowledged resume readable, intended10px roster scroll exposes full focused Pause control, background/panel unchanged. Approve actual0d369278969e687552757d0842e496c36cab88a26bed11f8ddde6ccdfa07926d for scoped regression. Independently compared all13 complete generation originals with activef8adb007 git blobs:10exact unchanged, only003/004/007changed, all three exact inspected approved hashes. Complete short maintenance family approved. Publish isolated PR63 correction with exactly these three approved references plus provenance/logs, no product/spec/assertion/tolerance change; verify complete inherited reference tree and start unchanged required CI. Propagate reviewed parent correction through64 then65 at safe terminal boundaries, serialize publication and preserve65 live application retry.65 strict nowterminalFAILURE: classify its log before propagation and inspect any distinct finding; do not assume identical. No further maintenance candidate run needed absent new evidence. PR66 stays frozen pending independent56 review. Reconcile exact handoff/meta and continuations in reviewer-attributed committed/pushed logs. No GitHub merge.

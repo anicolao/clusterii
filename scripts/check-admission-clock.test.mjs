@@ -12,6 +12,7 @@ import {
 const target = "file:///isolated/shared/campaign.js";
 initialize({ target });
 const source = `
+export function maintainCampaign(current, input, uid, now) { return { current, input, uid, now }; }
 export function createCampaign(id, input, seed, now) { return { input, seed, now }; }
 export function joinOrLeave(current, input, uid, profile, now) { return { current, input, uid, profile, now }; }
 export function startCampaign(current, now) { return { current, now }; }
@@ -78,6 +79,38 @@ test("admission loader preserves identities and actions and rejects changed sign
       scheduledAt,
     );
     assert.equal(fixture.startCampaign({ name: "Ordinary" }, 987).now, 987);
+    const travel = {
+      name: "Scheduled story fleet catchup phone",
+      economy: { nextTickAt: 1800000 },
+    };
+    const pause = { kind: "campaign.pause", expectedRevision: 7 };
+    assert.deepEqual(
+      fixture.maintainCampaign(travel, pause, "actual-user", 987),
+      { current: travel, input: pause, uid: "actual-user", now: 900001 },
+    );
+    assert.equal(
+      fixture.maintainCampaign(
+        { ...travel, pausedAt: 900001 },
+        { kind: "campaign.resume" },
+        "actual-user",
+        987,
+      ).now,
+      4500001,
+    );
+    assert.equal(
+      fixture.maintainCampaign(
+        { name: "Scheduled story fleet route phone", economy: travel.economy },
+        pause,
+        "actual-user",
+        987,
+      ).now,
+      987,
+    );
+    assert.equal(
+      fixture.maintainCampaign({ name: travel.name }, pause, "actual-user", 987)
+        .now,
+      987,
+    );
     await assert.rejects(
       load(target, {}, async () => ({
         format: "module",

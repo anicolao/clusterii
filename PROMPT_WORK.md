@@ -408,3 +408,12 @@ Prompt 113 | 9e27b6541a18e45a5ca0930ce2725f01f0db572305d2f2390c5718bf6377175b | 
 Prompt 116 | 48904fc8e536cebad3c230a9e1dd918007b8b5bfddb1950a49ddb09ec36db142 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 118 | b28027d9a64f90e57c95498ec91c5b92fe5db21d8b62a7eeae258cd8ccc6fb6f | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 60 | e9ee1581c65b5d28372170a05026a9277246c5cc8b0e883467985fd56d429964 | Verify each immutable catch-up tick ledger and fractional production conservation.
+Prompt 60 | e9ee1581c65b5d28372170a05026a9277246c5cc8b0e883467985fd56d429964 | Correct in-flight navigation using the exact zero-stationed-fleet control and retain failure traces.
+Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Review and promote only new paused-travel candidates before strict comparison; retain CI diagnosis.
+Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Archive twelve exact journeys and retained travel regressions; carry supervisory logs and distinct CI resource evidence.
+
+Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | Retain four complete corrected maintenance-focus journeys and136 source-bound local originals before pinned Linux verification.
+
+Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | Retain complete Linux focus verification and exact two-change comparison; preserve134 identical originals and pending independent approvals.
