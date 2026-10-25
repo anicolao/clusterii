@@ -5,7 +5,7 @@ import { spawnSync } from 'node:child_process';
 const outer = readFileSync(new URL('../nix/ci-renderer.sh', import.meta.url), 'utf8').match(/case [\s\S]*?\nesac/)[0];
 const inner = readFileSync(new URL('./ci-in-renderer.sh', import.meta.url), 'utf8').match(/case [\s\S]*?\nesac/)[0];
 const run = (code,args) => spawnSync('bash',['-eu','-c', 'node() { printf "NODE:%s\n" "$*"; }; bun() { printf "BUN:%s\n" "$*"; }; '+code,'dispatch',...args],{encoding:'utf8'});
-test('actual outer launcher dispatch accepts only the exact bounded maintenance route',()=>{
+test('actual outer launcher dispatch accepts only the exact bounded route-repeat route',()=>{
  assert.equal(run(outer,['recovery','route-repeat']).status,0);
  for(const args of [[],['recovery'],['recovery','all'],['recovery','route-repeat','extra'],['arbitrary']]) assert.equal(run(outer,args).status,2);
  for(const args of [['stories','verify'],['stories','generate'],['application']]) assert.equal(run(outer,args).status,0);
@@ -15,7 +15,7 @@ test('actual inner dispatch reaches only the bounded candidate entry and rejects
  for(const args of [['recovery'],['recovery','all'],['recovery','route-repeat','extra'],['arbitrary']]) {const result=run(inner,args);assert.equal(result.status,2);assert.equal(result.stdout,'');}
 });
 
-test('complete outer script admits maintenance to runner preflight without starting infrastructure',()=>{
+test('complete outer script admits route repeat to runner preflight without starting infrastructure',()=>{
  const env={...process.env};delete env.RUNNER_TEMP;
  for(const key of ['containerd','rootShell','engine','imageArchive','imageTag','imageConfig','imageDigest','nixCommand']) env[key]='unused-fixture';
  const result=spawnSync('bash',['nix/ci-renderer.sh','recovery','route-repeat'],{encoding:'utf8',env});

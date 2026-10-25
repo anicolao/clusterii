@@ -1,4 +1,4 @@
-name: Bounded PR65 bounded route repeat candidates
+name: Bounded PR65 route repeat candidates
 on:
   push:
     branches: [investigate/pr65-route-observation-repeat]
@@ -9,7 +9,7 @@ concurrency:
   group: cluster-pr65-route-repeat
   cancel-in-progress: false
 jobs:
-  maintenance:
+  route-repeat:
     if: github.repository == 'anicolao/clusterii'
     runs-on: ubuntu-24.04-arm
     timeout-minutes: 35
@@ -32,7 +32,7 @@ jobs:
       - name: Two complete four-size route passes
         timeout-minutes: 30
         run: nix run path:./nix#ci-renderer -- recovery route-repeat
-      - name: Preserve bounded maintenance evidence
+      - name: Preserve both complete route passes
         timeout-minutes: 3
         if: always()
         uses: actions/upload-artifact@v4

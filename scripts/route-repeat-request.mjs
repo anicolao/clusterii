@@ -82,7 +82,7 @@ function main() {
   });
   if (git("status", "--porcelain"))
     throw Error("Request checkout must be clean");
-  if (createHash("sha256").update(readFileSync("tests/browser/fleet-route-recovery.story.spec.ts")).digest("hex") !== request.specSha256) throw Error("Maintenance spec differs from bound request");
+  if (createHash("sha256").update(readFileSync("tests/browser/fleet-route-recovery.story.spec.ts")).digest("hex") !== request.specSha256) throw Error("Route recovery spec differs from bound request");
   result.specSha256 = request.specSha256;
   result.requestSha256 = createHash("sha256").update(bytes).digest("hex");
   mkdirSync("ci-evidence/recovery-request", { recursive: true });
