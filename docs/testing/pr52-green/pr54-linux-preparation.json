@@ -1,8 +1,8 @@
 {
   "productionCandidate": "35211669",
-  "sourceCommit": "3a41749e",
-  "executorCommit": "dc1fdd4a48b1e17de6f3a793ea07cdd9d1dc5f00",
-  "run": 40154163510,
+  "sourceCommit": "e70f3667",
+  "executorCommit": "a40542c98c706cece9befc428836e772f5e76b5e",
+  "run": 40154407498,
   "status": "in_progress",
   "cases": 8,
   "expectedImages": 212,
@@ -17,5 +17,14 @@
   ],
   "referenceApproval": "pending fresh Linux inspection",
   "original212": "retained; 210 acceptable at original source; 2 phone labels previously held",
-  "reviewerForward": "PR66 source review; PR67 source/82 assertions and sampled Darwin label comparison only. No Linux approval."
+  "reviewerForward": "PR66 source review; PR67 source/82 assertions and sampled Darwin label comparison only. No Linux approval.",
+  "initialRun": {
+    "id": 40154163510,
+    "result": "failure",
+    "phase": "outer launcher dispatch before tests",
+    "images": 0,
+    "reason": "recovery:credit absent from outer allowlist",
+    "retained": "/tmp/cluster-pr54-candidate-failed.log"
+  },
+  "dispatchValidation": "Three local tests pass including complete outer preflight; reviewer independently passed two dispatch tests. Request02 is new; request01 is unchanged."
 }

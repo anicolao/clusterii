@@ -3925,3 +3925,59 @@ Independently inspected full-size committed phone018 before(0666727d) and after(
 ## Reviewer checkpoint — PR53 partial checks
 
 PR53fa414436 publication now passed3m54s, documentation passed2m6s; strict and application still pending. PR52 remains first fullygreen milestone. Implementer54 integrated53 at35211669 and prepares restricted eight-case Linux credit generation with original assertions/deadlines, healthy work; do not duplicate generation or approve uninspected candidates.
+
+## Reviewer PR54 fresh-candidate executor review
+
+Read complete recovery-credit workflow, credit-request.mjs and credit-candidates.mjs at dc1fdd4a48b1e17de6f3a793ea07cdd9d1dc5f00. Request binds clean exact checkout/source3a41749e54a829fff880e0e8b07ce0ad9e908ba4, isolated new request plus continuation only, expected repository/branch/push/attempt1; eight enumerated existing credit cases across four sizes, retries0 and update-snapshots none. Nix renderer invocation generates candidates only. Independently reviewed actual pending-label and padding delta at integrated35211669: three pending labels become Awaiting receipt, horizontal padding6 while vertical12 retained; two geometry assertions strengthened to exactly one text line within button. Source identity leading fix inherited from reviewed52. No candidate approval from executor/code review. Live job40154163510/121051819443 confirmed in_progress on exact executor; no restart.
+
+
+## Reviewer PR67 historical CI triage
+
+Exact67 headc4a5cac2 historical strict39730009405/job119662633581 failed55m43s:113passed55failed8skipped across cohorts; allfour observation journeys stop at missing Linux010 reference. Generation119662633454 succeeded but explicitly no files/no uploaded artifacts, so supplies no approval candidates. Application119662633152 anddocs119662633078 passed historically. Retained logs/tmp/cluster-pr67-{failed,generate}.log. Fresh Linux observation generation/review remains required after stack integration; inspected macOS phone correction does not fill those missing references.
+
+
+## Reviewer forward review — PR68 navigation labels
+
+PR68 a6f04e9ce2f96080d81788dbe1788427b1dade2a base67. Read full production/story/helper delta and design/baseline review. Decorative projected HTML wrappers explicitly pointer-events:none; shared geometry check uses actual elementFromPoint at label center to reject intercepting label/wrapper, retained existing navigation assertions with added separation/containment. No new definite code finding. Independently inspected full-size committed phone005 keyboard-orbit before/after: previously clipped Guniibuu name and class now contained/readable at right edge, selected star/inspector/focus remain intact. Approve only this specific macOS regression correction. This does not approve uninspected Linux references or substitute for runtime pointer/CI verification. Files/tmp/cluster-pr67-review/navigation-{before,after}.png.
+
+
+## Reviewer actionable failure — PR54 outer Nix dispatch
+
+Fresh credit job40154163510/121051819443 failed before any journeys. Exact retained log/tmp/cluster-pr54-candidate-failed.log ends02:24:04UTC Usage: cluster-ci-renderer stories verify|generate OR application; exit2. Inner scripts/ci-in-renderer.sh gained recovery:credit dispatch, but outer nix/ci-renderer.sh line5 accepts only stories:verify|stories:generate|application:. Add exact recovery:credit allowance to outer launcher, retain invalid-argument rejection, verify end-to-end dispatch through both layers before a new isolated request. No screenshots generated/approved; do not rerun same immutable attempt1 request. Preserve this failed diagnostic. Existing53CI unaffected.
+
+
+## Reviewer handoff — PR54 dispatch correction
+
+Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh:5 (only stories:verify|stories:generate|application: accepted), log/tmp/cluster-pr54-candidate-failed.log ends Usage exit2. Inner recovery:credit alone is insufficient. Fix exact outer recovery:credit dispatch, verify both layers and retain invalid argument rejection before one new isolated request/source with existing Nix execution. No images from this run. Preserve diagnostic and current53CI; do not rerun attempt1 request. Mainmeta also has54executor review,67CI triage and scoped68phone edge correction inspection for next attributed log push.
+
+
+## Reviewer PR68 historical CI triage
+
+Exact68 head a6f04e9ce2f96080d81788dbe1788427b1dade2a: strict39731275898/job119666641405 totals113passed55failed8skipped; generation119666641517 has no files/no artifacts, hence no Linux approval source. Application119666641183 anddocumentation119666641344 passed historically. Publish39731275938 failed expected exacthead HTTP404. Logs/tmp/cluster-pr68-{failed,generate,publish}.log. Fresh stack current-head CI remains necessary.
+
+
+## Reviewer checkpoint — PR54 failure acknowledged
+
+Implementer acknowledged outer recovery-credit dispatch defect and is correcting exact accepted arguments plus rejection validation before a new source-bound request. Failed first request remains immutable. Recovery ledger previously committed/pushed72a18643. No duplicate jobs launched by supervisor, no PR merge, no uninspected candidate promoted.
+
+
+## Reviewer verified PR54 dispatch correction
+
+Independently read working correction in /tmp/cluster-pr54-credit-review: outer launcher accepts recovery:credit only with exactly two arguments; inner dispatch also requires exact two-argument credit route. Existing stories/application paths unchanged. Read full test extracting actual case statements with command stubs; independently ran two tests under established Nix, both passed. This validates dispatch branches/rejection, not full container runtime. Workflow/request now address fresh pr54-credit-02/idcredit-20261025-02 while first request is preserved. Proceed with exact-source candidate generation; no screenshot approval implied.
+
+
+## Reviewer forward code review — PR69 fleet contacts
+
+PR69 f6c20e3d8bf8f7703c489cb97551968383fd0c8f base68. Read complete671-line story in three untruncated sections, production pointer-wrapper delta, contact entropy/input modules,142-line guard tests and design review. Independently ran three exact-source guard tests under established Nix at/tmp/cluster-pr69-review, allpassed. Named-fixture/separate compiled-module hook preserves actual HMAC acquisition/probabilities and checks actual fleet owner/number plus seat/seed/tick context; unrelated campaigns unchanged, demo-loopback and signature guard retained.
+
+Real UI formation4fighters6infantry, authoritative conservation/production accounting through real repeat-safe ticks, actual private recipient projection fields/no route/orders/privatefleetID, current and missed-scan retained report, full bounded age/facts visibility with returnrail, reload/motion/keyboard state preservation. Production wrappers disable pointer events only for decorative elements; actual traveling onfleet handler keeps interactivity. No definite new code finding. No69images inspected/approved in this review; fresh Linux/provenance and runtime comparisons remain gates.
+
+
+## Reviewer PR69 historical CI triage
+
+Strict39735293422/job119679444037 totals112passed60failed8skipped; allfour fleet-contact journeys stop at missing Linux010 reference. Extra short failure is identity-pending-retry001,1994differentpixels, same previously diagnosed leading symptom; confirm after inheriting52fix rather than approving old mismatch. Generation119679444321 explicitly no files/noartifacts. Historicalapplication119679443600 anddocs119679443747 passed. Logs/tmp/cluster-pr69-{failed,generate}.log. No69Linuxcandidates approved.
+
+
+## Reviewer verified new PR54 candidate handle
+
+Fresh sourcee70f3667 contains reviewed exact dispatch fix; requestexecutora40542c98c706cece9befc428836e772f5e76b5e pushed. Confirmed run40154407498/job121052578968 in_progress on that exact executor. Prior40154163510 failed beforetests and remains recorded. This is a corrected new source request, not a duplicate rerun; continue existing handle.

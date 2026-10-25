@@ -1714,3 +1714,15 @@ Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCES
 Delegated reviewer checkpoint; main meta records PR66/67 scoped source and sample review, not Linux approval.
 
 Reviewer checkpoint: PR53 publish now passes; keep existing strict/application jobs. Main meta-prompts.md has completed PR66 story review and PR67 full label implementation/story review plus 3 independent Nix tests (82 assertions) and independently inspected phone018 before/after; only sampled macOS label correction accepted, no Linux/all-image approval. At your next log checkpoint reconcile/commit/push these attributed findings. Continue current PR54 candidate run40154163510 and inspect fresh originals before promotion; no extra work or duplicate run requested. User clarification remains approval only after inspection. No PR merge.
+
+## Prompt 257: Outer dispatch
+
+Delegated reviewer failure finding; main meta records candidate40154163510 pre-test Usage exit2 and scoped forward findings.
+
+Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh:5 (only stories:verify|stories:generate|application: accepted), log/tmp/cluster-pr54-candidate-failed.log ends Usage exit2. Inner recovery:credit alone is insufficient. Fix exact outer recovery:credit dispatch, verify both layers and retain invalid argument rejection before one new isolated request/source with existing Nix execution. No images from this run. Preserve diagnostic and current53CI; do not rerun attempt1 request. Mainmeta also has54executor review,67CI triage and scoped68phone edge correction inspection for next attributed log push.
+
+## Prompt 258: Dispatch confirmation
+
+Delegated reviewer checkpoint; main meta records dispatch review and PR68/69 scoped forward findings, not new image approval.
+
+Reviewer checkpoint: independently reviewed exact outer/inner credit dispatch fix and ran your 2 dispatch tests underNix, both pass. New54run40154407498 confirmed live on a40542c9; continue it. Mainmeta now also records68 scoped phone005 edge-label inspection and historicalCI;69 complete671-line story/production/fixture review plus3 independent guard tests pass, but no69images approved. Historical69short identity-pending-retry001 has1994pixel leading mismatch; verify after inheriting52fix. At next checkpoint reconcile/commit/push current mainmeta and attributed logs. Keep54fresh-image inspection and53existingCI as priorities; no new job requested.
