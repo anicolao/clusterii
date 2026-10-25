@@ -1,0 +1,1128 @@
+{
+  "archive": "/tmp/cluster-pr53-complete-linux/artifact.zip",
+  "bytes": 48495722,
+  "sha256": "f3049c11c59befdc08a1c3bf73dbeaeb955611292172ee9a1487c45591423f37",
+  "remote": {
+    "id": 12588877607,
+    "node_id": "MDg6QXJ0aWZhY3QxMjU4ODg3NzYwNw==",
+    "name": "recovery-identity-short-058ee2c0fe827232c7810db8176f2c0b581476a7-1",
+    "size_in_bytes": 48495722,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12588877607",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12588877607/zip",
+    "expired": false,
+    "digest": "sha256:f3049c11c59befdc08a1c3bf73dbeaeb955611292172ee9a1487c45591423f37",
+    "created_at": "2026-10-25T05:51:50Z",
+    "updated_at": "2026-10-25T05:51:50Z",
+    "expires_at": "2026-11-24T05:51:48Z",
+    "workflow_run": {
+      "id": 40163401924,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr53-identity-complete",
+      "head_sha": "058ee2c0fe827232c7810db8176f2c0b581476a7"
+    }
+  },
+  "allEntriesCRCVerified": true,
+  "entries": [
+    {
+      "entry": "ci-evidence/recovery-request/executor.json",
+      "bytes": 412,
+      "sha256": "c2d25603efdc6e877579cd9c770c57f1fb3ddcafa56216e055f7c8e23ad6b5ea",
+      "crc32": 478349227,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/recovery-request/executor.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "crc32": 3787177680,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/.last-run.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/recovery-request/request.json",
+      "bytes": 228,
+      "sha256": "1b9b06e302d277ab462a6d7549c54c7ef18cc719e8be0c694f6013464ca6c813",
+      "crc32": 4041743664,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/recovery-request/request.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/001-arrive-1-toile.layout.json",
+      "bytes": 52363,
+      "sha256": "d48f9f82c034e583616a7c47544b73eef9a81c427c1fc611db409dd9a336f319",
+      "crc32": 1743465868,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/001-arrive-1-toile.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/001-arrive-1-toile.png",
+      "bytes": 1431439,
+      "sha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37",
+      "crc32": 2661552632,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/001-arrive-1-toile.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/002-sign-in-1-toile.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/002-sign-in-1-toile.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/002-sign-in-1-toile.png",
+      "bytes": 967982,
+      "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "crc32": 2576786694,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/002-sign-in-1-toile.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/003-save-identity-1-toile.layout.json",
+      "bytes": 120638,
+      "sha256": "69a9bdafa806b85a61b54187cb718b61574d65c0793921aa4b72aebe6d34ac2a",
+      "crc32": 2503485019,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/003-save-identity-1-toile.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/003-save-identity-1-toile.png",
+      "bytes": 954130,
+      "sha256": "a84832745219e3105f64fc4afb0b6fc8557e30ae58dbd5712da7099232acc08c",
+      "crc32": 3400248780,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/003-save-identity-1-toile.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/004-reload-1-toile.layout.json",
+      "bytes": 115578,
+      "sha256": "2133cd9c5944f17114aedc2f5269e2a97c39f509553ca400e53839755f6ee103",
+      "crc32": 2500475193,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/004-reload-1-toile.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/004-reload-1-toile.png",
+      "bytes": 969636,
+      "sha256": "2847eeb54d0f450b19f8d978bfe618c624bd436f274c8a30d28644256e66bcd4",
+      "crc32": 2328685266,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/004-reload-1-toile.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/005-sign-out-1-toile.layout.json",
+      "bytes": 52339,
+      "sha256": "37c5d30e7062bb15ffa3b3abc91961e08dc17fc8b6f5183c74034423d60dbc6d",
+      "crc32": 1824174157,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/005-sign-out-1-toile.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/005-sign-out-1-toile.png",
+      "bytes": 1431439,
+      "sha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37",
+      "crc32": 2661552632,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/005-sign-out-1-toile.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/README.md",
+      "bytes": 2374,
+      "sha256": "5a536f856359320bce34e4dd13601ee5b88fd4c585a6f9d751f08154233af8a1",
+      "crc32": 3563284202,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/commander-identity/short/linux-arm64/story.json",
+      "bytes": 4169,
+      "sha256": "cc8e1aea0bdb7fc1c446dc42e991fc9c282d15cb3164822249af993262e2910a",
+      "crc32": 704841550,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/commander-identity/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.png",
+      "bytes": 967982,
+      "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "crc32": 2576786694,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one.png",
+      "bytes": 954012,
+      "sha256": "b6d942209913f040c8439e291d0b3c706d50de1ff5efa2e0021aeab3754cca3e",
+      "crc32": 108365553,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-1-commander-device-one.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-1-commander-device-one.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-1-commander-device-one.png",
+      "bytes": 954012,
+      "sha256": "b6d942209913f040c8439e291d0b3c706d50de1ff5efa2e0021aeab3754cca3e",
+      "crc32": 108365553,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-1-commander-device-one.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-2-commander-device-two.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-2-commander-device-two.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-2-commander-device-two.png",
+      "bytes": 969636,
+      "sha256": "afcffb89775f7a6c877a26f1ae412e3399eb1a79b69281d0351f4ac6150052b4",
+      "crc32": 595791659,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/003-second-device-sign-in-2-commander-device-two.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-1-commander-device-one.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-1-commander-device-one.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-1-commander-device-one.png",
+      "bytes": 954012,
+      "sha256": "b6d942209913f040c8439e291d0b3c706d50de1ff5efa2e0021aeab3754cca3e",
+      "crc32": 108365553,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-1-commander-device-one.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-2-commander-device-two.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-2-commander-device-two.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-2-commander-device-two.png",
+      "bytes": 969174,
+      "sha256": "0510d67807e2e8e12093c09b9e58997d74c9c67a2988dfcfb215f205a05852a3",
+      "crc32": 3512455570,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/004-preserve-local-draft-2-commander-device-two.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-1-commander-device-one.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-1-commander-device-one.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-1-commander-device-one.png",
+      "bytes": 954479,
+      "sha256": "c04c8d48489947ced9f59255d382706966a22a2438a96e86dcca7579bc77e294",
+      "crc32": 2575962197,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-1-commander-device-one.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-2-commander-device-two.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-2-commander-device-two.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-2-commander-device-two.png",
+      "bytes": 969174,
+      "sha256": "0510d67807e2e8e12093c09b9e58997d74c9c67a2988dfcfb215f205a05852a3",
+      "crc32": 3512455570,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/005-other-device-save-2-commander-device-two.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-1-commander-device-one.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-1-commander-device-one.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-1-commander-device-one.png",
+      "bytes": 954479,
+      "sha256": "c04c8d48489947ced9f59255d382706966a22a2438a96e86dcca7579bc77e294",
+      "crc32": 2575962197,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-1-commander-device-one.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-2-commander-device-two.layout.json",
+      "bytes": 120942,
+      "sha256": "d3d2025ae0aa6c5277cc11a206d18040776b1e90d44525ac1cf91887419da21e",
+      "crc32": 4254016877,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-2-commander-device-two.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-2-commander-device-two.png",
+      "bytes": 947951,
+      "sha256": "efca144693dbdf856f647bae8ea430566f3c6bffa98a56a40fb56986f41cbe41",
+      "crc32": 2049154061,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/006-reject-conflicting-save-2-commander-device-two.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-1-commander-device-one.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-1-commander-device-one.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-1-commander-device-one.png",
+      "bytes": 954546,
+      "sha256": "e01f7993515e408ae5da7d7f4f4fc064a89ee9351284afa004069c05285d6ac8",
+      "crc32": 194642223,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-1-commander-device-one.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-2-commander-device-two.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-2-commander-device-two.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-2-commander-device-two.png",
+      "bytes": 954546,
+      "sha256": "e01f7993515e408ae5da7d7f4f4fc064a89ee9351284afa004069c05285d6ac8",
+      "crc32": 194642223,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/007-replace-explicitly-2-commander-device-two.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/README.md",
+      "bytes": 5098,
+      "sha256": "2bf39fe8c47c2db71b71de780db1d61edafab9414e9039649a324fcf40df04d2",
+      "crc32": 594245162,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-conflict/short/linux-arm64/story.json",
+      "bytes": 6603,
+      "sha256": "c9dbdb851b2142442d59b783a0c288e87d5292dfddb4248f04273443d65d2ebc",
+      "crc32": 3500293809,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-conflict/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+      "bytes": 967982,
+      "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "crc32": 2576786694,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander.png",
+      "bytes": 954998,
+      "sha256": "70d901318b26ba616c9532c2bde812b1cad8d79590bc023aa05f3ca66ac59b5d",
+      "crc32": 1795947726,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/004-pending-draft-1-commander.layout.json",
+      "bytes": 120663,
+      "sha256": "0e413d0d305c16bacd21f4281f305ed37f578c9b1c36b72e32330bcddf8cec98",
+      "crc32": 183854493,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/004-pending-draft-1-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/004-pending-draft-1-commander.png",
+      "bytes": 954137,
+      "sha256": "864a1115e0b51c68770e3b8315dd1cebc79855dea0542af3f21a295b66da2fcf",
+      "crc32": 53675808,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/004-pending-draft-1-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/005-retry-same-order-1-commander.layout.json",
+      "bytes": 120612,
+      "sha256": "9f72a47f89c585992b4a703fe6acab8ccfc879ac1978e41abfedcb835ba92907",
+      "crc32": 2431198094,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/005-retry-same-order-1-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/005-retry-same-order-1-commander.png",
+      "bytes": 954455,
+      "sha256": "16926b6b6e32ccb192257568e643c0e8f3038ff673ddb6ffe92f67ea5ab3befb",
+      "crc32": 323029618,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/005-retry-same-order-1-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/007-accept-once-1-commander.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/007-accept-once-1-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/007-accept-once-1-commander.png",
+      "bytes": 954529,
+      "sha256": "6857e27484f431de2043e0f99f7b2ef7ff1f1ce47f3fb5b62485f6aab9d25c50",
+      "crc32": 3355216272,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/007-accept-once-1-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/008-reload-saved-draft-1-commander.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/008-reload-saved-draft-1-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/008-reload-saved-draft-1-commander.png",
+      "bytes": 970213,
+      "sha256": "2550aefd29246d1a9675dd31ec8fc40fe59bb150666dbb5b7912bc7e3d2a9770",
+      "crc32": 2434322500,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/008-reload-saved-draft-1-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/README.md",
+      "bytes": 3370,
+      "sha256": "43b7a5a90dd581a72d2bcb39e990a85d1faa7d10ae906bbbc861911d1b6300f8",
+      "crc32": 382918794,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/story.json",
+      "bytes": 5477,
+      "sha256": "ef67a1c075d0bff5aa665e5ab770ab069cd9dc186497df8c9230516bc63d63b7",
+      "crc32": 3009945078,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-pending-retry/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander.png",
+      "bytes": 969467,
+      "sha256": "91ee6ef3b0039a6db21a8ad88b06ce471705fb0e9508bd24b32f8886a2288c1c",
+      "crc32": 3406778483,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander.png",
+      "bytes": 954766,
+      "sha256": "30ac08773284f508fe194bb0ebc5f1e6cf2186d6ea381e1a8ae4c639047c9d68",
+      "crc32": 910086383,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/004-replacement-draft-1-receipt-commander.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/004-replacement-draft-1-receipt-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/004-replacement-draft-1-receipt-commander.png",
+      "bytes": 969666,
+      "sha256": "dff4327616b06135e2e361e5aa5308cb02570e4ceb98c4731e8fa3faba069696",
+      "crc32": 621840449,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/004-replacement-draft-1-receipt-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/005-mismatched-acknowledgement-1-receipt-commander.layout.json",
+      "bytes": 120933,
+      "sha256": "1ccf78c75023200c2956bc019ee5d0476f64deb535741d4239a40b5a4556e5d5",
+      "crc32": 3022773829,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/005-mismatched-acknowledgement-1-receipt-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/005-mismatched-acknowledgement-1-receipt-commander.png",
+      "bytes": 946769,
+      "sha256": "7f1c5f484d86dce4d642a8cc4a37fbbed253ce3dd305393f110db9b3d3390034",
+      "crc32": 1166290690,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/005-mismatched-acknowledgement-1-receipt-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/007-fresh-save-1-receipt-commander.layout.json",
+      "bytes": 120640,
+      "sha256": "e19b245e0459c412383194ef5d5cc00830d925ccf0235019052df2aea927e653",
+      "crc32": 3773879437,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/007-fresh-save-1-receipt-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/007-fresh-save-1-receipt-commander.png",
+      "bytes": 955176,
+      "sha256": "352398ab93102b89d4bd4642bc9197c55f341dda64913987427ff653e597b2a7",
+      "crc32": 1210804170,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/007-fresh-save-1-receipt-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/008-reload-accepted-draft-1-receipt-commander.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/008-reload-accepted-draft-1-receipt-commander.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/008-reload-accepted-draft-1-receipt-commander.png",
+      "bytes": 970669,
+      "sha256": "6b0e8a825f7ee4ade02675304d58a9b2e01b119849a2b221fd36262e3eb68528",
+      "crc32": 925507531,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/008-reload-accepted-draft-1-receipt-commander.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/README.md",
+      "bytes": 4120,
+      "sha256": "866eef43014f8d6ca48f29bbbd27c3a26a5fd2f4f51212f7f72441f939d6b0d3",
+      "crc32": 2456946392,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity-receipt-recovery/short/linux-arm64/story.json",
+      "bytes": 6051,
+      "sha256": "ff7ac95c960a60140f0930be205c7c96f54f9ffb7a48f70acdb56051752ad86b",
+      "crc32": 3257874596,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity-receipt-recovery/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/identity.story-Save-and-recover-a-commander-identity-short/attachments/Illustrated-story-674a45abdfac881fbf6f6ef7b8c4c5edd10a8b92.md",
+      "bytes": 2374,
+      "sha256": "5a536f856359320bce34e4dd13601ee5b88fd4c585a6f9d751f08154233af8a1",
+      "crc32": 3563284202,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/identity.story-Save-and-recover-a-commander-identity-short/attachments/Illustrated-story-674a45abdfac881fbf6f6ef7b8c4c5edd10a8b92.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "bytes": 29648,
+      "sha256": "d7d38c7afa541eec97278c0af8f58883a632066e5a00c9889a5915bff7710821",
+      "crc32": 632383362,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "bytes": 213433,
+      "sha256": "650e8bd1716adf6499828684bf479c2d7102e4e90157ee7e929cf3a66b466bd3",
+      "crc32": 3604520456,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "bytes": 55030,
+      "sha256": "04fb58ed53f7b860cc29536fbe35ce0777a57c33e730980484d6fa4169a17303",
+      "crc32": 653503627,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "bytes": 1431439,
+      "sha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37",
+      "crc32": 2661552632,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "bytes": 118245,
+      "sha256": "83fcd7939496b8feaf1bf46d4cc44e9a651cf609aedd91ad7925add46605298c",
+      "crc32": 2457509453,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "bytes": 967982,
+      "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "crc32": 2576786694,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "bytes": 118243,
+      "sha256": "be9438bb4c454c5a83654606092f7f3ed0185add054a5c5d4e4de1d7aa47992f",
+      "crc32": 2145645781,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "bytes": 969515,
+      "sha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+      "crc32": 2502743946,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "bytes": 140674,
+      "sha256": "08207f5ac8b85a8164dc2d48b2484ac1263317da1080cf53aae5e41592e844f3",
+      "crc32": 1926164894,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "bytes": 612073,
+      "sha256": "92df4feacf44eb11745ffe66e82aa0cb4a0e44bb1dae4f63af124503bccefd06",
+      "crc32": 4256076165,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "bytes": 140673,
+      "sha256": "431e8153c07360e2f53ffdb7138e5783fc6d02130ad891a58e694cf77ab249cf",
+      "crc32": 181227849,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "bytes": 641459,
+      "sha256": "6f7d02e40afbe8b8fb5dc6c86dcb41d6af63a2b846e9c1d606d38b54f0634232",
+      "crc32": 2938652021,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "bytes": 150340,
+      "sha256": "e4306002f1be88f7afc3a09991a8ce99d293f0190092f14fc5a42559a68db169",
+      "crc32": 3709051367,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "bytes": 698222,
+      "sha256": "da23a824957d8c93628faaaf0a9b13bc75df14d741abaea7f85fbaba9b7ac947",
+      "crc32": 205091064,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "bytes": 235863,
+      "sha256": "ed00aa40d1d348570c74353bdea8ab068498e1da79ea9b858e43d56fd030e026",
+      "crc32": 2653303354,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "bytes": 315329,
+      "sha256": "fcf9fcbf5a20c4acdb208da9cc16743188b733cb288823b3541fc20a52679b7e",
+      "crc32": 4040709884,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "bytes": 145488,
+      "sha256": "c460b183566e0870ac27730edb2fb4bef8e25d53cedef780b909f9968b432f85",
+      "crc32": 2129827629,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "bytes": 695918,
+      "sha256": "70316190d9f722010deb93ff30e717f7544733efac54d3be5db38c7ce7ffea01",
+      "crc32": 1294048986,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/README.md",
+      "bytes": 4699,
+      "sha256": "9dc0549db2a299b04938d3846094df56542bca318fde4d4460842ad6b601a689",
+      "crc32": 1141410232,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+      "bytes": 6941,
+      "sha256": "60d68e68db79800afbfe2910467721cec3b7f31782edf61220b37071216678c1",
+      "crc32": 821985876,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/attachments/Illustrated-story-548c89fc20cfe276ae6f76b1e803c3d62b29a9ad.md",
+      "bytes": 4699,
+      "sha256": "9dc0549db2a299b04938d3846094df56542bca318fde4d4460842ad6b601a689",
+      "crc32": 1141410232,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/attachments/Illustrated-story-548c89fc20cfe276ae6f76b1e803c3d62b29a9ad.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/profile-recovery.story-Res-2c639-without-losing-either-draft-short/attachments/Illustrated-story-fbc82e7693a3bcab2385d214211afc13f16d10b5.md",
+      "bytes": 5098,
+      "sha256": "2bf39fe8c47c2db71b71de780db1d61edafab9414e9039649a324fcf40df04d2",
+      "crc32": 594245162,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/profile-recovery.story-Res-2c639-without-losing-either-draft-short/attachments/Illustrated-story-fbc82e7693a3bcab2385d214211afc13f16d10b5.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/attachments/Idempotent-reconnect-evidence-de80ea047f7b58de79abad8e45ee1a137956a38f.json",
+      "bytes": 279,
+      "sha256": "16d9bc2f73bababba77690cb315bea5bee5001e34d7df5ee6f9fd15595857361",
+      "crc32": 1097745417,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/attachments/Idempotent-reconnect-evidence-de80ea047f7b58de79abad8e45ee1a137956a38f.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/attachments/Illustrated-story-ae476965655a950af1b61e594c629228f8b3aed2.md",
+      "bytes": 3370,
+      "sha256": "43b7a5a90dd581a72d2bcb39e990a85d1faa7d10ae906bbbc861911d1b6300f8",
+      "crc32": 382918794,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/attachments/Illustrated-story-ae476965655a950af1b61e594c629228f8b3aed2.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/idempotent-reconnect.json",
+      "bytes": 279,
+      "sha256": "16d9bc2f73bababba77690cb315bea5bee5001e34d7df5ee6f9fd15595857361",
+      "crc32": 1097745417,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/idempotent-reconnect.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/receipt-recovery.story-A-m-21454-l-a-fresh-acknowledged-save-short/attachments/Illustrated-story-d716f3522776c32e5c055635ed3af638935d2263.md",
+      "bytes": 4120,
+      "sha256": "866eef43014f8d6ca48f29bbbd27c3a26a5fd2f4f51212f7f72441f939d6b0d3",
+      "crc32": 2456946392,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/receipt-recovery.story-A-m-21454-l-a-fresh-acknowledged-save-short/attachments/Illustrated-story-d716f3522776c32e5c055635ed3af638935d2263.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-1-commander-first-device.layout.json",
+      "bytes": 67227,
+      "sha256": "7a1eca3d0d1b942a8512012253edabc934d686ccda1f0419f5a30cc53d213bfe",
+      "crc32": 3849466321,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-1-commander-first-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-1-commander-first-device.png",
+      "bytes": 1428367,
+      "sha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+      "crc32": 2294728803,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-1-commander-first-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/003-open-devices-1-commander-first-device.layout.json",
+      "bytes": 36719,
+      "sha256": "8f9f1131819af2ac0aaf1abf45ed120d92bd01afc012132de53ef890722b0328",
+      "crc32": 904362988,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/003-open-devices-1-commander-first-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+      "bytes": 969632,
+      "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+      "crc32": 744631319,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/003-open-devices-1-commander-first-device.png",
+      "bytes": 956643,
+      "sha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+      "crc32": 24871007,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/003-open-devices-1-commander-first-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/004-close-devices-1-commander-first-device.layout.json",
+      "bytes": 67227,
+      "sha256": "7a1eca3d0d1b942a8512012253edabc934d686ccda1f0419f5a30cc53d213bfe",
+      "crc32": 3849466321,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/004-close-devices-1-commander-first-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/004-close-devices-1-commander-first-device.png",
+      "bytes": 1428367,
+      "sha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+      "crc32": 2294728803,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/004-close-devices-1-commander-first-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-1-commander-first-device.layout.json",
+      "bytes": 42642,
+      "sha256": "5a2f93d92d511a3e38789e9a0bcf10bf16f283a15612bd9166789fda786c50b3",
+      "crc32": 1717789607,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-1-commander-first-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-1-commander-first-device.png",
+      "bytes": 930494,
+      "sha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0",
+      "crc32": 198877053,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-1-commander-first-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+      "bytes": 969632,
+      "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+      "crc32": 744631319,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-1-commander-first-device.layout.json",
+      "bytes": 56225,
+      "sha256": "69ddf9bcb3c626eba6e00a0caf61420e839a1e21725b79049844fedd73690077",
+      "crc32": 2724766091,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-1-commander-first-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-1-commander-first-device.png",
+      "bytes": 1431312,
+      "sha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+      "crc32": 1691784004,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-1-commander-first-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-2-commander-second-device.layout.json",
+      "bytes": 56225,
+      "sha256": "69ddf9bcb3c626eba6e00a0caf61420e839a1e21725b79049844fedd73690077",
+      "crc32": 2724766091,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-2-commander-second-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-2-commander-second-device.png",
+      "bytes": 1431312,
+      "sha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+      "crc32": 1691784004,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-2-commander-second-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-1-commander-first-device.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-1-commander-first-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-1-commander-first-device.png",
+      "bytes": 970563,
+      "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+      "crc32": 1391848159,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-1-commander-first-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-2-commander-second-device.layout.json",
+      "bytes": 56225,
+      "sha256": "69ddf9bcb3c626eba6e00a0caf61420e839a1e21725b79049844fedd73690077",
+      "crc32": 2724766091,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-2-commander-second-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-2-commander-second-device.png",
+      "bytes": 1431312,
+      "sha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+      "crc32": 1691784004,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-2-commander-second-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/009-reload-identity-1-commander-first-device.layout.json",
+      "bytes": 115578,
+      "sha256": "ce207113dcf5746d72756e82962a1eb3bddb4fac38cbf54ea5dc251feb08d3cd",
+      "crc32": 942665323,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/009-reload-identity-1-commander-first-device.layout.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/009-reload-identity-1-commander-first-device.png",
+      "bytes": 970563,
+      "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+      "crc32": 1391848159,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/009-reload-identity-1-commander-first-device.png",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/README.md",
+      "bytes": 5918,
+      "sha256": "541bc14a55974f38505c24e9b0ca1bbe30d7fddd98c711760abda54331b9344e",
+      "crc32": 3671721098,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-cancelled-confirmation/short/linux-arm64/story.json",
+      "bytes": 7462,
+      "sha256": "b25bb6a10069ed080048e1d08d1b4998154ef654098495912253b9586513ebd0",
+      "crc32": 886434876,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-cancelled-confirmation/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/attachments/Illustrated-story-ee248f3d2ed39355b09793639aea0040516fb851.md",
+      "bytes": 5918,
+      "sha256": "541bc14a55974f38505c24e9b0ca1bbe30d7fddd98c711760abda54331b9344e",
+      "crc32": 3671721098,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/attachments/Illustrated-story-ee248f3d2ed39355b09793639aea0040516fb851.md",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "firestore-debug.log",
+      "bytes": 19050,
+      "sha256": "5386adb30575389d47094e5d2e8c4f0e0f41a791da02ed07d3ae99acd4b47309",
+      "crc32": 3491394144,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/firestore-debug.log",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+      "crc32": 503735925,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/browser-path.txt",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/containerd.log",
+      "bytes": 11788,
+      "sha256": "1c0cf25707cb9d675d1395c2c7b537e9626f1b245be2acc7e3a1392e67d684c9",
+      "crc32": 1493649676,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/containerd.log",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine-info.log",
+      "bytes": 1791,
+      "sha256": "99ca3ee1a7d9d59995bb30ff00fa7492e0a2103cbfbb83bc0c132d6106187afe",
+      "crc32": 1074143606,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/engine-info.log",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine.log",
+      "bytes": 2725,
+      "sha256": "8db0d606f83f985b95af5739c92f172a264630888f98763ceb50e8b46c5579ae",
+      "crc32": 3307306470,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/engine.log",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+      "crc32": 4285110663,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/image-identity.txt",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-inspect.json",
+      "bytes": 2411,
+      "sha256": "4a50b0ae6339dca977bf534d99a12cdefa9892ceed122e44cd9cd43673a4b2ad",
+      "crc32": 639095265,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/image-inspect.json",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-load.log",
+      "bytes": 49,
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+      "crc32": 2329796893,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/image-load.log",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "sha256": "5c0292f2fc4116b854dbd4ea5d43d70e9dcc4bf73bf7668d97c4deba7da35cf2",
+      "crc32": 1399533304,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/nix-ldd.txt",
+      "remoteVerifiedArchive": 12588877607
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "sha256": "f9b4bb8a5d983157e54ffb280ddac3e8e22701a55a4c14a10202535163414304",
+      "crc32": 1221747402,
+      "localOriginal": "/tmp/cluster-pr53-complete-linux/originals/ci-evidence/nix-renderer/renderer-ldd.txt",
+      "remoteVerifiedArchive": 12588877607
+    }
+  ],
+  "localOriginalCount": 137,
+  "openProcesses": false,
+  "removed": true,
+  "removedAt": "2026-10-25T17:19:25.249712+00:00"
+}
