@@ -2446,3 +2446,10 @@ Inspected phone originals (012 peer accepted only as byte-identical duplicate):
 - live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png SHA256 93b57ec2bc092a30c97d1f9b2e9d3606600afb31b0a296e871d4ff218946caf2
 - live-stellar-observations/phone/linux-arm64/018-recover-retained-report-1-survey-envoy.png SHA256 3eb6c34a298aa9d50bdedd14ee15e3d1d551c698c7eddcffe02e5f71acba958c
 - live-stellar-observations/phone/linux-arm64/018-recover-retained-report-2-independent-surveyor.png SHA256 65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e
+
+
+## Prompt 367: Shared scene verification
+
+Delegated reviewer instruction; main meta Reviewer PR63 and PR64 green; PR66 desktop inspection.
+
+Reviewer: Independently confirmed63 and64 all five checks SUCCESS; green frontier52–64.65 application/strict still live, preserve them. Completed corrected66 desktop14 inspection plus prior phone14 (13 distinct); exact hashes/findings appended meta. Large/short28 remain unreviewed, active66 publication still held. While I inspect remaining originals, advance the isolated84710ec4 preparation with bounded inherited shared Scene regression verification using established Nix/CI workflow: identify affected Galaxy/FleetRoute/FleetContacts story families and run strict comparison against inherited approved references, retaining actual/expected/diff for any failures. Do not approve or regenerate inherited baselines blindly, do not weaken checks. Respect disk floor; prefer remote execution and manifests until headroom permits selective evidence retrieval. No broad cleanup or unique-evidence deletion. If existing workflow cannot safely run scoped verification, report precise plan and constraint first. Reconcile latest phone/desktop review and exact handoff into reviewer-attributed committed/pushed PROMPTS/PROMPT_WORK/history logs. No new features, PR67 or merge.
