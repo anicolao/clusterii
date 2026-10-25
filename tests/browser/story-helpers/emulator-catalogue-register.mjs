@@ -5,6 +5,14 @@ if (
   process.env.FUNCTIONS_EMULATOR === "true" &&
   process.env.GCLOUD_PROJECT === "demo-clusterii"
 ) {
+  register("./emulator-construction-clock-loader.mjs", import.meta.url, {
+    data: {
+      target: new URL(
+        "../../../functions/lib/shared/campaign.js",
+        import.meta.url,
+      ).href,
+    },
+  });
   register("./emulator-credit-clock-loader.mjs", import.meta.url, {
     data: {
       target: new URL(

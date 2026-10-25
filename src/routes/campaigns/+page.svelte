@@ -1,4 +1,9 @@
 <script lang="ts">
+  import {
+    constructionSettlementFeedback,
+    type AcceptedConstruction,
+    type RecoveredConstruction,
+  } from "$lib/construction-feedback";
   import type { RecoveredTrade } from "$lib/credit-offers";
   import type { TradeAction } from "@shared/trades";
   import {
@@ -79,6 +84,9 @@
   let commandVisitRevision = $state(0);
   let commandId = $state("");
   let commandOfferId = $state("");
+  let recoveredConstruction = $state<RecoveredConstruction | null>(null);
+  let acceptedConstruction = $state<AcceptedConstruction | null>(null);
+  let commandConstructionOrder = "";
   let recoveredTrade = $state<RecoveredTrade | null>(null);
   let acceptedTrade = $state<{ gameId: string; offerId: string } | null>(null);
   let conversationBody = "";
@@ -110,6 +118,15 @@
   let stopReceipt = () => {};
   let timer: ReturnType<typeof setTimeout>;
   const game = $derived(games.find((g) => g.id === selected));
+  $effect(() => {
+    if (!view || !acceptedConstruction || pending) return;
+    const feedback = constructionSettlementFeedback(view, acceptedConstruction);
+    if (!feedback) return;
+    message = feedback.message;
+    error = feedback.error;
+    remedy = feedback.remedy;
+    acceptedConstruction = null;
+  });
   $effect(() => {
     if (!view || !acceptedFleetCommand || pending) return;
     const feedback = fleetSettlementFeedback(view, acceptedFleetCommand);
@@ -309,6 +326,17 @@
                 action: restored.action as TradeAction,
               }
             : null;
+          recoveredConstruction =
+            restored.action.kind === "construction.build" ||
+            restored.action.kind === "construction.cancel"
+              ? {
+                  id: pending.id,
+                  gameId: pending.gameId,
+                  action: restored.action,
+                }
+              : null;
+          commandConstructionOrder =
+            "orderId" in restored.action ? restored.action.orderId : "";
           commandId = pending.id;
           commandOfferId =
             "offerId" in restored.action ? restored.action.offerId : "";
@@ -360,6 +388,8 @@
           conversationReceipt = null;
           recoveredConversation = null;
           recoveredTrade = null;
+          recoveredConstruction = null;
+          acceptedConstruction = null;
           recoveryProblem = null;
           commandRoomId = "";
           conversationBody = "";
@@ -430,6 +460,18 @@
         clearTimeout(timer);
         busy = false;
         pending = null;
+        acceptedConstruction =
+          receipt.status === "accepted" &&
+          command.kind.startsWith("construction.")
+            ? {
+                gameId: command.gameId,
+                orderId:
+                  command.kind === "construction.build"
+                    ? command.id
+                    : commandConstructionOrder,
+                revision: receipt.revision,
+              }
+            : null;
         acceptedFleetCommand =
           receipt.status === "accepted" &&
           command.kind.startsWith("fleet.") &&
@@ -514,6 +556,8 @@
     if (busy || pending) return;
     acceptedFleetCommand = null;
     acceptedTrade = null;
+    acceptedConstruction = null;
+    commandConstructionOrder = "orderId" in action ? action.orderId : "";
     commandKind = action.kind;
     commandId = "";
     commandOfferId = "offerId" in action ? action.offerId : "";
@@ -622,6 +666,7 @@
       {conversationReceipt}
       {recoveredConversation}
       {recoveredTrade}
+      {recoveredConstruction}
       accountId={account ?? undefined}
       onvisit={(throughRevision) =>
         send(view!.id, {

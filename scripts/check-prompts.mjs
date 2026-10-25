@@ -61,7 +61,20 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
   // A preceding integration may already have copied a request with its single
   // structural LF. Recognize that separator only from its exact Git-verified
   // ancestor archive, never by trimming arbitrary request whitespace.
-  const originals = new Set();
+  const commonAncestor = git(['merge-base', 'HEAD', revision]).trim();
+  const originals = new Set(records(trackedAt(commonAncestor, 'PROMPTS.md')));
+  // A common ancestor can itself follow an append to the original shared log.
+  // Recover only exact final-record bytes proven by an append-only Git transition.
+  for (const commit of git(['rev-list', commonAncestor, '--', 'PROMPTS.md']).trim().split('\n').filter(Boolean)) {
+    const nextLog = trackedAt(commit, 'PROMPTS.md');
+    for (const parent of git(['show', '-s', '--format=%P', commit]).trim().split(' ').filter(Boolean)) {
+      const oldLog = trackedAt(parent, 'PROMPTS.md');
+      if (!oldLog || !nextLog.startsWith(oldLog) || oldLog === nextLog) continue;
+      const before = records(oldLog).at(-1), after = records(nextLog)[records(oldLog).length - 1];
+      if (after === `${before}\n` || after === `${before}\n\n`) originals.add(before);
+    }
+  }
+
   for (const archiveOwner of new Set([revision, 'HEAD'])) {
   for (const archive of git(['ls-tree', '-r', '--name-only', archiveOwner, '--', 'docs/prompt-history']).trim().split('\n')) {
     const match = /^docs\/prompt-history\/([0-9a-f]{40})\/PROMPTS\.md$/.exec(archive);

@@ -277,14 +277,28 @@ Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | C
 
 Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Retain the 18:58 supervisory checkpoint and final reviewed-baseline propagation audit.
 
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Check absent initial construction state before the first actual build creates its queues.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Restore pending construction selection and reconcile settled completion/refund feedback with matching authoritative outcomes.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Contain pending construction lettering beside Retry order and assert actual text bounds at every commitment view.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Use concise pending receipt lettering in the three-action construction rail while retaining full status and text containment checks.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Review and promote 160 new construction candidates after pending recovery and settlement corrections; retain 19:28 supervisory scope.
+
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Archive eight exact construction walkthroughs and scoped acceptance evidence; carry the 19:39 supervisory checkpoint.
+
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-sharing-stories.
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-credit-stories.
-
 Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-briefing-stories.
 
-Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-credit-stories
+Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | Carry reviewed Linux selected-history candidates and 19:49 supervisory scope into feat/live-construction-stories.
 
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-credit-stories
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-briefing-stories
+
+Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-construction-stories
 
 Prompt 69 | 9430f52d3d07628cecbcda944f5192332a09671342bfb3b48a32cb266d1c4346 | Retain second pre-test setup failure and use explicit owned Firestore websocket with normal project-root configuration.
 
@@ -298,11 +312,15 @@ Prompt 94 | 80776ed2c18e86aab0b026d9411fb1495731fc2b51981674565b3456826f1ad7 | I
 
 Prompt 95 | a9d6c815e4b266d1212ebccfef1d49cbecada8469c3c2c0ea156c0faa2f1b121 | Integrate explicit credit maintenance proof and passing policy gate without changing runtime assertions or existing evidence.
 
-Prompt 96 | 87cb3ee2d17613be42f1d0ffaa3e0a81b5a00331ced6d58d30f03ad7365548d0 | Propagate proven post-merge append validation and verify exact current parent base before publishing briefing successor.
+Prompt 100 | 720f6d91efd555eee214d8d679e3ba096999360a9b2ee0b80d656c57ef240ef5 | Integrate current reviewed PR55 parent while preserving checkpoint, original assertions and exact branch request histories.
 
+Prompt 96 | 87cb3ee2d17613be42f1d0ffaa3e0a81b5a00331ced6d58d30f03ad7365548d0 | Propagate proven post-merge append validation and verify exact current parent base before publishing briefing successor.
 Prompt 95 | 6e991e71551fcf5637f79b920a40a6ef0a4bb16d5cc2c5501b8d9b84dd0fe19a | Integrate the seven independently approved PR53 identity references into PR54, preserving both prompt histories.
 Prompt 97 | a9d2799ec916ce6e0aa6db07f82d5bb250e42b24b182fdcf96036a3081a61f12 | Propagate the inspected seven-image PR53 reference update through current PR54 into PR55 without source changes.
+Prompt 103 | bc3d207100eef0cde385b3854ed77d9be0a3321c69a7a03fec709009a9d04e00 | Integrate current PR55 with exact archived parent records and retain approved construction candidate provenance.
 
 Prompt 96 | d780608456873c9599a1804f303e7cf87456d1ca7b23b4a1259ad171a1145855 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 98 | ec78ceffc24a09c8f2f66a37ffd1e3a93c039ecb9c4d2e4329412405c3f5b928 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 104 | 41f7d6e89f513c98d56a5b390badc142029ba411af3d22df3ebbb40aedf3c8bc | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.

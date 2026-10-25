@@ -305,3 +305,22 @@ test('post-merge appended prompt retains the exact copied final parent record in
  const appended=merged+'\n## Prompt 4: Later Work\n\nLater request.\n';f.write(appended);f.git('add','PROMPTS.md');f.git('commit','-qm','Append later request');assert.equal(f.check('--base',parent),0);
  for(const bad of [appended.replace('Second user request.','Second user request. '),appended.replace('Second user request.\n\n\n','Second user request.\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check('--base',parent),0);}
 });
+
+test('shared Git ancestor proves a final common request without inventing an archive', t => {
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const parentLog=initial+next;f.write(parentLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent adds structural separator');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);const childLog=initial+next.slice(1).replace('Second user request.','Child request.');f.write(childLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Child exact original prefix');
+ const dir=`docs/prompt-history/${parent}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(parentLog,`${dir}/PROMPTS.md`);f.git('add',dir);f.write(parent+'\n','.git/MERGE_HEAD');
+ const combined=childLog+next.replace('Prompt 2:','Prompt 3:')+'\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
+ f.write(combined.replace('First user request.','First user request. '));f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);
+});
+
+test('earlier append-only common history proves original shared final record', t => {
+ const f=fixture(t);f.seed();f.write(initial+next);f.git('add','PROMPTS.md');f.git('commit','-qm','Shared append');const common=f.git('rev-parse','HEAD').trim();
+ const later='\n## Prompt 3: Parent Work\n\nLater parent request.\n';
+ const parentLog=initial+next+later;f.write(parentLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent adds later request');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);const childLog=initial+next.slice(1).replace('Second user request.','Child request.');f.write(childLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Retained historical child log');
+ const dir=`docs/prompt-history/${parent}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(parentLog,`${dir}/PROMPTS.md`);f.git('add',dir);f.write(parent+'\n','.git/MERGE_HEAD');
+ const combined=childLog+next.replace('Prompt 2:','Prompt 3:')+'\n'+later.replace('Prompt 3:','Prompt 4:')+'\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
+ f.write(combined.replace('First user request.','First user request. '));f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);
+});
