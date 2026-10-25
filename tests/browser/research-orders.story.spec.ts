@@ -36,6 +36,7 @@ const selectedRowContained = async (page: Page) => {
   });
   expect(bounds.top).toBeGreaterThanOrEqual(bounds.clipTop);
   expect(bounds.bottom).toBeLessThanOrEqual(bounds.clipBottom);
+  await paintedContained(radio.locator(".."));
 };
 const paintedContained = async (control: Locator) => {
   const geometry = await control.evaluate((element) => {
@@ -488,7 +489,17 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         check: async () => {
           expect(await accepted("investing", 1)).toEqual(first);
           expect((await receipts(uid)).length).toBe(receiptsBefore.length + 1);
+          await research(owner)
+            .locator("input:checked")
+            .evaluate((input) =>
+              input.closest("label")!.scrollIntoView({ block: "nearest" }),
+            );
           await selectedRowContained(owner);
+          await paintedContained(
+            research(owner).getByRole("region", {
+              name: "Accepted research orders",
+            }),
+          );
           await expect(
             research(owner).getByRole("radio", { name: /^investing/ }),
           ).toBeChecked();
@@ -768,7 +779,19 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           await expect(
             research(stale).getByRole("radio", { name: /^recruiting/ }),
           ).toBeChecked();
+          await research(stale)
+            .locator("input:checked")
+            .evaluate((input) =>
+              input.closest("label")!.scrollIntoView({ block: "nearest" }),
+            );
+          await expect(research(stale).getByRole("alert")).toBeFocused();
           await selectedRowContained(stale);
+          await paintedContained(research(stale).getByRole("alert"));
+          await paintedContained(
+            research(stale).getByRole("region", {
+              name: "Accepted research orders",
+            }),
+          );
           expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
         },
       },
