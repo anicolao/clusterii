@@ -1,0 +1,12 @@
+✔ fresh exact request accepted; wrong/replayed/broadened requests rejected (0.548125ms)
+✔ exact phone chart selection only, no empty or wrong collected test (0.652333ms)
+✔ both actual dispatch layers accept only phone chart and reject wrong or empty args (96.614708ms)
+✔ full outer script accepts scoped route only up to required runner preflight (4.158541ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 149.198916
