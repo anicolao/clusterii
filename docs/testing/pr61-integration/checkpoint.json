@@ -1,0 +1,27 @@
+{
+  "pr": 61,
+  "head": "846122d972d8c649512425b3ab1522e74866d050",
+  "validation": "Staged and immutable-parent prompt checks passed; policy18tests passed; spec and renderer identities verified",
+  "oldOriginals": 56,
+  "affectedOriginals": 2,
+  "promoted": 0,
+  "missing": [
+    "large",
+    "short"
+  ],
+  "generation": {
+    "run": 40162979064,
+    "executor": "4ce46226ba857d8b242d3a0f6d7f496da21d5989",
+    "source": "0e0a958e",
+    "expectedImages": 112,
+    "status": "queued",
+    "guards": "Four dispatcher/request tests plus exact four-case collection passed"
+  },
+  "requiredRuns": {
+    "application": 40162943758,
+    "strict": 40162943760,
+    "docs": 40162943765,
+    "publication": 40162943766
+  },
+  "earlier": "PR53publicationFAILED, app/strictlive; Pages40160884684queued; PR57short40161761149queued; PR59cancellation40162403768in_progress; PR60cargo40162646504queued. All existing handles preserved."
+}

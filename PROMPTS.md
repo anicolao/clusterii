@@ -1883,3 +1883,9 @@ Reviewer:58independent exact-parent/hashes verified. Continue59 from current58, 
 Delegated reviewer instruction; main meta records exact corrected cancellation image approvals and remaining Linux scope.
 
 Reviewer: independent review confirms corrected released-draft capture at all four sizes and all22 corrected short macOS images (13distinct); exact hashes and scope recorded in latest main meta-prompts.md. Linux remains unapproved pending single run40162403768; preserve it and57short/53Pages/live strict handles. Continue PR60 from current59 using previously inspected96Linux images only after exact current-source/renderer/hash validation; shared SystemFleets footer change may invalidate them, so regenerate affected captures once if necessary and inspect before promotion. Prioritize completed earlier failures. Reconcile new mainmeta review entries into attributed PROMPTS/PROMPT_WORK and push logs. No merge.
+
+## Prompt 285: Travel applicability
+
+Delegated reviewer instruction; main meta records exact PR60 independent parent verification and all88 corrected PR59 macOS approvals, not Linux approval.
+
+Reviewer: independently verified PR60 df86305f exact parent92b9b88f in isolated HEAD/index; prompt checker passed and checker/tests unchanged, cargo story unchanged versus original03a2a8e4. Reviewed applicability report, nine affected feedback scenes rightly held. Preserve one cargo run40162646504,59run40162403768,57short and53Pages/live gates. All88 corrected59local macOS captures now independently inspected/approved (52distinct); exact per-viewport hashes in /tmp/cluster-pr59-*-independent-review.json and mainmeta, no Linux approval. Continue61 from current60, validate prior56Linux references against inherited footer effects before promotion, generate missing/affected evidence only once as needed. Prioritize any completed earlier failure. Reconcile latest mainmeta completion into attributed logs and push. No merge.
