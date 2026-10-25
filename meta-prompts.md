@@ -6837,3 +6837,26 @@ Reviewer: Independently verified published PR63 f8adb007866692870ea2979e2d4108b2
 #64 a26324c emulator-cohort PR published and attached. Independently reviewed sequential viewport orchestration, ownership/port guards, interrupt handling, retained per-cohort failure/log metadata, collision rejection and nonzero final status. Ran all five orchestration tests successfully. This mitigates lifetime accumulation; Linux effectiveness and underlying backlog cause remain unproven.
 
 Agent healthy validating history setup follow-up: phone/desktop/large exact comparisons pass existing baselines, short pending. Read helper diff: distinct described setup controls get existing individual budgets while whole-test deadline remains; acknowledgement checks retained, narrative records controls. Existing00:09 handoff still queued, no duplicate. #58 application green; latest CI queued/running. Carry checkpoint into committed/pushed logs. Full visual/Linux/current-preview/raster/release acceptance remains open; no merge.
+
+
+## Reviewer progress — 2026-10-22 00:59 Toronto
+
+#65 757d423 history setup published on #64 and attached; review records four exact journeys42 unchanged captures, all fifteen named controls, original90sec total deadline. No production/image changes. Agent healthy already developing live observations story; retained candidate assertion failure caused decorative DOM glyph versus accessible star name, being corrected without changing game behavior.
+
+Independently read observation entropy boundary and ran its three tests successfully: isolated demo/loopback and exact service signature, fixed fixture identity inputs only, seed/star/tick/distinct seats retained, unrelated campaigns unchanged. This explicit harness is not production entropy certification. New observations candidates and exact/visual review remain pending. CI #58 generation and #61 second verify now failed within existing service triage; #64/#65 queued. Existing00:09 handoff remains queued; no duplicate interruption. Carry checkpoint into committed/pushed logs; full release gates open, no merge.
+
+
+## Reviewer progress — 2026-10-22 01:10 Toronto
+
+Agent healthy reviewing four passing observation candidates at16eb245; exact/regressions pending. Independent phone image review found readable observation card and overlapping background map labels. #62 application green; #65 Linux verification running. New #61 publication failure confirmed HTTP404 exact-head mismatch. Queued concrete findings without interruption; full release gates remain open.
+
+Exact queued handoff:
+
+Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png. Observation card is readable, but map labels Tupa and Tania Australis overlap behind it around x40-90/y215-225; record and resolve as an actual rendered-UI issue, or retain explicitly open rather than approve full composition. Also #61 publication job119592171086 failed exact-head check for6504a4a with HTTP404; log /tmp/cluster61-preview-0109.log. Diagnose preview path/publication at next natural boundary; do not weaken exact-head gate or duplicate broad CI. Keep current healthy work moving and carry attributed findings into committed/pushed logs. No merge.
+
+
+## Reviewer progress — 2026-10-22 01:20 Toronto
+
+#66 4969974 published on #65 and attached. Independently checked four exact local observation results56 captures; scope review retains uninstrumented mock service136 assertions and two original browser/motion regressions, with managed-real coverage explicitly skipped. Phone map-label overlap remains openly documented and full composition unapproved. Agent healthy automatically processing00:09 queued finding;01:10 finding remains queued, no duplicate prompt.
+
+Independently fetched gh-pages/pr61/revision.json: source/build both6504a4a, corresponding Pages run39724569489 still queued. This explains plausible deployment delay but served preview remains unverified; no relaxed gate or duplicate publish. #57/#59 application now green, #65 Linux running. Carry checkpoint into committed/pushed logs; raster, Linux/full visual/preview/release gates open, no merge.

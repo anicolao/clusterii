@@ -1763,3 +1763,25 @@ Reviewer: Independently verified published PR63 f8adb007866692870ea2979e2d4108b2
 Delegated reviewer instruction; main meta Reviewer PR64 publication and PR65 preparation.
 
 Reviewer: Independently confirmed active64 at exact4dda4c889e16142f3e020169dd8d7de1f549c517 with docs/publication/generation SUCCESS; application/strict live.62strict remains live,63application/strict live; preserve all. Prepare isolated PR65 recovery atop4dda4c88 while these run. Original65 757d423c4d21397ca36ff9233c6741257a4df72a baseda26324cb changes history.story.spec.ts and test-step-helper.ts to split acknowledged setup operations into bounded steps. Compare against already inherited helper/history changes before integrating; retain all acknowledgements and strict assertions, no budget inflation or obsolete runner reversion. Inspect actual Pantheon E2E instructions/structure before story reorganization. Classify historical65 failures and prepare exact semantic/baseline comparison plus appropriate Nix checks; no active65 push or unseen image promotion yet. Reconcile this handoff/meta and final64 hosted evidence into reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+## Prompt 134: Linux failure triage
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 00:09 Toronto”.
+
+Reviewer finding 2026-10-22 00:09 Toronto (queue after current diagnostic): #58 and #62 Linux verification completed with36 and70 failures. Logs retained /tmp/cluster58-0008-failure.log and /tmp/cluster62-0008-failure.log from jobs119568677251/119594903701. These include missing reviewed Linux baselines AND additional admission/identity/maintenance locator timeouts plus function socket hangups; do not classify all as baseline or known raster failures. At a natural boundary inspect first causal service/trace failure and compare generation artifacts; review/promote only new candidate families with matching provenance, retain strict verification. No broad duplicate rerun or timeout relaxation. Carry this attributed finding and checkpoint into committed/pushed logs; no merge.
+
+
+
+## Prompt 135: Observation visual review
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:10 Toronto”.
+
+Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png. Observation card is readable, but map labels Tupa and Tania Australis overlap behind it around x40-90/y215-225; record and resolve as an actual rendered-UI issue, or retain explicitly open rather than approve full composition. Also #61 publication job119592171086 failed exact-head check for6504a4a with HTTP404; log /tmp/cluster61-preview-0109.log. Diagnose preview path/publication at next natural boundary; do not weaken exact-head gate or duplicate broad CI. Keep current healthy work moving and carry attributed findings into committed/pushed logs. No merge.
+
+
+## Prompt 136: Observation recovery preparation
+
+Delegated reviewer instruction; main meta Reviewer PR62 green and PR66 preparation.
+
+Reviewer: Independently confirmed PR62 all five checks SUCCESS at05d30b209ad0121bcc30df25a1d58f6e791f7d3e; green frontier52-62.65 activehead48b9f7ca confirmed;63-65 docs/publication/generation SUCCESS with application/strict live. Preserve live runs. Prepare PR66 isolated recovery atop48b9f7ca: original0666727da28a8c05f1734ac11a1f0b66afb0efb7 based757d423c introduces observations.story.spec.ts and observation-input guard plus live-stellar-observations baselines. Read original delta carefully, preserve reviewed inherited references/source and later safeguards. Classify historical strict/publication failures; inspect actual Pantheon E2E structure/instructions before any story reorganization. Provide semantic audit and bounded complete four-size Linux candidate plan if missing references remain; no unseen image promotion, no obsolete-head rerun or active66 push yet. Maintain real acknowledged observations, privacy and retained-history checks and original budgets. Reconcile exact green checkpoint/handoff/meta in reviewer-attributed committed/pushed logs. No GitHub merge.
