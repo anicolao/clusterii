@@ -787,11 +787,6 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           await expect(research(stale).getByRole("alert")).toBeFocused();
           await selectedRowContained(stale);
           await paintedContained(research(stale).getByRole("alert"));
-          await paintedContained(
-            research(stale).getByRole("region", {
-              name: "Accepted research orders",
-            }),
-          );
           expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
         },
       },
@@ -801,6 +796,33 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           page: stale,
           player: aliases[0] + " · second device",
           surface: "game",
+        },
+        {
+          page: stale,
+          player: aliases[0] + " · second device accepted orders",
+          surface: "game",
+          verifications: [
+            {
+              spec: "A separate bounded reading view shows the complete accepted-order list and focused conflict without changing choice or authority.",
+              check: async () => {
+                const schedule = research(stale).getByRole("region", {
+                  name: "Accepted research orders",
+                });
+                await schedule.evaluate((element) =>
+                  element.scrollIntoView({ block: "nearest" }),
+                );
+                await paintedContained(schedule);
+                await paintedContained(research(stale).getByRole("alert"));
+                await expect(research(stale).getByRole("alert")).toBeFocused();
+                await expect(
+                  research(stale).getByRole("radio", { name: /^recruiting/ }),
+                ).toBeChecked();
+                expect((await receipts(uid)).length).toBe(
+                  beforeReconnect.length + 1,
+                );
+              },
+            },
+          ],
         },
       ],
     });

@@ -566,3 +566,5 @@ Prompt 88 | bb120a0d9dc14b3bc56b7b33026a3eca8575491952cebafa3e027cf28df1f06b | S
 Prompt 89 | 3141e13ce15ef631f9c235e455dfea25232f167226405e9671332cb6f38c05ce | Correct demonstrated5px focus clipping in accepted-list reading view while asserting full commitment and order-list bounds.
 
 Prompt 89 | 3141e13ce15ef631f9c235e455dfea25232f167226405e9671332cb6f38c05ce | Cover all selected-row clipping ancestors and preserve focused conflict plus accepted list in explicit restored-choice reading views.
+
+Prompt 89 | 3141e13ce15ef631f9c235e455dfea25232f167226405e9671332cb6f38c05ce | Retain full restored-choice and accepted-list geometry in separate named short-compatible reading views after41.5px overflow.
