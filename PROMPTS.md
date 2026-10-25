@@ -803,3 +803,9 @@ Reviewer: independently recomputed all212 current/prior hashes:202byte-identical
 Delegated reviewer forward instruction; main meta records exact PR54 blob verification, PR55 inspected108 eligibility and PR71 source-only review.
 
 Reviewer: independently verified all212 committed PNG blobs at17915680 match approved originals, and GitHub54 exact head/checks live. Keep those handles and53jobs. Continue preparing55 from54 while checks run, using already reviewed108briefing images with explicit source/renderer applicability; inspect any changed compositions. Mainmeta also records71 full story/code and historical CI review (no71image approval). Reconcile new reviewer entries into attributed logs at next commit/push. No duplicate generation or PR merge.
+
+## Prompt 92: Pending propagation
+
+Delegated reviewer scoped PR54/55 locator correction; original failure and focused pass retained on parent a2860b0c, with exact same inherited test.
+
+Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
