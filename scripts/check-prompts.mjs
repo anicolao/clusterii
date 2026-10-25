@@ -62,12 +62,14 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
   // structural LF. Recognize that separator only from its exact Git-verified
   // ancestor archive, never by trimming arbitrary request whitespace.
   const originals = new Set();
-  for (const archive of git(['ls-tree', '-r', '--name-only', revision, '--', 'docs/prompt-history']).trim().split('\n')) {
+  for (const archiveOwner of new Set([revision, 'HEAD'])) {
+  for (const archive of git(['ls-tree', '-r', '--name-only', archiveOwner, '--', 'docs/prompt-history']).trim().split('\n')) {
     const match = /^docs\/prompt-history\/([0-9a-f]{40})\/PROMPTS\.md$/.exec(archive);
     if (!match || spawnSync('git', ['merge-base', '--is-ancestor', match[1], revision], {stdio:'ignore'}).status !== 0) continue;
-    const archived = trackedAt(revision, archive);
+    const archived = trackedAt(archiveOwner, archive);
     if (archived !== trackedAt(match[1], 'PROMPTS.md')) fail('Inherited prompt archive differs from its source commit.');
     for (const record of records(archived)) originals.add(record);
+  }
   }
   const same = (record, priorRecord) => record === priorRecord
     || (originals.has(record) && priorRecord === `${record}\n`);
@@ -76,7 +78,12 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
   while (cursor < prior.length && same(current[cursor], prior[cursor])) cursor++;
   // Reconciled records use the exact declared structural separator (default one LF).
   // Never trim body bytes: trailing spaces and every original newline survive.
-  for (const record of current.slice(cursor)) if (record === `${prior[cursor]}${separator}`) cursor++;
+  for (const record of current.slice(cursor)) {
+    const originalRecord = record.endsWith(separator) ? record.slice(0, -separator.length) : null;
+    const retainedSeparator = originalRecord !== null && originals.has(originalRecord)
+      && prior[cursor] === `${originalRecord}\n`;
+    if (record === `${prior[cursor]}${separator}` || retainedSeparator) cursor++;
+  }
   if (cursor !== prior.length) fail('Retain every archived parent request verbatim and in order in the canonical log.');
   return true;
 }
