@@ -26,5 +26,9 @@ case "$1" in
     bun run test:story-policy
     bunx firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun test tests/service.test.ts && bunx playwright test'
     ;;
+  recovery)
+    [ "$#" -eq 2 ] && [ "$2" = observation ] || exit 2
+    node scripts/observation-candidates.mjs
+    ;;
   *) exit 2 ;;
 esac
