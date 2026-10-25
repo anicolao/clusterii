@@ -5076,3 +5076,43 @@ Reviewer: Independently verified PR55 all five checks SUCCESS at unchanged fa41e
 Previous turn independently confirmed55allfivegreen and handed56serializedpublication recovery to agent. Current pane first confirms healthy agent responding: preserve selection/conflict and accepted-order containment in separate named reading views for short height; distinguish manual reading from automatic inner-list reveal. No duplicate handoff.
 
 Individually opened all10short forecast originals at90b5cc4ae5 from hash-verified manifest extraction. Approve001gallery scope only; hold002-010 for the same hidden selected Investing row (only unchecked Scanning/Navigation visible). Forecast first and End-key views together expose cost/effect, pending/paused explanations, qualified14funded-tick estimate and1.4science assumption; focus/Queue control readable. Ordinary document scroll clips neighboring specimen content, not itself an additional component defect. Currentgallery30/40reviewed:3approved27held10largepending. Existing correction handoff applies, no new blanketapproval or duplicate prompt. Reconcile in attributed committed/pushed logs when safe.
+
+
+## Reviewer complete forecast gallery and corrected short reading review
+
+Previous turn verified live publication wait and green52-55. This turn inspected pane first: healthy agent, PR56exact served revision check live.
+
+Reviewer: Completed PR90 current forecast gallery40 review at b5cc4ae5:13 scoped approvals (all10large plus001other sizes),27held002-010phone/desktop/short for hidden selected Investing; existing correction handoff applies. Large009 reopened successfully after truncation, all large views downscaled, not full-design/native-pixel approval. Independently verified PR89 complete-reading56-file index hashes and4passing journeys; read bd94bee4 test diff preserving selected-row/conflict view and adding separate accepted-list/conflict view with focus, checked choice and receipt count retained. Approve all14short current images:11exact previously inspected hashes plus individually inspected013 and both022views. Separate022views intentionally trade scroll position; not automatic all-content visibility. Remaining changed phone/desktop/large not yet approved; do not promote full family. Reconcile this handoff and meta in attributed committed/pushed logs when safe; no merge.
+
+
+## Reviewer PR56 green and corrected phone desktop approval
+
+Previous goal turn completed forecast40 review and corrected short14approval; concrete progress. Current pane confirms healthy agent and terminal56publication success, independently verified via GitHub.
+
+Reviewer: Independently confirmed PR56 all five checks SUCCESS at111f1b642048de69fd5e5ea0bfa12f91cd0d9330, including publication40167917644/job121128565485; green frontier52-56. Completed current PR89 complete-reading phone14 and desktop14 visual review: phone5distinct changed representatives cover9changed/new files plus5exact original approvals; desktop9distinct changed representatives cover13files plus exact approved021. Fresh SHA256 groups at /tmp/cluster-pr89-complete-phone-groups.json and /tmp/cluster-pr89-complete-desktop-groups.json. Approve these28 scoped images: selected choices and focus/action readable, acknowledgement or conflict and scheduled orders readable in intended views, previous background paint absent. Ordinary bounded reading scroll still clips offscreen neighboring content; this does not assert automatic all-content visibility. With prior short14 and exact unchanged large021,43of56 approved;13large changed/new still require independent review before full promotion. Continue serialized57publication recovery without interrupting live checks. Reconcile exact handoff and meta into attributed committed/pushed logs when safe; no merge.
+
+
+## Reviewer PR89 corrected family fully inspected
+
+Previous goal turn approved corrected phone/desktop and independently verified56green. Current pane inspected first: healthy57publication and90isolated correction work.
+
+Reviewer: Finished all remaining PR89 complete-reading large images. Eight individually viewed distinct representatives cover13changed/new files via freshly computed SHA256 groups /tmp/cluster-pr89-complete-large-groups.json;021exact prior approval. Selected Investing/Recruiting, focus outlines, acknowledgement/conflict, scheduled lists and action controls visible; previous background legend/text paint removed. Large viewed downscaled2048x1152: scoped layout/content review, not native-pixel or full-design approval. Current56-image family is now fully independently reviewed and approved for regression baseline promotion. Promote only exact /tmp/cluster-research-orders-complete-reading-originals/live-research-orders hashes; preserve original provenance including dirty generation and separate deliberate reading positions, run strict verification with unchanged assertions/tolerances, then commit/push evidence and reviewer-attributed logs. Integrate correction into stacked PRs in order without interrupting live CI/publication. No merges.
+
+
+## Reviewer PR58 missing short baseline isolated
+
+Reviewer: PR58 strict40168031952 is now terminal FAILURE at9b69b0163333e91597a83eb815095835838aab32. Independently inspected /tmp/cluster-pr58-current-strict-failed.log lines8492-8508: single short fleet-reorganization failure is Missing reviewed baseline/renderer for live-fleet-reorganization/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png; short cohort35passed2skipped1failed. Generation SUCCESS, candidate artifact12593406526 (2.95GB), verification12593828014 (2.92GB). Prior short candidates were missing due failed generation; use this successful generation to extract only short reorganization originals/manifests for independent review, using existing artifact/range extraction approach to conserve disk rather than duplicating whole artifacts. Provide exact small review root and provenance. After inspection/promotion rerun required checks on58; preserve active57publication and other live CI. Log this exact finding in attributed committed/pushed ledgers; no merge.
+
+
+## Reviewer PR57 green and PR59 shared feedback mismatch diagnosis
+
+Previous turn completed56image89review and isolated58missingbaseline; concrete progress.
+
+Reviewer: Independently confirmed PR57 all5SUCCESS at c61293ec9c6c738893dcef252631e76bd8adda9b (publication40168002387/job121129798779), frontier52-57. PR59strict40168055418 terminalFAILURE:7actual mismatches (formation012all4sizes; reorganization012phone/desktop/large) plus inherited missing short reorganization010. Full log /tmp/cluster-pr59-current-strict-failed.log. Extracted21expected/actual/diffPNGs only via bounded ranges,73MB instead of2.92GB, to /tmp/cluster-pr59-current-diffs. Source58..59 onlyproductionchange SystemFleets .feedback p -> .feedback :global(p), applies4px0 12px margins to child feedback. Independently viewed phone formation012expected/actual/diff: spacing and scroll offset shift, feedback and controls remain readable; scoped acceptable, not blanket7approval. Remaining6diff triples require inspection; I will continue. Preserve original expected images and do not blindly regenerate upstream families. After58candidate recovery, propagate reviewed actual shared-component changes to59and downstream rather than altering assertions. Reconcile findings in attributed committed/pushed logs; no merge.
+
+
+## Reviewer PR59 seven feedback diffs approved
+
+Previous turn established57green and extracted7diff triples; current pane confirms healthy agent extracting58short and89strict terminal success reported.
+
+Reviewer: Completed inspection of all7PR59mismatch triples (expected, actual, diff) extracted from verification artifact12593608142/run40168055418 at2f96284b. Approve exact7actuals indexed with SHA256 in /tmp/cluster-pr59-approved-actuals.json: formation012all4sizes; reorganization012phone/desktop/large. All show intended child-feedback paragraph margin correction; phone/short document offset changes6px, desktop/large feedback strip boundary/text shifts, while receipt, reserved quantities, accepted-order summary and controls remain readable. Large review downscaled2048x1152, scoped layout/content. This does not approve unseen later frames after first mismatch or short reorganization missing family. Compare full successful generation families against these reviewed hashes and prior approved references; present any further changed captures before promotion, then rerun strict unchanged. PR58short review remains next priority. Reconcile exact handoff/meta in attributed committed/pushed logs; no merge.

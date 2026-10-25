@@ -1,0 +1,7 @@
+# Missing short PR58 reference review set
+
+Current9b69b016 strict40168031952 failed only short reorganization first capture missing reviewed baseline; short35passed2skipped1failed. Successful generation artifact12593406526 API2951044623bytes SHA81d1d8129e106f1e6a0312cb698a50c6837c71cb9e75ceb2d18b76ba2429e612 expires2027-01-23T06:08:12Z.
+
+Reused bounded ZIP range approach, selected71files32898804bytes only; every206 Content-Range/size checked against immutable artifact length, selected ZIP CRC/path/symlink checks passed. Full ZIP SHA not verified because archive was not downloaded; do not claim otherwise.34PNG/34layoutJSON/story/renderer/README retained /tmp/cluster-pr58-current-short/test-results/stories/live-fleet-reorganization/short/linux-arm64. review-index.json exact34paths/hashes;21distinct groups in review-groups.json. Independent review pending; no promotion.
+
+Passed generation source36bd54867a96025c75d7e30c7294224c77caef9f fetched; full tree diff to9b69b0163333e91597a83eb815095835838aab32 EMPTY. Synthetic parentsc61293ec and9b69b016. Exact specSHA8531a5bbb0d138362c4e87fa2b802ddf064353374fc8d6087551114c51e955c6 matches currenthead. Manifest dirty:true retained; current pinned Nix launcher writes unignored ci-evidence/nix-renderer before stories. This explains known expected evidence dirtiness, not a fabricated postrun clean guarantee. RendererLinuxARM Playwright1.61.1/Chromium149/pinned824f1a...b321 exact arguments retained. No deadlines or baselines changed.
