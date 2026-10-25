@@ -1907,3 +1907,93 @@ Reviewer: Resumed goal continues toward full green stack. Previous goal work was
 Delegated reviewer instruction; main meta Reviewer PR67 bounded candidate generation.
 
 Reviewer: Independently reviewed original residual delta plus pushed PR67 PLAN.md and GitHub comparison: f741e8a0 directly atop5bf4597c, only observation spec and audit/prompt files changed, no production/reference changes. Proceed with isolated bounded complete four-size Linux observation candidate generation for prepared67 using established guarded Nix remote workflow, exact source/spec/renderer binding, unchanged budgets and all72 captures. Compare first56 to approved inherited references; retain every changed image and all16new originals for independent review. No automatic approval/promotion or active67 publication. Nix briefly failed repeatedly with fetcher-cache SQLite disk I/O error, now responds again; inspect disk before writes and preserve floor. Use remote artifacts and compact manifests first, no local image download/build/browser below reserve. Recover only verified redundant task archives if possible under prior authorization; no unique evidence/user/repo deletion/storeGC. Preserve live66strict40217431779. Reconcile preceding source-review checkpoints, temporary Nix failure/recovery and this exact handoff into committed/pushed attributed logs. No merge.
+
+
+## Prompt 152: Home target occlusion
+
+Delegated reviewer instruction; main meta Reviewer PR67 new sixteen originals inspected.
+
+Reviewer: Independently viewed all16 new PR67 originals019/020 for both seats/all4sizes. Scoped regression approval for15 exact hashes in /tmp/cluster-pr67-observation-linux/reviewer-new16.json; HOLD phone020-locate-home-by-keyboard-1-survey-envoy: Center home leaves target star/label occluded behind inspector, only heading visible, unlike desktop/short/large. Diagnose actual camera/viewport/panel geometry and ensure home target is in unobscured chart area, with assertion that detects panel occlusion rather than mere DOM visibility. Do not approve current phone020 or weaken test. Large originals3840x2160 viewed2048x1152, layout/content scope only. Other screenshots preserve historical/unknown distinction and focused Systems list; scrollable observation content is partly below fold on smaller sizes, not full reading/motion/design acceptance. Compare first56 inherited images independently as planned. Prioritize66 complete diff capture already directed, then isolated67 narrow correction and affected evidence; preserve approved inherited fixes and no active publication until reviewed. Commit/push exact review inventory and attributed handoff/provenance. No merge.
+[
+  {
+    "relative": "desktop/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+    "sha256": "1595a8f5d9b525b62a6e497747c6a99dc6adde0533435bc809624d894b11b331",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "desktop/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+    "sha256": "eefa9ca1123fc9322ffaa059a2c1f55dee18447d94e3f660f319be9fc79e7d77",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "desktop/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+    "sha256": "4ca75acfecacedf45de0aa45062496a7b11456faef9b6cf0b7800082a84b4bda",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "desktop/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+    "sha256": "eefa9ca1123fc9322ffaa059a2c1f55dee18447d94e3f660f319be9fc79e7d77",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "large/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+    "sha256": "37a54198374d4f0b444c670f1dac2ada50089b3fc7a05bb52a0fcada0db79721",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "large/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+    "sha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "large/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+    "sha256": "85b99409a9ad88427e21c4abfc832a1c34a7ee49d37f860fbf134bf89e9b47c2",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "large/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+    "sha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "phone/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+    "sha256": "3eb6c34a298aa9d50bdedd14ee15e3d1d551c698c7eddcffe02e5f71acba958c",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "phone/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+    "sha256": "65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "phone/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+    "sha256": "cd92e0c8373bb158f972995145d45f533b69bddc11541cf5c855fa2d7c13726f",
+    "decision": "hold-hidden-home"
+  },
+  {
+    "relative": "phone/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+    "sha256": "65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "short/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+    "sha256": "61f1047ce6f557fed0784e66df90a475a9e868f50f16bfd0d745ed5162d0434b",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "short/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+    "sha256": "3baf7a5582209101d848616d8d4789e05ab6730ab84668bd43101ba18101f119",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "short/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+    "sha256": "e656429372df32f82058396fa6240d518180980298a96930a4b4cdce0b69a2ea",
+    "decision": "approve-scoped-regression"
+  },
+  {
+    "relative": "short/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+    "sha256": "3baf7a5582209101d848616d8d4789e05ab6730ab84668bd43101ba18101f119",
+    "decision": "approve-scoped-regression"
+  }
+]
+
