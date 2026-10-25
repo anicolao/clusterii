@@ -1,0 +1,19 @@
+{
+  "head": "6854d84ab50269affd02948fee3fc3a5851a2a0d",
+  "base": "17915680d7dec4fbebb38c57cd425e902cc541f6",
+  "published": true,
+  "references": 108,
+  "independentReview": "All108 original images approved, source tree and inherited applicability independently reviewed; promoted PNG hashes independently verified",
+  "artifact": 12410489436,
+  "source": "c8129fec764fb8824bc951751b35aaedc3176c0f",
+  "gates": [
+    "check",
+    "lint",
+    "91 unit tests / 1536 assertions",
+    "story policy",
+    "16 prompt-history tests independently rerun"
+  ],
+  "extraRetrieval": "Only4 original README files missing from selective extraction:612282bytes, exact206ranges/CRC. No repeated image download or generation.",
+  "requiredCI": "requested by normal existing-branch push; not yet green",
+  "forward": "PR70 all160 approved only exact retained source; local7pixel stability still open. PR71/72/73 code reviews do not approve images."
+}

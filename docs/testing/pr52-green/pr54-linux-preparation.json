@@ -3,7 +3,7 @@
   "sourceCommit": "e70f3667",
   "executorCommit": "a40542c98c706cece9befc428836e772f5e76b5e",
   "run": 40154407498,
-  "status": "in_progress",
+  "status": "success",
   "cases": 8,
   "expectedImages": 212,
   "localGates": [
@@ -15,7 +15,7 @@
     "exact eight-case collection",
     "request validation 1 positive / 9 negative"
   ],
-  "referenceApproval": "pending fresh Linux inspection",
+  "referenceApproval": "All212 independently approved:202 byte-identical prior approved,10 changed originals inspected. All committed PNG bytes independently verified.",
   "original212": "retained; 210 acceptable at original source; 2 phone labels previously held",
   "reviewerForward": "PR66 source review; PR67 source/82 assertions and sampled Darwin label comparison only. No Linux approval.",
   "initialRun": {
@@ -26,5 +26,15 @@
     "reason": "recovery:credit absent from outer allowlist",
     "retained": "/tmp/cluster-pr54-candidate-failed.log"
   },
-  "dispatchValidation": "Three local tests pass including complete outer preflight; reviewer independently passed two dispatch tests. Request02 is new; request01 is unchanged."
+  "dispatchValidation": "Three local tests pass including complete outer preflight; reviewer independently passed two dispatch tests. Request02 is new; request01 is unchanged.",
+  "images": 212,
+  "duration": "7.4m",
+  "artifact": 12583688735,
+  "artifactSha256": "2712f7e2dc682cd8cf1494c8e359cfe4c8b21e960af2c076ec944a48048eeefc",
+  "publishedHead": "17915680d7dec4fbebb38c57cd425e902cc541f6",
+  "requiredRuns": {
+    "application": 40155701633,
+    "strict": 40155701632,
+    "state": "in_progress"
+  }
 }

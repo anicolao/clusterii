@@ -3981,3 +3981,90 @@ Strict39735293422/job119679444037 totals112passed60failed8skipped; allfour fleet
 ## Reviewer verified new PR54 candidate handle
 
 Fresh sourcee70f3667 contains reviewed exact dispatch fix; requestexecutora40542c98c706cece9befc428836e772f5e76b5e pushed. Confirmed run40154407498/job121052578968 in_progress on that exact executor. Prior40154163510 failed beforetests and remains recorded. This is a corrected new source request, not a duplicate rerun; continue existing handle.
+
+## Reviewer forward review — PR70 arrival archive
+
+PR70head417bb62232403a3a841245b2e6aabdd34f9701dc base69. Read complete314-line arrival story addition, shared screenshot telemetry delta and full54-line diagnostic plugin plus vite wiring/design/baseline notes. Existing live formation/travel retained, actual private archive facts2fighters20infantry/zero losses, independent orbit/surface, uninvolved recipients empty, real bounded full-visibility/keyboard scroll, reload/motion/dismissal no canonical mutation. Telemetry explicitly opt-in/emulator-only, observations around unchanged stableImage comparison; no tolerance change. No new definite code defect from review. Recorded local short final galaxy7pixel mismatch remains unapproved; need actual Linux evidence.
+
+Unlike66–69,70generation39743227540/job119705315798 actually passed172stories8skipped and uploaded artifact12418233598(4440214304bytes). Started bounded range extraction only live-fleet-travel originals/JSON to/tmp/cluster-pr70-reviewer-candidates, session9068; no wholeZIP download. No candidate approval yet. Historicalapplication39742635765 failed arrival-reports.spec.ts335: expected accepted Load order, received no fleet orders within5000ms (35browserpass1fail3skip). Retained/tmp/cluster-pr70-application.log; investigate if reproduced after forward integration, not explained by missing snapshots. Generationlog/tmp/cluster-pr70-generate.log.
+
+
+## Reviewer PR70 Linux provenance and desktop archive inspection
+
+Fetched clean generation sourceddd7512cd2169da67a312272b8336a086a034d4a; fulltree diff to70head417bb622 empty. Desktop manifestpassed/generate, specsha4c653d9d49d806ed15dbe2529cd55ebafdce80ea4a392bf96f76a8378ce329d0. Independently inspected all12 new desktop archive PNGs027–032 through7SHA-identical groups saved/tmp/cluster-pr70-desktop-archive-groups.json. OwnerrecordTupãtick4,0losses2fighters20infantry,bothcontrolYou; uninvolvedemptyarchive; full disclosure/private-rule text, visible rails and keyboardreturnfocus. Approve these12desktop additions only as scoped regression references. Other70images remain unreviewed; extractor9068 stilllive, do notrestart.
+
+Historical70strict totals112passed60failed8skipped; allfourtraveljourneys failfirstmissingLinuxreference. Publish39742635748 exactheadHTTP404. Logs/tmp/cluster-pr70-{failed,publish}.log. Selectively retrieved application error-context fromartifact12413572863:1file33656bytesCRCchecked, /tmp/cluster-pr70-application-context. Context confirms missing acceptedLoadorder; no fullpage state or cause established. Test bytes identical52; don't infer a70newproductionregression or rerun solely from historical failure. Confirm current integration and diagnose if repeated.
+
+
+## Reviewer PR70 archive inspection completed
+
+Bounded extraction completed: 328 files, 289968374 bytes, CRC checked; generation source ddd7512cd2169da67a312272b8336a086a034d4a has identical full tree to PR70 head417bb622. Phone and large twelve new archive images each inspected through seven exact-hash groups. Short twelve inspected through eight exact-hash groups, re-viewed in two-image batches after truncated output. All new027–032 archive compositions show readable owner facts, private empty peer archive, accessible bounded disclosure and fixed return rail, retained keyboard focus. Approve these36 additions plus previously inspected12desktop, total48 new archive regression references only. The inherited112 travel frames remain unreviewed in this artifact; generation pass does not approve them or prove the recorded7pixel short stability issue resolved. Group indexes /tmp/cluster-pr70-{desktop,phone,large,short}-archive-groups.json. No new candidate promoted by supervisor.
+
+
+## Reviewer handoff — scoped PR70 evidence
+
+Reviewer: PR70 selective extraction completed328files289968374bytesCRC checked; source ddd7512c fulltree identical417bb622. Independently inspected all48 new027–032 archive PNGs across four sizes, approved only these regression references (hash group indexes in /tmp/cluster-pr70-*-archive-groups.json). Inherited112 frames remain unreviewed and recorded7pixel short stability issue unresolved. Reconcile this mainmeta checkpoint into attributed logs at next commit/push. Keep existing53CI and54fresh credit job as priorities; no new job or interruption requested.
+
+## Reviewer PR70 inherited travel evidence
+
+Compared SHA256 of every inherited010–026 PNG against previously inspected PR61 originals under established Nix: all28phone and28desktop are byte-identical, so their existing image inspection applies without extrapolating across changed pixels. Independently inspected all28short inherited frames through18 exact-hash groups in two-image batches. Formation validation/reservation/reload, actual fleet complement, draft/invalid/repaired/accepted/recovered route, travel and arrival compositions readable; action rails remain visible, bounded scroll content retains controls. Approve these84 inherited regression references. Combined with48 archive images,132of160 PR70 PNGs now inspected or exactly matched to inspected originals. Remaining28large inherited frames require inspection. Current strictCI and recorded7pixel local stability issue remain separate gates. Indexes /tmp/cluster-pr70-{phone,desktop,large,short}-inherited-groups.json; no image promoted by supervisor.
+
+
+## Reviewer PR70 large travel inspection and complete family
+
+Independently inspected remaining28large inherited010–026 frames through18SHA-identical groups in two-image batches. Source3840x2160 displayed2048x1152, all relevant text/control compositions readable: complement validation, accepted reservation/reload, fleet facts, route waypoint/error/repair, authoritative accepted/travel/arrival and recovered fleet. No visible overlap or clipped action controls found. Approve these28 scoped regression references. All160 family images now covered:104 newly inspected plus56 byte-identical to previously inspected PR61 originals. Source provenance and CRC extraction as above. This does not establish current-head CI, release design approval, or resolution of separately recorded seven-pixel local rendering instability.
+
+
+## Reviewer handoff — PR70 complete retained image review
+
+Reviewer: mainmeta now records all160 retained PR70 fleet-travel PNGs covered. All28phone+28desktop inherited frames are SHA256-identical to previously inspected61 images; independently inspected remaining28short+28large inherited through18groups each, plus48newarchive previously reported. Approve only this exact-source retained regression family; current integrated-head CI and recorded7pixel local stability issue remain gates. Indexes /tmp/cluster-pr70-*-inherited-groups.json and archive-groups.json; source ddd7512c identical fulltree417bb622. Please reconcile, attribute, commit/push mainmeta at next checkpoint. Continue53/54 priority, no additional job requested.
+
+
+## Reviewer PR54 corrected capture succeeds
+
+Independently verified run40154407498 completed success; exact log/tmp/cluster-pr54-corrected-generation.log reports8passed7.4m at2026-10-25T02:37:28UTC. Artifact12583688735,360837234bytes,469files, SHA256 ZIP2712f7e2dc682cd8cf1494c8e359cfe4c8b21e960af2c076ec944a48048eeefc. Implementer already retrieving and verifying artifact; no duplicate download initiated by supervisor. Fresh image inspection remains required beforepromotion. PR53 strict/application stillpending onexistinghandles.
+
+
+## Reviewer PR54 fresh Linux image approval
+
+Independently recomputed all212 current and prior PNG SHA256 values under established Nix, validating current-image-index.json:202byte-identical to previously inspected acceptable references and10changed. Viewed every changed original: recovery013/014 fordesktop/large/phone/short plusphone016/017. Awaiting receipt now fits single-line phone button with no midword split; status, return control and focus visible. Shared-offer/review phone feedback readable and button label fits. Approve all212 exact fresh Linux regression references after inspection/exact-match validation, including release of prior two phone holds for this corrected source only. Archive verification records correct360837234byte ZIP SHA2562712f7e2dc682cd8cf1494c8e359cfe4c8b21e960af2c076ec944a48048eeefc and all CRCs passing. Current-image-index and source-applicability at/tmp/cluster-pr54-fresh-review. Promotion must preserve evidence, renderer/source linkage and all existing strict assertions; actual PR CI remains required.
+
+
+## Reviewer PR54 published baseline integrity
+
+Independently read all212 committed PNG blobs from17915680d7dec4fbebb38c57cd425e902cc541f6 and recomputed SHA256: every byte matches approved fresh originals in current-image-index.json. GitHub PR54 exact head matches; required checks now live: application40155701633/job121056527917, strict40155701632/job121056527973, docs40155701640/job121056527760, publication40155701647/job121056528273. Generation companion121056527819 is not assumed to produce candidates. PR53 existing strict/application remain live. No rerun or merge by reviewer.
+
+
+## Reviewer forward review PR71 conversation revocation
+
+Read full230-line story delta plus existing493-line setup/consent context, design and baseline notes at b590be6aa09466a8b28ea9e96708eb4b430ef6d0 base417bb622. No production change. Real authenticated UI removal confirmation preserves canonical revision until commit; one revision removes current membership, creator post-removal message increments once, former member and outsider serialized views exclude it. Reload retrieves only previously consented history, excludes ungranted secret and absent-period message; actual bounded record reading, fixed return rail, motion preferences and Escape focus restoration checked. No definite new code finding. No PR71 images approved in this review.
+
+Historical strict39745132291/job119711581105 totals110passed62failed8skipped. Desktop/large/short selected-history reaches missing Linux018 removal baseline; phone stops earlier on273pixel017return-to-chart mismatch. Separate phone navigation0051066pixels and scheduled-roster259pixels also present; do not classify all failures as missing references or infer cause without image comparison. Generation119711580881 explicitly no files/no artifacts. Application119711581085 anddocs119711580397 passed historically. Retained logs/tmp/cluster-pr71-{failed,generate}.log. Fresh integrated source/renderer candidates and review required when reached.
+
+
+## Reviewer handoff — PR54 publication verified, next stack step
+
+Reviewer: independently verified all212 committed PNG blobs at17915680 match approved originals, and GitHub54 exact head/checks live. Keep those handles and53jobs. Continue preparing55 from54 while checks run, using already reviewed108briefing images with explicit source/renderer applicability; inspect any changed compositions. Mainmeta also records71 full story/code and historical CI review (no71image approval). Reconcile new reviewer entries into attributed logs at next commit/push. No duplicate generation or PR merge.
+
+## Reviewer forward review PR72 private drafts
+
+Reviewed complete249-line selected-history extension, production17-line feedback delta with component context, and design/baseline notes at5655ca32c7725b3c500ca5025fb9153ff21af56e base71. Ordinary durable browser draft save/reload, two authenticated same-browser tabs, competing text retained, explicit keyboard Use saved draft, disabled Send during conflict, canonical full-state equality until send, exact single revision/sequence and saved text, no removed/outsider recipient leakage, empty composer after reload and bounded authorized history reading. Feedback suppression is restricted to conversation.send Message sent success with nonempty current body; error prop/pending text remain. No definite new code finding; no72image approval from this review.
+
+Historical strict39747681740/job119720129797 totals108passed64failed8skipped. Selected-history desktop/large/short stops at inherited missing018removal; phone earlier017chart mismatch. Phone navigation005 and scheduled-start026 also differ; short identity-conflict001 and keyboard-return004 differ, requiring inherited52fix/current evidence rather than old-output promotion. Generation119720129645 explicitly no files/no artifacts. Historicalapplication119720130162 anddocs119720130031 passed. Logs/tmp/cluster-pr72-{failed,generate}.log. PR55 currently being integrated by implementer with prompt-history conflicts under active resolution, no concurrent writer/interruption.
+
+
+## Reviewer forward review PR73 explicit replacement
+
+Reviewed full143-line story addition and design/baseline notes at17250d5795c25d501cefb1f285a8e929cbabe822 against5655ca32. No production change. Two real authenticated tabs preserve competing text, conflict disables sending, both remedies and fixed footer must be fully visible, keyboard replacement receives durable-store acknowledgement, both reloads recover chosen text. Complete canonical equality and removed-member/outsider projections check all three unsent texts stay private. Motion parity preserves unsent state. No definite new code finding; no PR73 images approved by this review.
+
+Historical strict39749181576/job119725132599 totals110passed62failed8skipped. Three phone pixel mismatches1066/259/273 remain, and desktop/large/short selected-history stops at inherited missing018removal baseline. Generation119725132363 explicitly uploaded no files/artifacts; its success is not image evidence. Application119725133357 and docs119725132744 passed; publication39749181733 failed exact-head verification with last observed HTTP404. Logs /tmp/cluster-pr73-{failed,generate,publish}.log. Existing53/54 jobs confirmed live this turn; PR55 implementer healthy, resolving promotion's missing narrative README metadata via bounded retrieval without altering reviewed images. No duplicate prompt or job sent.
+
+
+## Reviewer PR55 prepared integration verification
+
+Independently reviewed new explicit record-separator checker/test delta against17915680, then ran all16 check-prompts actual-Git tests in established Nix; allpassed, session45045. Exact request whitespace, wrong source metadata, undeclared separator changes and both histories remain checked. Independently recomputed SHA256 of all108 prepared live-return-briefing Linux PNGs against previously inspected retained originals: every byte matches. Source comparison c8129fec to prepared tree for player/service/assets/dependency/story configuration shows only inherited CreditOffers labels/padding and short identity-intro line-height; no changed briefing composition claimed. Preparation is not current CI success.
+
+
+## Reviewer handoff — PR55 independent checks
+
+Reviewer: independently ran all16 prompt-history tests in Nix, allpassed; read separator delta and independently SHA256-verified all108 prepared briefing PNGs equal inspected originals. Reviewed source applicability delta limited to inherited CreditOffers and identity CSS. Mainmeta also contains completed72/73 code and historical CI reviews, no image approvals for those. Reconcile reviewer entries at next commit/push, retain current53/54 CI handles, continue55 publication and forward stack. No extra generation, duplicate job or GitHub merge requested.

@@ -1726,3 +1726,33 @@ Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh
 Delegated reviewer checkpoint; main meta records dispatch review and PR68/69 scoped forward findings, not new image approval.
 
 Reviewer checkpoint: independently reviewed exact outer/inner credit dispatch fix and ran your 2 dispatch tests underNix, both pass. New54run40154407498 confirmed live on a40542c9; continue it. Mainmeta now also records68 scoped phone005 edge-label inspection and historicalCI;69 complete671-line story/production/fixture review plus3 independent guard tests pass, but no69images approved. Historical69short identity-pending-retry001 has1994pixel leading mismatch; verify after inheriting52fix. At next checkpoint reconcile/commit/push current mainmeta and attributed logs. Keep54fresh-image inspection and53existingCI as priorities; no new job requested.
+
+## Prompt 259: Archive references
+
+Delegated reviewer checkpoint; main meta records PR70 selective48-frame approval, not inherited112 or short stability approval.
+
+Reviewer: PR70 selective extraction completed328files289968374bytesCRC checked; source ddd7512c fulltree identical417bb622. Independently inspected all48 new027–032 archive PNGs across four sizes, approved only these regression references (hash group indexes in /tmp/cluster-pr70-*-archive-groups.json). Inherited112 frames remain unreviewed and recorded7pixel short stability issue unresolved. Reconcile this mainmeta checkpoint into attributed logs at next commit/push. Keep existing53CI and54fresh credit job as priorities; no new job or interruption requested.
+
+## Prompt 260: Travel references
+
+Delegated reviewer approval; main meta records PR70 exact-source160-frame family scope and unresolved current verification/stability gates.
+
+Reviewer: mainmeta now records all160 retained PR70 fleet-travel PNGs covered. All28phone+28desktop inherited frames are SHA256-identical to previously inspected61 images; independently inspected remaining28short+28large inherited through18groups each, plus48newarchive previously reported. Approve only this exact-source retained regression family; current integrated-head CI and recorded7pixel local stability issue remain gates. Indexes /tmp/cluster-pr70-*-inherited-groups.json and archive-groups.json; source ddd7512c identical fulltree417bb622. Please reconcile, attribute, commit/push mainmeta at next checkpoint. Continue53/54 priority, no additional job requested.
+
+## Prompt 261: Credit approval
+
+Delegated reviewer independent visual approval; main meta records exact artifact12583688735 whole212 regression-family disposition.
+
+Reviewer: independently recomputed all212 current/prior hashes:202byte-identical to reviewed acceptable references,10changed. Visually inspected every changed original (013/014 all4sizes, phone016/017). Approve all212 fresh Linux regression references from artifact12583688735; previous phone013/014 holds resolved by readable one-line Awaiting receipt. Mainmeta records scope/evidence. Proceed with exact-source promotion and existing PR54 integration, attributed logs commit/push and strict CI. No tolerance changes or PR merge. PR70 all160 scoped retained images also recorded for later.
+
+## Prompt 262: Briefing preparation
+
+Delegated reviewer forward instruction; main meta records exact PR54 blob verification, PR55 inspected108 eligibility and PR71 source-only review.
+
+Reviewer: independently verified all212 committed PNG blobs at17915680 match approved originals, and GitHub54 exact head/checks live. Keep those handles and53jobs. Continue preparing55 from54 while checks run, using already reviewed108briefing images with explicit source/renderer applicability; inspect any changed compositions. Mainmeta also records71 full story/code and historical CI review (no71image approval). Reconcile new reviewer entries into attributed logs at next commit/push. No duplicate generation or PR merge.
+
+## Prompt 263: Briefing verification
+
+Delegated reviewer validation; main meta records16 prompt tests,108 exact briefing blobs and PR72/73 code-only forward review.
+
+Reviewer: independently ran all16 prompt-history tests in Nix, allpassed; read separator delta and independently SHA256-verified all108 prepared briefing PNGs equal inspected originals. Reviewed source applicability delta limited to inherited CreditOffers and identity CSS. Mainmeta also contains completed72/73 code and historical CI reviews, no image approvals for those. Reconcile reviewer entries at next commit/push, retain current53/54 CI handles, continue55 publication and forward stack. No extra generation, duplicate job or GitHub merge requested.
