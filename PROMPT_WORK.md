@@ -455,3 +455,9 @@ Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | 
 Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Retain four passing corrected local journeys72images with real occlusion assertion, source identity and monitored disk evidence.
 
 Prompt 153 | 1234e909f3f94336d88c4825df07834bc41517f57bd962f7ba6748896fa7c1d7 | Verify corrected Linux72family archive and source/renderer;71unchanged and one heldphone020 correction retained for independent review.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Correct the keyboard home journey to verify automatic list dismissal and restored focus; retain diagnostic failures.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Scope placement to each shared galaxy viewport and exclude zero-size behind-camera labels; preserve observation candidates.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review and promote only the intentional observation label candidates with matching clean provenance before strict verification.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 72 exact label captures and retained service/browser regressions; carry the independent sampled review and remaining gates.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 67 and its predecessor in the delivery acceptance table with an explicitly unverified current-head preview.
