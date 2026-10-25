@@ -1614,3 +1614,42 @@ Delegated reviewer instruction; main meta records independent complete112-image 
 Reviewer: all112 PR61 Linux travel originals approved. Independently confirmed108exactSHA matches to previously inspected PR70 originals (mainmeta3931-3941), plus all4changed012reservation images now independently viewed. Lastturn also independently viewed18short compositions; large012 completed now. /tmp/cluster-pr61-linux-corrected/novel-review.json exact4hashes; mainmeta fullscope/limits. Verify source/dirty provenance, promote exact112to61 and carry62 with exact-parent checks. Reconcile/push logs; preserve53priority and serializedpublication57->56->53. No duplicates/weakening/merges.
 
 
+## Prompt 117: Complete identity
+
+Delegated reviewer approval; see main meta Reviewer PR53 complete identity approval and handoff.
+
+Reviewer: independent review now APPROVES all27changed exact originals in /tmp/cluster-pr53-complete-linux/changed-groups.json:15remaining distinct originals individually inspected +6exact previously approved hashes, all27SHA verified underNix. Full findings/handoff appended mainmeta under Reviewer PR53 complete identity approval and handoff. Promote to53 now with provenance and full gates; commit/push attributed logs/exact-parent checks, carry compatible fix through54–62. Prioritize53fullygreen.56strict/generation now terminalFAILURE: triage existing results.57publication nowIN_PROGRESS; preserve serialization, avoid rerunning obsolete53publication after newhead. No merges/weakened checks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Prompt 118: Service exhaustion
+
+Delegated reviewer instruction; see main meta Reviewer PR56 service exhaustion confirmed from retained artifact.
+
+Reviewer: new independent56evidence confirms emulator exhaustion: verify artifact12588014245 selected extraction at /tmp/cluster-pr56-error-contexts; firestore-debug.log has10001pending WebChannel backlog line8992 at05:38:19 and explicit Java heap OutOfMemoryError lines4680474/4683118. Contexts show Retrieving your identity or Awaiting acknowledgement. Full findings/exact handoff mainmeta Reviewer PR56 service exhaustion confirmed from retained artifact. After safe propagation checkpoint, backport applicable64a26324cb viewport cohort isolation to56, preserve alltests/deadlines/assertions/exactpixels/failed artifacts, test underNix and propagate forward. Do not disrupt53currentCI or duplicate downloads. Reconcile attribution/logpush. No merge.
+
+
+
+
+
+
+
+
+
+
+
+
