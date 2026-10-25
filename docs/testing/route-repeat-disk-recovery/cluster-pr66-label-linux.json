@@ -1,0 +1,877 @@
+{
+  "path": "/tmp/cluster-pr66-label-linux/artifact.zip",
+  "bytes": 91174169,
+  "allocatedBytes": 91176960,
+  "sha256": "186a66c415c1b18281cf69dbdea9bded43293997c1034e6d6dabbe68a03104b2",
+  "remote": {
+    "id": 12601784807,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYwMTc4NDgwNw==",
+    "name": "recovery-observation-2fd9679354316feec90565b442949787357c93e3-1",
+    "size_in_bytes": 91174169,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12601784807",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12601784807/zip",
+    "expired": false,
+    "digest": "sha256:186a66c415c1b18281cf69dbdea9bded43293997c1034e6d6dabbe68a03104b2",
+    "created_at": "2026-10-25T14:18:01Z",
+    "updated_at": "2026-10-25T14:18:01Z",
+    "expires_at": "2026-11-24T14:17:58Z",
+    "workflow_run": {
+      "id": 40201005880,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr66-label-candidates",
+      "head_sha": "2fd9679354316feec90565b442949787357c93e3"
+    }
+  },
+  "verifiedLocalOriginals": 126,
+  "localOriginalIndex": "/tmp/cluster-pr66-label-linux/selected-hashes.json",
+  "noOpenProcess": true,
+  "entries": [
+    {
+      "path": "ci-evidence/recovery-request/executor.json",
+      "bytes": 494,
+      "crc32": 1339164892,
+      "sha256": "d2b025b0976c22d07d03582be9f6b5b5d1362ba1180b2afa49b3fd577b18c929"
+    },
+    {
+      "path": "ci-evidence/recovery-request/request.json",
+      "bytes": 310,
+      "crc32": 4245152610,
+      "sha256": "0e64dbb657eafe043b625b7fa2d283b1e33e8c22076c8f0a85a4044d1add890d"
+    },
+    {
+      "path": "test-results/stories/.last-run.json",
+      "bytes": 45,
+      "crc32": 3787177680,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 26437549,
+      "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+      "bytes": 1069599,
+      "crc32": 1544905919,
+      "sha256": "c93eda163113f6742e0dc7e972a944603bd2ed8eb00fcdf03f1866fdee96fd73"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+      "bytes": 1069796,
+      "crc32": 2624629036,
+      "sha256": "7afbdf62d1a4df175ee60107312f95f556e19c957ccc3117a945f53c53d48d30"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/012-read-current-report-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 26437549,
+      "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/012-read-current-report-1-survey-envoy.png",
+      "bytes": 1064026,
+      "crc32": 2326611567,
+      "sha256": "1e54a8b198c1b97ff50302473e0eedae122bbbef89bafe401f51dc40b435959a"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/012-read-current-report-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+      "bytes": 1070001,
+      "crc32": 367777592,
+      "sha256": "ae253dd77e7a4f54d453ca9bbdfc4d9d49b8927d26aba9c975814d129b9089a0"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/013-read-scanning-capability-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 26437549,
+      "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+      "bytes": 1067791,
+      "crc32": 4053853020,
+      "sha256": "f07f5ae6fbd171b7b04d906c9927425ea2fa91bb95354d2e4d49851c1fbf5d48"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/013-read-scanning-capability-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+      "bytes": 1069818,
+      "crc32": 927743597,
+      "sha256": "5998e916c412a15b9290f9068f85ec2a6520a712a892f4c5c21ef21acd192a5e"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/015-read-retained-history-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 26437549,
+      "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+      "bytes": 1064839,
+      "crc32": 3642492647,
+      "sha256": "d0b78a6091d99790b3f35d2ebeb335e8e2592cffca1dc31d29b271db5ab97efc"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/015-read-retained-history-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+      "bytes": 1070933,
+      "crc32": 3730795930,
+      "sha256": "be9f5a20cce86008c34be44154c86643405e75cef5989f255e7e2bd813241f1b"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/016-read-historical-warning-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 26437549,
+      "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+      "bytes": 1064839,
+      "crc32": 3642492647,
+      "sha256": "d0b78a6091d99790b3f35d2ebeb335e8e2592cffca1dc31d29b271db5ab97efc"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/016-read-historical-warning-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+      "bytes": 1072107,
+      "crc32": 3469941786,
+      "sha256": "798183d53c75428027f5faffa85ae97cfb9f536e79aa41c22867803a04146497"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/017-inspect-still-unknown-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 26437549,
+      "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+      "bytes": 1071168,
+      "crc32": 2749614338,
+      "sha256": "510551122fe5210e1b134fa9b393d0f9d09e94dd2fa116d237f2bbe2ca2eff09"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+      "bytes": 1071056,
+      "crc32": 685193807,
+      "sha256": "3c7bd76b7805d330ffae1906d52c28be859748e5360680b09f9aa5067b13fa49"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/018-recover-retained-report-1-survey-envoy.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+      "bytes": 1062942,
+      "crc32": 1514380443,
+      "sha256": "1595a8f5d9b525b62a6e497747c6a99dc6adde0533435bc809624d894b11b331"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/018-recover-retained-report-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 1903707331,
+      "sha256": "34859d47461648a2924cd6442fdb660a72028c7c1095695b529999c9ec6c6818"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+      "bytes": 1069032,
+      "crc32": 1583864275,
+      "sha256": "eefa9ca1123fc9322ffaa059a2c1f55dee18447d94e3f660f319be9fc79e7d77"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/README.md",
+      "bytes": 11879,
+      "crc32": 1343538371,
+      "sha256": "03f8c4f47cd8876d26fe2f4f8ccda40a68ec106b3bddddcd09d9396dc312a33d"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/renderer.json",
+      "bytes": 759,
+      "crc32": 1725575456,
+      "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/desktop/linux-arm64/story.json",
+      "bytes": 13877,
+      "crc32": 3501142433,
+      "sha256": "d809ceadede449ffb50ceb1eb25d067267fe55fce70f912f6181e56e6c74c849"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 1170803818,
+      "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+      "bytes": 4715967,
+      "crc32": 315659852,
+      "sha256": "73d67a1656882d5866aa70f5c0b772b8ffdd8abeaf386d6208ba794efbdb2b8a"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/012-read-current-report-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 1170803818,
+      "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+      "bytes": 4719323,
+      "crc32": 3078224836,
+      "sha256": "490111f75cd02164e5a47b1cd1dbbacde6f47c1f8106c6f38a11f42d3e8b25fa"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/012-read-current-report-1-survey-envoy.png",
+      "bytes": 4752476,
+      "crc32": 2777590669,
+      "sha256": "72ad140d8425b39ac8d625731ab7d1510ef2dda541464bc3ce1e5d4b0a39061a"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/012-read-current-report-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+      "bytes": 4719687,
+      "crc32": 2474152227,
+      "sha256": "f8959fa88e365b1e9b30d41621609b86da29f4caa460116bd2bc038711e6b500"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/013-read-scanning-capability-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 1170803818,
+      "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+      "bytes": 4752476,
+      "crc32": 2777590669,
+      "sha256": "72ad140d8425b39ac8d625731ab7d1510ef2dda541464bc3ce1e5d4b0a39061a"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/013-read-scanning-capability-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+      "bytes": 4719687,
+      "crc32": 2474152227,
+      "sha256": "f8959fa88e365b1e9b30d41621609b86da29f4caa460116bd2bc038711e6b500"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/015-read-retained-history-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 1170803818,
+      "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+      "bytes": 4752284,
+      "crc32": 2261738151,
+      "sha256": "7ca0ed26973961d450e974c50e48822cac1fc4d35f598892c4562052ecbecfcc"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/015-read-retained-history-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+      "bytes": 4717572,
+      "crc32": 89188696,
+      "sha256": "916f5f5e851262f04a966cb0daa0a63018d9f9cdb8babae2bdcba9f58ff5eb76"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/016-read-historical-warning-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 1170803818,
+      "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+      "bytes": 4752284,
+      "crc32": 2261738151,
+      "sha256": "7ca0ed26973961d450e974c50e48822cac1fc4d35f598892c4562052ecbecfcc"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/016-read-historical-warning-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+      "bytes": 4717572,
+      "crc32": 89188696,
+      "sha256": "916f5f5e851262f04a966cb0daa0a63018d9f9cdb8babae2bdcba9f58ff5eb76"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/017-inspect-still-unknown-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 1170803818,
+      "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+      "bytes": 4713556,
+      "crc32": 3609650850,
+      "sha256": "220ef5a802c25c4b416cef823184e00a4f8f0211a1bebab8a45d8d5b7170d916"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+      "bytes": 4716821,
+      "crc32": 1176258222,
+      "sha256": "1de3d1e2f3fda9ea9447d12d20c03515f66644656d46335fb0ab073747598622"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/018-recover-retained-report-1-survey-envoy.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+      "bytes": 4749562,
+      "crc32": 2886713162,
+      "sha256": "37a54198374d4f0b444c670f1dac2ada50089b3fc7a05bb52a0fcada0db79721"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/018-recover-retained-report-2-independent-surveyor.layout.json",
+      "bytes": 2069,
+      "crc32": 799275456,
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+      "bytes": 4714487,
+      "crc32": 2836621973,
+      "sha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/README.md",
+      "bytes": 11877,
+      "crc32": 1048084596,
+      "sha256": "49f535fb10f0892a9d4474bc6d692e2ba504922d965bd88a0c3815379910d65f"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/renderer.json",
+      "bytes": 759,
+      "crc32": 1322158050,
+      "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/large/linux-arm64/story.json",
+      "bytes": 13875,
+      "crc32": 2503601736,
+      "sha256": "a4c1a695379a1e638324ab0add95dbde37b5d41a6a6a4b727114ac719cc7ab32"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.layout.json",
+      "bytes": 2065,
+      "crc32": 4071097994,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+      "bytes": 109319,
+      "crc32": 3835999153,
+      "sha256": "3447d7cf228874cea2c39ede24c9a3f53042d8e4ddf3d1945fadd5c513d5730a"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+      "bytes": 107559,
+      "crc32": 2392928283,
+      "sha256": "42bf143f79598b6f8c62b481f49ea086e81aa62af01f71fcc7667d54e69bd6f1"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/012-read-current-report-1-survey-envoy.layout.json",
+      "bytes": 2065,
+      "crc32": 4071097994,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/012-read-current-report-1-survey-envoy.png",
+      "bytes": 110260,
+      "crc32": 2800532118,
+      "sha256": "d40c86bbd02bd5741dd3949793d6bf3e6200f15bad13ae5739c3f4b536f5ec0b"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/012-read-current-report-2-independent-surveyor.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+      "bytes": 107559,
+      "crc32": 2392928283,
+      "sha256": "42bf143f79598b6f8c62b481f49ea086e81aa62af01f71fcc7667d54e69bd6f1"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-1-survey-envoy.layout.json",
+      "bytes": 2065,
+      "crc32": 4071097994,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+      "bytes": 108503,
+      "crc32": 885524071,
+      "sha256": "b84be4b4891d731fbb1b2e78df8df4fcaa4e517480f157b1b791f28040814932"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-2-independent-surveyor.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+      "bytes": 108238,
+      "crc32": 2262405882,
+      "sha256": "74d51b204cdd35e4e3d72bbc1b609c60aba4ed43981ac4b222a8c777e124c179"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/015-read-retained-history-1-survey-envoy.layout.json",
+      "bytes": 2065,
+      "crc32": 4071097994,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+      "bytes": 109158,
+      "crc32": 3076097962,
+      "sha256": "97d56c5e7595ed1b9ba59eac5e7a8b97559e739798090272a3ff9941e1070fab"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/015-read-retained-history-2-independent-surveyor.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+      "bytes": 106553,
+      "crc32": 2429679582,
+      "sha256": "b1e8b91b5345d10f652be479522f15f8b632f8aba6fc6326ee90e9fac0626c97"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/016-read-historical-warning-1-survey-envoy.layout.json",
+      "bytes": 2065,
+      "crc32": 4071097994,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+      "bytes": 107948,
+      "crc32": 2645043901,
+      "sha256": "91d3dd12db79ce32f681aff0d2278ab517124dbb897809212b1df2ffc9526360"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/016-read-historical-warning-2-independent-surveyor.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+      "bytes": 107283,
+      "crc32": 1205275767,
+      "sha256": "70608c27c216c5a5a9b16a679e3fd087b70177297be15fdc400f1c2bc6d1f8f9"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-1-survey-envoy.layout.json",
+      "bytes": 2065,
+      "crc32": 4071097994,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+      "bytes": 108638,
+      "crc32": 2691967312,
+      "sha256": "8ebf61e5f76c23c0e6b4285be6617b81e52c114f88835bfc03bda9faccb6d7fd"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+      "bytes": 106781,
+      "crc32": 450315855,
+      "sha256": "93b57ec2bc092a30c97d1f9b2e9d3606600afb31b0a296e871d4ff218946caf2"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/018-recover-retained-report-1-survey-envoy.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+      "bytes": 106808,
+      "crc32": 848856648,
+      "sha256": "3eb6c34a298aa9d50bdedd14ee15e3d1d551c698c7eddcffe02e5f71acba958c"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/018-recover-retained-report-2-independent-surveyor.layout.json",
+      "bytes": 2067,
+      "crc32": 2433242195,
+      "sha256": "0747f2625d1681f4d4fa45dec470a8003b7c2cb5199ca8f5ad2401b62cfce503"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+      "bytes": 103969,
+      "crc32": 1761220446,
+      "sha256": "65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/README.md",
+      "bytes": 11877,
+      "crc32": 4275044514,
+      "sha256": "64410353e17997b0a5566d9fd601f62898dac148d54bf838a4d8088927b9817b"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/renderer.json",
+      "bytes": 757,
+      "crc32": 851725460,
+      "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/phone/linux-arm64/story.json",
+      "bytes": 13873,
+      "crc32": 3618219842,
+      "sha256": "947c2423965ed2dd21006c9c88d8accce09ac4ecfaa2318ebd0d5bcd58d0c866"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.layout.json",
+      "bytes": 2066,
+      "crc32": 4263731514,
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+      "bytes": 613770,
+      "crc32": 1854583466,
+      "sha256": "947e755f9c792000f6853a5cf8912dcde99874393ff7832648857f92d9feac7a"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+      "bytes": 613753,
+      "crc32": 1689471131,
+      "sha256": "8cae1aaad7bfd01f275b59b07dbf1fbfa45402e168eaebea38a5d0734d887e43"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/012-read-current-report-1-survey-envoy.png",
+      "bytes": 612561,
+      "crc32": 1331065801,
+      "sha256": "57291a23cac4cfbd5cfefca745e8b1621422931e0c0cfd2d68682ca58308063d"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/012-read-current-report-2-independent-surveyor.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+      "bytes": 613953,
+      "crc32": 2294589671,
+      "sha256": "528155a6e9bb6e5334358536a202a773c1713d9a5d52bf9b1642453b6b47a4f4"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/012-read-current-report-1-survey-envoy.layout.json",
+      "bytes": 2066,
+      "crc32": 4263731514,
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/013-read-scanning-capability-1-survey-envoy.layout.json",
+      "bytes": 2066,
+      "crc32": 4263731514,
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+      "bytes": 615265,
+      "crc32": 133333905,
+      "sha256": "da6098c8e5837982314ac9b94b886ed9c62c4569917f61dbff5c21565d4cca28"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/013-read-scanning-capability-2-independent-surveyor.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+      "bytes": 616916,
+      "crc32": 1743003818,
+      "sha256": "2e74bbb8719c9516401649aa230d5a9c87355004d033397c311cbe12a0ac6df3"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/015-read-retained-history-1-survey-envoy.layout.json",
+      "bytes": 2066,
+      "crc32": 4263731514,
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+      "bytes": 612852,
+      "crc32": 1419489830,
+      "sha256": "1f7ce1e61be4889e6c15399edd6659edb75f1c7dbb45e5bec66bfae8d31d52d7"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/015-read-retained-history-2-independent-surveyor.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+      "bytes": 614751,
+      "crc32": 1547723766,
+      "sha256": "4fb0ade369ec71008a1b19b435098943ad92fc973c516f7d1ea4e10c2116596e"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/016-read-historical-warning-1-survey-envoy.layout.json",
+      "bytes": 2066,
+      "crc32": 4263731514,
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+      "bytes": 612954,
+      "crc32": 3491535987,
+      "sha256": "392b4c256f6ff66250d9b507a690af147ebb5edefdd9ca897a78984ad7f5aa84"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/016-read-historical-warning-2-independent-surveyor.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+      "bytes": 618245,
+      "crc32": 1845042584,
+      "sha256": "b7299c31c5c378b8b829655ad876a61f0663e85bfb9662a880b8e90231df2c70"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/017-inspect-still-unknown-1-survey-envoy.layout.json",
+      "bytes": 2066,
+      "crc32": 4263731514,
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+      "bytes": 614942,
+      "crc32": 635285128,
+      "sha256": "f947a047f0a23c60daef2379f5557b25c6c92385b83ef20f215254143b9bbd29"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+      "bytes": 614765,
+      "crc32": 2377828669,
+      "sha256": "962662244fa246d9d61a725a42d8bde62c56af59d2480061cbd667d2e9b6a236"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/018-recover-retained-report-1-survey-envoy.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+      "bytes": 611011,
+      "crc32": 2853865992,
+      "sha256": "61f1047ce6f557fed0784e66df90a475a9e868f50f16bfd0d745ed5162d0434b"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/018-recover-retained-report-2-independent-surveyor.layout.json",
+      "bytes": 2068,
+      "crc32": 2786787995,
+      "sha256": "c7a8681ae804efaab104d28a25f934c57388dbe6f251fd0c898222547015d4f6"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+      "bytes": 612875,
+      "crc32": 366474262,
+      "sha256": "3baf7a5582209101d848616d8d4789e05ab6730ab84668bd43101ba18101f119"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/README.md",
+      "bytes": 11877,
+      "crc32": 1474874389,
+      "sha256": "59842b795ab2b82bea7549afa06ab57cd83b534569beda668ce742f70a64c6ee"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "crc32": 233617160,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+    },
+    {
+      "path": "test-results/stories/live-stellar-observations/short/linux-arm64/story.json",
+      "bytes": 13874,
+      "crc32": 740544623,
+      "sha256": "526f95463e1c5b5bf6da232ec546573e9c2ead20afecb4b7ee5b61d56011ec46"
+    },
+    {
+      "path": "test-results/stories/observations.story-Live-st-1ce72-storical-facts-after-reload-desktop/attachments/Illustrated-story-75ede09fcfcd4afc1af1ca9406621a4bb02757a1.md",
+      "bytes": 11879,
+      "crc32": 1343538371,
+      "sha256": "03f8c4f47cd8876d26fe2f4f8ccda40a68ec106b3bddddcd09d9396dc312a33d"
+    },
+    {
+      "path": "test-results/stories/observations.story-Live-st-1ce72-storical-facts-after-reload-large/attachments/Illustrated-story-9cbb81f7264557481ebc4444c4729bfed3e487e4.md",
+      "bytes": 11877,
+      "crc32": 1048084596,
+      "sha256": "49f535fb10f0892a9d4474bc6d692e2ba504922d965bd88a0c3815379910d65f"
+    },
+    {
+      "path": "test-results/stories/observations.story-Live-st-1ce72-storical-facts-after-reload-phone/attachments/Illustrated-story-d9ad9b75ee3236d5749e363df82b6ed98f395040.md",
+      "bytes": 11877,
+      "crc32": 4275044514,
+      "sha256": "64410353e17997b0a5566d9fd601f62898dac148d54bf838a4d8088927b9817b"
+    },
+    {
+      "path": "test-results/stories/observations.story-Live-st-1ce72-storical-facts-after-reload-short/attachments/Illustrated-story-4e08b3c57857218edcf1fadeffee4235ee79e7fa.md",
+      "bytes": 11877,
+      "crc32": 1474874389,
+      "sha256": "59842b795ab2b82bea7549afa06ab57cd83b534569beda668ce742f70a64c6ee"
+    },
+    {
+      "path": "firestore-debug.log",
+      "bytes": 63310,
+      "crc32": 3326540604,
+      "sha256": "d54dea9b5372d97cc3fb80d3eda80170224ec929aa972537705836a9ea207b2c"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "crc32": 503735925,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/containerd.log",
+      "bytes": 11788,
+      "crc32": 411538848,
+      "sha256": "bb7c18ca0355b0db97951ba8d0b58392f8010be032524bc2333849b25de8f130"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/engine-info.log",
+      "bytes": 1791,
+      "crc32": 1190113752,
+      "sha256": "b857502b305c163bb24b12ba4b329190a3a4ced9355429fae31656a9897c2f76"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/engine.log",
+      "bytes": 2726,
+      "crc32": 3054332256,
+      "sha256": "8e1534a22fc1d951203708c72d3dd197623ae7cb9296ab5efa8385b312d4049b"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "crc32": 4285110663,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/image-inspect.json",
+      "bytes": 2411,
+      "crc32": 3812966785,
+      "sha256": "d8b81e8c972b31cbaab69bd996ef33f1d0f0280f754ec2b07e60b5f9a13a7e6f"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/image-load.log",
+      "bytes": 49,
+      "crc32": 2329796893,
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "crc32": 4150207862,
+      "sha256": "977a7cb882cc14c1b3221a8f9186fe81735edf740b2519dc0c1ea611edd44d44"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "crc32": 986754281,
+      "sha256": "7d4cd79cb445c3659b5e6fd84bf5d316db773c49b97d8723a424c4354d08362c"
+    }
+  ]
+}

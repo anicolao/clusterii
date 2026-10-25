@@ -1,0 +1,37 @@
+{
+  "removed": [
+    {
+      "path": "/tmp/cluster-pr66-observation-linux/artifact.zip",
+      "bytes": 91167093,
+      "sha256": "04db6cc7a3a9932f20dec5d4b4e2f712cdda6d8434e08d56d0503cf8287d3ca4",
+      "remoteArtifact": 12601756845,
+      "expires": "2026-11-24T13:55:41Z"
+    },
+    {
+      "path": "/tmp/cluster-pr66-label-linux/artifact.zip",
+      "bytes": 91174169,
+      "sha256": "186a66c415c1b18281cf69dbdea9bded43293997c1034e6d6dabbe68a03104b2",
+      "remoteArtifact": 12601784807,
+      "expires": "2026-11-24T14:17:58Z"
+    },
+    {
+      "path": "/tmp/cluster-pr63-paused-linux/artifact.zip",
+      "bytes": 233175820,
+      "sha256": "92c1b228e03bf201b653bb03bde8119975ca9ec31dbf2683637afce061a9454e",
+      "remoteArtifact": 12597104857,
+      "expires": "2026-11-24T11:40:29Z"
+    },
+    {
+      "path": "/tmp/cluster-pr63-focus-linux/artifact.zip",
+      "bytes": 233177701,
+      "sha256": "2c404eff3f099847977a6b237600f25bcdad5d878bc841e70da77e1b7fce7ee6",
+      "remoteArtifact": 12598938042,
+      "expires": "2026-11-24T12:41:50Z"
+    }
+  ],
+  "removedFileBytes": 648694783,
+  "freeBeforeKiB": 2302356,
+  "freeAfterKiB": 2936548,
+  "observedFreeDeltaBytes": 649412608,
+  "note": "Only four verified task-owned redundant archive files removed. All extracted originals, manifests, traces, indexes and repository/user files preserved. Full remote digest and all ZIP entry hashes retained. Observed free-space delta can include concurrent filesystem activity."
+}

@@ -1,0 +1,48 @@
+# Complete current PR65 route comparison
+
+Run40206119870 is FAILURE: eight functional journeys passed,160/160image pairs byte-identical, but acquisition-summary counts0/0. This is not complete reproducibility approval. Capture source4ce030000203c0f0c5c5dd04118323ee4076a7b1, product/test source4da928d94a6261cd305e1faeac108597dd4f06b2, spec03b9bb1bc4e56a66b7fb3b13c871d296a6ba9bfaf3c8502295181b777545a0df. Four passed first-pass manifests and all160 local originals rehashed. Second-pass image equality is recorded by the source-bound runner; complete second originals remain in verified remote artifact12604171509. No references promoted.
+
+Compared against reviewed active65 48b9f7ca:148exact unchanged,12changed. All changed rawRGBA bounds lie only over Koit ownership text, Unclaimed→Unknown. This follows explicitly fixed test entropy identifiers through the unchanged production HMAC/acquisition algorithm and verified actual report labels. Guarded source applies only to the illustrated route scenario, not production. Independent review still required. The new retention-only fixd9025f17 changes summary output persistence, not entropy inputs or UI; one two-short repeat will verify retained summaries and images. No normal-motion or full-design approval.
+
+Full514668902byte archiveSHA0f39c58e318554e088dd77cc1046f3d778de664236b1d5632cf7415e0b0f10b1/CRC verified in memory; extraction hit disk floor and stopped. After authorized redundant archive reclaim, only missing58entries were range-retrieved36,518,246bytes with206Content-Range/CRC/SHA checks. All first-pass original images now complete; no second full-archive retrieval. Archive remotely retained until2026-11-24T15:36:06Z. Original failures preserved. Diffs below mark every decodedRGBA inequality red over faded reviewed expected; diagnostic comparisons, not changed acceptance criteria.
+
+## Twelve changed originals
+
+- **desktop 022-reload-pending-route-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/022-reload-pending-route-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/022-reload-pending-route-1-fleet-marshal-diff.png)
+  - SHA256 `c731947d5d7b9490c5d58ccfef9fdc5d536306a04e4d045dc3af3cc0d300faa3`; exactRGBA bounds `{'minX': 1079, 'minY': 457, 'maxX': 1128, 'maxY': 466}`
+- **desktop 023-review-route-retry-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/023-review-route-retry-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/023-review-route-retry-1-fleet-marshal-diff.png)
+  - SHA256 `1944a192257383f53753772c8daa4ee3feb32e586916cd3d8fe8d82d7bd6d0f9`; exactRGBA bounds `{'minX': 1079, 'minY': 457, 'maxX': 1128, 'maxY': 466}`
+- **desktop 024-retry-original-route-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/024-retry-original-route-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/024-retry-original-route-1-fleet-marshal-diff.png)
+  - SHA256 `ff3dd1452d4cb1bd337f6223b5f67a5dc17c9568f4e64a4a9eb2f5f3ad6f3bac`; exactRGBA bounds `{'minX': 1079, 'minY': 457, 'maxX': 1128, 'maxY': 466}`
+- **desktop 026-accepted-while-offline-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/026-accepted-while-offline-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/desktop/026-accepted-while-offline-1-fleet-marshal-diff.png)
+  - SHA256 `ff3dd1452d4cb1bd337f6223b5f67a5dc17c9568f4e64a4a9eb2f5f3ad6f3bac`; exactRGBA bounds `{'minX': 1079, 'minY': 457, 'maxX': 1128, 'maxY': 466}`
+- **large 022-reload-pending-route-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/022-reload-pending-route-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/large/linux-arm64/022-reload-pending-route-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/022-reload-pending-route-1-fleet-marshal-diff.png)
+  - SHA256 `4f9e0922dd27483fdc64f7835b1177b52b8b1744445ce3f768ead8015093e8d3`; exactRGBA bounds `{'minX': 2959, 'minY': 644, 'maxX': 3029, 'maxY': 657}`
+- **large 023-review-route-retry-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/023-review-route-retry-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/large/linux-arm64/023-review-route-retry-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/023-review-route-retry-1-fleet-marshal-diff.png)
+  - SHA256 `adc65d6d23bafcb047be748defd2bf9f868a2439ee124407190f68a54a943ec8`; exactRGBA bounds `{'minX': 2959, 'minY': 644, 'maxX': 3029, 'maxY': 657}`
+- **large 024-retry-original-route-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/024-retry-original-route-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/large/linux-arm64/024-retry-original-route-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/024-retry-original-route-1-fleet-marshal-diff.png)
+  - SHA256 `e12d84197c8134d83f7e5e9a23c28c7730ec04d3fc4f37ac08b2830a6d3a9b8b`; exactRGBA bounds `{'minX': 2959, 'minY': 644, 'maxX': 3029, 'maxY': 657}`
+- **large 026-accepted-while-offline-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/026-accepted-while-offline-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/large/026-accepted-while-offline-1-fleet-marshal-diff.png)
+  - SHA256 `e12d84197c8134d83f7e5e9a23c28c7730ec04d3fc4f37ac08b2830a6d3a9b8b`; exactRGBA bounds `{'minX': 2959, 'minY': 644, 'maxX': 3029, 'maxY': 657}`
+- **short 022-reload-pending-route-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/022-reload-pending-route-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/022-reload-pending-route-1-fleet-marshal-diff.png)
+  - SHA256 `5b462fc83812a737e8d62e3c65fdf6e4833215c210cf137efa416e8c50e5f905`; exactRGBA bounds `{'minX': 919, 'minY': 216, 'maxX': 968, 'maxY': 225}`
+- **short 023-review-route-retry-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/023-review-route-retry-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/short/linux-arm64/023-review-route-retry-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/023-review-route-retry-1-fleet-marshal-diff.png)
+  - SHA256 `58bc16d1c2a9b2a8397e84fb0afe275b599c4b9016ff56a94d71256e97739aef`; exactRGBA bounds `{'minX': 919, 'minY': 216, 'maxX': 968, 'maxY': 225}`
+- **short 024-retry-original-route-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/024-retry-original-route-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/short/linux-arm64/024-retry-original-route-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/024-retry-original-route-1-fleet-marshal-diff.png)
+  - SHA256 `6522f27a2badb561ba4fd4e16279f593e41842c439184967052f98a176766deb`; exactRGBA bounds `{'minX': 919, 'minY': 216, 'maxX': 968, 'maxY': 225}`
+- **short 026-accepted-while-offline-1-fleet-marshal.png**
+  - [expected](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/026-accepted-while-offline-1-fleet-marshal-expected.png) · [actual](/tmp/cluster-pr65-route-repeat-linux/originals/ci-evidence/route-repeat/pass-1/stories/interrupted-fleet-route/short/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png) · [diff](/tmp/cluster-pr65-route-repeat-linux/comparisons/short/026-accepted-while-offline-1-fleet-marshal-diff.png)
+  - SHA256 `6522f27a2badb561ba4fd4e16279f593e41842c439184967052f98a176766deb`; exactRGBA bounds `{'minX': 919, 'minY': 216, 'maxX': 968, 'maxY': 225}`
+
+All160original hashes and148exact reuse records: [review-index.json](review-index.json). No approval inferred from repeat equality.
