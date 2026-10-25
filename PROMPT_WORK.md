@@ -997,3 +997,5 @@ Prompt 226 | 71e19efbb399a310ba02e6c4cbe01a91698ba877c783e5c0afb1de03105f071a | 
 Prompt 226 | 71e19efbb399a310ba02e6c4cbe01a91698ba877c783e5c0afb1de03105f071a | Request one pinned Linux retained identity-scene observation at4f1361cc; no production or reference changes.
 
 Prompt 291 | 5e29a40538ccafd096c789fa6250461ae83a0bc37cd300ff257d957b1ecd96f5 | Complete cargo visual review report after excluding only expected inherited cancellation baseline paths from source applicability check.
+
+Prompt 291 | 5e29a40538ccafd096c789fa6250461ae83a0bc37cd300ff257d957b1ecd96f5 | Verify and inspect complete missing PR57 short Linux originals from the existing successful run; retain exact source and review scope.
