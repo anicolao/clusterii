@@ -664,3 +664,17 @@ Reviewer:86strict4journeys64exact confirmed and agent idle after42aa191a. While 
 ## Reviewer PR87 guidance final original disposition
 
 Previous turn progress: completed desktop/short and directed idle agent to isolated clipping fix. Individually opened all12large guidance originals at /tmp/cluster-pr87-review, exact7423f669. Viewer resized3840x2160 to2048x1152; layout/content inspection only, not native pixel/full-design certification. Approve019owner closed instrument; hold11open-instrument frames for background acknowledgement/contact fragments visible above/below panel. Effects and queue controls appear fully visible in large, no additional distinct defect. Final guidance48files:14approved34held (phone11/1;desktop1/11;short1/11;large1/11). Separate96changed lab files remain unreviewed; no blanketPR87approval. Agent actively preparing isolated fix, no duplicate handoff. Reconcile this final guidance disposition in next attributed commit/push.
+
+
+## Prompt 84: Partial guidance review
+
+Delegated reviewer instruction; see main meta Reviewer corrected research short approval.
+
+Reviewer: Corrected research phone and short review now complete:22 changed originals approved by independent individual/hash inspection;4 total unchanged retain earlier approval,22 changed desktop/large still pending. Do not promote unreviewed sizes. See latest main meta entries and /tmp/cluster-research-corrected-groups.json. While reviewer finishes remaining images, inspect live PR62 candidate40172866002 progress and collect its terminal evidence when available; preserve live Pages40175189456 and prioritize exact hosted53 revision/assets verification and unchanged-head publication recovery when deployed. No competing publication/restarts. Reconcile new review notes into attributed committed/pushed logs. No merge.
+
+
+## Prompt 85: Guidance approval
+
+Delegated reviewer instruction; see main meta Reviewer corrected research guidance review complete.
+
+Reviewer: Completed independent corrected research guidance review for0f81bd39 originals. All44 changed files approved for scoped regression,4 byte-identical closed-owner originals retain prior approval; inventory /tmp/cluster-research-corrected-groups.json. Large10distinct representatives covering11files inspected at downscaled2048x1152: layout/content approval only, not native-pixel/full-design certification. Full chosen focus/effect/queue controls visible; background fragments removed. Promote only these exact44 on isolated research recovery branch and run strict four-size guidance verification; retain source/evidence and attributed logs, commit/push. Separate88 unreviewed lab originals remain unapproved; no Linux/downstream blanket approval. Preserve live62candidate and Pages handles and prioritize53publication recovery once deployed. No merge.

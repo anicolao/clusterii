@@ -1,0 +1,30 @@
+# Scoped independent approval
+
+## Reviewer corrected research phone approval
+
+Previous turn progress: inspected eight lab originals and recorded scoped approvals. Current independent comparison of48corrected originals retained by0f81bd39 against original7423f669 found44changed4unchanged (11changed1unchanged per viewport); hash inventory /tmp/cluster-research-corrected-groups.json. Read CampaignResearch change: wait for Svelte tick before selected-label/form/commitment measurements, guard disconnected form or detached input. Read new story assertion: intersect all clipping ancestor bounds including active outline; no relaxed pixel/viewport bounds. Agent four-journey generation reports4passed58.8s, no strict baseline approval yet.
+
+Individually opened all10distinct changed phone originals, covering11files (010peer equals019peer by independent hash). Approve these exact11 for scoped regression: scanning explanation and full Queue scanning button visible above footer; all eight selected radio choices have visible focus and readable explanation/action. Initial owner/peer views readable, no background acknowledgement fragment. Neighboring unselected scroll-list rows can be partially outside list aperture; focused row remains visible. One unchanged019owner retains prior approval. Other33changed desktop/short/large remain unreviewed; do not promote those yet. Lab88pending unchanged. Source-paired originals root /tmp/cluster-research-visibility-corrected-originals/research-capability-guidance. Reconcile this note in next attributed ledger commit/push. No merge, no blanket full-design or Linux approval.
+
+
+## Reviewer corrected research short approval
+
+Previous turn progress: independently reviewed corrected phone captures and source/assertion changes. Opened all10distinct short1280x720 corrected originals individually/pairs, covering11changedfiles via independent hash inventory. Approve these11 scoped regressions: full selected research radio/focus, effect description and Queue control visible for all8choices, no inherited background acknowledgement/contact fragments. Initial owner and peer panels readable;019peer exactly matches010peer. Corrected total22changed approved22changed desktop/large pending;4unchanged019owner files retain original approvals. Source0f81bd39 retained evidence, no Linux or full design certification. Fresh Pages40175189456 still queued, preserved. Agent idle after12dca71e ledger push; new handoff below.
+
+Exact reviewer handoff:
+Reviewer: Corrected research phone and short review now complete:22 changed originals approved by independent individual/hash inspection;4 total unchanged retain earlier approval,22 changed desktop/large still pending. Do not promote unreviewed sizes. See latest main meta entries and /tmp/cluster-research-corrected-groups.json. While reviewer finishes remaining images, inspect live PR62 candidate40172866002 progress and collect its terminal evidence when available; preserve live Pages40175189456 and prioritize exact hosted53 revision/assets verification and unchanged-head publication recovery when deployed. No competing publication/restarts. Reconcile new review notes into attributed committed/pushed logs. No merge.
+
+
+## Reviewer corrected research desktop approval
+
+Previous turn progress: completed corrected short review and handed off live candidate/evidence collection to idle agent. Current individually opened10distinct desktop1440x1000 originals retained by0f81bd39, covering11changedfiles through /tmp/cluster-research-corrected-groups.json (010peer equals019peer). Approve11 scoped regression captures: all8selected research choices show complete focused control, effect and queue action; initial owner/peer economy panels readable, background fragments removed. Unselected neighbors may be clipped by scroll-list aperture; selected focus remains visible. Total33changed approved11large pending;4unchanged closed-owner images retain prior approvals. No Linux/full-design certification or uninspected promotion. Agent healthy after acknowledgment, compacting context; no duplicate prompt. Fresh specific CI handles preserved: Pages40175189456queued;62candidate40172866002in_progress;55stories40167703810bothjobsin_progress;57stories40168002398verify success/generate in_progress;58stories40168031952bothin_progress. Reconcile in next attributed ledger push.
+
+
+## Reviewer corrected research guidance review complete
+
+Previous turn progress: completed desktop review. Current all10distinct large representatives opened, covering11changedfiles by independent inventory. Large3840x2160 viewed resized2048x1152: scoped layout/content only. All8choice explanations/actions and selected focus readable, no background text fragments. Final corrected48 disposition44changed approved4unchanged previously approved. Source-paired root /tmp/cluster-research-visibility-corrected-originals/research-capability-guidance, evidence0f81bd39. Agent compacting healthy; send this new nonduplicate approval as next-step handoff without interruption.
+
+Exact reviewer handoff:
+Reviewer: Completed independent corrected research guidance review for0f81bd39 originals. All44 changed files approved for scoped regression,4 byte-identical closed-owner originals retain prior approval; inventory /tmp/cluster-research-corrected-groups.json. Large10distinct representatives covering11files inspected at downscaled2048x1152: layout/content approval only, not native-pixel/full-design certification. Full chosen focus/effect/queue controls visible; background fragments removed. Promote only these exact44 on isolated research recovery branch and run strict four-size guidance verification; retain source/evidence and attributed logs, commit/push. Separate88 unreviewed lab originals remain unapproved; no Linux/downstream blanket approval. Preserve live62candidate and Pages handles and prioritize53publication recovery once deployed. No merge.
+
+Only the44 changed guidance originals are approved; four unchanged retain earlier approval. No lab/Linux/downstream approval.
