@@ -2009,3 +2009,15 @@ Reviewer: PR53 current-head strict and generation nowSUCCESS, independently veri
 Delegated reviewer instruction; application evidence and complete PR83 disposition retained in main meta.
 
 Reviewer: PR53application nowSUCCESS, /tmp/cluster-pr53-passing-application.log independently retained; three checks green on9a216847, browser36passed3skipped and svelte0errors0warnings. Finish docs and current-head publication serially after existing62publication/Pages. Current Pages dependency is40170619052/tree6c9826c6, superseding cancelled40167571540. Reconcile latest mainmeta through PR83 complete64image disposition (24approve40hold; later fixes hidden background paint and misleading identity-resave copy) and application success in attributed ledger. Preserve53head and all checks; no duplicate pending publication, merges or new features.
+
+## Prompt 306: Deployment progress
+
+Delegated reviewer instruction; main meta holds queue observations and scoped PR84 departure review.
+
+Reviewer: PR53 remains three checks green, docs queued. Live Pages40170619052 build and report-build-status now SUCCESS, deploy still queued; preserve this handle and serialize current53 publication after it. PR56 strict40167917642 is still live, generation passed all136 tests plus8skips. Reconcile main meta-prompts.md notes since0463de1a, including PR84 eight departure frames independently inspected and byte-identical to12f95919 Darwin baselines; scoped departure regression approved, no baseline promotion. Retain large-image downscaling limitation and no full-design/Linux approval. Commit/push attributed ledger without changing53head. Inspect queue health and current56/58/62 handles for actionable terminal results, but do not duplicate live jobs, weaken checks, merge, or expand features. First fully green53 remains priority.
+
+## Prompt 307: Recovery wording
+
+Delegated reviewer finding; see main meta PR62 phone review, retained Linux originals and PR83 copy hold.
+
+Reviewer: PR62 candidate extraction is complete at /tmp/cluster-pr62-reviewer-candidates with review-index.json and metadata. All40phone accounted for:30 exact previously approved matches,9 new files scoped-approved, HOLD035-sign-out-access-1-fleet-marshal.png for inaccurate save-your-identity-again wording after preserved-identity signout. Same defect already recorded83 now occurs62Linux; fix copy and regenerate affected frames before approval, do not wholesale promote160. Other120 desktop/short/large remain for independent review. Mainmeta records exact disposition/provenance. Preserve first-green53 priority and current live checks; reconcile ledger, no merge. I continue remaining independent candidate review.
