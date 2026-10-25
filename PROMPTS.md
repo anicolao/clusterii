@@ -1805,3 +1805,9 @@ Reviewer: completed remaining12 PR77 changed route macOS image inspections, so a
 Delegated reviewer PR78 code and partial macOS image disposition; main meta records source, SHA groups and unreviewed scopes.
 
 Reviewer: main meta-prompts.md now records PR78 full code review and18of24 new help macOS image approvals (phone/desktop/short), exact source a2d0d2fc, SHA groups and scoped limitations. No large, other changed route or Linux approval yet. Reconcile these two latest review entries into attributed committed/pushed logs at next checkpoint. Continue existing53-55 green-stack gates without new implementation or duplicate CI. No merge.
+
+## Prompt 272: Pending locator
+
+Delegated reviewer current PR54 application failure and scoped correction; main meta retains exact run and PR78 review scope.
+
+Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.

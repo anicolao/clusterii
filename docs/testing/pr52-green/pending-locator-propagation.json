@@ -1,0 +1,201 @@
+{
+  "parent54": "a2860b0c",
+  "validation": "Focused real-service case1passed23.0s; original180s budget; no retries",
+  "scope": "One exact button name; no production/baseline/workflow changes",
+  "runs": [
+    {
+      "id": 40157944454,
+      "name": "Illustrated stories",
+      "head_sha": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 40157944328,
+      "name": "Application checks",
+      "head_sha": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 40157944305,
+      "name": "Documentation checks",
+      "head_sha": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 40157944304,
+      "name": "Publish review build",
+      "head_sha": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 40155701640,
+      "name": "Documentation checks",
+      "head_sha": "17915680d7dec4fbebb38c57cd425e902cc541f6",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 40155701647,
+      "name": "Publish review build",
+      "head_sha": "17915680d7dec4fbebb38c57cd425e902cc541f6",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 40155701633,
+      "name": "Application checks",
+      "head_sha": "17915680d7dec4fbebb38c57cd425e902cc541f6",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 40155701632,
+      "name": "Illustrated stories",
+      "head_sha": "17915680d7dec4fbebb38c57cd425e902cc541f6",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 40156202859,
+      "name": "Application checks",
+      "head_sha": "6854d84ab50269affd02948fee3fc3a5851a2a0d",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 40156202860,
+      "name": "Illustrated stories",
+      "head_sha": "6854d84ab50269affd02948fee3fc3a5851a2a0d",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 40156202879,
+      "name": "Documentation checks",
+      "head_sha": "6854d84ab50269affd02948fee3fc3a5851a2a0d",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 40156202866,
+      "name": "Publish review build",
+      "head_sha": "6854d84ab50269affd02948fee3fc3a5851a2a0d",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "parent54Integrated": "97ac1591",
+  "child55Integrated": "915bbee5ac824998657d5d100b38b72cc1484e1c",
+  "old54Strict": {
+    "run": 40155701632,
+    "result": "FAILURE",
+    "passed": 123,
+    "failed": 1,
+    "failure": "identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png1994pixels",
+    "log": "/tmp/cluster-pr54-current-strict-failed.log"
+  },
+  "integration": "Normal parent merges resolve prompt-history conflicts; no PR merge or force push; exact parent archives retained;16/18 prompt tests passed including real failure sensitivity",
+  "sourceCorrection": "Awaiting acknowledgement\u2026 exact pending locator becomes Awaiting receipt; all behavioral assertions unchanged",
+  "currentHeads": [
+    {
+      "pr": 53,
+      "head": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+      "mergeable": true,
+      "mergeableState": "unstable",
+      "runs": [
+        {
+          "id": 40157944454,
+          "name": "Illustrated stories",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40157944328,
+          "name": "Application checks",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40157944305,
+          "name": "Documentation checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40157944304,
+          "name": "Publish review build",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 54,
+      "head": "97ac159196ec36c3208e7699830b45bedf3acff9",
+      "mergeable": true,
+      "mergeableState": "unstable",
+      "runs": [
+        {
+          "id": 40159161830,
+          "name": "Publish review build",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40159161854,
+          "name": "Application checks",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40159161775,
+          "name": "Illustrated stories",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40159161780,
+          "name": "Documentation checks",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 55,
+      "head": "915bbee5ac824998657d5d100b38b72cc1484e1c",
+      "mergeable": true,
+      "mergeableState": "unstable",
+      "runs": [
+        {
+          "id": 40159323893,
+          "name": "Publish review build",
+          "status": "pending",
+          "conclusion": null
+        },
+        {
+          "id": 40159323897,
+          "name": "Application checks",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40159323891,
+          "name": "Documentation checks",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40159323898,
+          "name": "Illustrated stories",
+          "status": "in_progress",
+          "conclusion": null
+        }
+      ]
+    }
+  ]
+}
