@@ -1,0 +1,48 @@
+name: Bounded PR63 short maintenance verification
+on:
+  push:
+    branches: [investigate/pr63-maintenance-verify]
+    paths: [.github/recovery/pr63-maintenance-short-01.json]
+permissions:
+  contents: read
+concurrency:
+  group: cluster-pr63-maintenance
+  cancel-in-progress: false
+jobs:
+  maintenance:
+    if: github.repository == 'anicolao/clusterii'
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate exact request and executor
+        run: node scripts/maintenance-request.mjs
+      - name: One complete short maintenance strict journey
+        timeout-minutes: 20
+        run: nix run path:./nix#ci-renderer -- recovery maintenance
+      - name: Preserve bounded maintenance evidence
+        timeout-minutes: 3
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recovery-maintenance-${{ github.sha }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            ci-evidence/recovery-request/
+            test-results/stories/
+            firestore-debug.log
+            ci-evidence/nix-renderer/
