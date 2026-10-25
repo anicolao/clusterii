@@ -417,3 +417,7 @@ Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | A
 Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | Retain four complete corrected maintenance-focus journeys and136 source-bound local originals before pinned Linux verification.
 
 Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | Retain complete Linux focus verification and exact two-change comparison; preserve134 identical originals and pending independent approvals.
+
+
+
+Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Bound CI emulator lifetime by viewport while preserving failed artifacts, exact assertions and interruption ownership.
