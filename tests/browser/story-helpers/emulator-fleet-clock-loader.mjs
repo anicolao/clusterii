@@ -13,8 +13,11 @@ export async function load(url, context, nextLoad) {
       "Fleet clock is confined to demo-clusterii Functions Emulator",
     );
   const source = String(result.source);
-  const signature = "export function orderFleet(current, raw, uid, id, now) {";
-  if (source.split(signature).length !== 2)
+  const signatures = [
+    "export function orderFleet(current, raw, uid, id, now) {",
+    "export function cancelFleet(current, raw, uid, now) {",
+  ];
+  if (signatures.some((signature) => source.split(signature).length !== 2))
     throw new Error(
       "Fleet clock reducer signature changed; review the test boundary",
     );
@@ -22,9 +25,13 @@ export async function load(url, context, nextLoad) {
     ...result,
     source:
       `import { fleetTime as __fleetTime } from ${JSON.stringify(new URL("./fleet-clock.mjs", import.meta.url).href)};\n` +
-      source.replace(
-        signature,
-        signature + "\nnow = __fleetTime(current, now);",
+      signatures.reduce(
+        (text, signature) =>
+          text.replace(
+            signature,
+            signature + "\nnow = __fleetTime(current, now);",
+          ),
+        source,
       ),
   };
 }

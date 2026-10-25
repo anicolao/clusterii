@@ -1,0 +1,11 @@
+# Live fleet cancellation candidate review
+
+Approve only the new `live-fleet-cancellation` macOS/arm64 candidates for exact comparison. Generation passes four journeys / 88 captures in 1.8 minutes (`/tmp/cluster-cancellation-generation.log`). Each viewport has 13 distinct images, 52 total. Review is implementer candidate review, not independent or Linux acceptance.
+
+Inspected the complete phone, desktop and short sequences plus full 4K composition and every distinct 4K instrument crop. The fixed review rail contains the named original order/tick and all three actions; no action is hidden by the bounded manifest. The separate three-fighter draft remains readable through Keep order and acknowledged cancellation. Confirmed availability changes from reserved to released, and the next tick displays production without a phantom fleet. Other-player frames show only their own forces. Keyboard confirmations, heading focus after cancellation and opener focus on return are asserted. The actual production ship artwork and controls remain unchanged.
+
+Provenance: phone/desktop candidates recorded e95192a with the new working-tree story; large/short recorded committed c857a4d. All four have the identical current spec SHA-256 `007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a`. The commit records those unchanged test/clock bytes; no source changed during generation. Renderer manifests match within the platform. No inherited image or comparison tolerance changed.
+
+Real command ingress, encrypted-request digest/receipt binding, one cancellation revision, unchanged garrisons/fleets, private recipient grants, reload and repeated production settlement are asserted. Clock advancement is an explicit test boundary; it does not certify cutoff races or hosted scheduling. Captures use reduced motion. Normal-motion live parity, interrupted cancellation, managed keys, Linux exact comparison and independent review remain open. Existing procedural assertions remain intact.
+
+Strict verification passes all four viewports / 88 exact captures in 1.9 minutes (`/tmp/cluster-cancellation-exact.log`). Four generated walkthroughs are archived under `docs/testing/stories/live-fleet-cancellation/`; comparison used the separately reviewed candidates above without changing inherited pixels.
