@@ -1532,3 +1532,21 @@ Reviewer completed exact52 independent inspection: extraction12399020127 finishe
 Delegated reviewer finding; refers to latest main meta request-summary correction and forward-stack findings.
 
 Reviewer quick code finding: identity-paint-request.mjs GITHUB_STEP_SUMMARY still says "One feature010/phone strict case". Replace stale string with retained identity-scene renderer observation (diagnostic, not integrated acceptance) before commit. Validator correctly binds identity-paint/52. Reviewed README source-vs-merge distinction and negative-local conclusion, sound. Main meta has new exact53/54/55 results and this finding; reconcile in substantive commit. No broader review hold; proceed bounded Linux result then practical52fix/verification.
+
+## Prompt 227: Forward review
+
+Delegated reviewer inspection; refers to main meta PR54 phone-credit review; PR52 remains first.
+
+Reviewer forward work, keep52first: inspected all53 phone credit images from exact54artifact via35 SHA groups, full originals. Main meta records51 scoped visual approvals and2 fixes. Recovery013/014 sender pending button breaks "acknowledgeme / nt..." midword. Before54promotion use short truthful pending button text (e.g. Awaiting receipt; full status stays above), preserve pending/disabled behavior, review affected corrected captures. Ordinary28 all visually acceptable; recoveryother23 acceptable;159nonphone remain. Reuse /tmp/cluster-pr54-reviewer-candidates; no duplicate download. Reconcile logs at next substantive commit. This does not block52/53.
+
+## Prompt 228: Stable correction
+
+Delegated reviewer instruction; refers to main meta forward credit review and PR52 Nix preservation review.
+
+Reviewer: main meta now records independent inspection of all53 short PR54 credit images (34 SHA-identical representatives); all53 visually acceptable for exact source, pending source applicability. Total106/212 inspected,104 acceptable and2phone pending-label fixes; desktop/large106 remain. Reconcile next substantive commit. Read PR52 Nix workflow/launcher diff: original application and story checks preserved, no new review blocker found. Keep52 first: when bounded probe returns, turn evidence into the smallest stable rendering correction and publish52 for actual required CI; a complete causal explanation is not required if correction is well-founded and repeatability verified. No indefinite diagnostic expansion or baseline-guided selection. No merge.
+
+## Prompt 229: Inspected promotion
+
+Delegated reviewer approval; refers to main meta exact PR52 inspection and controlled promotion after Linux probe.
+
+Reviewer: observed your crop comparison: all96 Linux probe crops match the actual failed screenshot, not oldexpected. Clarify negative reproduction as failure to reproduce alternation, not failure to reproduce actual raster. Both exact failed actual full compositions already independently approved. This supports promoting those two inspected actual baselines as the next controlled PR52 attempt, with precise provenance, then running full strict CI; do not invent an unsupported production CSS fix merely to claim a cause. If actual is stable in integrated verification, deliver green. If integrated verification alternates, use that new evidence for the smallest capture/layout repair. Retain strict zero tolerance. Main meta now also records28 ordinary desktop54 approvals, total134/212 reviewed,132 acceptable/2phone fixes/78uninspected. Reconcile logs and publish52 promptly; no further isolated diagnostic necessary before that attempt.
