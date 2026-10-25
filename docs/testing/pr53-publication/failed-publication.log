@@ -1,0 +1,850 @@
+﻿2026-10-25T04:07:21.7180547Z Current runner version: '2.338.0'
+2026-10-25T04:07:21.7202317Z ##[group]Runner Image Provisioner
+2026-10-25T04:07:21.7203034Z Hosted Compute Agent
+2026-10-25T04:07:21.7203519Z Version: 20261021.618
+2026-10-25T04:07:21.7204085Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-25T04:07:21.7204663Z Build Date: 2026-10-21T00:45:21Z
+2026-10-25T04:07:21.7205192Z Worker ID: {a8c1180f-099e-4a48-b55a-58b5221c9afd}
+2026-10-25T04:07:21.7205867Z Region: eastus
+2026-10-25T04:07:21.7206315Z Cloud: Azure
+2026-10-25T04:07:21.7206800Z ##[endgroup]
+2026-10-25T04:07:21.7207935Z ##[group]Operating System
+2026-10-25T04:07:21.7208471Z Ubuntu
+2026-10-25T04:07:21.7208943Z 24.04.5
+2026-10-25T04:07:21.7209366Z LTS
+2026-10-25T04:07:21.7210077Z ##[endgroup]
+2026-10-25T04:07:21.7210598Z ##[group]Runner Image
+2026-10-25T04:07:21.7211062Z Image: ubuntu-24.04
+2026-10-25T04:07:21.7211611Z Version: 20261012.334.1
+2026-10-25T04:07:21.7212612Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-25T04:07:21.7214048Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-25T04:07:21.7214941Z ##[endgroup]
+2026-10-25T04:07:21.7216050Z ##[group]GITHUB_TOKEN Permissions
+2026-10-25T04:07:21.7217885Z Contents: write
+2026-10-25T04:07:21.7218388Z Metadata: read
+2026-10-25T04:07:21.7218868Z Pages: write
+2026-10-25T04:07:21.7219402Z PullRequests: write
+2026-10-25T04:07:21.7220105Z ##[endgroup]
+2026-10-25T04:07:21.7222170Z Secret source: Actions
+2026-10-25T04:07:21.7222988Z Cache mode: write
+2026-10-25T04:07:21.7223667Z Prepare workflow directory
+2026-10-25T04:07:21.7687406Z Prepare all required actions
+2026-10-25T04:07:21.7727956Z Getting action download info
+2026-10-25T04:07:21.9362242Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-25T04:07:22.1970169Z Download action repository 'DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e' (SHA:9383ce2bf08796b65508822f5982f49151badc4e)
+2026-10-25T04:07:22.4385239Z Complete job name: publish
+2026-10-25T04:07:22.4964941Z ##[group]Run actions/checkout@v4
+2026-10-25T04:07:22.4965653Z with:
+2026-10-25T04:07:22.4966068Z   ref: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:07:22.4966584Z   repository: anicolao/clusterii
+2026-10-25T04:07:22.4970073Z   token: ***
+2026-10-25T04:07:22.4970454Z   ssh-strict: true
+2026-10-25T04:07:22.4970829Z   ssh-user: git
+2026-10-25T04:07:22.4971212Z   persist-credentials: true
+2026-10-25T04:07:22.4971624Z   clean: true
+2026-10-25T04:07:22.4971998Z   sparse-checkout-cone-mode: true
+2026-10-25T04:07:22.4972438Z   fetch-depth: 1
+2026-10-25T04:07:22.4972815Z   fetch-tags: false
+2026-10-25T04:07:22.4973209Z   show-progress: true
+2026-10-25T04:07:22.4973602Z   lfs: false
+2026-10-25T04:07:22.4973955Z   submodules: false
+2026-10-25T04:07:22.4974339Z   set-safe-directory: true
+2026-10-25T04:07:22.4974768Z   allow-unsafe-pr-checkout: false
+2026-10-25T04:07:22.4975392Z env:
+2026-10-25T04:07:22.4975827Z   SOURCE_SHA: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:07:22.4976385Z   PR_NUMBER: 53
+2026-10-25T04:07:22.4976769Z   PUBLIC_BASE_PATH: /clusterii/pr53
+2026-10-25T04:07:22.4980138Z   GH_TOKEN: ***
+2026-10-25T04:07:22.4980511Z ##[endgroup]
+2026-10-25T04:07:22.5771276Z Syncing repository: anicolao/clusterii
+2026-10-25T04:07:22.5772819Z ##[group]Getting Git version info
+2026-10-25T04:07:22.5773441Z Working directory is '/home/runner/work/clusterii/clusterii'
+2026-10-25T04:07:22.5774350Z [command]/usr/bin/git version
+2026-10-25T04:07:22.5822642Z git version 2.55.0
+2026-10-25T04:07:22.5837116Z ##[endgroup]
+2026-10-25T04:07:22.5847372Z Temporarily overriding HOME='/home/runner/work/_temp/aa4d2af0-a786-48f9-8347-48297d14d951' before making global git config changes
+2026-10-25T04:07:22.5848978Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-25T04:07:22.5882854Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+2026-10-25T04:07:22.5923722Z Deleting the contents of '/home/runner/work/clusterii/clusterii'
+2026-10-25T04:07:22.5926553Z ##[group]Initializing the repository
+2026-10-25T04:07:22.5929565Z [command]/usr/bin/git init /home/runner/work/clusterii/clusterii
+2026-10-25T04:07:22.6035096Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-25T04:07:22.6036384Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-25T04:07:22.6037708Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-25T04:07:22.6038776Z hint: call:
+2026-10-25T04:07:22.6039261Z hint:
+2026-10-25T04:07:22.6039722Z hint: 	git config --global init.defaultBranch <name>
+2026-10-25T04:07:22.6040676Z hint:
+2026-10-25T04:07:22.6041516Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-25T04:07:22.6042742Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-25T04:07:22.6043412Z hint:
+2026-10-25T04:07:22.6043779Z hint: 	git branch -m <name>
+2026-10-25T04:07:22.6044208Z hint:
+2026-10-25T04:07:22.6044881Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-25T04:07:22.6046124Z Initialized empty Git repository in /home/runner/work/clusterii/clusterii/.git/
+2026-10-25T04:07:22.6047611Z [command]/usr/bin/git remote add origin https://github.com/anicolao/clusterii
+2026-10-25T04:07:22.6089415Z ##[endgroup]
+2026-10-25T04:07:22.6092644Z ##[group]Disabling automatic garbage collection
+2026-10-25T04:07:22.6093256Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-25T04:07:22.6116336Z ##[endgroup]
+2026-10-25T04:07:22.6121318Z ##[group]Setting up auth
+2026-10-25T04:07:22.6121973Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-25T04:07:22.6146062Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-25T04:07:22.6447423Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-25T04:07:22.6471591Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-25T04:07:22.6650119Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-25T04:07:22.6674716Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-25T04:07:22.6853143Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-25T04:07:22.6884887Z ##[endgroup]
+2026-10-25T04:07:22.6885595Z ##[group]Fetching the repository
+2026-10-25T04:07:22.6892668Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:07:50.3526963Z From https://github.com/anicolao/clusterii
+2026-10-25T04:07:50.3527879Z  * branch            3be6f22d17a67960762892fec532a3005862d2fa -> FETCH_HEAD
+2026-10-25T04:07:50.3529945Z ##[endgroup]
+2026-10-25T04:07:50.3530610Z ##[group]Determining the checkout info
+2026-10-25T04:07:50.3532187Z ##[endgroup]
+2026-10-25T04:07:50.3536708Z [command]/usr/bin/git sparse-checkout disable
+2026-10-25T04:07:50.3597869Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-25T04:07:50.3628958Z ##[group]Checking out the ref
+2026-10-25T04:07:50.3632246Z [command]/usr/bin/git checkout --progress --force 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:07:51.5727349Z Updating files:  27% (1346/4977)
+2026-10-25T04:07:51.6961816Z Updating files:  28% (1394/4977)
+2026-10-25T04:07:51.8053880Z Updating files:  29% (1444/4977)
+2026-10-25T04:07:51.8095969Z Updating files:  30% (1494/4977)
+2026-10-25T04:07:51.8120897Z Updating files:  31% (1543/4977)
+2026-10-25T04:07:51.8186981Z Updating files:  32% (1593/4977)
+2026-10-25T04:07:51.8629396Z Updating files:  33% (1643/4977)
+2026-10-25T04:07:52.0149637Z Updating files:  34% (1693/4977)
+2026-10-25T04:07:52.1138444Z Updating files:  35% (1742/4977)
+2026-10-25T04:07:52.2190811Z Updating files:  36% (1792/4977)
+2026-10-25T04:07:52.3561904Z Updating files:  37% (1842/4977)
+2026-10-25T04:07:52.3715926Z Updating files:  38% (1892/4977)
+2026-10-25T04:07:52.3752061Z Updating files:  39% (1942/4977)
+2026-10-25T04:07:52.3817832Z Updating files:  39% (1953/4977)
+2026-10-25T04:07:52.4260071Z Updating files:  40% (1991/4977)
+2026-10-25T04:07:52.7177404Z Updating files:  41% (2041/4977)
+2026-10-25T04:07:52.7828742Z Updating files:  42% (2091/4977)
+2026-10-25T04:07:52.8671736Z Updating files:  43% (2141/4977)
+2026-10-25T04:07:52.9445332Z Updating files:  44% (2190/4977)
+2026-10-25T04:07:53.0253368Z Updating files:  45% (2240/4977)
+2026-10-25T04:07:53.3812325Z Updating files:  46% (2290/4977)
+2026-10-25T04:07:53.4567229Z Updating files:  46% (2332/4977)
+2026-10-25T04:07:53.8641294Z Updating files:  47% (2340/4977)
+2026-10-25T04:07:53.9013030Z Updating files:  48% (2389/4977)
+2026-10-25T04:07:53.9150916Z Updating files:  49% (2439/4977)
+2026-10-25T04:07:53.9599033Z Updating files:  50% (2489/4977)
+2026-10-25T04:07:54.0092935Z Updating files:  51% (2539/4977)
+2026-10-25T04:07:54.1151141Z Updating files:  52% (2589/4977)
+2026-10-25T04:07:54.2636308Z Updating files:  53% (2638/4977)
+2026-10-25T04:07:54.3703031Z Updating files:  54% (2688/4977)
+2026-10-25T04:07:54.3760422Z Updating files:  55% (2738/4977)
+2026-10-25T04:07:54.4796477Z Updating files:  55% (2741/4977)
+2026-10-25T04:07:54.5422076Z Updating files:  56% (2788/4977)
+2026-10-25T04:07:54.5948896Z Updating files:  57% (2837/4977)
+2026-10-25T04:07:54.6153814Z Updating files:  58% (2887/4977)
+2026-10-25T04:07:54.6316102Z Updating files:  59% (2937/4977)
+2026-10-25T04:07:54.6474479Z Updating files:  60% (2987/4977)
+2026-10-25T04:07:54.6743076Z Updating files:  61% (3036/4977)
+2026-10-25T04:07:54.7634117Z Updating files:  62% (3086/4977)
+2026-10-25T04:07:54.8304311Z Updating files:  63% (3136/4977)
+2026-10-25T04:07:54.8536134Z Updating files:  64% (3186/4977)
+2026-10-25T04:07:54.9497073Z Updating files:  65% (3236/4977)
+2026-10-25T04:07:55.0545381Z Updating files:  66% (3285/4977)
+2026-10-25T04:07:55.1460524Z Updating files:  67% (3335/4977)
+2026-10-25T04:07:55.2029104Z Updating files:  68% (3385/4977)
+2026-10-25T04:07:55.2962709Z Updating files:  69% (3435/4977)
+2026-10-25T04:07:55.3816716Z Updating files:  70% (3484/4977)
+2026-10-25T04:07:55.5625908Z Updating files:  70% (3507/4977)
+2026-10-25T04:07:55.9982373Z Updating files:  71% (3534/4977)
+2026-10-25T04:07:56.1816129Z Updating files:  72% (3584/4977)
+2026-10-25T04:07:56.3885528Z Updating files:  73% (3634/4977)
+2026-10-25T04:07:56.5363854Z Updating files:  73% (3646/4977)
+2026-10-25T04:07:56.8181879Z Updating files:  74% (3683/4977)
+2026-10-25T04:07:56.9647113Z Updating files:  75% (3733/4977)
+2026-10-25T04:07:57.4030442Z Updating files:  76% (3783/4977)
+2026-10-25T04:07:57.4164599Z Updating files:  76% (3816/4977)
+2026-10-25T04:07:57.6092516Z Updating files:  77% (3833/4977)
+2026-10-25T04:07:58.0024693Z Updating files:  78% (3883/4977)
+2026-10-25T04:07:58.1140052Z Updating files:  79% (3932/4977)
+2026-10-25T04:07:58.1755112Z Updating files:  80% (3982/4977)
+2026-10-25T04:07:58.1956459Z Updating files:  81% (4032/4977)
+2026-10-25T04:07:58.2160175Z Updating files:  82% (4082/4977)
+2026-10-25T04:07:58.2402269Z Updating files:  83% (4131/4977)
+2026-10-25T04:07:58.2736232Z Updating files:  84% (4181/4977)
+2026-10-25T04:07:58.2850629Z Updating files:  85% (4231/4977)
+2026-10-25T04:07:58.2986693Z Updating files:  86% (4281/4977)
+2026-10-25T04:07:58.3174725Z Updating files:  87% (4330/4977)
+2026-10-25T04:07:58.3711906Z Updating files:  88% (4380/4977)
+2026-10-25T04:07:58.3768503Z Updating files:  89% (4430/4977)
+2026-10-25T04:07:58.6776568Z Updating files:  89% (4434/4977)
+2026-10-25T04:07:58.7191191Z Updating files:  90% (4480/4977)
+2026-10-25T04:07:58.7494044Z Updating files:  91% (4530/4977)
+2026-10-25T04:07:58.7702039Z Updating files:  92% (4579/4977)
+2026-10-25T04:07:59.4095897Z Updating files:  93% (4629/4977)
+2026-10-25T04:07:59.5845394Z Updating files:  93% (4674/4977)
+2026-10-25T04:07:59.8809598Z Updating files:  94% (4679/4977)
+2026-10-25T04:07:59.9428483Z Updating files:  95% (4729/4977)
+2026-10-25T04:08:00.0206378Z Updating files:  96% (4778/4977)
+2026-10-25T04:08:00.3964784Z Updating files:  97% (4828/4977)
+2026-10-25T04:08:01.0197994Z Updating files:  97% (4858/4977)
+2026-10-25T04:08:01.3146956Z Updating files:  98% (4878/4977)
+2026-10-25T04:08:01.3833342Z Updating files:  99% (4928/4977)
+2026-10-25T04:08:01.4285009Z Updating files:  99% (4942/4977)
+2026-10-25T04:08:01.4285436Z Updating files: 100% (4977/4977)
+2026-10-25T04:08:01.4285822Z Updating files: 100% (4977/4977), done.
+2026-10-25T04:08:01.5991153Z Note: switching to '3be6f22d17a67960762892fec532a3005862d2fa'.
+2026-10-25T04:08:01.5991778Z 
+2026-10-25T04:08:01.5992280Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-25T04:08:01.5993002Z changes and commit them, and you can discard any commits you make in this
+2026-10-25T04:08:01.5993626Z state without impacting any branches by switching back to a branch.
+2026-10-25T04:08:01.5993981Z 
+2026-10-25T04:08:01.5994219Z If you want to create a new branch to retain commits you create, you may
+2026-10-25T04:08:01.5994781Z do so (now or later) by using -c with the switch command. Example:
+2026-10-25T04:08:01.5995106Z 
+2026-10-25T04:08:01.5995234Z   git switch -c <new-branch-name>
+2026-10-25T04:08:01.5995453Z 
+2026-10-25T04:08:01.5995571Z Or undo this operation with:
+2026-10-25T04:08:01.5995772Z 
+2026-10-25T04:08:01.5995883Z   git switch -
+2026-10-25T04:08:01.5996026Z 
+2026-10-25T04:08:01.5996293Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-25T04:08:01.5996670Z 
+2026-10-25T04:08:01.5996948Z HEAD is now at 3be6f22 test: apply seven independently reviewed identity references
+2026-10-25T04:08:01.6269487Z ##[endgroup]
+2026-10-25T04:08:01.6307492Z [command]/usr/bin/git log -1 --format=%H
+2026-10-25T04:08:01.6327643Z 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:08:01.8531704Z ##[group]Run DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+2026-10-25T04:08:01.8532296Z with:
+2026-10-25T04:08:01.8532545Z   determinate: false
+2026-10-25T04:08:01.8532814Z   flakehub: false
+2026-10-25T04:08:01.8533089Z   force-no-systemd: false
+2026-10-25T04:08:01.8536311Z   github-token: ***
+2026-10-25T04:08:01.8536619Z   github-server-url: https://github.com
+2026-10-25T04:08:01.8536964Z   job-status: success
+2026-10-25T04:08:01.8537225Z   kvm: true
+2026-10-25T04:08:01.8537469Z   modify-profile: true
+2026-10-25T04:08:01.8537745Z   reinstall: false
+2026-10-25T04:08:01.8538000Z   start-daemon: true
+2026-10-25T04:08:01.8538284Z   diagnostic-endpoint: -
+2026-10-25T04:08:01.8538578Z   trust-runner-user: true
+2026-10-25T04:08:01.8538887Z   summarize: true
+2026-10-25T04:08:01.8539158Z   _internal-strict-mode: false
+2026-10-25T04:08:01.8539451Z env:
+2026-10-25T04:08:01.8539723Z   SOURCE_SHA: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:08:01.8540275Z   PR_NUMBER: 53
+2026-10-25T04:08:01.8540553Z   PUBLIC_BASE_PATH: /clusterii/pr53
+2026-10-25T04:08:01.8542619Z   GH_TOKEN: ***
+2026-10-25T04:08:01.8542791Z ##[endgroup]
+2026-10-25T04:08:02.4444840Z [0;31m[1m[4mDeterminate Systems, Inc. | Status Status
+2026-10-25T04:08:02.4445841Z 🛠️ monitoring: Patched PHP security release (https://status.determinate.systems/incidents/51ece80b-c4d6-401e-a3bb-cc2811518fc6)
+2026-10-25T04:08:02.4446909Z 🔴 monitoring: eMudhra Intermediate CA Compromise (https://status.determinate.systems/incidents/f7cd1dd4-f0d1-4960-b787-e8077e6d4885)
+2026-10-25T04:08:02.4447577Z See: https://status.determinate.systems/
+2026-10-25T04:08:02.4447827Z 
+2026-10-25T04:08:02.4468887Z [command]/usr/bin/sudo mkdir -p /var/lib/determinate
+2026-10-25T04:08:02.4720336Z ##[group]Detecting systemd...
+2026-10-25T04:08:02.4721109Z ##[endgroup]
+2026-10-25T04:08:02.4734069Z ##[group]Configuring KVM
+2026-10-25T04:08:02.5151206Z ##[endgroup]
+2026-10-25T04:08:02.5159380Z [32m Accelerated KVM is enabled [33m⚡️
+2026-10-25T04:08:02.5160805Z ##[group]Installing Nix
+2026-10-25T04:08:02.5165247Z ##[group]Downloading nix-installer for x86_64-linux
+2026-10-25T04:08:02.5166918Z Fetching from https://cf.install.determinate.systems/nix-installer/stable/x86_64-linux
+2026-10-25T04:08:02.6244458Z Cache hit for: determinatesystem-nix-installer-x86_64-linux-9a30a18a91c68e260bdce73a5b2293af
+2026-10-25T04:08:03.4020048Z Received 115716583 of 115716583 (100.0%), 153.9 MBs/sec
+2026-10-25T04:08:03.4020546Z Cache Size: ~110 MB (115716583 B)
+2026-10-25T04:08:03.4127010Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f3d52b2f-300c-4781-8917-c8fa428ba6ef/cache.tzst -P -C /home/runner/work/_temp/nix-installer-826c1de1-cd07-47f5-85d7-a3ed827a14fc --use-compress-program unzstd
+2026-10-25T04:08:03.7939400Z Cache restored successfully
+2026-10-25T04:08:03.7999016Z ##[endgroup]
+2026-10-25T04:08:03.8015983Z [command]/home/runner/work/_temp/nix-installer-826c1de1-cd07-47f5-85d7-a3ed827a14fc/nix-installer install linux --prefer-upstream-nix
+2026-10-25T04:08:03.8068098Z  INFO nix-installer v3.24.0
+2026-10-25T04:08:03.9037513Z [2m[33m`nix-installer` needs to run as `root`, attempting to escalate now via `sudo`...[39m[0m
+2026-10-25T04:08:04.0435885Z  INFO nix-installer v3.24.0
+2026-10-25T04:08:04.2157470Z  INFO Step: Create directory `/nix`
+2026-10-25T04:08:04.2157941Z  INFO Step: Provision Nix
+2026-10-25T04:08:06.2094113Z  INFO Step: Create build users (UID 30001-30032) and group (GID 30000)
+2026-10-25T04:08:14.6195001Z  INFO Step: Configure Nix
+2026-10-25T04:08:14.8676743Z  INFO Step: Create directory `/etc/tmpfiles.d`
+2026-10-25T04:08:14.8677120Z  INFO Step: Configure upstream Nix daemon service
+2026-10-25T04:08:15.5257775Z  INFO Step: Cleanup
+2026-10-25T04:08:15.5286916Z  INFO Running self test for shell sh
+2026-10-25T04:08:15.7003673Z  INFO Running self test for shell bash
+2026-10-25T04:08:15.8431399Z [1m[32mNix was installed successfully![39m[0m
+2026-10-25T04:08:15.8432402Z To get started using Nix, open a new shell or run `[1m. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh[0m`
+2026-10-25T04:08:15.8432797Z 
+2026-10-25T04:08:15.8639332Z ##[endgroup]
+2026-10-25T04:08:15.9277321Z ##[group]Run bun install --frozen-lockfile
+2026-10-25T04:08:15.9277641Z [36;1mbun install --frozen-lockfile[0m
+2026-10-25T04:08:15.9283943Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+2026-10-25T04:08:15.9284357Z env:
+2026-10-25T04:08:15.9284558Z   SOURCE_SHA: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:08:15.9284811Z   PR_NUMBER: 53
+2026-10-25T04:08:15.9284997Z   PUBLIC_BASE_PATH: /clusterii/pr53
+2026-10-25T04:08:15.9287042Z   GH_TOKEN: ***
+2026-10-25T04:08:15.9287284Z   DETSYS_INVOCATION_ID: 0b761f4b-4984-4279-b758-ea65f860dcd8
+2026-10-25T04:08:15.9287576Z   DETERMINATE_NIX_KVM: 1
+2026-10-25T04:08:15.9287772Z ##[endgroup]
+2026-10-25T04:08:15.9506186Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T04:08:16.1846677Z unpacking 'github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b?narHash=sha256-l0KFg5HjrsfsO/JpG%2Br7fRrqm12kzFHyUHqHCVpMMbI%3D' into the Git cache...
+2026-10-25T04:08:16.4761966Z unpacking 'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e?narHash=sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768%3D' into the Git cache...
+2026-10-25T04:08:16.6346885Z copying path '/nix/store/bzc7kf828kg6zlan92766rb2inciclc4-source' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8323935Z copying path '/nix/store/kbddl0iwydskifb753jn5zhzayazzfwm-git-2.55.0-doc' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8486300Z copying path '/nix/store/bfbxxd62z90a2s8kjrnvbhag7rsmxbvw-perl5.42.0-FCGI-ProcManager-0.28' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8488461Z copying path '/nix/store/8zf3ii2914zn5p87p34xvwkwpg9pi26v-perl5.42.0-HTML-TagCloud-0.38' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8509235Z copying path '/nix/store/angp413gqw98hnh2x3pnjmsbv33dhph1-perl5.42.0-libnet-3.15' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8521460Z copying path '/nix/store/sbh1cz1bq2alsy5xld124wj5z3abnyhj-perl5.42.0-URI-5.21' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8537850Z copying path '/nix/store/kw26hfd5b653cn2lm6yfh0q7y18d6d9l-gcc-15.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8544224Z copying path '/nix/store/fv16w8pm8mv6z16r8anmfqa6k5bz1659-perl5.42.0-Digest-HMAC-1.05' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8552895Z copying path '/nix/store/q2k57cl417rd3p86l5ill19x4ysf7206-iana-etc-20251215' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8553858Z copying path '/nix/store/bqb4ja5w47g587b5j2hkl4993sw5mykd-mailcap-2.1.54' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8589193Z copying path '/nix/store/iz8jima1yvz8j3q1kkszki2sgz31nw0m-set-java-classpath-hook' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8591801Z copying path '/nix/store/q30qxdihnn8xrihbdzy1r8iz1zvjkqzn-tzdata-2026b' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8616704Z copying path '/nix/store/i9hdf87r1r8xkc26gj3h9cp08hx0iqbs-xgcc-15.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8786374Z copying path '/nix/store/iwi17bh00a6jrpkv33yaai4d5wb17s1n-perl5.42.0-HTML-Tagset-3.20' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8789686Z copying path '/nix/store/drxh8m9ksncky87gv7791d6krsasj3wq-perl5.42.0-IO-HTML-1.004' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8796892Z copying path '/nix/store/cqrsxwri65bnki3rfhlj75187dj6c5al-zlib-1.3.2-static' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.8920450Z copying path '/nix/store/ang6yzsv32vnkdq7bqr41dgna2knkz8w-dejavu-fonts-minimal-2.37' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9526799Z copying path '/nix/store/1qhim3l1p9wgxd7yn5gcq6d0j2szxxba-perl5.42.0-Encode-Locale-1.05' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9536875Z copying path '/nix/store/34lmq4zkql2dnd7apa0xr6h1srg6hq3d-perl5.42.0-Test-Needs-0.002010' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9541267Z copying path '/nix/store/98di1f8ynq60yvww09pqa0di3npx8d0g-perl5.42.0-Test-RequiresInternet-0.05' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9556318Z copying path '/nix/store/n3rjpgxjl0i02lcz6sz1443py8z2xy9r-perl5.42.0-LWP-MediaTypes-6.04' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9557654Z copying path '/nix/store/wgdb1viqmx0va3108b7jyam3q1l3kiqx-perl5.42.0-Try-Tiny-0.31' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9568878Z copying path '/nix/store/x0mrr76a3cckndnd71b3xl1r2853p0al-perl5.42.0-TimeDate-2.33' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9593885Z copying path '/nix/store/nwhmqc53hly500c4090k37i3r6k0qkyx-alsa-topology-conf-1.2.5.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9595738Z copying path '/nix/store/dikzgw0kinvli9fdhv7qxqbbmirilbn3-gnu-config-2024-01-01' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9601734Z copying path '/nix/store/0i4ndlqrw6j71wvx1n379zs566gv17g7-perl5.42.0-Mozilla-CA-20230821' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9602847Z copying path '/nix/store/06iig4ig766v56hm1ahghj1hb7bk74gv-iso-codes-4.20.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9810287Z copying path '/nix/store/6n8cv0cva252qnvkc4mxi1m7hdxkb66b-perl5.42.0-Net-HTTP-6.23' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9812594Z copying path '/nix/store/kfrxgd47di98hxf03lywbp5vh3xf7ag6-perl5.42.0-WWW-RobotRules-6.02' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9842006Z copying path '/nix/store/47wlgfansg09j38cg44dh7rfh0smq8ym-libunistring-1.4.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9842985Z copying path '/nix/store/wkyl6bvcp2dcw1in5qhqrq1dbvrwi193-update-autotools-gnu-config-scripts-hook' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9855151Z copying path '/nix/store/ba9kpr0xisdw2b4335870x7rg07dk4g4-publicsuffix-list-0-unstable-2026-06-24' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9870363Z copying path '/nix/store/5adk9w1bkfxwyzcv834l9b5wwwfhsfwr-dns-root-data-2025-04-14' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9871555Z copying path '/nix/store/izzvkyjfwsfwsg7ccjdjhzxc12gi7v65-linux-headers-7.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9872763Z copying path '/nix/store/kbyxscfkz9m9rxkqypbdmlmdw7z9j388-gsettings-desktop-schemas-50.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9897822Z copying path '/nix/store/p10v0r4my8vlajf3c1scm0czip9cwx3p-xkeyboard-config-2.48' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9910837Z copying path '/nix/store/znqxk53v87vw2lqbvkrs8g2jzsvf7qib-fontconfig-2.18.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:29.9911676Z copying path '/nix/store/0vy8q8xyzgkcypd71q6br84115z73m6i-perl5.42.0-Test-Fatal-0.017' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.0020758Z copying path '/nix/store/1z8zb4z2cs0whpylxv3nqi6m1m080bcy-perl5.42.0-HTTP-Date-6.06' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.0264727Z copying path '/nix/store/1zpz45w7k0i1j6b4m2z1cc12kbnv1m6y-libidn2-2.3.8' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.0418391Z copying path '/nix/store/rgc11y97w0q8531i99lqm88zx11sh4ws-perl5.42.0-File-Listing-6.16' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.0420393Z copying path '/nix/store/cp76zrm4w1pdsl9nhm16i5x4nigvj70r-perl5.42.0-HTTP-CookieJar-0.014' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.0806293Z copying path '/nix/store/l8si8gnvvq93yzms1jsgh5aixyf9rl5x-glibc-2.42-67' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6033048Z copying path '/nix/store/xmfpij0wr7h2falwx5aymm0h4477s37h-acl-2.4.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6036581Z copying path '/nix/store/9wpg7kb02bg1jshj0rm3wp3d77fi4krj-attr-2.6.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6037800Z copying path '/nix/store/3i7gmy9m9kmigwpaxsp0507is073klhn-c-ares-1.34.8' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6038845Z copying path '/nix/store/6jvnsx7q7lyy5aqzx2dgyj5hm4xib2q6-ed-1.22.5' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6039972Z copying path '/nix/store/c9mv5v53f7vy3wd00ah0f77k509mzmn7-bash-5.3p15' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6041261Z copying path '/nix/store/fs2axbvhmim3y1dwzpf5mh56569h15df-bun-1.3.13' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6042424Z copying path '/nix/store/vq96535799nsn8cgs2khhpm8blc02kpb-expand-response-params' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6045686Z copying path '/nix/store/w7dr4vs79wc59bqpx5r1nj4i8gachbwb-bzip2-1.0.8' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6046692Z copying path '/nix/store/3npsgs0d71wqn51czzbxc19bj1xsm8gv-c-ares-1.34.8' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6047766Z copying path '/nix/store/pyjdn8k7hsfydg6nh53gc75hndknl6nq-brotli-1.2.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6048785Z copying path '/nix/store/g264nm7psb4b9w31kqxqfnysv376hc9n-expat-2.8.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6049962Z copying path '/nix/store/0fpnmyzv3jv5a3q3p3f08hfmy2qrhmnj-gawk-5.4.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6050990Z copying path '/nix/store/91rark3bf4gzb5zhlw403lsf6dnlnd0w-fribidi-1.0.16' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6463003Z copying path '/nix/store/085fzsp11pd40mwzvldwj6f7znhh27hf-perl5.42.0-TermReadKey-2.38' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6503732Z copying path '/nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6574389Z copying path '/nix/store/c3k85ym938bxlw4q69jib9rl0qym7ihg-zlib-ng-2.3.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6581457Z copying path '/nix/store/wn3g9b8f6m2z4ig76lipaijxgkf0pi1m-openssl-3.6.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6582989Z copying path '/nix/store/jh1g7i25a3sd2giy1kxv16hyx7dhslx6-perl5.42.0-FCGI-0.82' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6611527Z copying path '/nix/store/x2kfd3hnhqk8d6kxkyffpk7lyaz8iy76-gnused-4.10' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6636987Z copying path '/nix/store/zva95q4jh61f9i0cflab5d16wlck9ch5-pcre2-10.47' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6653770Z copying path '/nix/store/173yb1xmrn4x30lc07vdv436rwbc2m72-giflib-6.1.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6689692Z copying path '/nix/store/78x9i5x1wpqw4kq0h39b8f35abcv156h-zlib-1.3.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6714615Z copying path '/nix/store/fm0n00bdhbfwg2ci7s1644hp3rr43q6c-libjpeg-turbo-3.1.4.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6731871Z copying path '/nix/store/p0idw7qca97wqcxqq63phvfy3ppsglbw-lcms2-2.19.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.6796206Z copying path '/nix/store/2y6fj2my9gaai48mv9mgycp9wmb0kv8a-ncurses-6.6' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7011737Z copying path '/nix/store/7fihk5wdlzzjaj1z9h4jvg35s9jjgdad-util-linux-minimal-2.42.2-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7019739Z copying path '/nix/store/5chmw9ib7xz2f4rw6bgdwxx0vb9bqqpa-gzip-1.14' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7062581Z copying path '/nix/store/k494i43aglzi7f4y4hiqmpii5755ibsq-gdbm-1.26-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7449637Z copying path '/nix/store/mxnpbgw26054cgy20vbnwr2lkdqd5x5k-libffi-3.7.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7651138Z copying path '/nix/store/s1lb5pzrkgvr97jamn0wx238fmvn3klp-xz-5.8.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7684932Z copying path '/nix/store/ypl4liis0f9lskaxdgydzg9bfs9f3702-mpdecimal-4.0.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7742856Z copying path '/nix/store/wslzfbf8ib0snpzj4b6157q9bn4vmx9x-nghttp3-1.16.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7744157Z copying path '/nix/store/gs2zr9k6y6y9h111gdqwyhhjph691k75-perl5.42.0-Crypt-URandom-0.55' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7782074Z copying path '/nix/store/xj9dgyqrcq8hrf4mrkvbcp4pa3hgrbhy-gnugrep-3.12' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7823682Z copying path '/nix/store/9jyx6hrsjdcjx1gxmipj45bij5vzvq19-gh-2.96.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7878097Z copying path '/nix/store/m6qxk1vl4fvi6v99k6fwp9szq2jyxx5v-ripgrep-15.2.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7897779Z copying path '/nix/store/infvp3l4db6n0cpspv3am7n64a82lbk6-gettext-1.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7938065Z copying path '/nix/store/b1cd9w2dq47ikr69mr8363i45wx1rb1d-file-5.48' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.7949052Z copying path '/nix/store/d98p1fdc3rcsjlyj7pikc9qp67z9y2jy-libpng-apng-1.6.58' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8228047Z copying path '/nix/store/q1hc5bx1f02blk957andz02jzm8rqw40-perl5.42.0-Net-SSLeay-1.92' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8371833Z copying path '/nix/store/13id30w3rvgj24nnz34f7qrncz48zd7l-zstd-1.5.7' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8380080Z copying path '/nix/store/5vsi9mzjw741bqzg23vhzhln98z4p6m9-sqlite-3.53.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8454817Z copying path '/nix/store/cd2wkdkxrgrg9978yx864vx5kbw77mxr-ngtcp2-1.23.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8515656Z copying path '/nix/store/vi8i5ldnnnna93pd7zpypgzwym86bnn2-libpsl-0.21.5' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8563302Z copying path '/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8596062Z copying path '/nix/store/dibbirm82v8zj5kkjjd7bjhpz265nvyy-perl5.42.0-Authen-SASL-2.1900' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8619221Z copying path '/nix/store/j5r2kzhzb2x8avna8rb21xq7dxrrr6wv-gnutar-1.35' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8783436Z copying path '/nix/store/6gkcds8g0vi54xrmxpyv58r8x2fvqw79-xz-5.8.3-bin' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.8890995Z copying path '/nix/store/lqmq1zh4zmznf89d2vaymi8xwl6kxb1w-libssh2-1.11.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.9364768Z copying path '/nix/store/4ysy3x46fpac2kl7b7siyb04fzqymmqy-freetype-2.14.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.9637973Z copying path '/nix/store/mbakq7rmq5sf04xljvvaj19d5xgzr1zr-bzip2-1.0.8-bin' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.9639337Z copying path '/nix/store/i7vpzhki045rj4qgpnx3nsgjar0dfy1h-perl5.42.0-IO-Socket-SSL-2.083' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.9781039Z copying path '/nix/store/5aaj50lfsqqxsxq6ziqab4fqmi5n57dq-nghttp2-1.69.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.9831677Z copying path '/nix/store/w5rsmvy2fcp7lrnn6y73zgf1rsjk6wn0-file-5.48' from 'https://cache.nixos.org'...
+2026-10-25T04:08:30.9863940Z copying path '/nix/store/xbdvi1a0mqzml869i0123pylhgjdyqi5-patch-2.8' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0023457Z copying path '/nix/store/xrj3v3k9v5hvx3vl0jgfp5if3syqgh8g-gnumake-4.4.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0140234Z copying path '/nix/store/47p3g10gbqf1dk92x64p5w152q90xf2n-gmp-with-cxx-6.3.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0251018Z copying path '/nix/store/gsjh633q4w9jzk8api3j7k6zhyiggbvk-perl5.42.0-Compress-Raw-Zlib-2.222' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0310072Z copying path '/nix/store/k11m8f6yaqxj9q9vqjphlydgpch0k6xr-perl5.42.0-Clone-0.46' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0413965Z copying path '/nix/store/x2ih5r3mxb2xmln5n6m0sl8gnv5vwmqw-perl5.42.0-Compress-Raw-Bzip2-2.218' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0539637Z copying path '/nix/store/wnkmdd3nm0af5lxgwq1h4v52y6mdl4vj-glibc-2.42-67-bin' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0689008Z copying path '/nix/store/dhi52rn93kvkjf08qkikwhlgzn32qh1s-libselinux-3.10' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0692557Z copying path '/nix/store/d1mw1wmv37v4qp5661x4vb4rvhmaf6vx-readline-8.3p3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0693763Z copying path '/nix/store/xka8nhnw1m80zl2xvk1rv0adrj0r815w-libxcrypt-4.5.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0748375Z copying path '/nix/store/0wvz9ga48f38xc5rlfiilw7wy91496vv-merve-1.2.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0749500Z copying path '/nix/store/0zj6s2cz3rklkldys7r6ykc9nq7bgrfw-c-ares-1.34.8-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0786445Z copying path '/nix/store/qb51l9gfln2sqj0xa0qsh9zk1m6k152i-perl5.42.0-Net-SMTP-SSL-1.04' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0844705Z copying path '/nix/store/l9i81aw8mlp1mddq9ayy8m5iyi71s94z-fontconfig-2.18.1-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0851992Z copying path '/nix/store/25q1byw51v076fk0cbx1f85dlsf946wy-icu4c-78.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0857218Z copying path '/nix/store/41d305g3x8bl0ab5d2hwja7h2r3kq8c5-nbytes-0.1.4' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0884992Z copying path '/nix/store/6lzjfzzi5yz15xfi8qw4l75hyk0ybg0i-nghttp3-1.16.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0949624Z copying path '/nix/store/mp8s10fwm685azvvv1qq7zyf7iajjlj8-coreutils-9.11' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.0994538Z copying path '/nix/store/7xiij6c9b1vnnlr8n3nrzjmvh7ka43vl-ngtcp2-1.23.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.1032406Z copying path '/nix/store/y3z5sr16sxd50bgcn2zkn46afn8fy0na-glib-2.88.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2074510Z copying path '/nix/store/jp8aa66xzb31cdcrdxra2nnjjn1lnsna-gtest-1.17.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2103393Z copying path '/nix/store/rgnappqqc5vbq60gza5fflyk84sylwl6-python3-3.14.6' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2104499Z copying path '/nix/store/dddwfz7nph37q3cjky9lhpy9kb90rrrx-bash-interactive-5.3p15' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2105848Z copying path '/nix/store/mj4k2ran3jvgni8dgbv9hqf891921qyc-libuv-1.52.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2182178Z copying path '/nix/store/m2v7vwf2fvgylww97i34kc34z2yxv4h1-glibc-2.42-67-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2205597Z copying path '/nix/store/ppij0kypm8b81lwj9c9yjnw4xdp6c7bi-hdrhistogram_c-0.11.10' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2212493Z copying path '/nix/store/q40zmh73qizzvak0zp38k79lzpx6fg54-simdutf-6.5.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2232505Z copying path '/nix/store/qn2hp5flh5cjppbxkdpw4ygy8s7kyf63-simdjson-4.6.4' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2243245Z copying path '/nix/store/ydgdz8pf2in3rlb5agwkgr76vfrdf2s5-zlib-1.3.2-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2250691Z copying path '/nix/store/yj7apqxfkhjysgkc70mlwpmys1jyrxbk-llhttp-9.4.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.2303215Z copying path '/nix/store/msjil83s4z6f0h373c8q4fm7rkhjax46-wayland-1.26.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3028184Z copying path '/nix/store/4hbz5lyqjg08fk6rk67dfbky4y3nwhhg-perl-5.42.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3029413Z copying path '/nix/store/bx0a1ijcg9ss307lrizi1cavyfs4s2g5-diffutils-3.12' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3053530Z copying path '/nix/store/m1p6gxgxis75rn0d549ny2y8gpxjv9pd-findutils-4.10.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3413460Z copying path '/nix/store/hvhjda48m17gfrlb50bfxp0r1r1klmpi-gtest-1.17.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3417961Z copying path '/nix/store/v12aws0xnmcaxhv9j032d2gpxlqzb3sw-libuv-1.52.1-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3451097Z copying path '/nix/store/51mrfbygzbkpd45kq3q0qvqa5j205vp5-keyutils-1.6.3-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3503175Z copying path '/nix/store/7zw2xgj4phwm4w5ibwlgqb1jzlc7f0w9-llhttp-9.4.2-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3512196Z copying path '/nix/store/2740ksv6cpz7bflhh28xfg9ifzqdx36m-gmp-6.3.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.3570525Z copying path '/nix/store/53r0h7k7bw9h1khwwidgh6xmcz3msdyc-libdaemon-0.14' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4009397Z copying path '/nix/store/bgmmw8fqs7w2gfzp8wc72cnjmsz5280j-libevent-2.1.13' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4098075Z copying path '/nix/store/8xbpn4hy0d9lzc8d7rxhlz3fnak56sb5-libtasn1-4.21.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4136746Z copying path '/nix/store/hd4cbx3hbjsmfyvw68y02gp4rcvs150s-gmp-with-cxx-6.3.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4471911Z copying path '/nix/store/kxjk2sxa5m44lz5mvpmadazi46b0jzsq-kmod-31' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4555153Z copying path '/nix/store/518v8ngnb8avchbcm7xzbry6q5y2jhmm-simdutf-9.0.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4744890Z copying path '/nix/store/456p4q4ka95c0i2i5hd5hfbinn1568s0-pixman-0.46.4' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4921719Z copying path '/nix/store/hgg4h2lv29836s8q1wgf4vc6gd0wrdxm-lzo-2.10' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4979583Z copying path '/nix/store/kainya428kcn6al4r2wg0n2z91qbl723-uvwasi-0.0.23' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4980865Z copying path '/nix/store/mvha8v3paq0cf8sv3mnqamip12a3fi5w-graphite2-1.3.15' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.4982105Z copying path '/nix/store/gh32nqhnvx2an8hdkb2z8z3kv405s226-krb5-1.22.2-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5071087Z copying path '/nix/store/pmy7n06wjf15a7snxdzvzscqxw2xm2dd-libxdmcp-1.1.5' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5089194Z copying path '/nix/store/8gilpf039i4kmafww1sffqc8ipgpgry8-isl-0.20' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5273671Z copying path '/nix/store/x5fbmi7cq6h3x5b7pz3mb3nlwpiw4aw6-mpfr-4.2.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5279949Z copying path '/nix/store/ppk1gyqxg40y7b2d2hlikjjziij1f65d-libxau-1.0.12' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5371513Z copying path '/nix/store/g0b68vfw552xi8rsvw94hkqgij5kjgzf-p11-kit-0.26.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5552459Z copying path '/nix/store/8fs6rzlibvp5d84lqpw6jhk6kfxx99hh-nettle-3.10.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5581927Z copying path '/nix/store/4df782xl0w60n91mii80d4wrkpcyww6y-alsa-ucm-conf-1.2.16.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5843850Z copying path '/nix/store/dmqm0zfnjgr80knam6pcdlq2cka02xv8-icu4c-78.3-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5864682Z copying path '/nix/store/8l8rbqchv12g48jqxm4s68vzr9cvbyp9-ada-3.4.4' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.5996638Z copying path '/nix/store/g7xz6l9lp0w3fh0c4xralli79vd2vzpi-openssl-3.6.3-bin' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6026807Z copying path '/nix/store/vh7q8gz4rinjal4pckwyhyvxdx5pisp7-sqlite-3.53.3-bin' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6054181Z copying path '/nix/store/5za8k2yfzgqhxrrjx7gkamgm6s80pra9-harfbuzz-13.2.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6069401Z copying path '/nix/store/9544h8pbcr8mw52c5k3bwk9jmg9babw4-zstd-1.5.7-bin' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6195846Z copying path '/nix/store/428x50113b3ngsdwamwsi30idlcv55cg-dconf-0.49.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6272423Z copying path '/nix/store/2chpcgwndk5iphqgwf9r7x4yjysmkd2z-libxcb-1.17.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6348093Z copying path '/nix/store/c9ryi030mqnksqnrsmhkfk80h22j7msa-libmpc-1.4.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6421720Z copying path '/nix/store/4lxy2qign56dcbcwd202h6f44m2p0fcq-brotli-1.2.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6426069Z copying path '/nix/store/sfcwbxpkp0l1r1xvv1s57a5bmv3m53zr-curl-8.21.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6665509Z copying path '/nix/store/4z94jgpffyxygw6frsn28qlmmmszglr6-unbound-1.25.1-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6667915Z copying path '/nix/store/zz54khrv200gphr59xncx9zwa1yl80wh-libxml2-2.15.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6793663Z copying path '/nix/store/5iga06c6w0pb6p1srgkxzjvrzgf93j1y-openssl-3.6.3-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6822154Z copying path '/nix/store/vm13cagj8s0704qqj4crvca3hsm86jah-zstd-1.5.7-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6842160Z copying path '/nix/store/f872dp19qb48413fn0vr3y93yxhd8ffz-json-glib-1.10.8' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6926419Z copying path '/nix/store/f82py3qn6s6c6zxrjfrp8b8f629x0x5h-sqlite-3.53.3-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6977075Z copying path '/nix/store/xkjdypjdb61dqq0z79fdqd1mjhw3k3vi-brotli-1.2.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.6999005Z copying path '/nix/store/lz4h0mn2hf01x58yg7g2wsj9ax2xq365-libsoup-3.6.6' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7075613Z copying path '/nix/store/cmjirs6g57ddbyjglwic2g2cjrwy3ppr-gcc-15.3.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7198648Z copying path '/nix/store/9cd4rrf9s2xvnd8jpzr9kj5g9z9y7wj4-binutils-2.46-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7345481Z copying path '/nix/store/45naqds5dkzsmmrh61wbxbfci73san7n-libx11-1.8.13' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7347690Z copying path '/nix/store/03dld0nv8r2m3wpcyp26n8qpxhn6cqry-libev-4.33' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7397358Z copying path '/nix/store/cffm4gnmi0303pnnsfjmhqk55z987w8a-libdeflate-1.25' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7424770Z copying path '/nix/store/xx6z7gp9nj379z3p28rpwcjniqln74ps-gnutls-3.8.13' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7494484Z copying path '/nix/store/i7vqdxgjwybyb1h790yrl37q485sj5kb-libwebp-1.6.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7531263Z copying path '/nix/store/zh4kiyi4nka66iwjj3b3390kc17klyn0-lerc-4.1.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7673657Z copying path '/nix/store/wxny3yldyv5lfsmvvnhxs7j1wv5w5i9n-util-linux-minimal-2.42.2-login' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7808767Z copying path '/nix/store/7p1v2j0sfn26yvqmd3r11fzxyvbs4vrc-libdatrie-2019-12-20-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7925870Z copying path '/nix/store/8rs4jq1wazssiwg0g6cxzk2zq2gw2nnm-util-linux-minimal-2.42.2-mount' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7932967Z copying path '/nix/store/rbagm07lv91n8vymyhqnzrzj2c13hiwq-util-linux-minimal-2.42.2-swap' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.7975389Z copying path '/nix/store/w4gyzdr00alzfvs8zf47brfswnnq2ah6-kmod-31-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8223400Z copying path '/nix/store/3dbrmhhns34l05k4640ag3ckdk53b5x5-alsa-lib-1.2.16.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8368248Z copying path '/nix/store/b01rwyg0ii5v8r50yrikcs5af64x0v0q-binutils-2.46' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8384910Z copying path '/nix/store/qbjx1mvg3cb83inb5ziqpa4srhfm52h6-nghttp2-1.69.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8772893Z copying path '/nix/store/rrflw83s4x5rq6ma494dh1xdgs0a6aqg-libxfixes-6.0.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8775204Z copying path '/nix/store/3by4hkcmnxv7sb15z9s0v0gzali66pvl-libxcomposite-0.4.7' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8776888Z copying path '/nix/store/f5b3j7k2lrm9fpb5h3phm4ahf1pi9h2s-libxext-1.3.7' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8845124Z copying path '/nix/store/bmxrycprmknqwl22m273nrbs86yawl5j-libxrender-0.9.12' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8860937Z copying path '/nix/store/bn21gzsggp8dvzfizi3nhhmz0s555ybq-libxkbcommon-1.13.2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8907148Z copying path '/nix/store/bz0iyqml02szkbk1h2a37wl4nbl6irm1-systemd-minimal-libs-261' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8913101Z copying path '/nix/store/qbdj7ff6hfg6jx8ybbhx404xqk9s95s1-libtiff-4.7.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.8970852Z copying path '/nix/store/ac68y3lngjyjl120jgigcqr11ckvms5s-libthai-0.1.30' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9025230Z copying path '/nix/store/535xygr4lz0g8322k3y51jnb9jlvi16k-systemd-minimal-261' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9764562Z copying path '/nix/store/sbms9ld5wxl0r6c5vqbwf58wsx9higql-libxdamage-1.1.7' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9784231Z copying path '/nix/store/s1j6wf4fdb4v18byqbnh7s3dmizx3jjg-libxi-1.8.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9791730Z copying path '/nix/store/v8x5c24y4zgxv5xmwhz5lz26ir816c31-libglvnd-1.7.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9793160Z copying path '/nix/store/8pm00q15mv5h8v8pf4gi3fh7s69lxw8b-libxinerama-1.1.6' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9867381Z copying path '/nix/store/kl041rz45ijs9qp7ahjr1zabw0fl2xwx-cairo-1.18.4' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9874874Z copying path '/nix/store/nbmch0g2bi2rjpfxvyi056j21f2l1pkr-libxcursor-1.2.3' from 'https://cache.nixos.org'...
+2026-10-25T04:08:31.9895757Z copying path '/nix/store/m5ikb8j00nc9591p8ls752fn89wbwaz8-libxrandr-1.5.5' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.0061679Z copying path '/nix/store/vzy3vb2ac0z6kdn0m6qmm2cgg88b444f-nghttp2-1.69.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.0112767Z copying path '/nix/store/6bgk1kjxj8ak50i6sggjs94s942j7s8x-libxft-2.3.9' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.0166779Z copying path '/nix/store/pd9mmvahvhr3jiirllrn7csvg8v03ahx-gdk-pixbuf-2.44.6' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.0775424Z copying path '/nix/store/25bz40ffamf70kgws1gg1byshgfpnmpc-perl5.42.0-IO-Compress-2.221' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.0998978Z copying path '/nix/store/sn84f2wa25q1f0qvq2c1x5sbr6gp8qgy-libxtst-1.2.5' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.1193783Z copying path '/nix/store/dk497wpci3wx5nmhc3qm6ji8vjj4z2qr-gobject-introspection-1.86.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.1217943Z copying path '/nix/store/v1gji56693i0vhbcprbv3j3mhvpgpkrm-libepoxy-1.5.10' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.2815911Z copying path '/nix/store/p8hbhn8hdqz5p3a7y6dvi1y1x8nriybl-nodejs-slim-24.18.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.2892444Z copying path '/nix/store/c9qdmjd4c1cc5phnwz3r38mc26xyvzfz-pango-1.57.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.2978321Z copying path '/nix/store/25spgaq24rajl1avlj14wlmknf8b01c9-perl5.42.0-HTTP-Message-7.02' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.4682606Z copying path '/nix/store/sss9sfq7bdlk1dwjbq3h9vq2i8pdgjp5-perl5.42.0-HTML-Parser-3.85' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.4688131Z copying path '/nix/store/37ijz5wck4sj59mjbzwvf4pz99ksm4v5-perl5.42.0-HTTP-Cookies-6.10' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.4699175Z copying path '/nix/store/58w70i0w4fdlgfm89m3xiy85hiypdl44-perl5.42.0-HTTP-Negotiate-6.01' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.4716908Z copying path '/nix/store/gig2fjba14c1nrblfd5a0dgimwrn7rys-perl5.42.0-HTTP-Daemon-6.17' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.5083958Z copying path '/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.5345337Z copying path '/nix/store/vmmqppngzwlvhbpfxirmzibai8zbxrd8-dbus-1.16.2-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.5875906Z copying path '/nix/store/58ha8qi151hrfcn5anzlg5x828s5z7i3-perl5.42.0-CGI-4.59' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.5877373Z copying path '/nix/store/lwr579dghs2bydrf8q7x1sa01sxdfvcq-perl5.42.0-libwww-perl-6.83' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.5891739Z copying path '/nix/store/6yi3mn5dkpih069v2lfisvfwqvmarbxb-at-spi2-core-2.60.4' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.5897305Z copying path '/nix/store/8cgicq6p0wzaaqkv463q9xnbqp29qd8c-avahi-0.8' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.6217537Z copying path '/nix/store/2pl6avcy056spi92ndhxjk10snqh74k9-perl5.42.0-CGI-Fast-2.16' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.6584351Z copying path '/nix/store/pbaqb79cvzbyqibag18xlra711h9j8yy-cups-2.4.19-lib' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.6585415Z copying path '/nix/store/dlyi530r9jyw3drx8dcd6l2d4lb41x7k-tinysparql-3.11.1' from 'https://cache.nixos.org'...
+2026-10-25T04:08:32.9710145Z copying path '/nix/store/sfipg5lg6yrzvhh4lafialb5sqnk5pvx-gtk+3-3.24.52' from 'https://cache.nixos.org'...
+2026-10-25T04:08:33.3136195Z copying path '/nix/store/i4y48fdcc99kzw28f9mm4102ji1kx9mx-openjdk-21.0.12+2' from 'https://cache.nixos.org'...
+2026-10-25T04:08:33.9131263Z copying path '/nix/store/amzxhrm2v7as6p0mq4xz7lmg4cxdv4lf-nodejs-slim-24.18.0-corepack' from 'https://cache.nixos.org'...
+2026-10-25T04:08:33.9143600Z copying path '/nix/store/6crizgqnh1vmm7ax82y4as6p5f3pcp13-nodejs-slim-24.18.0-npm' from 'https://cache.nixos.org'...
+2026-10-25T04:08:34.7347126Z copying path '/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:34.8658409Z copying path '/nix/store/sxx9r2badzg82107kiwwm9jmzlf52mdb-stdenv-linux' from 'https://cache.nixos.org'...
+2026-10-25T04:08:35.8184380Z copying path '/nix/store/x98gls54ki3fmm2pv2cmi6z8mcda6glk-nodejs-24.18.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:38.8584325Z copying path '/nix/store/rq1vg974qcxzb9dazz9dbq2qm72r9fa4-git-2.55.0' from 'https://cache.nixos.org'...
+2026-10-25T04:08:39.6542600Z building '/nix/store/r67m3l93h95am5hkbn508vvhgf9hpwg6-nix-shell-env.drv'...
+2026-10-25T04:08:40.0043767Z this path will be fetched (107.5 KiB download, 107.4 KiB unpacked):
+2026-10-25T04:08:40.0044509Z   /nix/store/3n5mff6xg527ah76lhc0srf1z6yln7nh-bash-interactive-5.3p15-man
+2026-10-25T04:08:40.0049993Z copying path '/nix/store/3n5mff6xg527ah76lhc0srf1z6yln7nh-bash-interactive-5.3p15-man' from 'https://cache.nixos.org'...
+2026-10-25T04:08:40.0432689Z bun install v1.3.13 (bf2e2cec)
+2026-10-25T04:09:49.5533005Z 
+2026-10-25T04:09:49.5533495Z + @biomejs/biome@2.4.6
+2026-10-25T04:09:49.5533863Z + @firebase/rules-unit-testing@5.0.1
+2026-10-25T04:09:49.5534231Z + @playwright/test@1.61.1
+2026-10-25T04:09:49.5534544Z + @sveltejs/adapter-static@3.0.10
+2026-10-25T04:09:49.5534859Z + @sveltejs/kit@2.69.3
+2026-10-25T04:09:49.5535155Z + @sveltejs/vite-plugin-svelte@7.2.0
+2026-10-25T04:09:49.5535476Z + @types/bun@1.3.10
+2026-10-25T04:09:49.5535721Z + @types/node@26.1.1
+2026-10-25T04:09:49.5535983Z + @types/three@0.183.1
+2026-10-25T04:09:49.5536251Z + firebase-tools@15.25.0
+2026-10-25T04:09:49.5536559Z + material-components-web@10.0.0
+2026-10-25T04:09:49.5536874Z + prettier@3.9.10
+2026-10-25T04:09:49.5537124Z + prettier-plugin-svelte@4.1.1
+2026-10-25T04:09:49.5537394Z + sharp@0.34.5
+2026-10-25T04:09:49.5537606Z + svelte@5.56.5
+2026-10-25T04:09:49.5537836Z + svelte-check@4.7.2
+2026-10-25T04:09:49.5538075Z + typescript@5.9.3
+2026-10-25T04:09:49.5538311Z + vite@8.1.4
+2026-10-25T04:09:49.5538559Z + @fontsource/atkinson-hyperlegible@5.2.8
+2026-10-25T04:09:49.5538910Z + @fontsource/cormorant-garamond@5.2.11
+2026-10-25T04:09:49.5539215Z + @threlte/core@8.6.1
+2026-10-25T04:09:49.5539476Z + @threlte/extras@9.22.2
+2026-10-25T04:09:49.5539733Z + firebase@12.16.0
+2026-10-25T04:09:49.5540297Z + three@0.186.1
+2026-10-25T04:09:49.5540435Z 
+2026-10-25T04:09:49.5540545Z 798 packages installed [69.51s]
+2026-10-25T04:09:49.5681505Z ##[group]Run bun run build
+2026-10-25T04:09:49.5681761Z [36;1mbun run build[0m
+2026-10-25T04:09:49.5684037Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+2026-10-25T04:09:49.5684423Z env:
+2026-10-25T04:09:49.5684643Z   SOURCE_SHA: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:09:49.5684910Z   PR_NUMBER: 53
+2026-10-25T04:09:49.5685101Z   PUBLIC_BASE_PATH: /clusterii/pr53
+2026-10-25T04:09:49.5687224Z   GH_TOKEN: ***
+2026-10-25T04:09:49.5687518Z   DETSYS_INVOCATION_ID: 0b761f4b-4984-4279-b758-ea65f860dcd8
+2026-10-25T04:09:49.5687796Z   DETERMINATE_NIX_KVM: 1
+2026-10-25T04:09:49.5687990Z ##[endgroup]
+2026-10-25T04:09:49.5886440Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T04:09:50.6254887Z $ vite build
+2026-10-25T04:09:51.2551270Z [36mvite v8.1.4 [32mbuilding ssr environment for production...[36m[39m
+2026-10-25T04:09:51.2636939Z [2K
+2026-10-25T04:09:52.6714096Z transforming...✓ 516 modules transformed.
+2026-10-25T04:09:52.7178914Z rendering chunks...
+2026-10-25T04:09:53.3315727Z [36mvite v8.1.4 [32mbuilding client environment for production...[36m[39m
+2026-10-25T04:09:53.3374488Z [2K
+2026-10-25T04:09:54.6330625Z transforming...✓ 608 modules transformed.
+2026-10-25T04:09:54.7248038Z rendering chunks...
+2026-10-25T04:09:54.8920927Z computing gzip size...
+2026-10-25T04:09:54.9099306Z .svelte-kit/output/client/_app/version.json                                                                    0.02 kB │ gzip:   0.04 kB
+2026-10-25T04:09:54.9100440Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.BZGLGj12.woff2        6.75 kB
+2026-10-25T04:09:54.9101128Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.BoXdMtcr.woff2        6.79 kB
+2026-10-25T04:09:54.9101782Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.Bbz-b3yf.woff       7.35 kB
+2026-10-25T04:09:54.9102454Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.CKkU2Dpt.woff       7.35 kB
+2026-10-25T04:09:54.9103101Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.DqXqCC0q.woff         9.33 kB
+2026-10-25T04:09:54.9104098Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.BoVPHkS0.woff2      9.37 kB
+2026-10-25T04:09:54.9104738Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.DRk46D-x.woff2      9.38 kB
+2026-10-25T04:09:54.9105718Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.C4HEjEaf.woff         9.42 kB
+2026-10-25T04:09:54.9106346Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.CyAY5ZLS.woff2         12.92 kB
+2026-10-25T04:09:54.9106953Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.C2atO-64.woff2         13.01 kB
+2026-10-25T04:09:54.9107565Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BbWidj28.woff          14.02 kB
+2026-10-25T04:09:54.9108186Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.Yta7XZ9C.woff2     14.09 kB
+2026-10-25T04:09:54.9108845Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.BMhMHfrj.woff2     14.18 kB
+2026-10-25T04:09:54.9109458Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.BK6Glc0m.woff          14.29 kB
+2026-10-25T04:09:54.9110200Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.DkJXBcIH.woff          15.76 kB
+2026-10-25T04:09:54.9110842Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.FNmA3REe.woff          15.82 kB
+2026-10-25T04:09:54.9111491Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BrHNak5F.woff2         17.20 kB
+2026-10-25T04:09:54.9112320Z .svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.GZI4o3u0.woff2         17.52 kB
+2026-10-25T04:09:54.9112957Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.lsPpqi9g.woff      17.55 kB
+2026-10-25T04:09:54.9113578Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.CsIYWmWK.woff      17.62 kB
+2026-10-25T04:09:54.9114362Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.CH1kM7og.woff2        20.20 kB
+2026-10-25T04:09:54.9115191Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.DaBc-lu7.woff2        20.30 kB
+2026-10-25T04:09:54.9115962Z .svelte-kit/output/client/.vite/manifest.json                                                                 21.75 kB │ gzip:   2.31 kB
+2026-10-25T04:09:54.9116645Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-500-normal.BsRWmXhO.woff2            23.31 kB
+2026-10-25T04:09:54.9117353Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-600-normal.Co1r35X9.woff2            23.39 kB
+2026-10-25T04:09:54.9117972Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.Dk3-quAP.woff         28.26 kB
+2026-10-25T04:09:54.9118592Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.DYeaGGzO.woff         28.28 kB
+2026-10-25T04:09:54.9119195Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-600-normal.2CBVLo0M.woff             31.30 kB
+2026-10-25T04:09:54.9119924Z .svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-500-normal.zIXX3Q-H.woff             31.37 kB
+2026-10-25T04:09:54.9120512Z .svelte-kit/output/client/_app/immutable/assets/basis_transcoder.o4Hde_L7.js                                  57.52 kB
+2026-10-25T04:09:54.9121079Z .svelte-kit/output/client/_app/immutable/assets/draco_wasm_wrapper.fZCQGLGb.js                                58.45 kB
+2026-10-25T04:09:54.9121566Z [33m[plugin builtin:vite-reporter] 
+2026-10-25T04:09:54.9121855Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-25T04:09:54.9122207Z - Using dynamic import() to code-split the application
+2026-10-25T04:09:54.9123144Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-25T04:09:54.9124105Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-10-25T04:09:54.9124629Z .svelte-kit/output/client/_app/immutable/assets/draco_wasm_wrapper.DxJM36Ib.js                                58.76 kB
+2026-10-25T04:09:54.9125317Z .svelte-kit/output/client/_app/immutable/assets/draco_decoder.Z1_iN-Ht.wasm                                  192.42 kB │ gzip:  64.11 kB
+2026-10-25T04:09:54.9126018Z .svelte-kit/output/client/_app/immutable/assets/draco_decoder.C32yEggz.wasm                                  285.74 kB │ gzip:  89.66 kB
+2026-10-25T04:09:54.9126720Z .svelte-kit/output/client/_app/immutable/assets/basis_transcoder.VXdx5NbI.wasm                               527.33 kB │ gzip: 248.94 kB
+2026-10-25T04:09:54.9127315Z .svelte-kit/output/client/_app/immutable/assets/draco_decoder.fzg4nYZr.js                                    719.41 kB
+2026-10-25T04:09:54.9127973Z .svelte-kit/output/client/_app/immutable/assets/5.MP2YSySK.css                                                 0.08 kB │ gzip:   0.09 kB
+2026-10-25T04:09:54.9128619Z .svelte-kit/output/client/_app/immutable/assets/Feedback.BQ8jppjz.css                                          0.14 kB │ gzip:   0.13 kB
+2026-10-25T04:09:54.9129299Z .svelte-kit/output/client/_app/immutable/assets/SessionSecurity.ChAwtUwW.css                                   0.22 kB │ gzip:   0.19 kB
+2026-10-25T04:09:54.9130081Z .svelte-kit/output/client/_app/immutable/assets/2.CPXwfQRI.css                                                 1.13 kB │ gzip:   0.35 kB
+2026-10-25T04:09:54.9130890Z .svelte-kit/output/client/_app/immutable/assets/6.B145_wih.css                                                 1.22 kB │ gzip:   0.53 kB
+2026-10-25T04:09:54.9131521Z .svelte-kit/output/client/_app/immutable/assets/4.CMzqLpuQ.css                                                 1.30 kB │ gzip:   0.50 kB
+2026-10-25T04:09:54.9132177Z .svelte-kit/output/client/_app/immutable/assets/EntryButton.CR08NAKm.css                                       1.46 kB │ gzip:   0.64 kB
+2026-10-25T04:09:54.9132890Z .svelte-kit/output/client/_app/immutable/assets/CampaignMaintenance.B88fUJd5.css                               4.18 kB │ gzip:   1.29 kB
+2026-10-25T04:09:54.9133561Z .svelte-kit/output/client/_app/immutable/assets/3.Osv__d1w.css                                                13.48 kB │ gzip:   2.99 kB
+2026-10-25T04:09:54.9134181Z .svelte-kit/output/client/_app/immutable/assets/0.0MiWn8kt.css                                                13.56 kB │ gzip:   3.57 kB
+2026-10-25T04:09:54.9134855Z .svelte-kit/output/client/_app/immutable/assets/CampaignHistory.B4Hf9d8p.css                                  45.24 kB │ gzip:   8.43 kB
+2026-10-25T04:09:54.9135510Z .svelte-kit/output/client/_app/immutable/chunks/D3Neciip.js                                                    0.03 kB │ gzip:   0.05 kB
+2026-10-25T04:09:54.9136135Z .svelte-kit/output/client/_app/immutable/chunks/xihTtKlq.js                                                    0.06 kB │ gzip:   0.08 kB
+2026-10-25T04:09:54.9136768Z .svelte-kit/output/client/_app/immutable/entry/start.UzRvcUJi.js                                               0.08 kB │ gzip:   0.09 kB
+2026-10-25T04:09:54.9137395Z .svelte-kit/output/client/_app/immutable/nodes/0.DHffXo4Y.js                                                   0.25 kB │ gzip:   0.21 kB
+2026-10-25T04:09:54.9138007Z .svelte-kit/output/client/_app/immutable/chunks/DK3Qm8mf.js                                                    0.64 kB │ gzip:   0.37 kB
+2026-10-25T04:09:54.9138633Z .svelte-kit/output/client/_app/immutable/nodes/1.CTqjRc_n.js                                                   0.66 kB │ gzip:   0.43 kB
+2026-10-25T04:09:54.9139402Z .svelte-kit/output/client/_app/immutable/chunks/HclGiUj8.js                                                    1.21 kB │ gzip:   0.67 kB
+2026-10-25T04:09:54.9140122Z .svelte-kit/output/client/_app/immutable/chunks/Bjy-W4x2.js                                                    1.36 kB │ gzip:   0.65 kB
+2026-10-25T04:09:54.9140882Z .svelte-kit/output/client/_app/immutable/chunks/KZrUzdrP.js                                                    1.46 kB │ gzip:   0.84 kB
+2026-10-25T04:09:54.9141512Z .svelte-kit/output/client/_app/immutable/chunks/CdDvLK6P.js                                                    1.47 kB │ gzip:   0.81 kB
+2026-10-25T04:09:54.9142130Z .svelte-kit/output/client/_app/immutable/nodes/5.DJwuEW2X.js                                                   1.57 kB │ gzip:   0.90 kB
+2026-10-25T04:09:54.9142753Z .svelte-kit/output/client/_app/immutable/chunks/CpkHE3jS.js                                                    2.16 kB │ gzip:   1.02 kB
+2026-10-25T04:09:54.9143377Z .svelte-kit/output/client/_app/immutable/chunks/BjY9GhlL.js                                                    2.18 kB │ gzip:   0.99 kB
+2026-10-25T04:09:54.9143995Z .svelte-kit/output/client/_app/immutable/chunks/2jpqND1t.js                                                    2.39 kB │ gzip:   1.27 kB
+2026-10-25T04:09:54.9144614Z .svelte-kit/output/client/_app/immutable/chunks/ChGY0_uL.js                                                    3.60 kB │ gzip:   1.52 kB
+2026-10-25T04:09:54.9145241Z .svelte-kit/output/client/_app/immutable/entry/app.BXKmPbUU.js                                                 4.10 kB │ gzip:   1.73 kB
+2026-10-25T04:09:54.9145859Z .svelte-kit/output/client/_app/immutable/chunks/CNebFBND.js                                                    4.42 kB │ gzip:   2.40 kB
+2026-10-25T04:09:54.9146620Z .svelte-kit/output/client/_app/immutable/chunks/Dae-r7OG.js                                                    8.29 kB │ gzip:   3.19 kB
+2026-10-25T04:09:54.9147294Z .svelte-kit/output/client/_app/immutable/nodes/4.BaeQylUR.js                                                  11.38 kB │ gzip:   3.71 kB
+2026-10-25T04:09:54.9147932Z .svelte-kit/output/client/_app/immutable/nodes/2.CJ17EhTC.js                                                  15.20 kB │ gzip:   5.91 kB
+2026-10-25T04:09:54.9148555Z .svelte-kit/output/client/_app/immutable/nodes/6.VnQOlhGH.js                                                  20.62 kB │ gzip:   6.38 kB
+2026-10-25T04:09:54.9149182Z .svelte-kit/output/client/_app/immutable/chunks/Ds92M5fE.js                                                   27.36 kB │ gzip:  10.61 kB
+2026-10-25T04:09:54.9149926Z .svelte-kit/output/client/_app/immutable/chunks/ClL_YBOq.js                                                   29.47 kB │ gzip:   7.82 kB
+2026-10-25T04:09:54.9150574Z .svelte-kit/output/client/_app/immutable/nodes/3.0GJGaIPX.js                                                  51.87 kB │ gzip:  15.49 kB
+2026-10-25T04:09:54.9151209Z .svelte-kit/output/client/_app/immutable/chunks/BtJZ9FYv.js                                                   57.20 kB │ gzip:  21.68 kB
+2026-10-25T04:09:54.9151836Z .svelte-kit/output/client/_app/immutable/chunks/B4KXZRrM.js                                                  197.80 kB │ gzip:  58.94 kB
+2026-10-25T04:09:54.9152462Z .svelte-kit/output/client/_app/immutable/chunks/DB8HLiLR.js                                                  483.83 kB │ gzip: 144.79 kB
+2026-10-25T04:09:54.9153074Z .svelte-kit/output/client/_app/immutable/chunks/_rkx4fO7.js                                                1,000.38 kB │ gzip: 266.44 kB
+2026-10-25T04:09:54.9153393Z 
+2026-10-25T04:09:54.9153526Z [32m✓ built in 1.58s[39m
+2026-10-25T04:09:55.7590843Z computing gzip size...
+2026-10-25T04:09:55.7649581Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.BZGLGj12.woff2      6.75 kB
+2026-10-25T04:09:55.7650907Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.BoXdMtcr.woff2      6.79 kB
+2026-10-25T04:09:55.7653727Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.Bbz-b3yf.woff     7.35 kB
+2026-10-25T04:09:55.7654866Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.CKkU2Dpt.woff     7.35 kB
+2026-10-25T04:09:55.7656328Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.DqXqCC0q.woff       9.33 kB
+2026-10-25T04:09:55.7657385Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.BoVPHkS0.woff2    9.37 kB
+2026-10-25T04:09:55.7658467Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.DRk46D-x.woff2    9.38 kB
+2026-10-25T04:09:55.7659568Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.C4HEjEaf.woff       9.42 kB
+2026-10-25T04:09:55.7660790Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.CyAY5ZLS.woff2       12.92 kB
+2026-10-25T04:09:55.7661830Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.C2atO-64.woff2       13.01 kB
+2026-10-25T04:09:55.7662900Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BbWidj28.woff        14.02 kB
+2026-10-25T04:09:55.7663981Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.Yta7XZ9C.woff2   14.09 kB
+2026-10-25T04:09:55.7665053Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.BMhMHfrj.woff2   14.18 kB
+2026-10-25T04:09:55.7666197Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.BK6Glc0m.woff        14.29 kB
+2026-10-25T04:09:55.7667345Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.DkJXBcIH.woff        15.76 kB
+2026-10-25T04:09:55.7668662Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.FNmA3REe.woff        15.82 kB
+2026-10-25T04:09:55.7669891Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BrHNak5F.woff2       17.20 kB
+2026-10-25T04:09:55.7671006Z .svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.GZI4o3u0.woff2       17.52 kB
+2026-10-25T04:09:55.7672114Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.lsPpqi9g.woff    17.55 kB
+2026-10-25T04:09:55.7673214Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.CsIYWmWK.woff    17.62 kB
+2026-10-25T04:09:55.7674284Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.CH1kM7og.woff2      20.20 kB
+2026-10-25T04:09:55.7675363Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.DaBc-lu7.woff2      20.30 kB
+2026-10-25T04:09:55.7676755Z .svelte-kit/output/server/.vite/manifest.json                                                               21.24 kB │ gzip:  2.09 kB
+2026-10-25T04:09:55.7677770Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-500-normal.BsRWmXhO.woff2          23.31 kB
+2026-10-25T04:09:55.7678842Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-600-normal.Co1r35X9.woff2          23.39 kB
+2026-10-25T04:09:55.7680870Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.Dk3-quAP.woff       28.26 kB
+2026-10-25T04:09:55.7681964Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.DYeaGGzO.woff       28.28 kB
+2026-10-25T04:09:55.7683045Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-600-normal.2CBVLo0M.woff           31.30 kB
+2026-10-25T04:09:55.7684104Z .svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-500-normal.zIXX3Q-H.woff           31.37 kB
+2026-10-25T04:09:55.7685300Z .svelte-kit/output/server/_app/immutable/assets/_page.MP2YSySK.css                                           0.08 kB │ gzip:  0.09 kB
+2026-10-25T04:09:55.7686436Z .svelte-kit/output/server/_app/immutable/assets/Feedback.BQ8jppjz.css                                        0.14 kB │ gzip:  0.13 kB
+2026-10-25T04:09:55.7687606Z .svelte-kit/output/server/_app/immutable/assets/SessionSecurity.ChAwtUwW.css                                 0.22 kB │ gzip:  0.19 kB
+2026-10-25T04:09:55.7688973Z .svelte-kit/output/server/_app/immutable/assets/_page.CPXwfQRI.css                                           1.13 kB │ gzip:  0.35 kB
+2026-10-25T04:09:55.7690210Z .svelte-kit/output/server/_app/immutable/assets/_page.B145_wih.css                                           1.22 kB │ gzip:  0.53 kB
+2026-10-25T04:09:55.7691232Z [33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+2026-10-25T04:09:55.7691843Z   - vite-plugin-sveltekit-guard (78%)
+2026-10-25T04:09:55.7692211Z   - vite-plugin-svelte:compile (7%)
+2026-10-25T04:09:55.7692624Z   - vite-plugin-sveltekit-virtual-modules (6%)
+2026-10-25T04:09:55.7693248Z See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+2026-10-25T04:09:55.7693824Z [39m
+2026-10-25T04:09:55.7694527Z .svelte-kit/output/server/_app/immutable/assets/_page.CMzqLpuQ.css                                           1.30 kB │ gzip:  0.50 kB
+2026-10-25T04:09:55.7695693Z .svelte-kit/output/server/_app/immutable/assets/EntryButton.CR08NAKm.css                                     1.46 kB │ gzip:  0.64 kB
+2026-10-25T04:09:55.7696937Z .svelte-kit/output/server/_app/immutable/assets/CampaignMaintenance.B88fUJd5.css                             4.18 kB │ gzip:  1.29 kB
+2026-10-25T04:09:55.7698099Z .svelte-kit/output/server/_app/immutable/assets/_page.Osv__d1w.css                                          13.48 kB │ gzip:  2.99 kB
+2026-10-25T04:09:55.7699208Z .svelte-kit/output/server/_app/immutable/assets/_layout.B2RkTGEE.css                                        13.53 kB │ gzip:  3.56 kB
+2026-10-25T04:09:55.7700694Z .svelte-kit/output/server/_app/immutable/assets/CampaignHistory.B4Hf9d8p.css                                45.24 kB │ gzip:  8.43 kB
+2026-10-25T04:09:55.7701828Z .svelte-kit/output/server/chunks/recovery-store.js                                                           0.07 kB │ gzip:  0.08 kB
+2026-10-25T04:09:55.7702880Z .svelte-kit/output/server/chunks/campaign-history.js                                                         0.09 kB │ gzip:  0.08 kB
+2026-10-25T04:09:55.7703893Z .svelte-kit/output/server/chunks/paths.js                                                                    0.12 kB │ gzip:  0.09 kB
+2026-10-25T04:09:55.7704882Z .svelte-kit/output/server/entries/pages/_layout.ts.js                                                        0.13 kB │ gzip:  0.12 kB
+2026-10-25T04:09:55.7705841Z .svelte-kit/output/server/env.js                                                                             0.22 kB │ gzip:  0.14 kB
+2026-10-25T04:09:55.7706841Z .svelte-kit/output/server/entries/pages/_layout.svelte.js                                                    0.23 kB │ gzip:  0.18 kB
+2026-10-25T04:09:55.7707837Z .svelte-kit/output/server/chunks/env.js                                                                      0.28 kB │ gzip:  0.17 kB
+2026-10-25T04:09:55.7708804Z .svelte-kit/output/server/internal.js                                                                        0.40 kB │ gzip:  0.19 kB
+2026-10-25T04:09:55.7710200Z .svelte-kit/output/server/chunks/campaign-session2.js                                                        0.43 kB │ gzip:  0.21 kB
+2026-10-25T04:09:55.7711325Z .svelte-kit/output/server/entries/pages/_error.svelte.js                                                     0.72 kB │ gzip:  0.42 kB
+2026-10-25T04:09:55.7712346Z .svelte-kit/output/server/chunks/internal2.js                                                                0.88 kB │ gzip:  0.39 kB
+2026-10-25T04:09:55.7713452Z .svelte-kit/output/server/entries/pages/diagnostics/_page.svelte.js                                          1.09 kB │ gzip:  0.55 kB
+2026-10-25T04:09:55.7714583Z .svelte-kit/output/server/chunks/command-receipt.js                                                          1.15 kB │ gzip:  0.66 kB
+2026-10-25T04:09:55.7715622Z .svelte-kit/output/server/chunks/index-server.js                                                             1.84 kB │ gzip:  0.68 kB
+2026-10-25T04:09:55.7716825Z .svelte-kit/output/server/chunks/EntryButton.js                                                              1.90 kB │ gzip:  0.81 kB
+2026-10-25T04:09:55.7717881Z .svelte-kit/output/server/chunks/campaign-history2.js                                                        2.23 kB │ gzip:  1.02 kB
+2026-10-25T04:09:55.7718943Z .svelte-kit/output/server/chunks/SessionSecurity.js                                                          3.09 kB │ gzip:  1.31 kB
+2026-10-25T04:09:55.7721052Z .svelte-kit/output/server/chunks/conversation-drafts.js                                                      3.45 kB │ gzip:  1.29 kB
+2026-10-25T04:09:55.7722167Z .svelte-kit/output/server/chunks/recovery-store2.js                                                          3.64 kB │ gzip:  1.25 kB
+2026-10-25T04:09:55.7723606Z .svelte-kit/output/server/chunks/Feedback.js                                                                 4.26 kB │ gzip:  1.59 kB
+2026-10-25T04:09:55.7724630Z .svelte-kit/output/server/chunks/crypto.js                                                                   4.96 kB │ gzip:  1.69 kB
+2026-10-25T04:09:55.7725613Z .svelte-kit/output/server/chunks/exports.js                                                                  5.46 kB │ gzip:  1.73 kB
+2026-10-25T04:09:55.7726605Z .svelte-kit/output/server/chunks/routing.js                                                                  5.87 kB │ gzip:  2.10 kB
+2026-10-25T04:09:55.7727683Z .svelte-kit/output/server/entries/pages/dev/animations/_page.svelte.js                                       6.09 kB │ gzip:  1.98 kB
+2026-10-25T04:09:55.7729004Z .svelte-kit/output/server/chunks/campaign-session.js                                                         7.12 kB │ gzip:  2.35 kB
+2026-10-25T04:09:55.7730502Z .svelte-kit/output/server/chunks/CampaignMaintenance.js                                                     10.45 kB │ gzip:  2.61 kB
+2026-10-25T04:09:55.7731690Z .svelte-kit/output/server/chunks/shared.js                                                                  10.59 kB │ gzip:  3.39 kB
+2026-10-25T04:09:55.7732830Z .svelte-kit/output/server/entries/pages/_page.svelte.js                                                     11.72 kB │ gzip:  3.40 kB
+2026-10-25T04:09:55.7734203Z .svelte-kit/output/server/chunks/internal.js                                                                28.32 kB │ gzip:  8.57 kB
+2026-10-25T04:09:55.7735212Z .svelte-kit/output/server/chunks/utils.js                                                                   31.76 kB │ gzip:  9.35 kB
+2026-10-25T04:09:55.7736257Z .svelte-kit/output/server/entries/pages/gallery/_page.svelte.js                                             32.73 kB │ gzip:  6.92 kB
+2026-10-25T04:09:55.7737590Z .svelte-kit/output/server/entries/pages/campaigns/_page.svelte.js                                           47.68 kB │ gzip:  9.49 kB
+2026-10-25T04:09:55.7738976Z .svelte-kit/output/server/chunks/campaign-navigation.js                                                     50.86 kB │ gzip: 14.93 kB
+2026-10-25T04:09:55.7740158Z .svelte-kit/output/server/remote-entry.js                                                                   54.47 kB │ gzip: 12.01 kB
+2026-10-25T04:09:55.7741096Z .svelte-kit/output/server/chunks/scenarios.js                                                               59.29 kB │ gzip: 11.94 kB
+2026-10-25T04:09:55.7742141Z .svelte-kit/output/server/index.js                                                                         123.93 kB │ gzip: 31.44 kB
+2026-10-25T04:09:55.7743262Z .svelte-kit/output/server/chunks/server.js                                                                 137.81 kB │ gzip: 36.12 kB
+2026-10-25T04:09:55.7744339Z .svelte-kit/output/server/chunks/CampaignHistory.js                                                        311.29 kB │ gzip: 68.76 kB
+2026-10-25T04:09:55.7744852Z 
+2026-10-25T04:09:55.7745034Z [32m✓ built in 4.51s[39m
+2026-10-25T04:09:55.7745500Z 
+2026-10-25T04:09:55.7745708Z Run npm run preview to preview your production build locally.
+2026-10-25T04:09:55.7746020Z 
+2026-10-25T04:09:55.7746144Z > Using @sveltejs/adapter-static
+2026-10-25T04:09:55.7813792Z   Wrote site to "build"
+2026-10-25T04:09:55.7814234Z   ✔ done
+2026-10-25T04:09:55.9282159Z ##[group]Run node scripts/publish-pages.mjs
+2026-10-25T04:09:55.9282482Z [36;1mnode scripts/publish-pages.mjs[0m
+2026-10-25T04:09:55.9284689Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+2026-10-25T04:09:55.9285148Z env:
+2026-10-25T04:09:55.9285348Z   SOURCE_SHA: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:09:55.9285603Z   PR_NUMBER: 53
+2026-10-25T04:09:55.9285788Z   PUBLIC_BASE_PATH: /clusterii/pr53
+2026-10-25T04:09:55.9287816Z   GH_TOKEN: ***
+2026-10-25T04:09:55.9288065Z   DETSYS_INVOCATION_ID: 0b761f4b-4984-4279-b758-ea65f860dcd8
+2026-10-25T04:09:55.9288341Z   DETERMINATE_NIX_KVM: 1
+2026-10-25T04:09:55.9288552Z ##[endgroup]
+2026-10-25T04:09:55.9488316Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T04:09:58.2175353Z From https://github.com/anicolao/clusterii
+2026-10-25T04:09:58.2175833Z  * branch            gh-pages   -> FETCH_HEAD
+2026-10-25T04:09:59.4574792Z  * [new branch]      gh-pages   -> origin/gh-pages
+2026-10-25T04:09:59.4575267Z Preparing worktree (detached HEAD a4ad69c)
+2026-10-25T04:09:59.4575640Z Updating files:  81% (8916/10884)
+2026-10-25T04:09:59.4575952Z Updating files:  82% (8925/10884)
+2026-10-25T04:09:59.4576245Z Updating files:  83% (9034/10884)
+2026-10-25T04:09:59.4576563Z Updating files:  84% (9143/10884)
+2026-10-25T04:09:59.4592171Z Updating files:  85% (9252/10884)
+2026-10-25T04:09:59.4592453Z Updating files:  86% (9361/10884)
+2026-10-25T04:09:59.4592690Z Updating files:  87% (9470/10884)
+2026-10-25T04:09:59.4592906Z Updating files:  88% (9578/10884)
+2026-10-25T04:09:59.4593106Z Updating files:  89% (9687/10884)
+2026-10-25T04:09:59.4593306Z Updating files:  90% (9796/10884)
+2026-10-25T04:09:59.4593542Z Updating files:  91% (9905/10884)
+2026-10-25T04:09:59.4593745Z Updating files:  92% (10014/10884)
+2026-10-25T04:09:59.4593960Z Updating files:  93% (10123/10884)
+2026-10-25T04:09:59.4594158Z Updating files:  94% (10231/10884)
+2026-10-25T04:09:59.4594357Z Updating files:  95% (10340/10884)
+2026-10-25T04:09:59.4594548Z Updating files:  96% (10449/10884)
+2026-10-25T04:09:59.4594750Z Updating files:  97% (10558/10884)
+2026-10-25T04:09:59.4594952Z Updating files:  98% (10667/10884)
+2026-10-25T04:09:59.4595152Z Updating files:  99% (10776/10884)
+2026-10-25T04:09:59.4595347Z Updating files: 100% (10884/10884)
+2026-10-25T04:09:59.4595552Z Updating files: 100% (10884/10884), done.
+2026-10-25T04:10:01.9695258Z To https://github.com/anicolao/clusterii
+2026-10-25T04:10:01.9695677Z    a4ad69c..d7ca979  HEAD -> gh-pages
+2026-10-25T04:10:02.0234272Z ##[group]Run gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+2026-10-25T04:10:02.0234708Z [36;1mgh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"[0m
+2026-10-25T04:10:02.0236963Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+2026-10-25T04:10:02.0237359Z env:
+2026-10-25T04:10:02.0237566Z   SOURCE_SHA: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:10:02.0237818Z   PR_NUMBER: 53
+2026-10-25T04:10:02.0238009Z   PUBLIC_BASE_PATH: /clusterii/pr53
+2026-10-25T04:10:02.0240244Z   GH_TOKEN: ***
+2026-10-25T04:10:02.0240586Z   DETSYS_INVOCATION_ID: 0b761f4b-4984-4279-b758-ea65f860dcd8
+2026-10-25T04:10:02.0240984Z   DETERMINATE_NIX_KVM: 1
+2026-10-25T04:10:02.0241178Z ##[endgroup]
+2026-10-25T04:10:02.0440535Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T04:10:03.6908743Z {"status":"queued","url":"https://api.github.com/repositories/1427003910/pages/builds/latest"}
+2026-10-25T04:10:03.7384563Z ##[group]Run node scripts/verify-pages.mjs "https://anicolao.github.io${PUBLIC_BASE_PATH}/" "$SOURCE_SHA"
+2026-10-25T04:10:03.7385180Z [36;1mnode scripts/verify-pages.mjs "https://anicolao.github.io${PUBLIC_BASE_PATH}/" "$SOURCE_SHA"[0m
+2026-10-25T04:10:03.7387753Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+2026-10-25T04:10:03.7388139Z env:
+2026-10-25T04:10:03.7388336Z   SOURCE_SHA: 3be6f22d17a67960762892fec532a3005862d2fa
+2026-10-25T04:10:03.7388585Z   PR_NUMBER: 53
+2026-10-25T04:10:03.7388766Z   PUBLIC_BASE_PATH: /clusterii/pr53
+2026-10-25T04:10:03.7391116Z   GH_TOKEN: ***
+2026-10-25T04:10:03.7391363Z   DETSYS_INVOCATION_ID: 0b761f4b-4984-4279-b758-ea65f860dcd8
+2026-10-25T04:10:03.7391640Z   DETERMINATE_NIX_KVM: 1
+2026-10-25T04:10:03.7391832Z ##[endgroup]
+2026-10-25T04:10:03.7594310Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T04:20:05.5183448Z file:///home/runner/work/clusterii/clusterii/scripts/verify-pages.mjs:27
+2026-10-25T04:20:05.5183956Z   throw new Error(`Hosted revision did not match ${expected}; last observed ${observed}`);
+2026-10-25T04:20:05.5184289Z         ^
+2026-10-25T04:20:05.5184400Z 
+2026-10-25T04:20:05.5185014Z Error: Hosted revision did not match 3be6f22d17a67960762892fec532a3005862d2fa; last observed source cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1, build cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1
+2026-10-25T04:20:05.5186129Z     at file:///home/runner/work/clusterii/clusterii/scripts/verify-pages.mjs:27:9
+2026-10-25T04:20:05.5186522Z 
+2026-10-25T04:20:05.5186622Z Node.js v24.18.0
+2026-10-25T04:20:05.5262008Z ##[error]Process completed with exit code 1.
+2026-10-25T04:20:05.5408718Z Post job cleanup.
+2026-10-25T04:20:06.0338168Z [0;31m[1m[4mDeterminate Systems, Inc. | Status Status
+2026-10-25T04:20:06.0339484Z 🛠️ monitoring: Patched PHP security release (https://status.determinate.systems/incidents/51ece80b-c4d6-401e-a3bb-cc2811518fc6)
+2026-10-25T04:20:06.0341259Z 🔴 monitoring: eMudhra Intermediate CA Compromise (https://status.determinate.systems/incidents/f7cd1dd4-f0d1-4960-b787-e8077e6d4885)
+2026-10-25T04:20:06.0342336Z See: https://status.determinate.systems/
+2026-10-25T04:20:06.0342791Z 
+2026-10-25T04:20:06.0365034Z [command]/usr/bin/sudo mkdir -p /var/lib/determinate
+2026-10-25T04:20:06.7357167Z Post job cleanup.
+2026-10-25T04:20:06.8059106Z [command]/usr/bin/git version
+2026-10-25T04:20:06.8090499Z git version 2.55.0
+2026-10-25T04:20:06.8124188Z Temporarily overriding HOME='/home/runner/work/_temp/dff013dd-c9bc-4815-976a-bded637aea9e' before making global git config changes
+2026-10-25T04:20:06.8130314Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-25T04:20:06.8131064Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+2026-10-25T04:20:06.8155500Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-25T04:20:06.8183402Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-25T04:20:06.8381917Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-25T04:20:06.8401341Z http.https://github.com/.extraheader
+2026-10-25T04:20:06.8410024Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-25T04:20:06.8438222Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-25T04:20:06.8634205Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-25T04:20:06.8661218Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-25T04:20:06.8986025Z Cleaning up orphan processes
+2026-10-25T04:20:06.9235061Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

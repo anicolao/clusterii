@@ -1847,3 +1847,21 @@ Reviewer: independently downloaded only21 actual/expected/diff PNGs from artifac
 Delegated reviewer continuation; main meta records independent parent checks and further PR79 image dispositions.
 
 Reviewer: independently verified published54 f8fa7f5f and55 acc0b414: seven images match all inspected hashes; actual immutable HEAD/index parent checks pass against3be6f22d andf8fa7f5f respectively; checker/tests unchanged. Continue green stack while current53/54/55 gates run, preserving their handles. Recover protected56 checkpoints in /private/tmp/cluster-pr54-credit-review, verify current disk headroom, integrate current55 preserving exact prompt histories and approved160construction references, run exact-parent/policy checks before publishing. No new production scope, no weakened checks, no GitHub merge. Prioritize any new actionable earlier gate failure. Mainmeta has additional79reviews and independent54/55audit; reconcile attributed logs and push.
+
+## Prompt 279: Fleet integration
+
+Delegated reviewer instruction; main meta records human questions and independent findings.
+
+Reviewer: PR56 99c40f39 publication verified. Continue57 from current56 with previously inspected60Linux candidates after exact source/renderer/hash validation; preserve exact history, run actual-parent/policy checks before pushing. Missing short captures require real generation and inspection. Preserve existing53-56 live/queued gates; prioritize earlier failures. Main meta now records completed79macOS review184/184, Linux not approved; reconcile attributed logs and push. No GitHub merge. Independent56checker verification underway.
+
+## Prompt 280: Stale publication
+
+Delegated reviewer instruction; main meta records human questions and independent findings.
+
+Reviewer: new earlier failure53publication40160719087/job121071498622: Verify served revision waited10min, expected3be6f22d but still served source/buildcd7ed5fd. Prioritize after preserving57working state: diagnose deploy ordering/concurrency and actual hosted revision, repair/redeploy without weakening exact revision verification.53-55application/strict still live, preserve handles. Mainmeta logs precise failure and human progress question; reconcile/push. No merge.
+
+## Prompt 281: Queued deployment
+
+Delegated reviewer independent Pages evidence; main meta retains exact API observations.
+
+Reviewer independent evidence:53 stale publication coincides with Pages deployment40160884684/build121072006435 still QUEUED. Latest Pages build1312331414 building atd7ca979c, created04:10:02Z; verifier expired before deployment ran. Preserve live deployment handle, do not restart solely for timeout. Check gh-pages revision bytes then actual served revision/assets once deployment completes; retain exact check. Mainmeta has evidence.

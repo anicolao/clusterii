@@ -1,0 +1,23 @@
+{
+  "publishedHead": "ede7e84f7c479f5fe1e42276495daf1e06ea689c",
+  "parent": "99c40f39bc183fb302c5d76ad50f0d76e6e890fe",
+  "references": 60,
+  "shortReferences": "absent and unapproved",
+  "promptTests": 22,
+  "policyTests": 16,
+  "actualParentCheck": "passed after final immutable commit; prior cd00d46e failure preserved in ancestry and corrected before push",
+  "requiredRuns": {
+    "application": 40161707968,
+    "strict": 40161707973,
+    "docs": 40161707972,
+    "publication": 40161707982
+  },
+  "shortGeneration": {
+    "run": 40161761149,
+    "source": "fa43916c",
+    "executor": "65b613321db5a9dd08ab874af3c056fb8979d4c9",
+    "expectedImages": 20,
+    "status": "queued",
+    "scope": "One exact existing short real-service fleet-formation journey; original limits, zero retries, max-failures1, generation only. Four dispatch/request tests and exact list-only collection passed. Branch-only tooling not included in PR57."
+  }
+}
