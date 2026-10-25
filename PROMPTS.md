@@ -2124,3 +2124,24 @@ Reviewer: PR53 publication40167553183attempt3 nowSUCCESS; independently gh pr ch
 Delegated reviewer instruction; main meta PR89 desktop disposition.
 
 Reviewer: Independent PR89desktop review complete all13files via9viewed representatives and freshly checked SHA256groups. Approve021close-conflict only; HOLD other12 for inherited background text paint (visible fragments at x20 alongside Economy top/bottom, contact legend and prior acknowledgement). Also013reload and022reopen show unchecked Navigation/Terraforming while selected Investing/Recruiting lies outside internal list viewport; same external-selection reveal defect corrected in87, now adapt to88 bound draft path (local choice remains null when draft mutated). Use shared background hide and external/local selection corrections on proper stack lineage, regenerate affected89candidate family for review; retain single alert/preserved choices/receipts/privacy assertions. Phone13 prior scoped approvals remain; large/short26pending. Independently confirmed combined lab/guidance log8passed1.2m; do not loosen baselines or strict tolerance. Keep54publication recovery first, no competing publication or interruption of healthy work. Record this exact handoff and meta findings in attributed PROMPTS/PROMPT_WORK and commit/push when safe.
+
+
+## Prompt 324: Conflict review completion
+
+Delegated reviewer instruction; main meta PR89 final review and focused Queue finding.
+
+Reviewer: PR89 original 52-image review is now complete. Large13 covered by nine individually viewed representatives and freshly verified SHA256 groups: approve021closed only; hold12Economy-open for contact-legend/background paint. Large013selected Investing is partly clipped;022selected Recruiting entirely outside list viewport. Total scoped disposition16approved36held; large viewed downscaled2048x1152, not native-pixel/full-design approval. Supplemental short018 finding: focused Queue innovation outline is clipped at reader top; include full focused-control/outline geometry and preserve readable accepted-order list in correction verification. Continue existing isolated89fix without duplicate work; regenerate affected captures for inspection before promotion. Fresh CI independently confirms55 now joins56/57 with four nonpublication checks passing; serialize outstanding publication recovery after current62publication, without interrupting live jobs. Record exact handoff and recent meta entries in attributed PROMPTS/PROMPT_WORK and commit/push logs when safe. No merges.
+
+
+## Prompt 325: Forecast selection review
+
+Delegated reviewer instruction; main meta PR90 phone review and inventory.
+
+Reviewer: PR90 phone forecast gallery current10 inspected individually at b5cc4ae5. Approve001gallery-scope only; hold002-010 because selected Investing is outside the internal radio-list viewport while only unchecked Scanning/Navigation show. Forecast cost/effect, paused/pending suppression, applied14ticks/18.6remaining and keyboard-scrolled1.4rate qualification otherwise readable. Carry the shared external-selection correction forward into90 and regenerate affected shared gallery/lab/live families for review; do not interrupt current89/serialized55publication. Independent manifest audit also finds20obsolete forecast PNGs (5per size) absent from current40capture manifests; reconcile active baseline inventory on90 retaining Git history, not as test coverage. Remaining30current gallery images unreviewed. PR62publication independentlySUCCESS on8e683a73; application/strict stilllive. Reconcile exact handoff and recent meta in attributed committed/pushed logs when safe; no merge.
+
+
+## Prompt 326: Green frontier fiftyfive
+
+Delegated reviewer instruction; main meta PR55 green and bounded reading distinction.
+
+Reviewer: Independently verified PR55 all five checks SUCCESS at unchanged fa41e3ecc035755938b8773eb0781f69fd99a95f; green frontier now52-55. PR56 remains four nonpublication passes on111f1b642048de69fd5e5ea0bfa12f91cd0d9330; continue serialized56publication recovery and exact hosted revision/assets verification next, preserving healthy CI. Independently read89reading-corrected failure: short reopen accepted-list bottom646.53125 exceeds reader605; threeother sizes passed, fullset not approved. Keep deliberate reading-position screenshots distinguished from automatic application behavior; do not claim test-helper scrolling fixes application visibility. Earlier5d52short approval remains scoped to those exact hashes. Record handoff/meta findings in attributed committed/pushed logs; no merge.

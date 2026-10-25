@@ -5009,3 +5009,70 @@ Previous turn reviewed guidance large scroll difference and first8phone89files. 
 Previous turn completed phone review.
 
 Reviewer: Independent PR89desktop review complete all13files via9viewed representatives and freshly checked SHA256groups. Approve021close-conflict only; HOLD other12 for inherited background text paint (visible fragments at x20 alongside Economy top/bottom, contact legend and prior acknowledgement). Also013reload and022reopen show unchecked Navigation/Terraforming while selected Investing/Recruiting lies outside internal list viewport; same external-selection reveal defect corrected in87, now adapt to88 bound draft path (local choice remains null when draft mutated). Use shared background hide and external/local selection corrections on proper stack lineage, regenerate affected89candidate family for review; retain single alert/preserved choices/receipts/privacy assertions. Phone13 prior scoped approvals remain; large/short26pending. Independently confirmed combined lab/guidance log8passed1.2m; do not loosen baselines or strict tolerance. Keep54publication recovery first, no competing publication or interruption of healthy work. Record this exact handoff and meta findings in attributed PROMPTS/PROMPT_WORK and commit/push when safe.
+
+
+## Reviewer PR54 fully green and PR89 short review
+
+Previous turn completed desktop review and8strictpasses. Current independently gh pr checks54 confirms all5PASS on42941bef; publication40167675235attempt2SUCCESS/job121123766170. Green frontier52–54. Agent already observedterminalsuccess; no duplicate handoff.55stories40167703810 and58stories40168031952 still live.
+
+Viewed all9distinct short89representatives and freshlyverified13file SHA256groups. Approve021closed conflict; HOLD12Economy-open frames for inherited background acknowledgement/contactlegend fragments at left panel edge, same existing correction handoff. Accepted/scheduled lists and focused conflicts otherwise readable abovefooter;018queue focusoutline top is clipped by reader, include full focused-control geometry in correction verification. No new blanketapproval. PR89total39/52reviewed:15approved24held13largepending. Reconcile notes in next reviewer-attributed committed/pushed ledger.
+
+
+## Reviewer PR89 original review complete
+
+Previous turn verified55strict completion and62live checks. Current inspected tmux first: agent healthy with active89correction, reproduced accepted selection beyond reader. Individually opened all nine large representatives, then independently recomputed all13file SHA256groups. Earlier truncated image pair was reopened and not counted until successful viewing.
+
+Reviewer: PR89 original 52-image review is now complete. Large13 covered by nine individually viewed representatives and freshly verified SHA256 groups: approve021closed only; hold12Economy-open for contact-legend/background paint. Large013selected Investing is partly clipped;022selected Recruiting entirely outside list viewport. Total scoped disposition16approved36held; large viewed downscaled2048x1152, not native-pixel/full-design approval. Supplemental short018 finding: focused Queue innovation outline is clipped at reader top; include full focused-control/outline geometry and preserve readable accepted-order list in correction verification. Continue existing isolated89fix without duplicate work; regenerate affected captures for inspection before promotion. Fresh CI independently confirms55 now joins56/57 with four nonpublication checks passing; serialize outstanding publication recovery after current62publication, without interrupting live jobs. Record exact handoff and recent meta entries in attributed PROMPTS/PROMPT_WORK and commit/push logs when safe. No merges.
+
+
+## Reviewer bound-draft correction source and forecast review start
+
+Previous goal turn completed PR89 original52 scoped review and sent exact supplemental handoff. Current pane confirms healthy active correction run and receipt of handoff. Independently read correction diff through781f164f: await tick plus connected/form ownership guards for local input; one-shot localReveal keyed to bound draft target separates input scrolling from external selection reveal; external reader-only scroll with cleanup, no focus call; shared hidden Economy background. New selected-row/outline checks remain at keyboard selection, accepted reload and conflict reopen. Independently verified failed log locator timeout and781f164f removes only the invalid geometry check after deliberate panel close, retaining receipt checks. This is a justified test-placement correction, not approval of unviewed regenerated images. Short018 full Queue outline assertion still requested and acknowledged.
+
+PR62 exact8e683a73 remains independently live: application40178737904/job121125012179, strict40178737868/job121125012308, publication40178737880/job121125012375; docs and generation passed. No restart or concurrent publication requested.
+
+Started PR90b5cc4ae50ac0c209a5c48dcd73585fcd3df58387 versus89 source review. Read shared cost/estimate, next-effect strings, production cost substitution, Economy ledger wiring, research disclosure and full design review. Estimate is qualified funded ticks from private completed ledger, suppresses pending/paused/capped/bank-transfer/unknown/zero-rate cases. No new authorization/storage; shared cost import uses type-only reverse dependency. Browser evidence and unit boundary tests still to inspect, no PR90 approval. Original broad API file-list output truncated; not considered complete inventory. Next obtain concise production/test inventory and review tests/effects against actual reducers before image work. Current90 inherits uncorrected selected-row/contactlegend concerns; historical approvals in design document are not reused as this review. Reconcile this entry in attributed committed/pushed ledger when safe.
+
+
+## Reviewer PR90 forecast evidence audit
+
+Previous turn reviewed89correction and started90source. Current pane shows active89short focus inspection; no interruption. Read complete90forecast unit test, gallery story and live-order additions; compared cost bounds to rules, effect coefficients to production/observation/combat reducers. Unit coverage checks all8tracks/all10uncapped levels and a28production-tick prediction, but not independently executed this turn. Live additions retain prior receipt/privacy checks and establish unknown-rate/accepted-order forecast suppression plus keyboard disclosure containment; no live capped/zero-rate/completed ETA coverage. Gallery explicitly scoped to reducer-derived specimens, not service evidence. No whole-PR approval.
+
+Freshly verified90gallery manifests:40current images (10per size) all exact SHA256 against source PNGs, extracted only current40 into /tmp/cluster-pr90-review; groups at forecast-groups.json. Each source baseline directory also contains5obsolete differently numbered PNGs,20total absent from current capture manifests/story. Do not count those as current test coverage or promote them; reconcile/remove obsolete active references when integrating90, retaining historical provenance in Git. No image viewed/approved yet this turn. This finding is queued in ledger for next downstream handoff, not an interruption of healthy89correction. Reconcile in attributed committed/pushed logs.
+
+
+## Reviewer PR90 phone forecast visual hold
+
+Previous turn audited forecast source/test evidence and extracted hash-verified40current captures. Current inspected pane first; healthy89full-focus verification active with reproduced5px clip,55publication retryserialized after62success. Opened all10phone originals individually (two per call, no truncation).
+
+Reviewer: PR90 phone forecast gallery current10 inspected individually at b5cc4ae5. Approve001gallery-scope only; hold002-010 because selected Investing is outside the internal radio-list viewport while only unchecked Scanning/Navigation show. Forecast cost/effect, paused/pending suppression, applied14ticks/18.6remaining and keyboard-scrolled1.4rate qualification otherwise readable. Carry the shared external-selection correction forward into90 and regenerate affected shared gallery/lab/live families for review; do not interrupt current89/serialized55publication. Independent manifest audit also finds20obsolete forecast PNGs (5per size) absent from current40capture manifests; reconcile active baseline inventory on90 retaining Git history, not as test coverage. Remaining30current gallery images unreviewed. PR62publication independentlySUCCESS on8e683a73; application/strict stilllive. Reconcile exact handoff and recent meta in attributed committed/pushed logs when safe; no merge.
+
+
+## Reviewer PR89 corrected short set approved
+
+Previous turn completed90phone review. Current pane confirms89corrected generation terminal; independently read /tmp/cluster-research-orders-focus-corrected.log:4passed1.2m, successful exit0. All four original manifests identify clean5d52b1d67a997f432faef897d6816067a25ffef5 and spec1d882c5bcc4f448dce19e93a0498890da1b55845c7701569146ec2a05272c5bb, independently matched git blob. Root /tmp/cluster-research-orders-focus-corrected-originals has52PNGs; freshly hashed against original89 yields44changed8same (12changed each desktop/large/short,8phone). Groups stored /tmp/cluster-pr89-corrected-review-groups.json.
+
+Viewed all8distinct changed short representatives, covering12changed short files (peer010=012=018=020; conflict020=022). Approve all12 scoped short corrections: background text gone; local/restored Investing row/focus and pending Recruiting readable; accepted receipt/scheduled list readable;018full commitment focusoutline now within reader; single conflict remedy and both scheduled orders contained above footer.013/020/022 intentionally capture acknowledgement reading position, not selected-row evidence; row containment tested before reading scroll. Closed021 exact prior approved hash. Total corrected52set20approved (8unchanged plus12changed short),32changed phone/desktop/large pending review.
+
+Read5d52b1d6: focusclip correction is explicitly to test reading helper (nearest scroll after its prior accepted-list scroll), not a new application focus mechanism. Preserve that scope; four passing journeys do not establish all spontaneous app focus behavior. No promotion/fullset approval yet; continue remaining image review. Reconcile findings in attributed committed/pushed logs when safe.
+
+
+## Reviewer PR90 desktop forecast visual review
+
+Previous turn approved12changed short89captures at5d52b1d6. Current pane first shows agent healthy generating successor e93e651c with expanded clipping-ancestor checks; previous approvals apply only to exact prior hashes, not new outputs. Read e93e651c: selected-row checks now include outer ancestors, but reload/reopen additionally programmatically scroll selected row before assertions. This proves deliberate reading-position containment and preserves alert focus/accepted-list bounds; it is not proof that unassisted reload/reopen automatically reveals all content. Keep that scope explicit and inspect regenerated captures rather than treating source-only helper change as production fix.
+
+Switched independent review to90desktop rather than approving superseded89candidate set. Individually opened all10current desktop forecast originals at b5cc4ae5: approve001gallery scope only; hold002-010 for selected Investing hidden inside radio list while unchecked Scanning/Navigation/Terraforming are displayed. Cost/effect, pending/paused suppression, qualified applied ETA and focus indications otherwise readable. No new different defect identified. Together phone+desktop20of40currentgallery reviewed:2approved18held,20large/shortpending. Existing shared-selection correction handoff covers this; no duplicate queued prompt. Reconcile findings in attributed committed/pushed logs when safe.
+
+
+## Reviewer PR55 fully green and reading failure
+
+Previous turn reviewed90desktop and source-scoped89reading checks. Current independently verified55allfivepasses and56fourpasses; read exact short failure, agent actively diagnosing so no duplicate fix request.
+
+Reviewer: Independently verified PR55 all five checks SUCCESS at unchanged fa41e3ecc035755938b8773eb0781f69fd99a95f; green frontier now52-55. PR56 remains four nonpublication passes on111f1b642048de69fd5e5ea0bfa12f91cd0d9330; continue serialized56publication recovery and exact hosted revision/assets verification next, preserving healthy CI. Independently read89reading-corrected failure: short reopen accepted-list bottom646.53125 exceeds reader605; threeother sizes passed, fullset not approved. Keep deliberate reading-position screenshots distinguished from automatic application behavior; do not claim test-helper scrolling fixes application visibility. Earlier5d52short approval remains scoped to those exact hashes. Record handoff/meta findings in attributed committed/pushed logs; no merge.
+
+
+## Reviewer PR90 short forecast review
+
+Previous turn independently confirmed55allfivegreen and handed56serializedpublication recovery to agent. Current pane first confirms healthy agent responding: preserve selection/conflict and accepted-order containment in separate named reading views for short height; distinguish manual reading from automatic inner-list reveal. No duplicate handoff.
+
+Individually opened all10short forecast originals at90b5cc4ae5 from hash-verified manifest extraction. Approve001gallery scope only; hold002-010 for the same hidden selected Investing row (only unchecked Scanning/Navigation visible). Forecast first and End-key views together expose cost/effect, pending/paused explanations, qualified14funded-tick estimate and1.4science assumption; focus/Queue control readable. Ordinary document scroll clips neighboring specimen content, not itself an additional component defect. Currentgallery30/40reviewed:3approved27held10largepending. Existing correction handoff applies, no new blanketapproval or duplicate prompt. Reconcile in attributed committed/pushed logs when safe.
