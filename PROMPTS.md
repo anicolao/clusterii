@@ -1865,3 +1865,9 @@ Reviewer: new earlier failure53publication40160719087/job121071498622: Verify se
 Delegated reviewer independent Pages evidence; main meta retains exact API observations.
 
 Reviewer independent evidence:53 stale publication coincides with Pages deployment40160884684/build121072006435 still QUEUED. Latest Pages build1312331414 building atd7ca979c, created04:10:02Z; verifier expired before deployment ran. Preserve live deployment handle, do not restart solely for timeout. Check gh-pages revision bytes then actual served revision/assets once deployment completes; retain exact check. Mainmeta has evidence.
+
+## Prompt 282: Reorganization integration
+
+Delegated reviewer instruction; main meta records PR57 independent verification and PR80 short background acknowledgement hold.
+
+Reviewer: independent57audit passed22tests, exact56parent, all60inspected hashes. Continue58 from current57 with inspected102Linuxreferences after source/renderer/hash validation; exact-parent and policy checks before publication. Preserve live gates and single queued57short run40161761149; no duplicate generation. Prioritize any earlier completed failure/deployment. Latest mainmeta includes PR80background acknowledgement defect HOLD11short; reconcile attributed review/logs. No merge.

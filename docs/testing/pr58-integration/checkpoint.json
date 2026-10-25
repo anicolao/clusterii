@@ -1,0 +1,45 @@
+{
+  "pr": 58,
+  "head": "01971ad31d3af49389d845a863cb121e52ce6b82",
+  "parent": "ede7e84f7c479f5fe1e42276495daf1e06ea689c",
+  "approvedReferences": 102,
+  "short": "absent/unapproved",
+  "hashVerification": "All102 committed PNG hashes match inspected original index; spec matches each manifest; source helpers/assets/dependencies unchanged",
+  "validation": "Staged and immutable-parent prompt checks passed; policy16tests passed; inherited checker/tests unchanged",
+  "preservedHandles": {
+    "pr53PagesDeployment": 40160884684,
+    "pr57ShortGeneration": 40161761149
+  },
+  "pr80Hold": "11short background acknowledgement views remain held, no promotion or correction claimed",
+  "runs": [
+    {
+      "conclusion": "",
+      "databaseId": 40161964858,
+      "headSha": "01971ad31d3af49389d845a863cb121e52ce6b82",
+      "status": "queued",
+      "workflowName": "Application checks"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40161964902,
+      "headSha": "01971ad31d3af49389d845a863cb121e52ce6b82",
+      "status": "queued",
+      "workflowName": "Documentation checks"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40161964859,
+      "headSha": "01971ad31d3af49389d845a863cb121e52ce6b82",
+      "status": "pending",
+      "workflowName": "Publish review build"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40161964860,
+      "headSha": "01971ad31d3af49389d845a863cb121e52ce6b82",
+      "status": "queued",
+      "workflowName": "Illustrated stories"
+    }
+  ],
+  "currentEarlierStatus": "PR53 app/strict in_progress, publication FAILED; its existing Pages deployment queued. SinglePR57short generation queued. No duplicate dispatch or redeploy."
+}
