@@ -1,0 +1,9 @@
+# PR89 isolated recovery boundary
+
+Isolated investigate/research-orders-visibility based original6b91ed3, pushed e1f274fe. Reproduced restored selection100px below inner aperture, corrected shared background suppression and bound-draft external/local scroll ownership. Full real receipt/replay/conflict/private projection assertions retained. Own newly added assertion was initially misplaced after panel close; preserved failure and scoped it to open states.
+
+Supplemental short018 painted-bound assertion reproduced5px clipping caused by accepted-list test reading scroll. Deliberate nearest commitment reading keeps full focus/control plus complete accepted list. This test-helper change is not an automatic application-viewport fix. All selected-row clipping ancestors subsequently checked. Short reopened selection+alert and complete accepted list cannot fit in one reader; observed41.53125px overflow retained, now separate named reading views preserve both assertions/focus/receipts.
+
+Final bd94bee4 spec8ba7918cac548f644579cd5fbdc17ed3e0598afa43f423b9f7dbe1c622520ae4 fourjourneys1.3m passed56originals,48new/changed8unchanged. Originals/tmp/cluster-research-orders-complete-reading-originals/live-research-orders; exact index adjacent. Manifest dirty:true explicitly retained because only prior untracked focus-corrected review index existed during capture; tracked source/spec committed and unchanged. No baseline promotion; independent review pending. All earlier originals/failures retained. Details and logs in source branch docs/testing/research-orders-visibility.
+
+Green frontier52–55. PR62head8e683a73 published approved160references; publication succeeded, application/strict live. PR56publication40167917644 serialized recovery active, latest API installing dependencies; no restart. PR90 findings retained for later source-bound propagation/inventory reconciliation, no fabricated coverage or uninspected approval.
