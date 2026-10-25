@@ -431,3 +431,5 @@ Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | R
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Review all stellar observation candidates and promote only the new macOS family before strict comparison.
 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Archive exact observation stories and retained regressions; carry scoped visual findings and queued Pages deployment diagnosis.
+
+Prompt 137 | b822799848a3cea0315c72284c3de0968146eab736e829045d87b0911f72e0fc | Dispatch one fresh guarded Linux observation family after four-case collection and both launcher validation.
