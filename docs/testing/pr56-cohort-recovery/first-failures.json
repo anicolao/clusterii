@@ -1,0 +1,334 @@
+[
+  {
+    "mode": "verify",
+    "number": 1,
+    "viewport": "short",
+    "story": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Harness control: Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByText('Your seat is confirmed.', { exact: true })",
+    "waiting": [
+      "getByText('Your seat is confirmed.', { exact: true })"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 2,
+    "viewport": "short",
+    "story": "tests/browser/encryption-choice.story.spec.ts:27:3 \u203a Encryption choice explains unavailable managed keys without silent substitution \u203a Commit the disclosed encryption choice and wait for authoritative campaign creation. \u203a Cipher envoy: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByRole('heading', { name: 'Choose your faction' })",
+    "waiting": [
+      "getByRole('heading', { name: 'Choose your faction' })"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 3,
+    "viewport": "short",
+    "story": "tests/browser/history.story.spec.ts:5:1 \u203a Recover saved campaign records without losing your place \u203a Harness control: Prepare a fixed-catalogue waiting campaign through ordinary sign-in/create/join UI, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling. ",
+    "category": "execution",
+    "error": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+    "locator": null,
+    "waiting": [
+      "getByRole('button', { name: 'Claim your seat', exact: true })"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 4,
+    "viewport": "short",
+    "story": "tests/browser/identity.story.spec.ts:5:1 \u203a Save and recover a commander identity \u203a \u00c9toile selects the Deepseer and saves the chosen identity. \u203a \u00c9toile: settled, contained, exact capture ",
+    "category": "pixel",
+    "error": "Error: expect(Buffer).toMatchSnapshot(expected) failed",
+    "locator": null,
+    "waiting": []
+  },
+  {
+    "mode": "verify",
+    "number": 5,
+    "viewport": "short",
+    "story": "tests/browser/invitation.story.spec.ts:37:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Harness control: Prepare the host's saved identity and one-seat waiting campaign through real sign-in/create/join UI. Grant emulator development access; the test-only loader fixes catalogue entropy, not keys, commands or persistence. ",
+    "category": "execution",
+    "error": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+    "locator": null,
+    "waiting": [
+      "getByRole('button', { name: 'Claim your seat', exact: true })"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 6,
+    "viewport": "short",
+    "story": "tests/browser/invitation.story.spec.ts:262:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Harness control: Prepare two independently authenticated commanders and two admitted seats through real UI, with fixed catalogue input and explicit emulator development access. Save the returning identity once, then sign out through the identity editor. This establishes an existing campaign; it does not claim illustrated admission or hosted Google acceptance. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 7,
+    "viewport": "short",
+    "story": "tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Harness control: Prepare a host's admitted Heliac seat and an independently authenticated Pelagic applicant through ordinary UI. Emulator development claims and fixed catalogue entropy are explicit controls; no production state, pause interval or tick is injected. ",
+    "category": "execution",
+    "error": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+    "locator": null,
+    "waiting": [
+      "getByRole('button', { name: 'Claim your seat', exact: true })"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 8,
+    "viewport": "short",
+    "story": "tests/browser/profile-recovery.story.spec.ts:21:1 \u203a Resolve two-device identity conflict without losing either draft \u203a Sign in on the first device and reach the identity editor. \u203a Commander \u2014 device one: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 9,
+    "viewport": "short",
+    "story": "tests/browser/profile-recovery.story.spec.ts:221:1 \u203a Retry a pending identity command without duplicate effects or draft loss \u203a Sign in and reach the real identity editor. \u203a Commander: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 10,
+    "viewport": "short",
+    "story": "tests/browser/profile-recovery.story.spec.ts:435:1 \u203a Restore entry focus after keyboard learning and identity editing \u203a Sign in through Play and open identity editing. \u203a Commander: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 11,
+    "viewport": "short",
+    "story": "tests/browser/receipt-recovery.story.spec.ts:52:1 \u203a A mismatched receipt preserves the identity draft until a fresh acknowledged save \u203a Save the first identity and wait for its authoritative acknowledgement. \u203a Receipt commander: settled, contained, exact capture ",
+    "category": "pixel",
+    "error": "Error: expect(Buffer).toMatchSnapshot(expected) failed",
+    "locator": null,
+    "waiting": []
+  },
+  {
+    "mode": "verify",
+    "number": 12,
+    "viewport": "short",
+    "story": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByRole('heading', { name: 'Choose your faction' })",
+    "waiting": [
+      "getByRole('heading', { name: 'Choose your faction' })"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 13,
+    "viewport": "short",
+    "story": "tests/browser/return-briefing.story.spec.ts:31:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Harness control: Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByRole('heading', { name: 'Choose your faction', exact: true })",
+    "waiting": [
+      "getByRole('heading', { name: 'Choose your faction', exact: true })"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 14,
+    "viewport": "short",
+    "story": "tests/browser/selected-history.story.spec.ts:41:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "verify",
+    "number": 15,
+    "viewport": "short",
+    "story": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a Harness control: Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 1,
+    "viewport": "short",
+    "story": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Harness control: Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByText('Your seat is confirmed.', { exact: true })",
+    "waiting": [
+      "getByText('Your seat is confirmed.', { exact: true })"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 2,
+    "viewport": "short",
+    "story": "tests/browser/encryption-choice.story.spec.ts:27:3 \u203a Encryption choice explains unavailable managed keys without silent substitution \u203a Commit the disclosed encryption choice and wait for authoritative campaign creation. \u203a Cipher envoy: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByRole('heading', { name: 'Choose your faction' })",
+    "waiting": [
+      "getByRole('heading', { name: 'Choose your faction' })"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 3,
+    "viewport": "short",
+    "story": "tests/browser/history.story.spec.ts:5:1 \u203a Recover saved campaign records without losing your place \u203a Harness control: Prepare a fixed-catalogue waiting campaign through ordinary sign-in/create/join UI, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling. ",
+    "category": "execution",
+    "error": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+    "locator": null,
+    "waiting": [
+      "getByRole('button', { name: 'Claim your seat', exact: true })"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 4,
+    "viewport": "short",
+    "story": "tests/browser/invitation.story.spec.ts:37:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Harness control: Prepare the host's saved identity and one-seat waiting campaign through real sign-in/create/join UI. Grant emulator development access; the test-only loader fixes catalogue entropy, not keys, commands or persistence. ",
+    "category": "execution",
+    "error": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+    "locator": null,
+    "waiting": [
+      "getByRole('button', { name: 'Claim your seat', exact: true })"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 5,
+    "viewport": "short",
+    "story": "tests/browser/invitation.story.spec.ts:262:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Harness control: Prepare two independently authenticated commanders and two admitted seats through real UI, with fixed catalogue input and explicit emulator development access. Save the returning identity once, then sign out through the identity editor. This establishes an existing campaign; it does not claim illustrated admission or hosted Google acceptance. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 6,
+    "viewport": "short",
+    "story": "tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Harness control: Prepare a host's admitted Heliac seat and an independently authenticated Pelagic applicant through ordinary UI. Emulator development claims and fixed catalogue entropy are explicit controls; no production state, pause interval or tick is injected. ",
+    "category": "execution",
+    "error": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+    "locator": null,
+    "waiting": [
+      "getByRole('button', { name: 'Claim your seat', exact: true })"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 7,
+    "viewport": "short",
+    "story": "tests/browser/profile-recovery.story.spec.ts:21:1 \u203a Resolve two-device identity conflict without losing either draft \u203a Sign in on the first device and reach the identity editor. \u203a Commander \u2014 device one: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 8,
+    "viewport": "short",
+    "story": "tests/browser/profile-recovery.story.spec.ts:221:1 \u203a Retry a pending identity command without duplicate effects or draft loss \u203a Sign in and reach the real identity editor. \u203a Commander: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 9,
+    "viewport": "short",
+    "story": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: player action ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByRole('heading', { name: 'Choose your faction' })",
+    "waiting": [
+      "getByRole('heading', { name: 'Choose your faction' })"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 10,
+    "viewport": "short",
+    "story": "tests/browser/return-briefing.story.spec.ts:31:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Harness control: Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByRole('heading', { name: 'Choose your faction', exact: true })",
+    "waiting": [
+      "getByRole('heading', { name: 'Choose your faction', exact: true })"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 11,
+    "viewport": "short",
+    "story": "tests/browser/selected-history.story.spec.ts:41:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 12,
+    "viewport": "short",
+    "story": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a Harness control: Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  },
+  {
+    "mode": "generate",
+    "number": 13,
+    "viewport": "short",
+    "story": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover an interrupted sign-out without losing saved identity \u203a Harness control: Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft. ",
+    "category": "execution",
+    "error": "Error: expect(locator).toBeVisible() failed",
+    "locator": " getByLabel('Commander name')",
+    "waiting": [
+      "getByLabel('Commander name')"
+    ]
+  }
+]
