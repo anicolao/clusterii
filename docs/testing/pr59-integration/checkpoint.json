@@ -1,0 +1,23 @@
+{
+  "pr": 59,
+  "head": "92b9b88f",
+  "captureSource": "4fb090d67ea8ef65459a56cc723c54daef4e282f",
+  "spec": "3043bb7b122ed00f08ce904c794ce908b285e91fc903d32024870b39df0985d1",
+  "local": {
+    "journeys": 4,
+    "originals": 88,
+    "duration": "1.9m",
+    "root": "/tmp/cluster-pr59-clearance-4fb090d6/stories/live-fleet-cancellation",
+    "review": "Implementer inspected four corrected017 views; independent full-family andLinux review pending"
+  },
+  "held": "Original desktop017 remains held; other65 source applicability requires changed-output comparison; no cancellation references promoted",
+  "boundedLinux": {
+    "run": 40162403768,
+    "executor": "5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba",
+    "source": "d5d412eb",
+    "expectedImages": 88,
+    "status": "queued",
+    "validation": "Four dispatcher/request tests and exact four-case collection passed; real original story and budgets retained"
+  },
+  "earlier": "PR53 publication FAILED, Pages40160884684 queued; app/strict live. PR57short40161761149 queued. No duplicate dispatch/restart."
+}

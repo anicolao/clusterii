@@ -4351,4 +4351,28 @@ Reviewer handoff: independently verified57ede7e84f22tests, actual56base and all6
 ## Reviewer PR80 desktop inspection completed
 
 Viewed all11 distinct novel desktop originals at326de8ba:016open,017/018/019rules (020 shares019 exactblob),021close,022invalid,023draft,024accepted,025recovered,031applied,032returnaftersettlement. Covers12 novel-file references in new-index.json. Same global acknowledgement defect confirmed:024 exposes clipped trailing `ders.` right of marketpanel nearx644y98; earlier states show small left-edge notice fragments. HOLD11desktop market references pending same fix; approve only032constructionreturn whose quote80/balance65 and actionrail remain readable/contained. Accepted receipt, help and applied focus within foreground panel otherwise readable. PR80current totals:15approved novel macOS files,22held short/desktop market files,12large novel references uninspected. All45distinct originals extracted unchanged; noLinuxapproval. Agent58integration healthy;53live tests preserved.
+## Reviewer PR58 publication verified and PR80 large hold
+
+Remote58 now01971ad31d3af49389d845a863cb121e52ce6b82. Checker/tests identical to independently tested57. Exported checker into isolated exactHEAD/index/tmp/pr58-independent-ct2phnaw and Nix Node actual --base ede7e84f7c479f5fe1e42276495daf1e06ea689c passed. All102 committed fleet-reorganization PNG SHA256 hashes equal previously inspected originals. No fullCIgreen claim; Pages40160884684 remainsqueued.
+
+Individually viewed PR80large024accept at326de8ba: duplicate acknowledgement is visibly clipped along top of market panel. HOLD this exactimage. Remaining11large novel references uninspected. Totals15approved,23held,11uninspected novelmacOSfiles.3840x2160displayed2048x1152compositionlimit, noLinuxapproval.
+
+Reviewer handoff:58independent exact-parent/hashes verified. Continue59 from current58 but preserve known HOLD desktop017-released-draft-1-fleet-marshal.png in /tmp/cluster-pr59-reviewer-candidates: focus outline overlaps status text by6px (textbottom930,outline924); previous scopedCSS missed childFeedback. Fix layout at source and obtain new inspected capture; do not promote that held image. Other65Linuxreferences previously inspected require current-source validation. Missing short remains realgeneration/review work. Keep earlier gates and queued57short/53Pages handles; prioritize completed failures. Latest PR80hold expands to23short/desktop/large references as recordedmainmeta. Reconcile logs and push; no merge.
+
+## Reviewer PR80 novel-image inspection complete
+
+Individually viewed remaining8large representatives:016open,017rules(covers017–020exactblob),021close,022invalid,023draft,025recovered,031applied,032constructionreturn. Together with prior024accept, all9large distinct originals/12novelfiles inspected. HOLD11large market references for background acknowledgement composition defect; approve032constructionreturn with completedcamp,80quote65balance/actionrailcontained. Large3840x2160displayed2048x1152limitsreviewtocomposition; foregroundfacts contained, backgroundnotificationlineclippedbehindpanel visible.
+
+All49novelPR80macOSPNGfiles (45distinctSHA) now inspected.16approved (13phone+3constructionreturns),33heldmarket desktop/short/large. No unseen novel image approval, noLinuxapproval. Reused predecessorblobfiles remain existing79review, not newly generated approval. Fix duplicated global acknowledgement painting when economy instrument active, retain active instrument accessible status, then inspect regenerated affectedimages. Source326de8ba9bd437bba7de86c87995587a59fa4e9d,index/tmp/cluster-pr80-review/new-index.json.
+## Reviewer PR59 corrected released-draft inspection
+
+Independently read4fb090d6 painted-focus clearance assertion and fca92e70 child Feedback selector fix. Existing intended paragraph margin now applies within SystemFleets via :global(p); no action or focus weakening. Individually viewed017-released-draft-1-fleet-marshal.png at phone, desktop, short and large. Cancellation acknowledgement readable and clears visible gold focus outline at every size. Approve these four exact macOS captures only; large3840x2160 displayed2048x1152 limits composition review. Other changed captures require inspection; historical held Linux017 remains unapproved. Agent moved results after viewing; first hash read failed before writing log, recovered retained originals at /tmp/cluster-pr59-clearance-4fb090d6/stories/live-fleet-cancellation.
+
+Inspected hashes:
+phone: cd2990e792182e8e2d82263aa1f17450ed80fe1f6ed212e24fc2a51f49f68215
+desktop: 8baf1fb3498fa6c753c4c76b591fbb19334f79362541916fcd5b32db1b2502b6
+short: e905386df19d6b0b04c6a035794f532ffb6ae789243e4196cb6b80ee22e06a00
+large: 835fa9c6fe58add00ff57ee363e4940a2cd0a39482fd965b5827440d6f210667
+
+53strict40160719097/job121071498782 live exact verification; Pages40160884684/job121072006435 queued no steps. Preserve handles. Agent published59correction92b9b88f and preparing one source-bound Linux generation; healthy work not interrupted. Reconcile this review into attributed history and push logs.
 
