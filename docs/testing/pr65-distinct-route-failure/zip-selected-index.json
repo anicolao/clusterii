@@ -1,0 +1,194 @@
+[
+  {
+    "path": "ci-evidence/nix-renderer/browser-path.txt",
+    "crc32": 503735925,
+    "compressed": 41,
+    "bytes": 49
+  },
+  {
+    "path": "ci-evidence/nix-renderer/image-identity.txt",
+    "crc32": 4285110663,
+    "compressed": 100,
+    "bytes": 144
+  },
+  {
+    "path": "ci-evidence/nix-renderer/image-inspect.json",
+    "crc32": 855921684,
+    "compressed": 948,
+    "bytes": 2411
+  },
+  {
+    "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+    "crc32": 3656739322,
+    "compressed": 403,
+    "bytes": 1491
+  },
+  {
+    "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+    "crc32": 577907286,
+    "compressed": 1106,
+    "bytes": 6729
+  },
+  {
+    "path": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/error-context.md",
+    "crc32": 3296900751,
+    "compressed": 3502,
+    "bytes": 10056
+  },
+  {
+    "path": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal-actual.png",
+    "crc32": 2904283493,
+    "compressed": 198662,
+    "bytes": 201139
+  },
+  {
+    "path": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal-diff.png",
+    "crc32": 822118861,
+    "compressed": 78198,
+    "bytes": 101928
+  },
+  {
+    "path": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal-expected.png",
+    "crc32": 1056587566,
+    "compressed": 198610,
+    "bytes": 201097
+  },
+  {
+    "path": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/trace.zip",
+    "crc32": 189139261,
+    "compressed": 13722324,
+    "bytes": 13771685
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+    "crc32": 1384265194,
+    "compressed": 295,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+    "crc32": 1384265194,
+    "compressed": 295,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+    "crc32": 1384265194,
+    "compressed": 295,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/015-formed-fleet-1-fleet-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/015-formed-fleet-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/016-open-route-1-fleet-marshal.layout.json",
+    "crc32": 2786787995,
+    "compressed": 291,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/016-open-route-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/017-choose-waypoint-1-fleet-marshal.layout.json",
+    "crc32": 2786787995,
+    "compressed": 291,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/017-choose-waypoint-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/018-reject-distant-leg-1-fleet-marshal.layout.json",
+    "crc32": 2786787995,
+    "compressed": 291,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/018-reject-distant-leg-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/019-repair-route-1-fleet-marshal.layout.json",
+    "crc32": 2786787995,
+    "compressed": 291,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/019-repair-route-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/021-pending-route-1-fleet-marshal.layout.json",
+    "crc32": 2786787995,
+    "compressed": 291,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/021-pending-route-2-independent-marshal.layout.json",
+    "crc32": 824561816,
+    "compressed": 289,
+    "bytes": 2070
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal.layout.json",
+    "crc32": 2786787995,
+    "compressed": 291,
+    "bytes": 2068
+  },
+  {
+    "path": "test-results/stories/interrupted-fleet-route/short/linux-arm64/FAILED.json",
+    "crc32": 2571337575,
+    "compressed": 2975,
+    "bytes": 15861
+  }
+]

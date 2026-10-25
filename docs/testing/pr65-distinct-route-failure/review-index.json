@@ -1,0 +1,57 @@
+{
+  "run": 40197661962,
+  "head": "48b9f7caa2c4c328b7af97ec21d5f30f96a50443",
+  "capturedSource": "7bca6b3053034e01f46e4cc7114271d1ab6df3e2",
+  "capturedSourceProductTestsWorkflowsEquivalent": true,
+  "counts": {
+    "phone": {
+      "passed": 41,
+      "skipped": 2
+    },
+    "desktop": {
+      "passed": 41,
+      "skipped": 2
+    },
+    "large": {
+      "passed": 41,
+      "skipped": 2
+    },
+    "short": {
+      "passed": 39,
+      "skipped": 2,
+      "failed": 2
+    }
+  },
+  "failures": [
+    {
+      "frame": "maintenance003",
+      "pixels": 53332,
+      "status": "approved correction in PR63"
+    },
+    {
+      "frame": "022-reload-pending-route-1-fleet-marshal",
+      "pixels": 237,
+      "status": "distinct factual label change; not approved"
+    }
+  ],
+  "triple": [
+    {
+      "kind": "expected",
+      "path": "/tmp/cluster-pr65-route-failure/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal-expected.png",
+      "sha256": "69232ba8f28745bcdc2a7812d4342b6541fd7110424b08873566c4578cc3eab4"
+    },
+    {
+      "kind": "actual",
+      "path": "/tmp/cluster-pr65-route-failure/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal-actual.png",
+      "sha256": "5b462fc83812a737e8d62e3c65fdf6e4833215c210cf137efa416e8c50e5f905"
+    },
+    {
+      "kind": "diff",
+      "path": "/tmp/cluster-pr65-route-failure/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal-diff.png",
+      "sha256": "7924cb39771b7cc7e3043ea8ac3418ad276d49948d56e1a1a145ed43e778c90f"
+    }
+  ],
+  "trace": "/tmp/cluster-pr65-route-failure/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-short/trace.zip",
+  "traceCRCVerified": true,
+  "observation": "Only visible difference is Koit ownership: expected Unclaimed, actual Unknown; not raster-only. FleetRoute ownership uses own or observed orbit else Unknown. Server observationDraw includes campaign ID and user ID, which vary across runs. Catalogue fixture fixes seed only. This is an evidence-supported nondeterminism hypothesis, not proof of this particular stored draw or a production defect. Do not replace baseline or invent intelligence."
+}
