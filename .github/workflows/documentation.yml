@@ -11,10 +11,17 @@ permissions:
 jobs:
   documentation:
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
       - name: Check step zero rules and examples
         run: python3 scripts/check-step-zero.py
       - name: Test prompt enforcement
