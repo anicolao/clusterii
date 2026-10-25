@@ -8,10 +8,10 @@
   ],
   "description": "Four saved commanders submit real research orders through keyboard controls. Receipts bind original payloads and effective ticks. Reload recovers accepted authority; a second device holds its original command while another order makes its revision stale for rejection. The guarded demo clock changes only designated domain time. No completion, overflow or hosted acceptance is claimed.",
   "source": {
-    "commit": "ea4a002a94cb98a7db13a247e3554050bb3e9948",
+    "commit": "20b407556aa42669e785b5709d14b3173dffa9f6",
     "dirty": false,
     "spec": "tests/browser/research-orders.story.spec.ts",
-    "specSha256": "1928a6d6c277a895f22aab0341797dd8c5ccff3b087378c9020b4cf9fa73912c"
+    "specSha256": "8ba7918cac548f644579cd5fbdc17ed3e0598afa43f423b9f7dbe1c622520ae4"
   },
   "mode": "verify",
   "status": "passed",
@@ -331,6 +331,13 @@
           "player": "Market envoy · second device",
           "image": "022-reopen-conflict-panel-1-market-envoy-second-device.png",
           "verifications": []
+        },
+        {
+          "player": "Market envoy · second device accepted orders",
+          "image": "022-reopen-conflict-panel-2-market-envoy-second-device-accepted-orders.png",
+          "verifications": [
+            "A separate bounded reading view shows the complete accepted-order list and focused conflict without changing choice or authority."
+          ]
         }
       ]
     }

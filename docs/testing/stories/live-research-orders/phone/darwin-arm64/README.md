@@ -205,3 +205,9 @@ Acknowledged outcome: Panel ownership returns without duplicating the error or s
 ### Viewpoint: Market envoy · second device
 
 [![Reopen Economy and review the preserved recruiting choice with a single in-panel remedy. — Market envoy · second device](../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-reopen-conflict-panel-1-market-envoy-second-device.png)](../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-reopen-conflict-panel-1-market-envoy-second-device.png)
+
+### Viewpoint: Market envoy · second device accepted orders
+
+- [x] A separate bounded reading view shows the complete accepted-order list and focused conflict without changing choice or authority.
+
+[![Reopen Economy and review the preserved recruiting choice with a single in-panel remedy. — Market envoy · second device accepted orders](../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-reopen-conflict-panel-2-market-envoy-second-device-accepted-orders.png)](../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-reopen-conflict-panel-2-market-envoy-second-device-accepted-orders.png)

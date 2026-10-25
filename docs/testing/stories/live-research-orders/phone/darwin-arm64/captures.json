@@ -2,17 +2,17 @@
   {
     "image": "010-choose-without-sending-1-market-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/010-choose-without-sending-1-market-envoy.png",
-    "actualSha256": "f711e70a94cc77fc6f2b3a9b7e2d31749399c34020d13f7e36cbeaf8f79728b8"
+    "actualSha256": "0f0e3d5f1ee12d854648f7b28fa5e674600983954f4b4832c3b04afe661c67c4"
   },
   {
     "image": "010-choose-without-sending-2-independent-investor.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/010-choose-without-sending-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
     "image": "011-restore-panel-choice-1-market-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/011-restore-panel-choice-1-market-envoy.png",
-    "actualSha256": "f711e70a94cc77fc6f2b3a9b7e2d31749399c34020d13f7e36cbeaf8f79728b8"
+    "actualSha256": "e128b3784e89f7c22d453614271b45575f805426cdab36541491478219fdaa62"
   },
   {
     "image": "012-queue-investing-1-market-envoy.png",
@@ -22,12 +22,12 @@
   {
     "image": "012-queue-investing-2-independent-investor.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/012-queue-investing-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
     "image": "013-reload-accepted-order-1-market-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/013-reload-accepted-order-1-market-envoy.png",
-    "actualSha256": "af1cc9d1d3dcfa751c0a4c8ff62344421175dea758b0fbe06a72238ea2401a1c"
+    "actualSha256": "828e82537f04389f1cb535de7661491bcea6fda804a38bbe7256cfd80183a1b5"
   },
   {
     "image": "016-submit-held-choice-1-market-envoy-second-device.png",
@@ -42,7 +42,7 @@
   {
     "image": "018-switch-current-device-2-independent-investor.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/018-switch-current-device-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
     "image": "020-review-stale-rejection-1-market-envoy-second-device.png",
@@ -52,7 +52,7 @@
   {
     "image": "020-review-stale-rejection-2-independent-investor.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/020-review-stale-rejection-2-independent-investor.png",
-    "actualSha256": "39336bba603e3d951fdaacc014db500655565ab8313badcd398efcab00a57f4b"
+    "actualSha256": "cdaed00cd14304d98d06bf44761a9d80765a7623d1f99c5e3d8e1e44f40a6bed"
   },
   {
     "image": "021-close-conflict-panel-1-market-envoy-second-device.png",
@@ -62,6 +62,11 @@
   {
     "image": "022-reopen-conflict-panel-1-market-envoy-second-device.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-reopen-conflict-panel-1-market-envoy-second-device.png",
-    "actualSha256": "bbdc06b4c6b8d429bd56a393dab99f1fdf14204f6b6cc6be7f2cbb6da98d4ca5"
+    "actualSha256": "d52efac4c90cd4b6e2076c5e69ff5d309996180ba9d6da6edeecd4f75c88b193"
+  },
+  {
+    "image": "022-reopen-conflict-panel-2-market-envoy-second-device-accepted-orders.png",
+    "baseline": "../../../../../../tests/browser/story-baselines/live-research-orders/phone/darwin-arm64/022-reopen-conflict-panel-2-market-envoy-second-device-accepted-orders.png",
+    "actualSha256": "d52efac4c90cd4b6e2076c5e69ff5d309996180ba9d6da6edeecd4f75c88b193"
   }
 ]
