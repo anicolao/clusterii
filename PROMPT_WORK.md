@@ -461,3 +461,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | S
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review and promote only the intentional observation label candidates with matching clean provenance before strict verification.
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 72 exact label captures and retained service/browser regressions; carry the independent sampled review and remaining gates.
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 67 and its predecessor in the delivery acceptance table with an explicitly unverified current-head preview.
+
+Prompt 159 | 9dd12b26735f231849160ebce55dd865dfe8b16214285ff3c2405787a23b3ba5 | Retain metadata-only separator proof and isolated unchanged fleet test pass; preserve original timeout and pending PR66 reproduction.
