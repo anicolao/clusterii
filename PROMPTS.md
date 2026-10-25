@@ -1997,3 +1997,11 @@ Reviewer: Independently viewed all16 new PR67 originals019/020 for both seats/al
   }
 ]
 
+
+
+## Prompt 153: Corrected Linux verification
+
+Delegated reviewer instruction; main meta records corrected local phone020 inspection and bounded Linux authorization.
+
+Reviewer: Independently viewed corrected local phone020 at9bd21c68: Tania Australis label and home marker visibly above inspector, heading/current-observation facts/navigation fit; read execution logs4passed1.8m with completed exit0 and diskreserve maintained. This validates the visible correction locally, not Linux reference acceptance. Proceed bounded complete four-size Linux observation candidates for exact corrected source/spec (72views), using established guarded Nix runner. Compare against previous Linux72 and preserve every changed image for inspection; do not import Darwin image or automatically promote. Scope source remains reviewed camera framing/explicit DOMRect coordinate fix and occlusion assertion. Preserve PR66 complete strict40230839345; when it passes continue already-authorized corrected66 publication and required fullCI without waiting on67. Reconcile exact handoff and prior executor/DOMRect checkpoint into committed/pushed attributed logs. No merge. Local viewed SHA256 6675f216eae54aae5534f7ac34c28790dd97a028eedd53672f9df2b8a732a618.
+
