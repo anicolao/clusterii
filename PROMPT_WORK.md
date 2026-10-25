@@ -511,3 +511,5 @@ Prompt 166 | 566bf6278f6fc025093203d2157c7285eb02ca16eb928c5b6c5c50b047dbe918 | 
 Prompt 166 | 566bf6278f6fc025093203d2157c7285eb02ca16eb928c5b6c5c50b047dbe918 | Retain all101 exact Linux scene captures and source-bound manifests, verify published parent identity, and publish authorized PR68 integration.
 
 Prompt 169 | 9b5698f4be82eab608c463aca9cad83dfb25952e99ec02da5460c12674e43008 | Incorporate published68 history and complete strict evidence while preserving tested69 code and all inherited references.
+
+Prompt 169 | 9b5698f4be82eab608c463aca9cad83dfb25952e99ec02da5460c12674e43008 | Import only76 independently inspected Linux contact PNGs with exact hashes and renderer provenance, retaining all inherited references.
