@@ -433,3 +433,5 @@ Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | 
 Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Validate exact two-pass four-size pinned Linux route launcher, separate evidence and strict repeat image/acquisition fingerprint comparison.
 
 Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Align reused diagnostic labels with exact route repeat dispatch before issuing the single fresh request.
+
+Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Request one guarded two-pass complete four-size route repeatability run with fixed source/spec and fresh retained evidence.
