@@ -2075,3 +2075,24 @@ Reviewer: PR87 source review at7423f669 complete for new research guidance story
 Delegated reviewer instruction; main meta PR87 guidance dispositions and idle handoff.
 
 Reviewer:86strict4journeys64exact confirmed and agent idle after42aa191a. While live Pages40175189456 and62candidate40172866002 remain queued, proceed with isolated87 research queue visibility correction based7423f669, including already reviewed shared background suppression. Reproduce phone011 clipped Queue scanning using a meaningful full-control/ancestor-clipping assertion before fixing; preserve test budgets and thresholds. Then fix layout/scroll and generate allfour sizes for independent review, no uninspected promotion. Main meta now contains complete phone/short/desktop guidance disposition:36reviewed13approved23held;12large+96lab remain. Prioritize hosted exact revision/assets check and53publication recovery when live deployment completes, no competing publication or restart of live handles. Use established Nix, inspect actual Pantheon tests/e2e guidance if adding/reorganizing stories. Reconcile latest review notes, attribute delegated instructions, commit/push evidence. No merge or feature expansion.
+
+
+## Prompt 317: Partial guidance review
+
+Delegated reviewer instruction; see main meta Reviewer corrected research short approval.
+
+Reviewer: Corrected research phone and short review now complete:22 changed originals approved by independent individual/hash inspection;4 total unchanged retain earlier approval,22 changed desktop/large still pending. Do not promote unreviewed sizes. See latest main meta entries and /tmp/cluster-research-corrected-groups.json. While reviewer finishes remaining images, inspect live PR62 candidate40172866002 progress and collect its terminal evidence when available; preserve live Pages40175189456 and prioritize exact hosted53 revision/assets verification and unchanged-head publication recovery when deployed. No competing publication/restarts. Reconcile new review notes into attributed committed/pushed logs. No merge.
+
+
+## Prompt 318: Guidance approval
+
+Delegated reviewer instruction; see main meta Reviewer corrected research guidance review complete.
+
+Reviewer: Completed independent corrected research guidance review for0f81bd39 originals. All44 changed files approved for scoped regression,4 byte-identical closed-owner originals retain prior approval; inventory /tmp/cluster-research-corrected-groups.json. Large10distinct representatives covering11files inspected at downscaled2048x1152: layout/content approval only, not native-pixel/full-design certification. Full chosen focus/effect/queue controls visible; background fragments removed. Promote only these exact44 on isolated research recovery branch and run strict four-size guidance verification; retain source/evidence and attributed logs, commit/push. Separate88 unreviewed lab originals remain unapproved; no Linux/downstream blanket approval. Preserve live62candidate and Pages handles and prioritize53publication recovery once deployed. No merge.
+
+
+## Prompt 319: External selection
+
+Delegated reviewer finding; see main meta PR87 lab scheduled/applied inspection.
+
+Reviewer: New PR87 lab finding after inspecting all eight phone004-scheduled/005-applied standard/reduced selection/outcome originals: HOLD these8. Investing target/action/result correct but selected Investing radio remains outside scroll-list aperture; visible Scanning/Navigation both unchecked. Source7423f669 CampaignResearch only reveals label on input focus/change, no reveal for externally supplied target/orders. Investigate real component initialization/external target updates and lab state transitions after current approved guidance strict run. Keep selected row visible within its own scroller without stealing focus or jumping outer page, if reproduction confirms. Add meaningful regression and regenerate affected lab captures for inspection, not blanket approval. Existing44guidance approvals stand for exact retained files; any changed regenerated images need fresh comparison. Record attributed finding and commit/push logs. Preserve live53Pages and62candidate, no restarts or merges.
