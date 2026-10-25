@@ -1799,3 +1799,9 @@ Reviewer: independently verified all26 PNG hashes in published cd7ed5fd against 
 Delegated reviewer PR77 scoped macOS disposition; main meta holds exact source/image groups and resize limits.
 
 Reviewer: completed remaining12 PR77 changed route macOS image inspections, so all31 new/intentionally changed views now have independent scoped approval at e40a3d54. Main meta-prompts.md records exact scope and resize limits; no Linux or inherited blanket approval. Reconcile this latest entry into attributed committed/pushed logs. Existing53/54/55 strict APIs confirm Exact verification in_progress; retain these jobs and green-stack priority. No new implementation, duplicate generation or merge.
+
+## Prompt 271: Help review
+
+Delegated reviewer PR78 code and partial macOS image disposition; main meta records source, SHA groups and unreviewed scopes.
+
+Reviewer: main meta-prompts.md now records PR78 full code review and18of24 new help macOS image approvals (phone/desktop/short), exact source a2d0d2fc, SHA groups and scoped limitations. No large, other changed route or Linux approval yet. Reconcile these two latest review entries into attributed committed/pushed logs at next checkpoint. Continue existing53-55 green-stack gates without new implementation or duplicate CI. No merge.
