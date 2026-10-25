@@ -1,0 +1,15 @@
+# Existing candidate and publication checkpoint
+
+Reviewer Prompt302 delegates continuing current53–62 gates after independent full integration verification. No new test dispatch, image promotion, production change or obsolete-head rerun.
+
+PR53 exact9a216847: strict40167553129/job121091592032 in progress; application40167553126/job121091592233 queued. Snapshot retains exact handles. Existing first-green52 remains unchanged. New53 publication40167553183 cancelled; not green.
+
+PR58 existing run40161964860 at01971ad3: strict still executing, but generation job121075225724 completed failure. `gh run view --log` declined while the workflow remained live; the completed-job API supplied the log successfully. Generation122 passed/22 failed/8 skipped(59.9m): two large failures (30s return-briefing leased-production step; selected-history acknowledged room missing) and20short execution failures. These are behavior/setup failures, not pixel mismatches; first-failures.json preserves each boundary. No broad flake/root-cause claim. PR56 separately confirmed OOM must not automatically be asserted for this artifact.
+
+Artifact12588869658 is2,617,903,526bytes, unexpired (API identity/digest/expiry retained). Bounded ZIP ranges transferred1,642,837bytes, validating exact206Content-Range, path/symlink safety and CRC of each selected entry. No full archive SHA verification claimed. Selected113 metadata/narrative/context entries retained at/tmp/cluster-pr58-current-short-evidence; no PNG download or duplicate giant archive. Phone/desktop/large reorganization manifests passed; short FAILED has zero steps, source55a0c33a1c743eadcc4935d2bf601f5952a3e03e dirty:true, spec8531a5bbb0d138362c4e87fa2b802ddf064353374fc8d6087551114c51e955c6. Its actual context shows Retrieving your identity and disabled Save, failing Commander name visibility10s before illustrated work. There are no complete short candidates to inspect/promote. Captured merge-source identity retained, not silently equated with branch head. Current58 inherits validated cohort-isolation correction and has required checks already scheduled; do not launch duplicate generation.
+
+PR62 isolated route-recovery40164329910 at205f5a90 queued, no completed artifact/result. Preserve its unique request and original budgets. Retrieve relevant artifact only when it exists, inspect every new image before approval.
+
+Old57 publication40165038542 completedFAILURE at06:10:45UTC: expectedcfe1b435, observedHTTP404. Preserve original log; do not rerun superseded head. Current heads53–61 publication checks are cancelled; current62 publication40168179575 at e07299a5 is queued, alongside Pages40167571540 at2b932ea8. Preserve these live unique handles rather than replace pending publication. Once existing deployment/current62 publication terminate, recover current-head required publications serially, prioritizing57→56→53 and exact served-revision/assets verification. No successful publication claim from queued status.
+
+Retained PR58 generation job-log SHA256 ea8447fd66eea1697c39905c7ae2e9bcfb20a355031b02e1c6f1fa3d70ca74a5.

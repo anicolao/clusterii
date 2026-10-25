@@ -1985,3 +1985,9 @@ Reviewer: independent review now APPROVES all27changed exact originals in /tmp/c
 Delegated reviewer instruction; findings and exact attribution are retained in main meta.
 
 Reviewer: new independent56evidence confirms emulator exhaustion: verify artifact12588014245 selected extraction at /tmp/cluster-pr56-error-contexts; firestore-debug.log has10001pending WebChannel backlog line8992 at05:38:19 and explicit Java heap OutOfMemoryError lines4680474/4683118. Contexts show Retrieving your identity or Awaiting acknowledgement. Full findings/exact handoff mainmeta Reviewer PR56 service exhaustion confirmed from retained artifact. After safe propagation checkpoint, backport applicable64a26324cb viewport cohort isolation to56, preserve alltests/deadlines/assertions/exactpixels/failed artifacts, test underNix and propagate forward. Do not disrupt53currentCI or duplicate downloads. Reconcile attribution/logpush. No merge.
+
+## Prompt 302: Integration review
+
+Delegated reviewer instruction; see main meta Reviewer PR61–62 recovery integration verification.
+
+Reviewer: independent integration review now complete53–62, including exact49identity bytes each, cohort files56–62, all112travel bytes61/62 and immutable exact-parent checks. Latest mainmeta Reviewer PR61–62 recovery integration verification records details; reconcile latest findings in next attributed ledger push. Continue toward green stack: preserve current53strict121091592032; inspect existing58run40161964860 and62candidate40164329910 as they complete, retrieve only relevant artifacts, review missing58short reorganization and62route captures without automatic approval. Track publication using current-head jobs and avoid obsolete-head retries. No new feature work, weakened checks or merges.

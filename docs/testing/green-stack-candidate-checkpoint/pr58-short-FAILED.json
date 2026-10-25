@@ -1,0 +1,21 @@
+{
+  "id": "live-fleet-reorganization",
+  "title": "Recover a split and recombine private forces",
+  "inventory": [
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent commanders enter through actual authenticated controls. Formation supplies real forces; a withheld split survives reload with one command identity, then leased settlement splits and recombines the complement once. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify travel, managed encryption or hosted scheduling.",
+  "source": {
+    "commit": "55a0c33a1c743eadcc4935d2bf601f5952a3e03e",
+    "dirty": true,
+    "spec": "tests/browser/fleet-reorganization.story.spec.ts",
+    "specSha256": "8531a5bbb0d138362c4e87fa2b802ddf064353374fc8d6087551114c51e955c6"
+  },
+  "mode": "generate",
+  "status": "failed",
+  "project": "short",
+  "platform": "linux-arm64",
+  "steps": []
+}
