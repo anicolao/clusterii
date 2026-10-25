@@ -1901,3 +1901,15 @@ Reviewer: independently verified61 846122d972d8c649512425b3ab1522e74866d050 exac
 Delegated reviewer instruction; refer to the main meta-prompts.md six-frame independent disposition.
 
 Reviewer: independently inspected and approve all six exact later PR53 actual/diff pairs indexed /tmp/cluster-pr53-second-failure-index.json at3be6f22d. Diff markings confined to intro sentence; controls/focus/acknowledgements readable and contained. Main meta-prompts.md records scope. Continue complete six-journey generation and inspect every changed later frame before promotion; preserve thresholds/assertions. Keep53 first priority including exact served-revision publication recovery. Reconcile reviewer-attributed logs and commit/push. No merge.
+
+## Prompt 288: Cancellation approval
+
+Delegated reviewer instruction; main meta records independent Linux inspection and exact hash dispositions.
+
+Reviewer: independently inspected all22distinct changed/new images covering31files in corrected59Linux artifact12587017318;57otherfiles exact SHA matches to prior reviewed originals. All88 visuals approved. Mainmeta records scope and /tmp/cluster-pr59-linux-new-review.json exact hashes, four017focusfix approved including short; large display composition limit recorded. Resolve dirty:true provenance against requested92b9b88f and known generation-only changes, verify production/story/renderer before promoting. Then commit approved references to59 and propagate through60/61 preserving their generation handles. Prioritize53 when40163401924 completes, recover exact-served-revision publication. Reconcile attributed logs and push. No duplicate runs, threshold weakening or merge.
+
+## Prompt 289: Publication recovery
+
+Delegated reviewer instruction; main meta records independent PR59 verification and exact PR56 failed publication.
+
+Reviewer:59commit0fe42257 independently verified all88committed PNG bytes equal reviewed originals; read provenance report and accept its explicitly limited dirty:true explanation. New actionable gate:56publish40161305387/job121073856878 failed04:55:20, exact99c40f39 revision wait exhausted with HTTP404. Log /tmp/cluster-pr56-publish-failure.log. Include56 in publication recovery after checking live Pages state, avoid duplicate queued builds. Preserve53priority and existing generation handles. Mainmeta updated; reconcile/push attribution with next work. No merge.
