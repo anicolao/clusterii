@@ -19,6 +19,10 @@ case "$1" in
     bun run test:browser-storage
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
+  recovery)
+    [ "$#" -eq 2 ] && [ "$2" = cargo ] || exit 2
+    node scripts/cargo-candidates.mjs
+    ;;
   application)
     bun run check
     bun run lint
