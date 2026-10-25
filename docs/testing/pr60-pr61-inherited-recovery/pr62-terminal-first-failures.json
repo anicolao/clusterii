@@ -1,0 +1,88 @@
+{
+  "run": 40178737868,
+  "head": "8e683a73ba9107ba85a4c61a7e041ee22eadb398",
+  "log": "/tmp/cluster-pr62-current-strict-failed.log",
+  "logSha256": "74d9abf0c8d94cc97dd28baf4e2e493f8716002b1b986dc057559c72f29d53d0",
+  "failures": [
+    {
+      "kind": "pixel",
+      "snapshot": "live-fleet-formation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "detail": "33486 pixels (ratio 0.11 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "detail": "33156 pixels (ratio 0.10 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "detail": "1405 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "detail": "1405 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "live-fleet-formation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "detail": "8948 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "detail": "8948 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "detail": "1424 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "detail": "1424 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "live-fleet-formation/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "detail": "12500 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "live-fleet-reorganization/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "detail": "12500 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "detail": "1344 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "detail": "1344 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "live-fleet-formation/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "detail": "37413 pixels (ratio 0.05 of all image pixels) are different."
+    },
+    {
+      "kind": "missing-reference",
+      "snapshot": "/home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-fleet-reorganization/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "detail": "1423 pixels (ratio 0.01 of all image pixels) are different."
+    },
+    {
+      "kind": "pixel",
+      "snapshot": "invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "detail": "1423 pixels (ratio 0.01 of all image pixels) are different."
+    }
+  ],
+  "summary": "15 pixel comparisons plus one missing reference; seven inherited fleet pixel paths and eight invitation pixel paths. Four cohorts each36passed2skipped4failed. No timeout classification in these first failures."
+}
