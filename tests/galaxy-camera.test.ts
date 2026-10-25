@@ -21,6 +21,12 @@ describe("home target framing", () => {
     expect(camera.position.distanceTo(pivot)).toBeCloseTo(distance, 8);
     expect(home.toArray()).toEqual([3, 0.2, -2]);
   });
+  test("measured DOMRect properties may be inherited accessors, not spreadable fields", () => {
+    const chart = Object.create({ left: 0, top: 58, right: 393, bottom: 612 });
+    const inspector = Object.create({ left: 12, top: 243.609375, right: 381, bottom: 840 });
+    expect(Object.keys(chart)).toEqual([]);
+    expect(unobscuredChartCenter(chart, inspector)).toEqual({ x: 0.5, y: (243.609375 - 58) / (2 * 554) });
+  });
   test("unoccluded desktop and short chart centers remain unchanged", () => {
     for (const right of [1024, 1152, 3072]) {
       const chart = { left: 0, top: 58, right, bottom: 720 };

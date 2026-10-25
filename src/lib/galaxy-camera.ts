@@ -19,11 +19,18 @@ export function unobscuredChartCenter(
     y >= inspector.bottom
   )
     return { x: 0.5, y: 0.5 };
+  // DOMRect coordinates are prototype accessors; object spread would lose them.
+  const bounds = {
+    left: chart.left,
+    top: chart.top,
+    right: chart.right,
+    bottom: chart.bottom,
+  };
   const free = [
-    { ...chart, bottom: Math.max(chart.top, inspector.top) },
-    { ...chart, top: Math.min(chart.bottom, inspector.bottom) },
-    { ...chart, right: Math.max(chart.left, inspector.left) },
-    { ...chart, left: Math.min(chart.right, inspector.right) },
+    { ...bounds, bottom: Math.max(chart.top, inspector.top) },
+    { ...bounds, top: Math.min(chart.bottom, inspector.bottom) },
+    { ...bounds, right: Math.max(chart.left, inspector.left) },
+    { ...bounds, left: Math.min(chart.right, inspector.right) },
   ].sort(
     (a, b) =>
       (b.right - b.left) * (b.bottom - b.top) -
