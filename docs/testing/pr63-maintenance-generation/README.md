@@ -1,0 +1,7 @@
+# Complete short maintenance candidate request
+
+Reviewer Prompt361 / main meta Reviewer complete maintenance family correction. Independently approved004 exact SHA999d68d5233c5a1da3ac5e2ccb7a4350ceae1fc881e03a7e01c283ab9bf19155 is retained without new baseline mutation.003approvedSHA932203f3… already in isolated target cd0d5d60604b6f9c82665f03bc8621208559113f; active63 remainsf8adb007.
+
+One fresh complete generation requested40203892659, executor9bf1b1f76eab7af2331ea7398999c21042ea70d0, launcherf2aff231. Request02, branch investigate/pr63-maintenance-candidates. Four request/outer-inner dispatcher tests pass; exact collection one short maintenance test. Original90s/30s/10s budgets, retries0/max-failures1 and no snapshot updates. Only CLUSTER_STORY_MODE changes from verify to generate; all real actions/functional assertions retained,13captures expected. Production/spec/dependencies and required workflows unchanged. Generation is not strict acceptance or reference promotion.
+
+Preserve strict40203144519 failure plus independent004 approval. PR64 strict40196208632 terminalfailure same003/53,332pixels, reviewer retained log/tmp/cluster-pr64-current-failure.log; no stale retry. Preserve65live strict and authorized retry,66frozen. On completed generation retrieve once, verify full archive/source/spec/renderer, compare every candidate to active and proposed references, present every changed original/expected/diff and unchanged hashes for independent review before active63publication. No GitHub merge.
