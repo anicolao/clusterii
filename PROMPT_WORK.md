@@ -347,3 +347,4 @@ Prompt 106 | 2b3ca753cb68d3accad6c09c89d6ecc428dd4b82dc3da2bbc902f07ca25892c1 | 
 Prompt 108 | b82e039095adf3471d476eed64969819aaf3253a5a8ccb83d6b5dc93328c63db | Integrate current cancellation parent while retaining cargo evidence and exact inherited histories.
 Prompt 110 | b7f528d946e276c0266961a8c5b103fb70fea9e02ab5291c71e35dc8651cdaeb | Integrate current cargo parent and preserve travel candidate applicability and exact history.
 Prompt 110 | b7f528d946e276c0266961a8c5b103fb70fea9e02ab5291c71e35dc8651cdaeb | Prepare one guarded four-size Linux travel generation for changed formation feedback and missing large/short evidence.
+Prompt 110 | b7f528d946e276c0266961a8c5b103fb70fea9e02ab5291c71e35dc8651cdaeb | Request the single current-source four-size travel candidate family, preserving real assertions and review-before-promotion.
