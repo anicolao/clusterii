@@ -1666,3 +1666,41 @@ Reviewer: PR62 candidate extraction is complete at /tmp/cluster-pr62-reviewer-ca
 Delegated reviewer instruction; main meta PR62 corrected visual approval and successful PR53 Pages deployment.
 
 Reviewer: Priority update: Pages run40175189456 is now SUCCESS, deploy121116363749 completed2026-10-25T08:44:35Z. Verify hosted PR53 exact revision9a216847d89fd0bc3c2a08e1b0be2f115bb4a003 and assets, then recover its publication check on unchanged head and work forward to54. No merges. Independent PR62 corrected visual review COMPLETE: opened all four035-sign-out-access frames phone/short/desktop/large in /tmp/cluster-pr62-corrected-linux/originals; approve corrected readable Sign in to access your campaigns copy. Independently compared160 files:156 exact matches to previously inspected set, only these four changed. Thus all160 scoped captures approved; large is layout/content review at tool-downscaled resolution. Metadata reports sourceece332eb856ab838fb6dc573f7d2b805142a7bf9, dirty true, specSHAd2367a7b6b3fa86100a89bba58fd998f12487708121b63ca2508ec3f6fbbcd6b; retain and explain generation dirtiness/source-bound request provenance, apply copy fix and only approved baselines to correct PR62 stack branch, run strict checks. No blanket full-design approval. Two additional corrected PR87 phone006history standard selection/outcome inspected and approved; corrected phone approvals10/16, other pending images remain pending. Reconcile this exact handoff and main meta findings in reviewer-attributed PROMPTS/PROMPT_WORK, commit and push logs. Focus green frontier before further lab work.
+## Prompt 121: Short reorganization approval
+
+Delegated reviewer instruction; see main meta-prompts.md PR58 short reorganization approval.
+
+Reviewer: Completed independent visual inspection of all 34 PR58 short reorganization PNGs via 21 distinct SHA256 groups, including final merged owner/peer and return-to-galaxy views. All exact hashes in /tmp/cluster-pr58-current-short/review-index.json independently reverified and approved for regression promotion. Formation, split recovery, accepted merge, conserved 4 fighters/18 infantry, quiet peer view and focused galaxy return are readable. Generation manifest passed; recorded dirty:true retained; spec SHA matches target 9b69b016. Promote only these exact reviewed images and rerun unchanged strict checks on PR58, then continue stack forward. This is scoped regression approval, not rule or full-design approval. Reconcile this exact handoff and meta-prompts.md into attributed committed/pushed logs. No merge.
+
+
+
+
+
+
+
+
+## Prompt 122: Shared families approval
+
+Delegated reviewer instruction; see main meta Reviewer PR59 shared families fully reviewed.
+
+Reviewer: Finished before/after inspection of all15 remaining PR59 shared-family short/large reorganization candidates: short012 plus019/020/022/024/025/026/027 at both sizes. Approve exact hashes /tmp/cluster-pr59-reorganization-short-large-approved.json. Changes are feedback paragraph spacing and bounded reader offsets; formation reservations, recovered split draft, accepted split/merge ticks, recipient quantities, cancellation and disabled duplicate actions remain readable. Large inspected individually downscaled2048x1152, scoped layout/content only. Independently verified all216 generated image hashes, all150 unchanged references against PR59 git blobs,26 reused short images against approved PR58 originals, and all8 passed manifests/spec hashes against2f96284b. Together with prior7+4+14 approvals this completes the216-image shared-family regression review. Promote exact reviewed formation/reorganization families, incorporate latest PR58 parent3352be3e without altering reviewed production behavior, run unchanged required checks and preserve provenance/dirty-source facts. PR58 documentation/publication SUCCESS; other3 checks live. Reconcile exact handoff/meta in attributed committed/pushed logs. No merge.
+
+
+
+
+
+
+## Prompt 123: Inherited failure recovery
+
+Delegated reviewer instruction; main meta Reviewer PR60 PR61 inherited failures.
+
+Reviewer: Independently verified all216 approved formation/reorganization PNG hashes in published PR59 head75c39df89624453c05127c15be8af12419c864c5, with no src/spec/scripts/workflow diff from2f96284b. All5 new CI jobs live; preserve them. PR60 strict40168081936 at9afb281b and PR61 strict40168124903 atc87bd740 are terminalFAILURE. Independently saved/read /tmp/cluster-pr60-current-strict-failed.log and /tmp/cluster-pr61-current-strict-failed.log: each has precisely inherited7 formation/reorganization012 spacing mismatches plus missing short reorganization010; other journeys36/37passed percohort respectively. Carry reviewed parent59 into60 then updated60 into61 preserving source/history and exact approved hashes, and rerun unchanged required checks; do not regenerate or relax comparisons. Resolve any ancestry/log conflicts perexisting safeguards. PR62 strict40178737868 remains live; leave it running. Reconcile findings and exact handoff into attributed committed/pushed logs. No GitHub merge.
+
+
+
+
+## Prompt 124: Invitation regression isolation
+
+Delegated reviewer instruction; main meta Reviewer PR62 invitation regression isolation.
+
+Reviewer: PR62 strict40178737868 is terminal FAILURE at8e683a73ba9107ba85a4c61a7e041ee22eadb398. Independently read source diff from prior61: signed-out campaigns copy changed from Sign in and save your identity to continue. to Sign in to access your campaigns.; eight invitation002 mismatches report1405/1424/1344/1423pixels bysize, consistent with copy change but not yet visually approved. Carry current reviewed61 parent2c026a487bea738fb49f78f3ad4553efed08b49b into62 to resolve eight inherited fleet failures. Extract bounded expected/actual/diff triples for all eight invitation first failures, plus full successful generated invitation-first-admission and invitation-returning-recovery families/manifests. Compare every generated image against current references and identify all changed later frames, with SHA256/provenance/spec validation; no blind promotion, no tolerance/assertion changes. Provide small review root for independent image inspection before promotion. Preserve live58-61 CI. PR60 publication recovery confirmed by pane; reconcile exact handoff and meta into attributed committed/pushed logs; no GitHub merge.
