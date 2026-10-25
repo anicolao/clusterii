@@ -1,0 +1,566 @@
+# Reserve, complete and cancel developments
+
+**BASELINE CANDIDATES — generation, not verification.** short · darwin-arm64. Inventory: UX-05, UX-06, UX-14, UX-15, UX-16.
+
+Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time for construction and market-focus admission, plus withheld delivery, are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.
+
+## 1. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 2. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 3. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 4. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 5. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 6. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 7. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 8. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 9. Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 10. Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The development quote shows69 credits and131 after reservation, with one completed training camp.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+
+### Viewpoint: Builder envoy
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Builder envoy](010-inspect-development-1-builder-envoy.png)](010-inspect-development-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Independent builder](010-inspect-development-2-independent-builder.png)](010-inspect-development-2-independent-builder.png)
+
+## 11. Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The open chapter explains the real69-credit quote and8-place capacity without an order acknowledgement.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### Viewpoint: Builder envoy
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Builder envoy](011-read-construction-price-1-builder-envoy.png)](011-read-construction-price-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Independent builder](011-read-construction-price-2-independent-builder.png)](011-read-construction-price-2-independent-builder.png)
+
+## 12. Read reservation and progress before committing credits.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The reservation and progress explanation is visible inside the bounded reading panel.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### Viewpoint: Builder envoy
+
+[![Read reservation and progress before committing credits. — Builder envoy](012-read-construction-reservation-1-builder-envoy.png)](012-read-construction-reservation-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read reservation and progress before committing credits. — Independent builder](012-read-construction-reservation-2-independent-builder.png)](012-read-construction-reservation-2-independent-builder.png)
+
+## 13. Read cancellation and control before committing credits.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The cancellation and control explanation is visible inside the bounded reading panel.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### Viewpoint: Builder envoy
+
+[![Read cancellation and control before committing credits. — Builder envoy](013-read-construction-refund-1-builder-envoy.png)](013-read-construction-refund-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read cancellation and control before committing credits. — Independent builder](013-read-construction-refund-2-independent-builder.png)](013-read-construction-refund-2-independent-builder.png)
+
+## 14. Read cancellation, control and completion boundaries while the build commitment remains available.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The chapter explains execution-time refunds and recorded market focus, not equal-focus dividends.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### Viewpoint: Builder envoy
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Builder envoy](014-read-construction-outcomes-1-builder-envoy.png)](014-read-construction-outcomes-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Independent builder](014-read-construction-outcomes-2-independent-builder.png)](014-read-construction-outcomes-2-independent-builder.png)
+
+## 15. Close the chapter with the keyboard; normal and reduced motion retain the same construction decision.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The chapter closes and keyboard focus remains on its opening control.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### Viewpoint: Builder envoy
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Builder envoy](015-close-construction-rules-1-builder-envoy.png)](015-close-construction-rules-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Independent builder](015-close-construction-rules-2-independent-builder.png)](015-close-construction-rules-2-independent-builder.png)
+
+## 16. Open the real market instrument before choosing a private allocation.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Current equal allocation is visible and unchanged focus cannot be submitted.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Open the real market instrument before choosing a private allocation. — Builder envoy](016-open-market-focus-1-builder-envoy.png)](016-open-market-focus-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Open the real market instrument before choosing a private allocation. — Independent builder](016-open-market-focus-2-independent-builder.png)](016-open-market-focus-2-independent-builder.png)
+
+## 17. Read allocate expectations while the campaign continues.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The selected rule is readable without applying an allocation.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Read allocate expectations while the campaign continues. — Builder envoy](017-read-market-rule-0-1-builder-envoy.png)](017-read-market-rule-0-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read allocate expectations while the campaign continues. — Independent builder](017-read-market-rule-0-2-independent-builder.png)](017-read-market-rule-0-2-independent-builder.png)
+
+## 18. Read read the scheduled outcome while the campaign continues.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The selected rule is readable without applying an allocation.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Read read the scheduled outcome while the campaign continues. — Builder envoy](018-read-market-rule-1-1-builder-envoy.png)](018-read-market-rule-1-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read read the scheduled outcome while the campaign continues. — Independent builder](018-read-market-rule-1-2-independent-builder.png)](018-read-market-rule-1-2-independent-builder.png)
+
+## 19. Read share a dividend pool while the campaign continues.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The selected rule is readable without applying an allocation.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Read share a dividend pool while the campaign continues. — Builder envoy](019-read-market-rule-2-1-builder-envoy.png)](019-read-market-rule-2-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read share a dividend pool while the campaign continues. — Independent builder](019-read-market-rule-2-2-independent-builder.png)](019-read-market-rule-2-2-independent-builder.png)
+
+## 20. Read confirmed and held returns while the campaign continues.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The selected rule is readable without applying an allocation.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Read confirmed and held returns while the campaign continues. — Builder envoy](020-read-market-rule-3-1-builder-envoy.png)](020-read-market-rule-3-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read confirmed and held returns while the campaign continues. — Independent builder](020-read-market-rule-3-2-independent-builder.png)](020-read-market-rule-3-2-independent-builder.png)
+
+## 21. Close help with the keyboard in both motion modes and return to allocation controls.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The closed disclosure retains keyboard focus and the allocation remains unsent.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Close help with the keyboard in both motion modes and return to allocation controls. — Builder envoy](021-close-market-rules-1-builder-envoy.png)](021-close-market-rules-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Close help with the keyboard in both motion modes and return to allocation controls. — Independent builder](021-close-market-rules-2-independent-builder.png)](021-close-market-rules-2-independent-builder.png)
+
+## 22. Increase camp focus before redistributing the other points; the invalid total prevents sending.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: 75 over allocation is explained and Apply focus stays disabled.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Increase camp focus before redistributing the other points; the invalid total prevents sending. — Builder envoy](022-review-invalid-focus-1-builder-envoy.png)](022-review-invalid-focus-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Increase camp focus before redistributing the other points; the invalid total prevents sending. — Independent builder](022-review-invalid-focus-2-independent-builder.png)](022-review-invalid-focus-2-independent-builder.png)
+
+## 23. Allocate all100 points to training camps without sending an order yet.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Exactly100 points enables Apply focus while the current allocation is unchanged.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Help and an unsent allocation preserve canonical state and both private projections.
+
+### Viewpoint: Builder envoy
+
+[![Allocate all100 points to training camps without sending an order yet. — Builder envoy](023-review-market-draft-1-builder-envoy.png)](023-review-market-draft-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Allocate all100 points to training camps without sending an order yet. — Independent builder](023-review-market-draft-2-independent-builder.png)](023-review-market-draft-2-independent-builder.png)
+
+## 24. Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Focus order accepted names application tick1 and dividends from tick2.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] One accepted receipt records the private allocation without changing any wallet, system or another player's focus.
+
+### Viewpoint: Builder envoy
+
+[![Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick. — Builder envoy](024-accept-market-focus-1-builder-envoy.png)](024-accept-market-focus-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick. — Independent builder](024-accept-market-focus-2-independent-builder.png)](024-accept-market-focus-2-independent-builder.png)
+
+## 25. Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The camp allocation and original application tick survive reload.
+
+- [x] The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Reload creates no additional command or effect.
+
+### Viewpoint: Builder envoy
+
+[![Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it. — Builder envoy](025-recover-market-focus-1-builder-envoy.png)](025-recover-market-focus-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it. — Independent builder](025-recover-market-focus-2-independent-builder.png)](025-recover-market-focus-2-independent-builder.png)
+
+## 26. Return through economy to the preserved home development decision.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Training camp still costs69 with131 remaining after reservation.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Navigation leaves the accepted focus unchanged.
+
+### Viewpoint: Builder envoy
+
+[![Return through economy to the preserved home development decision. — Builder envoy](026-return-to-development-1-builder-envoy.png)](026-return-to-development-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Return through economy to the preserved home development decision. — Independent builder](026-return-to-development-2-independent-builder.png)](026-return-to-development-2-independent-builder.png)
+
+## 27. Read the authoritative construction acknowledgement and credit reservation.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Construction order accepted accompanies a queued camp eligible at tick1.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Exactly one command revision reserves69 credits; the orbital count and every other wallet are unchanged.
+
+### Viewpoint: Builder envoy
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Builder envoy](027-reserve-build-1-builder-envoy.png)](027-reserve-build-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Independent builder](027-reserve-build-2-independent-builder.png)](027-reserve-build-2-independent-builder.png)
+
+## 28. Reload the accepted work and reopen Develop to recover the same queue and balance.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The persisted queue remains eligible at tick1 with131 credits available.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Reload creates no command, revision or additional debit.
+
+### Viewpoint: Builder envoy
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Builder envoy](028-reload-reservation-1-builder-envoy.png)](028-reload-reservation-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Independent builder](028-reload-reservation-2-independent-builder.png)](028-reload-reservation-2-independent-builder.png)
+
+## 29. Deliver five explicit production boundaries through the actual leased tick service. The first starts the build, four subsequent advances finish it; repeat delivery must change nothing.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 30. Inspect the settled training camp and the other commander's unchanged private queue.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The authoritative completion appears and the camp count is two.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Five ticks produce the exact reserved-owner and dividend-recipient balances, with one completed camp and no queued work.
+
+### Viewpoint: Builder envoy
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Builder envoy](030-completed-build-1-builder-envoy.png)](030-completed-build-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Independent builder](030-completed-build-2-independent-builder.png)](030-completed-build-2-independent-builder.png)
+
+## 31. After real tick settlement, inspect the applied allocation and distinguish it from future market returns.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The authoritative applied outcome names tick1 and dividend eligibility from tick2.
+
+- [x] The original order applied once and own construction still pays no own-market dividend.
+
+### Viewpoint: Builder envoy
+
+[![After real tick settlement, inspect the applied allocation and distinguish it from future market returns. — Builder envoy](031-inspect-applied-focus-1-builder-envoy.png)](031-inspect-applied-focus-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![After real tick settlement, inspect the applied allocation and distinguish it from future market returns. — Independent builder](031-inspect-applied-focus-2-independent-builder.png)](031-inspect-applied-focus-2-independent-builder.png)
+
+## 32. Return to the completed camp before making the next construction decision.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The completed camp remains available with no queued work.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+
+### Viewpoint: Builder envoy
+
+[![Return to the completed camp before making the next construction decision. — Builder envoy](032-return-after-focus-settlement-1-builder-envoy.png)](032-return-after-focus-settlement-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Return to the completed camp before making the next construction decision. — Independent builder](032-return-after-focus-settlement-2-independent-builder.png)](032-return-after-focus-settlement-2-independent-builder.png)
+
+## 33. Choose a surface base and reserve its quoted cost using the keyboard.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: A new accepted base order enters the surface queue for tick6.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] The displayed base reservation is the sole wallet debit and neither completed development count changes.
+
+### Viewpoint: Builder envoy
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Builder envoy](033-reserve-cancellable-base-1-builder-envoy.png)](033-reserve-cancellable-base-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Independent builder](033-reserve-cancellable-base-2-independent-builder.png)](033-reserve-cancellable-base-2-independent-builder.png)
+
+## 34. Request cancellation of the queued surface base. The refund waits for authoritative settlement.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Cancellation is acknowledged for tick6 and the cancel action is disabled.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] Cancellation admission adds one revision without an early refund or a second build.
+
+### Viewpoint: Builder envoy
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Builder envoy](034-cancel-base-1-builder-envoy.png)](034-cancel-base-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Independent builder](034-cancel-base-2-independent-builder.png)](034-cancel-base-2-independent-builder.png)
+
+## 35. Deliver tick6 through the real production service and repeat it to prove no second refund or production effect.
+
+Actor: **Test harness**. **Harness control; not a player action.**
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 36. Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The base cancellation states its returned credits and no construction remains queued.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] The unstarted base refunds its entire reservation exactly once; only tick6 production changes each wallet and the base count is unchanged.
+
+### Viewpoint: Builder envoy
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Builder envoy](036-cancelled-base-1-builder-envoy.png)](036-cancelled-base-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Independent builder](036-cancelled-base-2-independent-builder.png)](036-cancelled-base-2-independent-builder.png)
+
+## 37. Reload and reopen the construction panel to inspect the persisted refund without replaying an action.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The same settled cancellation and returned credits are recovered.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+- [x] Visible available balances equal each player's authoritative wallet.
+- [x] The complete canonical result survives reload without another revision, build or refund.
+
+### Viewpoint: Builder envoy
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Builder envoy](037-recover-settled-outcome-1-builder-envoy.png)](037-recover-settled-outcome-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Independent builder](037-recover-settled-outcome-2-independent-builder.png)](037-recover-settled-outcome-2-independent-builder.png)
+
+## 38. Return to the galaxy with Escape and recover the Develop control's focus.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The panel closes and Develop receives keyboard focus.
+
+- [x] Leaving the instrument has no authoritative side effect.
+
+### Viewpoint: Builder envoy
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Builder envoy](038-keyboard-return-1-builder-envoy.png)](038-keyboard-return-1-builder-envoy.png)
+
+### Viewpoint: Independent builder
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Independent builder](038-keyboard-return-2-independent-builder.png)](038-keyboard-return-2-independent-builder.png)

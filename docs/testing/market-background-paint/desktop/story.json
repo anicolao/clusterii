@@ -1,0 +1,806 @@
+{
+  "id": "live-construction-ordinary",
+  "title": "Reserve, complete and cancel developments",
+  "inventory": [
+    "UX-05",
+    "UX-06",
+    "UX-14",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time for construction and market-focus admission, plus withheld delivery, are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
+  "source": {
+    "commit": "d5e1a41ea31ff3cd0b6f69ce36e6146a491badc1",
+    "dirty": false,
+    "spec": "tests/browser/construction.story.spec.ts",
+    "specSha256": "5845ffbbd1a23e2ca865789f75d27e19f4d6631a2b2995f21a2071397357ded0"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-development",
+      "description": "Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The development quote shows69 credits and131 after reservation, with one completed training camp.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "010-inspect-development-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "010-inspect-development-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-construction-price",
+      "description": "Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The open chapter explains the real69-credit quote and8-place capacity without an order acknowledgement.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "011-read-construction-price-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "011-read-construction-price-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-construction-reservation",
+      "description": "Read reservation and progress before committing credits.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The reservation and progress explanation is visible inside the bounded reading panel.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "012-read-construction-reservation-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "012-read-construction-reservation-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-construction-refund",
+      "description": "Read cancellation and control before committing credits.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The cancellation and control explanation is visible inside the bounded reading panel.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "013-read-construction-refund-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "013-read-construction-refund-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-construction-outcomes",
+      "description": "Read cancellation, control and completion boundaries while the build commitment remains available.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The chapter explains execution-time refunds and recorded market focus, not equal-focus dividends.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "014-read-construction-outcomes-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "014-read-construction-outcomes-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-construction-rules",
+      "description": "Close the chapter with the keyboard; normal and reduced motion retain the same construction decision.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The chapter closes and keyboard focus remains on its opening control.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "015-close-construction-rules-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "015-close-construction-rules-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "open-market-focus",
+      "description": "Open the real market instrument before choosing a private allocation.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Current equal allocation is visible and unchanged focus cannot be submitted.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "016-open-market-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "016-open-market-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-0",
+      "description": "Read allocate expectations while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "017-read-market-rule-0-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "017-read-market-rule-0-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-1",
+      "description": "Read read the scheduled outcome while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "018-read-market-rule-1-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "018-read-market-rule-1-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-2",
+      "description": "Read share a dividend pool while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "019-read-market-rule-2-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "019-read-market-rule-2-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-market-rule-3",
+      "description": "Read confirmed and held returns while the campaign continues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The selected rule is readable without applying an allocation.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "020-read-market-rule-3-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "020-read-market-rule-3-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-market-rules",
+      "description": "Close help with the keyboard in both motion modes and return to allocation controls.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The closed disclosure retains keyboard focus and the allocation remains unsent.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "021-close-market-rules-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "021-close-market-rules-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-invalid-focus",
+      "description": "Increase camp focus before redistributing the other points; the invalid total prevents sending.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "75 over allocation is explained and Apply focus stays disabled.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "022-review-invalid-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "022-review-invalid-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-market-draft",
+      "description": "Allocate all100 points to training camps without sending an order yet.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Exactly100 points enables Apply focus while the current allocation is unchanged.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Help and an unsent allocation preserve canonical state and both private projections."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "023-review-market-draft-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "023-review-market-draft-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "accept-market-focus",
+      "description": "Commit the allocation through the ordinary keyboard action and inspect its acknowledged application tick.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Focus order accepted names application tick1 and dividends from tick2.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "One accepted receipt records the private allocation without changing any wallet, system or another player's focus."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "024-accept-market-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "024-accept-market-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-market-focus",
+      "description": "Reload and reopen the recorded focus; this recovers the accepted order rather than resubmitting it.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The camp allocation and original application tick survive reload.",
+      "verifications": [
+        "The market commitment remains inside the viewport before scrolling, with the other player's own construction view intact.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Reload creates no additional command or effect."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "025-recover-market-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "025-recover-market-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-development",
+      "description": "Return through economy to the preserved home development decision.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Training camp still costs69 with131 remaining after reservation.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Navigation leaves the accepted focus unchanged."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "026-return-to-development-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "026-return-to-development-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-build",
+      "description": "Read the authoritative construction acknowledgement and credit reservation.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Construction order accepted accompanies a queued camp eligible at tick1.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Exactly one command revision reserves69 credits; the orbital count and every other wallet are unchanged."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "027-reserve-build-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "027-reserve-build-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-reservation",
+      "description": "Reload the accepted work and reopen Develop to recover the same queue and balance.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The persisted queue remains eligible at tick1 with131 credits available.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reload creates no command, revision or additional debit."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "028-reload-reservation-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "028-reload-reservation-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "advance-to-completion",
+      "description": "Deliver five explicit production boundaries through the actual leased tick service. The first starts the build, four subsequent advances finish it; repeat delivery must change nothing.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "completed-build",
+      "description": "Inspect the settled training camp and the other commander's unchanged private queue.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative completion appears and the camp count is two.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Five ticks produce the exact reserved-owner and dividend-recipient balances, with one completed camp and no queued work."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "030-completed-build-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "030-completed-build-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "inspect-applied-focus",
+      "description": "After real tick settlement, inspect the applied allocation and distinguish it from future market returns.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative applied outcome names tick1 and dividend eligibility from tick2.",
+      "verifications": [
+        "The original order applied once and own construction still pays no own-market dividend."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "031-inspect-applied-focus-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "031-inspect-applied-focus-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-after-focus-settlement",
+      "description": "Return to the completed camp before making the next construction decision.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The completed camp remains available with no queued work.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "032-return-after-focus-settlement-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "032-return-after-focus-settlement-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-cancellable-base",
+      "description": "Choose a surface base and reserve its quoted cost using the keyboard.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "A new accepted base order enters the surface queue for tick6.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "The displayed base reservation is the sole wallet debit and neither completed development count changes."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "033-reserve-cancellable-base-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "033-reserve-cancellable-base-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "cancel-base",
+      "description": "Request cancellation of the queued surface base. The refund waits for authoritative settlement.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "Cancellation is acknowledged for tick6 and the cancel action is disabled.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Cancellation admission adds one revision without an early refund or a second build."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "034-cancel-base-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "034-cancel-base-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "settle-cancellation",
+      "description": "Deliver tick6 through the real production service and repeat it to prove no second refund or production effect.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "cancelled-base",
+      "description": "Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The base cancellation states its returned credits and no construction remains queued.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "The unstarted base refunds its entire reservation exactly once; only tick6 production changes each wallet and the base count is unchanged."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "036-cancelled-base-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "036-cancelled-base-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-settled-outcome",
+      "description": "Reload and reopen the construction panel to inspect the persisted refund without replaying an action.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The same settled cancellation and returned credits are recovered.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "The complete canonical result survives reload without another revision, build or refund."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "037-recover-settled-outcome-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "037-recover-settled-outcome-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keyboard-return",
+      "description": "Return to the galaxy with Escape and recover the Develop control's focus.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The panel closes and Develop receives keyboard focus.",
+      "verifications": [
+        "Leaving the instrument has no authoritative side effect."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "038-keyboard-return-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "038-keyboard-return-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
