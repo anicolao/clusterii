@@ -576,6 +576,9 @@ fieldset {
   .identity-intro {
     margin-bottom: 18px;
   }
+  .identity .reading .identity-intro {
+    line-height: 28px;
+  }
   .entry {
     padding: 20px 0;
   }

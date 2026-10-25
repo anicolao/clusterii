@@ -19,6 +19,10 @@ case "$1" in
     bun run test:browser-storage
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
+  recovery)
+    [ "$2" = identity-short ] || exit 2
+    node scripts/identity-short-candidates.mjs
+    ;;
   application)
     bun run check
     bun run lint
