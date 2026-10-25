@@ -11,3 +11,9 @@ Every new short image equals the previous first-repeat candidate. Against active
 Cleanup provenance is in ../route-repeat-disk-recovery: only four verified redundant ZIPs removed,648,694,783filebytes; no unique originals/traces/manifests removed. Full summaries, manifests, comparison and exact review inventory accompany this report. No normal-motion/full-design/release approval implied.
 
 At verification time PR63 bb54c315 and PR64 64f680f2 application/docs/generation/publication are successful; strict remains in progress. Both runs preserved. Active65 remains unchanged pending independent visual disposition and integration; PR66 frozen.
+
+## Reviewed integration completed
+
+Reviewer complete route reproducibility and baseline approval in main meta authorizes all12 exact changed images after nine distinct expected/actual/diff comparisons;026equals024 per size. All160images rehashed:148unchanged12approved. Normal fast-forward published active65 at056a2f858532afe09d40b2075d2360d7574a03e7, containing reviewed d9025f17 on corrected64. Complete baseline tree audit against original65 confirms only maintenance3 and route12 PNG changes; no other baseline metadata or image changes. Product/required workflows unchanged. Both exact-parent prompt checks and28policy tests passed.
+
+Publication40210330067 SUCCESS; Pages40210677037 SUCCESS. Local unchanged Nix verify-pages passed exact source/build056a2f85 and26assets; retained HOSTED.log. Documentation/generation SUCCESS; application40210330047 and strict40210330065 remain IN_PROGRESS. No green frontier advancement until both pass. Existing63/64checks untouched; no additional dispatch, GitHub merge or PR66 approval.

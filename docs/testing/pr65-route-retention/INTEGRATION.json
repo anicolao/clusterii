@@ -1,0 +1,39 @@
+{
+  "head": "056a2f858532afe09d40b2075d2360d7574a03e7",
+  "original65": "48b9f7caa2c4c328b7af97ec21d5f30f96a50443",
+  "parent64": "64f680f2c9736fb843096be2f20c0323a23de473",
+  "normalFastForward": true,
+  "verifiedRouteImages": 160,
+  "onlyBaselineChanges": [
+    "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/short/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/short/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/short/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+    "tests/browser/story-baselines/interrupted-fleet-route/short/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+    "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+    "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/004-pause-admission-1-maintenance-host.png",
+    "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/007-resume-admission-1-maintenance-host.png"
+  ],
+  "productionAndRequiredWorkflowsUnchanged": true,
+  "applicationRun": 40210330047,
+  "storiesRun": 40210330065,
+  "documentationRun": 40210330050,
+  "publicationRun": 40210330067,
+  "initialStates": "All in progress; no green claim",
+  "currentStates": {
+    "application": "in_progress",
+    "strict": "in_progress",
+    "generation": "success",
+    "documentation": "success",
+    "publication": "success"
+  },
+  "pagesDeployment": 40210677037,
+  "hostedExactRevisionAssets": "passed; exact source/build and26 assets"
+}
