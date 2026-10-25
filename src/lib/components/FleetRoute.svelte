@@ -168,6 +168,7 @@
 <section class="route-planner" aria-label="Fleet route planner">
   <div
     class="route-chart"
+    data-galaxy-viewport
     aria-label="Route chart. Use waypoint controls for keyboard planning."
   >
     <Canvas renderMode="on-demand"

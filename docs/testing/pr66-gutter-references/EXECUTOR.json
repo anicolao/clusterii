@@ -1,0 +1,41 @@
+{
+  "requestId": "gutter-strict-20261025-01",
+  "sourceCommit": "f47b575f21b8fd2c9f5f7071d96e58d6e17d454d",
+  "executorCommit": "f0c201b9b58975ac89fb0fdb485132798a9eb78b",
+  "case": "scene-strict",
+  "mode": "verify",
+  "target": "ae12fa123c68892069706fae43012f967cec151b",
+  "attempt": 1,
+  "referenceTree": "fa72ab79e5986e6efc82726494a527d2307c3354",
+  "specs": {
+    "start": {
+      "file": "tests/browser/campaign-start.story.spec.ts",
+      "title": "Five commanders start two campaigns and recover their named active campaign",
+      "story": "campaign-scheduled-start",
+      "sha": "63937b4dd502a2e10bcb4a8662149370101627cb5c04a5edcefa2a4802b45044",
+      "views": 50
+    },
+    "ordinary": {
+      "file": "tests/browser/credit-exchange.story.spec.ts",
+      "title": "Live credit exchange settles and withdraws exact terms",
+      "story": "credit-exchange-ordinary",
+      "sha": "033937437c2e14f5d8650a378d05c606f6d0e1d4d799f0ced4a43cb30f159a14",
+      "views": 28
+    },
+    "recovery": {
+      "file": "tests/browser/credit-exchange.story.spec.ts",
+      "title": "Live credit exchange recovers an interrupted offer",
+      "story": "credit-exchange-recovery",
+      "sha": "033937437c2e14f5d8650a378d05c606f6d0e1d4d799f0ced4a43cb30f159a14",
+      "views": 25
+    },
+    "history": {
+      "file": "tests/browser/selected-history.story.spec.ts",
+      "title": "Selected history reaches only a consenting commander and survives reload",
+      "story": "selected-history-consent",
+      "sha": "02f5c7efe2e3f8eda5e280d2433577c01f3c825f749d088564a9ed53ea0ee959",
+      "views": 15
+    }
+  },
+  "requestSha256": "7fea7e673d315b8bc8f7efc6c312a9251e86b12e9aa779606a016e70ec0a46ce"
+}

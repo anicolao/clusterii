@@ -1765,7 +1765,42 @@ Delegated reviewer instruction; main meta Reviewer PR64 publication and PR65 pre
 Reviewer: Independently confirmed active64 at exact4dda4c889e16142f3e020169dd8d7de1f549c517 with docs/publication/generation SUCCESS; application/strict live.62strict remains live,63application/strict live; preserve all. Prepare isolated PR65 recovery atop4dda4c88 while these run. Original65 757d423c4d21397ca36ff9233c6741257a4df72a baseda26324cb changes history.story.spec.ts and test-step-helper.ts to split acknowledged setup operations into bounded steps. Compare against already inherited helper/history changes before integrating; retain all acknowledgements and strict assertions, no budget inflation or obsolete runner reversion. Inspect actual Pantheon E2E instructions/structure before story reorganization. Classify historical65 failures and prepare exact semantic/baseline comparison plus appropriate Nix checks; no active65 push or unseen image promotion yet. Reconcile this handoff/meta and final64 hosted evidence into reviewer-attributed committed/pushed logs. No GitHub merge.
 
 
-## Prompt 134: Maintenance baseline verification
+## Prompt 134: Linux failure triage
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 00:09 Toronto”.
+
+Reviewer finding 2026-10-22 00:09 Toronto (queue after current diagnostic): #58 and #62 Linux verification completed with36 and70 failures. Logs retained /tmp/cluster58-0008-failure.log and /tmp/cluster62-0008-failure.log from jobs119568677251/119594903701. These include missing reviewed Linux baselines AND additional admission/identity/maintenance locator timeouts plus function socket hangups; do not classify all as baseline or known raster failures. At a natural boundary inspect first causal service/trace failure and compare generation artifacts; review/promote only new candidate families with matching provenance, retain strict verification. No broad duplicate rerun or timeout relaxation. Carry this attributed finding and checkpoint into committed/pushed logs; no merge.
+
+
+
+## Prompt 135: Observation visual review
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:10 Toronto”.
+
+Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png. Observation card is readable, but map labels Tupa and Tania Australis overlap behind it around x40-90/y215-225; record and resolve as an actual rendered-UI issue, or retain explicitly open rather than approve full composition. Also #61 publication job119592171086 failed exact-head check for6504a4a with HTTP404; log /tmp/cluster61-preview-0109.log. Diagnose preview path/publication at next natural boundary; do not weaken exact-head gate or duplicate broad CI. Keep current healthy work moving and carry attributed findings into committed/pushed logs. No merge.
+
+
+## Prompt 136: Observation recovery preparation
+
+Delegated reviewer instruction; main meta Reviewer PR62 green and PR66 preparation.
+
+Reviewer: Independently confirmed PR62 all five checks SUCCESS at05d30b209ad0121bcc30df25a1d58f6e791f7d3e; green frontier52-62.65 activehead48b9f7ca confirmed;63-65 docs/publication/generation SUCCESS with application/strict live. Preserve live runs. Prepare PR66 isolated recovery atop48b9f7ca: original0666727da28a8c05f1734ac11a1f0b66afb0efb7 based757d423c introduces observations.story.spec.ts and observation-input guard plus live-stellar-observations baselines. Read original delta carefully, preserve reviewed inherited references/source and later safeguards. Classify historical strict/publication failures; inspect actual Pantheon E2E structure/instructions before any story reorganization. Provide semantic audit and bounded complete four-size Linux candidate plan if missing references remain; no unseen image promotion, no obsolete-head rerun or active66 push yet. Maintain real acknowledged observations, privacy and retained-history checks and original budgets. Reconcile exact green checkpoint/handoff/meta in reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+## Prompt 137: Observation label correction
+
+Delegated reviewer instruction; main meta Reviewer PR66 visible label collision correction.
+
+Reviewer: Independently inspected PR66 fresh phone018 retained-report capture: Tupã and Tania Australis labels overlap above the observation panel. HOLD confirmed; no candidate baseline approval. Fix this actual map-label collision minimally in isolated PR66 preparation before promotion. Inspect the existing PR67 correction as reference, but do not import unrelated or unreviewed changes wholesale. Preserve map meaning, accessible selection, real observation actions and all original assertions/deadlines. Verify the source change under established Nix and regenerate one bounded complete four-size observation family with source/spec/renderer provenance; provide all56 originals, exact changed-hash comparison and complete review index for independent inspection. Prior candidate56 remain unapproved. Admin projection evidence is not authenticated foreign-read denial. Inspect actual Pantheon E2E instructions/structure before any story reorganization. Independently confirmed PR64 application nowSUCCESS at4dda4c88;63/64 only strict remain live,65 application/strict live. Preserve these runs. Reconcile this exact handoff and meta into reviewer-attributed PROMPTS/PROMPT_WORK, commit/push logs. No active66 promotion or GitHub merge.
+
+
+## Prompt 138: Observation parent reconciliation
+
+Delegated reviewer instruction; main meta Reviewer PR65 publication verified and PR66 reconciliation.
+
+Reviewer: Independently confirmed65 publicationSUCCESS at056a2f85;63/64 onlystrictlive,65application/strictlive. Preserve all jobs. While waiting, prepare isolated66 integration atop reviewed056a2f85 without active66 publication or new generation: reconcile original66 observation story plus reviewed172a6265 label fix with inherited route entropy/retention changes and approved baseline trees. Preserve56 corrected observation candidates frozen at /tmp/cluster-pr66-label-linux; none yet approved. Report exact executable/story/spec/renderer differences affecting those candidates and shared Scene families; do not assume evidence transfers if behavior changed. Verify inheritance and prompt-parent checks, inspect actual Pantheon instructions before story reorganization. I will continue independent56-image review. Keep scope green-stack repair; no PR67/newfeature expansion. Reconcile exact handoff/meta and recent checkpoints in reviewer-attributed committed/pushed logs. No merge.
+
+## Prompt 139: Maintenance baseline verification
 
 Delegated reviewer instruction; main meta Reviewer PR63 maintenance focus baseline approval.
 
@@ -1776,7 +1811,8 @@ Reviewer: Independently inspected PR63 short maintenance003 expected, actual and
 
 
 
-## Prompt 135: Complete maintenance candidates
+
+## Prompt 140: Complete maintenance candidates
 
 Delegated reviewer instruction; main meta Reviewer complete maintenance family correction.
 
@@ -1787,7 +1823,8 @@ Reviewer: Independently inspected short maintenance004 expected/actual/diff. App
 
 
 
-## Prompt 136: Maintenance family publication
+
+## Prompt 141: Maintenance family publication
 
 Delegated reviewer instruction; main meta Reviewer complete maintenance approval and publication.
 
@@ -1796,22 +1833,182 @@ Reviewer: Independently inspected maintenance007 expected/actual/diff: acknowled
 
 
 
-## Prompt 137: Route reproducibility correction
+
+## Prompt 142: Route reproducibility correction
 
 Delegated reviewer instruction; main meta Reviewer published maintenance and route factual mismatch.
 
 Reviewer: Independently verified active63 bb54c315 contains exactly three approved maintenance PNG hashes, all other reference files unchanged. Prepared64 64f680f2 product/tests/scripts/workflows/dependencies and complete baseline tree exactly equal corrected63; proceed with already-authorized64 publication after hosted63 verification (63publish nowSUCCESS). Independently inspected65 route022 expected/actual/diff: sole visible factual change Koit Unclaimed to Unknown; HOLD new baseline. Diagnose and repair reproducibility in isolated65 preparation atop reviewed64 while preserving live65 application retry. Reuse existing scoped emulator entropy mechanisms only after reviewing guards; establish actual observation acquisition inputs and assert report state before capture. Do not force production intelligence, mock reports, mask label, weaken assertions, inflate deadlines or alternate-baseline accept nondeterminism. If deterministic test inputs needed, keep real actions/reducers and production observation algorithm; demonstrate repeated complete bounded affected journeys yield stable facts/images, then present changed captures for independent review. No new66 work/promotion until this earliest distinct failure resolved. Reconcile exact handoff/meta with reviewer-attributed committed/pushed logs. No merge.
 
 
-## Prompt 138: Evidence retention recovery
+
+## Prompt 143: Evidence retention recovery
 
 Delegated reviewer instruction; main meta Reviewer repeat evidence retention and disk recovery.
 
 Reviewer: Pane reports40206119870 eight functional journeys passed and160/160byte-identical image pairs, but zero persisted acquisition summaries; retain failure classification, not complete reproducibility approval. Proceed with minimal summary-retention fix and regression validation after restoring headroom. Coordinate cleanup yourself to avoid concurrent writes: inventory only task-owned temporary archives/duplicate extractions; remove only demonstrably redundant copies whose complete originals remain verified locally or durably recoverable from verified unexpired remote artifact with digest/entry hashes recorded. Preserve every unique review original, trace, manifest and all repository/user files; no broad /tmp cleanup, store GC or unrelated caches. Record exact removed paths/recoverability and freed space, verify disk reserve before heavy work. Reuse existing captured image evidence where exact source/spec relationship permits; one fresh bounded repeated run after retention fix, no weakening summary equality requirement. Present complete changed image comparison against reviewed references, not merely pass-to-pass. PR63/64 application/strict stilllive; preserve runs. Reconcile exact handoff/meta plus latest checkpoints into reviewer-attributed committed/pushed logs. No merge or unseen baseline approval.
 
 
-## Prompt 139: Route reference approval
+
+## Prompt 144: Route reference approval
 
 Delegated reviewer instruction; main meta Reviewer complete route reproducibility and baseline approval.
 
 Reviewer: Completed independent visual inspection of all12 changed route captures using nine distinct expected/actual/diff triples;026exact024 in each size independently verified. Sole difference Koit Unclaimed to Unknown, consistent with declared stable entropy and real acquisition assertions; pending/retry controls and force counts remain readable. Large inspected at2048x1152 resize, scoped layout/content regression approval only, not full design/normal motion. Independently compared all160originals to48b9f7ca:148exact unchanged and12 changed; approve exact hashes in /tmp/cluster-pr65-route-repeat-linux/reviewer-approved-changed.json. Independently verified both persisted short summaries sameSHA3d1992b24d491b82c7d93b6895c8ecd3da9ad14d942c52dacf194b5e4ffef4c2. Retention run40209122713 passed, complete prior four-size160pair image evidence retained with original failed status. Integrate these12 exact references with reviewed entropy/retention/guard changes d9025f17 atop reviewed64; preserve all inherited references except approved maintenance3 and route12 relative to original65. Publish active65 by normal fast-forward, unchanged required CI and hosted revision/assets verification;63/64 strictlive must remain untouched. Reconcile source/spec/provenance and exact handoff/meta in reviewer-attributed committed/pushed logs. No GitHub merge. PR66 remains unapproved pending independent visual review.
+
+
+
+## Prompt 145: Shared scene verification
+
+Delegated reviewer instruction; main meta Reviewer PR63 and PR64 green; PR66 desktop inspection.
+
+Reviewer: Independently confirmed63 and64 all five checks SUCCESS; green frontier52–64.65 application/strict still live, preserve them. Completed corrected66 desktop14 inspection plus prior phone14 (13 distinct); exact hashes/findings appended meta. Large/short28 remain unreviewed, active66 publication still held. While I inspect remaining originals, advance the isolated84710ec4 preparation with bounded inherited shared Scene regression verification using established Nix/CI workflow: identify affected Galaxy/FleetRoute/FleetContacts story families and run strict comparison against inherited approved references, retaining actual/expected/diff for any failures. Do not approve or regenerate inherited baselines blindly, do not weaken checks. Respect disk floor; prefer remote execution and manifests until headroom permits selective evidence retrieval. No broad cleanup or unique-evidence deletion. If existing workflow cannot safely run scoped verification, report precise plan and constraint first. Reconcile latest phone/desktop review and exact handoff into reviewer-attributed committed/pushed PROMPTS/PROMPT_WORK/history logs. No new features, PR67 or merge.
+
+
+## Prompt 146: Observation regression approval
+
+Delegated reviewer instruction; main meta corrected PR66 complete observation review.
+
+Reviewer: Completed independent corrected observation review: phone14, desktop14, short14 and large14 (large ten distinct viewed, four duplicate hashes independently reverified). Large3840x2160 inspected at2048x1152: complete observation/scanning panel and navigation fit, current versus unknown versus historical facts distinguishable, selected/home/Tupa labels separated. Approve only exact56 regression baseline hashes in /tmp/cluster-pr66-label-linux/reviewer-approved-originals.json. This is scoped screenshot regression approval, not full concept-plate fidelity, normal-motion or release acceptance. You may record/promote these exact56 references on isolated prepared66 branch with provenance and unchanged story/source guards; active66 publication remains held for shared Scene regression results and source integration review. Keep run40213612377 and65 jobs healthy; inspect each inherited mismatch rather than blindly updating references. No merge, no PR67. Reconcile this exact handoff, prior short checkpoint and all review hashes into attributed committed/pushed logs.
+
+
+## Prompt 147: Scoped evidence recovery
+
+Delegated reviewer instruction; main meta PR65 application success and Scene phone diagnosis.
+
+Reviewer: Independent API confirms PR65 application SUCCESS, only strict live. Scene chart desktop/large/short SUCCESS; phone005-keyboard-orbit failed, four route cases still live/queued. Diagnose phone1066-pixel mismatch using expected/actual/diff; no automatic approval. First recover disk within the previously authorized task-owned redundant evidence scope: inventory remaining ZIPs/duplicate extractions, verify complete local originals or unexpired durable remote artifact with digest/entry hashes before deleting only redundant copies. Preserve all unique originals/traces/manifests and repository/user files; no broad cleanup/store GC. Record recoverability and freed bytes, restore floor plus required-copy reserve. If no safe redundant copies suffice, report exact shortfall and inventory without deleting other files. After headroom recovery, retrieve only necessary comparison triple/compact logs; keep remote artifact and healthy runs. Then integrate exact approved observation56 on isolated prepared branch, verify unchanged inherited refs; active66 remains held pending mismatch review. Commit/push attributed logs with precise blocker/evidence. No merge or new features.
+
+
+
+## Prompt 148: Phone chart approval
+
+Delegated reviewer instruction; main meta phone chart005 scoped reference approval.
+
+Reviewer: Independently inspected phone chart005 expected/actual/diff: only right-edge Gunibuu O label is shifted inward and fully readable; focus ring, selected system, star art and other content unchanged. Approve exact actual SHA2564986dc2113d0f63afe2d9f1523cc26583a7451a3190dbf4e6a3d9f753594322c replacing expectedc93f0b05691e8975456c0ed3511e1dcdf1788b82123bdeb54763e6087a21a0b0; diff9be80c48c1e13a5cc16734260ed645eb11eb866b66c9acd474c2ef658936376a viewed. Promote only this inherited reference on isolated preparation and rerun exact phone chart strict case with unchanged assertions/deadlines and full artifacts to expose remaining states; do not restart healthy route cases or PR65 strict. All56 observation gitblobs atc4d05c73 independently equal approved hashes. Disk recovery and logs noted. Active66 still held until representative regression results reviewed. Record exact handoff/provenance and commit/push logs; no merge.
+
+
+
+## Prompt 149: Observation integration publication
+
+Delegated reviewer instruction; main meta Reviewer PR66 integration verified and publication authorized.
+
+Reviewer: Independently verified40216095266 SUCCESS and prior seven scene cases SUCCESS. Integration50bfc72b independently checked: production src byte-identical reviewed172a6265; source/story/helpers/package unchanged from executed dc7e2a4e; all56 Linux observation blobs equal approved hashes; every inherited reference from056a2f85 unchanged except independently approved phone chart005. Publish prepared66 onto active PR66 via normal fast-forward integration preserving exact reviewed source/references and prompt histories, with required CI unchanged and hosted source/build/assets verification. Existing Darwin observation references are inherited original66 material, not newly independently approved; do not broaden approval claims. Preserve PR65 strict live; do not merge GitHub PRs. Full CI may expose other shared families, inspect/fix each actual diff. Keep scope green stack, no PR67 expansion while66 verification pending. Reconcile exact handoff and review evidence in attributed committed/pushed logs. Report resulting active SHA and checks. Representative passing runs are not full design/normal-motion/privacy/release approval.
+
+
+## Prompt 150: Approved gutter references
+
+Delegated reviewer instruction; main meta Reviewer four phone gutter diffs approved.
+
+Reviewer: Independently inspected all four PR66 phone expected/actual/diff triples from /tmp/cluster-pr66-current-diffs. Differences solely in left gutter behind foreground panels: clipped map-label text removed by reviewed label placement; roster/credit/system panels, controls, values, selected art and focus indicator unchanged. Approve exact actual baseline hashes: campaign-scheduled-start/phone/linux-arm64/026-started-rosters-2-dawn-envoy-2.png 5088b66aff976be6dada0a61ee23350ac903450bb9b4cbdf538c6398834e16cd; credit-exchange-ordinary and credit-exchange-recovery phone/linux-arm64/011-compose-2-exchange-recipient.png both c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32; selected-history-consent/phone/linux-arm64/017-return-to-chart-1-dawn-listener.png 733a24939e1d2e011ef561f266af325156e9589acb87ecb65991ea16d4490f9e. Promote only these four on prepared66, preserve all other references/source, and run complete affected phone journeys with strict assertions/deadlines unchanged to expose later states before publishing corrected66. Keep live67 candidate run untouched; any further differences need individual review. Review is scoped regression approval, not full concept or release acceptance. Also independently checked d7259f98 workflow/request/runner bindings, production and observation spec identical f741e8a0, and live job121264203778. Reconcile this exact handoff and preceding PR66 failure checkpoint in committed/pushed attributed logs. No merge.
+
+
+## Prompt 151: Complete candidate efficiency
+
+Delegated reviewer instruction; main meta Reviewer complete affected-phone diff inventory.
+
+Reviewer: Independently fetched terminal first two strict logs40225364900: ordinary now fails012-offer-shared recipient267pixels; start now fails026-started-rosters envoy4 206pixels. Earlier approved images passed; these are new unreviewed later states. Preserve still-live history/recovery jobs. To avoid serial first-failure reruns, after current matrix completes prepare one bounded candidate-generation run for all four complete affected phone journeys (118views), exact reviewed ae12fa12 source/specs and same budgets, retain original failures. Compare every candidate with inherited references and produce exact unchanged/changed/missing inventory with all changed expected/actual/diff triples for independent inspection. Generation is not acceptance, no automatic reference updates. Then promote only independently approved changed hashes and strict-verify complete journeys. No active66 publication until verified. Continue PR67 artifact verification/review prep; no duplicate download. Log this exact reviewer-directed efficiency correction and all evidence in committed/pushed logs. No merge.
+
+
+## Prompt 152: Complete gutter approval
+
+Delegated reviewer instruction; supervisor main meta records complete19-hash approval.
+
+Reviewer: Completed independent full candidate diff review for66 run40227118604. Verified all118 original and reference Gitblob hashes versus ae12fa12:99unchanged19changed,12distinct actual hashes. Viewed11 new distinct expected/actual/diff triples; remaining distinct c781e0ae is previously independently viewed/approved compose image, and duplicate expected/actual hashes independently rechecked. All differences are exclusively left/right map-label gutter fragments behind panels; foreground roster/owned-system/credit terms/acknowledgements/balances/focus are unchanged. Approve exactly19 hashes in /tmp/cluster-pr66-complete-gutter-candidates/reviewer-approved19.json for scoped regression. Preserve pre-existing scroll/duplicate feedback presentation as outside this label delta, not broad design acceptance. Promote these19 only atop approved four-image repair; run complete strict affected phone journeys unchanged, then publish corrected66 when passing and verify all required CI/hosted exact revision. No automatic approval of other diffs. Independently verified67first56 byte-identical5bf4597c;16new as previously reviewed, phone020home hold remains. Commit/push exact approvals, duplicate mapping, source/artifact provenance and attributed logs. No merge.
+[
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+    "sha256": "39a5198f2e6aa321a29f13904d8836864f9c1d0e4809a5219e0f603309d3d6be",
+    "referenceSha256": "66073c33911ec874398a480b846586d8050d2738ce48224d47ddd18af29cbbf3"
+  },
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+    "sha256": "7900f4f440ec20bb226b784d9907ea6e549a96ff3191dfacfd3e2fc444bd7f9c",
+    "referenceSha256": "1129940bc000f4be5de6e9bbf294d868e3c5b22a4d8d5e3eeac30cd956038c59"
+  },
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+    "sha256": "ad7870e26a289aa446b16efd055662b25cf51e0aae9151c56fbb7497dbdf6651",
+    "referenceSha256": "b22de1c06c31831528f2dfc5e7929969043a20edf207d542c6552e79553d8325"
+  },
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+    "sha256": "d297210d1aa82087db7e81dacce591ef04b88297a99d8bc12fc3dbcd12c799d8",
+    "referenceSha256": "d1fa595f674d94266053f38845d2d66f7247a655b0e0d2ff622414a6788b8591"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+    "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+    "referenceSha256": "59d2c5e714d72dbef572fa91e39347290252b26af84f717ba497904d8be759cf"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+    "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+    "referenceSha256": "59d2c5e714d72dbef572fa91e39347290252b26af84f717ba497904d8be759cf"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+    "sha256": "3778d289c32f8a2fa2242317051b3e3c52572bb0ee560254419b15f7abcf267a",
+    "referenceSha256": "35bf73f6c24f08a014f991cd868fcdba956284e516f4cde019199043ecc17a4a"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+    "sha256": "202b44d7af7eda3a80d03c190c0eef370ea89f606904908ff61f72910c22848c",
+    "referenceSha256": "99a14b34803aaeabf5d2eaf547977cbb46a2e2aaace3b0fe6ebd9463394d5eab"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+    "sha256": "b6ad1f5329803524edd330d65ca3cd06976f5cdca69ab6f592811cd76641f9bf",
+    "referenceSha256": "a0a53b3621716fda9c92392f7bc0552c250211b93798a452282092c730214643"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+    "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+    "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+    "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+    "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+    "sha256": "3778d289c32f8a2fa2242317051b3e3c52572bb0ee560254419b15f7abcf267a",
+    "referenceSha256": "35bf73f6c24f08a014f991cd868fcdba956284e516f4cde019199043ecc17a4a"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/013-review-terms-2-exchange-recipient.png",
+    "sha256": "202b44d7af7eda3a80d03c190c0eef370ea89f606904908ff61f72910c22848c",
+    "referenceSha256": "99a14b34803aaeabf5d2eaf547977cbb46a2e2aaace3b0fe6ebd9463394d5eab"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-2-exchange-recipient.png",
+    "sha256": "b6ad1f5329803524edd330d65ca3cd06976f5cdca69ab6f592811cd76641f9bf",
+    "referenceSha256": "a0a53b3621716fda9c92392f7bc0552c250211b93798a452282092c730214643"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/016-settled-2-exchange-recipient.png",
+    "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+    "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/018-second-offer-2-exchange-recipient.png",
+    "sha256": "ba9a06bf39b1ec3c2f3fee2a62d95187348dff9ca270f01d26d10585166ac8c6",
+    "referenceSha256": "9d44c3d03d91347224fa0f70ff8259e19731279846b00ef37fceaa1c3127ccd2"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/019-withdraw-2-exchange-recipient.png",
+    "sha256": "e119d35cc24c59c27f87bfcbdf3355976180124013719623915fc7fac2d7250a",
+    "referenceSha256": "3ce18be7776a77c4b6508f4c736468f3ebf22e2d5d4a3b069c85b33995b82cbb"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-2-exchange-recipient.png",
+    "sha256": "84c6110d0ed7e5139ac8c7cd6f1bee2c3a47d5c291acdd421a65398afadbed1a",
+    "referenceSha256": "f7b170293a72824f911a0e5e6b3b53b0b85b244d5456ed79b250b707b8a2435e"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+    "sha256": "84c6110d0ed7e5139ac8c7cd6f1bee2c3a47d5c291acdd421a65398afadbed1a",
+    "referenceSha256": "f7b170293a72824f911a0e5e6b3b53b0b85b244d5456ed79b250b707b8a2435e"
+  }
+]
+

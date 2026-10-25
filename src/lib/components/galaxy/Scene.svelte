@@ -25,6 +25,7 @@
       dust?.dispose();
     };
   });
+  import { galaxyLabel } from "$lib/galaxy-labels";
   import RouteLine from "./RouteLine.svelte";
   import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
@@ -39,6 +40,7 @@
     selected,
     onselect,
     owned = [],
+    home = "",
     fleets = {},
     stellarClass,
     cameraRequest,
@@ -59,6 +61,7 @@
     selected: string;
     onselect?: (id: string) => void;
     owned?: string[];
+    home?: string;
     fleets?: Record<string, number>;
     stellarClass: StarClass | "all";
     cameraRequest: { action: string; starId: string; sequence: number };
@@ -273,7 +276,12 @@
     {#if !routeFocus && !selectedContact && star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
         position={[0, 0.25, 0]}
         center
-        ><span class="quiet-label"
+        ><span
+          use:galaxyLabel={{
+            id: star.id,
+            priority: star.id === home ? 2 : owned.includes(star.id) ? 1 : 0,
+          }}
+          class="quiet-label"
           >{star.name} · {star.class}{owned.includes(star.id)
             ? " · You"
             : ""}</span
@@ -312,7 +320,9 @@
         side={DoubleSide}
       /></T.Mesh
     ><HTML position={[0, 0.5, 0]} center
-      ><span class="star-label">{target.name}</span></HTML
+      ><span use:galaxyLabel={{ id: target.id, priority: 3 }} class="star-label"
+        >{target.name}</span
+      ></HTML
     ></T.Group
   >{/if}
 
@@ -348,6 +358,7 @@
     text-shadow: 0 2px 4px #000;
   }
   .quiet-label {
+    display: inline-block;
     font-size: 12px;
     color: #e7dfce;
     text-shadow:
@@ -373,6 +384,7 @@
     }
   }
   .star-label {
+    display: inline-block;
     color: #f5e9ce;
     font-size: 18px;
     text-shadow: 0 2px 8px #000;
