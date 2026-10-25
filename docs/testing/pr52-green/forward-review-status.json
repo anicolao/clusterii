@@ -107,5 +107,27 @@
     "reviewedAvailable": 66,
     "reviewedAcceptable": 65,
     "geometryScope": "Reviewer confirms desktop0176px overlap. Phone/large017 last status text ends left of focused button, so no current collision there; all changed captures require reinspection after shared spacing fix."
+  },
+  "pr60": {
+    "path": "/tmp/cluster-pr60-reviewer-candidates",
+    "extraction": {
+      "files": 199,
+      "bytes": 259890333,
+      "integrity": "Reviewer reports completed selective CRC verification; do not duplicate retrieval"
+    },
+    "captureSource": "8751935c751778933664db38b54c507fc853a22f",
+    "applicableHead": "03a2a8e4ab83f666018e42856d078881b2b8ef8e",
+    "treeComparison": "Reviewer confirmed empty full-tree diff; recheck intervening fixes before promotion",
+    "passedManifests": 3,
+    "reviewedAcceptable": 96,
+    "viewports": {
+      "phone": 32,
+      "desktop": 32,
+      "large": 32,
+      "short": "absent/unapproved"
+    },
+    "inspection": "Reviewer inspected20 exact-SHA representatives per viewport; scope/viewing limits retained in meta-prompts",
+    "promoted": false,
+    "prerequisites": "Ordered52\u219253\u219254 then forward; PR59desktop017 hold and PR54freshLinux requirement unchanged"
   }
 }
