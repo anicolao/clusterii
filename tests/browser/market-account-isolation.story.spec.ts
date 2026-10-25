@@ -418,7 +418,49 @@ test("Live market allocation isolates saved accounts on the same browser", async
           await rail(owner);
         },
       },
-      verifications: [unchanged],
+      verifications: [
+        unchanged,
+        {
+          spec: "The entire focused Space station control and its painted focus ring remain inside the allocation reading region after validation.",
+          check: async () => {
+            const input = points(owner, "Space station");
+            await expect(input).toBeFocused();
+            const bounds = await input.evaluate((element) => {
+              const region = element.closest(".focus-scroll") as HTMLElement;
+              const r = region.getBoundingClientRect(),
+                b = element.getBoundingClientRect();
+              const style = getComputedStyle(element);
+              const ring = element.matches(":focus-visible")
+                ? Math.max(
+                    0,
+                    parseFloat(style.outlineWidth) +
+                      parseFloat(style.outlineOffset),
+                  )
+                : 0;
+              return {
+                top: b.top - ring,
+                bottom: b.bottom + ring,
+                left: b.left - ring,
+                right: b.right + ring,
+                clipTop: r.top + region.clientTop,
+                clipBottom: r.top + region.clientTop + region.clientHeight,
+                clipLeft: r.left + region.clientLeft,
+                clipRight: r.left + region.clientLeft + region.clientWidth,
+                scrollTop: region.scrollTop,
+                ring,
+              };
+            });
+            await info.attach("focused-control-bounds", {
+              body: JSON.stringify(bounds),
+              contentType: "application/json",
+            });
+            expect(bounds.top).toBeGreaterThanOrEqual(bounds.clipTop);
+            expect(bounds.bottom).toBeLessThanOrEqual(bounds.clipBottom);
+            expect(bounds.left).toBeGreaterThanOrEqual(bounds.clipLeft);
+            expect(bounds.right).toBeLessThanOrEqual(bounds.clipRight);
+          },
+        },
+      ],
       views: [reusedPeerView, peerView],
     });
     await story.step("sign-out-second-commander", {
