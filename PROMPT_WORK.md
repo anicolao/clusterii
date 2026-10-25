@@ -269,3 +269,5 @@ Prompt 55 | 13e5a8fd59a1b11bacb04c6919c3d6db0e74b1993c52e0881f84808d17ae2655 | C
 Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | Carry separately reviewed Linux live consent candidates into feat/live-credit-stories
 
 Prompt 69 | 9430f52d3d07628cecbcda944f5192332a09671342bfb3b48a32cb266d1c4346 | Retain second pre-test setup failure and use explicit owned Firestore websocket with normal project-root configuration.
+
+Prompt 74 | b636ddc861570349646aad5591a9a83da187819c0e5db3469a08a829277464d2 | Integrate both branch histories with exact parent archives and tested verbatim prompt and continuation preservation.

@@ -4095,3 +4095,263 @@ Independently opened full393x852 local phone originals at /tmp/cluster-pr54-cred
 ## Reviewer PR57 extraction checkpoint
 
 Selective extraction completed127files159772239bytes with ZIP CRC verification. Exactly60PNG fleet candidates:20each phone/desktop/large; all3 family manifests passed. No short family manifest or complete short images, consistent with short generation execution failure. Full source tree diff between clean artifactc2f919bce69c167c0f0a7247063de7556ee07c34 and57head1ba7cac0d4e8ac92dabe4de0e6ea2e7501b7248f is empty. These60 remain UNINSPECTED; no fleet baseline approval yet.
+
+## Reviewer baseline inspection — PR57 fleet complete available families
+
+Independently viewed all60 available fleet originals (20each phone393x852,desktop1440x1000,large3840x2160) via13 exact SHA representatives per size. Inventories /tmp/cluster-pr57-{phone,desktop,large}-groups.json:010inspect1;010inspect2 (same0112/0122/0132);011choose1;012reserve1;013reload1;015formed1;015formed2 (same0162/0172/0182);016map1;017disband1;018reload1;020disbanded1;020disbanded2 (same0212);021recover1. All60 acceptable scoped references at source verified in prior entry: invalid21infantry disabled with capacity message,20valid,18available/2reserved fighters and0available/20reserved infantry, formed2/20 fleet, disband queued versus completed clear, final22/22forces and fleet0, keyboard focus restored, independent private panel consistent. Phone partial headings/buttons at scroll boundaries are bounded scrolling. Large full compositions were downscaled to2048x1152; not native-pixel inspection. Short family absent/unapproved, requires fresh successful generation. No economic-rule/release approval implied.
+
+
+
+## Reviewer live result — PR52 cadb strict check
+
+Run40146647687/job121029307652 completed failure01:03:34UTC25Oct. Exact log/tmp/cluster-pr52-cadb-failed.log:111passed,1failed identity-validation short001sign-in screenshot. This is one of the two previously inspected/promoted references; do not assume stability or blindly alternate baseline. Agent actively retrieving exact new artifact. Application check still running. Need inspect expected/actual/diff and compare hashes to prior variants before next action.
+
+
+
+## Reviewer exact artifact — PR52 raster alternation established
+
+Bounded extraction of artifact12581856096 completed3PNGs2606597bytes CRC checked under /tmp/cluster-pr52-cadb-review. Independently viewed full expected/actual/diff. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 is byte-identical to the ORIGINAL baseline replaced bycadb; expectedfb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9 is the previously approved actual. Diff only intro text raster. This proves cross-run alternation between the two observed variants despite earlier96-observation probe stability; do not infer stable baseline from that probe. No blind reversion or tolerance/masking approval. Diagnose and fix fractional text layout/paint causally, then inspect stabilized output and rerun exact checks.
+
+
+
+## Reviewer handoff — PR52 exact alternation
+
+Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
+
+
+
+## Reviewer candidate code check — PR52 whole-pixel leading
+
+Read published investigation sourceeee5d6d3b05fb7aed304658a2e966e9635d1bd6e (no PR, PR52head unchanged). Only app style correction is identity intro28px line-height inside existing min-width701/max-height760 media query. Focused runner selects exactly2existing real short identity tests, asserts2tests2files, retains original assertions/timeouts, retries0, update-snapshotsnone, generates only candidates. Branch-only request/workflow bound to source parent/executor; Nix pinned ARM renderer. New live run40149691891 executor01aaf4e556aad8808f6fcef91ef439ff5f04d046 confirmed in_progress. No fix/stability claim from code alone; no required verification weakened. Independently compared retained current validation and keyboard-return .layout.json: entire parsed JSON equal. This supports paint variability despite matching recorded post-capture geometry; does not prove fractional leading as cause. Await real pinned-renderer output for visual inspection.
+
+
+
+## Reviewer fresh baseline inspection — PR52 whole-pixel leading
+
+Run40149691891 succeeded; artifact12582088259 already retrieved by implementer at /tmp/cluster-pr52-leading-linux/originals. Independently viewed all11 full1280x720 PNGs across identity-validation6 and identity-keyboard-return5. All acceptable scoped references: invalid draft and selected portrait retained, validation/focus readable, corrected identity saved/recovered, keyboard learning and return states preserved. Independently compared bytes against current PR52 checkout references:9 identical; only validation001 and keyboard004 differ, both SHA87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129. Both match original previously inspected raster. Approval applies together with reviewed28px CSS correction, not a blind baseline reversal. Focused generation proves these two journeys passed and produced matching sign-in rasters; does not prove full-suite stability. Proceed with minimal CSS plus2 reference changes and provenance/logs to PR52, then required strict/application checks; retain unchanged exact comparison requirements.
+
+
+
+## Reviewer forward evidence — PR58 fleet reorganization
+
+PR58heada6838a2eee3a2725da63a53d473379b3a2fb4ff0 application/documentation succeeded; old strict/generation run39700623837 failed. Retained exact failed log/tmp/cluster-pr58-failed.log. Generation121passed8skipped23failed:2large(return briefing and selected-history),21short including reorganization; do not assume short family available. Read production diff for recovered split/merge propagation: stored action restored into owned accessible fleet panel, cleared on accepted receipt and teardown; no new definite code finding from this initial read. Selective CRC-checked artifact12402018661 extraction underway session24415 into/tmp/cluster-pr58-reviewer-candidates, only live-fleet-reorganization PNG/JSON. No58 baseline approval yet. PR52newhead4f917d72 required jobs confirmed live, no duplicate run.
+
+
+
+## Reviewer partial visual inspection — PR58 desktop
+
+Independently viewed all34 desktop1440x1000 candidates through21 exact-SHA representatives in/tmp/cluster-pr58-desktop-groups.json. All acceptable scoped references: invalid41infantry/4fighters blocked;4/18formation reserves16/2available; pending split1/8 retained through reload with acknowledgement distinct from acceptance; settled split leaves3/10 and1/8; recipient reserved against conflicting orders; merged4/18 restored; independent20→21→22→24forces consistent and final Fleets keyboard focus visible. Groups:010inspect1;010inspect2=0112/0122/0132;011choose1;012reserve1;013reload1;015formed1;015formed2=0162/0172/0192/0202/0222;016invalid1;017review1;019pending1;020reload1;022accepted1;024split1;024split2=0252/0262/0272/0282;025choose1;026accepted1;027reserved1;028reload1;030merged1;030merged2=0312;031return1. Desktop manifest passed, clean sourced6885b03e796dc7b6b047e1d45d97da9c833a616, specsha8531a5bbb0d138362c4e87fa2b802ddf064353374fc8d6087551114c51e955c6. Remaining sizes not yet inspected. No full-family or release approval.
+
+
+
+## Reviewer source applicability — PR58
+
+Fetched exact generation sourced6885b03e796dc7b6b047e1d45d97da9c833a616. Full tree diff to58heada6838a2eee3a2725da63a53d473379b3a2fb4ff0 is empty. Thus desktop inspection applies to entire current production/helper/spec/assets/dependency tree. Extraction still live24415: desktop34 and large34 complete on disk, phone12 currently partial; do not inspect/promote incomplete phone manifest. PR52documentationpassed; application/strict/publish still live at4f917d72.
+
+
+
+## Reviewer baseline inspection — PR58 available families complete
+
+Selective extraction terminated successfully:211 files276371377bytes CRC checked at /tmp/cluster-pr58-reviewer-candidates. All3 manifests passed,34PNG each phone/desktop/large; short absent and unapproved. Independently viewed phone34 through21 exact-SHA representatives and large34 through21 representatives using /tmp/cluster-pr58-{phone,large}-groups.json, same groups as desktop entry. Final2 large images were reopened separately after truncated output, and only then counted. All102 available compositions acceptable scoped regression references at previously verified identical source tree: pending split retained after reload, invalid capacity disabled, accepted and settled states distinct, recipient reservation visible, final4/18 fleet and independent24/24 forces consistent, galaxy keyboard focus visible. Phone edge clipping is bounded scrolling. Large3840x2160 compositions displayed2048x1152, not native-pixel inspection. This does not approve missing short images or economic rules. PR52 latest checks: documentation and publish success; application and strict still running at4f917d72. Generation job success is not evidence of newly generated captures when generation was skipped.
+
+
+
+## Reviewer handoff — PR58 available families approved
+
+Reviewer: completed PR58 selective extraction211files276371377bytes CRC verified and inspected all102 available phone/desktop/large captures via21SHA groups each; all acceptable scoped references, full source tree applicability already confirmed. Short absent/unapproved. Mainmeta records exact evidence and truncation recovery. Reconcile all latest mainmeta entries into reviewer-attributed PROMPTS/PROMPT_WORK as applicable and commit/push logs at next substantive checkpoint. PR52 documentation/publish now success; strict/application remain live. Continue existing runs then work forward52→53→54; do not duplicate runs/downloads or merge.
+
+
+
+## Reviewer forward evidence — PR59 cancellation
+
+PR59head943fdce043b4c3f6d6c59e58605c43486df41900 basefeat/live-fleet-reorganization-stories. Application/documentation succeeded; strict39700629454 failed105passed8skipped43failed, generation118passed8skipped30failed including short cancellation during identity setup. Retained /tmp/cluster-pr59-failed.log. Read new696-line cancellation story and clock-test diff: checks request-bound accepted cancellation receipt, single revision, original reservation release, unsubmitted3-fighter draft preserved through review/keep/cancel, confirmed cancellation after reload, no execution at original tick, duplicate settlement no-op and independent member privacy. No new production implementation in59. Selective bounded CRC extraction artifact12407819435(2602364531bytes) started session82902 via/tmp/cluster-pr59-extract.py into/tmp/cluster-pr59-reviewer-candidates,139PNG/JSON selected. No candidate inspected or approved yet; source/manifests still to verify. PR58 evidence ledger/logs confirmed committed/pushed by implementer a41b9db3. PR52 strict/application confirmed still live; no restart.
+
+
+
+## Reviewer partial visual inspection — PR59 desktop and focus spacing
+
+Independently inspected all22 desktop1440x1000 candidates via13 exact-SHA representatives /tmp/cluster-pr59-desktop-groups.json. Groups:010inspect1;010inspect2=same0112/0122/0132/0142/0152/0162/0172/0182;011choose1;012reserve1;013reload1;014review1;015keep1;016cancel1;017released1;018reload1;020never1;020never2=0212;021return1. Twenty-one acceptable scoped references: original4/18 order distinct from3/0 draft, review/keep unchanged,20/20 released,21/21 after production,no fleet,keyboard return visible. HOLD017-released-draft-1-fleet-marshal.png: top edge of Form fleet focus outline touches/overlaps bottom of cancellation status line around y925. Require measured footer/status spacing correction and fresh inspection; do not approve that defect. Desktop manifest passed, clean sourcece7c78a1c188daa79672fc2e0a1faf94f7d1e15e,specsha007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a. Fetched exact source; full tree diff toPR59head943fdce043b4c3f6d6c59e58605c43486df41900 empty. Other sizes not yet inspected, extraction82902 remains live.
+
+
+
+## Reviewer handoff — PR59 focus/status spacing
+
+Reviewer: PR59 desktop22 inspected; hold017-released-draft-1-fleet-marshal.png at /tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64: Form fleet top focus outline touches/overlaps cancellation status bottom around y925. Diagnose measured footer spacing and correct in stack order with fresh captures; do not approve this defect. Other21 desktop acceptable at sourcece7c78a1c188daa79672fc2e0a1faf94f7d1e15e(full tree identical59head). Other sizes UNINSPECTED; extraction82902 live139selectedfiles, do not duplicate. Mainmeta has source/group details and new59evidence; reconcile next substantive logs. Keep52requiredchecks first and ordered publication; no merge.
+
+
+
+## Reviewer PR59 extraction complete
+
+Session82902 terminated exit0,139selectedfiles177934761bytes downloaded with ZIP CRC verification. Other-size inspection remains outstanding; no blanket approval from successful extraction.
+
+
+
+## Reviewer baseline inspection — PR59 phone and large complete
+
+Inspected all22 phone393x852 and22 large3840x2160 originals via13 exact-SHA representatives each in /tmp/cluster-pr59-{phone,large}-groups.json, same groups as desktop. All44 acceptable scoped references at source already verified. Phone confirmation wraps at word boundaries, status remains readable, original4/18 reservation distinct from unrelated3/0 draft, cancellation releases20/20 and production reaches21/21 with no fleet. Large full compositions displayed2048x1152, not native-pixel inspection. Phone/large017 status ends left of focused button, so desktop's actual text collision is not present in those compositions. All66 available captures now inspected:65 acceptable, desktop017 withheld. Short0 absent/unapproved. All3 available family manifests passed. Any spacing correction requires reinspection of changed captures. Implementer independently measured desktop textbottom930 versus outline top924 (6px overlap), tracing scoped .feedback p rule not reaching Feedback.svelte; diagnosis/hold committed/pushed85dfe3a9.
+
+
+
+## Reviewer handoff — PR59 inspection complete
+
+Reviewer: PR59 extraction completed139files177934761bytesCRC; all66 available phone/desktop/large captures now inspected.65 acceptable scoped references, desktop017 still withheld for confirmed6px focus/status overlap. Short absent/unapproved. Phone andlarge017 do not have text collision because last text ends left of focused button, but recheck all changed captures after spacing fix. Mainmeta has exact groups/scope. Confirmed your85dfe3a9 diagnosis. Please reconcile completion next substantive log commit. Preserve52→53→54 publication order and fix59 when reached; no duplicate downloads or merge.
+
+
+
+## Reviewer forward evidence — PR60 cargo
+
+PR60head03a2a8e4ab83f666018e42856d078881b2b8ef8e basefeat/live-fleet-cancellation-stories. Application/documentation succeeded; required strict39702042929 failed104passed8skipped48failed, generation113passed8skipped39failed, including cargo short during identity setup. Retained/tmp/cluster-pr60-failed.log. Read full695-line new cargo story: actual formation2fighters20infantry; invalid unload21/load6 blocked, valid unload5/load3 receipt/revision/order checks, canonical forces unchanged until real leased settlement, exact ledger and production conservation, repeat tick no-op, private member projections and reload recovery. No production changes in60; no new definite code finding. Bounded selective artifact12403270471(2322635068bytes) extraction active session54198 script/tmp/cluster-pr60-extract.py into/tmp/cluster-pr60-reviewer-candidates,199PNG/JSONselected. No images inspected or approved, source/manifests outstanding. PR59 completion log reconciliation confirmed committed/pushed99be877c. PR52 strict/application confirmed live; no duplicate run or merge.
+
+
+
+## Reviewer baseline inspection — PR60 available families complete
+
+Selective extraction session54198 completed exit0:199 selected files259890333bytes ZIP CRC checked. Independently inspected all96 available PNGs,32 each phone393x852/desktop1440x1000/large3840x2160 through20 exact-SHA representatives per size; inventories /tmp/cluster-pr60-{phone,desktop,large}-groups.json. All acceptable scoped regression references. Invalid formation21/unload21/load6 disabled; formation2/20 reserves18available2reserved fighters and0available20reserved infantry; unload5 accepted tick2 retains20 aboard until settlement15; load3 reserves3 of7 surface infantry, accepted tick3 retains15 aboard until settlement18; reload retains accepted5/3 orders while unsubmitted input defaults1; final system22fighters6infantry,Fleets1 keyboard focus visible. Phone clipping at scroll viewport boundaries is expected; footer status readable and no focus/status collision in these frames. Large images displayed2048x1152, not native-pixel inspection. All3 story manifests passed, clean source8751935c751778933664db38b54c507fc853a22f,specsha8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276. Exact fetched source full-tree diff to60head03a2a8e4ab83f666018e42856d078881b2b8ef8e empty. Short absent/unapproved. No economic-rule or release approval implied. PR52 strict/application still live at4f917d72; preserve existing runs.
+
+
+
+## Reviewer handoff — PR60 inspection complete
+
+Reviewer: all96 available PR60 cargo captures inspected and acceptable scoped references,32 each phone/desktop/large via20 exact-SHA groups each. Extraction54198 completed199files259890333bytesCRC; root/tmp/cluster-pr60-reviewer-candidates. All3 manifests passed clean8751935c751778933664db38b54c507fc853a22f, full tree identical60head03a2a8e4ab83f666018e42856d078881b2b8ef8e. Short absent/unapproved. Mainmeta records evidence, groups and viewing limits. Reconcile into reviewer-attributed PROMPTS/PROMPT_WORK and commit/push logs at checkpoint. PR52 strict/application remain live; continue existing runs and publication52→53→54, then forward. Preserve PR59 desktop017 hold and PR54 freshLinux requirement. No duplicate runs/downloads or merge.
+
+
+
+## Reviewer evidence and baseline inspection — PR61 travel
+
+PR61 head6504a4ad96cad070d74a77c374e7b3ee9ecd58ac, basefeat/live-fleet-cargo-stories. Application/documentation succeeded. Historical strict39704795083/job119582175161:96passed8skipped60failed; generation job119582174977:112passed8skipped44failed. Travel phone/desktop strict failures are missing Linux references; generation large fails Choose your faction during campaign creation, short fails Commander name during authentication. These are execution failures, not image mismatches. Publish39704791593/job119592171086 failed hosted revision verification with HTTP404, retained/tmp/cluster-pr61-publish-failed.log; exact-head publication must be verified when reached. Full strict/generation failures retained/tmp/cluster-pr61-failed.log.
+
+Read911-line travel story and91-line guarded clock test plus design review. Real authenticated formation and route controls, no state injection; invalid leg adds no command, repaired draft retained through panel navigation, accepted receipt/revision and order checked, reload no-op, leased departure/arrival and duplicate delivery no-op, full forces conserved with recorded production, other member private projections checked. Does not claim interrupted route draft recovery or human approval of proposed rules. No definite new code defect found.
+
+Selective extractor/tmp/cluster-pr61-extract.py session74449 completed exit0:118selectedfiles35952391bytes CRC checked from artifact12400977962(total1927367988). Root/tmp/cluster-pr61-reviewer-candidates. All56 available PNGs independently inspected:28phone393x852 and28desktop1440x1000 via18 exact-SHA representatives each, inventories/tmp/cluster-pr61-{phone,desktop}-groups.json. Both manifests passed clean113e488a56de5131d3488f6400829f5ecc779263,specshaa258a643c567cb1e578fe12ad352692f3019881f9164046f77e198189d367b07. Fetched source; fulltree diff to61head empty. All56 acceptable scoped regression references:2/20 formation/reservation, Tupa3.50ly2ticks valid, Algedi10.49ly beyond-range disabled with remedy, repaired Sendfleetfocus visible without collision, accepted departure2/arrival4, retained after reload, traveling2/20, arrival2fighters0aboard plus20surface, orbit/surfaceFleetmarshal, final stationedTupa. Phone clipped content is within bounded scroll regions; footer status/control readable. Large and short absent/unapproved. PR52 strict/application remain live at4f917d72. PR60 ledger confirmed committed/pushed58f38617.
+
+
+
+## Reviewer handoff — PR61 available captures approved
+
+Reviewer: inspected all56 available PR61 travel candidates,28phone28desktop via18 exact-SHA groups each; acceptable scoped references. Extractor74449 complete118files35952391bytesCRC at/tmp/cluster-pr61-reviewer-candidates. Clean source113e488a56de5131d3488f6400829f5ecc779263 fulltree identical61head6504a4ad96cad070d74a77c374e7b3ee9ecd58ac. Large/short absent and unapproved: generation failed campaign creation/identity setup respectively. Historical61publish also failed hosted revision HTTP404; require successful exact-head publication when reached. Full details and logs in latestmainmeta. Reconcile reviewer-attributed logs and commit/push at checkpoint. Keep existing52runs and52→53→54 publication order; no duplicate jobs/downloads, tolerance changes or merge.
+
+
+
+## Reviewer checkpoint — PR52 exact verification passed
+
+At 2026-10-25 01:58 UTC independently queried required run40150284054 on head4f917d724022107f4c6550b11740ae45dcbe446f: Exact verification step succeeded at01:57:43; artifact upload remains live. Application40150284065 remains live, so PR52 is not yet declared fully green. Publish/documentation succeeded. Human clarification about inspection before approval already logged verbatim; no duplicate prompt appended.
+
+
+
+## Reviewer handoff — finish first green PR
+
+Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; upload still live, application40150284065 still live. Finish monitoring these existing jobs, verify all required statuses at exact4f917d72 head, then work forward to53 immediately with the reviewed whole-pixel identity correction and applicable inspected references. Keep full comparisons/assertions; no blind approval, duplicate runs or merge. Reconcile latest mainmeta checkpoint into attributed logs and commit/push at substantive checkpoint. Prioritize first fully green PR and ordered forward publication over new features. Existing54/59 visual holds remain.
+
+
+
+## Reviewer evidence — PR62 interrupted route
+
+PR62 headff1d616183df97aaa4fcc71d2e5c59cb32444711, base61. Read full1224-line recovery story, production diff and added27-line guard test plus design review. Submitted-command recovery selects matching campaign/private owned fleet, restores waypoints once, retains context if receipt precedes private view, preserves existing/empty edits, clears on new submission. Story retains original authenticated command path/encrypted payload across withheld delivery, reload and retry; delivers unchanged real command through authenticated RTDB ingress while offline, proves durable pending record before reconnect and digest-bound receipt/cleared record afterward, single revision and conserved forces, real leased departure/arrival, duplicate delivery no-op and sign-out privacy. No new definite code finding from this read; no visual approval.
+
+Historical strict39708780947/job119594903701 failed70, passed90, skipped8. Interrupted-route phone/desktop/large fail at first missing Linux reference; short fails Commander name during identity setup. Generation job119594904025 succeeds only setup/helper tests; log explicitly says no files found/no artifacts uploaded at04:19:36. API lists only verify artifact12400034154(1332701975bytes). Branch workflow inventory contains only this run; no generated Linux candidate family available in that run to inspect or approve. Retained/tmp/cluster-pr62-{failed,generate}.log. Do not mistake green generation status for screenshot evidence. Generate fresh pinned-Nix candidates when62 is reached after repaired predecessors; inspect before promotion. PR52 strict is now terminalSUCCESS37m20s, application40150284065 remains live. Existing implementer is preparing53 while awaiting that exact job; no duplicate handoff needed yet.
+
+
+## Reviewer forward triage — PR63
+
+PR63 head9050d65ecd1589d44500690750a27a9d0821a42f, base62, title Illustrate paused fleet travel and repeat-safe catch-up. Application/documentation passed historically. Strict39723194222/job119641117985 failed76, passed88, skipped8. Paused-fleet-travel phone/desktop/large missing first Linux reference, short fails identity setup. Generation119641117662 explicitly reports no files found/no artifacts uploaded; API lists only verify artifact12409455449(1211732319bytes). Retained/tmp/cluster-pr63-{failed,generate}.log. No new production diff; story not yet fully reviewed and no visual approval. Fresh pinned-Nix candidates required when reached; green generation job alone supplies no evidence.
+
+
+
+## Reviewer code comparison — PR63
+
+Read complete story delta against previously reviewed PR61 travel story. New coverage uses ordinary pause/resume controls; verifies identical military/economy while paused, concurrent overdue delivery [0,0], reload same paused private route, exact one-hour boundary shift without advancing tick/forces, concurrent delayed catch-up commits exactly duration ticks, checks each immutable revision's production and conserved totals, no premature arrival, repeated delivery [0,0], and removed lease. Remaining journey unchanged from reviewed61 except centered scroll and reopening route after roster. No definite new code finding. This remains code review only: missing Linux captures need generation and independent inspection before approval.
+
+
+
+## Reviewer forward patch check — PR53 preparation
+
+Read current uncommitted53 workflow/CSS diff. Workflows and app.css match52head4f917d72; new Nix files and scripts/ci-in-renderer.sh are currently untracked, so git diff against52 misleadingly reports them deleted. Independently compared actual file git hashes to52blobs: all five identical. Runner retains check/lint/unit/story-policy/service/browser and exactstory checks. No implementation edit by supervisor, no acceptance of incomplete patch/unstaged provenance.
+
+
+
+## Reviewer handoff — forward review evidence
+
+Reviewer: while you prepare53, mainmeta now records full62 code review and63 comparison against reviewed61 story. No new definite code defects found. Both62 run39708780947 and63 run39723194222 successful generate jobs explicitly produced no files/artifacts; only verify artifacts exist, so no Linux family approved. Generate fresh pinned-Nix candidates when reached and inspect before promotion. Logs retained /tmp/cluster-pr62-{failed,generate}.log and /tmp/cluster-pr63-{failed,generate}.log. Also independently confirmed your53 workflow/CSS and actual five Nix/runner file hashes match52head4f917d72. Reconcile these mainmeta findings in next attributed log commit; continue current first-green/53 sequence without interrupting or duplicating jobs. No merge.
+
+
+## Reviewer clarification — parent integration is authorized
+
+Implementer asks whether no-merge prohibits parent-to-child Git integration. User instruction explicitly says do not merge PRs and requests stacked PRs based on preceding branches; routine conflict resolution and parent integration are within that scope. Reviewer directs proceeding with a normal parent-to-child Git merge preserving both histories and append-only prompt logs. Do not merge/close GitHub PRs, force-push or rewrite history. No additional human permission needed for this routine preparation.
+
+
+
+## Reviewer handoff — resolve stack conflict
+
+Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
+
+
+## Reviewer code and CI review — PR64 viewport cohorts
+
+PR64 heada26324cb00e770fd4503c76c8db39ae6005dc9d4, base63. Read complete workflow/package/runner/cohort module and210-line tests diff. Sequential fresh emulators retain every viewport's output and logs, preserve previous evidence, fail on collisions, maintain interruption across children, guard occupied ports, continue independent viewports but throw aggregate failure. No screenshot/assertion/tolerance weakening. Independently ran the five committed cohort tests via established Nix environment on exact-source files in/tmp/cluster-pr64-review; all5passed0failed. This is runner verification, not player-screen approval.
+
+Historical strict39724010454/job119643687547 has viewport counts29/29/29/28passed,12/12/12/13failed and2skipped each (total115passed49failed8skipped). Missing Linux references remain; short reaches formation rather than failing identity setup for those new fleet stories. Generation119643687700 produced no files/artifacts, API only verify12405503333(1846046879bytes). Logs/tmp/cluster-pr64-{failed,generate}.log. No baseline approval implied. Current52runner predates64 and does not yet use cohorts; preserve this later additive behavior during forward integration, do not overwrite it with52runner wholesale.
+
+
+
+## Reviewer code and retained exact evidence — PR65 history setup
+
+PR65 head757d423c4d21397ca36ff9233c6741257a4df72a, base64. Read complete history/helper diff and design review: fifteen distinct acknowledged setup operations use unchanged30-second step budget and90-second total test deadline; no retry/assertion/expected-image changes. Helper rejects empty/duplicate descriptions and records controls only after success. Historical strict39724370529 has116passed48failed8skipped, unrelated missing families remain. Generation119644812983 produced no files/artifacts. Publish39724370582 failed exact-head hosted revision withHTTP404; require successful publication when reached. Logs/tmp/cluster-pr65-{failed,generate,publish}.log.
+
+Selectively extracted only campaign-history JSON metadata from verify artifact12405425226,50files547144bytes ZIP CRC checked, extractor25341exit0; root/tmp/cluster-pr65-history-evidence. All4 manifests passed in verify mode:phone12views,desktop/large/short10each(42total),each15completedsetupcontrols. Clean source4f13d4fb9d024a082950d0b39f47f4a6be1491b3 fetched; fulltree diff to65head empty. Exactspecshaec5d81d686148906ff984266f2d638ec48ccde4987479349c03c456a49bc5cae. This confirms the Linux setup/history journey passed against inherited exact references; no new visual approval or fullPRgreen claim.
+
+
+
+## Reviewer handoff — PR64 and65 evidence
+
+Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
+
+## Reviewer finding — PR53 archive validation whitespace
+
+Read in-progress preservePromptHistory helper. Exact staged regular-file archive check is good; canonical comparison currently calls trimEnd() on each prompt body. That allows altered trailing spaces/newlines in the canonical copied request to pass a check whose message promises verbatim retention. Human prompts include intentional byte-preservation requirements and at least one trailing space. Preserve exact body bytes with only a precisely defined heading separator handled, and add a negative test changing trailing body whitespace while archive remains exact. Keep immutable archive equality and child-prefix checks; no gate bypass.
+
+
+
+## Reviewer handoff — tighten canonical archive check
+
+Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
+
+
+## Reviewer finding — archived-base continuation bypass
+
+Updated archive comparison now preserves exact body bytes plus one defined LF separator and tests whitespace alterations. Second issue: if (archivedBase || staged.length > previous.length) takes success path for every archived-base CI check without examining PROMPT_WORK.md. A merged branch can therefore drop inherited continuation history and still pass this new archive path. Require inherited continuation records preserved in order for archived-base checks (and both parents during integration), with a negative test deleting/mutating an inherited record while prompt archive stays exact. This is needed for the explicit preserve-both-histories contract, not a reason to bypass checks.
+
+## Reviewer recheck — PR53 prompt-history reconciliation
+
+Reviewed revised archive path and48-line regression test. Canonical prompt records retain exact bytes plus one explicit LF separator; archive must be staged regular file equal to exact parent log at commit-addressed path. Both merging continuation histories checked before new-prompt success branch; archived-base CI checks retain inherited records in order, reject duplicates and nonregular records. Independently ran14prompt tests in established Nix environment, session6369exit0,14passed0failed, including changed archive, executable archive, altered text/whitespace, deleted/mutated continuation records, local rewrite rejection and merged-ancestor CI acceptance. Both identified findings addressed. This approves the narrowly scoped reconciliation implementation, not PR53CI status or any uninspected images.
+
+
+## Reviewer handoff — prompt fixes verified
+
+Reviewer: independently reviewed revised prompt archive/continuation checks and ran14prompt tests underNix, allpassed. Both findings addressed: exact body whitespace and inherited continuation retention. Proceed with current parent integration and53publication after52requiredchecks; preserve previous assertions/baselines. Mainmeta has evidence, please reconcile latest reviewer findings/validation in attributed logs at checkpoint. No PRmerge.
+
+
+## Reviewer execution adjustment — start prepared PR53 CI
+
+PR53 localfa414436 has parentsa1023434 and reviewed52head4f917d72, clean worktree, completed independent prompt-check review/tests. Waiting for52application before publishing this ready child is a supervisor-imposed serialization, not a user requirement. User requests a green stack. Start53requiredCI now on reviewed child while existing52application finishes; retain exact ancestry and never call either green until all checks pass. This is not a duplicate run or PR merge. If52fails, diagnose and propagate actual necessary fix in normal stack order.
+
+
+## Reviewer handoff — publish ready child now
+
+Reviewer: reviewed53fa414436 is ready and includes52head4f917d72. Publish53 now to start its requiredCI while existing52application continues; this supersedes my earlier wait-before53-publish sequencing. Serial waiting is not user-required and delays the green stack. Preserve exact reviewed code/references and both histories, no duplicate reruns, no force-push or PRmerge. Diagnose any52failure and carry required fix forward normally. Reconcile current mainmeta findings/validation in logs at checkpoint. Then prepare54 correction with fresh Linux inspection as already required.
+
+
+## Reviewer verified publication — PR53 repaired child
+
+Independently verified GitHub PR53 headfa4144360fd9152f180df50659a50c4bf214aeba, MERGEABLE, parent52 integrated. New required jobs live: application40153836581/job121050799884, strict40153836539/job121050800104, documentation40153836593/job121050799851, publish40153836540/job121050799774; generation121050799877 exists but not evidence of captures. Push d9d72d96→fa414436 confirmed. Recovery findings/provenance ledger previously pushedc35d60a7. No PR merge. PR52application40150284065 stilllive; continue original job. Implementer proceeds to54 freshLinux correction evidence.
+
+
+## Reviewer milestone — PR52 fully green
+
+Independently verified PR52 exacthead4f917d724022107f4c6550b11740ae45dcbe446f: MERGEABLE/CLEAN, all5 checks SUCCESS. Application40150284065/job121040216438 completed2026-10-25T02:16:33Z,55m27s; retained full/tmp/cluster-pr52-green-application.log shows36browser tests passed48.3m. Exactstory40150284054/job121040216519 succeeded112passed8skipped; docs40150284192 andpublish40150284062 succeeded. Generation job success was skipped generation, not a baseline source. Scoped reference approval rests on previously independently inspected originals and CSS fix. First repaired green PR achieved; full52–140stack remains active and incomplete. No merge. PR53headfa414436 CI already live,54preparation in progress.
+
+
+## Reviewer handoff — confirmed first green PR
+
+Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCESS, application completed02:16:33UTC55m27s with36browser tests passing. Full evidence in mainmeta and/tmp/cluster-pr52-green-application.log. Record milestone in next attributed ledger/log push. Continue53existingCI and54freshLinux capture review preparation, keeping all prior holds. No duplicate52run or PRmerge; fullstackgoal remains.

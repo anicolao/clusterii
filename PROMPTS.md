@@ -620,3 +620,73 @@ Reviewer: independently viewed new54 phone013 and014 full originals in your chec
 Delegated reviewer sequencing update; refers to main meta authorization to publish reviewed PR53 while PR52 application continues.
 
 Reviewer: reviewed53fa414436 is ready and includes52head4f917d72. Publish53 now to start its requiredCI while existing52application continues; this supersedes my earlier wait-before53-publish sequencing. Serial waiting is not user-required and delays the green stack. Preserve exact reviewed code/references and both histories, no duplicate reruns, no force-push or PRmerge. Diagnose any52failure and carry required fix forward normally. Reconcile current mainmeta findings/validation in logs at checkpoint. Then prepare54 correction with fresh Linux inspection as already required.
+## Prompt 75: Integrated recurrence
+
+Delegated reviewer finding; refers to main meta PR52 current strict recurrence and PR57 partial-family approval.
+
+Reviewer: I confirmed52 strict111pass/1identity-validation-short001 mismatch. I will independently bounded-extract the three PNGs from artifact12581856096 into /tmp/cluster-pr52-cadb-review (avoid duplicate download). Please investigate source/layout stability, not another blind swap. Also57all60 available phone/desktop/large fleet images now inspected acceptable, SHA groups/mainmeta recorded; short absent/unapproved. Reconcile latest logs at next substantive checkpoint.
+
+
+
+## Prompt 76: Raster alternation
+
+Delegated reviewer finding; refers to main meta current PR52 exact reverse raster and required stability verification.
+
+Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
+
+
+
+## Prompt 77: Leading approval
+
+Delegated reviewer decision; refers to main meta all11 current Linux images and narrow CSS/reference approval.
+
+Reviewer: independently inspected all11 fresh Linux PNGs from40149691891 at /tmp/cluster-pr52-leading-linux/originals, all acceptable scoped references. Independent byte comparison:9 unchanged, only validation001 and keyboard004 differ; both87d509... same original raster. Approved together with reviewed28px CSS correction, not blind swap. Proceed minimal CSS +2 reference/provenance changes on52 and required full checks; no tolerance changes. Mainmeta latest entries include candidate code review and fresh image inspection; reconcile/commit/push with attributed PROMPTS/PROMPT_WORK. Focused generation not full stability proof. Do not duplicate download.
+
+
+## Prompt 78: Ordered recovery
+
+Delegated reviewer instruction; refers to main meta human first-green priority, whole-pixel identity approval and PR52 terminal-green gate before PR53 publication.
+
+Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; upload still live, application40150284065 still live. Finish monitoring these existing jobs, verify all required statuses at exact4f917d72 head, then work forward to53 immediately with the reviewed whole-pixel identity correction and applicable inspected references. Keep full comparisons/assertions; no blind approval, duplicate runs or merge. Reconcile latest mainmeta checkpoint into attributed logs and commit/push at substantive checkpoint. Prioritize first fully green PR and ordered forward publication over new features. Existing54/59 visual holds remain.
+
+
+
+## Prompt 79: Forward eligibility
+
+Delegated reviewer finding; refers to main meta PR62/63 no-artifact generation and PR53 source/Nix parity inspection.
+
+Reviewer: while you prepare53, mainmeta now records full62 code review and63 comparison against reviewed61 story. No new definite code defects found. Both62 run39708780947 and63 run39723194222 successful generate jobs explicitly produced no files/artifacts; only verify artifacts exist, so no Linux family approved. Generate fresh pinned-Nix candidates when reached and inspect before promotion. Logs retained /tmp/cluster-pr62-{failed,generate}.log and /tmp/cluster-pr63-{failed,generate}.log. Also independently confirmed your53 workflow/CSS and actual five Nix/runner file hashes match52head4f917d72. Reconcile these mainmeta findings in next attributed log commit; continue current first-green/53 sequence without interrupting or duplicating jobs. No merge.
+
+
+## Prompt 80: Branch integration
+
+Delegated reviewer clarification; refers to main meta authorized parent-to-child integration without GitHub PR merges or history rewriting.
+
+Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
+
+
+## Prompt 81: Forward runner
+
+Delegated reviewer finding; refers to main meta PR64 runner and PR65 setup/source review, not new reference approval.
+
+Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
+
+## Prompt 82: Verbatim retention
+
+Delegated reviewer code finding; refers to main meta exact canonical prompt body preservation.
+
+Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
+
+## Prompt 83: Continuation preservation
+
+Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
+
+Reviewer second finding: updated if (archivedBase || staged.length > previous.length) bypasses all PROMPT_WORK validation on archived-base CI checks. An exact prompt archive should not allow deleting/mutating inherited continuation records. Require inherited records retained in order for archived-base checks and both parents during integration; add negative test with exact prompt archive but deleted/mutated prior continuation. Whitespace fix and its regression tests look sound. Mainmeta records this. Continue current53fix; no duplicate CI.
+
+## Prompt 84: First green
+
+Delegated reviewer confirmation; refers to main meta exact PR52 green milestone and retained application log.
+
+Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCESS, application completed02:16:33UTC55m27s with36browser tests passing. Full evidence in mainmeta and/tmp/cluster-pr52-green-application.log. Record milestone in next attributed ledger/log push. Continue53existingCI and54freshLinux capture review preparation, keeping all prior holds. No duplicate52run or PRmerge; fullstackgoal remains.
