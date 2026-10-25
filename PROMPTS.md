@@ -2418,3 +2418,31 @@ Reviewer: Pane reports40206119870 eight functional journeys passed and160/160byt
 Delegated reviewer instruction; main meta Reviewer complete route reproducibility and baseline approval.
 
 Reviewer: Completed independent visual inspection of all12 changed route captures using nine distinct expected/actual/diff triples;026exact024 in each size independently verified. Sole difference Koit Unclaimed to Unknown, consistent with declared stable entropy and real acquisition assertions; pending/retry controls and force counts remain readable. Large inspected at2048x1152 resize, scoped layout/content regression approval only, not full design/normal motion. Independently compared all160originals to48b9f7ca:148exact unchanged and12 changed; approve exact hashes in /tmp/cluster-pr65-route-repeat-linux/reviewer-approved-changed.json. Independently verified both persisted short summaries sameSHA3d1992b24d491b82c7d93b6895c8ecd3da9ad14d942c52dacf194b5e4ffef4c2. Retention run40209122713 passed, complete prior four-size160pair image evidence retained with original failed status. Integrate these12 exact references with reviewed entropy/retention/guard changes d9025f17 atop reviewed64; preserve all inherited references except approved maintenance3 and route12 relative to original65. Publish active65 by normal fast-forward, unchanged required CI and hosted revision/assets verification;63/64 strictlive must remain untouched. Reconcile source/spec/provenance and exact handoff/meta in reviewer-attributed committed/pushed logs. No GitHub merge. PR66 remains unapproved pending independent visual review.
+
+
+## Prompt 366: Observation parent reconciliation
+
+Delegated reviewer instruction; main meta Reviewer PR65 publication verified and PR66 reconciliation.
+
+Reviewer: Independently confirmed65 publicationSUCCESS at056a2f85;63/64 onlystrictlive,65application/strictlive. Preserve all jobs. While waiting, prepare isolated66 integration atop reviewed056a2f85 without active66 publication or new generation: reconcile original66 observation story plus reviewed172a6265 label fix with inherited route entropy/retention changes and approved baseline trees. Preserve56 corrected observation candidates frozen at /tmp/cluster-pr66-label-linux; none yet approved. Report exact executable/story/spec/renderer differences affecting those candidates and shared Scene families; do not assume evidence transfers if behavior changed. Verify inheritance and prompt-parent checks, inspect actual Pantheon instructions before story reorganization. I will continue independent56-image review. Keep scope green-stack repair; no PR67/newfeature expansion. Reconcile exact handoff/meta and recent checkpoints in reviewer-attributed committed/pushed logs. No merge.
+
+
+### Reviewer PR66 corrected phone inspection — 2026-10-25 16:25 heartbeat
+
+Supervisor independently viewed all 13 distinct phone originals (14 entries, 010 peer equals 012 peer by independently verified SHA). Current observation, unknown, historical retention and reload states are readable. Tupã and Tania labels are separated including recovered owner view018. Scrolling013 reveals the full scanning paragraph and probability beneath the pinned status; partially clipped adjacent text at scroll boundaries is consistent with scroll position, not missing content. This is scoped phone regression inspection, not full design/release approval. Remaining desktop/large/short originals and shared Scene inherited-family regression checks remain required; no whole-family approval or publication authorization. Agent is actively reconciling66; no duplicate handoff sent.
+
+Inspected phone originals (012 peer accepted only as byte-identical duplicate):
+- live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png SHA256 3447d7cf228874cea2c39ede24c9a3f53042d8e4ddf3d1945fadd5c513d5730a
+- live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png SHA256 42bf143f79598b6f8c62b481f49ea086e81aa62af01f71fcc7667d54e69bd6f1
+- live-stellar-observations/phone/linux-arm64/012-read-current-report-1-survey-envoy.png SHA256 d40c86bbd02bd5741dd3949793d6bf3e6200f15bad13ae5739c3f4b536f5ec0b
+- live-stellar-observations/phone/linux-arm64/012-read-current-report-2-independent-surveyor.png SHA256 42bf143f79598b6f8c62b481f49ea086e81aa62af01f71fcc7667d54e69bd6f1
+- live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-1-survey-envoy.png SHA256 b84be4b4891d731fbb1b2e78df8df4fcaa4e517480f157b1b791f28040814932
+- live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png SHA256 74d51b204cdd35e4e3d72bbc1b609c60aba4ed43981ac4b222a8c777e124c179
+- live-stellar-observations/phone/linux-arm64/015-read-retained-history-1-survey-envoy.png SHA256 97d56c5e7595ed1b9ba59eac5e7a8b97559e739798090272a3ff9941e1070fab
+- live-stellar-observations/phone/linux-arm64/015-read-retained-history-2-independent-surveyor.png SHA256 b1e8b91b5345d10f652be479522f15f8b632f8aba6fc6326ee90e9fac0626c97
+- live-stellar-observations/phone/linux-arm64/016-read-historical-warning-1-survey-envoy.png SHA256 91d3dd12db79ce32f681aff0d2278ab517124dbb897809212b1df2ffc9526360
+- live-stellar-observations/phone/linux-arm64/016-read-historical-warning-2-independent-surveyor.png SHA256 70608c27c216c5a5a9b16a679e3fd087b70177297be15fdc400f1c2bc6d1f8f9
+- live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png SHA256 8ebf61e5f76c23c0e6b4285be6617b81e52c114f88835bfc03bda9faccb6d7fd
+- live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png SHA256 93b57ec2bc092a30c97d1f9b2e9d3606600afb31b0a296e871d4ff218946caf2
+- live-stellar-observations/phone/linux-arm64/018-recover-retained-report-1-survey-envoy.png SHA256 3eb6c34a298aa9d50bdedd14ee15e3d1d551c698c7eddcffe02e5f71acba958c
+- live-stellar-observations/phone/linux-arm64/018-recover-retained-report-2-independent-surveyor.png SHA256 65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e
