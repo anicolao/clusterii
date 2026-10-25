@@ -1,0 +1,44 @@
+2026-10-25T16:55:35.9292624Z 
+2026-10-25T16:55:35.9310730Z 
+2026-10-25T16:55:35.9312584Z   1) [phone] › tests/browser/campaign-navigation.story.spec.ts:405:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label › Activate Orbit left with Enter and observe the actual camera moving the selected star label. › Star envoy: settled, contained, exact capture 
+2026-10-25T16:55:35.9314100Z 
+2026-10-25T16:55:35.9314655Z     Error: expect(Buffer).toMatchSnapshot(expected) failed
+2026-10-25T16:55:35.9314921Z 
+2026-10-25T16:55:35.9315078Z       1066 pixels (ratio 0.01 of all image pixels) are different.
+2026-10-25T16:55:35.9315316Z 
+2026-10-25T16:55:35.9315582Z       Snapshot: campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy.png
+2026-10-25T16:55:35.9318016Z 
+2026-10-25T16:55:35.9318023Z 
+2026-10-25T16:55:35.9318195Z        at story-helpers/test-step-helper.ts:285
+2026-10-25T16:55:35.9318408Z 
+2026-10-25T16:55:35.9318561Z       283 |                 );
+2026-10-25T16:55:35.9318809Z       284 |                 if (!identical)
+2026-10-25T16:55:35.9319101Z     > 285 |                   expect(image).toMatchSnapshot(name, {
+2026-10-25T16:55:35.9319399Z           |                                 ^
+2026-10-25T16:55:35.9319663Z       286 |                     maxDiffPixels: 0,
+2026-10-25T16:55:35.9319938Z       287 |                     threshold: 0,
+2026-10-25T16:55:35.9320179Z       288 |                   });
+2026-10-25T16:55:35.9320673Z         at test.step.timeout (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:285:33)
+2026-10-25T16:55:35.9321462Z         at test.step.timeout (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:205:11)
+2026-10-25T16:55:35.9322248Z         at TestStepHelper.step (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:180:5)
+2026-10-25T16:55:35.9322971Z         at /home/runner/work/clusterii/clusterii/tests/browser/campaign-navigation.story.spec.ts:533:3
+2026-10-25T16:55:35.9323358Z 
+2026-10-25T16:55:35.9323662Z     attachment #5: campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy (image/png) 
+2026-10-25T16:55:35.9324453Z     Expected: tests/browser/story-baselines/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy.png
+2026-10-25T16:55:35.9325850Z     Received: test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy-actual.png
+2026-10-25T16:55:35.9327889Z     Diff:     test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy-diff.png
+2026-10-25T16:55:35.9329010Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-25T16:55:35.9329285Z 
+2026-10-25T16:55:35.9329670Z     Error Context: test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/error-context.md
+2026-10-25T16:55:35.9330395Z 
+2026-10-25T16:55:35.9330782Z     attachment #7: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-25T16:55:35.9331428Z     test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/trace.zip
+2026-10-25T16:55:35.9331914Z     Usage:
+2026-10-25T16:55:35.9332011Z 
+2026-10-25T16:55:35.9332420Z         npx playwright show-trace test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/trace.zip
+2026-10-25T16:55:35.9332925Z 
+2026-10-25T16:55:35.9333220Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-25T16:55:35.9333483Z 
+2026-10-25T16:55:35.9333555Z   1 failed
+2026-10-25T16:55:35.9334220Z     [phone] › tests/browser/campaign-navigation.story.spec.ts:405:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label 
+2026-10-25T16:55:35.9334910Z   1 error was not a part of any test, see above for details
