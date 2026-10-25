@@ -55,6 +55,8 @@
   );
   let tracks = $state<HTMLDivElement>();
   $effect(() => {
+    // Local choices already use showChoice, including its focus/scroll margin.
+    if (choice !== null) return;
     const target = selected;
     const reader = tracks;
     let active = true;

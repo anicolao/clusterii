@@ -556,3 +556,5 @@ Prompt 86 | 07e9e1e0ec110d01f3deb86de4da61b159edb615fd5e93ddbdd17d039e5e385f | A
 Prompt 86 | 07e9e1e0ec110d01f3deb86de4da61b159edb615fd5e93ddbdd17d039e5e385f | Reveal external research selections inside their own list after reproduced130px clipping, preserving page and focus.
 
 Prompt 86 | 07e9e1e0ec110d01f3deb86de4da61b159edb615fd5e93ddbdd17d039e5e385f | Retain reproduced external selection failure and four-size corrected lab originals for independent review.
+
+Prompt 87 | 7e1f9e7a8a8eedbe80cc3c49e4b688835356831652548085779af6c9e0be2034 | Restrict external selection reveal to externally supplied state after retained large guidance scroll mismatch.
