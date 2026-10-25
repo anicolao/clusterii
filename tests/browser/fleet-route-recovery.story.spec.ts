@@ -1206,6 +1206,9 @@ test("Interrupted route commands retain their original choices and identity", as
           await expect(
             owner.getByRole("link", { name: "Sign in to continue" }),
           ).toBeVisible();
+          await expect(
+            owner.getByText("Sign in to access your campaigns.", { exact: true }),
+          ).toBeVisible();
           await expect(planner).toHaveCount(0);
           await expect(panel(owner)).toHaveCount(0);
         },

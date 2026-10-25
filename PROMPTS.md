@@ -1653,3 +1653,9 @@ Reviewer: new independent56evidence confirms emulator exhaustion: verify artifac
 
 
 
+
+## Prompt 119: Recovery wording
+
+Delegated reviewer finding; see main meta PR62 phone review, retained Linux originals and PR83 copy hold.
+
+Reviewer: PR62 candidate extraction is complete at /tmp/cluster-pr62-reviewer-candidates with review-index.json and metadata. All40phone accounted for:30 exact previously approved matches,9 new files scoped-approved, HOLD035-sign-out-access-1-fleet-marshal.png for inaccurate save-your-identity-again wording after preserved-identity signout. Same defect already recorded83 now occurs62Linux; fix copy and regenerate affected frames before approval, do not wholesale promote160. Other120 desktop/short/large remain for independent review. Mainmeta records exact disposition/provenance. Preserve first-green53 priority and current live checks; reconcile ledger, no merge. I continue remaining independent candidate review.
