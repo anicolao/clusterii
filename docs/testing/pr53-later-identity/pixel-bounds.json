@@ -1,0 +1,98 @@
+[
+  {
+    "actual": "/tmp/cluster-pr53-3be6-review/test-results/stories/identity.story-Save-and-recover-a-commander-identity-short/commander-identity/short/linux-arm64/003-save-identity-1-toile-actual.png",
+    "expected": "/tmp/cluster-pr53-3be6-review/test-results/stories/identity.story-Save-and-recover-a-commander-identity-short/commander-identity/short/linux-arm64/003-save-identity-1-toile-expected.png",
+    "diff": "/tmp/cluster-pr53-3be6-review/test-results/stories/identity.story-Save-and-recover-a-commander-identity-short/commander-identity/short/linux-arm64/003-save-identity-1-toile-diff.png",
+    "baseline": "tests/browser/story-baselines/commander-identity/short/linux-arm64/003-save-identity-1-toile.png",
+    "actualSHA": "a84832745219e3105f64fc4afb0b6fc8557e30ae58dbd5712da7099232acc08c",
+    "expectedSHA": "12a295d7bd3b8745d8a7503d1647fdf413bdf21c51e9b6ac6fa32f3947cbe3cd",
+    "diffSHA": "eb27edc0513fb0ba5265ada2bc81ade7ab42aec16cf4b5369c0e1647fb076a58",
+    "rawDifference": {
+      "count": 2573,
+      "minX": 583,
+      "minY": 268,
+      "maxX": 1012,
+      "maxY": 284
+    }
+  },
+  {
+    "actual": "/tmp/cluster-pr53-3be6-review/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy-actual.png",
+    "expected": "/tmp/cluster-pr53-3be6-review/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy-expected.png",
+    "diff": "/tmp/cluster-pr53-3be6-review/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy-diff.png",
+    "baseline": "tests/browser/story-baselines/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png",
+    "actualSHA": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+    "expectedSHA": "d8ed8aa102ceeb6be12fa2331bfc777bf18617356ac6ae43ebd9ccab09413816",
+    "diffSHA": "00a8b4ea7bbe79eb958f1443565aaf647f02828180cca798cf7263f360949ac5",
+    "rawDifference": {
+      "count": 2560,
+      "minX": 583,
+      "minY": 289,
+      "maxX": 1012,
+      "maxY": 305
+    }
+  },
+  {
+    "actual": "/tmp/cluster-pr53-3be6-review/test-results/stories/profile-recovery.story-Res-2c639-without-losing-either-draft-short/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one-actual.png",
+    "expected": "/tmp/cluster-pr53-3be6-review/test-results/stories/profile-recovery.story-Res-2c639-without-losing-either-draft-short/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one-expected.png",
+    "diff": "/tmp/cluster-pr53-3be6-review/test-results/stories/profile-recovery.story-Res-2c639-without-losing-either-draft-short/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one-diff.png",
+    "baseline": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one.png",
+    "actualSHA": "b6d942209913f040c8439e291d0b3c706d50de1ff5efa2e0021aeab3754cca3e",
+    "expectedSHA": "fd12ba4cd86e95c4200e05edb180ff88eba8038665d0f3740e40ee8f4dbcca32",
+    "diffSHA": "75673aeabce758e987813b17ce6d9f197f844ad0948cffe67021d1e395e80057",
+    "rawDifference": {
+      "count": 2573,
+      "minX": 583,
+      "minY": 268,
+      "maxX": 1012,
+      "maxY": 284
+    }
+  },
+  {
+    "actual": "/tmp/cluster-pr53-3be6-review/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander-actual.png",
+    "expected": "/tmp/cluster-pr53-3be6-review/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander-expected.png",
+    "diff": "/tmp/cluster-pr53-3be6-review/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander-diff.png",
+    "baseline": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander.png",
+    "actualSHA": "70d901318b26ba616c9532c2bde812b1cad8d79590bc023aa05f3ca66ac59b5d",
+    "expectedSHA": "f57032a256bb3c9dd26036b900bfe5250baf315f9bc6225772d094f44dd5aa5e",
+    "diffSHA": "c97fbfdf403e196b6f38c9ba81774be21881fb1d3f2cbd0335ce5816a48d69a6",
+    "rawDifference": {
+      "count": 2573,
+      "minX": 583,
+      "minY": 268,
+      "maxX": 1012,
+      "maxY": 284
+    }
+  },
+  {
+    "actual": "/tmp/cluster-pr53-3be6-review/test-results/stories/receipt-recovery.story-A-m-21454-l-a-fresh-acknowledged-save-short/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander-actual.png",
+    "expected": "/tmp/cluster-pr53-3be6-review/test-results/stories/receipt-recovery.story-A-m-21454-l-a-fresh-acknowledged-save-short/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander-expected.png",
+    "diff": "/tmp/cluster-pr53-3be6-review/test-results/stories/receipt-recovery.story-A-m-21454-l-a-fresh-acknowledged-save-short/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander-diff.png",
+    "baseline": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander.png",
+    "actualSHA": "30ac08773284f508fe194bb0ebc5f1e6cf2186d6ea381e1a8ae4c639047c9d68",
+    "expectedSHA": "0fd38b50017ca3302264c9e6e09a30f335af13f239bdba0651b47db7b2faa364",
+    "diffSHA": "00b2ccd90fb7050f95fcc0dd73d492b496dc3983d16887fd939f790f0dd4ede6",
+    "rawDifference": {
+      "count": 2573,
+      "minX": 583,
+      "minY": 268,
+      "maxX": 1012,
+      "maxY": 284
+    }
+  },
+  {
+    "actual": "/tmp/cluster-pr53-3be6-review/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device-actual.png",
+    "expected": "/tmp/cluster-pr53-3be6-review/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device-expected.png",
+    "diff": "/tmp/cluster-pr53-3be6-review/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device-diff.png",
+    "baseline": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+    "actualSHA": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "expectedSHA": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6",
+    "diffSHA": "1c437ec2f0d28e86023c6cff5e049068c38a6cd36deed90b769fc26fe165ce6a",
+    "rawDifference": {
+      "count": 2560,
+      "minX": 583,
+      "minY": 289,
+      "maxX": 1012,
+      "maxY": 305
+    }
+  }
+]

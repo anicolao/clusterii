@@ -1,0 +1,11 @@
+# Later PR53 identity frames: complete review preparation
+
+Exact3be6f22d strict40160719097/job121071498782 completed failure04:47:00Z,110passed6failed8skipped35.1m. Six failures are later frames: commander003, invitation006, conflict002, pending002, receipt003, cancelled005. All seven previous exact references now pass their original capture boundary; no new timeout or missing reference in this run. Later assertions may remain masked. No claim that historical raster cause is resolved.
+
+Artifact12587616117 metadata:1609446795bytes, API SHA2569b8b8747350cc4152c96e1ae16295950e059eee2ac0b60d863c5d58913646676, expiry2027-01-23T04:07:17Z. Selective extraction36files transferred18983646bytes with exact206/Content-Range, ZIP CRC and path checks into/tmp/cluster-pr53-3be6-review; full archive SHA was not locally verified. Every expected PNG hash matches its exact3be6f22d Git baseline. Originals and source/layout evidence remain unchanged.
+
+Implementer individually viewed all six actual originals and all six diff PNGs. Intro sentence only differs; readable names, portraits, focus, pending/draft/saved states and controls intact. Raw RGBA bounds confirm differences onlyx583..1012/y268..284 for four saved states ory289..305 for two draft states; raw counts2573/2560 differ from comparator counts2370/2294 because these are different measurements. This is implementer review, not a new independent family approval. No six failed images promoted.
+
+One bounded generation of the six complete existing short journeys is justified to reveal every later identity state without another full-suite first-failure cycle. Exact five source files/six names; same real services/auth/actions, original per-story deadlines, retries0/max-failures1, zero thresholds, pinned renderer. Local actual collection verified six cases in five files and four dispatcher/request tests passed. No production/spec/helper change. No early return or failed-run passing manifest. Inspect every changed candidate before any promotion; do not blindly swap references.
+
+PR62 integration is deferred for this earlier failure. PR53publication remains failed; oldPages40160884684 built but deployment cancelled, newer40163030217 is queued and gh-pages preserves correctPR53source. No duplicate deployment request or verifier weakening.
