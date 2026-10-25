@@ -4,7 +4,7 @@ import type { Campaign, CampaignView } from "../../shared/campaign";
 import { observationView } from "../../shared/observations";
 import { distance } from "../../shared/galaxy";
 import { test, expect } from "./story-helpers/fixtures";
-import { readableLabels, labelGeometry } from "./story-helpers/galaxy-labels";
+import { readableLabels, labelGeometry, selectedLabelClearance, unobscuredSelectedLabel } from "./story-helpers/galaxy-labels";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
@@ -657,6 +657,11 @@ test("Live stellar observations retain private current and historical facts afte
           ).toHaveAccessibleName(home.name);
           await expect(owner.locator(".star-label")).toHaveText(home.name);
           await expect(owner.locator(".star-label")).toBeVisible();
+          await info.attach("home-label-geometry", {
+            body: JSON.stringify(await selectedLabelClearance(owner)),
+            contentType: "application/json",
+          });
+          await unobscuredSelectedLabel(owner);
           await readableLabels(owner);
         },
       },

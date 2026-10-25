@@ -47,3 +47,27 @@ export async function readableLabels(page: Page) {
     .poll(async () => (await labelGeometry(page)).failures)
     .toEqual([]);
 }
+
+/** Visible selected label must be inside the chart and outside the real inspector. */
+export async function selectedLabelClearance(page: Page) {
+  return page.locator(".star-label").evaluate((label) => {
+    const chart = label.closest("[data-galaxy-viewport]")!;
+    const panel = chart.parentElement!.querySelector(".system-inspector")!;
+    const rect = (el: Element) => {
+      const b = el.getBoundingClientRect();
+      return { left: b.left, top: b.top, right: b.right, bottom: b.bottom };
+    };
+    const l = rect(label), c = rect(chart), p = rect(panel);
+    return {
+      label: l, chart: c, inspector: p,
+      contained: l.left >= c.left && l.top >= c.top && l.right <= c.right && l.bottom <= c.bottom,
+      occluded: l.left < p.right && l.right > p.left && l.top < p.bottom && l.bottom > p.top,
+    };
+  });
+}
+export async function unobscuredSelectedLabel(page: Page) {
+  await expect.poll(async () => {
+    const bounds = await selectedLabelClearance(page);
+    return { contained: bounds.contained, occluded: bounds.occluded };
+  }).toEqual({ contained: true, occluded: false });
+}
