@@ -9,7 +9,7 @@
   import {
     fleetSettlementFeedback,
     type AcceptedFleetCommand,
-    type RecoveredFleetReorganization,
+    type RecoveredFleetCommand,
   } from "$lib/fleet-feedback";
   import {
     claimOrder,
@@ -85,7 +85,7 @@
   let commandVisitRevision = $state(0);
   let commandId = $state("");
   let commandOfferId = $state("");
-  let recoveredFleet = $state<RecoveredFleetReorganization | null>(null);
+  let recoveredFleet = $state<RecoveredFleetCommand | null>(null);
   let recoveredConstruction = $state<RecoveredConstruction | null>(null);
   let acceptedConstruction = $state<AcceptedConstruction | null>(null);
   let commandConstructionOrder = "";
@@ -330,7 +330,8 @@
             : null;
           recoveredFleet =
             restored.action.kind === "fleet.split" ||
-            restored.action.kind === "fleet.merge"
+            restored.action.kind === "fleet.merge" ||
+            restored.action.kind === "fleet.route"
               ? {
                   id: pending.id,
                   gameId: pending.gameId,
@@ -472,7 +473,10 @@
         clearTimeout(timer);
         busy = false;
         pending = null;
-        recoveredFleet = null;
+        // Receipt discovery can beat the first private view after reload.
+        // Keep the submitted route for review, including a rejected order,
+        // until its accessible fleet can open. Never invent a retired fleet.
+        if (command.kind !== "fleet.route") recoveredFleet = null;
         acceptedConstruction =
           receipt.status === "accepted" &&
           command.kind.startsWith("construction.")
@@ -567,6 +571,7 @@
   }
   async function send(id: string, action: CampaignAction) {
     if (busy || pending) return;
+    recoveredFleet = null;
     acceptedFleetCommand = null;
     acceptedTrade = null;
     acceptedConstruction = null;
@@ -811,7 +816,7 @@
           </h1>
           <p>
             {access === "signed-out"
-              ? "Sign in and save your identity to continue."
+              ? "Sign in to access your campaigns."
               : access === "restricted"
                 ? "Campaign testing is limited to developer accounts. Public campaigns open with secure encryption and approved rules."
                 : "Checking your account’s campaign access."}
