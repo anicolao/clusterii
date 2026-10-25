@@ -342,3 +342,4 @@ Prompt 106 | 2b3ca753cb68d3accad6c09c89d6ecc428dd4b82dc3da2bbc902f07ca25892c1 | 
 Prompt 106 | 2b3ca753cb68d3accad6c09c89d6ecc428dd4b82dc3da2bbc902f07ca25892c1 | Preserve four passing cancellation journeys and88 unapproved originals, including measured child-feedback focus clearance.
 Prompt 108 | b82e039095adf3471d476eed64969819aaf3253a5a8ccb83d6b5dc93328c63db | Integrate current cancellation parent while retaining cargo evidence and exact inherited histories.
 Prompt 108 | b82e039095adf3471d476eed64969819aaf3253a5a8ccb83d6b5dc93328c63db | Prepare one four-size Linux cargo candidate execution for affected footer states and absent short evidence.
+Prompt 108 | b82e039095adf3471d476eed64969819aaf3253a5a8ccb83d6b5dc93328c63db | Request the single full cargo family at all four sizes with source-bound fresh candidate execution, no promotion.
