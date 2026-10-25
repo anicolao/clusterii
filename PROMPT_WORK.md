@@ -447,3 +447,5 @@ Prompt 151 | 3fcedc85759f371c11a388fcd921e4ca20af9fb494d1d7bd2420cd97ad0a800a | 
 Prompt 151 | 3fcedc85759f371c11a388fcd921e4ca20af9fb494d1d7bd2420cd97ad0a800a | Verify complete72-image Linux artifact once; retain56 exact inherited matches and16 new files with source/renderer review index.
 
 Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Add real selected-label versus inspector occlusion assertion and retained geometry before correcting Center home camera framing.
+
+Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Reproduce real phone home occlusion, retain measured bounds and add camera/pivot framing with projection tests and clean type checks.
