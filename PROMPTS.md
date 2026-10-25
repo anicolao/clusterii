@@ -736,3 +736,10 @@ Reviewer: independently recomputed all212 current/prior hashes:202byte-identical
 Delegated reviewer application failure; main meta and recovery ledger record exact run, requested scope and prior evidence preservation.
 
 Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
+
+## Prompt 92: Layer approval
+
+Delegated reviewer exact image approval; main meta and recovery logs record intervening bounded-run instructions, original failures, and independent all13 changed originals.
+
+Reviewer: independently inspected all8unique changed SHA representatives covering13changedfiles in26Linux candidates. Independent rawRGBA bounds prove onlyintrotextchanged; full index and bounds at/tmp/cluster-pr53-layer-independent-{index,pixels}.json. Approve those13exact candidate PNGs with production layer change; retain13identical references. Proceed to scoped promotion/current strict verification, recording source and remaining cross-run uncertainty. Other short identity frames may also change from CSS: review any newly generated differences before approval, do not copy failed output blindly. Mainmeta records approval details and latest77review. No duplicate generation/merge.
+

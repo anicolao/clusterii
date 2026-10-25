@@ -248,3 +248,18 @@ test('later stacked integration recognizes only a Git-verified inherited record 
   f.write(combined.replace('Second user request.', 'Second user request. ')); f.git('add', 'PROMPTS.md'); assert.notEqual(f.check(), 0);
   f.write(combined.replace('Parent request.\n', 'Parent request.\n\n')); f.git('add', 'PROMPTS.md'); assert.notEqual(f.check(), 0);
 });
+
+
+test('reintegrating a parent retains its formerly final request already archived by child', t => {
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const parentOld=initial+next;f.write(parentOld);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent original');const old=f.git('rev-parse','HEAD').trim();
+ const later='## Prompt 3: Parent Later\n\nLater parent request.\n';
+ const parentNew=parentOld+'\n'+later;f.write(parentNew);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent later');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);
+ const child=initial+next.replace('Second user request.','Child request.')+next.replace('Prompt 2:','Prompt 3:')+'\n## Prompt 4: Child Later\n\nChild later request.\n';f.write(child);
+ const archive=(ref)=>{const dir=`docs/prompt-history/${ref}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(f.git('show',`${ref}:PROMPTS.md`),`${dir}/PROMPTS.md`);f.git('add',dir);};
+ archive(old);f.git('add','PROMPTS.md');f.git('commit','-qm','Child retained original parent');
+ f.write(parent+'\n','.git/MERGE_HEAD');archive(parent);
+ const combined=child+'\n'+later.replace('Prompt 3:','Prompt 5:')+'\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
+ for(const bad of [combined.replace('Second user request.\n','Second user request. \n'),combined.replace('Second user request.\n\n','Second user request.\n'),combined.replace('Later parent request.\n','Later parent request.\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
+});
