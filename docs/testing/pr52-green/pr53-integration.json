@@ -64,7 +64,18 @@
     "images": 26,
     "unchanged": 13,
     "changedSentenceOnly": 13,
-    "independentApproval": "pending",
-    "strictAcceptance": false
+    "independentApproval": "13 changed originals explicitly approved;13 identical bytes retained",
+    "strictAcceptance": false,
+    "published": "cd7ed5fd",
+    "requiredChecks": "await actual new-head results",
+    "otherFrames": "8 other short references share prior full image hashes; untouched pending actual evidence and review"
+  },
+  "currentHead": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+  "currentRuns": {
+    "application": 40157944328,
+    "strict": 40157944454,
+    "documentation": 40157944305,
+    "publication": 40157944304,
+    "stateAtObservation": "all in_progress"
   }
 }

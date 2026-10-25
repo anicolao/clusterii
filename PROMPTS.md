@@ -1781,3 +1781,9 @@ Reviewer: completed PR76 all44 new macOS baselines (11 each phone/desktop/short/
 Delegated reviewer completion handoff; reconcile main meta PR53 bounded result and PR77 scoped review.
 
 Reviewer: exact bounded40157330125/job121061393688 now SUCCESS, independently confirmed. Resume53: retrieve retained candidate evidence once, share local artifact root/source metadata for my independent image review, assess all three journeys and actual changes before any promotion. Do not treat candidate success as strict acceptance. Current54/55 strict and candidate jobs still live; no rerun. Mainmeta also contains77 code and scoped image review awaiting reconciliation.
+
+## Prompt 268: Layer approval
+
+Delegated reviewer exact image approval; main meta records independent all13 changed originals and cross-run limits.
+
+Reviewer: independently inspected all8unique changed SHA representatives covering13changedfiles in26Linux candidates. Independent rawRGBA bounds prove onlyintrotextchanged; full index and bounds at/tmp/cluster-pr53-layer-independent-{index,pixels}.json. Approve those13exact candidate PNGs with production layer change; retain13identical references. Proceed to scoped promotion/current strict verification, recording source and remaining cross-run uncertainty. Other short identity frames may also change from CSS: review any newly generated differences before approval, do not copy failed output blindly. Mainmeta records approval details and latest77review. No duplicate generation/merge.
