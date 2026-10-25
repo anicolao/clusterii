@@ -1,0 +1,27 @@
+✔ requires a staged prompt log, including on the initial commit (183.53225ms)
+✔ accepts a staged append and rejects an unstaged append (202.829542ms)
+✔ rejects rewritten or deleted historical prompts (184.99675ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (439.824417ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (389.978125ms)
+✔ checks a PR against its base, including a base with no prompt log (233.502083ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (658.67825ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (233.053166ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (385.677625ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (616.686709ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (692.066292ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (362.623291ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (484.002625ms)
+✔ divergent prompt merge retains exact parent archive and canonical request order (2472.154166ms)
+✔ later stacked integration recognizes only a Git-verified inherited record separator (674.639875ms)
+✔ explicit structural separators retain exact request whitespace and reject undeclared changes (1041.998083ms)
+✔ reintegrating a parent retains its formerly final request already archived by child (755.642542ms)
+✔ reintegrating a parent respects the child declared two-LF record separator (785.238958ms)
+✔ shared Git ancestor proves a final common request without inventing an archive (373.287541ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11220.03475

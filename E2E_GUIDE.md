@@ -130,7 +130,7 @@ Use the pinned Linux story workflow to generate Linux artifacts for review, then
 
 ## Commands and PR checklist
 
-From the repository root, install the locked dependencies, Node 22, Bun 1.3.10 and Java 21. The story scripts build the production static app at the fixed `/clusterii/pr4/` test path and manage their own Firebase emulator cohort.
+Use the established Nix environment for all project commands: locally, `nix develop --offline --option substitute false --option max-jobs 0 /tmp/pantheon-nix-env`; CI uses the versioned `nix/` shell and pinned renderer launcher. Install only the locked project dependencies inside that shell. Do not substitute host or Homebrew runtimes. The story scripts build the production static app at the fixed `/clusterii/pr4/` test path and manage their own Firebase emulator cohort.
 
 ```sh
 bun run check

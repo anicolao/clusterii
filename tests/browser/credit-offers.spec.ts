@@ -170,7 +170,7 @@ for (const mode of ["mock", "real"] as const)
       ).toBeFocused();
       await expect(
         panel.getByRole("button", {
-          name: "Awaiting acknowledgement…",
+          name: "Awaiting receipt",
           exact: true,
         }),
       ).toBeDisabled();
