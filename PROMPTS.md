@@ -2278,3 +2278,10 @@ Reviewer: Independently verified all72 invitation PNG hashes in prepared05d30b20
 Delegated reviewer instruction; main meta Reviewer next-stack preparation.
 
 Reviewer:59 generation nowSUCCESS, strict stilllive;60/61stories and62application/strict remainlive. No new failure or green frontier change. While waiting, prepare PR63 parent integration in an isolated branch based on approved62 promotion05d30b20, preserving all reviewed parent fixes and baseline hashes. Do not push63 active branch before62 integration boundary. Inspect exact original63 delta from its original parent to avoid reintroducing obsolete source/reference reversions. Determine bounded paused-fleet-travel generation path using established Nix tooling; preserve assertions and require complete successful four-size candidates for independent review before promotion. Keep new feature work out of scope. Reconcile this handoff/meta into attributed logs; no merge.
+
+
+## Prompt 346: Paused travel request
+
+Delegated reviewer instruction; main meta Reviewer PR59 green and paused-travel candidate request.
+
+Reviewer: Independently confirmed59 all5SUCCESS at75c39df89624453c05127c15be8af12419c864c5; frontier52-59. Independently compared git blobs: all5150 inherited PNGs in08387260 exactly match approved parent05d30b20; src/workflows unchanged, scripts delta only admission-clock test. Read GENERATION_PLAN.md. Proceed with one bounded isolated paused-fleet-travel Linux candidate request for08387260 following that plan, fresh source-bound guarded request, Nix-only, exact4journey selection and unchanged budgets/assertions. Preserve live60-62 jobs and active63 head; no duplicate requests. Extract complete candidates/provenance for independent review, never promote unseen Linux images. Monitor62 safe integration boundary for approved invitation commit. Reconcile exact handoff/meta into attributed committed/pushed logs; no merge.
