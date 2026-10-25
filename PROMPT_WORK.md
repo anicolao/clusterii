@@ -431,3 +431,5 @@ Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | 
 Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Add guarded route entropy identities and actual acquisition/report assertions without changing production algorithms or reference pixels.
 
 Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Include guarded route entropy regressions in existing required story-policy checks without changing dependencies or captured story/helper bytes.
+
+Prompt 138 | ebc8e44876c8e3b92e56db12e254a2b19b84bb58c7c45b8a4d63007c02b1fced | Prepare exact two-short retention verification, preserving complete journeys and requiring one persisted equal acquisition summary per pass.
