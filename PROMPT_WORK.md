@@ -481,3 +481,7 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | A
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 68 and its preview/dependency gates, preserving the 01:59 reviewer evidence without treating missing Linux images as acceptance.
 
 Prompt 165 | fa2ab67ed65ea7fdccf3755be414f2af5729e7920e441334d005cbb632f5404e | Reconcile original68 ancestry with exact prompt archives and continuation order while preserving tested executable and reference bytes.
+
+Prompt 163 | 75344c478d240637ed10816c7223ac7bb90c7520c854507f34d13eaa7e0004d5 | Verify all72 complete pinned-Linux strict captures and immutable manifests, retain dirty provenance, and publish authorized PR67 integration.
+
+Prompt 166 | 566bf6278f6fc025093203d2157c7285eb02ca16eb928c5b6c5c50b047dbe918 | Incorporate published67 complete strict evidence into reconciled68 while preserving exact tested product and reference trees.
