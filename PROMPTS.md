@@ -1925,3 +1925,15 @@ Reviewer: independently verified60d394a454 and61e060a1f3 exact-parent checks and
 Delegated reviewer instruction; main meta records exact PR54 failure and PR60 artifact readiness.
 
 Reviewer: cargo40162646504 nowSUCCESS, artifact12587925653 size289629708 ready; retrieve once and inspect changed/new originals before promotion. Please prioritize available candidate over further stack advancement.54strict40160782002/job121071692015 FAILED118passed6failed8skipped: same six short identity frame paths/pixelcounts as53, log /tmp/cluster-pr54-current-failed.log. No54actualhash approval yet; propagate inspected53complete repair after compatibility instead of duplicate identity generation. Mainmeta updated. Preserve live handles, reconcile/push logs, no merge.
+
+## Prompt 292: Cargo approval
+
+Delegated reviewer instruction; main meta records independent128-image approval and the human progress question. Human wording remains in supervisor meta, not duplicated here.
+
+Reviewer: all128 corrected60Linux cargo originals independently approved; 87exact prior hashes plus41changed/new files (29distinct individually viewed, including reopening final2 after truncated output). Exact index /tmp/cluster-pr60-linux-new-review.json; root /tmp/cluster-pr60-linux-corrected/originals/test-results/stories/live-fleet-cargo. Verify generation/current-source provenance and dirty evidence, promote exact approved references to60 and propagate61/62. Latest mainmeta has approval and human progress question; reconcile attributed logs and push.53identity40163401924/job121079458138 and Pages40163030217/deploy121078700345 freshly verifiedqueued; preserve requests, prioritize53 as soon as available. Do not start further feature branches; focus green existing PRs. No merges or weakened checks.
+
+## Prompt 293: Short approval
+
+Delegated reviewer instruction; main meta records independent twenty-image PR57 short approval and exact SHA index.
+
+Reviewer: new independent approval, not duplicate cargo instruction: all20 PR57 short Linux originals inspected as13distinct complete images, SHAindex /tmp/pr57-supervisor-short-index.json. Mainmeta records findings and manifest. At safe checkpoint after current cargo promotion, verify source/dirty provenance then promote these20 to57 and propagate existing stack. Reconcile/push latest logs. Preserve53 priority and existing jobs; no further feature branches or merges.
