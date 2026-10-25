@@ -1,0 +1,25 @@
+{
+  "artifact": {
+    "id": 12531989021,
+    "node_id": "MDg6QXJ0aWZhY3QxMjUzMTk4OTAyMQ==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 1723906172,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12531989021",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12531989021/zip",
+    "expired": false,
+    "digest": "sha256:c79ff11076adb83430136749533d5a458c6360a37ea3ba3c137bbc08f0ae95b7",
+    "created_at": "2026-10-23T21:23:24Z",
+    "updated_at": "2026-10-23T21:23:24Z",
+    "expires_at": "2027-01-21T20:18:55Z",
+    "workflow_run": {
+      "id": 40018251102,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "fix/story-config-bootstrap",
+      "head_sha": "d27e3df63186e8a9401137dd8b25a7b13d284701"
+    }
+  },
+  "verifiedLocalSha256": "c79ff11076adb83430136749533d5a458c6360a37ea3ba3c137bbc08f0ae95b7",
+  "removedLocalRedundantArchive": "/tmp/cluster131-artifact-12531989021/artifact.zip",
+  "preserved": "All extracted originals, traces, inventories and other evidence remain untouched."
+}

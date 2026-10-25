@@ -2724,3 +2724,31 @@ Reviewer: Completed independent full candidate diff review for66 run40227118604.
 Delegated reviewer instruction; main meta records scoped local phone approval and corrected Linux request.
 
 Reviewer: Independently viewed corrected local phone020 at9bd21c68: Tania Australis label and home marker visibly above inspector, heading/current-observation facts/navigation fit; read execution logs4passed1.8m with completed exit0 and diskreserve maintained. This validates the visible correction locally, not Linux reference acceptance. Proceed bounded complete four-size Linux observation candidates for exact corrected source/spec (72views), using established guarded Nix runner. Compare against previous Linux72 and preserve every changed image for inspection; do not import Darwin image or automatically promote. Scope source remains reviewed camera framing/explicit DOMRect coordinate fix and occlusion assertion. Preserve PR66 complete strict40230839345; when it passes continue already-authorized corrected66 publication and required fullCI without waiting on67. Reconcile exact handoff and prior executor/DOMRect checkpoint into committed/pushed attributed logs. No merge. Local viewed SHA256 6675f216eae54aae5534f7ac34c28790dd97a028eedd53672f9df2b8a732a618.
+
+## Prompt 381: Reviewed home integration
+
+Delegated reviewer instruction; main meta Reviewer corrected Linux home approved.
+
+Reviewer: Independently verified corrected Linux artifact12613366533/run40231234562 archive SHA256 63ce0e0a66cd9e0c89381f02b8d32f188e382d0460f8159b04e793bb4c59a089, CRC and all72 retained image bytes. Independently compared previous72:71 identical, only phone020 owner changed. Viewed expected/actual/diff at native393x852: home Tania Australis marker/label now above inspector, background camera repositioned as intended; foreground facts/navigation/focus unchanged. Approve exact phone020 SHA256 a0db4074c6290d8173d5400d8d2e36bdc1dc62a602d337b490ed5808190791da as scoped regression correction; previous71 approvals carry by exact identity. Prepare PR67 atop current66 bb58f85a, retaining reviewed home framing/DOMRect fix and strengthened occlusion assertion, preserving stronger018 phone visibility; import only reviewed Linux references. Verify integration source/spec matches reviewed corrected target except reconciled parent, run strict complete four-size observation journey with immutable references, then publish67 and run full required CI when passing. Preserve66 live fullCI; no merge. Record exact attributed handoff and source/hash integration evidence with committed/pushed logs. This is regression approval, not full design/normal-motion/tab traversal approval.
+
+
+
+## Prompt 382: Separator diagnostic handoff
+
+Delegated reviewer instruction, attributed to the reviewer; refer to the corresponding main meta-prompts.md diagnostic checkpoint.
+
+Reviewer: Independent read-only prompt diagnostic identifies failure at incoming original PR67 record60 Travel catch-up: archived record ends with two LF, validator allowed copied variant three LF, canonical matching record ends four LF. All64 archived records are present in canonical order when comparing newline-normalized strings for diagnosis only; do not trim/rewrite originals or weaken checker. Diagnostic copy /tmp/cluster-pr67-reviewer-prompt-diagnostic.mjs preserves check logic and prints exact mismatch. Preserve findings for a Git-proven separator reconciliation after disk recovery. Current Nix disk check confirms only268939264 bytes free, below reserve; do not restart builds/captures or delete unique evidence. Nix daemon briefly disconnected but recovered on retry. Preserve staged work and existing failed test log; CI66 remains remote and can be monitored. Log attributed handoff when safely writable. No merge.
+
+
+## Prompt 383: Earlier failure priority
+
+Delegated reviewer instruction, attributed to the reviewer; see the corresponding main meta-prompts.md PR66 terminal failure checkpoint.
+
+Reviewer: PR66 exactbb58f85a full strict40232015015/job121285556737 terminalFAILURE; application40232015001 SUCCESS, other three required checks SUCCESS. Short viewport has2failures,40passed2skipped: live-return-briefing/short/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png differs293886pixels(0.32); session-recovery.story.spec.ts:79 login second device times out10000ms waiting popup in helpers.ts:10. Prior118 repair passed but does not cover these. Prioritize66 diagnostic evidence over67 publication: retain failed run, inspect verified expected/actual/diff and traces for both failures before deciding source vs baseline vs timing defect. Do not approve unseen mismatch, weaken thresholds, or blindly rerun full CI. Current local free553005056 bytes remains below reserve: avoid full multiGB download/build; inspect remote metadata/logs and prepare selective extraction only when reserve permits. Preserve67 staged work/approved hashes and separator diagnosis. No merge. Record exact handoff and evidence in attributed committed/pushed logs when safe.
+
+
+## Prompt 384: Verified disk recovery
+
+Delegated reviewer instruction, attributed to the reviewer; refer to the corresponding main meta-prompts.md verified archive recovery checkpoint.
+
+Reviewer: Disk recovery completed safely: removed only /tmp/cluster-strict-208-12561036357/artifact.zip (1766133062bytes SHA25609d22f0cff2b3b4490c2d2a2ef6e7b02cc6e35968fc050d1121dbabda210bac4) and /tmp/cluster131-artifact-12531989021/artifact.zip (1723906172bytes SHA256c79ff11076adb83430136749533d5a458c6360a37ea3ba3c137bbc08f0ae95b7), each independently rehashed against fresh unexpired GitHub metadata; remote originals expire2027-01-22/21. Saved full metadata/digest recovery records in each directory archive-remote-retention.json. All extracted originals/traces/inventories untouched. Nix disk check now4266078208bytes free. Resume priority66 selective expected/actual/diff+trace extraction with fresh floor+reserve preflight and continuous monitoring; no multiGB full artifact download. Preserve67 staged integration and diagnose exact66 failures before changes. Commit/push attributed logs including recovery evidence when safe. No merge.
