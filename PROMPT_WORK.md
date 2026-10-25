@@ -501,3 +501,5 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | A
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 69 to its predecessor and exact-head preview gate after publishing reviewed fleet-contact stories and preserved regressions.
 
 Prompt 167 | 2c70c06d1c418cf3180c4b30dc1e72f4f5797e7f6d4092fcfaef64f47297f5e5 | Preserve exact original69 prompt and continuation ancestry without changing tested fleet-contact source/helpers or inherited references.
+
+Prompt 168 | 7156ce2ed4cf2bb0ba21b049fc15e5bbf3f358d88497d986c8b43be82b2e033b | Verify all76 source-bound contact candidates without duplicate downloads, preserve reviewer originals, and retain PR68 publication handles.
