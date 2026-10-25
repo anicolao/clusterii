@@ -1,0 +1,7 @@
+# Scoped reviewer approval and promotion
+
+Reviewer final visual disposition in supervisor main meta approves precisely42 changed Darwin originals from clean d5e1a41ea31ff3cd0b6f69ce36e6146a491badc1: phone9, desktop11, short11, large11. All changed originals individually inspected except large017–020, whose exact identical hashes were independently checked and represented by opened017. Large displayed downscaled; no native typography/full-design certification. Remaining174 captures byte-identical to existing baselines, not new broad approval.
+
+Before promotion all216 original SHA256 values were rechecked against reviewer comparison inventory, source/complete passed manifests verified, and production/story/helpers/dependencies/config compared unchanged against captured source. Exactly42 PNG changes authorized. Tool may rewrite identical bytes but Git must show only these42 PNGs, plus review metadata. No Linux/normal-motion or downstream80–85 regenerated-story approval. Those changed families require separate captures and independent inspection. No thresholds/assertions changed.
+
+This PR80 recovery remains on investigate/market-background-paint while current53 publication is queued, avoiding competing shared publication. Remote PR80 remains326de8ba until serialized integration; existing53–62 heads/live jobs untouched. The correction is a normal fast-forward descendant of PR80, with no rewrite or PR merge.
