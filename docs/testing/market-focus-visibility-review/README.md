@@ -1,0 +1,11 @@
+# Reviewer PR86 focused-control correction
+
+Prompt312/main meta final original review:22 of64 original images approved,42held; short015 additionally clips focused61 input. Isolated branch investigate/market-focus-visibility based1c85b948, no earlier PR head mutation. e11cb328 adds precise full-control/ring clipping assertion and already-reviewed background hide/owned websocket port. One short pre-fix run failed for the intended cause:558.578125 painted bottom exceeds543.390625 reader bottom by15.1875px. Trace/error context /tmp/cluster-market-visibility-before and partial originals /tmp/cluster-market-visibility-before-originals retained.
+
+6cb38468 corrects bounded focus visibility after focus/input updates and region resizing, measuring actual outline and scrolling only the reader, without changing focus or values. Observer/listener cleanup fences delayed ticks. Native focus versus reactive-layout timing contributions not isolated; no overclaim. Original assertions/deadlines remain. Same newly added assertion passes allfour real saved-account journeys in1.3m; check/lint/policy pass. Evidence pushed7ecb7619.64 originals at /tmp/cluster-market-visibility-corrected-originals/market-draft-account-isolation;54changed10identical versus86. All corrected changed frames pending independent review, no promotion. Self-viewed015 at every size confirms full control/ring plus validation/disabledApply. Large downscaled, no native typography approval. Normal-motion/Linux/downstream holds remain.
+
+## Publication priority
+
+Prompt313 reviewer reports current53publication40167553183 attempt2 terminalfailure, not pending. Independently retained failed log confirms exact-revision timeout08:14:26Z: expected9a216847, observedold3be6f22d. Reviewer verified Pages tree5044a7cf contains correct pr53 revision source/build9a216847. Live dependency40175189456 build121114221070 began08:14:32Z, after deadline. Preserve live deployment; no new request/cancel/restart. After success, run unchanged exact hosted revision/assets check, then recover current53publication serially before54. No threshold/timing relaxation. PR53head unchanged.
+
+Reviewer fresh CI evidence:55applicationgreen;56allfournonpublicationgreen;57strictgreen;58docsgreen. Attribution retained, not a new whole-stack-green claim. Corrected62candidate40172866002 last observedqueued, preserved.
