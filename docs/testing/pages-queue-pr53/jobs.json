@@ -1,0 +1,41 @@
+[
+  {
+    "id": 121100527731,
+    "name": "build",
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-10-25T07:07:10Z",
+    "completed_at": "2026-10-25T07:07:54Z",
+    "runner_id": 1000035817,
+    "runner_name": "GitHub Actions 1000035817",
+    "labels": [
+      "ubuntu-latest"
+    ]
+  },
+  {
+    "id": 121103474440,
+    "name": "deploy",
+    "status": "queued",
+    "conclusion": null,
+    "started_at": "2026-10-25T07:07:54Z",
+    "completed_at": null,
+    "runner_id": 0,
+    "runner_name": "",
+    "labels": [
+      "ubuntu-latest"
+    ]
+  },
+  {
+    "id": 121103474481,
+    "name": "report-build-status",
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-10-25T07:16:27Z",
+    "completed_at": "2026-10-25T07:16:30Z",
+    "runner_id": 1000035823,
+    "runner_name": "GitHub Actions 1000035823",
+    "labels": [
+      "ubuntu-latest"
+    ]
+  }
+]

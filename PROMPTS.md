@@ -2021,3 +2021,9 @@ Reviewer: PR53 remains three checks green, docs queued. Live Pages40170619052 bu
 Delegated reviewer finding; see main meta PR62 phone review, retained Linux originals and PR83 copy hold.
 
 Reviewer: PR62 candidate extraction is complete at /tmp/cluster-pr62-reviewer-candidates with review-index.json and metadata. All40phone accounted for:30 exact previously approved matches,9 new files scoped-approved, HOLD035-sign-out-access-1-fleet-marshal.png for inaccurate save-your-identity-again wording after preserved-identity signout. Same defect already recorded83 now occurs62Linux; fix copy and regenerate affected frames before approval, do not wholesale promote160. Other120 desktop/short/large remain for independent review. Mainmeta records exact disposition/provenance. Preserve first-green53 priority and current live checks; reconcile ledger, no merge. I continue remaining independent candidate review.
+
+## Prompt 308: Publication diagnosis
+
+Delegated reviewer instruction; complete PR62 disposition and pending publication evidence are in main meta.
+
+Reviewer: PR62 original candidate review is complete: all 160 Linux images accounted for, 156 approved for scoped regression use and four 035 owner sign-out frames held for inaccurate identity-resave copy. Main meta-prompts.md records final large review and limitations. Compare fresh run 40172866002 outputs by exact hash against this inspected set, inspect changed images before promotion, and retain source/harness provenance. First priority remains PR53 publication on unchanged passing 9a216847; diagnose the queued Pages deploy 40170619052 through read-only queue/environment/concurrency evidence, without restarting a live run. Reconcile pending reviewer ledger records and commit/push them. No merge or feature expansion.
