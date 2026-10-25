@@ -7,7 +7,10 @@ import type {
   WebSocketRoute,
 } from "@playwright/test";
 import { campaignView, type Campaign } from "../../shared/campaign";
-import { installObservationEntropy } from "./story-helpers/route-observation-entropy.mjs";
+import {
+  installObservationEntropy,
+  retainObservationFacts,
+} from "./story-helpers/route-observation-entropy.mjs";
 import { observationInputs } from "./story-helpers/route-observation-inputs.mjs";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
@@ -469,31 +472,26 @@ test("Interrupted route commands retain their original choices and identity", as
               );
             }
         }
-        await info.attach("route-observation-facts", {
-          contentType: "application/json",
-          body: Buffer.from(
-            JSON.stringify({
-              tick: formed.economy!.tick,
-              entropyNamespace: "illustrated-route-recovery",
-              seats: formed.seats.map((seat, ordinal) => ({
-                ordinal,
-                reportCount: Object.keys(
-                  formed.intelligence!.reports[seat.uid] ?? {},
-                ).length,
-                verifiedDrawCount: formed.intelligence!.draws[seat.uid].filter(
-                  (d) => d !== null,
-                ).length,
-                fingerprint: createHash("sha256")
-                  .update(
-                    JSON.stringify({
-                      reports: formed.intelligence!.reports[seat.uid],
-                      draws: formed.intelligence!.draws[seat.uid],
-                    }),
-                  )
-                  .digest("hex"),
-              })),
-            }),
-          ),
+        await retainObservationFacts(info, {
+          tick: formed.economy!.tick,
+          entropyNamespace: "illustrated-route-recovery",
+          seats: formed.seats.map((seat, ordinal) => ({
+            ordinal,
+            reportCount: Object.keys(
+              formed.intelligence!.reports[seat.uid] ?? {},
+            ).length,
+            verifiedDrawCount: formed.intelligence!.draws[seat.uid].filter(
+              (d) => d !== null,
+            ).length,
+            fingerprint: createHash("sha256")
+              .update(
+                JSON.stringify({
+                  reports: formed.intelligence!.reports[seat.uid],
+                  draws: formed.intelligence!.draws[seat.uid],
+                }),
+              )
+              .digest("hex"),
+          })),
         });
         expect(await settleCampaignTicks(id, () => next)).toBe(0);
         expect(await canonical()).toEqual(formed);

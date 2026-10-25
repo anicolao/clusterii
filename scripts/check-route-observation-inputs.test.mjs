@@ -90,3 +90,39 @@ test("entropy identities are stable across real campaign/account IDs, never modi
     );
   }
 });
+
+test("passed-run facts remain as an explicit file even when reporter ignores attachment bodies", async () => {
+  const { mkdtempSync, readFileSync, rmSync } = await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const { join } = await import("node:path");
+  const { retainObservationFacts } =
+    await import("../tests/browser/story-helpers/route-observation-entropy.mjs");
+  const root = mkdtempSync(join(tmpdir(), "route-facts-"));
+  const facts = {
+    tick: 1,
+    entropyNamespace: "illustrated-route-recovery",
+    seats: [],
+  };
+  let attached;
+  try {
+    await retainObservationFacts(
+      {
+        outputPath: (name) => join(root, name),
+        attach: async (name, options) => {
+          attached = { name, ...options };
+        },
+      },
+      facts,
+    );
+    assert.deepEqual(
+      JSON.parse(readFileSync(join(root, "route-observation-facts.json"))),
+      facts,
+    );
+    assert.equal(attached.name, "route-observation-facts");
+    assert.equal(attached.path, join(root, "route-observation-facts.json"));
+    assert.equal(attached.contentType, "application/json");
+    assert.equal("body" in attached, false);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
