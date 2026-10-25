@@ -1,0 +1,55 @@
+[WebServer] $ vite build
+[WebServer] (node:80802) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:80802) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:80802) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:80803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:80806) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [phone] › tests/browser/research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application (843ms)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [phone] › tests/browser/research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application › Inspect the scheduled research frame and compare both motion presentations. › Pending disables selection; recovery offers retry; accepted and applied orders remain distinct with the exact investing tick. 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= -747.25
+    Received:    -617.25
+
+      159 |                 });
+      160 |                 expect(bounds.top).toBeGreaterThanOrEqual(bounds.clipTop);
+    > 161 |                 expect(bounds.bottom).toBeLessThanOrEqual(bounds.clipBottom);
+          |                                       ^
+      162 |               }
+      163 |               if (id === "scheduled") {
+      164 |                 await expect(
+        at check (/private/tmp/cluster-research-queue-visibility/tests/browser/research-lab.story.spec.ts:161:39)
+        at test.step.timeout (/private/tmp/cluster-research-queue-visibility/tests/browser/story-helpers/test-step-helper.ts:189:11)
+        at TestStepHelper.step (/private/tmp/cluster-research-queue-visibility/tests/browser/story-helpers/test-step-helper.ts:180:5)
+        at /private/tmp/cluster-research-queue-visibility/tests/browser/research-lab.story.spec.ts:98:5
+
+    Error Context: ../../../tmp/cluster-research-external-before/research-lab.story-Researc-b1d99--scheduling-and-application-phone/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    ../../../tmp/cluster-research-external-before/research-lab.story-Researc-b1d99--scheduling-and-application-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../tmp/cluster-research-external-before/research-lab.story-Researc-b1d99--scheduling-and-application-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [phone] › tests/browser/research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application 
+  1 error was not a part of any test, see above for details
