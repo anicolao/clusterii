@@ -72,5 +72,27 @@
     "inspection": "Reviewer inspected21 exact-SHA representatives per viewport and reopened truncated final large views before disposition",
     "largeReviewLimitation": "3840x2160 composition displayed2048x1152; not native-pixel typography approval",
     "promoted": false
+  },
+  "pr59": {
+    "artifact": 12407819435,
+    "path": "/tmp/cluster-pr59-reviewer-candidates",
+    "extraction": "Reviewer-owned session82902 live at checkpoint;139selectedfiles; no duplicate retrieval",
+    "captureSource": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+    "applicableHead": "943fdce043b4c3f6d6c59e58605c43486df41900",
+    "treeComparison": "Reviewer confirmed empty full-tree diff; recheck intervening fixes",
+    "review": {
+      "desktop": {
+        "acceptable": 21,
+        "held": 1
+      },
+      "phone": "uninspected",
+      "large": "uninspected",
+      "short": "uninspected/not established available"
+    },
+    "heldImage": "live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "measuredIssue": "Status glyph bottom930; button top932; outline3+offset5 paints top924, overlaps glyph region924\u2013930",
+    "sourceFinding": "SystemFleets .feedback p is scoped to its own paragraphs; Feedback child .notice has no parent component scope and global margin18px0 0. Feedback wrapper bottom932 equals action top932.",
+    "nextAction": "In stack order add shared footer feedback/action clearance, retain visible focus, verify painted bounds and real cancellation/reload/draft assertions with fresh four-size images",
+    "promoted": false
   }
 }

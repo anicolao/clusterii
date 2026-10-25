@@ -1,0 +1,160 @@
+{
+  "source": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+  "originalLayoutPath": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+  "originalLayoutSha256": "98db500e394667ca3282ca7aabd481708b75e558a14236b9de2ea2cadb3036e0",
+  "measurements": [
+    {
+      "text": "Fleet order cancelled. Reservations released; no forces moved.",
+      "rects": [
+        {
+          "x": 904,
+          "y": 910,
+          "width": 439,
+          "height": 20,
+          "top": 910,
+          "right": 1343,
+          "bottom": 930,
+          "left": 904
+        }
+      ],
+      "ancestors": [
+        {
+          "tag": "P",
+          "class": "notice",
+          "box": {
+            "x": 904,
+            "y": 908,
+            "width": 512,
+            "height": 24,
+            "top": 908,
+            "right": 1416,
+            "bottom": 932,
+            "left": 904
+          }
+        },
+        {
+          "tag": "DIV",
+          "class": null,
+          "box": {
+            "x": 904,
+            "y": 908,
+            "width": 512,
+            "height": 24,
+            "top": 908,
+            "right": 1416,
+            "bottom": 932,
+            "left": 904
+          }
+        },
+        {
+          "tag": "DIV",
+          "class": "feedback svelte-epqxo8",
+          "box": {
+            "x": 904,
+            "y": 908,
+            "width": 512,
+            "height": 24,
+            "top": 908,
+            "right": 1416,
+            "bottom": 932,
+            "left": 904
+          }
+        },
+        {
+          "tag": "FOOTER",
+          "class": "svelte-epqxo8",
+          "box": {
+            "x": 880,
+            "y": 873,
+            "width": 560,
+            "height": 127,
+            "top": 873,
+            "right": 1440,
+            "bottom": 1000,
+            "left": 880
+          }
+        }
+      ]
+    },
+    {
+      "text": "Form fleet",
+      "rects": [
+        {
+          "x": 1252,
+          "y": 948,
+          "width": 78,
+          "height": 20,
+          "top": 948,
+          "right": 1330,
+          "bottom": 968,
+          "left": 1252
+        }
+      ],
+      "ancestors": [
+        {
+          "tag": "BUTTON",
+          "class": null,
+          "box": {
+            "x": 1166,
+            "y": 932,
+            "width": 250,
+            "height": 52,
+            "top": 932,
+            "right": 1416,
+            "bottom": 984,
+            "left": 1166
+          }
+        },
+        {
+          "tag": "DIV",
+          "class": "actions svelte-epqxo8",
+          "box": {
+            "x": 904,
+            "y": 932,
+            "width": 512,
+            "height": 52,
+            "top": 932,
+            "right": 1416,
+            "bottom": 984,
+            "left": 904
+          }
+        },
+        {
+          "tag": "FOOTER",
+          "class": "svelte-epqxo8",
+          "box": {
+            "x": 880,
+            "y": 873,
+            "width": 560,
+            "height": 127,
+            "top": 873,
+            "right": 1440,
+            "bottom": 1000,
+            "left": 880
+          }
+        },
+        {
+          "tag": "SECTION",
+          "class": "fleet-instrument svelte-epqxo8",
+          "box": {
+            "x": 0,
+            "y": 58,
+            "width": 1440,
+            "height": 942,
+            "top": 58,
+            "right": 1440,
+            "bottom": 1000,
+            "left": 0
+          }
+        }
+      ]
+    }
+  ],
+  "outline": {
+    "width": 3,
+    "offset": 5,
+    "buttonTop": 932,
+    "paintedTop": 924
+  },
+  "disposition": "Held; original image inspected by reviewer and implementer. No fix/rendered acceptance yet; ordered publication52then53/54before59."
+}
