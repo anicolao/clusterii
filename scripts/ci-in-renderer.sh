@@ -28,6 +28,7 @@ case "$1" in
   recovery)
     [ "$#" -eq 2 ] || exit 2
     case "$2" in
+      identity-paint) node scripts/identity-paint-probe.mjs ;;
       client-contact-science-candidates) node scripts/recovery-client-batch.mjs "$2" ;;
       feature012-contacts-verify) node scripts/recovery-contact-verification.mjs "$2" ;;
       feature009-010-pair) node scripts/recovery-pair.mjs "$2" ;;
