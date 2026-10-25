@@ -248,3 +248,5 @@ Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | R
 Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Review and promote only new Linux production lab candidates from the completed instrumented run.
 
 Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Carry reviewed Linux history and production candidates and supervisory checkpoints into feat/sharing-lab-stories.
+
+Prompt 66 | 5f0f80b61a840362124761048c05dc5658c6ac9df8be5137e0401b72ac4d9170 | Request the two original short identity journeys on pinned Linux at eee5d6d3; inspect generated evidence before full checks.
