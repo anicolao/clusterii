@@ -417,3 +417,5 @@ Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | A
 Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | Retain four complete corrected maintenance-focus journeys and136 source-bound local originals before pinned Linux verification.
 
 Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | Prepare fresh exact-source Linux focus-correction request using existing guarded four-journey runner after local pass.
+
+Prompt 130 | ad9ff570025c52034a777c3d8ce097185c0f5fc9f4855cfa059b85aee78ead08 | Request one complete changed-source pinned-Linux paused-travel family for independent focus correction review.
