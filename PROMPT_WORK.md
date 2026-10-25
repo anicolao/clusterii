@@ -442,8 +442,32 @@ Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | 
 
 Prompt 148 | 6d16a2903fe2937d7862d0ad34bb65ec673b177c23bace48a8af5646816eb98e | Retain complete eight-view phone strict success and seven original passing cases without claiming integrated PR acceptance.
 
+Prompt 151 | 3fcedc85759f371c11a388fcd921e4ca20af9fb494d1d7bd2420cd97ad0a800a | Record one PR67 remote request, successful guards, restored disk reserve and newly terminal PR66 strict classification.
+
+Prompt 151 | 3fcedc85759f371c11a388fcd921e4ca20af9fb494d1d7bd2420cd97ad0a800a | Verify complete72-image Linux artifact once; retain56 exact inherited matches and16 new files with source/renderer review index.
+
+Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Add real selected-label versus inspector occlusion assertion and retained geometry before correcting Center home camera framing.
+
+Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Reproduce real phone home occlusion, retain measured bounds and add camera/pivot framing with projection tests and clean type checks.
+
+Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Retain failed first camera correction; reproduce DOMRect accessor loss with a failing unit test and copy measured coordinates explicitly.
+
+Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Retain four passing corrected local journeys72images with real occlusion assertion, source identity and monitored disk evidence.
+
+Prompt 153 | 1234e909f3f94336d88c4825df07834bc41517f57bd962f7ba6748896fa7c1d7 | Verify corrected Linux72family archive and source/renderer;71unchanged and one heldphone020 correction retained for independent review.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Correct the keyboard home journey to verify automatic list dismissal and restored focus; retain diagnostic failures.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Scope placement to each shared galaxy viewport and exclude zero-size behind-camera labels; preserve observation candidates.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review and promote only the intentional observation label candidates with matching clean provenance before strict verification.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 72 exact label captures and retained service/browser regressions; carry the independent sampled review and remaining gates.
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 67 and its predecessor in the delivery acceptance table with an explicitly unverified current-head preview.
+
+Prompt 159 | 9dd12b26735f231849160ebce55dd865dfe8b16214285ff3c2405787a23b3ba5 | Retain metadata-only separator proof and isolated unchanged fleet test pass; preserve original timeout and pending PR66 reproduction.
+
 Prompt 150 | 8847b34152b66c5bb92294fd401802af6f3d790cb0d684b05fcb533820cfb06c | Retain four-case strict request40225364900 identities and exact four-reference-only repair audit before active publication.
 
 Prompt 151 | 42237fca74f27474d29b3b7d115ce945159649ca2afd100e52219b56f5c80b4e | Verify complete118-view phone candidates and retain99unchanged19changed exact comparison triples for independent review.
 
 Prompt 152 | 5c65807bf9c9f332c8a179cefa6fdba51466149e10497ff67183e2f25c9cbe90 | Retain complete118-view strict success and exact23-reference audit; publish corrected66 normally for unchanged required fullCI and hosted checks.
+
+Prompt 163 | 75344c478d240637ed10816c7223ac7bb90c7520c854507f34d13eaa7e0004d5 | Verify all72 complete pinned-Linux strict captures and immutable manifests, retain dirty provenance, and publish authorized PR67 integration.
