@@ -451,3 +451,5 @@ Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | 
 Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Reproduce real phone home occlusion, retain measured bounds and add camera/pivot framing with projection tests and clean type checks.
 
 Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Retain failed first camera correction; reproduce DOMRect accessor loss with a failing unit test and copy measured coordinates explicitly.
+
+Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Retain four passing corrected local journeys72images with real occlusion assertion, source identity and monitored disk evidence.
