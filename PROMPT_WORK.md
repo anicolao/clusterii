@@ -485,3 +485,5 @@ Prompt 165 | fa2ab67ed65ea7fdccf3755be414f2af5729e7920e441334d005cbb632f5404e | 
 Prompt 163 | 75344c478d240637ed10816c7223ac7bb90c7520c854507f34d13eaa7e0004d5 | Verify all72 complete pinned-Linux strict captures and immutable manifests, retain dirty provenance, and publish authorized PR67 integration.
 
 Prompt 166 | 566bf6278f6fc025093203d2157c7285eb02ca16eb928c5b6c5c50b047dbe918 | Incorporate published67 complete strict evidence into reconciled68 while preserving exact tested product and reference trees.
+
+Prompt 166 | 566bf6278f6fc025093203d2157c7285eb02ca16eb928c5b6c5c50b047dbe918 | Retain all101 exact Linux scene captures and source-bound manifests, verify published parent identity, and publish authorized PR68 integration.
