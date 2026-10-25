@@ -1,0 +1,28 @@
+{
+  "requestId": "short-repeat-20261025-01",
+  "sourceCommit": "d2f95f33886d245eadeb8c01a91461817b5a628e",
+  "executorCommit": "f1670aac1fd14d8385d87ccdc6a2aa4c9091e0ef",
+  "case": "scene-strict",
+  "mode": "verify",
+  "target": "bb58f85afd50cb75c39477b71122243154d91898",
+  "runId": "40242503554",
+  "attempt": 1,
+  "referenceTree": "ecab8f4df3b116b58a008dbfdc7ecf1836bcd782",
+  "specs": {
+    "briefing": {
+      "file": "tests/browser/return-briefing.story.spec.ts",
+      "title": "Live return briefing recovers authorized activity and saves only the reviewed private period",
+      "story": "live-return-briefing",
+      "sha": "5ed55233aeb9259683a8e05fd15833d12f63c13660985bd63cc62beeb5314c99",
+      "views": 27
+    },
+    "session": {
+      "file": "tests/browser/session-recovery.story.spec.ts",
+      "title": "Two devices recover an interrupted sign-out without losing saved identity",
+      "story": "session-interrupted-recovery",
+      "sha": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1",
+      "views": 15
+    }
+  },
+  "requestSha256": "03adadce1c728625773a447ff50e7f0ac5e17c37b6aae3861c5aef2b7ef428de"
+}
