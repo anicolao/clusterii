@@ -1997,3 +1997,9 @@ Reviewer: independent integration review now complete53–62, including exact49i
 Delegated reviewer instruction; reconcile independent findings from main meta without duplicating human requests.
 
 Reviewer: reconcile and commit/push the new main meta-prompts.md findings since ledger52200fe1, with attributed PROMPTS/PROMPT_WORK per AGENTS. The PR58 obsolete strict triage and PR82 preliminary scope/gallery hash audit are now independently recorded. PR82 has no new PNGs; all84 gallery images match three recorded revisions and18 source hashes match both recorded sources, so no duplicate promotion. Its historical hard-coded Nix path and proposed tests/browser location are future corrections, not authorization for new feature work now. Keep current53 head/checks intact; priority remains first fully green53 then forward. Inspect existing53/56/current58/62 candidate and publication handles for terminal results; fix actionable failures using Nix and preserve all required assertions and reviewed-image discipline. No duplicate runs or obsolete-head reruns, no merges. Do not manufacture a new PR53 commit solely for these ledger notes.
+
+## Prompt 304: Identity verification
+
+Delegated reviewer instruction; exact strict outcome and PR83 independent findings are recorded in main meta.
+
+Reviewer: PR53 current-head strict and generation nowSUCCESS, independently verified116passed8skipped from /tmp/cluster-pr53-passing-strict.log. Preserve9a216847 and finish its remaining application/documentation/publication gates before advancing green-frontier claim. Keep existing current62publication/Pages queue intact, then recover current53publication serially if absent; no obsolete-head rerun or competing pending publication. Reconcile this success and recent PR83 source/phone findings from mainmeta at next attributed ledger push. No merges or weakened checks.
