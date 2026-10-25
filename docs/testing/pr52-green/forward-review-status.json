@@ -10,12 +10,14 @@
     "head": "4f917d724022107f4c6550b11740ae45dcbe446f",
     "applicationRun": 40150284065,
     "strictRun": 40150284054,
-    "lastObserved": "Both in progress after normal push; no green claim",
+    "lastObserved": "Application40150284065 and strict40150284054 remain IN_PROGRESS at4f917d72; no duplicate run",
     "previousApplication": "cadb33e4 SUCCESS50m35s",
     "previousStrict": "cadb33e4 FAILURE111passed8skipped1identity-validation-short raster",
     "boundedRun": 40149691891,
     "boundedOutcome": "Two complete Linux journeys passed20.1s; all11 PNGs independently inspected acceptable,9unchanged2changed",
-    "scope": "Only short28px CSS,2inspected references and logs/provenance integrated. Bounded workflow remains isolated."
+    "scope": "Only short28px CSS,2inspected references and logs/provenance integrated. Bounded workflow remains isolated.",
+    "documentation": "SUCCESS",
+    "publication": "SUCCESS"
   },
   "pr54": {
     "originalCandidates": 212,
@@ -47,5 +49,28 @@
     "separateExecutionFailure": "Selected-history pending acknowledgement unresolved"
   },
   "promotedByThisReport": false,
-  "largeReviewLimitation": "Reviewer inspected downscaled full composition; no native-pixel typography measurement claimed"
+  "largeReviewLimitation": "Reviewer inspected downscaled full composition; no native-pixel typography measurement claimed",
+  "pr58": {
+    "artifact": 12402018661,
+    "path": "/tmp/cluster-pr58-reviewer-candidates",
+    "extraction": {
+      "files": 211,
+      "bytes": 276371377,
+      "integrity": "Reviewer reports selective entry CRC verification; do not duplicate retrieval"
+    },
+    "reviewedAcceptable": 102,
+    "viewports": {
+      "phone": 34,
+      "desktop": 34,
+      "large": 34,
+      "short": "absent/unapproved"
+    },
+    "captureSource": "d6885b03e796dc7b6b047e1d45d97da9c833a616",
+    "applicableHead": "a6838a2eee3a2725da63a53d473379b3a2fb4ff0",
+    "specSha256": "8531a5bbb0d138362c4e87fa2b802ddf064353374fc8d6087551114c51e955c6",
+    "treeComparison": "Reviewer confirmed empty full-tree diff; reuse evidence, recheck intervening fixes before promotion",
+    "inspection": "Reviewer inspected21 exact-SHA representatives per viewport and reopened truncated final large views before disposition",
+    "largeReviewLimitation": "3840x2160 composition displayed2048x1152; not native-pixel typography approval",
+    "promoted": false
+  }
 }
