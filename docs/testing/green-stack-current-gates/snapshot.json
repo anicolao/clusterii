@@ -1,0 +1,241 @@
+{
+  "observedAt": "2026-10-25T07:57:40.857074+00:00",
+  "prs": [
+    {
+      "pr": 55,
+      "head": "fa41e3ecc035755938b8773eb0781f69fd99a95f",
+      "checks": [
+        {
+          "name": "stories (verify)",
+          "status": "QUEUED",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167703810/job/121092026478",
+          "startedAt": "2026-10-25T06:02:49Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        },
+        {
+          "name": "verify",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167703803/job/121092026424",
+          "startedAt": "2026-10-25T07:04:00Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        },
+        {
+          "name": "documentation",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167703811/job/121092026520",
+          "startedAt": "2026-10-25T07:03:39Z",
+          "completedAt": "2026-10-25T07:05:52Z"
+        },
+        {
+          "name": "stories (generate)",
+          "status": "QUEUED",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167703810/job/121092026356",
+          "startedAt": "2026-10-25T06:02:49Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "pr": 56,
+      "head": "111f1b642048de69fd5e5ea0bfa12f91cd0d9330",
+      "checks": [
+        {
+          "name": "verify",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167917659/job/121092641740",
+          "startedAt": "2026-10-25T07:05:40Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        },
+        {
+          "name": "documentation",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167917654/job/121092641474",
+          "startedAt": "2026-10-25T06:08:30Z",
+          "completedAt": "2026-10-25T06:10:47Z"
+        },
+        {
+          "name": "stories (verify)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167917642/job/121092641822",
+          "startedAt": "2026-10-25T06:46:42Z",
+          "completedAt": "2026-10-25T07:47:08Z"
+        },
+        {
+          "name": "stories (generate)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40167917642/job/121092641686",
+          "startedAt": "2026-10-25T06:10:53Z",
+          "completedAt": "2026-10-25T07:09:51Z"
+        }
+      ]
+    },
+    {
+      "pr": 57,
+      "head": "c61293ec9c6c738893dcef252631e76bd8adda9b",
+      "checks": [
+        {
+          "name": "stories (verify)",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168002398/job/121092893291",
+          "startedAt": "2026-10-25T07:05:14Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        },
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168002388/job/121092893401",
+          "startedAt": "2026-10-25T06:46:39Z",
+          "completedAt": "2026-10-25T07:31:11Z"
+        },
+        {
+          "name": "documentation",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168002438/job/121092893458",
+          "startedAt": "2026-10-25T07:36:26Z",
+          "completedAt": "2026-10-25T07:38:39Z"
+        },
+        {
+          "name": "stories (generate)",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168002398/job/121092893430",
+          "startedAt": "2026-10-25T07:40:54Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "pr": 58,
+      "head": "9b69b0163333e91597a83eb815095835838aab32",
+      "checks": [
+        {
+          "name": "documentation",
+          "status": "QUEUED",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168031980/job/121092980395",
+          "startedAt": "2026-10-25T06:08:13Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        },
+        {
+          "name": "stories (verify)",
+          "status": "QUEUED",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168031952/job/121092980563",
+          "startedAt": "2026-10-25T06:08:13Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        },
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168031935/job/121092980226",
+          "startedAt": "2026-10-25T06:10:50Z",
+          "completedAt": "2026-10-25T07:01:12Z"
+        },
+        {
+          "name": "stories (generate)",
+          "status": "QUEUED",
+          "conclusion": "",
+          "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40168031952/job/121092980391",
+          "startedAt": "2026-10-25T06:08:13Z",
+          "completedAt": "0001-01-01T00:00:00Z"
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "run": 40167703803,
+      "id": 121092026424,
+      "name": "verify",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-25T07:04:00Z",
+      "completed_at": null,
+      "active_or_failed_steps": [
+        {
+          "name": "Application checks in Nix-provisioned renderer",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-10-25T07:06:04Z",
+          "completed_at": null
+        }
+      ]
+    },
+    {
+      "run": 40167917659,
+      "id": 121092641740,
+      "name": "verify",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-25T07:05:40Z",
+      "completed_at": null,
+      "active_or_failed_steps": [
+        {
+          "name": "Application checks in Nix-provisioned renderer",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-10-25T07:07:32Z",
+          "completed_at": null
+        }
+      ]
+    },
+    {
+      "run": 40168002398,
+      "id": 121092893291,
+      "name": "stories (verify)",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-25T07:05:14Z",
+      "completed_at": null,
+      "active_or_failed_steps": [
+        {
+          "name": "Exact verification",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-10-25T07:07:37Z",
+          "completed_at": null
+        }
+      ]
+    },
+    {
+      "run": 40168002398,
+      "id": 121092893430,
+      "name": "stories (generate)",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-25T07:40:54Z",
+      "completed_at": null,
+      "active_or_failed_steps": [
+        {
+          "name": "Explicit baseline candidates (never acceptance)",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-10-25T07:43:01Z",
+          "completed_at": null
+        }
+      ]
+    },
+    {
+      "run": 40167553183,
+      "id": 121111701794,
+      "name": "publish",
+      "status": "queued",
+      "conclusion": null,
+      "started_at": "2026-10-25T07:51:14Z",
+      "completed_at": null,
+      "active_or_failed_steps": []
+    }
+  ]
+}
