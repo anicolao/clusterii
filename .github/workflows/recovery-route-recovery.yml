@@ -2,7 +2,7 @@ name: Bounded PR62 corrected route-recovery candidates
 on:
   push:
     branches: [investigate/pr62-route-recovery-candidates]
-    paths: [.github/recovery/pr62-route-recovery-01.json]
+    paths: [.github/recovery/pr62-route-recovery-02.json]
 permissions:
   contents: read
 concurrency:
