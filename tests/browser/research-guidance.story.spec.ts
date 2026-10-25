@@ -350,6 +350,76 @@ test("Live research guidance follows the campaign capabilities without submittin
                     expect(box!.y + box!.height).toBeLessThanOrEqual(
                       owner.viewportSize()!.height,
                     );
+                    const painted = await target.evaluate((element) => {
+                      const b = element.getBoundingClientRect();
+                      const style = getComputedStyle(element);
+                      const ring = element.matches(":focus-visible")
+                        ? Math.max(
+                            0,
+                            parseFloat(style.outlineWidth) +
+                              parseFloat(style.outlineOffset),
+                          )
+                        : 0;
+                      let top = 0,
+                        left = 0,
+                        right = innerWidth,
+                        bottom = innerHeight;
+                      const ancestors = [];
+                      for (
+                        let parent = element.parentElement;
+                        parent;
+                        parent = parent.parentElement
+                      ) {
+                        const s = getComputedStyle(parent),
+                          r = parent.getBoundingClientRect();
+                        if (/auto|scroll|hidden|clip/.test(s.overflowY)) {
+                          top = Math.max(top, r.top + parent.clientTop);
+                          bottom = Math.min(
+                            bottom,
+                            r.top + parent.clientTop + parent.clientHeight,
+                          );
+                          ancestors.push({
+                            className: parent.className,
+                            top: r.top + parent.clientTop,
+                            bottom:
+                              r.top + parent.clientTop + parent.clientHeight,
+                          });
+                        }
+                        if (/auto|scroll|hidden|clip/.test(s.overflowX)) {
+                          left = Math.max(left, r.left + parent.clientLeft);
+                          right = Math.min(
+                            right,
+                            r.left + parent.clientLeft + parent.clientWidth,
+                          );
+                        }
+                      }
+                      return {
+                        control: {
+                          top: b.top - ring,
+                          left: b.left - ring,
+                          right: b.right + ring,
+                          bottom: b.bottom + ring,
+                        },
+                        clip: { top, left, right, bottom },
+                        ancestors,
+                      };
+                    });
+                    await info.attach(`research-${technology}-painted-bounds`, {
+                      body: JSON.stringify(painted),
+                      contentType: "application/json",
+                    });
+                    expect(painted.control.top).toBeGreaterThanOrEqual(
+                      painted.clip.top,
+                    );
+                    expect(painted.control.bottom).toBeLessThanOrEqual(
+                      painted.clip.bottom,
+                    );
+                    expect(painted.control.left).toBeGreaterThanOrEqual(
+                      painted.clip.left,
+                    );
+                    expect(painted.control.right).toBeLessThanOrEqual(
+                      painted.clip.right,
+                    );
                   }
                 },
               },
