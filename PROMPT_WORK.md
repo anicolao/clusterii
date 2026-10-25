@@ -416,3 +416,5 @@ Prompt 118 | b28027d9a64f90e57c95498ec91c5b92fe5db21d8b62a7eeae258cd8ccc6fb6f | 
 Prompt 119 | 0113bb810e1f0bca3746a3345f30d9143bd4a956c428c41deb1c87986cba84cb | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 119 | 0113bb810e1f0bca3746a3345f30d9143bd4a956c428c41deb1c87986cba84cb | Bind a fresh exact four-size request to the reviewed signed-out copy correction; preserve prior request, renderer, budgets and required checks.
+
+Prompt 119 | 0113bb810e1f0bca3746a3345f30d9143bd4a956c428c41deb1c87986cba84cb | Request one corrected complete route-recovery candidate run from the validated source; no baseline update, duplicate request or required CI change.
