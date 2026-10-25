@@ -906,6 +906,7 @@
   </header>
   {#if !roster && !commandKind.startsWith("conversation.")}<div
       class="acknowledgement"
+      hidden={economy}
       inert={listing ||
         briefingOpen ||
         history ||
@@ -938,7 +939,7 @@
       military}
     aria-label="Interactive galaxy chart. Drag to orbit and scroll to zoom. Use the systems list for keyboard selection."
   >
-    {#if view.fleetContactsEnabled}<p class="contact-legend">
+    {#if view.fleetContactsEnabled}<p class="contact-legend" hidden={economy}>
         {historyLoading
           ? "Recovering contact records…"
           : "Contact markers show acquired positions from loaded records."}
