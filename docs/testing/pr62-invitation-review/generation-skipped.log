@@ -1,0 +1,334 @@
+stories (generate)	UNKNOWN STEP	﻿2026-10-25T08:58:32.1870422Z Current runner version: '2.338.0'
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1896321Z ##[group]Runner Image Provisioner
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1897391Z Hosted Compute Agent
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1897989Z Version: 20261021.618
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1898609Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1899436Z Build Date: 2026-10-21T00:45:21Z
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1900119Z Worker ID: {072eb1d3-6511-4ce4-884e-9342af148e35}
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1900897Z Region: northcentralus
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1901514Z Cloud: Azure
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1902011Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1903694Z ##[group]Operating System
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1904333Z Ubuntu
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1904936Z 24.04.5
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1905730Z LTS
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1906253Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1906867Z ##[group]Runner Image
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1907501Z Image: ubuntu-24.04-arm
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1908176Z Version: 20261012.149.1
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1909453Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24-arm64/20261012.149/images/ubuntu/Ubuntu2404-Arm64-Readme.md
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1911076Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24-arm64%2F20261012.149
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1912082Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1913231Z ##[group]GITHUB_TOKEN Permissions
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1915979Z Contents: read
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1916698Z Metadata: read
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1917308Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1919654Z Secret source: Actions
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1920709Z Cache mode: write
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.1921489Z Prepare workflow directory
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.2337158Z Prepare all required actions
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.2384767Z Getting action download info
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.4631618Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.6218666Z Download action repository 'DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e' (SHA:9383ce2bf08796b65508822f5982f49151badc4e)
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:32.9640415Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.1455993Z Complete job name: stories (generate)
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2277019Z ##[group]Run actions/checkout@v4
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2278429Z with:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2279045Z   repository: anicolao/clusterii
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2282829Z   token: ***
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2283356Z   ssh-strict: true
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2284012Z   ssh-user: git
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2284558Z   persist-credentials: true
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2285383Z   clean: true
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2286093Z   sparse-checkout-cone-mode: true
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2286738Z   fetch-depth: 1
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2287317Z   fetch-tags: false
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2287906Z   show-progress: true
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2288471Z   lfs: false
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2289105Z   submodules: false
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2289649Z   set-safe-directory: true
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2290336Z   allow-unsafe-pr-checkout: false
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2291536Z env:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2292134Z   CLUSTER_STORY_COHORTS: viewport
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2293497Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.2294660Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3117446Z Syncing repository: anicolao/clusterii
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3119604Z ##[group]Getting Git version info
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3120581Z Working directory is '/home/runner/work/clusterii/clusterii'
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3121936Z [command]/usr/bin/git version
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3165702Z git version 2.55.0
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3183228Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3196701Z Temporarily overriding HOME='/home/runner/work/_temp/8e6ddf2c-d50b-4542-bb69-976920e8d290' before making global git config changes
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3198195Z Adding repository directory to the temporary git global config as a safe directory
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3200913Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3230276Z Deleting the contents of '/home/runner/work/clusterii/clusterii'
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3235815Z ##[group]Initializing the repository
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3240063Z [command]/usr/bin/git init /home/runner/work/clusterii/clusterii
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3319482Z hint: Using 'master' as the name for the initial branch. This default branch name
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3320859Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3322042Z hint: to use in all of your new repositories, which will suppress this warning,
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3322971Z hint: call:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3323478Z hint:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3324150Z hint: 	git config --global init.defaultBranch <name>
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3325208Z hint:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3325957Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3327127Z hint: 'development'. The just-created branch can be renamed via this command:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3327985Z hint:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3328559Z hint: 	git branch -m <name>
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3329249Z hint:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3330029Z hint: Disable this message with "git config set advice.defaultBranchName false"
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3331223Z Initialized empty Git repository in /home/runner/work/clusterii/clusterii/.git/
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3333242Z [command]/usr/bin/git remote add origin https://github.com/anicolao/clusterii
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3363379Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3364458Z ##[group]Disabling automatic garbage collection
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3366967Z [command]/usr/bin/git config --local gc.auto 0
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3393061Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3394202Z ##[group]Setting up auth
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3399583Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3426610Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3700523Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3725856Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3896021Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.3922532Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.4093253Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.4124182Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.4125791Z ##[group]Fetching the repository
+stories (generate)	UNKNOWN STEP	2026-10-25T08:58:33.4132063Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3cb5fd9483d4dc262cc99e5abe66c211aa899941:refs/remotes/pull/62/merge
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7787526Z From https://github.com/anicolao/clusterii
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7789827Z  * [new ref]         3cb5fd9483d4dc262cc99e5abe66c211aa899941 -> pull/62/merge
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7793276Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7794006Z ##[group]Determining the checkout info
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7794671Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7798104Z [command]/usr/bin/git sparse-checkout disable
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7833095Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7862148Z ##[group]Checking out the ref
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:30.7865729Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/62/merge
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:31.9266029Z Updating files:  22% (1804/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.2139648Z Updating files:  23% (1839/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.3422325Z Updating files:  24% (1919/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.3445342Z Updating files:  25% (1999/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.3544822Z Updating files:  26% (2079/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.5427283Z Updating files:  27% (2159/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.6844657Z Updating files:  28% (2239/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.8028142Z Updating files:  29% (2318/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.9203349Z Updating files:  29% (2345/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:32.9431545Z Updating files:  30% (2398/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:33.1392422Z Updating files:  31% (2478/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:33.3341766Z Updating files:  32% (2558/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:33.4863851Z Updating files:  33% (2638/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:33.6733358Z Updating files:  34% (2718/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:33.8023535Z Updating files:  35% (2798/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:34.3853660Z Updating files:  35% (2813/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:34.5517616Z Updating files:  36% (2878/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:34.6074312Z Updating files:  37% (2958/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:34.7100691Z Updating files:  38% (3038/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:34.7953626Z Updating files:  39% (3118/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:34.8624308Z Updating files:  39% (3163/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:35.5517754Z Updating files:  40% (3198/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:35.5991469Z Updating files:  41% (3278/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:35.7272362Z Updating files:  42% (3358/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:35.7997129Z Updating files:  43% (3437/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.3422817Z Updating files:  43% (3456/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.4050093Z Updating files:  44% (3517/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.6729186Z Updating files:  45% (3597/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.7953120Z Updating files:  46% (3677/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.8128979Z Updating files:  46% (3738/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.9139191Z Updating files:  47% (3757/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.9512028Z Updating files:  48% (3837/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:36.9771471Z Updating files:  49% (3917/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:37.0590244Z Updating files:  50% (3997/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:37.1761861Z Updating files:  51% (4077/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:37.2737351Z Updating files:  52% (4157/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:37.4349528Z Updating files:  53% (4237/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:37.5839012Z Updating files:  54% (4317/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:37.8007842Z Updating files:  55% (4397/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:37.8871829Z Updating files:  55% (4465/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:38.3133690Z Updating files:  56% (4477/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:38.5786116Z Updating files:  57% (4557/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:38.8152851Z Updating files:  58% (4636/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:39.7365248Z Updating files:  58% (4658/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:39.7947116Z Updating files:  59% (4716/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:39.9978673Z Updating files:  59% (4721/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:40.1422647Z Updating files:  60% (4796/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:40.3682318Z Updating files:  61% (4876/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:40.5655699Z Updating files:  62% (4956/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:40.8083140Z Updating files:  63% (5036/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:40.8101613Z Updating files:  63% (5108/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:41.1171991Z Updating files:  64% (5116/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:41.4937640Z Updating files:  65% (5196/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:41.7540466Z Updating files:  66% (5276/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:41.7990587Z Updating files:  67% (5356/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:42.4998172Z Updating files:  67% (5359/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:42.6996155Z Updating files:  68% (5436/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:42.7984226Z Updating files:  69% (5516/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:43.8138811Z Updating files:  69% (5537/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:43.8514881Z Updating files:  69% (5586/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:43.9779631Z Updating files:  70% (5596/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:44.3478480Z Updating files:  71% (5676/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:44.8102548Z Updating files:  72% (5755/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:45.7958220Z Updating files:  72% (5774/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:45.8600219Z Updating files:  72% (5817/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:45.9514618Z Updating files:  73% (5835/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:46.2366474Z Updating files:  74% (5915/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:46.8182100Z Updating files:  75% (5995/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:47.1849381Z Updating files:  75% (6028/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:47.4166206Z Updating files:  76% (6075/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:47.8164207Z Updating files:  77% (6155/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:48.8004340Z Updating files:  77% (6213/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:48.8977883Z Updating files:  77% (6231/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:49.8138409Z Updating files:  78% (6235/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:49.8219829Z Updating files:  78% (6276/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:49.9834381Z Updating files:  79% (6315/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:50.6729546Z Updating files:  80% (6395/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:50.8169073Z Updating files:  81% (6475/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:51.1926959Z Updating files:  81% (6482/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:51.3482622Z Updating files:  82% (6555/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:51.5748025Z Updating files:  83% (6635/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:51.7416228Z Updating files:  84% (6715/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:51.7961203Z Updating files:  85% (6795/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:51.8209184Z Updating files:  85% (6859/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.0909066Z Updating files:  86% (6874/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.1880155Z Updating files:  87% (6954/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.2162584Z Updating files:  88% (7034/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.2556536Z Updating files:  89% (7114/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.2871124Z Updating files:  90% (7194/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.3103238Z Updating files:  91% (7274/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.3559456Z Updating files:  92% (7354/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.5982839Z Updating files:  93% (7434/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.6503058Z Updating files:  94% (7514/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.7352294Z Updating files:  95% (7594/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.7956936Z Updating files:  96% (7674/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.8753119Z Updating files:  96% (7685/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:52.9080034Z Updating files:  97% (7754/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.3332577Z Updating files:  98% (7834/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.5777495Z Updating files:  99% (7914/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.5780523Z Updating files: 100% (7993/7993)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.5780884Z Updating files: 100% (7993/7993), done.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8257287Z Note: switching to 'refs/remotes/pull/62/merge'.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8258216Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8258461Z You are in 'detached HEAD' state. You can look around, make experimental
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8259364Z changes and commit them, and you can discard any commits you make in this
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8259966Z state without impacting any branches by switching back to a branch.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8260243Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8260468Z If you want to create a new branch to retain commits you create, you may
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8260968Z do so (now or later) by using -c with the switch command. Example:
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8261235Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8261336Z   git switch -c <new-branch-name>
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8261523Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8261614Z Or undo this operation with:
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8261828Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8261912Z   git switch -
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8262046Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8262295Z Turn off this advice by setting config variable advice.detachedHead to false
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8262582Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8262969Z HEAD is now at 3cb5fd9 Merge 8e683a73ba9107ba85a4c61a7e041ee22eadb398 into c87bd74014849e7dc746c240fde267ccfcdaa61c
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8786816Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8821724Z [command]/usr/bin/git log -1 --format=%H
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:53.8844411Z 3cb5fd9483d4dc262cc99e5abe66c211aa899941
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5262718Z ##[group]Run DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5263282Z with:
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5263590Z   determinate: false
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5263829Z   flakehub: false
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5264096Z   force-no-systemd: false
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5266861Z   github-token: ***
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5267158Z   github-server-url: https://github.com
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5267531Z   job-status: success
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5267764Z   kvm: true
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5267994Z   modify-profile: true
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5268368Z   reinstall: false
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5268586Z   start-daemon: true
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5268944Z   diagnostic-endpoint: -
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5269208Z   trust-runner-user: true
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5269756Z   summarize: true
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5270051Z   _internal-strict-mode: false
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5270313Z env:
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5270555Z   CLUSTER_STORY_COHORTS: viewport
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5271257Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.5271911Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8719779Z ^[[0;31m^[[1m^[[4mDeterminate Systems, Inc. | Status Status
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8720839Z 🛠️ monitoring: Patched PHP security release (https://status.determinate.systems/incidents/51ece80b-c4d6-401e-a3bb-cc2811518fc6)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8722184Z 🔴 monitoring: eMudhra Intermediate CA Compromise (https://status.determinate.systems/incidents/f7cd1dd4-f0d1-4960-b787-e8077e6d4885)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8722979Z See: https://status.determinate.systems/
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8723324Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8742829Z [command]/usr/bin/sudo mkdir -p /var/lib/determinate
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8985978Z ##[group]Detecting systemd...
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.8986815Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.9002675Z ##[group]Configuring KVM
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.9375930Z [command]/usr/bin/sudo rm -f /etc/udev/rules.d/99-determinate-nix-installer-kvm.rules
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.9447314Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.9447901Z KVM is not available.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.9449480Z ##[group]Installing Nix
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.9453455Z ##[group]Downloading nix-installer for aarch64-linux
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:54.9455538Z Fetching from https://cf.install.determinate.systems/nix-installer/stable/aarch64-linux
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:55.4254784Z Cache hit for: determinatesystem-nix-installer-aarch64-linux-b3e6eec14bb8430a81950b2714c7210c
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.1269926Z Received 46735267 of 46735267 (100.0%), 76.4 MBs/sec
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.1270366Z Cache Size: ~45 MB (46735267 B)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.5048439Z [command]/usr/bin/tar -xf /home/runner/work/_temp/afde4fd9-de60-4664-98d4-2486da5e6da8/cache.tzst -P -C /home/runner/work/_temp/nix-installer-7d7520a0-ddd8-478d-aa21-09c26ce1cff7 --use-compress-program unzstd
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.5717870Z Cache restored successfully
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.5749501Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.5776445Z [command]/home/runner/work/_temp/nix-installer-7d7520a0-ddd8-478d-aa21-09c26ce1cff7/nix-installer install linux --prefer-upstream-nix
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.5825610Z  INFO nix-installer v3.24.0
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.6965652Z ^[[2m^[[33m`nix-installer` needs to run as `root`, attempting to escalate now via `sudo`...^[[39m^[[0m
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.7042411Z  INFO nix-installer v3.24.0
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.9367039Z  INFO Step: Create directory `/nix`
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:56.9367674Z  INFO Step: Provision Nix
+stories (generate)	UNKNOWN STEP	2026-10-25T09:01:58.4554161Z  INFO Step: Create build users (UID 30001-30032) and group (GID 30000)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:02.9277201Z  INFO Step: Configure Nix
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.1399266Z  INFO Step: Create directory `/etc/tmpfiles.d`
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.1399723Z  INFO Step: Configure upstream Nix daemon service
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.7316277Z  INFO Step: Cleanup
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.7336628Z  INFO Running self test for shell sh
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.8191711Z  INFO Running self test for shell bash
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9146056Z ^[[1m^[[32mNix was installed successfully!^[[39m^[[0m
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9147130Z To get started using Nix, open a new shell or run `^[[1m. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh^[[0m`
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9147586Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9326437Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9991856Z ##[group]Run actions/upload-artifact@v4
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9992248Z with:
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9992552Z   name: illustrated-stories-generate-linux-arm64
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9992958Z   include-hidden-files: true
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9993449Z   path: ci-evidence/nix-renderer/
+stories (generate)	UNKNOWN STEP	test-results/stories/
+stories (generate)	UNKNOWN STEP	test-results/.story-cohorts-*/
+stories (generate)	UNKNOWN STEP	firestore-debug.log
+stories (generate)	UNKNOWN STEP	
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9994008Z   if-no-files-found: warn
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9994275Z   compression-level: 6
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9994579Z   overwrite: false
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9994842Z env:
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9995564Z   CLUSTER_STORY_COHORTS: viewport
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9996225Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9996987Z   DETSYS_INVOCATION_ID: 6f704581-0dd6-4104-b2e8-13db6967e5a5
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9997324Z   DETERMINATE_NIX_KVM: 0
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:03.9997609Z ##[endgroup]
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.1321657Z (node:2983) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.1322521Z (Use `node --trace-deprecation ...` to show where the warning was created)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.1376596Z Multiple search paths detected. Calculating the least common ancestor of all paths
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.1383113Z The least common ancestor is /home/runner/work/clusterii/clusterii. This will be the root directory of the artifact
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.1404206Z ##[warning]No files were found with the provided path: ci-evidence/nix-renderer/
+stories (generate)	UNKNOWN STEP	test-results/stories/
+stories (generate)	UNKNOWN STEP	test-results/.story-cohorts-*/
+stories (generate)	UNKNOWN STEP	firestore-debug.log. No artifacts will be uploaded.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.1637578Z Post job cleanup.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.4058988Z ^[[0;31m^[[1m^[[4mDeterminate Systems, Inc. | Status Status
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.4060242Z 🛠️ monitoring: Patched PHP security release (https://status.determinate.systems/incidents/51ece80b-c4d6-401e-a3bb-cc2811518fc6)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.4061280Z 🔴 monitoring: eMudhra Intermediate CA Compromise (https://status.determinate.systems/incidents/f7cd1dd4-f0d1-4960-b787-e8077e6d4885)
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.4061888Z See: https://status.determinate.systems/
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.4062073Z 
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:04.4086458Z [command]/usr/bin/sudo mkdir -p /var/lib/determinate
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.3573832Z Post job cleanup.
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4254140Z [command]/usr/bin/git version
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4288101Z git version 2.55.0
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4319621Z Temporarily overriding HOME='/home/runner/work/_temp/cdb26eef-49c1-4124-a4c4-2012237cc0ac' before making global git config changes
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4320392Z Adding repository directory to the temporary git global config as a safe directory
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4324702Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4359190Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4388939Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4573398Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4592230Z http.https://github.com/.extraheader
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4603467Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4632193Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4812857Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.4839978Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.5142811Z Cleaning up orphan processes
+stories (generate)	UNKNOWN STEP	2026-10-25T09:02:05.5546974Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
