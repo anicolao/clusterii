@@ -3684,3 +3684,22 @@ Independently opened full393x852 local phone originals at /tmp/cluster-pr54-cred
 ## Reviewer PR57 extraction checkpoint
 
 Selective extraction completed127files159772239bytes with ZIP CRC verification. Exactly60PNG fleet candidates:20each phone/desktop/large; all3 family manifests passed. No short family manifest or complete short images, consistent with short generation execution failure. Full source tree diff between clean artifactc2f919bce69c167c0f0a7247063de7556ee07c34 and57head1ba7cac0d4e8ac92dabe4de0e6ea2e7501b7248f is empty. These60 remain UNINSPECTED; no fleet baseline approval yet.
+
+## Reviewer baseline inspection — PR57 fleet complete available families
+
+Independently viewed all60 available fleet originals (20each phone393x852,desktop1440x1000,large3840x2160) via13 exact SHA representatives per size. Inventories /tmp/cluster-pr57-{phone,desktop,large}-groups.json:010inspect1;010inspect2 (same0112/0122/0132);011choose1;012reserve1;013reload1;015formed1;015formed2 (same0162/0172/0182);016map1;017disband1;018reload1;020disbanded1;020disbanded2 (same0212);021recover1. All60 acceptable scoped references at source verified in prior entry: invalid21infantry disabled with capacity message,20valid,18available/2reserved fighters and0available/20reserved infantry, formed2/20 fleet, disband queued versus completed clear, final22/22forces and fleet0, keyboard focus restored, independent private panel consistent. Phone partial headings/buttons at scroll boundaries are bounded scrolling. Large full compositions were downscaled to2048x1152; not native-pixel inspection. Short family absent/unapproved, requires fresh successful generation. No economic-rule/release approval implied.
+
+
+## Reviewer live result — PR52 cadb strict check
+
+Run40146647687/job121029307652 completed failure01:03:34UTC25Oct. Exact log/tmp/cluster-pr52-cadb-failed.log:111passed,1failed identity-validation short001sign-in screenshot. This is one of the two previously inspected/promoted references; do not assume stability or blindly alternate baseline. Agent actively retrieving exact new artifact. Application check still running. Need inspect expected/actual/diff and compare hashes to prior variants before next action.
+
+
+## Reviewer exact artifact — PR52 raster alternation established
+
+Bounded extraction of artifact12581856096 completed3PNGs2606597bytes CRC checked under /tmp/cluster-pr52-cadb-review. Independently viewed full expected/actual/diff. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 is byte-identical to the ORIGINAL baseline replaced bycadb; expectedfb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9 is the previously approved actual. Diff only intro text raster. This proves cross-run alternation between the two observed variants despite earlier96-observation probe stability; do not infer stable baseline from that probe. No blind reversion or tolerance/masking approval. Diagnose and fix fractional text layout/paint causally, then inspect stabilized output and rerun exact checks.
+
+
+## Reviewer handoff — PR52 exact alternation
+
+Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
