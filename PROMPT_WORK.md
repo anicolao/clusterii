@@ -529,3 +529,4 @@ Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | A
 
 Prompt 80 | 5a44b3b9fdf2df1c79c601d07080abfab7b948a832d7206119ce3212f86002bf | Propagate PR85 read-only timeout diagnostics into PR86 without changing account-isolation behavior
 Prompt 81 | c937fc83fce89a7830e17502ce15ab1cc357441a69450c8a8dccc1302d7cb7b8 | Preserve measured 15.1875px focused-control clipping and correct bounded reader visibility after input or resize.
+Prompt 81 | c937fc83fce89a7830e17502ce15ab1cc357441a69450c8a8dccc1302d7cb7b8 | Retain four passing corrected account journeys, precise failing regression evidence and 64 original captures for independent review.
