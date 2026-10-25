@@ -1,6 +1,6 @@
 import type { PendingCampaign } from "../../src/lib/campaign-session";
 import { createRequire } from "node:module";
-import type { BrowserContext, Page } from "@playwright/test";
+import type { BrowserContext, Locator, Page } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
@@ -36,6 +36,49 @@ const selectedRowContained = async (page: Page) => {
   });
   expect(bounds.top).toBeGreaterThanOrEqual(bounds.clipTop);
   expect(bounds.bottom).toBeLessThanOrEqual(bounds.clipBottom);
+};
+const paintedContained = async (control: Locator) => {
+  const geometry = await control.evaluate((element) => {
+    const box = element.getBoundingClientRect();
+    const style = getComputedStyle(element);
+    const ring =
+      document.activeElement === element
+        ? Math.max(
+            0,
+            parseFloat(style.outlineWidth) + parseFloat(style.outlineOffset),
+          )
+        : 0;
+    let top = 0,
+      bottom = innerHeight,
+      left = 0,
+      right = innerWidth;
+    for (let node = element.parentElement; node; node = node.parentElement) {
+      const css = getComputedStyle(node),
+        clip = node.getBoundingClientRect();
+      if (/(auto|scroll|hidden|clip)/.test(css.overflowY)) {
+        top = Math.max(top, clip.top + node.clientTop);
+        bottom = Math.min(
+          bottom,
+          clip.top + node.clientTop + node.clientHeight,
+        );
+      }
+      if (/(auto|scroll|hidden|clip)/.test(css.overflowX)) {
+        left = Math.max(left, clip.left + node.clientLeft);
+        right = Math.min(right, clip.left + node.clientLeft + node.clientWidth);
+      }
+    }
+    return {
+      top: box.top - ring,
+      bottom: box.bottom + ring,
+      left: box.left - ring,
+      right: box.right + ring,
+      clip: { top, bottom, left, right },
+    };
+  });
+  expect(geometry.top).toBeGreaterThanOrEqual(geometry.clip.top);
+  expect(geometry.bottom).toBeLessThanOrEqual(geometry.clip.bottom);
+  expect(geometry.left).toBeGreaterThanOrEqual(geometry.clip.left);
+  expect(geometry.right).toBeLessThanOrEqual(geometry.clip.right);
 };
 const aliases = [
   "Market envoy",
@@ -559,6 +602,21 @@ test("Live research orders preserve choices and acknowledge switches", async ({
             "Research order accepted",
           );
           const second = await accepted("innovation", 2);
+          const commitment = research(owner).getByRole("group", {
+            name: "Research acknowledgement",
+          });
+          expect(
+            await commitment.evaluate((element) =>
+              element.contains(document.activeElement),
+            ),
+          ).toBe(true);
+          await paintedContained(commitment);
+          await paintedContained(owner.locator(":focus"));
+          await paintedContained(
+            research(owner).getByRole("region", {
+              name: "Accepted research orders",
+            }),
+          );
           expect(second.sequence).toBeGreaterThan(first.sequence);
           expect(second.id).not.toBe(first.id);
           const confirmed = await canonical();
