@@ -35,8 +35,15 @@
   } = $props();
   let commitment: HTMLDivElement;
   let form: HTMLFormElement;
-  function showChoice(event?: Event) {
+  async function showChoice(event?: Event) {
     const target = event?.currentTarget;
+    // Measure the selected explanation and commitment after the choice renders.
+    await tick();
+    if (
+      !form?.isConnected ||
+      (target instanceof HTMLInputElement && !form.contains(target))
+    )
+      return;
     if (target instanceof HTMLInputElement)
       target.closest("label")?.scrollIntoView({ block: "nearest" });
     form?.scrollIntoView({ block: "nearest" });
