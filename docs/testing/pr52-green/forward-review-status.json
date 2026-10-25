@@ -7,11 +7,15 @@
     56
   ],
   "pr52": {
-    "head": "cadb33e4c1ed3cac31bdc55738ce13ec0d7ec90f",
-    "applicationRun": 40146647697,
-    "strictRun": 40146647687,
-    "lastObserved": "application in progress; strict completed2026-10-25T01:03:34Z",
-    "strict": "FAILURE111passed8skipped1identity-validation-short mismatch"
+    "head": "4f917d724022107f4c6550b11740ae45dcbe446f",
+    "applicationRun": 40150284065,
+    "strictRun": 40150284054,
+    "lastObserved": "Both in progress after normal push; no green claim",
+    "previousApplication": "cadb33e4 SUCCESS50m35s",
+    "previousStrict": "cadb33e4 FAILURE111passed8skipped1identity-validation-short raster",
+    "boundedRun": 40149691891,
+    "boundedOutcome": "Two complete Linux journeys passed20.1s; all11 PNGs independently inspected acceptable,9unchanged2changed",
+    "scope": "Only short28px CSS,2inspected references and logs/provenance integrated. Bounded workflow remains isolated."
   },
   "pr54": {
     "originalCandidates": 212,

@@ -1610,3 +1610,9 @@ Reviewer: I confirmed52 strict111pass/1identity-validation-short001 mismatch. I 
 Delegated reviewer finding; refers to main meta current PR52 exact reverse raster and required stability verification.
 
 Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
+
+## Prompt 240: Leading approval
+
+Delegated reviewer decision; refers to main meta all11 current Linux images and narrow CSS/reference approval.
+
+Reviewer: independently inspected all11 fresh Linux PNGs from40149691891 at /tmp/cluster-pr52-leading-linux/originals, all acceptable scoped references. Independent byte comparison:9 unchanged, only validation001 and keyboard004 differ; both87d509... same original raster. Approved together with reviewed28px CSS correction, not blind swap. Proceed minimal CSS +2 reference/provenance changes on52 and required full checks; no tolerance changes. Mainmeta latest entries include candidate code review and fresh image inspection; reconcile/commit/push with attributed PROMPTS/PROMPT_WORK. Focused generation not full stability proof. Do not duplicate download.
