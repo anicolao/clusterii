@@ -1,0 +1,30 @@
+{
+  "status": "queued",
+  "conclusion": "",
+  "jobs": [
+    {
+      "databaseId": 121114221070,
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-25T08:14:32Z",
+      "completedAt": "2026-10-25T08:15:18Z"
+    },
+    {
+      "databaseId": 121116363746,
+      "name": "report-build-status",
+      "status": "queued",
+      "conclusion": "",
+      "startedAt": "2026-10-25T08:15:18Z",
+      "completedAt": "0001-01-01T00:00:00Z"
+    },
+    {
+      "databaseId": 121116363749,
+      "name": "deploy",
+      "status": "queued",
+      "conclusion": "",
+      "startedAt": "2026-10-25T08:15:18Z",
+      "completedAt": "0001-01-01T00:00:00Z"
+    }
+  ]
+}
