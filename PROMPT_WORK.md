@@ -439,3 +439,5 @@ Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | 
 Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Add guarded route entropy identities and actual acquisition/report assertions without changing production algorithms or reference pixels.
 
 Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Include guarded route entropy regressions in existing required story-policy checks without changing dependencies or captured story/helper bytes.
+
+Prompt 146 | e90019d6089d0070636afcf5c7c99440950a9ff769e2dd39cd4a2a126b2cc482 | Issue one fresh source-bound eight-case strict Scene request after actual collection and both-layer rejection tests.
