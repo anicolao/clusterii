@@ -271,3 +271,5 @@ Prompt 56 | 244a7b04d2a1ac64bb8d15891fd77333427a99cb0161ba9f74ffdd468881f116 | C
 Prompt 69 | 9430f52d3d07628cecbcda944f5192332a09671342bfb3b48a32cb266d1c4346 | Retain second pre-test setup failure and use explicit owned Firestore websocket with normal project-root configuration.
 
 Prompt 74 | b636ddc861570349646aad5591a9a83da187819c0e5db3469a08a829277464d2 | Integrate both branch histories with exact parent archives and tested verbatim prompt and continuation preservation.
+
+Prompt 84 | f89f8067c6a792dedc96e977ac1d79f0360aa61be4fe6ba3a0eaf5a3ada00984 | Prepare one guarded complete Linux credit generation for reviewed label correction, preserving exact original eight-case budgets and assertions.
