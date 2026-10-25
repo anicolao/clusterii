@@ -260,3 +260,12 @@ The production component story distinguishes scheduled, due-but-unconfirmed and 
 - desktop: [Production ledger lab](stories/production-ledger-lab/desktop/darwin-arm64/README.md).
 - large: [Production ledger lab](stories/production-ledger-lab/large/darwin-arm64/README.md).
 - short: [Production ledger lab](stories/production-ledger-lab/short/darwin-arm64/README.md).
+
+## Selected-history lab narratives
+
+The recipient component story covers invitation scope without message contents, pending consent, the exact selected-history disclosure, standard/reduced acceptance motion, keyboard Home reading and reset. Timeline seeking uses the existing shared-reducer fixture; inert command callbacks are explicitly not live acceptance. The service/privacy regressions and procedural predecessor remain unchanged. Linux/current-head and independent acceptance remain open.
+
+- phone: [Selected history lab](stories/selected-history-lab/phone/darwin-arm64/README.md).
+- desktop: [Selected history lab](stories/selected-history-lab/desktop/darwin-arm64/README.md).
+- large: [Selected history lab](stories/selected-history-lab/large/darwin-arm64/README.md).
+- short: [Selected history lab](stories/selected-history-lab/short/darwin-arm64/README.md).

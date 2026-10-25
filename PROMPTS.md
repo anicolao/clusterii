@@ -485,3 +485,87 @@ Reviewer continuation 2026-10-21 17:48 Toronto: pane idle since17:37, clean53e53
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 18:48 Toronto”.
 
 Reviewer finding 2026-10-21 18:48 Toronto: #51 current4f8cb6a story run39680090423 completed with20 missing Linux baseline failures across history/lifecycle/production/research and one known1994-pixel mismatch. Retained /tmp/cluster51-1848-review-failure.log. This successor includes the layout instrumentation, so inspect its completed failure artifacts now for passing/failing identity layout comparison rather than waiting only for #50. Continue your active Linux candidate review with provenance checks and unchanged inherited baselines. Record the diagnosis separately; green runs do not establish a raster fix. Carry latest main checkpoint and attributed logs, commit/push; no merge.
+
+## Prompt 55: Live construction
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 19:08 Toronto”.
+
+Reviewer continuation 2026-10-21 19:08 Toronto: pane idle since19:00 after successful baseline propagation, clean698aa51. Continue authorized work. Take the next live UX-05 construction/development story from the inventory as a small successor to #55, covering actual reservation, completion/cancellation and owner/other-player privacy through named acknowledgements, recovery, four viewports and keyboard access; retain procedural assertions until replaced. Also continue targeted identity-raster diagnosis from the instrumented Linux pair when useful evidence can be gathered; identical post-capture geometry is not a fix. Avoid broad CI reruns or baseline changes as a substitute for diagnosis. Preserve current-head publication checks and coordinate retries after shared queue clears. Carry main checkpoints through19:08 and attributed logs, commit/push; continue useful independent work while CI queues, no merge.
+
+## Prompt 56: Green stack
+
+Delegated reviewer instruction; refers to meta-prompts.md checkpoints19:37/19:47/19:58 and Human priority override — Green PR stack. Human questions remain verbatim in supervisor meta, not duplicated as direct human prompts here.
+
+Reviewer19:58: Human follow-ups in main meta ask why no passing current PR and what causes the72 pixel mismatches. Recovery6fd7f1f3 is clean/idle; prioritize the actual strict backlog now. Reconcile human questions from main meta without duplicating them as direct user prompts; log this reviewer delegation. Preserve production freeze and all219/220 originals. Using established Nix, inspect already verified /tmp/cluster-strict-208-12561036357/artifact.zip and strict208 first-failures.json. Selectively extract the72 actual/expected/diff triples plus relevant trace/renderer metadata into a fresh owned directory; no download or CI rerun needed unless specific data is absent. Map18 first-failing stories across4sizes to exact baseline paths, captured/base source identities and actual differences. Classify only with evidence: intentional source/design change, genuine regression, unstable test/render state, renderer mismatch, or unresolved; do not guess from pixel counts. Check expected baseline provenance and corresponding UX contract/plates before calling an intentional change acceptable. Group shared root causes with exact per-failure coverage while retaining all72 records; distinguish differences masked by first-failure behavior. Publish concise cause table and exact original comparison index, with concrete fix/review action for each group. Investigate the first evidenced common cause through code/history; no baseline promotion, threshold changes, source rewrites or new broad generation. Report unknowns honestly. Commit/push classification/provenance and reconcile checkpoints19:37/19:47/19:58. No PR140 churn/newPR/merge. Current173-image review remains58/173, not approval;220 inset needs later Linux evidence. Timeout/privacy/motion/release holds remain separately open. Deliver diagnosed CI causes, not another unclassified screenshot inventory.
+
+PRIORITY OVERRIDE FROM HUMAN JUST RECEIVED: "Let's get a passing PR. Focus on only that. Get there by approving all generated baselines, examining all diffs with care and fixing each diff according to what is wrong with it. A stack of green PRs is the goal. if necessary, go back to the last green PR and work forward." Reviewer: Read the verbatim new priority and handoff in main meta-prompts.md. Prior no-baseline-promotion/no-PR-update holds are superseded: carefully review and approve correct generated references, fix defects and publish validated fixes to existing PRs, following checks to GREEN and moving forward through the stack. No blind approval of wrong output, no threshold weakening, no merge/force reset. Reuse retained evidence and start the72 mismatch diagnosis, but deliver fixes and green required checks, not diagnosis alone. Inspect latest green51 and ancestry if needed. Pause unrelated feature/release expansion. Log attribution and commit/push logs. Nix only.
+
+
+## Prompt 57: Inspect references
+
+Delegated reviewer clarification; refers to meta-prompts.md Human clarification — Inspect before approval. The direct human clarification stays verbatim in supervisor meta.
+
+Reviewer clarification: Human explicitly said: when i say "approving all generated baselines" I mean *after inspecting them*. Verbatim recorded in main meta under Human clarification — Inspect before approval; reconcile in next substantive log commit. Every baseline requires actual inspection and disposition before approval, fixing wrong output. Current live GitHub confirms51 allgreen,52 immediately based on51 strictred/applicationgreen. I am reading52 failure log read-only to assess a concrete forward route while you classify140; no branch writes from supervisor.
+
+
+## Prompt 58: First green
+
+Delegated reviewer priority; refers to the new PR52 finding in main meta-prompts.md and the Human priority override — Green PR stack.
+
+Reviewer new concrete evidence: prioritize first GREEN via52 from green51. I independently retrieved exact current52 strict39696293785/job119554354070 log at /tmp/cluster-pr52-failed.log: only TWO failures,110passed,8skipped; both short Linux sign-in identity editor captures, each1994pixels (identity-validation001 and identity-keyboard-return004). No missing refs.52 head28c11c408015f9fd8ad35a122d32b654eabd0fac application/docs/generation green. This is substantially smaller than140 backlog. Preserve your140 diagnosis progress; use isolated checkout of existing52 branch, inspect both original expected/actual/diff triples and shared root cause, fix or approve after inspection, publish52 and follow all required checks green, then move fixes forward through stack preserving work. No threshold weakening/no merge. Full finding recorded main meta; reconcile and commit/push logs. I have made no52 changes.
+
+
+
+## Prompt 59: Shared evidence
+
+Delegated reviewer coordination; refers to main meta-prompts.md Reviewer evidence — Reuse identity raster diagnosis.
+
+Reviewer coordination: While compaction runs I am retrieving only identity-validation and identity-keyboard-return PNG/layout entries from exact verification artifact12399020127 using existing bounded extractor into /tmp/cluster-pr52-reviewer-originals for independent inspection. Please reuse this directory rather than duplicate download. You retain all branch writes/fix ownership. I read existing IDENTITY_RASTER_DIAGNOSIS.md; older paired evidence narrows sentence painting instability but does not approve current52 output. Reconcile latest main meta evidence entry with logs.
+
+## Prompt 60: Raster disposition
+
+Delegated reviewer inspection; refers to main meta exact PR52 visual disposition.
+
+Reviewer completed exact52 independent inspection: extraction12399020127 finished102files/129129116bytes in /tmp/cluster-pr52-reviewer-originals. Viewed BOTH actual/diff PNGs and exact28c11c40 expected baselines at1280x720. Same intro sentence is sole visible difference; all art/input/8portraits/actions intact. Both actual compositions visually acceptable; no design hold for them. Historical alternating sentence rasters means blind replacement alone may stay flaky: proceed stable capture/render correction and exact verification. Full disposition in main meta; reconcile/commit logs. No reviewer branch edits.
+
+## Prompt 61: Diagnostic label
+
+Delegated reviewer finding; refers to latest main meta request-summary correction and forward-stack findings.
+
+Reviewer quick code finding: identity-paint-request.mjs GITHUB_STEP_SUMMARY still says "One feature010/phone strict case". Replace stale string with retained identity-scene renderer observation (diagnostic, not integrated acceptance) before commit. Validator correctly binds identity-paint/52. Reviewed README source-vs-merge distinction and negative-local conclusion, sound. Main meta has new exact53/54/55 results and this finding; reconcile in substantive commit. No broader review hold; proceed bounded Linux result then practical52fix/verification.
+
+## Prompt 62: Forward review
+
+Delegated reviewer inspection; refers to main meta PR54 phone-credit review; PR52 remains first.
+
+Reviewer forward work, keep52first: inspected all53 phone credit images from exact54artifact via35 SHA groups, full originals. Main meta records51 scoped visual approvals and2 fixes. Recovery013/014 sender pending button breaks "acknowledgeme / nt..." midword. Before54promotion use short truthful pending button text (e.g. Awaiting receipt; full status stays above), preserve pending/disabled behavior, review affected corrected captures. Ordinary28 all visually acceptable; recoveryother23 acceptable;159nonphone remain. Reuse /tmp/cluster-pr54-reviewer-candidates; no duplicate download. Reconcile logs at next substantive commit. This does not block52/53.
+
+## Prompt 63: Stable correction
+
+Delegated reviewer instruction; refers to main meta forward credit review and PR52 Nix preservation review.
+
+Reviewer: main meta now records independent inspection of all53 short PR54 credit images (34 SHA-identical representatives); all53 visually acceptable for exact source, pending source applicability. Total106/212 inspected,104 acceptable and2phone pending-label fixes; desktop/large106 remain. Reconcile next substantive commit. Read PR52 Nix workflow/launcher diff: original application and story checks preserved, no new review blocker found. Keep52 first: when bounded probe returns, turn evidence into the smallest stable rendering correction and publish52 for actual required CI; a complete causal explanation is not required if correction is well-founded and repeatability verified. No indefinite diagnostic expansion or baseline-guided selection. No merge.
+
+## Prompt 64: Inspected promotion
+
+Delegated reviewer approval; refers to main meta exact PR52 inspection and controlled promotion after Linux probe.
+
+Reviewer: observed your crop comparison: all96 Linux probe crops match the actual failed screenshot, not oldexpected. Clarify negative reproduction as failure to reproduce alternation, not failure to reproduce actual raster. Both exact failed actual full compositions already independently approved. This supports promoting those two inspected actual baselines as the next controlled PR52 attempt, with precise provenance, then running full strict CI; do not invent an unsupported production CSS fix merely to claim a cause. If actual is stable in integrated verification, deliver green. If integrated verification alternates, use that new evidence for the smallest capture/layout repair. Retain strict zero tolerance. Main meta now also records28 ordinary desktop54 approvals, total134/212 reviewed,132 acceptable/2phone fixes/78uninspected. Reconcile logs and publish52 promptly; no further isolated diagnostic necessary before that attempt.
+
+## Prompt 65: Integrated recurrence
+
+Delegated reviewer finding; refers to main meta PR52 current strict recurrence and PR57 partial-family approval.
+
+Reviewer: I confirmed52 strict111pass/1identity-validation-short001 mismatch. I will independently bounded-extract the three PNGs from artifact12581856096 into /tmp/cluster-pr52-cadb-review (avoid duplicate download). Please investigate source/layout stability, not another blind swap. Also57all60 available phone/desktop/large fleet images now inspected acceptable, SHA groups/mainmeta recorded; short absent/unapproved. Reconcile latest logs at next substantive checkpoint.
+
+## Prompt 66: Raster alternation
+
+Delegated reviewer finding; refers to main meta current PR52 exact reverse raster and required stability verification.
+
+Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
+
+## Prompt 67: Leading approval
+
+Delegated reviewer decision; refers to main meta all11 current Linux images and narrow CSS/reference approval.
+
+Reviewer: independently inspected all11 fresh Linux PNGs from40149691891 at /tmp/cluster-pr52-leading-linux/originals, all acceptable scoped references. Independent byte comparison:9 unchanged, only validation001 and keyboard004 differ; both87d509... same original raster. Approved together with reviewed28px CSS correction, not blind swap. Proceed minimal CSS +2 reference/provenance changes on52 and required full checks; no tolerance changes. Mainmeta latest entries include candidate code review and fresh image inspection; reconcile/commit/push with attributed PROMPTS/PROMPT_WORK. Focused generation not full stability proof. Do not duplicate download.
