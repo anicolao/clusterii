@@ -77,5 +77,13 @@
     "documentation": 40157944305,
     "publication": 40157944304,
     "stateAtObservation": "all in_progress"
-  }
+  },
+  "publishedByteReview": {
+    "reviewer": "independently verified all26 published PNG hashes against inspected index",
+    "head": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+    "changedApproved": 13,
+    "unchanged": 13,
+    "scope": "No broader image or integrated acceptance"
+  },
+  "scopeHold": "No implementation expansion while PR53/54/55 existing required gates unresolved; no duplicate CI or merge"
 }
