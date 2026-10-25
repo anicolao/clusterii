@@ -1,0 +1,7 @@
+# Focused market control visibility
+
+Reviewer delegation: main meta PR86 short focused-field clipping; original1c85b948 short015. Isolated source e11cb328 adds only precise focused-control clipping assertion plus the already reviewed shared background fix and owned websocket19150. Original story assertions and240s/30s/10s budgets preserved. Existing complete story reused after reading E2E_GUIDE and actual Pantheon numbered feature instructions; no new procedural test or reorganization.
+
+One short pre-fix run reproduced actual focus ring clipping: painted bottom558.578125, reading region bottom543.390625,15.1875px clipped. Error-context/trace retained /tmp/cluster-market-visibility-before; partial original images/FAILED.json retained /tmp/cluster-market-visibility-before-originals. No baseline changed, no retry of unchanged source.
+
+Cause: browser focus scroll precedes reactive layout/validation changes, and input focusing does not ensure the painted outline remains inside the bounded reader. The region had no post-update/resize visibility correction. The fix observes its resize and input/focus updates, measures only the actual focused descendant including outline, and adjusts only region.scrollTop by the clipped delta. Focus, page scroll, input values, disabled state and server actions remain unchanged. Cleanup disconnects observer/listeners and fences pending tick callbacks. Exact new geometry assertion remains mandatory without auto-scroll in test. Four-size changed-source evidence pending.
