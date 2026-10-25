@@ -350,3 +350,11 @@ Prompt 110 | b7f528d946e276c0266961a8c5b103fb70fea9e02ab5291c71e35dc8651cdaeb | 
 Prompt 109 | 5fd8169d6cb98c40f520640d1a2ae05e51a0755a76ef6f601ef31d06100d2186 | Integrate independently approved cancellation references and preserve both parent histories without changing cargo source.
 
 Prompt 111 | 689d9adb6b0da9679bfab0c8aa3f99eedc0385015a379dc35b6e89b807b34f07 | Carry approved cancellation references through travel, preserving original travel generation source and both parent histories.
+
+Prompt 106 | 18d0d503951ea3761d2e76f8d6bc245771040025cb4147004aa78878de55eb87 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 108 | 6d6c0ef1176f90ace9448389ece1eade703b0a8efb8cc569ce803b19f5213e61 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 111 | b0e0fdc951a0fa6f63bfee4aebb3147791cc4deb2565ea89a5d8849b54d1f5b8 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 113 | bc067c3210c91813cde5c03eb3f8a54f04556310d78ab595f08fbc0e9f4cafb9 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
