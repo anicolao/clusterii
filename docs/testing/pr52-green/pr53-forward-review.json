@@ -1,0 +1,32 @@
+{
+  "target": "PR53 d9d72d96f7cd055188d592fd50a32669d4213b26",
+  "run": 39700554163,
+  "artifact": 12408834924,
+  "artifactBytes": 1595731329,
+  "retrievedBytes": 7392276,
+  "integrity": "12 selected ZIP entries CRC-checked, exact Content-Range/length checked. Full archive SHA not verified because only selected entries retrieved. No signed URLs retained.",
+  "source": {
+    "commit": "fb5bf5c2faa6b06eaea822fddcbf49fc4531cc3d",
+    "dirty": false,
+    "spec": "tests/browser/profile-recovery.story.spec.ts",
+    "specSha256": "2aaf2f70959a4efa7569b20895d1cd76dabe0479766580392688ca54ca3c8ac8"
+  },
+  "files": [
+    {
+      "path": "/tmp/cluster-pr53-identity-originals/test-results/stories/profile-recovery.story-Res-f53b0-arning-and-identity-editing-short/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander-diff.png",
+      "sha256": "8630667c77e638d06603a3181fb3779af7c15697e18f35416c174b97eb661028"
+    },
+    {
+      "path": "/tmp/cluster-pr53-identity-originals/test-results/stories/profile-recovery.story-Res-f53b0-arning-and-identity-editing-short/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander-expected.png",
+      "sha256": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129"
+    },
+    {
+      "path": "/tmp/cluster-pr53-identity-originals/test-results/stories/profile-recovery.story-Res-f53b0-arning-and-identity-editing-short/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander-actual.png",
+      "sha256": "fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9"
+    }
+  ],
+  "disposition": "Actual and diff independently viewed by implementer. Actual is byte-identical to both inspected PR52 promoted PNGs; same sentence-only difference, readable controls/art and no new defect. No PR53 change or run yet; wait for controlled PR52 result before applying.",
+  "specMatchesPR53Head": true,
+  "rendererMatchesPR52ReviewedReference": true,
+  "productionAndCaptureDeltaFromPR52Base": []
+}
