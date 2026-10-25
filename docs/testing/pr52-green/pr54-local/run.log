@@ -1,0 +1,607 @@
+i  emulators: Starting emulators: auth, functions, firestore, database
+i  emulators: Detected demo project ID "demo-clusterii", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
+✔  firestore: Firestore Emulator was started in standard edition.
+✔  firestore: Firestore Emulator UI websocket is running on 19150.
+i  database: Database Emulator logging to database-debug.log
+i  functions: Watching "/private/tmp/cluster-pr54-credit-review/functions" for Cloud Functions...
+⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+⚠  functions: Your requested "node" version "22" doesn't match your global version "24". Using node@24 from host.
+Serving at port 8544
+
+✔  functions: Loaded functions definitions from source: campaignCommandKey, campaignKey, campaignSecurity, processCampaign, processCampaignMaintenance, processCampaignMigration, revokeCredentials, revokeSessions, runCampaignMigration, runProduction, startScheduledCampaigns, processProfile, profileKey.
+✔  functions[us-central1-campaignCommandKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignCommandKey).
+✔  functions[us-central1-campaignKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignKey).
+✔  functions[us-central1-campaignSecurity]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignSecurity).
+✔  functions[us-central1-processCampaign]: database function initialized.
+✔  functions[us-central1-processCampaignMaintenance]: database function initialized.
+✔  functions[us-central1-processCampaignMigration]: database function initialized.
+✔  functions[us-central1-revokeCredentials]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeCredentials).
+✔  functions[us-central1-revokeSessions]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeSessions).
+✔  functions[us-central1-runCampaignMigration]: firestore function initialized.
+i  functions[us-central1-runProduction]: function ignored because the pubsub emulator does not exist or is not running.
+i  functions[us-central1-startScheduledCampaigns]: function ignored because the pubsub emulator does not exist or is not running.
+✔  functions[us-central1-processProfile]: database function initialized.
+✔  functions[us-central1-profileKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/profileKey).
+i  Running script: bunx playwright test --config playwright.stories.config.ts tests/browser/credit-exchange.story.spec.ts --grep "Live credit exchange recovers an interrupted offer$" --max-failures=1 --retries=0 --update-snapshots=none --output=/tmp/cluster-pr54-pending-3f92a71c/playwright
+[WebServer] $ vite build
+[WebServer] (node:66520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:66520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:66520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:66527) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:66528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 91.65125ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 80.979542ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 44.778625ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 12.714667ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 20.958584ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 6.407792ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 11.752333ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 18.297125ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 9.669583ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 11.010083ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 17.670583ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.530333ms
+i  functions: Finished "us-central1-profileKey" in 10.569208ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 79.930875ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 46.845917ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 12.686875ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 35.17125ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 12.882541ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 8.311833ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.96525ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.300125ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 41.313791ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 10.149667ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.942625ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.064833ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.115083ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 41.819667ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 12.544334ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 5.97125ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 9.01375ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.721333ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 51.556083ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 10.994917ms
+i  functions: Beginning execution of "us-central1-startScheduledCampaigns"
+i  functions: Finished "us-central1-startScheduledCampaigns" in 100.990458ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 11.943292ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 9.344292ms
+i  functions: Finished "us-central1-campaignKey" in 54.318417ms
+i  functions: Finished "us-central1-campaignKey" in 54.716416ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.242708ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 6.197041ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 6.836875ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.15175ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.675375ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 50.645833ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.224083ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 48.449958ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 5.064875ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 9.5355ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 11.032458ms
+  ✓  1 [phone] › tests/browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer (18.7s)
+(node:66625) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 9.878833ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 13.740208ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 5.631708ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 9.004125ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 12.02825ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.522917ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 9.598375ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 12.288542ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.023958ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.640209ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 11.996875ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.150166ms
+i  functions: Finished "us-central1-profileKey" in 8.241084ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 24.856916ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 5.026ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.264125ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 32.302125ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.675166ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.612416ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.238709ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 6.54375ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 37.613333ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.946417ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 2.995458ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 5.401333ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.161792ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 36.9495ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 10.017083ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.566833ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 6.287958ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.843041ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 40.492083ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 10.193625ms
+i  functions: Beginning execution of "us-central1-startScheduledCampaigns"
+i  functions: Finished "us-central1-startScheduledCampaigns" in 47.145042ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 12.327541ms
+i  functions: Finished "us-central1-campaignKey" in 13.9125ms
+i  functions: Finished "us-central1-campaignKey" in 14.907708ms
+i  functions: Finished "us-central1-campaignKey" in 57.845709ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.39575ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.962583ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.396583ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 9.861084ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.343167ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 43.583625ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 6.979041ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 36.390083ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.70375ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.497209ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 9.947792ms
+  ✓  2 [desktop] › tests/browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer (19.5s)
+(node:66741) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.779959ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 13.349416ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.814375ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 9.728542ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 12.021542ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.85675ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.245625ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 11.908375ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.15975ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.552208ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 10.329208ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.898209ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-processCampaign" in 26.898875ms
+i  functions: Finished "us-central1-campaignSecurity" in 3.194542ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 6.285917ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.418833ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 29.950458ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.50925ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.613416ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 6.401167ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.035083ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 33.989708ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.855458ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.082375ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 5.7865ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.119083ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 35.444375ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.898667ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.423ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 5.3845ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.751458ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 38.817291ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 12.247ms
+i  functions: Beginning execution of "us-central1-startScheduledCampaigns"
+i  functions: Finished "us-central1-startScheduledCampaigns" in 41.682375ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Finished "us-central1-campaignKey" in 11.050833ms
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 29.704792ms
+i  functions: Finished "us-central1-campaignKey" in 31.184709ms
+i  functions: Finished "us-central1-campaignKey" in 30.665875ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 11.585417ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.084458ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 6.976667ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.787958ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.886625ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 44.834917ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.682458ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 47.774375ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.075333ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.227667ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.615084ms
+  ✓  3 [large] › tests/browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer (1.1m)
+(node:67054) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 11.864291ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 10.510375ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.084833ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.408417ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 10.161583ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.864583ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 9.501542ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 8.869041ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 2.892792ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.953875ms
+i  functions: Beginning execution of "us-central1-processProfile"
+i  functions: Finished "us-central1-processProfile" in 10.612334ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 6.197209ms
+i  functions: Finished "us-central1-profileKey" in 12.94925ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 37.71625ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 6.492875ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.847333ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 33.562625ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.968583ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 5.097125ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.018916ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 7.046792ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 35.473459ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.087792ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.469292ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 5.730167ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.268292ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 35.340709ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 11.296834ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.672542ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 6.310042ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 6.538708ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 37.723417ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.953416ms
+i  functions: Beginning execution of "us-central1-startScheduledCampaigns"
+i  functions: Finished "us-central1-startScheduledCampaigns" in 39.93325ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.589708ms
+i  functions: Finished "us-central1-campaignKey" in 11.729042ms
+i  functions: Finished "us-central1-campaignKey" in 11.479375ms
+i  functions: Finished "us-central1-campaignKey" in 11.598459ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 6.511709ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 4.658167ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 6.330958ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 8.764292ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.2815ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 43.39525ms
+i  functions: Beginning execution of "us-central1-profileKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-profileKey" in 8.627916ms
+i  functions: Beginning execution of "us-central1-processCampaign"
+i  functions: Finished "us-central1-processCampaign" in 41.683ms
+i  functions: Beginning execution of "us-central1-campaignSecurity"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignSecurity" in 3.988875ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 7.570084ms
+i  functions: Beginning execution of "us-central1-campaignKey"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-campaignKey" in 5.851042ms
+  ✓  4 [short] › tests/browser/credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer (16.1s)
+
+  4 passed (2.1m)
+✔  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  functions: Stopping Functions Emulator
+i  database: Stopping Database Emulator
+i  firestore: Stopping Firestore Emulator
+i  auth: Stopping Authentication Emulator
+i  eventarc: Stopping Eventarc Emulator
+i  tasks: Stopping Cloud Tasks Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator
