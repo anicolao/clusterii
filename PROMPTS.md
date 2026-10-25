@@ -730,3 +730,9 @@ Reviewer: mainmeta now records all160 retained PR70 fleet-travel PNGs covered. A
 Delegated reviewer independent visual approval; main meta records exact artifact12583688735 whole212 regression-family disposition.
 
 Reviewer: independently recomputed all212 current/prior hashes:202byte-identical to reviewed acceptable references,10changed. Visually inspected every changed original (013/014 all4sizes, phone016/017). Approve all212 fresh Linux regression references from artifact12583688735; previous phone013/014 holds resolved by readable one-line Awaiting receipt. Mainmeta records scope/evidence. Proceed with exact-source promotion and existing PR54 integration, attributed logs commit/push and strict CI. No tolerance changes or PR merge. PR70 all160 scoped retained images also recorded for later.
+
+## Prompt 91: Pending locator
+
+Delegated reviewer application failure; main meta and recovery ledger record exact run, requested scope and prior evidence preservation.
+
+Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
