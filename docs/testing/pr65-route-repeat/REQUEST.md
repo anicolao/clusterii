@@ -1,0 +1,9 @@
+# Scoped real-service repeatability request
+
+Reviewer Prompt363; main meta Reviewer published maintenance and route factual mismatch. Source fix4da928d94a6261cd305e1faeac108597dd4f06b2 atop normally integrated reviewed64 fdb82243. No production or baseline changes. SpecSHA03b9bb1bc4e56a66b7fb3b13c871d296a6ba9bfaf3c8502295181b777545a0df. Reviewed existing66 helper guards before narrow reuse; no66 labels/story/product imported. Explicit exact campaign scope, demo+loopback guard and one query-addressed module. ActualAuthUID by loginemail, stored HMACdraw assertion, rendered actualreport labels, reloadintelligence equality and redacted fingerprints added; privacy/recovery assertions and original240s/30s/10s remain.
+
+Nix staticcheck0errors0warnings, four entropy tests pass,23storypolicy tests+gate pass, four actualouter/inner/requestguard tests pass, exactcollection4tests/onefile. Runner two complete four-size passes with fresh emulator processes, ownedports/diskreserve, serialFunctionsbuild, retries0/max-failures1 and snapshotupdatesnone. Separate outputs, stopfirstfailure, then require160 byte-identical imagepairs and four matching redacted acquisition summaries. No fullsuite/requestreplay/retry or referencepromotion.
+
+One request40206119870, executor4ce030000203c0f0c5c5dd04118323ee4076a7b1, launcher5790ddfc, branchinvestigate/pr65-route-observation-repeat, file.github/recovery/pr65-route-repeat-01.json. Existing65 applicationretry remains live at48b9f7ca; active65 unchanged. PR66frozen. Await original result, no duplicate.
+
+PR63bb54c315 publication40204790838SUCCESS; independently ran unchanged verify-pages, exactsource/build and26assetsPASS. PR64published64f680f2 normally, publication40205351346SUCCESS plus independentexacthost26assetsPASS; docsSUCCESS/application40205351378/stories40205351454live. Greenfrontier still52–62, notnewfullgreenclaim.
