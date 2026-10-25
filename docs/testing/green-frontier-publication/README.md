@@ -7,3 +7,5 @@ PR62 exact reviewed160 references promoted locally on correct feat/interrupted-r
 Reviewer corrected lab approvals10of16phone retained in main meta; remaining changes not promoted. Focus remains green existing stack, no merge or new features.
 
 PR53 attempt3 completedSUCCESS, allfive current9a216847 checks independently fetchedSUCCESS. Green frontier52–53. PR54 terminalcancelled publication40167675235 at42941bef: failed-only retry rejected(no retryable failedjob), one whole publication rerun accepted after53completed. No concurrent publication. PR54 hosted read still observedold9306f80e, not current acceptance. PR62prepared8e683a73 remains locally committed until54publication serialized.
+
+PR54 attempt2 completedSUCCESS on unchanged42941bef, allfivechecks independently fetchedSUCCESS. Hosted exactsource/build42941bef plus26assetreferences passed unchanged verifier; Pages40178563189 deploysuccess. Green frontier52–54. Only after54terminal publication, PR62prepared8e683a73 normalFF push authorized to start strict/application checks; no simultaneous publication request. PR89desktop findings retained for proper lineage recovery, no new promotion.
