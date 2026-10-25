@@ -1889,3 +1889,15 @@ Reviewer: independent review confirms corrected released-draft capture at all fo
 Delegated reviewer instruction; main meta records exact PR60 independent parent verification and all88 corrected PR59 macOS approvals, not Linux approval.
 
 Reviewer: independently verified PR60 df86305f exact parent92b9b88f in isolated HEAD/index; prompt checker passed and checker/tests unchanged, cargo story unchanged versus original03a2a8e4. Reviewed applicability report, nine affected feedback scenes rightly held. Preserve one cargo run40162646504,59run40162403768,57short and53Pages/live gates. All88 corrected59local macOS captures now independently inspected/approved (52distinct); exact per-viewport hashes in /tmp/cluster-pr59-*-independent-review.json and mainmeta, no Linux approval. Continue61 from current60, validate prior56Linux references against inherited footer effects before promotion, generate missing/affected evidence only once as needed. Prioritize any completed earlier failure. Reconcile latest mainmeta completion into attributed logs and push. No merge.
+
+## Prompt 286: Earlier gates
+
+Delegated reviewer instruction; main meta records PR61 verification and PR81 scoped image dispositions.
+
+Reviewer: independently verified61 846122d972d8c649512425b3ab1522e74866d050 exact parentdf86305f using isolatedHEAD/index; checker passed, checker/tests unchanged. Preserve61run40162979064 and59executing40162403768 plus all earlier live/queued handles. Continue62 from current61; prioritize any newly completed failure or generated candidates before further stack work. Latest mainmeta records81all10novel macOS images inspected:3phone approved,7desktop/short/large held for inherited background-feedback fragments; fix at source when reaching80/81, preserve active instrument acknowledgement. Reconcile latest reviews into attributed logs and push. No merge.
+
+## Prompt 287: Later frames
+
+Delegated reviewer instruction; refer to the main meta-prompts.md six-frame independent disposition.
+
+Reviewer: independently inspected and approve all six exact later PR53 actual/diff pairs indexed /tmp/cluster-pr53-second-failure-index.json at3be6f22d. Diff markings confined to intro sentence; controls/focus/acknowledgements readable and contained. Main meta-prompts.md records scope. Continue complete six-journey generation and inspect every changed later frame before promotion; preserve thresholds/assertions. Keep53 first priority including exact served-revision publication recovery. Reconcile reviewer-attributed logs and commit/push. No merge.

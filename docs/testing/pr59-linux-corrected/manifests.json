@@ -1,0 +1,150 @@
+[
+  {
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+    "source": {
+      "commit": "5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "3043bb7b122ed00f08ce904c794ce908b285e91fc903d32024870b39df0985d1"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "desktop",
+    "status": "passed"
+  },
+  {
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/story.json",
+    "source": {
+      "commit": "5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "3043bb7b122ed00f08ce904c794ce908b285e91fc903d32024870b39df0985d1"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "large",
+    "status": "passed"
+  },
+  {
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+    "source": {
+      "commit": "5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "3043bb7b122ed00f08ce904c794ce908b285e91fc903d32024870b39df0985d1"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "phone",
+    "status": "passed"
+  },
+  {
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/story.json",
+    "source": {
+      "commit": "5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba",
+      "dirty": true,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "3043bb7b122ed00f08ce904c794ce908b285e91fc903d32024870b39df0985d1"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "project": "short",
+    "status": "passed"
+  }
+]

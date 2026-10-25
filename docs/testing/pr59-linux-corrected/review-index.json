@@ -1,0 +1,706 @@
+[
+  {
+    "viewport": "desktop",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "d42c6d680a23cbb2b2ac58d3ebc470afba007e8b2d33a89f26813f9646349387"
+  },
+  {
+    "viewport": "desktop",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "35c0539392835783539224698ce58cafa0dd24ac4e67192b675ff78c86bf33b3"
+  },
+  {
+    "viewport": "desktop",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "fa26da6e1199fcacc304182a9f1e43cbb3cc6b9e635f5b6828c35e4e6f66762d"
+  },
+  {
+    "viewport": "desktop",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "4cde467190c4a01c4d159b6621a83e4a0a5cf2a3da429714ef91b4f848e18dec"
+  },
+  {
+    "viewport": "desktop",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "review-cancellation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+    "sha256": "4e03296d72b7782963d5a3dfb517f17bac9abc4c8d4aeac550fe6127353e2410"
+  },
+  {
+    "viewport": "desktop",
+    "step": "review-cancellation",
+    "player": "Independent marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "keep-order",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.png",
+    "sha256": "97b04f84df30c92beb14718c730d06643cb4b254ce85b4eea7e00c89d3cc4fbf"
+  },
+  {
+    "viewport": "desktop",
+    "step": "keep-order",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "cancel-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+    "sha256": "0f5da9ed1abdcea3661ed6b15111acd23a600155fadf12c3588542d51596ad81"
+  },
+  {
+    "viewport": "desktop",
+    "step": "cancel-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "released-draft",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "sha256": "2554e0276a97408f17b292ee8ad7b60b1dc8874936b4511384b96a8e99adff77"
+  },
+  {
+    "viewport": "desktop",
+    "step": "released-draft",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "reload-cancelled",
+    "player": "Fleet marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+    "sha256": "e280f45acc19073fe220b38efa4c65b506ff3fe6055b1fe29f20142b7e9e6774"
+  },
+  {
+    "viewport": "desktop",
+    "step": "reload-cancelled",
+    "player": "Independent marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c"
+  },
+  {
+    "viewport": "desktop",
+    "step": "cancelled-order-never-executes",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+    "sha256": "b3f0919ac500ae95f3260eed6624c743a4be2f8050da2bfffc10cac7eaad452d"
+  },
+  {
+    "viewport": "desktop",
+    "step": "cancelled-order-never-executes",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+    "sha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa"
+  },
+  {
+    "viewport": "desktop",
+    "step": "return-to-system",
+    "player": "Fleet marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+    "sha256": "e197ec865c4a58987b074259d9ec323519f51b4513af919af703efccceb12d1b"
+  },
+  {
+    "viewport": "desktop",
+    "step": "return-to-system",
+    "player": "Independent marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.png",
+    "sha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa"
+  },
+  {
+    "viewport": "large",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "15043ed94f60bbb2e337f4612346fcc20b0d771d5226ab5404b318225d886d41"
+  },
+  {
+    "viewport": "large",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "1645b38ed97b690909da188bed4a5583fbac1dd2ba98ad14e569f654f13ba098"
+  },
+  {
+    "viewport": "large",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "384fe9150762a46b8a735dce1e9e2851aaa3d8daabcdb04e3dfd164ced515444"
+  },
+  {
+    "viewport": "large",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "522e4681f097e5f99ef28ac2bce8543210bb8fab38b0a0ef85566b3c39b05861"
+  },
+  {
+    "viewport": "large",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "review-cancellation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+    "sha256": "f89a545fd27e62542684c7dd2eca9534cef7c1f996ecb520ad68fd349b02a740"
+  },
+  {
+    "viewport": "large",
+    "step": "review-cancellation",
+    "player": "Independent marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "keep-order",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-1-fleet-marshal.png",
+    "sha256": "c0c899d36c3aa6e070a02252277115e6b52b3a2300c45ba6749a7f8cd7879ea7"
+  },
+  {
+    "viewport": "large",
+    "step": "keep-order",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "cancel-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+    "sha256": "0f7f73f43f4a6d6540dcce0e9e883f46090b96a23b041a5618108060a449a979"
+  },
+  {
+    "viewport": "large",
+    "step": "cancel-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "released-draft",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "sha256": "5ec6554628d4e4a91ca441de2bc8143189c6e79dcc0cc5be7fa2cdf234a505e3"
+  },
+  {
+    "viewport": "large",
+    "step": "released-draft",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "reload-cancelled",
+    "player": "Fleet marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+    "sha256": "2f6d42cee290788cf171bec1254d381e8dfd3da3a50d9d2df73d6f4f6601c7fd"
+  },
+  {
+    "viewport": "large",
+    "step": "reload-cancelled",
+    "player": "Independent marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00"
+  },
+  {
+    "viewport": "large",
+    "step": "cancelled-order-never-executes",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+    "sha256": "8037eca525c239ba6cc423bd0c508ffc0f92c834f6d5d99e4f148bc57600fb48"
+  },
+  {
+    "viewport": "large",
+    "step": "cancelled-order-never-executes",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+    "sha256": "e476e34c220d3e42e3ab34b78e3ee9545e6b90c0aa76e5fe47da7bafa4922d66"
+  },
+  {
+    "viewport": "large",
+    "step": "return-to-system",
+    "player": "Fleet marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+    "sha256": "79f54fc68ed1a499ac9e61fbf29be2294e174fde9af8a8c5f7ca7afe0d49f326"
+  },
+  {
+    "viewport": "large",
+    "step": "return-to-system",
+    "player": "Independent marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-2-independent-marshal.png",
+    "sha256": "e476e34c220d3e42e3ab34b78e3ee9545e6b90c0aa76e5fe47da7bafa4922d66"
+  },
+  {
+    "viewport": "phone",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "3112e129f286a1847ef4164b619e648f595c3bd6ef516ed21735c2233ff532f3"
+  },
+  {
+    "viewport": "phone",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "dab06995b75fa74c26e4d2c5274783a87dc4b66661f54df6d26204a8fb744dd7"
+  },
+  {
+    "viewport": "phone",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "0b4e3dd67d0ae569ba4f2683519b12e3d020899418851413e74ef58ebd072603"
+  },
+  {
+    "viewport": "phone",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "b9681c5d8dcb311d6f629b54a5c754476cff5344cac0d2a49884e8babc948c7e"
+  },
+  {
+    "viewport": "phone",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "review-cancellation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+    "sha256": "40f0365a0d06e16bd80385be26cf62756e02ea65253c8feeff42016044513072"
+  },
+  {
+    "viewport": "phone",
+    "step": "review-cancellation",
+    "player": "Independent marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "keep-order",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.png",
+    "sha256": "785937b9edae55a4010b60a85dbc5f67fad2c5ea4f20da533f059b11812e89bf"
+  },
+  {
+    "viewport": "phone",
+    "step": "keep-order",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "cancel-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+    "sha256": "7c3206dee523ff9bf910c391370402e11e0cf929981efc7fca4b87627b624fe0"
+  },
+  {
+    "viewport": "phone",
+    "step": "cancel-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "released-draft",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "sha256": "d543150ebf0f151ad85b83f2862c97700d7248e4b7ea9a1781259de11e6fa54c"
+  },
+  {
+    "viewport": "phone",
+    "step": "released-draft",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "reload-cancelled",
+    "player": "Fleet marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+    "sha256": "c5c6fc5bbc76f0ee656a0382805c767bc8963598b2f0b3ffedd519796329e51f"
+  },
+  {
+    "viewport": "phone",
+    "step": "reload-cancelled",
+    "player": "Independent marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+  },
+  {
+    "viewport": "phone",
+    "step": "cancelled-order-never-executes",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+    "sha256": "2f1960e816c29371a217a7b4b46b9c2750d7d2035be22fcdea79c75475e4a9ef"
+  },
+  {
+    "viewport": "phone",
+    "step": "cancelled-order-never-executes",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+  },
+  {
+    "viewport": "phone",
+    "step": "return-to-system",
+    "player": "Fleet marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+    "sha256": "a13584a27f0c3b5f2f086c492e9cd4fe59a07170edfa3eb0b68b95a346907585"
+  },
+  {
+    "viewport": "phone",
+    "step": "return-to-system",
+    "player": "Independent marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+  },
+  {
+    "viewport": "short",
+    "step": "inspect-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "13fa905e5b628b7a62ad6a62c372e6e27416227f7cb374b8967398df8eb9d99c"
+  },
+  {
+    "viewport": "short",
+    "step": "inspect-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The actual capacity constraint disables formation without a command.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "choose-complement",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "b9d34ad6b075526d39295ad4bc46a2816bae92f9d924cbea2d6e7eff45b32ebc"
+  },
+  {
+    "viewport": "short",
+    "step": "choose-complement",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "reserve-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "8e98d69b7e8309437eedcb53e5e3e822e0eb578eb07b696533b088cab8e423d1"
+  },
+  {
+    "viewport": "short",
+    "step": "reserve-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "reload-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "6f71e1d031f1ffe7f466f0b480564c09df1925a8f6d889b32cba10e5b92c28b7"
+  },
+  {
+    "viewport": "short",
+    "step": "reload-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "review-cancellation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+    "sha256": "e5cb348b092030f78c7478bd0ffe0337f77976f6435017417c62ab75fa9d8068"
+  },
+  {
+    "viewport": "short",
+    "step": "review-cancellation",
+    "player": "Independent marshal",
+    "acknowledgement": "The fixed rail names the original formation and tick; both Keep order and Cancel fleet order are available.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "keep-order",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-1-fleet-marshal.png",
+    "sha256": "8efccbc61e60e59be32702f46077b0ba72067bb5d767003726ffc3fcff90625f"
+  },
+  {
+    "viewport": "short",
+    "step": "keep-order",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted formation remains scheduled and the normal formation commitment returns.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "cancel-formation",
+    "player": "Fleet marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+    "sha256": "e3e77fe5cb89ae5ae00c919b5beac78f7e19d259473f45b57ab070647fb3611d"
+  },
+  {
+    "viewport": "short",
+    "step": "cancel-formation",
+    "player": "Independent marshal",
+    "acknowledgement": "The authoritative cancellation returns focus to Accepted orders and reports that no forces moved.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "released-draft",
+    "player": "Fleet marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "sha256": "85f4f6a971622a737e50b80ccf5306c6b7b13715212cf898cc6a3a39d51ee0fc"
+  },
+  {
+    "viewport": "short",
+    "step": "released-draft",
+    "player": "Independent marshal",
+    "acknowledgement": "Formation is enabled with three fighters, zero infantry and no reserved units.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "reload-cancelled",
+    "player": "Fleet marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+    "sha256": "a2bfae280d8e0053ae92c0bf6a5c10156020f9875603c8f078f05e994339e868"
+  },
+  {
+    "viewport": "short",
+    "step": "reload-cancelled",
+    "player": "Independent marshal",
+    "acknowledgement": "Confirmed released reservations recover from persistence.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+    "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4"
+  },
+  {
+    "viewport": "short",
+    "step": "cancelled-order-never-executes",
+    "player": "Fleet marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+    "sha256": "b07648763cf41388357a505aa35852c05204b4c7bee5a9373616d1cc770c2fba"
+  },
+  {
+    "viewport": "short",
+    "step": "cancelled-order-never-executes",
+    "player": "Independent marshal",
+    "acknowledgement": "The accepted cancellation remains effective past the original execution boundary.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+    "sha256": "1a3d3b0f7ebbf88a61a4683f2b65d5c4fe319e0c15939b74b85502be3b08ad6f"
+  },
+  {
+    "viewport": "short",
+    "step": "return-to-system",
+    "player": "Fleet marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+    "sha256": "e9955a0887601d94fadd3e19e71eb4fabd917be868e34b886fd022fcd8ef15c8"
+  },
+  {
+    "viewport": "short",
+    "step": "return-to-system",
+    "player": "Independent marshal",
+    "acknowledgement": "Focus returns to Fleets \u00b7 0 and no owned fleet marker exists.",
+    "path": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-2-independent-marshal.png",
+    "sha256": "1a3d3b0f7ebbf88a61a4683f2b65d5c4fe319e0c15939b74b85502be3b08ad6f"
+  }
+]
