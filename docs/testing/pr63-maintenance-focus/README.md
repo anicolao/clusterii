@@ -7,3 +7,5 @@ Existing maintenance effect restores focus after acknowledged busy/pending compl
 Existing screen-fit clipping traversal now optionally expands focused paint; original default audits unchanged. Real pause/resume steps assert restored focus and full painted bounds across every clipping ancestor before helper capture, with no test scrolling. Isolated browser fixture proves it rejects0/4px clearance and accepts8px without moving scroll. Existing original screenshots remain reproduction evidence.
 
 Read E2E_GUIDE and actual Pantheon tests/e2e README/001-game-setup. No story addition/reorganization. Preserve all original real state/ledger/privacy assertions and budgets. All changed candidates require independent review; prior approvals transfer only by exact hash.
+
+Local dbf67693 four complete journeys passed2.8m,136originals retained at /tmp/cluster-pr63-focus-local-dbf67693. New focus-paint assertions passed both acknowledgements in allfour sizes. Agent inspected short024/027: wholebutton andoutline visible; independent review still required. No baseline promotion.

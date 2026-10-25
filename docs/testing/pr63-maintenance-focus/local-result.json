@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "source": "dbf67693b8d27359dd83139d44d68d6aeb9a90d2",
+  "command": [
+    "bun",
+    "x",
+    "firebase",
+    "emulators:exec",
+    "--project",
+    "demo-clusterii",
+    "--only",
+    "auth,database,firestore,functions",
+    "bun x playwright test --config playwright.stories.config.ts tests/browser/fleet-travel-catchup.story.spec.ts --project=phone --project=desktop --project=large --project=short --retries=0 --max-failures=1 --update-snapshots=none"
+  ]
+}
