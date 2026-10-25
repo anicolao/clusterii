@@ -35,3 +35,11 @@ Run40185678311 SUCCESS artifact12595558993 downloaded exactly once:116144964byte
 Prepared promotion05d30b20 on isolated investigate/pr62-invitation-promotion: existing reviewed tooling copies all72 source-paired captures, but exactly8PNG bytes change, all independently approved. All72staged hashes and exact8path set verified; parent-history check passed. No target PR62 head update, live run cancellation or baseline claim for unseen frames. Preserve live PR62 checks before safe fast-forward publication.
 
 PR58 3352be3e now allfiveSUCCESS, green frontier52–58. Read-only metadata showed build/bootstrap completed then visual execution from09:45:15/18 to10:50:37UTC (~65minutes), followed by artifact upload and terminal success. This was slow executed work, not a queued job or proven stall. Exact per-stage seconds and terminal job/check snapshots retained; no restart requested. Remaining PRs are not claimed green.
+
+## Independent complete-family approval and safe publication checkpoint
+
+Reviewer independently rehashed all72 originals:64exact current7f56ac16baseline blobs,8exact previously visually approved actuals,zero additional changes. All8passed manifest spec hashes match target; executor production/invitation-spec diff empty. Complete72-family approved for exact regression use under original scoped visual limitations. dirty:true provenance remains unchanged. Prepared05d30b20 retains exactly8PNG changes and is a descendant of current7f56ac16, so normal fast-forward publication is possible without rewrite or PR merge.
+
+Current API snapshot: PR62 still7f56ac16; application40185322022/job121144779960 and strict40185322011/job121144780067 IN_PROGRESS, documentation/publication SUCCESS. Do not supersede those live runs. Carry prepared update only after terminal current CI, retaining assertions/tolerances and provenance. Generation-job green alone is not candidate evidence; completed bounded40185678311 supplies the separately verified72images.
+
+PR58 independent confirmation remains all5SUCCESS at3352be3e. Both visual jobs4156seconds total, with3919seconds strict/3922seconds generation execution and82seconds upload; this is measured completed execution, not an indefinite stall. No target head changes, reruns, cancellations or merges in this checkpoint.

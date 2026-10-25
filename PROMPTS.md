@@ -2257,3 +2257,10 @@ Reviewer checkpoint: Independently verified all216 approved formation/reorganiza
 Delegated reviewer instruction; human question remains verbatim in main meta Human progress question, not duplicated as a direct prompt.
 
 Reviewer: User asks why is the goal stalled. Independently checked goal metadata: status blocked, although actionable work now exists; do not confuse goal scheduling state with CI state. Invitation generation40185678311 now terminalSUCCESS. Continue immediately: bounded extraction of complete invitation candidates/manifests, independent SHA/spec/source validation and compare all72 historical frames against references and eight approved actuals, present changed later frames for review. Agent was idle awaiting this result.58application/docs/publicationPASS, stories still live;59-61 remaining checks live. Diagnose elapsed/live step progress for58 visual jobs read-only to distinguish slow from stuck; do not blindly restart. Keep priority next green PR. Reconcile human question verbatim in meta and this delegated instruction in attributed PROMPTS/PROMPT_WORK; commit/push logs with evidence. No merge.
+
+
+## Prompt 343: Complete invitation approval
+
+Delegated reviewer checkpoint; main meta Reviewer PR58 green and complete invitation comparison.
+
+Reviewer: Independently confirmed PR58 all5SUCCESS at3352be3e3c02de5a2d7f32bffc49de348fa17b99; green frontier52-58. Independently rehashed all72 complete invitation captures:64 match current7f56ac16 git baseline blobs and8 match exact previously visually approved actuals; no additional changed frames. All8manifest statuses passed and spec hashes match7f56ac16; executor04c44591 production/invitation-spec diff empty, retain dirty:true generation provenance. Complete invitation family approved for exact regression promotion with previously scoped visual review. Carry prepared eight-reference commit into62 at safe point after current CI, unchanged strict assertions/tolerances. Runtime evidence shows58visual each4156seconds total,3919/3922seconds execution, rather than indefinite stall. Reconcile exact checkpoint/meta in attributed committed/pushed logs; no merge.
