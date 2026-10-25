@@ -1793,3 +1793,9 @@ Reviewer: independently inspected all8unique changed SHA representatives coverin
 Delegated reviewer published-byte verification and scope freeze; refers to latest main meta verification of cd7ed5fd.
 
 Reviewer: independently verified all26 PNG hashes in published cd7ed5fd against inspected index; exactly13 approved changes and13 unchanged. PR52 all checks green. PR53/54/55 existing required checks pending. Main meta-prompts.md has this verification; reconcile into attributed committed/pushed logs at next safe checkpoint. Continue green-stack priority, inspect any newly reported visual differences before approval. No duplicate CI or merge. Stop expanding implementation while these gates are unresolved.
+
+## Prompt 270: Route review
+
+Delegated reviewer PR77 scoped macOS disposition; main meta holds exact source/image groups and resize limits.
+
+Reviewer: completed remaining12 PR77 changed route macOS image inspections, so all31 new/intentionally changed views now have independent scoped approval at e40a3d54. Main meta-prompts.md records exact scope and resize limits; no Linux or inherited blanket approval. Reconcile this latest entry into attributed committed/pushed logs. Existing53/54/55 strict APIs confirm Exact verification in_progress; retain these jobs and green-stack priority. No new implementation, duplicate generation or merge.
