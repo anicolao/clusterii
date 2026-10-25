@@ -678,3 +678,10 @@ Reviewer: Corrected research phone and short review now complete:22 changed orig
 Delegated reviewer instruction; see main meta Reviewer corrected research guidance review complete.
 
 Reviewer: Completed independent corrected research guidance review for0f81bd39 originals. All44 changed files approved for scoped regression,4 byte-identical closed-owner originals retain prior approval; inventory /tmp/cluster-research-corrected-groups.json. Large10distinct representatives covering11files inspected at downscaled2048x1152: layout/content approval only, not native-pixel/full-design certification. Full chosen focus/effect/queue controls visible; background fragments removed. Promote only these exact44 on isolated research recovery branch and run strict four-size guidance verification; retain source/evidence and attributed logs, commit/push. Separate88 unreviewed lab originals remain unapproved; no Linux/downstream blanket approval. Preserve live62candidate and Pages handles and prioritize53publication recovery once deployed. No merge.
+
+
+## Prompt 86: External selection
+
+Delegated reviewer finding; see main meta PR87 lab scheduled/applied inspection.
+
+Reviewer: New PR87 lab finding after inspecting all eight phone004-scheduled/005-applied standard/reduced selection/outcome originals: HOLD these8. Investing target/action/result correct but selected Investing radio remains outside scroll-list aperture; visible Scanning/Navigation both unchecked. Source7423f669 CampaignResearch only reveals label on input focus/change, no reveal for externally supplied target/orders. Investigate real component initialization/external target updates and lab state transitions after current approved guidance strict run. Keep selected row visible within its own scroller without stealing focus or jumping outer page, if reproduction confirms. Add meaningful regression and regenerate affected lab captures for inspection, not blanket approval. Existing44guidance approvals stand for exact retained files; any changed regenerated images need fresh comparison. Record attributed finding and commit/push logs. Preserve live53Pages and62candidate, no restarts or merges.
