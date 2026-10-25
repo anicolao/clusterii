@@ -560,3 +560,5 @@ Prompt 85 | a116e9223be6f0a15d6115a157919937d8ae1d2eadb9761daf3a2cbd6c1f6c15 | R
 Prompt 87 | 9e637a660bab1fbd240c77ea75310044faab2a14ab612e7fd328f8289f598420 | Archive four passing research-order stories and 52 exact comparisons on isolated PR89 source after scoped reviewer promotion.
 
 Prompt 88 | bb120a0d9dc14b3bc56b7b33026a3eca8575491952cebafa3e027cf28df1f06b | Correct reproduced100px restored draft clipping with bound-input reveal ownership and shared background suppression.
+
+Prompt 88 | bb120a0d9dc14b3bc56b7b33026a3eca8575491952cebafa3e027cf28df1f06b | Scope new row visibility assertion to open panel states after retained closed-panel assertion placement failure.

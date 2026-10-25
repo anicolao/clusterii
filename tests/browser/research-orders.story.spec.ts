@@ -673,7 +673,6 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           await expect(stale.getByRole("alert")).toContainText(
             "Your research choice is preserved",
           );
-          await selectedRowContained(stale);
           expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
         },
       },
