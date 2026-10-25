@@ -300,6 +300,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
       await page.keyboard.press("Space");
       await expect(radio).toBeFocused();
       await expect(radio).toBeChecked();
+      await selectedRowContained(page);
     };
     const privacy = {
       spec: "Research admissions leave resources, levels, progress and the peer's private science unchanged; owner order IDs are absent from serialized peer views.",
