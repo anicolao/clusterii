@@ -323,3 +323,11 @@ Prompt 97 | a9d2799ec916ce6e0aa6db07f82d5bb250e42b24b182fdcf96036a3081a61f12 | P
 Prompt 103 | bc3d207100eef0cde385b3854ed77d9be0a3321c69a7a03fec709009a9d04e00 | Integrate current PR55 with exact archived parent records and retain approved construction candidate provenance.
 Prompt 104 | 1ecbdd722f24f64273e13907e7cec28c84ac371b30d59dd95403916d0f9c8575 | Integrate current PR56 into fleet formation while preserving exact archived history and reviewer-approved reference scope.
 Prompt 104 | 1ecbdd722f24f64273e13907e7cec28c84ac371b30d59dd95403916d0f9c8575 | Verify post-merge parent checks retain proven sibling append transitions; preserve staged proof and regression tests.
+
+Prompt 96 | d780608456873c9599a1804f303e7cf87456d1ca7b23b4a1259ad171a1145855 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 98 | ec78ceffc24a09c8f2f66a37ffd1e3a93c039ecb9c4d2e4329412405c3f5b928 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 104 | 41f7d6e89f513c98d56a5b390badc142029ba411af3d22df3ebbb40aedf3c8bc | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 107 | afa89a758bd689e5d9c979b1c954eb17d35a5e094173f8781427f2fc18a60fec | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
