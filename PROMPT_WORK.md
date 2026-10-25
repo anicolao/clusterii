@@ -305,3 +305,11 @@ Prompt 69 | 9430f52d3d07628cecbcda944f5192332a09671342bfb3b48a32cb266d1c4346 | R
 Prompt 74 | b636ddc861570349646aad5591a9a83da187819c0e5db3469a08a829277464d2 | Integrate both branch histories with exact parent archives and tested verbatim prompt and continuation preservation.
 
 Prompt 91 | 3d21b141d9605f5a04c20d30f5f7f29f3f9f1b89bf4b47ef9a0d137dd17b53a5 | Integrate reviewed PR54 and promote108 inspected briefing references with exact source, renderer and append-only history checks.
+
+Prompt 92 | 4968d85feff26f54d86bfcfa1d2929e178ba8c878d5b451ce2405424cbe0c64e | Integrate reviewed PR53 layer correction into PR54 with exact parent archive and both continuation histories retained.
+
+Prompt 94 | 80776ed2c18e86aab0b026d9411fb1495731fc2b51981674565b3456826f1ad7 | Integrate validated credit parent and identity references with both exact prompt archives and separator constraints retained.
+
+Prompt 95 | a9d6c815e4b266d1212ebccfef1d49cbecada8469c3c2c0ea156c0faa2f1b121 | Integrate explicit credit maintenance proof and passing policy gate without changing runtime assertions or existing evidence.
+
+Prompt 100 | 720f6d91efd555eee214d8d679e3ba096999360a9b2ee0b80d656c57ef240ef5 | Integrate current reviewed PR55 parent while preserving checkpoint, original assertions and exact branch request histories.

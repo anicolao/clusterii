@@ -866,3 +866,43 @@ Reviewer:54/55 integration independently reviewed; immutable55 prompt suite18pas
 Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
 
 Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.
+
+## Prompt 97: Pending propagation
+
+Delegated reviewer scoped PR54/55 locator correction; original failure and focused pass retained on parent a2860b0c, with exact same inherited test.
+
+Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
+
+
+## Prompt 98: Pending locator
+
+Delegated reviewer application failure; main meta and recovery ledger record exact run, requested scope and prior evidence preservation.
+
+Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
+
+
+
+
+## Prompt 99: Layer approval
+
+Delegated reviewer exact image approval; main meta and recovery logs record intervening bounded-run instructions, original failures, and independent all13 changed originals.
+
+Reviewer: independently inspected all8unique changed SHA representatives covering13changedfiles in26Linux candidates. Independent rawRGBA bounds prove onlyintrotextchanged; full index and bounds at/tmp/cluster-pr53-layer-independent-{index,pixels}.json. Approve those13exact candidate PNGs with production layer change; retain13identical references. Proceed to scoped promotion/current strict verification, recording source and remaining cross-run uncertainty. Other short identity frames may also change from CSS: review any newly generated differences before approval, do not copy failed output blindly. Mainmeta records approval details and latest77review. No duplicate generation/merge.
+
+
+
+
+
+## Prompt 100: Explicit maintenance
+
+Delegated reviewer policy-failure correction; main meta explicitly permits justified reviewable scoped legacy maintenance while retaining coverage.
+
+Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.
+
+
+
+## Prompt 101: Construction recovery
+
+Delegated reviewer continuation; main meta records independent parent checks and further PR79 image dispositions.
+
+Reviewer: independently verified published54 f8fa7f5f and55 acc0b414: seven images match all inspected hashes; actual immutable HEAD/index parent checks pass against3be6f22d andf8fa7f5f respectively; checker/tests unchanged. Continue green stack while current53/54/55 gates run, preserving their handles. Recover protected56 checkpoints in /private/tmp/cluster-pr54-credit-review, verify current disk headroom, integrate current55 preserving exact prompt histories and approved160construction references, run exact-parent/policy checks before publishing. No new production scope, no weakened checks, no GitHub merge. Prioritize any new actionable earlier gate failure. Mainmeta has additional79reviews and independent54/55audit; reconcile attributed logs and push.
