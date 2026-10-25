@@ -3790,3 +3790,91 @@ Selective extractor/tmp/cluster-pr61-extract.py session74449 completed exit0:118
 ## Reviewer handoff — PR61 available captures approved
 
 Reviewer: inspected all56 available PR61 travel candidates,28phone28desktop via18 exact-SHA groups each; acceptable scoped references. Extractor74449 complete118files35952391bytesCRC at/tmp/cluster-pr61-reviewer-candidates. Clean source113e488a56de5131d3488f6400829f5ecc779263 fulltree identical61head6504a4ad96cad070d74a77c374e7b3ee9ecd58ac. Large/short absent and unapproved: generation failed campaign creation/identity setup respectively. Historical61publish also failed hosted revision HTTP404; require successful exact-head publication when reached. Full details and logs in latestmainmeta. Reconcile reviewer-attributed logs and commit/push at checkpoint. Keep existing52runs and52→53→54 publication order; no duplicate jobs/downloads, tolerance changes or merge.
+
+## Reviewer checkpoint — PR52 exact verification passed
+
+At 2026-10-25 01:58 UTC independently queried required run40150284054 on head4f917d724022107f4c6550b11740ae45dcbe446f: Exact verification step succeeded at01:57:43; artifact upload remains live. Application40150284065 remains live, so PR52 is not yet declared fully green. Publish/documentation succeeded. Human clarification about inspection before approval already logged verbatim; no duplicate prompt appended.
+
+
+## Reviewer handoff — finish first green PR
+
+Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; upload still live, application40150284065 still live. Finish monitoring these existing jobs, verify all required statuses at exact4f917d72 head, then work forward to53 immediately with the reviewed whole-pixel identity correction and applicable inspected references. Keep full comparisons/assertions; no blind approval, duplicate runs or merge. Reconcile latest mainmeta checkpoint into attributed logs and commit/push at substantive checkpoint. Prioritize first fully green PR and ordered forward publication over new features. Existing54/59 visual holds remain.
+
+## Reviewer evidence — PR62 interrupted route
+
+PR62 headff1d616183df97aaa4fcc71d2e5c59cb32444711, base61. Read full1224-line recovery story, production diff and added27-line guard test plus design review. Submitted-command recovery selects matching campaign/private owned fleet, restores waypoints once, retains context if receipt precedes private view, preserves existing/empty edits, clears on new submission. Story retains original authenticated command path/encrypted payload across withheld delivery, reload and retry; delivers unchanged real command through authenticated RTDB ingress while offline, proves durable pending record before reconnect and digest-bound receipt/cleared record afterward, single revision and conserved forces, real leased departure/arrival, duplicate delivery no-op and sign-out privacy. No new definite code finding from this read; no visual approval.
+
+Historical strict39708780947/job119594903701 failed70, passed90, skipped8. Interrupted-route phone/desktop/large fail at first missing Linux reference; short fails Commander name during identity setup. Generation job119594904025 succeeds only setup/helper tests; log explicitly says no files found/no artifacts uploaded at04:19:36. API lists only verify artifact12400034154(1332701975bytes). Branch workflow inventory contains only this run; no generated Linux candidate family available in that run to inspect or approve. Retained/tmp/cluster-pr62-{failed,generate}.log. Do not mistake green generation status for screenshot evidence. Generate fresh pinned-Nix candidates when62 is reached after repaired predecessors; inspect before promotion. PR52 strict is now terminalSUCCESS37m20s, application40150284065 remains live. Existing implementer is preparing53 while awaiting that exact job; no duplicate handoff needed yet.
+
+
+## Reviewer forward triage — PR63
+
+PR63 head9050d65ecd1589d44500690750a27a9d0821a42f, base62, title Illustrate paused fleet travel and repeat-safe catch-up. Application/documentation passed historically. Strict39723194222/job119641117985 failed76, passed88, skipped8. Paused-fleet-travel phone/desktop/large missing first Linux reference, short fails identity setup. Generation119641117662 explicitly reports no files found/no artifacts uploaded; API lists only verify artifact12409455449(1211732319bytes). Retained/tmp/cluster-pr63-{failed,generate}.log. No new production diff; story not yet fully reviewed and no visual approval. Fresh pinned-Nix candidates required when reached; green generation job alone supplies no evidence.
+
+
+## Reviewer code comparison — PR63
+
+Read complete story delta against previously reviewed PR61 travel story. New coverage uses ordinary pause/resume controls; verifies identical military/economy while paused, concurrent overdue delivery [0,0], reload same paused private route, exact one-hour boundary shift without advancing tick/forces, concurrent delayed catch-up commits exactly duration ticks, checks each immutable revision's production and conserved totals, no premature arrival, repeated delivery [0,0], and removed lease. Remaining journey unchanged from reviewed61 except centered scroll and reopening route after roster. No definite new code finding. This remains code review only: missing Linux captures need generation and independent inspection before approval.
+
+
+## Reviewer forward patch check — PR53 preparation
+
+Read current uncommitted53 workflow/CSS diff. Workflows and app.css match52head4f917d72; new Nix files and scripts/ci-in-renderer.sh are currently untracked, so git diff against52 misleadingly reports them deleted. Independently compared actual file git hashes to52blobs: all five identical. Runner retains check/lint/unit/story-policy/service/browser and exactstory checks. No implementation edit by supervisor, no acceptance of incomplete patch/unstaged provenance.
+
+
+## Reviewer handoff — forward review evidence
+
+Reviewer: while you prepare53, mainmeta now records full62 code review and63 comparison against reviewed61 story. No new definite code defects found. Both62 run39708780947 and63 run39723194222 successful generate jobs explicitly produced no files/artifacts; only verify artifacts exist, so no Linux family approved. Generate fresh pinned-Nix candidates when reached and inspect before promotion. Logs retained /tmp/cluster-pr62-{failed,generate}.log and /tmp/cluster-pr63-{failed,generate}.log. Also independently confirmed your53 workflow/CSS and actual five Nix/runner file hashes match52head4f917d72. Reconcile these mainmeta findings in next attributed log commit; continue current first-green/53 sequence without interrupting or duplicating jobs. No merge.
+
+## Reviewer clarification — parent integration is authorized
+
+Implementer asks whether no-merge prohibits parent-to-child Git integration. User instruction explicitly says do not merge PRs and requests stacked PRs based on preceding branches; routine conflict resolution and parent integration are within that scope. Reviewer directs proceeding with a normal parent-to-child Git merge preserving both histories and append-only prompt logs. Do not merge/close GitHub PRs, force-push or rewrite history. No additional human permission needed for this routine preparation.
+
+
+## Reviewer handoff — resolve stack conflict
+
+Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
+
+
+## Reviewer code and CI review — PR64 viewport cohorts
+
+PR64 heada26324cb00e770fd4503c76c8db39ae6005dc9d4, base63. Read complete workflow/package/runner/cohort module and210-line tests diff. Sequential fresh emulators retain every viewport's output and logs, preserve previous evidence, fail on collisions, maintain interruption across children, guard occupied ports, continue independent viewports but throw aggregate failure. No screenshot/assertion/tolerance weakening. Independently ran the five committed cohort tests via established Nix environment on exact-source files in/tmp/cluster-pr64-review; all5passed0failed. This is runner verification, not player-screen approval.
+
+Historical strict39724010454/job119643687547 has viewport counts29/29/29/28passed,12/12/12/13failed and2skipped each (total115passed49failed8skipped). Missing Linux references remain; short reaches formation rather than failing identity setup for those new fleet stories. Generation119643687700 produced no files/artifacts, API only verify12405503333(1846046879bytes). Logs/tmp/cluster-pr64-{failed,generate}.log. No baseline approval implied. Current52runner predates64 and does not yet use cohorts; preserve this later additive behavior during forward integration, do not overwrite it with52runner wholesale.
+
+
+## Reviewer code and retained exact evidence — PR65 history setup
+
+PR65 head757d423c4d21397ca36ff9233c6741257a4df72a, base64. Read complete history/helper diff and design review: fifteen distinct acknowledged setup operations use unchanged30-second step budget and90-second total test deadline; no retry/assertion/expected-image changes. Helper rejects empty/duplicate descriptions and records controls only after success. Historical strict39724370529 has116passed48failed8skipped, unrelated missing families remain. Generation119644812983 produced no files/artifacts. Publish39724370582 failed exact-head hosted revision withHTTP404; require successful publication when reached. Logs/tmp/cluster-pr65-{failed,generate,publish}.log.
+
+Selectively extracted only campaign-history JSON metadata from verify artifact12405425226,50files547144bytes ZIP CRC checked, extractor25341exit0; root/tmp/cluster-pr65-history-evidence. All4 manifests passed in verify mode:phone12views,desktop/large/short10each(42total),each15completedsetupcontrols. Clean source4f13d4fb9d024a082950d0b39f47f4a6be1491b3 fetched; fulltree diff to65head empty. Exactspecshaec5d81d686148906ff984266f2d638ec48ccde4987479349c03c456a49bc5cae. This confirms the Linux setup/history journey passed against inherited exact references; no new visual approval or fullPRgreen claim.
+
+
+## Reviewer handoff — PR64 and65 evidence
+
+Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
+
+## Reviewer finding — PR53 archive validation whitespace
+
+Read in-progress preservePromptHistory helper. Exact staged regular-file archive check is good; canonical comparison currently calls trimEnd() on each prompt body. That allows altered trailing spaces/newlines in the canonical copied request to pass a check whose message promises verbatim retention. Human prompts include intentional byte-preservation requirements and at least one trailing space. Preserve exact body bytes with only a precisely defined heading separator handled, and add a negative test changing trailing body whitespace while archive remains exact. Keep immutable archive equality and child-prefix checks; no gate bypass.
+
+
+## Reviewer handoff — tighten canonical archive check
+
+Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
+
+## Reviewer finding — archived-base continuation bypass
+
+Updated archive comparison now preserves exact body bytes plus one defined LF separator and tests whitespace alterations. Second issue: if (archivedBase || staged.length > previous.length) takes success path for every archived-base CI check without examining PROMPT_WORK.md. A merged branch can therefore drop inherited continuation history and still pass this new archive path. Require inherited continuation records preserved in order for archived-base checks (and both parents during integration), with a negative test deleting/mutating an inherited record while prompt archive stays exact. This is needed for the explicit preserve-both-histories contract, not a reason to bypass checks.
+
+
+## Reviewer recheck — PR53 prompt-history reconciliation
+
+Reviewed revised archive path and48-line regression test. Canonical prompt records retain exact bytes plus one explicit LF separator; archive must be staged regular file equal to exact parent log at commit-addressed path. Both merging continuation histories checked before new-prompt success branch; archived-base CI checks retain inherited records in order, reject duplicates and nonregular records. Independently ran14prompt tests in established Nix environment, session6369exit0,14passed0failed, including changed archive, executable archive, altered text/whitespace, deleted/mutated continuation records, local rewrite rejection and merged-ancestor CI acceptance. Both identified findings addressed. This approves the narrowly scoped reconciliation implementation, not PR53CI status or any uninspected images.
+
+
+## Reviewer handoff — prompt fixes verified
+
+Reviewer: independently reviewed revised prompt archive/continuation checks and ran14prompt tests underNix, allpassed. Both findings addressed: exact body whitespace and inherited continuation retention. Proceed with current parent integration and53publication after52requiredchecks; preserve previous assertions/baselines. Mainmeta has evidence, please reconcile latest reviewer findings/validation in attributed logs at checkpoint. No PRmerge.

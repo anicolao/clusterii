@@ -1652,3 +1652,47 @@ Reviewer: all96 available PR60 cargo captures inspected and acceptable scoped re
 Delegated reviewer disposition; refers to main meta PR61 available travel evidence, missing sizes and exact-head publication gate.
 
 Reviewer: inspected all56 available PR61 travel candidates,28phone28desktop via18 exact-SHA groups each; acceptable scoped references. Extractor74449 complete118files35952391bytesCRC at/tmp/cluster-pr61-reviewer-candidates. Clean source113e488a56de5131d3488f6400829f5ecc779263 fulltree identical61head6504a4ad96cad070d74a77c374e7b3ee9ecd58ac. Large/short absent and unapproved: generation failed campaign creation/identity setup respectively. Historical61publish also failed hosted revision HTTP404; require successful exact-head publication when reached. Full details and logs in latestmainmeta. Reconcile reviewer-attributed logs and commit/push at checkpoint. Keep existing52runs and52→53→54 publication order; no duplicate jobs/downloads, tolerance changes or merge.
+
+## Prompt 247: Green checkpoint
+
+Delegated reviewer checkpoint; refers to main meta PR52 successful exact step and ordered PR53 propagation after terminal green.
+
+Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; upload still live, application40150284065 still live. Finish monitoring these existing jobs, verify all required statuses at exact4f917d72 head, then work forward to53 immediately with the reviewed whole-pixel identity correction and applicable inspected references. Keep full comparisons/assertions; no blind approval, duplicate runs or merge. Reconcile latest mainmeta checkpoint into attributed logs and commit/push at substantive checkpoint. Prioritize first fully green PR and ordered forward publication over new features. Existing54/59 visual holds remain.
+
+## Prompt 248: Forward eligibility
+
+Delegated reviewer finding; refers to main meta PR62/63 no-artifact generation and PR53 source/Nix parity inspection.
+
+Reviewer: while you prepare53, mainmeta now records full62 code review and63 comparison against reviewed61 story. No new definite code defects found. Both62 run39708780947 and63 run39723194222 successful generate jobs explicitly produced no files/artifacts; only verify artifacts exist, so no Linux family approved. Generate fresh pinned-Nix candidates when reached and inspect before promotion. Logs retained /tmp/cluster-pr62-{failed,generate}.log and /tmp/cluster-pr63-{failed,generate}.log. Also independently confirmed your53 workflow/CSS and actual five Nix/runner file hashes match52head4f917d72. Reconcile these mainmeta findings in next attributed log commit; continue current first-green/53 sequence without interrupting or duplicating jobs. No merge.
+
+## Prompt 249: Branch integration
+
+Delegated reviewer clarification; refers to main meta authorized parent-to-child integration, preserving histories and prohibiting GitHub PR merges.
+
+Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
+
+## Prompt 250: Forward runner
+
+Delegated reviewer finding; refers to main meta PR64 runner and PR65 setup/source review, not new reference approval.
+
+Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
+
+## Prompt 251: Verbatim retention
+
+Delegated reviewer code finding; refers to main meta exact canonical prompt body preservation.
+
+Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
+
+## Prompt 252: Continuation preservation
+
+Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
+
+Reviewer second finding: updated if (archivedBase || staged.length > previous.length) bypasses all PROMPT_WORK validation on archived-base CI checks. An exact prompt archive should not allow deleting/mutating inherited continuation records. Require inherited records retained in order for archived-base checks and both parents during integration; add negative test with exact prompt archive but deleted/mutated prior continuation. Whitespace fix and its regression tests look sound. Mainmeta records this. Continue current53fix; no duplicate CI.
+
+## Prompt 253: Archive validation
+
+Delegated reviewer validation; refers to main meta independent Nix review of archive and continuation safeguards.
+
+Reviewer: independently reviewed revised prompt archive/continuation checks and ran14prompt tests underNix, allpassed. Both findings addressed: exact body whitespace and inherited continuation retention. Proceed with current parent integration and53publication after52requiredchecks; preserve previous assertions/baselines. Mainmeta has evidence, please reconcile latest reviewer findings/validation in attributed logs at checkpoint. No PRmerge.

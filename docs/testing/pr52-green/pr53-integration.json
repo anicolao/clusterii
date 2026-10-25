@@ -1,0 +1,32 @@
+{
+  "parent": "4f917d724022107f4c6550b11740ae45dcbe446f",
+  "childOriginal": "d9d72d96f7cd055188d592fd50a32669d4213b26",
+  "localMerge": "fa414436",
+  "published": false,
+  "checks": {
+    "promptTests": 14,
+    "stagedHook": "pass",
+    "explicitParentBase": "pass",
+    "bothAncestors": "pass",
+    "lint": "pass"
+  },
+  "reviewer": "Independent Nix 14-test pass; whitespace and continuation findings resolved.",
+  "parentStatusAt": "2026-10-25T02:15:16Z",
+  "parentStrict": {
+    "run": 40150284054,
+    "result": "success",
+    "passed": 112,
+    "skipped": 8
+  },
+  "parentApplication": {
+    "run": 40150284065,
+    "result": "in_progress",
+    "lastObservable": "Application checks in Nix-provisioned renderer; no live substep logs"
+  },
+  "forward": {
+    "62": "No generated candidates",
+    "63": "No generated candidates",
+    "64": "Preserve reviewed cohort runner on integration",
+    "65": "Reviewed setup/history evidence; no generation candidates; historical publish 404 unresolved"
+  }
+}
