@@ -53,6 +53,31 @@
   const selected = $derived(
     choice ?? research.orders?.at(-1)?.target ?? research.target,
   );
+  let tracks = $state<HTMLDivElement>();
+  $effect(() => {
+    const target = selected;
+    const reader = tracks;
+    let active = true;
+    // External order/target updates must reveal their selection without moving
+    // keyboard focus or scrolling any enclosing document/panel.
+    void tick().then(() => {
+      if (!active || !reader?.isConnected) return;
+      const row = reader
+        .querySelector<HTMLInputElement>(`input[value="${target}"]`)
+        ?.closest("label");
+      if (!row) return;
+      const box = row.getBoundingClientRect();
+      const clip = reader.getBoundingClientRect();
+      const top = clip.top + reader.clientTop;
+      const bottom = top + reader.clientHeight;
+      if (box.top < top) reader.scrollTop -= Math.ceil(top - box.top);
+      else if (box.bottom > bottom)
+        reader.scrollTop += Math.ceil(box.bottom - bottom);
+    });
+    return () => {
+      active = false;
+    };
+  });
   const descriptions: Record<Technology, string> = $derived({
     scanning: scanningEnabled
       ? "Improves the chance of acquiring distant observations. Reports retain their recorded age; research does not reveal every system."
@@ -95,7 +120,7 @@
   >
     <fieldset disabled={busy || pending || paused}>
       <legend>Research target</legend>
-      <div class="research-tracks">
+      <div class="research-tracks" bind:this={tracks}>
         {#each technologies as technology}
           <label>
             <input

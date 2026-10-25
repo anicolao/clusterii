@@ -105,7 +105,14 @@ test("Research lab preserves selection through pending, recovery, scheduling and
             .getByLabel("Scenario", { exact: true })
             .selectOption("research");
         }
+        await seek.scrollIntoViewIfNeeded();
+        await seek.focus();
+        const scrollBefore = await page.evaluate(() => window.scrollY);
         await seek.fill(String(time));
+        await expect(seek).toBeFocused();
+        await expect
+          .poll(() => page.evaluate(() => window.scrollY))
+          .toBe(scrollBefore);
       },
       acknowledgement: {
         spec: `Both component feedback panels report “${text}”.`,
