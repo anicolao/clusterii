@@ -1646,3 +1646,9 @@ Reviewer: PR59 extraction completed139files177934761bytesCRC; all66 available ph
 Delegated reviewer disposition; refers to main meta PR60 available cargo reference review and explicit PR59/PR54 holds.
 
 Reviewer: all96 available PR60 cargo captures inspected and acceptable scoped references,32 each phone/desktop/large via20 exact-SHA groups each. Extraction54198 completed199files259890333bytesCRC; root/tmp/cluster-pr60-reviewer-candidates. All3 manifests passed clean8751935c751778933664db38b54c507fc853a22f, full tree identical60head03a2a8e4ab83f666018e42856d078881b2b8ef8e. Short absent/unapproved. Mainmeta records evidence, groups and viewing limits. Reconcile into reviewer-attributed PROMPTS/PROMPT_WORK and commit/push logs at checkpoint. PR52 strict/application remain live; continue existing runs and publication52→53→54, then forward. Preserve PR59 desktop017 hold and PR54 freshLinux requirement. No duplicate runs/downloads or merge.
+
+## Prompt 246: Travel review
+
+Delegated reviewer disposition; refers to main meta PR61 available travel evidence, missing sizes and exact-head publication gate.
+
+Reviewer: inspected all56 available PR61 travel candidates,28phone28desktop via18 exact-SHA groups each; acceptable scoped references. Extractor74449 complete118files35952391bytesCRC at/tmp/cluster-pr61-reviewer-candidates. Clean source113e488a56de5131d3488f6400829f5ecc779263 fulltree identical61head6504a4ad96cad070d74a77c374e7b3ee9ecd58ac. Large/short absent and unapproved: generation failed campaign creation/identity setup respectively. Historical61publish also failed hosted revision HTTP404; require successful exact-head publication when reached. Full details and logs in latestmainmeta. Reconcile reviewer-attributed logs and commit/push at checkpoint. Keep existing52runs and52→53→54 publication order; no duplicate jobs/downloads, tolerance changes or merge.

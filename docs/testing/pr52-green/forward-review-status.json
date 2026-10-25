@@ -129,5 +129,26 @@
     "inspection": "Reviewer inspected20 exact-SHA representatives per viewport; scope/viewing limits retained in meta-prompts",
     "promoted": false,
     "prerequisites": "Ordered52\u219253\u219254 then forward; PR59desktop017 hold and PR54freshLinux requirement unchanged"
+  },
+  "pr61": {
+    "path": "/tmp/cluster-pr61-reviewer-candidates",
+    "extraction": {
+      "files": 118,
+      "bytes": 35952391,
+      "integrity": "Reviewer reports completed selective CRC verification; no duplicate retrieval"
+    },
+    "captureSource": "113e488a56de5131d3488f6400829f5ecc779263",
+    "applicableHead": "6504a4ad96cad070d74a77c374e7b3ee9ecd58ac",
+    "treeComparison": "Reviewer confirmed empty full-tree diff; recheck intervening fixes before promotion",
+    "reviewedAcceptable": 56,
+    "viewports": {
+      "phone": 28,
+      "desktop": 28,
+      "large": "absent/unapproved; generation failed campaign creation",
+      "short": "absent/unapproved; generation failed identity setup"
+    },
+    "inspection": "Reviewer inspected18 exact-SHA groups per available viewport; scoped references only",
+    "publicationGate": "Historical hosted revision HTTP404 remains failed evidence; successful current exact-head publication required when reached",
+    "promoted": false
   }
 }
