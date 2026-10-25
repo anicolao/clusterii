@@ -1,0 +1,830 @@
+{
+  "run": 39723194222,
+  "head": "9050d65ecd1589d44500690750a27a9d0821a42f",
+  "date": "2026-10-22",
+  "status": "terminal failure, historical not current recovery evidence",
+  "rawLog": "/tmp/cluster-pr63-strict-failed.log",
+  "rawSha256": "7a60752d864f4d576b74294a594092e56d5ef82ad76693ce89e0bfaa457457c2",
+  "summary": {
+    "failed": 76,
+    "passed": 88,
+    "skipped": 8
+  },
+  "counts": {
+    "missing-reference": 34,
+    "ui-readiness-acknowledgement": 39,
+    "click-timeout": 3
+  },
+  "byViewport": {
+    "phone": {
+      "missing-reference": 12
+    },
+    "desktop": {
+      "missing-reference": 12
+    },
+    "large": {
+      "missing-reference": 10,
+      "ui-readiness-acknowledgement": 8,
+      "click-timeout": 3
+    },
+    "short": {
+      "ui-readiness-acknowledgement": 31
+    }
+  },
+  "connectionMarkers": [
+    {
+      "marker": "socket hang up",
+      "count": 6,
+      "first": [
+        6679,
+        "2026-10-22T07:20:10.8741782Z"
+      ],
+      "last": [
+        6807,
+        "2026-10-22T07:23:17.0682790Z"
+      ]
+    },
+    {
+      "marker": "ECONNREFUSED",
+      "count": 24,
+      "first": [
+        6803,
+        "2026-10-22T07:23:15.1118056Z"
+      ],
+      "last": [
+        9485,
+        "2026-10-22T07:29:05.6994495Z"
+      ]
+    },
+    {
+      "marker": "UNAVAILABLE",
+      "count": 24,
+      "first": [
+        6803,
+        "2026-10-22T07:23:15.1118056Z"
+      ],
+      "last": [
+        9485,
+        "2026-10-22T07:29:05.6994495Z"
+      ]
+    },
+    {
+      "marker": "OutOfMemory",
+      "count": 0,
+      "first": null,
+      "last": null
+    },
+    {
+      "marker": "SIGKILL",
+      "count": 0,
+      "first": null,
+      "last": null
+    }
+  ],
+  "failures": [
+    {
+      "number": 1,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction completes and cancels developments \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 2,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction recovers an interrupted reservation \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 3,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 4,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 5,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/fleet-cancellation.story.spec.ts:40:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 6,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/fleet-cargo.story.spec.ts:40:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-cargo/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-cargo/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 7,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/fleet-formation.story.spec.ts:40:1 \u203a Live fleet formation and disband conserve private forces \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 8,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/fleet-reorganization.story.spec.ts:45:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 9,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/fleet-route-recovery.story.spec.ts:51:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/interrupted-fleet-route/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 10,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/fleet-travel-catchup.story.spec.ts:46:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/paused-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/paused-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": false,
+      "rendererPresentInReviewedParent": false
+    },
+    {
+      "number": 11,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/fleet-travel.story.spec.ts:40:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 12,
+      "viewport": "phone",
+      "test": "\u203a tests/browser/return-briefing.story.spec.ts:31:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Return through the campaign directory. The briefing identifies the confirmed period but refuses to save while earlier authorized records are missing. Other commanders open their own briefings. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 13,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction completes and cancels developments \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 14,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction recovers an interrupted reservation \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 15,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 16,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 17,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/fleet-cancellation.story.spec.ts:40:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 18,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/fleet-cargo.story.spec.ts:40:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-cargo/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-cargo/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 19,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/fleet-formation.story.spec.ts:40:1 \u203a Live fleet formation and disband conserve private forces \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 20,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/fleet-reorganization.story.spec.ts:45:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 21,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/fleet-route-recovery.story.spec.ts:51:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 22,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/fleet-travel-catchup.story.spec.ts:46:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": false,
+      "rendererPresentInReviewedParent": false
+    },
+    {
+      "number": 23,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/fleet-travel.story.spec.ts:40:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 24,
+      "viewport": "desktop",
+      "test": "\u203a tests/browser/return-briefing.story.spec.ts:31:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Return through the campaign directory. The briefing identifies the confirmed period but refuses to save while earlier authorized records are missing. Other commanders open their own briefings. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 25,
+      "viewport": "large",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction completes and cancels developments \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 26,
+      "viewport": "large",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction recovers an interrupted reservation \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/010-inspect-development-1-builder-envoy.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 27,
+      "viewport": "large",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 28,
+      "viewport": "large",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 29,
+      "viewport": "large",
+      "test": "\u203a tests/browser/fleet-cancellation.story.spec.ts:40:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 30,
+      "viewport": "large",
+      "test": "\u203a tests/browser/fleet-cargo.story.spec.ts:40:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-cargo/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-cargo/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 31,
+      "viewport": "large",
+      "test": "\u203a tests/browser/fleet-formation.story.spec.ts:40:1 \u203a Live fleet formation and disband conserve private forces \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-formation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-formation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 32,
+      "viewport": "large",
+      "test": "\u203a tests/browser/fleet-reorganization.story.spec.ts:45:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 33,
+      "viewport": "large",
+      "test": "\u203a tests/browser/fleet-route-recovery.story.spec.ts:51:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": true,
+      "rendererPresentInReviewedParent": true
+    },
+    {
+      "number": 34,
+      "viewport": "large",
+      "test": "\u203a tests/browser/fleet-travel-catchup.story.spec.ts:46:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Error: Missing reviewed baseline/renderer: /__w/clusterii/clusterii/tests/browser/story-baselines/paused-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png. Generate candidates separately; verification never writes expected images.",
+      "locator": null,
+      "path": "tests/browser/story-baselines/paused-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "absentAtOldHead": true,
+      "presentInReviewedParent": false,
+      "rendererPresentInReviewedParent": false
+    },
+    {
+      "number": 35,
+      "viewport": "large",
+      "test": "\u203a tests/browser/fleet-travel.story.spec.ts:40:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Harness control: Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByText('Your seat is confirmed.', { exact: true })"
+    },
+    {
+      "number": 36,
+      "viewport": "large",
+      "test": "\u203a tests/browser/history.story.spec.ts:5:1 \u203a Recover saved campaign records without losing your place \u203a Harness control: Prepare a fixed-catalogue waiting campaign through ordinary sign-in/create/join UI, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling. ",
+      "category": "click-timeout",
+      "firstError": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+      "locator": null
+    },
+    {
+      "number": 37,
+      "viewport": "large",
+      "test": "\u203a tests/browser/invitation.story.spec.ts:37:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Harness control: Prepare the host's saved identity and one-seat waiting campaign through real sign-in/create/join UI. Grant emulator development access; the test-only loader fixes catalogue entropy, not keys, commands or persistence. ",
+      "category": "click-timeout",
+      "firstError": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+      "locator": null
+    },
+    {
+      "number": 38,
+      "viewport": "large",
+      "test": "\u203a tests/browser/invitation.story.spec.ts:262:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Harness control: Prepare two independently authenticated commanders and two admitted seats through real UI, with fixed catalogue input and explicit emulator development access. Save the returning identity once, then sign out through the identity editor. This establishes an existing campaign; it does not claim illustrated admission or hosted Google acceptance. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 39,
+      "viewport": "large",
+      "test": "\u203a tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Harness control: Prepare a host's admitted Heliac seat and an independently authenticated Pelagic applicant through ordinary UI. Emulator development claims and fixed catalogue entropy are explicit controls; no production state, pause interval or tick is injected. ",
+      "category": "click-timeout",
+      "firstError": "TimeoutError: locator.click: Timeout 10000ms exceeded.",
+      "locator": null
+    },
+    {
+      "number": 40,
+      "viewport": "large",
+      "test": "\u203a tests/browser/profile-recovery.story.spec.ts:21:1 \u203a Resolve two-device identity conflict without losing either draft \u203a Sign in on the first device and reach the identity editor. \u203a Commander \u2014 device one: player action ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 41,
+      "viewport": "large",
+      "test": "\u203a tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: player action ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByRole('heading', { name: 'Choose your faction' })"
+    },
+    {
+      "number": 42,
+      "viewport": "large",
+      "test": "\u203a tests/browser/return-briefing.story.spec.ts:31:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Harness control: Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByRole('heading', { name: 'Choose your faction', exact: true })"
+    },
+    {
+      "number": 43,
+      "viewport": "large",
+      "test": "\u203a tests/browser/selected-history.story.spec.ts:41:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 44,
+      "viewport": "large",
+      "test": "\u203a tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a Harness control: Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 45,
+      "viewport": "large",
+      "test": "\u203a tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover an interrupted sign-out without losing saved identity \u203a Harness control: Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 46,
+      "viewport": "short",
+      "test": "\u203a tests/browser/campaign-navigation.story.spec.ts:49:1 \u203a A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves \u203a Harness control: Prepare a saved commander identity through ordinary UI and grant explicit emulator developer access. The test loader fixes catalogue entropy only. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 47,
+      "viewport": "short",
+      "test": "\u203a tests/browser/campaign-navigation.story.spec.ts:405:1 \u203a A waiting commander filters stars, orbits by keyboard and inspects a clipped map label \u203a Harness control: Create and join a waiting development campaign through ordinary sign-in/create/join controls. Grant emulator developer access and use the test loader\u2019s fixed catalogue entropy. No scheduler or production clock is advanced. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByRole('heading', { name: 'Choose your faction' })"
+    },
+    {
+      "number": 48,
+      "viewport": "short",
+      "test": "\u203a tests/browser/campaign-navigation.story.spec.ts:680:1 \u203a A returning commander waits for authoritative identity readiness before Play \u203a Harness control: Prepare a real saved identity and developer access through ordinary authentication and save controls. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toContainText(expected) failed",
+      "locator": "Locator: getByRole('status')"
+    },
+    {
+      "number": 49,
+      "viewport": "short",
+      "test": "\u203a tests/browser/campaign-start.story.spec.ts:43:1 \u203a Five commanders start two campaigns and recover their named active campaign \u203a Create the real waiting galaxy before choosing a faction. \u203a Creation is acknowledged with faction selection. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByText('Campaign created. Choose your faction.', { exact: true })"
+    },
+    {
+      "number": 50,
+      "viewport": "short",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction completes and cancels developments \u203a Harness control: Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByRole('heading', { name: 'Choose your faction', exact: true })"
+    },
+    {
+      "number": 51,
+      "viewport": "short",
+      "test": "\u203a tests/browser/construction.story.spec.ts:67:3 \u203a Live construction recovers an interrupted reservation \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 52,
+      "viewport": "short",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 53,
+      "viewport": "short",
+      "test": "\u203a tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 54,
+      "viewport": "short",
+      "test": "\u203a tests/browser/encryption-choice.story.spec.ts:27:3 \u203a Encryption choice explains unavailable managed keys without silent substitution \u203a Harness control: Save an identity through ordinary UI and grant explicit developer access in the emulator. No campaign state or result is injected. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 55,
+      "viewport": "short",
+      "test": "\u203a tests/browser/fleet-cancellation.story.spec.ts:40:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 56,
+      "viewport": "short",
+      "test": "\u203a tests/browser/fleet-cargo.story.spec.ts:40:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 57,
+      "viewport": "short",
+      "test": "\u203a tests/browser/fleet-formation.story.spec.ts:40:1 \u203a Live fleet formation and disband conserve private forces \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 58,
+      "viewport": "short",
+      "test": "\u203a tests/browser/fleet-reorganization.story.spec.ts:45:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 59,
+      "viewport": "short",
+      "test": "\u203a tests/browser/fleet-route-recovery.story.spec.ts:51:1 \u203a Interrupted route commands retain their original choices and identity \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 60,
+      "viewport": "short",
+      "test": "\u203a tests/browser/fleet-travel-catchup.story.spec.ts:46:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 61,
+      "viewport": "short",
+      "test": "\u203a tests/browser/fleet-travel.story.spec.ts:40:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 62,
+      "viewport": "short",
+      "test": "\u203a tests/browser/history.story.spec.ts:5:1 \u203a Recover saved campaign records without losing your place \u203a Harness control: Prepare a fixed-catalogue waiting campaign through ordinary sign-in/create/join UI, then twelve acknowledged host pause/resume actions. These establish existing history, not a claim of illustrated admission or hosted scheduling. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 63,
+      "viewport": "short",
+      "test": "\u203a tests/browser/identity-validation.story.spec.ts:10:1 \u203a Correct an invalid identity without losing the draft or submitting an invalid command \u203a Sign in and open the production identity editor. \u203a Commander: player action ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 64,
+      "viewport": "short",
+      "test": "\u203a tests/browser/identity.story.spec.ts:5:1 \u203a Save and recover a commander identity \u203a \u00c9toile signs in with Google and reaches the identity editor. \u203a Authentication completes and the commander name field is available. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 65,
+      "viewport": "short",
+      "test": "\u203a tests/browser/invitation.story.spec.ts:37:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Harness control: Prepare the host's saved identity and one-seat waiting campaign through real sign-in/create/join UI. Grant emulator development access; the test-only loader fixes catalogue entropy, not keys, commands or persistence. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 66,
+      "viewport": "short",
+      "test": "\u203a tests/browser/invitation.story.spec.ts:262:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Harness control: Prepare two independently authenticated commanders and two admitted seats through real UI, with fixed catalogue input and explicit emulator development access. Save the returning identity once, then sign out through the identity editor. This establishes an existing campaign; it does not claim illustrated admission or hosted Google acceptance. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 67,
+      "viewport": "short",
+      "test": "\u203a tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Harness control: Prepare a host's admitted Heliac seat and an independently authenticated Pelagic applicant through ordinary UI. Emulator development claims and fixed catalogue entropy are explicit controls; no production state, pause interval or tick is injected. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 68,
+      "viewport": "short",
+      "test": "\u203a tests/browser/profile-recovery.story.spec.ts:21:1 \u203a Resolve two-device identity conflict without losing either draft \u203a Sign in on the first device and reach the identity editor. \u203a Commander \u2014 device one: player action ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 69,
+      "viewport": "short",
+      "test": "\u203a tests/browser/profile-recovery.story.spec.ts:221:1 \u203a Retry a pending identity command without duplicate effects or draft loss \u203a Sign in and reach the real identity editor. \u203a Commander: player action ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 70,
+      "viewport": "short",
+      "test": "\u203a tests/browser/profile-recovery.story.spec.ts:435:1 \u203a Restore entry focus after keyboard learning and identity editing \u203a Sign in through Play and open identity editing. \u203a Commander: player action ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 71,
+      "viewport": "short",
+      "test": "\u203a tests/browser/receipt-recovery.story.spec.ts:52:1 \u203a A mismatched receipt preserves the identity draft until a fresh acknowledged save \u203a Harness control: Deliberately reuse the browser command UUID while preserving real encryption entropy, authenticated ingress, persistence and receipt validation. Sign in through the ordinary Google emulator UI. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 72,
+      "viewport": "short",
+      "test": "\u203a tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Harness control: Prepare a saved identity and developer access through ordinary sign-in/save UI and explicit emulator authorization. The test loader fixes catalogue entropy. Reuse one command UUID only after identity setup; actual encryption, service authorization and persistence remain active. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 73,
+      "viewport": "short",
+      "test": "\u203a tests/browser/return-briefing.story.spec.ts:31:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 74,
+      "viewport": "short",
+      "test": "\u203a tests/browser/selected-history.story.spec.ts:41:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Harness control: Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 75,
+      "viewport": "short",
+      "test": "\u203a tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a Harness control: Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    },
+    {
+      "number": 76,
+      "viewport": "short",
+      "test": "\u203a tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover an interrupted sign-out without losing saved identity \u203a Harness control: Prepare two independent authenticated devices through ordinary sign-in and identity-save controls; the second device holds an unsaved draft. ",
+      "category": "ui-readiness-acknowledgement",
+      "firstError": "Error: expect(locator).toBeVisible() failed",
+      "locator": "Locator: getByLabel('Commander name')"
+    }
+  ]
+}
