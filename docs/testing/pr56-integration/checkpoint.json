@@ -1,0 +1,57 @@
+{
+  "pr": 56,
+  "head": "99c40f39bc183fb302c5d76ad50f0d76e6e890fe",
+  "parent": "acc0b41435c2c5dddacd83518e5c9cb46007fd81",
+  "protectedTrees": [
+    "c6552c6b0ec19845048daec71848195c18210b89",
+    "20b475e9b4209b45340cddb98f26f17b083cc654"
+  ],
+  "promptTests": {
+    "pass": 21,
+    "fail": 0
+  },
+  "policyTests": {
+    "pass": 14,
+    "fail": 0
+  },
+  "exactParentCheck": "passed after immutable commit",
+  "approvedReferences": 160,
+  "committedHashes": "all match independently inspected originals",
+  "requiredChecks": "Publication initiated; required CI not yet accepted",
+  "scope": "Original PR56 construction production preserved; no new production behavior. Current PR55 integrated normally, exact histories retained. Bounded prompt provenance repair recognizes only immutable prefix-preserving append transitions. No GitHub merge or force push.",
+  "runs": [
+    {
+      "conclusion": "",
+      "databaseId": 40161305378,
+      "headSha": "99c40f39bc183fb302c5d76ad50f0d76e6e890fe",
+      "status": "queued",
+      "workflowName": "Illustrated stories"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40161305393,
+      "headSha": "99c40f39bc183fb302c5d76ad50f0d76e6e890fe",
+      "status": "queued",
+      "workflowName": "Documentation checks"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40161305382,
+      "headSha": "99c40f39bc183fb302c5d76ad50f0d76e6e890fe",
+      "status": "queued",
+      "workflowName": "Application checks"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40161305387,
+      "headSha": "99c40f39bc183fb302c5d76ad50f0d76e6e890fe",
+      "status": "pending",
+      "workflowName": "Publish review build"
+    }
+  ],
+  "earlierGates": {
+    "53": "Application40160719083 and strict40160719097 in progress; docs passed",
+    "54": "Application40160781882 and strict40160782002 in progress; docs passed; publish40160781875 cancelled, not success",
+    "55": "Application40160826928 in progress; strict40160826949 queued; docs passed; publication pending"
+  }
+}
