@@ -1758,7 +1758,14 @@ Delegated reviewer instruction; main meta Reviewer published PR63 verification a
 Reviewer: Independently verified published PR63 f8adb007866692870ea2979e2d4108b2bb4bed3b contains all136 exact approved corrected hashes and every inherited baseline blob/metadata is unchanged from05d30b20. All five63checks live;62application/strict stilllive, other3SUCCESS. Preserve these runs. While waiting, prepare PR64 recovery in an isolated branch atopf8adb007. Original64 a26324cb00e770fd4503c76c8db39ae6005dc9d4 base9050d65e changes only four workflow/runner/cohort-test files, no player source or story screenshots. Current parent already contains later cohort work: reconcile original intended delta carefully, do not reintroduce obsolete runner code or drop inherited safeguards. Classify old strict39724010454/job119643687547 failures and determine which are already fixed by reviewed parent. Verify exact inherited references/source/assertions and applicable cohort tests under established Nix; report remaining semantic differences and publication/check plan before active64 push. Keep scope green stack, no new features or unseen baseline promotion. Reconcile exact handoff/meta into reviewer-attributed committed/pushed logs. No GitHub merge.
 
 
-## Prompt 133: Maintenance baseline verification
+## Prompt 133: History recovery preparation
+
+Delegated reviewer instruction; main meta Reviewer PR64 publication and PR65 preparation.
+
+Reviewer: Independently confirmed active64 at exact4dda4c889e16142f3e020169dd8d7de1f549c517 with docs/publication/generation SUCCESS; application/strict live.62strict remains live,63application/strict live; preserve all. Prepare isolated PR65 recovery atop4dda4c88 while these run. Original65 757d423c4d21397ca36ff9233c6741257a4df72a baseda26324cb changes history.story.spec.ts and test-step-helper.ts to split acknowledged setup operations into bounded steps. Compare against already inherited helper/history changes before integrating; retain all acknowledgements and strict assertions, no budget inflation or obsolete runner reversion. Inspect actual Pantheon E2E instructions/structure before story reorganization. Classify historical65 failures and prepare exact semantic/baseline comparison plus appropriate Nix checks; no active65 push or unseen image promotion yet. Reconcile this handoff/meta and final64 hosted evidence into reviewer-attributed committed/pushed logs. No GitHub merge.
+
+
+## Prompt 134: Maintenance baseline verification
 
 Delegated reviewer instruction; main meta Reviewer PR63 maintenance focus baseline approval.
 
@@ -1767,7 +1774,9 @@ Reviewer: Independently inspected PR63 short maintenance003 expected, actual and
 
 
 
-## Prompt 134: Complete maintenance candidates
+
+
+## Prompt 135: Complete maintenance candidates
 
 Delegated reviewer instruction; main meta Reviewer complete maintenance family correction.
 
@@ -1776,10 +1785,33 @@ Reviewer: Independently inspected short maintenance004 expected/actual/diff. App
 
 
 
-## Prompt 135: Maintenance family publication
+
+
+## Prompt 136: Maintenance family publication
 
 Delegated reviewer instruction; main meta Reviewer complete maintenance approval and publication.
 
 Reviewer: Independently inspected maintenance007 expected/actual/diff: acknowledged resume readable, intended10px roster scroll exposes full focused Pause control, background/panel unchanged. Approve actual0d369278969e687552757d0842e496c36cab88a26bed11f8ddde6ccdfa07926d for scoped regression. Independently compared all13 complete generation originals with activef8adb007 git blobs:10exact unchanged, only003/004/007changed, all three exact inspected approved hashes. Complete short maintenance family approved. Publish isolated PR63 correction with exactly these three approved references plus provenance/logs, no product/spec/assertion/tolerance change; verify complete inherited reference tree and start unchanged required CI. Propagate reviewed parent correction through64 then65 at safe terminal boundaries, serialize publication and preserve65 live application retry.65 strict nowterminalFAILURE: classify its log before propagation and inspect any distinct finding; do not assume identical. No further maintenance candidate run needed absent new evidence. PR66 stays frozen pending independent56 review. Reconcile exact handoff/meta and continuations in reviewer-attributed committed/pushed logs. No GitHub merge.
 
 
+
+
+## Prompt 137: Route reproducibility correction
+
+Delegated reviewer instruction; main meta Reviewer published maintenance and route factual mismatch.
+
+Reviewer: Independently verified active63 bb54c315 contains exactly three approved maintenance PNG hashes, all other reference files unchanged. Prepared64 64f680f2 product/tests/scripts/workflows/dependencies and complete baseline tree exactly equal corrected63; proceed with already-authorized64 publication after hosted63 verification (63publish nowSUCCESS). Independently inspected65 route022 expected/actual/diff: sole visible factual change Koit Unclaimed to Unknown; HOLD new baseline. Diagnose and repair reproducibility in isolated65 preparation atop reviewed64 while preserving live65 application retry. Reuse existing scoped emulator entropy mechanisms only after reviewing guards; establish actual observation acquisition inputs and assert report state before capture. Do not force production intelligence, mock reports, mask label, weaken assertions, inflate deadlines or alternate-baseline accept nondeterminism. If deterministic test inputs needed, keep real actions/reducers and production observation algorithm; demonstrate repeated complete bounded affected journeys yield stable facts/images, then present changed captures for independent review. No new66 work/promotion until this earliest distinct failure resolved. Reconcile exact handoff/meta with reviewer-attributed committed/pushed logs. No merge.
+
+
+## Prompt 138: Evidence retention recovery
+
+Delegated reviewer instruction; main meta Reviewer repeat evidence retention and disk recovery.
+
+Reviewer: Pane reports40206119870 eight functional journeys passed and160/160byte-identical image pairs, but zero persisted acquisition summaries; retain failure classification, not complete reproducibility approval. Proceed with minimal summary-retention fix and regression validation after restoring headroom. Coordinate cleanup yourself to avoid concurrent writes: inventory only task-owned temporary archives/duplicate extractions; remove only demonstrably redundant copies whose complete originals remain verified locally or durably recoverable from verified unexpired remote artifact with digest/entry hashes recorded. Preserve every unique review original, trace, manifest and all repository/user files; no broad /tmp cleanup, store GC or unrelated caches. Record exact removed paths/recoverability and freed space, verify disk reserve before heavy work. Reuse existing captured image evidence where exact source/spec relationship permits; one fresh bounded repeated run after retention fix, no weakening summary equality requirement. Present complete changed image comparison against reviewed references, not merely pass-to-pass. PR63/64 application/strict stilllive; preserve runs. Reconcile exact handoff/meta plus latest checkpoints into reviewer-attributed committed/pushed logs. No merge or unseen baseline approval.
+
+
+## Prompt 139: Route reference approval
+
+Delegated reviewer instruction; main meta Reviewer complete route reproducibility and baseline approval.
+
+Reviewer: Completed independent visual inspection of all12 changed route captures using nine distinct expected/actual/diff triples;026exact024 in each size independently verified. Sole difference Koit Unclaimed to Unknown, consistent with declared stable entropy and real acquisition assertions; pending/retry controls and force counts remain readable. Large inspected at2048x1152 resize, scoped layout/content regression approval only, not full design/normal motion. Independently compared all160originals to48b9f7ca:148exact unchanged and12 changed; approve exact hashes in /tmp/cluster-pr65-route-repeat-linux/reviewer-approved-changed.json. Independently verified both persisted short summaries sameSHA3d1992b24d491b82c7d93b6895c8ecd3da9ad14d942c52dacf194b5e4ffef4c2. Retention run40209122713 passed, complete prior four-size160pair image evidence retained with original failed status. Integrate these12 exact references with reviewed entropy/retention/guard changes d9025f17 atop reviewed64; preserve all inherited references except approved maintenance3 and route12 relative to original65. Publish active65 by normal fast-forward, unchanged required CI and hosted revision/assets verification;63/64 strictlive must remain untouched. Reconcile source/spec/provenance and exact handoff/meta in reviewer-attributed committed/pushed logs. No GitHub merge. PR66 remains unapproved pending independent visual review.
