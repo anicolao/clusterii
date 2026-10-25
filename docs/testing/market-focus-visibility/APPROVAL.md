@@ -3,3 +3,7 @@
 Reviewer main meta focused-field corrected visual review complete approves54 changed Darwin originals from clean6cb38468: phone12,desktop14,short14,large14. Ten exact old-approved files retain their existing approval. Independently opened five distinct market representatives per size and verified SHA groups in /tmp/cluster-focus-corrected-groups.json. Complete focused73/61 controls and rings, blank/123/111 validation, disabled Apply, navigation intent and reused-account authoritative25 retained; no background fragments. Large viewed downscaled2048, layout/content only.
 
 All64 original hashes, group equivalence, complete passing manifests and source/spec compatibility reverified before existing promotion tooling. Only54 changed PNGs authorized,10 unchanged. No Linux/normal-motion/downstream approval, no tolerance change. Preserve pre-fix failure and original generation. Branch remains isolated; do not launch competing publication while PR53 depends on live Pages40175189456.
+
+## Exact verification
+
+Four complete unchanged-budget journeys passed in1.4m at clean73e6d50f:64 exact Darwin captures, including full painted focused-control containment and saved-account isolation assertions. Existing archive tooling independently decoded/compared64 images against the reviewed references before archiving. Strict originals /tmp/cluster-market-visibility-strict-originals are separate from approved generation and original failed attempt. No Linux/normal-motion/downstream or release acceptance.

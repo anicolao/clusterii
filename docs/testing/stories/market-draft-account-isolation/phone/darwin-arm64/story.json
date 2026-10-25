@@ -8,10 +8,10 @@
   ],
   "description": "Four saved commanders enter a real development campaign. Ordinary sign-out/sign-in reuses one browser across two accounts without resaving either identity. Partial unsent market intent must clear, while canonical state, both private projections and receipt sets remain unchanged. Fixed admission/catalogue clocks and developer entitlement are explicit harness controls. This does not claim durable accepted-order recovery or hosted authentication acceptance.",
   "source": {
-    "commit": "15a0a1fe90e9cf5197227163e41ec6d81c54937f",
+    "commit": "73e6d50fd48caef9450f9b5828e8e4ea274a15f6",
     "dirty": false,
     "spec": "tests/browser/market-account-isolation.story.spec.ts",
-    "specSha256": "ff70447efde7044f94d1b13ab3932915e78c5692af19a97ab1e936a289a03daa"
+    "specSha256": "bc2321db9336013fdf93004cb0c5bda281014361085446eecb87a5d39b4df847"
   },
   "mode": "verify",
   "status": "passed",
@@ -242,7 +242,8 @@
       "kind": "player",
       "acknowledgement": "Blank/61 belongs only to this unsent browser draft; Apply is disabled and the other device remains at25.",
       "verifications": [
-        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged."
+        "No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged.",
+        "The entire focused Space station control and its painted focus ring remain inside the allocation reading region after validation."
       ],
       "views": [
         {

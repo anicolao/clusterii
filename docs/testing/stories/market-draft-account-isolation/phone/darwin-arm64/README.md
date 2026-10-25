@@ -145,6 +145,7 @@ Actor: **Independent investor**.
 Acknowledged outcome: Blank/61 belongs only to this unsent browser draft; Apply is disabled and the other device remains at25.
 
 - [x] No market write or receipt occurs; the complete campaign, both private projections and saved identity remain unchanged.
+- [x] The entire focused Space station control and its painted focus ring remain inside the allocation reading region after validation.
 
 ### Viewpoint: Independent investor · reused browser
 
