@@ -1487,3 +1487,9 @@ Reviewer: new independent approval, not duplicate cargo instruction: all20 PR57 
 
 
 
+
+## Prompt 114: Travel approval
+
+Delegated reviewer instruction; main meta records independent complete112-image approval and publication ordering.
+
+Reviewer: all112 PR61 Linux travel originals approved. Independently confirmed108exactSHA matches to previously inspected PR70 originals (mainmeta3931-3941), plus all4changed012reservation images now independently viewed. Lastturn also independently viewed18short compositions; large012 completed now. /tmp/cluster-pr61-linux-corrected/novel-review.json exact4hashes; mainmeta fullscope/limits. Verify source/dirty provenance, promote exact112to61 and carry62 with exact-parent checks. Reconcile/push logs; preserve53priority and serializedpublication57->56->53. No duplicates/weakening/merges.
