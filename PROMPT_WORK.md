@@ -991,3 +991,5 @@ Prompt 219 | 4b688bd81cd7352741194a53ab525bde73944714f79b8ac46ae346548a6fb9d1 | 
 Prompt 219 | 4b688bd81cd7352741194a53ab525bde73944714f79b8ac46ae346548a6fb9d1 | Verify the sole Linux artifact and all173 originals, publish complete review indexes and exact gated integration boundary.
 
 Prompt 220 | 70645bcd8a284c4c6740725ca6b4dcb06cb5bdef9dde99bcd90be8a319e87edc | Preserve four-size real Economy entry correction evidence, unchanged219 originals and explicit no-Linux/no-integration review gates.
+
+Prompt 226 | 71e19efbb399a310ba02e6c4cbe01a91698ba877c783e5c0afb1de03105f071a | Preserve UTF-8 declaration in retained-scene replay before Linux dispatch; prior local fixture remains retained.

@@ -17,3 +17,5 @@ Prediction: multiple hashes at identical geometry in unchanged case reproduce ca
 Local Nix Darwin replay completed96 captures with one hash per variant and no resource/page errors; relative matches unchanged, paint differs. This is a negative reproduction. First setup attempt lacked two font-subset resources and is retained ci-evidence/identity-paint/result.json; corrected mapping retains ci-evidence/identity-paint-DKusij/result.json. No Linux conclusion follows from Darwin.
 
 Required PR52 workflows currently predate Nix migration. Before publishing a corrected52 head, reconcile runtime provisioning with established Nix while preserving the pinned renderer and original checks. No approval to weaken checks or renderer contracts. PR140 and successor work remain untouched.
+
+Fixture self-review before Linux dispatch found omitted UTF-8 meta in reconstructed wrapper, visibly corrupting non-ASCII icons. Restored the original charset before dispatch; the sentence is ASCII but do not use the invalid wrapper as exact scene evidence. Earlier local outputs remain retained.

@@ -16,7 +16,7 @@ const browser=await chromium.launch({args});
 const records=[], errors=[];
 const started=Date.now();
 try{
- const page=await browser.newPage({viewport:{width:1280,height:720},reducedMotion:'reduce',locale:'en-US',timezoneId:'UTC',deviceScaleFactor:1});
+ const page=await browser.newPage({viewport:{width:1280,height:720},reducedMotion:'reduce',colorScheme:'dark',locale:'en-US',timezoneId:'UTC',deviceScaleFactor:1});
  page.on('pageerror',e=>errors.push(String(e)));
  await page.route('**/*',route=>{
   const url=route.request().url();
