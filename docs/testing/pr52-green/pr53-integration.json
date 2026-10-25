@@ -36,5 +36,27 @@
     "application": 40153836581,
     "strict": 40153836539,
     "publication": 40153836540
+  },
+  "childResults": {
+    "application": "SUCCESS",
+    "strict": "FAILURE",
+    "strictPassed": 114,
+    "strictFailed": 2,
+    "strictSkipped": 8,
+    "failure": "Short identity-validation001 and session-interrupted-recovery012,1994pixels each despite active28px line height",
+    "evidence": "/tmp/cluster-pr53-current-review",
+    "noReferenceSwap": true
+  },
+  "boundedLayerObservation": {
+    "source": "3ec9a3ab",
+    "executor": "f2249687",
+    "branch": "investigate/pr53-identity-layer",
+    "scope": "Three existing complete short journeys, candidate observation only; no PR53 push",
+    "local": "Darwin16captures; stable pervariant; samegeometry; ownlayer changedraster; historical alternation not reproduced",
+    "checks": "typecheck/lint pass; exact3test collection;4dispatch/request tests pass",
+    "hypothesis": "Dedicated paragraph painting isolates fractional filtered-pane raster origin; unproven Linux cause",
+    "PR56": "Resolved index preserved c6552c6b0ec19845048daec71848195c18210b89; no hook bypass or publication",
+    "run": 40157330125,
+    "status": "in_progress"
   }
 }
