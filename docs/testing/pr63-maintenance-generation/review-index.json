@@ -1,0 +1,199 @@
+{
+  "executor": "9bf1b1f76eab7af2331ea7398999c21042ea70d0",
+  "target": "cd0d5d60604b6f9c82665f03bc8621208559113f",
+  "active": "f8adb007866692870ea2979e2d4108b2bb4bed3b",
+  "manifest": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "dirty": true,
+  "count": 13,
+  "changedFromActive": 3,
+  "changedFromTarget": 2,
+  "diffMethod": "Exact decoded RGBA inequality marked red over faded original expected; review aid, not Playwright pixelmatch or acceptance.",
+  "rows": [
+    {
+      "name": "002-open-roster-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/002-open-roster-1-maintenance-host.png",
+      "actualSha256": "9f895679b2e9dcbf2315501ced5d9d535d08f7c177818ea5b4980db04869f902",
+      "targetSha256": "9f895679b2e9dcbf2315501ced5d9d535d08f7c177818ea5b4980db04869f902",
+      "activeSha256": "9f895679b2e9dcbf2315501ced5d9d535d08f7c177818ea5b4980db04869f902",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "002-open-roster-2-waiting-envoy.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/002-open-roster-2-waiting-envoy.png",
+      "actualSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+      "targetSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+      "activeSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "003-keyboard-controls-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+      "actualSha256": "932203f38bf4763abc499f0a94dfb5b81798656461a5e5627bde527c00678510",
+      "targetSha256": "932203f38bf4763abc499f0a94dfb5b81798656461a5e5627bde527c00678510",
+      "activeSha256": "c9771048d2441b20e001f7f7fa7f6eb6ca1d07cb6e045d9ad72584413fce7c0e",
+      "matchesTarget": true,
+      "matchesActive": false,
+      "expected": "/tmp/cluster-pr63-maintenance-candidates-linux/comparisons/003-keyboard-controls-1-maintenance-host-expected.png",
+      "diff": "/tmp/cluster-pr63-maintenance-candidates-linux/comparisons/003-keyboard-controls-1-maintenance-host-diff.png",
+      "rgbaChangedPixels": 71981,
+      "bounds": {
+        "minX": 413,
+        "minY": 106,
+        "maxX": 1230,
+        "maxY": 688
+      },
+      "diffSha256": "9ab4df20499b630859985562736d0c7d198d94190745d82774d3df6409b232ea",
+      "disposition": "exact prior independent approval"
+    },
+    {
+      "name": "004-pause-admission-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/004-pause-admission-1-maintenance-host.png",
+      "actualSha256": "999d68d5233c5a1da3ac5e2ccb7a4350ceae1fc881e03a7e01c283ab9bf19155",
+      "targetSha256": "c17c5f71b522cb3c9f26dcccfd1ec47c1932f8005958e75362fcd8550192f04f",
+      "activeSha256": "c17c5f71b522cb3c9f26dcccfd1ec47c1932f8005958e75362fcd8550192f04f",
+      "matchesTarget": false,
+      "matchesActive": false,
+      "expected": "/tmp/cluster-pr63-maintenance-candidates-linux/comparisons/004-pause-admission-1-maintenance-host-expected.png",
+      "diff": "/tmp/cluster-pr63-maintenance-candidates-linux/comparisons/004-pause-admission-1-maintenance-host-diff.png",
+      "rgbaChangedPixels": 74070,
+      "bounds": {
+        "minX": 413,
+        "minY": 106,
+        "maxX": 1230,
+        "maxY": 688
+      },
+      "diffSha256": "433567498c4a7fd88cd3e482f1e4c223460925fea8bf2aec31154dd9b695d85f",
+      "disposition": "exact prior independent approval"
+    },
+    {
+      "name": "004-pause-admission-2-waiting-envoy.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+      "actualSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+      "targetSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+      "activeSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "005-recover-pause-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/005-recover-pause-1-maintenance-host.png",
+      "actualSha256": "0981621660a68e66cfb12d90d58e7fade1fb71e4903a0156712f1c7a08009c9b",
+      "targetSha256": "0981621660a68e66cfb12d90d58e7fade1fb71e4903a0156712f1c7a08009c9b",
+      "activeSha256": "0981621660a68e66cfb12d90d58e7fade1fb71e4903a0156712f1c7a08009c9b",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "005-recover-pause-2-waiting-envoy.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+      "actualSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+      "targetSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+      "activeSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "006-reopen-controls-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+      "actualSha256": "d9bea55b6e451d5323b72ce4ba317d1ea502d4f2c610791ccd9bfb6160b87a4d",
+      "targetSha256": "d9bea55b6e451d5323b72ce4ba317d1ea502d4f2c610791ccd9bfb6160b87a4d",
+      "activeSha256": "d9bea55b6e451d5323b72ce4ba317d1ea502d4f2c610791ccd9bfb6160b87a4d",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "007-resume-admission-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/007-resume-admission-1-maintenance-host.png",
+      "actualSha256": "0d369278969e687552757d0842e496c36cab88a26bed11f8ddde6ccdfa07926d",
+      "targetSha256": "ae77471a88373ca22ad127e530cedcf2e09095f5a186e8241082b6a0fe9f94a1",
+      "activeSha256": "ae77471a88373ca22ad127e530cedcf2e09095f5a186e8241082b6a0fe9f94a1",
+      "matchesTarget": false,
+      "matchesActive": false,
+      "expected": "/tmp/cluster-pr63-maintenance-candidates-linux/comparisons/007-resume-admission-1-maintenance-host-expected.png",
+      "diff": "/tmp/cluster-pr63-maintenance-candidates-linux/comparisons/007-resume-admission-1-maintenance-host-diff.png",
+      "rgbaChangedPixels": 71816,
+      "bounds": {
+        "minX": 413,
+        "minY": 106,
+        "maxX": 1230,
+        "maxY": 688
+      },
+      "diffSha256": "373d9f5bac42570ad5056eb9153f45563e49b64f391b65f12bb7ff7029a63e17",
+      "disposition": "requires independent inspection"
+    },
+    {
+      "name": "007-resume-admission-2-waiting-envoy.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+      "actualSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+      "targetSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+      "activeSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "008-return-focus-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/008-return-focus-1-maintenance-host.png",
+      "actualSha256": "969cfc9aa7bd565f583af433b7a24c43c1e303ad5063c364750f06d259089e18",
+      "targetSha256": "969cfc9aa7bd565f583af433b7a24c43c1e303ad5063c364750f06d259089e18",
+      "activeSha256": "969cfc9aa7bd565f583af433b7a24c43c1e303ad5063c364750f06d259089e18",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "009-admit-waiting-envoy-1-maintenance-host.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+      "actualSha256": "719a37528539dcf3d0f14418dbd25e3055d0f93e651febd44f97d9e776290ec6",
+      "targetSha256": "719a37528539dcf3d0f14418dbd25e3055d0f93e651febd44f97d9e776290ec6",
+      "activeSha256": "719a37528539dcf3d0f14418dbd25e3055d0f93e651febd44f97d9e776290ec6",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    },
+    {
+      "name": "009-admit-waiting-envoy-2-waiting-envoy.png",
+      "actual": "/tmp/cluster-pr63-maintenance-candidates-linux/originals/test-results/stories/maintenance-admission-recovery/short/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+      "actualSha256": "8e4d2670dd934748841955eeaada4be43070eba3efa52d4b8f83aaa0d103dc2e",
+      "targetSha256": "8e4d2670dd934748841955eeaada4be43070eba3efa52d4b8f83aaa0d103dc2e",
+      "activeSha256": "8e4d2670dd934748841955eeaada4be43070eba3efa52d4b8f83aaa0d103dc2e",
+      "matchesTarget": true,
+      "matchesActive": true,
+      "disposition": "unchanged reference"
+    }
+  ]
+}
