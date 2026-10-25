@@ -453,3 +453,5 @@ Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | 
 Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Retain failed first camera correction; reproduce DOMRect accessor loss with a failing unit test and copy measured coordinates explicitly.
 
 Prompt 152 | a7cf166264ff3191ade486be016deabaaa4b2f9d1cde430c0f72799d3bc099eb | Retain four passing corrected local journeys72images with real occlusion assertion, source identity and monitored disk evidence.
+
+Prompt 153 | 1234e909f3f94336d88c4825df07834bc41517f57bd962f7ba6748896fa7c1d7 | Verify corrected Linux72family archive and source/renderer;71unchanged and one heldphone020 correction retained for independent review.
