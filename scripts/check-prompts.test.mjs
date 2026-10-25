@@ -330,6 +330,6 @@ test('sibling integration recognizes only committed common-prefix append separat
  const parentLog=initial+next.slice(1);f.write(parentLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent historical separator');const parent=f.git('rev-parse','HEAD').trim();
  f.git('checkout','--detach',common);const child=initial+next.replace('Second user request.','Child request.');f.write(child);f.git('add','PROMPTS.md');f.git('commit','-qm','Child append proves separator');
  const dir=`docs/prompt-history/${parent}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(parentLog,`${dir}/PROMPTS.md`);f.git('add',dir);f.write(parent+'\n','.git/MERGE_HEAD');
- const combined=child+next.replace('Prompt 2:','Prompt 3:')+'\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
- for(const bad of [combined.replace('First user request.','First user request. '),combined.replace('First user request.\n\n','First user request.\n\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
+ const combined=child+next.replace('Prompt 2:','Prompt 3:')+'\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);f.git('commit','-qm','Integrate sibling parent');assert.equal(f.check('--base',parent),0);
+ for(const bad of [combined.replace('First user request.','First user request. '),combined.replace('First user request.\n\n','First user request.\n\n\n')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check('--base',parent),0);}
 });
