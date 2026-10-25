@@ -1,0 +1,9 @@
+# Single complete strict contact verification
+
+Reviewer Prompt169 authorizes one full four-size strict contact journey after independently inspected reference import, before active69 publication. Target f588b6e4f5db576ee1514ca33940c18a61025dd2 incorporates published68bf0ea547 with tested b89864b1 source/helpers/runtime unchanged. Reference tree7d9ff1432b7aef90f21210becf5cf74d89980e60 adds only76 inspected PNGs and four renderer review manifests; all inherited files retain exact Git blobs.
+
+Executor is isolated on investigate/pr69-contact-strict. Fresh request file pr69-contact-strict-01.json alone triggers the branch-scoped workflow. Both launcher layers allow only contacts plus one of phone/desktop/large/short. Exact fleet-contact spec SHA8f02859a and title must collect exactly one test per job. Four complete journeys require19 views each, verify mode, passed manifests, exit0 and referenceDiffExit0. Existing deadlines, retries0/maxfailures1/update-snapshotsnone and real-service entropy/authorization/reducer behavior are unchanged. No required-workflow edits or candidate generation.
+
+Pinned Nix renderer, awaited Svelte sync, serial Functions build, owned ports and disk reserve remain required. Independent emulator jobs maxparallel2, failfastfalse, all traces/captures/network/firestore/renderer/request evidence retained on failure. Four local Nix guard tests pass, exercising exact/wrong/replayed requests, collection constraints, both launcher dispatches and full outer preflight. No local browser/build required or run.
+
+No active69 publication before complete strict success. Any mismatch is retained for inspection, never automatically promoted. Regression approval is not concept08 fidelity, normal-motion/full-keyboard/privacy/release acceptance. Preserve live66/67/68 checks; no duplicate request or GitHub merge.
