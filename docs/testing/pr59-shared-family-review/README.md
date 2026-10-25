@@ -9,3 +9,9 @@ Comparison to exact current PR59 reference bytes: 150 identical; 7 independently
 PR58 priority: promoted only the 34 independently inspected short originals at 3352be3e3c02de5a2d7f32bffc49de348fa17b99 and pushed existing branch. Exact-parent prompt validation, all 21 story-policy/cohort/loader tests and all staged PNG hashes passed. Production, stories, workflow thresholds and timeouts unchanged. New-head required CI is pending; prior missing-baseline failure remains retained. Green frontier remains52–57 until actual results.
 
 PR89 isolated correction: b29e72aa retains successful four-journey/56-exact strict verification after independent complete-family approval; no Linux or full-design approval inferred.
+
+## Additional phone and desktop review
+
+Reviewer independently inspected and approved all 14 additional reorganization phone/desktop candidates (019,020,022,024,025,026,027 each). The exact supplied index is retained unchanged, including its historical pre-review `needs-inspection` field; this dated approval supersedes that field for these hashes only. All 14 retained original SHA256 values were independently rechecked during ledger reconciliation. Pending/reloaded quantities, accepted split/merge ticks, recipient/forecast quantities, cancellation and disabled duplicate actions remain readable according to the reviewer. Intentional bounded reading is not a claim that offscreen neighboring content is simultaneously visible.
+
+The four disband approvals plus these 14 resolve 18 of the original 33 additional images. remaining-review.json lists exactly 15 short/large reorganization candidates still unapproved. No PR59 baseline promotion, new CI execution, production change or PR58-head change performed in this update. Reviewer reports all five PR58 jobs in progress at 3352be3e; preserve those existing handles.
