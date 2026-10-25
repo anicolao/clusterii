@@ -4007,7 +4007,6 @@ Exact current56head9cfea0df84b96046b66e9d9b2b4aa1b4019d2e37 basefeat/live-briefi
 
 Supervisor bounded-extracting construction ordinary/recovery PNG/JSON from exact56generation artifact12411965142 (2415125120bytes) into /tmp/cluster-pr56-reviewer-candidates using /tmp/cluster-pr56-extract.py,350MBcap. Need completed family manifests before acceptance despite overall generation failure. No baseline promotion or production edits.55all108 candidate inspection completed in prior entry; inform agent at next useful handoff/log sync.
 
-
 ## Reviewer verification — PR56 exact failure evidence
 
 Completed selective extraction of strict artifact12409421356 to /tmp/cluster-pr56-failure-evidence:33files6987980bytes, CRC verified. Commander-identity002 and identity-pending-retry001 actual PNGs hash fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9, byte-identical to inspected/approved52actual. Independently viewed session-cancelled-confirmation008 full actual/expected/diff: actual07073d1d72d4351d4e1ec23280ca009c8dfee62f80c2487692bd3dae7ae62f39 has correct retained commander field, portraits and actions; difference is intro raster only. These three actuals acceptable as scoped reference replacements after applicability check. No broader design/rules approval. Selected-history error context remains in Begin a conversation with Nacre accord input disabled and Awaiting acknowledgement/Create conversation disabled; evidence of pending acknowledgement, not merely missing reference. Fresh verification/investigation required; no timeout root cause asserted.
@@ -4016,7 +4015,6 @@ Completed selective extraction of strict artifact12409421356 to /tmp/cluster-pr5
 ## Reviewer handoff — Completed briefing review and forward failure evidence
 
 Reviewer: PR55 all108 compositions independently inspected and acceptable; mainmeta now has final short/large disposition. Confirm production/helper applicability before promotion after52/53/54. PR56 exact strict failure evidence is at /tmp/cluster-pr56-failure-evidence; three identity actuals approved as recorded above, but selected-history pending acknowledgement remains a real execution failure. Construction candidates still being extracted, not approved. Continue existing52 checks and54 label correction; reconcile latest mainmeta into your next substantive committed/pushed logs. No duplicate CI run or merge.
-
 
 ## Reviewer baseline inspection — PR56 ordinary construction desktop
 
@@ -4056,7 +4054,6 @@ Read local commit1e63b518499238d4896fd103ed932340cf7ab5bf in /tmp/cluster-pr54-c
 
 Reviewer: exact PR56 construction extraction finished at /tmp/cluster-pr56-reviewer-candidates,336files334606424bytes, all8 family manifests passed. I inspected116/160: all72 ordinary sizes plus recoveryphone22 and recoverydesktop22 acceptable scoped references. Recoveryshort/large44 remain UNINSPECTED. Mainmeta contains exact groups/dispositions and PR54 local1e63b518 code review (sound label correction, fresh rendering still required). Please reconcile latest mainmeta in next substantive commit/push; no duplicate downloads. Keep52/53/54 publication order and current52 run first.
 
-
 ## Reviewer baseline inspection — PR56 recovery short and large complete
 
 Viewed all22 recovery short1280x720 and all22 recovery large3840x2160 originals via the same14 SHA representatives/groups recorded for recovery desktop. Large full compositions were displayed at2048x1152; not a native-pixel inspection claim. The initial oversized tool output for the final7 large representatives was truncated and was not counted; all7 were subsequently re-opened successfully in smaller batches. All44 acceptable scoped references: pending200 balance and acknowledgement status readable, selected camp survives recovery, reservation and cancellation remain distinct from settlement,69 refund/147.8 settled balance retained, independent219.1 panel consistent, and Develop keyboard focus visible. All160/160 construction compositions now inspected and acceptable, subject to production/helper/source applicability before promotion. This is scoped regression approval, not economic-rule or full-release approval. PR52 application and strict-story checks remain pending on cadb33e4; no duplicate run started.
@@ -4065,7 +4062,6 @@ Viewed all22 recovery short1280x720 and all22 recovery large3840x2160 originals 
 ## Reviewer handoff — Construction inspection complete
 
 Reviewer: PR56 construction review now covers all160/160 captures from exact artifact12411965142 at /tmp/cluster-pr56-reviewer-candidates. Remaining44 recovery short/large inspected and acceptable; mainmeta records groups and downscaled large-view limitation. Confirm production/helper/source applicability before promotion in stack order. Credit54 still needs fresh rendered inspection after label fix. Reconcile latest mainmeta in next substantive committed/pushed logs. Continue existing52 checks, then53/54; no merge or duplicate CI run.
-
 
 ## Reviewer source applicability — PR56 construction
 
@@ -4080,7 +4076,6 @@ Fetched exact clean artifact sourcec8129fec764fb8824bc951751b35aaedc3176c0f. Ful
 ## Reviewer handoff — Briefing source confirmation
 
 Reviewer: PR55 source applicability also independently confirmed: fetched c8129fec764fb8824bc951751b35aaedc3176c0f, full tree diff to88be06f1eb28e6073c91be0385ffef8623d590a6 empty. All108 inspected briefing candidates apply to that complete tree; recheck intervening fixes. Mainmeta has this finding plus56 completion/source confirmation; please reconcile and commit/push them with next substantive checkpoint. No need repeat these tree comparisons.
-
 
 ## Reviewer forward evidence — PR57 fleet formation
 
@@ -4101,10 +4096,10 @@ Independently opened full393x852 local phone originals at /tmp/cluster-pr54-cred
 
 Selective extraction completed127files159772239bytes with ZIP CRC verification. Exactly60PNG fleet candidates:20each phone/desktop/large; all3 family manifests passed. No short family manifest or complete short images, consistent with short generation execution failure. Full source tree diff between clean artifactc2f919bce69c167c0f0a7247063de7556ee07c34 and57head1ba7cac0d4e8ac92dabe4de0e6ea2e7501b7248f is empty. These60 remain UNINSPECTED; no fleet baseline approval yet.
 
-
 ## Reviewer baseline inspection — PR57 fleet complete available families
 
 Independently viewed all60 available fleet originals (20each phone393x852,desktop1440x1000,large3840x2160) via13 exact SHA representatives per size. Inventories /tmp/cluster-pr57-{phone,desktop,large}-groups.json:010inspect1;010inspect2 (same0112/0122/0132);011choose1;012reserve1;013reload1;015formed1;015formed2 (same0162/0172/0182);016map1;017disband1;018reload1;020disbanded1;020disbanded2 (same0212);021recover1. All60 acceptable scoped references at source verified in prior entry: invalid21infantry disabled with capacity message,20valid,18available/2reserved fighters and0available/20reserved infantry, formed2/20 fleet, disband queued versus completed clear, final22/22forces and fleet0, keyboard focus restored, independent private panel consistent. Phone partial headings/buttons at scroll boundaries are bounded scrolling. Large full compositions were downscaled to2048x1152; not native-pixel inspection. Short family absent/unapproved, requires fresh successful generation. No economic-rule/release approval implied.
+
 
 
 ## Reviewer live result — PR52 cadb strict check
@@ -4112,9 +4107,11 @@ Independently viewed all60 available fleet originals (20each phone393x852,deskto
 Run40146647687/job121029307652 completed failure01:03:34UTC25Oct. Exact log/tmp/cluster-pr52-cadb-failed.log:111passed,1failed identity-validation short001sign-in screenshot. This is one of the two previously inspected/promoted references; do not assume stability or blindly alternate baseline. Agent actively retrieving exact new artifact. Application check still running. Need inspect expected/actual/diff and compare hashes to prior variants before next action.
 
 
+
 ## Reviewer exact artifact — PR52 raster alternation established
 
 Bounded extraction of artifact12581856096 completed3PNGs2606597bytes CRC checked under /tmp/cluster-pr52-cadb-review. Independently viewed full expected/actual/diff. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 is byte-identical to the ORIGINAL baseline replaced bycadb; expectedfb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9 is the previously approved actual. Diff only intro text raster. This proves cross-run alternation between the two observed variants despite earlier96-observation probe stability; do not infer stable baseline from that probe. No blind reversion or tolerance/masking approval. Diagnose and fix fractional text layout/paint causally, then inspect stabilized output and rerun exact checks.
+
 
 
 ## Reviewer handoff — PR52 exact alternation
@@ -4122,9 +4119,11 @@ Bounded extraction of artifact12581856096 completed3PNGs2606597bytes CRC checked
 Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
 
 
+
 ## Reviewer candidate code check — PR52 whole-pixel leading
 
 Read published investigation sourceeee5d6d3b05fb7aed304658a2e966e9635d1bd6e (no PR, PR52head unchanged). Only app style correction is identity intro28px line-height inside existing min-width701/max-height760 media query. Focused runner selects exactly2existing real short identity tests, asserts2tests2files, retains original assertions/timeouts, retries0, update-snapshotsnone, generates only candidates. Branch-only request/workflow bound to source parent/executor; Nix pinned ARM renderer. New live run40149691891 executor01aaf4e556aad8808f6fcef91ef439ff5f04d046 confirmed in_progress. No fix/stability claim from code alone; no required verification weakened. Independently compared retained current validation and keyboard-return .layout.json: entire parsed JSON equal. This supports paint variability despite matching recorded post-capture geometry; does not prove fractional leading as cause. Await real pinned-renderer output for visual inspection.
+
 
 
 ## Reviewer fresh baseline inspection — PR52 whole-pixel leading
@@ -4132,9 +4131,11 @@ Read published investigation sourceeee5d6d3b05fb7aed304658a2e966e9635d1bd6e (no 
 Run40149691891 succeeded; artifact12582088259 already retrieved by implementer at /tmp/cluster-pr52-leading-linux/originals. Independently viewed all11 full1280x720 PNGs across identity-validation6 and identity-keyboard-return5. All acceptable scoped references: invalid draft and selected portrait retained, validation/focus readable, corrected identity saved/recovered, keyboard learning and return states preserved. Independently compared bytes against current PR52 checkout references:9 identical; only validation001 and keyboard004 differ, both SHA87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129. Both match original previously inspected raster. Approval applies together with reviewed28px CSS correction, not a blind baseline reversal. Focused generation proves these two journeys passed and produced matching sign-in rasters; does not prove full-suite stability. Proceed with minimal CSS plus2 reference changes and provenance/logs to PR52, then required strict/application checks; retain unchanged exact comparison requirements.
 
 
+
 ## Reviewer forward evidence — PR58 fleet reorganization
 
 PR58heada6838a2eee3a2725da63a53d473379b3a2fb4ff0 application/documentation succeeded; old strict/generation run39700623837 failed. Retained exact failed log/tmp/cluster-pr58-failed.log. Generation121passed8skipped23failed:2large(return briefing and selected-history),21short including reorganization; do not assume short family available. Read production diff for recovered split/merge propagation: stored action restored into owned accessible fleet panel, cleared on accepted receipt and teardown; no new definite code finding from this initial read. Selective CRC-checked artifact12402018661 extraction underway session24415 into/tmp/cluster-pr58-reviewer-candidates, only live-fleet-reorganization PNG/JSON. No58 baseline approval yet. PR52newhead4f917d72 required jobs confirmed live, no duplicate run.
+
 
 
 ## Reviewer partial visual inspection — PR58 desktop
@@ -4142,9 +4143,11 @@ PR58heada6838a2eee3a2725da63a53d473379b3a2fb4ff0 application/documentation succe
 Independently viewed all34 desktop1440x1000 candidates through21 exact-SHA representatives in/tmp/cluster-pr58-desktop-groups.json. All acceptable scoped references: invalid41infantry/4fighters blocked;4/18formation reserves16/2available; pending split1/8 retained through reload with acknowledgement distinct from acceptance; settled split leaves3/10 and1/8; recipient reserved against conflicting orders; merged4/18 restored; independent20→21→22→24forces consistent and final Fleets keyboard focus visible. Groups:010inspect1;010inspect2=0112/0122/0132;011choose1;012reserve1;013reload1;015formed1;015formed2=0162/0172/0192/0202/0222;016invalid1;017review1;019pending1;020reload1;022accepted1;024split1;024split2=0252/0262/0272/0282;025choose1;026accepted1;027reserved1;028reload1;030merged1;030merged2=0312;031return1. Desktop manifest passed, clean sourced6885b03e796dc7b6b047e1d45d97da9c833a616, specsha8531a5bbb0d138362c4e87fa2b802ddf064353374fc8d6087551114c51e955c6. Remaining sizes not yet inspected. No full-family or release approval.
 
 
+
 ## Reviewer source applicability — PR58
 
 Fetched exact generation sourced6885b03e796dc7b6b047e1d45d97da9c833a616. Full tree diff to58heada6838a2eee3a2725da63a53d473379b3a2fb4ff0 is empty. Thus desktop inspection applies to entire current production/helper/spec/assets/dependency tree. Extraction still live24415: desktop34 and large34 complete on disk, phone12 currently partial; do not inspect/promote incomplete phone manifest. PR52documentationpassed; application/strict/publish still live at4f917d72.
+
 
 
 ## Reviewer baseline inspection — PR58 available families complete
@@ -4152,9 +4155,11 @@ Fetched exact generation sourced6885b03e796dc7b6b047e1d45d97da9c833a616. Full tr
 Selective extraction terminated successfully:211 files276371377bytes CRC checked at /tmp/cluster-pr58-reviewer-candidates. All3 manifests passed,34PNG each phone/desktop/large; short absent and unapproved. Independently viewed phone34 through21 exact-SHA representatives and large34 through21 representatives using /tmp/cluster-pr58-{phone,large}-groups.json, same groups as desktop entry. Final2 large images were reopened separately after truncated output, and only then counted. All102 available compositions acceptable scoped regression references at previously verified identical source tree: pending split retained after reload, invalid capacity disabled, accepted and settled states distinct, recipient reservation visible, final4/18 fleet and independent24/24 forces consistent, galaxy keyboard focus visible. Phone edge clipping is bounded scrolling. Large3840x2160 compositions displayed2048x1152, not native-pixel inspection. This does not approve missing short images or economic rules. PR52 latest checks: documentation and publish success; application and strict still running at4f917d72. Generation job success is not evidence of newly generated captures when generation was skipped.
 
 
+
 ## Reviewer handoff — PR58 available families approved
 
 Reviewer: completed PR58 selective extraction211files276371377bytes CRC verified and inspected all102 available phone/desktop/large captures via21SHA groups each; all acceptable scoped references, full source tree applicability already confirmed. Short absent/unapproved. Mainmeta records exact evidence and truncation recovery. Reconcile all latest mainmeta entries into reviewer-attributed PROMPTS/PROMPT_WORK as applicable and commit/push logs at next substantive checkpoint. PR52 documentation/publish now success; strict/application remain live. Continue existing runs then work forward52→53→54; do not duplicate runs/downloads or merge.
+
 
 
 ## Reviewer forward evidence — PR59 cancellation
@@ -4162,9 +4167,11 @@ Reviewer: completed PR58 selective extraction211files276371377bytes CRC verified
 PR59head943fdce043b4c3f6d6c59e58605c43486df41900 basefeat/live-fleet-reorganization-stories. Application/documentation succeeded; strict39700629454 failed105passed8skipped43failed, generation118passed8skipped30failed including short cancellation during identity setup. Retained /tmp/cluster-pr59-failed.log. Read new696-line cancellation story and clock-test diff: checks request-bound accepted cancellation receipt, single revision, original reservation release, unsubmitted3-fighter draft preserved through review/keep/cancel, confirmed cancellation after reload, no execution at original tick, duplicate settlement no-op and independent member privacy. No new production implementation in59. Selective bounded CRC extraction artifact12407819435(2602364531bytes) started session82902 via/tmp/cluster-pr59-extract.py into/tmp/cluster-pr59-reviewer-candidates,139PNG/JSON selected. No candidate inspected or approved yet; source/manifests still to verify. PR58 evidence ledger/logs confirmed committed/pushed by implementer a41b9db3. PR52 strict/application confirmed still live; no restart.
 
 
+
 ## Reviewer partial visual inspection — PR59 desktop and focus spacing
 
 Independently inspected all22 desktop1440x1000 candidates via13 exact-SHA representatives /tmp/cluster-pr59-desktop-groups.json. Groups:010inspect1;010inspect2=same0112/0122/0132/0142/0152/0162/0172/0182;011choose1;012reserve1;013reload1;014review1;015keep1;016cancel1;017released1;018reload1;020never1;020never2=0212;021return1. Twenty-one acceptable scoped references: original4/18 order distinct from3/0 draft, review/keep unchanged,20/20 released,21/21 after production,no fleet,keyboard return visible. HOLD017-released-draft-1-fleet-marshal.png: top edge of Form fleet focus outline touches/overlaps bottom of cancellation status line around y925. Require measured footer/status spacing correction and fresh inspection; do not approve that defect. Desktop manifest passed, clean sourcece7c78a1c188daa79672fc2e0a1faf94f7d1e15e,specsha007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a. Fetched exact source; full tree diff toPR59head943fdce043b4c3f6d6c59e58605c43486df41900 empty. Other sizes not yet inspected, extraction82902 remains live.
+
 
 
 ## Reviewer handoff — PR59 focus/status spacing
@@ -4172,9 +4179,11 @@ Independently inspected all22 desktop1440x1000 candidates via13 exact-SHA repres
 Reviewer: PR59 desktop22 inspected; hold017-released-draft-1-fleet-marshal.png at /tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64: Form fleet top focus outline touches/overlaps cancellation status bottom around y925. Diagnose measured footer spacing and correct in stack order with fresh captures; do not approve this defect. Other21 desktop acceptable at sourcece7c78a1c188daa79672fc2e0a1faf94f7d1e15e(full tree identical59head). Other sizes UNINSPECTED; extraction82902 live139selectedfiles, do not duplicate. Mainmeta has source/group details and new59evidence; reconcile next substantive logs. Keep52requiredchecks first and ordered publication; no merge.
 
 
+
 ## Reviewer PR59 extraction complete
 
 Session82902 terminated exit0,139selectedfiles177934761bytes downloaded with ZIP CRC verification. Other-size inspection remains outstanding; no blanket approval from successful extraction.
+
 
 
 ## Reviewer baseline inspection — PR59 phone and large complete
@@ -4182,9 +4191,11 @@ Session82902 terminated exit0,139selectedfiles177934761bytes downloaded with ZIP
 Inspected all22 phone393x852 and22 large3840x2160 originals via13 exact-SHA representatives each in /tmp/cluster-pr59-{phone,large}-groups.json, same groups as desktop. All44 acceptable scoped references at source already verified. Phone confirmation wraps at word boundaries, status remains readable, original4/18 reservation distinct from unrelated3/0 draft, cancellation releases20/20 and production reaches21/21 with no fleet. Large full compositions displayed2048x1152, not native-pixel inspection. Phone/large017 status ends left of focused button, so desktop's actual text collision is not present in those compositions. All66 available captures now inspected:65 acceptable, desktop017 withheld. Short0 absent/unapproved. All3 available family manifests passed. Any spacing correction requires reinspection of changed captures. Implementer independently measured desktop textbottom930 versus outline top924 (6px overlap), tracing scoped .feedback p rule not reaching Feedback.svelte; diagnosis/hold committed/pushed85dfe3a9.
 
 
+
 ## Reviewer handoff — PR59 inspection complete
 
 Reviewer: PR59 extraction completed139files177934761bytesCRC; all66 available phone/desktop/large captures now inspected.65 acceptable scoped references, desktop017 still withheld for confirmed6px focus/status overlap. Short absent/unapproved. Phone andlarge017 do not have text collision because last text ends left of focused button, but recheck all changed captures after spacing fix. Mainmeta has exact groups/scope. Confirmed your85dfe3a9 diagnosis. Please reconcile completion next substantive log commit. Preserve52→53→54 publication order and fix59 when reached; no duplicate downloads or merge.
+
 
 
 ## Reviewer forward evidence — PR60 cargo
@@ -4192,14 +4203,17 @@ Reviewer: PR59 extraction completed139files177934761bytesCRC; all66 available ph
 PR60head03a2a8e4ab83f666018e42856d078881b2b8ef8e basefeat/live-fleet-cancellation-stories. Application/documentation succeeded; required strict39702042929 failed104passed8skipped48failed, generation113passed8skipped39failed, including cargo short during identity setup. Retained/tmp/cluster-pr60-failed.log. Read full695-line new cargo story: actual formation2fighters20infantry; invalid unload21/load6 blocked, valid unload5/load3 receipt/revision/order checks, canonical forces unchanged until real leased settlement, exact ledger and production conservation, repeat tick no-op, private member projections and reload recovery. No production changes in60; no new definite code finding. Bounded selective artifact12403270471(2322635068bytes) extraction active session54198 script/tmp/cluster-pr60-extract.py into/tmp/cluster-pr60-reviewer-candidates,199PNG/JSONselected. No images inspected or approved, source/manifests outstanding. PR59 completion log reconciliation confirmed committed/pushed99be877c. PR52 strict/application confirmed live; no duplicate run or merge.
 
 
+
 ## Reviewer baseline inspection — PR60 available families complete
 
 Selective extraction session54198 completed exit0:199 selected files259890333bytes ZIP CRC checked. Independently inspected all96 available PNGs,32 each phone393x852/desktop1440x1000/large3840x2160 through20 exact-SHA representatives per size; inventories /tmp/cluster-pr60-{phone,desktop,large}-groups.json. All acceptable scoped regression references. Invalid formation21/unload21/load6 disabled; formation2/20 reserves18available2reserved fighters and0available20reserved infantry; unload5 accepted tick2 retains20 aboard until settlement15; load3 reserves3 of7 surface infantry, accepted tick3 retains15 aboard until settlement18; reload retains accepted5/3 orders while unsubmitted input defaults1; final system22fighters6infantry,Fleets1 keyboard focus visible. Phone clipping at scroll viewport boundaries is expected; footer status readable and no focus/status collision in these frames. Large images displayed2048x1152, not native-pixel inspection. All3 story manifests passed, clean source8751935c751778933664db38b54c507fc853a22f,specsha8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276. Exact fetched source full-tree diff to60head03a2a8e4ab83f666018e42856d078881b2b8ef8e empty. Short absent/unapproved. No economic-rule or release approval implied. PR52 strict/application still live at4f917d72; preserve existing runs.
 
 
+
 ## Reviewer handoff — PR60 inspection complete
 
 Reviewer: all96 available PR60 cargo captures inspected and acceptable scoped references,32 each phone/desktop/large via20 exact-SHA groups each. Extraction54198 completed199files259890333bytesCRC; root/tmp/cluster-pr60-reviewer-candidates. All3 manifests passed clean8751935c751778933664db38b54c507fc853a22f, full tree identical60head03a2a8e4ab83f666018e42856d078881b2b8ef8e. Short absent/unapproved. Mainmeta records evidence, groups and viewing limits. Reconcile into reviewer-attributed PROMPTS/PROMPT_WORK and commit/push logs at checkpoint. PR52 strict/application remain live; continue existing runs and publication52→53→54, then forward. Preserve PR59 desktop017 hold and PR54 freshLinux requirement. No duplicate runs/downloads or merge.
+
 
 
 ## Reviewer evidence and baseline inspection — PR61 travel
@@ -4211,9 +4225,11 @@ Read911-line travel story and91-line guarded clock test plus design review. Real
 Selective extractor/tmp/cluster-pr61-extract.py session74449 completed exit0:118selectedfiles35952391bytes CRC checked from artifact12400977962(total1927367988). Root/tmp/cluster-pr61-reviewer-candidates. All56 available PNGs independently inspected:28phone393x852 and28desktop1440x1000 via18 exact-SHA representatives each, inventories/tmp/cluster-pr61-{phone,desktop}-groups.json. Both manifests passed clean113e488a56de5131d3488f6400829f5ecc779263,specshaa258a643c567cb1e578fe12ad352692f3019881f9164046f77e198189d367b07. Fetched source; fulltree diff to61head empty. All56 acceptable scoped regression references:2/20 formation/reservation, Tupa3.50ly2ticks valid, Algedi10.49ly beyond-range disabled with remedy, repaired Sendfleetfocus visible without collision, accepted departure2/arrival4, retained after reload, traveling2/20, arrival2fighters0aboard plus20surface, orbit/surfaceFleetmarshal, final stationedTupa. Phone clipped content is within bounded scroll regions; footer status/control readable. Large and short absent/unapproved. PR52 strict/application remain live at4f917d72. PR60 ledger confirmed committed/pushed58f38617.
 
 
+
 ## Reviewer handoff — PR61 available captures approved
 
 Reviewer: inspected all56 available PR61 travel candidates,28phone28desktop via18 exact-SHA groups each; acceptable scoped references. Extractor74449 complete118files35952391bytesCRC at/tmp/cluster-pr61-reviewer-candidates. Clean source113e488a56de5131d3488f6400829f5ecc779263 fulltree identical61head6504a4ad96cad070d74a77c374e7b3ee9ecd58ac. Large/short absent and unapproved: generation failed campaign creation/identity setup respectively. Historical61publish also failed hosted revision HTTP404; require successful exact-head publication when reached. Full details and logs in latestmainmeta. Reconcile reviewer-attributed logs and commit/push at checkpoint. Keep existing52runs and52→53→54 publication order; no duplicate jobs/downloads, tolerance changes or merge.
+
 
 
 ## Reviewer checkpoint — PR52 exact verification passed
@@ -4221,9 +4237,11 @@ Reviewer: inspected all56 available PR61 travel candidates,28phone28desktop via1
 At 2026-10-25 01:58 UTC independently queried required run40150284054 on head4f917d724022107f4c6550b11740ae45dcbe446f: Exact verification step succeeded at01:57:43; artifact upload remains live. Application40150284065 remains live, so PR52 is not yet declared fully green. Publish/documentation succeeded. Human clarification about inspection before approval already logged verbatim; no duplicate prompt appended.
 
 
+
 ## Reviewer handoff — finish first green PR
 
 Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; upload still live, application40150284065 still live. Finish monitoring these existing jobs, verify all required statuses at exact4f917d72 head, then work forward to53 immediately with the reviewed whole-pixel identity correction and applicable inspected references. Keep full comparisons/assertions; no blind approval, duplicate runs or merge. Reconcile latest mainmeta checkpoint into attributed logs and commit/push at substantive checkpoint. Prioritize first fully green PR and ordered forward publication over new features. Existing54/59 visual holds remain.
+
 
 
 ## Reviewer evidence — PR62 interrupted route
@@ -4232,9 +4250,11 @@ PR62 headff1d616183df97aaa4fcc71d2e5c59cb32444711, base61. Read full1224-line re
 
 Historical strict39708780947/job119594903701 failed70, passed90, skipped8. Interrupted-route phone/desktop/large fail at first missing Linux reference; short fails Commander name during identity setup. Generation job119594904025 succeeds only setup/helper tests; log explicitly says no files found/no artifacts uploaded at04:19:36. API lists only verify artifact12400034154(1332701975bytes). Branch workflow inventory contains only this run; no generated Linux candidate family available in that run to inspect or approve. Retained/tmp/cluster-pr62-{failed,generate}.log. Do not mistake green generation status for screenshot evidence. Generate fresh pinned-Nix candidates when62 is reached after repaired predecessors; inspect before promotion. PR52 strict is now terminalSUCCESS37m20s, application40150284065 remains live. Existing implementer is preparing53 while awaiting that exact job; no duplicate handoff needed yet.
 
+
 ## Reviewer forward triage — PR63
 
 PR63 head9050d65ecd1589d44500690750a27a9d0821a42f, base62, title Illustrate paused fleet travel and repeat-safe catch-up. Application/documentation passed historically. Strict39723194222/job119641117985 failed76, passed88, skipped8. Paused-fleet-travel phone/desktop/large missing first Linux reference, short fails identity setup. Generation119641117662 explicitly reports no files found/no artifacts uploaded; API lists only verify artifact12409455449(1211732319bytes). Retained/tmp/cluster-pr63-{failed,generate}.log. No new production diff; story not yet fully reviewed and no visual approval. Fresh pinned-Nix candidates required when reached; green generation job alone supplies no evidence.
+
 
 
 ## Reviewer code comparison — PR63
@@ -4242,29 +4262,35 @@ PR63 head9050d65ecd1589d44500690750a27a9d0821a42f, base62, title Illustrate paus
 Read complete story delta against previously reviewed PR61 travel story. New coverage uses ordinary pause/resume controls; verifies identical military/economy while paused, concurrent overdue delivery [0,0], reload same paused private route, exact one-hour boundary shift without advancing tick/forces, concurrent delayed catch-up commits exactly duration ticks, checks each immutable revision's production and conserved totals, no premature arrival, repeated delivery [0,0], and removed lease. Remaining journey unchanged from reviewed61 except centered scroll and reopening route after roster. No definite new code finding. This remains code review only: missing Linux captures need generation and independent inspection before approval.
 
 
+
 ## Reviewer forward patch check — PR53 preparation
 
 Read current uncommitted53 workflow/CSS diff. Workflows and app.css match52head4f917d72; new Nix files and scripts/ci-in-renderer.sh are currently untracked, so git diff against52 misleadingly reports them deleted. Independently compared actual file git hashes to52blobs: all five identical. Runner retains check/lint/unit/story-policy/service/browser and exactstory checks. No implementation edit by supervisor, no acceptance of incomplete patch/unstaged provenance.
+
 
 
 ## Reviewer handoff — forward review evidence
 
 Reviewer: while you prepare53, mainmeta now records full62 code review and63 comparison against reviewed61 story. No new definite code defects found. Both62 run39708780947 and63 run39723194222 successful generate jobs explicitly produced no files/artifacts; only verify artifacts exist, so no Linux family approved. Generate fresh pinned-Nix candidates when reached and inspect before promotion. Logs retained /tmp/cluster-pr62-{failed,generate}.log and /tmp/cluster-pr63-{failed,generate}.log. Also independently confirmed your53 workflow/CSS and actual five Nix/runner file hashes match52head4f917d72. Reconcile these mainmeta findings in next attributed log commit; continue current first-green/53 sequence without interrupting or duplicating jobs. No merge.
 
+
 ## Reviewer clarification — parent integration is authorized
 
 Implementer asks whether no-merge prohibits parent-to-child Git integration. User instruction explicitly says do not merge PRs and requests stacked PRs based on preceding branches; routine conflict resolution and parent integration are within that scope. Reviewer directs proceeding with a normal parent-to-child Git merge preserving both histories and append-only prompt logs. Do not merge/close GitHub PRs, force-push or rewrite history. No additional human permission needed for this routine preparation.
+
 
 
 ## Reviewer handoff — resolve stack conflict
 
 Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
 
+
 ## Reviewer code and CI review — PR64 viewport cohorts
 
 PR64 heada26324cb00e770fd4503c76c8db39ae6005dc9d4, base63. Read complete workflow/package/runner/cohort module and210-line tests diff. Sequential fresh emulators retain every viewport's output and logs, preserve previous evidence, fail on collisions, maintain interruption across children, guard occupied ports, continue independent viewports but throw aggregate failure. No screenshot/assertion/tolerance weakening. Independently ran the five committed cohort tests via established Nix environment on exact-source files in/tmp/cluster-pr64-review; all5passed0failed. This is runner verification, not player-screen approval.
 
 Historical strict39724010454/job119643687547 has viewport counts29/29/29/28passed,12/12/12/13failed and2skipped each (total115passed49failed8skipped). Missing Linux references remain; short reaches formation rather than failing identity setup for those new fleet stories. Generation119643687700 produced no files/artifacts, API only verify12405503333(1846046879bytes). Logs/tmp/cluster-pr64-{failed,generate}.log. No baseline approval implied. Current52runner predates64 and does not yet use cohorts; preserve this later additive behavior during forward integration, do not overwrite it with52runner wholesale.
+
 
 
 ## Reviewer code and retained exact evidence — PR65 history setup
@@ -4274,18 +4300,22 @@ PR65 head757d423c4d21397ca36ff9233c6741257a4df72a, base64. Read complete history
 Selectively extracted only campaign-history JSON metadata from verify artifact12405425226,50files547144bytes ZIP CRC checked, extractor25341exit0; root/tmp/cluster-pr65-history-evidence. All4 manifests passed in verify mode:phone12views,desktop/large/short10each(42total),each15completedsetupcontrols. Clean source4f13d4fb9d024a082950d0b39f47f4a6be1491b3 fetched; fulltree diff to65head empty. Exactspecshaec5d81d686148906ff984266f2d638ec48ccde4987479349c03c456a49bc5cae. This confirms the Linux setup/history journey passed against inherited exact references; no new visual approval or fullPRgreen claim.
 
 
+
 ## Reviewer handoff — PR64 and65 evidence
 
 Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
 
 ## Reviewer finding — PR53 archive validation whitespace
 
 Read in-progress preservePromptHistory helper. Exact staged regular-file archive check is good; canonical comparison currently calls trimEnd() on each prompt body. That allows altered trailing spaces/newlines in the canonical copied request to pass a check whose message promises verbatim retention. Human prompts include intentional byte-preservation requirements and at least one trailing space. Preserve exact body bytes with only a precisely defined heading separator handled, and add a negative test changing trailing body whitespace while archive remains exact. Keep immutable archive equality and child-prefix checks; no gate bypass.
 
 
+
 ## Reviewer handoff — tighten canonical archive check
 
 Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
 
 
 ## Reviewer finding — archived-base continuation bypass
@@ -4296,25 +4326,31 @@ Updated archive comparison now preserves exact body bytes plus one defined LF se
 
 Reviewed revised archive path and48-line regression test. Canonical prompt records retain exact bytes plus one explicit LF separator; archive must be staged regular file equal to exact parent log at commit-addressed path. Both merging continuation histories checked before new-prompt success branch; archived-base CI checks retain inherited records in order, reject duplicates and nonregular records. Independently ran14prompt tests in established Nix environment, session6369exit0,14passed0failed, including changed archive, executable archive, altered text/whitespace, deleted/mutated continuation records, local rewrite rejection and merged-ancestor CI acceptance. Both identified findings addressed. This approves the narrowly scoped reconciliation implementation, not PR53CI status or any uninspected images.
 
+
 ## Reviewer handoff — prompt fixes verified
 
 Reviewer: independently reviewed revised prompt archive/continuation checks and ran14prompt tests underNix, allpassed. Both findings addressed: exact body whitespace and inherited continuation retention. Proceed with current parent integration and53publication after52requiredchecks; preserve previous assertions/baselines. Mainmeta has evidence, please reconcile latest reviewer findings/validation in attributed logs at checkpoint. No PRmerge.
+
 
 ## Reviewer execution adjustment — start prepared PR53 CI
 
 PR53 localfa414436 has parentsa1023434 and reviewed52head4f917d72, clean worktree, completed independent prompt-check review/tests. Waiting for52application before publishing this ready child is a supervisor-imposed serialization, not a user requirement. User requests a green stack. Start53requiredCI now on reviewed child while existing52application finishes; retain exact ancestry and never call either green until all checks pass. This is not a duplicate run or PR merge. If52fails, diagnose and propagate actual necessary fix in normal stack order.
 
+
 ## Reviewer handoff — publish ready child now
 
 Reviewer: reviewed53fa414436 is ready and includes52head4f917d72. Publish53 now to start its requiredCI while existing52application continues; this supersedes my earlier wait-before53-publish sequencing. Serial waiting is not user-required and delays the green stack. Preserve exact reviewed code/references and both histories, no duplicate reruns, no force-push or PRmerge. Diagnose any52failure and carry required fix forward normally. Reconcile current mainmeta findings/validation in logs at checkpoint. Then prepare54 correction with fresh Linux inspection as already required.
+
 
 ## Reviewer verified publication — PR53 repaired child
 
 Independently verified GitHub PR53 headfa4144360fd9152f180df50659a50c4bf214aeba, MERGEABLE, parent52 integrated. New required jobs live: application40153836581/job121050799884, strict40153836539/job121050800104, documentation40153836593/job121050799851, publish40153836540/job121050799774; generation121050799877 exists but not evidence of captures. Push d9d72d96→fa414436 confirmed. Recovery findings/provenance ledger previously pushedc35d60a7. No PR merge. PR52application40150284065 stilllive; continue original job. Implementer proceeds to54 freshLinux correction evidence.
 
+
 ## Reviewer milestone — PR52 fully green
 
 Independently verified PR52 exacthead4f917d724022107f4c6550b11740ae45dcbe446f: MERGEABLE/CLEAN, all5 checks SUCCESS. Application40150284065/job121040216438 completed2026-10-25T02:16:33Z,55m27s; retained full/tmp/cluster-pr52-green-application.log shows36browser tests passed48.3m. Exactstory40150284054/job121040216519 succeeded112passed8skipped; docs40150284192 andpublish40150284062 succeeded. Generation job success was skipped generation, not a baseline source. Scoped reference approval rests on previously independently inspected originals and CSS fix. First repaired green PR achieved; full52–140stack remains active and incomplete. No merge. PR53headfa414436 CI already live,54preparation in progress.
+
 
 ## Reviewer handoff — confirmed first green PR
 
@@ -4326,9 +4362,11 @@ PR66 head0666727da28a8c05f1734ac11a1f0b66afb0efb7, base65. Application/docs hist
 
 Read full observation-inputs/entropy-hook modules and3guard tests, design review; independently ran3guard tests in establishedNix on exact-source files at/tmp/cluster-pr66-review,3passed0failed. Hook only matches separately loaded compiled service URL, enforces demo/loopback and exact single signature, fixes entropy identity for named fixture while preserving real account objects/star/tick/seed; not draw/report injection. Full577-line story review remains outstanding (earlier combined diff truncated; not treated as fully read). No production change in66. Designreview explicitly retains phone map-label collision Tupã/Tania Australis; do not silently approve it. PR67c4a5cac2 title identifies deterministic label-placement correction; inspect actual corrected screens before accepting those compositions.
 
+
 ## Reviewer completed story read — PR66
 
 Re-read full577-line observation story in two untruncated sections. Real identity/admission and Scheduler request, leased ticks with repeated full-state no-op, private views equal authorized observationView with exact report fields/no seed/draws, rendered facts compared to each player's projection, unknown distinct from zero, missed scan retains original report, full historical warning below pinned age and inside bounded scroll panel, reload preserves authorized historical report. No new definite code defect. Existing documented map-label overlap and missing Linux baseline evidence remain unresolved visual gates; no image approved by code review.
+
 
 ## Reviewer forward review — PR67 label correction
 
@@ -4336,41 +4374,51 @@ Reviewed remaining component host changes, full91-line observation journey delta
 
 Independently inspected full-size committed phone018 before(0666727d) and after(c4a5cac2): Tupã/Tania Australis collision is visibly corrected, both labels remain readable, observation content/controls retained. Approve only this sampled macOS regression image correction; not all67 images, Linux references or release composition. Other captures and fresh Linux evidence still require inspection. Main work remains53 liveCI and54 pending-label fresh capture review; no new implementation requested from this forward review.
 
+
 ## Reviewer checkpoint — PR53 partial checks
 
 PR53fa414436 publication now passed3m54s, documentation passed2m6s; strict and application still pending. PR52 remains first fullygreen milestone. Implementer54 integrated53 at35211669 and prepares restricted eight-case Linux credit generation with original assertions/deadlines, healthy work; do not duplicate generation or approve uninspected candidates.
+
 
 ## Reviewer PR54 fresh-candidate executor review
 
 Read complete recovery-credit workflow, credit-request.mjs and credit-candidates.mjs at dc1fdd4a48b1e17de6f3a793ea07cdd9d1dc5f00. Request binds clean exact checkout/source3a41749e54a829fff880e0e8b07ce0ad9e908ba4, isolated new request plus continuation only, expected repository/branch/push/attempt1; eight enumerated existing credit cases across four sizes, retries0 and update-snapshots none. Nix renderer invocation generates candidates only. Independently reviewed actual pending-label and padding delta at integrated35211669: three pending labels become Awaiting receipt, horizontal padding6 while vertical12 retained; two geometry assertions strengthened to exactly one text line within button. Source identity leading fix inherited from reviewed52. No candidate approval from executor/code review. Live job40154163510/121051819443 confirmed in_progress on exact executor; no restart.
 
+
 ## Reviewer PR67 historical CI triage
 
 Exact67 headc4a5cac2 historical strict39730009405/job119662633581 failed55m43s:113passed55failed8skipped across cohorts; allfour observation journeys stop at missing Linux010 reference. Generation119662633454 succeeded but explicitly no files/no uploaded artifacts, so supplies no approval candidates. Application119662633152 anddocs119662633078 passed historically. Retained logs/tmp/cluster-pr67-{failed,generate}.log. Fresh Linux observation generation/review remains required after stack integration; inspected macOS phone correction does not fill those missing references.
+
 
 ## Reviewer forward review — PR68 navigation labels
 
 PR68 a6f04e9ce2f96080d81788dbe1788427b1dade2a base67. Read full production/story/helper delta and design/baseline review. Decorative projected HTML wrappers explicitly pointer-events:none; shared geometry check uses actual elementFromPoint at label center to reject intercepting label/wrapper, retained existing navigation assertions with added separation/containment. No new definite code finding. Independently inspected full-size committed phone005 keyboard-orbit before/after: previously clipped Guniibuu name and class now contained/readable at right edge, selected star/inspector/focus remain intact. Approve only this specific macOS regression correction. This does not approve uninspected Linux references or substitute for runtime pointer/CI verification. Files/tmp/cluster-pr67-review/navigation-{before,after}.png.
 
+
 ## Reviewer actionable failure — PR54 outer Nix dispatch
 
 Fresh credit job40154163510/121051819443 failed before any journeys. Exact retained log/tmp/cluster-pr54-candidate-failed.log ends02:24:04UTC Usage: cluster-ci-renderer stories verify|generate OR application; exit2. Inner scripts/ci-in-renderer.sh gained recovery:credit dispatch, but outer nix/ci-renderer.sh line5 accepts only stories:verify|stories:generate|application:. Add exact recovery:credit allowance to outer launcher, retain invalid-argument rejection, verify end-to-end dispatch through both layers before a new isolated request. No screenshots generated/approved; do not rerun same immutable attempt1 request. Preserve this failed diagnostic. Existing53CI unaffected.
+
 
 ## Reviewer handoff — PR54 dispatch correction
 
 Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh:5 (only stories:verify|stories:generate|application: accepted), log/tmp/cluster-pr54-candidate-failed.log ends Usage exit2. Inner recovery:credit alone is insufficient. Fix exact outer recovery:credit dispatch, verify both layers and retain invalid argument rejection before one new isolated request/source with existing Nix execution. No images from this run. Preserve diagnostic and current53CI; do not rerun attempt1 request. Mainmeta also has54executor review,67CI triage and scoped68phone edge correction inspection for next attributed log push.
 
+
 ## Reviewer PR68 historical CI triage
 
 Exact68 head a6f04e9ce2f96080d81788dbe1788427b1dade2a: strict39731275898/job119666641405 totals113passed55failed8skipped; generation119666641517 has no files/no artifacts, hence no Linux approval source. Application119666641183 anddocumentation119666641344 passed historically. Publish39731275938 failed expected exacthead HTTP404. Logs/tmp/cluster-pr68-{failed,generate,publish}.log. Fresh stack current-head CI remains necessary.
+
 
 ## Reviewer checkpoint — PR54 failure acknowledged
 
 Implementer acknowledged outer recovery-credit dispatch defect and is correcting exact accepted arguments plus rejection validation before a new source-bound request. Failed first request remains immutable. Recovery ledger previously committed/pushed72a18643. No duplicate jobs launched by supervisor, no PR merge, no uninspected candidate promoted.
 
+
 ## Reviewer verified PR54 dispatch correction
 
 Independently read working correction in /tmp/cluster-pr54-credit-review: outer launcher accepts recovery:credit only with exactly two arguments; inner dispatch also requires exact two-argument credit route. Existing stories/application paths unchanged. Read full test extracting actual case statements with command stubs; independently ran two tests under established Nix, both passed. This validates dispatch branches/rejection, not full container runtime. Workflow/request now address fresh pr54-credit-02/idcredit-20261025-02 while first request is preserved. Proceed with exact-source candidate generation; no screenshot approval implied.
+
 
 ## Reviewer forward code review — PR69 fleet contacts
 
@@ -4378,13 +4426,16 @@ PR69 f6c20e3d8bf8f7703c489cb97551968383fd0c8f base68. Read complete671-line stor
 
 Real UI formation4fighters6infantry, authoritative conservation/production accounting through real repeat-safe ticks, actual private recipient projection fields/no route/orders/privatefleetID, current and missed-scan retained report, full bounded age/facts visibility with returnrail, reload/motion/keyboard state preservation. Production wrappers disable pointer events only for decorative elements; actual traveling onfleet handler keeps interactivity. No definite new code finding. No69images inspected/approved in this review; fresh Linux/provenance and runtime comparisons remain gates.
 
+
 ## Reviewer PR69 historical CI triage
 
 Strict39735293422/job119679444037 totals112passed60failed8skipped; allfour fleet-contact journeys stop at missing Linux010 reference. Extra short failure is identity-pending-retry001,1994differentpixels, same previously diagnosed leading symptom; confirm after inheriting52fix rather than approving old mismatch. Generation119679444321 explicitly no files/noartifacts. Historicalapplication119679443600 anddocs119679443747 passed. Logs/tmp/cluster-pr69-{failed,generate}.log. No69Linuxcandidates approved.
 
+
 ## Reviewer verified new PR54 candidate handle
 
 Fresh sourcee70f3667 contains reviewed exact dispatch fix; requestexecutora40542c98c706cece9befc428836e772f5e76b5e pushed. Confirmed run40154407498/job121052578968 in_progress on that exact executor. Prior40154163510 failed beforetests and remains recorded. This is a corrected new source request, not a duplicate rerun; continue existing handle.
+
 
 ## Reviewer forward review — PR70 arrival archive
 
@@ -4392,35 +4443,43 @@ PR70head417bb62232403a3a841245b2e6aabdd34f9701dc base69. Read complete314-line a
 
 Unlike66–69,70generation39743227540/job119705315798 actually passed172stories8skipped and uploaded artifact12418233598(4440214304bytes). Started bounded range extraction only live-fleet-travel originals/JSON to/tmp/cluster-pr70-reviewer-candidates, session9068; no wholeZIP download. No candidate approval yet. Historicalapplication39742635765 failed arrival-reports.spec.ts335: expected accepted Load order, received no fleet orders within5000ms (35browserpass1fail3skip). Retained/tmp/cluster-pr70-application.log; investigate if reproduced after forward integration, not explained by missing snapshots. Generationlog/tmp/cluster-pr70-generate.log.
 
+
 ## Reviewer PR70 Linux provenance and desktop archive inspection
 
 Fetched clean generation sourceddd7512cd2169da67a312272b8336a086a034d4a; fulltree diff to70head417bb622 empty. Desktop manifestpassed/generate, specsha4c653d9d49d806ed15dbe2529cd55ebafdce80ea4a392bf96f76a8378ce329d0. Independently inspected all12 new desktop archive PNGs027–032 through7SHA-identical groups saved/tmp/cluster-pr70-desktop-archive-groups.json. OwnerrecordTupãtick4,0losses2fighters20infantry,bothcontrolYou; uninvolvedemptyarchive; full disclosure/private-rule text, visible rails and keyboardreturnfocus. Approve these12desktop additions only as scoped regression references. Other70images remain unreviewed; extractor9068 stilllive, do notrestart.
 
 Historical70strict totals112passed60failed8skipped; allfourtraveljourneys failfirstmissingLinuxreference. Publish39742635748 exactheadHTTP404. Logs/tmp/cluster-pr70-{failed,publish}.log. Selectively retrieved application error-context fromartifact12413572863:1file33656bytesCRCchecked, /tmp/cluster-pr70-application-context. Context confirms missing acceptedLoadorder; no fullpage state or cause established. Test bytes identical52; don't infer a70newproductionregression or rerun solely from historical failure. Confirm current integration and diagnose if repeated.
 
+
 ## Reviewer PR70 archive inspection completed
 
 Bounded extraction completed: 328 files, 289968374 bytes, CRC checked; generation source ddd7512cd2169da67a312272b8336a086a034d4a has identical full tree to PR70 head417bb622. Phone and large twelve new archive images each inspected through seven exact-hash groups. Short twelve inspected through eight exact-hash groups, re-viewed in two-image batches after truncated output. All new027–032 archive compositions show readable owner facts, private empty peer archive, accessible bounded disclosure and fixed return rail, retained keyboard focus. Approve these36 additions plus previously inspected12desktop, total48 new archive regression references only. The inherited112 travel frames remain unreviewed in this artifact; generation pass does not approve them or prove the recorded7pixel short stability issue resolved. Group indexes /tmp/cluster-pr70-{desktop,phone,large,short}-archive-groups.json. No new candidate promoted by supervisor.
+
 
 ## Reviewer handoff — scoped PR70 evidence
 
 Reviewer: PR70 selective extraction completed328files289968374bytesCRC checked; source ddd7512c fulltree identical417bb622. Independently inspected all48 new027–032 archive PNGs across four sizes, approved only these regression references (hash group indexes in /tmp/cluster-pr70-*-archive-groups.json). Inherited112 frames remain unreviewed and recorded7pixel short stability issue unresolved. Reconcile this mainmeta checkpoint into attributed logs at next commit/push. Keep existing53CI and54fresh credit job as priorities; no new job or interruption requested.
 
+
 ## Reviewer PR70 inherited travel evidence
 
 Compared SHA256 of every inherited010–026 PNG against previously inspected PR61 originals under established Nix: all28phone and28desktop are byte-identical, so their existing image inspection applies without extrapolating across changed pixels. Independently inspected all28short inherited frames through18 exact-hash groups in two-image batches. Formation validation/reservation/reload, actual fleet complement, draft/invalid/repaired/accepted/recovered route, travel and arrival compositions readable; action rails remain visible, bounded scroll content retains controls. Approve these84 inherited regression references. Combined with48 archive images,132of160 PR70 PNGs now inspected or exactly matched to inspected originals. Remaining28large inherited frames require inspection. Current strictCI and recorded7pixel local stability issue remain separate gates. Indexes /tmp/cluster-pr70-{phone,desktop,large,short}-inherited-groups.json; no image promoted by supervisor.
+
 
 ## Reviewer PR70 large travel inspection and complete family
 
 Independently inspected remaining28large inherited010–026 frames through18SHA-identical groups in two-image batches. Source3840x2160 displayed2048x1152, all relevant text/control compositions readable: complement validation, accepted reservation/reload, fleet facts, route waypoint/error/repair, authoritative accepted/travel/arrival and recovered fleet. No visible overlap or clipped action controls found. Approve these28 scoped regression references. All160 family images now covered:104 newly inspected plus56 byte-identical to previously inspected PR61 originals. Source provenance and CRC extraction as above. This does not establish current-head CI, release design approval, or resolution of separately recorded seven-pixel local rendering instability.
 
+
 ## Reviewer handoff — PR70 complete retained image review
 
 Reviewer: mainmeta now records all160 retained PR70 fleet-travel PNGs covered. All28phone+28desktop inherited frames are SHA256-identical to previously inspected61 images; independently inspected remaining28short+28large inherited through18groups each, plus48newarchive previously reported. Approve only this exact-source retained regression family; current integrated-head CI and recorded7pixel local stability issue remain gates. Indexes /tmp/cluster-pr70-*-inherited-groups.json and archive-groups.json; source ddd7512c identical fulltree417bb622. Please reconcile, attribute, commit/push mainmeta at next checkpoint. Continue53/54 priority, no additional job requested.
 
+
 ## Reviewer PR54 corrected capture succeeds
 
 Independently verified run40154407498 completed success; exact log/tmp/cluster-pr54-corrected-generation.log reports8passed7.4m at2026-10-25T02:37:28UTC. Artifact12583688735,360837234bytes,469files, SHA256 ZIP2712f7e2dc682cd8cf1494c8e359cfe4c8b21e960af2c076ec944a48048eeefc. Implementer already retrieving and verifying artifact; no duplicate download initiated by supervisor. Fresh image inspection remains required beforepromotion. PR53 strict/application stillpending onexistinghandles.
+
 
 ## Reviewer PR54 fresh Linux image approval
 
@@ -4430,15 +4489,18 @@ Independently recomputed all212 current and prior PNG SHA256 values under establ
 
 Independently read all212 committed PNG blobs from17915680d7dec4fbebb38c57cd425e902cc541f6 and recomputed SHA256: every byte matches approved fresh originals in current-image-index.json. GitHub PR54 exact head matches; required checks now live: application40155701633/job121056527917, strict40155701632/job121056527973, docs40155701640/job121056527760, publication40155701647/job121056528273. Generation companion121056527819 is not assumed to produce candidates. PR53 existing strict/application remain live. No rerun or merge by reviewer.
 
+
 ## Reviewer forward review PR71 conversation revocation
 
 Read full230-line story delta plus existing493-line setup/consent context, design and baseline notes at b590be6aa09466a8b28ea9e96708eb4b430ef6d0 base417bb622. No production change. Real authenticated UI removal confirmation preserves canonical revision until commit; one revision removes current membership, creator post-removal message increments once, former member and outsider serialized views exclude it. Reload retrieves only previously consented history, excludes ungranted secret and absent-period message; actual bounded record reading, fixed return rail, motion preferences and Escape focus restoration checked. No definite new code finding. No PR71 images approved in this review.
 
 Historical strict39745132291/job119711581105 totals110passed62failed8skipped. Desktop/large/short selected-history reaches missing Linux018 removal baseline; phone stops earlier on273pixel017return-to-chart mismatch. Separate phone navigation0051066pixels and scheduled-roster259pixels also present; do not classify all failures as missing references or infer cause without image comparison. Generation119711580881 explicitly no files/no artifacts. Application119711581085 anddocs119711580397 passed historically. Retained logs/tmp/cluster-pr71-{failed,generate}.log. Fresh integrated source/renderer candidates and review required when reached.
 
+
 ## Reviewer handoff — PR54 publication verified, next stack step
 
 Reviewer: independently verified all212 committed PNG blobs at17915680 match approved originals, and GitHub54 exact head/checks live. Keep those handles and53jobs. Continue preparing55 from54 while checks run, using already reviewed108briefing images with explicit source/renderer applicability; inspect any changed compositions. Mainmeta also records71 full story/code and historical CI review (no71image approval). Reconcile new reviewer entries into attributed logs at next commit/push. No duplicate generation or PR merge.
+
 
 ## Reviewer forward review PR72 private drafts
 
@@ -4446,19 +4508,23 @@ Reviewed complete249-line selected-history extension, production17-line feedback
 
 Historical strict39747681740/job119720129797 totals108passed64failed8skipped. Selected-history desktop/large/short stops at inherited missing018removal; phone earlier017chart mismatch. Phone navigation005 and scheduled-start026 also differ; short identity-conflict001 and keyboard-return004 differ, requiring inherited52fix/current evidence rather than old-output promotion. Generation119720129645 explicitly no files/no artifacts. Historicalapplication119720130162 anddocs119720130031 passed. Logs/tmp/cluster-pr72-{failed,generate}.log. PR55 currently being integrated by implementer with prompt-history conflicts under active resolution, no concurrent writer/interruption.
 
+
 ## Reviewer forward review PR73 explicit replacement
 
 Reviewed full143-line story addition and design/baseline notes at17250d5795c25d501cefb1f285a8e929cbabe822 against5655ca32. No production change. Two real authenticated tabs preserve competing text, conflict disables sending, both remedies and fixed footer must be fully visible, keyboard replacement receives durable-store acknowledgement, both reloads recover chosen text. Complete canonical equality and removed-member/outsider projections check all three unsent texts stay private. Motion parity preserves unsent state. No definite new code finding; no PR73 images approved by this review.
 
 Historical strict39749181576/job119725132599 totals110passed62failed8skipped. Three phone pixel mismatches1066/259/273 remain, and desktop/large/short selected-history stops at inherited missing018removal baseline. Generation119725132363 explicitly uploaded no files/artifacts; its success is not image evidence. Application119725133357 and docs119725132744 passed; publication39749181733 failed exact-head verification with last observed HTTP404. Logs /tmp/cluster-pr73-{failed,generate,publish}.log. Existing53/54 jobs confirmed live this turn; PR55 implementer healthy, resolving promotion's missing narrative README metadata via bounded retrieval without altering reviewed images. No duplicate prompt or job sent.
 
+
 ## Reviewer PR55 prepared integration verification
 
 Independently reviewed new explicit record-separator checker/test delta against17915680, then ran all16 check-prompts actual-Git tests in established Nix; allpassed, session45045. Exact request whitespace, wrong source metadata, undeclared separator changes and both histories remain checked. Independently recomputed SHA256 of all108 prepared live-return-briefing Linux PNGs against previously inspected retained originals: every byte matches. Source comparison c8129fec to prepared tree for player/service/assets/dependency/story configuration shows only inherited CreditOffers labels/padding and short identity-intro line-height; no changed briefing composition claimed. Preparation is not current CI success.
 
+
 ## Reviewer handoff — PR55 independent checks
 
 Reviewer: independently ran all16 prompt-history tests in Nix, allpassed; read separator delta and independently SHA256-verified all108 prepared briefing PNGs equal inspected originals. Reviewed source applicability delta limited to inherited CreditOffers and identity CSS. Mainmeta also contains completed72/73 code and historical CI reviews, no image approvals for those. Reconcile reviewer entries at next commit/push, retain current53/54 CI handles, continue55 publication and forward stack. No extra generation, duplicate job or GitHub merge requested.
+
 
 ## Reviewer PR55 published integrity and PR74 forward review
 
@@ -4468,6 +4534,7 @@ Read full285-line PR74 interrupted-send story delta at2639f208de6595d81674af414c
 
 Historical74strict39750957373/job119731108231 totals109passed63failed8skipped. Phone1066/259/273pixel mismatches plus short1994pixel identity mismatch; missing inherited references remain. Generation119731107799 explicitly no files/artifacts. Historicalapplication119731106124 anddocs119731107345 passed. Logs/tmp/cluster-pr74-{failed,generate}.log. Retain integrated current-head CI as required gate; no promotion from failed verification output.
 
+
 ## Reviewer PR75 account-isolation review
 
 Read complete159-line story delta at80fbb053142d6763f9a76c5a32f8982010a839a4 against2639f208, actual login helper, and design/baseline notes. Real saved draft, keyboard sign-out, same-browser authentication as existing outsider, private-room/composer exclusion, sign-out and original account recovery preserve complete canonical state and original profile bytes. Removed-member/outsider projections exclude draft; recovered exact text, fixed footer and motion parity checked. No production change or definite code finding.
@@ -4475,6 +4542,7 @@ Read complete159-line story delta at80fbb053142d6763f9a76c5a32f8982010a839a4 aga
 Independently inspected all7 new committed phone darwin-arm64 PNGs through5 exact SHA256 groups, original pixels extracted unmodified to/tmp/cluster-pr75-review with phone-index.json. Saved/restored note readable, sign-out returns to entry with visible keyboard focus, both outsider screens contain no private room/draft, controls remain contained. Approve only these7 existing macOS phone regression references. Other sizes and Linux images are not approved by this inspection.
 
 Historical strict39752584469/job119736547585 totals110passed62failed8skipped; phone1066/259/273pixel differences and inherited missing references. Generation119736547109 explicitly no files/artifacts. Application119736546533 anddocs119736546469 passed; publication39752584457 failed exact-head check, last HTTP404. Logs/tmp/cluster-pr75-{failed,generate,publish}.log. Implementer actively preparing56, latest reconciliation pushed9c2e7bb7; no duplicate instruction/job sent.
+
 
 ## Reviewer current PR53 failure diagnosis and exact handoff
 
@@ -4484,13 +4552,16 @@ Independently viewed both original expected/actual/diff triples. Only introducto
 
 Handoff: Reviewer: current53 exact evidence is ready at/tmp/cluster-pr53-current-review,39files20.14MB transferredCRCchecked. Independently inspected both triples; only identity-intro raster differs. Actual validationfb76 matches known alternate. Both sidecars confirm17px/28px font, texty286.421875 and paragraphy283.421875:28px fix is active yet instability remains. Prioritize53 after safe56checkpoint; avoid reference-only swaps. Use existing retained evidence for production rendering diagnosis and bounded same-renderer verification, preserving strict equality. Mainmeta records exact paths/hashes. I am not launching another job.
 
+
 ## Reviewer PR53 independent pixel bounds and capture audit
 
 Read unchanged captureReady/stableImage path: fonts.ready and actual-image decoding precede capture; actual frames stabilize independently of expected image, zero-difference comparison unchanged. Independent Nix sharp RGBA analysis of both full expected/actual pairs proves exactly2231raw differing pixels restricted tox583–1012/y289–305 in each pair, matching historical alternate-raster bounds; comparator reports1994. No other full-image pixels differ. Saved/tmp/cluster-pr53-current-review/independent-pixel-analysis.json. This localizes the defect but does not prove font-loading, fractional-origin or compositor cause. Implementer acknowledged28pxdidnotestablishstability, safely preserved56workingstate and moved to53diagnosis; no duplicate jobs or new baseline approval.
 
+
 ## Reviewer PR75 remaining viewport image inspection
 
 Independently inspected all21 remaining committed macOS images (7each desktop/short/large) through4exactSHA256groups per size. All images were extracted unchanged from80fbb053, indexes/tmp/cluster-pr75-review/{desktop,short,large}-index.json. Saved/restored unsent note, visible focus, fixed composer/action rail, signed-out entry and outsider empty directory remain readable/contained. Short scroll position differs on recovery but complete final message and explanatory history text remain accessible above fixed composer; no new defect found. Large3840x2160 originals displayed2048x1152: composition inspection, not native-pixel typography certification. Approve these21 exact-source macOS regression references, completing28newPR75images with sevenphonepreviouslyreviewed. No Linux or inherited-image approval. PR53 rendering diagnosis remains implementer priority; no extra job/prompt sent.
+
 
 ## Reviewer PR76 code and historical CI review
 
@@ -4500,33 +4571,41 @@ Historical strict39755417454/job119746064425 totals110passed62failed8skipped, ph
 
 Current PR53 application40153836581/job121050799884 nowSUCCESS onfa414436, confirmed viaGitHub; docs/publication/generation alsoSUCCESS, only strictvisual gate failed. PR54/55applicationandstrict remainlive. Implementer working53renderdiagnosis;56localstagedtreec6552c6b preserved, historicalseparator-checkfailure not bypassed. No new prompt/jobs from this review.
 
+
 ## Reviewer PR76 short image inspection
 
 Independently inspected all11new short macOS images fromee86a333 through9exactSHA256groups, unchanged originals/index at/tmp/cluster-pr76-review/short and short-index.json. Future-only choice and full recipient disclosure readable; acceptance and send acknowledgements visible, welcome fully contained for sender/recipient and afterreload, outsider has no room. Bounded scrolling clips non-focal heading/older content at viewport edges, while required current invitation controls and welcome remain visible. Approve these11exact-source short regression references only; remaining33newmacOS images and Linux evidence stillunreviewed. No blanket release/design approval. PR53diagnosis remains priority; no duplicate job or interruption.
+
 
 ## Reviewer PR53 local layer diagnostic inspection
 
 Independently viewed both complete1280x720 current-leading-0.png and own-layer-0.png originals at /tmp/cluster-pr53-layer-0YWpc2. Introductory sentence, form, portrait selection and fixed actions remain readable and contained in both variants. This is local Darwin diagnostic composition inspection only: neither image is approved as a Linux reference and no stability conclusion follows. Read LAYER_HYPOTHESIS.md; production cause remains explicitly hypothetical and requires pinned-Linux actual-journey evidence. Latest user clarification about inspecting baselines before approval is already logged verbatim at line3459; no duplicate human entry. Existing implementation agent remains active, so no duplicate handoff or interruption.
 
+
 ## Reviewer PR76 phone image inspection
 
 Completed remaining five unique phone images individually:048 acceptance recipient/sender,049 welcome sender/recipient,050 recovered recipient, following four previously inspected representatives. All11new phone macOS images at ee86a333 are covered by nine exact SHA256 groups in /tmp/cluster-pr76-review/phone-index.json. Invitation acceptance and full welcome text remain readable, fixed composer/actions contained, outsider images contain no room. Recipient049 has a partially visible non-focal Mark loaded messages read button at the scrolling boundary;050 shows it fully within scroll content, not a fixed-rail collision. Approve these11exact-source phone regression references only. Desktop/large22 and Linux remain unreviewed. Current54/55 application and strict jobs independently polled and remain pending;53 agent active in context compaction, not interrupted.
+
 
 ## Reviewer PR76 desktop image inspection
 
 Independently extracted11new desktop and11large committed macOS originals from ee86a333, without modification, with SHA256 group indexes under/tmp/cluster-pr76-review. Viewed all9 desktop representatives individually, covering11desktop images. Full future-only disclosure, acceptance actions, sender/recipient welcome, recovered history and outsider empty directory remain readable/contained. Pending-invitation non-focal Close conversation is at the scrolling boundary; current invitation disclosure and fixed actions are visible. Approve these11exact-source desktop regression references only. Combined approved76newmacOS count33/44; large11 still awaiting inspection, Linux not approved. No production change or CI claim follows.
 
+
 ## Reviewer PR76 large image inspection completed
 
 Viewed nine unique large representatives individually, covering all11new macOS large images at ee86a333255477d6237620071cffba28691126c5. Exact unchanged originals and SHA256 groups at/tmp/cluster-pr76-review/large and large-index.json. Invitation scope/disclosure, recipient acceptance, sender and recipient welcome, restored authorized boundary, outsider empty directory and fixed actions are contained. No new composition defect found. Originals3840x2160 were displayed2048x1152; this is composition inspection, not native-pixel typography certification. Approve these11exact-source macOS regression references, completing44/44newPR76macOS images across four sizes. Linux evidence remains separate and unapproved. Existing53investigation active and54/55checks pending on independent poll; no duplicate CI launched.
+
 
 ## Reviewer PR53 bounded layer experiment audit
 
 Read exact3ec9a3abe5b2a5774762b821245831debc5c219d production delta, workflow, both renderer dispatchers, three-journey collector and request validator. Only production change is short identity-intro translateZ(0); no baseline, assertion, retry or timeout relaxation. Collector requires exactly3existing short tests across3files and retains actual emulator/backend journeys. Independently ran all4dispatch/request tests in established Nix:4passed. This validates request routing, not browser stability. Exact request executor f22496873beb3c663cf953af39b241044e77a386 has live GitHub run40157330125. Retain this single run and review its outputs before any promotion. Workflow display name still says PR52 leading in API despite new PR53 source title; executor binding, not display label, identifies evidence.
 
+
 ## Reviewer handoff — completed76 and bounded53 audit
 
 Reviewer: completed PR76 all44 new macOS baselines (11 each phone/desktop/short/large) by independent inspection with SHA groups; exact scope and resize limitations recorded in main meta-prompts.md. No Linux approval. Independently read3ec9a3ab layer experiment and ran all4dispatcher/request tests in Nix, allpass. Confirmed exactf2249687 run40157330125/job121061393688 live; no duplicate run. Continue53priority and review retained outputs before promotion. Reconcile new reviewer entries and attributed handoff into committed/pushed logs at next safe checkpoint; no merge requested.
+
 
 ## Reviewer PR77 route-discard review
 
@@ -4536,13 +4615,16 @@ Independently inspected five committed macOS phone owner images016/017/019/020/0
 
 Historical strict39757918568/job119754528265 totals110passed62failed8skipped across4cohorts; phone1066/259/273pixel differences plus inherited missing references remain. Generation119754528452 explicitly no files/artifacts despite success. Application119754527000, docs119754528197 and publication119760521225 passed. Logs/tmp/cluster-pr77-{failed,generate}.log. PR53bounded40157330125/job121061393688 confirmedlive, exactrequestvalidation underway; no duplicate run. Agent reconciled preceding logs in pushed2da4d9e3 before latest77entry.
 
+
 ## Reviewer PR77 discard/reopen remaining view inspection
 
 Independently inspected12desktop/short/large discard020 and reopen021 originals through nine exactSHA256 representatives, plus both identical phone independent-marshal020/021 via one representative(590958fb05fc5dd75cdcb69e52954a0e4cae7ca9593c3aba4f7b8da5d3c07b7b). Extracted unchanged from e40a3d54 into/tmp/cluster-pr77-review; indexes{desktop,short,large}-discard-index.json. All16new discard/reopen views are now independently inspected including earlier two phone owner views. Confirmation/focused search, disabled send afterdiscard, restored new route and uninvolved commander empty orders remain readable/contained. Shortnon-focal explanatory content continues in bounded scrolling; no focal/action collision. Large3840x2160 inspected at displayed2048x1152composition resolution. Approve these14additional exact-source macOS references; together with earlier fivephone includes16newviews plus3changedphone routeviews. Remaining changed routeviews/inheritedrenumbered applicability and Linux are not approved here. PR53run40157330125 active realjourney step,54/55exact/candidate jobs live; no restart.
 
+
 ## Reviewer handoff — PR53 observation completed
 
 Reviewer: exact bounded40157330125/job121061393688 nowSUCCESS, independently confirmed. Resume53: retrieve retained candidate evidence once, share local artifact root/source metadata for my independent image review, assess all three journeys and actual changes before any promotion. Do not treat candidate success as strict acceptance. Current54/55 strict and candidate jobs stilllive; no rerun. Mainmeta also contains77code and scoped image review awaiting reconciliation.
+
 
 ## Reviewer PR53 Linux layer candidates independently inspected
 
@@ -4550,13 +4632,16 @@ Read successful40157330125/job121061393688 log: exact3tests/3files,3passed44.8s,
 
 Independent Nix sharp rawRGBA comparison of all13pairs saved/tmp/cluster-pr53-layer-independent-pixels.json proves every changed pixel lies solely in intro sentence: x583–1012,y289–305 normally; validation003/004/005 y268–284(error/feedback layout); validation006/session013 y289–304. Counts2560/2573/1597 vary by predecessor raster. No other pixels changed. Approve these13exact-source candidate PNGs for regression reference promotion with corresponding production layer change;13unchanged references remain untouched. This is image approval, not proof of cross-run stability or full strict acceptance. Other short identity journeys impacted by CSS require reviewed evidence if they differ.
 
+
 ## Reviewer handoff — PR53 candidate image approval
 
 Reviewer: independently inspected all8unique changed SHA representatives covering13changedfiles in26Linux candidates. Independent rawRGBA bounds prove onlyintrotextchanged; full index and bounds at/tmp/cluster-pr53-layer-independent-{index,pixels}.json. Approve those13exact candidate PNGs with production layer change; retain13identical references. Proceed to scoped promotion/current strict verification, recording source and remaining cross-run uncertainty. Other short identity frames may also change from CSS: review any newly generated differences before approval, do not copy failed output blindly. Mainmeta records approval details and latest77review. No duplicate generation/merge.
 
+
 ## Reviewer PR53 published reference verification
 
 Independently verified all26 committed PNG hashes at cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1 against the inspected candidate index: all match, exactly13 changed and13 retained. Production diff remains the scoped short identity paragraph layer fix. PR52 allfive checks independently confirmed passing. PR53 strict40157944454/job121063240955 and application40157944328/job121063240737 pending; documentation passed. PR54/55 strict/application remain pending. No new baseline approval, job dispatch or merge. Human clarification remains recorded verbatim; inspection precedes approval.
+
 
 ## Reviewer PR77 changed route image inspection completed
 
@@ -4564,15 +4649,18 @@ Completed independent inspection of remaining12 changed route images016/017/018/
 
 Current PR53/54/55 strict job APIs confirm in_progress at Exact verification, handles121063240955/121056527973/121058033084 respectively. Existing jobs retained without duplicate launches. Previous goal turn completed published53 hash audit; this turn completes scoped77 image review and verifies live CI wait.
 
+
 ## Reviewer PR78 code and phone help inspection
 
 Read full production RouteRules82-line component, FleetRoute integration and132-line story additions at a2d0d2fcd747b91cf002c03ae8b2b7f6d2da26d8 against e40a3d54. Shared range/speed/waypoint rules agree with travel preview; native disclosure, bounded scrolling, keyboard open/close, preserved draft/full canonical equality and private peer projections remain asserted. No new definite code defect; historical local pass is not Linux acceptance. Historical strict39761461366/job119766389502 failed; application119766389314/docs119766388993/publication119767160220 passed, generation119766389212 green not yet inspected for artifacts.
 
 Extracted24newhelp macOS originals unchanged into/tmp/cluster-pr78-review with SHA256 index. Individually inspected phone owner020/021/022: full focal rule paragraphs and fixed action rail readable, focused disclosure/send contained, draft preserved. Three phone independent-marshal images share SHA590958fb05fc5dd75cdcb69e52954a0e4cae7ca9593c3aba4f7b8da5d3c07b7b, exactly the previously independently inspected PR77 peer image. Approve these6exact phone help references only. Remaining18newhelp images,33other changed route frames and Linux are unapproved here. PR53-55 existing gates remain live; no new generation or implementation requested.
 
+
 ## Reviewer PR78 desktop and short help inspection
 
 Individually viewed owner020/021/022 and peer020 in each desktop/short viewport from a2d0d2fc originals at/tmp/cluster-pr78-review. Hash audit confirms allthree peer frames per viewport identical: short6c771b111940b8e8cc7b99659aec8205e66c7c5960b16680cce44ed91aef12f9, desktopf3367e4381abb82f1eca1f0b1c4fe0ae462de57ed5bd503d9f67d1951415a159. Approve these12 exact-source macOS help references. Open reading initially clips subsequent scroll content, while021 exposes complete final arrival paragraph above fixed rail. Keyboard return retains route and contained Send focus. No new collision or visual defect found. Total18of24 newhelp images independently approved;6large,33other route changes and Linux remain unapproved here. Latest checks53/54/55 still pending at existing handles.
+
 
 ## Reviewer PR78 large help inspection and historical CI classification
 
@@ -4580,9 +4668,11 @@ Individually viewed allthree large owner020/021/022 and peer020 originals at a2d
 
 Retrieved full historical strict39761461366/job119766389502 and generation119766389212 logs into/tmp/cluster-pr78-{failed,generate}.log. Generation explicitly found no files/artifacts despite green status. Strict includes inherited identity1994pixel difference and missing references; generation success does not provide new Linux candidates. Current53/54/55 checks remain pending on existing handles; no restart or merge.
 
+
 ## Reviewer PR54 actionable application failure and handoff
 
 Reviewer: actionable current PR54 application failure40155701633/job121056527917 at17915680,35passed1failed3skipped. Full log /tmp/cluster-pr54-current-application-failed.log. Independently confirmed credit-offers.spec.ts173 still expects Awaiting acknowledgement… while reviewed CreditOffers.svelte287/303/317 now renders Awaiting receipt. Fix the exact pending-button locator, preserving disabled/focus/held-write/recovery/revision assertions. Check corresponding inherited55 test; validate in established Nix and propagate scoped correction through stack. Preserve live strict/candidate evidence before any superseding push; do not blindly rerun. PR53 remains priority for its own results. Mainmeta records finding plus completed24 PR78 help image approval (33 otherroute and Linux still open). Attribute/log/commit/push. No merge.
+
 
 ## Reviewer PR78 remaining-image inventory and phone route approval
 
@@ -4590,11 +4680,13 @@ Independently compared every committed macOS fleet-travel PNG at a2d0d2fc agains
 
 Individually viewed allfive changed phone route frames023discard/025accepted/026recovered/028traveling/030arrival. Discard acknowledgement and disabled send, accepted/recovered route state, traveling marker, arrival outcome and Plan another route remain readable/contained with closed Route rules disclosure. Approve these5exact-source macOS references, bringing reviewed PR78 changed/new set to29of57. Remaining28desktop/short/large changed route images and Linux unapproved. PR54 implementation agent is actively addressing independently diagnosed stale pending-button locator, preserving existing live jobs.
 
+
 ## Reviewer PR54 correction audit and PR78 short route images
 
 Independently read exact a2860b0c2fcca9d21e96abcc7c35eef48b7a0b97 published test diff and retained focused-pass.log. Only pending button exact name changes to Awaiting receipt; disabled/focus/recovery/payload/revision assertions remain. Focused Nix real-service mock-provider case passes1test23.0s with no retries; local validation is not current-head Linux green. Agent publishing through54/55 and retaining prior remote handles.
 
 Individually inspected eight changed short route images017/019/023/024/025/026/028/030 at a2d0d2fc in/tmp/cluster-pr78-review/changed/short. Discard acknowledgement, selected route, acceptance/recovery, traveling and arrival outcome/actions contained. Short023 search label partially above scroll boundary; input/focus and current acknowledgement fully visible, no fixed rail overlap. Approve these8exact-source macOS references, bringing PR78 changed/new approvals to37of57;20desktop/large route images and Linux remain unapproved.
+
 
 ## Reviewer PR54 strict classification and PR78 desktop approval
 
@@ -4602,13 +4694,16 @@ Independently retrieved full failed PR54 strict40155701632/job121056527973 log a
 
 Individually inspected all10changed desktop route images016/017/018/019/023/024/025/026/028/030 at a2d0d2fc, unchanged originals in/tmp/cluster-pr78-review/changed/desktop. Empty draft, selected/rejected/repaired routes, discard/focus, accepted/recovered/traveling and arrival outcomes remain readable and contained with closed help disclosure; no collision or new defect found. Approve these10exact-source macOS references. PR78 total47of57new/changed images independently approved;10large route images and Linux remain open.
 
+
 ## Reviewer PR78 large route inspection completed
 
 Completed independent viewing of all10changed large route originals016/017/018/019/023/024/025/026/028/030 from a2d0d2fcd747b91cf002c03ae8b2b7f6d2da26d8 under/tmp/cluster-pr78-review/changed/large. Reopened030arrival individually after earlier tool output truncation; it is now inspected. Draft, rejection/repair, discard, acceptance/recovery, traveling and resolved-arrival controls and acknowledgements are contained; no new collision found. Approve these10exact-source macOS references, completing57of57new/changed PR78 macOS images. Original3840x2160 displayed2048x1152 limits this to composition review. This does not approve Linux candidates or all historical files. PR53 current strict/application remain pending; implementation agent actively resolves54/55 prompt-history integration with regression verification. No interruption, duplicate dispatch, or merge.
 
+
 ## Reviewer PR54 parent integration verification
 
 Independently confirmed published97ac159196ec36c3208e7699830b45bedf3acff9 is mergeable and new required checks launched: application40159161854/job121066868236 and strict40159161775/job121066867823. Read complete checker/test delta: only verified ancestor archives from HEAD or compared parent qualify for exact retained structural LF; mutation rejection remains. Extracted immutable97ac1591 checker/tests/pre-commit hook to isolated temporary directory and ran Nix Node tests:16passed0failed8.98s. Initial mutable-worktree attempt collided with implementation agent's active55 merge and incomplete first isolated extraction lacked hook; neither is a published-code failure. Final complete immutable extraction passes. Agent continues55 parent integration; do not interrupt. PR53 jobs121063240955/121063240737 independently still in_progress at verification, not stalled by evidence available.
+
 
 ## Reviewer PR79 construction help first review
 
@@ -4616,11 +4711,13 @@ Read96-line ConstructionRules.svelte,13-line integration and140-line constructio
 
 Extracted five ordinary phone owner help originals unchanged to/tmp/cluster-pr79-review/phone with SHA256 index. Independently viewed four distinct hashes:011price,012reservation,013refund,015close;014outcomes exactly matches013 SHA7b8378c1cd39ac51b6100b514bbffaf774552c30fdd3bcd341c3492b03da39a7. Focal paragraphs fully readable across explicit scroll steps, fixed69-credit build commitment and131balance remain contained; closed disclosure focus visible. Approve these5exact-source macOS references only. Remaining help/changed construction images and Linux not approved. Historical79 strict39765757345/job119780668933 failed; application/docs/publication passed; generation success not yet checked for actual artifact. Current53/54 verification handles remain live;55 active history reconciliation remains with implementer.
 
+
 ## Reviewer PR79 all new help images inspected
 
 Extracted all40 new ordinary construction-help originals from30cf022a into/tmp/cluster-pr79-review/{phone,desktop,short,large}, with help-index.json full-file SHA256 mapping. Individually inspected all18 distinct hashes, including fivephone owner images from previous turn. Allfive peer images per viewport are byte-identical; owner013/014 identical for phone/desktop/short, largeowner011–014 identical. Approve remaining35 exact-source macOS help references, completing40of40 new help images. Relevant paragraphs, selected training camp,69-credit price/131balance, peer106/94commitment, keyboard return focus and fixed controls remain contained; no new collision found. Short firstprice view clips later non-focal completion paragraph, but subsequent explicit scroll views show it fully. Large3840x2160 originals displayed2048x1152, composition-review limit. Other144 intentionally changed construction frames and Linux remain unapproved.
 
 Also independently read shared/production.ts303–336 and rules JSON at sameSHA: dividends use pre-tick campaign.systems markets and marketFocus; new markets only affect later weights. Help copy agrees; price multiplier1.15 and fourbuild ticks agree with rules. Current55 parent integration published915bbee5; implementation agent retains live jobs and logs, no GitHub merge.
+
 
 ## Reviewer PR55 integration audit and continuation handoff
 
@@ -4628,11 +4725,13 @@ Independently read full915bbee5 checker/test delta against97ac1591, including ex
 
 Reviewer:54/55 integration independently reviewed; immutable55 prompt suite18passed. Continue green stack without restarting live53/54/55 jobs. Reconcile latest main meta entries (completed78 image review,79scoped40help approvals,54/55 independent audit) into attributed ledger and push. With55 published, recover parked56 staged tree c6552c6b0ec19845048daec71848195c18210b89 at/private/tmp/cluster-pr54-credit-review safely, integrate reviewed55 parent preserving exact prompt history, retain approved160construction references and prepare next current-head checks. Reuse fixed separator logic with meaningful regression verification if needed; no assertion/tolerance weakening or uninspected baselines. If53/54/55 produce actionable failures, prioritize those. No GitHub merge.
 
+
 ## Reviewer PR54 integrated policy failure and priority handoff
 
 Current97ac1591 PR54 application40159161854/job121066868236 and strict40159161775/job121066867823 failed before browser journeys. Independently retrieved full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Both fail check-story-policy.test.mjs49: credit-offers.spec.ts exact legacy manifest hash no longer matches after one-line Awaiting receipt locator repair. Svelte check0errors0warnings and preceding unit tests pass; this is not fresh image evidence. Generator also failed. Policy manifest at docs/testing/legacy-browser-tests.json still records17a239784195f389ce144229cf2d4d9da3fe3535edc8d4912909761097f21292. Read checker and guide: changed procedural specs require illustrated migration; no silent extension. Independently confirmed code correction preserves behavior, but focused case omitted policy gate and did not establish full readiness.
 
 Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.
+
 
 ## Reviewer PR79 changed phone construction inspection
 
@@ -4640,15 +4739,18 @@ Independently compared Git PNG object IDs for both construction stories at30cf02
 
 Current53strict40157944454/job121063240955 and application40157944328/job121063240737 confirmed pending;55 new jobs pending. Implementation agent acknowledged54policy diagnosis and is comparing procedural/illustrated coverage, while preserving56checkpoint. Previous turn made concrete progress by identifying new54gate failure; this turn completes34phone image reviews and confirms live work.
 
+
 ## Reviewer PR54 explicit maintenance exception audit
 
 Read pending POLICY_MAINTENANCE.md, manifest and added source-equivalence test in/private/tmp/cluster-pr53-green. Narrow documented exception preserves procedural mock/managed-key coverage not fully represented by current illustrated mock story. Independently verified with Nix Python: exactly one Awaiting receipt selector; reversing that occurrence yields byte-for-byte original17915680 credit-offers.spec.ts and frozen17a23978 SHA; current full hash b53b2b5b matches manifest. Every other legacy manifest entry byte-equivalent after JSON parse. Checker unchanged. Added policy test pins oldhash/from/to and verifies exact reversal; this retains assertion/setup/timeouts/skips rather than weakening them. Approve this exact scoped maintenance exception for publication with policy gate verification; it does not authorize broader exemptions or claim completed migration. Pending exact-head remote checks remain necessary.
+
 
 ## Reviewer PR54/55 published policy audit and PR79 ordinary short images
 
 Independently confirmed54published9a712a9bebdcd7003a34bc2b9ca255a9f464e4bc and55f6b2cf4c14c1331c43cf422299c9a1a7b0bd3db9. Read committed policy-maintenance-pass.log:12tests passed, explicit policy passed. Exact gitdiff between bothheads for policy checker/test, legacy manifest and credit-offers.spec.ts is empty. Scope remains reviewed one-label compatibility correction with exact-source proof; no production/screenshot changes. New54app40159642904/job121068319186 and strict40159642903/job121068319289 live;53original jobs remain pending.
 
 Individually inspected9distinct ordinary-short construction representatives from30cf022a, covering15changedfiles by exact Gitblob/SHA256 grouping in/tmp/cluster-pr79-review/changed-index.json:010owner/peer,016owner,017owner,019owner/peer,023owner/peer,024owner. Correct balances, reserve/cancel controls, completed/refunded outcome and independent-player states remain readable/contained. Reload/settled views clip the non-focal closed help top at scrollboundary but focalqueue/outcome/actionrail visible. Approve these15exact-source macOS references. Total89of184new/changedPR79macOS approved; remaining95changed recoveryshort/desktop/large plusLinux notapproved. Extracted recoveryshort originals await inspection.
+
 
 ## Reviewer PR54 current documentation failure
 
@@ -4660,29 +4762,36 @@ Reviewer: new actionable54documentation failure40159642901/job121068319226 on9a7
 
 Instrumented only a disposable checker at/tmp/pr54-history-diagnostic-0eq0koiw; actual immutable base comparison matches74of75records, then fails final parent Layer approval. Parent record ends one LF; current canonical matching record ends three LFs. Content otherwise exact. This isolates the extra structural separator created by later append; it is not missing request prose. Diagnostic source is not production modification. Preserve original request bytes while explicitly accounting for verified structural separators; do not broad trim.
 
+
 ## Reviewer PR79 recovery short image inspection
 
 Individually viewed11distinct short recovery representatives at30cf022a, covering19changedfiles in changed-index.json:010owner/peer,012pendingowner,013recoveredowner,015reservedowner,016reloadowner,018completedowner/peer,022cancelledowner/peer,023settledreloadowner. Exact Gitblob/SHA256 groups cover peer duplicates; originals under/tmp/cluster-pr79-review/changed/live-construction-recovery/short. Approve these19exact-source macOS references. Pending focus, disabled/retry controls, acceptedqueue, settled outcome/refund and peer balances remain contained and readable; no new focal overlap. CombinedPR79review now108of184new/changedmacOS;76desktop/large changed images andLinux remain unapproved. Current55documentation40159684487/job121068435274passed, while54actual-base-history repair remains implementation priority and53/54/55application/storyjobs live. No duplicate dispatch or merge.
+
 
 ## Reviewer PR54 append repair independently verified
 
 Read immutable9306f80e6edb63e3bab84a4925ad9f1cbaafaf76 checker/test delta. Committed append-only transitions prove permitted extra separators; no blanket whitespace trim. Independently exported checker/tests/hook into isolated Git repo /tmp/pr54-append-review-cu9q4e4j with readonly object alternates and exact HEAD/index. Nix Node17tests passed0failed23.9s and actual --base cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1 passed. Remote documentation40160073235/job121069582058 now passes1m59s. Application and strict still pending, not full-green claim. Agent propagated55to7eb4cc38 and pushed conversation ledger5eed55e2; no duplicate dispatch or merge.
 
+
 ## Reviewer PR79 ordinary desktop images inspected
 
 Completed viewing11distinct desktop ordinary construction originals at30cf022a, covering17changedfiles by changed-index.json exact Gitblob/SHA256 groups. Includes010owner/peer (prior turn),016reserve,017reload,019completionowner/peer,020reserve-cancellable-base,021cancel,023cancelledowner/peer,024settledreload. Previously truncated016/017/019 reopened individually this turn. Queue, cancellation pending, refunded69credits, balances, disabled affordability and acknowledgement/focus remain readable and contained; no new focal collision. Approve these17exact-source macOS references, bringing PR79 to125of184new/changedmacOS approved. Remaining59desktop-recovery/large images andLinux unapproved. Originals unchanged under/tmp/cluster-pr79-review/changed/live-construction-ordinary/desktop.
+
 
 ## Reviewer PR53 current verification failure handoff
 
 Reviewer: PR53 current cd7ed5fd strict run40157944454/job121063240955 Exact verification step FAILED at03:59:39Z; job still uploading artifact, logs endpoint404 while active. Prioritize diagnosis of this earliest stack failure as soon as logs/artifact available; preserve current application run, do not regenerate or approve unseen images. Independently verified54 9306f80e exact base and17fixtures; remote docs now green. Main meta has new independent54audit and17ordinary desktop PR79image approvals (125/184total); reconcile attributed logs and push with next step. No GitHub merge.
 
+
 ## Reviewer PR53 seven remaining short identity images inspected
 
 Reviewer: independently downloaded only21 actual/expected/diff PNGs from artifact12586456325 via bounded ranges (49,404,559 of1,601,297,039bytes) to/tmp/cluster-pr53-layer-failure-review. Full-file hashes indexed/tmp/cluster-pr53-layer-failure-index.json. Seven failures comprise4distinct actual/diff groups: commander-identity, invitation, conflict and pending-retry are byte-identical actual/expected/diff; entry-readiness, receipt and session-cancelled are distinct. Individually viewed all4actual and4diff representatives plus commander expected. Visible differences confined to intro sentence text raster; typography readable, form portraits/focus/action controls contained, no new layout defect. Approve all7 exact actual PNGs for scoped baseline update, verify source/head/provenance and hashes before commit. Do not alter tolerance/assertions. Existing three corrected journey cohorts passed integrated run; full rerun still required after scoped update. Log109passed7failed8skipped34.0m from/tmp/cluster-pr53-layer-current.log. Prioritize53 then propagate current parent. No GitHub merge.
 
+
 ## Reviewer PR79 desktop recovery image inspection completed
 
 Individually viewed13distinct desktop recovery originals at30cf022a covering21changedfiles by exact Gitblob/SHA256 grouping in changed-index.json:010owner/peer,012pending,013recovered,015reserve,016reload,018completedowner/peer,019reserve-cancellable,020cancel,022cancelledowner/peer,023settledreload. Pending receipt/retry, accepted queue, affordability, cancellation acknowledgement and settled69credit refund all readable and contained; no new focal collision. Approve these21exact-source macOS references, bringing PR79 total146of184new/changedmacOS. Remaining38large images andLinux unapproved. Originals unchanged under/tmp/cluster-pr79-review/changed/live-construction-recovery/desktop. PR53 seven inspected references now being applied by implementer; do not interrupt active work/compaction.
+
 
 ## Reviewer PR55 exact parent verification and initial PR79 large review
 
@@ -4692,9 +4801,11 @@ Extracted all38remaining PR79large changed originals into changed/{ordinary,reco
 
 Additional individually viewed ordinary-large017reload and019completed owner at30cf022a: queue/cancel, completed camp, balances and current action rail contained. Approve these2exact images with same3840-to2048composition limit. PR79now153of184new/changedmacOS approved;31large files andLinux remain. All large originals already extracted/indexed for next review.
 
+
 ## Reviewer PR53 seven-image publication verified
 
 Independently verified immutable3be6f22d17a67960762892fec532a3005862d2fa versuscd7ed5fd: exactly7PNG changes, each SHA256 equals independently inspected current-failure actual in/tmp/cluster-pr53-layer-failure-index.json. Other files onlyPROMPTS.md plus REVIEW/index/originalfailurelog; no production/testthreshold/asserter changes. Required current-head checks launched: strict40160719097/job121071498782, application40160719083/job121071498372, documentation40160719116/job121071498531, publication40160719087/job121071498622; all pending at observation. Older application121063240737 confirmed live earlier; no restart or cancellation requested. Agent actively preparing54parent propagation and reconciling logs.
+
 
 ## Reviewer current54/55 propagation audit and56 continuation
 
@@ -4702,11 +4813,13 @@ Reviewer: independently verified published54 f8fa7f5f and55 acc0b414: seven imag
 
 Independent54check isolated at/tmp/pr54-seven-review-w2zwk7rz,55at/tmp/pr55-seven-review-5xia6yxe. Both exact seven-image hashes and parent validation pass. PR79ordinary-large remaining6representatives independently viewed this turn:019completedpeer,020reservebase,021cancel,023cancelledowner/peer,024settledreload. These cover10files by knownSHA grouping. All acknowledgements, queues/refunds, affordability and fixed actions contained. Approve exact10macOS files, completing all17ordinarylarge. PR79total163of184new/changedmacOS approved;21recoverylarge (13distinct originals already extracted) plusLinux remain. Large3840x2160 displayed2048x1152 composition limit.
 
+
 ## Reviewer PR79 large recovery inspection completed
 
 Completed individual inspection of all13 distinct large recovery originals at30cf022a355fb2b62c5eb0f7d7d00411d2c87228, covering21 changed files by the exact Gitblob/SHA256 groups in /tmp/cluster-pr79-review/changed-index.json. Includes010owner/peer,012pending,013recovered,015reserve,016reload,018completedowner/peer,019reserve-cancellable,020cancel,022cancelledowner/peer,023settledreload. The last four were opened individually after continuation. Queue, pending cancellation, settled69credit refund, independent balances, disabled affordability and action controls remain contained with no new visible collision. Approve these21 exact-source macOS references; combined PR79 now184/184 new/changed macOS images inspected and approved. This does not approve Linux candidates or establish full PR green. Large3840x2160 originals displayed2048x1152, limiting inspection to composition. Original files unchanged.
 
 Current53/54/55 documentation checks all pass; application and strict visual checks remain pending. Agent actively integrated56 at local99c40f39 after21 prompt-history tests passed. No duplicate handoff or interruption issued. Reconcile this review entry into attributed implementation history and push logs with the next publication.
+
 
 ## Reviewer PR56 publication and next stack handoff
 
@@ -4716,6 +4829,7 @@ Reviewer: PR56 published99c40f39bc183fb302c5d76ad50f0d76e6e890fe verified remote
 
 Exported immutable99c40f39 checker/tests/hook into isolated Git HEAD/index with read-only object alternates. Nix Node21tests passed0failed12.89s and actual --base acc0b41435c2c5dddacd83518e5c9cb46007fd81 passed. Independently compared all160 committed construction PNG SHA256 hashes against previously inspected originals under/tmp/cluster-pr56-reviewer-candidates/test-results/stories: all exact matches. No full-CI green claim. PR57 handoff above delivered once via tmux; no interruption.
 
+
 ## Reviewer PR80 initial independent code and phone review
 
 Inspected immutable326de8ba9bd437bba7de86c87995587a59fa4e9d against79. Read MarketRules76lines and MarketFocus integration, emulator-only construction/focus clock expansion and regression tests, and market help journey assertions for read-only canonical/private state, invalid allocation, authenticated accepted receipt, reload without new command, applied order and own-dividend exclusion. Help remains explicitly proposed rules; production dividend weights in shared/production.ts use beginning-of-tick markets/focus, exclude own completions and retain split-control escrow. Clock preserves payload/user/command identity and scopes demo emulator with fail-closed signatures; independent clock tests run from exported immutable files in/tmp/cluster-pr80-review.
@@ -4724,9 +4838,11 @@ Inventoried PNG Gitobjects against79:49files have novel blobs,45distinct image h
 
 PR80 clock verification: initial isolated export omitted admission-clock.mjs and failed module resolution before executing tests. Exported that unchanged dependency from same326de8ba; rerun passes2tests0failed50ms. This is a reviewer export omission, not a production defect or CI result.
 
+
 ## Human progress question
 
 have we made any progress?
+
 
 ## Reviewer PR53 publication failure priority
 
@@ -4738,11 +4854,13 @@ Independent API diagnosis: Pages latest build1312331414 status building commitd7
 
 Confirmed gh-pages/pr53/revision.json via GitHub contents API contains exact current source/build3be6f22d, published04:09:56Z by40160719087. Correct payload is committed; deployment remains queued. An initial decode command referenced absent base64 executable; repeated within established Nix Python successfully, no software installed.
 
+
 ## Reviewer PR80 short-screen inspection and held background acknowledgement
 
 Viewed all12 distinct novel short originals at326de8ba from new-index.json:016–025 market workflow,031applied,032returnaftersettlement. Focal help paragraphs, allocation totals, accepted/applied tick and action rail are readable; scrolled non-focal sections clip at their bounded edges. However024-accept-market-focus-1-builder-envoy.png exposes clipped duplicate acceptance text behind the market panel aroundy98, including visible trailing `ders.` right of panelx644. Other market views expose small background notice fragments at left edge. HOLD the11short market images pending correction/review of this visible defect; approve only032return-after-focus-settlement construction image. CombinedPR80 approved14novel exact-source macOS images (13phone+1short),11short held,24novel desktop/large files uninspected. NoLinuxapproval.
 
 Source evidence: Galaxy.svelte at326de8ba lines907–925 renders global acknowledgement whenever !roster and not conversation command. It sets inert for economy but does not hide it; MarketFocus.svelte214 separately renders sameFeedback in its action rail. Inert removes interaction, not painting. When reaching this change, preserve accessible authoritative acknowledgement in the active instrument and prevent behind-panel fragments; add meaningful visible containment/nonduplication evidence, regenerate affected captures and inspect before approval. Do not change thresholds or simply approve broken pixels. Earlier53publication/strict remains priority; no immediate interruption of57history repair.
+
 
 ## Reviewer PR57 integration independently verified
 
@@ -4750,9 +4868,11 @@ Remote57head ede7e84f7c479f5fe1e42276495daf1e06ea689c published, required checks
 
 Reviewer handoff: independently verified57ede7e84f22tests, actual56base and all60imagehashes. Continue58 integration from current57 with inspected102Linuxreferences only after source/renderer/hash checks; preserve existing gates and one queued57short run40161761149. Do not start duplicate generation. Earlier failure/new output takes precedence. Latest mainmeta includes PR80visible background acknowledgement HOLD11short images; reconcile attributed review and push logs. No merge.
 
+
 ## Reviewer PR80 desktop inspection completed
 
 Viewed all11 distinct novel desktop originals at326de8ba:016open,017/018/019rules (020 shares019 exactblob),021close,022invalid,023draft,024accepted,025recovered,031applied,032returnaftersettlement. Covers12 novel-file references in new-index.json. Same global acknowledgement defect confirmed:024 exposes clipped trailing `ders.` right of marketpanel nearx644y98; earlier states show small left-edge notice fragments. HOLD11desktop market references pending same fix; approve only032constructionreturn whose quote80/balance65 and actionrail remain readable/contained. Accepted receipt, help and applied focus within foreground panel otherwise readable. PR80current totals:15approved novel macOS files,22held short/desktop market files,12large novel references uninspected. All45distinct originals extracted unchanged; noLinuxapproval. Agent58integration healthy;53live tests preserved.
+
 
 ## Reviewer PR58 publication verified and PR80 large hold
 
@@ -4762,11 +4882,13 @@ Individually viewed PR80large024accept at326de8ba: duplicate acknowledgement is 
 
 Reviewer handoff:58independent exact-parent/hashes verified. Continue59 from current58 but preserve known HOLD desktop017-released-draft-1-fleet-marshal.png in /tmp/cluster-pr59-reviewer-candidates: focus outline overlaps status text by6px (textbottom930,outline924); previous scopedCSS missed childFeedback. Fix layout at source and obtain new inspected capture; do not promote that held image. Other65Linuxreferences previously inspected require current-source validation. Missing short remains realgeneration/review work. Keep earlier gates and queued57short/53Pages handles; prioritize completed failures. Latest PR80hold expands to23short/desktop/large references as recordedmainmeta. Reconcile logs and push; no merge.
 
+
 ## Reviewer PR80 novel-image inspection complete
 
 Individually viewed remaining8large representatives:016open,017rules(covers017–020exactblob),021close,022invalid,023draft,025recovered,031applied,032constructionreturn. Together with prior024accept, all9large distinct originals/12novelfiles inspected. HOLD11large market references for background acknowledgement composition defect; approve032constructionreturn with completedcamp,80quote65balance/actionrailcontained. Large3840x2160displayed2048x1152limitsreviewtocomposition; foregroundfacts contained, backgroundnotificationlineclippedbehindpanel visible.
 
 All49novelPR80macOSPNGfiles (45distinctSHA) now inspected.16approved (13phone+3constructionreturns),33heldmarket desktop/short/large. No unseen novel image approval, noLinuxapproval. Reused predecessorblobfiles remain existing79review, not newly generated approval. Fix duplicated global acknowledgement painting when economy instrument active, retain active instrument accessible status, then inspect regenerated affectedimages. Source326de8ba9bd437bba7de86c87995587a59fa4e9d,index/tmp/cluster-pr80-review/new-index.json.
+
 
 ## Reviewer PR59 corrected released-draft inspection
 
@@ -4780,27 +4902,33 @@ large: 835fa9c6fe58add00ff57ee363e4940a2cd0a39482fd965b5827440d6f210667
 
 53strict40160719097/job121071498782 live exact verification; Pages40160884684/job121072006435 queued no steps. Preserve handles. Agent published59correction92b9b88f and preparing one source-bound Linux generation; healthy work not interrupted. Reconcile this review into attributed history and push logs.
 
+
 ## Reviewer PR59 complete corrected short capture review
 
 Individually inspected all13 distinct macOS short originals covering22PNGfiles at /tmp/cluster-pr59-clearance-4fb090d6/stories/live-fleet-cancellation/short/darwin-arm64. Includes010invalid/peer,011complement,012accepted,013reload,014confirmation,015keep,016cancelled,017released-draft(previous turn),018reloadcancelled,020owner/peer after tick,021return. SHA256 index /tmp/cluster-pr59-short-independent-review.json; peer010–018 identical c581df03..., peer020/021 identical0f248f20..., proven exact-byte reuse. All22 approved for this source macOS capture set. Footer acknowledgements, validation and confirmation controls contained; focus clears status. Nonfocal New fleet clips at scroll boundary in012/014 as expected, while confirmation/action rail stays fully visible. Reload has no stale acknowledgement; returned system shows21fighters/21infantry and zero fleets. This does not approve Linux references.
 
 Current59published92b9b88f required checks queued;53–55application/strict still live. Agent preparing one Linux generation, not interrupted. Reconcile review into attributed prompt history and push logs with next work.
 
+
 ## Reviewer next-stack handoff after59
 
 Reviewer: independent review confirms corrected released-draft capture at all four sizes and all22 corrected short macOS images (13distinct); exact hashes and scope recorded in latest main meta-prompts.md. Linux remains unapproved pending single run40162403768; preserve it and57short/53Pages/live strict handles. Continue PR60 from current59 using previously inspected96Linux images only after exact current-source/renderer/hash validation; shared SystemFleets footer change may invalidate them, so regenerate affected captures once if necessary and inspect before promotion. Prioritize completed earlier failures. Reconcile new mainmeta review entries into attributed PROMPTS/PROMPT_WORK and push logs. No merge.
+
 
 ## Reviewer PR59 corrected phone review complete
 
 Individually viewed all13 distinct phone captures covering22files from retained4fb090d6 originals. Includes owner010–018,020,021 and peer010/020; other peer files exact-hash matches, verified independently. All22 macOS phone images approved, SHA256 index /tmp/cluster-pr59-phone-independent-review.json. Confirmation wraps within fixed action rail, accepted/reserved facts readable, cancelled status clear of buttons, reload has no stale notice, system return shows21/21forces and zero fleets. Nonfocal scroll-boundary clipping remains expected. Combined corrected cancellation set46/88files inspected/approved:22phone+22short+desktop017+large017. Remaining42desktop/large require inspection; Linux remains unapproved. Current53app40160719083/strict40160719097 live; Pages40160884684 and59generation40162403768 queued. Agent acknowledged next60handoff and actively integrating without interruption. Reconcile and push review logs with next publication.
 
+
 ## Reviewer PR59 corrected desktop review complete
 
 Individually inspected all13 distinct desktop originals covering22files, same retained4fb090d6 root. All owner010–018,020,021 plus peer010/020 viewed; exact SHA256 grouping confirms other peer files duplicate inspected originals. Index /tmp/cluster-pr59-desktop-independent-review.json. Approve all22 exact macOS desktop captures: validation, accepted reservation, confirmation, keep/cancel, released draft focus, reload and post-tick/system return contained and readable. No action/status overlap. Combined corrected set67/88 approved (all22 eachphone/short/desktop pluslarge017); remaining21large references not yet inspected. No Linux approval or greenCIclaim. Reconcile/push with attributed logs.
 
+
 ## Reviewer PR59 all corrected local captures inspected
 
 Completed large-screen review:13 distinct originals covering22PNGfiles, all owner010–018,020,021 plus peer010/020 individually viewed, remaining peer files verified exact-byte matches. Index /tmp/cluster-pr59-large-independent-review.json. Approve22exact macOS large captures, with explicit3840x2160to2048x1152 display/composition limitation. Fixed footer validation/receipt/confirmation and focused released-draft controls contained; system return facts/actions intact. All88corrected local macOS captures now inspected and approved, comprising52distinct images across four viewports. No Linux approval;59generation40162403768 still queued at latest API check.53application/strict still live and Pages40160884684queued. Agent60published integrationdf86305f and actively generating affected cargo journey; no interruption. Reconcile this completed review into attributed history and push logs.
+
 
 ## Reviewer PR60 independent verification and next handoff
 
@@ -4808,15 +4936,18 @@ Reviewer: independently verified PR60 df86305f exact parent92b9b88f in isolated 
 
 Independent checker executed via established Nix in /tmp/nix-shell.RykUu4/pr60-independent-tow6m3s4, exit0. Initial broad merge-stat output truncated, not treated as full review; focused parent delta established no new production/checker changes and cargo spec matches original.
 
+
 ## Reviewer PR81 initial independent review
 
 Read4677fdb6d459824af7149a9206bb42661d6fb978 production delta against326de8ba: route-owned account/campaign-scoped market allocations bound through Galaxy/CampaignEconomy/MarketFocus, refresh untouched authority while preserving edited/blank fields, clear on account/developer-access/membership/private-view loss. Membership callback advances selection fence and stops view to prevent stale decrypted callback restoration; developerAccess result is session fenced. Added live story leaves blank partial field, traverses economy/galaxy by keyboard with normal/reduced motion, checks100camp/blankmarket/150total and disabledApply plus pre-existing read-only canonical/private checks. Scope helper tests do not prove live revocation boundary; that evidence remains separate. No reducer/rule change. Initial assumed test pathsrc/lib/market-draft.test.ts absent; no tests executed or claimed.
 
 Inventoried immutable PNGblobs against80:10novelfiles/10distinct, extracted unchanged with SHA256 index/tmp/cluster-pr81-review/new-index.json. Individually viewed/approved3phone originals023partial,024restore,025validdraft: blank preserved,150overbudget disabled; valid100camp/zeros enablesApply, focus/action rail contained. Nonfocal scroll-boundary clipping expected. Remaining7desktop/large/short novelimages uninspected/unapproved. Existing80backgroundacknowledgement holds carry forward; no Linux approval.53app/strict remainlive, Pages/cargo generationqueued; agent61actively integrating, no interruption. Reconcile/push logs.
 
+
 ## Reviewer PR81 novel-image review complete
 
 Viewed remaining7novel originals at4677fdb6:desktop023/024/025,short023/024,large023/024. All retain visible clipped background text at left/top of market panel (and lower-left contact notice fragments). HOLD these7pending inherited80background-layer correction; foreground draft fields,150overbudget,disabledApply and valid100allocation/keyboardfocus contained. Large3840x2160displayed2048x1152 composition limit. All10novel images inspected,3phone approved7held; index/tmp/cluster-pr81-review/new-index.json. Reused80blobs retain previous holds, no blanketapproval orLinuxapproval.
+
 
 ## Reviewer PR61 verification and handoff
 
@@ -4824,11 +4955,13 @@ Reviewer: independently verified61 846122d972d8c649512425b3ab1522e74866d050 exac
 
 Independent Nix verification in/tmp/nix-shell.zlVgoX/pr61-independent-i0w4xgq6 exit0.
 
+
 ## Reviewer PR53 six later identity failures inspected
 
 Individually viewed all six actual/diff pairs from strict run40160719097 at3be6f22d; also viewed conflict expected original. Originals and exact SHA256 index: /tmp/cluster-pr53-second-failure-index.json, retained /tmp/cluster-pr53-second-failure-review. All six actual images approved for this exact Linux source capture: conflict002, invitation006, cancelled-confirmation005, receipt003, pending-retry002, commander003. Visible diff markings are confined to the intro sentence; portraits, saved acknowledgement, draft/input focus, close/sign-out/save controls remain contained and readable. No new layout defect observed. This approves these six exact images only, not unseen later journey frames or a green check. Earlier truncated tool output was explicitly discarded; every actual/diff was reopened in bounded nontruncated calls this turn.
 
 Reviewer handoff: independently inspected and approve the six exact later53actuals indexed /tmp/cluster-pr53-second-failure-index.json; findings above. Continue your complete six-journey generation and inspect every changed later frame before promotion, retaining thresholds/assertions. Keep53 as first failing PR priority and recover its publication gate against exact served revision. Reconcile this review into reviewer-attributed PROMPTS/PROMPT_WORK and commit/push logs with repair. No merge.
+
 
 ## Reviewer PR59 corrected Linux capture review complete
 
@@ -4836,11 +4969,13 @@ Independently inspected corrected artifact12587017318 from run40162403768. Enume
 
 Reviewer handoff: all88 corrected59Linux originals visually approved as above, exact SHA groups /tmp/cluster-pr59-linux-new-review.json and original artifact retained. Resolve dirty:true provenance against requested source92b9b88f plus known generation-only changes; verify actual story/production/renderer match before promoting. With provenance established, commit approved references to59 and propagate through60/61 while preserving their current generation handles. Continue priority53 when40163401924 completes and recover exact-served-revision publication. Reconcile review into attributed logs and push. No duplicate runs, threshold weakening, or merges.
 
+
 ## Reviewer PR59 generation provenance and guard checks
 
 Independently compared requested target92b9b88f to generation sourced5d412eb: only bounded cancellation request/workflow/launcher additions and continuation log differ; no production, story, dependency or renderer configuration changes. Executor5bd6682b request evidence binds target92b9b88f, sourced5d412eb, run40162403768 attempt1. Read clean-checkout request validator and complete candidate launcher: exactly four existing cancellation cases, all viewports, retries0, update-snapshots=none, real emulator execution, explicit generate mode. Read short manifest: passed, specSHA3043bb7b..., pinnedrenderer digest824f1a78..., browser149.0.7827.0/playwright1.61.1, reducedmotion, dirty:true retained. Dirty attribution remains implementer verification item; no false clean claim.
 
 Independently ran four request/actual launcher dispatch tests under established Nix using immutable source export in /tmp/nix-shell.4cVwRG/pr59-independent-guards-ivf4s2uf:4passed100.7ms. Initial isolated export missed two launcher files and failed ENOENT; corrected complete fixture passed, no repository test defect. Agent actively resolving provenance and promotion; no duplicate prompt or interruption. PR53application still live; complete candidate40163401924 remains queued at latest verified check.
+
 
 ## Reviewer PR59 committed-reference verification and PR56 publication failure
 
@@ -4848,13 +4983,16 @@ Independently verified all88 PNG bytes committed at0fe42257fb7794ddba23ccc8832a3
 
 PR56 publication run40161305387/job121073856878 completedFAILURE: verify-pages.mjs exhausted exact served revision wait for99c40f39bc183fb302c5d76ad50f0d76e6e890fe, last observedHTTP404 at04:55:20Z. Full failed step log /tmp/cluster-pr56-publish-failure.log. This is a separate failed publication gate, not a visual mismatch or permission to waive gate. Diagnose/recover serving once current Pages deployment state is checked; do not duplicate queued builds.53candidate40163401924/job121079458138 confirmedqueued;53application stilllive.59newrequiredchecksqueued,54generateSUCCESS whilestrict/applicationlive. Agent actively propagating59to60/61; no interruption.
 
+
 ## Reviewer verified live deployment and candidate waits
 
 Fresh API confirms Pages40163030217 has successful build121078379721 and report121078700190; only deploy121078700345 remains queued with no steps. No rebuild/restart justified. PR53 application121071498372 actively running Nix renderer application step; complete identity40163401924/job121079458138 queued. Cargo40162646504/job121077237964 now in_progress;57short40161761149/job121074626787 queued. Preserved these exact handles. Agent actively correcting PR60 prompt-history separator reconciliation after inherited59 baselines; no simultaneous file edits or duplicate handoff.
 
+
 ## Reviewer PR60 inherited promotion independently verified
 
 Verified published d394a454 against current parent0fe42257 with an isolated Git HEAD/index using shared immutable objects under established Nix. Exact-parent prompt check passed at /tmp/nix-shell.I2Trid/pr60-independent-promotion-p6gl_cjj. Checker bytes identical to prior60df86305f: no experimental guard change published. All88 inherited cancellation Linux PNG bytes independently compared to approved original artifact and match. Previous turn was a verified wait for specific live jobs; this turn establishes published integration evidence. Cargo generation40162646504 still in_progress; its fresh cargo images remain unapproved until inspected. Agent actively resolving61 log merge, no competing writes or duplicate handoff. Reconcile this verification into attributed logs with next push.
+
 
 ## Reviewer PR61 inherited promotion independently verified
 
@@ -4862,11 +5000,13 @@ Independently checked e060a1f3d689e6a0db9058b4e4b710be95fb66c6 against parentd39
 
 Reviewer handoff:60d394a454 and61e060a1f3 independently pass exact-parent checks and inherited88hash verification; source/checker unchanged. While existing53/57/60/61 candidate/deployment handles run, continue62 from latest61 as previously requested; prioritize any completed earlier failure or candidate inspection. Keep existing handles and no duplicate prompts/runs. Latest mainmeta contains independent evidence; reconcile attribution and push logs. Never merge GitHub PRs.
 
+
 ## Reviewer PR62 route recovery tests and PR53 application success
 
 Independently read original62ff1d6161 fleetRecoveryTarget/recoveredRouteDraft changes against61original6504a4ad. Recovery requires matching campaign and fleet in authorized private projection plus visible star; local route array, including intentionally empty, wins over recovered submitted waypoints; newly restored array copies submitted input. SystemFleets distinguishes route recovery from split/merge. Ran immutable exported62travel suite under established Nix in /tmp/nix-shell.c27ZXp/pr62-route-review-6ygeh23y:11passed,124expect calls,222ms. Includes absent/wrong-campaign/other-player/retired fleet rejection and local-edit/copy preservation. Initial isolated export omitted rules JSON and failed module resolution; corrected source fixture passed. These unit tests do not substitute for real interrupted-route story or current integrated source validation.
 
 Authoritatively confirmed53application40160719083/job121071498372 completedSUCCESS. Strict/publication remain failed; complete candidate40163401924 stillqueued, cargo40162646504 running at latest checks. Agent actively integrating62; no interruption. Reconcile/push this independent review in next attributed logs.
+
 
 ## Reviewer PR54 strict failure triage and cargo candidates ready
 
@@ -4874,19 +5014,23 @@ PR54strict40160782002/job121071692015 completedFAILURE at05:01:40Z:118passed6fai
 
 Cargo generation40162646504 completedSUCCESS; artifact12587925653 recovery-cargo-e5f47ff55fc3637ec1c1d61b78b064a971a4f373-1 size289629708 unexpired now available. Retrieve once, verify provenance/hash/ZIP and inspect new/changed originals before promotion. Existing61/53requests preserved. Agent actively preparing62request; completed candidate should take priority next. Reconcile and push logs.
 
+
 ## Human request: progress update
 
 have we made any progress?
 
+
 ## Reviewer current progress verification
 
 Fresh GitHub check rollups confirm PR52 remains fully green (all five checks SUCCESS). PR53, PR54 and PR55 application verify checks now SUCCESS; no PR after52 is fully green yet. PR53 strict/publication remain failed; PR54 strict failed; PR55 strict still running. PR59 corrected inspected cancellation references committed at0fe42257 and inherited by60/61. Agent pane shows PR60 candidate and PR57 short review indexes logged/pushed through9b8ae64b; no candidate promotion claimed. Reviewer cargo independent inspection is incomplete: last two distinct short originals must be reopened because previous image output truncated. PR62 exact-parent checker was independently passed in /tmp/nix-shell.xfnLXr/pr62-independent-parent-4w5xisjx; story/checker source verified unchanged as recorded in session. No new approval or merge. Reconcile this status/user request in next attributed log commit.
+
 
 ## Reviewer PR60 corrected Linux cargo approval complete
 
 Completed independent visual review of artifact12587925653/run40162646504, retained /tmp/cluster-pr60-linux-corrected/originals/test-results/stories/live-fleet-cargo. Of128originals,87exact SHA matches carry prior reviewed approval;41changed/new originals map to29distinct images in /tmp/cluster-pr60-linux-new-review.json. All29 now viewed completely. Last two short027independent and028recovery reopened individually after discarded truncated output: independent has24available/0reserved fighters and infantry, no waiting orders; recovered owner system has22fighters6infantry, onefleet, clear keyboard focus on Fleets. Previous26images verify formation, unload/load previews, accepted receipts, reload and settlement; status paragraph spacing contained, no focal overlap. Approve exact128 images for baseline promotion subject to generation provenance/current-source compatibility. Large images inspected at tool-resized2048x1152 composition scale. This is scoped screenshot approval, not complete design or greenCI approval.
 
 Reviewer handoff: all128 corrected60Linux cargo images independently approved as above. Verify requested/generated/current source compatibility and dirty evidence as for59, then promote exact reviewed references to60 and propagate through61/62 without weakening checks. PR53 identity40163401924/job121079458138 and Pages40163030217/deploy121078700345 freshly verifiedqueued; preserve existing requests and prioritize53 immediately when results arrive. Reconcile latest human progress question and reviews into attributed logs and push. Do not start further feature branches; concentrate on green existing PRs. No merges.
+
 
 ## Reviewer PR57 short Linux images independently inspected
 
@@ -4896,11 +5040,13 @@ Previous turn classified progress: completed cargo independent approval and hand
 
 Reviewer next handoff:57short20originals now independently approved, SHAindex /tmp/pr57-supervisor-short-index.json. After current cargo promotion reaches safe checkpoint, validate source/dirty provenance and promote these20 to57, propagate existing stack with logs. Mainmeta review available; preserve53 priority and existing candidate handles, no merges.
 
+
 ## Reviewer PR60 published promotion byte verification
 
 GitHub confirms PR60 head2b9e3d85335d409b86eb8c7560c62bd7c9b4be57, checks queued. Independently compared every128committed cargo PNG blob to inspected artifact originals under established Nix; all SHA256 equal. Read committed docs/testing/pr60-linux-promotion/REVIEW.md: correct scope, artifact identity, retained dirty:true and source explanation; no claim of unavailable post-run status. Independently inspected targetdf86305f->executore5f47ff5 name delta: only nine request/workflow/launcher/dispatch/test/log files. Current promotiond394a454->2b9e3d85 has no src/functions/static/dependency/flake/Playwright/scripts/cargo-story changes in checked paths. No baseline laundering or assertion relaxation observed. Full integrated strict checks still required.
 
 Previous goal turn progressed independent57short inspection/approval. This turn verifies published60reference bytes. Specific53identity121079458138, Pagesdeploy121078700345 and61travel121078226900 all freshly API-confirmedqueued; preserved. Implementer healthy, current cargo propagation and57short handoff already supplied; no additional queued prompt. Reconcile this verification with next attributed log push.
+
 
 ## Reviewer PR55 strict triage and PR57 published bytes
 
@@ -4910,11 +5056,13 @@ PR57 now published cfe1b435406e59a16f339a4f5079151277f88078 per GitHub. Independ
 
 Fresh exact job APIs:53identity121079458138 queued, labels ubuntu-24.04-arm, no runner assigned and no steps; Pagesdeploy121078700345 queued, labels ubuntu-latest, no runner assigned and no steps. Not an executing test hang, no terminal state or restart justification. Reconcile findings with next attributed log push.
 
+
 ## Reviewer queued-job diagnosis and PR57 provenance comparison
 
 Previous turn progressed55failure triage and57committed-byte verification. Current direct APIs confirm53identity40163401924 queued and both identity/Pages pending_deployments arrays empty: no environment approval request to resolve. Identity workflow concurrency group cluster-pr53-identity-short has prior runs40157330125 and40149691891 completedSUCCESS, current sole latest request queued. Both identity/Pages jobs have no runner or steps; no repository approval or live same-workflow predecessor identified. Other existing story jobs demonstrably running:59old run40162369133 jobs121076417165/121076417297 have assigned GitHub runners and active generation/verification steps. Do not infer terminal/hung from waiting or restart requests.
 
 Independent git comparison57targetede7e84f->generation65b61332 has only nine bounded request/workflow/dispatch/launcher/tests/continuation paths; production/story/dependencies unchanged. Combined with20committed-byte verification, supports scope of approved short promotion. Agent actively propagated57to58 at4239baa2 and is continuing existing stack. No new duplicate handoff. Reconcile evidence on next attributed push.
+
 
 ## Reviewer independent PR58–60 integration verification
 
@@ -4922,23 +5070,28 @@ Independently compared20short formation committed PNGs on58at4239baa2,59at4f4f24
 
 Independently executed immutable check-prompts.mjs under established Nix in separate temporary Git HEAD/index with shared read-only object alternates. Exact preceding-branch checks passed:58basecfe1b435 at/tmp/nix-shell.HQQEME/pr58-independent-parent-2ayqjqq7;59base4239baa2 at/tmp/nix-shell.HQQEME/pr59-independent-parent-ktksk_u7;60base4f4f24e9 at/tmp/nix-shell.HQQEME/pr60-independent-parent-4l3n5oil. Session19014 completedexit0. No modification to agent worktree. Prior turn was verified queue diagnosis/provenance progress; current turn adds independent integration evidence. Reconcile next attributed log push.
 
+
 ## Reviewer independent PR61–62 propagation verification
 
 GitHub confirms61head2bb6f1d267d77942aba6dd29308ea3dd7afaa2bd and62head3c3fafa73571ab5fc2ad170fc3c3dde558d9b31a. Independently compared all148 inherited images on each head (20short formation,128cargo) to reviewed originals: exact bytes match. Production/functions/static/scripts/workflows/nix/dependency/storyconfiguration paths unchanged versus previous respective heads. Executed immutable prompt checker in isolated temporary Git HEAD/index using established Nix, exact61base7b9c4f0c passed at/tmp/nix-shell.pnEmkN/pr61-independent-parent-snw4007k; exact62base2bb6f1d2 passed at/tmp/nix-shell.pnEmkN/pr62-independent-parent-x4g4zr7y. Session34786exit0. These verify integration, not current full CI or later-layout fidelity. Prior turn progressed58–60integration; current turn adds61–62independent evidence.
 
 Fresh API confirms53identity121079458138,Pagesdeploy121078700345,61travel121078226900,62recovery121082152756 allqueued. Existing requests preserved. Agent pushed ledgera955a568 and propagation report; no additional instruction necessary while completing its checks. Reconcile latest independent verification on next attributed push.
 
+
 ## Reviewer handoff: final integration evidence reconciliation
 
 Reviewer: independent58–62 exact-parent checks and all inherited image bytes now verified in latest mainmeta entries;55strict triaged same six short identity failures (122passed6failed8skipped), no new approval of unseen55actuals. Please reconcile these latest reviews into attributed PROMPTS/PROMPT_WORK and commit/push ledger. Existing53identity121079458138 andPagesdeploy121078700345 stillqueued by freshAPI;56application/strict/generation stillrunning. Preserve these handles and no duplicate generation. Once evidence is reconciled, inspect existing CI results as they complete, prioritize53identity and exact publication recovery, and keep scope green existing PRs. No merge or weakened gate.
+
 
 ## Reviewer PR58 remaining reference inventory and verified wait
 
 Latest58head4239baa2 contains reorganization desktop/large/phone Linux references but no short/linux-arm64 directory; short Darwin exists. This remains a concrete missing-reference gap, not approved by57formation or60cargo work. Existing58generation40161964860/job121075225724 is API-confirmedin_progress on assignedrunner GitHub Actions1000035750 at Explicit baseline candidates step; artifacts currentlyempty. Preserve and inspect that existing result when ready rather than duplicate generation.19...->4239baa2 relevant production/story/helpers unchanged, supporting future applicability comparison.53identity remains existing queued request. Previous turn progressed required ledger reconciliation/push a7fb062a; this turn inventories remaining58gap and verifies specificlivegeneration. No terminal/blocker/restart claim.
 
+
 ## Reviewer PR53 queued request dispatch verification
 
 Prior turn was verified wait on exact API-live handles. Independently read queued executor058ee2c0 identity-short-candidates: exact six named real stories across five files, onlyshort, retries0, update-snapshotsnone, requires exactly6collected tests, existing real emulator services, explicitgeneratemode; no fallback/general suite substitution. Independently ran four existing actual-dispatch/request tests from immutable058ee2c0 export under established Nix at/tmp/nix-shell.hcjOxy/pr53-independent-dispatch-3j6jxs36:4passed96.49ms. Covers invalid route/extra args rejection, valid route reaches runner preflight, request source/branch/attempt/delta guards. Does not claim candidate generation or strict success; queued121079458138 unchanged at freshAPI.56/58story generation and verification stillAPIin_progress; preserve jobs. No additional prompt required; reconcile this evidence with next useful implementation push.
+
 
 ## Reviewer Pages recovery: exact revisions now served
 
@@ -4948,23 +5101,28 @@ Reviewer requested failed-job-only reruns of publication40160719087(PR53) and401
 
 Publication rerun follow-up: authoritative API shows53run40160719087 attempt2 completedCANCELLED while56run40161305387 attempt2 PENDING. Both share pages-tree concurrency; simultaneous pending requests likely replaced53. Do not claim53rerunlive. Serialize recovery: preserve56pending, then rerun terminalcancelled53 only after56is no longer pending (prefercompleted) to avoid another pending replacement. This follow-up supersedes earlier expectation that both reruns stayed queued.
 
+
 ## Reviewer publication concurrency dependency
 
 Previous turn progressed exact served53/56verification and terminal publication retries, then corrected cancellation ordering. Fresh publish.yml run inventory identifies only two nonterminal runs in returned100:57currentheadcfe1b435 run40165038542 QUEUED,56run40161305387attempt2 PENDING.57publishjob121084385750 is queued with no runner. This identifies the preceding publication holding pages-tree; preserve it, then56, then retry53 after56terminal as already handed off.53identity40163401924 stillqueued;58generation40161964860 stillin_progress. Agent acknowledged corrected serialized sequence, no duplicate instruction or restart. Current turn is verified wait with dependency diagnosis.
+
 
 ## Reviewer PR56 application gate success
 
 Fresh PR rollup and exact job121073258476 confirm56application40161305382 completedSUCCESS at2026-10-25T05:31:11Z on99c40f39.53through56application gates nowgreen;56strict/generation stillrunning, publication recoverypending, no fullygreenPRafter52 claimed.61travel121078226900 nowrunning Four complete fleet-travel candidate journeys; artifactlist stillempty. Prior turn verifiedspecificlivewait; this turn records new56application evidence. Preserve all handles and serialize publication57->56->53 as established. Reconcile with next substantive push.
 
+
 ## Reviewer PR61 candidate run completed
 
 Previous turn verifiedlivewait.61travel40162979064/job121078226900 transitioned through Preserve bounded observation evidence to completedSUCCESS. Artifact12588836768 recovery-travel-4ce46226ba857d8b242d3a0f6d7f496da21d5989-1 size194616824 unexpired, now available. No screenshot approval from run status. Reviewer handoff: retrieve once under Nix, validate full artifact SHA/CRC/source, retain originals at stable/tmp path, group exact matches against prior reviewed travel captures and inspect every new/changed image; report index/root for independent reviewer. Prioritize53ifits candidate appears, preserve existing run handles and serialized publication57->56->53. Commit/push attributed logs. No merge or weakened checks.
+
 
 ## Reviewer PR61 source and partial independent image inspection
 
 Independently compared requested846122d9 toexecutor4ce46226: nine generation request/workflow/dispatch/test/log paths only. Compared target tocurrent2bb6f1d2 production/functions/static/travel-story/helpers/dependencies/nix/storyconfiguration: unchanged. Read launcher: exactlyfour viewport cases, real emulators, retries0, explicitgenerate, update-snapshotsnone. Artifact12588836768 extracted byagent, SHA d763ab9818093b9cb4fcd61cde7a97f0126263f7d2e45c0e3f69994d7ba26791,194616824bytes. Root/tmp/cluster-pr61-linux-corrected/originals/test-results/stories/live-fleet-travel.
 
 Independent SHA inventory112originals:54exact matches priorreviewed56phone/desktop originals,58new/changed files comprising38distinct. Index/tmp/pr61-supervisor-new-index.json. Viewed complete nontruncated desktop012 andphone012 changed formation receipts plus ALL18distinct shortimages thisturn. These20distinct images visuallyacceptable: formation2/20 reserved; invalid21capacity blocks; route3.50ly2ticks, invalid10.49lyleg disables send; accepted departure2arrival4, reloadclears transientreceipt; travel retains2/20; arrival2fighters0aboard withreport20infantryincluding surface; recoveryfleetatTupa2/0capacity20; independent20->21->22->25forces no privateorder shown. Short scroll boundaries clip nonfocal prose/upperbuttons; focal controls/receipts readable. All18large distinct originals REMAIN UNREVIEWED; no full112approval yet. Next action inspectlarge originals indexed1–18, then finishprovenance/promotionhandoff. No defect observed in inspected subset.
+
 
 ## Reviewer PR61 complete Linux travel approval
 
@@ -4974,9 +5132,11 @@ Approve all112 exact Linux travel originals in artifact12588836768. Four changed
 
 Reviewer handoff:112travel originals approved via108prior inspected exacthashes+4new012images independentlyviewed. Validate retained source/dirty provenance, promote exact112to61 and carry through62 with normal exact-parent checks. Reconcile logs/push. Preserve53identity priority and publication57->56->53serialization; no duplicate candidate run, weakened gate or merge.
 
+
 ## Reviewer PR61 published travel-reference verification
 
 GitHub61head ec9ce62d281a22963a2338405823b26e977656ae confirmed. Independently compared all112committed travelPNG bytes against reviewed artifact12588836768 originals: exactmatches. Promotion versus2bb6f1d2 has no production/functions/static/scripts/workflows/nix/dependency path changes. Read committed docs/testing/pr61-linux-promotion/REVIEW.md: precise108prior exacthash+4viewedapproval, preserved downscaledlarge limitation, immutable source/spec compatibility, originaldirty:true explained by request/renderer untracked evidence without fabricated postrunstatus; historical7pixel70issue remainsopen. No fullCIgreenclaim.53identity121079458138 currently running Six complete real short identity candidate journeys;56publicationattempt2pending. Prior turn progressed travelapproval; current turn verifies published travelbytes. Reconcile next attributedpush.
+
 
 ## Reviewer PR53 complete identity candidates ready
 
@@ -4984,9 +5144,11 @@ Authoritative53identity40163401924/job121079458138 completedSUCCESS. Artifact125
 
 Also independently executed immutable61ec9ce62d checker against exactbase7b9c4f0c in isolatedHEAD/index/tmp/nix-shell.uvP0QO/pr61-promoted-parent-6_0zbs_9 underNix:PASS,session75033exit0. Agent was compacting context; no interruption. Prior turn progressedpublished61bytes; currentturn adds61parentcheck and completed53candidatehandoff.
 
+
 ## Human status request
 
 have we made any progress?
+
 
 ## Reviewer PR53 complete identity approval and handoff
 

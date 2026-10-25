@@ -284,7 +284,7 @@
               requestMilli: request!,
             })}
           >{pending
-            ? "Awaiting acknowledgement…"
+            ? "Awaiting receipt"
             : busy
               ? "Preparing offer…"
               : "Share credit offer"}</ActionButton
@@ -300,7 +300,7 @@
                 offerId: offer.id,
               })}
             >{pending
-              ? "Awaiting acknowledgement…"
+              ? "Awaiting receipt"
               : busy
                 ? "Preparing acceptance…"
                 : "Accept exact terms"}</ActionButton
@@ -314,7 +314,7 @@
                 offerId: offer.id,
               })}
             >{pending
-              ? "Awaiting acknowledgement…"
+              ? "Awaiting receipt"
               : busy
                 ? "Preparing withdrawal…"
                 : "Withdraw offer"}</ActionButton
@@ -420,6 +420,7 @@
   .commitment :global(button) {
     flex: 1;
     min-width: 0;
+    overflow-wrap: anywhere;
     white-space: normal;
     min-height: 48px;
   }
@@ -470,7 +471,7 @@
       gap: 8px;
     }
     .commitment :global(button) {
-      padding: 12px 8px;
+      padding: 12px 6px;
     }
   }
   @media (max-height: 700px) {
