@@ -469,3 +469,15 @@ Prompt 150 | 8847b34152b66c5bb92294fd401802af6f3d790cb0d684b05fcb533820cfb06c | 
 Prompt 151 | 42237fca74f27474d29b3b7d115ce945159649ca2afd100e52219b56f5c80b4e | Verify complete118-view phone candidates and retain99unchanged19changed exact comparison triples for independent review.
 
 Prompt 152 | 5c65807bf9c9f332c8a179cefa6fdba51466149e10497ff67183e2f25c9cbe90 | Retain complete118-view strict success and exact23-reference audit; publish corrected66 normally for unchanged required fullCI and hosted checks.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Extend the existing authoritative navigation story with shared label geometry assertions across filtering, orbit and inspector boundaries.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Reproduce decorative wrapper pointer interception and make system-label wrappers pass through hits while preserving actual star interactions.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review the single changed phone orbit image while retaining 28 identical navigation baselines and separate pointer-failure evidence.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 101 strict navigation/observation captures, retain pointer regression evidence and carry the latest Pages/checkpoint diagnosis.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 68 and its preview/dependency gates, preserving the 01:59 reviewer evidence without treating missing Linux images as acceptance.
+
+Prompt 165 | fa2ab67ed65ea7fdccf3755be414f2af5729e7920e441334d005cbb632f5404e | Reconcile original68 ancestry with exact prompt archives and continuation order while preserving tested executable and reference bytes.
