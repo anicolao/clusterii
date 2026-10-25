@@ -1961,3 +1961,15 @@ Reviewer correction from freshAPI:53publication40160719087 attempt2 was CANCELLE
 Delegated reviewer instruction; main meta records the completed existing travel run and artifact scope, without image approval.
 
 Reviewer:61travel40162979064/job121078226900 nowSUCCESS. Artifact12588836768 recovery-travel-4ce46226ba857d8b242d3a0f6d7f496da21d5989-1 size194616824 unexpired ready. Retrieve once under Nix, verify SHA/CRC/source and retain originals stable/tmp; group against prior reviewed travel captures, inspect all new/changed, report index/root for independent review. No image approval from greenrun. Prioritize53ifready; preserve existing jobs/serializedpublication. Reconcile latest mainmeta and pushlogs. No merge.
+
+## Prompt 298: Travel approval
+
+Delegated reviewer instruction; main meta records independent complete112-image approval and publication ordering.
+
+Reviewer: all112 PR61 Linux travel originals approved. Independently confirmed108exactSHA matches to previously inspected PR70 originals (mainmeta3931-3941), plus all4changed012reservation images now independently viewed. Lastturn also independently viewed18short compositions; large012 completed now. /tmp/cluster-pr61-linux-corrected/novel-review.json exact4hashes; mainmeta fullscope/limits. Verify source/dirty provenance, promote exact112to61 and carry62 with exact-parent checks. Reconcile/push logs; preserve53priority and serializedpublication57->56->53. No duplicates/weakening/merges.
+
+## Prompt 299: Identity evidence
+
+Delegated reviewer instruction; see main meta for the independent PR61 check and completed PR53 candidate run.
+
+Reviewer: priority53 completeidentity40163401924/job121079458138 nowSUCCESS. Artifact12588877607 recovery-identity-short-058ee2c0fe827232c7810db8176f2c0b581476a7-1 size48495722 unexpired ready. Retrieve once underNix, verifyartifact/source, inspect all changed/new completejourneyframes, carry only exactpriorapprovedhashes; retainoriginals/index for independentreview. Prioritize53repair after safe62integrationcheckpoint; no visualapproval fromrunstatus. Preservepublication57->56->53. Mainmeta also independently confirms61ec9ce62d exactparent7b9c4f0c checkerPASS. Reconcile/pushlogs, no merge/weakening.
