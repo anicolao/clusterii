@@ -4259,3 +4259,35 @@ Implementer asks whether no-merge prohibits parent-to-child Git integration. Use
 ## Reviewer handoff — resolve stack conflict
 
 Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
+
+## Reviewer code and CI review — PR64 viewport cohorts
+
+PR64 heada26324cb00e770fd4503c76c8db39ae6005dc9d4, base63. Read complete workflow/package/runner/cohort module and210-line tests diff. Sequential fresh emulators retain every viewport's output and logs, preserve previous evidence, fail on collisions, maintain interruption across children, guard occupied ports, continue independent viewports but throw aggregate failure. No screenshot/assertion/tolerance weakening. Independently ran the five committed cohort tests via established Nix environment on exact-source files in/tmp/cluster-pr64-review; all5passed0failed. This is runner verification, not player-screen approval.
+
+Historical strict39724010454/job119643687547 has viewport counts29/29/29/28passed,12/12/12/13failed and2skipped each (total115passed49failed8skipped). Missing Linux references remain; short reaches formation rather than failing identity setup for those new fleet stories. Generation119643687700 produced no files/artifacts, API only verify12405503333(1846046879bytes). Logs/tmp/cluster-pr64-{failed,generate}.log. No baseline approval implied. Current52runner predates64 and does not yet use cohorts; preserve this later additive behavior during forward integration, do not overwrite it with52runner wholesale.
+
+
+## Reviewer code and retained exact evidence — PR65 history setup
+
+PR65 head757d423c4d21397ca36ff9233c6741257a4df72a, base64. Read complete history/helper diff and design review: fifteen distinct acknowledged setup operations use unchanged30-second step budget and90-second total test deadline; no retry/assertion/expected-image changes. Helper rejects empty/duplicate descriptions and records controls only after success. Historical strict39724370529 has116passed48failed8skipped, unrelated missing families remain. Generation119644812983 produced no files/artifacts. Publish39724370582 failed exact-head hosted revision withHTTP404; require successful publication when reached. Logs/tmp/cluster-pr65-{failed,generate,publish}.log.
+
+Selectively extracted only campaign-history JSON metadata from verify artifact12405425226,50files547144bytes ZIP CRC checked, extractor25341exit0; root/tmp/cluster-pr65-history-evidence. All4 manifests passed in verify mode:phone12views,desktop/large/short10each(42total),each15completedsetupcontrols. Clean source4f13d4fb9d024a082950d0b39f47f4a6be1491b3 fetched; fulltree diff to65head empty. Exactspecshaec5d81d686148906ff984266f2d638ec48ccde4987479349c03c456a49bc5cae. This confirms the Linux setup/history journey passed against inherited exact references; no new visual approval or fullPRgreen claim.
+
+
+## Reviewer handoff — PR64 and65 evidence
+
+Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
+## Reviewer finding — PR53 archive validation whitespace
+
+Read in-progress preservePromptHistory helper. Exact staged regular-file archive check is good; canonical comparison currently calls trimEnd() on each prompt body. That allows altered trailing spaces/newlines in the canonical copied request to pass a check whose message promises verbatim retention. Human prompts include intentional byte-preservation requirements and at least one trailing space. Preserve exact body bytes with only a precisely defined heading separator handled, and add a negative test changing trailing body whitespace while archive remains exact. Keep immutable archive equality and child-prefix checks; no gate bypass.
+
+
+## Reviewer handoff — tighten canonical archive check
+
+Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
+
+## Reviewer finding — archived-base continuation bypass
+
+Updated archive comparison now preserves exact body bytes plus one defined LF separator and tests whitespace alterations. Second issue: if (archivedBase || staged.length > previous.length) takes success path for every archived-base CI check without examining PROMPT_WORK.md. A merged branch can therefore drop inherited continuation history and still pass this new archive path. Require inherited continuation records preserved in order for archived-base checks (and both parents during integration), with a negative test deleting/mutating an inherited record while prompt archive stays exact. This is needed for the explicit preserve-both-histories contract, not a reason to bypass checks.

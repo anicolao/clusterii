@@ -605,3 +605,21 @@ Reviewer: while you prepare53, mainmeta now records full62 code review and63 com
 Delegated reviewer clarification; refers to main meta authorized parent-to-child integration without GitHub PR merges or history rewriting.
 
 Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
+
+## Prompt 72: Forward runner
+
+Delegated reviewer finding; refers to main meta PR64 runner and PR65 setup/source review, not new reference approval.
+
+Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
+## Prompt 73: Verbatim retention
+
+Delegated reviewer code finding; refers to main meta exact canonical prompt body preservation.
+
+Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
+## Prompt 74: Continuation preservation
+
+Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
+
+Reviewer second finding: updated if (archivedBase || staged.length > previous.length) bypasses all PROMPT_WORK validation on archived-base CI checks. An exact prompt archive should not allow deleting/mutating inherited continuation records. Require inherited records retained in order for archived-base checks and both parents during integration; add negative test with exact prompt archive but deleted/mutated prior continuation. Whitespace fix and its regression tests look sound. Mainmeta records this. Continue current53fix; no duplicate CI.
