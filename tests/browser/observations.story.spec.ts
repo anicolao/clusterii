@@ -4,6 +4,7 @@ import type { Campaign, CampaignView } from "../../shared/campaign";
 import { observationView } from "../../shared/observations";
 import { distance } from "../../shared/galaxy";
 import { test, expect } from "./story-helpers/fixtures";
+import { readableLabels } from "./story-helpers/galaxy-labels";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
@@ -100,6 +101,12 @@ test("Live stellar observations retain private current and historical facts afte
       player: aliases[i],
       surface: "game" as const,
       primary: [button(page, "Observation")],
+      verifications: [
+        {
+          spec: "Projected system labels remain separated and contained within the chart.",
+          check: () => readableLabels(page),
+        },
+      ],
     }));
   const privacy = async () => {
     const s = await canonical();
@@ -565,6 +572,16 @@ test("Live stellar observations retain private current and historical facts afte
             );
             await privacy();
             for (const seat of [0, 1]) await matchReport(seat, stale.id);
+            if (info.project.name === "phone") {
+              await expect(
+                owner.locator(".quiet-label").filter({ hasText: "Tupã · A" }),
+              ).toBeVisible();
+              await expect(
+                owner
+                  .locator(".quiet-label")
+                  .filter({ hasText: "Tania Australis · G · You" }),
+              ).toBeVisible();
+            }
           },
         },
       ],
