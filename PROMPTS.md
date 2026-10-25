@@ -934,3 +934,9 @@ Reviewer: independent review now APPROVES all27changed exact originals in /tmp/c
 
 
 
+
+## Prompt 105: Service exhaustion
+
+Delegated reviewer instruction; see main meta Reviewer PR56 service exhaustion confirmed from retained artifact.
+
+Reviewer: new independent56evidence confirms emulator exhaustion: verify artifact12588014245 selected extraction at /tmp/cluster-pr56-error-contexts; firestore-debug.log has10001pending WebChannel backlog line8992 at05:38:19 and explicit Java heap OutOfMemoryError lines4680474/4683118. Contexts show Retrieving your identity or Awaiting acknowledgement. Full findings/exact handoff mainmeta Reviewer PR56 service exhaustion confirmed from retained artifact. After safe propagation checkpoint, backport applicable64a26324cb viewport cohort isolation to56, preserve alltests/deadlines/assertions/exactpixels/failed artifacts, test underNix and propagate forward. Do not disrupt53currentCI or duplicate downloads. Reconcile attribution/logpush. No merge.
