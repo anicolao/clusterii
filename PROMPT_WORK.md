@@ -346,3 +346,7 @@ Prompt 106 | 2b3ca753cb68d3accad6c09c89d6ecc428dd4b82dc3da2bbc902f07ca25892c1 | 
 Prompt 106 | 2b3ca753cb68d3accad6c09c89d6ecc428dd4b82dc3da2bbc902f07ca25892c1 | Preserve four passing cancellation journeys and88 unapproved originals, including measured child-feedback focus clearance.
 Prompt 108 | b82e039095adf3471d476eed64969819aaf3253a5a8ccb83d6b5dc93328c63db | Integrate current cancellation parent while retaining cargo evidence and exact inherited histories.
 Prompt 110 | b7f528d946e276c0266961a8c5b103fb70fea9e02ab5291c71e35dc8651cdaeb | Integrate current cargo parent and preserve travel candidate applicability and exact history.
+
+Prompt 109 | 5fd8169d6cb98c40f520640d1a2ae05e51a0755a76ef6f601ef31d06100d2186 | Integrate independently approved cancellation references and preserve both parent histories without changing cargo source.
+
+Prompt 111 | 689d9adb6b0da9679bfab0c8aa3f99eedc0385015a379dc35b6e89b807b34f07 | Carry approved cancellation references through travel, preserving original travel generation source and both parent histories.

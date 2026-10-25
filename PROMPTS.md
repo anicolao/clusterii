@@ -1458,3 +1458,12 @@ Reviewer: independently downloaded only21 actual/expected/diff PNGs from artifac
 
 
 
+## Prompt 111: Cancellation approval
+
+Delegated reviewer instruction; main meta records independent Linux inspection and exact hash dispositions.
+
+Reviewer: independently inspected all22distinct changed/new images covering31files in corrected59Linux artifact12587017318;57otherfiles exact SHA matches to prior reviewed originals. All88 visuals approved. Mainmeta records scope and /tmp/cluster-pr59-linux-new-review.json exact hashes, four017focusfix approved including short; large display composition limit recorded. Resolve dirty:true provenance against requested92b9b88f and known generation-only changes, verify production/story/renderer before promoting. Then commit approved references to59 and propagate through60/61 preserving their generation handles. Prioritize53 when40163401924 completes, recover exact-served-revision publication. Reconcile attributed logs and push. No duplicate runs, threshold weakening or merge.
+
+
+
+
