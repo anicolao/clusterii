@@ -1,0 +1,9 @@
+# PR60 and PR61 inherited reference recovery
+
+Reviewer confirmed both prior strict failures have precisely the inherited seven formation/reorganization012 spacing mismatches plus missing short reorganization010. Source logs remain intact; exact hashes and paths retained in retained-failure-index.json. No regeneration or new gameplay defect inferred.
+
+PR60 normal parent integration: head5db8df9bec3d61059dbb1dd1a8a877f1566e2dec retains old9afb281b and reviewed parent75c39df8. PR61 head2c026a487bea738fb49f78f3ad4553efed08b49b retains oldc87bd740 and updated parent5db8df9b. Both pushed normally to existing branches. These are parent-to-child Git integrations, not GitHub PR merges.
+
+All216 approved shared-family PNG hashes independently checked in each staged index against retained originals. Exact archived prompt history, ordered canonical requests and inherited continuation records preserved. Both merge checks and committed actual-parent checks passed under offline Nix. PR60 policy/cohort suite21 tests passed; PR61 suite23 tests passed. Diff guard confirms no src/spec/helper/scripts/workflow/dependency changes. Cargo/travel-specific references remain unchanged. No thresholds, deadlines, assertions or required checks relaxed.
+
+New current-head workflow snapshots are retained here. Required CI must finish before claiming green. Existing PR59 and PR62 running jobs were neither restarted nor cancelled. No duplicate downloads or generation, no baseline approval beyond independently inspected files. Green frontier remains52–57 pending actual new-head results.

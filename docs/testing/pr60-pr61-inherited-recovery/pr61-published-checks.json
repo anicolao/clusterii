@@ -1,0 +1,55 @@
+{
+  "headRefOid": "2c026a487bea738fb49f78f3ad4553efed08b49b",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40183707951/job/121139934562",
+      "name": "verify",
+      "startedAt": "2026-10-25T10:11:00Z",
+      "status": "IN_PROGRESS",
+      "workflowName": "Application checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40183707944/job/121139934588",
+      "name": "documentation",
+      "startedAt": "2026-10-25T10:11:15Z",
+      "status": "IN_PROGRESS",
+      "workflowName": "Documentation checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40183707928/job/121139934436",
+      "name": "stories (verify)",
+      "startedAt": "2026-10-25T10:11:01Z",
+      "status": "IN_PROGRESS",
+      "workflowName": "Illustrated stories"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40183707924/job/121139965584",
+      "name": "publish",
+      "startedAt": "2026-10-25T10:11:08Z",
+      "status": "IN_PROGRESS",
+      "workflowName": "Publish review build"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40183707928/job/121139934658",
+      "name": "stories (generate)",
+      "startedAt": "2026-10-25T10:11:02Z",
+      "status": "IN_PROGRESS",
+      "workflowName": "Illustrated stories"
+    }
+  ]
+}
