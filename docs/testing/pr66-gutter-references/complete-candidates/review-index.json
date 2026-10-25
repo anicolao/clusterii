@@ -1,0 +1,1195 @@
+{
+  "target": "ae12fa123c68892069706fae43012f967cec151b",
+  "executor": "b11da7d16793ff4a254c963ee95ee87e65940bda",
+  "counts": {
+    "unchanged": 99,
+    "changed": 19
+  },
+  "manifests": [
+    {
+      "story": "campaign-scheduled-start",
+      "source": {
+        "commit": "b11da7d16793ff4a254c963ee95ee87e65940bda",
+        "dirty": true,
+        "spec": "tests/browser/campaign-start.story.spec.ts",
+        "specSha256": "63937b4dd502a2e10bcb4a8662149370101627cb5c04a5edcefa2a4802b45044"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 50,
+      "status": "passed"
+    },
+    {
+      "story": "credit-exchange-recovery",
+      "source": {
+        "commit": "b11da7d16793ff4a254c963ee95ee87e65940bda",
+        "dirty": true,
+        "spec": "tests/browser/credit-exchange.story.spec.ts",
+        "specSha256": "033937437c2e14f5d8650a378d05c606f6d0e1d4d799f0ced4a43cb30f159a14"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 25,
+      "status": "passed"
+    },
+    {
+      "story": "credit-exchange-ordinary",
+      "source": {
+        "commit": "b11da7d16793ff4a254c963ee95ee87e65940bda",
+        "dirty": true,
+        "spec": "tests/browser/credit-exchange.story.spec.ts",
+        "specSha256": "033937437c2e14f5d8650a378d05c606f6d0e1d4d799f0ced4a43cb30f159a14"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 28,
+      "status": "passed"
+    },
+    {
+      "story": "selected-history-consent",
+      "source": {
+        "commit": "b11da7d16793ff4a254c963ee95ee87e65940bda",
+        "dirty": true,
+        "spec": "tests/browser/selected-history.story.spec.ts",
+        "specSha256": "02f5c7efe2e3f8eda5e280d2433577c01f3c825f749d088564a9ed53ea0ee959"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 15,
+      "status": "passed"
+    }
+  ],
+  "images": [
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/002-propose-1-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/002-propose-1-1-dawn-envoy-1.png",
+      "sha256": "7211eee44ec1568dec875a86f0dde94e1651d0efffaa3940e8aa091368372d26",
+      "referenceSha256": "7211eee44ec1568dec875a86f0dde94e1651d0efffaa3940e8aa091368372d26",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/003-create-1-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/003-create-1-1-dawn-envoy-1.png",
+      "sha256": "31737bc7c3dc526219a2936a1f921d2d5f033403fe4f3349374993bf594b3339",
+      "referenceSha256": "31737bc7c3dc526219a2936a1f921d2d5f033403fe4f3349374993bf594b3339",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/004-choose-1-1-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/004-choose-1-1-1-dawn-envoy-1.png",
+      "sha256": "31737bc7c3dc526219a2936a1f921d2d5f033403fe4f3349374993bf594b3339",
+      "referenceSha256": "31737bc7c3dc526219a2936a1f921d2d5f033403fe4f3349374993bf594b3339",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/005-join-1-1-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/005-join-1-1-1-dawn-envoy-1.png",
+      "sha256": "7aaebdf93f500805ebdf17acde167aa0ffdf8a777cad5782f93476f560d014af",
+      "referenceSha256": "7aaebdf93f500805ebdf17acde167aa0ffdf8a777cad5782f93476f560d014af",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/006-choose-1-2-1-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/006-choose-1-2-1-dawn-envoy-2.png",
+      "sha256": "6086f4b79e674710f127331103f01f5ca8dd6cb52c8986a032b4182e4e208820",
+      "referenceSha256": "6086f4b79e674710f127331103f01f5ca8dd6cb52c8986a032b4182e4e208820",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/007-join-1-2-1-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/007-join-1-2-1-dawn-envoy-2.png",
+      "sha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "referenceSha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/007-join-1-2-2-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/007-join-1-2-2-dawn-envoy-1.png",
+      "sha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "referenceSha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/008-choose-1-3-1-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/008-choose-1-3-1-dawn-envoy-3.png",
+      "sha256": "0012475bc56bc5fe39a573b97bd0cd1b0b7911697752f3bb7c107884b88444a2",
+      "referenceSha256": "0012475bc56bc5fe39a573b97bd0cd1b0b7911697752f3bb7c107884b88444a2",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/009-join-1-3-1-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/009-join-1-3-1-dawn-envoy-3.png",
+      "sha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "referenceSha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/009-join-1-3-2-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/009-join-1-3-2-dawn-envoy-1.png",
+      "sha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "referenceSha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/010-choose-1-4-1-dawn-envoy-4.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/010-choose-1-4-1-dawn-envoy-4.png",
+      "sha256": "10f10325cbb9aa40fe4b69a358681c7c716eaf8e77d62629582ee0b3512c3142",
+      "referenceSha256": "10f10325cbb9aa40fe4b69a358681c7c716eaf8e77d62629582ee0b3512c3142",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/011-join-1-4-1-dawn-envoy-4.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/011-join-1-4-1-dawn-envoy-4.png",
+      "sha256": "a26dad198f9410e56630784db7c292f3b17947db021b3d7a1e044e62deb35fcf",
+      "referenceSha256": "a26dad198f9410e56630784db7c292f3b17947db021b3d7a1e044e62deb35fcf",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/011-join-1-4-2-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/011-join-1-4-2-dawn-envoy-1.png",
+      "sha256": "a26dad198f9410e56630784db7c292f3b17947db021b3d7a1e044e62deb35fcf",
+      "referenceSha256": "a26dad198f9410e56630784db7c292f3b17947db021b3d7a1e044e62deb35fcf",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/012-propose-2-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/012-propose-2-1-dawn-envoy-1.png",
+      "sha256": "e8a4b5e7f0c08c66e3050a82cf1669975d64f29dfb5a5249a4bbf0e057bb1230",
+      "referenceSha256": "e8a4b5e7f0c08c66e3050a82cf1669975d64f29dfb5a5249a4bbf0e057bb1230",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/013-create-2-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/013-create-2-1-dawn-envoy-1.png",
+      "sha256": "89f4e31954e55ba2cd1f42ba233e2246c4e122f489bf8af6bd511d1226ec30c7",
+      "referenceSha256": "89f4e31954e55ba2cd1f42ba233e2246c4e122f489bf8af6bd511d1226ec30c7",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/014-choose-2-1-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/014-choose-2-1-1-dawn-envoy-1.png",
+      "sha256": "89f4e31954e55ba2cd1f42ba233e2246c4e122f489bf8af6bd511d1226ec30c7",
+      "referenceSha256": "89f4e31954e55ba2cd1f42ba233e2246c4e122f489bf8af6bd511d1226ec30c7",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/015-join-2-1-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/015-join-2-1-1-dawn-envoy-1.png",
+      "sha256": "7aaebdf93f500805ebdf17acde167aa0ffdf8a777cad5782f93476f560d014af",
+      "referenceSha256": "7aaebdf93f500805ebdf17acde167aa0ffdf8a777cad5782f93476f560d014af",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/016-choose-2-2-1-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/016-choose-2-2-1-dawn-envoy-2.png",
+      "sha256": "73e7424d0b7e56bf669dd8e11ab9fcf4be7c35f6f627d4f417170060d187fbdd",
+      "referenceSha256": "73e7424d0b7e56bf669dd8e11ab9fcf4be7c35f6f627d4f417170060d187fbdd",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/017-join-2-2-1-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/017-join-2-2-1-dawn-envoy-2.png",
+      "sha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "referenceSha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/017-join-2-2-2-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/017-join-2-2-2-dawn-envoy-1.png",
+      "sha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "referenceSha256": "dc171613f8afbdb77708275db4b7f4c8e19419e2edc2e4805394d9ba01edb69d",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/018-choose-2-3-1-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/018-choose-2-3-1-dawn-envoy-3.png",
+      "sha256": "c8de1622b635638bf3fe57342bb289f13af6b97ab4a3b3db946466db138a9677",
+      "referenceSha256": "c8de1622b635638bf3fe57342bb289f13af6b97ab4a3b3db946466db138a9677",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/019-join-2-3-1-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/019-join-2-3-1-dawn-envoy-3.png",
+      "sha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "referenceSha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/019-join-2-3-2-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/019-join-2-3-2-dawn-envoy-1.png",
+      "sha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "referenceSha256": "11cdda590448a58332898574e95b5fc74e86e989642ec6f7ec8d045980142688",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/020-choose-2-4-1-dawn-envoy-5.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/020-choose-2-4-1-dawn-envoy-5.png",
+      "sha256": "b6b57b778f94e7dc7527b4d4aa4fb0314abce1956adffaa94b6cb205bdb2e2e9",
+      "referenceSha256": "b6b57b778f94e7dc7527b4d4aa4fb0314abce1956adffaa94b6cb205bdb2e2e9",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/021-join-2-4-1-dawn-envoy-5.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/021-join-2-4-1-dawn-envoy-5.png",
+      "sha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "referenceSha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/021-join-2-4-2-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/021-join-2-4-2-dawn-envoy-1.png",
+      "sha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "referenceSha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-1-dawn-envoy-1.png",
+      "sha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "referenceSha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-2-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-2-dawn-envoy-2.png",
+      "sha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "referenceSha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-3-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-3-dawn-envoy-3.png",
+      "sha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "referenceSha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-4-dawn-envoy-4.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-4-dawn-envoy-4.png",
+      "sha256": "a26dad198f9410e56630784db7c292f3b17947db021b3d7a1e044e62deb35fcf",
+      "referenceSha256": "a26dad198f9410e56630784db7c292f3b17947db021b3d7a1e044e62deb35fcf",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-5-dawn-envoy-5.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/022-scheduled-rosters-5-dawn-envoy-5.png",
+      "sha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "referenceSha256": "07bb7a6a7a9837551ede4d70fbe8b36cab703106d47e166abccdbd908e35a050",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png",
+      "sha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "referenceSha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-2-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-2-dawn-envoy-2.png",
+      "sha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "referenceSha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-3-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-3-dawn-envoy-3.png",
+      "sha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "referenceSha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-4-dawn-envoy-4.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-4-dawn-envoy-4.png",
+      "sha256": "09f1ae3502b98c4ab2c53fcf82c9e2bd99e0c5f9f62312aee38ac1d250861b94",
+      "referenceSha256": "09f1ae3502b98c4ab2c53fcf82c9e2bd99e0c5f9f62312aee38ac1d250861b94",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-5-dawn-envoy-5.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/024-awaiting-assignment-5-dawn-envoy-5.png",
+      "sha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "referenceSha256": "9c49daac1dcf520bac45d039b4dede8ef011ec53ad7982e3595007e9701b6f1f",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/026-started-rosters-1-dawn-envoy-1.png",
+      "sha256": "c6dfec76f19e9b56a77cc53e2898056ef4e2a6c3012aa6575e5a2d8b5d4385be",
+      "referenceSha256": "c6dfec76f19e9b56a77cc53e2898056ef4e2a6c3012aa6575e5a2d8b5d4385be",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-2-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/026-started-rosters-2-dawn-envoy-2.png",
+      "sha256": "5088b66aff976be6dada0a61ee23350ac903450bb9b4cbdf538c6398834e16cd",
+      "referenceSha256": "5088b66aff976be6dada0a61ee23350ac903450bb9b4cbdf538c6398834e16cd",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-3-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/026-started-rosters-3-dawn-envoy-3.png",
+      "sha256": "7a8f7f4d77d1a8f42bc712be885a382d53f38ec95dfec8e5d2ed6a2647e09254",
+      "referenceSha256": "7a8f7f4d77d1a8f42bc712be885a382d53f38ec95dfec8e5d2ed6a2647e09254",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+      "sha256": "39a5198f2e6aa321a29f13904d8836864f9c1d0e4809a5219e0f603309d3d6be",
+      "referenceSha256": "66073c33911ec874398a480b846586d8050d2738ce48224d47ddd18af29cbbf3",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/026-started-rosters-4-dawn-envoy-4-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/026-started-rosters-4-dawn-envoy-4-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 216,
+        "bounds": [
+          381,
+          476,
+          392,
+          497
+        ]
+      }
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+      "sha256": "7900f4f440ec20bb226b784d9907ea6e549a96ff3191dfacfd3e2fc444bd7f9c",
+      "referenceSha256": "1129940bc000f4be5de6e9bbf294d868e3c5b22a4d8d5e3eeac30cd956038c59",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/026-started-rosters-5-dawn-envoy-5-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/026-started-rosters-5-dawn-envoy-5-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 216,
+        "bounds": [
+          381,
+          476,
+          392,
+          497
+        ]
+      }
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-1-dawn-envoy-1.png",
+      "sha256": "655ea57a7d1e3957a1431958674117673f966edac388aaf751c428cbb5bb603a",
+      "referenceSha256": "655ea57a7d1e3957a1431958674117673f966edac388aaf751c428cbb5bb603a",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+      "sha256": "ad7870e26a289aa446b16efd055662b25cf51e0aae9151c56fbb7497dbdf6651",
+      "referenceSha256": "b22de1c06c31831528f2dfc5e7929969043a20edf207d542c6552e79553d8325",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/027-homes-assigned-2-dawn-envoy-2-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/027-homes-assigned-2-dawn-envoy-2-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 273,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-3-dawn-envoy-3.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-3-dawn-envoy-3.png",
+      "sha256": "8c5fb0b4ef9afd1ef810915a439aedb3a87e15927c3d74bebf4e0058acb7049f",
+      "referenceSha256": "8c5fb0b4ef9afd1ef810915a439aedb3a87e15927c3d74bebf4e0058acb7049f",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+      "sha256": "d297210d1aa82087db7e81dacce591ef04b88297a99d8bc12fc3dbcd12c799d8",
+      "referenceSha256": "d1fa595f674d94266053f38845d2d66f7247a655b0e0d2ff622414a6788b8591",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/027-homes-assigned-4-dawn-envoy-4-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/campaign-scheduled-start/027-homes-assigned-4-dawn-envoy-4-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 244,
+        "bounds": [
+          381,
+          476,
+          392,
+          498
+        ]
+      }
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/028-single-membership-entry-1-dawn-envoy-4.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/028-single-membership-entry-1-dawn-envoy-4.png",
+      "sha256": "95ea02adf4c45131731e41ccb28af80f30876b55436989f380a35855cced9b15",
+      "referenceSha256": "95ea02adf4c45131731e41ccb28af80f30876b55436989f380a35855cced9b15",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/029-choose-last-campaign-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/029-choose-last-campaign-1-dawn-envoy-1.png",
+      "sha256": "655ea57a7d1e3957a1431958674117673f966edac388aaf751c428cbb5bb603a",
+      "referenceSha256": "655ea57a7d1e3957a1431958674117673f966edac388aaf751c428cbb5bb603a",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/030-multiple-membership-entry-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/030-multiple-membership-entry-1-dawn-envoy-1.png",
+      "sha256": "a4d41e86c10fa894af5c3c5d4d043b597cfcc6153a972696ae69395c8cf1bffc",
+      "referenceSha256": "a4d41e86c10fa894af5c3c5d4d043b597cfcc6153a972696ae69395c8cf1bffc",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/031-reload-last-selection-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/031-reload-last-selection-1-dawn-envoy-1.png",
+      "sha256": "a4d41e86c10fa894af5c3c5d4d043b597cfcc6153a972696ae69395c8cf1bffc",
+      "referenceSha256": "a4d41e86c10fa894af5c3c5d4d043b597cfcc6153a972696ae69395c8cf1bffc",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "campaign-scheduled-start/phone/linux-arm64/032-continue-exact-campaign-1-dawn-envoy-1.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611836037/test-results/stories/campaign-scheduled-start/phone/linux-arm64/032-continue-exact-campaign-1-dawn-envoy-1.png",
+      "sha256": "655ea57a7d1e3957a1431958674117673f966edac388aaf751c428cbb5bb603a",
+      "referenceSha256": "655ea57a7d1e3957a1431958674117673f966edac388aaf751c428cbb5bb603a",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "4eec23790d13e30a176eab1b5b3627a5212efbf568e1fa4d107cc6758e6ea331",
+      "referenceSha256": "4eec23790d13e30a176eab1b5b3627a5212efbf568e1fa4d107cc6758e6ea331",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "referenceSha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "6c71bab906e7b1c8050a70c4ca096fa1ca98be5bab71bda6cfbee97d1b12e42a",
+      "referenceSha256": "6c71bab906e7b1c8050a70c4ca096fa1ca98be5bab71bda6cfbee97d1b12e42a",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "referenceSha256": "59d2c5e714d72dbef572fa91e39347290252b26af84f717ba497904d8be759cf",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/013-uncertain-commitment-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/013-uncertain-commitment-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "6dc17931b86790959e430e0bed3022f0ba2faba022b927542b726a5e7791eae6",
+      "referenceSha256": "6dc17931b86790959e430e0bed3022f0ba2faba022b927542b726a5e7791eae6",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "referenceSha256": "59d2c5e714d72dbef572fa91e39347290252b26af84f717ba497904d8be759cf",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/014-reload-pending-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/014-reload-pending-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "94bfd32b3c11620c1feecdfd3bbad10786fb93cb8e44a6cd9e13d0f9b3d00997",
+      "referenceSha256": "94bfd32b3c11620c1feecdfd3bbad10786fb93cb8e44a6cd9e13d0f9b3d00997",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "3778d289c32f8a2fa2242317051b3e3c52572bb0ee560254419b15f7abcf267a",
+      "referenceSha256": "35bf73f6c24f08a014f991cd868fcdba956284e516f4cde019199043ecc17a4a",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/016-offer-shared-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/016-offer-shared-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "94bfd32b3c11620c1feecdfd3bbad10786fb93cb8e44a6cd9e13d0f9b3d00997",
+      "referenceSha256": "94bfd32b3c11620c1feecdfd3bbad10786fb93cb8e44a6cd9e13d0f9b3d00997",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "202b44d7af7eda3a80d03c190c0eef370ea89f606904908ff61f72910c22848c",
+      "referenceSha256": "99a14b34803aaeabf5d2eaf547977cbb46a2e2aaace3b0fe6ebd9463394d5eab",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/017-review-terms-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/017-review-terms-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/017-review-terms-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "5e8fdf186f38d6eb238550d87921e5f7e3e9a935672b57be7ba829c3996eb810",
+      "referenceSha256": "5e8fdf186f38d6eb238550d87921e5f7e3e9a935672b57be7ba829c3996eb810",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "b6ad1f5329803524edd330d65ca3cd06976f5cdca69ab6f592811cd76641f9bf",
+      "referenceSha256": "a0a53b3621716fda9c92392f7bc0552c250211b93798a452282092c730214643",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/018-accept-terms-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/018-accept-terms-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/020-settled-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "387ce5aa62ced7befd9e612edb99685e5b61d27e22f8b93a4ec61b64774c4e3f",
+      "referenceSha256": "387ce5aa62ced7befd9e612edb99685e5b61d27e22f8b93a4ec61b64774c4e3f",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+      "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/020-settled-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/020-settled-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/020-settled-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "referenceSha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "d095810a6472d900a76291d74ed274cdb108e2f00dee3d75136126f7e404f3d5",
+      "referenceSha256": "d095810a6472d900a76291d74ed274cdb108e2f00dee3d75136126f7e404f3d5",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+      "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/022-reload-outcome-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-recovery/022-reload-outcome-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "referenceSha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12612175763/test-results/stories/credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "e68f39e321eea60e2fa6600122445f52fb1aa71bad8915bb1acec167ef857e18",
+      "referenceSha256": "e68f39e321eea60e2fa6600122445f52fb1aa71bad8915bb1acec167ef857e18",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "4eec23790d13e30a176eab1b5b3627a5212efbf568e1fa4d107cc6758e6ea331",
+      "referenceSha256": "4eec23790d13e30a176eab1b5b3627a5212efbf568e1fa4d107cc6758e6ea331",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "referenceSha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "90cb96c6d72f6873ae9c75ac077d6b4f5e220ba48e18820c536e13a55a99ce13",
+      "referenceSha256": "90cb96c6d72f6873ae9c75ac077d6b4f5e220ba48e18820c536e13a55a99ce13",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "3778d289c32f8a2fa2242317051b3e3c52572bb0ee560254419b15f7abcf267a",
+      "referenceSha256": "35bf73f6c24f08a014f991cd868fcdba956284e516f4cde019199043ecc17a4a",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/012-offer-shared-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/012-offer-shared-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/013-review-terms-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/013-review-terms-1-exchange-sender.png",
+      "sha256": "90cb96c6d72f6873ae9c75ac077d6b4f5e220ba48e18820c536e13a55a99ce13",
+      "referenceSha256": "90cb96c6d72f6873ae9c75ac077d6b4f5e220ba48e18820c536e13a55a99ce13",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/013-review-terms-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/013-review-terms-2-exchange-recipient.png",
+      "sha256": "202b44d7af7eda3a80d03c190c0eef370ea89f606904908ff61f72910c22848c",
+      "referenceSha256": "99a14b34803aaeabf5d2eaf547977cbb46a2e2aaace3b0fe6ebd9463394d5eab",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/013-review-terms-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/013-review-terms-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/013-review-terms-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/013-review-terms-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-1-exchange-sender.png",
+      "sha256": "5e8fdf186f38d6eb238550d87921e5f7e3e9a935672b57be7ba829c3996eb810",
+      "referenceSha256": "5e8fdf186f38d6eb238550d87921e5f7e3e9a935672b57be7ba829c3996eb810",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-2-exchange-recipient.png",
+      "sha256": "b6ad1f5329803524edd330d65ca3cd06976f5cdca69ab6f592811cd76641f9bf",
+      "referenceSha256": "a0a53b3621716fda9c92392f7bc0552c250211b93798a452282092c730214643",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/014-accept-terms-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/014-accept-terms-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-3-outer-witness.png",
+      "sha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "referenceSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/016-settled-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/016-settled-1-exchange-sender.png",
+      "sha256": "387ce5aa62ced7befd9e612edb99685e5b61d27e22f8b93a4ec61b64774c4e3f",
+      "referenceSha256": "387ce5aa62ced7befd9e612edb99685e5b61d27e22f8b93a4ec61b64774c4e3f",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/016-settled-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/016-settled-2-exchange-recipient.png",
+      "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+      "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/016-settled-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/016-settled-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/016-settled-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/016-settled-3-outer-witness.png",
+      "sha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "referenceSha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/018-second-offer-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/018-second-offer-1-exchange-sender.png",
+      "sha256": "526bd5bceb5b536c7268293f50672cd93def5c88d45e10a4374fba269c4cb2bb",
+      "referenceSha256": "526bd5bceb5b536c7268293f50672cd93def5c88d45e10a4374fba269c4cb2bb",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/018-second-offer-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/018-second-offer-2-exchange-recipient.png",
+      "sha256": "ba9a06bf39b1ec3c2f3fee2a62d95187348dff9ca270f01d26d10585166ac8c6",
+      "referenceSha256": "9d44c3d03d91347224fa0f70ff8259e19731279846b00ef37fceaa1c3127ccd2",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/018-second-offer-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/018-second-offer-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/018-second-offer-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/018-second-offer-3-outer-witness.png",
+      "sha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "referenceSha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/019-withdraw-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-withdraw-1-exchange-sender.png",
+      "sha256": "ffc5235319a0ca113389957924cf1ccdae09f08181f449062e97d1de4c2d2488",
+      "referenceSha256": "ffc5235319a0ca113389957924cf1ccdae09f08181f449062e97d1de4c2d2488",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/019-withdraw-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-withdraw-2-exchange-recipient.png",
+      "sha256": "e119d35cc24c59c27f87bfcbdf3355976180124013719623915fc7fac2d7250a",
+      "referenceSha256": "3ce18be7776a77c4b6508f4c736468f3ebf22e2d5d4a3b069c85b33995b82cbb",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/019-withdraw-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/019-withdraw-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/019-withdraw-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-withdraw-3-outer-witness.png",
+      "sha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "referenceSha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-1-exchange-sender.png",
+      "sha256": "8ebff83f35fd4e7bf5b64eff138af8901a73c4de6781249b647e35155e8396fb",
+      "referenceSha256": "8ebff83f35fd4e7bf5b64eff138af8901a73c4de6781249b647e35155e8396fb",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-2-exchange-recipient.png",
+      "sha256": "84c6110d0ed7e5139ac8c7cd6f1bee2c3a47d5c291acdd421a65398afadbed1a",
+      "referenceSha256": "f7b170293a72824f911a0e5e6b3b53b0b85b244d5456ed79b250b707b8a2435e",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/021-withdrawn-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/021-withdrawn-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-3-outer-witness.png",
+      "sha256": "8b0907c57ad3ad69c68b8212fdac4332485a391ba2c1ab929538e253091eca74",
+      "referenceSha256": "8b0907c57ad3ad69c68b8212fdac4332485a391ba2c1ab929538e253091eca74",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "08ef89cb5d5e7e3193209bd896a09b729a8d67967a375e66d5c5195399a1a067",
+      "referenceSha256": "08ef89cb5d5e7e3193209bd896a09b729a8d67967a375e66d5c5195399a1a067",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "84c6110d0ed7e5139ac8c7cd6f1bee2c3a47d5c291acdd421a65398afadbed1a",
+      "referenceSha256": "f7b170293a72824f911a0e5e6b3b53b0b85b244d5456ed79b250b707b8a2435e",
+      "classification": "changed",
+      "expected": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/022-reload-outcome-2-exchange-recipient-expected.png",
+      "diff": "/tmp/cluster-pr66-complete-gutter-candidates/comparisons/credit-exchange-ordinary/022-reload-outcome-2-exchange-recipient-diff.png",
+      "rawRgbaDifference": {
+        "pixels": 267,
+        "bounds": [
+          0,
+          451,
+          11,
+          474
+        ]
+      }
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "8b0907c57ad3ad69c68b8212fdac4332485a391ba2c1ab929538e253091eca74",
+      "referenceSha256": "8b0907c57ad3ad69c68b8212fdac4332485a391ba2c1ab929538e253091eca74",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "credit-exchange-ordinary/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611558122/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "945c4e3b2a84551def07a57be443b4e81d6f86959419200ff9989cefde2bf0a1",
+      "referenceSha256": "945c4e3b2a84551def07a57be443b4e81d6f86959419200ff9989cefde2bf0a1",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "sha256": "8d1a6a3b59a926d41abfbdf622e3c690ec63c782430b07dbd00ae969fab119c9",
+      "referenceSha256": "8d1a6a3b59a926d41abfbdf622e3c690ec63c782430b07dbd00ae969fab119c9",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/010-private-room-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/010-private-room-2-dawn-listener.png",
+      "sha256": "df4ce079db3a386b588f8f062fe7f26a1f831760ee4b6e4002f7eae54f002154",
+      "referenceSha256": "df4ce079db3a386b588f8f062fe7f26a1f831760ee4b6e4002f7eae54f002154",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/010-private-room-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/010-private-room-3-outer-witness.png",
+      "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "referenceSha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+      "sha256": "200d76c101355d2cca7535002383aae921ec6110925e4b5e5de455ef50464dea",
+      "referenceSha256": "200d76c101355d2cca7535002383aae921ec6110925e4b5e5de455ef50464dea",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+      "sha256": "0fee74baa745baf89f25462ecf3f418102b71a8093ba1bb483ad42c441d21105",
+      "referenceSha256": "0fee74baa745baf89f25462ecf3f418102b71a8093ba1bb483ad42c441d21105",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/013-choose-history-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/013-choose-history-1-nacre-envoy.png",
+      "sha256": "9f08344bf30c0c26cb4a44defbb16125c7c358c4317aae629e507d9971848ae1",
+      "referenceSha256": "9f08344bf30c0c26cb4a44defbb16125c7c358c4317aae629e507d9971848ae1",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/014-invite-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/014-invite-1-nacre-envoy.png",
+      "sha256": "2fe2afe2302ebfcd8ec8841a255d9ca853d74686f2176f43d36466a6e20ebada",
+      "referenceSha256": "2fe2afe2302ebfcd8ec8841a255d9ca853d74686f2176f43d36466a6e20ebada",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/014-invite-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/014-invite-2-dawn-listener.png",
+      "sha256": "c626a2c8d4a9174a859fddf302ff8d99323d09e4cb752ed689c2381335fb0385",
+      "referenceSha256": "c626a2c8d4a9174a859fddf302ff8d99323d09e4cb752ed689c2381335fb0385",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/014-invite-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/014-invite-3-outer-witness.png",
+      "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "referenceSha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/015-consent-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/015-consent-1-nacre-envoy.png",
+      "sha256": "ca4fa09f454a323b11263376c051640e99d56a636bc7ee742e214264a2cb00bc",
+      "referenceSha256": "ca4fa09f454a323b11263376c051640e99d56a636bc7ee742e214264a2cb00bc",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/015-consent-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/015-consent-2-dawn-listener.png",
+      "sha256": "644d561c5ba81d2bb4fdc60f021a4d0d8372c9e8e909a844998eebd2cc4ef9cf",
+      "referenceSha256": "644d561c5ba81d2bb4fdc60f021a4d0d8372c9e8e909a844998eebd2cc4ef9cf",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/015-consent-3-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/015-consent-3-outer-witness.png",
+      "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "referenceSha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/016-recover-consent-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/016-recover-consent-1-dawn-listener.png",
+      "sha256": "d15af9e5a896359d6f0038bfb26291eb9400f01fcab5ae0b89b5ec6a4bb12adc",
+      "referenceSha256": "d15af9e5a896359d6f0038bfb26291eb9400f01fcab5ae0b89b5ec6a4bb12adc",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/016-recover-consent-2-outer-witness.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/016-recover-consent-2-outer-witness.png",
+      "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "referenceSha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "classification": "unchanged"
+    },
+    {
+      "relative": "selected-history-consent/phone/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr66-complete-gutter-candidates/originals/12611577222/test-results/stories/selected-history-consent/phone/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+      "sha256": "733a24939e1d2e011ef561f266af325156e9589acb87ecb65991ea16d4490f9e",
+      "referenceSha256": "733a24939e1d2e011ef561f266af325156e9589acb87ecb65991ea16d4490f9e",
+      "classification": "unchanged"
+    }
+  ]
+}

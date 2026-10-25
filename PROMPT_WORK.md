@@ -463,3 +463,9 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | A
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 67 and its predecessor in the delivery acceptance table with an explicitly unverified current-head preview.
 
 Prompt 159 | 9dd12b26735f231849160ebce55dd865dfe8b16214285ff3c2405787a23b3ba5 | Retain metadata-only separator proof and isolated unchanged fleet test pass; preserve original timeout and pending PR66 reproduction.
+
+Prompt 150 | 8847b34152b66c5bb92294fd401802af6f3d790cb0d684b05fcb533820cfb06c | Retain four-case strict request40225364900 identities and exact four-reference-only repair audit before active publication.
+
+Prompt 151 | 42237fca74f27474d29b3b7d115ce945159649ca2afd100e52219b56f5c80b4e | Verify complete118-view phone candidates and retain99unchanged19changed exact comparison triples for independent review.
+
+Prompt 152 | 5c65807bf9c9f332c8a179cefa6fdba51466149e10497ff67183e2f25c9cbe90 | Retain complete118-view strict success and exact23-reference audit; publish corrected66 normally for unchanged required fullCI and hosted checks.

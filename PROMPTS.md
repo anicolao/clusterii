@@ -2050,3 +2050,128 @@ Reviewer: Independently confirmed run40242503554 live with briefing/session jobs
 Delegated reviewer instruction, attributed to the reviewer; refer to main meta PR67 preparation continuation.
 
 Reviewer: While sole66 run40242503554 remains live, continue PR67 preparation rather than idle. Reconciliation03a3b71f independently audited: original prompt/continuation archives exact and canonical append-only; source/tests/checker unchanged, unit registration retained. With fresh disk reserve, run full existing unit command once to check original suite-level timeout (preserve failed log, no deadline/assertion change). Complete already-authorized integration of current66 bb58f85a and16 reviewed new Linux observation images including correctedphone020; verify all72 image hashes against reviewed originals, exact source/spec integration against9bd21c68, no inherited reference loss. Prepare/push one guarded complete4size observation strict request when local checks pass; required fullPR67 publication still contingent on strictpass and independent integration audit. Do not change live66 or duplicate its diagnostic request. Prioritize any66 terminal failure/result as it arrives; no GitHub merge. Log/commit/push attributed evidence.
+
+
+## Prompt 161: Approved gutter references
+
+Delegated reviewer instruction; main meta Reviewer four phone gutter diffs approved.
+
+Reviewer: Independently inspected all four PR66 phone expected/actual/diff triples from /tmp/cluster-pr66-current-diffs. Differences solely in left gutter behind foreground panels: clipped map-label text removed by reviewed label placement; roster/credit/system panels, controls, values, selected art and focus indicator unchanged. Approve exact actual baseline hashes: campaign-scheduled-start/phone/linux-arm64/026-started-rosters-2-dawn-envoy-2.png 5088b66aff976be6dada0a61ee23350ac903450bb9b4cbdf538c6398834e16cd; credit-exchange-ordinary and credit-exchange-recovery phone/linux-arm64/011-compose-2-exchange-recipient.png both c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32; selected-history-consent/phone/linux-arm64/017-return-to-chart-1-dawn-listener.png 733a24939e1d2e011ef561f266af325156e9589acb87ecb65991ea16d4490f9e. Promote only these four on prepared66, preserve all other references/source, and run complete affected phone journeys with strict assertions/deadlines unchanged to expose later states before publishing corrected66. Keep live67 candidate run untouched; any further differences need individual review. Review is scoped regression approval, not full concept or release acceptance. Also independently checked d7259f98 workflow/request/runner bindings, production and observation spec identical f741e8a0, and live job121264203778. Reconcile this exact handoff and preceding PR66 failure checkpoint in committed/pushed attributed logs. No merge.
+
+
+
+
+## Prompt 162: Complete candidate efficiency
+
+Delegated reviewer instruction; main meta Reviewer complete affected-phone diff inventory.
+
+Reviewer: Independently fetched terminal first two strict logs40225364900: ordinary now fails012-offer-shared recipient267pixels; start now fails026-started-rosters envoy4 206pixels. Earlier approved images passed; these are new unreviewed later states. Preserve still-live history/recovery jobs. To avoid serial first-failure reruns, after current matrix completes prepare one bounded candidate-generation run for all four complete affected phone journeys (118views), exact reviewed ae12fa12 source/specs and same budgets, retain original failures. Compare every candidate with inherited references and produce exact unchanged/changed/missing inventory with all changed expected/actual/diff triples for independent inspection. Generation is not acceptance, no automatic reference updates. Then promote only independently approved changed hashes and strict-verify complete journeys. No active66 publication until verified. Continue PR67 artifact verification/review prep; no duplicate download. Log this exact reviewer-directed efficiency correction and all evidence in committed/pushed logs. No merge.
+
+
+
+
+## Prompt 163: Complete gutter approval
+
+Delegated reviewer instruction; supervisor main meta records complete19-hash approval.
+
+Reviewer: Completed independent full candidate diff review for66 run40227118604. Verified all118 original and reference Gitblob hashes versus ae12fa12:99unchanged19changed,12distinct actual hashes. Viewed11 new distinct expected/actual/diff triples; remaining distinct c781e0ae is previously independently viewed/approved compose image, and duplicate expected/actual hashes independently rechecked. All differences are exclusively left/right map-label gutter fragments behind panels; foreground roster/owned-system/credit terms/acknowledgements/balances/focus are unchanged. Approve exactly19 hashes in /tmp/cluster-pr66-complete-gutter-candidates/reviewer-approved19.json for scoped regression. Preserve pre-existing scroll/duplicate feedback presentation as outside this label delta, not broad design acceptance. Promote these19 only atop approved four-image repair; run complete strict affected phone journeys unchanged, then publish corrected66 when passing and verify all required CI/hosted exact revision. No automatic approval of other diffs. Independently verified67first56 byte-identical5bf4597c;16new as previously reviewed, phone020home hold remains. Commit/push exact approvals, duplicate mapping, source/artifact provenance and attributed logs. No merge.
+[
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+    "sha256": "39a5198f2e6aa321a29f13904d8836864f9c1d0e4809a5219e0f603309d3d6be",
+    "referenceSha256": "66073c33911ec874398a480b846586d8050d2738ce48224d47ddd18af29cbbf3"
+  },
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+    "sha256": "7900f4f440ec20bb226b784d9907ea6e549a96ff3191dfacfd3e2fc444bd7f9c",
+    "referenceSha256": "1129940bc000f4be5de6e9bbf294d868e3c5b22a4d8d5e3eeac30cd956038c59"
+  },
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+    "sha256": "ad7870e26a289aa446b16efd055662b25cf51e0aae9151c56fbb7497dbdf6651",
+    "referenceSha256": "b22de1c06c31831528f2dfc5e7929969043a20edf207d542c6552e79553d8325"
+  },
+  {
+    "relative": "campaign-scheduled-start/phone/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+    "sha256": "d297210d1aa82087db7e81dacce591ef04b88297a99d8bc12fc3dbcd12c799d8",
+    "referenceSha256": "d1fa595f674d94266053f38845d2d66f7247a655b0e0d2ff622414a6788b8591"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+    "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+    "referenceSha256": "59d2c5e714d72dbef572fa91e39347290252b26af84f717ba497904d8be759cf"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+    "sha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+    "referenceSha256": "59d2c5e714d72dbef572fa91e39347290252b26af84f717ba497904d8be759cf"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+    "sha256": "3778d289c32f8a2fa2242317051b3e3c52572bb0ee560254419b15f7abcf267a",
+    "referenceSha256": "35bf73f6c24f08a014f991cd868fcdba956284e516f4cde019199043ecc17a4a"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+    "sha256": "202b44d7af7eda3a80d03c190c0eef370ea89f606904908ff61f72910c22848c",
+    "referenceSha256": "99a14b34803aaeabf5d2eaf547977cbb46a2e2aaace3b0fe6ebd9463394d5eab"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+    "sha256": "b6ad1f5329803524edd330d65ca3cd06976f5cdca69ab6f592811cd76641f9bf",
+    "referenceSha256": "a0a53b3621716fda9c92392f7bc0552c250211b93798a452282092c730214643"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+    "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+    "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f"
+  },
+  {
+    "relative": "credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+    "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+    "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+    "sha256": "3778d289c32f8a2fa2242317051b3e3c52572bb0ee560254419b15f7abcf267a",
+    "referenceSha256": "35bf73f6c24f08a014f991cd868fcdba956284e516f4cde019199043ecc17a4a"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/013-review-terms-2-exchange-recipient.png",
+    "sha256": "202b44d7af7eda3a80d03c190c0eef370ea89f606904908ff61f72910c22848c",
+    "referenceSha256": "99a14b34803aaeabf5d2eaf547977cbb46a2e2aaace3b0fe6ebd9463394d5eab"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/014-accept-terms-2-exchange-recipient.png",
+    "sha256": "b6ad1f5329803524edd330d65ca3cd06976f5cdca69ab6f592811cd76641f9bf",
+    "referenceSha256": "a0a53b3621716fda9c92392f7bc0552c250211b93798a452282092c730214643"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/016-settled-2-exchange-recipient.png",
+    "sha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+    "referenceSha256": "126f39e6b62ee9385e6f662109ee50b46b7717591d40e94c703e233b0618b51f"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/018-second-offer-2-exchange-recipient.png",
+    "sha256": "ba9a06bf39b1ec3c2f3fee2a62d95187348dff9ca270f01d26d10585166ac8c6",
+    "referenceSha256": "9d44c3d03d91347224fa0f70ff8259e19731279846b00ef37fceaa1c3127ccd2"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/019-withdraw-2-exchange-recipient.png",
+    "sha256": "e119d35cc24c59c27f87bfcbdf3355976180124013719623915fc7fac2d7250a",
+    "referenceSha256": "3ce18be7776a77c4b6508f4c736468f3ebf22e2d5d4a3b069c85b33995b82cbb"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/021-withdrawn-2-exchange-recipient.png",
+    "sha256": "84c6110d0ed7e5139ac8c7cd6f1bee2c3a47d5c291acdd421a65398afadbed1a",
+    "referenceSha256": "f7b170293a72824f911a0e5e6b3b53b0b85b244d5456ed79b250b707b8a2435e"
+  },
+  {
+    "relative": "credit-exchange-ordinary/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+    "sha256": "84c6110d0ed7e5139ac8c7cd6f1bee2c3a47d5c291acdd421a65398afadbed1a",
+    "referenceSha256": "f7b170293a72824f911a0e5e6b3b53b0b85b244d5456ed79b250b707b8a2435e"
+  }
+]
+
+
+
