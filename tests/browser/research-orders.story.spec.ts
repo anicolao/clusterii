@@ -11,6 +11,32 @@ const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
 const research = (page: Page) =>
   page.getByRole("region", { name: "Research selection", exact: true });
+const selectedRowContained = async (page: Page) => {
+  const radio = research(page).locator('input[type="radio"]:checked');
+  const bounds = await radio.evaluate((input) => {
+    const row = input.closest("label")!;
+    const reader = row.closest(".research-tracks")!;
+    const box = row.getBoundingClientRect();
+    const clip = reader.getBoundingClientRect();
+    const control = input.getBoundingClientRect();
+    const style = getComputedStyle(input);
+    const ring =
+      document.activeElement === input
+        ? Math.max(
+            0,
+            parseFloat(style.outlineWidth) + parseFloat(style.outlineOffset),
+          )
+        : 0;
+    return {
+      top: Math.min(box.top, control.top - ring),
+      bottom: Math.max(box.bottom, control.bottom + ring),
+      clipTop: clip.top + reader.clientTop,
+      clipBottom: clip.top + reader.clientTop + reader.clientHeight,
+    };
+  });
+  expect(bounds.top).toBeGreaterThanOrEqual(bounds.clipTop);
+  expect(bounds.bottom).toBeLessThanOrEqual(bounds.clipBottom);
+};
 const aliases = [
   "Market envoy",
   "Independent investor",
@@ -418,6 +444,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         check: async () => {
           expect(await accepted("investing", 1)).toEqual(first);
           expect((await receipts(uid)).length).toBe(receiptsBefore.length + 1);
+          await selectedRowContained(owner);
           await expect(
             research(owner).getByRole("radio", { name: /^investing/ }),
           ).toBeChecked();
@@ -645,6 +672,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           await expect(stale.getByRole("alert")).toContainText(
             "Your research choice is preserved",
           );
+          await selectedRowContained(stale);
           expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
         },
       },
@@ -676,6 +704,7 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           await expect(
             research(stale).getByRole("radio", { name: /^recruiting/ }),
           ).toBeChecked();
+          await selectedRowContained(stale);
           expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
         },
       },
