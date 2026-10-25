@@ -1,0 +1,13 @@
+# PR59 corrected Linux reference approval
+
+Reviewer independently inspected22 distinct changed/new originals covering31 PNG files in artifact12587017318. Remaining57 PNGs exactly match previously inspected originals by SHA256. All88 references are approved, including four released-draft017 focus-clearance views and previously absent short captures. Large composition was viewed with display scaling; native-pixel typography measurement is not claimed. Exact dispositions/hashes are in hashes.json. This is scoped regression-reference approval, not full design/release certification.
+
+Run40162403768 completed four genuine journeys in3.3m with original assertions/deadlines, retries0 and max-failures1. Full198088651-byte archive SHA256 e3e1f33f0aaf7cc1a76c1782a7c6507d53c183e8488c563cb2fda976d42b73cc and all ZIP CRC/path checks passed. Originals remain /tmp/cluster-pr59-linux-corrected/originals. No failed output is used.
+
+## Source and dirty provenance
+
+Requested target92b9b88f7cdc6fab6199291f952b030d6b860b20; generation source d5d412ebe2e5468d68d8737527dabea39fdf5f1b; executor5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba. Exact Git comparison confirms unchanged production src/static, functions, tests/helpers/story, dependencies/lockfiles, story configuration and pinned Nix derivation. Full nine-file delta is retained: only branch-restricted generation request/workflow/scripts, outer/inner recovery dispatch and continuation logs. Required application/strict workflow paths unchanged.
+
+The request validator fails unless checkout is clean, then writes ci-evidence/recovery-request/{request,executor}.json before invoking generation. Those paths and ci-evidence/nix-renderer outputs are unignored; they deterministically make source.dirty=true. Frozen-lockfile installs, Svelte sync and Functions build produce ignored outputs. The bounded runner has no source/test mutations. Retained executor/request/log and source analysis explain dirty:true as generation evidence output; we do not rewrite the manifest as clean or claim an unavailable post-run Git status. Each manifest binds exact executor and spec3043bb7b122ed00f08ce904c794ce908b285e91fc903d32024870b39df0985d1. Renderer uses Playwright1.61.1 Chromium149.0.7827.0, pinned ARM image824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321 with original fonts/args and reduced motion.
+
+Promotion uses unchanged reviewed-baseline tooling and all four complete passed manifests. No tolerance, assertions, production code or rendering configuration changes accompany promotion. Strict integrated verification remains required. Carry references normally through60/61; preserve their independently running generation requests.

@@ -23,7 +23,8 @@
       "port": 19000
     },
     "firestore": {
-      "port": 18080
+      "port": 18080,
+      "websocketPort": 19150
     },
     "functions": {
       "port": 15001

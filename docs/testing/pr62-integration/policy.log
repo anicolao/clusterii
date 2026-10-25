@@ -1,0 +1,28 @@
+$ node --test scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs
+✔ admission fixture changes only designated domain time inputs (0.354458ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.284208ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.256875ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.387125ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.296084ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.730542ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.364083ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.384334ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.43825ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.408958ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.341375ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.341084ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.92725ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.815541ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (4.888291ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.390375ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.428083ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.299625ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 57.450625
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
