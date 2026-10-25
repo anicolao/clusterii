@@ -1715,3 +1715,23 @@ Reviewer: Completed independent inspection of all eight PR62 invitation002 expec
 Delegated reviewer instruction; human question remains verbatim in main meta Human progress question, not duplicated as a direct prompt.
 
 Reviewer: User asks why is the goal stalled. Independently checked goal metadata: status blocked, although actionable work now exists; do not confuse goal scheduling state with CI state. Invitation generation40185678311 now terminalSUCCESS. Continue immediately: bounded extraction of complete invitation candidates/manifests, independent SHA/spec/source validation and compare all72 historical frames against references and eight approved actuals, present changed later frames for review. Agent was idle awaiting this result.58application/docs/publicationPASS, stories still live;59-61 remaining checks live. Diagnose elapsed/live step progress for58 visual jobs read-only to distinguish slow from stuck; do not blindly restart. Keep priority next green PR. Reconcile human question verbatim in meta and this delegated instruction in attributed PROMPTS/PROMPT_WORK; commit/push logs with evidence. No merge.
+## Prompt 127: Travel catch-up
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 22:10 Toronto”.
+
+Reviewer continuation 2026-10-21 22:10 Toronto: #62 published cleanff1d616 on #61; pane idle since21:59. Continue milestone6 pause/catch-up travel acceptance as a small successor to #62 using TestStepHelper user-story journeys. Cover real leased delayed/batched tick settlement, correct departure/arrival timing and conservation, repeated/concurrent delivery idempotence, private owner/observer views, reload and keyboard access across four viewports. Preserve procedural checks and explicit harness boundaries; do not certify hosted scheduling from an emulator clock. After that slice continue remaining IMPLEMENTATION_PLAN work rather than stopping solely for queued CI. Keep targeted identity-raster investigation, exact-head previews and independent visual/Linux gates open. Latest GitHub retrieval had a TLS timeout, so recheck read-only when available, without broad duplicate runs. Carry checkpoints through22:10 into attributed PROMPTS/PROMPT_WORK and committed/pushed meta logs. No merge.
+
+
+
+## Prompt 128: Capture diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 23:46 Toronto”.
+
+Reviewer continuation 2026-10-21 23:46 Toronto: pane stopped with workspace routing discovery timed out at cleaneeb84e6. Resume the existing pause/catch-up slice and trace diagnosis; do not restart or duplicate work. Reviewed correction to zero stationed fleets after departure, retaining selection of the actual traveling fleet. Diagnose the 4K ten-second step using completed trace timing and bounded diagnostic scope; preserve assertions, exact pixels and original failure artifacts. Finish candidate review, strict comparison and appropriate regressions before publication. Carry checkpoints through23:46 into attributed logs and commit/push. Current CI has no newly completed failure beyond recorded #52 raster recurrence. No merge; retain full independent/Linux/preview gates.
+
+
+## Prompt 129: Isolated next-stack preparation
+
+Delegated reviewer instruction; main meta Reviewer next-stack preparation.
+
+Reviewer:59 generation nowSUCCESS, strict stilllive;60/61stories and62application/strict remainlive. No new failure or green frontier change. While waiting, prepare PR63 parent integration in an isolated branch based on approved62 promotion05d30b20, preserving all reviewed parent fixes and baseline hashes. Do not push63 active branch before62 integration boundary. Inspect exact original63 delta from its original parent to avoid reintroducing obsolete source/reference reversions. Determine bounded paused-fleet-travel generation path using established Nix tooling; preserve assertions and require complete successful four-size candidates for independent review before promotion. Keep new feature work out of scope. Reconcile this handoff/meta into attributed logs; no merge.
