@@ -1,0 +1,110 @@
+[
+  {
+    "id": "live-fleet-formation",
+    "project": "phone",
+    "source": {
+      "commit": "c2f919bce69c167c0f0a7247063de7556ee07c34",
+      "dirty": false,
+      "spec": "tests/browser/fleet-formation.story.spec.ts",
+      "specSha256": "ebd68226fa2090476b4047efac4d766d6d00feee318b5a1a349d7099bd03751e"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "id": "live-fleet-formation",
+    "project": "desktop",
+    "source": {
+      "commit": "c2f919bce69c167c0f0a7247063de7556ee07c34",
+      "dirty": false,
+      "spec": "tests/browser/fleet-formation.story.spec.ts",
+      "specSha256": "ebd68226fa2090476b4047efac4d766d6d00feee318b5a1a349d7099bd03751e"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "id": "live-fleet-formation",
+    "project": "large",
+    "source": {
+      "commit": "c2f919bce69c167c0f0a7247063de7556ee07c34",
+      "dirty": false,
+      "spec": "tests/browser/fleet-formation.story.spec.ts",
+      "specSha256": "ebd68226fa2090476b4047efac4d766d6d00feee318b5a1a349d7099bd03751e"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  }
+]
