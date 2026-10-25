@@ -503,3 +503,9 @@ Reviewer continuation 2026-10-21 19:59 Toronto: clean0bd3936 and pane idle after
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 20:39 Toronto”.
 
 Reviewer continuation 2026-10-21 20:39 Toronto: #59 is pushed clean943fdce and pane idle since20:35. Continue live fleet travel/cargo/arrival coverage next as a small successor to #59, preserving authoritative force conservation, owner versus observer privacy, recovery and four-viewport keyboard evidence. Keep existing procedural assertions until equivalent stories replace them. Maintain explicit rule-approval boundaries and label clock harnesses. Continue targeted raster investigation when evidence permits and retain current-head preview checks; do not duplicate broad CI runs into the documented backlog. Carry main checkpoint through20:39 with attributed PROMPTS/PROMPT_WORK, commit/push. No merge; keep progressing independently while CI waits.
+
+## Prompt 58: Cargo applicability
+
+Delegated reviewer instruction; main meta records exact corrected cancellation image approvals and remaining Linux scope.
+
+Reviewer: independent review confirms corrected released-draft capture at all four sizes and all22 corrected short macOS images (13distinct); exact hashes and scope recorded in latest main meta-prompts.md. Linux remains unapproved pending single run40162403768; preserve it and57short/53Pages/live strict handles. Continue PR60 from current59 using previously inspected96Linux images only after exact current-source/renderer/hash validation; shared SystemFleets footer change may invalidate them, so regenerate affected captures once if necessary and inspect before promotion. Prioritize completed earlier failures. Reconcile new mainmeta review entries into attributed PROMPTS/PROMPT_WORK and push logs. No merge.
