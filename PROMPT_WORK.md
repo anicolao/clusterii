@@ -273,3 +273,5 @@ Prompt 69 | 9430f52d3d07628cecbcda944f5192332a09671342bfb3b48a32cb266d1c4346 | R
 Prompt 74 | b636ddc861570349646aad5591a9a83da187819c0e5db3469a08a829277464d2 | Integrate both branch histories with exact parent archives and tested verbatim prompt and continuation preservation.
 
 Prompt 84 | f89f8067c6a792dedc96e977ac1d79f0360aa61be4fe6ba3a0eaf5a3ada00984 | Prepare one guarded complete Linux credit generation for reviewed label correction, preserving exact original eight-case budgets and assertions.
+
+Prompt 84 | f89f8067c6a792dedc96e977ac1d79f0360aa61be4fe6ba3a0eaf5a3ada00984 | Request the single eight-case corrected Linux credit family at source 3a41749e54a829fff880e0e8b07ce0ad9e908ba4; retain all outcomes for inspection.
