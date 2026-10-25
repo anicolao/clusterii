@@ -1,0 +1,21 @@
+{
+  "productionCandidate": "35211669",
+  "sourceCommit": "3a41749e",
+  "executorCommit": "dc1fdd4a48b1e17de6f3a793ea07cdd9d1dc5f00",
+  "run": 40154163510,
+  "status": "in_progress",
+  "cases": 8,
+  "expectedImages": 212,
+  "localGates": [
+    "check",
+    "lint",
+    "91 unit tests / 1536 assertions",
+    "story policy",
+    "15 prompt tests",
+    "exact eight-case collection",
+    "request validation 1 positive / 9 negative"
+  ],
+  "referenceApproval": "pending fresh Linux inspection",
+  "original212": "retained; 210 acceptable at original source; 2 phone labels previously held",
+  "reviewerForward": "PR66 source review; PR67 source/82 assertions and sampled Darwin label comparison only. No Linux approval."
+}

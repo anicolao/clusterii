@@ -2,7 +2,7 @@
   "parent": "4f917d724022107f4c6550b11740ae45dcbe446f",
   "childOriginal": "d9d72d96f7cd055188d592fd50a32669d4213b26",
   "localMerge": "fa414436",
-  "published": false,
+  "published": true,
   "checks": {
     "promptTests": 14,
     "stagedHook": "pass",
@@ -11,7 +11,7 @@
     "lint": "pass"
   },
   "reviewer": "Independent Nix 14-test pass; whitespace and continuation findings resolved.",
-  "parentStatusAt": "2026-10-25T02:15:16Z",
+  "parentStatusAt": "2026-10-25T02:16:33Z",
   "parentStrict": {
     "run": 40150284054,
     "result": "success",
@@ -20,13 +20,21 @@
   },
   "parentApplication": {
     "run": 40150284065,
-    "result": "in_progress",
-    "lastObservable": "Application checks in Nix-provisioned renderer; no live substep logs"
+    "result": "success",
+    "browserPassed": 36,
+    "duration": "55m27s"
   },
   "forward": {
     "62": "No generated candidates",
     "63": "No generated candidates",
     "64": "Preserve reviewed cohort runner on integration",
     "65": "Reviewed setup/history evidence; no generation candidates; historical publish 404 unresolved"
+  },
+  "publicationReason": "Reviewer explicitly superseded serial waiting; normal push fa414436 to existing PR53. Existing PR52 application retained.",
+  "parentAllRequired": "success",
+  "childRuns": {
+    "application": 40153836581,
+    "strict": 40153836539,
+    "publication": 40153836540
   }
 }

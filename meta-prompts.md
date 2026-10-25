@@ -3878,3 +3878,50 @@ Reviewed revised archive path and48-line regression test. Canonical prompt recor
 ## Reviewer handoff — prompt fixes verified
 
 Reviewer: independently reviewed revised prompt archive/continuation checks and ran14prompt tests underNix, allpassed. Both findings addressed: exact body whitespace and inherited continuation retention. Proceed with current parent integration and53publication after52requiredchecks; preserve previous assertions/baselines. Mainmeta has evidence, please reconcile latest reviewer findings/validation in attributed logs at checkpoint. No PRmerge.
+
+## Reviewer execution adjustment — start prepared PR53 CI
+
+PR53 localfa414436 has parentsa1023434 and reviewed52head4f917d72, clean worktree, completed independent prompt-check review/tests. Waiting for52application before publishing this ready child is a supervisor-imposed serialization, not a user requirement. User requests a green stack. Start53requiredCI now on reviewed child while existing52application finishes; retain exact ancestry and never call either green until all checks pass. This is not a duplicate run or PR merge. If52fails, diagnose and propagate actual necessary fix in normal stack order.
+
+
+## Reviewer handoff — publish ready child now
+
+Reviewer: reviewed53fa414436 is ready and includes52head4f917d72. Publish53 now to start its requiredCI while existing52application continues; this supersedes my earlier wait-before53-publish sequencing. Serial waiting is not user-required and delays the green stack. Preserve exact reviewed code/references and both histories, no duplicate reruns, no force-push or PRmerge. Diagnose any52failure and carry required fix forward normally. Reconcile current mainmeta findings/validation in logs at checkpoint. Then prepare54 correction with fresh Linux inspection as already required.
+
+## Reviewer verified publication — PR53 repaired child
+
+Independently verified GitHub PR53 headfa4144360fd9152f180df50659a50c4bf214aeba, MERGEABLE, parent52 integrated. New required jobs live: application40153836581/job121050799884, strict40153836539/job121050800104, documentation40153836593/job121050799851, publish40153836540/job121050799774; generation121050799877 exists but not evidence of captures. Push d9d72d96→fa414436 confirmed. Recovery findings/provenance ledger previously pushedc35d60a7. No PR merge. PR52application40150284065 stilllive; continue original job. Implementer proceeds to54 freshLinux correction evidence.
+
+
+## Reviewer milestone — PR52 fully green
+
+Independently verified PR52 exacthead4f917d724022107f4c6550b11740ae45dcbe446f: MERGEABLE/CLEAN, all5 checks SUCCESS. Application40150284065/job121040216438 completed2026-10-25T02:16:33Z,55m27s; retained full/tmp/cluster-pr52-green-application.log shows36browser tests passed48.3m. Exactstory40150284054/job121040216519 succeeded112passed8skipped; docs40150284192 andpublish40150284062 succeeded. Generation job success was skipped generation, not a baseline source. Scoped reference approval rests on previously independently inspected originals and CSS fix. First repaired green PR achieved; full52–140stack remains active and incomplete. No merge. PR53headfa414436 CI already live,54preparation in progress.
+
+
+## Reviewer handoff — confirmed first green PR
+
+Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCESS, application completed02:16:33UTC55m27s with36browser tests passing. Full evidence in mainmeta and/tmp/cluster-pr52-green-application.log. Record milestone in next attributed ledger/log push. Continue53existingCI and54freshLinux capture review preparation, keeping all prior holds. No duplicate52run or PRmerge; fullstackgoal remains.
+
+
+## Reviewer forward triage — PR66 observations
+
+PR66 head0666727da28a8c05f1734ac11a1f0b66afb0efb7, base65. Application/docs historicallypassed; strict39727848651/job119655799672 totals116passed52failed8skipped. Generation119655799405 explicitly produced no files/artifacts; onlyverify12412619397(1860848222bytes). Publish39727848614 failed expected-headHTTP404. Logs/tmp/cluster-pr66-{failed,generate,publish}.log. No Linux baseline approval.
+
+Read full observation-inputs/entropy-hook modules and3guard tests, design review; independently ran3guard tests in establishedNix on exact-source files at/tmp/cluster-pr66-review,3passed0failed. Hook only matches separately loaded compiled service URL, enforces demo/loopback and exact single signature, fixes entropy identity for named fixture while preserving real account objects/star/tick/seed; not draw/report injection. Full577-line story review remains outstanding (earlier combined diff truncated; not treated as fully read). No production change in66. Designreview explicitly retains phone map-label collision Tupã/Tania Australis; do not silently approve it. PR67c4a5cac2 title identifies deterministic label-placement correction; inspect actual corrected screens before accepting those compositions.
+
+
+## Reviewer completed story read — PR66
+
+Re-read full577-line observation story in two untruncated sections. Real identity/admission and Scheduler request, leased ticks with repeated full-state no-op, private views equal authorized observationView with exact report fields/no seed/draws, rendered facts compared to each player's projection, unknown distinct from zero, missed scan retains original report, full historical warning below pinned age and inside bounded scroll panel, reload preserves authorized historical report. No new definite code defect. Existing documented map-label overlap and missing Linux baseline evidence remain unresolved visual gates; no image approved by code review.
+
+
+## Reviewer forward review — PR67 label correction
+
+Reviewed remaining component host changes, full91-line observation journey delta and49-line geometry helper at c4a5cac2f5e3c503bcb3878638de4b7c1fdd6f80, plus full label manager/algorithm and design/baseline notes. Independently ran three exact-source algorithm tests under established Nix environment at /tmp/cluster-pr67-review, three passed,82 assertions. Story retains private/canonical-state checks and adds resize restoration, both motion preferences, label containment/collision checks and keyboard home/focus restoration. No definite code defect identified.
+
+Independently inspected full-size committed phone018 before(0666727d) and after(c4a5cac2): Tupã/Tania Australis collision is visibly corrected, both labels remain readable, observation content/controls retained. Approve only this sampled macOS regression image correction; not all67 images, Linux references or release composition. Other captures and fresh Linux evidence still require inspection. Main work remains53 liveCI and54 pending-label fresh capture review; no new implementation requested from this forward review.
+
+
+## Reviewer checkpoint — PR53 partial checks
+
+PR53fa414436 publication now passed3m54s, documentation passed2m6s; strict and application still pending. PR52 remains first fullygreen milestone. Implementer54 integrated53 at35211669 and prepares restricted eight-case Linux credit generation with original assertions/deadlines, healthy work; do not duplicate generation or approve uninspected candidates.
