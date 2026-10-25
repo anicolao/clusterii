@@ -497,3 +497,309 @@ Reviewer continuation 2026-10-21 19:08 Toronto: pane idle since19:00 after succe
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 19:59 Toronto”.
 
 Reviewer continuation 2026-10-21 19:59 Toronto: clean0bd3936 and pane idle after #57 completion. Continue next live UX-08 fleet travel/cancellation or reorganization story as a small successor to #57, with authoritative conservation, private owner/observer projections, interrupted/reload recovery and four-viewport keyboard evidence, keeping procedural regressions. Also inspect why CI jobs have remained queued for hours using read-only run/runner status; record whether capacity or workflow dependencies explain it, without cancelling unrelated jobs or launching broad duplicate reruns. Retain exact-head preview gates and targeted raster diagnosis; second identical-layout pair is not a fix. Carry latest checkpoints through19:59 and attributed logs, commit/push. Continue useful independent work; no merge.
+
+## Prompt 57: Green stack
+
+Delegated reviewer instruction; refers to meta-prompts.md checkpoints19:37/19:47/19:58 and Human priority override — Green PR stack. Human questions remain verbatim in supervisor meta, not duplicated as direct human prompts here.
+
+Reviewer19:58: Human follow-ups in main meta ask why no passing current PR and what causes the72 pixel mismatches. Recovery6fd7f1f3 is clean/idle; prioritize the actual strict backlog now. Reconcile human questions from main meta without duplicating them as direct user prompts; log this reviewer delegation. Preserve production freeze and all219/220 originals. Using established Nix, inspect already verified /tmp/cluster-strict-208-12561036357/artifact.zip and strict208 first-failures.json. Selectively extract the72 actual/expected/diff triples plus relevant trace/renderer metadata into a fresh owned directory; no download or CI rerun needed unless specific data is absent. Map18 first-failing stories across4sizes to exact baseline paths, captured/base source identities and actual differences. Classify only with evidence: intentional source/design change, genuine regression, unstable test/render state, renderer mismatch, or unresolved; do not guess from pixel counts. Check expected baseline provenance and corresponding UX contract/plates before calling an intentional change acceptable. Group shared root causes with exact per-failure coverage while retaining all72 records; distinguish differences masked by first-failure behavior. Publish concise cause table and exact original comparison index, with concrete fix/review action for each group. Investigate the first evidenced common cause through code/history; no baseline promotion, threshold changes, source rewrites or new broad generation. Report unknowns honestly. Commit/push classification/provenance and reconcile checkpoints19:37/19:47/19:58. No PR140 churn/newPR/merge. Current173-image review remains58/173, not approval;220 inset needs later Linux evidence. Timeout/privacy/motion/release holds remain separately open. Deliver diagnosed CI causes, not another unclassified screenshot inventory.
+
+PRIORITY OVERRIDE FROM HUMAN JUST RECEIVED: "Let's get a passing PR. Focus on only that. Get there by approving all generated baselines, examining all diffs with care and fixing each diff according to what is wrong with it. A stack of green PRs is the goal. if necessary, go back to the last green PR and work forward." Reviewer: Read the verbatim new priority and handoff in main meta-prompts.md. Prior no-baseline-promotion/no-PR-update holds are superseded: carefully review and approve correct generated references, fix defects and publish validated fixes to existing PRs, following checks to GREEN and moving forward through the stack. No blind approval of wrong output, no threshold weakening, no merge/force reset. Reuse retained evidence and start the72 mismatch diagnosis, but deliver fixes and green required checks, not diagnosis alone. Inspect latest green51 and ancestry if needed. Pause unrelated feature/release expansion. Log attribution and commit/push logs. Nix only.
+
+
+
+
+
+## Prompt 58: Inspect references
+
+Delegated reviewer clarification; refers to meta-prompts.md Human clarification — Inspect before approval. The direct human clarification stays verbatim in supervisor meta.
+
+Reviewer clarification: Human explicitly said: when i say "approving all generated baselines" I mean *after inspecting them*. Verbatim recorded in main meta under Human clarification — Inspect before approval; reconcile in next substantive log commit. Every baseline requires actual inspection and disposition before approval, fixing wrong output. Current live GitHub confirms51 allgreen,52 immediately based on51 strictred/applicationgreen. I am reading52 failure log read-only to assess a concrete forward route while you classify140; no branch writes from supervisor.
+
+
+
+
+
+## Prompt 59: First green
+
+Delegated reviewer priority; refers to the new PR52 finding in main meta-prompts.md and the Human priority override — Green PR stack.
+
+Reviewer new concrete evidence: prioritize first GREEN via52 from green51. I independently retrieved exact current52 strict39696293785/job119554354070 log at /tmp/cluster-pr52-failed.log: only TWO failures,110passed,8skipped; both short Linux sign-in identity editor captures, each1994pixels (identity-validation001 and identity-keyboard-return004). No missing refs.52 head28c11c408015f9fd8ad35a122d32b654eabd0fac application/docs/generation green. This is substantially smaller than140 backlog. Preserve your140 diagnosis progress; use isolated checkout of existing52 branch, inspect both original expected/actual/diff triples and shared root cause, fix or approve after inspection, publish52 and follow all required checks green, then move fixes forward through stack preserving work. No threshold weakening/no merge. Full finding recorded main meta; reconcile and commit/push logs. I have made no52 changes.
+
+
+
+
+
+
+## Prompt 60: Shared evidence
+
+Delegated reviewer coordination; refers to main meta-prompts.md Reviewer evidence — Reuse identity raster diagnosis.
+
+Reviewer coordination: While compaction runs I am retrieving only identity-validation and identity-keyboard-return PNG/layout entries from exact verification artifact12399020127 using existing bounded extractor into /tmp/cluster-pr52-reviewer-originals for independent inspection. Please reuse this directory rather than duplicate download. You retain all branch writes/fix ownership. I read existing IDENTITY_RASTER_DIAGNOSIS.md; older paired evidence narrows sentence painting instability but does not approve current52 output. Reconcile latest main meta evidence entry with logs.
+
+
+
+
+## Prompt 61: Raster disposition
+
+Delegated reviewer inspection; refers to main meta exact PR52 visual disposition.
+
+Reviewer completed exact52 independent inspection: extraction12399020127 finished102files/129129116bytes in /tmp/cluster-pr52-reviewer-originals. Viewed BOTH actual/diff PNGs and exact28c11c40 expected baselines at1280x720. Same intro sentence is sole visible difference; all art/input/8portraits/actions intact. Both actual compositions visually acceptable; no design hold for them. Historical alternating sentence rasters means blind replacement alone may stay flaky: proceed stable capture/render correction and exact verification. Full disposition in main meta; reconcile/commit logs. No reviewer branch edits.
+
+
+
+
+## Prompt 62: Diagnostic label
+
+Delegated reviewer finding; refers to latest main meta request-summary correction and forward-stack findings.
+
+Reviewer quick code finding: identity-paint-request.mjs GITHUB_STEP_SUMMARY still says "One feature010/phone strict case". Replace stale string with retained identity-scene renderer observation (diagnostic, not integrated acceptance) before commit. Validator correctly binds identity-paint/52. Reviewed README source-vs-merge distinction and negative-local conclusion, sound. Main meta has new exact53/54/55 results and this finding; reconcile in substantive commit. No broader review hold; proceed bounded Linux result then practical52fix/verification.
+
+
+
+
+## Prompt 63: Forward review
+
+Delegated reviewer inspection; refers to main meta PR54 phone-credit review; PR52 remains first.
+
+Reviewer forward work, keep52first: inspected all53 phone credit images from exact54artifact via35 SHA groups, full originals. Main meta records51 scoped visual approvals and2 fixes. Recovery013/014 sender pending button breaks "acknowledgeme / nt..." midword. Before54promotion use short truthful pending button text (e.g. Awaiting receipt; full status stays above), preserve pending/disabled behavior, review affected corrected captures. Ordinary28 all visually acceptable; recoveryother23 acceptable;159nonphone remain. Reuse /tmp/cluster-pr54-reviewer-candidates; no duplicate download. Reconcile logs at next substantive commit. This does not block52/53.
+
+
+
+
+## Prompt 64: Stable correction
+
+Delegated reviewer instruction; refers to main meta forward credit review and PR52 Nix preservation review.
+
+Reviewer: main meta now records independent inspection of all53 short PR54 credit images (34 SHA-identical representatives); all53 visually acceptable for exact source, pending source applicability. Total106/212 inspected,104 acceptable and2phone pending-label fixes; desktop/large106 remain. Reconcile next substantive commit. Read PR52 Nix workflow/launcher diff: original application and story checks preserved, no new review blocker found. Keep52 first: when bounded probe returns, turn evidence into the smallest stable rendering correction and publish52 for actual required CI; a complete causal explanation is not required if correction is well-founded and repeatability verified. No indefinite diagnostic expansion or baseline-guided selection. No merge.
+
+
+
+
+## Prompt 65: Inspected promotion
+
+Delegated reviewer approval; refers to main meta exact PR52 inspection and controlled promotion after Linux probe.
+
+Reviewer: observed your crop comparison: all96 Linux probe crops match the actual failed screenshot, not oldexpected. Clarify negative reproduction as failure to reproduce alternation, not failure to reproduce actual raster. Both exact failed actual full compositions already independently approved. This supports promoting those two inspected actual baselines as the next controlled PR52 attempt, with precise provenance, then running full strict CI; do not invent an unsupported production CSS fix merely to claim a cause. If actual is stable in integrated verification, deliver green. If integrated verification alternates, use that new evidence for the smallest capture/layout repair. Retain strict zero tolerance. Main meta now also records28 ordinary desktop54 approvals, total134/212 reviewed,132 acceptable/2phone fixes/78uninspected. Reconcile logs and publish52 promptly; no further isolated diagnostic necessary before that attempt.
+
+
+
+## Prompt 66: Complete credit review
+
+Delegated reviewer disposition; refers to main meta PR54 complete212-image review with two required phone corrections.
+
+Reviewer: all212 original PR54 credit candidate compositions now inspected,210 acceptable and the two already identified phone pending-label images require correction. Large53 review and exact scope/limitations appended to main meta. Preserve source/renderer applicability checks before promotion; fix phone label and inspect every changed capture. Keep52 actual required checks first, then53 and54 forward. Reconcile main meta in next substantive committed/pushed log update. No merge and no blind baseline update.
+
+
+
+
+## Prompt 67: Briefing review
+
+Delegated reviewer inspection; refers to main meta PR55 retained candidate review and PR53 exact triple.
+
+Reviewer: supervisor fetched exact55artifact12410489436 live-return-briefing files to /tmp/cluster-pr55-reviewer-candidates, completed224files183751970bytes. No duplicate download needed. Desktop27 and phone27 independently inspected/acceptable; mainmeta records source/spec hash and duplicate groups. Short/large54 still uninspected. Also independently viewed53sole failed triple and confirmed actual SHA identical to52approved replacement. Continue52required checks then53/54, reconcile latest mainmeta in next substantive committed/pushed log update.
+
+
+
+## Prompt 68: Forward acceptance
+
+Delegated reviewer disposition; refers to main meta PR55 all108 and PR56 execution-failure evidence.
+
+Reviewer: PR55 all108 compositions independently inspected and acceptable; mainmeta now has final short/large disposition. Confirm production/helper applicability before promotion after52/53/54. PR56 exact strict failure evidence is at /tmp/cluster-pr56-failure-evidence; three identity actuals approved as recorded in mainmeta, but selected-history pending acknowledgement remains a real execution failure. Construction candidates still being extracted, not approved. Continue existing52 checks and54 label correction; reconcile latest mainmeta into your next substantive committed/pushed logs. No duplicate CI run or merge.
+
+
+
+## Prompt 69: Construction review
+
+Delegated reviewer inspection; refers to main meta PR56 partial construction review and PR54 pending-label source review.
+
+Reviewer: exact PR56 construction extraction finished at /tmp/cluster-pr56-reviewer-candidates,336files334606424bytes, all8 family manifests passed. I inspected116/160: all72 ordinary sizes plus recoveryphone22 and recoverydesktop22 acceptable scoped references. Recoveryshort/large44 remain UNINSPECTED. Mainmeta contains exact groups/dispositions and PR54 local1e63b518 code review (sound label correction, fresh rendering still required). Please reconcile latest mainmeta in next substantive commit/push; no duplicate downloads. Keep52/53/54 publication order and current52 run first.
+
+
+
+## Prompt 70: Construction complete
+
+Delegated reviewer disposition; refers to main meta PR56 all160 construction review and remaining source applicability.
+
+Reviewer: PR56 construction review now covers all160/160 captures from exact artifact12411965142 at /tmp/cluster-pr56-reviewer-candidates. Remaining44 recovery short/large inspected and acceptable; mainmeta records groups and downscaled large-view limitation. Confirm production/helper/source applicability before promotion in stack order. Credit54 still needs fresh rendered inspection after label fix. Reconcile latest mainmeta in next substantive committed/pushed logs. Continue existing52 checks, then53/54; no merge or duplicate CI run.
+
+
+
+## Prompt 71: Construction applicability
+
+Delegated reviewer finding; refers to main meta exact PR56 tree applicability.
+
+Reviewer: independently fetched PR56 artifact source7a7b8f7af6d89769f01ca912311cfbdaf4503e38 and full tree diff to56head9cfea0df is EMPTY. This proves production/helpers/spec/assets/dependencies/config applicability for all160 approved construction captures at that head. Mainmeta records this; no need repeat source investigation. Recheck intervening stack fixes before actual promotion. I read54 local phone geometry failure; fresh credit approval remains pending while you diagnose.
+
+
+
+## Prompt 72: Briefing applicability
+
+Delegated reviewer finding; refers to main meta exact PR55 tree applicability.
+
+Reviewer: PR55 source applicability also independently confirmed: fetched c8129fec764fb8824bc951751b35aaedc3176c0f, full tree diff to88be06f1eb28e6073c91be0385ffef8623d590a6 empty. All108 inspected briefing candidates apply to that complete tree; recheck intervening fixes. Mainmeta has this finding plus56 completion/source confirmation; please reconcile and commit/push them with next substantive checkpoint. No need repeat these tree comparisons.
+
+
+
+## Prompt 73: Credit inspection
+
+Delegated reviewer finding; refers to main meta local credit visual correction and uninspected PR57 extraction.
+
+Reviewer: independently viewed new54 phone013 and014 full originals in your checkout. Awaiting receipt is contained on one line and terms/status/focus retained: local visual correction accepted, still require exact Linux capture review before Linux promotion. Mainmeta has this plus57 checkpoint. I extracted57 artifact12408071600 to /tmp/cluster-pr57-reviewer-candidates (127files159772239bytes);60PNG phone/desktop/large passed manifests, short absent due execution failure, all60 UNINSPECTED. Entire artifact sourcec2f919bc matches57head1ba7cac0. No duplicate download needed. Reconcile latest meta with next substantive logs.
+
+
+
+## Prompt 74: Concurrent publication
+
+Delegated reviewer sequencing update; refers to main meta authorization to publish reviewed PR53 while PR52 application continues.
+
+Reviewer: reviewed53fa414436 is ready and includes52head4f917d72. Publish53 now to start its requiredCI while existing52application continues; this supersedes my earlier wait-before53-publish sequencing. Serial waiting is not user-required and delays the green stack. Preserve exact reviewed code/references and both histories, no duplicate reruns, no force-push or PRmerge. Diagnose any52failure and carry required fix forward normally. Reconcile current mainmeta findings/validation in logs at checkpoint. Then prepare54 correction with fresh Linux inspection as already required.
+
+
+## Prompt 75: Integrated recurrence
+
+Delegated reviewer finding; refers to main meta PR52 current strict recurrence and PR57 partial-family approval.
+
+Reviewer: I confirmed52 strict111pass/1identity-validation-short001 mismatch. I will independently bounded-extract the three PNGs from artifact12581856096 into /tmp/cluster-pr52-cadb-review (avoid duplicate download). Please investigate source/layout stability, not another blind swap. Also57all60 available phone/desktop/large fleet images now inspected acceptable, SHA groups/mainmeta recorded; short absent/unapproved. Reconcile latest logs at next substantive checkpoint.
+
+
+
+
+
+## Prompt 76: Raster alternation
+
+Delegated reviewer finding; refers to main meta current PR52 exact reverse raster and required stability verification.
+
+Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review, independently inspected. Actual87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129 EXACTLY equals original pre-cadb baseline; expectedfb76d40... is promoted prior actual. This establishes cross-run alternation. Do not blind-swap back. Fix deterministic layout/paint cause and verify both relevant short identity stories under pinned renderer before full exact checks. Mainmeta has hashes/findings. Fleet57all60 available captures approved, short absent; reconcile logs.
+
+
+
+
+
+## Prompt 77: Leading approval
+
+Delegated reviewer decision; refers to main meta all11 current Linux images and narrow CSS/reference approval.
+
+Reviewer: independently inspected all11 fresh Linux PNGs from40149691891 at /tmp/cluster-pr52-leading-linux/originals, all acceptable scoped references. Independent byte comparison:9 unchanged, only validation001 and keyboard004 differ; both87d509... same original raster. Approved together with reviewed28px CSS correction, not blind swap. Proceed minimal CSS +2 reference/provenance changes on52 and required full checks; no tolerance changes. Mainmeta latest entries include candidate code review and fresh image inspection; reconcile/commit/push with attributed PROMPTS/PROMPT_WORK. Focused generation not full stability proof. Do not duplicate download.
+
+
+
+
+## Prompt 78: Ordered recovery
+
+Delegated reviewer instruction; refers to main meta human first-green priority, whole-pixel identity approval and PR52 terminal-green gate before PR53 publication.
+
+Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; upload still live, application40150284065 still live. Finish monitoring these existing jobs, verify all required statuses at exact4f917d72 head, then work forward to53 immediately with the reviewed whole-pixel identity correction and applicable inspected references. Keep full comparisons/assertions; no blind approval, duplicate runs or merge. Reconcile latest mainmeta checkpoint into attributed logs and commit/push at substantive checkpoint. Prioritize first fully green PR and ordered forward publication over new features. Existing54/59 visual holds remain.
+
+
+
+
+
+## Prompt 79: Forward eligibility
+
+Delegated reviewer finding; refers to main meta PR62/63 no-artifact generation and PR53 source/Nix parity inspection.
+
+Reviewer: while you prepare53, mainmeta now records full62 code review and63 comparison against reviewed61 story. No new definite code defects found. Both62 run39708780947 and63 run39723194222 successful generate jobs explicitly produced no files/artifacts; only verify artifacts exist, so no Linux family approved. Generate fresh pinned-Nix candidates when reached and inspect before promotion. Logs retained /tmp/cluster-pr62-{failed,generate}.log and /tmp/cluster-pr63-{failed,generate}.log. Also independently confirmed your53 workflow/CSS and actual five Nix/runner file hashes match52head4f917d72. Reconcile these mainmeta findings in next attributed log commit; continue current first-green/53 sequence without interrupting or duplicating jobs. No merge.
+
+
+
+
+## Prompt 80: Branch integration
+
+Delegated reviewer clarification; refers to main meta authorized parent-to-child integration without GitHub PR merges or history rewriting.
+
+Reviewer: proceed with normal parent-to-child Git branch integration and conflict resolution preserving both histories and append-only logs. The user prohibition is merging PRs, not integrating the preceding branch into its child; this is authorized preparation for the requested green stack. Do not merge/close GitHub PRs, force-push or rewrite history. No human confirmation needed. Mainmeta records this clarification. Preserve current prepared changes and your checks, resolve the log conflict, then continue publication after52requiredstatus. Reconcile latest62/63review findings as previously sent.
+
+
+
+
+## Prompt 81: Forward runner
+
+Delegated reviewer finding; refers to main meta PR64 runner and PR65 setup/source review, not new reference approval.
+
+Reviewer: mainmeta now includes64full runner review and5 independent Nix tests passed; preserve64cohort behavior during forward integration rather than replacing its runner wholesale with52. PR65 full setup/helper delta reviewed; retained verify artifact confirms all4 history journeys passed42exactviews and15setupcontrols each, source4f13d4 fulltree identical65head.65publish still historicalHTTP404, both64/65generationjobs produced no captures. No new baseline approval. Reconcile into attributed logs at next checkpoint; keep current53conflict/hook work and existing52job, no duplicate jobs or PRmerge.
+
+
+
+
+## Prompt 82: Verbatim retention
+
+Delegated reviewer code finding; refers to main meta exact canonical prompt body preservation.
+
+Reviewer code finding in your in-progress preservePromptHistory: records(...).trimEnd() allows canonical copied request trailing whitespace edits while claiming verbatim retention. Please preserve body bytes with only the exact structural separator handled, and test a changed trailing space/newline against an otherwise exact archive. Keep child-prefix, regular-file/commit-addressed archive equality, ordered records and current history constraints. Mainmeta records finding; proceed with existing work without duplicate CI.
+
+
+
+
+## Prompt 83: Continuation preservation
+
+Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
+
+Reviewer second finding: updated if (archivedBase || staged.length > previous.length) bypasses all PROMPT_WORK validation on archived-base CI checks. An exact prompt archive should not allow deleting/mutating inherited continuation records. Require inherited records retained in order for archived-base checks and both parents during integration; add negative test with exact prompt archive but deleted/mutated prior continuation. Whitespace fix and its regression tests look sound. Mainmeta records this. Continue current53fix; no duplicate CI.
+
+
+
+## Prompt 84: First green
+
+Delegated reviewer confirmation; refers to main meta exact PR52 green milestone and retained application log.
+
+Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCESS, application completed02:16:33UTC55m27s with36browser tests passing. Full evidence in mainmeta and/tmp/cluster-pr52-green-application.log. Record milestone in next attributed ledger/log push. Continue53existingCI and54freshLinux capture review preparation, keeping all prior holds. No duplicate52run or PRmerge; fullstackgoal remains.
+
+
+
+## Prompt 85: Forward label
+
+Delegated reviewer checkpoint; main meta records PR66/67 scoped source and sample review, not Linux approval.
+
+Reviewer checkpoint: PR53 publish now passes; keep existing strict/application jobs. Main meta-prompts.md has completed PR66 story review and PR67 full label implementation/story review plus 3 independent Nix tests (82 assertions) and independently inspected phone018 before/after; only sampled macOS label correction accepted, no Linux/all-image approval. At your next log checkpoint reconcile/commit/push these attributed findings. Continue current PR54 candidate run40154163510 and inspect fresh originals before promotion; no extra work or duplicate run requested. User clarification remains approval only after inspection. No PR merge.
+
+
+
+
+## Prompt 86: Outer dispatch
+
+Delegated reviewer failure finding; main meta records candidate40154163510 pre-test Usage exit2 and scoped forward findings.
+
+Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh:5 (only stories:verify|stories:generate|application: accepted), log/tmp/cluster-pr54-candidate-failed.log ends Usage exit2. Inner recovery:credit alone is insufficient. Fix exact outer recovery:credit dispatch, verify both layers and retain invalid argument rejection before one new isolated request/source with existing Nix execution. No images from this run. Preserve diagnostic and current53CI; do not rerun attempt1 request. Mainmeta also has54executor review,67CI triage and scoped68phone edge correction inspection for next attributed log push.
+
+
+
+
+## Prompt 87: Dispatch confirmation
+
+Delegated reviewer checkpoint; main meta records dispatch review and PR68/69 scoped forward findings, not new image approval.
+
+Reviewer checkpoint: independently reviewed exact outer/inner credit dispatch fix and ran your 2 dispatch tests underNix, both pass. New54run40154407498 confirmed live on a40542c9; continue it. Mainmeta now also records68 scoped phone005 edge-label inspection and historicalCI;69 complete671-line story/production/fixture review plus3 independent guard tests pass, but no69images approved. Historical69short identity-pending-retry001 has1994pixel leading mismatch; verify after inheriting52fix. At next checkpoint reconcile/commit/push current mainmeta and attributed logs. Keep54fresh-image inspection and53existingCI as priorities; no new job requested.
+
+
+
+
+## Prompt 88: Archive references
+
+Delegated reviewer checkpoint; main meta records PR70 selective48-frame approval, not inherited112 or short stability approval.
+
+Reviewer: PR70 selective extraction completed328files289968374bytesCRC checked; source ddd7512c fulltree identical417bb622. Independently inspected all48 new027–032 archive PNGs across four sizes, approved only these regression references (hash group indexes in /tmp/cluster-pr70-*-archive-groups.json). Inherited112 frames remain unreviewed and recorded7pixel short stability issue unresolved. Reconcile this mainmeta checkpoint into attributed logs at next commit/push. Keep existing53CI and54fresh credit job as priorities; no new job or interruption requested.
+
+
+
+
+## Prompt 89: Travel references
+
+Delegated reviewer approval; main meta records PR70 exact-source160-frame family scope and unresolved current verification/stability gates.
+
+Reviewer: mainmeta now records all160 retained PR70 fleet-travel PNGs covered. All28phone+28desktop inherited frames are SHA256-identical to previously inspected61 images; independently inspected remaining28short+28large inherited through18groups each, plus48newarchive previously reported. Approve only this exact-source retained regression family; current integrated-head CI and recorded7pixel local stability issue remain gates. Indexes /tmp/cluster-pr70-*-inherited-groups.json and archive-groups.json; source ddd7512c identical fulltree417bb622. Please reconcile, attribute, commit/push mainmeta at next checkpoint. Continue53/54 priority, no additional job requested.
+
+
+
+## Prompt 90: Credit approval
+
+Delegated reviewer independent visual approval; main meta records exact artifact12583688735 whole212 regression-family disposition.
+
+Reviewer: independently recomputed all212 current/prior hashes:202byte-identical to reviewed acceptable references,10changed. Visually inspected every changed original (013/014 all4sizes, phone016/017). Approve all212 fresh Linux regression references from artifact12583688735; previous phone013/014 holds resolved by readable one-line Awaiting receipt. Mainmeta records scope/evidence. Proceed with exact-source promotion and existing PR54 integration, attributed logs commit/push and strict CI. No tolerance changes or PR merge. PR70 all160 scoped retained images also recorded for later.
+
+
+## Prompt 91: Briefing preparation
+
+Delegated reviewer forward instruction; main meta records exact PR54 blob verification, PR55 inspected108 eligibility and PR71 source-only review.
+
+Reviewer: independently verified all212 committed PNG blobs at17915680 match approved originals, and GitHub54 exact head/checks live. Keep those handles and53jobs. Continue preparing55 from54 while checks run, using already reviewed108briefing images with explicit source/renderer applicability; inspect any changed compositions. Mainmeta also records71 full story/code and historical CI review (no71image approval). Reconcile new reviewer entries into attributed logs at next commit/push. No duplicate generation or PR merge.
