@@ -481,3 +481,23 @@ Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | A
 Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 68 and its preview/dependency gates, preserving the 01:59 reviewer evidence without treating missing Linux images as acceptance.
 
 Prompt 165 | fa2ab67ed65ea7fdccf3755be414f2af5729e7920e441334d005cbb632f5404e | Reconcile original68 ancestry with exact prompt archives and continuation order while preserving tested executable and reference bytes.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Begin the next live fleet-contact story with real formation, private acquired/history views and guarded deterministic HMAC identity inputs.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Correct contact-story rail assertions to distinguish Back to system from Back to galaxy while preserving failure traces and containment checks.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Count the legitimate absence of a pre-formation military container as zero fleets in conservation checks; retain original integration failures.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Bind contact lookup and keyboard fleet selection to the actual recorded fleet number and authoritative owner seat, not an assumed first number.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Reproduce contact annotation pointer interception, preserve interactive fleet markers and add complete current/history reading steps before candidate review.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Preserve the phone reading failure and verify report age and complete facts in separate bounded-scroll steps; carry reviewer checkpoints through 02:29.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Review four contact candidate journeys and add typed fail-closed fixture/projection guards and normal/reduced-motion parity before strict comparison.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Archive 76 exact contact captures, document source/privacy gates and distinguish skipped Linux generation from actual candidates while preserving supervisory history.
+
+Prompt 64 | c2cc49a756444a44c7f198c8d5026dcab2301e391a44fd450a9ac7eda1fae098 | Link PR 69 to its predecessor and exact-head preview gate after publishing reviewed fleet-contact stories and preserved regressions.
+
+Prompt 167 | 2c70c06d1c418cf3180c4b30dc1e72f4f5797e7f6d4092fcfaef64f47297f5e5 | Preserve exact original69 prompt and continuation ancestry without changing tested fleet-contact source/helpers or inherited references.
