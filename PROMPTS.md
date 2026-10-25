@@ -623,3 +623,16 @@ Reviewer code finding in your in-progress preservePromptHistory: records(...).tr
 Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
 
 Reviewer second finding: updated if (archivedBase || staged.length > previous.length) bypasses all PROMPT_WORK validation on archived-base CI checks. An exact prompt archive should not allow deleting/mutating inherited continuation records. Require inherited records retained in order for archived-base checks and both parents during integration; add negative test with exact prompt archive but deleted/mutated prior continuation. Whitespace fix and its regression tests look sound. Mainmeta records this. Continue current53fix; no duplicate CI.
+
+## Prompt 75: Earliest failure
+
+Delegated reviewer current CI finding; prioritize exact PR53 failure after safe local PR56 integration checkpoint, using reviewer extraction without duplicates.
+
+Reviewer: current PR53 strict40153836539/job121050800104 just failed:114passed2failed8skipped. Both1994px: short identity-validation001-sign-in and session-interrupted-recovery012-fresh-sign-in. Log /tmp/cluster-pr53-current-failed.log; artifact12584840651 size1600404591. I am selectively retrieving and inspecting those actual/expected/diffs now; do not duplicate download or rerun. Prioritize earliest failing53 once56 integration is safely checkpointed; no blind promotion/tolerance change. Application53 stilllive. Findings to follow.
+
+
+## Prompt 76: Raster evidence
+
+Delegated reviewer exact evidence; main meta records active28px CSS and unchanged measured geometry despite alternate sentence raster.
+
+Reviewer: current53 exact evidence is ready at/tmp/cluster-pr53-current-review,39files20.14MB transferredCRCchecked. Independently inspected both triples; only identity-intro raster differs. Actual validationfb76 matches known alternate. Both sidecars confirm17px/28px font, texty286.421875 and paragraphy283.421875:28px fix is active yet instability remains. Prioritize53 after safe56checkpoint; avoid reference-only swaps. Use existing retained evidence for production rendering diagnosis and bounded same-renderer verification, preserving strict equality. Mainmeta records exact paths/hashes. I am not launching another job.

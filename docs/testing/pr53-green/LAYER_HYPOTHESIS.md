@@ -1,0 +1,15 @@
+# PR53 recurrence: next bounded rendering check
+
+Current strict40153836539 fails2short identity frames by1994 compared pixels despite computed17px/28px and identical texty286.421875/paragraphy283.421875. Exact reviewer originals /tmp/cluster-pr53-current-review show only the intro raster differs. PR52 green did not establish cross-run stability. No reference-only swap.
+
+Source/sidecars place the sentence at fractional coordinates in an overflow reading pane within a backdrop-filtered instrument. Remaining hypothesis: rasterization relative to different paint/compositing origins can produce different glyph coverage despite identical DOM geometry. This is not proven causality.
+
+Use the existing retained static scene diagnostic locally to compare current28px leading with one explicit zero-distance3Dtransform paint layer,8bounded font/layout invalidations per case. Record CDP paragraph layer/reasons and exact crop hashes; no screenshot retry, masked content or baseline writes. Local Darwin result can establish layer mechanics only, not Linux stability/authenticated acceptance. If supported, bounded pinned-Linux real identity journeys must verify any production correction under unchanged deadlines before full exact CI.
+
+PR56 resolved index preserved separately at /tmp/cluster-pr56-staged-checkpoint.json; no PR56 push or hook bypass. Existing53application and54/55runs remain untouched.
+
+Local result: 16 captures in 2.944s, no errors, one crop per variant. Layout identical; explicit layer measured 574x28 with integer layer origin583,283 while DOM remains fractional. CDP evidence was collected only after the own-layer variant; it does not prove baseline layer absence. Neither variant reproduced alternation locally. Reviewer inspected both Darwin compositions as readable, not Linux approval. Candidate short-only translateZ(0) isolates paragraph painting without position/content changes; pinned-Linux real journeys remain required. No baseline changes. PR53 application is now SUCCESS; strict remains FAILURE114/2/8.
+
+Bounded Linux plan: same pinned image149.0.7827.0, existing identity-validation, keyboard-return and interrupted-session journeys, short1280x720 only. Exact collection3tests/3files; retries0/max-failures1/update-snapshotsnone, generation only to retain complete current images even if layer painting changes. Existing budgets/authentication/assertions unchanged. Expected distinguishing evidence: whether fresh/returned identity paragraphs retain identical same-state raster across the three real paths with dedicated painting; a pass is scoped evidence, not proof of historical cause or full strict stability. No reference approval is inferred. Branch-only request must be fresh and isolated from code; required PR workflows unchanged.
+
+Local checks: svelte/typecheck0errors0warnings; exact collection3; launcher/argument tests3passed. Raw result retained/tmp/cluster-pr53-layer-0YWpc2; diagnostic script now requires explicit IDENTITY_RETAINED_ROOT instead of a hard-coded local path, no second probe run.

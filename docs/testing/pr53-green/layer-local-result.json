@@ -1,0 +1,556 @@
+{
+  "source": "fa4144360fd9152f180df50659a50c4bf214aeba",
+  "browser": "149.0.7827.55",
+  "platform": "darwin",
+  "arch": "arm64",
+  "environment": null,
+  "args": [
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader",
+    "--num-raster-threads=2",
+    "--disable-skia-runtime-opts",
+    "--run-all-compositor-stages-before-draw",
+    "--disable-checker-imaging",
+    "--disable-partial-raster",
+    "--disable-gpu-rasterization",
+    "--disable-gpu"
+  ],
+  "elapsedMs": 2944,
+  "errors": [],
+  "layerEvidence": [
+    {
+      "layerId": "10",
+      "parentLayerId": "5",
+      "backendNodeId": 19,
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 574,
+      "height": 28,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        583,
+        283,
+        0,
+        1
+      ],
+      "anchorX": 0,
+      "anchorY": 0,
+      "anchorZ": 0,
+      "paintCount": 9,
+      "drawsContent": true,
+      "reasons": {
+        "compositingReasons": [],
+        "compositingReasonIds": []
+      }
+    }
+  ],
+  "records": [
+    {
+      "variant": "current-leading",
+      "iteration": 0,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "current-leading",
+      "iteration": 1,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "current-leading",
+      "iteration": 2,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "current-leading",
+      "iteration": 3,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "current-leading",
+      "iteration": 4,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "current-leading",
+      "iteration": 5,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "current-leading",
+      "iteration": 6,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "current-leading",
+      "iteration": 7,
+      "sha256": "e68cfe420d47605288804f2d58cbecd3c68f302df1ac101da5f4c661ad04c987",
+      "image": "current-leading-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 0,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 1,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 2,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 3,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 4,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 5,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 6,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    },
+    {
+      "variant": "own-layer",
+      "iteration": 7,
+      "sha256": "aa808df5c5c6e84200108f67bd33e650f4d3c339e7cc7f04b49e8d032f6fb5b9",
+      "image": "own-layer-0.png",
+      "geometry": {
+        "box": {
+          "x": 583.40625,
+          "y": 283.421875,
+          "width": 574,
+          "height": 28,
+          "top": 283.421875,
+          "right": 1157.40625,
+          "bottom": 311.421875,
+          "left": 583.40625
+        },
+        "text": [
+          {
+            "x": 583.40625,
+            "y": 286.421875,
+            "width": 429.625,
+            "height": 21,
+            "top": 286.421875,
+            "right": 1013.03125,
+            "bottom": 307.421875,
+            "left": 583.40625
+          }
+        ],
+        "font": "17px / 28px \"Atkinson Hyperlegible\", sans-serif"
+      }
+    }
+  ]
+}
