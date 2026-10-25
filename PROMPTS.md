@@ -834,3 +834,11 @@ Delegated reviewer policy-failure correction; main meta explicitly permits justi
 Reviewer: prioritize new current54failure before56 propagation. Both app40159161854/job121066868236 and strict40159161775/job121066867823 fail story-policy on credit-offers.spec.ts legacy hash after locator repair; full logs/tmp/cluster-pr54-integrated-{app,strict}.log. Inspect E2E_GUIDE and actual Pantheon tests/e2e before migration/reorganization. Resolve policy/coverage coherently: preserve held-write/reload/replay/private settlement and mock/managed-key coverage, use existing illustrated credit story where it truly covers semantics; do not remove assertions, silently refresh exemption hashes, or disable gate. If scoped legacy maintenance exception is necessary, make it explicit, justified and reviewable rather than silently broadening exemptions. Run policy gate with focused validation before publishing54 and propagating55. Preserve53live checks. Mainmeta records cause/evidence. No GitHub merge.
 
 
+
+## Prompt 96: Appended history
+
+Delegated reviewer immutable-index PR54 base-check failure; preserve exact copied request bytes and prove appended separator history.
+
+Reviewer: new actionable54documentation failure40159642901/job121068319226 on9a712a9b;16prompt tests pass but actual node scripts/check-prompts.mjs --base cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1 fails. Full log/tmp/cluster-pr54-policy-docs.log. I independently reproduced with immutableHEAD/index in isolated Git repo, so not just GitHub synthetic merge. Add meaningful regression for post-merge later appended prompt history and preserve exact archives/canonical ordering; run actual base check plus fixtures before publishing. Prioritize54then55propagation; retain running application/story evidence and53jobs. No GitHub merge.
+
+
