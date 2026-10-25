@@ -1,0 +1,19 @@
+file:///private/tmp/cluster-pr54-credit-review/[eval1]:3
+for(const family of ['chart','route'])for(const viewport of viewports){const c=selection([family,viewport]);const r=spawnSync('bun',[...c.args,'--list'],{encoding:'utf8',maxBuffer:1024*1024});if(r.status!==0)throw Error(r.stdout+r.stderr);assertListing(r.stdout,c);console.log(family,viewport,r.stdout.trim());}
+                                                                                                                                                                                                                      ^
+
+Error: Listing tests:
+Total: 0 tests in 0 files
+
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+
+    at file:///private/tmp/cluster-pr54-credit-review/[eval1]:3:215
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async node:internal/modules/esm/loader:224:26
+    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:221:20)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.18.0
