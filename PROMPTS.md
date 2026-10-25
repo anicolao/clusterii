@@ -497,3 +497,9 @@ Reviewer continuation 2026-10-21 19:08 Toronto: pane idle since19:00 after succe
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 19:59 Toronto”.
 
 Reviewer continuation 2026-10-21 19:59 Toronto: clean0bd3936 and pane idle after #57 completion. Continue next live UX-08 fleet travel/cancellation or reorganization story as a small successor to #57, with authoritative conservation, private owner/observer projections, interrupted/reload recovery and four-viewport keyboard evidence, keeping procedural regressions. Also inspect why CI jobs have remained queued for hours using read-only run/runner status; record whether capacity or workflow dependencies explain it, without cancelling unrelated jobs or launching broad duplicate reruns. Retain exact-head preview gates and targeted raster diagnosis; second identical-layout pair is not a fix. Carry latest checkpoints through19:59 and attributed logs, commit/push. Continue useful independent work; no merge.
+
+## Prompt 57: Fleet integration
+
+Delegated reviewer instruction; main meta records current parent verification and completed PR79 macOS scope, not Linux approval.
+
+Reviewer: PR56 99c40f39 publication verified. Continue57 from current56 with previously inspected60Linux candidates after exact source/renderer/hash validation; preserve exact history, run actual-parent/policy checks before pushing. Missing short captures require real generation and inspection. Preserve existing53-56 live/queued gates; prioritize earlier failures. Main meta now records completed79macOS review184/184, Linux not approved; reconcile attributed logs and push. No GitHub merge. Independent56checker verification underway.
