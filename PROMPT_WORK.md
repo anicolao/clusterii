@@ -408,3 +408,5 @@ Prompt 113 | 9e27b6541a18e45a5ca0930ce2725f01f0db572305d2f2390c5718bf6377175b | 
 Prompt 116 | 48904fc8e536cebad3c230a9e1dd918007b8b5bfddb1950a49ddb09ec36db142 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 118 | b28027d9a64f90e57c95498ec91c5b92fe5db21d8b62a7eeae258cd8ccc6fb6f | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 125 | 8741d551453a8ab70b68082b931e1d19469b1ac060e2f686dc8e285f075c150d | Issue one fresh source-bound eight-journey invitation candidate request after exact dispatch and collection validation.
