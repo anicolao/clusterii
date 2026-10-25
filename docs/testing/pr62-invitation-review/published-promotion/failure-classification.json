@@ -1,0 +1,19 @@
+{
+  "run": 40185322011,
+  "head": "7f56ac16e93503cec85839c6ba41bf7da4096eb4",
+  "rawLogSHA256": "5b6104b860d470f5a801c57a468c7cf211baa47e72adb5eb8fcd2f2c1f24b5fe",
+  "firstFailures": [
+    "tests/browser/story-baselines/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "tests/browser/story-baselines/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "tests/browser/story-baselines/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "tests/browser/story-baselines/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "tests/browser/story-baselines/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "tests/browser/story-baselines/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "tests/browser/story-baselines/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png"
+  ],
+  "pixelFailures": 8,
+  "passedPerViewport": 38,
+  "inheritedFleetFailures": 0,
+  "timeoutInFailureSummaries": false
+}

@@ -2299,3 +2299,10 @@ Reviewer: PR63 run40188998948 produced136PNGs; independently rehashed every cand
 Delegated reviewer instruction; main meta Reviewer paused-travel desktop inspection.
 
 Reviewer: Completed independent visual inspection of all22 distinct desktop paused-travel captures covering34files, exact hashes reverified and indexed /tmp/cluster-pr63-paused-linux/desktop-approved.json. Approve scoped regression: capacity validation2/21, accepted2/20formation and reload, waypoint range rejection/repair, accepted departuretick2 arrivaltick4, pause/recover/resume notices and focus, conserved arrival2fighters20infantry including surface, recovered fleet2/0. Peer views retain own resources and no foreign orders. Roster uses intentional bounded scrolling; not full-design/rules approval. Phone34 and desktop34 now reviewed; remaining68large/short unapproved. PR62 strict stilllive at7f56ac16 atcheck; preserve pending promotion boundary. Reconcile exact handoff/meta in attributed committed/pushed logs. No merge.
+
+
+## Prompt 349: Publish invitation correction
+
+Delegated reviewer instruction; main meta Reviewer PR62 terminal verification and prepared fix publication.
+
+Reviewer: Safe integration boundary reached. Independently confirmed PR62 strict40185322011/job121144780067 terminalFAILURE at7f56ac16; retained /tmp/cluster-pr62-post-parent-strict-failed.log. Exactly two invitation002 mismatches perviewport (eighttotal),38otherjourneys passed eachsize; inherited fleet failures gone, no timeout in failure summaries. All other4checksSUCCESS. Publish prepared exact reviewed eight-reference update05d30b20 onto active62 now by normal fast-forward, reverify72 approved invitation hashes and unchanged source/assertions, run required unchanged CI and verify publication. Do not rerun stale7f56ac16. Preserve isolated63 generation/review evidence; large/short68 remain unapproved. Reconcile exact handoff/meta in attributed committed/pushed logs. No GitHub merge.
