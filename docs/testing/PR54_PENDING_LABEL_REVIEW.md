@@ -17,3 +17,7 @@ Port9150 is owned by unrelated todo emulator PID48881, cwd/private/tmp/todo-pr42
 ## Project-root correction
 
 Second setup at /tmp/cluster-pr54-pending-ea6a28c9 stopped before tests because pinned Firebase Config.path rejects rules outside its project directory. Retain that failure. Use normal repository firebase.json with explicit task-owned Firestore websocket19150, consistent with established successor configuration; no emulator state, service semantics, or test limits change. The four-case collection was validated before execution.
+
+## Measured phone label correction
+
+First real phone execution at0ab45b7a stopped on the strengthened one-line check; three sizes unexecuted. Retained /tmp/cluster-pr54-pending-0ab45b7a includes original trace/log and reconstructed trace DOM/resources. This replay is diagnostic, not a replacement service journey/candidate. Exact retained fonts/CSS yield147.5px button,12px8px padding,129.5px content, while label needs131.4375px. It wraps cleanly into two words but fails the intentionally stronger one-line guard. Changing only compact commitment horizontal padding to6px produces one contained131.4375px rectangle atx208.53125–339.96875; button remainsx200.5–348,height66. Original assertions remain unchanged. New real rendered verification required. Documentation arrived during execution; production/spec stayed at0ab45b7a, any dirty manifest denotes only prompt/meta updates.

@@ -471,7 +471,7 @@
       gap: 8px;
     }
     .commitment :global(button) {
-      padding: 12px 8px;
+      padding: 12px 6px;
     }
   }
   @media (max-height: 700px) {
