@@ -1025,3 +1025,6 @@ Prompt 358 | 42e5d58b0f611cfbe5e2c40ab0c06168bf6228a037006c044b9fcb7099b2b9d4 | 
 Prompt 360 | e4f03cee81157e5e28a6ca013543675ab4ebe957e571c50c22d384b98a57f926 | Retain bounded maintenance strict failure at004, verify artifact and three prior exact matches, publish new triple for independent review.
 
 Prompt 361 | 25fb029c1554525e05928aa08ee3f3e91f91660bf31945311e201bd28fa12630 | Verify complete13-frame Linux maintenance candidates, ten unchanged and two approved matches; publish new007 triple for independent review.
+
+
+Prompt 364 | 55895557f584ed6ecaee9cd9efaef6fb4ab285fec592d416022ed16a6804d014 | Verify retained repeat artifact, equal acquisition summaries and complete short/reference comparisons; preserve failed first run and live PR checks.

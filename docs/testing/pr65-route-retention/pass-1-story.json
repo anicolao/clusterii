@@ -1,0 +1,657 @@
+{
+  "id": "interrupted-fleet-route",
+  "title": "Recover an interrupted route without duplicating its forces",
+  "inventory": [
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks and scan entropy identities are explicit harness controls; real HMAC draws and acquisition remain unchanged. Development transport capacity and tick rules remain under review; Submitted route recovery is distinct from unsent memory-only drafts; this does not certify managed encryption or hosted scheduling.",
+  "source": {
+    "commit": "e57e154e91d215047bd3e2503191dddecc65cfa3",
+    "dirty": true,
+    "spec": "tests/browser/fleet-route-recovery.story.spec.ts",
+    "specSha256": "1ecc3a5cbc05c563a67619a6742ea970266b7ad0a697b7911e0ed1a805c644e8"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "short",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-formation",
+      "description": "Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The actual capacity constraint disables formation without a command.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Invalid input does not change canonical state or reserve forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "010-inspect-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "010-inspect-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-complement",
+      "description": "Reduce infantry to the supported twenty and inspect the ready formation.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "011-choose-complement-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "011-choose-complement-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-formation",
+      "description": "Confirm formation with Enter. The authoritative receipt reserves two fighters and twenty infantry for tick one, without moving them yet.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "One accepted receipt and revision reserve the original forces without creating a fleet or moving the garrison."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "012-reserve-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "012-reserve-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-formation",
+      "description": "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload adds no revision, order or effect."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "013-reload-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "013-reload-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "settle-formation",
+      "description": "Advance the explicit domain clock once and invoke the real leased tick service. Repeat delivery must do no work; no fleet or outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "formed-fleet",
+      "description": "Read the authoritative formation result and select the new fleet with the keyboard. The other commander still sees only their own forces.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Units move from garrison to exactly one fleet; only this tick's recorded production changes empire totals."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "015-formed-fleet-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "015-formed-fleet-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "open-route",
+      "description": "Open the fleet route planner with the keyboard. Range limits each leg; speed determines its travel duration.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The real route details gain focus and show distinct range and speed.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "016-open-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "016-open-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-waypoint",
+      "description": "Select the nearest displayed within-range destination through its ordinary catalogue control and read the route preview.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "A draft leg shows catalogue distance and speed-derived duration, and enables commitment.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Preview adds no command or movement; exact public coordinates satisfy range independently of the speed-derived tick count."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "017-choose-waypoint-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "017-choose-waypoint-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reject-distant-leg",
+      "description": "Add a displayed beyond-range waypoint. Inspect the range remedy before issuing any route.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The out-of-range leg disables Send fleet with a specific range remedy.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Invalid routing preserves the exact canonical forces and orders."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "018-reject-distant-leg-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "018-reject-distant-leg-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "repair-route",
+      "description": "Reorder the distant leg with keyboard controls, restore its position, then remove it. Return to fleets and reopen the planner to retain the valid draft.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The retained single-leg draft is ready for keyboard commitment.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "019-repair-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "019-repair-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "withhold-route",
+      "description": "Hold only fleet.route RTDB writes before actual ingress. No identity, payload, canonical state or receipt is altered.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "pending-route",
+      "description": "Confirm Send with Enter. Delivery is withheld, so the original forces remain aboard while the command awaits acknowledgement.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The unacknowledged route disables repeat commitment.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Withheld route has no effect."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "021-pending-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "021-pending-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-pending-route",
+      "description": "Reload the uncertain order and inspect its original selected fleet and destination.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Recovery opens the original route, retaining its exact proposed destination and disabled commitment.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Retransmissions keep one command path and identical encrypted payload; reload neither reserves nor duplicates forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "022-reload-pending-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "022-reload-pending-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-route-retry",
+      "description": "When acknowledgement remains uncertain, review the preserved destination and focus Check route order. This remedy discovers or retries the existing submission.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The focused same-order remedy is enabled while the original route remains visible.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Waiting for a remedy changes no forces or campaign revision."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "023-review-route-retry-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "023-review-route-retry-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "retry-original-route",
+      "description": "When acknowledgement remains uncertain, use Check route order with Enter to discover or retry the same submitted order.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The original route is pending again; another transport attempt does not create another logical command.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Every retry retains the same command path and encrypted payload, with no canonical effect before delivery."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "024-retry-original-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "024-retry-original-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-route",
+      "description": "Disconnect the player before releasing retained transport frames to real ingress. The service can accept the original command while the offline browser cannot receive its receipt; no state or receipt is fabricated.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "accepted-while-offline",
+      "description": "Connection is lost before the service acknowledgement reaches this device. Keep the submitted destination visible without claiming confirmed departure.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "This device still shows the original pending route; the independent commander sees no private order.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "026-accepted-while-offline-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "026-accepted-while-offline-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reconnect-after-acceptance",
+      "description": "End the offline document before restoring network, retaining actual IndexedDB and authenticated account. The next ordinary navigation must discover the existing receipt, not manufacture a replacement command.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "accept-route",
+      "description": "Reopen the campaign after interrupted acknowledgement. Discover the original accepted receipt and route without issuing a replacement command.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The route receipt publishes departure tick two and the selected destination.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "One accepted receipt and revision retain the full fleet until departure."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "028-accept-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "028-accept-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-route",
+      "description": "Reload the exact campaign and reopen the original fleet's accepted route, without issuing a replacement command.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The same accepted destination and departure tick return from persistence.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Reload neither duplicates the route nor changes forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "029-recover-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "029-recover-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "depart",
+      "description": "Advance the labelled domain clock and invoke actual leased settlement. Repeat delivery must leave the full canonical state unchanged; no travel state is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "traveling",
+      "description": "Read the authoritative departure and scheduled arrival. A traveling fleet cannot receive another route.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The fleet is traveling with a speed-derived arrival tick and disabled commitment.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Departure conserves the complete fleet and its original route identity."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "031-traveling-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "031-traveling-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "arrive",
+      "description": "Deliver each due boundary through the real leased service, checking repeat delivery and recording actual production. This accelerated domain-clock journey does not certify hosted cadence or batch catch-up.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "arrival-report",
+      "description": "Read the resolved arrival and resulting orbit/surface control. Landed infantry remains part of the commander's conserved forces.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The authoritative arrival names the destination, forces and resulting control.",
+      "verifications": [
+        "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "A single arrival retains all forces across fleet and newly controlled surface, with only actual production added."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "033-arrival-report-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "033-arrival-report-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-arrival",
+      "description": "Return to fleet preparation, recover the destination after reload and inspect the same stationed fleet with the keyboard.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The recovered fleet is stationed at the destination with its surviving complement.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Final reload preserves the exact settled state and receipt identity."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "034-recover-arrival-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "034-recover-arrival-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "sign-out-access",
+      "description": "Sign out through the identity controls, then revisit the campaign URL. The prior recovered route must not expose a private fleet to a signed-out browser.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The campaign requires sign-in and renders neither fleet preparation nor a route planner.",
+      "verifications": [
+        "Signing out changes no campaign forces, receipt or revision."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "035-sign-out-access-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "035-sign-out-access-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
