@@ -20,7 +20,7 @@ case "$1" in
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
   recovery)
-    test "$2" = credit
+    [ "$#" -eq 2 ] && [ "$2" = credit ] || exit 2
     node scripts/credit-candidates.mjs
     ;;
   application)

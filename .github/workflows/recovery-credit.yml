@@ -2,7 +2,7 @@ name: Bounded PR54 corrected credit candidates
 on:
   push:
     branches: [investigate/pr54-credit-candidates]
-    paths: [.github/recovery/pr54-credit-01.json]
+    paths: [.github/recovery/pr54-credit-02.json]
 permissions:
   contents: read
 concurrency:

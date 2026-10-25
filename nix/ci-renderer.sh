@@ -3,7 +3,8 @@
 : "${containerd:?}" "${rootShell:?}" "${engine:?}" "${imageArchive:?}" "${imageTag:?}" "${imageConfig:?}" "${imageDigest:?}" "${nixCommand:?}"
 case "${1:-}:${2:-}" in
   stories:verify|stories:generate|application:) ;;
-  *) echo "Usage: cluster-ci-renderer stories verify|generate OR application" >&2; exit 2 ;;
+  recovery:credit) [ "$#" -eq 2 ] || exit 2 ;;
+  *) echo "Usage: cluster-ci-renderer stories verify|generate OR application OR recovery credit" >&2; exit 2 ;;
 esac
 : "${RUNNER_TEMP:?GitHub runner scratch directory required}"
 workspace=$PWD

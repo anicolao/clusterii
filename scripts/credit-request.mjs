@@ -8,7 +8,7 @@ import {
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { pathToFileURL } from "node:url";
-export const requestFile = ".github/recovery/pr54-credit-01.json";
+export const requestFile = ".github/recovery/pr54-credit-02.json";
 export const branch = "refs/heads/investigate/pr54-credit-candidates";
 export function validateRequest({
   request,
@@ -28,7 +28,7 @@ export function validateRequest({
     throw Error("Wrong event, repository, branch, attempt or checkout");
   if (
     request.version !== 1 ||
-    request.id !== "credit-20261025-01" ||
+    request.id !== "credit-20261025-02" ||
     request.case !== "credit" ||
     request.mode !== "generate" ||
     request.target !== "ed107623c8b54119c477421c523a8077d8a3c724" ||

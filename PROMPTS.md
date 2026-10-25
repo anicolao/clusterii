@@ -690,3 +690,9 @@ Reviewer second finding: updated if (archivedBase || staged.length > previous.le
 Delegated reviewer confirmation; refers to main meta exact PR52 green milestone and retained application log.
 
 Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCESS, application completed02:16:33UTC55m27s with36browser tests passing. Full evidence in mainmeta and/tmp/cluster-pr52-green-application.log. Record milestone in next attributed ledger/log push. Continue53existingCI and54freshLinux capture review preparation, keeping all prior holds. No duplicate52run or PRmerge; fullstackgoal remains.
+
+## Prompt 85: Outer dispatch
+
+Delegated reviewer failure finding; main meta records candidate40154163510 pre-test Usage exit2 and scoped forward findings.
+
+Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh:5 (only stories:verify|stories:generate|application: accepted), log/tmp/cluster-pr54-candidate-failed.log ends Usage exit2. Inner recovery:credit alone is insufficient. Fix exact outer recovery:credit dispatch, verify both layers and retain invalid argument rejection before one new isolated request/source with existing Nix execution. No images from this run. Preserve diagnostic and current53CI; do not rerun attempt1 request. Mainmeta also has54executor review,67CI triage and scoped68phone edge correction inspection for next attributed log push.

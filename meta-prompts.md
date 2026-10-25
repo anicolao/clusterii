@@ -4355,3 +4355,61 @@ Independently verified PR52 exacthead4f917d724022107f4c6550b11740ae45dcbe446f: M
 ## Reviewer handoff — confirmed first green PR
 
 Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCESS, application completed02:16:33UTC55m27s with36browser tests passing. Full evidence in mainmeta and/tmp/cluster-pr52-green-application.log. Record milestone in next attributed ledger/log push. Continue53existingCI and54freshLinux capture review preparation, keeping all prior holds. No duplicate52run or PRmerge; fullstackgoal remains.
+
+## Reviewer forward triage — PR66 observations
+
+PR66 head0666727da28a8c05f1734ac11a1f0b66afb0efb7, base65. Application/docs historicallypassed; strict39727848651/job119655799672 totals116passed52failed8skipped. Generation119655799405 explicitly produced no files/artifacts; onlyverify12412619397(1860848222bytes). Publish39727848614 failed expected-headHTTP404. Logs/tmp/cluster-pr66-{failed,generate,publish}.log. No Linux baseline approval.
+
+Read full observation-inputs/entropy-hook modules and3guard tests, design review; independently ran3guard tests in establishedNix on exact-source files at/tmp/cluster-pr66-review,3passed0failed. Hook only matches separately loaded compiled service URL, enforces demo/loopback and exact single signature, fixes entropy identity for named fixture while preserving real account objects/star/tick/seed; not draw/report injection. Full577-line story review remains outstanding (earlier combined diff truncated; not treated as fully read). No production change in66. Designreview explicitly retains phone map-label collision Tupã/Tania Australis; do not silently approve it. PR67c4a5cac2 title identifies deterministic label-placement correction; inspect actual corrected screens before accepting those compositions.
+
+
+## Reviewer completed story read — PR66
+
+Re-read full577-line observation story in two untruncated sections. Real identity/admission and Scheduler request, leased ticks with repeated full-state no-op, private views equal authorized observationView with exact report fields/no seed/draws, rendered facts compared to each player's projection, unknown distinct from zero, missed scan retains original report, full historical warning below pinned age and inside bounded scroll panel, reload preserves authorized historical report. No new definite code defect. Existing documented map-label overlap and missing Linux baseline evidence remain unresolved visual gates; no image approved by code review.
+
+
+## Reviewer forward review — PR67 label correction
+
+Reviewed remaining component host changes, full91-line observation journey delta and49-line geometry helper at c4a5cac2f5e3c503bcb3878638de4b7c1fdd6f80, plus full label manager/algorithm and design/baseline notes. Independently ran three exact-source algorithm tests under established Nix environment at /tmp/cluster-pr67-review, three passed,82 assertions. Story retains private/canonical-state checks and adds resize restoration, both motion preferences, label containment/collision checks and keyboard home/focus restoration. No definite code defect identified.
+
+Independently inspected full-size committed phone018 before(0666727d) and after(c4a5cac2): Tupã/Tania Australis collision is visibly corrected, both labels remain readable, observation content/controls retained. Approve only this sampled macOS regression image correction; not all67 images, Linux references or release composition. Other captures and fresh Linux evidence still require inspection. Main work remains53 liveCI and54 pending-label fresh capture review; no new implementation requested from this forward review.
+
+
+## Reviewer checkpoint — PR53 partial checks
+
+PR53fa414436 publication now passed3m54s, documentation passed2m6s; strict and application still pending. PR52 remains first fullygreen milestone. Implementer54 integrated53 at35211669 and prepares restricted eight-case Linux credit generation with original assertions/deadlines, healthy work; do not duplicate generation or approve uninspected candidates.
+
+
+## Reviewer PR54 fresh-candidate executor review
+
+Read complete recovery-credit workflow, credit-request.mjs and credit-candidates.mjs at dc1fdd4a48b1e17de6f3a793ea07cdd9d1dc5f00. Request binds clean exact checkout/source3a41749e54a829fff880e0e8b07ce0ad9e908ba4, isolated new request plus continuation only, expected repository/branch/push/attempt1; eight enumerated existing credit cases across four sizes, retries0 and update-snapshots none. Nix renderer invocation generates candidates only. Independently reviewed actual pending-label and padding delta at integrated35211669: three pending labels become Awaiting receipt, horizontal padding6 while vertical12 retained; two geometry assertions strengthened to exactly one text line within button. Source identity leading fix inherited from reviewed52. No candidate approval from executor/code review. Live job40154163510/121051819443 confirmed in_progress on exact executor; no restart.
+
+
+## Reviewer PR67 historical CI triage
+
+Exact67 headc4a5cac2 historical strict39730009405/job119662633581 failed55m43s:113passed55failed8skipped across cohorts; allfour observation journeys stop at missing Linux010 reference. Generation119662633454 succeeded but explicitly no files/no uploaded artifacts, so supplies no approval candidates. Application119662633152 anddocs119662633078 passed historically. Retained logs/tmp/cluster-pr67-{failed,generate}.log. Fresh Linux observation generation/review remains required after stack integration; inspected macOS phone correction does not fill those missing references.
+
+
+## Reviewer forward review — PR68 navigation labels
+
+PR68 a6f04e9ce2f96080d81788dbe1788427b1dade2a base67. Read full production/story/helper delta and design/baseline review. Decorative projected HTML wrappers explicitly pointer-events:none; shared geometry check uses actual elementFromPoint at label center to reject intercepting label/wrapper, retained existing navigation assertions with added separation/containment. No new definite code finding. Independently inspected full-size committed phone005 keyboard-orbit before/after: previously clipped Guniibuu name and class now contained/readable at right edge, selected star/inspector/focus remain intact. Approve only this specific macOS regression correction. This does not approve uninspected Linux references or substitute for runtime pointer/CI verification. Files/tmp/cluster-pr67-review/navigation-{before,after}.png.
+
+
+## Reviewer actionable failure — PR54 outer Nix dispatch
+
+Fresh credit job40154163510/121051819443 failed before any journeys. Exact retained log/tmp/cluster-pr54-candidate-failed.log ends02:24:04UTC Usage: cluster-ci-renderer stories verify|generate OR application; exit2. Inner scripts/ci-in-renderer.sh gained recovery:credit dispatch, but outer nix/ci-renderer.sh line5 accepts only stories:verify|stories:generate|application:. Add exact recovery:credit allowance to outer launcher, retain invalid-argument rejection, verify end-to-end dispatch through both layers before a new isolated request. No screenshots generated/approved; do not rerun same immutable attempt1 request. Preserve this failed diagnostic. Existing53CI unaffected.
+
+
+## Reviewer handoff — PR54 dispatch correction
+
+Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh:5 (only stories:verify|stories:generate|application: accepted), log/tmp/cluster-pr54-candidate-failed.log ends Usage exit2. Inner recovery:credit alone is insufficient. Fix exact outer recovery:credit dispatch, verify both layers and retain invalid argument rejection before one new isolated request/source with existing Nix execution. No images from this run. Preserve diagnostic and current53CI; do not rerun attempt1 request. Mainmeta also has54executor review,67CI triage and scoped68phone edge correction inspection for next attributed log push.
+
+
+## Reviewer PR68 historical CI triage
+
+Exact68 head a6f04e9ce2f96080d81788dbe1788427b1dade2a: strict39731275898/job119666641405 totals113passed55failed8skipped; generation119666641517 has no files/no artifacts, hence no Linux approval source. Application119666641183 anddocumentation119666641344 passed historically. Publish39731275938 failed expected exacthead HTTP404. Logs/tmp/cluster-pr68-{failed,generate,publish}.log. Fresh stack current-head CI remains necessary.
+
+
+## Reviewer checkpoint — PR54 failure acknowledged
+
+Implementer acknowledged outer recovery-credit dispatch defect and is correcting exact accepted arguments plus rejection validation before a new source-bound request. Failed first request remains immutable. Recovery ledger previously committed/pushed72a18643. No duplicate jobs launched by supervisor, no PR merge, no uninspected candidate promoted.
