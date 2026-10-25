@@ -431,3 +431,11 @@ Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | R
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Review all stellar observation candidates and promote only the new macOS family before strict comparison.
 
 Prompt 61 | a7c962eb326e8bee723008ca25a4ad89e3aef251b57a13a6d06311ff49c19c16 | Archive exact observation stories and retained regressions; carry scoped visual findings and queued Pages deployment diagnosis.
+
+Prompt 135 | 7cd75987fbefb4bfcecdcf686dc564669af359afa058bd4d8e66e7eddd2f530a | Integrate reviewed PR63 three-reference maintenance correction into PR64 while preserving both exact prompt histories and all source.
+
+Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Prepare isolated PR65 on reviewed PR64, retaining exact histories/references before diagnosing variable observation inputs.
+
+Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Add guarded route entropy identities and actual acquisition/report assertions without changing production algorithms or reference pixels.
+
+Prompt 137 | decca9270aa110d26ca6987eb9b2e4a16bb7f6000cc3a8cdbe510ce4ca868ea7 | Include guarded route entropy regressions in existing required story-policy checks without changing dependencies or captured story/helper bytes.

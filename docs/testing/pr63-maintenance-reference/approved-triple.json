@@ -1,0 +1,58 @@
+{
+  "run": 40195147278,
+  "job": 121174278593,
+  "head": "f8adb007866692870ea2979e2d4108b2bb4bed3b",
+  "executor": "adbcfd3e0006a16d12f4ba21cb11bfb444cea037",
+  "dirty": true,
+  "sourceEquivalent": true,
+  "source": {
+    "commit": "adbcfd3e0006a16d12f4ba21cb11bfb444cea037",
+    "dirty": true,
+    "spec": "tests/browser/maintenance.story.spec.ts",
+    "specSha256": "825e5effebcb5a6b820786c7788c6f81d136b1ffd1f4f6a3c715d5e95334aac5"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "expectedMatchesHead": true,
+  "images": [
+    {
+      "kind": "expected",
+      "path": "/tmp/cluster-pr63-maintenance-failure/test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host-expected.png",
+      "sha256": "c9771048d2441b20e001f7f7fa7f6eb6ca1d07cb6e045d9ad72584413fce7c0e"
+    },
+    {
+      "kind": "actual",
+      "path": "/tmp/cluster-pr63-maintenance-failure/test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host-actual.png",
+      "sha256": "932203f38bf4763abc499f0a94dfb5b81798656461a5e5627bde527c00678510"
+    },
+    {
+      "kind": "diff",
+      "path": "/tmp/cluster-pr63-maintenance-failure/test-results/stories/maintenance.story-The-host-ae89a-resumes-a-waiting-commander-short/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host-diff.png",
+      "sha256": "9ca2b5fe4a8274d0175e9a161d59a902d98be0811d122ec824e4f24cb4d2b408"
+    }
+  ]
+}

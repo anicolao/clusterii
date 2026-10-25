@@ -1,11 +1,17 @@
 import { createRequire } from "node:module";
+import { createHash } from "node:crypto";
 import type {
   Page,
   BrowserContext,
   Locator,
   WebSocketRoute,
 } from "@playwright/test";
-import type { Campaign } from "../../shared/campaign";
+import { campaignView, type Campaign } from "../../shared/campaign";
+import {
+  installObservationEntropy,
+  retainObservationFacts,
+} from "./story-helpers/route-observation-entropy.mjs";
+import { observationInputs } from "./story-helpers/route-observation-inputs.mjs";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
@@ -58,7 +64,7 @@ test("Interrupted route commands retain their original choices and identity", as
     title: "Recover an interrupted route without duplicating its forces",
     inventory: ["UX-08", "UX-14", "UX-16"],
     description:
-      "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; Submitted route recovery is distinct from unsent memory-only drafts; this does not certify managed encryption or hosted scheduling.",
+      "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks and scan entropy identities are explicit harness controls; real HMAC draws and acquisition remain unchanged. Development transport capacity and tick rules remain under review; Submitted route recovery is distinct from unsent memory-only drafts; this does not certify managed encryption or hosted scheduling.",
   });
   const contexts: BrowserContext[] = [],
     pages: Page[] = [],
@@ -80,6 +86,8 @@ test("Interrupted route commands retain their original choices and identity", as
       player: aliases[i],
       surface: "game" as const,
     }));
+  const entropyHook = installObservationEntropy();
+  let ownerUid = "";
   const require = createRequire(
     new URL("../../functions/package.json", import.meta.url),
   );
@@ -89,7 +97,13 @@ test("Interrupted route commands retain their original choices and identity", as
   const db = require("firebase-admin/firestore").getFirestore();
   const { provider, unwrap } = require("./lib/shared/crypto.js"),
     { context } = require("./lib/functions/src/campaigns.js"),
-    { settleCampaignTicks } = require("./lib/functions/src/production.js");
+    { observationDraw } = require("./lib/functions/src/observation-random.js");
+  const { settleCampaignTicks } = await import(
+    new URL(
+      "../../functions/lib/functions/src/production.js?illustrated-route-recovery",
+      import.meta.url,
+    ).href
+  );
   const canonical = async (): Promise<Campaign> => {
     const h = await db.doc(`campaignStates/${id}`).get();
     return provider("mock").open(
@@ -188,6 +202,12 @@ test("Interrupted route commands retain their original choices and identity", as
           page.on("pageerror", (error) => errors.push(error.message));
           const email = `fleet-story-${info.project.name}-${i}-${Date.now()}@example.test`;
           await login(page, email);
+          if (i === 0)
+            ownerUid = (
+              await require("firebase-admin/auth")
+                .getAuth()
+                .getUserByEmail(email)
+            ).uid;
           await page.getByLabel("Commander name").fill(aliases[i]);
           await button(page, "Save identity").click();
           await expect(page.getByRole("status")).toContainText(
@@ -431,6 +451,48 @@ test("Interrupted route commands retain their original choices and identity", as
         for (const p of pages) await p.clock.setFixedTime(next);
         expect(await settleCampaignTicks(id, () => next)).toBe(1);
         formed = await canonical();
+        expect(formed.seats.some((seat) => seat.uid === ownerUid)).toBe(true);
+        // Corroborate actual canonical acquisition inputs; no report or draw is injected.
+        for (const seat of formed.seats) {
+          const draws = formed.intelligence!.draws[seat.uid];
+          expect(draws).toHaveLength(formed.galaxy.stars.length);
+          for (const [index, draw] of draws.entries())
+            if (draw !== null) {
+              const star = formed.galaxy.stars[index];
+              expect(draw).toBe(
+                observationDraw(
+                  ...observationInputs(
+                    formed,
+                    id,
+                    seat.uid,
+                    star.id,
+                    formed.economy!.tick,
+                  ),
+                ),
+              );
+            }
+        }
+        await retainObservationFacts(info, {
+          tick: formed.economy!.tick,
+          entropyNamespace: "illustrated-route-recovery",
+          seats: formed.seats.map((seat, ordinal) => ({
+            ordinal,
+            reportCount: Object.keys(
+              formed.intelligence!.reports[seat.uid] ?? {},
+            ).length,
+            verifiedDrawCount: formed.intelligence!.draws[seat.uid].filter(
+              (d) => d !== null,
+            ).length,
+            fingerprint: createHash("sha256")
+              .update(
+                JSON.stringify({
+                  reports: formed.intelligence!.reports[seat.uid],
+                  draws: formed.intelligence!.draws[seat.uid],
+                }),
+              )
+              .digest("hex"),
+          })),
+        });
         expect(await settleCampaignTicks(id, () => next)).toBe(0);
         expect(await canonical()).toEqual(formed);
       },
@@ -535,6 +597,31 @@ test("Interrupted route commands retain their original choices and identity", as
       expect(b!.y + b!.height).toBeLessThanOrEqual(a!.y + a!.height);
     };
     const routeChecks = () => [
+      {
+        spec: "Every rendered waypoint ownership label agrees with the actual owner's current acquired report or Unknown; canonical reads only corroborate visible facts.",
+        check: async () => {
+          const state = await canonical(),
+            projected = campaignView(state, ownerUid);
+          const candidates = planner
+            .getByRole("region", { name: "Waypoint catalogue", exact: true })
+            .getByRole("button");
+          for (const candidate of await candidates.all()) {
+            const label = await candidate.getAttribute("aria-label");
+            const star = state.galaxy.stars.find(
+              (s) => label === `Add ${s.name} waypoint`,
+            );
+            expect(
+              star,
+              "Every rendered candidate identifies a real catalogue star",
+            ).toBeDefined();
+            const ownership =
+              projected.holdings.find((h) => h.starId === star!.id)?.orbit ??
+              projected.observations?.[star!.id]?.orbit ??
+              "Unknown";
+            await expect(candidate).toContainText(` · ${ownership}`);
+          }
+        },
+      },
       {
         spec: "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
         check: async () => {
@@ -755,6 +842,16 @@ test("Interrupted route commands retain their original choices and identity", as
           await expect(send).toBeDisabled();
           await expect.poll(() => writes.length).toBeGreaterThanOrEqual(2);
           await routeRead(routeList);
+          // The stored acquired report set must survive this recovery unchanged.
+          expect((await canonical()).intelligence).toEqual(
+            formed!.intelligence,
+          );
+          await expect(
+            planner.getByRole("button", {
+              name: "Add Koit waypoint",
+              exact: true,
+            }),
+          ).toHaveCount(1);
         },
       },
       verifications: [
@@ -1207,7 +1304,9 @@ test("Interrupted route commands retain their original choices and identity", as
             owner.getByRole("link", { name: "Sign in to continue" }),
           ).toBeVisible();
           await expect(
-            owner.getByText("Sign in to access your campaigns.", { exact: true }),
+            owner.getByText("Sign in to access your campaigns.", {
+              exact: true,
+            }),
           ).toBeVisible();
           await expect(planner).toHaveCount(0);
           await expect(panel(owner)).toHaveCount(0);
@@ -1222,6 +1321,7 @@ test("Interrupted route commands retain their original choices and identity", as
       views: views(),
     });
   } finally {
+    entropyHook.deregister();
     for (const c of contexts) await c.close();
   }
 });
