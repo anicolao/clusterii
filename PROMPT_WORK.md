@@ -425,3 +425,5 @@ Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Record reviewed PR77 import and single strict dispatch with exact source and request bindings.
 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Preserve verified duplicate-archive retention proofs and document remaining browser disk reserve constraint.
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Verify pending and busy discard guards across eight browser configurations and classify strict phone star mismatch.
