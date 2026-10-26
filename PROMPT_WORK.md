@@ -411,3 +411,5 @@ Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Preserve passing post-capture cohort telemetry without inferring a cause or replacing failed stellar baselines
 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Retain final observer telemetry outside the ignored test-results directory for durable diagnostic inspection
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Record immutable PR77 candidate dispatch and confirmed restart of PR76 full checks after parent conflict repair
