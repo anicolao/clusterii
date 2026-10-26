@@ -1,5 +1,11 @@
+export interface MotionFrame {
+  selector: string;
+  count: number;
+  time: number;
+  duration: number;
+}
 /** Executed in the page for each capture, after the step's own acknowledgement. */
-export async function captureReady() {
+export async function captureReady(inspection: MotionFrame[] = []) {
   await document.fonts.ready;
   const visible = (element: Element) => {
     const b = element.getBoundingClientRect(),
@@ -63,13 +69,51 @@ export async function captureReady() {
       throw new Error(
         "Stable capture has an active infinite animation. Reduced motion must settle decorative animation.",
       );
-    if (active.some((animation) => animation.playState === "paused"))
+    const declared = new Set<Animation>();
+    for (const frame of inspection) {
+      if (
+        !Number.isInteger(frame.count) ||
+        frame.count < 1 ||
+        !Number.isFinite(frame.time) ||
+        frame.time < 0 ||
+        !Number.isFinite(frame.duration) ||
+        frame.duration <= 0 ||
+        frame.time > frame.duration
+      )
+        throw new Error("Invalid explicit motion frame");
+      const roots = [...document.querySelectorAll(frame.selector)];
+      const matches = document.getAnimations().filter((animation) => {
+        const target = (animation.effect as KeyframeEffect | null)?.target;
+        return (
+          target instanceof Element &&
+          roots.some((root) => root.contains(target))
+        );
+      });
+      if (matches.length !== frame.count)
+        throw new Error("Explicit motion animation count differs");
+      for (const animation of matches) {
+        const timing = animation.effect!.getTiming();
+        if (
+          declared.has(animation) ||
+          animation.playState !== "paused" ||
+          animation.currentTime !== frame.time ||
+          timing.duration !== frame.duration ||
+          timing.iterations !== 1
+        )
+          throw new Error(
+            "Explicit motion frame differs from declared paused time/duration",
+          );
+        declared.add(animation);
+      }
+    }
+    const ordinary = active.filter((animation) => !declared.has(animation));
+    if (ordinary.some((animation) => animation.playState === "paused"))
       throw new Error(
-        "Stable capture has a paused animation; use a separate explicit animation inspection test.",
+        "Stable capture has an undeclared paused animation; use a separate explicit animation inspection test.",
       );
-    if (!active.length) break;
+    if (!ordinary.length) break;
     await Promise.all(
-      active.map((animation) => animation.finished.catch(() => undefined)),
+      ordinary.map((animation) => animation.finished.catch(() => undefined)),
     );
   }
 }

@@ -104,7 +104,7 @@ Wait on named conditions, never fixed sleeps or `networkidle`. Pending/offline s
 
 The helper requires two consecutive actual frames with identical decoded pixels within six captures and the existing capture deadline. This settling step has no expected-image input: stable incorrect pixels still fail exact baseline comparison, and oscillating pixels fail readiness. It never searches for a frame that matches the baseline.
 
-The helper checks fonts, visible `<img>` and CSS background decoding, and all finite animation completion before capture. Decode requests are renewed for each capture. Cancelled finite animations are rechecked for successor effects. Stable screenshots use reduced motion; intentionally paused animation inspection is a distinct lab/motion case. No screenshot option may fast-forward an unacknowledged gameplay effect.
+The helper checks fonts, visible `<img>` and CSS background decoding, and all finite animation completion before capture. Decode requests are renewed for each capture. Cancelled finite animations are rechecked for successor effects. Stable screenshots use reduced motion; intentionally paused animation inspection is a distinct lab/motion case. A `StoryView.motionInspection` declaration names each animation root, exact count, paused timestamp and finite duration. The helper validates every declared animation and rejects undeclared paused effects, mismatched frames and infinite motion. Generated captions record those declarations; image comparison retains zero tolerance. This opt-in is for production-component lab inspection, never permission to freeze an unacknowledged gameplay outcome. No screenshot option may fast-forward an unacknowledged gameplay effect.
 
 Run all four supported sizes at DPR 1:
 

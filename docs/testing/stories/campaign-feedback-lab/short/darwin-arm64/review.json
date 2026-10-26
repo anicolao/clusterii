@@ -1,0 +1,31 @@
+{
+  "review": "docs/testing/FEEDBACK_LAB_BASELINE_REVIEW.md",
+  "mode": "archived-exact-verification",
+  "story": "campaign-feedback-lab",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  }
+}

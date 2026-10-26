@@ -22,7 +22,7 @@ import {
   rendererArgs,
 } from "../../../playwright.stories.config";
 import { stableImage } from "./stable-image";
-import { captureReady } from "./capture-ready";
+import { captureReady, type MotionFrame } from "./capture-ready";
 import { assertScreenFit } from "./screen-fit";
 export const CAPTURE_BUDGET = 10000;
 export const STEP_BUDGET = 30000;
@@ -32,6 +32,7 @@ export type StoryView = {
   player: string;
   surface: "game" | "document";
   primary?: Locator[];
+  motionInspection?: MotionFrame[];
   verifications?: Verification[];
 };
 interface Metadata {
@@ -217,7 +218,7 @@ export class TestStepHelper {
                   viewport.height,
                 );
               }
-              await page.evaluate(captureReady);
+              await page.evaluate(captureReady, view.motionInspection ?? []);
               await page.evaluate(assertScreenFit, { surface: view.surface });
               expect(
                 await page.evaluate(() => ({
@@ -289,7 +290,13 @@ export class TestStepHelper {
           entry.views.push({
             player: view.player,
             image: stem,
-            verifications: (view.verifications ?? []).map((v) => v.spec),
+            verifications: [
+              ...(view.verifications ?? []).map((v) => v.spec),
+              ...(view.motionInspection ?? []).map(
+                (frame) =>
+                  `Explicit paused motion: ${frame.selector}, ${frame.count} animation(s), ${frame.time}/${frame.duration} ms; unchanged exact comparison.`,
+              ),
+            ],
           });
         }
         this.story.entries.push(entry);

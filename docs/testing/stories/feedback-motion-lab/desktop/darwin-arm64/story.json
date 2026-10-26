@@ -1,0 +1,250 @@
+{
+  "id": "feedback-motion-lab",
+  "title": "Inspect shared feedback and compare reduced motion",
+  "inventory": [
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer inspects deterministic scenarios rendered by the shipped feedback, identity and animation components. These are explicitly component fixtures using production validation and copy, not live commands or service acceptance. The browser clock controls playback only; named paused animation frames are verified before unchanged exact pixel comparison.",
+  "source": {
+    "commit": "bbab3666f55053897ed9c32a7ff3d438637396b9",
+    "dirty": true,
+    "spec": "tests/browser/feedback-lab.story.spec.ts",
+    "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "presentation-clock",
+      "description": "Fix the browser presentation clock for deterministic replay and pause inspection; no service state exists in this component lab.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "pending",
+      "description": "Open the real animation lab and inspect the pending identity frame.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion presentations report “Sending your identity” with identical text.",
+      "verifications": [
+        "Both presentations retain the exact saved draft text."
+      ],
+      "views": [
+        {
+          "player": "Developer · playback controls",
+          "image": "002-pending-1-developer-playback-controls.png",
+          "verifications": [
+            "Playback and scenario controls are visible for the review action.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · standard motion",
+          "image": "002-pending-2-developer-standard-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced motion",
+          "image": "002-pending-3-developer-reduced-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interrupted",
+      "description": "Seek into the interrupted connection and compare the real reveal animation with reduced motion.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion presentations report “draft is preserved” with identical text.",
+      "verifications": [
+        "Both presentations retain the exact saved draft text.",
+        "Both presentations offer the reconnect remedy."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard motion",
+          "image": "003-interrupted-1-developer-standard-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 100/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced motion",
+          "image": "003-interrupted-2-developer-reduced-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 100/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reconnected",
+      "description": "Use the production reconnect control to replay recovery, then inspect the accepted frame.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion presentations report “Identity saved” with identical text.",
+      "verifications": [
+        "Both presentations retain the exact saved draft text.",
+        "The connection alert clears in both presentations."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard motion",
+          "image": "004-reconnected-1-developer-standard-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced motion",
+          "image": "004-reconnected-2-developer-reduced-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conflict",
+      "description": "Select the production revision-conflict scenario and inspect its distinct remedy.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion presentations report “Another device” with identical text.",
+      "verifications": [
+        "Both presentations retain the exact saved draft text.",
+        "A revision conflict does not offer the network reconnect remedy."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard motion",
+          "image": "005-conflict-1-developer-standard-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced motion",
+          "image": "005-conflict-2-developer-reduced-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "replay-pause-inspect",
+      "description": "Replay at quarter speed, pause and prove the frame stays fixed, then inspect the 90 ms reveal.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both motion presentations report “Sending your identity” with identical text.",
+      "verifications": [
+        "Both presentations retain the exact saved draft text.",
+        "The inspected frame is exactly 90 ms and quarter speed remains selected."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard motion",
+          "image": "006-replay-pause-inspect-1-developer-standard-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 90/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced motion",
+          "image": "006-replay-pause-inspect-2-developer-reduced-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 90/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reset",
+      "description": "Reset playback to its explicit first frame without changing the pending outcome or draft.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Reset returns presentation time to zero and stops playback.",
+      "verifications": [
+        "Both presentations retain the exact saved draft text.",
+        "Both motion presentations report “Sending your identity” with identical text."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard motion",
+          "image": "007-reset-1-developer-standard-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        },
+        {
+          "player": "Developer · reduced motion",
+          "image": "007-reset-2-developer-reduced-motion.png",
+          "verifications": [
+            "The inspected outcome is fully inside the viewport after deliberate reference-page scrolling.",
+            "Explicit paused motion: [aria-label=\"Standard motion comparison\"], 1 animation(s), 0/180 ms; unchanged exact comparison.",
+            "Explicit paused motion: [aria-label=\"Reduced motion comparison\"], 1 animation(s), 180/180 ms; unchanged exact comparison."
+          ]
+        }
+      ]
+    }
+  ]
+}
