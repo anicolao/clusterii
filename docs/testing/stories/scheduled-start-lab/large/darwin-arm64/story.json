@@ -1,0 +1,161 @@
+{
+  "id": "scheduled-start-lab",
+  "title": "Inspect scheduled start and delayed assignment without changing outcomes",
+  "inventory": [
+    "UX-02",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer inspects the actual CampaignStartStatus component with explicit deterministic laboratory frames. Scheduled, delayed and begun copy match across the comparison panes. This fixture is not scheduler delivery, roster assignment, hosted timing or service acceptance; the independent multiplayer story supplies separately scoped service evidence.",
+  "source": {
+    "commit": "2a4b53dac70ed3bddf5879014eb7a019a6dda454",
+    "dirty": true,
+    "spec": "tests/browser/lifecycle-lab.story.spec.ts",
+    "specSha256": "5c5e99f3296bb2514ac0e386a52f2c338165752a7777e3445e4dc236824da66f"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "presentation-clock",
+      "description": "Freeze only browser presentation time. The lab's declared scheduled-frame input selects the status; no live campaign or scheduler is invoked.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduled",
+      "description": "Read the scheduled start and server-assignment explanation.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both production presentations report “Starts” with identical text.",
+      "verifications": [
+        "The scenario and inspected time remain explicit; no interactive campaign orders are offered by these status specimens."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard lifecycle presentation",
+          "image": "002-scheduled-1-developer-standard-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        },
+        {
+          "player": "Developer · reduced lifecycle presentation",
+          "image": "002-scheduled-2-developer-reduced-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delayed",
+      "description": "Seek past the scheduled boundary and read the preserved-seat delay message.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both production presentations report “Awaiting home assignment” with identical text.",
+      "verifications": [
+        "The scenario and inspected time remain explicit; no interactive campaign orders are offered by these status specimens."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard lifecycle presentation",
+          "image": "003-delayed-1-developer-standard-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        },
+        {
+          "player": "Developer · reduced lifecycle presentation",
+          "image": "003-delayed-2-developer-reduced-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assigned",
+      "description": "Seek to the assigned frame and distinguish begun status from pending assignment.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both production presentations report “Began” with identical text.",
+      "verifications": [
+        "The scenario and inspected time remain explicit; no interactive campaign orders are offered by these status specimens."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard lifecycle presentation",
+          "image": "004-assigned-1-developer-standard-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        },
+        {
+          "player": "Developer · reduced lifecycle presentation",
+          "image": "004-assigned-2-developer-reduced-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reset",
+      "description": "Reset the lab to the same scheduled presentation without inventing another campaign.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both production presentations report “Starts” with identical text.",
+      "verifications": [
+        "The scenario and inspected time remain explicit; no interactive campaign orders are offered by these status specimens."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard lifecycle presentation",
+          "image": "005-reset-1-developer-standard-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        },
+        {
+          "player": "Developer · reduced lifecycle presentation",
+          "image": "005-reset-2-developer-reduced-lifecycle-presentation.png",
+          "verifications": [
+            "The whole labeled specimen and outcome fit inside the reference viewport."
+          ]
+        }
+      ]
+    }
+  ]
+}
