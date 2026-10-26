@@ -4,8 +4,64 @@
     "status": "Procedural regression; illustrated migration incomplete"
   },
   "briefing.spec.ts": {
-    "sha256": "9a5c339d61a7e9629a2d59b4a76fb5e2df146cee82977be76318e4e0e107e6e4",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "7c0b4d56895a6a2919dfd2fd4ec5aea6287a0a3f4f266d21e83ed9d5c5370fb8",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "transportMaintenance": {
+      "kind": "exact-transport-interception-maintenance",
+      "previousSha256": "9a5c339d61a7e9629a2d59b4a76fb5e2df146cee82977be76318e4e0e107e6e4",
+      "sha256": "7c0b4d56895a6a2919dfd2fd4ec5aea6287a0a3f4f266d21e83ed9d5c5370fb8",
+      "edits": [
+        {
+          "start": 862,
+          "end": 981,
+          "before": "",
+          "after": "let releaseHttp!: () => void;\n    const httpReleased = new Promise<void>((resolve) => { releaseHttp = resolve; });\n    "
+        },
+        {
+          "start": 1127,
+          "end": 2149,
+          "before": "",
+          "after": " {\n          // Reload can make Firebase fall back to HTTP long polling. Hold the\n          // same compact command there so recovery cannot bypass the fault.\n          await context.route(/127\\.0\\.0\\.1:19000\\/\\.lp(?:\\?|$)/, async (route) => {\n            const params = new URL(route.request().url()).searchParams;\n            let heldVisit = false;\n            for (const [key, data] of params) {\n              if (!/^d\\d+$/.test(key)) continue;\n              const index = key.slice(1);\n              if (holding) expect(params.get(`ts${index}`)).toBe(\"1\");\n              if (params.get(`ts${index}`) !== \"1\") continue;\n              const frame = JSON.parse(Buffer.from(data.replaceAll(\".\", \"=\"), \"base64url\").toString());\n              if (holding && frame?.d?.a === \"p\" && frame.d.b?.d?.kind === \"campaign.visit\") {\n                writes.push(frame.d.b);\n                heldVisit = true;\n              }\n            }\n            if (heldVisit) await httpReleased;\n            await route.continue();\n          });"
+        },
+        {
+          "start": 2949,
+          "end": 2959,
+          "before": "",
+          "after": "\n        }"
+        },
+        {
+          "start": 10407,
+          "end": 10496,
+          "before": "",
+          "after": "expect((await db.doc(`campaignStates/${id}`).get()).get(\"revision\")).toBe(before);\n      "
+        },
+        {
+          "start": 10511,
+          "end": 10532,
+          "before": "",
+          "after": ";\n      releaseHttp()"
+        },
+        {
+          "start": 12667,
+          "end": 12688,
+          "before": "",
+          "after": "releaseHttp();\n      "
+        },
+        {
+          "start": 12720,
+          "end": 12786,
+          "before": "",
+          "after": "{\n        await context.unrouteAll({ behavior: \"wait\" });\n        "
+        },
+        {
+          "start": 12808,
+          "end": 12816,
+          "before": "",
+          "after": "\n      }"
+        }
+      ],
+      "review": "docs/testing/pr45-transport-diagnosis/MAINTENANCE.md"
+    }
   },
   "construction-completion.spec.ts": {
     "sha256": "811815272b40c9a49fc9df0c158f90f9c47411f498d4c580c63fcbf0b86d462c",
@@ -57,10 +113,6 @@
   },
   "market-focus.spec.ts": {
     "sha256": "962a3b2438d2002a653111aaaea44bd4c1969f74441bcb6933391f905592b769",
-    "status": "Procedural regression; illustrated migration incomplete"
-  },
-  "migration.spec.ts": {
-    "sha256": "b89a9283cd1a08618baa22f9fd13d52e066f977586d0c142778a1a134eec0526",
     "status": "Procedural regression; illustrated migration incomplete"
   },
   "observations.spec.ts": {

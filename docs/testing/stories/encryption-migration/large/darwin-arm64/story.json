@@ -1,0 +1,267 @@
+{
+  "id": "encryption-migration",
+  "title": "Pause, change encryption and recover both devices",
+  "inventory": [
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "One saved developer uses two authenticated devices to migrate a waiting campaign from inspectable encryption to actual Cloud KMS and back. Ordinary UI creates and joins the fixed-catalogue campaign. No state, migration result or provider is injected. This is two-device recovery for one recipient, not complete multi-recipient, hosted authentication or worker-fault certification.",
+  "source": {
+    "commit": "63e2d244255b38061b61dbe7cb592cee75c01d3c",
+    "dirty": true,
+    "spec": "tests/browser/migration.story.spec.ts",
+    "specSha256": "5f9bb87820ba453bd24ecc2b432e6640c5ce91e0218b24b5082e6a2028cae9a6"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "saved-member",
+      "description": "Save a developer identity and create and join a waiting mock campaign through the ordinary UI; only developer authorization and catalogue entropy are test-controlled.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "connected-devices",
+      "description": "Sign into the same invitation on a second device and review the current encryption on both.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "Both devices recover the current mock mode and available pause control.",
+      "verifications": [
+        "Read-only canonical metadata confirms mock epoch 1, revision 2, with no extra mutation on recovery.",
+        "Both devices retain campaign access without alerts; prior mock exposure remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "002-connected-devices-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "002-connected-devices-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "pause-for-real",
+      "description": "Pause the campaign before migrating to real encryption.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The pause command is acknowledged and the connected device offers resume.",
+      "verifications": [
+        "Read-only canonical metadata confirms mock epoch 1, revision 3, with no extra mutation on recovery.",
+        "Both devices retain campaign access without alerts; prior mock exposure remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "003-pause-for-real-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "003-pause-for-real-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-real",
+      "description": "Select real encryption without committing the change.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The proposed mode enables the explicit migration commitment.",
+      "verifications": [
+        "Read-only canonical metadata confirms mock epoch 1, revision 3, with no extra mutation on recovery.",
+        "An uncommitted choice does not alter the second device’s authoritative mode.",
+        "Both devices retain campaign access without alerts; prior mock exposure remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "004-choose-real-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "004-choose-real-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "verified-real",
+      "description": "Commit real migration, observe focused progress, then wait for verified activation and resumed access.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The service reports verified completion, restores chart focus and updates the connected device.",
+      "verifications": [
+        "Read-only canonical metadata confirms real epoch 2, revision 4, with no extra mutation on recovery.",
+        "Both devices remain free of alerts after authoritative activation."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "005-verified-real-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "005-verified-real-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-real",
+      "description": "Reload the exact campaign and review recovered real encryption with its permanent exposure warning.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The recovered campaign retains the activated mode and allows normal pause controls.",
+      "verifications": [
+        "Read-only canonical metadata confirms real epoch 2, revision 4, with no extra mutation on recovery.",
+        "Both devices retain campaign access without alerts; prior mock exposure remains explicit.",
+        "Reload keeps the exact campaign invitation."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "006-recover-real-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "006-recover-real-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "pause-for-mock",
+      "description": "Pause the campaign before migrating to mock encryption.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The pause command is acknowledged and the connected device offers resume.",
+      "verifications": [
+        "Read-only canonical metadata confirms real epoch 2, revision 5, with no extra mutation on recovery.",
+        "Both devices retain campaign access without alerts; prior mock exposure remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "007-pause-for-mock-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "007-pause-for-mock-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-mock",
+      "description": "Select mock encryption without committing the change.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The proposed mode enables the explicit migration commitment.",
+      "verifications": [
+        "Read-only canonical metadata confirms real epoch 2, revision 5, with no extra mutation on recovery.",
+        "An uncommitted choice does not alter the second device’s authoritative mode.",
+        "Both devices retain campaign access without alerts; prior mock exposure remains explicit."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "008-choose-mock-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "008-choose-mock-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "verified-mock",
+      "description": "Commit mock migration, observe focused progress, then wait for verified activation and resumed access.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The service reports verified completion, restores chart focus and updates the connected device.",
+      "verifications": [
+        "Read-only canonical metadata confirms mock epoch 3, revision 6, with no extra mutation on recovery.",
+        "Both devices remain free of alerts after authoritative activation."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "009-verified-mock-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "009-verified-mock-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-mock",
+      "description": "Reload the exact campaign and review recovered mock encryption with its permanent exposure warning.",
+      "actor": "Epoch envoy",
+      "kind": "player",
+      "acknowledgement": "The recovered campaign retains the activated mode and allows normal pause controls.",
+      "verifications": [
+        "Read-only canonical metadata confirms mock epoch 3, revision 6, with no extra mutation on recovery.",
+        "Both devices retain campaign access without alerts; prior mock exposure remains explicit.",
+        "Reload keeps the exact campaign invitation."
+      ],
+      "views": [
+        {
+          "player": "Epoch envoy",
+          "image": "010-recover-mock-1-epoch-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Epoch envoy · second device",
+          "image": "010-recover-mock-2-epoch-envoy-second-device.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
