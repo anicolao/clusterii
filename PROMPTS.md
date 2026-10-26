@@ -479,7 +479,18 @@ Reviewer finding 2026-10-21 17:28 Toronto: #47 current story verification comple
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 17:48 Toronto”.
 
 Reviewer continuation 2026-10-21 17:48 Toronto: pane idle since17:37, clean53e5387 and thirteen prompt-history tests pass. Resume the next live illustrated migration from STORY_INVENTORY, preferably UX-11 credit offer/accept/withdraw/settlement with actual sender, recipient and outsider views, as a small successor to #53. Preserve existing procedural assertions until equivalent coverage exists; require named authoritative acknowledgements, conserved balances, privacy and interrupted/reload recovery, four viewport captures and keyboard access. Keep candidate review separate from strict verification and distinguish proposed rules from approved behavior. Inspect Linux layout diagnostics when available; retain unresolved raster and current-head preview gates. Carry main meta checkpoints through17:48 and attributed PROMPTS/PROMPT_WORK, commit/push logs. Continue useful independent work while CI queues; no merge.
-## Prompt 54: Reviewer identity correction
+
+## Prompt 54: Linux diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 18:48 Toronto”.
+
+Reviewer finding 2026-10-21 18:48 Toronto: #51 current4f8cb6a story run39680090423 completed with20 missing Linux baseline failures across history/lifecycle/production/research and one known1994-pixel mismatch. Retained /tmp/cluster51-1848-review-failure.log. This successor includes the layout instrumentation, so inspect its completed failure artifacts now for passing/failing identity layout comparison rather than waiting only for #50. Continue your active Linux candidate review with provenance checks and unchanged inherited baselines. Record the diagnosis separately; green runs do not establish a raster fix. Carry latest main checkpoint and attributed logs, commit/push; no merge.
+
+
+## Prompt 55: Reviewer identity correction
+
+Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR49, preserve every reference image, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR49 two-comparison review". Run required checks; do not merge PRs.
+## Prompt 56: Reviewer identity correction
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR45, preserve all existing reference images, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR45 two-comparison review". Both comparison triples are identical and expected output matches reviewed PR52. Run required checks; do not merge PRs.
 
@@ -489,7 +500,9 @@ Reviewer instruction: Apply the independently inspected PR52 whole-pixel identit
 
 
 
-## Prompt 55: Reviewer identity correction
+
+
+## Prompt 57: Reviewer identity correction
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR44, preserve all existing reference images, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 publication and PR44 exact failure match". The full comparison PNGs match reviewed PR42 originals byte-for-byte. Run required checks; do not merge PRs.
 
@@ -499,7 +512,9 @@ Reviewer instruction: Apply the independently inspected PR52 whole-pixel identit
 
 
 
-## Prompt 56: Reviewer identity backport
+
+
+## Prompt 58: Reviewer identity backport
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR42, preserve all existing reference images, and reuse the established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 identity diagnosis and scoped backport" for human request context and evidence. Run required checks; do not merge PRs.
 
@@ -512,9 +527,13 @@ Reviewer instruction: Apply the independently inspected PR52 whole-pixel identit
 
 
 
-## Prompt 57: Reviewer layer backport
+
+
+## Prompt 59: Reviewer layer backport
 
 Reviewer instruction: Backport the complete previously independently reviewed PR53 identity painting correction and exact approved short Linux references to PR42. See meta-prompts.md "Supervisor complete PR53 layer backport to PR42". Preserve other product behavior, references and strict assertions; verify required CI and do not merge PRs.
+
+
 
 
 
