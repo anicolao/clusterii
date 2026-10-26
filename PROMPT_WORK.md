@@ -389,3 +389,5 @@ Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | 
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Import 28 individually reviewed account isolation candidates and preserve 200 inherited references with complete provenance
 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Inherit all 228 individually reviewed PR75 references into readmission preparation without changing child assertions
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Import 44 independently reviewed PR76 readmission references while preserving all 228 inherited image hashes
