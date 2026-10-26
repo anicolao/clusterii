@@ -861,3 +861,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record PR70 five-check success, PR71 advancement and verified retired-checkout PNG retention.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Run isolated Nix construction focus diagnosis with unchanged production and reference bytes across four viewports.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Correct construction grep to match Playwright full titles and verify all eight stories before diagnosis.
