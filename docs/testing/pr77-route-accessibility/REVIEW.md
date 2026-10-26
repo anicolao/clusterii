@@ -1,0 +1,9 @@
+# Route warning accessibility follow-up
+
+On exact preparation0701e49a, the real shared FleetRoute in its existing gallery passes eight checks: four viewport sizes, normal/reduced motion. Focus Route details, press End (no scripted scrolling after keyboard input), assert full warning fits inside the panel and viewport. Keyboard discard clears waypoints, disables discard and returns focus to search. Assertions wait for the Svelte update. This resolves the shared-component warning accessibility hold; the design contract explicitly allows bounded detail scrolling with a persistent commitment.
+
+This is local Darwin functional evidence, not Linux baseline or full-screen concept fidelity approval. Gallery specimen widths differ from player-screen widths. Pending/busy interaction tests remain outstanding. The unrelated six-pixel stellar candidate stays unapproved. No reference or product file changed.
+
+First local run used blocked font files because symlinked dependencies were outside Vite allow list; superseded. A temporary Vite server filesystem allowance for the existing dependency directory fixed serving. All eight checks reran after document.fonts.ready and intended font check, passing. Corrected phone screenshot independently inspected; other final captures retained for further visual inspection. An intermediate assertion read state before Svelte updated; replaced with Playwright eventual assertions, without retries of failed product actions. Vite configuration restored exactly and server stopped. Tools and existing Playwright browser invoked through established Nix environment; no software installed.
+
+PR76 still has three passed checks and two live; PR77 candidate still live. Continue remaining candidate review and renderer provenance verification; do not regenerate or promote unrelated stellar variants.
