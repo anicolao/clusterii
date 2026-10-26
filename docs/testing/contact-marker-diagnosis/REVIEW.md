@@ -1,0 +1,9 @@
+
+
+Diagnostic40304372590 completed with large failure and other viewports passing. Full large artifact12642826874 SHA/CRC verified; actual/expected/diff inspected. Fifty raw pixels at1073–1082,686–693 coincide with an opaque OctahedronGeometry fleet-contact marker atworld[-5.6009816171126,-.015646530062607356,-6.787415187298234]. Passing phone/desktop have no octahedron contacts in steps027–034; failing large has one throughout. Camera and underlying stars agree. Thus the earlier stellar-raster hypothesis is superseded by differing contact state, not merely final-reload timing.
+
+Fleet-route story calls real production settleCampaignTicks with random campaign/account/fleet identifiers feeding observationDraw HMAC. Dedicated fleet-contact story already normalizes semantic entropy inputs under exact emulator-only fixture guards; route story lacks that normalization. Next handoff: inspect existing fixture and tests, normalize route contact entropy inputs without forcing scan outcomes or mutating canonical state, verify authoritative contact state and screenshots, inspect all differences before baseline approval. Preserve production probabilities, reducers, persistence, authorization, and exact pixel assertions. Work from earliest affected parent and propagate; no GitHub merges.
+
+Obsolete core visibility probe40307098758 is authoritatively completed/cancelled. PR76 has four successful checks and full stories still pending. Existing clusterii:1.2 agent remains usage-limited until Nov1; no duplicate handoff queued.
+
+Disk recovery from preceding diagnostic turn removed1134 duplicate PNGs only after retainedGit0701e49a fullblob equality and SHA256 proofs, retaining all nonimages. Proofs git-duplicate-retention-20261026.json remain under pr59-generated-shared-families, pr54/pr56/pr62/pr58/pr60/pr70/pr55-reviewer-candidates in/tmp. No unique evidence deleted. Bundle these proofs with this checkpoint before reporting complete.
