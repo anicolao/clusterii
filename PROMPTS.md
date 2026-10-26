@@ -2613,3 +2613,10 @@ Reviewer continuation: PR69 publication40259532297 now at Verify served revision
 Delegated reviewer instruction; refer to latest main meta independent PR71 integration/source/layout audit.
 
 Reviewer PR71 integration review: independently diffed staged009-selected-history spec against originalb590be6a: only five relative import/package-path adjustments, all journey/assertion bodies unchanged. No staged product/shared/functions/dependency changes versus058c3a6c;008fleet feature unchanged. Reviewed feature registry/narrative generalization for separate registered stories and independently ran all6 scripts/check-feature-story-layout.test.mjs checks under establishedNix: PASS. This is source/layout evidence only, not candidate image approval or green71. Preserve this and latest mainmeta in next normal audit; continue current integration/candidate work without duplicate68–70runs.
+
+
+## Prompt 220: Promote reviewed history
+
+Delegated reviewer instruction; refer to latest main meta complete PR71 four-size regression approval and strict-verification handoff.
+
+Reviewer: Completed PR71 run40261212475 visual review across all four viewports: 60 inherited captures byte-identical and 40 new captures approved after inspection via 28 exact-SHA representatives. Large/short provenance, outcome and image hashes verified; approvals at /tmp/cluster-pr71-candidate-review/reviewer-all-viewports-approval.json. Existing singular participant copy and concept composition gaps remain recorded; this is regression approval, not production design-fidelity signoff. Resume PR71 now: promote exactly these 40 PNGs plus required metadata/renderer records, preserve all inherited references, run complete 100-view strict verification before publishing. Do not generate new candidates or duplicate live PR68-70 checks. Carry approved parent forward into prepared PR72 only after PR71 verification. Log attributed handoff and continuations; commit/push approval evidence and lossless latest main meta snapshot. No merge.
