@@ -2700,3 +2700,10 @@ Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle
 Delegated reviewer instruction; refer to latest main meta scoped PR72 desktop approval and immutable PR73 source/reference audit.
 
 Reviewer: PR72 desktop candidate40264675463 all nine new captures individually inspected and approved for regression references; 25 inherited byte-identical. Exact hashes and bounded-history clipping/existing design-gap notes in /tmp/cluster-pr72-candidate-review/reviewer-desktop-approval.json. Remaining phone/large/short review pending; do not promote partial set or duplicate downloads. Independently verified immutable PR73 335ad6c5 entire story matches original17250d57 after five path replacements; all product and screenshot paths unchanged. Preserve approval and latest mainmeta in next normal audit commit/push. Keep existing live checks running; no merges.
+## Prompt 231: Import reviewed drafts
+
+Delegated reviewer instruction; refer to latest main meta complete PR72 regression approval and strict verification handoff.
+
+Reviewer: PR72 complete136 candidate review APPROVED for regression import:100 inherited PNGs exact and all36new individually inspected across phone/desktop/large/short. Exact hashes/provenance and per-viewport notes in /tmp/cluster-pr72-candidate-review/reviewer-all-viewports-approval.json plus four reviewer approvals. Phone40267745100 executor356b8d51 sourcea5b2d36e verified same original product/story/runner/reference inputs; archive API size/SHA256/CRC valid, passed34 exit0 referenceDiff0. Import ONLY approved36 new refs plus review metadata on reviewed72 target4a826445; preserve all100inherited and no product/story/runtime drift. Commit/push attributed evidence/logs, then single bounded strict136 verification with snapshot updates forbidden and all four viewports. No regenerating accepted candidates, no premature whole-PR approval, no merges. Existing design gaps remain separately recorded, not production-fidelity signoff. Supervisor owns independent strict artifact review.
+
+

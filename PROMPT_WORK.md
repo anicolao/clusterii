@@ -579,3 +579,7 @@ Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | R
 Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | Archive four exact replacement journeys and record scoped acceptance with Linux diagnosis and outstanding provider gates
 
 Prompt 229 | faad1c53a0fe1743ecc37484fbc5fc07b35e1ef0423c0c3fa2f597c544b0d22a | Integrate exact original PR73 replacement assertions into feature009 while preserving parent references and both histories.
+
+Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | Record independent strict136 artifact verification and publish the reviewed PR72 baseline repair without runner plumbing.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Integrate published PR72 reviewed references into PR73 preparation while preserving both complete prompt histories.
