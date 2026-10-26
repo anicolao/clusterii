@@ -557,3 +557,5 @@ Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Request one original short cohort with strict comparison and telemetry to investigate order-dependent stellar rendering.
 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Isolate one short cohort diagnostic with telemetry only after stable PNG capture and unchanged product references
+
+Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Request the single post-capture-only short diagnostic after policy and 14 story-tool tests pass
