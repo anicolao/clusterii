@@ -1,0 +1,7 @@
+
+
+## Supervisor corrected short review complete
+
+Individually viewed16 remaining unique1280x720 short captures from corrected source artifact12658330701. Ordinary/recovery peer216.3 and219.1 credits retain market106 forecasts110.3/113.1 and unchanged counts. Both keyboard-return screens show gold Develop focus and legible31fighters/28infantry in selected-system card. Recovery initial200/camp69/131 and peer200/market106/94; pending retains200 with cyan status boundary and disabled retry. Reservation131/paid69/tick1/refund69/nextcamp80/51; reload131/market106/25; completion145/market106/39; base76/tick6/build80disabled; cancellation queued76/disabled cancel; settled147.8/refund69/base69/78.8; reload147.8/refund69/market106/41.8. Target state and controls legible; scrolled queue title partly clipped during base reserve/cancel, rules disclosure partly clipped after reload, pending queue explanatory line partly behind footer. These are scroll positions and do not establish whole-screen accessibility. With prior help, ordinary and corrected-focus inspection, all50 corrected short hashes now covered by visual review and exact duplicate verification; all local SHA256 reverified. Approve regression references only, no blanket design-fidelity approval or import yet. Large state captures remain.
+
+Agent remains usage-limited; PR72 threegreen/application and exact verification pending. No restart, duplicate prompt, or merge.
