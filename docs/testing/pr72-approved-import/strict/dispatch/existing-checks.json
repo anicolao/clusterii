@@ -1,0 +1,68 @@
+{
+  "69": [
+    {
+      "name": "stories (verify)",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "stories (generate)",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "verify",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "documentation",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "publish",
+      "state": "SUCCESS"
+    }
+  ],
+  "70": [
+    {
+      "name": "stories (verify)",
+      "state": "FAILURE"
+    },
+    {
+      "name": "stories (generate)",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "documentation",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "publish",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "verify",
+      "state": "SUCCESS"
+    }
+  ],
+  "71": [
+    {
+      "name": "stories (verify)",
+      "state": "IN_PROGRESS"
+    },
+    {
+      "name": "stories (generate)",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "verify",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "documentation",
+      "state": "SUCCESS"
+    },
+    {
+      "name": "publish",
+      "state": "SUCCESS"
+    }
+  ]
+}
