@@ -1,0 +1,44 @@
+{
+  "artifact": {
+    "id": 12641472492,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY0MTQ3MjQ5Mg==",
+    "name": "discard-strict-draft-desktop-710d0ac6dbed3715f1fe5e652f08dae41484f559-1",
+    "size_in_bytes": 90780457,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12641472492",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12641472492/zip",
+    "expired": false,
+    "digest": "sha256:76c29bb33fcfb977b9ce2320ba4e805f693ea2c0ba27833d927fdb9c8fef825d",
+    "created_at": "2026-10-26T09:57:37Z",
+    "updated_at": "2026-10-26T09:57:37Z",
+    "expires_at": "2026-11-25T09:57:34Z",
+    "workflow_run": {
+      "id": 40302767176,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr77-discard-strict",
+      "head_sha": "710d0ac6dbed3715f1fe5e652f08dae41484f559"
+    }
+  },
+  "fullCRC": true,
+  "retained": [
+    "ci-evidence/recovery-request/request.json",
+    "ci-evidence/recovery-request/executor.json",
+    "ci-evidence/discard-strict/collection.log",
+    "ci-evidence/discard-strict/outcome.json",
+    "ci-evidence/discard-strict/selection.json",
+    "ci-evidence/nix-renderer/browser-path.txt",
+    "ci-evidence/nix-renderer/containerd.log",
+    "ci-evidence/nix-renderer/engine-info.log",
+    "ci-evidence/nix-renderer/engine.log",
+    "ci-evidence/nix-renderer/image-identity.txt",
+    "ci-evidence/nix-renderer/image-inspect.json",
+    "ci-evidence/nix-renderer/image-load.log",
+    "ci-evidence/nix-renderer/nix-ldd.txt",
+    "ci-evidence/nix-renderer/renderer-ldd.txt",
+    "test-results/stories/008-fleet-travel/stories/live-fleet-travel/desktop/linux-arm64/034-close-arrival-archives-by-keyboard-2-independent-marshal.layout.json",
+    "test-results/stories/008-fleet-travel/stories/live-fleet-travel/desktop/linux-arm64/034-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+    "test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-desktop/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/034-close-arrival-archives-by-keyboard-2-independent-marshal-actual.png",
+    "test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-desktop/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/034-close-arrival-archives-by-keyboard-2-independent-marshal-diff.png",
+    "test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-desktop/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/034-close-arrival-archives-by-keyboard-2-independent-marshal-expected.png"
+  ]
+}
