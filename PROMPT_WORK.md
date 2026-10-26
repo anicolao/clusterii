@@ -597,3 +597,5 @@ Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | 
 Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | Record PR72 contact integration and preliminary twenty-capture PR79 construction-help review.
 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Integrate prepared PR72 contact fix into PR73 while preserving all reviewed image references.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Record identical PR76 contact-marker failure, safe evidence retention and complete PR79 Darwin reference inventory.
