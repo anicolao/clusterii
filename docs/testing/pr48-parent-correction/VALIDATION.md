@@ -1,0 +1,1 @@
+Parent118e2551 integrated. Child lifecycle lab source unchanged. Changed production CSS, briefing test and47 identity images byte-exact reviewed parent. All10 policy checks pass. Full CI remains required. No GitHub merge.

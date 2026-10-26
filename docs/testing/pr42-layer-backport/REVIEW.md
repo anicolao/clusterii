@@ -1,0 +1,1 @@
+Reuse the exact reviewed PR53 short identity layer CSS and 47 approved image hashes. All hashes occur in the retained independent PR53 indexes. Identity page and identity/validation/recovery specs are unchanged between the branches. No new failed output is approved. Fresh complete CI remains required; PR53 green is supporting evidence, not PR42 acceptance.

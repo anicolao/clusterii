@@ -234,3 +234,35 @@ Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | P
 Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 49.
 
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/research-lab-stories.
+
+Prompt 49 | 003d69bf7828b77a9d8757d259b27ece1e6b259584f6ed8c824cac6ecc3d3555 | Reconcile PR44 parent preserving exact archived requests and established archive-aware prompt checker.
+
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Backport inspected PR52 whole-pixel identity leading and established Nix CI to PR42 without changing references.
+
+Prompt 48 | 0cdd8804dd565c8bd5d2adba0cefbdc64ccd99f4d5fd883ea1f1339ecb5b2b06 | Integrate reviewed PR42 correction into PR43 preserving both exact archived histories and original child features.
+
+Prompt 49 | 1c202e97f9e5217f2569a6ce5e1b920e4e001ebd082ac09f529e0f15c1d0143f | Integrate reviewed PR43 into PR44 preserving exact parent histories and all existing child product and baseline bytes.
+
+Prompt 49 | b00b65eecf6c9de93da4c244254e9e45aa5d1b8b7f22d0e2330283ea41e2fcd2 | Integrate the complete reviewed PR42 identity painting correction into PR43 without changing child gameplay or assertions.
+
+Prompt 50 | f7a67da077c5892ce46775abc6806821f8806f5d6545194cf97db8efa82ef2ba | Carry complete PR43 parent identity layer and approved references into PR44 retaining both ordered histories.
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Integrate complete reviewed PR44 parent into PR45 preserving child encryption journeys and exact archived histories.
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Record verified PR45 long-poll retransmission bypass of websocket-only failure injection
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Hold recovered briefing visits over HTTP long polling and verify canonical state before release
+
+Prompt 51 | 1e18c671942bb6d6ffddc1f455f37812b4bfd4473afa023474a81b0e3242a1d7 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 56 | 37be29bdb6612d4c59db27f7eb777cd5248bde5064e9477327a079bfb36ebc16 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Record exact reviewed transport maintenance with whole-original-test reversal proof and unchanged policy guards
+
+Prompt 51 | 1e18c671942bb6d6ffddc1f455f37812b4bfd4473afa023474a81b0e3242a1d7 | Carry the reviewed PR45 transport maintenance inventory and exact reversal proof into PR46; product and baseline sources remain unchanged.
+
+Prompt 56 | 37be29bdb6612d4c59db27f7eb777cd5248bde5064e9477327a079bfb36ebc16 | Carry PR46 reviewed transport maintenance into PR47 with original-test reversal proof and unchanged child gallery coverage.
+
+Prompt 57 | 5f47cbff6f4cb40ad46445e5b5ee9f02ac39afe43e049620539b195db32e4d07 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 59 | a9d741639e43ad4ae4e3e80bffb66b583573a617a15a932b99537bd343fef5a8 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
