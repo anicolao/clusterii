@@ -2175,3 +2175,51 @@ Reviewer: Completed independent full candidate diff review for66 run40227118604.
 
 
 
+
+## Prompt 164: Navigation residual preparation
+
+Delegated reviewer instruction; see main meta Reviewer keep green-stack preparation moving during verification.
+
+Reviewer: Current independent check confirms66 run40232015015 attempt2 actively executing exact verification;67 run40243423178 desktop executing strict, phone checkout, large/short queued. Preserve both sole runs. While waiting, prepare PR68 residual changes in an isolated branch atop reviewed67 ac3d6298: inspect exact original PR68 diff and applicable instructions; preserve reviewed67 home framing and stronger018 visibility. Focus only on getting existing stack green, no new feature expansion. Original68 residual pointer-events wrappers and campaign navigation readable-label assertions need source review and appropriate checks. Do not import historical Darwin baselines as Linux approvals; retain every candidate/diff for independent inspection. Inspect actual Pantheon tests/e2e instructions/layout before any story reorganization. Use established Nix and disk floor/reserve. Do not publish active68 or duplicate live runs. On67 strict success collect complete72-view immutable-reference evidence and publish67 as already authorized after required integration checks; on66 retry failure retain exact evidence and diagnose, no retry loop. Reconcile latest supervisor meta findings and this attributed instruction into committed/pushed PROMPTS/PROMPT_WORK/evidence. Never merge GitHub PRs.
+
+## Prompt 165: Preserve original ancestry
+
+Delegated reviewer instruction; refer to main meta PR68 executor and ancestry audit.
+
+Reviewer: Independently audited68 executor d00a2afb/request91a10a62 and confirmed sole run40244192975 queued. While66/67/68 jobs proceed, reconcile original PR68 ancestry and prompt preservation in isolated preparation branch, preserving exact tested ef600330 production/spec/helpers and inherited Linux refs. Use Git-proven original prompt archives and structural separators under unchanged checker, no historical rewriting or checker weakening. Keep historical Darwin evidence clearly historical; do not import unreviewed PNG changes. Verify source/test/reference identity to ef600330 after reconciliation and commit/push attributed evidence, including newest supervisor meta audits. This is preparation, no active68 publication yet. Prioritize terminal67 results: validate all72 complete unchanged-reference manifests then publish67 and full required CI as already authorized. Preserve sole66 retry; if failure inspect exact evidence, no loop. Do not queue duplicate verification. No GitHub merge.
+
+## Prompt 166: Preserve successor ancestry
+
+Delegated reviewer instruction; refer to latest main meta PR68 evidence and PR69 ancestry reconciliation checkpoint.
+
+Reviewer: Sole69 generation40245246719 now live; preserve it and all predecessor runs. While waiting, complete pending68 incorporation of published67 evidence348733a1 onto reconciledc215647d; this must preserve exactef600330 product/spec/runtime/reference trees. Independently verified c215 archives exact and canonicalappendonly; do not repeat unchanged checks unnecessarily. After68 reconciliation, preserve original69 ancestry/prompt continuations atop prepared69b89864b1, using exact archives and unchanged checker, with tested69 source/helpers/refs byteidentity. No Darwin baseline imports. Commit/push attributable reconciliations and latest supervisor audits. On68 all101 strictsuccess, retain complete artifacts, original hashes and manifests then publish68 after confirming exact current67 parent and no code/ref delta from tested target; fullrequiredCI must run. On69 candidate completion retain original archives/complete76image inventory and provide paths for supervisor inspection; do not promote unseen candidates. Respect diskfloor+reserve with selective extraction if needed. Prioritize any66/67 failure. No duplicate requests or GitHub merges.
+
+## Prompt 167: Stabilize overdue acknowledgement
+
+Delegated reviewer instruction; refer to main meta PR68 trace and independent image inspection.
+
+Reviewer: Independently inspected PR68 expected/actual/diff: change is footer pending->same-order recovery CTA; no visible map/route drift. Rehashed all7 selected entries/SHA/CRC/size and expected image equals exactbf0ea547Git baseline; wholearchiveSHA not claimed. Trace timing supports20second boundary after pending assertion. Proceed focused fix atop PR68: accepted-while-offline step must deliberately await the real stable overdue acknowledgement state (exact recovery status plus enabled Check route order), while preserving destination, no false departure confirmation, one original encrypted command/receipt, canonical forces, and uninvolved-player privacy assertions. Earlier transient-pending steps remain covered; update this step narrative to explain overdue offline acknowledgement. Do not extend production timeout, freeze/mask timer, weaken comparator, or merely rerun. Generate affected story across4sizes in pinned renderer, inspect changed step26 images and any unexpected deltas before baseline promotion; then strict/full checks. No speculative app change or broad baseline refresh. Commit trace/inspection findings and exact mainmeta with attributed logs. Keep70focus sole run intact; earliest-red68 priority.
+
+## Prompt 168: Verify normal focus
+
+Delegated reviewer instruction; refer to main meta independent PR70 focus diagnostic inspection.
+
+Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; read all observations and visually inspected peer032: ring now visible. Both players maintain document focus, opener focus, focus-visible and3pxsolidgold outline afterEscape throughPNG. This is a negative reproduction of original missing ring, not proof of a specific modality cause or app repair. No more diagnostic runs needed now. After priority68 fix dispatch, strengthen normal70 final-step per-view verification at capture time for focused opener plus focus-visible/computed visible outline, using existing focus audit conventions; do not force focus/classes or add sleeps. Remove diagnostic-only instrumentation from acceptance target, regenerate normal phone journey and inspect any changed pixels (expected peer032 ring), then complete160strict. Desktop/short/large reviewed visuals remain valid only where bytes unchanged. Diagnostic image visually acceptable as intended state but do not silently import diagnostic provenance as normal acceptance. Record exact original/diagnostic hashes and unresolved causal limitation. No blanket CSS change or merge.
+
+## Prompt 169: Promote reviewed recovery
+
+Delegated reviewer instruction; refer to main meta complete PR68 four-size review and independent PR70 import audit.
+
+Reviewer: Final PR68 large artifact12623245258 full size/SHA256/CRC verified,40PNG compared,39identical and only026 changed. Independently viewed previous/candidate large026 (2048display of3840original), intended overdue footer/CTA, no map drift. Approve per /tmp/cluster-pr68-overdue-review/reviewer-large-approval.json. All160 candidate comparisons now complete:156unchanged and exactly4inspected/approved026 changes. Proceed exact four-image promotion plus metadata on68 focused fix, strict/full required CI and forward integration; no more candidate generation needed. Supervisor owned final large retrieval. Independently audited70 a28bb2f1:48new imported PNGs equal reviewed originals, all160review manifest SHA256s valid, no inherited PNG/renderer modifications; only four review.json updates. Audit /tmp/cluster-pr70-normal-focus-review/reviewer-import-audit.json. Preserve both approvals/audit and current mainmeta in next pushed logs.
+
+## Prompt 170: Preserve reviewed dispatch
+
+Delegated reviewer instruction; refer to main meta independent PR68 import/executor audit and four passing guard tests.
+
+Reviewer: Independently audited committed68 import122245b2: exact four approved PNGs, only four review.json additional baseline changes, no other pixels/renderers. Record /tmp/cluster-pr68-overdue-review/reviewer-import-audit.json. Reviewed strict route case/request/runner/workflow: exact160references,40perviewport, original comparator/no snapshots/no retries, pinned Nix renderer;4guard tests independently PASS. Continue sole17fc3dd4 request dispatch, preserve unique handle, then carry verified68 change forward into69/70 without rerunning already-live jobs solely for observation. Include latest mainmeta and audit in pushed logs.
+
+## Prompt 171: Publish verified stack
+
+Delegated reviewer instruction; refer to main meta complete independent68/70 strict160 verification and ordered publication authorization.
+
+Reviewer: PR68 strict40257151053 ALL FOUR SUCCESS. Supervisor independently verified remaining short12623348262 and large12622949577 full originalZIP sizes/SHA256/CRC, verify/passed40 exit0/referenceDiff0, exact target122245b2; all80remaining PNGs equal reviewed references. All160strict68 captures now verified, matching completed160strict70. Records /tmp/cluster-pr68-strict-review/reviewer-short-verification.json and reviewer-large-verification.json complete desktop-phone record; retain originals and no duplicate retrieval. Proceed publish reviewed68 repair plus audit to its existing PR, carry exact parent forward and publish prepared69/70 updates for required CI. No additional isolated strict/candidate reruns absent changed tested inputs. Full required CI remains mandatory; preserve previous failures and no merge. Independently compared93eaca1e versus a28bb2f1: no changes to product/shared/functions/e2e/helpers/deps/workflows/checker. Commit/push latest mainmeta and final verification records with publication.

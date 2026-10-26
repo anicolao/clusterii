@@ -1,4 +1,5 @@
 import { test, expect } from "./story-helpers/fixtures";
+import { readableLabels } from "./story-helpers/galaxy-labels";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import type { Page } from "@playwright/test";
@@ -413,7 +414,17 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
     description:
       "A real waiting member filters the authoritative catalogue, uses keyboard camera controls, selects a named star and tests map-label clipping at the inspector boundary. No home exists before scheduled start. Fixed catalogue entropy makes the scene repeatable without invented star data or gameplay actions.",
   });
-  const views = [view(page, "Star envoy")],
+  const views = [
+      {
+        ...view(page, "Star envoy"),
+        verifications: [
+          {
+            spec: "System names remain separated and contained as the actual camera and class filter change.",
+            check: () => readableLabels(page),
+          },
+        ],
+      },
+    ],
     errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   let before: { x: number; y: number; width: number; height: number } | null =

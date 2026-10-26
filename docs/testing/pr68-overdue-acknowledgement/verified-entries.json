@@ -1,0 +1,77 @@
+{
+  "artifact": {
+    "id": 12621433122,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYyMTQzMzEyMg==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 4230103809,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12621433122",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12621433122/zip",
+    "expired": false,
+    "digest": "sha256:9818da1ef7fa9f8c1260f17c002ed222d3aab6db771888efdee186004344be9d",
+    "created_at": "2026-10-26T01:20:07Z",
+    "updated_at": "2026-10-26T01:20:07Z",
+    "expires_at": "2027-01-23T23:45:25Z",
+    "workflow_run": {
+      "id": 40246186390,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/navigation-label-review",
+      "head_sha": "bf0ea547aff022f594fac07231a97875d9b7e0dd"
+    }
+  },
+  "downloadedRangeBytes": 64686572,
+  "etag": "\"0x8DF32FF452F4365\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr68-current-review/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/error-context.md",
+      "entry": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/error-context.md",
+      "sha256": "53b20597b5733567a2dcde14754c459952b7369e041a6dfebcdb744ec8e58120",
+      "bytes": 10060,
+      "crc32": "6bd1cb6f"
+    },
+    {
+      "path": "/tmp/cluster-pr68-current-review/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal-actual.png",
+      "entry": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal-actual.png",
+      "sha256": "7274128e03456b7e7907aa6ba39cd654efecbd3dd2b7e1abe75f1ff58d85b16b",
+      "bytes": 935272,
+      "crc32": "8049b6dd"
+    },
+    {
+      "path": "/tmp/cluster-pr68-current-review/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal-diff.png",
+      "entry": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal-diff.png",
+      "sha256": "00406c085708a69dff892d5ff76c9fdd787297fbf5eeab0ebb9a5b91f48a6854",
+      "bytes": 314009,
+      "crc32": "20762d4b"
+    },
+    {
+      "path": "/tmp/cluster-pr68-current-review/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal-expected.png",
+      "entry": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal-expected.png",
+      "sha256": "e12d84197c8134d83f7e5e9a23c28c7730ec04d3fc4f37ac08b2830a6d3a9b8b",
+      "bytes": 932756,
+      "crc32": "67893d42"
+    },
+    {
+      "path": "/tmp/cluster-pr68-current-review/test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/trace.zip",
+      "entry": "test-results/stories/fleet-route-recovery.story-a7b0e-iginal-choices-and-identity-large/trace.zip",
+      "sha256": "a683b992e63f66cb2b0e36949351be654cd106c85d8c5715a7d7437597c700ef",
+      "bytes": 60987590,
+      "crc32": "d8671686"
+    },
+    {
+      "path": "/tmp/cluster-pr68-current-review/test-results/stories/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.layout.json",
+      "entry": "test-results/stories/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.layout.json",
+      "sha256": "8c433beb20eef59355a39d7f24d9c6192e5b1965c109f6a43738a8b4968bb4c4",
+      "bytes": 2069,
+      "crc32": "2fa3f9c0"
+    },
+    {
+      "path": "/tmp/cluster-pr68-current-review/test-results/stories/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "entry": "test-results/stories/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "7274128e03456b7e7907aa6ba39cd654efecbd3dd2b7e1abe75f1ff58d85b16b",
+      "bytes": 935272,
+      "crc32": "8049b6dd"
+    }
+  ]
+}
