@@ -1,0 +1,30 @@
+{
+  "runId": 40261212475,
+  "createdAt": "2026-10-26T02:52:04Z",
+  "status": "queued at API observation",
+  "requestCommit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+  "executorSource": "d95b82188edab58502a8ebb1df6e54f42ea32789",
+  "target": "454d4185d77c75fcb2c6806427abc3b89f88bff4",
+  "requestSha256": "5c32d3f55e751fc759c3b4046116deeb40a8547e141c146b3807e5ae6dd0d63c",
+  "uniqueRequest": true,
+  "candidateApproval": false,
+  "active71Published": false,
+  "pr70": {
+    "head": "058c3a6ce6449fc1f7d9a731bcb5da2b64727781",
+    "publish": {
+      "runId": 40260334253,
+      "status": "success",
+      "completedAt": "2026-10-26T02:46:47Z"
+    },
+    "hostedExactRevisionAssets": "pass",
+    "application": {
+      "runId": 40260334280,
+      "status": "in_progress"
+    },
+    "stories": {
+      "runId": 40260334215,
+      "status": "in_progress"
+    },
+    "documentation": "success"
+  }
+}
