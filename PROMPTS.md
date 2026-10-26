@@ -2235,3 +2235,21 @@ Reviewer: Corrected69 run40247985297 now terminal SUCCESS all4cases. Independent
 Delegated reviewer instruction; refer to latest main meta corrected PR69 retained desktop/short verification and PR70 diagnostic-path audit.
 
 Reviewer: Independently verified retained corrected69 desktop12620275117 andshort12620280723 ZIP size/SHA256/CRC and all38 PNGs against34a45cd1 Git references, all exact. Fresh process inspection no longer finds prior download PID73026; please retrieve terminal completion/error rather than relying on stale live-transfer narration. Only desktop/short verified markers currently exist. Diagnose transfer result/disk reserve before any retry; no duplicate download. Reviewed committed70 follow-upd8252cf8: common storySnapshotName now binds preflight and Playwright mismatch diagnostics to same paths, legacy and migrated namespaces covered; no comparator weakening. Use this corrected target in future request audit, not e1602e14.69 publication first; record currentmainmeta and logs.
+
+## Prompt 174: Synchronize real initialization
+
+Delegated reviewer instruction; refer to main meta independent PR69 trace/server correlation and bounded readiness repair.
+
+Reviewer: Independently correlated owner trace wallTime1792976528403/monotonic1179062.569 with reload campaignSecurity1196007.437: approximately01:02:25.348Z, matching full application log lines4714-4716 start01:02:25.3504774Z finish01:02:34.9637858Z duration9612.468729ms. Source recover() awaits encryptionAvailable before recoverOrder/select. This supports explicit bounded campaign-readiness synchronization before the unchanged five-second panel/data/retransmission assertions; it does not justify blanket timeout increases or claim specific internal slow operation. Proceed targeted readiness repair under existing test-policy constraints, retaining identity/envelope/revision/receipt/privacy assertions and real service. Validate focused reload recovery then required CI; no fake readiness or skipped recovery. Record this independent evidence and latest mainmeta in normal audit.
+
+## Prompt 175: Preserve candidate ownership
+
+Delegated reviewer instruction; refer to main meta PR68 artifact ownership and independent PR69 readiness repair review.
+
+Reviewer: PR68 desktop and phone candidate jobs succeeded. Supervisor owns downloading/inspecting artifacts12621864493 and12622745908 under /tmp/cluster-pr68-overdue-review; do not duplicate these downloads. Continue69 readiness repair; reviewed current diff explicitly awaits genuine campaignSecurity POST200 boolean capability then retains five-second panel/data assertions, consistent with measured delay. Large/short still executing. Normal70 still executing.
+
+## Prompt 176: Retain route candidates
+
+Delegated reviewer instruction; refer to main meta independent PR68 desktop/phone complete image comparison.
+
+Reviewer: PR68 desktop/phone independently verified complete ZIP SHA256+CRC, provenance/outcome40views each. Compared all80PNG bytes against bf0ea547 Git:78identical, only step026 changed in each viewport. Viewed both previous/candidate pairs; intended overdue status and enabled Check route order, map/destination unchanged, footer readable (phone wraps/grows within viewport). Approve exactly these two changed candidates as regression baselines; record /tmp/cluster-pr68-overdue-review/reviewer-desktop-phone-approval.json and comparison inventory. No blanket approval of pending large/short. Keep originals, import exact approved bytes with proper renderer provenance after remaining review, then strict/full checks. Mainmeta latest review also ready for normal audit.
