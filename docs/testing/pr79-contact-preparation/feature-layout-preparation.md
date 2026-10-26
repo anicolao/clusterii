@@ -1,0 +1,7 @@
+## Supervisor construction feature layout preparation
+
+Inspected actual Pantheon tests/e2e directory, root README and007-match README/FIDELITY: numbered feature/spec, shared helpers, generated stories/<journey>/README and screenshots/<journey>. Read Cluster E2E_GUIDE before edits. Moved construction.story.spec.ts to tests/e2e/010-construction/construction.spec.ts and registered both ordinary/recovery story IDs in shared path ownership. All947 lines equal the prior spec after exactly seven module-reference relocations, including the Functions createRequire anchor. No assertion, timeout, gameplay or capture change. Added README/FIDELITY with strict verification and design limits explicit; no fabricated passing narrative.
+
+All41 story-policy checks, six feature-layout checks, Svelte diagnostics and Functions TypeScript passed (zero errors/warnings). Baseline import still pending exact corrected artifact metadata retrieval; transientHTTP503 permits CRC-safe resume. Script /tmp/cluster-pr79-corrected-metadata-range.py targets only README/story/renderer metadata for construction from immutable12658330701. Previously reviewed200 PNGs remain unchanged. No obsolete references imported; historical paths retained. This preparation is not strict story acceptance or public PR79 publication.
+
+PR73 has three successful checks with application and illustrated verification live. Existing tmux agent usage-limited; no duplicate handoff or merge.

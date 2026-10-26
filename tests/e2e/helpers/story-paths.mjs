@@ -1,6 +1,8 @@
 import { basename, join, relative, sep } from "node:path";
 /** @type {Readonly<Record<string, {root: string, spec: string} | undefined>>} */
 const features = Object.freeze({
+  "live-construction-ordinary": { root: "tests/e2e/010-construction", spec: "construction.spec.ts" },
+  "live-construction-recovery": { root: "tests/e2e/010-construction", spec: "construction.spec.ts" },
   "live-fleet-travel": { root: "tests/e2e/008-fleet-travel", spec: "fleet-travel.spec.ts" },
   "selected-history-consent": { root: "tests/e2e/009-selected-history", spec: "selected-history.spec.ts" },
 });

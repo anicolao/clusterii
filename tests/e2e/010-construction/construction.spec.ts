@@ -7,12 +7,12 @@ import type {
   WebSocketRoute,
   Locator,
 } from "@playwright/test";
-import type { Campaign } from "../../shared/campaign";
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { login, grantDeveloper } from "./helpers";
-import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
-import { constructionStoryPrefix } from "./story-helpers/construction-clock.mjs";
+import type { Campaign } from "../../../shared/campaign";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { login, grantDeveloper } from "../../browser/helpers";
+import { admissionAt, scheduledAt } from "../../browser/story-helpers/admission-clock.mjs";
+import { constructionStoryPrefix } from "../../browser/story-helpers/construction-clock.mjs";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
 const panel = (page: Page) =>
@@ -100,7 +100,7 @@ for (const interrupted of [false, true])
         surface: "game" as const,
       }));
     const require = createRequire(
-      new URL("../../functions/package.json", import.meta.url),
+      new URL("../../../functions/package.json", import.meta.url),
     );
     const admin = require("firebase-admin/app");
     if (!admin.getApps().length)
