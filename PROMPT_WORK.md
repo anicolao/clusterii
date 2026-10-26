@@ -857,3 +857,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Assert real recovered construction panel focus and attach outline evidence before visual capture without forcing focus.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Preserve verified emergency duplicate-retention proofs and recovered Nix execution before construction focus browser check.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record PR70 five-check success, PR71 advancement and verified retired-checkout PNG retention.
