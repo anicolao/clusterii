@@ -1,0 +1,50 @@
+$ node --test scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-feature-story-layout.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs scripts/check-route-observation-inputs.test.mjs && node scripts/check-story-policy.mjs
+✔ admission fixture changes only designated domain time inputs (0.356583ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.286333ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.700917ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.365959ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.238167ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.669042ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.349583ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.379417ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (0.912916ms)
+✔ unrelated campaigns retain every production entropy input (0.061458ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.178334ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.343958ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.334167ms)
+✔ migrated and legacy paths remain separate and share one fixture implementation (1.89ms)
+✔ generated feature narrative requires all four complete matching verified sequences (0.734709ms)
+✔ historical telemetry remains opt-in and emulator-only, with exact source anchor (0.291041ms)
+✔ same step IDs cannot disguise mixed spec or changed acknowledgement/view claims (0.396333ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.359959ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.55025ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.768583ms)
+✔ unrelated campaigns retain every original entropy input (0.062542ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.193416ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.828917ms)
+✔ unrelated campaigns retain every original entropy input (0.061542ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.188459ms)
+✔ entropy identities are stable across real campaign/account IDs, never modifying state (0.071625ms)
+✔ passed-run facts remain as an explicit file even when reporter ignores attachment bodies (1.571333ms)
+Previous story evidence preserved at /tmp/nix-shell.Oj279N/cluster-cohort-test-E9uF41/.story-cohorts-twO3ZM/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.Oj279N/cluster-cohort-test-E9uF41/.story-cohorts-twO3ZM/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (9.918417ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.541792ms)
+✔ interruption retains current artifacts and launches no successor (1.60825ms)
+✔ an artifact path collision fails rather than overwriting either result (2.830417ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.442125ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.874ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.9185ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (5.417625ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.405958ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.34725ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.399041ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 66.402541
+Illustrated-story policy passed; legacy migration gaps remain inventoried.

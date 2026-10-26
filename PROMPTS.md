@@ -2236,3 +2236,47 @@ Delegated reviewer instruction; refer to main meta PR69 missing renderer metadat
 
 Reviewer: Independently read failed69 phone121330456272 anddesktop121330456220 logs: Missing reviewed baseline/renderer at first010, before comparison (views0). Source helper requires sibling renderer.json; f588b6e4 imported PNGs andreview.json only. My prior PNG audit missed this completeness defect. Verified each four review.json.renderer exactly equals retained candidate verified-inventory renderer. Add four renderer.json files from those retained original perviewport manifests, keep all76approvedPNG bytes unchanged and verifier strict. Add a cheap preflight covering every required PNG plus renderer sibling/metadata before any new expensive strict request. Do not fabricate renderer values or regenerate images. Preserve failedrun40246963988 and let remaining livecases finish; after metadata correction use one fresh source-bound complete4size strict request with corrected target/reference tree. Continue69 publication only on complete strictsuccess and artifact identity checks; no screenshot updates/masks/thresholds. Log this rootcause and my missed metadata audit, commit/push. Prioritize earlier requiredCI terminal results. No GitHub merges.
 
+
+
+## Prompt 174: Publication checkpoint reconciliation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:49 Toronto”.
+
+Reviewer checkpoint 2026-10-22 01:49 Toronto: #67 c4a5cac attached; reviewed scope/provenance and prior production diff, sampled phone collision resolved only. New #65 publish job119648365097 failed exact-head757d423 check with HTTP404 at05:44UTC, same symptom as #61; retain publication gate and diagnose existing Pages deployment at a natural boundary without duplicate publishes or weaker checks. Continue healthy navigation/shared-renderer verification. Carry main meta checkpoints through01:49 into committed/pushed logs and attributed continuations. Preserve evidence under low disk headroom; no merge.
+
+
+
+## Prompt 175: Linux candidate checkpoint
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:59 Toronto”.
+
+Reviewer CI finding 2026-10-22 01:59 Toronto: independently read completed #65 stories verify job119644812733 via jobs logs API (overall generation still queued). /tmp/cluster65-0158-failure.log shows every viewport29 passed and12 failed; all48 reported failures are missing reviewed Linux baselines, with no other Error entries beyond orchestration failures. This is evidence of improved bounded-cohort/setup execution in this run, not complete service or raster certification. Review matching-head generated Linux candidates when available; never promote failed verification output. Carry this and main checkpoints into committed/pushed attributed logs; continue current healthy work, no merge.
+
+
+
+## Prompt 176: Bounded render diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:19 Toronto”.
+
+Reviewer continuation 2026-10-22 03:19 Toronto: clean6c168d2 and queues empty; disk independently460MiB, so keep large runs/downloads blocked and preserve evidence. Continue useful bounded read-only diagnosis of #70 seven-pixel stellar-core mismatch using retained trace/camera/render lifecycle source and existing actual/expected artifacts. Identify a concrete hypothesis and smallest future verification, without changing baselines/tolerance or asserting an untested fix. Audit outstanding implementation/release gates against IMPLEMENTATION_PLAN and distinguish green skipped-generation jobs from real candidate evidence. Carry main checkpoint into attributed committed/pushed logs; no duplicate CI or merge. If no further low-disk work is meaningful, record the exact restart command and required evidence, then wait for disk headroom.
+
+
+
+## Prompt 177: Render telemetry continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:39 Toronto”.
+
+Reviewer continuation 2026-10-22 03:39 Toronto: disk independently recovered to17GiB; clean1c9a9a9 and empty queue. Resume the bounded #70 stellar-core diagnosis documented in ARRIVAL_RENDER_DIAGNOSIS.md now: preserve original evidence, add minimal correlated render/camera/depth telemetry, run isolated short verification and identify cause before changing production or baseline. Keep zero tolerance and all authoritative/privacy assertions. Then continue IMPLEMENTATION_PLAN in small stacked successors with independently reviewable evidence. #68 publish now failed; retained /tmp/cluster68-0338-preview.log for read-only deployment diagnosis at natural boundary. Inspect actual generation steps before claiming eligible Linux candidates; use deliberate separate matching-head generation/review, not failed verification output. Carry main checkpoints through03:39 into attributed PROMPTS/PROMPT_WORK and committed/pushed logs. No merge or duplicate queued prompts.
+
+
+## Prompt 178: Validate narrative identity
+
+Delegated reviewer instruction; refer to latest main meta PR70 generated narrative evidence-integrity review.
+
+Reviewer code review during70 migration: featureNarrative currently accepts four manifests with matching step IDs/platform but does not require matching specSha256 or step semantics; it then prints phone actor/description/acknowledgement/assertions over all viewport images. This can silently combine stale/different journeys into a passing walkthrough. Before committing, require same spec SHA and corresponding actor/kind/description/acknowledgement/verifications plus ordered viewpoint identities/claims (allow only viewport image filenames to vary); validate source provenance explicitly and reject mixed specs. Add focused negative case demonstrating same IDs but different acknowledgement/spec rejected. This is evidence integrity, not pixel tolerance. Keep ongoing69 and otherCI untouched; incorporate latest mainmeta with next normal commit.
+
+## Prompt 179: Publish verified contacts
+
+Delegated reviewer instruction; refer to main meta corrected PR69 complete strict success and PR70 migration integrity audit.
+
+Reviewer: Corrected69 run40247985297 now terminal SUCCESS all4cases. Independently read remaining short121333536532 andlarge121333536795 strict summaries, completing76 verified views. Proceed already-authorized69 evidence retention/byte verification and publication on current68 parent; prioritize this concrete green-stack step over70 preparation, then resume70. No need for further approval. Also independently verified all240 inherited fleet-travel files moved to008 screenshots namespace byte-for-byte versus093e0abb; no missing/changed files. Read updated featureNarrative: explicit source provenance and full step/view semantics comparison address the mixed-caption finding; await committed tests/whole migration audit. Record latest mainmeta with next commits; no GitHub merges.
