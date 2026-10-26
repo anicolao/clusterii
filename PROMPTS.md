@@ -2211,3 +2211,9 @@ Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; r
 Delegated reviewer instruction; refer to main meta complete PR68 four-size review and independent PR70 import audit.
 
 Reviewer: Final PR68 large artifact12623245258 full size/SHA256/CRC verified,40PNG compared,39identical and only026 changed. Independently viewed previous/candidate large026 (2048display of3840original), intended overdue footer/CTA, no map drift. Approve per /tmp/cluster-pr68-overdue-review/reviewer-large-approval.json. All160 candidate comparisons now complete:156unchanged and exactly4inspected/approved026 changes. Proceed exact four-image promotion plus metadata on68 focused fix, strict/full required CI and forward integration; no more candidate generation needed. Supervisor owned final large retrieval. Independently audited70 a28bb2f1:48new imported PNGs equal reviewed originals, all160review manifest SHA256s valid, no inherited PNG/renderer modifications; only four review.json updates. Audit /tmp/cluster-pr70-normal-focus-review/reviewer-import-audit.json. Preserve both approvals/audit and current mainmeta in next pushed logs.
+
+## Prompt 170: Preserve reviewed dispatch
+
+Delegated reviewer instruction; refer to main meta independent PR68 import/executor audit and four passing guard tests.
+
+Reviewer: Independently audited committed68 import122245b2: exact four approved PNGs, only four review.json additional baseline changes, no other pixels/renderers. Record /tmp/cluster-pr68-overdue-review/reviewer-import-audit.json. Reviewed strict route case/request/runner/workflow: exact160references,40perviewport, original comparator/no snapshots/no retries, pinned Nix renderer;4guard tests independently PASS. Continue sole17fc3dd4 request dispatch, preserve unique handle, then carry verified68 change forward into69/70 without rerunning already-live jobs solely for observation. Include latest mainmeta and audit in pushed logs.
