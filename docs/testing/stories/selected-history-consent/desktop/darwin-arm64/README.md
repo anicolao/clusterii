@@ -70,15 +70,15 @@ Acknowledged outcome: The authoritative room appears only for its creator.
 
 ### Viewpoint: Nacre envoy
 
-[![Create a private room while the recipient and outsider inspect their own empty directories. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-1-nacre-envoy.png)
+[![Create a private room while the recipient and outsider inspect their own empty directories. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-1-nacre-envoy.png)
 
 ### Viewpoint: Dawn listener
 
-[![Create a private room while the recipient and outsider inspect their own empty directories. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-2-dawn-listener.png)
+[![Create a private room while the recipient and outsider inspect their own empty directories. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-2-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-2-dawn-listener.png)
 
 ### Viewpoint: Outer witness
 
-[![Create a private room while the recipient and outsider inspect their own empty directories. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-3-outer-witness.png)
+[![Create a private room while the recipient and outsider inspect their own empty directories. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-3-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-3-outer-witness.png)
 
 ## 11. Send a reserve-route message that stays private.
 
@@ -92,7 +92,7 @@ Acknowledged outcome: The command is acknowledged as Message sent and appears in
 
 ### Viewpoint: Nacre envoy
 
-[![Send a reserve-route message that stays private. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png)
+[![Send a reserve-route message that stays private. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png)
 
 ## 12. Send the rendezvous message that will be selected.
 
@@ -106,7 +106,7 @@ Acknowledged outcome: The command is acknowledged as Message sent and appears in
 
 ### Viewpoint: Nacre envoy
 
-[![Send the rendezvous message that will be selected. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png)
+[![Send the rendezvous message that will be selected. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png)
 
 ## 13. Select Dawn listener and exactly one earlier message; keep the reserve route unselected.
 
@@ -119,7 +119,7 @@ Acknowledged outcome: The invitation control identifies one selected earlier mes
 
 ### Viewpoint: Nacre envoy
 
-[![Select Dawn listener and exactly one earlier message; keep the reserve route unselected. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/013-choose-history-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/013-choose-history-1-nacre-envoy.png)
+[![Select Dawn listener and exactly one earlier message; keep the reserve route unselected. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/013-choose-history-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/013-choose-history-1-nacre-envoy.png)
 
 ## 14. Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent.
 
@@ -133,15 +133,15 @@ Acknowledged outcome: The independently authenticated recipient receives the one
 
 ### Viewpoint: Nacre envoy
 
-[![Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-1-nacre-envoy.png)
+[![Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-1-nacre-envoy.png)
 
 ### Viewpoint: Dawn listener
 
-[![Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-2-dawn-listener.png)
+[![Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-2-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-2-dawn-listener.png)
 
 ### Viewpoint: Outer witness
 
-[![Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-3-outer-witness.png)
+[![Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-3-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-3-outer-witness.png)
 
 ## 15. Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance.
 
@@ -156,15 +156,15 @@ Acknowledged outcome: The accepted membership publishes the selected message to 
 
 ### Viewpoint: Nacre envoy
 
-[![Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-1-nacre-envoy.png)
+[![Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-1-nacre-envoy.png)
 
 ### Viewpoint: Dawn listener
 
-[![Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-2-dawn-listener.png)
+[![Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-2-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-2-dawn-listener.png)
 
 ### Viewpoint: Outer witness
 
-[![Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-3-outer-witness.png)
+[![Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-3-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-3-outer-witness.png)
 
 ## 16. Reload and reopen the accepted room without resending acceptance or expanding its history grant.
 
@@ -179,11 +179,11 @@ Acknowledged outcome: The recovered authorized messages still contain the select
 
 ### Viewpoint: Dawn listener
 
-[![Reload and reopen the accepted room without resending acceptance or expanding its history grant. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/016-recover-consent-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/016-recover-consent-1-dawn-listener.png)
+[![Reload and reopen the accepted room without resending acceptance or expanding its history grant. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/016-recover-consent-1-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/016-recover-consent-1-dawn-listener.png)
 
 ### Viewpoint: Outer witness
 
-[![Reload and reopen the accepted room without resending acceptance or expanding its history grant. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/016-recover-consent-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/016-recover-consent-2-outer-witness.png)
+[![Reload and reopen the accepted room without resending acceptance or expanding its history grant. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/016-recover-consent-2-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/016-recover-consent-2-outer-witness.png)
 
 ## 17. Escape closes the conversation and restores keyboard focus to its opening control.
 
@@ -196,7 +196,7 @@ Acknowledged outcome: The chart returns focus to Conversations.
 
 ### Viewpoint: Dawn listener
 
-[![Escape closes the conversation and restores keyboard focus to its opening control. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/017-return-to-chart-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/017-return-to-chart-1-dawn-listener.png)
+[![Escape closes the conversation and restores keyboard focus to its opening control. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/017-return-to-chart-1-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/017-return-to-chart-1-dawn-listener.png)
 
 ## 18. The creator reviews removal of the consenting listener before committing it.
 
@@ -209,7 +209,7 @@ Acknowledged outcome: The removal confirmation is available without changing mem
 
 ### Viewpoint: Nacre envoy
 
-[![The creator reviews removal of the consenting listener before committing it. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/018-review-removal-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/018-review-removal-1-nacre-envoy.png)
+[![The creator reviews removal of the consenting listener before committing it. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/018-review-removal-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/018-review-removal-1-nacre-envoy.png)
 
 ## 19. Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends.
 
@@ -223,15 +223,15 @@ Acknowledged outcome: The listener sees authoritative access-ended feedback and 
 
 ### Viewpoint: Nacre envoy
 
-[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-1-nacre-envoy.png)
+[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-1-nacre-envoy.png)
 
 ### Viewpoint: Dawn listener
 
-[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-2-dawn-listener.png)
+[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-2-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-2-dawn-listener.png)
 
 ### Viewpoint: Outer witness
 
-[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-3-outer-witness.png)
+[![Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-3-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/019-remove-current-access-3-outer-witness.png)
 
 ## 20. The creator sends a new private message after removal; neither the former member nor outsider receives it.
 
@@ -246,15 +246,15 @@ Acknowledged outcome: Message sent acknowledges the command and the creator can 
 
 ### Viewpoint: Nacre envoy
 
-[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-1-nacre-envoy.png)
+[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-1-nacre-envoy.png)
 
 ### Viewpoint: Dawn listener
 
-[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-2-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-2-dawn-listener.png)
+[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-2-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-2-dawn-listener.png)
 
 ### Viewpoint: Outer witness
 
-[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-3-outer-witness.png)
+[![The creator sends a new private message after removal; neither the former member nor outsider receives it. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-3-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/020-message-after-removal-3-outer-witness.png)
 
 ## 21. Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible.
 
@@ -268,11 +268,11 @@ Acknowledged outcome: The accepted-consent record exposes the previously receive
 
 ### Viewpoint: Dawn listener
 
-[![Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-1-dawn-listener.png)
+[![Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-1-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-1-dawn-listener.png)
 
 ### Viewpoint: Outer witness
 
-[![Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-2-outer-witness.png)
+[![Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-2-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/021-recover-retained-history-2-outer-witness.png)
 
 ## 22. Escape closes retained history and restores focus to History on the galaxy.
 
@@ -285,7 +285,7 @@ Acknowledged outcome: Focus returns to History.
 
 ### Viewpoint: Dawn listener
 
-[![Escape closes retained history and restores focus to History on the galaxy. — Dawn listener](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)
+[![Escape closes retained history and restores focus to History on the galaxy. — Dawn listener](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/022-leave-retained-history-1-dawn-listener.png)
 
 ## 23. Write a private reply and wait for this browser's durable draft acknowledgement without sending it.
 
@@ -298,7 +298,7 @@ Acknowledged outcome: Browser storage acknowledges the saved draft without prese
 
 ### Viewpoint: Nacre envoy
 
-[![Write a private reply and wait for this browser's durable draft acknowledgement without sending it. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/023-save-private-browser-draft-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/023-save-private-browser-draft-1-nacre-envoy.png)
+[![Write a private reply and wait for this browser's durable draft acknowledgement without sending it. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/023-save-private-browser-draft-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/023-save-private-browser-draft-1-nacre-envoy.png)
 
 ## 24. Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser.
 
@@ -311,11 +311,11 @@ Acknowledged outcome: Both composers recover the exact saved text.
 
 ### Viewpoint: Nacre envoy
 
-[![Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png)
+[![Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png)
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png)
+[![Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png)
 
 ## 25. Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved.
 
@@ -329,11 +329,11 @@ Acknowledged outcome: The second tab explains the competing saved draft without 
 
 ### Viewpoint: Nacre envoy
 
-[![Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png)
+[![Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png)
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png)
+[![Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png)
 
 ## 26. Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict.
 
@@ -346,7 +346,7 @@ Acknowledged outcome: The chosen saved reply replaces local text and clears the 
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png)
+[![Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png)
 
 ## 27. Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing.
 
@@ -359,11 +359,11 @@ Acknowledged outcome: Message sent acknowledges the recovered reply and clears i
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png)
+[![Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png)
 
 ### Viewpoint: Outer witness
 
-[![Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-2-outer-witness.png)
+[![Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-2-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/027-send-recovered-draft-once-2-outer-witness.png)
 
 ## 28. Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send.
 
@@ -376,7 +376,7 @@ Acknowledged outcome: Reload restores the sent message with an empty composer.
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)
+[![Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png)
 
 ## 29. Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently.
 
@@ -389,11 +389,11 @@ Acknowledged outcome: Both tabs recover the same unsent proposal.
 
 ### Viewpoint: Nacre envoy
 
-[![Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-1-nacre-envoy.png)
+[![Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-1-nacre-envoy.png)
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png)
+[![Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png)
 
 ## 30. Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain.
 
@@ -407,11 +407,11 @@ Acknowledged outcome: A revision conflict preserves the second tab's proposal an
 
 ### Viewpoint: Nacre envoy
 
-[![Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-1-nacre-envoy.png)
+[![Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-1-nacre-envoy.png)
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-2-nacre-envoy-second-tab.png)
+[![Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-2-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/030-review-competing-replacement-2-nacre-envoy-second-tab.png)
 
 ## 31. Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it.
 
@@ -424,7 +424,7 @@ Acknowledged outcome: Browser storage acknowledges the chosen local text and cle
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png)
+[![Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png)
 
 ## 32. Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text.
 
@@ -438,15 +438,15 @@ Acknowledged outcome: Both authenticated tabs recover the replacement from durab
 
 ### Viewpoint: Nacre envoy
 
-[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-1-nacre-envoy.png)
+[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-1-nacre-envoy.png)
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png)
+[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png)
 
 ### Viewpoint: Outer witness
 
-[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)
+[![Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/032-recover-chosen-local-proposal-3-outer-witness.png)
 
 ## 33. Withhold only actual conversation.send RTDB frames before ingress. Other traffic passes through; no payload, identity, receipt or state is replaced.
 
@@ -465,11 +465,11 @@ Acknowledged outcome: The interface explicitly waits for acknowledgement and ret
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png)
+[![Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png)
 
 ### Viewpoint: Outer witness
 
-[![Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png)
+[![Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png)
 
 ## 35. Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order.
 
@@ -482,7 +482,7 @@ Acknowledged outcome: The other tab explains the unfinished order and preserves 
 
 ### Viewpoint: Nacre envoy
 
-[![Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order. — Nacre envoy](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png)
+[![Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order. — Nacre envoy](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png)
 
 ## 36. Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable.
 
@@ -496,7 +496,7 @@ Acknowledged outcome: Recovery opens the correct room and offers Retry same comm
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png)
+[![Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png)
 
 ## 37. Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending.
 
@@ -509,7 +509,7 @@ Acknowledged outcome: The interface returns to awaiting acknowledgement without 
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png)
+[![Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png)
 
 ## 38. Release retained frames on still-active connections to actual RTDB ingress. Retransmissions retain their original command path and encrypted payload; no service result is injected.
 
@@ -529,11 +529,11 @@ Acknowledged outcome: The real service acknowledges Message sent and the submitt
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png)
+[![Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png)
 
 ### Viewpoint: Outer witness
 
-[![Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-2-outer-witness.png)
+[![Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-2-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/039-observe-retried-message-acceptance-2-outer-witness.png)
 
 ## 40. Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared.
 
@@ -547,7 +547,7 @@ Acknowledged outcome: The sent proposal is retained in history without restoring
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)
+[![Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png)
 
 ## 41. Save a new unsent note before leaving this browser session. Saving a draft is not sending a message.
 
@@ -560,7 +560,7 @@ Acknowledged outcome: Browser storage acknowledges the exact private draft.
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Save a new unsent note before leaving this browser session. Saving a draft is not sending a message. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png)
+[![Save a new unsent note before leaving this browser session. Saving a draft is not sending a message. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png)
 
 ## 42. Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note.
 
@@ -573,7 +573,7 @@ Acknowledged outcome: Entry confirms the signed-out session with Play and no acc
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png)
+[![Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png)
 
 ## 43. Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft.
 
@@ -586,11 +586,11 @@ Acknowledged outcome: The authenticated outsider sees an empty conversation dire
 
 ### Viewpoint: Outer witness · same browser
 
-[![Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft. — Outer witness · same browser](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png)
+[![Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft. — Outer witness · same browser](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png)
 
 ### Viewpoint: Outer witness
 
-[![Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-2-outer-witness.png)
+[![Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-2-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/043-other-account-on-same-browser-2-outer-witness.png)
 
 ## 44. Sign out the second account before returning the browser to its original commander.
 
@@ -603,7 +603,7 @@ Acknowledged outcome: The second account has signed out and its private campaign
 
 ### Viewpoint: Outer witness · signed out
 
-[![Sign out the second account before returning the browser to its original commander. — Outer witness · signed out](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/044-end-other-account-session-1-outer-witness-signed-out.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/044-end-other-account-session-1-outer-witness-signed-out.png)
+[![Sign out the second account before returning the browser to its original commander. — Outer witness · signed out](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/044-end-other-account-session-1-outer-witness-signed-out.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/044-end-other-account-session-1-outer-witness-signed-out.png)
 
 ## 45. Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser.
 
@@ -617,8 +617,8 @@ Acknowledged outcome: Only the original account recovers its private room and un
 
 ### Viewpoint: Nacre envoy · second tab
 
-[![Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser. — Nacre envoy · second tab](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png)
+[![Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser. — Nacre envoy · second tab](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png)
 
 ### Viewpoint: Outer witness
 
-[![Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser. — Outer witness](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)](../../../../../../tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)
+[![Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser. — Outer witness](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)](../../../../../../tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/045-restore-original-account-draft-2-outer-witness.png)

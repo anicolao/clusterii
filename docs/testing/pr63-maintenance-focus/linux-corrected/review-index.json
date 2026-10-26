@@ -1,0 +1,818 @@
+[
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "300eae50430afaad15a41d39062f49b30f53dd53acf0d537ae4e9aafeca9bdaa",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "6fb8764eca638d475c17b0ca58f8ede87d0b04398dfe98e751be329f7b7cb8dd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "ba9640a2eea2d30458b96356c004dd1cfe559fcdc657b77678cb80b6c041fb83",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "6fb8764eca638d475c17b0ca58f8ede87d0b04398dfe98e751be329f7b7cb8dd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "03eb700fdde333cd398377f70096ef12986c1a37052f70fe85395e97c2c64fb4",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "6fb8764eca638d475c17b0ca58f8ede87d0b04398dfe98e751be329f7b7cb8dd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "dcfee5d64deac6240daa3f83388c6f8361fb483fedf9e6149143a862454edcba",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "6fb8764eca638d475c17b0ca58f8ede87d0b04398dfe98e751be329f7b7cb8dd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "e12b59b67e247e2891971f47b111428fbdc5408b46d276d786e106eb9647f944",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "sha256": "94785d8cdf7cfaf7d002b0e2c1c333f1942000f03abd72b04b95588e256422b3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "sha256": "47b02b7b7d68e6f36a3830d0fcee37a069afb5c211d0cd9e008c1c13c4f98135",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+    "sha256": "94785d8cdf7cfaf7d002b0e2c1c333f1942000f03abd72b04b95588e256422b3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "2023a5b63f358130eeaf645945b569f2214ce9038aef45519bf7a3e1e468eecc",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "94785d8cdf7cfaf7d002b0e2c1c333f1942000f03abd72b04b95588e256422b3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "598afb6876dad0d502644d7d005788ea116d4482fe4454a42eae4d54383abb6b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "94785d8cdf7cfaf7d002b0e2c1c333f1942000f03abd72b04b95588e256422b3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "sha256": "b4e4f4a4e3ed7b1721e8505020f55ba7c166d0c1c079126fd0883225a013c34b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "sha256": "94785d8cdf7cfaf7d002b0e2c1c333f1942000f03abd72b04b95588e256422b3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "sha256": "ba33a4f6ee28e945446197f29fc94ad69bf5d362ecaa80d0cb292bab7c4f9b14",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "sha256": "94785d8cdf7cfaf7d002b0e2c1c333f1942000f03abd72b04b95588e256422b3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "sha256": "3713d2d3de386eca8bb552c638a5aec32512d80c98cacd693b5970c015cfbd74",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "sha256": "94785d8cdf7cfaf7d002b0e2c1c333f1942000f03abd72b04b95588e256422b3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "sha256": "e740dbb9edc7403f532109f34310f1c8120f46476608aa2859fbf685d583ffa1",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+    "sha256": "f0b89ce7dcdb066236fbb8dcdfb7a51c0c210f48a4d373101ad50d143dbc6e8c",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "sha256": "2e7c6108517439e61032a6378008a24a08b8c9eceb39d5c321ce0831547557bb",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "sha256": "b62ede0c7dfe74f6a963e8bfc943c3748d256c49d817b229b41cc1f1e320e318",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "sha256": "794bea5bbb851e3eba4f8b095e3ae5eb064a0f4528658c4543b059003fe0174e",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "sha256": "b62ede0c7dfe74f6a963e8bfc943c3748d256c49d817b229b41cc1f1e320e318",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "sha256": "79d3753fd12bc6950ee1d1ff314de34e09cc2b84f0977572bd90cd76f9dfb8ff",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "sha256": "f0b89ce7dcdb066236fbb8dcdfb7a51c0c210f48a4d373101ad50d143dbc6e8c",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "sha256": "aa1fe81bda70e42e78b234064811603a7ef0274ee0930a65050ef1e6f9c7e2bf",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "sha256": "0f1b6935bbcb250810444cdd759153a4c6ddc08b9bb2fb6eb560fe4466d7616d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "sha256": "25adbc03b70a76fefd587ff9d99bd44a71b6df28c8fb0ee2051a1e35352158c7",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "sha256": "0f1b6935bbcb250810444cdd759153a4c6ddc08b9bb2fb6eb560fe4466d7616d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "abd600041afbe813f3175d115189e76518e75796645d83ee9ece7660cae5bb78",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "43460cf16a438c07be482a3dc77553e994b0f4ea919bd606e2af435f8ced5399",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "c13eb3e33e6c3e5315fb3f5ff9a2b59abea6b4e30a3fde1b1a6eeb79855455d3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "43460cf16a438c07be482a3dc77553e994b0f4ea919bd606e2af435f8ced5399",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "4e203e27093f911689e9a2c2a315b18406281da8dcefd7f7ba27cc2a693e0c12",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "43460cf16a438c07be482a3dc77553e994b0f4ea919bd606e2af435f8ced5399",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "5299fa0925699a9d06d6c9a4dba517560a4289e21274a32cde55ad7056a75d90",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "43460cf16a438c07be482a3dc77553e994b0f4ea919bd606e2af435f8ced5399",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "b89bb8c0f528a1d4429d71f8236b5d8432a20229020422674704a89c90eaf958",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "sha256": "eaa742755fd937fcbda15d19d01fb57f80515964c55915d465724e6eb43eec5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "sha256": "19fe2d923d055a6663741e68182feee2918d15c743e3f78cbc0bc32b2241ba28",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/016-open-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/016-open-route-2-independent-marshal.png",
+    "sha256": "eaa742755fd937fcbda15d19d01fb57f80515964c55915d465724e6eb43eec5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "31046bcbb5774fd55bfbf9491b3a846c2bf9f965c36b7bc9ff74289426faeaa0",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "eaa742755fd937fcbda15d19d01fb57f80515964c55915d465724e6eb43eec5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "5f5fa50f092d1b5dd26491293baded3ce142b0e6c104b66f53e8ec688a62f3b6",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "eaa742755fd937fcbda15d19d01fb57f80515964c55915d465724e6eb43eec5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "sha256": "c3f4842e2acca9f8607b1d4cf082bfebd9d6a81e3f890cc1a5b24b3e1afa29df",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "sha256": "eaa742755fd937fcbda15d19d01fb57f80515964c55915d465724e6eb43eec5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "sha256": "5cb062304b0809eaa222f61c2e4944d89b71790696d62d385b0ac1cc36b0cf3d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "sha256": "eaa742755fd937fcbda15d19d01fb57f80515964c55915d465724e6eb43eec5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "sha256": "1dc4c5f9b8e5c7c08e94b67cc69cbc730a32c6eb38c8d90e29c2b48d35c0a250",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "sha256": "eaa742755fd937fcbda15d19d01fb57f80515964c55915d465724e6eb43eec5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "sha256": "c8216e557118aaf677ca4ee39c08dfa95e950219c6bc0e314f4b42f49cc200f9",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/023-traveling-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/023-traveling-2-independent-marshal.png",
+    "sha256": "95dcad31b1c95cd245878883a2f06d369c728cd54b0e7e2a4a5396424e5b83a7",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "sha256": "38b954d53338cb2838db1307ca11176dc313f888e9d6e695df9d79c216087fdb",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "sha256": "3bd5d6ef27fb84d85b9281ba6e2cc6c74c3b2b45cfeddcaf490e9be6551f1de3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "sha256": "60f959c4fcd5c64a31f884fab30b9335568c2ce97dc29972ab8a14b55496d32a",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "sha256": "3bd5d6ef27fb84d85b9281ba6e2cc6c74c3b2b45cfeddcaf490e9be6551f1de3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "sha256": "82da9a0b1d9234ba39c748d21fae166639c4fb7eb26248fc45cbb259d6b22133",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "sha256": "95dcad31b1c95cd245878883a2f06d369c728cd54b0e7e2a4a5396424e5b83a7",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "sha256": "14d917c3d4d2cc120a81934af42c0cc66f93c5a02e1ed332db8437b5a7cf2c31",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "sha256": "42c088f03074e172a029a655ed7d270017a916ea28eef3d1e66f39f57dbec26a",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "sha256": "4c035b3cc1c995ded79c484ce543b5189a284ae4a8215ef7eefeecc2f3d16984",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/large/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/large/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "sha256": "42c088f03074e172a029a655ed7d270017a916ea28eef3d1e66f39f57dbec26a",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "aa54755d704c6df70fe27008b8f2888e5789519d8cf152422595377579aac0ba",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "sha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "14e1ba6086c1899bdd2da772a1c6a30448168e188b68b01b7b418e0378009b10",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "fa5cc35ecaa11c9aff1b27ba2b55a5b4356bc9031f91aba61f8880b212d7595a",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "sha256": "7c85693b58c2d28bda2a54bd5f5429f35c4bc2da898b4b889904f0eb8b028e44",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "sha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "sha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "sha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "sha256": "c852804a45a1bfb1e1bd51dc18c68eeca4b39874c23e16c9eee5b690ac275f7f",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "sha256": "8855e2e0bd8a5f9aedd529a8ad76a70d346457b6a7c55c75cd26a3928ff80725",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "sha256": "9643465d521681574c41c03d647fbeffb04b9799a8ef8a472931d86e3a18af5d",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "sha256": "8855e2e0bd8a5f9aedd529a8ad76a70d346457b6a7c55c75cd26a3928ff80725",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "sha256": "a2bb0355244410f110469704077399b29438e7bd2e822f09d8d32ca740822344",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "sha256": "458be41b7e3cb9dd3d12dc105287064f5e6368f52701eb64c8b902facb5c9605",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "sha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/phone/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/phone/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "1bd4b0e59f5bd8b4512ac1849f16958a168f2720a2cdbe6baeb121e70d895ba7",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "3788d820c8862a73796c7ddc5cde909879d2a199956b0ffd86c2cd146ec5ccab",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "f9db93e3ef2972965248a9f32c24af8b07f304dc44116b8d7055be69f1c9d17f",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "81bce14710873084383c123c44b3d91018ea7bde9c29882aa4f628b7f766642f",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "eb30b9c722ff0797e55f7a562d793f03fdbd4548a9865f8e3122082e90a3114c",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "sha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "sha256": "b55bbf1ac1c012369eeb0f69e50ae9e4c0d3432e7ab69833866b5c68eec7eed1",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/016-open-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/016-open-route-2-independent-marshal.png",
+    "sha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "sha256": "57e28cbe6e4b487095583ae8cf093aa2b9c2235457ea00f38f0bcffc1fd0adca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "sha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "sha256": "d622f788fc5022dcf9f781751dbf1b5a7d06d623a809b068cc8fd4791f3e9112",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "sha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "sha256": "8f7a6149bfe5becb3ee79d3c349ca8c377433679fb78f9a7fa0b107cae75766f",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "sha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "sha256": "850b4243ea441e1fb7efeb37edef1eb2fd6d8e93299e6e0001ea45e666939f75",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "sha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "sha256": "e1c8f73b5d895b1005ae14bf95e79ff51ad8f35d212a9f589aa7d5eb83c11e84",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "sha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "sha256": "7e7fd1a4bb03146a370ed6dca6590e5f32122f4c89dd5d49ae6ed4e89af016fe",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/023-traveling-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/023-traveling-2-independent-marshal.png",
+    "sha256": "9dc39fd40b1cc04a2ff01d38cde4d273447129b4a25d06f0a2bd690218ce48db",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "sha256": "6557d6a6df04d3e88995233c78dd2977cb76a6083b2371946d3839130bd2ac7b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/024-pause-travel-2-independent-marshal.png",
+    "sha256": "c7e162aef5568f7ce462ccf235edc8cb361c791578161218a0d1c30dd6dffad5",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+    "sha256": "1ff5e1e9956a7b2b27f7755a74a307b911d751b1c0f1cb5997c1e3bee292a180",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+    "sha256": "c7e162aef5568f7ce462ccf235edc8cb361c791578161218a0d1c30dd6dffad5",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "sha256": "7bf73dd3c1e71244da76b6e627a7cb0fb48ab84bfa05af3241dcad5a4ac28a3b",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/027-resume-travel-2-independent-marshal.png",
+    "sha256": "9dc39fd40b1cc04a2ff01d38cde4d273447129b4a25d06f0a2bd690218ce48db",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+    "sha256": "75bddb9495b902f2b242113b01e1597225a68582f7e6377e869b6b314a947f24",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/029-arrival-report-2-independent-marshal.png",
+    "sha256": "2a24c759d32a28cbaaca23105b508749fb14a54cdd594a6d49abd17f1a1ef0ce",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+    "sha256": "d3d32ea99bbb9b6a8c3f61b2d2ebf8124a43238943a6a03314146c83a6add0a9",
+    "disposition": "unreviewed-new-Linux-candidate"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+    "sha256": "2a24c759d32a28cbaaca23105b508749fb14a54cdd594a6d49abd17f1a1ef0ce",
+    "disposition": "unreviewed-new-Linux-candidate"
+  }
+]

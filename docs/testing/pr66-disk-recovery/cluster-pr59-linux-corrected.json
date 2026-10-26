@@ -1,0 +1,1672 @@
+{
+  "archive": "/tmp/cluster-pr59-linux-corrected/artifact.zip",
+  "bytes": 198088651,
+  "sha256": "e3e1f33f0aaf7cc1a76c1782a7c6507d53c183e8488c563cb2fda976d42b73cc",
+  "remote": {
+    "id": 12587017318,
+    "node_id": "MDg6QXJ0aWZhY3QxMjU4NzAxNzMxOA==",
+    "name": "recovery-cancellation-5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba-1",
+    "size_in_bytes": 198088651,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12587017318",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12587017318/zip",
+    "expired": false,
+    "digest": "sha256:e3e1f33f0aaf7cc1a76c1782a7c6507d53c183e8488c563cb2fda976d42b73cc",
+    "created_at": "2026-10-25T04:48:21Z",
+    "updated_at": "2026-10-25T04:48:21Z",
+    "expires_at": "2026-11-24T04:48:15Z",
+    "workflow_run": {
+      "id": 40162403768,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr59-cancellation-candidates",
+      "head_sha": "5bd6682bbbf8f97bfe75dd3d6c6310c0df6e32ba"
+    }
+  },
+  "allEntriesCRCVerified": true,
+  "entries": [
+    {
+      "entry": "ci-evidence/recovery-request/executor.json",
+      "bytes": 405,
+      "sha256": "3d32e60f7e125054d38a1e6ae7470831a4e9f3b0322f65f8c8faf43d0e742339",
+      "crc32": 3593971000,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/recovery-request/executor.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/recovery-request/request.json",
+      "bytes": 221,
+      "sha256": "403095ba327a88da92ab94a350aae7896e2f1438f1b838f69ceb3a7ea22dd6fb",
+      "crc32": 2813076296,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/recovery-request/request.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "crc32": 3787177680,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/.last-run.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-desktop/attachments/Illustrated-story-16fdef264414459d6d6239814a0b695551e0e13f.md",
+      "bytes": 15492,
+      "sha256": "6e009ff8fc0afc9f584aabdccecabb746873d2a1131847df56774f7f35853247",
+      "crc32": 1458110107,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-desktop/attachments/Illustrated-story-16fdef264414459d6d6239814a0b695551e0e13f.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-large/attachments/Illustrated-story-2913f4bbf2c32dd2d718b36a2fb2aca174097aec.md",
+      "bytes": 15490,
+      "sha256": "b3562c3fc83d7918d74276df7ccb79fe0e65159df371d86d5496aeb43487098d",
+      "crc32": 1119480534,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-large/attachments/Illustrated-story-2913f4bbf2c32dd2d718b36a2fb2aca174097aec.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-phone/attachments/Illustrated-story-2d62a9da8b8bf5fd33bb903e5c68941aa9685962.md",
+      "bytes": 15490,
+      "sha256": "e1641371840ab6f7823f074fcb55e4529e1f3d53472f683987d9c8d3ea6c9d5d",
+      "crc32": 584597793,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-phone/attachments/Illustrated-story-2d62a9da8b8bf5fd33bb903e5c68941aa9685962.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-short/attachments/Illustrated-story-4a21ba419b11ac71447ddcd780157ce72a980a65.md",
+      "bytes": 15490,
+      "sha256": "fce48c4f5d14331b5326181bdb2bd874ece5a6ca862f6af8d3da67b35bf122ca",
+      "crc32": 3666380154,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/fleet-cancellation.story-L-c7289-leases-private-reservations-short/attachments/Illustrated-story-4a21ba419b11ac71447ddcd780157ce72a980a65.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "bytes": 314867,
+      "sha256": "3e0c6a3e01b9e9ac26c504abd8ceeeabc72b897514586cfb6f6ede06f6ac7334",
+      "crc32": 4059409431,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "bytes": 1443519,
+      "sha256": "d42c6d680a23cbb2b2ac58d3ebc470afba007e8b2d33a89f26813f9646349387",
+      "crc32": 1067125977,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "bytes": 308831,
+      "sha256": "0facf75b079d209f4bb4c92f8d59f7b00668d467446ebe29de925d531bc2e678",
+      "crc32": 1351473842,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "bytes": 1439065,
+      "sha256": "35c0539392835783539224698ce58cafa0dd24ac4e67192b675ff78c86bf33b3",
+      "crc32": 2228455207,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "bytes": 327833,
+      "sha256": "b3babfa64b9637e63a27c420b162569745e1aa115181c725210e1589a728c0eb",
+      "crc32": 956747316,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "bytes": 1455800,
+      "sha256": "fa26da6e1199fcacc304182a9f1e43cbb3cc6b9e635f5b6828c35e4e6f66762d",
+      "crc32": 4180914450,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "bytes": 310043,
+      "sha256": "4353ab0c6b9ae7d9fc8fb26d69660b62d04018fe978298b909c4f3f51005c42a",
+      "crc32": 3782785973,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "bytes": 1443084,
+      "sha256": "4cde467190c4a01c4d159b6621a83e4a0a5cf2a3da429714ef91b4f848e18dec",
+      "crc32": 3504501421,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "bytes": 322975,
+      "sha256": "c2a26d742d7a3a74b642abf975ea0a169bba87d812cbc52a22541fd0bd5a18ab",
+      "crc32": 3978158471,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "bytes": 1461390,
+      "sha256": "4e03296d72b7782963d5a3dfb517f17bac9abc4c8d4aeac550fe6127353e2410",
+      "crc32": 1027612307,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "bytes": 310043,
+      "sha256": "4353ab0c6b9ae7d9fc8fb26d69660b62d04018fe978298b909c4f3f51005c42a",
+      "crc32": 3782785973,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "bytes": 1443902,
+      "sha256": "97b04f84df30c92beb14718c730d06643cb4b254ce85b4eea7e00c89d3cc4fbf",
+      "crc32": 1260236421,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "bytes": 315464,
+      "sha256": "0dfdf5ca251af1e50f98535dd69d754562ca7f48e594adbc2c730ba179ff34b4",
+      "crc32": 323472043,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "bytes": 1444330,
+      "sha256": "0f5da9ed1abdcea3661ed6b15111acd23a600155fadf12c3588542d51596ad81",
+      "crc32": 2687402990,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "bytes": 315464,
+      "sha256": "0dfdf5ca251af1e50f98535dd69d754562ca7f48e594adbc2c730ba179ff34b4",
+      "crc32": 323472043,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "bytes": 303969,
+      "sha256": "22f3fab6feaa893066bcdad3b8021fc04e4bb7ffcbca79f97cf949c20f364cfc",
+      "crc32": 892353468,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "bytes": 1445815,
+      "sha256": "2554e0276a97408f17b292ee8ad7b60b1dc8874936b4511384b96a8e99adff77",
+      "crc32": 1730996846,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "bytes": 1438867,
+      "sha256": "e280f45acc19073fe220b38efa4c65b506ff3fe6055b1fe29f20142b7e9e6774",
+      "crc32": 296762939,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "bytes": 315233,
+      "sha256": "5bbd54c4ef11f9e42bbd4ce4166883c2ca6151d1bf19735f16b0a40ad4a52e09",
+      "crc32": 3545861634,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "bytes": 1438689,
+      "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "crc32": 3914550361,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "bytes": 303971,
+      "sha256": "7d502a952038f75803aba20e739c3f31e00dea988e7f068bbb4b3f76b7bc2350",
+      "crc32": 634782689,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "bytes": 1439102,
+      "sha256": "b3f0919ac500ae95f3260eed6624c743a4be2f8050da2bfffc10cac7eaad452d",
+      "crc32": 793389777,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "bytes": 315235,
+      "sha256": "74bfbf44b0e95f285bf2aa12082fa418445e99ee092d39a094145367a0eb30a4",
+      "crc32": 3167102366,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "bytes": 1438915,
+      "sha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa",
+      "crc32": 2191991524,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "bytes": 219732,
+      "sha256": "6fd26b824c8260fe143e5abf0cc9f3935393f334bdaff2472b203b29d349409a",
+      "crc32": 1506360508,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "bytes": 1131883,
+      "sha256": "e197ec865c4a58987b074259d9ec323519f51b4513af919af703efccceb12d1b",
+      "crc32": 3861218679,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "bytes": 315235,
+      "sha256": "74bfbf44b0e95f285bf2aa12082fa418445e99ee092d39a094145367a0eb30a4",
+      "crc32": 3167102366,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "bytes": 1438915,
+      "sha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa",
+      "crc32": 2191991524,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/README.md",
+      "bytes": 15492,
+      "sha256": "6e009ff8fc0afc9f584aabdccecabb746873d2a1131847df56774f7f35853247",
+      "crc32": 1458110107,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+      "crc32": 1725575456,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+      "bytes": 17009,
+      "sha256": "527b2e582884af3decd25945423efec2b12688d8e98cf9b7ceb35f21a32cfc5d",
+      "crc32": 3039085935,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "bytes": 315444,
+      "sha256": "1d46c63f78d26901bef60cf81ce098fcb616dacb59337adf38c859ed36131a37",
+      "crc32": 4232491103,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "bytes": 6555485,
+      "sha256": "15043ed94f60bbb2e337f4612346fcc20b0d771d5226ab5404b318225d886d41",
+      "crc32": 372386165,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "bytes": 309384,
+      "sha256": "0e6d5300dd25e080921613d3766efcb95f5dafbc9d5c4b1b86511a3900ba257f",
+      "crc32": 4163115757,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "bytes": 6547315,
+      "sha256": "1645b38ed97b690909da188bed4a5583fbac1dd2ba98ad14e569f654f13ba098",
+      "crc32": 3835407204,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "bytes": 328269,
+      "sha256": "ad61094056e78450f5cd5bd1df4aa1f00af992edf5fd443c18c5baab9d3da151",
+      "crc32": 224457832,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "bytes": 6565652,
+      "sha256": "384fe9150762a46b8a735dce1e9e2851aaa3d8daabcdb04e3dfd164ced515444",
+      "crc32": 4203003813,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "bytes": 310618,
+      "sha256": "8046882f2a0b5f444f4ce623cb32ea3b05d006f9d7f423b532086da855ab0041",
+      "crc32": 1146077970,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "bytes": 6553562,
+      "sha256": "522e4681f097e5f99ef28ac2bce8543210bb8fab38b0a0ef85566b3c39b05861",
+      "crc32": 2955848350,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "bytes": 323106,
+      "sha256": "a4e2ca94087a7104147b6da7802439c534ffd93898d32c2cf4fa847ea4ef1eaf",
+      "crc32": 3785905918,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "bytes": 6571969,
+      "sha256": "f89a545fd27e62542684c7dd2eca9534cef7c1f996ecb520ad68fd349b02a740",
+      "crc32": 2418606376,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "bytes": 310618,
+      "sha256": "8046882f2a0b5f444f4ce623cb32ea3b05d006f9d7f423b532086da855ab0041",
+      "crc32": 1146077970,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "bytes": 6554435,
+      "sha256": "c0c899d36c3aa6e070a02252277115e6b52b3a2300c45ba6749a7f8cd7879ea7",
+      "crc32": 3446400533,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "bytes": 316047,
+      "sha256": "85dd7e4396c34482d25f6b7a2e327265938bab015cfa7b1d6c904f1936372826",
+      "crc32": 2949742021,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "bytes": 6552082,
+      "sha256": "0f7f73f43f4a6d6540dcce0e9e883f46090b96a23b041a5618108060a449a979",
+      "crc32": 3051474992,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "bytes": 316047,
+      "sha256": "85dd7e4396c34482d25f6b7a2e327265938bab015cfa7b1d6c904f1936372826",
+      "crc32": 2949742021,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "bytes": 6551997,
+      "sha256": "5ec6554628d4e4a91ca441de2bc8143189c6e79dcc0cc5be7fa2cdf234a505e3",
+      "crc32": 584404171,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "bytes": 304514,
+      "sha256": "e35d696554184e42f76b3c9983469bb22a4b8f08b3fe59f8958fb29395fb041d",
+      "crc32": 2967312950,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "bytes": 6547082,
+      "sha256": "2f6d42cee290788cf171bec1254d381e8dfd3da3a50d9d2df73d6f4f6601c7fd",
+      "crc32": 2774854781,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "bytes": 315781,
+      "sha256": "d98fb6670132897f8524c002dc19455ab256bc833fc2a7b1b4ab6cab4e71da5f",
+      "crc32": 1024074806,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "bytes": 6546911,
+      "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+      "crc32": 5970912,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "bytes": 304518,
+      "sha256": "440b7cd3cca22a29c40692bc5afc2b88d0c62860a670561ad0b400a719131db5",
+      "crc32": 4265605736,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "bytes": 6547145,
+      "sha256": "8037eca525c239ba6cc423bd0c508ffc0f92c834f6d5d99e4f148bc57600fb48",
+      "crc32": 1556675486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "bytes": 315785,
+      "sha256": "06da09a27208d3f54965104101d93a2fc8986877f2609ce66ab5d39baff08e13",
+      "crc32": 2010444290,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "bytes": 6546979,
+      "sha256": "e476e34c220d3e42e3ab34b78e3ee9545e6b90c0aa76e5fe47da7bafa4922d66",
+      "crc32": 38097360,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "bytes": 220173,
+      "sha256": "6eda2e369daf6b05e52ff4044ea404d8a947e136b10f9b830ead406466bb2256",
+      "crc32": 4249851632,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "bytes": 4930515,
+      "sha256": "79f54fc68ed1a499ac9e61fbf29be2294e174fde9af8a8c5f7ca7afe0d49f326",
+      "crc32": 2313848606,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "bytes": 315785,
+      "sha256": "06da09a27208d3f54965104101d93a2fc8986877f2609ce66ab5d39baff08e13",
+      "crc32": 2010444290,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "bytes": 6546979,
+      "sha256": "e476e34c220d3e42e3ab34b78e3ee9545e6b90c0aa76e5fe47da7bafa4922d66",
+      "crc32": 38097360,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+      "crc32": 1322158050,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/README.md",
+      "bytes": 15490,
+      "sha256": "b3562c3fc83d7918d74276df7ccb79fe0e65159df371d86d5496aeb43487098d",
+      "crc32": 1119480534,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/large/linux-arm64/story.json",
+      "bytes": 17007,
+      "sha256": "50139e4361847ef908c59687a590db7ec360e851b939eeff3e6f3765e7c5a0b9",
+      "crc32": 213094745,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/large/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "bytes": 301899,
+      "sha256": "a63eed3e6c9a0683f27895d3b2e8f2b3b3024c8284214f1fc8ab1a7c9023d45b",
+      "crc32": 292952222,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "bytes": 156678,
+      "sha256": "3112e129f286a1847ef4164b619e648f595c3bd6ef516ed21735c2233ff532f3",
+      "crc32": 3041729533,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "bytes": 295900,
+      "sha256": "78ba422bf315ea62537d34ceb9666129f8eed4df585f5326d44fd1f50b224e4e",
+      "crc32": 94675422,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "bytes": 152955,
+      "sha256": "dab06995b75fa74c26e4d2c5274783a87dc4b66661f54df6d26204a8fb744dd7",
+      "crc32": 126987473,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "bytes": 315001,
+      "sha256": "5ed58ca2af4ac0aa5e84a4ce544abd0ab9b1fa05156c4b78849a04286ace4942",
+      "crc32": 2685424122,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "bytes": 165410,
+      "sha256": "0b4e3dd67d0ae569ba4f2683519b12e3d020899418851413e74ef58ebd072603",
+      "crc32": 1405505915,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "bytes": 297094,
+      "sha256": "67ca159b5e4e806500ae3cc3bd5bef1f60a174ab42ccd3c45b818b1f42a0e9be",
+      "crc32": 985305185,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "bytes": 158542,
+      "sha256": "b9681c5d8dcb311d6f629b54a5c754476cff5344cac0d2a49884e8babc948c7e",
+      "crc32": 813768519,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "bytes": 310592,
+      "sha256": "64d849ed46f20fcf2c58798ad808295c2d51f106cc211b2220c9aca51bd76602",
+      "crc32": 1580159583,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "bytes": 166131,
+      "sha256": "40f0365a0d06e16bd80385be26cf62756e02ea65253c8feeff42016044513072",
+      "crc32": 2755823199,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "bytes": 297094,
+      "sha256": "67ca159b5e4e806500ae3cc3bd5bef1f60a174ab42ccd3c45b818b1f42a0e9be",
+      "crc32": 985305185,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "bytes": 159013,
+      "sha256": "785937b9edae55a4010b60a85dbc5f67fad2c5ea4f20da533f059b11812e89bf",
+      "crc32": 480128341,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "bytes": 302891,
+      "sha256": "43ce7d6e6611b619f08260dc60957bbfd5aae3423b6d5fa9fafdf526942a8199",
+      "crc32": 1562762516,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "bytes": 159155,
+      "sha256": "7c3206dee523ff9bf910c391370402e11e0cf929981efc7fca4b87627b624fe0",
+      "crc32": 2505057636,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "bytes": 302891,
+      "sha256": "43ce7d6e6611b619f08260dc60957bbfd5aae3423b6d5fa9fafdf526942a8199",
+      "crc32": 1562762516,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "bytes": 159028,
+      "sha256": "d543150ebf0f151ad85b83f2862c97700d7248e4b7ea9a1781259de11e6fa54c",
+      "crc32": 276571252,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "bytes": 291054,
+      "sha256": "8801d41566b7de3da5a120b256f4e635efde3927862591897ce33534f8cbfeee",
+      "crc32": 3556318698,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "14c86072fad973c6e392a021517c683b86bd8522b01ad1825774c5947d3e4d11",
+      "crc32": 142432151,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "bytes": 155452,
+      "sha256": "c5c6fc5bbc76f0ee656a0382805c767bc8963598b2f0b3ffedd519796329e51f",
+      "crc32": 263377033,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "bytes": 152622,
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "crc32": 3610202486,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "bytes": 291054,
+      "sha256": "25abb32f17b5f0873df695b99119d36ee7a0cd08f63b91fe5cbe4760898e981a",
+      "crc32": 4127600458,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "bytes": 155467,
+      "sha256": "2f1960e816c29371a217a7b4b46b9c2750d7d2035be22fcdea79c75475e4a9ef",
+      "crc32": 4122841950,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "ceeeebb7846c37bd4c525c668630181e7aff242bc48dab6f78a6ec0876013e84",
+      "crc32": 763520311,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "bytes": 152633,
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "crc32": 4109895005,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "bytes": 207011,
+      "sha256": "fd603c4bab014567f5a912a732364880da6182437eed7031cafce85ef553a181",
+      "crc32": 2307224997,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "bytes": 151916,
+      "sha256": "a13584a27f0c3b5f2f086c492e9cd4fe59a07170edfa3eb0b68b95a346907585",
+      "crc32": 3455024083,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "bytes": 302181,
+      "sha256": "ceeeebb7846c37bd4c525c668630181e7aff242bc48dab6f78a6ec0876013e84",
+      "crc32": 763520311,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "bytes": 152633,
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "crc32": 4109895005,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/README.md",
+      "bytes": 15490,
+      "sha256": "e1641371840ab6f7823f074fcb55e4529e1f3d53472f683987d9c8d3ea6c9d5d",
+      "crc32": 584597793,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/renderer.json",
+      "bytes": 757,
+      "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5",
+      "crc32": 851725460,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+      "bytes": 17005,
+      "sha256": "4d0d71845e418f215fabd335bdb64fc288b130812b088131a3ee1551defa2fde",
+      "crc32": 578517536,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "bytes": 314710,
+      "sha256": "0e2daeb0f07108167c760e66af418e147ebbb3d45c4460b32f5ebe291b55c7cc",
+      "crc32": 1558318409,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "bytes": 948239,
+      "sha256": "13fa905e5b628b7a62ad6a62c372e6e27416227f7cb374b8967398df8eb9d99c",
+      "crc32": 4046042518,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "bytes": 308685,
+      "sha256": "072c8424e156b6db89f1323331d1f3c9b89f356bd49c77bce6ed3e7126817e5a",
+      "crc32": 1918003637,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "bytes": 943824,
+      "sha256": "b9d34ad6b075526d39295ad4bc46a2816bae92f9d924cbea2d6e7eff45b32ebc",
+      "crc32": 2300194916,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "bytes": 327661,
+      "sha256": "519fb62dfa444cb39221ac07fd06b854e7ddc9e866dbae64821c34413f90a412",
+      "crc32": 516676897,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "bytes": 959804,
+      "sha256": "8e98d69b7e8309437eedcb53e5e3e822e0eb578eb07b696533b088cab8e423d1",
+      "crc32": 1518544832,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "bytes": 309893,
+      "sha256": "ec3d723355e11ead9b6130c101030e021b1502f2b6a06287da7d7d62f720d25c",
+      "crc32": 1815465582,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "bytes": 948500,
+      "sha256": "6f71e1d031f1ffe7f466f0b480564c09df1925a8f6d889b32cba10e5b92c28b7",
+      "crc32": 2288062259,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "bytes": 322807,
+      "sha256": "10193831db1e4d39ef43e972ef36dbfc0576e92e6717822d1c02737bb2e0de2d",
+      "crc32": 1642402207,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "bytes": 963517,
+      "sha256": "e5cb348b092030f78c7478bd0ffe0337f77976f6435017417c62ab75fa9d8068",
+      "crc32": 4044171494,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "bytes": 309893,
+      "sha256": "ec3d723355e11ead9b6130c101030e021b1502f2b6a06287da7d7d62f720d25c",
+      "crc32": 1815465582,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "bytes": 949353,
+      "sha256": "8efccbc61e60e59be32702f46077b0ba72067bb5d767003726ffc3fcff90625f",
+      "crc32": 974073159,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/015-keep-order-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "bytes": 315307,
+      "sha256": "4cc3d52a4ad3e3aade1fed79531524ac9f4f9ef34c23d4016b5d4d7f32bd6787",
+      "crc32": 2405392748,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "bytes": 949144,
+      "sha256": "e3e77fe5cb89ae5ae00c919b5beac78f7e19d259473f45b57ab070647fb3611d",
+      "crc32": 1877905191,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "bytes": 315307,
+      "sha256": "4cc3d52a4ad3e3aade1fed79531524ac9f4f9ef34c23d4016b5d4d7f32bd6787",
+      "crc32": 2405392748,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "bytes": 950169,
+      "sha256": "85f4f6a971622a737e50b80ccf5306c6b7b13715212cf898cc6a3a39d51ee0fc",
+      "crc32": 1316564702,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/016-cancel-formation-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/017-released-draft-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "bytes": 303831,
+      "sha256": "e7ddbd884dd3f3130b2276ede84b05cb5d5c1c660dba51d6396eac85ce4f32f7",
+      "crc32": 3680019265,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "bytes": 943683,
+      "sha256": "a2bfae280d8e0053ae92c0bf6a5c10156020f9875603c8f078f05e994339e868",
+      "crc32": 1180573182,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "bytes": 314995,
+      "sha256": "e7af02e1d1a7ccdada18f140447e07a174c96c610abe943dc717ccf0d761a34b",
+      "crc32": 305294773,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "bytes": 943662,
+      "sha256": "6256d31ee365776195426c7b1294d35033288741e8bc4c68dc7470a8bef2aab4",
+      "crc32": 2468171708,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "bytes": 303833,
+      "sha256": "c7a2c43bbf66abad2bdf63886fcc964bd48b3e718defa3e3158655d3a4262010",
+      "crc32": 2552152988,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "bytes": 943903,
+      "sha256": "b07648763cf41388357a505aa35852c05204b4c7bee5a9373616d1cc770c2fba",
+      "crc32": 736595599,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "bytes": 314997,
+      "sha256": "d6e77a354a377e458997109bb61b97a48996adfd490bf732fe03a972c779569a",
+      "crc32": 4108229395,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "bytes": 943885,
+      "sha256": "1a3d3b0f7ebbf88a61a4683f2b65d5c4fe319e0c15939b74b85502be3b08ad6f",
+      "crc32": 3918538690,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "bytes": 219749,
+      "sha256": "222e5923c84878095a7f0eed4d096ff665adff0a2c8e37d02b7df75b3e96c43a",
+      "crc32": 3758006704,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-1-fleet-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "bytes": 651273,
+      "sha256": "e9955a0887601d94fadd3e19e71eb4fabd917be868e34b886fd022fcd8ef15c8",
+      "crc32": 2889755894,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "bytes": 314997,
+      "sha256": "d6e77a354a377e458997109bb61b97a48996adfd490bf732fe03a972c779569a",
+      "crc32": 4108229395,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-2-independent-marshal.layout.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "bytes": 943885,
+      "sha256": "1a3d3b0f7ebbf88a61a4683f2b65d5c4fe319e0c15939b74b85502be3b08ad6f",
+      "crc32": 3918538690,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/021-return-to-system-2-independent-marshal.png",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/README.md",
+      "bytes": 15490,
+      "sha256": "fce48c4f5d14331b5326181bdb2bd874ece5a6ca862f6af8d3da67b35bf122ca",
+      "crc32": 3666380154,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "test-results/stories/live-fleet-cancellation/short/linux-arm64/story.json",
+      "bytes": 17006,
+      "sha256": "7409134a9acf5e3c1a0e488cc757f9e1440df97add48644c70e14c5e2a198b21",
+      "crc32": 3086611508,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/test-results/stories/live-fleet-cancellation/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "firestore-debug.log",
+      "bytes": 65429,
+      "sha256": "daa7f0e847e822b6511ed5c031991eb985c0111dad1f3f8357f9132596f3a661",
+      "crc32": 3100998560,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/firestore-debug.log",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+      "crc32": 503735925,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/browser-path.txt",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/containerd.log",
+      "bytes": 11788,
+      "sha256": "81c13b3bf88ba9b74fa550ff9dd0a5b08dd7722b972cd11a189cffd740f18b7e",
+      "crc32": 1838137211,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/containerd.log",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine-info.log",
+      "bytes": 1791,
+      "sha256": "ff1bfbe0113053a026630543a815078240e90ce8346d9d70fd06ff4b1ed1c744",
+      "crc32": 2877734225,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/engine-info.log",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+      "crc32": 4285110663,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/image-identity.txt",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-inspect.json",
+      "bytes": 2411,
+      "sha256": "a159c376c2d80ef146d110661c14706ec64b5518e706467143120da40c49e8a2",
+      "crc32": 2516428796,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/image-inspect.json",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine.log",
+      "bytes": 2726,
+      "sha256": "39b7b1471608ea5b7821878b3f35a835f3659450ab8d15c8bc481f617c4b2b1f",
+      "crc32": 608072545,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/engine.log",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-load.log",
+      "bytes": 49,
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+      "crc32": 2329796893,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/image-load.log",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "sha256": "e0d61f6c6c832964130d71217f850cd56b8a4a552824924c466cce6fcd7edd74",
+      "crc32": 313490376,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/nix-ldd.txt",
+      "remoteVerifiedArchive": 12587017318
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "sha256": "4644b26de3800e769f7c92039994b72ff3c2beb4e06a8ee442c0dc3cfb30e878",
+      "crc32": 1874920289,
+      "localOriginal": "/tmp/cluster-pr59-linux-corrected/originals/ci-evidence/nix-renderer/renderer-ldd.txt",
+      "remoteVerifiedArchive": 12587017318
+    }
+  ],
+  "localOriginalCount": 205,
+  "openProcesses": false,
+  "removed": true,
+  "removedAt": "2026-10-25T17:08:11.334303+00:00"
+}

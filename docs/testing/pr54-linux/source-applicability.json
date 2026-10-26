@@ -1,0 +1,10 @@
+{
+  "productionCandidate": "35211669996dbb1ef8a50c66c25e9ac9ba1d578d",
+  "captureSource": "e70f36677a1bfc4ae69f331374f7155f544eb29c",
+  "specSha256": "033937437c2e14f5d8650a378d05c606f6d0e1d4d799f0ced4a43cb30f159a14",
+  "sourceDifferenceInPlayerServiceAssetsTestsDependenciesConfig": [],
+  "expectedCases": 8,
+  "expectedImages": 212,
+  "renderer": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+  "note": "Only isolated request/launcher tooling, documentation and logs differ; PR54 source itself retains pending label correction and parent identity fix."
+}

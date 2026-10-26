@@ -1,0 +1,15 @@
+Previous story evidence preserved at /tmp/nix-shell.3tZqGd/cluster-cohort-test-n6jKcc/.story-cohorts-PecgO2/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.3tZqGd/cluster-cohort-test-n6jKcc/.story-cohorts-PecgO2/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (7.450792ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.395292ms)
+✔ interruption retains current artifacts and launches no successor (1.533416ms)
+✔ an artifact path collision fails rather than overwriting either result (2.816166ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.486084ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 59.0885

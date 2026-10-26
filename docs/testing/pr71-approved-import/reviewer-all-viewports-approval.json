@@ -1,0 +1,325 @@
+{
+  "reviewer": "Codex supervisor",
+  "run": 40261212475,
+  "executor": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+  "target": "454d4185d77c75fcb2c6806427abc3b89f88bff4",
+  "scope": "Regression baseline acceptance, not full production design fidelity",
+  "viewports": {
+    "desktop": {
+      "inheritedExact": 15,
+      "newApproved": 10,
+      "visualRepresentatives": 7,
+      "approved": [
+        {
+          "name": "018-review-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/018-review-removal-1-nacre-envoy.png",
+          "sha256": "6757f842f38011c81dd4d20e0a3f0fa7372b8ffdde3df8483792437b8aa5a6fa",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/018-review-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/019-remove-current-access-1-nacre-envoy.png",
+          "sha256": "4579c6d5ac5b647bad21d6d03a0c441511be3b1425689bd07b95d2dd3f973c63",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/019-remove-current-access-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/019-remove-current-access-2-dawn-listener.png",
+          "sha256": "4f2c0ceb59c1f7ccc30194ed3590d415547b4427d819e955824bfd122e74e45b",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/019-remove-current-access-2-dawn-listener.png"
+        },
+        {
+          "name": "019-remove-current-access-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/019-remove-current-access-3-outer-witness.png",
+          "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/019-remove-current-access-3-outer-witness.png"
+        },
+        {
+          "name": "020-message-after-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/020-message-after-removal-1-nacre-envoy.png",
+          "sha256": "1923d094f9b2b69ef406c8fa2cfbb5d1184500597e6c85a68adec988a1ba00e9",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/020-message-after-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "020-message-after-removal-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/020-message-after-removal-2-dawn-listener.png",
+          "sha256": "4f2c0ceb59c1f7ccc30194ed3590d415547b4427d819e955824bfd122e74e45b",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/020-message-after-removal-2-dawn-listener.png"
+        },
+        {
+          "name": "020-message-after-removal-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/020-message-after-removal-3-outer-witness.png",
+          "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/020-message-after-removal-3-outer-witness.png"
+        },
+        {
+          "name": "021-recover-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/021-recover-retained-history-1-dawn-listener.png",
+          "sha256": "4fac41e8647712161b4e0add962916abaafb0380e1be8c924f673a68fad8a97a",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/021-recover-retained-history-1-dawn-listener.png"
+        },
+        {
+          "name": "021-recover-retained-history-2-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/021-recover-retained-history-2-outer-witness.png",
+          "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/021-recover-retained-history-2-outer-witness.png"
+        },
+        {
+          "name": "022-leave-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/022-leave-retained-history-1-dawn-listener.png",
+          "sha256": "9297101c3a6c73b1a13a3eac7381b29215a007aa7f9ae705253e8b4f6b77b089",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/desktop/images/022-leave-retained-history-1-dawn-listener.png"
+        }
+      ],
+      "notes": "All 10 new frames inspected through seven exact-SHA representatives; confirmation, access-ended notice, outsider privacy, retained authorized history and History focus return readable and contained. Phone scroll crops nonfocal earlier content; focal controls remain visible. Phone017 unchanged."
+    },
+    "phone": {
+      "inheritedExact": 15,
+      "newApproved": 10,
+      "visualRepresentatives": 7,
+      "approved": [
+        {
+          "name": "018-review-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/018-review-removal-1-nacre-envoy.png",
+          "sha256": "d40df1626a34d348b0aaeaa1420e52fbe0d162f5ecd548431326c05834333fe6",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/018-review-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/019-remove-current-access-1-nacre-envoy.png",
+          "sha256": "e8b4a961ae35e218119e1f395392d19cb329bef3a1771a544ca8703f477cafd3",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/019-remove-current-access-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/019-remove-current-access-2-dawn-listener.png",
+          "sha256": "4c8385d6a81050213114d0bf8d8b98b0b6b3728960c2e46d4d2da418b76fe085",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/019-remove-current-access-2-dawn-listener.png"
+        },
+        {
+          "name": "019-remove-current-access-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/019-remove-current-access-3-outer-witness.png",
+          "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/019-remove-current-access-3-outer-witness.png"
+        },
+        {
+          "name": "020-message-after-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/020-message-after-removal-1-nacre-envoy.png",
+          "sha256": "eacb09c34e3d76e964c76a0585df6b05ab1db05304d2a7a8d041ab7ab786d278",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/020-message-after-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "020-message-after-removal-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/020-message-after-removal-2-dawn-listener.png",
+          "sha256": "4c8385d6a81050213114d0bf8d8b98b0b6b3728960c2e46d4d2da418b76fe085",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/020-message-after-removal-2-dawn-listener.png"
+        },
+        {
+          "name": "020-message-after-removal-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/020-message-after-removal-3-outer-witness.png",
+          "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/020-message-after-removal-3-outer-witness.png"
+        },
+        {
+          "name": "021-recover-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/021-recover-retained-history-1-dawn-listener.png",
+          "sha256": "5c69148b0c82448a1118c410328a544bcb54ae1696855a43ebf4b26450f47f3b",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/021-recover-retained-history-1-dawn-listener.png"
+        },
+        {
+          "name": "021-recover-retained-history-2-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/021-recover-retained-history-2-outer-witness.png",
+          "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/021-recover-retained-history-2-outer-witness.png"
+        },
+        {
+          "name": "022-leave-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64/022-leave-retained-history-1-dawn-listener.png",
+          "sha256": "eeae17923bd705f08425ec6a2967f7133539b06a28bff5b060cd78d31dbb0626",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/phone/images/022-leave-retained-history-1-dawn-listener.png"
+        }
+      ],
+      "notes": "All 10 new frames inspected through seven exact-SHA representatives; confirmation, access-ended notice, outsider privacy, retained authorized history and History focus return readable and contained. Phone scroll crops nonfocal earlier content; focal controls remain visible. Phone017 unchanged."
+    },
+    "large": {
+      "inheritedExact": 15,
+      "newApproved": 10,
+      "visualRepresentatives": 7,
+      "approved": [
+        {
+          "name": "018-review-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/018-review-removal-1-nacre-envoy.png",
+          "sha256": "1cb347535afd777831b679cd9dfe14c419f945864eb78c965aa4f117f71758c5",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/018-review-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/019-remove-current-access-1-nacre-envoy.png",
+          "sha256": "e9cf4f8c715e38552469fccf76b128bfefc98879662974d8e5e526471490308c",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/019-remove-current-access-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/019-remove-current-access-2-dawn-listener.png",
+          "sha256": "db65c70ca238e152b3f6f5cd971e821afa81ad0c60326434ae20ae721b390a33",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/019-remove-current-access-2-dawn-listener.png"
+        },
+        {
+          "name": "019-remove-current-access-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/019-remove-current-access-3-outer-witness.png",
+          "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/019-remove-current-access-3-outer-witness.png"
+        },
+        {
+          "name": "020-message-after-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/020-message-after-removal-1-nacre-envoy.png",
+          "sha256": "4d8af1c2849260cdae2a040ad90f93de938774890986d6da55e19714b9261378",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/020-message-after-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "020-message-after-removal-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/020-message-after-removal-2-dawn-listener.png",
+          "sha256": "db65c70ca238e152b3f6f5cd971e821afa81ad0c60326434ae20ae721b390a33",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/020-message-after-removal-2-dawn-listener.png"
+        },
+        {
+          "name": "020-message-after-removal-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/020-message-after-removal-3-outer-witness.png",
+          "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/020-message-after-removal-3-outer-witness.png"
+        },
+        {
+          "name": "021-recover-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/021-recover-retained-history-1-dawn-listener.png",
+          "sha256": "42eb8edfebd8855c2bbe5e1baa317ded687e24469fb8a6d201f66e02992ccd38",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/021-recover-retained-history-1-dawn-listener.png"
+        },
+        {
+          "name": "021-recover-retained-history-2-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/021-recover-retained-history-2-outer-witness.png",
+          "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/021-recover-retained-history-2-outer-witness.png"
+        },
+        {
+          "name": "022-leave-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/022-leave-retained-history-1-dawn-listener.png",
+          "sha256": "bc49a351898ba4c2d5e3626a79bf42ab9211f9a8188bcb2bc08befeafe741dcb",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/large/images/022-leave-retained-history-1-dawn-listener.png"
+        }
+      ],
+      "notes": "Seven exact-SHA representatives visually inspected. Confirmation, access ended, outsider privacy, authorized history and gold keyboard focus readable/contained. Short viewport uses bounded scrolling with nonfocal content cropped. Large reviewed at displayed 2048x1152 from 3840x2160. Existing singular participant copy and concept composition gaps remain recorded; regression approval only."
+    },
+    "short": {
+      "inheritedExact": 15,
+      "newApproved": 10,
+      "visualRepresentatives": 7,
+      "approved": [
+        {
+          "name": "018-review-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/018-review-removal-1-nacre-envoy.png",
+          "sha256": "553d581183c49cac4376aa5f204a7787e4839b96e2979deee2205644e9fa0d30",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/018-review-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/019-remove-current-access-1-nacre-envoy.png",
+          "sha256": "bb682d7a7b0125e169facaff8527a8ec232c2758eaf6cbf06eb21088c7c9de07",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/019-remove-current-access-1-nacre-envoy.png"
+        },
+        {
+          "name": "019-remove-current-access-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/019-remove-current-access-2-dawn-listener.png",
+          "sha256": "83ef5e1b437123fd3a78bc87afc1e15ea381cae5788248f0bfce9d2cc84ae4d9",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/019-remove-current-access-2-dawn-listener.png"
+        },
+        {
+          "name": "019-remove-current-access-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/019-remove-current-access-3-outer-witness.png",
+          "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/019-remove-current-access-3-outer-witness.png"
+        },
+        {
+          "name": "020-message-after-removal-1-nacre-envoy.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/020-message-after-removal-1-nacre-envoy.png",
+          "sha256": "9a9a35d6fbc100290f8532c5f271b4d27c7e369a986a4ed004a54d8d64854a10",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/020-message-after-removal-1-nacre-envoy.png"
+        },
+        {
+          "name": "020-message-after-removal-2-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/020-message-after-removal-2-dawn-listener.png",
+          "sha256": "83ef5e1b437123fd3a78bc87afc1e15ea381cae5788248f0bfce9d2cc84ae4d9",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/020-message-after-removal-2-dawn-listener.png"
+        },
+        {
+          "name": "020-message-after-removal-3-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/020-message-after-removal-3-outer-witness.png",
+          "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/020-message-after-removal-3-outer-witness.png"
+        },
+        {
+          "name": "021-recover-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/021-recover-retained-history-1-dawn-listener.png",
+          "sha256": "6b0f194e24228592bf54979b6c914f236f02428d4579c8835d22cf11c7cfa8db",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/021-recover-retained-history-1-dawn-listener.png"
+        },
+        {
+          "name": "022-leave-retained-history-1-dawn-listener.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/022-leave-retained-history-1-dawn-listener.png",
+          "sha256": "e0b8bd0ba0d8a35f68d409f01f909778bf75bf33f1f122982595e0e02588c4f5",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/022-leave-retained-history-1-dawn-listener.png"
+        },
+        {
+          "name": "021-recover-retained-history-2-outer-witness.png",
+          "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/021-recover-retained-history-2-outer-witness.png",
+          "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+          "comparison": "new",
+          "path": "/tmp/cluster-pr71-candidate-review/short/images/021-recover-retained-history-2-outer-witness.png"
+        }
+      ],
+      "notes": "Seven exact-SHA representatives visually inspected. Confirmation, access ended, outsider privacy, authorized history and gold keyboard focus readable/contained. Short viewport uses bounded scrolling with nonfocal content cropped. Large reviewed at displayed 2048x1152 from 3840x2160. Existing singular participant copy and concept composition gaps remain recorded; regression approval only."
+    }
+  },
+  "knownPreexistingIssues": [
+    "Singular member label renders 1 participants; existing copy issue, not a new raster regression.",
+    "Actual full-screen diplomacy layout and small mobile portrait remain less cinematic than concept10-diplomacy-v2; no full design-fidelity approval inferred under current green-stack priority."
+  ]
+}

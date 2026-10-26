@@ -1,6 +1,6 @@
 # Plot, recover and follow an authoritative fleet arrival
 
-**Exact comparison passed.** phone · darwin-arm64. Inventory: UX-08, UX-09, UX-14, UX-16.
+**Exact comparison passed.** phone · darwin-arm64. Inventory: UX-08, UX-14, UX-16.
 
 Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.
 
@@ -316,100 +316,3 @@ Acknowledged outcome: The recovered fleet is stationed at the destination with i
 ### Viewpoint: Independent marshal
 
 [![Return to fleet preparation, recover the destination after reload and inspect the same stationed fleet with the keyboard. — Independent marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/026-recover-arrival-2-independent-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/026-recover-arrival-2-independent-marshal.png)
-
-## 27. Both commanders open their own arrival archive. The owner recovers the secured system; the uninvolved commander receives no private arrival report.
-
-Actor: **Fleet marshal**.
-
-Acknowledged outcome: Authorized history selects the owner's recorded arrival and acknowledges an empty archive to the other commander.
-
-- [x] Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling.
-
-### Viewpoint: Fleet marshal
-
-[![Both commanders open their own arrival archive. The owner recovers the secured system; the uninvolved commander receives no private arrival report. — Fleet marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/027-open-private-arrival-archives-1-fleet-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/027-open-private-arrival-archives-1-fleet-marshal.png)
-
-### Viewpoint: Independent marshal
-
-[![Both commanders open their own arrival archive. The owner recovers the secured system; the uninvolved commander receives no private arrival report. — Independent marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/027-open-private-arrival-archives-2-independent-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/027-open-private-arrival-archives-2-independent-marshal.png)
-
-## 28. Read the recorded zero losses and surviving complement through the bounded, keyboard-focusable report body.
-
-Actor: **Fleet marshal**.
-
-Acknowledged outcome: The named report facts are fully visible inside the bounded panel and match the single authoritative outcome.
-
-- [x] Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling.
-
-### Viewpoint: Fleet marshal
-
-[![Read the recorded zero losses and surviving complement through the bounded, keyboard-focusable report body. — Fleet marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/028-read-arrival-losses-1-fleet-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/028-read-arrival-losses-1-fleet-marshal.png)
-
-### Viewpoint: Independent marshal
-
-[![Read the recorded zero losses and surviving complement through the bounded, keyboard-focusable report body. — Independent marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/028-read-arrival-losses-2-independent-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/028-read-arrival-losses-2-independent-marshal.png)
-
-## 29. Read separately recorded orbit and surface control; both layers belong to the arriving commander at this tick.
-
-Actor: **Fleet marshal**.
-
-Acknowledged outcome: The named report facts are fully visible inside the bounded panel and match the single authoritative outcome.
-
-- [x] Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling.
-
-### Viewpoint: Fleet marshal
-
-[![Read separately recorded orbit and surface control; both layers belong to the arriving commander at this tick. — Fleet marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/029-read-arrival-control-1-fleet-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/029-read-arrival-control-1-fleet-marshal.png)
-
-### Viewpoint: Independent marshal
-
-[![Read separately recorded orbit and surface control; both layers belong to the arriving commander at this tick. — Independent marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/029-read-arrival-control-2-independent-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/029-read-arrival-control-2-independent-marshal.png)
-
-## 30. Open Participants and resolution with the keyboard to read the recorded order, private opposing-force boundary and development-rule disclosure.
-
-Actor: **Fleet marshal**.
-
-Acknowledged outcome: The expanded resolution explanation is visible and identifies proposed development rules without revealing opposing forces.
-
-- [x] Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling.
-
-### Viewpoint: Fleet marshal
-
-[![Open Participants and resolution with the keyboard to read the recorded order, private opposing-force boundary and development-rule disclosure. — Fleet marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/030-read-arrival-resolution-boundaries-1-fleet-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/030-read-arrival-resolution-boundaries-1-fleet-marshal.png)
-
-### Viewpoint: Independent marshal
-
-[![Open Participants and resolution with the keyboard to read the recorded order, private opposing-force boundary and development-rule disclosure. — Independent marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/030-read-arrival-resolution-boundaries-2-independent-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/030-read-arrival-resolution-boundaries-2-independent-marshal.png)
-
-## 31. Reload both independent sessions and reopen their own archives with the keyboard. Stored outcomes survive; unrelated players still receive no report.
-
-Actor: **Fleet marshal**.
-
-Acknowledged outcome: The same recorded destination/tick returns only to its recipient after loss of local panel state.
-
-- [x] Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling.
-- [x] Normal and reduced motion retain the same authoritative history and recipient outcomes.
-
-### Viewpoint: Fleet marshal
-
-[![Reload both independent sessions and reopen their own archives with the keyboard. Stored outcomes survive; unrelated players still receive no report. — Fleet marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/031-reload-private-arrival-archives-1-fleet-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/031-reload-private-arrival-archives-1-fleet-marshal.png)
-
-### Viewpoint: Independent marshal
-
-[![Reload both independent sessions and reopen their own archives with the keyboard. Stored outcomes survive; unrelated players still receive no report. — Independent marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/031-reload-private-arrival-archives-2-independent-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/031-reload-private-arrival-archives-2-independent-marshal.png)
-
-## 32. Both commanders close the archive with Escape and return to the opening Arrival reports control.
-
-Actor: **Fleet marshal**.
-
-Acknowledged outcome: Both archive panels close and focus returns to each player's Arrival reports control.
-
-- [x] Keyboard dismissal changes no canonical outcome or receipt.
-
-### Viewpoint: Fleet marshal
-
-[![Both commanders close the archive with Escape and return to the opening Arrival reports control. — Fleet marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/032-close-arrival-archives-by-keyboard-1-fleet-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/032-close-arrival-archives-by-keyboard-1-fleet-marshal.png)
-
-### Viewpoint: Independent marshal
-
-[![Both commanders close the archive with Escape and return to the opening Arrival reports control. — Independent marshal](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png)](../../../../../../tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png)

@@ -714,7 +714,7 @@
     flex: 1;
     min-height: 52px;
   }
-  .feedback p {
+  .feedback :global(p) {
     margin: 4px 0 12px;
   }
   .feedback {

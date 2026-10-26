@@ -9,10 +9,10 @@
   ],
   "description": "Four independent commanders enter through authenticated controls. Actual leased ticks acquire private observations; a missed scan retains historical facts. Fixed catalogue, domain clocks and scan entropy identities are explicit harness controls, not injected reports. Development scanning rules remain under review. Managed encryption, random-map fairness and hosted scheduling are not certified.",
   "source": {
-    "commit": "0d9150ff45f441c6ad3f99e29f6ac5f355a9b9dc",
+    "commit": "3153d2522b8c56ed7a54a7596312159d35da3c5c",
     "dirty": false,
     "spec": "tests/browser/observations.story.spec.ts",
-    "specSha256": "b822078b9a6ca60c3f3dcdb22c1157e32c97480c9798da519ec29552b515acb3"
+    "specSha256": "d00ab5144bd7af938a6466cb8c0e056a8aed062a5ad1836bd13472c4c3211dea"
   },
   "mode": "verify",
   "status": "passed",
@@ -139,16 +139,12 @@
         {
           "player": "Survey envoy",
           "image": "010-inspect-before-acquisition-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         },
         {
           "player": "Independent surveyor",
           "image": "010-inspect-before-acquisition-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         }
       ]
     },
@@ -175,16 +171,12 @@
         {
           "player": "Survey envoy",
           "image": "012-read-current-report-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         },
         {
           "player": "Independent surveyor",
           "image": "012-read-current-report-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         }
       ]
     },
@@ -201,16 +193,12 @@
         {
           "player": "Survey envoy",
           "image": "013-read-scanning-capability-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         },
         {
           "player": "Independent surveyor",
           "image": "013-read-scanning-capability-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         }
       ]
     },
@@ -236,16 +224,12 @@
         {
           "player": "Survey envoy",
           "image": "015-read-retained-history-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         },
         {
           "player": "Independent surveyor",
           "image": "015-read-retained-history-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         }
       ]
     },
@@ -262,16 +246,12 @@
         {
           "player": "Survey envoy",
           "image": "016-read-historical-warning-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         },
         {
           "player": "Independent surveyor",
           "image": "016-read-historical-warning-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         }
       ]
     },
@@ -288,16 +268,12 @@
         {
           "player": "Survey envoy",
           "image": "017-inspect-still-unknown-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         },
         {
           "player": "Independent surveyor",
           "image": "017-inspect-still-unknown-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         }
       ]
     },
@@ -314,68 +290,12 @@
         {
           "player": "Survey envoy",
           "image": "018-recover-retained-report-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         },
         {
           "player": "Independent surveyor",
           "image": "018-recover-retained-report-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "read-labels-after-resize",
-      "description": "Resize the recovered chart and return to the original viewport; compare normal and reduced motion without changing the selected report.",
-      "actor": "Survey envoy",
-      "kind": "player",
-      "acknowledgement": "The same historical report remains selected with readable labels after resize and either motion preference.",
-      "verifications": [
-        "Presentation changes neither canonical state nor authorized observations."
-      ],
-      "views": [
-        {
-          "player": "Survey envoy",
-          "image": "019-read-labels-after-resize-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
-        },
-        {
-          "player": "Independent surveyor",
-          "image": "019-read-labels-after-resize-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "locate-home-by-keyboard",
-      "description": "Use the systems list and Center home control with the keyboard to discover the home system independently of secondary map labels.",
-      "actor": "Survey envoy",
-      "kind": "player",
-      "acknowledgement": "The authoritative home system is selected and its priority label is readable.",
-      "verifications": [
-        "Keyboard chart navigation preserves authoritative forces, history and private recipient projections."
-      ],
-      "views": [
-        {
-          "player": "Survey envoy",
-          "image": "020-locate-home-by-keyboard-1-survey-envoy.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
-        },
-        {
-          "player": "Independent surveyor",
-          "image": "020-locate-home-by-keyboard-2-independent-surveyor.png",
-          "verifications": [
-            "Projected system labels remain separated and contained within the chart."
-          ]
+          "verifications": []
         }
       ]
     }
