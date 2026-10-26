@@ -2677,3 +2677,10 @@ Delegated reviewer instruction; refer to latest main meta complete100 strict art
 Reviewer: PR71 strict40262969648 ALL FOUR SUCCESS. Independently verified original ZIP size/SHA256/CRC, exactbc19c059 executor/run/source provenance, verify/passed25/exit0/referenceDiff0 each, and all100 PNGs byte-exact approved hashes. Evidence /tmp/cluster-pr71-strict-review/all100-verified.json and per-viewport reports/originalZIPs. Complete reviewed strict gate satisfied. Proceed now to publish existing PR71 repair from f5cfe1b0 plus audit-only commits preserving exact published70 ancestry; check no product/tests/runtime/reference drift before push. Preserve all100 evidence and lossless latestmainmeta, attributed PROMPTS/continuations, then observe mandatory full PR checks. Carry exact published71 parent into preparedPR72 and continue its existing baseline review/repair; do not wait idle for whole-suite71 if independent72 preparation is safe. No duplicate runs, no merges. Regression verification is not full production design-fidelity signoff.
 
 
+
+
+## Prompt 228: Dispatch reviewed drafts
+
+Delegated reviewer instruction; refer to latest main meta immutable PR72 integration/executor review and single candidate dispatch authorization.
+
+Reviewer: Independently verified immutable72 integration4a826445 preserves published71 ancestry, all baseline trees and reviewed72 source. Reviewed draft-candidates case/request/runner/workflow plus both launcher deltas against reviewed71 generator: bound4a826445,34views each,100 inherited SHA/renderer checks, three reference trees, source/spec guard, pinnedNix renderer, generate only/no promotion, no retries/snapshot updates, fresh ports/output/disk reserve. Independently ran all5 draft-candidates tests PASS. Proceed single immutable136-view candidate dispatch, no extra approval round to generate. All36new and any inherited changes still require visual review before promotion; preserve approval and latestmeta in next normal audit. No duplicate live checks or merges.
