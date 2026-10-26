@@ -290,17 +290,9 @@ export class TestStepHelper {
                   );
                 return image;
               };
-              const image = await stableImage(
-                process.env.CLUSTER_RENDER_TELEMETRY === "1"
-                  ? async () => {
-                      await sampleRender();
-                      const captured = await capture();
-                      await sampleRender();
-                      return captured;
-                    }
-                  : capture,
-                exactPixels,
-              );
+              const image = await stableImage(capture, exactPixels);
+              // Diagnostic observation follows the completed stable capture only.
+              await sampleRender();
               writeFileSync(join(this.story.folder, stem), image);
               if (process.env.CLUSTER_RENDER_TELEMETRY === "1") {
                 writeFileSync(

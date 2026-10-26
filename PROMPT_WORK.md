@@ -555,3 +555,5 @@ Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Preserve shared PR70/71 stellar-core failure evidence and prepare exact45-test short cohort telemetry diagnosis.
 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Request one original short cohort with strict comparison and telemetry to investigate order-dependent stellar rendering.
+
+Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Isolate one short cohort diagnostic with telemetry only after stable PNG capture and unchanged product references

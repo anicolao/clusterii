@@ -14,7 +14,9 @@ fi
 ldd "$browser" > ci-evidence/nix-renderer/renderer-ldd.txt
 case "$1" in
   recovery)
-    if [ "$2" = cohort-diagnostic ] && [ "$#" -eq 2 ]; then
+    if [ "$2" = postcapture-diagnostic ] && [ "$#" -eq 2 ]; then
+      node scripts/postcapture-diagnostic-run.mjs
+    elif [ "$2" = cohort-diagnostic ] && [ "$#" -eq 2 ]; then
       node scripts/cohort-diagnostic-run.mjs
     else
       test "$2" = core-diagnostic
