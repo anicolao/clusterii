@@ -1,0 +1,166 @@
+{
+  "traceCRCVerified": true,
+  "finalKeyboardAction": "Tab",
+  "pauseClickedBeforeFailure": false,
+  "scrollAfterKeyboardFocus": "17",
+  "captureCalls": [
+    "call@21477",
+    "call@21479"
+  ],
+  "calls": [
+    {
+      "callId": "call@21433",
+      "method": "keyboardPress",
+      "key": "Tab",
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21435",
+      "method": "expect",
+      "key": null,
+      "selector": "internal:role=button[name=\"Close roster\"s]",
+      "expression": "to.be.focused"
+    },
+    {
+      "callId": "call@21437",
+      "method": "keyboardPress",
+      "key": "Tab",
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21439",
+      "method": "expect",
+      "key": null,
+      "selector": "internal:role=button[name=\"Leave campaign\"s]",
+      "expression": "to.be.focused"
+    },
+    {
+      "callId": "call@21441",
+      "method": "keyboardPress",
+      "key": "Tab",
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21443",
+      "method": "expect",
+      "key": null,
+      "selector": "internal:text=\"Development controls\"s",
+      "expression": "to.be.focused"
+    },
+    {
+      "callId": "call@21445",
+      "method": "keyboardPress",
+      "key": "Tab",
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21447",
+      "method": "expect",
+      "key": null,
+      "selector": "internal:role=button[name=\"Close roster\"s]",
+      "expression": "to.be.focused"
+    },
+    {
+      "callId": "call@21449",
+      "method": "keyboardPress",
+      "key": "Shift+Tab",
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21451",
+      "method": "expect",
+      "key": null,
+      "selector": "internal:text=\"Development controls\"s",
+      "expression": "to.be.focused"
+    },
+    {
+      "callId": "call@21453",
+      "method": "keyboardPress",
+      "key": "Enter",
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21455",
+      "method": "keyboardPress",
+      "key": "Tab",
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21457",
+      "method": "expect",
+      "key": null,
+      "selector": "internal:role=button[name=\"Pause campaign\"s]",
+      "expression": "to.be.focused"
+    },
+    {
+      "callId": "call@21461",
+      "method": "bringToFront",
+      "key": null,
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21463",
+      "method": "mouseMove",
+      "key": null,
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21465",
+      "method": "expect",
+      "key": null,
+      "selector": "internal:role=button[name=\"Pause campaign\"s]",
+      "expression": "to.be.visible"
+    },
+    {
+      "callId": "call@21467",
+      "method": "waitForSelector",
+      "key": null,
+      "selector": "internal:role=button[name=\"Pause campaign\"s]",
+      "expression": null
+    },
+    {
+      "callId": "call@21471",
+      "method": "evaluateExpression",
+      "key": null,
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21473",
+      "method": "evaluateExpression",
+      "key": null,
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21475",
+      "method": "evaluateExpression",
+      "key": null,
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21477",
+      "method": "screenshot",
+      "key": null,
+      "selector": null,
+      "expression": null
+    },
+    {
+      "callId": "call@21479",
+      "method": "screenshot",
+      "key": null,
+      "selector": null,
+      "expression": null
+    }
+  ]
+}

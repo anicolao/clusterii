@@ -1,0 +1,154 @@
+diff --git a/tests/browser/selected-history.story.spec.ts b/tests/browser/selected-history.story.spec.ts
+index 6779876b..65690e5b 100644
+--- a/tests/browser/selected-history.story.spec.ts
++++ b/tests/browser/selected-history.story.spec.ts
+@@ -957,6 +957,149 @@ test("Selected history reaches only a consenting commander and survives reload",
+         },
+       ],
+     });
++    const replacementBase = await canonical();
++    const baseText = "An unsent proposal for both tabs.";
++    const remoteText = "The first tab keeps the northern rendezvous.";
++    const chosenText = "The second tab chooses the southern rendezvous.";
++    const replacementPrivate = {
++      spec: "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.",
++      check: async () => {
++        expect(await canonical()).toEqual(replacementBase);
++        for (const seat of [1, 2])
++          for (const text of [baseText, remoteText, chosenText])
++            expect(JSON.stringify(await published(seat))).not.toContain(text);
++      },
++    };
++    const secondView = {
++      page: () => second!,
++      player: `${aliases[0]} · second tab`,
++      surface: "game" as const,
++    };
++    await story.step("prepare-replacement-choice", {
++      actor: aliases[0],
++      description:
++        "Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently.",
++      action: async () => {
++        await owner.reload();
++        await open(owner);
++        await chooseRoom(owner);
++        await composer(owner).fill(baseText);
++        await expect(draftStatus(owner)).toHaveText(
++          "Draft saved on this browser.",
++        );
++        await second!.reload();
++        await open(second!);
++        await chooseRoom(second!);
++      },
++      acknowledgement: {
++        spec: "Both tabs recover the same unsent proposal.",
++        check: async () => {
++          await expect(composer(owner)).toHaveValue(baseText);
++          await expect(composer(second!)).toHaveValue(baseText);
++        },
++      },
++      verifications: [noErrors, replacementPrivate],
++      views: [view(0), secondView],
++    });
++    await story.step("review-competing-replacement", {
++      actor: aliases[0],
++      description:
++        "Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain.",
++      action: async () => {
++        await composer(owner).fill(remoteText);
++        await expect(draftStatus(owner)).toHaveText(
++          "Draft saved on this browser.",
++        );
++        await composer(second!).fill(chosenText);
++      },
++      acknowledgement: {
++        spec: "A revision conflict preserves the second tab's proposal and blocks sending.",
++        check: async () => {
++          await expect(panel(second!).getByRole("alert")).toContainText(
++            "another tab",
++          );
++          await expect(composer(second!)).toHaveValue(chosenText);
++          await expect(composer(owner)).toHaveValue(remoteText);
++          await expect(button(second!, "Send message")).toBeDisabled();
++        },
++      },
++      verifications: [
++        noErrors,
++        replacementPrivate,
++        {
++          spec: "Both explicit choices remain visible before any scrolling.",
++          check: async () => {
++            await expect(panel(second!).locator("footer")).toBeInViewport({
++              ratio: 1,
++            });
++            await expect(button(second!, "Use saved draft")).toBeInViewport({
++              ratio: 1,
++            });
++            await expect(
++              button(second!, "Replace saved draft with my text"),
++            ).toBeInViewport({ ratio: 1 });
++          },
++        },
++      ],
++      views: [view(0), secondView],
++    });
++    await story.step("replace-with-local-proposal", {
++      actor: aliases[0],
++      description:
++        "Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it.",
++      action: async () => {
++        await button(second!, "Replace saved draft with my text").focus();
++        await second!.keyboard.press("Enter");
++      },
++      acknowledgement: {
++        spec: "Browser storage acknowledges the chosen local text and clears the conflict.",
++        check: async () => {
++          await expect(draftStatus(second!)).toHaveText(
++            "Draft saved on this browser.",
++          );
++          await expect(composer(second!)).toHaveValue(chosenText);
++          await expect(panel(second!).getByRole("alert")).toHaveCount(0);
++          await expect(button(second!, "Send message")).toBeEnabled();
++        },
++      },
++      verifications: [noErrors, replacementPrivate],
++      views: [secondView],
++    });
++    await story.step("recover-chosen-local-proposal", {
++      actor: aliases[0],
++      description:
++        "Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text.",
++      action: async () => {
++        for (const page of [owner, second!]) {
++          await page.reload();
++          await open(page);
++          await chooseRoom(page);
++        }
++      },
++      acknowledgement: {
++        spec: "Both authenticated tabs recover the replacement from durable browser storage.",
++        check: async () => {
++          for (const page of [owner, second!]) {
++            await expect(composer(page)).toHaveValue(chosenText);
++            await expect(panel(page).getByRole("alert")).toHaveCount(0);
++          }
++        },
++      },
++      verifications: [
++        noErrors,
++        replacementPrivate,
++        {
++          spec: "Normal and reduced motion preserve the chosen text and unsent state.",
++          check: async () => {
++            await second!.emulateMedia({ reducedMotion: "no-preference" });
++            await expect(composer(second!)).toHaveValue(chosenText);
++            await second!.emulateMedia({ reducedMotion: "reduce" });
++            expect(await canonical()).toEqual(replacementBase);
++          },
++        },
++      ],
++      views: [view(0), secondView, view(2)],
++    });
+   } finally {
+     for (const ctx of contexts) await ctx.close();
+   }

@@ -1,0 +1,14 @@
+✔ fresh exact request accepted; wrong/replayed/broadened requests rejected (0.583667ms)
+✔ exact phone selection only, no empty or wrong collected test (0.343709ms)
+✔ both actual dispatch layers accept exactly one phone case and reject wrong or empty args (106.273083ms)
+✔ full outer script accepts scoped route only up to required runner preflight (4.374875ms)
+✔ all inherited feature references and renderer siblings are present with exact Git blobs (53.920958ms)
+✔ workflow binds only new phone branch and request without replaying original trigger (0.102459ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 215.343083

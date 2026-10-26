@@ -1,0 +1,34 @@
+✔ admission fixture changes only designated domain time inputs (0.365833ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.285875ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.135792ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.458125ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.285167ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.698958ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.353208ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.276792ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.425667ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.359417ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.348292ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.381208ms)
+Previous story evidence preserved at /tmp/nix-shell.clMKC2/cluster-cohort-test-3GDVCO/.story-cohorts-6n13ug/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.clMKC2/cluster-cohort-test-3GDVCO/.story-cohorts-6n13ug/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (8.673125ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.446ms)
+✔ interruption retains current artifacts and launches no successor (1.388208ms)
+✔ an artifact path collision fails rather than overwriting either result (3.345833ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.617875ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.968875ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.919792ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (5.045833ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.344083ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.358833ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.287916ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 66.7785
+Illustrated-story policy passed; legacy migration gaps remain inventoried.

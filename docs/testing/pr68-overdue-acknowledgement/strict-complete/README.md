@@ -1,0 +1,3 @@
+Sole40257151053 completed four complete40-view strict route recovery journeys:160exact captures. Independent supervisor verified all original ZIP sizes/SHA256/CRC and all160captured image hashes against122245b2. Each manifest verify/passed, exit0/referenceDiff0; executor17fc3dd4, pinned renderer, unchanged240/30/10second budgets, retries0, no updates. Original artifacts stay in/tmp/cluster-pr68-strict-review and remotely, no duplicate retrieval.
+
+Publication includes the exact tested source/spec/references from122245b2 plus attributed audits/logs only. Original large transient-pending failure and all evidence retained. Full required CI on new published68 head remains mandatory; this is not full design/motion/release approval.

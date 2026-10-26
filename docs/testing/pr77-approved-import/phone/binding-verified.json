@@ -1,0 +1,62 @@
+{
+  "executor": {
+    "requestId": "discard-candidates-20261026-01",
+    "sourceCommit": "afb72b0d20bb1f275c02c46a0a6f408a9962cc20",
+    "executorCommit": "3e2382bca575ff7563b86828f34377cd9eca503e",
+    "case": "discard-candidates",
+    "mode": "generate",
+    "target": "0701e49aeb60d1ccd556738a56a76c8864da9db2",
+    "runId": "40298447973",
+    "attempt": 1,
+    "arrivalReferenceTree": "668d7de7fd5316f28b73c9e8fa0ef41736199039",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "28753435f6f9c1c7ae66b522f0c3510d03601bbd",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts",
+        "title": "Live fleet travel and arrival preserve private forces through recovery",
+        "story": "live-fleet-travel",
+        "sha": "d3c402b0bc9d8270fccc07552b59998eecde91d3693f302b9feafe868090ab0a",
+        "views": 44
+      }
+    },
+    "requestSha256": "a37ce534239456a518dd03302386ea2ebe7239f232ee9c6031064f6ec9280c74"
+  },
+  "selection": {
+    "file": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts",
+    "title": "Live fleet travel and arrival preserve private forces through recovery",
+    "story": "live-fleet-travel",
+    "sha": "d3c402b0bc9d8270fccc07552b59998eecde91d3693f302b9feafe868090ab0a",
+    "views": 44,
+    "family": "draft",
+    "viewport": "phone",
+    "args": [
+      "x",
+      "playwright",
+      "test",
+      "--config",
+      "playwright.stories.config.ts",
+      "tests/e2e/008-fleet-travel/fleet-travel.spec.ts",
+      "--grep",
+      "(?:^|\\s)Live fleet travel and arrival preserve private forces through recovery$",
+      "--project=phone",
+      "--retries=0",
+      "--max-failures=1",
+      "--update-snapshots=none"
+    ],
+    "mode": "generate",
+    "freeKiBBefore": 85029220
+  },
+  "outcome": {
+    "family": "draft",
+    "viewport": "phone",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "generate",
+    "views": 44
+  },
+  "rendererConfig": "sha256:7e11780237209f8747e8023d2ba777723d9aba451a548bbcc0563511e28a2c9a",
+  "bindingVerified": true
+}

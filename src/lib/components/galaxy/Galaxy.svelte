@@ -39,6 +39,7 @@
   } from "$lib/campaign-history";
   import { Canvas } from "@threlte/core";
   import Scene from "./Scene.svelte";
+  import { unobscuredChartCenter, type ChartCenter } from "$lib/galaxy-camera";
   import type { CampaignView } from "@shared/campaign";
   import ChartControls from "./ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
@@ -696,17 +697,33 @@
   let roster = $state(false);
   let selected = $state("");
   let stellarClass = $state<StarClass | "all">("all");
-  let cameraRequest = $state({ action: "overview", starId: "", sequence: 0 });
-  function move(
+  let chartElement = $state<HTMLDivElement>();
+  let inspectorElement = $state<HTMLElement>();
+  let cameraRequest = $state<{
+    action: string;
+    starId: string;
+    sequence: number;
+    focusCenter?: ChartCenter;
+  }>({ action: "overview", starId: "", sequence: 0 });
+  async function move(
     action: "selected" | "home" | "overview" | "in" | "out" | "left" | "right",
   ) {
     if (action === "home" && view.own.home) selected = view.own.home;
+    // Measure after selection and list closure, when the real inspector has settled.
+    if (action === "home") await closeList();
     cameraRequest = {
       action,
       starId: action === "home" ? (view.own.home ?? "") : star.id,
       sequence: cameraRequest.sequence + 1,
+      focusCenter:
+        action === "home" && chartElement && inspectorElement
+          ? unobscuredChartCenter(
+              chartElement.getBoundingClientRect(),
+              inspectorElement.getBoundingClientRect(),
+            )
+          : undefined,
     };
-    void closeList();
+    if (action !== "home") void closeList();
   }
   const filtered = $derived(
     view.stars.filter(
@@ -925,6 +942,7 @@
     </div>{/if}
   <div
     class="chart"
+    bind:this={chartElement}
     data-galaxy-viewport
     inert={roster ||
       listing ||
@@ -987,6 +1005,7 @@
       construction ||
       military}
     class="system-inspector"
+    bind:this={inspectorElement}
     class:observing={observation}
     class:active={view.phase === "active"}
     aria-label="Selected system"

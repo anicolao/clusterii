@@ -1,0 +1,11 @@
+bun test v1.3.13 (bf2e2cec)
+
+tests/galaxy-labels.test.ts:
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars [0.16ms]
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.67ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes [0.10ms]
+
+ 3 pass
+ 0 fail
+ 82 expect() calls
+Ran 3 tests across 1 file. [36.00ms]
