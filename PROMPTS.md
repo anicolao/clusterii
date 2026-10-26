@@ -2316,3 +2316,10 @@ Reviewer: PR68 strict desktop12623490207/phone12622329353 supervisor verificatio
 Delegated reviewer instruction; refer to main meta supervisor-owned remaining68/70 strict artifacts.
 
 Reviewer: Supervisor owns remaining short/large artifact verification for both live strict runs68/70, including newly passed70short12623466574. Avoid duplicate retrieval; continue isolated forward-parent integration and logs.
+
+## Prompt 187: Publish verified stack
+
+Delegated reviewer instruction; refer to main meta complete independent68/70 strict160 verification and ordered publication authorization.
+
+Reviewer: PR68 strict40257151053 ALL FOUR SUCCESS. Supervisor independently verified remaining short12623348262 and large12622949577 full originalZIP sizes/SHA256/CRC, verify/passed40 exit0/referenceDiff0, exact target122245b2; all80remaining PNGs equal reviewed references. All160strict68 captures now verified, matching completed160strict70. Records /tmp/cluster-pr68-strict-review/reviewer-short-verification.json and reviewer-large-verification.json complete desktop-phone record; retain originals and no duplicate retrieval. Proceed publish reviewed68 repair plus audit to its existing PR, carry exact parent forward and publish prepared69/70 updates for required CI. No additional isolated strict/candidate reruns absent changed tested inputs. Full required CI remains mandatory; preserve previous failures and no merge. Independently compared93eaca1e versus a28bb2f1: no changes to product/shared/functions/e2e/helpers/deps/workflows/checker. Commit/push latest mainmeta and final verification records with publication.
+
