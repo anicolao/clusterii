@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
@@ -48,3 +49,16 @@ test("capture policy protects each exact comparison, readiness and review guard"
 });
 test("current migration inventory and story configuration satisfy the explicit policy", () =>
   assert.deepEqual(checkPolicy(), []));
+
+
+test("reviewed briefing maintenance preserves the entire original frozen regression", () => {
+  const entry = JSON.parse(readFileSync("docs/testing/legacy-browser-tests.json", "utf8"))["briefing.spec.ts"].transportMaintenance;
+  assert.equal(entry.kind, "exact-transport-interception-maintenance");
+  let source = readFileSync("tests/browser/briefing.spec.ts", "utf8");
+  for (const edit of [...entry.edits].reverse()) {
+    assert.equal(source.slice(edit.start, edit.end), edit.after);
+    source = source.slice(0, edit.start) + edit.before + source.slice(edit.end);
+  }
+  assert.equal(createHash("sha256").update(source).digest("hex"), "9a5c339d61a7e9629a2d59b4a76fb5e2df146cee82977be76318e4e0e107e6e4");
+  assert.match(readFileSync(entry.review, "utf8"), /managed-key mode/);
+});

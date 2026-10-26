@@ -252,3 +252,9 @@ Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | H
 Prompt 51 | 1e18c671942bb6d6ffddc1f455f37812b4bfd4473afa023474a81b0e3242a1d7 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 56 | 37be29bdb6612d4c59db27f7eb777cd5248bde5064e9477327a079bfb36ebc16 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Record exact reviewed transport maintenance with whole-original-test reversal proof and unchanged policy guards
+
+Prompt 51 | 1e18c671942bb6d6ffddc1f455f37812b4bfd4473afa023474a81b0e3242a1d7 | Carry the reviewed PR45 transport maintenance inventory and exact reversal proof into PR46; product and baseline sources remain unchanged.
+
+Prompt 56 | 37be29bdb6612d4c59db27f7eb777cd5248bde5064e9477327a079bfb36ebc16 | Carry PR46 reviewed transport maintenance into PR47 with original-test reversal proof and unchanged child gallery coverage.
