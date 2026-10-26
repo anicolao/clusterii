@@ -519,3 +519,5 @@ Prompt 169 | 9b5698f4be82eab608c463aca9cad83dfb25952e99ec02da5460c12674e43008 | 
 Prompt 170 | c00fdb5fe4664b39520192f25dd099d0559037e5aa5148b26c94b77f57f67698 | Retain first strict failure and supply omitted exact renderer manifests; verify every approved PNG and required manifest without changing pixels.
 
 Prompt 171 | 43530e2d692f1d6342cfc4ab7edce1f331222b7f76090b2e2d4345d65d59474e | Preserve large pre-comparison failure and corrected request preflight evidence while original CI cleanup finishes.
+
+Prompt 171 | 43530e2d692f1d6342cfc4ab7edce1f331222b7f76090b2e2d4345d65d59474e | Retain all four terminal missing-renderer failures and remote artifact metadata before the single corrected strict dispatch.
