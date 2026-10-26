@@ -15,3 +15,5 @@ PR69 remains unchanged at `04292769c141d338e03c46c4f310801b4f86d385`. Current ha
 Earlier PR42/44/45/49/50 historical identity failures remain full-stack backlog per supervisor meta; matching pixel counts do not establish causes or authorize unseen references. PR71 source-only audit is recorded in main meta, with no execution or image approval implied.
 
 Unchanged verify-pages completed successfully for exact69 source/build04292769: entry, diagnostics, gallery, animation lab and26 static asset references. This is hosted identity/assets evidence, not visual certification.
+
+Immutable executor: `d03b6ffd3a6e4c15c1eacdcca8024262e9de2708` on `investigate/pr70-arrival-candidates`. Proposed request retained only in docs as `PROPOSED_REQUEST.json`, SHA256 `7953ca9fd0b6a1b5b09045949eb1c786b00b8d606fca637e7869848c965f2ed9`. The live trigger path remains absent. After independent audit, a fresh request-only commit must directly descend from this executor and bind it as sourceCommit. This separate audit branch cannot trigger execution. No new CI run has been requested.
