@@ -2309,3 +2309,39 @@ Reviewer: Independently verified retained corrected69 desktop12620275117 andshor
 Delegated reviewer instruction; refer to main meta independent PR70 focus diagnostic inspection.
 
 Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; read all observations and visually inspected peer032: ring now visible. Both players maintain document focus, opener focus, focus-visible and3pxsolidgold outline afterEscape throughPNG. This is a negative reproduction of original missing ring, not proof of a specific modality cause or app repair. No more diagnostic runs needed now. After priority68 fix dispatch, strengthen normal70 final-step per-view verification at capture time for focused opener plus focus-visible/computed visible outline, using existing focus audit conventions; do not force focus/classes or add sleeps. Remove diagnostic-only instrumentation from acceptance target, regenerate normal phone journey and inspect any changed pixels (expected peer032 ring), then complete160strict. Desktop/short/large reviewed visuals remain valid only where bytes unchanged. Diagnostic image visually acceptable as intended state but do not silently import diagnostic provenance as normal acceptance. Record exact original/diagnostic hashes and unresolved causal limitation. No blanket CSS change or merge.
+
+
+## Prompt 184: Synchronize real initialization
+
+Delegated reviewer instruction; refer to main meta independent PR69 trace/server correlation and bounded readiness repair.
+
+Reviewer: Independently correlated owner trace wallTime1792976528403/monotonic1179062.569 with reload campaignSecurity1196007.437: approximately01:02:25.348Z, matching full application log lines4714-4716 start01:02:25.3504774Z finish01:02:34.9637858Z duration9612.468729ms. Source recover() awaits encryptionAvailable before recoverOrder/select. This supports explicit bounded campaign-readiness synchronization before the unchanged five-second panel/data/retransmission assertions; it does not justify blanket timeout increases or claim specific internal slow operation. Proceed targeted readiness repair under existing test-policy constraints, retaining identity/envelope/revision/receipt/privacy assertions and real service. Validate focused reload recovery then required CI; no fake readiness or skipped recovery. Record this independent evidence and latest mainmeta in normal audit.
+
+
+
+## Prompt 185: Preserve candidate ownership
+
+Delegated reviewer instruction; refer to main meta PR68 artifact ownership and independent PR69 readiness repair review.
+
+Reviewer: PR68 desktop and phone candidate jobs succeeded. Supervisor owns downloading/inspecting artifacts12621864493 and12622745908 under /tmp/cluster-pr68-overdue-review; do not duplicate these downloads. Continue69 readiness repair; reviewed current diff explicitly awaits genuine campaignSecurity POST200 boolean capability then retains five-second panel/data assertions, consistent with measured delay. Large/short still executing. Normal70 still executing.
+
+
+
+## Prompt 186: Retain route candidates
+
+Delegated reviewer instruction; refer to main meta independent PR68 desktop/phone complete image comparison.
+
+Reviewer: PR68 desktop/phone independently verified complete ZIP SHA256+CRC, provenance/outcome40views each. Compared all80PNG bytes against bf0ea547 Git:78identical, only step026 changed in each viewport. Viewed both previous/candidate pairs; intended overdue status and enabled Check route order, map/destination unchanged, footer readable (phone wraps/grows within viewport). Approve exactly these two changed candidates as regression baselines; record /tmp/cluster-pr68-overdue-review/reviewer-desktop-phone-approval.json and comparison inventory. No blanket approval of pending large/short. Keep originals, import exact approved bytes with proper renderer provenance after remaining review, then strict/full checks. Mainmeta latest review also ready for normal audit.
+
+
+## Prompt 187: Integrate reviewed captures
+
+Delegated reviewer instruction; refer to main meta independent normal70 phone approval and PR69 policy validation.
+
+Reviewer: Normal70 phone artifact12621959721 independently size/SHA256/CRC verified, exact target8b522244/executor0bb2377b provenance and40views passed. All40 compared to original phone ZIP:39byte-identical; onlypeer032 changed. Independently viewed peer032: complete visible gold Arrival reports opener ring, no clipping/new content defect. Approve normal phone candidates per /tmp/cluster-pr70-normal-focus-review/reviewer-phone-approval.json; phone visual hold closed. Preserve normal provenance, not diagnostic provenance. Incorporate scoped69 repair and reviewed68 repair as appropriate without losing stacked ancestry; import exact approved48new images/renderer records and perform full160strict before70 publication. Prior desktop/short/large approvals remain byte-bound. No more phone diagnostics. Independently reviewed063f41a3 policy exact-reversal check retains original regression assertions and focused log1pass23.8s.
+
+## Prompt 188: Preserve short ownership
+
+Delegated reviewer instruction; refer to main meta PR68 short artifact ownership.
+
+Reviewer: Supervisor owns newly completed PR68 short artifact12622377545 inspection in /tmp/cluster-pr68-overdue-review; do not duplicate download. Large remains active.

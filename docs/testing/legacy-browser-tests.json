@@ -24,14 +24,21 @@
     "status": "Procedural regression; illustrated migration incomplete"
   },
   "credit-offers.spec.ts": {
-    "sha256": "b53b2b5b41598c94f5a9c2ea879d57d730a9d16182e86a326906e11f02c8a6e3",
-    "status": "Retained procedural mock/managed-key regression; exact pending-button maintenance exception, illustrated migration remains incomplete",
+    "sha256": "55c198e01e1b44026115e8d688b2c70d6553567b62bc32257721c496029b5d25",
+    "status": "Retained procedural mock/managed-key regression; exact pending-button maintenance exception, illustrated migration remains incomplete; explicit bounded real initialization readiness maintenance",
     "maintenance": {
       "kind": "exact-accessible-name-only",
       "previousSha256": "17a239784195f389ce144229cf2d4d9da3fe3535edc8d4912909761097f21292",
       "from": "name: \"Awaiting acknowledgement\u2026\"",
       "to": "name: \"Awaiting receipt\"",
       "review": "docs/testing/pr54-pending-locator/POLICY_MAINTENANCE.md"
+    },
+    "readinessMaintenance": {
+      "kind": "exact-real-initialization-readiness",
+      "previousSha256": "b53b2b5b41598c94f5a9c2ea879d57d730a9d16182e86a326906e11f02c8a6e3",
+      "from": "      await page.reload();\n      await expect(panel).toBeVisible();",
+      "to": "      const initialization = page.waitForResponse(\n        (response) =>\n          new URL(response.url()).pathname ===\n            \"/demo-clusterii/us-central1/campaignSecurity\" &&\n          response.request().method() === \"POST\",\n        { timeout: 30000 },\n      );\n      await page.reload();\n      const security = await initialization;\n      expect(security.status()).toBe(200);\n      expect(typeof (await security.json()).result.realAvailable).toBe(\n        \"boolean\",\n      );\n      await expect(panel).toBeVisible();",
+      "review": "docs/testing/pr69-initialization-readiness/MAINTENANCE.md"
     }
   },
   "fleet-cancellation.spec.ts": {
