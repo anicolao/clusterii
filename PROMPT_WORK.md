@@ -865,3 +865,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record seven individually inspected desktop and short construction parent-head pairs with exact hash provenance.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect five short settlement and recovery-focus pairs; narrow outline discrepancy to unproven phone case.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect desktop recovery pending, completion, cancellation and settled-state visual pairs with exact provenance.
