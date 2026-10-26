@@ -600,3 +600,5 @@ Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | 
 Prompt 237 | e12010073d4fa510a639a725ddec71a69d13bcf9ed2ec4c161fb73f4cecdd4cd | Carry published PR73 reviewed168 references into PR74 while preserving both continuation histories and source.
 
 Prompt 237 | e12010073d4fa510a639a725ddec71a69d13bcf9ed2ec4c161fb73f4cecdd4cd | Prepare one immutable PR74 acknowledgement candidate journey with50 captures per viewport and168 reviewed parent images.
+
+Prompt 237 | e12010073d4fa510a639a725ddec71a69d13bcf9ed2ec4c161fb73f4cecdd4cd | Request one immutable PR74 acknowledgement200 candidate run preserving168 reviewed inherited images.
