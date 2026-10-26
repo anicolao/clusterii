@@ -2693,3 +2693,10 @@ Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md 
 Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle. Continue next concrete IMPLEMENTATION_PLAN gap in a small successor based on #72, preserving user-story TestStepHelper and authoritative privacy/recovery/concurrency evidence. New #69 verify job119679444037 log /tmp/cluster69-0429-failure.log has phone1066/259/273-pixel mismatches plus short1994 identity recurrence and missing Linux baselines; classify actual affected frames before assuming inherited causes or promoting anything. Keep one explicit #70 generation run, no duplicates. Carry checkpoint into attributed committed/pushed logs. #70 original mismatch and independent visual/hosted gates remain open; no merge.
 
 
+
+
+## Prompt 230: Retain desktop approval
+
+Delegated reviewer instruction; refer to latest main meta scoped PR72 desktop approval and immutable PR73 source/reference audit.
+
+Reviewer: PR72 desktop candidate40264675463 all nine new captures individually inspected and approved for regression references; 25 inherited byte-identical. Exact hashes and bounded-history clipping/existing design-gap notes in /tmp/cluster-pr72-candidate-review/reviewer-desktop-approval.json. Remaining phone/large/short review pending; do not promote partial set or duplicate downloads. Independently verified immutable PR73 335ad6c5 entire story matches original17250d57 after five path replacements; all product and screenshot paths unchanged. Preserve approval and latest mainmeta in next normal audit commit/push. Keep existing live checks running; no merges.
