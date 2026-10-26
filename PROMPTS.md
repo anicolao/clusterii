@@ -2205,3 +2205,9 @@ Reviewer: Independently inspected PR68 expected/actual/diff: change is footer pe
 Delegated reviewer instruction; refer to main meta independent PR70 focus diagnostic inspection.
 
 Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; read all observations and visually inspected peer032: ring now visible. Both players maintain document focus, opener focus, focus-visible and3pxsolidgold outline afterEscape throughPNG. This is a negative reproduction of original missing ring, not proof of a specific modality cause or app repair. No more diagnostic runs needed now. After priority68 fix dispatch, strengthen normal70 final-step per-view verification at capture time for focused opener plus focus-visible/computed visible outline, using existing focus audit conventions; do not force focus/classes or add sleeps. Remove diagnostic-only instrumentation from acceptance target, regenerate normal phone journey and inspect any changed pixels (expected peer032 ring), then complete160strict. Desktop/short/large reviewed visuals remain valid only where bytes unchanged. Diagnostic image visually acceptable as intended state but do not silently import diagnostic provenance as normal acceptance. Record exact original/diagnostic hashes and unresolved causal limitation. No blanket CSS change or merge.
+
+## Prompt 169: Preserve application failure
+
+Delegated reviewer instruction; refer to main meta PR69 application failure and supervisor-owned selective extraction.
+
+Reviewer: PR69 application40250051360/job121339770982 nowFAILURE: credit-offers.spec.ts178 panel missing afterreload,5second toBeVisible timeout;35passed1failed3skipped. Supervisor owns selective extraction/inspection artifact12621184864 into /tmp/cluster-pr69-application-review; do not duplicate. Continue68patch priority while I inspect69 context/trace. No rerun or timeout increase yet; story69 stilllive.
