@@ -199,3 +199,5 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | P
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Backport inspected PR52 whole-pixel identity leading and established Nix CI to PR42 without changing references.
 
 Prompt 48 | 0cdd8804dd565c8bd5d2adba0cefbdc64ccd99f4d5fd883ea1f1339ecb5b2b06 | Integrate reviewed PR42 correction into PR43 preserving both exact archived histories and original child features.
+
+Prompt 49 | b00b65eecf6c9de93da4c244254e9e45aa5d1b8b7f22d0e2330283ea41e2fcd2 | Integrate the complete reviewed PR42 identity painting correction into PR43 without changing child gameplay or assertions.
