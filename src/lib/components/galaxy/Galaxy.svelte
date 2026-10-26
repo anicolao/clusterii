@@ -1484,6 +1484,15 @@
     outline: 2px solid #91dcec;
     outline-offset: -2px;
   }
+  .construction-panel[aria-label="System construction panel"]:focus-visible::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 2px solid #91dcec;
+    pointer-events: none;
+  }
   @media (min-width: 2500px) {
     .construction-panel {
       top: 90px;
