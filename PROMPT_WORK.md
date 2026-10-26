@@ -551,3 +551,5 @@ Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Request one immutable short Linux telemetry journey to diagnose the retained PR70 stellar-core mismatch.
 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Prepare three isolated strict stellar diagnostic samples without changing source, references or renderer; passing samples are not a fix.
+
+Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Request the three bounded PR70 short-viewport telemetry samples to capture an intermittent failing frame; no acceptance rerun.
