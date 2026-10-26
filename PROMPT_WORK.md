@@ -515,3 +515,5 @@ Prompt 169 | 9b5698f4be82eab608c463aca9cad83dfb25952e99ec02da5460c12674e43008 | 
 Prompt 169 | 9b5698f4be82eab608c463aca9cad83dfb25952e99ec02da5460c12674e43008 | Import only76 independently inspected Linux contact PNGs with exact hashes and renderer provenance, retaining all inherited references.
 
 Prompt 169 | 9b5698f4be82eab608c463aca9cad83dfb25952e99ec02da5460c12674e43008 | Record exact inherited-reference and parent checks, hosted68 identity, and the single guarded contact strict run40246963988.
+
+Prompt 170 | c00fdb5fe4664b39520192f25dd099d0559037e5aa5148b26c94b77f57f67698 | Retain first strict failure and supply omitted exact renderer manifests; verify every approved PNG and required manifest without changing pixels.
