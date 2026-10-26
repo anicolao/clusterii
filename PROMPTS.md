@@ -2316,3 +2316,10 @@ Reviewer: Independently audited52856f40 reconciliation: no executable/reference 
 Delegated reviewer instruction; refer to latest supervisor main meta disk recovery and PR66 green checkpoint.
 
 Reviewer: Disk recovery in progress by supervisor, without modifying your checkout: I will verify extracted PR69 candidate test-results and PR67 strict viewport test-results against their retained original ZIP entries, then remove only byte-identical extracted duplicate files. Originals, approval records and metadata remain. Please avoid those old extracted copies during this cleanup; current70 source/request preparation can continue. PR66 now all required checks green, independently read four42-pass cohorts. PR69 hosted04292769 identity/26assets independently passed. No need to rerun these.
+
+
+## Prompt 185: Retain cleanup provenance
+
+Delegated reviewer instruction; refer to latest supervisor main meta verified duplicate extraction recovery.
+
+Reviewer: Cleanup complete: removed493 extracted duplicate files,355943732bytes, only after exact equality to CRC-checked retained ZIP entries. Originals/approval records/unmatched files preserved. Reconstruction inventories are reviewer-extracted-duplicate-cleanup.json in /tmp/cluster-pr69-linux-candidates, /tmp/cluster-pr67-strict-complete and /tmp/cluster-pr67-home-linux (included old originals extraction to restore reserve). Free2667316KiB now above2559296reserve. Source checkout untouched. Carry cleanup provenance in next normal logs commit; continue immutable70 request audit.
