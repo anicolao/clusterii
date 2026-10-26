@@ -11,15 +11,22 @@
     "pushed": true,
     "requiredChecks": "new verification required; no green claim",
     "publicationRun": 40259532297,
-    "publication": "verifying exact served revision and assets; no failure at latest review",
+    "publication": "success",
     "requiredApplicationRun": 40259532340,
-    "requiredStoriesRun": 40259532332
+    "requiredStoriesRun": 40259532332,
+    "publicationCompletedAt": "2026-10-26T02:37:08Z",
+    "hostedExactRevisionAndAssets": "passed"
   },
   "pr70": {
     "preparedHead": "058c3a6ce6449fc1f7d9a731bcb5da2b64727781",
     "isolatedStrictRun": 40256911000,
     "isolatedStrict": "160 exact passed and independently verified",
-    "activePublication": "awaiting serialized PR69 publication boundary"
+    "activePublication": "published; required checks running",
+    "head": "058c3a6ce6449fc1f7d9a731bcb5da2b64727781",
+    "applicationRun": 40260334280,
+    "storiesRun": 40260334215,
+    "documentationRun": 40260335014,
+    "publicationRun": 40260334253
   },
   "noGitHubMerges": true,
   "noDuplicateIsolatedRuns": true
