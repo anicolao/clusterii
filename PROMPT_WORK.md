@@ -873,3 +873,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Reconcile remaining visual inventory to38 and inspect three additional desktop parent-head pairs.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect seven remaining desktop recovery comparisons and reconcile uninspected inventory to31.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Correct recovery focus diagnostic to assert the actual named dialog, not its inner content region.

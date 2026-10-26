@@ -512,10 +512,14 @@ for (const interrupted of [false, true])
             spec: "The construction panel returns with the original training camp selected and pending commitment disabled.",
             check: async () => {
               await expect(panel(owner)).toBeVisible();
-              await expect(panel(owner)).toBeFocused();
+              const recoveredDialog = owner.getByRole("dialog", {
+                name: "System construction panel",
+                exact: true,
+              });
+              await expect(recoveredDialog).toBeFocused();
               await info.attach("recovered-construction-focus", {
                 body: JSON.stringify(
-                  await panel(owner).evaluate((element) => {
+                  await recoveredDialog.evaluate((element) => {
                     const style = getComputedStyle(element);
                     return {
                       focused: document.activeElement === element,
