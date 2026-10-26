@@ -12,6 +12,9 @@ import {
   scheduledAt,
 } from "../../browser/story-helpers/admission-clock.mjs";
 import { fleetStoryPrefix } from "../../browser/story-helpers/fleet-clock.mjs";
+import { installRouteContactEntropy } from "../../browser/story-helpers/route-contact-entropy.mjs";
+import { contactInputs } from "../../browser/story-helpers/contact-inputs.mjs";
+import { fleetContactView } from "../../../shared/fleet-contacts";
 const button = (p: Page, name: string) =>
   p.getByRole("button", { name, exact: true });
 const panel = (p: Page) =>
@@ -53,7 +56,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
     title: "Plot, recover and follow an authoritative fleet arrival",
     inventory: ["UX-08", "UX-09", "UX-14", "UX-16"],
     description:
-      "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.",
+      "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks and semantic fleet-scan entropy identities are explicit harness controls; no scan outcome is injected. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.",
   });
   const contexts: BrowserContext[] = [],
     pages: Page[] = [],
@@ -67,6 +70,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       player: aliases[i],
       surface: "game" as const,
     }));
+  const entropy = installRouteContactEntropy();
   const require = createRequire(
     new URL("../../../functions/package.json", import.meta.url),
   );
@@ -76,7 +80,13 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
   const db = require("firebase-admin/firestore").getFirestore();
   const { provider, unwrap } = require("./lib/shared/crypto.js"),
     { context } = require("./lib/functions/src/campaigns.js"),
-    { settleCampaignTicks } = require("./lib/functions/src/production.js");
+    { observationDraw } = require("./lib/functions/src/observation-random.js"),
+    { settleCampaignTicks } = await import(
+      new URL(
+        "../../../functions/lib/functions/src/production.js?illustrated-fleet-route",
+        import.meta.url,
+      ).href
+    );
   const canonical = async (): Promise<Campaign> => {
     const h = await db.doc(`campaignStates/${id}`).get();
     return provider("mock").open(
@@ -96,6 +106,43 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       await unwrap(h.get("grant"), key.get("kek"), uid, ctx, "mock"),
       ctx,
     );
+  };
+  const verifyContacts = async (before: Campaign, after: Campaign) => {
+    const targets = Object.values(after.military?.fleets ?? {}).sort((a, b) =>
+      a.id.localeCompare(b.id),
+    );
+    const tick = after.economy!.tick;
+    expect(after.fleetScans?.tick).toBe(tick);
+    const evidence = [];
+    for (const [seat, { uid }] of after.seats.entries()) {
+      const draws = targets.map((f) =>
+        f.uid === uid
+          ? null
+          : observationDraw(
+              ...contactInputs(before, after, id, uid, `fleet:${f.id}`, tick),
+            ),
+      );
+      expect(after.fleetScans!.draws[uid]).toEqual(draws);
+      const view = await published(seat);
+      expect(view.fleetContacts).toEqual(fleetContactView(after, uid));
+      expect(view).not.toHaveProperty("fleetScans");
+      expect(view).not.toHaveProperty("seed");
+      evidence.push({
+        seat,
+        draws,
+        contacts: (view.fleetContacts ?? []).map(
+          ({ id: _id, ...facts }: { id: string }) => facts,
+        ),
+      });
+    }
+    await info.attach(`authoritative-contact-inputs-tick-${tick}`, {
+      body: JSON.stringify(
+        { domain: "illustrated-fleet-route", tick, evidence },
+        null,
+        2,
+      ),
+      contentType: "application/json",
+    });
   };
   const checks = () => [
     {
@@ -390,6 +437,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         for (const p of pages) await p.clock.setFixedTime(next);
         expect(await settleCampaignTicks(id, () => next)).toBe(1);
         formed = await canonical();
+        await verifyContacts(reserved!, formed);
         expect(await settleCampaignTicks(id, () => next)).toBe(0);
         expect(await canonical()).toEqual(formed);
       },
@@ -746,9 +794,11 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
     let productionFighters = 0,
       productionInfantry = 0;
     const tick = async (next: number) => {
+      const before = await canonical();
       for (const p of pages) await p.clock.setFixedTime(next);
       expect(await settleCampaignTicks(id, () => next)).toBe(1);
       const s = await canonical();
+      await verifyContacts(before, s);
       productionFighters += s.economy!.ledger[uid].fighters;
       productionInfantry += s.economy!.ledger[uid].infantry;
       expect(await settleCampaignTicks(id, () => next)).toBe(0);
@@ -1262,6 +1312,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       })),
     });
   } finally {
+    entropy.deregister();
     for (const c of contexts) await c.close();
   }
 });
