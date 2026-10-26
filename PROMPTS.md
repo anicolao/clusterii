@@ -426,11 +426,31 @@ Delegated instruction from the reviewer, referring to meta-prompts.md “Reviewe
 
 Reviewer CI finding at 09:38 Toronto: #30 aac1d04 and #31 19e896c are now green. #32 46307c6 run39599629028 and #33 8a9ae26 run39600113448 fail history.spec.ts:20 in all four viewports: focusing Saved campaign records then Shift+Tab no longer focuses Return to galaxy. Logs retained /tmp/cluster32-review-failure.log and /tmp/cluster33-review-failure.log. Diagnose actual keyboard order after briefing changes, distinguish stale expected order from accessibility regression, preserve meaningful keyboard/focus/containment assertions, and propagate the appropriate fix through the stack. Do not simply drop the check or raise timeout. If changing legacy specs on the story branch, honor the new migration policy rather than silently refreshing exceptions. Record attributed instruction and continuation, carry latest meta-prompts, commit/push without merge. Entry/identity local exact comparison is useful progress, but Linux and independent full visual acceptance remain pending.
 
+## Prompt 45: Preview revision
 
-## Prompt 45: Reviewer identity backport
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 14:48 Toronto”.
+
+Reviewer finding 2026-10-21 14:48 Toronto: #43 publication run39652784195/job119406158620 failed hosted-revision verification: expected4cfaebf but observed source/build a9951bd. Log retained /tmp/cluster43-publish-review-failure.log. Coordinate a publication retry after the shared Pages queue clears, then verify the exact current head before claiming preview readiness. Preserve the revision assertion. Log this reviewer-attributed handoff in PROMPTS.md and continuations per AGENTS.md; carry latest meta-prompts checkpoint. No merge.
+
+## Prompt 46: Roster comparison
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 15:08 Toronto”.
+
+Reviewer finding 2026-10-21 15:08 Toronto: #43 job119405166506 now fails two snapshots with70 passing26.1min. In addition to known1994-pixel short session fresh-sign-in text difference, desktop campaign-scheduled-start/026-started-rosters-1-dawn-envoy-1.png differs5688 pixels. Retained log /tmp/cluster43-repeat-review-failure.log. Inspect and retain the distinct roster actual/expected/diff before deciding whether it shares the text cause; do not regenerate baselines or relax comparison to pass. #43 publication retry now succeeded. Log this reviewer-attributed finding and carry checkpoint; no merge.
+
+## Prompt 47: Preview retries
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 15:38 Toronto”.
+
+Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed expected d3e34c4 versus hosted4cfaebf; #46 publish39660570655 failed revision fetch with ECONNRESET. Logs retained /tmp/cluster43-publish-latest-review.log and /tmp/cluster46-publish-latest-review.log. Coordinate retries after shared publication queue clears and retain exact-head checks; do not describe current previews as verified until those checks pass. Log reviewer attribution/continuation and carry latest checkpoint. No merge.
+
+
+## Prompt 48: Reviewer identity backport
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR42, preserve all existing reference images, and reuse the established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 identity diagnosis and scoped backport" for human request context and evidence. Run required checks; do not merge PRs.
 
-## Prompt 46: Reviewer layer backport
+
+## Prompt 49: Reviewer layer backport
 
 Reviewer instruction: Backport the complete previously independently reviewed PR53 identity painting correction and exact approved short Linux references to PR42. See meta-prompts.md "Supervisor complete PR53 layer backport to PR42". Preserve other product behavior, references and strict assertions; verify required CI and do not merge PRs.
+
