@@ -2337,3 +2337,24 @@ Reviewer: Independent immutable audit PASSED for PR70 executord03b6ffd3a6e4c15c1
 Delegated reviewer instruction; refer to main meta next residual preparation while PR70 runs.
 
 Reviewer: PR70 sole run40250936534 confirmed at exact3949145c: phone121342446563/desktop121342446636 live checkout, short121342446440/large121342446590 queued. Preserve these handles; no duplicate. While this runs, prepare source-only PR71 residual audit from originalb590be6a atop70417bb622 against reviewed70target52856f40, in a separate preparation branch. Prioritize70 terminal result/artifact retention and67–69 failures immediately. I read71 selected-history.story.spec.ts delta: removal confirmation, canonical revision+1, private post-removal message revision+2, former-member/outsider exclusion, retained-history reload/Escape. Projection checks are not unauthorized-read denial; focusEnter/preference parity are not fullTab/animation proof. Preserve original71historical records and existing stronger parent helpers. Inspect actual Pantheon tests/e2e plus applicable docs before scoped numbered-feature migration assessment; do not claim flat browser layout compliant. Produce exact residual/path/reference mapping and complete candidate scope; no71 generation or image import until immutable review and70parent reconciliation. Do not copy historicalDarwin candidates. Record latest mainmeta and attributed logs/continuations in next normal pushed audit commit. No GitHub merges.
+
+
+## Prompt 188: Migrate selected history
+
+Delegated reviewer instruction; refer to latest main meta reviewed71 migration authorization.
+
+Reviewer: Reviewed71 source-only audit/plan; independently verified all136 proposed mapped blobs against52856f40 and original selected-history spec417bb622 exactlyequals current70parent. Proceed scoped009-selected-history implementation on isolated preparation: original71 residual plus coherent feature/spec/screenshots/story layout, shared registry/narrative extension preserving008 and all180 test identities, exact136 inherited file moves and original budgets/assertions. Preserve original71 ancestry/prompt archives unchanged. Generalized narrative must reject mixed story IDs/spec provenance/view claims and retain four-size completeness for each story. No71 candidate run or image import before immutable code/request audit and updated70parent reconciliation.70 candidate results/retention and67–69 failures remain immediate priority. Keep sole70run intact; record latestmainmeta andpushlogs with normal commit. No GitHub merges.
+
+
+## Prompt 189: Independent story continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:49 Toronto”.
+
+Reviewer continuation 2026-10-22 03:49 Toronto: clean417bb62, idle, disk13GiB. Preserve #70 draft and unresolved original failure; two negative reproductions do not close it. Continue independent IMPLEMENTATION_PLAN work as a small successor instead of stopping on intermittent raster. Also close missing Linux evidence deliberately: inspect current-head generation status/label and arrange one explicit candidate-generation run using the existing baseline-candidates workflow gate, avoiding duplicate queued runs; document exact source and review generated artifacts separately before any promotion. Current #67 verify log /tmp/cluster67-0349-failure.log is available for scoped triage. Carry main checkpoint into attributed committed/pushed logs. Never relax pixels or merge; retain full visual/hosted gates.
+
+
+## Prompt 190: Preserve supervisory findings
+
+Delegated reviewer instruction; refer to current71 independent working migration audit and exact supervisory log preservation.
+
+Reviewer: Current71 working migration independently checked: all136 moved files hash to proposed parent blobs; migrated spec differs from originalb590be6a only import/createRequire paths. Read generalized story registry/narratives: per-story four-size source/claim validation retained, no comparison weakening found. Final committed collection/reference/source audit still pending. Logging requirement: main supervisory meta-prompts.md remains dirty at /Users/anicolao/projects/games/clusterii; summaries in audit documents are useful but do not preserve the exact findings/handoffs. At next normal71/audit commit preserve an exact timestamped snapshot of that main file with SHA256 provenance, or append its missing entries verbatim to canonical branch meta while retaining existing history; push it alongside normal work. Do not reset/overwrite supervisor working file or restart live69 CI for logging alone.70 candidate results remain priority; no extra execution gate.

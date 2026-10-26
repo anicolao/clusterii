@@ -19,7 +19,7 @@ The helper owns counters, filenames, assertions, captures and Markdown links. Di
 
 ## Files and generated evidence
 
-- `tests/e2e/<NNN-feature>/*.spec.ts`: required numbered feature organization. Feature008 fleet travel is the scoped migration; feature README/FIDELITY index generated stories/<story>/README.md and reviewed screenshots/<story>/<viewport>/<platform>/. Remaining `tests/browser/*.story.spec.ts` are historical unmigrated journeys, not layout compliance.
+- `tests/e2e/<NNN-feature>/*.spec.ts`: required numbered feature organization. Features008 fleet travel and009 selected history are scoped migrations; feature README/FIDELITY index generated stories/<story>/README.md and reviewed screenshots/<story>/<viewport>/<platform>/. Remaining `tests/browser/*.story.spec.ts` are historical unmigrated journeys, not layout compliance.
 - `tests/e2e/helpers/`: single authoritative step helper and fixture, plus feature path ownership. Historical story-helper imports re-export those implementations; readiness/layout utility modules are shared without forks.
 - `tests/recovery-store.test.ts`: isolated production IndexedDB integration (`bun run test:browser-storage`); this preserves storage semantics without presenting a non-player harness as an illustrated journey.
 - `tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/<viewport>/<platform>/`: migrated reviewed PNGs and renderer manifests. Other stories retain exact historical `tests/browser/story-baselines/<story>/<viewport>/<platform>/` paths.

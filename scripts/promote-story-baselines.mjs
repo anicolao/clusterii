@@ -14,7 +14,7 @@ import {
   baselineDirectory,
   archiveDirectory,
 } from "../tests/e2e/helpers/story-paths.mjs";
-import { featureNarrative } from "../tests/e2e/helpers/feature-narrative.mjs";
+import { featureNarratives } from "../tests/e2e/helpers/feature-narrative.mjs";
 const args = process.argv.slice(2),
   value = (name) => {
     const i = args.indexOf(name);
@@ -47,7 +47,7 @@ const featureStories = files
       s.status === "passed" &&
       s.mode === (archive ? "verify" : "generate"),
   );
-if (archive && featureStories.length) featureNarrative(featureStories);
+const narratives = archive ? featureNarratives(featureStories) : [];
 let count = 0;
 for (const file of files) {
   const story = JSON.parse(readFileSync(file, "utf8"));
@@ -141,14 +141,10 @@ for (const file of files) {
   );
   count++;
 }
-if (archive && featureStories.length) {
-  const directory = resolve(
-    featureRoot(featureStories[0].id),
-    "stories",
-    featureStories[0].id,
-  );
+for (const {id, narrative} of narratives) {
+  const directory = resolve(featureRoot(id), "stories", id);
   mkdirSync(directory, { recursive: true });
-  writeFileSync(join(directory, "README.md"), featureNarrative(featureStories));
+  writeFileSync(join(directory, "README.md"), narrative);
 }
 if (!count)
   throw new Error(

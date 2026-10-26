@@ -1,8 +1,12 @@
 import { join, relative, sep } from "node:path";
+const features = Object.freeze({
+  "live-fleet-travel": { root: "tests/e2e/008-fleet-travel", spec: "fleet-travel.spec.ts" },
+  "selected-history-consent": { root: "tests/e2e/009-selected-history", spec: "selected-history.spec.ts" },
+});
 /** @param {string} id */
-export function featureRoot(id) {
-  return id === "live-fleet-travel" ? "tests/e2e/008-fleet-travel" : undefined;
-}
+export function featureRoot(id) { return features[id]?.root; }
+/** @param {string} id */
+export function featureSpec(id) { const feature = features[id]; return feature ? join(feature.root, feature.spec) : undefined; }
 /** @param {string} id @param {string} project @param {string} platform */
 export function baselineDirectory(id, project, platform) {
   const feature = featureRoot(id);
@@ -14,7 +18,9 @@ export function baselineDirectory(id, project, platform) {
 export function outputDirectory(id, project, platform) {
   return featureRoot(id)
     ? join(
-        "test-results/stories/008-fleet-travel/stories",
+        "test-results/stories",
+        featureRoot(id).split("/").at(-1),
+        "stories",
         id,
         project,
         platform,

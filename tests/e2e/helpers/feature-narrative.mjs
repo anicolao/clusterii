@@ -1,6 +1,6 @@
 import { relative, join } from "node:path";
 import { isDeepStrictEqual } from "node:util";
-import { featureRoot, baselineDirectory } from "./story-paths.mjs";
+import { featureRoot, featureSpec, baselineDirectory } from "./story-paths.mjs";
 export function featureNarrative(stories) {
   const projects = ["phone", "desktop", "large", "short"];
   if (
@@ -11,7 +11,7 @@ export function featureNarrative(stories) {
         !projects.includes(s.project) ||
         s.status !== "passed" ||
         s.mode !== "verify" ||
-        s.id !== "live-fleet-travel",
+        !featureRoot(s.id) || s.id !== stories[0].id,
     )
   )
     throw Error(
@@ -23,7 +23,7 @@ export function featureNarrative(stories) {
       !source ||
       !/^[a-f0-9]{40}$/.test(source.commit) ||
       !/^[a-f0-9]{64}$/.test(source.specSha256) ||
-      source.spec !== "tests/e2e/008-fleet-travel/fleet-travel.spec.ts" ||
+      source.spec !== featureSpec(story.id) ||
       typeof source.dirty !== "boolean"
     )
       throw Error(
@@ -94,4 +94,15 @@ export function featureNarrative(stories) {
     }
   }
   return parts.filter(Boolean).join("\n\n") + "\n";
+}
+
+/** Validate every feature group before archive writes; never mix captions across stories. */
+export function featureNarratives(stories) {
+  const grouped = new Map();
+  for (const story of stories) {
+    if (!featureRoot(story.id)) throw Error("Unknown numbered feature story");
+    const group = grouped.get(story.id) ?? [];
+    group.push(story); grouped.set(story.id, group);
+  }
+  return [...grouped].map(([id, group]) => ({id, narrative: featureNarrative(group)}));
 }
