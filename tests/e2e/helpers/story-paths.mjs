@@ -1,4 +1,4 @@
-import { join } from "node:path";
+import { join, relative, sep } from "node:path";
 /** @param {string} id */
 export function featureRoot(id) {
   return id === "live-fleet-travel" ? "tests/e2e/008-fleet-travel" : undefined;
@@ -27,4 +27,12 @@ export function archiveDirectory(id, project, platform) {
   return feature
     ? join(feature, "stories", id, project, platform)
     : join("docs/testing/stories", id, project, platform);
+}
+
+/** @param {string} id @param {string} project @param {string} platform @param {string} image */
+export function storySnapshotName(id, project, platform, image) {
+  return [
+    ...relative("tests", baselineDirectory(id, project, platform)).split(sep),
+    image,
+  ];
 }

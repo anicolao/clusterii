@@ -17,11 +17,7 @@ import { createHash } from "node:crypto";
 import { release } from "node:os";
 import { execFileSync } from "node:child_process";
 import sharp from "sharp";
-import {
-  featureRoot,
-  baselineDirectory,
-  outputDirectory,
-} from "./story-paths.mjs";
+import { storySnapshotName, outputDirectory } from "./story-paths.mjs";
 import {
   pinnedRenderer,
   rendererArgs,
@@ -243,22 +239,13 @@ export class TestStepHelper {
               });
               const settings = renderer(page, this.info);
               this.story.renderer = settings;
-              const name = [
+              const name = storySnapshotName(
                 this.story.metadata.id,
                 this.info.project.name,
                 platform(),
                 stem,
-              ];
-              const baseline = featureRoot(this.story.metadata.id)
-                  ? resolve(
-                      baselineDirectory(
-                        this.story.metadata.id,
-                        this.info.project.name,
-                        platform(),
-                      ),
-                      stem,
-                    )
-                  : this.info.snapshotPath(...name),
+              );
+              const baseline = this.info.snapshotPath(...name),
                 manifest = join(dirname(baseline), "renderer.json");
               if (mode() === "verify") {
                 if (!existsSync(baseline) || !existsSync(manifest))

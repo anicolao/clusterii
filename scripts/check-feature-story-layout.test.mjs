@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
   featureRoot,
+  storySnapshotName,
   baselineDirectory,
   outputDirectory,
   archiveDirectory,
@@ -147,4 +148,28 @@ test("same step IDs cannot disguise mixed spec or changed acknowledgement/view c
   const allowed = four();
   allowed[1].steps[0].views[0].image = "028-other-viewport-name.png";
   assert.doesNotThrow(() => featureNarrative(allowed));
+});
+
+test("Playwright comparison and manual renderer preflight resolve the same exact baseline path", () => {
+  for (const id of ["live-fleet-travel", "commander-identity"])
+    for (const viewport of ["phone", "desktop", "large", "short"]) {
+      const name = storySnapshotName(
+        id,
+        viewport,
+        "linux-arm64",
+        "010-view.png",
+      );
+      assert.equal(
+        ["tests", ...name].join("/"),
+        baselineDirectory(id, viewport, "linux-arm64") + "/010-view.png",
+      );
+    }
+  const helper = readFileSync("tests/e2e/helpers/test-step-helper.ts", "utf8");
+  assert.match(helper, /const baseline = this.info.snapshotPath\(\.\.\.name\)/);
+  assert.match(helper, /toMatchSnapshot\(name,/);
+  assert.ok(
+    readFileSync("playwright.stories.config.ts", "utf8").includes(
+      "{testDir}/{arg}{ext}",
+    ),
+  );
 });

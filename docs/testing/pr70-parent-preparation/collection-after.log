@@ -43,7 +43,7 @@ Listing tests:
   [phone] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
   [phone] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
   [phone] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
-  [phone] › e2e/008-fleet-travel/fleet-travel.spec.ts:42:1 › Live fleet travel and arrival preserve private forces through recovery
+  [phone] › e2e/008-fleet-travel/fleet-travel.spec.ts:45:1 › Live fleet travel and arrival preserve private forces through recovery
   [desktop] › browser/campaign-navigation.story.spec.ts:50:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
   [desktop] › browser/campaign-navigation.story.spec.ts:406:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label
   [desktop] › browser/campaign-navigation.story.spec.ts:691:1 › A returning commander waits for authoritative identity readiness before Play
@@ -88,7 +88,7 @@ Listing tests:
   [desktop] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
   [desktop] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
   [desktop] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
-  [desktop] › e2e/008-fleet-travel/fleet-travel.spec.ts:42:1 › Live fleet travel and arrival preserve private forces through recovery
+  [desktop] › e2e/008-fleet-travel/fleet-travel.spec.ts:45:1 › Live fleet travel and arrival preserve private forces through recovery
   [large] › browser/campaign-navigation.story.spec.ts:50:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
   [large] › browser/campaign-navigation.story.spec.ts:406:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label
   [large] › browser/campaign-navigation.story.spec.ts:691:1 › A returning commander waits for authoritative identity readiness before Play
@@ -133,7 +133,7 @@ Listing tests:
   [large] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
   [large] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
   [large] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
-  [large] › e2e/008-fleet-travel/fleet-travel.spec.ts:42:1 › Live fleet travel and arrival preserve private forces through recovery
+  [large] › e2e/008-fleet-travel/fleet-travel.spec.ts:45:1 › Live fleet travel and arrival preserve private forces through recovery
   [short] › browser/campaign-navigation.story.spec.ts:50:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
   [short] › browser/campaign-navigation.story.spec.ts:406:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label
   [short] › browser/campaign-navigation.story.spec.ts:691:1 › A returning commander waits for authoritative identity readiness before Play
@@ -178,5 +178,5 @@ Listing tests:
   [short] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
   [short] › browser/session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
   [short] › browser/sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
-  [short] › e2e/008-fleet-travel/fleet-travel.spec.ts:42:1 › Live fleet travel and arrival preserve private forces through recovery
+  [short] › e2e/008-fleet-travel/fleet-travel.spec.ts:45:1 › Live fleet travel and arrival preserve private forces through recovery
 Total: 180 tests in 33 files
