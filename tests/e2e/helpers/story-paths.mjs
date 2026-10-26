@@ -1,4 +1,5 @@
-import { join, relative, sep } from "node:path";
+import { basename, join, relative, sep } from "node:path";
+/** @type {Readonly<Record<string, {root: string, spec: string} | undefined>>} */
 const features = Object.freeze({
   "live-fleet-travel": { root: "tests/e2e/008-fleet-travel", spec: "fleet-travel.spec.ts" },
   "selected-history-consent": { root: "tests/e2e/009-selected-history", spec: "selected-history.spec.ts" },
@@ -16,10 +17,11 @@ export function baselineDirectory(id, project, platform) {
 }
 /** @param {string} id @param {string} project @param {string} platform */
 export function outputDirectory(id, project, platform) {
-  return featureRoot(id)
+  const feature = featureRoot(id);
+  return feature
     ? join(
         "test-results/stories",
-        featureRoot(id).split("/").at(-1),
+        basename(feature),
         "stories",
         id,
         project,

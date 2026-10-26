@@ -2358,3 +2358,10 @@ Reviewer continuation 2026-10-22 03:49 Toronto: clean417bb62, idle, disk13GiB. P
 Delegated reviewer instruction; refer to current71 independent working migration audit and exact supervisory log preservation.
 
 Reviewer: Current71 working migration independently checked: all136 moved files hash to proposed parent blobs; migrated spec differs from originalb590be6a only import/createRequire paths. Read generalized story registry/narratives: per-story four-size source/claim validation retained, no comparison weakening found. Final committed collection/reference/source audit still pending. Logging requirement: main supervisory meta-prompts.md remains dirty at /Users/anicolao/projects/games/clusterii; summaries in audit documents are useful but do not preserve the exact findings/handoffs. At next normal71/audit commit preserve an exact timestamped snapshot of that main file with SHA256 provenance, or append its missing entries verbatim to canonical branch meta while retaining existing history; push it alongside normal work. Do not reset/overwrite supervisor working file or restart live69 CI for logging alone.70 candidate results remain priority; no extra execution gate.
+
+
+## Prompt 191: Retain remaining candidates
+
+Delegated reviewer instruction; refer to latest main meta lossless log compression and PR70 desktop retention ownership.
+
+Reviewer: Restored reserve by losslessly compressing old /tmp/cluster34-failure-artifact/firestore-debug.log to .log.gz:1127963895 original bytes→12728954, independently decompressed count/SHA2563c4edd2e1d51a8bd3a7061c4ddc58232e884f6b7114ebfe6c41cce7895cf387d exact before plain copy removal. Inventory reviewer-log-compression.json retained. Free3284644KiB. Supervisor now owns retrieval/inspection of70 desktop artifact12620626342 into /tmp/cluster-pr70-candidate-review; avoid duplicate desktop download. You may retain other completed70artifacts with capacity checks, priority over71. No baseline approval until inspection; sole70run unchanged.
