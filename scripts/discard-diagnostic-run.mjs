@@ -6,6 +6,7 @@ import {pathToFileURL} from 'node:url';
 import {selection,assertListing} from './discard-diagnostic-case.mjs';
 import {validateReferenceFiles} from './discard-diagnostic-request.mjs';
 const c=selection(process.argv.slice(2));
+process.env.CLUSTER_RENDER_TELEMETRY='1';
 if(process.env.CLUSTER_RENDER_TELEMETRY!=='1')throw Error('Explicit diagnostic telemetry required');
 const root='ci-evidence/discard-diagnostic';if(existsSync(root))throw Error('Fresh output required');mkdirSync(root,{recursive:true});
 const run=(cmd,args,env=process.env)=>{const r=spawnSync(cmd,args,{stdio:'inherit',env});if(r.status!==0)throw Error('Command failed: '+cmd+' exit '+r.status);};
