@@ -2615,29 +2615,72 @@ Delegated reviewer instruction; refer to latest main meta independent PR71 integ
 Reviewer PR71 integration review: independently diffed staged009-selected-history spec against originalb590be6a: only five relative import/package-path adjustments, all journey/assertion bodies unchanged. No staged product/shared/functions/dependency changes versus058c3a6c;008fleet feature unchanged. Reviewed feature registry/narrative generalization for separate registered stories and independently ran all6 scripts/check-feature-story-layout.test.mjs checks under establishedNix: PASS. This is source/layout evidence only, not candidate image approval or green71. Preserve this and latest mainmeta in next normal audit; continue current integration/candidate work without duplicate68–70runs.
 
 
-## Prompt 220: Promote reviewed history
+## Prompt 220: Prepare competing drafts
+
+Delegated reviewer instruction; refer to latest main meta PR72 preparation handoff while sole PR71 candidate and predecessor checks remain live.
+
+Reviewer continuation:71 candidate40261212475 and68–70required checks remain live; no restarts or duplicate candidates. While waiting, prepare scoped existingPR72 (5655ca32, competing private drafts) source/layout integration on a separate preparation branch based on reviewed71 integration454d4185, preserving PR71 history and all references. Inspect actual source delta and carry selected-history into009 layout without altering original interaction/privacy/recovery assertions. Do not publish72 or generate its candidates before71 review/approved-parent carry-forward; this is independent preparation of existing stack work, not newfeatures. Preserve immutable71 candidate source/executor and leave its run untouched; return to terminalCI failures or71 artifacts when available. Log attributed work and latestmainmeta; no merge.
+
+
+## Prompt 221: Next player journey
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:09 Toronto”.
+
+Reviewer continuation 2026-10-22 04:09 Toronto: #71 b590be6 attached, clean idle and queue empty. Continue the next concrete IMPLEMENTATION_PLAN gap as a small stacked successor based on #71; keep actual player interaction/actions/persistence/authorization and user-story TestStepHelper evidence. Select from the recorded remaining plan gaps without treating proposed rules as approvals; do not stop merely because Linux generation is queued. Preserve #70 draft unresolved raster and all independent visual/hosted gates. Follow the single explicit #70 candidate run when it produces evidence, no duplicate generation. Carry checkpoints through04:09 into attributed committed/pushed logs; no merge.
+
+
+## Prompt 222: Preserve candidate ownership
+
+Delegated reviewer instruction; refer to main meta PR71 phone/desktop artifact ownership and exact PR72 source comparison.
+
+Reviewer:71candidate40261212475 desktop/phone SUCCESS. Supervisor owns download/hash/CRC/comparison and visual review of desktop12624960472 and phone12624681983 under/tmp/cluster-pr71-candidate-review; do not duplicate retrieval or promote. Continue72source preparation and liveCI observation; large/short remain pending. My staged72 comparison previously showed only5relative imports and exact original production component; any formatting delta should be separately evidenced, not assertion weakening.
+
+
+## Prompt 223: Retain partial approval
+
+Delegated reviewer instruction; refer to latest main meta independent PR71 phone/desktop original verification and scoped visual approval.
+
+Reviewer:71desktop/phone artifacts12624960472/12624681983 fully size/SHA256/CRC verified, exact target454d4185/executor3f0a064e provenance,25views each passed generate exit0/referenceDiff0. Compared50PNGs:30inherited exact including phone017;20new visually inspected through14unique SHA representatives and approved for regression baselines per/tmp/cluster-pr71-candidate-review/reviewer-desktop-phone-approval.json. Removal confirmation, denied access, outsider privacy, retained history and keyboard focus are readable/contained. Existing 1 participants copy and concept10 cinematic composition gaps recorded; this is not full design-fidelity signoff. Large/short remain pending; supervisor owns remaining artifact retrieval/review, no duplicate downloads or extra candidate generation. Preserve originals/approval/latestmeta in next normal audit.
+
+
+## Prompt 224: Promote reviewed history
 
 Delegated reviewer instruction; refer to latest main meta complete PR71 four-size regression approval and strict-verification handoff.
 
 Reviewer: Completed PR71 run40261212475 visual review across all four viewports: 60 inherited captures byte-identical and 40 new captures approved after inspection via 28 exact-SHA representatives. Large/short provenance, outcome and image hashes verified; approvals at /tmp/cluster-pr71-candidate-review/reviewer-all-viewports-approval.json. Existing singular participant copy and concept composition gaps remain recorded; this is regression approval, not production design-fidelity signoff. Resume PR71 now: promote exactly these 40 PNGs plus required metadata/renderer records, preserve all inherited references, run complete 100-view strict verification before publishing. Do not generate new candidates or duplicate live PR68-70 checks. Carry approved parent forward into prepared PR72 only after PR71 verification. Log attributed handoff and continuations; commit/push approval evidence and lossless latest main meta snapshot. No merge.
 
 
-## Prompt 221: Retain strict audit
+
+
+## Prompt 225: Retain strict audit
 
 Delegated reviewer instruction; refer to latest main meta independent import/strict-executor audit and single-dispatch authorization.
 
 Reviewer: Independently verified committed f5cfe1b0 exact40 approved PNG hashes, only4 review metadata changes, no inherited PNG/renderer or product/story/runtime delta. Reviewed current strict case/request/runner/workflow and both launcher changes: bound target f5cfe1b0 and three reference trees, exact100 inventory/renderer checks, four original25-view journeys, verify only, no retries/snapshot updates, pinned Nix renderer, fresh output/ports/disk reserve. Independently ran all5 history-strict tests PASS. Proceed one immutable strict dispatch; no further approval round needed. Preserve latest mainmeta and exact all-viewports approval in pushed audit; prior mainmeta has originalPR73 source review for later use. No duplicate live68-70 runs or merges.
 
 
-## Prompt 222: Preserve strict ownership
+
+
+## Prompt 226: Preserve strict ownership
 
 Delegated reviewer instruction; refer to main meta PR71 strict phone/desktop success and supervisor-owned four-artifact audit.
 
 Reviewer: PR71 strict40262969648 phone/desktop SUCCESS; large/short live. Supervisor owns artifact retrieval and exact-output audit for all four under /tmp/cluster-pr71-strict-review; do not duplicate downloads. Preserve run, no regeneration. Publication remains gated on complete100 strict results. Mainmeta contains current68application success and later source reviews; retain next normal audit.
 
 
-## Prompt 223: Publish verified history
+
+
+## Prompt 227: Publish verified history
 
 Delegated reviewer instruction; refer to latest main meta complete100 strict artifact audit and existing PR71 publication/PR72 carry-forward authorization.
 
 Reviewer: PR71 strict40262969648 ALL FOUR SUCCESS. Independently verified original ZIP size/SHA256/CRC, exactbc19c059 executor/run/source provenance, verify/passed25/exit0/referenceDiff0 each, and all100 PNGs byte-exact approved hashes. Evidence /tmp/cluster-pr71-strict-review/all100-verified.json and per-viewport reports/originalZIPs. Complete reviewed strict gate satisfied. Proceed now to publish existing PR71 repair from f5cfe1b0 plus audit-only commits preserving exact published70 ancestry; check no product/tests/runtime/reference drift before push. Preserve all100 evidence and lossless latestmainmeta, attributed PROMPTS/continuations, then observe mandatory full PR checks. Carry exact published71 parent into preparedPR72 and continue its existing baseline review/repair; do not wait idle for whole-suite71 if independent72 preparation is safe. No duplicate runs, no merges. Regression verification is not full production design-fidelity signoff.
+
+
+
+
+## Prompt 228: Import reviewed drafts
+
+Delegated reviewer instruction; refer to latest main meta complete PR72 regression approval and strict verification handoff.
+
+Reviewer: PR72 complete136 candidate review APPROVED for regression import:100 inherited PNGs exact and all36new individually inspected across phone/desktop/large/short. Exact hashes/provenance and per-viewport notes in /tmp/cluster-pr72-candidate-review/reviewer-all-viewports-approval.json plus four reviewer approvals. Phone40267745100 executor356b8d51 sourcea5b2d36e verified same original product/story/runner/reference inputs; archive API size/SHA256/CRC valid, passed34 exit0 referenceDiff0. Import ONLY approved36 new refs plus review metadata on reviewed72 target4a826445; preserve all100inherited and no product/story/runtime drift. Commit/push attributed evidence/logs, then single bounded strict136 verification with snapshot updates forbidden and all four viewports. No regenerating accepted candidates, no premature whole-PR approval, no merges. Existing design gaps remain separately recorded, not production-fidelity signoff. Supervisor owns independent strict artifact review.
