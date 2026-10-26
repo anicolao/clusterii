@@ -1,0 +1,70 @@
+{
+  "artifact": {
+    "id": 12639097199,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYzOTA5NzE5OQ==",
+    "name": "postcapture-diagnostic-travel-short-c792bb13d0070781369581db5ddd3004a8192839-1",
+    "size_in_bytes": 439220920,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12639097199",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12639097199/zip",
+    "expired": false,
+    "digest": "sha256:af840c7989d4d10b5a739e7b7229dd269db2508e99a7e30cf679205cc9e549dd",
+    "created_at": "2026-10-26T09:10:31Z",
+    "updated_at": "2026-10-26T09:10:31Z",
+    "expires_at": "2026-11-25T09:10:17Z",
+    "workflow_run": {
+      "id": 40294689679,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr70-postcapture-diagnostic",
+      "head_sha": "c792bb13d0070781369581db5ddd3004a8192839"
+    }
+  },
+  "downloadedRangeBytes": 1019533,
+  "etag": "\"0x8DF3340FC0A1412\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-postcapture-result/ci-evidence/recovery-request/binding.json",
+      "entry": "ci-evidence/recovery-request/binding.json",
+      "sha256": "da30ecfb698e9a32d7ffd6e6ad4f2ab7ea68ce4a843c4d6de1f4368509e28db7",
+      "bytes": 354,
+      "crc32": "a6eff6dc"
+    },
+    {
+      "path": "/tmp/cluster-postcapture-result/ci-evidence/postcapture-diagnostic/outcome.json",
+      "entry": "ci-evidence/postcapture-diagnostic/outcome.json",
+      "sha256": "5f322b48a8f32ab4739874b6e27a65226908e89a7fa7279bc881515a027c92fc",
+      "bytes": 173,
+      "crc32": "6b120db3"
+    },
+    {
+      "path": "/tmp/cluster-postcapture-result/ci-evidence/postcapture-diagnostic/selection.json",
+      "entry": "ci-evidence/postcapture-diagnostic/selection.json",
+      "sha256": "b4781b8f366953e3ac7c9ad8cc4da029b39665f2bd57975a4f23fbf529cd682e",
+      "bytes": 351,
+      "crc32": "cc6ccae7"
+    },
+    {
+      "path": "/tmp/cluster-postcapture-result/test-results/stories/008-fleet-travel/stories/live-fleet-travel/short/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.layout.json",
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/short/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.layout.json",
+      "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554",
+      "bytes": 2070,
+      "crc32": "3125d098"
+    },
+    {
+      "path": "/tmp/cluster-postcapture-result/test-results/stories/008-fleet-travel/stories/live-fleet-travel/short/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/short/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "sha256": "a55f24e94f69fcdf66994ec84ede78dbb3c9a0f7b25e576539ebe023383a4c52",
+      "bytes": 647872,
+      "crc32": "bdc18e62"
+    },
+    {
+      "path": "/tmp/cluster-postcapture-result/test-results/stories/008-fleet-travel/stories/live-fleet-travel/short/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.render.json",
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/short/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.render.json",
+      "sha256": "597716ee02c6a8ffc546d07d6a63af9e54277cda2b011c3bafa831cfad69ba9f",
+      "bytes": 19645,
+      "crc32": "2d6befb2"
+    }
+  ]
+}
