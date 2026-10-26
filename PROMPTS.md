@@ -2620,3 +2620,10 @@ Reviewer PR71 integration review: independently diffed staged009-selected-histor
 Delegated reviewer instruction; refer to latest main meta complete PR71 four-size regression approval and strict-verification handoff.
 
 Reviewer: Completed PR71 run40261212475 visual review across all four viewports: 60 inherited captures byte-identical and 40 new captures approved after inspection via 28 exact-SHA representatives. Large/short provenance, outcome and image hashes verified; approvals at /tmp/cluster-pr71-candidate-review/reviewer-all-viewports-approval.json. Existing singular participant copy and concept composition gaps remain recorded; this is regression approval, not production design-fidelity signoff. Resume PR71 now: promote exactly these 40 PNGs plus required metadata/renderer records, preserve all inherited references, run complete 100-view strict verification before publishing. Do not generate new candidates or duplicate live PR68-70 checks. Carry approved parent forward into prepared PR72 only after PR71 verification. Log attributed handoff and continuations; commit/push approval evidence and lossless latest main meta snapshot. No merge.
+
+
+## Prompt 221: Retain strict audit
+
+Delegated reviewer instruction; refer to latest main meta independent import/strict-executor audit and single-dispatch authorization.
+
+Reviewer: Independently verified committed f5cfe1b0 exact40 approved PNG hashes, only4 review metadata changes, no inherited PNG/renderer or product/story/runtime delta. Reviewed current strict case/request/runner/workflow and both launcher changes: bound target f5cfe1b0 and three reference trees, exact100 inventory/renderer checks, four original25-view journeys, verify only, no retries/snapshot updates, pinned Nix renderer, fresh output/ports/disk reserve. Independently ran all5 history-strict tests PASS. Proceed one immutable strict dispatch; no further approval round needed. Preserve latest mainmeta and exact all-viewports approval in pushed audit; prior mainmeta has originalPR73 source review for later use. No duplicate live68-70 runs or merges.
