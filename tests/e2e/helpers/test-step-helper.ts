@@ -1,3 +1,4 @@
+import { recordArrivalFocus } from "./arrival-focus-observer.mjs";
 import {
   test,
   expect,
@@ -206,8 +207,17 @@ export class TestStepHelper {
           await test.step(
             `${view.player}: settled, contained, exact capture`,
             async () => {
+              const focusDiagnostic = process.env.CLUSTER_ARRIVAL_FOCUS === "1" && this.story.metadata.id === "live-fleet-travel" && id === "close-arrival-archives-by-keyboard";
+              const observeFocus = async (phase: string) => {
+                if (this.story.metadata.id === "live-fleet-travel" && id === "close-arrival-archives-by-keyboard")
+                  await recordArrivalFocus(page, phase, index === 0 ? "owner" : "peer");
+              };
+              if (focusDiagnostic) await observeFocus("before-front");
               await page.bringToFront();
+              if (focusDiagnostic) await observeFocus("after-front");
+              if (focusDiagnostic) await observeFocus("before-pointer");
               await page.mouse.move(0, 0);
+              if (focusDiagnostic) await observeFocus("after-pointer");
               for (const primary of view.primary ?? []) {
                 await expect(primary).toBeVisible();
                 const box = await primary.boundingBox(),
@@ -220,8 +230,13 @@ export class TestStepHelper {
                   viewport.height,
                 );
               }
+              if (focusDiagnostic) await observeFocus("before-readiness");
               await page.evaluate(captureReady, view.motionInspection ?? []);
+              if (focusDiagnostic) await observeFocus("after-readiness");
+              if (focusDiagnostic) await observeFocus("before-screen-fit");
               await page.evaluate(assertScreenFit, { surface: view.surface });
+              if (focusDiagnostic) await observeFocus("after-screen-fit");
+              if (focusDiagnostic) await observeFocus("before-renderer-check");
               expect(
                 await page.evaluate(() => ({
                   dpr: devicePixelRatio,
@@ -237,6 +252,7 @@ export class TestStepHelper {
                 timezone: "UTC",
                 reducedMotion: true,
               });
+              if (focusDiagnostic) await observeFocus("after-renderer-check");
               const settings = renderer(page, this.info);
               this.story.renderer = settings;
               const name = storySnapshotName(
@@ -271,12 +287,13 @@ export class TestStepHelper {
                     ),
                   );
               };
-              const capture = () =>
-                page.screenshot({
-                  animations: "allow",
-                  caret: "hide",
-                  fullPage: false,
-                });
+              const originalCapture = () => page.screenshot({animations:"allow", caret:"hide", fullPage:false});
+              const capture = focusDiagnostic ? async () => {
+                await observeFocus("before-png");
+                const captured = await originalCapture();
+                await observeFocus("after-png");
+                return captured;
+              } : originalCapture;
               const image = await stableImage(
                 process.env.CLUSTER_RENDER_TELEMETRY === "1"
                   ? async () => {

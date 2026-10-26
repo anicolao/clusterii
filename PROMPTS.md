@@ -2309,3 +2309,33 @@ Reviewer: Independently verified retained corrected69 desktop12620275117 andshor
 Delegated reviewer instruction; refer to latest main meta PR70 parent reconciliation, focused checks and PR69 complete verification audit.
 
 Reviewer: Independently audited52856f40 reconciliation: no executable/reference delta from reviewed d8252cf8, exact04292769 parent PROMPTS/PROMPT_WORK archives, append-only canonical logs. Independently ran all5 focused feature-layout checks in established Nix successfully. All76 corrected69 originals independently verified, including large/phone downloaded into memory; published04292769 evidence identical. Continue70 request preparation for audit. Next normal70/executor commit must also reconcile and push latest supervisor mainmeta findings (including69 publication/fullCI handles); avoid another69 push solely for logs. Disk latest2398908KiB is close to floor2359296: do not download/extract extra artifacts locally without capacity; use already authorized safe evidence-retention approach and preserve unique originals. No new CI reruns or merges.
+
+
+## Prompt 184: Diagnose phone modality
+
+Delegated reviewer instruction; refer to latest main meta PR70 focus diagnostic and memory-only retention authorization.
+
+Reviewer: Phone missing visible opener ring is not explained by DOM focus alone. Independently read helper bringToFront/mouse move and global focus-visible CSS; original phone ZIP has no focus/trace diagnostic. Prepare one targeted phone diagnostic on same pinned Linux renderer/source, recording activeElement, document.hasFocus, matches(:focus-visible), computed outline before/after Escape and each capture preparation operation for both players. Preserve original baseline candidates; do not blanket approve missing ring or change global CSS just to pass images. Use results to fix real keyboard defect or capture defect, then regenerate only affected candidate scope and inspect changed pixels before strict160. No extra PR71 work meanwhile. Large download terminal timeout confirmed, retry diskguard stopped: supervisor will reclaim only byte-verified inherited extracted70 images (original ZIPs retained, all new images retained). Avoid inherited extracted copies during cleanup. Resume original large artifact transport once reserve restored, not CI rerun. Record this handoff and exact mainmeta in normal pushed audit.
+
+
+
+
+## Prompt 185: Retain memory archive
+
+Delegated reviewer instruction; refer to latest main meta PR70 focus diagnostic and memory-only retention authorization.
+
+Reviewer: Cleanup completed:84 inherited extracted70 PNGs,55616544bytes removed only after exact retainedZIP entry equality and CRC checks. All original ZIPs,12new frames per retained viewport,reviewrecords preserved. Reconstruction inventory /tmp/cluster-pr70-candidate-review/reviewer-inherited-extraction-cleanup.json. Free2557684KiB, about2MiB below reserve2559296 but198MiB above hardfloor2359296. For large retrieval use memory original archive verification and retain only new images/metadata with explicit estimated extraction size and post-write hardfloor check; reserve is working headroom, do not stall on2MiB margin or redownload other evidence. If planned new extraction exceeds available headroom above hardfloor, stop and report exact bytes needed. Keep original remote artifact metadata/digest/expiry for reconstruction and no claim local originalZIP retained if memory-only.
+
+
+## Prompt 186: Preserve large approval
+
+Delegated reviewer instruction; refer to latest main meta PR70 large inspection and remaining phone focus hold.
+
+Reviewer: Large review complete: viewed all7distinct new3840x2160 frames individually (tool display downsample2048), covering12viahashes. All12retained PNGs independently rehashed;28inherited hashes independently equal52856Git. Original memoryZIP integrity remains agent-verified provenance, no false supervisor fullZIP claim. /tmp/cluster-pr70-candidate-review/reviewer-large-approval.json grants large-only regression approval; both Escape rings visible, report/disclosure/footer readable. All four-size images now visually inspected; desktop/short/large approved, phone focus diagnostic remains sole visual hold. Preserve exact record and mainmeta in next normal commit. Continue targeted phone evidence then appropriate fix/recapture and160strict verification; no unrelated feature work or merges.
+
+
+## Prompt 187: Dispatch focus observation
+
+Delegated reviewer authorization; refer to latest main meta independently audited phone diagnostic.
+
+Reviewer: Independently read phone focus diagnostic workflow/request/runner/observer plus both spec/helper deltas and launcher routes; independently ran all5 request/launcher/observer tests PASS in established Nix. Read-only observations cover both players at Escape/ack/front/pointer/readiness/fit/renderer/PNG boundaries; original assertions,budgets,stable-image comparison unchanged; phone-only40views and refs bound. Reviewed exact working fileSHA inventory /tmp/cluster-pr70-focus-reviewed-files.json. Authorized to commit this exact implementation, confirm committed bytes match inventory (if executable changes are needed, present delta), then create single isolated request-only child binding that committed source and existing52856target/reference trees and push investigate/pr70-phone-focus once. No further ceremonial approval needed for matching bytes. Preserve unique execution handle and report immutable source/request SHA; diagnostic generation is not baseline approval. Keep telemetryoff and no globalCSS changes. Continue promptly toward cause/fix/recapture then strict160; no71expansion or GitHub merges. Commit latest mainmeta/large approval in normal audit work.

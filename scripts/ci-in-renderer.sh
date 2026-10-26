@@ -20,9 +20,13 @@ case "$1" in
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
   recovery)
+    if [ "$#" -eq 4 ] && [ "$2:$3:$4" = arrival-focus:travel:phone ]; then
+      node scripts/arrival-focus-run.mjs "$3" "$4"
+    else
     [ "$#" -eq 4 ] && [ "$2" = arrival-candidates ] || exit 2
     case "$3:$4" in travel:phone|travel:desktop|travel:large|travel:short) ;; *) exit 2 ;; esac
     node scripts/arrival-candidates-run.mjs "$3" "$4"
+    fi
     ;;
   application)
     bun run check

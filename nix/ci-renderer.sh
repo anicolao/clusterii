@@ -3,6 +3,8 @@
 : "${containerd:?}" "${rootShell:?}" "${engine:?}" "${imageArchive:?}" "${imageTag:?}" "${imageConfig:?}" "${imageDigest:?}" "${nixCommand:?}"
 case "${1:-}:${2:-}" in
   stories:verify|stories:generate|application:) ;;
+  recovery:arrival-focus)
+    [ "$#" -eq 4 ] && [ "$3:$4" = travel:phone ] || exit 2 ;;
   recovery:arrival-candidates)
     [ "$#" -eq 4 ] || exit 2
     case "$3:$4" in travel:phone|travel:desktop|travel:large|travel:short) ;; *) exit 2 ;; esac ;;

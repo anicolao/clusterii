@@ -1,3 +1,4 @@
+import { recordArrivalFocus } from "../helpers/arrival-focus-observer.mjs";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { createRequire } from "node:module";
@@ -1200,7 +1201,11 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       description:
         "Both commanders close the archive with Escape and return to the opening Arrival reports control.",
       action: async () => {
-        for (const p of [owner, peer]) await p.keyboard.press("Escape");
+        for (const [i, p] of [owner, peer].entries()) {
+          await recordArrivalFocus(p, "before-escape", i === 0 ? "owner" : "peer");
+          await p.keyboard.press("Escape");
+          await recordArrivalFocus(p, "after-escape", i === 0 ? "owner" : "peer");
+        }
       },
       acknowledgement: {
         spec: "Both archive panels close and focus returns to each player's Arrival reports control.",
@@ -1213,6 +1218,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
                 exact: true,
               }),
             ).toBeFocused();
+            await recordArrivalFocus(p, "after-acknowledgement", p === owner ? "owner" : "peer");
           }
         },
       },
