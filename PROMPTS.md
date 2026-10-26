@@ -443,3 +443,9 @@ Reviewer finding 2026-10-21 15:08 Toronto: #43 job119405166506 now fails two sna
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 15:38 Toronto”.
 
 Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed expected d3e34c4 versus hosted4cfaebf; #46 publish39660570655 failed revision fetch with ECONNRESET. Logs retained /tmp/cluster43-publish-latest-review.log and /tmp/cluster46-publish-latest-review.log. Coordinate retries after shared publication queue clears and retain exact-head checks; do not describe current previews as verified until those checks pass. Log reviewer attribution/continuation and carry latest checkpoint. No merge.
+
+
+## Prompt 48: Reviewer identity backport
+
+Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR42, preserve all existing reference images, and reuse the established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 identity diagnosis and scoped backport" for human request context and evidence. Run required checks; do not merge PRs.
+
