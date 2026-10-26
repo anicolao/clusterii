@@ -1,0 +1,56 @@
+{
+  "artifact": {
+    "id": 12372765327,
+    "node_id": "MDg6QXJ0aWZhY3QxMjM3Mjc2NTMyNw==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 1174915693,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12372765327",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12372765327/zip",
+    "expired": false,
+    "digest": "sha256:0b4b32dc1e48b70c659fba5a7e86b3759f7ae71aecb1abbeeb624659fb8d4df9",
+    "created_at": "2026-10-21T18:51:37Z",
+    "updated_at": "2026-10-21T18:51:37Z",
+    "expires_at": "2027-01-19T18:26:22Z",
+    "workflow_run": {
+      "id": 39652714597,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/campaign-navigation-stories",
+      "head_sha": "7302236ee29c2bc7d09871ab14e820526d3bbc97"
+    }
+  },
+  "downloadedRangeBytes": 3239680,
+  "etag": "\"0x8DF2FA456239CF9\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr42-identity-review/test-results/stories/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+      "entry": "test-results/stories/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+      "sha256": "07073d1d72d4351d4e1ec23280ca009c8dfee62f80c2487692bd3dae7ae62f39",
+      "bytes": 970488,
+      "crc32": "417d8c3a"
+    },
+    {
+      "path": "/tmp/cluster-pr42-identity-review/test-results/stories/session-recovery.story-Two-8bf72-thout-losing-saved-identity-short/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device-actual.png",
+      "entry": "test-results/stories/session-recovery.story-Two-8bf72-thout-losing-saved-identity-short/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device-actual.png",
+      "sha256": "07073d1d72d4351d4e1ec23280ca009c8dfee62f80c2487692bd3dae7ae62f39",
+      "bytes": 970488,
+      "crc32": "417d8c3a"
+    },
+    {
+      "path": "/tmp/cluster-pr42-identity-review/test-results/stories/session-recovery.story-Two-8bf72-thout-losing-saved-identity-short/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device-diff.png",
+      "entry": "test-results/stories/session-recovery.story-Two-8bf72-thout-losing-saved-identity-short/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device-diff.png",
+      "sha256": "04569ffe64e6c3e1a63257825f8b09d374304ab96eff644722fee028d32421a9",
+      "bytes": 273380,
+      "crc32": "2f67fffd"
+    },
+    {
+      "path": "/tmp/cluster-pr42-identity-review/test-results/stories/session-recovery.story-Two-8bf72-thout-losing-saved-identity-short/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device-expected.png",
+      "entry": "test-results/stories/session-recovery.story-Two-8bf72-thout-losing-saved-identity-short/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device-expected.png",
+      "sha256": "9cdb1311edad45ad79c206c6120ee1448d2e13192762864a99785221bfbd1842",
+      "bytes": 970443,
+      "crc32": "b23d4739"
+    }
+  ]
+}

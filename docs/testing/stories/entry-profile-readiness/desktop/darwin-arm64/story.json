@@ -1,0 +1,128 @@
+{
+  "id": "entry-profile-readiness",
+  "title": "Wait for the saved identity before opening campaign selection",
+  "inventory": [
+    "UX-01",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A returning developer reloads entry while the actual authenticated profile-key request is held by the harness. Play remains disabled until the saved profile is known, then opens the campaign directory without an identity resave. The delay changes no service response or profile state.",
+  "source": {
+    "commit": "775e6ad5d2a6718604ed470bacd6c6eda0caa818",
+    "dirty": true,
+    "spec": "tests/browser/campaign-navigation.story.spec.ts",
+    "specSha256": "f314919f15fcf692c79c3885bfef3063f5cfee66192f3c0501419c32e6cde975"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "desktop",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "saved-identity",
+      "description": "Prepare a real saved identity and developer access through ordinary authentication and save controls.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "hold-profile-readiness",
+      "description": "Hold the actual POST profile-key request before its real service response. Authentication, profile state and encrypted command receipts are unchanged.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "entry-waits-for-profile",
+      "description": "Reload entry while the saved identity is still being recovered. Play cannot route to an editor based on missing profile data.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Authentication is known and Play remains disabled until profile readiness.",
+      "verifications": [
+        "The saved profile retains one revision, one version and one receipt.",
+        "The identity editor has not opened or asked for another save."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "003-entry-waits-for-profile-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "release-profile-readiness",
+      "description": "Release the original profile-key request and remove the delay. The application receives the real saved profile through its normal subscription.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "ready-campaign-selection",
+      "description": "Once the saved identity is ready, use Play to enter campaign selection directly.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Play opens the joined-campaign directory instead of identity editing.",
+      "verifications": [
+        "The saved profile retains one revision, one version and one receipt.",
+        "No identity editor is shown."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "005-ready-campaign-selection-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "saved-identity-unchanged",
+      "description": "Return to entry and explicitly open identity to confirm the saved name has not required resubmission.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The original saved commander name is available.",
+      "verifications": [
+        "The saved profile retains one revision, one version and one receipt."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "006-saved-identity-unchanged-1-star-envoy.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
