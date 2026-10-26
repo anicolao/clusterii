@@ -585,3 +585,5 @@ Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Integrate published PR72 reviewed references into PR73 preparation while preserving both complete prompt histories.
 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Import all32 individually reviewed PR73 replacement baselines preserving136 inherited images and immutable source.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Bind PR73 reviewed inventory to explicit viewport/image fields and original renderer-bearing story manifests.
