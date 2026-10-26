@@ -1,0 +1,13 @@
+✔ fresh exact request accepted; wrong/replayed/broadened requests rejected (0.578583ms)
+✔ exact four selections only, no empty or wrong collected test (0.399875ms)
+✔ both actual dispatch layers accept exactly four cases and reject wrong or empty args (110.933791ms)
+✔ full outer script accepts scoped route only up to required runner preflight (5.014584ms)
+✔ all inherited feature references and renderer siblings are present with exact Git blobs (36.550708ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 202.015542
