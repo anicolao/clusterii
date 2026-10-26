@@ -1,0 +1,13 @@
+{
+  "changedRgbaPixels": 2231,
+  "box": [
+    583,
+    289,
+    1012,
+    305
+  ],
+  "stableReference": "tests/browser/story-baselines/identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+  "actualVsStableInBox": 2231,
+  "expectedVsStableInBox": 0,
+  "interpretation": "Only identity intro text differs; compare stable PR52 28px leading region, not unrelated account content."
+}

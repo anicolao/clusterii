@@ -1,0 +1,84 @@
+{
+  "artifact": {
+    "id": 12380918500,
+    "node_id": "MDg6QXJ0aWZhY3QxMjM4MDkxODUwMA==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 1474869282,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12380918500",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12380918500/zip",
+    "expired": false,
+    "digest": "sha256:025fa0fda8e7abfe136f1c8073d465e8ab3e40f04997b6d8e355705ef1cb670f",
+    "created_at": "2026-10-21T20:58:25Z",
+    "updated_at": "2026-10-21T20:58:25Z",
+    "expires_at": "2027-01-19T20:07:18Z",
+    "workflow_run": {
+      "id": 39667535898,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/encryption-migration-stories",
+      "head_sha": "41d28efd3781993f2688767af61eba9a221b5af7"
+    }
+  },
+  "downloadedRangeBytes": 6361367,
+  "etag": "\"0x8DF2FB60C5BAC6A\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+      "entry": "test-results/stories/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+      "sha256": "fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9",
+      "bytes": 967913,
+      "crc32": "637449f7"
+    },
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+      "entry": "test-results/stories/identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+      "sha256": "fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9",
+      "bytes": 967913,
+      "crc32": "637449f7"
+    },
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/identity-validation.story--383f7-bmitting-an-invalid-command-short/identity-validation/short/linux-arm64/001-sign-in-1-commander-actual.png",
+      "entry": "test-results/stories/identity-validation.story--383f7-bmitting-an-invalid-command-short/identity-validation/short/linux-arm64/001-sign-in-1-commander-actual.png",
+      "sha256": "fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9",
+      "bytes": 967913,
+      "crc32": "637449f7"
+    },
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/identity-validation.story--383f7-bmitting-an-invalid-command-short/identity-validation/short/linux-arm64/001-sign-in-1-commander-diff.png",
+      "entry": "test-results/stories/identity-validation.story--383f7-bmitting-an-invalid-command-short/identity-validation/short/linux-arm64/001-sign-in-1-commander-diff.png",
+      "sha256": "8630667c77e638d06603a3181fb3779af7c15697e18f35416c174b97eb661028",
+      "bytes": 270147,
+      "crc32": "67886726"
+    },
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/identity-validation.story--383f7-bmitting-an-invalid-command-short/identity-validation/short/linux-arm64/001-sign-in-1-commander-expected.png",
+      "entry": "test-results/stories/identity-validation.story--383f7-bmitting-an-invalid-command-short/identity-validation/short/linux-arm64/001-sign-in-1-commander-expected.png",
+      "sha256": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+      "bytes": 967870,
+      "crc32": "10dff021"
+    },
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-actual.png",
+      "entry": "test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-actual.png",
+      "sha256": "fb76d40b42ef013ba7cb0916f481a349540a3c43155b077bf16b5420750caeb9",
+      "bytes": 967913,
+      "crc32": "637449f7"
+    },
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-diff.png",
+      "entry": "test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-diff.png",
+      "sha256": "8630667c77e638d06603a3181fb3779af7c15697e18f35416c174b97eb661028",
+      "bytes": 270147,
+      "crc32": "67886726"
+    },
+    {
+      "path": "/tmp/cluster-pr45-identity-review/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-expected.png",
+      "entry": "test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-expected.png",
+      "sha256": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+      "bytes": 967870,
+      "crc32": "10dff021"
+    }
+  ]
+}

@@ -204,3 +204,23 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | R
 Prompt 46 | 0fe55bd21447bc86379cdb8cfd58ba955b493059d91587fe9ead731eff8c199a | Carry contact-subscription readiness and four exact verified narratives into the feedback lab stack.
 
 Prompt 47 | 1468b1b9d614972bd2a53f2a0c66d43fc938b416f7dcb71ccdc66c9dbf104092 | Carry the measured multiplayer capture budget repair into feedback-lab-stories, preserving exact comparisons.
+
+Prompt 49 | 003d69bf7828b77a9d8757d259b27ece1e6b259584f6ed8c824cac6ecc3d3555 | Reconcile PR44 parent preserving exact archived requests and established archive-aware prompt checker.
+
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Backport inspected PR52 whole-pixel identity leading and established Nix CI to PR42 without changing references.
+
+Prompt 48 | 0cdd8804dd565c8bd5d2adba0cefbdc64ccd99f4d5fd883ea1f1339ecb5b2b06 | Integrate reviewed PR42 correction into PR43 preserving both exact archived histories and original child features.
+
+Prompt 49 | 1c202e97f9e5217f2569a6ce5e1b920e4e001ebd082ac09f529e0f15c1d0143f | Integrate reviewed PR43 into PR44 preserving exact parent histories and all existing child product and baseline bytes.
+
+Prompt 49 | b00b65eecf6c9de93da4c244254e9e45aa5d1b8b7f22d0e2330283ea41e2fcd2 | Integrate the complete reviewed PR42 identity painting correction into PR43 without changing child gameplay or assertions.
+
+Prompt 50 | f7a67da077c5892ce46775abc6806821f8806f5d6545194cf97db8efa82ef2ba | Carry complete PR43 parent identity layer and approved references into PR44 retaining both ordered histories.
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Integrate complete reviewed PR44 parent into PR45 preserving child encryption journeys and exact archived histories.
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Record verified PR45 long-poll retransmission bypass of websocket-only failure injection
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Hold recovered briefing visits over HTTP long polling and verify canonical state before release
+
+Prompt 51 | 1e18c671942bb6d6ffddc1f455f37812b4bfd4473afa023474a81b0e3242a1d7 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
