@@ -2627,3 +2627,17 @@ Reviewer: Completed PR71 run40261212475 visual review across all four viewports:
 Delegated reviewer instruction; refer to latest main meta independent import/strict-executor audit and single-dispatch authorization.
 
 Reviewer: Independently verified committed f5cfe1b0 exact40 approved PNG hashes, only4 review metadata changes, no inherited PNG/renderer or product/story/runtime delta. Reviewed current strict case/request/runner/workflow and both launcher changes: bound target f5cfe1b0 and three reference trees, exact100 inventory/renderer checks, four original25-view journeys, verify only, no retries/snapshot updates, pinned Nix renderer, fresh output/ports/disk reserve. Independently ran all5 history-strict tests PASS. Proceed one immutable strict dispatch; no further approval round needed. Preserve latest mainmeta and exact all-viewports approval in pushed audit; prior mainmeta has originalPR73 source review for later use. No duplicate live68-70 runs or merges.
+
+
+## Prompt 222: Preserve strict ownership
+
+Delegated reviewer instruction; refer to main meta PR71 strict phone/desktop success and supervisor-owned four-artifact audit.
+
+Reviewer: PR71 strict40262969648 phone/desktop SUCCESS; large/short live. Supervisor owns artifact retrieval and exact-output audit for all four under /tmp/cluster-pr71-strict-review; do not duplicate downloads. Preserve run, no regeneration. Publication remains gated on complete100 strict results. Mainmeta contains current68application success and later source reviews; retain next normal audit.
+
+
+## Prompt 223: Publish verified history
+
+Delegated reviewer instruction; refer to latest main meta complete100 strict artifact audit and existing PR71 publication/PR72 carry-forward authorization.
+
+Reviewer: PR71 strict40262969648 ALL FOUR SUCCESS. Independently verified original ZIP size/SHA256/CRC, exactbc19c059 executor/run/source provenance, verify/passed25/exit0/referenceDiff0 each, and all100 PNGs byte-exact approved hashes. Evidence /tmp/cluster-pr71-strict-review/all100-verified.json and per-viewport reports/originalZIPs. Complete reviewed strict gate satisfied. Proceed now to publish existing PR71 repair from f5cfe1b0 plus audit-only commits preserving exact published70 ancestry; check no product/tests/runtime/reference drift before push. Preserve all100 evidence and lossless latestmainmeta, attributed PROMPTS/continuations, then observe mandatory full PR checks. Carry exact published71 parent into preparedPR72 and continue its existing baseline review/repair; do not wait idle for whole-suite71 if independent72 preparation is safe. No duplicate runs, no merges. Regression verification is not full production design-fidelity signoff.
