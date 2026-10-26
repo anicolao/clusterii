@@ -490,6 +490,8 @@ Reviewer finding 2026-10-21 18:48 Toronto: #51 current4f8cb6a story run396800904
 ## Prompt 55: Reviewer identity correction
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR49, preserve every reference image, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR49 two-comparison review". Run required checks; do not merge PRs.
+
+
 ## Prompt 56: Reviewer identity correction
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR45, preserve all existing reference images, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR45 two-comparison review". Both comparison triples are identical and expected output matches reviewed PR52. Run required checks; do not merge PRs.
@@ -504,9 +506,13 @@ Reviewer instruction: Apply the independently inspected PR52 whole-pixel identit
 
 
 
+
+
 ## Prompt 57: Reviewer identity correction
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR44, preserve all existing reference images, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 publication and PR44 exact failure match". The full comparison PNGs match reviewed PR42 originals byte-for-byte. Run required checks; do not merge PRs.
+
+
 
 
 
@@ -535,9 +541,13 @@ Reviewer instruction: Apply the independently inspected PR52 whole-pixel identit
 
 
 
+
+
 ## Prompt 59: Reviewer layer backport
 
 Reviewer instruction: Backport the complete previously independently reviewed PR53 identity painting correction and exact approved short Linux references to PR42. See meta-prompts.md "Supervisor complete PR53 layer backport to PR42". Preserve other product behavior, references and strict assertions; verify required CI and do not merge PRs.
+
+
 
 
 

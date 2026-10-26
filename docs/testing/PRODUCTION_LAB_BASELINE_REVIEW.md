@@ -1,0 +1,19 @@
+# Production lab candidate review
+
+Mode: separate generation, not verification. Source: `production-lab.story.spec.ts`, existing CampaignEconomy component and productionFrame reducer scenario. Local renderer: darwin-arm64, pinned Playwright Chromium and shared renderer arguments. No existing baselines are replaced.
+
+The first generation failed its incorrect two-fighter assertion; the actual reducer produces one, as confirmed by both the scenario output and displayed ledger. Retained failure: `/tmp/cluster-production-lab-fighter-before` and `/tmp/cluster-production-lab-generation.log`. Correcting the expectation yielded four passing candidate journeys. Review then required an additional explicit science view because the upper summary and keyboard End captures did not always show the science paragraph. Those first candidates remain at `/tmp/cluster-production-lab-summary-candidates`.
+
+Final candidate generation passes four journeys in 15.0 seconds (`/tmp/cluster-production-lab-generation3.log`). All 48 ordered captures were reviewed through full phone/desktop/short sheets and magnified 4K specimen crops. There are 32 distinct images. Forty images remain byte-identical to the preceding candidates; eight new science views were separately inspected. Both motion panes show the same tick facts. The balance stays at 200 while awaiting confirmation and changes to 202.8 only at the confirmed frame. Ledger labels, fractional science progress, bounded scrolling, review disclosure and return-control focus remain readable. Explicit upper/lower document views do not claim that the entire long specimen fits the short viewport at once.
+
+Promote only these new candidates for exact verification. This implementer review is not independent visual acceptance. Pinned Linux, current-head CI, hosted preview revision and the inherited identity-raster diagnosis remain open. No gameplay rules are approved by these component specimens.
+
+Exact local comparison passes all four viewport journeys and 48 captures in 15.3 seconds (`/tmp/cluster-production-lab-exact.log`), with four generated narratives archived. Type checks report zero errors/warnings; lint and nine policy/clock/catalogue guards pass. Linux/current-head and independent acceptance remain open.
+
+## Separate Linux candidate review
+
+Implementer review, 2026-10-21. Source: run39680090423, generation artifact12386484199, clean sourcecbf67363a4575f127308d2190b03b404a9a72873 with identical tree to PR head4f8cb6a. Production code, lockfile, helper and this story spec match the receiving branch. The generation manifest pins Playwright1.61.1/Chromium149.0.7827.0 Linuxarm64, DPR1, bundled fonts, en-US/UTC. Spec SHA-256: 0ef9ae8798bfd0c323385ac18a3ceedb6fe23a4a6c24af5db4674f50e6facf75.
+
+Reviewed all48 captures (32 distinct PNGs). Scheduled/due frames retain200 credits, confirmed frames show202.8 with the matching ledger, and separate science/reading views expose fractional progress and the full production disclosure. Both motion panes retain the same facts. Upper summary views are not whole-panel containment claims; lower views show the bounded reading region and return control. Ordered phone/desktop/short sheets and enlarged4K specimen regions were inspected. Approve only this new Linux image set and manifests for strict comparison. Component fixtures are not live-service or hosted acceptance, and review-state rules remain unapproved.
+
+The source verification failure is retained at `/tmp/cluster51-1848-review-failure.log`:20 missing Linux lab cases plus the inherited identity paragraph mismatch. This addition addresses four missing cases; strict current-head CI, independent review and preview checks remain gates. Existing baselines, tolerances and production behavior are unchanged. The identity diagnosis remains separate in IDENTITY_RASTER_DIAGNOSIS.md on the successor branch.

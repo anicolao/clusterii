@@ -233,13 +233,17 @@ Prompt 51 | 003b4a83de8da349a9ad850eaf6c060f369d4abca8d27efadd6f6246634c0641 | A
 Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Propagate reviewed Linux identity-gallery baselines and preserved reviewer histories into lifecycle lab PR 48.
 Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 49.
 Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 50.
+Prompt 52 | 1d906dbc035f0c7ffba2de01a4dd5c1b75bec2710aff1c51f6deab971b04f5e6 | Carry reviewed Linux gallery images and all reviewer histories through the predecessor merge into PR 51.
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/research-lab-stories.
-
 Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/history-lab-stories.
 
+Prompt 53 | 6b1e1326bd7acfaa662cb2877aded46b435483646647cc3045ce4dc4ae6663d4 | Carry reviewed Linux lifecycle candidates and supervisory checkpoints into feat/production-lab-stories.
 Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Carry reviewed Linux research candidates and supervisory checkpoints into feat/history-lab-stories.
 
+Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Carry reviewed Linux research candidates and supervisory checkpoints into feat/production-lab-stories.
 Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Review and promote only new Linux history lab candidates from the completed instrumented run.
+
+Prompt 54 | c65de499efbbe06742baf88c9930f911da1f456ebeaf48274058749a68d60306 | Review and promote only new Linux production lab candidates from the completed instrumented run.
 
 Prompt 55 | cbf2d774b19c2092466ec1b79ed91bf13d68d959f02259f665f0b178e1c61a63 | Integrate reviewed PR49 identity correction into PR50 with unchanged references and exact failure comparison evidence.
 
@@ -276,3 +280,5 @@ Prompt 57 | 5f47cbff6f4cb40ad46445e5b5ee9f02ac39afe43e049620539b195db32e4d07 | C
 Prompt 59 | a9d741639e43ad4ae4e3e80bffb66b583573a617a15a932b99537bd343fef5a8 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
 
 Prompt 59 | f016f21aa941fe45cc79798c6e13c0e2607bfe0e4f7dc4c351d0d50cc813d58e | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 59 | 995bc7c21b328338c5445d5a62bbe5a67e342d5994151d864713d791841d01e9 | Integrate PR50 reviewed identity rendering and transport maintenance into PR51 while preserving production-lab coverage.

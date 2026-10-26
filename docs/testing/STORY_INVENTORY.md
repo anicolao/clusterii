@@ -251,3 +251,12 @@ Four local exact component stories/48 captures cover loading, retry, two recover
 - desktop: [History recovery lab](stories/history-recovery-lab/desktop/darwin-arm64/README.md).
 - large: [History recovery lab](stories/history-recovery-lab/large/darwin-arm64/README.md).
 - short: [History recovery lab](stories/history-recovery-lab/short/darwin-arm64/README.md).
+
+## Production lab narratives
+
+The production component story distinguishes scheduled, due-but-unconfirmed and confirmed output in both motion panes. It captures balance/ledger facts, contained science progress, keyboard reading and the real lab reset callback. This is reducer-derived presentation evidence; live production delivery, authorization, catch-up and conservation remain in the unmigrated service/player journeys. Predecessor lab assertions are unchanged. Linux and independent acceptance remain open.
+
+- phone: [Production ledger lab](stories/production-ledger-lab/phone/darwin-arm64/README.md).
+- desktop: [Production ledger lab](stories/production-ledger-lab/desktop/darwin-arm64/README.md).
+- large: [Production ledger lab](stories/production-ledger-lab/large/darwin-arm64/README.md).
+- short: [Production ledger lab](stories/production-ledger-lab/short/darwin-arm64/README.md).

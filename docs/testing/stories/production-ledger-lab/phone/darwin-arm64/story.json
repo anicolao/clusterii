@@ -1,0 +1,206 @@
+{
+  "id": "production-ledger-lab",
+  "title": "Read scheduled and confirmed production without advancing balances early",
+  "inventory": [
+    "UX-06",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "A developer inspects the shipped CampaignEconomy component with the existing production-reducer lab scenario. Seeking is an explicit presentation harness, not authenticated production delivery, catch-up, authorization or conservation evidence. Standard and reduced motion retain identical facts; predecessor service and lab assertions remain intact.",
+  "source": {
+    "commit": "e350e11545936eb671d4c53e475cdb43aacde635",
+    "dirty": true,
+    "spec": "tests/browser/production-lab.story.spec.ts",
+    "specSha256": "0ef9ae8798bfd0c323385ac18a3ceedb6fe23a4a6c24af5db4674f50e6facf75"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "phone",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "presentation-clock",
+      "description": "Freeze only browser playback. Existing shared reducers supply the declared component scenario; no service clock, live account or persisted campaign is replaced.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduled",
+      "description": "Open production before the first deadline and inspect the unchanged starting balance.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both production schedules report “Next production:” with identical text.",
+      "verifications": [
+        "Both motion panes retain exactly 200 available credits.",
+        "Neither due time nor motion mode invents a confirmed tick or production ledger."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard production summary",
+          "image": "002-scheduled-1-developer-standard-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        },
+        {
+          "player": "Developer · reduced production summary",
+          "image": "002-scheduled-2-developer-reduced-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "due",
+      "description": "Seek beyond the deadline; the schedule acknowledges waiting without prematurely awarding output.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both production schedules report “Awaiting next tick. Balances update when production is confirmed.” with identical text.",
+      "verifications": [
+        "Both motion panes retain exactly 200 available credits.",
+        "Neither due time nor motion mode invents a confirmed tick or production ledger."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard production summary",
+          "image": "003-due-1-developer-standard-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        },
+        {
+          "player": "Developer · reduced production summary",
+          "image": "003-due-2-developer-reduced-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confirmed",
+      "description": "Seek to the reducer-confirmed tick and inspect its new balance and original ledger facts.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both production schedules report “Next production:” with identical text.",
+      "verifications": [
+        "Both motion panes retain exactly 202.8 available credits.",
+        "The first confirmed ledger reports 2.8 credits, no escrow, one fighter, one infantry and 1.4 science; research progress is 1400 milli-science."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard production summary",
+          "image": "004-confirmed-1-developer-standard-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        },
+        {
+          "player": "Developer · reduced production summary",
+          "image": "004-confirmed-2-developer-reduced-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        },
+        {
+          "player": "Developer · standard production science",
+          "image": "004-confirmed-3-developer-standard-production-science.png",
+          "verifications": [
+            "The science result and progress bar are contained within the bounded ledger, alongside the return control."
+          ]
+        },
+        {
+          "player": "Developer · reduced production science",
+          "image": "004-confirmed-4-developer-reduced-production-science.png",
+          "verifications": [
+            "The science result and progress bar are contained within the bounded ledger, alongside the return control."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-ledger",
+      "description": "Focus each actual ledger and press End to read science and split-control explanations while keeping Return to galaxy available.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "Both ledgers expose the production rules disclosure and preserve the confirmed science outcome.",
+      "verifications": [
+        "Both motion panes retain exactly 202.8 available credits.",
+        "Reading does not change the inspected tick or transfer focus out of the last ledger."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard production reading",
+          "image": "005-read-ledger-1-developer-standard-production-reading.png",
+          "verifications": [
+            "The bounded ledger and return control are visible in this lower document view; keyboard reading stays inside the ledger."
+          ]
+        },
+        {
+          "player": "Developer · reduced production reading",
+          "image": "005-read-ledger-2-developer-reduced-production-reading.png",
+          "verifications": [
+            "The bounded ledger and return control are visible in this lower document view; keyboard reading stays inside the ledger."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return-reset",
+      "description": "Activate the real Return to galaxy callback with Enter. In this documented lab it resets the scenario, preserving production UI semantics without pretending to navigate a live campaign.",
+      "actor": "Developer",
+      "kind": "player",
+      "acknowledgement": "The reset callback returns playback to zero and both panes to first-production pending.",
+      "verifications": [
+        "Both motion panes retain exactly 200 available credits.",
+        "Reset removes the prior ledger and restores the scheduled state in both motion panes."
+      ],
+      "views": [
+        {
+          "player": "Developer · standard production summary",
+          "image": "006-return-reset-1-developer-standard-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        },
+        {
+          "player": "Developer · reduced production summary",
+          "image": "006-return-reset-2-developer-reduced-production-summary.png",
+          "verifications": [
+            "The labeled specimen, production schedule and available balance are contained in this upper document view."
+          ]
+        }
+      ]
+    }
+  ]
+}
