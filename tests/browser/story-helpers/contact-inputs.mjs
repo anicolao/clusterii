@@ -10,7 +10,11 @@ export const contactPrefix = "Scheduled story fleet contacts ";
  * @returns {[string, string, string, string, number]}
  */
 export function contactInputs(current, next, id, uid, target, tick) {
-  if (!current.name.startsWith(contactPrefix))
+  const route =
+    /^Scheduled story fleet route (phone|desktop|large|short)$/.test(
+      current.name,
+    );
+  if (!route && !current.name.startsWith(contactPrefix))
     return [current.seed, id, uid, target, tick];
   const seat = next.seats.findIndex((s) => s.uid === uid);
   const fleet = target.startsWith("fleet:")
@@ -32,7 +36,7 @@ export function contactInputs(current, next, id, uid, target, tick) {
     throw new Error("Invalid illustrated fleet-contact entropy context");
   return [
     current.seed,
-    "illustrated-fleet-contacts",
+    route ? "illustrated-fleet-route" : "illustrated-fleet-contacts",
     `seat-${seat}`,
     `fleet-seat-${owner}-number-${fleet.number}`,
     tick,
