@@ -156,3 +156,5 @@ Prompt 49 | 1c202e97f9e5217f2569a6ce5e1b920e4e001ebd082ac09f529e0f15c1d0143f | I
 Prompt 49 | b00b65eecf6c9de93da4c244254e9e45aa5d1b8b7f22d0e2330283ea41e2fcd2 | Integrate the complete reviewed PR42 identity painting correction into PR43 without changing child gameplay or assertions.
 Prompt 50 | f7a67da077c5892ce46775abc6806821f8806f5d6545194cf97db8efa82ef2ba | Carry complete PR43 parent identity layer and approved references into PR44 retaining both ordered histories.
 Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Integrate complete reviewed PR44 parent into PR45 preserving child encryption journeys and exact archived histories.
+
+Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Record verified PR45 long-poll retransmission bypass of websocket-only failure injection
