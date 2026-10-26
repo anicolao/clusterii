@@ -2339,3 +2339,36 @@ Reviewer: Large review complete: viewed all7distinct new3840x2160 frames individ
 Delegated reviewer authorization; refer to latest main meta independently audited phone diagnostic.
 
 Reviewer: Independently read phone focus diagnostic workflow/request/runner/observer plus both spec/helper deltas and launcher routes; independently ran all5 request/launcher/observer tests PASS in established Nix. Read-only observations cover both players at Escape/ack/front/pointer/readiness/fit/renderer/PNG boundaries; original assertions,budgets,stable-image comparison unchanged; phone-only40views and refs bound. Reviewed exact working fileSHA inventory /tmp/cluster-pr70-focus-reviewed-files.json. Authorized to commit this exact implementation, confirm committed bytes match inventory (if executable changes are needed, present delta), then create single isolated request-only child binding that committed source and existing52856target/reference trees and push investigate/pr70-phone-focus once. No further ceremonial approval needed for matching bytes. Preserve unique execution handle and report immutable source/request SHA; diagnostic generation is not baseline approval. Keep telemetryoff and no globalCSS changes. Continue promptly toward cause/fix/recapture then strict160; no71expansion or GitHub merges. Commit latest mainmeta/large approval in normal audit work.
+
+
+## Prompt 188: Diagnose earliest failure
+
+Delegated reviewer instruction; refer to latest main meta terminal PR68 large route failure and verified diagnostic dispatch.
+
+Reviewer: New actionable failure: PR68 bf0ea547 story run40246186390/job121328130086 now terminalFAILURE. Independently read job log: large interrupted-fleet-route/026-accepted-while-offline-1-fleet-marshal.png differs36099pixels; large41passed1failed2skipped, other cohorts finished. Artifact12621433122 illustrated-stories-verify-linux-arm64 is4230103809bytes SHA2569818da1ef7fa9f8c1260f17c002ed222d3aab6db771888efdee186004344be9d. Prioritize earliest-red68 diagnosis while sole70focus40253831660 runs; do not rerun68 or approve diff blindly. Recover just expected/actual/diff, failure context and relevant trace through established bounded/selective remote ZIP method if available; do NOT download4.23GB to this nearly-full disk or memory. Document per-entry verification limitation if wholearchiveSHA not obtained. Supervisor independently confirms all11 diagnostic files at a255e691 exactly match reviewed inventory; request6965abb6 dispatched, preserve single run. No duplicate prompts/jobs, no71feature work, no merges.
+
+
+## Prompt 189: Coordinate evidence reserve
+
+Delegated reviewer instruction; refer to latest main meta supervised lossless log compression and PR68 range preparation.
+
+Reviewer: Disk fell below hardfloor again. Supervisor owns lossless compression of old static debug logs /tmp/cluster25-replacement-evidence/firestore-debug.log, /tmp/cluster62-first-service-failure/firestore-debug.log and /tmp/cluster-pr56-error-contexts/firestore-debug.log (~954MB). Will verify decompressed fullSHA/bytecount and unchanged source stat before removing only plain originals, retaining .gz plus provenance. Avoid these files during compression; PR68 range extraction can prepare in memory until reserve restored. Do not delete unique archives or relax hardfloor.
+
+
+## Prompt 190: Recover bounded comparisons
+
+Delegated reviewer instruction; refer to latest main meta verified log compression and PR68 source comparison.
+
+Reviewer: Lossless compression COMPLETE for three coordinated old logs:954362279 original bytes ->4751599 gzip bytes, each decompressed SHA/size exact and source stat unchanged before plain-copy removal. Per-directory reviewer-lossless-log-compression.json records reconstructable originals. Free3250252KiB restored. Resume bounded PR68 comparison extraction; no full4.23GB archive download. Independently compared67->68: fleet-route spec/baselines unchanged; source delta only Scene.svelte plus galaxy-label helper in inspected scope. Diagnose actual pixels rather than infer cause from unchanged test. Retain sole phone-focus run.
+
+## Prompt 191: Stabilize overdue acknowledgement
+
+Delegated reviewer instruction; refer to main meta PR68 trace and independent image inspection.
+
+Reviewer: Independently inspected PR68 expected/actual/diff: change is footer pending->same-order recovery CTA; no visible map/route drift. Rehashed all7 selected entries/SHA/CRC/size and expected image equals exactbf0ea547Git baseline; wholearchiveSHA not claimed. Trace timing supports20second boundary after pending assertion. Proceed focused fix atop PR68: accepted-while-offline step must deliberately await the real stable overdue acknowledgement state (exact recovery status plus enabled Check route order), while preserving destination, no false departure confirmation, one original encrypted command/receipt, canonical forces, and uninvolved-player privacy assertions. Earlier transient-pending steps remain covered; update this step narrative to explain overdue offline acknowledgement. Do not extend production timeout, freeze/mask timer, weaken comparator, or merely rerun. Generate affected story across4sizes in pinned renderer, inspect changed step26 images and any unexpected deltas before baseline promotion; then strict/full checks. No speculative app change or broad baseline refresh. Commit trace/inspection findings and exact mainmeta with attributed logs. Keep70focus sole run intact; earliest-red68 priority.
+
+## Prompt 192: Verify normal focus
+
+Delegated reviewer instruction; refer to main meta independent PR70 focus diagnostic inspection.
+
+Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; read all observations and visually inspected peer032: ring now visible. Both players maintain document focus, opener focus, focus-visible and3pxsolidgold outline afterEscape throughPNG. This is a negative reproduction of original missing ring, not proof of a specific modality cause or app repair. No more diagnostic runs needed now. After priority68 fix dispatch, strengthen normal70 final-step per-view verification at capture time for focused opener plus focus-visible/computed visible outline, using existing focus audit conventions; do not force focus/classes or add sleeps. Remove diagnostic-only instrumentation from acceptance target, regenerate normal phone journey and inspect any changed pixels (expected peer032 ring), then complete160strict. Desktop/short/large reviewed visuals remain valid only where bytes unchanged. Diagnostic image visually acceptable as intended state but do not silently import diagnostic provenance as normal acceptance. Record exact original/diagnostic hashes and unresolved causal limitation. No blanket CSS change or merge.
