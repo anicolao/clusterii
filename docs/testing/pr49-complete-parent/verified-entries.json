@@ -1,0 +1,49 @@
+{
+  "artifact": {
+    "id": 12631315667,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYzMTMxNTY2Nw==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 1524657418,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12631315667",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12631315667/zip",
+    "expired": false,
+    "digest": "sha256:54907058f446afd3ed17e3a526abccc66fe0c707daadf60aac51a03a820b0323",
+    "created_at": "2026-10-26T06:13:47Z",
+    "updated_at": "2026-10-26T06:13:47Z",
+    "expires_at": "2027-01-24T05:39:10Z",
+    "workflow_run": {
+      "id": 40275370193,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/research-lab-stories",
+      "head_sha": "decea84311a595d07238b286041f35d9297299c1"
+    }
+  },
+  "downloadedRangeBytes": 2375185,
+  "etag": "\"0x8DF33284B76607A\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr49-followup-review/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-actual.png",
+      "entry": "test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-actual.png",
+      "sha256": "a9f8560dc06ca849fc61741a19adf84f37516216b0389a21d92ccd2e2b41a654",
+      "bytes": 969541,
+      "crc32": "aa7b36fb"
+    },
+    {
+      "path": "/tmp/cluster-pr49-followup-review/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-diff.png",
+      "entry": "test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-diff.png",
+      "sha256": "79946bf9e299013d1038cb4c1622fa09615bc3e43a54404df189a7ddae58e128",
+      "bytes": 273393,
+      "crc32": "853686e9"
+    },
+    {
+      "path": "/tmp/cluster-pr49-followup-review/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-expected.png",
+      "entry": "test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-expected.png",
+      "sha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6",
+      "bytes": 969500,
+      "crc32": "9610f5f5"
+    }
+  ]
+}

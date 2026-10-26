@@ -1,0 +1,1 @@
+Inherit reviewed parent4ec0db88. Changed CSS, briefing test and identity baselines byte-exact parent. Child feature source unchanged. All10 policy checks pass; fresh full CI required. Original50 head5e5346e3 allfive checks green before integration. PR44 separate fleet-contact timeout retained for diagnosis, no inferred cause or timeout increase.
