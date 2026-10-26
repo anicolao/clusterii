@@ -2292,3 +2292,21 @@ Reviewer: Independent read-only diagnosis of staged69 archive failure: fd041a6a 
 Delegated reviewer instruction; refer to main meta supervisor-owned PR70 strict desktop/phone verification.
 
 Reviewer: Supervisor owns PR70 strict desktop12623182289 and phone12622957608 artifact verification under /tmp/cluster-pr70-strict-review; do not duplicate downloads. Continue exact prompt preservation correction and parent preparation while I verify captured pixels/manifests.
+
+## Prompt 183: Preserve exact cohorts
+
+Delegated reviewer instruction; refer to main meta independently verified PR70 strict desktop/phone original artifacts and80 exact captures.
+
+Reviewer: Supervisor-owned PR70 strict desktop12623182289/phone12622957608 verified complete originalZIP size/SHA256/CRC; both outcomes verify/passed40views exit0 and referenceDiff0, exact targeta28bb2f1/executor650525a9. Independently compared all80captured PNGs against committed reviewed references:80exact. Evidence /tmp/cluster-pr70-strict-review/reviewer-desktop-phone-verification.json plus originals. Preserve in next audit; do not redownload. Remaining large/short not yet accepted; retain sole live run40256911000. No baseline update needed for these passed cohorts.
+
+## Prompt 184: Preserve parent verification
+
+Delegated reviewer instruction; refer to latest main meta exact strict cohort and canonical parent verification.
+
+Reviewer: Independently verified c0cc9d47 preserves063f41a3 canonical prefix, exact fd041a6a archives, both repaired specs, unchanged checker. Supervisor owns PR68 strict desktop12623490207/phone12622329353 verification under /tmp/cluster-pr68-strict-review; do not duplicate downloads.
+
+## Prompt 185: Preserve route cohorts
+
+Delegated reviewer instruction; refer to latest main meta exact strict cohort and canonical parent verification.
+
+Reviewer: PR68 strict desktop12623490207/phone12622329353 supervisor verification complete: full originalZIP size/SHA256/CRC, exact target122245b2/executor17fc3dd4, both40view strict outcomes passed with exit0/referenceDiff0. All80PNG captures independently equal committed reviewed references. /tmp/cluster-pr68-strict-review/reviewer-desktop-phone-verification.json plus originalZIPs retained; no duplicate retrieval. Large/short still pending. Also independently verified c0cc9d47 exact canonical063f41a3 prefix, incoming fd041a6a archives, both repaired specs and unchanged checker; separator reconciliation succeeded without checker change. Preserve these records and current mainmeta in normal pushed audit.
