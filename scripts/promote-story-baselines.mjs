@@ -9,6 +9,12 @@ import {
 import { resolve, join, dirname, relative } from "node:path";
 import { createHash } from "node:crypto";
 import sharp from "sharp";
+import {
+  featureRoot,
+  baselineDirectory,
+  archiveDirectory,
+} from "../tests/e2e/helpers/story-paths.mjs";
+import { featureNarrative } from "../tests/e2e/helpers/feature-narrative.mjs";
 const args = process.argv.slice(2),
   value = (name) => {
     const i = args.indexOf(name);
@@ -32,8 +38,18 @@ function* stories(folder) {
     else if (entry.name === "story.json") yield file;
   }
 }
+const files = [...stories(source)];
+const featureStories = files
+  .map((file) => JSON.parse(readFileSync(file, "utf8")))
+  .filter(
+    (s) =>
+      featureRoot(s.id) &&
+      s.status === "passed" &&
+      s.mode === (archive ? "verify" : "generate"),
+  );
+if (archive && featureStories.length) featureNarrative(featureStories);
 let count = 0;
-for (const file of stories(source)) {
+for (const file of files) {
   const story = JSON.parse(readFileSync(file, "utf8"));
   if (
     story.status !== "passed" ||
@@ -45,10 +61,11 @@ for (const file of stories(source)) {
   if (!story.renderer || !story.steps.length)
     throw new Error("Missing renderer or ordered story steps");
   const destination = resolve(
-    archive ? "docs/testing/stories" : "tests/browser/story-baselines",
-    story.id,
-    story.project,
-    story.platform,
+    (archive ? archiveDirectory : baselineDirectory)(
+      story.id,
+      story.project,
+      story.platform,
+    ),
   );
   mkdirSync(destination, { recursive: true });
   let markdown = readFileSync(join(dirname(file), "README.md"), "utf8");
@@ -60,10 +77,7 @@ for (const file of stories(source)) {
       const actual = readFileSync(join(dirname(file), view.image));
       if (archive) {
         const baseline = resolve(
-          "tests/browser/story-baselines",
-          story.id,
-          story.project,
-          story.platform,
+          baselineDirectory(story.id, story.project, story.platform),
           view.image,
         );
         const [a, b] = await Promise.all(
@@ -126,6 +140,15 @@ for (const file of stories(source)) {
     ) + "\n",
   );
   count++;
+}
+if (archive && featureStories.length) {
+  const directory = resolve(
+    featureRoot(featureStories[0].id),
+    "stories",
+    featureStories[0].id,
+  );
+  mkdirSync(directory, { recursive: true });
+  writeFileSync(join(directory, "README.md"), featureNarrative(featureStories));
 }
 if (!count)
   throw new Error(

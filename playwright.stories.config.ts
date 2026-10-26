@@ -13,14 +13,17 @@ export const rendererArgs = [
   "--disable-gpu",
 ];
 export default defineConfig({
-  testDir: "tests/browser",
-  testMatch: "**/*.story.spec.ts",
+  testDir: "tests",
+  testMatch: [
+    /browser\/[^/]+\.story\.spec\.ts$/,
+    /e2e\/\d{3}-[^/]+\/[^/]+\.spec\.ts$/,
+  ],
   workers: 1,
   retries: 0,
   timeout: 90000,
   outputDir: "test-results/stories",
   updateSnapshots: "none",
-  snapshotPathTemplate: "{testDir}/story-baselines/{arg}{ext}",
+  snapshotPathTemplate: "{testDir}/{arg}{ext}",
   grep: process.env.CLUSTER_STORY_FILTER
     ? new RegExp(process.env.CLUSTER_STORY_FILTER)
     : undefined,
