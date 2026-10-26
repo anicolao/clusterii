@@ -1,0 +1,23 @@
+bun test v1.3.13 (bf2e2cec)
+$ bun test tests/story-tools.test.ts
+
+tests/story-tools.test.ts:
+(pass) capture waits for the finite effect and its final outcome [133.19ms]
+(pass) stable capture rejects infinite and paused motion instead of hiding it [146.27ms]
+(pass) undecodable visible images fail readiness [99.19ms]
+(pass) geometry rejects undersized, overlapping and out-of-viewport controls [248.41ms]
+(pass) bounded scroll is allowed without moving the primary action or document [41.54ms]
+(pass) closed disclosure contents are inactive despite retained layout, but opened controls are audited [100.30ms]
+(pass) disclosure summaries are audited as real keyboard controls [110.37ms]
+(pass) overlap compares painted portions inside a bounded reading panel [57.06ms]
+(pass) actual-frame stability never selects pixels using a baseline [0.43ms]
+(pass) actual-frame stability rejects oscillation after its bounded frame budget [0.63ms]
+(pass) pinned emulator UI assets never replace provider responses or production assets [0.29ms]
+(pass) explicit animation inspection validates exact paused count, time and duration [355.98ms]
+(pass) identity raster diagnostics exclude galaxy text, retain identity ancestry and report bounds [164.68ms]
+(pass) focused control audit rejects clipped button and outline without scrolling [224.01ms]
+
+ 14 pass
+ 0 fail
+ 45 expect() calls
+Ran 14 tests across 1 file. [1.91s]

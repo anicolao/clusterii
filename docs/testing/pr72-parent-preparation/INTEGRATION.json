@@ -1,0 +1,20 @@
+{
+  "parent": "454d4185d77c75fcb2c6806427abc3b89f88bff4",
+  "originalPR72": "5655ca32c7725b3c500ca5025fb9153ff21af56e",
+  "specSha256": "9377847e19003504479cfe214115af7b1946a0ab536248839aa15a75a586e639",
+  "originalSpecExactExceptFiveImports": true,
+  "productionComponentExactOriginal72": true,
+  "all6370InheritedReferenceFilesExact": true,
+  "auditCorrection": "Initial audit mapping used package.json instead of functions/package.json; corrected audit only, no source change.",
+  "candidateRun": "not dispatched",
+  "active72Published": false,
+  "typeCheck": "0 errors, 0 warnings; Functions tsc exit0",
+  "policyTests": 40,
+  "all180CollectionIdentitiesRetained": true,
+  "noFormattingDeltaBeyondFiveImports": true,
+  "pr71Artifacts": {
+    "desktop12624960472": "supervisor owns retrieval/review",
+    "phone12624681983": "supervisor owns retrieval/review",
+    "largeShort": "pending"
+  }
+}

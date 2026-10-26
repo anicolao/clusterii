@@ -1,0 +1,69 @@
+{
+  "reviewer": "Codex supervisor",
+  "scope": "Desktop regression references only, not full design/release approval",
+  "artifact": 12620626342,
+  "target": "52856f40c5c99de98918cff2d156e1979af32fa1",
+  "inspection": "Seven distinct new images visually inspected individually; exact duplicate hashes cover twelve new frames. Owner report zero losses, 2 fighters/20 infantry remaining, both control layers You. Peer archive empty before/after reload. Resolution disclosure readable with proposed rules clearly under review. Escape frames show visible focus on Arrival reports. No blocking clipping/overlap observed; scroll position explains partial upper content in disclosure frame. Existing broader map/concept fidelity holds remain. Reload peer lacks Refresh reports control seen on initial empty state; investigate state explanation, do not claim identical controls.",
+  "images": [
+    {
+      "file": "027-open-private-arrival-archives-1-fleet-marshal.png",
+      "sha256": "1daff4df2450c09e819e889d10dda8c517223a18a3ede4f7bde418c5ebeff6d4",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "027-open-private-arrival-archives-2-independent-marshal.png",
+      "sha256": "1461bc6f2cecef41174500d36263f09f16aea0aa7bfb9e4700254a50021044a7",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "028-read-arrival-losses-1-fleet-marshal.png",
+      "sha256": "df18fd342321d50c5ea6ed7ef198605b34acce18f88c97c2f0f9a700fb913133",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "028-read-arrival-losses-2-independent-marshal.png",
+      "sha256": "1461bc6f2cecef41174500d36263f09f16aea0aa7bfb9e4700254a50021044a7",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "029-read-arrival-control-1-fleet-marshal.png",
+      "sha256": "df18fd342321d50c5ea6ed7ef198605b34acce18f88c97c2f0f9a700fb913133",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "029-read-arrival-control-2-independent-marshal.png",
+      "sha256": "1461bc6f2cecef41174500d36263f09f16aea0aa7bfb9e4700254a50021044a7",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "030-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+      "sha256": "552968014c64e962d16d5082cead1a5b713ab3bf64614d1f115f54be9fa0c308",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "030-read-arrival-resolution-boundaries-2-independent-marshal.png",
+      "sha256": "1461bc6f2cecef41174500d36263f09f16aea0aa7bfb9e4700254a50021044a7",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "031-reload-private-arrival-archives-1-fleet-marshal.png",
+      "sha256": "1daff4df2450c09e819e889d10dda8c517223a18a3ede4f7bde418c5ebeff6d4",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "031-reload-private-arrival-archives-2-independent-marshal.png",
+      "sha256": "31dde11c26786af690a9d93a56fe1a059f1a1769c229da1c30df9d0407ac1ea7",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "032-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+      "sha256": "9e98602c828f4ded4af547a124da4eab33aa3d928d1ba89c0052aec44bf9ba42",
+      "disposition": "regression-approved"
+    },
+    {
+      "file": "032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "sha256": "c812e7bbcd54a4a12fc5aa15cc4d49d0bdec6ab0c2093330b4735fc4a346810e",
+      "disposition": "regression-approved"
+    }
+  ]
+}

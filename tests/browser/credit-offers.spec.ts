@@ -170,11 +170,23 @@ for (const mode of ["mock", "real"] as const)
       ).toBeFocused();
       await expect(
         panel.getByRole("button", {
-          name: "Awaiting acknowledgement…",
+          name: "Awaiting receipt",
           exact: true,
         }),
       ).toBeDisabled();
+      const initialization = page.waitForResponse(
+        (response) =>
+          new URL(response.url()).pathname ===
+            "/demo-clusterii/us-central1/campaignSecurity" &&
+          response.request().method() === "POST",
+        { timeout: 30000 },
+      );
       await page.reload();
+      const security = await initialization;
+      expect(security.status()).toBe(200);
+      expect(typeof (await security.json()).result.realAvailable).toBe(
+        "boolean",
+      );
       await expect(panel).toBeVisible();
       await expect(panel.getByLabel("Credits you offer")).toHaveValue("10.001");
       await expect(panel.getByLabel("Credits you request")).toHaveValue(

@@ -257,3 +257,33 @@ test("identity raster diagnostics exclude galaxy text, retain identity ancestry 
     },
   );
 });
+
+test("focused control audit rejects clipped button and outline without scrolling", async () => {
+  for (const inset of [0, 4, 8])
+    await fixture(
+      `<div style="height:80px;overflow:hidden;padding:20px"><div style="height:70px;overflow:auto"><button style="margin-left:10px;margin-top:${22 - inset}px;outline:3px solid gold;outline-offset:5px">Resume</button><div style="height:200px"></div></div></div>`,
+      async (page) => {
+        await page
+          .locator("button")
+          .evaluate((el) => el.focus({ preventScroll: true }));
+        if (inset < 8)
+          await expect(
+            page.evaluate(assertScreenFit, {
+              surface: "game" as const,
+              focusedControl: true,
+            }),
+          ).rejects.toThrow("Focused control paint clipped");
+        else
+          await page.evaluate(assertScreenFit, {
+            surface: "game" as const,
+            focusedControl: true,
+          });
+        expect(
+          await page
+            .locator("div div")
+            .first()
+            .evaluate((el) => el.scrollTop),
+        ).toBe(0);
+      },
+    );
+});

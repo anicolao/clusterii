@@ -3,16 +3,15 @@
   "title": "Plot, recover and follow an authoritative fleet arrival",
   "inventory": [
     "UX-08",
-    "UX-09",
     "UX-14",
     "UX-16"
   ],
   "description": "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.",
   "source": {
-    "commit": "f372d4dfc804da033707186457f5143af0e74b71",
+    "commit": "a52e8ee36db25a574f25fc22d7b35685e98807c3",
     "dirty": false,
     "spec": "tests/browser/fleet-travel.story.spec.ts",
-    "specSha256": "4c653d9d49d806ed15dbe2529cd55ebafdce80ea4a392bf96f76a8378ce329d0"
+    "specSha256": "a258a643c567cb1e578fe12ad352692f3019881f9164046f77e198189d367b07"
   },
   "mode": "verify",
   "status": "passed",
@@ -474,139 +473,6 @@
         {
           "player": "Independent marshal",
           "image": "026-recover-arrival-2-independent-marshal.png",
-          "verifications": []
-        }
-      ]
-    },
-    {
-      "id": "open-private-arrival-archives",
-      "description": "Both commanders open their own arrival archive. The owner recovers the secured system; the uninvolved commander receives no private arrival report.",
-      "actor": "Fleet marshal",
-      "kind": "player",
-      "acknowledgement": "Authorized history selects the owner's recorded arrival and acknowledges an empty archive to the other commander.",
-      "verifications": [
-        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
-      ],
-      "views": [
-        {
-          "player": "Fleet marshal",
-          "image": "027-open-private-arrival-archives-1-fleet-marshal.png",
-          "verifications": []
-        },
-        {
-          "player": "Independent marshal",
-          "image": "027-open-private-arrival-archives-2-independent-marshal.png",
-          "verifications": []
-        }
-      ]
-    },
-    {
-      "id": "read-arrival-losses",
-      "description": "Read the recorded zero losses and surviving complement through the bounded, keyboard-focusable report body.",
-      "actor": "Fleet marshal",
-      "kind": "player",
-      "acknowledgement": "The named report facts are fully visible inside the bounded panel and match the single authoritative outcome.",
-      "verifications": [
-        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
-      ],
-      "views": [
-        {
-          "player": "Fleet marshal",
-          "image": "028-read-arrival-losses-1-fleet-marshal.png",
-          "verifications": []
-        },
-        {
-          "player": "Independent marshal",
-          "image": "028-read-arrival-losses-2-independent-marshal.png",
-          "verifications": []
-        }
-      ]
-    },
-    {
-      "id": "read-arrival-control",
-      "description": "Read separately recorded orbit and surface control; both layers belong to the arriving commander at this tick.",
-      "actor": "Fleet marshal",
-      "kind": "player",
-      "acknowledgement": "The named report facts are fully visible inside the bounded panel and match the single authoritative outcome.",
-      "verifications": [
-        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
-      ],
-      "views": [
-        {
-          "player": "Fleet marshal",
-          "image": "029-read-arrival-control-1-fleet-marshal.png",
-          "verifications": []
-        },
-        {
-          "player": "Independent marshal",
-          "image": "029-read-arrival-control-2-independent-marshal.png",
-          "verifications": []
-        }
-      ]
-    },
-    {
-      "id": "read-arrival-resolution-boundaries",
-      "description": "Open Participants and resolution with the keyboard to read the recorded order, private opposing-force boundary and development-rule disclosure.",
-      "actor": "Fleet marshal",
-      "kind": "player",
-      "acknowledgement": "The expanded resolution explanation is visible and identifies proposed development rules without revealing opposing forces.",
-      "verifications": [
-        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
-      ],
-      "views": [
-        {
-          "player": "Fleet marshal",
-          "image": "030-read-arrival-resolution-boundaries-1-fleet-marshal.png",
-          "verifications": []
-        },
-        {
-          "player": "Independent marshal",
-          "image": "030-read-arrival-resolution-boundaries-2-independent-marshal.png",
-          "verifications": []
-        }
-      ]
-    },
-    {
-      "id": "reload-private-arrival-archives",
-      "description": "Reload both independent sessions and reopen their own archives with the keyboard. Stored outcomes survive; unrelated players still receive no report.",
-      "actor": "Fleet marshal",
-      "kind": "player",
-      "acknowledgement": "The same recorded destination/tick returns only to its recipient after loss of local panel state.",
-      "verifications": [
-        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling.",
-        "Normal and reduced motion retain the same authoritative history and recipient outcomes."
-      ],
-      "views": [
-        {
-          "player": "Fleet marshal",
-          "image": "031-reload-private-arrival-archives-1-fleet-marshal.png",
-          "verifications": []
-        },
-        {
-          "player": "Independent marshal",
-          "image": "031-reload-private-arrival-archives-2-independent-marshal.png",
-          "verifications": []
-        }
-      ]
-    },
-    {
-      "id": "close-arrival-archives-by-keyboard",
-      "description": "Both commanders close the archive with Escape and return to the opening Arrival reports control.",
-      "actor": "Fleet marshal",
-      "kind": "player",
-      "acknowledgement": "Both archive panels close and focus returns to each player's Arrival reports control.",
-      "verifications": [
-        "Keyboard dismissal changes no canonical outcome or receipt."
-      ],
-      "views": [
-        {
-          "player": "Fleet marshal",
-          "image": "032-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
-          "verifications": []
-        },
-        {
-          "player": "Independent marshal",
-          "image": "032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
           "verifications": []
         }
       ]

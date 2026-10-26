@@ -1,0 +1,1544 @@
+{
+  "archive": "/tmp/cluster-pr62-complete-invitations/artifact.zip",
+  "bytes": 116144964,
+  "sha256": "6f50654c9a3872c9f7605efde112a25bf781a3c5a9a79964c3e780cfbdb4b410",
+  "remote": {
+    "id": 12595558993,
+    "node_id": "MDg6QXJ0aWZhY3QxMjU5NTU1ODk5Mw==",
+    "name": "recovery-invitation-04c4459164665411a9af5bafa36dd40d3e39bf87-1",
+    "size_in_bytes": 116144964,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12595558993",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12595558993/zip",
+    "expired": false,
+    "digest": "sha256:6f50654c9a3872c9f7605efde112a25bf781a3c5a9a79964c3e780cfbdb4b410",
+    "created_at": "2026-10-25T10:48:51Z",
+    "updated_at": "2026-10-25T10:48:51Z",
+    "expires_at": "2026-11-24T10:48:48Z",
+    "workflow_run": {
+      "id": 40185678311,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr62-invitation-candidates",
+      "head_sha": "04c4459164665411a9af5bafa36dd40d3e39bf87"
+    }
+  },
+  "allEntriesCRCVerified": true,
+  "entries": [
+    {
+      "entry": "ci-evidence/recovery-request/request.json",
+      "bytes": 217,
+      "sha256": "2af8318c5be9253092ffb3245069e2fd0be7247a93efdb6fa53fe381a3063eb0",
+      "crc32": 313092139,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/ci-evidence/recovery-request/request.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "crc32": 3787177680,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/recovery-request/executor.json",
+      "bytes": 401,
+      "sha256": "6a02d76fe08a4e24be0fce6e4ff9f2e419cec68ee22e1c3367d11df61c7ee846",
+      "crc32": 2128158460,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/ci-evidence/recovery-request/executor.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "bytes": 29686,
+      "sha256": "1e260a5c1f64b4cc6b2fc798f736478a11f56f387debeda04a5e8f2ecafc1674",
+      "crc32": 2727205223,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "bytes": 342006,
+      "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+      "crc32": 4224095375,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "bytes": 55662,
+      "sha256": "ac2dfa3f56e0268345373ca2d17c30f694656b0825365f3e3ea5207a2bcdf830",
+      "crc32": 2441093415,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "bytes": 2043206,
+      "sha256": "5310670bb36f7e86a4c5b642db9c9b945ea1d661aeecbe5ba05f574adac06759",
+      "crc32": 236472913,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "bytes": 118314,
+      "sha256": "a8ab506118554346e42a112da579d56106a2b1ec15cd6f0c9d02c8baefe52eb2",
+      "crc32": 2136872432,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "bytes": 1529694,
+      "sha256": "4a553ff4566a67749229173bef0d292e8e32d068d339b864755f34448af1ad11",
+      "crc32": 3819163610,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "bytes": 118324,
+      "sha256": "8a4bd5bf1dc3ed8394f1cd116715683ed150082781dc91f8853344064a34071a",
+      "crc32": 3876584150,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "bytes": 1532180,
+      "sha256": "fbc6d309a6bc009fb6abadf68fc1e7f67adbc138444530c931943921475750ea",
+      "crc32": 3589790798,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "bytes": 193655,
+      "sha256": "3a523fb70d108bfa6563ac4b744bc833bec258b64667735a134a30afb93fd116",
+      "crc32": 3211381570,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "bytes": 901348,
+      "sha256": "ea93fec6df0ddb27f784b4b8e1a4c8cca8f8e54d0d3f1da7dcdabc3d828164aa",
+      "crc32": 1092521778,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "bytes": 193654,
+      "sha256": "28c7e9339a0d6afd32a234034248d462f1f0f6e0acf7902a396465f7ee850b3f",
+      "crc32": 3360071475,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "bytes": 933435,
+      "sha256": "3632aac21eb78dd309ae59ddac11d7de36720ecb82cac0f46051728bcc17196a",
+      "crc32": 3860939626,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "bytes": 150673,
+      "sha256": "384937fbb485c5f382df4201fcfaab8b6faec3587317aa31ba26172a5d3c088b",
+      "crc32": 670213918,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "bytes": 1116982,
+      "sha256": "51609be68e036577a8a8bcde19cb88abe96ada47b40c8a2469c28b0fb8bedca0",
+      "crc32": 4130099027,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "bytes": 236326,
+      "sha256": "ec6fdef4193c1d11f1efa05a3184b36a7fdf654664d36f175b257c6acdf64588",
+      "crc32": 3172416629,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "bytes": 759358,
+      "sha256": "cfa955d61dcc177dd6b7470a9b9cf62099cc4b8791ade7e4fa62e6c010f370f1",
+      "crc32": 3129432027,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "bytes": 145813,
+      "sha256": "2933ddadd5cd3be3104e70e97866e753a836633dca4abde74b0b7d0dccbac74c",
+      "crc32": 2475298759,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "bytes": 1115116,
+      "sha256": "23e0a320b0148d8995ff8ffa046349066fe36ad64789ab056205fa6a9e16faed",
+      "crc32": 597535389,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/README.md",
+      "bytes": 4701,
+      "sha256": "1e5c3bd9147f709d3b8b6716fe9efd03cf7e44f94fc062d2d6b32595feb83ce9",
+      "crc32": 4074516658,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+      "crc32": 1725575456,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/desktop/linux-arm64/story.json",
+      "bytes": 6944,
+      "sha256": "68871cdeea41859eb3437a90f9e5a90c8a90a572f5c0ad80037772a6d9466bc1",
+      "crc32": 1951838438,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "bytes": 29684,
+      "sha256": "17cfdda3524a4a714157ea4ebc5e62f3c68ca36d2b0db9c2fc03ccaaa9406dd1",
+      "crc32": 2269495336,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "bytes": 1392460,
+      "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+      "crc32": 2132724593,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "bytes": 55665,
+      "sha256": "0fe266017049bfa9ae7fb88af76e565435049b205d2bcd7949323c406bdbb6fe",
+      "crc32": 3253340664,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "bytes": 9041335,
+      "sha256": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+      "crc32": 322064207,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "bytes": 116675,
+      "sha256": "e6202a08bbe14bebd454a43cd703112c3a1684e0dbdddff74117d9de5c767a5a",
+      "crc32": 3672319907,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "bytes": 7227257,
+      "sha256": "327a71ac5a4a2d2b306bf69a16f4fd3eb932692d436dbd9727e068ba3af7d515",
+      "crc32": 2769004378,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "bytes": 116673,
+      "sha256": "c22d6f02fe8d488d2185ba9bfc293ad6c28f8410c1180aebd855bb82b59e4271",
+      "crc32": 3514924769,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "bytes": 7230322,
+      "sha256": "f6c96ec6a12d7899b6f2f1ccbea954418cd8901a4d8ea91df2017be76ef5db45",
+      "crc32": 746143804,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "bytes": 193720,
+      "sha256": "e92eb77f7846cb14b7220c8938b21c372666f9e9a525245bf5f0d9358e7c17d0",
+      "crc32": 213065574,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "bytes": 1781487,
+      "sha256": "660aa7700ae6b88b5b3b60aa829d23ae444b5c4d174c9e71193c317354612e3d",
+      "crc32": 4215228052,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "bytes": 193719,
+      "sha256": "a421fb321596e23387c0897e7c5603f4ccffbb23b3489430361aaa35279ea8ea",
+      "crc32": 3681419752,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "bytes": 1828859,
+      "sha256": "d403f389291905886703ebdfd1b3a0bf5bd9ba4a7a8bcd847d66db419f4712a8",
+      "crc32": 3992340908,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "bytes": 150882,
+      "sha256": "544b02eccdb8cc6a26b5370f4d1b31f345f040746355aac259a0d082106082ef",
+      "crc32": 35341546,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "bytes": 4912137,
+      "sha256": "10d38cc25ae6feb5855141cef21c5046811336d6e404cb6776be5c7a97422bd5",
+      "crc32": 2666853177,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "bytes": 236684,
+      "sha256": "fe2f161b6670b5ddd2d5fd4a8f408190844c405978eebef2983110dbdc29e2ed",
+      "crc32": 921923461,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "bytes": 4663364,
+      "sha256": "82b0f22e6a1f190907c98d6718412187716523d26c8f75435a3a5237b134a517",
+      "crc32": 1353390525,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "bytes": 146014,
+      "sha256": "ef52e3f58f73ae47e7ee1bfa9d95cd442e1c130eed2b4e46732f187ebf9d7f34",
+      "crc32": 10260736,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "bytes": 4908975,
+      "sha256": "d0044d0c64a4352f9ff01323125900678a8bf55af795d70f7e9abeed42b11e6f",
+      "crc32": 45619007,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/README.md",
+      "bytes": 4699,
+      "sha256": "1f0affd8fc39b921863ba237617f7f08fb554918e2afb6f21ca727e978b47689",
+      "crc32": 1515595874,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+      "crc32": 1322158050,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/large/linux-arm64/story.json",
+      "bytes": 6942,
+      "sha256": "453471f99b52e6531082a4fa8a14b6ee3711e80ddff844adfcb069542966bab4",
+      "crc32": 3164838355,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "bytes": 25683,
+      "sha256": "2eafff6c2a1f7564aabb4f1097ddea846b94b1bc6e21c40b54563226048bea1a",
+      "crc32": 3279919646,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "bytes": 98167,
+      "sha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+      "crc32": 1505011399,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "bytes": 50907,
+      "sha256": "a4696a2e3ac9a4bbfc6a7bb7a53ac2a450411fc68f2d95d43e928ecb8073248b",
+      "crc32": 2116402519,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "bytes": 499033,
+      "sha256": "f4cfab65b335216f7557a409915cb60f01e456a72cd059de2da434a00fb5baaa",
+      "crc32": 1110926564,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "bytes": 114512,
+      "sha256": "cc52d99b940a90616ac2c602beb51fde403209a29768c5e2f3f4f56c043c735c",
+      "crc32": 505057987,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "bytes": 148932,
+      "sha256": "b64e0ffa689865c8f3305359e61a6e3480ab2c09e298ca1f41588032343b14ea",
+      "crc32": 3456713562,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "bytes": 114496,
+      "sha256": "05dd4c0fdefcf76c2930c8deed0507e713ab99557cca206ebeea87e503ba3b7a",
+      "crc32": 2609521573,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "bytes": 150317,
+      "sha256": "9ce4041717db4a6a3867d40633ab1c7d87769109baf352fbf0bca890bd81177d",
+      "crc32": 1481188000,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "bytes": 190064,
+      "sha256": "325a2c2d66a576eaa889c46a2142a9e63e930e21598bed5c99090262e7881d49",
+      "crc32": 2387089852,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "bytes": 285944,
+      "sha256": "6f4a317852394fac58ccd20293ce55234b153ade8a4930fa3b87fd601eb43dc6",
+      "crc32": 4287318796,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "bytes": 190062,
+      "sha256": "70099a63f0ef1dacecb28ce8da202a81d3abd3de7dec3aae93897f4cbf1bc70e",
+      "crc32": 4025554546,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "bytes": 297841,
+      "sha256": "498f128f15213338876aae5ef0725c0798bf936e03955a915ff91b8c85ad2e98",
+      "crc32": 33472263,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "bytes": 146784,
+      "sha256": "542c20546219541e48c8be73029a16d8420fad03cc28df32371ee07dad039324",
+      "crc32": 3557653423,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "bytes": 260983,
+      "sha256": "31b87156dccf6dcc7fb06ea419a38de38446cf7fa36a6544d6effa1015de94c9",
+      "crc32": 2612596044,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "bytes": 226782,
+      "sha256": "e5ca8594549d42af95b15b8f5bffc1ce248402e28abc4adce03cb18c8de2a418",
+      "crc32": 2320265651,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "bytes": 53280,
+      "sha256": "6a0efb4a46f6e254c6822b1cf117fe62585d497078b090edf18a6fb9d0f35e29",
+      "crc32": 3003308711,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "bytes": 141940,
+      "sha256": "de6839d6a89535dcf1520be74e93bdf363efd3798f98fd3c45e3ed3e75eb1cbd",
+      "crc32": 464018196,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "bytes": 259064,
+      "sha256": "49e64abe6f3b70b83370aa5eafea054c3b5ba0a55513aff5a3527a44eda71fee",
+      "crc32": 1800380702,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/README.md",
+      "bytes": 4699,
+      "sha256": "5da6254abc0f855a3336b4bca0c771162aa1e72b1f13fb91a3e7b98d550abfa0",
+      "crc32": 27366116,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/renderer.json",
+      "bytes": 757,
+      "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5",
+      "crc32": 851725460,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/phone/linux-arm64/story.json",
+      "bytes": 6940,
+      "sha256": "00b710ec25bf71910784048a9baaf2e835d1ff6a04839823dbe9c6610fa3d924",
+      "crc32": 1831087389,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "bytes": 29638,
+      "sha256": "0bcafa628f652ea03f96280ae1b4cb2bf9eac528ad49f273f394b27811cd4a9e",
+      "crc32": 2117156247,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "bytes": 213076,
+      "sha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+      "crc32": 2647864918,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "bytes": 55030,
+      "sha256": "04fb58ed53f7b860cc29536fbe35ce0777a57c33e730980484d6fa4169a17303",
+      "crc32": 653503627,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "bytes": 118245,
+      "sha256": "83fcd7939496b8feaf1bf46d4cc44e9a651cf609aedd91ad7925add46605298c",
+      "crc32": 2457509453,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "bytes": 1431439,
+      "sha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37",
+      "crc32": 2661552632,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "bytes": 967982,
+      "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "crc32": 2576786694,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "bytes": 118243,
+      "sha256": "be9438bb4c454c5a83654606092f7f3ed0185add054a5c5d4e4de1d7aa47992f",
+      "crc32": 2145645781,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "bytes": 969515,
+      "sha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+      "crc32": 2502743946,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "bytes": 140674,
+      "sha256": "08207f5ac8b85a8164dc2d48b2484ac1263317da1080cf53aae5e41592e844f3",
+      "crc32": 1926164894,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "bytes": 612073,
+      "sha256": "92df4feacf44eb11745ffe66e82aa0cb4a0e44bb1dae4f63af124503bccefd06",
+      "crc32": 4256076165,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "bytes": 140673,
+      "sha256": "431e8153c07360e2f53ffdb7138e5783fc6d02130ad891a58e694cf77ab249cf",
+      "crc32": 181227849,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "bytes": 641459,
+      "sha256": "6f7d02e40afbe8b8fb5dc6c86dcb41d6af63a2b846e9c1d606d38b54f0634232",
+      "crc32": 2938652021,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "bytes": 150340,
+      "sha256": "e4306002f1be88f7afc3a09991a8ce99d293f0190092f14fc5a42559a68db169",
+      "crc32": 3709051367,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "bytes": 698222,
+      "sha256": "da23a824957d8c93628faaaf0a9b13bc75df14d741abaea7f85fbaba9b7ac947",
+      "crc32": 205091064,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "bytes": 235863,
+      "sha256": "ed00aa40d1d348570c74353bdea8ab068498e1da79ea9b858e43d56fd030e026",
+      "crc32": 2653303354,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "bytes": 315329,
+      "sha256": "fcf9fcbf5a20c4acdb208da9cc16743188b733cb288823b3541fc20a52679b7e",
+      "crc32": 4040709884,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "bytes": 145488,
+      "sha256": "c460b183566e0870ac27730edb2fb4bef8e25d53cedef780b909f9968b432f85",
+      "crc32": 2129827629,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "bytes": 695918,
+      "sha256": "70316190d9f722010deb93ff30e717f7544733efac54d3be5db38c7ce7ffea01",
+      "crc32": 1294048986,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/README.md",
+      "bytes": 4699,
+      "sha256": "9dc0549db2a299b04938d3846094df56542bca318fde4d4460842ad6b601a689",
+      "crc32": 1141410232,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+      "bytes": 6941,
+      "sha256": "e28e247619b712fa3cc511b1bba5f1845355965d0ef5ddb99b3b81a710f96e9b",
+      "crc32": 1595782607,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "bytes": 29686,
+      "sha256": "1e260a5c1f64b4cc6b2fc798f736478a11f56f387debeda04a5e8f2ecafc1674",
+      "crc32": 2727205223,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "bytes": 342006,
+      "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+      "crc32": 4224095375,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "bytes": 55662,
+      "sha256": "ac2dfa3f56e0268345373ca2d17c30f694656b0825365f3e3ea5207a2bcdf830",
+      "crc32": 2441093415,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "bytes": 2043206,
+      "sha256": "5310670bb36f7e86a4c5b642db9c9b945ea1d661aeecbe5ba05f574adac06759",
+      "crc32": 236472913,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "bytes": 145811,
+      "sha256": "8fedc26f27229ee5bd603240665d2042209fefc1b0e31a2f539e29719544a6d1",
+      "crc32": 2498417111,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "bytes": 1116097,
+      "sha256": "419f284d32b3b16cc449b241f7aaedf8629dd000c1c0ec626d7c1684c5e765f9",
+      "crc32": 1152465491,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "bytes": 236330,
+      "sha256": "587ea2d5c5c56774c6da627cd005ca860389ad98f3518df14ea411fb14ea0840",
+      "crc32": 3084151771,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "bytes": 760457,
+      "sha256": "eb550b0652cca319b0d782cebcfd2b96bb1771ee1bacfec0096a8f76050d04f2",
+      "crc32": 1780642571,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "bytes": 145815,
+      "sha256": "caae497118b66f6281206a1f7cf04d96e5f5d35e2535bcf3132044906f59e9cf",
+      "crc32": 1429365606,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "bytes": 1116097,
+      "sha256": "419f284d32b3b16cc449b241f7aaedf8629dd000c1c0ec626d7c1684c5e765f9",
+      "crc32": 1152465491,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "bytes": 32827,
+      "sha256": "c197a0dce7652d8edc06398269592306e51830587294dd652c13ffd30f947dbb",
+      "crc32": 236761727,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "bytes": 381920,
+      "sha256": "172819ff4f249c310250b1206f2fdac2fa3faecea754311696a6cd0a7bc01c97",
+      "crc32": 3418319505,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "bytes": 57599,
+      "sha256": "61b4a1754dc125d3c24245d63d6302dd06f9600e8a01f87cb80db1c3693fb6ff",
+      "crc32": 595864091,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "bytes": 409563,
+      "sha256": "a30008f2aab0e5fc96f5542aaa15eca05464bbd20a8a4c2348c1b04b9612a2a9",
+      "crc32": 351128440,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "bytes": 29970,
+      "sha256": "8b478a4e30d123580374837425c06ec9b340aff1364cf115d84fac17de2fb885",
+      "crc32": 380600062,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "bytes": 343642,
+      "sha256": "466cdeb63fbab8a9ef68d63ef925225b7a98a6a91ae429f01bcc02d0e9365a39",
+      "crc32": 1704656328,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "bytes": 70857,
+      "sha256": "aa5fd267317f20716562a928f3f7628e6a3ab5509aeb3e818dbf5db16f17036a",
+      "crc32": 2920529722,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "bytes": 2040677,
+      "sha256": "43f7de1cd8e59aed17f8e108a81b80a04218651bfc38dc1a1fe7878fbda8c37b",
+      "crc32": 1229479351,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/README.md",
+      "bytes": 5158,
+      "sha256": "a761e3179ee8c2dffb57058bf49451656fdf57c0c83c4eb7e086c7289f4d9752",
+      "crc32": 1830329028,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+      "crc32": 1725575456,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/desktop/linux-arm64/story.json",
+      "bytes": 7352,
+      "sha256": "0036d2c29e7fce950deb9438e4e128790e97e5a3f4729be40961aa8bc7df1ff2",
+      "crc32": 1691500474,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "bytes": 29684,
+      "sha256": "17cfdda3524a4a714157ea4ebc5e62f3c68ca36d2b0db9c2fc03ccaaa9406dd1",
+      "crc32": 2269495336,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "bytes": 1392460,
+      "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+      "crc32": 2132724593,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "bytes": 55665,
+      "sha256": "0fe266017049bfa9ae7fb88af76e565435049b205d2bcd7949323c406bdbb6fe",
+      "crc32": 3253340664,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "bytes": 9041335,
+      "sha256": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+      "crc32": 322064207,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "bytes": 146012,
+      "sha256": "2fb3d2a775d3287b73a491964786b478434dab7215634e378ac298b3272cbd36",
+      "crc32": 1700278195,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "bytes": 4909510,
+      "sha256": "38e8e6d277022be7e040b5fef704cda18c6de704960b0c3110c6e3e29e0ea8ce",
+      "crc32": 2672550559,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "bytes": 236688,
+      "sha256": "ec80565a4066999212da72f9669973b46c66188a05330812f4b8dfc9d4c8c797",
+      "crc32": 1048993983,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "bytes": 4664518,
+      "sha256": "b4da9438140b45db44e3c698d655734da8fe8e1dee646af4fa511e82ae07f18f",
+      "crc32": 3953499689,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "bytes": 146016,
+      "sha256": "e2021f7f7e2847876c469c9fca0d4c2b23b59809506965a7233bba2999f0174a",
+      "crc32": 1777473418,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "bytes": 4909510,
+      "sha256": "38e8e6d277022be7e040b5fef704cda18c6de704960b0c3110c6e3e29e0ea8ce",
+      "crc32": 2672550559,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "bytes": 32812,
+      "sha256": "3edf6dff96c8e84d1e4ef92683bb80b4eea5dd902adcc4fa560debdaa7f3b960",
+      "crc32": 372964036,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "bytes": 1428900,
+      "sha256": "66ed9e76b98dbfc2aada2c7db6aa5cc9b19ff3d1dcf7deb322dab59b83e16257",
+      "crc32": 107195745,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "bytes": 57576,
+      "sha256": "18d90c36c6ea0b3740f1bcdd7262cebfc30a62b9adfb24b2b41dd50722ca084f",
+      "crc32": 3867577782,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "bytes": 1399326,
+      "sha256": "7c20bf98896ae8c98200a5267ab76eb771c97c7b03fd3ac27883e0749d30a327",
+      "crc32": 687752983,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "bytes": 29970,
+      "sha256": "518936917d4b2fa0ffa1a812ca3a2fff086cd98c87eba0ea302ba7f4c877079e",
+      "crc32": 1638286307,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "bytes": 1396438,
+      "sha256": "a9a4f482bdc432e098babf670565ba8a02a1ba99aedf819c4936bf52bc6ea934",
+      "crc32": 820998114,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "bytes": 70900,
+      "sha256": "d783f0ed59dcf6aa247df465151f7e80c11f3e31edca62aecfa30fa51b7955b2",
+      "crc32": 2152261088,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "bytes": 9049160,
+      "sha256": "bbb45fec5257ea2fea07dd521df2adf1e8403378bd37fbc428724981daf1c4b0",
+      "crc32": 924571679,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/README.md",
+      "bytes": 5156,
+      "sha256": "ef09ea7d0e9896f232ac4df78f57d7c1809852cc180e5ae041d3fcfb1addf7e6",
+      "crc32": 2973286803,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/renderer.json",
+      "bytes": 759,
+      "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+      "crc32": 1322158050,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/large/linux-arm64/story.json",
+      "bytes": 7350,
+      "sha256": "eee51cfd527b542111584dff8889443e55323fd5b7d406aeb5711019b7f27cd8",
+      "crc32": 580825560,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "bytes": 25683,
+      "sha256": "2eafff6c2a1f7564aabb4f1097ddea846b94b1bc6e21c40b54563226048bea1a",
+      "crc32": 3279919646,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "bytes": 98167,
+      "sha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+      "crc32": 1505011399,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "bytes": 50907,
+      "sha256": "a4696a2e3ac9a4bbfc6a7bb7a53ac2a450411fc68f2d95d43e928ecb8073248b",
+      "crc32": 2116402519,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "bytes": 499033,
+      "sha256": "f4cfab65b335216f7557a409915cb60f01e456a72cd059de2da434a00fb5baaa",
+      "crc32": 1110926564,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "bytes": 141938,
+      "sha256": "d8e977fbf48bcb841da8537eb7b515b18878486ee821bd341a5b3a86c2ddaa64",
+      "crc32": 2264061230,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "bytes": 259329,
+      "sha256": "6ad551099248edb0bf0e95a6f4603c6f1177918a2cc87aaee77daf4797a570bf",
+      "crc32": 992287768,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "bytes": 226786,
+      "sha256": "25a5c4b947fb90d61712a8a6777975fa85afb39d1f1135cdb8e2d4eca2b7c818",
+      "crc32": 1250980305,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "bytes": 53855,
+      "sha256": "90c856876801906be47b56b3a82ee4188184b57b661700becc827152164f7fcf",
+      "crc32": 1785830394,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "bytes": 141942,
+      "sha256": "22ed0851377ca0f6076e7f0aef19e712e93f1b08c7287593d054adab77280044",
+      "crc32": 2461395478,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "bytes": 259329,
+      "sha256": "6ad551099248edb0bf0e95a6f4603c6f1177918a2cc87aaee77daf4797a570bf",
+      "crc32": 992287768,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "bytes": 29024,
+      "sha256": "999ceaaa23aeb3c37a872811f8037b01a962bd2d107ef440403105fed23674a0",
+      "crc32": 2676266413,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "bytes": 126633,
+      "sha256": "01922527797701fd5dc931e3e762e56f740fc3a9e49b4683f574a7ab535ab9c7",
+      "crc32": 4224141977,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "bytes": 54106,
+      "sha256": "c8f39402a96a7d434ea2a58d1882a5ccc5e95d82596af1f6b8b42b32c8fc2650",
+      "crc32": 3403153157,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "bytes": 151254,
+      "sha256": "b0f5415dff0e80a645de24098bab2057eaed5f878a4006678ff86d985bcb348d",
+      "crc32": 2158253463,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "bytes": 26193,
+      "sha256": "3f5c5aa64b8db827212d25f67f9842626b3047c0ffdc749274ee24d7495568ed",
+      "crc32": 677674447,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "bytes": 97442,
+      "sha256": "8f7289e634ae7d216067f68e64228db235a03c88038b4df0ef207cfa205286b3",
+      "crc32": 375264462,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "bytes": 66449,
+      "sha256": "29583bc3f5be73517c501451a8446dd29e59cc090db355ed0c5210d511f3b7da",
+      "crc32": 1833654709,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "bytes": 496960,
+      "sha256": "54583dcbbffce811271bfe2d9f86e5ea995aee25d1aaeccd13918e3ffdbaafa9",
+      "crc32": 3737946070,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/README.md",
+      "bytes": 5156,
+      "sha256": "86452e42607c32cb0f5819a7856bd0df998388574fe4311c353d0bf3e4c72495",
+      "crc32": 3269595821,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/renderer.json",
+      "bytes": 757,
+      "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5",
+      "crc32": 851725460,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/phone/linux-arm64/story.json",
+      "bytes": 7348,
+      "sha256": "907d8423a55d58b43629692bbf8fb3db3bf855b2dc6c6c320c816ff183b4776d",
+      "crc32": 391082020,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "bytes": 29638,
+      "sha256": "0bcafa628f652ea03f96280ae1b4cb2bf9eac528ad49f273f394b27811cd4a9e",
+      "crc32": 2117156247,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "bytes": 213076,
+      "sha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+      "crc32": 2647864918,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "bytes": 55030,
+      "sha256": "04fb58ed53f7b860cc29536fbe35ce0777a57c33e730980484d6fa4169a17303",
+      "crc32": 653503627,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/003-preserve-return-link-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "bytes": 1431439,
+      "sha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37",
+      "crc32": 2661552632,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "bytes": 145486,
+      "sha256": "01fb1c44462144a07816c1a164c1eb29bd8a04fe327471dc8c6a1e296a51f139",
+      "crc32": 2358325060,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "bytes": 696928,
+      "sha256": "2f4aa67e2e8350a9fa1ba1429426ae00daade6879db0707998025741f30e5f52",
+      "crc32": 3334824832,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "bytes": 235867,
+      "sha256": "b7868d5a11f10b167e7fb0aa4f1324d8d4424ec8ad7a0ec0f9f7572795c2fbb7",
+      "crc32": 2985470082,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "bytes": 316449,
+      "sha256": "d0f0892bb892c041c6bf8bf7094e55933d762d99d6b9da37b6c8ca8611f339ff",
+      "crc32": 329450222,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "bytes": 145490,
+      "sha256": "7e8bc362aaf825f5aa2ca5d78a1aa72f8bfe498aa132cdbf691c43df22bc532b",
+      "crc32": 1282191840,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/005-reload-return-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "bytes": 696928,
+      "sha256": "2f4aa67e2e8350a9fa1ba1429426ae00daade6879db0707998025741f30e5f52",
+      "crc32": 3334824832,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "bytes": 32777,
+      "sha256": "25f2b54b529f6b3882c6b062e9e119f743d66e0eb04eee352682fb88cc2b1462",
+      "crc32": 1019349165,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/006-missing-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "bytes": 260584,
+      "sha256": "9155cc5fd964bf3df2b733dc05eeedcd92d1474e85feac84ae062ba8055a4b09",
+      "crc32": 2069740017,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "bytes": 298018,
+      "sha256": "75f8fcda1611d445608a3bc941684006d5c1f00b4814c3ed67b12ee0e7853e05",
+      "crc32": 880370393,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "bytes": 57512,
+      "sha256": "c7234a0139725459b9f5430fb197bd7c77381d78bc0da0c2bf8d11c3c8190e8c",
+      "crc32": 2440228779,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/007-recover-directory-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "bytes": 29921,
+      "sha256": "f880d65f62e197d5f25a44fdcfab7dcc2060408b718db6054cddc27a5f737d39",
+      "crc32": 2997873635,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/009-denied-invitation-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "bytes": 213608,
+      "sha256": "ddc4d02817a06aaaf8b4d5019d67e8ddf66b18a61a10f3314e1ec9c047474136",
+      "crc32": 2522065060,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "bytes": 69927,
+      "sha256": "e739d2a8730cfae589bff0f4542f0400b2f122d9c08184f4b5ba597b8d1b62dd",
+      "crc32": 3705832177,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/010-recover-entry-1-returning-envoy.layout.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "bytes": 1428193,
+      "sha256": "7364d1978d9d4ce3eeca2ac56e0d405e6557b3e5e45d6cbf9c5f6c904218f5fc",
+      "crc32": 1609071850,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/README.md",
+      "bytes": 5156,
+      "sha256": "e9cf6b4597777ac9bdefd026862f2518c04c8617b9390471939341280f7721cb",
+      "crc32": 2425102582,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/README.md",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/renderer.json",
+      "bytes": 758,
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "crc32": 233617160,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/renderer.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation-returning-recovery/short/linux-arm64/story.json",
+      "bytes": 7349,
+      "sha256": "4b20f86425ee33f7630084b92f2c63de5803587fe8b5e3791ee22c27b0ea2303",
+      "crc32": 972199943,
+      "localOriginal": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/story.json",
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-desktop/attachments/Illustrated-story-395ce200a56d79514c223d9ca2c447263a5f2d33.md",
+      "bytes": 5158,
+      "sha256": "a761e3179ee8c2dffb57058bf49451656fdf57c0c83c4eb7e086c7289f4d9752",
+      "crc32": 1830329028,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-large/attachments/Illustrated-story-06e3c0305fef071a9336396641bfbbed1f328d40.md",
+      "bytes": 5156,
+      "sha256": "ef09ea7d0e9896f232ac4df78f57d7c1809852cc180e5ae041d3fcfb1addf7e6",
+      "crc32": 2973286803,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-phone/attachments/Illustrated-story-8eee11a21f63b8d1225390b4a2d06fce0c6b8207.md",
+      "bytes": 5156,
+      "sha256": "86452e42607c32cb0f5819a7856bd0df998388574fe4311c353d0bf3e4c72495",
+      "crc32": 3269595821,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-short/attachments/Illustrated-story-ecdce4c71e6c5c1177dd38d1100ce80838860712.md",
+      "bytes": 5156,
+      "sha256": "e9cf6b4597777ac9bdefd026862f2518c04c8617b9390471939341280f7721cb",
+      "crc32": 2425102582,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-desktop/attachments/Illustrated-story-a9b2310fc3f7b2d5d4fd3f62a644686bda1a49d2.md",
+      "bytes": 4701,
+      "sha256": "1e5c3bd9147f709d3b8b6716fe9efd03cf7e44f94fc062d2d6b32595feb83ce9",
+      "crc32": 4074516658,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-large/attachments/Illustrated-story-ae2d2da0ec3dfb6d22e94e88294fb77602191c13.md",
+      "bytes": 4699,
+      "sha256": "1f0affd8fc39b921863ba237617f7f08fb554918e2afb6f21ca727e978b47689",
+      "crc32": 1515595874,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-phone/attachments/Illustrated-story-d08d8518d65afc12a6ba5d2062b422fe9532e690.md",
+      "bytes": 4699,
+      "sha256": "5da6254abc0f855a3336b4bca0c771162aa1e72b1f13fb91a3e7b98d550abfa0",
+      "crc32": 27366116,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/attachments/Illustrated-story-548c89fc20cfe276ae6f76b1e803c3d62b29a9ad.md",
+      "bytes": 4699,
+      "sha256": "9dc0549db2a299b04938d3846094df56542bca318fde4d4460842ad6b601a689",
+      "crc32": 1141410232,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+      "crc32": 503735925,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "firestore-debug.log",
+      "bytes": 68367,
+      "sha256": "2f7112770557fda2cfa96da9b6ff08a0101391e2960a79c849b9793d3287ab01",
+      "crc32": 220647592,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/containerd.log",
+      "bytes": 11788,
+      "sha256": "bfe365fca8ec7524f0447138af6e791271da33d73558c322bcbf29fda1449072",
+      "crc32": 1506750425,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine-info.log",
+      "bytes": 1791,
+      "sha256": "275f90506be9b8f4c43831ac201d354be35f6bb864d604b7f97fae2d49f055d1",
+      "crc32": 1612130765,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine.log",
+      "bytes": 2728,
+      "sha256": "23043f3e0d2efc0df95683213d3183d4edc63aa132ea8edea912312e8458d96d",
+      "crc32": 312640999,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+      "crc32": 4285110663,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-inspect.json",
+      "bytes": 2411,
+      "sha256": "66c27da79350b9771bb06f39181e70bbbc7e8fdd1aa84c603090bcca073ed6cc",
+      "crc32": 1726370134,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-load.log",
+      "bytes": 49,
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+      "crc32": 2329796893,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "sha256": "1e8196ab016159d8e8f94c1987f2e0526a2fb29503fa6818246c0865e870fbf6",
+      "crc32": 2329882558,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "sha256": "8c680a2c11a936d6443fab840da5effd675eedacf08395e6e8464ccc916fb8c9",
+      "crc32": 385762434,
+      "localOriginal": null,
+      "remoteVerifiedArchive": 12595558993
+    }
+  ],
+  "localOriginalCount": 170,
+  "openProcesses": false,
+  "removed": true,
+  "removedAt": "2026-10-25T17:19:24.994681+00:00"
+}

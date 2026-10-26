@@ -1,0 +1,275 @@
+[
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-keyboard-return/short/linux-arm64/001-arrive-1-visitor.png",
+    "baseline": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/001-arrive-1-visitor.png",
+    "sha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37",
+    "baselineSha256": "83fe944f9530d4272360ba4ca369e324375dcc2854019259940d40a885c60d37",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-keyboard-return/short/linux-arm64/002-keyboard-learn-1-visitor.png",
+    "baseline": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/002-keyboard-learn-1-visitor.png",
+    "sha256": "6f8200485417bf0da3f386a9ae2c1ce19b8b6b267c691a446dc79bcd0970dba9",
+    "baselineSha256": "6f8200485417bf0da3f386a9ae2c1ce19b8b6b267c691a446dc79bcd0970dba9",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-keyboard-return/short/linux-arm64/003-return-from-learn-1-visitor.png",
+    "baseline": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/003-return-from-learn-1-visitor.png",
+    "sha256": "bb29b0d61b11e0e60d1f636955726ee935f35c73fd8cde3b84d51b0c7b832522",
+    "baselineSha256": "bb29b0d61b11e0e60d1f636955726ee935f35c73fd8cde3b84d51b0c7b832522",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "baselineSha256": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-keyboard-return/short/linux-arm64/005-close-identity-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/005-close-identity-1-commander.png",
+    "sha256": "c013e0d51a640bb1da3aaee54c80bd8fbb57a2e0e5b208f9b85d489e5ca5d5c6",
+    "baselineSha256": "c013e0d51a640bb1da3aaee54c80bd8fbb57a2e0e5b208f9b85d489e5ca5d5c6",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "baselineSha256": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-validation/short/linux-arm64/002-draft-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-validation/short/linux-arm64/002-draft-1-commander.png",
+    "sha256": "a8df704240a8a0ff21ed52e71a9d5548757fa68b95a9d0f8ef3eaccb635e5941",
+    "baselineSha256": "b1dcb8356d16e4f2a270cb89a97041b47a1e0ee07ffb92ba088717f103913187",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-validation/short/linux-arm64/003-reject-invalid-name-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-validation/short/linux-arm64/003-reject-invalid-name-1-commander.png",
+    "sha256": "3b1001f25a35411b4cc818a4fac3140102642f5889723dd64e59ab783d050567",
+    "baselineSha256": "d5100a53683dda6ed58122ef7d55b30f90934e0e9aba3051c17e18a42a1f6149",
+    "identical": false,
+    "rawPixelDiff": 2573,
+    "bounds": [
+      583,
+      268,
+      1012,
+      284
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-validation/short/linux-arm64/004-correct-draft-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-validation/short/linux-arm64/004-correct-draft-1-commander.png",
+    "sha256": "5e8fcb44d9962ae1d525e8004d8a8ba0352377ccb1fc59fbaa24eb849143bfa5",
+    "baselineSha256": "7f4f1e4ce4ba3edb4dd004ce038f021a627d14632eab02d3915ae35dff92401a",
+    "identical": false,
+    "rawPixelDiff": 2573,
+    "bounds": [
+      583,
+      268,
+      1012,
+      284
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-validation/short/linux-arm64/005-save-correction-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-validation/short/linux-arm64/005-save-correction-1-commander.png",
+    "sha256": "2e1a3911a0c13a6bf70628b03708ed0365f5b9af04497ed9fab2ea13cf01fae2",
+    "baselineSha256": "038f545e252bbaf41d7f5f12dcd042d15e0484bb092589e98ff86a10f308a30f",
+    "identical": false,
+    "rawPixelDiff": 2573,
+    "bounds": [
+      583,
+      268,
+      1012,
+      284
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/identity-validation/short/linux-arm64/006-recover-correction-1-commander.png",
+    "baseline": "tests/browser/story-baselines/identity-validation/short/linux-arm64/006-recover-correction-1-commander.png",
+    "sha256": "18acd5a54d7bd6262c3012adcfe8580b1cc49992388c003c5e99629afe0ddb58",
+    "baselineSha256": "49d3c3caee8d718a11094d6394ebd387f1fad28d73646e4dfbd8d14ec1808f39",
+    "identical": false,
+    "rawPixelDiff": 1597,
+    "bounds": [
+      583,
+      289,
+      1012,
+      304
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/002-account-entry-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/002-account-entry-1-commander-first-device.png",
+    "sha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+    "baselineSha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "baselineSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/003-open-devices-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/003-open-devices-1-commander-first-device.png",
+    "sha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+    "baselineSha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/004-close-devices-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/004-close-devices-1-commander-first-device.png",
+    "sha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+    "baselineSha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/005-cancel-confirmation-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/005-cancel-confirmation-1-commander-first-device.png",
+    "sha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0",
+    "baselineSha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "baselineSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/007-interrupted-confirmation-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/007-interrupted-confirmation-1-commander-first-device.png",
+    "sha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0",
+    "baselineSha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/007-interrupted-confirmation-2-commander-second-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/007-interrupted-confirmation-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "baselineSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/009-reload-recovery-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/009-reload-recovery-1-commander-first-device.png",
+    "sha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+    "baselineSha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/009-reload-recovery-2-commander-second-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/009-reload-recovery-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "baselineSha256": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-1-commander-first-device.png",
+    "sha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+    "baselineSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-2-commander-second-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-2-commander-second-device.png",
+    "sha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+    "baselineSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+    "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+    "baselineSha256": "9cdb1311edad45ad79c206c6120ee1448d2e13192762864a99785221bfbd1842",
+    "identical": false,
+    "rawPixelDiff": 2560,
+    "bounds": [
+      583,
+      289,
+      1012,
+      305
+    ]
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-2-commander-second-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-2-commander-second-device.png",
+    "sha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+    "baselineSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+    "identical": true
+  },
+  {
+    "path": "/tmp/cluster-pr53-layer-linux-review/originals/test-results/stories/session-interrupted-recovery/short/linux-arm64/013-reload-identity-1-commander-first-device.png",
+    "baseline": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/013-reload-identity-1-commander-first-device.png",
+    "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+    "baselineSha256": "07073d1d72d4351d4e1ec23280ca009c8dfee62f80c2487692bd3dae7ae62f39",
+    "identical": false,
+    "rawPixelDiff": 1597,
+    "bounds": [
+      583,
+      289,
+      1012,
+      304
+    ]
+  }
+]

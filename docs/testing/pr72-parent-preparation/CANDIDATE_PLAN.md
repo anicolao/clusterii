@@ -1,0 +1,9 @@
+# Future PR72 candidate boundary — not dispatched
+
+Prepared source d9c8ba61 retains original72 ancestry and reviewed71 preparation454d4185. First carry forward the complete independently reviewed PR71 references and its approved integration boundary; keep current71 source/executor immutable. Reconcile the then-current parent normally and recheck source/helper/reference applicability before binding an execution request.
+
+One complete selected-history-consent journey at each of phone/desktop/large/short, original300s test/30s step/10s capture limits, retries0 and no snapshot updates. Expected34views per size,136total:100 views belonging to PR71 plus36new draft views (023–028,9per size). Existing viewport/title collection must remain exactly180 with one feature009 selection per viewport. No partial-story early success.
+
+Bind exact source/spec, pinned Linux renderer and all inherited reference trees; require complete successful manifests and unchanged reference paths. Compare every capture to the approved current parent, inspect every new/changed composition before promotion, and retain failed/partial evidence. The shared acknowledgement condition can affect earlier Conversations scenes, so unchanged image identity must be demonstrated rather than assumed. No renderer/reference substitution from historical Darwin images.
+
+Current PR71 phone/desktop evidence:50originals verified by supervisor,30inherited exact including phone017,20new images independently approved for regression. Exact approval JSON retained here. Other50large/short originals remain pending, supervisor owns retrieval/review; no duplicate transfer. Concept10 fidelity and existing participant-copy gaps are not declared fixed. No PR72 generation/publication before complete71review and approved-parent carry-forward.

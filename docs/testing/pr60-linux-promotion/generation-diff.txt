@@ -1,0 +1,10 @@
+ .github/recovery/pr60-cargo-01.json  |   8 +++
+ .github/workflows/recovery-cargo.yml |  48 +++++++++++++++++
+ PROMPT_WORK.md                       |   2 +
+ nix/ci-renderer.sh                   |   1 +
+ scripts/cargo-candidates.mjs         |  23 ++++++++
+ scripts/cargo-dispatch.test.mjs      |  23 ++++++++
+ scripts/cargo-request.mjs            | 102 +++++++++++++++++++++++++++++++++++
+ scripts/cargo-request.test.mjs       |   9 ++++
+ scripts/ci-in-renderer.sh            |   4 ++
+ 9 files changed, 220 insertions(+)
