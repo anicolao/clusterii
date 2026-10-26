@@ -589,3 +589,5 @@ Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Bind PR73 reviewed inventory to explicit viewport/image fields and original renderer-bearing story manifests.
 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Prepare immutable PR73 strict168 verification with reviewed hashes, unchanged source, zero retries and no snapshot updates.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Request one first-attempt PR73 strict168 run against approved import3f1e89b8 with unchanged production inputs.
