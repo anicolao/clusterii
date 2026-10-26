@@ -398,3 +398,5 @@ Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Import31 individually reviewed discard images; retain145 inherited images including rejected stellar variants and align story numbering
 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Bind one strict four-viewport discard verification to the individually reviewed 176-reference import.
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Request a single no-update no-retry strict discard journey for each of four viewports.
