@@ -2613,3 +2613,10 @@ Reviewer continuation: PR69 publication40259532297 now at Verify served revision
 Delegated reviewer instruction; refer to latest main meta independent PR71 integration/source/layout audit.
 
 Reviewer PR71 integration review: independently diffed staged009-selected-history spec against originalb590be6a: only five relative import/package-path adjustments, all journey/assertion bodies unchanged. No staged product/shared/functions/dependency changes versus058c3a6c;008fleet feature unchanged. Reviewed feature registry/narrative generalization for separate registered stories and independently ran all6 scripts/check-feature-story-layout.test.mjs checks under establishedNix: PASS. This is source/layout evidence only, not candidate image approval or green71. Preserve this and latest mainmeta in next normal audit; continue current integration/candidate work without duplicate68–70runs.
+
+
+## Prompt 220: Preserve immutable audit
+
+Delegated reviewer instruction; refer to latest main meta PR71 immutable reference audit and original PR69 readiness application outcome.
+
+Reviewer: Independently audited immutable454d4185 reference tree versus published058c3a6c:6234unmoved files byte-identical,136selected-history files moved byte-identically to009 feature,zero changed/missing/additional reference files. Thus inherited references are preserved and new71candidates remain unapproved/unimported. Earlier source/path-only review and6layout tests apply. PR69 original readiness application40256103679 SUCCESS independently read36passed/3skipped48.5m; latest integratedhead still requires ownchecks. Latest mainmeta includes both findings; preserve next normal audit. Continue single source-bound selected-history candidate generation and all4size visual review; no blanket017acceptance.

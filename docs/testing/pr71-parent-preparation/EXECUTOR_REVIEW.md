@@ -1,0 +1,9 @@
+# Bounded selected-history executor for immutable review
+
+Acceptance target is 454d4185d77c75fcb2c6806427abc3b89f88bff4, directly incorporating published PR70. Production/spec/helpers/references are unchanged. The isolated executor adds history-candidates case/request/runner/tests and branch-only workflow; both existing launcher layers gain only one exact four-size route. No required workflow modification. No request file exists yet; no run dispatched.
+
+Exactly one complete selected-history-consent journey per viewport: 25 images each, 100 total, original 300-second test / 30-second step / 10-second capture budgets. Generate mode writes fresh evidence only, retries zero, max failures one, update-snapshots none. Sixty inherited Linux images must compare to current reviewed references; forty new views and any inherited differences require inspection. No historical017 or Darwin approval transfer.
+
+Preflight binds target/spec SHA, legacy and both feature reference trees, all136 mapped reference blobs and renderer/review siblings, original runtime/production source, and the exact request-only child. Reject wrong repository/branch/event/attempt, replay, wrong/multiple/empty collection and broader dispatch. Each job retains manifest, source/request identity, screenshots, traces and emulator logs even on failure. Telemetry remains off. Upload retention30days; contents read only; no deployment or secrets. Trigger is a fresh explicit request file on investigate/pr71-history-candidates only.
+
+The latest independent review confirms6234 unmoved reference files and136 mapped files exact. PR69 publication40259532297 and PR70 publication40260334253 passed, hosted exact revision/assets checks also passed. Their integrated application/strict checks remain separate. Older PR69 readiness application40256103679 passed36tests/3skips; it is not evidence of current-head completion.
