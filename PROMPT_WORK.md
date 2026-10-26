@@ -385,3 +385,5 @@ Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | 
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Reconcile original PR75 historical phone image after direct inspection while preserving all200 reviewed Linux references.
 
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Import 28 individually reviewed account isolation candidates and preserve 200 inherited references with complete provenance
+
+Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Bind one four-viewport strict account isolation run to the reviewed 228-image import without baseline mutation
