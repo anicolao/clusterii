@@ -385,5 +385,7 @@ Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | 
 Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Record independently verified PR74 strict acceptance of all 200 approved reference images
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Prepare PR75 account-isolation story on reviewed PR74 feature layout; new Linux captures and historical phone reconciliation remain pending.
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Reconcile original PR75 historical phone image after direct inspection while preserving all200 reviewed Linux references.
-
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Prepare PR76 future-only readmission on numbered PR75 parent layout, preserving exact child assertions and pending Linux review.
+Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Import 28 individually reviewed account isolation candidates and preserve 200 inherited references with complete provenance
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Inherit all 228 individually reviewed PR75 references into readmission preparation without changing child assertions
