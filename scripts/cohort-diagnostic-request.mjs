@@ -1,0 +1,12 @@
+import {execFileSync} from 'node:child_process';
+import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
+const git=(...a)=>execFileSync('git',a,{encoding:'utf8'}).trim();
+const base='058c3a6ce6449fc1f7d9a731bcb5da2b64727781';
+const request=JSON.parse(readFileSync('.github/recovery/pr70-cohort-diagnostic-01.json','utf8'));
+if(process.env.GITHUB_RUN_ATTEMPT!=='1'||request.target!==base||request.source!==git('rev-parse','HEAD^'))throw Error('Immutable first-attempt request required');
+if(git('status','--porcelain'))throw Error('Clean request checkout required');
+const changed=git('diff','--name-only','HEAD^','HEAD').split('\n');
+if(changed.some(p=>!['.github/recovery/pr70-cohort-diagnostic-01.json','PROMPT_WORK.md'].includes(p)))throw Error('Request child changes executable input');
+for(const p of ['src','functions','shared','tests','vite.config.ts','playwright.stories.config.ts','nix/flake.nix','nix/flake.lock','package.json','bun.lock'])if(git('diff',base,'HEAD','--',p))throw Error('Diagnostic changed product, stories, references or renderer: '+p);
+mkdirSync('ci-evidence/recovery-request',{recursive:true});
+writeFileSync('ci-evidence/recovery-request/binding.json',JSON.stringify({...request,executor:git('rev-parse','HEAD'),run:process.env.GITHUB_RUN_ID,attempt:process.env.GITHUB_RUN_ATTEMPT,diagnosticOnly:true},null,2)+'\n');

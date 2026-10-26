@@ -14,8 +14,12 @@ fi
 ldd "$browser" > ci-evidence/nix-renderer/renderer-ldd.txt
 case "$1" in
   recovery)
-    test "$2" = core-diagnostic
-    node scripts/core-diagnostic-run.mjs "$3" "$4"
+    if [ "$2" = cohort-diagnostic ] && [ "$#" -eq 2 ]; then
+      node scripts/cohort-diagnostic-run.mjs
+    else
+      test "$2" = core-diagnostic
+      node scripts/core-diagnostic-run.mjs "$3" "$4"
+    fi
     ;;
   stories)
     bun run test:story-policy
