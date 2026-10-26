@@ -917,3 +917,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify rendered construction focus overlay at all four viewport sizes and approve corrected exact capture hashes.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify PR73 publication ancestry, unchanged reviewed baselines, inherited contact fixes and complete draft replacement story.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Reconcile all100 corrected-source phone and desktop captures against independently reviewed approved hashes.
