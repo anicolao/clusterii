@@ -1,0 +1,74 @@
+{
+  "reviewer": "supervisor",
+  "scope": "regression baseline only",
+  "viewport": "short",
+  "run": 40276175111,
+  "executor": "9d322542fe510d11b86bd21759260840a0f825ea",
+  "inheritedExact": 42,
+  "newIndividuallyViewedAndApproved": [
+    {
+      "image": "034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+      "sha256": "86f7d9c2bdcfa24c13bb82916cacac2395162eba5087291843f499dd88199e66",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message."
+    },
+    {
+      "image": "034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+      "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message."
+    },
+    {
+      "image": "035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+      "sha256": "683a63f86182797296d14d25e140ba82d59e01b0abda5af7cd6a948e775e9c34",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order."
+    },
+    {
+      "image": "036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+      "sha256": "e728300e20b5ed03fc5296dd5835b0a051e53432843aa3599f4c1e479dd017f3",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable."
+    },
+    {
+      "image": "037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+      "sha256": "7252bc8798010003ec393740d506469e0f80796f0420dbf4e742676cbc8ea020",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending."
+    },
+    {
+      "image": "039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+      "sha256": "dc3c9fd083a9d83ea4e3052193858105608e826ab3552c11043c117bc6f62966",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents."
+    },
+    {
+      "image": "039-observe-retried-message-acceptance-2-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/039-observe-retried-message-acceptance-2-outer-witness.png",
+      "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents."
+    },
+    {
+      "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+      "sha256": "5c09a35d758226faeeabbf72cf37b9eba00bdd753b216e2a09fb60a3377bf0e2",
+      "comparison": "new",
+      "viewport": "short",
+      "step": "Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared."
+    }
+  ]
+}

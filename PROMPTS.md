@@ -2751,3 +2751,7 @@ Reviewer: PR72 complete136 candidate review APPROVED for regression import:100 i
 
 
 
+
+## Prompt 238: Reviewer acknowledgement approval
+
+Reviewer instruction: Import the 32 independently inspected PR74 acknowledgement candidate images from run40276175111, preserving all168 inherited images. See meta-prompts.md "Supervisor PR74 candidate approval" and retained exact hash evidence. Approval is for regression references only. Run strict200 verification without updates before publication; do not merge PRs.
