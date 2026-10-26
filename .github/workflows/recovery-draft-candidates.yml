@@ -1,12 +1,12 @@
-name: Bounded competing-draft candidate generation
+name: Bounded phone competing-draft recovery
 on:
   push:
-    branches: [investigate/pr72-draft-candidates]
-    paths: [.github/recovery/pr72-draft-candidates-01.json]
+    branches: [investigate/pr72-phone-candidates]
+    paths: [.github/recovery/pr72-phone-candidates-01.json]
 permissions:
   contents: read
 concurrency:
-  group: cluster-pr72-draft-candidates
+  group: cluster-pr72-phone-candidates
   cancel-in-progress: false
 jobs:
   scene:
@@ -18,7 +18,7 @@ jobs:
       max-parallel: 2
       matrix:
         family: [draft]
-        viewport: [phone, desktop, large, short]
+        viewport: [phone]
     defaults:
       run:
         shell: nix develop path:./nix --accept-flake-config --command bash -e {0}

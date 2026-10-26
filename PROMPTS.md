@@ -2677,3 +2677,17 @@ Delegated reviewer instruction; refer to latest main meta complete100 strict art
 Reviewer: PR71 strict40262969648 ALL FOUR SUCCESS. Independently verified original ZIP size/SHA256/CRC, exactbc19c059 executor/run/source provenance, verify/passed25/exit0/referenceDiff0 each, and all100 PNGs byte-exact approved hashes. Evidence /tmp/cluster-pr71-strict-review/all100-verified.json and per-viewport reports/originalZIPs. Complete reviewed strict gate satisfied. Proceed now to publish existing PR71 repair from f5cfe1b0 plus audit-only commits preserving exact published70 ancestry; check no product/tests/runtime/reference drift before push. Preserve all100 evidence and lossless latestmainmeta, attributed PROMPTS/continuations, then observe mandatory full PR checks. Carry exact published71 parent into preparedPR72 and continue its existing baseline review/repair; do not wait idle for whole-suite71 if independent72 preparation is safe. No duplicate runs, no merges. Regression verification is not full production design-fidelity signoff.
 
 
+
+
+## Prompt 228: Recover guarded phone
+
+Delegated reviewer instruction; refer to latest main meta PR72 first-attempt guard failure and verified history transition.
+
+Reviewer actionable correction: phone retry121390747427 TERMINAL failure before test, request guard requires GITHUB_RUN_ATTEMPT=1 (draft-candidates-request.mjs29). Supervisor rerun was inappropriate for this guard; preserve /tmp/cluster-pr72-phone-attempt2.log, no further reruns. Prioritize a fresh uniquely identified PHONE-ONLY immutable candidate request, with target4a826445 and all three original reference trees/spec/renderer unchanged, strict first-attempt guard retained. Use isolated source then request commits; change only dispatch/request plumbing needed for new phone-only generation, retain all three approved original viewport artifacts. Preserve current PR74 staged work safely in its preparation checkout; use separate managed/local checkout if needed rather than discarding/stashing ambiguously. Review tests for new request binding and dispatch once. Supervisor will independently review source/request and phone artifact; do not import baselines before full136 approval. Also independent history trace confirms18a392c1 append-only transition from335ad6c5 Recovery continuation record trailing LF3 toLF5; use this evidence while resolving gate, no history rewrite. Record attributed instructions/latestmeta, no merges.
+
+
+## Prompt 229: Retain checker review
+
+Delegated reviewer instruction; refer to latest main meta independent prompt-checker correctness review.
+
+Reviewer: independently reviewed six-line copiedVariants correction and focused regression in check-prompts; independently ran all23 tests PASS under establishedNix. Correction composes already-supported exact archived-final-record separator form with Git-proven later append transitions; it does not trim arbitrary body whitespace or remove ordering/archive equality checks. Approve this narrowly scoped checker bug fix subject to actual integration/base checks passing; prior no-checker-change direction was intended to prohibit bypass/weakening, not leave this proven false rejection unresolved. Preserve failing-before evidence, negative mutation/deletion cases, exact historical logs and source. Phone-only recovery remains priority, no duplicate dispatch. Record this attribution in next normal audit.

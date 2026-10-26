@@ -9,8 +9,8 @@ import {
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { pathToFileURL } from "node:url";
-export const requestFile = ".github/recovery/pr72-draft-candidates-01.json";
-export const branch = "refs/heads/investigate/pr72-draft-candidates";
+export const requestFile = ".github/recovery/pr72-phone-candidates-01.json";
+export const branch = "refs/heads/investigate/pr72-phone-candidates";
 export function validateRequest({
   request,
   env,
@@ -29,9 +29,10 @@ export function validateRequest({
     throw Error("Wrong event, repository, branch, attempt or checkout");
   if (
     request.version !== 1 ||
-    request.id !== "draft-candidates-20261026-01" ||
+    request.id !== "draft-phone-candidates-20261026-01" ||
     request.case !== "draft-candidates" ||
     request.mode !== "generate" ||
+    request.viewport !== "phone" ||
     request.referenceTree !== "a7a4782123c9655a160e9f89025ac849a8fe83ae" ||
     request.featureReferenceTree !== "6de45f638d9990d25f4c4a65cdd89e403290f342" ||
     request.arrivalReferenceTree !== "d3b62c90b9cc37d7f29f8396b1832349f6a19d42" ||
@@ -124,7 +125,7 @@ function main() {
   if (process.env.GITHUB_STEP_SUMMARY)
     appendFileSync(
       process.env.GITHUB_STEP_SUMMARY,
-      `Bounded request ${result.requestId}\n\nSource ${parent}; executor ${head}; request SHA256 ${result.requestSha256}. Four independent allowlisted complete candidate journeys; candidate generation only; no reference promotion or whole-suite acceptance.\n`,
+      `Bounded request ${result.requestId}\n\nSource ${parent}; executor ${head}; request SHA256 ${result.requestSha256}. One allowlisted complete phone candidate journey; candidate generation only; no reference promotion or whole-suite acceptance.\n`,
     );
   console.log(JSON.stringify(result));
 }

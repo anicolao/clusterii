@@ -21,7 +21,7 @@ case "$1" in
     ;;
   recovery)
     [ "$#" -eq 4 ] && [ "$2" = draft-candidates ] || exit 2
-    case "$3:$4" in draft:phone|draft:desktop|draft:large|draft:short) ;; *) exit 2 ;; esac
+    case "$3:$4" in draft:phone) ;; *) exit 2 ;; esac
     node scripts/draft-candidates-run.mjs "$3" "$4"
     ;;
   application)
