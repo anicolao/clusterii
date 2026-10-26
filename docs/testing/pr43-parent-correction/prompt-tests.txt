@@ -1,0 +1,32 @@
+✔ requires a staged prompt log, including on the initial commit (198.14275ms)
+✔ accepts a staged append and rejects an unstaged append (209.96ms)
+✔ rejects rewritten or deleted historical prompts (186.665292ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (435.195625ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (344.186791ms)
+✔ checks a PR against its base, including a base with no prompt log (224.128458ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (633.047916ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (258.828084ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (426.723ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (714.251625ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (690.87775ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (351.539833ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (476.220917ms)
+✔ divergent prompt merge retains exact parent archive and canonical request order (3693.173417ms)
+✔ later stacked integration recognizes only a Git-verified inherited record separator (1040.82425ms)
+✔ explicit structural separators retain exact request whitespace and reject undeclared changes (1781.967917ms)
+✔ reintegrating a parent retains its formerly final request already archived by child (1122.3915ms)
+✔ reintegrating a parent respects the child declared two-LF record separator (1146.565083ms)
+✔ post-merge appended prompt retains the exact copied final parent record in base checks (807.705084ms)
+✔ shared Git ancestor proves a final common request without inventing an archive (536.587084ms)
+✔ earlier append-only common history proves original shared final record (632.345625ms)
+✔ sibling integration recognizes only committed common-prefix append separators (800.689459ms)
+✔ archived final-record separator follows only proven later append transitions (1544.648042ms)
+✔ two-LF parent append retains an exact common request with a one-LF child separator (565.771917ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18874.775
