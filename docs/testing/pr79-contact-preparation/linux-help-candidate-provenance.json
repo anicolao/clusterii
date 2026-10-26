@@ -1,0 +1,308 @@
+{
+  "artifact": {
+    "id": 12651846251,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY1MTg0NjI1MQ==",
+    "name": "construction-focus-7df29917a8156deff4f15b1abc0862132a89ce0e",
+    "size_in_bytes": 383781869,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12651846251",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12651846251/zip",
+    "expired": false,
+    "digest": "sha256:fa3dd4b971b9b71056c09378455016721433b9e6345e94fe1b8f22c8e7a69672",
+    "created_at": "2026-10-26T13:02:58Z",
+    "updated_at": "2026-10-26T13:02:58Z",
+    "expires_at": "2027-01-24T12:48:55Z",
+    "workflow_run": {
+      "id": 40325433132,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr79-construction-focus",
+      "head_sha": "7df29917a8156deff4f15b1abc0862132a89ce0e"
+    }
+  },
+  "downloadedRangeBytes": 68060452,
+  "etag": "\"0x8DF3361753A24DE\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "28f491cf52772bfbd3325ebaa3c15c227e4d77c038e5d6ebabe63fb967bf8270",
+      "bytes": 750301,
+      "crc32": "7ba3ba8a"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "c786239f1bf29fbbade99891f5446b768c5ccb4dc86278ecff618c9577a06895",
+      "bytes": 748299,
+      "crc32": "1f097ecd"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "3184b1b6f3d76292e4484c0678b9963ea6bf7e59c84a1fa0e0c271bd06b9bea4",
+      "bytes": 802500,
+      "crc32": "9e9c18fa"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "3184b1b6f3d76292e4484c0678b9963ea6bf7e59c84a1fa0e0c271bd06b9bea4",
+      "bytes": 802500,
+      "crc32": "9e9c18fa"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "005ad2e803cb78bf570322f32b071862ea5a917fe31937f32bbda9c3bcd8121f",
+      "bytes": 1088736,
+      "crc32": "8530d26a"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "2a0f152df94095ec38c0ddcc2991b659a4e6063cae3db1159a3861b397b6bf54",
+      "bytes": 3436911,
+      "crc32": "171f5ed2"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "38db9843061420cd17446ab1657b5c690ce192853e9fe5be3c7a6d516049b98a",
+      "bytes": 6215407,
+      "crc32": "f09eb325"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "2a0f152df94095ec38c0ddcc2991b659a4e6063cae3db1159a3861b397b6bf54",
+      "bytes": 3436911,
+      "crc32": "171f5ed2"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "38db9843061420cd17446ab1657b5c690ce192853e9fe5be3c7a6d516049b98a",
+      "bytes": 6215407,
+      "crc32": "f09eb325"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "2a0f152df94095ec38c0ddcc2991b659a4e6063cae3db1159a3861b397b6bf54",
+      "bytes": 3436911,
+      "crc32": "171f5ed2"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "38db9843061420cd17446ab1657b5c690ce192853e9fe5be3c7a6d516049b98a",
+      "bytes": 6215407,
+      "crc32": "f09eb325"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "2a0f152df94095ec38c0ddcc2991b659a4e6063cae3db1159a3861b397b6bf54",
+      "bytes": 3436911,
+      "crc32": "171f5ed2"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "38db9843061420cd17446ab1657b5c690ce192853e9fe5be3c7a6d516049b98a",
+      "bytes": 6215407,
+      "crc32": "f09eb325"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "fa32b5a8909077ba791c2b6fadba8ab917ee8455dbe9abbcb19edced31ea4bb1",
+      "bytes": 6050920,
+      "crc32": "7486a499"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "38db9843061420cd17446ab1657b5c690ce192853e9fe5be3c7a6d516049b98a",
+      "bytes": 6215407,
+      "crc32": "f09eb325"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "78df427d2526381640898e9c5cb5c28184e200858c110f1c08706c4a1bd9560a",
+      "bytes": 174136,
+      "crc32": "8a799d86"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+      "bytes": 257685,
+      "crc32": "f3a9406c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "68428451e7e467347196f599e3d1f629569c93947ea147d3dd0faca08b27fec3",
+      "bytes": 171954,
+      "crc32": "1022be19"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+      "bytes": 257685,
+      "crc32": "f3a9406c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "72cfce33c64925cef48982764b7005bc55c8e5da947cbf589f1ccfb863cb0499",
+      "bytes": 168580,
+      "crc32": "cae9a0b7"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+      "bytes": 257685,
+      "crc32": "f3a9406c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "72cfce33c64925cef48982764b7005bc55c8e5da947cbf589f1ccfb863cb0499",
+      "bytes": 168580,
+      "crc32": "cae9a0b7"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+      "bytes": 257685,
+      "crc32": "f3a9406c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "a81081f78e123e46533cac3f846448eb1274d3fbf141cb7b3529413a9170b7c9",
+      "bytes": 232567,
+      "crc32": "ebf45253"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+      "bytes": 257685,
+      "crc32": "f3a9406c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "a19c235752d6c47d9afedba15ebe7863d7e8710b2213380ddd4221c5f7b26d8a",
+      "bytes": 257039,
+      "crc32": "56214c85"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038",
+      "bytes": 621444,
+      "crc32": "3bb04bdf"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "1c684003697d4d1d99f837210d3e13f17be9d2a8ce23915744e8d8dc22485461",
+      "bytes": 265923,
+      "crc32": "7e5fcea6"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038",
+      "bytes": 621444,
+      "crc32": "3bb04bdf"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "e4dd70ee3c85adf5a8a55427fe4161271e0aab0b95d57160ac568932ae8afe3f",
+      "bytes": 334495,
+      "crc32": "fc08d4aa"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038",
+      "bytes": 621444,
+      "crc32": "3bb04bdf"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "e4dd70ee3c85adf5a8a55427fe4161271e0aab0b95d57160ac568932ae8afe3f",
+      "bytes": 334495,
+      "crc32": "fc08d4aa"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038",
+      "bytes": 621444,
+      "crc32": "3bb04bdf"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "c6f528a07f8a4cc1f761fa713a54cda8a91642254259ec9977aa382111fafd1c",
+      "bytes": 543744,
+      "crc32": "63648190"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-help-review/test-results/stories/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038",
+      "bytes": 621444,
+      "crc32": "3bb04bdf"
+    }
+  ]
+}
