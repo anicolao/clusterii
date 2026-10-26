@@ -14,52 +14,8 @@
     "large-first-comparisons.json",
     "large-cancel-comparisons.json",
     "large-recovery-first.json",
-    "large-recovery-next.json"
+    "large-recovery-next.json",
+    "large-recovery-final.json"
   ],
-  "remaining": [
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/020-cancel-base-1-builder-envoy.png",
-      "blob": "61fa9616cd8c27e5ffe24c84d1e29cc4a1d2a745",
-      "sha256": "9a493b9e3f88f3505177e53c3a6067184492737a3c00c70e4dd02f7eda953279",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/020-cancel-base-1-builder-envoy.png",
-        "blob": "8ab5272cd547bd85898faa300cf4cd1c5ed1bc8d",
-        "sha256": "13af814e0b0292ddacaca77dbcf096490eb378400a084133f0f8537a1020c620"
-      },
-      "status": "changed"
-    },
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/022-cancelled-base-1-builder-envoy.png",
-      "blob": "3304775c636aabfcb810f1fb9ab18f8b0e8ceb3d",
-      "sha256": "670fffc9c1ada9b5c3045fc5c51f4a0481c90c40802b13d6e143f432ae4e553a",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/022-cancelled-base-1-builder-envoy.png",
-        "blob": "0538ce281ec4dbeb0fa48590c8b5ab44e65a5e7d",
-        "sha256": "facb531411270bd37fd6935dc668619e753c2469556fa2f288bed3c662ce6c18"
-      },
-      "status": "changed"
-    },
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/024-keyboard-return-2-independent-builder.png",
-      "blob": "25874b23741084ff72b50cafb14fb8aac89d3c42",
-      "sha256": "2bdfa48b288652ed1f3907fb50813c68bdc9c5c3753f34e1d6981a259794c311",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/024-keyboard-return-2-independent-builder.png",
-        "blob": "ee90ec25afb880ebf630a81e3f9dc7b7ff920c3b",
-        "sha256": "0f07917b02529b26dc6fa40d643aa97b3ac421e5eeb746345617ad9dc36c5315"
-      },
-      "status": "changed"
-    },
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/023-recover-settled-outcome-1-builder-envoy.png",
-      "blob": "6d6348d89baaa2e5c6736aff90bcc6c4b55fdd55",
-      "sha256": "21593d5a62c28f40ad870a01bbe94b51163e67b89faa4918f70b56eaabcbe26c",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/023-recover-settled-outcome-1-builder-envoy.png",
-        "blob": "ca2caad8a119ec743f0f3e80719e219f1b39628e",
-        "sha256": "cdbfe26bb40f1d16ad4c3136745ccb630578d5fa52515f0ef7902fff0b97bf11"
-      },
-      "status": "changed"
-    }
-  ]
+  "remaining": []
 }

@@ -897,3 +897,15 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Persist recovery focus styling and ancestor clipping geometry as an explicit passed-run diagnostic file.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Dispatch durable recovery-focus geometry diagnostic from prepared ac9a0851 with source guard intact.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record checked durable focus evidence change and confirmed live diagnostic run40329631350.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Finish four large recovery comparisons and reconcile uninspected Darwin inventory to zero; retain focus and Linux holds.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Independently preflight prepared PR72 ancestry, unchanged production/baselines and exact inherited contact fix before publication.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect five unique Linux desktop help candidates, verify ten exact hashes and record bounded artifact provenance.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Fix clipped browser-default construction dialog focus with explicit inset cyan outline and live recovery assertions.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Dispatch inset construction focus verification from prepared5e92b313 with source guard and explicit style assertions.

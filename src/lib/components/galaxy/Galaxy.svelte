@@ -1480,6 +1480,10 @@
     background: #06121a;
     overflow: hidden;
   }
+  .construction-panel[aria-label="System construction panel"]:focus-visible {
+    outline: 2px solid #91dcec;
+    outline-offset: -2px;
+  }
   @media (min-width: 2500px) {
     .construction-panel {
       top: 90px;

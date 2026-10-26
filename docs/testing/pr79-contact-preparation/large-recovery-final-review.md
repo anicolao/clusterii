@@ -1,0 +1,7 @@
+
+
+## Supervisor final large recovery comparisons
+
+Previous turn made progress: four comparisons reviewed, durable focus evidence implemented/typechecked and diagnostic40329631350 dispatched. This turn independently viewed all four remaining large Darwin parent/head pairs (eight images, SHA256-verified manifest large-recovery-final.json). Viewer scaled3840x2160 to2048x1152; state/composition inspection only. Accepted cancellation retains76credits, base paid69/eligible6, cancellation queued6, disabled cancel/build80, accepted cancellation receipt and blue scroll-region outline. Settled cancellation retains147.8credits, no queue,69refund, base69/balance78.8 and blue outline. Peer keyboard-return retains219.1credits and market106/balance113.1. Owner recovered settlement retains147.8credits,69refund and market106/balance41.8; market reset was already present in parent. Changes are rules disclosure insertion and consequent upward card shift plus dividend wording; no unexplained state/action discrepancy observed.
+
+Reconciled existing uninspected distinct-head inventory to zero. This completes that Darwin comparison inventory, not blanket baseline acceptance: original phone visible-focus hold, Linux candidate review, and full fidelity review remain open. PR71 application40322197980 nowSUCCESS, with four green checks and screenshot verification40322197989 still pending. Durable focus diagnostic40329631350 remains live. No GitHub merge or duplicate handoff.
