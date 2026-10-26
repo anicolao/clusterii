@@ -385,3 +385,5 @@ Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | 
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Reconcile original PR75 historical phone image after direct inspection while preserving all200 reviewed Linux references.
 
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Bind one PR75 account-isolation candidate journey to exact source and200 reviewed inherited images,57 views per viewport.
+
+Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Request one bound four-viewport PR75 candidate generation run; inspect28 new images before any approval.
