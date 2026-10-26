@@ -485,3 +485,8 @@ Reviewer continuation 2026-10-21 17:48 Toronto: pane idle since17:37, clean53e53
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 18:48 Toronto”.
 
 Reviewer finding 2026-10-21 18:48 Toronto: #51 current4f8cb6a story run39680090423 completed with20 missing Linux baseline failures across history/lifecycle/production/research and one known1994-pixel mismatch. Retained /tmp/cluster51-1848-review-failure.log. This successor includes the layout instrumentation, so inspect its completed failure artifacts now for passing/failing identity layout comparison rather than waiting only for #50. Continue your active Linux candidate review with provenance checks and unchanged inherited baselines. Record the diagnosis separately; green runs do not establish a raster fix. Carry latest main checkpoint and attributed logs, commit/push; no merge.
+
+
+## Prompt 55: Reviewer identity correction
+
+Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR49, preserve every reference image, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR49 two-comparison review". Run required checks; do not merge PRs.
