@@ -585,3 +585,5 @@ Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Integrate published PR72 reviewed references into PR73 preparation while preserving both complete prompt histories.
 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Prepare one immutable four-viewport PR73 replacement candidate journey bound to reviewed136 parent images.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Request one full168-image PR73 candidate generation with all136 approved inherited references unchanged.
