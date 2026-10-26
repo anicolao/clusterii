@@ -1,0 +1,19 @@
+{
+  "family": "all-short",
+  "viewport": "short",
+  "story": "live-fleet-travel",
+  "views": 40,
+  "args": [
+    "x",
+    "playwright",
+    "test",
+    "--config",
+    "playwright.stories.config.ts",
+    "--project=short",
+    "--retries=0",
+    "--max-failures=1",
+    "--update-snapshots=none"
+  ],
+  "mode": "verify",
+  "freeKiBBefore": 85701112
+}
