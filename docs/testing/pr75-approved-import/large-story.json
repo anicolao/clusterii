@@ -1,0 +1,893 @@
+{
+  "id": "selected-history-consent",
+  "title": "Consent to one earlier diplomatic message",
+  "inventory": [
+    "UX-10",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Independent commanders use authenticated development-provider commands. The creator shares one of two earlier messages; the recipient reviews and accepts its scope, then reloads. An uninvolved commander never receives the room or either message. Admission uses the labelled emulator clock and actual scheduler endpoint, not injected state. Managed-key and fault journeys remain separate coverage.",
+  "source": {
+    "commit": "1d05fe938e9fffafc60736c8188897cee58357ce",
+    "dirty": true,
+    "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
+    "specSha256": "853dc12b793fdf5d7cc177a0038f8912ea8eae5532309742b28d11523c7eeb92"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "large",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "private-room",
+      "description": "Create a private room while the recipient and outsider inspect their own empty directories.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative room appears only for its creator.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "The future recipient cannot see the room before invitation."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "010-private-room-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "010-private-room-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "010-private-room-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earlier-message-1",
+      "description": "Send a reserve-route message that stays private.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The command is acknowledged as Message sent and appears in the creator's authorized messages.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "The acknowledged composer clears its submitted text."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "011-earlier-message-1-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "earlier-message-2",
+      "description": "Send the rendezvous message that will be selected.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The command is acknowledged as Message sent and appears in the creator's authorized messages.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "The acknowledged composer clears its submitted text."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "012-earlier-message-2-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-history",
+      "description": "Select Dawn listener and exactly one earlier message; keep the reserve route unselected.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The invitation control identifies one selected earlier message.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The reserve message remains unchecked and stale send feedback is absent."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "013-choose-history-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "invite",
+      "description": "Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The independently authenticated recipient receives the one-message invitation.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Neither message body is present in the recipient's UI or serialized authorized projection before consent."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "014-invite-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "014-invite-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "014-invite-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "consent",
+      "description": "Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The accepted membership publishes the selected message to the recipient.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Keyboard Home and bounded reading reveal the complete shared message, author and provenance while the commitment rail stays visible.",
+        "Acceptance makes exactly one authoritative revision, excludes the reserve message, and names the sharing commander."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "015-consent-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "015-consent-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "015-consent-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-consent",
+      "description": "Reload and reopen the accepted room without resending acceptance or expanding its history grant.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The recovered authorized messages still contain the selected rendezvous note.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Keyboard Home and bounded reading reveal the complete shared message, author and provenance while the commitment rail stays visible.",
+        "Recovery causes no extra revision and never exposes the unselected message."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "016-recover-consent-1-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "016-recover-consent-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "return-to-chart",
+      "description": "Escape closes the conversation and restores keyboard focus to its opening control.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The chart returns focus to Conversations.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Private conversation details are no longer visible."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "017-return-to-chart-1-dawn-listener.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-removal",
+      "description": "The creator reviews removal of the consenting listener before committing it.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The removal confirmation is available without changing membership.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "018-review-removal-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "remove-current-access",
+      "description": "Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The listener sees authoritative access-ended feedback and cannot compose a new message.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Exactly one revision removes the listener without expanding previous history."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "019-remove-current-access-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "019-remove-current-access-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "019-remove-current-access-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "message-after-removal",
+      "description": "The creator sends a new private message after removal; neither the former member nor outsider receives it.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Message sent acknowledges the command and the creator can read its text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Removed and outsider recipients receive no post-removal message in UI or serialized views.",
+        "The post-removal message commits exactly once."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "020-message-after-removal-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Dawn listener",
+          "image": "020-message-after-removal-2-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "020-message-after-removal-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-retained-history",
+      "description": "Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "The accepted-consent record exposes the previously received rendezvous message.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "The outsider's UI and serialized authorized view contain neither private room nor either message.",
+        "Reload and both motion preferences preserve the exact revision and exclude ungranted messages from historical reading."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "021-recover-retained-history-1-dawn-listener.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "021-recover-retained-history-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "leave-retained-history",
+      "description": "Escape closes retained history and restores focus to History on the galaxy.",
+      "actor": "Dawn listener",
+      "kind": "player",
+      "acknowledgement": "Focus returns to History.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "No private history panel remains visible."
+      ],
+      "views": [
+        {
+          "player": "Dawn listener",
+          "image": "022-leave-retained-history-1-dawn-listener.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-private-browser-draft",
+      "description": "Write a private reply and wait for this browser's durable draft acknowledgement without sending it.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Browser storage acknowledges the saved draft without presenting it as a sent message.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Unsent drafts never change canonical state or appear in other recipients' projections."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "023-save-private-browser-draft-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-draft-in-two-tabs",
+      "description": "Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Both composers recover the exact saved text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Unsent drafts never change canonical state or appear in other recipients' projections."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "preserve-conflicting-draft",
+      "description": "Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The second tab explains the competing saved draft without discarding its local text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Unsent drafts never change canonical state or appear in other recipients' projections.",
+        "Conflict remedies and composer remain in the visible fixed footer."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "025-preserve-conflicting-draft-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-saved-draft",
+      "description": "Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The chosen saved reply replaces local text and clears the conflict.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Unsent drafts never change canonical state or appear in other recipients' projections."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "send-recovered-draft-once",
+      "description": "Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Message sent acknowledges the recovered reply and clears its composer.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Exactly one message sequence and campaign revision are committed, without the discarded text or unauthorized recipients."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "027-send-recovered-draft-once-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-cleared-draft",
+      "description": "Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Reload restores the sent message with an empty composer.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Recovery and motion preferences preserve one committed effect and privacy."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "prepare-replacement-choice",
+      "description": "Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Both tabs recover the same unsent proposal.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "029-prepare-replacement-choice-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-competing-replacement",
+      "description": "Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "A revision conflict preserves the second tab's proposal and blocks sending.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.",
+        "Both explicit choices remain visible before any scrolling."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "030-review-competing-replacement-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "replace-with-local-proposal",
+      "description": "Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Browser storage acknowledges the chosen local text and clears the conflict.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-chosen-local-proposal",
+      "description": "Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Both authenticated tabs recover the replacement from durable browser storage.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Draft decisions leave the complete canonical campaign unchanged and disclose no text to removed members or outsiders.",
+        "Normal and reduced motion preserve the chosen text and unsent state."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "032-recover-chosen-local-proposal-1-nacre-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "interrupt-send-transport",
+      "description": "Withhold only actual conversation.send RTDB frames before ingress. Other traffic passes through; no payload, identity, receipt or state is replaced.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "submit-replacement-awaiting-acknowledgement",
+      "description": "Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The interface explicitly waits for acknowledgement and retains the submitted text; this is not service acceptance.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "protect-pending-send-from-second-tab",
+      "description": "Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The other tab explains the unfinished order and preserves its text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy",
+          "image": "035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-interrupted-send",
+      "description": "Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Recovery opens the correct room and offers Retry same command with the original proposal intact.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders.",
+        "The retry control remains fully visible before scrolling."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "retry-original-message-command",
+      "description": "Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The interface returns to awaiting acknowledgement without clearing the proposal.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "An undelivered command changes no canonical state and exposes no draft to removed members or outsiders."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-send-delivery",
+      "description": "Release retained frames on still-active connections to actual RTDB ingress. Retransmissions retain their original command path and encrypted payload; no service result is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "observe-retried-message-acceptance",
+      "description": "Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The real service acknowledges Message sent and the submitted composer clears.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "One authoritative receipt, campaign revision and message sequence acknowledge the original command; private projections exclude its contents.",
+        "The acknowledged message is fully readable within bounded conversation details."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "039-observe-retried-message-acceptance-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-acknowledged-send",
+      "description": "Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "The sent proposal is retained in history without restoring a pending order or unsent text.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "One authoritative receipt, campaign revision and message sequence acknowledge the original command; private projections exclude its contents.",
+        "IndexedDB contains no unfinished order and motion preferences preserve the single accepted outcome."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "save-account-private-draft",
+      "description": "Save a new unsent note before leaving this browser session. Saving a draft is not sending a message.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Browser storage acknowledges the exact private draft.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "041-save-account-private-draft-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "sign-out-with-unsent-note",
+      "description": "Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Entry confirms the signed-out session with Play and no account identity control.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "other-account-on-same-browser",
+      "description": "Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft.",
+      "actor": "Outer witness",
+      "kind": "player",
+      "acknowledgement": "The authenticated outsider sees an empty conversation directory and no recovered private composer.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Outer witness \u00b7 same browser",
+          "image": "043-other-account-on-same-browser-1-outer-witness-same-browser.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "043-other-account-on-same-browser-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "end-other-account-session",
+      "description": "Sign out the second account before returning the browser to its original commander.",
+      "actor": "Outer witness",
+      "kind": "player",
+      "acknowledgement": "The second account has signed out and its private campaign surface is closed.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft."
+      ],
+      "views": [
+        {
+          "player": "Outer witness \u00b7 signed out",
+          "image": "044-end-other-account-session-1-outer-witness-signed-out.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "restore-original-account-draft",
+      "description": "Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser.",
+      "actor": "Nacre envoy",
+      "kind": "player",
+      "acknowledgement": "Only the original account recovers its private room and unsent note.",
+      "verifications": [
+        "No viewpoint has an uncaught application error.",
+        "Account switching changes no campaign or saved identity and never publishes the unsent draft.",
+        "The restored composer and commitment remain visible; normal/reduced motion preserve the unsent text."
+      ],
+      "views": [
+        {
+          "player": "Nacre envoy \u00b7 second tab",
+          "image": "045-restore-original-account-draft-1-nacre-envoy-second-tab.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "045-restore-original-account-draft-2-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}
