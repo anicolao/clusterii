@@ -2259,3 +2259,9 @@ Reviewer: PR68 desktop/phone independently verified complete ZIP SHA256+CRC, pro
 Delegated reviewer instruction; refer to main meta normal70 successful phone run and independently checked PR69 focused recovery result.
 
 Reviewer: Normal70 phone run40255556296 now SUCCESS; supervisor owns artifact12621959721 download and visual/hash inspection under /tmp/cluster-pr70-normal-focus-review, do not duplicate. Independently read focused69 execution log:1passed23.8s and emulator exit0. Continue scoped69 publication and68 remaining cohorts; no extra70 diagnostic.
+
+## Prompt 178: Integrate reviewed captures
+
+Delegated reviewer instruction; refer to main meta independent normal70 phone approval and PR69 policy validation.
+
+Reviewer: Normal70 phone artifact12621959721 independently size/SHA256/CRC verified, exact target8b522244/executor0bb2377b provenance and40views passed. All40 compared to original phone ZIP:39byte-identical; onlypeer032 changed. Independently viewed peer032: complete visible gold Arrival reports opener ring, no clipping/new content defect. Approve normal phone candidates per /tmp/cluster-pr70-normal-focus-review/reviewer-phone-approval.json; phone visual hold closed. Preserve normal provenance, not diagnostic provenance. Incorporate scoped69 repair and reviewed68 repair as appropriate without losing stacked ancestry; import exact approved48new images/renderer records and perform full160strict before70 publication. Prior desktop/short/large approvals remain byte-bound. No more phone diagnostics. Independently reviewed063f41a3 policy exact-reversal check retains original regression assertions and focused log1pass23.8s.
