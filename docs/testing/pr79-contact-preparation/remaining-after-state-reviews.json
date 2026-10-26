@@ -13,53 +13,10 @@
     "short-recovery-final.json",
     "large-first-comparisons.json",
     "large-cancel-comparisons.json",
-    "large-recovery-first.json"
+    "large-recovery-first.json",
+    "large-recovery-next.json"
   ],
   "remaining": [
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/016-reload-reservation-1-builder-envoy.png",
-      "blob": "b231fb3bbd59ea7fcb3b7b93c443bad67b14dac0",
-      "sha256": "54cc007c2a174d77c612eb7f2241ee66dd5f7cc62360f878b2d420ad03aa7739",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/016-reload-reservation-1-builder-envoy.png",
-        "blob": "b19f17176e5de304a48d2d4ac5c891b49d329c32",
-        "sha256": "7713eb4a8550a31a7aa6c03bd5f0fc9e1249422d468695384e0dc18a59283528"
-      },
-      "status": "changed"
-    },
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/018-completed-build-1-builder-envoy.png",
-      "blob": "250812c74116081ee87c64c09aa0d7df600aa73c",
-      "sha256": "f0259b507ce393966f91542387f03c92acc0c9b6e3def3122e56dba4a5cc7a8d",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/018-completed-build-1-builder-envoy.png",
-        "blob": "836c06fa10f0cac712d3b9f44d326fc93ddba659",
-        "sha256": "e21106348864897950c8f975a50ff6a045e331dcdca47d921eeda3d84f045eaa"
-      },
-      "status": "changed"
-    },
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/020-cancel-base-2-independent-builder.png",
-      "blob": "8340eab60583debd9c98b57b1fdf8029d1b98464",
-      "sha256": "3bf2a381a2ed18544e80ec2f477a2773486f3fc06d73cf6253b97c093909b5cd",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/020-cancel-base-2-independent-builder.png",
-        "blob": "4e09241c00193ce8a955b6a0c5a0c169b43e9310",
-        "sha256": "72d4b2da34740bd7ea51cc96fae87e08cc3c5b3cd51e7c10b8051ed4dca47cb2"
-      },
-      "status": "changed"
-    },
-    {
-      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
-      "blob": "f243cc31207b6693288fac75cfb340bb8d95b034",
-      "sha256": "935fe480807bb090d03175fc142bfbc5417d031f187b667048c94aebe55765ec",
-      "previous": {
-        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
-        "blob": "2fe1e817314bc58eb4b45809054cd94f31f9e968",
-        "sha256": "8f36bbd281b5812e971f293fd65a337e43038c33bd538b6bd2f107a8c06863e9"
-      },
-      "status": "changed"
-    },
     {
       "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/020-cancel-base-1-builder-envoy.png",
       "blob": "61fa9616cd8c27e5ffe24c84d1e29cc4a1d2a745",
