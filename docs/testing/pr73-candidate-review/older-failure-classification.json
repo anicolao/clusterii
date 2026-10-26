@@ -1,0 +1,73 @@
+[
+  {
+    "pr": 42,
+    "run": 39652714597,
+    "findings": [
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T18:51:06.6076960Z     Error: expect(Buffer).toMatchSnapshot(expected) failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T18:51:06.6077404Z       1994 pixels (ratio 0.01 of all image pixels) are different.",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T18:51:06.6078040Z       Snapshot: session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T18:51:06.6097364Z   1 failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T18:51:08.0038531Z ^[[1m^[[31mError:^[[39m^[[22m Script \"^[[1mbunx playwright test --config playwright.stories.config.ts^[[22m\" exited with code 1",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T18:51:08.3072984Z Error: Story command exited 1"
+    ],
+    "log": "/tmp/cluster-pr42-historical-failure.log"
+  },
+  {
+    "pr": 44,
+    "run": 39667532119,
+    "findings": [
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T21:35:29.8039844Z     Error: expect(Buffer).toMatchSnapshot(expected) failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T21:35:29.8040284Z       1994 pixels (ratio 0.01 of all image pixels) are different.",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T21:35:29.8040916Z       Snapshot: session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T21:35:29.8058209Z   1 failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T21:35:31.2555712Z ^[[1m^[[31mError:^[[39m^[[22m Script \"^[[1mbunx playwright test --config playwright.stories.config.ts^[[22m\" exited with code 1",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T21:35:31.5526777Z Error: Story command exited 1"
+    ],
+    "log": "/tmp/cluster-pr44-historical-failure.log"
+  },
+  {
+    "pr": 45,
+    "run": 39667535898,
+    "findings": [
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:45.1333387Z     Error: expect(Buffer).toMatchSnapshot(expected) failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:45.1333815Z       1994 pixels (ratio 0.01 of all image pixels) are different.",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:45.1334321Z       Snapshot: identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:45.1352323Z     Error: expect(Buffer).toMatchSnapshot(expected) failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:45.1352742Z       1994 pixels (ratio 0.01 of all image pixels) are different.",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:45.1353248Z       Snapshot: identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:45.1369095Z   2 failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:46.6602735Z ^[[1m^[[31mError:^[[39m^[[22m Script \"^[[1mbunx playwright test --config playwright.stories.config.ts^[[22m\" exited with code 1",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-21T20:57:46.9650170Z Error: Story command exited 1"
+    ],
+    "log": "/tmp/cluster-pr45-historical-failure.log"
+  },
+  {
+    "pr": 49,
+    "run": 39690000021,
+    "findings": [
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:23.9604702Z     Error: expect(Buffer).toMatchSnapshot(expected) failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:23.9605286Z       1994 pixels (ratio 0.01 of all image pixels) are different.",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:23.9605901Z       Snapshot: identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander.png",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:23.9624519Z     Error: expect(Buffer).toMatchSnapshot(expected) failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:23.9624936Z       1994 pixels (ratio 0.01 of all image pixels) are different.",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:23.9625864Z       Snapshot: session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:23.9642699Z   2 failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:25.4713326Z ^[[1m^[[31mError:^[[39m^[[22m Script \"^[[1mbunx playwright test --config playwright.stories.config.ts^[[22m\" exited with code 1",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T01:36:25.7699124Z Error: Story command exited 1"
+    ],
+    "log": "/tmp/cluster-pr49-historical-failure.log"
+  },
+  {
+    "pr": 50,
+    "run": 39690249855,
+    "findings": [
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T05:35:39.5352971Z     Error: expect(Buffer).toMatchSnapshot(expected) failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T05:35:39.5353415Z       1994 pixels (ratio 0.01 of all image pixels) are different.",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T05:35:39.5354057Z       Snapshot: session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T05:35:39.5372670Z   1 failed",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T05:35:41.0130743Z ^[[1m^[[31mError:^[[39m^[[22m Script \"^[[1mbunx playwright test --config playwright.stories.config.ts^[[22m\" exited with code 1",
+      "stories (verify)\tUNKNOWN STEP\t2026-10-22T05:35:41.3073202Z Error: Story command exited 1"
+    ],
+    "log": "/tmp/cluster-pr50-historical-failure.log"
+  }
+]
