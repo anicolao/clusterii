@@ -19,6 +19,11 @@ case "$1" in
     bun run test:browser-storage
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
+  recovery)
+    [ "$#" -eq 4 ] && [ "$2" = discard-diagnostic ] || exit 2
+    case "$3:$4" in draft:phone|draft:desktop|draft:large|draft:short) ;; *) exit 2 ;; esac
+    node scripts/discard-diagnostic-run.mjs "$3" "$4"
+    ;;
   application)
     bun run check
     bun run lint
