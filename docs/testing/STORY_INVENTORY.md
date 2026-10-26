@@ -242,3 +242,12 @@ Four local exact component stories/96 captures cover pending, reconnect, schedul
 - desktop: [Research selection](stories/research-selection-lab/desktop/darwin-arm64/README.md).
 - large: [Research selection](stories/research-selection-lab/large/darwin-arm64/README.md).
 - short: [Research selection](stories/research-selection-lab/short/darwin-arm64/README.md).
+
+## History lab narratives
+
+Four local exact component stories/48 captures cover loading, retry, two recovered revisions, keyboard disclosures, bounded reading and latest loading. Existing live history evidence and remaining procedural lab assertions stay separate. Linux and independent acceptance remain open.
+
+- phone: [History recovery lab](stories/history-recovery-lab/phone/darwin-arm64/README.md).
+- desktop: [History recovery lab](stories/history-recovery-lab/desktop/darwin-arm64/README.md).
+- large: [History recovery lab](stories/history-recovery-lab/large/darwin-arm64/README.md).
+- short: [History recovery lab](stories/history-recovery-lab/short/darwin-arm64/README.md).
