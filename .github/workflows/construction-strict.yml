@@ -1,0 +1,50 @@
+name: Migrated construction strict verification
+on:
+  push:
+    branches: [investigate/pr79-construction-migrated-strict]
+    paths: [.github/recovery/pr79-construction-strict-01.json]
+permissions:
+  contents: read
+concurrency:
+  group: cluster-pr79-construction-strict
+  cancel-in-progress: false
+jobs:
+  construction:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_STORY_COHORTS: viewport
+      CLUSTER_STORY_FILTER: 'Live construction '
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate unchanged source and reference bytes
+        run: node scripts/construction-strict-request.mjs
+      - name: Confirm eight selected construction stories
+        run: |
+          bun install --frozen-lockfile
+          node node_modules/@playwright/test/cli.js test --config playwright.stories.config.ts --list | tee /tmp/construction-test-list.txt
+          grep -Fx "Total: 8 tests in 1 file" /tmp/construction-test-list.txt
+      - name: Exercise construction and recovery across four viewports
+        run: nix run path:./nix#ci-renderer -- stories verify
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: construction-strict-${{ github.sha }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            ci-evidence/
+            test-results/stories/
+            test-results/.story-cohorts-*/
+            firestore-debug.log
