@@ -290,17 +290,9 @@ export class TestStepHelper {
                   );
                 return image;
               };
-              const image = await stableImage(
-                process.env.CLUSTER_RENDER_TELEMETRY === "1"
-                  ? async () => {
-                      await sampleRender();
-                      const captured = await capture();
-                      await sampleRender();
-                      return captured;
-                    }
-                  : capture,
-                exactPixels,
-              );
+              const image = await stableImage(capture, exactPixels);
+              // Diagnostic observation follows the completed stable capture only.
+              await sampleRender();
               writeFileSync(join(this.story.folder, stem), image);
               if (process.env.CLUSTER_RENDER_TELEMETRY === "1") {
                 writeFileSync(
@@ -322,6 +314,20 @@ export class TestStepHelper {
                 body: image,
                 contentType: "image/png",
               });
+              if (process.env.CLUSTER_RENDER_TELEMETRY === "1" &&
+                  stem === "034-close-arrival-archives-by-keyboard-2-independent-marshal.png") {
+                const probe = async (hide: boolean) => page.evaluate((value) =>
+                  (window as unknown as {__clusterCoreProbe: (hide: boolean) => unknown}).__clusterCoreProbe(value), hide);
+                const states: unknown[] = [];
+                try {
+                  states.push(await probe(true));
+                  const hidden = await stableImage(capture, exactPixels);
+                  writeFileSync(join(this.story.folder, stem.replace(/\.png$/, ".core-hidden.png")), hidden);
+                } finally {
+                  states.push(await probe(false));
+                  writeFileSync(join(this.story.folder, stem.replace(/\.png$/, ".core-probe.json")), JSON.stringify(states,null,2));
+                }
+              }
               if (mode() === "verify") {
                 const identical = await exactPixels(
                   image,
