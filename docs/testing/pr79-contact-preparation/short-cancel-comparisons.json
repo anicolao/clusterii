@@ -1,0 +1,47 @@
+[
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/023-cancelled-base-1-builder-envoy.png",
+      "blob": "108d956f652f791e0b71fb1ee24977d5024b986f",
+      "sha256": "9e5354677a931010969a428f7c2d0f188a0aab777fbb8d27180bc4a7ddab6a29",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/018-cancelled-base-1-builder-envoy.png",
+        "blob": "4f51051bf551ce8bda4ff94766ffdc534ed5ebaa",
+        "sha256": "bb5cfcb45cdcd179243cb7280d15ab66f4e7e250ca1c0151e1f19dc88e4ead98"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/short/023-cancelled-base-1-builder-envoy.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/018-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/025-keyboard-return-2-independent-builder.png",
+      "blob": "65d6dd08fe9142d853929d58ef57dfc7c81b91ea",
+      "sha256": "d39354779cf1d3235fe9dc8dee51433a58659f66d406af7c39be71786ab2f853",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/020-keyboard-return-2-independent-builder.png",
+        "blob": "6378afb06cb020c378c793c8e9e185380b9aa7a3",
+        "sha256": "081153ab49bcb7b002d69b26db51b0451ea190ebfcd18d2901ca21b41474f57a"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/short/024-recover-settled-outcome-2-independent-builder.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/020-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/024-recover-settled-outcome-1-builder-envoy.png",
+      "blob": "722c915031a9b31ac9c5f8b71646cc26399e8291",
+      "sha256": "93697bb147272fe7b0bbff1c8a82f543378c87d76f656e730be98c5cab2776b3",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/019-recover-settled-outcome-1-builder-envoy.png",
+        "blob": "895cc438ea5e46af20e117379d802da9a7210910",
+        "sha256": "b2f3c59eb4f61a71c4639f33ec68e42bdf225809ddc67b522bc74847525c4c32"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/short/024-recover-settled-outcome-1-builder-envoy.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/short/darwin-arm64/019-recover-settled-outcome-1-builder-envoy.png"
+  }
+]
