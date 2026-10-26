@@ -39,6 +39,7 @@ export type StoryView = {
   primary?: Locator[];
   motionInspection?: MotionFrame[];
   verifications?: Verification[];
+  captureVerifications?: Verification[];
 };
 interface Metadata {
   id: string;
@@ -271,12 +272,24 @@ export class TestStepHelper {
                     ),
                   );
               };
-              const capture = () =>
-                page.screenshot({
+              const capture = async () => {
+                for (const check of view.captureVerifications ?? [])
+                  await test.step(
+                    `${view.player}: before PNG: ${check.spec}`,
+                    check.check,
+                  );
+                const image = await page.screenshot({
                   animations: "allow",
                   caret: "hide",
                   fullPage: false,
                 });
+                for (const check of view.captureVerifications ?? [])
+                  await test.step(
+                    `${view.player}: after PNG: ${check.spec}`,
+                    check.check,
+                  );
+                return image;
+              };
               const image = await stableImage(
                 process.env.CLUSTER_RENDER_TELEMETRY === "1"
                   ? async () => {
@@ -332,6 +345,7 @@ export class TestStepHelper {
             image: stem,
             verifications: [
               ...(view.verifications ?? []).map((v) => v.spec),
+              ...(view.captureVerifications ?? []).map((v) => v.spec),
               ...(view.motionInspection ?? []).map(
                 (frame) =>
                   `Explicit paused motion: ${frame.selector}, ${frame.count} animation(s), ${frame.time}/${frame.duration} ms; unchanged exact comparison.`,

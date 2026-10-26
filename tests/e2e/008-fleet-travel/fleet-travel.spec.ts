@@ -5,6 +5,7 @@ import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign } from "../../../shared/campaign";
 import { test, expect } from "../helpers/fixtures";
 import { TestStepHelper } from "../helpers/test-step-helper";
+import { assertScreenFit } from "../../browser/story-helpers/screen-fit";
 import { login, grantDeveloper } from "../../browser/helpers";
 import {
   admissionAt,
@@ -1222,7 +1223,43 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
           check: async () => expect(await canonical()).toEqual(settled!),
         },
       ],
-      views: views(),
+      views: views().map((view) => ({
+        ...view,
+        captureVerifications: [
+          {
+            spec: "Escape opener retains document focus, keyboard-visible outline and complete focus paint at capture.",
+            check: async () => {
+              const opener = inspector(view.page).getByRole("button", {
+                name: "Arrival reports",
+                exact: true,
+              });
+              const focus = await opener.evaluate((element) => {
+                const style = getComputedStyle(element);
+                return {
+                  documentFocused: document.hasFocus(),
+                  active: document.activeElement === element,
+                  focusVisible: element.matches(":focus-visible"),
+                  outlineStyle: style.outlineStyle,
+                  outlineWidth: parseFloat(style.outlineWidth),
+                  outlineColor: style.outlineColor,
+                };
+              });
+              expect(focus).toEqual({
+                documentFocused: true,
+                active: true,
+                focusVisible: true,
+                outlineStyle: "solid",
+                outlineWidth: 3,
+                outlineColor: "rgb(255, 225, 164)",
+              });
+              await view.page.evaluate(assertScreenFit, {
+                surface: "game" as const,
+                focusedControl: true,
+              });
+            },
+          },
+        ],
+      })),
     });
   } finally {
     for (const c of contexts) await c.close();
