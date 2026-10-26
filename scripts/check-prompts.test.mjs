@@ -350,3 +350,12 @@ test('archived final-record separator follows only proven later append transitio
  const combined=child+'\n'+later.replace('Prompt 3:','Prompt 5:')+'\n\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
  for(const bad of [combined.replace('Second user request.','Second user request. '),combined.replace('Second user request.\n\n\n\n\n','Second user request.\n\n\n\n'),combined.replace(later.replace('Prompt 3:','Prompt 5:'),''),combined.replace('Later parent request.','Different parent request.')]) {f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
 });
+
+test('two-LF parent append retains an exact common request with a one-LF child separator', t => {
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const parentLog=initial+'\n'+next;f.write(parentLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent adds structural separator');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);const childLog=initial+next.replace('Second user request.','Child request.');f.write(childLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Child exact original prefix');
+ const dir=`docs/prompt-history/${parent}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(parentLog,`${dir}/PROMPTS.md`);f.git('add',dir);f.write(parent+'\n','.git/MERGE_HEAD');
+ const combined=childLog+next.replace('Prompt 2:','Prompt 3:')+'\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
+ f.write(combined.replace('First user request.','First user request. '));f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);
+});

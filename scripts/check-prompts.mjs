@@ -104,7 +104,7 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     // the incoming parent appended its structural LF. Apply the same proven
     // append transitions to this already-supported retained-separator form.
     for (const original of originals) {
-      if (record === `${original}\n`) variants.add(`${original}${separator}`);
+      if (record === `${original}\n` || record === `${original}\n\n`) variants.add(`${original}${separator}`);
     }
     for (let pass = 0; pass <= appendedTransitions.length; pass++) {
       const size = variants.size;
