@@ -2677,3 +2677,10 @@ Delegated reviewer instruction; refer to latest main meta complete100 strict art
 Reviewer: PR71 strict40262969648 ALL FOUR SUCCESS. Independently verified original ZIP size/SHA256/CRC, exactbc19c059 executor/run/source provenance, verify/passed25/exit0/referenceDiff0 each, and all100 PNGs byte-exact approved hashes. Evidence /tmp/cluster-pr71-strict-review/all100-verified.json and per-viewport reports/originalZIPs. Complete reviewed strict gate satisfied. Proceed now to publish existing PR71 repair from f5cfe1b0 plus audit-only commits preserving exact published70 ancestry; check no product/tests/runtime/reference drift before push. Preserve all100 evidence and lossless latestmainmeta, attributed PROMPTS/continuations, then observe mandatory full PR checks. Carry exact published71 parent into preparedPR72 and continue its existing baseline review/repair; do not wait idle for whole-suite71 if independent72 preparation is safe. No duplicate runs, no merges. Regression verification is not full production design-fidelity signoff.
 
 
+
+
+## Prompt 228: Prepare explicit replacement
+
+Delegated reviewer instruction; refer to latest main meta existing PR73 preparation handoff and original source review.
+
+Reviewer continuation: candidate72 run40264675463 and required68-71 checks are live, no restarts. While waiting, prepare existingPR73 original17250d57 (explicit competing draft replacement) on separate preparation branch based on reviewed72 integration4a826445. Mainmeta records independent full143-line original source review. Migrate its exact story into009 structure, retain original assertions/budgets and every inherited reference, no new features. Do not publish73 or generate/promote its candidates before72 reviewed parent carry-forward. Preserve immutable72 source/request and return to actionable terminalCI/candidate artifacts when ready. Record attributed instruction/continuations and latest mainmeta, commit/push preparation and evidence. Supervisor will own72 artifact review when available; no duplicate downloads or merges.
