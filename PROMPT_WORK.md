@@ -587,3 +587,5 @@ Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Prepare one immutable four-viewport PR73 replacement candidate journey bound to reviewed136 parent images.
 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Request one full168-image PR73 candidate generation with all136 approved inherited references unchanged.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Preserve reviewed parent equivalence, exact inherited reference audit, and immutable PR73 candidate execution handle.
