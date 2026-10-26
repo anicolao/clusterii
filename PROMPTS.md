@@ -2188,38 +2188,138 @@ Delegated reviewer instruction; refer to main meta PR68 executor and ancestry au
 
 Reviewer: Independently audited68 executor d00a2afb/request91a10a62 and confirmed sole run40244192975 queued. While66/67/68 jobs proceed, reconcile original PR68 ancestry and prompt preservation in isolated preparation branch, preserving exact tested ef600330 production/spec/helpers and inherited Linux refs. Use Git-proven original prompt archives and structural separators under unchanged checker, no historical rewriting or checker weakening. Keep historical Darwin evidence clearly historical; do not import unreviewed PNG changes. Verify source/test/reference identity to ef600330 after reconciliation and commit/push attributed evidence, including newest supervisor meta audits. This is preparation, no active68 publication yet. Prioritize terminal67 results: validate all72 complete unchanged-reference manifests then publish67 and full required CI as already authorized. Preserve sole66 retry; if failure inspect exact evidence, no loop. Do not queue duplicate verification. No GitHub merge.
 
-## Prompt 166: Preserve successor ancestry
+## Prompt 166: Fleet contact preparation
+
+Delegated reviewer instruction; refer to main meta Reviewer PR67 publication verified and PR69 preparation handoff.
+
+Reviewer: Independently confirmed active67 348733a1 and allfive full checks live; diff versus testedac3d6298 only continuation+strict evidence. Preserve those jobs. While68 sole101-view run40244192975 and66 retry run, prepare original69 residual atop reconciled68 c215647d in isolated branch; inspect original69 source/helpers/tests and preserve current parent fixes. Reviewer preliminary69 audit in mainmeta: new fleet-contact Linux refs absent, historical failedjob119679444037 has56 missing-ref errors plus4pixel mismatches across old inherited stack; do not treat those as current defects. Port complete original69 behavior/test, review explicit test-only entropy boundary and keep real command/reducer/privacy/recovery/conservation assertions. Prepare one complete four-size Linux candidate-generation request only for new fleet-contact journey after appropriate source checks, preserving inherited references; retain full candidates for independent visual approval before importing. Do not publish69 or approve its images yourself as supervisor substitute. Prioritize any66/67/68 terminal failures. On68 complete strict success retain evidence; reconcile published67 evidence ancestry without changing tested code, then request/record publication readiness. Continue attributed logs including mainmeta latest audits, commit/push. Nix only, reserve preflight, no duplicate live requests or GitHub merge.
+
+## Prompt 167: Preserve successor ancestry
 
 Delegated reviewer instruction; refer to latest main meta PR68 evidence and PR69 ancestry reconciliation checkpoint.
 
 Reviewer: Sole69 generation40245246719 now live; preserve it and all predecessor runs. While waiting, complete pending68 incorporation of published67 evidence348733a1 onto reconciledc215647d; this must preserve exactef600330 product/spec/runtime/reference trees. Independently verified c215 archives exact and canonicalappendonly; do not repeat unchanged checks unnecessarily. After68 reconciliation, preserve original69 ancestry/prompt continuations atop prepared69b89864b1, using exact archives and unchanged checker, with tested69 source/helpers/refs byteidentity. No Darwin baseline imports. Commit/push attributable reconciliations and latest supervisor audits. On68 all101 strictsuccess, retain complete artifacts, original hashes and manifests then publish68 after confirming exact current67 parent and no code/ref delta from tested target; fullrequiredCI must run. On69 candidate completion retain original archives/complete76image inventory and provide paths for supervisor inspection; do not promote unseen candidates. Respect diskfloor+reserve with selective extraction if needed. Prioritize any66/67 failure. No duplicate requests or GitHub merges.
 
-## Prompt 167: Stabilize overdue acknowledgement
+## Prompt 168: Reuse contact originals
+
+Delegated reviewer instruction; refer to main meta PR69 phone artifact inspection and retained candidate provenance.
+
+Reviewer: I retrieved69 phoneartifact12618696839 anddesktop12618960995 into /tmp/cluster-pr69-linux-candidates/<id>.zip; independently verified metadata size/SHA256/CRC. Complete PNG/JSON/MD selected under test-results/stories/live-fleet-contacts there. Reuse these originals; do not redownload. download-metadata.json retains originalmetadata. Note shared ci-evidence extraction overwritten acrossviewport; use original ZIP for perviewport manifests. All13distinctphoneframes visually inspected (19total via exacthash groups), reviewer-phone-inspection.json records hashes; NOT yet baseline promotion. Desktop inspection still pending. Continue retaining large/short originals into same root with freshreserve preflight, never overwrite reviewer manifests. Concept08 comparison shows simpler current composition, no full-designrelease claim. Preserve69candidate hold pending my complete visualdecision. Continue68 publication prerequisites and66/67 CI as already authorized.
+
+## Prompt 169: Approve contact references
+
+Delegated reviewer instruction; refer to main meta complete PR69 independent regression inspection and approval.
+
+Reviewer: Complete PR69 baseline inspection is finished. Independently verified all four retained ZIP sizes/SHA256/CRC and all76 extracted image bytes against originals. All47 distinct images viewed across19frames each phone/desktop/large/short; exact duplicate hashes cover the rest. Approved these76 exact PNGs for regression-baseline import only, inventory /tmp/cluster-pr69-linux-candidates/reviewer-approval.json. Preserve documented concept-fidelity gap; this is not release/design approval. Incorporate published68 bf0ea547 ancestry/evidence without changing tested69 code, import only these reviewed images, keep inherited refs exact, record provenance and run one complete strict four-size69 contact journey before publishing69. No mask/threshold/retry changes. Prioritize any66/67/68 full-CI failures; preserve live runs. Commit/push attributable instructions, continuations, evidence and latest main meta findings. Never merge PRs.
+
+## Prompt 170: Verify then publish
+
+Delegated reviewer instruction; refer to latest main meta independent PR68 retained evidence and PR69 import/executor audits.
+
+Reviewer: Independently verified all101 retained PR68 original captures against publishedbf0ea547 Git references, plus ZIP size/SHA256/CRC. Independently verified PR69 f588b6e4 all76 imports against my approval hashes; only test delta versus b89864b1 is76 added contact PNGs and4review manifests, no inherited edits/removals, executable source/helpers/runtime unchanged. Audited strict executor907f334e and requeste8eea2b9: exact19views each at4sizes, verify mode, retries0, updatesnone, reference7d9ff143, pinnedrenderer unchanged and isolated launcher additions. Run40246963988 queued; preserve this sole request. On all76 strict success retain original artifacts and compare exact references, reconcile current68 parent and publish69 without another permission request; then fullrequiredCI. If failure inspect first actual/expected/diff before any change. Commit/push latest mainmeta audits and attributed continuations. No GitHub merges; do not mark full design approved.
+
+## Prompt 171: Repair renderer metadata
+
+Delegated reviewer instruction; refer to main meta PR69 missing renderer metadata diagnosis and corrected strict request authorization.
+
+Reviewer: Independently read failed69 phone121330456272 anddesktop121330456220 logs: Missing reviewed baseline/renderer at first010, before comparison (views0). Source helper requires sibling renderer.json; f588b6e4 imported PNGs andreview.json only. My prior PNG audit missed this completeness defect. Verified each four review.json.renderer exactly equals retained candidate verified-inventory renderer. Add four renderer.json files from those retained original perviewport manifests, keep all76approvedPNG bytes unchanged and verifier strict. Add a cheap preflight covering every required PNG plus renderer sibling/metadata before any new expensive strict request. Do not fabricate renderer values or regenerate images. Preserve failedrun40246963988 and let remaining livecases finish; after metadata correction use one fresh source-bound complete4size strict request with corrected target/reference tree. Continue69 publication only on complete strictsuccess and artifact identity checks; no screenshot updates/masks/thresholds. Log this rootcause and my missed metadata audit, commit/push. Prioritize earlier requiredCI terminal results. No GitHub merges.
+
+## Prompt 172: Publish verified contacts
+
+Delegated reviewer instruction; also recorded during the PR70 checkpoint, refer to main meta corrected PR69 strict success and scoped migration audit.
+
+Reviewer: Corrected69 run40247985297 now terminal SUCCESS all4cases. Independently read remaining short121333536532 andlarge121333536795 strict summaries, completing76 verified views. Proceed already-authorized69 evidence retention/byte verification and publication on current68 parent; prioritize this concrete green-stack step over70 preparation, then resume70. No need for further approval. Also independently verified all240 inherited fleet-travel files moved to008 screenshots namespace byte-for-byte versus093e0abb; no missing/changed files. Read updated featureNarrative: explicit source provenance and full step/view semantics comparison address the mixed-caption finding; await committed tests/whole migration audit. Record latest mainmeta with next commits; no GitHub merges.
+
+## Prompt 173: Verify transfer status
+
+Delegated reviewer instruction; refer to latest main meta corrected PR69 retained desktop/short verification and PR70 diagnostic-path audit.
+
+Reviewer: Independently verified retained corrected69 desktop12620275117 andshort12620280723 ZIP size/SHA256/CRC and all38 PNGs against34a45cd1 Git references, all exact. Fresh process inspection no longer finds prior download PID73026; please retrieve terminal completion/error rather than relying on stale live-transfer narration. Only desktop/short verified markers currently exist. Diagnose transfer result/disk reserve before any retry; no duplicate download. Reviewed committed70 follow-upd8252cf8: common storySnapshotName now binds preflight and Playwright mismatch diagnostics to same paths, legacy and migrated namespaces covered; no comparator weakening. Use this corrected target in future request audit, not e1602e14.69 publication first; record currentmainmeta and logs.
+
+## Prompt 174: Synchronize real initialization
+
+Delegated reviewer instruction; refer to main meta independent PR69 trace/server correlation and bounded readiness repair.
+
+Reviewer: Independently correlated owner trace wallTime1792976528403/monotonic1179062.569 with reload campaignSecurity1196007.437: approximately01:02:25.348Z, matching full application log lines4714-4716 start01:02:25.3504774Z finish01:02:34.9637858Z duration9612.468729ms. Source recover() awaits encryptionAvailable before recoverOrder/select. This supports explicit bounded campaign-readiness synchronization before the unchanged five-second panel/data/retransmission assertions; it does not justify blanket timeout increases or claim specific internal slow operation. Proceed targeted readiness repair under existing test-policy constraints, retaining identity/envelope/revision/receipt/privacy assertions and real service. Validate focused reload recovery then required CI; no fake readiness or skipped recovery. Record this independent evidence and latest mainmeta in normal audit.
+
+## Prompt 175: Preserve candidate ownership
+
+Delegated reviewer instruction; refer to main meta PR68 artifact ownership and independent PR69 readiness repair review.
+
+Reviewer: PR68 desktop and phone candidate jobs succeeded. Supervisor owns downloading/inspecting artifacts12621864493 and12622745908 under /tmp/cluster-pr68-overdue-review; do not duplicate these downloads. Continue69 readiness repair; reviewed current diff explicitly awaits genuine campaignSecurity POST200 boolean capability then retains five-second panel/data assertions, consistent with measured delay. Large/short still executing. Normal70 still executing.
+
+## Prompt 176: Retain route candidates
+
+Delegated reviewer instruction; refer to main meta independent PR68 desktop/phone complete image comparison.
+
+Reviewer: PR68 desktop/phone independently verified complete ZIP SHA256+CRC, provenance/outcome40views each. Compared all80PNG bytes against bf0ea547 Git:78identical, only step026 changed in each viewport. Viewed both previous/candidate pairs; intended overdue status and enabled Check route order, map/destination unchanged, footer readable (phone wraps/grows within viewport). Approve exactly these two changed candidates as regression baselines; record /tmp/cluster-pr68-overdue-review/reviewer-desktop-phone-approval.json and comparison inventory. No blanket approval of pending large/short. Keep originals, import exact approved bytes with proper renderer provenance after remaining review, then strict/full checks. Mainmeta latest review also ready for normal audit.
+
+## Prompt 177: Stabilize overdue acknowledgement
 
 Delegated reviewer instruction; refer to main meta PR68 trace and independent image inspection.
 
 Reviewer: Independently inspected PR68 expected/actual/diff: change is footer pending->same-order recovery CTA; no visible map/route drift. Rehashed all7 selected entries/SHA/CRC/size and expected image equals exactbf0ea547Git baseline; wholearchiveSHA not claimed. Trace timing supports20second boundary after pending assertion. Proceed focused fix atop PR68: accepted-while-offline step must deliberately await the real stable overdue acknowledgement state (exact recovery status plus enabled Check route order), while preserving destination, no false departure confirmation, one original encrypted command/receipt, canonical forces, and uninvolved-player privacy assertions. Earlier transient-pending steps remain covered; update this step narrative to explain overdue offline acknowledgement. Do not extend production timeout, freeze/mask timer, weaken comparator, or merely rerun. Generate affected story across4sizes in pinned renderer, inspect changed step26 images and any unexpected deltas before baseline promotion; then strict/full checks. No speculative app change or broad baseline refresh. Commit trace/inspection findings and exact mainmeta with attributed logs. Keep70focus sole run intact; earliest-red68 priority.
 
-## Prompt 168: Verify normal focus
+
+## Prompt 178: Verify normal focus
 
 Delegated reviewer instruction; refer to main meta independent PR70 focus diagnostic inspection.
 
 Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; read all observations and visually inspected peer032: ring now visible. Both players maintain document focus, opener focus, focus-visible and3pxsolidgold outline afterEscape throughPNG. This is a negative reproduction of original missing ring, not proof of a specific modality cause or app repair. No more diagnostic runs needed now. After priority68 fix dispatch, strengthen normal70 final-step per-view verification at capture time for focused opener plus focus-visible/computed visible outline, using existing focus audit conventions; do not force focus/classes or add sleeps. Remove diagnostic-only instrumentation from acceptance target, regenerate normal phone journey and inspect any changed pixels (expected peer032 ring), then complete160strict. Desktop/short/large reviewed visuals remain valid only where bytes unchanged. Diagnostic image visually acceptable as intended state but do not silently import diagnostic provenance as normal acceptance. Record exact original/diagnostic hashes and unresolved causal limitation. No blanket CSS change or merge.
 
-## Prompt 169: Promote reviewed recovery
+
+## Prompt 179: Promote reviewed recovery
 
 Delegated reviewer instruction; refer to main meta complete PR68 four-size review and independent PR70 import audit.
 
 Reviewer: Final PR68 large artifact12623245258 full size/SHA256/CRC verified,40PNG compared,39identical and only026 changed. Independently viewed previous/candidate large026 (2048display of3840original), intended overdue footer/CTA, no map drift. Approve per /tmp/cluster-pr68-overdue-review/reviewer-large-approval.json. All160 candidate comparisons now complete:156unchanged and exactly4inspected/approved026 changes. Proceed exact four-image promotion plus metadata on68 focused fix, strict/full required CI and forward integration; no more candidate generation needed. Supervisor owned final large retrieval. Independently audited70 a28bb2f1:48new imported PNGs equal reviewed originals, all160review manifest SHA256s valid, no inherited PNG/renderer modifications; only four review.json updates. Audit /tmp/cluster-pr70-normal-focus-review/reviewer-import-audit.json. Preserve both approvals/audit and current mainmeta in next pushed logs.
 
-## Prompt 170: Preserve reviewed dispatch
+
+## Prompt 180: Preserve reviewed dispatch
 
 Delegated reviewer instruction; refer to main meta independent PR68 import/executor audit and four passing guard tests.
 
 Reviewer: Independently audited committed68 import122245b2: exact four approved PNGs, only four review.json additional baseline changes, no other pixels/renderers. Record /tmp/cluster-pr68-overdue-review/reviewer-import-audit.json. Reviewed strict route case/request/runner/workflow: exact160references,40perviewport, original comparator/no snapshots/no retries, pinned Nix renderer;4guard tests independently PASS. Continue sole17fc3dd4 request dispatch, preserve unique handle, then carry verified68 change forward into69/70 without rerunning already-live jobs solely for observation. Include latest mainmeta and audit in pushed logs.
 
-## Prompt 171: Publish verified stack
+## Prompt 181: Preserve exact interleaving
+
+Delegated reviewer instruction; refer to main meta independent staged parent-history diagnosis and narrowly authorized checker correction if necessary.
+
+Reviewer: Independent read-only diagnosis of staged69 archive failure: fd041a6a parent166 Preserve successor ancestry occurs exactly byte-identical at canonical167 (both2LF). After initial prefix divergence, checker suffix loop only accepts separator variants, so skips this exact preserved record and cursor stalls165. Parent170 Preserve reviewed dispatch also occurs exact at canonical180 (both1LF). Do not fabricate duplicate prompts or trim original body bytes to appease this. If reconciliation cannot preserve both existing histories with current checker, a minimal checker correctness fix is authorized: accept exact record===prior[cursor] in ordered suffix matching alongside existing proven-separator variants, with a focused test for interleaved exact preservation and rejection of changed/reordered/omitted bodies. This preserves verbatim and order requirements; no general whitespace normalization or broad bypass. Keep isolated test/tool correction explicit and independently reviewable, while live CI remains untouched. Current source and baseline integrations remain verified.
+
+## Prompt 182: Preserve strict ownership
+
+Delegated reviewer instruction; refer to main meta supervisor-owned PR70 strict desktop/phone verification.
+
+Reviewer: Supervisor owns PR70 strict desktop12623182289 and phone12622957608 artifact verification under /tmp/cluster-pr70-strict-review; do not duplicate downloads. Continue exact prompt preservation correction and parent preparation while I verify captured pixels/manifests.
+
+## Prompt 183: Preserve exact cohorts
+
+Delegated reviewer instruction; refer to main meta independently verified PR70 strict desktop/phone original artifacts and80 exact captures.
+
+Reviewer: Supervisor-owned PR70 strict desktop12623182289/phone12622957608 verified complete originalZIP size/SHA256/CRC; both outcomes verify/passed40views exit0 and referenceDiff0, exact targeta28bb2f1/executor650525a9. Independently compared all80captured PNGs against committed reviewed references:80exact. Evidence /tmp/cluster-pr70-strict-review/reviewer-desktop-phone-verification.json plus originals. Preserve in next audit; do not redownload. Remaining large/short not yet accepted; retain sole live run40256911000. No baseline update needed for these passed cohorts.
+
+## Prompt 184: Preserve parent verification
+
+Delegated reviewer instruction; refer to latest main meta exact strict cohort and canonical parent verification.
+
+Reviewer: Independently verified c0cc9d47 preserves063f41a3 canonical prefix, exact fd041a6a archives, both repaired specs, unchanged checker. Supervisor owns PR68 strict desktop12623490207/phone12622329353 verification under /tmp/cluster-pr68-strict-review; do not duplicate downloads.
+
+## Prompt 185: Preserve route cohorts
+
+Delegated reviewer instruction; refer to latest main meta exact strict cohort and canonical parent verification.
+
+Reviewer: PR68 strict desktop12623490207/phone12622329353 supervisor verification complete: full originalZIP size/SHA256/CRC, exact target122245b2/executor17fc3dd4, both40view strict outcomes passed with exit0/referenceDiff0. All80PNG captures independently equal committed reviewed references. /tmp/cluster-pr68-strict-review/reviewer-desktop-phone-verification.json plus originalZIPs retained; no duplicate retrieval. Large/short still pending. Also independently verified c0cc9d47 exact canonical063f41a3 prefix, incoming fd041a6a archives, both repaired specs and unchanged checker; separator reconciliation succeeded without checker change. Preserve these records and current mainmeta in normal pushed audit.
+
+## Prompt 186: Preserve remaining ownership
+
+Delegated reviewer instruction; refer to main meta supervisor-owned remaining68/70 strict artifacts.
+
+Reviewer: Supervisor owns remaining short/large artifact verification for both live strict runs68/70, including newly passed70short12623466574. Avoid duplicate retrieval; continue isolated forward-parent integration and logs.
+
+## Prompt 187: Publish verified stack
 
 Delegated reviewer instruction; refer to main meta complete independent68/70 strict160 verification and ordered publication authorization.
 
 Reviewer: PR68 strict40257151053 ALL FOUR SUCCESS. Supervisor independently verified remaining short12623348262 and large12622949577 full originalZIP sizes/SHA256/CRC, verify/passed40 exit0/referenceDiff0, exact target122245b2; all80remaining PNGs equal reviewed references. All160strict68 captures now verified, matching completed160strict70. Records /tmp/cluster-pr68-strict-review/reviewer-short-verification.json and reviewer-large-verification.json complete desktop-phone record; retain originals and no duplicate retrieval. Proceed publish reviewed68 repair plus audit to its existing PR, carry exact parent forward and publish prepared69/70 updates for required CI. No additional isolated strict/candidate reruns absent changed tested inputs. Full required CI remains mandatory; preserve previous failures and no merge. Independently compared93eaca1e versus a28bb2f1: no changes to product/shared/functions/e2e/helpers/deps/workflows/checker. Commit/push latest mainmeta and final verification records with publication.
+
