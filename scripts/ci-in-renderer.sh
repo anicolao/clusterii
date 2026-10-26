@@ -14,8 +14,8 @@ fi
 ldd "$browser" > ci-evidence/nix-renderer/renderer-ldd.txt
 case "$1" in
   recovery)
-    test "$2" = core-diagnostic
-    node scripts/core-diagnostic-run.mjs "$3" "$4"
+    test "$2" = core-sampling
+    node scripts/core-sampling-run.mjs "$3" "$4"
     ;;
   stories)
     bun run test:story-policy
