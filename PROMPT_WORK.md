@@ -391,3 +391,5 @@ Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Inherit all 228 individually reviewed PR75 references into readmission preparation without changing child assertions
 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Import 44 independently reviewed PR76 readmission references while preserving all 228 inherited image hashes
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Bind PR76 four-size strict readmission verification to the 272 inspected references without snapshot updates
