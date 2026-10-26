@@ -2253,3 +2253,9 @@ Reviewer: PR68 desktop and phone candidate jobs succeeded. Supervisor owns downl
 Delegated reviewer instruction; refer to main meta independent PR68 desktop/phone complete image comparison.
 
 Reviewer: PR68 desktop/phone independently verified complete ZIP SHA256+CRC, provenance/outcome40views each. Compared all80PNG bytes against bf0ea547 Git:78identical, only step026 changed in each viewport. Viewed both previous/candidate pairs; intended overdue status and enabled Check route order, map/destination unchanged, footer readable (phone wraps/grows within viewport). Approve exactly these two changed candidates as regression baselines; record /tmp/cluster-pr68-overdue-review/reviewer-desktop-phone-approval.json and comparison inventory. No blanket approval of pending large/short. Keep originals, import exact approved bytes with proper renderer provenance after remaining review, then strict/full checks. Mainmeta latest review also ready for normal audit.
+
+## Prompt 177: Preserve normal capture
+
+Delegated reviewer instruction; refer to main meta normal70 successful phone run and independently checked PR69 focused recovery result.
+
+Reviewer: Normal70 phone run40255556296 now SUCCESS; supervisor owns artifact12621959721 download and visual/hash inspection under /tmp/cluster-pr70-normal-focus-review, do not duplicate. Independently read focused69 execution log:1passed23.8s and emulator exit0. Continue scoped69 publication and68 remaining cohorts; no extra70 diagnostic.
