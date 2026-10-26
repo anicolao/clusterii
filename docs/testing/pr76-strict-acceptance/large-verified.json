@@ -1,0 +1,48 @@
+{
+  "executor": {
+    "requestId": "readmission-strict-20261026-01",
+    "sourceCommit": "658c37a5303d0c30f8a35a45ca02e75712736421",
+    "executorCommit": "aac6e0900251088f49388b50ed722dfee2ba4652",
+    "case": "readmission-strict",
+    "mode": "verify",
+    "target": "04d827f0687373d21bbdd2d5b7abd66c425718c9",
+    "runId": "40294078353",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "28753435f6f9c1c7ae66b522f0c3510d03601bbd",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "be0d033b93e3151763a6e23f703cc77943b4b42afdd56d395029c148f57d34f5",
+        "views": 68
+      }
+    },
+    "requestSha256": "a94ed63decafef5430d2f624e8f5005d3e21b9c648c189ef70f687b456e023f6"
+  },
+  "exactImages": 68,
+  "artifact": {
+    "id": 12638495605,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYzODQ5NTYwNQ==",
+    "name": "readmission-strict-draft-large-aac6e0900251088f49388b50ed722dfee2ba4652-1",
+    "size_in_bytes": 145155530,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12638495605",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12638495605/zip",
+    "expired": false,
+    "digest": "sha256:69c5badfb4cf4ad4c8e8db335f742092203fc99ab26311b578df458fb16e6fe4",
+    "created_at": "2026-10-26T08:57:11Z",
+    "updated_at": "2026-10-26T08:57:11Z",
+    "expires_at": "2026-11-25T08:57:06Z",
+    "workflow_run": {
+      "id": 40294078353,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr76-readmission-strict",
+      "head_sha": "aac6e0900251088f49388b50ed722dfee2ba4652"
+    }
+  },
+  "wholeArchiveSha256CRCVerified": true,
+  "retention": "PNG bytes exact to reviewed272 inventory; nonimage records retained; archive verified in memory"
+}
