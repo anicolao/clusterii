@@ -1,0 +1,237 @@
+[
+  {
+    "path": "tests/browser/story-baselines/commander-identity/short/linux-arm64/002-sign-in-1-toile.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/commander-identity/short/linux-arm64/003-save-identity-1-toile.png",
+    "sha256": "a84832745219e3105f64fc4afb0b6fc8557e30ae58dbd5712da7099232acc08c",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/commander-identity/short/linux-arm64/004-reload-1-toile.png",
+    "sha256": "2847eeb54d0f450b19f8d978bfe618c624bd436f274c8a30d28644256e66bcd4",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+    "sha256": "4018f71243fffd5ec27e9a74223eb05dbc41f0db73818234a18954361d1187aa",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/002-save-original-1-commander-device-one.png",
+    "sha256": "b6d942209913f040c8439e291d0b3c706d50de1ff5efa2e0021aeab3754cca3e",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/003-second-device-sign-in-1-commander-device-one.png",
+    "sha256": "b6d942209913f040c8439e291d0b3c706d50de1ff5efa2e0021aeab3754cca3e",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/003-second-device-sign-in-2-commander-device-two.png",
+    "sha256": "afcffb89775f7a6c877a26f1ae412e3399eb1a79b69281d0351f4ac6150052b4",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/004-preserve-local-draft-1-commander-device-one.png",
+    "sha256": "b6d942209913f040c8439e291d0b3c706d50de1ff5efa2e0021aeab3754cca3e",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/004-preserve-local-draft-2-commander-device-two.png",
+    "sha256": "0510d67807e2e8e12093c09b9e58997d74c9c67a2988dfcfb215f205a05852a3",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/005-other-device-save-1-commander-device-one.png",
+    "sha256": "c04c8d48489947ced9f59255d382706966a22a2438a96e86dcca7579bc77e294",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/005-other-device-save-2-commander-device-two.png",
+    "sha256": "0510d67807e2e8e12093c09b9e58997d74c9c67a2988dfcfb215f205a05852a3",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/006-reject-conflicting-save-1-commander-device-one.png",
+    "sha256": "c04c8d48489947ced9f59255d382706966a22a2438a96e86dcca7579bc77e294",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/006-reject-conflicting-save-2-commander-device-two.png",
+    "sha256": "efca144693dbdf856f647bae8ea430566f3c6bffa98a56a40fb56986f41cbe41",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/007-replace-explicitly-1-commander-device-one.png",
+    "sha256": "e01f7993515e408ae5da7d7f4f4fc064a89ee9351284afa004069c05285d6ac8",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/007-replace-explicitly-2-commander-device-two.png",
+    "sha256": "e01f7993515e408ae5da7d7f4f4fc064a89ee9351284afa004069c05285d6ac8",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/002-save-before-loss-1-commander.png",
+    "sha256": "70d901318b26ba616c9532c2bde812b1cad8d79590bc023aa05f3ca66ac59b5d",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/004-pending-draft-1-commander.png",
+    "sha256": "864a1115e0b51c68770e3b8315dd1cebc79855dea0542af3f21a295b66da2fcf",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/005-retry-same-order-1-commander.png",
+    "sha256": "16926b6b6e32ccb192257568e643c0e8f3038ff673ddb6ffe92f67ea5ab3befb",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/007-accept-once-1-commander.png",
+    "sha256": "6857e27484f431de2043e0f99f7b2ef7ff1f1ce47f3fb5b62485f6aab9d25c50",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/008-reload-saved-draft-1-commander.png",
+    "sha256": "2550aefd29246d1a9675dd31ec8fc40fe59bb150666dbb5b7912bc7e3d2a9770",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander.png",
+    "sha256": "91ee6ef3b0039a6db21a8ad88b06ce471705fb0e9508bd24b32f8886a2288c1c",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/003-accepted-identity-1-receipt-commander.png",
+    "sha256": "30ac08773284f508fe194bb0ebc5f1e6cf2186d6ea381e1a8ae4c639047c9d68",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/004-replacement-draft-1-receipt-commander.png",
+    "sha256": "dff4327616b06135e2e361e5aa5308cb02570e4ceb98c4731e8fa3faba069696",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/005-mismatched-acknowledgement-1-receipt-commander.png",
+    "sha256": "7f1c5f484d86dce4d642a8cc4a37fbbed253ce3dd305393f110db9b3d3390034",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/007-fresh-save-1-receipt-commander.png",
+    "sha256": "352398ab93102b89d4bd4642bc9197c55f341dda64913987427ff653e597b2a7",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/008-reload-accepted-draft-1-receipt-commander.png",
+    "sha256": "6b0e8a825f7ee4ade02675304d58a9b2e01b119849a2b221fd36262e3eb68528",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-validation/short/linux-arm64/002-draft-1-commander.png",
+    "sha256": "a8df704240a8a0ff21ed52e71a9d5548757fa68b95a9d0f8ef3eaccb635e5941",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-validation/short/linux-arm64/003-reject-invalid-name-1-commander.png",
+    "sha256": "3b1001f25a35411b4cc818a4fac3140102642f5889723dd64e59ab783d050567",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-validation/short/linux-arm64/004-correct-draft-1-commander.png",
+    "sha256": "5e8fcb44d9962ae1d525e8004d8a8ba0352377ccb1fc59fbaa24eb849143bfa5",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-validation/short/linux-arm64/005-save-correction-1-commander.png",
+    "sha256": "2e1a3911a0c13a6bf70628b03708ed0365f5b9af04497ed9fab2ea13cf01fae2",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/identity-validation/short/linux-arm64/006-recover-correction-1-commander.png",
+    "sha256": "18acd5a54d7bd6262c3012adcfe8580b1cc49992388c003c5e99629afe0ddb58",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png",
+    "sha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-1-commander-first-device.png",
+    "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/009-reload-identity-1-commander-first-device.png",
+    "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/005-cancel-confirmation-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/007-interrupted-confirmation-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/009-reload-recovery-2-commander-second-device.png",
+    "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-1-commander-first-device.png",
+    "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+    "approved": true
+  },
+  {
+    "path": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/013-reload-identity-1-commander-first-device.png",
+    "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+    "approved": true
+  }
+]

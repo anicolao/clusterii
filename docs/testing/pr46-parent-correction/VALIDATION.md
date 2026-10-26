@@ -1,0 +1,1 @@
+Inherited reviewed PR45 parent 9d3eb1baf05f98abc0be1f963df460b8456710aa. All47 changed baseline PNGs and associated metadata byte-exact parent; production CSS and briefing fault-injection test exact parent. Feedback-lab child source unchanged. Inherited exact tested prompt checker;24 tests pass. Full CI required. No GitHub merge.

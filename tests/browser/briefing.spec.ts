@@ -22,11 +22,32 @@ for (const mode of ["mock", "real"] as const)
       raw: string | Buffer;
       active: () => boolean;
     }[] = [];
+    let releaseHttp!: () => void;
+    const httpReleased = new Promise<void>((resolve) => { releaseHttp = resolve; });
     try {
       for (let i = 0; i < 4; i++) {
         const context = await browser.newContext();
         contexts.push(context);
-        if (i === 0)
+        if (i === 0) {
+          // Reload can make Firebase fall back to HTTP long polling. Hold the
+          // same compact command there so recovery cannot bypass the fault.
+          await context.route(/127\.0\.0\.1:19000\/\.lp(?:\?|$)/, async (route) => {
+            const params = new URL(route.request().url()).searchParams;
+            let heldVisit = false;
+            for (const [key, data] of params) {
+              if (!/^d\d+$/.test(key)) continue;
+              const index = key.slice(1);
+              if (holding) expect(params.get(`ts${index}`)).toBe("1");
+              if (params.get(`ts${index}`) !== "1") continue;
+              const frame = JSON.parse(Buffer.from(data.replaceAll(".", "="), "base64url").toString());
+              if (holding && frame?.d?.a === "p" && frame.d.b?.d?.kind === "campaign.visit") {
+                writes.push(frame.d.b);
+                heldVisit = true;
+              }
+            }
+            if (heldVisit) await httpReleased;
+            await route.continue();
+          });
           await context.routeWebSocket(/127\.0\.0\.1:19000/, (ws) => {
             const server = ws.connectToServer();
             let active = true;
@@ -50,6 +71,7 @@ for (const mode of ["mock", "real"] as const)
             });
             server.onMessage((raw) => ws.send(raw));
           });
+        }
         const page = await context.newPage();
         pages.push(page);
         const email = `briefing-ui-${i}-${Date.now()}@example.test`;
@@ -229,7 +251,9 @@ for (const mode of ["mock", "real"] as const)
           (write) => JSON.stringify(write.d) === JSON.stringify(writes[0].d),
         ),
       ).toBe(true);
+      expect((await db.doc(`campaignStates/${id}`).get()).get("revision")).toBe(before);
       holding = false;
+      releaseHttp();
       for (const item of held) if (item.active()) item.server.send(item.raw);
       await expect(panel).not.toBeVisible();
       await expect(
@@ -279,7 +303,11 @@ for (const mode of ["mock", "real"] as const)
         other.getByRole("region", { name: "Return briefing", exact: true }),
       ).toContainText("From tick 0 through confirmed tick 13");
     } finally {
-      for (const context of contexts) await context.close();
+      releaseHttp();
+      for (const context of contexts) {
+        await context.unrouteAll({ behavior: "wait" });
+        await context.close();
+      }
     }
   });
 
