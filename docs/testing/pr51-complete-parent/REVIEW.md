@@ -1,0 +1,1 @@
+PR51 retains its production-lab child implementation. All changed application, test, shared and function files are byte-exact reviewed PR50 parent 52bd0f4cc39d7cbee39bdaa77998a1d64c179ae8. Inherited image provenance remains in the parent review records; no new candidate is approved here. All ten story policy tests pass. Full branch CI remains required. No GitHub PR merge.
