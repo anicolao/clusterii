@@ -402,3 +402,5 @@ Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Bind diagnostic-only four-viewport execution to postcapture telemetry and the unchanged reviewed references.
 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Explicitly enable diagnostic telemetry inside the isolated renderer process rather than relying on host environment forwarding.
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Request one postcapture-only four-viewport diagnosis after strict final-peer image failures, with no baseline mutation.
