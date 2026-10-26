@@ -1,0 +1,63 @@
+{
+  "artifact": {
+    "id": 12641288327,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY0MTI4ODMyNw==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 4707318089,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12641288327",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12641288327/zip",
+    "expired": false,
+    "digest": "sha256:53b881458d7af6d9cc63d2f203d83116a99a79c3afbcf4523cb8563a1fa4df02",
+    "created_at": "2026-10-26T10:00:49Z",
+    "updated_at": "2026-10-26T10:00:49Z",
+    "expires_at": "2027-01-24T08:16:13Z",
+    "workflow_run": {
+      "id": 40291090824,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/live-draft-account-stories",
+      "head_sha": "ec8336cacd6a521d0f36cca403bd87630da38425"
+    }
+  },
+  "downloadedRangeBytes": 16468904,
+  "etag": "\"0x8DF334802E37E69\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr75-full-failure-review/test-results/stories/008-fleet-travel/stories/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.layout.json",
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.layout.json",
+      "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82",
+      "bytes": 2071,
+      "crc32": "4205f62b"
+    },
+    {
+      "path": "/tmp/cluster-pr75-full-failure-review/test-results/stories/008-fleet-travel/stories/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "sha256": "857f2c453081288e1ce2c94e116d1ab9da654a897f69b98f506cbbfd1cbce276",
+      "bytes": 4920191,
+      "crc32": "c381ee32"
+    },
+    {
+      "path": "/tmp/cluster-pr75-full-failure-review/test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-large/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal-actual.png",
+      "entry": "test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-large/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal-actual.png",
+      "sha256": "857f2c453081288e1ce2c94e116d1ab9da654a897f69b98f506cbbfd1cbce276",
+      "bytes": 4920191,
+      "crc32": "c381ee32"
+    },
+    {
+      "path": "/tmp/cluster-pr75-full-failure-review/test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-large/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal-diff.png",
+      "entry": "test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-large/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal-diff.png",
+      "sha256": "6d11bbdd7441d7eb599ba546cbb22035d665debe402753151b586bccc4d49a91",
+      "bytes": 1198582,
+      "crc32": "51f2f7f9"
+    },
+    {
+      "path": "/tmp/cluster-pr75-full-failure-review/test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-large/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal-expected.png",
+      "entry": "test-results/stories/e2e-008-fleet-travel-fleet-988aa-ate-forces-through-recovery-large/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal-expected.png",
+      "sha256": "b571aa0a0b3468e9e4fed80b3434e41b4f3a62417eda1d798cabee23b8371f99",
+      "bytes": 4920206,
+      "crc32": "dd7ceb3d"
+    }
+  ]
+}
