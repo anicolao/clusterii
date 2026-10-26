@@ -1,0 +1,5 @@
+# Complete immutable draft verification
+
+One fresh branch-scoped request selects the original complete34-view selected-history journey at each of phone, desktop, large and short. Target e38c6183 contains only approved36 PNG additions and four review metadata updates over4a826445; all100 inherited PNGs/renderers and product/spec/runtime remain exact.
+
+The executor derives from the existing guarded draft generator, replacing generation with verify mode and binding all136 reviewed hashes/renderers plus the updated feature reference tree. Both launcher layers allow only four exact selections. Original test/step/screenshot deadlines, retries0/max-failures1/update-snapshotsnone and telemetryoff remain. Fresh output, owned-port and disk reserve checks run before build; artifacts are retained on failure. First-attempt/source-parent/request-only guards remain. Five local guard/dispatch/reference-completeness tests passed. No full required workflow modified. Supervisor owns independent strict artifact review.
