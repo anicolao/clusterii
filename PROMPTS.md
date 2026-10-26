@@ -2613,3 +2613,10 @@ Reviewer continuation: PR69 publication40259532297 now at Verify served revision
 Delegated reviewer instruction; refer to latest main meta independent PR71 integration/source/layout audit.
 
 Reviewer PR71 integration review: independently diffed staged009-selected-history spec against originalb590be6a: only five relative import/package-path adjustments, all journey/assertion bodies unchanged. No staged product/shared/functions/dependency changes versus058c3a6c;008fleet feature unchanged. Reviewed feature registry/narrative generalization for separate registered stories and independently ran all6 scripts/check-feature-story-layout.test.mjs checks under establishedNix: PASS. This is source/layout evidence only, not candidate image approval or green71. Preserve this and latest mainmeta in next normal audit; continue current integration/candidate work without duplicate68–70runs.
+
+
+## Prompt 220: Prepare competing drafts
+
+Delegated reviewer instruction; refer to latest main meta PR72 preparation handoff while sole PR71 candidate and predecessor checks remain live.
+
+Reviewer continuation:71 candidate40261212475 and68–70required checks remain live; no restarts or duplicate candidates. While waiting, prepare scoped existingPR72 (5655ca32, competing private drafts) source/layout integration on a separate preparation branch based on reviewed71 integration454d4185, preserving PR71 history and all references. Inspect actual source delta and carry selected-history into009 layout without altering original interaction/privacy/recovery assertions. Do not publish72 or generate its candidates before71 review/approved-parent carry-forward; this is independent preparation of existing stack work, not newfeatures. Preserve immutable71 candidate source/executor and leave its run untouched; return to terminalCI failures or71 artifacts when available. Log attributed work and latestmainmeta; no merge.
