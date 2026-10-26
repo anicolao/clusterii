@@ -1,0 +1,2510 @@
+[
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "3112e129f286a1847ef4164b619e648f595c3bd6ef516ed21735c2233ff532f3",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "dab06995b75fa74c26e4d2c5274783a87dc4b66661f54df6d26204a8fb744dd7",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "23191663684e6d73468e5247557bce9cc2cabed84606852f2d6dc13aae312adc",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "b9681c5d8dcb311d6f629b54a5c754476cff5344cac0d2a49884e8babc948c7e",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+    "sha256": "40f0365a0d06e16bd80385be26cf62756e02ea65253c8feeff42016044513072",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.png",
+    "sha256": "785937b9edae55a4010b60a85dbc5f67fad2c5ea4f20da533f059b11812e89bf",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+    "sha256": "f212f325be555155cbaabe5daee7839a90ced30888ed86584eb0ff851b3fd3c7",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "sha256": "db4a3ef8889826344ffab2c6e6af3ed14e6c2c56c1f9c1c4f76ab2edaf7ac588",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+    "sha256": "c5c6fc5bbc76f0ee656a0382805c767bc8963598b2f0b3ffedd519796329e51f",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+    "sha256": "2f1960e816c29371a217a7b4b46b9c2750d7d2035be22fcdea79c75475e4a9ef",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+    "sha256": "a13584a27f0c3b5f2f086c492e9cd4fe59a07170edfa3eb0b68b95a346907585",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "project": "phone",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "d42c6d680a23cbb2b2ac58d3ebc470afba007e8b2d33a89f26813f9646349387",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "35c0539392835783539224698ce58cafa0dd24ac4e67192b675ff78c86bf33b3",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "2c393b22e78b62f06e779ae6391f52cfcc2e98519e479b6c17a5c5f314e01d5e",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "4cde467190c4a01c4d159b6621a83e4a0a5cf2a3da429714ef91b4f848e18dec",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+    "sha256": "4e03296d72b7782963d5a3dfb517f17bac9abc4c8d4aeac550fe6127353e2410",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.png",
+    "sha256": "97b04f84df30c92beb14718c730d06643cb4b254ce85b4eea7e00c89d3cc4fbf",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+    "sha256": "91e0886da99b8c96b67ea976ec2e0ef086c59850c40a6b674de2d0bd6e8efc64",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "sha256": "79659f23fa4158480ba04f1376827ac57833c0dc8dfa57872290d3e8e2831323",
+    "project": "desktop",
+    "review": "HOLD: focus/status overlap",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+    "sha256": "e280f45acc19073fe220b38efa4c65b506ff3fe6055b1fe29f20142b7e9e6774",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+    "sha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+    "sha256": "b3f0919ac500ae95f3260eed6624c743a4be2f8050da2bfffc10cac7eaad452d",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+    "sha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+    "sha256": "e197ec865c4a58987b074259d9ec323519f51b4513af919af703efccceb12d1b",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.png",
+    "sha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa",
+    "project": "desktop",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "15043ed94f60bbb2e337f4612346fcc20b0d771d5226ab5404b318225d886d41",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "1645b38ed97b690909da188bed4a5583fbac1dd2ba98ad14e569f654f13ba098",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "5b62220211c4007f9247d428fe2b201e2e86596452877458f75c98871b077eba",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "522e4681f097e5f99ef28ac2bce8543210bb8fab38b0a0ef85566b3c39b05861",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+    "sha256": "f89a545fd27e62542684c7dd2eca9534cef7c1f996ecb520ad68fd349b02a740",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-1-fleet-marshal.png",
+    "sha256": "c0c899d36c3aa6e070a02252277115e6b52b3a2300c45ba6749a7f8cd7879ea7",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/015-keep-order-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+    "sha256": "c932dd1ac05a0b8d870912a3e61ad14e464cff72640f31517d1973fa6aa8440d",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-1-fleet-marshal.png",
+    "sha256": "6bf78de5f85e823766b32b4da426fa1d7db5ebde02899e06dd4c2287d02bcc74",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/017-released-draft-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+    "sha256": "2f6d42cee290788cf171bec1254d381e8dfd3da3a50d9d2df73d6f4f6601c7fd",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+    "sha256": "1107081c2c172b757d00aaa104274c7a21c090f6f3f3deb1ac061d5e3de91f00",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+    "sha256": "8037eca525c239ba6cc423bd0c508ffc0f92c834f6d5d99e4f148bc57600fb48",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+    "sha256": "e476e34c220d3e42e3ab34b78e3ee9545e6b90c0aa76e5fe47da7bafa4922d66",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+    "sha256": "79f54fc68ed1a499ac9e61fbf29be2294e174fde9af8a8c5f7ca7afe0d49f326",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  },
+  {
+    "path": "/tmp/cluster-pr59-reviewer-candidates/test-results/stories/live-fleet-cancellation/large/linux-arm64/021-return-to-system-2-independent-marshal.png",
+    "sha256": "e476e34c220d3e42e3ab34b78e3ee9545e6b90c0aa76e5fe47da7bafa4922d66",
+    "project": "large",
+    "review": "Inspected old-source acceptable; changed-source applicability pending",
+    "source": {
+      "commit": "ce7c78a1c188daa79672fc2e0a1faf94f7d1e15e",
+      "dirty": false,
+      "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+      "specSha256": "007f8c747c294fafcc2f3ecd34c0e0ea46ee24490ee5c3f9be4689627a1a451a"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    }
+  }
+]

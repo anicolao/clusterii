@@ -26,6 +26,7 @@
     };
   });
   import { galaxyLabel } from "$lib/galaxy-labels";
+  import { frameChartTarget, type ChartCenter } from "$lib/galaxy-camera";
   import RouteLine from "./RouteLine.svelte";
   import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
@@ -64,7 +65,12 @@
     home?: string;
     fleets?: Record<string, number>;
     stellarClass: StarClass | "all";
-    cameraRequest: { action: string; starId: string; sequence: number };
+    cameraRequest: {
+      action: string;
+      starId: string;
+      sequence: number;
+      focusCenter?: ChartCenter;
+    };
   } = $props();
   interactivity();
   const { invalidate } = useThrelte();
@@ -144,6 +150,14 @@
         }
       }
       activeControls.update();
+      if (request.action === "home" && request.focusCenter) {
+        frameChartTarget(
+          activeCamera,
+          activeControls.target,
+          request.focusCenter,
+        );
+        activeControls.update();
+      }
       invalidate();
     });
   });

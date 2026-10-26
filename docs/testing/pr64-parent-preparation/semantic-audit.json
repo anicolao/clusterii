@@ -1,0 +1,19 @@
+{
+  "parent": "f8adb007866692870ea2979e2d4108b2bb4bed3b",
+  "original64": "a26324cb00e770fd4503c76c8db39ae6005dc9d4",
+  "original64Base": "9050d65ecd1589d44500690750a27a9d0821a42f",
+  "alreadyIdenticalFiles": [
+    "scripts/run-stories.mjs",
+    "scripts/story-cohorts.mjs",
+    "scripts/check-story-cohorts.test.mjs",
+    "package.json",
+    "docs/design/STORY_COHORTS_REVIEW.md"
+  ],
+  "inheritedPNGCount": 5422,
+  "playerSourceStoriesAssertionsDependenciesWorkflowsUnchanged": true,
+  "remainingExecutableSemanticDelta": [],
+  "historicalFirstFailureCounts": {
+    "missing-reviewed-reference": 48,
+    "pixel-mismatch": 1
+  }
+}

@@ -1,0 +1,21 @@
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /private/tmp/cluster-pr54-credit-review
+Getting Svelte diagnostics...
+
+/private/tmp/cluster-pr54-credit-review/tests/e2e/helpers/story-paths.mjs:7:42
+Error: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Readonly<{ "live-fleet-travel": { root: string; spec: string; }; "selected-history-consent": { root: string; spec: string; }; }>'.
+  No index signature with a parameter of type 'string' was found on type 'Readonly<{ "live-fleet-travel": { root: string; spec: string; }; "selected-history-consent": { root: string; spec: string; }; }>'. 
+/** @param {string} id */
+export function featureRoot(id) { return features[id]?.root; }
+/** @param {string} id */
+
+/private/tmp/cluster-pr54-credit-review/tests/e2e/helpers/story-paths.mjs:9:51
+Error: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Readonly<{ "live-fleet-travel": { root: string; spec: string; }; "selected-history-consent": { root: string; spec: string; }; }>'.
+  No index signature with a parameter of type 'string' was found on type 'Readonly<{ "live-fleet-travel": { root: string; spec: string; }; "selected-history-consent": { root: string; spec: string; }; }>'. 
+/** @param {string} id */
+export function featureSpec(id) { const feature = features[id]; return feature ? join(feature.root, feature.spec) : undefined; }
+/** @param {string} id @param {string} project @param {string} platform */
+
+====================================
+svelte-check found 2 errors and 0 warnings in 1 file
+error: script "check" exited with code 1

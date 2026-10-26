@@ -1,0 +1,140 @@
+scene (draft, phone)	Set up job	﻿2026-10-26T03:33:48.1374212Z Current runner version: '2.338.0'
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1407891Z ##[group]Runner Image Provisioner
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1409173Z Hosted Compute Agent
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1409833Z Version: 20261021.618
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1410635Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1411388Z Build Date: 2026-10-21T00:45:21Z
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1412173Z Worker ID: {7a9c6082-dcc1-4f9c-ab27-73b83005c200}
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1413458Z Region: westus3
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1414229Z Cloud: Azure
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1415247Z ##[endgroup]
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1417439Z ##[group]Operating System
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1418165Z Ubuntu
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1418920Z 24.04.5
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1419466Z LTS
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1419978Z ##[endgroup]
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1420648Z ##[group]Runner Image
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1421343Z Image: ubuntu-24.04-arm
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1422109Z Version: 20261012.149.1
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1423551Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24-arm64/20261012.149/images/ubuntu/Ubuntu2404-Arm64-Readme.md
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1425593Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24-arm64%2F20261012.149
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1426675Z ##[endgroup]
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1427948Z ##[group]GITHUB_TOKEN Permissions
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1431194Z Contents: read
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1432025Z Metadata: read
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1433013Z ##[endgroup]
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1436082Z Secret source: Actions
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1437365Z Cache mode: write
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1438428Z Prepare workflow directory
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.1944040Z Prepare all required actions
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.2001798Z Getting action download info
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.5743507Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+scene (draft, phone)	Set up job	2026-10-26T03:33:48.6788785Z Download action repository 'DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e' (SHA:9383ce2bf08796b65508822f5982f49151badc4e)
+scene (draft, phone)	Set up job	2026-10-26T03:33:49.4195184Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+scene (draft, phone)	Set up job	2026-10-26T03:33:49.6566852Z Complete job name: scene (draft, phone)
+scene (draft, phone)	Run actions/checkout@v4	﻿2026-10-26T03:33:49.7443124Z ##[group]Run actions/checkout@v4
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7444529Z with:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7445327Z   fetch-depth: 0
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7445969Z   persist-credentials: false
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7446663Z   repository: anicolao/clusterii
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7451390Z   token: ***
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7452002Z   ssh-strict: true
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7453030Z   ssh-user: git
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7453657Z   clean: true
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7454272Z   sparse-checkout-cone-mode: true
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7455044Z   fetch-tags: false
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7455652Z   show-progress: true
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7456323Z   lfs: false
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7456963Z   submodules: false
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7457622Z   set-safe-directory: true
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7458391Z   allow-unsafe-pr-checkout: false
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7459586Z env:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7461083Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.7462751Z ##[endgroup]
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8353149Z Syncing repository: anicolao/clusterii
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8356518Z ##[group]Getting Git version info
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8357617Z Working directory is '/home/runner/work/clusterii/clusterii'
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8359458Z [command]/usr/bin/git version
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8368840Z git version 2.55.0
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8386290Z ##[endgroup]
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8399668Z Temporarily overriding HOME='/home/runner/work/_temp/09f66fd5-d07e-4311-b633-f69c2a9c1830' before making global git config changes
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8401390Z Adding repository directory to the temporary git global config as a safe directory
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8404403Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8435287Z Deleting the contents of '/home/runner/work/clusterii/clusterii'
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8440934Z ##[group]Initializing the repository
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8445913Z [command]/usr/bin/git init /home/runner/work/clusterii/clusterii
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8509120Z hint: Using 'master' as the name for the initial branch. This default branch name
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8510412Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8512097Z hint: to use in all of your new repositories, which will suppress this warning,
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8513295Z hint: call:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8513951Z hint:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8514654Z hint: 	git config --global init.defaultBranch <name>
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8515451Z hint:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8516415Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8517608Z hint: 'development'. The just-created branch can be renamed via this command:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8518637Z hint:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8519270Z hint: 	git branch -m <name>
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8519938Z hint:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8520855Z hint: Disable this message with "git config set advice.defaultBranchName false"
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8522083Z Initialized empty Git repository in /home/runner/work/clusterii/clusterii/.git/
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8524540Z [command]/usr/bin/git remote add origin https://github.com/anicolao/clusterii
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8555383Z ##[endgroup]
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8556543Z ##[group]Disabling automatic garbage collection
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8558386Z [command]/usr/bin/git config --local gc.auto 0
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8585469Z ##[endgroup]
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8586510Z ##[group]Setting up auth
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8591764Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8622031Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8901811Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.8930783Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.9130369Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.9163263Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.9368869Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.9409089Z ##[endgroup]
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.9410325Z ##[group]Fetching the repository
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:33:49.9418707Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+scene (draft, phone)	Run actions/checkout@v4	2026-10-26T03:58:47.5410721Z ##[error]The operation was canceled.
+scene (draft, phone)	Preserve strict result and first failure	﻿2026-10-26T03:58:47.5565425Z ##[group]Run actions/upload-artifact@v4
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5566067Z with:
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5566472Z   name: draft-candidates-draft-phone-3fed71ab7302795aae2f4086e958f8da860cf2ab-1
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5566986Z   include-hidden-files: true
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5567258Z   retention-days: 30
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5567523Z   if-no-files-found: error
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5568199Z   path: ci-evidence/recovery-request/
+scene (draft, phone)	Preserve strict result and first failure	ci-evidence/draft-candidates/
+scene (draft, phone)	Preserve strict result and first failure	ci-evidence/nix-renderer/
+scene (draft, phone)	Preserve strict result and first failure	test-results/stories/
+scene (draft, phone)	Preserve strict result and first failure	firestore-debug.log
+scene (draft, phone)	Preserve strict result and first failure	
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5568862Z   compression-level: 6
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5569145Z   overwrite: false
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5569428Z env:
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5569986Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.5570667Z ##[endgroup]
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.6902504Z (node:2504) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.6904131Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.6949030Z Multiple search paths detected. Calculating the least common ancestor of all paths
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.6956478Z The least common ancestor is /home/runner/work/clusterii/clusterii. This will be the root directory of the artifact
+scene (draft, phone)	Preserve strict result and first failure	2026-10-26T03:58:47.6971307Z ##[error]No files were found with the provided path: ci-evidence/recovery-request/
+scene (draft, phone)	Preserve strict result and first failure	ci-evidence/draft-candidates/
+scene (draft, phone)	Preserve strict result and first failure	ci-evidence/nix-renderer/
+scene (draft, phone)	Preserve strict result and first failure	test-results/stories/
+scene (draft, phone)	Preserve strict result and first failure	firestore-debug.log. No artifacts will be uploaded.
+scene (draft, phone)	Post Run actions/checkout@v4	﻿2026-10-26T03:58:47.7165228Z Post job cleanup.
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.7877827Z [command]/usr/bin/git version
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.7913395Z git version 2.55.0
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.7945920Z Temporarily overriding HOME='/home/runner/work/_temp/e392405a-a5d9-457d-8598-4ba9ab1014bb' before making global git config changes
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.7947176Z Adding repository directory to the temporary git global config as a safe directory
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.7953939Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.7990759Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.8020701Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.8206995Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.8225972Z http.https://github.com/.extraheader
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.8236686Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.8265911Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.8461926Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scene (draft, phone)	Post Run actions/checkout@v4	2026-10-26T03:58:47.8490332Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scene (draft, phone)	Complete job	﻿2026-10-26T03:58:47.8811027Z Cleaning up orphan processes
+scene (draft, phone)	Complete job	2026-10-26T03:58:47.9151413Z Terminate orphan process: pid (2250) (git)
+scene (draft, phone)	Complete job	2026-10-26T03:58:47.9243575Z Terminate orphan process: pid (2251) (git)
+scene (draft, phone)	Complete job	2026-10-26T03:58:47.9335529Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -57,8 +57,17 @@
           panel?.isConnected &&
           (document.activeElement === document.body ||
             panel.contains(document.activeElement))
-        )
-          panel.querySelector("button")?.focus();
+        ) {
+          const action = panel.querySelector("button");
+          action?.focus({ preventScroll: true });
+          // Acknowledgement changes the text above an already focused button.
+          // Explicitly reveal its focus paint after Svelte applies that layout.
+          action?.scrollIntoView({
+            block: "nearest",
+            inline: "nearest",
+            behavior: "instant",
+          });
+        }
       });
     }
   });
@@ -128,6 +137,9 @@
 </details>
 
 <style>
+  .maintenance :global(button) {
+    scroll-margin: 10px;
+  }
   fieldset {
     border: 1px solid #877553;
     margin-top: 20px;

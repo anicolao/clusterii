@@ -553,6 +553,24 @@ test("Live fleet cancellation preserves drafts and releases private reservations
           ).toHaveValue("0");
           await expect(button(owner, "Form fleet")).toBeEnabled();
           await expect(button(owner, "Form fleet")).toBeFocused();
+          const clearance = await panel(owner).evaluate((region) => {
+            const action = Array.from(region.querySelectorAll("button")).find(
+              (candidate) => candidate.textContent?.trim() === "Form fleet",
+            )!;
+            const status = region.querySelector('.feedback [role="status"]')!;
+            const text = document.createRange();
+            text.selectNodeContents(status);
+            const style = getComputedStyle(action);
+            return {
+              textBottom: text.getBoundingClientRect().bottom,
+              paintedTop: action.getBoundingClientRect().top -
+                Number.parseFloat(style.outlineOffset) -
+                Number.parseFloat(style.outlineWidth),
+              outlineStyle: style.outlineStyle,
+            };
+          });
+          expect(clearance.outlineStyle).not.toBe("none");
+          expect(clearance.paintedTop).toBeGreaterThan(clearance.textBottom);
           await expect(
             panel(owner).locator("#fighter-availability"),
           ).toHaveText("20 available · 0 reserved");

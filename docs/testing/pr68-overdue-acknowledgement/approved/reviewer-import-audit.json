@@ -1,0 +1,22 @@
+{
+  "commit": "122245b2",
+  "approvedReplacements": [
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/phone/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "4c7e93a6d0697f0a365aaf2e2a3be94ca8eb1c1a2f07e0c360ccca5067d0e5f4"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "58142376f49b630c74f9c0451972253f74ac97c04eba88d66bd20309cd8b16a7"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/short/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "47d1961986b4e6bb0f0efa8e21eb013c7f5a41f57042f1c408db33bcffe663bd"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "7274128e03456b7e7907aa6ba39cd654efecbd3dd2b7e1abe75f1ff58d85b16b"
+    }
+  ],
+  "onlyOtherChanges": "four review.json metadata files"
+}
