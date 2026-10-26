@@ -602,3 +602,5 @@ Prompt 237 | e12010073d4fa510a639a725ddec71a69d13bcf9ed2ec4c161fb73f4cecdd4cd | 
 Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Bind all200 reviewed image hashes to repository paths while retaining original artifact paths for strict verification.
 
 Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Prepare immutable PR74 strict200 verification with exact reviewed source, image hashes and pinned renderer.
+
+Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Request one strict PR74 run across all200 approved views with zero retries and snapshot updates disabled.
