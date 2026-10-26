@@ -1,0 +1,5 @@
+## Supervisor migrated construction strict verification dispatched
+
+Started pinned Linux strict run40358998584 at diagnostic head38806414ba6f7aa17f3e1010b95876583ac27a96 on investigate/pr79-construction-migrated-strict, sourced from reviewed/imported06f43ec839efb38a60e3803b7e391b6ec909f75b. Existing established Nix workflow adapted to stories verify, never generate. Source guard passed locally: only request/workflow/validator/continuation and exact filter forwarding differ. CI requires exactly eight selected tests in one file; all four viewport cohorts retain exact comparison, assertions and deadlines. Artifact retention always includes failures. Run confirmed in_progress; do not duplicate or restart healthy work. Main checkout returned to integrate/pr79-contact-inputs. This focused run is not full PR acceptance; public PR79 stays unchanged pending preceding green stack.
+
+PR73 still has threeSUCCESS, application40353969812 and illustrated40353969820 running. Existing tmux agent remains usage-limited through Nov1, so no duplicate queued handoff. No merges performed.
