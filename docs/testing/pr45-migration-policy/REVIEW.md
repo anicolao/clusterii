@@ -1,0 +1,1 @@
+CI40280950088 and40280950087 reject changed legacy briefing.spec.ts before browser execution. The required illustrated migration was omitted. Preserve policy and predecessor assertions; reuse later return-briefing story where applicable and migrate to numbered Pantheon structure. No transport runtime pass claimed. PR47 integration remains uncommitted in separate worktree.
