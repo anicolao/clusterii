@@ -975,15 +975,22 @@ test("Interrupted route commands retain their original choices and identity", as
     await story.step("accepted-while-offline", {
       actor: aliases[0],
       description:
-        "Connection is lost before the service acknowledgement reaches this device. Keep the submitted destination visible without claiming confirmed departure.",
+        "Connection is lost before the service acknowledgement reaches this device. Wait for the real overdue acknowledgement recovery state, keeping the submitted destination visible without claiming confirmed departure.",
       action: async () => {},
       acknowledgement: {
-        spec: "This device still shows the original pending route; the independent commander sees no private order.",
+        spec: "This device offers to check the same overdue route order; the independent commander sees no private order.",
         check: async () => {
           await expect(routeList).toContainText(targetName);
-          await expect(planner.locator("footer")).toContainText(
-            "Awaiting acknowledgement",
+          await expect(planner.locator("footer").getByRole("alert")).toHaveText(
+            "Still waiting for acknowledgement. Retry checks the same order.",
+            { timeout: 25000 },
           );
+          await expect(
+            planner.getByRole("button", {
+              name: "Check route order",
+              exact: true,
+            }),
+          ).toBeEnabled();
           await expect(planner).not.toContainText(
             "Route accepted. Departure scheduled.",
           );

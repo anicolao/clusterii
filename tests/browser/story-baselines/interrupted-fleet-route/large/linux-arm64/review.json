@@ -1,7 +1,13 @@
 {
-  "review": "docs/testing/pr62-corrected-linux/APPROVAL.md",
-  "mode": "reviewed-baseline-candidates",
-  "story": "interrupted-fleet-route",
+  "scope": "Independently reviewed regression change, no design/release approval",
+  "artifactId": 12623245258,
+  "archiveSha256": "a2fd39e0e3b111b61b84fab74f656cca9053416039ba43a114a301528c3a4883",
+  "source": {
+    "commit": "b787a8945d8a9131afada69d1a01dfdb5c9d8f46",
+    "dirty": true,
+    "spec": "tests/browser/fleet-route-recovery.story.spec.ts",
+    "specSha256": "b64efc74277034432dd05b6ba2a5676859a47d7b6c629453a2ad53370a014c0f"
+  },
   "renderer": {
     "platform": "linux-arm64",
     "rendererArgs": [
@@ -27,5 +33,250 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "changed": [
+    "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png"
+  ],
+  "allImages": [
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "02849b2ca836fed1f255fde096dffb664a19e9a9b1f13638cd7e63d8cbee39be",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "sha256": "9f1efc6291966cd52471aacc6b3a77652735b91ff08bd590dd20617b0813eb91",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "sha256": "d4f6dc44f01e1251a352894818749f3e634d8ab81f5936cf9511e7274884ac32",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "sha256": "9f1efc6291966cd52471aacc6b3a77652735b91ff08bd590dd20617b0813eb91",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "fb98768df1216cb2f525df8f2bb73600d963d58243230d6ba39003233aa737ca",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "sha256": "9f1efc6291966cd52471aacc6b3a77652735b91ff08bd590dd20617b0813eb91",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "sha256": "1d5329347103fa6f662702b1ddb1cd264c4dbd4d6d0b1b46991ae7eb09ce74cb",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "sha256": "9f1efc6291966cd52471aacc6b3a77652735b91ff08bd590dd20617b0813eb91",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "80142d99264701506de3cdb5af81b392112ffedfa90f248e368731e3d8552a7f",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "sha256": "df500e4e2e739264a039637fe5171bb9c29bf6c24e1bff0da7662799a827779b",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/016-open-route-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "108809c9c2b1824b031afa52d670499d0635b7fdde9ab61757f8081b19d07b62",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "39f40d1c7bf91a81a1480b3cff6f6cbf5434ca9233a56765b9be891c3de18420",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "sha256": "843aac4875285d6a05997fd91cfe8a701f395e11390bbdf26878ef0ce13bc610",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/021-pending-route-1-fleet-marshal.png",
+      "sha256": "3362f284da0ef8f1274e9e714af453a6cde3089a556177552b7e6cd336f0952d",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/021-pending-route-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+      "sha256": "4f9e0922dd27483fdc64f7835b1177b52b8b1744445ce3f768ead8015093e8d3",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/022-reload-pending-route-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+      "sha256": "adc65d6d23bafcb047be748defd2bf9f868a2439ee124407190f68a54a943ec8",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/023-review-route-retry-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+      "sha256": "e12d84197c8134d83f7e5e9a23c28c7730ec04d3fc4f37ac08b2830a6d3a9b8b",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/024-retry-original-route-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "7274128e03456b7e7907aa6ba39cd654efecbd3dd2b7e1abe75f1ff58d85b16b",
+      "changed": true,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/026-accepted-while-offline-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/028-accept-route-1-fleet-marshal.png",
+      "sha256": "43451aa47f11267434d71b002b0e424f3a9a613dae92e4cb293a85341e444fc9",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/028-accept-route-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/029-recover-route-1-fleet-marshal.png",
+      "sha256": "11b4ce28d04f9cfd5b05d4b9bb5d99515ec0b7b0838ec619318636f82e75ca8d",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/029-recover-route-2-independent-marshal.png",
+      "sha256": "88cb891fd55b147ff2077d8120899e7e7cdba9959e512eed7787241657f19796",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/031-traveling-1-fleet-marshal.png",
+      "sha256": "1d15d67b4252ba016ab42760e5d0b5c1c042ebd666ea75a120e28f86677fc195",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/031-traveling-2-independent-marshal.png",
+      "sha256": "4243be3c76456bf88d9f27a95f265deb8c296afd0dec282d1b616bbf03c76275",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/033-arrival-report-1-fleet-marshal.png",
+      "sha256": "a204bcfadb8579fffaf18a63e5d940c0d9d5901f3e7a545143106aeac925ed0f",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/033-arrival-report-2-independent-marshal.png",
+      "sha256": "9bc9c32e53c87bad44ffe6f07ffee96f8621ad377ebb1f63269da393ca031ce4",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/034-recover-arrival-1-fleet-marshal.png",
+      "sha256": "06a4c3b4ab2ec0ca12fa38b7b399f783fab2a267a9ab61ec667a4d3fec97b232",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/034-recover-arrival-2-independent-marshal.png",
+      "sha256": "9bc9c32e53c87bad44ffe6f07ffee96f8621ad377ebb1f63269da393ca031ce4",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/035-sign-out-access-1-fleet-marshal.png",
+      "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+      "changed": false,
+      "viewport": "large"
+    },
+    {
+      "path": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/035-sign-out-access-2-independent-marshal.png",
+      "sha256": "9bc9c32e53c87bad44ffe6f07ffee96f8621ad377ebb1f63269da393ca031ce4",
+      "changed": false,
+      "viewport": "large"
+    }
+  ]
 }
