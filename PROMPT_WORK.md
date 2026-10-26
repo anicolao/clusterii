@@ -387,9 +387,9 @@ Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | 
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Reconcile original PR75 historical phone image after direct inspection while preserving all200 reviewed Linux references.
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Prepare PR76 future-only readmission on numbered PR75 parent layout, preserving exact child assertions and pending Linux review.
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Import 28 individually reviewed account isolation candidates and preserve 200 inherited references with complete provenance
-
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Inherit all 228 individually reviewed PR75 references into readmission preparation without changing child assertions
-
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Import 44 independently reviewed PR76 readmission references while preserving all 228 inherited image hashes
-
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Publish independently verified PR76 four-size strict evidence for all 272 reviewed readmission images
+Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Accept all228 independently verified account strict captures and publish reviewed PR75 without diagnostic plumbing
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Resolve parent PR75 acceptance-log conflict to enable PR76 full CI without altering verified source or images
