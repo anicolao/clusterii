@@ -190,3 +190,5 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | D
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry bounded login and actual-frame readiness repairs into navigation with verified predecessor evidence.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Reuse initialized emulator authentication in the remaining identity story and preserve its exact player sequence.
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Carry the verified original-identity authentication correction into the navigation successor.
+
+Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Backport inspected PR52 whole-pixel identity leading and established Nix CI to PR42 without changing references.

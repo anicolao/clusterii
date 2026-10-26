@@ -425,3 +425,8 @@ Reviewer follow-up explicitly requested by the user: write a root E2E_GUIDE.md f
 Delegated instruction from the reviewer, referring to meta-prompts.md “Reviewer progress and CI handoff — 2026-10-21 09:38 Toronto”:
 
 Reviewer CI finding at 09:38 Toronto: #30 aac1d04 and #31 19e896c are now green. #32 46307c6 run39599629028 and #33 8a9ae26 run39600113448 fail history.spec.ts:20 in all four viewports: focusing Saved campaign records then Shift+Tab no longer focuses Return to galaxy. Logs retained /tmp/cluster32-review-failure.log and /tmp/cluster33-review-failure.log. Diagnose actual keyboard order after briefing changes, distinguish stale expected order from accessibility regression, preserve meaningful keyboard/focus/containment assertions, and propagate the appropriate fix through the stack. Do not simply drop the check or raise timeout. If changing legacy specs on the story branch, honor the new migration policy rather than silently refreshing exceptions. Record attributed instruction and continuation, carry latest meta-prompts, commit/push without merge. Entry/identity local exact comparison is useful progress, but Linux and independent full visual acceptance remain pending.
+
+
+## Prompt 45: Reviewer identity backport
+
+Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR42, preserve all existing reference images, and reuse the established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 identity diagnosis and scoped backport" for human request context and evidence. Run required checks; do not merge PRs.
