@@ -1,0 +1,4664 @@
+[
+  {
+    "title": "Create request context",
+    "start": 503516.003,
+    "ms": 0.3,
+    "stack": [],
+    "error": null
+  },
+  {
+    "title": "Fixture \"request\"",
+    "start": 503515.786,
+    "ms": 1.0,
+    "stack": [],
+    "error": null
+  },
+  {
+    "title": "Before Hooks",
+    "start": 503514.297,
+    "ms": 2.5,
+    "stack": [],
+    "error": null
+  },
+  {
+    "title": "Create context",
+    "start": 503517.483,
+    "ms": 1.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 14,
+        "column": 23
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Create page",
+    "start": 503519.572,
+    "ms": 19.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 16,
+        "column": 34
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Navigate to \"./\"",
+    "start": 503539.44,
+    "ms": 60.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 4,
+        "column": 14,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Route requests",
+    "start": 503600.562,
+    "ms": 5.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 30,
+        "column": 17,
+        "function": "useEmulatorAuthAssets"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 503607.725,
+    "ms": 91.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 11,
+        "column": 65,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Wait for event \"popup\"",
+    "start": 503607.016,
+    "ms": 236.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 10,
+        "column": 24,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 503852.552,
+    "ms": 9.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 503856.342,
+    "ms": 9.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toHaveText\"",
+    "start": 503844.233,
+    "ms": 137.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 13,
+        "column": 56,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 503982.038,
+    "ms": 7.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 16,
+        "column": 5,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Add new account' })",
+    "start": 503990.392,
+    "ms": 22.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 17,
+        "column": 64,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"contact-ui-0-1792996352951@example.test\" getByLabel('Email', { exact: true })",
+    "start": 504013.098,
+    "ms": 11.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 18,
+        "column": 52,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Commander\" getByLabel('Display name', { exact: true })",
+    "start": 504024.764,
+    "ms": 9.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 19,
+        "column": 59,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: /Sign in with/ })",
+    "start": 504034.863,
+    "ms": 41.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 20,
+        "column": 61,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 504077.241,
+    "ms": 227.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 6,
+        "column": 51,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Fleet envoy 1\" getByLabel('Commander name')",
+    "start": 504305.632,
+    "ms": 5.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 20,
+        "column": 47
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Save identity' })",
+    "start": 504311.284,
+    "ms": 54.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 21,
+        "column": 65
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 504366.221,
+    "ms": 35.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 22,
+        "column": 46
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 504412.225,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 134,
+        "column": 21,
+        "function": "grantDeveloper"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Close', exact: true })",
+    "start": 504412.763,
+    "ms": 45.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 24,
+        "column": 70
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 504459.032,
+    "ms": 42.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 25,
+        "column": 69
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Create context",
+    "start": 504502.133,
+    "ms": 3.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 14,
+        "column": 23
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Create page",
+    "start": 504508.604,
+    "ms": 41.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 16,
+        "column": 34
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Navigate to \"./\"",
+    "start": 504550.652,
+    "ms": 143.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 4,
+        "column": 14,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Route requests",
+    "start": 504695.219,
+    "ms": 4.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 30,
+        "column": 17,
+        "function": "useEmulatorAuthAssets"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 504701.247,
+    "ms": 79.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 11,
+        "column": 65,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Wait for event \"popup\"",
+    "start": 504700.597,
+    "ms": 243.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 10,
+        "column": 24,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 504951.475,
+    "ms": 9.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 504952.537,
+    "ms": 12.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toHaveText\"",
+    "start": 504945.14,
+    "ms": 137.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 13,
+        "column": 56,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 505083.055,
+    "ms": 6.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 16,
+        "column": 5,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Add new account' })",
+    "start": 505090.289,
+    "ms": 39.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 17,
+        "column": 64,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"contact-ui-1-1792996353962@example.test\" getByLabel('Email', { exact: true })",
+    "start": 505130.38,
+    "ms": 11.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 18,
+        "column": 52,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Commander\" getByLabel('Display name', { exact: true })",
+    "start": 505142.465,
+    "ms": 9.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 19,
+        "column": 59,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: /Sign in with/ })",
+    "start": 505152.44,
+    "ms": 40.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 20,
+        "column": 61,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 505193.129,
+    "ms": 94.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 6,
+        "column": 51,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Fleet envoy 2\" getByLabel('Commander name')",
+    "start": 505288.196,
+    "ms": 27.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 20,
+        "column": 47
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Save identity' })",
+    "start": 505315.963,
+    "ms": 63.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 21,
+        "column": 65
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 505379.714,
+    "ms": 79.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 22,
+        "column": 46
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 505464.813,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 134,
+        "column": 21,
+        "function": "grantDeveloper"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Close', exact: true })",
+    "start": 505465.333,
+    "ms": 57.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 24,
+        "column": 70
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 505522.928,
+    "ms": 32.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 25,
+        "column": 69
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Create context",
+    "start": 505556.047,
+    "ms": 1.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 14,
+        "column": 23
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Create page",
+    "start": 505559.715,
+    "ms": 45.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 16,
+        "column": 34
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Navigate to \"./\"",
+    "start": 505605.547,
+    "ms": 116.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 4,
+        "column": 14,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Route requests",
+    "start": 505722.343,
+    "ms": 15.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 30,
+        "column": 17,
+        "function": "useEmulatorAuthAssets"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 505738.785,
+    "ms": 117.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 11,
+        "column": 65,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Wait for event \"popup\"",
+    "start": 505738.155,
+    "ms": 255.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 10,
+        "column": 24,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 505998.966,
+    "ms": 10.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 506000.072,
+    "ms": 12.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toHaveText\"",
+    "start": 505994.206,
+    "ms": 113.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 13,
+        "column": 56,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 506108.447,
+    "ms": 7.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 16,
+        "column": 5,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Add new account' })",
+    "start": 506116.309,
+    "ms": 29.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 17,
+        "column": 64,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"contact-ui-2-1792996355017@example.test\" getByLabel('Email', { exact: true })",
+    "start": 506146.391,
+    "ms": 10.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 18,
+        "column": 52,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Commander\" getByLabel('Display name', { exact: true })",
+    "start": 506157.781,
+    "ms": 10.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 19,
+        "column": 59,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: /Sign in with/ })",
+    "start": 506168.71,
+    "ms": 75.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 20,
+        "column": 61,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 506244.337,
+    "ms": 120.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 6,
+        "column": 51,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Fleet envoy 3\" getByLabel('Commander name')",
+    "start": 506365.763,
+    "ms": 13.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 20,
+        "column": 47
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Save identity' })",
+    "start": 506380.348,
+    "ms": 61.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 21,
+        "column": 65
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 506441.868,
+    "ms": 79.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 22,
+        "column": 46
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 506527.642,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 134,
+        "column": 21,
+        "function": "grantDeveloper"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Close', exact: true })",
+    "start": 506528.299,
+    "ms": 59.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 24,
+        "column": 70
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 506588.231,
+    "ms": 83.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 25,
+        "column": 69
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Create context",
+    "start": 506672.617,
+    "ms": 2.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 14,
+        "column": 23
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Create page",
+    "start": 506676.654,
+    "ms": 28.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 16,
+        "column": 34
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Navigate to \"./\"",
+    "start": 506705.454,
+    "ms": 118.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 4,
+        "column": 14,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Route requests",
+    "start": 506826.698,
+    "ms": 30.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 30,
+        "column": 17,
+        "function": "useEmulatorAuthAssets"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 506859.27,
+    "ms": 52.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 11,
+        "column": 65,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Wait for event \"popup\"",
+    "start": 506858.454,
+    "ms": 198.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 10,
+        "column": 24,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 507062.05,
+    "ms": 13.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fulfill request",
+    "start": 507065.66,
+    "ms": 12.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/emulator-auth-assets.ts",
+        "line": 41,
+        "column": 19
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toHaveText\"",
+    "start": 507057.82,
+    "ms": 117.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 13,
+        "column": 56,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 507175.519,
+    "ms": 7.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 16,
+        "column": 5,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Add new account' })",
+    "start": 507183.039,
+    "ms": 29.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 17,
+        "column": 64,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"contact-ui-3-1792996356117@example.test\" getByLabel('Email', { exact: true })",
+    "start": 507212.702,
+    "ms": 11.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 18,
+        "column": 52,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Commander\" getByLabel('Display name', { exact: true })",
+    "start": 507224.584,
+    "ms": 9.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 19,
+        "column": 59,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: /Sign in with/ })",
+    "start": 507234.656,
+    "ms": 40.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 20,
+        "column": 61,
+        "function": "authenticate"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 507275.951,
+    "ms": 112.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 6,
+        "column": 51,
+        "function": "login"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Fleet envoy 4\" getByLabel('Commander name')",
+    "start": 507389.559,
+    "ms": 8.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 20,
+        "column": 47
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Save identity' })",
+    "start": 507398.762,
+    "ms": 52.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 21,
+        "column": 65
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 507451.725,
+    "ms": 85.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 22,
+        "column": 46
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 507542.681,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 134,
+        "column": 21,
+        "function": "grantDeveloper"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Close', exact: true })",
+    "start": 507543.325,
+    "ms": 47.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 24,
+        "column": 70
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Play', exact: true })",
+    "start": 507591.673,
+    "ms": 42.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 25,
+        "column": 69
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Create campaign', exact: true })",
+    "start": 507634.698,
+    "ms": 46.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 32,
+        "column": 12
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"Contact horizon 1792996357093\" getByLabel('Campaign name')",
+    "start": 507681.373,
+    "ms": 15.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 35,
+        "column": 12
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Create galaxy' })",
+    "start": 507697.287,
+    "ms": 86.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 36,
+        "column": 67
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 507788.285,
+    "ms": 319.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 39,
+        "column": 11
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Check getByRole('radio', { name: /Heliac Assembly/ })",
+    "start": 508108.547,
+    "ms": 5.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 53,
+        "column": 10
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Claim your seat' })",
+    "start": 508114.653,
+    "ms": 38.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 54,
+        "column": 67
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 508153.58,
+    "ms": 575.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 55,
+        "column": 63
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Navigate to \"/clusterii/pr4/campaigns/?campaign=d140aa1b-3477-4532-988f-190cbdf9e5e6\"",
+    "start": 508729.843,
+    "ms": 118.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 41,
+        "column": 25
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Check getByRole('radio', { name: /Pelagic Concord/ })",
+    "start": 508848.732,
+    "ms": 311.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 53,
+        "column": 10
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Claim your seat' })",
+    "start": 509160.477,
+    "ms": 33.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 54,
+        "column": 67
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 509194.849,
+    "ms": 293.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 55,
+        "column": 63
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Navigate to \"/clusterii/pr4/campaigns/?campaign=d140aa1b-3477-4532-988f-190cbdf9e5e6\"",
+    "start": 509489.116,
+    "ms": 110.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 41,
+        "column": 25
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Check getByRole('radio', { name: /Vesper Synod/ })",
+    "start": 509600.678,
+    "ms": 364.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 53,
+        "column": 10
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Claim your seat' })",
+    "start": 509965.799,
+    "ms": 56.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 54,
+        "column": 67
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 510022.678,
+    "ms": 958.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 55,
+        "column": 63
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Navigate to \"/clusterii/pr4/campaigns/?campaign=d140aa1b-3477-4532-988f-190cbdf9e5e6\"",
+    "start": 510982.189,
+    "ms": 69.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 41,
+        "column": 25
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Check getByRole('radio', { name: /Dracon League/ })",
+    "start": 511052.284,
+    "ms": 312.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 53,
+        "column": 10
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('button', { name: 'Claim your seat' })",
+    "start": 511365.238,
+    "ms": 30.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 54,
+        "column": 67
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 511396.035,
+    "ms": 718.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 55,
+        "column": 63
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeTruthy\"",
+    "start": 512115.202,
+    "ms": 0.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 66,
+        "column": 16
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 512121.791,
+    "ms": 0.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 68,
+        "column": 25
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 512122.329,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 70,
+        "column": 41
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeVisible\"",
+    "start": 512371.801,
+    "ms": 131.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 76,
+        "column": 7
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('complementary', { name: 'Selected system' }).getByRole('button', { name: /Fleets \u00b7 0/ })",
+    "start": 512504.468,
+    "ms": 290.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 80,
+        "column": 65
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toHaveCount\"",
+    "start": 512796.063,
+    "ms": 40.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 85,
+        "column": 62
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"4\" getByRole('region', { name: 'Fleet preparation', exact: true }).getByLabel('Fighters', { exact: true })",
+    "start": 512837.046,
+    "ms": 51.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 86,
+        "column": 57
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fill \"6\" getByRole('region', { name: 'Fleet preparation', exact: true }).getByLabel('Infantry', { exact: true })",
+    "start": 512889.174,
+    "ms": 12.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 87,
+        "column": 57
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('region', { name: 'Fleet preparation', exact: true }).getByRole('button', { name: 'Form fleet', exact: true })",
+    "start": 512902.158,
+    "ms": 121.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 90,
+        "column": 8
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 513024.466,
+    "ms": 391.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 93,
+        "column": 7
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 513777.702,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 97,
+        "column": 65
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeDefined\"",
+    "start": 513798.407,
+    "ms": 0.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 136,
+        "column": 26
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 514464.795,
+    "ms": 0.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 139,
+        "column": 7
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Focus getByRole('button', { name: 'Fleet contacts', exact: true })",
+    "start": 514465.484,
+    "ms": 165.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 145,
+        "column": 16
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Press \"Enter\"",
+    "start": 514631.061,
+    "ms": 237.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 146,
+        "column": 29
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 514869.085,
+    "ms": 155.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 153,
+        "column": 7
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 515025.377,
+    "ms": 16.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 154,
+        "column": 28
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 515042.856,
+    "ms": 14.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 155,
+        "column": 28
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Set viewport size",
+    "start": 515058.608,
+    "ms": 85.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 167,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('button', { name: 'Back to galaxy' })",
+    "start": 515145.778,
+    "ms": 18.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 169,
+        "column": 32,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515164.995,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 170,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515165.18,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 171,
+        "column": 38,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Query count getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 515165.925,
+    "ms": 11.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 28,
+        "column": 38,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 515177.788,
+    "ms": 42.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 515221.025,
+    "ms": 10.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 515231.98,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515232.188,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515232.368,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515232.539,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515232.703,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515232.87,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515233.051,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 515233.45,
+    "ms": 11.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515245.498,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 515246.004,
+    "ms": 40.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 515286.755,
+    "ms": 10.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 515297.471,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515297.683,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515297.879,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515298.091,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515298.275,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515298.456,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515298.639,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 515299.041,
+    "ms": 9.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515309.08,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 515309.448,
+    "ms": 26.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 515336.607,
+    "ms": 6.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 515343.356,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515343.54,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515343.712,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515343.88,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515344.062,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515344.225,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515344.389,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 515344.72,
+    "ms": 6.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515351.486,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 515351.865,
+    "ms": 8.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 50,
+        "column": 33,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515360.275,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 94,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate",
+    "start": 515360.595,
+    "ms": 4.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 96,
+        "column": 16,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515364.792,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 101,
+        "column": 5,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('region', { name: 'Contact details', exact: true })",
+    "start": 515365.099,
+    "ms": 6.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 173,
+        "column": 23,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Screenshot",
+    "start": 515371.854,
+    "ms": 42.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 174,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Set viewport size",
+    "start": 515415.357,
+    "ms": 121.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 167,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('button', { name: 'Back to galaxy' })",
+    "start": 515537.616,
+    "ms": 50.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 169,
+        "column": 32,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515588.38,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 170,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515588.731,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 171,
+        "column": 38,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Query count getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 515589.427,
+    "ms": 10.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 28,
+        "column": 38,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 515601.608,
+    "ms": 34.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 515636.829,
+    "ms": 8.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 515645.295,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515645.516,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515645.72,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515645.912,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515646.116,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515646.304,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515646.492,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 515646.88,
+    "ms": 8.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515655.996,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 515656.394,
+    "ms": 29.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 515686.57,
+    "ms": 6.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 515693.021,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515693.233,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515693.438,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515693.63,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515693.818,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515694.015,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515694.207,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 515694.557,
+    "ms": 6.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515700.928,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 515701.288,
+    "ms": 34.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 515736.55,
+    "ms": 6.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 515743.239,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515743.524,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515743.789,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515744.018,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515744.213,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515744.398,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515744.584,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 515744.946,
+    "ms": 6.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515751.435,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 515751.766,
+    "ms": 7.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 50,
+        "column": 33,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515759.115,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 94,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate",
+    "start": 515759.388,
+    "ms": 3.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 96,
+        "column": 16,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 515763.545,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 101,
+        "column": 5,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('region', { name: 'Contact details', exact: true })",
+    "start": 515763.822,
+    "ms": 6.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 173,
+        "column": 23,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Screenshot",
+    "start": 515770.293,
+    "ms": 167.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 174,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Set viewport size",
+    "start": 515938.659,
+    "ms": 6.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 167,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('button', { name: 'Back to galaxy' })",
+    "start": 515945.812,
+    "ms": 6.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 169,
+        "column": 32,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 515952.304,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 170,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 515952.592,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 171,
+        "column": 38,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Query count getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 515953.218,
+    "ms": 97.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 28,
+        "column": 38,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 516051.951,
+    "ms": 35.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 516088.188,
+    "ms": 10.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 516098.974,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516099.173,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516099.356,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516099.525,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516099.69,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 516099.854,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 516100.035,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 516100.467,
+    "ms": 9.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 516110.702,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 516111.208,
+    "ms": 41.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 516153.926,
+    "ms": 9.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 516163.277,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516163.496,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516163.695,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516163.887,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516164.087,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 516164.271,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 516164.459,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 516164.855,
+    "ms": 7.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 516172.29,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 516172.646,
+    "ms": 30.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 516203.237,
+    "ms": 6.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 516209.901,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516210.109,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516210.289,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516210.461,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516210.627,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 516210.797,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 516210.973,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 516211.3,
+    "ms": 6.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 516218.059,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 516218.399,
+    "ms": 5.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 50,
+        "column": 33,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 516224.101,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 94,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate",
+    "start": 516224.419,
+    "ms": 3.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 96,
+        "column": 16,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 516228.539,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 101,
+        "column": 5,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('region', { name: 'Contact details', exact: true })",
+    "start": 516228.824,
+    "ms": 6.2,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 173,
+        "column": 23,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Screenshot",
+    "start": 516235.382,
+    "ms": 117.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 174,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Set viewport size",
+    "start": 516354.113,
+    "ms": 13.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 167,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('button', { name: 'Back to galaxy' })",
+    "start": 516368.312,
+    "ms": 557.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 169,
+        "column": 32,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 516926.661,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 170,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 516926.847,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 171,
+        "column": 38,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Query count getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 516927.322,
+    "ms": 13.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 28,
+        "column": 38,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 516941.331,
+    "ms": 45.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 516987.304,
+    "ms": 12.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 517000.608,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517000.916,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517001.224,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517001.49,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517001.737,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 517001.932,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 517002.219,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 517003.025,
+    "ms": 10.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 517014.411,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 517015.016,
+    "ms": 124.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 517140.145,
+    "ms": 11.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 517151.713,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517151.95,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517152.155,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517152.43,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517152.706,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 517152.884,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 517153.067,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 517153.432,
+    "ms": 8.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 517162.46,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 517162.82,
+    "ms": 39.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 517203.191,
+    "ms": 6.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 517210.066,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517210.281,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517210.481,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517210.675,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 517210.86,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 517211.058,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 517211.248,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(2)",
+    "start": 517211.594,
+    "ms": 6.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 517218.181,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 517218.513,
+    "ms": 5.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 50,
+        "column": 33,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 517224.196,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 94,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate",
+    "start": 517224.592,
+    "ms": 4.1,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 96,
+        "column": 16,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 517229.004,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 101,
+        "column": 5,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('region', { name: 'Contact details', exact: true })",
+    "start": 517229.308,
+    "ms": 5.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 173,
+        "column": 23,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Screenshot",
+    "start": 517235.453,
+    "ms": 663.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 174,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeDefined\"",
+    "start": 517899.852,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 184,
+        "column": 24
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 518076.381,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 187,
+        "column": 7
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 518076.806,
+    "ms": 547.8,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 188,
+        "column": 28
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Click getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('button', { name: 'Refresh observations' })",
+    "start": 518625.315,
+    "ms": 95.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 191,
+        "column": 8
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toContainText\"",
+    "start": 518721.257,
+    "ms": 13.9,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 194,
+        "column": 7
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Set viewport size",
+    "start": 518735.773,
+    "ms": 16.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 167,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).getByRole('button', { name: 'Back to galaxy' })",
+    "start": 518753.293,
+    "ms": 13.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 169,
+        "column": 32,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518767.539,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 170,
+        "column": 24,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 518767.828,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.spec.ts",
+        "line": 171,
+        "column": 38,
+        "function": "evidence"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Query count getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible')",
+    "start": 518768.477,
+    "ms": 28.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 28,
+        "column": 38,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 518798.029,
+    "ms": 138.3,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 518936.972,
+    "ms": 12.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 518949.899,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518950.147,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518950.352,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518950.549,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518950.742,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 518950.931,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 518951.137,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').first()",
+    "start": 518951.55,
+    "ms": 9.6,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 518961.438,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Scroll into view getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 518961.863,
+    "ms": 24.4,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 29,
+        "column": 18,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Bounding box getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 518986.767,
+    "ms": 6.7,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 30,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"not toBeNull\"",
+    "start": 518993.755,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 31,
+        "column": 19,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518993.963,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 33,
+        "column": 21,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518994.145,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 34,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518994.318,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 36,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeGreaterThanOrEqual\"",
+    "start": 518994.487,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 37,
+        "column": 17,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 518994.654,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 38,
+        "column": 27,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBeLessThanOrEqual\"",
+    "start": 518994.827,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 39,
+        "column": 28,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Evaluate getByRole('region', { name: 'Fleet contacts', exact: true }).locator(':is(button, input[type=\"radio\"], input[type=\"checkbox\"], input[type=\"text\"], input:not([type])):visible').nth(1)",
+    "start": 518995.18,
+    "ms": 6.5,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 40,
+        "column": 35,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Expect \"toBe\"",
+    "start": 519001.996,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "/home/runner/work/clusterii/clusterii/tests/browser/helpers.ts",
+        "line": 48,
+        "column": 22,
+        "function": "geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fixture \"request\"",
+    "start": 593517.683,
+    "ms": 3.0,
+    "stack": [],
+    "error": null
+  },
+  {
+    "title": "Attach \"error-context\"",
+    "start": 594098.481,
+    "ms": 0.0,
+    "stack": [],
+    "error": null
+  },
+  {
+    "title": "Fixture \"baseURL\"",
+    "start": 594098.828,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "project#",
+        "line": 1,
+        "column": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fixture \"timezoneId\"",
+    "start": 594098.931,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "project#",
+        "line": 1,
+        "column": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fixture \"viewport\"",
+    "start": 594098.994,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "project#",
+        "line": 1,
+        "column": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fixture \"locale\"",
+    "start": 594099.338,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "project#",
+        "line": 1,
+        "column": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fixture \"deviceScaleFactor\"",
+    "start": 594099.83,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "project#",
+        "line": 1,
+        "column": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "Fixture \"colorScheme\"",
+    "start": 594099.88,
+    "ms": 0.0,
+    "stack": [
+      {
+        "file": "project#",
+        "line": 1,
+        "column": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "title": "After Hooks",
+    "start": 593517.487,
+    "ms": 582.7,
+    "stack": [],
+    "error": null
+  },
+  {
+    "title": "Fixture \"browser\"",
+    "start": 594100.68,
+    "ms": 94.5,
+    "stack": [],
+    "error": null
+  },
+  {
+    "title": "Worker Cleanup",
+    "start": 594100.341,
+    "ms": 96.1,
+    "stack": [],
+    "error": null
+  }
+]

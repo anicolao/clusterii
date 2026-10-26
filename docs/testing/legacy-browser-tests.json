@@ -88,8 +88,14 @@
     "status": "Procedural regression; illustrated migration incomplete"
   },
   "fleet-contacts.spec.ts": {
-    "sha256": "06dadac6c95a8794f654df9418ecbb218166bcae7425bf5ac789ca424a8a2a59",
-    "status": "Procedural regression; illustrated migration incomplete"
+    "sha256": "4fcb7aafa32798d42d7a7bdb27dd7e919070f4b70564c1e3c93429abfc8c8347",
+    "status": "Procedural regression; illustrated migration incomplete",
+    "readinessMaintenance": {
+      "kind": "exact-refresh-acknowledgement",
+      "previousSha256": "06dadac6c95a8794f654df9418ecbb218166bcae7425bf5ac789ca424a8a2a59",
+      "inserted": "    // The last-seen tick is already visible before the requested history page\n    // arrives. Wait for its acknowledgement before enumerating panel controls.\n    await expect(\n      contacts.getByRole(\"button\", { name: \"Refresh observations\", exact: true }),\n    ).toHaveCount(0);\n",
+      "review": "docs/testing/pr44-contact-refresh/REVIEW.md"
+    }
   },
   "fleet-reorganization.spec.ts": {
     "sha256": "c4c380a5fc1cc58d300488cfbd1a1d9caa522aaf4b52000c3bd3ec7a97e29f92",

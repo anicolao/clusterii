@@ -62,3 +62,13 @@ test("reviewed briefing maintenance preserves the entire original frozen regress
   assert.equal(createHash("sha256").update(source).digest("hex"), "9a5c339d61a7e9629a2d59b4a76fb5e2df146cee82977be76318e4e0e107e6e4");
   assert.match(readFileSync(entry.review, "utf8"), /managed-key mode/);
 });
+
+
+test("reviewed contact readiness preserves the complete original regression", () => {
+  const entry = JSON.parse(readFileSync("docs/testing/legacy-browser-tests.json", "utf8"))["fleet-contacts.spec.ts"].readinessMaintenance;
+  assert.equal(entry.kind, "exact-refresh-acknowledgement");
+  const source = readFileSync("tests/browser/fleet-contacts.spec.ts", "utf8");
+  assert.equal(source.split(entry.inserted).length - 1, 1);
+  assert.equal(createHash("sha256").update(source.replace(entry.inserted, "")).digest("hex"), "06dadac6c95a8794f654df9418ecbb218166bcae7425bf5ac789ca424a8a2a59");
+  assert.match(readFileSync(entry.review, "utf8"), /90-second/);
+});
