@@ -1,0 +1,21 @@
+{
+  "requestId": "contact-strict-20261026-02",
+  "sourceCommit": "2fd078129f413e17a3e74d2fb53e7cc88f928134",
+  "executorCommit": "de07c870b467ea205a323f73676c711b3f994ad6",
+  "case": "contact-strict",
+  "mode": "verify",
+  "target": "34a45cd175e80166e5963cfbe4a8d5f49922ff38",
+  "runId": "40247985297",
+  "attempt": 1,
+  "referenceTree": "bb00aaa13ab1e7112f808ec232c2913c32167a53",
+  "specs": {
+    "contacts": {
+      "file": "tests/browser/fleet-contacts.story.spec.ts",
+      "title": "Live fleet contacts preserve acquired and last-seen private facts across reload",
+      "story": "live-fleet-contacts",
+      "sha": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319",
+      "views": 19
+    }
+  },
+  "requestSha256": "801ec1b400394170c1c8a7b0594463d24646eb159d8b0fcd20c5b1d1493065f9"
+}

@@ -2286,3 +2286,20 @@ Reviewer: Corrected69 run40247985297 now terminal SUCCESS all4cases. Independent
 Delegated reviewer instruction; refer to main meta immutable PR70 migration audit and preserved live PR69 artifact transfer.
 
 Reviewer: Immutable PR70 e1602e14 audit now independently confirms all240 moved reference blobs and all6082 other reference blobs exactly equal093e0abb. Parsed committed before/after collection logs: all180 viewport/title identities retained. Compared migrated fleet-travel spec against original417bb622: only path/import adaptation, no assertion or budget changes. Reviewed config, shared-helper delta, path mapping, promotion and narrative consistency; exact comparator and telemetry-off screenshot callback preserved. Prepare immutable source-bound complete160-view Linux generation request after publishing69; present request/executor for audit before dispatch. Keep inherited112 Linux images comparison and48 added views separately inspectable, no Darwin import. PR69 publication remains priority and already authorized; do not wait for70. Current large artifact download PID73026 confirmed live, do not restart solely due elapsed time. Incorporate latest mainmeta findings and continuation logs in normal commits; no GitHub merges.
+
+
+## Prompt 181: Publish verified contacts
+
+Delegated reviewer instruction; also recorded during the PR70 checkpoint, refer to main meta corrected PR69 strict success and scoped migration audit.
+
+Reviewer: Corrected69 run40247985297 now terminal SUCCESS all4cases. Independently read remaining short121333536532 andlarge121333536795 strict summaries, completing76 verified views. Proceed already-authorized69 evidence retention/byte verification and publication on current68 parent; prioritize this concrete green-stack step over70 preparation, then resume70. No need for further approval. Also independently verified all240 inherited fleet-travel files moved to008 screenshots namespace byte-for-byte versus093e0abb; no missing/changed files. Read updated featureNarrative: explicit source provenance and full step/view semantics comparison address the mixed-caption finding; await committed tests/whole migration audit. Record latest mainmeta with next commits; no GitHub merges.
+
+
+
+## Prompt 182: Verify transfer status
+
+Delegated reviewer instruction; refer to latest main meta corrected PR69 retained desktop/short verification and PR70 diagnostic-path audit.
+
+Reviewer: Independently verified retained corrected69 desktop12620275117 andshort12620280723 ZIP size/SHA256/CRC and all38 PNGs against34a45cd1 Git references, all exact. Fresh process inspection no longer finds prior download PID73026; please retrieve terminal completion/error rather than relying on stale live-transfer narration. Only desktop/short verified markers currently exist. Diagnose transfer result/disk reserve before any retry; no duplicate download. Reviewed committed70 follow-upd8252cf8: common storySnapshotName now binds preflight and Playwright mismatch diagnostics to same paths, legacy and migrated namespaces covered; no comparator weakening. Use this corrected target in future request audit, not e1602e14.69 publication first; record currentmainmeta and logs.
+
+
