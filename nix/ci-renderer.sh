@@ -3,6 +3,8 @@
 : "${containerd:?}" "${rootShell:?}" "${engine:?}" "${imageArchive:?}" "${imageTag:?}" "${imageConfig:?}" "${imageDigest:?}" "${nixCommand:?}"
 case "${1:-}:${2:-}" in
   stories:verify|stories:generate|application:) ;;
+  recovery:normal-focus-candidates)
+    [ "$#" -eq 4 ] && [ "$3:$4" = travel:phone ] || exit 2 ;;
   *) echo "Usage: cluster-ci-renderer stories verify|generate OR application" >&2; exit 2 ;;
 esac
 : "${RUNNER_TEMP:?GitHub runner scratch directory required}"

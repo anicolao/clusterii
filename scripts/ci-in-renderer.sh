@@ -19,6 +19,10 @@ case "$1" in
     bun run test:browser-storage
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
+  recovery)
+    [ "$#" -eq 4 ] && [ "$2" = normal-focus-candidates ] && [ "$3:$4" = travel:phone ] || exit 2
+    node scripts/normal-focus-candidates-run.mjs "$3" "$4"
+    ;;
   application)
     bun run check
     bun run lint
