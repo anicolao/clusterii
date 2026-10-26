@@ -2700,3 +2700,10 @@ Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle
 Delegated reviewer instruction; refer to latest main meta scoped PR72 desktop approval and immutable PR73 source/reference audit.
 
 Reviewer: PR72 desktop candidate40264675463 all nine new captures individually inspected and approved for regression references; 25 inherited byte-identical. Exact hashes and bounded-history clipping/existing design-gap notes in /tmp/cluster-pr72-candidate-review/reviewer-desktop-approval.json. Remaining phone/large/short review pending; do not promote partial set or duplicate downloads. Independently verified immutable PR73 335ad6c5 entire story matches original17250d57 after five path replacements; all product and screenshot paths unchanged. Preserve approval and latest mainmeta in next normal audit commit/push. Keep existing live checks running; no merges.
+
+
+## Prompt 231: Prepare interrupted send
+
+Delegated reviewer instruction; refer to latest main meta PR72 large regression approval and original PR74 source preparation handoff.
+
+Reviewer continuation: PR72 large all nine new captures now individually inspected and approved; 25 inherited exact. Preserve /tmp/cluster-pr72-candidate-review/reviewer-large-approval.json and latest mainmeta during next substantive commit. Phone/short candidate40264675463 remain live; supervisor owns downloads/review, no duplicate runs. While waiting, prepare existing PR74 original2639f208 on separate branch based on reviewed PR73 335ad6c5 plus audit18a392c1. Mainmeta records full original source review. Preserve original transport-only withholding of real frames, same-payload retry, exact receipt/canonical/privacy assertions and all inherited references. Migrate into009 with relative paths, including newly introduced require(./lib/shared/command-receipt.js), not merely the prior five replacements. Type/policy/collection checks and exact-source equivalence required. No74 generation/publication or baseline promotion until72/73 reviewed parents carried forward. Record attributed PROMPTS/continuations and commit/push preparation; preserve immutable72 request. No merges.
