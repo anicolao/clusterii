@@ -30,19 +30,19 @@ export function renderTelemetryPlugin(enabled) {
         const projected = position.clone().project(cam);
         const x = rect.left + (projected.x + 1) * rect.width / 2;
         const y = rect.top + (1 - projected.y) * rect.height / 2;
-        if (object.geometry?.type !== 'RingGeometry' && (Math.abs(x - 365) > 25 || Math.abs(y - 252) > 25)) return;
+        // Keep all rendered meshes and sprites to correlate failures in every viewport.
         objects.push({ id: object.id, type: object.type, geometry: object.geometry?.type,
-          parameters: object.geometry?.parameters, world: object.matrixWorld.toArray(),
+          parameters: object.geometry?.parameters, local: object.matrix.toArray(), world: object.matrixWorld.toArray(),
           projected: [x,y,projected.z], visible: object.visible, order: object.renderOrder,
           material: { depthWrite: object.material.depthWrite, depthTest: object.material.depthTest,
             transparent: object.material.transparent, opacity: object.material.opacity,
-            color: object.material.color?.getHexString(), mapVersion: object.material.map?.version } });
+            color: object.material.color?.getHexString(), blending: object.material.blending, side: object.material.side, program: object.material.type, mapVersion: object.material.map?.version } });
       });
       return { time: performance.now(), frame: renderer.info.render.frame, selected,
         request: cameraRequest, target: controls?.target.toArray(),
         camera: cam.matrixWorld.toArray(), projection: cam.projectionMatrix.toArray(),
         canvas: [rect.x,rect.y,rect.width,rect.height,renderer.domElement.width,renderer.domElement.height],
-        dpr: renderer.getPixelRatio(), objects: objects.slice(0,64) };
+        dpr: renderer.getPixelRatio(), objects };
     };
     (window as any).__clusterRenderSample = sample;
     return () => { if ((window as any).__clusterRenderSample === sample) delete (window as any).__clusterRenderSample; };

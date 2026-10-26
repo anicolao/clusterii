@@ -396,3 +396,5 @@ Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Integrate reviewed PR76 references into PR77 while preserving route discard source and historical capture evidence
 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Import31 individually reviewed discard images; retain145 inherited images including rejected stellar variants and align story numbering
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Prepare postcapture-only renderer diagnosis for reproduced final-peer stellar mismatches without baseline edits.
