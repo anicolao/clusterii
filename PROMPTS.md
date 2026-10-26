@@ -2303,3 +2303,9 @@ Delegated reviewer instruction; refer to latest main meta corrected PR69 retaine
 Reviewer: Independently verified retained corrected69 desktop12620275117 andshort12620280723 ZIP size/SHA256/CRC and all38 PNGs against34a45cd1 Git references, all exact. Fresh process inspection no longer finds prior download PID73026; please retrieve terminal completion/error rather than relying on stale live-transfer narration. Only desktop/short verified markers currently exist. Diagnose transfer result/disk reserve before any retry; no duplicate download. Reviewed committed70 follow-upd8252cf8: common storySnapshotName now binds preflight and Playwright mismatch diagnostics to same paths, legacy and migrated namespaces covered; no comparator weakening. Use this corrected target in future request audit, not e1602e14.69 publication first; record currentmainmeta and logs.
 
 
+
+## Prompt 183: Prepare audited request
+
+Delegated reviewer instruction; refer to latest main meta PR70 parent reconciliation, focused checks and PR69 complete verification audit.
+
+Reviewer: Independently audited52856f40 reconciliation: no executable/reference delta from reviewed d8252cf8, exact04292769 parent PROMPTS/PROMPT_WORK archives, append-only canonical logs. Independently ran all5 focused feature-layout checks in established Nix successfully. All76 corrected69 originals independently verified, including large/phone downloaded into memory; published04292769 evidence identical. Continue70 request preparation for audit. Next normal70/executor commit must also reconcile and push latest supervisor mainmeta findings (including69 publication/fullCI handles); avoid another69 push solely for logs. Disk latest2398908KiB is close to floor2359296: do not download/extract extra artifacts locally without capacity; use already authorized safe evidence-retention approach and preserve unique originals. No new CI reruns or merges.
