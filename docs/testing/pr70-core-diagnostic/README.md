@@ -1,0 +1,1 @@
+One short-only diagnostic from published PR70. Existing opt-in telemetry reads matrices/material state without rendering or invalidating. All 40 strict captures and assertions retained. No production, renderer, baseline or story changes. A pass is negative reproduction evidence only; a failure retains telemetry and trace. No baseline promotion.

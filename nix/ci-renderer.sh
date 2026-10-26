@@ -2,7 +2,7 @@
 # Values are generated from the locked renderer derivation, never user input.
 : "${containerd:?}" "${rootShell:?}" "${engine:?}" "${imageArchive:?}" "${imageTag:?}" "${imageConfig:?}" "${imageDigest:?}" "${nixCommand:?}"
 case "${1:-}:${2:-}" in
-  stories:verify|stories:generate|application:) ;;
+  stories:verify|stories:generate|application:|recovery:core-diagnostic) ;;
   *) echo "Usage: cluster-ci-renderer stories verify|generate OR application" >&2; exit 2 ;;
 esac
 : "${RUNNER_TEMP:?GitHub runner scratch directory required}"

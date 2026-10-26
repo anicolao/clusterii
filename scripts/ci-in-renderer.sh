@@ -13,6 +13,10 @@ if ! "$CLUSTER_NIX_LDD" "$browser" > ci-evidence/nix-renderer/nix-ldd.txt 2>&1; 
 fi
 ldd "$browser" > ci-evidence/nix-renderer/renderer-ldd.txt
 case "$1" in
+  recovery)
+    test "$2" = core-diagnostic
+    node scripts/core-diagnostic-run.mjs "$3" "$4"
+    ;;
   stories)
     bun run test:story-policy
     bun run test:story-tools
