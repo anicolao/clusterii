@@ -579,3 +579,11 @@ Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | R
 Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | Archive four exact replacement journeys and record scoped acceptance with Linux diagnosis and outstanding provider gates
 
 Prompt 229 | faad1c53a0fe1743ecc37484fbc5fc07b35e1ef0423c0c3fa2f597c544b0d22a | Integrate exact original PR73 replacement assertions into feature009 while preserving parent references and both histories.
+
+Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Review interrupted-send candidates with unchanged predecessor pixels before strict verification
+
+Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Archive four exact interrupted-send journeys and carry the reviewer 04:49 source checkpoint before account isolation
+
+Prompt 232 | d39a0c7dfdfa2370080781e95db31105f33c8cc643c7b0882fa7127b12b235fe | Preserve original PR74 ancestry and exact transport/receipt story body in feature009 with verified anchored module paths.
+233 | 91a56c7e62bc12d84357097873f168afa01b4c0acf851a97eb98c3ece1e42aeb | Reconcile Git-proven structural separators, preserve exact archives, retain PR68 green and PR72 short review evidence.
+234 | c8e16355e0c5a152cafde88dcd27f257e3138e97ac2fa82d4192cb47b44a4fa0 | Reproduce archived-final separator composition failure and preserve exact bodies with Git-proven transition validation.

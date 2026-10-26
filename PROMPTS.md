@@ -2707,3 +2707,24 @@ Reviewer: PR72 desktop candidate40264675463 all nine new captures individually i
 Delegated reviewer instruction; refer to latest main meta PR72 large regression approval and original PR74 source preparation handoff.
 
 Reviewer continuation: PR72 large all nine new captures now individually inspected and approved; 25 inherited exact. Preserve /tmp/cluster-pr72-candidate-review/reviewer-large-approval.json and latest mainmeta during next substantive commit. Phone/short candidate40264675463 remain live; supervisor owns downloads/review, no duplicate runs. While waiting, prepare existing PR74 original2639f208 on separate branch based on reviewed PR73 335ad6c5 plus audit18a392c1. Mainmeta records full original source review. Preserve original transport-only withholding of real frames, same-payload retry, exact receipt/canonical/privacy assertions and all inherited references. Migrate into009 with relative paths, including newly introduced require(./lib/shared/command-receipt.js), not merely the prior five replacements. Type/policy/collection checks and exact-source equivalence required. No74 generation/publication or baseline promotion until72/73 reviewed parents carried forward. Record attributed PROMPTS/continuations and commit/push preparation; preserve immutable72 request. No merges.
+
+
+## Prompt 232: Interrupted send continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:39 Toronto”.
+
+Reviewer continuation 2026-10-22 04:39 Toronto: #73 17250d5 attached; independently reviewed replacement assertions and phone conflict capture, with both remedies visible and sending disabled. Continue next documented gap as a small stacked successor on #73, prioritizing interrupted-send recovery/account isolation or another concrete plan gap; retain real authoritative acknowledgement and distinguish browser draft persistence from sending. Do not stop after one PR while authorized plan work remains. Preserve independent visual/Linux/hosted and original raster gates. Track existing explicit #70 candidate run without duplicate requests. Carry checkpoints through04:39 into attributed committed/pushed logs; no merge.
+
+
+## Prompt 233: Retain green checkpoint
+
+Delegated reviewer instruction; refer to latest main meta PR68 green checkpoint, PR72 short approval and PR74 exact source audit.
+
+Reviewer update: PR68 exacthead1e3917e2187c0ff9c2b2f8631a111165a6c85d5e now all FIVE required checks SUCCESS. Independently read final stories40258778641 log: four viewport batches each42passed/2skipped; log /tmp/cluster-pr68-final-stories.log. PR72 short all9new individually inspected and approved,25inherited exact; retain /tmp/cluster-pr72-candidate-review/reviewer-short-approval.json in next substantive audit. Phone remains live checkout, no restart. PR74 working source independently exact original2639f208 after five adaptations; inner createRequire path correctly unchanged. Observed history gate rejection; resolve exact archived request ordering/separator preservation without weakening checker or rewriting history, then complete preparation push. Preserve latestmeta and attributed logs. No merges.
+
+
+## Prompt 234: Preserve checkout retry
+
+Delegated reviewer instruction; refer to latest main meta PR72 phone checkout infrastructure recovery.
+
+Reviewer infrastructure recovery: PR72 phone job121384333548 TERMINAL cancelled at03:58:50 during actions checkout repository fetch, before Nix bootstrap or any test; no phone artifact. Final log preserved /tmp/cluster-pr72-phone-cancelled.log. Supervisor has issued ONLY gh run rerun40264675463 --job121384333548 successfully, same immutable executor/source; do not duplicate dispatch. Desktop/large/short original artifacts and inspected approvals remain preserved. Await phone retry and inspect its output before full136 approval. This is checkout infrastructure recovery, not a test-failure retry. Record in next substantive audit; continue current history reconciliation.

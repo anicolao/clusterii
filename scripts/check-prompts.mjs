@@ -100,6 +100,12 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
   }
   const copiedVariants = prior.map(record => {
     const variants = new Set([`${record}${separator}`]);
+    // The exact ancestor archive may retain the formerly final record before
+    // the incoming parent appended its structural LF. Apply the same proven
+    // append transitions to this already-supported retained-separator form.
+    for (const original of originals) {
+      if (record === `${original}\n`) variants.add(`${original}${separator}`);
+    }
     for (let pass = 0; pass <= appendedTransitions.length; pass++) {
       const size = variants.size;
       for (const [before, after] of appendedTransitions) if (variants.has(before)) variants.add(after);
