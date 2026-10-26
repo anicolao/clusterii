@@ -881,3 +881,19 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Correct construction grep to match Playwright full titles and verify all eight stories before diagnosis.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Dispatch corrected named-dialog focus diagnosis against reviewed prepared source bbeb5c1b.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Finish ten short recovery image comparisons and reconcile remaining large viewport review inventory.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect original-resolution large initial, completed and recovered-pending comparison pairs; reconcile remaining18.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review six large ordinary cancellation and settlement pairs, recording viewer scale and remaining12 recovery views.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review four large recovery initial, pending and reserved state pairs; reconcile eight remaining views.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify eight passing construction recovery journeys and record remaining phone visible-focus evidence gap.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect four large recovery reload and cancellation comparisons; reduce uninspected inventory to four.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Persist recovery focus styling and ancestor clipping geometry as an explicit passed-run diagnostic file.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Dispatch durable recovery-focus geometry diagnostic from prepared ac9a0851 with source guard intact.

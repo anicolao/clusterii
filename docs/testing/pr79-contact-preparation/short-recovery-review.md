@@ -1,0 +1,7 @@
+
+
+## Supervisor remaining short recovery review completed
+
+Individually inspected all ten short recovery parent/head comparisons from the two attached manifests (six before continuation, last four re-opened individually after truncated tool output). Exact parent/head SHA256 reverified. Initial and peer reload retain200credits and camp69/131 or market106/94. Pending012 retains cyan commitment focus border, awaiting receipt and disabled actions. Reservation131credits/paid69/eligible1 and selected camp80/51; reload market106/25; completed145credits/market106/39 unchanged. Peer cancellation states retain216.3 or219.1credits and market106/110.3 or113.1. Owner cancelled retains147.8credits/refund69/base69/78.8 and blue scroll-region outline. Settled owner retains147.8credits/refund69/market106/41.8. Changes are rules disclosure, resulting scroll composition and corrected dividend copy; short header clips scrolled content in both versions, and empty-queue content moves below viewport in peer captures. No unexplained action or monetary change identified. Darwin comparisons only, not Linux acceptance or keyboard reachability proof. Remaining21distinct images all large viewport; phone focus remains pending corrected live diagnosis.
+
+Prior turn made concrete progress correcting diagnostic to actual dialog and pushing preparedbbeb5c1b and isolated7df29917. Corrected run40325433132 independently confirmed in_progress; PR71 three green/two running. No duplicate agent prompts or GitHub merges.

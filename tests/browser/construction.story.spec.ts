@@ -1,3 +1,5 @@
+import { mkdir, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
 import { createRequire } from "node:module";
 import type {
   Page,
@@ -517,19 +519,39 @@ for (const interrupted of [false, true])
                 exact: true,
               });
               await expect(recoveredDialog).toBeFocused();
+              const focusPath = info.outputPath("recovered-construction-focus.json");
+              await mkdir(dirname(focusPath), { recursive: true });
+              const focusFacts = await recoveredDialog.evaluate((element) => {
+                const describe = (node: Element) => {
+                  const style = getComputedStyle(node);
+                  const rect = node.getBoundingClientRect();
+                  return {
+                    tag: node.tagName,
+                    className: node.className,
+                    bounds: { x: rect.x, y: rect.y, width: rect.width, height: rect.height },
+                    overflowX: style.overflowX,
+                    overflowY: style.overflowY,
+                    outlineStyle: style.outlineStyle,
+                    outlineWidth: style.outlineWidth,
+                    outlineOffset: style.outlineOffset,
+                    outlineColor: style.outlineColor,
+                  };
+                };
+                const ancestors = [];
+                for (let parent = element.parentElement; parent; parent = parent.parentElement) {
+                  ancestors.push(describe(parent));
+                }
+                return {
+                  focused: document.activeElement === element,
+                  focusVisible: element.matches(":focus-visible"),
+                  viewport: { width: innerWidth, height: innerHeight },
+                  dialog: describe(element),
+                  ancestors,
+                };
+              });
+              await writeFile(focusPath, JSON.stringify(focusFacts, null, 2) + "\n");
               await info.attach("recovered-construction-focus", {
-                body: JSON.stringify(
-                  await recoveredDialog.evaluate((element) => {
-                    const style = getComputedStyle(element);
-                    return {
-                      focused: document.activeElement === element,
-                      focusVisible: element.matches(":focus-visible"),
-                      outlineStyle: style.outlineStyle,
-                      outlineWidth: style.outlineWidth,
-                      outlineColor: style.outlineColor,
-                    };
-                  }),
-                ),
+                path: focusPath,
                 contentType: "application/json",
               });
               await expect(
