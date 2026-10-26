@@ -2620,3 +2620,10 @@ Reviewer PR71 integration review: independently diffed staged009-selected-histor
 Delegated reviewer instruction; refer to latest main meta PR71 immutable reference audit and original PR69 readiness application outcome.
 
 Reviewer: Independently audited immutable454d4185 reference tree versus published058c3a6c:6234unmoved files byte-identical,136selected-history files moved byte-identically to009 feature,zero changed/missing/additional reference files. Thus inherited references are preserved and new71candidates remain unapproved/unimported. Earlier source/path-only review and6layout tests apply. PR69 original readiness application40256103679 SUCCESS independently read36passed/3skipped48.5m; latest integratedhead still requires ownchecks. Latest mainmeta includes both findings; preserve next normal audit. Continue single source-bound selected-history candidate generation and all4size visual review; no blanket017acceptance.
+
+
+## Prompt 221: Dispatch reviewed candidates
+
+Delegated reviewer instruction; refer to main meta immutable PR71 executor review and single dispatch authorization.
+
+Reviewer: Independently reviewed71 history candidate case/request/runner/workflow and both launcher deltas. Exactly one original25view journey per4sizes, target454d4185, all3reference tree hashes independently matchGit,136inherited mapping/120PNGs validated, source/spec bound, pinnedNixrenderer, no retries/snapshot updates/reference promotion, telemetryoff, fresh ports/output/diskreserve. Independently ran4history-candidate guard/dispatchtests PASS. Proceed single immutable source/request dispatch with this reviewed implementation; no further approval round needed to generate candidates. All resulting PNGs still require independent comparison/visual review before promotion, especially phone017. Preserve current mainmeta and review in next pushed audit; avoid duplicate live68–70CI.
