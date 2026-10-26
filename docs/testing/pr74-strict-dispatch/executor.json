@@ -1,0 +1,23 @@
+{
+  "requestId": "acknowledgement-strict-20261026-01",
+  "sourceCommit": "7a2b8baf1592cd17101ffdc89467a7019957185a",
+  "executorCommit": "e696c5acf889d4ed3cc7a00713826feae2b30458",
+  "case": "acknowledgement-strict",
+  "mode": "verify",
+  "target": "02bba89b6dea8c49affca037a556c6156a72a463",
+  "runId": "local-preflight",
+  "attempt": 1,
+  "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+  "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+  "featureReferenceTree": "3eb50e74beb77c379f99f8825409c0537af22bc2",
+  "specs": {
+    "draft": {
+      "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+      "title": "Selected history reaches only a consenting commander and survives reload",
+      "story": "selected-history-consent",
+      "sha": "7c5e8841ba05497ad1a33c5f3b5f1a1647978b4be0b6eedd95b70e172a39caf9",
+      "views": 50
+    }
+  },
+  "requestSha256": "e0785a2a2034cfe95f294090858eeccebbbe68f5b04277026085e7ee2ac255ea"
+}
