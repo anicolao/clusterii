@@ -202,3 +202,4 @@ Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | C
 Prompt 44 | dac42e1cce73963aa39cf75071273df9ccd5cd15f0b6f1f6b0a89886bd924bae | Backport inspected PR52 whole-pixel identity leading and established Nix CI to PR42 without changing references.
 Prompt 48 | 0cdd8804dd565c8bd5d2adba0cefbdc64ccd99f4d5fd883ea1f1339ecb5b2b06 | Integrate reviewed PR42 correction into PR43 preserving both exact archived histories and original child features.
 Prompt 49 | 1c202e97f9e5217f2569a6ce5e1b920e4e001ebd082ac09f529e0f15c1d0143f | Integrate reviewed PR43 into PR44 preserving exact parent histories and all existing child product and baseline bytes.
+Prompt 49 | 1c202e97f9e5217f2569a6ce5e1b920e4e001ebd082ac09f529e0f15c1d0143f | Preserve PR42 new failed-run image evidence and PR44 parent publication checkpoint for continued diagnosis.
