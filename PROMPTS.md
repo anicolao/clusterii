@@ -2742,3 +2742,12 @@ Reviewer actionable correction: phone retry121390747427 TERMINAL failure before 
 Delegated reviewer instruction; refer to latest main meta independent prompt-checker correctness review.
 
 Reviewer: independently reviewed six-line copiedVariants correction and focused regression in check-prompts; independently ran all23 tests PASS under establishedNix. Correction composes already-supported exact archived-final-record separator form with Git-proven later append transitions; it does not trim arbitrary body whitespace or remove ordering/archive equality checks. Approve this narrowly scoped checker bug fix subject to actual integration/base checks passing; prior no-checker-change direction was intended to prohibit bypass/weakening, not leave this proven false rejection unresolved. Preserve failing-before evidence, negative mutation/deletion cases, exact historical logs and source. Phone-only recovery remains priority, no duplicate dispatch. Record this attribution in next normal audit.
+## Prompt 237: Import reviewed drafts
+
+Delegated reviewer instruction; refer to latest main meta complete PR72 regression approval and strict verification handoff.
+
+Reviewer: PR72 complete136 candidate review APPROVED for regression import:100 inherited PNGs exact and all36new individually inspected across phone/desktop/large/short. Exact hashes/provenance and per-viewport notes in /tmp/cluster-pr72-candidate-review/reviewer-all-viewports-approval.json plus four reviewer approvals. Phone40267745100 executor356b8d51 sourcea5b2d36e verified same original product/story/runner/reference inputs; archive API size/SHA256/CRC valid, passed34 exit0 referenceDiff0. Import ONLY approved36 new refs plus review metadata on reviewed72 target4a826445; preserve all100inherited and no product/story/runtime drift. Commit/push attributed evidence/logs, then single bounded strict136 verification with snapshot updates forbidden and all four viewports. No regenerating accepted candidates, no premature whole-PR approval, no merges. Existing design gaps remain separately recorded, not production-fidelity signoff. Supervisor owns independent strict artifact review.
+
+
+
+

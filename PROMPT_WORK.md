@@ -587,3 +587,8 @@ Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | A
 Prompt 232 | d39a0c7dfdfa2370080781e95db31105f33c8cc643c7b0882fa7127b12b235fe | Preserve original PR74 ancestry and exact transport/receipt story body in feature009 with verified anchored module paths.
 233 | 91a56c7e62bc12d84357097873f168afa01b4c0acf851a97eb98c3ece1e42aeb | Reconcile Git-proven structural separators, preserve exact archives, retain PR68 green and PR72 short review evidence.
 234 | c8e16355e0c5a152cafde88dcd27f257e3138e97ac2fa82d4192cb47b44a4fa0 | Reproduce archived-final separator composition failure and preserve exact bodies with Git-proven transition validation.
+
+Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | Record independent strict136 artifact verification and publish the reviewed PR72 baseline repair without runner plumbing.
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Integrate published PR72 reviewed references into PR73 preparation while preserving both complete prompt histories.
+
+Prompt 237 | e12010073d4fa510a639a725ddec71a69d13bcf9ed2ec4c161fb73f4cecdd4cd | Carry reviewed73 ancestry into74 preparation with exact original story, both log histories, and136 approved parent images.
