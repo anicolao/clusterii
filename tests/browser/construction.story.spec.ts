@@ -549,6 +549,11 @@ for (const interrupted of [false, true])
                   ancestors,
                 };
               });
+              expect(focusFacts.focusVisible).toBe(true);
+              expect(focusFacts.dialog.outlineStyle).toBe("solid");
+              expect(focusFacts.dialog.outlineWidth).toBe("2px");
+              expect(focusFacts.dialog.outlineOffset).toBe("-2px");
+              expect(focusFacts.dialog.outlineColor).toBe("rgb(145, 220, 236)");
               await writeFile(focusPath, JSON.stringify(focusFacts, null, 2) + "\n");
               await info.attach("recovered-construction-focus", {
                 path: focusPath,
