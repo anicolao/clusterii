@@ -1,0 +1,84 @@
+{
+  "artifact": {
+    "id": 12658330701,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY1ODMzMDcwMQ==",
+    "name": "construction-focus-454d5312613d5f04f17fc75b84840e03a27d4848",
+    "size_in_bytes": 383782759,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12658330701",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12658330701/zip",
+    "expired": false,
+    "digest": "sha256:332c30a3361d1fbdcfabda550f51323e42d600dc2016d60e99b35a1e8dcd6c50",
+    "created_at": "2026-10-26T14:16:56Z",
+    "updated_at": "2026-10-26T14:16:56Z",
+    "expires_at": "2027-01-24T14:02:56Z",
+    "workflow_run": {
+      "id": 40336000578,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr79-construction-focus",
+      "head_sha": "454d5312613d5f04f17fc75b84840e03a27d4848"
+    }
+  },
+  "downloadedRangeBytes": 7946692,
+  "etag": "\"0x8DF336BCA75A8DF\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-desktop/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-desktop/recovered-construction-focus.json",
+      "sha256": "98752e55908884317ab12fcdee8d561b21c70585fc1b6b4671ca35268cdaf72d",
+      "bytes": 2319,
+      "crc32": "1c4a0591"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-large/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-large/recovered-construction-focus.json",
+      "sha256": "d97d7a00c55872f373ab6449636c9eff4bb561dc56da89e754df43346fd8d4ab",
+      "bytes": 2320,
+      "crc32": "ab95bf38"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-phone/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-phone/recovered-construction-focus.json",
+      "sha256": "2f50fc3e998aa42d94f67f7528aa823e1713c75dede959347ee2bff5d776370c",
+      "bytes": 2308,
+      "crc32": "c5811cdc"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-short/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-short/recovered-construction-focus.json",
+      "sha256": "c1717e663b3e2c8d91139683cc7f99b28f6d0f26ebfa2b8b520f453a92f2875f",
+      "bytes": 2314,
+      "crc32": "61e23b0c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "925e4f1affaa580ee81ecca9a6da79cfe6333c7c6aad5f8faf685ca1f628e13d",
+      "bytes": 1139263,
+      "crc32": "1271d3e9"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/live-construction-recovery/large/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/large/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "7aa8cc979a7514900e90d4dc7ea0a9766cb95611bfd513df665a3ebba5c653bc",
+      "bytes": 5900853,
+      "crc32": "ba62c440"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "7c7508ce42a5b0ee3b7cb7b0cd844a3580d734f302f7fb43adda803052c36bd9",
+      "bytes": 260585,
+      "crc32": "1cc12473"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-overlay-review/test-results/stories/live-construction-recovery/short/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/short/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "a54412a04f9a83f8d2891dacfbd4b88eead55c0abfb812f20ca8c145605a97f9",
+      "bytes": 589683,
+      "crc32": "a1b74c63"
+    }
+  ]
+}

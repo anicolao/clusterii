@@ -913,3 +913,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect eight Linux desktop construction state captures with bounded artifact provenance and exact hash approvals.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Finish desktop recovery and keyboard screenshot inspection and retain explicit focus replacement hold.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify rendered construction focus overlay at all four viewport sizes and approve corrected exact capture hashes.
