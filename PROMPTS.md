@@ -444,19 +444,52 @@ Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md 
 
 Reviewer finding 2026-10-21 15:38 Toronto: current #43 publish39660439181 failed expected d3e34c4 versus hosted4cfaebf; #46 publish39660570655 failed revision fetch with ECONNRESET. Logs retained /tmp/cluster43-publish-latest-review.log and /tmp/cluster46-publish-latest-review.log. Coordinate retries after shared publication queue clears and retain exact-head checks; do not describe current previews as verified until those checks pass. Log reviewer attribution/continuation and carry latest checkpoint. No merge.
 
-## Prompt 48: Reviewer identity correction
+## Prompt 48: Capture deadline
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 15:58 Toronto”.
+
+Reviewer finding 2026-10-21 15:58 Toronto: current #43 d3e34c4 story job119431708321 fails large campaign-start at the180000ms total test deadline,71 pass27min; no pixel failure in this run. #44/#45 also have campaign-start deadline failures plus known1994-pixel mismatches. Retained logs /tmp/cluster43-current-review-failure.log through cluster45-current-review-failure.log. Diagnose retained trace timing and current CI resource contention before changing any deadline; keep named readiness checks and exact pixels. Prioritize closing inherited failures alongside migration, and record root cause/evidence separately. Log reviewer attribution and carry latest checkpoint; no merge.
+
+## Prompt 49: Raster diagnosis
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 16:28 Toronto”.
+
+Reviewer continuation 2026-10-21 16:28 Toronto: your queued historical handoffs are drained and pane is idle. Resume authorized work. Prioritize the unresolved short identity paragraph raster mismatch inherited from #42: use retained Linux actual/expected/trace and renderer/layout evidence to establish a reproducible cause; preserve existing baselines, zero tolerance and failure artifacts. Continue independent remaining illustrated-story/implementation work while CI queues drain, and coordinate exact-head preview retries when publication clears. Do not wait indefinitely for CI when useful local diagnosis remains. Carry main meta-prompts checkpoints through16:28 into related committed/pushed logs, attribute this handoff in PROMPTS.md and continuations per AGENTS.md. No merge or full-release acceptance without remaining evidence.
+
+## Prompt 50: Lab continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 16:48 Toronto”.
+
+Reviewer continuation 2026-10-21 16:48 Toronto: diagnostics e350e11 are pushed and pane is idle since16:39. Continue authorized implementation while Linux evidence queues: take the next unmigrated production/sharing lab or live player journey in STORY_INVENTORY.md as a small successor to #50, preserving real shared components, named acknowledgements, exact candidate review and predecessor assertions. Keep identity-raster diagnosis open and inspect its new Linux layout artifacts when available; do not claim a fix from negative local probes. Coordinate current-head preview retries as the shared queue clears. Carry latest main meta-prompts checkpoints, log reviewer attribution and continuations, commit/push; no merge. Continue useful independent work rather than ending solely because CI is pending.
+
+## Prompt 51: Live consent
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 17:08 Toronto”.
+
+Reviewer continuation 2026-10-21 17:08 Toronto: pane idle after #52; continue authorized work with the next live multiplayer illustrated journey, preferably UX-10 selected-history consent through actual authenticated commands and recipient/outsider viewpoints, as a small successor to #52. Preserve procedural assertions until replaced, use TestStepHelper and named authoritative acknowledgements, exact captures across four viewports, privacy/recovery and keyboard/motion evidence. Component lab completion is not live acceptance. Current #43 6d6b005 story CI is green; #45 41d28ef fails two short identity captures by exactly1994 pixels (identity-validation and profile-recovery), retained /tmp/cluster45-1708-review-failure.log, no campaign timeout in this failure. Keep raster diagnosis open; compare new Linux layout artifacts when available without baseline/tolerance changes. Coordinate exact-head previews after queue clears. Carry main meta checkpoints through17:08, attribute this handoff in PROMPTS.md and continuations per AGENTS.md, commit/push logs. Continue useful independent work while CI is pending; never merge.
+
+## Prompt 52: Linux gallery
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 17:28 Toronto”.
+
+Reviewer finding 2026-10-21 17:28 Toronto: #47 current story verification completed with four missing Linux identity-component-gallery baseline failures, not pixel mismatches; generation succeeded. Log retained /tmp/cluster47-1728-review-failure.log. After current consent verification, review the separately generated Linux candidates and provenance, promote only approved new gallery images, then propagate through successors and verify strictly. Do not regenerate inherited baselines or weaken exact comparison. Carry latest meta checkpoints and attributed logs in committed/pushed changes; no merge.
+## Prompt 53: Reviewer identity correction
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR45, preserve all existing reference images, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR45 two-comparison review". Both comparison triples are identical and expected output matches reviewed PR52. Run required checks; do not merge PRs.
 
 
 
-## Prompt 49: Reviewer identity correction
+
+
+## Prompt 54: Reviewer identity correction
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR44, preserve all existing reference images, and reuse established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 publication and PR44 exact failure match". The full comparison PNGs match reviewed PR42 originals byte-for-byte. Run required checks; do not merge PRs.
 
 
 
-## Prompt 50: Reviewer identity backport
+
+
+## Prompt 55: Reviewer identity backport
 
 Reviewer instruction: Apply the independently inspected PR52 whole-pixel identity-intro leading correction to PR42, preserve all existing reference images, and reuse the established Nix CI provisioning from4f917d72. See supervisor meta-prompts.md entry "Supervisor PR42 identity diagnosis and scoped backport" for human request context and evidence. Run required checks; do not merge PRs.
 
@@ -465,9 +498,13 @@ Reviewer instruction: Apply the independently inspected PR52 whole-pixel identit
 
 
 
-## Prompt 51: Reviewer layer backport
+
+
+## Prompt 56: Reviewer layer backport
 
 Reviewer instruction: Backport the complete previously independently reviewed PR53 identity painting correction and exact approved short Linux references to PR42. See meta-prompts.md "Supervisor complete PR53 layer backport to PR42". Preserve other product behavior, references and strict assertions; verify required CI and do not merge PRs.
+
+
 
 
 
