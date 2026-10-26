@@ -2,6 +2,7 @@ import { createRequire } from "node:module";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import type { Campaign } from "../../shared/campaign";
 import { test, expect } from "./story-helpers/fixtures";
+import { assertScreenFit } from "./story-helpers/screen-fit";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
@@ -843,6 +844,16 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
       },
       verifications: [
         {
+          spec: "The acknowledged maintenance action restores keyboard focus with the full control and outline inside every clipping ancestor.",
+          check: async () => {
+            await expect(button(owner, "Resume campaign")).toBeFocused();
+            await owner.evaluate(assertScreenFit, {
+              surface: "game" as const,
+              focusedControl: true,
+            });
+          },
+        },
+        {
           spec: "Pause changes no units, route or production boundary.",
           check: async () => {
             paused = await canonical();
@@ -924,6 +935,16 @@ test("Paused fleet travel catches up exactly once after concurrent delayed deliv
           ).toHaveText("Campaign resumed."),
       },
       verifications: [
+        {
+          spec: "The acknowledged maintenance action restores keyboard focus with the full control and outline inside every clipping ancestor.",
+          check: async () => {
+            await expect(button(owner, "Pause campaign")).toBeFocused();
+            await owner.evaluate(assertScreenFit, {
+              surface: "game" as const,
+              focusedControl: true,
+            });
+          },
+        },
         {
           spec: "Exactly the recorded pause interval shifts the boundary; tick, forces and travel remain unchanged.",
           check: async () => {

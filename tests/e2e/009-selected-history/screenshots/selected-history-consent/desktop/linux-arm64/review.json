@@ -1,0 +1,42 @@
+{
+  "review": "docs/testing/pr72-approved-import/REVIEW.md",
+  "mode": "reviewed-baseline-candidates",
+  "story": "selected-history-consent",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "generation": {
+    "artifact": 12626590287,
+    "source": {
+      "commit": "3fed71ab7302795aae2f4086e958f8da860cf2ab",
+      "dirty": true,
+      "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
+      "specSha256": "9377847e19003504479cfe214115af7b1946a0ab536248839aa15a75a586e639"
+    },
+    "target": "4a8264453ad62788c454fe3f2b8e20829e3c804f",
+    "run": 40264675463
+  }
+}

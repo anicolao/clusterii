@@ -19,11 +19,11 @@ The helper owns counters, filenames, assertions, captures and Markdown links. Di
 
 ## Files and generated evidence
 
-- `tests/browser/*.story.spec.ts`: illustrated journeys; import the shared story fixture.
-- `tests/browser/story-helpers/`: step helper, readiness, layout, exact comparison and fixture.
+- `tests/e2e/<NNN-feature>/*.spec.ts`: required numbered feature organization. Features008 fleet travel and009 selected history are scoped migrations; feature README/FIDELITY index generated stories/<story>/README.md and reviewed screenshots/<story>/<viewport>/<platform>/. Remaining `tests/browser/*.story.spec.ts` are historical unmigrated journeys, not layout compliance.
+- `tests/e2e/helpers/`: single authoritative step helper and fixture, plus feature path ownership. Historical story-helper imports re-export those implementations; readiness/layout utility modules are shared without forks.
 - `tests/recovery-store.test.ts`: isolated production IndexedDB integration (`bun run test:browser-storage`); this preserves storage semantics without presenting a non-player harness as an illustrated journey.
-- `tests/browser/story-baselines/<story>/<viewport>/<platform>/`: reviewed PNGs and renderer manifests.
-- `test-results/stories/<story>/<viewport>/<platform>/`: the current run's captures, manifest and generated `README.md`/JSON sequence. Failed runs never produce a passed story document.
+- `tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/<viewport>/<platform>/`: migrated reviewed PNGs and renderer manifests. Other stories retain exact historical `tests/browser/story-baselines/<story>/<viewport>/<platform>/` paths.
+- `test-results/stories/008-fleet-travel/stories/live-fleet-travel/<viewport>/<platform>/`: migrated current-run captures/manifests/generated narrative; other stories retain `test-results/stories/<story>/<viewport>/<platform>/`. Failed runs never produce a passed story document.
 - Each settled PNG also has a `.layout.json` sidecar containing read-only identity text/font/ancestor geometry evidence. The identity-raster diagnostic is scoped to the actual identity section, caches repeated ancestor reads, and reports explicit text/node/depth bounds and truncation. Other surfaces record `applicable: false`; their full geometry/readiness/pixel assertions remain mandatory. It is captured after the PNG and never changes visual acceptance or baselines; retain it with failed artifacts when diagnosing renderer differences.
 - `docs/testing/stories/`: committed passing illustrated documents selected for review, retaining their generated provenance. The archive verifies decoded pixels again and links the corresponding reviewed baseline images, recording actual capture hashes without duplicating image files.
 - [STORY_INVENTORY.md](docs/testing/STORY_INVENTORY.md): UX-01–16 mapping, migrated coverage and remaining gaps.
@@ -132,7 +132,7 @@ Use the pinned Linux story workflow to generate Linux artifacts for review, then
 
 ## Commands and PR checklist
 
-From the repository root, install the locked dependencies, Node 22, Bun 1.3.10 and Java 21. The story scripts build the production static app at the fixed `/clusterii/pr4/` test path and manage their own Firebase emulator cohort.
+Use the established Nix environment for all project commands: locally, `nix develop --offline --option substitute false --option max-jobs 0 /tmp/pantheon-nix-env`; CI uses the versioned `nix/` shell and pinned renderer launcher. Install only the locked project dependencies inside that shell. Do not substitute host or Homebrew runtimes. The story scripts build the production static app at the fixed `/clusterii/pr4/` test path and manage their own Firebase emulator cohort.
 
 ```sh
 bun run check

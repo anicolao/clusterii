@@ -1,0 +1,75 @@
+{
+  "source": "cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1",
+  "run": 40157944454,
+  "job": 121063240955,
+  "artifact": 12586456325,
+  "archiveSize": 1601297039,
+  "apiArchiveSHA256": "6a2d457332b786beab6fff65a46b41745cca31051e9b9496a817a2037fc70398",
+  "archiveVerification": "Selective range extraction only; full archive digest not verified",
+  "images": [
+    {
+      "actual": "/tmp/cluster-pr53-layer-failure-review/test-results/stories/campaign-navigation.story--87b71-ntity-readiness-before-Play-short/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy-actual.png",
+      "actualSHA": "4018f71243fffd5ec27e9a74223eb05dbc41f0db73818234a18954361d1187aa",
+      "expectedSHA": "45dc3d62c3272826b7c0bf33c9dff9c53afe20cd4cef0ea4aa0b0b738fa8e9b3",
+      "diffSHA": "41f3da174873b3a5c5a7fd2f0ea25bfe2b86a99550aecb7e90bab76b58c91d37",
+      "baseline": "tests/browser/story-baselines/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+      "artifactEntry": "test-results/stories/campaign-navigation.story--87b71-ntity-readiness-before-Play-short/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy-actual.png",
+      "disposition": "Explicit independent reviewer approval after full original/diff inspection; verification failure output, not generated passing story"
+    },
+    {
+      "actual": "/tmp/cluster-pr53-layer-failure-review/test-results/stories/identity.story-Save-and-recover-a-commander-identity-short/commander-identity/short/linux-arm64/002-sign-in-1-toile-actual.png",
+      "actualSHA": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "expectedSHA": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+      "diffSHA": "1f581d7ab664adb30ca29a7ca07aa674d17285b41efe337afbc52a180e2186d0",
+      "baseline": "tests/browser/story-baselines/commander-identity/short/linux-arm64/002-sign-in-1-toile.png",
+      "artifactEntry": "test-results/stories/identity.story-Save-and-recover-a-commander-identity-short/commander-identity/short/linux-arm64/002-sign-in-1-toile-actual.png",
+      "disposition": "Explicit independent reviewer approval after full original/diff inspection; verification failure output, not generated passing story"
+    },
+    {
+      "actual": "/tmp/cluster-pr53-layer-failure-review/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy-actual.png",
+      "actualSHA": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "expectedSHA": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+      "diffSHA": "1f581d7ab664adb30ca29a7ca07aa674d17285b41efe337afbc52a180e2186d0",
+      "baseline": "tests/browser/story-baselines/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "artifactEntry": "test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy-actual.png",
+      "disposition": "Explicit independent reviewer approval after full original/diff inspection; verification failure output, not generated passing story"
+    },
+    {
+      "actual": "/tmp/cluster-pr53-layer-failure-review/test-results/stories/profile-recovery.story-Res-2c639-without-losing-either-draft-short/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one-actual.png",
+      "actualSHA": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "expectedSHA": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+      "diffSHA": "1f581d7ab664adb30ca29a7ca07aa674d17285b41efe337afbc52a180e2186d0",
+      "baseline": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.png",
+      "artifactEntry": "test-results/stories/profile-recovery.story-Res-2c639-without-losing-either-draft-short/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one-actual.png",
+      "disposition": "Explicit independent reviewer approval after full original/diff inspection; verification failure output, not generated passing story"
+    },
+    {
+      "actual": "/tmp/cluster-pr53-layer-failure-review/test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-actual.png",
+      "actualSHA": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "expectedSHA": "87d509469b03a91dc70bf6c3ce3bec0c616fc796cabfe0b2566ab01a668a9129",
+      "diffSHA": "1f581d7ab664adb30ca29a7ca07aa674d17285b41efe337afbc52a180e2186d0",
+      "baseline": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+      "artifactEntry": "test-results/stories/profile-recovery.story-Ret-12faa-icate-effects-or-draft-loss-short/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander-actual.png",
+      "disposition": "Explicit independent reviewer approval after full original/diff inspection; verification failure output, not generated passing story"
+    },
+    {
+      "actual": "/tmp/cluster-pr53-layer-failure-review/test-results/stories/receipt-recovery.story-A-m-21454-l-a-fresh-acknowledged-save-short/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander-actual.png",
+      "actualSHA": "91ee6ef3b0039a6db21a8ad88b06ce471705fb0e9508bd24b32f8886a2288c1c",
+      "expectedSHA": "02e8d329147979453142b80de0804b1d9a147cd09da9e8f04feee15412d3a6c1",
+      "diffSHA": "7bcca803452a3b8ffc076e05f51ba2db2cce416c2c4d65ba94dc8b5acf8855ed",
+      "baseline": "tests/browser/story-baselines/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander.png",
+      "artifactEntry": "test-results/stories/receipt-recovery.story-A-m-21454-l-a-fresh-acknowledged-save-short/identity-receipt-recovery/short/linux-arm64/002-first-draft-1-receipt-commander-actual.png",
+      "disposition": "Explicit independent reviewer approval after full original/diff inspection; verification failure output, not generated passing story"
+    },
+    {
+      "actual": "/tmp/cluster-pr53-layer-failure-review/test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-actual.png",
+      "actualSHA": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+      "expectedSHA": "7b6123e17e370d7c8065e24d9ab09084d37b284be7b9376e101214df27b863f6",
+      "diffSHA": "1c437ec2f0d28e86023c6cff5e049068c38a6cd36deed90b769fc26fe165ce6a",
+      "baseline": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device.png",
+      "artifactEntry": "test-results/stories/session-recovery.story-Two-02c49-thout-losing-saved-identity-short/session-cancelled-confirmation/short/linux-arm64/002-account-entry-2-commander-second-device-actual.png",
+      "disposition": "Explicit independent reviewer approval after full original/diff inspection; verification failure output, not generated passing story"
+    }
+  ],
+  "expiresAt": "2027-01-23T03:22:06Z"
+}

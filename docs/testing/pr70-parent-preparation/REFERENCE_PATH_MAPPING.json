@@ -1,0 +1,1202 @@
+[
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "f85d0954b7f478208ce418133df7e75ff5ba991a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "24be4b25c8493af1249f471a5af57cd23e45eca0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "bac87f2e35972f70a22e76fb114fb66f4a133725"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "24be4b25c8493af1249f471a5af57cd23e45eca0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "ffdeabeb34fefcfd8baa8b7d249054ac7b66672c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "24be4b25c8493af1249f471a5af57cd23e45eca0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "530d3a400396c3a50307736b92a160664ed8adb1"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "24be4b25c8493af1249f471a5af57cd23e45eca0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "f6abb7aef6f06ce4726dc4c84df487bf57a7fb17"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "0dfdfcc93ede2730f3c4890a3524100671fd119c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "0948e84fb574e84766ab0ac888e58bcb10e2c844"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "0dfdfcc93ede2730f3c4890a3524100671fd119c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "d9f237ca8a4fd6cc518d0f36db4bd56c9cfa8211"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "0dfdfcc93ede2730f3c4890a3524100671fd119c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "6e0a0f6df03735b01460e088306aa258ed18d381"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "0dfdfcc93ede2730f3c4890a3524100671fd119c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "755303c098b33b6fec2b4520cbc9743793f50dbc"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "0dfdfcc93ede2730f3c4890a3524100671fd119c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "9b593311bc0b23324444ddd79fb164faf0c0223b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "0dfdfcc93ede2730f3c4890a3524100671fd119c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "348917725d504e1c3591becd0b622be6bdb0e53e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "0dfdfcc93ede2730f3c4890a3524100671fd119c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "b762c5ca21b8b96e80daaa2c82d6777dd2928fba"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "9a69fd2e6bbcca78fff0ed82a47271afa9e56a19"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "981fab51417ced7257fdf11974aeb647e1da612c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "1e0d43fe02568a9d06003d70b402caf0ea7a764c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "85761212f4215564f426f4d196b810d2947db541"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "1e0d43fe02568a9d06003d70b402caf0ea7a764c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/renderer.json",
+    "gitBlob": "e26c0096da13a98e44d0f769ae547d37a24a7341"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/darwin-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/darwin-arm64/review.json",
+    "gitBlob": "ac72331f9adc576b0a24425ab8b486fa4c6de1fb"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "bbfcedda3e0740381531a1c1f99940be15624eaf"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "0e1db3cfc0b4f146badd2ae8ea979494957ee252"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "be76b42ddb3c2c577aab5b29714ac079f159c62a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "0e1db3cfc0b4f146badd2ae8ea979494957ee252"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "bcfc58e19c4ff24b3d571d280007f376fe7d4831"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "0e1db3cfc0b4f146badd2ae8ea979494957ee252"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "cb15e588759ab780da722db3604e4763aeca1b5a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "0e1db3cfc0b4f146badd2ae8ea979494957ee252"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "4ca91debfb91cc592e4841468e45dc5541e97187"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "4f6e9998205b7a1ba821fc218f8c869410adf557"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "8c7ab1de549a2082ea60537b80960825578fc9f3"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "4f6e9998205b7a1ba821fc218f8c869410adf557"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "61be65e9d6ab9aa78fa26038c5432f3805d26929"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "4f6e9998205b7a1ba821fc218f8c869410adf557"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "296125116ace713259c722021882bb98aa236671"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "4f6e9998205b7a1ba821fc218f8c869410adf557"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "5476c6c3e5f2f3e8388bb2adcad7b506e76dfa74"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "4f6e9998205b7a1ba821fc218f8c869410adf557"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "389021d9ab5a696eef4a644877ac794386c21e09"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "4f6e9998205b7a1ba821fc218f8c869410adf557"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "f262c44c1b07e44366a06040042f89c4de786cf8"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "4f6e9998205b7a1ba821fc218f8c869410adf557"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "b17a7bc9071e39ad874cd803237bc41ff95602ef"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "aefeb23f6be6083c009adce02d9e35b804e38f2b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "0ecc1bc80f946720e5ce8b4db40e80da0c0dc274"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "361d5445192760b5e75737a1fa33cf236dbbb597"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "33b4d5310ceb26a0ef3a546bec5fcf332c53c1a3"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "361d5445192760b5e75737a1fa33cf236dbbb597"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/renderer.json",
+    "gitBlob": "9fe50dabafe3af7e6ad1a03feb5dbfcdf9d89865"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/desktop/linux-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/review.json",
+    "gitBlob": "4f6ce1c93ab5c8c149dfd73a3048f3b3689757c6"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "cc892aef232d59a84a7bfecf01c4e070f87c797d"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "ef1899e5edee0c1cdc259956f64d443d7adfbc92"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "7afdad7d8a6b64522ba44d11130a9893f47df14d"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "ef1899e5edee0c1cdc259956f64d443d7adfbc92"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "da43fa30475205a07155db461cf12a7fd7b965a8"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "ef1899e5edee0c1cdc259956f64d443d7adfbc92"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "0d0e65b60046f93f7605a683c48d3d569ffa2cee"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "ef1899e5edee0c1cdc259956f64d443d7adfbc92"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "f62d635c4b61339723e8ee9b4d2dd15d09e70c6f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "6488ad3b8e1ca90906d0560cc4acc6531549a194"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "872bb2eff3db0498b6e7bf28201263380dd7071a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "6488ad3b8e1ca90906d0560cc4acc6531549a194"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "37ba8d92616853bb3a80a890ba448af735317b8b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "6488ad3b8e1ca90906d0560cc4acc6531549a194"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "d1d81e009f32ff44cfd163b4a962ce9eed3f6b0e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "6488ad3b8e1ca90906d0560cc4acc6531549a194"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "316f45b5d29f4830887edf432c92660d08509a1e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "6488ad3b8e1ca90906d0560cc4acc6531549a194"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "c9b887140a641cd76d166aa293296876a7cc729c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "6488ad3b8e1ca90906d0560cc4acc6531549a194"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "17814b5c5c0359f1ad938104790b1d8a35a336a8"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "6488ad3b8e1ca90906d0560cc4acc6531549a194"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "e30ab0eb06f4364b6efea6598f39e0053a326ff7"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "9a4ddb97667a9646f224f51f4846790d4307e253"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "8f616c2aa08be4baa4cffa3286cd52cc058f4199"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "3441f815087f8c2584a17a589826e90d2f58384e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "5d9c082212065477d1de7838258f8398ec0267d0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "3441f815087f8c2584a17a589826e90d2f58384e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/renderer.json",
+    "gitBlob": "7898302d3a3701cdec8ca83dfc29fa829cc96ee1"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/darwin-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/darwin-arm64/review.json",
+    "gitBlob": "d38caf3112ee1de6566bd9fb522db2989ab6270e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "59b6f16eed81e334c419b25335030c8e4bc5564c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "2bbecc4353767d2084321b9856e53a8be60d5e41"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "b988705213f40ca0d1d8de5b5ccfe4e14474b911"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "2bbecc4353767d2084321b9856e53a8be60d5e41"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "9ce63aa7e9295fa525a5a60ad48dc22123a963f1"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "2bbecc4353767d2084321b9856e53a8be60d5e41"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "06093f3b618e00c714b01c84f3e4b5f0d23be19c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "2bbecc4353767d2084321b9856e53a8be60d5e41"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "0778bca74bb87e212f67b6dc6a0c88d58e06f75a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "e34429eaeee6308da4c748afe589ba68e5aab268"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "09161534ed0324620c08c14760c9c4e6d6008e3e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "e34429eaeee6308da4c748afe589ba68e5aab268"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "7b6d068c06847643197c3d13caae8a1c37a57e23"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "e34429eaeee6308da4c748afe589ba68e5aab268"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "8c2d7c2e19c8c866ceee8694dceb5905268ed760"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "e34429eaeee6308da4c748afe589ba68e5aab268"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "900de52bd9749ef2af8221bfefe9287177d001e4"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "e34429eaeee6308da4c748afe589ba68e5aab268"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "13c5f3db3701dd4aa0789d017f89dca020bf6490"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "e34429eaeee6308da4c748afe589ba68e5aab268"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "60ecbcb7824a38f56648b1f9ed9ccaec09401cf5"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "e34429eaeee6308da4c748afe589ba68e5aab268"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "b9ba8d4bb855942eb7d5c6f6d82fbde9547c7fad"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "f8d7f1f962189b5d7d2e847dc56743c3564b381a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "10c422ccb08bdc00c27e6286150bed4bbec6984e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "7dc925e4cc55c9d7a688a36e8140aa77c37de4ac"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "12f8681d522179e94b13ea485d6698a9a9db5ddf"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "7dc925e4cc55c9d7a688a36e8140aa77c37de4ac"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/renderer.json",
+    "gitBlob": "5ce5609ff3316572f280bcb13ac0db6659ee57f1"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/large/linux-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/review.json",
+    "gitBlob": "bb38935fb82422d88328b9ba9a415c783ca4dbc0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "bf80fcf357c70f8f01a745da9bbbea7990af510b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "044eda847cd41dfadced36ec903aa33cc5d84e26"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "ff0c575f5c67ef614ef642fe354b402388da436a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "044eda847cd41dfadced36ec903aa33cc5d84e26"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "e3bf138da44263253abef605e463cb24a429c0dd"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "044eda847cd41dfadced36ec903aa33cc5d84e26"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "acaca00ff491c1959fd707153984c44c6d754d8d"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "044eda847cd41dfadced36ec903aa33cc5d84e26"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "ae9f88384d69fc94e2dfe4d17f525377a0f1a508"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "0923e3e2de27d5cc2ae802071de71c639ebdbe6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "2b8ecae8ee01e0522c324af6bf8db73be6029075"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "0923e3e2de27d5cc2ae802071de71c639ebdbe6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "a4297238acf442d457c33a1f7d02d140ddfbd518"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "0923e3e2de27d5cc2ae802071de71c639ebdbe6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "be78e0c4970286fcc070026a8ab7c2407e0fd8a4"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "0923e3e2de27d5cc2ae802071de71c639ebdbe6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "5413d38b72626a2d5df1f7480a8db65ce6f3990d"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "0923e3e2de27d5cc2ae802071de71c639ebdbe6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "07028a298487fac0d705cef26e92885d10d8cb93"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "0923e3e2de27d5cc2ae802071de71c639ebdbe6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "0d85fae69c503df14708a71ac1eb2285423c7f57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "0923e3e2de27d5cc2ae802071de71c639ebdbe6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "548ae2f8b4b8f7b1b36e5ae15acfcdbcbab75289"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "94c661ffaca152fd69cc24882ec612b52c879d73"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "5a0c475eec563af8b356bf337e43342f1121fae7"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "9fab4e0f6590fbc1e150baba7a62c12fa4357c60"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "13bf9a4c217330f58b4a718d194d255b8bc19ec3"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "9fab4e0f6590fbc1e150baba7a62c12fa4357c60"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/renderer.json",
+    "gitBlob": "417fea0d3760552cbb32b63a2423fd8f5402da90"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/darwin-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/darwin-arm64/review.json",
+    "gitBlob": "b11761641de7a42029d0e6aa33b202e1f7fad57f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "f8cfe3d4a6dc26ae1af0794b27f647dc9f98e51e"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "e6d0d277480b9164811316000f8db1f6d737ff9f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "638d66dd247fc0178936781a5eb51742ccbfc15f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "e6d0d277480b9164811316000f8db1f6d737ff9f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "0d99b904d76c7f348798939396162236810177ca"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "e6d0d277480b9164811316000f8db1f6d737ff9f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "e820e9ea996127aa76b5d819b5ec6358be54c149"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "e6d0d277480b9164811316000f8db1f6d737ff9f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "ddd5936e813fa751b19ab9ff19955b305401a1da"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "c326df2b5af96f3156b4d8023bd8ca55203f4e9b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "eced360c5760f020f0c3c5effb666a23a0b36fd2"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "c326df2b5af96f3156b4d8023bd8ca55203f4e9b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "c0afe18298436340d482250413c6419dbb2c0139"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "c326df2b5af96f3156b4d8023bd8ca55203f4e9b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "b633751ec235d363d664dff464136bdd4218bb2c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "c326df2b5af96f3156b4d8023bd8ca55203f4e9b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "cd7706f446547036ab6085228934acab7b7b435f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "c326df2b5af96f3156b4d8023bd8ca55203f4e9b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "e37246437bbc90f41ca6f8b8c160d0ea8614026d"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "c326df2b5af96f3156b4d8023bd8ca55203f4e9b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "f99897145b6de924f440a7970eac95c1cf3588a1"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "c326df2b5af96f3156b4d8023bd8ca55203f4e9b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "74e11bedbbecd31fe8273f33b1acbe2100dde57a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "e392e5257b67db83f5de7a24a6277ee85318dce6"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "38f3b76f93b089ee2baaecbe79014c9528d55568"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "ba46f9cb2ed8cab855e6e096d2f7ccf6fce66cc3"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "78be9b7b9f9614a7e51e969f878ff04729746b7f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "ba46f9cb2ed8cab855e6e096d2f7ccf6fce66cc3"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/renderer.json",
+    "gitBlob": "406ef7c5f5a801292931d88a1b797ec9e275f54b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/phone/linux-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/review.json",
+    "gitBlob": "3b21d66d31b084c9a715aae3c44e100bef331fc3"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "517d31533c85b4b00650cfbc45359be38bfa26cb"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "68594813d48c6c3119bdc9058abe5e7d8f3ec928"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "ac46fb6de8274c7550ee62c8855641dbdd028aae"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "68594813d48c6c3119bdc9058abe5e7d8f3ec928"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "e961bf343144e0d8f2b6d77e030a97fcee3ede4d"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "68594813d48c6c3119bdc9058abe5e7d8f3ec928"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "80f534c8ea57cf2bc03cb45a0880d273a3a053f1"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "68594813d48c6c3119bdc9058abe5e7d8f3ec928"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "9a8728bca9f7f155d7b4ae34b9b4899d5e871169"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "fed19006a3af7a52a6455de2e5116118fd76ef57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "bd17b55273ea271f76829169a6936ea84856f3c2"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "fed19006a3af7a52a6455de2e5116118fd76ef57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "a0d2bd72d96981792dff413dcce701e3b5c5eec7"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "fed19006a3af7a52a6455de2e5116118fd76ef57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "04a5d853f7e38fbe407faf59334291e655902f00"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "fed19006a3af7a52a6455de2e5116118fd76ef57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "5374c2b7bde197e88db7fbf8eb50105652e5a6e3"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "fed19006a3af7a52a6455de2e5116118fd76ef57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "9d8cc8ee4449f941759805e8b2d1b555ffb22f7a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "fed19006a3af7a52a6455de2e5116118fd76ef57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "b7d783d2b20a35888d8fcb8e6c30bdc447bc667c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "fed19006a3af7a52a6455de2e5116118fd76ef57"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "6b827d4936ec0cf2b48239cb67374191607b2b8c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "bc8839e818b9bc664aa4c718be0d662fdf1b1717"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "c405ed713600282cf98db2f172b9faf3d72bbc6c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "fe0ab25e6de55323f703cfd2481898ede26a6d80"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "d78c6b37ac6aa9624c8d8d8de98c5a811b0103bc"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "fe0ab25e6de55323f703cfd2481898ede26a6d80"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/renderer.json",
+    "gitBlob": "1fd14a012505020e6aa199c4c1c8a22d509841ad"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/darwin-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/darwin-arm64/review.json",
+    "gitBlob": "4d9056a51a1d984305104cc08571f2d910114516"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "gitBlob": "321caa896be1b43ed01cd92d2f055eddc7c13e6a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "gitBlob": "416b40ebbd643e079773f1980a29c0d76257ba0c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "gitBlob": "ef048cbc132df91fabe0b58627409613bbb1fa0f"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "gitBlob": "416b40ebbd643e079773f1980a29c0d76257ba0c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "gitBlob": "db5f37772471012c9dd5ae5ea2ca4048a2085c2a"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "gitBlob": "416b40ebbd643e079773f1980a29c0d76257ba0c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "gitBlob": "d8850ab616c223fc8d533c36e57f9b5fa668d4a5"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "gitBlob": "416b40ebbd643e079773f1980a29c0d76257ba0c"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "gitBlob": "6ac64e36fe37e42a9a70a7b27472dfe20c1f6a73"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "gitBlob": "e9fa69ce47e83c86274287ff119c2d8ce254df3b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/016-open-route-1-fleet-marshal.png",
+    "gitBlob": "4d4d3f38c6540535b7a09c5e9949cb41705d86e8"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/016-open-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/016-open-route-2-independent-marshal.png",
+    "gitBlob": "e9fa69ce47e83c86274287ff119c2d8ce254df3b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+    "gitBlob": "3df0221a5c520d8e76a344912b5083a634388bdb"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+    "gitBlob": "e9fa69ce47e83c86274287ff119c2d8ce254df3b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+    "gitBlob": "26288fef262f574fc63b0cf62190fe48e3dcd2f1"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+    "gitBlob": "e9fa69ce47e83c86274287ff119c2d8ce254df3b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/019-repair-route-1-fleet-marshal.png",
+    "gitBlob": "20925d95ae063ab6ad89ff1dd3c0b6e09ed393e7"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/019-repair-route-2-independent-marshal.png",
+    "gitBlob": "e9fa69ce47e83c86274287ff119c2d8ce254df3b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/020-accept-route-1-fleet-marshal.png",
+    "gitBlob": "9e8ec233e80edd0330d7913bc80047bc8ffb1f94"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/020-accept-route-2-independent-marshal.png",
+    "gitBlob": "e9fa69ce47e83c86274287ff119c2d8ce254df3b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/021-recover-route-1-fleet-marshal.png",
+    "gitBlob": "be387bc74a6cee64219dafc1cb606b4c405497f6"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/021-recover-route-2-independent-marshal.png",
+    "gitBlob": "e9fa69ce47e83c86274287ff119c2d8ce254df3b"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/023-traveling-1-fleet-marshal.png",
+    "gitBlob": "93014f45d70a985ad35e72dcdea9b813bb12d559"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/023-traveling-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/023-traveling-2-independent-marshal.png",
+    "gitBlob": "61ef46d22b41717939831f9ad61cc310fd846ee0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+    "gitBlob": "bee0e3dbb3254e1ec3f91d22769f86a35bc9ce23"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/025-arrival-report-2-independent-marshal.png",
+    "gitBlob": "718e69b978576ca0d1c02e7db7f5e627875402b0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+    "gitBlob": "611d59a10c1242cefb4c4a1b511fb4d6a36cf011"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+    "gitBlob": "718e69b978576ca0d1c02e7db7f5e627875402b0"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/renderer.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/renderer.json",
+    "gitBlob": "2be03c9ba09155b0df1ee30310120bd09aa5c074"
+  },
+  {
+    "old": "tests/browser/story-baselines/live-fleet-travel/short/linux-arm64/review.json",
+    "new": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/review.json",
+    "gitBlob": "6877ae6f7a81acd381d1e02d0261ace203c718b7"
+  }
+]

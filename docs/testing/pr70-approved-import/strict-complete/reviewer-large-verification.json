@@ -1,0 +1,39 @@
+{
+  "artifactId": 12622569334,
+  "sha256": "48d96b8ae540fc8d9b8372eeed2933c46c2986f17959b9acf985653a071d2002",
+  "size": 205464362,
+  "outcome": {
+    "family": "travel",
+    "viewport": "large",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "verify",
+    "views": 40
+  },
+  "executor": {
+    "requestId": "arrival-strict-20261026-01",
+    "sourceCommit": "b5274753d21c391654b87f4ef900beb8ab105cc8",
+    "executorCommit": "650525a9acaf5eb91de490af4674058c5d23cd06",
+    "case": "arrival-strict",
+    "mode": "verify",
+    "target": "a28bb2f168cc2807c022ef8c5eaad9fe2362ed46",
+    "runId": "40256911000",
+    "attempt": 1,
+    "referenceTree": "b672fb1c5bb8253151ba9e5715d46e243aadc2a1",
+    "featureReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "specs": {
+      "travel": {
+        "file": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts",
+        "title": "Live fleet travel and arrival preserve private forces through recovery",
+        "story": "live-fleet-travel",
+        "sha": "3323d574aed7a700daf56103c20b49905886a715be62ff45991d3269ca58d0c8",
+        "views": 40
+      }
+    },
+    "requestSha256": "a262c68472f173676dbd81b1b49a6fe223da7df1f850ec38c4b72d06cce53b05"
+  },
+  "verifiedExactPngs": 40,
+  "wholeArchiveSha256CRCVerified": true
+}

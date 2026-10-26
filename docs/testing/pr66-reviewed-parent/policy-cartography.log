@@ -1,0 +1,54 @@
+$ node --test scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs scripts/check-route-observation-inputs.test.mjs && node scripts/check-story-policy.mjs
+✔ admission fixture changes only designated domain time inputs (0.364875ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.284ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.524042ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.358917ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.234417ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.676834ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.355541ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.297584ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.351959ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.42575ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.351625ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.42725ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.810708ms)
+✔ unrelated campaigns retain every original entropy input (0.061708ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.180584ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.917334ms)
+✔ unrelated campaigns retain every original entropy input (0.070125ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.197125ms)
+✔ entropy identities are stable across real campaign/account IDs, never modifying state (0.077125ms)
+✔ passed-run facts remain as an explicit file even when reporter ignores attachment bodies (1.948541ms)
+Previous story evidence preserved at /tmp/nix-shell.3WwdcC/cluster-cohort-test-tdPURi/.story-cohorts-fw9IBL/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.3WwdcC/cluster-cohort-test-tdPURi/.story-cohorts-fw9IBL/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (10.044625ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.4735ms)
+✔ interruption retains current artifacts and launches no successor (1.5995ms)
+✔ an artifact path collision fails rather than overwriting either result (3.175167ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.441959ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.840333ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.921625ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (4.385041ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.232083ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.357708ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.355625ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 70.114417
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+bun test v1.3.13 (bf2e2cec)
+
+tests/galaxy-labels.test.ts:
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.97ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes [0.19ms]
+
+ 3 pass
+ 0 fail
+ 82 expect() calls
+Ran 3 tests across 1 file. [37.00ms]

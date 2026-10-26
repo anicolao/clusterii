@@ -1,0 +1,494 @@
+{
+  "reviewer": "supervising Codex",
+  "run": 40255237807,
+  "target": "ab826d91540ef3c7823d707fc413d73fb858c3f3",
+  "viewports": [
+    "desktop",
+    "phone"
+  ],
+  "wholeArchiveSha256AndCRCVerified": true,
+  "comparisons": [
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "5d38e56c93aaf4d647ccd01c75fd2a3611d2975540899e38462f7906715aba99",
+      "previousSha256": "5d38e56c93aaf4d647ccd01c75fd2a3611d2975540899e38462f7906715aba99",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "sha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "previousSha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "sha256": "fc38c8285a3b18b7fa9f3002e2c33b03b17cf2efbabcfd50c1e985a4d77ddb61",
+      "previousSha256": "fc38c8285a3b18b7fa9f3002e2c33b03b17cf2efbabcfd50c1e985a4d77ddb61",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "sha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "previousSha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "3ae66184ba791773b4973a192e9273fc83bf1c61f4f30eb25b16b847e81a369e",
+      "previousSha256": "3ae66184ba791773b4973a192e9273fc83bf1c61f4f30eb25b16b847e81a369e",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "sha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "previousSha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "sha256": "1f13075906dd64b4f10b292e697e485e4f35f4cf47bfddaaeb702f5a4ae7d622",
+      "previousSha256": "1f13075906dd64b4f10b292e697e485e4f35f4cf47bfddaaeb702f5a4ae7d622",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "sha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "previousSha256": "fc07360bbd062cc6da3774c6a37fcde3b81246b0ce95261fbea3bc36c9a98950",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "d1e7436b9b0c67dcebfbe556e7c277f3ba84bb791de4aeabe103f353796829f7",
+      "previousSha256": "d1e7436b9b0c67dcebfbe556e7c277f3ba84bb791de4aeabe103f353796829f7",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "sha256": "b4df165826c22c69153a9f93b3d62e5c256bc1b14e9b534e60c4c884b759e938",
+      "previousSha256": "b4df165826c22c69153a9f93b3d62e5c256bc1b14e9b534e60c4c884b759e938",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "a24f6f282355d9f5f7bd981cc3f6656367f132d6285c3c3a2272b74aca11c1c7",
+      "previousSha256": "a24f6f282355d9f5f7bd981cc3f6656367f132d6285c3c3a2272b74aca11c1c7",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "4f291c11441af4c56aa70072bf63723fe4a5933e2bc11b245ddc5e4d87d58ad3",
+      "previousSha256": "4f291c11441af4c56aa70072bf63723fe4a5933e2bc11b245ddc5e4d87d58ad3",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "sha256": "cd81e3615a40bcf6d053d642a63b43074bde9deed0cc6d9b03e2f95169aa773c",
+      "previousSha256": "cd81e3615a40bcf6d053d642a63b43074bde9deed0cc6d9b03e2f95169aa773c",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-1-fleet-marshal.png",
+      "sha256": "1fe8f4b79a6bd652fc11a3a2779b62ee473997ebad868a6a06c1d8227811197c",
+      "previousSha256": "1fe8f4b79a6bd652fc11a3a2779b62ee473997ebad868a6a06c1d8227811197c",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+      "sha256": "c731947d5d7b9490c5d58ccfef9fdc5d536306a04e4d045dc3af3cc0d300faa3",
+      "previousSha256": "c731947d5d7b9490c5d58ccfef9fdc5d536306a04e4d045dc3af3cc0d300faa3",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+      "sha256": "1944a192257383f53753772c8daa4ee3feb32e586916cd3d8fe8d82d7bd6d0f9",
+      "previousSha256": "1944a192257383f53753772c8daa4ee3feb32e586916cd3d8fe8d82d7bd6d0f9",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+      "sha256": "ff3dd1452d4cb1bd337f6223b5f67a5dc17c9568f4e64a4a9eb2f5f3ad6f3bac",
+      "previousSha256": "ff3dd1452d4cb1bd337f6223b5f67a5dc17c9568f4e64a4a9eb2f5f3ad6f3bac",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "58142376f49b630c74f9c0451972253f74ac97c04eba88d66bd20309cd8b16a7",
+      "previousSha256": "ff3dd1452d4cb1bd337f6223b5f67a5dc17c9568f4e64a4a9eb2f5f3ad6f3bac",
+      "changed": true
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-1-fleet-marshal.png",
+      "sha256": "e53fae4eb08440ec028718c6ab65584131b428278d27b5c2a78da7dd7bb35b97",
+      "previousSha256": "e53fae4eb08440ec028718c6ab65584131b428278d27b5c2a78da7dd7bb35b97",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-1-fleet-marshal.png",
+      "sha256": "314677d75499793d3ee4d62b1c093e8c2fb2e4562e899dc8667ad75f90faca81",
+      "previousSha256": "314677d75499793d3ee4d62b1c093e8c2fb2e4562e899dc8667ad75f90faca81",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-2-independent-marshal.png",
+      "sha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "previousSha256": "e86c83a73c5a61bd686298934323960067c8ef51f1c33cee68eafa7d536b9b63",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-1-fleet-marshal.png",
+      "sha256": "94470b4513009f6689c37ffdb072e15b794eb4cf344a70f598c9ef2d4d3beaab",
+      "previousSha256": "94470b4513009f6689c37ffdb072e15b794eb4cf344a70f598c9ef2d4d3beaab",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-2-independent-marshal.png",
+      "sha256": "40d96ac63acb2d308a63e50cddba06d2be20a9594396bfaf489170f25a716a28",
+      "previousSha256": "40d96ac63acb2d308a63e50cddba06d2be20a9594396bfaf489170f25a716a28",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-1-fleet-marshal.png",
+      "sha256": "8e585243989c67f060981c0b1e7cdab2889cc2bd2832b03305dd404373a9b21a",
+      "previousSha256": "8e585243989c67f060981c0b1e7cdab2889cc2bd2832b03305dd404373a9b21a",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-2-independent-marshal.png",
+      "sha256": "5d717e0c46b7add8a3e1d45e6fd35debfda4af655160ab3dae683d3856c653d1",
+      "previousSha256": "5d717e0c46b7add8a3e1d45e6fd35debfda4af655160ab3dae683d3856c653d1",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-1-fleet-marshal.png",
+      "sha256": "a5cd00c3c01c55c249ddff91b6192641e8e2a720e66fadf3a7a7f52be40e63b7",
+      "previousSha256": "a5cd00c3c01c55c249ddff91b6192641e8e2a720e66fadf3a7a7f52be40e63b7",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-2-independent-marshal.png",
+      "sha256": "5d717e0c46b7add8a3e1d45e6fd35debfda4af655160ab3dae683d3856c653d1",
+      "previousSha256": "5d717e0c46b7add8a3e1d45e6fd35debfda4af655160ab3dae683d3856c653d1",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-1-fleet-marshal.png",
+      "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+      "previousSha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-2-independent-marshal.png",
+      "sha256": "5d717e0c46b7add8a3e1d45e6fd35debfda4af655160ab3dae683d3856c653d1",
+      "previousSha256": "5d717e0c46b7add8a3e1d45e6fd35debfda4af655160ab3dae683d3856c653d1",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "previousSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "sha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+      "previousSha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "aa54755d704c6df70fe27008b8f2888e5789519d8cf152422595377579aac0ba",
+      "previousSha256": "aa54755d704c6df70fe27008b8f2888e5789519d8cf152422595377579aac0ba",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "sha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+      "previousSha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+      "previousSha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "sha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+      "previousSha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "14e1ba6086c1899bdd2da772a1c6a30448168e188b68b01b7b418e0378009b10",
+      "previousSha256": "14e1ba6086c1899bdd2da772a1c6a30448168e188b68b01b7b418e0378009b10",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "fa5cc35ecaa11c9aff1b27ba2b55a5b4356bc9031f91aba61f8880b212d7595a",
+      "previousSha256": "fa5cc35ecaa11c9aff1b27ba2b55a5b4356bc9031f91aba61f8880b212d7595a",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "sha256": "7c85693b58c2d28bda2a54bd5f5429f35c4bc2da898b4b889904f0eb8b028e44",
+      "previousSha256": "7c85693b58c2d28bda2a54bd5f5429f35c4bc2da898b4b889904f0eb8b028e44",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/021-pending-route-1-fleet-marshal.png",
+      "sha256": "2c63c2ec0c74017db07ba3b7d295e57e7a421be3ee37468a604861688334c0f2",
+      "previousSha256": "2c63c2ec0c74017db07ba3b7d295e57e7a421be3ee37468a604861688334c0f2",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/021-pending-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+      "sha256": "d3ae40f633032861558f0e3d209d1385209c751b0b2344a69a3d1d365244e63d",
+      "previousSha256": "d3ae40f633032861558f0e3d209d1385209c751b0b2344a69a3d1d365244e63d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/022-reload-pending-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+      "sha256": "c3fb1d1032db8779731ea8c7e3af125a57c388291c83e756ba6cb644a18dfdbf",
+      "previousSha256": "c3fb1d1032db8779731ea8c7e3af125a57c388291c83e756ba6cb644a18dfdbf",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/023-review-route-retry-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+      "sha256": "793ae362f22fedbd2b76cd609fa8e1afa70b4ff5ccb1b461d79f2305ba9a3583",
+      "previousSha256": "793ae362f22fedbd2b76cd609fa8e1afa70b4ff5ccb1b461d79f2305ba9a3583",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/024-retry-original-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "4c7e93a6d0697f0a365aaf2e2a3be94ca8eb1c1a2f07e0c360ccca5067d0e5f4",
+      "previousSha256": "793ae362f22fedbd2b76cd609fa8e1afa70b4ff5ccb1b461d79f2305ba9a3583",
+      "changed": true
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/026-accepted-while-offline-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/028-accept-route-1-fleet-marshal.png",
+      "sha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+      "previousSha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/028-accept-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/029-recover-route-1-fleet-marshal.png",
+      "sha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+      "previousSha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/029-recover-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/031-traveling-1-fleet-marshal.png",
+      "sha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+      "previousSha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/031-traveling-2-independent-marshal.png",
+      "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+      "previousSha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/033-arrival-report-1-fleet-marshal.png",
+      "sha256": "2ae5d610bb4659be9c60503dc839705b71f3eb024cafd7fa208061f9920b320c",
+      "previousSha256": "2ae5d610bb4659be9c60503dc839705b71f3eb024cafd7fa208061f9920b320c",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/033-arrival-report-2-independent-marshal.png",
+      "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "previousSha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/034-recover-arrival-1-fleet-marshal.png",
+      "sha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+      "previousSha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/034-recover-arrival-2-independent-marshal.png",
+      "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "previousSha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/035-sign-out-access-1-fleet-marshal.png",
+      "sha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+      "previousSha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/interrupted-fleet-route/phone/linux-arm64/035-sign-out-access-2-independent-marshal.png",
+      "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "previousSha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "changed": false
+    }
+  ],
+  "decision": "Approve the two changed step026 candidate images only; 78 other captures exactly equal bf0ea547 baseline blobs.",
+  "inspection": "Viewed previous and candidate desktop and phone separately. Only intended overdue acknowledgement footer and enabled Check route order change. Phone footer grows for wrapped recovery message within viewport; destination and controls readable, central content remains bounded scrolling. No false accepted departure; map unchanged. Regression baseline approval only, not full design/release approval."
+}

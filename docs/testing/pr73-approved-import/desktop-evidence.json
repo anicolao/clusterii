@@ -1,0 +1,309 @@
+{
+  "artifact": {
+    "id": 12628333481,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYyODMzMzQ4MQ==",
+    "name": "replacement-candidates-draft-desktop-3ab169962d882d06e7a06f1153f617b8020f11f4-1",
+    "size_in_bytes": 17404583,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12628333481",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12628333481/zip",
+    "expired": false,
+    "digest": "sha256:badf8aeb1a1bd3105c362e220907b2a88d58aaecc350104cb2b0f5920743d786",
+    "created_at": "2026-10-26T05:11:05Z",
+    "updated_at": "2026-10-26T05:11:05Z",
+    "expires_at": "2026-11-25T05:11:03Z",
+    "workflow_run": {
+      "id": 40272329867,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr73-replacement-candidates",
+      "head_sha": "3ab169962d882d06e7a06f1153f617b8020f11f4"
+    }
+  },
+  "outcome": {
+    "family": "draft",
+    "viewport": "desktop",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "generate",
+    "views": 42
+  },
+  "binding": {
+    "requestId": "replacement-candidates-20261026-01",
+    "sourceCommit": "8894877f8f76c0883086381872c6819b36863c72",
+    "executorCommit": "3ab169962d882d06e7a06f1153f617b8020f11f4",
+    "case": "replacement-candidates",
+    "mode": "generate",
+    "target": "50aa52a91d9986bd8d753e51b02d3427cf6f16f9",
+    "runId": "40272329867",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "65eb74f2338dfbf93f692eaf67cddbbc92c38e9c",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "7fb4ce3afdc4743ea04df6cc5eca80407850f3cfaf867bf7d6249d409d07dc5c",
+        "views": 42
+      }
+    },
+    "requestSha256": "7ec070798e6cc058904baf1ac838e7649702f8334e39c0db0b07f4a40bf1f361"
+  },
+  "captures": [
+    {
+      "image": "010-private-room-1-nacre-envoy.png",
+      "sha256": "34bac591cbcb8ea306390aa517a3b84989bb1354cea4cce16ff4e09ebcbc0731",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/010-private-room-1-nacre-envoy.png"
+    },
+    {
+      "image": "010-private-room-2-dawn-listener.png",
+      "sha256": "3c22330170ccbb2e8b68b43527cfc49b9307f2436b78eddffe91f239ad43b387",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/010-private-room-2-dawn-listener.png"
+    },
+    {
+      "image": "010-private-room-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/010-private-room-3-outer-witness.png"
+    },
+    {
+      "image": "011-earlier-message-1-1-nacre-envoy.png",
+      "sha256": "f8f539e1c5e16dd70883c7c18bddd02bed5f91755d8062b73267458a6b288050",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/011-earlier-message-1-1-nacre-envoy.png"
+    },
+    {
+      "image": "012-earlier-message-2-1-nacre-envoy.png",
+      "sha256": "0de9edebba40ae4ec8610090efba56c0fc4ceb4cad39aa85a157f52d70d99e5a",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/012-earlier-message-2-1-nacre-envoy.png"
+    },
+    {
+      "image": "013-choose-history-1-nacre-envoy.png",
+      "sha256": "8aa51643ff160f8e80f160d62e07f49a2e207ac3a525a6e58489b8f2bb4ff4a3",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/013-choose-history-1-nacre-envoy.png"
+    },
+    {
+      "image": "014-invite-1-nacre-envoy.png",
+      "sha256": "d8090607c340e53f2b71edbb089da99e0b2b52738d076e2d7a7a426a2a0e9600",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/014-invite-1-nacre-envoy.png"
+    },
+    {
+      "image": "014-invite-2-dawn-listener.png",
+      "sha256": "8d7896e3f7f744ca26b8f8217ad4c2d3a96b36ae48cfe5219c4a8a561a5e0c37",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/014-invite-2-dawn-listener.png"
+    },
+    {
+      "image": "014-invite-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/014-invite-3-outer-witness.png"
+    },
+    {
+      "image": "015-consent-1-nacre-envoy.png",
+      "sha256": "307c13ac86ed6107543be744bf305961834a414b8813ef2a3f337d6ae649a051",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/015-consent-1-nacre-envoy.png"
+    },
+    {
+      "image": "015-consent-2-dawn-listener.png",
+      "sha256": "bf6065277076bdbc8397723d838f6b9719927578b9251f9b94765b800794234f",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/015-consent-2-dawn-listener.png"
+    },
+    {
+      "image": "015-consent-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/015-consent-3-outer-witness.png"
+    },
+    {
+      "image": "016-recover-consent-1-dawn-listener.png",
+      "sha256": "bc11592f2e38e401c8c6af57aeb479f1939c985d9d0c956f1239b5082ef176fe",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/016-recover-consent-1-dawn-listener.png"
+    },
+    {
+      "image": "016-recover-consent-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/016-recover-consent-2-outer-witness.png"
+    },
+    {
+      "image": "017-return-to-chart-1-dawn-listener.png",
+      "sha256": "aea68b064cd3d292301a930262a298fb9fa1c79a71469a921237443b9a351195",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/017-return-to-chart-1-dawn-listener.png"
+    },
+    {
+      "image": "018-review-removal-1-nacre-envoy.png",
+      "sha256": "6757f842f38011c81dd4d20e0a3f0fa7372b8ffdde3df8483792437b8aa5a6fa",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/018-review-removal-1-nacre-envoy.png"
+    },
+    {
+      "image": "019-remove-current-access-1-nacre-envoy.png",
+      "sha256": "4579c6d5ac5b647bad21d6d03a0c441511be3b1425689bd07b95d2dd3f973c63",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/019-remove-current-access-1-nacre-envoy.png"
+    },
+    {
+      "image": "019-remove-current-access-2-dawn-listener.png",
+      "sha256": "4f2c0ceb59c1f7ccc30194ed3590d415547b4427d819e955824bfd122e74e45b",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/019-remove-current-access-2-dawn-listener.png"
+    },
+    {
+      "image": "019-remove-current-access-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/019-remove-current-access-3-outer-witness.png"
+    },
+    {
+      "image": "020-message-after-removal-1-nacre-envoy.png",
+      "sha256": "1923d094f9b2b69ef406c8fa2cfbb5d1184500597e6c85a68adec988a1ba00e9",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/020-message-after-removal-1-nacre-envoy.png"
+    },
+    {
+      "image": "020-message-after-removal-2-dawn-listener.png",
+      "sha256": "4f2c0ceb59c1f7ccc30194ed3590d415547b4427d819e955824bfd122e74e45b",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/020-message-after-removal-2-dawn-listener.png"
+    },
+    {
+      "image": "020-message-after-removal-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/020-message-after-removal-3-outer-witness.png"
+    },
+    {
+      "image": "021-recover-retained-history-1-dawn-listener.png",
+      "sha256": "4fac41e8647712161b4e0add962916abaafb0380e1be8c924f673a68fad8a97a",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/021-recover-retained-history-1-dawn-listener.png"
+    },
+    {
+      "image": "021-recover-retained-history-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/021-recover-retained-history-2-outer-witness.png"
+    },
+    {
+      "image": "022-leave-retained-history-1-dawn-listener.png",
+      "sha256": "9297101c3a6c73b1a13a3eac7381b29215a007aa7f9ae705253e8b4f6b77b089",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/022-leave-retained-history-1-dawn-listener.png"
+    },
+    {
+      "image": "023-save-private-browser-draft-1-nacre-envoy.png",
+      "sha256": "d884c9ee4d8a510d70001214ae4d747aacb850316c5e8aadd4b29b52367bc3b0",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/023-save-private-browser-draft-1-nacre-envoy.png"
+    },
+    {
+      "image": "024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "sha256": "3db97ad2e1136239547089c471739760844fc085865a08dd64e815194aea39b3",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/024-recover-draft-in-two-tabs-1-nacre-envoy.png"
+    },
+    {
+      "image": "024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "sha256": "3db97ad2e1136239547089c471739760844fc085865a08dd64e815194aea39b3",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "sha256": "096206ffc827a4dfa1547e328333466aaf46a86205cc71f5e629f662d002645b",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/025-preserve-conflicting-draft-1-nacre-envoy.png"
+    },
+    {
+      "image": "025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "sha256": "ffafa105f884200d06ebbdd0917262af652c961176bac25fd79a33ad0ead03fc",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "d0ec08bd7380facbb8629cc609261a0544c7fb797f23b4cdfda169ac4ab60c2b",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/026-choose-saved-draft-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "sha256": "1e0acae37a4e85d3e30eaa0b33bcf8891bdf4baf889afc3e7dac8342a87f2d93",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "027-send-recovered-draft-once-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/027-send-recovered-draft-once-2-outer-witness.png"
+    },
+    {
+      "image": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "5d5a2708cf21160b1ded4669cb037664520afc76430d9488504eebfc5fa0287d",
+      "comparison": "identical",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/028-recover-cleared-draft-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "029-prepare-replacement-choice-1-nacre-envoy.png",
+      "sha256": "1eacb2512a0d08b9636961b9bd2167f331d1e15c31a0e25acd56a86b7b7c1f2e",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/029-prepare-replacement-choice-1-nacre-envoy.png"
+    },
+    {
+      "image": "030-review-competing-replacement-1-nacre-envoy.png",
+      "sha256": "41de2a3316c6f882acdd43a70cd7a567dead3ccc460e472143fd8f5aee0009d7",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/030-review-competing-replacement-1-nacre-envoy.png"
+    },
+    {
+      "image": "029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+      "sha256": "545e2f6745f03fefc52e376440ee62a07177111a9e7c11df523117cfd3dc8c81",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+      "sha256": "58b01deb81965ad31b5574c4223552e5ba051256200eb024dc7a215bec2d096f",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/030-review-competing-replacement-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+      "sha256": "dad8002bb04d8be6b26cf5db887850cfb4439eb590b25d265ea265c3e3eef53e",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-1-nacre-envoy.png",
+      "sha256": "dad8002bb04d8be6b26cf5db887850cfb4439eb590b25d265ea265c3e3eef53e",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/032-recover-chosen-local-proposal-1-nacre-envoy.png"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+      "sha256": "dad8002bb04d8be6b26cf5db887850cfb4439eb590b25d265ea265c3e3eef53e",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/desktop/032-recover-chosen-local-proposal-3-outer-witness.png"
+    }
+  ]
+}

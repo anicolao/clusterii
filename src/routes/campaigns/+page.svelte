@@ -816,7 +816,7 @@
           </h1>
           <p>
             {access === "signed-out"
-              ? "Sign in and save your identity to continue."
+              ? "Sign in to access your campaigns."
               : access === "restricted"
                 ? "Campaign testing is limited to developer accounts. Public campaigns open with secure encryption and approved rules."
                 : "Checking your account’s campaign access."}
