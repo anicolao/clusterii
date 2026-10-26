@@ -192,6 +192,11 @@ test("ordinary observers recover acquired and last-seen fleet contacts", async (
     await expect(
       contacts.getByRole("article", { name: "Selected fleet contact" }),
     ).toContainText(`Observed tick ${missedTick - 1}`);
+    // The last-seen tick is already visible before the requested history page
+    // arrives. Wait for its acknowledgement before enumerating panel controls.
+    await expect(
+      contacts.getByRole("button", { name: "Refresh observations", exact: true }),
+    ).toHaveCount(0);
     await evidence("last-seen");
     await contacts.getByRole("button", { name: "Back to galaxy" }).click();
     await expect(open).toBeFocused();
