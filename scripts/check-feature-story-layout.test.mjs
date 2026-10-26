@@ -3,12 +3,13 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
   featureRoot,
+  featureSpec,
   storySnapshotName,
   baselineDirectory,
   outputDirectory,
   archiveDirectory,
 } from "../tests/e2e/helpers/story-paths.mjs";
-import { featureNarrative } from "../tests/e2e/helpers/feature-narrative.mjs";
+import { featureNarrative, featureNarratives } from "../tests/e2e/helpers/feature-narrative.mjs";
 import { storyViolations } from "./check-story-policy.mjs";
 import { renderTelemetryPlugin } from "../tests/e2e/helpers/render-telemetry-plugin.mjs";
 test("migrated and legacy paths remain separate and share one fixture implementation", () => {
@@ -151,7 +152,7 @@ test("same step IDs cannot disguise mixed spec or changed acknowledgement/view c
 });
 
 test("Playwright comparison and manual renderer preflight resolve the same exact baseline path", () => {
-  for (const id of ["live-fleet-travel", "commander-identity"])
+  for (const id of ["live-fleet-travel", "selected-history-consent", "commander-identity"])
     for (const viewport of ["phone", "desktop", "large", "short"]) {
       const name = storySnapshotName(
         id,
@@ -172,4 +173,21 @@ test("Playwright comparison and manual renderer preflight resolve the same exact
       "{testDir}/{arg}{ext}",
     ),
   );
+});
+
+const historyFour = () => four().map(s => ({...s, id: "selected-history-consent", source: {...s.source, spec: featureSpec("selected-history-consent")}}));
+test("separate feature stories require complete matching four-size source and claims", () => {
+  const history = historyFour();
+  assert.match(featureNarrative(history), /selected-history-consent/);
+  assert.equal(featureNarratives([...four(), ...history]).length, 2);
+  for (const mutate of [
+    s => s.pop(),
+    s => s[1].id = "live-fleet-travel",
+    s => s[1].source.spec = featureSpec("live-fleet-travel"),
+    s => s[1].source.specSha256 = "c".repeat(64),
+    s => s[1].steps[0].views[0].verifications = ["Unproved foreign-read denial"],
+  ]) { const h=historyFour(); mutate(h); assert.throws(() => featureNarrative(h)); assert.throws(() => featureNarratives([...four(), ...h])); }
+  assert.equal(outputDirectory("selected-history-consent", "phone", "linux-arm64"), "test-results/stories/009-selected-history/stories/selected-history-consent/phone/linux-arm64");
+  assert.equal(archiveDirectory("selected-history-consent", "phone", "linux-arm64"), "tests/e2e/009-selected-history/stories/selected-history-consent/phone/linux-arm64");
+  assert.deepEqual(storyViolations(readFileSync("tests/e2e/009-selected-history/selected-history.spec.ts", "utf8"), "../helpers/fixtures"), []);
 });

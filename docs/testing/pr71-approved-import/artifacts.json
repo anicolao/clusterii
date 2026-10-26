@@ -1,0 +1,186 @@
+[
+  {
+    "viewport": "phone",
+    "artifactId": 12624681983,
+    "bytes": 1567443,
+    "sha256": "b5bd22a157353ade6c97d76e5f4ddd1f44010f2156f1f796f27dcaeb78230fa2",
+    "crc": "passed",
+    "source": {
+      "commit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "dirty": true,
+      "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
+      "specSha256": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5"
+    },
+    "executor": {
+      "requestId": "history-candidates-20261026-01",
+      "sourceCommit": "d95b82188edab58502a8ebb1df6e54f42ea32789",
+      "executorCommit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "case": "history-candidates",
+      "mode": "generate",
+      "target": "454d4185d77c75fcb2c6806427abc3b89f88bff4",
+      "runId": "40261212475",
+      "attempt": 1,
+      "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+      "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+      "featureReferenceTree": "a46644b05d9b4ae4556d6cf02e0c93cde8044850",
+      "specs": {
+        "history": {
+          "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+          "title": "Selected history reaches only a consenting commander and survives reload",
+          "story": "selected-history-consent",
+          "sha": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5",
+          "views": 25
+        }
+      },
+      "requestSha256": "5c32d3f55e751fc759c3b4046116deeb40a8547e141c146b3807e5ae6dd0d63c"
+    },
+    "outcome": {
+      "family": "history",
+      "viewport": "phone",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 25
+    }
+  },
+  {
+    "viewport": "desktop",
+    "artifactId": 12624960472,
+    "bytes": 10920653,
+    "sha256": "ba01b7e9e782261474801a7bae29ebee45b375d46b04beafab0a0b07d2c27b3f",
+    "crc": "passed",
+    "source": {
+      "commit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "dirty": true,
+      "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
+      "specSha256": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5"
+    },
+    "executor": {
+      "requestId": "history-candidates-20261026-01",
+      "sourceCommit": "d95b82188edab58502a8ebb1df6e54f42ea32789",
+      "executorCommit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "case": "history-candidates",
+      "mode": "generate",
+      "target": "454d4185d77c75fcb2c6806427abc3b89f88bff4",
+      "runId": "40261212475",
+      "attempt": 1,
+      "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+      "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+      "featureReferenceTree": "a46644b05d9b4ae4556d6cf02e0c93cde8044850",
+      "specs": {
+        "history": {
+          "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+          "title": "Selected history reaches only a consenting commander and survives reload",
+          "story": "selected-history-consent",
+          "sha": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5",
+          "views": 25
+        }
+      },
+      "requestSha256": "5c32d3f55e751fc759c3b4046116deeb40a8547e141c146b3807e5ae6dd0d63c"
+    },
+    "outcome": {
+      "family": "history",
+      "viewport": "desktop",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 25
+    }
+  },
+  {
+    "viewport": "large",
+    "artifactId": 12625095538,
+    "bytes": 53426953,
+    "sha256": "00884d0defb26607f72cd87b90828901859cd405eb8bd911732532babe037803",
+    "crc": "passed",
+    "source": {
+      "commit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "dirty": true,
+      "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
+      "specSha256": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5"
+    },
+    "executor": {
+      "requestId": "history-candidates-20261026-01",
+      "sourceCommit": "d95b82188edab58502a8ebb1df6e54f42ea32789",
+      "executorCommit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "case": "history-candidates",
+      "mode": "generate",
+      "target": "454d4185d77c75fcb2c6806427abc3b89f88bff4",
+      "runId": "40261212475",
+      "attempt": 1,
+      "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+      "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+      "featureReferenceTree": "a46644b05d9b4ae4556d6cf02e0c93cde8044850",
+      "specs": {
+        "history": {
+          "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+          "title": "Selected history reaches only a consenting commander and survives reload",
+          "story": "selected-history-consent",
+          "sha": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5",
+          "views": 25
+        }
+      },
+      "requestSha256": "5c32d3f55e751fc759c3b4046116deeb40a8547e141c146b3807e5ae6dd0d63c"
+    },
+    "outcome": {
+      "family": "history",
+      "viewport": "large",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 25
+    }
+  },
+  {
+    "viewport": "short",
+    "artifactId": 12623794806,
+    "bytes": 7545734,
+    "sha256": "6cc152b3177c102a5cb85a6e3fe6609bc2130d8645be065af70ec40ee39cb2c5",
+    "crc": "passed",
+    "source": {
+      "commit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "dirty": true,
+      "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
+      "specSha256": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5"
+    },
+    "executor": {
+      "requestId": "history-candidates-20261026-01",
+      "sourceCommit": "d95b82188edab58502a8ebb1df6e54f42ea32789",
+      "executorCommit": "3f0a064ec31f0832f83e1c414b4a27b38c3b8cb6",
+      "case": "history-candidates",
+      "mode": "generate",
+      "target": "454d4185d77c75fcb2c6806427abc3b89f88bff4",
+      "runId": "40261212475",
+      "attempt": 1,
+      "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+      "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+      "featureReferenceTree": "a46644b05d9b4ae4556d6cf02e0c93cde8044850",
+      "specs": {
+        "history": {
+          "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+          "title": "Selected history reaches only a consenting commander and survives reload",
+          "story": "selected-history-consent",
+          "sha": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5",
+          "views": 25
+        }
+      },
+      "requestSha256": "5c32d3f55e751fc759c3b4046116deeb40a8547e141c146b3807e5ae6dd0d63c"
+    },
+    "outcome": {
+      "family": "history",
+      "viewport": "short",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 25
+    }
+  }
+]
