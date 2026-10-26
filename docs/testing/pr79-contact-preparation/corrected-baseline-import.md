@@ -1,0 +1,3 @@
+## Supervisor corrected construction baselines imported
+
+Metadata extraction completed24 README/story/renderer files from immutable artifact12658330701. All eight generated story manifests passed; their200 ordered views mapped exactly to individually reviewed hashes before copying. Used the repository promotion command with explicit linux-corrected-all-review.md to import all eight Linux cohorts into010-construction/screenshots. Rehashed all200 destination PNGs against the approved manifest. No historical/obsolete PNGs promoted and no generated walkthrough mislabeled as verification. Next required step is strict pinned-renderer verification of the migrated current source and archive only upon success. PR73 checks remain independently live; no merge.

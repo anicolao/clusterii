@@ -1,0 +1,196 @@
+{
+  "artifact": {
+    "id": 12658330701,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY1ODMzMDcwMQ==",
+    "name": "construction-focus-454d5312613d5f04f17fc75b84840e03a27d4848",
+    "size_in_bytes": 383782759,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12658330701",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12658330701/zip",
+    "expired": false,
+    "digest": "sha256:332c30a3361d1fbdcfabda550f51323e42d600dc2016d60e99b35a1e8dcd6c50",
+    "created_at": "2026-10-26T14:16:56Z",
+    "updated_at": "2026-10-26T14:16:56Z",
+    "expires_at": "2027-01-24T14:02:56Z",
+    "workflow_run": {
+      "id": 40336000578,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr79-construction-focus",
+      "head_sha": "454d5312613d5f04f17fc75b84840e03a27d4848"
+    }
+  },
+  "downloadedRangeBytes": 99539,
+  "etag": "\"0x8DF336BCA75A8DF\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/README.md",
+      "sha256": "8adc4e987dc0c18b984672b5d7c4bf4381a27819d01954c504bab06bf9f0e83d",
+      "bytes": 19885,
+      "crc32": "4bb21c1b"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/renderer.json",
+      "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+      "bytes": 759,
+      "crc32": "66da3120"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/desktop/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/story.json",
+      "sha256": "0cf1ee4fdbf27faad297f775b9daba2ec07faf4ed3a686e8f36bbb36e7302f0b",
+      "bytes": 22141,
+      "crc32": "809b089e"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/large/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/README.md",
+      "sha256": "c4205b3fc971b87d4376e5f4423151798b8facda771a63d98f932fb598ed8291",
+      "bytes": 19883,
+      "crc32": "d817e985"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/large/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/renderer.json",
+      "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+      "bytes": 759,
+      "crc32": "4ece87e2"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/large/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-ordinary/large/linux-arm64/story.json",
+      "sha256": "50a1867af01fb0998547a0f7b21087d22335f3e8775c29a48ebde0831b59f0bd",
+      "bytes": 22139,
+      "crc32": "11680015"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/README.md",
+      "sha256": "6f5a71f356b0fd348f20873e33b71a1d376afd9154e0250e66e9b08eb2dbd7b5",
+      "bytes": 19883,
+      "crc32": "c88b56ff"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/renderer.json",
+      "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5",
+      "bytes": 757,
+      "crc32": "32c44c94"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/phone/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-ordinary/phone/linux-arm64/story.json",
+      "sha256": "8830a3a632fd3fef7d7ed0f790dd5391e8ba407edef9fe355d3a5cb7b105db63",
+      "bytes": 22137,
+      "crc32": "9941930e"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/short/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/README.md",
+      "sha256": "f7599ab65030209be7cc0370b6ede66591a2afc96838276b3503831257aecb5e",
+      "bytes": 19883,
+      "crc32": "21b37b80"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/short/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/renderer.json",
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "bytes": 758,
+      "crc32": "0decb708"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-ordinary/short/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-ordinary/short/linux-arm64/story.json",
+      "sha256": "3e540eb25ad0d5942c0f21cf7f1de4ff5739e39b23ba7683dedaf884e6c7e1a5",
+      "bytes": 22138,
+      "crc32": "a75ab96e"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/desktop/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/README.md",
+      "sha256": "c76aa045b6e29134dea75eeedbb9890d87dd1e8db5f15e0653111d751b2da676",
+      "bytes": 16618,
+      "crc32": "bfeab7b4"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/desktop/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/renderer.json",
+      "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+      "bytes": 759,
+      "crc32": "66da3120"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/desktop/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/story.json",
+      "sha256": "81c1ff63fc76f1a87ab429f0258addae1793941ddae7fc7249104c5a0fea0b00",
+      "bytes": 19158,
+      "crc32": "2fc92000"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/large/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-recovery/large/linux-arm64/README.md",
+      "sha256": "cdf94a2a2cd3388bd22aea5762277da302b64652c7dcff61193ed96d0775f55e",
+      "bytes": 16616,
+      "crc32": "f6c0a76c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/large/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-recovery/large/linux-arm64/renderer.json",
+      "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+      "bytes": 759,
+      "crc32": "4ece87e2"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/large/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-recovery/large/linux-arm64/story.json",
+      "sha256": "89033e7734834035c024294a6451e9b42d23244b12f35a6708e0774937ccd4cc",
+      "bytes": 19156,
+      "crc32": "b88eb7ab"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/phone/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-recovery/phone/linux-arm64/README.md",
+      "sha256": "a903c07bafef414d83277f634c8a3d5ed64a0e744260093552f28fc2eec73bd4",
+      "bytes": 16616,
+      "crc32": "0c5ed5a1"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/phone/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-recovery/phone/linux-arm64/renderer.json",
+      "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5",
+      "bytes": 757,
+      "crc32": "32c44c94"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/phone/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-recovery/phone/linux-arm64/story.json",
+      "sha256": "4bf021fe2796099a93273304e6e79f999444dc36ca8942c60b7261a561c0ced7",
+      "bytes": 19154,
+      "crc32": "e4440293"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/short/linux-arm64/README.md",
+      "entry": "test-results/stories/live-construction-recovery/short/linux-arm64/README.md",
+      "sha256": "70f3d9521e1c17d4c679cb7105bafc301a12095da4f226e3fbc88a86ed9925ae",
+      "bytes": 16616,
+      "crc32": "9039fc24"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/short/linux-arm64/renderer.json",
+      "entry": "test-results/stories/live-construction-recovery/short/linux-arm64/renderer.json",
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+      "bytes": 758,
+      "crc32": "0decb708"
+    },
+    {
+      "path": "/tmp/cluster-pr79-corrected-metadata-review/test-results/stories/live-construction-recovery/short/linux-arm64/story.json",
+      "entry": "test-results/stories/live-construction-recovery/short/linux-arm64/story.json",
+      "sha256": "1a80c4b7ff35b1e17a673b880fb531b6bc4163eda80e10f9a6b878065ef08ed7",
+      "bytes": 19155,
+      "crc32": "e2e6aa1c"
+    }
+  ]
+}
