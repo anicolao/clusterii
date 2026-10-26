@@ -2,9 +2,15 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
-export function storyViolations(source) {
+export function storyViolations(source, fixture = "./story-helpers/fixtures") {
   const errors = [];
-  if (!/from\s+["']\.\/story-helpers\/fixtures["']/.test(source))
+  if (
+    !new RegExp(
+      "from\\s+[\"']" +
+        fixture.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") +
+        "[\"']",
+    ).test(source)
+  )
     errors.push("Import the illustrated story fixture");
   if (!source.includes("TestStepHelper")) errors.push("Use TestStepHelper");
   for (const [pattern, message] of [
@@ -60,9 +66,40 @@ export function checkPolicy(root = process.cwd()) {
       );
   }
   for (const error of helperViolations(
-    readFileSync(resolve(folder, "story-helpers/test-step-helper.ts"), "utf8"),
+    readFileSync(
+      resolve(root, "tests/e2e/helpers/test-step-helper.ts"),
+      "utf8",
+    ),
   ))
     errors.push(`TestStepHelper: ${error}`);
+  const features = resolve(root, "tests/e2e");
+  if (existsSync(features))
+    for (const feature of readdirSync(features).filter((name) =>
+      /^\d{3}-/.test(name),
+    )) {
+      const directory = resolve(features, feature);
+      for (const required of ["README.md", "FIDELITY.md"])
+        if (!existsSync(resolve(directory, required)))
+          errors.push(`${feature}: missing ${required}`);
+      for (const name of readdirSync(directory).filter((name) =>
+        name.endsWith(".spec.ts"),
+      ))
+        for (const error of storyViolations(
+          readFileSync(resolve(directory, name), "utf8"),
+          "../helpers/fixtures",
+        ))
+          errors.push(`${feature}/${name}: ${error}`);
+    }
+  for (const name of ["fixtures", "test-step-helper"]) {
+    const expected = `// Compatibility import for unmigrated stories; implementation lives in e2e/helpers.\nexport * from "../../e2e/helpers/${name}";\n`;
+    if (
+      readFileSync(resolve(folder, `story-helpers/${name}.ts`), "utf8") !==
+      expected
+    )
+      errors.push(
+        `${name}: legacy import must delegate to the single e2e implementation`,
+      );
+  }
   const config = readFileSync(
     resolve(root, "playwright.stories.config.ts"),
     "utf8",
