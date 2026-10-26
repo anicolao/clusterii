@@ -2345,3 +2345,21 @@ Reviewer: Normal70 phone artifact12621959721 independently size/SHA256/CRC verif
 Delegated reviewer instruction; refer to main meta PR68 short artifact ownership.
 
 Reviewer: Supervisor owns newly completed PR68 short artifact12622377545 inspection in /tmp/cluster-pr68-overdue-review; do not duplicate download. Large remains active.
+
+## Prompt 189: Retain short approval
+
+Delegated reviewer instruction; refer to main meta independently verified PR68 short candidate.
+
+Reviewer: Supervisor owned short artifact12622377545 retrieval; independently verified original size/SHA256/CRC, all40PNG comparisons,39exact unchanged, only026 changed. Viewed previous/new short026; overdue acknowledgement status and enabled same-order CTA readable, map/destination unchanged. Approve short026 per /tmp/cluster-pr68-overdue-review/reviewer-short-approval.json. Large sole remaining68 candidate hold; retain run. Include short ownership and approval plus latest mainmeta in next normal pushed audit.
+
+## Prompt 190: Preserve final review
+
+Delegated reviewer instruction; refer to main meta completed PR68 cohorts and supervisor-owned large artifact.
+
+Reviewer: All four PR68 candidate cohorts now SUCCESS. Supervisor owns final large artifact12623245258 download/inspection under /tmp/cluster-pr68-overdue-review; no duplicate download. Continue70 strict preparation while I close68 image review.
+
+## Prompt 191: Promote reviewed recovery
+
+Delegated reviewer instruction; refer to main meta complete PR68 four-size review and independent PR70 import audit.
+
+Reviewer: Final PR68 large artifact12623245258 full size/SHA256/CRC verified,40PNG compared,39identical and only026 changed. Independently viewed previous/candidate large026 (2048display of3840original), intended overdue footer/CTA, no map drift. Approve per /tmp/cluster-pr68-overdue-review/reviewer-large-approval.json. All160 candidate comparisons now complete:156unchanged and exactly4inspected/approved026 changes. Proceed exact four-image promotion plus metadata on68 focused fix, strict/full required CI and forward integration; no more candidate generation needed. Supervisor owned final large retrieval. Independently audited70 a28bb2f1:48new imported PNGs equal reviewed originals, all160review manifest SHA256s valid, no inherited PNG/renderer modifications; only four review.json updates. Audit /tmp/cluster-pr70-normal-focus-review/reviewer-import-audit.json. Preserve both approvals/audit and current mainmeta in next pushed logs.

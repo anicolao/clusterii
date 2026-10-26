@@ -1,0 +1,3 @@
+Prepared one complete four-viewport strict journey,160 images, immutable references, telemetry off, no snapshot updates, retries0 and original budgets. Actual preflight verified160 PNGs and four renderer records; collection exactly one complete story per viewport. Four request/dispatch tests pass. Initial ad hoc node stdin import failed because existing CLI main guard resolves argv[1]="-"; corrected invocation with node -e passed without executable changes.
+
+PR68 complete160 review now approved; prioritize four-image PR68 promotion and bounded strict/full verification. Reconcile that source/reference parent before binding the final PR70 strict request; this preparation has no trigger/request file and is not dispatched.
