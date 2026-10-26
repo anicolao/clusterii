@@ -2620,3 +2620,17 @@ Reviewer PR71 integration review: independently diffed staged009-selected-histor
 Delegated reviewer instruction; refer to latest main meta PR72 preparation handoff while sole PR71 candidate and predecessor checks remain live.
 
 Reviewer continuation:71 candidate40261212475 and68–70required checks remain live; no restarts or duplicate candidates. While waiting, prepare scoped existingPR72 (5655ca32, competing private drafts) source/layout integration on a separate preparation branch based on reviewed71 integration454d4185, preserving PR71 history and all references. Inspect actual source delta and carry selected-history into009 layout without altering original interaction/privacy/recovery assertions. Do not publish72 or generate its candidates before71 review/approved-parent carry-forward; this is independent preparation of existing stack work, not newfeatures. Preserve immutable71 candidate source/executor and leave its run untouched; return to terminalCI failures or71 artifacts when available. Log attributed work and latestmainmeta; no merge.
+
+
+## Prompt 221: Next player journey
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:09 Toronto”.
+
+Reviewer continuation 2026-10-22 04:09 Toronto: #71 b590be6 attached, clean idle and queue empty. Continue the next concrete IMPLEMENTATION_PLAN gap as a small stacked successor based on #71; keep actual player interaction/actions/persistence/authorization and user-story TestStepHelper evidence. Select from the recorded remaining plan gaps without treating proposed rules as approvals; do not stop merely because Linux generation is queued. Preserve #70 draft unresolved raster and all independent visual/hosted gates. Follow the single explicit #70 candidate run when it produces evidence, no duplicate generation. Carry checkpoints through04:09 into attributed committed/pushed logs; no merge.
+
+
+## Prompt 222: Preserve candidate ownership
+
+Delegated reviewer instruction; refer to main meta PR71 phone/desktop artifact ownership and exact PR72 source comparison.
+
+Reviewer:71candidate40261212475 desktop/phone SUCCESS. Supervisor owns download/hash/CRC/comparison and visual review of desktop12624960472 and phone12624681983 under/tmp/cluster-pr71-candidate-review; do not duplicate retrieval or promote. Continue72source preparation and liveCI observation; large/short remain pending. My staged72 comparison previously showed only5relative imports and exact original production component; any formatting delta should be separately evidenced, not assertion weakening.

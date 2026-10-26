@@ -611,13 +611,16 @@
           >{/if}
         <div role="group" aria-label="Conversation acknowledgement">
           <Feedback
-            message={participants &&
-            feedbackKind &&
-            ![
-              "conversation.invite",
-              "conversation.remove",
-              "conversation.close",
-            ].includes(feedbackKind)
+            message={(feedbackKind === "conversation.send" &&
+              message === "Message sent." &&
+              body.length > 0) ||
+            (participants &&
+              feedbackKind &&
+              ![
+                "conversation.invite",
+                "conversation.remove",
+                "conversation.close",
+              ].includes(feedbackKind))
               ? ""
               : message}
             {error}
