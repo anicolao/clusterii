@@ -1,0 +1,961 @@
+[
+  {
+    "time": 53366,
+    "frame": 3,
+    "selected": "s0059",
+    "request": {
+      "action": "overview",
+      "starId": "",
+      "sequence": 0
+    },
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "camera": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0.6196442885790205,
+      -0.7848827655334262,
+      0,
+      0,
+      0.7848827655334262,
+      0.6196442885790205,
+      0,
+      0,
+      19,
+      15.000000000000002,
+      1
+    ],
+    "projection": [
+      1.4520276800044831,
+      0,
+      0,
+      0,
+      0,
+      2.2460367739042155,
+      0,
+      0,
+      0,
+      0,
+      -1.00010000500025,
+      -1,
+      0,
+      0,
+      -0.200010000500025,
+      0
+    ],
+    "canvas": [
+      0,
+      58,
+      1024,
+      662,
+      1024,
+      662
+    ],
+    "dpr": 1,
+    "objects": [
+      {
+        "id": 15,
+        "type": "Mesh",
+        "geometry": "RingGeometry",
+        "parameters": {
+          "innerRadius": 3,
+          "outerRadius": 3.008,
+          "thetaSegments": 128,
+          "phiSegments": 1,
+          "thetaStart": 0,
+          "thetaLength": 6.283185307179586
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2.220446049250313e-16,
+          -1,
+          0,
+          0,
+          1,
+          2.220446049250313e-16,
+          0,
+          0,
+          -0.15,
+          0,
+          1
+        ],
+        "projected": [
+          512,
+          391.8406824953129,
+          0.9918776572695255
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 0.12,
+          "color": "d0b580"
+        }
+      },
+      {
+        "id": 16,
+        "type": "Mesh",
+        "geometry": "RingGeometry",
+        "parameters": {
+          "innerRadius": 6,
+          "outerRadius": 6.008,
+          "thetaSegments": 128,
+          "phiSegments": 1,
+          "thetaStart": 0,
+          "thetaLength": 6.283185307179586
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2.220446049250313e-16,
+          -1,
+          0,
+          0,
+          1,
+          2.220446049250313e-16,
+          0,
+          0,
+          -0.15,
+          0,
+          1
+        ],
+        "projected": [
+          512,
+          391.8406824953129,
+          0.9918776572695255
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 0.12,
+          "color": "d0b580"
+        }
+      },
+      {
+        "id": 17,
+        "type": "Mesh",
+        "geometry": "RingGeometry",
+        "parameters": {
+          "innerRadius": 9,
+          "outerRadius": 9.008,
+          "thetaSegments": 128,
+          "phiSegments": 1,
+          "thetaStart": 0,
+          "thetaLength": 6.283185307179586
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2.220446049250313e-16,
+          -1,
+          0,
+          0,
+          1,
+          2.220446049250313e-16,
+          0,
+          0,
+          -0.15,
+          0,
+          1
+        ],
+        "projected": [
+          512,
+          391.8406824953129,
+          0.9918776572695255
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 0.12,
+          "color": "d0b580"
+        }
+      },
+      {
+        "id": 202,
+        "type": "Mesh",
+        "geometry": "RingGeometry",
+        "parameters": {
+          "innerRadius": 0.2,
+          "outerRadius": 0.23,
+          "thetaSegments": 48,
+          "phiSegments": 1,
+          "thetaStart": 0,
+          "thetaLength": 6.283185307179586
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2.220446049250313e-16,
+          -1,
+          0,
+          0,
+          1,
+          2.220446049250313e-16,
+          0,
+          -6.44202433179508,
+          -0.01676367146554849,
+          5.5452973327460215,
+          1
+        ],
+        "projected": [
+          281.57584687804035,
+          545.052427028711,
+          0.9904769605089059
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "7ee7ff"
+        }
+      },
+      {
+        "id": 288,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.95,
+          0,
+          0,
+          0,
+          0,
+          0.95,
+          0,
+          0,
+          0,
+          0,
+          0.95,
+          0,
+          -5.333466547545124,
+          -0.023047639839710005,
+          -5.414252911179629,
+          1
+        ],
+        "projected": [
+          368.2349626689627,
+          274.83708215529293,
+          0.992848125809707
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "eef4ff",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 289,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.06,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.333466547545124,
+          -0.023047639839710005,
+          -5.414252911179629,
+          1
+        ],
+        "projected": [
+          368.2349626689627,
+          274.83708215529293,
+          0.992848125809707
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "eef4ff"
+        }
+      },
+      {
+        "id": 291,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.5,
+          0,
+          0,
+          0,
+          0,
+          0.5,
+          0,
+          0,
+          0,
+          0,
+          0.5,
+          0,
+          -5.411783702420469,
+          -0.007871245611117862,
+          -5.755223467270077,
+          1
+        ],
+        "projected": [
+          367.1708190266503,
+          268.2426843605725,
+          0.9929001707449187
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "79d9ff",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 292,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.025,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.411783702420469,
+          -0.007871245611117862,
+          -5.755223467270077,
+          1
+        ],
+        "projected": [
+          367.1708190266503,
+          268.2426843605725,
+          0.9929001707449187
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "79d9ff"
+        }
+      },
+      {
+        "id": 294,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          -5.482310490318416,
+          0.029598827761214558,
+          -6.097890757281951,
+          1
+        ],
+        "projected": [
+          366.24316163253957,
+          261.2647369338181,
+          0.9929472694973666
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "ff8b55",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 295,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.025,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.482310490318416,
+          0.029598827761214558,
+          -6.097890757281951,
+          1
+        ],
+        "projected": [
+          366.24316163253957,
+          261.2647369338181,
+          0.9929472694973666
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "ff8b55"
+        }
+      },
+      {
+        "id": 297,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          -5.5452973327460215,
+          -0.01676367146554849,
+          -6.44202433179508,
+          1
+        ],
+        "projected": [
+          365.8730538990552,
+          256.034340122442,
+          0.9930105585711634
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "ffd580",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 298,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.025,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.5452973327460215,
+          -0.01676367146554849,
+          -6.44202433179508,
+          1
+        ],
+        "projected": [
+          365.8730538990552,
+          256.034340122442,
+          0.9930105585711634
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "ffd580"
+        }
+      },
+      {
+        "id": 300,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          -5.6009816171126,
+          -0.015646530062607356,
+          -6.787415187298234,
+          1
+        ],
+        "projected": [
+          365.5123939833569,
+          249.92315063322278,
+          0.9930637172961431
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "eef4ff",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 301,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.025,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.6009816171126,
+          -0.015646530062607356,
+          -6.787415187298234,
+          1
+        ],
+        "projected": [
+          365.5123939833569,
+          249.92315063322278,
+          0.9930637172961431
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "eef4ff"
+        }
+      },
+      {
+        "id": 305,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.5,
+          0,
+          0,
+          0,
+          0,
+          0.5,
+          0,
+          0,
+          0,
+          0,
+          0.5,
+          0,
+          -5.64958861726638,
+          0.029786179442536115,
+          -7.133873313681296,
+          1
+        ],
+        "projected": [
+          365.1658796840087,
+          242.99438502523142,
+          0.9931077539143481
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "79d9ff",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 306,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.025,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.64958861726638,
+          0.029786179442536115,
+          -7.133873313681296,
+          1
+        ],
+        "projected": [
+          365.1658796840087,
+          242.99438502523142,
+          0.9931077539143481
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "79d9ff"
+        }
+      },
+      {
+        "id": 308,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          -5.691332337641753,
+          -0.0091443186330665,
+          -7.481225582918434,
+          1
+        ],
+        "projected": [
+          365.3411495330722,
+          237.8345338494172,
+          0.9931673245154776
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "ff8b55",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 309,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.025,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.691332337641753,
+          -0.0091443186330665,
+          -7.481225582918434,
+          1
+        ],
+        "projected": [
+          365.3411495330722,
+          237.8345338494172,
+          0.9931673245154776
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "ff8b55"
+        }
+      },
+      {
+        "id": 311,
+        "type": "Sprite",
+        "geometry": "BufferGeometry",
+        "world": [
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0,
+          -5.72641628722848,
+          -0.022175420899476685,
+          -7.829313923030829,
+          1
+        ],
+        "projected": [
+          365.5836242123537,
+          232.22997234273578,
+          0.99322119061302
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": false,
+          "depthTest": true,
+          "transparent": true,
+          "opacity": 1,
+          "color": "ffd580",
+          "mapVersion": 1
+        }
+      },
+      {
+        "id": 312,
+        "type": "Mesh",
+        "geometry": "SphereGeometry",
+        "parameters": {
+          "radius": 0.025,
+          "widthSegments": 16,
+          "heightSegments": 16,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -5.72641628722848,
+          -0.022175420899476685,
+          -7.829313923030829,
+          1
+        ],
+        "projected": [
+          365.5836242123537,
+          232.22997234273578,
+          0.99322119061302
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "ffd580"
+        }
+      },
+      {
+        "id": 412,
+        "type": "Mesh",
+        "geometry": "RingGeometry",
+        "parameters": {
+          "innerRadius": 0.28,
+          "outerRadius": 0.3,
+          "thetaSegments": 64,
+          "phiSegments": 1,
+          "thetaStart": 0,
+          "thetaLength": 6.283185307179586
+        },
+        "world": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2.220446049250313e-16,
+          -1,
+          0,
+          0,
+          1,
+          2.220446049250313e-16,
+          0,
+          -6.44202433179508,
+          -0.01676367146554849,
+          5.5452973327460215,
+          1
+        ],
+        "projected": [
+          281.57584687804035,
+          545.052427028711,
+          0.9904769605089059
+        ],
+        "visible": true,
+        "order": 0,
+        "material": {
+          "depthWrite": true,
+          "depthTest": true,
+          "transparent": false,
+          "opacity": 1,
+          "color": "7ee7ff"
+        }
+      }
+    ]
+  }
+]
