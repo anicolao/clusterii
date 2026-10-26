@@ -1,0 +1,24 @@
+{
+  "runId": 40264675463,
+  "createdAt": "2026-10-26T03:33:41Z",
+  "status": "queued at initial API observation",
+  "requestCommit": "3fed71ab7302795aae2f4086e958f8da860cf2ab",
+  "executorSource": "eb6960590a836dc394c5508dfe2c06dfc51f3b1e",
+  "target": "4a8264453ad62788c454fe3f2b8e20829e3c804f",
+  "requestSha256": "670c0683d8106c60b2c0cc74796fe2d67ae223b5de17b68cd5815d802f80e878",
+  "expectedViews": 136,
+  "newViewsRequiringReview": 36,
+  "inheritedViewsRequiringComparison": 100,
+  "active72Published": false,
+  "pr71": {
+    "head": "0de9d151f04791d50ef2cab138bb35d9b44d88f0",
+    "publicationRun": 40264152243,
+    "publication": "success",
+    "completedAt": "2026-10-26T03:33:25Z",
+    "hostedRevisionAnd26Assets": "passed",
+    "application": 40264152240,
+    "strict": 40264152255,
+    "applicationAndStrict": "live"
+  },
+  "predecessors": "PR68\u201370 current application checks success; strict checks still live at latest API observation"
+}
