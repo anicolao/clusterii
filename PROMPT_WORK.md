@@ -855,3 +855,5 @@ Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Integrate prepared PR78 into PR79 preserving exact prompt bodies and all original construction image bytes.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Assert real recovered construction panel focus and attach outline evidence before visual capture without forcing focus.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Preserve verified emergency duplicate-retention proofs and recovered Nix execution before construction focus browser check.
