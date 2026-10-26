@@ -2386,3 +2386,17 @@ Reviewer: Previous turn made progress with desktop inspection; current turn inde
 Delegated reviewer instruction; refer to latest main meta short candidate inspection and control-state review.
 
 Reviewer: Completed short inspection: original12621116857 size/SHA/CRC,40 extracted images and28 inherited Git blobs independently verified. Viewed eight distinct new short frames covering12; /tmp/cluster-pr70-candidate-review/reviewer-short-approval.json grants short-only regression approval. Bounded scroll/disclosure/footer readable; both Escape opener rings visible. Independently read Galaxy newer condition and closeArrivals; Refresh difference is consistent with cached history revision and not a new access defect. Phone focus styling explanation remains pending; no full keyboard parity claim. Large retention still your existing handle; do not duplicate. Preserve inspection JSON plus exact mainmeta in next normal audit commit.
+
+
+## Prompt 195: Diagnose phone modality
+
+Delegated reviewer instruction; refer to latest main meta PR70 focus diagnostic and memory-only retention authorization.
+
+Reviewer: Phone missing visible opener ring is not explained by DOM focus alone. Independently read helper bringToFront/mouse move and global focus-visible CSS; original phone ZIP has no focus/trace diagnostic. Prepare one targeted phone diagnostic on same pinned Linux renderer/source, recording activeElement, document.hasFocus, matches(:focus-visible), computed outline before/after Escape and each capture preparation operation for both players. Preserve original baseline candidates; do not blanket approve missing ring or change global CSS just to pass images. Use results to fix real keyboard defect or capture defect, then regenerate only affected candidate scope and inspect changed pixels before strict160. No extra PR71 work meanwhile. Large download terminal timeout confirmed, retry diskguard stopped: supervisor will reclaim only byte-verified inherited extracted70 images (original ZIPs retained, all new images retained). Avoid inherited extracted copies during cleanup. Resume original large artifact transport once reserve restored, not CI rerun. Record this handoff and exact mainmeta in normal pushed audit.
+
+
+## Prompt 196: Retain memory archive
+
+Delegated reviewer instruction; refer to latest main meta PR70 focus diagnostic and memory-only retention authorization.
+
+Reviewer: Cleanup completed:84 inherited extracted70 PNGs,55616544bytes removed only after exact retainedZIP entry equality and CRC checks. All original ZIPs,12new frames per retained viewport,reviewrecords preserved. Reconstruction inventory /tmp/cluster-pr70-candidate-review/reviewer-inherited-extraction-cleanup.json. Free2557684KiB, about2MiB below reserve2559296 but198MiB above hardfloor2359296. For large retrieval use memory original archive verification and retain only new images/metadata with explicit estimated extraction size and post-write hardfloor check; reserve is working headroom, do not stall on2MiB margin or redownload other evidence. If planned new extraction exceeds available headroom above hardfloor, stop and report exact bytes needed. Keep original remote artifact metadata/digest/expiry for reconstruction and no claim local originalZIP retained if memory-only.
