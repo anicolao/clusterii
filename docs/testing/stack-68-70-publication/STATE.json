@@ -1,0 +1,22 @@
+{
+  "pr68": {
+    "head": "1e3917e2187c0ff9c2b2f8631a111165a6c85d5e",
+    "publicationRun": 40258778657,
+    "publication": "success",
+    "hostedExactRevisionAndAssets": "passed",
+    "requiredApplicationAndStrict": "running at last observation"
+  },
+  "pr69": {
+    "head": "b553978c",
+    "pushed": true,
+    "requiredChecks": "new verification required; no green claim"
+  },
+  "pr70": {
+    "preparedHead": "058c3a6ce6449fc1f7d9a731bcb5da2b64727781",
+    "isolatedStrictRun": 40256911000,
+    "isolatedStrict": "160 exact passed and independently verified",
+    "activePublication": "awaiting serialized PR69 publication boundary"
+  },
+  "noGitHubMerges": true,
+  "noDuplicateIsolatedRuns": true
+}
