@@ -1,0 +1,38 @@
+{
+  "artifactId": 12623348262,
+  "sha256": "90566ded2ec318f2e8bfe677a1dcef722ff9957f02f4a1f76a3db6076a3618c8",
+  "size": 27536786,
+  "outcome": {
+    "family": "route",
+    "viewport": "short",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "verify",
+    "views": 40
+  },
+  "executor": {
+    "requestId": "overdue-route-strict-20261025-01",
+    "sourceCommit": "60aad49abf9dcc16ea557a217015c2d2ec687cd8",
+    "executorCommit": "17fc3dd4ade41f7545fe30cca48d6518755daf56",
+    "case": "overdue-route-strict",
+    "mode": "verify",
+    "target": "122245b2db1a3718cb4b55eff0cdbe2a56dd72b7",
+    "runId": "40257151053",
+    "attempt": 1,
+    "referenceTree": "9541bf24b2b770cc8fd3459c515f30f8276bc262",
+    "specs": {
+      "route": {
+        "file": "tests/browser/fleet-route-recovery.story.spec.ts",
+        "title": "Interrupted route commands retain their original choices and identity",
+        "story": "interrupted-fleet-route",
+        "sha": "b64efc74277034432dd05b6ba2a5676859a47d7b6c629453a2ad53370a014c0f",
+        "views": 40
+      }
+    },
+    "requestSha256": "509ee143b3a3f5e2aa77b74ee1920fff1c121f3782f1844889585c1ea06ae9e0"
+  },
+  "verifiedExactPngs": 40,
+  "wholeArchiveSha256CRCVerified": true
+}
