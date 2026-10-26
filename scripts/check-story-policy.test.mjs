@@ -51,7 +51,13 @@ test("reviewed credit maintenance changes only one exact pending accessible name
   const entry = JSON.parse(
     readFileSync("docs/testing/legacy-browser-tests.json", "utf8"),
   )["credit-offers.spec.ts"];
-  const source = readFileSync("tests/browser/credit-offers.spec.ts", "utf8");
+  let source = readFileSync("tests/browser/credit-offers.spec.ts", "utf8");
+  const readiness = entry.readinessMaintenance;
+  assert.equal(readiness.kind, "exact-real-initialization-readiness");
+  assert.equal(readiness.previousSha256, "b53b2b5b41598c94f5a9c2ea879d57d730a9d16182e86a326906e11f02c8a6e3");
+  assert.equal(source.split(readiness.to).length - 1, 1);
+  source = source.replace(readiness.to, readiness.from);
+  assert.equal(createHash("sha256").update(source).digest("hex"), readiness.previousSha256);
   const change = entry.maintenance;
   assert.equal(change.kind, "exact-accessible-name-only");
   assert.equal(

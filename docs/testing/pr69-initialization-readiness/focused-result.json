@@ -1,0 +1,11 @@
+{
+  "exit": 0,
+  "floorBreach": false,
+  "initialFreeKiB": 13051668,
+  "minimumFreeKiB": 12920180,
+  "command": [
+    "bash",
+    "-c",
+    "bun run --cwd functions build && bun x firebase emulators:exec --project demo-clusterii --only auth,database,firestore,functions 'bun x playwright test tests/browser/credit-offers.spec.ts --grep \"ordinary commanders offer, recover and settle exact private credits mock$\" --workers=1 --retries=0 --max-failures=1 --output=/tmp/cluster-pr69-readiness-focused/results'"
+  ]
+}

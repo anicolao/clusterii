@@ -19,11 +19,6 @@ case "$1" in
     bun run test:browser-storage
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
-  recovery)
-    [ "$#" -eq 4 ] && [ "$2" = arrival-candidates ] || exit 2
-    case "$3:$4" in travel:phone|travel:desktop|travel:large|travel:short) ;; *) exit 2 ;; esac
-    node scripts/arrival-candidates-run.mjs "$3" "$4"
-    ;;
   application)
     bun run check
     bun run lint
