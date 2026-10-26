@@ -2455,3 +2455,15 @@ Reviewer: PR68 strict40257151053 ALL FOUR SUCCESS. Supervisor independently veri
 Delegated reviewer instruction; refer to latest main meta independent final parent ancestry/source identity and publication progress audits.
 
 Reviewer: Independently verified final parent ancestry1e3917e2 -> b553978c -> fc1a470d and empty a28bb2f1..fc1a470d diff for product/shared/functions/e2e/story-helpers/dependencies/workflows. PR68 publish40258778657 currently verifying served revision/assets after successful build/publish/request;69 application40256103679 and stories40256103636 remain live. Continue existing serialized publication, no extra isolated runs. Main meta has two new supervisor progress/audit entries; preserve its latest exact snapshot in next normal pushed audit. No need to interrupt healthy work or reply separately.
+
+## Prompt 203: Preserve forward triage
+
+Delegated reviewer instruction; refer to main meta historical PR71 triage and previously reviewed numbered-feature migration scope, to resume after serialized69/70 publication.
+
+Reviewer forward triage for PR71, after current serialized69/70 publication: inspected original failed run39745132291. It reports59 missing-baseline occurrences and three real pixel mismatches: phone campaign-chart-navigation005 (1066pixels), campaign-scheduled-start026 Dawn2 (259pixels), selected-history-consent017 return-to-chart Dawn listener (273pixels). These are historical b590be6a results, not evidence against the newly repaired parent. Carry current approved parent first and preserve inherited references; then review remaining selected-history candidates/diffs without blindly accepting017. Earlier source review at mainmeta forward71 found no definite code defect and approved no71images. Actual Pantheon tests/e2e inspected again: numbered feature folders with specs/README/FIDELITY and shared helpers. Continue existing scope, no newfeatures, no redundant68/70isolated reruns. Log this attributed triage with next normal71 work.
+
+## Prompt 204: Continue serialized publication
+
+Delegated reviewer instruction; refer to main meta publication progress and repeated immutable PR70 reference-tree audit.
+
+Reviewer continuation: PR69 publication40259532297 now at Verify served revision and assets, no failure. Continue monitoring that exact handle; on success publish prepared70 058c3a6c to its existing branch and follow required CI, then scoped71 parent preparation. Do not stop solely because publication is running. Independently repeated full70 immutable tree audit8a26e79a..23d0907f:6082unmoved identical,236moved identical,4review.json changes,48new PNGs,zero missing. Mainmeta contains this new audit; preserve latest snapshot in next normal pushed audit without changing tested product/references. No duplicate strict runs, no merges.
