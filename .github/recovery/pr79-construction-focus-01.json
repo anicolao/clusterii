@@ -1,6 +1,6 @@
 {
-  "sourceCommit": "5e92b313cee66ad5cf606cc7b1f1d46796c7d4e3",
+  "sourceCommit": "bb1f4fd94733149d20deca93ea2a65461e78239b",
   "filter": "Live construction ",
   "purpose": "Observe actual recovery focus and generate review candidates; no baseline acceptance.",
-  "reason": "Verify explicit inset construction focus outline and all four viewport recovery journeys."
+  "reason": "Verify focus border painted above dialog contents after computed outline did not render visibly."
 }

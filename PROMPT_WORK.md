@@ -909,3 +909,11 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Fix clipped browser-default construction dialog focus with explicit inset cyan outline and live recovery assertions.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Dispatch inset construction focus verification from prepared5e92b313 with source guard and explicit style assertions.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review ten exact Linux phone help captures and record checked inset focus fix plus live run40332542039.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect eight unique short/large Linux help renders and verify exact hash coverage for remaining20 help captures.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review seven Linux phone states and fix construction focus boundary overpaint after rejecting computed-style-only acceptance.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Dispatch construction focus overlay verification from preparedbb1f4fd9 after rendered screenshot rejected outline-only fix.
