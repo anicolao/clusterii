@@ -2679,8 +2679,31 @@ Reviewer: PR71 strict40262969648 ALL FOUR SUCCESS. Independently verified origin
 
 
 
-## Prompt 228: Import reviewed drafts
+## Prompt 228: Prepare explicit replacement
+
+Delegated reviewer instruction; refer to latest main meta existing PR73 preparation handoff and original source review.
+
+Reviewer continuation: candidate72 run40264675463 and required68-71 checks are live, no restarts. While waiting, prepare existingPR73 original17250d57 (explicit competing draft replacement) on separate preparation branch based on reviewed72 integration4a826445. Mainmeta records independent full143-line original source review. Migrate its exact story into009 structure, retain original assertions/budgets and every inherited reference, no new features. Do not publish73 or generate/promote its candidates before72 reviewed parent carry-forward. Preserve immutable72 source/request and return to actionable terminalCI/candidate artifacts when ready. Record attributed instruction/continuations and latest mainmeta, commit/push preparation and evidence. Supervisor will own72 artifact review when available; no duplicate downloads or merges.
+
+
+## Prompt 229: Recovery continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:29 Toronto”.
+
+Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle. Continue next concrete IMPLEMENTATION_PLAN gap in a small successor based on #72, preserving user-story TestStepHelper and authoritative privacy/recovery/concurrency evidence. New #69 verify job119679444037 log /tmp/cluster69-0429-failure.log has phone1066/259/273-pixel mismatches plus short1994 identity recurrence and missing Linux baselines; classify actual affected frames before assuming inherited causes or promoting anything. Keep one explicit #70 generation run, no duplicates. Carry checkpoint into attributed committed/pushed logs. #70 original mismatch and independent visual/hosted gates remain open; no merge.
+
+
+
+
+## Prompt 230: Retain desktop approval
+
+Delegated reviewer instruction; refer to latest main meta scoped PR72 desktop approval and immutable PR73 source/reference audit.
+
+Reviewer: PR72 desktop candidate40264675463 all nine new captures individually inspected and approved for regression references; 25 inherited byte-identical. Exact hashes and bounded-history clipping/existing design-gap notes in /tmp/cluster-pr72-candidate-review/reviewer-desktop-approval.json. Remaining phone/large/short review pending; do not promote partial set or duplicate downloads. Independently verified immutable PR73 335ad6c5 entire story matches original17250d57 after five path replacements; all product and screenshot paths unchanged. Preserve approval and latest mainmeta in next normal audit commit/push. Keep existing live checks running; no merges.
+## Prompt 231: Import reviewed drafts
 
 Delegated reviewer instruction; refer to latest main meta complete PR72 regression approval and strict verification handoff.
 
 Reviewer: PR72 complete136 candidate review APPROVED for regression import:100 inherited PNGs exact and all36new individually inspected across phone/desktop/large/short. Exact hashes/provenance and per-viewport notes in /tmp/cluster-pr72-candidate-review/reviewer-all-viewports-approval.json plus four reviewer approvals. Phone40267745100 executor356b8d51 sourcea5b2d36e verified same original product/story/runner/reference inputs; archive API size/SHA256/CRC valid, passed34 exit0 referenceDiff0. Import ONLY approved36 new refs plus review metadata on reviewed72 target4a826445; preserve all100inherited and no product/story/runtime drift. Commit/push attributed evidence/logs, then single bounded strict136 verification with snapshot updates forbidden and all four viewports. No regenerating accepted candidates, no premature whole-PR approval, no merges. Existing design gaps remain separately recorded, not production-fidelity signoff. Supervisor owns independent strict artifact review.
+
+

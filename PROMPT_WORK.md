@@ -574,12 +574,28 @@ Prompt 221 | 2cc2f6ba41d479c6b06003c5eb00885c1e79fc3855fac6b492d15a72d59d0936 | 
 
 Prompt 227 | 60f8aa662212c6744cc7b52152ba762fd40e67dd05bb76eb11a6ce96fc0a5361 | Carry exact published PR71 parent and100 reviewed Linux references into prepared PR72 without changing its original residual.
 
+Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | Review thirty-two replacement candidates and inspect four retained Linux mismatches without altering inherited baselines
+
+Prompt 71 | 9668dd612a5e374ec65f69a19bf37bd124cec105cff24d74c440ef8dc0981456 | Archive four exact replacement journeys and record scoped acceptance with Linux diagnosis and outstanding provider gates
+
+Prompt 229 | faad1c53a0fe1743ecc37484fbc5fc07b35e1ef0423c0c3fa2f597c544b0d22a | Integrate exact original PR73 replacement assertions into feature009 while preserving parent references and both histories.
+
 Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | Record independent strict136 artifact verification and publish the reviewed PR72 baseline repair without runner plumbing.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Integrate published PR72 reviewed references into PR73 preparation while preserving both complete prompt histories.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Import all32 individually reviewed PR73 replacement baselines preserving136 inherited images and immutable source.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Bind PR73 reviewed inventory to explicit viewport/image fields and original renderer-bearing story manifests.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Publish independently verified PR73 strict168 acceptance preserving approved source and all image hashes.
 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Normalize fleet-route contact entropy identities and verify real persisted scans and authorized player projections.
 Prompt 223 | 17476a1d45e908a0c501c2fdc1c10d83ad903c188e3c577e8143b812a6af1275 | Integrate PR70 deterministic contact inputs into PR71 without changing reviewed references.
 Prompt 223 | 17476a1d45e908a0c501c2fdc1c10d83ad903c188e3c577e8143b812a6af1275 | Preserve PR71 contact-fix integration checkpoint and authoritative stack check inventory.
-
 Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | Integrate prepared PR71 contact fix into PR72 while preserving all reviewed image references.
-
 Prompt 228 | 4b57a8f5e05d86ace1c6d33d9e9af2a4696fbdbb12e1c1f4bb94eceff709e255 | Record PR72 contact integration and preliminary twenty-capture PR79 construction-help review.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Integrate prepared PR72 contact fix into PR73 while preserving all reviewed image references.
+
+Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Record identical PR76 contact-marker failure, safe evidence retention and complete PR79 Darwin reference inventory.

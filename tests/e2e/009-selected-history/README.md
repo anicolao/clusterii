@@ -7,3 +7,5 @@ Generated walkthrough ownership: `stories/selected-history-consent/README.md`, o
 The shared fixture/step helper remains authoritative under `../helpers/`. Remaining flat browser stories are unmigrated, not claimed compliant.
 
 Existing PR72 extends this same journey through durable unsent-draft save/reload, two authenticated tabs, explicit competing-draft choice, one acknowledged send and cleared-draft recovery. Canonical equality and private projections are checked before sending; exactly one revision and message sequence are checked afterward. It adds nine views per size, with no separate duplicate spec. PR71 and PR72 Linux candidate review remain separate gates.
+
+Existing PR73 extends the same authoritative journey with explicit replacement of a competing saved draft: both remedies stay visible, keyboard replacement receives durable acknowledgement, and both tabs recover the chosen unsent text. Complete canonical state and private projections remain unchanged throughout. Eight additional views per size are pending separate Linux review.
