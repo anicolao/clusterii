@@ -419,3 +419,5 @@ Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Verify route warning keyboard accessibility and discard focus across four sizes and both motion settings with fonts loaded
 
 Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Record eight inspected desktop discard differences and verified duplicate-archive retention with partial extraction limits
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Complete candidate retrieval and renderer provenance; inspect short route differences while retaining unrelated stellar holds

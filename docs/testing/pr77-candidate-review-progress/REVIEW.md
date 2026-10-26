@@ -1,0 +1,9 @@
+# PR77 candidate review progress
+
+Desktop now complete44:36 inherited exact,4 changed+4new individually reviewed in prior turn. Short complete44:35 inherited exact,5changed+4new. All9 short new/changed and5 corresponding old images individually inspected this turn. Large complete44 comparison:36exact,4changed+4new; eight large images still require visual review.
+
+Desktop/short/large archives independently verified in memory against GitHub size/SHA256 and allZIP CRC. Exact request/source/executor/spec binding,44 views, no updates/retries, success/referenceDiffExit0, and pinned Linux ARM64 renderer config verified. Nonimage evidence retained. Unchanged PNGs compared directly to Git0701e49a and not redundantly extracted; inventory paths may therefore intentionally not exist locally for unchanged images. The complete comparison supersedes desktop partial39 evidence.
+
+Short discard controls, empty-draft confirmation, search focus and peer privacy visually match the intended feature. New control pushes secondary warning/summary below bounded scroll edge; actual component keyboard access already verified in e6287d4e, not full concept-fidelity approval. Short final peer034 differs by7 raw pixels at x364–366,y251–253 in stellar core. Do not approve or import this unrelated variation. Phone analogous6pixels remains held. No cause inferred.
+
+Recovered additional duplicate archives from67/68 only after original API SHA/size, allCRC and everyPNG exact retained Git blob verification; all nonimages retained, proofs bundled. Disk reserve last2,706,336KiB. No product or baseline changes, no CI reruns. Next: inspect eight large images, finish phone renderer proof and pending/busy interaction coverage, then import only reviewed feature changes retaining original stellar references before fresh strict verification.
