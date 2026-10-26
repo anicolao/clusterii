@@ -512,6 +512,22 @@ for (const interrupted of [false, true])
             spec: "The construction panel returns with the original training camp selected and pending commitment disabled.",
             check: async () => {
               await expect(panel(owner)).toBeVisible();
+              await expect(panel(owner)).toBeFocused();
+              await info.attach("recovered-construction-focus", {
+                body: JSON.stringify(
+                  await panel(owner).evaluate((element) => {
+                    const style = getComputedStyle(element);
+                    return {
+                      focused: document.activeElement === element,
+                      focusVisible: element.matches(":focus-visible"),
+                      outlineStyle: style.outlineStyle,
+                      outlineWidth: style.outlineWidth,
+                      outlineColor: style.outlineColor,
+                    };
+                  }),
+                ),
+                contentType: "application/json",
+              });
               await expect(
                 panel(owner).getByRole("radio", { name: /Training camp/ }),
               ).toBeChecked();
