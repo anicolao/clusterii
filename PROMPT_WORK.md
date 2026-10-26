@@ -224,3 +224,5 @@ Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | R
 Prompt 51 | 922b38cfa73ba81c249678c822ee2fc7a6ea49c8f6160969914b4db800dfa6e9 | Hold recovered briefing visits over HTTP long polling and verify canonical state before release
 
 Prompt 51 | 1e18c671942bb6d6ffddc1f455f37812b4bfd4473afa023474a81b0e3242a1d7 | Carry independently approved parent reference updates forward, preserving both histories and all existing production/assertion semantics.
+
+Prompt 51 | 1e18c671942bb6d6ffddc1f455f37812b4bfd4473afa023474a81b0e3242a1d7 | Record independently inspected PR72 full-run stellar-core comparisons without changing approved references
