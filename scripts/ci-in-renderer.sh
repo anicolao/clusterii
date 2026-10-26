@@ -19,6 +19,11 @@ case "$1" in
     bun run test:browser-storage
     if [ "$2" = verify ]; then bun run test:stories; else bun run test:stories:generate; fi
     ;;
+  recovery)
+    [ "$#" -eq 4 ] && [ "$2" = core-probe ] || exit 2
+    case "$3:$4" in draft:desktop) ;; *) exit 2 ;; esac
+    node scripts/core-probe-run.mjs "$3" "$4"
+    ;;
   application)
     bun run check
     bun run lint

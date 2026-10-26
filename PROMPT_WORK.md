@@ -398,3 +398,5 @@ Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Import31 individually reviewed discard images; retain145 inherited images including rejected stellar variants and align story numbering
 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Prepare controlled postcapture star-core visibility probe to test a missing-core mechanism without changing acceptance pixels.
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Bind the core visibility mechanism probe to one desktop journey and exact source and reference trees.
