@@ -1,0 +1,70 @@
+[
+  {
+    "name": "phone",
+    "motion": "reduce",
+    "details": {
+      "x": 0,
+      "y": 262.46875,
+      "width": 393,
+      "height": 486.140625
+    },
+    "warning": {
+      "x": 20,
+      "y": 620.859375,
+      "width": 353,
+      "height": 96
+    },
+    "keyboardEndExposesEntireWarning": true
+  },
+  {
+    "name": "short",
+    "motion": "reduce",
+    "details": {
+      "x": 720,
+      "y": 58,
+      "width": 560,
+      "height": 550.609375
+    },
+    "warning": {
+      "x": 744,
+      "y": 498.390625,
+      "width": 512,
+      "height": 72
+    },
+    "keyboardEndExposesEntireWarning": true
+  },
+  {
+    "name": "phone",
+    "motion": "no-preference",
+    "details": {
+      "x": 0,
+      "y": 262.46875,
+      "width": 393,
+      "height": 486.140625
+    },
+    "warning": {
+      "x": 20,
+      "y": 620.859375,
+      "width": 353,
+      "height": 96
+    },
+    "keyboardEndExposesEntireWarning": true
+  },
+  {
+    "name": "short",
+    "motion": "no-preference",
+    "details": {
+      "x": 720,
+      "y": 58,
+      "width": 560,
+      "height": 550.609375
+    },
+    "warning": {
+      "x": 744,
+      "y": 497.390625,
+      "width": 512,
+      "height": 72
+    },
+    "keyboardEndExposesEntireWarning": true
+  }
+]
