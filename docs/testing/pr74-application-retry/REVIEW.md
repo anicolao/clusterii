@@ -1,0 +1,5 @@
+## Supervisor PR74 application acknowledgement failure
+
+2026-10-27: application run40437801245 attempt1 failed at03:16:06. One browser test failed,35 passed,3 skipped. conversations.spec.ts:67 expected Identity saved but saw Sending your identity… after5000ms during commander setup, before conversation actions. Production source/functions and this test are identical to green73; no screenshot mismatch reported by this application failure. This does not prove an infrastructure flake or a successful identity save. Retained full failed-step log; immutable browser-evidence artifact12707561851 size414748611 remains available for trace inspection if reproduced.
+
+Requested one failed-job rerun at the same a36147f5 head without changing assertions, timeouts or baselines. Exact illustrated verification40437801171 remains running and was not restarted. If acknowledgement failure repeats, inspect the failed trace and service delivery before another rerun. PR75 stays unpublished until74 is green. tmux clusterii still unavailable; no agent handoff queued. No merges.
