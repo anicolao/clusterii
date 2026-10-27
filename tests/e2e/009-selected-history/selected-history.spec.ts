@@ -70,6 +70,7 @@ test("Selected history reaches only a consenting commander and survives reload",
     active: () => boolean;
   }[] = [];
   const sendWrites: { p: string; d: Record<string, unknown> }[] = [];
+  const emails: string[] = [];
   const errors: string[] = [];
   const noErrors = {
     spec: "No viewpoint has an uncaught application error.",
@@ -164,6 +165,7 @@ test("Selected history reaches only a consenting commander and survives reload",
           pages.push(page);
           page.on("pageerror", (error) => errors.push(error.message));
           const email = `consent-${info.project.name}-${i}-${Date.now()}@example.test`;
+          emails.push(email);
           await login(page, email);
           await page.getByLabel("Commander name").fill(aliases[i]);
           await button(page, "Save identity").click();
@@ -1384,6 +1386,163 @@ test("Selected history reaches only a consenting commander and survives reload",
         },
       ],
       views: [secondView],
+    });
+    const accountDraft = "A private unsent note for my next session.";
+    const accountBase = await canonical();
+    const accountUid = accountBase.seats[0].uid;
+    const profileBefore = (await db.doc(`profiles/${accountUid}`).get()).data();
+    const accountInvariant = {
+      spec: "Account switching changes no campaign or saved identity and never publishes the unsent draft.",
+      check: async () => {
+        expect(await canonical()).toEqual(accountBase);
+        expect((await db.doc(`profiles/${accountUid}`).get()).data()).toEqual(
+          profileBefore,
+        );
+        for (const seat of [1, 2])
+          expect(JSON.stringify(await published(seat))).not.toContain(
+            accountDraft,
+          );
+      },
+    };
+    const entryUrl = new URL("../", url).href;
+    const signOutCurrent = async () => {
+      await second!.goto(entryUrl);
+      await button(second!, "Your identity").click();
+      await button(second!, "Sign out").focus();
+      await second!.keyboard.press("Enter");
+    };
+    await story.step("save-account-private-draft", {
+      actor: aliases[0],
+      description:
+        "Save a new unsent note before leaving this browser session. Saving a draft is not sending a message.",
+      action: async () => {
+        await composer(second!).fill(accountDraft);
+      },
+      acknowledgement: {
+        spec: "Browser storage acknowledges the exact private draft.",
+        check: async () => {
+          await expect(draftStatus(second!)).toHaveText(
+            "Draft saved on this browser.",
+          );
+          await expect(composer(second!)).toHaveValue(accountDraft);
+        },
+      },
+      verifications: [noErrors, accountInvariant],
+      views: [secondView],
+    });
+    await story.step("sign-out-with-unsent-note", {
+      actor: aliases[0],
+      description:
+        "Use keyboard Sign out on the identity panel. This ends the browser session without publishing or discarding the saved note.",
+      action: signOutCurrent,
+      acknowledgement: {
+        spec: "Entry confirms the signed-out session with Play and no account identity control.",
+        check: async () => {
+          await expect(button(second!, "Play")).toBeVisible();
+          await expect(button(second!, "Your identity")).toHaveCount(0);
+          await expect(panel(second!)).toHaveCount(0);
+        },
+      },
+      verifications: [noErrors, accountInvariant],
+      views: [secondView],
+    });
+    await story.step("other-account-on-same-browser", {
+      actor: aliases[2],
+      description:
+        "Sign into the same browser as the existing uninvolved commander and open this campaign's conversations. This account must not recover the first commander's room or draft.",
+      action: async () => {
+        await login(second!, emails[2]);
+        await expect(second!.getByLabel("Commander name")).toHaveValue(
+          aliases[2],
+        );
+        await second!.goto(url);
+        await open(second!);
+      },
+      acknowledgement: {
+        spec: "The authenticated outsider sees an empty conversation directory and no recovered private composer.",
+        check: async () => {
+          await expect(
+            panel(second!).getByRole("heading", {
+              name: "Begin a conversation",
+              exact: true,
+            }),
+          ).toBeVisible();
+          await expect(panel(second!)).not.toContainText(roomTitle);
+          await expect(panel(second!)).not.toContainText(accountDraft);
+          await expect(composer(second!)).toHaveCount(0);
+          await expect(button(second!, "Retry same command")).toHaveCount(0);
+        },
+      },
+      verifications: [noErrors, accountInvariant],
+      views: [
+        {
+          page: () => second!,
+          player: `${aliases[2]} · same browser`,
+          surface: "game",
+        },
+        view(2),
+      ],
+    });
+    await story.step("end-other-account-session", {
+      actor: aliases[2],
+      description:
+        "Sign out the second account before returning the browser to its original commander.",
+      action: signOutCurrent,
+      acknowledgement: {
+        spec: "The second account has signed out and its private campaign surface is closed.",
+        check: async () => {
+          await expect(button(second!, "Play")).toBeVisible();
+          await expect(button(second!, "Your identity")).toHaveCount(0);
+          await expect(panel(second!)).toHaveCount(0);
+        },
+      },
+      verifications: [noErrors, accountInvariant],
+      views: [
+        {
+          page: () => second!,
+          player: `${aliases[2]} · signed out`,
+          surface: "game",
+        },
+      ],
+    });
+    await story.step("restore-original-account-draft", {
+      actor: aliases[0],
+      description:
+        "Sign back into the original account without saving the identity again. Open its private room and recover the exact unsent note retained on this browser.",
+      action: async () => {
+        await login(second!, emails[0]);
+        await expect(second!.getByLabel("Commander name")).toHaveValue(
+          aliases[0],
+        );
+        await second!.goto(url);
+        await open(second!);
+        await chooseRoom(second!);
+      },
+      acknowledgement: {
+        spec: "Only the original account recovers its private room and unsent note.",
+        check: async () => {
+          await expect(composer(second!)).toHaveValue(accountDraft);
+          await expect(draftStatus(second!)).toHaveText(
+            "Draft saved on this browser.",
+          );
+        },
+      },
+      verifications: [
+        noErrors,
+        accountInvariant,
+        {
+          spec: "The restored composer and commitment remain visible; normal/reduced motion preserve the unsent text.",
+          check: async () => {
+            await expect(panel(second!).locator("footer")).toBeInViewport({
+              ratio: 1,
+            });
+            await second!.emulateMedia({ reducedMotion: "no-preference" });
+            await expect(composer(second!)).toHaveValue(accountDraft);
+            await second!.emulateMedia({ reducedMotion: "reduce" });
+          },
+        },
+      ],
+      views: [secondView, view(2)],
     });
   } finally {
     for (const ctx of contexts) await ctx.close();
