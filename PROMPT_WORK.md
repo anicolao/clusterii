@@ -851,3 +851,5 @@ Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Carry fully green PR77 dependent-route references into prepared PR78 without modifying its contextual-help implementation.
 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Restore the complete waypoint search label and focus outline after contextual-help discard, with eight component checks and story geometry assertions.
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Generate fresh source-bound Linux candidates after the discard label focus correction and stronger story geometry assertions.
