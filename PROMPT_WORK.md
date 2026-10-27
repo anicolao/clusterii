@@ -1025,3 +1025,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Compare short paused recovery, traveling, paused recovery and arrival against predecessors.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Compare short interrupted draft and pending predecessors, recording disclosure scroll boundaries.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Compare short retry and offline acceptance predecessors, preserving scroll-access concerns.
