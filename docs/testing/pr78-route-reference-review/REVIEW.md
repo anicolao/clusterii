@@ -1,0 +1,10 @@
+# PR78 contextual route help regression reference review
+
+Reviewer: Codex supervisor, 2026-10-27.
+Candidate generation run40519949851, artifact12743465915, diagnostic d1369154ef135c8b0687c1a17f2035ec171dc773, product source1a1e6234. Artifact digest reported by GitHub:3495801cb5356a6173a266412c48ce4a4f4909b96ba184bdeb17005251fa86b3. Twelve passed stories across phone, desktop, large and short,496PNG.
+
+Independent comparison evidence retained on audit/recovered-review-checkpoint in docs/testing/pr78-linux-candidate-review. All32desktop,32large,26short changed predecessor pairs,8unique changed phone pairs and24new help captures (22unique) inspected. Large compositions were viewed at2048preview resolution. Of496fresh PNG,494match the first candidate generation byte-for-byte. The two corrected discard captures now have zero decoded RGBA differences from their exact pre-help semantic predecessors; see corrected-discard-bounds.json.
+
+Closed help adds a disclosure after the combat warning; expanded text distinguishes proposed development rules, navigation range and speed, drafts and acknowledged orders, orbit and surface. Short draft and retry panels require scrolling. Six separately labeled actual-component checks demonstrate reverse Tab access from footer to help, Enter expansion and End exposing the full departure explanation in draft/pending/retry under both motion settings. These component scenarios do not establish authenticated recovery; source-bound stories exercise actual services. Source geometry assertions preserve the discard search label and focus outline.
+
+Approve these images solely as regression references for the reviewed contextual-help increment. Existing concept fidelity gaps remain: tall plain right panel and small portrait, weak map route emphasis, and missing explicit origin remaining force quantity compared with UX_DESIGN concept08. This is not high-fidelity design acceptance, release approval or merge permission. Strict no-update verification and full application checks remain required. No pixel tolerance or normalization is authorized.

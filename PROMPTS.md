@@ -3376,3 +3376,8 @@ Reviewer instruction: Import the 32 independently inspected PR74 acknowledgement
 
 
 
+
+
+## Prompt 253: Reviewer route references
+
+Reviewer instruction: Promote the independently reviewed PR78 contextual route help candidates from run40519949851, artifact12743465915, source1a1e6234, preserving source-bound hashes and exact predecessor comparisons. See meta-prompts.md Supervisor PR78 corrected discard bounds and reference preparation. This approves regression references only, not design fidelity or release. Run strict verification without updates before public advancement; never merge.
