@@ -977,3 +977,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Retain PR78 phone discard focus-label clipping regression with before and candidate images; block reference promotion.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record corrected PR78 source-bound Linux candidate run and precise fresh visual review requirements.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify corrected Linux discard captures and 494 unchanged images; retain five additional short-screen inspections.
