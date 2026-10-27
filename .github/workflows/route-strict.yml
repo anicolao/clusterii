@@ -1,0 +1,50 @@
+name: Contextual route help strict verification
+on:
+  push:
+    branches: [investigate/pr78-route-help-strict]
+    paths: [.github/recovery/pr78-route-strict-01.json]
+permissions:
+  contents: read
+concurrency:
+  group: cluster-pr78-route-strict
+  cancel-in-progress: false
+jobs:
+  routes:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_STORY_COHORTS: viewport
+      CLUSTER_STORY_FILTER: '(Live fleet travel and arrival preserve private forces through recovery|Interrupted route commands retain their original choices and identity|Paused fleet travel catches up exactly once after concurrent delayed delivery)'
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate unchanged source and reference bytes
+        run: node scripts/route-strict-request.mjs
+      - name: Confirm twelve selected route stories
+        run: |
+          bun install --frozen-lockfile
+          node node_modules/@playwright/test/cli.js test --config playwright.stories.config.ts --list | tee /tmp/construction-test-list.txt
+          grep -Fx "Total: 12 tests in 3 files" /tmp/construction-test-list.txt
+      - name: Exercise route acknowledgement and recovery across four viewports
+        run: nix run path:./nix#ci-renderer -- stories verify
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: route-strict-${{ github.sha }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            ci-evidence/
+            test-results/stories/
+            test-results/.story-cohorts-*/
+            firestore-debug.log
