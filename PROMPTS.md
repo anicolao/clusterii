@@ -2700,10 +2700,58 @@ Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle
 Delegated reviewer instruction; refer to latest main meta scoped PR72 desktop approval and immutable PR73 source/reference audit.
 
 Reviewer: PR72 desktop candidate40264675463 all nine new captures individually inspected and approved for regression references; 25 inherited byte-identical. Exact hashes and bounded-history clipping/existing design-gap notes in /tmp/cluster-pr72-candidate-review/reviewer-desktop-approval.json. Remaining phone/large/short review pending; do not promote partial set or duplicate downloads. Independently verified immutable PR73 335ad6c5 entire story matches original17250d57 after five path replacements; all product and screenshot paths unchanged. Preserve approval and latest mainmeta in next normal audit commit/push. Keep existing live checks running; no merges.
-## Prompt 231: Import reviewed drafts
+
+
+## Prompt 231: Prepare interrupted send
+
+Delegated reviewer instruction; refer to latest main meta PR72 large regression approval and original PR74 source preparation handoff.
+
+Reviewer continuation: PR72 large all nine new captures now individually inspected and approved; 25 inherited exact. Preserve /tmp/cluster-pr72-candidate-review/reviewer-large-approval.json and latest mainmeta during next substantive commit. Phone/short candidate40264675463 remain live; supervisor owns downloads/review, no duplicate runs. While waiting, prepare existing PR74 original2639f208 on separate branch based on reviewed PR73 335ad6c5 plus audit18a392c1. Mainmeta records full original source review. Preserve original transport-only withholding of real frames, same-payload retry, exact receipt/canonical/privacy assertions and all inherited references. Migrate into009 with relative paths, including newly introduced require(./lib/shared/command-receipt.js), not merely the prior five replacements. Type/policy/collection checks and exact-source equivalence required. No74 generation/publication or baseline promotion until72/73 reviewed parents carried forward. Record attributed PROMPTS/continuations and commit/push preparation; preserve immutable72 request. No merges.
+
+
+## Prompt 232: Interrupted send continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:39 Toronto”.
+
+Reviewer continuation 2026-10-22 04:39 Toronto: #73 17250d5 attached; independently reviewed replacement assertions and phone conflict capture, with both remedies visible and sending disabled. Continue next documented gap as a small stacked successor on #73, prioritizing interrupted-send recovery/account isolation or another concrete plan gap; retain real authoritative acknowledgement and distinguish browser draft persistence from sending. Do not stop after one PR while authorized plan work remains. Preserve independent visual/Linux/hosted and original raster gates. Track existing explicit #70 candidate run without duplicate requests. Carry checkpoints through04:39 into attributed committed/pushed logs; no merge.
+
+
+## Prompt 233: Retain green checkpoint
+
+Delegated reviewer instruction; refer to latest main meta PR68 green checkpoint, PR72 short approval and PR74 exact source audit.
+
+Reviewer update: PR68 exacthead1e3917e2187c0ff9c2b2f8631a111165a6c85d5e now all FIVE required checks SUCCESS. Independently read final stories40258778641 log: four viewport batches each42passed/2skipped; log /tmp/cluster-pr68-final-stories.log. PR72 short all9new individually inspected and approved,25inherited exact; retain /tmp/cluster-pr72-candidate-review/reviewer-short-approval.json in next substantive audit. Phone remains live checkout, no restart. PR74 working source independently exact original2639f208 after five adaptations; inner createRequire path correctly unchanged. Observed history gate rejection; resolve exact archived request ordering/separator preservation without weakening checker or rewriting history, then complete preparation push. Preserve latestmeta and attributed logs. No merges.
+
+
+## Prompt 234: Preserve checkout retry
+
+Delegated reviewer instruction; refer to latest main meta PR72 phone checkout infrastructure recovery.
+
+Reviewer infrastructure recovery: PR72 phone job121384333548 TERMINAL cancelled at03:58:50 during actions checkout repository fetch, before Nix bootstrap or any test; no phone artifact. Final log preserved /tmp/cluster-pr72-phone-cancelled.log. Supervisor has issued ONLY gh run rerun40264675463 --job121384333548 successfully, same immutable executor/source; do not duplicate dispatch. Desktop/large/short original artifacts and inspected approvals remain preserved. Await phone retry and inspect its output before full136 approval. This is checkout infrastructure recovery, not a test-failure retry. Record in next substantive audit; continue current history reconciliation.
+
+
+## Prompt 235: Recover guarded phone
+
+Delegated reviewer instruction; refer to latest main meta PR72 first-attempt guard failure and verified history transition.
+
+Reviewer actionable correction: phone retry121390747427 TERMINAL failure before test, request guard requires GITHUB_RUN_ATTEMPT=1 (draft-candidates-request.mjs29). Supervisor rerun was inappropriate for this guard; preserve /tmp/cluster-pr72-phone-attempt2.log, no further reruns. Prioritize a fresh uniquely identified PHONE-ONLY immutable candidate request, with target4a826445 and all three original reference trees/spec/renderer unchanged, strict first-attempt guard retained. Use isolated source then request commits; change only dispatch/request plumbing needed for new phone-only generation, retain all three approved original viewport artifacts. Preserve current PR74 staged work safely in its preparation checkout; use separate managed/local checkout if needed rather than discarding/stashing ambiguously. Review tests for new request binding and dispatch once. Supervisor will independently review source/request and phone artifact; do not import baselines before full136 approval. Also independent history trace confirms18a392c1 append-only transition from335ad6c5 Recovery continuation record trailing LF3 toLF5; use this evidence while resolving gate, no history rewrite. Record attributed instructions/latestmeta, no merges.
+
+
+## Prompt 236: Retain checker review
+
+Delegated reviewer instruction; refer to latest main meta independent prompt-checker correctness review.
+
+Reviewer: independently reviewed six-line copiedVariants correction and focused regression in check-prompts; independently ran all23 tests PASS under establishedNix. Correction composes already-supported exact archived-final-record separator form with Git-proven later append transitions; it does not trim arbitrary body whitespace or remove ordering/archive equality checks. Approve this narrowly scoped checker bug fix subject to actual integration/base checks passing; prior no-checker-change direction was intended to prohibit bypass/weakening, not leave this proven false rejection unresolved. Preserve failing-before evidence, negative mutation/deletion cases, exact historical logs and source. Phone-only recovery remains priority, no duplicate dispatch. Record this attribution in next normal audit.
+## Prompt 237: Import reviewed drafts
 
 Delegated reviewer instruction; refer to latest main meta complete PR72 regression approval and strict verification handoff.
 
 Reviewer: PR72 complete136 candidate review APPROVED for regression import:100 inherited PNGs exact and all36new individually inspected across phone/desktop/large/short. Exact hashes/provenance and per-viewport notes in /tmp/cluster-pr72-candidate-review/reviewer-all-viewports-approval.json plus four reviewer approvals. Phone40267745100 executor356b8d51 sourcea5b2d36e verified same original product/story/runner/reference inputs; archive API size/SHA256/CRC valid, passed34 exit0 referenceDiff0. Import ONLY approved36 new refs plus review metadata on reviewed72 target4a826445; preserve all100inherited and no product/story/runtime drift. Commit/push attributed evidence/logs, then single bounded strict136 verification with snapshot updates forbidden and all four viewports. No regenerating accepted candidates, no premature whole-PR approval, no merges. Existing design gaps remain separately recorded, not production-fidelity signoff. Supervisor owns independent strict artifact review.
 
 
+
+
+
+## Prompt 238: Reviewer acknowledgement approval
+
+Reviewer instruction: Import the 32 independently inspected PR74 acknowledgement candidate images from run40276175111, preserving all168 inherited images. See meta-prompts.md "Supervisor PR74 candidate approval" and retained exact hash evidence. Approval is for regression references only. Run strict200 verification without updates before publication; do not merge PRs.

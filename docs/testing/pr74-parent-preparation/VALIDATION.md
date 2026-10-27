@@ -1,0 +1,7 @@
+# Isolated PR74 checks
+
+Svelte0errors0warnings and Functions tsc exit0; all40 story-policy tests plus policy gate passed. Collection preserves180 viewport/title identities in33files, one authoritative feature009 journey per size. No browser run, candidate generation or snapshot import for74.
+
+Original2639f208 story equals the prepared story after the five existing relative import/package-anchor adaptations. The newly introduced command-receipt require was separately tested under Nix: original and migrated createRequire anchors point to the same functions/package.json, all three relative Functions modules resolve identically, and the receipt module exports commandDigest. The inner ./lib/shared/command-receipt.js path stays unchanged intentionally; this is module-resolution evidence, not service/receipt behavior proof. All285 original added action/assertion/narrative lines remain byte-identical.
+
+All6410 inherited reference files equal18a392c1; production/shared/functions/helpers/dependencies/workflows unchanged. Exact original74 prompt/continuation archives and Git ancestry are retained with declared structural separators. The ordinary unchanged commit hook checks both histories. Existing72 request3fed71ab/run40264675463 is untouched; latest observation desktop/large/short jobs succeeded, phone still in checkout. Only desktop/large visual approvals are recorded here; supervisor owns remaining downloads/review. Job success alone is not image approval.
