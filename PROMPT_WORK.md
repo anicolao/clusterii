@@ -367,6 +367,10 @@ Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | A
 Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Continue into real same-browser account isolation and owner-only draft restoration on the next stacked slice
 Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Review same-browser account-isolation candidates while preserving all two hundred predecessor images
 Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Archive exact account-isolation journeys and carry the reviewer 04:59 checkpoint with remaining acceptance gates
+Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Continue the negotiation inventory with explicit future-only readmission and privacy across the absence interval
+Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Diagnose retained disabled-Send trace and wait for named draft storage and keyboard readiness without relaxing assertions
+Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Review forty-four readmission candidates and carry the 05:09 checkpoint plus read-only Pages queue diagnosis
+Prompt 72 | 91a0c10a86eba1469f92939209fb9dd111253d95c1689afbdd4e8d3e15b7b89c | Archive four exact readmission journeys and carry the reviewer 05:19 checkpoint with unresolved publication and raster gates
 Prompt 232 | d39a0c7dfdfa2370080781e95db31105f33c8cc643c7b0882fa7127b12b235fe | Preserve original PR74 ancestry and exact transport/receipt story body in feature009 with verified anchored module paths.
 233 | 91a56c7e62bc12d84357097873f168afa01b4c0acf851a97eb98c3ece1e42aeb | Reconcile Git-proven structural separators, preserve exact archives, retain PR68 green and PR72 short review evidence.
 234 | c8e16355e0c5a152cafde88dcd27f257e3138e97ac2fa82d4192cb47b44a4fa0 | Reproduce archived-final separator composition failure and preserve exact bodies with Git-proven transition validation.
@@ -379,14 +383,16 @@ Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | 
 Prompt 237 | e12010073d4fa510a639a725ddec71a69d13bcf9ed2ec4c161fb73f4cecdd4cd | Carry published PR73 reviewed168 references into PR74 while preserving both continuation histories and source.
 Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Bind all200 reviewed image hashes to repository paths while retaining original artifact paths for strict verification.
 Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Record independently verified PR74 strict acceptance of all 200 approved reference images
-
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Prepare PR75 account-isolation story on reviewed PR74 feature layout; new Linux captures and historical phone reconciliation remain pending.
-
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Reconcile original PR75 historical phone image after direct inspection while preserving all200 reviewed Linux references.
-
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Prepare PR76 future-only readmission on numbered PR75 parent layout, preserving exact child assertions and pending Linux review.
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Import 28 individually reviewed account isolation candidates and preserve 200 inherited references with complete provenance
-
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Inherit all 228 individually reviewed PR75 references into readmission preparation without changing child assertions
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Import 44 independently reviewed PR76 readmission references while preserving all 228 inherited image hashes
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Publish independently verified PR76 four-size strict evidence for all 272 reviewed readmission images
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Accept all228 independently verified account strict captures and publish reviewed PR75 without diagnostic plumbing
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Resolve parent PR75 acceptance-log conflict to enable PR76 full CI without altering verified source or images
 
 Prompt 202 | 64fd6041ae9d55e78ca167c8d17ca936317419b3a289b261a08522803d8d506d | Normalize fleet-route contact entropy identities and verify real persisted scans and authorized player projections.
 Prompt 223 | 17476a1d45e908a0c501c2fdc1c10d83ad903c188e3c577e8143b812a6af1275 | Integrate PR70 deterministic contact inputs into PR71 without changing reviewed references.
@@ -397,7 +403,9 @@ Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | 
 Prompt 231 | 679559dbb5ea8533ecc6c7c67cb3bf6dc5670e5cc32fb2110d13a0393df365b4 | Record identical PR76 contact-marker failure, safe evidence retention and complete PR79 Darwin reference inventory.
 Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Integrate prepared PR73 contact fix into PR74 while preserving all reviewed image references.
 Prompt 238 | eb58c5ad2baabc39e8edb65bc7279708fbd0572111f64d3986271d11adb7e65d | Preserve PR74 contact integration, verified duplicate-retention proofs and PR79 peer visual comparison evidence.
-
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Integrate prepared PR74 contact fix into PR75 while preserving all reviewed image references.
-
 Prompt 251 | 1d4438077c25fba596943c623aec380c43120cd12b53f5418537a27da26baa26 | Preserve PR75 contact integration and sixteen PR79 reservation comparison images with remaining review inventory.
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Integrate prepared PR75 contact fix into PR76 while preserving all reviewed image references.
+
+Prompt 251 | 123199cc593bc03ec2671447a74998f39653d22d6cc5b689805f7fabf131e0a6 | Preserve PR76 contact integration and PR79 phone comparison evidence including unresolved recovered focus difference.
