@@ -3,15 +3,16 @@
   "title": "Plot, recover and follow an authoritative fleet arrival",
   "inventory": [
     "UX-08",
+    "UX-09",
     "UX-14",
     "UX-16"
   ],
   "description": "Four independent commanders enter through actual authenticated controls. Formation establishes a fleet; a route preview becomes an acknowledged departure and authoritative arrival. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify interrupted route-draft recovery, managed encryption or hosted scheduling.",
   "source": {
-    "commit": "a52e8ee36db25a574f25fc22d7b35685e98807c3",
+    "commit": "12abe7122e21c0ed82636bd05fba9d0c451cd862",
     "dirty": false,
     "spec": "tests/browser/fleet-travel.story.spec.ts",
-    "specSha256": "a258a643c567cb1e578fe12ad352692f3019881f9164046f77e198189d367b07"
+    "specSha256": "8e8a087be3d0c250efab0fb8dc5c3aedafab8f0400f5c903e49addca0cbe34ed"
   },
   "mode": "verify",
   "status": "passed",
@@ -344,6 +345,52 @@
       ]
     },
     {
+      "id": "discard-uncommitted-route",
+      "description": "Discard the selected fleet's unsent route with the keyboard. This is a local draft decision, not cancellation of an accepted order.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The editor confirms local discard, clears the route and returns keyboard focus to waypoint search.",
+      "verifications": [
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Discard neither issues a command nor changes any authoritative force, order, balance or revision."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "020-discard-uncommitted-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "020-discard-uncommitted-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reopen-cleared-route",
+      "description": "Return to fleets and reopen the planner. The discarded route stays empty; select the original destination again as a new draft.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Only the newly selected destination is ready to send; no stale discard notice accompanies it.",
+      "verifications": [
+        "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
+        "Replanning preserves canonical state and has the same result with normal motion."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "021-reopen-cleared-route-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "021-reopen-cleared-route-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
       "id": "accept-route",
       "description": "Commit the route with Enter. The authoritative acknowledgement schedules departure without moving the fleet.",
       "actor": "Fleet marshal",
@@ -356,12 +403,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "020-accept-route-1-fleet-marshal.png",
+          "image": "022-accept-route-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "020-accept-route-2-independent-marshal.png",
+          "image": "022-accept-route-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -374,17 +421,17 @@
       "acknowledgement": "The same accepted destination and departure tick return from persistence.",
       "verifications": [
         "The route commitment rail is visible before scrolling, and other commanders receive no private route, fleet complement or arrival report.",
-        "Reload neither duplicates the route nor changes forces."
+        "Reload neither duplicates the route nor changes forces; accepted routes cannot be discarded as drafts."
       ],
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "021-recover-route-1-fleet-marshal.png",
+          "image": "023-recover-route-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "021-recover-route-2-independent-marshal.png",
+          "image": "023-recover-route-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -411,12 +458,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "023-traveling-1-fleet-marshal.png",
+          "image": "025-traveling-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "023-traveling-2-independent-marshal.png",
+          "image": "025-traveling-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -443,12 +490,12 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "025-arrival-report-1-fleet-marshal.png",
+          "image": "027-arrival-report-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "025-arrival-report-2-independent-marshal.png",
+          "image": "027-arrival-report-2-independent-marshal.png",
           "verifications": []
         }
       ]
@@ -467,12 +514,145 @@
       "views": [
         {
           "player": "Fleet marshal",
-          "image": "026-recover-arrival-1-fleet-marshal.png",
+          "image": "028-recover-arrival-1-fleet-marshal.png",
           "verifications": []
         },
         {
           "player": "Independent marshal",
-          "image": "026-recover-arrival-2-independent-marshal.png",
+          "image": "028-recover-arrival-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "open-private-arrival-archives",
+      "description": "Both commanders open their own arrival archive. The owner recovers the secured system; the uninvolved commander receives no private arrival report.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Authorized history selects the owner's recorded arrival and acknowledges an empty archive to the other commander.",
+      "verifications": [
+        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "029-open-private-arrival-archives-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "029-open-private-arrival-archives-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-arrival-losses",
+      "description": "Read the recorded zero losses and surviving complement through the bounded, keyboard-focusable report body.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The named report facts are fully visible inside the bounded panel and match the single authoritative outcome.",
+      "verifications": [
+        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "030-read-arrival-losses-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "030-read-arrival-losses-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-arrival-control",
+      "description": "Read separately recorded orbit and surface control; both layers belong to the arriving commander at this tick.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The named report facts are fully visible inside the bounded panel and match the single authoritative outcome.",
+      "verifications": [
+        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "031-read-arrival-control-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "031-read-arrival-control-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-arrival-resolution-boundaries",
+      "description": "Open Participants and resolution with the keyboard to read the recorded order, private opposing-force boundary and development-rule disclosure.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The expanded resolution explanation is visible and identifies proposed development rules without revealing opposing forces.",
+      "verifications": [
+        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "032-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "032-read-arrival-resolution-boundaries-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-private-arrival-archives",
+      "description": "Reload both independent sessions and reopen their own archives with the keyboard. Stored outcomes survive; unrelated players still receive no report.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The same recorded destination/tick returns only to its recipient after loss of local panel state.",
+      "verifications": [
+        "Reading arrival history preserves the single canonical outcome and private recipient projections; both return rails stay visible before scrolling.",
+        "Normal and reduced motion retain the same authoritative history and recipient outcomes."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "033-reload-private-arrival-archives-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "033-reload-private-arrival-archives-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-arrival-archives-by-keyboard",
+      "description": "Both commanders close the archive with Escape and return to the opening Arrival reports control.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Both archive panels close and focus returns to each player's Arrival reports control.",
+      "verifications": [
+        "Keyboard dismissal changes no canonical outcome or receipt."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "034-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "034-close-arrival-archives-by-keyboard-2-independent-marshal.png",
           "verifications": []
         }
       ]

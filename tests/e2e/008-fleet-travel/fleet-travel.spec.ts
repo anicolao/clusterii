@@ -708,6 +708,82 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       verifications: routeChecks(),
       views: views(),
     });
+    await story.step("discard-uncommitted-route", {
+      actor: aliases[0],
+      description:
+        "Discard the selected fleet's unsent route with the keyboard. This is a local draft decision, not cancellation of an accepted order.",
+      action: async () => {
+        const discard = planner.getByRole("button", {
+          name: "Discard draft",
+          exact: true,
+        });
+        await routeRead(discard);
+        await discard.focus();
+        await discard.press("Enter");
+      },
+      acknowledgement: {
+        spec: "The editor confirms local discard, clears the route and returns keyboard focus to waypoint search.",
+        check: async () => {
+          await expect(
+            planner.getByRole("status").filter({ hasText: "Draft discarded." }),
+          ).toHaveText("Draft discarded. No fleet order was sent.");
+          await expect(routeList.locator("li")).toHaveCount(0);
+          await expect(
+            planner.getByRole("searchbox", { name: "Find a waypoint" }),
+          ).toBeFocused();
+          await expect(send).toBeDisabled();
+          await expect(button(owner, "Discard draft")).toBeDisabled();
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Discard neither issues a command nor changes any authoritative force, order, balance or revision.",
+          check: async () => expect(await canonical()).toEqual(formed!),
+        },
+      ],
+      views: views(),
+    });
+    await story.step("reopen-cleared-route", {
+      actor: aliases[0],
+      description:
+        "Return to fleets and reopen the planner. The discarded route stays empty; select the original destination again as a new draft.",
+      action: async () => {
+        await button(owner, "Back to fleets").click();
+        await expect(button(owner, "Plot route")).toBeFocused();
+        await button(owner, "Plot route").press("Enter");
+        await expect(routeList.locator("li")).toHaveCount(0);
+        await expect(send).toBeDisabled();
+        await planner
+          .getByRole("searchbox", { name: "Find a waypoint" })
+          .fill(targetName);
+        await button(owner, `Add ${targetName} waypoint`).click();
+        await routeRead(routeList);
+        await send.focus();
+      },
+      acknowledgement: {
+        spec: "Only the newly selected destination is ready to send; no stale discard notice accompanies it.",
+        check: async () => {
+          await expect(routeList.locator("li")).toHaveCount(1);
+          await expect(routeList).toContainText(targetName);
+          await expect(planner).not.toContainText("Draft discarded.");
+          await expect(send).toBeEnabled();
+        },
+      },
+      verifications: [
+        ...routeChecks(),
+        {
+          spec: "Replanning preserves canonical state and has the same result with normal motion.",
+          check: async () => {
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            expect(await canonical()).toEqual(formed!);
+            await expect(routeList).toContainText(targetName);
+            await owner.emulateMedia({ reducedMotion: "reduce" });
+          },
+        },
+      ],
+      views: views(),
+    });
     let accepted: Campaign,
       routeId = "";
     await story.step("accept-route", {
@@ -759,6 +835,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       ],
       views: views(),
     });
+    await expect(button(owner, "Discard draft")).toHaveCount(0);
     await story.step("recover-route", {
       actor: aliases[0],
       description:
@@ -784,7 +861,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       verifications: [
         ...routeChecks(),
         {
-          spec: "Reload neither duplicates the route nor changes forces.",
+          spec: "Reload neither duplicates the route nor changes forces; accepted routes cannot be discarded as drafts.",
           check: async () => expect(await canonical()).toEqual(accepted!),
         },
       ],
