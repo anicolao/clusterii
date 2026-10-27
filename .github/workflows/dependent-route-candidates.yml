@@ -1,0 +1,50 @@
+name: Dependent route baseline candidates
+on:
+  push:
+    branches: [investigate/pr77-dependent-route-candidates]
+    paths: [.github/recovery/pr77-dependent-route-01.json]
+permissions:
+  contents: read
+concurrency:
+  group: cluster-pr77-dependent-route-candidates
+  cancel-in-progress: false
+jobs:
+  candidates:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_STORY_COHORTS: viewport
+      CLUSTER_STORY_FILTER: '(Interrupted route commands retain their original choices and identity|Paused fleet travel catches up exactly once after concurrent delayed delivery)'
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate unchanged product tests and reference bytes
+        run: node scripts/dependent-route-request.mjs
+      - name: Confirm exactly eight selected dependent route stories
+        run: |
+          bun install --frozen-lockfile
+          node node_modules/@playwright/test/cli.js test --config playwright.stories.config.ts --list | tee /tmp/dependent-route-list.txt
+          grep -Fx "Total: 8 tests in 2 files" /tmp/dependent-route-list.txt
+      - name: Generate candidates without acceptance
+        run: nix run path:./nix#ci-renderer -- stories generate
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dependent-route-candidates-${{ github.sha }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            ci-evidence/
+            test-results/stories/
+            test-results/.story-cohorts-*/
+            firestore-debug.log
