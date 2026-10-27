@@ -860,6 +860,17 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
           await expect(
             planner.getByRole("searchbox", { name: "Find a waypoint" }),
           ).toBeFocused();
+          const search = planner.getByRole("searchbox", {
+            name: "Find a waypoint",
+          });
+          const labelBox = await search.locator("..").boundingBox();
+          const searchBox = await search.boundingBox();
+          const detailsBox = await details.boundingBox();
+          expect(labelBox!.y).toBeGreaterThanOrEqual(detailsBox!.y);
+          expect(searchBox!.y - 8).toBeGreaterThanOrEqual(detailsBox!.y);
+          expect(searchBox!.y + searchBox!.height + 8).toBeLessThanOrEqual(
+            detailsBox!.y + detailsBox!.height,
+          );
           await expect(send).toBeDisabled();
           await expect(button(owner, "Discard draft")).toBeDisabled();
         },
