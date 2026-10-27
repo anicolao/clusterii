@@ -987,3 +987,5 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Compare six desktop paused-route candidates with exact semantic predecessors and retain remaining review boundary.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Compare six interrupted-route desktop candidates with predecessors and document reload scroll displacement.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review three desktop uncertain-route retry states against their exact predecessor captures.
