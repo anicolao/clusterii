@@ -1,0 +1,7 @@
+## Supervisor PR76 green and PR77 advanced
+
+2026-10-27: PR76 28b7c78c all five checks SUCCESS; application40460354649 attempt2 completed08:01:13 and exact40460354682 completed08:03:33. Original briefing retransmission failure retained; unchanged rerun passed without assertion or timeout edits.
+
+Reviewed PR77 actual FleetRoute discard guard, local state clear, Svelte tick/search focus, notice reset on new waypoint, and accepted-route exclusion. Story verifies keyboard discard, canonical state unchanged, reopen empty, new route and no stale notice. Recovered prior meta evidence closes pending/busy coverage:32 actual-component checks across4viewports and both motion modes passed at26592aee, including synthetic click guard and no commit. Prior31 changed feature images individually approved; inherited stellar variants were held, not accepted. Focused strict had inherited contact-marker failures, so do not describe it as fully passing.
+
+Prepared652e91e5 product/references exactly match reviewed26592aee; only three test contact files differ and inherit established correction from green76. Public77 e40a3d54 is older than that reviewed preparation, so its broad diff is expected and was not misrepresented as unchanged. Both public77 and green76 are ancestors. Normal fast-forward published feat/route-draft-discard at652e91e5 for full checks. Strict and application checks must pass before78 advances. No GitHub merge, force push, new baseline approval or design-fidelity approval. tmux clusterii absent; no handoff queued.
