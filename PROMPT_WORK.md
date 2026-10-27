@@ -845,3 +845,7 @@ Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Integrate reviewed PR77 fixes into PR78 and relocate original Darwin references without pixel changes.
 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Record successful PR78 integration and exact ordered continuation-history reconciliation.
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Import 52 individually reviewed dependent route references from passing source-bound Linux generation, preserving 244 identical captures.
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Carry fully green PR77 dependent-route references into prepared PR78 without modifying its contextual-help implementation.
