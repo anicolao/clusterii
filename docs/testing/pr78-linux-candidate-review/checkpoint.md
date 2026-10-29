@@ -260,3 +260,10 @@ Exact continuation: inspect run40572590342 completion and artifact; if successfu
 2026-10-27 20:00 UTC: initial pane inspection now reports default tmux socket absent (/private/tmp/tmux-501/default); no session can be captured or directed. Previously clusterii alone was absent; no replacement launched. Mac repository and established offline Nix remain available. Audit clean at e8cad31c; public78 still OPEN at a2d0d2fc based on feat/route-draft-discard. Run40572590342 remains healthy in progress on01adba34: Nix bootstrap, unchanged-source guard and exact12test listing all passed; strict route execution began19:53:36UTC. No rerun or intervention warranted.
 
 Exact continuation unchanged: await existing run completion, inspect artifact and independently compare its496 decoded captures plus generated narratives before archive/public advancement. Do not treat in-progress execution as passing verification. Design-fidelity and full release holds remain; no code/reference change or merge.
+
+
+## Supervisor PR78 strict verification passed
+
+2026-10-29 14:27 UTC: tmux available again but clusterii absent; unrelated sessions untouched. AGENTS and latest meta checkpoint read. Runtime tracked HEAD01adba34 unchanged with only untracked review harness/evidence; audit clean at1a807dcf. Public78 still OPEN at a2d0d2fc, base feat/route-draft-discard. Source-bound strict run40572590342 completed SUCCESS on2026-10-27 20:16:35UTC. Source guard, exact twelve-test selection and strict execution across four viewports passed. Artifact12766523491 route-strict-01adba341d607298a3b1c3f0c932c8024eddd466 is available,832480681bytes, GitHub-reported SHA25656e0b4aa61cb2aae6ffcd5842a6100e79ab8f4342280b8a1adedac8d3748523c. Download initiated to /tmp/pr78-route-strict-40572590342 via Nix gh.
+
+Exact continuation: finish artifact download, independently verify all496 decoded captures against prepared1bf15b98 references and inspect generated narrative before archiving. Then full application checks and controlled public78 advancement, preserving stack. CI success alone does not approve design fidelity or release. No product/reference change, new agent prompt, rerun or merge.
