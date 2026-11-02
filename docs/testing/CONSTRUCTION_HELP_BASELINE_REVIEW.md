@@ -1,0 +1,9 @@
+# Contextual construction help candidate review
+
+Clean source37a3041c21ae7f2c8413090f8aa0b1bd57544408; spec SHA25654c0800d3466202e7ba8b07c6db7afbd3a77b5248edd86d96e5362c98ef54c93. Separate generation passed eight ordinary/interrupted live construction journeys across phone, desktop, large and short, producing200 captures. Evidence: /tmp/cluster-construction-help-final-generation.log and /tmp/cluster-construction-help-candidates.
+
+Reviewed40 new help viewpoints and144 intentionally changed construction-panel frames using all four-size contact sheets, native phone price/refund captures and a readable4K detail. The disclosure appears in the actual owner/peer construction panels, with bounded reading, correct quote/capacity, visible fixed commitment and scoped accepted/pending/cancelled outcomes. Keyboard close focuses the original disclosure; native opening has identical outcomes in normal and reduced motion. The184 changed/new local darwin-arm64 frames are approved for strict comparison, not independent acceptance.16 predecessor frames have identical decoded pixels by stable step/view name. No unrelated galaxy, identity or inherited raster expectation changes.
+
+The first all-eight passing generation is retained at /tmp/cluster-construction-help-first-candidates and /tmp/cluster-construction-help-generation.log. Review found the first phone reading capture did not show the complete price explanation. Explicit bounded reading plus separate reservation/refund steps corrected the narrative before final generation; no failed verification output or tolerance adjustment was used.
+
+The Linux generation provenance audit is separate. No Linux candidates are promoted. Independent visual review, pinned Linux verification, exact-current-head publication and hosted service acceptance remain gates. Original stellar-core/identity raster holds remain unresolved.

@@ -1,0 +1,62 @@
+[
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/021-cancel-base-2-independent-builder.png",
+      "blob": "028b4a774d29d22bb46da309153f1ed4a411aa17",
+      "sha256": "695ffb4827aa6c4dfd8af1ee4d310e85cde74d4b254e28ff162f7a0ac1239630",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-cancel-base-2-independent-builder.png",
+        "blob": "c568392af63a999756b8978d7fdf224a390ee000",
+        "sha256": "057f35f19903c72d32f0d140dc0cac1f81737732971994c6d00307d8b43e65b3"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/desktop/019-completed-build-2-independent-builder.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-cancel-base-2-independent-builder.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/020-reserve-cancellable-base-1-builder-envoy.png",
+      "blob": "bf9fea2ab20cf8c7aa9542d856e6d6aabffcd3ec",
+      "sha256": "1352e24f0b45f6f5fd60faf84930495cf8a424593b146e3c6dec04e3146ab93f",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/015-reserve-cancellable-base-1-builder-envoy.png",
+        "blob": "e5c72469081e5914ebee15d11aac265b9ccc5fbd",
+        "sha256": "3a59a3f8da19c4db24b9c2c9f90aa2a20165f7e3eb119370e789b5ab6c3c8235"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/desktop/020-reserve-cancellable-base-1-builder-envoy.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/015-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/021-cancel-base-1-builder-envoy.png",
+      "blob": "faf36a39343b9f7a7ecb0a64d044564f1a48b2b8",
+      "sha256": "b8bb5c4ceebd686b6f77b7ab55afe9e597d49a08d02a3040d8d3e1c94f015537",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-cancel-base-1-builder-envoy.png",
+        "blob": "a3e223e7bf0647213ba082603c8344aeb1f752c0",
+        "sha256": "09ecde9ddb901cb2f649595ca146b6b824f6d27ed6263ed0c8f2d785601ba98e"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/desktop/021-cancel-base-1-builder-envoy.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/016-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/023-cancelled-base-1-builder-envoy.png",
+      "blob": "411e86a9f0cd21f06ef54dc41b0e973d4ce72824",
+      "sha256": "ccd294e0d6e16ac63d3c362c6857aaec285492bcecb0b7bad214c3f8b2a415e8",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/018-cancelled-base-1-builder-envoy.png",
+        "blob": "1feb8c619c00a2eb4d2d625112e47ae764ebb6b9",
+        "sha256": "aa4020bcf9afea990ae95ce8e10f3951b478239679d6091a7cc1be552e1b6dc4"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/desktop/023-cancelled-base-1-builder-envoy.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/018-cancelled-base-1-builder-envoy.png"
+  }
+]

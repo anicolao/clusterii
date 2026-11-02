@@ -599,7 +599,13 @@ Reviewer continuation 2026-10-22 04:39 Toronto: #73 17250d5 attached; independen
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 05:29 Toronto”.
 
 Reviewer continuation 2026-10-22 05:29 Toronto: #76 ee86a33 attached, clean idle, no queued input. Continue remaining IMPLEMENTATION_PLAN as small stacked successors on #76. Reconcile implementation gaps with the design contract and prioritize a missing end-to-end production capability or actionable product defect where approved requirements suffice, alongside TestStepHelper evidence; avoid indefinitely extending only the same conversation test while other milestones remain incomplete. Document chosen scope and approval boundaries. Review the existing Linux candidate run when available without duplicate generation. Carry checkpoints through05:29 into attributed committed/pushed logs. Preserve unresolved raster/visual/hosted gates; never merge.
-## Prompt 74: Travel applicability
+
+## Prompt 74: Production gap continuation
+
+Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 06:19 Toronto”.
+
+Reviewer continuation 2026-10-22 06:19 Toronto: #78 a2d0d2f attached; clean idle, no queued input. Continue remaining IMPLEMENTATION_PLAN work as a small stacked successor on #78. Reconcile the documented remaining production gaps and choose the next approved player-visible capability (including remaining contextual help/menu/settings scope if appropriate); do not treat one route chapter or passing successor pixels as full completion or a raster fix. Retain real acknowledged actions, user-story TestStepHelper evidence, privacy/recovery/concurrency and four-size keyboard/reduced-motion coverage as applicable. Diagnose the single existing long-running Linux candidate job from available progress/timeout evidence without duplicating generation; only independently reviewed eligible candidates can be promoted. Carry checkpoints through06:19 into reviewer-attributed PROMPTS and committed/pushed continuation logs. Preserve independent visual/hosted and original raster holds; never merge.
+## Prompt 75: Travel applicability
 
 Delegated reviewer instruction; main meta records exact PR60 independent parent verification and all88 corrected PR59 macOS approvals, not Linux approval.
 
@@ -610,7 +616,7 @@ Reviewer: independently verified PR60 df86305f exact parent92b9b88f in isolated 
 
 
 
-## Prompt 75: Cargo applicability
+## Prompt 76: Cargo applicability
 
 Delegated reviewer instruction; main meta records exact corrected cancellation image approvals and remaining Linux scope.
 
@@ -623,7 +629,7 @@ Reviewer: independent review confirms corrected released-draft capture at all fo
 
 
 
-## Prompt 76: Cancellation clearance
+## Prompt 77: Cancellation clearance
 
 Delegated reviewer instruction; main meta records exact held geometry and expanded PR80 holds.
 
@@ -638,7 +644,7 @@ Reviewer:58independent exact-parent/hashes verified. Continue59 from current58, 
 
 
 
-## Prompt 77: Reorganization integration
+## Prompt 78: Reorganization integration
 
 Delegated reviewer instruction; main meta records PR57 independent verification and PR80 short background acknowledgement hold.
 
@@ -655,7 +661,7 @@ Reviewer: independent57audit passed22tests, exact56parent, all60inspected hashes
 
 
 
-## Prompt 78: Fleet integration
+## Prompt 79: Fleet integration
 
 Delegated reviewer instruction; main meta records current parent verification and completed PR79 macOS scope, not Linux approval.
 
@@ -674,7 +680,7 @@ Reviewer: PR56 99c40f39 publication verified. Continue57 from current56 with pre
 
 
 
-## Prompt 79: Green stack
+## Prompt 80: Green stack
 
 Delegated reviewer instruction; refers to meta-prompts.md checkpoints19:37/19:47/19:58 and Human priority override — Green PR stack. Human questions remain verbatim in supervisor meta, not duplicated as direct human prompts here.
 
@@ -702,7 +708,7 @@ PRIORITY OVERRIDE FROM HUMAN JUST RECEIVED: "Let's get a passing PR. Focus on on
 
 
 
-## Prompt 80: Inspect references
+## Prompt 81: Inspect references
 
 Delegated reviewer clarification; refers to meta-prompts.md Human clarification — Inspect before approval. The direct human clarification stays verbatim in supervisor meta.
 
@@ -728,7 +734,7 @@ Reviewer clarification: Human explicitly said: when i say "approving all generat
 
 
 
-## Prompt 81: First green
+## Prompt 82: First green
 
 Delegated reviewer priority; refers to the new PR52 finding in main meta-prompts.md and the Human priority override — Green PR stack.
 
@@ -755,7 +761,7 @@ Reviewer new concrete evidence: prioritize first GREEN via52 from green51. I ind
 
 
 
-## Prompt 82: Shared evidence
+## Prompt 83: Shared evidence
 
 Delegated reviewer coordination; refers to main meta-prompts.md Reviewer evidence — Reuse identity raster diagnosis.
 
@@ -780,7 +786,7 @@ Reviewer coordination: While compaction runs I am retrieving only identity-valid
 
 
 
-## Prompt 83: Raster disposition
+## Prompt 84: Raster disposition
 
 Delegated reviewer inspection; refers to main meta exact PR52 visual disposition.
 
@@ -805,7 +811,7 @@ Reviewer completed exact52 independent inspection: extraction12399020127 finishe
 
 
 
-## Prompt 84: Diagnostic label
+## Prompt 85: Diagnostic label
 
 Delegated reviewer finding; refers to latest main meta request-summary correction and forward-stack findings.
 
@@ -830,7 +836,7 @@ Reviewer quick code finding: identity-paint-request.mjs GITHUB_STEP_SUMMARY stil
 
 
 
-## Prompt 85: Forward review
+## Prompt 86: Forward review
 
 Delegated reviewer inspection; refers to main meta PR54 phone-credit review; PR52 remains first.
 
@@ -855,7 +861,7 @@ Reviewer forward work, keep52first: inspected all53 phone credit images from exa
 
 
 
-## Prompt 86: Stable correction
+## Prompt 87: Stable correction
 
 Delegated reviewer instruction; refers to main meta forward credit review and PR52 Nix preservation review.
 
@@ -880,7 +886,7 @@ Reviewer: main meta now records independent inspection of all53 short PR54 credi
 
 
 
-## Prompt 87: Inspected promotion
+## Prompt 88: Inspected promotion
 
 Delegated reviewer approval; refers to main meta exact PR52 inspection and controlled promotion after Linux probe.
 
@@ -904,7 +910,7 @@ Reviewer: observed your crop comparison: all96 Linux probe crops match the actua
 
 
 
-## Prompt 88: Complete credit review
+## Prompt 89: Complete credit review
 
 Delegated reviewer disposition; refers to main meta PR54 complete212-image review with two required phone corrections.
 
@@ -929,7 +935,7 @@ Reviewer: all212 original PR54 credit candidate compositions now inspected,210 a
 
 
 
-## Prompt 89: Briefing review
+## Prompt 90: Briefing review
 
 Delegated reviewer inspection; refers to main meta PR55 retained candidate review and PR53 exact triple.
 
@@ -953,7 +959,7 @@ Reviewer: supervisor fetched exact55artifact12410489436 live-return-briefing fil
 
 
 
-## Prompt 90: Forward acceptance
+## Prompt 91: Forward acceptance
 
 Delegated reviewer disposition; refers to main meta PR55 all108 and PR56 execution-failure evidence.
 
@@ -977,7 +983,7 @@ Reviewer: PR55 all108 compositions independently inspected and acceptable; mainm
 
 
 
-## Prompt 91: Construction review
+## Prompt 92: Construction review
 
 Delegated reviewer inspection; refers to main meta PR56 partial construction review and PR54 pending-label source review.
 
@@ -1001,7 +1007,7 @@ Reviewer: exact PR56 construction extraction finished at /tmp/cluster-pr56-revie
 
 
 
-## Prompt 92: Construction complete
+## Prompt 93: Construction complete
 
 Delegated reviewer disposition; refers to main meta PR56 all160 construction review and remaining source applicability.
 
@@ -1025,7 +1031,7 @@ Reviewer: PR56 construction review now covers all160/160 captures from exact art
 
 
 
-## Prompt 93: Construction applicability
+## Prompt 94: Construction applicability
 
 Delegated reviewer finding; refers to main meta exact PR56 tree applicability.
 
@@ -1049,7 +1055,7 @@ Reviewer: independently fetched PR56 artifact source7a7b8f7af6d89769f01ca912311c
 
 
 
-## Prompt 94: Briefing applicability
+## Prompt 95: Briefing applicability
 
 Delegated reviewer finding; refers to main meta exact PR55 tree applicability.
 
@@ -1073,7 +1079,7 @@ Reviewer: PR55 source applicability also independently confirmed: fetched c8129f
 
 
 
-## Prompt 95: Credit inspection
+## Prompt 96: Credit inspection
 
 Delegated reviewer finding; refers to main meta local credit visual correction and uninspected PR57 extraction.
 
@@ -1097,7 +1103,7 @@ Reviewer: independently viewed new54 phone013 and014 full originals in your chec
 
 
 
-## Prompt 96: Concurrent publication
+## Prompt 97: Concurrent publication
 
 Delegated reviewer sequencing update; refers to main meta authorization to publish reviewed PR53 while PR52 application continues.
 
@@ -1120,7 +1126,7 @@ Reviewer: reviewed53fa414436 is ready and includes52head4f917d72. Publish53 now 
 
 
 
-## Prompt 97: Integrated recurrence
+## Prompt 98: Integrated recurrence
 
 Delegated reviewer finding; refers to main meta PR52 current strict recurrence and PR57 partial-family approval.
 
@@ -1146,7 +1152,7 @@ Reviewer: I confirmed52 strict111pass/1identity-validation-short001 mismatch. I 
 
 
 
-## Prompt 98: Raster alternation
+## Prompt 99: Raster alternation
 
 Delegated reviewer finding; refers to main meta current PR52 exact reverse raster and required stability verification.
 
@@ -1172,7 +1178,7 @@ Reviewer: artifact12581856096 three PNGs extracted /tmp/cluster-pr52-cadb-review
 
 
 
-## Prompt 99: Leading approval
+## Prompt 100: Leading approval
 
 Delegated reviewer decision; refers to main meta all11 current Linux images and narrow CSS/reference approval.
 
@@ -1197,7 +1203,7 @@ Reviewer: independently inspected all11 fresh Linux PNGs from40149691891 at /tmp
 
 
 
-## Prompt 100: Ordered recovery
+## Prompt 101: Ordered recovery
 
 Delegated reviewer instruction; refers to main meta human first-green priority, whole-pixel identity approval and PR52 terminal-green gate before PR53 publication.
 
@@ -1223,7 +1229,7 @@ Reviewer: PR52 exact verification step succeeded at01:57:43 in run40150284054; u
 
 
 
-## Prompt 101: Forward eligibility
+## Prompt 102: Forward eligibility
 
 Delegated reviewer finding; refers to main meta PR62/63 no-artifact generation and PR53 source/Nix parity inspection.
 
@@ -1248,7 +1254,7 @@ Reviewer: while you prepare53, mainmeta now records full62 code review and63 com
 
 
 
-## Prompt 102: Branch integration
+## Prompt 103: Branch integration
 
 Delegated reviewer clarification; refers to main meta authorized parent-to-child integration without GitHub PR merges or history rewriting.
 
@@ -1273,7 +1279,7 @@ Reviewer: proceed with normal parent-to-child Git branch integration and conflic
 
 
 
-## Prompt 103: Forward runner
+## Prompt 104: Forward runner
 
 Delegated reviewer finding; refers to main meta PR64 runner and PR65 setup/source review, not new reference approval.
 
@@ -1298,7 +1304,7 @@ Reviewer: mainmeta now includes64full runner review and5 independent Nix tests p
 
 
 
-## Prompt 104: Verbatim retention
+## Prompt 105: Verbatim retention
 
 Delegated reviewer code finding; refers to main meta exact canonical prompt body preservation.
 
@@ -1323,7 +1329,7 @@ Reviewer code finding in your in-progress preservePromptHistory: records(...).tr
 
 
 
-## Prompt 105: Continuation preservation
+## Prompt 106: Continuation preservation
 
 Delegated reviewer code finding; refers to main meta inherited continuation validation during archived-base CI and integration.
 
@@ -1347,7 +1353,7 @@ Reviewer second finding: updated if (archivedBase || staged.length > previous.le
 
 
 
-## Prompt 106: First green
+## Prompt 107: First green
 
 Delegated reviewer confirmation; refers to main meta exact PR52 green milestone and retained application log.
 
@@ -1371,7 +1377,7 @@ Reviewer: independently confirmed52head4f917d72 CLEAN/MERGEABLE, allchecksSUCCES
 
 
 
-## Prompt 107: Forward label
+## Prompt 108: Forward label
 
 Delegated reviewer checkpoint; main meta records PR66/67 scoped source and sample review, not Linux approval.
 
@@ -1396,7 +1402,7 @@ Reviewer checkpoint: PR53 publish now passes; keep existing strict/application j
 
 
 
-## Prompt 108: Outer dispatch
+## Prompt 109: Outer dispatch
 
 Delegated reviewer failure finding; main meta records candidate40154163510 pre-test Usage exit2 and scoped forward findings.
 
@@ -1421,7 +1427,7 @@ Reviewer: fresh54 job40154163510 failed before tests at outer nix/ci-renderer.sh
 
 
 
-## Prompt 109: Dispatch confirmation
+## Prompt 110: Dispatch confirmation
 
 Delegated reviewer checkpoint; main meta records dispatch review and PR68/69 scoped forward findings, not new image approval.
 
@@ -1446,7 +1452,7 @@ Reviewer checkpoint: independently reviewed exact outer/inner credit dispatch fi
 
 
 
-## Prompt 110: Archive references
+## Prompt 111: Archive references
 
 Delegated reviewer checkpoint; main meta records PR70 selective48-frame approval, not inherited112 or short stability approval.
 
@@ -1471,7 +1477,7 @@ Reviewer: PR70 selective extraction completed328files289968374bytesCRC checked; 
 
 
 
-## Prompt 111: Travel references
+## Prompt 112: Travel references
 
 Delegated reviewer approval; main meta records PR70 exact-source160-frame family scope and unresolved current verification/stability gates.
 
@@ -1495,7 +1501,7 @@ Reviewer: mainmeta now records all160 retained PR70 fleet-travel PNGs covered. A
 
 
 
-## Prompt 112: Credit approval
+## Prompt 113: Credit approval
 
 Delegated reviewer independent visual approval; main meta records exact artifact12583688735 whole212 regression-family disposition.
 
@@ -1518,7 +1524,7 @@ Reviewer: independently recomputed all212 current/prior hashes:202byte-identical
 
 
 
-## Prompt 113: Briefing preparation
+## Prompt 114: Briefing preparation
 
 Delegated reviewer forward instruction; main meta records exact PR54 blob verification, PR55 inspected108 eligibility and PR71 source-only review.
 
@@ -1539,7 +1545,7 @@ Reviewer: independently verified all212 committed PNG blobs at17915680 match app
 
 
 
-## Prompt 114: Briefing verification
+## Prompt 115: Briefing verification
 
 Delegated reviewer validation; main meta records16 prompt tests,108 exact briefing blobs and PR72/73 code-only forward review.
 
@@ -1560,7 +1566,7 @@ Reviewer: independently ran all16 prompt-history tests in Nix, allpassed; read s
 
 
 
-## Prompt 115: Earliest failure
+## Prompt 116: Earliest failure
 
 Delegated reviewer current CI finding; prioritize exact PR53 failure after safe local PR56 integration checkpoint, using reviewer extraction without duplicates.
 
@@ -1581,7 +1587,7 @@ Reviewer: current PR53 strict40153836539/job121050800104 just failed:114passed2f
 
 
 
-## Prompt 116: Raster evidence
+## Prompt 117: Raster evidence
 
 Delegated reviewer exact evidence; main meta records active28px CSS and unchanged measured geometry despite alternate sentence raster.
 
@@ -1602,7 +1608,7 @@ Reviewer: current53 exact evidence is ready at/tmp/cluster-pr53-current-review,3
 
 
 
-## Prompt 117: Reviewed recovery
+## Prompt 118: Reviewed recovery
 
 Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
 
@@ -1623,7 +1629,7 @@ Reviewer:54/55 integration independently reviewed; immutable55 prompt suite18pas
 
 
 
-## Prompt 118: Reviewed recovery
+## Prompt 119: Reviewed recovery
 
 Delegated reviewer continuation; main meta and recovery branch retain priority, exact scoped approvals and current failure dispositions.
 
@@ -1644,7 +1650,7 @@ Reviewer: prioritize new current54failure before56 propagation. Both app40159161
 
 
 
-## Prompt 119: Pending propagation
+## Prompt 120: Pending propagation
 
 Delegated reviewer scoped PR54/55 locator correction; original failure and focused pass retained on parent a2860b0c, with exact same inherited test.
 
@@ -1666,7 +1672,7 @@ Reviewer: actionable current PR54 application failure40155701633/job121056527917
 
 
 
-## Prompt 120: Pending locator
+## Prompt 121: Pending locator
 
 Delegated reviewer application failure; main meta and recovery ledger record exact run, requested scope and prior evidence preservation.
 
@@ -1690,7 +1696,7 @@ Reviewer: actionable current PR54 application failure40155701633/job121056527917
 
 
 
-## Prompt 121: Layer approval
+## Prompt 122: Layer approval
 
 Delegated reviewer exact image approval; main meta and recovery logs record intervening bounded-run instructions, original failures, and independent all13 changed originals.
 
@@ -1715,7 +1721,7 @@ Reviewer: independently inspected all8unique changed SHA representatives coverin
 
 
 
-## Prompt 122: Explicit maintenance
+## Prompt 123: Explicit maintenance
 
 Delegated reviewer policy-failure correction; main meta explicitly permits justified reviewable scoped legacy maintenance while retaining coverage.
 
@@ -1738,7 +1744,7 @@ Reviewer: prioritize new current54failure before56 propagation. Both app40159161
 
 
 
-## Prompt 123: Construction recovery
+## Prompt 124: Construction recovery
 
 Delegated reviewer continuation; main meta records independent parent checks and further PR79 image dispositions.
 
@@ -1759,7 +1765,7 @@ Reviewer: independently verified published54 f8fa7f5f and55 acc0b414: seven imag
 
 
 
-## Prompt 124: Appended history
+## Prompt 125: Appended history
 
 Delegated reviewer immutable-index PR54 base-check failure; preserve exact copied request bytes and prove appended separator history.
 
@@ -1783,7 +1789,7 @@ Reviewer: new actionable54documentation failure40159642901/job121068319226 on9a7
 
 
 
-## Prompt 125: Remaining rasters
+## Prompt 126: Remaining rasters
 
 Delegated reviewer explicit approval of seven exact current-head failure-artifact images; full preceding result and independent extraction recorded in main meta and recovery ledger.
 
@@ -1807,7 +1813,7 @@ Reviewer: independently downloaded only21 actual/expected/diff PNGs from artifac
 
 
 
-## Prompt 126: Cancellation approval
+## Prompt 127: Cancellation approval
 
 Delegated reviewer instruction; main meta records independent Linux inspection and exact hash dispositions.
 
@@ -1821,7 +1827,7 @@ Reviewer: independently inspected all22distinct changed/new images covering31fil
 
 
 
-## Prompt 127: Forward integration
+## Prompt 128: Forward integration
 
 Delegated reviewer instruction; main meta records independent PR60/61 exact-parent and inherited reference verification.
 
@@ -1829,7 +1835,7 @@ Reviewer: independently verified60d394a454 and61e060a1f3 exact-parent checks and
 
 
 
-## Prompt 128: Cargo approval
+## Prompt 129: Cargo approval
 
 Delegated reviewer instruction; main meta records independent128-image approval and the human progress question. Human wording remains in supervisor meta, not duplicated here.
 
@@ -1841,7 +1847,7 @@ Reviewer: all128 corrected60Linux cargo originals independently approved; 87exac
 
 
 
-## Prompt 129: Short approval
+## Prompt 130: Short approval
 
 Delegated reviewer instruction; main meta records independent twenty-image PR57 short approval and exact SHA index.
 
@@ -1859,7 +1865,7 @@ Reviewer: new independent approval, not duplicate cargo instruction: all20 PR57 
 
 
 
-## Prompt 130: Travel approval
+## Prompt 131: Travel approval
 
 Delegated reviewer instruction; main meta records independent complete112-image approval and publication ordering.
 
@@ -1869,7 +1875,7 @@ Reviewer: all112 PR61 Linux travel originals approved. Independently confirmed10
 
 
 
-## Prompt 131: Complete identity
+## Prompt 132: Complete identity
 
 Delegated reviewer approval; see main meta Reviewer PR53 complete identity approval and handoff.
 
@@ -1894,7 +1900,7 @@ Reviewer: independent review now APPROVES all27changed exact originals in /tmp/c
 
 
 
-## Prompt 132: Service exhaustion
+## Prompt 133: Service exhaustion
 
 Delegated reviewer instruction; see main meta Reviewer PR56 service exhaustion confirmed from retained artifact.
 
@@ -1915,7 +1921,7 @@ Reviewer: new independent56evidence confirms emulator exhaustion: verify artifac
 
 
 
-## Prompt 133: Recovery wording
+## Prompt 134: Recovery wording
 
 Delegated reviewer finding; see main meta PR62 phone review, retained Linux originals and PR83 copy hold.
 
@@ -1925,7 +1931,7 @@ Reviewer: PR62 candidate extraction is complete at /tmp/cluster-pr62-reviewer-ca
 
 
 
-## Prompt 134: Corrected reference approval
+## Prompt 135: Corrected reference approval
 
 Delegated reviewer instruction; main meta PR62 corrected visual approval and successful PR53 Pages deployment.
 
@@ -1933,7 +1939,7 @@ Reviewer: Priority update: Pages run40175189456 is now SUCCESS, deploy1211163637
 
 
 
-## Prompt 135: Short reorganization approval
+## Prompt 136: Short reorganization approval
 
 Delegated reviewer instruction; see main meta-prompts.md PR58 short reorganization approval.
 
@@ -1949,7 +1955,7 @@ Reviewer: Completed independent visual inspection of all 34 PR58 short reorganiz
 
 
 
-## Prompt 136: Shared families approval
+## Prompt 137: Shared families approval
 
 Delegated reviewer instruction; see main meta Reviewer PR59 shared families fully reviewed.
 
@@ -1963,7 +1969,7 @@ Reviewer: Finished before/after inspection of all15 remaining PR59 shared-family
 
 
 
-## Prompt 137: Inherited failure recovery
+## Prompt 138: Inherited failure recovery
 
 Delegated reviewer instruction; main meta Reviewer PR60 PR61 inherited failures.
 
@@ -1975,7 +1981,7 @@ Reviewer: Independently verified all216 approved formation/reorganization PNG ha
 
 
 
-## Prompt 138: Invitation regression isolation
+## Prompt 139: Invitation regression isolation
 
 Delegated reviewer instruction; main meta Reviewer PR62 invitation regression isolation.
 
@@ -1983,7 +1989,7 @@ Reviewer: PR62 strict40178737868 is terminal FAILURE at8e683a73ba9107ba85a4c61a7
 
 
 
-## Prompt 139: Invitation images approval
+## Prompt 140: Invitation images approval
 
 Delegated reviewer instruction; main meta Reviewer PR62 eight invitation images approved.
 
@@ -1992,7 +1998,7 @@ Reviewer: Completed independent inspection of all eight PR62 invitation002 expec
 
 
 
-## Prompt 140: Resume completed evidence
+## Prompt 141: Resume completed evidence
 
 Delegated reviewer instruction; human question remains verbatim in main meta Human progress question, not duplicated as a direct prompt.
 
@@ -2000,7 +2006,7 @@ Reviewer: User asks why is the goal stalled. Independently checked goal metadata
 
 
 
-## Prompt 141: Travel catch-up
+## Prompt 142: Travel catch-up
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 22:10 Toronto”.
 
@@ -2011,7 +2017,7 @@ Reviewer continuation 2026-10-21 22:10 Toronto: #62 published cleanff1d616 on #6
 
 
 
-## Prompt 142: Capture diagnosis
+## Prompt 143: Capture diagnosis
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-21 23:46 Toronto”.
 
@@ -2021,7 +2027,7 @@ Reviewer continuation 2026-10-21 23:46 Toronto: pane stopped with workspace rout
 
 
 
-## Prompt 143: Isolated next-stack preparation
+## Prompt 144: Isolated next-stack preparation
 
 Delegated reviewer instruction; main meta Reviewer next-stack preparation.
 
@@ -2031,7 +2037,7 @@ Reviewer:59 generation nowSUCCESS, strict stilllive;60/61stories and62applicatio
 
 
 
-## Prompt 144: Paused focus correction
+## Prompt 145: Paused focus correction
 
 Delegated reviewer instruction; main meta Reviewer paused-travel short focus defect.
 
@@ -2041,7 +2047,7 @@ Reviewer: Independently completed all22 distinct short paused-fleet-travel image
 
 
 
-## Prompt 145: Corrected family approval
+## Prompt 146: Corrected family approval
 
 Delegated reviewer instruction; main meta Reviewer complete corrected paused-travel approval.
 
@@ -2051,7 +2057,7 @@ Reviewer: Completed independent inspection of all22 distinct large paused-travel
 
 
 
-## Prompt 146: Cohort recovery preparation
+## Prompt 147: Cohort recovery preparation
 
 Delegated reviewer instruction; main meta Reviewer published PR63 verification and PR64 preparation.
 
@@ -2061,7 +2067,7 @@ Reviewer: Independently verified published PR63 f8adb007866692870ea2979e2d4108b2
 
 
 
-## Prompt 147: History recovery preparation
+## Prompt 148: History recovery preparation
 
 Delegated reviewer instruction; main meta Reviewer PR64 publication and PR65 preparation.
 
@@ -2071,7 +2077,7 @@ Reviewer: Independently confirmed active64 at exact4dda4c889e16142f3e020169dd8d7
 
 
 
-## Prompt 148: Linux failure triage
+## Prompt 149: Linux failure triage
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 00:09 Toronto”.
 
@@ -2082,7 +2088,7 @@ Reviewer finding 2026-10-22 00:09 Toronto (queue after current diagnostic): #58 
 
 
 
-## Prompt 149: Observation visual review
+## Prompt 150: Observation visual review
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:10 Toronto”.
 
@@ -2092,7 +2098,7 @@ Reviewer visual finding 2026-10-22 01:10 Toronto: independently viewed live-stel
 
 
 
-## Prompt 150: Observation recovery preparation
+## Prompt 151: Observation recovery preparation
 
 Delegated reviewer instruction; main meta Reviewer PR62 green and PR66 preparation.
 
@@ -2102,7 +2108,7 @@ Reviewer: Independently confirmed PR62 all five checks SUCCESS at05d30b209ad0121
 
 
 
-## Prompt 151: Observation label correction
+## Prompt 152: Observation label correction
 
 Delegated reviewer instruction; main meta Reviewer PR66 visible label collision correction.
 
@@ -2112,7 +2118,7 @@ Reviewer: Independently inspected PR66 fresh phone018 retained-report capture: T
 
 
 
-## Prompt 152: Observation parent reconciliation
+## Prompt 153: Observation parent reconciliation
 
 Delegated reviewer instruction; main meta Reviewer PR65 publication verified and PR66 reconciliation.
 
@@ -2121,7 +2127,7 @@ Reviewer: Independently confirmed65 publicationSUCCESS at056a2f85;63/64 onlystri
 
 
 
-## Prompt 153: Maintenance baseline verification
+## Prompt 154: Maintenance baseline verification
 
 Delegated reviewer instruction; main meta Reviewer PR63 maintenance focus baseline approval.
 
@@ -2136,7 +2142,7 @@ Reviewer: Independently inspected PR63 short maintenance003 expected, actual and
 
 
 
-## Prompt 154: Complete maintenance candidates
+## Prompt 155: Complete maintenance candidates
 
 Delegated reviewer instruction; main meta Reviewer complete maintenance family correction.
 
@@ -2151,7 +2157,7 @@ Reviewer: Independently inspected short maintenance004 expected/actual/diff. App
 
 
 
-## Prompt 155: Maintenance family publication
+## Prompt 156: Maintenance family publication
 
 Delegated reviewer instruction; main meta Reviewer complete maintenance approval and publication.
 
@@ -2164,7 +2170,7 @@ Reviewer: Independently inspected maintenance007 expected/actual/diff: acknowled
 
 
 
-## Prompt 156: Route reproducibility correction
+## Prompt 157: Route reproducibility correction
 
 Delegated reviewer instruction; main meta Reviewer published maintenance and route factual mismatch.
 
@@ -2175,7 +2181,7 @@ Reviewer: Independently verified active63 bb54c315 contains exactly three approv
 
 
 
-## Prompt 157: Evidence retention recovery
+## Prompt 158: Evidence retention recovery
 
 Delegated reviewer instruction; main meta Reviewer repeat evidence retention and disk recovery.
 
@@ -2186,7 +2192,7 @@ Reviewer: Pane reports40206119870 eight functional journeys passed and160/160byt
 
 
 
-## Prompt 158: Route reference approval
+## Prompt 159: Route reference approval
 
 Delegated reviewer instruction; main meta Reviewer complete route reproducibility and baseline approval.
 
@@ -2197,7 +2203,7 @@ Reviewer: Completed independent visual inspection of all12 changed route capture
 
 
 
-## Prompt 159: Shared scene verification
+## Prompt 160: Shared scene verification
 
 Delegated reviewer instruction; main meta Reviewer PR63 and PR64 green; PR66 desktop inspection.
 
@@ -2207,7 +2213,7 @@ Reviewer: Independently confirmed63 and64 all five checks SUCCESS; green frontie
 
 
 
-## Prompt 160: Observation regression approval
+## Prompt 161: Observation regression approval
 
 Delegated reviewer instruction; main meta corrected PR66 complete observation review.
 
@@ -2217,7 +2223,7 @@ Reviewer: Completed independent corrected observation review: phone14, desktop14
 
 
 
-## Prompt 161: Scoped evidence recovery
+## Prompt 162: Scoped evidence recovery
 
 Delegated reviewer instruction; main meta PR65 application success and Scene phone diagnosis.
 
@@ -2228,7 +2234,7 @@ Reviewer: Independent API confirms PR65 application SUCCESS, only strict live. S
 
 
 
-## Prompt 162: Phone chart approval
+## Prompt 163: Phone chart approval
 
 Delegated reviewer instruction; main meta phone chart005 scoped reference approval.
 
@@ -2239,7 +2245,7 @@ Reviewer: Independently inspected phone chart005 expected/actual/diff: only righ
 
 
 
-## Prompt 163: Observation integration publication
+## Prompt 164: Observation integration publication
 
 Delegated reviewer instruction; main meta Reviewer PR66 integration verified and publication authorized.
 
@@ -2249,7 +2255,7 @@ Reviewer: Independently verified40216095266 SUCCESS and prior seven scene cases 
 
 
 
-## Prompt 164: Isolated label reconciliation
+## Prompt 165: Isolated label reconciliation
 
 Delegated reviewer instruction; main meta Reviewer resumed goal and isolated PR67 audit.
 
@@ -2259,7 +2265,7 @@ Reviewer: Resumed goal continues toward full green stack. Previous goal work was
 
 
 
-## Prompt 165: Bounded observation generation
+## Prompt 166: Bounded observation generation
 
 Delegated reviewer instruction; main meta Reviewer PR67 bounded candidate generation.
 
@@ -2269,7 +2275,7 @@ Reviewer: Independently reviewed original residual delta plus pushed PR67 PLAN.m
 
 
 
-## Prompt 166: Home target occlusion
+## Prompt 167: Home target occlusion
 
 Delegated reviewer instruction; main meta Reviewer PR67 new sixteen originals inspected.
 
@@ -2362,7 +2368,7 @@ Reviewer: Independently viewed all16 new PR67 originals019/020 for both seats/al
 
 
 
-## Prompt 167: Corrected Linux verification
+## Prompt 168: Corrected Linux verification
 
 Delegated reviewer instruction; main meta records corrected local phone020 inspection and bounded Linux authorization.
 
@@ -2373,7 +2379,7 @@ Reviewer: Independently viewed corrected local phone020 at9bd21c68: Tania Austra
 
 
 
-## Prompt 168: Reviewed home integration
+## Prompt 169: Reviewed home integration
 
 Delegated reviewer instruction; main meta Reviewer corrected Linux home approved.
 
@@ -2383,7 +2389,7 @@ Reviewer: Independently verified corrected Linux artifact12613366533/run40231234
 
 
 
-## Prompt 169: Galaxy label placement
+## Prompt 170: Galaxy label placement
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:29 Toronto”.
 
@@ -2393,7 +2399,7 @@ Reviewer continuation 2026-10-22 01:29 Toronto: pane idle after logging findings
 
 
 
-## Prompt 170: Separator diagnostic handoff
+## Prompt 171: Separator diagnostic handoff
 
 Delegated reviewer instruction, attributed to the reviewer; refer to the corresponding main meta-prompts.md diagnostic checkpoint.
 
@@ -2402,7 +2408,7 @@ Reviewer: Independent read-only prompt diagnostic identifies failure at incoming
 
 
 
-## Prompt 171: Earlier failure priority
+## Prompt 172: Earlier failure priority
 
 Delegated reviewer instruction, attributed to the reviewer; see the corresponding main meta-prompts.md PR66 terminal failure checkpoint.
 
@@ -2411,7 +2417,7 @@ Reviewer: PR66 exactbb58f85a full strict40232015015/job121285556737 terminalFAIL
 
 
 
-## Prompt 172: Verified disk recovery
+## Prompt 173: Verified disk recovery
 
 Delegated reviewer instruction, attributed to the reviewer; refer to the corresponding main meta-prompts.md verified archive recovery checkpoint.
 
@@ -2420,7 +2426,7 @@ Reviewer: Disk recovery completed safely: removed only /tmp/cluster-strict-208-1
 
 
 
-## Prompt 173: Exact history reconciliation
+## Prompt 174: Exact history reconciliation
 
 Delegated reviewer instruction, attributed to the reviewer; refer to main meta prompt-history reconciliation checkpoint.
 
@@ -2429,7 +2435,7 @@ Reviewer: Independently confirmed run40242503554 live with briefing/session jobs
 
 
 
-## Prompt 174: Complete reviewed integration
+## Prompt 175: Complete reviewed integration
 
 Delegated reviewer instruction, attributed to the reviewer; refer to main meta PR67 preparation continuation.
 
@@ -2439,7 +2445,7 @@ Reviewer: While sole66 run40242503554 remains live, continue PR67 preparation ra
 
 
 
-## Prompt 175: Approved gutter references
+## Prompt 176: Approved gutter references
 
 Delegated reviewer instruction; main meta Reviewer four phone gutter diffs approved.
 
@@ -2451,7 +2457,7 @@ Reviewer: Independently inspected all four PR66 phone expected/actual/diff tripl
 
 
 
-## Prompt 176: Complete candidate efficiency
+## Prompt 177: Complete candidate efficiency
 
 Delegated reviewer instruction; main meta Reviewer complete affected-phone diff inventory.
 
@@ -2463,7 +2469,7 @@ Reviewer: Independently fetched terminal first two strict logs40225364900: ordin
 
 
 
-## Prompt 177: Complete gutter approval
+## Prompt 178: Complete gutter approval
 
 Delegated reviewer instruction; supervisor main meta records complete19-hash approval.
 
@@ -2572,7 +2578,7 @@ Reviewer: Completed independent full candidate diff review for66 run40227118604.
 
 
 
-## Prompt 178: Navigation residual preparation
+## Prompt 179: Navigation residual preparation
 
 Delegated reviewer instruction; see main meta Reviewer keep green-stack preparation moving during verification.
 
@@ -2581,7 +2587,7 @@ Reviewer: Current independent check confirms66 run40232015015 attempt2 actively 
 
 
 
-## Prompt 179: Preserve original ancestry
+## Prompt 180: Preserve original ancestry
 
 Delegated reviewer instruction; refer to main meta PR68 executor and ancestry audit.
 
@@ -2590,7 +2596,7 @@ Reviewer: Independently audited68 executor d00a2afb/request91a10a62 and confirme
 
 
 
-## Prompt 180: Fleet contact preparation
+## Prompt 181: Fleet contact preparation
 
 Delegated reviewer instruction; refer to main meta Reviewer PR67 publication verified and PR69 preparation handoff.
 
@@ -2599,7 +2605,7 @@ Reviewer: Independently confirmed active67 348733a1 and allfive full checks live
 
 
 
-## Prompt 181: Preserve successor ancestry
+## Prompt 182: Preserve successor ancestry
 
 Delegated reviewer instruction; refer to latest main meta PR68 evidence and PR69 ancestry reconciliation checkpoint.
 
@@ -2608,7 +2614,7 @@ Reviewer: Sole69 generation40245246719 now live; preserve it and all predecessor
 
 
 
-## Prompt 182: Reuse contact originals
+## Prompt 183: Reuse contact originals
 
 Delegated reviewer instruction; refer to main meta PR69 phone artifact inspection and retained candidate provenance.
 
@@ -2617,7 +2623,7 @@ Reviewer: I retrieved69 phoneartifact12618696839 anddesktop12618960995 into /tmp
 
 
 
-## Prompt 183: Approve contact references
+## Prompt 184: Approve contact references
 
 Delegated reviewer instruction; refer to main meta complete PR69 independent regression inspection and approval.
 
@@ -2626,7 +2632,7 @@ Reviewer: Complete PR69 baseline inspection is finished. Independently verified 
 
 
 
-## Prompt 184: Verify then publish
+## Prompt 185: Verify then publish
 
 Delegated reviewer instruction; refer to latest main meta independent PR68 retained evidence and PR69 import/executor audits.
 
@@ -2635,7 +2641,7 @@ Reviewer: Independently verified all101 retained PR68 original captures against 
 
 
 
-## Prompt 185: Assess archive layout
+## Prompt 186: Assess archive layout
 
 Delegated reviewer instruction; refer to current main meta PR70 residual audit and required Pantheon layout assessment.
 
@@ -2644,7 +2650,7 @@ Reviewer: While sole69 strict40246963988 and predecessor CI run, prepare next or
 
 
 
-## Prompt 186: Migrate archive feature
+## Prompt 187: Migrate archive feature
 
 Delegated reviewer instruction; refer to main meta PR70 scoped numbered-feature migration approval and repaired PR69 executor audit.
 
@@ -2653,7 +2659,7 @@ Reviewer: Reviewed70 INITIAL_AUDIT at3f7f6c53 and actual Pantheon organization. 
 
 
 
-## Prompt 187: Repair renderer metadata
+## Prompt 188: Repair renderer metadata
 
 Delegated reviewer instruction; refer to main meta PR69 missing renderer metadata diagnosis and corrected strict request authorization.
 
@@ -2664,7 +2670,7 @@ Reviewer: Independently read failed69 phone121330456272 anddesktop121330456220 l
 
 
 
-## Prompt 188: Publication checkpoint reconciliation
+## Prompt 189: Publication checkpoint reconciliation
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:49 Toronto”.
 
@@ -2675,7 +2681,7 @@ Reviewer checkpoint 2026-10-22 01:49 Toronto: #67 c4a5cac attached; reviewed sco
 
 
 
-## Prompt 189: Linux candidate checkpoint
+## Prompt 190: Linux candidate checkpoint
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 01:59 Toronto”.
 
@@ -2686,7 +2692,7 @@ Reviewer CI finding 2026-10-22 01:59 Toronto: independently read completed #65 s
 
 
 
-## Prompt 190: Bounded render diagnosis
+## Prompt 191: Bounded render diagnosis
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:19 Toronto”.
 
@@ -2697,7 +2703,7 @@ Reviewer continuation 2026-10-22 03:19 Toronto: clean6c168d2 and queues empty; d
 
 
 
-## Prompt 191: Render telemetry continuation
+## Prompt 192: Render telemetry continuation
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:39 Toronto”.
 
@@ -2707,7 +2713,7 @@ Reviewer continuation 2026-10-22 03:39 Toronto: disk independently recovered to1
 
 
 
-## Prompt 192: Validate narrative identity
+## Prompt 193: Validate narrative identity
 
 Delegated reviewer instruction; refer to latest main meta PR70 generated narrative evidence-integrity review.
 
@@ -2716,7 +2722,7 @@ Reviewer code review during70 migration: featureNarrative currently accepts four
 
 
 
-## Prompt 193: Publish verified contacts
+## Prompt 194: Publish verified contacts
 
 Delegated reviewer instruction; refer to main meta corrected PR69 complete strict success and PR70 migration integrity audit.
 
@@ -2725,7 +2731,7 @@ Reviewer: Corrected69 run40247985297 now terminal SUCCESS all4cases. Independent
 
 
 
-## Prompt 194: Audit migrated evidence
+## Prompt 195: Audit migrated evidence
 
 Delegated reviewer instruction; refer to main meta immutable PR70 migration audit and preserved live PR69 artifact transfer.
 
@@ -2735,7 +2741,7 @@ Reviewer: Immutable PR70 e1602e14 audit now independently confirms all240 moved 
 
 
 
-## Prompt 195: Publish verified contacts
+## Prompt 196: Publish verified contacts
 
 Delegated reviewer instruction; also recorded during the PR70 checkpoint, refer to main meta corrected PR69 strict success and scoped migration audit.
 
@@ -2746,7 +2752,7 @@ Reviewer: Corrected69 run40247985297 now terminal SUCCESS all4cases. Independent
 
 
 
-## Prompt 196: Verify transfer status
+## Prompt 197: Verify transfer status
 
 Delegated reviewer instruction; refer to latest main meta corrected PR69 retained desktop/short verification and PR70 diagnostic-path audit.
 
@@ -2757,7 +2763,7 @@ Reviewer: Independently verified retained corrected69 desktop12620275117 andshor
 
 
 
-## Prompt 197: Prepare audited request
+## Prompt 198: Prepare audited request
 
 Delegated reviewer instruction; refer to latest main meta PR70 parent reconciliation, focused checks and PR69 complete verification audit.
 
@@ -2767,7 +2773,7 @@ Reviewer: Independently audited52856f40 reconciliation: no executable/reference 
 
 
 
-## Prompt 198: Coordinate disk recovery
+## Prompt 199: Coordinate disk recovery
 
 Delegated reviewer instruction; refer to latest supervisor main meta disk recovery and PR66 green checkpoint.
 
@@ -2777,7 +2783,7 @@ Reviewer: Disk recovery in progress by supervisor, without modifying your checko
 
 
 
-## Prompt 199: Retain cleanup provenance
+## Prompt 200: Retain cleanup provenance
 
 Delegated reviewer instruction; refer to latest supervisor main meta verified duplicate extraction recovery.
 
@@ -2787,7 +2793,7 @@ Reviewer: Cleanup complete: removed493 extracted duplicate files,355943732bytes,
 
 
 
-## Prompt 200: Dispatch audited request
+## Prompt 201: Dispatch audited request
 
 Delegated reviewer authorization; refer to main meta immutable PR70 executor/request audit.
 
@@ -2797,7 +2803,7 @@ Reviewer: Independent immutable audit PASSED for PR70 executord03b6ffd3a6e4c15c1
 
 
 
-## Prompt 201: Audit conversation residual
+## Prompt 202: Audit conversation residual
 
 Delegated reviewer instruction; refer to main meta next residual preparation while PR70 runs.
 
@@ -2807,7 +2813,7 @@ Reviewer: PR70 sole run40250936534 confirmed at exact3949145c: phone121342446563
 
 
 
-## Prompt 202: Migrate selected history
+## Prompt 203: Migrate selected history
 
 Delegated reviewer instruction; refer to latest main meta reviewed71 migration authorization.
 
@@ -2817,7 +2823,7 @@ Reviewer: Reviewed71 source-only audit/plan; independently verified all136 propo
 
 
 
-## Prompt 203: Independent story continuation
+## Prompt 204: Independent story continuation
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 03:49 Toronto”.
 
@@ -2827,7 +2833,7 @@ Reviewer continuation 2026-10-22 03:49 Toronto: clean417bb62, idle, disk13GiB. P
 
 
 
-## Prompt 204: Preserve supervisory findings
+## Prompt 205: Preserve supervisory findings
 
 Delegated reviewer instruction; refer to current71 independent working migration audit and exact supervisory log preservation.
 
@@ -2837,7 +2843,7 @@ Reviewer: Current71 working migration independently checked: all136 moved files 
 
 
 
-## Prompt 205: Retain remaining candidates
+## Prompt 206: Retain remaining candidates
 
 Delegated reviewer instruction; refer to latest main meta lossless log compression and PR70 desktop retention ownership.
 
@@ -2847,7 +2853,7 @@ Reviewer: Restored reserve by losslessly compressing old /tmp/cluster34-failure-
 
 
 
-## Prompt 206: Retain desktop disposition
+## Prompt 207: Retain desktop disposition
 
 Delegated reviewer instruction; refer to main meta PR67 green and PR70 desktop inspection.
 
@@ -2857,7 +2863,7 @@ Reviewer: PR67 now all five required checks SUCCESS, independently refreshed; 52
 
 
 
-## Prompt 207: Explain focus presentation
+## Prompt 208: Explain focus presentation
 
 Delegated reviewer instruction; refer to latest main meta PR70 phone inspection and complete candidate outcomes.
 
@@ -2867,7 +2873,7 @@ Reviewer: Previous turn made progress with desktop inspection; current turn inde
 
 
 
-## Prompt 208: Retain short approval
+## Prompt 209: Retain short approval
 
 Delegated reviewer instruction; refer to latest main meta short candidate inspection and control-state review.
 
@@ -2877,7 +2883,7 @@ Reviewer: Completed short inspection: original12621116857 size/SHA/CRC,40 extrac
 
 
 
-## Prompt 209: Diagnose phone modality
+## Prompt 210: Diagnose phone modality
 
 Delegated reviewer instruction; refer to latest main meta PR70 focus diagnostic and memory-only retention authorization.
 
@@ -2887,7 +2893,7 @@ Reviewer: Phone missing visible opener ring is not explained by DOM focus alone.
 
 
 
-## Prompt 210: Retain memory archive
+## Prompt 211: Retain memory archive
 
 Delegated reviewer instruction; refer to latest main meta PR70 focus diagnostic and memory-only retention authorization.
 
@@ -2897,7 +2903,7 @@ Reviewer: Cleanup completed:84 inherited extracted70 PNGs,55616544bytes removed 
 
 
 
-## Prompt 211: Verify normal focus
+## Prompt 212: Verify normal focus
 
 Delegated reviewer instruction; refer to main meta independent PR70 focus diagnostic inspection.
 
@@ -2909,7 +2915,7 @@ Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; r
 
 
 
-## Prompt 212: Synchronize real initialization
+## Prompt 213: Synchronize real initialization
 
 Delegated reviewer instruction; refer to main meta independent PR69 trace/server correlation and bounded readiness repair.
 
@@ -2922,7 +2928,7 @@ Reviewer: Independently correlated owner trace wallTime1792976528403/monotonic11
 
 
 
-## Prompt 213: Preserve candidate ownership
+## Prompt 214: Preserve candidate ownership
 
 Delegated reviewer instruction; refer to main meta PR68 artifact ownership and independent PR69 readiness repair review.
 
@@ -2935,7 +2941,7 @@ Reviewer: PR68 desktop and phone candidate jobs succeeded. Supervisor owns downl
 
 
 
-## Prompt 214: Retain route candidates
+## Prompt 215: Retain route candidates
 
 Delegated reviewer instruction; refer to main meta independent PR68 desktop/phone complete image comparison.
 
@@ -2947,7 +2953,7 @@ Reviewer: PR68 desktop/phone independently verified complete ZIP SHA256+CRC, pro
 
 
 
-## Prompt 215: Integrate reviewed captures
+## Prompt 216: Integrate reviewed captures
 
 Delegated reviewer instruction; refer to main meta independent normal70 phone approval and PR69 policy validation.
 
@@ -2958,7 +2964,7 @@ Reviewer: Normal70 phone artifact12621959721 independently size/SHA256/CRC verif
 
 
 
-## Prompt 216: Preserve short ownership
+## Prompt 217: Preserve short ownership
 
 Delegated reviewer instruction; refer to main meta PR68 short artifact ownership.
 
@@ -2970,7 +2976,7 @@ Reviewer: Supervisor owns newly completed PR68 short artifact12622377545 inspect
 
 
 
-## Prompt 217: Stabilize overdue acknowledgement
+## Prompt 218: Stabilize overdue acknowledgement
 
 Delegated reviewer instruction; refer to main meta PR68 trace and independent image inspection.
 
@@ -2984,7 +2990,7 @@ Reviewer: Independently inspected PR68 expected/actual/diff: change is footer pe
 
 
 
-## Prompt 218: Verify normal focus
+## Prompt 219: Verify normal focus
 
 Delegated reviewer instruction; refer to main meta independent PR70 focus diagnostic inspection.
 
@@ -2998,7 +3004,7 @@ Reviewer: Independently verified phone diagnostic12621861760 ZIP size/SHA/CRC; r
 
 
 
-## Prompt 219: Promote reviewed recovery
+## Prompt 220: Promote reviewed recovery
 
 Delegated reviewer instruction; refer to main meta complete PR68 four-size review and independent PR70 import audit.
 
@@ -3012,7 +3018,7 @@ Reviewer: Final PR68 large artifact12623245258 full size/SHA256/CRC verified,40P
 
 
 
-## Prompt 220: Preserve reviewed dispatch
+## Prompt 221: Preserve reviewed dispatch
 
 Delegated reviewer instruction; refer to main meta independent PR68 import/executor audit and four passing guard tests.
 
@@ -3025,7 +3031,7 @@ Reviewer: Independently audited committed68 import122245b2: exact four approved 
 
 
 
-## Prompt 221: Preserve exact interleaving
+## Prompt 222: Preserve exact interleaving
 
 Delegated reviewer instruction; refer to main meta independent staged parent-history diagnosis and narrowly authorized checker correction if necessary.
 
@@ -3038,7 +3044,7 @@ Reviewer: Independent read-only diagnosis of staged69 archive failure: fd041a6a 
 
 
 
-## Prompt 222: Preserve strict ownership
+## Prompt 223: Preserve strict ownership
 
 Delegated reviewer instruction; refer to main meta supervisor-owned PR70 strict desktop/phone verification.
 
@@ -3051,7 +3057,7 @@ Reviewer: Supervisor owns PR70 strict desktop12623182289 and phone12622957608 ar
 
 
 
-## Prompt 223: Preserve exact cohorts
+## Prompt 224: Preserve exact cohorts
 
 Delegated reviewer instruction; refer to main meta independently verified PR70 strict desktop/phone original artifacts and80 exact captures.
 
@@ -3064,7 +3070,7 @@ Reviewer: Supervisor-owned PR70 strict desktop12623182289/phone12622957608 verif
 
 
 
-## Prompt 224: Preserve parent verification
+## Prompt 225: Preserve parent verification
 
 Delegated reviewer instruction; refer to latest main meta exact strict cohort and canonical parent verification.
 
@@ -3077,7 +3083,7 @@ Reviewer: Independently verified c0cc9d47 preserves063f41a3 canonical prefix, ex
 
 
 
-## Prompt 225: Preserve route cohorts
+## Prompt 226: Preserve route cohorts
 
 Delegated reviewer instruction; refer to latest main meta exact strict cohort and canonical parent verification.
 
@@ -3090,7 +3096,7 @@ Reviewer: PR68 strict desktop12623490207/phone12622329353 supervisor verificatio
 
 
 
-## Prompt 226: Preserve remaining ownership
+## Prompt 227: Preserve remaining ownership
 
 Delegated reviewer instruction; refer to main meta supervisor-owned remaining68/70 strict artifacts.
 
@@ -3102,7 +3108,7 @@ Reviewer: Supervisor owns remaining short/large artifact verification for both l
 
 
 
-## Prompt 227: Preserve short strict
+## Prompt 228: Preserve short strict
 
 Delegated reviewer instruction; refer to main meta independently verified PR70 short strict capture manifest and exact40 images.
 
@@ -3113,7 +3119,7 @@ Reviewer: PR70 short strict12623466574 originalZIP size/SHA256/CRC verified;40ca
 
 
 
-## Prompt 228: Preserve complete verification
+## Prompt 229: Preserve complete verification
 
 Delegated reviewer instruction; refer to main meta complete PR70 strict160 independent artifact and image verification.
 
@@ -3125,7 +3131,7 @@ Reviewer: PR70 strict40256911000 ALL FOUR SUCCESS and independently verified all
 
 
 
-## Prompt 229: Publish verified stack
+## Prompt 230: Publish verified stack
 
 Delegated reviewer instruction; refer to main meta complete independent68/70 strict160 verification and ordered publication authorization.
 
@@ -3138,7 +3144,7 @@ Reviewer: PR68 strict40257151053 ALL FOUR SUCCESS. Supervisor independently veri
 
 
 
-## Prompt 230: Preserve final audit
+## Prompt 231: Preserve final audit
 
 Delegated reviewer instruction; refer to latest main meta independent final parent ancestry/source identity and publication progress audits.
 
@@ -3148,7 +3154,7 @@ Reviewer: Independently verified final parent ancestry1e3917e2 -> b553978c -> fc
 
 
 
-## Prompt 231: Preserve forward triage
+## Prompt 232: Preserve forward triage
 
 Delegated reviewer instruction; refer to main meta historical PR71 triage and previously reviewed numbered-feature migration scope, to resume after serialized69/70 publication.
 
@@ -3159,7 +3165,7 @@ Reviewer forward triage for PR71, after current serialized69/70 publication: ins
 
 
 
-## Prompt 232: Continue serialized publication
+## Prompt 233: Continue serialized publication
 
 Delegated reviewer instruction; refer to main meta publication progress and repeated immutable PR70 reference-tree audit.
 
@@ -3169,7 +3175,7 @@ Reviewer continuation: PR69 publication40259532297 now at Verify served revision
 
 
 
-## Prompt 233: Preserve integration review
+## Prompt 234: Preserve integration review
 
 Delegated reviewer instruction; refer to latest main meta independent PR71 integration/source/layout audit.
 
@@ -3179,7 +3185,7 @@ Reviewer PR71 integration review: independently diffed staged009-selected-histor
 
 
 
-## Prompt 234: Prepare competing drafts
+## Prompt 235: Prepare competing drafts
 
 Delegated reviewer instruction; refer to latest main meta PR72 preparation handoff while sole PR71 candidate and predecessor checks remain live.
 
@@ -3189,7 +3195,7 @@ Reviewer continuation:71 candidate40261212475 and68–70required checks remain l
 
 
 
-## Prompt 235: Next player journey
+## Prompt 236: Next player journey
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:09 Toronto”.
 
@@ -3199,7 +3205,7 @@ Reviewer continuation 2026-10-22 04:09 Toronto: #71 b590be6 attached, clean idle
 
 
 
-## Prompt 236: Preserve candidate ownership
+## Prompt 237: Preserve candidate ownership
 
 Delegated reviewer instruction; refer to main meta PR71 phone/desktop artifact ownership and exact PR72 source comparison.
 
@@ -3209,7 +3215,7 @@ Reviewer:71candidate40261212475 desktop/phone SUCCESS. Supervisor owns download/
 
 
 
-## Prompt 237: Retain partial approval
+## Prompt 238: Retain partial approval
 
 Delegated reviewer instruction; refer to latest main meta independent PR71 phone/desktop original verification and scoped visual approval.
 
@@ -3219,7 +3225,7 @@ Reviewer:71desktop/phone artifacts12624960472/12624681983 fully size/SHA256/CRC 
 
 
 
-## Prompt 238: Promote reviewed history
+## Prompt 239: Promote reviewed history
 
 Delegated reviewer instruction; refer to latest main meta complete PR71 four-size regression approval and strict-verification handoff.
 
@@ -3231,7 +3237,7 @@ Reviewer: Completed PR71 run40261212475 visual review across all four viewports:
 
 
 
-## Prompt 239: Retain strict audit
+## Prompt 240: Retain strict audit
 
 Delegated reviewer instruction; refer to latest main meta independent import/strict-executor audit and single-dispatch authorization.
 
@@ -3243,7 +3249,7 @@ Reviewer: Independently verified committed f5cfe1b0 exact40 approved PNG hashes,
 
 
 
-## Prompt 240: Preserve strict ownership
+## Prompt 241: Preserve strict ownership
 
 Delegated reviewer instruction; refer to main meta PR71 strict phone/desktop success and supervisor-owned four-artifact audit.
 
@@ -3255,7 +3261,7 @@ Reviewer: PR71 strict40262969648 phone/desktop SUCCESS; large/short live. Superv
 
 
 
-## Prompt 241: Publish verified history
+## Prompt 242: Publish verified history
 
 Delegated reviewer instruction; refer to latest main meta complete100 strict artifact audit and existing PR71 publication/PR72 carry-forward authorization.
 
@@ -3267,7 +3273,7 @@ Reviewer: PR71 strict40262969648 ALL FOUR SUCCESS. Independently verified origin
 
 
 
-## Prompt 242: Prepare explicit replacement
+## Prompt 243: Prepare explicit replacement
 
 Delegated reviewer instruction; refer to latest main meta existing PR73 preparation handoff and original source review.
 
@@ -3277,7 +3283,7 @@ Reviewer continuation: candidate72 run40264675463 and required68-71 checks are l
 
 
 
-## Prompt 243: Recovery continuation
+## Prompt 244: Recovery continuation
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:29 Toronto”.
 
@@ -3289,7 +3295,7 @@ Reviewer continuation 2026-10-22 04:29 Toronto: #72 5655ca3 attached, clean idle
 
 
 
-## Prompt 244: Retain desktop approval
+## Prompt 245: Retain desktop approval
 
 Delegated reviewer instruction; refer to latest main meta scoped PR72 desktop approval and immutable PR73 source/reference audit.
 
@@ -3299,7 +3305,7 @@ Reviewer: PR72 desktop candidate40264675463 all nine new captures individually i
 
 
 
-## Prompt 245: Prepare interrupted send
+## Prompt 246: Prepare interrupted send
 
 Delegated reviewer instruction; refer to latest main meta PR72 large regression approval and original PR74 source preparation handoff.
 
@@ -3309,7 +3315,7 @@ Reviewer continuation: PR72 large all nine new captures now individually inspect
 
 
 
-## Prompt 246: Interrupted send continuation
+## Prompt 247: Interrupted send continuation
 
 Delegated reviewer instruction, attributed to the reviewer; see meta-prompts.md “Reviewer progress — 2026-10-22 04:39 Toronto”.
 
@@ -3319,7 +3325,7 @@ Reviewer continuation 2026-10-22 04:39 Toronto: #73 17250d5 attached; independen
 
 
 
-## Prompt 247: Retain green checkpoint
+## Prompt 248: Retain green checkpoint
 
 Delegated reviewer instruction; refer to latest main meta PR68 green checkpoint, PR72 short approval and PR74 exact source audit.
 
@@ -3329,7 +3335,7 @@ Reviewer update: PR68 exacthead1e3917e2187c0ff9c2b2f8631a111165a6c85d5e now all 
 
 
 
-## Prompt 248: Preserve checkout retry
+## Prompt 249: Preserve checkout retry
 
 Delegated reviewer instruction; refer to latest main meta PR72 phone checkout infrastructure recovery.
 
@@ -3339,7 +3345,7 @@ Reviewer infrastructure recovery: PR72 phone job121384333548 TERMINAL cancelled 
 
 
 
-## Prompt 249: Recover guarded phone
+## Prompt 250: Recover guarded phone
 
 Delegated reviewer instruction; refer to latest main meta PR72 first-attempt guard failure and verified history transition.
 
@@ -3349,7 +3355,7 @@ Reviewer actionable correction: phone retry121390747427 TERMINAL failure before 
 
 
 
-## Prompt 250: Retain checker review
+## Prompt 251: Retain checker review
 
 Delegated reviewer instruction; refer to latest main meta independent prompt-checker correctness review.
 
@@ -3357,7 +3363,7 @@ Reviewer: independently reviewed six-line copiedVariants correction and focused 
 
 
 
-## Prompt 251: Import reviewed drafts
+## Prompt 252: Import reviewed drafts
 
 Delegated reviewer instruction; refer to latest main meta complete PR72 regression approval and strict verification handoff.
 
@@ -3370,7 +3376,7 @@ Reviewer: PR72 complete136 candidate review APPROVED for regression import:100 i
 
 
 
-## Prompt 252: Reviewer acknowledgement approval
+## Prompt 253: Reviewer acknowledgement approval
 
 Reviewer instruction: Import the 32 independently inspected PR74 acknowledgement candidate images from run40276175111, preserving all168 inherited images. See meta-prompts.md "Supervisor PR74 candidate approval" and retained exact hash evidence. Approval is for regression references only. Run strict200 verification without updates before publication; do not merge PRs.
 
@@ -3378,11 +3384,15 @@ Reviewer instruction: Import the 32 independently inspected PR74 acknowledgement
 
 
 
-## Prompt 253: Reviewer route references
+## Prompt 254: Reviewer route references
 
 Reviewer instruction: Promote the independently reviewed PR78 contextual route help candidates from run40519949851, artifact12743465915, source1a1e6234, preserving source-bound hashes and exact predecessor comparisons. See meta-prompts.md Supervisor PR78 corrected discard bounds and reference preparation. This approves regression references only, not design fidelity or release. Run strict verification without updates before public advancement; never merge.
 
 
-## Prompt 254: Resume green stack
+
+
+## Prompt 255: Resume green stack
 
 I believe you were in the middle of trying to make the PR stack green. Examine the most recent PR and hte next PR in the failing stack, and choose to fix the top PR if that'll be easier/less work than fixing all the intervening ones, or resume from where you were and fix up the stack PR by PR as you were.
+
+

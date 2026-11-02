@@ -2,102 +2,102 @@
   {
     "image": "010-inspect-development-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/010-inspect-development-1-builder-envoy.png",
-    "actualSha256": "09d05881ec92f1eb7e3a46d9c6e7979723befa2d7f0aa1600466df0d5bb0f363"
+    "actualSha256": "4fffd6b3a7577f7417556dc5c31f104edba23a5ac6718dbdab4136f3a90f9ccd"
   },
   {
     "image": "010-inspect-development-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/010-inspect-development-2-independent-builder.png",
-    "actualSha256": "a1c5eb3dfb44207837c1eb8b166960415db93d6ea8da8b3b1949654539a3124f"
+    "actualSha256": "f93177552f6f1d7051d3d045fbfa518824b719e217a2ce885284ede502b2f1fe"
   },
   {
     "image": "012-pending-build-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/012-pending-build-1-builder-envoy.png",
-    "actualSha256": "a88c4f029ede454368db427748b99d69d014f07d49b2e7d75f3411d5c59b4f66"
+    "actualSha256": "f79aed3ea8377f84fe527fd135a1acaf97d380df1a313782e5e043b6bc4c0192"
   },
   {
     "image": "012-pending-build-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/012-pending-build-2-independent-builder.png",
-    "actualSha256": "a1c5eb3dfb44207837c1eb8b166960415db93d6ea8da8b3b1949654539a3124f"
+    "actualSha256": "f93177552f6f1d7051d3d045fbfa518824b719e217a2ce885284ede502b2f1fe"
   },
   {
     "image": "013-recover-pending-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/013-recover-pending-1-builder-envoy.png",
-    "actualSha256": "d89f9383bf1da7111d306ca1e7d7dd9a2a1a441e912a768846b0e8bae7722745"
+    "actualSha256": "685de51fc6106ea1d2bcbd7adb0d106d2404b5036e2952dd32dccdd395ac77ac"
   },
   {
     "image": "013-recover-pending-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/013-recover-pending-2-independent-builder.png",
-    "actualSha256": "a1c5eb3dfb44207837c1eb8b166960415db93d6ea8da8b3b1949654539a3124f"
+    "actualSha256": "f93177552f6f1d7051d3d045fbfa518824b719e217a2ce885284ede502b2f1fe"
   },
   {
     "image": "015-reserve-build-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/015-reserve-build-1-builder-envoy.png",
-    "actualSha256": "ff6252b0accb374f83bde3d9bb87248898292b7db0a57be0feaf8211ea908135"
+    "actualSha256": "4d07fbb64d6f2fbe8ca8afd73c9d37b4bce4be8b46eac0e9d20455d064816512"
   },
   {
     "image": "015-reserve-build-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/015-reserve-build-2-independent-builder.png",
-    "actualSha256": "a1c5eb3dfb44207837c1eb8b166960415db93d6ea8da8b3b1949654539a3124f"
+    "actualSha256": "f93177552f6f1d7051d3d045fbfa518824b719e217a2ce885284ede502b2f1fe"
   },
   {
     "image": "016-reload-reservation-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/016-reload-reservation-1-builder-envoy.png",
-    "actualSha256": "7713eb4a8550a31a7aa6c03bd5f0fc9e1249422d468695384e0dc18a59283528"
+    "actualSha256": "54cc007c2a174d77c612eb7f2241ee66dd5f7cc62360f878b2d420ad03aa7739"
   },
   {
     "image": "016-reload-reservation-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/016-reload-reservation-2-independent-builder.png",
-    "actualSha256": "a1c5eb3dfb44207837c1eb8b166960415db93d6ea8da8b3b1949654539a3124f"
+    "actualSha256": "f93177552f6f1d7051d3d045fbfa518824b719e217a2ce885284ede502b2f1fe"
   },
   {
     "image": "018-completed-build-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/018-completed-build-1-builder-envoy.png",
-    "actualSha256": "e21106348864897950c8f975a50ff6a045e331dcdca47d921eeda3d84f045eaa"
+    "actualSha256": "f0259b507ce393966f91542387f03c92acc0c9b6e3def3122e56dba4a5cc7a8d"
   },
   {
     "image": "018-completed-build-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/018-completed-build-2-independent-builder.png",
-    "actualSha256": "72d4b2da34740bd7ea51cc96fae87e08cc3c5b3cd51e7c10b8051ed4dca47cb2"
+    "actualSha256": "3bf2a381a2ed18544e80ec2f477a2773486f3fc06d73cf6253b97c093909b5cd"
   },
   {
     "image": "019-reserve-cancellable-base-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
-    "actualSha256": "8f36bbd281b5812e971f293fd65a337e43038c33bd538b6bd2f107a8c06863e9"
+    "actualSha256": "935fe480807bb090d03175fc142bfbc5417d031f187b667048c94aebe55765ec"
   },
   {
     "image": "019-reserve-cancellable-base-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/019-reserve-cancellable-base-2-independent-builder.png",
-    "actualSha256": "72d4b2da34740bd7ea51cc96fae87e08cc3c5b3cd51e7c10b8051ed4dca47cb2"
+    "actualSha256": "3bf2a381a2ed18544e80ec2f477a2773486f3fc06d73cf6253b97c093909b5cd"
   },
   {
     "image": "020-cancel-base-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/020-cancel-base-1-builder-envoy.png",
-    "actualSha256": "13af814e0b0292ddacaca77dbcf096490eb378400a084133f0f8537a1020c620"
+    "actualSha256": "9a493b9e3f88f3505177e53c3a6067184492737a3c00c70e4dd02f7eda953279"
   },
   {
     "image": "020-cancel-base-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/020-cancel-base-2-independent-builder.png",
-    "actualSha256": "72d4b2da34740bd7ea51cc96fae87e08cc3c5b3cd51e7c10b8051ed4dca47cb2"
+    "actualSha256": "3bf2a381a2ed18544e80ec2f477a2773486f3fc06d73cf6253b97c093909b5cd"
   },
   {
     "image": "022-cancelled-base-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/022-cancelled-base-1-builder-envoy.png",
-    "actualSha256": "facb531411270bd37fd6935dc668619e753c2469556fa2f288bed3c662ce6c18"
+    "actualSha256": "670fffc9c1ada9b5c3045fc5c51f4a0481c90c40802b13d6e143f432ae4e553a"
   },
   {
     "image": "022-cancelled-base-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/022-cancelled-base-2-independent-builder.png",
-    "actualSha256": "0f07917b02529b26dc6fa40d643aa97b3ac421e5eeb746345617ad9dc36c5315"
+    "actualSha256": "2bdfa48b288652ed1f3907fb50813c68bdc9c5c3753f34e1d6981a259794c311"
   },
   {
     "image": "023-recover-settled-outcome-1-builder-envoy.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/023-recover-settled-outcome-1-builder-envoy.png",
-    "actualSha256": "cdbfe26bb40f1d16ad4c3136745ccb630578d5fa52515f0ef7902fff0b97bf11"
+    "actualSha256": "21593d5a62c28f40ad870a01bbe94b51163e67b89faa4918f70b56eaabcbe26c"
   },
   {
     "image": "023-recover-settled-outcome-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/023-recover-settled-outcome-2-independent-builder.png",
-    "actualSha256": "0f07917b02529b26dc6fa40d643aa97b3ac421e5eeb746345617ad9dc36c5315"
+    "actualSha256": "2bdfa48b288652ed1f3907fb50813c68bdc9c5c3753f34e1d6981a259794c311"
   },
   {
     "image": "024-keyboard-return-1-builder-envoy.png",
@@ -107,6 +107,6 @@
   {
     "image": "024-keyboard-return-2-independent-builder.png",
     "baseline": "../../../../../../tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/024-keyboard-return-2-independent-builder.png",
-    "actualSha256": "0f07917b02529b26dc6fa40d643aa97b3ac421e5eeb746345617ad9dc36c5315"
+    "actualSha256": "2bdfa48b288652ed1f3907fb50813c68bdc9c5c3753f34e1d6981a259794c311"
   }
 ]

@@ -1,3 +1,5 @@
+import { mkdir, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
 import { createRequire } from "node:module";
 import type {
   Page,
@@ -5,12 +7,12 @@ import type {
   WebSocketRoute,
   Locator,
 } from "@playwright/test";
-import type { Campaign } from "../../shared/campaign";
-import { test, expect } from "./story-helpers/fixtures";
-import { TestStepHelper } from "./story-helpers/test-step-helper";
-import { login, grantDeveloper } from "./helpers";
-import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
-import { constructionStoryPrefix } from "./story-helpers/construction-clock.mjs";
+import type { Campaign } from "../../../shared/campaign";
+import { test, expect } from "../helpers/fixtures";
+import { TestStepHelper } from "../helpers/test-step-helper";
+import { login, grantDeveloper } from "../../browser/helpers";
+import { admissionAt, scheduledAt } from "../../browser/story-helpers/admission-clock.mjs";
+import { constructionStoryPrefix } from "../../browser/story-helpers/construction-clock.mjs";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
 const panel = (page: Page) =>
@@ -74,7 +76,7 @@ for (const interrupted of [false, true])
       title: interrupted
         ? "Recover one construction commitment and settle its outcome"
         : "Reserve, complete and cancel developments",
-      inventory: ["UX-05", "UX-14", "UX-16"],
+      inventory: ["UX-05", "UX-14", "UX-15", "UX-16"],
       description:
         "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
     });
@@ -98,7 +100,7 @@ for (const interrupted of [false, true])
         surface: "game" as const,
       }));
     const require = createRequire(
-      new URL("../../functions/package.json", import.meta.url),
+      new URL("../../../functions/package.json", import.meta.url),
     );
     const admin = require("firebase-admin/app");
     if (!admin.getApps().length)
@@ -330,6 +332,144 @@ for (const interrupted of [false, true])
         verifications: checks(),
         views: views(),
       });
+      if (!interrupted) {
+        const privateBefore = await Promise.all([published(0), published(1)]);
+        const help = panel(owner).locator("details.construction-rules");
+        const summary = help.locator("summary");
+        const unchanged = {
+          spec: "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.",
+          check: async () => {
+            expect(await canonical()).toEqual(initial);
+            expect(await Promise.all([published(0), published(1)])).toEqual(
+              privateBefore,
+            );
+            await expect(
+              panel(owner).getByRole("radio", { name: /Training camp/ }),
+            ).toBeChecked();
+            await expect(commitment(owner)).toContainText("131");
+          },
+        };
+        await story.step("read-construction-price", {
+          actor: aliases[0],
+          description:
+            "Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity.",
+          action: async () => {
+            await rail(owner);
+            await summary.evaluate((el) =>
+              el.scrollIntoView({ block: "center" }),
+            );
+            await summary.focus();
+            await owner.keyboard.press("Enter");
+            await read(
+              owner,
+              help.getByRole("heading", { name: "Price and capacity" }),
+            );
+            await help
+              .getByRole("heading", { name: "Price and capacity" })
+              .evaluate((el) => el.scrollIntoView({ block: "start" }));
+            await read(
+              owner,
+              help.locator("p").filter({ hasText: "Here, 1 completed" }),
+            );
+          },
+          acknowledgement: {
+            spec: "The open chapter explains the real69-credit quote and8-place capacity without an order acknowledgement.",
+            check: async () => {
+              await expect(help).toHaveAttribute("open", "");
+              await expect(help).toContainText(
+                "1 completed or queued gives a quote of 69 credits",
+              );
+              await expect(help).toContainText("Capacity is 8");
+            },
+          },
+          verifications: [...checks(), unchanged],
+          views: views(),
+        });
+        for (const [slug, heading, text] of [
+          [
+            "reservation",
+            "Reservation and progress",
+            "Choosing a development spends nothing",
+          ],
+          [
+            "refund",
+            "Cancellation and control",
+            "Cancellation is a separate order",
+          ],
+        ]) {
+          await story.step(`read-construction-${slug}`, {
+            actor: aliases[0],
+            description: `Read ${heading.toLowerCase()} before committing credits.`,
+            action: async () => {
+              await rail(owner);
+              await help
+                .getByRole("heading", { name: heading })
+                .evaluate((el) => el.scrollIntoView({ block: "start" }));
+              await read(owner, help.locator("p").filter({ hasText: text }));
+            },
+            acknowledgement: {
+              spec: `The ${heading.toLowerCase()} explanation is visible inside the bounded reading panel.`,
+              check: async () => {
+                await expect(
+                  help.locator("p").filter({ hasText: text }),
+                ).toBeVisible();
+              },
+            },
+            verifications: [...checks(), unchanged],
+            views: views(),
+          });
+        }
+        await story.step("read-construction-outcomes", {
+          actor: aliases[0],
+          description:
+            "Read cancellation, control and completion boundaries while the build commitment remains available.",
+          action: async () => {
+            await read(
+              owner,
+              help.locator("p").filter({ hasText: "Read the settled outcome" }),
+            );
+          },
+          acknowledgement: {
+            spec: "The chapter explains execution-time refunds and recorded market focus, not equal-focus dividends.",
+            check: async () => {
+              await expect(help).toContainText(
+                "Progress at execution determines the refund",
+              );
+              await expect(help).toContainText(
+                "focus at the beginning of the tick",
+              );
+            },
+          },
+          verifications: [...checks(), unchanged],
+          views: views(),
+        });
+        await story.step("close-construction-rules", {
+          actor: aliases[0],
+          description:
+            "Close the chapter with the keyboard; normal and reduced motion retain the same construction decision.",
+          action: async () => {
+            await summary.evaluate((el) =>
+              el.scrollIntoView({ block: "center" }),
+            );
+            await summary.focus();
+            await owner.keyboard.press("Enter");
+            await owner.emulateMedia({ reducedMotion: "no-preference" });
+            await owner.keyboard.press("Enter");
+            await expect(help).toHaveAttribute("open", "");
+            await owner.keyboard.press("Enter");
+            await owner.emulateMedia({ reducedMotion: "reduce" });
+          },
+          acknowledgement: {
+            spec: "The chapter closes and keyboard focus remains on its opening control.",
+            check: async () => {
+              await expect(help).not.toHaveAttribute("open", "");
+              await expect(summary).toBeFocused();
+            },
+          },
+          verifications: [...checks(), unchanged],
+          views: views(),
+        });
+      }
       if (interrupted) {
         await story.harness(
           "withhold-build-delivery",
@@ -374,6 +514,51 @@ for (const interrupted of [false, true])
             spec: "The construction panel returns with the original training camp selected and pending commitment disabled.",
             check: async () => {
               await expect(panel(owner)).toBeVisible();
+              const recoveredDialog = owner.getByRole("dialog", {
+                name: "System construction panel",
+                exact: true,
+              });
+              await expect(recoveredDialog).toBeFocused();
+              const focusPath = info.outputPath("recovered-construction-focus.json");
+              await mkdir(dirname(focusPath), { recursive: true });
+              const focusFacts = await recoveredDialog.evaluate((element) => {
+                const describe = (node: Element) => {
+                  const style = getComputedStyle(node);
+                  const rect = node.getBoundingClientRect();
+                  return {
+                    tag: node.tagName,
+                    className: node.className,
+                    bounds: { x: rect.x, y: rect.y, width: rect.width, height: rect.height },
+                    overflowX: style.overflowX,
+                    overflowY: style.overflowY,
+                    outlineStyle: style.outlineStyle,
+                    outlineWidth: style.outlineWidth,
+                    outlineOffset: style.outlineOffset,
+                    outlineColor: style.outlineColor,
+                  };
+                };
+                const ancestors = [];
+                for (let parent = element.parentElement; parent; parent = parent.parentElement) {
+                  ancestors.push(describe(parent));
+                }
+                return {
+                  focused: document.activeElement === element,
+                  focusVisible: element.matches(":focus-visible"),
+                  viewport: { width: innerWidth, height: innerHeight },
+                  dialog: describe(element),
+                  ancestors,
+                };
+              });
+              expect(focusFacts.focusVisible).toBe(true);
+              expect(focusFacts.dialog.outlineStyle).toBe("solid");
+              expect(focusFacts.dialog.outlineWidth).toBe("2px");
+              expect(focusFacts.dialog.outlineOffset).toBe("-2px");
+              expect(focusFacts.dialog.outlineColor).toBe("rgb(145, 220, 236)");
+              await writeFile(focusPath, JSON.stringify(focusFacts, null, 2) + "\n");
+              await info.attach("recovered-construction-focus", {
+                path: focusPath,
+                contentType: "application/json",
+              });
               await expect(
                 panel(owner).getByRole("radio", { name: /Training camp/ }),
               ).toBeChecked();

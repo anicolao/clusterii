@@ -7061,3 +7061,17 @@ Focus hold refined from exact79source: recovered construction invokes openPanel,
 PR79 desktop initial/completed owner two pairs (four images) individually compared with exact parent SHA verification. Rules insertion/scroll composition and corrected dividend copy explain differences; amounts/outcome/actions unchanged. Evidence desktop-first-comparisons.json and desktop-first-REVIEW.md. No Linux approval. PR77 commit61230 reverified live; PR70 illustrated40308913258 remains live.
 
 PR77 integration17ce9b53 completed with prompt hook passed; four contact tests and full Svelte/TypeScript check passed. Source/reference diff unchanged from reviewed26592aee except contact fix. Push integration and review checkpoint; public77 stays unchanged pending70.
+
+
+## Supervisor PR78 integration in progress
+
+PR77 integration17ce9b53/audit652e91e5 pushed. PR70 illustrated40308913258 stilllive. Prepared78 from exacta2d0d2fc and preceding652e91e5. Merge produced PROMPT_WORK, historical meta, four large Darwin story-document and128 image-location conflicts. Re-read actual Pantheon e2e README/E2E_GUIDE and001-game-setup layout. Resolved Darwin destination to400 exact original78 files (PNG plus metadata), no pixel changes, retained Linux predecessor refs pending new candidates. Restored original78 Darwin story documentation, preserved full supervisor meta plus exact predecessor historical meta archive. Auto-merged PROMPTS has BOTH parent exact prefixes; no rewrite. PROMPT_WORK union retained. Fleet source auto-merge pending full check79448. Relocation proof /tmp/cluster-pr78-darwin-relocation.json. Public78 unchanged; no reference approval.
+
+PR78 check79448 passed: Svelte0errors0warnings, functions TypeScript, all41story policy tests and policy gate. Commit now live82618; inspect before modifying index or restarting. No public78 update yet.
+
+PR78 initial commit82618 rejected inherited continuation order. Corrected by topological union of422exact unique inherited records preserving BOTH parent sequences, plus one new continuation; no checker change/bypass. Retry68992 passed, mergeef8efcd1 committed. All product/type/story-policy checks previously passed; original Darwin bytes preserved. Push preparation checkpoint.
+
+
+## Supervisor PR79 integration preparation
+
+Prior turn progressed: PR78 ef8efcd1/021a5fce committed/pushed. PR70 illustrated40308913258 remains live. Prepare79 from exact30cf022a with preceding021a5fce. Conflicts only prompt/work/meta. Preserve original79 log prefix and append exact missing predecessor record bodies with sequential headings; archive both immutable parent logs/meta. Preserve continuation ordering by topological union. Original construction images untouched; recovered focus hold remains. No approval or public79 update.

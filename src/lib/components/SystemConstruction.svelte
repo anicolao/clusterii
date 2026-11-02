@@ -13,6 +13,7 @@
   import { rules } from "@shared/rules";
   import ActionButton from "./ActionButton.svelte";
   import Feedback from "./Feedback.svelte";
+  import ConstructionRules from "./ConstructionRules.svelte";
   let {
     chosen = $bindable<Development>("market"),
     inspect,
@@ -150,6 +151,13 @@
             </label>{/each}
         </div>
       </fieldset>
+      <ConstructionRules
+        {chosen}
+        name={names[chosen]}
+        count={count(chosen)}
+        {capacity}
+        {quote}
+      />
       <div class="queue-details">
         <h3>Construction queues</h3>
         <p>
@@ -206,8 +214,9 @@
               </li>{/each}
           </ul>{/if}
         <p class="review-note">
-          Development rules under review. Completion dividends use equal market
-          focus; new markets qualify from the following tick.
+          Development rules under review. Completion dividends use
+          beginning-of-tick markets and focus; new markets qualify from the
+          following tick.
         </p>
       </div>
     </div>

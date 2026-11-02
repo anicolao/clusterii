@@ -4,14 +4,15 @@
   "inventory": [
     "UX-05",
     "UX-14",
+    "UX-15",
     "UX-16"
   ],
   "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
   "source": {
-    "commit": "c13dce5e71022b0a58ee2b32721cb246e7bacb2c",
+    "commit": "1d75c63f410f49e486dd1181f6a1dbc656454ca6",
     "dirty": false,
     "spec": "tests/browser/construction.story.spec.ts",
-    "specSha256": "0e71ff1069ed41b3d9a3449d8cecbabbe2bc0c551f4f5988b9e967d4150f654d"
+    "specSha256": "54c0800d3466202e7ba8b07c6db7afbd3a77b5248edd86d96e5362c98ef54c93"
   },
   "mode": "verify",
   "status": "passed",

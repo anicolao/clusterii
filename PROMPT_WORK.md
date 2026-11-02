@@ -766,6 +766,12 @@ Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | R
 
 Prompt 73 | c75e9e6eaaa59fc339f550686ce994e31d96966afe1578fc12b477a299d2b6e4 | Archive all four exact contextual-help stories, register PR78 and carry CI classifications and reviewer checkpoints through 06:09.
 
+Prompt 74 | 672a0cb1d66404d4f9d4f7fe144ddf06f05a37290d1007dd5f6133f762580fc1 | Refine bounded help reading after phone candidate review and record Linux merge-tree provenance
+
+Prompt 74 | 672a0cb1d66404d4f9d4f7fe144ddf06f05a37290d1007dd5f6133f762580fc1 | Review construction help candidates separately and complete bounded Linux provenance audit
+
+Prompt 74 | 672a0cb1d66404d4f9d4f7fe144ddf06f05a37290d1007dd5f6133f762580fc1 | Archive eight exact construction journeys, record gallery regressions and carry supervisory checkpoints through 06:39
+
 Prompt 232 | d39a0c7dfdfa2370080781e95db31105f33c8cc643c7b0882fa7127b12b235fe | Preserve original PR74 ancestry and exact transport/receipt story body in feature009 with verified anchored module paths.
 
 233 | 91a56c7e62bc12d84357097873f168afa01b4c0acf851a97eb98c3ece1e42aeb | Reconcile Git-proven structural separators, preserve exact archives, retain PR68 green and PR72 short review evidence.
@@ -846,12 +852,102 @@ Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | 
 
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Record successful PR78 integration and exact ordered continuation-history reconciliation.
 
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Integrate prepared PR78 into PR79 preserving exact prompt bodies and all original construction image bytes.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Assert real recovered construction panel focus and attach outline evidence before visual capture without forcing focus.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Preserve verified emergency duplicate-retention proofs and recovered Nix execution before construction focus browser check.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record PR70 five-check success, PR71 advancement and verified retired-checkout PNG retention.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Preserve dispatched construction focus run40322426572 and exact supervisor checkpoint after green PR70.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record seven individually inspected desktop and short construction parent-head pairs with exact hash provenance.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect five short settlement and recovery-focus pairs; narrow outline discrepancy to unproven phone case.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect desktop recovery pending, completion, cancellation and settled-state visual pairs with exact provenance.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Preserve initial no-tests diagnostic failure and verified eight-story filter correction with new live CI handle.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Reconcile remaining visual inventory to38 and inspect three additional desktop parent-head pairs.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect seven remaining desktop recovery comparisons and reconcile uninspected inventory to31.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Correct recovery focus diagnostic to assert the actual named dialog, not its inner content region.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Finish ten short recovery image comparisons and reconcile remaining large viewport review inventory.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect original-resolution large initial, completed and recovered-pending comparison pairs; reconcile remaining18.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review six large ordinary cancellation and settlement pairs, recording viewer scale and remaining12 recovery views.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review four large recovery initial, pending and reserved state pairs; reconcile eight remaining views.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify eight passing construction recovery journeys and record remaining phone visible-focus evidence gap.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect four large recovery reload and cancellation comparisons; reduce uninspected inventory to four.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Persist recovery focus styling and ancestor clipping geometry as an explicit passed-run diagnostic file.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record checked durable focus evidence change and confirmed live diagnostic run40329631350.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Finish four large recovery comparisons and reconcile uninspected Darwin inventory to zero; retain focus and Linux holds.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Independently preflight prepared PR72 ancestry, unchanged production/baselines and exact inherited contact fix before publication.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect five unique Linux desktop help candidates, verify ten exact hashes and record bounded artifact provenance.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Fix clipped browser-default construction dialog focus with explicit inset cyan outline and live recovery assertions.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review ten exact Linux phone help captures and record checked inset focus fix plus live run40332542039.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect eight unique short/large Linux help renders and verify exact hash coverage for remaining20 help captures.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review seven Linux phone states and fix construction focus boundary overpaint after rejecting computed-style-only acceptance.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify PR71 all green and publish reviewed PR72 fast-forward while recording overlay diagnostic dispatch.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect remaining six unique Linux phone states and map exact duplicates while holding recovered focus render.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect eight Linux desktop construction state captures with bounded artifact provenance and exact hash approvals.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Finish desktop recovery and keyboard screenshot inspection and retain explicit focus replacement hold.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify rendered construction focus overlay at all four viewport sizes and approve corrected exact capture hashes.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify PR73 publication ancestry, unchanged reviewed baselines, inherited contact fixes and complete draft replacement story.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Reconcile all100 corrected-source phone and desktop captures against independently reviewed approved hashes.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect eight corrected-source short construction outcomes and preserve selected artifact integrity evidence.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Complete short recovery and keyboard visual inspection and reconcile all50 corrected capture approvals.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review first four corrected large outcomes and record PR72 application success with bounded provenance.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect seven remaining large ordinary cancellation, peer and keyboard images with verified exact hashes.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Review three large recovery initial states and diagnose bounded artifact HTTP503 without losing verified entries.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Inspect five corrected large recovery reservation and cancellation states and verify unchanged peer hashes.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Verify all five PR72 checks green and fast-forward reviewed PR73 onto its green parent for CI.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Complete final large recovery review and reconcile all200 corrected construction captures to explicit approvals.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Relocate unchanged construction journeys into inspected numbered feature layout and validate module anchors and policy.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Promote eight corrected Linux construction cohorts after exact200-view review matching and destination hash verification.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record source-bound migrated construction strict run40358998584 and preserve live PR73 verification handles.
+
+Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Confirm eight migrated construction journeys pass strict four-viewport verification and retain artifact provenance.
+
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Import 52 individually reviewed dependent route references from passing source-bound Linux generation, preserving 244 identical captures.
-
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Carry fully green PR77 dependent-route references into prepared PR78 without modifying its contextual-help implementation.
-
 Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Restore the complete waypoint search label and focus outline after contextual-help discard, with eight component checks and story geometry assertions.
-
 Prompt 253 | 6c3d1bfb3c6556b317a24c152baebcdb0670339fb49be2d83cd7ff5e94513adc | Preserve inherited review manifests alongside the newly promoted contextual help references.
-
 Prompt 253 | 6c3d1bfb3c6556b317a24c152baebcdb0670339fb49be2d83cd7ff5e94513adc | Archive twelve strict route walkthroughs after independent496-image decoded pixel equality verification.
+
+Prompt 255 | 4ab9faed0679d1008aac8a1c9b7a7d4050b65bd0fc588606c18d50a0391b01cc | Integrate reviewed PR78 and PR79 histories with exact committed-record preservation and unchanged gameplay assertions.

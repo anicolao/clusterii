@@ -350,3 +350,19 @@ test('archived final-record separator follows only proven later append transitio
  const combined=child+'\n'+later.replace('Prompt 3:','Prompt 5:')+'\n\n';f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
  for(const bad of [combined.replace('Second user request.','Second user request. '),combined.replace('Second user request.\n\n\n\n\n','Second user request.\n\n\n\n'),combined.replace(later.replace('Prompt 3:','Prompt 5:'),''),combined.replace('Later parent request.','Different parent request.')]) {f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
 });
+
+
+
+for (const finalAppend of [false, true]) test(`committed exact interleaving retains parent order (final append ${finalAppend})`, t => {
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const third='## Prompt 3: Third Request\n\nThird user request.\n';
+ const separator=finalAppend?'\n\n':'\n';
+ const parentLog=initial+next+separator+third;f.write(parentLog);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent requests');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);
+ const child=initial+next.replace('Second user request.','Child user request.')+next.replace('Prompt 2:','Prompt 3:')+(finalAppend?'':separator+third.replace('Prompt 3:','Prompt 4:'));
+ f.write(child);f.git('add','PROMPTS.md');f.git('commit','-qm','Existing interleaved canonical records');
+ const dir=`docs/prompt-history/${parent}`;mkdirSync(join(f.git('rev-parse','--show-toplevel').trim(),dir),{recursive:true});f.write(parentLog,`${dir}/PROMPTS.md`);f.write(JSON.stringify({sourceCommit:parent,recordSeparator:separator}),`${dir}/separator.json`);f.git('add',dir);f.write(parent+'\n','.git/MERGE_HEAD');
+ const combined=child+separator+(finalAppend?third.replace('Prompt 3:','Prompt 4:')+separator:'## Prompt 5: Later Work\n\nLater user request.\n');
+ f.write(combined);f.git('add','PROMPTS.md');assert.equal(f.check(),0);
+ for(const bad of [combined.replace('Second user request.','Second user request. '),combined.replace('Second user request.\n','Second user request.\n\n\n'),combined.replace('Second user request.','Third user request.').replace('Third Request\n\nThird user request.','Third Request\n\nSecond user request.'),combined.replace(/## Prompt 3: Followup Request\n\nSecond user request\.\n+/,'')]){f.write(bad);f.git('add','PROMPTS.md');assert.notEqual(f.check(),0);}
+});

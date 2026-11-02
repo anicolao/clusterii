@@ -4,14 +4,15 @@
   "inventory": [
     "UX-05",
     "UX-14",
+    "UX-15",
     "UX-16"
   ],
   "description": "Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.",
   "source": {
-    "commit": "c13dce5e71022b0a58ee2b32721cb246e7bacb2c",
+    "commit": "1d75c63f410f49e486dd1181f6a1dbc656454ca6",
     "dirty": false,
     "spec": "tests/browser/construction.story.spec.ts",
-    "specSha256": "0e71ff1069ed41b3d9a3449d8cecbabbe2bc0c551f4f5988b9e967d4150f654d"
+    "specSha256": "54c0800d3466202e7ba8b07c6db7afbd3a77b5248edd86d96e5362c98ef54c93"
   },
   "mode": "verify",
   "status": "passed",
@@ -150,6 +151,131 @@
       ]
     },
     {
+      "id": "read-construction-price",
+      "description": "Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The open chapter explains the real69-credit quote and8-place capacity without an order acknowledgement.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "011-read-construction-price-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "011-read-construction-price-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-construction-reservation",
+      "description": "Read reservation and progress before committing credits.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The reservation and progress explanation is visible inside the bounded reading panel.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "012-read-construction-reservation-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "012-read-construction-reservation-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-construction-refund",
+      "description": "Read cancellation and control before committing credits.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The cancellation and control explanation is visible inside the bounded reading panel.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "013-read-construction-refund-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "013-read-construction-refund-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "read-construction-outcomes",
+      "description": "Read cancellation, control and completion boundaries while the build commitment remains available.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The chapter explains execution-time refunds and recorded market focus, not equal-focus dividends.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "014-read-construction-outcomes-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "014-read-construction-outcomes-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "close-construction-rules",
+      "description": "Close the chapter with the keyboard; normal and reduced motion retain the same construction decision.",
+      "actor": "Builder envoy",
+      "kind": "player",
+      "acknowledgement": "The chapter closes and keyboard focus remains on its opening control.",
+      "verifications": [
+        "Both commitment rails remain visible before scrolling and no player has an uncaught application error.",
+        "Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.",
+        "Visible available balances equal each player's authoritative wallet.",
+        "Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order."
+      ],
+      "views": [
+        {
+          "player": "Builder envoy",
+          "image": "015-close-construction-rules-1-builder-envoy.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent builder",
+          "image": "015-close-construction-rules-2-independent-builder.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
       "id": "reserve-build",
       "description": "Read the authoritative construction acknowledgement and credit reservation.",
       "actor": "Builder envoy",
@@ -164,12 +290,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "011-reserve-build-1-builder-envoy.png",
+          "image": "016-reserve-build-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "011-reserve-build-2-independent-builder.png",
+          "image": "016-reserve-build-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -189,12 +315,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "012-reload-reservation-1-builder-envoy.png",
+          "image": "017-reload-reservation-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "012-reload-reservation-2-independent-builder.png",
+          "image": "017-reload-reservation-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -223,12 +349,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "014-completed-build-1-builder-envoy.png",
+          "image": "019-completed-build-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "014-completed-build-2-independent-builder.png",
+          "image": "019-completed-build-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -248,12 +374,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "015-reserve-cancellable-base-1-builder-envoy.png",
+          "image": "020-reserve-cancellable-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "015-reserve-cancellable-base-2-independent-builder.png",
+          "image": "020-reserve-cancellable-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -273,12 +399,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "016-cancel-base-1-builder-envoy.png",
+          "image": "021-cancel-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "016-cancel-base-2-independent-builder.png",
+          "image": "021-cancel-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -307,12 +433,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "018-cancelled-base-1-builder-envoy.png",
+          "image": "023-cancelled-base-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "018-cancelled-base-2-independent-builder.png",
+          "image": "023-cancelled-base-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -332,12 +458,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "019-recover-settled-outcome-1-builder-envoy.png",
+          "image": "024-recover-settled-outcome-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "019-recover-settled-outcome-2-independent-builder.png",
+          "image": "024-recover-settled-outcome-2-independent-builder.png",
           "verifications": []
         }
       ]
@@ -354,12 +480,12 @@
       "views": [
         {
           "player": "Builder envoy",
-          "image": "020-keyboard-return-1-builder-envoy.png",
+          "image": "025-keyboard-return-1-builder-envoy.png",
           "verifications": []
         },
         {
           "player": "Independent builder",
-          "image": "020-keyboard-return-2-independent-builder.png",
+          "image": "025-keyboard-return-2-independent-builder.png",
           "verifications": []
         }
       ]

@@ -1,6 +1,6 @@
 # Recover one construction commitment and settle its outcome
 
-**Exact comparison passed.** phone · darwin-arm64. Inventory: UX-05, UX-14, UX-16.
+**Exact comparison passed.** phone · darwin-arm64. Inventory: UX-05, UX-14, UX-15, UX-16.
 
 Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.
 
