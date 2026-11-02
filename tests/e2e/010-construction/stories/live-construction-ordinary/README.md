@@ -1,0 +1,715 @@
+# Reserve, complete and cancel developments
+
+Generated from complete four-size exact verification; regression evidence, not full design or release acceptance.
+
+Four independent players enter a real development campaign. Owner and other-player views show reservation, queued work, completion and cancellation. Encrypted mock ingress, canonical state, private grants and tick settlement are real. Fixed domain time and withheld delivery are explicitly labelled test controls. Construction price, four-advance duration, refunds and dividends remain proposed development rules; managed-key, hosted and all-layer acceptance remain separate.
+
+phone: source 38806414ba6f7aa17f3e1010b95876583ac27a96; dirty:true; spec tests/e2e/010-construction/construction.spec.ts; spec SHA256 67fcbf7d7e067c03cc0e6a97362ac0aae78b4d19ee8b236b75c001b02a3bda7f; platform linux-arm64.
+
+desktop: source 38806414ba6f7aa17f3e1010b95876583ac27a96; dirty:true; spec tests/e2e/010-construction/construction.spec.ts; spec SHA256 67fcbf7d7e067c03cc0e6a97362ac0aae78b4d19ee8b236b75c001b02a3bda7f; platform linux-arm64.
+
+large: source 38806414ba6f7aa17f3e1010b95876583ac27a96; dirty:true; spec tests/e2e/010-construction/construction.spec.ts; spec SHA256 67fcbf7d7e067c03cc0e6a97362ac0aae78b4d19ee8b236b75c001b02a3bda7f; platform linux-arm64.
+
+short: source 38806414ba6f7aa17f3e1010b95876583ac27a96; dirty:true; spec tests/e2e/010-construction/construction.spec.ts; spec SHA256 67fcbf7d7e067c03cc0e6a97362ac0aae78b4d19ee8b236b75c001b02a3bda7f; platform linux-arm64.
+
+## 1. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 2. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 3. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 4. Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 5. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 6. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 7. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 8. Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 9. Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 10. Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The development quote shows69 credits and131 after reservation, with one completed training camp.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+### phone — Builder envoy
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/010-inspect-development-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/010-inspect-development-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/010-inspect-development-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/010-inspect-development-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/010-inspect-development-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/010-inspect-development-2-independent-builder.png)
+
+## 11. Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The open chapter explains the real69-credit quote and8-place capacity without an order acknowledgement.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### phone — Builder envoy
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/011-read-construction-price-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/011-read-construction-price-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/011-read-construction-price-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/011-read-construction-price-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/011-read-construction-price-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/011-read-construction-price-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Open contextual construction rules with the keyboard and inspect the selected camp's real price and capacity. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/011-read-construction-price-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/011-read-construction-price-2-independent-builder.png)
+
+## 12. Read reservation and progress before committing credits.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The reservation and progress explanation is visible inside the bounded reading panel.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### phone — Builder envoy
+
+[![Read reservation and progress before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Read reservation and progress before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Read reservation and progress before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Read reservation and progress before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Read reservation and progress before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Read reservation and progress before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Read reservation and progress before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Read reservation and progress before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-2-independent-builder.png)
+
+## 13. Read cancellation and control before committing credits.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The cancellation and control explanation is visible inside the bounded reading panel.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### phone — Builder envoy
+
+[![Read cancellation and control before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Read cancellation and control before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Read cancellation and control before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Read cancellation and control before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Read cancellation and control before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Read cancellation and control before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Read cancellation and control before committing credits. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Read cancellation and control before committing credits. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-2-independent-builder.png)
+
+## 14. Read cancellation, control and completion boundaries while the build commitment remains available.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The chapter explains execution-time refunds and recorded market focus, not equal-focus dividends.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### phone — Builder envoy
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Read cancellation, control and completion boundaries while the build commitment remains available. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-2-independent-builder.png)
+
+## 15. Close the chapter with the keyboard; normal and reduced motion retain the same construction decision.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The chapter closes and keyboard focus remains on its opening control.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Reading help preserves the selected camp, both private views and the entire authoritative campaign without submitting an order.
+
+### phone — Builder envoy
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Close the chapter with the keyboard; normal and reduced motion retain the same construction decision. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-2-independent-builder.png)
+
+## 16. Read the authoritative construction acknowledgement and credit reservation.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Construction order accepted accompanies a queued camp eligible at tick1.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Exactly one command revision reserves69 credits; the orbital count and every other wallet are unchanged.
+
+### phone — Builder envoy
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/016-reserve-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/016-reserve-build-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/016-reserve-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/016-reserve-build-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/016-reserve-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/016-reserve-build-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/016-reserve-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/016-reserve-build-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/016-reserve-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/016-reserve-build-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Read the authoritative construction acknowledgement and credit reservation. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/016-reserve-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/016-reserve-build-2-independent-builder.png)
+
+## 17. Reload the accepted work and reopen Develop to recover the same queue and balance.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The persisted queue remains eligible at tick1 with131 credits available.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Reload creates no command, revision or additional debit.
+
+### phone — Builder envoy
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/017-reload-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/017-reload-reservation-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/017-reload-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/017-reload-reservation-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/017-reload-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/017-reload-reservation-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/017-reload-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/017-reload-reservation-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/017-reload-reservation-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/017-reload-reservation-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Reload the accepted work and reopen Develop to recover the same queue and balance. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/017-reload-reservation-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/017-reload-reservation-2-independent-builder.png)
+
+## 18. Deliver five explicit production boundaries through the actual leased tick service. The first starts the build, four subsequent advances finish it; repeat delivery must change nothing.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 19. Inspect the settled training camp and the other commander's unchanged private queue.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The authoritative completion appears and the camp count is two.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Five ticks produce the exact reserved-owner and dividend-recipient balances, with one completed camp and no queued work.
+
+### phone — Builder envoy
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/019-completed-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/019-completed-build-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/019-completed-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/019-completed-build-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/019-completed-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/019-completed-build-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/019-completed-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/019-completed-build-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/019-completed-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/019-completed-build-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/019-completed-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/019-completed-build-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/019-completed-build-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/019-completed-build-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Inspect the settled training camp and the other commander's unchanged private queue. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/019-completed-build-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/019-completed-build-2-independent-builder.png)
+
+## 20. Choose a surface base and reserve its quoted cost using the keyboard.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: A new accepted base order enters the surface queue for tick6.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] The displayed base reservation is the sole wallet debit and neither completed development count changes.
+
+### phone — Builder envoy
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Choose a surface base and reserve its quoted cost using the keyboard. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png)
+
+## 21. Request cancellation of the queued surface base. The refund waits for authoritative settlement.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: Cancellation is acknowledged for tick6 and the cancel action is disabled.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] Cancellation admission adds one revision without an early refund or a second build.
+
+### phone — Builder envoy
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/021-cancel-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/021-cancel-base-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/021-cancel-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/021-cancel-base-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/021-cancel-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/021-cancel-base-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/021-cancel-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/021-cancel-base-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/021-cancel-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/021-cancel-base-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Request cancellation of the queued surface base. The refund waits for authoritative settlement. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/021-cancel-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/021-cancel-base-2-independent-builder.png)
+
+## 22. Deliver tick6 through the real production service and repeat it to prove no second refund or production effect.
+
+Actor: **Test harness**. Harness control; not a player action.
+
+Acknowledged outcome: Explicit test control; not a player action or hosted-service certification.
+
+## 23. Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The base cancellation states its returned credits and no construction remains queued.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] The unstarted base refunds its entire reservation exactly once; only tick6 production changes each wallet and the base count is unchanged.
+
+### phone — Builder envoy
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/023-cancelled-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/023-cancelled-base-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/023-cancelled-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/023-cancelled-base-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/023-cancelled-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/023-cancelled-base-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/023-cancelled-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/023-cancelled-base-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/023-cancelled-base-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/023-cancelled-base-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Read the settled cancellation and returned credits; other players inspect only their own balances and empty queues. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/023-cancelled-base-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/023-cancelled-base-2-independent-builder.png)
+
+## 24. Reload and reopen the construction panel to inspect the persisted refund without replaying an action.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The same settled cancellation and returned credits are recovered.
+
+- [x] Both commitment rails remain visible before scrolling and no player has an uncaught application error.
+
+- [x] Other players receive no owner construction orders, cancellation IDs, paid costs or ledger in their serialized private projection.
+
+- [x] Visible available balances equal each player's authoritative wallet.
+
+- [x] The complete canonical result survives reload without another revision, build or refund.
+
+### phone — Builder envoy
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Reload and reopen the construction panel to inspect the persisted refund without replaying an action. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/024-recover-settled-outcome-2-independent-builder.png)
+
+## 25. Return to the galaxy with Escape and recover the Develop control's focus.
+
+Actor: **Builder envoy**.
+
+Acknowledged outcome: The panel closes and Develop receives keyboard focus.
+
+- [x] Leaving the instrument has no authoritative side effect.
+
+### phone — Builder envoy
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Builder envoy](../../screenshots/live-construction-ordinary/phone/linux-arm64/025-keyboard-return-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/025-keyboard-return-1-builder-envoy.png)
+
+### phone — Independent builder
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Independent builder](../../screenshots/live-construction-ordinary/phone/linux-arm64/025-keyboard-return-2-independent-builder.png)](../../screenshots/live-construction-ordinary/phone/linux-arm64/025-keyboard-return-2-independent-builder.png)
+
+### desktop — Builder envoy
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Builder envoy](../../screenshots/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-1-builder-envoy.png)
+
+### desktop — Independent builder
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Independent builder](../../screenshots/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-2-independent-builder.png)](../../screenshots/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-2-independent-builder.png)
+
+### large — Builder envoy
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Builder envoy](../../screenshots/live-construction-ordinary/large/linux-arm64/025-keyboard-return-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/025-keyboard-return-1-builder-envoy.png)
+
+### large — Independent builder
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Independent builder](../../screenshots/live-construction-ordinary/large/linux-arm64/025-keyboard-return-2-independent-builder.png)](../../screenshots/live-construction-ordinary/large/linux-arm64/025-keyboard-return-2-independent-builder.png)
+
+### short — Builder envoy
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Builder envoy](../../screenshots/live-construction-ordinary/short/linux-arm64/025-keyboard-return-1-builder-envoy.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/025-keyboard-return-1-builder-envoy.png)
+
+### short — Independent builder
+
+[![Return to the galaxy with Escape and recover the Develop control's focus. — Independent builder](../../screenshots/live-construction-ordinary/short/linux-arm64/025-keyboard-return-2-independent-builder.png)](../../screenshots/live-construction-ordinary/short/linux-arm64/025-keyboard-return-2-independent-builder.png)

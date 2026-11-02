@@ -943,3 +943,11 @@ Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Record source-bound migrated construction strict run40358998584 and preserve live PR73 verification handles.
 
 Prompt 253 | 712fbc5551237e47861ddb7ec5110fc692b498cac8eae95b8c29dcc0d62a1f18 | Confirm eight migrated construction journeys pass strict four-viewport verification and retain artifact provenance.
+
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Import 52 individually reviewed dependent route references from passing source-bound Linux generation, preserving 244 identical captures.
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Carry fully green PR77 dependent-route references into prepared PR78 without modifying its contextual-help implementation.
+Prompt 252 | ee472cec45ed72d197f684cabf99968f004b9d9f0f25b5192a4217f00ae87b98 | Restore the complete waypoint search label and focus outline after contextual-help discard, with eight component checks and story geometry assertions.
+Prompt 253 | 6c3d1bfb3c6556b317a24c152baebcdb0670339fb49be2d83cd7ff5e94513adc | Preserve inherited review manifests alongside the newly promoted contextual help references.
+Prompt 253 | 6c3d1bfb3c6556b317a24c152baebcdb0670339fb49be2d83cd7ff5e94513adc | Archive twelve strict route walkthroughs after independent496-image decoded pixel equality verification.
+
+Prompt 255 | 4ab9faed0679d1008aac8a1c9b7a7d4050b65bd0fc588606c18d50a0391b01cc | Integrate reviewed PR78 and PR79 histories with exact committed-record preservation and unchanged gameplay assertions.

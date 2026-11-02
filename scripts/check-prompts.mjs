@@ -117,6 +117,20 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     || appendedTransitions.some(([before, after]) => before === priorRecord && after === record)
     || (originals.has(record) && priorRecord === `${record}\n`);
 
+  // Existing canonical records remain valid after an interleaved child request.
+  // Only the final committed record may gain the declared append separator.
+  // New copied records still require their separator; the HEAD prefix remains protected.
+  const committedLog = trackedAt('HEAD', 'PROMPTS.md');
+  const committedRecords = records(committedLog);
+  if (staged.startsWith(committedLog) && current.length > committedRecords.length) {
+    const finalRecord = committedRecords.at(-1);
+    const appendedRecord = current[committedRecords.length - 1];
+    if (![finalRecord, `${finalRecord}\n`, `${finalRecord}\n\n`].includes(appendedRecord)) {
+      fail('Appended canonical record must retain its exact body and at most two structural LF.');
+    }
+  }
+  const retainedExact = new Set(committedRecords);
+  if (committedRecords.length) retainedExact.add(`${committedRecords.at(-1)}${separator}`);
   let cursor = 0;
   while (cursor < prior.length && same(current[cursor], prior[cursor])) cursor++;
   // Reconciled records use the exact declared structural separator (default one LF).
@@ -125,7 +139,7 @@ function preservePromptHistory(staged, previous, ref, allowArchive = false) {
     const originalRecord = record.endsWith(separator) ? record.slice(0, -separator.length) : null;
     const retainedSeparator = originalRecord !== null && originals.has(originalRecord)
       && prior[cursor] === `${originalRecord}\n`;
-    if (copiedVariants[cursor]?.has(record) || retainedSeparator) cursor++;
+    if ((record === prior[cursor] && retainedExact.has(record)) || copiedVariants[cursor]?.has(record) || retainedSeparator) cursor++;
   }
   if (cursor !== prior.length) fail('Retain every archived parent request verbatim and in order in the canonical log.');
   return true;

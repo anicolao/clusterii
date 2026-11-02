@@ -43,7 +43,12 @@
     query = "";
     draftNotice = "Draft discarded. No fleet order was sent.";
     await tick();
-    waypointSearch?.focus();
+    waypointSearch?.focus({ preventScroll: true });
+    waypointSearch?.closest("label")?.scrollIntoView({
+      block: "center",
+      inline: "nearest",
+      behavior: "instant",
+    });
   }
   let replanning = $state(false);
   const outcome = $derived(

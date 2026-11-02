@@ -3382,3 +3382,17 @@ Reviewer instruction: Import the 32 independently inspected PR74 acknowledgement
 
 
 
+
+
+## Prompt 254: Reviewer route references
+
+Reviewer instruction: Promote the independently reviewed PR78 contextual route help candidates from run40519949851, artifact12743465915, source1a1e6234, preserving source-bound hashes and exact predecessor comparisons. See meta-prompts.md Supervisor PR78 corrected discard bounds and reference preparation. This approves regression references only, not design fidelity or release. Run strict verification without updates before public advancement; never merge.
+
+
+
+
+## Prompt 255: Resume green stack
+
+I believe you were in the middle of trying to make the PR stack green. Examine the most recent PR and hte next PR in the failing stack, and choose to fix the top PR if that'll be easier/less work than fixing all the intervening ones, or resume from where you were and fix up the stack PR by PR as you were.
+
+
