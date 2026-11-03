@@ -1,0 +1,9 @@
+# Consolidated corrected-source Linux evidence
+
+Direct human Prompt388 authorizes completion, including this changed-source verification. Target975e6806a947afca1c34549db5421a69aff98f3a contains the measured fixes and retained failures. The first requestb9f4c4e2/run41700997600 is terminal failed and remains preserved; it is not replayed.
+
+One new request-only child on investigate/pr140-linux-repair-candidates-20261103 binds the committed executor parent and target tree identities. Every product, shared reducer, function, story, reference, package/lock, renderer pin and service-group implementation must equal the target. The isolated workflow reacts only to its explicit request path, uses contents:read, pinned existing Nix/Linux renderer, four non-fail-fast jobs and unchanged180-minute infrastructure envelope. Required PR workflows are untouched.
+
+Actual installed Playwright collection proves70 tests per viewport retained exactly once, partition65+2+2+1. Every group is a complete independent service lifetime, with ordinary authenticated actions and original per-test/per-step limits. No emulator reset occurs inside a journey. Existing cohort evidence ownership/merge logic preserves failed captures, traces and service logs and continues independent groups while retaining final failure exit. Empty/duplicate/changed selections, replayed requests, wrong branches, updates and retries are rejected. Twelve request/launcher/cohort tests pass. Both launcher shell files pass syntax checks. Source trees are unchanged by executor plumbing.
+
+This produces review candidates only. Every new/changed PNG needs actual inspection and source/renderer compatibility before reference promotion; successful generation is not strict acceptance. Existing API-verified original artifacts and partial failures remain intact. Mandatory full PR140 strict CI still must pass after validated reference/fix publication.
