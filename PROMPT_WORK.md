@@ -733,3 +733,5 @@ Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Retain single corrected Linux request identity and inspect exact phone entry, identity and invitation candidate originals.
 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Inspect desktop entry and gallery plus short gallery and session recovery originals with exact hash dispositions.
+
+Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Repair reproduced market focus clipping and strict diagnostic paths; retain terminal failures and inspected phone evidence.

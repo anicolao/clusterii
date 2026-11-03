@@ -7,7 +7,7 @@ export function baselinePath(
 ) {
   return info.file.includes("/tests/e2e/")
     ? resolve(dirname(info.file), "screenshots", ...name)
-    : info.snapshotPath(...name);
+    : info.snapshotPath("browser", "story-baselines", ...name);
 }
 
 /** The comparator and renderer preflight must name the identical file. */

@@ -171,7 +171,7 @@ test("Playwright comparison and manual renderer preflight resolve the same exact
   assert.match(helper, /toMatchSnapshot\(\s*snapshotName,/);
   assert.ok(
     readFileSync("playwright.stories.config.ts", "utf8").includes(
-      "{testDir}/browser/story-baselines/{arg}{ext}",
+      "{testDir}/{arg}{ext}",
     ),
   );
 });

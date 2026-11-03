@@ -2362,5 +2362,461 @@
         "reference": "tests/browser/story-baselines/identity-component-gallery/short/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png"
       }
     ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "84f5d58df75a182af8c6b32fea7b3cc7ffd7f9587e38d98336eb8af342ca6a2d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Gallery scope and sample-only explanation, navigation and action specimens readable; page continues below viewport. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.png"
+      },
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a67cf67442c0aef6a95545a0dfda295342b5020f7c96bd696afbe31492aa859a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c7084eea33d6c4421a0edfcb87e187776d8e2e32c393ecd8f8f9e6e700f766df",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "25300bc60cf68fe368b246f7c2a73f8ffea41ab8383c8e744b31897f17e5f483",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c68275b0b97a8f3f0c3d92346c5b24c62596ca9b3e471420147315e495ac4487",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "571c1500bb19d4389e352af47516d5158756347e7285af357fb68ba7e0ac574f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/006-action-primary-1-developer-primary-action-states.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "793d5b58bd9b2ebcf7b35411a77c6a70d47616a900b250b4d8e27b8e09aacecb",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c9e0d94ce67e3aa8e9e566f79800cf58179b119d2a01fc6353e3724d6a0b3633",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ccd13be2aa29afb1a25dd7ff3a987a13ab78e434e3f9468e6390053e61cf6abf",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target navigation/action/stepper specimen and full keyboard outline contained; disabled samples visibly distinct and activation count readable. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6a5c22e198dd25a712ceaad63f122c87cb91a78fb93ae5fc4e24e7a3eb6c9569",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target name/portrait specimen, selection mark, validation and pending states readable; full focused target ring contained. Neighbouring specimen content can be outside outer viewport during deliberate scrolling. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/010-identity-fields-1-developer-editable-identity.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "77a4c9a868f0f5da03c6cc718335a77c521ed69986732019acd4e291d8011c1d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target name/portrait specimen, selection mark, validation and pending states readable; full focused target ring contained. Neighbouring specimen content can be outside outer viewport during deliberate scrolling. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "14c4bb2191b5da2c27855775ee706126f840eb1459305f336a7a9122e9563a23",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target acknowledgement/conflict/reconnection text and Reconnect control readable; draft preservation is stated. Other specimen content is intentionally outside outer viewport. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a3e06e8b1b05fa22845b796c354590ff40244af091eb100f8f9635ee176db583",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Target acknowledgement/conflict/reconnection text and Reconnect control readable; draft preservation is stated. Other specimen content is intentionally outside outer viewport. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "caadf93825af8a8ff69b506bcee8db4b496ed3974fc12e2564d1287049594975",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Applied-research disclosure opens/closes with complete cyan focus rectangle, readable applied tick/history and Queue investing control. This is deliberately scrolled disclosure coverage, not a full research selection view; source steps explicitly target disclosure. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "536397cd0ccc015295fdd8aa8695b0f35e78a7c3b88d9d8b4e2453655f674165",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Applied-research disclosure opens/closes with complete cyan focus rectangle, readable applied tick/history and Queue investing control. This is deliberately scrolled disclosure coverage, not a full research selection view; source steps explicitly target disclosure. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2bdc43f115548f30013864d479f32cec11e7cd1c7f26e15b9f192b7a46643d5b",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. All six labeled decorative glyphs and assistive-technology explanation readable in narrow specimen; adjacent maintenance section distinct. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "bea8b8639ab0d0b48aff6108a88f022e48063d0b8bcd949a62bab71aed138c16",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Asset provenance statement, exact-source link and production focus/style provenance readable and fully contained in narrow specimen. Scoped regression approval only, not full design/motion/release acceptance.",
+    "covered": [
+      {
+        "story": "identity-component-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+        "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "2c6d89f588642dbe1f6161d90a6116fd6a2966dd7fda6907906b08921fd478dc",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Focused heading and invalid/unchanged allocations, status and disabled Apply remain readable; lower unfocused rows are intentionally scrollable. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "e96a4bbd05ccc2a9011f2539a33d0f849a60229043c8ba7698cb16e7557712df",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Focused heading and invalid/unchanged allocations, status and disabled Apply remain readable; lower unfocused rows are intentionally scrollable. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b7d6b51c9bbf800cb61fca0176a090ab3919e01350c6db3a68cefd53a7a19c64",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Focused heading and invalid/unchanged allocations, status and disabled Apply remain readable; lower unfocused rows are intentionally scrollable. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "e97cebf522c055fac5439c940874606991e375d1791545b027c516030a14abbd",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Focused heading and invalid/unchanged allocations, status and disabled Apply remain readable; lower unfocused rows are intentionally scrollable. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "acf6435c41a6fe6e2e188467bae6d10062b6965325d9a8486474c6b40ca9a401",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Account/session recovery status, ordinary remedy and focus control remain readable and contained; confidential campaign content absent when authorization ended. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "86f3acc4ddd90ba2f266873db8ed91ba107427f68fc2c3a695a60d6db5384ff9",
+    "disposition": "held-defect",
+    "inspection": "HOLD: Space station61 input lower border/focus outline clipped by validation/footer at y662.39; actual read-only regression reproduced15.1875px clipping. Requires source correction and changed-source inspection.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "703d2ff551fee8629e448c8982c4bf017fab4b47e8a48dfc22590db33612df54",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Account/session recovery status, ordinary remedy and focus control remain readable and contained; confidential campaign content absent when authorization ended. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ddd6ffbbae2ba0236e0fb769d476f9bfe4d3267fbdfdc4f049d05ccb22aa150b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Account/session recovery status, ordinary remedy and focus control remain readable and contained; confidential campaign content absent when authorization ended. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "e3e18798282881932c225b79164c82fa5056c05eb3242a010744192f01ef1142",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Focused heading and invalid/unchanged allocations, status and disabled Apply remain readable; lower unfocused rows are intentionally scrollable. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c839c9ca9b2aa79ea04d1942ae95d5ca72ad57c10005ef6e4c0c82399b78f2f9",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Account/session recovery status, ordinary remedy and focus control remain readable and contained; confidential campaign content absent when authorization ended. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-1-market-envoy-session-control.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-1-market-envoy-session-control.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "d778ba7f004d0f8f016d53deed81c9932e94bad100d5b310e9516b46d7d20012",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Account/session recovery status, ordinary remedy and focus control remain readable and contained; confidential campaign content absent when authorization ended. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b8dfd851ee09e7a90eb451ad5269424daf6d63c501c013f9ad754b72012d70cb",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Account/session recovery status, ordinary remedy and focus control remain readable and contained; confidential campaign content absent when authorization ended. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ed6d2e18ed69bd3a6fb7b80fe7ebe12ef95bf654735d209a59e4af4c72861186",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original at native393x852. Recovered galaxy shows saved identity, actual200credits/1.4tick, selected home/current ownership and Inspect control; no claim of full concept fidelity. Regression review only; current-source applicability and complete-family behavior still required.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png"
+      }
+    ]
   }
 ]

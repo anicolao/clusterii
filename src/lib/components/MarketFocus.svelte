@@ -82,6 +82,51 @@
     await tick();
     if (document.activeElement === document.body) commit?.focus();
   }
+  function keepFocusedControlVisible(region: HTMLDivElement) {
+    let connected = true;
+    const reveal = () => {
+      const control = document.activeElement;
+      if (
+        !connected ||
+        !region.clientHeight ||
+        !(control instanceof HTMLElement) ||
+        control === region ||
+        !region.contains(control)
+      )
+        return;
+      const bounds = control.getBoundingClientRect();
+      const viewport = region.getBoundingClientRect();
+      const style = getComputedStyle(control);
+      const ring = control.matches(":focus-visible")
+        ? Math.max(
+            0,
+            parseFloat(style.outlineWidth) + parseFloat(style.outlineOffset),
+          )
+        : 0;
+      const top = viewport.top + region.clientTop;
+      const bottom = top + region.clientHeight;
+      // Only adjust this bounded reader; preserve keyboard focus and page position.
+      if (bounds.top - ring < top)
+        region.scrollTop += Math.floor(bounds.top - ring - top);
+      else if (bounds.bottom + ring > bottom)
+        region.scrollTop += Math.ceil(bounds.bottom + ring - bottom);
+    };
+    const afterUpdate = () => {
+      void tick().then(reveal);
+    };
+    const observer = new ResizeObserver(reveal);
+    observer.observe(region);
+    region.addEventListener("focusin", afterUpdate);
+    region.addEventListener("input", afterUpdate);
+    return {
+      destroy() {
+        connected = false;
+        observer.disconnect();
+        region.removeEventListener("focusin", afterUpdate);
+        region.removeEventListener("input", afterUpdate);
+      },
+    };
+  }
   function change(type: Development, amount: number) {
     draft[type] = Math.min(100, Math.max(0, (draft[type] ?? 0) + amount));
   }
@@ -98,6 +143,7 @@
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded allocation details support keyboard scrolling.) -->
     <div
       class="focus-scroll"
+      use:keepFocusedControlVisible
       role="region"
       aria-label="Focus allocation details"
       tabindex="0"
