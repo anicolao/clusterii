@@ -1,4 +1,4 @@
-import { openForces } from "../../browser/galaxy-navigation";
+import { openForces, openGalaxyCommand } from "../../browser/galaxy-navigation";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { createRequire } from "node:module";
@@ -26,6 +26,10 @@ const orders = (p: Page) =>
   panel(p).getByRole("region", { name: "Accepted fleet orders" });
 const inspector = (p: Page) =>
   p.getByRole("complementary", { name: "Selected system" });
+const arrivalOpener = (p: Page) =>
+  p
+    .getByRole("navigation", { name: "Galaxy commands", exact: true })
+    .getByRole("button", { name: "Arrival reports", exact: true });
 const aliases = [
   "Fleet marshal",
   "Independent marshal",
@@ -780,6 +784,36 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
           const lastParagraph = routeHelp
             .locator("p")
             .filter({ hasText: "Winning orbit alone" });
+          await info.attach("arrival-rule-reading-geometry", {
+            body: JSON.stringify(
+              await lastParagraph.evaluate((element) => {
+                const result = [];
+                for (
+                  let node: Element | null = element;
+                  node;
+                  node = node.parentElement
+                ) {
+                  const box = node.getBoundingClientRect(),
+                    css = getComputedStyle(node);
+                  result.push({
+                    tag: node.tagName,
+                    className: node.className,
+                    x: box.x,
+                    y: box.y,
+                    width: box.width,
+                    height: box.height,
+                    scrollTop: node.scrollTop,
+                    scrollHeight: node.scrollHeight,
+                    clientHeight: node.clientHeight,
+                    overflow: css.overflow,
+                    clipPath: css.clipPath,
+                  });
+                }
+                return result;
+              }),
+            ),
+            contentType: "application/json",
+          });
           await expect(lastParagraph).toBeInViewport({ ratio: 1 });
           const a = await details.boundingBox(),
             b = await lastParagraph.boundingBox();
@@ -838,14 +872,23 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         .map((document: { id: string }) => document.id)
         .sort();
     const receiptsBeforeNavigation = await navigationReceipts();
-    expect(formed!.visits?.[uid]).toBeUndefined();
+    expect(formed!.visits?.[uid]).toEqual({
+      revision: initial.revision,
+      tick: 0,
+      at: scheduledAt,
+    });
     await story.step("recover-unsent-route-navigation", {
       actor: aliases[0],
       description:
-        "Leave the galaxy for Campaigns, reopen this exact campaign and the same fleet, and recover unsent waypoint intent without issuing an order.",
+        "Leave the galaxy for Campaigns, reopen this exact campaign, dismiss its return briefing without saving, and recover the same fleet and unsent waypoint intent without issuing an order.",
       action: async () => {
         await button(owner, "Back to fleets").press("Enter");
+        await button(owner, "Back to system").press("Enter");
+        await expect(
+          owner.getByRole("dialog", { name: "Fleet preparation panel" }),
+        ).toHaveCount(0);
         await button(owner, "Campaigns").focus();
+        await expect(button(owner, "Campaigns")).toBeFocused();
         await button(owner, "Campaigns").press("Enter");
         const card = owner
           .getByRole("region", { name: "Campaign directory" })
@@ -854,7 +897,16 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         await expect(card).toHaveCount(1);
         await card.focus();
         await card.press("Enter");
-        // No saved visit exists in this fixture: reopening goes directly to the galaxy.
+        // The real start reducer records tick zero. Reopening after settlement
+        // offers its briefing; dismiss it without advancing that checkpoint.
+        const briefing = owner.getByRole("region", {
+          name: "Return briefing",
+          exact: true,
+        });
+        await expect(briefing).toBeVisible();
+        await briefing
+          .getByRole("button", { name: "Back without saving", exact: true })
+          .press("Enter");
         await expect(
           owner.getByRole("region", { name: "Return briefing", exact: true }),
         ).toHaveCount(0);
@@ -1321,12 +1373,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       action: async () => {
         for (const p of [owner, peer]) {
           await button(p, "Back to system").click();
-          await inspector(p)
-            .getByRole("button", { name: "Arrival reports", exact: true })
-            .focus();
-          await inspector(p)
-            .getByRole("button", { name: "Arrival reports", exact: true })
-            .press("Enter");
+          await openGalaxyCommand(p, "Arrival reports", true);
         }
       },
       acknowledgement: {
@@ -1487,12 +1534,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
       action: async () => {
         for (const p of [owner, peer]) {
           await p.reload();
-          await inspector(p)
-            .getByRole("button", { name: "Arrival reports", exact: true })
-            .focus();
-          await inspector(p)
-            .getByRole("button", { name: "Arrival reports", exact: true })
-            .press("Enter");
+          await openGalaxyCommand(p, "Arrival reports", true);
         }
       },
       acknowledgement: {
@@ -1527,12 +1569,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
         check: async () => {
           for (const p of [owner, peer]) {
             await expect(archive(p)).toHaveCount(0);
-            await expect(
-              inspector(p).getByRole("button", {
-                name: "Arrival reports",
-                exact: true,
-              }),
-            ).toBeFocused();
+            await expect(arrivalOpener(p)).toBeFocused();
           }
         },
       },
@@ -1548,10 +1585,7 @@ test("Live fleet travel and arrival preserve private forces through recovery", a
           {
             spec: "Escape opener retains document focus, keyboard-visible outline and complete focus paint at capture.",
             check: async () => {
-              const opener = inspector(view.page).getByRole("button", {
-                name: "Arrival reports",
-                exact: true,
-              });
+              const opener = arrivalOpener(view.page);
               const focus = await opener.evaluate((element) => {
                 const style = getComputedStyle(element);
                 return {

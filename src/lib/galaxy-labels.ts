@@ -11,6 +11,7 @@ export function placeGalaxyLabels(
   labels: LabelBox[],
   width: number,
   height: number,
+  pixelRatio = 1,
 ): Map<string, { x: number; y: number }> {
   const placed: LabelBox[] = [];
   const result = new Map<string, { x: number; y: number }>();
@@ -44,6 +45,23 @@ export function placeGalaxyLabels(
           ),
         ),
       };
+      // Text sits on physical pixels, while stars retain their exact catalogue
+      // projection. Subpixel camera round trips must not leave labels at a
+      // slightly different paint origin after returning to the same viewport.
+      candidate.x = Math.max(
+        gap,
+        Math.min(
+          width - gap - label.width,
+          Math.round(candidate.x * pixelRatio) / pixelRatio,
+        ),
+      );
+      candidate.y = Math.max(
+        gap,
+        Math.min(
+          height - gap - label.height,
+          Math.round(candidate.y * pixelRatio) / pixelRatio,
+        ),
+      );
       if (
         placed.some(
           (p) =>
@@ -88,7 +106,12 @@ function createManager(root: HTMLElement) {
         height: box.height,
       };
     });
-    const placements = placeGalaxyLabels(labels, bounds.width, bounds.height);
+    const placements = placeGalaxyLabels(
+      labels,
+      bounds.width,
+      bounds.height,
+      window.devicePixelRatio || 1,
+    );
     for (const e of entries) {
       const p = placements.get(e.options.id);
       e.x = p?.x ?? 0;

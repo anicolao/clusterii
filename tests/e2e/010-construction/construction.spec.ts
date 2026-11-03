@@ -12,7 +12,10 @@ import type { Campaign } from "../../../shared/campaign";
 import { test, expect } from "../helpers/fixtures";
 import { TestStepHelper } from "../helpers/test-step-helper";
 import { login, grantDeveloper } from "../../browser/helpers";
-import { admissionAt, scheduledAt } from "../../browser/story-helpers/admission-clock.mjs";
+import {
+  admissionAt,
+  scheduledAt,
+} from "../../browser/story-helpers/admission-clock.mjs";
 import { constructionStoryPrefix } from "../../browser/story-helpers/construction-clock.mjs";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -539,7 +542,9 @@ for (const interrupted of [false, true])
           description:
             "Open the real market instrument before choosing a private allocation.",
           action: async () => {
-            await button(owner, "Back to galaxy").click();
+            await commitment(owner)
+              .getByRole("button", { name: "Back to galaxy", exact: true })
+              .click();
             await button(owner, "Economy").click();
             await button(owner, "Market focus").click();
           },
@@ -924,7 +929,9 @@ for (const interrupted of [false, true])
                 exact: true,
               });
               await expect(recoveredDialog).toBeFocused();
-              const focusPath = info.outputPath("recovered-construction-focus.json");
+              const focusPath = info.outputPath(
+                "recovered-construction-focus.json",
+              );
               await mkdir(dirname(focusPath), { recursive: true });
               const focusFacts = await recoveredDialog.evaluate((element) => {
                 const describe = (node: Element) => {
@@ -933,7 +940,12 @@ for (const interrupted of [false, true])
                   return {
                     tag: node.tagName,
                     className: node.className,
-                    bounds: { x: rect.x, y: rect.y, width: rect.width, height: rect.height },
+                    bounds: {
+                      x: rect.x,
+                      y: rect.y,
+                      width: rect.width,
+                      height: rect.height,
+                    },
                     overflowX: style.overflowX,
                     overflowY: style.overflowY,
                     outlineStyle: style.outlineStyle,
@@ -943,7 +955,11 @@ for (const interrupted of [false, true])
                   };
                 };
                 const ancestors = [];
-                for (let parent = element.parentElement; parent; parent = parent.parentElement) {
+                for (
+                  let parent = element.parentElement;
+                  parent;
+                  parent = parent.parentElement
+                ) {
                   ancestors.push(describe(parent));
                 }
                 return {
@@ -959,7 +975,10 @@ for (const interrupted of [false, true])
               expect(focusFacts.dialog.outlineWidth).toBe("2px");
               expect(focusFacts.dialog.outlineOffset).toBe("-2px");
               expect(focusFacts.dialog.outlineColor).toBe("rgb(145, 220, 236)");
-              await writeFile(focusPath, JSON.stringify(focusFacts, null, 2) + "\n");
+              await writeFile(
+                focusPath,
+                JSON.stringify(focusFacts, null, 2) + "\n",
+              );
               await info.attach("recovered-construction-focus", {
                 path: focusPath,
                 contentType: "application/json",
@@ -1218,7 +1237,9 @@ for (const interrupted of [false, true])
           description:
             "After real tick settlement, inspect the applied allocation and distinguish it from future market returns.",
           action: async () => {
-            await button(owner, "Back to galaxy").click();
+            await commitment(owner)
+              .getByRole("button", { name: "Back to galaxy", exact: true })
+              .click();
             await button(owner, "Economy").click();
             await button(owner, "Market focus").click();
             await focusPanel

@@ -802,6 +802,7 @@
     margin: 0 0 8px;
   }
   .editor-reading {
+    scroll-padding: 8px;
     min-height: 0;
     overflow: auto;
     overscroll-behavior: contain;

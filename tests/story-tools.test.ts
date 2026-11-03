@@ -159,6 +159,44 @@ test("undecodable visible images fail readiness", async () => {
     },
   );
 });
+test("offline readiness retains decoded background bytes but rejects unseen broken art", async () => {
+  let requests = 0;
+  const server = Bun.serve({
+    hostname: "127.0.0.1",
+    port: 0,
+    fetch: () => {
+      requests++;
+      return new Response(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><rect width="20" height="20" fill="gold"/></svg>',
+        {
+          headers: {
+            "content-type": "image/svg+xml",
+            "cache-control": "no-store",
+          },
+        },
+      );
+    },
+  });
+  try {
+    await fixture(
+      `<div style="width:60px;height:60px;background-image:url(http://127.0.0.1:${server.port}/known.svg)"></div>`,
+      async (page) => {
+        await page.evaluate(captureReady, []);
+        const loadedRequests = requests;
+        expect(loadedRequests).toBeGreaterThan(0);
+        await page.context().setOffline(true);
+        await page.evaluate(captureReady, []);
+        expect(requests).toBe(loadedRequests);
+        await page.locator("div").evaluate((el) => {
+          el.style.backgroundImage = 'url("data:image/png;base64,YmFk")';
+        });
+        await expect(page.evaluate(captureReady, [])).rejects.toThrow();
+      },
+    );
+  } finally {
+    server.stop(true);
+  }
+});
 test("geometry rejects undersized, overlapping and out-of-viewport controls", async () => {
   for (const [html, message] of [
     ['<button style="width:20px">Bad</button>', "under 44px"],

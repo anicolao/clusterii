@@ -828,7 +828,12 @@
   async function move(
     action: "selected" | "home" | "overview" | "in" | "out" | "left" | "right",
   ) {
-    if (action === "home" && view.own.home) selected = view.own.home;
+    if (action === "home" && view.own.home) {
+      selected = view.own.home;
+      // A full-width inspector can leave no label-sized chart aperture.
+      // Center home returns to the compact overview before measuring framing.
+      expanded = false;
+    }
     // Measure after selection and list closure, when the real inspector has settled.
     if (action === "home") await closeList();
     cameraRequest = {
@@ -943,6 +948,8 @@
     const opener = scienceOpen ? "science" : "economy";
     economy = false;
     scienceOpen = false;
+    // Return to the chart, where the accepted order acknowledgement is readable.
+    expanded = false;
     await tick();
     document.querySelector<HTMLElement>(`[data-focus="${opener}"]`)?.focus();
   }
@@ -1169,7 +1176,6 @@
       </div>{/if}
     <div
       class="chart"
-      bind:this={chartElement}
       inert={more ||
         roster ||
         listing ||
@@ -1188,7 +1194,11 @@
             ? "Recovering contact records…"
             : "Contact markers show acquired positions from loaded records."}
         </p>{/if}
-      <div class="stellar-viewport" data-galaxy-viewport>
+      <div
+        class="stellar-viewport"
+        data-galaxy-viewport
+        bind:this={chartElement}
+      >
         <Canvas renderMode="on-demand"
           ><Scene
             fleets={Object.fromEntries(
@@ -1246,7 +1256,7 @@
         <Icon kind="star" />
         {star.name}
       </h2>
-      {#if expanded}<div class="observation-access">
+      {#if expanded || observation}<div class="observation-access">
           <ActionButton
             class="quiet"
             aria-pressed={observation}
@@ -2825,7 +2835,7 @@
     max-height: calc(100% - var(--command-rail-height) - 128px);
     padding: 20px;
     border-color: #9eb9c077;
-    background: linear-gradient(145deg, #182b36ef, #07131cf5);
+    background: linear-gradient(145deg, #182b36ef, #07131cf5), #07131c;
   }
   .system-inspector:not(.expanded) .system-details :global(.world-art) {
     aspect-ratio: 1.45;

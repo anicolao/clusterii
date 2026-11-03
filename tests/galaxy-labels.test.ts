@@ -33,6 +33,26 @@ function readable(labels: LabelBox[], width: number, height: number) {
   return placed;
 }
 describe("galaxy label cartography", () => {
+  test("resize round-trip projection noise preserves the physical text origin without changing catalogue anchors", () => {
+    for (const pixelRatio of [1, 2]) {
+      const positions = [133.35598754882812, 133.35597229003906].map((y) => {
+        const label = {
+          ...box("tupa", 290.99090576171875, y),
+          width: 42.609375,
+          height: 14,
+        };
+        const original = structuredClone(label);
+        const offset = placeGalaxyLabels([label], 1024, 600, pixelRatio).get(
+          "tupa",
+        )!;
+        expect(label).toEqual(original);
+        return { x: label.x + offset.x, y: label.y + offset.y };
+      });
+      expect(positions[0]).toEqual(positions[1]);
+      expect(positions[0].x * pixelRatio).toBeInteger();
+      expect(positions[0].y * pixelRatio).toBeInteger();
+    }
+  });
   test("retained phone overlap separates home from Tupã without changing stars", () => {
     const labels = [box("tupa", 46, 155), box("tania", 11, 161, 2)];
     const original = structuredClone(labels);
