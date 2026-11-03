@@ -4569,3 +4569,10 @@ I believe you were in the middle of trying to make the PR stack green. Examine t
 you didn't finish? I want a green PR on teh top of the stack. I don't mind what approach you use, but you need to FINISH THE JOB WITHOUT QUESTIONS OR STOPPING.
 
 
+## Prompt 389: Failure evidence
+
+waht's this about retaining failures?
+
+## Prompt 390: Evidence lifetime
+
+just as long as you aren't consuming arbitrary amounts of disk space retaining artifacts beyond their useful lifetime
