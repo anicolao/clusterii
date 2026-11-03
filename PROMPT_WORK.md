@@ -725,3 +725,4 @@ Prompt 253 | 6c3d1bfb3c6556b317a24c152baebcdb0670339fb49be2d83cd7ff5e94513adc | 
 Prompt 253 | 6c3d1bfb3c6556b317a24c152baebcdb0670339fb49be2d83cd7ff5e94513adc | Archive twelve strict route walkthroughs after independent496-image decoded pixel equality verification.
 Prompt 255 | 4ab9faed0679d1008aac8a1c9b7a7d4050b65bd0fc588606c18d50a0391b01cc | Integrate reviewed PR78 and PR79 histories with exact committed-record preservation and unchanged gameplay assertions.
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Reconcile green predecessor repairs into PR140 while preserving both exact histories and all current feature assertions.
+Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Bind one complete four-viewport Linux candidate run to integrated PR140 source without reference writes or deadline changes.

@@ -1,0 +1,28 @@
+import assert from "node:assert/strict";
+import {execFileSync} from "node:child_process";
+import {readFileSync,mkdirSync,writeFileSync} from "node:fs";
+import {pathToFileURL} from "node:url";
+export const projects=["phone","desktop","large","short"];
+export function validateRequest(r, {head,parent,branch,attempt,changed}) {
+  assert.equal(r.schema,1); assert.equal(r.mode,"generate");
+  assert.equal(r.source,parent); assert.match(r.target,/^[a-f0-9]{40}$/);
+  assert.equal(branch,"investigate/pr140-linux-candidates-20261103");
+  assert.equal(String(attempt),"1"); assert.deepEqual(r.projects,projects);
+  assert.equal(r.testsPerProject,70); assert.equal(r.retries,0); assert.equal(r.updateSnapshots,"none");
+  assert.ok(head!==parent); assert.ok(changed.includes(".github/recovery/top-candidates.json"));
+  assert.ok(changed.every(p=>[".github/recovery/top-candidates.json","PROMPT_WORK.md"].includes(p)));
+}
+export function verifyRequest() {
+  const git=(...args)=>execFileSync("git",args,{encoding:"utf8"}).trim();
+  const r=JSON.parse(readFileSync(".github/recovery/top-candidates.json","utf8"));
+  const head=git("rev-parse","HEAD"),parent=git("rev-parse","HEAD^");
+  validateRequest(r,{head,parent,branch:process.env.GITHUB_REF_NAME,attempt:process.env.GITHUB_RUN_ATTEMPT,changed:git("diff","--name-only",parent,head).split("\n")});
+  for(const p of ["src","shared","functions","tests","package.json","bun.lock","nix/flake.nix","nix/flake.lock","playwright.stories.config.ts"])
+    assert.equal(git("rev-parse",`${r.target}:${p}`),git("rev-parse",`${r.source}:${p}`),`Unchanged target input ${p}`);
+  for(const [p,id] of Object.entries(r.inputs)) assert.equal(git("rev-parse",`${r.target}:${p}`),id,p);
+  assert.deepEqual(Object.keys(r.inputs).sort(),["src","shared","functions","tests","package.json","bun.lock","nix/flake.nix","nix/flake.lock","playwright.stories.config.ts"].sort());
+  mkdirSync("ci-evidence/top-candidates",{recursive:true});
+  writeFileSync("ci-evidence/top-candidates/request.json",JSON.stringify({head,...r},null,2)+"\n");
+  return r;
+}
+if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) verifyRequest();

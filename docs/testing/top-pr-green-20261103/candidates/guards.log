@@ -1,0 +1,12 @@
+✔ exact first-attempt source-bound complete candidate request (0.503458ms)
+✔ reject changed mode, source, scope, retries and snapshot updates (1.138167ms)
+✔ reject replay, unrelated branch and source mutations in request commit (1.644583ms)
+✔ outer launcher rejects empty, wrong and extra recovery arguments before creating engine (13.2255ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 56.973
