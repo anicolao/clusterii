@@ -737,3 +737,5 @@ Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Repair reproduced market focus clipping and strict diagnostic paths; retain terminal failures and inspected phone evidence.
 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Reveal real externally selected research rows; retain negative geometry evidence and sixteen complete corrected local journeys.
+
+Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Record single research Linux request and inspect exact phone admission, history, roster and waiting-state originals.

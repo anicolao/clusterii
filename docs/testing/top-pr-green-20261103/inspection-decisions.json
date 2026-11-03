@@ -3628,5 +3628,680 @@
         "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png"
       }
     ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "7279bfb29bd9b335812f2952bf7458613b6fd453fe9f525be52b56917155d960",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/002-propose-campaign-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/002-propose-campaign-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "9163fe083cfb2acf035b56c084f9cc3cc0eb7e9bc166e9bac71b52414b3377fe",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/003-created-faction-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/003-created-faction-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "2e2eaf3c008aa0dc355cc3252487f16c8e57ad4027d0a376ced6681a4db1c280",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/004-choose-portrait-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/004-choose-portrait-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "6b5a77f2421c997c7e51aea4bce245111c06a18ca05fe96ada1c883b6f0d5316",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/005-review-faction-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/005-review-faction-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "aa7eae5407334a93a44f8b4e8dab76f09ec75f0573a36f7ff5c4c19b2125d442",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/006-review-rules-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/006-review-rules-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "00391f3e23204d94339ca26358e1ce46ec2426e9f74b387e2a24f36c9cb5c6c9",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/007-read-full-briefing-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "d743a1420d3492ff9c86128eae17b63199f502151f0c71cbdb239d3145215b78",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/008-seat-confirmed-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "d55634f02a301e26c04a5fcbbc34ee4febcbcf678285e61a1f432249f00b8ea0",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/009-waiting-entry-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/009-waiting-entry-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0216bbeb5b83ccd129a66807be0090b9d316ef73c3269ed8caf1370ca05851fa",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/011-campaign-directory-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/011-campaign-directory-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "a6325c233bf5878b1ccb3ac381892fa608df054a535fbaeba4899df3f0e89f24",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/012-recover-exact-campaign-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "5d0ca0f70f9d616682e2b008b3ac82e03c3e58cf534c04784651f7d6c7f51a05",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/013-reload-membership-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/013-reload-membership-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "98dc241965a627ab06af90fc048fa5c5ca82269be94a91f0181604e007e4d972",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/014-roster-focus-return-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "10b61382a13319e0989df0484e2477a5743228d4a456dd56b8784237d3481b5d",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/015-release-seat-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/015-release-seat-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3210300b6fc57fdec6888c7f778058cd9ccac4982fece938bf01c4b23b0d15ee",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/001-pending-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/001-pending-1-developer-standard-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "e3d0cb52edb14d6b420035a1180b8ca154faa77a615001067bf25bff2985ad0b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "376cc550bf4c14808a892338555be150358fde3e8ea0537cc3d857aa95e8aefe",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "99b04219a976c512375240ff0e908d0f65270ea5983d1739bae500322b6ad8d9",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "977d87e6d34c889c4757fdb8bba824ef4be5f4f21888c2f26773634322f70cd8",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/004-paused-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/004-paused-1-developer-standard-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3c6de7e212601280a846ee81954e99ac13cab0dabb74a2fc528add48ce3cd8e6",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "fb444317c07a5f993a88e0b68c9d2b31c48fa32e9228c9cf95513c2c6c8ea517",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "35f399b47857621fe7cf2b17a96b02b4fd9dd12f011ab9b8bc0d1fdf7fdaf309",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Labelled standard/reduced component scenarios preserve readable pending/conflict/paused/reconnected/migration outcomes and complete reconnect control. Component presentation evidence is not real-service authorization or complete motion acceptance.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "168a2fbf5f66972d54593985eba0d13ca18e740a3b9eb706cbf2f0b8ad6ecf1a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/002-open-records-1-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "5a49ff3940c7408e3c04203096c52dc295cb20bd73b1cf992fb5f9466ce0efc1",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "bc443f87078410f307a58efacc6fd2ff7e43a01648cd6808b6f502ea2878ce32",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0b2acec0d4a7a43a606e305df46428ecf77328a3398d6caf7dfddc8cee0eeabe",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4715f4e3eba49d506b4a2e7261a7994fd445d3349c3c442ed232aacfc105ac12",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/007-other-device-change-1-history-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "20c69441421a951cabc9a735a44498ee719a4a38d0f77891c502d195bcc50404",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "06a5813123aacc2f27ba79d6cff12b078401c09ccf2dd1ea4fd6c7e24f9cfd05",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "d1fee7cbc0c94f57e8c3c3dc51126d5e0b609635a18829195ab07fa9fbbc1d62",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/010-offline-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/010-offline-history-1-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "9760a98aeba9ec5f94c929fd5614722b7d129019c3ad828e45633b9429551b37",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/013-return-to-galaxy-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/013-return-to-galaxy-1-history-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3bf34e5bbfa1ea42e79190044a7052a652ba7f2cfe3dd828d91d62f3eceefb01",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/014-reload-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/014-reload-history-1-history-envoy-reading-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "dfd18ee77db40855924195ec09bfcc38e5089313f37d492d1105f35a43ef34a5",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Recorded18/19 and earlier records, selected historical home/forces, newer-record notice and offline retry remain readable in deliberate bounded reading views. Full focus outline/Return visible. return-to-galaxy explicitly restores prior local Campaign resumed receipt while current rail reports later peer pause, as required by source lines429-433; do not describe that old acknowledgement as current campaign state.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-history/phone/linux-arm64/015-finish-reading-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/015-finish-reading-1-history-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "8981ba13b980b4665710a462c4ec2d99c5643ea4b3e75782b63ccce643c725b2",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-receipt-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-receipt-recovery/phone/linux-arm64/003-original-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/phone/linux-arm64/003-original-created-1-receipt-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "67088c776ea97615409184cccdfec99c1409646d1d0596268881cc816a122ea9",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-receipt-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-receipt-recovery/phone/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/phone/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "daeaca954d2c646e0a8234b20a61e37bb203f6b22d585692c46ec60b3095c800",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-receipt-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-receipt-recovery/phone/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/phone/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "1c3354311e1472183afb6461c2331984767e4ae48bc40385733651fd495e56e1",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-selection-ownership/phone/linux-arm64/003-keep-new-proposal-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/phone/linux-arm64/003-keep-new-proposal-1-selection-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "de4069b0d75b6b42b0a0bf620b594d32e2a42de71b019dd27e5b3845d9a777e2",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Campaign proposal, exact selected faction/portrait, saved/released seat, roster and return actions readable; full briefing/roster reading is split into intentional scroll positions. Existing singular seat copy and concept-fidelity gaps remain outside regression approval.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-selection-ownership/phone/linux-arm64/004-surface-current-denial-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/phone/linux-arm64/004-surface-current-denial-1-selection-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ac12b47220e51bbf26dcf46fa377903f8331f8c25247382a167862e7d413886d",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "96f7688487c49aeb168cdd02b26ecc02ee738c981b0b7bb5fb031c6177c09439",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "37bead447a6a79377876d334c181993c9fe16063cc6101533ede34b3e2a49136",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/012-read-departure-policy-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3eba49f2e69fe96018ecb23b4cdd316b46f8fe6beb9f8d0f5cd196a34f78b11f",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/013-read-rules-and-return-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "6fff78574c336cab32a943fc84ff6488af71f53f9510392722a2c3982e37674a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/015-release-saved-seat-1-tidal-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "921a54c13c69222fef4e2fab7beded16c7f3ea768ea7c24924ffe9c741372d49",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/016-rejoin-departure-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "343e4b9f55c6f2ecd713421fddf016642448f991cc3f1fd646d57403e6c9e3b4",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/019-recover-assigned-home-1-chart-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/019-recover-assigned-home-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "73a20eeb92a0ae7c3f7cfd792115cf2922137cfa8dafe1e3d81e279b20950894",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native393x852. Waiting/scheduled policy,4/4 roster,3/4 peer after owner departure, restored4/4 and actual assigned homes readable. Correct per-player viewport retained; final Roster focus ring and Inspect actions contained. Secondary content uses deliberate bounded reading positions.",
+    "covered": [
+      {
+        "story": "waiting-to-home",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/019-recover-assigned-home-2-tidal-envoy.png",
+        "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/019-recover-assigned-home-2-tidal-envoy.png"
+      }
+    ]
   }
 ]
