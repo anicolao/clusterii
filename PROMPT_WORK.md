@@ -739,3 +739,5 @@ Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Reveal real externally selected research rows; retain negative geometry evidence and sixteen complete corrected local journeys.
 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Bind four complete research journeys to the corrected external-selection source with pinned renderer and unchanged budgets.
+
+Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Request one four-size Linux research correction batch while preserving healthy complete and market candidate runs.
