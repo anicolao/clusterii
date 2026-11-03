@@ -1,0 +1,962 @@
+[
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7",
+    "disposition": "approved-regression",
+    "inspection": "Original expected and actual viewed at native 1280x720. Current signed-out entry has legible Play and Learn controls, complete title/art and no private identity. The newer compact entry composition removes obsolete introductory copy; UX-01 retains ordinary sign-in destination and confidential-preview rules. This is regression approval, not full concept-fidelity or release certification.",
+    "covered": [
+      {
+        "story": "commander-identity",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/commander-identity/short/linux-arm64/001-arrive-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/short/linux-arm64/001-arrive-1-toile.png"
+      },
+      {
+        "story": "commander-identity",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/commander-identity/short/linux-arm64/005-sign-out-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/short/linux-arm64/005-sign-out-1-toile.png"
+      },
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/identity-keyboard-return/short/linux-arm64/001-arrive-1-visitor.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/001-arrive-1-visitor.png"
+      },
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/003-preserve-destination-1-invited-envoy.png"
+      },
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/003-preserve-return-link-1-returning-envoy.png"
+      },
+      {
+        "story": "learn-and-return",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/learn-and-return/short/linux-arm64/001-enter-1-visitor.png",
+        "reference": "tests/e2e/001-entry/screenshots/learn-and-return/short/linux-arm64/001-enter-1-visitor.png"
+      },
+      {
+        "story": "learn-and-return",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/learn-and-return/short/linux-arm64/006-return-1-visitor.png",
+        "reference": "tests/e2e/001-entry/screenshots/learn-and-return/short/linux-arm64/006-return-1-visitor.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "cc35d2ba9280d9eb1718161e872e5b6fd878b1878bd991953a81c40762a30691",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 1280x720. Focused new proposal field and create action readable; lower encryption choices remain intentionally scrollable above fixed commitment, not all-content visibility.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-selection-ownership/short/linux-arm64/003-keep-new-proposal-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/short/linux-arm64/003-keep-new-proposal-1-selection-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ec9884cbb068c104a7a6b0f3a9ece42cb41bee120161d68cf4746e5abb3ccb94",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 1280x720. Current unavailable-campaign denial and focused All campaigns remedy are readable, no private campaign data shown.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-selection-ownership/short/linux-arm64/004-surface-current-denial-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/short/linux-arm64/004-surface-current-denial-1-selection-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "42e4102bf39d61d6db43d5a162a25c9f5e872023d6b5c0374a8fa874d088619f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 1280x720. Named Continue and gold focus ring complete; Play/Learn/account navigation readable, campaign identity retained.",
+    "covered": [
+      {
+        "story": "cinematic-returning-entry",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/cinematic-returning-entry/short/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/short/linux-arm64/010-return-to-entry-1-returning-envoy.png"
+      },
+      {
+        "story": "cinematic-returning-entry",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/cinematic-returning-entry/short/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/short/linux-arm64/011-reload-returning-entry-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "54ba969f0967fcef65f9b7c8155643e6aa56df3678e2251afe1684ce720535dd",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 1280x720. Real campaign, own orbit/surface, selected home label, chart, contact qualification and complete navigation readable. Commander aliases use intentional ellipses. Full design fidelity remains separate.",
+    "covered": [
+      {
+        "story": "cinematic-returning-entry",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/cinematic-returning-entry/short/linux-arm64/012-continue-campaign-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/short/linux-arm64/012-continue-campaign-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "67f740e29915d09878bdd8a4956221bf5846ba0a174d419f63ddc2b6f16caceb",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 1280x720. Signed-in identity/account links and primary actions readable; compare confirms newer compact entry arrangement replaces obsolete introductory copy without removing account access.",
+    "covered": [
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-cancelled-confirmation/short/linux-arm64/002-account-entry-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/002-account-entry-1-commander-first-device.png"
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-cancelled-confirmation/short/linux-arm64/004-close-devices-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/004-close-devices-1-commander-first-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-interrupted-recovery/short/linux-arm64/002-account-entry-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/002-account-entry-1-commander-first-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-interrupted-recovery/short/linux-arm64/004-close-devices-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/004-close-devices-1-commander-first-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0b62cb9272440ffbbd61c67e188bd246850d4ec39a4e0555a16ab3bb73f07ec6",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 1280x720. Ended-session acknowledgement and Play/Learn remain readable; private identity/account links removed. Compare confirms compact entry layout, not confidential-state leakage.",
+    "covered": [
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-1-commander-first-device.png"
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/006-end-both-sessions-2-commander-second-device.png"
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64/008-fresh-sign-in-2-commander-second-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-1-commander-first-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/010-end-both-sessions-2-commander-second-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/short/linux-arm64/012-fresh-sign-in-2-commander-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ae76c4d7164854effaa978f6b7e7e734a4b1be2eb1904ac54a8246e3fbd3f36c",
+    "disposition": "approved-regression",
+    "inspection": "Native short image individually viewed: Learn opener complete focused gold outline, Play and Learn labels readable, no private identity; compact entry matches current UX-01 interaction. Scoped exact-hash regression review, not full design or release acceptance.",
+    "covered": [
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/identity-keyboard-return/short/linux-arm64/003-return-from-learn-1-visitor.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/003-return-from-learn-1-visitor.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6c38fd205bfa470e667d0d5469bbd0f99c2aca6b74d969eb9f30937640b7918d",
+    "disposition": "approved-regression",
+    "inspection": "Native short image individually viewed: closed identity returns readable Play/Learn, Your devices and command status on entry artwork; no clipped controls or private previews. Scoped exact-hash regression review, not full design or release acceptance.",
+    "covered": [
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/identity-keyboard-return/short/linux-arm64/005-close-identity-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/005-close-identity-1-commander.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+    "disposition": "approved-regression",
+    "inspection": "Native short image individually viewed: signed-out campaign access truthfully requests sign-in, complete heading/link and development context; no fabricated identity-resave requirement. Scoped exact-hash regression review, not full design or release acceptance.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png"
+      },
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+    "disposition": "approved-regression",
+    "inspection": "Native short image individually viewed: blank commander input, all eight portraits and selected check, Close, Sign out and Save identity fully contained with readable introduction. Scoped exact-hash regression review, not full design or release acceptance.",
+    "covered": [
+      {
+        "story": "commander-identity",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/commander-identity/short/linux-arm64/002-sign-in-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/short/linux-arm64/002-sign-in-1-toile.png"
+      },
+      {
+        "story": "identity-conflict",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.png",
+        "reference": "tests/browser/story-baselines/identity-conflict/short/linux-arm64/001-first-device-sign-in-1-commander-device-one.png"
+      },
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/short/linux-arm64/004-sign-in-1-commander.png"
+      },
+      {
+        "story": "identity-pending-retry",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-pending-retry/short/linux-arm64/001-sign-in-1-commander.png"
+      },
+      {
+        "story": "identity-validation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/identity-validation/short/linux-arm64/001-sign-in-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-validation/short/linux-arm64/001-sign-in-1-commander.png"
+      },
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/004-sign-in-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+    "disposition": "approved-regression",
+    "inspection": "Native short image individually viewed: actual drafted name and selected aquatic portrait/check retained; all eight portraits and complete action/footer controls readable. Scoped exact-hash regression review, not full design or release acceptance.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/006-draft-identity-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "75dbf8d9d02ed92a6c0f38577cf5009003cf9717b49fab0b2d023dba1f791856",
+    "disposition": "approved-regression",
+    "inspection": "Native short image individually viewed: actual invitation faction page exposes four choices, occupied Heliac disabled, truthful affinity values and disabled claim; current faction header/footer contained. Scoped exact-hash regression review, not full design or release acceptance.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/007-save-and-resume-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "437c068be101a1e32d2836f26422b59238903a48251bc4a21250548f6298b782",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Selected Pelagic focus, actual affinity1.4/M and0.8/A, four faction choices and enabled claim fully visible. Scoped regression only; existing singular/plural copy and concept fidelity not declared complete.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/008-choose-faction-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b0434e2c458a407bc174406bbf60351fb3613cdde053419d64f071817d39a67a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Admitted envoy and host shown with2/4 membership and truthful waiting status; acknowledgement and three footer actions readable. Lower objective prose is intentionally offscreen within scroll reader, not complete reading approval. Scoped regression only; existing singular/plural copy and concept fidelity not declared complete.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "39ce8a54d6692f8297b59068b9c69c7bff5f33e6830af29f8968d1440ef71e26",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Host roster shows all four faction cards and two actual commanders; Close/Leave and development disclosure readable, waiting background inert/dim. Scoped regression only; existing singular/plural copy and concept fidelity not declared complete.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0f2a884533aa1f8c53eef540cdf6bb26f777d1c5661044b67c3ebd64b7d59b16",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Recovered waiting membership retains exact two commanders and2/4 count; objective and three footer actions readable, no duplicate admission claim. Scoped regression only; existing singular/plural copy and concept fidelity not declared complete.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/010-recover-seat-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8891dab2739c7e046a19255bf124593d1f1ae83da997f17cc3864ede69ad7267",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Returning envoy recovers actual2/4 membership; waiting rule/objective and three footer actions readable, no fabricated home or save requirement. Scoped regression only; existing singular/plural copy and concept fidelity not declared complete.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png"
+      },
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/005-reload-return-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/005-reload-return-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fcce0d6076a6470bf47e49527e97837be82fc38af2e0a31ede514fa1041652f4",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Recovered host roster complete2/4 commander cards, waiting status, Close/Leave and development disclosure readable; background remains dim. Scoped visual regression review; not an authorization audit or full concept approval.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9155cc5fd964bf3df2b733dc05eeedcd92d1474e85feac84ae062ba8055a4b09",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Missing invitation has truthful unavailable message and All campaigns remedy, complete command header, no private campaign facts. Scoped visual regression review; not an authorization audit or full concept approval.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/006-missing-invitation-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "75f8fcda1611d445608a3bc941684006d5c1f00b4814c3ed67b12ee0e7853e05",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Recovered directory contains actual named waiting membership2/4/128stars and complete section/Create controls. Scoped visual regression review; not an authorization audit or full concept approval.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/007-recover-directory-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/007-recover-directory-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ddc4d02817a06aaaf8b4d5019d67e8ddf66b18a61a10f3314e1ec9c047474136",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Development denial contains readable actual access explanation and Return to entry link without campaign details. Scoped visual regression review; not an authorization audit or full concept approval.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/009-denied-invitation-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "643d83b3430c6f417448c7979209339a86ab3316095ad60a00776b68be60274c",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native1280x720. Returned entry shows actual Returning envoy welcome, Play/Learn and account/device/navigation links; no overlapping text or clipped controls. Scoped visual regression review; not an authorization audit or full concept approval.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/010-recover-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/010-recover-entry-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2d9d3c31ac06ebd6fec8268304db652eb19cbc00acbbfd0fd481ebedf22fe90f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Named real campaign Continue leads Play and Learn, with complete gold keyboard focus outline; identity and account links readable without private previews. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "cinematic-returning-entry",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/cinematic-returning-entry/phone/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/phone/linux-arm64/010-return-to-entry-1-returning-envoy.png"
+      },
+      {
+        "story": "cinematic-returning-entry",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/cinematic-returning-entry/phone/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/phone/linux-arm64/011-reload-returning-entry-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e1c6347c3684c3dda7bfe58107d34bd0168b27e0e0aa917fd2aff68fe6f3b3c2",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Signed-out cinematic entry retains readable Play/Learn and complete title/art; no private identity is shown. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "commander-identity",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/commander-identity/phone/linux-arm64/001-arrive-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/phone/linux-arm64/001-arrive-1-toile.png"
+      },
+      {
+        "story": "commander-identity",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/commander-identity/phone/linux-arm64/005-sign-out-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/phone/linux-arm64/005-sign-out-1-toile.png"
+      },
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-keyboard-return/phone/linux-arm64/001-arrive-1-visitor.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/phone/linux-arm64/001-arrive-1-visitor.png"
+      },
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/003-preserve-destination-1-invited-envoy.png"
+      },
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/003-preserve-return-link-1-returning-envoy.png"
+      },
+      {
+        "story": "learn-and-return",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/learn-and-return/phone/linux-arm64/001-enter-1-visitor.png",
+        "reference": "tests/e2e/001-entry/screenshots/learn-and-return/phone/linux-arm64/001-enter-1-visitor.png"
+      },
+      {
+        "story": "learn-and-return",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/learn-and-return/phone/linux-arm64/006-return-1-visitor.png",
+        "reference": "tests/e2e/001-entry/screenshots/learn-and-return/phone/linux-arm64/006-return-1-visitor.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d7ff5ecfa83fbf997ad0fb2319fdbbe55575964d6928df6d1d2d44ee95e93f73",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Pending profile disables Play visibly while Learn remains available; no guessed saved identity is displayed. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "entry-profile-readiness",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/entry-profile-readiness/phone/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/phone/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e414ab1df938031f7766aa02cc3eb30205da20aff8cb3d7572985ebbf000ebe9",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Real empty campaign directory shows zero campaigns, create and joinable actions without clipping. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/016-released-membership-reload-1-star-envoy.png"
+      },
+      {
+        "story": "entry-profile-readiness",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/entry-profile-readiness/phone/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/phone/linux-arm64/005-ready-campaign-selection-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "99e02a3f9269927688b9b16167d11c2a83f0ab4df3101dbeaa4ebacfc341d00f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Saved Star envoy identity and selected portrait are retained; all eight portraits, Close, Sign out and Save controls fit. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "entry-profile-readiness",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/entry-profile-readiness/phone/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/phone/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b500b8eac5f14d24d4c1cb365f36b704f742b8482451473d9ac58d615dfc487f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Keyboard return has complete visible gold Learn focus outline and readable entry actions. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-keyboard-return/phone/linux-arm64/003-return-from-learn-1-visitor.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/phone/linux-arm64/003-return-from-learn-1-visitor.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e0efea6e99c13e27abdb84e4660d4702a79678cfbf5102a3ead2d707d47330bc",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Closed identity entry retains account access and no private preview; actions fit viewport. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-keyboard-return/phone/linux-arm64/005-close-identity-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/phone/linux-arm64/005-close-identity-1-commander.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Signed-out invitation access states Sign in to access your campaigns, with readable heading and sign-in link. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png"
+      },
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b64e0ffa689865c8f3305359e61a6e3480ab2c09e298ca1f41588032343b14ea",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Blank real identity editor has all eight portraits and contained name/action controls. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "commander-identity",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/commander-identity/phone/linux-arm64/002-sign-in-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/phone/linux-arm64/002-sign-in-1-toile.png"
+      },
+      {
+        "story": "identity-conflict",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-conflict/phone/linux-arm64/001-first-device-sign-in-1-commander-device-one.png",
+        "reference": "tests/browser/story-baselines/identity-conflict/phone/linux-arm64/001-first-device-sign-in-1-commander-device-one.png"
+      },
+      {
+        "story": "identity-keyboard-return",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-keyboard-return/phone/linux-arm64/004-sign-in-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/phone/linux-arm64/004-sign-in-1-commander.png"
+      },
+      {
+        "story": "identity-pending-retry",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-pending-retry/phone/linux-arm64/001-sign-in-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-pending-retry/phone/linux-arm64/001-sign-in-1-commander.png"
+      },
+      {
+        "story": "identity-validation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-validation/phone/linux-arm64/001-sign-in-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-validation/phone/linux-arm64/001-sign-in-1-commander.png"
+      },
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/004-sign-in-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/004-sign-in-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9ce4041717db4a6a3867d40633ab1c7d87769109baf352fbf0bca890bd81177d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Draft Invited envoy name and selected fourth portrait are clear; Save and Sign out remain contained. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/006-draft-identity-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/006-draft-identity-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1ddfbe1eb86183d1d1b94553287f0dbd3dab651a213b3e5f69833bca12aaa22d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Occupied Heliac choice shows zero seats and disabled claim, with truthful affinity explanation and readable faction choices. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/007-save-and-resume-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "55c8e132a1a10764309bfe835ccfccbd1b5524dd40098b90758499c34243d99d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Available Pelagic choice shows one seat and enabled Claim; modifiers and production-only qualification are readable. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/008-choose-faction-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/008-choose-faction-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3c3b9ee2e8ef24d14e3aa96eb38d32e5394f537b668b6342fe2c2d13ea74b00f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Confirmed real seat and two-player roster are readable with Roster/Campaigns/Leave actions; objective is partially outside bounded reading area, not claimed complete-content visibility. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0e50da1519b12f34596861fb341410f3c1991d7778a25797f4b2a80dcbe0a1bf",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Host roster exposes all four factions, two real participants, remaining seats and complete Close/Leave controls. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-2-invitation-host.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f30410f52c471cacaf138c590ab4ed95c269d0b395524d48fb39cf1a15962f23",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Recovered membership retains same two participants, waiting state, objective and navigation without duplicate admission. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/010-recover-seat-1-invited-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/010-recover-seat-1-invited-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "98edc5248339419d9b26837e67bdc5dd1c5b1ebffbc49a15e989d3d8da47f88d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Returning membership retains same saved participant and campaign with no extra seat; objective and navigation readable. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png"
+      },
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/005-reload-return-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/005-reload-return-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a46d85a8675a34cb57b07a733eef41007edb34782832fbd620515fffb3bdbc07",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Host roster confirms retained returning participant, faction counts and full controls. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/004-authenticate-and-resume-2-invitation-host.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "01922527797701fd5dc931e3e762e56f740fc3a9e49b4683f574a7ab535ab9c7",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Unavailable invitation gives readable recovery guidance and All campaigns action without protected content. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/006-missing-invitation-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b0f5415dff0e80a645de24098bab2057eaed5f878a4006678ff86d985bcb348d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Directory presents the real waiting campaign and two-of-four roster count; card and navigation contained. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/007-recover-directory-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/007-recover-directory-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8f7289e634ae7d216067f68e64228db235a03c88038b4df0ef207cfa205286b3",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Development entitlement denial has explicit reason and Return to entry; no private campaign content. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/009-denied-invitation-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d38f6abc47e91d258506c3a5b8ac2187ec969716e6b85d55fa70210a9ef5f985",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Entry after denial retains returning identity/account links while omitting unavailable Continue. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "invitation-returning-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/010-recover-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/010-recover-entry-1-returning-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "46d86c20e4c1ef22457b4434d8e61081927585d6c6523b339884f3709ff64406",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Account entry names retained commander; all account links and Play/Learn readable. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-cancelled-confirmation/phone/linux-arm64/002-account-entry-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/phone/linux-arm64/002-account-entry-1-commander-first-device.png"
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-cancelled-confirmation/phone/linux-arm64/004-close-devices-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/phone/linux-arm64/004-close-devices-1-commander-first-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-interrupted-recovery/phone/linux-arm64/002-account-entry-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/phone/linux-arm64/002-account-entry-1-commander-first-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-interrupted-recovery/phone/linux-arm64/004-close-devices-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/phone/linux-arm64/004-close-devices-1-commander-first-device.png"
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7d7f2fe6eba70a5d1b344e4d26d6e4892ea846917c0a9812e5fe463d08d62794",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native 393x852. Ended-session entry explicitly asks sign-in with no private identity; Play/Learn and status fully visible. UX-01/02 and preserved identity/recovery rules checked. Scoped regression approval, not full design, motion, privacy-proof or release certification; transfer only by exact hash and compatible source/renderer.",
+    "covered": [
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-cancelled-confirmation/phone/linux-arm64/006-end-both-sessions-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/phone/linux-arm64/006-end-both-sessions-1-commander-first-device.png"
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-cancelled-confirmation/phone/linux-arm64/006-end-both-sessions-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/phone/linux-arm64/006-end-both-sessions-2-commander-second-device.png"
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-cancelled-confirmation/phone/linux-arm64/008-fresh-sign-in-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/phone/linux-arm64/008-fresh-sign-in-2-commander-second-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-interrupted-recovery/phone/linux-arm64/010-end-both-sessions-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/phone/linux-arm64/010-end-both-sessions-1-commander-first-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-interrupted-recovery/phone/linux-arm64/010-end-both-sessions-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/phone/linux-arm64/010-end-both-sessions-2-commander-second-device.png"
+      },
+      {
+        "story": "session-interrupted-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-interrupted-recovery/phone/linux-arm64/012-fresh-sign-in-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-interrupted-recovery/phone/linux-arm64/012-fresh-sign-in-2-commander-second-device.png"
+      }
+    ]
+  }
+]
