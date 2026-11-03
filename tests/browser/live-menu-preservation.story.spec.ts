@@ -90,7 +90,16 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
   const keyboard = async (page: Page, name: string) => {
     if (name === "Systems list" || name === "Economy")
       return openGalaxyCommand(page, name, true);
+    if (name === "Menu") {
+      const more = button(page, "More");
+      if ((await more.getAttribute("aria-expanded")) === "true") {
+        await more.focus();
+        await page.keyboard.press("Escape");
+        await expect(more).toHaveAttribute("aria-expanded", "false");
+      }
+    }
     await button(page, name).focus();
+    await expect(button(page, name)).toBeFocused();
     await page.keyboard.press("Enter");
   };
   const openFocus = async (page: Page) => {

@@ -727,3 +727,5 @@ Prompt 255 | 4ab9faed0679d1008aac8a1c9b7a7d4050b65bd0fc588606c18d50a0391b01cc | 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Reconcile green predecessor repairs into PR140 while preserving both exact histories and all current feature assertions.
 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Diagnose retained full Linux candidate failures and repair exact control scope without changing assertions or deadlines.
+
+Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Resolve completed Linux phone-only dock, focus and camera failures while preserving every original check.

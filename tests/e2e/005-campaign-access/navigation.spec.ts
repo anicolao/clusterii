@@ -644,7 +644,6 @@ test("An active commander filters stars, orbits by keyboard and inspects a clipp
     description:
       "Open Systems list and filter the authoritative catalogue to O-class stars.",
     action: async () => {
-      before = await page.locator(".star-label").boundingBox();
       await openGalaxyCommand(page, "Systems list", true);
       await page
         .getByRole("combobox", { name: "Stellar class", exact: true })
@@ -690,11 +689,21 @@ test("An active commander filters stars, orbits by keyboard and inspects a clipp
   await story.step("expand-camera-controls", {
     actor: "Star envoy",
     description:
-      "Restore all stellar classes and expand Camera controls using the keyboard.",
+      "Restore all stellar classes, frame Overview through the real camera control, then reopen Camera controls. The selected home is no longer the orbit pivot, so its movement measures the actual rotation at every viewport.",
     action: async () => {
       await page
         .getByRole("combobox", { name: "Stellar class", exact: true })
         .selectOption("all");
+      await page.getByText("Camera controls", { exact: true }).focus();
+      await page.keyboard.press("Enter");
+      await button(page, "Overview").focus();
+      await button(page, "Overview").press("Enter");
+      await expect(button(page, "Close list")).toHaveCount(0);
+      await expect(button(page, "Systems list")).toBeFocused();
+      await expect(page.locator(".star-label")).toBeVisible();
+      before = await page.locator(".star-label").boundingBox();
+      expect(before).not.toBeNull();
+      await openGalaxyCommand(page, "Systems list", true);
       await page.getByText("Camera controls", { exact: true }).focus();
       await page.keyboard.press("Enter");
     },

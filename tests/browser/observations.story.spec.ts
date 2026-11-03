@@ -649,12 +649,27 @@ test("Live stellar observations retain private current and historical facts afte
       description:
         "Use the systems list and Center home control with the keyboard to discover the home system independently of secondary map labels.",
       action: async () => {
+        if (!(await button(owner, "Systems list").isVisible())) {
+          await button(owner, "More").focus();
+          await button(owner, "More").press("Enter");
+        }
         await button(owner, "Systems list").focus();
         await button(owner, "Systems list").press("Enter");
         await button(owner, "Center home").focus();
         await button(owner, "Center home").press("Enter");
         await expect(button(owner, "Close list")).toHaveCount(0);
         await expect(button(owner, "Systems list")).toBeFocused();
+        if (
+          (await button(owner, "More").getAttribute("aria-expanded")) === "true"
+        ) {
+          await button(owner, "More").focus();
+          await owner.keyboard.press("Escape");
+          await expect(button(owner, "More")).toBeFocused();
+          await expect(button(owner, "More")).toHaveAttribute(
+            "aria-expanded",
+            "false",
+          );
+        }
       },
       acknowledgement: {
         spec: "The authoritative home system is selected and its priority label is readable.",

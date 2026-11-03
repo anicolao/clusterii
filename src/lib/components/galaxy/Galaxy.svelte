@@ -352,7 +352,16 @@
     historySerial++;
     historyLoading = false;
     await tick();
-    document.querySelector<HTMLElement>('[data-focus="history"]')?.focus();
+    const historyControl = document.querySelector<HTMLElement>(
+      '[data-focus="history"]',
+    );
+    // Automatically opened return briefings have no previously open phone tray.
+    // Reveal the real History destination before restoring keyboard focus.
+    if (historyControl && !historyControl.checkVisibility()) {
+      more = true;
+      await tick();
+    }
+    historyControl?.focus();
   }
   async function inspectBriefing(event: BriefingEvent) {
     briefingOpen = false;

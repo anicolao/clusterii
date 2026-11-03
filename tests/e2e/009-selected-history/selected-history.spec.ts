@@ -1,4 +1,5 @@
 import { createRequire } from "node:module";
+import { openGalaxyCommand } from "../../browser/galaxy-navigation";
 import type { Page, BrowserContext, Locator } from "@playwright/test";
 import { test, expect } from "../helpers/fixtures";
 import { TestStepHelper } from "../helpers/test-step-helper";
@@ -668,8 +669,7 @@ test("Selected history reaches only a consenting commander and survives reload",
         "Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible.",
       action: async () => {
         await guest.reload();
-        await button(guest, "History").focus();
-        await guest.keyboard.press("Enter");
+        await openGalaxyCommand(guest, "History", true);
         await expect(receivedRecord).toBeVisible();
         await receivedRecord.locator("summary").focus();
         await guest.keyboard.press("Enter");
