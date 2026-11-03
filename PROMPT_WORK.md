@@ -745,3 +745,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record the responsive Linux request and inspect corrected research originals with exact source and hash provenance.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind one Linux request to corrected retry geometry and the phone chart gesture, preserving exact collection and renderer guards.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request the single corrected Linux retry and phone chart candidate execution after exact collection and rejection checks.
