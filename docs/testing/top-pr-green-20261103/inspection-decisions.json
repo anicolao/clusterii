@@ -4303,5 +4303,20 @@
         "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/019-recover-assigned-home-2-tidal-envoy.png"
       }
     ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "2b90d63b53950f1cd532712f78f9070fa981e134b8cbc1ca3226841e1f4bfad0",
+    "disposition": "approved-regression",
+    "inspection": "Original 3840x2160 viewed at tool-downscaled 2048x1152. Complete focused Space station 61 input and outline contained; blank Base draft, 111/100 allocation warning and disabled Apply retained, selected system and navigation readable. Scoped layout/content regression inspection, not native-pixel or full design acceptance. This passed account-isolation family is separate from failed menu journey.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+      }
+    ]
   }
 ]

@@ -660,6 +660,7 @@ test("Live stellar observations retain private current and historical facts afte
         await expect(button(owner, "Close list")).toHaveCount(0);
         await expect(button(owner, "Systems list")).toBeFocused();
         if (
+          (await button(owner, "More").isVisible()) &&
           (await button(owner, "More").getAttribute("aria-expanded")) === "true"
         ) {
           await button(owner, "More").focus();
