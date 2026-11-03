@@ -737,3 +737,5 @@ Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Repair reproduced market focus clipping and strict diagnostic paths; retain terminal failures and inspected phone evidence.
 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Bind a separate four-journey Linux market correction request without repeating the running complete candidate suite.
+
+Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Submit the single source-bound four-size market focus correction request; preserve earlier complete-suite jobs.
