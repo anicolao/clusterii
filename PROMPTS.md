@@ -3396,3 +3396,6 @@ Reviewer instruction: Promote the independently reviewed PR78 contextual route h
 I believe you were in the middle of trying to make the PR stack green. Examine the most recent PR and hte next PR in the failing stack, and choose to fix the top PR if that'll be easier/less work than fixing all the intervening ones, or resume from where you were and fix up the stack PR by PR as you were.
 
 
+## Prompt 256: Finish green stack
+
+you didn't finish? I want a green PR on teh top of the stack. I don't mind what approach you use, but you need to FINISH THE JOB WITHOUT QUESTIONS OR STOPPING.
