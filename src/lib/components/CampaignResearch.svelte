@@ -276,9 +276,11 @@
       preserved.
     </p>{/if}
   {#if message || error}<Feedback {message} {error} {inspect} {errorId} />{/if}
-  {#if onretry}<ActionButton class="secondary" onclick={onretry}
-      >Retry acknowledgement</ActionButton
-    >{/if}
+  {#if onretry}<div class="research-retry">
+      <ActionButton class="secondary" onclick={onretry}
+        >Retry acknowledgement</ActionButton
+      >
+    </div>{/if}
   {#if research.orders?.length}<section aria-label="Accepted research orders">
       <h4>Scheduled selections</h4>
       <ol>
@@ -308,6 +310,9 @@
 </section>
 
 <style>
+  .research-retry {
+    margin: 12px;
+  }
   summary {
     min-height: 44px;
     padding: 12px 0;

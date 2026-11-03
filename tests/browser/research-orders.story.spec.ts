@@ -6,6 +6,7 @@ import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
+import { assertScreenFit } from "./story-helpers/screen-fit";
 
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -881,6 +882,33 @@ test("Live research orders preserve choices and acknowledge switches", async ({
             await expect(button(stale, "Retry acknowledgement")).toBeFocused();
             await containedReading(button(stale, "Awaiting acknowledgement…"));
             await containedReading(button(stale, "Retry acknowledgement"));
+            const statusBottom = await research(stale)
+              .getByRole("status")
+              .filter({ hasText: /^Awaiting acknowledgement/ })
+              .evaluate((status) => {
+                const text = document.createRange();
+                text.selectNodeContents(status);
+                return text.getBoundingClientRect().bottom;
+              });
+            const outlineTop = await button(
+              stale,
+              "Retry acknowledgement",
+            ).evaluate((button) => {
+              const style = getComputedStyle(button);
+              return (
+                button.getBoundingClientRect().top -
+                parseFloat(style.outlineWidth) -
+                parseFloat(style.outlineOffset)
+              );
+            });
+            expect(
+              statusBottom,
+              "The retry focus outline must not cover acknowledgement text",
+            ).toBeLessThanOrEqual(outlineTop);
+            await stale.evaluate(assertScreenFit, {
+              surface: "game" as const,
+              focusedControl: true,
+            });
           },
         },
       ],

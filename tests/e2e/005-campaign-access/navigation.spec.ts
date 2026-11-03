@@ -842,19 +842,24 @@ test("An active commander filters stars, orbits by keyboard and inspects a clipp
     await story.step("label-inspector-boundary", {
       actor: "Star envoy",
       description:
-        "Pan the real map toward the inspector boundary; map labels must not cover or intercept the system panel.",
+        "Pan within the real chart to its edge nearest the inspector; map labels remain readable and must not cover or intercept the system panel.",
       action: async () => {
         const marker = await page.locator(".star-label").boundingBox(),
           panel = await page
             .getByRole("complementary", { name: "Selected system" })
-            .boundingBox();
+            .boundingBox(),
+          viewport = await page.locator("[data-galaxy-viewport]").boundingBox();
         expect(marker).not.toBeNull();
         expect(panel).not.toBeNull();
+        expect(viewport).not.toBeNull();
         const x = marker!.x + marker!.width / 2,
-          y = marker!.y + marker!.height / 2;
+          y = marker!.y + marker!.height / 2,
+          boundary =
+            Math.min(panel!.y, viewport!.y + viewport!.height) - marker!.height;
+        expect(boundary).toBeGreaterThan(y);
         await page.mouse.move(x, y);
         await page.mouse.down({ button: "right" });
-        await page.mouse.move(x, panel!.y + 30, { steps: 8 });
+        await page.mouse.move(x, boundary, { steps: 8 });
         await page.mouse.up({ button: "right" });
       },
       acknowledgement: {

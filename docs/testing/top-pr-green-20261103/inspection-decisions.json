@@ -4318,5 +4318,1571 @@
         "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
       }
     ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "542827a0bd2915052c3512eb1db2135750d35376789b9634bd3d724fd640848f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+        "step": "choose-without-sending",
+        "description": "Open both private science instruments and choose investing by keyboard without sending.",
+        "acknowledgement": "Investing is a local choice; no command or receipt exists."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+        "step": "choose-without-sending",
+        "description": "Open both private science instruments and choose investing by keyboard without sending.",
+        "acknowledgement": "Investing is a local choice; no command or receipt exists."
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+        "step": "read-unfunded-forecast",
+        "description": "Read investing cost and effect before the first production ledger exists, without sending a command.",
+        "acknowledgement": "The forecast opens with keyboard focus and matches the authoritative private projection."
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/014-queue-investing-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/014-queue-investing-2-independent-investor.png",
+        "step": "queue-investing",
+        "description": "Commit investing and wait for its genuine authoritative receipt.",
+        "acknowledgement": "The accepted receipt binds the original payload; investing is scheduled for tick1 while navigation remains active."
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+        "step": "read-queued-forecast",
+        "description": "Read the forecast after the server has accepted the original investing order; active navigation remains distinct.",
+        "acknowledgement": "The forecast opens with keyboard focus and matches the authoritative private projection."
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/024-switch-current-device-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/024-switch-current-device-2-independent-investor.png",
+        "step": "switch-current-device",
+        "description": "Commit innovation while the second device has an unacknowledged original command.",
+        "acknowledgement": "Two distinct accepted orders preserve sequence, first order and progress before settlement."
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+        "step": "review-stale-rejection",
+        "description": "Read the authoritative conflict and retain recruiting for review.",
+        "acknowledgement": "One rejected conflict receipt leaves the two accepted orders intact and preserves the local choice."
+      },
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+        "step": "open-authoritative-science",
+        "description": "Open each commander's economy through keyboard controls and inspect the saved research target.",
+        "acknowledgement": "Both private instruments show the authoritative navigation selection before any draft change."
+      },
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/019-close-without-order-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/019-close-without-order-2-independent-investor.png",
+        "step": "close-without-order",
+        "description": "Close the instrument with Escape after reading. Research continues on the recorded target; inspecting a choice is not an acknowledged order.",
+        "acknowledgement": "Galaxy focus returns to Economy and the research instrument closes without changing the campaign."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "a89c2e3a01edce0c15a3691a745047c08f2f5c113e336776536177d02c930b40",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+        "step": "restore-panel-choice",
+        "description": "Close with Escape and reopen; unsent investing survives within the campaign.",
+        "acknowledgement": "The investing radio is restored without a command."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "d33a3737d2aa48d7f2f095aae6ae3be28c86174018c186ee802c7378741c1897",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+        "step": "read-unfunded-forecast",
+        "description": "Read investing cost and effect before the first production ledger exists, without sending a command.",
+        "acknowledgement": "The forecast opens with keyboard focus and matches the authoritative private projection."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "2809713eef9fe1fbdc42e1bbffbcc02794ef48bf7c93335947be3ca9fbf21086",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+        "step": "read-unfunded-assumptions",
+        "description": "Scroll the bounded forecast with the keyboard while the actual Queue control stays fully visible.",
+        "acknowledgement": "The focused forecast reveals its active-target qualification without sending another command."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0794710ad31af19886adff07e391cfccd9324b454f3afb7a1145169a27ab4079",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/014-queue-investing-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/014-queue-investing-1-market-envoy.png",
+        "step": "queue-investing",
+        "description": "Commit investing and wait for its genuine authoritative receipt.",
+        "acknowledgement": "The accepted receipt binds the original payload; investing is scheduled for tick1 while navigation remains active."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ffc102baf9e8ceeabf492cd0f8af513049327da16e5544ad2c58271811dcdf3e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+        "step": "read-queued-forecast",
+        "description": "Read the forecast after the server has accepted the original investing order; active navigation remains distinct.",
+        "acknowledgement": "The forecast opens with keyboard focus and matches the authoritative private projection."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "724f6654c985eb63cba7342b78cd4320f66e2360a9db7d3ab7256b929fa45085",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+        "step": "read-queued-assumptions",
+        "description": "Scroll the bounded forecast with the keyboard while the actual Queue control stays fully visible.",
+        "acknowledgement": "The focused forecast reveals its active-target qualification without sending another command."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "86f602abc6d14d14cfdf9ff7d1a3b10d504825a4d09af8bd8beb789b18d16e8b",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+        "step": "reload-accepted-order",
+        "description": "Reload and recover the accepted investing order from authority.",
+        "acknowledgement": "The same UUID and tick recover; reload creates no extra receipt."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "9ae06f6822c3d29c5a4cdb24e209caf3df4c08d0368bb1091c6c07f91649d3f3",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+        "step": "submit-held-choice",
+        "description": "Submit recruiting from the second device's current revision. Waiting is not acceptance.",
+        "acknowledgement": "The second device waits; authority still has only the first accepted order."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "14a889503f4d80b33d42d8b02ec04c6e9da1a0f7ef94bed223430c25712ef95c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+        "step": "reload-submitted-research",
+        "description": "Reload while the original recruiting command is withheld. Recover its exact submitted target and acknowledgement panel; this is durable submitted intent, not an unsent draft.",
+        "acknowledgement": "The authenticated outbox restores recruiting and reopens Economy while the original command is still unacknowledged."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "dbb204a94ad4520ca5d679a0c7b2ff507a60f60341fdabd9c463b16091699d67",
+    "disposition": "hold",
+    "inspection": "Original individually viewed at native393x852. Gold focused Retry acknowledgement outline crosses the bottom of the preceding Awaiting acknowledgement text. Do not promote until measured spacing is corrected; durable same-command retry facts themselves remain present.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+        "step": "read-recovered-retry",
+        "description": "Use the next keyboard reading position to find the original command's pending acknowledgement and Retry remedy. Reading does not retry or submit another command.",
+        "acknowledgement": "The same submitted command remains durable and unacknowledged; both pending and Retry controls are readable."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "454241c7f24233d7b738dc27502ffefd73b051b62e3bdbb506c4110ef7b17856",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/024-switch-current-device-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/024-switch-current-device-1-market-envoy.png",
+        "step": "switch-current-device",
+        "description": "Commit innovation while the second device has an unacknowledged original command.",
+        "acknowledgement": "Two distinct accepted orders preserve sequence, first order and progress before settlement."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "128eac559437d335c352a55e5b292597219165895ac4c64a865d8233fb89ce46",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+        "step": "review-stale-rejection",
+        "description": "Read the authoritative conflict and retain recruiting for review.",
+        "acknowledgement": "One rejected conflict receipt leaves the two accepted orders intact and preserves the local choice."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "34d92f73764e0073d226a011016571be92d6a35d10f10909d7a67356e89c1737",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+        "step": "close-conflict-panel",
+        "description": "Close Economy with Escape; the same research conflict remains discoverable on the galaxy.",
+        "acknowledgement": "Exactly one accessible route error replaces the panel error; Economy regains keyboard focus."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "19e67f4a6514ca39d64de799f3fe5f0cfbe1ad682cbf10e9193242ea88d25d2f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+        "step": "reopen-conflict-panel",
+        "description": "Reopen Economy and review the preserved recruiting choice with a single in-panel remedy.",
+        "acknowledgement": "Panel ownership returns without duplicating the error or sending another command."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4db03efbe95892ecbca3a0b71b95d2484ab5d749e0fb1d17c024987a7f1ccc75",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+        "step": "replace-recovered-intent",
+        "description": "After rejection, deliberately choose the currently acknowledged Innovation target without sending. Later views must not restore the rejected Recruiting choice.",
+        "acknowledgement": "Only local intent changes; the original rejected receipt and two accepted orders remain authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4845b0eee4b4ad68d6ff90169be7e6c555d4728f574d25a14dd88d74ea1ef3aa",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+        "step": "recover-science-tick-14",
+        "description": "Reload both commanders and read the actual retained science one funded tick before Innovation completes.",
+        "acknowledgement": "Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "53a9f9537e314b7cff83ec35e21fafa480034c075913544371309e2a7a21e6c3",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+        "step": "recover-science-tick-14",
+        "description": "Reload both commanders and read the actual retained science one funded tick before Innovation completes.",
+        "acknowledgement": "Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "6baa894988ebda6ac3f16c674a629d79b606c347a62b6496ef927ae875090e5b",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+        "step": "recover-science-tick-15",
+        "description": "Reload the completed Innovation level: its cost is spent once, excess science remains, and this tick used the old production rate.",
+        "acknowledgement": "Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "49d6d308b89319e7c8c0ccafe5cdcfdd3f13a5ff757f4b0b7fb061d1c1b79196",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+        "step": "recover-science-tick-15",
+        "description": "Reload the completed Innovation level: its cost is spent once, excess science remains, and this tick used the old production rate.",
+        "acknowledgement": "Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c63d7539e151dcf2e35680795924887962fa3ba40ad2140b74ac4150edfae905",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+        "step": "recover-science-tick-16",
+        "description": "Reload the next confirmed tick: Innovation now raises science output while the other commander's navigation remains private and independent.",
+        "acknowledgement": "Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0ec8de61fd803bbf4cd5adce10ac7b51242782c8fbac41306066b937ee384dc5",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+        "step": "recover-science-tick-16",
+        "description": "Reload the next confirmed tick: Innovation now raises science output while the other commander's navigation remains private and independent.",
+        "acknowledgement": "Reload recovers the actual settled tick and the original applied order; production creates no additional command receipt."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c6469b1164ccfd758316232b22d8b88d1a1d71b157bb0c1ee5e05ab18327413a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Live research choice, pending/recovery/conflict or production values are readable in the named view; actor/peer viewpoints remain distinct. Selected rows and intended focused controls are contained. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/live-research-orders/phone/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+        "step": "retain-newer-intent-after-ticks",
+        "description": "Read the same device after real tick updates. Innovation remains selected; no old Recruiting command is reapplied or silently resubmitted.",
+        "acknowledgement": "The latest authorized level1 projection retains the newer local choice and the exact original receipts."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "8c7ec23aaa56ff621dfee3530008681c81033b5301e79ac288a2cffdfe45c290",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+        "step": "open-authoritative-science",
+        "description": "Open each commander's economy through keyboard controls and inspect the saved research target.",
+        "acknowledgement": "Both private instruments show the authoritative navigation selection before any draft change."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3a3f8400710418311813d231be7e0dcaec1bae9bcee487006eabdd2a3fd5b6fb",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+        "step": "read-scanning",
+        "description": "Use the keyboard to inspect scanning. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "aae64e53f7c24646997495d1764f2f3596c909079ee6427866db88708de4a656",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+        "step": "read-navigation",
+        "description": "Use the keyboard to inspect navigation. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "a9679ca086d57363cd37151d5d6a6bb24f2e8eea296fd806e2f557dc775974c3",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+        "step": "read-terraforming",
+        "description": "Use the keyboard to inspect terraforming. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "8b9ea6b6e55e29d886bbf33e3ecdec4076686ec0cfb5adc7ccee34d224adb0e4",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+        "step": "read-investing",
+        "description": "Use the keyboard to inspect investing. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "223a9e745eb2465e3e0071073735eace78646dfe4a584e7afc8fce2372e3a01f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+        "step": "read-formations",
+        "description": "Use the keyboard to inspect formations. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "249680bb47fafb8f031462648542efb8621c092e875c6c5f42f023d44d148096",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+        "step": "read-melee",
+        "description": "Use the keyboard to inspect melee. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b328cdefa2cde11729d80b18b3dd9761226210c80296a5fd9049b1e765e03954",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+        "step": "read-recruiting",
+        "description": "Use the keyboard to inspect recruiting. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "e0985b498f4b9d35639625bcb70f6eef104686122e20643154d3b696ec550bb9",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+        "step": "read-innovation",
+        "description": "Use the keyboard to inspect innovation. Read the effect before choosing whether to queue; no research order is sent.",
+        "acknowledgement": "The local selection acknowledges the chosen track and displays its capability-aware effect; the other commander's selection stays authoritative."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "8c2bd874ba38beafd87c8c27de23b789a63edd3a78ba4aeb0b77fe33f275fb09",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Chosen research row, complete effect explanation and Queue control are readable; final Economy opener focus is visible. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+        "step": "close-without-order",
+        "description": "Close the instrument with Escape after reading. Research continues on the recorded target; inspecting a choice is not an acknowledged order.",
+        "acknowledgement": "Galaxy focus returns to Economy and the research instrument closes without changing the campaign."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "5e6a63b7ddf78c6d5ff817f2303e2f428f63a01f4ba8df7653440f5023d0cac1",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/002-read-pending-forecast-1-developer-pending-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/002-read-pending-forecast-1-developer-pending-forecast.png",
+        "step": "read-pending-forecast",
+        "description": "Open the pending forecast with Enter and read the cost, exact effect and rate qualification.",
+        "acknowledgement": "The native disclosure opens and retains keyboard focus; this is a local presentation outcome."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "a2ba7c08300c372239af344c4892bfa099e0f4224ae162aa4d0200bd358bc395",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/003-read-pending-qualification-1-developer-pending-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/003-read-pending-qualification-1-developer-pending-qualification.png",
+        "step": "read-pending-qualification",
+        "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+        "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ffbf54f3541cc751d7fb3073c04ba79e5e55f8c7214adab63dce2194eddee05d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png",
+        "step": "close-pending-forecast",
+        "description": "Close the disclosure with Space, keeping focus and the selected research choice.",
+        "acknowledgement": "The disclosure closes without queuing research."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "d2515354d722f487c8d407ddb39f6163c0068954236a46048dfee0d486102932",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png",
+        "step": "read-disabled-forecast",
+        "description": "Open the disabled forecast with Enter and read the cost, exact effect and rate qualification.",
+        "acknowledgement": "The native disclosure opens and retains keyboard focus; this is a local presentation outcome."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b3bf6304d80277c0a59ee76a02bdfd3557f5cae232111749404184e80543f3ed",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png",
+        "step": "read-disabled-qualification",
+        "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+        "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "1c7f4440c6771c96310b136232c21570647b1a5c484584e637f12d41cda5e784",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+        "step": "close-disabled-forecast",
+        "description": "Close the disclosure with Space, keeping focus and the selected research choice.",
+        "acknowledgement": "The disclosure closes without queuing research."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b86c87062d40962f15e376e8249b90b02542ab12c1eadda182c27e905edebea8",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/008-read-applied-forecast-1-developer-applied-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/008-read-applied-forecast-1-developer-applied-forecast.png",
+        "step": "read-applied-forecast",
+        "description": "Open the applied forecast with Enter and read the cost, exact effect and rate qualification.",
+        "acknowledgement": "The native disclosure opens and retains keyboard focus; this is a local presentation outcome."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c7659aede11cd0b6b41679e3f0f1710ee3b88da376a5ff3cc7312f58ed770ccc",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/009-read-applied-qualification-1-developer-applied-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/009-read-applied-qualification-1-developer-applied-qualification.png",
+        "step": "read-applied-qualification",
+        "description": "Use End in the bounded forecast to read the rate qualification and active target without changing research.",
+        "acknowledgement": "Keyboard focus stays in the forecast, which reaches its final active-target explanation."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "f177d2114e6011c50069b5422e46652e3b921699be7f580078a57fc10e029343",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selected Investing row is now visible; pending/paused suppression and applied1.4 science,18.6 remaining,14-funded-tick estimate and rate qualification are readable in the separately illustrated keyboard reading positions. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png",
+        "step": "close-applied-forecast",
+        "description": "Close the disclosure with Space, keeping focus and the selected research choice.",
+        "acknowledgement": "The disclosure closes without queuing research."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "88ae4a56aae4e25f999ab1a18c77e606bbb340ea420ea453d3ff75aa8cf092a1",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+        "step": "pending",
+        "description": "Inspect the pending research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cAwaiting acknowledgement\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "7279da8b2d9204ed7ee722164b27376f20831422374aae5424cafc52d4f38c2b",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+        "step": "pending",
+        "description": "Inspect the pending research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cAwaiting acknowledgement\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c8833b85ae993409d02f773ef2ef599822a4e6b2bbeed68e42b3894e27d2c531",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+        "step": "pending",
+        "description": "Inspect the pending research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cAwaiting acknowledgement\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ce983802bb020123cb4a06004471f3f4257952d4f5fa43b79261ec1006bd69de",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+        "step": "pending",
+        "description": "Inspect the pending research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cAwaiting acknowledgement\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0798e75b089a7b2c9ea3fbcc46165a3e5cc722b22ce03781dd3df9dc69f3309c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+        "step": "interrupted",
+        "description": "Inspect the interrupted research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cpreserved\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "60b8c720b99a60997fcf7d17c97e0170b019c9b3e49cf3cdc831d9973ed57709",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+        "step": "interrupted",
+        "description": "Inspect the interrupted research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cpreserved\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "db30bc9298db59e3db1c9746ac40bccc45cf5f5d9083f815079ba6479605494e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+        "step": "interrupted",
+        "description": "Inspect the interrupted research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cpreserved\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "8ddf2ba6e1d776ea518aba815d71f6fa0cbc92fac5653a59ef735de2fcd260ab",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+        "step": "interrupted",
+        "description": "Inspect the interrupted research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cpreserved\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "149373070ecb20a42ea4a9dd758a47caa5966ff7ec2565c9039a80527ad3e985",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+        "step": "scheduled",
+        "description": "Inspect the scheduled research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch order accepted\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "cad3d62164da301d0f29b34162c091085b5d7dd377a232083db1df97c4eacdff",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+        "step": "scheduled",
+        "description": "Inspect the scheduled research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch order accepted\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "56515cfa968351dc5552e88eab0c2ee802d88157f4a9fce08c5d9dbd3c6096d1",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+        "step": "scheduled",
+        "description": "Inspect the scheduled research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch order accepted\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3fed98e87ea77d7bf96352d1834f296971c588fac1e6fd2af401be8261601a56",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+        "step": "scheduled",
+        "description": "Inspect the scheduled research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch order accepted\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4250791cc7a888f4c037d04be4b869f0c2a53f20cf011590e15b140d90770491",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+        "step": "applied",
+        "description": "Inspect the applied research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch applied at tick 1\u201d."
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+        "step": "applied-history",
+        "description": "Open the actual applied-selection disclosure by keyboard in both panes.",
+        "acknowledgement": "Both opened histories identify the applied investing order at tick one."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "8f23b25feed460aa7fa420e68c756ee16fc6f01b6fa0b06d3daa7eb77512b8e5",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+        "step": "applied",
+        "description": "Inspect the applied research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch applied at tick 1\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ca798fd98a4f4833bb1650f51dc1a7861141a45525457ea48c7883e7b4f00eaa",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+        "step": "applied",
+        "description": "Inspect the applied research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch applied at tick 1\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "f5e42f54b3416cbd5feb545d7be70796595248f3397b971d00243a6aa8720243",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+        "step": "applied",
+        "description": "Inspect the applied research frame and compare both motion presentations.",
+        "acknowledgement": "Both component feedback panels report \u201cResearch applied at tick 1\u201d."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ae3c91348ce367340ad3ea7cc190c4f30a5576d21b432933751cebf675c6bf49",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+        "step": "applied-history",
+        "description": "Open the actual applied-selection disclosure by keyboard in both panes.",
+        "acknowledgement": "Both opened histories identify the applied investing order at tick one."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "35aee68a20cae88d5fcb5af3778745f7d1e9080241b2cb34ecd2d71d3c74375e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+        "step": "applied-history",
+        "description": "Open the actual applied-selection disclosure by keyboard in both panes.",
+        "acknowledgement": "Both opened histories identify the applied investing order at tick one."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "88331c436422832fadec757af5203b401dc0df21994243bd4f5e1b79f4f36be3",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+        "step": "applied-history",
+        "description": "Open the actual applied-selection disclosure by keyboard in both panes.",
+        "acknowledgement": "Both opened histories identify the applied investing order at tick one."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4c2e2de2accf25a8c3c628cbfe1d1e21cb6b07baf5f753c3208690f9014dc9d3",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+        "step": "queue-preserved-choice",
+        "description": "Choose investing and activate Queue by keyboard. The lab resets to pending while the actual component retains its choice and moves focus to acknowledgement.",
+        "acknowledgement": "The component retains investing, disables repeat submission and focuses the acknowledgement group."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "a2f7fa43a8ed4d5530d37daaa1f331e690ceb38347836b3ab44c5c4d97222302",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+        "step": "queue-preserved-choice",
+        "description": "Choose investing and activate Queue by keyboard. The lab resets to pending while the actual component retains its choice and moves focus to acknowledgement.",
+        "acknowledgement": "The component retains investing, disables repeat submission and focuses the acknowledgement group."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c1cb386e0492729f24526a4c9a4843c0df6296f18b51cf1e4bce1a54191821b6",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+        "step": "queue-preserved-choice",
+        "description": "Choose investing and activate Queue by keyboard. The lab resets to pending while the actual component retains its choice and moves focus to acknowledgement.",
+        "acknowledgement": "The component retains investing, disables repeat submission and focuses the acknowledgement group."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "226b2f154ba55e037b77df04ff3c56d2ad893bbc7d918ba5a773aa6039bea125",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Selection and outcome viewpoints show real shared lab state: pending/interrupted/accepted/applied/history controls, selected row and acknowledgement are readable in their intended reading position. Motion preferences are illustrated separately; this does not certify all animation frames. Previously focused offscreen controls in selection viewpoints are not claimed fully visible there; paired outcome views show the controls. Intentional bounded scrolling leaves neighboring prose offscreen; this is scoped regression inspection, not full design or automatic all-content visibility approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+        "step": "queue-preserved-choice",
+        "description": "Choose investing and activate Queue by keyboard. The lab resets to pending while the actual component retains its choice and moves focus to acknowledgement.",
+        "acknowledgement": "The component retains investing, disables repeat submission and focuses the acknowledgement group."
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "dacd38b0af20c38cf982826f1a3043c7220e2758b40109186fa91793fcb6f8dd",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "bd6fd3c9be5a2f2038c97a688db9d2e491f641fc4716c8cd255e279493109ed8",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-2-independent-investor.png"
+      },
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/019-close-without-order-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/019-close-without-order-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "aebbce963e3023ccd93b103b5ec7ba77ae0a0b5082fa2fe56bd9a65a1b0abd9c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "7ce11daa285748e19778727a3584d7326759cba319bdb2bf36b65a77997fcc4f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "8ef59b1c2a12f5d48385fbb3d6eaa790c395929c52d1425ca58ca64b24ee4788",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "637bbd29b668c76ba0d5bd82975096c23964edcd0c6a2709ca016e8ca4b38917",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ddca0cb54eb4555ce9a53a0b75a0c78bf540ca2b2bd5d42f2bf5f0961a7e9770",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3cf1d7c7f2508551e80b240f9c6ec822275b8f1a7e27419aafa522ad48cc171d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0436978ca7b6f21268f5f6b3566de3bcc3f30f5262022ee44d631edbc81e1a45",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "512b6b0f2c847e6f365f2024ed3e9be19bc76aaa1aae1a3ccd646be22fea1676",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "0a0a39854ffd2827b0274361ca8288f9e6bf0be9f8bedcf08fe32609160d4699",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4aa893f3f2960b0d6880a5a052808211784e27c15d18e39f667f0eb0bc6f1b3f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/002-read-pending-forecast-1-developer-pending-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/002-read-pending-forecast-1-developer-pending-forecast.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "129fe3282b8c9dacf9465c3d0db8b6cefacd3eaa2626461c25ebd05f28b29e24",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/003-read-pending-qualification-1-developer-pending-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/003-read-pending-qualification-1-developer-pending-qualification.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "5e2a76e6bb6ff23f9175970c90df6b6bab10f378db6a80525373b841414f4982",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "43a1365f2cc7a900f10743b98bdd579008dee43e2fe6b71f2148a73bfc1574ed",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "dfed720deb9f14d2297879a1801a02e903558126ee0310efb845503572dad503",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4fec6fccf242613f5f4314da8bfd4e8b87971d8b09481fcc8dd674211bf9b952",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "2d9677ca51fb6aed29c0e35284a9acc04520fc9e0821e20c1d30b787013c5a5c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/008-read-applied-forecast-1-developer-applied-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/008-read-applied-forecast-1-developer-applied-forecast.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "640779e21702a313762944cbb9d061f14cb97b7cb866cc295543d6583fe96ab9",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/009-read-applied-qualification-1-developer-applied-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/009-read-applied-qualification-1-developer-applied-qualification.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b355d1d1bac2e266a348748879389ba289b6e53363259bc9aae0b4dbeebd292c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native1280x720. Guidance chosen radio, full effect explanation and queue action remain readable above footer; forecast pending/paused suppression, retained1.4science,18.6remaining,14funded-tick estimate and complete assumptions are readable across deliberate disclosure/keyboard reading positions. Selected Investing is visible. Opener/return focus and actual system facts retained. Bounded scrolling clips neighboring offscreen prose intentionally; no automatic all-content visibility, full animation or design certification.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-forecast-gallery/short/linux-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png"
+      }
+    ]
   }
 ]
