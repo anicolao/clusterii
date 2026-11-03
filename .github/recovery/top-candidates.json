@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "mode": "generate",
+  "source": "d6ec2871451d6e95d9a2399834326bcd466936f2",
+  "target": "a027458eee7c90de097eb137182929d584a6d43c",
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "testsPerProject": 70,
+  "retries": 0,
+  "updateSnapshots": "none",
+  "inputs": {
+    "src": "4c811a718daae4f21bb46357db3afe75f64ae241",
+    "shared": "9026eed552a7b4e41c0346e8f1bfb8fc5a335834",
+    "functions": "c116879153585f6c933dad28096563165fa23641",
+    "tests": "3520bb64e258d9a57d1e2a4ada2f6efed2611bb9",
+    "package.json": "3f3bc678f5de43d16689e37f87738922fb929e32",
+    "bun.lock": "7222342e7237310c0dbf40bb2a9125742ff28897",
+    "nix/flake.nix": "1bbc9071572790323070ee27479000dc1a39fefc",
+    "nix/flake.lock": "414b47485cd1dd7b5abd7ed0dd81a78047a21d56",
+    "playwright.stories.config.ts": "a02fc1665c12c01ff71a03e5f9a61a39f5a0835e"
+  }
+}
