@@ -1,0 +1,7 @@
+
+
+## Supervisor recovered focus overlay visually verified
+
+Run40336000578 at454d5312613d5f04f17fc75b84840e03a27d4848 sourcebb1f4fd9 completedSUCCESS. Bounded artifact12658330701 extraction verified four durable focus JSON facts and four recovered pending013 PNGs using ZIP CRC32/local SHA256,7946692 range bytes; archive digest332c30a3361d1fbdcfabda550f51323e42d600dc2016d60e99b35a1e8dcd6c50 metadata recorded but full archive not downloaded or SHA verified. Individually viewed phone393x852, desktop1440x1000, short1280x720, and large3840x2160 scaled to2048x1152. All now show continuous cyan outer construction-dialog focus boundary, including phone, with no content displacement. Owner remains200credits/trainingcamp69/forecast131; awaiting receipt and disabled retry remain readable. Short queue explanatory paragraph extends behind scroll boundary but pending controls remain visible. Large review confirms composition/border at displayed scale, not pixel-level typography. Approve these four corrected exact hashes for regression; they supersede held old recovered-pending hashes. Old pre-fix images remain held and must not be imported. Other old approved captures still require byte equality to this corrected source before acceptance. No blanket design approval.
+
+PR72 head19969337 has documentation/publish/story-generationSUCCESS; application and exact story verification remain in_progress. Agent still usage-limited, no duplicate instructions queued, no merge.

@@ -39,31 +39,3 @@ The queued reviewer instruction is now recorded as Prompt 62, with supervisory h
 Prompt 63 records the reviewer’s delegated finding. A fresh read-only check still reports Pages run39724569489 queued for commit54189303257e8a3376190c301f21be4aa33027dd, and the served `pr61/revision.json` still returns HTTP404. The retained published-tree revision and queued deployment distinguish publication from serving; exact-head acceptance remains blocked. No duplicate retry was launched while this deployment remains queued.
 
 The phone Tupã/Tania Australis overlap remains an explicit rendered-UI defect in both observation review documents. This handoff does not approve full composition or change any baseline. Its resolution needs separately reviewed collision handling and affected captures; scoped observation-reading evidence remains distinct from visual acceptance.
-
-## #65 publication follow-up, 05:50UTC
-
-The reviewer’s01:49 checkpoint records #65 job119648365097 failing the exact757d423 revision check with HTTP404 at05:44UTC. Retained log: `/tmp/cluster65-publication-0149.log`. Read-only published-tree inspection confirms both revision fields are757d423c4d21397ca36ff9233c6741257a4df72a. Pages reports commitb38c5e13763c0d957bc3b2a152bd6a737de8905f building; its actual deployment run39728756222 is queued. Older #61 deployment39724569489 is now cancelled. These states explain an outstanding deployment boundary, not a verified preview. No manual cancellation, duplicate publication or relaxed assertion was issued.
-
-Reviewer01:59 checkpoint: retained `/tmp/cluster65-0158-failure.log` reports29 passes and12 missing-Linux-baseline failures in each viewport,48 missing-image failures total. This run supports improved cohort/setup execution, not complete resource or raster certification. Generation remains queued; no failed verification image is eligible for promotion. The checkpoint is preserved in meta-prompts.md; matching-head generated candidates still require separate provenance/rendered review when available.
-
-## Candidate job versus generated evidence, 06:30UTC
-
-Read-only inspection of #64 generation job119643687700 shows success, but both Exact verification and Explicit baseline candidates steps were skipped. The workflow requires the baseline-candidates PR label for generation. Its run39724010454 exposes only the1,846,046,879-byte failed verification artifact12405503333; there are no generated candidates from this job to review or promote. Retained API evidence: `/tmp/cluster64-generation-step-status.json` and `/tmp/cluster64-artifact-status.json`. This corrects interpretation of the green job without rewriting the supervisory record. No failed actual image is promoted and no broad duplicate run is launched.
-
-Reviewer02:19 evidence records115 passes,48 missing Linux images and the distinct1994-pixel short identity recurrence. These remain separate from service/resource acceptance. Reviewer02:29 records #66 publication HTTP404 for0666727 (`/tmp/cluster66-0228-preview.log`). Pages deployment39732471805 for eb7ae1a has successful build/report steps and a queued deploy step at06:30UTC. Exact-head previews remain unverified; no duplicate publication is launched. Disk headroom fluctuated to1.2GiB; no large artifact download or deletion of retained failures was attempted.
-
-## Pages serving recovered, 02:54 Toronto
-
-Pages deployment39732471805 completed successfully. Read-only current PR-head checks match served source/build revisions for #61 (6504a4a), #65 (757d423) and #66 (0666727). The unchanged verify-pages script passes each preview's entry, diagnostics, gallery, animation lab and26 static asset references. Retained `/tmp/cluster-served-current-heads-0254.json` and `/tmp/cluster{61,65,66}-served-verified-0254.log`. No duplicate publication or relaxed revision assertion was used. #67–69 still returned404 in this check; they remain unverified. Successful static serving does not certify hosted authentication, scheduler behavior or full release acceptance.
-
-## Queued 01:49 checkpoint reconciliation
-
-Prompt 65 records the delivered reviewer checkpoint and its scoped phone-only acceptance. The #65 HTTP404 failure and later exact-head serving recovery are retained above as separate observations: the failed publication job remains failed, while the subsequent unchanged verifier passed against served757d423. No duplicate publication or test run was started to reconcile the queued instruction. Navigation/shared-renderer verification subsequently completed in #68 and #69; their review documents retain local evidence and independent/Linux/hosted limits. Draft #70 retains its distinct seven-pixel short arrival-frame failure and low-disk evidence hold. Main supervisory history through02:59 is preserved unchanged.
-
-## Delivered 01:59 checkpoint and #65 generation audit
-
-Prompt 66 records the reviewer’s scoped finding: all four cohorts report29 passes and12 missing reviewed Linux baselines, with no other substantive Error entries in the retained log. This supports bounded-cohort execution in that run, not service/raster certification.
-
-Read-only jobs API confirms run39724370529 at757d423c4d21397ca36ff9233c6741257a4df72a: verify119644812733 failed; generate119644812983 succeeded but its “Explicit baseline candidates (never acceptance)” step was skipped. The only artifact is failed verification output12405425226 (1,841,837,811 bytes). There are therefore no generated matching-head candidates from this run to review or promote. Evidence: `/tmp/cluster65-generation-step-status.json`, `/tmp/cluster65-artifact-status.json`; original failure `/tmp/cluster65-0158-failure.log` remains retained. No verification images were promoted, inherited baselines changed, or duplicate runs launched.
-
-Data-volume headroom is510MiB at this audit, so the1.84GB artifact was not downloaded. Existing review captures/traces remain preserved. Candidate review requires an explicit generation artifact with matching provenance and adequate storage; the current draft arrival-frame, Linux/raster and newer-preview gates remain open. Main supervisory history through02:59 is preserved.

@@ -1,0 +1,47 @@
+[
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/025-keyboard-return-2-independent-builder.png",
+      "blob": "e44310010c0c4abc2c5114b27c5f907b27b86102",
+      "sha256": "197da175bab417b8d9774f12ce3965d437b6db7bf8079265580279b249efe900",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/020-keyboard-return-2-independent-builder.png",
+        "blob": "e2e72750e054acb0488a9897b0a8ed4cb1b43b7c",
+        "sha256": "dbffd6e858d169340988d44669f8c365c30d9991801ddf9cb63c06899488b9ce"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/desktop/023-cancelled-base-2-independent-builder.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/020-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/024-recover-settled-outcome-1-builder-envoy.png",
+      "blob": "17cae2969ad6b6897747deb9c1046e4503def452",
+      "sha256": "602549f888b633126f50d1c6b6c00400026c8b681ef5c5b4adb8c51baeee782c",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/019-recover-settled-outcome-1-builder-envoy.png",
+        "blob": "7ff08ccb0d49911d0951eb0dc60424228cb019cf",
+        "sha256": "93b70f8bfa71d4ef84a1766d633eccd723be3b376beee0525bf8f13ee6dd4cd8"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/desktop/024-recover-settled-outcome-1-builder-envoy.png",
+    "parentLocal": "/tmp/cluster-pr70-core-diagnostic/tests/browser/story-baselines/live-construction-ordinary/desktop/darwin-arm64/019-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-recovery/desktop/darwin-arm64/010-inspect-development-1-builder-envoy.png",
+      "blob": "3fce38f3ef6e439b7770b1937351eb7a062687da",
+      "sha256": "5d5bdd6fd250658b6a84cdf9e0b30dc4c2f3b40695e1b2362e9fc402df598b90",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-recovery/desktop/darwin-arm64/010-inspect-development-1-builder-envoy.png",
+        "blob": "8bdd6d1c7a03ec20ed9d9adead12b168a1f8624d",
+        "sha256": "3a1bb554320a6f43bcbb1c0f0703cad580493e1b1477738c6994506458e40359"
+      },
+      "status": "changed"
+    },
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-recovery/desktop/010-inspect-development-1-builder-envoy.png",
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-8bdd6d1c7a03ec20ed9d9adead12b168a1f8624d.png"
+  }
+]

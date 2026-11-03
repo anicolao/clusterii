@@ -1,0 +1,682 @@
+[
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "7133cd5c0b3356f399ad13e75f4f02a553eb8236"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "9267953860c54dc39a226af7298583389b099d99"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "c7deb07874e57970dc01fc0e4e48af05ea8b82d7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "b333a075f352b49e37da0669264d954b80aeed08"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "b1042e8f08f817eea3cc0da4894845244d531224"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "d0ffb658ab36ceaac93b701e5f096bb06207a42a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "0793dda3de2e313b42694cc1e99d4374b28389aa"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "1b604f6dae4bbe201fe2fe4ef6f39f0601059de1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "c7deb07874e57970dc01fc0e4e48af05ea8b82d7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "d0a27c2dc5d667116db3e369e37dc5c3c60562dc"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "452ca01207724637f81b3174e0386f23cf951584"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "c7deb07874e57970dc01fc0e4e48af05ea8b82d7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "2f6e1998fac5acb0f1237d568c67d50fb9acc100"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "c7deb07874e57970dc01fc0e4e48af05ea8b82d7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "a2ea9b1327ebc07f326f05d09545754ceb77d548"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/renderer.json",
+    "gitBlob": "e26c0096da13a98e44d0f769ae547d37a24a7341"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/darwin-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/darwin-arm64/review.json",
+    "gitBlob": "451366ebf00933b1259fed009c3aaca619378db5"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "d232adaa7ae2298f5558052114a2e733573994d6"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "cb8c22935484390a9e39e96a6a6c5d8012ec1c15"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "0faba8d20f1b5515987829f07608cbe923f090c1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "62f1e5e474007ea22a70302beb56922a11e52d4f"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "6e0e115b25059903ebfb7d5d647710d1a40c632a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "575cc17dfaebac10c831cc7ab6266060fffdc033"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "a7f964efcd8ba89be16fa4d07dd008d2e5597ff6"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "2138c39ebc8fb60d4523330b07a55f1c60e6b693"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "0faba8d20f1b5515987829f07608cbe923f090c1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "9f1a46eda7bf29837fce538ad8bb903ad6fdd8fa"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "6f38a6b702c0c1aa9a058012372069467f9de773"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "0faba8d20f1b5515987829f07608cbe923f090c1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "ee8d16e7b5e3087ff954ccda1272a66049ecae2d"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "0faba8d20f1b5515987829f07608cbe923f090c1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "bc580f7cb89a7c7bf5f26cadc9620129520ae4e4"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/renderer.json",
+    "gitBlob": "9fe50dabafe3af7e6ad1a03feb5dbfcdf9d89865"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/desktop/linux-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/review.json",
+    "gitBlob": "6ed7f4e49453ba42207576973b0d473513554887"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "79260ce129caf4cdcb2b9e5d3ae4a571063ea845"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "b4cb44a7d22c2edd90dc584004a18285410119e5"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "a329e7bc551135e38ada09c1bc22d2c6ea9400fa"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "5dd7d3adffd54795848364615009e8ef0fc43229"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "3e9200c5ee16e261ca74161a2cf23627c5710385"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "683acc5fe589c66b1b91dfa143ca9fdace2bc8a0"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "773939342c124b8ab449537f8ed45013a8cfccf6"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "253d182db5b5f9540d49c65baf529c394c8789bf"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "a329e7bc551135e38ada09c1bc22d2c6ea9400fa"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "363a620f5277b74c8380608276810585bad334bb"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "dbac8bd105de060239d27979aa72dc6d1246206a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "a329e7bc551135e38ada09c1bc22d2c6ea9400fa"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "58a6157675632bccf2652abe075acdf74ad23e89"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "a329e7bc551135e38ada09c1bc22d2c6ea9400fa"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "3788db870986f83b2dec4718919b1ac3a0e1a297"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/renderer.json",
+    "gitBlob": "7898302d3a3701cdec8ca83dfc29fa829cc96ee1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/darwin-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/darwin-arm64/review.json",
+    "gitBlob": "3de0f275320997b5298a1881a0f8bfff2fccb65f"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "e132c1bdc6629f0976ac6782cb38ac9541e4a501"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "4836de64fee7c3358af712aea5095af8daefcd05"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "65bb8f56395cb596c08d4c7d63c1a97106538d5b"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "611ddebf28af5c2b0ed99b806d943e4ecd34eaa9"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "8b5ef834bbc43c4003413466ca4a4b3bd3994bd3"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "16123f7cd60d22e0632b4a2ac2d7498dbff742b6"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "d1be1948ae663b22ee39ce59dbde9d6f835a8070"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "fa4c097fbd6ebe06823cb69eb54996b739f3b761"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "65bb8f56395cb596c08d4c7d63c1a97106538d5b"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "c9aa986e18cebbba32605f120c4215f7a0926776"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "2ef3a37b006301b7b1da8b5adb7762997bb2ebd3"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "65bb8f56395cb596c08d4c7d63c1a97106538d5b"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "a0355b62e2c8084b12cb735fa73eb8b7ed7d6fa3"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "65bb8f56395cb596c08d4c7d63c1a97106538d5b"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "5ff2ac62cc2e2dca7a66e6139c31d0a1f460d1e0"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/renderer.json",
+    "gitBlob": "5ce5609ff3316572f280bcb13ac0db6659ee57f1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/large/linux-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/review.json",
+    "gitBlob": "a3b309fdea92aac1cbf6ab16cfab2b2d54795311"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "036e16376c4287a605ecfec587a4c625313b18c8"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "9ed86c4447f6cf2d91bff0cbb5299342e39c0a4b"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "7a4eb6b7ba53bfe62ddf71e403aac1e4fba0ffd7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "c73fd97eae92822eefcbd8119aa3e74ca86c7cf5"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "bfe940750aa571974d25c7940cb4cb800c5a7e8c"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "ce0f9b74e16db0d7f1c0300091cbf31f4ad9b1b4"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "60084942a5cc09645d73fc0f401dcab74a6c2354"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "fca491d032099428b23320cea10dc9e4720a55f8"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "7a4eb6b7ba53bfe62ddf71e403aac1e4fba0ffd7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "cc132bda696b54f40856854a5edcbafd78900011"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "8f025643f6395638c23e6d2d2b5dffdfc4080f7c"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "7a4eb6b7ba53bfe62ddf71e403aac1e4fba0ffd7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "a33715eed11bf4177647af285c75d309b2149755"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "7a4eb6b7ba53bfe62ddf71e403aac1e4fba0ffd7"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "ccd9b00dd15cea21ba057b4a13d970fca7ad1b15"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/renderer.json",
+    "gitBlob": "417fea0d3760552cbb32b63a2423fd8f5402da90"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/darwin-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/darwin-arm64/review.json",
+    "gitBlob": "cc40db7166cc0084e0fe212f4f286ab4b7807721"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "36be28027a113a29a9ef4cca942497cb6ebc879e"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "0373078bd423b9520b39435c398d8531c4f1d1bf"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "b9c9db634f33c0a8c5c090632055c64a2b0dd278"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "457655833ee102e89a1b74fe85dce372ab1d1548"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "0f6c2421a797846abeb56cded8077781a9a98d18"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "4a3fd5590d3a44499e875429ebf88f732124984a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "5123f850bb220c93c5920e4c4dde93fcc9e9505e"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "c2bde8a9dbbc7523df9993e316e3d1dd20417bd6"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "b9c9db634f33c0a8c5c090632055c64a2b0dd278"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "72448ffbf46653bad3416b04a5e97fb489825a91"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "b0ae4d4d0d19825b94a22b3af34604d88b3fb985"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "b9c9db634f33c0a8c5c090632055c64a2b0dd278"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "52771c35274eba0a973ed55bb474f57247d11507"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "b9c9db634f33c0a8c5c090632055c64a2b0dd278"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "0047a5599c733c4e633c5b5e47a3227e8fa2d5bb"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/renderer.json",
+    "gitBlob": "406ef7c5f5a801292931d88a1b797ec9e275f54b"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/phone/linux-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/review.json",
+    "gitBlob": "8e375cb99226df4254e84c52ef8e5b126faa06d1"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "3108d0ea0d3375da8cc1e30cafb8e697a6b52354"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "85bbc0ab62bd6e8562f95fbc7ac84e9900200c0e"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "f44726c2901be2051f72dcc858c9d9c230cc728d"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "32f8e6ef8249f8df13a8a4c57d73f1b77d1643ec"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "d17334e2f6b448b5263787e898787dbb95c1271f"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "c4f597d407ae8998e493d21126114cd10353d47a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "b50ad92c1d9c68e2550ac5e0b8d67a69f1eb0578"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "4ae87c09aa6af7221fb1c6eb945aecaecb68fa90"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "f44726c2901be2051f72dcc858c9d9c230cc728d"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "72a0a7f86bbdeb8a75e913e7f7ca4c8776afbe42"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "4c4b98bfbf8442ab64177813d0604ac29b635095"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "f44726c2901be2051f72dcc858c9d9c230cc728d"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "c73ec25e6fd68454687aa7b205df513f8b47ba3f"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "f44726c2901be2051f72dcc858c9d9c230cc728d"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "1875c27ea9e802cb32eb04d80c605e21fc3268d2"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/renderer.json",
+    "gitBlob": "1fd14a012505020e6aa199c4c1c8a22d509841ad"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/darwin-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/darwin-arm64/review.json",
+    "gitBlob": "2c1c29c5651dfb5eec069f3257f7b6b7e2acab7c"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/010-private-room-1-nacre-envoy.png",
+    "gitBlob": "0a9ba9a265cb9a82b6daef47120bd5b1276308f4"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/010-private-room-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/010-private-room-2-dawn-listener.png",
+    "gitBlob": "8828a00bde1eccb074cd6b23889210897a0b2d35"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/010-private-room-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/010-private-room-3-outer-witness.png",
+    "gitBlob": "2fc0a1f8a6b843c7de256157344e2e0eb021be4a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+    "gitBlob": "b20028a6107f84845c149dee43cc19167ff9da5e"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+    "gitBlob": "90e6a66137f2716f6736f5c761186077c14e147a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/013-choose-history-1-nacre-envoy.png",
+    "gitBlob": "e70bf18c8d5b9c8c17ae0d5fec9193d38fa089fb"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/014-invite-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/014-invite-1-nacre-envoy.png",
+    "gitBlob": "a45fe22bb8b91dbbcbc9c5b89aea6d012ef26931"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/014-invite-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/014-invite-2-dawn-listener.png",
+    "gitBlob": "bde3d6a869851e270bd9a0f98f76930d2b07b502"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/014-invite-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/014-invite-3-outer-witness.png",
+    "gitBlob": "2fc0a1f8a6b843c7de256157344e2e0eb021be4a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/015-consent-1-nacre-envoy.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/015-consent-1-nacre-envoy.png",
+    "gitBlob": "867ea92bb2a1e185568f6d0577f8e56554f1d965"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/015-consent-2-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/015-consent-2-dawn-listener.png",
+    "gitBlob": "e34aea59a715b133e9df97e15fd1ee2bfab5a5e6"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/015-consent-3-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/015-consent-3-outer-witness.png",
+    "gitBlob": "2fc0a1f8a6b843c7de256157344e2e0eb021be4a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/016-recover-consent-1-dawn-listener.png",
+    "gitBlob": "f2b8af1782d1d4a4cc3a1fcb11a630cdc2bc4393"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/016-recover-consent-2-outer-witness.png",
+    "gitBlob": "2fc0a1f8a6b843c7de256157344e2e0eb021be4a"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+    "gitBlob": "1206ab1fdb69ee1beba4c8a459f9e83073610ac9"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/renderer.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/renderer.json",
+    "gitBlob": "2be03c9ba09155b0df1ee30310120bd09aa5c074"
+  },
+  {
+    "old": "tests/browser/story-baselines/selected-history-consent/short/linux-arm64/review.json",
+    "proposed": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/review.json",
+    "gitBlob": "ec2be1fe754d1abdbec4a34cce5816854e6f217c"
+  }
+]

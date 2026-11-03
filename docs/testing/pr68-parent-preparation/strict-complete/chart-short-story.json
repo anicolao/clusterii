@@ -1,0 +1,192 @@
+{
+  "id": "campaign-chart-navigation",
+  "title": "Navigate the authoritative star catalogue with keyboard and pointer",
+  "inventory": [
+    "UX-03",
+    "UX-04",
+    "UX-15",
+    "UX-16"
+  ],
+  "description": "A real waiting member filters the authoritative catalogue, uses keyboard camera controls, selects a named star and tests map-label clipping at the inspector boundary. No home exists before scheduled start. Fixed catalogue entropy makes the scene repeatable without invented star data or gameplay actions.",
+  "source": {
+    "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+    "dirty": true,
+    "spec": "tests/browser/campaign-navigation.story.spec.ts",
+    "specSha256": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "short",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "waiting-member",
+      "description": "Create and join a waiting development campaign through ordinary sign-in/create/join controls. Grant emulator developer access and use the test loader\u2019s fixed catalogue entropy. No scheduler or production clock is advanced.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "waiting-chart",
+      "description": "Inspect the waiting galaxy before a home has been assigned.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The real canvas and selected system are visible.",
+      "verifications": [
+        "The map fills the viewport under a slim campaign rail."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "002-waiting-chart-1-star-envoy.png",
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-o-stars",
+      "description": "Open Systems list and filter the authoritative catalogue to O-class stars.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Exactly 32 catalogued O-class systems match.",
+      "verifications": [
+        "No home-centering action is available before home assignment.",
+        "The opaque list and bounded scroll region stay below the campaign rail."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "003-filter-o-stars-1-star-envoy.png",
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expand-camera-controls",
+      "description": "Restore all stellar classes and expand Camera controls using the keyboard.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "Orbit left is available in the expanded controls.",
+      "verifications": [
+        "Close list remains inside the viewport."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "004-expand-camera-controls-1-star-envoy.png",
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keyboard-orbit",
+      "description": "Activate Orbit left with Enter and observe the actual camera moving the selected star label.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The list closes, focus returns and the map label moves.",
+      "verifications": [
+        "The acknowledged navigation causes no uncaught application errors."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "005-keyboard-orbit-1-star-envoy.png",
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "description": "Reopen the list with Enter and restore the galaxy overview.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The overview returns focus to Systems list.",
+      "verifications": [
+        "The acknowledged navigation causes no uncaught application errors."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "006-overview-1-star-envoy.png",
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "select-rana",
+      "description": "Select the named visible catalogue entry Rana and inspect its system details.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The inspector identifies the selected authoritative star.",
+      "verifications": [
+        "The inspector is opaque and map HTML labels are clipped to the chart viewport."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "007-select-rana-1-star-envoy.png",
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reload-chart",
+      "description": "Reload the same campaign after navigation without fabricating a home or changing membership.",
+      "actor": "Star envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative galaxy canvas recovers.",
+      "verifications": [
+        "Navigation and reload caused no uncaught page errors."
+      ],
+      "views": [
+        {
+          "player": "Star envoy",
+          "image": "008-reload-chart-1-star-envoy.png",
+          "verifications": [
+            "System names remain separated and contained as the actual camera and class filter change."
+          ]
+        }
+      ]
+    }
+  ]
+}

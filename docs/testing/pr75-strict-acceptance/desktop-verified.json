@@ -1,0 +1,54 @@
+{
+  "executor": {
+    "requestId": "account-strict-20261026-01",
+    "sourceCommit": "a24f54de5605d40857630be101980ab0d7164a5d",
+    "executorCommit": "8aa09a68c31ad0f677c718792e805ab3862136de",
+    "case": "account-strict",
+    "mode": "verify",
+    "target": "6c6c80abf5d3b72acc5d76999a77a93b81f72062",
+    "runId": "40289229476",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "b91c36abbe425c78a4e5496262816713ce005cc2",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "853dc12b793fdf5d7cc177a0038f8912ea8eae5532309742b28d11523c7eeb92",
+        "views": 57
+      }
+    },
+    "requestSha256": "224ae4a54a2b971f03241e289ebeeacd9d2ebdb01141476245d60c75b3503551"
+  },
+  "artifact": {
+    "artifact": {
+      "id": 12634724554,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYzNDcyNDU1NA==",
+      "name": "account-strict-draft-desktop-8aa09a68c31ad0f677c718792e805ab3862136de-1",
+      "size_in_bytes": 26314747,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12634724554",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12634724554/zip",
+      "expired": false,
+      "digest": "sha256:799f753a806f15267ac99e9889d424f769fd08c2c881677218ba2aa6fcfa18d5",
+      "created_at": "2026-10-26T08:06:22Z",
+      "updated_at": "2026-10-26T08:06:22Z",
+      "expires_at": "2026-11-25T08:06:20Z",
+      "workflow_run": {
+        "id": 40289229476,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr75-account-strict",
+        "head_sha": "8aa09a68c31ad0f677c718792e805ab3862136de"
+      }
+    },
+    "bytes": 26314747,
+    "sha256": "799f753a806f15267ac99e9889d424f769fd08c2c881677218ba2aa6fcfa18d5",
+    "fullZipCRCVerified": true,
+    "selectedFiles": 121
+  },
+  "verifiedImages": 57,
+  "allReviewedImagesByteExact": true,
+  "specAndRendererMatch": true
+}

@@ -1,0 +1,69 @@
+{
+  "reviewer": "Codex supervisor",
+  "scope": "regression baseline approval only, not full design-fidelity approval",
+  "artifactId": 12629191886,
+  "runId": "40272329867",
+  "viewport": "large",
+  "inheritedExact": 34,
+  "newApproved": [
+    {
+      "image": "029-prepare-replacement-choice-1-nacre-envoy.png",
+      "sha256": "d1bd11b140228d0cdc3e1b12f1a2d11fd38a9f6194a37e4ba3666f64046dd806",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/029-prepare-replacement-choice-1-nacre-envoy.png",
+      "note": "Shared unsent proposal visible in first tab; full message history and composer fit."
+    },
+    {
+      "image": "029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+      "sha256": "2871af3c7a60c743edd80f204958c6e515c6c7e496eb5022d657cb984de9dc45",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+      "note": "Shared proposal visible in second tab; controls fit."
+    },
+    {
+      "image": "030-review-competing-replacement-1-nacre-envoy.png",
+      "sha256": "1ea55a4674bdb984fe79e03b8939e837d6f6285ef125cb2311f559ace11429b3",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/030-review-competing-replacement-1-nacre-envoy.png",
+      "note": "Northern proposal retained in first tab."
+    },
+    {
+      "image": "030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+      "sha256": "5825914c3d0240fe63e8261ce27a84758db66491063f59ca9cbe0615e22e980a",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+      "note": "Competing southern proposal preserved; conflict text and both explicit choices visible, Send disabled."
+    },
+    {
+      "image": "031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+      "sha256": "ec578b0ce824aa35c4606cba0a79331588d74a32ac880cfcb6897ccead952481",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+      "note": "Southern replacement saved, conflict clears."
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-1-nacre-envoy.png",
+      "sha256": "ec578b0ce824aa35c4606cba0a79331588d74a32ac880cfcb6897ccead952481",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/032-recover-chosen-local-proposal-1-nacre-envoy.png",
+      "note": "Reload first tab recovers chosen southern draft without sending."
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+      "sha256": "ec578b0ce824aa35c4606cba0a79331588d74a32ac880cfcb6897ccead952481",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+      "note": "Reload second tab recovers same chosen draft."
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
+      "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/large/032-recover-chosen-local-proposal-3-outer-witness.png",
+      "note": "Outsider has empty new-conversation form; no private room or proposal exposed."
+    }
+  ],
+  "limitations": [
+    "Existing singular participant grammar and large-screen composition gaps remain recorded."
+  ]
+}

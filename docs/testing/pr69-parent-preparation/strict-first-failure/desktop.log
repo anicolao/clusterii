@@ -1,0 +1,1264 @@
+﻿2026-10-25T23:56:25.6216366Z Current runner version: '2.338.0'
+2026-10-25T23:56:25.6248800Z ##[group]Runner Image Provisioner
+2026-10-25T23:56:25.6249820Z Hosted Compute Agent
+2026-10-25T23:56:25.6250666Z Version: 20261021.618
+2026-10-25T23:56:25.6251373Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-25T23:56:25.6252667Z Build Date: 2026-10-21T00:45:21Z
+2026-10-25T23:56:25.6253459Z Worker ID: {4edad73b-bc69-4cf7-83fd-9f25a17a1d6b}
+2026-10-25T23:56:25.6254222Z Region: centralus
+2026-10-25T23:56:25.6254916Z Cloud: Azure
+2026-10-25T23:56:25.6255477Z ##[endgroup]
+2026-10-25T23:56:25.6258582Z ##[group]Operating System
+2026-10-25T23:56:25.6259310Z Ubuntu
+2026-10-25T23:56:25.6259865Z 24.04.5
+2026-10-25T23:56:25.6260481Z LTS
+2026-10-25T23:56:25.6261030Z ##[endgroup]
+2026-10-25T23:56:25.6261630Z ##[group]Runner Image
+2026-10-25T23:56:25.6262402Z Image: ubuntu-24.04-arm
+2026-10-25T23:56:25.6263026Z Version: 20261012.149.1
+2026-10-25T23:56:25.6264541Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24-arm64/20261012.149/images/ubuntu/Ubuntu2404-Arm64-Readme.md
+2026-10-25T23:56:25.6266537Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24-arm64%2F20261012.149
+2026-10-25T23:56:25.6267663Z ##[endgroup]
+2026-10-25T23:56:25.6268818Z ##[group]GITHUB_TOKEN Permissions
+2026-10-25T23:56:25.6272197Z Contents: read
+2026-10-25T23:56:25.6272979Z Metadata: read
+2026-10-25T23:56:25.6273719Z ##[endgroup]
+2026-10-25T23:56:25.6277388Z Secret source: Actions
+2026-10-25T23:56:25.6278609Z Cache mode: write
+2026-10-25T23:56:25.6279720Z Prepare workflow directory
+2026-10-25T23:56:25.6787783Z Prepare all required actions
+2026-10-25T23:56:25.6841241Z Getting action download info
+2026-10-25T23:56:25.9624808Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-25T23:56:26.0880757Z Download action repository 'DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e' (SHA:9383ce2bf08796b65508822f5982f49151badc4e)
+2026-10-25T23:56:26.6133097Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-25T23:56:26.8282257Z Complete job name: scene (contacts, desktop)
+2026-10-25T23:56:26.9122973Z ##[group]Run actions/checkout@v4
+2026-10-25T23:56:26.9124432Z with:
+2026-10-25T23:56:26.9125037Z   fetch-depth: 0
+2026-10-25T23:56:26.9125900Z   persist-credentials: false
+2026-10-25T23:56:26.9126676Z   repository: anicolao/clusterii
+2026-10-25T23:56:26.9130361Z   token: ***
+2026-10-25T23:56:26.9131091Z   ssh-strict: true
+2026-10-25T23:56:26.9131659Z   ssh-user: git
+2026-10-25T23:56:26.9132219Z   clean: true
+2026-10-25T23:56:26.9132920Z   sparse-checkout-cone-mode: true
+2026-10-25T23:56:26.9133650Z   fetch-tags: false
+2026-10-25T23:56:26.9134302Z   show-progress: true
+2026-10-25T23:56:26.9134891Z   lfs: false
+2026-10-25T23:56:26.9135436Z   submodules: false
+2026-10-25T23:56:26.9136542Z   set-safe-directory: true
+2026-10-25T23:56:26.9137313Z   allow-unsafe-pr-checkout: false
+2026-10-25T23:56:26.9138943Z env:
+2026-10-25T23:56:26.9140123Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+2026-10-25T23:56:26.9141457Z ##[endgroup]
+2026-10-25T23:56:27.0023618Z Syncing repository: anicolao/clusterii
+2026-10-25T23:56:27.0026421Z ##[group]Getting Git version info
+2026-10-25T23:56:27.0027423Z Working directory is '/home/runner/work/clusterii/clusterii'
+2026-10-25T23:56:27.0028977Z [command]/usr/bin/git version
+2026-10-25T23:56:27.0087126Z git version 2.55.0
+2026-10-25T23:56:27.0105533Z ##[endgroup]
+2026-10-25T23:56:27.0120446Z Temporarily overriding HOME='/home/runner/work/_temp/5eb2b873-af8f-4202-8e3d-5309d90fa323' before making global git config changes
+2026-10-25T23:56:27.0122172Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-25T23:56:27.0124859Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+2026-10-25T23:56:27.0157861Z Deleting the contents of '/home/runner/work/clusterii/clusterii'
+2026-10-25T23:56:27.0163022Z ##[group]Initializing the repository
+2026-10-25T23:56:27.0167886Z [command]/usr/bin/git init /home/runner/work/clusterii/clusterii
+2026-10-25T23:56:27.0308843Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-25T23:56:27.0310885Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-25T23:56:27.0312572Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-25T23:56:27.0313443Z hint: call:
+2026-10-25T23:56:27.0314165Z hint:
+2026-10-25T23:56:27.0314917Z hint: 	git config --global init.defaultBranch <name>
+2026-10-25T23:56:27.0316072Z hint:
+2026-10-25T23:56:27.0316855Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-25T23:56:27.0317927Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-25T23:56:27.0318862Z hint:
+2026-10-25T23:56:27.0319528Z hint: 	git branch -m <name>
+2026-10-25T23:56:27.0320236Z hint:
+2026-10-25T23:56:27.0321012Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-25T23:56:27.0322247Z Initialized empty Git repository in /home/runner/work/clusterii/clusterii/.git/
+2026-10-25T23:56:27.0324581Z [command]/usr/bin/git remote add origin https://github.com/anicolao/clusterii
+2026-10-25T23:56:27.0369528Z ##[endgroup]
+2026-10-25T23:56:27.0370629Z ##[group]Disabling automatic garbage collection
+2026-10-25T23:56:27.0372083Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-25T23:56:27.0406508Z ##[endgroup]
+2026-10-25T23:56:27.0407603Z ##[group]Setting up auth
+2026-10-25T23:56:27.0412247Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-25T23:56:27.0441518Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-25T23:56:27.0796615Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-25T23:56:27.0825087Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-25T23:56:27.1023020Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-25T23:56:27.1054025Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-25T23:56:27.1252086Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-25T23:56:27.1296528Z ##[endgroup]
+2026-10-25T23:56:27.1297743Z ##[group]Fetching the repository
+2026-10-25T23:56:27.1305997Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-10-25T23:58:14.8554994Z From https://github.com/anicolao/clusterii
+2026-10-25T23:58:14.8556675Z  * [new branch]        ci/nix-renderer-provisioning -> origin/ci/nix-renderer-provisioning
+2026-10-25T23:58:14.8557852Z  * [new branch]        ci/nix-story-runtime    -> origin/ci/nix-story-runtime
+2026-10-25T23:58:14.8558860Z  * [new branch]        ci/nix-workflow-tools   -> origin/ci/nix-workflow-tools
+2026-10-25T23:58:14.8559921Z  * [new branch]        ci/reuse-documentation-verification -> origin/ci/reuse-documentation-verification
+2026-10-25T23:58:14.8560934Z  * [new branch]        docs/step-0-contract    -> origin/docs/step-0-contract
+2026-10-25T23:58:14.8561929Z  * [new branch]        feat/admission-briefing-composition -> origin/feat/admission-briefing-composition
+2026-10-25T23:58:14.8563209Z  * [new branch]        feat/aftermath-scene-hierarchy -> origin/feat/aftermath-scene-hierarchy
+2026-10-25T23:58:14.8564158Z  * [new branch]        feat/arrival-reports    -> origin/feat/arrival-reports
+2026-10-25T23:58:14.8567176Z  * [new branch]        feat/bounded-story-cohorts -> origin/feat/bounded-story-cohorts
+2026-10-25T23:58:14.8568304Z  * [new branch]        feat/campaign-admission -> origin/feat/campaign-admission
+2026-10-25T23:58:14.8569392Z  * [new branch]        feat/campaign-encryption-lifecycle -> origin/feat/campaign-encryption-lifecycle
+2026-10-25T23:58:14.8570623Z  * [new branch]        feat/campaign-entry-recovery -> origin/feat/campaign-entry-recovery
+2026-10-25T23:58:14.8571571Z  * [new branch]        feat/campaign-history   -> origin/feat/campaign-history
+2026-10-25T23:58:14.8572625Z  * [new branch]        feat/campaign-mode-migration -> origin/feat/campaign-mode-migration
+2026-10-25T23:58:14.8573635Z  * [new branch]        feat/campaign-navigation -> origin/feat/campaign-navigation
+2026-10-25T23:58:14.8574582Z  * [new branch]        feat/campaign-navigation-stories -> origin/feat/campaign-navigation-stories
+2026-10-25T23:58:14.8576757Z  * [new branch]        feat/campaign-start-stories -> origin/feat/campaign-start-stories
+2026-10-25T23:58:14.8578587Z  * [new branch]        feat/cinematic-entry-composition -> origin/feat/cinematic-entry-composition
+2026-10-25T23:58:14.8580574Z  * [new branch]        feat/command-receipt-binding -> origin/feat/command-receipt-binding
+2026-10-25T23:58:14.8581544Z  * [new branch]        feat/command-recovery   -> origin/feat/command-recovery
+2026-10-25T23:58:14.8582346Z  * [new branch]        feat/contextual-arrival-report -> origin/feat/contextual-arrival-report
+2026-10-25T23:58:14.8583430Z  * [new branch]        feat/contextual-construction-help -> origin/feat/contextual-construction-help
+2026-10-25T23:58:14.8584187Z  * [new branch]        feat/contextual-market-help -> origin/feat/contextual-market-help
+2026-10-25T23:58:14.8584909Z  * [new branch]        feat/contextual-route-help -> origin/feat/contextual-route-help
+2026-10-25T23:58:14.8585706Z  * [new branch]        feat/conversation-history -> origin/feat/conversation-history
+2026-10-25T23:58:14.8586797Z  * [new branch]        feat/credit-offers      -> origin/feat/credit-offers
+2026-10-25T23:58:14.8587772Z  * [new branch]        feat/encryption-choice-stories -> origin/feat/encryption-choice-stories
+2026-10-25T23:58:14.8588694Z  * [new branch]        feat/encryption-migration-stories -> origin/feat/encryption-migration-stories
+2026-10-25T23:58:14.8589589Z  * [new branch]        feat/faction-briefing-composition -> origin/feat/faction-briefing-composition
+2026-10-25T23:58:14.8590593Z  * [new branch]        feat/feedback-lab-stories -> origin/feat/feedback-lab-stories
+2026-10-25T23:58:14.8591332Z  * [new branch]        feat/fleet-cancellation -> origin/feat/fleet-cancellation
+2026-10-25T23:58:14.8592177Z  * [new branch]        feat/fleet-cargo        -> origin/feat/fleet-cargo
+2026-10-25T23:58:14.8592836Z  * [new branch]        feat/fleet-contacts     -> origin/feat/fleet-contacts
+2026-10-25T23:58:14.8593446Z  * [new branch]        feat/fleet-reorganization -> origin/feat/fleet-reorganization
+2026-10-25T23:58:14.8594126Z  * [new branch]        feat/fleet-travel       -> origin/feat/fleet-travel
+2026-10-25T23:58:14.8594821Z  * [new branch]        feat/galaxy-cinematic-instruments -> origin/feat/galaxy-cinematic-instruments
+2026-10-25T23:58:14.8595701Z  * [new branch]        feat/galaxy-command-composition -> origin/feat/galaxy-command-composition
+2026-10-25T23:58:14.8596524Z  * [new branch]        feat/galaxy-label-placement -> origin/feat/galaxy-label-placement
+2026-10-25T23:58:14.8597213Z  * [new branch]        feat/history-lab-stories -> origin/feat/history-lab-stories
+2026-10-25T23:58:14.8597890Z  * [new branch]        feat/history-setup-steps -> origin/feat/history-setup-steps
+2026-10-25T23:58:14.8598577Z  * [new branch]        feat/identity-gallery-stories -> origin/feat/identity-gallery-stories
+2026-10-25T23:58:14.8599303Z  * [new branch]        feat/identity-validation-stories -> origin/feat/identity-validation-stories
+2026-10-25T23:58:14.8600035Z  * [new branch]        feat/illustrated-e2e    -> origin/feat/illustrated-e2e
+2026-10-25T23:58:14.8600903Z  * [new branch]        feat/in-game-rules      -> origin/feat/in-game-rules
+2026-10-25T23:58:14.8601640Z  * [new branch]        feat/interrupted-route-stories -> origin/feat/interrupted-route-stories
+2026-10-25T23:58:14.8602310Z  * [new branch]        feat/invitation-stories -> origin/feat/invitation-stories
+2026-10-25T23:58:14.8602930Z  * [new branch]        feat/lifecycle-lab-stories -> origin/feat/lifecycle-lab-stories
+2026-10-25T23:58:14.8603710Z  * [new branch]        feat/live-arrival-archive-stories -> origin/feat/live-arrival-archive-stories
+2026-10-25T23:58:14.8604458Z  * [new branch]        feat/live-briefing-stories -> origin/feat/live-briefing-stories
+2026-10-25T23:58:14.8605183Z  * [new branch]        feat/live-construction-stories -> origin/feat/live-construction-stories
+2026-10-25T23:58:14.8606359Z  * [new branch]        feat/live-conversation-draft-stories -> origin/feat/live-conversation-draft-stories
+2026-10-25T23:58:14.8607235Z  * [new branch]        feat/live-conversation-readmission-stories -> origin/feat/live-conversation-readmission-stories
+2026-10-25T23:58:14.8608243Z  * [new branch]        feat/live-conversation-revocation-stories -> origin/feat/live-conversation-revocation-stories
+2026-10-25T23:58:14.8609045Z  * [new branch]        feat/live-credit-stories -> origin/feat/live-credit-stories
+2026-10-25T23:58:14.8610236Z  * [new branch]        feat/live-draft-account-stories -> origin/feat/live-draft-account-stories
+2026-10-25T23:58:14.8611102Z  * [new branch]        feat/live-draft-replacement-stories -> origin/feat/live-draft-replacement-stories
+2026-10-25T23:58:14.8611928Z  * [new branch]        feat/live-fleet-cancellation-stories -> origin/feat/live-fleet-cancellation-stories
+2026-10-25T23:58:14.8612754Z  * [new branch]        feat/live-fleet-cargo-stories -> origin/feat/live-fleet-cargo-stories
+2026-10-25T23:58:14.8613473Z  * [new branch]        feat/live-fleet-contact-stories -> origin/feat/live-fleet-contact-stories
+2026-10-25T23:58:14.8614220Z  * [new branch]        feat/live-fleet-formation-stories -> origin/feat/live-fleet-formation-stories
+2026-10-25T23:58:14.8615351Z  * [new branch]        feat/live-fleet-reorganization-stories -> origin/feat/live-fleet-reorganization-stories
+2026-10-25T23:58:14.8616448Z  * [new branch]        feat/live-fleet-travel-stories -> origin/feat/live-fleet-travel-stories
+2026-10-25T23:58:14.8617314Z  * [new branch]        feat/live-interrupted-send-stories -> origin/feat/live-interrupted-send-stories
+2026-10-25T23:58:14.8618090Z  * [new branch]        feat/live-observation-stories -> origin/feat/live-observation-stories
+2026-10-25T23:58:14.8618784Z  * [new branch]        feat/live-sharing-stories -> origin/feat/live-sharing-stories
+2026-10-25T23:58:14.8619475Z  * [new branch]        feat/local-galaxy-detail -> origin/feat/local-galaxy-detail
+2026-10-25T23:58:14.8620126Z  * [new branch]        feat/local-motion-preference -> origin/feat/local-motion-preference
+2026-10-25T23:58:14.8620930Z  * [new branch]        feat/maintenance-stories -> origin/feat/maintenance-stories
+2026-10-25T23:58:14.8621592Z  * [new branch]        feat/market-draft-navigation -> origin/feat/market-draft-navigation
+2026-10-25T23:58:14.8622197Z  * [new branch]        feat/market-focus       -> origin/feat/market-focus
+2026-10-25T23:58:14.8622855Z  * [new branch]        feat/menu-route-reference -> origin/feat/menu-route-reference
+2026-10-25T23:58:14.8623496Z  * [new branch]        feat/navigation-label-review -> origin/feat/navigation-label-review
+2026-10-25T23:58:14.8624226Z  * [new branch]        feat/private-conversations -> origin/feat/private-conversations
+2026-10-25T23:58:14.8624856Z  * [new branch]        feat/production-lab     -> origin/feat/production-lab
+2026-10-25T23:58:14.8625488Z  * [new branch]        feat/production-lab-stories -> origin/feat/production-lab-stories
+2026-10-25T23:58:14.8626524Z  * [new branch]        feat/production-ticks   -> origin/feat/production-ticks
+2026-10-25T23:58:14.8627189Z  * [new branch]        feat/profile-recovery-stories -> origin/feat/profile-recovery-stories
+2026-10-25T23:58:14.8628250Z  * [new branch]        feat/provider-session-revocation -> origin/feat/provider-session-revocation
+2026-10-25T23:58:14.8629002Z  * [new branch]        feat/receipt-recovery-stories -> origin/feat/receipt-recovery-stories
+2026-10-25T23:58:14.8629658Z  * [new branch]        feat/research-forecast  -> origin/feat/research-forecast
+2026-10-25T23:58:14.8630340Z  * [new branch]        feat/research-lab-stories -> origin/feat/research-lab-stories
+2026-10-25T23:58:14.8631036Z  * [new branch]        feat/research-selection -> origin/feat/research-selection
+2026-10-25T23:58:14.8631693Z  * [new branch]        feat/return-briefing    -> origin/feat/return-briefing
+2026-10-25T23:58:14.8632287Z  * [new branch]        feat/return-entry       -> origin/feat/return-entry
+2026-10-25T23:58:14.8632889Z  * [new branch]        feat/route-draft-discard -> origin/feat/route-draft-discard
+2026-10-25T23:58:14.8633558Z  * [new branch]        feat/route-force-review -> origin/feat/route-force-review
+2026-10-25T23:58:14.8634255Z  * [new branch]        feat/scheduled-start-recovery -> origin/feat/scheduled-start-recovery
+2026-10-25T23:58:14.8634915Z  * [new branch]        feat/science-rate-ledger -> origin/feat/science-rate-ledger
+2026-10-25T23:58:14.8636009Z  * [new branch]        feat/secure-development-campaigns -> origin/feat/secure-development-campaigns
+2026-10-25T23:58:14.8636775Z  * [new branch]        feat/session-recovery-stories -> origin/feat/session-recovery-stories
+2026-10-25T23:58:14.8637514Z  * [new branch]        feat/session-revocation -> origin/feat/session-revocation
+2026-10-25T23:58:14.8638163Z  * [new branch]        feat/sharing-lab-stories -> origin/feat/sharing-lab-stories
+2026-10-25T23:58:14.8638764Z  * [new branch]        feat/stationed-fleets   -> origin/feat/stationed-fleets
+2026-10-25T23:58:14.8639474Z  * [new branch]        feat/stellar-observations -> origin/feat/stellar-observations
+2026-10-25T23:58:14.8640165Z  * [new branch]        feat/system-construction -> origin/feat/system-construction
+2026-10-25T23:58:14.8641195Z  * [new branch]        feat/travel-pause-catchup-stories -> origin/feat/travel-pause-catchup-stories
+2026-10-25T23:58:14.8642008Z  * [new branch]        feat/waiting-campaign-manifest -> origin/feat/waiting-campaign-manifest
+2026-10-25T23:58:14.8642718Z  * [new branch]        fix/arrival-record-expectation -> origin/fix/arrival-record-expectation
+2026-10-25T23:58:14.8643530Z  * [new branch]        fix/campaign-selection-callbacks -> origin/fix/campaign-selection-callbacks
+2026-10-25T23:58:14.8644258Z  * [new branch]        fix/ingress-observer-activation -> origin/fix/ingress-observer-activation
+2026-10-25T23:58:14.8645044Z  * [new branch]        fix/profile-snapshot-error-order -> origin/fix/profile-snapshot-error-order
+2026-10-25T23:58:14.8646141Z  * [new branch]        fix/research-capability-guidance -> origin/fix/research-capability-guidance
+2026-10-25T23:58:14.8646874Z  * [new branch]        fix/research-command-recovery -> origin/fix/research-command-recovery
+2026-10-25T23:58:14.8647667Z  * [new branch]        fix/research-draft-recovery -> origin/fix/research-draft-recovery
+2026-10-25T23:58:14.8648331Z  * [new branch]        fix/research-queue-reading -> origin/fix/research-queue-reading
+2026-10-25T23:58:14.8649016Z  * [new branch]        fix/route-draft-navigation -> origin/fix/route-draft-navigation
+2026-10-25T23:58:14.8649708Z  * [new branch]        fix/science-rail-clearance -> origin/fix/science-rail-clearance
+2026-10-25T23:58:14.8650347Z  * [new branch]        fix/story-config-bootstrap -> origin/fix/story-config-bootstrap
+2026-10-25T23:58:14.8651115Z  * [new branch]        fix/story-failure-classification -> origin/fix/story-failure-classification
+2026-10-25T23:58:14.8651823Z  * [new branch]        fix/verification-index-buffer -> origin/fix/verification-index-buffer
+2026-10-25T23:58:14.8652580Z  * [new branch]        fix/voluntary-campaign-departure -> origin/fix/voluntary-campaign-departure
+2026-10-25T23:58:14.8653499Z  * [new branch]        gh-pages                -> origin/gh-pages
+2026-10-25T23:58:14.8654135Z  * [new branch]        investigate/emulator-post-commit -> origin/investigate/emulator-post-commit
+2026-10-25T23:58:14.8654895Z  * [new branch]        investigate/jfr-export-load -> origin/investigate/jfr-export-load
+2026-10-25T23:58:14.8655999Z  * [new branch]        investigate/market-background-paint -> origin/investigate/market-background-paint
+2026-10-25T23:58:14.8656975Z  * [new branch]        investigate/market-focus-visibility -> origin/investigate/market-focus-visibility
+2026-10-25T23:58:14.8657808Z  * [new branch]        investigate/pr52-whole-pixel-leading -> origin/investigate/pr52-whole-pixel-leading
+2026-10-25T23:58:14.8658614Z  * [new branch]        investigate/pr53-identity-complete -> origin/investigate/pr53-identity-complete
+2026-10-25T23:58:14.8659452Z  * [new branch]        investigate/pr53-identity-layer -> origin/investigate/pr53-identity-layer
+2026-10-25T23:58:14.8660218Z  * [new branch]        investigate/pr54-credit-candidates -> origin/investigate/pr54-credit-candidates
+2026-10-25T23:58:14.8661121Z  * [new branch]        investigate/pr57-short-candidates -> origin/investigate/pr57-short-candidates
+2026-10-25T23:58:14.8661958Z  * [new branch]        investigate/pr59-cancellation-candidates -> origin/investigate/pr59-cancellation-candidates
+2026-10-25T23:58:14.8662773Z  * [new branch]        investigate/pr60-cargo-candidates -> origin/investigate/pr60-cargo-candidates
+2026-10-25T23:58:14.8663624Z  * [new branch]        investigate/pr61-travel-candidates -> origin/investigate/pr61-travel-candidates
+2026-10-25T23:58:14.8664455Z  * [new branch]        investigate/pr62-invitation-candidates -> origin/investigate/pr62-invitation-candidates
+2026-10-25T23:58:14.8665300Z  * [new branch]        investigate/pr62-invitation-promotion -> origin/investigate/pr62-invitation-promotion
+2026-10-25T23:58:14.8666434Z  * [new branch]        investigate/pr62-route-recovery-candidates -> origin/investigate/pr62-route-recovery-candidates
+2026-10-25T23:58:14.8667316Z  * [new branch]        investigate/pr63-focus-candidates -> origin/investigate/pr63-focus-candidates
+2026-10-25T23:58:14.8668429Z  * [new branch]        investigate/pr63-maintenance-candidates -> origin/investigate/pr63-maintenance-candidates
+2026-10-25T23:58:14.8669313Z  * [new branch]        investigate/pr63-maintenance-reference -> origin/investigate/pr63-maintenance-reference
+2026-10-25T23:58:14.8670161Z  * [new branch]        investigate/pr63-maintenance-verify -> origin/investigate/pr63-maintenance-verify
+2026-10-25T23:58:14.8671114Z  * [new branch]        investigate/pr63-parent-preparation -> origin/investigate/pr63-parent-preparation
+2026-10-25T23:58:14.8671970Z  * [new branch]        investigate/pr63-paused-travel-candidates -> origin/investigate/pr63-paused-travel-candidates
+2026-10-25T23:58:14.8672905Z  * [new branch]        investigate/pr64-parent-preparation -> origin/investigate/pr64-parent-preparation
+2026-10-25T23:58:14.8673745Z  * [new branch]        investigate/pr65-parent-preparation -> origin/investigate/pr65-parent-preparation
+2026-10-25T23:58:14.8674608Z  * [new branch]        investigate/pr65-route-observation-repeat -> origin/investigate/pr65-route-observation-repeat
+2026-10-25T23:58:14.8675724Z  * [new branch]        investigate/pr65-route-retention-repeat -> origin/investigate/pr65-route-retention-repeat
+2026-10-25T23:58:14.8676575Z  * [new branch]        investigate/pr66-chart-phone-strict -> origin/investigate/pr66-chart-phone-strict
+2026-10-25T23:58:14.8677416Z  * [new branch]        investigate/pr66-gutter-candidates -> origin/investigate/pr66-gutter-candidates
+2026-10-25T23:58:14.8678300Z  * [new branch]        investigate/pr66-gutter-complete-strict -> origin/investigate/pr66-gutter-complete-strict
+2026-10-25T23:58:14.8679091Z  * [new branch]        investigate/pr66-gutter-references -> origin/investigate/pr66-gutter-references
+2026-10-25T23:58:14.8679896Z  * [new branch]        investigate/pr66-gutter-strict -> origin/investigate/pr66-gutter-strict
+2026-10-25T23:58:14.8680878Z  * [new branch]        investigate/pr66-label-candidates -> origin/investigate/pr66-label-candidates
+2026-10-25T23:58:14.8681755Z  * [new branch]        investigate/pr66-observation-candidates -> origin/investigate/pr66-observation-candidates
+2026-10-25T23:58:14.8682648Z  * [new branch]        investigate/pr66-parent-preparation -> origin/investigate/pr66-parent-preparation
+2026-10-25T23:58:14.8683433Z  * [new branch]        investigate/pr66-reviewed-parent -> origin/investigate/pr66-reviewed-parent
+2026-10-25T23:58:14.8684212Z  * [new branch]        investigate/pr66-scene-strict -> origin/investigate/pr66-scene-strict
+2026-10-25T23:58:14.8684906Z  * [new branch]        investigate/pr66-short-repeat -> origin/investigate/pr66-short-repeat
+2026-10-25T23:58:14.8685849Z  * [new branch]        investigate/pr67-home-candidates -> origin/investigate/pr67-home-candidates
+2026-10-25T23:58:14.8686818Z  * [new branch]        investigate/pr67-observation-candidates -> origin/investigate/pr67-observation-candidates
+2026-10-25T23:58:14.8687661Z  * [new branch]        investigate/pr67-observation-strict -> origin/investigate/pr67-observation-strict
+2026-10-25T23:58:14.8688538Z  * [new branch]        investigate/pr67-parent-preparation -> origin/investigate/pr67-parent-preparation
+2026-10-25T23:58:14.8689334Z  * [new branch]        investigate/pr68-navigation-strict -> origin/investigate/pr68-navigation-strict
+2026-10-25T23:58:14.8690161Z  * [new branch]        investigate/pr68-parent-preparation -> origin/investigate/pr68-parent-preparation
+2026-10-25T23:58:14.8691023Z  * [new branch]        investigate/pr69-contact-candidates -> origin/investigate/pr69-contact-candidates
+2026-10-25T23:58:14.8691772Z  * [new branch]        investigate/pr69-contact-strict -> origin/investigate/pr69-contact-strict
+2026-10-25T23:58:14.8692580Z  * [new branch]        investigate/pr69-parent-preparation -> origin/investigate/pr69-parent-preparation
+2026-10-25T23:58:14.8693391Z  * [new branch]        investigate/research-orders-visibility -> origin/investigate/research-orders-visibility
+2026-10-25T23:58:14.8694544Z  * [new branch]        investigate/research-queue-visibility -> origin/investigate/research-queue-visibility
+2026-10-25T23:58:14.8695412Z  * [new branch]        investigate/zero-science-settlement -> origin/investigate/zero-science-settlement
+2026-10-25T23:58:14.8696234Z  * [new branch]        main                    -> origin/main
+2026-10-25T23:58:14.8696902Z  * [new branch]        test/admission-frame-probe -> origin/test/admission-frame-probe
+2026-10-25T23:58:14.8697581Z  * [new branch]        test/admission-timing-probe -> origin/test/admission-timing-probe
+2026-10-25T23:58:14.8698273Z  * [new branch]        test/economy-feedback-ownership -> origin/test/economy-feedback-ownership
+2026-10-25T23:58:14.8699118Z  * [new branch]        test/late-view-revocation -> origin/test/late-view-revocation
+2026-10-25T23:58:14.8699765Z  * [new branch]        test/live-menu-preservation -> origin/test/live-menu-preservation
+2026-10-25T23:58:14.8700516Z  * [new branch]        test/live-research-completion -> origin/test/live-research-completion
+2026-10-25T23:58:14.8701205Z  * [new branch]        test/live-research-orders -> origin/test/live-research-orders
+2026-10-25T23:58:14.8701885Z  * [new branch]        test/market-account-isolation -> origin/test/market-account-isolation
+2026-10-25T23:58:14.8702667Z  * [new branch]        test/market-draft-lifecycle-plan -> origin/test/market-draft-lifecycle-plan
+2026-10-25T23:58:14.8703384Z  * [new branch]        test/market-session-revocation -> origin/test/market-session-revocation
+2026-10-25T23:58:14.8704821Z  * [new branch]        test/orbital-loss-history-pagination -> origin/test/orbital-loss-history-pagination
+2026-10-25T23:58:14.8705817Z  * [new branch]        test/profile-ingress-delivery -> origin/test/profile-ingress-delivery
+2026-10-25T23:58:14.8706817Z  * [new branch]        test/research-cap-progression -> origin/test/research-cap-progression
+2026-10-25T23:58:14.8707971Z  * [new branch]        test/research-persisted-completion -> origin/test/research-persisted-completion
+2026-10-25T23:58:14.8708810Z  * [new branch]        test/research-zero-science-persistence -> origin/test/research-zero-science-persistence
+2026-10-25T23:58:14.8709660Z  * [new branch]        test/route-ownership-boundaries -> origin/test/route-ownership-boundaries
+2026-10-25T23:58:14.8710463Z  * [new branch]        test/scanning-persistence-boundary -> origin/test/scanning-persistence-boundary
+2026-10-25T23:58:14.8711194Z  * [new branch]        test/science-ledger-motion -> origin/test/science-ledger-motion
+2026-10-25T23:58:14.8711951Z  * [new branch]        test/settlement-commit-boundary -> origin/test/settlement-commit-boundary
+2026-10-25T23:58:14.8712675Z  * [new branch]        test/settlement-rpc-boundary -> origin/test/settlement-rpc-boundary
+2026-10-25T23:58:14.8713464Z  * [new branch]        test/shared-presentation-settings -> origin/test/shared-presentation-settings
+2026-10-25T23:58:14.8714257Z  * [new branch]        test/story-screenshot-boundary -> origin/test/story-screenshot-boundary
+2026-10-25T23:58:14.8715038Z  * [new branch]        test/zero-science-player-story -> origin/test/zero-science-player-story
+2026-10-25T23:58:14.8716096Z  * [new branch]        test/zero-science-timing-boundaries -> origin/test/zero-science-timing-boundaries
+2026-10-25T23:58:14.8718387Z [command]/usr/bin/git branch --list --remote origin/investigate/pr69-contact-strict
+2026-10-25T23:58:14.8719118Z   origin/investigate/pr69-contact-strict
+2026-10-25T23:58:14.8720389Z [command]/usr/bin/git rev-parse refs/remotes/origin/investigate/pr69-contact-strict
+2026-10-25T23:58:14.8720993Z e8eea2b9c0a679b54df28bdc8c62029c9b224833
+2026-10-25T23:58:14.8722213Z ##[endgroup]
+2026-10-25T23:58:14.8722870Z ##[group]Determining the checkout info
+2026-10-25T23:58:14.8723493Z ##[endgroup]
+2026-10-25T23:58:14.8723956Z [command]/usr/bin/git sparse-checkout disable
+2026-10-25T23:58:14.8725072Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-25T23:58:14.8738299Z ##[group]Checking out the ref
+2026-10-25T23:58:14.8742572Z [command]/usr/bin/git checkout --progress --force -B investigate/pr69-contact-strict refs/remotes/origin/investigate/pr69-contact-strict
+2026-10-25T23:58:16.1891878Z Updating files:  24% (2165/8929)
+2026-10-25T23:58:16.4464232Z Updating files:  25% (2233/8929)
+2026-10-25T23:58:16.4888635Z Updating files:  26% (2322/8929)
+2026-10-25T23:58:16.5002902Z Updating files:  27% (2411/8929)
+2026-10-25T23:58:16.5771727Z Updating files:  28% (2501/8929)
+2026-10-25T23:58:16.8266203Z Updating files:  29% (2590/8929)
+2026-10-25T23:58:16.8860010Z Updating files:  30% (2679/8929)
+2026-10-25T23:58:17.0770047Z Updating files:  30% (2718/8929)
+2026-10-25T23:58:17.1059735Z Updating files:  31% (2768/8929)
+2026-10-25T23:58:17.4451736Z Updating files:  32% (2858/8929)
+2026-10-25T23:58:17.5800636Z Updating files:  33% (2947/8929)
+2026-10-25T23:58:17.7073209Z Updating files:  34% (3036/8929)
+2026-10-25T23:58:17.8936202Z Updating files:  35% (3126/8929)
+2026-10-25T23:58:18.2133669Z Updating files:  35% (3182/8929)
+2026-10-25T23:58:18.7271079Z Updating files:  36% (3215/8929)
+2026-10-25T23:58:18.7691936Z Updating files:  37% (3304/8929)
+2026-10-25T23:58:18.8704615Z Updating files:  38% (3394/8929)
+2026-10-25T23:58:18.8854154Z Updating files:  39% (3483/8929)
+2026-10-25T23:58:19.0456656Z Updating files:  39% (3492/8929)
+2026-10-25T23:58:19.7581489Z Updating files:  40% (3572/8929)
+2026-10-25T23:58:19.8225483Z Updating files:  41% (3661/8929)
+2026-10-25T23:58:19.8846967Z Updating files:  42% (3751/8929)
+2026-10-25T23:58:20.0681727Z Updating files:  42% (3789/8929)
+2026-10-25T23:58:20.5708635Z Updating files:  43% (3840/8929)
+2026-10-25T23:58:20.7521586Z Updating files:  44% (3929/8929)
+2026-10-25T23:58:20.8914710Z Updating files:  45% (4019/8929)
+2026-10-25T23:58:21.0212060Z Updating files:  45% (4031/8929)
+2026-10-25T23:58:21.1236986Z Updating files:  46% (4108/8929)
+2026-10-25T23:58:21.1812497Z Updating files:  47% (4197/8929)
+2026-10-25T23:58:21.2137513Z Updating files:  48% (4286/8929)
+2026-10-25T23:58:21.3259294Z Updating files:  49% (4376/8929)
+2026-10-25T23:58:21.4249226Z Updating files:  50% (4465/8929)
+2026-10-25T23:58:21.6347984Z Updating files:  51% (4554/8929)
+2026-10-25T23:58:21.9070845Z Updating files:  52% (4644/8929)
+2026-10-25T23:58:22.0166242Z Updating files:  52% (4719/8929)
+2026-10-25T23:58:22.4583332Z Updating files:  53% (4733/8929)
+2026-10-25T23:58:22.8857369Z Updating files:  54% (4822/8929)
+2026-10-25T23:58:23.0414160Z Updating files:  54% (4902/8929)
+2026-10-25T23:58:23.2938488Z Updating files:  55% (4911/8929)
+2026-10-25T23:58:23.9075510Z Updating files:  56% (5001/8929)
+2026-10-25T23:58:24.4329922Z Updating files:  56% (5059/8929)
+2026-10-25T23:58:24.7763496Z Updating files:  57% (5090/8929)
+2026-10-25T23:58:24.8869710Z Updating files:  58% (5179/8929)
+2026-10-25T23:58:24.9505390Z Updating files:  58% (5242/8929)
+2026-10-25T23:58:25.1687628Z Updating files:  59% (5269/8929)
+2026-10-25T23:58:25.3618140Z Updating files:  60% (5358/8929)
+2026-10-25T23:58:25.8397860Z Updating files:  61% (5447/8929)
+2026-10-25T23:58:25.8841275Z Updating files:  62% (5536/8929)
+2026-10-25T23:58:26.8843707Z Updating files:  62% (5546/8929)
+2026-10-25T23:58:26.8855781Z Updating files:  62% (5623/8929)
+2026-10-25T23:58:27.1691522Z Updating files:  63% (5626/8929)
+2026-10-25T23:58:27.9073689Z Updating files:  64% (5715/8929)
+2026-10-25T23:58:28.4124443Z Updating files:  64% (5756/8929)
+2026-10-25T23:58:28.6490283Z Updating files:  65% (5804/8929)
+2026-10-25T23:58:28.8998937Z Updating files:  66% (5894/8929)
+2026-10-25T23:58:29.8535975Z Updating files:  66% (5926/8929)
+2026-10-25T23:58:29.8864385Z Updating files:  67% (5983/8929)
+2026-10-25T23:58:30.0414008Z Updating files:  67% (6024/8929)
+2026-10-25T23:58:30.9033401Z Updating files:  68% (6072/8929)
+2026-10-25T23:58:31.0523501Z Updating files:  68% (6156/8929)
+2026-10-25T23:58:31.8863288Z Updating files:  69% (6162/8929)
+2026-10-25T23:58:31.8987130Z Updating files:  69% (6199/8929)
+2026-10-25T23:58:32.1191934Z Updating files:  70% (6251/8929)
+2026-10-25T23:58:32.5886425Z Updating files:  71% (6340/8929)
+2026-10-25T23:58:32.8912038Z Updating files:  72% (6429/8929)
+2026-10-25T23:58:34.0102067Z Updating files:  72% (6468/8929)
+2026-10-25T23:58:34.0510175Z Updating files:  73% (6519/8929)
+2026-10-25T23:58:34.0511389Z Updating files:  73% (6603/8929)
+2026-10-25T23:58:34.8987926Z Updating files:  74% (6608/8929)
+2026-10-25T23:58:34.9977055Z Updating files:  74% (6693/8929)
+2026-10-25T23:58:35.8946541Z Updating files:  75% (6697/8929)
+2026-10-25T23:58:35.9696107Z Updating files:  75% (6733/8929)
+2026-10-25T23:58:36.2223776Z Updating files:  76% (6787/8929)
+2026-10-25T23:58:36.9323188Z Updating files:  77% (6876/8929)
+2026-10-25T23:58:36.9323661Z Updating files:  77% (6963/8929)
+2026-10-25T23:58:37.5445466Z Updating files:  78% (6965/8929)
+2026-10-25T23:58:37.8143342Z Updating files:  79% (7054/8929)
+2026-10-25T23:58:37.8869509Z Updating files:  80% (7144/8929)
+2026-10-25T23:58:38.8896897Z Updating files:  80% (7162/8929)
+2026-10-25T23:58:39.0759189Z Updating files:  81% (7233/8929)
+2026-10-25T23:58:39.6708939Z Updating files:  82% (7322/8929)
+2026-10-25T23:58:39.8842828Z Updating files:  83% (7412/8929)
+2026-10-25T23:58:40.1344365Z Updating files:  83% (7427/8929)
+2026-10-25T23:58:41.0602000Z Updating files:  84% (7501/8929)
+2026-10-25T23:58:42.0385242Z Updating files:  84% (7528/8929)
+2026-10-25T23:58:42.9899004Z Updating files:  84% (7539/8929)
+2026-10-25T23:58:43.9295891Z Updating files:  84% (7546/8929)
+2026-10-25T23:58:44.6675923Z Updating files:  84% (7553/8929)
+2026-10-25T23:58:44.9176303Z Updating files:  85% (7590/8929)
+2026-10-25T23:58:45.4110550Z Updating files:  85% (7600/8929)
+2026-10-25T23:58:45.9036950Z Updating files:  86% (7679/8929)
+2026-10-25T23:58:47.1032531Z Updating files:  86% (7735/8929)
+2026-10-25T23:58:48.2137049Z Updating files:  86% (7747/8929)
+2026-10-25T23:58:48.5086022Z Updating files:  86% (7754/8929)
+2026-10-25T23:58:48.8902284Z Updating files:  87% (7769/8929)
+2026-10-25T23:58:48.9166259Z Updating files:  87% (7819/8929)
+2026-10-25T23:58:49.6712394Z Updating files:  88% (7858/8929)
+2026-10-25T23:58:49.8904744Z Updating files:  89% (7947/8929)
+2026-10-25T23:58:49.9619029Z Updating files:  89% (8010/8929)
+2026-10-25T23:58:50.0849106Z Updating files:  90% (8037/8929)
+2026-10-25T23:58:50.2159221Z Updating files:  91% (8126/8929)
+2026-10-25T23:58:50.3812161Z Updating files:  92% (8215/8929)
+2026-10-25T23:58:50.8928448Z Updating files:  93% (8304/8929)
+2026-10-25T23:58:51.1454115Z Updating files:  93% (8358/8929)
+2026-10-25T23:58:51.2840209Z Updating files:  94% (8394/8929)
+2026-10-25T23:58:51.3346450Z Updating files:  95% (8483/8929)
+2026-10-25T23:58:51.8278204Z Updating files:  96% (8572/8929)
+2026-10-25T23:58:51.8747444Z Updating files:  97% (8662/8929)
+2026-10-25T23:58:51.8859049Z Updating files:  98% (8751/8929)
+2026-10-25T23:58:52.1242646Z Updating files:  98% (8759/8929)
+2026-10-25T23:58:52.1709596Z Updating files:  99% (8840/8929)
+2026-10-25T23:58:52.1710341Z Updating files: 100% (8929/8929)
+2026-10-25T23:58:52.1710688Z Updating files: 100% (8929/8929), done.
+2026-10-25T23:58:52.1834033Z Switched to a new branch 'investigate/pr69-contact-strict'
+2026-10-25T23:58:52.1842001Z branch 'investigate/pr69-contact-strict' set up to track 'origin/investigate/pr69-contact-strict'.
+2026-10-25T23:58:52.2359111Z ##[endgroup]
+2026-10-25T23:58:52.2453430Z [command]/usr/bin/git log -1 --format=%H
+2026-10-25T23:58:52.2475878Z e8eea2b9c0a679b54df28bdc8c62029c9b224833
+2026-10-25T23:58:52.2497122Z ##[group]Removing auth
+2026-10-25T23:58:52.2501576Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-25T23:58:52.2537232Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-25T23:58:52.2764997Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-25T23:58:52.2785455Z http.https://github.com/.extraheader
+2026-10-25T23:58:52.2807288Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-25T23:58:52.2826224Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-25T23:58:52.3023390Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-25T23:58:52.3050827Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-25T23:58:52.3255290Z ##[endgroup]
+2026-10-25T23:58:52.3788523Z ##[group]Run DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+2026-10-25T23:58:52.3789124Z with:
+2026-10-25T23:58:52.3789505Z   determinate: false
+2026-10-25T23:58:52.3789788Z   flakehub: false
+2026-10-25T23:58:52.3790112Z   force-no-systemd: false
+2026-10-25T23:58:52.3792715Z   github-token: ***
+2026-10-25T23:58:52.3793028Z   github-server-url: https://github.com
+2026-10-25T23:58:52.3793447Z   job-status: success
+2026-10-25T23:58:52.3793724Z   kvm: true
+2026-10-25T23:58:52.3793986Z   modify-profile: true
+2026-10-25T23:58:52.3794256Z   reinstall: false
+2026-10-25T23:58:52.3794494Z   start-daemon: true
+2026-10-25T23:58:52.3794913Z   diagnostic-endpoint: -
+2026-10-25T23:58:52.3795198Z   trust-runner-user: true
+2026-10-25T23:58:52.3795496Z   summarize: true
+2026-10-25T23:58:52.3796153Z   _internal-strict-mode: false
+2026-10-25T23:58:52.3796433Z env:
+2026-10-25T23:58:52.3797168Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+2026-10-25T23:58:52.3797794Z ##[endgroup]
+2026-10-25T23:58:53.4722890Z [0;31m[1m[4mDeterminate Systems, Inc. | Status Status
+2026-10-25T23:58:53.4724054Z 🛠️ monitoring: Patched PHP security release (https://status.determinate.systems/incidents/51ece80b-c4d6-401e-a3bb-cc2811518fc6)
+2026-10-25T23:58:53.4725872Z 🔴 monitoring: eMudhra Intermediate CA Compromise (https://status.determinate.systems/incidents/f7cd1dd4-f0d1-4960-b787-e8077e6d4885)
+2026-10-25T23:58:53.4726559Z See: https://status.determinate.systems/
+2026-10-25T23:58:53.4726910Z 
+2026-10-25T23:58:53.4774176Z [command]/usr/bin/sudo mkdir -p /var/lib/determinate
+2026-10-25T23:58:53.5137697Z ##[group]Detecting systemd...
+2026-10-25T23:58:53.5138475Z ##[endgroup]
+2026-10-25T23:58:53.5155440Z ##[group]Configuring KVM
+2026-10-25T23:58:53.5643617Z [command]/usr/bin/sudo rm -f /etc/udev/rules.d/99-determinate-nix-installer-kvm.rules
+2026-10-25T23:58:53.5730566Z ##[endgroup]
+2026-10-25T23:58:53.5731772Z KVM is not available.
+2026-10-25T23:58:53.5734374Z ##[group]Installing Nix
+2026-10-25T23:58:53.5740953Z ##[group]Downloading nix-installer for aarch64-linux
+2026-10-25T23:58:53.5742898Z Fetching from https://cf.install.determinate.systems/nix-installer/stable/aarch64-linux
+2026-10-25T23:58:53.7471295Z Cache hit for: determinatesystem-nix-installer-aarch64-linux-b3e6eec14bb8430a81950b2714c7210c
+2026-10-25T23:58:54.7434557Z Received 46735270 of 46735270 (100.0%), 55.4 MBs/sec
+2026-10-25T23:58:54.7435073Z Cache Size: ~45 MB (46735270 B)
+2026-10-25T23:58:54.7463750Z [command]/usr/bin/tar -xf /home/runner/work/_temp/adb15e7a-7835-41b4-bdd9-eb7244d22ca3/cache.tzst -P -C /home/runner/work/_temp/nix-installer-0419c7dd-454c-4a60-8790-0da4b39f1d76 --use-compress-program unzstd
+2026-10-25T23:58:54.8193530Z Cache restored successfully
+2026-10-25T23:58:54.8230235Z ##[endgroup]
+2026-10-25T23:58:54.8251834Z [command]/home/runner/work/_temp/nix-installer-0419c7dd-454c-4a60-8790-0da4b39f1d76/nix-installer install linux --prefer-upstream-nix
+2026-10-25T23:58:54.8331556Z  INFO nix-installer v3.24.0
+2026-10-25T23:58:55.0031368Z [2m[33m`nix-installer` needs to run as `root`, attempting to escalate now via `sudo`...[39m[0m
+2026-10-25T23:58:55.0119406Z  INFO nix-installer v3.24.0
+2026-10-25T23:58:55.1387679Z  INFO Step: Create directory `/nix`
+2026-10-25T23:58:55.1391217Z  INFO Step: Provision Nix
+2026-10-25T23:58:56.6560114Z  INFO Step: Create build users (UID 30001-30032) and group (GID 30000)
+2026-10-25T23:58:57.5348825Z  INFO Step: Configure Nix
+2026-10-25T23:58:57.7673263Z  INFO Step: Create directory `/etc/tmpfiles.d`
+2026-10-25T23:58:57.7674092Z  INFO Step: Configure upstream Nix daemon service
+2026-10-25T23:58:58.3836614Z  INFO Step: Cleanup
+2026-10-25T23:58:58.3856769Z  INFO Running self test for shell sh
+2026-10-25T23:58:58.4830318Z  INFO Running self test for shell bash
+2026-10-25T23:58:58.5886329Z [1m[32mNix was installed successfully![39m[0m
+2026-10-25T23:58:58.5887659Z To get started using Nix, open a new shell or run `[1m. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh[0m`
+2026-10-25T23:58:58.5888168Z 
+2026-10-25T23:58:58.6178460Z ##[endgroup]
+2026-10-25T23:58:58.7192127Z ##[group]Run node scripts/contact-strict-request.mjs
+2026-10-25T23:58:58.7192780Z [36;1mnode scripts/contact-strict-request.mjs[0m
+2026-10-25T23:58:58.7201419Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+2026-10-25T23:58:58.7201973Z env:
+2026-10-25T23:58:58.7202604Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+2026-10-25T23:58:58.7203331Z   DETSYS_INVOCATION_ID: 5fd02673-7c9b-46bc-a3e7-ac0706c9e34e
+2026-10-25T23:58:58.7203743Z   DETERMINATE_NIX_KVM: 0
+2026-10-25T23:58:58.7204014Z ##[endgroup]
+2026-10-25T23:58:58.7443586Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T23:58:58.9547813Z unpacking 'github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b?narHash=sha256-l0KFg5HjrsfsO/JpG%2Br7fRrqm12kzFHyUHqHCVpMMbI%3D' into the Git cache...
+2026-10-25T23:58:59.4114754Z unpacking 'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e?narHash=sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768%3D' into the Git cache...
+2026-10-25T23:58:59.6928760Z copying path '/nix/store/bzc7kf828kg6zlan92766rb2inciclc4-source' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8712641Z copying path '/nix/store/7i5h1q53czyr7pi9zv5ljdyi3x88w362-git-2.55.0-doc' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8731541Z copying path '/nix/store/n9q8vil0p5210fdary3y1wjc3k4sxbpb-mailcap-2.1.54' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8736324Z copying path '/nix/store/7d1da7zq8qjjh4hv9dvijks5p2sj65li-perl5.42.0-libnet-3.15' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8741373Z copying path '/nix/store/8bjrd2fzhpjz1addxlbkfahdlwbyficn-perl5.42.0-URI-5.21' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8745807Z copying path '/nix/store/libxpcnlz30x6fpm8bx9vwnx4vp0vv9x-tzdata-2026b' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8798627Z copying path '/nix/store/5rjna1gfbm79pl6zv1yjc4psa86zdlqx-perl5.42.0-Digest-HMAC-1.05' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8799885Z copying path '/nix/store/bw083wspyaqgs1fhww61qx404529k1n6-perl5.42.0-FCGI-ProcManager-0.28' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8801046Z copying path '/nix/store/4xw8gcf6vxdzr7fs5ckxjfri5l5hrl0c-perl5.42.0-HTML-TagCloud-0.38' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8824424Z copying path '/nix/store/shvqsf092f3hb6x7bvqz0k12x7lfp1sd-set-java-classpath-hook' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8844287Z copying path '/nix/store/5nsnzikiqbxkvasxriw59w55f75h4xi8-iana-etc-20251215' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8872924Z copying path '/nix/store/4mkfd0wwj77317npdgkcgw8j4hkgqgaa-gcc-15.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8915383Z copying path '/nix/store/84i6rp3qvbrm0vl88w5fm9h37yka5mzb-xgcc-15.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.8955360Z copying path '/nix/store/vygswlvkkm7xjwk2m13i3jskhyfc90kb-perl5.42.0-HTML-Tagset-3.20' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9048765Z copying path '/nix/store/wfl3vmszs5a8c4wcyqb2x185h5d43f4x-gnu-config-2024-01-01' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9052882Z copying path '/nix/store/krj16sqwygs4c1mzj3iqsyv9mihhvfyq-perl5.42.0-LWP-MediaTypes-6.04' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9054236Z copying path '/nix/store/wlikawi383zx95g0h0ll2j5xz3xp5irm-perl5.42.0-Mozilla-CA-20230821' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9278074Z copying path '/nix/store/fiad4h826sbgjlbq5fmrd5095h9nrvy4-perl5.42.0-Encode-Locale-1.05' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9302353Z copying path '/nix/store/jb2spb7zqhbrfqdszwvkir990xgc4l93-perl5.42.0-IO-HTML-1.004' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9372690Z copying path '/nix/store/pmhssyfcq4gkz23zvbbz7mps6xda4x7y-iso-codes-4.20.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9416949Z copying path '/nix/store/smmcaf0azyvv04r0z3ad8h9wc80lnx85-alsa-topology-conf-1.2.5.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9455818Z copying path '/nix/store/85nzapzjim0zsvj71pcsnc19l7zrj7wy-perl5.42.0-Try-Tiny-0.31' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9465020Z copying path '/nix/store/qhm6wi64z0hgngrb35gqg4pdw2pmv0fr-perl5.42.0-TimeDate-2.33' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9466215Z copying path '/nix/store/n45wb7lisyi8a3x300vfng0mjydkjsrp-perl5.42.0-Test-RequiresInternet-0.05' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9481522Z copying path '/nix/store/ly9wp9s5ff51sdbg8fi57ki7qqmlyyji-dejavu-fonts-minimal-2.37' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9482560Z copying path '/nix/store/mg0p13rqmrk549s78m01qpbrncwlx716-perl5.42.0-Test-Needs-0.002010' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9497967Z copying path '/nix/store/qr7qvicd9q4lnq6lznx223z5sakp9jrx-libunistring-1.4.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9542560Z copying path '/nix/store/ljd94s7svv895cm1mr6qcig1r3nhh4jq-perl5.42.0-Net-HTTP-6.23' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9561723Z copying path '/nix/store/akw6phbx94bc8k85f62fx0ixs9j5czmq-perl5.42.0-WWW-RobotRules-6.02' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9601812Z copying path '/nix/store/39n4cxlc24k6bv0r88sl6jhyqigzk1zj-update-autotools-gnu-config-scripts-hook' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9620992Z copying path '/nix/store/1lyzim7rsp580v0s8d6gzd84a4ybqvvz-publicsuffix-list-0-unstable-2026-06-24' from 'https://cache.nixos.org'...
+2026-10-25T23:59:08.9626853Z copying path '/nix/store/xxqfbvgvs8dgiza76m7lvc0lq4dxwrc8-gsettings-desktop-schemas-50.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.1508365Z copying path '/nix/store/g8kx6chm8p9nlbzffyczhp7fjbawivjr-zlib-1.3.2-static' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.1516317Z copying path '/nix/store/qwwcawwbjk7glkrb9vi8qvv4rg804bvf-fontconfig-2.18.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.1525431Z copying path '/nix/store/gdarhfq7dg11bjvv6bkniqyf469bcnhf-dns-root-data-2025-04-14' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.1529868Z copying path '/nix/store/nczp4i9gmad2wqbi02hwxpxz7wng49zc-linux-headers-7.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.1535421Z copying path '/nix/store/xg9f6llwbq8apihc0kf2ds93z2hfslm5-xkeyboard-config-2.48' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.1542937Z copying path '/nix/store/hmq9b0bcdpmnjlm31c2480k4b858f10p-perl5.42.0-Test-Fatal-0.017' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.1565991Z copying path '/nix/store/qlmazqi9rqlg4b1gbw5qj2v8pwd9bl39-libidn2-2.3.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.2083370Z copying path '/nix/store/fvxssm982rn8bir8fb4fjz5qx9c4wsxw-perl5.42.0-HTTP-Date-6.06' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.2765487Z copying path '/nix/store/cj4jysawj8cc6yv2cwdgzxhdhq7dnf05-glibc-2.42-67' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.2867206Z copying path '/nix/store/4wkf8k14fhwjks230xxifkh21529m96s-perl5.42.0-File-Listing-6.16' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.2868223Z copying path '/nix/store/s0a4d2rp3f3a7vhqm2pq3q0scgjnyxj2-perl5.42.0-HTTP-CookieJar-0.014' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8186367Z copying path '/nix/store/sdxy09826yspmrb4wcvjsgw5kly2i2wv-acl-2.4.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8187483Z copying path '/nix/store/hsdi3snla9kwadar880ni9kvi1km08b7-attr-2.6.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8191402Z copying path '/nix/store/8m76s9lqyh1if0vi3vrg6rwc2jl9lbrk-bash-5.3p15' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8194028Z copying path '/nix/store/fr3wwbz4cr1m81mkgf2k25iaca7qsczp-brotli-1.2.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8195773Z copying path '/nix/store/12x46g4nsda6sgd2mbpskdhfxh422slw-c-ares-1.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8197045Z copying path '/nix/store/ia99fsq757ifpq8c52llq2v17aidxmnn-bun-1.3.13' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8197940Z copying path '/nix/store/y3i7ay29k7bxm5x1pc84j8kd09lxk75s-ed-1.22.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8198784Z copying path '/nix/store/m0hgldb2q1abnj75pcch143z4icnyck3-c-ares-1.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8199624Z copying path '/nix/store/cii8mazmi74vsj6nshkcq33bd0dcnnyw-expand-response-params' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8200500Z copying path '/nix/store/kg4vffmclz884v6axn98jn2kf3sps6nh-bzip2-1.0.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8201259Z copying path '/nix/store/wif7grdd7v18kjcfmj1h8dqnilc8kpq9-gawk-5.4.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8202099Z copying path '/nix/store/yn9jjxbn5h2z6s0avvb3h2lk4h1wrbqj-fribidi-1.0.16' from 'https://cache.nixos.org'...
+2026-10-25T23:59:09.8202939Z copying path '/nix/store/fz0nvrqb8wwxgxvfc8hg9iwg4183achg-expat-2.8.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.1473394Z copying path '/nix/store/265yl93z4mb9vynam5wzwfsjp50b6l45-zlib-ng-2.3.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2301466Z copying path '/nix/store/8bgbdy11yxki9v7lpvcpnk12f6qw1bm5-openssl-3.6.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2303670Z copying path '/nix/store/acydkjgciry45a32qfsl1fi2vnpbhn1x-gcc-15.3.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2306628Z copying path '/nix/store/8zwgd7pg8pyg7gnsq2l989pqbs29s3jv-gnused-4.10' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2314629Z copying path '/nix/store/g71alfw3mk5qnjvsj04f7g2jpcmzhz87-perl5.42.0-TermReadKey-2.38' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2329828Z copying path '/nix/store/ram5l4y2vhi4jhwfxg1a605cjm7h9ynv-pcre2-10.47' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2331689Z copying path '/nix/store/0rc63yj6yf4d5bs8jhmb5hd13z13v4lq-gdbm-1.26-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2332999Z copying path '/nix/store/xzvp536mnwl4mi35857vd537bbyxqj4w-perl5.42.0-FCGI-0.82' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2665107Z copying path '/nix/store/4mg1llcz6ypprv5azlfyyyci7y86frzw-mpdecimal-4.0.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2694761Z copying path '/nix/store/6740pvx8gps1jcf9iswby5xjf0s46dgr-xz-5.8.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2696035Z copying path '/nix/store/064nqn0kfcgxr1v30m9ym8cz3zyy58as-gzip-1.14' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2705388Z copying path '/nix/store/akmp3ffxi0mlz8r1f0v9p3vwxlanpqnh-util-linux-minimal-2.42.2-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2757291Z copying path '/nix/store/k70agyb5r9isnaf093zac5lv3c3qgfsv-libffi-3.7.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2765306Z copying path '/nix/store/rh98aa25qymry73whnday323sl78082m-zlib-1.3.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.2842132Z copying path '/nix/store/vp9dqx8xijcl8s7mk4gxc1wars7haggv-ncurses-6.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3055318Z copying path '/nix/store/63y5lhh3znhwykj728ddm147dn1z6j0v-gnumake-4.4.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3067805Z copying path '/nix/store/34wysagbpqca54yq0ljsx70vk065pjzb-libjpeg-turbo-3.1.4.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3099738Z copying path '/nix/store/70ivc6x17f87d6np4k6qkaqvv7k4l37h-gnutar-1.35' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3287995Z copying path '/nix/store/9zwv67xx564krb1bnj6knqydii7am5ja-patch-2.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3303626Z copying path '/nix/store/nflz3bd12vmz1nl6jqzimxpww83s6zy0-bzip2-1.0.8-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3328496Z copying path '/nix/store/2ar00nxlwrmnlznqdj02ki7qifww2ksq-gettext-1.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3372081Z copying path '/nix/store/i7pqrwnhnifdypwfdvkjgn9g3np170j3-zstd-1.5.7' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3398973Z copying path '/nix/store/ljydz8slckh7xjglwz1bp86ccbpmjp5y-sqlite-3.53.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3404055Z copying path '/nix/store/z12fyhi116qr1ylra1mbs98c2hf37ac4-ripgrep-15.2.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3419565Z copying path '/nix/store/2nh6fi7n4kx8h6d85gql22w6x13mlb5y-gnugrep-3.12' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3467585Z copying path '/nix/store/2h5l0fnw9pbi30856l53h8fd71880xmq-util-linux-minimal-2.42.2-swap' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3508396Z copying path '/nix/store/bhlhliq32dx4z1m5g9wp4irjimskrn4b-perl5.42.0-Net-SSLeay-1.92' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3761252Z copying path '/nix/store/5qhkb82f8h891kv8894b2p1fa1myxw6v-patchelf-0.15.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3802422Z copying path '/nix/store/298l8a3c3nk8mddjj4iyfp000sz09fjk-file-5.48' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3866020Z copying path '/nix/store/kfy82pbh5pngg08b0hbk8n9hisf3y4iz-file-5.48' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.3938909Z copying path '/nix/store/34c7gyh07x0swngxpdjkd909h10bqa7w-lcms2-2.19.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4128654Z copying path '/nix/store/w2ln6m0fawzpisz28jmqdvdrqdzlszyb-xz-5.8.3-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4163472Z copying path '/nix/store/hhli6yr6kkcqb24v5rjw4wdi3dabbp2s-gh-2.96.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4221950Z copying path '/nix/store/cw4ksqaa1wrz1m793q42i0c61y1ka609-giflib-6.1.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4252237Z copying path '/nix/store/nrkd3qvx7zh83c0pyfpj17pg1vg96sr0-kmod-31-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4335743Z copying path '/nix/store/1z01i6r4h5q2k6d8hvww6nxqf9mlbk0n-libpng-apng-1.6.58' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4456773Z copying path '/nix/store/q9bhlkqf6knf2da8rxb8pj15l62wi4ns-util-linux-minimal-2.42.2-mount' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4531817Z copying path '/nix/store/6w6q4da9vklzxbhp5gvlasdvhxhd7lkp-perl5.42.0-IO-Socket-SSL-2.083' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4816521Z copying path '/nix/store/amxnl9n6777kk1z80p4zrizmrnd8wpnn-gmp-with-cxx-6.3.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4857265Z copying path '/nix/store/6q2xcp8xkyqm2vh624mlgq5zp3zwfdbd-libssh2-1.11.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.4864706Z copying path '/nix/store/b1cgz5flw8383fv2mvcn1nrsfb81642n-libpsl-0.21.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5010627Z copying path '/nix/store/fv86r7yz3ka9ks3hixbfjxy4bzvq9fm2-ngtcp2-1.23.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5134409Z copying path '/nix/store/v4cfwanphh5f5g20g9rlbqcnqvqd47ki-nghttp3-1.16.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5347083Z copying path '/nix/store/v9f2rgg1l7vzsk5n7x9gpwfn7mransfn-nghttp2-1.69.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5410383Z copying path '/nix/store/ggy1dmcp6pv2a0z11v7zlanzpphv4hgw-readline-8.3p3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5500602Z copying path '/nix/store/0ykb4lc51dvvrp5k7vsmws650d4akzxi-lerc-4.1.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5520085Z copying path '/nix/store/f92p4p4ifn5n2myyh76smz6syv5dxqc7-freetype-2.14.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5645143Z copying path '/nix/store/gmdb4riiy2sl8p1jbfw66mqv6q9jzz1h-libxcrypt-4.5.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5686355Z copying path '/nix/store/0bf3jny24b231ns9ycxdk42mr75kcwh4-perl5.42.0-Net-SMTP-SSL-1.04' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5745295Z copying path '/nix/store/ss8d8skjkj6vi6mrqpnqv2jpcnznhwj9-libdatrie-2019-12-20-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5811481Z copying path '/nix/store/q5ri05084kljgybirp8djd6hll18s836-glibc-2.42-67-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5956788Z copying path '/nix/store/d1lagfskrzvfn1wi9igywxlh4hw7alwm-libev-4.33' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.5959700Z copying path '/nix/store/15mhxjaracnbbhz62467rs35hwm2rqkk-keyutils-1.6.3-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6031810Z copying path '/nix/store/wzn0sv1yhr7rx9vj6h9b11z8v3flkxqi-perl5.42.0-Crypt-URandom-0.55' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6087698Z copying path '/nix/store/p9m3m8zn8aad5k5gbz11pj403rz9wljr-libdeflate-1.25' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6116076Z copying path '/nix/store/hzdrbd64f398z5lli1fqsm6j8szg0jgv-perl5.42.0-Compress-Raw-Bzip2-2.218' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6261982Z copying path '/nix/store/j4gflamaavdlj9bgdd4zq5nj671z4q7l-perl5.42.0-Clone-0.46' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6286409Z copying path '/nix/store/c2p8ra0rc9x81b6msb08in8gnx3gi9dm-libwebp-1.6.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6313988Z copying path '/nix/store/3da6dbbp462hxhhxxrlilv3022fn2mc5-coreutils-9.11' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6354206Z copying path '/nix/store/ymm5c1kb7p2r6331bgcdxijayqhcbvqy-python3-3.14.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6436983Z copying path '/nix/store/dsiklcvk40q7bb4nby404acavylni4ps-bash-interactive-5.3p15' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6440411Z copying path '/nix/store/vaprzim59kha7ijnzyjnz5sb5iilcj92-fontconfig-2.18.1-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6465748Z copying path '/nix/store/9lx6l4rzf3nshh8vmrn7dfkhwamwkj8j-util-linux-minimal-2.42.2-login' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6520763Z copying path '/nix/store/rr1j8j2zcxnm0rpqvhsmxw32xy8xmfns-perl5.42.0-Compress-Raw-Zlib-2.222' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6754712Z copying path '/nix/store/p0y2mrjvv29r9ff26jjhj01m5cy3f3d7-wayland-1.26.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6802157Z copying path '/nix/store/7zg7yyv6cn7vps6pkrzip8gd89i97ysn-gtest-1.17.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6804432Z copying path '/nix/store/ccacwr6py71489lq4swnyz3c9rqn75lx-nbytes-0.1.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6806011Z copying path '/nix/store/kdjz94l5fpnhfg3wx01saxy2fj0xylij-perl5.42.0-Authen-SASL-2.1900' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6832655Z copying path '/nix/store/cr8qddxf9ihljz2n3z30rca23q30xgip-hdrhistogram_c-0.11.10' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.6870562Z copying path '/nix/store/8nbsi9s3b1jzfkwr4bm8raj4157nnxbz-merve-1.2.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7677355Z copying path '/nix/store/g0400m0f6fiapvs8rpgrrw1b1himnaw9-krb5-1.22.2-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7707801Z copying path '/nix/store/fnw238f2wq9k4aynwk19kbyddb3wavk9-simdutf-6.5.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7734034Z copying path '/nix/store/gr05nbcnqry1fd355li5d39qysw72j6s-libuv-1.52.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7738297Z copying path '/nix/store/nnac0fcjj944l3wzzfaj1fxw506q7gk5-glibc-2.42-67-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7767740Z copying path '/nix/store/ml1rxjq97qzdw5x0rm1agsfwi4asl893-llhttp-9.4.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7820221Z copying path '/nix/store/n5fx2hbr3v5561dg6x5sajz0s53gabjk-simdjson-4.6.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7823505Z copying path '/nix/store/n0r71iz0dj6pcwwgz0zc8133icy9f8sc-zlib-1.3.2-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.7848195Z copying path '/nix/store/wdw3ccs8jm41i1ghn9s34zrkccf10xrx-c-ares-1.34.8-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8192196Z copying path '/nix/store/47s1v9jk5hp88jwkkad6fzsyzq4hasla-findutils-4.10.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8194069Z copying path '/nix/store/2047jvr4id4a6m2b177hjsn336gxh4rg-perl-5.42.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8203204Z copying path '/nix/store/k2asl8jxz9y2bq9l81ch4vjryj0dpxg8-gtest-1.17.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8208941Z copying path '/nix/store/x8g3g61rd0z3yf4imk1jgg76rmnf2hy6-diffutils-3.12' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8248104Z copying path '/nix/store/y7x65dhppxam8y06x1gxrkck1i8l0qjx-icu4c-78.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8253417Z copying path '/nix/store/mka89ixw4ba15bibrrlkmxr6fn9nazks-llhttp-9.4.2-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8314384Z copying path '/nix/store/pfv73zqk9afd9hrysif5r0bkgs48rpd1-libuv-1.52.1-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8316811Z copying path '/nix/store/yscmifqwnx2b1z20q3fcmy33w5ifa37x-ngtcp2-1.23.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8406875Z copying path '/nix/store/zkibflwfn10wmxjmrrlknb6vi93416ff-nghttp3-1.16.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8408913Z copying path '/nix/store/pni4vgc8vl8p21rnsp6ydz8j9sfyz5nq-libselinux-3.10' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8638413Z copying path '/nix/store/vn2lm8ra7rx4dcbnzrglhq0prfjdk68f-gmp-6.3.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8670267Z copying path '/nix/store/msb4fzmw7ylz0h55r8wq61x865ibgiam-lzo-2.10' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8920818Z copying path '/nix/store/i644qglj29sii7d66lm4garmsas1ayv2-curl-8.21.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8943805Z copying path '/nix/store/s0f8167bahqlrggq4kpmvrcqkx3xl52y-pixman-0.46.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8967829Z copying path '/nix/store/1vc3542zma771b925r9n2qs1yqzkh6sm-graphite2-1.3.15' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.8980681Z copying path '/nix/store/g2skfavx9avl79pmjydg4zx4k809lqsr-kmod-31' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9014872Z copying path '/nix/store/88nqhr67l8limqc68v2waj59ffqp70dc-systemd-minimal-libs-261' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9026814Z copying path '/nix/store/l4nlczan8h8pms1pnh9mmmarr28bi9c0-uvwasi-0.0.23' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9114528Z copying path '/nix/store/227xhqgz155sag9whfcwyal4xpa1lafj-libtiff-4.7.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9165895Z copying path '/nix/store/x77v57x16z28yh0xljh616fakk1m4fdd-libxml2-2.15.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9199492Z copying path '/nix/store/miy3w8z6221han3gsg1yiq0a43kfvz0q-nghttp2-1.69.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9210469Z copying path '/nix/store/2d90a6zc01mc2g1dcchw3dma78pajgqk-openssl-3.6.3-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9263896Z copying path '/nix/store/jniqab89kdlxp410ivmdx4hcgl0682mq-glib-2.88.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9409371Z copying path '/nix/store/kpmywmiqcafyy38fvdmr682v7kj1wi1r-libthai-0.1.30' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9481948Z copying path '/nix/store/8z7zdk4s2azjycckm6hgd8hxnzw9xpla-isl-0.20' from 'https://cache.nixos.org'...
+2026-10-25T23:59:10.9754032Z copying path '/nix/store/clna21s6cvlyrcf04kzial1arcjpcclk-mpfr-4.2.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0210511Z copying path '/nix/store/f6qw3akqkw4g79c97cmj2acfzxqz45sx-sqlite-3.53.3-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0217430Z copying path '/nix/store/yiky4c391lp3bbwbb0aln4jv6cw6jm8s-simdutf-9.0.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0218921Z copying path '/nix/store/kf0kxybadd1dn4i7dzmysy47c1sar1lj-openssl-3.6.3-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0228504Z copying path '/nix/store/1j2pvy33vv1hikm6dypjwifgahh8qgy0-nghttp2-1.69.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0249564Z copying path '/nix/store/kxsy16cnp8303g56hppz1635kr2k3l5r-libdaemon-0.14' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0252330Z copying path '/nix/store/n0j9ypx0wnfp88j2z2671d542dy9cfmk-libevent-2.1.13' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0255269Z copying path '/nix/store/849l84fq5r5w63mbjy2zwkcmrfzq235y-alsa-ucm-conf-1.2.16.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0479751Z copying path '/nix/store/p9hmx0dlig1f6w2bd22lasgiasciyibm-brotli-1.2.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0499214Z copying path '/nix/store/720p67929crlwdrz2196zxk6c4wf13g8-gmp-with-cxx-6.3.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0523294Z copying path '/nix/store/ifaa03kll0g4bh5x2p03gxwzyflak8ck-libtasn1-4.21.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0557743Z copying path '/nix/store/xr6yqyxqzfrs3m8p4jnifyqysm2gc77q-zstd-1.5.7-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.0845118Z copying path '/nix/store/cm1pz3kjbvgni6g76qsa97j0qc2jhkk0-libmpc-1.4.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1117118Z copying path '/nix/store/6b95w4v4hnqb93p6xnkbmx8i5n9k83kp-libxdmcp-1.1.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1194734Z copying path '/nix/store/wr1w0v4ylnp3j7a3l4s6cq25x86bjx7f-libxau-1.0.12' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1281128Z copying path '/nix/store/l193kgbn2rvr0zf5hdcsm81mzgv9v4sd-binutils-2.46-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1293632Z copying path '/nix/store/cflfxfg6d3wqn2i7dvbr4j0rljy4l2nm-nettle-3.10.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1504388Z copying path '/nix/store/6shzplslmxv3rhp7sdwan4h6bjg1z3bf-sqlite-3.53.3-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1537763Z copying path '/nix/store/vm2ssybgfjjqx4q1mj9d7ahxzpq72scd-systemd-minimal-261' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1539890Z copying path '/nix/store/pmccdd8m8bxmjx4g5jla33las12p7rfx-libxcb-1.17.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1553686Z copying path '/nix/store/2yd8vlmkhfqllaj95m7zq52acvdy9kfc-p11-kit-0.26.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1562759Z copying path '/nix/store/1mk1c8i4dm2akvy8nfx41wnl5gkq1pkb-brotli-1.2.0-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1563773Z copying path '/nix/store/yxl1lvahx0dwp3fsq9rybskmmsqj0bs2-ada-3.4.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1578539Z copying path '/nix/store/jn055rrqmvl2g1w1vaxvq61dd50bd763-zstd-1.5.7-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1582348Z copying path '/nix/store/jq52hfnmkaa7bby07a4d7lblky6w27fg-gcc-15.3.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1631677Z copying path '/nix/store/5c6q8vaglpz3lyc2y7cmah1f72p7q971-unbound-1.25.1-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.1916114Z copying path '/nix/store/ish1bk0q1b1c4hgdg7swr102p4rfn4az-binutils-2.46' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.2188981Z copying path '/nix/store/2lnq23shszb1h6j846gb778sdh7r2awb-icu4c-78.3-dev' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3446734Z copying path '/nix/store/q6a3p545hfxydjxgd5qwj5364kh01398-libx11-1.8.13' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3612312Z copying path '/nix/store/jxhwq647xiz6h90gkma0yihblp7hmmc2-gnutls-3.8.13' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3760821Z copying path '/nix/store/blidlsa1gxq6nj0zayjbb7d8rb651l5j-alsa-lib-1.2.16.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3817996Z copying path '/nix/store/8wqalqq1gps30swixljihbh4y48rl712-gdk-pixbuf-2.44.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3820669Z copying path '/nix/store/nrnb6s75y2p2hmwv841bwjd9pjmrhypd-dconf-0.49.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3822385Z copying path '/nix/store/03akka0ypqblxg38s3xp8szkdfx1yc2a-json-glib-1.10.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3823411Z copying path '/nix/store/ragdsqgd4kq7i6nky9s4q6szksmrm1wr-harfbuzz-13.2.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.3839587Z copying path '/nix/store/vlhb62w8bymxjmryxfq862jn11780dd5-libsoup-3.6.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.4736144Z copying path '/nix/store/yi2d9d54ky0bkgy89gc723ycga2f42qk-nodejs-slim-24.18.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.6785903Z copying path '/nix/store/35x9v8n5dawmc8bwz8yx03wg8c9yqbya-libxcomposite-0.4.7' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.6790558Z copying path '/nix/store/8wr9f1iq776svn6pzrmbqhjy42qabp3j-libxfixes-6.0.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.6792235Z copying path '/nix/store/6l5yw5xc125d8a0sfz165as60l1fbyyl-libxext-1.3.7' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.6803320Z copying path '/nix/store/cgy75qd94iahacdlsigascwv5wkm6sp0-libxkbcommon-1.13.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.6818497Z copying path '/nix/store/vk3sb5j7j6p342nl5mfnflwk21d39h0s-libxrender-0.9.12' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.7315489Z copying path '/nix/store/rgc4h682brrviaa7v3j8lxj7ajsnr2fg-dbus-1.16.2-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.7611351Z copying path '/nix/store/wz4n54b22p6zspin8wq2cdicb7li5mg1-binutils-wrapper-2.46' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8126787Z copying path '/nix/store/y297sl3dl3z5qpfm1akk5h7ajz1w358i-libxft-2.3.9' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8173253Z copying path '/nix/store/z0xvj79i9zn0dq6pxcb1wadbk1hqqql5-libxcursor-1.2.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8183308Z copying path '/nix/store/jp4w5q74qc2j70krqwdmv95ncydfnffi-libxdamage-1.1.7' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8200062Z copying path '/nix/store/fp8vln3ar6gskhjbzbj7mcigb5y1y6z1-libglvnd-1.7.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8201169Z copying path '/nix/store/jziv3gzs7gkb93yb00237ivpv4anab9d-libxinerama-1.1.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8202373Z copying path '/nix/store/bg61mz57j755jc9z7671l019nk66dyr9-cairo-1.18.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8203359Z copying path '/nix/store/32x5rb3lx4rzjk54lk7sly34gynvyhmz-libxi-1.8.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:11.8248020Z copying path '/nix/store/6qcgyssbqap5ilp8b0n5q9ilac7yca3z-libxrandr-1.5.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.0089442Z copying path '/nix/store/99nl21hzkbgc27ig3jgggjyp5ps2gj61-libxtst-1.2.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.0118529Z copying path '/nix/store/h5y50l7xkvyk17i9f4w6s57pj92dk1sx-avahi-0.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.0178650Z copying path '/nix/store/f2388gk5zcprgv9bvlw4smj53w9xq8n0-gobject-introspection-1.86.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.0181473Z copying path '/nix/store/c4r4hpvlj148qgkmhg575vz4zihz2h36-pango-1.57.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.0305883Z copying path '/nix/store/jclw1z3f01glgp72z0qmdrdw7ycwwapz-libepoxy-1.5.10' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.0905328Z copying path '/nix/store/9pmy5kpayr3k34ycfjlms1llyz4zgp72-perl5.42.0-IO-Compress-2.221' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.1684610Z copying path '/nix/store/rxhrsk1yywhgpxisvsb0sflbbw9wi7hm-at-spi2-core-2.60.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2350925Z copying path '/nix/store/v1hm8xwa0jlgibf6wb8400mwdk5dsszs-perl5.42.0-HTTP-Message-7.02' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2614025Z copying path '/nix/store/9cy9y3fn6zrw0h6727cgysqxmm7bi1cl-perl5.42.0-HTML-Parser-3.85' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2615499Z copying path '/nix/store/sy0narcabm1q2r5d14155jx875k2j93x-perl5.42.0-HTTP-Cookies-6.10' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2627372Z copying path '/nix/store/0acg2s0qbgqjsn7r84glyz3r9rlzqk0d-perl5.42.0-HTTP-Negotiate-6.01' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2628374Z copying path '/nix/store/rqxxjmw9q116068408h3kmmwany8yk91-perl5.42.0-HTTP-Daemon-6.17' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2629653Z copying path '/nix/store/xgk8bd0515h3fb0b1p9sr8h6rwai27rv-cups-2.4.19-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2631047Z copying path '/nix/store/k0sxv9lgvpmhaavzwh8js0xryw0kp6z7-tinysparql-3.11.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.2859087Z copying path '/nix/store/nddx74l8ca3y0crr29hx7dnr46b2pfab-perl5.42.0-CGI-4.59' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.3016089Z copying path '/nix/store/rq5k6c2s9v8glj0yjhc2i31bvi5qhy53-perl5.42.0-libwww-perl-6.83' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.3130768Z copying path '/nix/store/mrfy94iav9vjg9klq1f4y646a71cvy9s-perl5.42.0-CGI-Fast-2.16' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.4582572Z copying path '/nix/store/0z43apyqdhws0s0n51m67lyd9m95fx95-gtk+3-3.24.52' from 'https://cache.nixos.org'...
+2026-10-25T23:59:12.7598071Z copying path '/nix/store/rjax7s6ql41k3qi9lbjb1jia72bw97v5-openjdk-21.0.12+2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:13.2090012Z copying path '/nix/store/jyaf28lbf53v1rhbbm3vgmzqn5im6q63-nodejs-slim-24.18.0-corepack' from 'https://cache.nixos.org'...
+2026-10-25T23:59:13.2091018Z copying path '/nix/store/1z1slq4hzn98wkvi7wqjb1hkna5fgcgj-nodejs-slim-24.18.0-npm' from 'https://cache.nixos.org'...
+2026-10-25T23:59:13.4541313Z copying path '/nix/store/hy2xqdbh7mw1w1yhqggfb3s1dmf89h10-gcc-wrapper-15.3.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:13.4924062Z copying path '/nix/store/9nbydy0k8dmma9nwzfpm64hyci1jprf0-stdenv-linux' from 'https://cache.nixos.org'...
+2026-10-25T23:59:13.5565830Z copying path '/nix/store/xnskpal5r72nag4yh3qaf9zzmr6v41s3-nodejs-24.18.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:13.8653888Z copying path '/nix/store/m5pr759k6l5w4pry4d96nk47hj8pq1fp-git-2.55.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:17.4550479Z building '/nix/store/mpn53s3kwfg02xw8fia64vjm8d4zsgwl-nix-shell-env.drv'...
+2026-10-25T23:59:17.8156020Z this path will be fetched (107.5 KiB download, 107.4 KiB unpacked):
+2026-10-25T23:59:17.8156729Z   /nix/store/q0qa2iz5wga6fi54iby0031sgi3w8557-bash-interactive-5.3p15-man
+2026-10-25T23:59:17.8162987Z copying path '/nix/store/q0qa2iz5wga6fi54iby0031sgi3w8557-bash-interactive-5.3p15-man' from 'https://cache.nixos.org'...
+2026-10-25T23:59:18.6110458Z {"requestId":"contact-strict-20261025-01","sourceCommit":"907f334e6d89aff5eeba34a855edbc3f40f1667b","executorCommit":"e8eea2b9c0a679b54df28bdc8c62029c9b224833","case":"contact-strict","mode":"verify","target":"f588b6e4f5db576ee1514ca33940c18a61025dd2","runId":"40246963988","attempt":1,"referenceTree":"7d9ff1432b7aef90f21210becf5cf74d89980e60","specs":{"contacts":{"file":"tests/browser/fleet-contacts.story.spec.ts","title":"Live fleet contacts preserve acquired and last-seen private facts across reload","story":"live-fleet-contacts","sha":"8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319","views":19}},"requestSha256":"4d9bcf803b45136a8be7119f7353be6a6adf9a0a2b4179e3a5b2b6c14e664cb6"}
+2026-10-25T23:59:18.6250399Z ##[group]Run nix run path:./nix#ci-renderer -- recovery contact-strict 'contacts' 'desktop'
+2026-10-25T23:59:18.6251243Z [36;1mnix run path:./nix#ci-renderer -- recovery contact-strict 'contacts' 'desktop'[0m
+2026-10-25T23:59:18.6254702Z shell: /nix/var/nix/profiles/default/bin/nix develop path:./nix --accept-flake-config --command bash -e {0}
+2026-10-25T23:59:18.6255222Z env:
+2026-10-25T23:59:18.6256178Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+2026-10-25T23:59:18.6256962Z   DETSYS_INVOCATION_ID: 5fd02673-7c9b-46bc-a3e7-ac0706c9e34e
+2026-10-25T23:59:18.6257377Z   DETERMINATE_NIX_KVM: 0
+2026-10-25T23:59:18.6257629Z ##[endgroup]
+2026-10-25T23:59:18.6440690Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T23:59:19.8744574Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T23:59:19.8869792Z unpacking 'github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b?narHash=sha256-l0KFg5HjrsfsO/JpG%2Br7fRrqm12kzFHyUHqHCVpMMbI%3D' into the Git cache...
+2026-10-25T23:59:20.3008231Z unpacking 'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e?narHash=sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768%3D' into the Git cache...
+2026-10-25T23:59:23.1705831Z these 2 derivations will be built:
+2026-10-25T23:59:23.1707874Z   /nix/store/0kncfaz2nx4flv22514mm5lmcxy3zh85-docker-image-cluster-renderer-playwright-1.61.1.tar.drv
+2026-10-25T23:59:23.1708891Z   /nix/store/i7rbvjaqggk8770zf3rgz7hcacjia6fm-cluster-ci-renderer.drv
+2026-10-25T23:59:23.1709891Z these 107 paths will be fetched (201.4 MiB download, 678.0 MiB unpacked):
+2026-10-25T23:59:23.1710455Z   /nix/store/cnjc8qpi01fq4dqah36fnr6migsssqr6-ShellCheck-0.11.0
+2026-10-25T23:59:23.1710966Z   /nix/store/8wx9njyk3amhbhc0qgadq8wn0zaq5z72-audit-4.1.4-lib
+2026-10-25T23:59:23.1711444Z   /nix/store/l1fm4295zklwnzpxi8xhckj4hr0c25zg-aws-c-auth-0.9.1
+2026-10-25T23:59:23.1711938Z   /nix/store/9czrfjym7pdr8jp849k9fwrffq57dhgy-aws-c-cal-0.9.2
+2026-10-25T23:59:23.1712457Z   /nix/store/aa8qz28p409xpwn5vb3cyzdpa4cn4afq-aws-c-common-0.12.4
+2026-10-25T23:59:23.1712970Z   /nix/store/jv7q4q0zdsldaycaamgp0n3i8plq06js-aws-c-compression-0.3.1
+2026-10-25T23:59:23.1713494Z   /nix/store/w227zrpangbp90jbn1zmd37vbqy7l360-aws-c-event-stream-0.7.0
+2026-10-25T23:59:23.1713991Z   /nix/store/wlk2r4i4gzma9clqf5m20lbkna8cl8dv-aws-c-http-0.11.0
+2026-10-25T23:59:23.1714493Z   /nix/store/qvxgqmy71lvg425h3d08b4xabs0ravm5-aws-c-io-0.27.2
+2026-10-25T23:59:23.1715338Z   /nix/store/jgrgjd64kh5cn0jnrjh9x9syfybmc9xh-aws-c-mqtt-0.13.3
+2026-10-25T23:59:23.1716199Z   /nix/store/k5nbama0ifar4sbnf1lk9l554xr5bks2-aws-c-s3-0.8.7
+2026-10-25T23:59:23.1716711Z   /nix/store/7aqx8g7lbrqhcvgsnzhhin7imdq5pcv1-aws-c-sdkutils-0.2.4
+2026-10-25T23:59:23.1717190Z   /nix/store/w3y3j7fh51af4hmnqs8fr49xmkls8qsj-aws-checksums-0.2.7
+2026-10-25T23:59:23.1717726Z   /nix/store/hjv3v5qmyclc349m7y0yrf0wkaxbfj2x-aws-crt-cpp-0.34.3
+2026-10-25T23:59:23.1718200Z   /nix/store/4yxiib6xxpix9scz1cvk1fbn364shryw-boehm-gc-8.2.12
+2026-10-25T23:59:23.1718745Z   /nix/store/9v750vv4mikcg9l01pchzpcxh7isxavw-boost-1.89.0
+2026-10-25T23:59:23.1719178Z   /nix/store/lb00bv1na55n4p129wwh14v0yshbds0z-busybox-1.37.0
+2026-10-25T23:59:23.1719602Z   /nix/store/jjnzhw0b720n1n468wjn5d3d2vf6vl92-cracklib-2.10.3
+2026-10-25T23:59:23.1720107Z   /nix/store/gdfmiz9p9qb13d0qgacgch1k97wy7mrd-cryptsetup-2.8.6
+2026-10-25T23:59:23.1720582Z   /nix/store/jgxc24minfq0rd05j8gp7q09yaxpnbkz-cyrus-sasl-2.1.28
+2026-10-25T23:59:23.1721042Z   /nix/store/d4s02qmkfqxgjlfpl3pbi2hdyqag5x92-db-4.8.30
+2026-10-25T23:59:23.1721439Z   /nix/store/k0y17s1sj2wmw1ijqxk10q5pb6pfzm1w-db-5.3.28
+2026-10-25T23:59:23.1721842Z   /nix/store/h16x9l2ll898gxzn6qwrg3qi82vm657g-docker-29.6.2
+2026-10-25T23:59:23.1722364Z   /nix/store/2qs3lp4l7qih52gpwnf3vlr108z7ifn7-docker-buildx-0.35.0
+2026-10-25T23:59:23.1722854Z   /nix/store/wr90aw8p2kcyf22pakjgh1vanpgpmpvq-docker-compose-5.3.1
+2026-10-25T23:59:23.1723775Z   /nix/store/ly0d1001mi5pyyfishnfh4jx9j569rmd-docker-containerd-29.6.2
+2026-10-25T23:59:23.1724334Z   /nix/store/f6fylz5bk93ayxxlg2lrjqb1nl982m7n-docker-runc-29.6.2
+2026-10-25T23:59:23.1724862Z   /nix/store/ymjpq9ahbnx5ghkhd2xa1307q4n04389-docker-tini-29.6.2
+2026-10-25T23:59:23.1725335Z   /nix/store/dal51wlkyjljhhfrby5mjvz5lbil4sq5-e2fsprogs-1.47.4
+2026-10-25T23:59:23.1726054Z   /nix/store/i0gmkx5dzq3xbrrl1ncvjr34qzbm2rch-e2fsprogs-1.47.4-bin
+2026-10-25T23:59:23.1726672Z   /nix/store/qbplpf2pjx4nn6ss7q0xdhgxyq835gpl-editline-1.17.1-unstable-2025-05-24
+2026-10-25T23:59:23.1727229Z   /nix/store/igivcvz7rbzfannbc884laxa9c7z46wk-elfutils-0.195
+2026-10-25T23:59:23.1727701Z   /nix/store/dkfyak239irj039acmg5pyki8f9n6r02-fuse-3.18.2
+2026-10-25T23:59:23.1728151Z   /nix/store/n8cbz3fvw0x4kwh94zfj9y3gpcf926iw-fuse-overlayfs-1.17
+2026-10-25T23:59:23.1728637Z   /nix/store/8wbjccqiwmaang7nfdhsk6cd5sknm1rc-git-minimal-2.55.0
+2026-10-25T23:59:23.1729130Z   /nix/store/sqhyj45b0r1iw24rzn85pqrpl85d7pg3-gnupg-2.4.9
+2026-10-25T23:59:23.1729540Z   /nix/store/x2l7xkfr3i935z535bsx72097318p3hb-gpgme-2.1.2
+2026-10-25T23:59:23.1730047Z   /nix/store/yngz468r7i4l895bbx6xral5cfvxbdv9-hwloc-2.14.0-lib
+2026-10-25T23:59:23.1730466Z   /nix/store/8sgmxnmsd6nkvcsw0vb1wv3611gii4xc-inih-62
+2026-10-25T23:59:23.1730871Z   /nix/store/bg8yvkncrj4pjs8vzid2xmj81cl3imd2-iproute2-7.1.0
+2026-10-25T23:59:23.1731362Z   /nix/store/8x94vpx9jnk9qjghxlivz83xjrq1k2sm-iptables-1.8.13
+2026-10-25T23:59:23.1731865Z   /nix/store/g7s630w1h9k3179jzjs9417jk1c4jsz4-iptables-1.8.13-lib
+2026-10-25T23:59:23.1732355Z   /nix/store/pswb5fj9kfchz7qkinxpzlbyzcpqswvz-json-c-0.18
+2026-10-25T23:59:23.1732777Z   /nix/store/v0z0ad4p8a8wp21q3ma630nx244f5y7i-kbd-2.9.0
+2026-10-25T23:59:23.1733298Z   /nix/store/79krd3dfz65n6api5xj5bb58gb0x7zz7-kexec-tools-2.0.32
+2026-10-25T23:59:23.1733818Z   /nix/store/g772dcpqy57mlf8iykl3gwad21h5yyv3-libapparmor-5.0.1
+2026-10-25T23:59:23.1734311Z   /nix/store/h8xm33qsqb2mfgzk2waqa4a7n6wk68j8-libarchive-3.8.8-lib
+2026-10-25T23:59:23.1734831Z   /nix/store/5dyg0blm8ya4vq0cs44ljqq9yarc9jqm-libassuan-3.0.2
+2026-10-25T23:59:23.1735288Z   /nix/store/hr4164dbjfi4qxdchvbcskq5prhgsr4g-libblake3-1.8.5
+2026-10-25T23:59:23.1736007Z   /nix/store/5vmfjms84bhimpainwm30m0wqqx34slh-libbpf-1.7.0
+2026-10-25T23:59:23.1736455Z   /nix/store/724akc9bzacrqc1p8sc1a8s4hnsig5v0-libcap-ng-0.9.3
+2026-10-25T23:59:23.1736925Z   /nix/store/gwhj8manqxkgari87idspfcxs4k29ycr-libcbor-0.14.0
+2026-10-25T23:59:23.1737430Z   /nix/store/cvh72nmvhwn297rs8qpvn4bn41pzfsvp-libfido2-1.17.0
+2026-10-25T23:59:23.1737893Z   /nix/store/n0jd3g96s1wn49dvslq4sj7k8shq9ak8-libgcrypt-1.12.2-lib
+2026-10-25T23:59:23.1738651Z   /nix/store/89v1mndxgs0ykm2lzqw82ds5awhkdqny-libgit2-1.9.4-lib
+2026-10-25T23:59:23.1739122Z   /nix/store/y3ihi6l3km69j2fdlcis394sm8yw7gms-libgpg-error-1.61
+2026-10-25T23:59:23.1739616Z   /nix/store/1kra217b0jaakpz38697p626iygbndhb-libksba-1.8.0
+2026-10-25T23:59:23.1740106Z   /nix/store/k9nwkal72siq7gw0lc06k718j65qbqgi-libmicrohttpd-1.0.5
+2026-10-25T23:59:23.1740551Z   /nix/store/l5h19v7i8m7h9ha22iwwm4s6bal07wl1-libmnl-1.0.5
+2026-10-25T23:59:23.1741043Z   /nix/store/mj789m9xrys8m4wxr23l5vadcqxcz9d3-libnetfilter_conntrack-1.1.1
+2026-10-25T23:59:23.1741596Z   /nix/store/5hm2cl78q9s4qhwv320620gdxh8g8cg8-libnfnetlink-1.0.2
+2026-10-25T23:59:23.1742035Z   /nix/store/dsvwznm2lxpbngy3ig76x6vn9w3qj2sx-libnftnl-1.3.1
+2026-10-25T23:59:23.1742506Z   /nix/store/hanz65k6ryn8qhbkgh5yk39sijmr3z31-libnl-3.12.0
+2026-10-25T23:59:23.1742944Z   /nix/store/pivmavl94bi52gl5g1807s1zazg35ynv-libpcap-1.10.6-lib
+2026-10-25T23:59:23.1743462Z   /nix/store/6r2vrfsb588ag41wjdkyh52m2vv73md2-libpwquality-1.4.5-lib
+2026-10-25T23:59:23.1743984Z   /nix/store/nmgr3wifl1fspqq5wask6qwr2mfcmy0n-libseccomp-2.6.1-lib
+2026-10-25T23:59:23.1744443Z   /nix/store/f42zwxc58x81axmg3gwscnlbi4i1rvil-libslirp-4.9.3
+2026-10-25T23:59:23.1745024Z   /nix/store/a0pqprn9naknsgjhlv00i5mgymny5ziv-libsodium-1.0.22-unstable-2026-04-16
+2026-10-25T23:59:23.1745804Z   /nix/store/g134gnvvppr7mk6vanh6jkkvmjibbx34-libtool-2.5.4-lib
+2026-10-25T23:59:23.1746623Z   /nix/store/qyhcnh1yy8x3p9s4pas9bpbqaaz77chp-libtpms-0.10.2-unstable-2026-05-06
+2026-10-25T23:59:23.1747181Z   /nix/store/9j81hi1ixd8672wzxsw8bkviicn2yvnj-liburcu-0.15.6
+2026-10-25T23:59:23.1747664Z   /nix/store/542hgw8p7ix86w6lpg9sv6z0gbi9r6fm-libusb-1.0.30
+2026-10-25T23:59:23.1748115Z   /nix/store/x6dspx511vf3dn7f1c468ymbjqym7rss-linux-pam-1.7.2
+2026-10-25T23:59:23.1748566Z   /nix/store/8n26sf4im7bnsp07i2aigdl4q900bw9b-lowdown-3.0.1-lib
+2026-10-25T23:59:23.1749078Z   /nix/store/04nrjvyacpfzp9wj24cdsx912jh929d9-lvm2-2.03.41-lib
+2026-10-25T23:59:23.1749766Z   /nix/store/rs19jskig0mmmyi6pds12clpv4fynzmc-lz4-1.10.0-lib
+2026-10-25T23:59:23.1750227Z   /nix/store/qhdyx0mhmdrl1w5q21091clvrcj2z82k-moby-29.6.2
+2026-10-25T23:59:23.1750639Z   /nix/store/kxw6mw6r5d0h92bpqi0268xcmz8mg9j6-nix-2.34.8
+2026-10-25T23:59:23.1751045Z   /nix/store/ryxm4cjvwjbi717rzd4cs3flfv188rc2-nix-2.34.8
+2026-10-25T23:59:23.1751594Z   /nix/store/pvmwf4vy818h1lpm392rsm8f282h48px-nix-cmd-2.34.8
+2026-10-25T23:59:23.1752034Z   /nix/store/f75yqim9ym4idm9qhl0k376nlknxpa79-nix-expr-2.34.8
+2026-10-25T23:59:23.1752524Z   /nix/store/pyhw164lpibshaaipqpbg952sh7lizcb-nix-fetchers-2.34.8
+2026-10-25T23:59:23.1753197Z   /nix/store/iv19gqbd4plyjha4skbvy1gwcs0xs282-nix-flake-2.34.8
+2026-10-25T23:59:23.1753637Z   /nix/store/3dsgv7zybsy972alip7x1k2jmgyh6zas-nix-main-2.34.8
+2026-10-25T23:59:23.1754163Z   /nix/store/06xvwrwjmy9qw30fsibqs82mbhc48zwv-nix-nswrapper-2.34.8
+2026-10-25T23:59:23.1754634Z   /nix/store/x7dp948rwdyhcr2cfl992flgjg8bhr79-nix-store-2.34.8
+2026-10-25T23:59:23.1755122Z   /nix/store/zhidxiwnnpjqx3nhq16b1zv4bw21z2v3-nix-util-2.34.8
+2026-10-25T23:59:23.1755732Z   /nix/store/dh1r140ijw98qbfpl31lvjhr4mmh7r1m-npth-1.8
+2026-10-25T23:59:23.1756167Z   /nix/store/8617x2m3lwpjcd91b6h94qhn7grgwavn-nss-cacert-3.125
+2026-10-25T23:59:23.1756709Z   /nix/store/fx0ssqmh9chpb5np5wnjpw1pv7grgd35-numactl-2.0.18
+2026-10-25T23:59:23.1757148Z   /nix/store/iznb72qzsll1r15qhlw8yi4kchj4axd0-onetbb-2022.3.0
+2026-10-25T23:59:23.1757621Z   /nix/store/1s7xqsk2k5433vk8cvvdl77yy9bc4wn6-openldap-2.6.13
+2026-10-25T23:59:23.1758086Z   /nix/store/c2ry84f6y9gzjphxflnxil71i0xyf8il-pcsclite-2.4.1-lib
+2026-10-25T23:59:23.1758591Z   /nix/store/7yv50rj0nmy0bd8rlf70d21w9nlq409p-procps-4.0.6
+2026-10-25T23:59:23.1759033Z   /nix/store/mqva8g19nlhwv930xypl0k76yd5wbcx4-python3-3.14.6-env
+2026-10-25T23:59:23.1759542Z   /nix/store/dcw4mnjxcpwi0jmw78z1gifdbvs31x7i-python3.14-dbus-python-1.4.0
+2026-10-25T23:59:23.1760071Z   /nix/store/0f8ck2vxqyq7d9shzva0n8fja36nzckz-qrencode-4.1.1
+2026-10-25T23:59:23.1760551Z   /nix/store/xfrp6c67scrnjhbhyq38wvy363fc0f41-rootlesskit-2.3.6
+2026-10-25T23:59:23.1761273Z   /nix/store/iqrmqq0h88dmii0vgy5z81g37cil1pwl-s2n-tls-1.7.2
+2026-10-25T23:59:23.1761707Z   /nix/store/4sn2dc3k0gfqx46ycs6gk72g460ycgmg-skopeo-1.23.0
+2026-10-25T23:59:23.1762151Z   /nix/store/wywmvi5ixx7j1wfnsldazdq0gvsx5ff5-slirp4netns-1.3.4
+2026-10-25T23:59:23.1762669Z   /nix/store/j93snd8gdy1l4p87n1v4wzipp8w2m0sx-stdenv-linux-no-cc
+2026-10-25T23:59:23.1763132Z   /nix/store/z2nxjmk4666nbka3hgyxlg13prrnvx38-systemd-261
+2026-10-25T23:59:23.1763582Z   /nix/store/9bnj7qbdz8x297006k0jp800rlsslx88-tpm2-tss-4.1.3
+2026-10-25T23:59:23.1764101Z   /nix/store/hjkc91jsyd929q177iznmx97p2nq49sa-util-linux-minimal-2.42.2-bin
+2026-10-25T23:59:23.1764594Z   /nix/store/1al9d8lzqkg0vbbs34lxj4vq8g19b424-xfsprogs-7.1.1
+2026-10-25T23:59:23.1765075Z   /nix/store/5cch5kgnyz1mzf8yy4yqhz77bmc80rpp-xfsprogs-7.1.1-bin
+2026-10-25T23:59:23.1776457Z copying path '/nix/store/ly0d1001mi5pyyfishnfh4jx9j569rmd-docker-containerd-29.6.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1777655Z copying path '/nix/store/j93snd8gdy1l4p87n1v4wzipp8w2m0sx-stdenv-linux-no-cc' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1778558Z copying path '/nix/store/8617x2m3lwpjcd91b6h94qhn7grgwavn-nss-cacert-3.125' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1779381Z copying path '/nix/store/2qs3lp4l7qih52gpwnf3vlr108z7ifn7-docker-buildx-0.35.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1780877Z copying path '/nix/store/wr90aw8p2kcyf22pakjgh1vanpgpmpvq-docker-compose-5.3.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1781799Z copying path '/nix/store/nmgr3wifl1fspqq5wask6qwr2mfcmy0n-libseccomp-2.6.1-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1787245Z copying path '/nix/store/fx0ssqmh9chpb5np5wnjpw1pv7grgd35-numactl-2.0.18' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1818981Z copying path '/nix/store/4yxiib6xxpix9scz1cvk1fbn364shryw-boehm-gc-8.2.12' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1820011Z copying path '/nix/store/ymjpq9ahbnx5ghkhd2xa1307q4n04389-docker-tini-29.6.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1820865Z copying path '/nix/store/8wbjccqiwmaang7nfdhsk6cd5sknm1rc-git-minimal-2.55.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1821719Z copying path '/nix/store/7yv50rj0nmy0bd8rlf70d21w9nlq409p-procps-4.0.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1822522Z copying path '/nix/store/xfrp6c67scrnjhbhyq38wvy363fc0f41-rootlesskit-2.3.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1856818Z copying path '/nix/store/lb00bv1na55n4p129wwh14v0yshbds0z-busybox-1.37.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1867771Z copying path '/nix/store/aa8qz28p409xpwn5vb3cyzdpa4cn4afq-aws-c-common-0.12.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1868796Z copying path '/nix/store/k0y17s1sj2wmw1ijqxk10q5pb6pfzm1w-db-5.3.28' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.1869853Z copying path '/nix/store/9v750vv4mikcg9l01pchzpcxh7isxavw-boost-1.89.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.2112160Z copying path '/nix/store/g772dcpqy57mlf8iykl3gwad21h5yyv3-libapparmor-5.0.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.2254002Z copying path '/nix/store/dal51wlkyjljhhfrby5mjvz5lbil4sq5-e2fsprogs-1.47.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.2257714Z copying path '/nix/store/f6fylz5bk93ayxxlg2lrjqb1nl982m7n-docker-runc-29.6.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.2431872Z copying path '/nix/store/cnjc8qpi01fq4dqah36fnr6migsssqr6-ShellCheck-0.11.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.2810056Z copying path '/nix/store/h8xm33qsqb2mfgzk2waqa4a7n6wk68j8-libarchive-3.8.8-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.2847713Z copying path '/nix/store/y3ihi6l3km69j2fdlcis394sm8yw7gms-libgpg-error-1.61' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.2998660Z copying path '/nix/store/l5h19v7i8m7h9ha22iwwm4s6bal07wl1-libmnl-1.0.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.3021939Z copying path '/nix/store/5hm2cl78q9s4qhwv320620gdxh8g8cg8-libnfnetlink-1.0.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.3358166Z copying path '/nix/store/8n26sf4im7bnsp07i2aigdl4q900bw9b-lowdown-3.0.1-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.3496998Z copying path '/nix/store/qbplpf2pjx4nn6ss7q0xdhgxyq835gpl-editline-1.17.1-unstable-2025-05-24' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.3622639Z copying path '/nix/store/5dyg0blm8ya4vq0cs44ljqq9yarc9jqm-libassuan-3.0.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.3623461Z copying path '/nix/store/89v1mndxgs0ykm2lzqw82ds5awhkdqny-libgit2-1.9.4-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.3676501Z copying path '/nix/store/dsvwznm2lxpbngy3ig76x6vn9w3qj2sx-libnftnl-1.3.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.3756293Z copying path '/nix/store/mj789m9xrys8m4wxr23l5vadcqxcz9d3-libnetfilter_conntrack-1.1.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4012890Z copying path '/nix/store/a0pqprn9naknsgjhlv00i5mgymny5ziv-libsodium-1.0.22-unstable-2026-04-16' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4139139Z copying path '/nix/store/i0gmkx5dzq3xbrrl1ncvjr34qzbm2rch-e2fsprogs-1.47.4-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4259027Z copying path '/nix/store/f42zwxc58x81axmg3gwscnlbi4i1rvil-libslirp-4.9.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4348651Z copying path '/nix/store/0f8ck2vxqyq7d9shzva0n8fja36nzckz-qrencode-4.1.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4389937Z copying path '/nix/store/79krd3dfz65n6api5xj5bb58gb0x7zz7-kexec-tools-2.0.32' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4489836Z copying path '/nix/store/k9nwkal72siq7gw0lc06k718j65qbqgi-libmicrohttpd-1.0.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4633934Z copying path '/nix/store/9czrfjym7pdr8jp849k9fwrffq57dhgy-aws-c-cal-0.9.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.4647034Z copying path '/nix/store/g7s630w1h9k3179jzjs9417jk1c4jsz4-iptables-1.8.13-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5006477Z copying path '/nix/store/n0jd3g96s1wn49dvslq4sj7k8shq9ak8-libgcrypt-1.12.2-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5112256Z copying path '/nix/store/jv7q4q0zdsldaycaamgp0n3i8plq06js-aws-c-compression-0.3.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5114324Z copying path '/nix/store/wywmvi5ixx7j1wfnsldazdq0gvsx5ff5-slirp4netns-1.3.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5184233Z copying path '/nix/store/rs19jskig0mmmyi6pds12clpv4fynzmc-lz4-1.10.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5214922Z copying path '/nix/store/v0z0ad4p8a8wp21q3ma630nx244f5y7i-kbd-2.9.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5283972Z copying path '/nix/store/724akc9bzacrqc1p8sc1a8s4hnsig5v0-libcap-ng-0.9.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5481097Z copying path '/nix/store/8sgmxnmsd6nkvcsw0vb1wv3611gii4xc-inih-62' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5542671Z copying path '/nix/store/9j81hi1ixd8672wzxsw8bkviicn2yvnj-liburcu-0.15.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5621118Z copying path '/nix/store/iqrmqq0h88dmii0vgy5z81g37cil1pwl-s2n-tls-1.7.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.5690647Z copying path '/nix/store/7aqx8g7lbrqhcvgsnzhhin7imdq5pcv1-aws-c-sdkutils-0.2.4' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6067655Z copying path '/nix/store/w3y3j7fh51af4hmnqs8fr49xmkls8qsj-aws-checksums-0.2.7' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6122182Z copying path '/nix/store/yngz468r7i4l895bbx6xral5cfvxbdv9-hwloc-2.14.0-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6275256Z copying path '/nix/store/04nrjvyacpfzp9wj24cdsx912jh929d9-lvm2-2.03.41-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6292100Z copying path '/nix/store/pswb5fj9kfchz7qkinxpzlbyzcpqswvz-json-c-0.18' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6353696Z copying path '/nix/store/g134gnvvppr7mk6vanh6jkkvmjibbx34-libtool-2.5.4-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6578796Z copying path '/nix/store/hjkc91jsyd929q177iznmx97p2nq49sa-util-linux-minimal-2.42.2-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6632508Z copying path '/nix/store/8wx9njyk3amhbhc0qgadq8wn0zaq5z72-audit-4.1.4-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6667124Z copying path '/nix/store/1al9d8lzqkg0vbbs34lxj4vq8g19b424-xfsprogs-7.1.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6675343Z copying path '/nix/store/1kra217b0jaakpz38697p626iygbndhb-libksba-1.8.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.6749859Z copying path '/nix/store/542hgw8p7ix86w6lpg9sv6z0gbi9r6fm-libusb-1.0.30' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7053156Z copying path '/nix/store/qvxgqmy71lvg425h3d08b4xabs0ravm5-aws-c-io-0.27.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7173085Z copying path '/nix/store/dh1r140ijw98qbfpl31lvjhr4mmh7r1m-npth-1.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7175982Z copying path '/nix/store/c2ry84f6y9gzjphxflnxil71i0xyf8il-pcsclite-2.4.1-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7257253Z copying path '/nix/store/gwhj8manqxkgari87idspfcxs4k29ycr-libcbor-0.14.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7305497Z copying path '/nix/store/iznb72qzsll1r15qhlw8yi4kchj4axd0-onetbb-2022.3.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7343622Z copying path '/nix/store/igivcvz7rbzfannbc884laxa9c7z46wk-elfutils-0.195' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7345913Z copying path '/nix/store/hanz65k6ryn8qhbkgh5yk39sijmr3z31-libnl-3.12.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7405973Z copying path '/nix/store/gdfmiz9p9qb13d0qgacgch1k97wy7mrd-cryptsetup-2.8.6' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7750925Z copying path '/nix/store/jjnzhw0b720n1n468wjn5d3d2vf6vl92-cracklib-2.10.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7778868Z copying path '/nix/store/jgxc24minfq0rd05j8gp7q09yaxpnbkz-cyrus-sasl-2.1.28' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7797032Z copying path '/nix/store/d4s02qmkfqxgjlfpl3pbi2hdyqag5x92-db-4.8.30' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.7843889Z copying path '/nix/store/dcw4mnjxcpwi0jmw78z1gifdbvs31x7i-python3.14-dbus-python-1.4.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8109519Z copying path '/nix/store/qyhcnh1yy8x3p9s4pas9bpbqaaz77chp-libtpms-0.10.2-unstable-2026-05-06' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8142524Z copying path '/nix/store/wlk2r4i4gzma9clqf5m20lbkna8cl8dv-aws-c-http-0.11.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8172531Z copying path '/nix/store/w227zrpangbp90jbn1zmd37vbqy7l360-aws-c-event-stream-0.7.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8212312Z copying path '/nix/store/cvh72nmvhwn297rs8qpvn4bn41pzfsvp-libfido2-1.17.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8524601Z copying path '/nix/store/hr4164dbjfi4qxdchvbcskq5prhgsr4g-libblake3-1.8.5' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8591851Z copying path '/nix/store/pivmavl94bi52gl5g1807s1zazg35ynv-libpcap-1.10.6-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8599610Z copying path '/nix/store/dkfyak239irj039acmg5pyki8f9n6r02-fuse-3.18.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8916795Z copying path '/nix/store/5vmfjms84bhimpainwm30m0wqqx34slh-libbpf-1.7.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:23.8970612Z copying path '/nix/store/1s7xqsk2k5433vk8cvvdl77yy9bc4wn6-openldap-2.6.13' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1358438Z copying path '/nix/store/zhidxiwnnpjqx3nhq16b1zv4bw21z2v3-nix-util-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1382448Z copying path '/nix/store/l1fm4295zklwnzpxi8xhckj4hr0c25zg-aws-c-auth-0.9.1' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1383997Z copying path '/nix/store/jgrgjd64kh5cn0jnrjh9x9syfybmc9xh-aws-c-mqtt-0.13.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1490238Z copying path '/nix/store/n8cbz3fvw0x4kwh94zfj9y3gpcf926iw-fuse-overlayfs-1.17' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1506538Z copying path '/nix/store/9bnj7qbdz8x297006k0jp800rlsslx88-tpm2-tss-4.1.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1516783Z copying path '/nix/store/bg8yvkncrj4pjs8vzid2xmj81cl3imd2-iproute2-7.1.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1518654Z copying path '/nix/store/8x94vpx9jnk9qjghxlivz83xjrq1k2sm-iptables-1.8.13' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.1519622Z copying path '/nix/store/x6dspx511vf3dn7f1c468ymbjqym7rss-linux-pam-1.7.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.2397464Z copying path '/nix/store/k5nbama0ifar4sbnf1lk9l554xr5bks2-aws-c-s3-0.8.7' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.2583904Z copying path '/nix/store/06xvwrwjmy9qw30fsibqs82mbhc48zwv-nix-nswrapper-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.2655971Z copying path '/nix/store/mqva8g19nlhwv930xypl0k76yd5wbcx4-python3-3.14.6-env' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.2666933Z copying path '/nix/store/hjv3v5qmyclc349m7y0yrf0wkaxbfj2x-aws-crt-cpp-0.34.3' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.3086563Z copying path '/nix/store/x7dp948rwdyhcr2cfl992flgjg8bhr79-nix-store-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.3096612Z copying path '/nix/store/sqhyj45b0r1iw24rzn85pqrpl85d7pg3-gnupg-2.4.9' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.3276057Z copying path '/nix/store/6r2vrfsb588ag41wjdkyh52m2vv73md2-libpwquality-1.4.5-lib' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.3382250Z copying path '/nix/store/5cch5kgnyz1mzf8yy4yqhz77bmc80rpp-xfsprogs-7.1.1-bin' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.3733686Z copying path '/nix/store/3dsgv7zybsy972alip7x1k2jmgyh6zas-nix-main-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.3737423Z copying path '/nix/store/pyhw164lpibshaaipqpbg952sh7lizcb-nix-fetchers-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.3738287Z copying path '/nix/store/z2nxjmk4666nbka3hgyxlg13prrnvx38-systemd-261' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.4219442Z copying path '/nix/store/x2l7xkfr3i935z535bsx72097318p3hb-gpgme-2.1.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.4423094Z copying path '/nix/store/f75yqim9ym4idm9qhl0k376nlknxpa79-nix-expr-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.4530033Z copying path '/nix/store/4sn2dc3k0gfqx46ycs6gk72g460ycgmg-skopeo-1.23.0' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.5077517Z copying path '/nix/store/iv19gqbd4plyjha4skbvy1gwcs0xs282-nix-flake-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.5799032Z copying path '/nix/store/pvmwf4vy818h1lpm392rsm8f282h48px-nix-cmd-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.6797802Z copying path '/nix/store/ryxm4cjvwjbi717rzd4cs3flfv188rc2-nix-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:24.7385271Z warning: unknown setting 'build-provenance-tags'
+2026-10-25T23:59:24.7957376Z building '/nix/store/0kncfaz2nx4flv22514mm5lmcxy3zh85-docker-image-cluster-renderer-playwright-1.61.1.tar.drv'...
+2026-10-25T23:59:24.7963061Z copying path '/nix/store/kxw6mw6r5d0h92bpqi0268xcmz8mg9j6-nix-2.34.8' from 'https://cache.nixos.org'...
+2026-10-25T23:59:25.2517593Z copying path '/nix/store/qhdyx0mhmdrl1w5q21091clvrcj2z82k-moby-29.6.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:25.6333473Z copying path '/nix/store/h16x9l2ll898gxzn6qwrg3qi82vm657g-docker-29.6.2' from 'https://cache.nixos.org'...
+2026-10-25T23:59:56.3988376Z building '/nix/store/i7rbvjaqggk8770zf3rgz7hcacjia6fm-cluster-ci-renderer.drv'...
+2026-10-26T00:00:26.6856867Z unpacking 'github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b?narHash=sha256-l0KFg5HjrsfsO/JpG%2Br7fRrqm12kzFHyUHqHCVpMMbI%3D' into the Git cache...
+2026-10-26T00:00:27.0756758Z unpacking 'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e?narHash=sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768%3D' into the Git cache...
+2026-10-26T00:00:28.9052019Z building '/nix/store/5ifzvyxk2xlhrk9hvz8440154qasf573-ldd.drv'...
+2026-10-26T00:00:28.9585690Z building '/nix/store/pkskwgl5c0x5a8w64igv9657d8rdv21v-nix-shell-env.drv'...
+2026-10-26T00:00:29.3695486Z openjdk version "21.0.12" 2026-07-21
+2026-10-26T00:00:29.3695950Z OpenJDK Runtime Environment (build 21.0.12+2-nixos)
+2026-10-26T00:00:29.3696363Z OpenJDK 64-Bit Server VM (build 21.0.12+2-nixos, mixed mode, sharing)
+2026-10-26T00:00:29.3823245Z v24.18.0
+2026-10-26T00:00:29.3846026Z 1.3.13
+2026-10-26T00:00:29.3869393Z bun install v1.3.13 (bf2e2cec)
+2026-10-26T00:01:23.6403128Z 
+2026-10-26T00:01:23.6403535Z + @biomejs/biome@2.4.6
+2026-10-26T00:01:23.6403811Z + @firebase/rules-unit-testing@5.0.1
+2026-10-26T00:01:23.6404072Z + @playwright/test@1.61.1
+2026-10-26T00:01:23.6404296Z + @sveltejs/adapter-static@3.0.10
+2026-10-26T00:01:23.6404523Z + @sveltejs/kit@2.69.3
+2026-10-26T00:01:23.6404773Z + @sveltejs/vite-plugin-svelte@7.2.0
+2026-10-26T00:01:23.6405016Z + @types/bun@1.3.10
+2026-10-26T00:01:23.6405200Z + @types/node@26.1.1
+2026-10-26T00:01:23.6405390Z + @types/three@0.183.1
+2026-10-26T00:01:23.6405728Z + firebase-tools@15.25.0
+2026-10-26T00:01:23.6405951Z + material-components-web@10.0.0
+2026-10-26T00:01:23.6406182Z + prettier@3.9.10
+2026-10-26T00:01:23.6406378Z + prettier-plugin-svelte@4.1.1
+2026-10-26T00:01:23.6406593Z + sharp@0.34.5
+2026-10-26T00:01:23.6406760Z + svelte@5.56.5
+2026-10-26T00:01:23.6407372Z + svelte-check@4.7.2
+2026-10-26T00:01:23.6407583Z + typescript@5.9.3
+2026-10-26T00:01:23.6407760Z + vite@8.1.4
+2026-10-26T00:01:23.6407954Z + @fontsource/atkinson-hyperlegible@5.2.8
+2026-10-26T00:01:23.6408232Z + @fontsource/cormorant-garamond@5.2.11
+2026-10-26T00:01:23.6408477Z + @threlte/core@8.6.1
+2026-10-26T00:01:23.6408671Z + @threlte/extras@9.22.2
+2026-10-26T00:01:23.6408867Z + firebase@12.16.0
+2026-10-26T00:01:23.6409045Z + three@0.186.1
+2026-10-26T00:01:23.6409154Z 
+2026-10-26T00:01:23.6409252Z 798 packages installed [54.25s]
+2026-10-26T00:01:23.6517219Z bun install v1.3.13 (bf2e2cec)
+2026-10-26T00:01:23.9064392Z 
+2026-10-26T00:01:23.9064835Z + typescript@5.9.3
+2026-10-26T00:01:23.9065111Z + @google-cloud/functions-framework@5.0.5
+2026-10-26T00:01:23.9065389Z + firebase-admin@13.10.0
+2026-10-26T00:01:23.9065790Z + firebase-functions@7.2.5
+2026-10-26T00:01:23.9065946Z 
+2026-10-26T00:01:23.9066038Z 308 packages installed [255.00ms]
+2026-10-26T00:01:26.4275106Z $ tsc -p tsconfig.json
+2026-10-26T00:01:30.7976950Z i  emulators: Starting emulators: auth, functions, firestore, database
+2026-10-26T00:01:30.7978829Z i  emulators: Detected demo project ID "demo-clusterii", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+2026-10-26T00:01:30.8320013Z ⚠  It appears you are running in a CI environment. You can avoid downloading the Firestore Emulator repeatedly by caching the /root/.cache/firebase/emulators directory.
+2026-10-26T00:01:30.8321655Z i  firestore: downloading cloud-firestore-emulator-v1.22.0.jar...
+2026-10-26T00:01:31.9256435Z 
+2026-10-26T00:01:32.7192330Z i  firestore: Firestore Emulator logging to firestore-debug.log
+2026-10-26T00:01:33.9263656Z ✔  firestore: Firestore Emulator was started in standard edition.
+2026-10-26T00:01:33.9266643Z ✔  firestore: Firestore Emulator UI websocket is running on 19150.
+2026-10-26T00:01:33.9311011Z ⚠  It appears you are running in a CI environment. You can avoid downloading the Database Emulator repeatedly by caching the /root/.cache/firebase/emulators directory.
+2026-10-26T00:01:33.9313118Z i  database: downloading firebase-database-emulator-v4.11.2.jar...
+2026-10-26T00:01:34.3311940Z 
+2026-10-26T00:01:34.5050442Z i  database: Database Emulator logging to database-debug.log
+2026-10-26T00:01:41.2197592Z i  functions: Watching "/home/runner/work/clusterii/clusterii/functions" for Cloud Functions...
+2026-10-26T00:01:41.6945065Z ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+2026-10-26T00:01:41.6961691Z ⚠  functions: Your requested "node" version "22" doesn't match your global version "24". Using node@24 from host.
+2026-10-26T00:01:41.8280738Z Serving at port 8329
+2026-10-26T00:01:41.8281217Z 
+2026-10-26T00:01:45.2753295Z ✔  functions: Loaded functions definitions from source: campaignCommandKey, campaignKey, campaignSecurity, processCampaign, processCampaignMaintenance, processCampaignMigration, revokeCredentials, revokeSessions, runCampaignMigration, runProduction, startScheduledCampaigns, processProfile, profileKey.
+2026-10-26T00:01:45.2757039Z ✔  functions[us-central1-campaignCommandKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignCommandKey).
+2026-10-26T00:01:45.2759743Z ✔  functions[us-central1-campaignKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignKey).
+2026-10-26T00:01:45.2761515Z ✔  functions[us-central1-campaignSecurity]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/campaignSecurity).
+2026-10-26T00:01:45.6068628Z ✔  functions[us-central1-processCampaign]: database function initialized.
+2026-10-26T00:01:45.6154801Z ✔  functions[us-central1-processCampaignMaintenance]: database function initialized.
+2026-10-26T00:01:45.6234632Z ✔  functions[us-central1-processCampaignMigration]: database function initialized.
+2026-10-26T00:01:45.6236282Z ✔  functions[us-central1-revokeCredentials]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeCredentials).
+2026-10-26T00:01:45.6238737Z ✔  functions[us-central1-revokeSessions]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/revokeSessions).
+2026-10-26T00:01:46.5041507Z ✔  functions[us-central1-runCampaignMigration]: firestore function initialized.
+2026-10-26T00:01:46.5045698Z i  functions[us-central1-runProduction]: function ignored because the pubsub emulator does not exist or is not running.
+2026-10-26T00:01:46.5052475Z i  functions[us-central1-startScheduledCampaigns]: function ignored because the pubsub emulator does not exist or is not running.
+2026-10-26T00:01:46.5149424Z ✔  functions[us-central1-processProfile]: database function initialized.
+2026-10-26T00:01:46.5151164Z ✔  functions[us-central1-profileKey]: http function initialized (http://127.0.0.1:15001/demo-clusterii/us-central1/profileKey).
+2026-10-26T00:01:46.6763878Z i  Running script: 'bun' 'x' 'playwright' 'test' '--config' 'playwright.stories.config.ts' 'tests/browser/fleet-contacts.story.spec.ts' '--grep' '(?:^|\s)Live fleet contacts preserve acquired and last-seen private facts across reload$' '--project=desktop' '--retries=0' '--max-failures=1' '--update-snapshots=none'
+2026-10-26T00:01:47.2403155Z [WebServer] $ vite build
+2026-10-26T00:01:52.2634517Z [WebServer] [plugin builtin:vite-reporter] 
+2026-10-26T00:01:52.2634992Z [WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-26T00:01:52.2635861Z [WebServer] - Using dynamic import() to code-split the application
+2026-10-26T00:01:52.2636597Z [WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-26T00:01:52.2637338Z [WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2026-10-26T00:01:53.4150391Z [WebServer] [PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
+2026-10-26T00:01:53.4151396Z [WebServer]   - vite-plugin-sveltekit-guard (77%)
+2026-10-26T00:01:53.4152185Z [WebServer]   - vite-plugin-sveltekit-virtual-modules (9%)
+2026-10-26T00:01:53.4152603Z [WebServer]   - vite-plugin-svelte:compile (7%)
+2026-10-26T00:01:53.4153100Z [WebServer] See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+2026-10-26T00:01:53.4153551Z [WebServer] 
+2026-10-26T00:01:54.2578602Z 
+2026-10-26T00:01:54.2579053Z Running 1 test using 1 worker
+2026-10-26T00:01:58.8587905Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:01:58.8697019Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:01:59.0858494Z i  functions: Finished "us-central1-profileKey" in 226.580497ms
+2026-10-26T00:02:00.9862488Z i  functions: Beginning execution of "us-central1-processProfile"
+2026-10-26T00:02:01.2176414Z i  functions: Finished "us-central1-processProfile" in 231.002915ms
+2026-10-26T00:02:02.9299556Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:02.9487177Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:03.0303039Z i  functions: Finished "us-central1-profileKey" in 100.290905ms
+2026-10-26T00:02:03.3640263Z i  functions: Beginning execution of "us-central1-processProfile"
+2026-10-26T00:02:03.4442003Z i  functions: Finished "us-central1-processProfile" in 80.105051ms
+2026-10-26T00:02:03.5836184Z i  functions: Beginning execution of "us-central1-campaignSecurity"
+2026-10-26T00:02:03.5952121Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:03.7250902Z i  functions: Finished "us-central1-campaignSecurity" in 141.107527ms
+2026-10-26T00:02:03.9837449Z i  functions: Beginning execution of "us-central1-campaignSecurity"
+2026-10-26T00:02:03.9883922Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:04.0180646Z i  functions: Finished "us-central1-campaignSecurity" in 34.37404ms
+2026-10-26T00:02:04.8434833Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:04.8475273Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:04.9202569Z i  functions: Finished "us-central1-profileKey" in 76.547261ms
+2026-10-26T00:02:05.1639869Z i  functions: Beginning execution of "us-central1-processProfile"
+2026-10-26T00:02:05.2286930Z i  functions: Finished "us-central1-processProfile" in 64.404808ms
+2026-10-26T00:02:05.5388750Z i  functions: Beginning execution of "us-central1-campaignSecurity"
+2026-10-26T00:02:05.5419003Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:05.5825264Z i  functions: Finished "us-central1-campaignSecurity" in 42.453661ms
+2026-10-26T00:02:06.2325029Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:06.2386330Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:06.2974756Z i  functions: Finished "us-central1-profileKey" in 63.521938ms
+2026-10-26T00:02:06.5459694Z i  functions: Beginning execution of "us-central1-processProfile"
+2026-10-26T00:02:06.5958869Z i  functions: Finished "us-central1-processProfile" in 50.947704ms
+2026-10-26T00:02:06.9454107Z i  functions: Beginning execution of "us-central1-campaignSecurity"
+2026-10-26T00:02:06.9472386Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:06.9651329Z i  functions: Finished "us-central1-campaignSecurity" in 20.253618ms
+2026-10-26T00:02:07.0397554Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:07.0439320Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:07.0671511Z i  functions: Finished "us-central1-profileKey" in 27.177161ms
+2026-10-26T00:02:08.3131014Z i  functions: Beginning execution of "us-central1-processCampaign"
+2026-10-26T00:02:08.5147771Z i  functions: Finished "us-central1-processCampaign" in 201.129785ms
+2026-10-26T00:02:09.7474656Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:09.7566287Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:09.8682582Z i  functions: Finished "us-central1-campaignKey" in 120.549487ms
+2026-10-26T00:02:10.4356089Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:10.4364353Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:10.4600188Z i  functions: Finished "us-central1-profileKey" in 24.405911ms
+2026-10-26T00:02:10.4812188Z i  functions: Beginning execution of "us-central1-processCampaign"
+2026-10-26T00:02:10.5876911Z i  functions: Finished "us-central1-processCampaign" in 106.253453ms
+2026-10-26T00:02:10.6043614Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:10.6062040Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:10.6330319Z i  functions: Finished "us-central1-campaignKey" in 28.993544ms
+2026-10-26T00:02:10.9307210Z i  functions: Beginning execution of "us-central1-campaignSecurity"
+2026-10-26T00:02:10.9342889Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:10.9529360Z i  functions: Finished "us-central1-campaignSecurity" in 20.405763ms
+2026-10-26T00:02:10.9771870Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:10.9798105Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:11.0238475Z i  functions: Finished "us-central1-campaignKey" in 46.392488ms
+2026-10-26T00:02:11.2733646Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:11.2800814Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:11.2998375Z i  functions: Finished "us-central1-profileKey" in 26.30527ms
+2026-10-26T00:02:11.3509520Z i  functions: Beginning execution of "us-central1-processCampaign"
+2026-10-26T00:02:11.5188860Z i  functions: Finished "us-central1-processCampaign" in 167.886126ms
+2026-10-26T00:02:11.5392069Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:11.5423896Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:11.5769477Z i  functions: Finished "us-central1-campaignKey" in 36.580843ms
+2026-10-26T00:02:11.8308844Z i  functions: Beginning execution of "us-central1-campaignSecurity"
+2026-10-26T00:02:11.8334129Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:11.8471101Z i  functions: Finished "us-central1-campaignSecurity" in 15.907703ms
+2026-10-26T00:02:11.8687243Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:11.8776089Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:11.8964513Z i  functions: Finished "us-central1-campaignKey" in 26.912315ms
+2026-10-26T00:02:12.3482987Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:12.3539924Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:12.3833948Z i  functions: Finished "us-central1-profileKey" in 33.622793ms
+2026-10-26T00:02:12.4623140Z i  functions: Beginning execution of "us-central1-processCampaign"
+2026-10-26T00:02:12.6266044Z i  functions: Finished "us-central1-processCampaign" in 164.089384ms
+2026-10-26T00:02:12.6538476Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:12.6634439Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:12.7001405Z i  functions: Finished "us-central1-campaignKey" in 45.713129ms
+2026-10-26T00:02:12.9286554Z i  functions: Beginning execution of "us-central1-campaignSecurity"
+2026-10-26T00:02:12.9309834Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:12.9421301Z i  functions: Finished "us-central1-campaignSecurity" in 13.098113ms
+2026-10-26T00:02:12.9712507Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:12.9726292Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:12.9931791Z i  functions: Finished "us-central1-campaignKey" in 21.755537ms
+2026-10-26T00:02:13.5222150Z i  functions: Beginning execution of "us-central1-profileKey"
+2026-10-26T00:02:13.5332167Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:13.5643589Z i  functions: Finished "us-central1-profileKey" in 42.348065ms
+2026-10-26T00:02:13.6354107Z i  functions: Beginning execution of "us-central1-processCampaign"
+2026-10-26T00:02:13.8264760Z i  functions: Finished "us-central1-processCampaign" in 190.888551ms
+2026-10-26T00:02:13.8520762Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:13.8557889Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:13.8882090Z i  functions: Finished "us-central1-campaignKey" in 35.978279ms
+2026-10-26T00:02:16.8317862Z i  functions: Beginning execution of "us-central1-startScheduledCampaigns"
+2026-10-26T00:02:17.1064601Z i  functions: Finished "us-central1-startScheduledCampaigns" in 274.344487ms
+2026-10-26T00:02:17.2722118Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:17.3256886Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:17.3791463Z i  functions: Finished "us-central1-campaignKey" in 102.903277ms
+2026-10-26T00:02:18.8321164Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:18.8370740Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:18.8820695Z i  functions: Finished "us-central1-campaignKey" in 49.336955ms
+2026-10-26T00:02:18.8844863Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:18.8871387Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:18.9280467Z i  functions: Finished "us-central1-campaignKey" in 43.216999ms
+2026-10-26T00:02:18.9639379Z i  functions: Beginning execution of "us-central1-campaignKey"
+2026-10-26T00:02:18.9660368Z >  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+2026-10-26T00:02:18.9989207Z i  functions: Finished "us-central1-campaignKey" in 34.903136ms
+2026-10-26T00:02:21.9072347Z F
+2026-10-26T00:02:21.9072972Z Testing stopped early after 1 maximum allowed failures.
+2026-10-26T00:02:21.9144378Z 
+2026-10-26T00:02:21.9163043Z 
+2026-10-26T00:02:21.9166675Z   1) [desktop] › tests/browser/fleet-contacts.story.spec.ts:34:1 › Live fleet contacts preserve acquired and last-seen private facts across reload › The owner opens fleet preparation while the observer checks their own contact records before any fleet exists. › Fleet pathfinder: settled, contained, exact capture 
+2026-10-26T00:02:21.9168162Z 
+2026-10-26T00:02:21.9171679Z     Error: Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png. Generate candidates separately; verification never writes expected images.
+2026-10-26T00:02:21.9172797Z 
+2026-10-26T00:02:21.9172946Z        at story-helpers/test-step-helper.ts:251
+2026-10-26T00:02:21.9173147Z 
+2026-10-26T00:02:21.9173273Z       249 |               if (mode() === "verify") {
+2026-10-26T00:02:21.9173612Z       250 |                 if (!existsSync(baseline) || !existsSync(manifest))
+2026-10-26T00:02:21.9173944Z     > 251 |                   throw new Error(
+2026-10-26T00:02:21.9174194Z           |                         ^
+2026-10-26T00:02:21.9174753Z       252 |                     `Missing reviewed baseline/renderer: ${baseline}. Generate candidates separately; verification never writes expected images.`,
+2026-10-26T00:02:21.9175342Z       253 |                   );
+2026-10-26T00:02:21.9176410Z       254 |                 expect(
+2026-10-26T00:02:21.9176971Z         at test.step.timeout (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:251:25)
+2026-10-26T00:02:21.9177757Z         at test.step.timeout (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:205:11)
+2026-10-26T00:02:21.9178560Z         at TestStepHelper.step (/home/runner/work/clusterii/clusterii/tests/browser/story-helpers/test-step-helper.ts:180:5)
+2026-10-26T00:02:21.9179263Z         at /home/runner/work/clusterii/clusterii/tests/browser/fleet-contacts.story.spec.ts:411:5
+2026-10-26T00:02:21.9179619Z 
+2026-10-26T00:02:21.9180017Z     Error Context: test-results/stories/fleet-contacts.story-Live--471aa-private-facts-across-reload-desktop/error-context.md
+2026-10-26T00:02:21.9180513Z 
+2026-10-26T00:02:21.9181025Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-26T00:02:21.9181959Z     test-results/stories/fleet-contacts.story-Live--471aa-private-facts-across-reload-desktop/trace.zip
+2026-10-26T00:02:21.9182440Z     Usage:
+2026-10-26T00:02:21.9182536Z 
+2026-10-26T00:02:21.9184493Z         npx playwright show-trace test-results/stories/fleet-contacts.story-Live--471aa-private-facts-across-reload-desktop/trace.zip
+2026-10-26T00:02:21.9185038Z 
+2026-10-26T00:02:21.9185443Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-26T00:02:21.9186473Z 
+2026-10-26T00:02:21.9186545Z   1 failed
+2026-10-26T00:02:21.9187225Z     [desktop] › tests/browser/fleet-contacts.story.spec.ts:34:1 › Live fleet contacts preserve acquired and last-seen private facts across reload 
+2026-10-26T00:02:21.9187871Z   1 error was not a part of any test, see above for details
+2026-10-26T00:02:21.9318388Z ⚠  Script exited unsuccessfully (code 1)
+2026-10-26T00:02:22.4335370Z i  emulators: Shutting down emulators.
+2026-10-26T00:02:22.4336892Z i  functions: Stopping Functions Emulator
+2026-10-26T00:02:22.4366686Z i  database: Stopping Database Emulator
+2026-10-26T00:02:22.8127482Z i  firestore: Stopping Firestore Emulator
+2026-10-26T00:02:23.1585360Z i  auth: Stopping Authentication Emulator
+2026-10-26T00:02:23.1588120Z i  eventarc: Stopping Eventarc Emulator
+2026-10-26T00:02:23.1590380Z i  tasks: Stopping Cloud Tasks Emulator
+2026-10-26T00:02:23.1592820Z i  hub: Stopping emulator hub
+2026-10-26T00:02:23.1596656Z i  logging: Stopping Logging Emulator
+2026-10-26T00:02:23.1630478Z 
+2026-10-26T00:02:23.1631637Z Error: Script "'bun' 'x' 'playwright' 'test' '--config' 'playwright.stories.config.ts' 'tests/browser/fleet-contacts.story.spec.ts' '--grep' '(?:^|\s)Live fleet contacts preserve acquired and last-seen private facts across reload$' '--project=desktop' '--retries=0' '--max-failures=1' '--update-snapshots=none'" exited with code 1
+2026-10-26T00:02:23.4745951Z {"family":"contacts","viewport":"desktop","exit":1,"signal":null,"referenceDiffExit":0,"manifestStatus":"absent","mode":"absent","views":0}
+2026-10-26T00:02:23.9250044Z ##[error]Process completed with exit code 1.
+2026-10-26T00:02:23.9345205Z ##[group]Run actions/upload-artifact@v4
+2026-10-26T00:02:23.9345499Z with:
+2026-10-26T00:02:23.9346524Z   name: contact-strict-contacts-desktop-e8eea2b9c0a679b54df28bdc8c62029c9b224833-1
+2026-10-26T00:02:23.9346953Z   include-hidden-files: true
+2026-10-26T00:02:23.9347171Z   retention-days: 30
+2026-10-26T00:02:23.9347372Z   if-no-files-found: error
+2026-10-26T00:02:23.9347905Z   path: ci-evidence/recovery-request/
+ci-evidence/contact-strict/
+ci-evidence/nix-renderer/
+test-results/stories/
+firestore-debug.log
+
+2026-10-26T00:02:23.9348471Z   compression-level: 6
+2026-10-26T00:02:23.9348671Z   overwrite: false
+2026-10-26T00:02:23.9348850Z env:
+2026-10-26T00:02:23.9349360Z   CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+2026-10-26T00:02:23.9350017Z   DETSYS_INVOCATION_ID: 5fd02673-7c9b-46bc-a3e7-ac0706c9e34e
+2026-10-26T00:02:23.9350320Z   DETERMINATE_NIX_KVM: 0
+2026-10-26T00:02:23.9350564Z ##[endgroup]
+2026-10-26T00:02:24.0947705Z (node:7257) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T00:02:24.0948397Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T00:02:24.1369841Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-26T00:02:24.1372995Z The least common ancestor is /home/runner/work/clusterii/clusterii. This will be the root directory of the artifact
+2026-10-26T00:02:24.1373861Z With the provided path, there will be 209 files uploaded
+2026-10-26T00:02:24.1378485Z Artifact name is valid!
+2026-10-26T00:02:24.1379616Z Root directory input is valid!
+2026-10-26T00:02:24.4851113Z Beginning upload of artifact content to blob storage
+2026-10-26T00:02:24.8841971Z (node:7257) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T00:02:25.3597805Z Uploaded bytes 8388608
+2026-10-26T00:02:25.4899739Z Uploaded bytes 9680650
+2026-10-26T00:02:25.5305477Z Finished uploading artifact content to blob storage!
+2026-10-26T00:02:25.5306301Z SHA256 digest of uploaded artifact zip is 34f8283c27800392a944e12ec1cb65da34a4bf1007428b02828cb038feab559c
+2026-10-26T00:02:25.5308479Z Finalizing artifact upload
+2026-10-26T00:02:25.9661353Z Artifact contact-strict-contacts-desktop-e8eea2b9c0a679b54df28bdc8c62029c9b224833-1.zip successfully finalized. Artifact ID 12619495394
+2026-10-26T00:02:25.9662554Z Artifact contact-strict-contacts-desktop-e8eea2b9c0a679b54df28bdc8c62029c9b224833-1 has been successfully uploaded! Final size is 9680650 bytes. Artifact ID is 12619495394
+2026-10-26T00:02:25.9668390Z Artifact download URL: https://github.com/anicolao/clusterii/actions/runs/40246963988/artifacts/12619495394
+2026-10-26T00:02:25.9938393Z Post job cleanup.
+2026-10-26T00:02:26.5208988Z [0;31m[1m[4mDeterminate Systems, Inc. | Status Status
+2026-10-26T00:02:26.5209837Z 🛠️ monitoring: Patched PHP security release (https://status.determinate.systems/incidents/51ece80b-c4d6-401e-a3bb-cc2811518fc6)
+2026-10-26T00:02:26.5210822Z 🔴 monitoring: eMudhra Intermediate CA Compromise (https://status.determinate.systems/incidents/f7cd1dd4-f0d1-4960-b787-e8077e6d4885)
+2026-10-26T00:02:26.5211426Z See: https://status.determinate.systems/
+2026-10-26T00:02:26.5211624Z 
+2026-10-26T00:02:26.5241719Z [command]/usr/bin/sudo mkdir -p /var/lib/determinate
+2026-10-26T00:02:27.2191940Z Post job cleanup.
+2026-10-26T00:02:27.2979489Z [command]/usr/bin/git version
+2026-10-26T00:02:27.3018839Z git version 2.55.0
+2026-10-26T00:02:27.3054298Z Temporarily overriding HOME='/home/runner/work/_temp/bf2bda60-27be-4c2e-9a47-6286a268abbd' before making global git config changes
+2026-10-26T00:02:27.3055179Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T00:02:27.3067040Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/clusterii/clusterii
+2026-10-26T00:02:27.3100261Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T00:02:27.3132107Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T00:02:27.3372025Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T00:02:27.3409924Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T00:02:27.3631038Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T00:02:27.3665158Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T00:02:27.4038312Z Cleaning up orphan processes
+2026-10-26T00:02:27.4514684Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -576,6 +576,11 @@ fieldset {
   .identity-intro {
     margin-bottom: 18px;
   }
+  .identity .reading .identity-intro {
+    line-height: 28px;
+    /* Keep glyph painting on a dedicated layer inside the filtered reading pane. */
+    transform: translateZ(0);
+  }
   .entry {
     padding: 20px 0;
   }

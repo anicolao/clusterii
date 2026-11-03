@@ -1,0 +1,72 @@
+{
+  "reviewer": "Codex supervisor",
+  "run": 40264675463,
+  "viewport": "large",
+  "decision": "approve regression references after individual visual inspection",
+  "images": [
+    {
+      "name": "023-save-private-browser-draft-1-nacre-envoy.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/023-save-private-browser-draft-1-nacre-envoy.png",
+      "sha256": "a46da697c16ad3605227dac877a804a6a1fc9bfda9eedae91b72e31444adcaaa",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/023-save-private-browser-draft-1-nacre-envoy.png"
+    },
+    {
+      "name": "024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "sha256": "26aa99e1039721084473444f947854a39326daf95591e73469d090c103fdb220",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/024-recover-draft-in-two-tabs-1-nacre-envoy.png"
+    },
+    {
+      "name": "024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "sha256": "26aa99e1039721084473444f947854a39326daf95591e73469d090c103fdb220",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "sha256": "fdd62c34de85b6b9915cbf35995c717c6d4694b96bb6d08470b303a6e848ecb7",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/025-preserve-conflicting-draft-1-nacre-envoy.png"
+    },
+    {
+      "name": "025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "sha256": "e2553d25b3fd1648f8bab5311831111fc473a3c7c2d69e5a664835492c48551e",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "0930958fcd6389adee7a2e950e9befe09ef0cbbdc6026dcc720545e5a79142f7",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/026-choose-saved-draft-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "sha256": "05976123f945fdfc43494020337c1259490e1a0a63b3c48dc570d951ea6411bf",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "027-send-recovered-draft-once-2-outer-witness.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/027-send-recovered-draft-once-2-outer-witness.png",
+      "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/027-send-recovered-draft-once-2-outer-witness.png"
+    },
+    {
+      "name": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "6d634ada8ad57031a717b2e73f1df986ad94ef5946e35945872bb5599cf1e1f5",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/large/images/028-recover-cleared-draft-1-nacre-envoy-second-tab.png"
+    }
+  ],
+  "notes": "Inspected all nine: saved draft and two reload views, conflict preserving text with both explicit choices visible and send disabled, saved choice clears alert, accepted message4 visible exactly once, outsider empty room, cleared reload without stale sent status. No new clipping/overlap. Existing broad portrait composition and participant grammar remain design gaps; not full design-fidelity approval."
+}

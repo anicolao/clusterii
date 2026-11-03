@@ -1,0 +1,7 @@
+# Later append after a copied final parent prompt
+
+Exact PR54 docs40159642901/job121068319226 at9a712a9b failed actual base check against cd7ed5fd, despite16passing fixtures. Reviewer reproduced immutableHEAD/index. The old checker verified initial copy separators but not a later normal append: a previously final copied record gains the newline preceding the next heading. No user body bytes were removed or changed.
+
+New fixture creates divergent real Git branches, integrates exact parent archive/canonical records, commits another append, and checks actual parent base. Previous checker fails; correction passes17tests, with negative space/newline modifications retained. For a prior copied record, allowed additional LF variants require a committed descendant transition whose entire previous log remains an exact prefix and whose prior final record changes by exactly1or2LF. Only descendants of the checked base are inspected; archive byte/mode/source/order and continuation checks remain. Base checks additionally require current committed HEAD log to remain an exact prefix of staged log. No trimEnd or arbitrary whitespace normalization.
+
+Actual staged --base cd7ed5fd7f983fa68c7cb076b88b5f07e26a6ba1 passes. Run again after commit against immutableHEAD/index before push. No gameplay/source/capture/reference/deadline changes. Existing application/story observations retained; no manual rerun. PR56 current-parent stagedtree20b475e9b4209b45340cddb98f26f17b083cc654 protected separately; earlier53/54failures take priority.

@@ -54,13 +54,28 @@
     }
   },
   "credit-offers.spec.ts": {
-    "sha256": "d12ba6e3fe35993e2fef97d0859b6da718ca05551314ac23d755141b5db223fc",
-    "status": "Procedural regression; illustrated migration incomplete",
+    "sha256": "68431ce8853c0417fcbc33fca70202c16c5d247474abf77fc76a0d9f2de8d68b",
+    "status": "Retained procedural mock/managed-key regression; exact pending-button maintenance exception, illustrated migration remains incomplete; explicit bounded real initialization readiness maintenance",
     "navigationCompatibility": {
       "priorSha256": "17a239784195f389ce144229cf2d4d9da3fe3535edc8d4912909761097f21292",
       "authorization": "Prompt 132: reviewer00:22 explicitly requests legacy navigation compatibility; this is not illustrated migration",
       "review": "docs/testing/GALAXY_NAVIGATION_CI_REVIEW.md"
-    }
+    },
+    "maintenance": {
+      "kind": "exact-accessible-name-only",
+      "previousSha256": "d12ba6e3fe35993e2fef97d0859b6da718ca05551314ac23d755141b5db223fc",
+      "from": "name: \"Awaiting acknowledgement\u2026\"",
+      "to": "name: \"Awaiting receipt\"",
+      "review": "docs/testing/pr54-pending-locator/POLICY_MAINTENANCE.md"
+    },
+    "readinessMaintenance": {
+      "kind": "exact-real-initialization-readiness",
+      "previousSha256": "1ffa08b5d1de7bfd44ce61f901d87b4889df3b44ffded1245d6398dc86575abd",
+      "from": "      await page.reload();\n      await expect(panel).toBeVisible();",
+      "to": "      const initialization = page.waitForResponse(\n        (response) =>\n          new URL(response.url()).pathname ===\n            \"/demo-clusterii/us-central1/campaignSecurity\" &&\n          response.request().method() === \"POST\",\n        { timeout: 30000 },\n      );\n      await page.reload();\n      const security = await initialization;\n      expect(security.status()).toBe(200);\n      expect(typeof (await security.json()).result.realAvailable).toBe(\n        \"boolean\",\n      );\n      await expect(panel).toBeVisible();",
+      "review": "docs/testing/pr69-initialization-readiness/MAINTENANCE.md"
+    },
+    "integrationReview": "docs/testing/top-pr-green-20261103/INTEGRATION.md"
   },
   "fleet-cancellation.spec.ts": {
     "sha256": "c1b8522cb2546a298c0046b59df7b02f9ec3485c320f4b38d5f8a92406c629b1",

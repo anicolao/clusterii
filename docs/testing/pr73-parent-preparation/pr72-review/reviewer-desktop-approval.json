@@ -1,0 +1,72 @@
+{
+  "reviewer": "Codex supervisor",
+  "run": 40264675463,
+  "viewport": "desktop",
+  "decision": "approve regression references after individual visual inspection",
+  "images": [
+    {
+      "name": "023-save-private-browser-draft-1-nacre-envoy.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/023-save-private-browser-draft-1-nacre-envoy.png",
+      "sha256": "d884c9ee4d8a510d70001214ae4d747aacb850316c5e8aadd4b29b52367bc3b0",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/023-save-private-browser-draft-1-nacre-envoy.png"
+    },
+    {
+      "name": "024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "sha256": "3db97ad2e1136239547089c471739760844fc085865a08dd64e815194aea39b3",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/024-recover-draft-in-two-tabs-1-nacre-envoy.png"
+    },
+    {
+      "name": "024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "sha256": "3db97ad2e1136239547089c471739760844fc085865a08dd64e815194aea39b3",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "sha256": "096206ffc827a4dfa1547e328333466aaf46a86205cc71f5e629f662d002645b",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/025-preserve-conflicting-draft-1-nacre-envoy.png"
+    },
+    {
+      "name": "025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "sha256": "ffafa105f884200d06ebbdd0917262af652c961176bac25fd79a33ad0ead03fc",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "d0ec08bd7380facbb8629cc609261a0544c7fb797f23b4cdfda169ac4ab60c2b",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/026-choose-saved-draft-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "sha256": "1e0acae37a4e85d3e30eaa0b33bcf8891bdf4baf889afc3e7dac8342a87f2d93",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "name": "027-send-recovered-draft-once-2-outer-witness.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/027-send-recovered-draft-once-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/027-send-recovered-draft-once-2-outer-witness.png"
+    },
+    {
+      "name": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "archivePath": "test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "5d5a2708cf21160b1ded4669cb037664520afc76430d9488504eebfc5fa0287d",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr72-candidate-review/desktop/images/028-recover-cleared-draft-1-nacre-envoy-second-tab.png"
+    }
+  ],
+  "notes": "All nine inspected. Saved/recovered draft, both conflict choices, disabled send during conflict, saved choice, single sent message, outsider exclusion and cleared reload are legible and consistent. History clips at bounded scrolling edges; focal composer/actions intact. Existing participant grammar and cinematic concept composition gap remain; this is not full design-fidelity approval."
+}

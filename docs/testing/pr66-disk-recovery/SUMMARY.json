@@ -1,0 +1,44 @@
+{
+  "freeKiBBeforeAudit": 1822596,
+  "archives": [
+    {
+      "audit": "/private/tmp/cluster-pr54-credit-review/docs/testing/pr66-disk-recovery/cluster-pr54-fresh-review.json",
+      "archive": "/tmp/cluster-pr54-fresh-review/artifact.zip",
+      "bytes": 360837234,
+      "sha256": "2712f7e2dc682cd8cf1494c8e359cfe4c8b21e960af2c076ec944a48048eeefc",
+      "entries": 469,
+      "localOriginals": 469
+    },
+    {
+      "audit": "/private/tmp/cluster-pr54-credit-review/docs/testing/pr66-disk-recovery/cluster-pr59-linux-corrected.json",
+      "archive": "/tmp/cluster-pr59-linux-corrected/artifact.zip",
+      "bytes": 198088651,
+      "sha256": "e3e1f33f0aaf7cc1a76c1782a7c6507d53c183e8488c563cb2fda976d42b73cc",
+      "entries": 205,
+      "localOriginals": 205
+    },
+    {
+      "audit": "/private/tmp/cluster-pr54-credit-review/docs/testing/pr66-disk-recovery/cluster-pr60-linux-corrected.json",
+      "archive": "/tmp/cluster-pr60-linux-corrected/artifact.zip",
+      "bytes": 289629708,
+      "sha256": "8a7c11e562621046f8403e2c3a90084fe4112cb309e5789ccf9e543a50f3562a",
+      "entries": 285,
+      "localOriginals": 285
+    },
+    {
+      "audit": "/private/tmp/cluster-pr54-credit-review/docs/testing/pr66-disk-recovery/cluster-pr61-linux-corrected.json",
+      "archive": "/tmp/cluster-pr61-linux-corrected/artifact.zip",
+      "bytes": 194616824,
+      "sha256": "d763ab9818093b9cb4fcd61cde7a97f0126263f7d2e45c0e3f69994d7ba26791",
+      "entries": 253,
+      "localOriginals": 253
+    }
+  ],
+  "totalCandidateBytes": 1043172417,
+  "deleted": true,
+  "freeKiBImmediatelyBeforeRemoval": 1818956,
+  "removedFileBytes": 1043172417,
+  "freeKiBAfterRemoval": 2838540,
+  "observedFreeDeltaBytes": 1044054016,
+  "attribution": "Removed bytes are exact file sizes; observed filesystem free delta may include concurrent activity."
+}

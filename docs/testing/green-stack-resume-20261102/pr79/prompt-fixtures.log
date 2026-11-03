@@ -1,0 +1,33 @@
+✔ requires a staged prompt log, including on the initial commit (179.0075ms)
+✔ accepts a staged append and rejects an unstaged append (187.619417ms)
+✔ rejects rewritten or deleted historical prompts (180.507ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (423.977542ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (313.712917ms)
+✔ checks a PR against its base, including a base with no prompt log (217.603709ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (706.391709ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (232.987334ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (388.274ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (630.134959ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (667.608666ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (343.851334ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (450.606ms)
+✔ divergent prompt merge retains exact parent archive and canonical request order (3419.204459ms)
+✔ later stacked integration recognizes only a Git-verified inherited record separator (967.169125ms)
+✔ explicit structural separators retain exact request whitespace and reject undeclared changes (1594.100792ms)
+✔ reintegrating a parent retains its formerly final request already archived by child (1097.0285ms)
+✔ reintegrating a parent respects the child declared two-LF record separator (1119.84125ms)
+✔ post-merge appended prompt retains the exact copied final parent record in base checks (839.592208ms)
+✔ shared Git ancestor proves a final common request without inventing an archive (522.916333ms)
+✔ earlier append-only common history proves original shared final record (599.520083ms)
+✔ sibling integration recognizes only committed common-prefix append separators (807.851417ms)
+✔ archived final-record separator follows only proven later append transitions (1488.725292ms)
+✔ committed exact interleaving retains parent order (final append false) (1173.955ms)
+✔ committed exact interleaving retains parent order (final append true) (1160.3415ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19760.132334

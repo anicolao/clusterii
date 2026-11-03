@@ -1,0 +1,5 @@
+# Authorized reviewed PR66 publication
+
+Reviewer PR66 integration verified and publication authorized in main meta confirms50bfc72b: src identical reviewed172a6265; source/story/helpers/package unchanged from executed dc7e2a4e; all56Linux observation hashes approved; inherited056a2f85 references unchanged except approved phonechart005. Prior seven sharedScene cases pass and corrected complete phone case40216095266 passes8views. Preserve failed original run and all artifacts. This is representative regression evidence, not full suite/design/normal-motion/privacy/release acceptance.
+
+Normal fast-forward into existing feat/live-observation-stories only; no GitHub merge or PR67. Required workflows/thresholds unchanged. Existing Darwin observation files are original66 inherited material, not newly independently approved. All new Linux reference approvals are exact, source/renderer/dirty provenance retained. Current PR65 strict remains untouched. Actual active head, CI IDs and exact hosted verification recorded on ledger after publication without a report-only target push.

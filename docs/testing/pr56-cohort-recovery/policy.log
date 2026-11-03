@@ -1,0 +1,30 @@
+✔ admission fixture changes only designated domain time inputs (0.365792ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.272ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.208666ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.373125ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.240416ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.665125ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.340542ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.251958ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.351ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.251792ms)
+Previous story evidence preserved at /tmp/nix-shell.k7j6Js/cluster-cohort-test-UDmSpw/.story-cohorts-YAqKmD/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.k7j6Js/cluster-cohort-test-UDmSpw/.story-cohorts-YAqKmD/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (7.769417ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.389458ms)
+✔ interruption retains current artifacts and launches no successor (1.768667ms)
+✔ an artifact path collision fails rather than overwriting either result (2.963208ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.568375ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.821333ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.926166ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (9.676209ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.454875ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62.738042
+Illustrated-story policy passed; legacy migration gaps remain inventoried.

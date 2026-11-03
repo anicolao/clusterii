@@ -3,7 +3,10 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { readdirSync, readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
-import { baselinePath } from "../browser/story-helpers/baseline-path";
+import {
+  baselinePath,
+  baselineSnapshotName,
+} from "../browser/story-helpers/baseline-path";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 test("real TestInfo resolves both baseline layouts without changing reviewed artifacts", async ({}, info) => {
@@ -43,6 +46,23 @@ test("real TestInfo resolves both baseline layouts without changing reviewed art
   expect(feature).toBe(
     join(root, "tests/e2e/001-entry/screenshots", ...featureName),
   );
+  for (const [file, name, expected] of [
+    [
+      join(root, "tests/browser/local-settings.story.spec.ts"),
+      legacyName,
+      legacy,
+    ],
+    [join(root, "tests/e2e/001-entry/entry.spec.ts"), featureName, feature],
+  ] as const) {
+    expect(
+      info.snapshotPath(
+        ...baselineSnapshotName(
+          { file, snapshotPath: info.snapshotPath.bind(info) },
+          name,
+        ),
+      ),
+    ).toBe(expected);
+  }
   for (const path of [legacy, feature]) {
     expect(path).not.toMatch(/[{}]/);
     expect(readFileSync(path).length).toBeGreaterThan(0);

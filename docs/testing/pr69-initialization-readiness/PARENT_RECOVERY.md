@@ -1,0 +1,3 @@
+Isolated forward preparation combines published063f41a3 readiness repair and reviewed PR68fd041a6a (source122245b2). No active69 push or rerun while current jobs execute. PR68 strict40257151053 and PR70 strict40256911000 remain sole requests.
+
+Expected executable delta from063f41a3 is only the independently reviewed fleet-route-recovery accepted-while-offline step, exactsame asab826d91. Exactly four approved route images and four review.json metadata changes; all other baseline blobs unchanged. Production/shared/functions/helpers/package/workflows unchanged. Real readiness wait and exact-reversal policy proof retained. Both parent histories archived and canonical records preserved under unchanged checker. Publish/integrate forward at verified predecessor boundary.

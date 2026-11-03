@@ -1,0 +1,14 @@
+{
+  "approvedParent": "05d30b209ad0121bcc30df25a1d58f6e791f7d3e",
+  "original63Head": "9050d65ecd1589d44500690750a27a9d0821a42f",
+  "original63Base": "ff1d616183df97aaa4fcc71d2e5c59cb32444711",
+  "existingParentPNGCountUnchanged": 5150,
+  "original63CodeFilesRetainedExactly": [
+    "scripts/check-admission-clock.test.mjs",
+    "tests/browser/story-helpers/emulator-admission-clock-loader.mjs",
+    "tests/browser/story-helpers/text-layout.ts",
+    "tests/story-tools.test.ts",
+    "tests/browser/fleet-travel-catchup.story.spec.ts"
+  ],
+  "productionSharedFunctionsWorkflowsDependenciesNixCohortAndPromptCheckersUnchanged": true
+}

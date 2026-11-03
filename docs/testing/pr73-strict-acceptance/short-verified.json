@@ -1,0 +1,58 @@
+{
+  "artifact": {
+    "id": 12629763295,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYyOTc2MzI5NQ==",
+    "name": "replacement-strict-draft-short-4e2d6032e2a6bd34ca16dfceba2540a13fe90c7a-1",
+    "size_in_bytes": 12185905,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12629763295",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12629763295/zip",
+    "expired": false,
+    "digest": "sha256:55ff39855aaa447132eb5d7f92f46877d6f2fa8864a7a583b7f1519971932d41",
+    "created_at": "2026-10-26T05:38:15Z",
+    "updated_at": "2026-10-26T05:38:15Z",
+    "expires_at": "2026-11-25T05:38:14Z",
+    "workflow_run": {
+      "id": 40273989600,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr73-replacement-strict",
+      "head_sha": "4e2d6032e2a6bd34ca16dfceba2540a13fe90c7a"
+    }
+  },
+  "outcome": {
+    "family": "draft",
+    "viewport": "short",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "verify",
+    "views": 42
+  },
+  "binding": {
+    "requestId": "replacement-strict-20261026-01",
+    "sourceCommit": "f2dc91acf230e3f231f87a00deeff088d17a4051",
+    "executorCommit": "4e2d6032e2a6bd34ca16dfceba2540a13fe90c7a",
+    "case": "replacement-strict",
+    "mode": "verify",
+    "target": "3f1e89b8aec0a032a496df1ceccacf724a9ae084",
+    "runId": "40273989600",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "fc672f03dff1397f7f83e9c5cd872046949e1028",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "7fb4ce3afdc4743ea04df6cc5eca80407850f3cfaf867bf7d6249d409d07dc5c",
+        "views": 42
+      }
+    },
+    "requestSha256": "65dddf7ff975611fa46d3cbb285d7cdd59901c386807ff4bdedf929a5137a625"
+  },
+  "exactApprovedImages": 42,
+  "rendererExact": true,
+  "wholeArchiveShaVerified": true
+}

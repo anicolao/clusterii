@@ -1,0 +1,308 @@
+{
+  "artifact": {
+    "id": 12651846251,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY1MTg0NjI1MQ==",
+    "name": "construction-focus-7df29917a8156deff4f15b1abc0862132a89ce0e",
+    "size_in_bytes": 383781869,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12651846251",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12651846251/zip",
+    "expired": false,
+    "digest": "sha256:fa3dd4b971b9b71056c09378455016721433b9e6345e94fe1b8f22c8e7a69672",
+    "created_at": "2026-10-26T13:02:58Z",
+    "updated_at": "2026-10-26T13:02:58Z",
+    "expires_at": "2027-01-24T12:48:55Z",
+    "workflow_run": {
+      "id": 40325433132,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr79-construction-focus",
+      "head_sha": "7df29917a8156deff4f15b1abc0862132a89ce0e"
+    }
+  },
+  "downloadedRangeBytes": 45389006,
+  "etag": "\"0x8DF3361753A24DE\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "4aa34028c69aa69c21ecc1e5c247ba7c1bebda5147dc09a44873bda63fcf0f76",
+      "bytes": 1220595,
+      "crc32": "96701dc1"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-1-builder-envoy.png",
+      "sha256": "d267f27c4056210162c563ecf43d4b32b44a25921d721397dda6fa5f24cf1467",
+      "bytes": 931617,
+      "crc32": "c725282a"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/016-reserve-build-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-1-builder-envoy.png",
+      "sha256": "f997bc568f5b395f1ea39b9ae9bf094a8ae4e16024688b29ac775b41644bf312",
+      "bytes": 1018275,
+      "crc32": "f4df2757"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/017-reload-reservation-2-independent-builder.png",
+      "sha256": "624ea67a9007f9ab3e218bf266183ab65eba21b49653d3a283f758c5ad5e2181",
+      "bytes": 1218574,
+      "crc32": "f40404ea"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/019-completed-build-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/019-completed-build-1-builder-envoy.png",
+      "sha256": "b6c419dd39b225c83e7d2c076c3153f49c8ad145ded9b5ab1505b248af5f9b95",
+      "bytes": 1014934,
+      "crc32": "72d06d7c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/019-completed-build-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/019-completed-build-2-independent-builder.png",
+      "sha256": "fdebb4bc48554b8732f793648ceae8e459963dd301aeb01e6e384ce6c21ad871",
+      "bytes": 1218924,
+      "crc32": "7ac2aadf"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "f79590f366d17b15a149aa3fc0b75b123205f152b748f2d3b3c12bf10ca9ffdd",
+      "bytes": 1047777,
+      "crc32": "321cbf90"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/020-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "fdebb4bc48554b8732f793648ceae8e459963dd301aeb01e6e384ce6c21ad871",
+      "bytes": 1218924,
+      "crc32": "7ac2aadf"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-1-builder-envoy.png",
+      "sha256": "f0b4d722dd5ae29e75c4cd3a386fd7e648589625dbefd525c5110b9eac90f1d1",
+      "bytes": 1042611,
+      "crc32": "c53d4640"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/021-cancel-base-2-independent-builder.png",
+      "sha256": "fdebb4bc48554b8732f793648ceae8e459963dd301aeb01e6e384ce6c21ad871",
+      "bytes": 1218924,
+      "crc32": "7ac2aadf"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-1-builder-envoy.png",
+      "sha256": "62123bca9fe8dc350358dbeb707fa57fa3e5118910c5bc2a08ce4d34b269b711",
+      "bytes": 963775,
+      "crc32": "c9e95927"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/023-cancelled-base-2-independent-builder.png",
+      "sha256": "db0cbff7f523762aac44ec66007cc1756d9cb340a8dedb498ed98563968762f0",
+      "bytes": 1218492,
+      "crc32": "0613b452"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "b02a0a088ab187af787a72e1e06338fea6560ff6e41e288f7f9a74074929590c",
+      "bytes": 1015809,
+      "crc32": "80b5a556"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/024-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "db0cbff7f523762aac44ec66007cc1756d9cb340a8dedb498ed98563968762f0",
+      "bytes": 1218492,
+      "crc32": "0613b452"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-1-builder-envoy.png",
+      "sha256": "201bcdc29a46fe44d6be2d1b9fd67fba2cf15bc9fba83595aa8b356cb4572ed3",
+      "bytes": 1131374,
+      "crc32": "d333d631"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-ordinary/desktop/linux-arm64/025-keyboard-return-2-independent-builder.png",
+      "sha256": "db0cbff7f523762aac44ec66007cc1756d9cb340a8dedb498ed98563968762f0",
+      "bytes": 1218492,
+      "crc32": "0613b452"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "ea64542db1ec195e6c23d870049eaa3912fef6623749b6fd167ae918f2fd5230",
+      "bytes": 1220583,
+      "crc32": "1937df9b"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "765fe482e06d94dc3ccb7ad12f551631824ae881f8e890af0b9c35b16124a855",
+      "bytes": 1218551,
+      "crc32": "a0ac72f1"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "sha256": "703a343b1aa260ec075742989ba3f5a9903ee071076e950ee7b3c6588b15c0e2",
+      "bytes": 1140957,
+      "crc32": "fb2b2156"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-2-independent-builder.png",
+      "sha256": "765fe482e06d94dc3ccb7ad12f551631824ae881f8e890af0b9c35b16124a855",
+      "bytes": 1218551,
+      "crc32": "a0ac72f1"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "7456acbfb5f7b1f73789bb1033641b1f0bff294a3fceacaad244b911c51188f7",
+      "bytes": 1141027,
+      "crc32": "44eee88b"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "sha256": "765fe482e06d94dc3ccb7ad12f551631824ae881f8e890af0b9c35b16124a855",
+      "bytes": 1218551,
+      "crc32": "a0ac72f1"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "sha256": "d1931b4597ed3742954a06a79b45c99b167fee7f38068729e73fd63d66dba5b3",
+      "bytes": 931603,
+      "crc32": "558ac634"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "sha256": "765fe482e06d94dc3ccb7ad12f551631824ae881f8e890af0b9c35b16124a855",
+      "bytes": 1218551,
+      "crc32": "a0ac72f1"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "sha256": "2b9f13068005bbfdb738ba258b961c7e4ea8c84ac8c75d69307b65e134b1609f",
+      "bytes": 1018265,
+      "crc32": "63070e1f"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "sha256": "765fe482e06d94dc3ccb7ad12f551631824ae881f8e890af0b9c35b16124a855",
+      "bytes": 1218551,
+      "crc32": "a0ac72f1"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "sha256": "c54caab0b914d7f75e2c791f27b44d88db25dd6eda4dbf2bf622847c5a6cfb5c",
+      "bytes": 1014912,
+      "crc32": "3e8da561"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-2-independent-builder.png",
+      "sha256": "e1de8087a23f181664ba1c803afb994a13c417bfcf91dd6ed86cd77de02ca613",
+      "bytes": 1218902,
+      "crc32": "b0d9944a"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "a4a2efcebbd9140cd80c14d27290f6675f1dfbc38a16bf81ac0b4d2a9b68d6b4",
+      "bytes": 1047773,
+      "crc32": "3cc38cec"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "e1de8087a23f181664ba1c803afb994a13c417bfcf91dd6ed86cd77de02ca613",
+      "bytes": 1218902,
+      "crc32": "b0d9944a"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "sha256": "b57dd3782eb610e53cb48c3e8d83e8002a720484fdb9b37bfe72cc01fd1431ee",
+      "bytes": 1042602,
+      "crc32": "4a81a88c"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "sha256": "e1de8087a23f181664ba1c803afb994a13c417bfcf91dd6ed86cd77de02ca613",
+      "bytes": 1218902,
+      "crc32": "b0d9944a"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "sha256": "92336cbea0739d36c3ac0d76dfbe8d1e2ef4dba0612a2f7b49f35b6951bc0783",
+      "bytes": 963760,
+      "crc32": "6d322bcb"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "sha256": "7d775fceebcf441ae0ff05c056697d0e96dbe6419f103447fa2c0251b3d88a77",
+      "bytes": 1218475,
+      "crc32": "3c9d1982"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "36c258917a8596a549e346cc5497986206f05e14acbdc3bae738543997164ae7",
+      "bytes": 1015788,
+      "crc32": "a9fcbe62"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "7d775fceebcf441ae0ff05c056697d0e96dbe6419f103447fa2c0251b3d88a77",
+      "bytes": 1218475,
+      "crc32": "3c9d1982"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "sha256": "6bf2810604ed5d0b042d894ad5d1e51b7bf4fa6494db569ac9f1598573fb900c",
+      "bytes": 1131353,
+      "crc32": "afa8d919"
+    },
+    {
+      "path": "/tmp/cluster-pr79-linux-desktop-states/test-results/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "entry": "test-results/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "sha256": "7d775fceebcf441ae0ff05c056697d0e96dbe6419f103447fa2c0251b3d88a77",
+      "bytes": 1218475,
+      "crc32": "3c9d1982"
+    }
+  ]
+}

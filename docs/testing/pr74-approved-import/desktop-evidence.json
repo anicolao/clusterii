@@ -1,0 +1,437 @@
+{
+  "executor": {
+    "requestId": "acknowledgement-candidates-20261026-01",
+    "sourceCommit": "c46e52c43ed140c682b6f37eb9def5e06ac5e683",
+    "executorCommit": "9d322542fe510d11b86bd21759260840a0f825ea",
+    "case": "acknowledgement-candidates",
+    "mode": "generate",
+    "target": "afb3fdbf091998c2a72fc2c91f4e97e099733e93",
+    "runId": "40276175111",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "fc672f03dff1397f7f83e9c5cd872046949e1028",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "7c5e8841ba05497ad1a33c5f3b5f1a1647978b4be0b6eedd95b70e172a39caf9",
+        "views": 50
+      }
+    },
+    "requestSha256": "c7c35b771cb5cb8333008c27828c83a8c212edb20a1b8bc1a8579dfa7a8a0c4c"
+  },
+  "outcome": {
+    "family": "draft",
+    "viewport": "desktop",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "generate",
+    "views": 50
+  },
+  "images": [
+    {
+      "image": "010-private-room-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "sha256": "34bac591cbcb8ea306390aa517a3b84989bb1354cea4cce16ff4e09ebcbc0731",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Create a private room while the recipient and outsider inspect their own empty directories."
+    },
+    {
+      "image": "010-private-room-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/010-private-room-2-dawn-listener.png",
+      "sha256": "3c22330170ccbb2e8b68b43527cfc49b9307f2436b78eddffe91f239ad43b387",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Create a private room while the recipient and outsider inspect their own empty directories."
+    },
+    {
+      "image": "010-private-room-3-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/010-private-room-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Create a private room while the recipient and outsider inspect their own empty directories."
+    },
+    {
+      "image": "011-earlier-message-1-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/011-earlier-message-1-1-nacre-envoy.png",
+      "sha256": "f8f539e1c5e16dd70883c7c18bddd02bed5f91755d8062b73267458a6b288050",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Send a reserve-route message that stays private."
+    },
+    {
+      "image": "012-earlier-message-2-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/012-earlier-message-2-1-nacre-envoy.png",
+      "sha256": "0de9edebba40ae4ec8610090efba56c0fc4ceb4cad39aa85a157f52d70d99e5a",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Send the rendezvous message that will be selected."
+    },
+    {
+      "image": "013-choose-history-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/013-choose-history-1-nacre-envoy.png",
+      "sha256": "8aa51643ff160f8e80f160d62e07f49a2e207ac3a525a6e58489b8f2bb4ff4a3",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Select Dawn listener and exactly one earlier message; keep the reserve route unselected."
+    },
+    {
+      "image": "014-invite-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/014-invite-1-nacre-envoy.png",
+      "sha256": "d8090607c340e53f2b71edbb089da99e0b2b52738d076e2d7a7a426a2a0e9600",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent."
+    },
+    {
+      "image": "014-invite-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/014-invite-2-dawn-listener.png",
+      "sha256": "8d7896e3f7f744ca26b8f8217ad4c2d3a96b36ae48cfe5219c4a8a561a5e0c37",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent."
+    },
+    {
+      "image": "014-invite-3-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/014-invite-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Send the selected-history invitation; the recipient sees scope and provenance but no message body before consent."
+    },
+    {
+      "image": "015-consent-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/015-consent-1-nacre-envoy.png",
+      "sha256": "307c13ac86ed6107543be744bf305961834a414b8813ef2a3f337d6ae649a051",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance."
+    },
+    {
+      "image": "015-consent-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/015-consent-2-dawn-listener.png",
+      "sha256": "bf6065277076bdbc8397723d838f6b9719927578b9251f9b94765b800794234f",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance."
+    },
+    {
+      "image": "015-consent-3-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/015-consent-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Accept the invitation using the keyboard. Only the selected earlier message becomes readable, with its sharing provenance."
+    },
+    {
+      "image": "016-recover-consent-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/016-recover-consent-1-dawn-listener.png",
+      "sha256": "bc11592f2e38e401c8c6af57aeb479f1939c985d9d0c956f1239b5082ef176fe",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload and reopen the accepted room without resending acceptance or expanding its history grant."
+    },
+    {
+      "image": "016-recover-consent-2-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/016-recover-consent-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload and reopen the accepted room without resending acceptance or expanding its history grant."
+    },
+    {
+      "image": "017-return-to-chart-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/017-return-to-chart-1-dawn-listener.png",
+      "sha256": "aea68b064cd3d292301a930262a298fb9fa1c79a71469a921237443b9a351195",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Escape closes the conversation and restores keyboard focus to its opening control."
+    },
+    {
+      "image": "018-review-removal-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/018-review-removal-1-nacre-envoy.png",
+      "sha256": "6757f842f38011c81dd4d20e0a3f0fa7372b8ffdde3df8483792437b8aa5a6fa",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "The creator reviews removal of the consenting listener before committing it."
+    },
+    {
+      "image": "019-remove-current-access-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/019-remove-current-access-1-nacre-envoy.png",
+      "sha256": "4579c6d5ac5b647bad21d6d03a0c441511be3b1425689bd07b95d2dd3f973c63",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends."
+    },
+    {
+      "image": "019-remove-current-access-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/019-remove-current-access-2-dawn-listener.png",
+      "sha256": "4f2c0ceb59c1f7ccc30194ed3590d415547b4427d819e955824bfd122e74e45b",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends."
+    },
+    {
+      "image": "019-remove-current-access-3-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/019-remove-current-access-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends."
+    },
+    {
+      "image": "020-message-after-removal-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/020-message-after-removal-1-nacre-envoy.png",
+      "sha256": "1923d094f9b2b69ef406c8fa2cfbb5d1184500597e6c85a68adec988a1ba00e9",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "The creator sends a new private message after removal; neither the former member nor outsider receives it."
+    },
+    {
+      "image": "020-message-after-removal-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/020-message-after-removal-2-dawn-listener.png",
+      "sha256": "4f2c0ceb59c1f7ccc30194ed3590d415547b4427d819e955824bfd122e74e45b",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "The creator sends a new private message after removal; neither the former member nor outsider receives it."
+    },
+    {
+      "image": "020-message-after-removal-3-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/020-message-after-removal-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "The creator sends a new private message after removal; neither the former member nor outsider receives it."
+    },
+    {
+      "image": "021-recover-retained-history-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/021-recover-retained-history-1-dawn-listener.png",
+      "sha256": "4fac41e8647712161b4e0add962916abaafb0380e1be8c924f673a68fad8a97a",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible."
+    },
+    {
+      "image": "021-recover-retained-history-2-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/021-recover-retained-history-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible."
+    },
+    {
+      "image": "022-leave-retained-history-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/022-leave-retained-history-1-dawn-listener.png",
+      "sha256": "9297101c3a6c73b1a13a3eac7381b29215a007aa7f9ae705253e8b4f6b77b089",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Escape closes retained history and restores focus to History on the galaxy."
+    },
+    {
+      "image": "023-save-private-browser-draft-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/023-save-private-browser-draft-1-nacre-envoy.png",
+      "sha256": "d884c9ee4d8a510d70001214ae4d747aacb850316c5e8aadd4b29b52367bc3b0",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Write a private reply and wait for this browser's durable draft acknowledgement without sending it."
+    },
+    {
+      "image": "024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "sha256": "3db97ad2e1136239547089c471739760844fc085865a08dd64e815194aea39b3",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser."
+    },
+    {
+      "image": "024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "sha256": "3db97ad2e1136239547089c471739760844fc085865a08dd64e815194aea39b3",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload the creator's session and open a second authenticated tab. Both recover the same unsent reply from this browser."
+    },
+    {
+      "image": "025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "sha256": "096206ffc827a4dfa1547e328333466aaf46a86205cc71f5e629f662d002645b",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved."
+    },
+    {
+      "image": "025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "sha256": "ffafa105f884200d06ebbdd0917262af652c961176bac25fd79a33ad0ead03fc",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Save a new reply in the first tab, then edit the second tab. The conflict preserves the second tab's text and blocks sending until resolved."
+    },
+    {
+      "image": "026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "d0ec08bd7380facbb8629cc609261a0544c7fb797f23b4cdfda169ac4ab60c2b",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Use the keyboard to choose the first tab's saved reply explicitly. No message is sent by resolving the conflict."
+    },
+    {
+      "image": "027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "sha256": "1e0acae37a4e85d3e30eaa0b33bcf8891bdf4baf889afc3e7dac8342a87f2d93",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing."
+    },
+    {
+      "image": "027-send-recovered-draft-once-2-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/027-send-recovered-draft-once-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Send the explicitly chosen reply. Only the creator's current membership receives it; former members and outsiders receive nothing."
+    },
+    {
+      "image": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "5d5a2708cf21160b1ded4669cb037664520afc76430d9488504eebfc5fa0287d",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload the sending tab. The sent reply remains in authorized history, and its saved draft stays cleared without a duplicate send."
+    },
+    {
+      "image": "029-prepare-replacement-choice-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/029-prepare-replacement-choice-1-nacre-envoy.png",
+      "sha256": "1eacb2512a0d08b9636961b9bd2167f331d1e15c31a0e25acd56a86b7b7c1f2e",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently."
+    },
+    {
+      "image": "029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+      "sha256": "545e2f6745f03fefc52e376440ee62a07177111a9e7c11df523117cfd3dc8c81",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload the first tab and save a new unsent proposal. Reload the second tab to recover the same browser draft before editing independently."
+    },
+    {
+      "image": "030-review-competing-replacement-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/030-review-competing-replacement-1-nacre-envoy.png",
+      "sha256": "41de2a3316c6f882acdd43a70cd7a567dead3ccc460e472143fd8f5aee0009d7",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain."
+    },
+    {
+      "image": "030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+      "sha256": "58b01deb81965ad31b5574c4223552e5ba051256200eb024dc7a215bec2d096f",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Save a northern rendezvous in the first tab, then propose a southern rendezvous in the second. Keep both texts available while choosing which draft to retain."
+    },
+    {
+      "image": "031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+      "sha256": "dad8002bb04d8be6b26cf5db887850cfb4439eb590b25d265ea265c3e3eef53e",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Choose Replace saved draft with my text using the keyboard. This explicit choice saves the southern proposal without sending it."
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/032-recover-chosen-local-proposal-1-nacre-envoy.png",
+      "sha256": "dad8002bb04d8be6b26cf5db887850cfb4439eb590b25d265ea265c3e3eef53e",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text."
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+      "sha256": "dad8002bb04d8be6b26cf5db887850cfb4439eb590b25d265ea265c3e3eef53e",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text."
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/032-recover-chosen-local-proposal-3-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "inherited",
+      "viewport": "desktop",
+      "step": "Reload both tabs. Each recovers the explicitly chosen southern proposal, still unsent. Other commanders receive neither discarded nor chosen text."
+    },
+    {
+      "image": "034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+      "sha256": "bb9c2de17e2fad27525945849311d0663e346ede948503f83fc860154974e750",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message."
+    },
+    {
+      "image": "034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Send the saved southern proposal by keyboard. The interrupted connection leaves it awaiting acknowledgement, not presented as a sent message."
+    },
+    {
+      "image": "035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+      "sha256": "0a30b01ac4bf4b8b878354aa84cc6badf088cb91e7383c0ec6abf6c5a2d11d2f",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Try sending from the other tab. The shared durable order prevents a second logical send and offers recovery of the unfinished order."
+    },
+    {
+      "image": "036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+      "sha256": "f84f7adc9da0b43ee46ff0fd0cdc5ba80f3bc9fc0b38c3e76f89082d9adc510d",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Reload the sending tab. The durable command restores the matching conversation and original submitted text, then offers retry when acknowledgement remains unavailable."
+    },
+    {
+      "image": "037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+      "sha256": "fc9842061dd1ae7494c7396e6a15908c5c96582f9d1162161cdcbf6d0b091ddc",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Retry the original order with Enter. Retained transport frames keep the same command path and encrypted payload; the proposal remains pending."
+    },
+    {
+      "image": "039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+      "sha256": "2567b0244b04c9c7b00b4b2e128b12c5e6e2bcea43a72e3202981a508937a5c9",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents."
+    },
+    {
+      "image": "039-observe-retried-message-acceptance-2-outer-witness.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/039-observe-retried-message-acceptance-2-outer-witness.png",
+      "sha256": "8e85f4a41181ce6cf814f590b0840f8d21012205f5d824e8ca7ad3ce2268be66",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Read the accepted message after delivery returns. The original send clears its composer exactly once; other commanders receive no private contents."
+    },
+    {
+      "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr74-candidate-review/desktop/test-results/stories/009-selected-history/stories/selected-history-consent/desktop/linux-arm64/040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+      "sha256": "b5fe5f25e08af9e56f024dcaaf703c7b762d56285a287a10330f635543e83b68",
+      "comparison": "new",
+      "viewport": "desktop",
+      "step": "Reload after acceptance. The empty composer and one authorized message survive; the durable submitted order has been cleared."
+    }
+  ]
+}

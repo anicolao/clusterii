@@ -1,0 +1,92 @@
+[
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/021-cancel-base-2-independent-builder.png",
+      "blob": "072cf8f6bb9a877241124124c266546825929659",
+      "sha256": "2535f616ecd46c63dd904772ac24da7ae2e8827881736f7bb990e08d6d73ea85",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/016-cancel-base-2-independent-builder.png",
+        "blob": "7eed41a60a7a81948f56a4ecf8f59aa125a38a38",
+        "sha256": "0e9ffa2d94fce43e44dd3dbd89f949220a9d183b147ffff997b56d56de7bee73"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-7eed41a60a7a81948f56a4ecf8f59aa125a38a38.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/019-completed-build-2-independent-builder.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/020-reserve-cancellable-base-1-builder-envoy.png",
+      "blob": "9a33df2a62d69b0ab08a1b6625c4b8f90af81c71",
+      "sha256": "9dc01bbb273f373f1ef1428b1e86983b9360a52b467749e652a16039cac3f14c",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/015-reserve-cancellable-base-1-builder-envoy.png",
+        "blob": "0b33a13a3c71e1e909fe2b0ed4a2f24582ede2a9",
+        "sha256": "3cfd3886239f830a554beb773df594b903d82a939e0b1aded017d90c02ab4a57"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-0b33a13a3c71e1e909fe2b0ed4a2f24582ede2a9.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/020-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/021-cancel-base-1-builder-envoy.png",
+      "blob": "ad8946b75050df512c0e4962c8a6e03e0097534d",
+      "sha256": "5524b0aeb81aca78c8df62b5c20b28851ee42ba4a775eaeb407d61d681709c3c",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/016-cancel-base-1-builder-envoy.png",
+        "blob": "5527e2f6f9d6f0bb1c919ac4e6550e49d3e815fc",
+        "sha256": "2a8545fb57a26bfd0b604d15e31afd11f8d8f491b4461ceec219cc2522aa29e8"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-5527e2f6f9d6f0bb1c919ac4e6550e49d3e815fc.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/021-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/023-cancelled-base-1-builder-envoy.png",
+      "blob": "0c55366826079015144895bf3c0c6c6304a43654",
+      "sha256": "26ca23edde2996aa918ee43a7a938ab2f32912949f3b23a48872861507f418d7",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/018-cancelled-base-1-builder-envoy.png",
+        "blob": "b8b1bd1919e59237fff50e4fd11197b80a5f002f",
+        "sha256": "606c39fc5aca75a3cb421ce5c15cff09a3f7916b690c8cfd4add48d39b42c557"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-b8b1bd1919e59237fff50e4fd11197b80a5f002f.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/023-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/025-keyboard-return-2-independent-builder.png",
+      "blob": "3e002efb19a630aa41c184610a3fa0ed6d53f169",
+      "sha256": "04dce59f35b9d92ba3416b14cfca9c847d10d325f6be1930f4664c2486362088",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/020-keyboard-return-2-independent-builder.png",
+        "blob": "0448cad381c379488e3f75729e3f41f4c6d3c9de",
+        "sha256": "436e9c5622cbd1152ee7ae12bede255d7c5041851a0d4c4a0de3242f13d00025"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-0448cad381c379488e3f75729e3f41f4c6d3c9de.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/023-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/024-recover-settled-outcome-1-builder-envoy.png",
+      "blob": "078efc30c9e05cd55e6696b86cfd5d094a5c12ed",
+      "sha256": "9f0a089e5502bd2749d8ceea1e2b7e9024628856e64ca6aea8f9c011244830d4",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/019-recover-settled-outcome-1-builder-envoy.png",
+        "blob": "3d8885ee191870eaf661138ba1e28e38af477f26",
+        "sha256": "487d35432896f00504f8e9235c6ed5944c2a710cf2f2bf53f5152b182df0168c"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-3d8885ee191870eaf661138ba1e28e38af477f26.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/024-recover-settled-outcome-1-builder-envoy.png"
+  }
+]

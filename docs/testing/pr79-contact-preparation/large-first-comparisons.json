@@ -1,0 +1,47 @@
+[
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/010-inspect-development-1-builder-envoy.png",
+      "blob": "c34e6b284b73cbc01fd1ed671551ffac8f872ef9",
+      "sha256": "6aecffa3cb1d8e380ac92546fb674cd4a6ec0976563a068e9b676f6266ad92a8",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/010-inspect-development-1-builder-envoy.png",
+        "blob": "e39d158297f22343d4b3e77691461985e6384897",
+        "sha256": "b6a71004bbebb7d055f94442f703f31b25ba8f3e93655d647514ccafa55d9c71"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-e39d158297f22343d4b3e77691461985e6384897.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/019-completed-build-1-builder-envoy.png",
+      "blob": "42faf6f952a56dc2f2fc4efd18a2aa7865eabf5d",
+      "sha256": "01d26b5f1cb4a55813b52af1dbde7520b88bed4b54563bd5ce172e15c1bb24eb",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-ordinary/large/darwin-arm64/014-completed-build-1-builder-envoy.png",
+        "blob": "b2541447c399823b8572ea4ef8393bdbb8e791be",
+        "sha256": "26732ecba8b0d3fce49cbcb2eb3aedb107903d98c39cffd8d632d9d54dd85564"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-b2541447c399823b8572ea4ef8393bdbb8e791be.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-ordinary/large/019-completed-build-1-builder-envoy.png"
+  },
+  {
+    "row": {
+      "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/013-recover-pending-1-builder-envoy.png",
+      "blob": "7a16b039aa24187b166be046ede07de9559d31a8",
+      "sha256": "685de51fc6106ea1d2bcbd7adb0d106d2404b5036e2952dd32dccdd395ac77ac",
+      "previous": {
+        "path": "tests/browser/story-baselines/live-construction-recovery/large/darwin-arm64/013-recover-pending-1-builder-envoy.png",
+        "blob": "7fbbd565375f35467703eee4184460347852f431",
+        "sha256": "d89f9383bf1da7111d306ca1e7d7dd9a2a1a441e912a768846b0e8bae7722745"
+      },
+      "status": "changed"
+    },
+    "parentLocal": "/tmp/cluster-pr79-help-review/parent-7fbbd565375f35467703eee4184460347852f431.png",
+    "headLocal": "/tmp/cluster-pr79-review/changed/live-construction-recovery/large/013-recover-pending-1-builder-envoy.png"
+  }
+]

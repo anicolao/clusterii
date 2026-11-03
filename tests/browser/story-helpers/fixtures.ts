@@ -1,12 +1,2 @@
-import { test as base } from "@playwright/test";
-import { finishStory } from "./test-step-helper";
-export { expect } from "@playwright/test";
-export const test = base.extend<{ illustratedStory: void }>({
-  illustratedStory: [
-    async ({}, use, info) => {
-      await use();
-      await finishStory(info);
-    },
-    { auto: true },
-  ],
-});
+// Compatibility import for unmigrated stories; implementation lives in e2e/helpers.
+export * from "../../e2e/helpers/fixtures";

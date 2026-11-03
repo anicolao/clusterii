@@ -1,0 +1,37 @@
+{
+  "source": {
+    "commit": "0bb2377bdfd4f82e188403be119da733abfb4028",
+    "dirty": true,
+    "spec": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts",
+    "specSha256": "3323d574aed7a700daf56103c20b49905886a715be62ff45991d3269ca58d0c8"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "approval": "phone-approval.json",
+  "newImages": 12,
+  "inheritedExact": 28
+}

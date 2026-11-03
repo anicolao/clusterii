@@ -49,6 +49,7 @@
   } from "$lib/campaign-history";
   import { Canvas } from "@threlte/core";
   import Scene from "./Scene.svelte";
+  import { unobscuredChartCenter, type ChartCenter } from "$lib/galaxy-camera";
   import type { CampaignView } from "@shared/campaign";
   import ChartControls from "./ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
@@ -802,7 +803,14 @@
   let roster = $state(false);
   let selected = $state("");
   let stellarClass = $state<StarClass | "all">("all");
-  let cameraRequest = $state({ action: "overview", starId: "", sequence: 0 });
+  let chartElement = $state<HTMLDivElement>();
+  let inspectorElement = $state<HTMLElement>();
+  let cameraRequest = $state<{
+    action: string;
+    starId: string;
+    sequence: number;
+    focusCenter?: ChartCenter;
+  }>({ action: "overview", starId: "", sequence: 0 });
   let framedCampaign = "";
   $effect(() => {
     if (view.phase !== "active" || !view.own.home || framedCampaign === view.id)
@@ -817,16 +825,25 @@
         };
       });
   });
-  function move(
+  async function move(
     action: "selected" | "home" | "overview" | "in" | "out" | "left" | "right",
   ) {
     if (action === "home" && view.own.home) selected = view.own.home;
+    // Measure after selection and list closure, when the real inspector has settled.
+    if (action === "home") await closeList();
     cameraRequest = {
       action,
       starId: action === "home" ? (view.own.home ?? "") : star.id,
       sequence: cameraRequest.sequence + 1,
+      focusCenter:
+        action === "home" && chartElement && inspectorElement
+          ? unobscuredChartCenter(
+              chartElement.getBoundingClientRect(),
+              inspectorElement.getBoundingClientRect(),
+            )
+          : undefined,
     };
-    void closeList();
+    if (action !== "home") void closeList();
   }
   const filtered = $derived(
     view.stars.filter(
@@ -1152,6 +1169,7 @@
       </div>{/if}
     <div
       class="chart"
+      bind:this={chartElement}
       inert={more ||
         roster ||
         listing ||
@@ -1205,6 +1223,7 @@
       </div>
     </div>
     <aside
+      bind:this={inspectorElement}
       inert={more ||
         roster ||
         listing ||
@@ -1749,6 +1768,19 @@
     z-index: 6;
     background: #06121a;
     overflow: hidden;
+  }
+  .construction-panel[aria-label="System construction panel"]:focus-visible {
+    outline: 2px solid #91dcec;
+    outline-offset: -2px;
+  }
+  .construction-panel[aria-label="System construction panel"]:focus-visible::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 2px solid #91dcec;
+    pointer-events: none;
   }
   @media (min-width: 2500px) {
     .construction-panel {

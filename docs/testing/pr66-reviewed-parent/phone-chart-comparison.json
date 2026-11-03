@@ -1,0 +1,23 @@
+{
+  "rawRGBAChangedPixels": 1068,
+  "bounds": {
+    "minX": 318,
+    "minY": 404,
+    "maxX": 392,
+    "maxY": 420
+  },
+  "files": {
+    "expected": {
+      "path": "/tmp/cluster-pr66-scene-phone-review/expected.png",
+      "sha256": "c93f0b05691e8975456c0ed3511e1dcdf1788b82123bdeb54763e6087a21a0b0"
+    },
+    "actual": {
+      "path": "/tmp/cluster-pr66-scene-phone-review/originals/test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy-actual.png",
+      "sha256": "4986dc2113d0f63afe2d9f1523cc26583a7451a3190dbf4e6a3d9f753594322c"
+    },
+    "diff": {
+      "path": "/tmp/cluster-pr66-scene-phone-review/originals/test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy-diff.png",
+      "sha256": "9be80c48c1e13a5cc16734260ed645eb11eb866b66c9acd474c2ef658936376a"
+    }
+  }
+}

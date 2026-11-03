@@ -1,0 +1,253 @@
+diff --git a/tests/browser/selected-history.story.spec.ts b/tests/browser/selected-history.story.spec.ts
+index 86eac77e..28902099 100644
+--- a/tests/browser/selected-history.story.spec.ts
++++ b/tests/browser/selected-history.story.spec.ts
+@@ -1,5 +1,5 @@
+ import { createRequire } from "node:module";
+-import type { Page, BrowserContext } from "@playwright/test";
++import type { Page, BrowserContext, Locator } from "@playwright/test";
+ import { test, expect } from "./story-helpers/fixtures";
+ import { TestStepHelper } from "./story-helpers/test-step-helper";
+ import { login, grantDeveloper } from "./helpers";
+@@ -28,6 +28,17 @@ const chooseRoom = async (page: Page) => {
+     .getByRole("button", { name: new RegExp(`^${roomTitle}`) })
+     .click();
+ };
++async function readConversation(page: Page, target: Locator) {
++  await expect(panel(page).locator("footer")).toBeInViewport({ ratio: 1 });
++  await target.evaluate((el) => el.scrollIntoView({ block: "center" }));
++  await expect(target).toBeInViewport({ ratio: 1 });
++  const box = await target.boundingBox(),
++    region = await panel(page)
++      .getByRole("region", { name: "Conversation details" })
++      .boundingBox();
++  expect(box!.y).toBeGreaterThanOrEqual(region!.y);
++  expect(box!.y + box!.height).toBeLessThanOrEqual(region!.y + region!.height);
++}
+ const aliases = [
+   "Nacre envoy",
+   "Dawn listener",
+@@ -480,6 +491,223 @@ test("Selected history reaches only a consenting commander and survives reload",
+       ],
+       views: [view(1)],
+     });
++
++    const revokedRevision = (await canonical()).revision;
++    await story.step("review-removal", {
++      actor: aliases[0],
++      description:
++        "The creator reviews removal of the consenting listener before committing it.",
++      action: async () => {
++        const participants = panel(owner).getByRole("button", {
++          name: "Participants",
++          exact: true,
++        });
++        if ((await participants.getAttribute("aria-expanded")) !== "true")
++          await participants.click();
++        await expect(participants).toHaveAttribute("aria-expanded", "true");
++        await button(owner, `Remove ${aliases[1]}`).click();
++      },
++      acknowledgement: {
++        spec: "The removal confirmation is available without changing membership.",
++        check: async () => {
++          await expect(button(owner, "Confirm remove")).toBeVisible();
++          await readConversation(
++            owner,
++            panel(owner).getByRole("region", {
++              name: "Review conversation access",
++            }),
++          );
++          expect((await canonical()).revision).toBe(revokedRevision);
++        },
++      },
++      verifications: [noErrors, outsiderPrivate],
++      views: [view(0)],
++    });
++    await story.step("remove-current-access", {
++      actor: aliases[0],
++      description:
++        "Confirm removal with the keyboard. The listener retains already shared history while current conversation access ends.",
++      action: async () => {
++        await open(guest);
++        await chooseRoom(guest);
++        await button(owner, "Confirm remove").focus();
++        await owner.keyboard.press("Enter");
++      },
++      acknowledgement: {
++        spec: "The listener sees authoritative access-ended feedback and cannot compose a new message.",
++        check: async () => {
++          await expect(panel(guest)).toContainText(
++            "Your current access to this conversation has ended",
++          );
++          await expect(
++            panel(guest).getByLabel("Message", { exact: true }),
++          ).toHaveCount(0);
++        },
++      },
++      verifications: [
++        noErrors,
++        outsiderPrivate,
++        {
++          spec: "Exactly one revision removes the listener without expanding previous history.",
++          check: async () => {
++            const state = await canonical();
++            expect(state.revision).toBe(revokedRevision + 1);
++            const room = Object.values(state.diplomacy.rooms)[0] as {
++              members: string[];
++            };
++            expect(room.members).not.toContain(state.seats[1].uid);
++            await expect(panel(guest)).toContainText(
++              "Previously received records remain in your campaign",
++            );
++            await expect(panel(guest)).not.toContainText(secret);
++          },
++        },
++      ],
++      views: [view(0), view(1), view(2)],
++    });
++    const absentMessage =
++      "The new meeting point is private during your absence.";
++    const revokedPrivate = {
++      spec: "Removed and outsider recipients receive no post-removal message in UI or serialized views.",
++      check: async () => {
++        for (const seat of [1, 2]) {
++          await expect(panel(pages[seat])).not.toContainText(absentMessage);
++          expect(JSON.stringify(await published(seat))).not.toContain(
++            absentMessage,
++          );
++        }
++      },
++    };
++    await story.step("message-after-removal", {
++      actor: aliases[0],
++      description:
++        "The creator sends a new private message after removal; neither the former member nor outsider receives it.",
++      action: async () => {
++        await button(owner, "Participants").click();
++        await panel(owner)
++          .getByLabel("Message", { exact: true })
++          .fill(absentMessage);
++        await button(owner, "Send message").click();
++      },
++      acknowledgement: {
++        spec: "Message sent acknowledges the command and the creator can read its text.",
++        check: async () => {
++          await expect(
++            panel(owner)
++              .getByRole("group", { name: "Conversation acknowledgement" })
++              .getByRole("status"),
++          ).toHaveText("Message sent.");
++          await expect(
++            panel(owner).getByRole("list", { name: "Authorized messages" }),
++          ).toContainText(absentMessage);
++          await readConversation(
++            owner,
++            panel(owner)
++              .getByRole("listitem")
++              .filter({ hasText: absentMessage }),
++          );
++        },
++      },
++      verifications: [
++        noErrors,
++        outsiderPrivate,
++        revokedPrivate,
++        {
++          spec: "The post-removal message commits exactly once.",
++          check: async () =>
++            expect((await canonical()).revision).toBe(revokedRevision + 2),
++        },
++      ],
++      views: [view(0), view(1), view(2)],
++    });
++
++    const retainedHistory = guest.getByRole("region", {
++      name: "Campaign history",
++      exact: true,
++    });
++    const receivedRecord = retainedHistory.getByLabel(
++      `Campaign record ${before.revision + 1}`,
++      { exact: true },
++    );
++    await story.step("recover-retained-history", {
++      actor: aliases[1],
++      description:
++        "Reload, then open Campaign history to recover the selected message received before removal. The live room is no longer accessible.",
++      action: async () => {
++        await guest.reload();
++        await button(guest, "History").focus();
++        await guest.keyboard.press("Enter");
++        await expect(receivedRecord).toBeVisible();
++        await receivedRecord.locator("summary").focus();
++        await guest.keyboard.press("Enter");
++      },
++      acknowledgement: {
++        spec: "The accepted-consent record exposes the previously received rendezvous message.",
++        check: async () =>
++          expect(
++            receivedRecord.getByRole("article", {
++              name: "Previously received message",
++            }),
++          ).toContainText(selected),
++      },
++      verifications: [
++        noErrors,
++        outsiderPrivate,
++        {
++          spec: "Reload and both motion preferences preserve the exact revision and exclude ungranted messages from historical reading.",
++          check: async () => {
++            expect((await canonical()).revision).toBe(revokedRevision + 2);
++            await expect(retainedHistory).not.toContainText(secret);
++            await expect(retainedHistory).not.toContainText(absentMessage);
++            expect(JSON.stringify(await published(1))).not.toContain(
++              absentMessage,
++            );
++            const back = button(guest, "Return to galaxy");
++            await expect(back).toBeInViewport({ ratio: 1 });
++            const article = receivedRecord.getByRole("article", {
++              name: "Previously received message",
++            });
++            await article.evaluate((el) =>
++              el.scrollIntoView({ block: "center" }),
++            );
++            await expect(article).toBeInViewport({ ratio: 1 });
++            const inner = await article.boundingBox(),
++              outer = await retainedHistory
++                .getByRole("region", { name: "Saved campaign records" })
++                .boundingBox();
++            expect(inner!.y).toBeGreaterThanOrEqual(outer!.y);
++            expect(inner!.y + inner!.height).toBeLessThanOrEqual(
++              outer!.y + outer!.height,
++            );
++            await guest.emulateMedia({ reducedMotion: "no-preference" });
++            await expect(article).toContainText(selected);
++            expect((await canonical()).revision).toBe(revokedRevision + 2);
++            await guest.emulateMedia({ reducedMotion: "reduce" });
++          },
++        },
++      ],
++      views: [view(1), view(2)],
++    });
++    await story.step("leave-retained-history", {
++      actor: aliases[1],
++      description:
++        "Escape closes retained history and restores focus to History on the galaxy.",
++      action: async () => {
++        await guest.keyboard.press("Escape");
++      },
++      acknowledgement: {
++        spec: "Focus returns to History.",
++        check: async () => expect(button(guest, "History")).toBeFocused(),
++      },
++      verifications: [
++        noErrors,
++        {
++          spec: "No private history panel remains visible.",
++          check: async () => expect(retainedHistory).not.toBeVisible(),
++        },
++      ],
++      views: [view(1)],
++    });
+   } finally {
+     for (const ctx of contexts) await ctx.close();
+   }

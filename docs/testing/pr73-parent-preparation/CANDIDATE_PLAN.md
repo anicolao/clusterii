@@ -1,0 +1,5 @@
+# Future PR73 evidence scope — no request created
+
+After complete72candidate review, repairs if demonstrated, and approved-parent carry-forward, bind exact integrated73source/spec and current inherited reference trees to one complete four-size pinned Linux request.42views each=168total:136inherited72 views and32new explicit-replacement views (029–032). Preserve original300s test/30s step/10s capture/action limits, retries0/maxfailures1, no snapshot updates, no mocks or partial-story shortcut.
+
+Verify exact selection once per size and all inherited PNG/renderer metadata before execution. Require four passed complete manifests and source/spec/renderer provenance. Compare every capture to approved current parent, inspect all32new and any inherited changes before promotion. No historical Darwin transfers. Stop at first behavior failure, retain partial evidence as failed and unapproved. Full canonical equality, draft confidentiality projections, durable-store acknowledgement, both-tab reload and motion-preference assertions remain unchanged; no broad animation/authenticated-read-denial claim.

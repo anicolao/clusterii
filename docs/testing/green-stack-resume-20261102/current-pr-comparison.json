@@ -1,0 +1,182 @@
+[
+  {
+    "baseRefName": "feat/faction-briefing-composition",
+    "headRefName": "feat/admission-briefing-composition",
+    "headRefOid": "d0804122e614b0b8c26351dee4593ec20cb6f731",
+    "number": 140,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-24T12:52:51Z",
+        "conclusion": "FAILURE",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40091257252/job/120864226977",
+        "name": "stories (verify)",
+        "startedAt": "2026-10-24T11:46:49Z",
+        "status": "COMPLETED",
+        "workflowName": "Illustrated stories"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-24T12:30:53Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40091257300/job/120864226944",
+        "name": "verify",
+        "startedAt": "2026-10-24T11:46:48Z",
+        "status": "COMPLETED",
+        "workflowName": "Application checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-24T11:50:14Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40091257349/job/120864227140",
+        "name": "documentation",
+        "startedAt": "2026-10-24T11:46:48Z",
+        "status": "COMPLETED",
+        "workflowName": "Documentation checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-24T11:53:57Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40091257288/job/120864226954",
+        "name": "publish",
+        "startedAt": "2026-10-24T11:46:48Z",
+        "status": "COMPLETED",
+        "workflowName": "Publish review build"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-24T11:51:32Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40091257252/job/120864226747",
+        "name": "stories (generate)",
+        "startedAt": "2026-10-24T11:46:49Z",
+        "status": "COMPLETED",
+        "workflowName": "Illustrated stories"
+      }
+    ],
+    "title": "Compose campaign briefing and keep chapter controls clear of reading",
+    "updatedAt": "2026-10-24T11:46:39Z"
+  },
+  {
+    "baseRefName": "feat/route-draft-discard",
+    "headRefName": "feat/contextual-route-help",
+    "headRefOid": "a2d0d2fcd747b91cf002c03ae8b2b7f6d2da26d8",
+    "number": 78,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-22T11:12:01Z",
+        "conclusion": "FAILURE",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/39761461366/job/119766389502",
+        "name": "stories (verify)",
+        "startedAt": "2026-10-22T10:13:48Z",
+        "status": "COMPLETED",
+        "workflowName": "Illustrated stories"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-22T11:01:13Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/39761461383/job/119766389314",
+        "name": "verify",
+        "startedAt": "2026-10-22T10:13:25Z",
+        "status": "COMPLETED",
+        "workflowName": "Application checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-22T10:15:08Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/39761461376/job/119766388993",
+        "name": "documentation",
+        "startedAt": "2026-10-22T10:13:25Z",
+        "status": "COMPLETED",
+        "workflowName": "Documentation checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-22T10:18:35Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/39761461392/job/119767160220",
+        "name": "publish",
+        "startedAt": "2026-10-22T10:15:14Z",
+        "status": "COMPLETED",
+        "workflowName": "Publish review build"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-22T10:16:19Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/39761461366/job/119766389212",
+        "name": "stories (generate)",
+        "startedAt": "2026-10-22T10:13:27Z",
+        "status": "COMPLETED",
+        "workflowName": "Illustrated stories"
+      }
+    ],
+    "title": "feat: read contextual route rules without losing a fleet draft",
+    "updatedAt": "2026-10-22T10:13:17Z"
+  },
+  {
+    "baseRefName": "feat/live-conversation-readmission-stories",
+    "headRefName": "feat/route-draft-discard",
+    "headRefOid": "64dd41c31fb5babd57376b5e95b953405e472618",
+    "number": 77,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-27T11:46:01Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40492038931/job/122148095064",
+        "name": "verify",
+        "startedAt": "2026-10-27T10:54:06Z",
+        "status": "COMPLETED",
+        "workflowName": "Application checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-27T11:01:33Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40492038783/job/122148095221",
+        "name": "documentation",
+        "startedAt": "2026-10-27T10:54:06Z",
+        "status": "COMPLETED",
+        "workflowName": "Documentation checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-27T12:42:16Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40492038786/job/122148094618",
+        "name": "stories (verify)",
+        "startedAt": "2026-10-27T10:54:08Z",
+        "status": "COMPLETED",
+        "workflowName": "Illustrated stories"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-27T11:01:18Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40492038759/job/122148095294",
+        "name": "publish",
+        "startedAt": "2026-10-27T10:54:06Z",
+        "status": "COMPLETED",
+        "workflowName": "Publish review build"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-27T10:56:30Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/40492038786/job/122148095189",
+        "name": "stories (generate)",
+        "startedAt": "2026-10-27T10:54:08Z",
+        "status": "COMPLETED",
+        "workflowName": "Illustrated stories"
+      }
+    ],
+    "title": "fix: provide explicit unsent fleet route discard",
+    "updatedAt": "2026-10-27T10:53:55Z"
+  }
+]

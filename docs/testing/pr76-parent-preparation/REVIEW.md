@@ -1,0 +1,1 @@
+Preparation only. Original PR76 account/readmission actions and assertions retained byte-exact except five relocated imports. Parent PR75 Linux candidate review remains active; no PR76 Linux generation or acceptance claimed. Historical images and narratives retained with feature paths. Full policy and independent rendering review remain required before publication.

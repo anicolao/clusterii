@@ -1,0 +1,512 @@
+[
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "3112e129f286a1847ef4164b619e648f595c3bd6ef516ed21735c2233ff532f3",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "dab06995b75fa74c26e4d2c5274783a87dc4b66661f54df6d26204a8fb744dd7",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "23191663684e6d73468e5247557bce9cc2cabed84606852f2d6dc13aae312adc",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "b9681c5d8dcb311d6f629b54a5c754476cff5344cac0d2a49884e8babc948c7e",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "f425beddaf3ed2ccc84291f94aef0e5f866a1380511e9a7919020c9fa0e1f97e",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-1-fleet-marshal.png",
+    "sha256": "2559b2c56a4fac86597e17ba00efc92737d86813b49c6fda7dee87dfd6338208",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/017-review-split-1-fleet-marshal.png",
+    "sha256": "a67b0698dcf8a93b09587ad6af853d3cbe11fe7f277ec0d040ff4628e618fdd3",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/017-review-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/017-review-split-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/017-review-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/019-pending-split-1-fleet-marshal.png",
+    "sha256": "689a2f6a9a6e349c3c7a30f66e40520a1495a753d331c5b791b5db583029921d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/019-pending-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/019-pending-split-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/019-pending-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-1-fleet-marshal.png",
+    "sha256": "98626de93c934f1f2c9188eaf0559541b59eca78121b91c2e8c2817bce138e7e",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-1-fleet-marshal.png",
+    "sha256": "dc5077cb6702d45e82d44a4e202866ef2ca0521bf6e2a1c2b2e09781eed5ba48",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-2-independent-marshal.png",
+    "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-1-fleet-marshal.png",
+    "sha256": "07311edeb4bed13bbc8e12890785513cb8b634a89e4c02a1c1f11fbb80e04cad",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-1-fleet-marshal.png",
+    "sha256": "322a58aeb61815d5eca99124eaf01637fb33b05908eeb74c553346f40cf9e719",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-1-fleet-marshal.png",
+    "sha256": "bf60b155dd8790ae7db3e1ee10888fdec5e7f2ae55c59d504b24f7298ea4ec69",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-1-fleet-marshal.png",
+    "sha256": "ee53e45d8b84782d3f25847e8a234c0171b5864464ba57b7003a88399a6c8e8c",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-1-fleet-marshal.png",
+    "sha256": "8d84ed13f93179541bfe05bacc98346a8e20ec02bcab1bfb7e2fd1b3443a8b75",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-2-independent-marshal.png",
+    "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-1-fleet-marshal.png",
+    "sha256": "942a73ee3cd3d823e99fb3d409495330ca6d2c77a9ad5d7091cee07f1a222545",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-2-independent-marshal.png",
+    "sha256": "fbb6bad70a57bce8e8de6dcd9598da1cfe0046b80c797d2122df3e6a4940c988",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png",
+    "sha256": "e5365f7feb83c8f0a7b6b6de055e6cfe31ee806fb9466a2a571257b14bb96d99",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-2-independent-marshal.png",
+    "sha256": "fbb6bad70a57bce8e8de6dcd9598da1cfe0046b80c797d2122df3e6a4940c988",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "9c4dfbd64825e6d1159364675e85f5e6d76f7411429b2b1cfba5b7488ad91f2f",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "969b31c559c5c65e817bc6c791f949c5f9747e8449c411657c6b143f034c17ea",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "2ecf849ce7ea0cad9a84259d495c49b1695b3f483f237f6724047ec4dc3eb944",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "969b31c559c5c65e817bc6c791f949c5f9747e8449c411657c6b143f034c17ea",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "b7d0bb4294b0cffd2da1422886245fc6caa00ff89bb175eeee307a3139a0a0f2",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "969b31c559c5c65e817bc6c791f949c5f9747e8449c411657c6b143f034c17ea",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "d59c3d7e29c2d1998a9f15a8d3e878a758327a3d69a5262ffd60708481844e5a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "969b31c559c5c65e817bc6c791f949c5f9747e8449c411657c6b143f034c17ea",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "f5ad8d0112dca92ed252b0c4c75ce49eff7083d49978efaa9e38d100d7434178",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "sha256": "e7790ae427ea5b0408ce6e793ddc27ddf1f37f83be27d2545c41127c96731e2d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-1-fleet-marshal.png",
+    "sha256": "28970cba4defc1d4caf93b43e724f85f9deae5cdc47bd4bfba547f6b273beff7",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-2-independent-marshal.png",
+    "sha256": "e7790ae427ea5b0408ce6e793ddc27ddf1f37f83be27d2545c41127c96731e2d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/017-review-split-1-fleet-marshal.png",
+    "sha256": "33e7b11f9aa5e7b2a6feb8ce8c46e5d8e00d717c16f5c7134eb4f63a07361f93",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/017-review-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/017-review-split-2-independent-marshal.png",
+    "sha256": "e7790ae427ea5b0408ce6e793ddc27ddf1f37f83be27d2545c41127c96731e2d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/017-review-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-1-fleet-marshal.png",
+    "sha256": "bca72f4aa2d473ab8fe9657f72a39b0b92e74e9eccd6cd5cef670a0d0fedeac6",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-2-independent-marshal.png",
+    "sha256": "e7790ae427ea5b0408ce6e793ddc27ddf1f37f83be27d2545c41127c96731e2d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-1-fleet-marshal.png",
+    "sha256": "ee8923fb48e707546bad9ff5e85547dd76c43e8f1addd152f2003be464faed5d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-2-independent-marshal.png",
+    "sha256": "e7790ae427ea5b0408ce6e793ddc27ddf1f37f83be27d2545c41127c96731e2d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-1-fleet-marshal.png",
+    "sha256": "87e05399e6ed014b276a55560a182e076188f8e5ae3bafb79059615b87213cc8",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-2-independent-marshal.png",
+    "sha256": "e7790ae427ea5b0408ce6e793ddc27ddf1f37f83be27d2545c41127c96731e2d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-1-fleet-marshal.png",
+    "sha256": "bf928369c42b19e35cb5bdc50eed1db8613afc88e3cd8203eb3bf0934010ce4b",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-2-independent-marshal.png",
+    "sha256": "c79c421ac78a5b359cb734bdccb39e32867f24dc2296e2e6b1ea3d0270dc54ec",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-1-fleet-marshal.png",
+    "sha256": "073c101d9a1885dfb3508a6f135860d82066023a017fc7fc69425389df8bcbc9",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-2-independent-marshal.png",
+    "sha256": "c79c421ac78a5b359cb734bdccb39e32867f24dc2296e2e6b1ea3d0270dc54ec",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-1-fleet-marshal.png",
+    "sha256": "9509287ac0c2fead106c447cff7c2169976967e284cd6bcf1f3847682c0640df",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-2-independent-marshal.png",
+    "sha256": "c79c421ac78a5b359cb734bdccb39e32867f24dc2296e2e6b1ea3d0270dc54ec",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-1-fleet-marshal.png",
+    "sha256": "2ae0538ac2b9f0b52035a3fb9a2ec2224aff69708b7e17680eceefe301bea970",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-2-independent-marshal.png",
+    "sha256": "c79c421ac78a5b359cb734bdccb39e32867f24dc2296e2e6b1ea3d0270dc54ec",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-1-fleet-marshal.png",
+    "sha256": "c68a4fe1926388fb9c6b46ab4667e4e6c5153774a91cb77c4fb941b2eb719d5d",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-2-independent-marshal.png",
+    "sha256": "c79c421ac78a5b359cb734bdccb39e32867f24dc2296e2e6b1ea3d0270dc54ec",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-1-fleet-marshal.png",
+    "sha256": "c8ac08ed9c1e55a3876aefb61caf8c41ce9ea159d5abed3370d22d06f12266f0",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-2-independent-marshal.png",
+    "sha256": "d1e881e1b732118d9345458c9baf79125e1a6564280aec99c8ee53882b21aa47",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png",
+    "sha256": "6340add237f6a9ee6b4fd38100c12b293a7676abe092e7230308c89fa6ddc3a0",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-2-independent-marshal.png",
+    "sha256": "d1e881e1b732118d9345458c9baf79125e1a6564280aec99c8ee53882b21aa47",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "482b24dc4b2a44d6aac96d93f48e1a4fb5b0627b7798fd9b1838f44f51dea3c6",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+    "sha256": "ca25c2ad14ddc041fa63b5629c9a4fadf524de91dd1e63a1017c49021bb67e25",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+    "sha256": "2f2dc9038de31e39aea167e2c9830136a23875dc9f45d1a681c6dfca1d9fe068",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/011-choose-complement-2-independent-marshal.png",
+    "sha256": "ca25c2ad14ddc041fa63b5629c9a4fadf524de91dd1e63a1017c49021bb67e25",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/011-choose-complement-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+    "sha256": "28f2db481e7ea1d8472a180fa60b96334807d1d1683bb9143c501e2ac9691a16",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+    "sha256": "ca25c2ad14ddc041fa63b5629c9a4fadf524de91dd1e63a1017c49021bb67e25",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+    "sha256": "dfafdbff8a9c47ad585c4851805a8ea0dc2941833ef11344c275a9f31be1cf33",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/013-reload-formation-2-independent-marshal.png",
+    "sha256": "ca25c2ad14ddc041fa63b5629c9a4fadf524de91dd1e63a1017c49021bb67e25",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/013-reload-formation-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+    "sha256": "54547deb05028b2333959987c4fc3b97a3d5685edce9680e82b48ff55b3a2a33",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/015-formed-fleet-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+    "sha256": "9380e935e7daa93f866abef7223f25ea3eebed87260b48b6312b69595703bd5a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/015-formed-fleet-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/016-invalid-split-1-fleet-marshal.png",
+    "sha256": "c5d969f45a0b2a969be7ab425aaad3618c2e9706313a70bb587f05606ca53286",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/016-invalid-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/016-invalid-split-2-independent-marshal.png",
+    "sha256": "9380e935e7daa93f866abef7223f25ea3eebed87260b48b6312b69595703bd5a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/016-invalid-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/017-review-split-1-fleet-marshal.png",
+    "sha256": "0a7b3d0cfffb2cc5f425d76c48a4c9350d64c25379fc3cef55d99ddee77a3515",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/017-review-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/017-review-split-2-independent-marshal.png",
+    "sha256": "9380e935e7daa93f866abef7223f25ea3eebed87260b48b6312b69595703bd5a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/017-review-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/019-pending-split-1-fleet-marshal.png",
+    "sha256": "b8a4711f30bab8cc45ace501aa9cf7bd225e327cdb0282d4e40afa5071064222",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/019-pending-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/019-pending-split-2-independent-marshal.png",
+    "sha256": "9380e935e7daa93f866abef7223f25ea3eebed87260b48b6312b69595703bd5a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/019-pending-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/020-reload-pending-split-1-fleet-marshal.png",
+    "sha256": "1fc78717b7047ab3cbfa8a9407e93bfd01c24d9ed15e677b4c264421e851bb9a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/020-reload-pending-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/020-reload-pending-split-2-independent-marshal.png",
+    "sha256": "9380e935e7daa93f866abef7223f25ea3eebed87260b48b6312b69595703bd5a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/020-reload-pending-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/022-accepted-split-1-fleet-marshal.png",
+    "sha256": "5ac97df808828a32f988fc79ea9c098461e786a37f4a764ae4589ea42ce03e4c",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/022-accepted-split-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/022-accepted-split-2-independent-marshal.png",
+    "sha256": "9380e935e7daa93f866abef7223f25ea3eebed87260b48b6312b69595703bd5a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/022-accepted-split-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/024-split-fleets-1-fleet-marshal.png",
+    "sha256": "fab6e94e2ecf7cc177c605c38d123bbb14f5e52bc4c1e0448c3abd467081aff1",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/024-split-fleets-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/024-split-fleets-2-independent-marshal.png",
+    "sha256": "8e5a4be2dc6ff932e670e8dc51d640c2fd070180efb8d47a4119946a838f6249",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/024-split-fleets-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/025-choose-recipient-1-fleet-marshal.png",
+    "sha256": "8e2e456c8b314d4a4826a09b761e2ab968948b52da6559758b9200000b93e9ed",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/025-choose-recipient-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/025-choose-recipient-2-independent-marshal.png",
+    "sha256": "8e5a4be2dc6ff932e670e8dc51d640c2fd070180efb8d47a4119946a838f6249",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/025-choose-recipient-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/026-accepted-merge-1-fleet-marshal.png",
+    "sha256": "7a9b796da5010615f80113284d71d2c2b26ddfc54fee32be6bac824277cdb17a",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/026-accepted-merge-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/026-accepted-merge-2-independent-marshal.png",
+    "sha256": "8e5a4be2dc6ff932e670e8dc51d640c2fd070180efb8d47a4119946a838f6249",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/026-accepted-merge-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/027-reserved-recipient-1-fleet-marshal.png",
+    "sha256": "33f76cc8176b1ab32d23d2124ca7965207987ebd7402d82e1af14b97ea08e899",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/027-reserved-recipient-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/027-reserved-recipient-2-independent-marshal.png",
+    "sha256": "8e5a4be2dc6ff932e670e8dc51d640c2fd070180efb8d47a4119946a838f6249",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/027-reserved-recipient-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/028-reload-merge-1-fleet-marshal.png",
+    "sha256": "41d27f3121f90c323bd2d1943eb9e2723240b34174888b9a7c9566c48ce75895",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/028-reload-merge-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/028-reload-merge-2-independent-marshal.png",
+    "sha256": "8e5a4be2dc6ff932e670e8dc51d640c2fd070180efb8d47a4119946a838f6249",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/028-reload-merge-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/030-merged-fleet-1-fleet-marshal.png",
+    "sha256": "6a02b342c37fabfc673347a65e4b6fde40d17fafc8f9a453145cabbf1ebb859c",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/030-merged-fleet-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/030-merged-fleet-2-independent-marshal.png",
+    "sha256": "3827f45c6e37199ec553114943388844c45190287083fc9b63fe9541cfe45f61",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/030-merged-fleet-2-independent-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png",
+    "sha256": "040b3b39ebec1720365b031ed4bacef2b7c8920279fe8423d917658bdd63bdce",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png"
+  },
+  {
+    "original": "/tmp/cluster-pr58-reviewer-candidates/test-results/stories/live-fleet-reorganization/large/linux-arm64/031-return-to-galaxy-2-independent-marshal.png",
+    "sha256": "3827f45c6e37199ec553114943388844c45190287083fc9b63fe9541cfe45f61",
+    "baseline": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/031-return-to-galaxy-2-independent-marshal.png"
+  }
+]

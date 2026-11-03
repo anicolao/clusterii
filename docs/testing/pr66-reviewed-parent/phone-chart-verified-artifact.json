@@ -1,0 +1,653 @@
+{
+  "artifact": {
+    "id": 12606552511,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYwNjU1MjUxMQ==",
+    "name": "scene-strict-chart-phone-62e4a1430b5cc6d916fbedb54daacdba2bda09c1-1",
+    "size_in_bytes": 8743503,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12606552511",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12606552511/zip",
+    "expired": false,
+    "digest": "sha256:4c66e660c3b5120efdeb0acc00b76f7025b55a04460f3835313d89edb1403fe0",
+    "created_at": "2026-10-25T16:55:39Z",
+    "updated_at": "2026-10-25T16:55:39Z",
+    "expires_at": "2026-11-24T16:55:37Z",
+    "workflow_run": {
+      "id": 40213612377,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr66-scene-strict",
+      "head_sha": "62e4a1430b5cc6d916fbedb54daacdba2bda09c1"
+    }
+  },
+  "fullArchiveSHAAndCRCVerified": true,
+  "archiveLocal": false,
+  "remoteTracePreserved": true,
+  "entries": [
+    {
+      "entry": "ci-evidence/recovery-request/request.json",
+      "bytes": 282,
+      "sha256": "a55c08b6d7af8dc24e53679b89e64eef8829dd7193d1951f9727785340d1093a",
+      "retained": true
+    },
+    {
+      "entry": "ci-evidence/scene-strict/collection.log",
+      "bytes": 184,
+      "sha256": "5f506aaa60e04972f7f459c2179778d004b587b34e432dddf0ad06a5b588f925",
+      "retained": true
+    },
+    {
+      "entry": "ci-evidence/recovery-request/executor.json",
+      "bytes": 1097,
+      "sha256": "cbbac6e5b76e5e1948317366c995a213ec0f94bfeec5751fb580501a5175f483",
+      "retained": true
+    },
+    {
+      "entry": "ci-evidence/scene-strict/outcome.json",
+      "bytes": 168,
+      "sha256": "d6aded29a54a871853ea3087b395ba15761c6cb923708a842ac07fa91bfb748f",
+      "retained": true
+    },
+    {
+      "entry": "ci-evidence/scene-strict/selection.json",
+      "bytes": 752,
+      "sha256": "3782d3c2cba48993b6e09c48a0081e5d9a64519399cda14dfbb28781883d0e96",
+      "retained": true
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/containerd.log",
+      "bytes": 11788,
+      "sha256": "bbd76f6ef42eaa211d3000652c08447ee0e8e75cc70ca7f32fd1ab0c598246dc",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine-info.log",
+      "bytes": 1791,
+      "sha256": "e0bdfbcdfac6e8570255afb63ece57ce064dff4f3df3785417e8a38cfa98fe3e",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/engine.log",
+      "bytes": 2727,
+      "sha256": "f36681910bc40023a521624edc0cd3cc913c1a1cf48d667344a9a1739c0defc5",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-inspect.json",
+      "bytes": 2411,
+      "sha256": "04044a3ec9e07bc6429e6eabc421222ccffee4eaad00b42667318460d578aa39",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/image-load.log",
+      "bytes": 49,
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "sha256": "f36f41ca38ab3a8735177224cdd00741d81e1ecfa9f8451d5993a61ed5d940b9",
+      "retained": false
+    },
+    {
+      "entry": "ci-evidence/nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "sha256": "d73c7e7cdb3f9be8e7b5f4475fe51d31e5678712e51e0c85f39ac8cd49ce702a",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.last-run.json",
+      "bytes": 96,
+      "sha256": "d0f25b9c0420fbb37b192a714c5392ca59c266871b25928e66c96c8821b4157b",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/3592ad7b4d65c9a93aba-f2d8d927cae1e168f197-pwnetcopy-1.network",
+      "bytes": 191131,
+      "sha256": "3a11e174c5bfdaf245456fab9cec6864cbfee2741a7ad432b0cd3fc3871b8b1c",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/3592ad7b4d65c9a93aba-f2d8d927cae1e168f197.network",
+      "bytes": 191131,
+      "sha256": "3a11e174c5bfdaf245456fab9cec6864cbfee2741a7ad432b0cd3fc3871b8b1c",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/3592ad7b4d65c9a93aba-f2d8d927cae1e168f197.trace",
+      "bytes": 1758598,
+      "sha256": "848747771011e5b6802af2e5dbafcb7f7eca09cecbc6c8e157df9117e3c5bfc7",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/010cf457c258439460ad0f8e4b5604ad.jsonl",
+      "bytes": 7041,
+      "sha256": "a10d170e7eb9708b7bb1b4e6d8d2f3f16969c7b118fe960af541e2bbf9e413a3",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/013322189521065b32ebf537900e56fd4c4773f7.txt",
+      "bytes": 10,
+      "sha256": "f41ae54242c33f5f8155ec5964823eb43cce294e5b54600d1b18e050d7f75204",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/05dadf003f276beb9db879f4e82d1914eecde416.woff2",
+      "bytes": 17524,
+      "sha256": "140e2bd25a7315c8a062508391426b0d8c3297400c947b8d847be28f73a199f0",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/0627bbe54c39a18f428ff8986850daf60e88910a.dat",
+      "bytes": 392,
+      "sha256": "4328b02e5233806d288fbe702046abecc1bd8595a46cac847a299d32828482e1",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/08a975453231fa3a1b358d5a367ba78039d94164.dat",
+      "bytes": 134,
+      "sha256": "6c739caf0e2866e3307dccf2df083f2dd7642d9d43940b1f0f962096fe672d20",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/09b29dad379faf98533be38a25e157f3d8921cbf.css",
+      "bytes": 423578,
+      "sha256": "1039c7ae5dbcb011e8416745947574102def335a0f5fc5ef556abd0788274a69",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/0bc0c675480d94ec7e8609dda6227f88c5d08d2c.woff2",
+      "bytes": 128352,
+      "sha256": "8265f64786397d6b832d1ca0aafdf149ad84e72759fffa9f7272e91a0fb015d1",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/0e24538e798117840417df6372cb6bcf99148563.woff2",
+      "bytes": 23396,
+      "sha256": "ae062b6d5ae308e7edf61b28b07b9984bbb6e961b1f34d9b2c2f4389c33f21ea",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/107b35f04df24c04f4ccd94555f66224b411649f.json",
+      "bytes": 543,
+      "sha256": "d30e4204c8c573810099b63943e98e0a02e559eef1090f3526a25aaac52cfd41",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/11121b6b6afc5620d0d7194755482864c5cac473.webp",
+      "bytes": 569918,
+      "sha256": "42c0f5ef9e212f78ef07c6329196e73cc506b88fdcaf4d304350e3e28cbef049",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/1c5c7c2a115b117a82e06fe63d7629afa41c9d05.css",
+      "bytes": 569,
+      "sha256": "e8c6cdaa1c533d3f67707d78451c5ed9541f77c70a8fc79b0ca6f235263bef7c",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/1e0136eb4ccb14d22491474d174b3f3750d03c7d.json",
+      "bytes": 123,
+      "sha256": "c4fb5eded9d1fa2b53617e705c347efab97fa9c365880b845950a37368197230",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/26694d6dc2eca6b9e64dfb8ca8868deded477971.json",
+      "bytes": 1910,
+      "sha256": "6373c02d732ac61b79ad7927314c84958e22ba421765b4cb9e26b35f243aa5d7",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/27991abda59b8f9fa580b4066e5fb2af701607fb.txt",
+      "bytes": 55,
+      "sha256": "4289255248ea52008647e498a1b77fdf96c7b2363d28bb55b70bf27be330d597",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/27d3f2ab95465e3ef9ea6318f916e6037e762b9b.dat",
+      "bytes": 364,
+      "sha256": "e2069ac8b508e4b83ae12d331a863d0b3291bdb4411f5828a058dcc3048f7815",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/2946d787e3ffb06907efa8cfe53ea557770b0b98.css",
+      "bytes": 149,
+      "sha256": "a138fac2fee6fb9232edb8a755b164264aef2ddedd10dac2626805cbb25e8591",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/2c5375c012c2236ef35f210c69d61ea6b33da05e.json",
+      "bytes": 1774,
+      "sha256": "6b925f22151b38ed7094e2ade4ae55381f2ba552e4947e83689e0f31f00b1067",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/2ef7fe90680b37ae7fe8baec6a93fde987dac2a4.dat",
+      "bytes": 134,
+      "sha256": "e54e837f1d9ebd8b2f621e557885a473b74c89e270605deb885d96bcf742f050",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/320109902245098d11af11f6322d30f76df50a36.woff2",
+      "bytes": 17208,
+      "sha256": "d64ba838ef5472bba248620ec4fd8b5aa7cf0db2908e0bb230600caf279ba7bc",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/320c7c14c78bc49e8b84b94387f176da3e885696.txt",
+      "bytes": 10,
+      "sha256": "2c729e05c070c003f66ce9cd8ebaed972b82afde436049b2002de74ca4683928",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/3655c66d22c5c0f1d7f14ff1a10ab714573dfb05.css",
+      "bytes": 13482,
+      "sha256": "c81aed0421f2a5a5755e56297b39999ad4d8803b3ebdf8e59ea546cf9bbbe30c",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/3a54aad03713403f75b850550fc597d8eeb56675.woff2",
+      "bytes": 9384,
+      "sha256": "61eeb0eb8b881a84d069e67be1723f5b353b0b9b866ad8e7ad9dba66cdc4dabd",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/41ca6b7e4818eb81531d8006ff7ddd971c640879.woff2",
+      "bytes": 43136,
+      "sha256": "1404ca348bd75ef836f4dd8b6f2cc719458642d1237c368296b2fc652dca47dc",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/3e7ef4a0725ee8ee19cc979a3fb5addcf42558cf.txt",
+      "bytes": 10,
+      "sha256": "66e22c7de4244427eb372ec4772453c3ae8c8efb896bb047e188422913b26ba1",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/4bc5ac64bc95a15b24c767e4d5df3fec4947e1bf.dat",
+      "bytes": 1324,
+      "sha256": "69de7c7cb2121adf44907505d61d3cce15e7ac79f9693b2c43baa0e8956ab89f",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/52e628667577fc0958ddf9f8a0de411a059654b1.html",
+      "bytes": 4051,
+      "sha256": "8f61ef36322e41d5dda9a5c92195ae096f878011dfcb20bdedcb72f34fe334b3",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/5d77312e307fb237d2d0007af82c6f5dc2c6ae6e.json",
+      "bytes": 13,
+      "sha256": "ba5f3ea40e95f49bce11942f375ebd3882eb837976eda5c0cb78b9b99ca7b485",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/687ee9a150a3b840896fdab93f6140b5a3cd218f.dat",
+      "bytes": 134,
+      "sha256": "db79010a0847917875e626bf17bcbc20bf6fbc6d6ee04f4398b692287071a4be",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/6ab5a9790ed987098952391b94a410532b3332ff.dat",
+      "bytes": 134,
+      "sha256": "3706bc69e0220fb4ad86fec6f4d19334620b9ada4d25442e92ca995d975577c1",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/6be8269c1025f5ea6627baa326fee2082f5bb2d9.txt",
+      "bytes": 9,
+      "sha256": "ba8fbbe0c57fdd73c680f07ae25130fd4e75c01789f20679e6869a71bd2fa797",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/6c1328fc165de90d366afa3a5f8c69c1d8e8fdf8.txt",
+      "bytes": 10,
+      "sha256": "145f2f50653930247fa15225e65693bf8ca18f9a8489c0264f418616747b9df1",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/70597b46aad75255810f094696478649534db7cb.dat",
+      "bytes": 368,
+      "sha256": "4e30d5536dca65228af5124d74857058ee2d7d0080dee52fae60cb7fd0cfb86b",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/71ee5e891d877efc124812873758dac1a9263702.css",
+      "bytes": 11132,
+      "sha256": "5996106466e1316c41c424c6b4e2fa8b09af7cea958fd5424b908a3cdfebc702",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/79c481dd3d5a7473c080646388d0130883a1cd8c.dat",
+      "bytes": 247,
+      "sha256": "66d0002e612093864faa181022a789034ad898761ff27dfd4fc49a97acdd86c7",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/7ad2729125246c445a13d4a0a84ce8428e9a85e6.webp",
+      "bytes": 416002,
+      "sha256": "675e3dfcf153170b898c6711abd62686e1503369e4146b6870a33be64ff30890",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/8955908582219207cc5298082ac38401e8bdde9e.css",
+      "bytes": 1461,
+      "sha256": "e742d42ebf5e6ad3f94021d82dbd7ceef3a872b1afe6613496cc56a29edc3d58",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/8ad862694eb7b77781001bfae167cb40bb3977ad.json",
+      "bytes": 109,
+      "sha256": "639a079cd01df46674e162e91ea459860cf9f1d9ba754878b2cbe38ffe32fe7a",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/8b79a006ba3861ce35fbafdd7116d7727bea48ec.json",
+      "bytes": 27,
+      "sha256": "a42873bfde1f0dfba2a71a55bc26127af34c395faba1e4421768cde120c8c4b8",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/8f522b5906bc46bdbca632f977507292b8b3ee7a.css",
+      "bytes": 227,
+      "sha256": "40a7af6108eb85b23a1c75347bb49d62ca673b7cac1d5ae398a70fc043cc07a5",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/90ee031c0937be6a910afa1fbadeed56131e8e68.dat",
+      "bytes": 134,
+      "sha256": "dcfb65f381fa59b00856fba6fafec140da140b38786b24ae7487cf4081b07964",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/9290ba36b8530dd030ffa1a4ba44c0bdb495ff03.webp",
+      "bytes": 432494,
+      "sha256": "deee11254a5ad43d3909b0059b0b6b62cfd2cedaa490100f747141ee8fd569ec",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/99c426c1aedd2725bddca4c4259dc27839a65500.dat",
+      "bytes": 1035,
+      "sha256": "102b2ff44aa09e7f8ba6d60135260211244f167efd356ea7d0ac0017ebfb810f",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/9ba2d7e31becb2fec214bec8a70e3cc8f3d10955.css",
+      "bytes": 1138,
+      "sha256": "a76ed68d6efe3471c3fa15b187637b2393bb6e28c605e4d08c91b3df93054f9c",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/a439e76c01da254db7648b716dedc68bada12da0.txt",
+      "bytes": 10,
+      "sha256": "4483edd36c5b1eabb5415cf1fa1f31a5443532edb16d31859056d4224fa46adb",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/a43e2378b99d4db6b0cb35107140b4b410f9772a.json",
+      "bytes": 58,
+      "sha256": "7cb7eb0d6439ad3632617a079cece35baad56fdfef425f1cdc238969038eb443",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/a68ee762bb10b769f9c19830f129e49681e57384.dat",
+      "bytes": 371,
+      "sha256": "53777686619905b5debe056df226c649dfc8ea68fa9b6a670a650461ca0d47d4",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/a7654661f44eb62a6da69ef2a8f85c8f513cbcbb.dat",
+      "bytes": 1229,
+      "sha256": "49473ffa222ad006ad518a6b6a7a5bc040d9b921b4f247dedeb91e13570e790e",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/ae240d4ead0e8f589f80e4795fb6fcc6cf956a12.json",
+      "bytes": 1730,
+      "sha256": "dcb3923bf26c219519e74823fdff542316468f8f73ae27be3402a2fde69321f5",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/b1dd8a94281aacc2c84d1332bacf5bf3a052cd67.webp",
+      "bytes": 382140,
+      "sha256": "640e7b2d1084cbdb0c8d4eb1f4f8d0d60f26be380b65ea314221e905c1c9a396",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/b6bffdf95aac148fccf3351b142ce2a0698feb17.txt",
+      "bytes": 9,
+      "sha256": "f6a781b9907e92cc1c5bd9b81ef55c3f4260e3c0838c7ccb22f70f449e515c0d",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/b8a77eec4b184efd9ac9af1bbb9fa77c8222e673.dat",
+      "bytes": 521,
+      "sha256": "343bebdd9a568d9beb362a3647f4383c1db1c89d2b49678e3ed3fd78f3e9bece",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/bcc9ebfd2b2d3653cea4f8997e7beb0a63ba7deb.txt",
+      "bytes": 55,
+      "sha256": "c5a892adeed2e7d1048d9c4333c753d2e1ebd3627b8f5a86f4fe51ab6edd9b4e",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/be1486c8a48e4508f230c6bbfdf4e092ea851cb0.html",
+      "bytes": 18429,
+      "sha256": "301b3f7f8a8af9303aa587def1560fbf37b9e582530e8b4beacddee12e0b5ebc",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/c0471834f18dc545e62307f7053c4c02f205e041.txt",
+      "bytes": 10,
+      "sha256": "8d9d7ca633197e65fea770c848f0896b732c0785a8037c3d04c2f795b90ac817",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/c20b57f6f4e8efd9971192771cd88596d52e84e9.woff2",
+      "bytes": 23312,
+      "sha256": "8197bf53615ddc8c423f444c7f0eec63b7fa0ba093fcfbec60dfdd28429b0fc8",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/c36a88b0aac16d345df32b354c256b18d6c09685.txt",
+      "bytes": 10,
+      "sha256": "4f638b6a221a4f8559073076fff6ac04295171ab76dab017902b8f0d369d4149",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/c55662e47bac178938a78fbd01739fe39c9f5bd4.css",
+      "bytes": 13567,
+      "sha256": "accc6079cdfc926d7a36a5d8601aaadeef15fa4d7a3885811c746f422c9c7429",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/c6b0f16106ccb952dc29f1d81154c1738d98e452.json",
+      "bytes": 454,
+      "sha256": "d6e7bd2535f8e8dde03e5d5abe103df383568095eef63d6218b28fc36440cab1",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/c6b6d698f12159227887ef80acc5568e9027ce8c.webp",
+      "bytes": 331274,
+      "sha256": "2f3233750712cc2733aa29a031ae9bc514a0c1ac977b1b35531ddb1e8c975956",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/c7dcfd9acc7a1df243289c4d9abfef7292ac253f.css",
+      "bytes": 45310,
+      "sha256": "70c1adab837f00a59ffa1ba556c680ae840c404768898121ee8607728f44dde9",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/ca5be234d0348189f4d62f067d9b711dc52b5148.txt",
+      "bytes": 10,
+      "sha256": "f01ca30fea41e25a5a2be9256eaf78a69b4097e9a1399ace4a38441d16efe5a8",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/cbd3a501c31251e0e0081203f88f2f7fba22a256.dat",
+      "bytes": 371,
+      "sha256": "736a3475fb5c163dee0d4103682b1340452dab2e1f390d83c7406418dee5c098",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/cc3278cd7463abeb45302f8a7f6d2a06b83a45dc.dat",
+      "bytes": 314,
+      "sha256": "66456f2ea9f6dc7c2334279691271792edc6f1b439c094cc6aa8819c6ab29d86",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/cdb8c19fe603f3acd5006d131515daeb3773c0df.txt",
+      "bytes": 9,
+      "sha256": "5d5d76a264c75bc22d17a1ede9075438e6d0d5e6a39c5fbcdde5e2e40990cf87",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/d3978a40a2018d721c423d41c627ce9655122429.css",
+      "bytes": 4243,
+      "sha256": "bc5800b552e61cb4676254b65dbb0c350356214b3856a4d93989ec90aae1788e",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/d5080c2d2d5b48787a2c671f68d3acef75089957.html",
+      "bytes": 2768,
+      "sha256": "65cda1e41d0e987c9ea8c8a49575ed3eab51ee3213ce8de510b3d9d8eb4683e6",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/d8d8fb8c32387fb4d1019461c8ae0ac049f5dc8b.json",
+      "bytes": 34,
+      "sha256": "e5b0780bb356294eed992a6164d6df2544a2bfd6c2dea8b32200bf9d53537b51",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/da39a3ee5e6b4b0d3255bfef95601890afd80709.dat",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/e2ed52ec94658b2388d4727d510ad84b5b7dfa53.json",
+      "bytes": 697,
+      "sha256": "351e4ec236fa5007ca25bc001f715d2f07e3247b32bc4b921598a1f6ee01ed69",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/e787ac29fae3b8534049830813bef1ad195fbbd3.webp",
+      "bytes": 375222,
+      "sha256": "30312064e0f720e0c45ec27c50c4fb56d42db56513cb348591c97c528ee99e64",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/.playwright-artifacts-0/traces/resources/f214fa67c135088623e589331a4bf87c860faaaa.txt",
+      "bytes": 10,
+      "sha256": "73ec8f40b93eef966fb9e150bceb5ec5334877a65e9040843dd425a93b18e768",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/002-waiting-chart-1-star-envoy.layout.json",
+      "bytes": 2067,
+      "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/002-waiting-chart-1-star-envoy.png",
+      "bytes": 261116,
+      "sha256": "974e2ed5ac92021189ecb05a5906b37903c73b5b854b539fb80d2d52de745681",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/003-filter-o-stars-1-star-envoy.layout.json",
+      "bytes": 2065,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+      "bytes": 45946,
+      "sha256": "b4e754e8b8c60b75151aab1b6b5855c2794859566f02422a00cc15a06288eb87",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/004-expand-camera-controls-1-star-envoy.layout.json",
+      "bytes": 2065,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+      "bytes": 45200,
+      "sha256": "c16d73ab66c9ea995905bbbdd1d1c87a089eff29229e31bf908bb3f619704abd",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+      "bytes": 260217,
+      "sha256": "4986dc2113d0f63afe2d9f1523cc26583a7451a3190dbf4e6a3d9f753594322c",
+      "retained": true
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy.layout.json",
+      "bytes": 2065,
+      "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+      "retained": true
+    },
+    {
+      "entry": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/FAILED.json",
+      "bytes": 3878,
+      "sha256": "3a13abfb078d84ac9c641d6f79e85584335e107833448daae9846407e06d6e0e",
+      "retained": true
+    },
+    {
+      "entry": "test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy-actual.png",
+      "bytes": 260217,
+      "sha256": "4986dc2113d0f63afe2d9f1523cc26583a7451a3190dbf4e6a3d9f753594322c",
+      "retained": true
+    },
+    {
+      "entry": "test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy-diff.png",
+      "bytes": 102058,
+      "sha256": "9be80c48c1e13a5cc16734260ed645eb11eb866b66c9acd474c2ef658936376a",
+      "retained": true
+    },
+    {
+      "entry": "test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy-expected.png",
+      "bytes": 260047,
+      "sha256": "c93f0b05691e8975456c0ed3511e1dcdf1788b82123bdeb54763e6087a21a0b0",
+      "retained": true
+    },
+    {
+      "entry": "test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/error-context.md",
+      "bytes": 12425,
+      "sha256": "db0a17f2c6dce2c4317d50a415478020185b845de3a6bd17e499828bed9ff92c",
+      "retained": false
+    },
+    {
+      "entry": "test-results/stories/campaign-navigation.story--00e1a-nspects-a-clipped-map-label-phone/trace.zip",
+      "bytes": 4341944,
+      "sha256": "4ffeb08ec7693ad01ffd2b625b56a8960feb0e104c4e142df8fb82867b0aa7fe",
+      "retained": false
+    },
+    {
+      "entry": "firestore-debug.log",
+      "bytes": 4005,
+      "sha256": "d02eacd87d587c90fed017fb38bf26ad2227151b115ad71d3daba8b0e4d8c26f",
+      "retained": false
+    }
+  ],
+  "expectedSource": "dc7e2a4e53e0ea2691512977071d9e8e9ebfaa5e",
+  "expectedSha256": "c93f0b05691e8975456c0ed3511e1dcdf1788b82123bdeb54763e6087a21a0b0"
+}
