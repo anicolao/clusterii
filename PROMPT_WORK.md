@@ -731,3 +731,5 @@ Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Resolve completed Linux phone-only dock, focus and camera failures while preserving every original check.
 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Bind one corrected-source Linux candidate matrix to all280 original tests and independently owned service lifetimes.
+
+Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Dispatch one immutable corrected-source Linux candidate request with all280 original tests and retained failure exits.
