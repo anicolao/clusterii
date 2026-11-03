@@ -741,3 +741,5 @@ Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | 
 Prompt 388 | 195299a21b417bda0925496b4f56396924adab3ac9c46d38768cd889e2bb2e27 | Record single research Linux request and inspect exact phone admission, history, roster and waiting-state originals.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Correct the second responsive More-control wait exposed by completed Linux desktop journeys and validate all four sizes.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind corrected menu and observation journeys to one Linux request and review completed corrected family evidence.
