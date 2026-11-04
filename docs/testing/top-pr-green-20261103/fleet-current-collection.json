@@ -1,0 +1,850 @@
+[
+  {
+    "project": "phone",
+    "count": 3,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=phone",
+          "--list",
+          "--reporter=json",
+          "fleet-(formation|reorganization|cancellation)[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live fleet formation and disband conserve private forces|Live fleet reorganization recovers one private split and conserves forces|Live fleet cancellation preserves drafts and releases private reservations)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/fleet-cancellation.story.spec.ts",
+          "file": "browser/fleet-cancellation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet cancellation preserves drafts and releases private reservations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "phone",
+                  "projectName": "phone",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0acb73c4fbe7627f79bb-74f1a3d0e3034e14824d",
+              "file": "browser/fleet-cancellation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-formation.story.spec.ts",
+          "file": "browser/fleet-formation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet formation and disband conserve private forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "phone",
+                  "projectName": "phone",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5f87aa3f503ffd1a5e50-a4ca5794b1342b54c6b8",
+              "file": "browser/fleet-formation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-reorganization.story.spec.ts",
+          "file": "browser/fleet-reorganization.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet reorganization recovers one private split and conserves forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "phone",
+                  "projectName": "phone",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa9320cc84c809b3bbe0-cde97511d64121dff50d",
+              "file": "browser/fleet-reorganization.story.spec.ts",
+              "line": 46,
+              "column": 1
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:40:04.038Z",
+        "duration": 192.875,
+        "expected": 0,
+        "skipped": 3,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  {
+    "project": "desktop",
+    "count": 3,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=desktop",
+          "--list",
+          "--reporter=json",
+          "fleet-(formation|reorganization|cancellation)[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live fleet formation and disband conserve private forces|Live fleet reorganization recovers one private split and conserves forces|Live fleet cancellation preserves drafts and releases private reservations)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/fleet-cancellation.story.spec.ts",
+          "file": "browser/fleet-cancellation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet cancellation preserves drafts and releases private reservations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0acb73c4fbe7627f79bb-8e674ac0546e4dc524a9",
+              "file": "browser/fleet-cancellation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-formation.story.spec.ts",
+          "file": "browser/fleet-formation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet formation and disband conserve private forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5f87aa3f503ffd1a5e50-893e6ce198958a56224b",
+              "file": "browser/fleet-formation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-reorganization.story.spec.ts",
+          "file": "browser/fleet-reorganization.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet reorganization recovers one private split and conserves forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa9320cc84c809b3bbe0-5990da0800e4f085fc1e",
+              "file": "browser/fleet-reorganization.story.spec.ts",
+              "line": 46,
+              "column": 1
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:40:04.452Z",
+        "duration": 79.42099999999999,
+        "expected": 0,
+        "skipped": 3,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  {
+    "project": "large",
+    "count": 3,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=large",
+          "--list",
+          "--reporter=json",
+          "fleet-(formation|reorganization|cancellation)[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live fleet formation and disband conserve private forces|Live fleet reorganization recovers one private split and conserves forces|Live fleet cancellation preserves drafts and releases private reservations)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/fleet-cancellation.story.spec.ts",
+          "file": "browser/fleet-cancellation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet cancellation preserves drafts and releases private reservations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "large",
+                  "projectName": "large",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0acb73c4fbe7627f79bb-6a9e44126ec1e9702fff",
+              "file": "browser/fleet-cancellation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-formation.story.spec.ts",
+          "file": "browser/fleet-formation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet formation and disband conserve private forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "large",
+                  "projectName": "large",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5f87aa3f503ffd1a5e50-ef616233756587a69557",
+              "file": "browser/fleet-formation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-reorganization.story.spec.ts",
+          "file": "browser/fleet-reorganization.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet reorganization recovers one private split and conserves forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "large",
+                  "projectName": "large",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa9320cc84c809b3bbe0-ef0d6640836e39adda6a",
+              "file": "browser/fleet-reorganization.story.spec.ts",
+              "line": 46,
+              "column": 1
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:40:04.747Z",
+        "duration": 87.02799999999999,
+        "expected": 0,
+        "skipped": 3,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  {
+    "project": "short",
+    "count": 3,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=short",
+          "--list",
+          "--reporter=json",
+          "fleet-(formation|reorganization|cancellation)[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live fleet formation and disband conserve private forces|Live fleet reorganization recovers one private split and conserves forces|Live fleet cancellation preserves drafts and releases private reservations)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/fleet-cancellation.story.spec.ts",
+          "file": "browser/fleet-cancellation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet cancellation preserves drafts and releases private reservations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "short",
+                  "projectName": "short",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0acb73c4fbe7627f79bb-ca60dfa9a6fbba8e21d4",
+              "file": "browser/fleet-cancellation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-formation.story.spec.ts",
+          "file": "browser/fleet-formation.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet formation and disband conserve private forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "short",
+                  "projectName": "short",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5f87aa3f503ffd1a5e50-166b6603b7eefcda1230",
+              "file": "browser/fleet-formation.story.spec.ts",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "browser/fleet-reorganization.story.spec.ts",
+          "file": "browser/fleet-reorganization.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live fleet reorganization recovers one private split and conserves forces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "short",
+                  "projectName": "short",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa9320cc84c809b3bbe0-166242b11f7d1d0ba114",
+              "file": "browser/fleet-reorganization.story.spec.ts",
+              "line": 46,
+              "column": 1
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:40:05.042Z",
+        "duration": 84.52100000000002,
+        "expected": 0,
+        "skipped": 3,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  }
+]
