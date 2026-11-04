@@ -795,3 +795,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Correct selected-label clearance against measured Market and History panels without moving catalogue anchors or changing assertions.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind one Linux menu and history candidate request to the locally validated reader-label correction and unchanged budgets.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Execute the single immutable four-size menu and history label correction request after exact collection and guards pass.
