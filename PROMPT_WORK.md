@@ -883,3 +883,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect corrected Linux science originals and import exact approved references with compact archive provenance.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind four missing live families to current source with separate original service lifetimes and exact complete collection guards.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Dispatch one complete current-source missing-family request after exact sixteen-case collection and seven guard tests pass.
