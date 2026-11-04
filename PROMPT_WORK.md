@@ -755,3 +755,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Withhold the occluded desktop research conflict image and reproduce commander-deck overlap with a real reading geometry assertion.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind one complete four-size Linux research-order request to measured acknowledgement and label clearance, without snapshot updates.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one source-bound pinned Linux generation of the four complete corrected research-order journeys; retain only review evidence.
