@@ -279,3 +279,7 @@ Follow-up visual review of /tmp/cluster-composition-final3 captures:full-height 
 ## Prompt 23: Player Access
 
 there's some stupidity with this implementation where only developers can play the game. I am quite annoyed by this, but for now just tell me what needs to be done to fix it so that someone else can play (a specific person). Somehow my "Osric" identity works - perhaps I'd created it before this nonsense was added.
+
+## Prompt 24: Grant Developers
+
+go ahead and direclty add developer: true to all users, and tell me who you modified when done.
