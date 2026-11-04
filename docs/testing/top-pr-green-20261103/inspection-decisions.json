@@ -24154,5 +24154,138 @@
         "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/large/linux-arm64/005-read-provenanced-portraits-1-gallery-reviewer.png"
       }
     ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "75a437139d6ea3bfe4547fc8cfc7f031f89e81f833a79d09ec6aa1f68f5ede9a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Credit terms, own balance, input state and disabled/available actions are readable. Short compose now exposes the entire requested-credit input and gold focus outline above the footer. Phone later offer/withdrawal views retain exact amounts, tick and acknowledgement in the deliberately scrolled reader; clipped neighboring earlier-offer headings are not focused controls. Regression approval only, not full simultaneous content visibility, authorization proof or design certification. Large original displayed at 2048x1152 from 3840x2160, layout/content scope.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f299cc90340e94bfcfd32f414f23c6fa69515ae0720b409701ceed1e618c1c4a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Credit terms, own balance, input state and disabled/available actions are readable. Short compose now exposes the entire requested-credit input and gold focus outline above the footer. Phone later offer/withdrawal views retain exact amounts, tick and acknowledgement in the deliberately scrolled reader; clipped neighboring earlier-offer headings are not focused controls. Regression approval only, not full simultaneous content visibility, authorization proof or design certification. Large original displayed at 2048x1152 from 3840x2160, layout/content scope.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-2-exchange-recipient.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Credit terms, own balance, input state and disabled/available actions are readable. Short compose now exposes the entire requested-credit input and gold focus outline above the footer. Phone later offer/withdrawal views retain exact amounts, tick and acknowledgement in the deliberately scrolled reader; clipped neighboring earlier-offer headings are not focused controls. Regression approval only, not full simultaneous content visibility, authorization proof or design certification. Large original displayed at 2048x1152 from 3840x2160, layout/content scope.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-3-outer-witness.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-3-outer-witness.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-3-outer-witness.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-3-outer-witness.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-3-outer-witness.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-3-outer-witness.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-3-outer-witness.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "dc9d1778d31fa45285bb8176a445c9055b5f563b5eba94199c2a781f84b20017",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Credit terms, own balance, input state and disabled/available actions are readable. Short compose now exposes the entire requested-credit input and gold focus outline above the footer. Phone later offer/withdrawal views retain exact amounts, tick and acknowledgement in the deliberately scrolled reader; clipped neighboring earlier-offer headings are not focused controls. Regression approval only, not full simultaneous content visibility, authorization proof or design certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4698126c5254e5df0180f6f0f7558059641f480c1302a8a0dc8f77ad794544ed",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Credit terms, own balance, input state and disabled/available actions are readable. Short compose now exposes the entire requested-credit input and gold focus outline above the footer. Phone later offer/withdrawal views retain exact amounts, tick and acknowledgement in the deliberately scrolled reader; clipped neighboring earlier-offer headings are not focused controls. Regression approval only, not full simultaneous content visibility, authorization proof or design certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b29a0b1ef35efc29305582a9f0936d618cc1908d0c9ceef4801edca9e503e8cf",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Credit terms, own balance, input state and disabled/available actions are readable. Short compose now exposes the entire requested-credit input and gold focus outline above the footer. Phone later offer/withdrawal views retain exact amounts, tick and acknowledgement in the deliberately scrolled reader; clipped neighboring earlier-offer headings are not focused controls. Regression approval only, not full simultaneous content visibility, authorization proof or design certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3b7bfc285eab2985dcfd5ca75b5b136d8577698166f62dcfe1ebed63be671589",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Credit terms, own balance, input state and disabled/available actions are readable. Short compose now exposes the entire requested-credit input and gold focus outline above the footer. Phone later offer/withdrawal views retain exact amounts, tick and acknowledgement in the deliberately scrolled reader; clipped neighboring earlier-offer headings are not focused controls. Regression approval only, not full simultaneous content visibility, authorization proof or design certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png"
+      }
+    ]
   }
 ]
