@@ -7,3 +7,7 @@ Run exactly the complete command-surface, cinematic-instruments and shared instr
 The established top-candidates executor is reused with only exact selection and isolated branch binding changed. Five guard/launcher tests pass; actual installed Playwright collection at the byte-identical target collected precisely three complete journeys per size. Executable source, story/helpers, dependencies and inherited references match the target. No required workflow is changed. The executor checkout is sparse; collection used the existing populated target checkout, with its full test tree identity verified against the executor target.
 
 A fresh request-only child binds executor parent and every declared target input. Remote originals expire after 14 days; inspect compact outcomes first and retrieve once with capacity preflight. Compare all candidates with retained old references, inspect every changed/new image before promotion, and preserve failed outcomes without blind retries. Existing integrated strict run41852381575 is unaffected.
+
+## First request failure and bounded correction
+
+Run41864888414 failed before tests: depth3 checkout excluded pinned target5e77413f. Desktop log16:17:29Z reports git rev-parse target:src failed; all four test steps skipped, no candidates/artifacts. Depth8 contains target and request ancestry; added regression checking configured depth against actual pinned commit. Gameplay/spec/renderer/reference inputs unchanged. Original requestbb7694a2 retained; fresh request required, no attempt replay.

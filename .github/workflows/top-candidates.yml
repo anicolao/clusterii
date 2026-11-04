@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 3
+          fetch-depth: 8
           persist-credentials: false
       - name: Bootstrap established Nix
         uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
