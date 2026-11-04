@@ -805,3 +805,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record exact approval, required-workflow, parent-history and clean fast-forward audit before the consolidated PR140 update.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record the actual PR140 fast-forward and five live required-check handles without restarting the integrated target.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review retained feedback-motion references against current source while preserving the five live integrated PR140 checks.
