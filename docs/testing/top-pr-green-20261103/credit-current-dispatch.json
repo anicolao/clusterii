@@ -1,0 +1,14 @@
+{
+  "target": "936b3239a3ce7024685e04889ba0d2c5c5ea29fa",
+  "executor": "e49e91412c87825156881a4f529c373c356a1509",
+  "request": "f93eb8d007a813413dd271efa7068992f663ddb0",
+  "branch": "investigate/pr140-credit-current-20261104",
+  "tests": "Two complete existing credit-exchange stories per viewport; original300s and all real-service assertions retained",
+  "expectedImages": 216,
+  "guards": "Six tests PASS including exact selection, replay/source/scope rejection, both launcher validation and bounded checkout target availability; actual Playwright collection2perviewport",
+  "source": "Production/spec/helpers/runtime/reference trees identical target936b3239; source same active1c586349",
+  "approval": "No resulting images approved; each changed original must be inspected",
+  "liveGalaxyRun": 41867551971,
+  "liveRequiredStrictRun": 41852381575,
+  "retention": "14day remote artifacts, metadata first; no new download this checkpoint"
+}
