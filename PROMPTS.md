@@ -327,3 +327,7 @@ sorry I don't mean PR1. I mean the oldest unmerged PR
 ## Prompt 35: Ground Combat
 
 In the step 0 decisions table, for ground combat, it says "Preserves linear scaling and defender-first advantage. Equal forces leave one defender; some draft subtraction examples therefore changePreserves linear scaling and defender-first advantage. Equal forces leave one defender; some draft subtraction examples therefore change". This makes no sense to me. In fact how many defenders remain when the counts are equal depends on both the defender's and the attacker's melee levels. If the defender is at level 5 for example, then any nubmer of attackers <=5 is vanquished before they can do any damaage. So that means 5 vs 5 leaves 5 defenders, *not one*. Analyze how the code handles this case, explain why this statement is there, and stop.
+
+## Prompt 36: Market Formula
+
+explain what is meant by "Bounds construction-ring profits. Replaces unlimited per-focus-point generation; investing applies to normal income, not this bounded pool. This is a material change to the draft formula" for markets
