@@ -875,3 +875,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reconcile remaining strict backlog against retained source-compatible evidence while preserving the sole live PR140 verification.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind guarded current access candidates to three complete original admission, camera and identity-readiness journeys without changing assertions.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete 101-view current campaign-access candidate run with source-bound inputs and no baseline updates.
