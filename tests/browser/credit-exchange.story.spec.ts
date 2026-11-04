@@ -10,6 +10,7 @@ import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
+import { assertScreenFit } from "./story-helpers/screen-fit";
 import { creditStoryPrefix } from "./story-helpers/credit-clock.mjs";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -342,7 +343,21 @@ for (const interrupted of [false, true])
             expect((await canonical()).trades!.offers).toEqual([]);
           },
         },
-        verifications: checks(),
+        verifications: [
+          ...checks(),
+          {
+            spec: "The focused requested-credit input and its complete outline remain inside every clipping ancestor.",
+            check: async () => {
+              await expect(
+                panel(sender).getByLabel("Credits you request"),
+              ).toBeFocused();
+              await sender.evaluate(assertScreenFit, {
+                surface: "game" as const,
+                focusedControl: true,
+              });
+            },
+          },
+        ],
         views: [
           { ...view(0), primary: [button(sender, "Share credit offer")] },
           view(1),

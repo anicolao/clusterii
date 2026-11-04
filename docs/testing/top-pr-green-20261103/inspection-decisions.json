@@ -23073,5 +23073,109 @@
         "previousSha256": "e68f39e321eea60e2fa6600122445f52fb1aa71bad8915bb1acec167ef857e18"
       }
     ]
+  },
+  {
+    "target": "a84fa78c546c7cfb11a29e914ece1faa88c99666",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9d978815d0ce84c6a60cd9825d3d408bd6275fce1a5e2547bb3f2abd009edc10",
+    "disposition": "approved-regression",
+    "inspection": "Corrected original individually viewed: focused Roster ring fully separated from confirmed-seat text in each viewport. Actual roster/seat facts and campaign actions remain visible. Neighboring briefing text intentionally scrolls in bounded reader. Large displayed2048 from3840; layout/content only. No full design approval.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "viewport": "desktop",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/006-read-waiting-rail-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a84fa78c546c7cfb11a29e914ece1faa88c99666",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b",
+    "disposition": "approved-regression",
+    "inspection": "Corrected original individually viewed: focused Roster ring fully separated from confirmed-seat text in each viewport. Actual roster/seat facts and campaign actions remain visible. Neighboring briefing text intentionally scrolls in bounded reader. Large displayed2048 from3840; layout/content only. No full design approval.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/large/test-results/stories/galaxy-command-surface/large/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "viewport": "large",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/large/test-results/stories/galaxy-command-surface/large/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/006-read-waiting-rail-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a84fa78c546c7cfb11a29e914ece1faa88c99666",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9f6a345cfcd8bb2f2c85f4faeef92d09aaab31ace79c4b3d83624dcd8faca045",
+    "disposition": "approved-regression",
+    "inspection": "Corrected original individually viewed: focused Roster ring fully separated from confirmed-seat text in each viewport. Actual roster/seat facts and campaign actions remain visible. Neighboring briefing text intentionally scrolls in bounded reader. Large displayed2048 from3840; layout/content only. No full design approval.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "a84fa78c546c7cfb11a29e914ece1faa88c99666",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "58ff3ea807ddff41708919d116745a14706669c7db5b9c046bec3d559d7cf5ed",
+    "disposition": "approved-regression",
+    "inspection": "Corrected original individually viewed: focused Roster ring fully separated from confirmed-seat text in each viewport. Actual roster/seat facts and campaign actions remain visible. Neighboring briefing text intentionally scrolls in bounded reader. Large displayed2048 from3840; layout/content only. No full design approval.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/short/test-results/stories/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/short/test-results/stories/galaxy-command-surface/short/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "936b3239a3ce7024685e04889ba0d2c5c5ea29fa",
+    "reviewer": "Implementation agent",
+    "sha256": "8ce0c1753c0b3010d563610ca2e489c1790ee78b0cbfaeaf8a4e72112920937c",
+    "disposition": "held-focused-control-clipping",
+    "inspection": "Original viewed: requested-credit focused input bottom/ring clips under fixed footer. Reproduced original short real-service story with existing read-only focusedControl audit: paint516..580, clip516..558. Do not promote this original.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png",
+        "story": "credit-exchange-ordinary",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+        "spec": "tests/browser/credit-exchange.story.spec.ts",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png",
+        "previousSha256": "a8cf9d75698210a832961c2ef1d43baa70caf2487e759b9a1d56e0ecd7dce17f"
+      }
+    ]
+  },
+  {
+    "target": "936b3239a3ce7024685e04889ba0d2c5c5ea29fa",
+    "reviewer": "Implementation agent",
+    "sha256": "70fe7fce5ccbfd95a68906cfeacfd2f69c84de9645adf47f7861467278f63d45",
+    "disposition": "held-focused-control-clipping",
+    "inspection": "Original viewed: requested-credit focused input bottom/ring clips under fixed footer. Reproduced original short real-service story with existing read-only focusedControl audit: paint516..580, clip516..558. Do not promote this original.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/011-compose-1-exchange-sender.png",
+        "story": "credit-exchange-recovery",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+        "spec": "tests/browser/credit-exchange.story.spec.ts",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-1-exchange-sender.png",
+        "previousSha256": "6015ddd11bdefca598b542a371ead57dbbae9860b49d6fa863c201ed6d9ca9ca"
+      }
+    ]
   }
 ]

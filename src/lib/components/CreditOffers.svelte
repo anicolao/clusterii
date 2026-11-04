@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { keepFocusedControlVisible } from "$lib/focused-reader";
   import type { MotionInspection } from "$lib/motion";
   import { base } from "$app/paths";
   import type { CampaignView } from "@shared/campaign";
@@ -141,6 +142,7 @@
   </header>
   <!-- svelte-ignore a11y_no_noninteractive_tabindex (Keyboard users scroll the bounded offer details without moving the commitment rail.) -->
   <div
+    use:keepFocusedControlVisible
     class="offer-reading"
     role="region"
     aria-label="Offer details"

@@ -1,0 +1,989 @@
+{
+  "cause": "Focused requested-credit input remains partly outside bounded reader after fill. Original short live story measured paint516..580 against reader end558. Existing viewport-only primary Share button check did not cover focused input.",
+  "fix": "Reuse identical existing MarketFocus keepFocusedControlVisible implementation in shared focused-reader action and attach to CreditOffers bounded reader. Measured inner scroll only; no focus/data/outer-page/timer changes.",
+  "marketExtraction": "Function text identical after indentation/whitespace normalization; no executable token changes.",
+  "verification": {
+    "beforeExit": 1,
+    "afterExit": 0,
+    "journeys": 8,
+    "duration": "4.2m",
+    "views": 216,
+    "originalBudgets": "300s stories,30s steps,10s capture; no retries or snapshot updates",
+    "assertion": "Existing non-scrolling assertScreenFit focusedControl true catches full focused control/outline clipping through all ancestors. Original checks retained.",
+    "localVisual": "Four corrected ordinary compose originals individually viewed; full input and gold ring visible, complete action rail. Large3840 shown2048; Darwin local evidence only. Linux originals need fresh source-compatible comparison/review.",
+    "postRunChange": "Only TypeScript literal annotation as const and formatting after successful runtime; no emitted behavior change. Initial check type error retained separately.",
+    "manifests": [
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "desktop",
+        "story": "credit-exchange-ordinary",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "7b72a6ebb6f7af92fce438a82a075699d5bd101eba5daa8254235d805fcc7465"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "405f53e8f86a7b45b764762cb3407a29c1a66bfe33711bca9c524b32b09a01e9"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "45a911a06a01f8757891abfaaaf0035a9f711330244ce45669276addebfa7cdf"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/012-offer-shared-1-exchange-sender.png",
+            "sha256": "1ae62d4fbfe96a36bdab0dd2f60785c4b6b04424a9e8b1dd1c6733564c2de21b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/012-offer-shared-2-exchange-recipient.png",
+            "sha256": "3e6d6193f39a3bc1d99939beb1de95bfc0f08aefd6e007c3335b8fb8e85cbe81"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/012-offer-shared-3-outer-witness.png",
+            "sha256": "45a911a06a01f8757891abfaaaf0035a9f711330244ce45669276addebfa7cdf"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/013-close-offer-feedback-1-exchange-sender.png",
+            "sha256": "a8368f2b36087235b4f8b530ec5fb07e8e762a0d6e3c701a37b1f8cce39050f1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/014-review-terms-1-exchange-sender.png",
+            "sha256": "93741ae8ef25207490d50a7cc3c768eac5262694289024e9326d66466e4238fa"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/014-review-terms-2-exchange-recipient.png",
+            "sha256": "a2426c3588a9a430fea058568500588055ffaefbc5a8195552e0e8104197a5f2"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/014-review-terms-3-outer-witness.png",
+            "sha256": "45a911a06a01f8757891abfaaaf0035a9f711330244ce45669276addebfa7cdf"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/015-accept-terms-1-exchange-sender.png",
+            "sha256": "9cb2a2a850f60bd3ec20711e59f3a1ad9927ea4ff3016bd20ebcf583a32d20b0"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/015-accept-terms-2-exchange-recipient.png",
+            "sha256": "e93b594655723cdec219ad238b42bd5bf69df3d557a059ff8987a05db2d90e34"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/015-accept-terms-3-outer-witness.png",
+            "sha256": "45a911a06a01f8757891abfaaaf0035a9f711330244ce45669276addebfa7cdf"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/017-settled-1-exchange-sender.png",
+            "sha256": "9420405960f03f2cce8139e08b189847e68989ff82aabaa7f82f573aa20bed62"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/017-settled-2-exchange-recipient.png",
+            "sha256": "8bf60275264adcd8697b59784e798e3019a47f1161faa33fa62cf5f10244d0ee"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/017-settled-3-outer-witness.png",
+            "sha256": "178372c53df3be39910b5d158901f3406a8b66aeb5172dd5858f7c9d87f07c3f"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/019-second-offer-1-exchange-sender.png",
+            "sha256": "8ec896cbb03a14e1cbd4a9eb3aae1925602ad95fe263ff5021f84b61e22e81f1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/019-second-offer-2-exchange-recipient.png",
+            "sha256": "caad2aa5f70396c0bfdc0d500d647030f5520ef4fe950adf86b553b292d72ae4"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/019-second-offer-3-outer-witness.png",
+            "sha256": "178372c53df3be39910b5d158901f3406a8b66aeb5172dd5858f7c9d87f07c3f"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/020-withdraw-1-exchange-sender.png",
+            "sha256": "f31c6de0b269964f5c46cb9084b1a7a2e039f806b763a20b933727fc6ba9a440"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/020-withdraw-2-exchange-recipient.png",
+            "sha256": "a7ac72c4bebb807fee8b9f38b5b25a9ac032c749a63ddd57a07650232c6425f9"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/020-withdraw-3-outer-witness.png",
+            "sha256": "178372c53df3be39910b5d158901f3406a8b66aeb5172dd5858f7c9d87f07c3f"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/022-withdrawn-1-exchange-sender.png",
+            "sha256": "edfa077ca17de9f7abf40a612d86e79dc29e0aa2e7ce1c58c27b70a491406354"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/022-withdrawn-2-exchange-recipient.png",
+            "sha256": "82c8aa12b1320a3e0cab0860fe1859f61dea379f96e4bf0def9d768aa87bc80d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/022-withdrawn-3-outer-witness.png",
+            "sha256": "c78c949097a4869bf4142da0dbeeda7f33eca205c3e7ec61e6a2786b12f2b92f"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/023-reload-outcome-1-exchange-sender.png",
+            "sha256": "f639ff38a8fbbab36cdf79b35fc6cfb213c778bd9e76b950551f8783377f9430"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/023-reload-outcome-2-exchange-recipient.png",
+            "sha256": "82c8aa12b1320a3e0cab0860fe1859f61dea379f96e4bf0def9d768aa87bc80d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/023-reload-outcome-3-outer-witness.png",
+            "sha256": "c78c949097a4869bf4142da0dbeeda7f33eca205c3e7ec61e6a2786b12f2b92f"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/desktop/darwin-arm64/024-keyboard-return-1-exchange-sender.png",
+            "sha256": "fb046f838498b81a6838e598fd8b82c9aa5acc6b745eb006eb1a9bc764a0c700"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "large",
+        "story": "credit-exchange-ordinary",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "2eeab948b3926e7f5024431b07c934876d97bc1497088fde372df9a854f5add1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "3702cc925bbcd7b813462b8def1d3cad9cbf47fd35f309e8ec7f568b34b2750e"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "c6fe44951b12d59cbdce0e92671b373b743e7326927e88a0c44b84567148558b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/012-offer-shared-1-exchange-sender.png",
+            "sha256": "1782cbad2632c1f2ff219d825bea0e363b9ee9b4a9d01f5308ce63a948670bb4"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/012-offer-shared-2-exchange-recipient.png",
+            "sha256": "750232d8e876dd1700b3d645d3780b41caea5adcaa1847ed6613866006714651"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/012-offer-shared-3-outer-witness.png",
+            "sha256": "c6fe44951b12d59cbdce0e92671b373b743e7326927e88a0c44b84567148558b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/013-close-offer-feedback-1-exchange-sender.png",
+            "sha256": "cfb3223c7400f00e86aa123a63e056af3a741dcfe537d927600b1ff3667ab88d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/014-review-terms-1-exchange-sender.png",
+            "sha256": "81ce7bee70657c0cf7d9736b9c16e3b9bff3c65d7d8cfe0597091dad226c81b5"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/014-review-terms-2-exchange-recipient.png",
+            "sha256": "acd7ab78a88783a322c178aa00172a81603e70509c99b0ea19f4ae82aa6eff5a"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/014-review-terms-3-outer-witness.png",
+            "sha256": "c6fe44951b12d59cbdce0e92671b373b743e7326927e88a0c44b84567148558b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/015-accept-terms-1-exchange-sender.png",
+            "sha256": "261ead530410d4279ab014b2461f656613384727ce6d64039fb2c5de2731f9da"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/015-accept-terms-2-exchange-recipient.png",
+            "sha256": "83e512ecb4401b68b4fe044707c8c28b6e36b019c0be497eab29261008c9e0f4"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/015-accept-terms-3-outer-witness.png",
+            "sha256": "c6fe44951b12d59cbdce0e92671b373b743e7326927e88a0c44b84567148558b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/017-settled-1-exchange-sender.png",
+            "sha256": "f6e990a5fa5b577eb8e8625df720b156fff3dc01644b301e942b406110b2686a"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/017-settled-2-exchange-recipient.png",
+            "sha256": "a3f4db1dfe9c929ddefc7c94c15ae4596ac83147347fac78f282dee1d3d6ef07"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/017-settled-3-outer-witness.png",
+            "sha256": "e3069ae623e81e2a91deb04653534693407e687ba063d8de953ac526ad1f39b4"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/019-second-offer-1-exchange-sender.png",
+            "sha256": "dfbd8684a71ad1adcf2270fcf3e7d70911792725bef0c689d23409b020641e23"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/019-second-offer-2-exchange-recipient.png",
+            "sha256": "a5e95be323beae13b4e00b17e889da918bd6361924020115da98c3ad0eca52b6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/019-second-offer-3-outer-witness.png",
+            "sha256": "e3069ae623e81e2a91deb04653534693407e687ba063d8de953ac526ad1f39b4"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/020-withdraw-1-exchange-sender.png",
+            "sha256": "e034f7a34f09299f1c6d81f93a3bc599d8a6376d0469b8a155d888cc6fb30ec8"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/020-withdraw-2-exchange-recipient.png",
+            "sha256": "964e10866bf1c9ffa3b64c39b3546241566fd2b1d5260cba1c5e1f874b9957b8"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/020-withdraw-3-outer-witness.png",
+            "sha256": "e3069ae623e81e2a91deb04653534693407e687ba063d8de953ac526ad1f39b4"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/022-withdrawn-1-exchange-sender.png",
+            "sha256": "a35c88984edaf072849198b627981be15e33701acdc84c8d3b3ee6cd01f83b17"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/022-withdrawn-2-exchange-recipient.png",
+            "sha256": "0be71a8398072daf0da5db5c743511dff5c0bc4b250cbbe92fb0b2e1a735c21c"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/022-withdrawn-3-outer-witness.png",
+            "sha256": "0c05f091b54622935ef78e92e68f71bb0e0bf3383a2550eed3f73c52cdbda884"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/023-reload-outcome-1-exchange-sender.png",
+            "sha256": "0629bc82ff767c56556efee47923ea5518be73bf85b7b09ca4d41c20a2488d47"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/023-reload-outcome-2-exchange-recipient.png",
+            "sha256": "0be71a8398072daf0da5db5c743511dff5c0bc4b250cbbe92fb0b2e1a735c21c"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/023-reload-outcome-3-outer-witness.png",
+            "sha256": "0c05f091b54622935ef78e92e68f71bb0e0bf3383a2550eed3f73c52cdbda884"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/large/darwin-arm64/024-keyboard-return-1-exchange-sender.png",
+            "sha256": "f4e61a64748a657565833b571272b6bc80afad39b95085cbaf5ffa25171865af"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "phone",
+        "story": "credit-exchange-ordinary",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "b2c6658066b27311fe93a277e245ef19b3c38985d37203a73671ba8c8f283a73"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "36fa2d66ca58ac7e01496d1b22ed51755b377f27642fa90d312f390d73c964ea"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/012-offer-shared-1-exchange-sender.png",
+            "sha256": "76555fb29580ad80b67dbed95234405f0f3a7a4e23d6fc75048f211657ac2ec3"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/012-offer-shared-2-exchange-recipient.png",
+            "sha256": "8ada20409369762ef0a48464ea5a4b9de2995de7fd97722c38c47da4e635cfe5"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/012-offer-shared-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/013-close-offer-feedback-1-exchange-sender.png",
+            "sha256": "a99233e9ad947f44ae7a96a247c7a5731a2d2fd67b393d45e937f0ca822a2ddc"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/014-review-terms-1-exchange-sender.png",
+            "sha256": "90a70d8bb7f94a2d8e068eee6b15de3c5b34c620f4a5fab5be22aaa5312faed2"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/014-review-terms-2-exchange-recipient.png",
+            "sha256": "7a23403006b194cc6f7b7195382acfdd1c9ab89526c61bb00c298be22a75fe32"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/014-review-terms-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/015-accept-terms-1-exchange-sender.png",
+            "sha256": "c1f3730ea047027be26202beaa1dbf18564ec3550eb61ec1807ecc0f3b671d16"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/015-accept-terms-2-exchange-recipient.png",
+            "sha256": "85b77f19949e3c84104c3dcdefbe598580c606428e437b11a9f0fd37ea1160a0"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/015-accept-terms-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/017-settled-1-exchange-sender.png",
+            "sha256": "2f39d4010595697c21d8a430ec78beed03a1951103e7663ad38a8b707de5d5be"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/017-settled-2-exchange-recipient.png",
+            "sha256": "b968b801397240264d548c645d45677139762e2307a6b579489c13f1e24ac837"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/017-settled-3-outer-witness.png",
+            "sha256": "906265cf881dde63d9178e814817bb68fbfd05599931088c6cb12f33ba349d22"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/019-second-offer-1-exchange-sender.png",
+            "sha256": "cb57cb672013a292f99e371966e126a344a133f87466a470f893015436ac3189"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/019-second-offer-2-exchange-recipient.png",
+            "sha256": "2522e89160f0bda011df90c8378dcc8a70d1acfc6c436ec57893d8fa289f012a"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/019-second-offer-3-outer-witness.png",
+            "sha256": "906265cf881dde63d9178e814817bb68fbfd05599931088c6cb12f33ba349d22"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/020-withdraw-1-exchange-sender.png",
+            "sha256": "8515c8992513be3256b5f41b84c0112cc42d37f85693f7efbdff60684340187d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/020-withdraw-2-exchange-recipient.png",
+            "sha256": "9552a376546253a0ba862e30abe05b9743d104ad89895e37758ad052bdcee584"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/020-withdraw-3-outer-witness.png",
+            "sha256": "906265cf881dde63d9178e814817bb68fbfd05599931088c6cb12f33ba349d22"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/022-withdrawn-1-exchange-sender.png",
+            "sha256": "331ff20012548bca4f3796b1ce84de177bf27332d5b2bee4f86dfdf980de76ff"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/022-withdrawn-2-exchange-recipient.png",
+            "sha256": "7f30f3c626a5dbc5774a498cf82a0cdabbbd253fe8a332cc17b88a990481e0be"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/022-withdrawn-3-outer-witness.png",
+            "sha256": "a058e626d965b6d6e0a712f6fac5f5ab3a611d95b179f7f3d0db7d991b23080d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/023-reload-outcome-1-exchange-sender.png",
+            "sha256": "53eab963e15516f53cf7b9e37f528cb41ed571b5f8e59a5548ed1d163e786d5e"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/023-reload-outcome-2-exchange-recipient.png",
+            "sha256": "7f30f3c626a5dbc5774a498cf82a0cdabbbd253fe8a332cc17b88a990481e0be"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/023-reload-outcome-3-outer-witness.png",
+            "sha256": "a058e626d965b6d6e0a712f6fac5f5ab3a611d95b179f7f3d0db7d991b23080d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/phone/darwin-arm64/024-keyboard-return-1-exchange-sender.png",
+            "sha256": "21b44af0edee2ec4f6d83cc211a782b2a7da7ad75c0343a9cde2b6e7c63d9e57"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "short",
+        "story": "credit-exchange-ordinary",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "5653805535937b5d7ee6343d324abc901bab9837ccac4d77a77893e2c95d7fc0"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "969719e9e3f34519d5e524611bf4d9511c66539f0f9b5b00deeb428ebe96bb6d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "b97b5af284986f78992de4e3a326f08959431ab91b71ca4162d2f1dd41ae2708"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/012-offer-shared-1-exchange-sender.png",
+            "sha256": "7818a16a0a2574007a6180eda7c53a4880fd8b43b998d5e7427dfe2a725199e3"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/012-offer-shared-2-exchange-recipient.png",
+            "sha256": "ed25acd7d5cde7bd8d1edff47cab7e9cd613f20b540a64810350c8be78e5a246"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/012-offer-shared-3-outer-witness.png",
+            "sha256": "b97b5af284986f78992de4e3a326f08959431ab91b71ca4162d2f1dd41ae2708"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/013-close-offer-feedback-1-exchange-sender.png",
+            "sha256": "70b6eff443427161b192dad8d4c61800013078991e30bebfeb85dd14bd3e092b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/014-review-terms-1-exchange-sender.png",
+            "sha256": "393c695dbf5067d681fabd697161e29f20ce2ef926b5010c00dd38dc1798050a"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/014-review-terms-2-exchange-recipient.png",
+            "sha256": "12e440552d3610c6791172f21053d0e380646c016cfb09717026f0ee8ad84f36"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/014-review-terms-3-outer-witness.png",
+            "sha256": "b97b5af284986f78992de4e3a326f08959431ab91b71ca4162d2f1dd41ae2708"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/015-accept-terms-1-exchange-sender.png",
+            "sha256": "248d17f798a0b41f7904bbeb501e08d5584f9c935a60b29ed91f29e2a5c6921f"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/015-accept-terms-2-exchange-recipient.png",
+            "sha256": "5dc376a87a425624c5d8eea81a7054e496e60549077c1a9d17e716d0cf2161c3"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/015-accept-terms-3-outer-witness.png",
+            "sha256": "b97b5af284986f78992de4e3a326f08959431ab91b71ca4162d2f1dd41ae2708"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/017-settled-1-exchange-sender.png",
+            "sha256": "2de4430fa9b3c0f32010b6caab854fa8ab00644536b8e553f0588f9db37b282b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/017-settled-2-exchange-recipient.png",
+            "sha256": "c14f087224d055e32e90acfca8587fa47ce8460640342a7c0acd13444084f9ed"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/017-settled-3-outer-witness.png",
+            "sha256": "76a74b8487589b0741513e55113bcb772b42637dfbee148881422ced479061be"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/019-second-offer-1-exchange-sender.png",
+            "sha256": "53a7866002330af14b12fbcc89eb0afcaa2a38dbbe0c1cbb96e5f0672d61e3b2"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/019-second-offer-2-exchange-recipient.png",
+            "sha256": "c14f087224d055e32e90acfca8587fa47ce8460640342a7c0acd13444084f9ed"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/019-second-offer-3-outer-witness.png",
+            "sha256": "76a74b8487589b0741513e55113bcb772b42637dfbee148881422ced479061be"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/020-withdraw-1-exchange-sender.png",
+            "sha256": "47b717e7976181b5745bdac55d44a0d1cc42a3a2cf4613e80c63ab5ff844bbe3"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/020-withdraw-2-exchange-recipient.png",
+            "sha256": "421b97e440092b3fb7d77b868c1aeab14bdd0f6103a73a8105bcbbbfb510bd20"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/020-withdraw-3-outer-witness.png",
+            "sha256": "76a74b8487589b0741513e55113bcb772b42637dfbee148881422ced479061be"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/022-withdrawn-1-exchange-sender.png",
+            "sha256": "1f2b066141b1d926fc1c66467dcf27a625e146de6da8e21c1ddd6c80b0334ef9"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/022-withdrawn-2-exchange-recipient.png",
+            "sha256": "448f60192ea6cc0433b68dfc29eace5ce626a3bf71285eed5068ae0833f0b254"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/022-withdrawn-3-outer-witness.png",
+            "sha256": "df0fe47c3a3fbe25065fd50de368d85d92ea18ddc67308b047e5b4c62830ca97"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/023-reload-outcome-1-exchange-sender.png",
+            "sha256": "6c58ae21a1a23c3ca843b9927d86e22cf0d5429743a9398ff66019cd84bc6956"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/023-reload-outcome-2-exchange-recipient.png",
+            "sha256": "448f60192ea6cc0433b68dfc29eace5ce626a3bf71285eed5068ae0833f0b254"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/023-reload-outcome-3-outer-witness.png",
+            "sha256": "df0fe47c3a3fbe25065fd50de368d85d92ea18ddc67308b047e5b4c62830ca97"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-ordinary/short/darwin-arm64/024-keyboard-return-1-exchange-sender.png",
+            "sha256": "38879c581bd162725fb42edcebdd9052844731cf755cad1ef92d04cd52fdbcd8"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "desktop",
+        "story": "credit-exchange-recovery",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "6526cce0ef31a43c17a7038f9c5c291e73224acb5fec6c2764c97dba2eeb20b9"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "e2f025c854ccfbcdda908365dbfb84c6f77809164827964acea9783bb542c0a1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "52e87ff4e9ad3023e8ed954302145d85a93730074d99efa30e73522efa152a72"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/013-uncertain-commitment-1-exchange-sender.png",
+            "sha256": "2cd6ce548b0c6c7eddecb31e7d92622d165fcd05c10734359a204afc2dee2451"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+            "sha256": "e2f025c854ccfbcdda908365dbfb84c6f77809164827964acea9783bb542c0a1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/013-uncertain-commitment-3-outer-witness.png",
+            "sha256": "52e87ff4e9ad3023e8ed954302145d85a93730074d99efa30e73522efa152a72"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/014-reload-pending-1-exchange-sender.png",
+            "sha256": "04ce4d1839639bb83b82e17020db223af45502d3cb481acf248565a01098c247"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/014-reload-pending-2-exchange-recipient.png",
+            "sha256": "e2f025c854ccfbcdda908365dbfb84c6f77809164827964acea9783bb542c0a1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/014-reload-pending-3-outer-witness.png",
+            "sha256": "52e87ff4e9ad3023e8ed954302145d85a93730074d99efa30e73522efa152a72"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/016-offer-shared-1-exchange-sender.png",
+            "sha256": "65837b68b580901e9bb1a44da41c8b619cadc501c6bf74a346f3fced63150f34"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/016-offer-shared-2-exchange-recipient.png",
+            "sha256": "582e3d9456294d78fcc8915c6564c9e317bab2a6634a5abad4b2ef8ab9d7f9ee"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/016-offer-shared-3-outer-witness.png",
+            "sha256": "52e87ff4e9ad3023e8ed954302145d85a93730074d99efa30e73522efa152a72"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/017-review-terms-1-exchange-sender.png",
+            "sha256": "65837b68b580901e9bb1a44da41c8b619cadc501c6bf74a346f3fced63150f34"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/017-review-terms-2-exchange-recipient.png",
+            "sha256": "665ab1fe04849742429f7b5f0926a62d8570321ebb5d07a85c0a39e42a1a9f27"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/017-review-terms-3-outer-witness.png",
+            "sha256": "52e87ff4e9ad3023e8ed954302145d85a93730074d99efa30e73522efa152a72"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/018-accept-terms-1-exchange-sender.png",
+            "sha256": "be83822f6e147be310006e7f42bf02063632445a7a94ba9948f97ff1642df943"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/018-accept-terms-2-exchange-recipient.png",
+            "sha256": "aae583dd925579567bbae6c5a3a4c9e841a8a98acfd3aa4e26920e7abc8d562a"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/018-accept-terms-3-outer-witness.png",
+            "sha256": "52e87ff4e9ad3023e8ed954302145d85a93730074d99efa30e73522efa152a72"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/020-settled-1-exchange-sender.png",
+            "sha256": "5364b73e2b478bb094acbaa336c8b7bd5f66b1f98e6c63c12895050ea8fa8df9"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/020-settled-2-exchange-recipient.png",
+            "sha256": "30c550d21e223c7cfe5de760d2af0dbd29dd28f8e746554906be98a769543de5"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/020-settled-3-outer-witness.png",
+            "sha256": "9eeb3c339c4bfdb3a40d906aeaec30dd84582651dcc65101f9b65f686579ec18"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/022-reload-outcome-1-exchange-sender.png",
+            "sha256": "654e2222139a5d9d682504b029ced12a64bccc6f0c3cd6d3ef474adfb90cf0df"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/022-reload-outcome-2-exchange-recipient.png",
+            "sha256": "30c550d21e223c7cfe5de760d2af0dbd29dd28f8e746554906be98a769543de5"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/022-reload-outcome-3-outer-witness.png",
+            "sha256": "9eeb3c339c4bfdb3a40d906aeaec30dd84582651dcc65101f9b65f686579ec18"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/desktop/darwin-arm64/023-keyboard-return-1-exchange-sender.png",
+            "sha256": "95cc70edcf63a8c671168a8135ab4b78bd9375799034c2d2f207aaf383694f69"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "large",
+        "story": "credit-exchange-recovery",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "a2a73d0cbd15aca489153ee40030bd8bd8b17f5a55e35dc2518b830201e9f9db"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "2cf8a58496afe93d1c243bbb077c5035f5c7bb1c09ef12b17e4f47062bc482bd"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "65fd7f1165999aa37a9da09b8d47d90b669b9220fd8c15970098c7d456b375b1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/013-uncertain-commitment-1-exchange-sender.png",
+            "sha256": "efb4646dd399a5d1ac0aa923463293fe4353554ab4ef0f9425707e526bf2752e"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+            "sha256": "2cf8a58496afe93d1c243bbb077c5035f5c7bb1c09ef12b17e4f47062bc482bd"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/013-uncertain-commitment-3-outer-witness.png",
+            "sha256": "65fd7f1165999aa37a9da09b8d47d90b669b9220fd8c15970098c7d456b375b1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/014-reload-pending-1-exchange-sender.png",
+            "sha256": "509530065976ead204811cf2114d9ebafd954e7b99a91774293a34ac0243bbc0"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/014-reload-pending-2-exchange-recipient.png",
+            "sha256": "2cf8a58496afe93d1c243bbb077c5035f5c7bb1c09ef12b17e4f47062bc482bd"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/014-reload-pending-3-outer-witness.png",
+            "sha256": "65fd7f1165999aa37a9da09b8d47d90b669b9220fd8c15970098c7d456b375b1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/016-offer-shared-1-exchange-sender.png",
+            "sha256": "04c9fe38005b0489821ac95f81d331b9e21e6de9818f6825029cffacb8c41292"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/016-offer-shared-2-exchange-recipient.png",
+            "sha256": "162219a0c997862907d10cfa27a5717f364adacb3074852ace5a86d6c2b47005"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/016-offer-shared-3-outer-witness.png",
+            "sha256": "65fd7f1165999aa37a9da09b8d47d90b669b9220fd8c15970098c7d456b375b1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/017-review-terms-1-exchange-sender.png",
+            "sha256": "04c9fe38005b0489821ac95f81d331b9e21e6de9818f6825029cffacb8c41292"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/017-review-terms-2-exchange-recipient.png",
+            "sha256": "41cc23cb3ba47dd1ba087c483a3ca25af01a7d965dad3990042b3454ff087929"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/017-review-terms-3-outer-witness.png",
+            "sha256": "65fd7f1165999aa37a9da09b8d47d90b669b9220fd8c15970098c7d456b375b1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/018-accept-terms-1-exchange-sender.png",
+            "sha256": "7d4ccd19bc2d83a5e9aa206d2fc9ce2e0915f63a92922c1f4f7b1b076049710c"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/018-accept-terms-2-exchange-recipient.png",
+            "sha256": "45e63a5bb4a5c56a53c70d214264b44997fc2a2d1b00af974b678c47a226cb96"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/018-accept-terms-3-outer-witness.png",
+            "sha256": "65fd7f1165999aa37a9da09b8d47d90b669b9220fd8c15970098c7d456b375b1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/020-settled-1-exchange-sender.png",
+            "sha256": "2989775dd5416fc01db71228a234b53ae69116818c3021f72b9dbca11e0ada34"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/020-settled-2-exchange-recipient.png",
+            "sha256": "4f7bace945077a0314c28070eb7892755683ac30fa93a4e4728da476ab93bce7"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/020-settled-3-outer-witness.png",
+            "sha256": "256b8e1d39b8ae228930a3a871d412f2de8fbe9536f84157bd9850500a8f2580"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/022-reload-outcome-1-exchange-sender.png",
+            "sha256": "42b666639dfe51c07844b5feed3dd2b764e5f42a0f55663eae8a8458d7cf3cd1"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/022-reload-outcome-2-exchange-recipient.png",
+            "sha256": "4f7bace945077a0314c28070eb7892755683ac30fa93a4e4728da476ab93bce7"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/022-reload-outcome-3-outer-witness.png",
+            "sha256": "256b8e1d39b8ae228930a3a871d412f2de8fbe9536f84157bd9850500a8f2580"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/large/darwin-arm64/023-keyboard-return-1-exchange-sender.png",
+            "sha256": "2cc4fefd66d3a6296ee6fd0f6c56786744bf69059847d5d05ba243d185d3ae85"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "phone",
+        "story": "credit-exchange-recovery",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "b2c6658066b27311fe93a277e245ef19b3c38985d37203a73671ba8c8f283a73"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "36fa2d66ca58ac7e01496d1b22ed51755b377f27642fa90d312f390d73c964ea"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/013-uncertain-commitment-1-exchange-sender.png",
+            "sha256": "f347e4f346c48f5b41ffc37bd412df85aeb37c3b31361866a0b964861c0b8198"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+            "sha256": "36fa2d66ca58ac7e01496d1b22ed51755b377f27642fa90d312f390d73c964ea"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/013-uncertain-commitment-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/014-reload-pending-1-exchange-sender.png",
+            "sha256": "7d72a4c86540938737996cc69f3aaa8cf0db33156fbbe3be0eb9c80519d67896"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/014-reload-pending-2-exchange-recipient.png",
+            "sha256": "36fa2d66ca58ac7e01496d1b22ed51755b377f27642fa90d312f390d73c964ea"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/014-reload-pending-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/016-offer-shared-1-exchange-sender.png",
+            "sha256": "76555fb29580ad80b67dbed95234405f0f3a7a4e23d6fc75048f211657ac2ec3"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/016-offer-shared-2-exchange-recipient.png",
+            "sha256": "8ada20409369762ef0a48464ea5a4b9de2995de7fd97722c38c47da4e635cfe5"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/016-offer-shared-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/017-review-terms-1-exchange-sender.png",
+            "sha256": "76555fb29580ad80b67dbed95234405f0f3a7a4e23d6fc75048f211657ac2ec3"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/017-review-terms-2-exchange-recipient.png",
+            "sha256": "7a23403006b194cc6f7b7195382acfdd1c9ab89526c61bb00c298be22a75fe32"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/017-review-terms-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/018-accept-terms-1-exchange-sender.png",
+            "sha256": "52ca0b47ff7363550e878b158fcd1ad108a5c6b142bc3345d8fa389882419109"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/018-accept-terms-2-exchange-recipient.png",
+            "sha256": "85b77f19949e3c84104c3dcdefbe598580c606428e437b11a9f0fd37ea1160a0"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/018-accept-terms-3-outer-witness.png",
+            "sha256": "5681d338cd7a3f2891dabe28d7bcecda9db32f53033f3559bdf076f72fcb01d6"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/020-settled-1-exchange-sender.png",
+            "sha256": "8595662b40fe62558eaa4d8f5304e7ad0c9619012aa0821be667a985a597bcab"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/020-settled-2-exchange-recipient.png",
+            "sha256": "b968b801397240264d548c645d45677139762e2307a6b579489c13f1e24ac837"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/020-settled-3-outer-witness.png",
+            "sha256": "906265cf881dde63d9178e814817bb68fbfd05599931088c6cb12f33ba349d22"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/022-reload-outcome-1-exchange-sender.png",
+            "sha256": "5a5085828b78f77c88385aec270a542d6ce28a8c371aa3ffa9fe3c2f4ae5d8d8"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/022-reload-outcome-2-exchange-recipient.png",
+            "sha256": "b968b801397240264d548c645d45677139762e2307a6b579489c13f1e24ac837"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/022-reload-outcome-3-outer-witness.png",
+            "sha256": "906265cf881dde63d9178e814817bb68fbfd05599931088c6cb12f33ba349d22"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/phone/darwin-arm64/023-keyboard-return-1-exchange-sender.png",
+            "sha256": "8154692124659b6a89a1d10982acf29a7ee4fa9e831c7c96c0ce8d20bf7508a5"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/story.json",
+        "source": {
+          "commit": "28dd4f96ddf3db907a079aa519d9093a74c5bf07",
+          "dirty": true,
+          "spec": "tests/browser/credit-exchange.story.spec.ts",
+          "specSha256": "dc08b9d017a50094e032a333576516d76207065fa09cca2ef53d7f6960389ec2"
+        },
+        "viewport": "short",
+        "story": "credit-exchange-recovery",
+        "captures": [
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/011-compose-1-exchange-sender.png",
+            "sha256": "a939cee291feb6398078ae0d459d1fc53f8680ab71a3407dac1d724b03f9e414"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/011-compose-2-exchange-recipient.png",
+            "sha256": "152f297eab9a7a9b71232d4eca9c411c50b4463e88b0d5812e11856bfff73504"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/011-compose-3-outer-witness.png",
+            "sha256": "475997986ae92dc573203c3d8f7c088a91a48b9c05d53944e6efc95724b3fd25"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/013-uncertain-commitment-1-exchange-sender.png",
+            "sha256": "ead2dc07bbfa789999f2899f0e9432806ed94f1875946a22c87877e7f8c13220"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+            "sha256": "152f297eab9a7a9b71232d4eca9c411c50b4463e88b0d5812e11856bfff73504"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/013-uncertain-commitment-3-outer-witness.png",
+            "sha256": "475997986ae92dc573203c3d8f7c088a91a48b9c05d53944e6efc95724b3fd25"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/014-reload-pending-1-exchange-sender.png",
+            "sha256": "58fcf7e782aa297b83a708ccb97e66103cab0a9128ad4a2fbf13e79eeaefac4d"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/014-reload-pending-2-exchange-recipient.png",
+            "sha256": "152f297eab9a7a9b71232d4eca9c411c50b4463e88b0d5812e11856bfff73504"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/014-reload-pending-3-outer-witness.png",
+            "sha256": "475997986ae92dc573203c3d8f7c088a91a48b9c05d53944e6efc95724b3fd25"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/016-offer-shared-1-exchange-sender.png",
+            "sha256": "19950ada5fa382c6c031a0717000cb1ba415cbe40d66d1314eebe8a3a107d96b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/016-offer-shared-2-exchange-recipient.png",
+            "sha256": "3831581b93eae37922f893d37df1d87da9e3290a02d9409d8695b6749dc1feb3"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/016-offer-shared-3-outer-witness.png",
+            "sha256": "475997986ae92dc573203c3d8f7c088a91a48b9c05d53944e6efc95724b3fd25"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/017-review-terms-1-exchange-sender.png",
+            "sha256": "19950ada5fa382c6c031a0717000cb1ba415cbe40d66d1314eebe8a3a107d96b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/017-review-terms-2-exchange-recipient.png",
+            "sha256": "2e34324910e3dd5e6de1bb89ea32b9b30fe365af32510d5143d958bdbf1befe4"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/017-review-terms-3-outer-witness.png",
+            "sha256": "475997986ae92dc573203c3d8f7c088a91a48b9c05d53944e6efc95724b3fd25"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/018-accept-terms-1-exchange-sender.png",
+            "sha256": "abb73e62042a3c5d9d9d9028e6ec45286d1ce3db10507fcf97877f93e9b16324"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/018-accept-terms-2-exchange-recipient.png",
+            "sha256": "6bf404b8e0521b2933346e03f6794d5ef99b3eff000c3075a97e7d75318aeac0"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/018-accept-terms-3-outer-witness.png",
+            "sha256": "475997986ae92dc573203c3d8f7c088a91a48b9c05d53944e6efc95724b3fd25"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/020-settled-1-exchange-sender.png",
+            "sha256": "3311f2ed98845e5bae7b3ec219bff57a82e51a6151089a0b4f1a6a129b3e2898"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/020-settled-2-exchange-recipient.png",
+            "sha256": "849884f50c1899c53ebd1c001f5d9410157273d9c7d3da7634207cafccf1a47b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/020-settled-3-outer-witness.png",
+            "sha256": "aaab0c0adab4d0e85e701a4997c7fefd675b1c80fef44906e661aea05ba355b2"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/022-reload-outcome-1-exchange-sender.png",
+            "sha256": "e446ca973a586baa42c62fc495070073e5337f98361992e39c9acd7463ff3c42"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/022-reload-outcome-2-exchange-recipient.png",
+            "sha256": "849884f50c1899c53ebd1c001f5d9410157273d9c7d3da7634207cafccf1a47b"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/022-reload-outcome-3-outer-witness.png",
+            "sha256": "aaab0c0adab4d0e85e701a4997c7fefd675b1c80fef44906e661aea05ba355b2"
+          },
+          {
+            "image": "/tmp/cluster-credit-focus-after/stories/credit-exchange-recovery/short/darwin-arm64/023-keyboard-return-1-exchange-sender.png",
+            "sha256": "e4d99664e6ce2e65a960b769cb0b74bca3c13d4bdfaa4d3ad0b3acfb87532e36"
+          }
+        ]
+      }
+    ]
+  },
+  "layoutScope": "Existing illustrated credit journey maintained; no added story or reorganization. E2E_GUIDE and actual Pantheon001 feature structure inspected. Existing legacy migration gap remains explicit.",
+  "references": "No credit baseline imports;108 old-source phone/desktop exact hashes reviewed, old short compose held. New changed hashes require inspection.",
+  "gates": "bun run check; bun run lint; bun run test:story-policy all exit0; existing unrelated FleetRoute warning retained."
+}
