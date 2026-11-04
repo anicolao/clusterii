@@ -295,3 +295,7 @@ I just signed in with a new account that also needs fixing. please fix it
 ## Prompt 27: Campaign Start
 
 we have filled out a campaign and it is supposed to start in 13m. Is that properly wired up? I assume this is a scheduled cloud function that kicks off the campaign?
+
+## Prompt 28: Start Immediately
+
+can we set the game start time to now so that it starts immediately thn?
