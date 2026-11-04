@@ -847,3 +847,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect complete phone and desktop credit originals and record exact approvals without duplicating archives.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reproduce short credit focused-input clipping using the existing read-only full painted-bounds audit.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record corrected credit Linux execution and completed waiting/gallery runs without equating them to required CI.
