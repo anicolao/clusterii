@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr54-linux/REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "credit-exchange-recovery",
   "renderer": {
@@ -27,5 +27,190 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "e1b75b35db94436689f8323fae50c523f8d86427",
+    "dirty": false,
+    "spec": "tests/browser/credit-exchange.story.spec.ts",
+    "specSha256": "1942532a88d6ad193854ed57d7dfd91a59f7dfd2351a6a2067662f05b9bf20a6"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "011-compose-1-exchange-sender.png",
+      "sha256": "33e97a44c4e56add36d81b285d849a0029bc255638d262fe5aa242390c851222",
+      "previousSha256": "4eec23790d13e30a176eab1b5b3627a5212efbf568e1fa4d107cc6758e6ea331",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-compose-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817",
+      "previousSha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-compose-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6",
+      "previousSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "e78fa4cc8c18d959dc674bb63e468a866b80cd8fa2a97150fdce2c29edbfe99f",
+      "previousSha256": "6c71bab906e7b1c8050a70c4ca096fa1ca98be5bab71bda6cfbee97d1b12e42a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817",
+      "previousSha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6",
+      "previousSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-reload-pending-1-exchange-sender.png",
+      "sha256": "e02b254135345bb5b243af0de393015c51ac4af590cd4afedd55c540dcd65915",
+      "previousSha256": "6dc17931b86790959e430e0bed3022f0ba2faba022b927542b726a5e7791eae6",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-reload-pending-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817",
+      "previousSha256": "c781e0aee9f59209352f68736fc52cd406ed6941b63b86b8dc05c5e785a20f32",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-reload-pending-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6",
+      "previousSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-offer-shared-1-exchange-sender.png",
+      "sha256": "d4a59d38f1b4ff04efcb018e6cb91e68e4bb5f376ee685cc9d6c54c918322b88",
+      "previousSha256": "94bfd32b3c11620c1feecdfd3bbad10786fb93cb8e44a6cd9e13d0f9b3d00997",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-offer-shared-2-exchange-recipient.png",
+      "sha256": "8d6c5e4ed6580dae68f871a049bfe88b65ad8b230bd6404ecc662f837b537ff6",
+      "previousSha256": "3778d289c32f8a2fa2242317051b3e3c52572bb0ee560254419b15f7abcf267a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-offer-shared-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6",
+      "previousSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-review-terms-1-exchange-sender.png",
+      "sha256": "d4a59d38f1b4ff04efcb018e6cb91e68e4bb5f376ee685cc9d6c54c918322b88",
+      "previousSha256": "94bfd32b3c11620c1feecdfd3bbad10786fb93cb8e44a6cd9e13d0f9b3d00997",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-review-terms-2-exchange-recipient.png",
+      "sha256": "d4e185db60e1ed5e9890eaf24da2afe6159c5bc3945262f51d73adae29c94bb5",
+      "previousSha256": "202b44d7af7eda3a80d03c190c0eef370ea89f606904908ff61f72910c22848c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-review-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6",
+      "previousSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-accept-terms-1-exchange-sender.png",
+      "sha256": "2aa5a99e524f66489a590f7c6a214b17d5880c79b75a6f9ff9162eb7c87db16a",
+      "previousSha256": "5e8fdf186f38d6eb238550d87921e5f7e3e9a935672b57be7ba829c3996eb810",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-accept-terms-2-exchange-recipient.png",
+      "sha256": "bcee2e827025bd4e953f6b1b5371f12ac0499a700a0ae9b9ecdf3d4f7cf20a1a",
+      "previousSha256": "b6ad1f5329803524edd330d65ca3cd06976f5cdca69ab6f592811cd76641f9bf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-accept-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6",
+      "previousSha256": "ae1776f9e5f4d3b5fcdcd41918b2883dbd9969a188bdd7e89b27961dd19d2797",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-settled-1-exchange-sender.png",
+      "sha256": "00b7922f9a614d0d7060b9d1b7b09ad5bd660616fe2e1aabd432b815307a0255",
+      "previousSha256": "387ce5aa62ced7befd9e612edb99685e5b61d27e22f8b93a4ec61b64774c4e3f",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-settled-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186",
+      "previousSha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-settled-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081",
+      "previousSha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "022-reload-outcome-1-exchange-sender.png",
+      "sha256": "f424c3b2ecdf094b51485fd316af4a42a9b8f7c0cbfc70f6031d2710fbc144ce",
+      "previousSha256": "d095810a6472d900a76291d74ed274cdb108e2f00dee3d75136126f7e404f3d5",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186",
+      "previousSha256": "fa8f6c4449719d50dcc44428f753f9d237838c97aa656ab032563d863fed24b2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "022-reload-outcome-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081",
+      "previousSha256": "0ad7516140d718750c96d5e3d9c9aabff243b2cd60834acc08e0a114f41642d6",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "023-keyboard-return-1-exchange-sender.png",
+      "sha256": "e42fdf953fe8d6ee21bb7fc5f9b63ba1f9de2b630e24470626c2928e55721ece",
+      "previousSha256": "e68f39e321eea60e2fa6600122445f52fb1aa71bad8915bb1acec167ef857e18",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }
