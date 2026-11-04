@@ -307,3 +307,7 @@ ok we made a new campaign, kick it off please
 ## Prompt 30: Faster Ticks
 
 is there a way to make ticks happen more often, e.g. every 3 minutes?
+
+## Prompt 31: Cancellation Semantics
+
+when is the next tick for the game? I tried to build and cancel a space station, and it didn't give me my credits back--that was unexpected. what are the semantics?
